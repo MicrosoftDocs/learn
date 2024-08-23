@@ -3,11 +3,13 @@ uid: learn.philanthropies.use-copilot-to-create-training-materials
 metadata:
   title: Use Microsoft Copilot to create training materials
   description: Discover how Microsoft Copilot can enhance your training materials and resources. From content generation to image creation, experience a new era of engaging and effective learning.
-  ms.date: 03/06/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 03/06/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Use Microsoft Copilot to create training materials
 summary: This module focuses on practical demonstration of how Microsoft Copilot can serve as a training assistant. From content creation to helping you provide support to learners in various tasks such as writing a resume, working on professional growth, finding a new hobby, learning a new language, or even preparing for a test. The possibilities are vast and exciting with Microsoft Copilot.
 abstract: |

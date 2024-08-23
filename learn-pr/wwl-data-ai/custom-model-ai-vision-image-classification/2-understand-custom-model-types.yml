@@ -3,11 +3,13 @@ uid: learn.wwl.custom-model-ai-vision-image-classification.understand-custom-mod
 title: Understand custom model types
 metadata:
   title: Understand custom model types
-  description: "Understand different types of custom vision models in Azure AI Vision."
-  ms.date: 01/29/2024
+  description: Understand different types of custom vision models in Azure AI Vision.
   author: ivorb
   ms.author: berryivor
+  ms.date: 01/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-custom-model-types.md)]

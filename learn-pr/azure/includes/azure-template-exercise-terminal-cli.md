@@ -1,7 +1,7 @@
 ---
 author: mumian
 ms.topic: include
-ms.date: 11/09/2022
+ms.date: 06/06/2024
 ms.author: jgao
 ---
 
@@ -11,7 +11,7 @@ ms.author: jgao
 
     :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
-1. If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Git Bash**.
+1. If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Azure Cloud Shell (Bash)**.
 
     :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
 

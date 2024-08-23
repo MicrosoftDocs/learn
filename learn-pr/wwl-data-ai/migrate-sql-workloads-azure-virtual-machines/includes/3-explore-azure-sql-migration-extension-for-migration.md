@@ -5,14 +5,14 @@ There are two modes of migration to SQL Server on Azure Virtual Machine using Az
 | Migration mode | Description | Application downtime |
 | --- | --- | --- |
 | Online | Source database remains accessible for both read and write operations while database backups are continuously restored on the target. | Limited to the cutover duration at the end of the migration. |
-| Offline | Source database shouldn't be used for write activity while database backup files are restored on the target instance. | Downtime remains throughout the duration of the migration process until it's completed. |
+| Offline | Source database shouldn't be used for write activity while database backup files are restored on the target instance. | Downtime remains throughout the duration of the migration process until it completes. |
 
 >[!IMPORTANT]
 > When migrating a database with Azure SQL Migration extension for Azure Data Studio, ensure that the provided database name(s) do not already exist on the target SQL Server on Azure Virtual Machine. Overwriting a database is not currently supported.
 
 ## Backups
 
-Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, it's recommended to use [compressed backups](/sql/relational-databases/backup-restore/backup-compression-sql-server).
+Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, we recommend you use [compressed backups](/sql/relational-databases/backup-restore/backup-compression-sql-server).
 
 There are two ways of storing your database backups for migration:
 
@@ -22,7 +22,7 @@ You need to download and install the [self-hosted integration runtime](https://w
 
 During the migration, the migration wizard provides the download link and authentication keys to download and install your self-hosted integration runtime.
 
-For optimal performance, consider up to 10 concurrent database migrations per self-hosted integration runtime, and scale out to multiple nodes or instances if needed. Also, enable auto-update to stay up-to-date with new features, bug fixes, and enhancements. This ensures that the integration runtime stays up-to-date with the latest improvements and fixes, leading to better performance, enhanced functionality, and stability during database migrations. 
+For optimal performance, consider up to 10 concurrent database migrations per self-hosted integration runtime, and scale out to multiple nodes or instances if needed. Also, enable autoupdate to stay up-to-date with new features, bug fixes, and enhancements. This setting ensures that the integration runtime stays up-to-date with the latest improvements and fixes, leading to better performance, enhanced functionality, and stability during database migrations. 
 
 >[!IMPORTANT]
 > Database Migration Service does not allow the use of an existing self-hosted integration runtime created in Azure Data Factory for database migrations.

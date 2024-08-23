@@ -1,6 +1,6 @@
 Quantifying business value is crucial for organizations to justify their investment in cloud technologies and demonstrate the return on investment (ROI). It enables organizations to understand the impact of their cloud initiatives on business outcomes and make informed decisions about resource allocation and optimization. Planning & estimating, forecasting, budgeting, benchmarking, and unit economics are essential capabilities that support organizations to quantifying business value.
 
-<!-- Video placeholder: Overview MS solutions the capabilities in this domain. -->
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a3cdb237-c558-45ce-9bbb-ee48cb1134b1]
 
 ## Forecasting
 

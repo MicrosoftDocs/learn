@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit is the knowledge check for the module migrating data to Azure Database for MySQL - Flexible Server. It covered migration phases and considerations, tool options, and migration approaches."
+  ms.date: 07/08/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 15
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is an online migration?"
+    choices:
+    - content: "An in-place major version migration that keeps the database online."
+      isCorrect: false
+      explanation: "A database has to restart to update major versions. An online migration refers to the entire application staying online."
+    - content: "A server-to-server data migration that keeps the application online."
+      isCorrect: true
+      explanation: "Correct, an online migration refers to application downtime."
+    - content: "A server-to-server migration using an online connection."
+      isCorrect: false
+      explanation: "Transferring data with an online connection is part of an online migration, but not the full story. Live connections on write-frozen databases can also be used for bulk transfer for an offline migration."
+  - content: "You’re migrating a MySQL database running on a VM to an Azure Database for MySQL flexible server. The application can tolerate about an hour, but not several hours, of downtime. A full backup (several years of data) takes about 4 hours to restore. What’s the best option?"
+    choices:
+    - content: "An online migration."
+      isCorrect: false
+      explanation: "While an online migration would remove the downtime, its extra complexity when the application can tolerate about an hour of downtime."
+    - content: "An offline migration using a full snapshot."
+      isCorrect: false
+      explanation: "A full snapshot would take about 4 hours to restore. The application would have to be online during this process (at least), which exceeds the one hour downtime target."
+    - content: "An offline migration using a full snapshot and an incremental snapshot."
+      isCorrect: true
+      explanation: "This is the best choice. The four hour transfer can occur first. Then, the application can go down to capture & migrate the smaller increment, to fit within the hour of downtime."
+  - content: "You want to migrate your on-premises MySQL database to Azure because it exhausts processing and storage resources regularly. Near-zero downtime is preferable. Which of these approaches should you consider?"
+    choices:
+    - content: "Restore the database from a snapshot and use the binary log to synchronize changes that occurred since the snapshot was taken."
+      isCorrect: false
+      explanation: "While this is a way to eliminate downtime, it's manual and error-prone compared to automated approaches like Azure Database Migration Service."
+    - content: "Use mydumper and myloader to create and restore data."
+      isCorrect: false
+      explanation: "Even though these tools are fast, they'll still require downtime to migrate data once the application is frozen."
+    - content: "Use Azure Migrate and Azure Database Migration Service to automate migration and minimize downtime."
+      isCorrect: true
+      explanation: "Azure DMS automates the migration process, and can perform an online migration, or a near-zero downtime offline migration."
+  - content: "You want to test application changes against realistic data. Which option should you pick?"
+    choices:
+    - content: "Restore database backups into development environments."
+      isCorrect: false
+      explanation: "Unless necessary, this poses a security risk as it places full customer data into nonproduction environments."
+    - content: "Use a tool like mysqldump to create controlled test scenarios."
+      isCorrect: true
+      explanation: "A test scenario should contain PERSONAL DATA-safe customer data, if any customer data at all. The mysqldump allows you to build selective test scenarios."
+    - content: "Use Azure Database for MySQL Import CLI to create test data."
+      isCorrect: false
+      explanation: "This isn't one of the Import CLI's features."
+  - content: "You want to migrate a high-availability flexible server from one region to another. Some downtime is acceptable. Which is the simplest solution?"
+    choices:
+    - content: "Use mydumper and myloader to migrate two parallel instances, then enable replication."
+      isCorrect: false
+      explanation: "While highly available databases do have two instances, the high availability comes from other mechanisms such as managed failover (not just replication)."
+    - content: "Use MySQL Workbench to set up two target databases and perform a migration, then enable replication."
+      isCorrect: false
+      explanation: "While highly available databases do have two instances, the high availability comes from other mechanisms such as managed failover (not just replication)."
+    - content: "Use Percona XtraBackup and Azure Database for MySQL Import CLI to create the target server, and then enable HA."
+      isCorrect: true
+      explanation: "This is a simple way to migrate the data, and ensure managed high-availability in the flexible server."

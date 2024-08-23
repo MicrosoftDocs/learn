@@ -5,8 +5,8 @@ metadata:
   description: Learn how to architect storage solutions for your applications in Azure.
   brand: azure
   ms.date: 10/23/2019
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: learning-path
 title: Architect storage infrastructure in Azure
 summary: Learn how to architect storage solutions for your applications in Azure.

@@ -4,12 +4,10 @@ Event sources are where you get your event data from. You can choose from Azure 
 
 To create an event source, you need to follow these steps:
 
-1. Change your Fabric experience to Real-Time Intelligence and select event stream to create a new event stream in **workspace** or **homepage** or **create hub**.
-
-   ![Screenshot of create new event stream.](../media/create-new-eventstream.png)
+1. Change your Fabric experience to Real-Time Intelligence and select event stream to create a new event stream.
 
    > [!Note] 
-   > As you can see from the image, there are several methods. Anytime you're in the PowerBI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources.
+   > Anytime you're in the Power BI Service and have access to Fabric you can click on the icon in the bottom-left portion in the image to switch between fabric sources.
 
 2. Enter a name for the new event stream and ensure the enhanced capabilities box is checked then select Create. You see the main editor canvas where you can add sources and destinations to your event stream.
 

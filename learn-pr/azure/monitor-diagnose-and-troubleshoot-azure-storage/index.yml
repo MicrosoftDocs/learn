@@ -3,6 +3,7 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage
 metadata:
   title: Monitor, diagnose, and troubleshoot your Azure Storage
   description: Monitor, diagnose, and troubleshoot your Azure Storage
+  manager: akashdubey
   ms.date: 12/21/2023
   author: normesta
   ms.author: normesta

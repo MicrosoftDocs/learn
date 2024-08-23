@@ -3,11 +3,13 @@ uid: learn.wwl.build-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on grounding models with RAG."
-  ms.date: 02/21/2024
+  description: Knowledge check to test your knowledge on grounding models with RAG.
   author: madiepev
   ms.author: madiepev
+  ms.date: 02/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:

@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Understand client-server communication in PostgreSQL
 summary: PostgreSQL is a client-server system, which allows many clients to connect to a central server. In this module, you learn how PostgreSQL manages connections from clients, and look at some common PostgreSQL client tools.

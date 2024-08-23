@@ -2,12 +2,12 @@
 uid: learn.wwl.transition-your-business-azure
 metadata:
   title: Transition your business to Azure
-  description: "This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure."
+  description: This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure.
   ms.date: 07/18/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.service: azure
+  ms.service: architecture-center
 title: Transition your business to Azure
 summary: This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure.
 abstract: |

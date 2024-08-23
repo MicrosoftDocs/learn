@@ -2,12 +2,14 @@
 uid: learn.wwl.read-text-computer-vision
 metadata:
   title: Fundamentals of optical character recognition
-  description: "Use optical character recognition (OCR) to read text with Azure AI Vision."
-  ms.date: 03/05/2024
+  description: Use optical character recognition (OCR) to read text with Azure AI Vision.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 03/05/2024
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Fundamentals of optical character recognition
 summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.

@@ -3,7 +3,7 @@ You've decided to research the different ways that Azure provides for automating
 In this unit, you'll learn about the commands and parameters that you'll need to create the components that are required to set up the virtual machines for your web servers. You'll explore the options that are common for both Linux and Windows virtual machines, and you'll compare the options that are specific to each of these operating systems.
 
 > [!CAUTION]
-> This content references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 ## Creating common components for virtual machines
 

@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-telemetry-dotnet-aspire.exercise-use-telemetry-dotnet-aspire
-title: Exercise - Use telemetry in a .NET Aspire app
+title: Exercise - Use telemetry in a .NET Aspire project
 metadata:
-  title: Exercise - Use telemetry in a .NET Aspire app
+  title: Exercise - Use telemetry in a .NET Aspire project
   description: In this unit, you'll instrument a .NET Aspire cloud-native app and examine the data it emits in the dashboard.
   author: camsoper
   ms.author: casoper
   ms.topic: unit
+  ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-use-telemetry-dotnet-aspire.md)]

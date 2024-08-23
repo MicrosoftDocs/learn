@@ -10,9 +10,9 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [Donovan Brown \| What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
- -  [What is DevOps? - Azure DevOps \| Microsoft Docs](/devops/what-is-devops)
+ -  [What is DevOps? - Azure DevOps \| Microsoft Learn](/devops/what-is-devops)
  -  [Getting started with GitHub - GitHub Docs](https://docs.github.com/get-started)
- -  [View of features and epics on the Feature Timeline - Azure DevOps \| Microsoft Docs](/azure/devops/boards/extensions/feature-timeline)
- -  [Plan and track work in Azure Boards with Basic or Agile processes - Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/plan-track-work)
+ -  [View of features and epics on the Feature Timeline - Azure DevOps \| Microsoft Learn](/azure/devops/boards/extensions/feature-timeline)
+ -  [Plan and track work in Azure Boards with Basic or Agile processes - Azure Boards \| Microsoft Learn](/azure/devops/boards/get-started/plan-track-work)
  -  [Agile Manifesto for Software Development \| Agile Alliance](https://www.agilealliance.org/agile101/the-agile-manifesto)
  -  [12 Principles Behind the Agile Manifesto \| Agile Alliance](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto)

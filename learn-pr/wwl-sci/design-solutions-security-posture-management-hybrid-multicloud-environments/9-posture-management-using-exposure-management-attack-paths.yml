@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.posture-management-using-exposure-management-attack-paths
+title: Posture management using Exposure management attack paths
+metadata:
+  title: Posture management using Exposure management attack paths
+  description: "SC-100 preparatory unit on the topic: Posture management using Exposure management attack paths."
+  ms.date: 5/20/2024
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-posture-management-using-exposure-management-attack-paths.md)]

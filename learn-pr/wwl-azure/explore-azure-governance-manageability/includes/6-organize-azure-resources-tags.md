@@ -1,4 +1,4 @@
-You can apply tags to your Azure resources to logically organize them by categories. Each tag consists of a name and a value. For example, you can apply the name **Environment** and the value **Production** or **Development** to your resources. After creating your tags, you associate them with the appropriate resources.
+You can apply tags to your Azure resources to logically organize them into categories. Each tag consists of a name and a value. For example, you can apply the name **Environment** and the value **Production** or **Development** to your resources. After creating your tags, you associate them with the appropriate resources.
 
 With tags in place, you can retrieve all the resources in your subscription with that tag name and value. This means you can retrieve related resources from different resource groups.
 

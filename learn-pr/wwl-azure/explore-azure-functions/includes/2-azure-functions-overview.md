@@ -1,4 +1,4 @@
-Azure **Functions** is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
 
 We often build systems to react to a series of critical events. Whether you're building a web API, responding to database changes, processing IoT data streams, or even managing message queues - every application needs a way to run some code as these events occur.
 
@@ -12,7 +12,7 @@ For Azure Functions, you develop orchestrations by writing code and using the [D
 
 The following table lists some of the key differences between Functions and Logic Apps:
 
-|  | Azure Functions | Logic Apps |
+| Topic | Azure Functions | Logic Apps |
 |--|--|--|
 | **Development** | Code-first (imperative) | Designer-first (declarative) |
 | **Connectivity** | About a dozen built-in binding types, write code for custom bindings | Large collection of connectors, Enterprise Integration Pack for B2B scenarios, build custom connectors |
@@ -27,7 +27,7 @@ Like Azure Functions, Azure App Service WebJobs with the WebJobs SDK is a code-f
 
 Azure Functions is built on the WebJobs SDK, so it shares many of the same event triggers and connections to other Azure services. Here are some factors to consider when you're choosing between Azure Functions and WebJobs with the WebJobs SDK:
 
-|  | Functions | WebJobs with WebJobs SDK |
+| Factor | Functions | WebJobs with WebJobs SDK |
 |--|--|--|
 | **Serverless app model with automatic scaling** | Yes | No  |
 | **Develop and test in browser** | Yes | No |
@@ -36,3 +36,4 @@ Azure Functions is built on the WebJobs SDK, so it shares many of the same event
 | **Trigger events** | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>HTTP/WebHook (GitHub<br>Slack)<br>Azure Event Grid | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>File system |
 
 Azure Functions offers more developer productivity than Azure App Service WebJobs does. It also offers more options for programming languages, development environments, Azure service integration, and pricing. For most scenarios, it's the best choice.
+

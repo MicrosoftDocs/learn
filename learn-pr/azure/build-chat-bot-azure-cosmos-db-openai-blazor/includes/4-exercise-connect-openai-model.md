@@ -84,7 +84,7 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
     using Azure.AI.OpenAI;
     ```
 
-1. Within the `OpenAiService` class, add a new variable named `_client` that's of type [`OpenAIClient`](/dotnet/api/azure.ai.openai.openaiclient).
+1. Within the `OpenAiService` class, add a new variable named `_client` that's of type [`OpenAIClient`](/dotnet/api/overview/azure/ai.openai-readme).
 
     ```csharp
     private readonly OpenAIClient _client;

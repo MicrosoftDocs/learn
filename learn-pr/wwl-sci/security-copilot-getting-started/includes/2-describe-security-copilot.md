@@ -31,6 +31,10 @@ Additionally, some Microsoft security products embed Copilot capabilities direct
 
 More information on both the standalone and embedded experience are covered in subsequent modules. Images shown throughout the rest of this module are based on the standalone experience.
 
+Watch this short video for a summary of the users experiences that Microsoft Copilot for Security offers.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=957ae869-a6cb-414b-83c1-99e5b13ce45a]
+
 ### Natural language processing (NLP)
 
 Copilot is built using Azure OpenAI Services and is designed to integrate with existing security tools and processes, making it easier for organizations to improve their overall security posture. Azure OpenAI Services provides REST API access to OpenAI's powerful large language models (LLMs) for natural language processing (NLP), while providing security capabilities of Microsoft Azure.

@@ -3,6 +3,7 @@ uid: learn.tour-azure-portal-features
 metadata:
   title: Manage services with the Azure portal
   description: Get acquainted with the Azure cloud platform through the Azure portal, where you can create and manage all of your Azure resources.
+  manager: rayoflores
   ms.date: 04/08/2024
   author: JnHs
   ms.author: jenhayes

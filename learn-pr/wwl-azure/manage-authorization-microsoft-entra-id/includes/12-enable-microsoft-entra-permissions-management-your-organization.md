@@ -15,6 +15,8 @@ To enable Permissions Management in your organization:
 In your browser:
 
  -  In your browser:
+    
+    
      -  Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/) and sign in to [Microsoft Entra ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) as at least a Billing Administrator.
      -  If needed, activate the *Permissions Management Administrator* role in your Microsoft Entra tenant.
      -  In the Azure portal, select **Microsoft Entra Permissions Management**, then select the link to purchase a license or begin a trial.
@@ -24,10 +26,14 @@ In your browser:
 There are two ways to activate a trial or a full product license.
 
 1.  The first way is to go to the [Microsoft 365 admin center](https://admin.microsoft.com/).
+    
+    
      -  Sign in as a *Global Administrator* for your tenant.
      -  Go to Setup and sign up for a Microsoft Entra Permissions Management trial.
      -  For self-service, Go to the [Microsoft 365 portal](https://aka.ms/TryPermissionsManagement) to sign up for a 45-day free trial or to purchase licenses.
 2.  The second way is through Volume Licensing or Enterprise agreements.
+    
+    
      -  If your organization falls under a volume license or enterprise agreement scenario, contact your Microsoft representative.
 
 Permissions Management launches with the **Data Collectors** dashboard.

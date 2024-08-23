@@ -8,7 +8,6 @@ metadata:
   author: rmcmurray
   ms.author: keall
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/2-communication-philosophy.md)]

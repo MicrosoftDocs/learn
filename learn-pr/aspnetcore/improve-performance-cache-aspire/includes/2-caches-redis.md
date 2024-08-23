@@ -32,7 +32,7 @@ When you use caching, a key design decision is how long to cache a particular pi
 - How important is it that users see the up-to-date information? For example, stock levels may be fundamental but you may consider new product reviews less time critical.
 - How often are you likely to receive requests for the information? Caching popular information yields a higher performance improvement because the system can serve it from the cache multiple times.
 
-## Using Redis in .NET Aspire apps
+## Using Redis in .NET Aspire projects
 
 Redis is a popular choice for caching in a cloud-native application. .NET Aspire provides three components that you can use to interact with a Redis service:
 

@@ -3,23 +3,28 @@ uid: learn.wwl.explore-azure-functions
 metadata:
   title: Explore Azure Functions
   description: "Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices."
-  ms.date: 11/02/2023
+  ms.date: 07/09/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure-functions
+  ai-usage: human-only
 title: Explore Azure Functions
 summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
 abstract: |
   After completing this module, you will be able to:
-  * Explain functional differences between Azure Functions, Azure Logic Apps, and WebJobs
-  * Describe Azure Functions hosting plan options
-  * Describe how Azure Functions scale to meet business needs
+
+  -   Explain functional differences between Azure Functions, Azure Logic Apps, and WebJobs
+
+  -   Describe Azure Functions hosting plan options
+
+  -   Describe how Azure Functions scale to meet business needs
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/1-explore-azure-functions.svg
 levels:
 - intermediate

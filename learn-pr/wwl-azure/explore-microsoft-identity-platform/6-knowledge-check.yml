@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/11/2023
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. Delegated permissions are used by apps that have a signed-in user present. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource."
     - content: "App-only access permissions"
       isCorrect: false
-      explanation: "Incorrect. App-only access permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons."
+      explanation: "Incorrect. App-only access permissions are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons."
     - content: "Both delegated and app-only access permissions"
       isCorrect: false
       explanation: "Incorrect. Only delegated permissions are used by apps that have a signed-in user present."

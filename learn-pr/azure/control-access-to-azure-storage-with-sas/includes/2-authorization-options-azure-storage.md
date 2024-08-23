@@ -31,7 +31,7 @@ There are two separate settings that affect public access:
 
 Use the Microsoft Entra option to securely access Azure Storage without storing any credentials in your code. AD authorization takes a two-step approach. First, you authenticate a security principal that returns an OAuth 2.0 token if successful. This token is then passed to Azure Storage to enable authorization to the requested resource.
 
-Use this form of authentication if you're running an app with managed identities or using security principals.
+Use this form of authentication if you're running an app with managed identities or using service principals.
 
 ### Shared key
 
@@ -45,7 +45,7 @@ A SAS lets you grant granular access to files in Azure Storage, such as read-onl
 
 Azure Storage supports three types of shared access signatures:
 
-- **User delegation SAS**: Can only be used for Blob storage and is secured with Microsoft Entra credentials.
+- **User delegation SAS**: A user delegation SAS is secured with Microsoft Entra credentials, because the OAuth 2.0 token used to sign the SAS is requested on behalf of the user. It can only be used for Blob storage.
 - **Service SAS**: A service SAS is secured using a storage account key. A service SAS delegates access to a resource in any one of four Azure Storage services: Blob, Queue, Table, or File. 
 - **Account SAS**: An account SAS is secured with a storage account key. An account SAS has the same controls as a service SAS, but can also control access to service-level operations, such as Get Service Stats.
 

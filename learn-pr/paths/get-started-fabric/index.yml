@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: learning-path
-  ms.service: fabric
 title: Get started with Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.

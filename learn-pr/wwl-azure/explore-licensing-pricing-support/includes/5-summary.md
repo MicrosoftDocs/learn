@@ -1,4 +1,4 @@
-Now you have:
+In this module, you:
 
 - Learned how to price Azure Virtual Machine-based solutions.
 - Explored licensing, pricing, and support of Azure for SAP workloads.

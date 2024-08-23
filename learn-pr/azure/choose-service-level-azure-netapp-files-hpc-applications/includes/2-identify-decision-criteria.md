@@ -20,16 +20,16 @@ A single NetApp account can have up to 25 capacity pools. The provisioned size o
 
 Volumes are unique file systems that are mounted over a network from your virtual machines (VMs) to serve data. Volume quotas are rules that allow you to control performance usage. Azure NetApp Files supports two sizing conventions for volumes: regular and large volumes.
 
-* Regular volumes can be assigned quota values from 100 GiB to 500 TiB.
-* Large volumes can be assigned quota values from 50 TiB to 500 TiB.
+- Regular volumes can be assigned quota values from 100 GiB to 500 TiB.
+- Large volumes can be assigned quota values from 50 TiB to 500 TiB.
 
-The total volume capacity can’t exceed the size of the capacity pool. Volume quotas can affect volume performance depending on the type of volume (large or regular), service level selected, as well as the QoS type used.
+The total volume capacity can’t exceed the size of the capacity pool. Volume quotas can affect volume performance depending on the type of volume (large or regular), service level selected, and the QoS type used.
 
-Azure NetApp Files also offers large volumes that enable HPC workloads to perform at a higher level than regular volumes by providing greater capacity, increased throughput, parallel compute and even distribution of files and folders across multiple storage resources at low latency in Azure cloud deployments. Large volumes also provide the opportunity to lower costs in high metadata workloads by allowing workloads that require lower throughput with higher IOPS to leverage lower service levels. For instance, if your workload doesn’t require 10 GiB/s performance but does need parallel processing of write metadata operations, a large volume at Premium service level might do the job that would normally require Ultra service levels on regular volumes.
+Azure NetApp Files also offers large volumes that enable high-performance computing (HPC) workloads to perform at a higher level than regular volumes. Large volumes provide greater capacity, increased throughput, and parallel compute. They also provide an even distribution of files and folders across multiple storage resources at low latency in Azure cloud deployments. Large volumes also provide the opportunity to lower costs in high metadata workloads by allowing workloads that require lower throughput with higher IOPS to use lower service levels. For instance, if your workload doesn’t require 10 GiB/s performance but does need parallel processing of write metadata operations. Then, a large volume at Premium service level might do the job that would normally require Ultra service levels on regular volumes.
 
 ## Service levels
 
-The first important concept in determining performance with Azure NetApp Files is the service level. Service levels are assigned to capacity pools to define the maximum throughput allowed on a normalized basis relative to volume quota or based on the QoS setting. For example, with the Premium service level, you can achieve up to 64 MiBs per second of throughput for every TiB of quota in the volume, up to a maximum level determined by the volume type and QoS policy type. By default, service levels use automatic [QoS policies](#quality-of-service-qos).
+The first important concept in determining performance with Azure NetApp Files is the service level. Service levels are assigned to capacity pools to define the maximum throughput allowed on a normalized basis relative to volume quota or based on the QoS setting. For example, with the Premium service level, you can achieve up to 64 MiBs per second of throughput for every TiB of quota in the volume. This throughput goes up to a maximum level determined by the volume type and QoS policy type. By default, service levels use automatic [QoS policies](#quality-of-service-qos).
 
 Azure NetApp Files offers three service levels suited to different workload types: Standard, Premium, and Ultra.
 
@@ -39,13 +39,13 @@ Azure NetApp Files offers three service levels suited to different workload type
 | Premium | Better (SSD class) <ul><li>Up to 4,000 IPS/TiB quota</li>Up to 64 MiB/s per TiB quota</li></ul> | <ul><li>Databases</li><li>Enterprise applications</li><li>Analytics</li><li>Message queues</li></ul> |
 | Ultra |  Best (high performance flash) <ul><li>Up to 8,000 IOPS/TiB quota</li><li>Up to 128 MiB/s per TiB quota</li></ul> | <ul><li>Performance/throughput intensive applications</li><li>HPC/EDA</li></ul> |
 
-\* Performance SLA indexed against volume quota
+\* Performance Service Level Agreement (SLA) indexed against volume quota
 
 ## Quality of Service (QoS)
 
-QoS is used by Azure NetApp Files to control performance for capacity pools and volumes based on the service level defined and the volume quota assigned. Automatic QoS is used to manage performance automatically when capacity is defined. For instance, if 1 TiB of space is allocated to a volume in a capacity pool with a Premium service level, then 64 MiB/s are allowed for a volume in the capacity pool.
+QoS is used by Azure NetApp Files to control performance for capacity pools and volumes based on the service level defined and the volume quota assigned. Automatic QoS is used to manage performance automatically when capacity is defined. For instance, if 1 TiB of space is allocated to a volume in a capacity pool with a Premium service level. Then, 64 MiB/s are allowed for a volume in the capacity pool.
 
-If more performance for the volume is needed than the desired volume quota allows, a manual QoS policy is the better option. A manual QoS policy can be used to increase allowed performance for the volume to a level up to what is allowed by the capacity pool. In this case, if the capacity pool is 4 TiB, then up to 256 MiB/s would be allowed with a Premium service level to a single 1-TiB volume when using manual QoS.
+If more performance for the volume is needed than the desired volume quota allows, a manual QoS policy is the better option. A manual QoS policy can be used to increase allowed performance for the volume to a level up to what the capacity pool allows. In this case, if the capacity pool is 4 TiB, then up to 256 MiB/s would be allowed with a Premium service level to a single 1-TiB volume when using manual QoS.
 
 ![Diagram comparing manual and automatic QoS.](../media/02-quality-service-diagram.png)
 
@@ -71,7 +71,7 @@ Consider:
 - The limit of maximum throughput of an Azure NetApp Files regular volume is 4,500 MiB/second for reads and ~1,500 MiB/second for writes.
 - The limit of maximum throughput of an Azure NetApp Files large volume is 10,240 MiB per second for reads and writes.
 - The quota of the volume sets the gross throughput, not the actual capacity consumed in the volume.
-- You can resize the volume quota anytime, even if it's mounted. Changes to quality of service take effect in near real time. You don't need to reboot your VM or remount the volume.
+- You can resize the volume quota anytime, even if the volume is mounted. Changes to quality of service take effect in near real time. You don't need to reboot your virtual machine (VM) or remount the volume.
 
 Remember that a wide range of factors affect the storage performance including the read/write mix, block size mix, and access patterns like random or sequential access.
 

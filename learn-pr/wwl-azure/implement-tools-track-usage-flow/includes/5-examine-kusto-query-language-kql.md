@@ -71,4 +71,4 @@ This unit has introduced the basic concepts of Log Analytics and how to get star
 
 We've only scratched the surface of what is possible with Log Analytics.
 
-We would encourage you to try out the advanced tutorials available for Log Analytics on [Microsoft Docs](/azure/azure-monitor/).
+We would encourage you to try out the advanced tutorials available for Log Analytics on [Microsoft Learn](/azure/azure-monitor/).

@@ -4,10 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 02/29/2024
   author: erzelman
   ms.author: erzelman
+  ms.date: 02/29/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

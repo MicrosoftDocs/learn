@@ -1,4 +1,4 @@
-In this exercise, you use GitHub to validate your knowledge about adding a `.gitignore` file to your GitHub repository.
+In this exercise, we secure your repository's supply chain through Denpendency graph, Dependency alerts, Dependency security updates, and Dependency version updates.
 
 This GitHub exercise is graded automatically once you attempt a solution to the challenge. The results of your actions and your helpful feedback are provided in real time within the `grade-learner` workflow logs.
 
@@ -17,4 +17,4 @@ This exercise is a challenge based on content covered in this module, and there 
 When you finish the exercise in GitHub, return here for your next unit.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/secure-code-game)
+> [Start the exercise on GitHub](https://github.com/skills/secure-repository-supply-chain)

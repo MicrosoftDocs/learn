@@ -2,12 +2,14 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search
 metadata:
   title: Search data outside the Azure platform in Azure AI Search using Azure Data Factory
-  description: "Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes."
-  ms.date: 09/27/2023
+  description: Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 09/27/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Search data outside the Azure platform in Azure AI Search using Azure Data Factory
 summary: Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes.
 abstract: |

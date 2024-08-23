@@ -4,33 +4,46 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which type of encryption does Azure App Configuration use to encrypt data at rest?"
+  - content: "What is the purpose of labels in Azure App Configuration?"
     choices:
-    - content: "64-bit AES"
-      isCorrect: false
-      explanation: "Incorrect. Azure App Configuration encrypts sensitive information at rest using a 256-bit AES encryption key provided by Microsoft."
-    - content: "128-bit AES"
-      isCorrect: false
-      explanation: "Incorrect. Azure App Configuration encrypts sensitive information at rest using a 256-bit AES encryption key provided by Microsoft."
-    - content: "256-bit AES"
+    - content: "Labels are used to differentiate key-values with the same key in App Configuration."
       isCorrect: true
-      explanation: "Correct. Azure App Configuration encrypts sensitive information at rest using a 256-bit AES encryption key provided by Microsoft."
-  - content: "Which of the following options evaluates the state of a feature flag?"
+      explanation: "Correct. Labels in Azure App Configuration are used to create variants of a key and differentiate key-values with the same key."
+    - content: "Labels are used to encrypt key-values in App Configuration."
+      isCorrect: false
+      explanation: "Incorrect. Labels do not provide encryption. They are used to differentiate key-values with the same key."
+    - content: "Labels are used to limit the size of key-values in App Configuration."
+      isCorrect: false
+      explanation: "Incorrect. Labels do not limit the size of key-values. They are used to differentiate key-values with the same key."
+  - content: "What is the role of a feature manager in managing application features?"
     choices:
-    - content: "Feature flag"
+    - content: "A feature manager is a rule for evaluating the state of a feature flag."
       isCorrect: false
-      explanation: "Incorrect. A feature flag is a variable with a binary state of on or off."
-    - content: "Feature manager"
+      explanation: "Incorrect. This answer is the definition of a filter, not a feature manager."
+    - content: "A feature manager is a variable with a binary state of on or off."
       isCorrect: false
-      explanation: "Incorrect. A feature manager is an application package that handles the lifecycle of all the feature flags in an application."
-    - content: "Filter"
+      explanation: "Incorrect. This answer is the definition of a feature flag, not a feature manager."
+    - content: "A feature manager is an application package that handles the lifecycle of all the feature flags in an application."
       isCorrect: true
-      explanation: "Correct. A filter is a rule for evaluating the state of a feature flag. A user group, a device or browser type, a geographic location, and a time window are all examples of what a filter can represent."
+      explanation: "Correct. A feature manager provides extra functionality, such as caching feature flags and updating their states."
+  - content: "What is the purpose of using customer-managed keys in Azure App Configuration?"
+    choices:
+    - content: "To enable authentication with Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect. While a managed identity is used for authentication, it's not the primary purpose of customer-managed keys."
+    - content: "To permanently store the unwrapped encryption key"
+      isCorrect: false
+      explanation: "Incorrect. The unwrapped encryption key is cached within App Configuration for one hour, not stored permanently."
+    - content: "To encrypt sensitive information at rest"
+      isCorrect: true
+      explanation: "Correct. Customer-managed keys are used to encrypt sensitive information in key-value pairs at rest."

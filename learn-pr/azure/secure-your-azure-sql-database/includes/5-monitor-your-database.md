@@ -29,7 +29,7 @@ Follow these steps to set up auditing on your system.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the search bar at the top of the portal, search for _serverNNNNN_, then select the server in the portal. Replace _NNNNN_ with the number from your server name.
+1. In the search bar at the top of the portal, search for your server, then select the server in the portal. Replace _NNNNN_ with the number from your server name.
 
 1. In the left menu pane, under **Security**, select **Auditing**.
 
@@ -41,7 +41,7 @@ Follow these steps to set up auditing on your system.
 
 1. You can select an existing storage account, or create a new storage account to store your audits. The storage account must be configured to use the same region as your server.
 
-    In this case, define a new storage account. Under **Storage account**, select **Create new**. The **Create storage account** pane displays. Name the storage account _serverNNNNNauditing_, replacing the _NNNNN_ with the number from your logical server name.
+    In this case, define a new storage account. Under **Storage account**, select **Create new**. The **Create storage account** pane displays. Name the storage account _\<server-name\>auditing_, replacing _\<server-name\>_ with your logical server name.
 
 1. Leave the rest of the options at their defaults, and select **OK**. Back in the **Storage settings** pane, leave the defaults, and select **OK**.
 
@@ -52,7 +52,7 @@ Now generate some audit records and take a look at what you can expect.
 1. Sign back in to the database as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query.
@@ -88,7 +88,7 @@ Advanced Data Security (ADS) provides a set of advanced SQL security capabilitie
 
 Enable ADS on your database. ADS is a server-level setting, so start there.
 
-1. Back in the Azure portal, go to your SQL server. In the search bar at the top of the page, search for _serverNNNNN_, and then select the server.
+1. Back in the Azure portal, go to your SQL server. In the search bar at the top of the page, search for _\<server-name\>, and then select the server.
 
 1. In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**.
 

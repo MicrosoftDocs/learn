@@ -3,13 +3,14 @@ uid: learn.azure.migrate-oracle-application-azure-paas
 metadata:
   title: Migrate Oracle-powered applications by using Azure PaaS database services
   description: Learn how to migrate Oracle-powered applications by using Azure PaaS database services.
+  manager: akashdubey
   ms.date: 05/01/2024
   author: jjaygbay1
   ms.author: jacobjaygbay
   ms.topic: module
   ms.service: azure
 title: Migrate Oracle-powered applications by using Azure PaaS database services
-summary: This module describes the process of modernizing an existing Oracle-based application by using a fully managed cloud-native database service.
+summary: This module describes the process of modernizing an existing Oracle-powered workload to simplify management by refactoring the database to a fully managed cloud-native Azure database service.
 abstract: |
   After completing this module, you'll be able to:
   - Describe how Azure platform as a service (PaaS) can help you enhance your database workload scalability and flexibility, reduce the complexity of your management work, and take advantage of unique cloud-native capabilities.

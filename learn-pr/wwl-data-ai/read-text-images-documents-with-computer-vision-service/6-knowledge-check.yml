@@ -3,11 +3,13 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 02/05/2024
+  description: Knowledge Check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -24,17 +24,17 @@ quiz:
     - content: In hybrid locations.
       isCorrect: true
       explanation: RHEL works across hybrid locations and hybrid deployments.
-  - content: How is ARO different from OpenShift?
+  - content: How is Azure Red Hat OpenShift different from OpenShift?
     choices:
-    - content: Red Hat manages ARO and OpenShift is open-source.
+    - content: Red Hat manages Azure Red Hat OpenShift and OpenShift is open-source.
       isCorrect: true
-      explanation: ARO is the Azure Red Hat OpenShift offering that helps with OpenShift management.
-    - content: ARO doesn’t work on edge devices but OpenShift does.
+      explanation: Azure Red Hat OpenShift is the Azure Red Hat OpenShift offering that helps with OpenShift management.
+    - content: Azure Red Hat OpenShift doesn’t work on edge devices but OpenShift does.
       isCorrect: false
-      explanation: ARO works across hybrid deployments, including at the edge.
-    - content: ARO supports Java applications and OpenShift doesn't.
+      explanation: Azure Red Hat OpenShift works across hybrid deployments, including at the edge.
+    - content: Azure Red Hat OpenShift supports Java applications and OpenShift doesn't.
       isCorrect: false
-      explanation: You can use Java with ARO or OpenShift.
+      explanation: You can use Java with Azure Red Hat OpenShift or OpenShift.
   - content: What does JBoss EAP do?
     choices:
     - content: It's the middleware solution that helps with Java apps.

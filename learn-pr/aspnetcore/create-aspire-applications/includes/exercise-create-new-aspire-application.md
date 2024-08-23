@@ -1,4 +1,4 @@
-Before you begin working on a new service for your company's latest project, you want to check your system has all the prerequisites for .NET Aspire. The best way to check is create a new .NET Aspire app with a starter template.
+Before you begin working on a new service for your company's latest project, you want to check your system has all the prerequisites for .NET Aspire. The best way to check is create a new .NET Aspire project with a starter template.
 
 In the exercise you'll install all the prerequisites, and then you'll create a new .NET Aspire Starter app. Then you'll see how to add a caching component using Redis to the app. Finally, you'll test the application and quickly explore the Aspire Dashboard.
 
@@ -235,9 +235,9 @@ The Blazor App has a simple counter page and a Weather page that calls the backe
 
 Close the browser tabs for the Blazor App and the .NET Aspire dashboard. In Visual Studio, stop debugging.
 
-## Add a caching component to a .NET Aspire app
+## Add a caching component to a .NET Aspire project
 
-Now let's add a Redis caching component to the .NET Aspire app. We'll start with the app host:
+Now let's add a Redis caching component to the .NET Aspire project. We'll start with the app host:
 
 # [Visual Studio](#tab/visual-studio)
 

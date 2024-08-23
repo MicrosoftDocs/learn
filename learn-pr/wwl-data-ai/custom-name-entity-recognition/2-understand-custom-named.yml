@@ -3,11 +3,13 @@ uid: learn.wwl.custom-name-entity-recognition.understand-custom-named
 title: Understand custom named entity recognition
 metadata:
   title: Understand custom named entity recognition
-  description: "Understand custom named entity recognition"
-  ms.date: 2/21/2024
+  description: Understand custom named entity recognition
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 2/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-custom-named.md)]

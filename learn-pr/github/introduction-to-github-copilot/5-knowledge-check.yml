@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 12/5/2023
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 12/5/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 ###########################################################################
 

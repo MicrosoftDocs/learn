@@ -14,7 +14,7 @@ More information about webhooks is available at [Starting an Azure Automation ru
 You create a webhook linked to a runbook using the following steps:
 
 1.  In the Azure portal, open the runbook that you want to create the webhook.
-2.  In the runbook pane, under Resources, select **Webhooks**, and then choose **+ Add webhook**.
+2.  In the runbook pane, under Resources, select **Webhooks**, and then choose **Add webhook**.
 3.  Select **Create new webhook**.
 4.  In the **Create new webhook** dialog, there are several values you need to configure. After you configure them, select **Create**:
      -  **Name**. Specify any name you want for a webhook because the name isn't exposed to the client. It's only used for you to identify the runbook in Azure Automation.

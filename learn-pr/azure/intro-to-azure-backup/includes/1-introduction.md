@@ -10,11 +10,14 @@ Azure Backup can also address scenarios for your Azure environments, with suppor
 
 * Azure VMs
 * Azure Managed Disks
-* Azure Files Shares
+* Azure Files
 * SQL Server in Azure VMs
 * SAP HANA databases in Azure VMs
 * Azure Database for PostgreSQL servers
 * Azure Blobs
+* Azure Database for PostSQL - Flexible servers
+* Azure Database for MySQL - Flexible servers
+* Azure Kubernetes cluster
 
 ## Example scenario
 

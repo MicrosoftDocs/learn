@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Connect to Microsoft Azure - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/library/connect-to-azure).
- -  [CI/CD with Azure Pipelines and templates - Azure Resource Manager \| Microsoft Docs](/azure/azure-resource-manager/templates/add-template-to-azure-pipelines).
- -  [Security through templates - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/security/templates).
+ -  [Connect to Microsoft Azure - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/library/connect-to-azure).
+ -  [CI/CD with Azure Pipelines and templates - Azure Resource Manager \| Microsoft Learn](/azure/azure-resource-manager/templates/add-template-to-azure-pipelines).
+ -  [Security through templates - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/security/templates).

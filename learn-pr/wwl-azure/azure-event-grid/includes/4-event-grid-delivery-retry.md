@@ -5,21 +5,21 @@ Event Grid provides durable delivery. It tries to deliver each event at least on
 
 ## Retry schedule
 
-When Event Grid receives an error for an event delivery attempt, Event Grid decides whether it should retry the delivery, dead-letter the event, or drop the event based on the type of the error.
+When Event Grid receives an error for an event delivery attempt, Event Grid decides whether it should: retry the delivery, dead-letter the event, or drop the event based on the type of the error.
 
-If the error returned by the subscribed endpoint is a configuration-related error that can't be fixed with retries (for example, if the endpoint is deleted), Event Grid will either dead-letter the event or drop the event if dead-letter isn't configured.
+If the error returned by the subscribed endpoint is a configuration-related error that can't be fixed with retries, Event Grid will either: perform dead-lettering on the event, or drop the event if dead-letter isn't configured.
 
 The following table describes the types of endpoints and errors for which retry doesn't happen:
 
 | Endpoint Type | Error codes |
 |--|--|
-| Azure Resources | 400 Bad Request, 413 Request Entity Too Large, 403 Forbidden |
-| Webhook | 400 Bad Request, 413 Request Entity Too Large, 403 Forbidden, 404 Not Found, 401 Unauthorized |
+| Azure Resources | 400 (Bad request), 413 (Request entity is too large) |
+| Webhook | 400 (Bad request), 413 (Request entity is too large), 401 (Unauthorized) |
 
 > [!IMPORTANT]
 > If Dead-Letter isn't configured for an endpoint, events will be dropped when the above errors happen. Consider configuring Dead-Letter if you don't want these kinds of events to be dropped.
 
-If the error returned by the subscribed endpoint isn't among the above list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint hasn’t responded, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
+If the error returned by the subscribed endpoint isn't among the previous list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint hasn’t responded, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
 
 If the endpoint responds within 3 minutes, Event Grid attempts to remove the event from the retry queue on a best effort basis but duplicates might still be received. Event Grid adds a small randomization to all retry steps and might opportunistically skip certain retries if an endpoint is consistently unhealthy, down for a long period, or appears to be overwhelmed.
 

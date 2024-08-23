@@ -16,7 +16,7 @@ Let's use these two features to enable continuous integration from the App Servi
 
 ## Enable continuous integration from App Service
 
-The **Container settings** page of an App Service resource in the Azure portal automates the setup of continuous integration. If you turn on **Continuous Deployment**, App Service configures a webhook in your container registry to notify an App Service endpoint. Notifications from the registry that reach this endpoint cause your app to restart and pull the latest version of the container image.
+The **Deployment Center** page of an App Service resource in the Azure portal automates the setup of continuous integration. If you turn on **Continuous Deployment**, App Service configures a webhook in your container registry to notify an App Service endpoint. Notifications from the registry that reach this endpoint cause your app to restart and pull the latest version of the container image.
 
 ### Extend continuous integration to source control by using an Azure Container Registry task
 

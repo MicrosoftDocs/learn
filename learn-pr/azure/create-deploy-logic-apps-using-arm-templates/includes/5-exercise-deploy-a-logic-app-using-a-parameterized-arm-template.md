@@ -24,7 +24,7 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    The default value for the `location` parameter is the location for the resource group into which the app is deployed. We get that value by referencing the *location* property from the resource group returned by the `resourceGroup()` template function. Expressions start and end with left and right brackets (`[ ]`) respectively. The expression's value is evaluated when the template finishes deployment. An expression can return a string, integer, boolean, array, or object. In a template, you can define 256 parameters as the maximum.
 
-   Now that we defined two new parameters, we'll use them in the template by replacing hardcoded values with references to the new parameters.
+   Now that we've defined two new parameters, we'll use them in the template by replacing hardcoded values with references to the new parameters.
 
 1. Replace the `name` and `location` fields in the resources section of the template to use our new parameters as shown in the following snippet:
 
@@ -34,11 +34,11 @@ In the preceding exercise, we deployed a logic app using a basic Azure Resource 
 
    [!code-json[](../code/basic-template-with-params/template.json?range=60-65)]
 
-1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save all changes to **template-with-params.json**.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes to **template-with-params.json**.
 
 ## Deploy logic app resource with the parameterized template
 
-There are two ways to supply parameters to our template during deployment using the`--parameters` flag in the `az deployment group create` command. We can pass in a URI of a remote parameters file, or the name of a local file. Let's use a local file.
+There are two ways to supply parameters to our template during deployment using the`--parameters` flag in the `az deployment group create` command. We can pass in a URI of a remote parameters file or the name of a local file. Let's use a local file.
 
 ### Create a parameters JSON file
 
@@ -48,7 +48,7 @@ There are two ways to supply parameters to our template during deployment using 
    code params.json
    ```
 
-1. Paste the following JSON into **params.json**, and press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
+1. Paste the following JSON into **params.json** and press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
 
    [!code-json[](../code/basic-template-with-params/params.json?range=1-5)]
 
@@ -112,7 +112,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
    --query [*].[name,location] --output tsv
    ```
 
-   This command lists the three Azure Logic Apps workflows we've deployed so far, all from a template.
+   This command lists the two Azure Logic Apps workflows we've deployed so far, all from a template.
 
 ## Update the app action in the Azure Resource Manager template
 
@@ -140,7 +140,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 
    - Returns the product of the integer equivalents for the height and width string values from the URL parameters. This task uses the `mul()` function and `int()` conversion function.
 
-1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save all changes to **template-with-params.json**.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes to **template-with-params.json**.
 
 1. Validate the template after these changes with the `az deployment group validate` command in the Cloud Shell. In this example, we set the app's name to *CalculateArea* by using an inline parameter.
 
@@ -168,6 +168,9 @@ Let's now turn our attention to making our app do a little more than just sendin
 
     :::image type="content" source="../media/calculate-area-response.png" alt-text="Sceenshot of web browser displaying response from our app called calculate area." loc-scope="other"::: <!-- no-loc -->
 
+    > [!NOTE]
+    > Make sure to only replace the referenced parts of the URL in the preceding step. Leave all of the text on either side as-is.
+
 1. Run the following command to list all Azure Logic Apps workflows we've deployed so far:
 
    ```azurecli
@@ -177,7 +180,7 @@ Let's now turn our attention to making our app do a little more than just sendin
    --query [*].[name,location] --output tsv
    ```
 
-In this exercise, we introduced more flexibility to our template with parameters. We supplied those parameters on the command line and using a local file. We also updated the action that our simple workflow executes, by directly changing the `body` of the response we send back.
+In this exercise, we introduced more flexibility to our template with parameters. We supplied those parameters on the command line and by using a local file. We also updated the action that our simple workflow executes by directly changing the `body` of the response we send back.
 
 You can download the parameters and template files from GitHub with the following `curl` commands in the Cloud Shell.
 

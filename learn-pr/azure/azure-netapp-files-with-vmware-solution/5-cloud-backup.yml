@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Protect VMs using Cloud Backup for Virtual Machines
   description: Learn about the Cloud Backup for Virtual Machines solution to protect your data with Azure NetApp Files and Azure VMware Solution. 
-  ms.date: 04/08/2024
+  ms.date: 07/03/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit

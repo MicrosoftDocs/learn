@@ -11,4 +11,4 @@ For more information about the topics in this module, see:
 
 - [SCRAM authentication in Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-connect-scram)
 - [Encrypted connectivity using Transport Layer Security in Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-connect-tls-ssl)
-- [Networking overview - Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-networking)
+- [Networking overview - Azure Database for PostgreSQL - Flexible Server | Microsoft Learn](/azure/postgresql/flexible-server/concepts-networking)

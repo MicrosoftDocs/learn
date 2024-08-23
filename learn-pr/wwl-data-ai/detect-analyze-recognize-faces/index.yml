@@ -2,12 +2,14 @@
 uid: learn.wwl.detect-analyze-recognize-faces
 metadata:
   title: Detect, analyze, and recognize faces
-  description: "Detect, analyze, and recognize faces"
-  ms.date: 03/11/2024
+  description: Detect, analyze, and recognize faces
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: module
+  ms.date: 03/11/2024
   ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
   ai-usage: human-only
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.

@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 09/28/2023
   author: mumian
   ms.author: jgao

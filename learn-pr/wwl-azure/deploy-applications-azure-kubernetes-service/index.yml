@@ -2,12 +2,12 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service
 metadata:
   title: Deploy applications to Azure Kubernetes Service
-  description: "This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy."
+  description: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
   ms.date: 03/04/2024
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-kubernetes-service
 title: Deploy applications to Azure Kubernetes Service
 summary: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
 abstract: |

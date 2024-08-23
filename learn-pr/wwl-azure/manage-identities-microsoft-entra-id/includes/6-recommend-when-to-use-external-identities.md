@@ -7,7 +7,7 @@ A simple invitation and redemption process lets partners use their own credentia
 
 Developers can use Microsoft Entra business-to-business APIs to customize the invitation process or write applications like self-service sign-up portals. For licensing and pricing information related to guest users, refer to [Microsoft Entra External ID pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/).
 
-**Collaborate with any partner using their identities**<br>
+**Collaborate with any partner using their identities**
 
 With Microsoft Entra B2B, the partner uses their own identity management solution, so there's no external administrative overhead for your organization. Guest users sign in to your apps and services with their own work, school, or social identities.
 
@@ -43,7 +43,7 @@ As an administrator, you can easily add guest users to your organization in the 
 
 With a self-service sign-up user flow, you can create a sign-up experience for external users who want to access your apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user. Learn about [self-service sign-up and how to set it up](/entra/external-id/self-service-sign-up-overview).
 
-You can also use API connectors to integrate your self-service sign-up user flows with external cloud systems. You can connect with custom approval workflows, perform identity verification, and validate user-provided information.<br>
+You can also use API connectors to integrate your self-service sign-up user flows with external cloud systems. You can connect with custom approval workflows, perform identity verification, and validate user-provided information.
 
 :::image type="content" source="../media/sign-up-and-sign-in-page-422a2552.png" alt-text="Screenshot showing the external identities sign up page.":::
 

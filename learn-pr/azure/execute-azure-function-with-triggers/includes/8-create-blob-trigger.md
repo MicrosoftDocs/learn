@@ -14,11 +14,11 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 1. Select the **Create** button at the top of the **Functions** tab. The **Create function** pane appears.
 
-1. Under **Select a template**, select **Azure Blob Storage trigger**.
+1. Under **Select a template**, select **Azure Blob Storage trigger**, then select **Next**.
 
 1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Wait until the installation completes before continuing.
 
-1. Under **Template details**, accept the default value for the **New Function** field.
+1. Under **Template details**, accept the default value for the **Function name** field.
 
 1. Accept the default value for the **Path** field.
 
@@ -59,7 +59,7 @@ Now that we've created our container to monitor, let's run our function so we ca
 
 1. Switch back to the browser tab with your Azure Function (or reopen it).
 
-1. Select your blob trigger in the **Functions** tab in the center of the screen. In the left menu pane, under **Developer**, select **Code + Test**.
+1. Select your blob trigger in the **Functions** tab in the center of the screen. In the taskbar at the top of the screen, select **Code + Test**.
 
 1. Expand the **Logs** tab at the bottom of the screen if necessary.
 

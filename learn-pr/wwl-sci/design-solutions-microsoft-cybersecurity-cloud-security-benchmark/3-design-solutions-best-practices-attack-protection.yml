@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-best-practices-attack-protection
-title: Design solutions with best practices for attack protection
+title: Design solutions with best practices for protecting against insider, external and supply chain attacks.
 metadata:
-  title: Design solutions with best practices for attack protection
-  description: "SC-100 preparatory content on topic: Design solutions with best practices for attack protection."
+  title: Design solutions with best practices for protecting against insider, external, and supply chain attacks
+  description: "SC-100 preparatory content on topic: Design solutions with best practices for protecting against insider, external, and supply chain attacks."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed

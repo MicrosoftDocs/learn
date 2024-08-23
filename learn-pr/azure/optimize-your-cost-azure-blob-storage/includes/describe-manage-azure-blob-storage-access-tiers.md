@@ -30,9 +30,6 @@ The hot, cool, cold, or archive access tier can be assigned to a blob directly d
 > [!NOTE]
 > Carefully consider the implications of changing the default access tier on the storage account level, because this might have a significant pricing impact if there’s a large number of blobs without an explicitly assigned access tier.
 
-> [!NOTE]
-> If a blob's tier is inferred as cool, there’s no early deletion charge for moving it to the archive tier. However, a charge does apply if the blob is explicitly assigned to the cool tier and then moved to the archive tier before a period of 30 days.
-
 While a blob is assigned to the archive tier, you can't directly read or modify its content, although you do have access to its metadata, including index tags. To access the blob's content, you can assign it to the hot, cool, or cold tier, which triggers the process referred to as *rehydration*. Alternatively, you can invoke the Copy Blob operation to create a copy of the blob in the hot, cool, or cold tier.
 
 > [!NOTE]

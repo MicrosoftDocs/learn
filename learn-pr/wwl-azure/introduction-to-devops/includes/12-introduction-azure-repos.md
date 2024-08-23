@@ -18,4 +18,4 @@ Azure Repos provides two types of version control:
  -  Protection of your code quality with branch policies: Keep code quality high by requiring code reviewer sign-out, successful builds, and passing tests before merging pull requests. Customize your branch policies to maintain your team’s high standards.
  -  Usage of your favorite tools: Use Git and TFVC repositories on Azure Repos with your favorite editor and IDE.
 
-For further reference on using git in Azure Repos, refer to [Microsoft Docs.](/azure/devops/repos)
+For further reference on using git in Azure Repos, refer to [Microsoft Learn](/azure/devops/repos).

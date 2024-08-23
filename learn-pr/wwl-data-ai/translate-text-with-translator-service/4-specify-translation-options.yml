@@ -3,11 +3,13 @@ uid: learn.wwl.translate-text-with-translator-service.specify-translation-option
 title: Specify translation options
 metadata:
   title: Specify translation options
-  description: "Specify translation options"
-  ms.date: 12/05/2023
+  description: Specify translation options
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/05/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/4-specify-translation-options.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/27/2023
+  ms.date: 08/01/2024
   author: fabianomira
   ms.author: famira
   ms.topic: unit
@@ -18,34 +18,34 @@ quiz:
   questions:
   - content: "What is the most cost-effective way to securely access multiple virtual machines?"
     choices:
-    - content: "Azure Bastion and JIT together."
+    - content: "Azure Bastion and just-in-time (JIT) together."
       isCorrect: false
-      explanation: "That's incorrect. This is the most expensive, but the most secure way to enable access to VMs in Azure."
+      explanation: "Incorrect. This is the most expensive, but the most secure way to enable access to VMs in Azure."
     - content: "Azure Bastion."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion requires the Azure Bastion Service to deployed. There's a cost associated with running the service."
+      explanation: "Incorrect. Azure Bastion requires the Azure Bastion Service to deployed. There's a cost associated with running the service."
     - content: "Just-in-time VM access."
       isCorrect: true
-      explanation: "That's correct. There's a cost associated with Microsoft Defender for Cloud enhanced security. However, when it's enabled in a subscription, there are no additional charges to provide JIT access on each VM."
+      explanation: "Correct. There's a cost associated with Microsoft Defender for Cloud enhanced security. However, when it's enabled in a subscription, there are no additional charges to provide JIT access on each VM."
   - content: "Where are the enhanced security features for Microsoft Defender for Cloud enabled?"
     choices:
     - content: "They're enabled on the resource group to be protected."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Defender for Cloud is not configured at the resource group level."
+      explanation: "Incorrect. Microsoft Defender for Cloud is not configured at the resource group level."
     - content: "They're enabled on each VM that needs to be accessed securely."
       isCorrect: true
-      explanation: "That's correct. Enable the enhanced features of Microsoft Defender for Cloud at the VM."
+      explanation: "Correct. Enable the enhanced features of Microsoft Defender for Cloud at the VM."
     - content: "They're enabled in the subscription section of the Azure portal."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Defender for Cloud is enabled at the subscription level, but not the enhanced security features."
+      explanation: "Incorrect. Microsoft Defender for Cloud is enabled at the subscription level, but not the enhanced security features."
   - content: "Which VM connection method has a connection troubleshoot wizard?"
     choices:
     - content: "Just-in-time VM access"
       isCorrect: false
-      explanation: "That's incorrect. Just-in-time VM access doesn't have a wizard."
+      explanation: "Incorrect. Just-in-time VM access doesn't have a wizard."
     - content: "Azure Bastion"
       isCorrect: true
-      explanation: "That's correct. Azure Bastion has a connection troubleshoot wizard under the Monitoring section."
+      explanation: "Correct. Azure Bastion has a connection troubleshoot wizard under the Monitoring section."
     - content: "Both offer a wizard"
       isCorrect: false
-      explanation: "That's incorrect. Only one of the methods has a connection troubleshoot wizard."
+      explanation: "Incorrect. Only one of the methods has a connection troubleshoot wizard."

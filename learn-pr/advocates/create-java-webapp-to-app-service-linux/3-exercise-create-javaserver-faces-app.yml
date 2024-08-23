@@ -8,9 +8,7 @@ metadata:
   ms.author: yoterada
   ms.date: 05/03/2023
   ms.topic: unit
-  ms.custom:
-    - team=cloud_advocates
-    - devx-track-extended-java
+  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
   ms.contributors: yoterada-12142020
 durationInMinutes: 4
 content: |

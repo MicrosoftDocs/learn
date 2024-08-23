@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of Introduction to Azure IoT Central.
-  ms.date: 05/28/2023
+  ms.date: 06/11/2024
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Telemetry, properties, and commands"
       isCorrect: true
-      explanation: "Correct. You define these capabilities in a model that's shared between the device and the IoT Central application."
+      explanation: "Correct. You define these capabilities in a model shared between the device and the IoT Central application."
     - content: "Telemetry, properties, and jobs"
       isCorrect: false
       explanation: "Incorrect. Jobs aren't a device capability. Jobs are defined at the application level and let you apply single or bulk updates to devices by setting properties or calling commands."
@@ -37,22 +37,22 @@ quiz:
     - content: "REST API"
       isCorrect: false
       explanation: "Incorrect. IoT Central REST API purpose is to enable automation and build integrations that let other applications and services manage your application."
-  - content: "A small tech startup has plans to implement a tracking system. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision devices with little to no code and has identified a suitable IoT Plug and Play certified device. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
+  - content: "A small tech startup has plans to implement a tracking system. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision devices with little to no code. They identify a suitable IoT Plug and Play certified device, but one of their senior developers doesn't believe Azure IoT Central can work for this solution. Is this senior developer correct?"
     choices:
     - content: "Yes. All IoT Central solutions require code to be written both in the cloud and on the devices."
       isCorrect: false
-      explanation: "Incorrect. IoT Central solutions don't require code to be written on the device when using a IoT Plug and Play certified device, nor on the cloud when using IoT Central built-in analytics."
+      explanation: "Incorrect. IoT Central solutions don't require code to be written on the device. Either when using a IoT Plug and Play certified device, or on the cloud when using IoT Central built-in analytics."
     - content: "Yes. IoT Central solutions always require users to write code for the cloud application to function."
       isCorrect: false
-      explanation: "Incorrect. IoT Central cloud applications are built to function \"right out of the box\", you will only need to write code when leveraging IoT Central REST API."
-    - content: "No. IoT Central allow users to use IoT Plug and Play certified devices and build solutions without writing any code."
+      explanation: "Incorrect. IoT Central cloud applications are built to function *right out of the box*, you only need to write code when using the IoT Central REST API."
+    - content: "No. IoT Central allows users to use IoT Plug and Play certified devices and build solutions without writing any code."
       isCorrect: true
       explanation: "Correct. The IoT Plug and Play native integration with IoT Central enables solution builders to use IoT Plug and Play certified devices and build solutions without writing code for both the devices and cloud."
-  - content: "A warehouse owner wants to automate their inventory management system. The owner would like to place sensors on each shelf of the warehouse to monitor item availability and programmatically replenish low inventory. The warehouse's IT department is in search of an IoT solution that will allow them to securely test the scenario. Which of the following benefits of Azure IoT Central makes this possible?"
+  - content: "A warehouse owner wants to automate their inventory management system. The owner would like to place sensors on each shelf of the warehouse to monitor item availability and programmatically replenish low inventory. The warehouse's IT department is in search of an IoT solution that allows them to securely test the scenario. Which of the following benefits of Azure IoT Central makes this scenario possible?"
     choices:
     - content: "Big Data Management"
       isCorrect: false
-      explanation: "Incorrect. Big Data Management refers to how the IoT application will handle its data but doesn't adequately secure the data it handles."
+      explanation: "Incorrect. Big Data Management refers to how the IoT application handles its data but doesn't adequately secure the data it handles."
     - content: "Device Management"
       isCorrect: false
       explanation: "Incorrect. Device Management refers to the systematic pattern used to handle devices themselves; not their security."

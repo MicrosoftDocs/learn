@@ -49,6 +49,8 @@ Ensure the application is covered by the following licensing requirements:
 From the sign-in perspective, applications with shared accounts aren't different from enterprise applications that use password SSO for individual users. However, there are more steps required when planning and configuring an application meant to use shared accounts.
 
  -  Work with users to document the following information:
+    
+    
      -  The set of users in the organization who will use the application.
      -  The existing set of credentials in the application associated with the set of users.
  -  For each combination of user set and credentials, create a security group in the cloud or on-premises based on your requirements.
@@ -64,7 +66,7 @@ There are several ways you can configure an application for SSO. Choosing an SSO
 
 This flowchart can help you decide which SSO method is best for your situation.
 
-:::image type="content" source="../media/dec-single-sign-on-options-ea4bc1d9.png" alt-text="Screenshot showing several ways you can configure an application for single sign-on options.":::
+:::image type="content" source="../media/dec-single-sign-on-options-ea4bc1d9-a0b7097b.png" alt-text="Screenshot showing several ways you can configure an application for single sign-on options.":::
  The following SSO protocols are available to use:
 
  -  OpenID Connect and OAuth - Choose OpenID Connect and OAuth 2.0 if the application you're connecting to supports it.

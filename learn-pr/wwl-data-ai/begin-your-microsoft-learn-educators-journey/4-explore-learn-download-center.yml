@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.explore-learn-download-center
+title: Explore the Learning Download Center
+metadata:
+  title: Explore the Learning Download Center
+  description: "Explore the Learning Download Center"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-explore-learn-download-center.md)]

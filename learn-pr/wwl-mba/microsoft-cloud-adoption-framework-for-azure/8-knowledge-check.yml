@@ -16,54 +16,54 @@ quiz:
     choices:
     - content: "Plan, Business Justification, and Implementation."
       isCorrect: false
-      explanation: "That's incorrect. Business Justification and Implementation aren't main stages of the Cloud Adoption Framework."
+      explanation: "Incorrect. Business Justification and Implementation aren't main stages of the Cloud Adoption Framework."
     - content: "Migrate, Test, and Optimize."
       isCorrect: false
-      explanation: "That's incorrect. Migrate, Test, and Optimize aren't main stages of the Cloud Adoption Framework."
+      explanation: "Incorrect. Migrate, Test, and Optimize aren't main stages of the Cloud Adoption Framework."
     - content: "Plan, Ready, and Adopt."
       isCorrect: true
-      explanation: "That's correct. The Cloud Adoption Framework describes how the organization must prepare its people with technical readiness, adjust business processes to drive business and technology changes, and enable business outcomes through implementation of the defined technology plan."
-  - content: "Motivations for cloud adoption include migration and innovation triggers. Migration triggers include such things as cost saving and operations optimization. Which of the following is an example of an innovation trigger which drives cloud adoption?"
+      explanation: "Correct. The Cloud Adoption Framework describes how the organization must prepare its people with technical readiness, adjust business processes to drive business and technology changes, and enable business outcomes through implementation of the defined technology plan."
+  - content: "Motivations for cloud adoption include migration and innovation triggers. Migration triggers include such things as cost saving and operations optimization. Which of the following is an example of an innovation trigger, which drives cloud adoption?"
     choices:
     - content: "Reduction in IT staff for on-premises hardware."
       isCorrect: false
-      explanation: "That's incorrect. Reduction in IT staff isn't an innovation trigger, but optimization of internal operations can be a migration trigger."
+      explanation: "Incorrect. Reduction in IT staff isn't an innovation trigger, but optimization of internal operations can be a migration trigger."
     - content: "Transform products or services."
       isCorrect: true
-      explanation: "That's correct. The desire to transform products or services might be an innovation trigger which drives cloud adoption."
+      explanation: "Correct. The desire to transform products or services might be an innovation trigger, which drives cloud adoption."
     - content: "Increase business agility."
       isCorrect: false
-      explanation: "That's incorrect. Increasing business agility isn't an innovation trigger, but might be a migration trigger."
+      explanation: "Incorrect. Increasing business agility isn't an innovation trigger, but might be a migration trigger."
   - content: "What are the five disciplines of cloud governance?"
     choices:
     - content: "Business risk, process, policy and compliance, resource consistency, and deployment acceleration."
       isCorrect: false
-      explanation: "That's incorrect. Business risk, process, and policy compliance are required for governance, but they aren't one of the five disciplines."
+      explanation: "Incorrect. Business risk, process, and policy compliance are required for governance, but they aren't one of the five disciplines."
     - content: "Business risk, policy and compliance, security baseline, process, and operations."
       isCorrect: false
-      explanation: "That's incorrect. These are important tasks in any cloud adoption but aren't part of the five disciplines of cloud governance."
+      explanation: "Incorrect. These are important tasks in any cloud adoption but aren't part of the five disciplines of cloud governance."
     - content: "Cost management, security baseline, resource consistency, identity baseline, and deployment acceleration."
       isCorrect: true
-      explanation: "That's correct. When you build your cloud governance strategy, you need to think about cost management, setting a security baseline, working toward resource consistency through best practices, establishing the identity and access strategy, and accelerating deployment with consistent templates."
+      explanation: "Correct. When you build your cloud governance strategy, you need to think about cost management, setting a security baseline, working toward resource consistency through best practices, establishing the identity and access strategy, and accelerating deployment with consistent templates."
   - content: "The common value drivers that business decision makers can use to justify moving their business to the cloud are Cost, Scale, Productivity, and Reliability. What is the specific value of scale in cloud computing?"
     choices:
     - content: "Scale is the ability to deliver the right amount of IT resources."
       isCorrect: true
-      explanation: "That's correct. Scale is the ability to scale elastically and deliver the right amount of IT resources."
+      explanation: "Correct. Scale is the ability to scale elastically and deliver the right amount of IT resources."
     - content: "Scale eliminates capital expense."
       isCorrect: false
-      explanation: "That’s incorrect. Cost, not Scale, is the cloud computing business value area which eliminates capital expense."
+      explanation: "Incorrect. Cost, not Scale, is the cloud computing business value area, which eliminates capital expense."
     - content: "Scale eases the burden of data backup, disaster recovery, and business continuity."
       isCorrect: false
-      explanation: "That's incorrect. Reliability, not Scale, eases the burden of data backup, disaster recovery, and business continuity."
-  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill and track actual account usage?"
+      explanation: "Incorrect. Reliability, not Scale, eases the burden of data backup, disaster recovery, and business continuity."
+  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill?"
     choices:
     - content: "The Azure Total Cost of Ownership (TCO) Calculator."
       isCorrect: false
-      explanation: "That's incorrect. Organizations can use the Azure TCO Calculator to estimate the cost savings they can realize by migrating their application workloads to Azure."
+      explanation: "Incorrect. Organizations can use the Azure TCO Calculator to estimate the cost savings they can realize by migrating their application workloads to Azure."
     - content: "The Azure Pricing Calculator."
       isCorrect: true
-      explanation: "That's correct. Organizations can estimate their expected monthly bills by using the pricing calculator to track their actual account usage and bills at any time on the billing portal."
+      explanation: "Correct. Organizations can estimate their expected monthly bills by using the pricing calculator to track their actual account usage and bills at any time on the billing portal."
     - content: "Microsoft Cost Management."
       isCorrect: false
-      explanation: "That's incorrect. Organizations can use the Microsoft Cost Management tool to use and manage Azure and other cloud resources through a multiple-cloud cost management solution."
+      explanation: "Incorrect. Organizations can use the Microsoft Cost Management tool to use and manage Azure and other cloud resources through a multicloud cost management solution."

@@ -1,13 +1,13 @@
-As documented in the Azure virtual machines planning guide, there are two basic methods for connecting into Azure VMs:
+As documented in the Azure Virtual Machines planning guide, there are two basic methods for connecting into Azure Virtual Machines:
 
-- Connect through public endpoints on a Jumpbox VM.
+- Connect through public endpoints on a Jumpbox virtual machine.
 - Connect through a VPN or Azure ExpressRoute.
 
 Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for nonproduction scenarios that feed into production scenarios where SAP software is being used.
 
 ## Azure Automation
 
-Azure Automation offers the desired state configuration functionality via a cloud-based, managed DSC Pull Server in the Azure cloud. It provides rich reports that inform you of important events such as when nodes have deviated from their assigned configuration. You can monitor and automatically update machine configuration across physical and virtual machines, Windows or Linux, in the cloud or on-premises. Azure Automation also includes a built-in solution that starts and stops Azure VMs on user-defined schedules.
+Azure Automation offers the desired state configuration functionality via a cloud-based, managed DSC Pull Server in the Azure cloud. It provides rich reports that inform you of important events such as when nodes have deviated from their assigned configuration. You can monitor and automatically update machine configuration across physical and virtual machines, Windows or Linux, in the cloud or on-premises. Azure Automation also includes a built-in solution that starts and stops Azure Virtual Machines on user-defined schedules.
 
 ## SAP Landscape Management (LaMa)
 

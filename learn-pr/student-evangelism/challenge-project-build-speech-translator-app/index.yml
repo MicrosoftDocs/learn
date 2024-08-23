@@ -2,13 +2,15 @@
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app
 metadata:
   title: Challenge project - Build a speech translator app
-  description: "Learn how to build a speech translation app by using Microsoft Power Apps and integrate it with AI."
-  ms.date: 12/13/2023
+  description: Learn how to build a speech translation app by using Microsoft Power Apps and integrate it with AI.
   author: theoyinbooke
   ms.author: somelezediko
-  ms.custom: team=nextgen
-  ms.topic: module-challenge-project
+  ms.date: 12/13/2023
   ms.service: azure-ai-services
+  ms.topic: module-challenge-project
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 title: Challenge project - Build a speech translator app
 summary: |
   This challenge project helps you demonstrate your ability to analyze project requirements, translate them into a solution, and showcase your technical skills in Power Apps and Microsoft Azure AI services.

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.exercise-add-items-azure-storage
+title: Exercise - Add items to Azure Storage
+metadata:
+  title: Exercise - Add items to Azure Storage
+  description: In this unit, you'll add Azure Storage backing services and use them in your .NET Aspire cloud-native app to store and retrieve files and messages.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-add-items-azure-storage.md)]

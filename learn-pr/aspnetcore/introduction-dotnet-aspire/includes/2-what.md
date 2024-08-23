@@ -48,6 +48,7 @@ A cloud-native application consisting of multiple microservices and with many fe
 - **Resiliency.** No hosting service can be 100% available. You must ensure that, in rare occasions when a microservice is unavailable, the app handles failures robustly and keeps requests until the service returns.
 - **Distributed data.** Each microservice implements its own data storage layer and may not use the same database server as the others. You must consider how you'll query for data from multiple microservices and how will you implement transactions.
 - **Secrets.** If your app handles any kind of sensitive data, each microservice must authenticate every request it receives before returning a response. Often secrets such as asymmetric and symmetric encryption keys are used to protect data and positively identify calling users and microservices. You must consider how these secrets are stored and exchanged in your cloud-native app.
+- **Developer onboarding.** New developers must be able to understand the app's architecture and how to work with it quickly. You must ensure that new developers can get up to speed without lots of cross-domain knowledge or local setup.
 
 Recently, cloud-native application design has been gaining in popularity but challenges like those in this section discourage some teams from embracing this pattern. .NET, for example, has all the features needed to solve these issues but the solutions may need significant investment in training and custom code.
 
@@ -62,7 +63,7 @@ Microservices and their loosely coupled nature increase the flexibility of your 
 - You can specify clearly for all teams the .NET projects, containers, executables, and cloud resources that make up the application.
 - Microservices can automatically discover endpoints for all the application's components. .NET Aspire performs this service discovery by managing connection strings and injecting them into microservices where needed.
 
-When you create a .NET Aspire app, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
+When you create a .NET Aspire solution, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
 
 ### Components
 
@@ -81,7 +82,7 @@ The out-of-the-box .NET Aspire components include:
 - Messaging components such as those for RabbitMQ and Azure Service Bus.
 
 > [!IMPORTANT]
-> .NET Aspire includes many components that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire apps and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
+> .NET Aspire includes many components that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire projects and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
 
 ### Tooling
 

@@ -5,7 +5,7 @@ metadata:
   description: "Use Data Factory pipelines in Microsoft Fabric"
   ms.date: 05/08/2024
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: jamesh
   ms.topic: module
   ms.custom:
   - build-2023

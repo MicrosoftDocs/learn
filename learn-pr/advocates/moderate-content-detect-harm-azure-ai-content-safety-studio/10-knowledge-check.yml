@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Validate your understanding of the key concepts covered in this module.
-  ms.date: 05/09/2024
   author: aprilspeight
   ms.author: apspeigh
+  ms.date: 05/09/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]

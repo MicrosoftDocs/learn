@@ -8,6 +8,8 @@ metadata:
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 7
 content: | 
   [!include[](includes/4-deployment-stack-resource.md)]

@@ -3,7 +3,7 @@ author: baanders
 ms.author: baanders
 ms.date: 03/15/2024
 ms.topic: include
-ms.service: digital-twins
+ms.service: azure-digital-twins
 ---
 
 3. Add the following variables to the top of your class, before the function declaration. These class variables will be used to authenticate your function with Azure Digital Twins. There are no placeholders to replace; just paste them in as shown.

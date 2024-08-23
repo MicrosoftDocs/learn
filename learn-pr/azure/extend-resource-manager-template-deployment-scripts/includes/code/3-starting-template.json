@@ -12,7 +12,7 @@
         {
             "name": "[variables('storageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2019-06-01",
+            "apiVersion": "2023-01-01",
             "tags": {
                 "displayName": "[variables('storageAccountName')]"
             },
@@ -23,6 +23,7 @@
                 "tier": "Standard"
             },
             "properties": {
+                "allowBlobPublicAccess": true,
                 "encryption": {
                     "services": {
                         "blob": {

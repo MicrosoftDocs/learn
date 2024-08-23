@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/08/2023
+  ms.date: 06/18/2024
   author: roygara
   ms.author: rogarana
   ms.topic: unit
@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "A single instance SQL"
       isCorrect: false
-      explanation: "Single instance SQL is deployed on only one VM and doesn't require Azure shared disk."
+      explanation: "Single instance SQL is deployed on only one virtual machine (VM) and doesn't require Azure shared disk."
     - content: "An Always On availability group"
       isCorrect: false
       explanation: "An Always On availability group provides high availability SQL deployment, but it doesn't use Azure shared disks."
     - content: "A SQL Server failover cluster instance (FCI)"
       isCorrect: true
-      explanation: "A SQL Server FCI takes advantage of failover cluster scenarios, where multiple VMs access and use an Azure shared disk."
+      explanation: "A SQL Server FCI takes advantage of failover cluster scenarios, where multiple virtual machines (VMs) access and use an Azure shared disk."
  
   - content: "Which one of the following statements is true about Azure shared disks?"
     choices:
@@ -35,9 +35,9 @@ quiz:
       explanation: "You can use Azure shared disks only as data disks."
     - content: "You can use SCSI PR commands to enable failover from one node to another when you use Azure shared disks."
       isCorrect: true
-      explanation: "Azure shared disks support SCSI PR standards. After you've mounted the shared disk to the VMs in your cluster, you can establish a quorum and read/write access to the disk by using SCSI PR."
+      explanation: "Azure shared disks support SCSI PR standards. After you mount the shared disk to the virtual machines (VMs) in your cluster, you can establish a quorum and read/write access to the disk by using SCSI PR."
  
-  - content: "An administrator plans to create an Azure VM that will use an Azure shared disk. Which one of the following disk types can use the shared disk functionality?"
+  - content: "An administrator plans to create an Azure Virtual Machine (VM) that will use an Azure shared disk. Which one of the following disk types can use the shared disk functionality?"
     choices:
     - content: "Data disk"
       isCorrect: true

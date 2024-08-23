@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-dotnet-aspire-app-azure.deploy-azure-container-apps
+title: Deploy to Azure Container Apps
+metadata:
+  title: Deploy to Azure Container Apps
+  description: In this unit, you'll learn how you can use Visual Studio or command-line tools to deploy a .NET Aspire solution to Azure Container Services.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-deploy-azure-container-apps.md)]

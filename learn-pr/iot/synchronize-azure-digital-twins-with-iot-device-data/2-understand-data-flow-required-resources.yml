@@ -8,6 +8,7 @@ metadata:
   author: baanders
   ms.author: baanders
   ms.topic: unit
+  ms.custom: devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-data-flow-required-resources.md)]

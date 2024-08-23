@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [What is Azure Application Insights? - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/app/app-insights-overview).
- -  [Continuous monitoring of your DevOps release pipeline with Azure Pipelines and Azure Application Insights - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/app/continuous-monitoring).
- -  [Azure Monitor Application Insights Documentation - Azure Monitor \| Microsoft Docs](/azure/azure-monitor/azure-monitor-app-hub).
+ -  [What is Azure Application Insights? - Azure Monitor \| Microsoft Learn](/azure/azure-monitor/app/app-insights-overview).
+ -  [Continuous monitoring of your DevOps release pipeline with Azure Pipelines and Azure Application Insights - Azure Monitor \| Microsoft Learn](/azure/azure-monitor/app/continuous-monitoring).
+ -  [Azure Monitor Application Insights Documentation - Azure Monitor \| Microsoft Learn](/azure/azure-monitor/azure-monitor-app-hub).

@@ -3,11 +3,13 @@ uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
   title: Design a machine learning model training solution
   description: Azure Machine Learning Python SDK v2
-  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
   ms.topic: module
-  ms.service: azure
+  ms.collection:
+    - wwl-ai-copilot
 title: Design a machine learning model training solution
 summary: Learn how to design a model training solution for machine learning projects.
 abstract: |

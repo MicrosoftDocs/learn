@@ -35,6 +35,6 @@ modules:
 - learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.secure-your-azure-virtual-machine-disks
-- learn.azure-security.secure-vms-with-security-center
+# - learn.azure-security.secure-vms-with-security-center
 trophy:
   uid: learn.security.implement-host-security.trophy

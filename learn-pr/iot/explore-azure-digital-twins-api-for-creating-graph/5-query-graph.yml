@@ -1,11 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.query-graph
 title: Query graph
-interactive: bash
 metadata:
   title: Query graph
   description: Use the Azure Digital Twins APIs to query the state of a graph.
-  ms.date: 11/29/2023
+  ms.date: 08/09/2024
   author: baanders
   ms.author: baanders
   ms.topic: unit

@@ -3,6 +3,7 @@ uid: learn.control-and-organize-with-resource-manager
 metadata:
   title: Control and organize Azure resources with Azure Resource Manager
   description: Use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
+  manager: mkluck
   ms.date: 10/03/2023
   author: tfitzmac
   ms.author: tomfitz

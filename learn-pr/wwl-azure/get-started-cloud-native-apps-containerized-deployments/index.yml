@@ -2,12 +2,12 @@
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments
 metadata:
   title: Get started with cloud native apps and containerized deployments
-  description: "Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications."
+  description: Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications.
   ms.date: 02/26/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-container-apps
 title: Get started with cloud native apps and containerized deployments
 summary: |
   This module provides an introduction to cloud-native applications, the benefits of containerized deployments, the options for containerized deployments on the Azure platform, and the features of Azure Container Apps.

@@ -3,11 +3,13 @@ uid: learn.wwl.custom-model-ai-vision-image-classification.label-train-custom-mo
 title: Label and train a custom model
 metadata:
   title: Label and train a custom model
-  description: "Label and train a custom model in Azure AI Vision."
-  ms.date: 01/29/2024
+  description: Label and train a custom model in Azure AI Vision.
   author: ivorb
   ms.author: berryivor
+  ms.date: 01/29/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/4-label-train-custom-model.md)]

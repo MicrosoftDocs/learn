@@ -16,7 +16,7 @@ Just like other Fabric experiences, the first thing you do with Data Activator i
 
 Let's go ahead and create a Reflex item in your Fabric workspace. From the New menu in the workspace, choose the ***Reflex*** item.
 
-[ ![Screenshot of selecting Reflexes in Data Activator.](../media/get-reflex-data.png) ](../media/get-reflex-data-large.png)
+[![Screenshot of selecting Reflexes in Data Activator.](../media/get-reflex-data.png)](../media/get-reflex-data-large.png)
 
 ## Navigate between data mode and design mode
 
@@ -44,7 +44,7 @@ To begin creating a trigger from a Real-Time Dashboard:
 1. Choose a tile on the Real-Time Dashboard for Data Activator to monitor.
 1. Select the ***More menu (...)*** on the right-top of the tile, and select ***Set alert***. 
 
-    ![Set alert in Real-Time Dashboard](../media/real-time-dashboard-alert.png)
+    ![Screenshot of Set alert in Real-Time Dashboard.](../media/real-time-dashboard-alert.png)
 
 ## Define alert conditions
 
@@ -54,4 +54,4 @@ Once you determine that you want alerted, you see the **Set alert** pane, and ca
 1. In the ***Action*** section, you can receive the alert via email of Microsoft Teams.
 1. In the ***Save location*** you choose the workspace and whether you want to use an existing reflex item or ***create*** a new one.
 
-![Configuring alert settings](../media/real-time-dashboard-alert-settings.png) 
+![Screenshot of Configuring alert settings.](../media/real-time-dashboard-alert-settings.png) 

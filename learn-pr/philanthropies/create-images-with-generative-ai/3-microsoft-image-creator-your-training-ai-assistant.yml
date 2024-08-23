@@ -4,10 +4,12 @@ title: Microsoft Image Creator, your training AI assistant
 metadata:
   title: Microsoft Image Creator, your training AI assistant
   description: This content is a part of the 'Create images with generative AI' module.
-  ms.date: 02/29/2024
   author: yoosunee
   ms.author: andreapark
+  ms.date: 02/29/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-microsoft-image-creator-your-training-ai-assistant.md)]

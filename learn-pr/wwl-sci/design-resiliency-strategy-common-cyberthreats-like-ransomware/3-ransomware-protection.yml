@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection
-title: Ransomware protection
+title: Design solutions for mitigating ransomware attacks, including prioritization of BCDR and privileged access
 metadata:
-  title: Ransomware protection
+  title: Design solutions for mitigating ransomware attacks, including prioritization of BCDR and privileged access
   description: "Learn Microsoft best practices for ransomware protection."
   ms.date: 3/14/2023
   author: hrasheed-msft

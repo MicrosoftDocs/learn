@@ -2,24 +2,20 @@
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
   title: Design and implement branch strategies and workflows
-  description: "Design and implement branch strategies and workflows"
+  description: Design and implement branch strategies and workflows
   ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: module
-  ms.service: azure
   ai-usage: human-only
+  ms.service: azure-devops-repos
 title: Design and implement branch strategies and workflows
 summary: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
 abstract: |
   By the end of this module, you're able to:
-
   -   Describe Git branching workflows
-
   -   Implement feature branches
-
   -   Implement GitHub Flow
-
   -   Fork a repo
 prerequisites: None
 iconUrl: /training/achievements/2-manage-git-branches-and-workflows.svg

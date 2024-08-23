@@ -3,6 +3,7 @@ uid: learn.align-requirements-in-azure
 metadata:
   title: Align requirements with cloud types and service models in Azure 
   description: Discover Azure's three approaches to deploying cloud resources--public, private, and hybrid--and learn the difference each makes in your Azure services.
+  manager: mkluck
   ms.date: 10/13/2023
   author: rmcmurray
   ms.author: robmcm

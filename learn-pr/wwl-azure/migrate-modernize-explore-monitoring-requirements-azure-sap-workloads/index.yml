@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads
 metadata:
   title: Modernize and explore monitoring requirements of Azure for SAP workloads
-  description: "Explore monitoring of data from several Azure systems and tools to support SAP on Azure workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'Explore monitoring of data from several Azure systems and tools to support SAP on Azure workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and explore monitoring requirements of Azure for SAP workloads
 summary: This module covers monitoring of data from several Azure systems and to support SAP on Azure workloads with logging, analysis and reporting using the Azure Extension for SAP.
 abstract: |

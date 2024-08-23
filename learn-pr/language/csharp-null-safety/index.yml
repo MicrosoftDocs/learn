@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Null safety in C#
   description: Learn coding practices to help prevent the occurrence of NullReferenceException.
-  ms.date: 10/11/2023
-  author: IEvangelist
-  ms.author: dapine
+  ms.date: 07/11/2024
+  author: wwlpublish
+  ms.author: cahowd
   ms.topic: module
   ms.devlang: csharp
+  ms.service: dotnet-csharp
 title: Null safety in C#
 summary: Learn coding practices to help prevent the occurrence of `NullReferenceException`.
 abstract: |

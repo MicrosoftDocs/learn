@@ -9,7 +9,7 @@ Now that you've completed this module, you should be able to:
 
 - Describe Azure security capabilities for protecting your network.
 - Describe Azure Bastion.
-- Describe Azure Key Vault.  
+- Describe Azure Key Vault. 
 
 ### Learn more
 
@@ -18,7 +18,9 @@ To find out more about any of the topics covered in this module, go to:
 - [Azure DDoS Protection overview](/azure/ddos-protection/ddos-protection-overview)
 - [Azure DDoS Protection pricing page](https://azure.microsoft.com/pricing/details/ddos-protection/)
 - [Azure Firewall](/azure/firewall/)
+- [Azure Firewall integration in Microsoft Copilot for Security (preview)](/azure/firewall/firewall-copilot)
 - [Web Application firewall](/azure/web-application-firewall/)
+- [Azure Web Application Firewall integration in Copilot for Security (preview)](/azure/web-application-firewall/waf-copilot)
 - [Network Security Groups](/azure/virtual-network/network-security-groups-overview)
 - [Azure Bastion](/azure/bastion/)
 - [About Azure Key Vault](/azure/key-vault/general/overview)

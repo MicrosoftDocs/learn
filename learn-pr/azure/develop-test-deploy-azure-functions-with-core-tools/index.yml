@@ -8,7 +8,7 @@ metadata:
   ms.author: glenga
   ms.topic: module-standard-task-based
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
 summary: Use the Azure Functions Core Tools to create and run functions on a development computer and publish them to Azure.
 abstract: |

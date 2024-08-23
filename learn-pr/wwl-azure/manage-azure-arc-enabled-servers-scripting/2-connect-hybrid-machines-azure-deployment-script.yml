@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-deployment-script
+title: Connect hybrid machines to Azure using a deployment script
+metadata:
+  title: Connect hybrid machines to Azure using a deployment script
+  description: "Connect hybrid machines to Azure using a deployment script"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-connect-hybrid-machines-azure-deployment-script.md)]

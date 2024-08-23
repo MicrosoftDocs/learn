@@ -3,8 +3,8 @@ uid: learn.windows.windows-best-app-framework.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: You need to build three new Windows applications for upcoming projects, and you have to choose the best Windows UI framework for each project. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
-  ms.date: 01/17/2024
+  description: You need to build three new Windows applications for upcoming projects, and you have to choose the best matove Windows UI framework for each project. This module introduces the Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  ms.date: 06/11/2024
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: unit

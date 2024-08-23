@@ -3,13 +3,13 @@ uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-create-met
 title: Exercise - Create unit tests by using GitHub Copilot Chat
 metadata:
   title: Exercise - Create unit tests by using GitHub Copilot Chat
-  description: "Exercise - Create unit tests by using GitHub Copilot Chat"
-  ms.date: 05/20/2024
+  description: Exercise - Create unit tests by using GitHub Copilot Chat
   author: wwlpublish
   ms.author: cahowd
+  ms.date: 05/20/2024
   ms.topic: unit
-  ms.custom:
-  - N/A
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-create-method-unit-tests-github-copilot-inline-chat.md)]

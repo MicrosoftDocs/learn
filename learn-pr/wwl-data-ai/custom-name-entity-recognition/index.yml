@@ -2,12 +2,14 @@
 uid: learn.wwl.custom-name-entity-recognition
 metadata:
   title: Custom named entity recognition
-  description: "Custom named entity recognition"
-  ms.service: azure-ai-services
-  ms.date: 2/21/2024
+  description: Custom named entity recognition
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 2/21/2024
+  ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Custom named entity recognition
 summary: Build a custom entity recognition solution to extract entities from unstructured documents
 abstract: |

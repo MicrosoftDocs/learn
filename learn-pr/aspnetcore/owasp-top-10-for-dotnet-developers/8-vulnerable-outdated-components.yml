@@ -2,9 +2,9 @@
 uid: learn.owasp-top-10-for-dotnet-developers.vulnerable-outdated-components
 title: Vulnerable and outdated components
 metadata:
-  title: vulnerable-outdated-components
+  title: Vulnerable and outdated components
   description: "OWASP Top 10 for .NET Developers. Vulnerable and outdated components."
-  ms.date: 06/12/2023
+  ms.date: 05/31/2024
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Should the DevOps team maintain and review list of third party components used in the system for security vulnerabilities? "
+  - content: "How should the DevOps team maintain and review a list of third-party components used in the system for security vulnerabilities?"
     choices:
     - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
       isCorrect: false
-      explanation: "SBOM is recommended, however can be applied at any stage of the project in more automated fashion."
-    - content: "Favor automated tools at any stage of product lifecycle to track and monitor your dependencies."
+      explanation: "SBOM is recommended, but you can apply it at any stage of the project in a more automated fashion."
+    - content: "Favor automated tools at any stage of the product lifecycle to track and monitor your dependencies."
       isCorrect: true
-      explanation: "Correct. Maintenance effort required to keep a list of dependencies up-to-date combined with their vulnerability check can quickly become unmanageable."
-    - content: "There's no risk associated with third party purchased and OSS components."
+      explanation: "Correct. The maintenance effort required to keep a list of dependencies up to date combined with their vulnerability checks can quickly become unmanageable."
+    - content: "There's no risk associated with third-party purchased and OSS components."
       isCorrect: false
-      explanation: "Even if your software makes the best effort in staying secure, an insecure or flowed dependency may introduce security vulnerability in your system."
+      explanation: "Even if your software makes the best effort in staying secure, an insecure or flow dependency may introduce security vulnerability in your system."

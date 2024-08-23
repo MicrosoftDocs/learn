@@ -3,11 +3,13 @@ uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.enhance
 title: Enhance an index to include multiple languages
 metadata:
   title: Enhance an index to include multiple languages
-  description: "Enhance an index to include multiple languages"
-  ms.date: 09/27/2023
+  description: Enhance an index to include multiple languages
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

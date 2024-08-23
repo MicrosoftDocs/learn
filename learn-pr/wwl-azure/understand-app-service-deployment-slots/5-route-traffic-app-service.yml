@@ -4,10 +4,12 @@ title: Route traffic in App Service
 metadata:
   title: Route traffic in App Service
   description: "Route traffic in App Service"
-  ms.date: 04/24/2023
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/5-route-traffic-app-service.md)]

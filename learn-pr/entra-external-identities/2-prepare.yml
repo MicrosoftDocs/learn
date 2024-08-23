@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microsoft-entra-external-identities.eeid-poc.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: Project overview and high-level approach.
+  ms.date: 6/25/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: interactive-tutorial
+  ms.service: entra-external-id
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-prepare.md)]

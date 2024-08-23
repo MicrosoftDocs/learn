@@ -3,7 +3,7 @@ uid: learn.azure-netapp-files-with-vmware-solution
 metadata:
   title: Using Azure NetApp Files with Azure VMware Solution
   description: This module helps you understand Azure NetApp Files and how to use it with the Azure VMware Solution. 
-  ms.date: 02/21/2023
+  ms.date: 07/03/2024
   author: PageWriter-MSFT
   ms.author: b-ahibbard
   ms.topic: module
@@ -12,7 +12,7 @@ title: Using Azure NetApp Files with Azure VMware Solution
 summary: |
   This module helps you understand Microsoft Azure NetApp Files and how to use it with the Azure VMware Solution. 
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Understand the key benefits of using Azure NetApp Files with Azure VMware solution (AVS).
   - Understand the requirements for attaching Azure NetApp Files to your Azure VMware Solution.
   - Provision an Azure NetApp Files volume to expand your datastore capacity and as a guest-mounted file system.
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of Azure VMware Solution, including virtual machines.
   - Basic understanding of Azure NetApp Files. 
-  - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
+  - Basic knowledge of networked file system protocols. Particularly, Server Message Block (SMB) and Network File System (NFS).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced

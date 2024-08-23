@@ -3,12 +3,14 @@ uid: learn.student-evangelism.train-custom-vision-ai
 metadata:
   title: Use AI to recognize objects in images by using the Custom Vision service
   description: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
-  ms.date: 03/10/2021
   author: sguthals
   ms.author: chnoring
-  ms.topic: module
-  ms.custom: team=nextgen
+  ms.date: 03/10/2021
   ms.service: azure-ai-custom-vision
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 title: Use AI to recognize objects in images by using the Custom Vision service
 summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
 abstract:  |

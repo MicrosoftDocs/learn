@@ -5,8 +5,8 @@ metadata:
   title: Exercise - View replication status
   description: Learn how to view the replication status for an Azure Storage account.
   ms.date: 11/03/2023
-  author: tamram
-  ms.author: tamram
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

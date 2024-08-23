@@ -11,4 +11,4 @@ At the end of this module, you'll be able to:
 - Understand the relationship between .NET Aspire and OpenTelemetry.
 - Understand the telemetry data sources available in .NET.
 - Use the .NET Aspire dashboard to monitor the telemetry data from a cloud-native application.
-- Add ILogger messages to the .NET Aspire application.
+- Add ILogger messages to the application.

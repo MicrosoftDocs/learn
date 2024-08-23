@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a module to a registry
   description: Create a GitHub Actions workflow to publish a module to a Bicep registry and apply versioning.
-  ms.date: 06/29/2023
+  ms.date: 07/22/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

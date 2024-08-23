@@ -9,11 +9,11 @@ Suppose you're a developer at a network provider that creates and deploys Applic
 
 Your company chose Container Instances as the ideal platform to meet the requirements, because it offers the following benefits:
 
-- Quick startup times.
-- Granular sizing.
-- Per-second billing.
-- On-demand infrastructure.
-- Windows and Linux support.
+- Quick startup times
+- Granular sizing
+- Per-second billing
+- On-demand infrastructure
+- Windows and Linux support
 
 You now need to make several improvements in a customer's containerized API to better meet the customer's advanced security and networking needs.
 
@@ -23,7 +23,7 @@ In this module, you implement the following Container Instances capabilities:
 
 - Deploy Container Instances in Azure Virtual Networks by using Azure CLI.
 - Learn to define containers with YAML, for greater flexibility and similarity to Kubernetes YAML manifests.
-- Enhance an existing application with a sidecar container, to add functionality without having to modify the original application code.
+- Enhance an existing application with a sidecar container to add functionality without having to modify the original application code.
 - Use Azure Private Link to connect to Azure platform-as-a-service (PaaS) resources with private IP addressing.
 - Use an initialization container to do the initialization task of updating the Domain Name System (DNS) entry for the container group.
 

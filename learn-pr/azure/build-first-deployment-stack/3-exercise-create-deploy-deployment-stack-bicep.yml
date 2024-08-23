@@ -8,6 +8,8 @@ metadata:
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 10
 content: | 

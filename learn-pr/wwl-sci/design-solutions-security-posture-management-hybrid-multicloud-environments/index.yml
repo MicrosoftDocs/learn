@@ -44,6 +44,7 @@ units:
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-cloud-workload-protection-microsoft-defender-cloud
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.integrate-hybrid-multi-cloud-environments-azure-arc
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-solution-external-attack-surface-management
+- learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.posture-management-using-exposure-management-attack-paths
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.knowledge-check
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.summary
 badge:

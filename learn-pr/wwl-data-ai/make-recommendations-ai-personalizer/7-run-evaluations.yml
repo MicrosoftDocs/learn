@@ -3,11 +3,13 @@ uid: learn.make-recommendations-ai-personalizer.run-evaluations
 title: Run evaluations
 metadata:
   title: Run evaluations
-  description: "Learn how to run offline evaluations and feature evaluations."
-  ms.date: 9/27/2023
+  description: Learn how to run offline evaluations and feature evaluations.
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 9/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/7-run-evaluations.md)]

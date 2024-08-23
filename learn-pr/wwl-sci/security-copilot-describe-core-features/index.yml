@@ -2,13 +2,15 @@
 uid: learn.security-copilot-describe-core-features
 metadata:
   title: Describe the core features of Microsoft Copilot for Security
-  description: "Describe the core features of Microsoft Copilot for Security."
-  ms.date: 02/22/2024
+  description: Describe the core features of Microsoft Copilot for Security.
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 02/22/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Describe the core features of Microsoft Copilot for Security
 summary: |
   Microsoft Copilot for Security has a rich set of features. Learn about available plugins, promptbooks, the ways you can export and share information from Copilot, and much more.
@@ -23,13 +25,13 @@ prerequisites: |
   - Working knowledge of Microsoft security products and services
 iconUrl: /learn/achievements/security-copilot-describe-core-features.svg
 hidden: false
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - security-operations-analyst
   - security-engineer
   - business-owner
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - defender-for-threat-intelligence
   - mdeasm
   - microsoft-sentinel
@@ -38,7 +40,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - microsoft-purview
   - microsoft-defender
   - ms-copilot
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - security
 units:
 - learn.security-copilot-describe-core-features.introduction

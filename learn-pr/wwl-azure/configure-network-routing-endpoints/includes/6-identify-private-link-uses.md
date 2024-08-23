@@ -29,4 +29,4 @@ There are many benefits to working with Azure Private Link. Review the following
 
 - **Consider protection against data exfiltration for Azure resources**. Map private endpoints to Azure PaaS resources. When there's a security incident within your network, only the mapped resources are accessible. This implementation eliminates the threat of data exfiltration.
 
-- **Consider services delivered directly to customer virtual networks**. Privately consume Azure PaaS, Microsoft partner, and your own services in your virtual networks on Azure. Private Link works across Microsoft Entra tenants to help unify your experience across services. Send, approve, or reject requests directly without permissions or role-based access controls.
+- **Consider services delivered directly to customer virtual networks**. Privately consume Azure PaaS, Microsoft partner, and your own services in your virtual networks on Azure. Private Link works across tenants to help unify your experience across services. Send, approve, or reject requests directly without permissions or role-based access controls.
