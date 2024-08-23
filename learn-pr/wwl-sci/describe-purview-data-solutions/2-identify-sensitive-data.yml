@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.identify-sensitive-data
+title: Identify sensitive data
+metadata:
+  title: Identify sensitive data
+  description: "Identify sensitive data."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.service: purview
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-identify-sensitive-data.md)]

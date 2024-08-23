@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary for Describe the Data Security solutions of Microsoft Purview."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.service: purview
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

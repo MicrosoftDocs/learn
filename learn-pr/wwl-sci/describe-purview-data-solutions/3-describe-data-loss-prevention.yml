@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.describe-data-loss-prevention
+title: Describe Data Loss Prevention
+metadata:
+  title: Describe Data Loss Prevention
+  description: "Describe Data Loss Prevention."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.service: purview
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-describe-data-loss-prevention.md)]
