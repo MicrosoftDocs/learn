@@ -31638,6 +31638,351 @@
       "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-storage-azure-virtual-desktop/6-configure-disks.md",
       "redirect_url": "/training/modules/implement-manage-storage-azure-virtual-desktop/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/2-understand-azure-data-ecosystem.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/3-explore-modern-analytics-solution-architecture.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/4-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/5-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/2-explore-data-team-roles-responsibilities.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/3-review-tasks-tools-for-data-analysts.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/4-scale-analytics-azure-synapse-analytics-power-bi.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/5-scale-analytics-center-excellence.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/6-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-analytics-scale/7-summary.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-manage-analytics-environment/index.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-data-analytics-azure/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/model-query-explore-data-for-azure-synapse/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+       {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/2-role-based-access-control-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/4-role-based-access-control-virtual-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/3-plan-implement-azure-roles-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-access/5-plan-implement-azure-roles-role-based-access-control",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/4-use-azure-virtual-desktop-with-intune.md",
+      "redirect_url": "/training/modules/manage-access/8-use-azure-virtual-desktop-with-intune",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/5-configure-screen-capture-protection-for-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/6-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-access/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-access/7-summary.md",
+      "redirect_url": "/training/modules/manage-access/10-summary",
+      "redirect_document_id": false
+    },
+      {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/10-summary.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/9-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/3-modify-session-host-image.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/4-plan-for-image-update-management.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/5-plan-image-update-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/5-create-shared-image-gallery-portal.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/6-create-azure-virtual-desktop-image-image-builder.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/4-create-virtual-desktop-image-image-builder",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/7-install-office-master-image.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/8-install-language-packs-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/7-install-language-packs-azure-virtual-desktop",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
+      "redirect_url": "/training/modules/create-manage-session-host-image/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/2-explore-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/4-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/5-exercise-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/6-define-appropriate-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/7-exercise-write-a-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/8-log-useful-information.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/9-exercise-add-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/2-automate-creation-host-pool-powershell.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/3-configure-host-pool-assignment-type.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/4-customize-remote-desktop-properties-for-host-pool.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/8-customize-remote-desktop-properties-host-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/6-deploy-azure-joined-virtual-machines.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/7-knowledge-check.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/8-summary.md",
+      "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/10-configure-windows-defender-firewall-advanced-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/11-plan-implement-quality-service-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/12-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/13-summary.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/2-implement-azure-virtual-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/3-manage-connectivity-internet-premises-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/4-understand-azure-virtual-desktop-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/5-implement-manage-network-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/6-configure-azure-virtual-desktop-session-hosts-using-azure-bastion.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/7-monitor-troubleshoot-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/8-plan-implement-remote-desktop-protocol-shortpath.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/9-configure-remote-desktop-protocol-shortpath-managed-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
+      "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
     }
   ]
 }
