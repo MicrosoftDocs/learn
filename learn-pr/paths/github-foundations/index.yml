@@ -14,9 +14,9 @@ summary: |
 
     In this learning path, you'll:
 
-  - Gain an understanding of GitHub’s essential tools
-  - Become familiar with Git
-  - Learn about GitHub Copilot
+   - Gain an understanding of GitHub’s essential tools
+   - Become familiar with Git
+   - Learn about GitHub Copilot
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account34
 iconUrl: /training/achievements/learn.generic-trophy.svg
