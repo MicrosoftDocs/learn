@@ -2,14 +2,14 @@ In this unit, you examine how Azure Database for MySQL can help build a resilien
 
 ### What are the core characteristics of Azure Database for MySQL?
 
-Azure Database for MySQL - Flexible Server is designed to deliver complete compatibility with your existing MySQL applications, supporting widely used MySQL Community Server versions 5.7 and 8.0. This deployment option is particularly effective for scenarios that require:
+Azure Database for MySQL - Flexible Server is designed to deliver complete compatibility with your existing MySQL applications, supporting the widely used MySQL Community Server versions 5.7 and 8.0. This hosting option is particularly effective for scenarios that require:
 
 - Detailed control over compute and storage configurations.
 - Consistently high performance.
 - Reliable, high availability, and business continuity.
 - Efficient cost management strategies.
 
-Furthermore, Flexible Server enhances security with its built-in firewall for public endpoints and supports private connectivity via Azure Virtual Network (virtual network) integration and Azure Private Link, which safeguards your data from unauthorized access.
+In addition, Flexible Server enhances security with its built-in firewall for public endpoints and supports private connectivity via Azure Virtual Network (virtual network) integration and Azure Private Link, which safeguards your data from unauthorized access.
 
 #### Compute
 
@@ -56,12 +56,12 @@ With public access, which is provided via an external endpoint, you must explici
 > [!IMPORTANT]  
 > Because public access allows connections from IP addresses allocated to any Azure resource, including connections from other customers' subscriptions, it is only recommended for use in development and testing scenarios.
 
-##### Private Access
+##### Private access
 
 Use virtual network integration support for private access via designated Azure virtual networks. If you enable this option, the server automatically blocks connections that originate from the Internet.
 
 > [!NOTE]  
-> Before enabling private access, custom Domain Name Service (DNS) name resolution must be implemented. For more information, see [Private Network Access using virtual network integration for Azure Database for MySQL - Flexible Server](/azure/MySQL/flexible-server/concepts-networking-vent).
+> Before enabling private access, you must implement Domain Name Service (DNS) name resolution. For more information, see [Private Network Access using virtual network integration for Azure Database for MySQL - Flexible Server](/azure/MySQL/flexible-server/concepts-networking-vent).
 
 By default, the server enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication.
 
@@ -70,17 +70,17 @@ By default, the server enforces Transport Layer Security (TLS 1.2) to help prote
 
 #### High availability
 
-Azure Database for MySQL—Flexible Server supports high availability with automatic failover to help ensure that committed data is never lost due to localized failures. When you enable this functionality, the platform automatically provisions and manages a standby replica.
+Azure Database for MySQL - Flexible Server supports high availability with automatic failover to help ensure that committed data is never lost due to localized failures. When you enable this functionality, the platform automatically provisions and manages a standby replica.
 
 There are two high-availability architectural models, depending on the replica's placement.
 
 ##### Zone-Redundant High Availability
 
-For enhanced resiliency, the zone-redundant high availability model positions the primary database in one availability zone and its standby replica in a separate zone. This configuration is designed to safeguard against data center-level failures, offering a higher level of data protection by ensuring that the primary and backup databases aren't subject to the same localized risks. This model is recommended for critical applications where continuity and data integrity are paramount, as it allows the service to remain available even if one entire data center goes offline.
+For enhanced resiliency, the zone-redundant high availability model positions the primary database in one availability zone and its standby replica in a separate zone. This configuration is designed to safeguard against data center-level failures, offering a higher level of data protection by ensuring that the primary and backup databases aren't subject to the same localized risks. This model is recommended for critical applications that have  continuity and data integrity as paramount goals, as it allows the service to remain available even if an entire data center goes offline.
 
 ##### Same-Zone High Availability
 
-The same-zone high availability model situates the primary database and its standby replica within the same availability zone. Opting for a same-zone deployment is beneficial in scenarios where minimal latency is crucial for application performance. Maintaining both the primary instance and its replica in close physical proximity ensures that the failover process doesn't significantly impact response times. This setup is ideal for applications where even minimal latency differences can affect functionality or user experience.
+The same-zone high availability model situates the primary database and its standby replica within the same availability zone. Opting for a same-zone deployment is beneficial for scenarios in which minimal latency is crucial for application performance. Maintaining both the primary instance and its replica in close physical proximity ensures that the failover process doesn't significantly impact response times. This setup is ideal for applications impacted even by minimal latency differences, which can affect functionality or user experience.
 
 #### Business continuity
 
@@ -101,11 +101,11 @@ Azure Database for MySQL - Flexible Server offers numerous options for optimizin
 
 - **The ability to stop and start the server on-demand**. The compute tier billing stops as soon as you stop the server. This ability can help you minimize costs during development, testing, and production workloads with a reliably predictable schedule.
 - **The Burstable compute tier**. Take advantage of the Burstable compute tier for competitive pricing for your workloads that require low CPU utilization with occasional CPU usage spikes.
-- **The reserved instance discount**. You can commit to a  one year or a three year purchase plan to get the reserved instance discount, saving you more than 60 percent of the original, nondiscounted cost. Consider this option for production workloads with predictable, long-term compute capacity requirements.
+- **The reserved instance discount**. You can commit to a one-year or a three-year purchase plan to get the reserved instance discount, saving you more than 60 percent of the original, nondiscounted cost. Consider this option for production workloads with predictable, long-term compute capacity requirements.
 - **An Azure free account**. You can use an Azure free account to evaluate Flexible Server at no cost for 12 months, with monthly limits of up to:
 
   - 750 hours of Burstable B1MS instance, enough hours to run a database instance continuously each month.
   - 32-GB storage and 32-GB backup storage.
 
 > [!NOTE]  
-> If you create an Azure Database for MySQL flexible server using your Azure free account, an estimated monthly cost still appears on the **Compute + Storage : Cost Summary** blade and on the **Review + Create** tab. However, as long as you're using your Azure free account and your service usage remains within the associated monthly limits, you will not be charged for the service.
+> If you create an Azure Database for MySQL flexible server using your Azure free account, an estimated monthly cost still appears on the **Compute + Storage : Cost Summary** blade and on the **Review + Create** tab. However, as long as you're using your Azure free account and your service usage remains within the associated monthly limits, you won't be charged for the service.
