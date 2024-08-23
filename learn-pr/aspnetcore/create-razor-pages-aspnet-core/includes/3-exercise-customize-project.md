@@ -1,5 +1,8 @@
 Your team has split up the work for the pizza inventory management app. Your teammates have created the ASP.NET Core web app for you, and they've already built a service to read and write pizza data to a database. You've been assigned to work on the Pizza List page, which will display a list of pizzas and allow you to add new pizzas to the database. We'll start by taking a tour of the project to understand how it's organized.
 
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows) or continued development using Visual Studio Code (Windows, Linux, and macOS).
+
 ## Obtain the project files
 
 If you're using GitHub Codespaces, just [open the repository in the browser](https://github.com/MicrosoftDocs/mslearn-create-razor-pages-aspnet-core), select **Code**, and then create a new codespace on the `main` branch.

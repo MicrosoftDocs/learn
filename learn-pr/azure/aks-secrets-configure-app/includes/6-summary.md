@@ -1,8 +1,8 @@
-You could better understand and secure the managed application state using secrets to keep the connection string safe and still deploy your application without any problems. Your cluster can now better handle sensitive values and configurations using ConfigMaps to inject configurations without needing to reboot the application.
+By using secrets to keep the connection string safe, you're able to better understand and secure the managed application state, and still deploy your application without any problems. Now, your cluster is better able to handle sensitive values and configurations using ConfigMaps to inject configurations without the need to reboot your application.
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. The following steps show you how to clean up these resources so you don't incur Azure charges after you're done with the module.
+In this module, you created resources using your Azure subscription. The following steps show you how to clean up those resources so you won't incur Azure charges after you're done with the module.
 
 [!INCLUDE [azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 

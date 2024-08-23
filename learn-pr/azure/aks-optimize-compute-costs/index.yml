@@ -3,6 +3,7 @@ uid: learn.aks-optimize-compute-costs
 metadata:
   title: Optimize compute costs on Azure Kubernetes Service (AKS)
   description: Explore strategies that you can use on Azure to optimize your cloud-native application-development process by using Azure Kubernetes Service (AKS).
+  manager: rayoflores
   ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman

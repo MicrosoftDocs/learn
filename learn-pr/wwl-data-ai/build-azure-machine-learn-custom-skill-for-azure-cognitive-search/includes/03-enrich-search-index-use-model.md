@@ -87,7 +87,7 @@ return {
 
 #### Create an endpoint for your model to use
 
-The model is deployed to an endpoint. Azure AI Machine Learning Studio supports deploying a model to a real-time endpoint, a batch endpoint, or a web service. At the moment, the custom `AmlSkill` skill in Azure Cognitive Search only supports web service endpoints.
+The model is deployed to an endpoint. Azure AI Machine Learning Studio supports deploying a model to a real-time endpoint, a batch endpoint, or a web service. At the moment, the custom `AmlSkill` skill in Azure AI Search only supports web service endpoints.
 
 The other restriction is that the endpoint has to be an Azure Kubernetes Service (AKS), container instances aren't supported.
 
@@ -97,7 +97,7 @@ If you navigate to the compute section of the studio, you can create inference c
 
 #### Connect the AML custom skill to the endpoint
 
-With everything above in place, you need to update your Azure Cognitive Search service. First, to enrich your search index you'll add a new field to your index to include the output for the model.
+With everything above in place, you need to update your Azure AI Search service. First, to enrich your search index you'll add a new field to your index to include the output for the model.
 
 Then you'll update your index skillset and add the `#Microsoft.Skills.Custom.AmlSkill` custom skill.
 

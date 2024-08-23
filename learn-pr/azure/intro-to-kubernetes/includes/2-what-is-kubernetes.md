@@ -65,7 +65,7 @@ However, it's important to understand that Kubernetes isn't a single installed a
 
 - Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster-storage systems. All these items are run as containers, or as part of another service offering.
 
-- For Kubernetes to run containers, it needs a container runtime like Docker or containers. The container runtime is the object that's responsible for managing containers. For example, the container runtime starts, stops, and reports on the container's status.
+- For Kubernetes to run containers, it needs a container runtime like Docker or containerd. The container runtime is the object that's responsible for managing containers. For example, the container runtime starts, stops, and reports on the container's status.
 
 - You're responsible for maintaining your Kubernetes environment. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 

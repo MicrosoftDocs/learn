@@ -29,7 +29,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for *Geo-redundant storage (GRS)*. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
 
-1. Select **Next : Advanced**. On the **Advanced** tab, enter the following values for each setting.
+1. Select **Next**. On the **Advanced** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -48,12 +48,12 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Allow cross-tenant replication | *Uncheck*. Active Directory isn't being used for this exercise. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the *default* value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we use the high-performance option for our blobs. |
     | **Azure Files**| |
-    | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
+    | Enable large file shares | Accept default. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
 
     > [!WARNING]
     > If *Enable large file shares* is selected, it will enforce additional restrictions, and Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
-1. Select **Next : Networking**. On the **Networking** tab, enter the following values for each setting.
+1. Select **Next**. On the **Networking** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -62,7 +62,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | **Network routing**|
     | Routing preference | *Microsoft network routing*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
-1. Select **Next : Data protection**. On the **Data protection** tab, enter the following values for each setting.
+1. Select **Next**. On the **Data protection** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -77,11 +77,11 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | **Access control**|
     | Enable version-level immutability support | *Uncheck*. Not necessary for this implementation. |
 
-1. Select **Next : Encryption.** Accept the defaults.
+1. Select **Next**. Accept the defaults on the **Encryption** tab.
 
-1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
+1. Select **Next**. Here on the **Tags** tab, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 
-1. Select **Next : Review** to validate your options and to ensure all the required fields are selected. If there are issues, this tab identifies them so you can correct them.
+1. Select **Next** to validate your options and to ensure all the required fields are selected. If there are issues, this tab identifies them so you can correct them.
 
 1. When validation passes successfully, select **Create** to deploy the storage account.
 

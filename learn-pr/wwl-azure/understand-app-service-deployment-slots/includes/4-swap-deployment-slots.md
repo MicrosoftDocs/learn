@@ -1,4 +1,3 @@
-
 You can swap deployment slots on your app's Deployment slots page and the Overview page. Before you swap an app from a deployment slot into production, make sure that production is your target slot and that all settings in the source slot are configured exactly as you want to have them in production.
 
 ## Manually swapping deployment slots
@@ -9,9 +8,9 @@ To swap deployment slots:
 
 1. Select the desired **Source** and **Target** slots. Usually, the target is the production slot. Also, select the **Source Changes** and **Target Changes** tabs and verify that the configuration changes are expected. When you're finished, you can swap the slots immediately by selecting **Swap**.
 
-     To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview* below.
+    To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview* below.
 
-1. When you're finished, close the dialog box by selecting Close.
+1. When you're finished, close the dialog box by selecting **Close**.
 
 ### Swap with preview (multi-phase swap)
 
@@ -23,7 +22,7 @@ If you cancel the swap, App Service reapplies configuration elements to the sour
 
 To swap with preview:
 
-1. Follow the steps above in Swap deployment slots but select **Perform swap with preview**. The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
+1. Follow the steps above in Swap deployment slots but select the **Perform swap with preview** checkbox. The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
 
 1. When you're ready to start the swap, select **Start Swap**.
 
@@ -46,7 +45,7 @@ To configure auto swap:
 
 1. Go to your app's resource page and select the deployment slot you want to configure to auto swap. The setting is on the **Configuration > General settings** page.
 
-1. Set **Auto swap enabled** to **On**. Then select the desired target slot for Auto swap deployment slot, and select **Save** on the command bar.
+1. Set **Auto swap enabled** to **On**. Then select the desired target slot for **Auto swap deployment slot**, and select **Save** on the command bar.
 
 1. Execute a code push to the source slot. Auto swap happens after a short time, and the update is reflected at your target slot's URL.
 
@@ -70,13 +69,13 @@ You can also customize the warm-up behavior with one or both of the following ap
 * `WEBSITE_SWAP_WARMUP_PING_PATH`: The path to ping to warm up your site. Add this app setting by specifying a custom path that begins with a slash as the value. An example is `/statuscheck`. The default value is `/`.
 * `WEBSITE_SWAP_WARMUP_PING_STATUSES`: Valid HTTP response codes for the warm-up operation. Add this app setting with a comma-separated list of HTTP codes. An example is `200,202` . If the returned status code isn't in the list, the warmup and swap operations are stopped. By default, all response codes are valid.
 * `WEBSITE_WARMUP_PATH`: A relative path on the site that should be pinged whenever the site restarts (not only during slot swaps). Example values include `/statuscheck` or the root path, `/`.
- 
+
 ## Roll back and monitor a swap
 
 If any errors occur in the target slot (for example, the production slot) after a slot swap, restore the slots to their pre-swap states by swapping the same two slots immediately.
 
 If the swap operation takes a long time to complete, you can get information on the swap operation in the activity log.
 
-On your app's resource page in the portal, in the left pane, select **Activity log**.
+1. On your app's resource page in the portal, in the left pane, select **Activity log**.
 
-A swap operation appears in the log query as `Swap Web App Slots`. You can expand it and select one of the suboperations or errors to see the details.
+1. A swap operation appears in the log query as `Swap Web App Slots`. You can expand it and select one of the suboperations or errors to see the details.

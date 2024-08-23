@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/30/2023
   author: chrispyles
   ms.author: leestott
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Advanced PyBryt for Classroom Auto-assessment
 summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
 abstract: |
@@ -28,8 +28,6 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic understanding of PyBryt annotations and reference implementations
-subjects:
-- development-tools
 units:
   - learn.advanced-pybryt.1-introduction
   - learn.advanced-pybryt.2-annotation-options

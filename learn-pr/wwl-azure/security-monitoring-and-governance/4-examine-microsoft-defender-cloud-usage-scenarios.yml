@@ -4,12 +4,12 @@ title: Examine Microsoft Defender for Cloud usage scenarios
 metadata:
   title: Examine Microsoft Defender for Cloud usage scenarios
   description: "Examine Microsoft Defender for Cloud usage scenarios"
-  ms.date: 06/25/2023
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/4-examine-microsoft-defender-cloud-usage-scenarios.md)]

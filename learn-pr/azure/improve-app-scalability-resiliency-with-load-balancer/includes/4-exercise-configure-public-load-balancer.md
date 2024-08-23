@@ -2,14 +2,14 @@ You can configure Azure Load Balancer by using the Azure portal, PowerShell, or 
 
 In your healthcare organization, you want to load-balance client traffic to provide a consistent response based on the patient portal web servers' health. You have two virtual machines (VMs) in an availability set to act as your healthcare-portal web application.
 
-Here, you create a load balancer resource and use it to distribute a load across the VMs.
+Here, you create a load balancer resource and use it to distribute a load across the virtual machines.
 
 ## Deploy the patient portal web application
 
 First, deploy your patient-portal application across two virtual machines in a single availability set. To save time, let's start by running a script to create this application. The script:
 
-- Creates a virtual network and network infrastructure for the VMs.
-- Creates two VMs in this virtual network.
+- Creates a virtual network and network infrastructure for the virtual machines.
+- Creates two virtual machines in this virtual network.
 
 To deploy the patient portal web application:
 
@@ -20,7 +20,7 @@ To deploy the patient portal web application:
     cd mslearn-improve-app-scalability-resiliency-with-load-balancer
     ```
 
-1. As its name suggests, the script generates two VMs in a single availability set. It takes about two minutes to run.
+1. As its name suggests, the script generates two virtual machines in a single availability set. It takes about two minutes to run.
 
     ```bash
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
@@ -38,7 +38,7 @@ Now, let's create the load balancer.
 
 1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
-1. From the ensuing list, select *Load Balancer - Microsoft*. Then, select **Create**.
+1. From the ensuing list, select **Load Balancer - Microsoft**, then select **Create**.
 
    :::image type="content" source="../media/4-create-lb.png" alt-text="Create a Load Balancer instance in the Azure portal.":::
 
@@ -47,12 +47,12 @@ Now, let's create the load balancer.
     | Setting | Value |
     | ----- | ----------- |
     | **Project details** |
-    | Subscription | **Concierge** |
-    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Subscription | **Your subscription** |
+    | Resource group | Select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance details** |
-    | Name | Enter a unique name. For example, *Pub-LB-PatientsPortal*. |
-    | Region | Select the location where the VMs were created. |
-    | SKU | **Basic** |
+    | Name | Enter a unique name. For example, **Pub-LB-PatientsPortal**. |
+    | Region | Select the location where the virtual machines were created. |
+    | SKU | **Standard** |
     | Type | **Public** |
     | Tier | **Regional** |
 
@@ -68,22 +68,15 @@ Now, let's create the load balancer.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Name | Enter a unique name for the front-end IP configuration. |
-    | IP version | IPv4 |
-    | Public IP address | Select the **Create new** link. |
-
-1. In the **Add a public IP address** dialog box that appears, enter the following values for each setting.
-
-    | Setting | Value |
-    | ----- | ----------- |
-    | Name | enter a unique name for the public IP address. For example, *Pub-LB-PatientsPortal-IP*. |
-    | SKU | Previously set to **Basic**. |
-    | Tier | Previously set to **Regional**. |
-    | Assignment | Select **Static** |
+    | Name | Enter a unique name for the front-end IP configuration. For example *myFrontendIP* |
+    | IP version | Select **IPv4** |
+    | IP type | Select **IP address** |
+    | Public IP address | Select **Create new**, then give your IP address a name and select **Save** |
+    | Gateway Load Balancer | Select **None** |
 
    :::image type="content" source="../media/4-add-frontend-ip-config.png" alt-text="Screenshot that shows the completed settings for the Add frontend IP configuration.":::
 
-1. To close the dialog box, select **OK**. The **Add frontend IP configuration** pane reappears. Select **Add**. The **Create load balancer** pane appears.
+1. To close the dialog box, select **Add**. The **Create load balancer** pane appears.
 
 ## Add a back-end pool
 
@@ -96,9 +89,9 @@ Now, let's create the load balancer.
     | Setting | Value |
     | ----- | ----------- |
     | Name | Enter a unique name for the back-end pool. For example, *bepool-http*. |
-    | Virtual network | In the dropdown box, select **bePortalVnet (<rgn>[sandbox resource group name]</rgn>)** |
+    | Virtual network | Confirm **bePortalVnet** is selected. |
 
-1. Select **Add**. The **Add IP configurations to backend pool** pane appears.
+1. Under **IP configurations**, select **Add**. The **Add IP configurations to backend pool** pane appears.
 
 1. Under **Virtual machine**, select the **webVM1** and **webVM2** virtual machines and select **Add**.
 
@@ -122,7 +115,7 @@ Finally, let's create a rule for the load balancer.
     | ----- | ----------- |
     | Name | A name for the load balancing rule. For example, *lbrule-http*. |
     | IP Version | **IPv4** |
-    | Frontend IP address | Select the Frontend IP address that you named earlier. It's marked as (to be created). |
+    | Frontend IP address | Select the Frontend IP address that you named earlier.|
     | Backend pool | Select the back-end pool that you named earlier. For example, *bepool-http*.|
     | Protocol | **TCP** |
     | Port | Enter **80** (default). |
@@ -196,13 +189,13 @@ First, we need a public IP address for the load balancer.
 
 When you use PowerShell to configure a load balancer, you must create the back-end address pool, the health probe, and the rule before you create the balancer itself.
 
-1. Create a back-end address pool by running the **New-AzLoadBalancerBackendAddressPoolConfig** cmdlet. You'll attach the VMs to this back-end pool in the final steps. The following example creates a back-end address pool named **myBackEndPool**:
+1. Create a back-end address pool by running the **New-AzLoadBalancerBackendAddressPoolConfig** cmdlet. You'll attach the virtual machines to this back-end pool in the final steps. The following example creates a back-end address pool named **myBackEndPool**:
 
     ```powershell
     $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
     ```
 
-1. Create a health probe to allow the load balancer to monitor the status of the healthcare portal. The health probe dynamically adds or removes VMs from the load balancer rotation based on their response to health checks.
+1. Create a health probe to allow the load balancer to monitor the status of the healthcare portal. The health probe dynamically adds or removes virtual machines from the load balancer rotation based on their response to health checks.
 
     ```powershell
     $probe = New-AzLoadBalancerProbeConfig `
@@ -214,7 +207,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -RequestPath "/"
     ```
 
-2. You now need a load balancer rule to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+1. You now need a load balancer rule to define how traffic is distributed to the virtual machines. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy virtual machines receive traffic, you also define the health probe to use.
 
     ```powershell
     $lbrule = New-AzLoadBalancerRuleConfig `
@@ -227,7 +220,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -Probe $probe
     ```
 
-3. Now, you can create the basic load balancer by running the **New-AzLoadBalancer** cmdlet:
+1. Now, you can create the basic load balancer by running the **New-AzLoadBalancer** cmdlet:
 
     ```powershell
     $lb = New-AzLoadBalancer `
@@ -240,7 +233,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -LoadBalancingRule $lbrule
     ```
 
-4. Connect the VMs to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
+1. Connect the virtual machines to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
 
     ```powershell
     $nic1 = Get-AzNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic1"
@@ -253,7 +246,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
     Set-AzNetworkInterface -NetworkInterface $nic2 -AsJob
     ```
 
-5. Run the following command to get the load balancer's public IP address and your website's URL:
+1. Run the following command to get the load balancer's public IP address and your website's URL:
 
     ```powershell
     Write-Host http://$($(Get-AzPublicIPAddress `
@@ -289,7 +282,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --backend-pool-name myBackEndPool
     ```
 
-1. To allow the load balancer to monitor the healthcare portal's status, create a health probe. The health probe dynamically adds or removes VMs from the load-balancer rotation based on their response to health checks.
+1. To allow the load balancer to monitor the healthcare portal's status, create a health probe. The health probe dynamically adds or removes virtual machines from the load-balancer rotation based on their response to health checks.
 
     ```azurecli
     az network lb probe create \
@@ -300,7 +293,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --port 80  
     ```
 
-2. Now, you need a load balancer rule to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+1. Now, you need a load balancer rule to define how traffic is distributed to the virtual machines. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy virtual machines receive traffic, you also define the health probe to use.
 
     ```azurecli
     az network lb rule create \
@@ -315,7 +308,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --probe-name myHealthProbe
     ```
 
-3. Connect the VMs to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
+1. Connect the virtual machines to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
 
     ```azurecli
     az network nic ip-config update \
@@ -333,7 +326,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --lb-address-pools myBackEndPool
     ```
 
-4. Run the following command to get the load balancer's public IP address and your website's URL:
+1. Run the following command to get the load balancer's public IP address and your website's URL:
 
     ```azurecli
     echo http://$(az network public-ip show \
@@ -349,10 +342,10 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 Let's test the load balancer setup to show how it can handle availability and health issues dynamically.
 
-1. In a new browser tab, go to the public IP address that you noted. A response from one of the VMs is displayed in the browser.
+1. In a new browser tab, go to the public IP address that you noted. A response from one of the virtual machines is displayed in the browser.
 
-2. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
+1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both virtual machines.
 
-3. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
-4. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.
+1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.

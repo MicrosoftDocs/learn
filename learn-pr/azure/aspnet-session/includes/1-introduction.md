@@ -1,8 +1,8 @@
-Azure App Service is a highly scalable platform that you can use to host web applications. Each web app runs on one or more web servers, and App Service distributes users' requests across these servers. As the volume of requests varies over time, App Service scales out and back in, increasing and decreasing the number of servers available. This scaling strategy helps to ensure that response times and costs remain acceptable even as the workload fluctuates.
+Azure App Service is a highly scalable platform that you can use to host web applications. Each web app runs on one or more web servers, and App Service distributes user requests across these servers. As the volume of requests varies over time, App Service scales out and back in, increasing and decreasing the number of servers available. This scaling strategy helps to ensure that response times and costs remain acceptable even as the workload fluctuates.
 
-Many older web applications depend on retaining session state information between a user's requests. Often this state information is held in the web server's memory. However, this approach won't work effectively if you're migrating a web app that follows this strategy to App Service. You can't guarantee that all requests from a user will be routed to the same web server.
+Many older web applications depend on retaining session-state information between a user's requests. Often, this state information is held in the web server's memory. However, this approach won't work effectively if you're migrating a web app that follows this strategy to App Service. You can't guarantee that all a user's requests will be routed to the same web server.
 
-You might try to implement *sticky sessions*, which maintain the affinity between a web server and the user's session. This scheme can affect scalability, though. The load between servers can become unbalanced, and you risk losing the elasticity of being able to scale in and out as the workload changes.
+You might try to implement *sticky sessions*, which maintain the affinity between a web server and the user's session. This scheme can affect scalability, though. The load between servers can become unbalanced, and you risk losing the elasticity of scaling in and out as the workload changes.
 
 In this module, you'll learn how to implement scalable sessions in an ASP.NET web application that you want to deploy to App Service.
 
@@ -17,4 +17,4 @@ By the end of this module, you'll be able to configure ASP.NET to store session 
 - Some C# programming experience
 - Familiarity with ASP.NET development
 - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
-- Git for Windows installed on your desktop
+- Git for Windows installed on your computer

@@ -4,10 +4,12 @@ title: Manage app registration permission consent
 metadata:
   title: Manage app registration permission consent
   description: "Manage app registration permission consent"
-  ms.date: 12/28/2023
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-permissions-consent.md)]

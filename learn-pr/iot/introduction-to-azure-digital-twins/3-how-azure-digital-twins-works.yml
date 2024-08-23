@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-to-azure-digital-twins.how-azure-digital-twins-works
+title: How Azure Digital Twins works
+metadata:
+  title: How Azure Digital Twins works
+  description: Learn how Azure Digital Twins works.
+  ms.date: 09/27/2023
+  author: baanders
+  ms.author: baanders
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-how-azure-digital-twins-works.md)]

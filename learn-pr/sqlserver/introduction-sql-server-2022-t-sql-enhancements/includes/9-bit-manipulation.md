@@ -2,9 +2,9 @@
 ms.custom:
   - build-2023
 ---
-SQL Server 2022 introduces new functions for bit manipulation, making it easier to work with binary data. Common scenarios that benefit from bit manipulation could be Internet of Things (IoT) environments, cryptographic applications, data compression, and network protocols.
+SQL Server 2022 introduces new functions for bit manipulation, making it easier to work with binary data. Internet of Things (IoT) environments, cryptographic applications, data compression, and network protocols are common scenarios that benefit from bit manipulation.
 
-These functions provide a powerful and efficient way to manage binary data, helping to identify issues and make better decisions across different situations.
+These functions provide a powerful and efficient way to manage binary data and help to identify issues and make better decisions across different situations.
 
 ## GET_BIT
 
@@ -12,7 +12,7 @@ The `GET_BIT` function retrieves the value of a specific bit in a binary value. 
 
 ## BIT_COUNT
 
-The `BIT_COUNT` function counts the number of bits set to 1 in a binary value. It's helpful for analyzing data density or determining how many sensors have issues in a monitoring system.
+The `BIT_COUNT` function counts the number of bits set to *1* in a binary value. It's helpful for analyzing data density or determining how many sensors have issues in a monitoring system.
 
 ## LEFT_SHIFT and RIGHT_SHIFT
 
@@ -33,7 +33,10 @@ DeviceId | CollectionDateTime | SensorStatus
 795159 | 2/11/2023 12:51:48.592 | 0xFD
 948705 | 2/11/2023 12:51:56.321 | 0x05
 
-For this example, let's create the sample database, table and populate it. Obviously in a real world scenario, the database would already exist and automatically populated by your IoT devices. *Always make sure you use a test SQL Server to run these examples and don't run them on a production server*.
+For this example, let's create the sample database table and populate it. Obviously in a real world scenario, the database would already exist and would be automatically populated by your IoT devices.
+
+> [!IMPORTANT]
+> Always make sure you use a test SQL Server to run these examples and don't run them on a production server.
 
 ```sql
 CREATE DATABASE SQL2022Workshop_BitDB;
@@ -53,7 +56,7 @@ INSERT INTO DeviceSensorMonitor VALUES
 GO
 ```
 
-Using the new bit manipulation functions in SQL Server 2022, you can easily check the status of each sensor, count the number of sensors with issues. You run the following queries in SQL Server Management Studio (SSMS) to get the data the floor manager needs.
+Using the new bit manipulation functions in SQL Server 2022, you can easily check the status of each sensor and count the number of sensors with issues. You run the following queries in SQL Server Management Studio (SSMS) to get the data the floor manager needs:
 
 ```sql
 SELECT DeviceId,
@@ -71,7 +74,7 @@ FROM DeviceSensorMonitor
 WHERE SensorStatus > 0x00
 ```
 
-Let's cleanup the sample database we created.
+Let's clean up the sample database we created.
 
 ```sql
 USE tempdb;
@@ -89,4 +92,4 @@ DeviceId | SensorStatus | Sensor8 | Sensor7 | Sensor6 | Sensor5 | Sensor4 | Sens
 795159 | 0xFD | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 7
 948705 | 0x05 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 2
 
-When you use these functions to real-world scenarios, such as monitoring sensor data in an IoT environment, we can quickly identify issues and make better-informed decisions. The addition of these functions to SQL Server 2022 makes it an even more powerful and versatile tool for managing and analyzing data.
+When you use these functions to real-world scenarios like monitoring sensor data in an IoT environment, you can quickly identify issues and make better-informed decisions. Adding these functions to SQL Server 2022 makes it an even more powerful and versatile tool for managing and analyzing data.

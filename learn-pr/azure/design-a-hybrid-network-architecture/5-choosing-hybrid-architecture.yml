@@ -3,7 +3,7 @@ uid: learn.design-a-hybrid-network-architecture.5-choosing-hybrid-architecture
 metadata:
   title: Choose a hybrid network architecture on Azure
   description: Explore some hybrid networking scenarios that use Azure ExpressRoute and Azure VPN Gateway.
-  ms.date: 01/14/2020
+  ms.date: 02/16/2024
   author: duongau
   ms.author: duau
   ms.topic: unit
@@ -45,15 +45,15 @@ quiz:
       explanation: There's a rich ecosystem of system integrators and partners for ExpressRoute.
   - content: 'What is the preferred connection resiliency for ExpressRoute?'
     choices:
-    - content: passive-passive
+    - content: Passive-passive
       isCorrect: false
       explanation: ExpressRoute works in an active-active state.
-    - content: passive-active
+    - content: Passive-active
       isCorrect: false
       explanation: ExpressRoute works in an active-active state.
-    - content: active-passive
+    - content: Active-passive
       isCorrect: false
       explanation: Although ExpressRoute works in an active-passive state, it works optimally in an active-active state.
-    - content: active-active
+    - content: Active-active
       isCorrect: true
       explanation: Express route uses an active-active connection resiliency.

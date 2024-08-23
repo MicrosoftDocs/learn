@@ -4,9 +4,9 @@ title: Exercise - Create a storage account using the Azure portal
 metadata:
   title: Exercise - Create a storage account using the Azure portal
   description: Exercise - Create a storage account using the Azure portal
-  ms.date: 09/24/2018
-  author: tamram
-  ms.author: tamram
+  ms.date: 08/23/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 azureSandbox: true
 durationInMinutes: 7

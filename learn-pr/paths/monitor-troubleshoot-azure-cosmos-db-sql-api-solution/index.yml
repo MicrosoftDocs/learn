@@ -20,7 +20,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api
 - learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api

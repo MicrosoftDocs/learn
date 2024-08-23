@@ -10,9 +10,9 @@ Suppose your company has resources distributed across multiple Azure virtual net
 
 As your needs evolve, you can implement more Azure Firewall instances. Each should have similar rules governing traffic flow. Management becomes more difficult when you have a more complex virtual network, virtual WAN, and firewall settings. However, Firewall Manager enables you to centrally manage these components and more easily control your cloud-based security perimeters.
 
-## What will we be doing?
+## What  will you do?
 
-Analyzing the capabilities and benefits of using Firewall Manager so that you can answer the following questions:
+Analyze the capabilities and benefits of using Firewall Manager so that you can answer the following questions:
 
 - Why should you use Firewall Manager?
 - How can Firewall Manager help you manage your cloud-based security perimeters?
@@ -20,4 +20,4 @@ Analyzing the capabilities and benefits of using Firewall Manager so that you ca
 
 ## What is the main goal?
 
-That by the end of this module, your evaluation of Firewall Manager has shown you how to use it to help improve security management.
+That by the end of this module, your evaluation of Firewall Manager will show you how to use it to help improve security management.

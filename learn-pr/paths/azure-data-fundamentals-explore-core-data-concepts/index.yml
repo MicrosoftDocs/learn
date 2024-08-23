@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 modules:
 - learn.wwl.explore-core-data-concepts
 - learn.wwl.explore-roles-responsibilities-world-of-data

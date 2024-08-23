@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy Elastic Cloud on Azure
   description: "This unit is an exercise to guide users through the steps for deploying Elastic Cloud on Azure using an Azure Marketplace template."
-  ms.date: 6/11/2021
+  ms.date: 04/07/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit

@@ -58,7 +58,7 @@ For example, a fact table containing details of sales orders might contain the f
 | 20220101 | 123 | 5 | 765 | 1001 | 2 | 1 | 2.00 | 0.20 | 2.20 |
 | 20220102 | 125 | 2 | 723 | 1002 | 1 | 1 | 4.99 | 0.49 | 5.48 |
 | 20220103 | 126 | 1 | 823 | 1003 | 1 | 1 | 7.99 | 0.80 | 8.79 |
-| ... | ... | ... | ... | ... | ... | ... | ... |  | ... | ... |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | 
 
 A fact table's dimension key columns determine its grain. For example, the sales orders fact table includes keys for dates, customers, stores, and products. An order might include multiple products, so the grain represents line items for individual products sold in stores to customers on specific days.
 
@@ -68,7 +68,7 @@ In most transactional databases that are used in business applications, the data
 
 Often, a data warehouse is organized as a *star* schema, in which a fact table is directly related to the dimension tables, as shown in this example:
 
-![A diagram showing a star schema.](../media/star-schema.png)]
+![A diagram showing a star schema.](../media/star-schema.png)
 
 The attributes of an entity can be used to aggregate measures in fact tables over multiple hierarchical levels - for example, to find total sales revenue by country or region, city, postal code, or individual customer. The attributes for each level can be stored in the same dimension table. However, when an entity has a large number of hierarchical attribute levels, or when some attributes can be shared by multiple dimensions (for example, both customers and stores have a geographical address), it can make sense to apply some normalization to the dimension tables and create a *snowflake* schema, as shown in the following example:
 

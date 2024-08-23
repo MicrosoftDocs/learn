@@ -11,7 +11,7 @@ We learned that in real-time systems, tasks fulfill their function within prescr
 1. Try to automate!
 
 > [!IMPORTANT]
-> Make sure to define the individual tasks as decoupled to other tasks as possible. A failure of one task shouldn't cause the failure of others.
+> Make sure to define the individual tasks as decoupled from other tasks. A failure of one task shouldn't cause the failure of others.
 
 > [!NOTE]
 > A reliable system is key. Automation will help your system to become more reliable.

@@ -7,8 +7,8 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: module
-  ms.service: sql-database
+  ms.topic: module-standard-task-based
+  ms.service: azure-sql-database
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -35,7 +35,7 @@ products:
 - azure-portal
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.azure-scale-azure-sql-databases-elastic-pools.introduction
 - learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool

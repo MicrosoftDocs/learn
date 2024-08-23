@@ -3,11 +3,13 @@ uid: learn.wwl.automl-azure-databricks.exercise-automl
 title: Exercise - Use AutoML in Azure Databricks
 metadata:
   title: Exercise - Use AutoML in Azure Databricks
-  description: "Exercise - Use AutoML in Azure Databricks"
-  ms.date: 08/29/2023
+  description: Exercise - Use AutoML in Azure Databricks
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 08/29/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-automl.md)]

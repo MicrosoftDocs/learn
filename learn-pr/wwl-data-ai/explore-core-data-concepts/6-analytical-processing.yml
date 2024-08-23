@@ -4,10 +4,12 @@ title: Explore analytical data processing
 metadata:
   title: Explore analytical data processing
   description: "Explore analytical data processing"
-  ms.date: 10/31/2023
+  ms.date: 08/16/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-analytical-processing.md)]

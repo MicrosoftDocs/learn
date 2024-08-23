@@ -8,7 +8,6 @@ metadata:
   author: claytonsiemens77
   ms.author: csiemens
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/4-evolve-operations-with-observability.md)]

@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
@@ -18,34 +18,34 @@ quiz:
   questions:
   - content: "Which of the security rules defined by the infrastructure team takes precedence?"
     choices:
-    - content: "The allow rule takes precedence."
+    - content: "The allowed rule takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."
     - content: "The deny rule takes precedence."
       isCorrect: true
-      explanation: "Correct. The deny rule takes precedence. Deny rules are processed first. The rule with priority 150 is processed before the rule with priority 200."
+      explanation: "Correct. The deny rule takes precedence. The deny rule is processed first. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."
-  - content: "How would you define a default inbound security rule?"
+  - content: "How do Application Security Groups (ASGs) enhance network security within Azure Virtual Networks?"
     choices:
-    - content: "Allow inbound coming from a virtual machine in another virtual network."
+    - content: "By encrypting virtual network traffic."
       isCorrect: false
-      explanation: "Incorrect. This rule isn't a default inbound security rule."
-    - content: "Allow traffic from any external source to any of the virtual machines."
+      explanation: "Incorrect. ASGs don't encrypt network traffic."
+    - content: "By applying anti-virus software."
       isCorrect: false
-      explanation: "Incorrect. This rule isn't a default inbound security rule."
-    - content: "Allow inbound coming from any virtual machine to any other virtual machine within the virtual network."
+      explanation: "Incorrect. ASGs don't install anti-virus software."
+    - content: "By grouping virtual machines according to their functions."
       isCorrect: true
-      explanation: "Correct. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine within the virtual network."
-  - content: "What's a valid service tag for network security group rules?"
+      explanation: "Correct. ASGs allow administrators to group VMs based on their roles or functions."
+  - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
-    - content: "`Virtual Network`"
+    - content: "It's allowed by default."
+      isCorrect: false
+      explanation: "Incorrect. Allowing traffic by default would pose a security risk."
+    - content: "It's denied by default."
       isCorrect: true
-      explanation: "Correct. `Virtual Network` is a valid service tag. Service tags represent a group of IP addresses. Other service tags are `Internet`, `SQL`, `Storage`, `AzureLoadBalancer`, and `AzureTrafficManager`."
-    - content: "`VPN Gateway`"
+      explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
+    - content: "It's postponed until the rules change."
       isCorrect: false
-      explanation: "Incorrect. `VPN Gateway` isn't a valid service tag."
-    - content: "`Database`"
-      isCorrect: false
-      explanation: "Incorrect. `Database` isn't a valid service tag."
+      explanation: "Incorrect. NSGs don't postpone network traffic."

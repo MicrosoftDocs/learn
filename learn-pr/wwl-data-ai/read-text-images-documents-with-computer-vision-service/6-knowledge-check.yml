@@ -3,11 +3,13 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 12/15/2023
+  description: Knowledge Check
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
@@ -30,13 +32,13 @@ quiz:
     choices:
     - content: "Only total content and pages of text."
       isCorrect: false
-      explanation: "Incorrect: Results contain total content, pages, words and lines, as well as bounding boxes for each word and line."
-    - content: "Pages, words and lines of text."
-      isCorrect: false
-      explanation: "Incorrect: Results contain total content, pages, words and lines, as well as bounding boxes for each word and line."
-    - content: "Total content, pages, words and lines of text."
+      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
+    - content: "Blocks, words and lines of text."
       isCorrect: true
-      explanation: "Correct: Results contain total content, pages, words and lines, as well as bounding boxes for each word and line."
+      explanation: "Correct: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
+    - content: "Total content, image tags, pages, words and lines of text."
+      isCorrect: false
+      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
   - content: "You've scanned a letter into PDF format and need to extract the text it contains. What should you do?"
     choices:
     - content: "Use the Azure AI Custom Vision service"

@@ -23,8 +23,6 @@ products:
 - windows
 - configuration-manager
 - intune
-subjects:
-- development-tools
 modules:
 - learn.wwl.execute-mobile-application-management
 - learn.wwl.deploy-applications

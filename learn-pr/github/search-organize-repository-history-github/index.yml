@@ -30,8 +30,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.search-organize-repository-history-github.1-introduction
 - learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github

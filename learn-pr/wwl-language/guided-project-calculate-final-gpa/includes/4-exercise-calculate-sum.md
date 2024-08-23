@@ -1,3 +1,5 @@
+
+
 In this exercise, you'll calculate and store the total number of credit hours and the total grade points earned for each course. These values will later be used to calculate the GPA. Since both the credit hours and grade values are represented as whole numbers, you'll store the sums using the Integer data type.
 
 ## Create variables to store the average
@@ -150,4 +152,3 @@ In this task, you'll run the code and verify that the output is correct.
 
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far. You'll build on this code in the next exercise.
-

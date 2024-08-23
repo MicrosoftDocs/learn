@@ -3,29 +3,47 @@ uid: learn.wwl.query-configuration-information
 metadata:
   title: Query configuration information by using CIM and WMI
   description: "This module explains the structure of the namespaces that contain classes and also how to query instances of a class. It covers how to query remote computers by using ad-hoc connections and CIM sessions."
-  ms.date: 12/21/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Query configuration information by using CIM and WMI
 summary: This module explains the structure of the namespaces that contain classes and also how to query instances of a class. It covers how to query remote computers by using ad-hoc connections and CIM sessions.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - List the available namespaces.
-  - List local repository namespaces.
-  - Retrieve a list of classes from a namespace.
-  - Retrieve a list of classes from the root\CIMv2 namespace and sort them.
-  - Query instances of a specified class.
-  - Query instances of a specified class by using WMI, CIM, and WMI Query Language (WQL).
-  - Connect to remote computers by using CIM or WMI.
-  - Create and manage CIM sessions.
-  - Query repository classes from remote computers by using CIM sessions objects.
+
+  -   List the available namespaces.
+
+  -   List local repository namespaces.
+
+  -   Retrieve a list of classes from a namespace.
+
+  -   Retrieve a list of classes from the root\CIMv2 namespace and sort them.
+
+  -   Query instances of a specified class.
+
+  -   Query instances of a specified class by using WMI, CIM, and WMI Query Language (WQL).
+
+  -   Connect to remote computers by using CIM or WMI.
+
+  -   Create and manage CIM sessions.
+
+  -   Query repository classes from remote computers by using CIM sessions objects.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 iconUrl: /training/achievements/query-configuration-information.svg
 levels:
 - intermediate
@@ -40,7 +58,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

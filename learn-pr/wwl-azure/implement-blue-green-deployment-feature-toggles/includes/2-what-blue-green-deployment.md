@@ -2,7 +2,7 @@ Blue-green deployment is a technique that reduces risk and downtime by running t
 
 Only one of the environments is live, with the live environment serving all production traffic.
 
-:::image type="content" source="../media/blue-green-new-58f05eb7.png" alt-text="Blue-green deployment.":::
+:::image type="content" source="../media/blue-green-new-58f05eb7.png" alt-text="Diagram showing blue-green deployment.":::
 
 
 For this example, blue is currently live, and green is idle.

@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism
 metadata:
   title: 'Guided Project: Inheritance, Abstraction, and Polymorphism'
   description: "This is the guided project for Inheritance, Abstraction, and Polymorphism."
-  ms.date: 01/17/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module
@@ -22,6 +22,7 @@ prerequisites: |
   - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
   - Experience with basic C# syntax rules.
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

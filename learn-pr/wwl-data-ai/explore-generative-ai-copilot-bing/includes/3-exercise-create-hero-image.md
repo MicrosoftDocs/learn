@@ -12,7 +12,7 @@ Since Copilot in Bing remembers the context of the conversation, you can have it
 3. Choose image you like and download it.
 
 > [!IMPORTANT]
-> Copilot in Bing uses [Image Creator by Desinger](https://www.bing.com/images/create) so you need to log in before continuing.
+> Copilot in Bing uses [Image Creator by Designer](https://www.bing.com/images/create) so you need to log in before continuing.
 
 
 **Sample prompt**:

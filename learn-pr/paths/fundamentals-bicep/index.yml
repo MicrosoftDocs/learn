@@ -41,8 +41,6 @@ roles:
 products:
 - azure
 - azure-resource-manager
-subjects:
-- development-tools
 modules:
 - learn.azure.introduction-infrastructure-code-using-bicep
 - learn.azure.deploy-azure-resources-bicep

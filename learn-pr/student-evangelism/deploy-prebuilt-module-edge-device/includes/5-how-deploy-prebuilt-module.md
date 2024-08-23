@@ -1,17 +1,17 @@
 Two steps are required to deploy a pre-built module to an edge device:
 
-* Choose an IoT Edge module from the Azure Marketplace
+* Choose an IoT Edge module from a container registry
 * Select the IoT Edge device to receive the module
 
 For our scenario, we want to use a module simulating temperature data.
 
-* Open the marketplace in Azure portal
+* Open the Microsoft Artifact Registry and filter for IoT Edge modules
 * Search for the module **Simulated Temperature Sensor**
-* Choose the IoT Edge device to receive this module.
+* Choose the IoT Edge device to receive this module
 
-A three-step wizard helps to define the stages to deploy the module.
+Use the Azure portal to define the stages to deploy the module.
 
-1. **Add modules**: Select the **Simulated Temperature Sensor** module.
+1. **Add modules**: Enter the URI for the **Simulated Temperature Sensor** module.
 1. **Specify routes**: Routing specifies how messages are passed between modules and IoT Hub. In this case, we select all messages from all modules to go to IoT Hub.
 1. **Review Deployment**: This allows you to preview the deployment manifest JSON file that defines all the modules deployed to your IoT Edge device.
 

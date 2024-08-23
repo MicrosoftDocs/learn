@@ -1,8 +1,8 @@
-Your Azure Cosmos DB template spec has been used throughout your organization to provision lots of new Azure Cosmos DB accounts. All of them have been configured to use continuous backup.
+Your Azure Cosmos DB template spec is now used throughout your organization to provision lots of new Azure Cosmos DB accounts. Accordingly, all of them are configured to use continuous backup.
 
 Your security team recently reviewed the Azure Cosmos DB security capabilities. It decided that new accounts should use Microsoft Entra authentication and Azure Cosmos DB role-based access control.
 
-In this exercise, you'll update your template spec with a new version that includes the updated authentication configuration.
+In this exercise, you update your template spec with a new version that includes the updated authentication configuration.
 
 During the process, you'll:
 
@@ -133,8 +133,8 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
    ```azurecli
    id=$(az ts show \
     --name ToyCosmosDBAccount \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --version 2.0 \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --version "2.0" \
     --query "id")
    ```
 
@@ -162,6 +162,6 @@ The deployment can take a minute or two to finish.
 
    :::image type="content" source="../media/7-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with two deployments listed." border="true":::
 
-1. Select **Deployment details** to expand it. Notice that the resources for Azure Cosmos DB role-based access control have been deployed.
+1. Select **Deployment details** to expand it. Confirm that the resources for Azure Cosmos DB role-based access control are deployed.
 
    :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB resources listed." border="true":::

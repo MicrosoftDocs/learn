@@ -38,7 +38,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- database
+- databases
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
 - learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline

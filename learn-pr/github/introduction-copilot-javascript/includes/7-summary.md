@@ -4,6 +4,7 @@ Now that you have finished this module, you should be able to:
 
 - Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions.
 - Apply prompt engineering to various projects by using its good practices.
+- Use GitHub Copilot Chat to ask and receive coding-related questions.
 
 
 ## Delete your Codespaces resources
@@ -23,3 +24,4 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105774-abrilu)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105774-abrilu)
 * [Get started with React](/training/modules/react-get-started/?WT.mc_id=academic-105774-abrilu)
+* [Visual Studio Code (YouTube)](https://www.youtube.com/@code/playlists)

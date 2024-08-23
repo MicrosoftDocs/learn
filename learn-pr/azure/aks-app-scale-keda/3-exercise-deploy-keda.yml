@@ -3,7 +3,7 @@ uid: learn.aks-app-scaling-keda.3-exercise-deploy-keda
 metadata:
   title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
   description: In this exercise, you deploy KEDA into an AKS cluster using the KEDA add-on.
-  ms.date: 11/07/2023
+  ms.date: 06/03/2024
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit

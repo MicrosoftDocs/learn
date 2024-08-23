@@ -4,7 +4,7 @@ title: "Why learn from incidents?"
 metadata:
   title: "Why learn from incidents?"
   description: "Why learn from incidents?"
-  ms.date: 05/19/2020
+  ms.date: 04/19/2024
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -17,32 +17,30 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these statements are not true about complex systems'
+  - content: 'Which of these statements are NOT true about complex systems?'
     choices:
-    - content: 'Complex systems contain changing mixtures of failure latent within
-    them'
+    - content: 'Complex systems contain changing mixtures of failure latent within them.'
       isCorrect: false
       explanation: 'Complex systems do contain changing mixtures of failure latent within them.'
-    - content: 'Complex systems run in degraded mode'
+    - content: 'Complex systems run in degraded mode.'
       isCorrect: false
       explanation: 'Complex systems do run in degraded mode by their nature.'
-    - content: 'Catastrophe is always just around the corner'
+    - content: 'Catastrophe is always just around the corner.'
       isCorrect: false
       explanation: 'Catastrophe is always just around the corner in a complex system.'
     - content: 'Complex systems can run without human intervention.'
       isCorrect: true
-      explanation: 'Correct, this is not true. If anything, complex systems may need more human intervention to keep running.'
-
+      explanation: 'Correct, this is not true. If anything, complex systems might need more human intervention to keep running.'
 
   - content: 'What is the role of people in complex systems?'
     choices:
-    - content: 'they work on the system'
+    - content: 'They work on the system.'
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, people are a part of them.'
-    - content: 'they work with a system'
+      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
+    - content: 'They work with a system.'
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, people are a part of them'
-    - content: 'they work within a system'
+      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
+    - content: 'They work within a system.'
       isCorrect: true
-      explanation: 'Correct. Systems are socio-technical in nature, people are a part of them.'
+      explanation: 'Correct. Systems are socio-technical in nature, and people are a part of them.'
  

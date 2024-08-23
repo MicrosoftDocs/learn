@@ -6,9 +6,10 @@ metadata:
   ms.date: 08/22/2023
   author: cyz
   ms.author: cyzanon
-  ms.custom: team=nextgen
-  ms.topic: module
-  ms.service: azure
+  ms.custom: team=cloud_advocates
+  ms.topic: module-challenge-project
+  ms.service: github
+  ms.collection: ce-advocates-ai-copilot
 title: Challenge project - Build a minigame with GitHub Copilot and Python
 summary: Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub Codespaces and GitHub Copilot.
 abstract: |

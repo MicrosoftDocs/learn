@@ -1,17 +1,17 @@
 This exercise provides an overview of setting up the collection, processing, and storage of IoT telemetry generated, by using an Azure IoT Central application. 
 
-In this exercise, you'll:
+In this exercise, you:
 
-- Create an Azure IoT Central application
-- Create an Azure function that logs an HTTP request payload
-- Configure and validate IoT telemetry rules of an Azure IoT Central application
+- Create an Azure IoT Central application.
+- Create an Azure function that logs an HTTP request payload.
+- Configure and validate IoT telemetry rules of an Azure IoT Central application.
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
-- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-- To have completed the exercise unit **Set up Azure Cosmos DB**.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant. The tenant must be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- To complete the exercise unit **Set up Azure Cosmos DB**.
 - An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Create an Azure IoT Central application
@@ -23,10 +23,10 @@ To perform this exercise, you need:
     | Field | Description |
     | ----- | ----------- |
     | Subscription | The Azure subscription you want to use. |
-    | Resource group | The resource group you want to use.  You can create a new resource group or use an existing one. |
+    | Resource group | The resource group you want to use. You can create a new resource group or use an existing one. |
     | Resource name | A valid Azure resource name such as *adatum-iot-custom-application*. |
     | Application URL | A URL subdomain for your application such as *adatum-iot-custom-application*. The URL for an IoT Central application looks like `https://adatum-iot-custom-application.azureiotcentral.com`. |
-    | Template | **In-store application - Condition Monitoring** |
+    | Template | **In-store Analytics - Condition Monitoring** |
     | Region | The Azure region you want to use. |
     | Pricing plan | Select one of the standard pricing plans. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
@@ -39,17 +39,17 @@ When the app is ready, you can navigate to it from the Azure portal:
 > [!TIP]
 > To list all the IoT Central applications you have access to, navigate to [IoT Central Applications](https://apps.azureiotcentral.com/myapps).
 
-This will display the **Dashboard** page. This might take a few minutes. Review telemetry and analytics of the sample Azure IoT Central application:
+In a few minutes or less, the **Dashboard** page is displayed. Review the telemetry and analytics of the sample Azure IoT Central application:
 
 1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, select **Devices**.
 1. In the **Thermostat** section, select **Thermostat-Zone1**.
 1. On the **Thermostat-Zone1** pane, review the content of the **Dashboard** tab.
 
-   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-dashboard.png" alt-text="Screenshot of the Dashboard tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
+   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-dashboard.png" alt-text="Screenshot of the Dashboard tab of the 'Thermostat-Zone1' device pane in the IoT Central Application portal.":::
 
 1. Select the **Raw data** tab, and review the content.
 
-   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-raw-data.png" alt-text="Screenshot of the Raw data tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
+   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-raw-data.png" alt-text="Screenshot of the Raw data tab of the 'Thermostat-Zone1' device pane in the IoT Central Application portal.":::
 
 ## Create an Azure function that logs an HTTP request payload
 
@@ -67,7 +67,7 @@ In this task, you're creating an Azure Function app that implements the HTTP web
    | Function App name | Enter a unique name that consists of lower-case letters, digits, or dashes, and starts with a letter. |
    | Publish | Select **Code**. |
    | Runtime stack | Select **.NET**. |
-   | Version | Select **6**. |
+   | Version | Select **Version 6 (LTS), in-process model**. |
    | Region | Select the Azure region closest to the location of your lab environment, preferably matching the location you chose for the Azure IoT Central deployment. |
    | Operating system | Windows |
    | Plan type | Consumption (serverless) |
@@ -80,7 +80,7 @@ In this task, you're creating an Azure Function app that implements the HTTP web
    > Wait for the Azure Function app provisioning to complete. This might take about two minutes.
 
 1. When the Azure Function app deployment is complete, select **Go to resource**.
-1. On the Azure Function app pane, select **Functions**, and then select **+ Create**.
+1. On the Azure Function app pane, under **Create in Azure portal**, select **Create function**.
 1. On the **Add function** pane, specify the following settings, and then select **Create**.
 
    | Setting | Configuration |
@@ -90,23 +90,23 @@ In this task, you're creating an Azure Function app that implements the HTTP web
    | New Function | **HttpTrigger1** |
    | Authorization level | **Function** |
 
-   :::image type="content" source="../media/6-azure-function-app-function-add.png" alt-text="Screenshot of the Add function pane of the Azure Function app in the Azure portal.":::
+   :::image type="content" source="../media/6-azure-function-app-function-add.png" alt-text="Screenshot of the 'Add function' pane of the Azure Function app in the Azure portal.":::
 
 1. On the **HttpTrigger1** pane, select **Integration** from the menu.
 
    :::image type="content" source="../media/6-azure-function-integration.png" alt-text="Screenshot of the Integration function pane of the Azure Function app in the Azure portal.":::
 
 1. In the rectangle labeled **Outputs**, select **+ Add output**.
-1. Configure the following settings, and then select **OK**:
+1. Configure the following settings, and then select **Add**:
 
    | Setting | Configuration |
    | --- | --- |
    | Binding type | Select **Azure Cosmos DB**. |
-   | Document parameter name | Replace the default value **outDoc**. |
+   | Document parameter name | Replace the default value with **outDoc**. |
    | Database name | Enter the name of the database you created in the previous exercise, **iotdb**. |
    | Collection Name | Enter **iotcollection**. |
    | If true, creates the Cosmos DB database | Select **Yes**. |
-   | Cosmos DB account connection | Select **New**. In the **New Cosmos DB connection** popup window, ensure that the **Azure Cosmos DB Account** option is selected. In the **Cosmos DB account connection** drop-down list, select the entry representing the Cosmos DB account you created in the previous exercise, and then select **OK** twice. |
+   | Cosmos DB account connection | Select **New**. In the **New Cosmos DB connection** popup window, ensure that the **Azure Cosmos DB Account** option is selected. In the **Database Account** drop-down list, select the entry representing the Cosmos DB account you created in the previous exercise, and then select **OK**. |
    | Partition key (optional) | Enter **/pk/timestamp/deviceid**. |
 
    :::image type="content" source="../media/6-azure-function-cosmos-db-output.png" alt-text="Screenshot of the Create Output pane of the HttpTrigger1 Integration pane of an Azure function in the Azure portal.":::
@@ -184,10 +184,10 @@ In this task, you're creating an Azure Function app that implements the HTTP web
 1. Select **Monitor**, and then select the **Logs** tab.
 1. Verify that the **logs** pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured previously in this task.
 1. Switch to the web browser window displaying the **Data Explorer** pane of the Cosmos DB account you provisioned in the previous exercise.
-1. In the **NOSQL API** section, select the circular arrow **Refresh** button, expand the **iotdb** node and its **iotcollection**, select the **Items** node, and then select the first document in the list of items.
+1. In the **NOSQL API** section, select the circular arrow **Refresh** button, expand the **iotdb** node and the **iotcollection** within it. Select the **Items** node, and then select the first document in the list of items.
 1. Verify that the **details** pane of the **Items** tab in the **Data Explorer** window displays the telemetry data generated by devices registered with the Azure Central IoT application and processed by the Azure function, including **pk**, **timestamp**, **deviceId**, and **temperature**.
 
-   :::image type="content" source="../media/6-azure-cosmos-db-iot-collection-items.png" alt-text="Screenshot of the Azure Cosmos DB items representing telemetry data generated by devices registered with Azure IoT Central and processed by the Azure function.":::
+   :::image type="content" source="../media/6-azure-cosmos-db-iot-collection-items.png" alt-text="Screenshot of the Azure Cosmos DB items. The items represent the telemetry data generated by devices registered with Azure IoT Central and processed by the Azure function.":::
 
 ## Results
 

@@ -6,7 +6,7 @@ metadata:
   ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Use loops to iterate through data in Rust
@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - data-management
 units:
 - learn.language.rust-loop-expressions.0-introduction

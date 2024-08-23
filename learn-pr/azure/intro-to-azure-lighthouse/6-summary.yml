@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/24/2024
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: unit
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
+  

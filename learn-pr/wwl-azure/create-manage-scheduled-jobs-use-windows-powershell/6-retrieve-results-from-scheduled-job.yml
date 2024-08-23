@@ -4,13 +4,12 @@ title: Retrieve the results from a scheduled job in Windows PowerShell
 metadata:
   title: Retrieve the results from a scheduled job in Windows PowerShell
   description: "Retrieve the results from a scheduled job in Windows PowerShell"
-  ms.date: 07/03/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-retrieve-results-from-scheduled-job.md)]

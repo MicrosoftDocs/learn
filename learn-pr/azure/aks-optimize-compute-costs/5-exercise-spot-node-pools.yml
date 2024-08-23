@@ -5,7 +5,7 @@ title: Exercise - Configure spot node pools with the cluster autoscaler on an AK
 metadata:
   title: Exercise - Configure spot node pools with the cluster autoscaler on an AKS cluster
   description: Here you'll configure a spot user node pool and enable the autoscaler on the node pool. You'll also deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
-  ms.date: 7/10/2020
+  ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman
   ms.topic: unit

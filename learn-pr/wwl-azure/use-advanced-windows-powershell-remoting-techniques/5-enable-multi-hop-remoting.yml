@@ -4,11 +4,12 @@ title: Enable multi-hop remoting in Windows PowerShell
 metadata:
   title: Enable multi-hop remoting in Windows PowerShell
   description: "Enable multi-hop remoting in Windows PowerShell"
-  ms.date: 11/10/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

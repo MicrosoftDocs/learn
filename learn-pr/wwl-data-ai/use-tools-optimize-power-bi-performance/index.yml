@@ -5,8 +5,8 @@ metadata:
   description: "Use tools to optimize Power BI performance"
   ms.date: 01/16/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: module
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
   ms.service: powerbi
 title: Use tools to optimize Power BI performance
 summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.

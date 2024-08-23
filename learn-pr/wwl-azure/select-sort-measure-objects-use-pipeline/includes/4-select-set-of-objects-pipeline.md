@@ -30,5 +30,5 @@ Consider a scenario in which **Select-Object** evaluates the properties and valu
 For example, if you want to display user information for one user in each department, enter the following command in the console, and then press the Enter key:
 
 ```powershell
-Get-ADUser -Filter * -Property Department | Sort-Object -Property Department | Select-Object -Unique
+Get-ADUser -Filter * -Property Department | Sort-Object -Property Department | Select-Object Department -Unique
 ```

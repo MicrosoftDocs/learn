@@ -23,8 +23,8 @@ By the end of this module, you'll know how to extend a pipeline to use multiple 
 
 You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
-- [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
-- [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
+- [Create an organization - Azure DevOps.](/azure/devops/organizations/accounts/create-organization)
+- [Create a project in Azure DevOps.](/azure/devops/organizations/projects/create-project)
 
 To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management.
 

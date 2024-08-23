@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: powershell
-  ms.technology: powershell-cmdlets
+  ms.service: powershell
+  ms.subservice: cmdlets
 title: Manage network service settings for Windows devices using PowerShell cmdlets
 summary: This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices.
 abstract: |
@@ -36,7 +36,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

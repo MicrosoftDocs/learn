@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/03/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: React state and events
 summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
@@ -28,8 +28,6 @@ roles:
 - developer
 products:
 - static-web-apps
-subjects:
-- development-tools
 units:
 - learn.language.react-states-events.1-introduction
 - learn.language.react-states-events.2-concepts

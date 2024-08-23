@@ -9,7 +9,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
-  ms.service: sql-database
+  ms.service: azure-sql-database
 title: Data tracking and synchronization with Azure SQL Database
 summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
 abstract: |
@@ -32,7 +32,7 @@ roles:
 products: 
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.azure-sql-replication.introduction
 - learn.azure-sql-replication.track-data-changes-with-cdc

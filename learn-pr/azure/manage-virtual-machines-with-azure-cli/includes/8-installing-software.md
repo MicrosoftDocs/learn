@@ -41,7 +41,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
     ```azurecli
     az vm open-port \
         --port 80 \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name SampleVM
     ```
 

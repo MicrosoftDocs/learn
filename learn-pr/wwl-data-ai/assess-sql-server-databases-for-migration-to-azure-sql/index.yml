@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/23/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Assess SQL Server databases for migration to Azure SQL
 summary: Assessment tools such as Azure SQL Migration extension for Azure Data Studio, Azure Migrate, and Data Migration Assistant facilitate the migration of SQL Server databases to Azure.
@@ -15,8 +15,7 @@ abstract: |
    - Understand common compatibility issues and blockers that may prevent a migration to Azure SQL.
    - Discover the various tools and options available for assessing SQL Server databases for migration purposes.
    - Use the Azure migration extension for Azure Data Studio to assess SQL Server databases.
-   - Use the Azure Migrate to assess SQL Server databases.
-   - Use Data Migration Assistant (DMA) to assess SQL Server databases.
+   - Use the Azure Migrate and other tools to assess SQL Server databases.
 prerequisites: |
   - Experience in administering SQL Server databases.
   - Knowledge of SQL Server editions and versions.

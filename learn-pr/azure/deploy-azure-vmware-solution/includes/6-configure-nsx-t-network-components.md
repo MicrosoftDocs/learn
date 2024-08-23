@@ -136,7 +136,7 @@ Deploy the VM as you would in any vSphere environment:
 
 ## Test the NSX-T segment connectivity
 
-Sign into the VM created in the previous step and verify connectivity:
+Sign in to the VM created in the previous step and verify connectivity:
 
 1. Ping an IP on the internet.
 1. Go to an internet site in a web browser.

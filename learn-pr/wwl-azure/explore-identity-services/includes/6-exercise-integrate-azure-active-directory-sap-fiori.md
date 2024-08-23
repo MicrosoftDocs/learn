@@ -1,4 +1,3 @@
-
 Integrating SAP Fiori with Microsoft Entra ID gives you the following benefits:
 
 - You can use Microsoft Entra ID to control who has access to SAP Fiori.
@@ -87,7 +86,6 @@ For single sign-on to work, you must establish a linked relationship between a M
 1. In the Azure portal, select **Enterprise Applications**, select **All applications**, then select **SAP Fiori**.
 2. In the applications list, select **SAP Fiori**.
 3. To verify the outcome, after the identity provider Microsoft Entra ID is activated in SAP Fiori, try to access one of the following URLs to test single sign-on as an assigned user (you shouldn't be prompted for a username and password):
-```
-     - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
-     - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
-```
+
+     - <https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/49/4594d63a293b5be10000000a42189b/content.htm>
+     - <https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/49/4594d63a293b5be10000000a42189b/content.htm>

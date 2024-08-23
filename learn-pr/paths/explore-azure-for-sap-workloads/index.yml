@@ -3,11 +3,10 @@ uid: learn.wwl.explore-azure-for-sap-workloads
 metadata:
   title: Explore Azure for SAP workloads
   description: Explore Azure for SAP workloads
-  ms.date: 01/04/2024
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
-  ms.prod: learning-azure
 title: Explore Azure for SAP workloads
 prerequisites: |
   Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.

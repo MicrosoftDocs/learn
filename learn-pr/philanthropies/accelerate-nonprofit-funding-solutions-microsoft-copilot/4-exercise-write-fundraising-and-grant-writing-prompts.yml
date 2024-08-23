@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.exercise-write-fundraising-and-grant-writing-prompts
+
+title: Exercise - Practice with fundraising and grant writing prompts
+metadata:
+  title: Exercise - Practice with fundraising and grant writing prompts
+  description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 5/30/2024
+  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-write-fundraising-and-grant-writing-prompts.md)]

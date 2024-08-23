@@ -1,14 +1,15 @@
-In this module, you deployed an application as a Deployment with a static replica count. We discussed why this might be challenging for workloads that process events and have fluctuating resource needs. After looking at the options for your scenario, you determined that using KEDA with a scaler for the Redis list would help autoscale in an efficient and effective manner.
+In this module, you deployed an application as a Deployment with a static replica count. We discussed why this situation might be challenging for workloads that process events and have fluctuating resource needs. After looking at the options for your scenario, you determined that using KEDA with a scaler for the Redis list would help autoscale in an efficient and effective manner.
 
 ## Delete Azure resources
 
 When you're done with the resources you created in this module, delete them to avoid incurring charges.
 
 1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
-2. Select **Resource groups** and then select the resource group you created for this module.
-3. Under **Overview**, select **Delete resource group**.
-4. Enter the name of the resource group to confirm and select **Delete** to delete all of the resources you created in this module.
-5. Remove the cluster's context using the `kubectl config delete-context` command. Make sure you replace the name of the cluster with your cluster's name.
+1 Select **Resource groups** and select the resource group you created for this module.
+1. Under **Overview**, select **Delete resource group**.
+1. Enter the resource group name to confirm and select **Delete** to delete all of the resources you created in this module.
+1. Select **Delete** again to confirm deletion.
+1. Remove the cluster's context using the `kubectl config delete-context` command. Make sure you replace the name of the cluster with your cluster's name.
 
     ```azurecli-interactive
     kubectl config delete-context CLUSTER_NAME

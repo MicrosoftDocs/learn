@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-api-preview-url.4-exercise-function-app
 metadata:
   title: Exercise - Create an Azure Functions project
   description: Use the Azure Functions tools to build an API for a static site
-  ms.date: 12/08/2022
+  ms.date: 12/12/2023
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

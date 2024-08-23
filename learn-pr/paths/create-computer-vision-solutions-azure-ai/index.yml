@@ -3,11 +3,10 @@ uid: learn.wwl.create-computer-vision-solutions-azure-ai
 metadata:
   title: Create computer vision solutions with Azure AI Vision
   description: How to create computer vision solutions with Azure AI Vision
-  ms.date: 10/10/2023
+  ms.date: 1/29/2024
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: Create computer vision solutions with Azure AI Vision
 prerequisites: |
   Before starting this learning path, you should already have:
@@ -25,15 +24,13 @@ roles:
 products:
 - ai-services
 - azure-computer-vision
-- azure-custom-vision
 - azure-face
 - azure-video-indexer
 subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images
-- learn.wwl.classify-images
-- learn.wwl.detect-objects-images
+- learn.wwl.custom-model-ai-vision-image-classification
 - learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video

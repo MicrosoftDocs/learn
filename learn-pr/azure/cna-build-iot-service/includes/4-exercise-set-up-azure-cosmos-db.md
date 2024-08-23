@@ -1,6 +1,6 @@
 This exercise provides an overview of setting up an Azure Cosmos DB account and database. 
 
-In this exercise, you'll:
+In this exercise, you:
 
 - Create an Azure Cosmos DB account.
 - Create an Azure Cosmos DB database.
@@ -9,15 +9,15 @@ In this exercise, you'll:
 
 To perform this exercise, you need:
 
-- An Azure subscription
-- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- An Azure subscription.
+- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant. The tenant should be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create an Azure Cosmos DB account
 
 1. Start a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you're using for this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB**, and in the list of results, select **Azure Cosmos DB**.
 1. On the Azure Cosmos DB pane, select **+ Create**.
-1. On the **Which API best suits your workload?** pane, select **Azure Cosmos DB for NoSQL** and select **Create**.
+1. For **Which API best suits your workload?**, select **Azure Cosmos DB for NoSQL** and select **Create**.
 1. On the **Basics** tab, configure the following settings:
 
    | Setting | Configuration |
@@ -64,7 +64,7 @@ To perform this exercise, you need:
    :::image type="content" source="../media/4-azure-cosmosdb-create-new-database.png" alt-text="Screenshot of the New Database creation within the Data Explorer pane of an Azure Cosmos DB Account in the Azure portal.":::
 
 1. In the **DATA** section, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
-1. On the **New Container** pane, specify the following settings, and then select **OK**:
+1. On the **New Container** pane, specify the following settings, and then select **OK**.
 
    | Setting | Configuration |
    | --- | --- |
@@ -76,4 +76,4 @@ To perform this exercise, you need:
 
 ## Results
 
-Congratulations! You've completed the first exercise of this module. In this exercise, you created a Cosmos DB account and database.
+Congratulations! You completed the first exercise of this module. In this exercise, you created a Cosmos DB account and database.

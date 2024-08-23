@@ -6,7 +6,7 @@ metadata:
   description: In this unit, you'll learn how to deploy an Azure Database for MySQL instance
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 03/04/2023
+  ms.date: 05/25/2023
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

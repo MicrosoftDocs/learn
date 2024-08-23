@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
-  title: Introduction to Microsoft 365 threat protection
+  title: Introduction to Microsoft Defender XDR threat protection
   description: "Introduction to Microsoft 365 threat protection"
   ms.date: 05/10/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
-  ms.service: microsoft-365
-title: Introduction to Microsoft 365 threat protection
+  ms.service: defender-xdr
+title: Introduction to Microsoft Defender XDR threat protection
 summary: In this module, you'll learn how to use the Microsoft Defender XDR integrated threat protection suite.
 abstract: |
   In this module, you learned the role that Microsoft Defender XDR plays in a modern SOC.

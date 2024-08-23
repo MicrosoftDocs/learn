@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap of the benefits of using SSH for remote development in Visual Studio Code."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

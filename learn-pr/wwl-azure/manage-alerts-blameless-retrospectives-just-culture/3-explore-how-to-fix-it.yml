@@ -4,12 +4,12 @@ title: Explore how to fix it
 metadata:
   title: Explore how to fix it
   description: "Explore how to fix it"
-  ms.date: 11/06/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/3-explore-how-to-fix-it.md)]

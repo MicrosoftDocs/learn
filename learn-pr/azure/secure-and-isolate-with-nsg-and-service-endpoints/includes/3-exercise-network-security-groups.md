@@ -11,7 +11,7 @@ First, you'll create the virtual network and subnets for your server resources. 
 1. In Azure Cloud Shell, run the following command to assign the sandbox resource group to the variable `rg`:
 
     ```azurecli
-    rg=<rgn>[sandbox resource group name]</rgn>
+    rg="<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. To create the **ERP-servers** virtual network and the **Applications** subnet, run the following command in Cloud Shell:

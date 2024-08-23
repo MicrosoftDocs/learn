@@ -4,10 +4,12 @@ title: 'Exercise - Review and test a C# console application using sample data  '
 metadata:
   title: Exercise - Review and test a C# console application using sample data
   description: "Exercise - Review and test a C# console application using sample data"
-  ms.date: 12/06/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-examine-code.md)]

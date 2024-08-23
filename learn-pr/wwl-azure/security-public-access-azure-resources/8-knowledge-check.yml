@@ -4,68 +4,70 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the main purpose of Azure Front Door?"
+  - content: "What is the purpose of implementing Transport Layer Security (TLS) in Azure applications?"
     choices:
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+    - content: "To increase the storage capacity of Azure Blob Storage."
       isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Azure DevOps."
-    - content: "A cloud-based database service that enables the creation, management, and scaling of NoSQL databases"
+      explanation: "TLS focuses on security measures, specifically on encrypting data in transit to enhance communications security, not on expanding storage capabilities."
+    - content: "To decrease the loading time of web applications."
       isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Azure Cosmos DB."
-    - content: "Provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe"
+      explanation: "While performance is crucial, TLS primarily secures data transmission, not directly improving loading times."
+    - content: "To secure communications between clients and servers by encrypting data in transit."
       isCorrect: true
-      explanation: "Correct. Azure Front Door is Microsoft's modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between users and applications' static and dynamic web content across the globe."
-  - content: "What does Azure DDoS Protection do to provide tailored protection policies for each customer?"
+      explanation: "TLS provides encryption for data in transit, enhancing the security of communications between clients and servers, making it essential for protecting sensitive information."
+  - content: "How does Azure Firewall contribute to the security of Azure resources?"
     choices:
-    - content: "It applies the same mitigation policies for all customers."
+    - content: "By providing physical security controls for Azure data centers."
       isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
-    - content: "It relies on customers to configure their own protection policies."
-      isCorrect: false
-      explanation: "Incorrect. This would not provide tailored protection policies for each customer."
-    - content: "It automatically learns per customer per Public IP traffic patterns for Layer 3 and 4."
+      explanation: "Azure Firewall is a network security service that manages and logs network traffic, not a measure for physical security."
+    - content: "By managing and logging all inbound and outbound network traffic according to firewall policies."
       isCorrect: true
-      explanation: "Correct. Azure DDoS Protection uses automatic learning of per customer per Public IP traffic patterns for Layer 3 and 4 to provide tailored protection policies for each customer."
-  - content: "A security specialist needs to ensure that Azure resources are protected against threats while maintaining high performance. Which of the following enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms?"
+      explanation: "Azure Firewall centralizes the management of network traffic rules, providing enhanced logging and threat intelligence for inbound and outbound traffic."
+    - content: "By automatically upgrading software applications to the latest version."
+      isCorrect: false
+      explanation: "Software updates are important but fall outside Azure Firewall's scope, which focuses on network traffic management."
+  - content: "What is the primary function of Azure Application Gateway?"
     choices:
-    - content: "Azure Front Door"
-      isCorrect: false
-      explanation: "Incorrect. Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications."
-    - content: "Azure Firewall Manager"
-      isCorrect: false
-      explanation: "Incorrect. Azure Firewall Manager is a network security management service that provides central security policy and route management for cloud-based security perimeters."
-    - content: "Azure DevOps"
+    - content: "To provide application-level routing and load balancing services."
       isCorrect: true
-      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "A company wants to ensure the security of their web applications from common exploits and vulnerabilities. Which of the following solutions can help them achieve this?"
+      explanation: "Azure Application Gateway offers advanced routing and load balancing, optimizing web traffic delivery and increasing application security."
+    - content: "To offer dedicated virtual machine hosting services."
+      isCorrect: false
+      explanation: "Application Gateway focuses on managing web traffic, not on providing hosting services."
+    - content: "To act as a distributed denial-of-service (DDoS) protection service."
+      isCorrect: false
+      explanation: "While DDoS protection is crucial, Application Gateway's main role is in routing and load balancing, not direct DDoS mitigation."
+  - content: "Which Azure service provides protection against Distributed Denial of Service (DDoS) attacks?"
     choices:
-    - content: "Securing each individual web application separately"
+    - content: "Azure Application Gateway."
       isCorrect: false
-      explanation: "Incorrect. This approach can be time-consuming and may not provide centralized protection against common exploits and vulnerabilities."
-    - content: "Deploying multiple layers of security within the application code"
-      isCorrect: false
-      explanation: "Incorrect. This approach can be challenging and require rigorous maintenance, patching, and monitoring at multiple layers of the application topology."
-    - content: "Deploying a centralized Web Application Firewall (WAF)"
+      explanation: "Incorrect because Azure Application Gateway primarily offers application delivery control, not DDoS protection."
+    - content: "Azure DDoS Protection."
       isCorrect: true
-      explanation: "Correct. A WAF provides centralized protection of web applications from common exploits and vulnerabilities, making security management simpler and giving application administrators better assurance of protection against threats and intrusions."
-  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following options would enable this?"
+      explanation: "Correct because Azure DDoS Protection offers enhanced DDoS mitigation features to protect Azure resources from DDoS attacks."
+    - content: "Azure Blob Storage."
+      isCorrect: false
+      explanation: "Incorrect because Azure Blob Storage is a service for storing large amounts of unstructured object data, such as text or binary data, and is not related to DDoS protection."
+  - content: "Why integrate a Web Application Firewall (WAF) with Azure services?"
     choices:
-    - content: "Using a different tool that does not support automation"
+    - content: "To automate the deployment of new virtual machines."
       isCorrect: false
-      explanation: "Incorrect. Using a tool that does not support automation will not enable the automation and validation of the creation and teardown of environments."
-    - content: "Using a manual process to create and teardown environments"
+      explanation: "WAF focuses on application security, whereas VM deployment automation is handled by different Azure services."
+    - content: "To enhance the search engine optimization (SEO) of web applications."
       isCorrect: false
-      explanation: "Incorrect. A manual process is prone to human error and can lead to inconsistencies in the environment."
-    - content: "Using an infrastructure as code tool to automate the creation and teardown of environments"
+      explanation: "While SEO is important for web visibility, WAF's role is to improve security, not SEO."
+    - content: "To protect web applications from common web vulnerabilities and attacks."
       isCorrect: true
-      explanation: "Correct. An infrastructure as code tool enables the automation and validation of the creation and teardown of environments, ensuring consistency and stability in the application hosting platform."
+      explanation: "WAF is designed to safeguard applications against web-based attacks and exploits, such as SQL injection and cross-site scripting, enhancing application security."

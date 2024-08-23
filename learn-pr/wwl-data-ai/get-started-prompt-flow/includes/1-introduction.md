@@ -1,6 +1,6 @@
 The true power of **Large Language Models** (**LLMs**) lies in their application. Whether you want to use LLMs to classify web pages into categories, or to build a chatbot on your data. To harness the power of the LLMs available, you need to create an application that combines your data sources with LLMs and generates the desired output.
 
-To develop, test, tune, and deploy LLM applications, you can use **prompt flow**, accessible in the [Azure Machine Learning studio](https://learn.microsoft.com/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?azure-portal=true) and the [Azure AI studio](https://learn.microsoft.com/azure/ai-studio/how-to/prompt-flow?azure-portal=true).
+To develop, test, tune, and deploy LLM applications, you can use **prompt flow**, accessible in the [Azure Machine Learning studio](/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?azure-portal=true) and the [Azure AI studio](/azure/ai-studio/how-to/prompt-flow?azure-portal=true).
 
 :::image type="content" source="../media/prompt-flow-feature.png" alt-text="Diagram showing prompt flow as a feature of Azure Machine Learning and Azure AI.":::
 

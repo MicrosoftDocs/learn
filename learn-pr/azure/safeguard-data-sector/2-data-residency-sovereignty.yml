@@ -4,9 +4,9 @@ title: Protect data residency and sovereignty
 metadata:
   title:  Protect data residency and sovereignty
   description: Conceptual discussion of data residency and sovereignty in the context of public sector agencies using Azure.
-  ms.date: 02/23/2021
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 07/25/2023
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 7
 content: |

@@ -60,7 +60,6 @@ products:
 - msal-java
 - azure-service-bus
 subjects:
-- development-tools
 - architecture
 - cloud-computing
 modules:
@@ -73,6 +72,5 @@ modules:
 - learn.azure.deploy-event-driven-real-time
 - learn.azure.deploy-java-ee-app-to-app-service
 - learn.containerize-deploy-java-app-aks
-- learn.azure.migrate-java-app-azure-app-service
 trophy:
   uid: learn.get-started-java-azure.trophy

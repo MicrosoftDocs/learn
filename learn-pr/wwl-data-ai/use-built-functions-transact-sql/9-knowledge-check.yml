@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.service: sql
-  ms.subservice: t-sql
 durationInMinutes: 5
 quiz:
   title: ""

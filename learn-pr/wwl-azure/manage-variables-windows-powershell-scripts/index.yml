@@ -3,26 +3,41 @@ uid: learn.wwl.manage-variables-windows-powershell-scripts
 metadata:
   title: Manage variables in Windows PowerShell scripts
   description: "This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible."
-  ms.date: 11/10/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Manage variables in Windows PowerShell scripts
 summary: This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explain the purpose of variables.
-  - Describe the naming rules for using variables.
-  - Explain how to assign a value to a variable.
-  - Describe variable types.
-  - Explain how to assign a variable type.
+
+  -   Explain the purpose of variables.
+
+  -   Describe the naming rules for using variables.
+
+  -   Explain how to assign a value to a variable.
+
+  -   Describe variable types.
+
+  -   Explain how to assign a variable type.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+
+  -   Familiarity with CIM and WMI technologies
 iconUrl: /training/achievements/manage-variables-windows-powershell-scripts.svg
 levels:
 - intermediate
@@ -36,7 +51,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

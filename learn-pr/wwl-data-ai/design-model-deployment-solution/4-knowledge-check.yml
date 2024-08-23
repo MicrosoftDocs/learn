@@ -3,11 +3,13 @@ uid: learn.wwl.design-model-deployment-solution.knowledge-check
 title: Exercise - Design a deployment solution
 metadata:
   title: Exercise - Design a deployment solution
-  description: "Exercise - Design a deployment solution"
-  ms.date: 01/03/2023
+  description: Exercise - Design a deployment solution
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

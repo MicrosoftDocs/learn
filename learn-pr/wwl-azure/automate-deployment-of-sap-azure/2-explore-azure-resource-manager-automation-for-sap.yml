@@ -4,12 +4,12 @@ title: Explore Azure Resource Manager automation for SAP on Azure
 metadata:
   title: Explore Azure Resource Manager automation for SAP on Azure
   description: "Explore Azure Resource Manager automation for SAP on Azure"
-  ms.date: 11/13/2023
+  ms.date: 08/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: module
-  ms.custom: devx-track-arm-template
-  ms.prod: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore-azure-resource-manager-automation-for-sap.md)]

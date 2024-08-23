@@ -85,7 +85,7 @@ Take a look at how data masking changes your query.
 1. Now sign back in to the database, but as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:serverNNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
+    sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query.

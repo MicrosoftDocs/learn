@@ -3,12 +3,11 @@ uid: learn.wwl.configure-azure-load-balancer.determine-skus
 title: Determine load balancer SKUs
 metadata:
   title: Determine load balancer SKUs
-  description: "Determine load balancer SKUs"
-  ms.date: 11/20/2023
+  description: "Determine load balancer SKUs."
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-  ms.service: load-balancer
   ms.custom:
   - N/A
 durationInMinutes: 2

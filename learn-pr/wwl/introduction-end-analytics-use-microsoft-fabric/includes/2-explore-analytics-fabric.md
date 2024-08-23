@@ -6,7 +6,7 @@ In addition to a simple, shared user experience, Fabric is a unified *software-a
 
 *OneLake* is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneCopy is a key component of OneLake that allows you to read data from a single copy, without moving or duplicating data.
 
-Think of it like OneDrive for data; OneLake combines storage locations across different regions and clouds into a single logical lake, without moving or duplicating data. Similar to how Office applications are prewired to use your organizational OneDrive, all the compute workloads in Fabric are preconfigured to work with OneLake. Fabric's data warehousing, data engineering (Lakehouses and Notebooks), data integration (pipelines and dataflows), real-time analytics, and Power BI all use OneLake as their native store without needing any extra configuration.
+Think of it like OneDrive for data; OneLake combines storage locations across different regions and clouds into a single logical lake, without moving or duplicating data. Similar to how Office applications are prewired to use your organizational OneDrive, all the compute workloads in Fabric are preconfigured to work with OneLake. Fabric's data warehousing, data engineering (Lakehouses and Notebooks), data integration (pipelines and dataflows), real-time intelligence, and Power BI all use OneLake as their native store without needing any extra configuration.
 
 ![Screenshot of the Fabric architecture built on OneLake.](../media/fabric-introduction.png)
 
@@ -25,7 +25,7 @@ Fabric offers a set of analytics experiences that are designed to accomplish spe
 - **Synapse Data Engineering**: data engineering with a Spark platform for data transformation at scale.
 - **Synapse Data Warehouse**: data warehousing with industry-leading SQL performance and scale to support data use.
 - **Synapse Data Science**: data science with Azure Machine Learning and Spark for model training and execution tracking in a scalable environment.
-- **Synapse Real-Time Analytics**: real-time analytics to query and analyze large volumes of data in real-time.
+- **Synapse Real-Time intelligence**: real-time intelligence to query and analyze large volumes of data in real-time.
 - **Data Factory**: data integration combining Power Query with the scale of Azure Data Factory to move and transform data.
 - **Power BI**: business intelligence for translating data to decisions.
 

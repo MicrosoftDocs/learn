@@ -1,4 +1,4 @@
-The API that you'll build in this module connects the front-end website to the backend database. But why not just connect the website directly to the database? Why do we need an API at all?
+The API that you build in this module connects the front-end website to the backend database. But why not just connect the website directly to the database? Why do we need an API at all?
 
 ## Why we need an API
 
@@ -8,10 +8,10 @@ By creating an API, we put a layer that we control between the website and the d
 
 Right now, these are the Product Manager application's parts:
 
-:::image type="content" source="../media/product-manager-parts.svg" alt-text="Diagram showing the Product Manager application and database with no api.":::
+:::image type="content" source="../media/product-manager-parts.svg" alt-text="Diagram showing the Product Manager application and database with no API.":::
 
-In this module, you'll build the layer that sits between the front end and the database, safely storing the connection string. This layer is the API. You'll be using Azure Functions, so it'll be serverless. This means that instead of paying for a full server or virtual machine, you deploy just your code and only pay when it's executed.
+In this module, you build the layer that sits between the front end and the database, safely storing the connection string. This layer is the API. You're using Azure Functions, so it's serverless. This means that instead of paying for a full server or virtual machine, you deploy just your code and only pay when it's executed.
 
-When you finish this module, you'll have created the API that allows the front end and the back end to safely communicate. The Product Manager Application will look like this:
+When you finish this module, you created the API that allows the front end and the back end to safely communicate. The Product Manager Application looks like this:
 
 :::image type="content" source="../media/product-manager-all-parts.svg" alt-text="Diagram displaying the parts of the application: web site, the API using Azure Functions, and the database with the products data":::

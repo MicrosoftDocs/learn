@@ -7,12 +7,11 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.prod: azure
-  ms.service: app-service
+  ms.service: azure-app-service
+  ai-usage: ai-assisted
 title: Configure Azure App Service
 summary: |
   Learn how to configure and monitor Azure App Service instances, including deployment slots.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   In this module, you learn how to:
   - Identify features and usage cases for Azure App Service.

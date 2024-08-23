@@ -4,10 +4,12 @@ metadata:
   moduleType: introduction
   title: Introduction to infrastructure as code using Bicep
   description: Learn how Bicep can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 10/05/2023
   author: mumian
   ms.author: jgao
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: bicep
 title: Introduction to infrastructure as code using Bicep
 summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Bicep and Azure Resource Manager, you can automate and simplify the provisioning of infrastructure resources.

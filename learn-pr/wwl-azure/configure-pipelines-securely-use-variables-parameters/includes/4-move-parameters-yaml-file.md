@@ -77,7 +77,7 @@ Try to run the pipeline. You should see the following error:
 
 ![Screenshot of Azure Pipelines showing the step rejected by raising a YAML syntax error unexpected value.](../media/secure-parameter-template.png)
 
-You can increase security by adding a [required template approval](https://learn.microsoft.com/azure/devops/pipelines/security/templates) when extending from a template.
+You can increase security by adding a [required template approval](/azure/devops/pipelines/security/templates) when extending from a template.
 
 ## Challenge yourself
 
@@ -85,6 +85,6 @@ Create a pipeline using parameters from a YAML template file that deploys a web 
 
 For more information about parameters and templates, see:
 
-- [Securing Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/overview/)
-- [Runtime parameters.](https://learn.microsoft.com/azure/devops/pipelines/process/runtime-parameters/)
-- [Template types & usage.](https://learn.microsoft.com/azure/devops/pipelines/process/templates)
+- [Securing Azure Pipelines.](/azure/devops/pipelines/security/overview/)
+- [Runtime parameters.](/azure/devops/pipelines/process/runtime-parameters/)
+- [Template types & usage.](/azure/devops/pipelines/process/templates)

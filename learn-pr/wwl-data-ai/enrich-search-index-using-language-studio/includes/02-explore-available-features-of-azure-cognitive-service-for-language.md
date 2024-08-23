@@ -1,9 +1,9 @@
 
-Here you'll explore the features Language Studio offers and then use the demo-like environment to test a preconfigured sentiment model. You'll then see the steps to create, train and deploy a custom model for conversational language understanding.
+Here you'll explore the features Azure AI Language offers and then use the demo-like environment to test a preconfigured sentiment model. You'll then see the steps to create, train and deploy a custom model for conversational language understanding.
 
-## Language Studio features
+## Azure AI Language features
 
-Language Studio groups its features into the following areas:
+Azure AI Language groups its features into the following areas:
 
 1. Classify text
 1. Understand questions and conversational language
@@ -58,7 +58,7 @@ The other features with **\*** and green cogs in their logo need user customizat
 
 You can see how the sentiment model has identified words that help it calculate an overall positive score. In the sample text, the model returns an **75% positive** result for the whole document.
 
-You can also drill down into individual sentences for more detail. Language Studio then gives you guidance for how to use the model in your own apps.
+You can also drill down into individual sentences for more detail. Azure AI Language then gives you guidance for how to use the model in your own apps.
 
 For example, you can get the same JSON response from the model by using this curl statement in your development environment:
 
@@ -68,7 +68,7 @@ curl -v -X POST "https://<YOUR_ENDPOINT_HERE>/language/:analyze-text?api-version
 
 ### Create, train, and deploy a conversation language understanding model
 
-Each of the customizable features in Language Studio needs different steps to create the models. In this example, you'll see how to create a conversation language understanding model.
+Each of the customizable features in Azure AI Language needs different steps to create the models. In this example, you'll see how to create a conversation language understanding model.
 
 Conversational language understanding aims to build a model that predicts intention from conversational text. For example, imagine an email app that you can chat with to send email messages or flag emails. You train the model on sentences like "please add a flag to that email" or "okay, ready to send". These sentences would be translated to intents for `flag email` and `send email`.
 
@@ -96,4 +96,4 @@ Language Studio guides you through the remaining steps. Follow the left navigati
 
 Whichever feature your use you end up with a model that you can use in apps to add language understanding.
 
-In the context of Azure Cognitive Search, these models can help us enrich our search indexes to create better search experiences. Or provide answers when users ask questions.
+In the context of Azure AI Search, these models can help us enrich our search indexes to create better search experiences. Or provide answers when users ask questions.

@@ -3,12 +3,11 @@ uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.restore-databa
 title: Restore databases for SAP HANA running on Azure VMs
 metadata:
   title: Restore databases for SAP HANA running on Azure VMs
-  description: "Restore databases for SAP HANA running on Azure VMs"
-  ms.date: 03/15/2021
+  description: "Restore databases for SAP HANA running on Azure Virtual Machines."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-restore-databases-for-sap-hana-running.md)]

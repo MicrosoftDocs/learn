@@ -5,7 +5,7 @@ In Microsoft Fabric, you can use a saved model and apply it to your data to gene
 The information about the model's expected inputs and outputs is stored in the model artifacts that are created during model training. While tracking your model with MLflow, you can change the model's expected behavior during batch scoring.
 
 > [!Tip]
-> Learn more about [training and tracking machine learning models with MLflow in Microsoft Fabric](https://learn.microsoft.com/training/modules/train-track-model-fabric/?azure-portal=true).
+> Learn more about [training and tracking machine learning models with MLflow in Microsoft Fabric](/training/modules/train-track-model-fabric/?azure-portal=true).
 
 ## Customize the model's behavior
 

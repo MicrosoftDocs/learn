@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.build-blazor-todo-list
+metadata:
+  title: Build a to-do list with Blazor
+  description: Learn how to build a to-do list with Blazor.
+  ms.date: 01/26/2024
+  author: danroth27
+  ms.author: daroth
+  ms.manager: markl
+  ms.topic: module
+  ms.service: aspnet-core
+  ms.subservice: blazor
+title: Build a to-do list with Blazor
+summary: Learn how to build a to-do list with Blazor.
+abstract: |
+  In this module, you will:
+  - Learn to handle events from components and set up two-way data bindings.
+  - Create a to-do list page.
+prerequisites: |
+  - Knowledge of what Blazor is and how it works at the beginner level
+  - Basic knowledge of web app concepts
+  - C# and .NET experience at the beginner level
+iconUrl: /training/achievements/build-your-first-blazor-web-app.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+- blazor
+- dotnet
+units:
+- learn.build-blazor-todo-list.introduction
+- learn.build-web-app-blazor-webassembly-vscode.6-csharp-razor-binding
+- learn.build-web-app-blazor-webassembly-vscode.7-exercise-razor-binding
+- learn.build-blazor-todo-list.knowledge-check
+- learn.build-blazor-todo-list.summary
+badge:
+  uid: learn.build-blazor-todo-list.badge

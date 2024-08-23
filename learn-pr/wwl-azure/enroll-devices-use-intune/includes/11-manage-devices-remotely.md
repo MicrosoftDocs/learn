@@ -1,5 +1,3 @@
-
-
 The Devices feature provides additional details into the devices you manage, including their hardware and the apps installed. To view all your devices, and their properties do the following:
 
 1.  Sign in to the **Microsoft Intune admin center**.
@@ -13,7 +11,7 @@ The **Overview** page is displayed by default. It shows the device name, and lis
      -  **Wipe**. Restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, all data, apps, and settings will be removed.
      -  **Delete**. Remove devices from the Intune portal. The next time the device checks in, any company data on it will be removed.
      -  **Remote lock (Android, iOS, macOS)**. Locks the device. To unlock the device, the device owner enters their passcode. Devices that don't have a PIN or password can't be remotely locked.
-     -  **Sync**. Forces the selected device to immediately check in with Intune and immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you've assigned, without waiting for the next scheduled check-in.
+     -  **Sync**. Forces the selected device to immediately check-in with Intune and immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you've assigned, without waiting for the next scheduled check-in.
      -  **Reset passcode (iOs/Android)**. A device level reset of the passcode for the entire device.
      -  **Restart**. Causes the device you choose to be restarted (within 5 minutes). The device owner isn't automatically notified of the restart, and they might lose work. Not supported for macOS or Android work profile devices.
      -  **Fresh Start (Windows 10 and later only)**. Removes any apps that are installed on a PC. Fresh Start helps remove preinstalled (OEM) apps that are typically installed with a new PC.

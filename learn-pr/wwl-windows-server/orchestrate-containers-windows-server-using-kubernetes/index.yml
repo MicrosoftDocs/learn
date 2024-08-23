@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.prod: windows-server 
+  ms.service: windows-server 
 title: Orchestrate containers on Windows Server using Kubernetes
 summary: Learn about Kubernetes, containers, container orchestration, and Kubernetes orchestration in Windows Server 2019. Also learn the process for deploying a Kubernetes cluster on Windows and describe how to use Azure Arc for Kubernetes.
 abstract: |
@@ -29,7 +29,7 @@ roles:
 products:
 - windows-server
 subjects:
-- container
+- containers
 units:
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.introduction
 - learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-orchestration

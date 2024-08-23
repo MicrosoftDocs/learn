@@ -1,11 +1,11 @@
 The previous step allowed you to think about a general idea that solves an identified problem that is close to you. This step allows you to refine your idea by generating a better idea definition and bring it as close to practicality as possible.
 
 ## Introducing your Idea
-Now, we need to introduce our idea to Bing Chat. Let's provide some general bullet points and ask Bing Chat to craft a better idea statement for us.
+Now, we need to introduce our idea to Microsoft Copilot. Let's provide some general bullet points and ask Microsoft Copilot to craft a better idea statement for us.
 
 ### Steps
 1. Copy the sample prompt provided and add your rough idea in bullet points.
-2. Paste it into Bing Chat
+2. Paste it into Microsoft Copilot
 
 _**Sample Prompt**_
 
@@ -18,14 +18,14 @@ I have an idea that I want to explicate for this ideation exercise as part of my
 
 _**Sample Response**_
 
-A sample response from Bing Chat.
+A sample response from Microsoft Copilot.
 
 ![Screenshot showing idea summary response.](../media/summary-response.png)
 
 ## Generate an Executive summary of your Idea
 ### Steps
 1. Copy the sample prompt provided and make any edits you want.
-2. Paste it into Bing Chat
+2. Paste it into Microsoft Copilot
 
 _**Sample Prompt**_
 
@@ -44,7 +44,7 @@ Description
 
 _**Sample Response**_
 
-A sample response from Bing Chat.
+A sample response from Microsoft Copilot.
 
 ![Screenshot showing idea summarized.](../media/idea-summarized.png)
 

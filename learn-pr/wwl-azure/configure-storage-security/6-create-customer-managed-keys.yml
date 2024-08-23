@@ -4,12 +4,12 @@ title: Create customer-managed keys
 metadata:
   title: Create customer-managed keys
   description: "Create customer-managed keys"
-  ms.date: 05/10/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-create-customer-managed-keys.md)]

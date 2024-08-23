@@ -4,10 +4,12 @@ title: Design for Azure Data Explorer
 metadata:
   title: Design for Azure Data Explorer
   description: "Design for Azure Data Explorer"
-  ms.date: 11/02/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-design-for-azure-data-explorer.md)]

@@ -14,17 +14,13 @@ Developed in collaboration with OpenAI, GitHub Copilot is powered by OpenAI Code
 
 GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, Vim/Neovim, and the JetBrains suite of integrated development environments (IDEs).
 
-## GitHub Copilot X
+## GitHub Copilot Features
 
-GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by autocompleting comments and code, but AI-powered autocompletion was just the starting point. GitHub Copilot X is the vision for the future of AI-powered software development adopting OpenAI's newest GPT-4 models.
-
-GitHub Copilot X extends past the editor and into a readily accessible AI assistant throughout the entire development lifecycle.
-
-Here are some features you can expect from GitHub Copilot X coming soon.
+GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by autocompleting comments and code, but AI-powered autocompletion was just the starting point. Here are some features of GitHub Copilot that truly makes it a developer tool of the future, surpassing just an editor and into a readily accessible AI assistant throughout the entire development lifecycle.
 
 ### A ChatGPT-like experience in your editor with GitHub Copilot Chat
 
-Copilot X brings a chat interface to the editor that’s focused on developer scenarios and natively integrates with VS Code and Visual Studio. It recognizes what code a developer has typed, what error messages are shown, and it’s deeply embedded into the IDE. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
+GitHub Copilot brings a chat interface to the editor that’s focused on developer scenarios and natively integrates with VS Code and Visual Studio. It recognizes what code a developer has typed, what error messages are shown, and it’s deeply embedded into the IDE. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
 
 ### Copilot for Pull Requests
 

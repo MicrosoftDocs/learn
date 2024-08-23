@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Connect commands into a pipeline
 summary: In this module, you'll learn how to connect commands into a pipeline. You'll also learn about _filtering left_, _formatting right_, and other important principles. 

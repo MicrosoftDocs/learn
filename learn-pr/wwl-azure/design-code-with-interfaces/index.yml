@@ -3,11 +3,11 @@ uid: learn.wwl.design-code-with-interfaces
 metadata:
   title: Design code with interfaces
   description: "In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code."
-  ms.date: 12/07/2023
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.prod: dotnet-csharp
+  ms.service: dotnet-csharp
 title: Design code with interfaces
 summary: In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code.
 abstract: |
@@ -23,6 +23,7 @@ prerequisites: |
   - Basic understanding of the C# programming language
   - Familiarity with classes, abstract classes, and inheritance
 iconUrl: /training/achievements/design-code-with-interfaces.svg
+hidden: true
 levels:
 - beginner
 roles:

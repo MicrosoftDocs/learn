@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operate-with-devops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What do continuous operations target in the context of operational excellence?"
+      choices:
+        - content: "Maximizing downtime for maintenance."
+          isCorrect: false
+          explanation: "Incorrect. The goal is to minimize or eliminate downtime."
+        - content: "Minimizing or eliminating the need for downtime."
+          isCorrect: true
+          explanation: "Correct. Continuous operations aim to create and maintain an environment where downtime is minimized or eliminated."
+        - content: "Minimizing the need for automation."
+          isCorrect: false
+          explanation: "Incorrect. Automation is a key aspect of operational excellence."
+    - content: "What is the shift-right approach in application lifecycle management?"
+      choices:
+        - content: "Testing performed in the production environment to fully examine the behavior of a workload following its deployment."
+          isCorrect: true
+          explanation: "Correct. Shift-right approach involves testing in production environment to fully examine the behavior of a workload following its deployment."
+        - content: "Testing performed only in quality assurance and staging environments."
+          isCorrect: false
+          explanation: "Incorrect. Shift-right approach involves testing in production environment."
+        - content: "Testing performed only in the development phase."
+          isCorrect: false
+          explanation: "Incorrect. Shift-right approach involves testing in production environment."
+    - content: "What is the purpose of performance monitoring in observability?"
+      choices:
+        - content: "To collect qualitative data about events."
+          isCorrect: false
+          explanation: "Incorrect. Qualitative data isn't the primary focus of performance monitoring in observability."
+        - content: "To provide insights into the financial status of systems and applications."
+          isCorrect: false
+          explanation: "Incorrect. Financial status isn't the primary focus of performance monitoring in observability."
+        - content: "To detect anomalies, performance bottlenecks, and performance-related issues as soon as they occur."
+          isCorrect: true
+          explanation: "Correct. Performance monitoring uses real-time telemetry to evaluate overall health of workloads and detect issues as soon as they occur."
+    - content: "What is the purpose of Security Information and Event Management (SIEM) solutions in security observability?"
+      choices:
+        - content: "To collect real-time telemetry data from a wide range of sources, automatically correlate them, and look for patterns to identify security-related events and vulnerabilities."
+          isCorrect: true
+          explanation: "Correct. SIEM solutions collect real-time telemetry data from various sources, correlate them, and use artificial intelligence and machine learning to identify security-related events and vulnerabilities."
+        - content: "To perform live site penetration tests and identify vulnerabilities in the target environment."
+          isCorrect: false
+          explanation: "Incorrect. This isn't a purpose of SIEM solutions."
+        - content: "To scan repo-hosted source code for security vulnerabilities and programming errors."
+          isCorrect: false
+          explanation: "Incorrect. This is a purpose of GitHub's Security Code Scanning, not SIEM solutions."
+    - content: "What is the purpose of error budgets in SRE?"
+      choices:
+        - content: "To reduce the cost of operations."
+          isCorrect: false
+          explanation: "Incorrect. Error budgets aren't meant to reduce the cost of operations."
+        - content: "To maximize reliability at all costs."
+          isCorrect: false
+          explanation: "Incorrect. Error budgets are meant to optimize, not maximize, reliability."
+        - content: "To find a balance between reliability, cost, and the pace of changes."
+          isCorrect: true
+          explanation: "Correct. Error budgets facilitate finding a balance between reliability, cost, and the pace of changes."

@@ -3,7 +3,7 @@ uid: learn.language.vue-data-events.4-event-handlers
 metadata:
   title: Work with events
   description: Events are raised when the user interacts with the page. See how to respond to events.
-  ms.date: 03/01/2021 
+  ms.date: 01/11/2023 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: unit

@@ -4,10 +4,12 @@ title: Exercise - Update your formatted output
 metadata:
   title: Exercise - Update your formatted output
   description: "Exercise - Update your formatted output"
-  ms.date: 11/29/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-update-output.md)]

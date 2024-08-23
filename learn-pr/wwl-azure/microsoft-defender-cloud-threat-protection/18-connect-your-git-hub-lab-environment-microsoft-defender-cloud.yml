@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.connect-your-git-hub-lab-environment-microsoft-defender-cloud
+title: Connect your GitHub lab environment to Microsoft Defender for Cloud
+metadata:
+  title: Connect your GitHub lab environment to Microsoft Defender for Cloud
+  description: "Connect your GitHub lab environment to Microsoft Defender for Cloud"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/18-connect-your-git-hub-lab-environment-microsoft-defender-cloud.md)]

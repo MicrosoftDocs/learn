@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.ai-powered-tools-for-teaching.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This module contains sample activities that demonstrate how to integrate AI-powered tools into your learning environment.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What is the main benefit of using Speaker Coach in Microsoft PowerPoint?"
+      choices:
+        - content: "It allows you to create slides in seconds."
+          isCorrect: false
+          explanation: "Incorrect. The main benefit is for Microsoft Designer, not Speaker Coach."
+        - content: "It gives you rehearsal feedback to improve your presentation skills."
+          isCorrect: true
+          explanation: "Correct. Speaker Coach provides feedback to improve your presentation skills."
+        - content: "It analyzes data and gives feedback to improve your presentation."
+          isCorrect: false
+          explanation: "Incorrect. Speaker coach doesn’t analyze data."
+    - content: "What is the main purpose of writing an interactive article with Microsoft Sway?"
+      choices:
+        - content: "To create interactive and visually appealing stories that can be shared online."
+          isCorrect: true
+          explanation: "Correct. AI enhances efficiency and productivity, not reduces them."
+        - content: "To refine writing pieces by checking documents for spelling, grammar, and punctuation."
+          isCorrect: false
+          explanation: "Incorrect. This example details the main functionality of Microsoft Editor."
+        - content: "To prepare a presentation and receive rehearsal feedback."
+          isCorrect: false
+          explanation: "Incorrect. This example is a main feature available in Speaker Coach."
+    - content: "How can you access the rehearsal report after using Speaker Coach?"
+      choices:
+        - content: "By clicking the 'Rehearse Again' button in the report."
+          isCorrect: false
+          explanation: "Incorrect. This step only allows you to redo the practice, but not to access the report."
+        - content: "By double-clicking the screen to stop the recording."
+          isCorrect: true
+          explanation: "Correct. This triggers the preview of rehearsal report, as stated in the context."
+        - content: "By selecting 'Rehearse with Coach' from the 'Rehearse' group."
+          isCorrect: false
+          explanation: "Incorrect. This step of selecting 'Rehearse with Coach' only starts the rehearsal, it doesn’t access the report."

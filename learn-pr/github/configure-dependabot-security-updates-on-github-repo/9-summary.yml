@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependabot-security-updates-on-github-repo.summary
+title: Summary
+metadata:
+  unitType: summary 
+  title: Summary
+  description: The goal of this module was to explain how you can use GitHub Dependabot to help manage your dependencies and identify vulnerabilities that can affect the security of your project.
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

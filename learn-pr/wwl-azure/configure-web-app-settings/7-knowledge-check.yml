@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/08/2024
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In which of the following app configuration settings categories would you set the language and SDK version?"
+  - content: "In which of the following app configuration settings categories would you set the stack and SDK version?"
     choices:
     - content: "Application settings"
       isCorrect: false

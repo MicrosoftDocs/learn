@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.developing-in-wsl.setting-up-windows-subsystem-linux
+title: Setting up WSL
+metadata:
+  title: Setting up WSL
+  description: "Learn how to install the Windows Subsystem for Linux on your Windows machine."
+  ms.date: 11/28/2023
+  author: gwynethp
+  ms.author: gwynethp
+  ms.topic: unit
+  ms.custom: devx-track-python, linux-related-content
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-setting-up-windows-subsystem-linux.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-azure-key-vault
+title: Configure key rotation
+metadata:
+  title: Configure key rotation
+  description: "Configure key rotation"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/13-configure-cryptographic-key-auto-rotation-azure-key-vault.md)]

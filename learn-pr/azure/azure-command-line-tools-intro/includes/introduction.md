@@ -7,8 +7,8 @@ your previous team manually created the resources by using the Azure portal, the
 standardization and were time consuming to create.
 
 Your first task in your new role as a DevOps engineer is to automate the provisioning of each new
-franchise's Azure resources. You want to learn what the possibilities are for automation tools and
-evaluate each of them.
+franchise's Azure resources. You want to learn the possibilities for automation tools and evaluate
+each of them.
 
 As a proof of concept, you decide to summarize your findings and provide sample code for each
 offering so others on your new team can assist with the decision. The choice of automation tools to

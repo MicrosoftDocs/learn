@@ -19,8 +19,6 @@ roles:
 - developer
 products:
 - azure-cosmos-db
-subjects:
-- development-tools
 modules:
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api

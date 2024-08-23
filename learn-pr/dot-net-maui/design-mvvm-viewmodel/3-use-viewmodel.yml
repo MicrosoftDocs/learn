@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.use-a-viewmodel
+title: Use a viewmodel
+metadata:
+  title: Use a viewmodel
+  description: Use a viewmodel to format, convert, or enrich data as needed by the view.
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-use-viewmodel.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "When using the MVVM pattern with .NET MAUI, your model, view, and viewmodel aren't completely decoupled from each other. Which choice describes one common dependency between the MVVM pieces?"
+      choices:
+      - content: "The viewmodel has direct knowledge of the model."
+        isCorrect: true
+        explanation: "Correct. The viewmodel can access properties and methods on the model directly."
+      - content: "The model has direct knowledge of the viewmodel."
+        isCorrect: false
+        explanation: "Incorrect. The model has no awareness of the platform or viewmodel."
+      - content: "The viewmodel has direct knowledge of the view."
+        isCorrect: false
+        explanation: "Incorrect. The viewmodel just exposes properties. It's up to the view to access and bind to these properties."
+    - content: "Which is mostly likely to be tightly coupled to the platform and difficult to create unit tests for: the model, the view, or the viewmodel?"
+      choices:
+      - content: "The view"
+        isCorrect: true
+        explanation: "Correct. In .NET MAUI, the view is primarily implemented by XAML, but it's difficult to unit test, even if coded."
+      - content: "The model"
+        isCorrect: false
+        explanation: "Incorrect. The model should be just business logic classes and not be coupled to the platform, view, or viewmodel."
+      - content: "The viewmodel"
+        isCorrect: false
+        explanation: "Incorrect. The viewmodel exposes properties that can be consumed by the view. But it shouldn't be tightly coupled to the platform."

@@ -2,20 +2,26 @@
 uid: learn.wwl.use-css-styles
 metadata:
   title: Use CSS styles in a webpage
-  description: "Use CSS styles in a webpage"
-  ms.date: 04/21/2023
+  description: "Discover how to use CSS styles in a webpage."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: vs-code
+  ai-usage: human-only
 title: Use CSS styles in a webpage
 summary: Demonstrates how to apply formatting to basic HTML by using styles and Cascading Style Sheets.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain how Cascading Style Sheets work
-  - Create inline styles for basic HTML
-  - Use selectors in CSS
-prerequisites: |
-  Basic knowledge of computer terminology.
+
+  -   Explain how Cascading Style Sheets work
+
+  -   Create inline styles for basic HTML
+
+  -   Use selectors in CSS
+prerequisites: Basic knowledge of computer terminology.
 iconUrl: /training/achievements/use-css-styles.svg
 levels:
 - beginner
@@ -25,7 +31,7 @@ roles:
 - k-12-educator
 - student
 products:
-- industry-solutions
+- vs-code
 subjects:
 - cloud-computing
 units:

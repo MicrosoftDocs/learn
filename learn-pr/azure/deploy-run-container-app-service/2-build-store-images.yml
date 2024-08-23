@@ -4,7 +4,7 @@ title: Build and store images by using Azure Container Registry
 metadata:
   title: Build and store images by using Azure Container Registry
   description: Summarize the advantages of storing a Docker image by using Azure Container Registry.
-  ms.date: 03/28/2019
+  ms.date: 04/27/2023
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

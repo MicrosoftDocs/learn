@@ -8,10 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
-  ms.custom:
-    - team=nextgen
-    - devdivchpfy22
-    - devx-track-python
+  ms.custom: team=nextgen, devdivchpfy22, devx-track-python, linux-related-content
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |

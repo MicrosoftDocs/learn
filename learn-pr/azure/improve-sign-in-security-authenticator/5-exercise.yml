@@ -3,9 +3,9 @@ uid: learn.improve-sign-in-security-authenticator.exercise.practice-user-sign-in
 title: Try the user sign-in experience
 metadata:
   unitType: exercise
-  title: exercise
+  title: Try the user sign-in experience
   description: "Confirm the test user can set up Microsoft Authenticator and have push notifications as the new default sign-in method. After confirming the experience for a test user, apply the policy to the remote employees group for your company."
-  ms.date: 7/27/2022
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
   ms.topic: unit

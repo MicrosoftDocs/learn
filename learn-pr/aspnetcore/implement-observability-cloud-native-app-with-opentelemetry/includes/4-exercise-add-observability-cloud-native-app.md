@@ -8,32 +8,20 @@ To use a codespace, create a preconfigured GitHub codespace with this [Codespace
 
 This step takes several minutes while GitHub creates and configures the codespace. After the process is finished, you see the code files for the exercise. The code used for the rest of this module is in the */dotnet-observability* directory.
 
-To use Visual Studio Code:
+To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Make sure Docker is running. In a new Visual Studio Code window, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
-1. Select your forked repository. Visual Studio Code creates your development container locally.
-
-Follow these steps to create and run Docker containers in the codespace.
-
-1. When the setup is complete, within the *dotnet-observability* directory, open the file named *docker-compose.yml*.
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
-
-1. Paste this URL into the `ImagePrefix` environment variable in the *docker-compose.yml* file, replacing the text `http://localhost`.
-1. Append `images` to the pasted text:
-
-    ```docker-compose
-    environment: 
-      - ProductEndpoint=http://backend:8080
-      - ImagePrefix=https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-    ```
-
+1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running. 
+1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Select **eShopLite - dotnet-observability** from the drop down. Visual Studio Code creates your development container locally.
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
 
 1. In the Visual Studio Code command palette, enter **>.NET: Open Solution**.
-1. Select **dotnet-observability/eShopLite/eShopLite.snl**.
+1. Select **dotnet-observability/eShopLite/eShopLite.sln**.
 1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
 1. In the **Name** field, enter **Diagnostics**.
@@ -185,28 +173,18 @@ With the OpenTelemetry packages added, you now introduce the code to make use of
 
 ### Update Docker settings and run the app
 
-1. On the **EXPLORER** pane, in the *Products* folder, select the *Dockerfile* file.
-
-1. At line 9, add this code to copy the **Diagnostics** project into the container:
-
-    ```dockerfile
-    WORKDIR /Diagnostics
-    COPY "eShopLite/Diagnostics/Diagnostics.csproj" .
-    RUN dotnet restore
-    COPY "eShopLite/Diagnostics" .
-    RUN dotnet publish -c release -o /app
-    ```
-
 1. On the **TERMINAL** pane, go to the root of the *dotnet-observability* folder:
 
     ```bash
-    cd ../..
+    cd ..
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
 1. Run these Docker commands:
 
     ```docker
-    docker-compose up --build
+    cd /workspaces/mslearn-dotnet-cloudnative/dotnet-observability/
+    docker compose up 
     ```
 
     The back-end (**Products** service) and front-end (**Store** service) containers should build. Then the app starts.
@@ -228,5 +206,7 @@ With the OpenTelemetry packages added, you now introduce the code to make use of
     backend-1   | (2023-11-09T19:55:14.8933518Z, 2023-11-09T20:04:44.8596671Z] http.request.method: PUT http.response.status_code: 200 http.route: /api/Stock/{id} network.protocol.name: http network.protocol.version: 1.1 url.scheme: http Histogram      
     backend-1   | Value: Sum: 0.05144170000000001 Count: 4 Min: 0.0039736 Max: 0.0359739
     ```
+
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 You successfully added OpenTelemetry to the **Products** service. In the next unit, you'll see how to make better use of the telemetry data by viewing it on tools like Prometheus and Grafana.

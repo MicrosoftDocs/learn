@@ -4,10 +4,10 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: This is a summary unit.
-  ms.date: 5/6/2021
-  author: rmcmurray
-  ms.author: robmcm
+  description: Summarizes what you learned in the module.
+  ms.date: 08/06/2024
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: unit
 durationInMinutes: 2
 content: |

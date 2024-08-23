@@ -1,24 +1,24 @@
 ## Kubernetes Event-driven Autoscaling
 
-KEDA is a Kubernetes event-driven autoscaler. It's an open source, CNCF solution, lightweight component that simplifies application autoscaling. You can add KEDA to any Kubernetes cluster and use it alongside standard Kubernetes components, like the Horizontal Pod Autoscaler (HPA) or Cluster Autoscaler, to extend their functionality. With KEDA, you can target specific apps that you want to leverage event-driven scaling, and allow other apps to use different scaling methods. KEDA is a flexible and safe option to run alongside any number of Kubernetes applications or frameworks.
+Kubernetes Event-driven Autoscaling (KEDA) is a single-purpose and lightweight component that simplifies application autoscaling. You can add KEDA to any Kubernetes cluster and use it alongside standard Kubernetes components, like the Horizontal Pod Autoscaler (HPA) or Cluster Autoscaler, to extend their functionality. With KEDA, you can target specific apps that you want to leverage event-driven scaling and allow other apps to use different scaling methods. KEDA is a flexible and safe option to run alongside any number of Kubernetes applications or frameworks.
 
 ### Key capabilities and features
 
-* Build sustainable and cost-efficient applications with scale-to-zero capabilities.
-* Scale application workloads to meet demand using KEDA scalers.
-* Autoscale applications with `ScaledObjects`.
-* Autoscale jobs with `ScaledJobs`.
-* Use production-grade security by decoupling autoscaling and authentication from worklaods.
-* Bring-your-own external scaler to use tailor-made autoscaling configurations.
+* Build sustainable and cost-efficient applications with scale-to-zero capabilities
+* Scale application workloads to meet demand using KEDA scalers
+* Autoscale applications with `ScaledObjects`
+* Autoscale jobs with `ScaledJobs`
+* Use production-grade security by decoupling autoscaling and authentication from workloads
+* Bring-your-own external scaler to use tailor-made autoscaling configurations
 
 ## Architecture
 
 KEDA provides two main components:
 
-* The **KEDA operator** allows end-users to scale workloads in or out from *zero to N* instances with support for Kubernetes Deployments, Jobs, StatefulSets, or any customer resource that defines a `/scale` subresource.
-* The **metrics server** exposes external metrics to the HPA, such as messages in a Kafka topic or events in an Azure Event Hub, to drive autoscaling actions. Due to upstream limitations, the KEDA metrics server must be the only installed metrics adapter in the cluster.
+* **KEDA operator**: Allows end users to scale workloads in or out from *zero to N* instances with support for Kubernetes Deployments, Jobs, StatefulSets, or any customer resource that defines a `/scale` subresource.
+* **Metrics server**: Exposes external metrics to the HPA, such as messages in a Kafka topic or events in Azure Event Hubs, to drive autoscaling actions. Due to upstream limitations, the KEDA metrics server must be the only installed metrics adapter in the cluster.
 
-The diagram below shows how KEDA integrates with the Kubernetes HPA, external event sources, and Kubernetes API Server to provide autoscaling functionality:
+The following diagram shows how KEDA integrates with the Kubernetes HPA, external event sources, and Kubernetes API Server to provide autoscaling functionality:
 
 :::image type="content" source="../media/2-1-keda-architecture.png" alt-text="A diagram that depicts the KEDA architecture in Kubernetes.":::
 
@@ -64,7 +64,7 @@ spec:
 
 ### Scaled job spec
 
-As an alternative to scaling event-driven code as Deployments, you can also run and scale your code as a Kubernetes Job. The primary reason to consider this option is if you need to process long running executions. Rather than processing multiple events within a Deployment, each detected event schedules its own Kubernetes Job. This approach allows you to process each event in isolation and scale the number of concurrent executions based on the number of events in the queue.
+As an alternative to scaling event-driven code as Deployments, you can also run and scale your code as a Kubernetes Job. The primary reason to consider this option is if you need to process long-running executions. Rather than processing multiple events within a Deployment, each detected event schedules its own Kubernetes Job. This approach allows you to process each event in isolation and scale the number of concurrent executions based on the number of events in the queue.
 
 ```yaml
 apiVersion: keda.sh/v1alpha1

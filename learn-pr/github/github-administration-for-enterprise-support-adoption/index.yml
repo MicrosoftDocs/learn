@@ -3,17 +3,17 @@ uid: learn.github-administration-for-enterprise-support-adoption
 metadata:
   title: GitHub administration for enterprise support and adoption
   description: Learn how GitHub Enterprise can make your administrative duties easier.
-  ms.date: 10/08/2021
+  ms.date: 03/11/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
   ms.service: github
 title: GitHub administration for enterprise support and adoption
-summary: In this module, you'll learn about some fundamental features and best practices that can improve the administrative operations of your GitHub Enterprise. 
+summary: In this module, you learn about some fundamental features and best practices that can improve the administrative operations of your GitHub Enterprise. 
 
 abstract: |
-  By the end of this module, you'll be able to:
-  - Set up authentication with SAML single sign-on and a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
+  By the end of this module, you're able to:
+  - Set up authentication with Security Assertion Markup Language (SAML) single sign-on and a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
   - Automate security and version updates for your project's dependencies, as well as administrative duties and user interactions with GitHub.
   - Identify when to open a ticket with GitHub Enterprise Support to resolve issues.
   - Recognize the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed User accounts (EMUs).

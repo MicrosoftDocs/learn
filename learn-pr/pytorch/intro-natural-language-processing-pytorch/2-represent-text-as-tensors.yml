@@ -5,10 +5,10 @@ metadata:
   title: Representing text as Tensors
   description: In this unit, we discuss different ways text can be represented as tensors, and we show how to solve simplest text classification problem.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
+  ms.author: chnoring
+  ms.date: 07/30/2024
   ms.topic: unit
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/2-represent-text-as-tensors.ipynb

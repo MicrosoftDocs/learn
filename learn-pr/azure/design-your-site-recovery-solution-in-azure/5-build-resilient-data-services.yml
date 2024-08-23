@@ -4,7 +4,7 @@ title: Build resilient data services
 metadata:
   title: Build resilient data services
   description: Build resilient data services.
-  ms.date: 05/10/2023
+  ms.date: 04/15/2024
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit
@@ -18,21 +18,21 @@ quiz:
     choices:
     - content: Use Azure SQL Database and use active geo-replication to replicate to another region.
       isCorrect: true
-      explanation: Active geo-replication would enable you to have readable secondaries in another region.
+      explanation: Correct. Active geo-replication would enable you to have readable secondaries in another region.
     - content: Use SQL Server virtual machines and use Azure Site Recovery to recover them in another region.
       isCorrect: false
-      explanation: You wouldn't be able to read from the replica because it doesn't exist until a failover happens.
-    - content: Use SQL Server virtual machines and use Azure Backup to back data up to another region.
+      explanation: Incorrect. You wouldn't be able to read from the replica because it doesn't exist until a failover happens.
+    - content: Use SQL Server virtual machines and use Azure Backup to back up data to another region.
       isCorrect: false
-      explanation: Your data wouldn't be accessible for reads, and it wouldn't have any secondary databases until you restored them by using the backed-up data.
+      explanation: Incorrect. Your data wouldn't be accessible for reads, and it wouldn't have any secondary databases until you restored them by using the backed-up data.
   - content: What are some benefits of moving your data workloads to Azure Cosmos DB now that your online store is moving to multiple regions?
     choices:
     - content: You can perform row-level security, with low latency on your data in another region.
       isCorrect: false
-      explanation: Azure Cosmos DB doesn't support row-level security.
+      explanation: Incorrect. Azure Cosmos DB doesn't support row-level security.
     - content: You can have up to 500 databases, with low latency access in another region.
       isCorrect: false
-      explanation: Azure Cosmos DB gives you unlimited databases.
+      explanation: Incorrect. Azure Cosmos DB gives you unlimited databases.
     - content: You can have read access to your data, with low latency in another region.
       isCorrect: true
-      explanation: You can let your clients access the other region for reads, which gives you the ability to spread usage across multiple regions.
+      explanation: Correct. You can let your clients access the other region for reads, which gives you the ability to spread usage across multiple regions.

@@ -4,11 +4,10 @@ title: Create a custom namespace for Azure Kubernetes clusters
 metadata:
   title: Create a custom namespace for Azure Kubernetes clusters
   description: "Create a custom namespace for Azure Kubernetes clusters"
-  ms.date: 11/14/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: module
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/6-create-custom-namespace.md)]

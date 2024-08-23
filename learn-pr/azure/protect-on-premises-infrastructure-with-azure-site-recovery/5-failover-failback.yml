@@ -3,7 +3,7 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.5-failove
 metadata:
   title: Failover and failback
   description: Explore the differences between failover and failback, and how you get a failback policy created automatically after you've set up a replication policy to Azure.
-  ms.date: 08/01/2019
+  ms.date: 05/25/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

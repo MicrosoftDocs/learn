@@ -6,7 +6,7 @@ metadata:
   ms.date: 12/22/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: sql
   ms.subservice: t-sql
   ms.devlang: tsql
@@ -39,7 +39,7 @@ products:
 - sql-server
 subjects:
 - data-analytics
-- database
+- databases
 units:
 - learn.wwl.get-started-transact-sql-programming.introduction
 - learn.wwl.get-started-transact-sql-programming.describe-t-sql-for-programming

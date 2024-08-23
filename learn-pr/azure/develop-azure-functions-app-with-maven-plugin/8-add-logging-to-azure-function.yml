@@ -4,7 +4,7 @@ title: Add logging and monitor an Azure Function in the portal
 metadata:
   title: Add logging and monitor an Azure Function in the portal
   description: Learn about a few of the different logging and monitoring options that are available in Azure.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

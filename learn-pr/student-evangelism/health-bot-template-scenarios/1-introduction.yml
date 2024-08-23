@@ -6,7 +6,7 @@ metadata:
   description: In this module, you'll use the triage and handoff scenario template to build a health bot that extends the built-in symptom checker and transitions the conversation to a live nurse.
   author: sfoteini
   ms.author: chnoring
-  ms.date: 07/27/2021
+  ms.date: 03/13/2023
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2

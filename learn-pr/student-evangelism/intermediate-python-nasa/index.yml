@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/14/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc
   ms.devlang: python
 title: Code control statements in Python
@@ -32,8 +32,6 @@ roles:
 - data-scientist
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.intermediate-python-nasa.1-introduction
 - learn.student-evangelism.intermediate-python-nasa.2-conditions

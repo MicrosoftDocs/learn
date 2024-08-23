@@ -27,6 +27,7 @@ Let's see an example of a normal distributed feature. The code below generates t
 ```Python
 import seaborn as sns
 import numpy as np
+​import matplotlib.pyplot as plt
 
 # Set the mean and standard deviation
 mu, sigma = 0, 0.1 

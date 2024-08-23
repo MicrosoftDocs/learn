@@ -32,7 +32,7 @@ The Hyper-V hypervisor takes full control of the hardware virtualization capabil
 An operating system that runs in a VM is referred to as a *guest operating system*. Hyper-V in Windows Server supports the following guest operating systems:
 
 - All supported Windows versions
-- These Linux editions: CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu
+- These Linux editions: Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu
 - FreeBSD
 
 > [!IMPORTANT]

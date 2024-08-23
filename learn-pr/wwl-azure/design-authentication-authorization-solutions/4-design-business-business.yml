@@ -4,12 +4,12 @@ title: Design for Microsoft Entra business-to-business (B2B)
 metadata:
   title: Design for Microsoft Entra business-to-business (B2B)
   description: "Design for Microsoft Entra business-to-business (B2B)"
-  ms.date: 03/24/2023
+  ms.date: 03/06/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-design-business-business.md)]

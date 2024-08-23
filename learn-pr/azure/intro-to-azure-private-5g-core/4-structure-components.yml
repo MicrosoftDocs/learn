@@ -4,9 +4,9 @@ title: Structure and components
 metadata:
   title: Structure and components
   description: "Explains how Azure Private 5G Core works by describing its structure and listing its key components."
-  ms.date: 10/10/2022
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 05/16/2024
+  author: lnyswonger
+  ms.author: joemarshall
   ms.topic: unit
 durationInMinutes: 10
 content: |

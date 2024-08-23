@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/01/2021
+  ms.date: 05/29/2024
   author: garvct
   ms.author: cogarvey
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You're using the Linux uptime tool to verify that the correct number of parallel processes and threads are running. What's the expected load average for this application on each VM?
+  - content: You're using the Linux uptime tool to verify that the correct number of parallel processes and threads are running. What's the expected load average for this application on each virtual machine (VM)?
     choices:
     - content: "30"
       isCorrect: false

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.security-copilot-embedded-experiences
+metadata:
+  title: Describe the embedded experiences of Microsoft Copilot for Security
+  description: Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 03/12/2024
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Describe the embedded experiences of Microsoft Copilot for Security
+summary: |
+  Microsoft Copilot for Security is accessible directly from some Microsoft security products. This is referred to as the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe Microsoft Copilot in Microsoft Defender XDR.
+  - Describe Microsoft Copilot in Microsoft Purview.
+  - Describe Microsoft Copilot in Microsoft Entra.
+  - Describe Microsoft Copilot in Microsoft Intune.
+  - Describe Microsoft Copilot in Microsoft Defender for Cloud.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/security-copilot-embedded-experiences.svg
+hidden: false
+levels: 
+  - beginner
+roles: 
+  - security-engineer
+  - security-operations-analyst
+  - business-owner
+products:
+  - ms-copilot
+  - defender-xdr
+  - microsoft-purview
+subjects:
+  - security
+units:
+- learn.security-copilot-embedded-experiences.introduction
+- learn.security-copilot-embedded-experiences.copilot-for-defender
+- learn.security-copilot-embedded-experiences.copilot-for-purview
+- learn.security-copilot-embedded-experiences.copilot-for-entra
+- learn.security-copilot-embedded-experiences.copilot-for-intune
+- learn.security-copilot-embedded-experiences.copilot-for-defender-cloud
+- learn.security-copilot-embedded-experiences.knowledge-check
+- learn.security-copilot-embedded-experiences.summary
+badge:
+  uid: learn.security-copilot-embedded-experiences.badge

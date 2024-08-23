@@ -51,25 +51,22 @@ You can manually add new users through the Azure portal. This is the easiest way
 
 ### Use the command line
 
-If you have a lot of users to add, a better option is to use a command-line tool. You can run the `New-AzureADUser` Azure PowerShell command to add cloud-based users.
+If you have a lot of users to add, a better option is to use a command-line tool. You can run the [New-MgUser](/powershell/module/microsoft.graph.users/new-mguser) PowerShell command to add cloud-based users.
 
 ```powershell
-# Create a password object
-$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-
-# Assign the password
-$PasswordProfile.Password = "<Password>"
+# Create a password profile value
+$PasswordProfile = @{ Password = "<Password>" }
 
 # Create the new user
-New-AzureADUser -AccountEnabled $True -DisplayName "Abby Brown" -PasswordProfile $PasswordProfile -MailNickName "AbbyB" -UserPrincipalName "AbbyB@contoso.com"
+New-MgUser -DisplayName "Abby Brown" -PasswordProfile $PasswordProfile -MailNickName "AbbyB" -UserPrincipalName "AbbyB@contoso.com" -AccountEnabled 
 ```
 
 The command will return the new user object you created.
 
 ```output
-ObjectId                             DisplayName UserPrincipalName UserType
---------                             ----------- ----------------- --------
-f36634c8-8a93-4909-9248-0845548bc515 Abby Brown  AbbyB@contoso.com Member
+DisplayName Id                                    UserPrincipalName
+----------- --                                    -----------------
+Abby Brown  f36634c8-8a93-4909-9248-0845548bc515  AbbyB@contoso.com
 ```
 
 If you prefer a more standard command-line interface, you can use the Azure CLI:
@@ -92,7 +89,7 @@ If you're planning to use a CSV, here are some things to think about:
 
 To use a CSV with Azure PowerShell:
 
-1. Run the `Connect-AzureAD` command to create an Azure PowerShell connection to your directory. Connect with an admin account that has privileges on your directory.
+1. Run the [Connect-MgGraph](/powershell/microsoftgraph/authentication-commands#using-connect-mggraph) command to create a PowerShell connection to your directory. Connect with an admin account that has privileges on your directory.
 
 1. Create new password profiles for the new users. The passwords for the new users need to conform to the password-complexity rules you have set for your directory.
 
@@ -100,7 +97,7 @@ To use a CSV with Azure PowerShell:
 
 1. Loop through the users in the file, constructing the user parameters needed for each user. Example parameters are User Principal Name, Display Name, Given Name, Department, and Job Title.
 
-1. Run the `New-AzureADUser` command to create each user. Be sure to enable each account.
+1. Run the `New-MgUser` command to create each user. Be sure to enable each account.
 
 ### Other options
 

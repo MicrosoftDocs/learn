@@ -1,4 +1,4 @@
-## How to Use Ideation to Solve Problems and Challenges
+## Ideation for Problem Solving
 Ideation is a Design Thinking stage that aims to produce ideas that are innovative, practical, and, most importantly, solves a problem among a defined user audience. These ideas in turn inspire the design of new or better solutions/projects/products. The goal is to not only have a solution at the end of this challenge, but it is to think beyond obvious solutions by exploring areas of innovation to increase the innovative potential of your idea.
 
 The exercises in this module mark the beginning of an exciting journey as you step into a new role of an **Innovator/Problem Solver**. Take on the challenge of identifying problems and creating new products or services that can help solve these issues.
@@ -9,7 +9,7 @@ But you won't do this challenge alone. **Co-create this vision with AI**, and to
 
 We structured this challenge to help you explore possibilities to come up with AI-optimized ideas that offer an AI-Experience for users.
 
-The goal of this module is to create a PowerPoint Slide to communicate your idea, cocreated with AI. Use the slide template that has been provided to you, and with each step of the challenge, you'll fill a respective part on the Deck to finish your Deck for your idea.
+The goal of this module is to create a PowerPoint Slide to communicate your idea, co-created with AI. Use the slide template that has been provided to you, and with each step of the challenge, you'll fill the respective section on the Deck to generate a complete idea.
 
 ## The Deck
 

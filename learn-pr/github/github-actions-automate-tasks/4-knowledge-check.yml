@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 05/19/2020
+  ms.date: 10/06/2023
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
@@ -27,19 +27,19 @@ quiz:
       explanation: "GitHub Actions can integrate infrastructure as code within your project's context, but they can also facilitate CI/CD and integrate IaC."
     - content: "All of these functions."
       isCorrect: true
-      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD and integrate IaC."
+      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD, and integrate IaC."
   - content: "What are the three types of GitHub actions?"
     choices:
-    - content: "Container actions, JavaScript actions and composite actions"
+    - content: "Container actions, JavaScript actions, and composite actions"
       isCorrect: true
       explanation: "With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
-    - content: "Embedded actions, composite actions and container actions"
+    - content: "Embedded actions, composite actions, and container actions"
       isCorrect: false
-      explanation: "Container actions, JavaScript actions and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
-    - content: "Workflows, triggers and composite actions"
+      explanation: "Container actions, JavaScript actions, and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
+    - content: "Workflows, triggers, and composite actions"
       isCorrect: false
-      explanation: "Container actions, JavaScript actions and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
-  - content: "Which of the following actions could *not* be used as an event trigger ```(runs_on)```?" 
+      explanation: "Container actions, JavaScript actions, and composite actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code. Composite actions allow you to combine multiple workflow steps within one action."
+  - content: "Which of the following actions could *not* be used as an event trigger ```(on:)```?" 
     choices:
     - content: "Making a commit"
       isCorrect: false

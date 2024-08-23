@@ -28,9 +28,12 @@ Set-AzLoadBalancer -LoadBalancer $lb
 
 To add session persistence through the Azure portal:
 
-1. In the Azure portal, open the Load Balancer resource.
-1. Edit the relevant line of the **Load-balancing rules**.
-1. Change the value for **Session persistence** to **Client IP**.
+1. In the Azure portal, select your Load Balancer resource.
+1. In the **Load balancing rules** page under the *Settings* pane, select the relevant load balancing rule.
+
+    :::image type="content" source="../media/3-load-balancer-rules.png" alt-text="Screenshot showing how to select a load balancing rule in the Azure portal.":::
+
+1. In the *load balancing rule settings* page change the value for **Session persistence** from **None** to **Client IP**.
 
 :::image type="content" source="../media/3-screenshot-session-persistence.png" alt-text="Screenshot showing how to set IP affinity in the Azure portal." :::
 

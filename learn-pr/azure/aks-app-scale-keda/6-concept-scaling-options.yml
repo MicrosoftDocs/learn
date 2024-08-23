@@ -3,7 +3,7 @@ uid: learn.aks-app-scaling-keda.6-concept-scaling-options
 metadata:
   title: Kubernetes scaling options
   description: Learn about the different scaling options for Kubernetes.
-  ms.date: 11/07/2023 
+  ms.date: 06/03/2024 
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit

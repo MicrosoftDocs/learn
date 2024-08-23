@@ -33,7 +33,7 @@ products:
 - azure-sql-managed-instance
 - azure-sql-database
 subjects:
-- database
+- databases
 units:
 - learn.azure-sql-deploy-configure.1-introduction
 - learn.azure-sql-deploy-configure.2-plan-deploy-verify

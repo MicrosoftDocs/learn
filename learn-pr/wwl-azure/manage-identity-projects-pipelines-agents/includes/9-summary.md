@@ -10,9 +10,9 @@ You learned how to:
 
 ## Learn more
 
-- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
-- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
-- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
-- [Manage service connections.](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints/)
-- [Use Microsoft Entra service principals & managed identities.](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity/)
-- [Connect to Microsoft Azure.](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure/)
+- [Azure Pipelines agents.](/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues/)
+- [Manage service connections.](/azure/devops/pipelines/library/service-endpoints/)
+- [Use Microsoft Entra service principals & managed identities.](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity/)
+- [Connect to Microsoft Azure.](/azure/devops/pipelines/library/connect-to-azure/)

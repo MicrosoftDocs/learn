@@ -1,8 +1,11 @@
-In this module, you have learned about generative AI, a branch of artificial intelligence that creates new content based on natural language input. Generative AI is typically built into software applications and uses language models trained with huge volumes of textual data to generate human-like natural language responses or even original images. You have also learned about the core concepts related to large language models and how generative AI is being integrated into Microsoft technologies with copilots.
+Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. This module explored how language models power generative AI and how copilot brings generative AI capabilities to your desktop. You learned the basics of Large Language Models (LLMs) and Small Language Models (SLMs), and the underlying transformer architecture of advanced language models.
 
-The main takeaways from this module are that generative AI has the potential to revolutionize the way we work by assisting with first drafts, information synthesis, and strategic planning. Copilots, which are AI-powered assistants based on large language models, can be customized for various business-specific applications and services. The quality of responses that a generative AI application returns not only depends on the model itself but also on the types of prompts it's given. Prompt engineering is the process of improving prompts to produce better results.
+The main takeaways from this module include understanding the role of generative AI in creating AI assistants or copilots that provide contextualized support for common tasks. Often, generative AI is integrated into chat applications like Microsoft Copilot to interpret natural language inputs and generate suitable responses. You learned about the three levels of copilot adoption and the various applications of Microsoft Copilot across different Microsoft applications. The module also highlighted the importance of improving the quality of responses from generative AI. Finally, you have been introduced to two tools offered by Microsoft for customizing or developing custom copilots: Copilot Studio and Azure AI Studio.
 
 More reading:
-- [Microsoft AI Hub](/ai/)
-- [Azure OpenAI documentation](/azure/ai-services/openai/overview)
-- [Learn how to develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/)
+- [Use Microsoft Copilot](https://copilot.microsoft.com/)
+- [Learn about Copilot for Microsoft 365](https://adoption.microsoft.com/copilot/)
+- [Try out Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/)
+- [Try out Microsoft AI Studio](https://azure.microsoft.com/products/ai-studio/)
+
+

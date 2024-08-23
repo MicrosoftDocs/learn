@@ -1,23 +1,24 @@
-Suppose you're responsible for an application on your company's vacation planning website that helps customers add, edit, view, and remove plans on their vacation wish lists. Your API, which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to manage the server and scale the application up and down as needed while minimizing costs.
+As a software engineer at Tailwind Trader's, you're responsible for an application on your company's vacation planning website that helps customers add, edit, view, and remove plans on their vacation wish lists. Your API, which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to manage the server and scale the application up and down as needed while minimizing costs.
 
-To reduce the burden of maintaining servers, you can migrate your application to a serverless model that scales up and down as needed, reduces costs, and requires less code. You can use Azure Functions to shift your API to a serverless model without having to rewrite your application.
+## Server-based applications
 
-## Learning objectives
+To use your current Express application and server, you must:
 
-In this module, you refactor Express APIs to a serverless architecture by following these steps:
+- Write your code, including the necessary middleware and logic required to start and run the server.
+- Configure and maintain the physical server hardware and software.
+- Manage scaling your application up and down as demand fluctuates.
+- Manage the costs of deploying and running the server.
 
-1. Explore a sample project that uses Node.js Express APIs.
-1. Create an Azure Functions application and APIs.
-1. Refactor the Express routes and data calls to use the Functions application.
-1. Debug the serverless app and API in Visual Studio Code.
+## Serverless applications
 
-## Prerequisites
+Moving the vacation planning application to a serverless architecture, such as Azure Functions, can offer several benefits. 
 
-- Some knowledge of JavaScript and TypeScript
-- Some familiarity with Node.js Express and Azure Functions
-- [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
-- [Node.js v14](https://nodejs.org/) installed
+* Serverless architectures can significantly reduce the overhead of server management. Tasks like the following are no longer a concern:
+    * Configuring and maintaining server hardware and software.
+    * Managing scaling the server based on demand.
+    * Handling the cost of server deployment and operation. 
+    
+    By removing these tasks, software engineering team can focus more on developing and improving the application's features rather than on infrastructure management. 
+* Serverless architectures automatically scale up and down based on demand, ensuring the application can handle peak usage times without manual intervention. This can lead to cost savings, as you only pay for the compute time you actually use. 
 
-  >[!IMPORTANT]
-  >You must install and use Node.js v14 to compile and run the app for this module. Later Node.js versions have compatibility issues.
+* Transitioning to serverless doesn't necessarily require a complete rewrite of the application. Because you can move code not directly tied to the framework such as Express, this migration is a potentially efficient and cost-effective solution to gain scalability and performance of the vacation planning application.

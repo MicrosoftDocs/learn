@@ -106,16 +106,23 @@ You now add the metric to OpenTelemetry so that it can be exported to your obser
 
 ## View the new metric in Prometheus
 
-1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability* folder.
+1. On the **TERMINAL** pane at the bottom, go to the *dotnet-observability/eShopLite* folder.
 
     ```bash
-    cd ..\.. 
+    cd ..
     ```
 
-1. Start the app with Docker:
+1. Update the apps containers.
+
+    ```dotnetcli
+    dotnet publish /p:PublishProfile=DefaultContainer 
+    ```
+
+1. Go to the *dotnet-observability* folder, and start the app with Docker:
 
     ```bash
-    docker-compose up --build
+    cd ..
+    docker compose up
     ```
 
 1. Open the **:::no-loc text="eShopLite":::** app in a browser at `http://localhost:32000`.
@@ -128,3 +135,5 @@ You now add the metric to OpenTelemetry so that it can be exported to your obser
 1. Select the **Graph** tab. You should see the stock amount change over time.
 
     :::image type="content" source="../media/new-metric.png" alt-text="Screenshot that shows Prometheus showing the new custom metric on a graph."  lightbox="../media/new-metric.png":::
+
+1. On the **TERMINAL** pane, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.

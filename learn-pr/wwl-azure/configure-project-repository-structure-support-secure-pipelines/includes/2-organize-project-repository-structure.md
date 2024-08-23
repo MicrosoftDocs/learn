@@ -47,7 +47,7 @@ Consider the following guidance for mapping your projects to business units:
 
 ### Organize and secure repositories
 
-You can organize your repositories in Azure Repos by using folders and adding specific groups and permissions to the repository. You can also use branch policies to secure your repositories. Branch policies allow you to:
+You can organize your Git repositories in Azure Repos by adding specific groups and permissions to the repository. You can also use branch policies to secure your repositories. Branch policies allow you to:
 
 - Require a minimum number of reviewers
 - Require a minimum number of approvers
@@ -56,15 +56,13 @@ You can organize your repositories in Azure Repos by using folders and adding sp
 
 Another way to organize your repositories is to use Git submodules. Git submodules allow you to keep a Git repository as a subdirectory of another Git repository. This lets you clone another repository into your project and keep your commits separate.
 
-If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model.](https://learn.microsoft.com/azure/devops/organizations/security/permissions) In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
+If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model.](/azure/devops/organizations/security/permissions) In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
 
 - **Keep sensitive files out with .gitignore**: To help avoid the risk of someone inadvertently committing sensitive data, such as an API key or private configuration data is to build and maintain .gitignore files. These files instruct client tools, such as the git command line utility, to ignore paths and patterns when aggregating files for a commit.
 
 - **Remove sensitive data from a repository**: Project participants should always be on the lookout for commits containing data that shouldn't be included in the repository or its history.
 
 - **Create branch protection rules**: You can create branch protection rules to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
-
-- **Add a CODEOWNERS file**: By adding a CODEOWNERS file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they're configured for.
 
 ## Possible project and repository structures
 
@@ -76,11 +74,11 @@ The following image displays a sample of how your company could structure its or
 
 ### Shared repo vs. forked repos
 
-It's recommended to use a shared repo within a trusted organization. Developers use branches to maintain isolation of their changes from one another. With a good branching and release strategy, a single repo can scale to support concurrent development for more than a thousand developers. For more information about branching and release strategy, see [Branch strategically.](https://learn.microsoft.com/azure/devops/repos/tfvc/branch-strategically)
+It's recommended to use a shared repo within a trusted organization. Developers use branches to maintain isolation of their changes from one another. With a good branching and release strategy, a single repo can scale to support concurrent development for more than a thousand developers. For more information about branching and release strategy, see [Branch strategically.](/azure/devops/repos/tfvc/branch-strategically)
 
 Forks can be useful when you're working with vendor teams that shouldn't have direct access to update the main repository. Forks can also be useful in scenarios where many developers contribute infrequently, such as in an open-source project.
 
-When you're working with forks, you may want to maintain a separate project to isolate the forked repos from the main repo. There may be added administrative overhead, but it keeps the main project cleaner. For more information, see [Fork your repository.](https://learn.microsoft.com/azure/devops/repos/git/forks/)
+When you're working with forks, you may want to maintain a separate project to isolate the forked repos from the main repo. There may be added administrative overhead, but it keeps the main project cleaner. For more information, see [Fork your repository.](/azure/devops/repos/git/forks/)
 
 ## Create a project and repository structure
 

@@ -4,12 +4,11 @@ title: Determine key features of shielded VMs
 metadata:
   title: Determine key features of shielded VMs
   description: "Determine key features of shielded VMs"
-  ms.date: 01/02/2024
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom: N/A, linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/6-determine-key-features-of-shielded-vms.md)]

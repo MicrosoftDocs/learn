@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: chtestao
   ms.topic: module
-  ms.service: synapse-analytics
+  ms.service: azure-synapse-analytics
 title: Build reports using Power BI within Azure Synapse Analytics
 summary: In this module, you will learn how you can build Power BI reports from within Azure Synapse Analytics.
 abstract: |
@@ -29,7 +29,7 @@ products:
 subjects:
 - data-analytics
 - data-visualization
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.introduction
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.describe-synapse-workspace-integration

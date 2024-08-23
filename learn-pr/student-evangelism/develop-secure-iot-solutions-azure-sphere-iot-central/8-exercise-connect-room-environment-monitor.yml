@@ -4,12 +4,11 @@ title: Exercise - Connect a room environment monitor to Azure IoT Central
 metadata:
   title: Exercise - Connect a room environment monitor to Azure IoT Central
   description: In this section, we connect a room environment monitor to Azure IoT Central.
-  ms.date: 06/26/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-central
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/8-exercise-connect-room-environment-monitor.md)]

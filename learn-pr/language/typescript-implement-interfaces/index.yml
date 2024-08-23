@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: typescript
 title: 'Implement interfaces in TypeScript'

@@ -11,7 +11,7 @@ Azure AI Studio is a web portal that brings together multiple Azure AI-related s
 
 In addition to providing a unified interface for multiple AI services, Azure AI Studio includes support for:
 
-- Creating *Azure AI resources* that provide a collaborative development workspace for data scientists, developers, and others to build AI solutions.
+- Creating *Azure AI hubs* that provide a collaborative development workspace for data scientists, developers, and others to build AI solutions.
 - Creating *projects* in which assets and code for a specific solution are managed.
 - Scalable, on-demand compute.
 - Integration with data sources and other cloud services.
@@ -20,7 +20,7 @@ In addition to providing a unified interface for multiple AI services, Azure AI 
 
 ## What can I do with Azure AI Studio?
 
-Azure AI Studio enables teams to collaborate efficiently and effectively on AI projects, such as developing custom *copilot* applications that use large language models (LLMs). Tasks you can accomplish with Azure AI Studio include:
+Azure AI Studio enables teams to collaborate efficiently and effectively on AI projects, such as developing custom *copilot* applications that use large language models. Tasks you can accomplish with Azure AI Studio include:
 
 - Deploying models from the model catalog to real-time inferencing endpoints for client applications to consume.
 - Deploying and testing generative AI models in an Azure OpenAI service.
@@ -30,4 +30,4 @@ Azure AI Studio enables teams to collaborate efficiently and effectively on AI p
 - Extending a generative AI solution with multiple AI capabilities using Azure AI services.
 
 > [!NOTE]
-> Azure AI Studio is currently in preview. Its capabilities may expand or change.
+> Azure AI Studio is currently in active development. Its capabilities may expand or change as new features are released.

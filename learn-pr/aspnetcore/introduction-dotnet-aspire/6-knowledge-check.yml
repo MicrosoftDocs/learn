@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about .NET Aspire to check the knowledge you've gained in this module."
+  ms.date: 2/6/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-dotnet
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You're explaining the benefits of a cloud-native architecture in a presentation to board members. Which of the following sentences is an advantage of microservices?"
+    choices:
+    - content: "Each microservice is an independent ancillary resource, such as a database or caching service."
+      isCorrect: false
+      explanation: "Incorrect. However, microservices may call ancillary resources, which are often called backing services."
+    - content: "Each microservice is loosely coupled to the others"
+      isCorrect: true
+      explanation: "Correct. Because microservices are loosely coupled, each team can implement fixes and new versions independently without waiting for the others."
+    - content: "Each microservice implements the entire web app's functionality in parallel with the others."
+      isCorrect: false
+      explanation: "Incorrect. Each microservice implements a small part of the business functionality."
+  - content: "You're setting up the software environment for your developers to use for your company's new .NET Aspire cloud-native app. Which of the following is required?"
+    choices:
+    - content: "Docker Desktop or Podman"
+      isCorrect: true
+      explanation: "Correct. You must install Docker Desktop or Podman to host and run containers for the app during debugging."
+    - content: "Visual Studio 17.9 or higher"
+      isCorrect: false
+      explanation: "Incorrect. You can choose to use a code editor, such as Visual Studio Code and the .NET CLI, instead of Visual Studio. If you do choose Visual Studio, it must be version 17.9 or higher."
+    - content: "The Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. .NET Aspire doesn't require you to use Azure or the Azure CLI."
+  - content: "You want to use a semi-structured database to store information for a microservice that implements the shopping cart for your application. Which of the following .NET Aspire components could you use?"
+    choices:
+    - content: "MongoDB"
+      isCorrect: true
+      explanation: "Correct. The .NET Aspire MongoDB component connects to the MongoDB database server, which is a semi-structured, NoSQL database server."
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "Incorrect. The .NET Aspire Azure Blob Storage component connects to the Azure Blob Storage service, which stores blob files such as images and videos, not semi-structured data."
+    - content: "MySQL"
+      isCorrect: false
+      explanation: "Incorrect. The .NET Aspire MySQL component connects to the MySQL database server, which stores structrured, relational data, not semi-structured data."

@@ -4,10 +4,12 @@ title: Identify and monitor external assets by using Microsoft Defender External
 metadata:
   title: Identify and monitor external assets by using Microsoft Defender External Attack Surface Management
   description: "Identify and monitor external assets by using Microsoft Defender External Attack Surface Management"
-  ms.date: 01/02/2024
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/8-microsoft-defender-external-attack-surface-management.md)]

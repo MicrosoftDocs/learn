@@ -4,7 +4,7 @@ Now that we know the basics of Azure Cosmos DB, let's see what resources and inf
 
 To begin using Azure Cosmos DB, you first create various resources in Azure such as accounts, databases, containers, and items.
 
-![Diagram showing how an Azure Cosmos DB for NoSQL account is the parent resource to a database, which is itself a parent resource to a container](../media/3-resource-hierarchy.png)
+![Diagram showing how an Azure Cosmos DB for NoSQL account is the parent resource to a database, which is itself a parent resource to a container.](../media/3-resource-hierarchy.png)
 
 ### Accounts
 
@@ -22,7 +22,7 @@ Each account can contain one or more **Databases**. A database is a logical unit
 
 The NoSQL API for Azure Cosmos DB stores individual documents in JSON format as *items* within the container. Azure Cosmos DB for NoSQL natively supports JSON files and can provide fast and predictable performance because write operations on JSON documents are atomic.
 
-![Diagram showing various items stored in a container](../media/3-item-hierarchy.png)
+![Diagram showing various items stored in a container.](../media/3-item-hierarchy.png)
 
 ## Partitioning & Partition Keys
 

@@ -25,15 +25,20 @@ With certain types of applications, you have the option of requiring users to be
 
 When user assignment is required, only those users you assign to the application (either through direct user assignment or based on group membership) are able to sign in. They can access the app on the My Apps portal or by using a direct link.
 
-When user assignment is not required, unassigned users don't see the app on their My Apps, but they can still sign in to the application itself (also known as SP-initiated sign-on) or they can use the User Access URL in the application’s Properties page (also known as IDP-initiated sign on). For more information on requiring user assignment configurations, See Configure an application<br>
+When user assignment is not required, unassigned users don't see the app on their My Apps, but they can still sign in to the application itself (also known as SP-initiated sign-on) or they can use the User Access URL in the application’s Properties page (also known as IDP-initiated sign on). For more information on requiring user assignment configurations, See [Configure an application](/entra/identity/enterprise-apps/add-application-portal-configure)
 
 This setting doesn't affect whether or not an application appears on My Apps. Applications appear on users' My Apps access panels once you've assigned a user or group to the application.
 
+> [!NOTE]
+> When an application requires assignment, user consent for that application isn't allowed. This is true even if users consent for that app would have otherwise been allowed. Be sure to [grant tenant-wide admin consent](/entra/identity/enterprise-apps/grant-admin-consent) to apps that require assignment.
+
+For some applications, the option to require user assignment isn't available in the application's properties. In these cases, you can use PowerShell to set the appRoleAssignmentRequired property on the service principal.
+
 ## Determining the user experience for accessing apps
 
-Microsoft Entra ID provides several customizable ways to deploy applications to end users in your organization:
+Microsoft Entra ID provides [several customizable ways to deploy applications](/entra/identity/enterprise-apps/end-user-experiences) to end users in your organization:
 
- -  Microsoft Entra My Apps<br>
+ -  Microsoft Entra My Apps
  -  Microsoft 365 application launcher
  -  Direct sign-on to federated apps (service-pr)
  -  Deep links to federated, password-based, or existing apps
@@ -53,20 +58,20 @@ With Microsoft Entra ID, applications like Salesforce can be pre-configured for 
 
 In this case, all assigned users would be automatically provisioned to Salesforce. As they are added to different groups their role assignment would be updated in Salesforce. Users can discover and access Salesforce through My Apps, Office web clients, or by navigating to their organizational Salesforce sign in page. Administrators can easily view usage and assignment status using Microsoft Entra reporting.<br>
 
-Administrators can employ Microsoft Entra Conditional Access to set access policies for specific roles. These policies can include whether access is permitted outside the corporate environment and even multifactor authentication or device requirements to achieve access in various cases.<br>
+Administrators can employ [Microsoft Entra Conditional Access](/entra/identity/conditional-access/concept-conditional-access-users-groups) to set access policies for specific roles. These policies can include whether access is permitted outside the corporate environment and even multifactor authentication or device requirements to achieve access in various cases.<br>
 
 ## Access to Microsoft applications
 
 Microsoft Applications (like Exchange, SharePoint, Yammer, etc.) are assigned and managed a bit differently than third party SaaS applications or other applications you integrate with Microsoft Entra ID for single sign-on.
 
-There are three main ways that a user can get access to a Microsoft-published application.<br>
+There are three main ways that a user can get access to a Microsoft-published application.
 
- -  For applications in the Microsoft 365 or other paid suites, users are granted access through license assignment either directly to their user account, or through a group using our group-based license assignment capability.<br>
- -  For applications that Microsoft or a third party publishes freely for anyone to use, users may be granted access through user consent. The users sign in to the application with their Microsoft Entra work or school account and allow it to have access to some limited set of data on their account.<br>
- -  For applications that Microsoft or a third party publishes freely for anyone to use, users may also be granted access through administrator consent. This means that an administrator has determined the application may be used by everyone in the organization, so they sign in to the application with a Global Administrator account and grant access to everyone in the organization.<br>
+ -  For applications in the Microsoft 365 or other paid suites, users are granted access through license assignment either directly to their user account, or through a group using our group-based license assignment capability.
+ -  For applications that Microsoft or a third party publishes freely for anyone to use, users may be granted access through [user consent](/entra/identity/enterprise-apps/configure-user-consent). The users sign in to the application with their Microsoft Entra work or school account and allow it to have access to some limited set of data on their account.
+ -  For applications that Microsoft or a third party publishes freely for anyone to use, users may also be granted access through [administrator consent](/entra/identity/enterprise-apps/manage-consent-requests). This means that an administrator has determined the application may be used by everyone in the organization, so they sign in to the application with a Global Administrator account and grant access to everyone in the organization.
 
-Some applications combine these methods. For example, certain Microsoft applications are part of a Microsoft 365 subscription, but still require consent.<br>
+Some applications combine these methods. For example, certain Microsoft applications are part of a Microsoft 365 subscription, but still require consent.
 
-Users can access Microsoft 365 applications through their Office 365 portals. You can also show or hide Microsoft 365 applications in the My Apps with the Office 365 visibility toggle in your directory's User settings.<br>
+Users can access Microsoft 365 applications through their Office 365 portals. You can also show or hide Microsoft 365 applications in the My Apps with the [Office 365 visibility toggle](/entra/identity/enterprise-apps/hide-application-from-user-portal) in your directory's User settings.
 
-As with enterprise apps, you can assign users to certain Microsoft applications via the Microsoft Entra admin center or, using PowerShell.<br>
+As with enterprise apps, you can [assign users](/entra/identity/enterprise-apps/assign-user-or-group-access-portal) to certain Microsoft applications via the Microsoft Entra admin center or, using PowerShell.

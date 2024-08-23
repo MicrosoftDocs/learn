@@ -59,7 +59,7 @@ Both user-initiated actions require an approval from a Global Administrator or P
 
 ### PAM in AD DS
 <!--
-BEGIN(https://learn.microsoft.com/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
+BEGIN(/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 -->
 MIM Privileged Access Management (PAM) is a solution that helps organizations restrict privileged access within an existing and isolated Active Directory environment.
 
@@ -75,13 +75,13 @@ END()
 ### PAM in Office 365
 
 <!--
-BEGIN(https://learn.microsoft.com/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
+BEGIN(/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
 -->
 Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 ### PAM vs PIM
 
-Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
+Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Microsoft Entra Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
 
 ![Diagram that shows layered protection in Microsoft 365.](../media/layered-protection.png)
 
@@ -98,15 +98,15 @@ END()
 ## Entitlement management
 
 <!--
-BEGIN(https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+BEGIN(/azure/active-directory/governance/entitlement-management-overview)
 -->
-Entitlement management is an [identity governance](https://learn.microsoft.com/azure/active-directory/governance/identity-governance-overview) feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration.
+Entitlement management is an [identity governance](/azure/active-directory/governance/identity-governance-overview) feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration.
 
 Employees in organizations need access to various groups, applications, and SharePoint Online sites to perform their job. Managing this access is challenging, as requirements change. New applications are added or users need more access rights. This scenario gets more complicated when you collaborate with outside organizations. You may not know who in the other organization needs access to your organization's resources, and they won't know what applications, groups, or sites your organization is using.
 
 Entitlement management can help you more efficiently manage access to groups, applications, and SharePoint Online sites for internal users, and also for users outside your organization who need access to those resources.
 
-<!--[](https://learn.microsoft.com/azure/active-directory/governance/entitlement-management-overview#why-use-entitlement-management)-->
+<!--[](/azure/active-directory/governance/entitlement-management-overview#why-use-entitlement-management)-->
 
 ### Why use entitlement management?
 
@@ -138,7 +138,7 @@ Microsoft Entra ID enables you to collaborate with users from inside your organi
 -   Excessive access right may also lead audit findings as they indicate a lack of control over access.
 -   You have to proactively engage with resource owners to ensure they regularly review who has access to their resources.
 
-<!--[](https://learn.microsoft.com/azure/active-directory/governance/access-reviews-overview#when-should-you-use-access-reviews)-->
+<!--[](/azure/active-directory/governance/access-reviews-overview#when-should-you-use-access-reviews)-->
 
 ### When should you use access reviews?
 

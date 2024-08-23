@@ -3,26 +3,37 @@ uid: learn.wwl.enumerate-objects-pipeline
 metadata:
   title: Enumerate objects in the pipeline
   description: "This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
-  ms.date: 10/10/2023
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.custom:
   - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Enumerate objects in the pipeline
 summary: This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explain the purpose of enumeration.
-  - Explain how to enumerate objects by using basic syntax.
-  - Perform basic enumerations.
-  - Explain how to enumerate objects by using advanced syntax.
-  - Perform advanced enumeration.
+
+  -   Explain the purpose of enumeration.
+
+  -   Explain how to enumerate objects by using basic syntax.
+
+  -   Perform basic enumerations.
+
+  -   Explain how to enumerate objects by using advanced syntax.
+
+  -   Perform advanced enumeration.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 iconUrl: /training/achievements/enumerate-objects-pipeline.svg
 levels:
 - intermediate
@@ -37,7 +48,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

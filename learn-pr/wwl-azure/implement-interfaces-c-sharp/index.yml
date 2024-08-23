@@ -3,11 +3,11 @@ uid: learn.wwl.implement-interfaces-c-sharp
 metadata:
   title: Implement interfaces
   description: "In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices."
-  ms.date: 01/10/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.prod: dotnet-csharp
+  ms.service: dotnet-csharp
 title: Implement interfaces
 summary: In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices.
 abstract: |
@@ -23,6 +23,7 @@ prerequisites: |
   - Basic understanding of the C# programming language
   - Familiarity with classes, abstract classes, and inheritance
 iconUrl: /training/achievements/implement-interfaces.svg
+hidden: true
 levels:
 - beginner
 roles:

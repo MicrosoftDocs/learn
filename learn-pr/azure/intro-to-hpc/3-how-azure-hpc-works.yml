@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
   title: How Azure HPC works
   description: In this unit, you learn about components of Azure HPC and the orchestration of components of Azure HPC.
-  ms.date: 10/03/2022
+  ms.date: 05/22/2023
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit

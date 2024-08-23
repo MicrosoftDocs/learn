@@ -71,7 +71,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-1. Next we want to deploy the GPT-35-Turble model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
+1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
 
     ::: zone pivot="cli"
 
@@ -209,7 +209,8 @@ Let's create the initial system role prompt that will provide the initial instru
         Temperature=1f,
         FrequencyPenalty=0.0f,
         PresencePenalty=0.0f,
-        NucleusSamplingFactor = 0.95f // Top P
+        NucleusSamplingFactor = 0.95f, // Top P
+        DeploymentName = openAIDeploymentName
     };
     ```
 
@@ -226,7 +227,7 @@ Let's create the initial system role prompt that will provide the initial instru
 1. Then create a new `ChatMessage` object and add it to the `ChatCompletionOptions.Messages` list. We'll be setting the `ChatMessage` to be coming from the System role.
 
     ```csharp
-    ChatMessage systemMessage = new(ChatRole.System, systemPrompt);
+    ChatRequestSystemMessage systemMessage = new(systemPrompt);
 
     completionOptions.Messages.Add(systemMessage);
     ```
@@ -243,7 +244,7 @@ Next we'll send the first message to the model, initiating the conversation.
     Can't wait to hear what you have in store for me!
     """;
 
-    ChatMessage userGreetingMessage = new (ChatRole.User, userGreeting);
+    ChatRequestUserMessage userGreetingMessage = new (userGreeting);
     completionOptions.Messages.Add(userGreetingMessage);
 
     Console.WriteLine($"User >>> {userGreeting}");
@@ -252,13 +253,13 @@ Next we'll send the first message to the model, initiating the conversation.
 1. Next call the `GetChatCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `ChatCompletionOptions`.
 
     ```csharp
-    ChatCompletions response = await openAIClient.GetChatCompletionsAsync(openAIDeploymentName, completionOptions);
+    ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
     ```
 
 1. Then finally, read out the value the model has returned.
 
     ```csharp
-    ChatMessage assistantResponse = response.Choices[0].Message;
+    ChatResponseMessage assistantResponse = response.Choices[0].Message;
 
     Console.WriteLine($"AI >>> {assistantResponse.Content}");
     ```
@@ -281,7 +282,7 @@ Let's continue on by responding to the conversation and then outputting the resp
 1. Make sure that we retain context of the conversation, so add the response that came back directly to the `completionOptions.Messages` list.
 
     ```csharp
-    completionOptions.Messages.Add(assistantResponse);
+    completionOptions.Messages.Add(new ChatRequestSystemMessage(assistantResponse.Content)); 
     ```
 
 1. Next create another user role prompt and send it to the model.
@@ -295,11 +296,11 @@ Let's continue on by responding to the conversation and then outputting the resp
 
     Console.WriteLine($"User >>> {hikeRequest}");
 
-    ChatMessage hikeMessage = new (ChatRole.User, hikeRequest);
+    ChatRequestUserMessage hikeMessage = new (hikeRequest);
 
     completionOptions.Messages.Add(hikeMessage);
 
-    response = await openAIClient.GetChatCompletionsAsync(openAIDeploymentName, completionOptions); 
+    response = await openAIClient.GetChatCompletionsAsync(completionOptions); 
 
     assistantResponse = response.Choices[0].Message;
 

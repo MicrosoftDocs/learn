@@ -3,9 +3,9 @@ uid: learn.improve-sign-in-security-authenticator.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "You can improve sign-in security by helping users to set up Microsoft Authenticator whenever they sign in. Understand security of different authentication methods and choose a way to help users switch to methods with better security."
-  ms.date: 7/27/2022
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
   ms.topic: unit

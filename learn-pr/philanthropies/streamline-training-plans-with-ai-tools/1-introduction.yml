@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.streamline-training-plans-with-ai-tools.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the Streamline training plans with AI tools module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/07/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

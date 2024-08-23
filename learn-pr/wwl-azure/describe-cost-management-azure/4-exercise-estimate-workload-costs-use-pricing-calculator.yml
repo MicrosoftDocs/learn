@@ -4,10 +4,12 @@ title: Exercise - Estimate workload costs by using the Pricing calculator
 metadata:
   title: Exercise - Estimate workload costs by using the Pricing calculator
   description: "Exercise - Estimate workload costs by using the Pricing calculator"
-  ms.date: 08/16/2023
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-estimate-workload-costs-use-pricing-calculator.md)]

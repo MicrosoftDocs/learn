@@ -4,10 +4,12 @@ title: Accept responsibility for your bot
 metadata:
   title: Accept responsibility for your bot
   description: At the end of the day, you are responsible for what your bot does and says. This unit talks about guidelines to ensure that you can detect and remedy issues in your bot.
-  ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/7-bot-responsibility.md)] 

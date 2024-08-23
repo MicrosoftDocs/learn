@@ -5,7 +5,7 @@ metadata:
   unitType: Exercise
   title: "Exercise - Create an address form with Blazor components"
   description: "Build an address form and connect it to a data model."
-  ms.date: 08/31/2021
+  ms.date: 11/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

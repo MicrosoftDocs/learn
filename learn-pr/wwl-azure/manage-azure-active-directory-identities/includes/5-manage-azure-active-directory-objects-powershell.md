@@ -1,51 +1,51 @@
+You can also manage users, groups, and devices by using the Microsoft Graph PowerShell SDK. This approach uses the unified Microsoft Graph API, providing a comprehensive and efficient way to automate management tasks across Microsoft 365 services. PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no more prerequisites to use the SDK with PowerShell 7 or later.  For more information, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
 
+Before you begin, ensure you have the following requirement:
 
-You can also manage users, groups, and devices by using the Microsoft Azure Active Directory module for Windows PowerShell module. To run the Microsoft Azure Active Directory module for Windows PowerShell module, you need the following requirements:
+ - **Operating system** A Windows 10 or later, or a supported version of Windows Server.
+ - **PowerShell**. You must have PowerShell 5.1 or newer, or PowerShell Core.
+ - **Microsoft Graph PowerShell SDK**. The Microsoft Graph PowerShell SDK installed. If you haven't installed it yet, you can do so by running the following command in PowerShell:
 
- -  **Operating system**. You must be running either Windows 7 or newer, or Windows Server 2008 R2 or newer.
- -  **Microsoft .NET Framework**. You must install the Microsoft .NET Framework 3.51 feature.
- -  **Software updates**. You must have installed all the updates required by the Microsoft cloud services to which you've subscribed.
- -  **Microsoft Online Services Sign-in Assistant**. You must install the appropriate version of the Microsoft Online Services Sign-in Assistant for your operating system from the Microsoft Download Center.
-
-To connect to Microsoft Entra ID, at the Microsoft Azure Active Directory module for Windows PowerShell prompt, type the following command, and then select **Enter**:
-
+```PowerShell
+Install-Module -Name Microsoft.Graph -scope CurrentUser
 ```
-Connect-MsolService
+### Connecting to Microsoft Entra with Microsoft Graph PowerShell SDK
 
+To connect to Microsoft Entra, you can use the `Connect-MgGraph` cmdlet. This cmdlet prompts you to sign in to your Microsoft Entra account and then creates a connection to the Microsoft Graph service. You can then use the connection to run cmdlets to manage users, groups, and devices.
+
+```PowerShell
+Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All", "Device.ReadWrite.All"
 ```
+Adjust the scopes according to the permissions required for your specific tasks.
 
-You're then prompted for administrator credentials. Once you provide your administrator credentials, you’re ready to execute cmdlets for Microsoft Entra ID.
+### Create users by using bulk import
 
-#### Create users by using bulk import
-
-You can import a .csv file containing account information to create multiple users in bulk, such as exporting from an existing on-premises directory, or use Azure PowerShell scripting to generate multiple accounts. To use bulk import, you first must assemble your user information, which might include the following table:
+You can import a .csv file containing account information to create multiple users in bulk, such as exporting from an existing on-premises directory, or use Microsoft Graph PowerShell SDK scripting to generate multiple accounts. To use bulk import, you first must assemble your user information, which might include the following table:
 
 | UserName            | FirstName | LastName | DisplayName   | JobTitle   | Department |
 | ------------------- | --------- | -------- | ------------- | ---------- | ---------- |
-| AnneW@adatum.com    | Anne      | Wallace  | Anne Wallace  | President  | Management |
-| FabriceC@adatum.com | Fabrice   | Canel    | Fabrice Canel | Attorney   | Legal      |
-| GarretV@adatum.com  | Garret    | Vargas   | Garret Vargas | Operations | Operations |
+|AnneW@adatum.com|Anne|Wallace|Anne Wallace|President|Management|
+|FabriceC@adatum.com|Fabrice|Canel|Fabrice Canel|Attorney|Legal|
+|GarretV@adatum.com|Garret|Vargas|Garret Vargas|Operations|Operations|
 
-You then need to create a .csv file in the following format:
+Use the following script to read the .csv file and create the user accounts in Microsoft Entra:
 
-```
-UserName,FirstName,LastName,DisplayName,JobTitle,Department
-AnneW@adatum.com,Anne,Wallace,Anne Wallace,President,Management
-FabriceC@adatum.com,Fabrice,Canel,Fabrice Canel,Attorney,Legal
-GarretV@adatum.com,Garret,Vargas,Garret Vargas,Operations,Operations
-```
+```PowerShell
+$users = Import-Csv -Path "C:\path\to\your\Users.csv"
 
-You can then use Microsoft Azure Active Directory module for Windows PowerShell commands to process this .csv file and create the user accounts as shown in the following example:
-
-```
-$users = Import-Csv C:\Users.csv
-
-$users | ForEach-Object {
-
-New-MsolUser -UserPrincipalName $_.UserName -FirstName $_.FirstName -LastName
-$_.LastName -DisplayName $_.DisplayName -Title $_.JobTitle -Department
-$_.Department
-
+foreach ($user in $users) {
+    New-MgUser -UserPrincipalName $user.UserName `
+               -GivenName $user.FirstName `
+               -Surname $user.LastName `
+               -DisplayName $user.DisplayName `
+               -JobTitle $user.JobTitle `
+               -Department $user.Department `
+               -AccountEnabled $true `
+               -MailNickname $user.FirstName `
+               -UsageLocation "US" `
+               -PasswordProfile @{ForceChangePasswordNextSignIn = $true; Password = "Password"}
 }
-
 ```
+This script reads the .csv file and creates a new user for each row in the file. The `New-MgUser` cmdlet creates a new user in Microsoft Entra with the specified properties.
+
+By using the Microsoft Graph PowerShell SDK, you can efficiently manage Microsoft Entra objects with the flexibility and power of Microsoft Graph. This guide has introduced you to connecting to Microsoft Graph and creating users in bulk. Explore further to discover the full potential of automating your Microsoft 365 administration tasks with Microsoft Graph PowerShell.

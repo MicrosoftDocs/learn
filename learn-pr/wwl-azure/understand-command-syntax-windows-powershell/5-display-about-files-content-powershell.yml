@@ -4,13 +4,12 @@ title: Display the About files content in PowerShell
 metadata:
   title: Display the About files content in PowerShell
   description: "Display the About files content in PowerShell"
-  ms.date: 11/09/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
-azureSandbox: false
-labModal: false
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-display-about-files-content-powershell.md)]

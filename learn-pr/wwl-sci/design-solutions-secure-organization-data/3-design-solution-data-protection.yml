@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-organization-data.design-solution-data-protection
-title: Design a solution for data protection
+title: Evaluate solutions for encryption of data at rest and in transit, including Azure KeyVault and infrastructure encryption
 metadata:
-  title: Design a solution for data protection
-  description: "SC-100 preparatory unit on the topic: design a solution for data protection."
+  title: Evaluate solutions for encryption of data at rest and in transit, including Azure KeyVault and infrastructure encryption
+  description: "SC-100 preparatory unit on the topic: Evaluate solutions for encryption of data at rest and in transit, including Azure KeyVault and infrastructure encryption."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed

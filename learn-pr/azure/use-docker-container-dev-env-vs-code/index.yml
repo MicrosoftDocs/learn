@@ -7,7 +7,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: module
-  ms.prod: vs-code
+  ms.service: vs-code
   ms.custom:
   - team=cloud_advocates, devdivchpfy22
   ms.contributors:
@@ -34,7 +34,7 @@ roles:
 products:
   - vs-code
 subjects:
-- container
+- containers
 units:
   - learn.use-docker-container-dev-env-vs-code.1-introduction
   - learn.use-docker-container-dev-env-vs-code.2-exercise-prepare-project

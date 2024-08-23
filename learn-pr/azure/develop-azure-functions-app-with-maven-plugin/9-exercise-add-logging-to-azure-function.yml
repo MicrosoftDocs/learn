@@ -4,7 +4,7 @@ title: Exercise - add logging and monitor an Azure Function in the portal
 metadata:
   title: Exercise - add logging and monitor an Azure Function in the portal
   description: Update your application with custom logging and monitoring features, redeploy your application to Azure, then review your application's using Azure's reporting tools.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

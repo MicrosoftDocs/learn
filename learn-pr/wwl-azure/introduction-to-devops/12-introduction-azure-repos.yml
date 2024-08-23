@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-devops.introduction-azure-repos
+title: Introduction to Azure Repos
+metadata:
+  title: Introduction to Azure Repos
+  description: "Introduction to Azure Repos"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-introduction-azure-repos.md)]

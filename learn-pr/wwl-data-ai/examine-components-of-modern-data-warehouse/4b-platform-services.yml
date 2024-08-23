@@ -4,10 +4,12 @@ title: Explore platform-as-a-service (PaaS) solutions
 metadata:
   title: Explore platform-as-a-service (PaaS) solutions
   description: "Explore platform-as-a-service solutions for data analytics"
-  ms.date: 12/19/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4b-platform-services.md)]

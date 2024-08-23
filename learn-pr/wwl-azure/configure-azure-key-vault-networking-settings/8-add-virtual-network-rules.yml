@@ -4,10 +4,12 @@ title: Virtual network service endpoints for Azure Key Vault
 metadata:
   title: Virtual network service endpoints for Azure Key Vault
   description: "Virtual network service endpoints for Azure Key Vault"
-  ms.date: 01/04/2024
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/8-add-virtual-network-rules.md)]

@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identities-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/03/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company wants to provide options for different social or enterprise identity providers and integrate self-service sign-up user flows with external cloud systems. Which tool can they use to achieve this?"
+    choices:
+    - content: "Database Management Systems"
+      isCorrect: false
+      explanation: "Incorrect. Database Management Systems are used for storing, manipulating, and retrieving data, not for integrating user flows with external cloud systems."
+    - content: "Network Monitoring Tools"
+      isCorrect: false
+      explanation: "Incorrect. Network Monitoring Tools are used for overseeing and managing network operations, not for integrating user flows with external cloud systems."
+    - content: "API Connectors"
+      isCorrect: true
+      explanation: "Correct. API Connectors can be used to integrate self-service sign-up user flows with external cloud systems."
+  - content: "An organization wants to enable automatic remediation for identity-based risks detected by Microsoft Entra ID Protection. What access controls can be required based on the detected risk level?"
+    choices:
+    - content: "Blocking the user's account"
+      isCorrect: false
+      explanation: "Incorrect. Blocking the user's account is not an access control that can be required based on the detected risk level."
+    - content: "Requiring the user to change their username"
+      isCorrect: false
+      explanation: "Incorrect. Requiring the user to change their username is not an access control that can be required based on the detected risk level."
+    - content: "Providing a strong authentication method, performing multifactor authentication, or performing a secure password reset"
+      isCorrect: true
+      explanation: "Correct. Based on the detected risk level, risk-based Conditional Access policies can be enabled to require access controls such as providing a strong authentication method, perform multifactor authentication, or perform a secure password reset."
+  - content: "A User Administrator wants to add a new user to their Microsoft Entra ID organization. What steps should they follow?"
+    choices:
+    - content: "Sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu."
+      isCorrect: true
+      explanation: "Correct. The User Administrator must sign in to the Azure portal in the User Administrator role, navigate to Microsoft Entra ID Users, and select either Create new user or Invite external user from the menu to add a new user to their Microsoft Entra ID organization."
+    - content: "Select Invite external user from the menu and provide the user's email address."
+      isCorrect: false
+      explanation: "Incorrect. This is not the correct path to add a new user to a Microsoft Entra ID organization."
+    - content: "Navigate to Microsoft Office Users and select Create new user from the menu."
+      isCorrect: false
+      explanation: "Incorrect. This is not the correct path to add a new user to a Microsoft Entra ID organization."
+  - content: "A company wants to manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration. Which feature should they use?"
+    choices:
+    - content: "B2B direct connect"
+      isCorrect: false
+      explanation: "Incorrect. B2B direct connect is a new way to collaborate with other Microsoft Entra organizations."
+    - content: "Microsoft Entra B2C"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra B2C is a Customer Identity and Access Management (CIAM) solution that lets you build user journeys for consumer and customer-facing apps."
+    - content: "Microsoft Entra entitlement management"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra entitlement management is an identity governance feature that lets you manage identity and access for external users at scale by automating access request workflows, access assignments, reviews, and expiration."
+  - content: "A company wants to create a sign-up experience for external users who want to access their apps. What options can they provide as part of the sign-up flow?"
+    choices:
+    - content: "Collecting information about the user is not possible in a self-service sign-up user flow."
+      isCorrect: false
+      explanation: "Incorrect. Collecting information about the user is possible in a self-service sign-up user flow."
+    - content: "Providing options for different social or enterprise identity providers."
+      isCorrect: true
+      explanation: "Correct. As part of the sign-up flow, a company can provide options for different social or enterprise identity providers."
+    - content: "API connectors cannot be used to integrate self-service sign-up user flows with external cloud systems."
+      isCorrect: false
+      explanation: "Incorrect. API connectors can be used to integrate self-service sign-up user flows with external cloud systems."

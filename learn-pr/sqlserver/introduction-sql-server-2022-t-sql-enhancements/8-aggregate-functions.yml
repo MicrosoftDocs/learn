@@ -4,7 +4,7 @@ title: New aggregation functions
 metadata:
   title: New aggregation functions
   description: "With the new aggregation functions in SQL Server 2022, Microsoft addresses the challenge of efficiently computing percentiles in large datasets when an approximation is acceptable."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

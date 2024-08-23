@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/26/2023
+  ms.date: 06/24/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -27,16 +29,16 @@ quiz:
     choices:
     - content: "`GenerateID();`"
       isCorrect: true
-      explanation: "Correct! Methods are called using the name, followed by parentheses `()` and a semicolon"
+      explanation: "Correct! Methods are called using the name, followed by parentheses `()` and a semicolon."
     - content: "`void GenerateID() {}`"
       isCorrect: false
-      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon"
+      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon."
     - content: "`GenerateID;`"
       isCorrect: false
-      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon"
+      explanation: "Incorrect. To call a method, you must include parentheses `()` after the name, followed by a semicolon."
   - content: "Which of the following is true about the `return` keyword?"
     choices:
-    - content: "It is identical to the `break` keyword."
+    - content: "It's identical to the `break` keyword."
       isCorrect: false
       explanation: "Incorrect. The `break` keyword terminates a loop or `switch` statement, but the `return` keyword terminates the current method."
     - content: "It terminates the execution of a method."

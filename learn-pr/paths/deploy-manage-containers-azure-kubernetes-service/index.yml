@@ -1,12 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
 metadata:
-  title: Deploy containers by using Azure Kubernetes Service (AKS)
+  title: Deploy containers by using Azure Kubernetes Service (AKS) AZ-1001
   description: In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.  The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
   ms.date: 10/12/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: learning-path
+  adobe-target: true
 title: Deploy containers by using Azure Kubernetes Service (AKS)
 prerequisites: |
   * Experience using the Azure portal to create resources.

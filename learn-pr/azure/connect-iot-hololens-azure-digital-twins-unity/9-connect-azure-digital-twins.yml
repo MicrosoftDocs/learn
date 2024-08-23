@@ -4,7 +4,7 @@ title: Exercise - Connect to the Azure Digital Twins REST API to resolve alerts
 metadata:
   title: Exercise - Connect to the Azure Digital Twins REST API to resolve alerts
   description: Learn how to connect your project to the ADT REST API to resolve alerts.
-  ms.date: 05/12/2021
+  ms.date: 10/10/2023
   author: JBrentJ
   ms.author: jejacks
   ms.topic: unit

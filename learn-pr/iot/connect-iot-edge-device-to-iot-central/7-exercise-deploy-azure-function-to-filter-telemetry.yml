@@ -6,7 +6,7 @@ metadata:
   description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
-  ms.date: 05/24/2023
+  ms.date: 07/19/2024
   ms.reviewer: rangv
   manager: lizross
   ms.custom:
@@ -14,7 +14,8 @@ metadata:
     - devx-track-azurecli
   ms.topic: unit
 durationInMinutes: 10
-azureSandbox: true
-interactive: bash
+# azureSandbox: true
+# interactive: bash
+azureSandbox: false
 content: |
   [!include[](includes/7-exercise-deploy-azure-function-to-filter-telemetry.md)]

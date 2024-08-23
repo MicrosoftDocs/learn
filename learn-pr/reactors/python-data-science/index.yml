@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/30/2022
   author: sguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: python
 title: Introduction to Python
@@ -33,7 +33,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.reactors.python-data-science.1-introduction
 - learn.reactors.python-data-science.2-types-arithmetic-numeric

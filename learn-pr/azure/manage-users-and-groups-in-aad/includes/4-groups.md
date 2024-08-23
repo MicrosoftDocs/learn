@@ -36,10 +36,10 @@ Finally, you can select group owner(s) that can administer the group and member(
 
 ### Script group creation
 
-You can also use Azure PowerShell to add a group using the **New-AzureADGroup** command as shown here:
+You can also use Microsoft Graph PowerShell to add a group using the [New-MgGroup](/powershell/module/microsoft.graph.groups/new-mggroup) command as shown here:
 
 ```powershell
-New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
+New-MgGroup -Description "Marketing" -DisplayName "Marketing" -MailNickName "Marketing" -SecurityEnabled -MailEnabled:$False
 ```
 
 ## Change membership for a group

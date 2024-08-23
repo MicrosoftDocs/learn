@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-sql-database.5-monitor-your-database
 metadata:
   title: Exercise - Monitor your database
   description: Learn to audit operations on your database and use that information with Advanced Threat Monitoring to report security risks and threats.
-  ms.date: 11/09/2018
+  ms.date: 11/07/2023
   author: VanMSFT
   ms.author: vanto
   manager: jroth

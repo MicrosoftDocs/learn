@@ -1,0 +1,46 @@
+### YamlMime:Module
+#LP name: Module 1: Introduction to disability and accessibility
+uid: learn.create-accessible-solutions-using-ai-innovations
+metadata:
+  title: Create accessible AI experiences
+  description: This module provides guidance on how to collaborate effectively with customers, partners, and the disability community to create innovative solutions that are accessible and inclusive. After you complete this module, you'll have a better understanding of how AI can empower and enable everyone.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/29/2024
+  ms.service: artificial-intelligence
+  showCreativeCommonsFooter: true
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Create accessible AI experiences
+summary: This module provides guidance on how to collaborate effectively with customers, partners, and the disability community to create innovative solutions that are accessible and inclusive. After you complete this module, you'll have a better understanding of how AI can empower and enable everyone.
+abstract: |
+  By the end of this module, you'll be able to:
+  -	Define generative AI and explain how it can enhance accessibility for people with disabilities.
+  - Identify and describe the examples and applications of AI for accessibility, such as speech recognition, natural language processing, computer vision, and machine learning. 
+  -	Analyze and evaluate the challenges and limitations of AI for accessibility, such as data quality and bias.
+  - Apply and demonstrate the best practices for collaborating with customers, partners, and the disability community to create innovative solutions.
+  - Identify accessibility considerations for AI copilots.
+  - Explain the benefits of user testing and evaluation of accessible and inclusive AI solutions.
+ 
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-engineer
+- developer
+products:
+- ms-copilot
+subjects:
+- accessibility
+units:
+- learn.create-accessible-solutions-using-ai-innovations.introduction
+- learn.create-accessible-solutions-using-ai-innovations.examples-of-ai-in-accessibility-innovation
+- learn.create-accessible-solutions-using-ai-innovations.accessibility-considerations-for-ai-copilot
+- learn.create-accessible-solutions-using-ai-innovations.design-evaluate-accessible-ai-solutions
+- learn.create-accessible-solutions-using-ai-innovations.knowledge-check
+- learn.create-accessible-solutions-using-ai-innovations.summary
+badge:
+  uid: learn.create-accessible-solutions-using-ai-innovations.badge

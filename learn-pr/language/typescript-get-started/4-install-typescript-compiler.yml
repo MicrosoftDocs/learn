@@ -4,13 +4,11 @@ title: Exercise - Install the TypeScript compiler
 metadata:
   title: Exercise - Install the TypeScript compiler
   description: Test your TypeScript installation, install Node Package Manager (npm), and install TypeScript.
-  ms.date: 02/10/2021
+  ms.date: 01/06/2023
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: unit
-  ms.custom:
-    - team=nextgen
-    - devx-track-js
+  ms.custom: team=nextgen, devx-track-js, devx-track-ts
 durationInMinutes: 5
 content: |
   [!include[](includes/4-install-typescript-compiler.md)]

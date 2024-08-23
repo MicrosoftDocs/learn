@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.quantum.choose-the-best-azure-quantum
+metadata:
+  title: Choose the best Azure Quantum option for your needs
+  description: Learn how to get started with Azure Quantum and choose the best service for your needs.
+  manager: tedhudek
+  ms.date: 12/13/2023
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  ms.topic: module
+  ms.service: azure-quantum
+  ms.subservice: core
+title: Choose the best Azure Quantum option for your needs
+summary: Azure Quantum offers different development options. Learn the differences between each option, and how to choose the best way to get started in your quantum journey.
+abstract: |
+  By the end of this module, you'll be able to:
+  - List the different options to develop quantum computing with Azure Quantum.
+  - Define the advantages and limitations of each option.
+  - Determine the best option based on your needs.
+
+  During this module, you will:
+  - Explore the different options to Azure Quantum.
+  - Run a quantum program in each of the Azure Quantum options.
+  - Create an Azure Quantum workspace.
+  - Install the Quantum Development Kit.
+
+prerequisites: |
+  - Basic knowledge of cloud computing and Azure ecosystem is recommended. No prior knowledge of quantum computing is required.
+  - Azure subscription. If you don't have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa).
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
+  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+iconUrl: /training/achievements/quantum/choose-the-best-azure-quantum-service.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+subjects:
+- cloud-computing
+units:
+- learn.quantum.choose-the-best-azure-quantum.introduction
+- learn.quantum.choose-the-best-azure-quantum.explore-azure-quantum-options
+- learn.quantum.choose-the-best-azure-quantum.use-qcom
+- learn.quantum.choose-the-best-azure-quantum.use-qdk
+- learn.quantum.choose-the-best-azure-quantum.use-azure-portal
+- learn.quantum.choose-the-best-azure-quantum.knowledge-check
+- learn.quantum.choose-the-best-azure-quantum.summary
+badge:
+  uid: learn.quantum.choose-the-best-azure-quantum-service.badge

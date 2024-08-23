@@ -3,28 +3,45 @@ uid: learn.wwl.manage-persistent-connections-to-remote-computers
 metadata:
   title: Manage persistent connections to remote computers by using Windows PowerShell sessions
   description: "This module explains how to establish and manage persistent connections to remote computers, known as Windows PowerShell sessions or PSSessions."
-  ms.date: 11/10/2022
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Manage persistent connections to remote computers by using Windows PowerShell sessions
 summary: This module explains how to establish and manage persistent connections to remote computers, known as Windows PowerShell sessions or PSSessions.
 abstract: |
-  Upon completion of this module, the learner will be able to:
-  - Explain the purpose of persistent connections.
-  - Create and use a PSSession.
-  - Transmit commands by using a PSSession.
-  - Explain how to disconnect from PSSessions.
-  - Disconnect and reconnect to PSSessions.
-  - Explain the concept of implicit remoting.
+  Upon completion of this module, the learner is able to:
+
+  -   Explain the purpose of persistent connections.
+
+  -   Create and use a PSSession.
+
+  -   Transmit commands by using a PSSession.
+
+  -   Explain how to disconnect from PSSessions.
+
+  -   Disconnect and reconnect to PSSessions.
+
+  -   Explain the concept of implicit remoting.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
-  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers and PowerShell drives
+
+  -   Familiarity with CIM and WMI technologies
+
+  -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 iconUrl: /training/achievements/manage-persistent-connections-to-remote-computers.svg
 levels:
 - intermediate
@@ -39,7 +56,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

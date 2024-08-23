@@ -3,10 +3,10 @@ uid: learn-pr.azure.manage-azure-stack-hci-storage.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary.
-  ms.date: 03/30/2022
-  author: rmcmurray
-  ms.author: robmcm
+  description: View a summary of what you learned about Azure Stack HCI software-defined storage. See links to other reference material.
+  ms.date: 08/20/2024
+  author: JasonGerend
+  ms.author: jgerend
   ms.topic: unit
 durationInMinutes: 2
 content: |

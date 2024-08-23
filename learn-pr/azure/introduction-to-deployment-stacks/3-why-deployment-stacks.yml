@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.why-deployment-stacks
+title: Why use deployment stacks?
+metadata:
+  title: Why use deployment stacks?
+  description: Learn about how deployment stacks help manage your Azure resource deployments.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 5
+content: | 
+  [!include[](includes/3-why-deployment-stacks.md)]

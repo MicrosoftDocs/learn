@@ -4,9 +4,9 @@ title: Evaluate data redundancy options for Azure Storage
 metadata:
   title: Evaluate data redundancy options for Azure Storage
   description: Learn about data redundancy options for Azure Storage.
-  ms.date: 10/08/2020
-  author: tamram
-  ms.author: tamram
+  ms.date: 11/03/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 7
 content: |

@@ -4,9 +4,9 @@ title: Exercise - Fail over to secondary location
 metadata:
   title: Exercise - Fail over to secondary location
   description: Learn how to initiate an Azure Storage account failover.
-  ms.date: 10/08/2020
-  author: tamram
-  ms.author: tamram
+  ms.date: 11/03/2023
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 20
 azureSandbox: false

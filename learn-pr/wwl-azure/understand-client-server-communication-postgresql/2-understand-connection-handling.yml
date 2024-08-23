@@ -3,13 +3,13 @@ uid: learn.wwl.understand-client-server-communication-postgresql.understand-conn
 title: Understand connection handling
 metadata:
   title: Understand connection handling
-  description: "Understand connection handling"
-  ms.date: 10/27/2022
+  description: "Understand connection handling."
+  ms.date: 05/12/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-connection-handling.md)]

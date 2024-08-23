@@ -146,7 +146,7 @@ Your app is finished. Deploy it and see it work.
     ```azurecli
     az appservice plan create \
     --name blob-exercise-plan \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --sku FREE --location eastus
     ```
 
@@ -154,19 +154,19 @@ Your app is finished. Deploy it and see it work.
     az webapp create \
     --name <your-unique-app-name> \
     --plan blob-exercise-plan \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
     ```azurecli
     CONNECTIONSTRING=$(az storage account show-connection-string \
     --name <your-unique-storage-account-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --output tsv)
     ```
 
     ```azurecli
     az webapp config appsettings set \
-    --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name> --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
     ```
 
@@ -185,7 +185,7 @@ Your app is finished. Deploy it and see it work.
     az webapp deployment source config-zip \
     --src ../site.zip \
     --name <your-unique-app-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
     To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
@@ -258,7 +258,7 @@ Your app is finished. Deploy it and see it work. Use the Maven Plugin for Azure 
 
     ```azurecli
     export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
-    export AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export AZ_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
     export AZ_REGION=eastus
     export AZ_APP_NAME=<your-unique-app-name>
     export AZ_PRICING_TIER=F1

@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
-  ms.service: stream-analytics
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

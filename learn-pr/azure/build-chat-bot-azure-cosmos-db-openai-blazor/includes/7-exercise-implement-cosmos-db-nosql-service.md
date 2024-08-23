@@ -13,7 +13,7 @@ Azure Cosmos DB for NoSQL stores data in JSON format allowing us to store many t
 
 1. Open the **Services/CosmosDbService.cs** file.
 
-1. Within the `InsertSessionAsync` method, remove any existing placeholder code:
+1. Within the `InsertSessionAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<Session> InsertSessionAsync(Session session)
@@ -36,7 +36,7 @@ Azure Cosmos DB for NoSQL stores data in JSON format allowing us to store many t
     ); 
     ```
 
-1. Within the `InsertMessageAsync` method, remove any existing placeholder code:
+1. Within the `InsertMessageAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<Message> InsertMessageAsync(Message message)
@@ -71,7 +71,7 @@ Azure Cosmos DB for NoSQL stores data in JSON format allowing us to store many t
 
 There are two main use cases where the application needs to retrieve multiple items from our container. First, the application retrieves all sessions for the current user by filtering the items to ones where `type = Session`. Second, the application retrieves all messages for a session by performing a similar filter where `type = Session & sessionId = <current-session-id>`. Implement both queries here using the .NET SDK and a feed iterator.
 
-1. Within the `GetSessionsAsync` method, remove any existing placeholder code:
+1. Within the `GetSessionsAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<List<Session>> GetSessionsAsync()
@@ -122,7 +122,7 @@ There are two main use cases where the application needs to retrieve multiple it
     return output;
     ```
 
-1. Within the `GetSessionMessagesAsync` method, remove any existing placeholder code:
+1. Within the `GetSessionMessagesAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<List<Message>> GetSessionMessagesAsync(string sessionId)
@@ -167,7 +167,7 @@ There are two main use cases where the application needs to retrieve multiple it
 
 There are scenarios when either a single session requires an update or more than one message requires an update. For the first scenario, use the `ReplaceItemAsync` method of the SDK to replace an existing item with a modified version. For the second scenario, use the transactional batch capability of the SDK to modify multiple messages in a single batch.
 
-1. Within the `UpdateSessionAsync` method, remove any existing placeholder code:
+1. Within the `UpdateSessionAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task<Session> UpdateSessionAsync(Session session)
@@ -181,7 +181,7 @@ There are scenarios when either a single session requires an update or more than
     PartitionKey partitionKey = new(session.SessionId);
     ```
 
-1. Invoke `ReplaceItemAsync` passing in the new message, message's unique identifier and partition key. Return the response as the result of `UpdateSessionAsync`.
+1. Invoke `ReplaceItemAsync` passing in the new message's unique identifier and partition key. Return the response as the result of `UpdateSessionAsync`.
 
     ```csharp
     return await _container.ReplaceItemAsync(
@@ -191,7 +191,7 @@ There are scenarios when either a single session requires an update or more than
     );
     ```
 
-1. Within the `UpsertSessionBatchAsync` method, remove any existing placeholder code:
+1. Within the `UpsertSessionBatchAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task UpsertSessionBatchAsync(params dynamic[] messages)
@@ -199,7 +199,7 @@ There are scenarios when either a single session requires an update or more than
     }
     ```
 
-1. Use language-integrated query (LINQ) to validate that all messages contain a single session identifier (`SessionId`). If any of the messages contain a different value, throw an `ArgumentException`.
+1. validate that all messages contain a single session identifier (`SessionId`) using language-integrated query (LINQ). If any of the messages contain a different value, throw an `ArgumentException`.
 
     ```csharp
     if (messages.Select(m => m.SessionId).Distinct().Count() > 1)
@@ -217,7 +217,7 @@ There are scenarios when either a single session requires an update or more than
     > [!NOTE]
     > Remember, you can safely assume that all messages have the same session identifier if the application has moved to this point in the method's code.
 
-1. Create a new variable named `batch` of type [`TransactionalBatch`](/dotnet/api/microsoft.azure.cosmos.transactionalbatch) by invoking the `CreateTransactionalBatch` method of the `_container` variable. Pass in the current partition key variable as the partition key to use for the batch operations.
+1. Create a new variable named `batch` of type [`TransactionalBatch`](/dotnet/api/microsoft.azure.cosmos.transactionalbatch) by invoking the `CreateTransactionalBatch` method of the `_container` variable. Use the current partition key variable for the batch operations.
 
     ```csharp
     TransactionalBatch batch = _container.CreateTransactionalBatch(partitionKey);
@@ -257,7 +257,7 @@ There are scenarios when either a single session requires an update or more than
 
 Finally, combine the query and transactional batch functionality to remove multiple items. In this example, get the session item and all related messages by querying for all items with a specific session identifier regardless of type. Then, create a transactional batch to delete all matched items as a single transaction.
 
-1. Within the `DeleteSessionAndMessagesAsync` method, remove any existing placeholder code:
+1. Within the `DeleteSessionAndMessagesAsync` method, remove any existing placeholder code.
 
     ```csharp
     public async Task DeleteSessionAndMessagesAsync(string sessionId)
@@ -348,7 +348,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
 
 ### [Review code](#tab/review-code)
 
-1. Review the `InsertSessionAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `InsertSessionAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task<Session> InsertSessionAsync(Session session)
@@ -362,7 +362,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `InsertMessageAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `InsertMessageAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task<Message> InsertMessageAsync(Message message)
@@ -378,7 +378,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `GetSessionsAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `GetSessionsAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task<List<Session>> GetSessionsAsync()
@@ -398,7 +398,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `GetSessionMessagesAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `GetSessionMessagesAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task<List<Message>> GetSessionMessagesAsync(string sessionId)
@@ -419,7 +419,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `UpdateSessionAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `UpdateSessionAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task<Session> UpdateSessionAsync(Session session)
@@ -434,7 +434,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `UpsertSessionBatchAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `UpsertSessionBatchAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task UpsertSessionBatchAsync(params dynamic[] messages)
@@ -457,7 +457,7 @@ Now your application has a full implementation of Azure OpenAI and Azure Cosmos 
     }
     ```
 
-1. Review the `DeleteSessionAndMessagesAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Make sure that your code matches this sample by reviewing the `DeleteSessionAndMessagesAsync` method of the *CosmosDbService.cs* code file.
 
     ```csharp
     public async Task DeleteSessionAndMessagesAsync(string sessionId)

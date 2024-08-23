@@ -4,12 +4,12 @@ title: Manage referential integrity by using change feed
 metadata:
   title: Manage referential integrity by using change feed
   description: "Manage referential integrity by using change feed"
-  ms.date: 10/17/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-manage-referential-integrity-by-using-change-feed.md)]

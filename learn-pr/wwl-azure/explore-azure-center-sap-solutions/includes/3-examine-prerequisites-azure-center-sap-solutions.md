@@ -1,6 +1,6 @@
 Azure Center for SAP solutions (ACSS) is an end-to-end solution that enables you to create and run SAP systems as a unified workload on Azure, but there are prerequisites. To successfully deploy SAP on Azure, ACSS requires prerequisites to be completed.
 
-You will need an Azure [subscription](/azure/cost-management-billing/manage/create-subscription#create-a-subscription) to provision Azure resources with the prerequisites.
+You'll need an Azure [subscription](/azure/cost-management-billing/manage/create-subscription#create-a-subscription) to provision Azure resources with the prerequisites.
 
 ## Infrastructure pre-provisioning
 
@@ -26,9 +26,9 @@ Grant access to:
 
 Use one of these options:
 
-- Allow outbound internet connectivity for the VMs.
+- Allow outbound internet connectivity for the virtual machines.
 - Use [**Service tags**](/azure/virtual-network/service-tags-overview) to allow connectivity.
-- Use a Service tag with regional scope to allow connectivity to resources in the same region as the VMs.
+- Use a Service tag with regional scope to allow connectivity to resources in the same region as the virtual machines.
 - Allowlist the region-specific IP addresses for Azure Storage, Azure Resource Manager and Microsoft Entra ID.
 - Register the **Microsoft.Workloads** Resource Provider in the subscription where you have the SAP system.
 - Check that your Azure account has **Azure Center for SAP solutions administrator** and **Managed Identity Operator** or equivalent role access on the subscription or resource groups where you have the SAP system resources.
@@ -38,15 +38,16 @@ Use one of these options:
 ## SAP system level prerequisites
 
 - `sapcontrol` and `saphostctrl` exe files must exist on ASCS, App server and Database.
-  - File path on Linux VMs: `/usr/sap/hostctrl/exe`
-  - File path on Windows VMs: `C:\Program Files\SAP\hostctrl\exe\`
-- Make sure the **`sapstartsrv`** process is running on all **SAP instances** and for **SAP `hostctrl` agent** on all the VMs in the SAP system.
-  - To run, `hostctrl sapstartsrv` use this command for Linux VMs: `hostexecstart -start`
+  - File path on Linux virtual machines: `/usr/sap/hostctrl/exe`
+  - File path on Windows virtual machines: `C:\Program Files\SAP\hostctrl\exe\`
+- Make sure the **`sapstartsrv`** process is running on all **SAP instances** and for **SAP `hostctrl` agent** on all the virtual machines in the SAP system.
+  - To run, `hostctrl sapstartsrv` use this command for Linux virtual machines: `hostexecstart -start`
   - To run the instance, `sapstartsrv` use the command: `sapcontrol -nr 'instanceNr' -function StartService S0S`
-  - To check status of `hostctrl sapstartsrv` use this command for Windows VMs: `C:\Program Files\SAP\hostctrl\exe\saphostexec –status`
-- For successful discovery and registration of the SAP system, ensure there's network connectivity between ASCS, App and DB VMs. `ping` command for App instance hostname must be successful from ASCS VM. `ping` for Database hostname must be successful from App server VM.
+  - To check status of `hostctrl sapstartsrv` use this command for Windows virtual machines: `C:\Program Files\SAP\hostctrl\exe\saphostexec –status`
+- For successful discovery and registration of the SAP system, ensure there's network connectivity between ASCS, App and DB virtual machines. `ping` command for App instance hostname must be successful from ASCS virtual machine. `ping` for Database hostname must be successful from App server virtual machine.
 - On App server profile, `SAPDBHOST`, `DBTYPE`, `DBID` parameters must have the right values configured for the discovery and registration of Database instance details.
 
 ## Further details
 
 - Review the article [Prepare network for infrastructure deployment](/azure/sap/center-sap-solutions/prepare-network) to complete steps necessary for deploying your SAP system on Azure.
+- Detailed steps are available in AZ-120 GitHub lab Module 5: Design and implement an infrastructure to support SAP workloads on Azure - [Exercise 1: Implement prerequisites for deploying SAP workloads in Azure by using Azure Center for SAP solutions](https://go.microsoft.com/fwlink/?linkid=2261024&clcid=0x409).

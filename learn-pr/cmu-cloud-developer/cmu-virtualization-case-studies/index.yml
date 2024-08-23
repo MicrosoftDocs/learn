@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Virtualization case study
 summary: Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.

@@ -63,8 +63,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.languages.csharp-evaluate-boolean-expressions
 - learn.languages.csharp-code-blocks

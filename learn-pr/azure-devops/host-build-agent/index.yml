@@ -4,7 +4,7 @@ metadata:
   title: Host your own build agent in Azure Pipelines
   description: Work with guidance from the Space Game web team to set up your build agent running on-premises or on an Azure virtual machine running in the cloud.
   ms.custom: devdivchpfy22
-  ms.date: 11/28/2023
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   ms.topic: module
@@ -38,8 +38,6 @@ roles:
 products:
 - azure-devops
 - azure
-subjects:
-- development-tools
 units:
 - learn.azdo.host-build-agent.1-introduction
 - learn.azdo.host-build-agent.2-choose-a-build-agent

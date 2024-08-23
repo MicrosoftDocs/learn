@@ -21,8 +21,6 @@ roles:
 - student
 products:
 - static-web-apps
-subjects:
-- development-tools
 modules:
 - learn.language.react-get-started
 - learn.language.react-work-with-components-and-data

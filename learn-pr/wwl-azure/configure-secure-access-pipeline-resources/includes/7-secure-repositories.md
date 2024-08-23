@@ -62,6 +62,6 @@ Try to integrate your pipeline with multiple repositories and manage the access 
 
 For more information about secure repos from pipelines, see:
 
-- [Secure access to Azure Repos from pipelines.](https://learn.microsoft.com/azure/devops/pipelines/security/secure-access-to-repos)
-- [Check out multiple repositories in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/repos/multi-repo-checkout)
-- [AZ-400: Implement security and validate code bases for compliance](https://learn.microsoft.com/training/paths/az-400-implement-security-validate-code-bases-compliance/)
+- [Secure access to Azure Repos from pipelines.](/azure/devops/pipelines/security/secure-access-to-repos)
+- [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout)
+- [AZ-400: Implement security and validate code bases for compliance](/training/paths/az-400-implement-security-validate-code-bases-compliance/)

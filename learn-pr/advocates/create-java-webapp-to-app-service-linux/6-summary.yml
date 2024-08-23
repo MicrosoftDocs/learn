@@ -6,11 +6,9 @@ metadata:
   description: Summary and cleanup of Azure resources.
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 12/04/2020
+  ms.date: 05/03/2023
   ms.topic: unit
-  ms.custom:
-    - team=cloud_advocates
-    - devx-track-extended-java
+  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
   ms.contributors: yoterada-12142020
 durationInMinutes: 2
 content: |

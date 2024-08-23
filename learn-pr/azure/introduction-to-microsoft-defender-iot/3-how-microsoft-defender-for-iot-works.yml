@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: How Microsoft Defender for IoT works
   description: Learn how Microsoft Defender for IoT works.
-  ms.date: 02/23/2022
-  author: batamig
-  ms.author: bagol
+  ms.date: 04/03/2023
+  author: limwainstein
+  ms.author: lwainstein
   manager: raynew
   ms.topic: unit
 durationInMinutes: 3

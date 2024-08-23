@@ -30,8 +30,6 @@ roles:
 products:
 - azure-devops
 - azure
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.bash-introduction
 - learn.student-evangelism.unix-shell-wrangle-data

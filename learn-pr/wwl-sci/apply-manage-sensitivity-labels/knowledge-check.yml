@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a benefit of applying sensitivity labels to Microsoft Teams channels?"
+    choices:
+    - content: "It enforces data retention policies specific to each channel's content."
+      isCorrect: false
+      explanation: "Incorrect: While sensitivity labels can enforce data governance across Microsoft 365, applying them to Teams channels doesn't configure data retention policies based on content type within those channels."
+    - content: "It ensures that channel meetings and chats inherit the label's protection settings."
+      isCorrect: true
+      explanation: "Correct: Applying sensitivity labels to Teams channels is beneficial because it ensures that meetings and chats within those channels inherit the label's protection settings."
+    - content: "It restricts channel access based on the user's location and device compliance."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels control access to content based on classification and don't directly restrict channel access based on the user's location or device compliance. This is managed through other security policies in Microsoft 365."
+  - content: "How can sensitivity labels be applied to existing SharePoint sites?"
+    choices:
+    - content: "By navigating to the SharePoint admin center and selecting the desired label under site settings."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels are applied to existing sites in the SharePoint admin center under site settings."
+    - content: "By creating a new site and choosing the sensitivity label during setup."
+      isCorrect: false
+      explanation: "Incorrect: This option describes applying labels to new sites, not existing ones."
+    - content: "By adjusting the site permissions to restrict access."
+      isCorrect: false
+      explanation: "Incorrect: Adjusting site permissions doesn't directly involve sensitivity labels, which are applied separately for data classification and access control."
+  - content: "What settings can sensitivity labels adjust to improve meeting security?"
+    choices:
+    - content: "Recording permissions and access to meeting transcripts."
+      isCorrect: false
+      explanation: "Incorrect: Meeting recording permissions and access to meeting transcripts are important aspects of meeting security, but sensitivity labels don't control them."
+    - content: "Meeting scheduling options and calendar integration settings."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels focus on access control and encryption during meetings. Meeting scheduling options and calendar integration settings, while important for meeting organization, sensitivity labels aren't directly controlled by sensitivity labels."
+    - content: "Who can bypass the lobby, who can present, and encryption for meeting video and audio."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels can adjust settings like who can bypass the lobby, who can present, and encryption for meeting video and audio, enhancing meeting security."
+  - content: "What file types are fully compatible with sensitivity labels in Office apps?"
+    choices:
+    - content: "Image formats such as .jpg and .png."
+      isCorrect: false
+      explanation: "Incorrect: Image formats aren't directly relevant to sensitivity labels in Office apps."
+    - content: "Open XML formats such as .docx, .xlsx, and .pptx."
+      isCorrect: true
+      explanation: "Correct: Open XML formats such as .docx, .xlsx, and .pptx are fully compatible with sensitivity labels in Office apps, allowing effective data protection."
+    - content: "Legacy and nonstandard formats such as .doc and .xls."
+      isCorrect: false
+      explanation: "Incorrect. Legacy and nonstandard formats might have compatibility limitations with sensitivity labels."

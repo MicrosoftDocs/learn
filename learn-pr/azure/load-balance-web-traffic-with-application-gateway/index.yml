@@ -3,11 +3,12 @@ uid: learn.load-balance-web-traffic-with-application-gateway
 metadata:
   title: Load balance your web service traffic with Application Gateway
   description: In this module, you'll learn to improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
-  ms.date: 12/05/2023
-  author: vhorne
-  ms.author: victorh
+  manager: kumud
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: module
-  ms.service: application-gateway
+  ms.service: azure-application-gateway
 title: Load balance your web service traffic with Application Gateway
 summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
 abstract: | 

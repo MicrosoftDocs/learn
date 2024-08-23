@@ -24,7 +24,6 @@ products:
   - azure-machine-learning 
   - azure-data-science-vm
 subjects:
-- data-ai
 - virtual-machine
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction

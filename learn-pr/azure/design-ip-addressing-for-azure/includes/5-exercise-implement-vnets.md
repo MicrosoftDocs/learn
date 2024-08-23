@@ -36,7 +36,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name CoreServicesVnet \
         --address-prefixes 10.20.0.0/16 \
         --location westus
@@ -46,25 +46,25 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name CoreServicesVnet \
         --name GatewaySubnet \
         --address-prefixes 10.20.0.0/27
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name CoreServicesVnet \
         --name SharedServicesSubnet \
         --address-prefixes 10.20.10.0/24
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name CoreServicesVnet \
         --name DatabaseSubnet \
         --address-prefixes 10.20.20.0/24
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name CoreServicesVnet \
         --name PublicWebServiceSubnet \
         --address-prefixes 10.20.30.0/24
@@ -74,7 +74,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name CoreServicesVnet \
         --output table
     ```
@@ -96,7 +96,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ManufacturingVnet \
         --address-prefixes 10.30.0.0/16 \
         --location northeurope
@@ -106,25 +106,25 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ManufacturingVnet \
         --name ManufacturingSystemSubnet \
         --address-prefixes 10.30.10.0/24
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet1 \
         --address-prefixes 10.30.20.0/24
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet2 \
         --address-prefixes 10.30.21.0/24
 
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet3 \
         --address-prefixes 10.30.22.0/24
@@ -134,7 +134,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ManufacturingVnet \
         --output table
     ```
@@ -156,7 +156,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ResearchVnet \
         --address-prefixes 10.40.40.0/24 \
         --location westindia
@@ -166,7 +166,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ResearchVnet \
         --name ResearchSystemSubnet \
         --address-prefixes 10.40.40.0/24
@@ -176,7 +176,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --vnet-name ResearchVnet \
         --output table
     ```

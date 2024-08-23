@@ -1,23 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-repositories
 metadata:
-  title: Manage Git repositories
+  title: Manage and configure repositories
   description: "This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub."
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-title: Manage Git repositories
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Manage and configure repositories
 summary: This module explores how to work with large repositories, purge repository data and manage and automate release notes using GitHub.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Understand large Git repositories
-  *   Explain VFS for Git
-  *   Use Git Large File Storage (LFS)
-  *   Purge repository data
-  *   Manage and Automate Release Notes with GitHub
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Understand large Git repositories
+
+  -   Explain VFS for Git
+
+  -   Use Git Large File Storage (LFS)
+
+  -   Purge repository data
+
+  -   Manage and Automate Release Notes with GitHub
+prerequisites: None
 iconUrl: /training/achievements/6-manage-git-repositories.svg
 levels:
 - advanced
@@ -40,14 +48,20 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.manage-git-repositories.introduction
 - learn.wwl.manage-git-repositories.work-large-repositories
+- learn.wwl.manage-git-repositories.explore-monorepo-versus-multiple-repos
+- learn.wwl.manage-git-repositories.implement-change-log
+- learn.wwl.manage-git-repositories.implement-scalar-cross-repo
+- learn.wwl.manage-git-repositories.recover-specific-data-git-commands
 - learn.wwl.manage-git-repositories.purge-repository-data
 - learn.wwl.manage-git-repositories.manage-releases-github-repos
 - learn.wwl.manage-git-repositories.automate-release-notes-github
+- learn.wwl.manage-git-repositories.create-api-documentation
+- learn.wwl.manage-git-repositories.implement-automation-git-history-documentation
+- learn.wwl.manage-git-repositories.configure-source-control-repository-permissions-use-github
+- learn.wwl.manage-git-repositories.configure-github-tags-organize-repositories
 - learn.wwl.manage-git-repositories.knowledge-check
 - learn.wwl.manage-git-repositories.summary
 badge:

@@ -8,7 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.devlang: python
 title: Python functions
 summary: The next step after using procedural code is to write modular software by using functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
@@ -27,8 +27,6 @@ roles:
   - student
 products: 
   - azure
-subjects:
-- development-tools
 units:
 - learn.beginner-python.functions-python.introduction
 - learn.beginner-python.functions-python.function-basics

@@ -98,10 +98,10 @@ Start by creating an empty folder for your project, and then initialize a Git re
     git status
     ```
 
-    Git responds with this output, which indicates that `master` is the current branch. (It's also the only branch.) So far, so good.
+    Git responds with this output, which indicates that `main` is the current branch. (It's also the only branch.) So far, so good.
 
    ```output
-    On branch master
+    On branch main
 
     No commits yet
 

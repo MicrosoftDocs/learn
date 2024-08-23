@@ -27,8 +27,6 @@ roles:
 - student
 products: 
 - azure-machine-learning
-subjects:
-- development-tools
 modules:
 - learn.tensorflow.intro-machine-learning-keras
 - learn.tensorflow.intro-computer-vision

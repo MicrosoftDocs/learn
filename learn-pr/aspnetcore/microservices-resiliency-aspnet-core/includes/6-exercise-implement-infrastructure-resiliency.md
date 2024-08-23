@@ -18,17 +18,16 @@ Before applying Linkerd, revert the app to a state before code-based resiliency 
     git checkout Program.cs
     git checkout Store.csproj
     cd ..
-    docker-compose build
+    dotnet publish /p:PublishProfile=DefaultContainer
     ```
 
-### Install Kubernetes 
+### Install Kubernetes
 
-In your codespace you'll now install Kubernetes and k3d. k3d is a tool that runs a single-node Kubernetes cluster inside a VM on your local machine. It's useful for testing Kubernetes deployments locally and runs well inside a codespace.
+In your codespace, install Kubernetes and k3d. k3d is a tool that runs a single-node Kubernetes cluster inside a Virtual Machine (VM) on your local machine. It's useful for testing Kubernetes deployments locally and runs well inside a codespace.
 
 Run these commands to install Kubernetes and MiniKube:
 
 ```bash
-
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/kubernetes-apt-keyring.gpg
 
 echo 'deb [signed-by=/etc/apt/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
@@ -42,15 +41,15 @@ k3d cluster create devcluster --config k3d.yml
 
 ### Deploy the eShop services to Docker Hub
 
-The local images of your services that you've built need to be hosted in a container registry to be deployable into Kubernetes. In this unit, you'll use Docker Hub as your container registry.
+The local images of your services that you build need to be hosted in a container registry to be deployable into Kubernetes. In this unit, you use Docker Hub as your container registry.
 
 Run these commands to push your images to Docker Hub:
 
 ```bash
 sudo docker login
 
-sudo docker tag productservice [your username]/productservice
-sudo docker tag storeimage [your username]/storeimage
+sudo docker tag products [your username]/productservice
+sudo docker tag store [your username]/storeimage
 
 sudo docker push [your username]/productservice
 sudo docker push [your username]/storeimage
@@ -58,10 +57,10 @@ sudo docker push [your username]/storeimage
 
 ### Convert your docker-compose file to Kubernetes manifests
 
-At the moment you've defined how your app runs in docker. Kubernetes uses a different format for defining how your app runs. You'll use a tool called Kompose to convert your docker-compose file to Kubernetes manifests.
+At the moment, you define how your app runs in docker. Kubernetes uses a different format for defining how your app runs. You can use a tool called Kompose to convert your docker-compose file to Kubernetes manifests.
 
-1. You need to edit these files to use the images you've pushed to Docker Hub. 
-1. In the codespace, open the file **backend-deploy.yml**.
+1. You need to edit these files to use the images you pushed to Docker Hub.
+1. In the codespace, open the file *backend-deploy.yml*.
 1. Change this line:
 
     ```yaml
@@ -70,7 +69,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     ```
 
     Replace the placeholder [YOUR DOCKER USER NAME] with your actual Docker username.
-    
+
 1. Repeat these steps for the **frontend-deploy.yml** file.
 1. Change this line:
 
@@ -81,22 +80,6 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     ```
 
     Replace the placeholder [YOUR DOCKER USER NAME] with your actual Docker username.
-    
-1. Switch to the **PORTS** tab, point at the **Forwarded Address** for the **Back End (32001)** port, and then select the **Copy Local Address** icon.
-
-1. Paste this URL into the `ImagePrefix` environment variable in the **frontend-deploy.yml** file, replacing the text `http://localhost`. Make sure that `/images` appears at the end of the line: 
-
-    ```yaml
-    env:
-        - name: ASPNETCORE_URLS
-          value: http://*:80
-        - name: ProductEndpoint
-          value: http://productsbackend
-        - name: ImagePrefix
-          value: https://studious-fortnight-4g4rx9g47wg249w-32001.app.github.dev/images
-	```
-
-    Your codespace will have a different URL for *studious-fortnight-4g4rx9g47wg249w-32001*.
 
 1. Deploy the eShop app into Kubernetes:
 
@@ -104,7 +87,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     kubectl apply -f backend-deploy.yml,frontend-deploy.yml  
     ```
 
-    You should see output similar to this:
+    You should see output similar to the following messages:
 
     ```bash
     deployment.apps/productsbackend created
@@ -119,7 +102,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
     kubectl get pods
     ```
 
-    You should see output similar to this:
+    You should see output similar to the following messages:
 
     ```bash
     NAME                        READY   STATUS    RESTARTS   AGE
@@ -131,7 +114,7 @@ At the moment you've defined how your app runs in docker. Kubernetes uses a diff
 
 ### Install linkerd
 
-The dev container needs Linkerd CLI to be installed. Run the following command to confirm that Linkerd prerequisites have been satisfied:
+The dev container needs Linkerd CLI to be installed. Run the following command to confirm that Linkerd prerequisites are satisfied:
 
 ```bash
 curl -sL run.linkerd.io/install | sh
@@ -181,7 +164,7 @@ Status check results are √
 
 ### Deploy Linkerd to Kubernetes
 
-First, run the following command to install the CRDs:
+First, run the following command to install the Custom Resource Definitions (CRDs):
 
 ```bash
 linkerd install --crds | kubectl apply -f -
@@ -297,14 +280,14 @@ Status check results are √
 
 ## Configure the app to use Linkerd
 
-Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged.
+Linkerd is deployed, but it isn't configured. The app's behavior is unchanged.
 
 Linkerd is unaware of service internals and can't determine whether it's appropriate to retry a failed request. For example, it would be a bad idea to retry a failed HTTP POST for a payment. A *service profile* is necessary for this reason. A service profile is a custom Kubernetes resource that defines routes for the service. It also enables per-route features, such as retries and timeouts. Linkerd only retries routes configured in the service profile manifest.
 
 For brevity, implement Linkerd only on the aggregator and coupon services. To implement Linkerd for those two services, you will:
 
 * Modify the eShop deployments so Linkerd creates its proxy container in the pods.
-* Add a service profile object to the cluster to configure retries on the coupon service's route.
+* To configure retries on the coupon service's route, add a service profile object to the cluster.
 
 ### Modify the eShop deployments
 
@@ -320,7 +303,7 @@ The services must be configured to use Linkerd proxy containers.
           labels: 
     ```
 
-1. Add the `linkerd.io/inject: enabled` annotation to the **fromkend-deploy.yml** file in the same place.
+1. Add the `linkerd.io/inject: enabled` annotation to the **frontend-deploy.yml** file in the same place.
 
 1. Update the deployments in the Kubernetes cluster:
 
@@ -386,21 +369,22 @@ serviceprofile.linkerd.io/backend created
 ```
 ### Install monitoring on the service mesh
 
-Linkerd has extensions to give you additional features. You'll install the viz extension and view the status of the app in Linkerd's dashboard.
+Linkerd has extensions to give you extra features. Install the viz extension and view the status of the app in Linkerd's dashboard.
 
 1. In the terminal, run this command to install the extension:
 
     ```bash
     linkerd viz install | kubectl apply -f -
     ```
+
 1. View the dashboard with this command:
 
    ```bash
    linkerd viz dashboard
    ```
 
-   Go to the **PORTS** tab and you'll see a new port that's been forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
-   
+   Go to the **PORTS** tab and to see a new port forwarded with a process of **linkerd viz dashboard** running. Select the **Open in Browser** to open the dashboard.
+
 1. In the Linkerd dashboard, select **Namespaces**.
 1. Under HTTP Metrics, select **default**.
 
@@ -415,19 +399,21 @@ After the redeployed containers are healthy, use the following steps to test the
     ```bash
     kubectl get pods --all-namespaces
     ```
+
 1. Stop all the product service pods:
 
     ```bash
     kubectl scale deployment productsbackend --replicas=0
     ```
 
-1. Go to the eShop web app and try to view the products. There will be a delay until the error message, "There is a problem loading our products. Please try again later."
+1. Go to the eShop web app and try to view the products. There's a delay until the error message, *"There's a problem loading our products. Please try again later."*
 
 1. Restart the product service pods:
 
     ```bash
     kubectl scale deployment productsbackend --replicas=1
     ```
+
 1. The app should now display the products.
 
 Linkerd follows a different approach to resiliency than what you saw with code-based resilience. Linkerd transparently retried the operation multiple times in quick succession. The app didn't need to be changed to support this behavior.

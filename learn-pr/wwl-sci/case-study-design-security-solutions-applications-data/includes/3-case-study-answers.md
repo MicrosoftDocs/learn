@@ -60,7 +60,7 @@ The primary cloud service that helps enforce DevSecOps practices when using GitH
 Microsoft Azure Well-Architected Framework offers guidance regarding securing code deployments and infrastructure in the areas of code deployment security, credential scanning, accelerated rollback and roll-forward that address critical bugs and code updates outside of the normal deployment lifecycle
 
 
-To prevent credentials from being stored in the source code or configuration files, integrate code scanning tools within the CI/CD pipeline. This can be implemented throughout the entire application lifecycle. For example, during design, code analyzers can prevent credentials from getting pushed to the source code repository. During build, pipeline add-ons can discover credentials in the source code. During CI process, dependency scanning. Dynamic application security testing (DAST) and static application security testing (SAST) allow for testing applications in use. 
+To prevent credentials from being stored in the source code or configuration files, integrate code scanning tools within the CI/CD pipeline. This can be implemented throughout the entire application lifecycle. For example, during design, code analyzers can prevent credentials from getting pushed to the source code repository. During build, pipeline add-ons can discover credentials in the source code. During the CI process, use dependency scanning. Dynamic application security testing (DAST) and static application security testing (SAST) allow for testing applications in use. 
 
 It's essential that any security-sensitive artifacts, such as secrets or private keys, are stored outside of version control systems and pipelines in a managed key store, such as Azure Key Vault. 
 

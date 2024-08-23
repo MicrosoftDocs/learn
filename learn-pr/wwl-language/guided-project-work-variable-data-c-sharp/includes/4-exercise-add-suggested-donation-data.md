@@ -24,7 +24,7 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
 1. Create the `suggestedDonation` variable below the declaration for `animalNickname`.
 
-    The declaration for the `suggestedDonations` is added with the following code:
+    The declaration for the `suggestedDonation` is added with the following code:
 
     ```csharp
     string suggestedDonation = "";
@@ -50,7 +50,7 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
 1. Take a minute to review `case 0:` inside the switch statement following comment #4.
 
-    The following code that defines sample data for the first pet before the `suggestDonation` data is created.  It would fit nicely below the `animalNickName`!
+    The following code that defines sample data for the first pet before the `suggestedDonation` data is created.  It would fit nicely below the `animalNickname`!
 
     ```csharp
         case 0:
@@ -63,12 +63,13 @@ You need to create a new variable to hold suggested donations and expand the `ou
             break;
     ```
 
-1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `case 3:` with the following values:
+1. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through `default:` with the following values:
 
     - Case 0: `suggestedDonation = "85.00";`
     - Case 1: `suggestedDonation = "49.99";`
     - Case 2: `suggestedDonation = "40.00";`
     - Case 3: `suggestedDonation = "";`
+    - default: `suggestedDonation = "";`
 
     The following code shows `case 0:` code with the addition of 'suggestedDonation':
 
@@ -127,7 +128,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 1. Ensure that your validation code is in the right place!
 
-    The two lines you added should appear in the code as the top two lines of the following code :
+    The two lines you added should appear in the code as the top two lines of the following code:
 
     ```csharp
         if (!decimal.TryParse(suggestedDonation, out decimalDonation)){

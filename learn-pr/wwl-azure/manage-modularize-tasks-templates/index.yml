@@ -3,19 +3,25 @@ uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
   title: Manage and modularize tasks and templates
   description: "Manage and modularize tasks and templates"
-  ms.date: 11/01/2022
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Manage and modularize tasks and templates
 summary: This module describes the creation of task and variable groups and using release variables and stage variables in your pipeline.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Use and manage task and variable groups
-  *   Use release variables and stage variables in your release pipeline
-  *   Use variables in release pipelines
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Use and manage task and variable groups.
+
+  -   Use release variables and stage variables in your release pipeline.
+
+  -   Use variables in release pipelines.
+prerequisites: None
 iconUrl: /training/achievements/3-manage-and-modularize-tasks-and-templates.svg
 levels:
 - advanced
@@ -44,9 +50,7 @@ subjects:
 units:
 - learn.wwl.manage-modularize-tasks-templates.introduction
 - learn.wwl.manage-modularize-tasks-templates.examine-task-groups
-- learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-task-groups
 - learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
-- learn.wwl.manage-modularize-tasks-templates.understand-variable-groups
 - learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-variable-groups
 - learn.wwl.manage-modularize-tasks-templates.knowledge-check
 - learn.wwl.manage-modularize-tasks-templates.summary

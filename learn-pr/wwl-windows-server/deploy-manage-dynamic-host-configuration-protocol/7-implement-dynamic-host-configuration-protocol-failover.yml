@@ -4,12 +4,12 @@ title: Implement DHCP Failover
 metadata:
   title: Implement DHCP Failover
   description: "Implement DHCP Failover"
-  ms.date: 10/20/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/7-implement-dynamic-host-configuration-protocol-failover.md)]

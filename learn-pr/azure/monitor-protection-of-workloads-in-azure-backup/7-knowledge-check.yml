@@ -8,9 +8,8 @@ metadata:
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
   ms.author: v-abhmallick
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
-  ms.prod: learning-azure
 durationInMinutes: 10
 quiz:
   questions:

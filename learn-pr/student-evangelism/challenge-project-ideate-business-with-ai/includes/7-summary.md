@@ -1,7 +1,7 @@
 ## Learnings
 Key takeaways from this step:
 
-- **Using Bing Chat to expound on ideas:** we only specified a few bullet points and it did the work to expand that
+- **Using Microsoft Copilot to expound on ideas:** we only specified a few bullet points and it did the work to expand that
 - **Specifying tone** - we specified a 'business pitch tone'
 - **Exclusion** – we clearly outlined what we didn't want it to (don't name or brand the idea)
 

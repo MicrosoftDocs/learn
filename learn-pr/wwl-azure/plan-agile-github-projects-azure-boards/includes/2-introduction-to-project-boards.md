@@ -1,4 +1,3 @@
-
 ## Project Boards
 
 During the application or project lifecycle, it's crucial to plan and prioritize work. With Project boards, you can control specific feature work, roadmaps, release plans, etc.
@@ -29,7 +28,7 @@ For more information about Project boards, see:
 
  -  [Creating a project board](https://docs.github.com/articles/creating-a-project-board).
  -  [Editing a project board](https://docs.github.com/articles/editing-a-project-board).
- -  [Copying a project board](https://docs.github.com/articles/copying-a-project-board).
+ -  [Copying a project board](https://docs.github.com/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project).
  -  [Adding issues and pull requests to a project board](https://docs.github.com/articles/adding-issues-and-pull-requests-to-a-project-board).
  -  [Project board permissions for an organization](https://docs.github.com/articles/project-board-permissions-for-an-organization).
 

@@ -4,10 +4,12 @@ title: Compare the Pricing and Total Cost of Ownership calculators
 metadata:
   title: Compare the Pricing and Total Cost of Ownership calculators
   description: "Compare the Pricing and Total Cost of Ownership calculators"
-  ms.date: 08/16/2023
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/3-compare-pricing-total-cost-of-ownership-calculators.md)]

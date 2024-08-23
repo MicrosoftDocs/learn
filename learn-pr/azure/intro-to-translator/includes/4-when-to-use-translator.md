@@ -1,4 +1,4 @@
-The need for translation to facilitate our work and social communication is growing every day. While translation is already accessible in products people use daily, such as web browsers, Office365, and search engines, users of many other applications can benefit from more inclusive, accessible technologies.
+The need for translation to facilitate our work and social communication is growing every day. While translation is already accessible in products people use daily, such as web browsers, Office 365, and search engines, users of many other applications can benefit from more inclusive, accessible technologies.
 
 ## Web localization
 
@@ -14,13 +14,13 @@ Translator can help Business intelligence (**BI**) applications where data is in
 
 ## Online learning
 
-The global reach of online courses' means that educational material needs to serve a broader audience. With Translator, course materials can be translated into multiple languages while maintaining the existing layout. Overall creating wider accessibility to help students fully grasp the course material, no matter their language background.
+The global reach of online courses' means that educational material needs to serve a broader audience. With Translator, course materials can be translated into multiple languages while maintaining the existing layout. Creating wider accessibility overall to help students fully grasp the course material, no matter their language background.
 
-Audio instructions can also be translated and captioned in real-time with Azure AI Speech, allowing students to follow conversations in the language they're most comfortable with. The service also filters out unnecessary filler words, such as "um's", stutters, and repetitions- making the conversation clearer.
+Audio instructions can also be translated and captioned in real-time with Azure AI Speech. Allowing students to follow conversations in the language they're most comfortable with. The service also filters out unnecessary filler words, such as "hmm's," stutters, and repetitions - making the conversation clearer.
 
 ## Assistive technology
 
-For people with learning differences, translation services can make information more accessible. As an example, the translation of traditional Chinese to simplified Chinese, results in the number of characters and their structure becoming easier to understand. This service can make text easier to read and remember. It can create inclusive environments for students who struggle with text comprehension due to learning differences, or language learners who may not fully understand the language.
+For people with learning differences, translation services can make information more accessible. As an example, the translation of traditional Chinese to simplified Chinese, results in the number of characters and their structure becoming easier to understand. This service can make text easier to read and remember. It can create inclusive environments for students who struggle with text comprehension due to learning differences, or language learners who might not fully understand the language.
 
 ## Modern work environments
 

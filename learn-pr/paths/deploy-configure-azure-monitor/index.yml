@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/13/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: learning-path
 title: Deploy and configure Azure Monitor
 prerequisites: |
   - Understand the basic functionality of Azure Monitor and Log Analytics workspaces.

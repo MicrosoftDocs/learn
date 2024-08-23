@@ -1,35 +1,17 @@
-The availability of LLMs has led to the emergence of a new category of computing known as copilots. Copilots are often integrated into other applications and provide a way for users to get help with common tasks from a generative AI model. Copilots are based on a common architecture, so developers can build custom copilots for various business-specific applications and services.
+The availability of language models has led to the emergence of new ways to interact with applications and systems through digital *copilots*. Copilots are generative AI assistants that are integrated into applications often as chat interfaces. They provide contextualized support for common tasks in those applications. 
 
-You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results.
+Microsoft Copilot is integrated into a wide range of Microsoft applications and user experiences. It is based on an open architecture that enables third-party developers to create their own plug-ins to extend or customize the user experience with Microsoft Copilot. Additionally, third-party developers can create their own copilots using the same open architecture.
 
-It's helpful to think of how the creation of a large language model is related to the process of creating a copilot application: 
+Business users can use copilots to boost their productivity and creativity with AI-generated content and automation of tasks. Developers can extend copilots by creating plug-ins that integrate them into business processes and data, or even create custom copilots to build generative AI capabilities into apps and services.
 
-1. A large amount of data is used to train a large language model. 
-2. Services such as Azure OpenAI Service make pretrained models available. Developers can use these pretrained models as they are, or fine-tune them with custom data.
-3. Deploying a model makes it available for use in applications.
-4. Developers can build copilots that submit prompts to models and generate content for use in applications.
-5. Business users can use copilots to boost their productivity and creativity with AI-generated content.
+Copilots have the potential to revolutionize the way we work by helping with first drafts, information synthesis, strategic planning, and much more. The goal of copilot features is to empower people to be smarter, more productive, more creative, and connected to the people and things around them.
 
-Copilots have the potential to revolutionize the way we work by helping with first drafts, information synthesis, strategic planning, and much more.  
+![A screenshot of Microsoft Copilot in the Edge browser.](../media/copilot.png)
 
-## Microsoft Copilot
+## Levels of Copilot adoption
 
-The name `copilot` originates from Microsoft and is used across-industry to describe first and third-party copilots. Microsoft refers to Microsoft Copilot as first-party, and plugins developed by other companies as third-party copilots.
+In general, you can categorize industry and personal Copilot adoption into three buckets: off-the-shelf use, extending Microsoft Copilot, and custom development. 
 
-Microsoft Copilot features can be found throughout commonly used applications. The goal of these features is to empower people to be smarter, more productive, more creative, and connected to the people and things around them.
-
-For example, [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true) can be used with Microsoft Bing search engine to generate natural language answers to questions based on context rather than just search results of indexed pages.  
-
-![Screenshot of Microsoft Copilot landing page.](../media/microsoft-copilot-landing-page.png)
-
-![Screenshot of Microsoft Copilot result for a prompt 'write a cover letter for a person with a bachelors degree in history'.](../media/microsoft-copilot-example-write-letter.png)
-
-Another example is Microsoft Copilot for Microsoft 365, which works alongside you in productivity and communication apps such as PowerPoint and Outlook, assisting you in creating effective documents, spreadsheets, presentations, emails, and more. 
-
-![Screenshot of Microsoft Copilot for Microsoft 365 in PowerPoint with a blank slide.](../media/microsoft-copilot-for-powerpoint-start.png)
-
-![Screenshot of result of Microsoft Copilot for Microsoft 365 in PowerPoint after asking Copilot to build a presentation about coffee. The slides now show content about coffee.](../media/microsoft-copilot-for-powerpoint-result.png)
-
-Yet another example is GitHub Copilot, which provides support to software developers, helping them write, document, and test code.
-
-![Screenshot of GitHub copilot.](../media/github-copilot.gif)
+- You can use off-the-shelf copilots, like Microsoft Copilot for Microsoft 365 to empower users and increase their productivity.
+- You can extend Microsoft Copilot to support custom business processes or tasks, using your own data to control how Copilot responds to user prompts in your organization.
+- You can build custom copilots to integrate generative AI into business apps or to create unique experiences for your customers. 

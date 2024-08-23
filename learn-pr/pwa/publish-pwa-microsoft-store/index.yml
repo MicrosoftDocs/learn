@@ -8,7 +8,7 @@ metadata:
   author: beth-panx
   ms.author: xupa
   ms.topic: module-standard-task-based
-  ms.prod: microsoft-edge
+  ms.service: microsoft-edge
 summary: >
   Master PWA testing across devices and platforms while learning to package and submit your app to the Microsoft Store. Gain insights into compliance, PWABuilder usage, and Microsoft Partner Center navigation for successful PWA publication.
 abstract: |

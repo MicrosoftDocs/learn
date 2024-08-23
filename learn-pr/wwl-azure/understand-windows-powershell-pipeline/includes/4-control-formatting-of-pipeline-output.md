@@ -64,3 +64,4 @@ To send the **DisplayName** property of all the Group Policy Objects (GPOs) in t
 ```powershell
 Get-GPO -all | fw -Property DisplayName -Column 3
 ```
+

@@ -3,7 +3,8 @@ uid: learn.aks-secrets-configure-app
 metadata:
   title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
   description: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS).
-  ms.date: 10/09/2023
+  manager: rayoflores
+  ms.date: 01/26/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: module
@@ -11,7 +12,7 @@ metadata:
 title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
 summary: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS). Deploy a complete application using Secrets and ConfigMaps to store relevant data.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Understand configuration concepts behind Kubernetes workloads, such as Secrets and ConfigMaps.
     - Deploy a complete application, securely storing application secrets.
     - Deploy a workload-based configuration for a web application.

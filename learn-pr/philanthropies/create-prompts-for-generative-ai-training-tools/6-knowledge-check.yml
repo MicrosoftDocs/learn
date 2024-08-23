@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Create effective prompts for generative AI training tools' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/27/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Why is it beneficial to ask an AI model to create various formats (tables, outlines, diagrams, flow charts) when creating an output from a dataset?"
+      choices:
+        - content: "It helps create more complex and interesting data for learners."
+          isCorrect: false
+          explanation: "Incorrect. While this approach could make the data look more interesting, the primary benefit is to help learners to understand complex datasets, not to make it more complex."
+        - content: "It helps learners visualize information, easing comprehension and interpretation."
+          isCorrect: true
+          explanation: "Correct. Varied formats can help users visualize complex datasets, which can make it easier for them to comprehend and interpret the information."
+        - content: "It creates professional data without much user effort."
+          isCorrect: false
+          explanation: "Incorrect. While data in different formats might make the data look more professional, the primary benefit is that they help learners visualize complex information."
+    - content: "What is the primary reason for being specific in the instruction part of a prompt?"
+      choices:
+        - content: "To make the prompt longer, which helps the AI model produce an output."
+          isCorrect: false
+          explanation: "Incorrect. The length of the prompt isn't the primary concern. The main reason for being specific is to ensure the model knows exactly what is expected from it and that doesn't necessarily require a long prompt."
+        - content: "To ensure the model knows exactly what is expected from it."
+          isCorrect: true
+          explanation: "Correct. The instructions should be clear and specific, so that the model knows exactly what you expect from it."
+        - content: "To make the prompt more interesting and engaging for the AI model."
+          isCorrect: false
+          explanation: "Incorrect. While an interesting prompt might engage the model, the primary reason for being specific is to ensure the model knows exactly what is expected from not to entertain the model."
+    - content: "Why is it important to provide relevant and appropriate context in a prompt?"
+      choices:
+        - content: "To ensure the model can create a complex output."
+          isCorrect: false
+          explanation: "Incorrect. The complexity of the prompt isn't the primary concern. The main reason for providing relevant and appropriate context is to ensure the model can tailor its output to your needs."
+        - content: "To make the output more professional and accurate."
+          isCorrect: false
+          explanation: "Incorrect. While a professional prompt might be needed in certain situations, the primary reason for providing relevant and appropriate context is to ensure the model can tailor its output to your needs."
+        - content: "To ensure the model can tailor its output to your needs."
+          isCorrect: true
+          explanation: "Correct. The context should be relevant and appropriate, so that the model can tailor its output to your needs."
+          

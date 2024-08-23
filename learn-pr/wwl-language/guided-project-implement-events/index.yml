@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-implement-events
 metadata:
   title: 'Guided project: Implement events'
   description: "This guided project demonstrates working with events and delegates."
-  ms.date: 01/17/2024
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: module-intro-to-product
@@ -22,6 +22,7 @@ prerequisites: |
   - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
   - Experience with basic C# syntax rules.
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -3,7 +3,7 @@ The injection category describes instances when an application accepts data as i
 
 Let's consider how your team's application handles input data.
 
-.NET provides built-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the built-in validators that can spare you the effort of writing and maintaining custom code.
+.NET provides built-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card, or date validators are only a few examples of the built-in validators that can spare you the effort of writing and maintaining custom code.
 
 ```csharp
 using System.ComponentModel.DataAnnotations; ​
@@ -22,8 +22,9 @@ public class ExampleModel ​
 
 ### SQL injection
 
-Injection attacks can take many forms, that is, SQL or command injection.
-The following statement is a simple example of SQL injection, where `username` in an unsanitised query input parameter:
+Injection attacks can take many forms; for example, SQL or command injection.
+
+The following statement is a simple example of SQL injection, where `username` in an unsanitized query input parameter:
 
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
@@ -35,14 +36,14 @@ In absence of user input validation, a malicious actor could supplement a genuin
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-As a result, the table containing user information is removed from the database. In a similar way, statements can be crafted to extract data prior to data table deletion.
+As a result, the table containing user information is removed from the database. In a similar way, you can craft statements to extract data prior to data table deletion.
 
 ### File input validation
 
 In client-server scenarios, make sure the input is validated on both the client and the server side.
-Additionally, if validation passes on the server, process the form and send a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors. Validation details from the server may give the malicious actor more insights on how your app logic works if displayed on the client side.
+Additionally, if validation passes on the server, process the form and send a success status code (`200 - OK`). ​However, if validation fails, return a failure status code (`400 - Bad Request`) and the field validation errors. Validation details from the server might give the malicious actor more insights on how your app logic works if they're displayed on the client side.
 
-Input validation also includes the way you handle file uploads. Consider ASP.NET Blazor component handling user file upload. Checks for correctness, before uploading it to Azure Blob Storage, include extension and maximum file size inspection, and overriding the supplied filename with a random name.
+Input validation also includes the way you handle file uploads. Consider an ASP.NET Blazor component handling user file upload. Checks for correctness before uploading it to Azure Blob Storage include extension and maximum file size inspection, and overriding the supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />
@@ -77,12 +78,13 @@ Input validation also includes the way you handle file uploads. Consider ASP.NET
 ```
 
 > [!IMPORTANT]
-> Neutralize or verify user input in your application. Always verify that input is safe, legitimate and in the correct format.
+> Neutralize or verify user input in your application. Always verify that input is safe, legitimate, and in the correct format.
 
 ### Code review notes
 
-Your team uses Entity Framework Core (Object-Relational Mapping) as the glue between the C# code and database. Simply using ORM eliminates the need for writing your own SQL queries and prevents from SQL injection.
-You've noticed that every single user input, uploaded files or form entry fields are always validated. Sanitization and normalization of user input is a must.
+Your team uses Entity Framework Core (Object-Relational Mapping, or ORM) as the glue between the C# code and database. Simply using ORM eliminates the need to write your own SQL queries and prevents SQL injection.
+
+You've noticed that every user input, uploaded file, or form entry field is always validated. Sanitizing and normalizing user input is a must.
 
 As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
 

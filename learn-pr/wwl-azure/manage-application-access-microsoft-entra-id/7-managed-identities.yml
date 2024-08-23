@@ -4,10 +4,12 @@ title: Manage managed identities for Azure resources
 metadata:
   title: Manage managed identities for Azure resources
   description: "Manage managed identities for Azure resources"
-  ms.date: 12/28/2023
+  ms.date: 04/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/7-managed-identities.md)]

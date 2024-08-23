@@ -9,7 +9,6 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
-  ms.prod: azure-arc-servers
 durationInMinutes: 6
 content: |
 quiz:

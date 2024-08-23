@@ -132,9 +132,11 @@ When you submit an email message for analysis, you'll get:
 
 - Admin submissions are throttled at the following rates:
 
-Maximum submissions in any 15-minutes period: 150 submissions
-Same submissions in a 24 hour period: Three submissions
-Same submissions in a 15-minute period: One submission
+  Maximum submissions in any 15-minutes period: 150 submissions
+
+  Same submissions in a 24 hour period: Three submissions
+
+  Same submissions in a 15-minute period: One submission
 
 
 ### Report suspicious content to Microsoft

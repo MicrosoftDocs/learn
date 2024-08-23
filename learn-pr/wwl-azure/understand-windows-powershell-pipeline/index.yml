@@ -3,25 +3,39 @@ uid: learn.wwl.understand-windows-powershell-pipeline
 metadata:
   title: Understand the Windows PowerShell pipeline
   description: "This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it."
-  ms.date: 10/20/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Understand the Windows PowerShell pipeline
 summary: This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Describe the features and functionalities of the pipeline.
-  *   Use the appropriate terminology to describe the pipeline output and pipeline objects.
-  *   Explain how to discover and display object members.
-  *   Review object members.
-  *   Describe the cmdlets used to format the pipeline output for display.
-  *   Format pipeline output.
+
+  -   Describe the features and functionalities of the pipeline.
+
+  -   Use the appropriate terminology to describe the pipeline output and pipeline objects.
+
+  -   Explain how to discover and display object members.
+
+  -   Review object members.
+
+  -   Describe the cmdlets used to format the pipeline output for display.
+
+  -   Format pipeline output.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 iconUrl: /training/achievements/understand-windows-powershell-pipeline.svg
 levels:
 - intermediate
@@ -36,7 +50,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

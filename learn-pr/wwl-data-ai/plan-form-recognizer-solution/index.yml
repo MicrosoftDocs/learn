@@ -2,12 +2,14 @@
 uid: learn.wwl.plan-form-recognizer-solution
 metadata:
   title: Plan an Azure AI Document Intelligence solution
-  description: "Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing."
-  ms.date: 10/18/2023
+  description: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module
+  ms.date: 10/18/2023
   ms.service: azure-ai-document-intelligence
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Plan an Azure AI Document Intelligence solution
 summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
 abstract: |

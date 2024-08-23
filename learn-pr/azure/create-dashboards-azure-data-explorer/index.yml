@@ -3,16 +3,16 @@ uid: learn.create-dashboards-azure-data-explorer
 metadata:
   moduleType: standard
   title: Create dashboards in Azure Data Explorer
-  description: "Learn how to create dashboards in Azure Data Explorer. You'll add tiles and visualizations, and then share the dashboard with others."
-  ms.date: 09/04/2022
+  description: "Learn how to create dashboards in Azure Data Explorer. You add tiles and visualizations, and then share the dashboard with others."
+  ms.date: 01/19/2024
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: module
-  ms.service: data-explorer
+  ms.service: azure-data-explorer
 title: Create dashboards in Azure Data Explorer
 summary: "Create a dashboard from a query in Azure Data Explorer web UI. Add new tiles. Create dashboard parameters, and cross-filters for the parameters."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Generate dashboards that display multiple insights at a glance.
   - Share dashboard insights with colleagues.
 prerequisites: |

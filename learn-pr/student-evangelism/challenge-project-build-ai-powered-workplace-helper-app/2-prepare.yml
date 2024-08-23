@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ai-powered-workplace-helper-app.prepare
+title:  Prepare for the challenge
+metadata:
+  title:  Prepare for the challenge
+  description: "Project specification and setup requirements."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-prepare.md)]

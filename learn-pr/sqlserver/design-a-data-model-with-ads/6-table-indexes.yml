@@ -4,7 +4,7 @@ title: Table indexes
 metadata:
   title: Table indexes
   description: "Learn about index types in Azure SQL Database. Learn about clustered indexes, columnstore indexes and full text indexes."
-  ms.date: 12/29/2022
+  ms.date: 03/05/2024
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

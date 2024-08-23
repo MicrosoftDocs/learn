@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Troubleshoot business continuity with Microsoft Azure
 summary: Businesses rely on data and if systems fail, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery.
@@ -27,7 +27,7 @@ roles:
 products:
 - azure-backup
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.business-continuity.introduction
 - learn.wwl.business-continuity.troubleshoot-backup-issues

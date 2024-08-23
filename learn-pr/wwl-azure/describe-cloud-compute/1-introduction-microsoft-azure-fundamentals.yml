@@ -4,12 +4,10 @@ title: Introduction to Microsoft Azure Fundamentals
 metadata:
   title: Introduction to Microsoft Azure Fundamentals
   description: "Introduction to Microsoft Azure Fundamentals"
-  ms.date: 01/24/2023
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction-microsoft-azure-fundamentals.md)]

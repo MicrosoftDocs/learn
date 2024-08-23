@@ -5,8 +5,8 @@ metadata:
   title: Running containers with Kubernetes
   description: An overview of how Kubernetes runs containers.
   ms.date: 12/28/2023
-  author: tomreidnz
-  ms.author: jasdeb
+  author: rayoef
+  ms.author: rayoflores
   ms.topic: unit
 durationInMinutes: 5
 content: |

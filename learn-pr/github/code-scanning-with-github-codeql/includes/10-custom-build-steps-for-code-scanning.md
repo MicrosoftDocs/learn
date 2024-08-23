@@ -7,7 +7,7 @@ This unit will describe how to change the languages analyzed by code scanning an
 CodeQL code scanning automatically detects code written in the following supported languages: C/C++, C#, Go, Java, JavaScript/TypeScript, Python, and Ruby.
 
 > [!NOTE]
-> CodeQL analysis for Ruby is currently in beta. During the beta, analysis of Ruby will be less comprehensive than CodeQL analysis of other languages.
+> CodeQL is constantly updating its supported languages and frameworks, for a complete list of available languages, variants, and compilers please see the documentation<sup>[7]</sup>.
 
 The default CodeQL analysis workflow file contains a build matrix called *language* which lists the languages in your repository that are analyzed. CodeQL automatically populates this matrix when you add code scanning to a repository. Using the language matrix optimizes CodeQL to run each analysis in parallel. We recommend that all workflows adopt this configuration due to the performance benefits of parallelizing builds.
 

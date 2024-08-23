@@ -1,5 +1,3 @@
-
-
 You can manage Microsoft Entra users, groups, and devices by using the Azure portal, the Microsoft Azure Active Directory module for Windows PowerShell, or Microsoft 365. You can add users to a directory, and also add users to groups.
 
 You can create two types of user accounts on the Azure portal:
@@ -32,3 +30,4 @@ To create a single user, perform the following steps:
      -  Groups: Select groups to which you want the new user to belong
      -  Directory role: User, Global administrator, or Limited administrator
 5.  Select **Create** to finalize user creation. After the user is created, a temporary password appears.
+

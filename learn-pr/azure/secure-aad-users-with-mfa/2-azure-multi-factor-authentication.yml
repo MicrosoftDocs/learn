@@ -3,7 +3,7 @@ uid: learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentic
 metadata:
   title: What is Microsoft Entra multifactor authentication?
   description: Learn about Microsoft Entra multifactor authentication and how it helps protect user accounts.
-  ms.date: 01/03/2021
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
   ms.topic: unit

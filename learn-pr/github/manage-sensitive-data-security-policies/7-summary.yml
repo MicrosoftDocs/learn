@@ -4,10 +4,10 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary of module content
-  ms.date: 09/13/2021
-  author: rmcmurray
-  ms.author: robmcm
+  description: Summary of managing sensitive data and security policies within GitHub.
+  ms.date: 05/03/2024
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |

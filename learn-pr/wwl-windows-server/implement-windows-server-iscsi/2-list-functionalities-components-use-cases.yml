@@ -4,12 +4,12 @@ title: List the functionalities, components, and use cases of iSCSI
 metadata:
   title: List the functionalities, components, and use cases of iSCSI
   description: "List the functionalities, components, and use cases of iSCSI"
-  ms.date: 10/10/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-list-functionalities-components-use-cases.md)]

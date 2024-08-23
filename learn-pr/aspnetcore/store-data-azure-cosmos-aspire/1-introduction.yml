@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos-aspire.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "In this introductory unit, you'll see a business scenario that can be addressed by using the .NET Aspire stack to store content in an Azure Cosmos DB database."
+  ms.date: 3/22/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

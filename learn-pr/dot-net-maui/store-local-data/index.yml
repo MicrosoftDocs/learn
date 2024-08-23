@@ -8,8 +8,8 @@ metadata:
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: module
-  ms.prod: dotnet-mobile
-  ms.technology: dotnet-maui
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Store local data with SQLite in a .NET MAUI app
 summary: "Learn how to store and access data held in SQLite using a .NET MAUI app" 
 abstract: | 

@@ -32,8 +32,6 @@ roles:
 - administrator
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.azure.intro-to-java-azure.1-introduction
 - learn.azure.intro-to-java-azure.2-role

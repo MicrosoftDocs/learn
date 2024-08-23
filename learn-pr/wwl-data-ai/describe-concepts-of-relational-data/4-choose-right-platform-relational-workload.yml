@@ -4,13 +4,12 @@ title: Choose the right platform for a relational workload
 metadata:
   title: Choose the right platform for a relational workload
   description: "Choose the right platform for a relational workload"
-  ms.date: 09/13/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-sandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/4-choose-right-platform-relational-workload.md)]

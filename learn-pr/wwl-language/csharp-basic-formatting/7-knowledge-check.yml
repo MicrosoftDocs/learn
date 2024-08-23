@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2023
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 3
 quiz:
   title: ""
@@ -24,7 +22,7 @@ quiz:
       explanation: "Incorrect. \\' is the escape sequence for a single quote, not a double quote."
     - content: "'`\\\"`'"
       isCorrect: true
-      explanation: "Correct. Correct, `\\\"` will display double quotes!"
+      explanation: "Correct. `\\\"` displays double quotes!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
     choices:
     - content: "'`Console.WriteLine(@\"My value: {value}\");`'"
@@ -32,7 +30,7 @@ quiz:
       explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol as the prefix for string interpolation."
     - content: "'`Console.WriteLine($\"My value: {value}\");`'"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The `$` symbol denotes an interpolated string and the value in the curly braces is displayed."
     - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
       isCorrect: false
       explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
@@ -40,13 +38,13 @@ quiz:
     choices:
     - content: "A missing \\u escape sequence for Unicode characters."
       isCorrect: false
-      explanation: "Incorrect. If the \\u escape sequence for Unicode characters aren't used, only numbers will appear, question marks won't be displayed."
+      explanation: "Incorrect. If the \\u escape sequence for Unicode characters isn't used, only numbers appear and question marks aren't displayed."
     - content: "The wrong Unicode characters were used."
       isCorrect: false
-      explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
+      explanation: "Incorrect. This result happens only if the Unicode characters are the same value representing a question mark--\\u003F."
     - content: "The user's console doesn't support Unicode characters."
       isCorrect: true
-      explanation: "Correct.Correct!"
+      explanation: "Correct. The console in many environments may not support the full range of Unicode characters. As a result, Unicode characters may appear as question marks due to encoding mismatches."
   - content: "Which of the following lines of code appends a single `\\` to the string `directory`?"
     choices:
     - content: "'`directory = directory + \"\\\";`'"

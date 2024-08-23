@@ -6,7 +6,7 @@ metadata:
   description: Get basic information about Redis and Azure Cache for Redis, and see the learning objectives and prerequisites for this module.
   author: judubois
   ms.author: judubois
-  ms.date: 01/20/2021
+  ms.date: 06/05/2023
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021

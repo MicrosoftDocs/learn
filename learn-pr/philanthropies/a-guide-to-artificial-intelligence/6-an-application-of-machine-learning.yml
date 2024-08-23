@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.a-guide-to-artifical-intelligence.an-application-of-machine-learning
+title: An application of machine learning
+metadata:
+  title: An application of machine learning
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/23/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-an-application-of-machine-learning.md)]

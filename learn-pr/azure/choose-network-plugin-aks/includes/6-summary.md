@@ -13,5 +13,7 @@ To learn more about the Azure Kubernetes Service, Kubenet, and Azure CNI, visit 
 * [Azure CNI Module](/training/modules/aks-network-design-azure-container-network-interface/?source=recommendations)
 * [Configure Kubenet](/azure/aks/configure-kubenet)
 * [Configure Azure CNI](/azure/aks/configure-azure-cni)
+* [Configure Azure CNI Overlay](/azure/aks/azure-cni-overlay)
+* [Configure Azure CNI Powered by Cilium](/azure/aks/azure-cni-powered-by-cilium)
 * [Configure Dynamic IP Allocation](/azure/aks/configure-azure-cni-dynamic-ip-allocation)
 * [Custom Network Plugin](/azure/aks/use-byo-cni)

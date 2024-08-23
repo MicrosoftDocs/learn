@@ -7,8 +7,8 @@ metadata:
   author: dlepow
   ms.author: danlep
   ms.topic: module-standard-task-based
-  ms.service: api-management
-  manager: mcleans
+  ms.service: azure-api-management
+  manager: susanpotter
 title: Protect your APIs on Azure API Management
 summary: Protect your backend APIs from information exposure and implement throttling (rate limiting) to prevent resource exhaustion with policies in Azure API Management.
 abstract: | 

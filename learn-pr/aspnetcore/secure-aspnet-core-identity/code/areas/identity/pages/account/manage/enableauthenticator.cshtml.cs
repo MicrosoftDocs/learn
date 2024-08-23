@@ -14,7 +14,7 @@ public async Task<IActionResult> OnGetAsync([FromServices] QRCodeService qrCodeS
     var user = await _userManager.GetUserAsync(User);
     if (user == null)
     {
-        NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+        return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
     }
 
     await LoadSharedKeyAndQrCodeUriAsync(user);

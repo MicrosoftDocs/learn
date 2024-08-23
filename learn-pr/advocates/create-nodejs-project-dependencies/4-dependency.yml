@@ -4,9 +4,9 @@ title: Add packages to your Node.js project
 metadata:
   title: Add packages to your Node.js project
   description: This unit explains how to add and remove packages in your Node.js application.
-  author: GitHubber17
-  ms.author: chnoring
-  ms.date: 05/30/2023
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom:
     - team=nextgen

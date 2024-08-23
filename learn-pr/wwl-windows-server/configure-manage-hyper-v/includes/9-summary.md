@@ -9,4 +9,4 @@ You can learn more by reviewing the following documents.
 - [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization?azure-portal=true)
 - [Hyper-V Integration Services](/virtualization/hyper-v-on-windows/reference/integration-services?azure-portal=true)
 - [Performance Tuning Hyper-V Servers](/windows-server/administration/performance-tuning/role/hyper-v-server/?azure-portal=true)
-- [Hyper-V Network Virtualization Overview in Windows Server 2016](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server?azure-portal=true)
+- [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server?azure-portal=true)

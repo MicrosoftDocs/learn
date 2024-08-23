@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 metadata:
   title: Monitor VMs and containers by using insights
   description: Analyze VM and container utilization and performance by using Azure Monitor VM insights and container insights.
-  ms.date: 03/22/2021
+  ms.date: 11/13/2023
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: unit

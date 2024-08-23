@@ -4,12 +4,12 @@ title: Evaluate periodic backup
 metadata:
   title: Evaluate periodic backup
   description: "Evaluate periodic backup"
-  ms.date: 05/17/2023
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/2-evaluate-periodic-backup.md)]

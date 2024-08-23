@@ -1,4 +1,4 @@
-In this exercise, you'll configure Cross-Origin Resource Sharing (CORS) in Azure Functions, and see the Product Manager application come to life.
+In this exercise, you'll configure Cross-Origin Resource Sharing (CORS) in your local Azure Functions, and see the Product Manager application come to life.
 
 ## Configure CORS
 
@@ -12,6 +12,7 @@ In this exercise, you'll configure Cross-Origin Resource Sharing (CORS) in Azure
      "Values": {
        "AzureWebJobsStorage": "",
        "FUNCTIONS_WORKER_RUNTIME": "node",
+        "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
        "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
      },
      "Host": {

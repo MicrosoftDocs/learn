@@ -2,7 +2,7 @@ In the previous unit, you used Azure CLI commands like `az container create` and
 
 YAML stands for "Yet Another Markup Language," and provides a more human-readable description language than XML or JSON. YAML avoids delimiters such as curly and square brackets that make human readability difficult, but relies on indentation to structure information in a hierarchy. An advantage of YAML-based configurations is that you can store them in version-control systems and treat them the same as application code.
 
-Kubernetes is a container orchestration system that uses YAML to describe its objects, and its popularity means that YAML has become a de facto standard for declarative container definitions. Kubernetes YAML uses many of the same constructs as Container Instances YAML.
+Kubernetes is a container orchestration system that uses YAML to describe its objects, and its popularity means YAML is a de facto standard for declarative container definitions. Kubernetes YAML uses many of the same constructs as Container Instances YAML.
 
 Azure Resource Manager (ARM) templates and Terraform are alternative methods to declaratively deploy Azure Container Instances. One method isn't inherently better than the others, but YAML is convenient for working with more complex container groups, such as the sidecar pattern in this module.
 
@@ -34,7 +34,7 @@ properties:
       - name: SQL_SERVER_PASSWORD
         value: NAwzq6sjdItw7Ot
       - name: SQL_SERVER_FQDN
-        value: sqlserver24791.database.windows.net
+        value: <server-name>.database.windows.net
       image: erjosito/sqlapi:1.0
       ports:
       - port: 8080
@@ -68,14 +68,14 @@ Notice the following characteristics of the YAML description:
 
 - YAML is sensitive to indentation. Removing or adding a blank space before a line makes it syntactically incorrect. Only spaces, not tabs, are supported for indentation, so be careful with your text editor.
 - Properties and attributes are specified hierarchically in key-value pairs.
-- Many of the labels are familiar from Kubernetes. For example, resource requests follow the same syntax. However, don't expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes uses the `env` keyword.
+- Many of the labels are familiar from Kubernetes. For example, resource requests follow the same syntax. However, don't expect all properties to be identical with Kubernetes. For example, Azure Container Instances (ACI) environment variables are defined in the `environmentVariables` property, while Kubernetes uses the `env` keyword.
 - The environment variables are in clear text. Clear text is probably acceptable for most environment variables, but others, such as the SQL password in this example, shouldn't be openly visible. A better way to define this sensitive information is with a secure value, which you implement in the next section.
 
 ## Modify and deploy the YAML file
 
 You don't want the SQL database password to be visible to customers, so you need to mask it using secure values for the environment variables instead of standard values. To generate the required YAML, you manually edit the automatically generated YAML file and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
 
-1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: <your Azure SQL password>` <br>to <br>`        secureValue: <your Azure SQL password>`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change. You should also remove any other line you don't need, such as the `provisioningTimeoutInSeconds` attribute, which isn't supported by the `2023-05-01` API.
+1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: <your Azure SQL password>` <br>to <br>`        secureValue: <your Azure SQL password>`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change. You should also remove any other line you don't need, such as the `provisioningTimeoutInSeconds` attribute, which the `2023-05-01` API doesn't support.
 
     ```bash
     # Modify auto-generated YAML

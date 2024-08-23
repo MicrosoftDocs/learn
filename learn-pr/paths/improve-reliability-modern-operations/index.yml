@@ -26,7 +26,7 @@ roles:
 products: 
 - azure
 subjects:
-- modern-work
+- business-applications
 modules:
 - learn.improve-reliability-introduction
 - learn.improve-reliability-monitoring

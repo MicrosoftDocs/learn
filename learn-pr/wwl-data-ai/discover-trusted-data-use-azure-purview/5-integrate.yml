@@ -5,8 +5,8 @@ metadata:
   title: Demo-Introduction
   description: "Integrate with Azure Synapse Analytics"
   ms.date: 07/22/2022
-  author: benjiang
-  ms.author: benjiang
+  author: wwlpublish
+  ms.author: anrudduc
   ms.topic: unit
 azureSandbox: false
 labModal: false

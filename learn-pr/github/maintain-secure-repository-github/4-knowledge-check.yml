@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 11/14/2023
+  ms.date: 04/22/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -36,14 +36,14 @@ quiz:
     - content: "`CONTRIBUTING.md`"
       isCorrect: false
       explanation: "`CONTRIBUTING.md` is used to explain the contribution policy of your project, but it doesn't automate anything."
-  - content: "Suppose someone inadvertently commits a sensitive API key stored in the `.secrets` folder. What is the correct way to scrub that information from GitHub?"
+  - content: "What does secret scanning do?"
     choices:
-    - content: "Use `git` to remove the unwanted commit and update historical references. Then contact GitHub support to run garbage collection and invalidate the Git cache."
+    - content: "Looks for known secrets or credentials committed within the repository."
       isCorrect: true
-      explanation: "This approach is the correct process to remove the data moving forward. However, if you feel someone can access the key when it's available, you should replace the key with a new one. As a best practice, consider the sensitive data compromised and replace the key."
-    - content: "Delete the sensitive file from GitHub. Then commit an empty file to the same location to overwrite it."
+      explanation: "This approach is done to prevent the use of fraudulent behavior and to secure the integrity of any sensitive data."
+    - content: "Analyzes and finds security vulnerabilities and errors in the code in a GitHub repository."
       isCorrect: false
-      explanation: "This approach doesn't remove the sensitive data from your commit history."
-    - content: "This is a trick question. Once you commit something to GitHub, it lives forever. That's why globally unique hashes are used to identify everything."
+      explanation: "Secret scanning is used to analyze and find security vulnerabilities and errors in the code in a GitHub repository, not secret scanning."
+    - content: "Secret scanning uses CodeQL to query your code as data."
       isCorrect: false
-      explanation: "Fortunately, this answer isn't exactly the case. It's possible to remove commits containing sensitive data from GitHub so that they might not be accessed in the future."
+      explanation: "Incorrect. That's code scanning again, not secret scanning."

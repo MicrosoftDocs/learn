@@ -7,32 +7,32 @@ This unit will look at the following perspectives on secure tenant administratio
 
 Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources.
 
-With Azure Lighthouse, service providers can deliver managed services using [comprehensive and robust tooling built into the Azure platform](https://learn.microsoft.com/azure/lighthouse/concepts/architecture). Customers maintain control over who has access to their tenant, which resources they can access, and what actions can be taken. [Enterprise organizations](https://learn.microsoft.com/azure/lighthouse/concepts/enterprise) managing resources across multiple tenants can use Azure Lighthouse to streamline management tasks.
+With Azure Lighthouse, service providers can deliver managed services using [comprehensive and robust tooling built into the Azure platform](/azure/lighthouse/concepts/architecture). Customers maintain control over who has access to their tenant, which resources they can access, and what actions can be taken. [Enterprise organizations](/azure/lighthouse/concepts/enterprise) managing resources across multiple tenants can use Azure Lighthouse to streamline management tasks.
 
-[Cross-tenant management experiences](https://learn.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience) let you work more efficiently with Azure services such as [Azure Policy](https://learn.microsoft.com/azure/lighthouse/how-to/policy-at-scale), [Microsoft Sentinel](https://learn.microsoft.com/azure/lighthouse/how-to/manage-sentinel-workspaces), [Azure Arc](https://learn.microsoft.com/azure/lighthouse/how-to/manage-hybrid-infrastructure-arc), and many more. Users can see what changes were made and by whom [in the activity log](https://learn.microsoft.com/azure/lighthouse/how-to/view-service-provider-activity), which is stored in the customer's tenant and can be viewed by users in the managing tenant.
+[Cross-tenant management experiences](/azure/lighthouse/concepts/cross-tenant-management-experience) let you work more efficiently with Azure services such as [Azure Policy](/azure/lighthouse/how-to/policy-at-scale), [Microsoft Sentinel](/azure/lighthouse/how-to/manage-sentinel-workspaces), [Azure Arc](/azure/lighthouse/how-to/manage-hybrid-infrastructure-arc), and many more. Users can see what changes were made and by whom [in the activity log](/azure/lighthouse/how-to/view-service-provider-activity), which is stored in the customer's tenant and can be viewed by users in the managing tenant.
 
 ![Diagram that shows an overview of Azure Lighthouse.](../media/azure-lighthouse-overview.jpg)
 <!-- 
-[](https://learn.microsoft.com/azure/lighthouse/overview#benefits)
+[](/azure/lighthouse/overview#benefits)
 -->
 ## Benefits
 
 Azure Lighthouse helps service providers efficiently build and deliver managed services. Benefits include:
 
 -   **Management at scale**: Customer engagement and life-cycle operations to manage customer resources are easier and more scalable. Existing APIs, management tools, and workflows can be used with delegated resources, including machines hosted outside of Azure, regardless of the regions in which they're located.
--   **Greater visibility and control for customers**: Customers have precise control over the scopes they delegate and the permissions that are allowed. They can [audit service provider actions](https://learn.microsoft.com/azure/lighthouse/how-to/view-service-provider-activity) and remove access completely at any time.
--   **Comprehensive and unified platform tooling**: Azure Lighthouse works with existing tools and APIs, [Azure managed applications](https://learn.microsoft.com/azure/lighthouse/concepts/managed-applications), and partner programs like the [Cloud Solution Provider program (CSP)](https://learn.microsoft.com/azure/lighthouse/concepts/cloud-solution-provider). This flexibility supports key service provider scenarios, including multiple licensing models such as EA, CSP and pay-as-you-go. You can integrate Azure Lighthouse into your existing workflows and applications, and track your impact on customer engagements by [linking your partner ID](https://learn.microsoft.com/azure/lighthouse/how-to/partner-earned-credit).
+-   **Greater visibility and control for customers**: Customers have precise control over the scopes they delegate and the permissions that are allowed. They can [audit service provider actions](/azure/lighthouse/how-to/view-service-provider-activity) and remove access completely at any time.
+-   **Comprehensive and unified platform tooling**: Azure Lighthouse works with existing tools and APIs, [Azure managed applications](/azure/lighthouse/concepts/managed-applications), and partner programs like the [Cloud Solution Provider program (CSP)](/azure/lighthouse/concepts/cloud-solution-provider). This flexibility supports key service provider scenarios, including multiple licensing models such as EA, CSP and pay-as-you-go. You can integrate Azure Lighthouse into your existing workflows and applications, and track your impact on customer engagements by [linking your partner ID](/azure/lighthouse/how-to/partner-earned-credit).
 <!-- 
-[](https://learn.microsoft.com/azure/lighthouse/overview#capabilities)
+[](/azure/lighthouse/overview#capabilities)
 -->
 ## Capabilities
 
 Azure Lighthouse includes multiple ways to help streamline engagement and management:
 
--   **Azure delegated resource management**: [Manage your customers' Azure resources securely from within your own tenant](https://learn.microsoft.com/azure/lighthouse/concepts/architecture), without having to switch context and control planes. Customer subscriptions and resource groups can be delegated to specified users and roles in the managing tenant, with the ability to remove access as needed.
--   **New Azure portal experiences**: View cross-tenant information in the [**My customers** page](https://learn.microsoft.com/azure/lighthouse/how-to/view-manage-customers) in the Azure portal. A corresponding [**Service providers** page](https://learn.microsoft.com/azure/lighthouse/how-to/view-manage-service-providers) lets customers view and manage their service provider access.
--   **Azure Resource Manager templates**: Use ARM templates to [onboard delegated customer resources](https://learn.microsoft.com/azure/lighthouse/how-to/onboard-customer) and [perform cross-tenant management tasks](https://learn.microsoft.com/azure/lighthouse/samples/).
--   **Managed Service offers in Azure Marketplace**: [Offer your services to customers](https://learn.microsoft.com/azure/lighthouse/concepts/managed-services-offers) through private or public offers, and automatically onboard them to Azure Lighthouse.
+-   **Azure delegated resource management**: [Manage your customers' Azure resources securely from within your own tenant](/azure/lighthouse/concepts/architecture), without having to switch context and control planes. Customer subscriptions and resource groups can be delegated to specified users and roles in the managing tenant, with the ability to remove access as needed.
+-   **New Azure portal experiences**: View cross-tenant information in the [**My customers** page](/azure/lighthouse/how-to/view-manage-customers) in the Azure portal. A corresponding [**Service providers** page](/azure/lighthouse/how-to/view-manage-service-providers) lets customers view and manage their service provider access.
+-   **Azure Resource Manager templates**: Use ARM templates to [onboard delegated customer resources](/azure/lighthouse/how-to/onboard-customer) and [perform cross-tenant management tasks](/azure/lighthouse/samples/).
+-   **Managed Service offers in Azure Marketplace**: [Offer your services to customers](/azure/lighthouse/concepts/managed-services-offers) through private or public offers, and automatically onboard them to Azure Lighthouse.
 
 ## Microsoft 365 tenant management
 
@@ -46,7 +46,7 @@ Here is an example:
 
 _Tenant management_ is the planning, deployment, and ongoing operation of your Microsoft 365 tenants.
 <!-- 
-[](https://learn.microsoft.com/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#attributes-of-a-well-designed-and-operating-tenant)
+[](/microsoft-365/solutions/tenant-management-overview?view=o365-worldwide#attributes-of-a-well-designed-and-operating-tenant)
 -->
 ### Attributes of a well-designed and operating tenant
 

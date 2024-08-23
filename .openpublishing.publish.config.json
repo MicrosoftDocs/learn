@@ -73,6 +73,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "microsoftdocs-mslearn-advocates-azure-functions-and-signalr",
+      "url": "https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "cosmos-db-sql-api-javascript-samples",
       "url": "https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples",
       "branch": "main",
@@ -112,5 +118,10 @@
     }
   ],
   "need_generate_pdf_url_template": false,
-  "enable_incremental_build": false
+  "enable_incremental_build": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    "learn-pr/wwl-data-ai/.openpublishing.redirection.wwl-data-ai.json",
+    "learn-pr/wwl-sci/.openpublishing.redirection.wwl-sci.json"
+  ]
 }

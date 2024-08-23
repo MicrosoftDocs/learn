@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the MVVM pattern"
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

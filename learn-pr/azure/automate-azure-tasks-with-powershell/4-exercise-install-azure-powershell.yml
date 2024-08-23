@@ -2,14 +2,13 @@
 uid: learn.automate-azure-tasks-with-powershell.4-exercise-install-azure-powershell
 title: Exercise - Install Azure PowerShell
 metadata:
-  title: Exercise - Install PowerShell
-  description: Exercise - Install PowerShell
-  ms.date: 09/24/2018
+  title: Exercise - Install Azure PowerShell
+  description: Exercise - Install Azure PowerShell
+  ms.date: 06/07/2024
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurepowershell
+  ms.custom: devx-track-azurepowershell, linux-related-content
   zone_pivot_groups: platform
 durationInMinutes: 10
 content: |

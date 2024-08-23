@@ -4,12 +4,12 @@ title: Use the OVER clause
 metadata:
   title: Use the OVER clause
   description: "Use the OVER clause"
-  ms.date: 06/01/2022
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-use-over-clause.md)]

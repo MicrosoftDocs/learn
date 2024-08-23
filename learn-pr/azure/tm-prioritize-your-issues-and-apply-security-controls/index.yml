@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/01/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Prioritize your issues and apply security controls
 summary: Threat modeling provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
 abstract: |

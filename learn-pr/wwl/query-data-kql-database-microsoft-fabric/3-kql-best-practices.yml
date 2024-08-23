@@ -4,10 +4,12 @@ title: KQL best practices
 metadata:
   title: KQL best practices
   description: "KQL best practices"
-  ms.date: 11/17/2023
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-kql-best-practices.md)]

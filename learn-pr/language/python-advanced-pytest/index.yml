@@ -2,23 +2,24 @@
 uid: learn.python-advanced-pytest
 metadata:
   moduleType: standard
-  title: Advanced testing with Pytest
-  description: Take advantage of advanced features of Pytest, a popular test framework to write and run tests in Python. Find about parametrize and reusable code with test fixtures.
-  ms.date: 1/31/2022
+  title: Advanced testing with pytest
+  description: Take advantage of the advanced features of pytest, a popular test framework used to write and run tests in Python.
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
-  ms.topic: interactive-tutorial
-title: Advanced testing with Pytest
-summary: Create custom Pytest fixtures for reusable code and improve multi-input tests with parametrize. 
+  ms.topic: module
+  ms.service: azure-python
+title: Advanced testing with pytest
+summary: Improve multi-input tests with parametrize and use pytest fixtures for reusable code.
 abstract: |
   By the end of this module, you'll be able to:
     - Use the `pytest` framework and its library helpers to solve common testing problems
-    - Work with _parametrize_ to create tests from multiple input values
-    - Create fixtures, which allows you to extend and share testing functionality
+    - Work with _parametrize_ to create tests with multiple input values
+    - Create and use fixtures, which allow you to extend and share testing functionality.
 prerequisites: |
   - Ability to write Python scripts
   - Familiarity with command-line tools and executing scripts
-  - Python 3.6 or later and a virtual environment with Pytest installed on your computer. Follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+  - Python 3.6 or later and a virtual environment with pytest installed on your computer. Follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article describing how to install Python, select your environment: Windows, Linux, or macOS.
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -28,8 +29,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.python-advanced-pytest.introduction
 - learn.python-advanced-pytest.parametrize

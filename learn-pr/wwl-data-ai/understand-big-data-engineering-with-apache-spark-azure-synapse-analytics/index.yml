@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/25/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: module
+  ms.topic: module-standard-task-based
   ms.service: azure
 title: Analyze data with Apache Spark in Azure Synapse Analytics
 summary: Apache Spark is a core technology for large-scale data analytics. Learn how to use Spark in Azure Synapse Analytics to analyze and visualize data in a data lake.

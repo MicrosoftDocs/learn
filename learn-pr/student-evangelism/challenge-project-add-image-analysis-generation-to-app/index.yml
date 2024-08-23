@@ -18,7 +18,7 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: azure
+  ms.service: azure
 title: Challenge project - Add image analysis and generation capabilities to your application
 summary: |
   Demonstrate your ability to develop a smart web application that integrates computer vision capabilities, leveraging Azure AI Vision and Azure OpenAI cognitive services.
@@ -34,21 +34,21 @@ prerequisites: |
   - Experience using GitHub and Visual Studio Code.
   - Familiarity with REST APIs.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
   - ai-engineer	
   - startup-founder
   - student
   - higher-ed-educator
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - vs-code
   - static-web-apps
   - ai-services
   - azure-openai
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - data-ai
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - data-management
 units:
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.introduction
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.prepare

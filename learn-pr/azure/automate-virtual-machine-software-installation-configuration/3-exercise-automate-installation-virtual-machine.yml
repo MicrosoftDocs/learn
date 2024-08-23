@@ -4,12 +4,11 @@ title: Exercise - Automate the installation of a virtual machine
 metadata:
   title: Exercise - Automate the installation of a virtual machine
   description: In this exercise, you'll automate the installation of a virtual machine.
-  ms.date: 05/15/2020
+  ms.date: 04/04/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.custom: devx-track-azurecli, linux-related-content
   zone_pivot_groups: platform-cloud
 durationInMinutes: 10
 content: |

@@ -1,12 +1,12 @@
-If you're running an HPC application on a large number of VMs (more than 16), it's best to start running a smaller problem on fewer VMs. That test will verify that your HPC application is running as expected. 
+If you're running a high-performance computing (HPC) application on a large number of VMs (more than 16), it's best to start running a smaller problem on fewer VMs. That test verifies that your HPC application is running as expected. 
 
-Don't assume that just because you're running an HPC parallel application, its wall time (elapsed real time) will continue to decrease as you run it on more VMs (with more parallel processes). In fact, many tightly coupled HPC applications can have a longer wall time when you try to run them on other VMs.
+Don't assume that just because you're running an HPC parallel application, its wall time (elapsed real time) continues to decrease as you run it on more VMs (with more parallel processes). In fact, many tightly coupled HPC applications can have a longer wall time when you try to run them on other VMs.
 
 The longer wall time can happen for several reasons. For example:
 
-- You might have implemented a parallel algorithm inefficiently.
+- You might implement a parallel algorithm inefficiently.
 
-- The problem size, which is the model size or Number of Degrees of Freedom (NDOF), is not large enough. As your application runs on more parallel processes, the amount of computation by each process is too small. As a result, the total wall time is dominated by the communication time between the parallel processes. The increase in communication time increases your overall wall time.
+- The problem size, which is the model size or Number of Degrees of Freedom (NDOF), isn't large enough. As your application runs on more parallel processes, the amount of computation by each process is too small. As a result, the communication time between the parallel processes dominates the total wall time. The increase in communication time increases your overall wall time.
 
 It's important to know how well your HPC application scales running the problem size in which you're interested. You can then determine what parallel efficiency is acceptable from a performance and cost point of view.
 
@@ -18,9 +18,9 @@ The following parallel efficiency formula illustrates how efficiently you're usi
 
 $${\text{Parallel efficiency}} = {\dfrac{\text{Parallel speed-up}}{\text{N processes}}}$$
 
-If you're unsure of the parallel scaling performance for your tightly coupled HPC application, run a scaling study. In other words, run your application on 1, 2, 4, 8, 16, and so on parallel processes. Compute the parallel speed-up and parallel efficiency, and then decide based on these results how many parallel processes you want to use.
+If you're unsure of the parallel scaling performance for your tightly coupled HPC application, run a scaling study. In other words, run your application on 1, 2, 4, 8, 16, and so on, parallel processes. Compute the parallel speed-up and parallel efficiency, and then decide based on these results how many parallel processes you want to use.
 
-Consider disabling any unnecessary services that might have an impact on parallel scaling, like the Azure Linux Agent, before running your jobs. You can then re-enable the services after your jobs have finished. This recommendation is especially true if you're using all available cores and scaling to a large number of VMs.
+Consider disabling any unnecessary services that might have an impact on parallel scaling, like the Azure Linux Agent, before running your jobs. You can then re-enable the services after your jobs finish. This recommendation is especially true if you're using all available cores and scaling to a large number of VMs.
 
 To stop the Azure Linux Agent, use the following command:
 
@@ -34,13 +34,13 @@ The following information provides some basic checks to help identify potential 
 
 ### Check that the correct number of processes and threads are running on each VM
 
-An easy way to determine if you're using the correct number of processes and threads on each VM is to get the system load average on each VM with a tool like **uptime**. The number should be roughly equal to the total expected number of processes and threads on each VM. If the recorded load average is lower or higher than the expected total number of processes and threads, that indicates a problem that must be fixed.
+An easy way to determine if you're using the correct number of processes and threads on each virtual machine (VM) is to get the system load average on each VM with a tool like **uptime**. The number should be roughly equal to the total expected number of processes and threads on each VM. If the recorded load average is lower or higher than the expected total number of processes and threads, it indicates a problem that must be fixed.
 
-You should carefully check your MPI arguments and how you're specifying the number of parallel threads. For example, check your application's command-line arguments, or check the values of environmental variables such as `OMP_NUM_THREADS`.
+You should carefully check your message passing interface (MPI) arguments and how you're specifying the number of parallel threads. For example, check your application's command-line arguments, or check the values of environmental variables such as `OMP_NUM_THREADS`.
 
 ### Check that the processes and threads are evenly distributed among all NUMA node domains
 
-If you're using the **top** or **htop** tool, you can select the NUMA node domain view by specifying `2` as a command-line parameter. (For example: on HB120_v2, you should see 30 NUMA node domains by using this view.)
+If you're using the **top** or **htop** tool, you can select the Nonuniform memory access (NUMA) node domain view by specifying `2` as a command-line parameter. (For example: on HB120_v2, you should see 30 NUMA node domains by using this view.)
 
 The percentage of user utilization should be evenly distributed among all the NUMA domains. If it isn't, check your MPI command-line arguments and environmental variables.
 
@@ -62,9 +62,9 @@ $${\text{Application wait time}} = {\text{Wall time}} - \left( {\dfrac{\text{Tot
 
 Processes and threads spending a significant amount of time in an uninterruptible sleep (D) or sleep (S) state can be an indicator that there's an I/O bottleneck that needs to be investigated. Some HPC applications provide performance profiling as part of their output. These profiles show the percentage of time spent performing I/O and read/write I/O rates, which might also point to an I/O bottleneck.
 
-If you're unsure where your I/O is going, you can use tools like **iostat** to help you. A simple way to verify if you have an I/O issue is to change your storage solution to something that you know is significantly faster than what you've been using, then rerun your HPC application. For example, you can use a fast local NVMe SSD or RAM disk.
+If you're unsure where your I/O is going, you can use tools like **iostat** to help you. To verify if you have an I/O issue, change your storage solution to something that you know is faster than what you've been using. Then, rerun your HPC application. For example, you can use a fast local NVMe SSD or RAM disk.
 
-After you've made this change, ask yourself the following questions: Do you see any improvement in I/O time? Has the overall wall time improved? If so, by how much?
+After you make this change, ask yourself the following questions: Do you see any improvement in I/O time? Has the overall wall time improved? If so, by how much?
 
 ### Check if the application is network bound
 

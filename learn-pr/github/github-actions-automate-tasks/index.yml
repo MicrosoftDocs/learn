@@ -30,8 +30,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.github-actions-automate-tasks.1-introduction
 - learn.github.github-actions-automate-tasks.2-github-actions-automate-development-tasks

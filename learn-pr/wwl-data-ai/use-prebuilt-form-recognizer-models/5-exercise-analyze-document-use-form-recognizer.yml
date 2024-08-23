@@ -3,14 +3,15 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models.exercise-analyze-document-use
 title: Exercise - Analyze a document using Azure AI Document Intelligence
 metadata:
   title: Exercise - Analyze a document using Azure AI Document Intelligence
-  description: "Exercise - Analyze a document using Azure AI Document Intelligence"
-  ms.date: 10/18/2023
+  description: Exercise - Analyze a document using Azure AI Document Intelligence
   author: wwlpublish
-  ms.author: berryivor
+  ms.author: rcaper
+  ms.date: 02/06/2024
   ms.topic: unit
-azureSandbox: false
-labModal: true
+  ms.collection:
+    - wwl-ai-copilot
 labId: 152395
+labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-analyze-document-use-form-recognizer.md)]

@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/27/2023
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Use methods and interfaces in Go
 summary: Learn about best practices for writing methods and interfaces in Go.
@@ -32,8 +32,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.go-methods-interfaces.0-introduction
 - learn.language.go-methods-interfaces.1-methods

@@ -43,9 +43,9 @@ The following table shows how the _Actions_ or _NotActions_ permissions are used
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
-| _Owner_ | Allow all actions | `*` | n/a |
-| _Contributor_ | Allow all actions, except write or delete role assignment | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
-| _Reader_ | Allow all read actions | `/*/read` | n/a |
+| _Owner_ | Grants full access to manage all resources, including the ability to assign roles in Azure RBAC. | `*` | n/a |
+| _Contributor_ | Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries. | `*` | - `Microsoft.Authorization/*/Delete` <br> - `Microsoft.Authorization/*/Write` <br> - `Microsoft.Authorization/elevateAccess/Action` |
+| _Reader_ | View all resources, but does not allow you to make any changes. | `/*/read` | n/a |
 
 ### Role scopes
 

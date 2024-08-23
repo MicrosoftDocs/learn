@@ -4,12 +4,12 @@ title: Explore Azure Pipelines and Visual Designer
 metadata:
   title: Explore Azure Pipelines and Visual Designer
   description: "Explore Azure Pipelines and Visual Designer"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/5-explore-azure-pipelines-visual-designer.md)]

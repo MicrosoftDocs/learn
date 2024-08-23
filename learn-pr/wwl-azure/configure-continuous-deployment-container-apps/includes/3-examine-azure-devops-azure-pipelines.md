@@ -40,4 +40,4 @@ Whether your app is on-premises or in the cloud, you can automate build-deploy-t
 
 ### Version control systems
 
-Azure Pipelines requires your source code to be in a version control system. Azure DevOps supports two forms of version control - Git and Azure Repos. Any changes you push to your version control repository are automatically built and validated.
+Azure Pipelines requires your source code to be in a version control (or source control) system. Azure DevOps supports two types of source control: Git-based or Team Foundation Version Control (TFVC). Any changes you push to your version control repository are automatically built and validated.

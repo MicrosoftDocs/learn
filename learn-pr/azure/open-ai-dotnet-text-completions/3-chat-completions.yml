@@ -4,7 +4,7 @@ title: Work with text completions in Azure OpenAI
 metadata:
   title: Work with text completions in Azure OpenAI
   description: Add conversation-in and message-out capabilities to your applications with Azure OpenAI text completions
-  ms.date: 08/23/2023
+  ms.date: 08/24/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

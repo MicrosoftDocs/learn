@@ -4,7 +4,7 @@ title: Computation on arrays by using broadcasting
 metadata:
   title: Computation on arrays by using broadcasting
   description: Learn how broadcasting works in NumPy (and why NumPy uses it).
-  ms.date: 04/22/2020
+  ms.date: 04/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: unit

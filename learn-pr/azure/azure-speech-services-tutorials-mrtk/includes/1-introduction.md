@@ -1,10 +1,10 @@
 In this module, we'll create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. Azure Speech Services is the unification of speech-to-text, text-to-speech, and speech translation into a single Azure subscription.
 
-Imagine a scenario where you're expected to build an application capable of translating your speech into other languages. You would want a brief overview of incorporating that feature in your application, and Azure Speech Services can provide that.
+Imagine a scenario where you're expected to build an application capable of translating your speech into other languages. You'd want a brief overview of incorporating that feature in your application, and Azure Speech Services can provide that.
 
-Upon completion of this module, we'll be able to use your device's microphone to transcribe speech to text in real time. In addition, we will be able to translate our speech into other languages and use the Intent-recognition feature to understand voice commands using artificial intelligence.
+Upon completion of this module, we'll be able to use your device's microphone to transcribe speech to text in real time. In addition, we'll be able to translate our speech into other languages and use the Intent-recognition feature to understand voice commands using artificial intelligence.
 
-A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+You can find a [completed example of this tutorial here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
 
 ## Learning objectives
 
@@ -12,8 +12,8 @@ A completed example of this tutorial can be found [here](https://github.com/micr
 * Learn how to use speech recognition to transcribe text
 * Learn how Azure speech recognition can be used to execute commands
 * Learn how to integrate Azure speech translation
-* Learn how to set up intent, entities and utterances in the Language Studio portal
-* Learn how to implement intent and natural language understanding in our application
+* Learn how to set up intent, entities, and utterances in the Language Studio portal
+* Learn how to implement intent and natural-language understanding in our application
 
 ## Prerequisites
 

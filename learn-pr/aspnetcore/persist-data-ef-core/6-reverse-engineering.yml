@@ -4,7 +4,7 @@ title: Exercise - Reverse-engineer from an existing database
 metadata:
   title: Exercise - Reverse-engineer from an existing database
   description: "Scaffold DbContext and model classes from an existing database."
-  ms.date: 12/13/2021
+  ms.date: 10/04/2023
   author: camsoper
   ms.author: casoper
   ms.manager: markl

@@ -16,7 +16,7 @@ The main takeaways from this module are:
 
 - [Public IP addresses](/azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
 
-- [Public IP addresses](/azure/virtual-network/private-ip-addresses).  This article reviews the basics of when to use private IP addresses. 
+- [Private IP addresses](/azure/virtual-network/private-ip-addresses).  This article reviews the basics of when to use private IP addresses. 
 
 ## Learn more with self-paced training
 

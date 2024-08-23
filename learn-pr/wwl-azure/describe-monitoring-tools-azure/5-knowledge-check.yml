@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-monitoring-tools-azure.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 08/17/2023
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -27,12 +29,12 @@ quiz:
       explanation: "Incorrect. Cost is one of the recommendation categories for Azure Advisor."
   - content: "You receive an email notification that virtual machines (VMs) in an Azure region where you have VMs deployed is experiencing an outage. Which component of Azure Service Health will let you know if your application is impacted?"
     choices:
-    - content: "Azure status"
+    - content: "Azure Status"
       isCorrect: false
-      explanation: "Incorrect. Resource health would let you know if any of your resources are down. Azure status provides a global big picture of Azure health."
-    - content: "Service health"
+      explanation: "Incorrect. Resource Health would let you know if any of your resources are down. Azure status provides a global big picture of Azure health."
+    - content: "Service Health"
       isCorrect: false
-      explanation: "Incorrect. Resource health would let you know if any of your resources are down. Service health will let you know if resources are down in regions where you’re deployed, but won’t give you details on your specific resources."
-    - content: "Resource health"
+      explanation: "Incorrect. Resource Health would let you know if any of your resources are down. Service health will let you know if resources are down in regions where you’re deployed, but won’t give you details on your specific resources."
+    - content: "Resource Health"
       isCorrect: true
-      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources"
+      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources."

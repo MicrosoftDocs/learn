@@ -4,11 +4,11 @@ title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB
 metadata:
   title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB
   description: "Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB"
-  ms.date: 10/17/2023
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.custom: devx-track-azurecli, devx-track-extended-java, devx-track-js, devx-track-python
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurecli, devx-track-extended-java, devx-track-js, devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: true
 durationInMinutes: 35

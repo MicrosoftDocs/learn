@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.copilot-for-entra
+title: Microsoft Copilot in Microsoft Entra
+metadata:
+  title: Microsoft Copilot in Microsoft Entra
+  description: Microsoft Copilot in Microsoft Entra.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 03/12/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-copilot-for-entra.md)]

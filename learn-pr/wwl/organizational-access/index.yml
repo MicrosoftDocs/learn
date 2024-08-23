@@ -3,23 +3,30 @@ uid: learn.wwl.organizational-access
 metadata:
   title: Enable organizational access
   description: "This module describes how clients can be configured to access organizational resources using a virtual private network (VPN)."
-  ms.date: 05/10/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
-  ms.service: azure
+  ms.service: entra
+  ai-usage: human-only
 title: Enable organizational access
 summary: This module describes how clients can be configured to access organizational resources using a virtual private network (VPN).
 abstract: |
   After this module, you should be able to:
-  - Describe how you can access corporate resources
-  - Describe VPN types and configuration
-  - Describe Always On VPN
-  - Describe how to configure Always On VPN
+
+  -   Describe how you can access corporate resources
+
+  -   Describe VPN types and configuration
+
+  -   Describe Always On VPN
+
+  -   Describe how to configure Always On VPN
 prerequisites: |
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
-  - Strong understanding of computer networking, client security, and application concepts
-  - Experience using Active Directory Domain Services
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+
+  -   Strong understanding of computer networking, client security, and application concepts
+
+  -   Experience using Active Directory Domain Services
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

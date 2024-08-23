@@ -3,14 +3,13 @@ uid: learn.wwl.build-auto-suggest-engine-copilot.debug-code-with-copilot
 title: Exercise - Debug code with Copilot Chat
 metadata:
   title: Exercise - Debug code with Copilot Chat
-  description: "Exercise - Debug code with Copilot Chat"
-  ms.date: 10/26/2023
+  description: Exercise - Debug code with Copilot Chat
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.custom:
-  - N/A
+  ms.date: 03/19/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-debug-code-with-copilot.md)]

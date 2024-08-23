@@ -12,6 +12,10 @@ This module includes hands-on activities that guide you through the process of b
 > [!NOTE]
 > If you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip  the following section of steps, and delete the code in the `Project.cs` file used for a previous exercise.
 
+> [!NOTE]
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
 1. Open Visual Studio Code.
 
     You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
@@ -229,11 +233,11 @@ If you're unsure whether you lose data in the conversion, write code to perform 
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-    You should see the following output:
+    You should see output similar to:
 
     ```Output
     Decimal: 1.23456789
-    Float:   1.234568
+    Float  : 1.2345679
     ```
 
     You can observe from the output that casting a `decimal` into a `float` is a narrowing conversion because you're losing precision.
@@ -294,11 +298,6 @@ Most of the numeric data types have a `Parse()` method, which converts a string 
 
 The `Convert` class has many helper methods to convert a value from one type into another. In the following code example, you convert a couple of strings into values of type `int`.
 
-> [!NOTE]
-> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
-> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
-
-
 1. Delete or use the line comment operator `//` to comment out the code from the previous exercise step, and add the following code:
 
     ```csharp
@@ -350,7 +349,7 @@ The following example demonstrates what happens when you attempt to cast a `deci
 
 ### Casting truncates and converting rounds
 
-When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. you could change the literal float to `1.999m` and the result of casting would be the same.
+When you're casting `int value = (int)1.5m;`, the value of the float is truncated so the result is `1`, meaning the value after the decimal is ignored completely. You could change the literal float to `1.999m` and the result of casting would be the same.
 
 When you're converting using `Convert.ToInt32()`, the literal float value is properly rounded up to `2`. If you changed the literal value to `1.499m`, it would be rounded down to `1`.
 

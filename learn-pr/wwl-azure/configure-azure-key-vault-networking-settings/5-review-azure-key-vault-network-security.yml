@@ -4,10 +4,12 @@ title: Configure Azure Key Vault firewalls and virtual networks
 metadata:
   title: Configure Azure Key Vault firewalls and virtual networks
   description: "Configure Azure Key Vault firewalls and virtual networks"
-  ms.date: 01/04/2024
+  ms.date: 05/31/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-review-azure-key-vault-network-security.md)]

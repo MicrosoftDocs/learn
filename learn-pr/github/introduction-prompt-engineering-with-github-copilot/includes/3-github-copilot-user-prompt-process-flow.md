@@ -4,8 +4,6 @@ In this unit, we'll break down how GitHub Copilot turns your prompts into smart,
 
 Let's walk through all the steps Copilot takes to process a user's prompt into a code suggestion.
 
-:::image type="content" source="../media/3-prompt-processing-flow-diagram.png" alt-text="Diagram of the GitHub Copilot prompt processing flow.":::
-
 ### 1-Secure prompt transmission and context gathering
 
 The process begins with the secure transmission of the user prompt over HTTPS. This ensures that your natural language comment is sent to GitHub Copilot's servers securely and confidentially, protecting sensitive information.
@@ -57,10 +55,6 @@ Copilot initiates a feedback loop based on your actions to achieve the following
 - Grow its knowledge from accepted suggestions.
 - Learn and improve through modifications and rejections of its suggestions.
 
-### 7-Prompt history retention
-
-Throughout the coding session, Copilot retains a history of prompts, context details, and interactions. This history serves as a contextual reference, allowing Copilot to provide consistent and coherent suggestions.
-
-### 8-Repeat for subsequent prompts
+### 7-Repeat for subsequent prompts
 
 The process is repeated as you provide more prompts, with Copilot continuously handling user requests, understanding their intent, and generating code in response. Over time, Copilot applies the cumulative feedback and interaction data, including context details, to improve its understanding of user intent and refine its code generation capabilities.

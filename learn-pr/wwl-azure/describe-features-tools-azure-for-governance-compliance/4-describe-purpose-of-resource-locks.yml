@@ -4,10 +4,12 @@ title: Describe the purpose of resource locks
 metadata:
   title: Describe the purpose of resource locks
   description: "Describe the purpose of resource locks"
-  ms.date: 08/16/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-describe-purpose-of-resource-locks.md)]

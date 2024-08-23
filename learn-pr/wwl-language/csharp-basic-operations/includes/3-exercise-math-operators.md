@@ -77,7 +77,7 @@ int decimalQuotient = 7.0m / 5.0m;
 decimal decimalQuotient = 7 / 5;
 ```
 
-### Add code to perform division using literal decimal data
+### Add code to cast results of integer division
 
 What if you are not working with literal values? In other words, what if you need to divide two variables of type `int` but do not want the result truncated? In that case, you must perform a data type cast from `int` to `decimal`. Casting is one type of data conversion that instructs the compiler to temporarily treat a value as if it were a different data type.
 

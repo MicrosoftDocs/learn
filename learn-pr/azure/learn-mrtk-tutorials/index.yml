@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/30/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: module
 title: Introduction to the Mixed Reality Toolkit-Set Up Your Project and Use Hand Interaction
 summary: Import and learn about foundational elements of the Mixed Reality Toolkit (MRTK).
 abstract: |

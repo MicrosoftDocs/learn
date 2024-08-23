@@ -8,7 +8,6 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: unit
-  ms.prod: learning-azure
 durationInMinutes: 12
 content: |
   [!include[](includes/3-design-with-cost-efficiency-mindset.md)]

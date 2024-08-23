@@ -3,7 +3,7 @@ uid: learn.language.rust-if-else-expressions.4-if-else-expressions
 metadata:
   title: Use if/else conditions
   description: Discover how to use if/else expressions to test conditions in Rust programs.
-  ms.date: 09/20/2021
+  ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: unit

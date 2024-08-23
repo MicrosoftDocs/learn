@@ -75,7 +75,6 @@ modules:
 - learn.wwl.configure-blob-storage
 - learn.wwl.configure-storage-security
 - learn.wwl.configure-azure-files-file-sync
-- learn.wwl.configure-storage-tools
 - learn.create-azure-storage-account
 - learn.control-access-to-azure-storage-with-sas
 - learn.upload-download-and-manage-data-with-azure-storage-explorer

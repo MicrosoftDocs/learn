@@ -28,10 +28,10 @@ Azure Container Registry doesn't support unauthenticated access and requires aut
 
 ## Deploy a container with Azure CLI
 
-1. Deploy a container instance using the `az container create` command. Make sure you use the same location you created your resources in and replace `<admin-username>` and `<admin-password>` with your admin username and password from the previous command.
+1. Deploy a container instance using the `az container create` command. Make sure you replace `<admin-username>` and `<admin-password>` with your admin username and password from the previous command.
 
     ```azurecli-interactive
-    az container create --resource-group learn-acr-rg --name acr-tasks --image $ACR_NAME.azurecr.io/helloacrtasks:v1 --registry-login-server $ACR_NAME.azurecr.io --ip-address Public --location <location> --registry-username <admin-username> --registry-password <admin-password>
+    az container create --resource-group learn-acr-rg --name acr-tasks --image $ACR_NAME.azurecr.io/helloacrtasks:v1 --registry-login-server $ACR_NAME.azurecr.io --ip-address Public --location eastus --registry-username <admin-username> --registry-password <admin-password>
     ```
 
 2. Get the IP address of the Azure container instance using the `az container show` command.

@@ -8,11 +8,11 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to set up a proof of concept environment. This environment must verify whether Azure services can help to modernize the IT infrastructure and meet business goals.
 
-In this module, you'll learn how to connect your on-premises environment to Azure so that workloads in each location can communicate with each other. You'll also learn how to implement subnets and routing between your on-premises and cloud environments. Finally, you'll learn how to ensure that workloads in the cloud and on-premises can perform DNS resolution to locate each other.
+In this module, you learn how to connect your on-premises environment to Azure so that workloads in each location can communicate with each other. You'll also learn how to implement subnets and routing between your on-premises and cloud environments. Finally, you learn how to ensure that workloads in the cloud and on-premises can perform DNS resolution to locate each other.
 
 ## Learning objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Describe Azure network topologies.
 - Implement an Azure virtual private network (VPN).
@@ -31,6 +31,7 @@ In order to get the best learning experience from this module, it's important th
 - On-premises resiliency Windows Server-based compute and storage technologies
 - Implementing and managing IaaS services in Azure
 - Microsoft Entra ID
-- Security-related technologies (firewalls, encryption, multi-factor authentication)
+- Security-related technologies (firewalls, encryption, multifactor authentication)
 - Windows PowerShell scripting
 - Automation and monitoring
+

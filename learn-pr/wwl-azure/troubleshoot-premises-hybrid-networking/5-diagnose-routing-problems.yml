@@ -4,12 +4,12 @@ title: Diagnose routing problems
 metadata:
   title: Diagnose routing problems
   description: "Diagnose routing problems"
-  ms.date: 04/28/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-diagnose-routing-problems.md)]

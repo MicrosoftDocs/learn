@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/13/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-sandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -19,29 +18,29 @@ quiz:
   questions:
   - content: "Which one of the following statements is a characteristic of a relational database?"
     choices:
-    - content: "All data must be stored as character strings"
+    - content: "All data must be stored as character strings."
       isCorrect: false
-      explanation: "That's incorrect. Relational databases enable you store text, numeric, and other types of data."
-    - content: "A row in a table represents a set of related data"
+      explanation: "That's incorrect. Relational databases enable you to store text, numeric, and other types of data."
+    - content: "A row in a table represents a set of related data."
       isCorrect: true
-      explanation: "That's correct. Each row in a table contains the data for a single entity in that table"
-    - content: "Different rows in the same table can contain different columns"
+      explanation: "That's correct. Each row in a table contains the data for a single entity in that table."
+    - content: "Different rows in the same table can contain different columns."
       isCorrect: false
-      explanation: "That's incorrect. All rows in the same table have the same columns"
+      explanation: "That's incorrect. All rows in the same table have the same columns."
   - content: "What is an index?"
     choices:
-    - content: "A structure that enables you to locate rows in a table quickly, using an indexed value"
+    - content: "A structure that enables you to locate rows in a table quickly, using an indexed value."
       isCorrect: true
       explanation: "That's correct. You create indexes to help speed up queries."
-    - content: "A virtual table based on the result set of a query"
+    - content: "A virtual table based on the result set of a query."
       isCorrect: false
       explanation: "That's incorrect. This statement is the description of a view."
-    - content: "A structure comprising rows and columns that you use for storing data"
+    - content: "A structure comprising rows and columns that you use for storing data."
       isCorrect: false
       explanation: "That's incorrect. This statement is the description of a relational table."
   - content: "Which one of the following statements is a benefit of using a PaaS service, instead of an on-premises system, to run your database management systems?"
     choices:
-    - content: "Increased day-to-day management costs"
+    - content: "Increased day-to-day management costs."
       isCorrect: false
       explanation: "That's incorrect. The PaaS approach reduces the day-to-day management effort."
     - content: "Increased scalability"

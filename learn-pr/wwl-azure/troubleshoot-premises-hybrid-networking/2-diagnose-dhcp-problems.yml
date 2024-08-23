@@ -4,12 +4,12 @@ title: Diagnose DHCP problems
 metadata:
   title: Diagnose DHCP problems
   description: "Diagnose DHCP problems"
-  ms.date: 04/28/2023
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/2-diagnose-dhcp-problems.md)]

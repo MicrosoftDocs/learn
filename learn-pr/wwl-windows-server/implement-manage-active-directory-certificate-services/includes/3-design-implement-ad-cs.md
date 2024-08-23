@@ -9,10 +9,11 @@ Before implementing AD CS, you first should design your CA hierarchy. As part of
 
 Some more complex CA designs include:
 
-- CA hierarchies with a policy CA. Policy CAs are subordinate CAs that reside directly under the root CA and above other, subordinate CAs in a CA hierarchy. You use policy CAs to issue CA certificates to their subordinate CAs. The CA certificates reflect the policies and procedures that an organization implements to secure its PKI, the processes that validate the identity of certificate holders, and the processes that enforce the procedures that manage certificates. A policy CA issues certificates only to other CAs. The CAs that receive these certificates must uphold and enforce the policies that the policy CA defined. Using policy CAs isn't mandatory unless different divisions, sectors, or locations of your organization require different issuance policies and procedures. For example, an organization can implement one policy CA for all certificates that it issues internally to employees and another policy CA for all certificates that it issues to contractors.
-- CA hierarchies with cross-certification trust. In this scenario, two independent CA hierarchies interoperate when a CA in one hierarchy issues a cross-certified CA certificate to a CA in another hierarchy. When you do this, you establish mutual trust between different CA hierarchies.
+ -  CA hierarchies with a policy CA. Policy CAs are subordinate CAs that reside directly under the root CA and above other, subordinate CAs in a CA hierarchy. You use policy CAs to issue CA certificates to their subordinate CAs. The CA certificates reflect the policies and procedures that an organization implements to secure its PKI, the processes that validate the identity of certificate holders, and the processes that enforce the procedures that manage certificates. A policy CA issues certificate only to other CAs. The CAs that receive these certificates must uphold and enforce the policies that the policy CA defined. Using policy CAs isn't mandatory unless different divisions, sectors, or locations of your organization require different issuance policies and procedures. For example, an organization can implement one policy CA for all certificates that it issues internally to employees and another policy CA for all certificates that it issues to contractors.
+ -  CA hierarchies with cross-certification trust. In this scenario, two independent CA hierarchies interoperate when a CA in one hierarchy issues a cross-certified CA certificate to a CA in another hierarchy. When you do this, you establish mutual trust between different CA hierarchies.
 
-:::image type="content" source="../media/m10-ca-hierarchies.png" alt-text="The various CA hierarchy options, including policy CA usage, a two-tier hierarchy, and a cross-certification trust." border="false":::
+:::image type="content" source="../media/m10-ca-hierarchies-012dfb9f.png" alt-text="The various CA hierarchy options, including policy CA usage, a two-tier hierarchy, and a cross-certification trust.":::
+
 
 ## Standalone vs. enterprise CAs
 
@@ -20,12 +21,62 @@ When using AD CS, you can deploy two types of CAs: standalone and enterprise. Th
 
 The following table details the most significant differences between standalone and enterprise CAs.
 
-|Characteristic|Standalone CA|Enterprise CA|
-|-|-|-|
-|Typical usage|You typically use a standalone CA for offline CAs.|You typically use an enterprise CA to issue certificates to users, computers, and services. You can't use it as an offline CA.|
-|AD DS dependencies|A standalone CA doesn't depend on AD DS.|An enterprise CA relies on AD DS as its configuration and registration database. An enterprise CA also uses AD DS to publish certificates and their metadata.|
-|Certificate request methods|Users can request certificates from a standalone CA only by using a manual procedure or web enrollment.|Users can request certificates from an enterprise CA by using manual enrollment, web enrollment, autoenrollment, enrollment on behalf, and web services|
-|Certificate issuance methods|A CA administrator must approve all requests manually.|CA can issue certificates or deny certificate issuance automatically based on a CA administrator-defined custom configuration.|
+:::row:::
+  :::column:::
+    **Characteristic**
+  :::column-end:::
+  :::column:::
+    **Standalone CA**
+  :::column-end:::
+  :::column:::
+    **Enterprise CA**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Typical usage
+  :::column-end:::
+  :::column:::
+    You typically use a standalone CA for offline CAs.
+  :::column-end:::
+  :::column:::
+    You typically use an enterprise CA to issue certificates to users, computers, and services. You can't use it as an offline CA.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    AD DS dependencies
+  :::column-end:::
+  :::column:::
+    A standalone CA doesn't depend on AD DS.
+  :::column-end:::
+  :::column:::
+    An enterprise CA relies on AD DS as its configuration and registration database. An enterprise CA also uses AD DS to publish certificates and their metadata.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Certificate request methods
+  :::column-end:::
+  :::column:::
+    Users can request certificates from a standalone CA only by using a manual procedure or web enrollment.
+  :::column-end:::
+  :::column:::
+    Users can request certificates from an enterprise CA by using manual enrollment, web enrollment, autoenrollment, enrollment on behalf, and web services
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Certificate issuance methods
+  :::column-end:::
+  :::column:::
+    A CA administrator must approve all requests manually.
+  :::column-end:::
+  :::column:::
+    CA can issue certificates or deny certificate issuance automatically based on a CA administrator-defined custom configuration.
+  :::column-end:::
+:::row-end:::
+
 
 An enterprise root CA is the most common choice when deploying a single CA in an AD DS environment. If you deploy a two-tier hierarchy with a subordinate CA in an AD DS environment, then you should consider a using standalone root CA as the root CA. This allows you to take it offline without impacting the process of managing certificates for domain users and domain-joined devices.
 
@@ -35,21 +86,25 @@ Additionally, you should keep in mind that you can't change computer names, doma
 
 There are also some considerations specific to deployment of an offline, standalone root CA:
 
-- Before you issue a subordinate certificate from the root CA, make sure that you provide at least one certificate revocation list distribution point (CDP) and AIA location that will be available to all clients. This is because, by default, a standalone root CA has the CDP and AIA located on itself. Therefore, when you take the root CA off the network, a revocation check will fail because the CDP and AIA locations will be inaccessible. When you define these locations, you should manually copy CRL and AIA information to that location.
-- Set a validity period for CRLs that the root CA publishes to a long period of time, for example, one year. This means that you'll have to turn on the root CA once per year to publish a new CRL, and then you'll have to copy it to a location that is available to clients. If you fail to do so, after the CRL on the root CA expires, revocation checks for all certificates will also fail.
-- Use Group Policy to publish the root CA certificate to a trusted root CA store on all server and client computers. You must do this manually because a standalone CA can't do it automatically, unlike an enterprise CA. You can also publish the root CA certificate to AD DS by using the certutil command-line tool.
+ -  Before you issue a subordinate certificate from the root CA, make sure that you provide at least one certificate revocation list distribution point (CDP) and AIA location that will be available to all clients. This is because, by default, a standalone root CA has the CDP and AIA located on itself. Therefore, when you take the root CA off the network, a revocation check will fail because the CDP and AIA locations will be inaccessible. When you define these locations, you should manually copy CRL and AIA information to that location.
+ -  Set a validity period for CRLs that the root CA publishes to a long period of time, for example, one year. This means that you'll have to turn on the root CA once per year to publish a new CRL, and then you'll have to copy it to a location that is available to clients. If you fail to do so, after the CRL on the root CA expires, revocation checks for all certificates will also fail.
+ -  Use Group Policy to publish the root CA certificate to a trusted root CA store on all server and client computers. You must do this manually because a standalone CA can't do it automatically, unlike an enterprise CA. You can also publish the root CA certificate to AD DS by using the certutil command-line tool.
 
 ## Demonstration
 
 The following video demonstrates how to:
 
-- Configure prerequisites for an enterprise root CA.
-- Deploy an enterprise root CA.
+ -  Configure prerequisites for an enterprise root CA.
+ -  Deploy an enterprise root CA.
 
 The main steps in the process are:
 
-1. Create an AD DS environment. Create a single-domain AD DS forest.
-1. Configure prerequisites for an enterprise root CA. Install the required server role and server role services.
-1. Deploy an enterprise root CA. Configure Enterprise Root CA settings.
+1.  Create an AD DS environment. Create a single-domain AD DS forest.
+2.  Configure prerequisites for an enterprise root CA. Install the required server role and server role services.
+3.  Deploy an enterprise root CA. Configure Enterprise Root CA settings.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIg]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIg]
+
+---
+
+##

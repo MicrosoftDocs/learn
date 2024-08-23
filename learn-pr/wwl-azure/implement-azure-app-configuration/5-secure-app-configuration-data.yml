@@ -4,10 +4,12 @@ title: Secure app configuration data
 metadata:
   title: Secure app configuration data
   description: "Secure app configuration data"
-  ms.date: 04/25/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-secure-app-configuration-data.md)]

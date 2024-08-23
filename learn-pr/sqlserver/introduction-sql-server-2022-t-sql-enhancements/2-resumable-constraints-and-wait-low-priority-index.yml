@@ -4,7 +4,7 @@ title: Create index and resumable constraint enhancements
 metadata:
   title: Create index and resumable constraint enhancements
   description: "In SQL Server 2022, new enhancements have been added to help control index creation and large table unique and primary key constraints creation."
-  ms.date: 5/5/2023
+  ms.date: 02/27/2024
   author: MScalopez
   ms.author: calopez
   ms.reviewer: vanto

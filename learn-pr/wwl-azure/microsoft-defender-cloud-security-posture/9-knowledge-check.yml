@@ -4,68 +4,70 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/02/2024
+  ms.date: 05/21/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A security administrator wants to enforce policies that can be used to apply security settings. Which of the following built-in security policies in Defender for Cloud uses Azure role-based access control (Azure RBAC)?"
+  - content: "What is the advantage of using Microsoft Defender External Attack Surface Management?"
     choices:
-    - content: "Defender for Cloud does not have any built-in security policies."
-      isCorrect: false
-      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
-    - content: "Defender for Cloud uses a third-party tool for built-in security policies."
-      isCorrect: false
-      explanation: "Incorrect. Defender for Cloud has built-in security policies that use Azure RBAC."
-    - content: "Defender for Cloud uses Azure role-based access control (Azure RBAC) which provides built-in roles you can assign to Azure users, groups, and services."
+    - content: "To identify and monitor assets that are exposed to the internet."
       isCorrect: true
-      explanation: "Correct. Defender for Cloud uses Azure RBAC for built-in security policies, which allows assigning roles to Azure users, groups, and services."
-  - content: "A company wants to improve their compliance posture by resolving failing assessments directly within the dashboard. What are the steps they should follow to remediate an automated assessment?"
+      explanation: "This feature is crucial for security as it helps organizations identify and assess internet-facing assets for vulnerabilities, ensuring they can proactively manage and reduce their attack surface."
+    - content: "For automating employee onboarding processes."
+      isCorrect: false
+      explanation: "This tool focuses on security management, particularly for external assets, and is not related to HR processes like employee onboarding."
+    - content: "To create marketing strategies for cloud services."
+      isCorrect: false
+      explanation: "External Attack Surface Management is designed for security purposes, not for developing marketing strategies."
+  - content: "How does Microsoft Defender for Cloud help assess compliance?"
     choices:
-    - content: "Select a particular resource to view more details and resolve the recommendation for that resource."
+    - content: "By providing real-time currency exchange rates."
       isCorrect: false
-      explanation: "Incorrect. This is one of the steps to remediate an automated assessment, but it is not the first step."
-    - content: "Select a manual assessment to expand it and view the details for that recommendation."
+      explanation: "Compliance assessments are focused on security and regulatory standards, not financial metrics like currency exchange rates."
+    - content: "By measuring the physical dimensions of data centers."
       isCorrect: false
-      explanation: "Incorrect. This answer describes the steps to remediate a manual assessment, not an automated assessment."
-    - content: "Select a regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
+      explanation: "Compliance with security frameworks is not related to the physical dimensions of data centers but to the adherence to specific security policies and standards."
+    - content: "Through assessment against industry and regulatory standards."
       isCorrect: true
-      explanation: "Correct. These are the steps to remediate an automated assessment. The user must select the regulatory compliance standard, select a compliance control to expand it, select any of the failing assessments that appear in the dashboard to view the details for that recommendation, select a particular resource to view more details and resolve the recommendation for that resource."
-  - content: "A security analyst needs to prioritize risk and eliminate threats beyond the firewall. Which Microsoft Defender External Attack Surface Management feature provides visibility of the organization's online infrastructure?"
+      explanation: "Microsoft Defender for Cloud provides tools to assess and ensure compliance with various industry and regulatory standards, helping organizations understand their compliance posture and make necessary adjustments."
+  - content: "What is the main purpose of the Microsoft Defender for Cloud Secure Score?"
     choices:
-    - content: "Microsoft Defender Antivirus"
+    - content: "To measure the network latency across cloud services."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender Antivirus provides protection against malware."
-    - content: "Microsoft Defender Firewall"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender Firewall provides protection against network-based attacks."
-    - content: "Microsoft Defender External Attack Surface Management"
+      explanation: "The Secure Score focuses on security posture, not on performance metrics like network latency."
+    - content: "To provide a quantitative measure of an organization's security posture."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender External Attack Surface Management provides visibility of the organization's online infrastructure to identify unknowns, prioritize risk, eliminate threats, and extend vulnerability and exposure control beyond the firewall."
-  - content: "A company wants to ensure the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms. Which of the following solutions should they use?"
+      explanation: "The Secure Score offers a quantifiable metric that helps organizations evaluate their security posture, identify areas of improvement, and track their progress over time."
+    - content: "To calculate the total cost of ownership for cloud resources."
+      isCorrect: false
+      explanation: "While financial management is important, the Secure Score specifically addresses security posture and compliance, not cost analysis."
+  - content: "What functionality does adding custom initiatives to Microsoft Defender for Cloud provide?"
     choices:
-    - content: "Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. It does not provide automation and validation of the creation and teardown of environments."
-    - content: "Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. It does not provide automation and validation of the creation and teardown of environments."
-    - content: "Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments."
+    - content: "Tailoring security policies and assessments to specific organizational needs."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud is a development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple pipeline environments. It enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-  - content: "A company wants to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Microsoft solution should they use?"
+      explanation: "Custom initiatives allow organizations to extend the capabilities of Microsoft Defender for Cloud by creating and applying security policies that match their unique operational and security requirements."
+    - content: "Customizing the color scheme of the dashboard."
+      isCorrect: false
+      explanation: "Custom initiatives are designed for security policy customization, not for aesthetic adjustments to the dashboard."
+    - content: "Changing the geographical location of stored data."
+      isCorrect: false
+      explanation: "While data residency is an important consideration, custom initiatives in Microsoft Defender for Cloud are intended for tailoring security policies, not for data location management."
+  - content: "How can hybrid cloud and multicloud environments be integrated with Microsoft Defender for Cloud?"
     choices:
-    - content: "Microsoft Defender for Cloud"
+    - content: "Through manual log file uploads only."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud is a cloud workload protection platform with specific protections for servers, containers, storage, databases, and other workloads."
-    - content: "Microsoft Sentinel"
+      explanation: "Microsoft Defender for Cloud offers more sophisticated and automated integration options than manual log uploads, providing comprehensive security management across environments."
+    - content: "Using exclusively third-party security tools."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Sentinel is a cloud-native security information and event manager (SIEM) platform that uses built-in AI to analyze large volumes of data across an enterprise."
-    - content: "Azure DevOps"
+      explanation: "While third-party tools can be part of a comprehensive security strategy, the question focuses on how Microsoft Defender for Cloud itself facilitates integration and security management across different cloud environments."
+    - content: "By connecting environments to Defender for Cloud for unified security management."
       isCorrect: true
-      explanation: "Correct. Azure DevOps enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Integrating hybrid and multicloud environments with Microsoft Defender for Cloud allows organizations to centralize their security management, gaining visibility and control over their distributed resources."

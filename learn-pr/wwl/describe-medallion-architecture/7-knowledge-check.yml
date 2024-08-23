@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/24/2023
+  ms.date: 01/31/2024
   author: wwlpublish
-  ms.author: shlindsay
+  ms.author: anrudduc
   ms.topic: unit
 durationInMinutes: 3
 quiz:
@@ -27,7 +27,7 @@ quiz:
     choices:
     - content: "Dataflows (Gen2)"
       isCorrect: false
-      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller datasets."
+      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller semantic models."
     - content: "Pipelines"
       isCorrect: false
       explanation: "Incorrect. Pipelines are primarily used for data orchestration, moving data between different layers and processes within the medallion architecture."

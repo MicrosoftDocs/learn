@@ -60,8 +60,8 @@ The last step is to add a route to Azure Firewall on the route table. After you 
     |Field |Value  |
     |---------|---------|
     |Route name    |  fw-rt       |
-    | Address prefix source | IP Addresses |
-    |Source IP addresses/CIDR ranges |  0.0.0.0/0       |
+    |Destination type | IP Addresses |
+    |Destination IP addresses/CIDR ranges |  0.0.0.0/0       |
     |Next hop type   |  Virtual appliance     |
     |Next hop address   |  Paste in the **Firewall private IP address** from the previous exercise unit. This can be found under your Firewall page, listed as Firewall private IP.    |
 
@@ -69,7 +69,7 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 
 1. Select **Add**.
 
-## Create application rule collection
+## Create an application rule collection
 
 By default, the firewall denies access to everything, so you need to configure conditions under which traffic is allowed through the firewall.
 
@@ -111,7 +111,7 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 :::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows the application rule collection form filled out.":::
 1. Select **Add**.
 
-## Create network rule collection
+## Create a network rule collection
 
 Let's say our scenario uses Microsoft Entra Domain Services (Microsoft Entra Domain Services), so you don't need to create a network rule to allow DNS. However, you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
 

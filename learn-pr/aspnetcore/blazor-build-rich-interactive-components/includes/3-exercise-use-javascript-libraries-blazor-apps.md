@@ -6,7 +6,7 @@ In this exercise, you extend the pizza delivery company's existing app by using 
 
 ## Clone the existing app
 
-To use Blazor, make sure you have the [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed. For more information, see [Check everything installed correctly](https://dotnet.microsoft.com/learn/aspnet/blazor-cli-tutorial/install).
+To use Blazor, make sure you have the [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed. For more information, see [Check everything installed correctly](https://dotnet.microsoft.com/learn/aspnet/blazor-cli-tutorial/install).
 
 1. Open Visual Studio Code, and open an integrated terminal by selecting **Terminal** > **New Terminal** from the top menu.
 

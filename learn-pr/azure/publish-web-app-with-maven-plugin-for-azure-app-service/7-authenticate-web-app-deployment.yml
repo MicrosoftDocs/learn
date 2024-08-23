@@ -4,7 +4,7 @@ title: Authenticate deployments to Azure App Service
 metadata:
   title: Authenticate deployments to Azure App Service
   description: In this unit, you'll learn how to authenticate your web app deployments to Azure App Service.
-  ms.date: 03/10/2020
+  ms.date: 05/02/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
@@ -14,14 +14,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following methods is not supported for authenticating deployments using the Maven Plugin for Azure App Service?"
+  - content: "Which of the following methods isn't supported for authenticating deployments using the Maven Plugin for Azure App Service?"
     choices:
-    - content: "Creating an Azure service principal and storing your credentials in an authentication file, then modifying your `pom.xml` file to use the authentication file."
+    - content: "Creating an Azure service principal and storing your credentials in the `pom.xml` file."
       isCorrect: false
-      explanation: "Using an authentication file is a supported authentication method."
-    - content: "Creating an Azure service principal and storing your credentials in a certificate file, then modifying your `pom.xml` file to use your credentials."
+      explanation: "Using a service principal in pom.xml is a supported authentication method."
+    - content: "Signing in with Maven."
       isCorrect: true
-      explanation: "Using a certificate file is not a supported authentication method."
+      explanation: "`mvn azure:login` is deprecated as an authentication type."
     - content: "Signing in using the Azure CLI."
       isCorrect: false
       explanation: "Signing in using the Azure CLI is a supported authentication method."
@@ -32,18 +32,18 @@ quiz:
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "When you create an Azure service principal, the JSON that is returned is in a different format. You need to reformat the key/value pairs before you can use them in an authentication file."
+      explanation: "When you create an Azure service principal, the JSON that is returned is in a different format. You need to reformat the key/value pairs before you can use them in the Maven settings.xml file."
     - content: "False"
       isCorrect: true
-      explanation: "When you create an Azure service principal, the JSON that is returned is in a different format. You need to reformat the key/value pairs before you can use them in an authentication file."
+      explanation: "When you create an Azure service principal, the JSON that is returned is in a different format. You need to reformat the key/value pairs before you can use them in the Maven settings.xml file."
   - content: "Which of the following methods is recommended for authenticating deployments using the Maven Plugin for Azure App Service?"
     choices:
-    - content: "Creating an Azure service principal and storing your credentials in an authentication file, then modifying your `pom.xml` file to use the authentication file."
+    - content: "Creating an Azure service principal and storing your credentials in the `pom.xml` file."
       isCorrect: false
       explanation: "Using your service principal credentials in a Maven `settings.xml` file is the recommended method for authentication."
     - content: "Creating an Azure service principal and storing your credentials in a certificate file, then modifying your `pom.xml` file to use your credentials."
       isCorrect: false
-      explanation: "Using a certificate file is not a supported authentication method."
+      explanation: "Using your service principal credentials in a Maven `settings.xml` file is the recommended method for authentication."
     - content: "Signing in using the Azure CLI."
       isCorrect: false
       explanation: "Using your service principal credentials in a Maven `settings.xml` file is the recommended method for authentication."

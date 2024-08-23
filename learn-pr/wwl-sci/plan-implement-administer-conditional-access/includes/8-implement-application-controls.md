@@ -86,7 +86,7 @@ Review the article [How to create and assign app protection policies](/intune/ap
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
-In this scenario, Contoso has decided that users might only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
+In this scenario, Contoso has decided that users can only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices and Exchange ActiveSync clients.
 

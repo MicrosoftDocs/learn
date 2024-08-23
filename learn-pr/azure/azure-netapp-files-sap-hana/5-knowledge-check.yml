@@ -24,18 +24,18 @@ quiz:
     - content: Low latency and high provisioning
       isCorrect: false
       explanation: Incorrect. Low latency and high-provisioning as well as one-step deployment of your single-host SAP HANA system are key benefits of using application volume groups. 
-  - content: SAP HANA systems require low latency and high performance. Azure NetApp Files leverages meets this demand with proximity placement groups. What role do proximity placement groups serve?
+  - content: SAP HANA systems require low latency and high performance. Azure NetApp Files volumes deployed using application volume group meet this demand in concert with proximity placement groups. What role do proximity placement groups serve?
     choices: 
     - content: Determine throughput limits on your SAP HANA system
       isCorrect: false 
       explanation: Incorrect. Although application volume groups help you configure throughput options, they don't configure limits. 
-    - content: Ensure compute resources are placed adjacently to ensure compute performance and low latency
+    - content: Ensure compute resources are placed adjacently to ensure storage performance and low latency
       isCorrect: true 
-      explanation: Correct. Due to the low latency and performance requirements, application volume groups ensure 
+      explanation: Correct Application volume groups low latency ensures performance requirements are met by selecting optimal volume placement.
     - content: Determine the region of your Azure NetApp Files deployment
       isCorrect: false
-      explanation: Incorrect. Application volume groups ensure compute resources are placed adjacently. You select the region of deployment. 
-  - content: Before requesting a proximity placement group, you must first.
+      explanation: Incorrect. Application volume group ensures compute and storage resources are placed adjacently. You select the region of deployment. 
+  - content: Before requesting pinning, you must first.
     choices: 
     - content: Create a volume
       isCorrect: false
@@ -64,7 +64,7 @@ quiz:
       explanation: Correct. 
     - content: /25 
       isCorrect: false 
-      explanation: Incorrect. You should use a /24 setting. 
+      explanation: Incorrect. You should use a /24 subnet. 
     - content: /26 
       isCorrect: false 
-      explanation: Incorrect. You should use a /24 setting. 
+      explanation: Incorrect. You should use a /24 subnet. 

@@ -3,8 +3,8 @@ uid: learn.orleans-build-first-app.exercise-create-endpoints
 title: Exercise - Build the API endpoints
 metadata:
   title: Exercise - Build the API endpoints
-  description: Learn how to build endpoints that leverage Orleans grains.
-  ms.date: 10/11/2023
+  description: Learn how to build endpoints that use Orleans grains.
+  ms.date: 04/05/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit

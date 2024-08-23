@@ -43,19 +43,16 @@ The following code shows how to use these connection details to connect your app
 
 ``` csharp
 using Azure;
-using Azure.AI.FormRecognizer.DocumentAnalysis;
+using Azure.AI.DocumentIntelligence;
 
 string endpoint = "<endpoint>";
 string key = "<access-key>";
 AzureKeyCredential cred = new AzureKeyCredential(key);
-DocumentAnalysisClient client = new DocumentAnalysisClient(new Uri(endpoint), cred);
+DocumentIntelligenceClient client = new DocumentIntelligenceClient (new Uri(endpoint), cred);
 
-//sample form document
 Uri fileUri = new Uri ("<url-of-document-to-analyze>");
 
-AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-document", fileUri);
-
-await operation.WaitForCompletionAsync();
+AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUri);
 
 AnalyzeResult result = operation.Value;
 ```
@@ -65,22 +62,21 @@ AnalyzeResult result = operation.Value;
 ::: zone pivot="python"
 
 ```python
-from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
+from azure.ai.documentintelligence import DocumentIntelligenceClient
+from azure.ai.documentintelligence.models import AnalyzeResult
 
-# set `<your-endpoint>` and `<your-key>` variables with the values from the Azure portal
 endpoint = "<your-endpoint>"
 key = "<your-key>"
 
 docUrl = "<url-of-document-to-analyze>"
 
-# create your `DocumentAnalysisClient` instance and `AzureKeyCredential` variable
-document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, 
+document_analysis_client = DocumentIntelligenceClient(endpoint=endpoint, 
     credential=AzureKeyCredential(key))
 
 poller = document_analysis_client.begin_analyze_document_from_url(
     "prebuilt-document", docUrl)
-result = poller.result()
+result: AnalyzeResult = poller.result()
 ```
 
 ::: zone-end

@@ -6,8 +6,9 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.date: 12/27/2023
-  ms.topic: interactive-tutorial
+  manager: tedhudek
+  ms.date: 01/04/2024
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/5-knowledge-check.md)]

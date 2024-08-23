@@ -1,6 +1,6 @@
 ## Example scenario
 
-Imagine you work for a growing video editing company that provides a cloud-based video rendering service. The service is experiencing increased demand from the recent international expansion. The application leverages the Horizontal Pod Autoscaler (HPA) for scaling purposes, but the cluster doesn't seem to be following up. While you could manually scale the application, it'd require someone to keep constant eye on it. Your manager has tasked you with finding a solution to scale the cluster automatically and free up some employee time.
+Imagine you work for a growing video editing company that provides a cloud-based video rendering service. The service is experiencing increased demand from the recent international expansion. The application applies the Horizontal Pod Autoscaler (HPA) for scaling purposes, but the cluster doesn't seem to be following up. While you could manually scale the application, it would require someone to keep a constant eye on it. Your manager tasked you with finding a solution to scale the cluster automatically and free up some employee time.
 
 Since AKS already provides scaling tools, you decide to look into a feature called the *cluster autoscaler* to see if it would be the right fit.
 

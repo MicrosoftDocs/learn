@@ -3,11 +3,12 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery
 metadata:
   title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
   description: Learn how to provide disaster recovery for your on-premises infrastructure by using Azure Site Recovery to manage and orchestrate replication. Use Site Recovery to perform failover and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers.
+  manager: jsuri
   ms.date: 05/25/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: module
-  ms.service: site-recovery
+  ms.service: azure-site-recovery
 title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
 summary: Learn how to provide disaster recovery for your on-premises infrastructure by using Azure Site Recovery to manage and orchestrate replication. Use Site Recovery to perform failover and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers.
 abstract: | 
@@ -27,7 +28,7 @@ products:
 - azure
 - azure-site-recovery
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.1-introduction
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-site-recovery-overview

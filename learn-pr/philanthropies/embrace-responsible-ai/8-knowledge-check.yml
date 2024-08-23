@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/28/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5 
+content: |
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What is a potential risk when using AI for personalized learning?"
+      choices:
+        - content: "AI can adapt to individual learning styles."
+          isCorrect: false
+          explanation: "Incorrect. While AI can adapt to individual learning styles, this is a benefit, not a risk."
+        - content: "AI-generated assessments may be inaccurate."
+          isCorrect: true
+          explanation: "Correct. Inaccurate AI-generated assessments can lead to educational setbacks or unnecessary stress for learners."
+        - content: "AI can automate administrative tasks."
+          isCorrect: false
+          explanation: "Incorrect. Automating administrative tasks is related to operational efficiency, not a risk of personalized learning."
+    - content: "What is an essential consideration when dealing with AI in education to ensure fairness?"
+      choices:
+        - content: "Implement strong data security measures."
+          isCorrect: false
+          explanation: "Incorrect. Data security is crucial but does not directly ensure fairness in AI applications."
+        - content: "Understand the purpose, scope, and intended users of the AI system."
+          isCorrect: true
+          explanation: "Correct. Understanding these aspects helps to design AI systems that are fair and equitable."
+        - content: "Automate strategic recommendations based on data."
+          isCorrect: false
+          explanation: "Incorrect. While automation can aid decision-making, it does not inherently ensure fairness."
+    - content: "Which of the following is a privacy measure for AI systems in education?"
+      choices:
+        - content: "Anonymize personally identifiable information."
+          isCorrect: true
+          explanation: "Correct. Anonymizing PII is a key privacy measure to protect individual identities."
+        - content: "Educate patients and their families."
+          isCorrect: false
+          explanation: "Incorrect. This action is related to healthcare, not a privacy measure in education."
+        - content: "Regularly audit the AI system for societal bias."
+          isCorrect: false
+          explanation: "Incorrect. Societal bias audits are related to fairness, not privacy."

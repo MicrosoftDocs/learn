@@ -4,12 +4,10 @@ title: Explore BitLocker
 metadata:
   title: Explore BitLocker
   description: "Explore BitLocker"
-  ms.date: 11/21/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-explore-bitlocker.md)]

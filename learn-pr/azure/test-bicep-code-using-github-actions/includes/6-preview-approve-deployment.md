@@ -4,11 +4,11 @@ In this unit, you'll learn about using the what-if command in a workflow. You'll
 
 ## The what-if operation
 
-A Bicep file describes the state that you want your Azure environment to be in at the end of a deployment. When you submit a deployment, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep file.
+A Bicep file describes the state that you want your Azure environment to be in at the end of a deployment. When you submit a deployment, Azure Resource Manager changes your Azure environment to match the state described in your Bicep file.
 
 A deployment can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in the deletion of existing resources.
 
-Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that will happen to your environment.
+Anytime resources are created, updated, or deleted, there's a risk that things can change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated, and deleted. This verification adds value to your automation process. When you're deploying to a production environment, it's important to confirm any changes that happen to your environment.
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your workflow job:
 
@@ -30,7 +30,7 @@ To learn more about the what-if command, see the Microsoft Learn module [Preview
 
 ## Environments
 
-In GitHub Actions, an _environment_ represents the place to which your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we'll focus on their ability to add required reviewers to your workflow.
+In GitHub Actions, an _environment_ represents the place where your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we focus on their ability to add required reviewers to your workflow.
 
 You create an environment by using the GitHub web interface. You can create environments when you work with a public GitHub repository, or when you use a GitHub Enterprise account.
 
@@ -39,7 +39,7 @@ After you create an environment, you can reference it in any jobs in your workfl
 :::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
 
 > [!NOTE]
-> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about environments in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
+> When your deployment workflow's workload identity interacts with Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about environments in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
 
 ## Environment protection rules
 
@@ -57,7 +57,7 @@ A required reviewer is one type of protection rule. When you configure a require
 
 Environments provide other types of protection rules, too. For example, you can restrict the Git branches that can be deployed to specific environments. We discuss only the required reviewers rule in this module, but we provide links to more information about other protection rules in the summary.
 
-After your workflow begins and reaches a step that requires a reviewer, the workflow run pauses. All of the users who have been designated as reviewers are sent a message in GitHub and by email.
+After your workflow begins and reaches a step that requires a reviewer, the workflow run pauses. All of the users who are designated as reviewers are sent a message in GitHub and by email.
 
 Reviewers can inspect the workflow logs, such as the changes that the what-if operation detects. Based on this information, they then approve or reject the change. If they approve the change, the workflow resumes. If they reject, or if they don't respond within the timeout period, the job fails.
 
@@ -67,6 +67,6 @@ Reviewers can inspect the workflow logs, such as the changes that the what-if op
 
 The environments feature in GitHub gives you the ability to link your deployments to an environment, and then the deployment inherits the protection rules defined by the administrator of the environment. However, there's nothing to require that new workflows use environments.
 
-It's important for an organization to establish good practices to review your workflow definitions. An example is configuring your repository to require pull request reviews on any changes to your _main_ branch by using branch protection rules. You'll learn more about this concept in a future module.
+It's important for an organization to establish good practices to review your workflow definitions. For example,configure your repository to require pull request reviews on any changes to your _main_ branch by using branch protection rules. You'll learn more about this concept in a future module.
 
-You can also add _secrets_ to an environment. That way the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.
+You can also add _secrets_ to an environment. That way, the secret can only be used in a job that also uses the environment. By combining environment protection rules and secrets, you can ensure your workflow security is maintained.

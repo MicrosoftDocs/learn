@@ -22,7 +22,7 @@ roles:
 products: 
 - hololens
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.introduction-to-hololens
 - learn.choose-deployment-strategy-hololens

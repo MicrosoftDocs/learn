@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-entanglement.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.date: 04/25/2024
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the key feature of entangled qubits in quantum mechanics?
+    choices:
+    - content: The states of entangled qubits can't be described independently but only as a whole system. Thus, when you measure one qubit, it affects the state of the other qubit, no matter how far apart they are.
+      isCorrect: true
+      explanation: Correct. When qubits are entangled, they share information.
+    - content: Entangled qubits don't share any information.
+      isCorrect: false
+      explanation: Incorrect. When qubits are entangled, information is shared between them.
+    - content: The states of entangled qubits can be described independently. Thus, when you measure one qubit, it doesn't affect the state of the other qubit.
+      isCorrect: false
+      explanation: Incorrect. When qubits are entangled, their states can' be described independently but only as a whole system.
+
+  - content: What is the role of the CNOT operation in creating quantum entanglement?
+    choices:
+    - content: >-
+        It flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $\ket{1}$.
+      isCorrect: true
+      explanation: Correct. The CNOT operation is a multiqubit operation that entangles two qubits by flipping the state of the target qubit based on the state of the control qubit.
+    - content: It flips the state of both qubits regardless of their initial states.
+      isCorrect: false
+      explanation: >-
+        Incorrect. The CNOT operation only flips the state of the target qubit if the control qubit is in the state $\ket{1}$.
+    - content: >-
+        It flips the state of the first qubit (the control qubit) if and only if the state of the second qubit (the target qubit) is $\ket{1}$.
+      isCorrect: false
+      explanation: Incorrect. The CNOT operation flips the state of the target qubit, not the control qubit, based on the state of the control qubit.
+
+  - content: What is the role of classical communication in the quantum teleportation protocol?
+    choices:
+    - content: It allows the teleportation of information faster than the speed of light.
+      isCorrect: false
+      explanation: Incorrect. The classical communication prevents the information to be teleported faster than the speed of light.
+    - content: It's used to physically move the qubit from one location to another.
+      isCorrect: false
+      explanation: Incorrect. In quantum teleportation, the qubit itself isn't physically moved, but the information about its state.
+    - content: It's used by the sender to communicate the results of their measurements to the receiver. By doing so, the receiver can apply the necessary operations to the qubit they have to recreate the message qubit.
+      isCorrect: true
+      explanation: Correct. The sender communicates the results of their measurements to the receiver using classical communication. 

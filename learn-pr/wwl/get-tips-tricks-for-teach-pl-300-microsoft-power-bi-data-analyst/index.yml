@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.introduction
 - learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst.objective-domains

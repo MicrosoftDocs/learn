@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 04/07/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -20,15 +20,15 @@ quiz:
       explanation: "Correct. The Spark notebook uses spark.readStream to read data from the Kafka cluster."
     - content: "read.Stream()."
       isCorrect: false
-      explanation: "No. read.Stream is the R method to read data from a stream."
+      explanation: "No. `read.Stream` is the R method to read data from a stream."
     - content: "spark.writeStream()."
       isCorrect: false
       explanation: "No. spark.writeStream writes data to the stream."
-  - content: "Which of the following parameters cannot be used to read data from Kafka?"
+  - content: "Which of the following parameters can't be used to read data from Kafka?"
     choices:
     - content: "Window."
       isCorrect: true
-      explanation: "Correct. Window is not a required parameter."
+      explanation: "Correct. Window isn't a required parameter."
     - content: "Offset."
       isCorrect: false
       explanation: "Incorrect. Offset is a required parameter."

@@ -3,8 +3,8 @@ uid: learn.orleans-build-first-app.exercise-set-up-projects
 title: Exercise - Create the sample app
 metadata:
   title: Exercise - Create the sample app
-  description: Create your first app to use Orleans.
-  ms.date: 10/11/2023
+  description: Create your first Orleans app.
+  ms.date: 04/05/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit

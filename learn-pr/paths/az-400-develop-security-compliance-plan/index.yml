@@ -29,7 +29,7 @@ products:
 - azure-monitor
 subjects:
 - information-protection-governance
-- business-continuity
+- site-reliability-engineering
 - security
 modules:
 - learn.intro-to-azure-ad

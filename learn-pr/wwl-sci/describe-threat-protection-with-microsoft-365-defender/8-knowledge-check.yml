@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/03/2024
+  ms.date: 08/15/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
   ms.custom:
   - N/A
 durationInMinutes: 3
@@ -22,7 +20,7 @@ quiz:
     choices:
     - content: "Microsoft Defender for Office 365."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Office 365 safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients."
+      explanation: "Correct. Microsoft Defender for Office 365 safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive, and other Office clients."
     - content: "Microsoft Defender for Endpoint."
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender for Endpoint is a platform designed to help enterprise networks protect endpoints by preventing, detecting, investigating, and responding to advanced threats."

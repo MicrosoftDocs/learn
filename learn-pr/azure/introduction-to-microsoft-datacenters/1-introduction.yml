@@ -3,10 +3,10 @@ uid: learn.introduction-to-microsoft-datacenters.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
+  description: Introduces the Introduction to Microsoft Datacenters module.
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 2
 content: |

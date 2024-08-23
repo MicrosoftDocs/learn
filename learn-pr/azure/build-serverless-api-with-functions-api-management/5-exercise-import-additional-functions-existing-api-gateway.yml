@@ -4,7 +4,7 @@ title: Exercise - Add another Azure Functions app to an existing API
 metadata:
   title: Exercise - Add another Azure Functions app to an existing API
   description: In this unit, you will add an second function to a product in Azure API Management and test your integrated API.
-  ms.date: 09/26/2019
+  ms.date: 11/03/2023
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

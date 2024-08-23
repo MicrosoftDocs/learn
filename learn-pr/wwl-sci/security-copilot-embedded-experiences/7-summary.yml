@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: Summary and resources on the embedded experiences of Microsoft Copilot for Security.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/01/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

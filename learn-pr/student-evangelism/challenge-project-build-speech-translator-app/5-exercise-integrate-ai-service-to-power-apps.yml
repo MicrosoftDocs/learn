@@ -3,12 +3,14 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exer
 title: Exercise - Integrate AI services with Power Apps
 metadata:
   title: Exercise - Integrate AI services with Power Apps
-  description: "Exercise - Integrate AI services with Power Apps."
-  ms.date: 12/13/2023
+  description: Exercise - Integrate AI services with Power Apps.
   author: theoyinbooke
   ms.author: somelezediko
-  ms.custom: team=nextgen
+  ms.date: 12/13/2023
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-integrate-ai-service-to-power-apps.md)]

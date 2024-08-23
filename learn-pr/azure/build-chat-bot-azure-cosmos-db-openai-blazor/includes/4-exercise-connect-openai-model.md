@@ -12,10 +12,10 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) package 
 
 1. Open a new terminal.
 
-1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a prerelease version.
+1. Use [`dotnet add package`](/dotnet/core/tools/dotnet-add-package) to import the `Azure.AI.OpenAI` package from NuGet specifying a prerelease version of `1.0.0-beta.14`.
 
     ```bash
-    dotnet add package Azure.AI.OpenAI --prerelease
+    dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.14
     ```
 
 1. Build the .NET project again.
@@ -84,13 +84,13 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
     using Azure.AI.OpenAI;
     ```
 
-1. Within the `OpenAiService` class, add a new variable named `_client` that's of type [`OpenAIClient`](/dotnet/api/azure.ai.openai.openaiclient).
+1. Within the `OpenAiService` class, add a new variable named `_client` that's of type [`OpenAIClient`](/dotnet/api/overview/azure/ai.openai-readme).
 
     ```csharp
     private readonly OpenAIClient _client;
     ```
 
-1. Create a new string variable named `_systemPromptText` with a static block of text to send to the AI assistant before each prompt.
+1. Define a static block of text to send to the AI assistant before each prompt with a new string variable named `_systemPromptText`.
 
     ```csharp
     private readonly string _systemPrompt = @"
@@ -98,7 +98,7 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
         Provide concise answers that are polite and professional." + Environment.NewLine;
     ```
 
-1. Create another new string variable named `_summarizePrompt` with a static block of text to send to the AI assistant with instructions on how to summarize a conversation.
+1. Define a second static block of text to send to the AI with instructions on how to summarize a conversation with a new string variable named `_summarizePrompt`.
 
     ```csharp
     private readonly string _summarizePrompt = @"

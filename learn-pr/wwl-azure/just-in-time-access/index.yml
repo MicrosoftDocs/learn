@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.just-in-time-access
+metadata:
+  title: Explore just-in-time virtual machine access
+  description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
+  ms.date: 05/31/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Explore just-in-time virtual machine access
+summary: In this module, we'll focus on the risk of open management ports on virtual machines and how JIT VM access in Microsoft Defender for Cloud mitigates this threat.
+abstract: |
+  By the end of this training module, participants will:
+
+  -   Understand the risks associated with open management ports on virtual machines.
+
+  -   Learn how to implement JIT VM access using Microsoft Defender for Cloud.
+
+  -   Explore how JIT VM access reduces attack surfaces in Azure and AWS environments.
+
+  -   Gain skills to configure and manage temporary, controlled access to VMs for authorized users.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-arc
+- azure-log-analytics
+- azure-portal
+- azure-sql-database
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- azure-storage
+- azure-storage-accounts
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- azure-virtual-network
+- defender-for-cloud
+subjects:
+- cloud-security
+- compliance
+- infrastructure
+- networking
+- security
+- storage
+- virtual-machine
+units:
+- learn.wwl.just-in-time-access.introduction
+- learn.wwl.just-in-time-access.just-in-time-access-to-protect-azure-virtual-machines
+- learn.wwl.just-in-time-access.enable-just-in-time-virtual-machine-access
+- learn.wwl.just-in-time-access.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
+- learn.wwl.just-in-time-access.knowledge-check
+- learn.wwl.just-in-time-access.summary
+badge:
+  uid: learn.wwl.just-in-time-access.badge

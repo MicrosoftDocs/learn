@@ -4,12 +4,10 @@ title: Create and query views
 metadata:
   title: Create and query views
   description: "Create and query views"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-create-query-views.md)]

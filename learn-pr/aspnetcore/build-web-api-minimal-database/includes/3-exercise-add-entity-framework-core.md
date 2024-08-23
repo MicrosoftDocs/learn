@@ -48,7 +48,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
 1. Open _Program.cs_ and add the highlighted code:
 
-   :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-19":::
+   :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-22":::
 
    You might receive a prompt from Visual Studio Code to add assets to debug the project. Select `Yes` in the dialog.
 

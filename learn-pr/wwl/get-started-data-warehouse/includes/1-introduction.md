@@ -4,4 +4,4 @@ Microsoft Fabric's data warehouse is a modern version of the traditional data wa
 
 Fabric's data warehouse experience is designed to address these challenges. Fabric enables data engineers, analysts, and data scientists to work together to create and query a data warehouse that is optimized for their specific needs.
 
-In this module, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data, and describe datasets.
+In this module, you'll learn about data warehouses in Fabric, create a data warehouse, load, query, and visualize data.

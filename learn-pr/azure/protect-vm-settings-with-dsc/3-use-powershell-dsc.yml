@@ -4,9 +4,9 @@ title: Use PowerShell DSC to achieve a desired state
 metadata:
   title: Use PowerShell DSC to achieve a desired state
   description: Use PowerShell DSC to achieve a desired state
-  ms.date: 09/13/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 09/22/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
   ms.custom:
 durationInMinutes: 10

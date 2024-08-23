@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Virtualize computing power
 summary: Learn about how computing power is virtualized to create cloud resources. Covers different types of CPU virtualization.

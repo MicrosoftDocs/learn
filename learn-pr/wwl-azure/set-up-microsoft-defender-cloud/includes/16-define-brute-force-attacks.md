@@ -8,17 +8,38 @@ Adversaries without prior knowledge of legitimate credentials within the system 
 
 Typically, management services over commonly used ports are used when guessing passwords. Commonly targeted services include the following:
 
-:::image type="content" source="../media/brute-force-attack-target-management-services-ports-protocols-18c15237.png" alt-text="Table showing management services, ports, and protocols.":::
-
+| **Management Service**                                                       | **Port and Protocol**                                                                  |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| SSH (Secure Shell)                                                           | 22 / TCP (Transmission Control Protocol)                                               |
+| Telnet (Teletype Network)                                                    | 23 / TCP (Transmission Control Protocol)                                               |
+| FTP (File Transfer Protocol)                                                 | 21 / TCP (Transmission Control Protocol)                                               |
+| NetBIOS (Network Basic Input/Output System)/SMB (Server Message Block)/Samba | 139 and 445 / TCP (Transmission Control Protocol)                                      |
+| LDAP (Lightweight Directory Access Protocol)                                 | 389 / TCP (Transmission Control Protocol)                                              |
+| Kerberos                                                                     | 88 / TCP (Transmission Control Protocol)                                               |
+| RDP (Remote Desktop Protocol)                                                | 3389 / TCP (Transmission Control Protocol)                                             |
+| HTTP/HTTP (Hypertext Transfer Protocol) Management Services                  | 80 and 443 / TCP (Transmission Control Protocol)                                       |
+| MSSQL (Microsoft Structured Query Language)                                  | 1433 / TCP (Transmission Control Protocol)                                             |
+| Oracle                                                                       | 1521 / TCP (Transmission Control Protocol)                                             |
+| My SQL (My Structured Query Language)                                        | 3306 / TCP (Transmission Control Protocol)                                             |
+| VNC (Virtual Network Computing)                                              | 5900 / TCP (Transmission Control Protocol)                                             |
+| SNMP (Simple Network Management Protocol)                                    | 161 and 162 / UDP (User Datagram Protocol) / 162 / TCP (Transmission Control Protocol) |
 
 ## Brute force attack programs and use cases
 
 These programs can be used individually or in combination to launch a successful brute force attack on a target network or system. There are several types of brute force attack programs used by attackers, including:
 
-:::image type="content" source="../media/types-of-brute-force-attack-programs-use-cases-b01d5618.png" alt-text="Table showing brute force attack programs and use cases.":::
+| Types of Brute Force Attack Programs | Use Case                                            |
+| ------------------------------------ | --------------------------------------------------- |
+| Password crackers                    | used for guessing passwords and encryption keys.    |
+| Port scanners                        | used to identify open ports on a network or system. |
+| Network mappers                      | used to map the topology of a network.              |
+| Web application servers              | used to test web applications for vulnerabilities.  |
+| SSH brute force tools                | used to guess SSH login credentials.                |
+| Remote desktop brute force tools     | used to guess RDP login credentials.                |
+| FTP brute force tools                | used to guess FTP login credentials.                |
+| SNMP brute force tools               | used to guess SNMP community strings.               |
 
-
-## Indications of an attack
+## Indications of an attack<br>
 
  -  Extreme counts of failed sign-ins from many unknown usernames
  -  Never previously successfully authenticated from multiple remote desktop protocol (RDP) connections or from new source IP addresses

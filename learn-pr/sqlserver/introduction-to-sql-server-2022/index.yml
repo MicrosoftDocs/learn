@@ -31,7 +31,7 @@ roles:
 products:
   - sql-server
 subjects:
-  - database
+  - databases
 units:
 - learn.introduction-to-sql-server-2022.introduction
 - learn.introduction-to-sql-server-2022.deploy-and-feature-difference

@@ -39,7 +39,7 @@ Here's the XML nodes in use:
 - param: A parameter to the method, and what it represents.
 - returns: A description of what the method returns.
 
-The Swashbuckle tooling automatically includes your XML documentation comments in the OpenAPI documentation, and allows you to view it in Swagger UI.
+Once you [enable XML comments](/aspnet/core/tutorials/getting-started-with-swashbuckle#xml-comments), the Swashbuckle tooling can include your XML documentation comments in the OpenAPI documentation, and allows you to view it in Swagger UI.
 
 :::image type="content" source="../media/Swagger_UI_XML.png" alt-text="Image showing Swagger UI and added XML Comments." loc-scope="third-party":::
 

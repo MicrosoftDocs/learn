@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/08/2023
   author: alfredodeza
   ms.author: alfredodeza
-  ms.topic: interactive-tutorial
+  ms.topic: module
 title: Testing with Pytest
 summary: Improve your testing experience with Pytest, a great choice to write, run, and extend tests in Python. Get exposed to useful patterns and the basics of testing with Pytest.
 abstract: |
@@ -28,8 +28,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.test-python-with-pytest.introduction
 - learn.test-python-with-pytest.pytest-basics

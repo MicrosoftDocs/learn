@@ -7,7 +7,7 @@ metadata:
   ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
+  ms.topic: module
   showCreativeCommonsFooter: true
 title: Introduction to gaming and disability
 summary: This module introduces accessibility concepts for game titles, gaming platforms, and gaming hardware. You'll learn about the core elements in gaming experiences that influence accessibility and how those elements can affect the experiences of gamers with visual, hearing, mobility, and cognitive disabilities.
@@ -28,7 +28,7 @@ roles:
 products:
 - xbox
 subjects:
-- gaming-innovation
+- game-development
 units:
 - learn.intro-to-gaming.introduction
 - learn.intro-to-gaming.approach-gameplay

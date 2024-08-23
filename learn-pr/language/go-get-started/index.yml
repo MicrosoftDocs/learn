@@ -6,9 +6,9 @@ metadata:
   ms.date: 12/21/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
-  ms.devlang: go
+  ms.devlang: golang
 title: Get started with Go
 summary: In this module, you’ll start taking your first steps with Go.
 abstract:  |

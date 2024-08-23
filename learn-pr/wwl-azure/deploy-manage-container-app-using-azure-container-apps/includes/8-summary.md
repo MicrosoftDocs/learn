@@ -6,12 +6,12 @@ Having the ability to implement the scaling and revision management capabilities
 
 Detailed resources:
 
-- Azure Container Apps documentation: [https://docs.microsoft.com/azure/container-apps/](/azure/container-apps/)
+- Azure Container Apps documentation: [https://learn.microsoft.com/azure/container-apps/](/azure/container-apps/)
 
-- Azure Container Registry documentation: [https://docs.microsoft.com/azure/container-registry/](/azure/container-registry/)
+- Azure Container Registry documentation: [https://learn.microsoft.com/azure/container-registry/](/azure/container-registry/)
 
-- Azure DevOps documentation: [https://docs.microsoft.com/azure/devops/](/azure/devops/)
+- Azure DevOps documentation: [https://learn.microsoft.com/azure/devops/](/azure/devops/)
 
-- Microsoft Entra managed identities for Azure resources documentation: [https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/](/azure/active-directory/managed-identities-azure-resources/)
+- Microsoft Entra managed identities for Azure resources documentation: [/azure/active-directory/managed-identities-azure-resources/](/azure/active-directory/managed-identities-azure-resources/)
 
 - Docker Docs - Reference documentation: [https://docs.docker.com/reference](https://docs.docker.com/reference)

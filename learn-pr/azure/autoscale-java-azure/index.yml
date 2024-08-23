@@ -7,7 +7,7 @@ metadata:
   ms.date: 03/22/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.contributors: ropreddy-12032021
   ms.custom: team=cloud_advocates
 title: Drive higher utilization of your Java apps - autoscaling
@@ -30,8 +30,6 @@ products:
 - azure
 - azure-database-mysql
 - azure-spring-apps
-subjects:
-- development-tools
 units:
 - learn.autoscale-java-azure.introduction
 - learn.autoscale-java-azure.exercise-setup

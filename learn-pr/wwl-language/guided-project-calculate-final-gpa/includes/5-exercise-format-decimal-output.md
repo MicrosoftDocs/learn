@@ -1,3 +1,6 @@
+
+
+
 In this exercise, you'll calculate the final GPA and modify the console output to achieve the desired reporting format. The GPA is equal to the sum of the total grade points divided by the sum of the total credit hours.
 
 ## Calculate the final GPA
@@ -184,4 +187,3 @@ In this task, you'll run the code and verify that the output is correct.
     
 > [!IMPORTANT]
 > Be sure not to delete any of the code you've written so far. You'll build on this code in the next exercise.
-

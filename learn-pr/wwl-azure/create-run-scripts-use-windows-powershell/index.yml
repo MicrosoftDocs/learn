@@ -3,32 +3,53 @@ uid: learn.wwl.create-run-scripts-use-windows-powershell
 metadata:
   title: Create and run scripts by using Windows PowerShell
   description: "This module explains how to create and run scripts."
-  ms.date: 11/11/2022
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Create and run scripts by using Windows PowerShell
 summary: This module explains how to create and run scripts.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe Windows PowerShell scripts.
-  - Explain how to find scripts and modify them.
-  - Describe how to create scripts.
-  - Describe the PowerShellGet module.
-  - Explain how to run Windows PowerShell scripts.
-  - Describe the script execution policy.
-  - Set the script execution policy.
-  - Explain how to use AppLocker to help secure Windows PowerShell scripts.
-  - Explain how to digitally sign scripts.
-  - Digitally sign a Windows PowerShell script.
+
+  -   Describe Windows PowerShell scripts.
+
+  -   Explain how to find scripts and modify them.
+
+  -   Describe how to create scripts.
+
+  -   Describe the PowerShellGet module.
+
+  -   Explain how to run Windows PowerShell scripts.
+
+  -   Describe the script execution policy.
+
+  -   Set the script execution policy.
+
+  -   Explain how to use AppLocker to help secure Windows PowerShell scripts.
+
+  -   Explain how to digitally sign scripts.
+
+  -   Digitally sign a Windows PowerShell script.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
-  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+
+  -   Familiarity with CIM and WMI technologies
+
+  -   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
 iconUrl: /training/achievements/create-run-scripts-use-windows-powershell.svg
 levels:
 - intermediate
@@ -43,7 +64,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

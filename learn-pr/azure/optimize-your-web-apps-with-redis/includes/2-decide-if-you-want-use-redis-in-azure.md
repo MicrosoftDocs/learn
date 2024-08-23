@@ -1,8 +1,8 @@
-Your sports website has a database behind it, which returns data by executing queries. However, performance slows down when the load is high, particularly during large sporting events. In hosted environments, increased resource usage translates into higher costs. Caching data ensures your website performs well and run economically.
+Your sports website has a database behind it that returns data by executing queries. However, performance slows down when the load is high, particularly during large sporting events. In hosted environments, increased resource usage translates into higher costs. Caching data ensures your website performs well and runs economically.
 
 ## What is caching?
 
-Caching is the act of storing frequently accessed data in memory very close to the application that consumes the data. Caching is used to increase performance and reduce the load on your servers. We use Redis to create an in-memory cache that can provide excellent latency and potentially improve performance.
+Caching is the act of storing frequently accessed data in memory very close to the application that consumes the data. You can use caching to increase performance and reduce the load on your servers. We use Redis to create an in-memory cache that can provide excellent latency and potentially improve performance.
 
 ## What is a Redis cache?
 
@@ -10,7 +10,7 @@ Redis (**RE**mote **DI**ctionary **S**erver) cache is an open-source, in-memory 
 
 ## What is Azure Cache for Redis?
 
-Azure Cache for Redis is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache, managed by Microsoft. A cache created using Azure Cache for Redis is accessible from any application within Azure. Azure Cache for Redis is typically used to improve the performance of systems that rely heavily on back-end data stores.
+Azure Cache for Redis is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache managed by Microsoft. A cache created using Azure Cache for Redis is accessible from any application within Azure. Azure Cache for Redis is typically used to improve the performance of systems that rely heavily on back-end data stores.
 
 Your cached data is located in-memory on an Azure server running the Redis cache as opposed to being loaded from disk by a database. Your cache is also highly scalable. You can alter the size and pricing tier at any time.
 
@@ -31,13 +31,13 @@ Each data value is associated with a *key* that can be used to look up the value
 
 Redis keys are also binary-safe strings. Here are some guidelines for choosing keys:
 
-- Avoid long keys. They take up more memory and require longer lookup times because they have to be compared byte-by-byte. If you want to use a binary blob as the key, generate a unique hash and use that as the key instead. The maximum size of a key is 512 MB, but you should *never* use a key that size.
-- Use keys that can identify the data. For example, `sport:football;date:2008-02-02` would be a better key than `fb:8-2-2`. The former is more readable and the extra size is negligible. Find the balance between size and readability.
-- Use a convention. A good one is `object:ID`, as in `sport:football`.
+- **Avoid long keys**: They take up more memory and require longer lookup times because they have to be compared byte-by-byte. If you want to use a binary blob as the key, generate a unique hash and use that as the key instead. The maximum size of a key is 512 MB, but you should *never* use a key that size.
+- **Use keys that can identify the data**: For example, `sport:football;date:2008-02-02` would be a better key than `fb:8-2-2`. The former is more readable, and the extra size is negligible. Find the balance between size and readability.
+- **Use a convention**: A good convention is `object:ID`, as in `sport:football`.
 
 ## How is data stored in a Redis cache?
 
-Data in Redis is stored in ***nodes*** and ***clusters***.
+Data in Redis is stored in **nodes** and **clusters**.
 
 **Nodes** are a space in Redis where your data is stored.
 
@@ -55,15 +55,15 @@ Redis caching architectures are split across Azure by tiers:
 
 ### Basic cache
 
-A basic cache provides you with a ***single node*** Redis cache. The complete dataset is stored in a single node. This tier is ideal for development, testing, and noncritical workloads.
+A basic cache provides you with a **single node** Redis cache. The complete dataset is stored in a single node. This tier is ideal for development, testing, and noncritical workloads.
 
 ### Standard cache
 
-The standard cache creates ***multiple node*** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes and creates a production-ready cache with primary/secondary replication.
+The standard cache creates **multiple node** architectures. Redis replicates a cache in a two-node primary/secondary configuration. Azure manages the replication between the two nodes and creates a production-ready cache with primary/secondary replication.
 
 ### Premium tier
 
-The premium tier includes the features of the standard tier, but adds the ability to persist data, take snapshots, and back up data. With this tier, you can create a Redis cluster that shares data across multiple Redis nodes to increase available memory. The premium tier also supports an Azure Virtual Network to give you complete control over your connections, subnets, IP addressing, and network isolation. This tier also includes geo-replication, so you can ensure your data is close to the app that's consuming it.
+The premium tier includes the features of the standard tier, but adds the ability to persist data, take snapshots, and back up data. With this tier, you can create a Redis **cluster** that shares data across multiple Redis nodes to increase available memory. The premium tier also supports an Azure Virtual Network to give you complete control over your connections, subnets, IP addressing, and network isolation. This tier also includes geo-replication, so you can ensure your data is close to the app that's consuming it.
 
 ## Summary
 

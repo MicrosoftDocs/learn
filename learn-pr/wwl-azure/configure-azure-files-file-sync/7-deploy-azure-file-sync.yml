@@ -4,10 +4,12 @@ title: Deploy Azure File Sync
 metadata:
   title: Deploy Azure File Sync
   description: "Deploy Azure File Sync"
-  ms.date: 05/19/2023
+  ms.date: 04/04/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/7-deploy-azure-file-sync.md)]

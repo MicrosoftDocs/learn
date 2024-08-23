@@ -3,8 +3,8 @@ uid: learn.languages.csharp-format-strings.string-formatting-basics
 title: Exercise - Investigate string formatting basics
 metadata:
   title: Exercise - Investigate string formatting basics
-  description: "Exercise - Investigate string formatting basics"
-  ms.date: 11/21/2023
+  description: "Learn methods to format strings for efficient display, especially for cases using multiple variables."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

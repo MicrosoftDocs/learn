@@ -4,10 +4,12 @@ title: Exercise - Configure continuous integration by using Azure Pipelines
 metadata:
   title: Exercise - Configure continuous integration by using Azure Pipelines
   description: "Exercise - Configure continuous integration by using Azure Pipelines"
-  ms.date: 11/27/2023
+  ms.date: 02/29/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-configure-continuous-integration-azure-pipelines.md)]

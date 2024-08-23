@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Exercise - Add a Blazor layout to reduce duplication in your code
   description: "See how layouts reduce duplicate code and make you more efficient."
-  ms.date: 8/13/2021
+  ms.date: 8/24/2021
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

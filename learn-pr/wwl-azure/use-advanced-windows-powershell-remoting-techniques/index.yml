@@ -2,28 +2,44 @@
 uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques
 metadata:
   title: Use advanced Windows PowerShell remoting techniques
-  description: "This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting."
-  ms.date: 11/10/2022
+  description: "This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Use advanced Windows PowerShell remoting techniques
-summary: This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting.
+summary: This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting.
 abstract: |
-  Upon completion of this module, the learner will be able to:
-  - Configure common remoting options.
-  - Send parameters and local variables to remote computers.
-  - Describe the use of Windows PowerShell scopes.
-  - Send local variables to a remote computer.
-  - Configure multi-hop remoting authentication.
+  Upon completion of this module, the learner is able to:
+
+  -   Configure common remoting options.
+
+  -   Send parameters and local variables to remote computers.
+
+  -   Describe the use of Windows PowerShell scopes.
+
+  -   Send local variables to a remote computer.
+
+  -   Configure multi-hop remoting authentication.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting
-  - Familiarity with Windows PowerShell and its commands to perform specific tasks
-  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  - Familiarity with Windows PowerShell pipeline, PSProviders and PSDrives
-  - Familiarity with CIM and WMI technologies
-  - Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PSProviders, and PSDrives
+
+  -   Familiarity with CIM and WMI technologies
+
+  -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 iconUrl: /training/achievements/use-advanced-windows-powershell-remoting-techniques.svg
 levels:
 - intermediate
@@ -38,7 +54,6 @@ products:
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

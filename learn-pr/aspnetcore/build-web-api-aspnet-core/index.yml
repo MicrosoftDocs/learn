@@ -7,7 +7,7 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.topic: module
-  ms.prod: aspnet-core
+  ms.service: aspnet-core
 title: Create a web API with ASP.NET Core controllers
 summary: Create a RESTful service with ASP.NET Core controllers that supports create, read, update, delete (CRUD) operations.
 abstract: | 

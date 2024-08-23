@@ -4,7 +4,7 @@ title: Exercise - create an Azure function using the Maven archetype
 metadata:
   title: Exercise - create an Azure function using the Maven archetype
   description: You'll create an Azure function using the Maven archetype using the Azure Cloud Shell, and ensure that all the build files are correctly configured.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

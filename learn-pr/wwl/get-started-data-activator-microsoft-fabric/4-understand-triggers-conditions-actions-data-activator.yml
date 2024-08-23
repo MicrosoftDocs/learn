@@ -4,11 +4,12 @@ title: Understand triggers, conditions and actions in Data Activator
 metadata:
   title: Understand triggers, conditions and actions in Data Activator
   description: "Understand triggers, conditions and actions in Data Activator"
-  ms.date: 10/05/2023
+  ms.date: 06/14/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-triggers-conditions-actions-data-activator.md)]

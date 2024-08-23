@@ -22,7 +22,7 @@ products:
 - azure-portal
 - azure-logic-apps
 subjects:
-- serverless-compute
+- serverless-computing
 modules:
 - learn.azure-intro-to-logic-apps
 - learn.azure.route-and-process-data-logic-apps

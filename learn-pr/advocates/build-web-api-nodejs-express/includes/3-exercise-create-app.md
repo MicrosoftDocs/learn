@@ -159,56 +159,39 @@ Use the same app.js file to add a new route.
 1. Add the following code after the existing `app.get` syntax after the code for the first route, `/`:
 
    ```javascript
-   app.get("/products", (req,res) => {
-     const products = [
-     {
-       id: 1,
-       name: "hammer",
-     },
-     {
-       id: 2,
-       name: "screwdriver",
-     },
-     {
-       id: 3,
-       name: "wrench",
-     },
-    ];
-
-    res.json(products);
-   });
+    app.get('/products', (req, res) => {
+        const products = [
+            { id: 1, name: 'hammer' },
+            { id: 2, name: 'screwdriver' },
+            { id: 3, name: 'wrench' },
+        ];
+    
+        res.json(products);
+    });
    ```
 
 1. Make sure your app.js file looks like this example:
 
    ```javascript
-   const express = require("express");
-   const app = express();
-   const port = 3000;
-
-   app.get("/", (req, res) => res.send("Hello World!"));
-
-   app.get("/products", (req,res) => {
-      const products = [
-        {
-          id: 1,
-          name: "hammer",
-        },
-        {
-          id: 2,
-          name: "screwdriver",
-        },
-        ,
-        {
-          id: 3,
-          name: "wrench",
-        },
-      ];
-
-     res.json(products);
-   })
-
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    const express = require('express');
+    const app = express();
+    const port = 3000;
+    
+    app.get('/', (req, res) => res.send('Hello World!'));
+    
+    app.get('/products', (req, res) => {
+        const products = [
+            { id: 1, name: 'hammer' },
+            { id: 2, name: 'screwdriver' },
+            { id: 3, name: 'wrench' },
+        ];
+    
+        res.json(products);
+    });
+    
+    app.listen(port, () => {
+        console.log(`Example app listening on port ${port}! http://localhost:${port}/`);
+    });
    ```
 
 1. Save your changes to the app.js file and close the file.

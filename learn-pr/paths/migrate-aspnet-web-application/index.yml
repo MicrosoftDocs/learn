@@ -31,8 +31,6 @@ products:
 - azure-sql-database
 - aspnet
 - dotnet
-subjects:
-- development-tools
 modules:
 - learn.azure.aspnet-configurationbuilder
 # - learn.azure.aspnet-logging

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-create-code-copilot-chat
+title: 'Exercise - Create code by using GitHub Copilot Inline Chat '
+metadata:
+  title: Exercise - Create code by using GitHub Copilot Inline Chat
+  description: Exercise - Create code by using GitHub Copilot Inline Chat
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 18
+content: |
+  [!include[](includes/5-exercise-create-code-copilot-chat.md)]

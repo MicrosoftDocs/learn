@@ -3,7 +3,7 @@ uid: learn.language.rust-create-program.2-variables
 metadata:
   title: Create and use variables in Rust
   description: Learn about how variables work in Rust, how to declare them, and how to use their properties.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: unit

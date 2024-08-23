@@ -4,12 +4,12 @@ title: Implement Git hooks
 metadata:
   title: Implement Git hooks
   description: "Implement Git hooks"
-  ms.date: 06/02/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/3-implement.md)]

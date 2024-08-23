@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge"
+  ms.date: 07/04/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following options assigns a role to the large language model (LLM) when prompting for a response?"
+    choices:
+    - content: "Using the `role` attribute in the `message` tag."
+      isCorrect: true
+      explanation: "Correct. You can assign a role to the LLM by using the `role` attribute in the `message` tag."
+    - content: "Using the `ChatHistory` object on the LLM response."
+      isCorrect: false
+      explanation: "Incorrect. The `ChatHistory` object is used to store the conversation history."
+    - content: "Using the `assignRole` attribute in the `chat` tag."
+      isCorrect: false
+      explanation: "Incorrect. There isn't a `chat` tag."
+  - content: "Which of the following types is a built-in plugin?"
+    choices:
+    - content: "FileIOPlugin"
+      isCorrect: true
+      explanation: "Correct. The FileIOPlugin is a built-in plugin."
+    - content: "TravelPlugins"
+      isCorrect: false
+      explanation: "Incorrect. TravelPlugins isn't a built-in plugin."
+    - content: "InvokeAsync"
+      isCorrect: false
+      explanation: "Incorrect. InvokeAsync isn't a built-in plugin."
+  - content: "A custom prompt 'SuggestMusic' is located in a 'Prompts' folder. Which line imports this prompt to the kernel?"
+    choices:
+    - content: "`kernel.ImportPluginFromType<SuggestMusic>();`"
+      isCorrect: false
+      explanation: "Incorrect. `ImportPluginFromType` imports a plugin from a type, not a prompt from a folder."
+    - content: "`kernel.ImportPluginFromPromptDirectory(\"Prompts\");`"
+      isCorrect: true
+      explanation: "Correct. `ImportPluginFromPromptDirectory` imports the prompt from the Prompts folder."
+    - content: "`kernel.InvokeAsync(\"SuggestMusic\");`"
+      isCorrect: false
+      explanation: "Incorrect. `InvokeAsync` invokes a prompt, but we need to import it first."

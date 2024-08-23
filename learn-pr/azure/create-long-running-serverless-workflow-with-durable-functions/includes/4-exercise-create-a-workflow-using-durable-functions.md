@@ -1,4 +1,4 @@
-In this exercise, you'll use the example scenario from the previous unit to learn how to create an approval workflow in the Azure portal using Durable Functions.
+In this exercise, you use the example scenario from the previous unit to learn how to create an approval workflow in the Azure portal using Durable Functions.
 
 ## Create a Function App
 
@@ -6,7 +6,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Search for and select **Function App**. The **Create Function App** pane appears.
+1. Search for and select **Function App**. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -14,17 +14,16 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | Specifies the subscription under which this new function app is created. |
-    | Resource Group | From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>* | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, *<rgn>[sandbox resource group name]</rgn>*. |
+    | Resource Group | From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>* | Specifies the name of the resource group in which to create your function app. We create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, *<rgn>[sandbox resource group name]</rgn>*. |
     | **Instance Details** |
     | Function App name | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-    | Publish | *Code* | Specifies that the function will use code instead of a container. |
+    | Publish | *Code* | Specifies that the function uses code instead of a container. |
     | Runtime stack | *Node.js* | Specifies that the sample code in this module is written in JavaScript. |
-    | Version | *18 LTS* | Specifies the version of the runtime stack. |
+    | Version | *20 LTS* | Specifies the version of the runtime stack. |
     | Region | *[Select from the list following this section]* | Choose the region closest to you that is also one of the allowed *Sandbox regions* that follow. |
     | **Operating system** |
     | Operating System | *Windows* | Specifies the operating system that hosts the function app. |
     | **Plan** |
-    | Plan type | *Consumption (Serverless)* | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -46,11 +45,11 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | Setting | Value | Description |
     |---|---|---|
     | **Application Insights** |
-    | Enable Application Insights | *No* | Specifies that Application Insights will be disabled for this module. |
+    | Enable Application Insights | *No* | Specifies that Application Insights is disabled for this module. |
 
 1. Select **Review + create** and review the options that you configured. If you're satisfied with your options, select **Create** to provision and deploy the function app.
 
-  Wait for the deployment to complete before continuing. This might take a few minutes.
+  Wait for the deployment to complete before continuing. Deployment might take a few minutes.
 
 ## Install the durable-functions npm package
 
@@ -98,9 +97,12 @@ Because we're creating JavaScript Durable Functions, we need to install the `dur
     npm install durable-functions
     ```
 
-    This command instructs the node package manager to install the `durable-functions` package and any required dependencies. This can take a few minutes to complete, and the node package manager might display some warnings, which you can ignore. If you're prompted to install a newer version of npm, use the command given in the error to install the newer version, then install the `durable-functions` package once the new version is installed.
+    This command instructs the node package manager to install the `durable-functions` package and any required dependencies. Installation can take a few minutes to complete, and the node package manager might display some warnings, which you can ignore. 
 
-    Wait until all packages have finished installing.
+    > [!NOTE]
+    > If you're prompted to install a newer version of npm, use the command given in the error to install the newer version, then install the `durable-functions` package once the new version is installed.
+
+    Wait until all packages are finished installing.
 
 1. In the left menu pane, scroll up and select **Overview**, and in the top menu bar, select **Restart**, and then select **Yes** when prompted to restart.
 
@@ -203,7 +205,7 @@ Because we're creating JavaScript Durable Functions, we need to install the `dur
     });
     ```
 
-    This code calls an Activity function named **Approval**, which you'll create shortly. The code in the orchestrator function invokes the **Approval** function twice. The first time simulates accepting the proposal, and the second time tests the proposal-rejection logic.
+    This code calls an Activity function named **Approval**, which you create shortly. The code in the orchestrator function invokes the **Approval** function twice. The first time simulates accepting the proposal, and the second time tests the proposal-rejection logic.
 
     The value each call returns is combined and passed back to the client function. In a production environment, your orchestration function would call a series of activity functions that make the accept/reject decision, and return the result of these activities.
 
@@ -233,7 +235,7 @@ Because we're creating JavaScript Durable Functions, we need to install the `dur
     };
     ```
 
-    This function returns a message indicating the status of the proposal. The expression `context.bindings.name` will either be `Accepted` or `Rejected`, depending on the parameter passed to the function from the orchestrator. In a real-world scenario, you'd add the logic that handles the accept or reject operations in this function.
+    This function returns a message indicating the status of the proposal. The expression `context.bindings.name` is either `Accepted` or `Rejected`, depending on the parameter passed to the function from the orchestrator. In a real-world scenario, you'd add the logic that handles the accept or reject operations in this function.
 
 1. In the top menu bar, select **Save** to save your new function.
 
@@ -269,7 +271,7 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-    You'll use this URL to run your functions.
+    You use this URL to run your functions.
 
 1. Open a new browser window, and go to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example:
 
@@ -308,4 +310,4 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     }
     ```
 
-    Recall that the orchestration function runs the activity function twice. The first time, the activity function indicates that the project proposal has been accepted. The second time, the proposal is rejected. The orchestration function combines the messages from both function calls  and returns them to the client function.
+    Recall that the orchestration function runs the activity function twice. The first time, the activity function indicates that the project proposal is accepted. The second time, the proposal is rejected. The orchestration function combines the messages from both function calls  and returns them to the client function.

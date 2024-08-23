@@ -6,11 +6,11 @@ SQL Server 2022 introduces the `WINDOW` clause in `SELECT` statements, making it
 
 ## SELECT - WINDOW
 
-The `WINDOW` clause enables you to define a named window specification that can be used with multiple window functions in a query. This feature simplifies complex calculations, such as moving averages and running totals, by allowing you to reuse a single window definition.
+The `WINDOW` clause allows you to define a named window specification that can be used with multiple window functions in a query. This feature simplifies complex calculations, such as moving averages and running totals, by allowing you to reuse a single window definition.
 
 ## Simplifying aggregations and calculations by using the WINDOWS clause
 
-Imagine you're a database developer working on an e-commerce application. You have table called *SalesOrderHeader*, which contains columns *SalesOrderID* and *OrderDate*. You have a second table called *SalesOrderDetail*, which contains columns for *SalesOrderID*, *ProductID*, *OrderQty*, *UnitPrice* and *LineTotal*. The sales department has asked you to analyze the data for the products *Touring-2000 Blue, 50* and *Touring-3000 Blue, 62* sold on *March 3, 2014*. The team needs: 
+Imagine you're a database developer working on an e-commerce application. You have table called *SalesOrderHeader*, which contains columns *SalesOrderID* and *OrderDate*. You have a second table called *SalesOrderDetail*, which contains columns for *SalesOrderID*, *ProductID*, *OrderQty*, *UnitPrice* and *LineTotal*. The sales department has asked you to analyze the data for the products *Touring-2000 Blue, 50* and *Touring-3000 Blue, 62* sold on *March 3, 2014*. The team needs:
 
 - The total sales per product.
 - A moving average for the last three sales.
@@ -22,25 +22,25 @@ Using the `SELECT` statement with the `WINDOW` clause, you can easily achieve th
 ```sql
 SELECT 
     SOH.SalesOrderID,
-	P.Name,
-	SOD.OrderQty,
-	SOD.UnitPrice,
+    P.Name,
+    SOD.OrderQty,
+    SOD.UnitPrice,
     SOD.LineTotal,
     SUM(SOD.LineTotal) OVER product_sales AS TotalSalesPerProduct,
     AVG(SOD.LineTotal) OVER last_three_sales AS LastThreeSalesAverageByProduct,
     SUM(SOD.LineTotal) OVER last_three_sales AS LastThreeSalesSumByProduct,
     SUM(SOD.LineTotal) OVER running_total AS RunningTotal
 FROM [AdventureWorks2012].[Sales].[SalesOrderDetail] SOD
-	JOIN [AdventureWorks2012].[Sales].[SalesOrderHeader] SOH on SOD.SalesOrderID = SOH.SalesOrderID
-	JOIN [AdventureWorks2012].[Production].[Product] P ON P.ProductID = SOD.ProductID
+    JOIN [AdventureWorks2012].[Sales].[SalesOrderHeader] SOH on SOD.SalesOrderID = SOH.SalesOrderID
+    JOIN [AdventureWorks2012].[Production].[Product] P ON P.ProductID = SOD.ProductID
 WHERE P.Name IN ('Touring-2000 Blue, 50', 'Touring-3000 Blue, 62')
-	AND SOH.OrderDate = '2014-03-01'
+    AND SOH.OrderDate = '2014-03-01'
 WINDOW 
-	-- Partition by product name window.
+    -- Partition by product name window.
     product_sales AS (PARTITION BY P.Name),
-	-- Last 3 sales by Product name order by date and Sales order ID.
+    -- Last 3 sales by Product name order by date and Sales order ID.
     last_three_sales AS (PARTITION BY P.Name ORDER BY SOH.OrderDate, SOH.SalesOrderID ROWS BETWEEN 2 PRECEDING AND CURRENT ROW),
-	-- The current an all the previous sales window.
+    -- The current an all the previous sales window.
     running_total AS (ORDER BY SOH.OrderDate, SOH.SalesOrderID ROWS UNBOUNDED PRECEDING)
 ```
 
@@ -61,4 +61,4 @@ SalesOrderID | Name | OrderQty | UnitPrice | LineTotal | TotalSalesPerProduct | 
 67342 | Touring-2000 Blue, 50  | 2 | 728.91  | 1457.820000  |  9475.830000 | 2186.730000 | 6560.190000 | 13039.110000
 67342 | Touring-3000 Blue, 62  | 1 | 445.41  |  445.410000  |  4008.690000 |  593.880000 | 1781.640000 | 13484.520000
 
-The `WINDOW` clause in SQL Server 2022 is a valuable addition for data analysts, developers, and database administrators working with SQL Server, as it simplifies complex calculations and aggregations by streamlining the use of window functions in `SELECT` statements.
+The `WINDOW` clause in SQL Server 2022 is a valuable addition for data analysts, developers, and database administrators working with SQL Server, because it simplifies complex calculations and aggregations by streamlining the use of window functions in `SELECT` statements.

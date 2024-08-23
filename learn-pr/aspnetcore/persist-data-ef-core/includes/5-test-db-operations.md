@@ -71,7 +71,7 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 
 1. Request a single pizza:
 
-    1. Scroll down to the **GET /Pizza{id}** operation and expand it, then select the **Try it out** button.
+    1. Scroll down to the **GET /Pizza/{id}** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **2**, then select **Execute**.
 
     The API returns the "Hawaiian" pizza. Notice that the `sauce` and `toppings` properties are populated because the `PizzaService.GetById` method uses the `Include` extension method.
@@ -103,7 +103,7 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 
 1. Add another topping to the BBQ Beef pizza:
 
-    1. Scroll down to the **PUT /Pizza{id}/addtopping** operation and expand it, then select the **Try it out** button.
+    1. Scroll down to the **PUT /Pizza/{id}/addtopping** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. In the **toppingId** field, enter **5**.
     1. Select **Execute**.
@@ -112,14 +112,14 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 
 1. Change the sauce on the BBQ Beef pizza:
 
-    1. Scroll down to the **PUT /Pizza{id}/updatesauce** operation and expand it, then select the **Try it out** button.
+    1. Scroll down to the **PUT /Pizza/{id}/updatesauce** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. In the **sauceId** field, enter **2**.
     1. Select **Execute**.
 
     The API updates the pizza and returns a success code. In the database, the `Pizza` record is updated to associate the pizza with the new sauce.
 
-1. Return to the **GET /Pizza{id}** operation and request the BBQ Beef pizza by setting the **id** field to **4**. Then, select **Execute**. Notice that the `sauce` and `toppings` properties are populated.
+1. Return to the **GET /Pizza/{id}** operation and request the BBQ Beef pizza by setting the **id** field to **4**. Then, select **Execute**. Notice that the `sauce` and `toppings` properties are populated.
 
     ```json
     {
@@ -149,7 +149,7 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 
     Delete the pizza:
 
-    1. Find the **DELETE /Pizza{id}** operation and expand it, then select the **Try it out** button.
+    1. Find the **DELETE /Pizza/{id}** operation and expand it, then select the **Try it out** button.
     1. In the **id** field, enter **4**.
     1. Select **Execute**.
 

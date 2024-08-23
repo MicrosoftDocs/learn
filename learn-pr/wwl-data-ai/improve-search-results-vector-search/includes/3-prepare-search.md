@@ -1,4 +1,4 @@
-You need to encode your  Azure Cognitive Search query by sending it to an embedded model.  The response is then passed to a search engine to complete a search over the vector fields.
+You need to encode your  Azure AI Search query by sending it to an embedded model.  The response is then passed to a search engine to complete a search over the vector fields.
 
 In order for your query to work, you need do the following tasks:
 

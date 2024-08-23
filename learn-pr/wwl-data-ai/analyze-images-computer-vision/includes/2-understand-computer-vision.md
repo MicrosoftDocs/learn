@@ -77,7 +77,7 @@ A common way to perform image processing tasks is to apply *filters* that modify
 -1 -1 -1
 ```
 
-The kernel is then *convolved* across the image, calculating a weighted sum for each 3.3 patch of pixels and assigning the result to a new image. It's easier to understand how the filtering works by exploring a step-by-step example.
+The kernel is then *convolved* across the image, calculating a weighted sum for each 3x3 patch of pixels and assigning the result to a new image. It's easier to understand how the filtering works by exploring a step-by-step example.
 
 Let's start with the grayscale image we explored previously:
 

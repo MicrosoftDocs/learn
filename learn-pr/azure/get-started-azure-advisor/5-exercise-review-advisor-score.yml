@@ -4,10 +4,10 @@ title: 'Exercise - Review your Advisor Score'
 metadata:
   title: 'Exercise - Review your Advisor Score'
   description: Learn how to review your Azure Advisor Score.
-  ms.date: 02/18/2021
-  author: danterasera
-  ms.author: darasera
-  ms.topic: interactive-tutorial
+  ms.date: 10/20/2023
+  author: aortoll
+  ms.author: anortoll
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-review-advisor-score.md)]

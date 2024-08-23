@@ -3,8 +3,8 @@ uid: learn.languages.csharp-format-strings.exercise-string-methods-padding
 title: Exercise - Discover padding and alignment
 metadata:
   title: Exercise - Discover padding and alignment
-  description: "Exercise - Discover padding and alignment"
-  ms.date: 11/21/2023
+  description: "Use padding and alignment to format a string."
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

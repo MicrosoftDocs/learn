@@ -23,7 +23,6 @@ roles:
 products:
 - power-bi
 subjects:
-- data-ai
 - data-analytics
 - data-management
 modules:

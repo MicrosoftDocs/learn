@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/12/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Build serverless apps with Go
 summary: When you're authoring Azure functions, custom handlers allow you to use any language or runtime that supports HTTP primitives. In this module, you'll use the programming language Go and custom handlers.
@@ -25,7 +25,7 @@ products:
 prerequisites: |
   - Visual Studio Code is recommended, but it's perfectly fine to use any text editor or IDE.
 subjects:
-- serverless-compute
+- serverless-computing
 units:
   - learn.student-evangelism.serverless-go.introduction
   - learn.student-evangelism.serverless-go.custom-handlers

@@ -7,11 +7,11 @@ metadata:
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
-  ms.service: azure
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for securing applications
 summary: |
   You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   By the end of this module, you're able to:
     -   Evaluate security posture of existing application portfolios

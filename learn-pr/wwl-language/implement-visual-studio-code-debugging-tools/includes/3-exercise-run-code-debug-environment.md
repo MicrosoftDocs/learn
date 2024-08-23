@@ -43,6 +43,10 @@ The first step in learning the debugger tools is creating a code project that yo
 
 Visual Studio Code uses a launch configuration file to specify the application that runs in the debug environment.
 
+1. If the Debug101 folder doesn't include a Debug101.sln file, select **Program.cs**, and then verify that a .sln file is created.
+
+    Opening a C# code file prompts the environment to check for project files. The .sln file is a solution file that is used by Visual Studio to manage projects and is usually created automatically when you create a new project in Visual Studio Code. The .sln file is used by the debugger to identify the project that should be run in the debug environment.
+
 1. On the View menu, select **Command Palette**.
 
 1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.

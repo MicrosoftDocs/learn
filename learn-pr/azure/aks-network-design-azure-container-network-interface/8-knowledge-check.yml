@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Review what you learned in this module and check your understanding.
-  ms.date: 10/31/2023
+  ms.date: 02/15/2024
   ms.topic: unit
   ms.author: schaffererin
   author: schaffererin
@@ -29,21 +29,21 @@ quiz:
     choices:
     - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up, plus an IP address for every pod you run in the cluster."
       isCorrect: false
-      explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up. You also need to account for cluster upgrades, which require the temporary deployment of extra nodes during the upgrade process. Each node also requires an IP address for each pod, equal to the maximum number of pods that has been defined for your cluster. The default value for maximum pods is 30."
+      explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up. You also need to account for cluster upgrades, which require the temporary deployment of extra nodes during the upgrade process. Each node also requires an IP address for each pod, equal to the maximum number of pods defined for your cluster. The default value for maximum pods is 30."
     - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up and cluster upgrades, plus an IP address for every pod you run in the cluster."
       isCorrect: false
-      explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up and cluster upgrades. Each node also requires an IP address for each pod, equal to the maximum number of pods that has been defined for your cluster. The default value for maximum pods is 30."
+      explanation: "Incorrect. Each node in the cluster requires an IP address, including spare capacity for scaling up and cluster upgrades. Each node also requires an IP address for each pod, equal to the maximum number of pods defined for your cluster. The default value for maximum pods is 30."
     - content: "An IP address for each node in the cluster, which includes spare capacity to handle scaling up and cluster upgrades, plus IP addresses equal to the maximum pods value defined for the cluster, which should be multiplied by the number of nodes."
       isCorrect: true
       explanation: "Correct."
-  - content: "You calculated how many IP addresses your AKS cluster requires. You now need to calculate the size of your Azure Virtual Network subnet. How many reserved addresses do you need to account for?"
+  - content: "You calculated how many IP addresses your Azure Kubernetes Service (AKS) cluster requires. You now need to calculate the size of your Azure Virtual Network subnet. How many reserved addresses do you need to account for?"
     choices:
     - content: "None. You just need to know how many IP addresses your application requires."
       isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for DNS."
+      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for the Domain Name System (DNS) service."
     - content: "Two, because you can't use the first and last IP addresses in an Azure Virtual Network subnet because they're reserved."
       isCorrect: false
-      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. The first address is reserved for the network address and the last for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for DNS."
+      explanation: "Incorrect. Azure Virtual Network subnets reserve five IP addresses. The first address is reserved for the network address and the last for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for the Domain Name System (DNS) service."
     - content: "Five, because in an Azure Virtual Network subnet, you can't use the first and last IP addresses, and three more addresses are reserved for Azure internal use."
       isCorrect: true
-      explanation: "Correct. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for DNS."
+      explanation: "Correct. Azure Virtual Network subnets reserve five IP addresses. One for the network address and one for the broadcast address, which is standard in IP networks. Azure requires three more addresses, one for the default gateway and two for Domain Name System (DNS) service."

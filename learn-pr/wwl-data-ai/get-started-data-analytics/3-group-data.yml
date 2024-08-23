@@ -4,12 +4,12 @@ title: Group data
 metadata:
   title: Group data
   description: "Group data"
-  ms.date: 03/01/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-group-data.md)]
