@@ -9,7 +9,7 @@ Microsoft Defender for Endpoint is a platform designed to help enterprise networ
 Microsoft Defender for Endpoint includes:
 
 - **Core Defender Vulnerability Management**: Built-in core vulnerability management capabilities use a risk-based approach to the discovery, assessment, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-- **Attack surface reduction**: The attack surface reduction set of capabilities provides the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
+- **Attack surface reduction**: The attack surface reduction set of capabilities provides the first layer of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, the capabilities resist attacks and exploitation. This set of capabilities also includes network protection and web protection, which regulate access to malicious IP addresses, domains, and URLs.
 - **Next generation protection**:  Next-generation protection was designed to catch all types of emerging threats. In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
   - Behavior-based, heuristic, and real-time antivirus protection.
   - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats.
@@ -22,4 +22,27 @@ Microsoft Defender for Endpoint includes:
 
 Microsoft Defender for Endpoint also integrates with various components in the Microsoft Defender suite, and with other Microsoft solutions including Intune and Microsoft Defender for Cloud.
 
-Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2.  Information on what's included in each plan is detailed in the Compare Microsoft Defender for Endpoint plans document linked in the summary and resources unit.
+Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. Information on what's included in each plan is detailed in the Compare Microsoft Defender for Endpoint plans document linked in the summary and resources unit.
+
+### Microsoft Defender for Endpoints in the Microsoft Defender portal
+
+Microsoft Defender for Endpoints is experienced through the Microsoft Defender portal. The Defender portal is the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure, allowing security admins to perform their security tasks, in one location.
+
+The Endpoints node on the left navigation panel of the Microsoft Defender portal includes the following:
+
+- Vulnerability management - Manage vulnerabilities and other risk sources on devices.
+- Partners and APIs - From here you can select Connected applications and API explorer.
+  - Connected applications - The Connected applications page provides information about the Microsoft Entra applications (SaaS applications that are preintegrated with Microsoft Entra ID) connected to Microsoft Defender for Endpoint in your organization. 
+  - API Explorer - Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs enable you to automate workflows and innovate based on Defender for Endpoint capabilities. The Microsoft Defender for Endpoint API Explorer is a tool that helps you explore various Defender for Endpoint APIs interactively.
+- Configuration management - Define endpoint policies and track deployment.
+
+# [Vulnerability management dashboard](#tab/vulnerability-management-dashboard)
+:::image type="content" source="../media/vulnerability-management-dashboard.png" lightbox="../media/vulnerability-management-dashboard.png" alt-text="A screenshot of the vulnerability dashboard page in the Microsoft Defender portal.":::
+
+# [API explorer](#tab/api-explorer)
+:::image type="content" source="../media/api-explorer.png" lightbox="../media/api-explorer.png" alt-text="A screenshot of the API explorer page in the Microsoft Defender portal.":::
+
+# [Configuration management dashboard](#tab/configuration-management-dashboard)
+:::image type="content" source="../media/configuration-management-dashboard.png" lightbox="../media/configuration-management-dashboard.png" alt-text="A screenshot of the configuration management dashboard page in the Microsoft Defender portal.":::
+
+Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Microsoft Defender for Endpoints are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.

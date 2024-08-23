@@ -3803,3 +3803,47 @@ achievements:
   title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
   summary: Use Azure Web PubSub and Azure Static Web Apps to build a real-time messaging app!
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.explore-azure-data-services-for-modern-analytics.badge
+  type: badge
+  title: Explore Azure data services for modern analytics
+  summary: Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs.
+  iconUrl: /training/achievements/explore-azure-data-services-for-modern-analytics.svg
+- uid: learn.wwl.explore-data-analytics-at-scale.badge
+  type: badge
+  title: Explore data analytics at scale
+  summary: Describe data analytics at scale and understand the roles of a data team. Learn about the responsibilities of an enterprise data analyst and what tools are available to build scalable solutions.
+  iconUrl: /training/achievements/explore-data-analytics-at-scale.svg
+- uid: learn.wwl.implement-manage-analytics-environment.trophy
+  type: trophy
+  title: Implement and manage an analytics environment
+  summary: >-
+    This learning path introduces Power BI administration at an enterprise-level, including governance, adoption, collaborating, sharing, and automation methods.
+  
+    This learning path helps you prepare for the [Exam DP-500: Designing and Implementing Enterprise-Scale Analytics Solutions Using Microsoft Azure and Microsoft Power BI](/certifications/exams/dp-500)
+  iconUrl: /training/achievements/implement-manage-analytics-environment.svg
+- uid: learn.wwl.introduction-data-analytics-azure.trophy
+  type: trophy
+  title: Introduction to data analytics on Azure
+  summary: >-
+    Explore Azure data services, concepts of data analytics, and what you need to implement modern analytics at scale.
+  
+    This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/introduction-to-data-analytics-on-azure.svg
+- uid: learn.wwl.model-query-explore-data-for-azure-synapse.trophy
+  type: trophy
+  title: Model, query, and explore data in Azure Synapse
+  summary: >-
+    Query and explore data in Azure Synapse Analytics. You'll learn how to query and visualize data in a data lake and a data warehouse.
+  
+    This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/model-query-explore-data-for-azure-synapse.svg
+- uid: learn.azure.handle-transient-errors-in-your-app.badge
+  type: badge
+  title: Handle transient errors in your app
+  summary: Use application logging and retry policies to handle transient errors to make your apps more resilient.
+  iconUrl: /training/achievements/handle-transient-errors-in-your-app.svg
+- uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.badge
+  type: badge
+  title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
+  summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
+  iconUrl: /training/achievements/generic-badge.svg

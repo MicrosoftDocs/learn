@@ -29,7 +29,7 @@ Here are some links to more information on the subjects we discussed in this mod
 - [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 - [Events that trigger workflows](https://help.github.com/articles/events-that-trigger-workflows?azure-portal=true)
 - [GitHub Actions usage limits](https://docs.github.com/actions/learn-github-actions/usage-limits-billing-and-administration?azure-portal=true)
-- [About GitHub Actions: Job](https://help.github.com/articles/about-github-actions#job?azure-portal=true)
+- [About GitHub Actions: Job](https://docs.github.com/actions/writing-workflows)
 - [About CI: Job](https://help.github.com/articles/about-continuous-integration#job?azure-portal=true)
 - [npm install](https://docs.npmjs.com/cli/install?azure-portal=true)
 - [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)

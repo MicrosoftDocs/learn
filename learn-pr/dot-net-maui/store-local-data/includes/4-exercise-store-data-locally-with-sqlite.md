@@ -24,9 +24,11 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
     ```csharp
     namespace People.Models;
-
-    public class Person
     {
+
+        public class Person
+        {
+        }
     }
     ```
 
@@ -36,11 +38,13 @@ In this exercise, you'll use SQLite to store information locally with an applica
 
     ```csharp
     namespace People.Models;
-
-    public class Person
     {
+
+        public class Person
+        {
         public int Id { get; set; }
         public string Name { get; set; }
+        }
     }
     ```
 
@@ -70,10 +74,10 @@ dotnet add package SQLitePCLRaw.bundle_green
     ```csharp
     using SQLite;
 
-    namespace People.Models;
-
-    public class Person
+     namespace People.Models;
     {
+
+        public class Person
         ...
     }
     ```
@@ -90,15 +94,17 @@ dotnet add package SQLitePCLRaw.bundle_green
     using SQLite;
 
     namespace People.Models;
-
-    [Table("people")]
-    public class Person
     {
-        [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
 
-        [MaxLength(250), Unique]
-        public string Name { get; set; }
+        [Table("people")]
+        public class Person
+        {
+            [PrimaryKey, AutoIncrement]
+            public int Id { get; set; }
+
+            [MaxLength(250), Unique]
+            public string Name { get; set; }
+        }
     }
     ```
 
@@ -263,7 +269,8 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 ## Test the application
 
-1. Build the solution by using <kbd>CTRL+Shift+B</kbd> and start debugging by using <kbd>F5</kbd>. When the UI appears, enter your name and select **Add Person**.
+1. Build the solution by using <kbd>CTRL+Shift+B</kbd>. 
+1. Once the build completes, start debugging by using <kbd>F5</kbd>. When the UI appears, enter your name and select **Add Person**.
 
     :::image type="content" source="../media/4-app-person-results.png" alt-text="A screenshot of the app with a successful message stating a record has been added.":::
 

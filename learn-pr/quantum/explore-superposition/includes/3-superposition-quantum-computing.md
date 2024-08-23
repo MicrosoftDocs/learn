@@ -1,16 +1,19 @@
-The word "qubit" means "quantum bit". A qubit is a quantum particle that has two possible positions, or *states*. As analog to the classical bit, we can call these states $0$ and $1$.
+The word "qubit" means "quantum bit". A qubit is a quantum particle that has two possible positions, or *states*. As analog to the classical bit, the quantum states of a qubit are called $0$ and $1$.
 
 A qubit can be in the state $0$, in the state $1$, and in any superposition of both states.
 
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
+
 ## How can we represent the superposition in a qubit?
 
-Imagine that we draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. We place the state $0$ at the upper point of the vertical axis and the state $1$ at the lower point.
+Imagine that you draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. The state $0$ is placed at the upper point of the vertical axis and the state $1$ is at the lower point.
 
-How could we describe this representation? We could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
+How could you describe this representation? You could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
 
 :::image type="content" source="../media/superposition-bloch-sphere.png" alt-text="Diagram of a circle with two arrows pointing up and down from the center of the circle. The arrows represent the states 0 and 1 respectively. Any other state is an arrow pointing at other directions.":::
 
-What about any other point of the circle? How can we represent that state? Just as coordinates in a plane, we could try to represent it as a combination of the two states $0$ and $1$. For example, we could take how close the vector is from the state $0$ and call this angle $\alpha$, and how close is from the state $1$ and call this angle $\beta$. We could represent the state as $\alpha 0 + \beta 1 $. Thus, the state is a *superposition* of the states $0$ and $1$.
+What about any other point of the circle? How can you represent that state? Just as coordinates in a plane, you could try to represent it as a combination of the two states $0$ and $1$. For example, you could take how close the vector is from the state $0$ and call this angle $\alpha$, and how close is from the state $1$ and call this angle $\beta$. We could represent the state as $\alpha 0 + \beta 1 $. Thus, the state is a *superposition* of the states $0$ and $1$.
 
 Just like the example of the cat and the box, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $.
 
