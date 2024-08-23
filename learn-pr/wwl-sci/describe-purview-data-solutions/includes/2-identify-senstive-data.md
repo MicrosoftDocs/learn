@@ -1,78 +1,96 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
-    Goal: briefly summarize the key skill this unit will teach
 
-    Heading: none
+Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft Purview compliance portal, such as sensitive information types, trainable classifiers, content explorer, and activity explorer.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Identifying and classifying sensitive items that are under your organization's control is the first step in the Information Protection discipline. Microsoft Purview provides three ways of identifying items so that they can be classified:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- manually by users
+- automated pattern recognition, like sensitive information types
+- machine learning
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+### Sensitive information types
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Sensitive information types (SIT) are pattern-based classifiers. They have set patterns that can be used to identify them.  For example, an identification number in a country/region may be based on a specific pattern, like this:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+*123-456-789-ABC*
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Microsoft Purview includes many built-in sensitive information types based on patterns that are defined by a regular expression (regex) or a function.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+Examples include:
 
-    Goal: State concisely what's covered in this unit
+- Credit card numbers
+- Passport or identification numbers
+- Bank account numbers
+- Health service numbers
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Refer to [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions) for a listing of available built-in sensitive information types.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Data classification in Microsoft Purview also supports the ability to create custom sensitive information types to address organization-specific requirements.  For example, an organization may need to create sensitive information types to represent employee IDs or project numbers.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+Also supported is exact data match (EDM) classification. EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+To explore how to classify data using sensitive info types with Microsoft Purview Information Protection, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
 
-    Heading: none
--->
-TODO: add a visual element
+### Trainable classifiers
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Trainable classifiers use artificial intelligence and machine learning to intelligently classify your data. They're most useful classifying data unique to an organization like specific kinds of contracts, invoices, or customer records. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching).
+Two types of classifier are available:
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+- **Pre-trained classifiers** - Microsoft has created and pretrained many classifiers that you can start using without training them. These classifiers will appear with the status of **Ready to use**.  Microsoft Purview comes with five pretrained classifiers that detect and classify things like resumes, source code, harassment, profanity, and threat (relates to committing violence or doing physical harm).
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+- **Custom trainable classifiers** - Microsoft supports the ability to create and train custom classifiers. They're most useful when classifying data unique to an organization, like specific kinds of contracts, invoices, or customer records.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+To get a custom trainable classifier to accurately identify an item as being in a particular category of content, it must first be presented with many samples of the type of content in the category. This feeding of positive samples is known as seeding and is used to create a prediction model for the classifier.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+The model gets tested to determine if the classifier can correctly distinguish between items that match the category and items that don't. The result of each prediction is manually verified, which serves as input to improve the accuracy of the prediction model.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+After the accuracy score of the model has stabilized, the classifier can be published.
+Trainable classifiers can then sort through items in locations like SharePoint Online, Exchange, and OneDrive, and classify the content.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+> [!NOTE]
+> At this time, classifiers only work with items that aren't encrypted.
 
-<!-- Do not add a unit summary or references/links -->
+### Understand and explore the data
+
+Data classification can involve large numbers of documents and emails. To help administrators to easily derive insights and understanding, the overview section of the data classification pane in compliance portal provides many details at a glance, including:
+
+- The number of items classified as sensitive information and which classifications they are.
+- Details on the locations of data based on sensitivity.
+- Summary of actions that users are taking on sensitive content across the organization.
+
+Administrators can also use the content and activity explorers to gain a deeper understanding and guide their actions.
+
+#### What is the content explorer?
+
+The content explorer is available as a tab in the data classification pane of compliance portal. It enables administrators to gain visibility into the content that has been summarized in the overview pane.
+
+Access to content explorer is highly restricted because it makes it possible to read the contents of scanned files.  There are two roles that grant access to content explorer:
+
+- Content explorer list viewer.
+- Content explorer content viewer.
+
+Anyone who wants to access content explorer must have an account in one or both of the role groups.
+
+With content explorer, administrators get a current snapshot of individual items that have been classified across the organization. It enables administrators to further drill down into items by allowing them to access and review the scanned source content that's stored in different kinds of locations, such as Exchange, SharePoint, and OneDrive.
+
+#### What is the activity explorer?
+
+Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. It makes it possible to monitor what's being done with labeled content across the organization. Admins gain visibility into document-level activities like label changes and label downgrades (such as when someone changes a label from confidential to public).
+
+Admins use the filters to see all the details for a specific label, including file types, users, and activities. Activity explorer helps you understand what's being done with labeled content over time. Admins use activity explorer to evaluate if controls already in place are effective.
+
+Here are a few of the activity types that can be analyzed:
+
+- File copied to removable media
+- File copied to network share
+- Label applied
+- Label changed
+
+Admins can use more than 30 filters for data including:
+
+- Location
+- User
+- Sensitivity label
+- Retention label
+
+The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](/microsoft-365/compliance/dlp-create-deploy-policy), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
