@@ -31978,6 +31978,11 @@
       "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/9-configure-remote-desktop-protocol-shortpath-managed-networks.md",
       "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
       "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
+      "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
     }
   ]
 }
