@@ -7,11 +7,11 @@ GitHub Copilot Enterprise builds the power of generative AI into an editor exten
 Let's learn about the new features that come with GitHub Copilot Enterprise. 
 
 In this section we’ll be going over the following:
-Knowledge bases and custom models
-Chat customization to your codebase
-Pull request summaries
-Documentation search and summaries using docsets
-Code review
+ - Knowledge bases and custom models
+ - Chat customization to your codebase
+ - Pull request summaries
+ - Documentation search and summaries using docsets
+ - Code review
 
 
 
@@ -25,7 +25,7 @@ With GitHub Copilot Enterprise, you can also fine-tune a private, custom model, 
 
 For more on creating a knowledge base, at the end of this module will be a link to the article “Managing Copilot knowledge bases.”
 
-Next up, we’ll cover chat chat customized based on codebases.
+Next up, we’ll cover chats customized based on codebases.
 
 ### Chat customized to your codebase
 
