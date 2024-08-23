@@ -6,7 +6,7 @@ metadata:
   ms.date: 08/07/2024
   author: camsoper
   ms.author: casoper
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
 title: Secure a .NET web app with the ASP.NET Core Identity framework

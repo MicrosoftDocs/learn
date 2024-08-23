@@ -5,6 +5,7 @@ metadata:
   description: In this module, you'll learn how to move backing services for your Azure-hosted .NET Aspire app from containers into native Azure services.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
   ms.custom:
@@ -19,7 +20,7 @@ abstract: |
   - Send telemetry data to Azure Application Insights.
   - Deploy resources to Azure by creating Bicep files with the Azure Developer CLI.
 ratingEnabled: true
-iconUrl: /training/achievements/dotnet-aspiresvg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
