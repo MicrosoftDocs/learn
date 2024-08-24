@@ -11,7 +11,7 @@ Let’s consider a nonprofit working to promote environmental awareness and acti
 ```
 
 Generate a volunteer job description for a social media coordinator who will manage our Facebook, 
-Twitter, and Instagram accounts, highlighting the skills, responsibilities, and perks of the role. 
+X, and Instagram accounts, highlighting the skills, responsibilities, and perks of the role. 
 ```
 
 ```

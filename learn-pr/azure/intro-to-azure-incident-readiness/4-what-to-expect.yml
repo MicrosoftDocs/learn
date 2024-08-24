@@ -19,7 +19,7 @@ quiz:
       isCorrect: false
     - content: "Azure Service Health"
       isCorrect: true
-    - content: "@AzureSupport on Twitter"
+    - content: "@AzureSupport on X"
       isCorrect: false
     - content: "Microsoft Teams"
       isCorrect: false
@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
     - content: "False"
       isCorrect: true
-  - content: "True or False: Following @AzureSupport on Twitter is the best way to know there's an Azure incident and to keep informed."
+  - content: "True or False: Following @AzureSupport on X is the best way to know there's an Azure incident and to keep informed."
     choices:
     - content: "True"
       isCorrect: false

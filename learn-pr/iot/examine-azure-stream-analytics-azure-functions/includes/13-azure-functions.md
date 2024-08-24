@@ -18,7 +18,7 @@ Here are some key features of Azure Functions:
  -  Choice of language - Write functions using your choice of C\#, Java, JavaScript, Python, and other languages. See Supported languages for the complete list.
  -  Pay-per-use pricing model - Pay only for the time spent running your code. See the Consumption hosting plan option in the pricing section.
  -  Bring your own dependencies - Functions supports NuGet and npm, so you can use your favorite libraries.
- -  Integrated security - Protect HTTP-triggered functions with OAuth providers such as Microsoft Entra ID, Facebook, Google, Twitter, and Microsoft Account.
+ -  Integrated security - Protect HTTP-triggered functions with OAuth providers such as Microsoft Entra ID, Facebook, Google, X, and Microsoft Account.
  -  Simplified integration - Easily apply Azure services and software-as-a-service (SaaS) offerings. See the integrations section for some examples.
  -  Flexible development - Code your functions right in the portal or set up continuous integration and deploy your code through GitHub, Azure DevOps Services, and other supported development tools.
  -  Open-source - The Functions runtime is open-source and available on GitHub.
