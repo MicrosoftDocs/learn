@@ -63,10 +63,10 @@ Under the hood, Microsoft Power Automate is built on Azure Logic Apps. This fact
 
 ### Design-first technologies compared
 
-As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Azure Logic Apps is usually a better fit:
+As you can see from the following table, Microsoft Power Automate is more appropriate for use by nontechnical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Azure Logic Apps is usually a better fit:
 
-| | Microsoft Power Automate| Azure Logic Apps |
-| -- | -- | -- |
+|   | Microsoft Power Automate | Azure Logic Apps |
+|---|--------------------------|------------------|
 | **Intended users** | Office workers and business analysts | Developers and IT pros |
 | **Intended scenarios** | Self-service workflow creation | Advanced integration projects |
 | **Design tools** | GUI only. Browser and mobile app | Workflow designer in the browser, Visual Studio Code, and Visual Studio. Code editing is possible |
@@ -117,14 +117,14 @@ In most cases, the simple administration and more flexible coding model provided
 - You want the code to be a part of an existing App Service application and to be managed as part of that application, for example in the same Azure DevOps environment.
 - You need close control over the object that listens for events that trigger the code. This object in question is the `JobHost` class, and you have more flexibility to modify its behavior in WebJobs.
 
-| | Azure WebJobs | Azure Functions |
-| -- | --| -- |
+|   | Azure WebJobs | Azure Functions |
+|---|---------------|-----------------|
 | **Supported languages** | C# if you're using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and more |
 | **Automatic scaling** | No | Yes |
 | **Development and testing in a browser** | No | Yes |
 | **Pay-per-use pricing** | No | Yes |
 | **Integration with Azure Logic Apps** | No | Yes |
-| **Package managers** | NuGet if you're using the WebJobs SDK | NuGet and NPM |
+| **Package managers** | NuGet if you're using the WebJobs SDK | NuGet and npm |
 | **Can be part of an App Service application** | Yes | Yes (hosted under App Service plan) |
 | **Provides close control of `JobHost`** | Yes | No |
 
