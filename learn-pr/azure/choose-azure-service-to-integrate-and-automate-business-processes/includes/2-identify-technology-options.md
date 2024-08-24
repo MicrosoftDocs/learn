@@ -10,7 +10,7 @@ A business frequently runs into issues when it merges with a second business or 
 
 Business processes modeled in software are often called *workflows*. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
 
-- Logic Apps
+- Azure Logic Apps
 - Microsoft Power Automate
 - WebJobs
 - Azure Functions
@@ -28,19 +28,19 @@ In addition, workflows created with these technologies can either start based on
 
 When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces where you can draw out the workflow. We call this approach a *design-first* approach.
 
-### Logic Apps
+### Azure Logic Apps
 
 :::image type="icon" border="false" source="../media/2-logic-apps-logo.png":::
 
-[Logic Apps](https://azure.microsoft.com/services/logic-apps/) is a service within Azure to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the Logic Apps Designer and design canvas that you use to define your workflow.
+[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/) is a service within Azure to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Azure Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the workflow designer and design canvas that you use to define your workflow.
 
-![Screenshot of the Logic Apps workflow designer in the Azure portal.](../media/2-logic-apps-workflow-designer.png)
+![Screenshot of Azure Logic Apps workflow designer in the Azure portal.](../media/2-logic-apps-workflow-designer.png)
 
 Alternatively, if you prefer to work in code, you can create or edit a workflow in JSON notation by using the code view, as illustrated in the following screenshot.
 
-![Screenshot of the Logic Apps code editor in the Azure portal.](../media/2-logic-apps-code-editor.png)
+![Screenshot of the Azure Logic Apps code editor in the Azure portal.](../media/2-logic-apps-code-editor.png)
 
-One reason why Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [X connector](/connectors/twitter/) allows you to send and retrieve short posts, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
+One reason why Azure Logic Apps is so good at integration is that [over 200 connectors are included](/connectors/connector-reference/). A *connector* is a logic app component that provides an interface to an external service. For example, the [X connector](/connectors/twitter/) allows you to send and retrieve short posts, while the [Office 365 Outlook connector](/connectors/office365/) lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of prebuilt connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from Azure Logic Apps, you can [create your own connector](/connectors/custom-connectors/) if your system exposes a REST API.
 
 ### Microsoft Power Automate
 
@@ -59,18 +59,18 @@ Microsoft Power Automate provides an easy-to-use design surface to create these 
 
 ![Screenshot of the Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
-Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate [supports the same range of connectors and actions](https://flow.microsoft.com/connectors/) as Logic Apps. You can also use [custom connectors](/power-automate/get-started-flow-dev) in Microsoft Power Automate.
+Under the hood, Microsoft Power Automate is built on Azure Logic Apps. This fact means that Power Automate [supports the same range of connectors and actions](https://flow.microsoft.com/connectors/) as Azure Logic Apps. You can also use [custom connectors](/power-automate/get-started-flow-dev) in Microsoft Power Automate.
 
 ### Design-first technologies compared
 
-As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps is usually a better fit:
+As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Azure Logic Apps is usually a better fit:
 
-| | Microsoft Power Automate| Logic Apps |
+| | Microsoft Power Automate| Azure Logic Apps |
 | -- | -- | -- |
 | **Intended users** | Office workers and business analysts | Developers and IT pros |
 | **Intended scenarios** | Self-service workflow creation | Advanced integration projects |
-| **Design tools** | GUI only. Browser and mobile app | Browser and Visual Studio designer. Code editing is possible |
-| **Application Lifecycle Management** | Power Automate includes testing and production environments | Logic Apps source code can be included in Azure DevOps and source code management systems |
+| **Design tools** | GUI only. Browser and mobile app | Workflow designer in the browser, Visual Studio Code, and Visual Studio. Code editing is possible |
+| **Application Lifecycle Management** | Power Automate includes testing and production environments | Azure Logic Apps source code can be included in Azure DevOps and source code management systems |
 
 ## Code-first technologies
 
@@ -123,7 +123,7 @@ In most cases, the simple administration and more flexible coding model provided
 | **Automatic scaling** | No | Yes |
 | **Development and testing in a browser** | No | Yes |
 | **Pay-per-use pricing** | No | Yes |
-| **Integration with Logic Apps** | No | Yes |
+| **Integration with Azure Logic Apps** | No | Yes |
 | **Package managers** | NuGet if you're using the WebJobs SDK | NuGet and NPM |
 | **Can be part of an App Service application** | Yes | Yes (hosted under App Service plan) |
 | **Provides close control of `JobHost`** | Yes | No |
