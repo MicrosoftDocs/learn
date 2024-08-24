@@ -17037,6 +17037,66 @@
       "source_path_from_root": "/learn-pr/reactors/test-azure-cognitive-services/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/"
     },
+    { 
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/0-introduction.yml", 
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+      "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/1-webxr-babylonjs.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/2-environment-setup.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/3-get-started-with-babylonjs.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/4-add-floor-mesh-and-texture.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/5-create-environment.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/6-create-player-icons.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/7-create-actions.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/8-initialize-environment.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/9-knowledge-check.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/10-summary.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/index.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
     {
       "source_path_from_root": "/learn-pr/sqlserver/automatically-tune-sql-server-linux/1-introduction.yml",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
