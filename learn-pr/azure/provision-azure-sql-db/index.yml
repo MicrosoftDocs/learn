@@ -8,7 +8,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
-  ms.service: sql-db-mi
+  ms.service: azure-sql
 title: Provision an Azure SQL database to store application data
 summary: Use the Azure portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
 abstract: |
