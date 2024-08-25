@@ -1,5 +1,14 @@
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in the following Microsoft 365 services:
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. 
+
+eDiscovery is one of the solutions available through the Microsoft Purview portal, under the Risk & Compliance set of solutions. To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions.
+
+:::image type="content" source="../media/purview-portal.png" lightbox="../media/purview-portal.png" alt-text="A screen capture of the Purview portal that highlights eDiscovery in the risk and compliance set of solutions.":::
+
+> [!IMPORTANT]
+> eDiscovery can be accessed through the Microsoft Purview compliance portal, but the Microsoft Purview compliance portal is scheduled for retirement by the end of 2024. Unless otherwise stated, information in this unit refers to eDiscovery functionality available through the Microsoft Purview portal.
+
+You can use Microsoft Purview eDiscovery to identify, review, and manage content in Microsoft 365 services to support your investigations. Supported Microsoft 365 services include:
 
 - Exchange Online
 - Microsoft Teams
@@ -8,18 +17,30 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 - SharePoint
 - Viva Engage
 
-You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
+You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use eDiscovery standard cases to identify, hold, and export content found in mailboxes and sites. Depending on the licensing and subscriptions for your organization, you can further manage cases and analyze content using premium eDiscovery features.
 
-Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
+:::image type="content" source="../media/purview-left-navigation-panel.png" lightbox="../media/purview-left-navigation-panel.png" alt-text="A screen capture of the eDiscovery tools listed in the left navigation panel of the eDiscovery solution, in the Microsoft Purview portal.":::
 
-:::image type="content" source="../media/m365-ediscovery-solution-inline.png" lightbox="../media/m365-ediscovery-solution-expanded.png" alt-text="A table that shows the two Microsoft Purview eDiscovery solutions: eDiscovery (Standard), and eDiscovery (Premium).":::
+- **Standard Cases**. Microsoft Purview provides a basic eDiscovery tool that organizations can use to create cases. With a case created, you can do searches, place an eDiscovery hold on content locations, such as Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft Teams. A hold preserves content that might be relevant to the case. You can export search results for further analysis.
 
-- **Content Search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
+- **Premium Cases**. Premium eDiscovery features enable you to further manage cases and analyze content. The premium features supported on Premium Cases build on the capabilities supported for Standard Cases and add extra functionality including review sets, advanced indexing, optical character recognition, conversation threading, and much more.
+  - Review sets -  A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models. You can also track and report on what content gets added to the review set.
+  - Advanced indexing - When a search, review set, or export process is run, the associated content locations where items are partially indexed are reindexed in a process called Advanced indexing. Advanced indexing ensures any content deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
+  - Optical character recognition (OCR) - When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
+  - Conversation threading - When chat messages from Teams and Viva Engage conversations are added to a review set, you can collect the entire conversation thread. The entire chat conversation that contains items that match the search criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
+  - And more - Information on supported features and capabilities can be found in the Features and capabilities section of [Learn about eDiscovery](/purview/edisc).
 
-- **eDiscovery (Standard)**. The eDiscovery (Standard) solution builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. The eDiscovery (Standard) solution also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
+- **Content Searches**. Use the Content search tool to search for content that's stored in Exchange mailboxes, OneDrive accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Viva Engage Teams. Searches include content generated by other Microsoft 365 apps that store data in mailboxes and sites. You can then export search results to a local computer in your organization. When you export search results, items are copied from their original content location and packaged. Then you can download those items in the export package to a local computer.
 
-- **eDiscovery (Premium)**. The eDiscovery (Premium) solution builds on the existing capabilities in eDiscovery (Standard). In addition, eDiscovery (Premium) provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians, people that you've identified as people of interest in the case, and the workflow to communicate with custodians. It allows you to collect and copy data into review sets, where you can filter, search, and tag content so you can identify and focus on content that's most relevant. The eDiscovery (Premium) solution provides analytics and machine learning-based predictive coding models to further narrow the scope of your investigation to the most relevant content.
+### Integration with Microsoft Copilot for Security
 
-Subscriptions that support eDiscovery (Standard) also support Content search. Subscriptions that support eDiscovery (Premium) also support Content search and eDiscovery (Standard).
+eDiscovery admins or managers spend a significant amount of time reviewing evidence collected in review sets. You can use Copilot for Security in Microsoft Purview to provide a contextual summary of most items in a review set.
 
-To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal.
+> [!NOTE]
+> This use case is currently supported only in the Microsoft Purview compliance portal. It is not yet supported in the new Microsoft Purview portal.
+
+The summary provided is in the context of text included in a selected item. This summary can save time for reviewers by quickly identifying information helpful when tagging or exporting items.
+
+Copilot for Security summarizes the entire item, including documents, meetings transcripts, or attachments. You can also ask follow-up contextual questions about the summary.
+
+:::image type="content" source="../media/purview-ediscovery-context-v2.png" lightbox="../media/purview-ediscovery-context-v2.png" alt-text="Screen capture of the context generated by Copilot for an item in a review set of Microsoft Purview eDiscovery (Premium).":::
