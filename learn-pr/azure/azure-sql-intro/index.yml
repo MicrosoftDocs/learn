@@ -8,7 +8,7 @@ metadata:
   ms.author: mathoma
   manager: jroth
   ms.topic: module
-  ms.service: sql-db-mi
+  ms.service: azure-sql
 title: Introduction to Azure SQL
 summary: Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud. In this module, you'll learn about the various deployment options and service tiers, and about the benefits of moving to the cloud.
 abstract: |
