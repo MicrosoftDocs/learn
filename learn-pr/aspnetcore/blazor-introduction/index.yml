@@ -7,7 +7,7 @@ metadata:
   ms.date: 01/12/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: csharpfritz      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: jefritz           # Alias of the Microsoft employee either authoring or project-managing this content
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: dotnet # Edit as appropriate for your portfolio area
   ms.technology: blazor 
