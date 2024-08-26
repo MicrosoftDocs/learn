@@ -10,7 +10,7 @@ Before we get into updating deployment stacks, let's take a look at how a stack 
 
 Deployment stacks can be created at different scopes, such as resource groups, subscriptions, and management groups. The resources that a deployment stack can manage depends on the scope where the stack is created. For example, if you deploy a stack at the scope of a subscription, then the stack can manage resource groups within the subscription, as well as resources in any resource group inside that same subscription.
 
-![a graphic representing a deployment stack and managed resources](../media/deployment-stacks-scenario-2-and-5.png)
+![A graphic representing a deployment stack and managed resources.](../media/deployment-stacks-scenario-2-and-5.png)
 
 What happens to a resource that is no longer managed by the deployment stack? If a resource is no longer defined in a template file and the stack is updated, the resource can become _detached_ or _deleted_. A detached resource is a resource that is no longer managed by the stack, but the resource continues to exist within Azure. A deleted resource is a resource that is deleted from Azure, and all of its data is lost.
 

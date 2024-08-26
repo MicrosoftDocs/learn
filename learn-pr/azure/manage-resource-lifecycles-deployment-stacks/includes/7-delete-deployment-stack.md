@@ -16,7 +16,7 @@ What happens to the stack's resources when it's deleted? As with the deployment 
 
 Consider the deposits application. In the previous unit, we removed some resources from our Bicep files, then we updated the deployment stack to use the revised Bicep file. This action had the consequence of removing some of our resources. Now, we can delete the whole stack, which removes all of the resources that the stack manages.
 
-Typically, when deleting a deployment stack, you set the _action on unmanage_ parameter to `delete all`, which deletes the resoruces. But sometimes, you want to delete the stack without deleting the resources. Maybe you no longer need the features that deployment stacks offer, but the resources need to remain. Or, you're moving a resource from one stack to another. To detach the resources, set the _action on unmanage_ parameter to `detach all` instead.
+Typically, when deleting a deployment stack, you set the _action on unmanage_ parameter to `delete all`, which deletes the resources. But sometimes, you want to delete the stack without deleting the resources. Maybe you no longer need the features that deployment stacks offer, but the resources need to remain. Or, you're moving a resource from one stack to another. To detach the resources, set the _action on unmanage_ parameter to `detach all` instead.
 
 > [!NOTE]
 > When working with resource group scoped deployment stacks, the `delete all` value for the _action on unmanage_ parameter doesn't detele the detached resources or the resource group where the stack exists. If you want to remove the detached resources and resource group, they must manually be deleted.
