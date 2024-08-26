@@ -94,3 +94,6 @@ with torch.no_grad():
         outputs = model(inputs)
         # Perform evaluation logic
 ```
+
+> [!Tip]
+> Learn more about [distributed training with TorchDistributor](/azure/databricks/machine-learning/train-model/distributed-training/spark-pytorch-distributor?azure-portal=true).
