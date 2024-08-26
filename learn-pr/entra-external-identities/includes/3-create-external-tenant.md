@@ -49,7 +49,11 @@ If you don't have an Azure subscription, you can create a trial tenant for free.
 1. You can scroll down to view a preview of your sign-in page. When you're done, select **Continue**.
 
     [ ![Screenshot of "Preview of your sign-in page" and a button labeled Continue highlighted.](../media/create-an-external-tenant/17_inline.png) ](../media/create-an-external-tenant/17.png#lightbox)
+
+    [ ![Screenshot of "Preview of your sign-in page" and a button labeled Continue highlighted.](../media/create-an-external-tenant/17_600px.png) ](../media/create-an-external-tenant/17.png#lightbox)
+
     [ ![Screenshot of "Preview of your sign-in page" and a button labeled Continue highlighted.](../media/create-an-external-tenant/17_900.png) ](../media/create-an-external-tenant/17.png#lightbox)
+
     [ ![Screenshot of "Preview of your sign-in page" and a button labeled Continue highlighted.](../media/create-an-external-tenant/17_1000.png) ](../media/create-an-external-tenant/17.png#lightbox)
 
 1. Wait for a few minutes until the **Run it now** button is ready. When it's ready, select **Run it now** to view the sign-in experience.
