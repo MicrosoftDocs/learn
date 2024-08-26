@@ -40,14 +40,14 @@ On the **Company Branding** page, you can choose to edit the **Default sign-in e
         [ ![Screenshot of Edit default sign-in experience blade's Footer tab showing fields to customize dipslay text and URL for Privacy and Cookies as well as Terms of Use.](../media/customize-the-look-and-feel-of-your-flows/5_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/5.png#lightbox)
 
 1. On the **Sign-in form** tab, configure elements of the sign-in form.
-        - **Banner logo** - Displays on the sign-in page and in the user’s access panel
-        - **Sign-in page text** - Appears at the bottom of the sign-in and sign-up pages.
-        - **Show self-service password reset** - Yes
+    - **Banner logo** - Displays on the sign-in page and in the user’s access panel
+    - **Sign-in page text** - Appears at the bottom of the sign-in and sign-up pages.
+    - **Show self-service password reset** - Yes
 
-            [ ![Screenshot of Edit default sign-in experience blade's Signin form tab highlighting a field to upload Banner logo.](../media/customize-the-look-and-feel-of-your-flows/6_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/6.png#lightbox)
-            Scroll down for more options.
+        [ ![Screenshot of Edit default sign-in experience blade's Signin form tab highlighting a field to upload Banner logo.](../media/customize-the-look-and-feel-of-your-flows/6_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/6.png#lightbox)
+        Scroll down for more options.
 
-            [ ![Screenshot of the bottom of Edit default sign-in experience blade's Signin form tab highlighting field to customize Sign-in page text and the checkbox for Show self-service password reset checked.](../media/customize-the-look-and-feel-of-your-flows/7_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/7.png#lightbox)
+        [ ![Screenshot of the bottom of Edit default sign-in experience blade's Signin form tab highlighting field to customize Sign-in page text and the checkbox for Show self-service password reset checked.](../media/customize-the-look-and-feel-of-your-flows/7_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/7.png#lightbox)
         
 1. To customize some of the labels, on the **Text** tab select **Add Custom Text**.
 
