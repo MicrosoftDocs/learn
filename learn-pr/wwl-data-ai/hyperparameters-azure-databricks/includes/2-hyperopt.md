@@ -52,7 +52,7 @@ Finally, the function returns a value that Hyperopt should minimize to improve t
 
 ## Define the hyperparameter search space
 
-Each time the objective function is called, it requires a parameter containing the hyperparameter values to be tried. To specify the complete set of value combinations that can be tried, you need to define a *search space* from which Hyperopt can select the values to be used in each trial.
+Each time the objective function is called, it requires a parameter containing the hyperparameter values to be tried. To try all possible value combinations, you need to define a search space for Hyperopt to select values from for each trial.
 
 Hyperopt provides expressions that you can use to define a range of values for each hyperparameter, including:
 
@@ -77,7 +77,7 @@ search_space = {
 
 ## Specify the search algorithm
 
-Hyperopt uses a search algorithm to select hyperparameter values from the search space and try to optimize the objective function. There are two main choices in how Hyperopt will sample over the search space:
+Hyperopt uses a search algorithm to select hyperparameter values from the search space and try to optimize the objective function. There are two main choices in how Hyperopt samples over the search space:
 
 - `hyperopt.tpe.suggest`: Tree of Parzen Estimators (TPE), a Bayesian approach that adaptively selects new hyperparameter settings based on past results.
 - `hyperopt.rand.suggest`: Random search, a nonadaptive approach that samples randomly over the search space.
@@ -94,7 +94,7 @@ algo = tpe.suggest
 
 Finally, to execute a Hyperopt run, you can use the **fmin** function, which repeatedly calls the objective function using hyperparameter combinations from the search space based on the search algorithm. The goal of the **fmin** function is to minimize the value returned by the objective function (and therefore optimizing the performance of the model).
 
-The following example code uses the **fmin** function to call the **objective** function defined previously. The search space and algorithm defined in previous examples are used, and the function will be evaluated up to 100 times before the **fmin** function returns the best-performing parameter value combination that was found.
+The following example code uses the **fmin** function to call the **objective** function defined previously. The search space and algorithm defined in previous examples are used, and the function is evaluated up to 100 times before the **fmin** function returns the best-performing parameter value combination that was found.
 
 ```python
 from hyperopt import fmin
