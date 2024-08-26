@@ -11,7 +11,9 @@
 
 1. We start by creating the **special diet** custom user attribute. To do so, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **External Identities** > **Overview**. Then, select **Custom user attributes**.
 
+
     [ ![Screenshot of External Identities Overview blade with the left navigation highlighting Custom user attributes.](../media/collect-user-attributes-during-sign-up/1_inline.png) ](../media/collect-user-attributes-during-sign-up/1.png#lightbox)
+
 
 1. The list contains all user attributes available in the tenant, including any custom user attributes that have been created. The **Attribute type** column indicates whether an attribute is built-in or custom. Select **Add** to add a new attribute.
 
