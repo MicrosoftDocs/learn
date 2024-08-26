@@ -4,8 +4,8 @@ metadata:
   title: Use AutoML in Azure Databricks
   description: Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/29/2023
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.service: azure-databricks
   ms.topic: module-standard-task-based
   ms.collection:
