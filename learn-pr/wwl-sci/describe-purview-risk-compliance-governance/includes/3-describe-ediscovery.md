@@ -36,9 +36,6 @@ You can search mailboxes and sites in the same eDiscovery search, and then expor
 
 eDiscovery admins or managers spend a significant amount of time reviewing evidence collected in review sets. You can use Copilot for Security in Microsoft Purview to provide a contextual summary of most items in a review set.
 
-> [!NOTE]
-> This use case is currently supported only in the Microsoft Purview compliance portal. It is not yet supported in the new Microsoft Purview portal.
-
 The summary provided is in the context of text included in a selected item. This summary can save time for reviewers by quickly identifying information helpful when tagging or exporting items.
 
 Copilot for Security summarizes the entire item, including documents, meetings transcripts, or attachments. You can also ask follow-up contextual questions about the summary.
