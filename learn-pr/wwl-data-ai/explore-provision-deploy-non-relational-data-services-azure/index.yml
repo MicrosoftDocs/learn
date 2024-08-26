@@ -53,7 +53,7 @@ units:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.introduction
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-blob-storage
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-datalake-storage-gen2
-- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-onelake
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-one-lake
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-files
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-tables
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.exercise-azure-storage

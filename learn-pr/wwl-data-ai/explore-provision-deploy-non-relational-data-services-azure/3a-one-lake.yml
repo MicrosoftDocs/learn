@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-onelake
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-one-lake
 title: Explore Microsoft OneLake in Fabric
 metadata:
   title: Explore Microsoft OneLake in Fabric
-  description: "Explore Azure DataLake Storage Gen2"
+  description: "Explore Azure Data Lake Storage Gen2"
   ms.date: 08/26/2024
   author: wwlpublish
   ms.author: rcaper
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3a-onelake.md)]
+  [!include[](includes/3a-one-lake.md)]
