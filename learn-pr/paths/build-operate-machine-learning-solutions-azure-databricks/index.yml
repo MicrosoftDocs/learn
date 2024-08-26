@@ -3,9 +3,9 @@ uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks
 metadata:
   title: Implement a machine learning solution with Azure Databricks
   description: Azure Databricks is a cloud-scale platform for data analytics and machine learning. Data scientists and machine learning engineers can use Azure Databricks to implement machine learning solutions at scale.
-  ms.date: 02/08/2024
+  ms.date: 08/26/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: madiepev
   ms.topic: learning-path
 title: Implement a machine learning solution with Azure Databricks
 prerequisites: |
