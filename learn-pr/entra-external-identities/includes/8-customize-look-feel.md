@@ -45,6 +45,7 @@ On the **Company Branding** page, you can choose to edit the **Default sign-in e
     - **Show self-service password reset** - Yes
 
         [ ![Screenshot of Edit default sign-in experience blade's Signin form tab highlighting a field to upload Banner logo.](../media/customize-the-look-and-feel-of-your-flows/6_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/6.png#lightbox)
+        
         Scroll down for more options.
 
         [ ![Screenshot of the bottom of Edit default sign-in experience blade's Signin form tab highlighting field to customize Sign-in page text and the checkbox for Show self-service password reset checked.](../media/customize-the-look-and-feel-of-your-flows/7_inline.png) ](../media/customize-the-look-and-feel-of-your-flows/7.png#lightbox)

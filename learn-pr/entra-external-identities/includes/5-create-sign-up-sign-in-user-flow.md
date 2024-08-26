@@ -15,7 +15,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 1. From the menu, select **User flows**. Then, select **New user flow**.
 
-    [ ![Screenshot of Microsoft Entra admin center homepage with a left navigation item titled External Identities highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/1_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/1.png#lightbox)
+    [ ![Screenshot of Microsoft Entra admin center homepage with a left navigation item titled External Identities highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/2_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/2.png#lightbox)
 
 1. On the **Create** page, enter a **Name** for the user flow (for example, "SignUpSignIn"). Then, under **Identity providers**, select the **Email Accounts** check box, and then select one of these options. If you configured other identity providers, you can select them.
 
