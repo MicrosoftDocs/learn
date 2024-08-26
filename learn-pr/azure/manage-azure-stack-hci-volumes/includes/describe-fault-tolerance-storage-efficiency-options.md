@@ -33,7 +33,7 @@ With mirror-accelerated parity, an individual Storage Spaces Direct volume combi
 
 Implementing mirror-accelerated parity requires at least four servers. The storage efficiency of mirror-accelerated parity is within the range identified. On one end, by the efficiency provided by three-way mirroring (33 percent), and on the other, the efficiency of double parity. The ratio between the mirror to the parity portion, which you specify when creating a volume, determines the actual efficiency.
 
-When creating a volume you specify the ratio between the mirror to the parity portion, which the actual efficiency is determined.
+When creating a volume you specify the ratio between the mirror to the parity portion, which determines the actual efficiency.
 
 ## Describe nested resiliency
 

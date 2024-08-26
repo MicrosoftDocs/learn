@@ -1,4 +1,4 @@
-As part of your evaluation of Azure Stack HCI volume-related features, you intend to explore the functionality that would provide disaster recovery based on stretched clusters. To accomplish, you intend to set up a cluster that spans two locations and configure their volumes with synchronous replication. This setup provides automatic failover if there was a failure in the primary location. You realize that it’s possible to script this configuration with PowerShell, but to simplify the setup you decide to use Windows Admin Center instead.
+As part of your evaluation of Azure Stack HCI volume-related features, you intend to explore the functionality that would provide disaster recovery based on stretched clusters. To accomplish this goal, you intend to set up a cluster that spans two locations and configure their volumes with synchronous replication. This setup provides automatic failover if there was a failure in the primary location. You realize that it’s possible to script this configuration with PowerShell, but to simplify the setup you decide to use Windows Admin Center instead.
 
 ## Describe considerations for stretched volumes
 
