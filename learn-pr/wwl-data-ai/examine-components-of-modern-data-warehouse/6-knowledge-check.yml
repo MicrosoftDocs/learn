@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/22/2024
+  ms.date: 08/26/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -19,10 +19,10 @@ quiz:
   - content: "Which term is used to describe an analytics solution that combines data lake and relational data warehouse functionality?"
     choices:
     - content: "Data lakehouse"
-      isCorrect: false
+      isCorrect: true
       explanation: "That's correct. A data lakehouse uses data lake storage and relational tables like a data warehouse."
     - content: "Data pipeline"
-      isCorrect: true
+      isCorrect: false
       explanation: "That's incorrect. A data pipeline is used to orchestrate data movement and processing tasks."
     - content: "Cloud"
       isCorrect: false
