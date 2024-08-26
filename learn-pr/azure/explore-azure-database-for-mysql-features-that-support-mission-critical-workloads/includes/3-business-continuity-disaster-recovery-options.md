@@ -59,7 +59,7 @@ To store the backup files, you can select from several storage options:
 
 - With **zone-redundant backup** storage (different zone, same region), backup files are stored in the server's availability zone and replicated to another availability zone in the same region. This option provides twelve 9s (99.9999999999%) of durability over a given year. Zone-redundant storage is important for zone-redundant HA and is required if data must remain within a single region.
 
-- With **geo-redundant backup** storage (different regions), backup files are stored in the server's region and then replicated to another geo-paired region. This option provides sixteen 9s (99.99999999999999%) of durability over a given year. Geo-redundant storage is only supported in [Azure paired regions](https://github.com/solliancenet/microsoft-learning-path-work-with-azure-database-for-mysql/blob/main/azure/mysql/flexible-server/overview#azure-regions).
+- With **geo-redundant backup** storage (different regions), backup files are stored in the server's region and then replicated to another geo-paired region. This option provides sixteen 9s (99.99999999999999%) of durability over a given year. Geo-redundant storage is only supported in [Azure paired regions](/azure/reliability/cross-region-replication-azure#azure-paired-regions).
 
 **Note**: With Azure Database for MySQL - Flexible Server, backup space up to 100% of provisioned storage space is available at no additional charge. Additional storage is charged in GB per month. For more information, see the pricing documentation.
 
