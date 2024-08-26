@@ -4,8 +4,8 @@ metadata:
   title: Tune hyperparameters in Azure Databricks
   description: Learn how to use the Hyperopt library in Azure Databricks to tune machine learning hyperparameters.
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/29/2023
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.service: azure-databricks
   ms.topic: module-standard-task-based
   ms.collection:
