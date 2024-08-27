@@ -3,7 +3,7 @@ uid: learn.wwl.explore-core-data-concepts
 metadata:
   title: Explore core data concepts
   description: "This content is a part of Explore core data concepts."
-  ms.date: 08/22/2024
+  ms.date: 08/27/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -15,7 +15,7 @@ metadata:
 title: Explore core data concepts
 summary: Data powers the digital transformation that is sweeping across organizations and society in general. But what is &quot;data&quot;, and how is it represented and used?
 abstract: |
-  In this module, you learn how to:
+  In this module, learn how to:
 
   -   Identify common data formats
 
