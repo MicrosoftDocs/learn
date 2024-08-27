@@ -154,7 +154,7 @@ Here's an example manifest for the .NET Aspire Starter template with no modifica
 }
 ```
 
-## Connection strings and binding references.
+## Connection strings and binding references
 
 In the manifest example, there are three resources:
 
