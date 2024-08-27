@@ -1,4 +1,6 @@
-Microsoft Purview Compliance Manager is a feature in the Microsoft Purview compliance portal that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+Microsoft Purview Compliance Manager is one of the solutions available through the Microsoft Purview portal, under the Risk & Compliance set of solutions.
+
+Microsoft Purview Compliance Manager that helps you automatically assess and manage compliance across your multicloud environment. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 

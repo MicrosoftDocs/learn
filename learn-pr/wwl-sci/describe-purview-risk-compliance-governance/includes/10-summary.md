@@ -2,6 +2,7 @@
 
 ## Learn more
 
+- [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Learn about Microsoft Purview](/purview/purview)
 - [Learn about the new Microsoft Purview portal](/purview/purview-portal)
 - [Microsoft Purview risk and compliance solutions](/purview/purview-compliance)

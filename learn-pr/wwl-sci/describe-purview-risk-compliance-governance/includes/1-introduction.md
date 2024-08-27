@@ -1,9 +1,12 @@
-Microsoft Purview is a comprehensive set of solutions that can help your organization govern, protect, and manage data, wherever it lives. Microsoft Purview solutions provide integrated coverage and help address the fragmentation of data across organizations, the lack of visibility that hampers data protection and governance, and the blurring of traditional IT management roles.
 
-Microsoft Purview provides a unified platform to help your organization:
+Microsoft Purview is a comprehensive set of solutions, accessed through the Microsoft Purview portal, that helps organizations govern, protect, and manage data, wherever it lives across their entire data estate.
 
-- Gain visibility into data across your organization
-- Safeguard and manage sensitive data across its lifecycle, wherever it lives
-- Govern data seamlessly in new, comprehensive ways
-- Manage critical data risks and regulatory requirements
+In this module, you'll learn about Microsoft Purview risk and compliance solutions and how they can help you organization manage and monitor its data, protect information, minimize compliance risks, and meet regulatory requirements.
 
+After completing this module, you'll be able to:
+
+- Describe Microsoft Purview Audit.
+- Describe Microsoft Purview Communication Compliance.
+- Describe Microsoft Purview Compliance Manager.
+- Describe Microsoft Purview Data Lifecycle Management.
+- Describe Microsoft Purview eDiscovery.
