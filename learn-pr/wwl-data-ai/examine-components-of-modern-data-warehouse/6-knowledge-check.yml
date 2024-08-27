@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/26/2024
+  ms.date: 08/27/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -37,7 +37,7 @@ quiz:
       explanation: "That's correct. Microsoft Fabric includes the capability to create pipelines."
     - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "That's incorrect. Azure Cosmos DB is a database system, but it does not include the capability to create pipelines."
+      explanation: "That's incorrect. Azure Cosmos DB is a database system, but it doesn't include the capability to create pipelines."
   - content: "Which open-source distributed processing engine does Microsoft Fabric include?"
     choices:
     - content: "Apache Hadoop"
@@ -48,4 +48,4 @@ quiz:
       explanation: "That's correct. Microsoft Fabric includes an Apache Spark runtime."
     - content: "Apache Storm"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Fabric does not include Apache Storm."
+      explanation: "That's incorrect. Microsoft Fabric doesn't include Apache Storm."
