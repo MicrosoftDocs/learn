@@ -33,9 +33,6 @@ Validate the following endpoints are configured for outbound access so that the 
     
     :::image type="content" source="../media/container-components-f83671a3.png" alt-text="Screenshot showing how to turn on the relevant component.":::
     
-    
-    > [!NOTE]
-    > Defenders for Containers customers who joined before August 2023 and don't have Agentless discovery for Kubernetes enabled as part of Defender CSPM when they enabled the plan, must manually enable the Agentless discovery for Kubernetes extension within the Defender for Containers plan.<br>When you turn off Defender for Containers, the components are set to off and are not deployed to any more containers but they are not removed from containers that they are already installed on.
 
 ### Enablement method per capability
 
@@ -64,6 +61,8 @@ Perform the following steps to perform deployment of the Defender agent on speci
 2.  View all clusters without an agent via the unhealthy tab.
 3.  Select the clusters to deploy the desired agent on and select Fix.
 4.  Select **Fix X resources**.
+    
+    
      -  **Visibility** about which of your clusters has the Defender agent deployed
      -  **Fix** button to deploy it to those clusters without the agent
      -  **Workspace**: DefaultWorkspace-\[subscription-ID\]-\[geo\]
@@ -94,13 +93,7 @@ A dedicated Defender for Cloud recommendation provides:
 
 ## Simulate security alerts from Microsoft Defender for Containers
 
-1.  To simulate a security alert, run the following command from the cluster:
-    
-    `kubectl get pods --namespace=asc-alerttest-662jfi039n`
-    
-    The expected response is `No resource found`.
-    
-    Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
+1.  To simulate a security alert, run the following command from the cluster: `kubectl get pods --namespace=asc-alerttest-662jfi039n` The expected response is `No resource found`. Within 30 minutes, Defender for Cloud detects this activity and trigger a security alert.
     
     > [!NOTE]
     > To simulate agentless alerts for Defender for Containers, Azure Arc isn't a prerequisite.
@@ -132,14 +125,17 @@ When you enable the auto-provision option, a default workspace will be automatic
 4.  Search for policy ID `64def556-fbad-4622-930e-72d1d5589bf5`.
     
     :::image type="content" source="../media/assignments-tab-d859a246.png" alt-text="Screenshot showing assignments that are configured in the Policy definition page.":::
-    5. Follow the **Create a new assignment with custom workspace** if the policy hasn't yet been assigned to the relevant scope. Or, follow the **Update assignment with custom workspace** if the policy is already assigned and you want to change it to use a custom workspace.
+    
+    
+    
+    5.  Follow the **Create a new assignment with custom workspace** if the policy hasn't yet been assigned to the relevant scope. Or, follow the **Update assignment with custom workspace** if the policy is already assigned and you want to change it to use a custom workspace.
 
 ### Create a new assignment with custom workspace
 
 If the policy hasn't been assigned, you'll see `Assignments (0)`.
 
 :::image type="content" source="../media/no-assignment-44221ebd.png" alt-text="Screenshot showing how to create a new assignment with custom workspace.":::
-**To assign custom workspace:**
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*To assign custom workspace:\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*
 
 1.  Select **Assign**.
 2.  In the **Parameters** tab, deselect the **Only show parameters that need input or review** option.
@@ -192,11 +188,16 @@ You can remove the extension using the REST API or a Resource Manager template a
     ```azurecli
     
     az login az account set --subscription <subscription-id> az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     Removing the extension might take a few minutes.
-2.  To verify that the extension was successfully removed, run the following command:
-    
-    `kubectl get pods -n kube-system | grep microsoft-defender`
-    
-    When the extension is removed, you should see that no pods are returned in the get pods command. It might take a few minutes for the pods to be deleted.
+2.  To verify that the extension was successfully removed, run the following command: `kubectl get pods -n kube-system | grep microsoft-defender` When the extension is removed, you should see that no pods are returned in the get pods command. It might take a few minutes for the pods to be deleted.
