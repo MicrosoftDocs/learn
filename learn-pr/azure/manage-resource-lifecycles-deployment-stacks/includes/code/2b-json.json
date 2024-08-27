@@ -1,0 +1,81 @@
+{
+  "actionOnUnmanage": {
+    "managementGroups": "detach",
+    "resourceGroups": "detach",
+    "resources": "detach"
+  },
+  "bypassStackOutOfSyncError": null,
+  "correlationId": ".",
+  "debugSetting": null,
+  "deletedResources": [],
+  "denySettings": {
+    "applyToChildScopes": false,
+    "excludedActions": null,
+    "excludedPrincipals": null,
+    "mode": "none"
+  },
+  "deploymentId": "/subscriptions/./resourceGroups/rg-depositsApplication/././deployments/stack-deposits",
+  "deploymentScope": null,
+  "description": null,
+  "detachedResources": [],
+  "duration": "PT47.3708833S",
+  "error": null,
+  "failedResources": [],
+  "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././deploymentStacks/stack-deposits",
+  "location": null,
+  "name": "stack-deposits",
+  "outputs": null,
+  "parameters": {
+    "sqlServerAdminPassword": {
+      "reference": null,
+      "type": "securestring",
+      "value": ""
+    },
+    "sqlServerAdminUserName": {
+      "reference": null,
+      "type": "string",
+      "value": "sqladmin"
+    }
+  },
+  "parametersLink": null,
+  "provisioningState": "succeeded",
+  "resourceGroup": "rg-depositsApplication",
+  "resources": [
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././servers/sql-brpdm7iotbwjm/databases/sqldb-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././serverfarms/plan-deposits",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    },
+    {
+      "denyStatus": "none",
+      "id": "/subscriptions/./resourceGroups/rg-depositsApplication/././sites/webapp-brpdm7iotbwjm",
+      "resourceGroup": "rg-depositsApplication",
+      "status": "managed"
+    }
+  ],
+  "systemData": {
+    "createdAt": "2024-01-01T00:00:01.000000+00:00",
+    "createdBy": "depositsapplication@contoso.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2024-01-01T00:00:01.000000+00:00",
+    "lastModifiedBy": "depositsapplication@contoso.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {},
+  "template": null,
+  "templateLink": null,
+  "type": "./deploymentStacks"
+}
