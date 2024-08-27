@@ -41,7 +41,7 @@ In addition to the databases you create, there are three system databases:
 
 **Server parameters** - PostgreSQL has several configuration files, which determine how the database engine should work. The main PostgreSQL configuration file is called **postgresql.conf**.
 
-Azure Database for PostgreSQL replaced these configuration files with **Server parameters**, which can be accessed via the Azure postal, or using the Azure CLI.
+Azure Database for PostgreSQL replaced these configuration files with **Server parameters**, which can be accessed via the Azure portal, or using the Azure CLI.
 
 To view or amend server parameters in the Azure portal:
 
@@ -49,7 +49,7 @@ To view or amend server parameters in the Azure portal:
 1. From the left menu, under **Settings**, select **Server parameters**.
 1. Use the search bar to filter the list of parameters or select the page number you require.
 
-**Storage** - Azure Database for PostgreSQL manages the data storage for you and is provisioned at the server level. Whether you select Burstable, General purpose, or Memory optimized compute tier, you can use between 32 GB and 16 TB of storage. To provision more storage, navigate to your Azure Database for PostgreSQL server, and from the **Overview** section select your **Configuration**. The **Compute + Storage** section is displayed. Under Storage, and Storage size (in GB) use the slider to select the amount of storage you want to be provisioned.
+**Storage** - Azure Database for PostgreSQL manages the data storage for you and is provisioned at the server level. Whether you select Burstable, General purpose, or Memory optimized compute tier, you can use up to 32 TB of storage. To provision storage, navigate to your Azure Database for PostgreSQL server, and from the **Overview** section select your **Configuration**. The **Compute + Storage** section is displayed. Under Storage, and Storage size (in GB) use the slider to select the amount of storage you want to be provisioned.
 
 The amount of storage you provision defines the I/O capacity available to your Azure Database for PostgreSQL server. You can monitor your I/O consumption in the Azure portal or by using Azure CLI commands. The relevant metrics to monitor are [storage limit, storage percentage, storage used, and IO percent](/azure/postgresql/flexible-server/concepts-monitoring).
 

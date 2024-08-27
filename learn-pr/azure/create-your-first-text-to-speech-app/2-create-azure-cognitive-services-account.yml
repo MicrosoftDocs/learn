@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-text-to-speech-app.create-azure-cognitive-services-account
-title: Create an Azure AI services account
+title: Create an Azure AI services resource
 metadata:
-  title: Create an Azure AI services account
-  description: Learn how to create an Azure AI services account.
+  title: Create an Azure AI services resource
+  description: Learn how to create an Azure AI services resource.
   author: rmcmurray
   ms.author: robmcm
   ms.date: 07/25/2024
