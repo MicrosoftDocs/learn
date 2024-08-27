@@ -4,7 +4,7 @@
 
 There are three backup possibilities for SAP HANA on Azure Virtual Machines:
 
-- Azure Backup Service working with the proprietary SAP HANA interface to perform a streaming backup (path 1 in the image following). The SAP HANA interface is called [backint](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/), and the Azure Backup service incorporates the SAP HANA backint API.
+- Azure Backup Service working with the proprietary SAP HANA interface to perform a streaming backup (path 1 in the image following). The SAP HANA interface is called [Backint](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/), and the Azure Backup service incorporates the SAP HANA Backint API.
 
 - HANA backup based on storage snapshots. This creates an application consistent disk snapshot and transfers it to the Azure Backup service (paths 2.1-2.3 in the image).
 
