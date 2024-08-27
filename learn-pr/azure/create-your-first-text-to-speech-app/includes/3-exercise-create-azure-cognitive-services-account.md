@@ -62,7 +62,7 @@ The applications that you'll create in the upcoming exercises use this resource 
       "etag": "\"00000000-0000-0000-0000-000000000000\"",
       "id": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/learn-22222222-2222-2222-2222-222222222222/providers/Microsoft.CognitiveServices/accounts/learn-account-33333",
       "identity": null,
-      "kind": "SpeechServices",
+      "kind": "AIServices",
       "location": "westus",
       "name": "learn-account-33333",
       "properties": {
@@ -72,7 +72,7 @@ The applications that you'll create in the upcoming exercises use this resource 
       "sku": {
         "capacity": null,
         "family": null,
-        "name": "F0",
+        "name": "S0",
         "size": null,
         "tier": null
       },
@@ -97,8 +97,8 @@ You should see a JSON response like the following example:
 
 ```json
 {
-   "key1": "0123456789abcdef0123456789abcdef",
-   "key2": "fedcba9876543210fedcba9876543210"
+   "key1": "YourKey1",
+   "key2": "YourKey2"
 }
 ```
 
