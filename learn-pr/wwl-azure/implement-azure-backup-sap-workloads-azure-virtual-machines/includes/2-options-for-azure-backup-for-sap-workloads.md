@@ -18,6 +18,7 @@ There are three backup possibilities for SAP HANA on Azure Virtual Machines:
 - **One-click, point-in-time restores:** Restoring production data to alternate HANA servers is easy. Azure manages the chaining of backups and catalogs to perform restores, behind the scenes.
 - **Long-term retention:** If you have rigorous compliance and audit needs, you can adjust the retention duration to allow you to retain your backups for years. Beyond the retention duration, the recovery points are pruned automatically by built-in lifecycle management.
 - **Backup management from Azure:** Azure Backup's management and monitoring capabilities provide an improved management experience. Azure CLI is also supported.
+- Azure Backup enables you to perform multi-streaming backup that helps you to increase your streaming backup throughput from *420 MBps* to *1.5 GBps*.
 
 ## Operating system backup
 
