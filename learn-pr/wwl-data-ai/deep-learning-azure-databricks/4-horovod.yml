@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deep-learning-azure-databricks.horovod
-title: Distribute PyTorch training with Horovod
+title: Distribute PyTorch training with TorchDistributor
 metadata:
-  title: Distribute PyTorch training with Horovod
-  description: Distribute PyTorch training with Horovod
+  title: Distribute PyTorch training with TorchDistributor
+  description: Distribute PyTorch training with TorchDistributor
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 07/10/2024
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/4-horovod.md)]
