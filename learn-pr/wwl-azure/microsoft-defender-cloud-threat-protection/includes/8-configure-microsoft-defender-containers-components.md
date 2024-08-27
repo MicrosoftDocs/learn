@@ -190,16 +190,6 @@ You can remove the extension using the REST API or a Resource Manager template a
     az login az account set --subscription <subscription-id> az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     Removing the extension might take a few minutes.
