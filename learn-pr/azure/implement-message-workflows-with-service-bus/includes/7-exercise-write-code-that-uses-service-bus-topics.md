@@ -89,7 +89,7 @@ To complete the component that sends messages about sales performance, complete 
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string TopicName = "salesperformancemessages";
     
             static void Main(string[] args)
@@ -275,7 +275,7 @@ To create the component that retrieves messages about sales performance, complet
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://alexgeddyneil.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=LIWIyxs8baqQ0bRf5zJLef6OTfrv0kBEDxFM/ML37Zs=";
+            const string ServiceBusConnectionString = "Endpoint=sb://alexgeddyneil.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string TopicName = "salesperformancemessages";
             const string SubscriptionName = "Americas";
     
