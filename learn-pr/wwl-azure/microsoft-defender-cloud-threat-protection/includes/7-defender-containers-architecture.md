@@ -19,6 +19,8 @@ To protect your Kubernetes containers, Defender for Containers receives and anal
 When Defender for Cloud protects a cluster hosted in Azure Kubernetes Service, the collection of audit log data is agentless and collected automatically through Azure infrastructure with no additional cost or configuration considerations. These are the required components in order to receive the full protection offered by Microsoft Defender for Containers:
 
  -  Defender agent: The DaemonSet that is deployed on each node, collects signals from hosts using the \*Extended Berkeley Packet Filter (eBPF) technology\*, and provides runtime protection. The agent is registered with a Log Analytics workspace, and used as a data pipeline. However, the audit log data isn't stored in the Log Analytics workspace. The Defender agent is deployed as an AKS Security profile.
+    
+    
      -  \*eBPF Background and Information\*: The Extended Berkeley Packet Filter (eBPF) is a powerful and versatile framework within the Linux kernel for programmatically analyzing and filtering network packets, as well as performing various other system-level tasks. Originally based on the Berkeley Packet Filter (BPF) introduced in the 1990s, eBPF expands upon its capabilities by allowing user-defined programs to run within the kernel, enabling dynamic and efficient packet processing without requiring modifications to the kernel itself.
      -  eBPF programs are written in a restricted subset of C and are loaded into the kernel, where they execute within a secure and sandboxed environment. This allows for a wide range of network-related tasks to be performed directly within the kernel, such as packet filtering, traffic monitoring, security enforcement, and even custom protocol parsing.
      -  One of the key advantages of eBPF is its versatility and performance. By executing within the kernel, eBPF programs can access and manipulate network packets directly, significantly reducing overhead compared to traditional user-space packet processing methods. Additionally, eBPF programs can be dynamically loaded and attached to various hooks within the kernel, allowing for real-time responsiveness and adaptability to changing network conditions.
@@ -43,7 +45,9 @@ The discovery process is based on snapshots taken at intervals:
 :::image type="content" source="../media/diagram-permissions-architecture-ca4595b0.png" alt-text="Diagram showing an example of the kubernetes permissions architecture.":::
  When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
- -  **Create**:<br>
+ -  **Create**:
+    
+    
      -  If the extension is enabled from Defender CSPM, Defender for Cloud creates an identity in customer environments called CloudPosture/securityOperator/DefenderCSPMSecurityOperator.<br>
      -  If the extension is enabled from Defender for Containers, Defender for Cloud creates an identity in customer environments called CloudPosture/securityOperator/DefenderForContainersSecurityOperator.
      -  Assign: Defender for Cloud assigns a built-in role called Kubernetes Agentless Operator to that identity on subscription scope. The role contains the following permissions:
@@ -52,7 +56,6 @@ The discovery process is based on snapshots taken at intervals:
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write`
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read`
      -  `Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete`
-
  -  **Discover**: Using the system assigned identity, Defender for Cloud performs a discovery of the AKS clusters in your environment using API calls to the API server of AKS.
  -  **Bind**: Upon discovery of an AKS cluster, Defender for Cloud performs an AKS bind operation by creating a ClusterRoleBinding between the created identity and the Kubernetes ClusterRole aks:trustedaccessrole:defender-containers:microsoft-defender-operator. The ClusterRole is visible via API and gives Defender for Cloud data plane read permission inside the cluster.
 
@@ -60,7 +63,7 @@ The discovery process is based on snapshots taken at intervals:
 
 Many Azure services that integrate with Azure Kubernetes Service (AKS) need access to the Kubernetes API server. To avoid granting these services admin access or making your AKS clusters public for network access, you can use the AKS Trusted Access feature.
 
-This feature gives services secure access to AKS and Kubernetes by using the Azure back end without requiring a private endpoint. Instead of relying on identities that have Microsoft Entra permissions, this feature can use your system-assigned managed identity to authenticate with the managed services and applications that you want to use with your AKS clusters.<br>
+This feature gives services secure access to AKS and Kubernetes by using the Azure back end without requiring a private endpoint. Instead of relying on identities that have Microsoft Entra permissions, this feature can use your system-assigned managed identity to authenticate with the managed services and applications that you want to use with your AKS clusters.
 
 > [!IMPORTANT]
 > AKS preview features are available on a self-service, opt-in basis. Previews are provided "as is" and "as available," and they're excluded from the service-level agreements and limited warranty. AKS previews are partially covered by customer support on a best-effort basis.
@@ -81,8 +84,12 @@ You can use Trusted Access to give explicit consent to your system-assigned mana
 
  -  An Azure account with an active subscription. Create an account for free.
  -  Resource types that support system-assigned managed identity.
+    
+    
      -  If you're using the Azure CLI, the aks-preview extension version 0.5.74 or later is required.
  -  To learn what roles to use in different scenarios, see these articles:
+    
+    
      -  Azure Machine Learning access to AKS clusters with special configurations
      -  What is Azure Kubernetes Service backup?
      -  Turn on an agentless container posture
@@ -115,8 +122,12 @@ The discovery process is based on snapshots taken at intervals:
 When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
  -  Create:
+    
+    
      -  The Defender for Cloud role MDCContainersAgentlessDiscoveryK8sRole must be added to the aws-auth ConfigMap of the EKS clusters. The name can be customized.<br>
  -  Assign: Defender for Cloud assigns the MDCContainersAgentlessDiscoveryK8sRole role the following permissions:
+    
+    
      -  eks:UpdateClusterConfig<br>
      -  eks:DescribeCluster
  -  Discover: Using the system assigned identity, Defender for Cloud performs a discovery of the EKS clusters in your environment using API calls to the API server of EKS.
@@ -140,8 +151,12 @@ The discovery process is based on snapshots taken at intervals:
 When you enable the agentless discovery for Kubernetes extension, the following process occurs:
 
  -  Create:
+    
+    
      -  The service account mdc-containers-k8s-operator is created. The name can be customized.
  -  Assign: Defender for Cloud attaches the following roles to the service account mdc-containers-k8s-operator:
+    
+    
      -  The custom role MDCGkeClusterWriteRole, which has the container.clusters.update permission
      -  The built-in role container.viewer
  -  Discover: Using the system assigned identity, Defender for Cloud performs a discovery of the GKE clusters in your environment using API calls to the API server of GKE.
