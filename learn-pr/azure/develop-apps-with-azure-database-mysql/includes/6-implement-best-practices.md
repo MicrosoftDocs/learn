@@ -39,7 +39,7 @@ It's also recommended to secure data in transit by ensuring that your app connec
 
 Because cloud environments are more likely to encounter transient faults like network connectivity interruptions or service timeouts, you should ensure that your apps implement logic to deal with these issues, typically by retrying requests after a delay.
 
-It;s a good practice to wait for five seconds before your first retry. Then, with each subsequent retry, increase the wait time gradually, up to 60 seconds. After a fixed number of retries, the app can consider the operation failed and notify you so that you can investigate the persistent error further.
+It's a good practice to wait for five seconds before your first retry. Then, with each subsequent retry, increase the wait time gradually, up to 60 seconds. After a fixed number of retries, the app can consider the operation failed and notify you so that you can investigate the persistent error further.
 
 ## Choose right compute and storage size for your database
 
