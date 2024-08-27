@@ -61,7 +61,7 @@ Azure Databricks offers a collaborative workspace where data scientists and engi
 
 The platform supports various programming languages, including **Python**, **R**, **Scala**, and **SQL**, allowing you and your team members to use your preferred tools and languages. The collaborative environment enhances productivity and fosters teamwork, as you can share notebooks, visualizations, and insights.
 
-### Manage your code version control
+### Manage your code with version control
 
 Using **version control** is essential for managing changes to your code and collaborating with your team.
 

@@ -4,12 +4,12 @@ title: Defender for Containers architecture
 metadata:
   title: Defender for Containers architecture
   description: "Defender for Containers architecture"
-  ms.date: 05/10/2024
+  ms.date: 08/27/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/7-defender-containers-architecture.md)]

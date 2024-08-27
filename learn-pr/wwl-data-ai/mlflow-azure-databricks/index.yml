@@ -4,8 +4,8 @@ metadata:
   title: Use MLflow in Azure Databricks
   description: Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models.
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/29/2023
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.service: azure-databricks
   ms.topic: module-standard-task-based
   ms.collection:
