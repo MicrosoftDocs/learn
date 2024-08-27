@@ -78,7 +78,7 @@ Azure SQL Database is available as a *Single Database* or an *Elastic Pool*.
 
 ### Single Database
 
-This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need more storage space, memory, or processing power. By default, resources are pre-allocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required.
+This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need more storage space, memory, or processing power. By default, resources are preallocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required.
 
 ### Elastic Pool
 
@@ -109,4 +109,4 @@ Advanced threat protection provides advanced security capabilities, such as vuln
 
 Auditing tracks database events and writes them to an audit log in your Azure storage account. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations.
 
-SQL Database helps secure your data by providing encryption that protects data that is stored in the database (*at rest*) and  while it is being transferred across the network (*in motion*).
+SQL Database helps secure your data by providing encryption that protects data that is stored in the database (*at rest*) and  while it's being transferred across the network (*in motion*).

@@ -43,7 +43,7 @@ Azure Database for MySQL servers provides monitoring functionality to add alerts
 
 ![Screenshot of an Azure Database for MariaDB logo](../media/mariadb-logo.png)Azure Database for MariaDB is an implementation of the MariaDB database management system adapted to run in Azure. It's based on the MariaDB Community Edition.
 
-The database is fully managed and controlled by Azure. Once you've provisioned the service and transferred your data, the system requires almost no additional administration.
+The database is fully managed and controlled by Azure. Once you've provisioned the service and transferred your data, the system requires almost no more administration.
 
 ### Benefits of Azure Database for MariaDB
 
@@ -70,6 +70,6 @@ The flexible-server deployment option for PostgreSQL is a fully managed database
 
 Azure Database for PostgreSQL is a highly available service. It contains built-in failure detection and failover mechanisms.
 
-Users of PostgreSQL will be familiar with the **pgAdmin** tool, which you can use to manage and monitor a PostgreSQL database. You can continue to use this tool to connect to Azure Database for PostgreSQL. However, some server-focused functionality, such as performing server backup and restore, aren't available because the server is managed and maintained by Microsoft.
+Users of PostgreSQL are familiar with the **pgAdmin** tool, which you can use to manage and monitor a PostgreSQL database. You can continue to use this tool to connect to Azure Database for PostgreSQL. However, some server-focused functionality, such as performing server backup and restore, aren't available because the server is managed and maintained by Microsoft.
 
 Azure Database for PostgreSQL records information about queries run against databases on the server, and saves them in a database named *azure_sys*. You query the *query_store.qs_view* view to see this information, and use it to monitor the queries that users are running. This information can prove invaluable if you need to fine-tune the queries performed by your applications.
