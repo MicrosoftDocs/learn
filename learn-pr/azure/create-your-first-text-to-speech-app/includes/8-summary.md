@@ -1,6 +1,6 @@
 In this module, you learned how Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features.
 
-You created an Azure AI services multi-service resource, which you used to create two text to speech applications:
+You created an Azure AI services multi-service resource, which you used to create text to speech applications:
 
 - A command-line application that converted plain text to an audio file.
 
