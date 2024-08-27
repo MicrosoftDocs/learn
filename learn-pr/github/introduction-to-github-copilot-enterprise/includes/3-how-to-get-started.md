@@ -2,7 +2,7 @@ To use GitHub Copilot for your enterprise organization, you must have a GitHub E
 
 - Set up a Copilot business account.
 - Set up an Enterprise account: You need a GitHub Enterprise Cloud account. If you don't have one, you can start a free trial.
-- Once GitHub Copilot Enterprise is enabled at the enterprise level, you can configure GitHub Copilot settings for each organization in your enterprise.
+- Once an admin enables GitHub Copilot Enterprise at the enterprise level, you can configure GitHub Copilot settings for each organization in your enterprise.
 
 ## Enable GitHub Copilot Enterprise for your enterprise
 
@@ -27,7 +27,7 @@ Follow these steps to enforce a policy to manage the use of GitHub Copilot Enter
 
 ### Enable access to GitHub Copilot for selected users in your organization
 
-First, complete steps 1-2 in the preceding enforce a policy steps. Then follow steps 1-3 below.
+First, complete steps 1-2 in the preceding “Enforce a policy” steps. Then follow steps 1-3 below.
 
 1. To enable GitHub Copilot for select users in your organization, select **Selected teams/users** under **User permissions**.
 1. In the **Confirm seat assignment** dialog, confirm that you want to enable GitHub Copilot for selected teams/users in your organization, then select **Confirm**.
@@ -51,13 +51,13 @@ Copilot's pull request summaries automatically generate concise overviews of pul
 
 While viewing a pull request on GitHub.com, navigate to the description field.
 
-:::image type="content" source="../media/3-open-pull-request.png" alt-text="Screenshot of the 'Open a pull request' screen with the 'Add a description' field highlighted.":::
+:::image type="content" source="../media/3-open-pull-request.png" alt-text="Screenshot of opening a pull request.":::
 
 Select the Copilot icon above the description field, then select **Summary**.
 
-:::image type="content" source="../media/3-create-pull-request.png" alt-text="Screenshot of the 'Open a pull request' screen after Copilot generates a summary in the 'Add a description' field.":::
+:::image type="content" source="../media/3-create-pull-request.png" alt-text="Screenshot of creating a pull request.":::
 
-- Copilot goes through the file changes in your pull request and generates a summary for you.
+- Copilot goes through the file changes in your pull request and generate a summary for you.
 
 Review the generated text and ensure it accurately reflects the main changes and impacts of the pull request. You can manually edit the summary to add more details or clarify specific points.
 
@@ -69,19 +69,19 @@ Copilot docset management allows organizations to create and manage custom docse
 
 To create a docset, you need to have admin rights in the repository.
 
-:::image type="content" source="../media/3-github-copilot-docsets-list.png" alt-text="Screenshot of the GitHub Copilot Docsets list with the 'Create a new docset' link highlighted.":::
+:::image type="content" source="../media/3-github-copilot-docsets-list.png" alt-text="Screenshot of GitHub Copilot Docsets list.":::
 
 Navigate to [github.com/copilot/](https://github.com/copilot/), scroll down, and select **Create a new docset**.
 
-:::image type="content" source="../media/3-create-new-docset-with-github-copilot-enterprise.png" alt-text="Screenshot of the 'Create a New Docset' screen in GitHub Copilot for Enterprise. There are fields for Owner, Docset name, Description, and Docset scope that aren't yet filled in. The 'Create Docset' button is highlighted at the bottom of the screen.":::
+:::image type="content" source="../media/3-create-new-docset-with-github-copilot-enterprise.png" alt-text="Screenshot of creating a new docset for organization with GitHub Copilot for Enterprise.":::
 
 On the **Create Docset** page, select the owner organization, enter the docset name, the docset description, and select the repositories under the docset scope.
 
-:::image type="content" source="../media/3-enter-docset-information.png" alt-text="Screenshot of the 'Create a New Docset' screen in GitHub Copilot for Enterprise. The Owner is selected, 'org-docset' is entered for the Docset name, and 'A docset covering all repos in the org' is entered in the Description field. A Docset scope of '2 Repositories' is selected.":::
+:::image type="content" source="../media/3-enter-docset-information.png" alt-text="Screenshot of filling the docset information.":::
 
 After entering all the required information, you can then select the **Create Docset** button to create your docset.
 
-:::image type="content" source="../media/3-index-docset-information.png" alt-text="Screenshot showing the message 'Docset created' and a description of the 'org-docset'. The 'Index org-docset' button is highlighted. When the button is selected, it indexes the docset information with GitHub Copilot Enterprise.":::
+:::image type="content" source="../media/3-index-docset-information.png" alt-text="Screenshot of indexing the docset information with GitHub Copilot Enterprise.":::
 
 Finally, select the **Index org-docset** button to index this docset data into Copilot to improve its understanding and response quality. The docset is ready for use by all members of your organization.
 
@@ -90,21 +90,21 @@ Finally, select the **Index org-docset** button to index this docset data into C
 Once created, developers can use docsets. Here's how:
 
 - You don't need special permissions to access existing docsets created by administrators. While you're working on your code, Copilot automatically draws upon all relevant docsets your team or organization has access to.
-- You can navigate to [github.com/copilot/](https://github.com/copilot/), if you want to directly explore the contents of a specific docset.
+- If you want to directly explore the contents of a specific docset, you can navigate to [github.com/copilot/](https://github.com/copilot/).
 
-:::image type="content" source="../media/3-select-docset-in-organization.png" alt-text="Screenshot of the 'Ask Copilot' screen showing a list of docsets and repositories. The heading 'Select a docset or repository to chat about' is next to a search box.":::
+:::image type="content" source="../media/3-select-docset-in-organization.png" alt-text="Screenshot of selecting a docset in an organization.":::
 
 Select a docset or repository from your organization's list of docsets.
 
-:::image type="content"source="../media/3-create-github-copilot-prompt-in-org-docset.png"alt-text="Screenshot of the 'Chatting about GitHub Advanced Security' screen that shows a description of the GitHub Advanced Security docset. The 'Ask Copilot' field is highlighted.":::
+:::image type="content"source="../media/3-create-github-copilot-prompt-in-org-docset.png"alt-text="Screenshot of using a creating a GitHub Copilot prompt within an org docset.":::
 
 In your selected docset page, you can use Copilot Chat to create prompts and receive responses customized to the specific docset. Here's an example of a prompt within the GitHub Advanced Security docset.
 
-:::image type="content" source="../media/3-github-copilot-response-to-docset-prompt.png" alt-text="Screenshot showing a response by GitHub Copilot to a prompt within the GitHub Advanced Security docset. The question and response are about the Dependabot tool.":::
+:::image type="content" source="../media/3-github-copilot-response-to-docset-prompt.png" alt-text="Screenshot of GitHub Copilot response for docset prompt.":::
 
 - You don't always have to visit this page separately after the first time. Copilot Chat with docsets is available on your GitHub pages.
 
-:::image type="content" source="../media/3-ask-copilot-window.png" alt-text="Screenshot of the Ask Copilot prompt that appears on GitHub pages.":::
+:::image type="content" source="../media/3-ask-copilot-window.png" alt-text="Screenshot of the Ask Copilot windows on GitHub.":::
 
 Select the up arrow to expand the Copilot Chat window.
 
@@ -112,4 +112,4 @@ Select the up arrow to expand the Copilot Chat window.
 
 You're able to create prompts freely within and outside organization docsets.
 
-Next up, we test your knowledge on the content we just learned.
+Next up, we'll test your knowledge on the content we just learned.
