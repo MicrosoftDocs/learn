@@ -1,4 +1,4 @@
-Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both  relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including PostgreSQL, MongoDB, and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who will work with the data store.
+Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both  relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including PostgreSQL, MongoDB, and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
 
 ## Azure Cosmos DB for NoSQL
 
@@ -78,7 +78,7 @@ For example, you might define a table named Customers like this:
 | 1 | 123 | Joe Jones | joe@litware.com |
 | 1 | 124 | Samir Nadoy | samir@northwind.com |
 
-You can then use the Table API through one of the language-specific SDKs to make calls to your service endpoint to retrieve data from the table. For example, the following request returns the row containing the record for *Samir Nadoy* in the table above:
+You can then use the Table API through one of the language-specific SDKs to make calls to your service endpoint to retrieve data from the table. For example, the following request returns the row containing the record for *Samir Nadoy* in the previous table:
 
 ```text
 https://endpoint/Customers(PartitionKey='1',RowKey='124')
