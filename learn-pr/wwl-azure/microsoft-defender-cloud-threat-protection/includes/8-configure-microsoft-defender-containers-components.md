@@ -126,9 +126,7 @@ When you enable the auto-provision option, a default workspace will be automatic
     
     :::image type="content" source="../media/assignments-tab-d859a246.png" alt-text="Screenshot showing assignments that are configured in the Policy definition page.":::
     
-    
-    
-    5.  Follow the **Create a new assignment with custom workspace** if the policy hasn't yet been assigned to the relevant scope. Or, follow the **Update assignment with custom workspace** if the policy is already assigned and you want to change it to use a custom workspace.
+5.  Follow the **Create a new assignment with custom workspace** if the policy hasn't yet been assigned to the relevant scope. Or, follow the **Update assignment with custom workspace** if the policy is already assigned and you want to change it to use a custom workspace.
 
 ### Create a new assignment with custom workspace
 
@@ -190,6 +188,7 @@ You can remove the extension using the REST API or a Resource Manager template a
     ```azurecli
     
     az login az account set --subscription <subscription-id> az aks update --disable-defender --resource-group <your-resource-group> --name <your-cluster-name>
+    
     
     
     
