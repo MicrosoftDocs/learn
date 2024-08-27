@@ -27,7 +27,7 @@ You can get these values from the connection string.
     The last line in the response is the connection string, which contains the endpoint for your namespace and the shared access key. It should resemble the following example:
 
     ```output
-    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxx
     ```
 
 1. Copy the connection string from Cloud Shell. You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
@@ -149,7 +149,7 @@ You can get these values from the connection string.
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string QueueName = "salesmessages";
     
             static void Main(string[] args)
