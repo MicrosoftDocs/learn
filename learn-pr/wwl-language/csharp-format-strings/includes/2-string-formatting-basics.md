@@ -131,7 +131,7 @@ Price: $123.45 (Save $50.00)
 Notice how adding the `:C` to the tokens inside of the curly braces formats the number as currency regardless of whether you use `int` or `decimal`.
 
 > [!NOTE]
-> What happens if your country/region and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/en-us/platform/try-dotnet) you'll see the following output: **`Price: ¤123.45 (Save ¤50.00)`**.  The symbol **`¤`** is used instead of the symbol for your country/region's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
+> What happens if your country/region and language isn't known? If you run the previous code in the "in-browser" .NET Editor, such as at [TrydotNet](https://dotnet.microsoft.com/platform/try-dotnet) you'll see the following output: **`Price: ¤123.45 (Save ¤50.00)`**.  The symbol **`¤`** is used instead of the symbol for your country/region's money. This is a generic symbol used to denote "currency" regardless of the *type* of currency. You see this symbol in the .NET Editor because it ignores your current location.
 
 ## How the user's country/region and language affect string formatting
 

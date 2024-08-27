@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
-  ms.service: sql-db-mi
+  ms.service: azure-sql
 title: Secure MySQL
 summary: Learn about security and encryption in Azure Database for MySQL.
 abstract: |

@@ -1,5 +1,3 @@
-
-
 AutoML is a feature of Azure Databricks that enables you to automate training and evaluation of a machine learning model using different combinations of algorithm and hyperparameter values. By using AutoML, you can reduce the effort involved in an iterative model training process and create an optimal model for your data more quickly.
 
 ## How does AutoML work?
@@ -23,4 +21,4 @@ A simple way to create a table of training data for AutoML is to upload a data f
 
 ![Screenshot of the Upload data interface for Azure Databricks.](../media/upload-table.png)
 
-AutoML generates code to handle common data preprocessing tasks; such as encoding categorical variables, scaling numeric variables, handling null values, and dealing with imbalanced datasets.
+AutoML generates code to handle common data preprocessing tasks; such as encoding categorical variables, scale numeric variables, handling null values, and deal with imbalanced datasets.
