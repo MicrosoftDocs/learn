@@ -2,7 +2,7 @@
 uid: learn.machine-learning.explore-analyze-data-r
 metadata:
   title: Explore and analyze data with R
-  description: In this module, you'll explore, analyze, and visualize data by using the R programming language.
+  description: In this module, you explore, analyze, and visualize data by using the R programming language.
   ms.date: 08/26/2024
   author: softchris
   ms.author: chnoring
@@ -12,9 +12,9 @@ metadata:
   ms.service: azure-machine-learning
   ms.collection: ce-advocates-ai-copilot
 title: Explore and analyze data with R
-summary: In this module, you'll explore, analyze, and visualize data by using the R programming language.
+summary: In this module, you explore, analyze, and visualize data by using the R programming language.
 abstract:  | 
-  In this module, you'll learn:
+  In this module, you learn:
   - Common data exploration and analysis tasks. 
   - How to use R packages such as ggplot2, dplyr, and tidyr to turn raw data into understanding, insight, and knowledge. 
 prerequisites: |
