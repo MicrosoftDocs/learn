@@ -10,7 +10,6 @@ metadata:
   manager: coxford
   ms.topic: module
   ms.service: dotnet # Edit as appropriate for your portfolio area
-  ms.technology: blazor 
 title: Introduction to Web Development with Blazor
 summary: "Discover the key features of Blazor for building your next web app."
 abstract: |
