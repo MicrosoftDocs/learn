@@ -16,21 +16,13 @@ summary: Relational database systems are a common way to store and manage transa
 abstract: |
   In this module, you learn how to:
 
-  -
+  -   Identify characteristics of relational data.
 
-  Identify characteristics of relational data.
+  -   Define normalization.
 
-  -
+  -   Identify types of SQL statement.
 
-  Define normalization.
-
-  -
-
-  Identify types of SQL statement.
-
-  -
-
-  Identify common relational database objects.
+  -   Identify common relational database objects.
 prerequisites: None
 iconUrl: /training/achievements/explore-relational-data-offerings-azure.svg
 levels:
