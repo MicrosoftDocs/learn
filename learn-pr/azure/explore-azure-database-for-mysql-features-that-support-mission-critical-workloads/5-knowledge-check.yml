@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit is a knowledge check of the Azure Database for PostgreSQL - Flexible Server module. The knowledge check explores features that support mission-critical workloads."
-  ms.date: 07/08/2024
+  ms.date: 08/27/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
@@ -42,14 +42,14 @@ quiz:
     choices:
     - content: "The server load is usually low, but occasionally high."
       isCorrect: true
-      explanation: "Correct, during low traffic the server accumulates credits used during the occasional bursts."
+      explanation: "Correct, during low traffic, the server accumulates credits used during the occasional bursts."
     - content: "The server load is usually high, but occasionally low."
       isCorrect: false
-      explanation: "The Burstable tier is not meant to handle consistently high traffic."
+      explanation: "The Burstable tier isn't meant to handle consistently high traffic."
     - content: "The server load is medium for CPU with unpredictable IOPS."
       isCorrect: false
       explanation: "The Burstable tier responds to compute bursts, not IOPS (for that, see the Autoscale IOPS feature)."
-  - content: "Pre-provisioned IOPS may be adjusted:"
+  - content: "Pre-provisioned IOPS might be adjusted:"
     choices:
     - content: "Automatically according to server load."
       isCorrect: false
@@ -67,7 +67,7 @@ quiz:
       explanation: "The application needs read-write access to its database, not a read-only copy of the other region's data."
     - content: "Read the latest transactional data in another zone."
       isCorrect: false
-      explanation: "While read replicas are quite fast, the replica is not guaranteed to be totally consistent with the primary database."
+      explanation: "While read replicas are quite fast, the replica isn't guaranteed to be totally consistent with the primary database."
     - content: "Run intensive reports during peak application traffic."
       isCorrect: true
       explanation: "This is an excellent use case for read replicas. Reports can typically tolerate seconds or even minutes of delay."
@@ -75,10 +75,10 @@ quiz:
     choices:
     - content: "Burstable Tier compute, with autoscaled IOPS."
       isCorrect: false
-      explanation: "The Burstable tier is not best suited for mission-critical applications."
+      explanation: "The Burstable tier isn't best suited for mission-critical applications."
     - content: "General-purpose tier, with maximum pre-provisioned IOPS."
       isCorrect: false
-      explanation: "While this may meet the needs of the peak hours, the IOPS are very overprovisioned outside of weekday mornings, making this solution less cost-effective."
+      explanation: "While this might meet the needs of the peak hours, the IOPS are very overprovisioned outside of weekday mornings, making this solution less cost-effective."
     - content: "Business Critical Tier compute, with autoscaled IOPS."
       isCorrect: true
       explanation: "This is the most cost-effective solution that also provides the strongest uptime and performance."
