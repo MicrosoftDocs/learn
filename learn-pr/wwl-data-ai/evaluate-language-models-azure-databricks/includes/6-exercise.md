@@ -1,5 +1,5 @@
 
-Now it's your chance to fine-tune an Azure OpenAI model in Azure Databricks.
+Now it's your chance to evaluate an Azure OpenAI model in Azure Databricks.
 
 > [!NOTE]
 > To complete this lab, you need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
