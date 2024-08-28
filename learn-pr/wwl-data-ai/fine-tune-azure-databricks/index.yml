@@ -8,6 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
+  ai-usage: ai-assisted
 title: Fine-tune language models with Azure Databricks
 summary: Fine-tuning uses Large Language Models' (LLMs) general knowledge to improve performance on specific tasks, allowing organizations to create specialized models that are more accurate and relevant while saving resources and time compared to training from scratch. 
 abstract: |
