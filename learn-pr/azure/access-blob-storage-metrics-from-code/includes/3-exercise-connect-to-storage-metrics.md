@@ -39,7 +39,8 @@ To retrieve metrics from Azure Monitor that relate to your new storage account, 
     - **Resource group**
     - **Subscription ID**
 
-    ![Screenshot of the storage account details in the Azure Portal with resource group and subscription ID values highlighted.](../media/3-obtain-rg-and-subscription-ids.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the storage account details in the Azure Portal with resource group and subscription ID values highlighted.](../media/3-obtain-rg-and-subscription-ids.png)
 
 ## Send queries to the REST API
 
