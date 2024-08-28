@@ -16,21 +16,13 @@ summary: Organizations use analytics platforms to build large scale data analyti
 abstract: |
   In this module, you learn how to:
 
-  -
+  -   Describe data warehousing architecture.
 
-  Describe data warehousing architecture.
+  -   Describe key features for data ingestion pipelines.
 
-  -
+  -   Identify common types of analytical data store and related Azure services.
 
-  Describe key features for data ingestion pipelines.
-
-  -
-
-  Identify common types of analytical data store and related Azure services.
-
-  -
-
-  Use Microsoft Fabric to ingest and analyze data.
+  -   Use Microsoft Fabric to ingest and analyze data.
 prerequisites: Before starting this module, you should have a conceptual understanding of data and databases, and be familiar with Microsoft Azure services for data workloads such as Azure Storage, Azure SQL Database, and Azure Cosmos DB.
 iconUrl: /training/achievements/examine-components-of-modern-data-warehouse.svg
 levels:

@@ -1,6 +1,6 @@
 Now that you understand a little about the architecture of a large-scale data warehousing solution, and some of the distributed processing technologies that can be used to handle large volumes of data, it's time to explore how data is ingested into an analytical data store from one or more sources.
 
-![Diagram of a pipeline](../media/pipeline.png)
+![Diagram of a pipeline.](../media/pipeline.png)
 
 On Azure, large-scale data ingestion is best implemented by creating *pipelines* that orchestrate ETL processes. You can create and run pipelines using [Azure Data Factory](https://azure.microsoft.com/services/data-factory?azure-portal=true), or you can use the pipeline capability in [Microsoft Fabric](/fabric/) if you want to manage all of the components of your data warehousing solution in a unified workspace.
 
