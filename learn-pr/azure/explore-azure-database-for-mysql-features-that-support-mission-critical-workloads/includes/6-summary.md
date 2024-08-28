@@ -1,4 +1,5 @@
-After reviewing the Wingtip Toys business requirements and Azure Database for MySQL - Flexible Server features, you're ready to configure a new database and migrate your on-premises database. Here is the summary of selections made to meet the requirements:
+After reviewing the Wingtip Toys business requirements and Azure Database for MySQL - Flexible Server features, you're ready to configure a new database and migrate your on-premises database. Here's the summary of selections made to meet the requirements:
+
 - Use Microsoft Entra ID for centralized user management.
 
 - Encrypt data at rest with a customer-managed key.
