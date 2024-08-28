@@ -39,6 +39,9 @@ small_train_dataset = tokenized_datasets["train"].shuffle(seed=42).select(range(
 small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(500))
 ```
 
+> [!Tip]
+> You can explore the [Transformers library on Hugging Face](https://huggingface.co/docs/transformers/en/index?azure-portal=true). For example, learn more about using the [GPT2Tokenizer](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2Tokenizer?azure-portal=true).
+
 ## Fine-tune an Azure OpenAI model
 
 To fine-tune an Azure OpenAI model in Azure Databricks, follow these steps:
