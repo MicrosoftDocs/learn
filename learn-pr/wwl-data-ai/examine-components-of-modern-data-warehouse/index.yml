@@ -3,7 +3,7 @@ uid: learn.wwl.examine-components-of-modern-data-warehouse
 metadata:
   title: Explore fundamentals of large-scale data analytics
   description: "Organizations use analytics platforms to build large scale data analytics solutions that generate insights and drive success. Microsoft provides multiple technologies that you can combine to build a large scale data analytics solution."
-  ms.date: 08/27/2024
+  ms.date: 08/28/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
@@ -18,19 +18,19 @@ abstract: |
 
   -
 
-  Identify common elements of a data analytics solution
+  Describe data warehousing architecture.
 
   -
 
-  Describe key features for data ingestion pipelines
+  Describe key features for data ingestion pipelines.
 
   -
 
-  Identify common types of analytical data store and related Azure services
+  Identify common types of analytical data store and related Azure services.
 
   -
 
-  Use Microsoft Fabric to ingest and analyze data
+  Use Microsoft Fabric to ingest and analyze data.
 prerequisites: Before starting this module, you should have a conceptual understanding of data and databases, and be familiar with Microsoft Azure services for data workloads such as Azure Storage, Azure SQL Database, and Azure Cosmos DB.
 iconUrl: /training/achievements/examine-components-of-modern-data-warehouse.svg
 levels:
