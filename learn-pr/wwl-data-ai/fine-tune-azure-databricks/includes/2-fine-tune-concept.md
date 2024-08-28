@@ -14,13 +14,16 @@ For example, if the goal is to fine-tune an LLM for sentiment analysis, the data
 
 The model is then retrained on this dataset, allowing it to adjust its internal parameters to better suit the specific characteristics of the new data. This retraining process usually requires fewer computational resources compared to training a model from scratch, as it builds upon the existing capabilities of the LLM rather than starting from a random initialization.
 
-### Avoid overfitting your model
+## Avoid overfitting your model
 
 Fine-tuning isn't merely a matter of retraining on a new dataset; it also involves careful consideration of various **hyperparameters** and techniques to avoid overfitting.
 
-**Overfitting** occurs when a model becomes too closely aligned with the fine-tuning data, losing its generalization ability and performing poorly on unseen data.
+**Overfitting** occurs when a model becomes too closely aligned with the fine-tuning data, losing its generalization ability and performing poorly on unseen data. You can configure the following common hyperparameters to try to mitigate the risk of overfitting:
 
-Techniques such as *learning rate scheduling*, *regularization*, and *dropout* are commonly employed during fine-tuning to mitigate this risk.
+- **Learning rate**: Determines the step size at which the model's weights are updated during training.
+- **Regularization**: Adds a penalty to the model's loss function to discourage overly complex models, helping the model learn more general patterns.
+- **Batch size**: Determines the number of training examples used in one iteration.
+- **Number of epochs**: Refers to the number of times the entire training dataset is passed through the model.
 
 It's also often beneficial to freeze certain layers of the LLM—particularly the early layers responsible for general language understanding—while only fine-tuning the later layers that are more task-specific. You can use this approach to preserve the general knowledge encoded in the model while allowing it to adapt to new, domain-specific requirements.
 
@@ -44,7 +47,7 @@ You can steer the model towards more fair and equitable outcomes, by carefully s
 
 Additionally, fine-tuning helps ensure the language model follows industry regulations, privacy standards, and ethical guidelines, which is crucial in sectors like finance, healthcare, and legal services.
 
-### Keep your model relevant
+### Fine-tune to keep your model relevant
 
 The process of fine-tuning also opens up possibilities for continuous learning and model improvement. As new data becomes available, LLMs can be periodically fine-tuned to incorporate the latest information, trends, and language usage patterns.
 
