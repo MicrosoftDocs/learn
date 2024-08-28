@@ -7,25 +7,16 @@ In this Microsoft Learn module, we'll use Visual Studio Code, Python, and Jupyte
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module][VideoWalkthrough] in a new tab.
 
-
 ## Learning objectives
 
 In this module, you will:
 
-- Import AI libraries
-- Create a [Kaggle] account
-- Download and import the [NASA Space Rocks DataSet] to use with an AI program
-- Learn the importance of cleaning and separating data
-- Discover how computers read photos as images in binary format
-- Use code to clean and separate data, read and display images, and assign classifications
-
-
-## Prerequisites
-
-- Ability to write and run introductory Python programs
-- [Visual Studio Code][VSCode] installed and with the Python extension
-- [AI libraries][AILibs] installed
-
+- Import AI libraries.
+- Create a [Kaggle] account.
+- Download and import the [NASA Space Rocks DataSet] to use with an AI program.
+- Learn the importance of cleaning and separating data.
+- Discover how computers read photos as images in binary format.
+- Use code to clean and separate data, read and display images, and assign classifications.
 
 <!-- Links -->
 [Kaggle]: https://www.kaggle.com

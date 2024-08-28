@@ -1,12 +1,10 @@
 Now that you have the libraries downloaded, you can begin to import them into a Jupyter Notebook file.
 
-
 ## Prerequisites
 
 - The AI libraries are installed as described in [Download Python AI libraries][AILibs].
 
 - The [Python extension for Visual Studio][VSCodePython] is installed, so Jupyter Notebook files run in the interactive Python environment.
-
 
 ## Add import statements for the libraries
 
@@ -18,7 +16,7 @@ Follow these steps to add code to import the AI libraries. Insert each new secti
 
 1. Make sure you're running the correct Jupyter kernel. At the upper-right and lower-left corners of Visual Studio, change to the Anaconda environment `('myenv')` that you created in the last module.
 
-1. The first library to import is **Matplotlib**. You use this library to plot your data. Add the following code in new cell in your Jupyter Notebook file, and then run the code. 
+1. The first library to import is **Matplotlib**. You use this library to plot your data. Add the following code in new cell in your Jupyter Notebook file, and then run the code.
 
    ```python
    import matplotlib.pyplot as plt
@@ -61,10 +59,9 @@ Follow these steps to add code to import the AI libraries. Insert each new secti
    %config InlineBackend.figure_format = 'retina'
    ```
 
-Great job! You've added code to import all the libraries you'll need for your AI program. 
-
+Great job! You've added code to import all the libraries you'll need for your AI program.
 
 <!-- Links -->
 
 [AILibs]: /training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
-[VSCodePython]: https://aka.ms/LearnOnVSCode?azure-portal=true
+[VSCodePython]: https://marketplace.visualstudio.com/items?itemName=ms-python.python
