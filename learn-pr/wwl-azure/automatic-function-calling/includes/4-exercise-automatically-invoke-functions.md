@@ -1,4 +1,4 @@
-In this exercise, you practice using prompts to automtically call functions that can recommend songs to the user, or add a song to the list of recently played music. Let's get started!
+In this exercise, you practice using prompts to automatically call functions that can recommend songs to the user, or add a song to the list of recently played music. Let's get started!
 
 1. Open the Visual Studio Code project you used in the previous exercise.
 
@@ -28,7 +28,7 @@ In this exercise, you practice using prompts to automtically call functions that
     Console.WriteLine(result);
     ```
 
-    In this code, you create a function from a prompt that tell the LLM how to suggest a song. Afterwards, you invoke a prompt with the auto function calling setting enabled. The kernel is able to run the function and supply the correct parameters to complete the prompt.
+    In this code, you create a function from a prompt that tells the LLM how to suggest a song. Afterwards, you invoke a prompt with the auto function calling setting enabled. The kernel is able to run the function and supply the correct parameters to complete the prompt.
 
 1. In the terminal, enter `dotnet run` to run your code.
 
