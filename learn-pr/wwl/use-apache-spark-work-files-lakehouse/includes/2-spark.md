@@ -10,8 +10,8 @@ A Spark pool consists of compute *nodes* that distribute data processing tasks. 
 
 As shown in the diagram, a Spark pool contains two kinds of node:
 
-- A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
-- The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
+1. A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
+2. The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
 
 The Spark pool uses this distributed compute architecture to access and process data in a compatible data store - such as a data lakehouse based in OneLake.
 
