@@ -16,27 +16,17 @@ summary: Azure Storage is a core service in Microsoft Azure that is commonly use
 abstract: |
   In this module, you learn how to:
 
-  -
+  -   Describe features and capabilities of Azure blob storage.
 
-  Describe features and capabilities of Azure blob storage.
-
-  -
-
-  Describe features and capabilities of Azure Data Lake Storage Gen2.
+  -   Describe features and capabilities of Azure Data Lake Storage Gen2.
 
   -   Describe features and capabilities of Microsoft OneLake in Fabric.
 
-  -
+  -   Describe features and capabilities of Azure file storage.
 
-  Describe features and capabilities of Azure file storage.
+  -   Describe features and capabilities of Azure table storage.
 
-  -
-
-  Describe features and capabilities of Azure table storage.
-
-  -
-
-  Provision and explore an Azure Storage account.
+  -   Provision and explore an Azure Storage account.
 prerequisites: Before starting this module, you should have some familiarity with Microsoft Azure concepts and the Azure portal.
 iconUrl: /training/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
 levels:
