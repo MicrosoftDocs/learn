@@ -210,14 +210,14 @@ To see an example of this type of improvement in action, use the following steps
     StreamWriter streamWriter = new StreamWriter(fileStream, Encoding.UTF8);
     ```
 
-1. Add the following lines of code after those two lines:
+1. Add the following lines of code directly after those two lines. Make sure both lines match the indentation of the previous lines:
 
     ```csharp
     var phraseList = PhraseListGrammar.FromRecognizer(speechRecognizer);
     phraseList.AddPhrase("thou seest");
     ```
 
-    These lines will enable the speech recognition engine to detect the old English phrase from Shakespeare's play.
+    These lines enable the speech recognition engine to detect the old English phrase from Shakespeare's play.
 
 1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
