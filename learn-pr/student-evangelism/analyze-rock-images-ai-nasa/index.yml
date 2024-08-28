@@ -25,7 +25,7 @@ abstract: |
  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
  - Ability to write and run introductory Python programs
- - [Visual Studio Code,](https://aka.ms/LearnOnVSCode?azure-portal=true)with the [Python extension installed](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+ - [Visual Studio Code,](https://aka.ms/LearnOnVSCode?azure-portal=true) with the [Python extension installed](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
  - [Artificial intelligence libraries](/training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) installed 
 iconUrl: /training/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
 levels:
@@ -33,6 +33,7 @@ levels:
 roles:
 - student
 - data-scientist
+products:
 - vs-code
 subjects:
 - artificial-intelligence
