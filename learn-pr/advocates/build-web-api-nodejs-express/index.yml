@@ -14,6 +14,7 @@ metadata:
   ms.date: 02/12/2024
   author: diberry
   ms.author: diberry
+  manager: mcleans
   ms.topic: module
   ms.service: azure-javascript
   ms.custom: team=nextgen

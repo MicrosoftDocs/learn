@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
-  ms.date: 07/08/2024
+  ms.date: 08/27/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
@@ -15,7 +15,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "An e-commerce company has developed its client app using PHP, hosted it on an on-premises Apache server, and connected it to a MySQL server in the back end. With a growing number of features and active customer base, app performance has been severely affected to the point that the company cannot meet customers’ demands during peak traffic. The teams that are working on specific features and services are experiencing difficulty with managing, monitoring, and making changes to their parts of the app. What is the best solution to help mitigate these issues?"
+  - content: "An e-commerce company has developed its client app using PHP, hosted it on an on-premises Apache server, and connected it to a MySQL server in the back end. With a growing number of features and active customer base, app performance has been severely affected to the point that the company can't meet customers’ demands during peak traffic. The teams that are working on specific features and services are experiencing difficulty with managing, monitoring, and making changes to their parts of the app. What is the best solution to help mitigate these issues?"
     choices:
     - content: "Migrate the app to Azure and host it on Azure Virtual Machines. Then migrate the on-premises MySQL server to a managed VM on Azure."
       isCorrect: false
@@ -41,14 +41,14 @@ quiz:
     choices:
     - content: "Server name, resource group name, admin username, and password."
       isCorrect: false
-      explanation: "Try again. The resource group name is not required to connect to a database on a MySQL flexible server."
+      explanation: "Try again. The resource group name isn't required to connect to a database on a MySQL flexible server."
     - content: "Server name, database name, admin username, and password."
       isCorrect: true
       explanation: "Correct. These four pieces of information are sufficient to connect to a database in MySQL flexible server."
     - content: "Server name, MySQL version, database name, admin username, and password."
       isCorrect: false
-      explanation: "Try again. MySQL version is not required to connect to a database on a MySQL flexible server."
-  - content: "An app is facing intermittent connectivity issues while connecting to an Azure Database for MySQL flexible server. These issues occur randomly and cannot be reproduced at will. What's the most likely cause of these issues and the best solution to mitigate them?"
+      explanation: "Try again. MySQL version isn't required to connect to a database on a MySQL flexible server."
+  - content: "An app is facing intermittent connectivity issues while connecting to an Azure Database for MySQL flexible server. These issues occur randomly and can't be reproduced at will. What's the most likely cause of these issues and the best solution to mitigate them?"
     choices:
     - content: "These are transient faults; implement retry logic."
       isCorrect: true
@@ -63,7 +63,7 @@ quiz:
     choices:
     - content: "Burstable"
       isCorrect: false
-      explanation: "Try again. The Burstable tier is best suited for test and development workloads that do not require full CPU continuously."
+      explanation: "Try again. The Burstable tier is best suited for test and development workloads that don't require full CPU continuously."
     - content: "General Purpose"
       isCorrect: true
       explanation: "Correct. The General Purpose tier is the best option for business workloads such as enterprise web applications."
