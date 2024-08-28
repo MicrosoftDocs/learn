@@ -10,8 +10,8 @@ A Spark pool consists of compute *nodes* that distribute data processing tasks. 
 
 As shown in the diagram, a Spark pool contains two kinds of node:
 
-1. A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
-1. The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
+- A *head* node in a Spark pool coordinates distributed processes through a *driver* program.
+- The pool includes multiple *worker* nodes on which *executor* processes perform the actual data processing tasks.
 
 The Spark pool uses this distributed compute architecture to access and process data in a compatible data store - such as a data lakehouse based in OneLake.
 
@@ -56,7 +56,7 @@ Microsoft Fabric supports multiple Spark runtimes, and will continue to add supp
 
 You can create custom environments in a Fabric workspace, enabling you to use specific Spark runtimes, libraries, and configuration settings for different data processing operations.
 
-![Screenshot of the ENvironment page in Microsoft Fabric.](../media/spark-environment.png)
+![Screenshot of the Environment page in Microsoft Fabric.](../media/spark-environment.png)
 
 When creating an environment, you can:
 
