@@ -1,4 +1,4 @@
-In this section, we access our virtual machine remotely to update the currently installed packages. We also install a Python development environment and configure it with the prerequisite software to enable execution of the ONNX runtime. To satisfy the NVIDIA Triton Inference Server, we pull a container with a full installation of the tooling to allow us to execute an inference workload on our virtual machine.
+In this section, we access our virtual machine remotely to update the currently installed packages. We also install a Python development environment and configure it with the prerequisite software to enable execution of the Open Neural Network Exchange (ONNX) runtime. To satisfy the NVIDIA Triton Inference Server, we pull a container with a full installation of the tooling to allow us to execute an inference workload on our virtual machine.
 
 ## Install prerequisites and NVIDIA Triton Inference Server
 
@@ -85,7 +85,7 @@ In this section, we access our virtual machine remotely to update the currently 
 
     :::image type="content" source="../media/3-docker-pull.png" alt-text="A screenshot showing the docker pull command in progress." lightbox="../media/3-docker-pull.png":::
 
-1. Now we’re ready to copy the `demo` directory over to the virtual machine. Download the [demo.zip file](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/demo.zip) from the repository. Unzip the file locally on your PC. Open a command prompt window, either in the utility, or open another window in Windows Terminal. Depending on where you unzipped the files, run the following command in the CLI:
+1. Now we’re ready to copy the `demo` directory over to the virtual machine (VM). Download the [demo.zip file](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/demo.zip) from the repository. Unzip the file locally on your PC. Open a command prompt window, either in the utility, or open another window in Windows Terminal. Depending on where you unzipped the files, run the following command in the CLI:
 
     ```bash
     scp -r <path to unzipped>/demo <your username>@<x.x.x.x vm IP address>:/home/<your username>/
