@@ -26,5 +26,6 @@ modules:
 - learn.wwl.introduction-language-models-databricks
 - learn.wwl.retrieval-augmented-generation-azure-databricks
 - learn.wwl.multistage-reasoning-azure-databricks
+- learn.wwl.fine-tune-azure-databricks
 trophy:
   uid: learn.wwl.implement-generative-ai-engineering-azure-databricks.trophy

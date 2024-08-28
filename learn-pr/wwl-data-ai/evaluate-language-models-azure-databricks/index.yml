@@ -15,7 +15,6 @@ abstract: |
   - Compare LLM and traditional ML evaluations.
   - Describe the relationship between LLM evaluation and evaluation of entire AI systems.
   - Describe generic LLM evaluation metrics like accuracy, perplexity, and toxicity.
-  - Describe the need for more-specific LLM evaluations related to tasks and needs.
   - Describe LLM-as-a-judge for evaluation.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
@@ -28,8 +27,10 @@ products:
 - azure-databricks
 units:
 - learn.wwl.evaluate-language-models-azure-databricks.introduction
-- learn.wwl.evaluate-language-models-azure-databricks.
-
+- learn.wwl.evaluate-language-models-azure-databricks.compare-evaluations
+- learn.wwl.evaluate-language-models-azure-databricks.ai-systems
+- learn.wwl.evaluate-language-models-azure-databricks.standard-metrics
+- learn.wwl.evaluate-language-models-azure-databricks.language-model-judge
 - learn.wwl.evaluate-language-models-azure-databricks.exercise
 - learn.wwl.evaluate-language-models-azure-databricks.knowledge-check
 - learn.wwl.evaluate-language-models-azure-databricks.summary
