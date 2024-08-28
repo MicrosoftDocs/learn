@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.fine-tune-azure-databricks.vector-search
-title: Find relevant data with vector search
+uid: learn.wwl.fine-tune-azure-databricks.how-to-fine-tune
+title: Fine-tune an Azure OpenAI model
 metadata:
-  title: Find relevant data with vector search
-  description: "Find relevant data with vector search"
-  ms.date: 08/12/2024
+  title: Fine-tune an Azure OpenAI model
+  description: "Fine-tune an Azure OpenAI model"
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-vector-search.md)]
+  [!include[](includes/4-how-to-fine-tune.md)]

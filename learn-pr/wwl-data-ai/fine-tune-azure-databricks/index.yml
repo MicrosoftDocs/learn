@@ -9,13 +9,12 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Fine-tuning language models with Azure Databricks
-summary: Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of generative models by integrating external information retrieval mechanisms. When you use both generative models and retrieval systems, RAG dynamically fetches relevant information from external data sources to augment the generation process, leading to more accurate and contextually relevant outputs. 
+summary: Fine-tuning leverages LLMs' general knowledge to improve performance on specific tasks, allowing organizations to create specialized models that are more accurate and relevant while saving resources and time compared to training from scratch. 
 abstract: |
   In this module, you learn how to:
-  - Set up a RAG workflow.
-  - Prepare your data for RAG.
-  - Retrieve relevant documents with vector search.
-  - Improve model accuracy by reranking your search results.
+  - Understand when to use fine-tuning.
+  - Prepare your data for fine-tuning.
+  - Fine-tune an Azure OpenAI model.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
 iconUrl: /learn/achievements/describe-azure-databricks.svg
@@ -27,10 +26,9 @@ products:
 - azure-databricks
 units:
 - learn.wwl.fine-tune-azure-databricks.introduction
-- learn.wwl.fine-tune-azure-databricks.workflow
+- learn.wwl.fine-tune-azure-databricks.fine-tune-concept
 - learn.wwl.fine-tune-azure-databricks.prepare-data
-- learn.wwl.fine-tune-azure-databricks.vector-search
-- learn.wwl.fine-tune-azure-databricks.ranking
+- learn.wwl.fine-tune-azure-databricks.how-to-fine-tune
 - learn.wwl.fine-tune-azure-databricks.exercise
 - learn.wwl.fine-tune-azure-databricks.knowledge-check
 - learn.wwl.fine-tune-azure-databricks.summary

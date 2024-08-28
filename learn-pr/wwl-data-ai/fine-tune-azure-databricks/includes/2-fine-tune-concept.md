@@ -55,3 +55,17 @@ Moreover, fine-tuning can be applied iteratively, allowing for gradual improveme
 Fine-tuning LLMs lets you customize them for specific tasks, domains, and ethical considerations. By adapting pretrained models to specialized datasets, you achieve more accurate, reliable, and context-aware performance across various applications.
 
 Whether it's enhancing customer support, improving medical diagnosis, or mitigating bias, fine-tuning offers a practical path to unlocking the full potential of LLMs in real-world scenarios.
+
+## Choose a framework to fine-tune
+
+When you decide you want to have a fine-tuned model to meet your specific requirements, you can choose the framework you prefer to work with. Some options for frameworks with which you can fine-tune a language model. For example, you can opt to integrate Azure Databricks with Azure OpenAI models to fine-tune a model, or you can choose to work with an open-source framework like Hugging Face Transformers.
+
+**Azure Open AI** is a service that allows you to use the capabilities of OpenAI's models within the Azure ecosystem. By integrating Azure Databricks with Azure OpenAI, you can fine-tune models to better suit your specific needs, taking advantage of the scalability and flexibility of the Azure platform.
+
+> [!Tip]
+> Learn about the [which OpenAI models you can fine-tune](/azure/ai-services/openai/concepts/models#fine-tuning-models?azure-portal=true).
+
+**Hugging Face Transformers** is an open-source framework for deep learning created by Hugging Face. It provides APIs and tools to download state-of-the-art pretrained models and further tune them to maximize performance. These models support common tasks in different modalities, such as natural language processing, computer vision, audio, and multi-modal applications.
+
+> [!Tip]
+> Learn more about [Hugging Face Transformers](/azure/databricks/machine-learning/train-model/huggingface/?azure-portal=true).
