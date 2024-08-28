@@ -8,6 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
+  ai-usage: ai-assisted
 title: Evaluate language models with Azure Databricks
 summary: Learn to compare Large Language Model (LLM) and traditional Machine Learning (ML) evaluations, understand their relationship with AI system evaluation, and explore various LLM evaluation metrics and specific task-related evaluations.
 abstract: |
