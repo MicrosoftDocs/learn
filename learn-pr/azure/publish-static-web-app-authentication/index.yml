@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom: team=nextgen
   ms.service: azure-static-web-apps
-  manager: mijacobs
+  manager: susanpotter
 title: Authenticate users with Azure Static Web Apps
 summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
 abstract: |
