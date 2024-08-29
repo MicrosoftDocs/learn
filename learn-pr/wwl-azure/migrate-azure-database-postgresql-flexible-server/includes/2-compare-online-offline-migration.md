@@ -10,7 +10,7 @@ The two most common methods for an offline migration activity are: either a back
 
 Offline migrations typically result in longer periods of downtime for the system because the duration needed to perform the data migration activity. This downtime grows proportionally based on the volume of data to transfer during the migration. Bandwidth is a finite resource and only so much data can be transferred per-second.
 
-There are some optimizations that we can make for offline migrations that can minimize the amount of downtime that we have to deal with. However, these optimizations normally involves an increase in the complexity of the migration and therefore the risks of something to go wrong. It's about finding the balance between complexity, risk, and allowable downtime.
+There are some optimizations that we can make for offline migrations that can minimize the amount of downtime that we have to deal with. However, these optimizations normally involve an increase in the complexity of the migration and therefore the risks of something to go wrong. It's about finding the balance between complexity, risk, and allowable downtime.
 
 ## Online migration characteristics
 

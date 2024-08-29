@@ -15,7 +15,7 @@ Each availability zone consists of one or more data centers. Availability zones 
 
 With high availability, data is duplicated all the time the database is in use, providing an up-to-date copy of the original. If there's a crash, the replica can be used in place of the original. Replication has a **primary** server and a **standby** server. The **primary** server sends WAL log files to the **standby** server, which receives the WAL log files.
 
-The standby server reports back to the primary server with information such as the last write-ahead log it wrote, and the last position flushed to disk, etc. To define the minimum frequency for the WAL receiver to send back a report, set the **wal_receiver_status_interval** parameter. The **max_replication_slots** parameter defines the maximum number of replication slots that the server can be support. When **wal_level** is set to REPLICA, **max_replication_slots** must be at least one, however, the allowed value range is between and 2 and 262,143.
+The standby server reports back to the primary server with information such as the last write-ahead log it wrote, and the last position flushed to disk, etc. To define the minimum frequency for the WAL receiver to send back a report, set the **wal_receiver_status_interval** parameter. The **max_replication_slots** parameter defines the maximum number of replication slots that the server can support. When **wal_level** is set to REPLICA, **max_replication_slots** must be at least one, however, the allowed value range is between and 0 and 262,143.
 
 The **max_wal_senders** parameter sets the maximum number of WAL sender processes.
 
@@ -46,9 +46,9 @@ Logical decoding also uses data sent to the write-ahead log. As the name suggest
 
 Logical decoding might be used for auditing, analytics, or any other reason you might be interested in knowing what changed, and when it changed.
 
-Logical decoding extracts changes from all tables in the database. It differs from replication in that it can't send these changes to another PostgreSQL instances. Instead, a PostgreSQL extension is plugin to stream the changes.
+Logical decoding extracts changes from all tables in the database. It differs from replication in that it can't send these changes to another PostgreSQL instances. Instead, a PostgreSQL extension provides an output plugin to stream the changes.
 
-Logical decoding allows the contents of the write-ahead log to be decoded into an easy-to-understand format, which can be interpreted without knowledge of the database structure. Azure Database for PostgreSQL supports logical decoding and the **wal2json** plugin, which is installed on Azure Database for Postgres servers.
+Logical decoding allows the contents of the write-ahead log to be decoded into an easy-to-understand format, which can be interpreted without knowledge of the database structure. Azure Database for PostgreSQL supports logical decoding using the **wal2json** extension, which is installed on Azure Database for Postgres servers.
 
 Other extensions can be used, such as the pglogical extension, which allows logical streaming replication.
 

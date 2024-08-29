@@ -11,4 +11,4 @@ metadata:
   ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-cache-data-redis.md)]
+  [!include[](includes/6-exercise-cache-data-redis.md)]

@@ -47,7 +47,7 @@ In the previous exercise, we defined default values for resource group and locat
 1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like this:
 
     ```output
-   "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
+   "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=xxxxxxxxxxx"
     ```
 
 1. Run the following command to create a container called **messages** in your storage account. Use the **connectionString** value you copied in the previous step.

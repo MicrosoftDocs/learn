@@ -5,8 +5,8 @@ metadata:
   title: Register and serve models with MLflow
   description: Register and serve models with MLflow
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/29/2023
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
