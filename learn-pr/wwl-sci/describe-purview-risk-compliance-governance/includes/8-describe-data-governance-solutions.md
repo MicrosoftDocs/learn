@@ -9,7 +9,7 @@ The Microsoft Purview governance portal provides a unified data governance servi
 - Enable data curators to manage and secure your data estate.
 - Empower data consumers to find valuable, trustworthy data.
 
-:::image type="content" source="../media/purview-governance.png" lightbox="../media/purview-governance.png" alt-text="Screenshot of Microsoft Purview high level architecture. Data Map is the foundation layer.  The layer above includes data catalog, data sharing, data estate insights, and data policy.  The layer above includes data producers and consumers and data officers.":::
+:::image type="content" source="../media/purview-governance-classic.png" lightbox="../media/purview-governance-classic.png" alt-text="Screenshot of Microsoft Purview high level architecture. Data Map is the foundation layer.  The layer above includes data catalog, data sharing, data estate insights, and data policy.  The layer above includes data producers and consumers and data officers.":::
 
 ### Data Map
 
