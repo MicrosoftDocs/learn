@@ -46,6 +46,6 @@ quiz:
     - content: "It's denied by default."
       isCorrect: true
       explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
-    - content: "It's checked again at a later date."
+    - content: "It's logged for analysis."
       isCorrect: false
       explanation: "Incorrect. Network traffic is denied by default."
