@@ -14,9 +14,9 @@ title: Explore brain design patterns
 summary: In this module, you'll learn about the main Autonomous AI brain design patterns that solve most of the Machine Teaching challenges. You'll also learn when to best use them individually or combined.
 abstract: | 
   After completing this module, you'll be able to:
-  - Design Autonomous AI brains for an industrial application
-  - Describe the benefits and usage of brain design patterns
-  - Apply best practices of Machine Teaching to solve industrial business challenges
+  - Design Autonomous AI brains for an industrial application.
+  - Describe the benefits and usage of brain design patterns.
+  - Apply best practices of Machine Teaching to solve industrial business challenges.
 
   "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: | 
