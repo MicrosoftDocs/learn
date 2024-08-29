@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: learning-path
-  ms.service: semantic-kernel
 title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
 prerequisites: |
   -   Experience programming in C#.
