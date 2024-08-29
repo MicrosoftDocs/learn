@@ -4,12 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/05/2024
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Incorrect. It's possible to implement the same logic in Azure Logic Apps. However, because the team already invested time in building the service in C#, they can use the same code in an Azure function."
+      explanation: "Incorrect. It's possible to implement the same logic in Azure Logic Apps. However, because the team has already invested time in building the service in C#, they can use the same code in an Azure function."
     - content: "Azure Functions"
       isCorrect: true
-      explanation: "Correct. The Tailwind Traders development team already wrote the logic in C#. It makes sense to copy the relevant C# code from the Windows service and port it to an Azure function. The developers can bind the function to trigger each time a new message appears on a specific queue."
+      explanation: "Correct. The Tailwind Traders development team has already written the logic in C#. It makes sense to copy the relevant C# code from the Windows service and port it to an Azure function. The developers can bind the function to trigger each time a new message appears on a specific queue."
     - content: "Azure Virtual Machines"
       isCorrect: false
       explanation: "Incorrect. Deploying virtual machines isn't the best solution in this scenario."
