@@ -6,4 +6,4 @@ Now it's your chance to evaluate an Azure OpenAI model in Azure Databricks.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2284131&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2284709&azure-portal=true)
