@@ -2,8 +2,6 @@
 
 Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. Admins can enable their organization to know its data through data classification and explorer capabilities available in the Microsoft Purview portal.
 
-
-
 ### Sensitive information types
 
 Sensitive information types (SIT) are pattern-based classifiers. They have set patterns that can be used to identify them. For example, an identification number in a country/region may be based on a specific pattern, like this:
@@ -23,7 +21,7 @@ Refer to [Sensitive information type entity definitions](/microsoft-365/complian
 
 Data classification in Microsoft Purview also supports the ability to create custom sensitive information types to address organization-specific requirements. For example, an organization may need to create sensitive information types to represent employee IDs or project numbers.
 
-Also supported is exact data match (EDM) classification. EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information.
+Also supported is exact data match (EDM) classification. EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. In the Microsoft Purview portal sensitive information types are referred to as **EDM classifiers**.
 
 Sensitive information types can be used with sensitivity labels, retention labels, and across many Microsoft Purview and Microsoft Priva Solutions.
 

@@ -12,8 +12,8 @@ title: Describe the Data Security solutions of Microsoft Purview
 summary: "Describe the Data Security solutions of Microsoft Purview."
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe how Microsoft Purview enables organizations to identify sensitive information.
-    - Describe how Microsoft Purview enables organizations to protect their data.
+    - Describe how Microsoft Purview enables organizations to identify and classify sensitive information.
+    - Describe how Microsoft Purview enables organizations to protect their data with sensitivity labels and policies.
     - Describe how Microsoft Purview solutions enable organization to detect risky behavior and prevent data loss.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
@@ -32,10 +32,9 @@ subjects:
 units:
 - learn.describe-purview-data-solution.introduction
 - learn.describe-purview-data-solution.identify-sensitive-data
+- learn.describe-purview-data-solutions.describe-sensitivity-labels-policies
 - learn.describe-purview-data-solution.data-loss-prevention
 - learn.describe-purview-data-solution.insider-risk-management
-- learn.describe-purview-data-solution.information-barriers
-- learn.describe-purview-data-solution.privileged-access-management
 - learn.describe-purview-data-solution.knowledge-check
 - learn.describe-purview-data-solution.summary
 badge:

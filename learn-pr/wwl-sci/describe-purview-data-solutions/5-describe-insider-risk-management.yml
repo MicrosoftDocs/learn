@@ -11,4 +11,4 @@ metadata:
   ms.service: purview
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-describe-insider-risk-management.md)]
+  [!include[](includes/5-describe-insider-risk-management.md)]

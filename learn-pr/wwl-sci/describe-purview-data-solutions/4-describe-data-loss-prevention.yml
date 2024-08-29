@@ -11,4 +11,4 @@ metadata:
   ms.service: purview
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-describe-data-loss-prevention.md)]
+  [!include[](includes/4-describe-data-loss-prevention.md)]
