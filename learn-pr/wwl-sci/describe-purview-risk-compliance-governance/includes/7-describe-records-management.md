@@ -9,7 +9,7 @@ Organizations of all types require a management solution to manage regulatory, l
 - Proof of records deletion.
 - Exporting information about disposed items.
 
-When content is labeled as a record, the following happens:
+When content is labeled as a record, by using a retention label, the following happens:
 
 - Restrictions are put in place to block certain activities.
 - Activities are logged.
@@ -17,7 +17,7 @@ When content is labeled as a record, the following happens:
 
 To enable items to be marked as records, an administrator sets up retention labels.
 
-:::image type="content" source="../media/7-mark-items-record.png" alt-text="An admin can choose for items to be marked as records when configuring a policy.":::
+:::image type="content" source="../media/mark-items-record.png" alt-text="An admin can choose for items to be marked as records when configuring a policy.":::
 
 Items such as documents and emails can then be marked as records based on those retention labels.
 Items might be marked as records, but they can also be shown as regulatory records. Regulatory records provide other controls and restrictions such as:
@@ -25,7 +25,7 @@ Items might be marked as records, but they can also be shown as regulatory recor
 - A regulatory label can’t be removed when an item has been marked as a regulatory record.
 - The retention periods can’t be made shorter after the label has been applied.
 
-For more information on comparing, use the [Compare restrictions for what actions are allowed or blocked section](/microsoft-365/compliance/records-management) of the documentation.
+For more information on comparing restrictions between records and regulatory records, see the section, "Compare restrictions for what actions are allowed or blocked section" in the article "Learn about records management", linked in the summary and resources unit of this module.
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 

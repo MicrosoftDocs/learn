@@ -12,3 +12,4 @@
 - [Compliance Manager regulations list](/purview/compliance-manager-regulations-list)
 - [Learn about communication compliance](/purview/communication-compliance)
 - [Learn about retention policies and retention labels](/purview/retention?tabs=table-overriden)
+- [Learn about records management](/purview/records-management)
