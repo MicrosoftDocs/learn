@@ -4,16 +4,15 @@ GitHub Copilot Enterprise builds the power of generative AI into an editor exten
 
 ## GitHub Copilot Enterprise Features
 
-Let's learn about the new features that come with GitHub Copilot Enterprise. 
+Let's learn about the new features that come with GitHub Copilot Enterprise.
 
 In this section we’ll be going over the following:
- - Knowledge bases and custom models
- - Chat customization to your codebase
- - Pull request summaries
- - Documentation search and summaries using docsets
- - Code review
 
-
+- Knowledge bases and custom models
+- Chat customization to your codebase
+- Pull request summaries
+- Documentation search and summaries using docsets
+- Code review
 
 ### Knowledge bases and custom models
 
@@ -68,7 +67,7 @@ Just like in a code editor, Copilot can explain selected code snippets throughou
 
 Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copilot Business, and GitHub Copilot for Individuals.
 
-|GitHub Copilot Enterprise|GitHub Copilot for Business| GitHub Copilot for Individual|
+|   | GitHub Copilot Enterprise|GitHub Copilot for Business| GitHub Copilot for Individual|
 |---------------------------------------------------------|---|---|
 |**Collaborative Chat within pull requests**| ✓ | ✕ | ✕ |
 |**Lives on Github.com**| ✓ | ✓ | ✓ |
