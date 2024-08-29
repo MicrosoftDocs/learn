@@ -34,7 +34,7 @@ The content is now **Blocked** and was rejected by the filter in the **Hate** ca
 
 ## Violent content with misspelling
 
-We can’t anticipate that all text content from our customers will be free of spelling errors. Fortunately, the **Moderate text content** tool can detect harmful content even if the content has spelling errors. Let’s test this capability on more customer feedback about an incident with a racoon.
+We can’t anticipate that all text content from our customers is going to be free of spelling errors. Fortunately, the **Moderate text content** tool can detect harmful content even if the content has spelling errors. Let’s test this capability on more customer feedback about an incident with a racoon.
 
 1. In the **Test** box, enter the following content:
 
@@ -43,11 +43,11 @@ We can’t anticipate that all text content from our customers will be free of s
 1. Set all **Threshold levels** to **Medium**.
 1. Select **Run test**.
 
-Although the content is **Allowed**, the **Severity level** for **Violence** is **Low**. You could adjust the **Threshold level** for **Violence** to try to block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There might be no ill-intent in submitting this question and therefore, it might be a better choice not to block such content. As the developer, consider various scenarios where such content might be OK before deciding to adjust the filter and block similar content.
+Although the content is **Allowed**, the **Severity level** for **Violence** is **Low**. You could adjust the **Threshold level** for **Violence** to try to block such content, however, should we? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent. The customer hopes to receive guidance on how to clean the cooker. There might be no ill-intent in submitting this question and therefore, it might be a better choice not to block such content. As the developer, consider various scenarios where such content might be OK before deciding to adjust the filter and block similar content.
 
 ## Run a bulk test
 
-So far, we’ve tested text content for singular isolated text content. However, if we have a bulk dataset of text content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
+So far, we tested text content for singular isolated text content. However, if we have a bulk dataset of text content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
 
 We have a bulk dataset of statements provided by both customers and the support agent. The dataset also includes fabricated harmful statements to test the model’s ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful. The data set consists of statements provided by customers and customer support agents. Let’s do another test round but this time with the data set!
 
@@ -59,11 +59,11 @@ We have a bulk dataset of statements provided by both customers and the support 
 
 For bulk tests, we’re provided with a different assortment of test results. First, we’re provided with the proportion of **Allowed** vs. **Blocked** content. In addition, we also receive a **Precision**, **Recall**, and **F1 Score** metric.
 
-The **Precision** metric reveals how much of the content the model identified as harmful is actually harmful. It’s a measurement of how precise/accurate the model is. The maximum value is **1**.
+The **Precision** metric reveals how much of the content the model identified as harmful is actually, harmful. It’s a measurement of how precise/accurate the model is. The maximum value is **1**.
 
 The **Recall** metric reveals how much of the actual harmful content the model correctly identified. It’s a measurement of the model's ability to identify actual harmful content. The maximum value is **1**.
 
-The **F1 Score** metric is a function of **Precision** and **Recall**. It's needed when you seek a balance between Precision and Recall. The maximum value is **1**.
+The **F1 Score** metric is a function of **Precision** and **Recall**. The metric is needed when you seek a balance between **Precision** and **Recall**. The maximum value is **1**.
 
 We’re also able to view each record and the **Severity level** across each enabled category. The **Judgment** column consists of the following:
 

@@ -4,7 +4,7 @@ The first step in moderating content with Azure AI Content Safety within the Con
 
 The Azure AI hub resource is the top-level Azure resource for Azure AI Studio and provides a working environment for a team to build and manage AI applications. In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring. Use the following steps to create an Azure AI Hub resource.
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Manage** and select **+ New hub**.
+1. Within [Azure AI Studio](https://ai.azure.com/), in the menu under **Management** select **All hubs**. Then select **+ New hub**.
 1. Complete the following fields:
    - **Hub name** – provide a name for your hub.
    - **Subscription** – select your Azure subscription that has access to Azure OpenAI Service.
@@ -19,7 +19,7 @@ The Azure AI hub resource is the top-level Azure resource for Azure AI Studio an
 
 Projects are hosted in an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Use the following steps to create an Azure AI Project.
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Build** and select **+ New project**.
+1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Home** and select **+ New project**.
 1. Complete the following fields:
    - **Project name** – provide a name for your project.
    - **Hub** – select the Hub that was previously created.
