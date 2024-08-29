@@ -1,6 +1,6 @@
 Managing the lifecycle of machine learning models helps with maintaining model performance, ensuring reproducibility, and facilitating collaboration. Azure Databricks, with its integration of MLflow, provides a comprehensive solution for model versioning and lifecycle management.
 
-## MLflow for lifecycle management
+## Use MLflow for lifecycle management
 
 MLflow is an open-source platform that simplifies the management of the machine learning lifecycle. It offers several components that help track experiments, package code, and manage model versions:
 

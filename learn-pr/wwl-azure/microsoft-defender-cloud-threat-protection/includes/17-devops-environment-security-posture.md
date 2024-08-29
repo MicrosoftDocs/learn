@@ -11,9 +11,9 @@ DevOps posture management is a feature in Microsoft Defender for Cloud that:
 
 To provide findings, DevOps posture management uses DevOps scanners to identify weaknesses in source code management and continuous integration/continuous delivery pipelines by running checks against the security configurations and access controls.
 
-Azure DevOps and GitHub scanners are used internally within Microsoft to identify risks associated with DevOps resources, reducing attack surface and strengthening corporate DevOps systems.<br>
+Azure DevOps and GitHub scanners are used internally within Microsoft to identify risks associated with DevOps resources, reducing attack surface and strengthening corporate DevOps systems.
 
-Once a DevOps environment is connected, Defender for Cloud autoconfigures these scanners to conduct recurring scans every 24 hours across multiple DevOps resources, including:<br>
+Once a DevOps environment is connected, Defender for Cloud autoconfigures these scanners to conduct recurring scans every 24 hours across multiple DevOps resources, including:
 
  -  Builds<br>
  -  Secure Files
@@ -53,11 +53,11 @@ Common Knowledge (CK) in ATT&CK stands for common knowledge, essentially the doc
 
 The initial access tactic refers to techniques an attacker may use for gaining access to the DevOps resources – repositories, pipelines, and dependencies. The following techniques may be a precondition for the next steps:
 
-Source Code Management (SCM) authentication – Access by having an authentication method to the organization’s source code management. It may be a personal access token (PAT), an SSH key, or any other allowed authentication credential. An example of a method an attacker can use to achieve this technique is using a phishing attack against an organization.<br>
+Source Code Management (SCM) authentication – Access by having an authentication method to the organization’s source code management. It may be a personal access token (PAT), an SSH key, or any other allowed authentication credential. An example of a method an attacker can use to achieve this technique is using a phishing attack against an organization.
 
 Continuous Integration (CI) and Continuous Delivery (CD) service authentication – Similar to SCM authentication, an attacker can leverage authentication to the CI/CD service in order to attack the organization’s DevOps.
 
-Organization’s public repositories – Access to the organization’s public repositories that are configured with CI/CD capabilities. Depending on the organization’s configuration, these repositories may have the ability to trigger a pipeline run after a pull request (PR) is created.<br>
+Organization’s public repositories – Access to the organization’s public repositories that are configured with CI/CD capabilities. Depending on the organization’s configuration, these repositories may have the ability to trigger a pipeline run after a pull request (PR) is created.
 
 Endpoint compromise – Using an existing compromise, an attacker can leverage the compromised developer’s workstation, thus gaining access to the organization’s SCM, registry, or any other resource the developer has access to.
 
@@ -87,7 +87,7 @@ Control of common registry – An attacker can gain control of a registry used b
 
 The persistency tactic consists of different techniques that an attacker may use for maintaining access to a victim environment:
 
-Changes in repository – Adversaries can use the automatic tokens from inside the pipeline to access and push code to the repository (assuming the automatic token has enough permissions to do so). They can achieve persistency this way using several sub-techniques:<br>
+Changes in repository – Adversaries can use the automatic tokens from inside the pipeline to access and push code to the repository (assuming the automatic token has enough permissions to do so). They can achieve persistency this way using several sub-techniques:
 
  -  Change/add scripts in code – we can change some of the initialization scripts/add new scripts, so they download a backdoor/starter for the attacker, so each time the pipeline is executing these scripts, the attacker’s code will be executed too.<br>
  -  Change the pipeline configuration – we can add new steps in the pipeline to download an attacker-controlled script to the pipeline before continuing with the build process.
@@ -95,45 +95,45 @@ Changes in repository – Adversaries can use the automatic tokens from inside t
 
 Inject in Artifacts – some CI environments have the functionality for creating artifacts to be shared between different pipeline executions. For example, in GitHub we can store artifacts and download them using a GitHub action from the pipeline configuration.
 
-Modify images in registry – In cases where the pipelines have permissions to access the image registry (for example, for writing back images to the registry after build is done) the attacker could modify and plant malicious images in the registry, which would continue to be executed by the user’s containers.<br>
+Modify images in registry – In cases where the pipelines have permissions to access the image registry (for example, for writing back images to the registry after build is done) the attacker could modify and plant malicious images in the registry, which would continue to be executed by the user’s containers.
 
-Create service credentials – A malicious adversary can leverage the access they already have on the environment and create new credentials for use in case the initial access method is lost. This could be done by creating an access token to the SCM, to the application itself, to the cloud resources, and more.<br>
+Create service credentials – A malicious adversary can leverage the access they already have on the environment and create new credentials for use in case the initial access method is lost. This could be done by creating an access token to the SCM, to the application itself, to the cloud resources, and more.
 
 ### Privilege escalation
 
 The privilege escalation techniques are used by an attacker to elevate the privileges in the victim’s environment, gaining higher privileges for already compromised resources:
 
-Secrets in private repositories – Leveraging an already gained initial access method, an attacker could scan private repositories for hidden secrets. The chances of finding hidden secrets in a private repo are higher than in a public repository, as, from the developer’s point of view, this is inaccessible from outside the organization.<br>
+Secrets in private repositories – Leveraging an already gained initial access method, an attacker could scan private repositories for hidden secrets. The chances of finding hidden secrets in a private repo are higher than in a public repository, as, from the developer’s point of view, this is inaccessible from outside the organization.
 
-Commit/push to protected branches – The pipeline has access to the repository that may be configured with permissive access, which could allow to push code directly to protected branches, allowing an adversary to inject code directly into the important branches without team intervention.<br>
+Commit/push to protected branches – The pipeline has access to the repository that may be configured with permissive access, which could allow to push code directly to protected branches, allowing an adversary to inject code directly into the important branches without team intervention.
 
-Certificates and identities from metadata services – Once an attacker is running on cloud-hosted pipelines, the attacker could access the metadata services from inside the pipeline and extract certificates (requires high privileges) and identities from these services.<br>
+Certificates and identities from metadata services – Once an attacker is running on cloud-hosted pipelines, the attacker could access the metadata services from inside the pipeline and extract certificates (requires high privileges) and identities from these services.
 
 ### Credential access
 
 Credential access techniques are used by an attacker to steal credentials:
 
-User credentials – In cases where the customer requires access to external services from the CI pipeline (for example, an external database), these credentials reside inside the pipeline (can be set by CI secrets, environment variables, etc.) and could be accessible to the adversary.<br>
+User credentials – In cases where the customer requires access to external services from the CI pipeline (for example, an external database), these credentials reside inside the pipeline (can be set by CI secrets, environment variables, etc.) and could be accessible to the adversary.
 
-Service credentials – There are cases where the attacker can find service credentials, such as service-principal-names (SPN), shared-access-signature (SAS) tokens, and more, which could allow access to other services directly from the pipeline.<br>
+Service credentials – There are cases where the attacker can find service credentials, such as service-principal-names (SPN), shared-access-signature (SAS) tokens, and more, which could allow access to other services directly from the pipeline.
 
 ### Lateral movement
 
 The lateral movement tactic refers to techniques used by attackers to move through different resources. In CI/CD environments, this may refer to moving to deployment resources, to build artifacts and registries, or to new targets.
 
-Compromise build artifacts – As in other supply chain attacks, once the attacker has control of the CI pipelines, they can interfere with the build artifacts. This way, malicious code could be injected into the building materials before building is done, hence injecting the malicious functionality into the build artifacts.<br>
+Compromise build artifacts – As in other supply chain attacks, once the attacker has control of the CI pipelines, they can interfere with the build artifacts. This way, malicious code could be injected into the building materials before building is done, hence injecting the malicious functionality into the build artifacts.
 
-Registry injection – If the pipeline is configured with a registry for the build artifacts, the attacker could infect the registry with malicious images, which later would be downloaded and executed by containers using this registry.<br>
+Registry injection – If the pipeline is configured with a registry for the build artifacts, the attacker could infect the registry with malicious images, which later would be downloaded and executed by containers using this registry.
 
-Spread to deployment resources – If the pipeline is configured with access to deployment resources, then the attacker has the same access to these resources, allowing the attacker to spread. This could result in code execution, data exfiltration and more, depending on the permissions granted to the pipelines.<br>
+Spread to deployment resources – If the pipeline is configured with access to deployment resources, then the attacker has the same access to these resources, allowing the attacker to spread. This could result in code execution, data exfiltration and more, depending on the permissions granted to the pipelines.
 
 ### Defense evasion
 
 Defense evasion techniques could be used by attackers to bypass defenses used in a DevOps environment and allow attacks to continue under the radar:
 
-Service logs manipulation – Service logs enable Defenders to detect attacks in their environment. An attacker running inside an environment (for example, in the build pipelines) could change the logs to prevent Defenders from observing the attack. This is similar to an attacker changing the history logs on a Linux machine, preventing any observer from seeing the commands executed by the attacker.<br>
+Service logs manipulation – Service logs enable Defenders to detect attacks in their environment. An attacker running inside an environment (for example, in the build pipelines) could change the logs to prevent Defenders from observing the attack. This is similar to an attacker changing the history logs on a Linux machine, preventing any observer from seeing the commands executed by the attacker.
 
-Compilation manipulation – if an attacker wishes to leave no traces in the SCM service, the attacker may change the compilation process in order to inject the malicious code. This may be done in several ways:<br>
+Compilation manipulation – if an attacker wishes to leave no traces in the SCM service, the attacker may change the compilation process in order to inject the malicious code. This may be done in several ways:
 
  -  Changing the code on the fly – Changing the code right before the build process begins, without changing it in the repository and leaving traces in it.<br>
  -  Tampered compiler – Changing the compiler in the build environment to introduce the malicious code without leaving any traces before that process begins.
@@ -144,21 +144,21 @@ Reconfigure branch protections – Branch protection tools allow an organization
 
 The impact tactic refers to the techniques an attacker could use for exploiting access to the CI/CD resources for malicious purposes, and not as another step in the attack, as these techniques could be noisy and easy to detect:
 
-Distributed Denial-of-Service (DDoS) – An adversary could use the compute resources they gained access to in order to execute distributed denial of services (DDoS) attacks on external targets.<br>
+Distributed Denial-of-Service (DDoS) – An adversary could use the compute resources they gained access to in order to execute distributed denial of services (DDoS) attacks on external targets.
 
-Cryptocurrency mining – The compute resources could be used for crypto mining controlled by an adversary.<br>
+Cryptocurrency mining – The compute resources could be used for crypto mining controlled by an adversary.
 
-Local Denial-of-service (DoS) – Once the attacker is running on the CI pipelines, the attacker can perform a denial service attack from said pipelines to customers by shutting down agents, rebooting, or by overloading the VMs.<br>
+Local Denial-of-service (DoS) – Once the attacker is running on the CI pipelines, the attacker can perform a denial service attack from said pipelines to customers by shutting down agents, rebooting, or by overloading the VMs.
 
-Resource deletion – An attacker with access to resources (cloud resources, repositories, etc.) could permanently delete the resources to achieve denial of services.<br>
+Resource deletion – An attacker with access to resources (cloud resources, repositories, etc.) could permanently delete the resources to achieve denial of services.
 
 ### Exfiltration
 
 The exfiltration tactic refers to different techniques that could be used by an attacker to exfiltrate sensitive data from victim environment:
 
-Clone private repositories – Once attackers have access to CI pipelines, they also gain access to the private repositories (for example, the GITHUB\_TOKEN can be used in GitHub), and therefore could clone and access the code, thus gaining access to private IP.<br>
+Clone private repositories – Once attackers have access to CI pipelines, they also gain access to the private repositories (for example, the GITHUB\_TOKEN can be used in GitHub), and therefore could clone and access the code, thus gaining access to private IP.
 
-Pipeline logs – An adversary could access the pipeline execution logs, view the access history, the build steps, etc. These logs may contain sensitive information about the build, the deployment, and in some cases even credentials to services, to user accounts and more.<br>
+Pipeline logs – An adversary could access the pipeline execution logs, view the access history, the build steps, etc. These logs may contain sensitive information about the build, the deployment, and in some cases even credentials to services, to user accounts and more.
 
 Exfiltrate data from production resources – In cases where the pipelines can access the production resources, the attackers will have access to these resources as well. Therefore, they can abuse this access for exfiltrating production data.
 

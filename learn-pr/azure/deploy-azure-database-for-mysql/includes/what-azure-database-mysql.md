@@ -61,7 +61,8 @@ With public access, which is provided via an external endpoint, you must explici
 Use virtual network integration support for private access via designated Azure virtual networks. If you enable this option, the server automatically blocks connections that originate from the Internet.
 
 > [!NOTE]  
-> Before enabling private access, you must implement Domain Name Service (DNS) name resolution. For more information, see [Private Network Access using virtual network integration for Azure Database for MySQL - Flexible Server](/azure/MySQL/flexible-server/concepts-networking-vent).
+
+> Before enabling private access, custom Domain Name Service (DNS) name resolution must be implemented. For more information, see [Private Network Access using virtual network integration for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-networking-vnet).
 
 By default, the server enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication.
 
