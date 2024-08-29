@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-ai-studio
 metadata:
-  title: Responsible generative AI in AI Studio
+  title: Responsible generative AI
   description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Studio.
   author: wwlpublish
   ms.author: berryivor
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Responsible generative AI in AI Studio
+title: Responsible generative AI
 summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
   By the end of this module, you'll be able to:
