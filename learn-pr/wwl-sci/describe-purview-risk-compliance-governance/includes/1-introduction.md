@@ -6,7 +6,8 @@ In this module, you'll learn about Microsoft Purview risk and compliance solutio
 After completing this module, you'll be able to:
 
 - Describe Microsoft Purview Audit.
-- Describe Microsoft Purview Communication Compliance.
-- Describe Microsoft Purview Compliance Manager.
-- Describe Microsoft Purview Data Lifecycle Management.
 - Describe Microsoft Purview eDiscovery.
+- Describe Microsoft Purview Compliance Manager.
+- Describe Microsoft Purview Communication Compliance.
+- Describe Microsoft Purview Data Lifecycle Management.
+

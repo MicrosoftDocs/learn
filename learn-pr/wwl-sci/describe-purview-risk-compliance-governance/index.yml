@@ -8,9 +8,9 @@ metadata:
   ms.author: ceperezb
   ms.topic: unit
   ms.service: purview
-
+  ai-usage: ai-assisted
 title: Describe the risk & compliance and data governance solutions of Microsoft Purview
-summary: "Describe the Data Security solutions of Microsoft Purview."
+summary: "Describe the risk & compliance and data governance solutions of Microsoft Purview."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe how Microsoft Purview enables organizations to identify sensitive information.
@@ -29,8 +29,8 @@ roles:
 products:
   - microsoft-purview
 subjects:
-  - information-protection-governance
-
+  - insider-risk
+  - compliance
 units:
 - learn.describe-purview-risk-compliance-governance.introduction
 - learn.describe-purview-risk-compliance-governance.describe-audit
