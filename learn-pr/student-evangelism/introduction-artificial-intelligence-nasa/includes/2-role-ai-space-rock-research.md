@@ -1,6 +1,6 @@
 AI is a fairly new but prominent concentration in the field of computer science, and more specifically, data science. The main concept of AI is teaching a computer how to learn things. The computer then makes decisions based on what it has learned.
 
-You might think teaching computers how to "think" on their own could lead to extinction of the human race., but we don't need to worry about computers taking over the world. Computers need humans to do the programming. We benefit from programming computers with AI. Here are a few examples of how AI works to improve our lives:
+You might think teaching computers how to "think" on their own could lead to extinction of the human race, but we don't need to worry about computers taking over the world. Computers need humans to do the programming. We benefit from programming computers with AI. Here are a few examples of how AI works to improve our lives:
 
 - Netflix uses AI algorithms to recommend what we might like to watch next.
 - Siri runs AI on our phone data to detect patterns and help us do common tasks more easily.
