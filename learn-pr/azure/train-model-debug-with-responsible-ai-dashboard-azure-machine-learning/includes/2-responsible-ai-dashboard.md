@@ -10,7 +10,7 @@ The Responsible AI dashboard brings together various new and already existing to
 | Model overview and fairness assessment | To evaluate the performance of your model and evaluate your model's group fairness issues (how your model's predictions affect diverse groups of people). |
 | Error analysis | To view and understand how errors are distributed in your dataset. |
 | Model interpretability (importance values for aggregate and individual features) | To understand your model's predictions and how those overall and individual predictions are made. |
-| Counterfactual what-if | To observe how feature perturbations would affect your model predictions while providing the closest data points with opposing or different model predictions. For example: Taylor would have obtained a loan approval from the AI system if they earned $10,000 more in annual income and had two fewer credit cards open. |
+| Counterfactual what-if | To observe how feature perturbations would affect your model predictions while providing the closest data points with opposing or different model predictions. For example: Test if Taylor can obtain a loan approval from the AI system if they earned $10,000 more in annual income and had two fewer credit cards open. |
 | Causal analysis | To estimate how a real-world outcome changes in the presence of an intervention. It also helps construct promising interventions by simulating feature responses to various interventions and creating rules to determine which population cohorts would benefit from a particular intervention. Collectively, these functionalities allow you to apply new policies and effect real-world change. For example, how would providing promotional values to certain customers affect revenue? <br> <br> The capabilities of this component come from the EconML package, which estimates heterogeneous treatment effects from observational data via machine learning.|
 
 Together, these tools help you debug machine learning models, while informing your data-driven and model-driven business decisions. The following diagram shows how you can incorporate them into your AI lifecycle to improve your models and get solid data insights.
@@ -23,7 +23,7 @@ Assessing and debugging machine learning models is critical for model reliabilit
 
 1. **Identify**, to understand and recognize model errors and/or fairness issues by addressing the following questions:
   
-   "What kinds of errors does my model have?"
+   "What kinds of errors are in my model?"
   
    "In what areas are errors most prevalent?"
 1. **Diagnose**, to explore the reasons behind the identified errors by addressing:
@@ -43,7 +43,7 @@ Assessing and debugging machine learning models is critical for model reliabilit
 
 Although progress is being made on individual tools for specific areas of Responsible AI, data scientists often need to use various tools to holistically evaluate their models and data. For example: they might have to use model interpretability and fairness assessment together. 
 
-If data scientists discover a fairness issue with one tool, they then need to jump to a different tool to understand what data or model factors lie at the root of the issue before taking any steps on mitigation. The following factors further complicate this challenging process:
+If data scientists discover a fairness issue with one tool, they then need to jump to a different tool to understand what data or model factors lie at the root of the issue, before taking any steps on mitigation. The following factors further complicate this challenging process:
 
 - The lack of a central location to discover and learn about the tools, extends the time it takes to research and learn new techniques.
 - The different tools don't communicate with each other. Data scientists must wrangle the datasets, models, and other metadata as they pass them between the tools.
@@ -51,4 +51,4 @@ If data scientists discover a fairness issue with one tool, they then need to ju
 
 The Responsible AI dashboard challenges this status quo. It's a comprehensive yet customizable tool that brings together fragmented experiences in one place. It enables you to seamlessly onboard to a single customizable framework for model debugging and data-driven decision-making.
 
-By using the Responsible AI dashboard, you can create dataset cohorts, pass those cohorts to all of the supported components, and observe your model health for your identified cohorts. You can further compare insights from all supported components across various prebuilt cohorts to perform disaggregated analysis and find the blind spots of your model.
+By using the Responsible AI dashboard, you can create dataset cohorts, pass those cohorts to all of the supported components, and observe your model health for your identified cohorts. You can further compare insights from all supported components across various prebuilt cohorts to perform disaggregated analysis and find the oversights in your model.

@@ -4,4 +4,4 @@ Model fairness and model accuracy aren't the same thing but they both must be co
 
 :::image type="content" source="../media/error-distribution.png" alt-text="Diagram showing benchmark and ML model pointing to 89% accurate pointing to different regions fail for different reasons.":::
 
-This situation is where the error analysis component of Azure Machine Learning Responsible AI dashboard helps in identifying a model’s error distribution across its test dataset. Throughout this module, we use the diabetes hospital readmission classification model scenario to learn and explain the responsible AI dashboard. Later in the lab, you train and create your own dashboard using the same dataset.
+This situation is where the error analysis component of Azure Machine Learning Responsible AI dashboard helps in identifying a model’s error distribution across its test dataset. Throughout this module, we use the diabetes hospital readmission classification model scenario to learn and explain the responsible AI dashboard.
