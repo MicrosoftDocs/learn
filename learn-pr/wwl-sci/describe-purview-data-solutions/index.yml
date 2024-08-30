@@ -6,7 +6,8 @@ metadata:
   ms.date: 8/22/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
   ms.service: purview
 title: Describe the Data Security solutions of Microsoft Purview
 summary: "Describe the Data Security solutions of Microsoft Purview."
@@ -33,8 +34,8 @@ units:
 - learn.describe-purview-data-solutions.introduction
 - learn.describe-purview-data-solutions.identify-sensitive-data
 - learn.describe-purview-data-solutions.describe-sensitivity-labels-policies
-- learn.describe-purview-data-solutions.data-loss-prevention
-- learn.describe-purview-data-solutions.insider-risk-management
+- learn.describe-purview-data-solutions.describe-data-loss-prevention
+- learn.describe-purview-data-solutions.describe-insider-risk-management
 - learn.describe-purview-data-solutions.describe-adaptive-protection
 - learn.describe-purview-data-solutions.knowledge-check
 - learn.describe-purview-data-solutions.summary
