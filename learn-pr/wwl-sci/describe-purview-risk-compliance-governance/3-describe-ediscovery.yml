@@ -9,6 +9,6 @@ metadata:
   ms.author: ceperezb
   ms.topic: unit
   ms.service: purview
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/3-describe-ediscovery.md)]
