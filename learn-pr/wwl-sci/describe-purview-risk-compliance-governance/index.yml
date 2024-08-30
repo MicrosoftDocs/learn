@@ -6,7 +6,7 @@ metadata:
   ms.date: 8/23/2024 
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: unit
+  ms.topic: module-standard-task-based
   ms.service: purview
   ai-usage: ai-assisted
 title: Describe the data compliance and data governance solutions of Microsoft Purview
@@ -34,15 +34,13 @@ units:
 - learn.describe-purview-risk-compliance-governance.introduction
 - learn.describe-purview-risk-compliance-governance.describe-audit
 - learn.describe-purview-risk-compliance-governance.describe-ediscovery
+- learn.describe-purview-risk-compliance-governance.describe-compliance-manager
 - learn.describe-purview-risk-compliance-governance.describe-communication-compliance
 - learn.describe-purview-risk-compliance-governance.describe-data-life-cycle-management
-- learn.describe-purview-risk-compliance-governance.describe-record-management
+- learn.describe-purview-risk-compliance-governance.describe-records-management
 - learn.describe-purview-risk-compliance-governance.describe-data-governance-solutions
 - learn.describe-purview-risk-compliance-governance.knowledge-check
 - learn.describe-purview-risk-compliance-governance.summary
-###########################################################################
-###
-### TODO verify your badge
-###
+
 badge:
   uid: learn.describe-purview-risk-compliance-governance.badge

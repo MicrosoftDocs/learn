@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: purview
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-audit.md)]
