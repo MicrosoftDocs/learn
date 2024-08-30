@@ -1,3 +1,4 @@
+
 As the CTO for Tailwind Traders, you're interested in a low latency and high availability database solution to store relational data. After reviewing the five deployment options, you decide to implement Azure SQL Database for its fully managed service features. You're hoping to gain the high availability SLA offered in the Business Critical service tier when using availability zones. 
 
 Your next decision is how to support scalability for a relational database. You need a dynamically scalable solution that can handle an expanding number of requests over time without a negative effect on availability or performance. 
@@ -50,7 +51,7 @@ Horizontal scaling is managed by using the SQL Database [Elastic Database client
    | Azure SQL Managed Instance | Azure SQL Database |
    | --- | --- |
    | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable  |
-   | **Business Critical** tier: Read scale-out is auto-provisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-provisioned | 
+   | **Business Critical** tier: Read scale-out is autoprovisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-provisioned | 
    | No applicable tier | **Hyperscale** tier: Read scale-out is available if at least one secondary replica is created |
 
 #### Business scenario: Sharding
