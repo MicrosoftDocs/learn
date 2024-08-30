@@ -16,6 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+
   - content: An organization needs to retain audit records for a longer period of time and gain access to high-value intelligent insights. Which auditing solution should they use?
     choices:
     - content: Microsoft 365 Management Activity API
@@ -27,6 +28,7 @@ quiz:
     - content: Audit (Premium)
       isCorrect: true
       explanation: Correct. Audit (Premium) provides longer retention of audit records, high-value intelligent insights, and higher bandwidth access to the Office 365 Management Activity API.
+
   - content: An investigator is tasked with identifying and reviewing content in Microsoft 365 services for a legal case. They need to preserve relevant content from inadvertent deletion during the investigation. Which eDiscovery feature should they use?
     choices:
     - content: Place content locations on hold
@@ -38,17 +40,7 @@ quiz:
     - content: Search statistics and samples
       isCorrect: false
       explanation: Incorrect. 'Search statistics and samples' allows viewing of estimated search results and representative samples, not preserving content.
-  - content: An organization is looking to assess and manage compliance across their multicloud environment. They need a solution that can help them with data protection risks, implementing controls, staying current with regulations and certifications, and reporting to auditors. Which Microsoft Purview solution should they consider?
-    choices:
-    - content: Microsoft Purview Data Map
-      isCorrect: false
-      explanation: Incorrect. Microsoft Purview Data Map provides a unified map of your data across on-premises, multicloud, and SaaS apps, but it does not offer the compliance management features required by the organization.
-    - content: Microsoft Purview Compliance Manager
-      isCorrect: true
-      explanation: Correct. Microsoft Purview Compliance Manager helps organizations automatically assess and manage compliance across their multicloud environment, meeting all the requirements specified by the organization.
-    - content: Microsoft Purview Data Catalog
-      isCorrect: false
-      explanation: Incorrect. While the Microsoft Purview Data Catalog helps organizations to discover, understand, and manage data, it does not provide the comprehensive compliance management capabilities that the organization needs.
+
   - content: An organization wants to ensure that its employees are adhering to corporate policies in their day-to-day business communications. They want to detect any potential concerns of offensive language or harassment. Which Microsoft tool can they use to scan user communications across the organization?
     choices:
     - content: Microsoft Copilot for Microsoft 365
@@ -60,6 +52,7 @@ quiz:
     - content: Microsoft Teams
       isCorrect: false
       explanation: Incorrect. While Microsoft Teams is a communication platform, it does not have built-in features for scanning and detecting policy violations.
+
   - content: A company needs to manage its data lifecycle by ensuring content is kept only for a required time, and then permanently deleted. They want to apply different retention periods to different documents within the same SharePoint site. What should they do to achieve this?
     choices:
     - content: Apply a single retention label to all documents in the SharePoint site.
@@ -71,6 +64,7 @@ quiz:
     - content: Apply a single retention policy to the entire SharePoint site with a retention period of five years.
       isCorrect: false
       explanation: Incorrect. Applying a single retention policy to the entire SharePoint site would not allow for different retention periods for different documents.
+
   - content: An administrator is setting up retention labels for an organization's records. What happens when content is labeled as a record using a retention label?
     choices:
     - content: Restrictions are put in place to block certain activities, activities are logged, and proof of disposition is kept at the end of the retention period.
@@ -82,14 +76,3 @@ quiz:
     - content: The content becomes publicly accessible.
       isCorrect: false
       explanation: Incorrect. Labeling content as a record does not make it publicly accessible, but imposes restrictions and logs activities.
-  - content: A data officer in an organization is tasked with managing the rapid growth of data and ensuring its security. They need to create a comprehensive map of the data landscape, manage and secure the data estate, and empower data consumers to find valuable, trustworthy data. Which Microsoft service should they use?
-    choices:
-    - content: Microsoft Azure Data Factory
-      isCorrect: false
-      explanation: Incorrect. While Azure Data Factory is a cloud-based data integration service, it does not provide comprehensive data governance capabilities.
-    - content: Microsoft Purview
-      isCorrect: true
-      explanation: Correct. Microsoft Purview is designed to address the challenges associated with the rapid growth of data and to help enterprises get the most value from their information assets.
-    - content: Microsoft Power BI
-      isCorrect: false
-      explanation: Incorrect. Power BI is a business analytics tool that delivers insights to enable fast, informed decisions, but it does not offer data governance services.
