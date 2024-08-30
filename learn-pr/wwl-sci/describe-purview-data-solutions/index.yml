@@ -30,13 +30,14 @@ products:
 subjects:
   - information-protection-governance
 units:
-- learn.describe-purview-data-solution.introduction
-- learn.describe-purview-data-solution.identify-sensitive-data
+- learn.describe-purview-data-solutions.introduction
+- learn.describe-purview-data-solutions.identify-sensitive-data
 - learn.describe-purview-data-solutions.describe-sensitivity-labels-policies
-- learn.describe-purview-data-solution.data-loss-prevention
-- learn.describe-purview-data-solution.insider-risk-management
-- learn.describe-purview-data-solution.knowledge-check
-- learn.describe-purview-data-solution.summary
+- learn.describe-purview-data-solutions.data-loss-prevention
+- learn.describe-purview-data-solutions.insider-risk-management
+- learn.describe-purview-data-solutions.describe-adaptive-protection
+- learn.describe-purview-data-solutions.knowledge-check
+- learn.describe-purview-data-solutions.summary
 badge:
   uid: learn.describe-purview-data-solutions.badge
   

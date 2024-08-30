@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-  ms.service: purview
 durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-insider-risk-management.md)]
