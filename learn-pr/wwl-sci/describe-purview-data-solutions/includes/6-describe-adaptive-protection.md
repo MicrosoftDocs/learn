@@ -6,7 +6,7 @@ Adaptive protection in Microsoft Purview uses machine learning (ML) to identify 
 - Microsoft Purview Data Lifecycle Management (preview)
 - Microsoft Entra Conditional Access (preview)
 
-Integration with data loss prevention, data lifecycle management, and Conditional Access can help organizations automate their response to insider risks and reduce the time required to identify and remediate potential threats. By leveraging the capabilities of all four solutions, organizations can create a more comprehensive security framework that addresses both internal and external threats.
+Integration with data loss prevention, data lifecycle management, and Conditional Access can help organizations automate their response to insider risks and reduce the time required to identify and remediate potential threats. By using the capabilities of all four solutions, organizations can create a more comprehensive security framework that addresses both internal and external threats.
 
 Adaptive protection helps mitigate potential risks by using:
 
@@ -20,4 +20,4 @@ Adaptive protection dynamically assigns appropriate data loss prevention, data l
 
 #### Adaptive protection in Data Loss Prevention
 
-Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Risk Management with Microsoft Purview Data Loss Prevention (DLP). When Insider Risk Management identifies a user who is engaging in risky behavior, they are dynamically assigned an insider risk level. Then adaptive protection can automatically create a DLP policy to help protect the organization against the risky behavior that's associated with that insider risk level. As users insider risk levels change in insider risk management, the DLP policies applied to users can adjust.
+Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Risk Management with Microsoft Purview Data Loss Prevention (DLP). When Insider Risk Management identifies a user who is engaging in risky behavior, they're dynamically assigned an insider risk level. Then adaptive protection can automatically create a DLP policy to help protect the organization against the risky behavior that's associated with that insider risk level. As users insider risk levels change in insider risk management, the DLP policies applied to users can adjust.
