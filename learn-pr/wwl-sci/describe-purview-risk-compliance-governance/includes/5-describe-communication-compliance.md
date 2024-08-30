@@ -7,7 +7,7 @@ With role-based access controls, Communication compliance supports the separatio
 
 Identifying and resolving compliance issues with communication compliance in Microsoft Purview uses the following workflow:
 
-:::image type="content" source="../media/communication-compliance-workflow.png" lightbox="../media/3-communication-compliance-workflow.png" alt-text="Diagram showing the communication compliance workflow.":::
+:::image type="content" source="../media/communication-compliance-workflow.png" lightbox="../media/communication-compliance-workflow.png" alt-text="Diagram showing the communication compliance workflow.":::
 
 - **Configure** – in this step, admins identify compliance requirements and configure applicable communication compliance policies.
 - **Investigate** – admins look deeper into the issues detected when matching your communication compliance policies. Tools and steps that help include alerts, issue management to help remediation, document reviews, reviewing user history, and filters.
