@@ -1,7 +1,7 @@
 In this exercise, you learn how to build your first Semantic Kernel SDK project. You create a new project, add the Semantic Kernel SDK NuGet package, create a kernel object, and run your first prompt. Let's get started!
 
 > [!IMPORTANT]
-> You must have Visual Studio Code with the [C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) and the [.NET 8.0](https://dot.net/download) installed to complete these steps or [Visual Studio 2022](https://www.visualstudio.com) with .NET 8.0 installed.
+> You must have [Visual Studio 2022](https://www.visualstudio.com) or Visual Studio Code with the [C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) and [.NET 8.0](https://dot.net/download) installed to complete these steps.
 
 1. Open Visual Studio Code and create a new project.
 
