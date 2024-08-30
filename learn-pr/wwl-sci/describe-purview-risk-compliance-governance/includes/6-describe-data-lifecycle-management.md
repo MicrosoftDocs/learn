@@ -9,7 +9,7 @@ Retention policies and retention labels are important tools for data lifecycle m
 - **Reduce risk when there's litigation or a security breach** by permanently deleting old content that the organization is no longer required to keep.
 - **Ensure users work only with content that's current and relevant to them**. Content that is no longer relevant should be deleted.
 
-Managing content commonly requires two actions: retaining content and deleting content. 
+Managing content commonly requires two actions: retaining content and deleting content.
 
 - Retaining content prevents permanent deletion and ensures content remains available for eDiscovery.
 - Deleting content permanently deletes content from your organization.

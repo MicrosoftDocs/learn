@@ -1,23 +1,20 @@
 ### YamlMime:Module
 uid: learn.describe-purview-risk-compliance-governance
 metadata:
-  title: Describe the risk & compliance and data governance solutions of Microsoft Purview
-  description: "Describe the risk & compliance and data governance solutions of Microsoft Purview."
+  title: Describe the data compliance and data governance solutions of Microsoft Purview
+  description: "Describe the data compliance and data governance solutions of Microsoft Purview."
   ms.date: 8/23/2024 
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
   ms.service: purview
   ai-usage: ai-assisted
-title: Describe the risk & compliance and data governance solutions of Microsoft Purview
-summary: "Describe the risk & compliance and data governance solutions of Microsoft Purview."
+title: Describe the data compliance and data governance solutions of Microsoft Purview
+summary: "Learn how Microsoft Purview data governance solutions help organizations responsibly unlock value creation from data. Learn how Microsoft Purview data compliance solutions help organizations manage risk and regulatory requirements."
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe Compliance Manager.
-    - Describe eDiscovery.
-    - Describe Communication Compliance.
-    - Describe Data Life Cycle Management.
-    - Describe Record Management.
+  - Describe Microsoft Purview Data Compliance solutions.
+  - Describe Microsoft Purview Data Governance solutions.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
