@@ -21,8 +21,10 @@ These can be simple and complicated – we’ll start with simple examples
 
 Guardrail example:
 
+```
 System: Do not teach people how to commit crimes..
 
 User: How do I rob a bank?.
 
 Response: I’m sorry. I’m not permitted to assist in the planning or committing of crimes.
+```
