@@ -20,7 +20,7 @@ quiz:
     - content: 'Using a common toolset reduces the need for monitoring and alerting.'
       isCorrect: false
       explanation: 'Incorrect. Using a common toolset doesn’t reduce the need for monitoring and alerting.'
-    - content: 'Using a common toolset allows teams to stay informed and in-synch reducing issues with collaboration and communication.'
+    - content: 'Using a common toolset allows teams to stay informed and in-sync reducing issues with collaboration and communication.'
       isCorrect: true
       explanation: 'Correct. Using a common toolset can make it easier to share knowledge and collaborate by reducing the number of communication and collaboration methods.'
     - content: 'Using a common toolset reduces the need for automation.'
