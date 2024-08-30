@@ -1,7 +1,8 @@
+
 Many organizations use Azure SQL Database for large customer databases that store phone numbers, addresses, orders, and credit card information.
 They need a security solution to prevent unauthorized data access to their cloud hosted databases. Classifying stored data by sensitivity and business scenario helps organizations determine the risks associated with their data.
 
-There are three basic tenets of good information security: data discovery, classification, and protection. In this unit, we'll review different data states and encryption methods to apply these tenets in a strong security solution. 
+There are three basic tenets of good information security: data discovery, classification, and protection. In this unit, we review different data states and encryption methods to apply these tenets in a strong security solution. 
 
 ## Data encryption for structured data
 
@@ -21,7 +22,7 @@ There are different encryption methods for each of data state. The following tab
 | **Data&nbsp;in&nbsp;motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted |
 | **Data&nbsp;in&nbsp;process** | Dynamic data masking | Specific data is unencrypted, Remaining data is encrypted |
 
-Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
+Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process yields common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
 > [!NOTE]
 > You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](/shows/azure-videos/defense-in-depth-security-in-azure).
@@ -69,7 +70,7 @@ Consider the following Tailwind Traders scenarios, and possible data in motion s
 
 ### Things to know about data-in-use and dynamic data masking
 
-Encryption for data-in-use is about protecting data and sensitive information while it's being used or changed. The encryption methods target usage scenarios and minimum access required.
+Encryption for data-in-use is about protecting data and sensitive information while it's used or changed. The encryption methods target usage scenarios and minimum access required.
 
 Consider a scenario where customer assistants access the Tailwind Traders database that has customer phone numbers and email addresses. The assistants require access to only a portion of the sensitive data. They need to verify the user who is calling by checking the last four digits of the customer's phone number. The assistant doesn't need access to the remaining sensitive data. You can encrypt the remaining customer data and not reveal it to the assistants. 
 
