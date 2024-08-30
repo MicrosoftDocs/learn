@@ -10,9 +10,9 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespace in the list of codespaces.
+1. Locate your currently running Codespace in the list of Codespaces.
 
-1. Open the context menu for the codespace (**...**) and select **Delete**.
+1. Open the context menu for the Codespace (**...**) and select **Delete**.
 
 1. Select **Delete** to confirm deletion.
 
