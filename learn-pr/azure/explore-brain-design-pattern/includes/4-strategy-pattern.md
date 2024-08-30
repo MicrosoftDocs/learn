@@ -18,7 +18,7 @@ The *three-column exercise* is a method to interview subject matter experts. You
 
 The following table includes a few examples of the three-column exercise.
 
-| Customer | When the environment looks like this..                   | It means this..                                            | Do this..                                                    |
+| Customer | When the environment looks like this:                   | It means this:                                           | Do this:                                                    |
 | -------- | -------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | Steel    | The steel is narrow, and the coating is thick.              | Zinc coating is likely to be uneven.                        | Adjust the air knives (skew clockwise or counter-clockwise). |
 | Airlines | Bags need to be delivered quickly to departing flight.   | The bags are in danger of missing their flights.            | Run those bags through the tail-to-tail method.              |
