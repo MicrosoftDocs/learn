@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-llmops-azure-databricks.knowledge-check
+uid: learn.wwl.responsible-language-models-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -13,36 +13,36 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following best describes the role of LLMOps in the context of Azure Databricks?"
+  - content: "What is one of the key principles of responsible AI when deploying Large Language Models (LLMs) using Azure Databricks?"
     choices:
-    - content: "Automating the deployment and scaling of traditional machine learning models"
+    - content: "Maximizing model performance at all costs."
       isCorrect: false
-      explanation: "Incorrect. LLMOps isn't about automating the deployment and scaling of traditional machine learning models."
-    - content: "Managing the lifecycle of language models, including training, deployment, monitoring, and governance."
+      explanation: "Incorrect. Maximizing model performance at all costs isn't one of the key principles of responsible AI when deploying LLMs using Azure Databricks."
+    - content: "Ensuring transparency and explainability of model decisions."
       isCorrect: true
-      explanation: "Correct. LLMOps focuses on managing the entire lifecycle of language models, which includes training, deploying, monitoring, and governing these models."
-    - content: "Optimizing SQL queries within Azure Databricks."
+      explanation: "Correct. Transparency and explainability are critical principles of responsible AI. It's essential to ensure that the decisions made by these models can be understood and explained to build trust and accountability in AI systems."
+    - content: "Deploying models without any human oversight."
       isCorrect: false
-      explanation: "Incorrect. LLMOps isn't about optimizing SQL queries within Azure Databricks."
-  - content: "In the LLMOps workflow within Azure Databricks, which tool or framework is primarily used for monitoring and logging the performance of large language models?"
+      explanation: "Incorrect. Deploying models without any human oversight isn't one of the key principles of responsible AI when deploying LLMs using Azure Databricks."
+  - content: "Which of the following tools in Azure Databricks can be used to assess and mitigate bias in LLMs?"
     choices:
-    - content: "MLflow"
+    - content: "Unity Catalog"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog isn't used to assess and mitigate bias in LLMs."
+    - content: "Delta Live Tables"
+      isCorrect: false
+      explanation: "Incorrect. Delta Live Tables aren't used to assess and mitigate bias in LLMs."
+    - content: "Fairness Indicators"
       isCorrect: true
-      explanation: "Correct. MLflow is a key tool in the LLMOps workflow on Azure Databricks, used for tracking experiments, logging model performance, and monitoring the deployment of large language models. It provides a comprehensive platform for managing and improving model performance over time."
-    - content: "Delta Lake"
-      isCorrect: false
-      explanation: "Incorrect. Delta Lake isn't used for monitoring and logging the performance of large language models."
-    - content: "Apache Spark"
-      isCorrect: false
-      explanation: "Incorrect. Apache Spark isn't used for monitoring and logging the performance of large language models."
-  - content: "When you implement LLMOps with Azure Databricks, which of the following considerations is key for ensuring responsible AI practices?"
+      explanation: "Correct. Fairness Indicators is a tool that can be integrated within Azure Databricks to assess and mitigate bias in machine learning models, including LLMs. It helps in ensuring that AI systems are fair and don't perpetuate or amplify biases present in the training data."
+  - content: "What is a recommended approach to handle hallucinations in LLMs when using Azure Databricks?"
     choices:
-    - content: "Minimizing the size of the model to reduce costs."
+    - content: "Ignore them as they're rare and don't affect model performance."
       isCorrect: false
-      explanation: "Incorrect. Minimizing the size of the model to reduce costs isn't a key consideration for ensuring responsible AI practices."
-    - content: "Using Unity Catalog for data governance and access control."
+      explanation: "Incorrect. Ignoring hallucinations isn't the recommended approach in handling them in LLMs when using Azure Databricks."
+    - content: "Use post-processing techniques to identify and correct them."
       isCorrect: true
-      explanation: "Correct. Unity Catalog plays a crucial role in LLMOps by enforcing data governance and access control, which is vital for responsible AI practices. Ensuring that only authorized personnel have access to sensitive data and models is key to maintaining ethical standards and compliance within the organization."
-    - content: "Running models only on-demand to save compute resources."
+      explanation: "Correct. Hallucinations in LLMs refer to instances where the model generates outputs that aren't based on real data or facts."
+    - content: "Deploy the model in production without any safeguards."
       isCorrect: false
-      explanation: "Incorrect. Running model only on-demand to save compute resources isn't a key consideration for ensuring responsible AI practices."
+      explanation: "Incorrect. Deploying the model in production without any safeguards isn't the recommended approach in handling them in LLMs when using Azure Databricks."

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-llmops-azure-databricks.exercise
-title: Exercise - Explore language models
+uid: learn.wwl.responsible-language-models-azure-databricks.exercise
+title: Exercise - Implement responsible AI
 metadata:
-  title: Exercise - Explore language models
-  description: "Exercise - Explore language models"
+  title: Exercise - Implement responsible AI
+  description: "Exercise - Implement responsible AI"
   ms.date: 08/23/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 30
+durationInMinutes: 15
 content: |
   [!include[](includes/06-exercise.md)]
