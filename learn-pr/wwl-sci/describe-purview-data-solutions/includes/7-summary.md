@@ -1,6 +1,15 @@
 
+In this module, you learned about Microsoft Purview data security solutions.
 
+Microsoft Purview Data Security offers a comprehensive approach to safeguarding your organization's data across its entire lifecycle. By integrating solutions such as Data Loss Prevention, Insider Risk Management, and Information Protection, Microsoft Purview ensures that sensitive data is protected from unauthorized access and misuse. This integrated approach helps organizations manage critical risks and comply with regulatory requirements, providing end-to-end protection for data wherever it resides.
 
+ By using Microsoft Purview, organizations can achieve a more effective balance between data security and productivity, ultimately safeguarding their most valuable asset – their data.
+
+Now that you’ve completed this module, you should be able to:
+
+- Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.
+- Describe how Microsoft Purview Data Loss Prevention helps organizations prevent their users from inappropriately sharing sensitive data with people who shouldn't have it.
+- Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
 
 ### Learn more
 
