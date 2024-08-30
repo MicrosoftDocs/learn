@@ -51,7 +51,7 @@ Horizontal scaling is managed by using the SQL Database [Elastic Database client
    | Azure SQL Managed Instance | Azure SQL Database |
    | --- | --- |
    | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable  |
-   | **Business Critical** tier: Read scale-out is autoprovisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-rovisioned | 
+   | **Business Critical** tier: Read scale-out is autoprovisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-provisioned | 
    | No applicable tier | **Hyperscale** tier: Read scale-out is available if at least one secondary replica is created |
 
 #### Business scenario: Sharding
