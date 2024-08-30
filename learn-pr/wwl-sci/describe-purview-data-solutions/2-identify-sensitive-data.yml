@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-purview-data-solutions.identify-sensitive-data
-title: Identify sensitive data
+title: Describe the data classification capabilities of Information Protection
 metadata:
-  title: Identify sensitive data
-  description: "Identify sensitive data."
+  title: Describe the data classification capabilities of Information Protection
+  description: "Describe the data classification capabilities of Information Protection."
   ms.date: 8/22/2024
   author: wwlpublish
   ms.author: ceperezb
