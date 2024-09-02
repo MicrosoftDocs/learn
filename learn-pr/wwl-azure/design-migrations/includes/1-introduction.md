@@ -12,19 +12,19 @@ The IT department is currently responsible for all management tasks for the comp
 
 In this module, you learn how to:
 
-- Evaluate migration with the Microsoft Cloud Adoption Framework for Azure
+- Evaluate migration with the Microsoft Cloud Adoption Framework for Azure.
 
-- Describe the Azure Migration and Modernization Program (Azure Migration Framework)
+- Describe the Azure Migration and Modernization Program (Azure Migration Framework).
 
-- Assess your on-premises workloads
+- Assess your on-premises workloads.
 
-- Select a migration tool
+- Select a migration tool.
 
-- Migrate your databases
+- Migrate your databases.
 
-- Select an online storage migration tool
+- Select an online storage migration tool.
 
-- Migrate offline data
+- Migrate offline data.
 
 ## Skills measured 
 
