@@ -48,7 +48,7 @@ You review the different options for implementing replication. Data redundancy i
 
 - **Consider primary replication options**. Explore different scenarios for how Tailwind Traders data can be replicated in the primary region. The redundancy options present tradeoffs between lower costs and higher availability. Some business centers can require more data redundancy. Specific departments or regions might work with data that's not sensitive or which doesn't require high durability. You can implement multiple storage accounts with different redundancy to control the overall costs across the organization.
 
-- **Consider locally redundant storage**. Implement LRS for a low cost redundancy solution, but with limited durability. LRS is suited for Tailwind Traders apps that store data that can be easily reconstructed if data loss occurs. LRS is also a good choice for apps that are restricted to replicating data only within a locatoin due to data governance requirements. 
+- **Consider locally redundant storage**. Implement LRS for a low cost redundancy solution, but with limited durability. LRS is suited for Tailwind Traders apps that store data that can be easily reconstructed if data loss occurs. LRS is also a good choice for apps that are restricted to replicating data only within a location due to data governance requirements. 
 
 - **Consider zone-redundant storage**. Choose ZRS for excellent performance, low latency, and resiliency for your data if it becomes temporarily unavailable. Keep in mind that ZRS by itself might not protect your data against a regional disaster where multiple zones are permanently affected.
 
