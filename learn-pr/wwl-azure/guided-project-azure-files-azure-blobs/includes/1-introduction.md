@@ -6,7 +6,7 @@ In this module, you learn how to provide storage for different purposes. For exa
 
 :::image type="content" source="../media/task-overview.png" alt-text="Diagram of customer requirements." border="false":::
 
-You be presented with a scenario for each purpose and a diagram showing the architecture of the solution. You then follow a set of tasks to create the storage account and configure it according to the scenario. Each exercise has a duration of 10 to 15 minutes.
+You are presented with a scenario for each purpose and a diagram showing the architecture of the solution. You then follow a set of tasks to create the storage account and configure it according to the scenario. Each exercise has a duration of 10 to 15 minutes.
 
 The module is divided into five exercises, each covering a specific storage scenario. The exercises are: 
 - Exercise 1 - Provide storage for the IT department testing and training, 
