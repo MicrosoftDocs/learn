@@ -30,9 +30,9 @@ Now, let's create a user account.
     
     | **Setting**                                                                     | **Value**   |
     | ------------------------------------------------------------------------------- | ----------- |
-    | User principal name                                                             | ChrisG      |
-    | Mail nickname (you might have to uncheck the *Derive from user principal name*. | ChrisG      |
-    | Display name                                                                    | Chris Green |
+    | User principal name                                                             | AdeleV      |
+    | Mail nickname (you might have to uncheck the *Derive from user principal name*. | AdeleV      |
+    | Display name                                                                    | Adele Vance |
     | Password                                                                        | Pass@word1  |
 5.  Select **Create**. The user is now created and registered to your organization.
 
@@ -44,11 +44,11 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 2.  On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
 3.  Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
     
-    :::image type="content" source="../media/directory-role-select-role-5a90aac4.png" alt-text="Screenshot of the Assigned roles page Adele Vance.":::
+    :::image type="content" source="../media/directory-role-select-role-5a90aac4-a9c4526b.png" alt-text="Screenshot of the Assigned roles page Adele Vance.":::
     
 4.  Select **+ Add Assignment.**
     
-    :::image type="content" source="../media/directory-role-select-app-admin-64518214.png" alt-text="Screenshot of the Assigned roles page - showing the selected role of Application administrator.":::
+    :::image type="content" source="../media/directory-role-select-app-admin-64518214-46dd77fa.png" alt-text="Screenshot of the Assigned roles page - showing the selected role of Application administrator.":::
     
 
 The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
@@ -63,7 +63,7 @@ If you need to remove the role assignment from a user, you can also do that from
 2.  Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
 3.  On the far right side of the screen, select **Remove**. Then select **Yes** option when prompted for confirmation.
     
-    :::image type="content" source="../media/directory-role-remove-role-b5708b23.png" alt-text="Screenshot of the Remove assignments dialog box with Yes highlighted.":::
+    :::image type="content" source="../media/directory-role-remove-role-b5708b23-0537f223.png" alt-text="Screenshot of the Remove assignments dialog box with Yes highlighted.":::
     
 
-The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.
+The Application administrator role is removed from the user and it no longer appears on the **Adele Vance – Assigned roles** page.
