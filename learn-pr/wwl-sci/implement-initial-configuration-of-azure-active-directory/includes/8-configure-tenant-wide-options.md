@@ -87,7 +87,7 @@ Set the basic values that define the look at feel of your tenant within Microsof
  -  **Name** \- friendly name for your tenant, for use in the Azure portal
  -  **Country or region** \- location of your primary company and the Azure datacenters being used
  -  **Notification language** \- language used for sending notifications and alerts
- -  **Tenant ID** \- unique identifier for your tenant to be used programatically, as needed
+ -  **Tenant ID** \- unique identifier for your tenant, used programatically
  -  **Technical contact** \- primary contact for the tenant (defaults to the user who created the tenant)
  -  **Global privacy contact** \- user or alias to contact for privacy concerns or issues
  -  **Privacy statement URL** \- link to a PDF or webpage containing the privacy rules for your cloud solutions
