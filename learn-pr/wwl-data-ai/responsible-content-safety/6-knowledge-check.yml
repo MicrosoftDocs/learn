@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.responsible-content-safety.knowledge-check
+uid: learn.wwl.responsible-ai-content-safety.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your understanding of the content presented in this module. "
   ms.date: 8/29/2024
-  author: wwlpublish
-  ms.author: eveleighcaroline
+  author: ivorb
+  ms.author: berryivor
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
 quiz:
   questions:
