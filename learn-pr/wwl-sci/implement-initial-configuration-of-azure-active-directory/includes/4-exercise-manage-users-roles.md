@@ -1,4 +1,4 @@
-You need to assign additional permissions to one of your newly created administrators.
+You need to assign extra permissions to one of your newly created administrators.
 
 In this exercise, you'll create a user account to use in the exercises.
 
@@ -14,7 +14,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 6.  Select **Licenses** in the menu.
 7.  In the right **Quick tasks** menu of the Licenses - Overview page, select **Get a free trial**
 8.  Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID Premium**.
-9.  In the Activate pane, underMicrosoft Entra ID **PREMIUM P2**, select **Free trial** and then select **Activate**.
+9.  In the Activate pane, under Microsoft Entra ID **PREMIUM P2**, select **Free trial** and then select **Activate**.
 10. In the navigation menu on the left, select **Overview**.
 11. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It might take a couple of minutes.
 12. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
