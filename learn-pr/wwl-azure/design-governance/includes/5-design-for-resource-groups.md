@@ -50,7 +50,7 @@ Tailwind Traders has two Azure-based applications (App1 and App2). Each applicat
 
 - **Consider resource life cycle**. Design your resource groups according to life cycle requirements. Do you want to deploy, update, and delete certain resources at the same time? If so, place these resources in the same resource group. 
 
-- **Consider administration overhead**. Include overhead planning in your strategy. How many resource groups would you like to manage? Does Tailwind Traders have centralized or decentralized Azure administrators?
+- **Consider administration overhead**. Include overhead planning in your strategy. How many resource groups would you like to manage? Does Tailwind Traders use centralized or decentralized Azure administrators?
 
 - **Consider resource access control**. Implement access control for your resource groups. At the resource group level, you can assign Azure policies, Azure roles, and resource locks. [Resource locks](/azure/azure-resource-manager/management/lock-resources?tabs=json) prevent unexpected changes to critical resources. 
 
