@@ -3,11 +3,12 @@ The security administrator for your organization provisioned Copilot. Since you'
 In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled. This exploration exercise does not accept any user inputs.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
-For this exercise you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -16,7 +17,7 @@ This exercise should take approximately **15** minutes to complete.
 
 #### Task: Explore the menu options
 
-In this task you start your exploration in the home menu.
+In this task, you start your exploration in the home menu.
 
 1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
@@ -77,7 +78,7 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Select the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example.
     1. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.
-    2. You have the option to start a new session. You can also duplicate or share this promptbook (hover over the icons on the top right of the promptbook window).  
+    2. Note the information about the promptbook and the available options. For this simulation you can't start a new session, you'll do that in a subsequent exercise. 
     1. Select **X** to close the window.
 
 1. Select **View the promptbook library**.
@@ -89,9 +90,9 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 #### Task: Explore the prompts and sources icon in the prompt bar
 
-At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task.  In subsequent exercises you'll enter inputs directly in the prompt bar.
+At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises you'll enter inputs directly in the prompt bar.
 
-1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompt icon** ![prompt icon](../media/prompt-icon.png).
+1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon** ![prompts icon](../media/prompt-icon.png).
     1. Select **See all promptbooks**
         1. Scroll to view all the available promptbooks.
         1. Select the **back-arrow** next to the search bar to go back.
@@ -100,13 +101,13 @@ At the bottom center of the page is the prompt bar. The prompt bar includes the 
         1. Select the **back-arrow** next to the search bar to go back.
 
 1. Select the **sources icon** ![sources icon](../media/sources-icon.png).
-    1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. Let's start by selecting **Plugins**.
+    1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
         1. Select whether you want to view all plugins, those that are enabled (on), or those that are disabled (off).
         1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
-        1. Some plugins require configuring parameters. Select the settings icon for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
+        1. Some plugins require configuring parameters. Select the **Set up** button for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
     1. You should still be in the Manage sources window. Select **Files**.
         1. Review the description.
-        1. Files can be deleted by selecting the trash bin icon and the toggle switch enables and disables access to the file.
+        1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you'll work with file uploads.
         1. Select **X** to close the manage sources window.
 
 #### Task:  Explore the help feature

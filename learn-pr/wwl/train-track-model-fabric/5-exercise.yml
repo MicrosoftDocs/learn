@@ -3,11 +3,13 @@ uid: learn.wwl.train-track-model-fabric.exercise
 title: Exercise - Train and track a model in Microsoft Fabric
 metadata:
   title: Exercise - Train and track a model in Microsoft Fabric
-  description: "Exercise - Train and track a model in Microsoft Fabric"
-  ms.date: 09/20/2023
+  description: Exercise - Train and track a model in Microsoft Fabric
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/20/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai

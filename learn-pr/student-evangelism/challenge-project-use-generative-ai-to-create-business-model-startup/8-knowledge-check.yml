@@ -3,13 +3,14 @@ uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup.
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check with Microsoft Copilot."
-  ms.date: 12/4/2023
+  description: Knowledge check with Microsoft Copilot.
   author: juliamuiruri4
   ms.author: juliamuiruri
-  ms.custom: team=nextgen
+  ms.date: 12/4/2023
   ms.topic: unit
-  ms.service: microsoft-copilot
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

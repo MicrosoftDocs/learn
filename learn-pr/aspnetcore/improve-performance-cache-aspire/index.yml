@@ -6,6 +6,7 @@ metadata:
   ms.date: 03/31/2024
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-aspire
   ms.custom:
@@ -26,10 +27,11 @@ roles:
 - developer
 - solution-architect
 products:
-- dotnet
-- vs
-- vs-code
-- dotnet-aspire
+  - dotnet
+  - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
 subjects:
 - custom-app-development
 units:
@@ -37,6 +39,7 @@ units:
 - learn.improve-performance-cache-aspire.caches-redis
 - learn.improve-performance-cache-aspire.redis-distributed-cache
 - learn.improve-performance-cache-aspire.redis-output-cache
+- learn.improve-performance-cache-aspire.customize-connection-strings
 - learn.improve-performance-cache-aspire.exercise-cache-data-redis
 - learn.improve-performance-cache-aspire.knowledge-check
 - learn.improve-performance-cache-aspire.summary

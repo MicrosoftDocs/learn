@@ -2,12 +2,14 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.exercise-add-to-index-using-push-api
 title: 'Exercise: Add to an index using the push API'
 metadata:
-  title: 'Exercise: Add to an index using the push API'
+  title: "Exercise: Add to an index using the push API"
   description: "Exercise: Add to an index using the push API"
-  ms.date: 09/27/2023
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 09/27/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

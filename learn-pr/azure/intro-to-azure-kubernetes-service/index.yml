@@ -3,6 +3,7 @@ uid: learn.intro-to-azure-kubernetes-service
 metadata:
   title: Introduction to Azure Kubernetes Service
   description: Get acquainted with the Azure Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
+  manager: rayoflores
   ms.date: 10/17/2023
   author: nickomang
   ms.author: nickoman

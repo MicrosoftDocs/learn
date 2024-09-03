@@ -3,12 +3,13 @@ uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
   title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
   description: "This is a computer vision solution using Azure IoT Edge"
-  ms.date: 02/12/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
-  ms.service: iot-edge
+  ms.custom: team=cloud_advocates
+  ms.service: azure-ai-services
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
 summary: "Create a computer vision solution on the IoT Edge using Azure AI services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
 abstract: |

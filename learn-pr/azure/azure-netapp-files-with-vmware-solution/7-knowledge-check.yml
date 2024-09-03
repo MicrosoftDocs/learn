@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 04/08/2024
+  ms.date: 07/03/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
@@ -23,8 +23,8 @@ quiz:
       explanation: "Azure NetApp Files is an Azure first-party service natively integrated into the Azure platform."
     - content: "For Azure NetApp Files technical support, you must contact NetApp."
       isCorrect: false
-      explanation: "Azure NetApp Files is an Azure first-party solution completely supported by Microsoft."
-  - content: "Which option isn't a best practice when deploying Azure NetApp Files as an AVS datastore?"
+      explanation: "Azure NetApp Files is an Azure first-party solution supported by Microsoft."
+  - content: "Which option isn't a best practice when you deploy Azure NetApp Files as an Azure VMware Solution (AVS) datastore?"
     choices: 
       - content: "Using a dedicated virtual network for your Azure NetApp Files volumes."
         isCorrect: false 
@@ -35,10 +35,10 @@ quiz:
       - content: "Enabling FastPath on the connection between your AVS private cloud and ExpressRoute gateway."
         isCorrect: false
         explanation: "Incorrect. Using FastPath on the connection between your AVS private cloud and ExpressRoute gateway ensures the best network performance between your AVS private cloud and the Azure NetApp Files service."
-      - content: "When deploying Azure NetApp Files, the Ultra service level should always be used to meet the performance needs of the workload."
+      - content: "When you deploy Azure NetApp Files, the Ultra service level should always be used to meet the performance needs of the workload."
         isCorrect: true 
         explanation: "Selecting the appropriate service level for your volume based on the workload demands prevents over-provisioning and wasted resources."
-  - content: "Which is not a primary business benefit of attaching Azure NetApp Files to AVS?"
+  - content: "Which of these benefits isn't a primary business benefit of attaching Azure NetApp Files to AVS?"
     choices:
     - content: "Reduced Azure VMware Solution CPU and memory costs."
       isCorrect: false
@@ -49,7 +49,7 @@ quiz:
     - content: "Built-in data protection features."
       isCorrect: false
       explanation: "Azure NetApp Files includes data protection features such as snapshots, backup, and cross-zone/region replication."
-    - content: "Provide a unified storage solution combing both file and block protocols."
+    - content: "Providing a unified storage solution combing both file and block protocols."
       isCorrect: true 
       explanation: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
 

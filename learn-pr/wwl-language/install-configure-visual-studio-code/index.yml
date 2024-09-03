@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.install-configure-visual-studio-code
 metadata:
-  title: Install and configure Visual Studio Code
+  title: Install and configure Visual Studio Code for C# development
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
   ms.date: 06/03/2024
   author: wwlpublish
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: dotnet-csharp
   ai-usage: human-only
-title: Install and configure Visual Studio Code
+title: Install and configure Visual Studio Code for C# development
 summary: Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications.
 abstract: |
   In this module, you will:

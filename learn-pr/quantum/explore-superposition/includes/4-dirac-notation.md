@@ -1,4 +1,7 @@
-How do we write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+How to write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+
+> [!NOTE]
+> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## What's Dirac bra-ket notation?
 
@@ -28,8 +31,6 @@ The `X` operator is also called the *Pauli-X gate*. It's a fundamental quantum o
 > [!NOTE]
 > Sometimes we talk about *quantum gates* instead of *quantum operations*. The term *quantum gate* is an analogy to classical logic gates. It's rooted in the early days of quantum computing when quantum algorithms were visualized as diagrams similar to circuit diagrams in classical computing.
 
-
-
 You can use an operator to put a qubit in superposition. The Hadamard operator, `H`, puts a qubit that's in the state $|0\rangle$ into superposition of $|0\rangle$ and $|1\rangle$ states. Mathematically, this equation is 
 
 $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle.$$
@@ -42,7 +43,7 @@ There are many interpretations of the concept of *measurement* in
 quantum mechanics, but the details are beyond the scope of this module. For
 quantum computing, you don't have to worry about it.
 
-In this module you understand measurement to be the informal idea of "observing" a qubit, which immediately collapses the quantum superposition to one of the two basis states that correspond to **0** and **1**.
+In this module, you understand measurement to be the informal idea of "observing" a qubit, which immediately collapses the quantum superposition to one of the two basis states that correspond to **0** and **1**.
 
 To learn more about measurement in the context of quantum mechanics and its historical discussion, see the Wikipedia article about the [Measurement problem](https://wikipedia.org/wiki/Measurement_problem).
 

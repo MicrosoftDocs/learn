@@ -5,7 +5,7 @@ You can specify the following next hop types when creating a user-defined route:
  -  Virtual appliance: A virtual appliance is a virtual machine that typically runs a network application, such as a firewall. To learn about various preconfigured network virtual appliances you can deploy in a virtual network, see the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/networking?page=1&subcategories=appliances). When you create a route with the virtual appliance hop type, you also specify a next hop IP address. The IP address can be:
     
     
-     -  The private IP address of a network interface attached to a virtual machine. Any network interface attached to a virtual machine that forwards network traffic to an address other than its own must have the Azure Enable IP forwarding option enabled for it. The setting disables Azure's check of the source and destination for a network interface. Learn more about how to enable IP forwarding for a network interface. Learn more about how to [enable IP forwarding for a network interface](/azure/virtual-network/virtual-network-network-interface#enable-or-disable-ip-forwarding). Though Enable IP forwarding is an Azure setting, you may also need to enable IP forwarding within the virtual machine's operating system for the appliance to forward traffic between private IP addresses assigned to Azure network interfaces. If the appliance needs to route traffic to a public IP address, it must either proxy the traffic or perform network address translation (NAT) from the source's private IP address to its own private IP address. Azure then performs NAT to a public IP address before sending the traffic to the Internet. To determine required settings within the virtual machine, see the documentation for your operating system or network application. To understand outbound connections in Azure, see [Understanding outbound connections](/azure/load-balancer/load-balancer-outbound-connections?toc=/azure/virtual-network/toc.json).<br>
+     -  The private IP address of a network interface attached to a virtual machine. Any network interface attached to a virtual machine that forwards network traffic to an address other than its own must have the Azure Enable IP forwarding option enabled for it. The setting disables Azure's check of the source and destination for a network interface. Learn more about how to [enable IP forwarding for a network interface](/azure/virtual-network/virtual-network-network-interface#enable-or-disable-ip-forwarding). Though Enable IP forwarding is an Azure setting, you may also need to enable IP forwarding within the virtual machine's operating system for the appliance to forward traffic between private IP addresses assigned to Azure network interfaces. If the appliance needs to route traffic to a public IP address, it must either proxy the traffic or perform network address translation (NAT) from the source's private IP address to its own private IP address. Azure then performs NAT to a public IP address before sending the traffic to the Internet. To determine required settings within the virtual machine, see the documentation for your operating system or network application. To understand outbound connections in Azure, see [Understanding outbound connections](/azure/load-balancer/load-balancer-outbound-connections?toc=/azure/virtual-network/toc.json).<br>
      -  The private IP address of an Azure internal load balancer. A load balancer is often used as part of a high availability strategy for network virtual appliances.
 
 You can define a route with 0.0.0.0/0 as the address prefix and a next hop type of virtual appliance. This configuration allows the appliance to inspect the traffic and determine whether to forward or drop the traffic. If you intend to create a user-defined route that contains the 0.0.0.0/0 address prefix, read 0.0.0.0/0 address prefix first.
@@ -40,6 +40,9 @@ $param = @{ Name = 'StorageRoute' AddressPrefix = 'Storage' NextHopType = 'Virtu
 
 
 
+
+
+
 ```
 
 The same command for CLI is as follows:
@@ -48,6 +51,9 @@ The same command for CLI is as follows:
 
 ```azurecli
 az network route-table route create \ --resource-group MyResourceGroup \ --route-table-name MyRouteTable \ --name StorageRoute \ --address-prefix Storage \ --next-hop-type VirtualAppliance \ --next-hop-ip-address 10.0.100.4
+
+
+
 
 
 

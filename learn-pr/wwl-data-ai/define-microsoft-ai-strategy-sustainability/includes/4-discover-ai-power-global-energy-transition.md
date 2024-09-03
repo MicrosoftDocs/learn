@@ -12,6 +12,8 @@ EDP is working hard to build a decarbonized, less polluted world. Their objectiv
 
 Related to this goal, EDP commits to produce **100 percent renewable energy by 2030** and to become **net zero by 2040**. To keep these impressive promises, they rely on Microsoft AI and IoT to help them with several projects.
 
+![Photograph showing of person working on solar panels holding a tablet.](../media/4-energy.jpg)
+
 ## The solution
 
 The organization developed several AI and IoT solutions based on Azure Machine Learning and Azure AI Services, focusing on generative AI in **Azure OpenAI Service**.
@@ -23,10 +25,13 @@ The organization developed several AI and IoT solutions based on Azure Machine L
 * **Generative AI adoption**: The organization is committed to implementing generative AI. They’re accelerating their adoption across all business units to generate business value.
 * **Training and upskilling on AI for business**: Effective AI adoption relies on empowering employees to incorporate AI into their routines. For this purpose, EDP is using Microsoft training materials on AI for business, such as [Transform your business with Microsoft AI](/training/paths/transform-your-business-with-microsoft-ai/).
 
+
 ## The results
 
 Now, the staff in EDP reports they feel more **inspired to innovate**. The organization is providing the tools and support required to experiment with AI and transform the way they do business.
 
 Above all, the organization is achieving its **energy transition goals** thanks to these AI initiatives. Furthermore, it’s also gaining resilience to move forward in this transition journey.
+
+To learn more, read [EDP: powering the global energy transition using Microsoft Intelligent Data Platform, AI and IoT technology](https://aka.ms/edp-customer-story).
 
 Next, let’s discuss another sustainability success story, this time focused on protecting natural resources.

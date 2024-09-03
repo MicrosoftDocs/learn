@@ -13,7 +13,7 @@ To enable and configure Defender for Storage at scale with an Azure built-in pol
     :::image type="content" source="../media/policy-definitions-example-4d8af992.png" alt-text="Screenshot showing how to configure and enable Microsoft Defender for Storage.":::
     
 4.  Select the policy and review it.
-5.  Select **Assign** and edit the policy details. You can fine-tune, edit, and add custom rules to the policy.<br>
+5.  Select **Assign** and edit the policy details. You can fine-tune, edit, and add custom rules to the policy.
     
     :::image type="content" source="../media/policy-assign-901a7720.png" alt-text="Screenshot showing an example of how to assign and edit policy details.":::
     

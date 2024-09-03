@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
 title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
 summary: Perform operations on multiple items in single logical units of work.
 abstract: |

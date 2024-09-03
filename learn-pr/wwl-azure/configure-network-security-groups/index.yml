@@ -3,13 +3,13 @@ uid: learn.wwl.configure-network-security-groups
 metadata:
   title: Configure network security groups
   description: "Learn how to implement network security groups, and ensure network security group rules are correctly applied."
-  ms.date: 03/26/2024
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: azure-virtual-network
   ai-usage: ai-assisted
 title: Configure network security groups
 summary: Learn how to implement network security groups, and ensure network security group rules are correctly applied.

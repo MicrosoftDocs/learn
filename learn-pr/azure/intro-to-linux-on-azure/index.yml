@@ -3,6 +3,7 @@ uid: learn.introduction-to-linux-on-azure
 metadata:
   ms.author: carols
   author: fossygirl
+  manager: rayoflores
   ms.date: 05/01/2023
   title: Introduction to Linux on Azure
   description: This module introduces the services and platforms that Azure provides for Linux environments.

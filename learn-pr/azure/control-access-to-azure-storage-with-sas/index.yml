@@ -3,6 +3,7 @@ uid: learn.control-access-to-azure-storage-with-sas
 metadata:
   title: Control access to Azure Storage with shared access signatures
   description: Grant access to data stored in your Azure Storage accounts securely by using shared access signatures.
+  manager: akashdubey
   ms.date: 09/13/2023
   author: normesta
   ms.author: normesta

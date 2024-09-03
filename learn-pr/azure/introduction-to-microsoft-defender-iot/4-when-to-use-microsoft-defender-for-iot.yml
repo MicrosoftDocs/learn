@@ -6,8 +6,8 @@ metadata:
   title: When to use Microsoft Defender for IoT
   description: Learn when to use Microsoft Defender for IoT.
   ms.date: 04/03/2023
-  author: batamig
-  ms.author: bagol
+  author: limwainstein
+  ms.author: lwainstein
   manager: raynew
   ms.topic: unit
 durationInMinutes: 3

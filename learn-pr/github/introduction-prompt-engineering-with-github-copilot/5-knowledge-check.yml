@@ -3,11 +3,13 @@ uid: learn.github.introduction-prompt-engineering-with-github-copilot.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is part of the "Introduction to prompt engineering with GitHub Copilot" module.
-  ms.date: 11/10/2023
+  description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
   author: a-a-ron
   ms.author: aastewar
+  ms.date: 11/10/2023
   ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 6
 quiz:
   title: Check your knowledge

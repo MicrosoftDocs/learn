@@ -3,11 +3,12 @@ uid: learn.aks-manage-application-state
 metadata:
   title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
   description: Create and manage a stateful application with an external storage by using Azure Cosmos DB and Azure Kubernetes Service
+  manager: rayoflores
   ms.date: 01/04/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-kubernetes-service
   ms.custom:
     - build-2023
     - build-2023-dataai

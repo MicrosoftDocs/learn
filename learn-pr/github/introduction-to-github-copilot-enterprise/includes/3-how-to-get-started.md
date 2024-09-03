@@ -2,7 +2,7 @@ To use GitHub Copilot for your enterprise organization, you must have a GitHub E
 
 - Set up a Copilot business account.
 - Set up an Enterprise account: You need a GitHub Enterprise Cloud account. If you don't have one, you can start a free trial.
-- Once GitHub Copilot Enterprise is enabled at the enterprise level, you can configure GitHub Copilot settings for each organization in your enterprise.
+- Once an admin enables GitHub Copilot Enterprise at the enterprise level, you can configure GitHub Copilot settings for each organization in your enterprise.
 
 ## Enable GitHub Copilot Enterprise for your enterprise
 
@@ -27,7 +27,7 @@ Follow these steps to enforce a policy to manage the use of GitHub Copilot Enter
 
 ### Enable access to GitHub Copilot for selected users in your organization
 
-First, complete steps 1-2 in the preceding enforce a policy steps. Then follow steps 1-3 below.
+First, complete steps 1-2 in the preceding “Enforce a policy” steps. Then follow steps 1-3 below.
 
 1. To enable GitHub Copilot for select users in your organization, select **Selected teams/users** under **User permissions**.
 1. In the **Confirm seat assignment** dialog, confirm that you want to enable GitHub Copilot for selected teams/users in your organization, then select **Confirm**.

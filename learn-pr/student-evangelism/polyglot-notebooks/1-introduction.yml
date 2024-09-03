@@ -4,10 +4,12 @@ title: Introduction to Polyglot Notebook
 metadata:
   title: Introduction to Polyglot Notebook
   description: Introduction to Polyglot Notebook
-  ms.date: 04/03/2024
   author: japhletnwamu
   ms.author: japhletnwamu
+  ms.date: 04/03/2024
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
 durationInMinutes: 3
 content: |

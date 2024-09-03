@@ -1,7 +1,8 @@
 In this exercise, you go through the process of integrating a knowledge base into copilot, using file upload and then you do some basic testing with prompts that pull information from that knowledge base.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -33,6 +34,7 @@ In this task, you start by attempting a file upload but realize that there's no 
 
 1. From the manage sources page, select **Files**.
 1. If there's no option to actually upload a file, it's because the owner setting that controls this option has been changed from the default. After conferring with the other Copilot owner, you realize this was disabled in error and agree this should be set.
+    1. Close the manage source window by selecting the **X** on the top right corner of the window.
     1. Select the **Home** menu icon (hamburger icon).
     1. Select **Owner settings**.
     1. Scroll-down to **Files**. Select the drop-down and set it to **Contributors and owners can upload files**.
@@ -47,9 +49,9 @@ In this task, you upload a file and proceed to run prompts that use that file.
 
 1. From the Manage sources page, select **Files**.
 
-1. Select **Upload file**. Upload the file **Woodgrove Corporate Data Handling Policy.pdf** that you previously downloaded or created.
-1. With the files uploaded, you can now try some prompts.
-1. In the prompt bar, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. Enter the following prompts:
+1. Select **Upload file**. Upload the file **Woodgrove Corporate Data Handling Policy.pdf** that you previously downloaded or created. Once the file is uploaded, close the manage sources window.
+
+1. With the files uploaded, you can now try some prompts. In the prompt bar, you need to mention "uploaded files" if you want Copilot to reason over your available files. You can also include the file name if you would like to guide Copilot to reason over a specific file. Enter the following prompts. You can use copy/paste:
     1. Prompt: **Summarize the uploaded file Woodgrove Corporate Data Handling Policy.pdf**. The process log shows that Copilot chose file uploads and successfully processed the prompt.
     1. Prompt: **Based on the uploaded file Woodgrove Corporate Data Handling Policy.pdf what data handling policies should I consider implementing in Microsoft Purview**. The process log shows that Copilot chose Microsoft Purview. The prompt response demonstrates the power of Copilot. Copilot maintains the context of the previous prompt response and integrates that information with the capability of Microsoft Purview. Although not shown in this exercise, Copilot can reason across multiple files.
 

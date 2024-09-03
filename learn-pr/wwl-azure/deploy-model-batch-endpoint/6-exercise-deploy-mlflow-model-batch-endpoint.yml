@@ -3,11 +3,13 @@ uid: learn.wwl.deploy-model-batch-endpoint.exercise-deploy-mlflow-model-batch-en
 title: Exercise - Deploy an MLflow model to a batch endpoint
 metadata:
   title: Exercise - Deploy an MLflow model to a batch endpoint
-  description: "Exercise - Deploy an MLflow model to a batch endpoint"
-  ms.date: 09/22/2023
+  description: Exercise - Deploy an MLflow model to a batch endpoint
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 09/22/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-deploy-mlflow-model-batch-endpoint.md)]

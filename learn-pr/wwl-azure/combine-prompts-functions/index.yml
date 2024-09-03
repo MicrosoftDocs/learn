@@ -3,13 +3,13 @@ uid: learn.wwl.combine-prompts-functions
 metadata:
   title: Combine Prompts and Functions
   description: "Learn how combining native functions with prompts can accomplish customized tasks with the Semantic Kernel SDK."
-  ms.date: 06/13/2024
+  ms.date: 07/04/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure-ai-services
+  ms.service: semantic-kernel
   ai-usage: human-only
 title: Combine Prompts and Functions
 summary: This module demonstrates how&nbsp;to combine functions and prompts with the Semantic Kernel SDK. Nesting functions&nbsp;within prompts can allow your code to complete tasks large language models can't typically complete on their own.

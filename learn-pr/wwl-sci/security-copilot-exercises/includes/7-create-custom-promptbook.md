@@ -1,7 +1,8 @@
 In this exercise, you create a custom promptbook from an existing session and then run that promptbook.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -21,11 +22,11 @@ In this task, you create the promptbook. As part of the process, you templatize 
 
 1. There’s a session from earlier in the day that identified failed logins that you want to use. Since that session isn't listed on the landing page, select **View all sessions**.
 
-1. Select the session labeled, **what are the last three failed logins**.
+1. Select the session labeled, **what are the last three failed logins**, it's the last session on the My Sessions list.
 
 1. The complete session is displayed. Scroll up/down to verify two prompts are listed.
 
-1. To include a subset of all the prompts, you can select the box next to each individual prompt. Or you can select the box next to the pin icon to include all the prompts. In this case, you want to select all the prompts from the session.
+1. To include a subset of all the prompts, you can select the box next to each individual prompt. Or you can select the box next to the pin icon to include all the prompts. In this case, you want to select all the prompts from the session. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select all the prompts.
 
 1. Now that you’ve selected the prompts, select the **Create promptbook** ![sources icon](../media/create-promptbook-icon.png) icon. The Create a promptbook window opens. Here you populate the name, tags, and description fields for the promptbook, you configure an input parameter, and add a prompt. For the simulation, we've provided the input values to use. You can use copy/paste to enter those values or type them in as shown.
     1. Name: **Failed logins**

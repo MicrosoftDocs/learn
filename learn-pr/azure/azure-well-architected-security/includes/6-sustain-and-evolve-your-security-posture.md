@@ -44,7 +44,7 @@ Threats can be introduced as part of your change management. Integrating scanner
 
 *Applying the approach and outcomes*
 
-- The team engages with a well-know Microsoft partner specializing in cloud security to discuss penetration testing.
+- The team engages with a well-known Microsoft partner specializing in cloud security to discuss penetration testing.
 - The workload team signs a Statement of Work for quarterly penetration testing service, mixing in one white-box test per year to ensure higher confidence.
 - The consulting team also helps the dev team get antimalware installed on dev boxes and the self-hosted build agents.
 - These measures give the workload team and the stakeholders a high degree of confidence that they’ll be prepared for evolving threats moving forward. 

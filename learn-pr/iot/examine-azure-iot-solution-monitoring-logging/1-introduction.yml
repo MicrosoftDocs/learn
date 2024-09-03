@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/08/2024
   author: kgremban
   ms.author: kgremban
-  ms.topic: module-standard-task-based
-  ms.service: iot-hub
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

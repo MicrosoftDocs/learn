@@ -1,141 +1,113 @@
-##
-
-This module walks you through the process of provisioning the "Data landing zone" into your own Azure subscription
+This exercise walks you through the process of provisioning the Data landing zone into your own Azure subscription.
 
 ### Step 1 - Complete Prerequisites
 
-A Data Management Zone deployed. Refer to Exercise 1 for details.
+First, make sure you've completed the steps in this module's previous exercise and have deployed a  Data Management Zone.
 
 ### Step 2 - Initiate the workflow to complete the data management landing zone using the portal wizard UI
 
+Use the following template to set up the data landing zone in your Azure subscription.
+
 <a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataLandingZone.json"> ![Deploy DLZ to Azure](../media/deploy-to-azure.svg) </a>
 
-[![DLZ creation 1](../media/data-landing-zone-creation-1.png)](../media/data-landing-zone-creation-1.png)
+:::image type="content" source="../media/data-landing-zone-creation-1.png" alt-text="Screenshot of the initial step in the template." lightbox="../media/data-landing-zone-creation-1.png":::
 
-In this Step 2, provide the following information
+Provide the following information in the template:
 
-- Subscription: Select the subscription to deploy the Data Landing Zone to.
+- **Subscription**: Select the subscription to which to deploy the Data Landing Zone.
 
-- Location: Select from the dropdown. If there are no organizational policies influencing the location, it's a good idea to pick a region that is physically close to you. Verify that this region is supported for Enterprise Scale Analytics. A list of supported region 's available here
+- **Location**: Select a location from the drop-down. If there are no organizational policies influencing the location, it's a good idea to pick a region that is physically close to you. Verify that the region you choose supports Enterprise Scale Analytics.
 
-- Environment: We recommend you choose Development
+- **Environment**: We recommend you choose **Development**.
 
-- Data Landing zone prefix: A prefix added to all the deployed resource groups and resources to make them unique within the subscription. The length can be a max of 10 alphanumeric characters.
+- **Data Landing zone prefix**: Enter a prefix that will be added to all the deployed resource groups and resources to make them unique within the subscription.
 
-### Step 3 - Obtain Azure Purview Self-hosted Integration Runtime Authentication Key
+### Step 3 - Obtain Microsoft Purview self-hosted integration runtime authentication key
 
-[![Integration RT Auth](../media/integration-runtime-settings-auth-key.png)](../media/integration-runtime-settings-auth-key.png)
+Use the [guidance in this article](/purview/manage-integration-runtimes) to find and copy your Microsoft Purview integration runtime keys.
 
-### Step 4 - select next for General Settings
+:::image type="content" source="../media/integration-runtime-settings-auth-key.png" alt-text="Screenshot of the Microsoft Purview integration runtime authentication keys." lightbox="../media/integration-runtime-settings-auth-key.png":::
 
-[![DLZ Creation 2](../media/data-landing-zone-creation-2.png)](../media/data-landing-zone-creation-2.png)
+### Step 4 - General settings
 
-In this step 4, provide the following information
+:::image type="content" source="../media/data-landing-zone-creation-2.png" alt-text="Screenshot of the template's General Settings tab." lightbox="../media/data-landing-zone-creation-2.png":::
 
-- Service Settings: This step is required to set an administrator password for the Synapse workspaces, SQL Servers and potentially Self-hosted integration runtimes hosted on virtual machine scale set.
+Select the **General Settings** tab in the template and provide the following information:
 
-- Data Governance Settings: Select the Purview account from the dropdown to which you want to connect Synapse and Data Factory.
+- **Service Settings**: This step is required to set an administrator password for the Synapse workspaces, SQL Servers, and potentially Self-hosted integration runtimes hosted on the virtual machine scale set.
 
-- Self-hosted Integration Runtime Settings: Specify whether you would like to deploy Self-hosted Integration Runtimes into your Data Landing Zone.
+- **Data Governance Settings**: Select the Purview account from the drop-down to which you want to connect Synapse and Data Factory.
 
-- Purview Self-hosted Integration Runtime Authentication Key: Paste the previously captured SHIR authentication key. If you don’t have the key,  follow the steps on Create Purview SHIR to generate and copy it.
+- **Self-hosted Integration Runtime Settings**: Specify whether you'd like to deploy Self-hosted Integration Runtimes into your Data Landing Zone.
 
-### Step 5 - select next for Connectivity Settings
+- **Purview Self-hosted Integration Runtime Authentication Key**: Paste the authentication key you copied in step 3.
 
-[![DLZ Creation 3](../media/data-landing-zone-creation-3.png)](../media/data-landing-zone-creation-3.png)
+### Step 5 - Connectivity settings
 
-[![DLZ Creation 4](../media/data-landing-zone-creation-4.png)](../media/data-landing-zone-creation-4.png)
+:::image type="content" source="../media/data-landing-zone-creation-3.png" alt-text="Screenshot of the template's Connectivity Settings tab (1 of 2)." lightbox="../media/data-landing-zone-creation-3.png":::
 
-In this Step 5, provide the following information
+:::image type="content" source="../media/data-landing-zone-creation-4.png" alt-text="Screenshot of the template's Connectivity Settings tab (2 of 2)." lightbox="../media/data-landing-zone-creation-4.png":::
 
-- Virtual Network Configuration: This one is an optional step required only if the default VNET configuration has to be altered. We don’t recommend making any changes to these settings.
+Select the **Connectivity Settings** tab in the template and provide the following information:
 
-- Data Management Zone Virtual Network Configuration: Select the VNET of your Data Management Zone to peer it with your Data Landing Zone.
+- **Virtual Network Configuration**: This is an optional step required only if the default virtual network configuration has to be altered. We don't recommend making any changes to these settings.
 
-- Shared Network Infrastructure Configuration: In, “Existing Firewall” select “Azure Firewall”. Then, select the Azure Firewall Subscription, and finally under “Azure Firewall” select the [XXXX]-dev-firewall.
+- **Data Management Zone Virtual Network Configuration**: Select your Data Management Zone's virtual network to peer it with your Data Landing Zone.
 
-- Private DNS Zones: On the “DNS A-Records are deployed through Azure Policy” radio button, choose “No” and select from the multiple dropdowns the corresponding private DNS zones.
+- **Shared Network Infrastructure Configuration**: Select **Azure Firewall** in the **Existing Firewall** drop-down, then select your subscription in the **Azure Firewall Subscription** drop-down. Select your **[XXXX]-dev-firewall** in the **Azure Firewall** drop-down.
 
-### Step 6a - select "Review + Create" for final review and create
+- **Private DNS Zones**: Select the **No** radio button in the **DNS A-Records are deployed through Azure Policy** field and select the corresponding private DNS zones from the multiple drop-downs.
 
-[![DLZ Deployment Create](../media/data-landing-zone-deployment-create.png)](../media/data-landing-zone-deployment-create.png)
+### Step 6 - Review and create
 
-This will trigger the deployment validation to check for any errors.
+:::image type="content" source="../media/data-landing-zone-deployment-create.png" alt-text="Screenshot of the template's Review + create tab." lightbox="../media/data-landing-zone-deployment-create.png":::
 
-### Step 6b - click " Create"
-
-This will trigger the deployment. The deployment will take around 20 minutes to complete.
+Select the **Review + create** tab, then select the **Review + create** button at the bottom of the screen. The deployment will validate and check for errors. When the validation passes, select **Create**. The deployment can take around 20 minutes to complete.
 
 ### Step 7 - Validation after deployment
 
-#### You can use the details here to validate the deployment.
+You can use the details here to validate the deployment.
 
-##### Resource Group Name - XXXX-dev-network
+- **Resource group - XXXX-dev-network**: This resource group is a placeholder for hosting any automation accounts.
 
-This resource group is a placeholder for hosting any automation account
+    :::image type="content" source="../media/data-landing-zone-network-validation.png" alt-text="Screenshot of the DLZ Network group." lightbox="../media/data-landing-zone-network-validation.png":::
 
-[![DLZ Network Validation](../media/data-landing-zone-network-validation.png)](../media/data-landing-zone-network-validation.png)
+- **Resource group - XXXX-dev-mgmt**: This resource group is a placeholder for hosting any management functions.
 
-##### Resource Group Name - XXXX-dev-mgmt
+    :::image type="content" source="../media/data-landing-zone-mgmt-validation.png" alt-text="Screenshot of the DLZ MGT group." lightbox="../media/data-landing-zone-mgmt-validation.png":::
 
-This resource group is a placeholder for hosting any management function
+- **Resource group - XXXX-dev-logging**: This resource group is a placeholder for hosting data-product specific logging.
 
-[![DLZ MGT Validation](../media/data-landing-zone-mgmt-validation.png)](../media/data-landing-zone-mgmt-validation.png)
+    :::image type="content" source="../media/data-landing-zone-logging-validation.png" alt-text="Screenshot of the DLZ Logging group." lightbox="../media/data-landing-zone-logging-validation.png":::
 
-##### Resource Group Name - XXXX-dev-logging
+- **Resource group - XXXX-dev-runtimes**: This resource group is a placeholder for hosting data product specific CI/CD runtimes.
 
-This resource group is a placeholder for hosting data product specific logging
+    :::image type="content" source="../media/data-landing-zone-runtimes-validation.png" alt-text="Screenshot of the DLZ Runtimes group." lightbox="../media/data-landing-zone-runtimes-validation.png":::
 
-[![DLZ Logging Validation](../media/data-landing-zone-logging-validation.png)](../media/data-landing-zone-logging-validation.png)
+- **Resource group - XXXX-dev-storage**: This resource group is a placeholder for hosting data-product specific storage.
 
-##### Resource Group Name - XXXX-dev-runtimes
+    :::image type="content" source="../media/data-landing-zone-storage-validation.png" alt-text="Screenshot of the DLZ Storage group." lightbox="../media/data-landing-zone-storage-validation.png":::
 
-This resource group is a placeholder for hosting data product specific CI/CD runtimes
+- **Resource group - XXXX-dev-external-storage**: This resource group is a placeholder for hosting data-product specific external storage.
 
-[![DLZ Runtimes Validation](../media/data-landing-zone-runtimes-validation.png)](../media/data-landing-zone-runtimes-validation.png)
+    :::image type="content" source="../media/data-landing-zone-external-storage-validation.png" alt-text="Screenshot of the DLZ External Storage group." lightbox="../media/data-landing-zone-external-storage-validation.png":::
 
-##### Resource Group Name - XXXX-dev-storage
+- **Resource group - XXXX-dev-metadata**: This resource group is a placeholder for hosting data-product specific metadata.
 
-This resource group is a placeholder for hosting data product specific storage
+    :::image type="content" source="../media/data-landing-zone-metadata-validation.png" alt-text="Screenshot of the DLZ Metadata group." lightbox="../media/data-landing-zone-metadata-validation.png":::
 
-[![DLZ Storage Validation](../media/data-landing-zone-storage-validation.png)](../media/data-landing-zone-storage-validation.png)
+- **Resource group - XXXX-dev-shared-integration**: This resource group is a placeholder for hosting centralized, shared integration services.
 
-##### Resource Group Name - XXXX-dev-external-storage
+    :::image type="content" source="../media/data-landing-zone-shared-integration-validation.png" alt-text="Screenshot of the DLZ Shared Integration group." lightbox="../media/data-landing-zone-shared-integration-validation.png":::
 
-This resource group is a placeholder for hosting data product specific external storage
+- **Resource group - XXXX-dev-shared-product**: This resource group is a placeholder for hosting shared product services.
 
-[![DLZ External Storage Validation](../media/data-landing-zone-external-storage-validation.png)](../media/data-landing-zone-external-storage-validation.png)
+    :::image type="content" source="../media/data-landing-zone-shared-product-validation.png" alt-text="Screenshot of the DLZ Shared Product group." lightbox="../media/data-landing-zone-shared-product-validation.png":::
 
-##### Resource Group Name - XXXX-dev-metadata
+- **Resource group - XXXX-dev-di001**: This resource group is a placeholder for hosting data-product specific integration.
 
-This resource group is a placeholder for hosting data product specific metadata
+    :::image type="content" source="../media/data-landing-zone-data-integration-validation.png" alt-text="Screenshot of the DLZ Data Integration group." lightbox="../media/data-landing-zone-data-integration-validation.png":::
 
-[![DLZ Metadata Validation](../media/data-landing-zone-metadata-validation.png)](../media/data-landing-zone-metadata-validation.png)
+- **Resource group - XXXX-dev-dp001**: This resource group is a placeholder for hosting a specific data product.
 
-##### Resource Group Name - XXXX-dev-shared-integration
-
-This resource group is a placeholder for hosting centralized shared integration services
-
-[![DLZ Shared Integration Validation](../media/data-landing-zone-shared-integration-validation.png)](../media/data-landing-zone-shared-integration-validation.png)
-
-##### Resource Group Name - XXXX-dev-shared-product
-
-This resource group is a placeholder for hosting shared product services
-
-[![DLZ Shared Product Validation](../media/data-landing-zone-shared-product-validation.png)](../media/data-landing-zone-shared-product-validation.png)
-
-##### Resource Group Name - XXXX-dev-di001
-
-This resource group is a placeholder for hosting data product specific integration
-
-[![DLZ Data Integration Validation](../media/data-landing-zone-data-integration-validation.png)](../media/data-landing-zone-data-integration-validation.png)
-
-##### Resource Group Name - XXXX-dev-dp001
-
-This resource group is a placeholder for hosting a specific data product
-
-[![DLZ Data Production Validation](../media/data-landing-zone-data-product-validation.png)](../media/data-landing-zone-data-product-validation.png)
-
-### Other references
-
-<a href="/azure/cloud-adoption-framework/scenarios/data-management">Data Management and Analytics</a>
+    :::image type="content" source="../media/data-landing-zone-data-product-validation.png" alt-text="Screenshot of the DLZ Data Production group." lightbox="../media/data-landing-zone-data-product-validation.png":::

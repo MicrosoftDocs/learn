@@ -3,12 +3,13 @@ uid: learn.advanced-github-copilot.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Review advanced features in GitHub Copilot."
-  ms.date: 5/10/2024
+  description: Review advanced features in GitHub Copilot.
   author: abrilurena
   ms.author: abrilu
+  ms.date: 5/10/2024
   ms.topic: unit
-  ms.custom:
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 5
 content: |
 quiz:

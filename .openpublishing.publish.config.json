@@ -118,5 +118,10 @@
     }
   ],
   "need_generate_pdf_url_template": false,
-  "enable_incremental_build": false
+  "enable_incremental_build": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    "learn-pr/wwl-data-ai/.openpublishing.redirection.wwl-data-ai.json",
+    "learn-pr/wwl-sci/.openpublishing.redirection.wwl-sci.json"
+  ]
 }

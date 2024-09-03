@@ -2,7 +2,7 @@ To integrate resources in an Azure virtual network with resources in your on-pre
 
 Your manufacturing company wants to migrate a business-critical database to Azure. Client applications on desktop computers, laptops, and mobile devices need constant access to the database as if the database remained in the on-premises network. You want to move the database server without affecting users.
 
-In this unit, you look at a typical on-premises network design and compare it to a typical Azure network design. You'll also learn about requirements for IP addressing when integrating an Azure network with on-premises networks.
+In this unit, you look at a typical on-premises network design and compare it to a typical Azure network design. You learn about requirements for IP addressing when integrating an Azure network with on-premises networks.
 
 ## On-premises IP addressing
 
@@ -24,6 +24,10 @@ The perimeter network and internal zone have private IP addresses. In the perime
 - 192.168.0.0 to 192.168.255.255
 
 The administrator can add or remove on-premises subnets to accommodate network devices and services. The number of subnets and IP addresses you can have in your on-premises network depends on the Classless Inter-Domain Routing (CIDR) for the IP address block.
+
+## CIDR
+
+Classless Inter-Domain Routing (CIDR) is a method for allocating IP addresses and routing Internet Protocol packets. CIDR allows for more efficient use of IP address space by enabling the creation of variable-length subnet masks (VLSMs), which can allocate IP addresses in a more granular and flexible manner. This method helps to reduce the wastage of IP addresses and improves the scalability of the network. CIDR notation represents an IP address followed by a slash and a number; 192.168.0.0/24. The number indicates the length of the subnet mask.
 
 ## Azure IP addressing
 

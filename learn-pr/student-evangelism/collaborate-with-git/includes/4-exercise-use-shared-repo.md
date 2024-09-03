@@ -72,7 +72,7 @@ Creating a bare repo for sharing is easy:
 1. Check for this output:
 
     ```output
-    Branch main set up to track remote branch main from origin.
+    branch 'main' set up to track 'origin/main'.
     ```
 
    Git would complain if you try to run this command before the initial push, because the new repository had no branches. Git can't track a branch that doesn't exist. All Git is doing under the hood is looking in `.git/refs/remotes/origin` for a file named *trunk*.
@@ -118,7 +118,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. Open *index.html* and replace the `<hr>` element with this line (found at the end of the `<body>` element):
+1. Open *index.html* by using `code index.html` and replace the `<hr>` element with this line (found at the end of the `<body>` element):
 
     ```html
     <footer><hr>Copyright (c) 2021 Contoso Cats</footer>
@@ -174,7 +174,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     Then, save the file and close the editor. 
  
-1. Then, open *site.css* in the *CSS* folder and add the following line at the bottom:
+1. Then, open *site.css* in the *CSS* folder by using `code CSS/site.css` and add the following line at the bottom:
 
     ```css
     nav { background-color: #C0D8DF; }

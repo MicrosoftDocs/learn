@@ -1,14 +1,14 @@
-Azure Arc-enabled SQL Managed Instance minimizes considerably the administrative overhead associated with managing on-premises SQL Server instances. However, there are several configuration, management, and maintenance tasks that typically follow the initial deployment.
+An Azure Arc-enabled SQL Managed Instance considerably minimizes the administrative overhead associated with managing on-premises SQL Server instances. However, there are several configuration, management, and maintenance tasks that typically follow the initial deployment.
 
 ## Azure Arc-enabled SQL Managed Instance management tasks
 
-The tasks that you need to perform following deployment may fall into categories like:
+The tasks that you must perform following deployment can fall into the following categories:
 
 - Accommodate any post-installation adjustments necessitated by changing requirements
 - Apply standard operating procedures
 - Apply changes required by use of the indirectly connected mode
 
-For example, you might find out that you underestimated the demand for data services residing in your overseas data centers and you need to allocate to them more vCore or memory resources. You might also decide to automate upgrades to the managed instance hosting the US government contracts data. In general, the most common management tasks include:
+For example, you might find out that you underestimated the demand for data services residing in your overseas data centers and you need to allocate more vCore or memory resources to them. You might also decide to automate upgrades to the managed instance hosting the US government contracts data. In general, these are some of the most common management tasks:
 
 - Enable SQL Agent
 - Modify instance size (vCores and memory)
@@ -17,7 +17,7 @@ For example, you might find out that you underestimated the demand for data serv
 - Set up replicas
 - Adjust the time zone
 - Enable trace flags
-- Export and uploading usage details
+- Export and upload usage details
 - Set up a maintenance window
 - Upgrade images
 
@@ -27,21 +27,21 @@ SQL Server agent is one of the more prominent features that distinguishes both A
 
 ### Modify instance size (vCores and memory)
 
-Depending on the changes in compute utilization levels, you might want to increase or decrease the numbers that determine the number of vCores and the amount of memory allocated to your managed instance. You can update these values by running the `az sql m-arc update` command and assigning the desired values to the `--cores-limit`, `--cores-request`, `--memory-limit`, and `--memory-request` parameters. To validate that the changes took effect, use the `az sql mi-arc` show command.
+Depending on the changes in compute utilization levels, you might want to increase or decrease the values that determine the number of vCores and the amount of memory allocated to your managed instance. You can update these values by running the `az sql m-arc update` command and assigning the desired values to the `--cores-limit`, `--cores-request`, `--memory-limit`, and `--memory-request` parameters. To validate that the changes took effect, use the `az sql mi-arc` show command.
 
 ### Set the license type
 
 Azure Arc-enabled SQL Managed Instance offers three pricing options:
 
-- BasePrice: This option takes into account the SQL Server AHB discount.
-- LicenseIncluded:  This option excludes the SQL Server AHB discount.
-- DisasterRecovery:  This option applies to instances used exclusively for disaster recovery. 
+- `BasePrice`: This option takes into account the Azure Hybrid Benefit for SQL Server discount.
+- `LicenseIncluded`: This option excludes the Azure Hybrid Benefit for SQL Server discount.
+- `DisasterRecovery`: This option applies to instances used exclusively for disaster recovery.
 
-To set the appropriate licensing option, use the `--license-type` parameter of the `az sql m-arc update` command. The default value is `LicenseIncluded`. 
+To set the appropriate licensing option, use the `--license-type` parameter of the `az sql m-arc update` command. The default value is `LicenseIncluded`.
 
 ### Implement readable secondaries
 
-When deploying Azure Arc-enabled SQL Managed Instance in the Business Critical service tier with two or more replicas, by default, one secondary replica is automatically configured as readableSecondary. If this is not your intention, you can either remove that secondary or add extra ones by running the `az sql mi-arc update` command with the `--readable-secondaries` parameter. Set its value to the total number of secondaries you want to configure.
+When deploying an Azure Arc-enabled SQL Managed Instance in the Business Critical service tier with two or more replicas, one secondary replica is automatically configured as `readableSecondary` by default. If that's not your intention, you can either remove that secondary or add extra ones by running the `az sql mi-arc update` command with the `--readable-secondaries` parameter. Set its value to the total number of secondaries you want to configure.
 
 ### Set up replicas
 
@@ -52,25 +52,25 @@ With the Business Critical service tier, you can optimize the level of resilienc
 
 ### Adjust the time zone
 
-Coordinated Universal Time (UTC) is the recommended time zone for the data tier of new cloud and hybrid solutions because it eliminates ambiguity. However, Azure Arc-enabled SQL Managed Instance, similar to its cloud counterpart, supports selecting any time zone to accommodate the needs of existing applications that store date and time values and call date and time functions with an implicit context of a specific time zone. However, while you can configure the time zone of Azure SQL Managed Instance only during instance creation, with Azure Arc-enabled SQL Managed Instance, you can set the intended time zone post-deployment by running the `az sql mi-arc update` command with the `--time-zone` parameter.
+Coordinated Universal Time (UTC) is the recommended time zone for the data tier of new cloud and hybrid solutions because it eliminates ambiguity. However, Azure Arc-enabled SQL Managed Instance, similar to its cloud counterpart, supports selecting any time zone to accommodate the needs of existing applications that store date and time values and call date and time functions with an implicit context of a specific time zone. However, while you can configure the time zone of Azure SQL Managed Instance only during instance creation, with an Azure Arc-enabled SQL Managed Instance, you can set the intended time zone post-deployment by running the `az sql mi-arc update` command with the `--time-zone` parameter.
 
 ### Enable trace flags
 
-You typically use SQL Server trace flags in troubleshooting scenarios. As with other configuration settings previously described in this unit, to enable specific trace flags, use the `az sql mi-arc update` command with the `--trace-flags` parameter, followed by a comma-separated list of flags enclosed in double quotes. 
+You typically use SQL Server trace flags in troubleshooting scenarios. As with other configuration settings previously described in this unit, to enable specific trace flags, use the `az sql mi-arc update` command with the `--trace-flags` parameter, followed by a comma-separated list of flags enclosed in double quotes.
 
 ### Export and upload usage details
 
-When operating in the indirectly connected mode, you need to periodically export usage data from the data controller and upload it to Azure. This is a two-step process involving the `az arcdata dc export` and `az arc data upload` commands, respectively. The first command creates a JSON formatted file that contains resource and data records describing the instance configuration and usage details. The purpose of the second command is to upload the file generated by the first one. Command line support facilitates automation. The process is automatic by default in the directly connected mode. 
+When operating in the indirectly connected mode, you need to periodically export usage data from the data controller and upload it to Azure. It's a two-step process that involves the `az arcdata dc export` and `az arc data upload` commands, respectively. The first command creates a JSON formatted file that contains resource and data records describing the instance configuration and usage details. The purpose of the second command is to upload the file generated by the first one. Command line support facilitates automation. The process is automatic by default in the directly connected mode.
 
-You need to upload the current usage data at least once in every 30 days, although we highly recommended performing this task daily. Failing to upload usage data for more than 30 days results in a degradation of the managed instance functionality, including the inability to provision new resources.
+You must upload the current usage data at least once every 30 days, although we recommended performing this task daily. Failing to upload usage data for more than 30 days results in a degradation of the managed instance functionality, including the inability to provision new resources.
 
 ### Set up a maintenance window
 
-Azure Arc-enabled SQL Managed Instance provides the ability to automatically maintain an evergreen environment, matching the one available with an Azure SQL Managed Instance. To take advantage of this ability, you need to configure the data controller with a maintenance window during which upgrades take place. 
+An Azure Arc-enabled SQL Managed Instance can automatically maintain an evergreen environment, matching the one available with an Azure SQL Managed Instance. To take advantage of this ability, configure the data controller with a maintenance window during which upgrades take place.
 
-When you configure a maintenance window for a data controller, take into account the following considerations:
+When you configure a maintenance window for a data controller, consider these issues:
 
-- There is one maintenance window per data controller.
+- Each data controller has one maintenance window.
 - Duration window can be between two to eight hours.
 - The recurring frequency of the maintenance window can be either weekly or monthly.
 
@@ -80,14 +80,14 @@ To set a maintenance window, use the `az arcdata dc update` command with the `--
 
 To reduce the administrative overhead, you can enable automatic upgrade of Azure Arc-enabled SQL Managed Instances whenever their data controller is upgraded. To enable this capability, you must set the `desired-version` property of the Azure Arc-enabled SQL Managed Instance to auto. The frequency, availability, and the level of automation of image upgrades depend on the connectivity mode of the data controller hosting the managed instances.
 
-- In the directly connected mode, a data controller pulls images directly from Microsoft Container Registry (MCR) and installs them automatically according to the maintenance window you configured and the `desired-version` property of each locally provisioned managed instance. 
-- In the indirectly connected mode, you need to import MCR images into a private container registry accessible from the data controller. After you import the images, they are installed automatically according to the maintenance window you configured and the `desired-version` property of each locally provisioned managed instance, similar to the directly connected mode. Alternatively, you can initiate the upgrade manually.
+- In the directly connected mode, a data controller pulls images directly from Microsoft Container Registry (MCR) and installs them automatically according to the maintenance window you configured and the `desired-version` property of each locally provisioned managed instance.
+- In the indirectly connected mode, you must import MCR images into a private container registry accessible from the data controller. After you import the images, they install automatically according to the maintenance window you configured and the `desired-version` property of each locally provisioned managed instance, similar to the directly connected mode. Alternatively, you can initiate the upgrade manually.
 
-The downtime experienced during upgrades depends on the tier level of the Azure Arc-enabled SQL Managed Instance. When upgrading a managed instance, its pod containers are upgraded and reprovisioned. Because this tier utilizes only a single pod, the upgrade will involve a short amount of downtime while a new pod is created. In case of Business Critical upgrades, you can reduce downtime to a minimum by utilizing the following sequence of events:
+The downtime experienced during upgrades depends on the tier level of the Azure Arc-enabled SQL Managed Instance. When you upgrade a managed instance, its pod containers are upgraded and reprovisioned. Because this tier utilizes only a single pod, the upgrade involves a short amount of downtime while a new pod is created. For Business Critical upgrades, you can reduce downtime to a minimum by performing the following sequence of events:
 
 1. Apply an upgrade on the secondary replica 1.
-2. Apply an upgrade on the secondary replica 2.
-3. Perform a failover from the primary replica to secondary replica 1.
-4. Apply an upgrade on the remaining secondary replica.
+1. Apply an upgrade on the secondary replica 2.
+1. Perform a failover from the primary replica to secondary replica 1.
+1. Apply an upgrade on the remaining secondary replica.
 
-Once the upgrade process starts, it continues in an unattended manner until it completes.
+After the upgrade process starts, it continues in an unattended manner until it completes.

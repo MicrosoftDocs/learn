@@ -2,12 +2,14 @@
 uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
   title: Fundamentals of Azure AI Document Intelligence
-  description: "Use Azure AI Document Intelligence to automate data extraction."
-  ms.date: 11/02/2023
+  description: Use Azure AI Document Intelligence to automate data extraction.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 11/02/2023
   ms.service: azure-ai-document-intelligence
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Azure AI Document Intelligence
 summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
 abstract: |

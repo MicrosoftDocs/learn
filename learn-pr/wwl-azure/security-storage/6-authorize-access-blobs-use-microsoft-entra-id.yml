@@ -4,11 +4,12 @@ title: Select and configure an appropriate method for access to Azure Blobs
 metadata:
   title: Select and configure an appropriate method for access to Azure Blobs
   description: "Select and configure an appropriate method for access to Azure Blobs"
-  ms.date: 05/29/2024
+  ms.date: 06/25/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
-  ms.custom: N/A, devx-track-azurecli
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/6-authorize-access-blobs-use-microsoft-entra-id.md)]

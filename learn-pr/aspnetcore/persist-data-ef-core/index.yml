@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/04/2023
   author: camsoper
   ms.author: casoper
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: entity-framework
   ms.subservice: entity-framework-core

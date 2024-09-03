@@ -3,11 +3,13 @@ uid: learn.wwl.use-prebuilt-form-recognizer-models.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 02/06/2024
+  description: Introduction
   author: wwlpublish
   ms.author: rcaper
+  ms.date: 02/06/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

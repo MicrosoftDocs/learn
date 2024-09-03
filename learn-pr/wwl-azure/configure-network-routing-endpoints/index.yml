@@ -2,24 +2,20 @@
 uid: learn.wwl.configure-network-routing-endpoints
 metadata:
   title: Configure network routing and endpoints
-  description: "Configure network routing and endpoints."
+  description: Configure network routing and endpoints.
   ms.date: 06/14/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
-  ms.service: azure
   ai-usage: human-only
+  ms.service: azure-virtual-network
 title: Configure network routing and endpoints
 summary: Learn how to configure network routes, including endpoints and private links.
 abstract: |
   In this module, you learn how to:
-
   -   Implement system routes and user-defined routes.
-
   -   Configure a custom route.
-
   -   Implement service endpoints.
-
   -   Identify features and usage cases for Azure Private Link and endpoint services.
 prerequisites: None
 iconUrl: /training/achievements/network-routing-endpoints-configure.svg

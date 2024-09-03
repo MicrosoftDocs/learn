@@ -4,11 +4,13 @@ title: Exercise - Program scheduling
 metadata:
   title: Exercise - Program scheduling
   description: This content is a part of the Streamline nonprofit program management with Microsoft Copilot module.
-  ms.date: 5/30/2024
   author: CourtneyHMicrosoft
   ms.author: cohodge
+  ms.date: 5/30/2024
   ms.topic: unit
   ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-program-scheduling.md)]

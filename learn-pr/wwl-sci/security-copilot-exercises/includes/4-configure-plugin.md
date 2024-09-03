@@ -1,7 +1,8 @@
 In this exercise, you configure the Microsoft Sentinel plugin and run some test prompts to confirm that Copilot is using the plugin.
 
 > [!NOTE]
-> The environment for this exercise is based on a simulation, generated from pre-determined screen captures of the actual product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script are not be supported.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 ### Exercise
 
@@ -26,11 +27,11 @@ When working with technology, it's not  uncommon to try use a feature and then r
 
 In this task, you'll configure the Sentinel plugin. To do this, you need to access the Azure portal to obtain the necessary information.
 
-1. From prompt bar, select the sources icon.
+1. From prompt bar, select the **sources icon** ![sources icon](../media/sources-icon.png).
 
-1. From the manage sources page, expand the view for the Microsoft plugins and scroll down until Microsoft Sentinel is visible.
+1. From the manage sources page, expand the view for the Microsoft plugins by selecting **Show 11 more** and scroll down until Microsoft Sentinel is visible.
 
-1. Select the settings icon and note the parameters that need to be configured. Select the information icon next to any of the parameters. Keep this browser tab open, you'll come back to this page for each parameter to be configured.
+1. Select the **Set up** button and note the parameters that need to be configured. Select the information icon next to any of the parameters. Keep this browser tab open, you'll come back to this page for each parameter to be configured.
 
 1. Use your right mouse key to open the link to the Azure portal in a new tab or window: **[Azure portal](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. It's important that access to the Azure portal and access to Copilot for Security be available as separate browser tabs, as you'll be accessing both tabs for this task.
     1. Select **Log Analytics workspaces**, it should be displayed as an icon under Azure services.
@@ -54,10 +55,8 @@ Now that the Sentinel plugin is enabled, you'll run the prompt you tried earlier
 
 1. The Copilot process log shows that the prompt executed successfully by displaying green check marks.
 
-1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to copy all the responses to the pin board, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
+1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select the response. Selecting the the **Pin icon ![pin icon](../media/pin-icon.png)** pins the response to the pin board, which automatically opens.  The pin board shows a summary for the pined responses.
 
-1. Select the pin board icon ![prompt icon](../media/pinboard-icon.png) to open the pin board. The pin board holds your saved prompts and responses, along with a summary of each one.
-1. From the top of the page, select Export to view available options. Exporting to Word or Mail results in a summary document or email that you can immediately send to your stakeholders.
 
 #### Review
 

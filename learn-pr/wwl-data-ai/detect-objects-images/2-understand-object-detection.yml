@@ -3,11 +3,13 @@ uid: learn.wwl.detect-objects-images.understand-object-detection
 title: Understand object detection
 metadata:
   title: Understand object detection
-  description: "Understand object detection"
-  ms.date: 09/17/2021
+  description: Understand object detection
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false

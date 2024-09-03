@@ -3,11 +3,13 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.add-custom
 title: Add a custom skill to a skillset
 metadata:
   title: Add a custom skill to a skillset
-  description: "Add a custom skill to a skillset"
-  ms.date: 12/11/2023
+  description: Add a custom skill to a skillset
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 12/11/2023
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

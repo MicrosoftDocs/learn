@@ -2,12 +2,14 @@
 uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
   title: Fundamentals of Text Analysis with the Language Service
-  description: "Explore text analysis with Azure AI Language service."
-  ms.date: 11/02/2023
+  description: Explore text analysis with Azure AI Language service.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: module
+  ms.date: 11/02/2023
   ms.service: azure-ai-language
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Fundamentals of Text Analysis with the Language Service
 summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: |

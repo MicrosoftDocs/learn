@@ -9,5 +9,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Progressively expose your releases using deployment rings - Azure DevOps \| Microsoft Docs](/azure/devops/migrate/phase-rollout-with-rings).
- -  [What is Continuous Delivery? - Azure DevOps \| Microsoft Docs](/devops/deliver/what-is-continuous-delivery).
+ -  [Progressively expose your releases using deployment rings - Azure DevOps \| Microsoft Learn](/azure/devops/migrate/phase-rollout-with-rings).
+ -  [What is Continuous Delivery? - Azure DevOps \| Microsoft Learn](/devops/deliver/what-is-continuous-delivery).

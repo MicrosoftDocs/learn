@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-  ms.service: aspnet-core
 title: Develop an ASP.NET Core web app that consumes an API
 prerequisites: |
   *   Experience writing C# at an intermediate level

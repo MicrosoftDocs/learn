@@ -3,6 +3,7 @@ uid: learn.manage-vms-with-azure-cli
 metadata:
   title: Manage virtual machines with the Azure CLI
   description: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
+  manager: akashdubey
   ms.date: 09/08/2023
   author: ju-shim
   ms.author: jushiman

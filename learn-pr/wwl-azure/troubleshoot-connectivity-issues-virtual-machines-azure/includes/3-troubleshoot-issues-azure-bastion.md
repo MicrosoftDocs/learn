@@ -10,7 +10,7 @@ In the Azure portal, on the left navigation pane, select **Virtual machines**, t
 
 :::image type="content" source="../media/bastion-screenshot.png" alt-text="A screenshot that shows the Azure Bastion options":::
 
-You should see the options to create an Azure Bastion Service. If you don't, check that you have met these prerequisites:
+You should see the options to create an Azure Bastion Service. If you don't, check that you meet these prerequisites:
 
 - You have the correct access to the VM—at a minimum, you need reader access to the VM, NIC, private IP address of the VM, and the virtual network.
 
@@ -18,9 +18,9 @@ You should see the options to create an Azure Bastion Service. If you don't, che
 
 - You have enough public IP address left in your subscription's quota.
 
-Step 1 has been completed for you because you're creating the Azure Bastion Service from a VM.
+Step 1 is already complete for you because you're creating the Azure Bastion Service from a VM.
 
-For step 2, you can accept the defaults and create a new subnet named AzureBastionSubnet. The wizard will create the subnet with these attributes:
+For step 2, you can accept the defaults and create a new subnet named AzureBastionSubnet. The wizard creates the subnet with these attributes:
 
 :::image type="content" source="../media/azure-bastion-subnet-settings.png" alt-text="A screenshot of the AzureBastionSubnet subnet settings.":::
 
@@ -36,17 +36,31 @@ The VM doesn't need to have a public IP address, but it must be in a virtual net
 
 Azure Bastion can't work with VMs that are in an Azure Private DNS zone with **core.windows.net** or **azure.com** in the suffixes. This isn't supported because it could allow overlaps with internal endpoints. Azure Private DNS zones in national clouds are also unsupported.
 
-If the connection to the VM is working but you can't sign in, check if it is domain-joined. If the VM is domain-joined, you'll need to specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This won't resolve the issues if the VM is Microsoft Entra joined only—this kind of authentication isn't supported.
+If the connection to the VM is working but you can't sign in, check if it's domain-joined. If the VM is domain-joined, you must specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This change won't resolve the issues if the VM is Microsoft Entra joined only, as this kind of authentication isn't supported.
 
-In the earlier section you'll note that, by default, the AzureBastionSubnet isn't assigned an NSG. If your organization needs an NSG, you should ensure that it's configured correctly:
+The AzureBastionSubnet isn't assigned an NSG by default. If your organization needs an NSG, you should ensure its configuration is correct in the Azure portal.
 
-Inbound rules
+Inbound rules:
 
-:::image type="content" source="../media/inbound.png" alt-text="A screenshot of inbound rules in the Azure portal showing port 443 over TCP with these sources: Internet, GatewayManager, and AzureLoadBalancer. For port 8080 and 5701 over Any protocol, the source is VirtualNetwork." lightbox="../media/inbound.png":::
+| Name | Port | Protocol | Source | Destination | Action |
+| - | - | - | - | - | - |
+| AllowHttpsInbound | 443 | TCP | Internet | Any | Allow |
+| AllowGatewayManagerInbound | 443 | TCP | GatewayManager | Any | Allow |
+| AllowAzureLoadBalancerInbound | 443 | TCP | AzureLoadBalancer | Any | Allow |
+| AllowBastionHostCommunication | 8080, 5701 | Any | VirtualNetwork | VirtualNetwork | Allow |
 
-Outbound rules
+:::image type="content" source="../media/inbound.png" alt-text="A screenshot of the preceding inbound rules in the Azure portal." lightbox="../media/inbound.png":::
 
-:::image type="content" source="../media/outbound.png" alt-text="A screenshot of outbound rules in the Azure portal showing port 22 and 3389 over Any protocol with the destination VirtualNetwork. Port 443 over TCP with the destination AzureCloud. Port 8080 and 5701 over Any protocol with the destination VirtualNetwork. Port 80 over Any protocol—source is Internet." lightbox="../media/outbound.png":::
+Outbound rules:
+
+| Name | Port | Protocol | Source | Destination | Action |
+| - | - | - | - | - | - |
+| AllowSshRdpOutbound | 22, 3389 | Any | Any | VirtualNetwork | Allow |
+| AllowAzureCloudOutbound | 443 | TCP | Any | AzureCloud | Allow |
+| AllowBastionCommunication | 8080, 5701 | Any | VirtualNetwork | VirtualNetwork | Allow |
+| AllowGetSessionInformation | 80 | Any | Any | Internet | Allow |
+
+:::image type="content" source="../media/outbound.png" alt-text="A screenshot of the preceding outbound rules in the Azure portal." lightbox="../media/outbound.png":::
 
 ## Access
 

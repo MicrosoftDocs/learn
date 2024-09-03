@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
   ai-usage: human-only
 title: Migrate to Azure Database for PostgreSQL flexible server
 summary: Azure Database for PostgreSQL Flexible Server supports data migration from PostgreSQL servers. This module covers online and offline migration tools and methods, helping you choose the right approach for your scenario.

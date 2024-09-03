@@ -47,7 +47,7 @@ Now you're ready to begin the exercise. Good luck!
     public static string GetMusicLibrary()
     {
         string dir = Directory.GetCurrentDirectory();
-        string content = File.ReadAllText($"{dir}/musiclibrary.txt");
+        string content = File.ReadAllText($"{dir}/data/musiclibrary.txt");
         return content;
     }
     ```

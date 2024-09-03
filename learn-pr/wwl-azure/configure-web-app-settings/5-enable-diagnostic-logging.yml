@@ -9,7 +9,8 @@ metadata:
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
+    - linux-related-content
 durationInMinutes: 6
 content: |
   [!include[](includes/5-enable-diagnostic-logging.md)]

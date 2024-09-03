@@ -6,11 +6,11 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Choose appropriate storage for FSLogix components.
- -  Configure storage for FSLogix components.
- -  Configure storage accounts for Azure Files.
- -  Configure a new managed data disk to a Windows virtual machine for Azure Virtual Desktop.
- -  Create file shares for a storages account for Azure Virtual Desktop.
+ -  Plan storage for Azure Virtual Desktop user data
+ -  Understand Azure storage management
+ -  Configure Azure Files tiers
+ -  Configure Azure NetApp Files tiers
+ -  Implement storage accounts for Azure Virtual Desktop
 
 ## Prerequisites
 

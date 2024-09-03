@@ -38,7 +38,7 @@ When you raise external capital, you're giving up some control over your company
 
 One way to think through this decision is to weigh the advantages and disadvantages. On the downside, you have to give up some control. On the upside, you have the capital to increase the odds that the company grows and succeeds.
 
-A worksheet like the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) is a useful input to help you decide which kind of company you and your cofounders want to build.
+A worksheet like the Founder Alignment Exercise is a useful input to help you decide which kind of company you and your cofounders want to build.
 
 ## Control and dilution
 
@@ -158,7 +158,7 @@ Melanie is an angel investor. She decides to make seed-stage investments in 10 c
 
 Melanie doesn't know which of the companies she backs will ultimately be successful, but realizes that each company she invests in must have a chance at being hugely successful. She makes her investments with this idea in mind.
 
-Significant [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](http://www.rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This result is typically either because the company fails completely, or it grows slowly and remains a privately owned company but never achieves a liquidity event. Investors sometimes refer to these investments as *zombie* companies.
+Significant [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](https://rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This result is typically either because the company fails completely, or it grows slowly and remains a privately owned company but never achieves a liquidity event. Investors sometimes refer to these investments as *zombie* companies.
 
 As an experienced investor, Melanie knows this outcome is likely for a large proportion of the companies in which she invests. Like any sensible angel investor, she only invests money that she can afford to lose.
 

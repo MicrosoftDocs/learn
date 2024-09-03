@@ -4,7 +4,7 @@ title: Use YAML container instance definitions
 metadata:
   title: Use YAML container instance definitions
   description: Understand Azure Container Instances YAML definitions
-  ms.date: 10/12/2023
+  ms.date: 07/24/2024
   author: erjosito
   ms.author: jomore
   ms.topic: unit

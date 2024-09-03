@@ -4,12 +4,12 @@ title: Design for Azure Kubernetes Service solutions
 metadata:
   title: Design for Azure Kubernetes Service solutions
   description: "Design for Azure Kubernetes Service solutions"
-  ms.date: 04/23/2023
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/7-design-for-azure-kubernetes-solutions.md)]

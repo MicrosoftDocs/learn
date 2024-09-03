@@ -9,6 +9,8 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 15
 content: |
   [!include[](includes/store-data-sql-databases.md)]

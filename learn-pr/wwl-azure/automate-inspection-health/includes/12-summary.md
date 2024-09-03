@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [DevOps checklist - Azure Design Review Framework \| Microsoft Docs](/azure/architecture/checklist/dev-ops).
- -  [Events, subscriptions, and notifications - Azure DevOps \| Microsoft Docs](/azure/devops/notifications/concepts-events-and-notifications).
- -  [Integrate with service hooks - Azure DevOps \| Microsoft Docs](/azure/devops/service-hooks/overview).
- -  [Build Quality Indicators report - Azure DevOps Server \| Microsoft Docs](/azure/devops/report/sql-reports/build-quality-indicators-report).
+ -  [DevOps checklist - Azure Design Review Framework \| Microsoft Learn](/azure/architecture/checklist/dev-ops).
+ -  [Events, subscriptions, and notifications - Azure DevOps \| Microsoft Learn](/azure/devops/notifications/concepts-events-and-notifications).
+ -  [Integrate with service hooks - Azure DevOps \| Microsoft Learn](/azure/devops/service-hooks/overview).
+ -  [Build Quality Indicators report - Azure DevOps Server \| Microsoft Learn](/azure/devops/report/sql-reports/build-quality-indicators-report).

@@ -3,11 +3,13 @@ uid: learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-se
 title: Understand capabilities of the face service
 metadata:
   title: Understand capabilities of the face service
-  description: "Understand capabilities of the face service"
-  ms.date: 03/11/2024
+  description: Understand capabilities of the face service
   author: wwlpublish
   ms.author: gmalc
+  ms.date: 03/11/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-understand-capabilities-of-face-service.md)]

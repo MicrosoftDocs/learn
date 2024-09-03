@@ -2,12 +2,14 @@
 uid: learn.make-recommendations-ai-personalizer
 metadata:
   title: Make recommendations with Azure AI Personalizer
-  description: "In this module, learn how to use Azure AI Personalizer to make recommendations."
-  ms.date: 9/27/2023
+  description: In this module, learn how to use Azure AI Personalizer to make recommendations.
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.date: 9/27/2023
   ms.service: azure-ai-personalizer
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Make recommendations with Azure AI Personalizer
 summary: "Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations."
 abstract: |

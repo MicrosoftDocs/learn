@@ -17,7 +17,7 @@ Some of the benefits of InnoDB include:
 
 InnoDB is the only MySQL storage engine that supports foreign key constraints. This means that for most database applications, InnoDB is the only option. When you create a table in MySQL, the InnoDB engine will be used unless you specify another storage engine.
 
-InnoDB uses memory as a cache to avoid disk access and performs well with a large amount of memory allocated to it. This strategy avoids swapping, when the disk writes are forced because there's insufficient memory. Azure Database for MySQL allows you to monitor the percentage of memory in use. See [Azure Monitor data platform - Azure Monitor | Microsoft Docs](/azure/azure-monitor/data-platform) for more information. You can also set up [alerts](/azure/mysql/howto-alert-on-metric).
+InnoDB uses memory as a cache to avoid disk access and performs well with a large amount of memory allocated to it. This strategy avoids swapping, when the disk writes are forced because there's insufficient memory. Azure Database for MySQL allows you to monitor the percentage of memory in use. See [Azure Monitor data platform - Azure Monitor | Microsoft Learn](/azure/azure-monitor/data-platform) for more information. You can also set up [alerts](/azure/mysql/howto-alert-on-metric).
 
 ### InnoDB strict mode
 

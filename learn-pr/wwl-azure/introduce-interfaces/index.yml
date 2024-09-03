@@ -2,12 +2,12 @@
 uid: learn.wwl.introduce-interfaces
 metadata:
   title: Introduce interfaces
-  description: "This module introduces the basics of interfaces in C# and how to use them."
+  description: This module introduces the basics of interfaces in C# and how to use them.
   ms.date: 01/29/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.service: azure
+  ms.service: dotnet-csharp
 title: Introduce interfaces
 summary: In this module, you'll learn how to use interfaces in C#. You'll practice adding behaviors to classes and using system-defined interfaces to craft modular, robust code.
 abstract: |

@@ -4,16 +4,16 @@ title: Discover the potential of Azure for government
 metadata:
   title: Discover the potential of Azure for government
   description: Discussion of the benefits of the public cloud for public sector agencies, with special attention to how Azure can be helpful to them. 
-  ms.date: 02/15/2023
+  ms.date: 07/19/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: module
-  manager: eliotgra
+  manager: jmartens
   ms.service: azure-government
-summary: Governments around the world are in the process of a digital transformation, actively investigating solutions and selecting architectures that will help them transition many of their workloads to the cloud. Begin this transformation by exploring why Azure is the right platform for your agency and the value Azure can bring. See how Azure enables you to engage citizens, empower employees, transform government services, and optimize government operations. 
+summary: Governments around the world are in the process of a digital transformation, actively investigating solutions and selecting architectures that helps them transition many of their workloads to the cloud. Begin this transformation by exploring why Azure is the right platform for your agency and the value Azure can bring. See how Azure enables you to engage citizens, empower employees, transform government services, and optimize government operations. 
 abstract: | 
-  In this module, you will learn to: 
-  - Explain the basic concept and benefits of multi-tenant cloud services.
+  In this module, you learn to: 
+  - Explain the basic concept and benefits of multitenant cloud services.
   - Describe how Azure helps customers follow data security requirements in the public sector.
   - Identify scenarios in which Azure could provide solutions for data in the public sector. 
 prerequisites: |

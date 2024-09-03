@@ -47,7 +47,7 @@ In the previous exercise, we defined default values for resource group and locat
 1. The output contains the connection details for your storage account. Copy and save the value of **connectionString**. It should look something like this:
 
     ```output
-   "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=VZjXuMeuDqjCkT60xX6L5fmtXixYuY2wiPmsrXwYHIhwo736kSAUAj08XBockRZh7CZwYxuYBPe31hi8XfHlWw=="
+   "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage_account_name;AccountKey=xxxxxxxxxxx"
     ```
 
 1. Run the following command to create a container called **messages** in your storage account. Use the **connectionString** value you copied in the previous step.
@@ -106,10 +106,9 @@ In this exercise, you use the built-in Cloud Shell editor to modify the SimpleSe
 
      For your primary SAS key, when you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created and includes primary and secondary keys that grant send, listen, and manage rights to the namespace. Earlier in this exercise, you obtained the key by running an Azure CLI command; however, you can also find the keys and connection strings by selecting your Event Hubs namespace in the Azure portal, and then in the menu under the **Settings**, select **Shared access policies**; now select the policy name **RootManageSharedAccessKey** to display the SAS Policy keys. 
 
-1. Save the **SimpleSend.java** file, and then close the editor.
+1. Save the **SimpleSend.java** file, and then close the editor. Select in the upper right corner of the editor, and use the **Save** and **Close Editor** menu items. 
 
-    > [!TIP]
-    > To save your edits, use <kbd>Ctrl+S</kbd>. Exit the editor by pressing <kbd>Ctrl+X</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS. Unlike the Cloud Shell terminal window, the Cloud Shell editor uses typical copy/paste keyboard accelerator keys for your OS. Alternatively, open the editor menu by selecting the ellipsis (...) in the upper right corner for additional editing commands.
+    :::image type="content" source="../media/5-save-and-close-editor.png" alt-text="Screenshot showing menu items to save the file and close the editor.":::
 
 ## Use Maven to build SimpleSend.java
 
@@ -151,7 +150,7 @@ In this procedure, you use the `EventProcessorHost` method. You edit the EventPr
     code .
     ```
 
-1. Select the **EventProcessorSample.java** file.
+1. Select the **EventProcessorSample.java** file in the file explorer to the left. 
 
 1. Locate and replace the following strings in the editor:
 
@@ -163,6 +162,13 @@ In this procedure, you use the `EventProcessorHost` method. You edit the EventPr
     - `----StorageContainerName----` with **messages**.
     - `----HostNamePrefix----` with the name of your storage account.
 
+    If you forget these values, you can switch to the terminal window below the editor and run the `echo` command to list the environment variables. For example:
+
+    ```bash
+    echo $NS_NAME
+    echo $HUB_NAME
+    echo $STORAGE_NAME
+    ```
 1. Save **EventProcessorSample.java** either with the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 1. Close the editor.

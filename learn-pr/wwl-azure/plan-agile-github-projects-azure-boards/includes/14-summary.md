@@ -11,8 +11,8 @@ You learned how to describe the benefits and usage of:
 
  -  [Quickstart for projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/quickstart).
  -  [About project boards - GitHub Docs](https://docs.github.com/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards).
- -  [What is Azure Boards? Tools to manage software development projects. - Azure Boards \| Microsoft Docs](/azure/devops/boards/get-started/what-is-azure-boards).
- -  [Azure Boards-GitHub integration - Azure Boards \| Microsoft Docs](/azure/devops/boards/github).
+ -  [What is Azure Boards? Tools to manage software development projects. - Azure Boards \| Microsoft Learn](/azure/devops/boards/get-started/what-is-azure-boards).
+ -  [Azure Boards-GitHub integration - Azure Boards \| Microsoft Learn](/azure/devops/boards/github).
  -  [Managing iterations in projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/managing-iterations).
  -  [Quickstart for projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/quickstart).
  -  [Best practices for managing projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/best-practices-for-managing-projects).

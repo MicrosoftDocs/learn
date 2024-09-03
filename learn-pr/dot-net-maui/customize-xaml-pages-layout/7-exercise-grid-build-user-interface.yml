@@ -9,7 +9,6 @@ metadata:
   ms.author: masoucou
   ms.manager: markl
   ms.topic: unit
-  ms.service: azure
   ms.custom:
     - devx-track-dotnet
 durationInMinutes: 10

@@ -3,11 +3,13 @@ uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools
 metadata:
   title: Create effective prompts for generative AI training tools
   description: Learn how to craft engaging and informative prompts with Microsoft Copilot. This module will teach you the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
-  ms.date: 02/27/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: module
+  ms.date: 02/27/2024
   ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
 title: Create effective prompts for generative AI training tools
 summary: This module covers the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
 abstract: |

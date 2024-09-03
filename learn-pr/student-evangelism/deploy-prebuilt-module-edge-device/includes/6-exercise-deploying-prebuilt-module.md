@@ -1,31 +1,38 @@
-To deploy the "Simulated Temperature Sensor" module from the Azure Marketplace, use the following steps:
+To deploy the "Simulated Temperature Sensor" module from the Microsoft Artifact Registry, use the following steps:
 
-1. In the Azure portal, enter **Simulated Temperature Sensor** into the search and open the **Marketplace** result.
+1. Find the **Simulated Temperature Sensor** module in the [Microsoft Artifact Registry](https://mcr.microsoft.com/catalog?cat=IoT%20Edge%20Modules&alphaSort=asc&alphaSortKey=Name) filtered by *IoT Edge Modules*.
 
-1. Choose an IoT Edge device to receive this module. On the "Target Devices for IoT Edge Module" page, provide the following information:
-    * **Subscription:** Select the subscription containing the IoT hub you're using
-    * **IoT Hub:** Select the name of the IoT hub you're using
-    * **IoT Edge Device Name:** As selected before  
+1. Select the latest image version of the **Simulated Temperature Sensor** module.
 
-1. Select **Create**.
+1. Copy the URI for the **Simulated Temperature Sensor** module. You only need the URI for the module. Don't include the *docker pull* command. For example, `mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:latest`.
 
-1. Using the three-step wizard, define precisely how to deploy the module.
-    * **Add Modules**: The *Simulated Temperature Sensor* module should be autopopulated.
-    * **Specify Routes**: Define how messages are passed between modules and to IoT Hub. If this setting isn't autopopulated to `$upstream`, add the following code:
+1. In the Azure portal, go to your IoT Hub and select the device to add the **Simulated Temperature Sensor** module.
 
-    ```JSON
-    {
-      "routes": {
-        "route": "FROM /messages/* INTO $upstream"
-      }
-    }
-    ```
+1. Select **Set modules** from the IoT Edge device details page.
 
-    * **Review Deployment:** preview the deployment manifest JSON file that defines all the modules deployed to your IoT Edge device. Ensure it includes the "Simulated Temperature Sensor" module.  
+1. In the **IoT Edge modules** section, select **Add** then choose **IoT Edge Module**.
 
-1. Select your device from the list of IoT Edge devices to see its details.
-    * On the device details page, scroll down to the Modules section.
-    * Three modules should be listed: `$edgeAgent`, `$edgeHub`, and `SimulatedTemperatureSensor`. The list should look similar to the screenshot below.
+1. Update the following module settings:
+
+    | Setting            | Value                                                                |
+    |--------------------|----------------------------------------------------------------------|
+    | IoT Module name    | `SimulatedTemperatureSensor`                                         |
+    | Image URI          | `mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:latest` |
+    | Restart policy     | always                                                               |
+    | Desired status     | running                                                              |
+
+1. Select **Routes** to define how messages are passed between modules and to IoT Hub.
+
+1. Add a route that sends all messages from the simulated temperature module to IoT Hub.
+
+    | Setting                          | Value                                      |
+    |----------------------------------|--------------------------------------------|
+    | Name                             | `SimulatedTemperatureSensorToIoTHub`       |
+    | Value                            | `FROM /messages/modules/SimulatedTemperatureSensor/* INTO $upstream` |
+
+1. Select **Review + create** to preview the deployment manifest JSON file that defines all the modules deployed to your IoT Edge device. Ensure it includes the *Simulated Temperature Sensor* module.
+
+1. On the device details page, find the *Modules* section. Three modules should be listed: `$edgeAgent`, `$edgeHub`, and `SimulatedTemperatureSensor`. The list should look similar to the screenshot below.
 
     > [!IMPORTANT]
     > If a **module is listed as "in deployment"** but not reported by the device, your IoT Edge device is still starting it. **Wait a few moments and click "Refresh"** at the top of the page.

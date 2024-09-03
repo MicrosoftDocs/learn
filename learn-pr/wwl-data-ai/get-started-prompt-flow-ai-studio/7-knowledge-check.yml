@@ -3,23 +3,25 @@ uid: learn.get-started-prompt-flow-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check to test your knowledge on Azure AI Studio's prompt flow."
-  ms.date: 01/25/2024
+  description: Knowledge check to test your knowledge on Azure AI Studio's prompt flow.
   author: madiepev
   ms.author: madiepev
+  ms.date: 01/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "A flow uses an LLM tool to generate text with a GPT-3.5 model. What do you need to create to ensure prompt flow can securely call the deployed model from Azure Open AI?"
+  - content: "A flow uses an LLM tool to generate text with a GPT-3.5 model. What do you need to create to ensure prompt flow can securely call the deployed model from Azure OpenAI?"
     choices:
     - content: "Runtimes"
       isCorrect: false
       explanation: "Incorrect. Runtimes provide the necessary compute to run the flow."
     - content: "Connections"
       isCorrect: true
-      explanation: "Correct. Create a connection to allow prompt flow to securely communicate with Azure Open AI."
+      explanation: "Correct. Create a connection to allow prompt flow to securely communicate with Azure OpenAI."
     - content: "Tools"
       isCorrect: false
       explanation: "Incorrect. You use tools when adding nodes to your flow. Though a tool provides the functionality, it doesn't allow you to safely store connection information."

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.add-items-azure-storage-queues
+title: Add items to Azure Storage Queues
+metadata:
+  title: Add items to Azure Storage Queues
+  description: In this unit, you'll learn how to add messages to, and receive messages from, the Azure Queue Storage service by using the .NET Aspire Azure Queue Storage component.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-add-items-azure-storage-queues.md)]

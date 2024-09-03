@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This content is part of the \"Make the most of a mentor meeting\" module."
-  ms.date: 11/11/2022
-  author: turoczy
-  ms.author: v-rturoczy
+  ms.date: 04/18/2024
+  author: vhawk85
+  ms.author: vahughes
   ms.topic: unit
 durationInMinutes: 5
 
@@ -41,7 +41,7 @@ quiz:
     - content: "LinkedIn"
       isCorrect: false
       explanation: "LinkedIn can be a valuable resource of information, but it's important to use multiple sources for your research."
-    - content: "All of the above"
+    - content: "All of these"
       isCorrect: true
       explanation: "It's best to use a variety of resources to do your research on your mentor before you meet with them."
 

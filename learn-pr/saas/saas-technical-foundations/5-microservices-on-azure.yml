@@ -8,7 +8,6 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
-  ms.service: architecture-center
 durationInMinutes: 15
 content: |
   [!include[](includes/5-microservices-on-azure.md)]

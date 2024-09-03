@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ai-usage: human-only
 title: Measure performance in Azure Cosmos DB for NoSQL
 summary: We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB.

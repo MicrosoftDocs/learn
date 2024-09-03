@@ -3,6 +3,7 @@ uid: learn.choose-storage-approach-in-azure
 metadata:
   title: Choose a data storage approach in Azure
   description: Learn how to use Azure Storage, Azure SQL Database, Azure Cosmos DB, or a combination of Azure resources for a performant solution in your business scenario.
+  manager: akashdubey
   ms.date: 06/05/2022
   author: normesta
   ms.author: normesta

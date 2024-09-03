@@ -2,13 +2,13 @@
 uid: learn.wwl.create-c-sharp-methods-return-values
 metadata:
   title: Create C# methods that return values
-  description: "This module covers the return keyword and returning values from methods."
+  description: This module covers the return keyword and returning values from methods.
   ms.date: 02/16/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.service: azure
   ms.devlang: csharp
+  ms.service: dotnet-csharp
 title: Create C# methods that return values
 summary: Learn to create methods that return values
 abstract: |

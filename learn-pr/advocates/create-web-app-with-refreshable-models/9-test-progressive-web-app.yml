@@ -4,9 +4,11 @@ metadata:
   title: Test your Progressive Web App
   description: Test your Progressive Web App
   author: GitHubber17
-  ms.date: 12/22/2022
   ms.author: chnoring
+  ms.date: 12/22/2022
   ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Test your Progressive Web App
 durationInMinutes: 5

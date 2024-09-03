@@ -2,12 +2,14 @@
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
   title: Create a knowledge store with Azure AI Search
-  description: "Create a knowledge store with Azure AI Search"
-  ms.date: 12/11/2023
+  description: Create a knowledge store with Azure AI Search
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: module-standard-task-based
+  ms.date: 12/11/2023
   ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Create a knowledge store with Azure AI Search
 summary: Persist the output from an Azure AI Search enrichment pipeline for independent analysis or downstream processing.
 abstract: |

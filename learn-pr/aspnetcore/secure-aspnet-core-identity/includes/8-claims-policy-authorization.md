@@ -1,4 +1,4 @@
-In the previous unit, you added QR code functionality to enable multi-factor authentication. In this unit, you learn about authorization based on claims and policies. 
+In the previous unit, you added QR code functionality to enable multifactor authentication. In this unit, you learn about authorization based on claims and policies. 
 
 ## Authorization vs. authentication
 

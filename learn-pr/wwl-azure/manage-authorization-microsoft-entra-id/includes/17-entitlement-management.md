@@ -1,6 +1,6 @@
 Entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration.
 
-People in organizations need access to various groups, applications, and SharePoint Online sites to perform their job. Managing this access is challenging, as requirements change. New applications are added or users need more access rights. This scenario gets more complicated when you collaborate with outside organizations. You may not know who in the other organization needs access to your organization's resources, and they won't know what applications, groups, or sites your organization is using.<br>
+People in organizations need access to various groups, applications, and SharePoint Online sites to perform their job. Managing this access is challenging, as requirements change. New applications are added or users need more access rights. This scenario gets more complicated when you collaborate with outside organizations. You may not know who in the other organization needs access to your organization's resources, and they won't know what applications, groups, or sites your organization is using.
 
 Entitlement management can help you more efficiently manage access to groups, applications, and SharePoint Online sites for internal users, and also for users outside your organization who need access to those resources.
 
@@ -31,7 +31,7 @@ Here are some of capabilities of entitlement management:
 
 Entitlement management introduces the concept of an access package. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages can be used to govern access for your employees, and also for users who originate outside your organization.
 
-Here are the types of resources you can manage user's access to, with entitlement management:<br>
+Here are the types of resources you can manage user's access to, with entitlement management:
 
  -  Membership of Microsoft Entra security groups<br>
  -  Membership of Microsoft 365 Groups and Teams
@@ -61,7 +61,7 @@ You can have policies for users to request access. In these kinds of policies, a
 
 You can also have policies for users to be assigned access, either by an administrator, automatically based on rules, or through lifecycle workflows.
 
-The following diagram shows an example of the different elements in entitlement management. It shows one catalog with two example access packages.<br>
+The following diagram shows an example of the different elements in entitlement management. It shows one catalog with two example access packages.
 
  -  Access package 1 includes a single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access.<br>
  -  Access package 2 includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.

@@ -1,3 +1,5 @@
+The manufacturing sector collects the largest volume of data of any global industry each year, but it only uses a fraction of the industrial data collected in factories. Let's take a look at how Siemens partnered with Microsoft to develop a real-time, data-driven operations solution for global manufacturers to achieve breakthrough performance by continuously improving sustainability, resilience, and profitability.
+
 One of the main advantages of the Azure AI environment is that it enables you to develop solutions faster and more efficiently. Siemens’ experience provides a good example of how to streamline AI industrial processes thanks to Microsoft products.
 
 ## The organization
@@ -16,11 +18,15 @@ Siemens realized that they needed to change their AI development process. They n
 
 ## The solution
 
-To build this shared, scalable AI platform, Siemens relied on the Microsoft Azure infrastructure. The result, known as **[ai:attack]**, is built upon **Azure Machine Learning** and incorporates other Azure services.
+The solution creates a common data foundation by capturing and contextualizing data from the entire factory to deliver a system-wide view of the end-to-end manufacturing process. The addition of a generative AI copilot, powered by Azure OpenAI, further democratizes industrial data with generative AI, making plant data, analytics, and insights even more accessible and impactful for everyone—from shop floor operators to executives.​
 
-The solution offers a **customizable template** for the entire company. It provides a standard for all data science projects to follow, so it’s easier to reuse assets. The Azure infrastructure ensures easy access to all stakeholders, which also improves cross-team collaboration.
+![Photograph showing worker in a manufacturing plant looking at data.](../media/manufacturing-data.jpg)
 
-Thanks to **Azure AI Services**, it includes several standardized AI services. For example, it includes Azure AI Vision models for quality control that detect damaged devices. Besides, the platform uses the Azure Machine Learning feature to automatically train the AI models. These functionalities improve the performance of all teams and save much time.
+To build this shared, scalable AI platform, Siemens relied on the Microsoft Azure infrastructure. The result, known as [ai:attack], is built upon Azure Machine Learning and incorporates other Azure services.
+
+The solution offers a customizable template for the entire company. It provides a standard for all data science projects to follow, so it’s easier to reuse assets. The Azure infrastructure ensures easy access to all stakeholders, which also improves cross-team collaboration.
+
+Thanks to Azure AI Services, it includes several standardized AI services. For example, it includes Azure AI Vision models for quality control that detect damaged devices. Besides, the platform uses the Azure Machine Learning feature to automatically train the AI models. These functionalities improve the performance of all teams and save much time.
 
 ## The results
 
@@ -28,5 +34,4 @@ The [ai:attack] initiative is already yielding positive results. The **drop in t
 
 Likewise, **code maintenance** is now much easier and faster thanks to standardization. Before, maintaining the code of three projects required three data analysts, whereas today a single worker can maintain code for many projects.
 
-Next, let’s consider how another manufacturing company incorporates generative AI into their products.
-
+Next, let’s wrap up everything you learned with a knowledge check.

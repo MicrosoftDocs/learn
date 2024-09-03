@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Prerequisites, best practices, and performance sizing
   description: After completing this unit, you should be able to describe the prerequisites, best practices, and performance conditions for using Azure NetApp Files with Azure VMware Solution. 
-  ms.date: 04/08/2024
+  ms.date: 07/03/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit

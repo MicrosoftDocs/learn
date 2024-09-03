@@ -4,6 +4,8 @@ metadata:
   moduleType: standard
   title: Authenticate your Azure deployment pipeline by using service principals
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 01/16/2024
   author: mumian
   ms.author: jgao

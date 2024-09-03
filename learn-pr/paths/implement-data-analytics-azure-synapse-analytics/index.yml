@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: azure
 title: Implement a Data Analytics Solution with Azure Synapse Analytics
 prerequisites: |
   The Audience should have familiarity with notebooks that use different languages and a Spark engine, such as Databricks, Jupyter Notebooks, Zeppelin notebooks and more. They should also have some experience with SQL, Python, and Azure tools, such as Data Factory.

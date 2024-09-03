@@ -8,8 +8,7 @@ metadata:
   author: kgremban
   ms.author: kgremban
   ms.custom: engagement-fy23
-  ms.topic: module-standard-task-based
-  ms.service: iot-hub 
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-troubleshoot-guide-device-communication.md)]

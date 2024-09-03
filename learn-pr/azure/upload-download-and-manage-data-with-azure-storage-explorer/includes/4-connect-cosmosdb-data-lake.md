@@ -6,7 +6,7 @@ You've worked through the basics of connecting Storage Explorer to your Azure ac
 
 Azure Data Lake Storage is used for storing and analyzing large data sets. It supports large data workloads. It's well suited to capture data of any type or size, and at any speed. Data Lake Storage features all the expected enterprise-grade capabilities like security, scalability, reliability, manageability, and availability.
 
-There are two types of Azure Data Lake Storage: Gen1 and Gen2. Storage Explorer supports both types.
+There are two types of Azure Data Lake Storage: Gen1 and Gen2. Azure Data Lake Storage Gen1 has been retired; follow the [Azure Data Lake Storage Gen1 migration guidance](https://azure.microsoft.com/updates/action-required-switch-to-azure-data-lake-storage-gen2-by-29-february-2024/) for existing Gen1 accounts.
 
 You can use Storage Explorer to connect to Data Lake accounts. Just like with storage accounts, you can use Storage Explorer to:
 
