@@ -3,7 +3,7 @@ uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model
 metadata:
   title: Use AutoML to train a labeled dataset and develop a production model
   description: Use AutoML to train a labeled dataset and develop a production model.
-  ms.date: 03/14/2022
+  ms.date: 09/03/2024
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
