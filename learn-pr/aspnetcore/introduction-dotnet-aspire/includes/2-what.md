@@ -14,7 +14,7 @@ A cloud-native application is one that is architected to make optimal use of clo
 - **Microservices.** Cloud-native applications are implemented as a set of microservices, each of which implements a small part of the business functionality.
 - **Containers.** Microservices and other parts of the application are developed and deployed in containers to ensure a consistent execution environment.
 - **Backing services.** Ancillary resources, such as databases and caching services, can be used to provide common functionality to microservices.
-- **Modern design.** Cloud-native applications conform to the Twelve-Factore Application methodology, which includes principles such as Continuous Integration/Continuous Deployment (CI/CD), disposability, port binding, and so on.
+- **Modern design.** Cloud-native applications conform to the Twelve-Factor Application methodology, which includes principles such as Continuous Integration/Continuous Deployment (CI/CD), disposability, port binding, and so on.
 - **Automation.** Cloud-native applications use Infrastructure as Code (IaC) to automate platform provisioning and deployment.
 
 :::image type="content" source="/dotnet/architecture/cloud-native/media/cloud-native-foundational-pillars.png" alt-text="Conceptual diagram showing the six pillars of cloud-native applications.":::
