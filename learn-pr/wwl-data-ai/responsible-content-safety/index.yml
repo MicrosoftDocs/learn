@@ -34,12 +34,12 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - cloud-computing
   - data-management
 units:
-- learn.wwl.responsible-content-safety.introduction
-- learn.wwl.responsible-content-safety.what-is-content-safety
-- learn.wwl.responsible-content-safety.how-content-safety-works
-- learn.wwl.responsible-content-safety.when-to-use-content-safety
-- learn.wwl.responsible-content-safety.exercise-content-safety
-- learn.wwl.responsible-content-safety.knowledge-check
-- learn.wwl.responsible-content-safety.summary
+- learn.wwl.responsible-ai-content-safety.introduction
+- learn.wwl.responsible-ai-content-safety.what-is-content-safety
+- learn.wwl.responsible-ai-content-safety.how-content-safety-works
+- learn.wwl.responsible-ai-content-safety.when-to-use-content-safety
+- learn.wwl.responsible-ai-content-safety.exercise-content-safety
+- learn.wwl.responsible-ai-content-safety.knowledge-check
+- learn.wwl.responsible-ai-content-safety.summary
 badge:
   uid: learn.wwl.sample-module.badge
