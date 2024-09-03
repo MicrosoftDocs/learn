@@ -13,3 +13,7 @@ When you publish a .NET app, you can choose between two different types of deplo
 ### Framework-dependent deployment
 
 :::image type="content" source="../media/framework-dependent.gif" alt-text="An animation showing how a framework-dependent deployment depends on the presence of the .NET runtime on the target machine.":::
+
+### Self-contained deployment
+
+:::image type="content" source="../media/self-contained.gif" alt-text="An animation showing how a self-contained deployment includes the .NET runtime with the app.":::
