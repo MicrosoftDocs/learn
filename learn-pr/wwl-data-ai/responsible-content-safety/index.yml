@@ -10,7 +10,7 @@ metadata:
 ###########################################################################
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.service: artiticial-intelligence
+  ms.service: artificial-intelligence
 title: Use AI responsibly with Azure AI Content Safety
 summary: "Azure AI Content Safety is a comprehensive tool designed to detect and manage harmful content in both user-generated and AI-generated materials. Learn how Azure AI Content Safety uses text and image APIs to help identify and filter out content related to violence, hate, sexual content, and self-harm."
 abstract: |
@@ -19,17 +19,17 @@ abstract: |
   - Describe how Azure AI Content Safety operates.
   - Describe when to use Azure AI Content Safety.
 prerequisites: |
-Before starting this module, you should be familiar with Azure and using the Azure portal. You should also have experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](https://learn.microsoft.com/training/paths/csharp-first-steps/) or [Take your first steps with Python](https://learn.microsoft.com/training/paths/python-first-steps/) learning path before starting this one.
+  Before starting this module, you should be familiar with Azure and using the Azure portal. You should also have experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](https://learn.microsoft.com/training/paths/csharp-first-steps/) or [Take your first steps with Python](https://learn.microsoft.com/training/paths/python-first-steps/) learning path before starting this one.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - ai engineer
+  - ai-engineer
   - developer
   - solution-architect
   - student
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  - azure ai services
+  - ai-services
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
   - data-management
