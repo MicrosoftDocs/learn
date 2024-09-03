@@ -1,4 +1,4 @@
-PostgreSQL has two levels of transaction isolation that prevent three types of concurrency conflicts, dirty reads, non-repeatable reads, and phantom reads.
+PostgreSQL has three levels of transaction isolation that prevent three types of concurrency conflicts, dirty reads, non-repeatable reads, and phantom reads.
 
 ## Types of concurrency conflict
 

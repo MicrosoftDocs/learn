@@ -1,6 +1,6 @@
-In the previous exercise, you learned how to create an Azure AI services account using the Azure CLI.
+In the previous exercise, you learned how to create an Azure AI services resource using the Azure CLI.
 
-Now that you have an Azure AI services account with which to work, you can begin working on your text to speech application.
+Now that you have an Azure AI services resource with which to work, you can begin working on your text to speech application.
 
 In this module, we're going to focus on two ways to pass text to Azure AI services' text to speech engine:
 
@@ -19,7 +19,7 @@ To create an application that will convert text to speech using Azure AI Speech,
 
 - Read text from a file.
 
-- Create a `SpeechConfig` class using the API key from your Azure AI services account.
+- Create a `SpeechConfig` class using the API key from your Azure AI services resource.
 
 - Create a `SpeechSynthesizer` class using the `SpeechConfig` class.
 

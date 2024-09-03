@@ -1,5 +1,4 @@
-When developing a new app or modernizing an existing one, choosing the right hosting option is crucial to optimize performance, security, and cost-efficiency.
-Traditionally, apps have been hosted on web servers like Internet Information Services (IIS), Apache, or on NGINX on physical or virtualized on-premises hardware. While this option offers the advantage of providing the infrastructure team full control of the environment, it requires additional effort to manage overhead, upfront costs, availability, scalability, resiliency, security, and compliance.
+If you're developing a new app or modernizing an existing one, choosing the right hosting option is crucial to optimize performance, security, and cost-efficiency. Traditionally, apps were hosted on web servers like Internet Information Services (IIS), Apache, or on NGINX on physical or virtualized on-premises hardware. While this option offers the advantage of providing the infrastructure team full control of the environment, it requires additional effort to manage overhead, upfront costs, availability, scalability, resiliency, security, and compliance.
 
 When you deploy your app to the cloud, you eliminate the need to manage these areas. Hosting an app on the cloud reduces overall set-up costs, provides enhanced availability and reliability with Business Continuity and Disaster Recovery (BCDR) options; allows you to scale your app resources on demand; and provides advanced security.
 
@@ -7,7 +6,7 @@ Microsoft Azure offers a diverse range of app hosting options customized to addr
 
 :::image type="content" source="../media/3-choose-app-hosting-option/application-hosting-options.png" alt-text="Diagram showing types of MySQL applications and corresponding Azure services." lightbox="../media/3-choose-app-hosting-option/application-hosting-options.png":::
 
-Many of these app hosting options integrate seamlessly with Azure Database for MySQL - Flexible Server, a particularly effective service for backend databases due to its scalability, performance, and manageability. In this unit, we'll explore some common MySQL app architectures and Azure services to help you determine the most suitable hosting option for your app workload.
+Many of these app hosting options integrate seamlessly with Azure Database for MySQL - Flexible Server, a particularly effective service for backend databases because of its scalability, performance, and manageability. This unit explores some common MySQL app architectures and Azure services to help you determine the most suitable hosting option for your app workload.
 
 ## Web apps on Azure App Service
 
@@ -23,7 +22,7 @@ On Azure, you can deploy these microservices to Azure Kubernetes Service (AKS), 
 
 In addition to AKS, Azure Container Apps (ACA) offers a serverless container hosting service ideal for modern apps built from microservices. ACA simplifies the deployment and scaling of containers without managing underlying infrastructure such as virtual machines or Kubernetes clusters. It integrates well with Azure Logic Apps and Azure Functions for event-driven architecture, supporting rapid scaling and management of app components. ACA is particularly beneficial for app requiring agile operations and quick iterations, providing dynamic scaling options based on HTTP traffic or event-driven triggers. This service supports both Windows and Linux containers, allowing you to deploy microservices developed in various programming environments seamlessly.
 
-By leveraging ACA alongside traditional Kubernetes deployments through AKS, you can enjoy more flexibility in how they orchestrate, scale, and manage their containerized apps. This approach not only maximizes operational efficiency but also enhances the ability to respond swiftly to market changes and customer demands.
+By leveraging ACA together with traditional Kubernetes deployments through AKS, you can enjoy more flexibility in how they orchestrate, scale, and manage their containerized apps. This approach not only maximizes operational efficiency but also enhances the ability to respond swiftly to market changes and customer demands.
 
 ## Event-driven serverless apps with Azure Functions and Azure Logic Apps
 

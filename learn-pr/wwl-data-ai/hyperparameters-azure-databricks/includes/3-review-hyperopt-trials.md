@@ -1,5 +1,5 @@
 
-When you use Hyperopt to try multiple hyperparameter combinations, you may want to review the details of each trial. You can review these details in two ways:
+When you use Hyperopt to try multiple hyperparameter combinations, you can review the details of each trial. You can review these details in two ways:
 
 - View the MLflow run for each trial.
 - Use the **Trials** class to capture run details.
