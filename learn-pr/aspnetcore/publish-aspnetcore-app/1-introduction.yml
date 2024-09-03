@@ -8,7 +8,6 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: unit
-  ms.service: aspnet-core
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
