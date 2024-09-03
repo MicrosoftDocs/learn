@@ -33,7 +33,7 @@ You can automate and manage your Azure file shares snapshots. Automating snapsho
 
 - When Azure Backup is enabled on the file share, the soft delete feature is also enabled. 
 
-- You can configure snapshot backups for daily, weekly, monthly or yearly retention, according to your requirements.
+- You can configure snapshot backups for daily, weekly, monthly, or yearly retention.
 
 ### Things to consider when using file share backups
 
