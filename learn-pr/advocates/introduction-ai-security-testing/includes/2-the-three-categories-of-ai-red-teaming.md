@@ -6,7 +6,7 @@ Through the process of performing AI red teaming against LLMs and AI enabled app
 
 The diagram provides an overview of these three flavors:
 
-![Image of the three different flavors of AI red teaming.](../media/ai-red-teaming-flavors.png)
+![Graphic showing the three different flavors of AI red teaming.](../media/ai-red-teaming-flavors.png)
 
 ## Full stack red teaming
 

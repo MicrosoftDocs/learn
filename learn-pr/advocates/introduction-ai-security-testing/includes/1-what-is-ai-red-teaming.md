@@ -4,7 +4,7 @@ The introduction of Large Language Models (LLMs) into application ecosystems req
 
 The following diagram provides an overview of the expansion of scope that occurred with red teaming since the introduction of LLM into application ecosystems.
 
-![Image of the expansion of red teaming to include AI enabled applications.](../media/ai-red-teaming-description.png)
+![Graphic showing the expansion of red teaming to include AI enabled applications.](../media/ai-red-teaming-description.png)
 
 AI red teaming takes place at two levels: at the base LLM level, such as red team attacks against an LLM like GPT-4 or Phi-3, or at the application level where an AI enabled application uses an LLM as a part of its back end infrastructure. Taking this two layer approach leads to the following outcomes:
 
