@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.describe-audit
+title: Describe audit in Microsoft Purview
+metadata:
+  title: Describe audit in Microsoft Purview
+  description: "Describe audit in Microsoft Purview."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-audit.md)]

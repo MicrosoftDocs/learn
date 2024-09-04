@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.describe-insider-risk-management
+title: Describe Insider Risk Management
+metadata:
+  title: Describe Insider Risk Management
+  description: "Describe Insider Risk Management."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-describe-insider-risk-management.md)]
