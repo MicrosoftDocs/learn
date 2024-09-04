@@ -6,7 +6,7 @@ Content Safety vision capabilities are powered by Microsoft's Florence foundatio
 
 Azure AI Content Safety classifies content into four categories:
 
-![Azure AI Content Safety classifies content into four categories]( four-perspectives.jpeg "Azure AI Content Safety classifications")
+![Azure AI Content Safety classifies content into four categories]( ../media/four-perspectives.jpg "Azure AI Content Safety classifications")
 
 A severity level for each category is used to determine whether content should be blocked, sent to a moderator, or auto approved.
 

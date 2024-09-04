@@ -16,7 +16,7 @@ Azure AI Content Safety is designed to be used in applications and services to p
 
 Azure AI Content Safety Studio is available as part of [Azure AI Studio](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
 
-![Content Safety Studio in Azure AI Studio]( ai-studio-content-safety.jpeg "Content Safety Studio")
+![Content Safety Studio in Azure AI Studio]( ../media/ai-studio-content-safety.jpg "Content Safety Studio")
 
 From the [Azure AI Studio](https://ai.azure.com/) home page, scroll down to find Content Safety and then select **View all Content Safety capabilities**.
 
@@ -24,4 +24,4 @@ Azure AI Content Safety Studio enables you to explore and test Content Safety fe
 
 **NOTE:** You can access Azure AI Content Studio either through [Azure AI Studio](https://ai.azure.com/) or through [Content Safety Studio](https://contentsafety.cognitive.azure.com/).
 
-For guided practice using Azure AI Content Studio, see [Moderate content and detect harm with Azure AI Content Safety Studio](https://learn.microsoft.com/en-gb/training/modules/moderate-content-detect-harm-azure-ai-content-safety-studio/). 
+For guided practice using Azure AI Content Studio, see [Moderate content and detect harm with Azure AI Content Safety Studio](/training/modules/moderate-content-detect-harm-azure-ai-content-safety-studio/). 
