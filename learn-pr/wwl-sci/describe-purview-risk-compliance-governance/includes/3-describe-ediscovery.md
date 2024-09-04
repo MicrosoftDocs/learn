@@ -48,7 +48,8 @@ Microsoft Purview eDiscovery supports integration with Microsoft Copilot for Sec
 - Gain contextual summary of evidence collected in eDiscovery review sets (Preview).
 - Natural language to keyword query language (keyQL) queries.
 
-#### Gain contextual summary of evidence collected in eDiscovery review sets (Preview).
+#### Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
+
 eDiscovery admins or managers spend a significant amount of time reviewing evidence collected in review sets. You can use Copilot for Security in Microsoft Purview to provide a contextual summary of most items in a review set.
 
 The summary provided is in the context of text included in a selected item. This summary can save time for reviewers by quickly identifying information helpful when tagging or exporting items.
