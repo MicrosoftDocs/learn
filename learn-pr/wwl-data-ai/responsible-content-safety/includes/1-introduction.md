@@ -10,11 +10,11 @@ The need for improving online content safety has four main drivers:
 
 ![Four drivers to improve online content safety](need-for-content-safety.jpeg"Four drivers to improve online content safety")
 
-1. **Increase in harmful content** There has been a huge growth in user-gernated online content, including  harmful and inappropriate content.
-2. **Regulatory pressures** Government pressure to regulate online content.
-3. **Transparency** Users need transparency in content moderation standards and enforcement.
-4. **Complex content** Advances in technology is making it  easier for users to post multimodal content and videos.
+1. **Increase in harmful content**: There's been a huge growth in user-generated online content, including harmful and inappropriate content.
+2. **Regulatory pressures**: Government pressure to regulate online content.
+3. **Transparency**: Users need transparency in content moderation standards and enforcement.
+4. **Complex content**: Advances in technology are making it easier for users to post multimodal content and videos.
 
-**NOTE:**  Azure AI Content Safety replaces Azure Content Moderator which was deprecated in February 2024 and will be retired by February 2027.
+**NOTE:**  Azure AI Content Safety replaces Azure Content Moderator, which was deprecated in February 2024 and will be retired by February 2027.
 
 In this module, you'll learn about the key features of Azure AI Content Safety, and when each might be used.

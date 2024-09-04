@@ -8,7 +8,7 @@ Online content safeguarding is needed in a growing number of situations. Not onl
 
 Social interaction is increasingly a part of many digital spaces. Genuine user-generated content is seen as independent and trustworthy, and used alongside advertising and marketing. Different industries are encouraging their customers to connect with each other and their brand.  
 
-Harmful content has many negative affects. It damages trusted brands, discourages users from participating in online forums, and can have a devastating impact on individuals.
+Harmful content has many negative effects. It damages trusted brands, discourages users from participating in online forums, and can have a devastating impact on individuals.
 
 Azure AI Content Safety is designed to be used in applications and services to protect against harmful user-generated and AI-generated content.
 
