@@ -22,11 +22,11 @@ quiz:
       explanation: Correct. The config.json file specifies the subscription_id, resource_group, and workspace_name of the Machine Learning studio workspace.
     - content: 'Providing a connection string within a connection cell in the Jupyter notebook.'
       isCorrect: false
-      explanation: Incorrect. A connection string was not used for authentication to the Azure Machine Learning workspace.
-    - content: 'Using our Azure credentials which were passed in transparently when accessing the Jupyter notebook.'
+      explanation: Incorrect. A connection string wasn't used for authentication to the Azure Machine Learning workspace.
+    - content: 'Using our Azure credentials, which were passed in transparently when accessing the Jupyter notebook.'
       isCorrect: false
       explanation: Incorrect. The Azure Machine Learning Python SDK must explicitly reference a workspace configuration from a file (config.json).
-  - content: 'The Azure Machine Learning Python SDK allowed us to provision a compute instance in our Azure Machine Learning Studio workspace.  That instance could then be referenced in Python code to submit AutoML tasks to run on that machine as a target.'
+  - content: 'The Azure Machine Learning Python SDK allowed us to provision a compute instance in our Azure Machine Learning studio workspace. That instance could then be referenced in Python code to submit AutoML tasks to run on that machine as a target.'
     choices: 
     - content: 'True'
       isCorrect: true

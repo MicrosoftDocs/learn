@@ -1,4 +1,4 @@
-In this section, we'll continue to work in the Jupyter notebook to execute the steps that will produce our object detection model. This task will be accomplished using [AutoML for computer vision](/azure/machine-learning/concept-automated-ml). You'll be able to see your model in action by performing inference on a test sample that was never before seen by the model during training.
+In this section, we'll continue to work in the Jupyter notebook to execute the steps that will produce our object detection model. This task will be accomplished using [AutoML for computer vision](/azure/machine-learning/concept-automated-ml). Performing inference on a test sample that was never before seen by the model during training allows you to see your model in action.
 
 ## Execute the Jupyter Notebook to produce an object detection model using AutoML
 
@@ -38,7 +38,7 @@ In this section, we'll continue to work in the Jupyter notebook to execute the s
 
 1. Continue to execute the cells in the **Get expected input and output details for an ONNX model**. This task will analyze the model to determine the input and output shapes that define the Convolution Neural Network present in the model.
 
-1. Continue to execute the cells in the **Image Inferencing Preprocessing** section. This will  preprocess the *test_image1.jpg* sample that was uploaded to our workspace earlier. The preprocessing step will transform the image to match the expect input shape that was determined in the previous step.
+1. Continue to execute the cells in the **Image Inferencing Preprocessing** section. This will preprocess the *test_image1.jpg* sample that was uploaded to our workspace earlier. The preprocessing step will transform the image to match the expected input shape that was determined in the previous step.
 
 1. Continue to execute the cells in the **Object detection with YOLO** section. This section will perform inference on the *test_image1.jpg* sample and demonstrate the object detection model output visually in the final cell. Here you can see the accuracy of your model as it detects object on a never before seen image sample.
 
