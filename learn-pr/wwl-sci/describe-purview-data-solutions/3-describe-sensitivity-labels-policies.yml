@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-purview-data-solutions.describe-sensitivity-labels-policies
-title: Describe sensitivity labels and policies in Information Protection
+title: Describe sensitivity labels and policies in Microsoft Purview Information Protection
 metadata:
-  title: Describe sensitivity labels and policies in Information Protection
-  description: "Describe sensitivity labels and policies in Information Protection."
+  title: Describe sensitivity labels and policies in Microsoft Purview Information Protection
+  description: "Describe sensitivity labels and policies in Microsoft Purview Information Protection."
   ms.date: 8/22/2024
   author: wwlpublish
   ms.author: ceperezb
