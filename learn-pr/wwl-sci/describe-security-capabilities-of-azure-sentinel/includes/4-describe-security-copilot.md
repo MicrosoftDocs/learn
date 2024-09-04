@@ -31,8 +31,7 @@ The Microsoft Sentinel incident investigation promptbook is not only a great sta
 
 The integration of Microsoft Sentinel with Copilot can be experienced through both the standalone experience and the embedded experience using the Defender portal.  The embedded experience that is accessed through the Defender portal uses the unified security operations platform with your Microsoft Sentinel data.
 
-***Incidents***
-Microsoft Sentinel incidents are now unified with Defender XDR incidents, so you can use Copilot in Microsoft Defender for incident summary, guided responses and incident reports of Sentinel incidents.
+***Incidents*** - Microsoft Sentinel incidents are now unified with Defender XDR incidents, so you can use Copilot in Microsoft Defender for incident summary, guided responses and incident reports of Sentinel incidents.
 
 # [Unified incidents](#tab/unified-incidents)
 
@@ -42,8 +41,6 @@ Microsoft Sentinel incidents are now unified with Defender XDR incidents, so you
 
 :::image type="content" source="../media/copilot-incident-summary.png" lightbox="../media/copilot-incident-summary.png" alt-text="Screen capture of the Copilot incident summary for a Sentinel incident, shown in the Defender portal.":::
 
-***Advanced hunting***
-
-With the Natural language to KQL for Microsoft Sentinel (Preview) plugin enabled, you can generate and run KQL hunting queries using, Microsoft Sentinel data, in the advanced hunting section of the Microsoft Defender portal.
+***Advanced hunting*** - With the Natural language to KQL for Microsoft Sentinel (Preview) plugin enabled, you can generate and run KQL hunting queries using, Microsoft Sentinel data, in the advanced hunting section of the Microsoft Defender portal.
 
 :::image type="content" source="../media/advanced-hunting.png" lightbox="../media/advanced-hunting.png" alt-text="Screen capture of Copilot hunting queries in the Defender portal.":::
