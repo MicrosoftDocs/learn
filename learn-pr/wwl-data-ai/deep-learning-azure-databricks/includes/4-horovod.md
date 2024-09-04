@@ -1,68 +1,99 @@
+PyTorch, in common with other deep learning frameworks like TensorFlow, is designed to scale across multiple processors (CPUs or GPUs) on a single computer. In most cases, this approach to scaling *up* by using computers with more or faster processors provides adequate training performance.
 
-PyTorch, in common with other common deep learning frameworks like TensorFlow, is designed to scale across multiple processors (CPUs or GPUs) on a single computer. In most cases, this approach to scaling *up* by using computers with more or faster processors provides adequate training performance. However, when you need to work with extremely complex neural networks or large volumes of training data, you may benefit from Apache Spark's inherent ability to scale *out* processing tasks across multiple worker nodes.
+However, when you need to work with complex neural networks or large volumes of training data, you can benefit from Apache Spark's inherent ability to scale *out* processing tasks across multiple worker nodes.
 
-Azure Databricks uses Spark clusters that can include multiple worker nodes. Additionally, the **ML** databricks runtimes in Azure Databricks include *Horovod*, and open source library that enables you to distribute machine learning training tasks across the nodes in a cluster.
+Azure Databricks uses Spark clusters that can include multiple worker nodes. To make optimal use of those clusters, you can use **TorchDistributor**, an open-source library that enables you to distribute PyTorch training jobs across the nodes in a cluster. TorchDistributor is available on Databricks Runtime ML 13.0 and above.
 
-## Create a training function
+When you already trained a model with PyTorch, you can convert your single process training to distributed training with TorchDistributor by:
 
-The first step to use Horovod is to create a function that encapsulates the code you use to call your train function. The code in this "outer" function can take advantage of various Horovod classes and functions to distribute data and optimizer state across all of the nodes involved in the training process.
+1. **Adapt your existing code**: Modify your single-node training code to be compatible with distributed training. Ensure that your training logic is encapsulated within a single function.
+1. **Move imports within the training function**: Place necessary imports, such as `import torch`, inside the training function to avoid common pickling errors.
+1. **Prepare the training function**: Include your model, optimizer, loss function, and training loop within the training function. Ensure that the model and data are moved to the appropriate device (CPU or GPU).
+1. **Instantiate and run TorchDistributor**: Create an instance of `TorchDistributor` with the desired parameters and call `.run(*args)` to launch the distributed training.
 
-The following code example shows a function for managing a distributed training run.
+## Adapt your existing code
 
-```python
-import horovod.torch as hvd
-from sparkdl import HorovodRunner
-
-def train_hvd(model):
-    from torch.utils.data.distributed import DistributedSampler
-    
-    hvd.init()
-    
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    if device.type == 'cuda':
-        # Pin GPU to local rank
-        torch.cuda.set_device(hvd.local_rank())
-    
-    # Configure the sampler so that each worker gets a distinct sample of the input dataset
-    train_sampler = DistributedSampler(train_ds, num_replicas=hvd.size(), rank=hvd.rank())
-    # Use train_sampler to load a different sample of data on each worker
-    train_loader = torch.utils.data.DataLoader(train_ds, batch_size=20, sampler=train_sampler)
-    
-    loss_criteria = nn.CrossEntropyLoss()
-    # Scale the learning_rate based on the number of nodes
-    learning_rate = 0.001 * hvd.size()
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    
-    # Wrap the local optimizer with hvd.DistributedOptimizer so that Horovod handles the distributed optimization
-    optimizer = hvd.DistributedOptimizer(optimizer, named_parameters=model.named_parameters())
-
-    # Broadcast initial parameters so all workers work with the same parameters
-    hvd.broadcast_parameters(model.state_dict(), root_rank=0)
-    hvd.broadcast_optimizer_state(optimizer, root_rank=0)
-
-    # Train over 50 epochs
-    epochs = 50
-    for epoch in range(1, epochs + 1):
-        print('Epoch: {}'.format(epoch))
-        # Feed training data into the model to optimize the weights
-        train_loss = train(model, train_loader, optimizer)
-
-    # Save the model weights
-    if hvd.rank() == 0:
-        model_file = '/dbfs/myModel_hvd.pkl'
-        torch.save(model.state_dict(), model_file)
-        print('model saved as', model_file)
-```
-
-## Run the function on multiple nodes
-
-After you've defined the function to call your training function, you can use the **HorovodRunner** class to run it across multiple nodes in your cluster, as shown here:
+First, you need to modify your single-node training code to be compatible with distributed training. When you modify your code, you need to ensure that your training logic is encapsulated within a single function. This function is used by **TorchDistributor** to distribute the training across multiple nodes.
 
 ```python
-# Create a new model
-hvd_model = MyNet()
+import torch.nn as nn
 
-# Run the distributed training function on 2 nodes
-hr = HorovodRunner(np=2) 
-hr.run(train_hvd, model=hvd_model)
+class SimpleModel(nn.Module):
+    def __init__(self):
+        super(SimpleModel, self).__init__()
+        self.fc = nn.Linear(10, 1)
+    
+    def forward(self, x):
+        return self.fc(x)
 ```
+
+Now you can prepare your dataset that is in a format compatible with PyTorch using `torch.utils.data.DataLoader`.
+
+```python
+# Sample data
+inputs = torch.randn(100, 10)
+targets = torch.randn(100, 1)
+
+# Create dataset and dataloader
+from torch.utils.data import DataLoader, TensorDataset
+dataset = TensorDataset(inputs, targets)
+dataloader = DataLoader(dataset, batch_size=10)
+```
+
+## Move imports within the training function
+
+To avoid common pickling errors, place necessary imports, such as `import torch`, inside the training function. Placing all imports within the training function ensures that all required modules are available when the function is distributed across multiple nodes.
+
+## Prepare the training function
+
+Include your model, optimizer, loss function, and training loop within the training function. Ensure that the model and data are moved to the appropriate device (CPU or GPU).
+
+```python
+def train_model(dataloader):
+    import torch
+    import torch.nn as nn
+    from torch.optim import SGD
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = SimpleModel().to(device)
+    optimizer = SGD(model.parameters(), lr=0.01)
+    loss_fn = nn.MSELoss()
+    
+    for epoch in range(10):
+        for batch in dataloader:
+            inputs, targets = batch
+            inputs, targets = inputs.to(device), targets.to(device)
+            optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = loss_fn(outputs, targets)
+            loss.backward()
+            optimizer.step()
+```
+
+## Instantiate and run TorchDistributor
+
+Create an instance of `TorchDistributor` with the desired parameters and call `.run(*args)` to launch the distributed training. Running TorchDistributor distributes the training tasks across multiple nodes.
+
+```python
+from pyspark.ml.torch.distributor import TorchDistributor
+
+# Distribute the training
+distributor = TorchDistributor(num_workers=4)
+distributor.run(train_model, dataloader)
+```
+
+## Monitor and evaluate your training job
+
+You can use the built-in tools to monitor your cluster's performance, including CPU or GPU usage, and memory utilization. When training is complete, you can evaluate the model on a validation or test dataset using PyTorch evaluation techniques to assess your model's performance.
+
+```python
+# Evaluate the model (after distributed training is complete)
+model.eval()
+with torch.no_grad():
+    for inputs, targets in dataloader:
+        outputs = model(inputs)
+        # Perform evaluation logic
+```
+
+> [!Tip]
+> Learn more about [distributed training with TorchDistributor](/azure/databricks/machine-learning/train-model/distributed-training/spark-pytorch-distributor?azure-portal=true).

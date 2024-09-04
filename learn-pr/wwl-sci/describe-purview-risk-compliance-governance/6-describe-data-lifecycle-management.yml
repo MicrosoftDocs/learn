@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.describe-data-lifecycle-management
+title: Describe Data Lifecycle Management
+metadata:
+  title: Describe Data Lifecycle Management
+  description: "Describe Data Lifecycle Management."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-describe-data-lifecycle-management.md)]

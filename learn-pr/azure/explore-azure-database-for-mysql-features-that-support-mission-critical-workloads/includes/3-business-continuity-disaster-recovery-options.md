@@ -1,4 +1,5 @@
 Azure Database for MySQL - Flexible Server provides business continuity features to protect your database in case of planned or unplanned outages. To address different types of outages, you can apply varying levels of fault protection with different recovery times or risk of data loss.
+
 ## Downtime examples
 
 A few example scenarios for both planned and unplanned downtime follow.
@@ -23,7 +24,7 @@ The database can go down unexpectedly for several reasons, such as:
 
 - Availability zone & region failures.
 
-If high availability (HA) is not enabled, then Azure attempts recovery such as copying lost data, restarting the server, or even starting the server on another physical node. Enabling HA can reduce or even eliminate these kinds of downtime, as discussed in the following section.
+If high availability (HA) isn't enabled, then Azure attempts recovery such as copying lost data, restarting the server, or even starting the server on another physical node. Enabling HA can reduce or even eliminate these kinds of downtime, as discussed in the following section.
 
 ## High availability
 
@@ -87,7 +88,7 @@ By default, with a system-managed schedule, the system picks a one-hour window b
 
 ### Near-zero downtime maintenance for HA servers (public preview)
 
-HA-enabled servers benefit from Near Zero Downtime Maintenance, a new feature which substantially reduces maintenance downtime. The expected downtime is between 40 to 60 seconds. Near-zero downtime maintenance is crucial for applications with very high availability requirements, requiring minimal interruptions to database connectivity.
+HA-enabled servers benefit from Near Zero Downtime Maintenance, a new feature, which substantially reduces maintenance downtime. The expected downtime is between 40 to 60 seconds. Near-zero downtime maintenance is crucial for applications with very high availability requirements, requiring minimal interruptions to database connectivity.
 
 ### Reschedule maintenance (public preview)
 
