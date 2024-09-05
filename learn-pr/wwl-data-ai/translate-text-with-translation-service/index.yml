@@ -3,7 +3,7 @@ uid: learn.wwl.translate-text-with-translation-service
 metadata:
   title: 'Fundamentals of language translation '
   description: "Use Azure AI Speech and Azure AI Translator to translate text and speech."
-  ms.date: 09/04/2024
+  ms.date: 09/05/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
