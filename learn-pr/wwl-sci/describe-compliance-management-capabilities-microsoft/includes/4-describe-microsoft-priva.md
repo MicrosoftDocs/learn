@@ -15,6 +15,8 @@ The Priva suite of solutions has expanded to include the following solutions:
 
 These solutions can be found in the new Microsoft Priva portal (preview).
 
+:::image type="content" source="../media/priva-solutions.png" alt-text="A diagram that shows the Priva solutions, which include Privacy Assessments, Privacy Risk Management, Tracker Scanning, Consent Management, and Subject Rights Requests.":::
+
 ### Priva Privacy Risk Management
 
 Microsoft Priva Privacy Risk Management gives you the capability to set up policies that identify privacy risks in your Microsoft 365 environment and enable easy remediation. Policy options in Privacy Risk Management can help you find issues in the following areas of privacy concern and guide your users through recommended steps for remediation.
@@ -31,8 +33,7 @@ The summary and resources unit of this module, includes a link to learn more abo
 
 In accordance with certain privacy regulations around the world, individuals (or data subjects) may make requests to review or manage the personal data about themselves that companies have collected. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. For companies that store large amounts of information, finding the relevant data can be a formidable task.
 
-Microsoft Priva can help you handle these inquiries through the Subject Rights Requests solution, which can address subject rights request for data within your organization's Microsoft 365 environment or for subject rights request for data beyond Microsoft 365, currently in preview. The solution provides automation, insights, and workflows to help organizations fulfill requests more confidently and efficiently.
-
+Microsoft Priva can help you handle these inquiries through the Subject Rights Requests solution, which can address subject rights request for data within your organization's Microsoft 365 environment or for **subject rights request for data beyond Microsoft 365, currently in preview**. The solution provides automation, insights, and workflows to help organizations fulfill requests more confidently and efficiently.
 
 ### Consent Management (preview)
 
