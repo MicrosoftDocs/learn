@@ -7,7 +7,6 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
-  ms.prod: sql-server
 title: Develop data-driven applications by using Microsoft Azure SQL Database
 prerequisites: |
   - Experience with relational databases.
