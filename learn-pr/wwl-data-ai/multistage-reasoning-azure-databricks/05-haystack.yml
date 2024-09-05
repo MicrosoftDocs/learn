@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.multistage-reasoning-azure-databricks.haystack
+title: Explore Haystack
+metadata:
+  title: Explore Haystack
+  description: "Explore Haystack"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/05-haystack.md)]

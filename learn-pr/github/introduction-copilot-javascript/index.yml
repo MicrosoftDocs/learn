@@ -5,7 +5,7 @@ metadata:
   description: Use GitHub Copilot with Visual Studio Code to make changes and updates to a JavaScript application.
   author: abrilurena
   ms.author: abrilu
-  ms.date: 8/23/2023
+  ms.date: 08/12/2024
   ms.service: github-copilot
   ms.topic: module-standard-task-based
   ms.collection:

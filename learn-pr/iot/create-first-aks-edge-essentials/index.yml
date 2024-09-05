@@ -33,6 +33,9 @@ products:
 - azure
 - aks-edge-essentials
 - windows-iot
+- azure-arc
+- azure-kubernetes-service
+- azure-iot
 subjects:
 - iot
 - containers

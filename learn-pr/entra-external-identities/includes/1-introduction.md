@@ -12,6 +12,6 @@ In this module, you'll:
 ## Prerequisites
 
 * An Azure subscription and Azure account 
-* If you don’t have an Azure subscription, use any personal account, Microsoft account (MSA), or GitHub account
+* If you don’t have an Azure subscription, you can create a free trial tenant using your existing Outlook or Hotmail account, or GitHub or personal email address (you’ll be prompted to create an Outlook account with your GitHub or personal email)
 * (Optional) The latest version of Visual Studio Code
 * (Optional) The latest version of PowerShell
