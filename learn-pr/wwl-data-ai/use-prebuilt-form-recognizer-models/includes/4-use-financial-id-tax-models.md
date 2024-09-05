@@ -71,20 +71,10 @@ Business cards are a popular way to exchange contact information quickly and oft
 - Email and website addresses.
 - Various telephone numbers.
 
-## Using the W-2 model
+## Using other prebuilt models
 
-The W-2 form is issued by the United States Internal Revenue Service (IRS) and used by individuals to report employees' wages and taxes withheld. The form has more than 14 boxes and describes the employee's earnings in a year.
-
-The Azure AI Document Intelligence W-2 model is trained on many examples of the W-2 form and can extract many fields from it, including:
-
-- Information about the employer, such as their name and address.
-- Information about the employee, such as their name, address, and social security number.
-- Information about the taxes that the employee has paid.
+Azure AI Document Intelligence offers several prebuilt models, with new models being released regularly. Before training a custom model, it's worth verifying if your use case can be analyzed accurately with one of these prebuilt models. Using a prebuilt model will benefit from rigorous testing, updated model versions, and reduced cost compared to a custom model.
 
 ## Learn more
 
-- [Azure AI Document Intelligence invoice model](/azure/ai-services/document-intelligence/concept-invoice)
-- [Azure AI Document Intelligence receipt model](/azure/ai-services/document-intelligence/concept-receipt)
-- [Azure AI Document Intelligence ID document model](/azure/ai-services/document-intelligence/concept-id-document)
-- [Azure AI Document Intelligence business card model](/azure/ai-services/document-intelligence/concept-business-card)
-- [Azure AI Document Intelligence W-2 model](/azure/ai-services/document-intelligence/concept-w2)
+- [Azure AI Document Intelligence model overview](/azure/ai-services/document-intelligence/concept-model-overview)
