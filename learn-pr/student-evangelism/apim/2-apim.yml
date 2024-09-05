@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.apim.apim
-title: API Management
+title: API management
 metadata:
-  title: API Management
-  description: Describe unit
+  title: API management
+  description: In this unit, you will learn what things to consider when managing APIs at scale.
   author: softchris
   ms.author: chnoring
   ms.date: 06/30/2024

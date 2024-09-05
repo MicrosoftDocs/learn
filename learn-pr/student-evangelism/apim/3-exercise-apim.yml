@@ -3,7 +3,7 @@ uid: learn.apim.exercise
 title: Exercise - deploy API Management
 metadata:
   title: Exercise - deploy API Management
-  description: Exercise to deploy API Management by using an Azure Sample.
+  description: Exercise to deploy Azure API Management by using an Azure Sample.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

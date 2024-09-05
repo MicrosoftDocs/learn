@@ -3,7 +3,7 @@ uid: learn.apim.token
 title: Token management
 metadata:
   title: Token management
-  description: Describe unit
+  description: This unit describes how to apply policies to manage tokens in Azure API Management service.
   author: softchris
   ms.author: chnoring
   ms.date: 06/30/2024

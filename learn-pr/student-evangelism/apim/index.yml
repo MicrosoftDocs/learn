@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-api-management
 title: Managing APIs at scale with API Management
-summary: Learn how to
+summary: This module will help you understand how to manage APIs at scale with Azure API Management. Specifically it will show how to interact with Azure OpenAI service.
 abstract: |
   In this module you will:
   - Identify challenges around managing APIs.

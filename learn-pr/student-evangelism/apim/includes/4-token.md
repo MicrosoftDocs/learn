@@ -1,18 +1,18 @@
 Imagine you get a sudden spike in traffic towards your API, maybe there's a sale or some other reason. To avoid over consumption and possible service disruption, you need to figure out how to manage that.
 
-## Azure OpenAI Token Limit Policy
+## Azure OpenAI Token Limit policy
 
 As mentioned in the beginning of this unit, sudden spike is something, you need to handle. The good news is that Azure API Management has something called Token Limit Policy.
 
 This policy allows customers to set limits on token consumption, expressed in tokens-per-minute (TPM) and ensures fair and efficient utilization of OpenAI resources.
 
-### Key Features:
+### Key features
 
 The key features of this policy are:
 
 - **Precise Control**: Customers can assign token-based limits on various counter keys, such as Subscription key or IP Address, tailoring the enforcement to specific use cases.
 - **Real-Time Monitoring**: The policy relies on token usage metrics returned from the OpenAI endpoint, allowing for accurate monitoring and enforcement of limits in real-time.
-- **Pre-Calculation of Tokens**: It enables precalculation of prompt tokens on the APIM side, minimizing unnecessary requests to the OpenAI backend if the limit is already exceeded.
+- **Pre-Calculation of Tokens**: It enables precalculation of prompt tokens on the Azure API Management side, minimizing unnecessary requests to the OpenAI backend if the limit is already exceeded.
 - **Enhanced Customization**: Customers can apply headers and variables such as tokens-consumed and remaining-tokens within policies for better control and customization.
 
 Ss you can see, there's quite a few features that help you manage costs and thanks to the real-time monitoring you can make sure that you're not exceeding the limits.

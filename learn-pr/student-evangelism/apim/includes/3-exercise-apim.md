@@ -56,7 +56,7 @@ Your sample should now be running. You can access it by navigating to `http://lo
 
 You should see a web page with a text box and a button, like so:
 
-:::image type="content" source="../media/apim.png" alt-text="image of app with input box and button":::
+:::image type="content" source="../media/azure-api-management.png" alt-text="Screenshot of app with input box and button.":::
 
 Try it out by typing a message to generate a response text from the AI model.
 

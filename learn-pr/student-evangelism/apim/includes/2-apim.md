@@ -43,7 +43,7 @@ Adding a load balancing construct is the answer when the problem is that your AP
 
 In Azure API Management service, load balancing is implemented by you defining a concept called backends. The idea is that you set up many backends that correspond to your API endpoints and then you create a load balancer that distributes the load across these backends. Here's how the architecture looks like:
 
-![Load balancer](../media/load-balancer.png)
+![Screenshot of a load balancer.](../media/load-balancer.png)
 
 What's happening in the preceding architecture is:
 
@@ -51,7 +51,8 @@ What's happening in the preceding architecture is:
 1. The request is authenticated and authorized.
 1. The request is then sent to the load balancer.
 1. The load balancer distributes the request to one of the backends (selected Azure OpenAI API is indicated in bold).
-1. The backend processes the request and sends a response back to the client.
+
+The backend processes the request and sends a response back to the client.
 
 ## Defining the load balancer
 
