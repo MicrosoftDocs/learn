@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.terraform-build-reusable-modules.how-secure-parameter
+title: Secure your parameters
+metadata:
+  unitType: learning-content
+  title: Secure your parameters
+  description: Learn about providing secure parameters by using decorators and Azure Key Vault references.
+  ms.date: 01/03/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-how-secure-parameter.md)]

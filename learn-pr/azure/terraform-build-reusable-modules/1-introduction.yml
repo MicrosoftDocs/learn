@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.terraform-build-reusable-modules.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: |
+    This module describes how you can use input variables to provide information for your Terraform root module during each deployment.
+    You'll learn about input variable attributes, which make your input variables easy to understand and work with.
+    You'll also learn about the different ways that you can provide input variable values and how to protect these values when you're working with secure information.
+
+  ms.date: 01/03/2023
+  author: mtinderholt
+  ms.author: mtinderholt
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
