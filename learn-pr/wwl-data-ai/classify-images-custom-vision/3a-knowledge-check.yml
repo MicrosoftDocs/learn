@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 08/22/2023
+  ms.date: 08/10/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "Custom Vision"
       isCorrect: true
-      explanation: "Correct: When you create a Custom Vision resource, you can specify whether it is to be used for training, prediction, or both."
+      explanation: "Correct: When you create a Custom Vision resource, you can specify whether it's to be used for training, prediction, or both."
     - content: "Azure AI services"
       isCorrect: false
       explanation: "Incorrect: An Azure AI services resource must be used by the Custom Vision service for both training and prediction."
     - content: "Computer Vision"
       isCorrect: false
-      explanation: "Incorrect: A Computer Vision resource does not support the training of a custom image classification model."
+      explanation: "Incorrect: A Computer Vision resource doesn't support the training of a custom image classification model."
   - content: "You train an image classification model that achieves less than satisfactory evaluation metrics. How might you improve it?"
     choices:
     - content: "Reduce the size of the images used to train the model."
@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect: Changing the size of the images is unlikely to improve performance significantly, and reducing them may even lose some resolution and make the model worse."
     - content: "Add a new label for \"unknown\" classes."
       isCorrect: false
-      explanation: "Incorrect: Adding an \"unknown\" label will not improve the accuracy of predictions for the classes you want to identify."
+      explanation: "Incorrect: Adding an \"unknown\" label won't improve the accuracy of predictions for the classes you want to identify."
     - content: "Add more images to the training set."
       isCorrect: true
       explanation: "Correct: Generally, adding more images to the project and retraining the model is likely to improve performance."
@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Only the project ID."
       isCorrect: false
-      explanation: "Incorrect: The project ID on its own is not enough information to use the published model"
+      explanation: "Incorrect: The project ID on its own isn't enough information to use the published model"
     - content: "The project ID, the model name, and the key and endpoint for the prediction resource"
       isCorrect: true
       explanation: "Correct: To use a published model, you need the project ID, the model name, and the key and endpoint for the prediction resource."

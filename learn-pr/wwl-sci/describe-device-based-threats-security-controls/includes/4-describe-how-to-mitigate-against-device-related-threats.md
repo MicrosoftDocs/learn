@@ -20,7 +20,7 @@ These features are easily enabled and can help keep your connected device secure
 
 ### Encryption
 
-Encryption is a process that turns information on the device into unintelligible data. The only way to make this information useful is to reverse the encryption. This requires a specific password or key that's only available to the authorized user. When the information is encrypted, it becomes useless without the correct key or password.  This way, data confidentiality is maintained.
+Encryption is a process that turns information on the device into unintelligible data. The only way to make this information useful is to reverse the encryption. This requires a specific password or key that's only available to the authorized user. When the information is encrypted, it becomes useless without the correct key or password. This way, data confidentiality is maintained.
 The contents of a device can be encrypted in many different ways. For example, some operating systems come with built-in tools that enable you to encrypt your computer’s hard drive or any storage device you connect to it.
 
 ### Limit application device access

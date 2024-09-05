@@ -6,7 +6,7 @@ metadata:
   description: Validate your understanding of the key concepts covered in this module.
   author: aprilspeight
   ms.author: apspeigh
-  ms.date: 05/09/2024
+  ms.date: 08/29/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -20,8 +20,8 @@ quiz:
     choices:
     - content: To measure the total volume of harmful content identified by the model.
       isCorrect: false
-      explanation: Precision doesn't measure the total volume of harmful content, it focuses on the accuracy of identification.
-    - content: To measure how much of the content identified as harmful is actually harmful.
+      explanation: Precision doesn't measure the total volume of harmful content. It focuses on the accuracy of identification.
+    - content: To measure how much of the content identified as harmful is actually, harmful.
       isCorrect: true
       explanation: The Precision metric in Content Safety Studio evaluates the accuracy of the model by measuring how much of the content identified as harmful is indeed harmful. It helps in understanding the effectiveness of the model in accurately identifying harmful content.
     - content: To measure the model's ability to identify actual harmful content.
@@ -37,7 +37,7 @@ quiz:
       explanation: Text Moderation detects harmful content in text.
     - content: Prompt Shields
       isCorrect: false
-      explanation: Prompt Shields analyze LLM inputs to detect user Prompt attacks and Document attacks.
+      explanation: To detect user Prompt attacks and Document attacks, Prompt Shields analyze Large Language Models (LLM) inputs.
     - content: Image Moderation
       isCorrect: false
       explanation: Image Moderation analyzes images to identify and block offensive content.
@@ -48,13 +48,13 @@ quiz:
     choices:
     - content: To measure the total volume of harmful content identified by the model.
       isCorrect: false
-      explanation: F1 Score doesn't measure the total volume of harmful content; it evaluates the balance between Precision and Recall.
+      explanation: F1 Score doesn't measure the total volume of harmful content. The score evaluates the balance between *Precision* and *Recall*.
     - content: To measure the balance between Precision and Recall.
       isCorrect: true
-      explanation: The F1 Score metric in Content Safety Studio is a function of Precision and Recall. It is used when there's a need to balance between Precision (accuracy of identified harmful content) and Recall (model's ability to identify actual harmful content).
+      explanation: The F1 Score metric in Content Safety Studio is a function of Precision and Recall. The metric is used when there's a need to balance between Precision (accuracy of identified harmful content) and Recall (model's ability to identify actual harmful content).
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
-      explanation: F1 Score doesn't measure the speed of detection; it focuses on the balance between Precision and Recall.
+      explanation: F1 Score doesn't measure the speed of detection. The score focuses on the balance between *Precision* and *Recall*.
     - content: To measure the model's ability to identify actual harmful content.
       isCorrect: false
-      explanation:  F1 Score doesn't directly measure the model's ability to identify actual harmful content; it balances Precision and Recall.
+      explanation:  F1 Score doesn't directly measure the model's ability to identify actual harmful content. The score balances *Precision* and *Recall*.

@@ -1,30 +1,30 @@
-In this exercise, we'll look at exercises for setting up and triggering autoscaling of your sample application.
+In this exercise, we look at exercises for setting up and triggering autoscaling of your sample application.
 
 ## Rule exercise
 
-In your sample Azure Spring Apps application, your application already triggered a scale-out action on the customer service microservice when it was created.
+In your sample Azure Spring Apps application, your application triggered a scale-out action on the customer service microservice when it was created.
 
 The customers-service app scales **out** when the tomcat request count exceeds 10 sessions, per minute, on average. After the autoscale is triggered, it then scales **in** if the request count is less than or equal to 10 sessions per minute, on average.
 
 ## View Autoscale setup in the Azure portal
 
 1. In a new web browser tab, open the Azure portal.
-2. From the top search box, search for **Azure Spring Apps**.
-3. From the Azure Spring Apps Overview page, select your Azure Spring Apps instance from the results.
-4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
-5. Select the customers-service application. You should then see the application's **Overview** page.
-6. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
+1. From the top search box, search for **Azure Spring Apps**.
+1. From the Azure Spring Apps Overview page, select your Azure Spring Apps instance from the results.
+1. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
+1. Select the customers-service application. You should then see the application's **Overview** page.
+1. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
 
-:::image type="content" source="../media/scale-settings-2.png" alt-text="Screenshot of the scale out setting in the Azure portal." lightbox="../media/scale-settings-2.png":::
+:::image type="content" source="../media/scale-settings-2.png" alt-text="Screenshot of the 'Scale out' setting in the Azure portal." lightbox="../media/scale-settings-2.png":::
 
 There are two options for Autoscale demand management:
 
 1. Manual scale: Maintains a fixed instance count. In the Standard tier, you can scale out to a maximum of 500 instances. This value changes the number of separate running instances of the microservice application.
 1. Custom autoscale: Scales on any schedule, based on any metrics.
 
-In the Azure portal, view the pre-setup configuration for your application. The following figure shows the **Custom** autoscale setup to scale on the tomcat request count.
+In the Azure portal, view the presetup configuration for your application. The following figure shows a **Custom** autoscale configured to scale on the tomcat request count.
 
-:::image type="content" source="../media/scale-settings.png" alt-text="Screenshot of the Custom autoscale setup in the Azure portal." lightbox="../media/scale-settings.png":::
+:::image type="content" source="../media/scale-settings.png" alt-text="Screenshot of the Custom autoscale configuration in the Azure portal." lightbox="../media/scale-settings.png":::
 
 ### Viewing the finished autoscale events
 
@@ -36,11 +36,11 @@ In the Scale out setting screen, go to the **Run history** tab to see the most r
 
 You can also trigger autoscaling manually via a web browser or a shell script.
 
-To test the autoscale rules, we'll generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale-in and reduce the number of instances.
+To test the autoscale rules, we generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then stopped, the autoscale rules scale-in and reduce the number of instances.
 
-To allow you to trigger the autoscale, we've provided a shell script in the same GIT repo you used to create your Azure Spring Apps application.
+To allow you to trigger the autoscale, we provided a shell script in the same GIT repo you used to create your Azure Spring Apps application.
 
-1. In your https://shell.azure.com bash window, run the following commands to set your spring apps instance name (the same Azure spring Apps service name you used in the previous exercise):
+1. Set the instance name of your Spring Apps service, by running the following command in your https://shell.azure.com bash window. Use the same Azure spring Apps service name you used in the previous exercise:
 
     ```bash
     export SPRING_APPS_SERVICE=<spring-apps-instance-name>
@@ -53,7 +53,7 @@ To allow you to trigger the autoscale, we've provided a shell script in the same
     sh loadTest.sh
     ```
 
-1. You'll see the output of the *customers-service* load test that sends 100 requests to your instance.
+1. You should see the output of the *customers-service* load test that sends 100 requests to your instance.
 
 ## Trigger the scale-out action manually via a web browser (Optional)
 
@@ -83,9 +83,9 @@ To manually trigger the scale-out condition in the autoscale setting created, th
 
 The scale-in condition in the autoscale setting triggers if there are fewer than or equal to 10 requests to the *customers-service* microservice over a period of one minute.
 
-1. Ensure no requests are being sent to your *customers-service* microservice and the browser window to your app/service is closed.
+1. Ensure that no requests are being sent to your *customers-service* microservice and the browser window to your app/service is closed.
 
-1. In a few minutes, the instance count *could* fall from 2 to 1 (see the important point, following).
+1. Observe the instance count. In a few minutes, the instance count *could* fall from 2 to 1 (see the following important point).
 
 :::image type="content" source="../media/scale-down.png" alt-text="Screenshot of the autoscale scale-in action in the Azure portal." lightbox="../media/scale-down.png":::
 
