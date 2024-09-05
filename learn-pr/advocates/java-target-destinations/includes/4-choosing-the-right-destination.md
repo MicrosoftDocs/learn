@@ -23,13 +23,12 @@ For running Java workloads on a platform as a service solution, Azure provides f
 
 - **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
 - **Azure App Service**: Best for running Jakarta EE workloads.
-- **Azure Spring Apps**: Best for running Spring Boot applications, and more specifically Spring Cloud microservices.
+- **Azure Container Apps**: Best for running both Spring Boot applications and more Spring Cloud microservices.
 
 ## Choose infrastructure control on Azure
 
 For full control over your deployments, Azure provides the following two main options:
 
-- **Azure Container Apps**: Best for running simple container-based Java monolithic applications.
 - **Azure Kubernetes Service (AKS)**: Best for more complex container-based Java applications. You also benefit from the rich AKS ecosystem.
 - **Azure virtual machines**: Best for running any kind of workload, or if you want to "lift and shift" from an existing on-premises infrastructure without rearchitecting your applications.
 
