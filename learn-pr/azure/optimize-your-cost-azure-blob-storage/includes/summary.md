@@ -1,4 +1,4 @@
-In this module, you learned more about pricing consideration for Azure Blob Storage and reviewed cost optimization options. You also learned how to estimate and track storage costs on the ongoing basis. You can now use this information to reduce the storage costs for your company.
+In this module, you learned more about pricing consideration for Azure Blob Storage and reviewed cost optimization options. You also learned how to estimate and track storage costs on an ongoing basis. You can now reduce the storage costs for your company.
 
 You can also now use Azure Blob Storage features to help your organization minimize object storage costs by:
 

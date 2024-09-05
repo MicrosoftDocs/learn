@@ -20,6 +20,11 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /training/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.sports-machine-learning.build-mixed-reality-with-babylonjs.badge 
+  type: badge 
+  title: Introduction to WebXR with Babylon.jss 
+  summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform. 
+  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg  
 - uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
   type: badge
   title: Explore the key concepts of quantum computing by using Q#
@@ -3837,3 +3842,13 @@ achievements:
   
     This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
   iconUrl: /training/achievements/model-query-explore-data-for-azure-synapse.svg
+- uid: learn.azure.handle-transient-errors-in-your-app.badge
+  type: badge
+  title: Handle transient errors in your app
+  summary: Use application logging and retry policies to handle transient errors to make your apps more resilient.
+  iconUrl: /training/achievements/handle-transient-errors-in-your-app.svg
+- uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.badge
+  type: badge
+  title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
+  summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
+  iconUrl: /training/achievements/generic-badge.svg

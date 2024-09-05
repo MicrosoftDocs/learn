@@ -102,7 +102,7 @@ In Azure SQL Managed Instance, you can enable Microsoft Defender for Cloud on th
 On the **Review and create** pane, review your deployment selections and the Azure Marketplace terms.  
 
 > [!TIP]
-> You also have the **Download a template for automation** option. This unit doesn't cover that method. If you're interested, there are other modules available on Microsoft Learn related to Azure Resource Manager templates (ARM templates).
+> You also have the **Download a template for automation** option, which provides an Azure Resource Manager template (ARM template) for configurable, repeatable deployments. This unit doesn't cover ARM templates. If you're interested, learn more about [template specs](/training/modules/arm-template-specs/).
 
 ## Key deployment implementation details
 

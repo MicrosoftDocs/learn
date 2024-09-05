@@ -32,7 +32,7 @@ Enable the middleware for serving the generated JSON document and the Swagger UI
 app.UseSwagger();
 if (app.Environment.IsDevelopment())
 {
-    app.app.UseSwaggerUI();
+    app.UseSwaggerUI();
 }
 ```
 
