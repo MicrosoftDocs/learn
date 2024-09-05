@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/18/2024
+  ms.date: 09/05/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model, what are two calls they need to make to the API?"
+  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model and REST API language, what are two calls they need to make to the API?"
     choices:
     - content: "Train Model and Get Model Labels"
       isCorrect: false
