@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/26/2024
   author: danroth27
   ms.author: daroth
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
   ms.subservice: blazor

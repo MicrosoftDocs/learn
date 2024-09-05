@@ -1,4 +1,4 @@
-In this exercise, you'll use the OpenTelemetry APIs to add custom data to the logs. You'll also examine the logs to find your custom events.
+In this exercise, you use the OpenTelemetry APIs to add custom data to the logs. You also examine the logs to find your custom events.
 
 ## Install prerequisites
 
@@ -9,7 +9,7 @@ The prerequisites for this exercise are:
 - Docker Desktop
 - .NET Aspire workload in Visual Studio
 
-If you've already got these packages installed, you can skip ahead to begin working with OpenTelemetry logging.
+If these packages are already installed, you can skip ahead to begin working with OpenTelemetry logging.
 
 ### Install .NET 8
 
@@ -33,7 +33,7 @@ Follow this [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/p
 
 ### Install Docker Desktop
 
-Follow this [Docker Desktop](https://www.docker.com/products/docker-desktop/) link, and select the correct installer for your operating system. After the download is complete, run the installer and follow the instructions. For the best performance and compatibility, use the WSL 2 backend.
+Follow this [Docker Desktop](https://www.docker.com/products/docker-desktop/) link, and select the correct installer for your operating system. After the download is complete, run the installer and follow the instructions. For the best performance and compatibility, use the **WSL 2** backend.
 
 Open the Docker Desktop application and accept the service agreement.
 
@@ -76,7 +76,7 @@ Install the .NET Aspire workload using the .NET CLI:
     dotnet workload install aspire
     ```
 
-    You should see a message that the Aspire workload has been installed.
+    You should see a message that the Aspire workload is successfully installed.
 
     ```console
     Installing Aspire.Hosting.Sdk.Msi.x64 ...... Done
@@ -120,7 +120,7 @@ Let's use `git` to obtain a sample app. Because the app includes .NET Aspire, **
 We can use compile time source generation to create performant logging code automatically. Let's implement that technique for getting products brands:
 
 1. Open Visual Studio and select **Open a project or solution**.
-1. Browse to the folder where you cloned the starter project, select **start/eShop.aspiretelemetry.sln**, and then select **Open**.
+1. Browse to the folder where you cloned the starter project. Open the **start** folder, select **eShop.aspiretelemetry.sln**, and then select **Open**.
 1. In **Solution Explorer**, expand **WebApp > Services** and then double-click _CatalogService.cs_.
 1. Locate the following line of code, which declares the `CatalogService` class:
 
@@ -165,15 +165,15 @@ We can use compile time source generation to create performant logging code auto
 
 ## Test the instrumentation
 
-Now, we'll test the compile time source generation logging:
+Now, we test the compile time source generation logging:
 
-1. In Visual Studio, to start the app in debugging mode, press <kbd>F5</kbd> or select **Debug > Start Debugging**. 
+1. In Visual Studio, to start the app in debugging mode, press <kbd>F5</kbd>, or select **Debug > Start Debugging**. 
 1. If the **Start Docker Desktop** message appears, select **Yes**. The app starts and displays the .NET Aspire dashboard in a browser tab.
 1. To make some requests, locate the **webapp** project in the **Resources** list and then select one of its entries in the **Endpoints** column:
 
     :::image type="content" source="../media/aspire-dashboard-open-webapp.png" lightbox="../media/aspire-dashboard-open-webapp.png" alt-text="Screenshot showing the .NET Aspire dashboard and the location of the webapp's endpoint links.":::
 
-1. A new browser tab appears and displays the Northern Mountains homepage. The brands list is included on the left. Switch back to the .NET Aspire dashboard and on the left, select **Structured**.
+1. A new browser tab appears and displays the Northern Mountains homepage. The brands list is included on the left-hand side. Switch back to the .NET Aspire dashboard and on the left-hand menu, select **Structured**.
 1. In the **Filter** textbox, type **Getting brands**. The page displays your logged event:
 
     :::image type="content" source="../media/structured-logs-compile-time-event.png" lightbox="../media/structured-logs-compile-time-event.png" alt-text="Screenshot showing filtered events in the .NET Aspire dashboard.":::

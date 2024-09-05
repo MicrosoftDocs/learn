@@ -25,5 +25,10 @@ subjects:
 modules:
 - learn.wwl.introduction-language-models-databricks
 - learn.wwl.retrieval-augmented-generation-azure-databricks
+- learn.wwl.multistage-reasoning-azure-databricks
+- learn.wwl.fine-tune-azure-databricks
+- learn.wwl.evaluate-language-models-azure-databricks
+- learn.wwl.responsible-language-models-azure-databricks
+- learn.wwl.implement-llmops-azure-databricks
 trophy:
   uid: learn.wwl.implement-generative-ai-engineering-azure-databricks.trophy

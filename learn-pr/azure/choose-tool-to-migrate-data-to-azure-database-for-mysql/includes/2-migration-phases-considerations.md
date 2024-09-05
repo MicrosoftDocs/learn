@@ -16,7 +16,7 @@ You should evaluate requirements for application downtime, version compatibility
 
 ### Application downtime
 
-One of the first things you should consider is how much downtime your business scenario can accommodate. The answer will strongly constrain your available migration options.
+One of the first things you should consider is how much downtime your business scenario can accommodate. The answer strongly constrains your available migration options.
 
 The best downtime is one that users don't notice. In practice, migrations are complex procedures, and decisions regarding the considerations in this module will dictate the required downtime. The tradeoffs include availability versus the cost and risk of the migration. Because of the complexity involved in reducing downtime to minutes or even seconds, it's important to test assumptions and determine how much migration downtime is acceptable.
 
@@ -25,22 +25,22 @@ The best downtime is one that users don't notice. In practice, migrations are co
 With an **offline** migration, you must shut down the application to move the database. This guarantees that there won't be any changes to the data during migration. However, this approach requires taking down the database to finalize the data export. At a minimum, the downtime will be as long as it takes to transfer the data. An offline migration involves:
 
 1. Disconnecting all apps from the source database.
-1. Exporting the source database's contents.
-1. Importing the source data to the target database.
-1. Reconnecting applications to the target database after the import is complete.
+2. Exporting the source database's contents.
+3. Importing the source data to the target database.
+4. Reconnecting applications to the target database after the import is complete.
 
 Some applications have scheduled maintenance windows during periods of low traffic. These are great times to perform offline migrations.
 
-An **incremental offline** migration reduces downtime by moving the bulk of the data before taking the application offline. First, migrate a full database backup. Then, migrate the changes to the database that occurred added since the previous migration. When the time required to migrate these new changes fits within your acceptable downtime, take the application offline to freeze the data and finalize the migration. You may find that a single migration increment is enough to reduce downtime by an order of magnitude or more, especially for databases with years of history. For large and busy databases, you may need to migrate several increments to reach acceptable downtime.
+An **incremental offline** migration reduces downtime by moving the bulk of the data before taking the application offline. First, migrate a full database backup. Then, migrate the changes to the database that occurred added since the previous migration. When the time required to migrate these new changes fits within your acceptable downtime, take the application offline to freeze the data and finalize the migration. You might find that a single migration increment is enough to reduce downtime by an order of magnitude or more, especially for databases with years of history. For large and busy databases, you might need to migrate several increments to reach acceptable downtime.
 
 An incremental offline migration requires:
 
 1. At time t1, exporting a full database snapshot.
-1. Restoring the snapshot taken at time t1 to the target server.
-1. Exporting a delta or incremental snapshot of all changes between times t1 and t2.
-1. Restoring the delta snapshot to the target server. Repeat steps 3 and 4 as many times as desired.
-1. Taking the application offline and performing a final incremental migration.
-1. Pointing clients to the new instance and resuming operations.
+2. Restoring the snapshot taken at time t1 to the target server.
+3. Exporting a delta or incremental snapshot of all changes between times t1 and t2.
+4. Restoring the delta snapshot to the target server. Repeat steps 3 and 4 as many times as desired.
+5. Taking the application offline and performing a final incremental migration.
+6. Pointing clients to the new instance and resuming operations.
 
 #### Online migrations
 
@@ -51,16 +51,16 @@ Sometimes, downtime is undesirable or even unacceptable. In this case, it's impo
 An online migration requires that you:
 
 1. Begin replicating the source database to the target database.
-1. When the target database is caught up, freeze the source database either by pausing the application or by forcing writes to fail by enabling read-only mode.
-1. When the target database is 100% caught up with the changes, turn off replication in the target.
-1. Redirect all clients to the target database and resume operations.
-1. Shut down the legacy source database.
+2. When the target database is caught up, freeze the source database either by pausing the application or by forcing writes to fail by enabling read-only mode.
+3. When the target database is 100% caught up with the changes, turn off replication in the target.
+4. Redirect all clients to the target database and resume operations.
+5. Shut down the legacy source database.
 
 #### Compare online and offline migrations
 
-While offline migrations require downtime, the incremental migration technique discussed above greatly reduces downtime. Multiple increments can shrink the final migration to a day's worth of data or less. Automated services like Azure DMS minimize downtime by performing a series of ever smaller migrations. Incremental offline migrations can also be performed manually if network settings prevent automation.
+While offline migrations require downtime, the incremental migration technique discussed previously greatly reduces downtime. Multiple increments can shrink the final migration to a day's worth of data or less. Automated services like Azure DMS minimize downtime by performing a series of ever smaller migrations. Incremental offline migrations can also be performed manually if network settings prevent automation.
 
-Online migrations coordinate a delicate operation across database and application teams. Client applications must be tooled to react gracefully to write failures to avoid data loss during migration. Clients must also support connecting to a new database server without interrupting the user experience. If this application tooling doesn't already exist, it may be quite expensive to build.
+Online migrations coordinate a delicate operation across database and application teams. Client applications must be tooled to react gracefully to write failures to avoid data loss during migration. Clients must also support connecting to a new database server without interrupting the user experience. If this application tooling doesn't already exist, it might be quite expensive to build.
 
 ### Version compatibility
 

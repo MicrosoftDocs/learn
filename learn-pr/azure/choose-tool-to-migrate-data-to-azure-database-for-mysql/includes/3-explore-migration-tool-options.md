@@ -18,7 +18,7 @@ When evaluating the import CLI, be sure to take into account the following consi
 
 - Only the InnoDB engine is supported for migration.
 
-- Certain elements on the source server like configuration (firewalls, users, privileges) are not migrated.
+- Certain elements on the source server like configuration (firewalls, users, privileges) aren't migrated.
 
 - High availability (HA) is disabled during the migration to optimize performance. Be sure to reenable HA after the migration is complete.
 
@@ -34,7 +34,7 @@ The [`mysqldump`](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) client
 
 For large data sets, restoring the dump by running the SQL statements can perform poorly. For example, indexes are updated one statement at a time, which can overload disk I/O performance. Because of this, you can speed up a migration by pairing `mysqldump` with tools such as `mydumper` and `myloader`, which are optimized for bulk data migration. Use `mysqldump` to recreate the database schema, which is a landing zone in the target database, to accommodate the data being imported.
 
-Sometimes, you need to customize the migration data transfer. You may want to export a subset of data for testing or replace the target database's data for a customer. You may even modify the data, such as redacting personal data to debug an issue in a test database, before migrating it.
+Sometimes, you need to customize the migration data transfer. You might want to export a subset of data for testing or replace the target database's data for a customer. You might even modify the data, such as redacting personal data to debug an issue in a test database, before migrating it.
 
 In these scenarios, `mysqldump` provides the most flexibility. Because it exports a file containing SQL statements, you can choose how to modify the data before running the statements on the target server.
 
@@ -42,9 +42,9 @@ In these scenarios, `mysqldump` provides the most flexibility. Because it export
 
 `mydumper` and `myloader` are part of the [MyDumper](https://github.com/mydumper/mydumper) package, an open-source MySQL backup tool. Unlike the `mysqldump` tool, which outputs the entire schema to SQL statements to run again linearly, the MyDumper tools take advantage of parallelism and provide benefits such as using separate files by table and human-readable formats, as well as maintaining accurate source and target binary log positions.
 
-To migrate large databases, `mydumper` and `myloader` are recommended because these tools offer 10x or greater performance using parallelism.
+To migrate large databases, `mydumper` and `myloader` are recommended because these tools offer 10 times or greater performance using parallelism.
 
-The tools are available as binary releases for Linux as rpm and deb packages, and for macOS via [Homebrew](https://brew.sh/). On other platforms, you need to compile the tools from source which introduces complexity.
+The tools are available as binary releases for Linux as rpm and deb packages, and for macOS via [Homebrew](https://brew.sh/). On other platforms, you need to compile the tools from source, which introduces complexity.
 
 ## MySQL Workbench
 

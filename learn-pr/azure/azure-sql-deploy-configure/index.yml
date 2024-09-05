@@ -8,7 +8,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
-  ms.service: sql-db-mi
+  ms.service: azure-sql
 title: Deploy and configure servers, instances, and databases for Azure SQL
 summary: In this module, you learn about the process of deploying and configuring Azure SQL. Through hands-on exercises, you deploy and configure Azure SQL Database specifically. You also see comparisons to both Azure SQL Managed Instance and SQL Server. In addition to the Azure portal, work with SSMS, Azure Data Studio including SQL notebooks, and the Azure CLI.
 abstract: | 

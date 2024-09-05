@@ -4,7 +4,7 @@ title: Create stretched volumes and configure replication
 metadata:
   title: Create stretched volumes and configure replication 
   description: Explore the functionality that would provide disaster recovery based on stretched clusters.
-  ms.date: 03/30/2022
+  ms.date: 08/22/2024
   author: JasonGerend
   ms.author: jgerend
   ms.topic: unit

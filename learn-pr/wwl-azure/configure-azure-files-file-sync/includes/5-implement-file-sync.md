@@ -1,4 +1,4 @@
-Azure Files offers [soft delete for Server Message Block (SMB) file shares](/azure/storage/files/storage-files-enable-soft-delete?toc=%2Fazure%2Fstorage%2Ffile-sync). Soft delete lets you recover deleted files and file shares.
+Azure Files offers [soft delete for file shares](/azure/storage/files/storage-files-prevent-file-share-deletion?toc=%2Fazure%2Fstorage%2Ffile-sync). Soft delete lets you recover deleted files and file shares.
 
 :::image type="content" source="../media/files-enable-soft-delete-new-ui.png" alt-text="Illustration that depicts how to enable soft delete on an Azure file share." border="false":::
 
@@ -6,7 +6,7 @@ Azure Files offers [soft delete for Server Message Block (SMB) file shares](/azu
 
 Let's take a look at the characteristics of soft delete for Azure Files. 
 
-- Soft delete for file shares is enabled at the storage account level. 
+- Soft delete for file shares is enabled at the file share level. 
 
 - Soft delete transitions content to a soft deleted state instead of being permanently erased.
 
@@ -16,13 +16,11 @@ Let's take a look at the characteristics of soft delete for Azure Files.
 
 - Soft delete can be enabled on either new or existing file shares. 
 
-- Soft delete doesn't work for Network File System (NFS) shares.
-
 ### Things to consider when using soft delete for Azure Files
 
 There are many advantages to using soft delete for Azure Files. Consider the following scenarios, and think about how you can use soft delete.
 
-- **Recovery from accidental data loss**. Use soft delete to recover data that is deleted or corrupted.
+- **Recover from accidental data loss**. Use soft delete to recover data that is deleted or corrupted.
 
 - **Upgrade scenarios**. Use soft delete to restore to a known good state after a failed upgrade attempt.
 
@@ -30,5 +28,5 @@ There are many advantages to using soft delete for Azure Files. Consider the fol
 
 - **Long-term retention**. Use soft delete to comply with data retention requirements.
 
-- **Business continuity**. Use soft delete to prepare your infrastructure to be highly available for critical workloads.-
+- **Business continuity**. Use soft delete to prepare your infrastructure to be highly available for critical workloads.
 
