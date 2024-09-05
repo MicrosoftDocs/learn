@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-purview-data-solutions.describe-data-loss-prevention
-title: Describe Data Loss Prevention
+title: Describe data loss prevention in Microsoft Purview
 metadata:
-  title: Describe Data Loss Prevention
-  description: "Describe Data Loss Prevention."
+  title: Describe data loss prevention in Microsoft Purview
+  description: "Describe data loss prevention in Microsoft Purview."
   ms.date: 8/22/2024
   author: wwlpublish
   ms.author: ceperezb
