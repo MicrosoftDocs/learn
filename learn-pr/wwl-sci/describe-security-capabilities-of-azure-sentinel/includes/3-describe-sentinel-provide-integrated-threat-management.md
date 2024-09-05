@@ -90,4 +90,6 @@ When you onboard Microsoft Sentinel to the Defender portal, you unify capabiliti
 
 :::image type="content" source="../media/sentinel-in-defender.png" lightbox="../media/sentinel-in-defender.png" alt-text="Screen capture of Microsoft Sentinel in the Defender XDR portal.":::
 
+---
+
 Detailed information on the Microsoft Sentinel experience in the Microsoft Defender portal and how to onboard are available in the summary and resources section of this module.
