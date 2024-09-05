@@ -3,7 +3,7 @@ uid: learn.wwl.azure-databricks-data-engineer
 metadata:
   title: Implement a data engineering solution using Azure Databricks
   description: Implement a data engineering solution using Azure Databricks
-  ms.date: 07/31/2024
+  ms.date: 009/05/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
@@ -28,5 +28,7 @@ modules:
 - learn.wwl.ci-cd-workflows-pipelines-azure-databricks
 - learn.wwl.automate-jobs-azure-databricks
 - learn.wwl.manage-data-privacy-and-governance-with-azure-databricks
+- learn.wwl.use-sql-warehouses-azure-databricks
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory
 trophy:
   uid: learn.wwl.azure-databricks-data-engineer.trophy
