@@ -32054,9 +32054,44 @@
       "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/2-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/3-exercise-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/4-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/5-exercise-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
       "redirect_document_id": false
     }
   ]
