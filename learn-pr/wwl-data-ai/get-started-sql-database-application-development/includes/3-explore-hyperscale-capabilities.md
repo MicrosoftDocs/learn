@@ -19,7 +19,7 @@ Hyperscale provides rapid scalability based on your workload demand.
 | **Scale Up/Down**| You can scale up the primary compute size in terms of resources like CPU and memory, and then scale down, in constant time. Because the storage is shared, scaling up and scaling down isn't linked to the volume of data in the database. | Ensures flexibility and efficiency in resource management. | Ideal for applications with varying workloads that require different levels of compute power. |
 | **Scale In/Out** | You can also provision one or more compute replicas to handle your read requests. These extra compute replicas act as read-only replicas, offloading the read workload from the primary compute. Additionally, these replicas serve as hot-standbys, ready to take over if there's a primary compute failure. | Enhances performance and reliability by offloading read workloads and providing failover capabilities. | Suitable for read-intensive applications that need high availability and quick failover. |
 
-## Maximize performance capabilities
+## Maximize performance
 
 The Hyperscale service tier is designed for customers with large on-premises SQL Server databases who want to modernize their applications by moving to the cloud. It's also ideal for customers already using Azure SQL Database who want to significantly expand their database growth potential. Additionally, Hyperscale is perfect for those seeking both high performance and high scalability
 
@@ -58,7 +58,7 @@ To deploy Azure SQL Database with the Hyperscale tier:
 > [!NOTE]
 > After converting a database to Hyperscale, it isn't possible to revert it back to a regular Azure SQL Database. To learn more about Hyperscale limitations see, [known limitations for Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale#known-limitations).
 
-## Connect to a Hyperscale database
+## Connect to a read-only replica
 
 You can connect to a read-only replica by setting the *ApplicationIntent* argument on your connection string to **ReadOnly**. Any connections with the **ReadOnly** application intent are automatically routed to one of the read-only compute replicas.
 

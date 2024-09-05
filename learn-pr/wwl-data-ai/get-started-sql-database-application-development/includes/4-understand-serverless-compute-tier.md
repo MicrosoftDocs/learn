@@ -8,7 +8,7 @@ As we can see, the auto-pause feature helps reduce costs by pausing the database
 
 :::image type="content" source="../media/4-serverless.png" alt-text="Screenshot of the serverless compute tier properties from Azure portal." lightbox="../media/4-serverless.png":::
 
-The auto-pause delay feature lets you specify the period of inactivity before the database is automatically paused. This delay can be set from as short as 1 hour to as long as seven days. Alternatively, you can disable the auto-pause feature if desired.
+The auto-pause delay feature allows you to specify the period of inactivity before the database is automatically paused. This delay can be set from as short as 1 hour to as long as seven days. Alternatively, you can disable the auto-pause feature if desired.
 
 > [!NOTE]
 > When the database is paused, you are only charged for storage.
