@@ -5,8 +5,8 @@ metadata:
   title: Move Azure Storage blob using the .NET Storage Client
   description: Move Azure Storage blobs using the .NET Storage Client.
   ms.date: 05/20/2024
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
