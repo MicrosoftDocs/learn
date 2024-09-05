@@ -32054,9 +32054,44 @@
       "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/2-organize-categorize-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/3-report-on-server-metadata.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/resource-graph/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/4-deploy-manage-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/policy/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
       "redirect_document_id": false
     }
   ]
