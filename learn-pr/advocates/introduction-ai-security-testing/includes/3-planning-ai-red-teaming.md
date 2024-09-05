@@ -1,4 +1,4 @@
-The red teaming process is a best practice in the responsible development of applications and systems that use Large Language Models (LLMs). Red teaming compliments the systematic measurement and mitigation work done by developers and helps to uncover and identify harms. Red teams also help enable measurement strategies to validate the effectiveness of mitigations.
+The red teaming process is a best practice in the responsible development of applications and systems that use Large Language Models (LLMs). Red teaming complements the systematic measurement and mitigation work done by developers and helps to uncover and identify harms. Red teams also help enable measurement strategies to validate the effectiveness of mitigations.
 
 When planning your own approach to red teaming LLMs and AI enabled applications used by your organization, you should consider the following goals:
 

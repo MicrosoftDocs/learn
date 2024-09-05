@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.describe-purview-data-solutions
 metadata:
-  title: Describe the Data Security solutions of Microsoft Purview
-  description: "Describe the Data Security solutions of Microsoft Purview."
+  title: Describe the data security solutions of Microsoft Purview
+  description: "Describe the data security solutions of Microsoft Purview."
   ms.date: 8/22/2024
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
   ms.service: purview
-title: Describe the Data Security solutions of Microsoft Purview
-summary: "Describe the Data Security solutions of Microsoft Purview."
+title: Describe the data security solutions of Microsoft Purview
+summary: "Describe the data security solutions of Microsoft Purview."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.

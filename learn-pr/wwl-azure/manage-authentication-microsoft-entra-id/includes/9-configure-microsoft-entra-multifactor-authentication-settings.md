@@ -1,24 +1,41 @@
-Multifactor authentication is a process in which a user is prompted for additional forms of identification during a sign-in event. For example, the prompt could be to enter a code on their cellphone or to provide a fingerprint scan. When you require a second form of identification, security is increased because this additional factor isn't easy for an attacker to obtain or duplicate.
+Multifactor authentication is a process in which a user is prompted for additional forms of identification during a sign-in event. For example, the prompt could be to enter a code on their cellphone or to provide a fingerprint scan. When you require a second form of identification, security is increased because this additional factor isn't easy for an attacker to obtain or duplicate.<br>
 
 Microsoft Entra multifactor authentication and Conditional Access policies give you the flexibility to require MFA from users for specific sign-in events.
+
+> [!IMPORTANT]
+> This tutorial shows an administrator how to enable Microsoft Entra multifactor authentication. To step through the multifactor authentication as a user, see [Sign in to your work or school account using your two-step verification method](https://support.microsoft.com/account-billing/sign-in-to-your-work-or-school-account-using-your-two-step-verification-method-c7293464-ef5e-4705-a24b-c4a3ec0d6cf9). If your IT team hasn't enabled the ability to use Microsoft Entra multifactor authentication, or if you have problems during sign-in, reach out to your Help desk for additional assistance.
 
 ## Prerequisites
 
 To complete this tutorial, you need the following resources and privileges:
 
  -  A working Microsoft Entra tenant with Microsoft Entra ID P1 or trial licenses enabled.
- -  An account with Conditional Access Administrator, Security Administrator, or Global Administrator privileges. Some MFA settings can also be managed by an Authentication Policy Administrator.
- -  A non-administrator account with a password that you know. For this example, we created such an account, named testuser. In this example, we test the end-user experience of configuring and using Microsoft Entra multifactor authentication.
- -  A group that the non-administrator user is a member of. For this example, we created such a group, named *MFA-Test-Group*. In this example, we enable Microsoft Entra multifactor authentication for this group.
+    
+    
+     -  If you need to, [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+ -  An account with at least the [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) role. Some MFA settings can also be managed by an [Authentication Policy Administrator](/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator).
+ -  A non-administrator account with a password that you know. For this tutorial, we created an account, named *testuser*. In the tutorial, you test the end-user experience of configuring and using Microsoft Entra multifactor authentication.
+    
+    
+     -  If you need information about creating a user account, see [Add or delete users using Microsoft Entra ID](/entra/fundamentals/add-users).
+ -  A group that the non-administrator user is a member. For the tutorial, we created a group, named *MFA-Test-Group*. In the tutorial, you enable Microsoft Entra multifactor authentication for this group.
+    
+    
+     -  If you need more information about creating a group, see [Create a basic group and add members using Microsoft Entra ID](/entra/fundamentals/how-to-manage-groups).
 
 ## Create a Conditional Access policy
+
+> [!TIP]
+> Steps in the example might vary slightly based on the portal you start from.
 
 The recommended way to enable and use Microsoft Entra multifactor authentication is with Conditional Access policies. Conditional Access lets you create and define policies that react to sign-in events and that request additional actions before a user is granted access to an application or service.
 
 :::image type="content" source="../media/conditional-access-overview-f9fc328c-10aba3cd.png" alt-text="Diagram showing an example of multifactor authentication and conditional access.":::
 
 
-In this example, we create a basic Conditional Access policy to prompt for MFA when a user signs in.
+Conditional Access policies can be applied to specific users, groups, and apps. The goal is to protect your organization while also providing the right levels of access to the users who need it.
+
+In this tutorial, we create a basic Conditional Access policy to prompt for MFA when a user signs in.
 
 First, create a Conditional Access policy and assign your test group of users as follows:
 
@@ -55,7 +72,7 @@ Now that the Conditional Access policy is created and a test group of users is a
 
 ### Configure which apps require multifactor authentication
 
-For this example, configure the Conditional Access policy to require multifactor authentication when a user signs in.
+For this tutorial, configure the Conditional Access policy to require multifactor authentication when a user signs in.
 
 1.  Select the current value under **Cloud apps or actions**, and then under **Select what this policy applies to**, verify that **Cloud apps** is selected.<br>
 2.  Under **Include**, choose **Select apps**.<br>
@@ -75,7 +92,7 @@ For this example, configure the Conditional Access policy to require multifactor
 
 Next, we configure access controls. Access controls let you define the requirements for a user to be granted access. They might be required to use an approved client app or a device that's hybrid joined to Microsoft Entra ID.
 
-In this example, configure the access controls to require multifactor authentication during a sign-in event.
+In this tutorial, configure the access controls to require multifactor authentication during a sign-in event.
 
 1.  Under **Access controls**, select the current value under **Grant**, and then select **Grant access**.
     
