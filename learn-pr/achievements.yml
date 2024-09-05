@@ -3852,3 +3852,8 @@ achievements:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.support-concurrency-blob-storage.badge
+  type: badge
+  title: Support concurrency in Blob storage apps with ETags and blob leases
+  summary: Develop apps that properly support concurrency against data in Azure Blob storage.
+  iconUrl: /training/achievements/support-concurrency-blob-storage.svg
