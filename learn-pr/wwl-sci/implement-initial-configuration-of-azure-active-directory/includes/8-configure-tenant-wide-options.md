@@ -20,7 +20,7 @@ Tenant-wide option
 
 ## Configure tenant-wide user settings
 
-:::image type="content" source="../media/user-settings-azure-active-directory-b7c9f3e1.png" alt-text="Screenshot of the User settings screen in Microsoft Entra ID.  Use it to configure what users can do.":::
+:::image type="content" source="../media/user-settings-azure-active-directory-b7c9f3e1-4e66773f.png" alt-text="Screenshot of the User settings screen in Microsoft Entra ID.  Use it to configure what users can do.":::
 
 
 In Microsoft Entra ID, all users are granted a set of default permissions. A user’s access consists of the type of user, their role assignments, and their ownership of individual objects. The default user permissions can be changed only in user settings in Microsoft Entra ID.
@@ -68,7 +68,7 @@ Microsoft is making **Security Defaults** available to everyone. The goal is to 
 
 ## Configure the external user options
 
-:::image type="content" source="../media/external-user-settings-azure-active-directory-ffbed5cc.png" alt-text="Screenshot of the Microsoft Entra ID manage external user settings dialog.":::
+:::image type="content" source="../media/external-user-settings-azure-active-directory-ffbed5cc-7023148a.png" alt-text="Screenshot of the Microsoft Entra ID manage external user settings dialog.":::
 
 
 Here you configure the actions that external users can take while using the cloud resources of your tenant.
@@ -79,7 +79,7 @@ Here you configure the actions that external users can take while using the clou
 
 ## Configure tenant properties for the directory
 
-:::image type="content" source="../media/tenant-properties-azure-active-directory-d20161ff.png" alt-text="Screenshot of the Microsoft Entra ID properties dialog box. Configure the definition of your tenant.":::
+:::image type="content" source="../media/tenant-properties-azure-active-directory-d20161ff-8482891a.png" alt-text="Screenshot of the Microsoft Entra ID properties dialog box. Configure the definition of your tenant.":::
 
 
 Set the basic values that define the look at feel of your tenant within Microsoft Entra ID.
@@ -87,7 +87,7 @@ Set the basic values that define the look at feel of your tenant within Microsof
  -  **Name** \- friendly name for your tenant, for use in the Azure portal
  -  **Country or region** \- location of your primary company and the Azure datacenters being used
  -  **Notification language** \- language used for sending notifications and alerts
- -  **Tenant ID** \- unique identifier for your tenant to be used programatically, as needed
+ -  **Tenant ID** \- unique identifier for your tenant, used programatically
  -  **Technical contact** \- primary contact for the tenant (defaults to the user who created the tenant)
  -  **Global privacy contact** \- user or alias to contact for privacy concerns or issues
  -  **Privacy statement URL** \- link to a PDF or webpage containing the privacy rules for your cloud solutions

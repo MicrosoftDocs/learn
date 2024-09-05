@@ -8,7 +8,7 @@ Both SQL Database and SQL Managed Instance use SQL Server technology to create [
 
 - **Differential backups**: In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 - 24 hours.
 
-- **Transactional backups**: In a transactional backup, the contents of the transaction logs are backed up. If the latest transaction log has failed or is corrupted, the option is to fall back to the previous transaction log backup. Transactional backups enable administrators to restore up to a specific time, which includes the moment before data was mistakenly deleted. Transaction log backups every five to 10 minutes.
+- **Transactional backups**: In a transactional backup, the contents of the transaction logs are backed up. If the latest transaction log fails or is corrupted, the option is to fall back to the previous transaction log backup. Transactional backups enable administrators to restore up to a specific time, which includes the moment before data was mistakenly deleted. Transaction log backups every five to 10 minutes.
 
 ### Describe backup usage cases
 
@@ -18,9 +18,9 @@ You can use the automated backups in several ways.
 
 - [Restore a deleted database to the time of deletion](/azure/azure-sql/database/recovery-using-backups) or to any point in time within the retention period. The deleted database can be restored only on the same server or managed instance where the original database was created. 
 
-- [Restore a database to another geographic region](/azure/azure-sql/database/recovery-using-backups). Geo-restore allows you to recover from a geographic disaster when you cannot access your database or backups in the primary region. It creates a new database on any existing server or managed instance, in any Azure region.
+- [Restore a database to another geographic region](/azure/azure-sql/database/recovery-using-backups). Geo-restore allows you to recover from a geographic disaster when you can't access your database or backups in the primary region. It creates a new database on any existing server or managed instance, in any Azure region.
 
-- [Restore a database from a specific long-term backup](/azure/azure-sql/database/long-term-retention-overview) of a single database or pooled database. If the database has been configured with a long-term retention policy you can restore an old version of the database.
+- [Restore a database from a specific long-term backup](/azure/azure-sql/database/long-term-retention-overview) of a single database or pooled database. If the database is configured with a long-term retention polic, you can restore an old version of the database.
 
  
 

@@ -3,18 +3,15 @@ uid: learn.wwl.explore-natural-language-processing
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
   description: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
-  ms.date: 11/01/2023
+  ms.date: 09/04/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: learning-path
 title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
 prerequisites: |
   Ability to navigate the Azure portal.
-video:
-  title: "Explore natural language processing"
-  url: https://www.microsoft.com/videoplayer/embed/RWxEO0
 summary: |
-  Natural language processing supports applications that can see, hear, speak with, and understand users.  Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
+  Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
 iconUrl: /learn/achievements/explore-natural-language-processing.svg
 levels:
 - beginner
@@ -33,5 +30,6 @@ modules:
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 - learn.wwl.create-language-model-with-luis
 - learn.wwl.recognize-synthesize-speech
+- learn.wwl.translate-text-with-translation-service
 trophy:
   uid: learn.wwl.explore-natural-language-processing.trophy

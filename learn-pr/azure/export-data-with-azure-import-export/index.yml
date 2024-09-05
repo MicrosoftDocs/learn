@@ -6,7 +6,6 @@ metadata:
   ms.date: 03/08/2023
   author: alkohli
   ms.author: alkohli
-  manager: femila
   ms.topic: module
   ms.service: azure-import-export
 title: "Export large amounts of data from Azure by using Azure Import/Export"

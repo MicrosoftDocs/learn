@@ -1,4 +1,4 @@
-As part of your initial testing of Azure Stack HCI volume management capabilities, you also want to validate that you can successfully delete volumes. You can simplify this task by using Windows Admin Center.
+As part of your initial testing of Azure Stack HCI volume management capabilities, you want to validate that you can successfully delete volumes. You can simplify this task by using Windows Admin Center.
 
 To delete a volume:
 

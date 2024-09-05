@@ -1,4 +1,4 @@
-In this unit, we'll configure a sample Microservice architecture to be ready for autoscaling.
+In this unit, we configure a sample Microservice architecture to be ready for autoscaling.
 
 > [!NOTE]
 > You need access to an Azure subscription where you can create resources for this module. When you've finished the module, be sure to delete any resources you created to avoid charges to your subscription.
@@ -17,25 +17,25 @@ In this unit, we'll configure a sample Microservice architecture to be ready for
 
 ## Set up and run the setup script
 
-When you run the above command, a window will pop up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
+When you run the preceding command, a window pops up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
 
-1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names, use lowercase letters - you may use hyphens and numbers also:
+1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names, use lowercase letters - you can use hyphens and numbers also:
 
    | Variable | Description |
    |-|-|
-   | resource_group | Provide a new or existing resource group name |
-   | region | The Azure region you'll use. You can use `westeurope` or `centralus`, but we recommend that you use a region close to where you live and that also supports Azure Spring Apps. To see the full list of available regions, visit the **Azure Spring Apps Availability by Region** in the Summary unit at the end of this module |
-   | spring_apps_service | Name of your Azure Spring Apps instance |
-   | mysql_server_name | The name of your MySQL server. It should be unique across Azure |
-   | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure-superuser", "admin", "administrator", "root", "guest, or "public" |
-   | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
+   | resource_group | Provide a new or existing resource group name. |
+   | region | The Azure region. You can use `westeurope` or `centralus`, but we recommend that you use a region close to where you live and that also supports Azure Spring Apps. To see the full list of available regions, visit the **Azure Spring Apps Availability by Region** in the Summary unit at the end of this module. |
+   | spring_apps_service | Name of your Azure Spring Apps instance. |
+   | mysql_server_name | The name of your MySQL server. It should be unique across Azure. |
+   | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be *azure-superuser*, *admin*, *administrator*, *root*, *guest*, or *public*. |
+   | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and nonalphanumeric characters (!, $, #, %, and so on).|
    | log_analytics | Name of your Azure Log Analytics workspace |
 
-2. Save the file by selecting the **...** action panel in the top right of the editor and selecting **Save**. You can also use the <kbd>Ctrl + S</kbd> keys on Windows or <kbd>Command + S</kbd> on Mac.
+1. Save the file by selecting the **...** action panel in the top right of the editor and selecting **Save**. You can also use the <kbd>Ctrl + S</kbd> keys on Windows or <kbd>Command + S</kbd> on Mac.
 
-3. Close the editor. Select the ***...*** action panel in the top right of the editor and select **Close Editor**. You can also use the <kbd>Ctrl + Q</kbd> keys on Windows or <kbd>Command + Q</kbd> on Mac.
+1. Close the editor. Select the ***...*** action panel in the top right of the editor and select **Close Editor**. You can also use the <kbd>Ctrl + Q</kbd> keys on Windows or <kbd>Command + Q</kbd> on Mac.
 
-4. Don't close the Azure Cloud Shell, because we'll run the setup script next.
+1. Don't close the Azure Cloud Shell, because we run the setup script next.
 
 ## Run the setup script
 
@@ -54,7 +54,7 @@ bash deployPetClinicApp.sh
 
 ## Test the application
 
-Next, we'll verify your environment via the Azure portal.
+Next, we verify your environment via the Azure portal.
 
 1. Open the Azure portal.
 
