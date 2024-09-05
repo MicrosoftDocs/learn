@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/29/2024
   author: jongalloway
   ms.author: jogallow
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
 title: Create a web UI with ASP.NET Core

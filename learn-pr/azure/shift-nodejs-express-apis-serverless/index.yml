@@ -8,7 +8,7 @@ metadata:
   ms.author: jopapa
   ms.topic: module-standard-task-based
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Refactor Node.js Express APIs into serverless Azure Functions APIs
 summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
 abstract: |

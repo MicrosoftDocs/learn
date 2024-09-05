@@ -1757,6 +1757,21 @@
       "redirect_url": "/training/modules/create-razor-pages-aspnet-core/"
     },
     {
+      "source_path_from_root": "/learn-pr/aspnetcore/improve-performance-cache-aspire/5-exercise-cache-data-redis.yml",
+      "redirect_url": "/training/modules/improve-performance-cache-aspire/6-exercise-cache-data-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/aspnetcore/improve-performance-cache-aspire/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/improve-performance-cache-aspire/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/aspnetcore/improve-performance-cache-aspire/7-summary.yml",
+      "redirect_url": "/training/modules/improve-performance-cache-aspire/8-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/aspnetcore/microservices-apigateway-aspnet-core/environment-setup.yml",
       "redirect_url": "/training/paths/create-microservices-with-dotnet",
       "redirect_document_id": false
@@ -17037,6 +17052,66 @@
       "source_path_from_root": "/learn-pr/reactors/test-azure-cognitive-services/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/"
     },
+    { 
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/0-introduction.yml", 
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+      "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/1-webxr-babylonjs.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/2-environment-setup.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/3-get-started-with-babylonjs.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/4-add-floor-mesh-and-texture.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/5-create-environment.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/6-create-player-icons.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/7-create-actions.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/8-initialize-environment.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/9-knowledge-check.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/10-summary.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
+    { 
+        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/index.yml", 
+        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
+        "redirect_document_id": false 
+    },
     {
       "source_path_from_root": "/learn-pr/sqlserver/automatically-tune-sql-server-linux/1-introduction.yml",
       "redirect_url": "/training/modules/introduction-sql-server-linux"
@@ -31716,7 +31791,7 @@
     },
     {
       "source_path": "learn-pr/paths/introduction-data-analytics-azure/index.md",
-      "redirect_url": "/synapse-analytics/",
+      "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
@@ -31795,11 +31870,106 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/2-explore-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/4-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/5-exercise-detect-transient-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/6-define-appropriate-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/7-exercise-write-a-retry-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/8-log-useful-information.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/9-exercise-add-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/handle-transient-errors-in-your-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/best-practices/transient-faults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/migrate-aspnet-app-azure-kubernetes-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/2-automate-creation-host-pool-powershell.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/3-configure-host-pool-assignment-type.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
       "redirect_document_id": false
@@ -31809,12 +31979,12 @@
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/8-customize-remote-desktop-properties-host-pool",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/6-deploy-azure-joined-virtual-machines.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/7-knowledge-check.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/",
       "redirect_document_id": false
@@ -31822,6 +31992,71 @@
     {
       "source_path_from_root": "/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/8-summary.md",
       "redirect_url": "/training/modules/create-configure-host-pools-session-hosts/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/10-configure-windows-defender-firewall-advanced-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/11-plan-implement-quality-service-azure-virtual-desktop.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/12-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/13-summary.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/2-implement-azure-virtual-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/3-manage-connectivity-internet-premises-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/4-understand-azure-virtual-desktop-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/5-implement-manage-network-security.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/6-configure-azure-virtual-desktop-session-hosts-using-azure-bastion.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/7-monitor-troubleshoot-network-connectivity.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/8-plan-implement-remote-desktop-protocol-shortpath.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/9-configure-remote-desktop-protocol-shortpath-managed-networks.md",
+      "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
+      "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
       "redirect_document_id": false
     }
   ]

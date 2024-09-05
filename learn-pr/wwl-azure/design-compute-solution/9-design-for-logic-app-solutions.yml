@@ -4,12 +4,12 @@ title: Design for Azure Logic Apps solutions
 metadata:
   title: Design for Azure Logic Apps solutions
   description: "Design for Azure Logic Apps solutions"
-  ms.date: 08/05/2024
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-design-for-logic-app-solutions.md)]
