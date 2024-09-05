@@ -24,7 +24,7 @@ Geo-replication is asynchronous, meaning that there might be some data lag betwe
 
 In certain scenarios, you may need to configure a secondary replica on a different subscription than the primary database. This is where cross-subscription geo-replication comes into play. This feature allows you to set up a secondary replica in a different subscription, providing greater flexibility and enhanced disaster recovery options. By using cross-subscription geo-replication, you can ensure that your data is protected and accessible even if one subscription encounters issues. This setup is useful for organizations with multiple subscriptions or those looking to implement a robust business continuity plan.
 
-To learn more about the steps required to configure a cross subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql#cross-subscription-geo-replication).
+To learn more about the steps required to configure a cross subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql#cross-subscription-geo-replication&preserve-view=true).
 
 ## Enable auto-failover groups
 
@@ -32,7 +32,7 @@ An auto-failover group is an availability feature that can be used with both Azu
 
 Auto-failover groups offer AG-like functionality through a listener, enabling both read-write and read-only activities. This functionality differs slightly from active geo-replication. There are two types of listeners: one for read-write traffic and another for read-only traffic. During a failover, DNS updates allow clients to connect to the listener name without needing additional information. The database server with the read-write copies is the primary, while the server receiving transactions from the primary is the secondary.
 
-:::image type="content" source="../media/5-auto-failover-groups" alt-text="Diagram of the auto-failover groups architecture for Azure SQL Database and Azure SQL Managed Instance.":::
+:::image type="content" source="../media/5-auto-failover-groups.png" alt-text="Diagram of the auto-failover groups architecture for Azure SQL Database and Azure SQL Managed Instance.":::
 
 Auto-failover groups have two different policies that can be configured.
 

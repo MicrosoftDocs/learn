@@ -2,7 +2,7 @@ The serverless compute tier for Azure SQL Database is a solution designed to opt
 
 This tier is beneficial for development and testing environments, where workloads can be unpredictable. With serverless, you can configure minimum and maximum vCores, allowing the database to dynamically adjust its resources. Despite its name, the serverless compute tier does require a server to host your database.
 
-:::image type="content" source="../media/4-serverless-pricing.png" alt-text="Screenshot of the serverless compute tier properties from Azure portal.":::
+:::image type="content" source="../media/4-serverless-pricing.png" alt-text="Graphic showing how the billing works when the database in paused.":::
 
 As we can see, the auto-pause feature helps reduce costs by pausing the database during periods of inactivity, with the ability to resume automatically upon the next access attempt. This ensures that you only pay for the compute resources you actually use, making it a cost-effective and efficient option for managing your SQL databases.
 
@@ -13,4 +13,4 @@ The auto-pause delay feature lets you specify the period of inactivity before th
 > [!NOTE]
 > When the database is paused, you are only charged for storage.
 
-To learn more about serverless for Azure SQL Database, see [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview?view=azuresql&tabs=general-purpose).
+To learn more about serverless for Azure SQL Database, see [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview&tabs=general-purpose).

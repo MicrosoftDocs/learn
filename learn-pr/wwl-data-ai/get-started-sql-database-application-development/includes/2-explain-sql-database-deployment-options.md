@@ -2,7 +2,7 @@ Azure SQL Database, a Platform as a Service (PaaS), offers high scalability and 
 
 ## Understand deployment models
 
-When deploying Azure SQL Database, there are two primary deployment models: [**single database**](/en-us/azure/azure-sql/database/single-database-overview?view=azuresql) and [**elastic pools**](/azure/azure-sql/database/elastic-pool-overview?view=azuresql). In the elastic pools model, resources are shared among multiple databases within the same pool, whereas in the single database model, resources are managed independently for each database.
+When deploying Azure SQL Database, there are two primary deployment models: [**single database**](/en-us/azure/azure-sql/database/single-database-overview) and [**elastic pools**](/azure/azure-sql/database/elastic-pool-overview). In the elastic pools model, resources are shared among multiple databases within the same pool, whereas in the single database model, resources are managed independently for each database.
 
 Similar to virtual machines, SQL Database can be deployed using various methods, including PowerShell, Azure CLI, or the Azure portal.
 
@@ -44,9 +44,9 @@ The vCore purchasing model offers three service tier options:
 
 | Service tier | Capability |
 |------------|-------------|
-|[**General Purpose**](/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql#general-purpose) | This service tier is designed for less intensive operations and offers a cost-effective balance of compute and storage options. It includes both provisioned and [serverless](/azure/azure-sql/database/serverless-tier-overview) compute tiers, providing flexibility to meet varying workload demands while optimizing budget.
-|[**Business Critical**](/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql#business-critical)| This tier is ideal for applications that demand low-latency and high-performance storage. It supports [In-Memory OLTP](/azure/azure-sql/database/in-memory-oltp-overview) and includes a built-in read-only replica. Additionally, it offers more memory per core and uses local SSD storage, making it ideal for performance-sensitive workloads. |
-|[**Hyperscale**](/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql#hyperscale)| This tier is tailored for applications with large databases and high throughput requirements. Hyperscale introduces advanced horizontal scaling features, allowing the addition of compute nodes as data size increases. It's exclusively supported on single SQL databases and enables significant scaling of storage and compute resources beyond the limits of the General Purpose and Business Critical service tiers. |
+|[**General Purpose**](/azure/azure-sql/database/service-tiers-sql-database-vcore#general-purpose) | This service tier is designed for less intensive operations and offers a cost-effective balance of compute and storage options. It includes both provisioned and [serverless](/azure/azure-sql/database/serverless-tier-overview) compute tiers, providing flexibility to meet varying workload demands while optimizing budget.
+|[**Business Critical**](/azure/azure-sql/database/service-tiers-sql-database-vcore#business-critical)| This tier is ideal for applications that demand low-latency and high-performance storage. It supports [In-Memory OLTP](/azure/azure-sql/database/in-memory-oltp-overview) and includes a built-in read-only replica. Additionally, it offers more memory per core and uses local SSD storage, making it ideal for performance-sensitive workloads. |
+|[**Hyperscale**](/azure/azure-sql/database/service-tiers-sql-database-vcore#hyperscale)| This tier is tailored for applications with large databases and high throughput requirements. Hyperscale introduces advanced horizontal scaling features, allowing the addition of compute nodes as data size increases. It's exclusively supported on single SQL databases and enables significant scaling of storage and compute resources beyond the limits of the General Purpose and Business Critical service tiers. |
 
 ### DTU-based
 
@@ -116,8 +116,8 @@ Elastic queries support the following partitioning scenarios:
 
 | Service Tier | Capability |
 |--------------|-------------|
-| [**Vertical Partitioning**](/azure/azure-sql/database/elastic-query-overview?view=azuresql#vertical-partitioning---cross-database-queries)| Also known as cross-database queries. Data is partitioned vertically across multiple databases with different schemas. For example, you might have one database for customer data and another for payment information. Vertical partitioning allows you to run cross-database queries between these databases. |
-| [**Horizontal Partitioning**](/azure/azure-sql/database/elastic-query-overview?view=azuresql#horizontal-partitioning---sharding) | Also known as sharding. Data is partitioned horizontally to distribute rows across several scaled-out databases, all sharing the same schema. This topology supports both single-tenant and multitenant models. |
+| [**Vertical Partitioning**](/azure/azure-sql/database/elastic-query-overview#vertical-partitioning---cross-database-queries)| Also known as cross-database queries. Data is partitioned vertically across multiple databases with different schemas. For example, you might have one database for customer data and another for payment information. Vertical partitioning allows you to run cross-database queries between these databases. |
+| [**Horizontal Partitioning**](/azure/azure-sql/database/elastic-query-overview#horizontal-partitioning---sharding) | Also known as sharding. Data is partitioned horizontally to distribute rows across several scaled-out databases, all sharing the same schema. This topology supports both single-tenant and multitenant models. |
 
 This flexibility makes elastic queries a powerful tool for managing and querying data across multiple databases.
 

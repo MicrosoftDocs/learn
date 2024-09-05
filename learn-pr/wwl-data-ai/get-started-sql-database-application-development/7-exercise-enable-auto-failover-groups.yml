@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.get-started-sql-database-application-development.exercise-configure-geo-replication
-title: 'Exercise: Configure geo-replication for Azure SQL Database'
+uid: learn-wwl.get-started-sql-database-application-development.exercise-enable-auto-failover-groups
+title: 'Exercise: Enable application resilience with Azure SQL Database'
 metadata:
-  title: 'Exercise: Configure geo-replication for Azure SQL Database'
-  description: "Learn how to configure geo-replication for Azure SQL Database."
+  title: 'Exercise: Enable application resilience with Azure SQL Database'
+  description: "Learn how to enable application resilience with Azure SQL Database."
   ms.date: 09/05/2024
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/8-exercise-configure-geo-replication.md)]
+  [!include[](includes/7-exercise-enable-auto-failover-groups.md)]

@@ -1,4 +1,4 @@
-The [Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale) in Azure SQL Database is a service tier in the [vCore-based purchasing model](/azure/azure-sql/database/service-tiers-sql-database-vcore) ideal for business workloads. It's a highly scalable storage and compute performance tier that uses Azure to scale out the storage and compute resources for an Azure SQL Database substantially beyond the limits available for the [General Purpose](/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql#general-purpose) and [Business Critical](/azure/azure-sql/database/service-tiers-sql-database-vcore?view=azuresql#business-critical) service tiers. It decouples the query processing engine from long-term storage components, allowing for seamless scaling of compute and storage resources.
+The [Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale) in Azure SQL Database is a service tier in the [vCore-based purchasing model](/azure/azure-sql/database/service-tiers-sql-database-vcore) ideal for business workloads. It's a highly scalable storage and compute performance tier that uses Azure to scale out the storage and compute resources for an Azure SQL Database substantially beyond the limits available for the [General Purpose](/azure/azure-sql/database/service-tiers-sql-database-vcore#general-purpose) and [Business Critical](/azure/azure-sql/database/service-tiers-sql-database-vcore#business-critical) service tiers. It decouples the query processing engine from long-term storage components, allowing for seamless scaling of compute and storage resources.
 
 Hyperscale simplifies infrastructure and application design, allowing developers to focus on business needs rather than managing database resources.
 
@@ -56,7 +56,7 @@ To deploy Azure SQL Database with the Hyperscale tier:
     :::image type="content" source="../media/3-create-button.png" alt-text="Screenshot of the review and create page when provisioning an Azure SQL Database Hyperscale.":::
 
 > [!NOTE]
-> After converting a database to Hyperscale, it isn't possible to revert it back to a regular Azure SQL Database. To learn more about Hyperscale limitations see, [known limitations for Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale?view=azuresql#known-limitations).
+> After converting a database to Hyperscale, it isn't possible to revert it back to a regular Azure SQL Database. To learn more about Hyperscale limitations see, [known limitations for Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale#known-limitations).
 
 ## Connect to a Hyperscale database
 
