@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Use shared access signatures to delegate access to Azure Storage
   description: Exercise - Use shared access signatures to delegate access to Azure Storage
   ms.date: 09/13/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
 title: Exercise - Use shared access signatures to delegate access to Azure Storage
 durationInMinutes: 10

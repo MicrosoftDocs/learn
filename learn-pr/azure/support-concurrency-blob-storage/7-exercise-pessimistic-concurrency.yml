@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Implement pessimistic concurrency
   description: Exercise - Implement pessimistic concurrency
   ms.date: 11/06/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
 interactive: bash
 azureSandbox: true

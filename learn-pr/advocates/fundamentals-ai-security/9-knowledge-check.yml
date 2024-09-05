@@ -42,7 +42,7 @@ quiz:
         - content: "AI Platform Security"
           isCorrect: false
           explanation: "AI platform security layer is the AI architecture layer that deals with providing AI capabilities to applications. This is the bottom layer of the stack."
-        - content: "AI Infrastucture Security"
+        - content: "AI Application Security"
           isCorrect: true
           explanation: "AI application security is the AI architecture layer that deals with how an application accesses the AI capabilities and provides the service or interface that will be consumed by the user. This is the “middle” layer in AI architecture."
  
