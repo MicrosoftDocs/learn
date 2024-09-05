@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.develop-data-driven-app-sql-db
 metadata:
-  title: Develop data-driven applications by using Microsoft Azure SQL Database
+  title: Develop data-driven applications by using Azure SQL Database
   description: Learn how to develop data-driven applications by using Microsoft Azure SQL Database.
   ms.date: 09/05/2024
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
-title: Develop data-driven applications by using Microsoft Azure SQL Database
+title: Develop data-driven applications by using Azure SQL Database
 prerequisites: |
   - Experience with relational databases.
   - Basic knowledge of security concepts like identities and permissions.
