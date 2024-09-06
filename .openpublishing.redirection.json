@@ -32118,6 +32118,11 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/7-simulation-template.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
     }
   ]
 }
