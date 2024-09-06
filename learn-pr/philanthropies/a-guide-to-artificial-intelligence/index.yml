@@ -9,7 +9,8 @@ metadata:
   ms.date: 01/23/2024
   ms.service: artificial-intelligence
   ms.topic: module-standard-task-based
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: A guide to artificial intelligence
 summary: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
