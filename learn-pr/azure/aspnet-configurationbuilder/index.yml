@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/16/2024
   author: coderandhiker
   ms.author: chrisrt
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet
 title: Externalize the configuration of an ASP.NET app by using an Azure key vault

@@ -1,6 +1,7 @@
-Relational data is a type of structured data that has a shared schema. It's often stored in database tables with rows, columns, and keys, and used for application storage like e-commerce websites. As the CTO for Tailwind Traders, you're responsible for designing databases for Azure to support existing structured data on-premises. You're looking for a storage solution to support existing data and future relational data workloads initiated by the company.
 
-Within the umbrella of the Azure SQL platform, there are many deployment options and choices to consider. We'll review five options that give you the flexibility to get and pay for exactly what you need in your storage solution. In this unit, we look at Azure SQL Database and SQL Database elastic pools. In the following units, we examine SQL Server on Azure Virtual Machines, along with Azure SQL Managed Instance and instance pools.
+Relational data is a type of structured data that has a shared schema. The data is stored in database tables with rows, columns, and keys, and used for application storage like e-commerce websites. As the CTO for Tailwind Traders, you're responsible for designing databases for Azure to support existing structured data on-premises. You're looking for a storage solution to support existing data and future relational data workloads initiated by the company.
+
+Within the umbrella of the Azure SQL platform, there are many deployment options and choices to consider. We review five options that give you the flexibility to get and pay for exactly what you need in your storage solution. In this unit, we look at Azure SQL Database and SQL Database elastic pools. In the following units, we examine SQL Server on Azure Virtual Machines, along with Azure SQL Managed Instance and instance pools.
 
 ## Azure SQL Database
 
@@ -10,9 +11,9 @@ Azure SQL Database is a PaaS deployment option of Azure SQL that abstracts both 
 
 Review the following characteristics of the SQL Database deployment option:
 
-- It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability SLA.
+- It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability.
 
-- SQL Database is the only deployment option that supports scenarios that require very large databases (currently up to 100 TB) or autoscaling for unpredictable workloads (serverless).
+- SQL Database is the only deployment option that supports scenarios that require large databases (currently up to 100 TB) or autoscaling for unpredictable workloads (serverless).
 
 - You can create a **SQL Database elastic database pool**, where all databases in the pool share the same set of compute and storage resources. Each database can use the resources it needs, within the limits you set, depending on current load.
 
