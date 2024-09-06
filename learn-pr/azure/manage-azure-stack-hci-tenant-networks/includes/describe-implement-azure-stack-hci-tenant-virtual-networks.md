@@ -10,7 +10,7 @@ Each virtual network interface of a VM in a virtual network is associated with t
 
 - **Provider Address**: An IP address assigned to Azure Stack HCI cluster nodes based on their physical network infrastructure. Provider Addresses appear in network packets that are exchanged between the cluster nodes hosting the customers' VMs. The Provider Address is visible on the physical network but not to customer VMs.
 
-Customer Addresses are part of the customer's network topology, which is virtualized and decoupled from the actual underlying physical network topology. Its addressing scheme is implemented by Provider Addresses.
+Customer Addresses are part of the customer's network topology, which is virtualized and decoupled from the actual underlying physical network topology. Provider Addresses implement its addressing scheme.
 
 A virtual network consists of one or more virtual subnets. A virtual subnet emulates the Layer 3 (L3) IP subnet functionality for the VMs connected to it. It forms a broadcast domain (similar to a VLAN), with isolation that you can enforce by using either NVGRE or VXLAN.
 
@@ -62,7 +62,7 @@ The benefits of using virtual network peering include:
 
 Peering introduces the following additional requirements and constraints:
 
-- Peered virtual networks must have non-overlapping IP address spaces.
+- Peered virtual networks must have nonoverlapping IP address spaces.
 - After you peer a virtual network with another virtual network, you can't add or delete address ranges in the address space.
 
 Peering has the following characteristics:
@@ -72,7 +72,7 @@ Peering has the following characteristics:
 - Network latency between VMs in peered virtual networks is the same as the latency within a single virtual network.
 - Network throughput is based on the bandwidth allowed for the VM. There are no additional restrictions on bandwidth imposed by the peering.
 - You can apply ACLs in either virtual network to block access to or from other virtual networks or subnets.
-- Peering is non-transitive. For example, if you peer a virtual network A with a virtual network B and virtual network B with a virtual network C, this doesn’t automatically provide direct connectivity between virtual networks A and C.
+- Peering is nontransitive. For example, if you peer a virtual network A with a virtual network B and virtual network B with a virtual network C, this doesn’t automatically provide direct connectivity between virtual networks A and C.
 
 Windows Admin Center provides an intuitive interface for creating and configuring virtual network peerings. The configuration settings include options to:
 

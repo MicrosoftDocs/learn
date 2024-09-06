@@ -33,7 +33,7 @@ This RAS Gateway capability provides virtual network connectivity across the int
 
 :::image type="content" source="../media/4-gre-tunnel-3.png" alt-text="Diagram that shows S 2 S G R E tunneling integration with V LAN-based isolation." border="false" lightbox="../media/4-gre-tunnel-3.png":::
 
-- Access from one or more tenants' virtual networks with non-overlapping IP address spaces to shared resources within a physical network of a hosting provider.
+- Access from one or more tenants' virtual networks with nonoverlapping IP address spaces to shared resources within a physical network of a hosting provider.
 
 :::image type="content" source="../media/4-gre-tunnel-4.png" alt-text="Diagram that shows S 2 S G R E tunneling access from one or more tenants' virtual networks." border="false" lightbox="../media/4-gre-tunnel-4.png":::
 
@@ -48,7 +48,7 @@ As a dynamic routing protocol, BGP minimizes the need for manual route configura
 > [!NOTE]
 > You can also use BGP for single-tenant RAS Gateway deployments, and when you use the Remote Access server role to implement a LAN router.
 
-Routing information is advertised by RAS Gateway (and other SDN components such as Software Load Balancing Multiplexer) into the physical network using internal BGP peering. However, you’ll need to create a BGP peer on the router that your SDN infrastructure uses to receive routes for the networks advertised by the Software Load Balancing Multiplexer and RAS Gateway. BGP peering only needs to occur one way (from the Software Load Balancing Multiplexer or RAS Gateway to the external BGP peer).
+RAS Gateway (and other SDN components such as Software Load Balancing Multiplexer) advertises routing information into the physical network using internal BGP peering. However, you’ll need to create a BGP peer on the router that your SDN infrastructure uses to receive routes for the networks advertised by the Software Load Balancing Multiplexer and RAS Gateway. BGP peering only needs to occur one way (from the Software Load Balancing Multiplexer or RAS Gateway to the external BGP peer).
 
 > [!NOTE]
 > You must configure the BGP router peer to use its own ASN and allow peering from an ASN that’s assigned to the SDN components (Software Load Balancing Multiplexer and RAS Gateway).
@@ -61,7 +61,7 @@ Before you create gateway connections and virtual tenant gateways, you have to i
 
 *Gateway pools* are groups of SDN-managed VMs that route network traffic between physical and virtual networks. Pools have the following properties:
 
-- Each pool is *M+N* redundant, which means that *M* active gateway VMs are backed up by *N* standby gateway VMs. *M+N* redundancy provides extra flexibility when implementing highly available RAS Gateway deployments.
+- Each pool is *M+N* redundant with *M* active gateway VMs backed up by *N* standby gateway VMs. *M+N* redundancy provides extra flexibility when implementing highly available RAS Gateway deployments.
 - A pool can perform any combination of individual gateway functions, such as S2S, L3, and GRE.
 - In a multitenant RAS Gateway deployment, the gateway pools are deployed behind an SDN SLB, which allows you to assign a single public IP address for the entire deployment.
 - You can scale pools horizontally by adding or removing gateway VMs. Removing or adding gateways doesn’t disrupt the services that are provided by a pool.
@@ -135,10 +135,10 @@ You can change a number of connection settings for IPsec, GRE, and L3 connection
   - IPsec preshared key
 - For GRE connections:
   - The maximum allowed inbound and outbound bandwidth
-  - The destination IP address, destination prefix and route metric
+  - The destination IP address, destination prefix, and route metric
   - The GRE key
 - For L3 connections:
-  - The maximum allowed inbound bandwidth and outbound bandwidth, destination prefix and route metric
+  - The maximum allowed inbound bandwidth and outbound bandwidth, destination prefix, and route metric
   - The L3 Logical Network, L3 Logical Subnet, L3 IP Address, and the L3 Peer IP
 
 Windows Admin Center also allows you to delete any of the gateway connections you created. You can do this from the **Inventory** tab on the **Gateway Connections** page.
