@@ -8,7 +8,8 @@ metadata:
   ms.date: 02/27/2024
   ms.service: artificial-intelligence
   ms.topic: module
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Create effective prompts for generative AI training tools
 summary: This module covers the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
