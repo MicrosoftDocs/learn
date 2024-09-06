@@ -32143,6 +32143,11 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/9-summary-resources.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/index.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
     }
   ]
 }
