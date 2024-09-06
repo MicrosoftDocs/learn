@@ -64,4 +64,4 @@ Microsoft Defender for Office 365 functionality can be found under the Email & c
 
 :::image type="content" source="../media/defender-office-explorer.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Explorer page in the Microsoft Defender portal.":::
 
-Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Defender for Office 365 are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.

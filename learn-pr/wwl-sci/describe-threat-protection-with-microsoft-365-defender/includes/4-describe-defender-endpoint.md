@@ -45,4 +45,6 @@ The Endpoints node on the left navigation panel of the Microsoft Defender portal
 # [Configuration management dashboard](#tab/configuration-management-dashboard)
 :::image type="content" source="../media/configuration-management-dashboard.png" lightbox="../media/configuration-management-dashboard.png" alt-text="A screenshot of the configuration management dashboard page in the Microsoft Defender portal.":::
 
-Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Microsoft Defender for Endpoints are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+---
+
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
