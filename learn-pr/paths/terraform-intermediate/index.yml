@@ -18,7 +18,7 @@ summary: |
 
   THIS LEARNING PATH IS UNDER CONSTRUCTION. CHECK BACK SOON FOR UPDATES.
 
-  Each module in this learning path provides examples for use with the Azure CLI. You will use Visual Studio Code to write and validate your Terraform code.
+  Each module in this learning path provides examples for use with the Azure CLI. Visual Studio Code is used to write and validate your Terraform code.
 
   [!include[](../../includes/terraform-paths.md)]
 prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.

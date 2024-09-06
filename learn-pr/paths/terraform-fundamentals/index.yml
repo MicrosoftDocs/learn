@@ -23,7 +23,7 @@ summary: |
   * Apply Terraform features such as variables, outputs, functions, and loops to control how your infrastructure is deployed.
   * Define modules that break down complex deployments into smaller reusable components.
 
-  Each module in this learning path provides examples for use with the Azure CLI. You will use Visual Studio Code to write and validate your Terraform code.
+  Each module in this learning path provides examples for use with the Azure CLI. Visual Studio Code is used to write and validate your Terraform code.
 
   [!include[](../../includes/terraform-paths.md)]
 prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.
