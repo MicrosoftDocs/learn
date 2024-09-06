@@ -9,7 +9,8 @@ metadata:
   ms.date: 01/24/2024
   ms.service: artificial-intelligence
   ms.topic: module-standard-task-based
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Tailoring trainings with AI
 summary: This module explores the dynamic integration of artificial intelligence (AI) in education.
