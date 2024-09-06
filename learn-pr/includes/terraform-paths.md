@@ -4,7 +4,7 @@ ms.topic: include
 ms.date: 04/18/2024
 ms.author: jaredholgate
 ---
-To learn about Terraform on Azure, we recommend you take these three learning paths:
+To learn about Terraform on Azure, we recommend you take these learning paths:
 
 :::row:::
 :::column:::
