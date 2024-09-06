@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check what you've learned.
+  description: Check your learning.
   ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate
@@ -22,11 +22,11 @@ quiz:
       explanation: Correct. Infrastructure as code helps reduce human error in resource provisioning and ensure consistency.
     - content: Infrastructure as code requires that you deploy only a single environment.
       isCorrect: false
-      explanation: Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync.
+      explanation: Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your nonproduction and production environments in sync.
     - content: With infrastructure as code, you manually execute your deployments.
       isCorrect: false
       explanation: Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error.
-  - content: Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
+  - content: You've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
     choices:
     - content: With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task.
       isCorrect: false
@@ -41,18 +41,18 @@ quiz:
     choices:
     - content: XML template.
       isCorrect: false
-      explanation: Incorrect. XML templates cannot be used for Azure resource deployments.
+      explanation: Incorrect. XML templates can't be used for Azure resource deployments.
     - content: Terraform module written in HCL.
       isCorrect: true
-      explanation: Correct. Terraform and HCL can be used for Azure resource deployments.
+      explanation: Correct. Terraform and HCL (HashiCorp Configuration Language) can be used for Azure resource deployments.
     - content: Running a Bash script in Azure CLI.
       isCorrect: false
       explanation: Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template.
-  - content: Suppose you're deciding on the type of declarative language to use for your resource provisioning. Which of the following characteristics is a benefit of using Terraform and HCL?
+  - content: You're deciding on the type of declarative language to use for your resource provisioning. Which of the following characteristics is a benefit of using Terraform and HCL?
     choices:
     - content: Imperative code.
       isCorrect: false
-      explanation: Incorrect. Terraform module don't use imperative code.
+      explanation: Incorrect. Terraform modules don't use imperative code.
     - content: Modularity.
       isCorrect: true
       explanation: Correct. Terraform modules can be composed from submodules.
@@ -69,18 +69,18 @@ quiz:
       explanation: Incorrect.
     - content: Write > Init > Plan > Apply
       isCorrect: true
-      explanation: Correct. This is the Terraform CLI workflow
+      explanation: Correct. The Terraform CLI workflow is Write > Init > Plan > Apply.
   - content: What is the purpose of the Terraform state file?
     choices:
-    - content: It is used to configure the Terraform CLI with authentication
+    - content: It's used to configure the Terraform CLI with authentication
       isCorrect: false
-      explanation: Incorrect. The state file is not sued to configure authentication.
-    - content: It is used to define the desired state of your resource.
+      explanation: Incorrect. The state file isn't sued to configure authentication.
+    - content: It's used to define the desired state of your resource.
       isCorrect: false
       explanation: Incorrect. HCL is used to define desired state.
-    - content: It is used to map resources in your configuration to the actual resource id.
+    - content: It's used to map resources in your configuration to the actual resource ID.
       isCorrect: true
-      explanation: Correct. The state file is used to track your resource over their lifecycle of Create, Update and Destroy.
+      explanation: Correct. The state file is used to track your resource over their lifecycle of Create, Update, and Destroy.
   - content: What does HCL stand for?
     choices:
     - content: HashiCorp Configuration Language

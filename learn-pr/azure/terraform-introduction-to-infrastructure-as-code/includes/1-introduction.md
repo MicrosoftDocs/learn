@@ -8,16 +8,16 @@ Suppose you work as an Azure infrastructure administrator at a toy company that'
 - Multiple region deployments to support your customers and partners around the world.
 - Multiple environment deployments to ensure consistency.
 
-You've been asked to evaluate whether infrastructure as code might be a valuable approach to resource provisioning at your company. You also need to decide which technology to use when you deploy your Azure infrastructure.
+Evaluate whether infrastructure as code might be a valuable approach to resource provisioning at your company. You also need to decide which technology to use when you deploy your Azure infrastructure.
 
-## What will we be doing?
+## What we cover?
 
-In this module, you'll learn about the concept of infrastructure as code and its benefits. You'll understand the purpose of Terraform as an infrastructure-as-code language and understand how it works. You'll find answers to these questions:
+This module covers the concepts of infrastructure as code and its benefits. The modules covers the purpose of Terraform as an infrastructure as code language and understand how it works. The module answers these questions:
 
 - What is infrastructure as code?
-- How can infrastructure as code help you automate resource provisioning?
+- Why infrastructure as code help you automate resource provisioning?
 - What is Terraform and how does it work?
-- When should you use Terraform instead of other tooling options?
+- Why should you use Terraform instead of other tooling options?
 
 ## What is the main goal?
 

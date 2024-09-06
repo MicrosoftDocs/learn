@@ -14,11 +14,11 @@ summary: |
   Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
   deployments more consistent and repeatable.
 
-  Terraform provides a concise syntax and type safety for you Azure infrastrcuture declarations.
+  Terraform provides a concise syntax and type safety for your Azure infrastructure declarations.
 
   THIS LEARNING PATH IS UNDER CONSTRUCTION. CHECK BACK SOON FOR UPDATES.
 
-  Each module in this learning path provides examples for use with the Azure CLI. You'll use Visual Studio Code to write and validate your Terraform code.
+  Each module in this learning path provides examples for use with the Azure CLI. You will use Visual Studio Code to write and validate your Terraform code.
 
   [!include[](../../includes/terraform-paths.md)]
 prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.

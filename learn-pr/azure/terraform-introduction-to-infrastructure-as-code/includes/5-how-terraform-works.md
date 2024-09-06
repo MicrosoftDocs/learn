@@ -1,4 +1,4 @@
-In previous units we have covered what the Terraform HCL (HashiCorp Configuration Language) language is and the benefits that it provides for module authoring. Before you begin the process of writing Terraform modules to provision your resources, you want to learn more about how Terraform works.
+In previous units, we covered what the Terraform HCL (HashiCorp Configuration Language) language is and the benefits that it provides for module authoring. Before you begin the process of writing Terraform modules to provision your resources, you want to learn more about how Terraform works.
 
 In this unit, you learn about how Terraform works with providers and state files.
 
@@ -24,7 +24,7 @@ Microsoft curates many providers in collaboration with HashiCorp and the communi
 
 The Terraform CLI interacts with providers via a standard interface. This interface enables the Terraform CLI to build dependency graphs and manage state without needing to be aware of the provider implementation details.
 
-Providers consist of _resources_ and _data sources_. Resources are managed by Terraform. Data sources are used to read the attributes of a resource without managing it.
+Providers consist of _resources_ and _data sources_. Resources are managed with Terraform. Data sources are used to read the attributes of a resource without managing it.
 
 It's possible to write your own providers to work with internal API endpoints, so you can essentially manage anything with Terraform. Providers must be written in the Go programming language.
 
@@ -43,20 +43,20 @@ When using the Terraform CLI, there a four fundamental steps in the workflow:
 
 ## Terraform LifeCycle
 
-Terraform is designed and should be used to manage the life cycle of your resources. By leveraging its state file, Terraform can manage your resource through these stages:
+Terraform is designed and should be used to manage the life cycle of your resources. By using its state file, Terraform can be used to manage your resource through these stages:
 
 1. Create: The resource is in desired state, but doesn't exist in actual state and is created in Azure.
 1. Update: The desired state of the resource attributes don't match their actual state and the resource is updated to bring in line with desired state.
 1. Destroy: The resource no longer exists in desired state and is deleted from Azure.
 
-:::image type="content" source="../media/lifecycle.png" alt-text="Diagram that shows the Terraform resourc lifecycle." border="false" :::
+:::image type="content" source="../media/lifecycle.png" alt-text="Diagram that shows the Terraform resource lifecycle." border="false" :::
 
 The update step can happen many times over the lifetime of a resource as the requirements alter over time. For example imagine you're managing Azure Firewall rules with Terraform, you may have to update these rules on a regular cadence to add new rules, adjust existing rules, and remove rules.
 
 ## Terraform State
 
-Terraform state is required to support the Terraform lifecycle. Terraform has no insight into Azure or any of the other clouds or services it might manage. As such it needs an agnostic way to know what it's managing. The state file is that mechanism.
+Terraform state is required to support the Terraform lifecycle. Terraform has no insight into Azure or any of the other clouds or services it might manage. As such, it needs an agnostic way to know what it's managing. The state file is that mechanism.
 
-By mapping the HCL configuration to a resource ID in Azure, Terraform is able to know that it's managing a resource. If that resource is then removed from the HCL, Terraform knows it must plan to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
+By mapping the HCL configuration to a resource ID in Azure, Terraform is able to manage a resource. When a resource is removed from the HCL, Terraform knows it must plan to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
 
 State files can contain sensitive data and must be stored securely. We recommend using Terraform Cloud / Enterprise or Azure Blob Storage to manage your state files.

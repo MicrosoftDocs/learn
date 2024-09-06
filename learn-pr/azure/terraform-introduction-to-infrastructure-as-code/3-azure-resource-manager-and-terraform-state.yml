@@ -4,7 +4,7 @@ title: Compare Azure Resource Manager and Terraform State
 metadata:
   unitType: learning-content
   title: Compare Azure Resource Manager and Terraform State
-  description: Learn what Azure Resource Manager and Terraform State are, and how it they work with Azure.
+  description: Learn what Azure Resource Manager and Terraform State are, and how they work with Azure.
   ms.date: 04/18/2024
   author: jaredfholgate
   ms.author: jaredholgate

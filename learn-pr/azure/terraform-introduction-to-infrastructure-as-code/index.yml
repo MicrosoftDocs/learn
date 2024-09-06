@@ -11,7 +11,7 @@ metadata:
   ms.devlang: hcl
   ms.service: azure
 title: Introduction to infrastructure as code using Terraform
-summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Terrafrom, you can automate and simplify the provisioning of infrastructure resources.
+summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Terraform, you can automate and simplify the provisioning of infrastructure resources.
 abstract: |
   After completing this module, you'll be able to:
     - Describe the benefits of infrastructure as code
