@@ -27,7 +27,6 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.configure-virtual-machine-extensions.introduction
 - learn.wwl.configure-virtual-machine-extensions.knowledge-check
 - learn.wwl.configure-virtual-machine-extensions.summary-resources
 badge:
