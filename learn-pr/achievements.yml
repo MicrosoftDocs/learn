@@ -3857,3 +3857,8 @@ achievements:
   title: Classify and moderate text with Azure Content Moderator
   summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
   iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+- uid: learn.wwl.configure-resources-arm-templates.badge
+  type: badge
+  title: Configure resources with Azure Resource Manager templates
+  summary: You'll learn how to use Azure Resource Manager templates to consistently deploy assets.
+  iconUrl: /training/achievements/arm-templates-resources.svg
