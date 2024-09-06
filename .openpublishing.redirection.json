@@ -32213,6 +32213,31 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/6-summary-resources.md",
       "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/2-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
     }
   ]
 }
