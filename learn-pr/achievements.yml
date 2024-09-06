@@ -3852,3 +3852,8 @@ achievements:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
+  type: badge
+  title: Classify and moderate text with Azure Content Moderator
+  summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
+  iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
