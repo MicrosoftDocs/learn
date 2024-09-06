@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Implement optimistic concurrency
   description: In this hands-on exercise, you implement optimistic concurrency to resolve the storage conflicts
   ms.date: 11/06/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
 interactive: bash
 azureSandbox: true

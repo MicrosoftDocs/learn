@@ -36,6 +36,8 @@ With Security Exposure Management you can discover and monitor assets, get rich 
 # [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
 
+---
+
 #### Attack surface
 
 Security Exposure Management automatically generates attack paths based on the data collected across assets and workloads. It simulates attack scenarios, and identifies vulnerabilities and weaknesses that an attacker could exploit.
@@ -83,6 +85,8 @@ Within an incident, you analyze the alerts that affect your network, understand 
 # [Incident details page](#tab/incident-details)
 :::image type="content" source="../media/incident-details.png" lightbox="../media/incident-details.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
 
+---
+
 #### Hunting
 
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data, from Microsoft Defender XDR and Microsoft Sentinel. You can proactively inspect events in your network to locate threat indicators and entities, through hunting queries. Hunting queries can be created via the query editor, if you're familiar with Kusto Query Language (KQL), using a query builder, or through Copilot for Security. For users onboarded to Microsoft Copilot for Security, you can make a request or ask a question in natural language and Copilot for Security generates a KQL query that corresponds to the request.
@@ -118,6 +122,8 @@ The identity inventory provides a comprehensive view of all corporate identities
 
 # [Identities](#tab/identities)
 :::image type="content" source="../media/assets-identities.png" lightbox="../media/assets-identities.png" alt-text="A screenshot of the identities inventory page in the Microsoft Defender portal.":::
+
+---
 
 ### Microsoft Sentinel
 

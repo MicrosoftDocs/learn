@@ -18,7 +18,7 @@ First, install the client library for your preferred language. The C# SDK is a .
 ::: zone pivot="csharp"
 
 ```console
-dotnet add package Azure.AI.OpenAI --prerelease
+dotnet add package Azure.AI.OpenAI --version <insert preferred version>
 ```
 
 ::: zone-end

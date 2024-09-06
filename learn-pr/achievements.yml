@@ -3857,3 +3857,18 @@ achievements:
   title: Access metrics from your Azure Blob Storage Containers Programmatically
   summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
   iconUrl: /training/achievements/access-blob-storage-metrics-from-code.svg
+- uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
+  type: badge
+  title: Classify and moderate text with Azure Content Moderator
+  summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
+  iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+- uid: learn.wwl.configure-resources-arm-templates.badge
+  type: badge
+  title: Configure resources with Azure Resource Manager templates
+  summary: You'll learn how to use Azure Resource Manager templates to consistently deploy assets.
+  iconUrl: /training/achievements/arm-templates-resources.svg
+- uid: learn.wwl.configure-virtual-machine-extensions.badge
+  type: badge
+  title: Configure virtual machine extensions
+  summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
+  iconUrl: /training/achievements/virtual-machines-configure-extension.svg
