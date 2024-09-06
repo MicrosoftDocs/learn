@@ -17,7 +17,7 @@ Microsoft's Security Service Edge solution, Global Secure Access, provides advan
 
 The solution employs a Global Secure Access client that gives organizations control over network traffic at the end-user computing device. Organizations gain the ability to route specific traffic profiles through Microsoft Entra Internet Access and Microsoft Entra Private Access. Routing traffic in this method allows for more controls enabled by deep integration with conditional access policies and risks assessed in real time, across identity, device, location, and applications to protect any app or resource.
 
-:::image type="content" source="../media/global-secure-access-v3.png" alt-text="Image showing components that make up Global Secure Access.":::
+:::image type="content" source="../media/global-secure-access-v3.png" alt-text="Screenshot showing components that make up Global Secure Access.":::
 
 ### Microsoft Entra Private Access
 
