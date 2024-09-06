@@ -53,6 +53,8 @@ Improvement actions help centralize compliance activities. Each improvement acti
 # [Improvement Actions](#tab/improvement-actions)
 :::image type="content" source="../media/improvement-actions.png" lightbox="../media/improvement-actions.png" alt-text="A screenshot of the improvements actions page of Compliance Manager in the Microsoft Purview portal.":::
 
+---
+
 ### Benefits of Compliance Manager
 
 Compliance Manager provides many benefits, including:
