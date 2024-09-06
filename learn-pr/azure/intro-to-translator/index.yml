@@ -9,7 +9,8 @@ metadata:
   ms.date: 02/06/2024
   ms.service: azure-ai-translator
   ms.topic: module
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Introduction to Azure AI Translator
 summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
