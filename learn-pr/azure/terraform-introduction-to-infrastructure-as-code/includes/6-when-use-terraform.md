@@ -14,9 +14,9 @@ If you use Azure as your cloud platform, consider these advantages of using Terr
 
 - **Azure support**: With the azapi provider, when new Azure resources are released or updated, Terraform supports those features on day one.
 
-- **Azure Verified Modules**: If you use [Azure Verified Module](https://aka.ms/avm) you have a fully supported product with Microsoft Support.
+- **Azure Verified Modules**: If you use [Azure Verified Modules](https://aka.ms/avm), you have a fully supported product with Microsoft Support.
 
-- **State management**: Because of the state file Terraform is very effective at managing the lifecycle of your resource from creation through to decommissioning.
+- **State management**: Because of the state file, Terraform is effective at managing the lifecycle of your resource from creation through to decommissioning.
 
 - **Skill sets**: When making your choice, take into account the skillset of your team and the skills available in your market.
 

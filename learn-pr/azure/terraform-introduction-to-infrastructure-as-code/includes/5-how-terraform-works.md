@@ -18,7 +18,7 @@ Microsoft curates many providers in collaboration with HashiCorp and the communi
 
 * [azurerm](https://registry.terraform.io/providers/hashicorp/azurerm): This provider is the most user friendly way to deploy resources into Azure. This provider may take time to support new Azure features.
 * [azapi](https://registry.terraform.io/providers/Azure/azapi): This provider enables deployment of any Azure resource, including resources in preview. It's always up to date with the latest Azure features.
-* [azuread](https://registry.terraform.io/providers/hashicorp/azuread): This provider is used to managed Entra ID. It can manage many features, including user, groups, and service principals.
+* [azuread](https://registry.terraform.io/providers/hashicorp/azuread): This provider is used to managed Microsoft Entra ID. It can manage many features, including user, groups, and service principals.
 * [azuredevops](https://registry.terraform.io/providers/microsoft/azuredevops): This provider is used to manage all aspects of Azure DevOps, including repos, pipelines, and projects.
 * [github](https://registry.terraform.io/providers/integrations/github): This provider is used to manage all aspects of GitHub, including organizations, repositories, and actions.
 
@@ -43,10 +43,10 @@ When using the Terraform CLI, there a four fundamental steps in the workflow:
 
 ## Terraform LifeCycle
 
-Terraform is designed and should be used to manage the life cycle of your resources. By using its state file, Terraform can be used to manage your resource through these stages:
+Terraform is designed and should be used to manage the life cycle of your resources. By using a state file, Terraform can manage your resources through these stages:
 
 1. Create: The resource is in desired state, but doesn't exist in actual state and is created in Azure.
-1. Update: The desired state of the resource attributes don't match their actual state and the resource is updated to bring in line with desired state.
+1. Update: The desired state of the resource attributes doesn't match the actual state and the resource is updated to bring in line with desired state.
 1. Destroy: The resource no longer exists in desired state and is deleted from Azure.
 
 :::image type="content" source="../media/lifecycle.png" alt-text="Diagram that shows the Terraform resource lifecycle." border="false" :::
@@ -57,6 +57,6 @@ The update step can happen many times over the lifetime of a resource as the req
 
 Terraform state is required to support the Terraform lifecycle. Terraform has no insight into Azure or any of the other clouds or services it might manage. As such, it needs an agnostic way to know what it's managing. The state file is that mechanism.
 
-By mapping the HCL configuration to a resource ID in Azure, Terraform is able to manage a resource. When a resource is removed from the HCL, Terraform knows it must plan to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
+Terraform maps the HCL configuration to a resource ID in Azure. Terraform is able to manage a resource, because it has the ID mapped. When a resource is removed from the HCL, Terraform plans to destroy that resource. Without a state file, Terraform would have no knowledge of that resource.
 
 State files can contain sensitive data and must be stored securely. We recommend using Terraform Cloud / Enterprise or Azure Blob Storage to manage your state files.

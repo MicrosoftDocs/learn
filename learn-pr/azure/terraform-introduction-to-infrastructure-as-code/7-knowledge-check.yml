@@ -15,7 +15,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: Suppose you're deciding on a method to use to deploy your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code?
+  - content: Which of the following characteristics is a benefit of using infrastructure as code?
     choices:
     - content: Infrastructure as code improves the consistency of your deployments.
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
     - content: With infrastructure as code, you manually execute your deployments.
       isCorrect: false
       explanation: Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error.
-  - content: You've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
+  - content: You use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
     choices:
     - content: With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task.
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: With declarative code, you specify only the end configuration. You don't define how to accomplish the task.
       isCorrect: true
       explanation: Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements.
-  - content: Suppose you're deciding on the type of declarative language to use for your resource provisioning. Which of the following declarative formats work with Azure?
+  - content: Which of the following is declarative language that can work with Azure?
     choices:
     - content: XML template.
       isCorrect: false
