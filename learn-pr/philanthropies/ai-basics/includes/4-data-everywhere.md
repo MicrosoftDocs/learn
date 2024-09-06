@@ -6,13 +6,13 @@ Data is information that is collected, stored, and used for various purposes. It
 
 In the video below, you'll gain an understanding of what data is and why it is essential for advancing AI.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285584]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285584]
 
 Data allows AI to learn, adapt, and make informed decisions. However, it isn't just about the quantity of data available but also the quality. The effectiveness of AI models is directly tied to the quality of the training data.
 
 In the video below, you'll discover why finding patterns in data is important and how it can enhance user experience
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285655]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285655]
 
 AI models leverage data to identify patterns. At the core of this process are algorithms that analyze data fields, learning from the patterns within the data to generate models. These models are then used to make predictions or decisions about new data. This process is called machine learning. 
 

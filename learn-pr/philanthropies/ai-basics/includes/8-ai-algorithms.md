@@ -6,6 +6,6 @@ AI algorithms enable machines to perform tasks that typically require human inte
 
 In the video below, you'll learn about different AI algorithms and how they are being used today.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285585]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285585]
 
 AI algorithms are the backbone of many technologies we use today, powering household items like smart watches and smart thermostats. These algorithms enable machines to perform tasks that typically require human intelligence by analyzing data and learning from patterns. AI algorithms are crucial for the functioning and advancement of machine learning, deep learning, and NLP technologies.

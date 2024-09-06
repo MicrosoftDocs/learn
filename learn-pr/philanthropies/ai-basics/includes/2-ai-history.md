@@ -6,7 +6,7 @@ To appreciate these advancements, it's essential to start at the beginning and u
 
 The video below reveals how AI concepts and breakthroughs have paved the way for the intelligent devices and applications we rely on daily. By exploring AI's past, we gain insight into how it has evolved to become an integral part of our modern world, impacting everything from our homes to our workplace.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285479]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285479]
 
 ## AI development timeline
 

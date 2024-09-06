@@ -6,12 +6,12 @@ For example, if you provide an AI model with data about your past vacuuming habi
 
 In the video below, you'll gain a better understanding of what machine learning is.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285583]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285583]
 
 Machine learning is an AI technique that uses algorithms to create predictive models. These models are validated against known data, measured by specific metrics, and adjusted as needed. This process of learning and validation is called training. Through retraining, machine learning models improve overtime. There are also key methodologies on how to train models for example structure learning, unstructured learning, and reinforcement learning.
 
 In the video below, you'll learn the difference between these different methodologies.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285841]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285841]
 
 Having explored structure, unstructured and reinforcement learning, it's important to understand how these methodologies pave the way for more advanced techniques like deep learning.

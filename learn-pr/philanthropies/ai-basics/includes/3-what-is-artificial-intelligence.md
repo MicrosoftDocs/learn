@@ -4,11 +4,11 @@ AI has become a popular topic lately. However, AI isn't new; it's been part of o
 
 In the video below, you'll discover what AI is and how it was first explored back in the 1950s.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285656]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285656]
 
 Now that you know what AI is, another compelling topic is the distinction between knowledge and intelligence. While often used interchangeably, they are different concepts. In the video below, you'll learn about the distinct differences between both.
 
-[!VIDEO https://go.microsoft.com/fwlink/?linkid=2285839]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285839]
 
 Knowledge refers to the accumulation of facts, information, and skills gained through education or experience. Intelligence is the ability to apply knowledge to think abstractly, as measured by objective criteria such as problem-solving.
 
