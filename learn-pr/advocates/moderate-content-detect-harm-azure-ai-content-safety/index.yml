@@ -8,7 +8,7 @@ metadata:
   ms.date: 06/24/2024
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
-  ms.collection:
+  ms.collection: TBD
     - ce-advocates-ai-copilot
 title: Moderate Content and Detect Harm with Azure AI Content Safety
 summary: Learn how to moderate content and detect harm with Azure AI Content Safety.

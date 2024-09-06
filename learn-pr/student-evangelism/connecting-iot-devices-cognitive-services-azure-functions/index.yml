@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
-  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoin maintenance
+  ms.collection: TBD
 title: "Connecting IoT devices to Azure AI services using Azure Functions"
 summary: "Create and deploy an Azure function to make a language translation IoT device. The function will use Cognitive Speech Service. Your device will record a voice in a foreign language and convert the speech to a target language."
 abstract: |
