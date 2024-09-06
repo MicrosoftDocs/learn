@@ -32,6 +32,5 @@ products:
 subjects:
 - classification-analysis
 units:
-- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.summary
 badge:
   uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
