@@ -32058,6 +32058,11 @@
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
