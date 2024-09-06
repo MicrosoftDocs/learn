@@ -15,7 +15,7 @@ The Priva suite of solutions has expanded to include the following solutions:
 
 These solutions can be found in the new Microsoft Priva portal (preview).
 
-:::image type="content" source="../media/priva-solutions.png" alt-text="A diagram that shows the Priva solutions, which include Privacy Assessments, Privacy Risk Management, Tracker Scanning, Consent Management, and Subject Rights Requests.":::
+:::image type="content" source="../media/priva-solutions.png" alt-text="A diagram showing the Priva solutions, which include Privacy Assessments, Privacy Risk Management, Tracker Scanning, Consent Management, and Subject Rights Requests.":::
 
 ### Priva Privacy Risk Management
 
