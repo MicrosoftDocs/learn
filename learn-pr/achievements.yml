@@ -3872,3 +3872,8 @@ achievements:
   title: Configure virtual machine extensions
   summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
   iconUrl: /training/achievements/virtual-machines-configure-extension.svg
+- uid: learn.azure.copy-blobs-using-dotnet.badge
+  type: badge
+  title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
+  summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
+  iconUrl: /training/achievements/generic-badge.svg
