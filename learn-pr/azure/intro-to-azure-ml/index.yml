@@ -3,11 +3,12 @@ uid: learn.azure.intro-to-azure-ml
 metadata:
   title: Introduction to Azure Machine Learning
   description: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
-  ms.date: 01/03/2023
+  ms.date: 07/20/2024
   author: sdgilley
   ms.author: sgilley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
+  ms.service: azure-machine-learning
+  ms.collection: ce-skilling-ai-copilot 
 title: Introduction to Azure Machine Learning 
 summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning’s compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
 abstract: |

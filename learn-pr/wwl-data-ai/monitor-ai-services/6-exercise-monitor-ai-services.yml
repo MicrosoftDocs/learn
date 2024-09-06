@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-ai-services.exercise-monitor
+title: Exercise - Monitor Azure AI services
+metadata:
+  title: Exercise - Monitor Azure AI services
+  description: Exercise - Monitor Azure AI services.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 25
+labId: 152413
+labModal: true
+content: |
+  [!include[](includes/6-exercise-monitor-ai-services.md)]

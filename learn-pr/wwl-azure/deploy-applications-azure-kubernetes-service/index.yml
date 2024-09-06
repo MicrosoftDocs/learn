@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-applications-azure-kubernetes-service
+metadata:
+  title: Deploy applications to Azure Kubernetes Service
+  description: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
+  ms.date: 03/04/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+title: Deploy applications to Azure Kubernetes Service
+summary: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
+abstract: |
+  After completing this module, you'll be able to:
+  -   Provision an AKS cluster.
+  -   Install the Azure Policy add-on for Azure Kubernetes Service.
+  -   Assign an Azure Policy initiative to an Azure Kubernetes Service cluster
+  -   Validate the effect of Azure Policy
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.deploy-applications-azure-kubernetes-service.introduction
+- learn.wwl.deploy-applications-azure-kubernetes-service.azure-kubernetes-pod-configuration
+- learn.wwl.deploy-applications-azure-kubernetes-service.apply-pod-settings
+- learn.wwl.deploy-applications-azure-kubernetes-service.configure-application-azure-kubernetes-cluster
+- learn.wwl.deploy-applications-azure-kubernetes-service.deploy-application-azure-kubernetes-cluster
+- learn.wwl.deploy-applications-azure-kubernetes-service.configure-storage-applications-run-azure-kubernetes
+- learn.wwl.deploy-applications-azure-kubernetes-service.exercise-deploy-application-azure-kubernetes
+- learn.wwl.deploy-applications-azure-kubernetes-service.knowledge-check
+- learn.wwl.deploy-applications-azure-kubernetes-service.summary
+badge:
+  uid: learn.wwl.deploy-applications-azure-kubernetes-service.badge

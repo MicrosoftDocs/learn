@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.review-device-enrollment-processes-tools
+title: Review the device enrollment processes and tools
+metadata:
+  title: Review the device enrollment processes and tools
+  description: "Review the device enrollment processes and tools"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-device-enrollment-tools-processes.md)]

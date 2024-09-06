@@ -1,30 +1,30 @@
 ### YamlMime:Module
 uid: learn.aks-deployment-pipeline-github-actions
 metadata:
-  title: Azure Kubernetes Service deployment pipeline and GitHub Actions
-  description: Explore how to use GitHub Actions to create an automated Azure Kubernetes Service deployment pipeline.
-  ms.date: 10/08/2020
+  title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+  description: Learn how to use GitHub Actions to create an automated Azure Kubernetes Service (AKS) deployment pipeline.
+  manager: rayoflores
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: github
-title: Azure Kubernetes Service deployment pipeline and GitHub Actions
-summary: Rapidly deploy a containerized application to Azure Kubernetes Services (AKS) by using GitHub Actions triggered by GitHub events.
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+summary: Learn how to use GitHub Actions to create an automated Azure Kubernetes Service (AKS) deployment pipeline.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe a continuous integration and continuous deployment process that uses GitHub Actions
-  - Create a deployment pipeline by using GitHub Actions and Azure
-  - Deploy a cloud-native application to AKS by using GitHub Actions
+  - Describe a continuous integration and continuous deployment process that uses GitHub Actions.
+  - Create a deployment pipeline by using GitHub Actions and Azure.
+  - Deploy a cloud-native application to AKS by using GitHub Actions.
 prerequisites: |
-  - Access to an Azure subscription
-  - Access to a GitHub account
-  - Basic knowledge of executing commands by using the Azure CLI
-  - Basic knowledge of Kubernetes and its concepts
-  - Basic knowledge of AKS and its concepts
-  - Basic knowledge of Git and GitHub
+  - Access to an Azure subscription with user role assignment permissions
+  - A GitHub account
+  - Basic knowledge and experience with:
+    - Azure CLI
+    - Kubernetes and AKS
+    - Git and GitHub
 iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 levels:
-  - beginner
+  - intermediate
 roles:
   - solution-architect
   - developer
@@ -34,8 +34,6 @@ products:
   - azure-kubernetes-service
   - azure-container-registry
   - github
-subjects:
-- development-tools
 units:
   - learn.aks-deployment-pipeline-github-actions.1-introduction
   - learn.aks-deployment-pipeline-github-actions.2-what-is-continuous-integration

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard
 metadata:
-  title: Investigate threats by using audit features in Microsoft 365 Defender and Microsoft Purview Standard
+  title: Investigate threats by using audit features in Microsoft Defender XDR and Microsoft Purview Standard
   description: "Use the Microsoft Purview Universal Audit Log (UAL) to investigate threats"
-  ms.date: 2/17/2023
+  ms.date: 3/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Investigate threats by using audit features in Microsoft 365 Defender and Microsoft Purview Standard
+  ms.topic: module
+  ms.service: purview-audit
+title: Investigate threats by using audit features in Microsoft Defender XDR and Microsoft Purview Standard
 summary: This module examines how to search for audited activities using the Microsoft Purview Audit (UAL) solution, including how to export, configure, and view the audit log records that were retrieved from an audit log search.
 abstract: |
   By the end of this module, you'll be able to:
@@ -19,7 +19,7 @@ abstract: |
   - Export, configure, and view audit log records.
   - Use audit log searching to troubleshoot common support issues.
 prerequisites: |
-  - Ability to navigate the Microsoft Purview or Microsoft 365 Defender portals
+  - Ability to navigate the Microsoft Purview or Microsoft Defender portals
   - Basic knowledge of PowerShell
   - Ability to run PowerShell cmdlets with Cloud Shell
 iconUrl: /learn/achievements/generic-badge.svg

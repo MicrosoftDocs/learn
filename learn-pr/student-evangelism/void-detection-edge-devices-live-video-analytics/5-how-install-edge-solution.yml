@@ -4,12 +4,10 @@ title: How to install Vision on Edge solution
 metadata:
   title: How to install Vision on Edge solution
   description: The module helps learner install pre-built solution.
-  ms.date: 04/30/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/5-how-install-edge-solution.md)]

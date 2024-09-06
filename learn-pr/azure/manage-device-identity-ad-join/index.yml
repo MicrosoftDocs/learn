@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.manage-device-identity-ad-join
 metadata:
-  title: Manage device identity with Azure AD join and Enterprise State Roaming
-  description: Learn how to manage device identity by using Azure AD join and Enterprise State Roaming.
+  title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+  description: Learn how to manage device identity by using Microsoft Entra join and Enterprise State Roaming.
   ms.date: 03/17/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage device identity with Azure AD join and Enterprise State Roaming
-summary: Evaluate options to manage device identities in Azure AD. Allow users to join devices in Azure AD. Require devices to be marked as compliant. Enable Enterprise State Roaming.
+  ms.topic: module
+  ms.service: active-directory
+title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
 abstract: | 
   In this module, you will:
-  - Describe options to manage device identities in Azure AD.
-  - Configure Azure AD join to manage device identities.
+  - Describe options to manage device identities in Microsoft Entra ID.
+  - Configure Microsoft Entra join to manage device identities.
   - Configure Enterprise State Roaming to reduce the time that users need to configure a new device.
 prerequisites: | 
-  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless single sign-on, and Azure AD Multi-Factor Authentication
+  - Basic knowledge of Microsoft Entra features such as Microsoft Entra Connect, Microsoft Entra seamless single sign-on, and Microsoft Entra multifactor authentication
   - Basic understanding of mobile device management software like Microsoft Intune 
 iconUrl: /training/achievements/manage-device-identity-ad-join.svg
 levels:
@@ -25,7 +25,7 @@ roles:
 - administrator
 - solution-architect
 products:
-- azure-active-directory
+- entra-id
 subjects:
 - device-management
 units:

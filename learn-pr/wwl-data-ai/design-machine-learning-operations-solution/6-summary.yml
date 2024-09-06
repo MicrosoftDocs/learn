@@ -3,12 +3,13 @@ uid: learn.wwl.design-machine-learning-operations-solution.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 03/03/2023
+  description: Summary
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/08/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

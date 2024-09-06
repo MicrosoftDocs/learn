@@ -5,6 +5,6 @@ When you enroll existing Configuration Manager clients in co-management, you gai
 - Conditional Access with device compliance
 - Intune-based remote actions (for example: restart, remote control, or factory reset)
 - Centralized visibility of device health
-- Link users, devices, and apps with Azure Active Directory (Azure AD)
+- Link users, devices, and apps with Microsoft Entra ID
 - Modern provisioning with Windows Autopilot
 - Remote actions

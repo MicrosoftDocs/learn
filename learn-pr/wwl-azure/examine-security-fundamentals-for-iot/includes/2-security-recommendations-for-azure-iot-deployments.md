@@ -1,166 +1,80 @@
-Microsoft suggests the following security recommendations for individuals and companies working on IoT solutions. Implementing these recommendations will help you fulfill your security obligations as described in Microsoft's shared responsibility model.
+Use Microsoft Defender for IoT's security recommendations to enhance your network security posture across unhealthy devices in your network. Lower your attack surface by creating actionable, prioritized mitigation plans that address the unique challenges in OT/IoT networks.
 
 Some of the recommendations described below can be automatically monitored by Microsoft Defender for Cloud. Microsoft Defender for Cloud (Azure Security Center and Azure Defender are now called Microsoft Defender for Cloud) is the first line of defense in protecting your resources in Azure. It periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to address them.
 
-## General
+> [!IMPORTANT]
+> The Recommendations page is currently in PREVIEW. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
-:::row:::
-  :::column:::
-    **Recommendation**
-  :::column-end:::
-  :::column:::
-    **Comments**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Stay up to date.
-  :::column-end:::
-  :::column:::
-    Use the latest versions of supported platforms, programming languages, protocols, and frameworks.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Keep authentication keys safe.
-  :::column-end:::
-  :::column:::
-    Keep the device IDs and their authentication keys physically safe after deployment. This will avoid a malicious device masquerading as a registered device.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Use device SDKs when possible.
-  :::column-end:::
-  :::column:::
-    Device SDKs implement security features, such as, encryption, authentication, and so on, to assist you in developing a robust and secure device application. Microsoft's continued investment in the SDKs means that you will benefit as support for new security advancements are added.
-  :::column-end:::
-:::row-end:::
+## View security recommendations
 
+View all current recommendations for your organization on the Defender for IoT **Recommendations** page on the Azure portal. For example:
 
-## Identity and access management
+The **Active recommendations** widget indicates the number of recommendations that represent actionable steps you can currently take on unhealthy devices. We recommend reviewing unhealthy devices regularly, taking recommended actions, and keeping the number of active recommendations as low as possible.
 
-:::row:::
-  :::column:::
-    **Recommendation**
-  :::column-end:::
-  :::column:::
-    **Comments**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Define access control for the hub.
-  :::column-end:::
-  :::column:::
-    Understand and define the type of access each component will have in your IoT Hub solution, based on the functionality. The allowed permissions are Registry Read, RegistryReadWrite, ServiceConnect, and DeviceConnect. Default shared access policies in your IoT hub can also help define the permissions for each component based on its role.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Define access control for backend services.
-  :::column-end:::
-  :::column:::
-    Data ingested by your IoT Hub solution can be consumed by other Azure services such as Cosmos DB, Stream Analytics, App Service, Logic Apps, and Blob storage. Make sure to understand and allow appropriate access permissions as documented for these services.
-  :::column-end:::
-:::row-end:::
+> [!NOTE]
+> Only recommendations that are relevant to your environment are shown in the grid, with at least one healthy or unhealthy device found. You won't see recommendations that aren't related to any devices in your network.
 
+Recommendations are shown in a grid with details in the following columns:
 
-## Data protection
+| **Column name**   | **Description**                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------- |
+| Severity          | Indicates the urgency of the suggested mitigation step.                                         |
+| Name              | The recommendation's name, which indicates a summary of the suggested mitigation step.          |
+| Unhealthy devices | The number of detected devices where the recommended step is relevant.                          |
+| Healthy devices   | The number of detected devices where the recommended step is covered and no action is required. |
+| Last update time  | The last time the recommendation was triggered on a detected device.                            |
 
-:::row:::
-  :::column:::
-    **Recommendation**
-  :::column-end:::
-  :::column:::
-    **Comments**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure device authentication.
-  :::column-end:::
-  :::column:::
-    Ensure secure communication between your devices and your IoT hub, by using either a unique identity key or security token, or an on-device X.509 certificate for each device. Use the appropriate method to use security tokens based on the chosen protocol (MQTT, AMQP, or HTTPS).
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure device communication.
-  :::column-end:::
-  :::column:::
-    IoT Hub secures the connection to the devices using Transport Layer Security (TLS) standard, supporting versions 1.2 and 1.0. Use TLS 1.2 to ensure maximum security.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Secure service communication.
-  :::column-end:::
-  :::column:::
-    IoT Hub provides endpoints to connect to backend services such as Azure Storage or Event Hubs using only the TLS protocol, and no endpoint is exposed on an unencrypted channel. Once this data reaches these backend services for storage or analysis, make sure to employ appropriate security and encryption methods for that service, and protect sensitive information at the backend.
-  :::column-end:::
-:::row-end:::
+Do either of the following to modify the recommendation data listed:
 
+ -  Select **Edit columns** to add or remove columns from the grid.
+ -  Filter the list by entering a keyword from the recommendation name in the **Search** box, or select **Add filter** to filter the grid by any of the recommendation columns.
 
-## Networking
+To export a CSV file of all recommendations for your network, select **Export**.
 
-:::row:::
-  :::column:::
-    **Recommendation**
-  :::column-end:::
-  :::column:::
-    **Comments**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Protect access to your devices.
-  :::column-end:::
-  :::column:::
-    Keep hardware ports in your devices to a bare minimum to avoid unwanted access. Additionally, build mechanisms to prevent or detect physical tampering of the device. Read IoT security best practices for details.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Build secure hardware.
-  :::column-end:::
-  :::column:::
-    Incorporate security features such as encrypted storage, or Trusted Platform Module (TPM), to keep devices and infrastructure more secure. Keep the device operating system and drivers upgraded to latest versions, and if space permits, install antivirus and antimalware capabilities. Read IoT security architecture to understand how this can help mitigate several security threats.
-  :::column-end:::
-:::row-end:::
+## View recommendation details
 
+Select a specific recommendation in the grid to drill down for more details. The recommendation name is shown as the page's title. Details with the recommendation's severity, number of unhealthy devices detected, and last update date and time in widgets on the left.
 
-## Monitoring
+The left pane also shows the following information:
 
-:::row:::
-  :::column:::
-    **Recommendation**
-  :::column-end:::
-  :::column:::
-    **Comments**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Monitor unauthorized access to your devices.
-  :::column-end:::
-  :::column:::
-    Use your device operating system's logging feature to monitor any security breaches or physical tampering of the device or its ports.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Monitor your IoT solution from the cloud.
-  :::column-end:::
-  :::column:::
-    Monitor the overall health of your IoT Hub solution using the metrics in Azure Monitor.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Set up diagnostics.
-  :::column-end:::
-  :::column:::
-    Closely watch your operations by logging events in your solution, and then sending the diagnostic logs to Azure Monitor to get visibility into the performance. Read Monitor and diagnose problems in your IoT hub for more information.
-  :::column-end:::
-:::row-end:::
+ -  **Description**: More context for the recommended mitigation step
+ -  **Remediation steps**: The full list of mitigation steps recommended for unhealthy devices
+
+Switch between the **Unhealthy** devices and **Healthy** devices tabs to review the statuses of detected devices in your network for the selected recommendation.
+
+For example:
+
+## View recommendation details by device
+
+You might want to review all recommendations for a specific device in order to handle them all together.
+
+Recommendations are also listed on the Device details page for each detected device, accessed either from the [Device inventory page](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations#view-the-device-inventory), or from the list of healthy or unhealthy devices on a recommendation details page.
+
+On a device details page, select the Recommendations tab to view a list of security recommendations specific for the selected device.
+
+For example:
+
+## Supported security recommendations
+
+The following recommendations are displayed for OT devices in the Azure portal:
+
+| **Name**                                                         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| OT network sensors                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Review PLC operating mode                                        | Devices with this recommendation are found with PLCs set to unsecure operating mode states.<br><br>We recommend setting PLC operating modes to the Secure Run state if access is no longer required to the PLC to reduce the threat of malicious PLC programming.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Review unauthorized devices                                      | Devices with this recommendation must be identified and authorized as part of the network baseline.<br><br>We recommend taking action to identify any indicated devices. Disconnect any devices from your network that remain unknown even after investigation to reduce the threat of rogue or potentially malicious devices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Secure your vulnerable &lt;vendor&gt; devices | Devices with this recommendation are found with one or more vulnerabilities with a critical severity and are organized by vendor.<br><br>We recommend that you follow the steps listed by the device vendor or CISA (Cybersecurity & Infrastructure Agency).<br><br>To see required remediation steps:<br><br>1. Choose a device from the list of unhealthy devices to see its full list of vulnerabilities.<br>2. From the Vulnerabilities tab, choose the link in the Name column for the critical CVE you're mitigating. Full details are opened in the NVD (National Vulnerability Database).<br>3. Scroll to the NVD References to Advisories, Solutions, and Tools section and choose any of the listed links for more information. An advisory page opens, either from the vendor or from CISA.<br>4. Find and perform the remediation steps listed for your scenario. Some vulnerabilities can't be remediated with a patch. |
+| Set a secure password for devices with missing authentication    | Devices with this recommendation are found without authentication based on successful sign-ins.<br><br>We recommend that you enable authentication, and that you set a stronger password with minimum length and complexity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Set a stronger password with minimum length and complexity       | Devices with this recommendation are found with weak passwords based on successful sign-ins.<br><br>We recommend that you change the device password to a password that has eight or more characters and that contains characters from 3 of the following categories:<br><br>\- Uppercase letters<br>\- Lowercase letters<br>\- Special characters<br>\- Numbers (0-9)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Disable insecure administration protocol                         | Devices with this recommendation are exposed to malicious threats because they use Telnet, which isn't a secured and encrypted communication protocol.<br><br>We recommend that you switch to a more secure protocol, such as SSH, disable the server altogether, or apply network access restrictions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+Other recommendations you may see in the **Recommendations** page are relevant for the [Defender for IoT micro agent](/azure/defender-for-iot/device-builders/).
+
+The following Defender for Endpoint recommendations are relevant for Enterprise IoT customers and are available in Microsoft 365 Defender only:
+
+ -  Require authentication for VNC management interface
+ -  Disable insecure administration protocol – Telnet
+ -  Remove insecure administration protocols SNMP V1 and SNMP V2
+ -  Require authentication for VNC management interface
+
+For more information, see [Security recommendations](/microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation).

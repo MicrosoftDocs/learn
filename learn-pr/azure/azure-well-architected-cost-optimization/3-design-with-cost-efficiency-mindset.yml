@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.design-with-cost-efficiency-mindset
+title: Design with a cost-efficiency mindset
+metadata:
+  title: Design with a cost-efficiency mindset
+  description: Learn how to spend only on what you need to achieve the highest return on your investments.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-design-with-cost-efficiency-mindset.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of these is one of the factors that you should take into account when measuring your workload's total cost?"
+      choices:
+        - content: "The cost of marketing for the product launch"
+          isCorrect: false
+          explanation: "Incorrect.  Marketing isn’t directly related to the workload's total cost."
+        - content: "The budget forecast for the workload"
+          isCorrect: false
+          explanation: "Incorrect.  The budget forecast is based on the cost model and isn’t factored into the workload's total cost."
+        - content: "The development team's salaries"
+          isCorrect: false
+          explanation: "Incorrect.  Salaries aren’t directly related to the workload's total cost."
+        - content: "The impact on ROI"
+          isCorrect: true
+          explanation: "Correct.  The impact on ROI is one of the factors that you should take into account when measuring your workload's total cost."
+
+    - content: "When fine-tuning the workload design for cost, which of these should you prioritize?"
+      choices:
+        - content: "Achieving the highest possible resilience"
+          isCorrect: false
+          explanation: "Incorrect.  Resilience is important, but achieving the highest possible resilience shouldn't be the priority for cost-efficiency."
+        - content: "Achieving the highest possible performance"
+          isCorrect: false
+          explanation: "Incorrect.  Performance is important, but achieving the highest possible performance shouldn't be the priority for cost-efficiency."
+        - content: "Using services that are in preview"
+          isCorrect: false
+          explanation: "Incorrect.  Services that are in preview aren’t yet ready for production workloads."
+        - content: "Using services that can reduce the overall cost of the workload"
+          isCorrect: true
+          explanation: "Correct.  Focusing on using services that can reduce the overall cost of the workload is a great way to achieve cost-efficiency."
+
+    - content: "If the workload team wants to ensure that the workload's Azure cost is kept under control, which of these should they do?"
+      choices:
+        - content: "Deploy enough infrastructure to cover the workload's peak demand, with some buffer."
+          isCorrect: false
+          explanation: "Incorrect.  This type of deployment isn’t cost-efficient as it results in over-provisioning."
+        - content: "Empower the operations team to shut down virtual machines that aren’t heavily used."
+          isCorrect: false
+          explanation: "Incorrect.  This could result in the workload's performance and users being affected. Virtual machines should only be shut down through automation."
+        - content: "Enforce the use of multifactor authentication (MFA) for all users."
+          isCorrect: false
+          explanation: "Incorrect.  Although MFA is a good security practice, it isn’t directly related to the workload's cost."
+        - content: "Use Azure Policy to enforce the use of cost-efficient SKUs"
+          isCorrect: true
+          explanation: "Correct.  By using Azure Policy to enforce the use of cost-efficient SKUs, the workload team can ensure that higher-priced SKUs aren’t deployed without approval."

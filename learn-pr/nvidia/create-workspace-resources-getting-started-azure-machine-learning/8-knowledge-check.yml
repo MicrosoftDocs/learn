@@ -8,8 +8,7 @@ metadata:
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

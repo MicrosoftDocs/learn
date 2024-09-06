@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.governance-security
+metadata:
+  title: Plan, implement, and manage governance for security
+  description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan, implement, and manage governance for security
+summary: This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
+abstract: |
+  By the end of this module, participants will be able to:
+
+  -   Enforce compliance using Azure Policy to create and manage security policies.
+
+  -   Streamline secure infrastructure deployment with Azure Blueprint.
+
+  -   Utilize landing zones for consistent Azure security and manage sensitive data with Azure Key Vault.
+
+  -   Enhance key security with HSM recommendations, effective access control, and regular key rotation and backup processes.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-blueprints
+- azure-dedicated-hsm
+- azure-key-vault
+- azure-policy
+subjects:
+- cloud-security
+units:
+- learn.wwl.governance-security.introduction
+- learn.wwl.governance-security.azure-governance-and-management
+- learn.wwl.governance-security.create-custom-azure-security-initiatives-policies
+- learn.wwl.governance-security.azure-blueprints
+- learn.wwl.governance-security.infrastructure-security-architecture
+- learn.wwl.governance-security.azure-key-vault
+- learn.wwl.governance-security.azure-key-vault-security
+- learn.wwl.governance-security.azure-key-vault-authentication
+- learn.wwl.governance-security.create-key-vault-use-azure-portal
+- learn.wwl.governance-security.azure-dedicated-hardware-security-module
+- learn.wwl.governance-security.provide-access-key-vault-keys-certificates-secrets
+- learn.wwl.governance-security.azure-key-vault-keys-secrets-certificates
+- learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-azure-key-vault
+- learn.wwl.governance-security.azure-key-vault-backup-restore
+- learn.wwl.governance-security.knowledge-check
+- learn.wwl.governance-security.summary
+badge:
+  uid: learn.wwl.governance-security.badge

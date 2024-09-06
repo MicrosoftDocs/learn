@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of the service included in the YAML manifest file?"
+    choices:
+    - content: "To create a new node pool in the AKS cluster"
+      isCorrect: false
+      explanation: "Incorrect. The service is not related to creating a new node pool."
+    - content: "To provide access to the Bash prompt on port 80"
+      isCorrect: false
+      explanation: "Incorrect. The service is not related to providing access to the Bash prompt."
+    - content: "To provide load balanced access to the pods in the deployment via a public IP address on port 80"
+      isCorrect: true
+      explanation: "Correct. The service is used to provide load balanced access to the pods in the deployment via a public IP address on port 80."
+  - content: "What is the purpose of enabling DevOps practices in creating and tearing down environments?"
+    choices:
+    - content: "To slow down the deployment process"
+      isCorrect: false
+      explanation: "Incorrect. Enabling DevOps practices aims to speed up the deployment process by automating and validating the creation and teardown of environments."
+    - content: "To increase the cost of hosting platforms"
+      isCorrect: false
+      explanation: "Incorrect. Enabling DevOps practices aims to reduce the cost of hosting platforms by automating and validating the creation and teardown of environments."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Enabling DevOps practices aims to automate and validate the creation and teardown of environments to deliver secure and stable application hosting platforms."
+  - content: "What is the purpose of creating an Azure Container Registry and an AKS cluster?"
+    choices:
+    - content: "To configure a new storage account in Azure"
+      isCorrect: false
+      explanation: "Incorrect. This answer describes a different task."
+    - content: "To create a new virtual machine in Azure"
+      isCorrect: false
+      explanation: "Incorrect. This answer describes a different task."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. By creating an Azure Container Registry and an AKS cluster, you can automate and validate the creation and teardown of environments, which helps deliver secure and stable application hosting platforms."
+  - content: "What does Azure CNI enable in AKS?"
+    choices:
+    - content: "Enables the creation of Windows node pools"
+      isCorrect: false
+      explanation: "Incorrect. Azure CNI is related to networking, not the creation of Windows node pools."
+    - content: "Enables automatic upgrade of Kubernetes version"
+      isCorrect: false
+      explanation: "Incorrect. Azure CNI is related to networking, not Kubernetes version upgrades."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Azure CNI enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

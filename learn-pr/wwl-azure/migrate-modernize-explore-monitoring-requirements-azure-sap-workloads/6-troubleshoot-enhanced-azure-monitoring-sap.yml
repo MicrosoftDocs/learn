@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.troubleshoot-enhanced-azure-monitoring-sap
+title: Troubleshoot Azure Enhanced Monitoring for SAP
+metadata:
+  title: Troubleshoot Azure Enhanced Monitoring for SAP
+  description: "Troubleshoot Azure Enhanced Monitoring for SAP"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-troubleshoot-enhanced-azure-monitoring-sap.md)]

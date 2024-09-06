@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-entanglement.what-is-teleportation
+title: How to use entanglement to send information?
+metadata:
+  title: How to use entanglement to send information?
+  description: How to use entanglement to send information?
+  ms.date: 04/25/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+  no-loc: ['Q#', '$$v', '$$', "$$", '$', "$", $, $$, '\cdots', 'bmatrix', '\ddots', '\equiv', '\sum', '\begin', '\end', '\sqrt', '\otimes', '{', '}', '\text', '\phi', '\kappa', '\psi', '\alpha', '\beta', '\gamma', '\delta', '\omega', '\bra', '\ket', '\boldone', '\\\\', '\\', '=', '\frac', '\text', '\mapsto', '\dagger', '\to', '\begin{cases}', '\end{cases}', '\operatorname', '\braket', '\id', '\expect', '\defeq', '\variance', '\dd', '&', '\begin{align}', '\end{align}', '\Lambda', '\lambda', '\Omega', '\mathrm', '\left', '\right', '\qquad', '\times', '\big', '\langle', '\rangle', '\bigg', '\Big', '|', '\mathbb', '\vec', '\in', '\texttt', '\ne', '<', '>', '\leq', '\geq', '~~', '~', '\begin{bmatrix}', '\end{bmatrix}', '\_', target, Quantum Development Kit]
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-what-is-teleportation.md)]

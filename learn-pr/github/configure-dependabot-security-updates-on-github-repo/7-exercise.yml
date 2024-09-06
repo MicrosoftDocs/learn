@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependabot-security-updates-on-github-repo.exercise
+title: Exercise - Configure Dependabot security updates
+metadata:
+  unitType: exercise
+  title: Exercise - Configure Dependabot security updates
+  description: Complete an exercise to check your knowledge on setting up Dependabot security updates.
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise.md)]

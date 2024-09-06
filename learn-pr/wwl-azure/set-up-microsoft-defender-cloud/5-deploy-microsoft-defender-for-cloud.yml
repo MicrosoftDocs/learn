@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.deploy-microsoft-defender-for-cloud
+title: Deploy Microsoft Defender for Cloud
+metadata:
+  title: Deploy Microsoft Defender for Cloud
+  description: "Deploy Microsoft Defender for Cloud"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-deploy-microsoft-defender-for-cloud.md)]

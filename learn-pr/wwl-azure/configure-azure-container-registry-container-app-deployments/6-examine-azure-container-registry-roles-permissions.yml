@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-container-registry-container-app-deployments.examine-azure-container-registry-roles-permissions
+title: Examine Azure Container Registry roles and permissions
+metadata:
+  title: Examine Azure Container Registry roles and permissions
+  description: "Examine Azure Container Registry roles and permissions"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-examine-azure-container-registry-roles-permissions.md)]

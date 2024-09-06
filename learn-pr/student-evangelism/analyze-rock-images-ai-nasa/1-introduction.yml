@@ -3,11 +3,12 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.1-introduction
 metadata:
   title: Introduction
   description: Introduction to how to analyze images of space rocks with artificial intelligence.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/05/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 1

@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-databricks-data-engineer
+metadata:
+  title: Implement a data engineering solution using Azure Databricks
+  description: Implement a data engineering solution using Azure Databricks
+  ms.date: 09/05/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: learning-path
+title: Implement a data engineering solution with Azure Databricks
+prerequisites: |
+  None
+summary: |
+  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run large data engineering workloads in the cloud.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+subjects:
+- data-engineering
+modules:
+- learn.wwl.perform-incremental-processing-with-spark-structured-streaming
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+- learn.wwl.ci-cd-workflows-pipelines-azure-databricks
+- learn.wwl.automate-jobs-azure-databricks
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks
+- learn.wwl.use-sql-warehouses-azure-databricks
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory
+trophy:
+  uid: learn.wwl.azure-databricks-data-engineer.trophy

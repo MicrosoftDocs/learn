@@ -4,20 +4,19 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/30/2023
+  ms.date: 04/04/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which of the following statements correctly describes cloud tiering?"
+  - content: "Which statement correctly describes cloud tiering?"
     choices:
     - content: "Cloud tiering prioritizes the sync order of file shares."
       isCorrect: false
@@ -27,26 +26,26 @@ quiz:
       explanation: "Incorrect. Cloud tiering doesn't set the job frequency."
     - content: "Cloud tiering archives infrequently access files to free up space on the local file share."
       isCorrect: true
-      explanation: "Correct. Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered or archived to the Azure Files share according to the policy created."
-  - content: "What's the best way to sync files stored on the manufacturing warehouse machines with the cloud?"
+      explanation: "Correct. Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered or archived to the Azure file share according to the policy created."
+  - content: "Which statement correctly describes soft delete?"
     choices:
-    - content: "Create an Azure Files share and directly mount shares on the machines in the warehouse."
+    - content: "Soft delete only retains deleted files for 14 days."
       isCorrect: false
-      explanation: "Incorrect. Is there a more efficient way?"
-    - content: "Use a machine in the warehouse to host a file share, install Azure File Sync, and share a drive with the rest of the warehouse."
+      explanation: "Incorrect. Soft delete can retain deleted files from 1 to 365 days."
+    - content: "Soft delete can be enabled on either new or existing file shares."
       isCorrect: true
-      explanation: "Correct. This answer is the best option. The low bandwidth means Azure File Sync can handle the updating and syncing of files efficiently over the low-bandwidth network."
-    - content: "Install Azure File Sync on every machine in the warehouse and also in the main office."
+      explanation: "Correct. Soft delete can be enabled on either new or existing file shares."
+    - content: "Soft delete provides file protection for SMB and NFS file shares."
       isCorrect: false
-      explanation: "Incorrect. Is there a more efficient way?"
-  - content: "How is the Azure File Sync agent installed and used?"
+      explanation: "Incorrect. Soft delete is only for SMB file shares."
+  - content: "Which statement correctly describes file snapshots?"
     choices:
-    - content: "The Azure File Sync agent is installed on a server to enable Azure File Sync replication between the local file share and an Azure Files share."
+    - content: "A share snapshot is a point-in-time, read-only copy of your data."
       isCorrect: true
-      explanation: "Correct. The Azure File Sync agent is a downloadable package that enables a Windows Server file share to be synced with an Azure Files share."
-    - content: "The Azure File Sync agent is installed on a server to set NTFS permissions on files and folders."
+      explanation: "Correct. A share snapshot is a point-in-time, read-only copy of your data."
+    - content: "You can't retrieve a share snapshot for an individual file."
       isCorrect: false
-      explanation: "Incorrect. The Azure File Sync agent doesn't configure file permissions."
-    - content: "The Azure File Sync agent is installed on an Azure Files share to control on-premises file and folder replication traffic."
+      explanation: "Incorrect. You can retrieve a share snapshot for an individual file."
+    - content: "The snapshot capability is provided at the storage account level."
       isCorrect: false
-      explanation: "Incorrect. The Azure File Sync agent isn't only an on-premises agent. Is there a more accurate description?"
+      explanation: "Incorrect. The Azure Files share snapshot capability is provided at the **file share** level."

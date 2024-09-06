@@ -1,1 +1,0 @@
-Whether you work with small data or big data, the Microsoft Intelligent Data Platform provides a rich set of technologies. You can use these technologies to analyze data that's relational, nonrelational, streaming, text-based, or image-based. Choose the technologies that meet your business needs. Then scale your solutions to meet demands securely.

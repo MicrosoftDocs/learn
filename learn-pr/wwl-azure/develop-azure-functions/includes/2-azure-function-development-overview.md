@@ -1,56 +1,38 @@
-
-A function contains two important pieces - your code, which can be written in a variety of languages, and some config, the *function.json* file. For compiled languages, this config file is generated automatically from annotations in your code. For scripting languages, you must provide the config file yourself.
-
-The *function.json* file defines the function's trigger, bindings, and other configuration settings. Every function has one and only one trigger. The runtime uses this config file to determine the events to monitor and how to pass data into and return data from a function execution. The following is an example *function.json* file.
-
-```json
-{
-    "disabled":false,
-    "bindings":[
-        // ... bindings here
-        {
-            "type": "bindingType",
-            "direction": "in",
-            "name": "myParamName",
-            // ... more depending on binding
-        }
-    ]
-}
-```
-
-The `bindings` property is where you configure both triggers and bindings. Each binding shares a few common settings and some settings which are specific to a particular type of binding. Every binding requires the following settings:
-
-| Property | Types | Comments |
-|--|--|--|
-| `type` | string | Name of binding. For example, `queueTrigger`. |
-| `direction` | string | Indicates whether the binding is for receiving data into the function or sending data from the function. For example, `in` or `out`. |
-| `name` | string | The name that is used for the bound data in the function. For example, `myQueue`. |
-
-
-## Function app
-
-A function app provides an execution context in Azure in which your functions run. As such, it is the unit of deployment and management for your functions. A function app is composed of one or more individual functions that are managed, deployed, and scaled together. All of the functions in a function app share the same pricing plan, deployment method, and runtime version. Think of a function app as a way to organize and collectively manage your functions.
+A function app provides an execution context in Azure in which your functions run. As such, it's the unit of deployment and management for your functions. A function app is composed of one or more individual functions that are managed, deployed, and scaled together. All of the functions in a function app share the same pricing plan, deployment method, and runtime version. Think of a function app as a way to organize and collectively manage your functions.
 
 > [!NOTE]
 > In Functions 2.x all functions in a function app must be authored in the same language. In previous versions of the Azure Functions runtime, this wasn't required.
 
-## Folder structure
+## Develop and test Azure Functions locally
 
-The code for all the functions in a specific function app is located in a root project folder that contains a host configuration file. The [host.json](/azure/azure-functions/functions-host-json) file contains runtime-specific configurations and is in the root folder of the function app. A *bin* folder contains packages and other library files that the function app requires. Specific folder structures required by the function app depend on language:
+Functions make it easy to use your favorite code editor and development tools to create and test functions on your local computer. Your local functions can connect to live Azure services, and you can debug them on your local computer using the full Functions runtime.
 
-* [C# compiled (.csproj)](/azure/azure-functions/functions-dotnet-class-library#functions-class-library-project)
-* [C# script (.csx)](/azure/azure-functions/functions-reference-csharp#folder-structure)
-* [F# script](/azure/azure-functions/functions-reference-fsharp#folder-structure)
-* [Java](/azure/azure-functions/functions-reference-java#folder-structure)
-* [JavaScript](/azure/azure-functions/functions-reference-node#folder-structure)
-* [Python](/azure/azure-functions/functions-reference-python#folder-structure)
+The way in which you develop functions on your local computer depends on your language and tooling preferences. For more information, see [Code and test Azure Functions locally](/azure/azure-functions/functions-develop-local).
 
-## Local development environments
+> [!NOTE]
+> Because of limitations on editing function code in the Azure portal, you should develop your functions locally and publish your code project to a function app in Azure. For more information, see [Development limitations in the Azure portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings#development-limitations-in-the-azure-portal)
 
-Functions makes it easy to use your favorite code editor and development tools to create and test functions on your local computer. Your local functions can connect to live Azure services, and you can debug them on your local computer using the full Functions runtime.
+### Local project files
 
-The way in which you develop functions on your local computer depends on your language and tooling preferences. See [Code and test Azure Functions locally](/azure/azure-functions/functions-develop-local) for more information.
+A Functions project directory contains the following files in the project root folder, regardless of language:
 
-> [!WARNING]
-> Do not mix local development with portal development in the same function app. When you create and publish functions from a local project, you should not try to maintain or modify project code in the portal.
+* `host.json`
+* `local.settings.json`
+* Other files in the project depend on your language and specific functions.
+
+The `host.json` metadata file contains configuration options that affect all functions in a function app instance. Other function app configuration options are managed depending on where the function app runs:
+
+* **Deployed to Azure:** in your application settings
+* **On your local computer:** in the local.settings.json file.
+
+Configurations in `host.json` related to bindings are applied equally to each function in the function app. You can also override or apply settings per environment using application settings. To learn more, see the [host.json reference](/azure/azure-functions/functions-host-json). 
+
+The `local.settings.json` file stores app settings, and settings used by local development tools. Settings in the `local.settings.json` file are used only when you're running your project locally. When you publish your project to Azure, be sure to also add any required settings to the app settings for the function app.
+
+> [!IMPORTANT]
+> Because the `local.settings.json` may contain secrets, such as connection strings, you should never store it in a remote repository.
+
+### Synchronize settings
+
+When you develop your functions locally, any local settings required by your app must also be present in the app settings of the deployed function app. You can also download current settings from the function app to your local project.
 

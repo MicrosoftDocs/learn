@@ -1,18 +1,5 @@
-Everyone has incidents. If you run any system of basically any size, at
-some point in time it will fail and you will have an outage. This is just a
-fact. This is why "Incident Response" is the second level in Dickerson's
-Hierarchy of Reliability right after Monitoring.
+Everyone has incidents. If you run any system of basically any size, at some point in time, it will fail and you'll have an outage. This is just a fact. This is why *Incident Response* is the second level in Dickerson's Hierarchy of Reliability, right after Monitoring.
 
-The question then becomes, how do you react in those moments? Do you
-respond with urgency using a set plan or process or do you have an ad hoc
-reaction? We know from good research in the field that recovery time is one
-of the indicators of a high performing organization. Having a good process
-for incident response is crucial for reducing this recovery period.
+The question then becomes: *How do you react in those moments?* Do you respond with urgency using a set plan or process, or do you have an ad-hoc reaction? We know from good research in the field that recovery time is one of the indicators of a high-performing organization. Having a good process for incident response is crucial for reducing this recovery period.
 
-In this module, we've looked at the stages of an incident and explored some
-of the key components of a plan for incident response for each of those
-stages. We've discussed the importance of being able to track incidents
-well and ways to automate that process using tools provided by Azure. We
-also looked at the key aspects of communication during an incident. And
-finally, we explored some of the tools that Azure provides which can help
-your organization be more efficient during the remediation of an incident.
+In this module, we've looked at the stages of an incident and explored some of the key components of a plan for incident response for each of those stages. We've discussed the importance of being able to track incidents well and ways to automate that process using tools Azure provides. We also looked at the key aspects of communication during an incident. Finally, we explored some of the tools that Azure provides which can help your organization be more efficient during the remediation of an incident.

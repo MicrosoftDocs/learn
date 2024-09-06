@@ -89,7 +89,7 @@ The storage screen allows you to define the Primary storage account and default 
 
 ## Security and Networking
 
-For Hadoop, Spark, HBase, Kafka, and Interactive Query cluster types, you can choose to enable the **Enterprise Security Package**. This package provides option to have a more secure cluster setup by using Apache Ranger and integrating with Azure Active Directory.
+For Hadoop, Spark, HBase, Kafka, and Interactive Query cluster types, you can choose to enable the **Enterprise Security Package**. This package provides option to have a more secure cluster setup by using Apache Ranger and integrating with Microsoft Entra ID.
 
 ![A screenshot of the Security and Networking tab in the Create HDInsight Cluster screen in the Azure portal](../media/2-img03.png)
 

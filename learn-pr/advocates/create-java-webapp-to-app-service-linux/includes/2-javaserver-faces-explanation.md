@@ -42,7 +42,7 @@ Let's look at an example. In the following PrimeFaces page, the `p:outputLabel`,
 </html>
 ```
 
-Writing the preceding XHTML code, the following screen appears:
+When you write the preceding XHTML code, the following screen appears:
 
 :::image type="content" source="../media/simple-javaserver-faces-facelets-primefaces-ajax.png" alt-text="Screenshot that shows a JSF Facelets sample.":::
 
@@ -50,7 +50,7 @@ Writing the preceding XHTML code, the following screen appears:
 
 JSF supports Ajax applications by default. You can dynamically update a part of the screen without refreshing the screen.
 
-PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. You specify which component should be updated with its target ID. In the following example, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is selected. The `id` here can be specified for any HTML component.
+PrimeFaces makes use of the `update` attribute to make it easier to implement the Ajax support provided by JSF. You specify which component should be updated with its target ID. In the following example, the `update ="ajaxUpdateText"` attribute is added to `p:commandButton`, so the `<div id ="ajaxUpdateText">` part is updated when the button is selected. You can specify the `id` here for any HTML component.
 
 ```xml
 <div id="ajaxUpdateText">
@@ -67,7 +67,7 @@ Backing beans are Java classes that implement the back-end processing associated
 
 If you write `<p: inputText value ="#{indexcontroller.inputValue}"/>` in Facelets, the **Input Text** field appears on the screen. The entered value is bound to the `inputValue` defined in the `IndexController` class.
 
-Also, if you write `<p:commandButton value ="Submit" action="#{indexController.submitButtonAction()}"/>`, the **HTML** button appears. When the button is selected, it invokes the `submitButtonAction()` method defined in the `IndexController` class.
+Also, if you write `<p:commandButton value ="Submit" action="#{indexcontroller.submitButtonAction()}"/>`, the **HTML** button appears. When the button is selected, it invokes the `submitButtonAction()` method defined in the `IndexController` class.
 
 ```java
 import java.io.Serializable;

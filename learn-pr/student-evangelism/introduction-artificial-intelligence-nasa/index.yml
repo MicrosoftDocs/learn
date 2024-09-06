@@ -3,11 +3,13 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa
 metadata:
   title: Prepare to research space rocks by using artificial intelligence
   description: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.
-  ms.date: 04/11/2021
   author: drguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Prepare to research space rocks by using artificial intelligence
 summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.

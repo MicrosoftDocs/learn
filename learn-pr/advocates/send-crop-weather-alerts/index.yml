@@ -6,9 +6,9 @@ metadata:
   ms.date: 05/25/2022
   author: acomfort248
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: azure-maps
 title: Use Twilio and Azure Maps to receive text message weather alerts
 summary: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops.
 abstract: |

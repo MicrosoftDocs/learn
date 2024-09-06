@@ -4,13 +4,12 @@ title: Describe security of agent pools
 metadata:
   title: Describe security of agent pools
   description: "Describe security of agent pools"
-  ms.date: 06/23/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/10-describe-security-of-agent-pools.md)]

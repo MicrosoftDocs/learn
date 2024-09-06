@@ -1,6 +1,6 @@
-You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your pipeline to build and deploy the database's schema. You'll also update your pipeline to add some sample product data for your test environment so that your team can try out the website.
+You updated your pipeline to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test stage is failing because the database isn't working yet. In this unit, you deploy a new Azure SQL logical server and database, and configure your pipeline to build and deploy the database's schema. You also update your pipeline to add some sample product data for your test environment so that your team can try out the website.
 
-In the process, you'll do the following tasks:
+In the process, you do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -16,7 +16,7 @@ In the process, you'll do the following tasks:
 
 Your Bicep file already defines a storage account, but it doesn't define a blob container. Here, you add a blob container to your Bicep file. You also provide the name of the storage account and blob container to the application by using its configuration settings. That way, the app knows which storage account to access.
 
-1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
+1. In Visual Studio Code, open the *main.bicep* file in the *deploy* folder.
 
 1. Below the variables that define resource names (near Line 27), add a new variable definition for the blob storage container's name:
 
@@ -47,7 +47,7 @@ Your Bicep file already defines a storage account, but it doesn't define a blob 
 
 Your Bicep file doesn't currently deploy an Azure SQL logical server or database. In this section, you add these resources to your Bicep file.
 
-1. In the _main.bicep_ file, add two new parameters below the `reviewApiKey` parameter:
+1. In the *main.bicep* file, add two new parameters below the `reviewApiKey` parameter:
 
    :::code language="bicep" source="code/7-main.bicep" range="22-27" :::
 
@@ -66,7 +66,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
    :::code language="bicep" source="code/7-main.bicep" range="170-193" :::
 
-1. Update the `environmentConfigurationMap` variable to define the SKUs to use for your database for each environment:
+1. Update the `environmentConfigurationMap` variable to define the `sku` values to use for your database for each environment:
 
    :::code language="bicep" source="code/7-main.bicep" range="43-81" highlight="14-19, 32-37" :::
 
@@ -82,9 +82,9 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 ## Add new build steps for the database project
 
-Your website developers have prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your pipeline _Build_ stage to build the database project into a DACPAC file and publish it as a pipeline artifact.
+Your website developers prepared a Visual Studio database project that deploys and configures your website database table. Here, you update your pipeline *Build* stage to build the database project into a DACPAC file and publish it as a pipeline artifact.
 
-1. Open the _build.yml_ file in the _deploy/pipeline-templates_ folder.
+1. Open the *build.yml* file in the *deploy/pipeline-templates* folder.
 
 1. To build the Visual Studio database project, copy the generated DACPAC file to a staging folder, and publish it as a pipeline artifact, add the following steps:
 
@@ -126,15 +126,15 @@ Your website developers have prepared a Visual Studio database project that depl
 
 ## Add parameter values to the Validate and Preview stages
 
-The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your variable group, for both the _Validate_ and _Preview_ stages.
+The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your variable group, for both the *Validate* and *Preview* stages.
 
-1. In Visual Studio Code, open the _deploy.yml_ file in the _deploy/pipeline-templates_ folder.
+1. In Visual Studio Code, open the *deploy.yml* file in the *deploy/pipeline-templates* folder.
 
-1. Update the _Validate_ stage's _RunPreflightValidation_ step to add the new parameters:
+1. Update the *Validate* stage's *RunPreflightValidation* step by adding the new parameters.
 
    :::code language="yaml" source="code/7-deploy.yml" range="19-33" highlight="14-15" :::
 
-1. Update the _Preview_ stage's _RunWhatIf_ step to add the new parameters:
+1. Update the *Preview* stage's *RunWhatIf* step by adding the new parameters.
 
    :::code language="yaml" source="code/7-deploy.yml" range="51-59" highlight="7-9" :::
 
@@ -143,7 +143,7 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 ## Add parameter values to the Deploy stage
 
-1. Update the _Deploy_ stage's _DeployBicepFile_ step to add the new parameters:
+1. Update the *Deploy* stage's *DeployBicepFile* step by adding the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="77-92" highlight="14-15" :::
 
@@ -153,9 +153,9 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 ## Add database deployment steps
 
-In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
+In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for nonproduction environments.
 
-1. Below the _DeployWebsiteApp_ step in the _Deploy_ stage, add a new step to deploy the DACPAC file:
+1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy the DACPAC file:
 
    :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
 
@@ -163,7 +163,7 @@ In this section, you define the steps that are required to deploy the database c
 
    :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
 
-   Notice that this step has a condition applied to it so that it only runs for non-production environments.
+   Notice that this step has a condition applied to it so that it only runs for nonproduction environments.
 
 1. Below the step you just added, and still within the scope of the condition, add a step to upload some sample toy images to the blob container by using Azure CLI:
 
@@ -171,13 +171,13 @@ In this section, you define the steps that are required to deploy the database c
 
 ## Verify files and commit your changes
 
-1. Verify that your _main.bicep_ file looks like this:
+1. Verify that your *main.bicep* file looks like this:
 
    :::code language="bicep" source="code/7-main.bicep" highlight="22-27, 34-40, 56-61, 74-79, 113-128, 157-167, 170-193, 197-200" :::
 
    If it doesn't, update it to match the file contents.
 
-1. Verify that your _deploy.yml_ file looks like this:
+1. Verify that your *deploy.yml* file looks like this:
 
    :::code language="yaml" source="code/7-deploy.yml" highlight="32-33, 57-59, 90-91, 97-100, 117-156" :::
 
@@ -201,19 +201,19 @@ In this section, you define the steps that are required to deploy the database c
 
    Wait until all the stages for the test environment finish successfully. Notice that the smoke test now also succeeds.
 
-   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows that the stage has succeeded.":::
+   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows that the stage succeeded.":::
 
-1. Wait for the pipeline to pause again before the _Preview (Production Environment)_ stage, because it needs permission to a different variable group this time.
+1. Wait for the pipeline to pause again before the *Preview (Production Environment)* stage, because it needs permission to a different variable group this time.
 
    :::image type="content" source="../media/7-pipeline-run-deploy-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Deploy stage. Permission is required to continue. The View button is highlighted.":::
 
 1. Select **View**, and then select **Permit** > **Permit**.
 
-   The _Preview (Production Environment)_ stage finishes successfully.
+   The *Preview (Production Environment)* stage finishes successfully.
 
 1. Monitor the pipeline as it completes the final stages.
 
-   The _Deploy (Production Environment)_ stage finishes successfully, and the _Smoke Test (Production Environment)_ stage also finishes successfully.
+   The *Deploy (Production Environment)* stage finishes successfully, and the *Smoke Test (Production Environment)* stage also finishes successfully.
 
    :::image type="content" source="../media/7-pipeline-run-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run with all stages showing success.":::
 
@@ -223,7 +223,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Select the **Deploy website** step.
 
-   Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
+   Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app, opening it in a new browser tab.
 
    :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log for the test environment's Deploy stage. The URL of the App Service app is highlighted.":::
 
@@ -243,7 +243,7 @@ In this section, you define the steps that are required to deploy the database c
 
 ## Clean up resources
 
-Now that you've completed the exercise, you'll want to remove the resources so that you aren't billed for them.
+Now that the exercise is completed, you should remove the resources so that you aren't billed for them.
 
 In the Visual Studio Code terminal, run the following commands:
 

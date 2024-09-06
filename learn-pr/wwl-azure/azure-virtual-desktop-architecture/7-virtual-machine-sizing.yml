@@ -4,11 +4,10 @@ title: Virtual machine sizing for Azure Virtual Desktop
 metadata:
   title: Virtual machine sizing for Azure Virtual Desktop
   description: "Virtual machine sizing for Azure Virtual Desktop"
-  ms.date: 01/31/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

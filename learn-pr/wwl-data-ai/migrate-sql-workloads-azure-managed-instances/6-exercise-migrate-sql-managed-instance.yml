@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.exercise-migrate-sql-managed-instance
+title: Exercise - Migrate a SQL Server database to Azure SQL Managed Instance
+metadata:
+  title: Exercise - Migrate a SQL Server database to Azure SQL Managed Instance
+  description: "Learn how to perform an online migration of a SQL Server database to Azure SQL Managed Instance using Log Replay Service (LRS)."
+  ms.date: 05/26/2021
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-migrate-sql-managed-instance.md)]

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.ilogger-custom-log-messages
+title: Using a logger to add custom log messages
+metadata:
+  title: Using a logger to add custom log messages
+  description: In this unit, you'll learn how to add messages to structured logs by using a logger object.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-ilogger-custom-log-messages.md)]

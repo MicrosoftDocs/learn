@@ -6,9 +6,8 @@ metadata:
   description: In this unit, you'll create and use an anonymous function.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 05/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/26/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

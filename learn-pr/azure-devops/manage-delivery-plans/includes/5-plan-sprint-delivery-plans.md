@@ -1,4 +1,4 @@
-Here, you'll create a delivery plan and use it to plan a sprint in Azure DevOps.
+Now you can create a delivery plan and use it to plan a sprint in Azure DevOps.
 
 The Tailspin team is eager to see how Delivery Plans is going to work. They already have two teams with sprints set up in Azure DevOps, so now they can review and optimize the work schedules.
 
@@ -11,13 +11,12 @@ To do this, you:
 
 ## Create a delivery plan
 
-You create a Delivery Plan from the **Delivery Plans** tab of Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
+You create a delivery plan from the **Delivery Plans** tab of Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
 
 1. From Azure DevOps, navigate to your project.
 1. Under **Boards**, select **Delivery Plans**.
 
-    > [!IMPORTANT]
-    > Ensure that you select **Delivery Plans** and not **Plans**.
+    :::image type="content" source="../media/boards-delivery-plans.png" alt-text="Screenshot of the delivery plans option in the dropdown menu.":::
 
 1. Select **New plan**.
 1. In the form, enter these fields:
@@ -65,7 +64,7 @@ Milestone markers can be added to the delivery plan as reference points. They he
 
 ### Optimize the work schedule
 
-1. Notice that there's a work item for the Web team to **Integrate with beta DB** that's scheduled to be completed before the beta will be ready. This will be a problem because this work item is dependent on that beta.
+1. Notice that there's a work item for the Web team to **Integrate with beta DB** that's scheduled to be completed before the beta will be ready. This is a problem because this work item is dependent on that beta.
 1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
 1. This change opens a significant amount of bandwidth in **Sprint 3**. Because that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 

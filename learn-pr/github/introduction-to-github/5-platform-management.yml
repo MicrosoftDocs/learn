@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.platform-management
+title: GitHub platform management
+metadata:
+  title: GitHub platform management
+  description: In this unit, we're learning about how to manage your GitHub notifications, subscriptions, and how to publicize your project on GitHub pages.
+  ms.date: 10/27/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-platform-management.md)]

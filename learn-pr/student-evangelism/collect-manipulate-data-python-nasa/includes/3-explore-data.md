@@ -6,7 +6,7 @@ For example, if you trained a machine learning model with only temperature data,
 
 The first step in any data science or machine learning solution is to collect and understand the data. For this learning path, we collected publicly available weather data from [NOAA](https://www.noaa.gov/?azure-portal=true) and [Weather Underground](https://www.wunderground.com/history?azure-portal=true) for the dates of NASA rocket launches, taken from the [list of NASA missions Wikipedia page](https://wikipedia.org/wiki/List_of_NASA_missions?azure-portal=true). We then compiled this data into an Excel file.
 
-Select this [Excel file](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true) link to automatically download the file. We'll use it for the exercises in this module.
+Select this [Excel file](https://github.com/MicrosoftDocs/mslearn-collect-manipulate-data-python-nasa/blob/main/DATA/NASA/RocketLaunchDataCompleted.xlsx?azure-portal=true) link to download the file. We'll use it for the exercises in this module.
 
 The Excel file contains the weather data for the days of individual crewed and uncrewed launches. We also added data for the two days surrounding the launches to see if there were any patterns that might be interesting. Here's a screenshot from the Excel file.
 

@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: How Azure Policy works
   description: "Learn how to use Azure Policy to apply compliance and control in your environment."
-  ms.date: 9/29/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 07/19/2024
+  author: davidsmatlak
+  ms.author: davidsmatlak
+  ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-how-azure-policy-works.md)]  
+  [!include[](includes/3-how-azure-policy-works.md)]

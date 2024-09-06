@@ -16,7 +16,7 @@ The response from the Text Moderation API includes the following information:
 
 When you pass text to the API, any potentially profane terms in the text are identified and returned in a JSON response. The profane item is returned as a `Term` in the JSON response, along with an index value showing where the term is in the supplied text.
 
-You can also use custom term lists with this API. In that case, if a profane term is identified in the text, a `ListId` is also returned to identify the specific custom word that was identified. A sample JSON response is shown here:
+You can also use custom term lists with this API. In that case, if a profane term is identified in the text, a `ListId` is also returned to identify the custom term list that was used. The combination of the `ListID` and `Term`, identify the specific custom word that was found. A sample JSON response is shown here:
 
 ```json
 "Terms": [

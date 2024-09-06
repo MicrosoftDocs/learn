@@ -5,10 +5,11 @@ metadata:
   title: Introduction
   description: Introduction
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.date: 07/07/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

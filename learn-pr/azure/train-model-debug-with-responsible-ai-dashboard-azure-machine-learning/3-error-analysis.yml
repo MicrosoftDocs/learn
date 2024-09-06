@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.error-analysis
+title: Error analysis on a model 
+metadata:
+  title: Error analysis on a model 
+  description: "Error analysis on a model"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-error-analysis.md)]

@@ -58,7 +58,7 @@ Finally, verify that the secret value has been set.
 
 ## Other ways to consume the secret
 
-You can create and retrieve secrets from the Azure Key Vault as long as you're authenticated with Azure AD using the REST API, native SDKs, Azure CLI, or Azure PowerShell. For example, here's the same process using Azure PowerShell.
+You can create and retrieve secrets from the Azure Key Vault as long as you're authenticated with Microsoft Entra ID using the REST API, native SDKs, Azure CLI, or Azure PowerShell. For example, here's the same process using Azure PowerShell.
 
 ```powershell
 Get-AzKeyVault

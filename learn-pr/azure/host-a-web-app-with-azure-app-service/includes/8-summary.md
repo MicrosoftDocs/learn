@@ -1,6 +1,6 @@
 You've successfully created and deployed a web application to Azure App Service.
 
-App Service simplifies managing and controlling your web app in comparison to traditional hosting options. Your App Service Plan can help you reduce the time and effort spent running and managing your web app, and provides advanced cloud features such as autoscaling and Git integration.
+App Service simplifies managing and controlling your web app in comparison to traditional hosting options. Your App Service Plan can help you reduce the time and effort spent running and managing your web app, and provides advanced cloud features such as autoscaling and Azure DevOps integration.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

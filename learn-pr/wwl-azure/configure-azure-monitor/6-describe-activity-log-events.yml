@@ -4,11 +4,12 @@ title: Describe activity log events
 metadata:
   title: Describe activity log events
   description: "Describe activity log events"
-  ms.date: 03/02/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/6-describe-activity-log-events.md)]

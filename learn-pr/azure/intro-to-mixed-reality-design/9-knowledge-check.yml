@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.design-considerations-mr-development.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 06/13/2024
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  title: ""
+  questions:
+    - content: "What is a hologram?"
+      choices:
+        - content: "Immersive 3D objects made of opaque pixels"
+          isCorrect: false
+          explanation: Incorrect. Holograms are rendered over the real world and aren't opaque.
+        - content: "Physical objects that react to digital content"
+          isCorrect: false
+          explanation: Incorrect. Holograms are purely digital objects, not physical.
+        - content: "Digital objects made of light and sound"
+          isCorrect: true
+          explanation: Correct. Holograms are digital objects rendered in front of the user's view when the user is wearing a HoloLens device.
+    - content: "Which of the following best describes a Holographic frame?"
+      choices:
+        - content: "A rectangular viewport powered by the user's headset allows them to see the world of mixed reality."
+          isCorrect: true
+          explanation: Correct. A rectangular viewport powered by the user's headset allows them to see the world of mixed reality. This rectangular space on the HoloLens is known as the holographic frame.
+        - content: "Type of display that utilizes light diffraction to create a virtual three-dimensional image."
+          isCorrect: false
+          explanation: Incorrect. A holographic display is a type of display that utilizes light diffraction to create a virtual three-dimensional image.
+        - content: "Contains information using an optical interference pattern within a thick, photosensitive optical material."
+          isCorrect: false
+          explanation: Incorrect. Holographic data storage contains information using an optical interference pattern within a thick, photosensitive optical material.
+    - content: "Which of the following resources includes 2D versions of the Microsoft HoloLens 2 style UI controls seen in the MRTK for Unity and MRTK for Unreal toolkits?"
+      choices:
+        - content: "MRTK Figma Bridge for Unity"
+          isCorrect: false
+          explanation: Incorrect. The MRTK Figma Bridge for Unity allows you to import Figma Toolkit layouts into Unity.
+        - content: "MRTK Figma Toolkit"
+          isCorrect: true
+          explanation: Correct. The MRTK Figma Toolkit includes 2D versions of the Microsoft HoloLens 2 style UI controls.
+        - content: "Mixed Reality Toolkit"
+          isCorrect: false
+          explanation: Incorrect. MRTK-Unity is a Microsoft-led project that provides a set of components and functionalities that can be used to speed up the creation of cross-platform MR apps in Unity.
+    - content: "Imagine designing an application that needs the user to focus on a particular object. Which color criteria would you use to achieve this effect?"
+      choices:
+        - content: "Color uniformity"
+          isCorrect: false
+          explanation: Incorrect. Holograms are often produced brightly to retain color consistency regardless of the background. Large portions might get discolored.
+        - content: "Emphasis"
+          isCorrect: false
+          explanation: Incorrect. Contrast colors, brightness, and lighting to draw attention to objects or points of interaction.
+        - content: "Vignetting"
+          isCorrect: true
+          explanation: Correct. Darkening materials with a vignette effect might assist to draw the user's attention to the center of the field of view.
+    - content: "What is *One Line Concept*?"
+      choices:
+        - content: "It's the most straightforward combination of character and plot and typically consists of some event that starts the action, some sense of the main character, and some sense of the story's outcome."
+          isCorrect: false
+          explanation: Incorrect. One Line Story is the simplest combination of character and plot and typically consists of some event that starts the action, some sense of the main character, and some sense of the outcome of the story.
+        - content: "One line concept is a high-level definition of what the storyboard is trying to achieve."
+          isCorrect: true
+          explanation: Correct. One line concept is a high-level definition of what the storyboard is trying to achieve.
+        - content: "A glimpse of an application"
+          isCorrect: false
+          explanation: Incorrect. Prototypes give a high level understanding of an application.

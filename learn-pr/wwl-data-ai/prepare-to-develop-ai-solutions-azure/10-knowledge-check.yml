@@ -3,12 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 07/14/2022
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/10/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -31,7 +32,7 @@ quiz:
     - content: "Use Azure Machine Learning to publish the model as a web service."
       isCorrect: true
       explanation: "That's correct. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
-    - content: "Export the model as a cognitive service."
+    - content: "Export the model as an Azure AI service."
       isCorrect: false
       explanation: "That's incorrect. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
     - content: "You must build your application using the Azure Machine Learning designer."
@@ -39,12 +40,12 @@ quiz:
       explanation: "That's incorrect. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
   - content: "You want to index a collection of text documents, and search them from a mobile application. Which service should you use to create the index?"
     choices:
-    - content: "The Language cognitive service"
+    - content: "The Azure AI service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Cognitive Search"
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."
+    - content: "Azure AI Search"
       isCorrect: true
-      explanation: "That's correct. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Bot Service"
+      explanation: "That's correct. Use Azure AI Search to index documents for search."
+    - content: "Azure OpenAI Service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."

@@ -2,12 +2,11 @@
 uid: learn.aks-deployment-pipeline-github-actions.5-application-images
 metadata:
   title: Understand application images
-  description: Understand concepts about application images you use to deploy a cloud-native application by using GitHub Actions.
-  ms.date: 10/08/2020
+  description: Understand concepts about containerized application images and tags to deploy a cloud-native application by using GitHub Actions.
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.topic: unit
 title: Understand application images
 durationInMinutes: 3
 content: |
@@ -15,26 +14,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is a Docker image?"
+    - content: "What's a Docker image?"
       choices:
-        - content: "A zipped directory with code we can download and run on any platform or computer by using Docker."
+        - content: "A zipped directory with code you can download and run on any platform or computer by using Docker."
           isCorrect: false
-          explanation: "Application images are composed of more than just the application code."
-        - content: "A standalone, lightweight package that includes all that's needed to run the application in a container."
+          explanation: "Docker images are composed of more than just application code."
+        - content: "A standalone, lightweight package that includes all you need to build and run an application in a container."
           isCorrect: true
-          explanation: "Correct. An application image is the template that Docker uses to create its containers that hold your application."
-        - content: "A snapshot of our current working directory hosted in the cloud."
+          explanation: "An application image is the template that Docker uses to create containers that hold your application."
+        - content: "A snapshot of your current working directory hosted in the cloud."
           isCorrect: false
-          explanation: "Although an image contains libraries from the OS, an image isn't a snapshot of our computer."
+          explanation: "Although an image contains everything needed to build and run an application, it isn't a snapshot of the state of your computer."
 
-    - content: "What are the main advantages of using a Docker image?"
+    - content: "How can a CI/CD pipeline use image tags?"
       choices:
-        - content: "Despite being much heavier than standard VMs, Docker images are simpler and faster to deploy."
+        - content: "To identify different components of the application image."
           isCorrect: false
-          explanation: "Images are faster, that's correct. But, they're not heavier than a standard VM, because they don't contain the entire guest OS."
-        - content: "The only advantage is that images can be hosted by using container registers, so they're easier to download and run."
+          explanation: "The CI/CD pipeline uses tags placed on the overall image, not its components."
+        - content: "To give Container Registry access to the image."
           isCorrect: false
-          explanation: "Hosting outside the local machine is an advantage, but the option also is possible with standard VMs."
-        - content: "Images are smaller and much faster than a VM, and they don't contain useless OS data."
+          explanation: "Container Registry can use tags to store and retrieve particular images, but it doesn't use the tags for access."
+        - content: "To create and deploy different versions of application images that have the same name."
           isCorrect: true
-          explanation: "Correct. Docker images share libraries with each other through existing containers. They also don't include the entire operating system, which means they're smaller and faster to download and run than a VM."
+          explanation: "You can use tags to differentiate between multiple images that have the same name."

@@ -3,12 +3,13 @@ uid: learn.wwl.run-training-script-command-job-azure-machine-learning.convert-no
 title: Convert a notebook to a script
 metadata:
   title: Convert a notebook to a script
-  description: "Learn how to get your code production ready."
-  ms.date: 01/25/2023
+  description: Learn how to get your code production ready.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-convert-notebook-script.md)]

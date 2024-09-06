@@ -1,15 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.azure.optimize-government-operations
+title: Optimize government operations with Azure
 metadata:
   title: Optimize government operations with Azure
   description: Learn to develop a cloud computing digital transformation solution for the public sector. Use Azure, Azure Stack Hub, and Azure Stack Edge. Enforce data sovereignty, address custom compliance requirements, and apply all available protection to highly sensitive data.
   brand: azure
   ms.date: 04/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Optimize government operations with Azure
+  author: EliotSeattle
+  ms.author: eliotgra
+  ms.topic: learning-path
 summary: In this learning path, you’ll learn about the value that Azure can bring to governments as they transition their workloads to the cloud. Explore how Azure keeps to strong principles and commitments that give public sector customers confidence that their data is secure. And discover how Microsoft cloud and edge enforce data sovereignty, addresses custom compliance requirements, and apply maximum available protection to highly sensitive data.
 prerequisites: |
  - Familiarity with basic computing concepts and terminology.
@@ -25,7 +24,7 @@ products:
 - azure-stack-hub
 - azure-key-vault
 - azure-application-gateway
-- azure-active-directory
+- entra-id
 - azure-virtual-network
 - azure-expressroute
 - azure-storage

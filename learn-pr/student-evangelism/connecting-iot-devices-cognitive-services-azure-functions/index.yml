@@ -1,15 +1,16 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func
 metadata:
-  title: "Connecting IoT devices to Cognitive Services using Azure Functions"
-  description: "University of Oxford"
-  ms.date: 03/31/2020
+  title: "Connecting IoT devices to Azure AI services using Azure Functions"
+  description: Create and deploy an Azure function to make a language translation IoT device
+  ms.date: 07/10/2024
   author: leestott
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
-title: "Connecting IoT devices to Cognitive Services using Azure Functions"
+  ms.topic: module-standard-task-based
+  ms.custom: team=cloud_advocates
+  ms.service: azure-ai-services
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoin maintenance
+title: "Connecting IoT devices to Azure AI services using Azure Functions"
 summary: "Create and deploy an Azure function to make a language translation IoT device. The function will use Cognitive Speech Service. Your device will record a voice in a foreign language and convert the speech to a target language."
 abstract: |
     In this module, you will:
@@ -18,12 +19,12 @@ abstract: |
     - Deploy an Azure function app
     - Test your Azure function app with an IoT device 
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Familiarity with Azure
     - Basic understanding of IoT
     - Basic knowledge of Azure Functions
-    - Basic knowledge of Cognitive Services
+    - Basic knowledge of Azure AI services
     - A MXChip IoT DevKit board with a Micro-USB cable
     - A computer running Windows 10, macOS 10.10+ or Ubuntu 18.04+
     - An active Azure subscription
@@ -43,7 +44,7 @@ products:
 subjects:
 - iot
 - machine-learning
-- serverless-compute
+- serverless-computing
 units:
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service

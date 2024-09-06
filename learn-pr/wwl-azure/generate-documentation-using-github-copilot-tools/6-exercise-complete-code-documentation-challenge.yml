@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-documentation-using-github-copilot-tools.exercise-complete-code-documentation-challenge
+title: Exercise – Complete the "code documentation" challenge
+metadata:
+  title: Exercise – Complete the "code documentation" challenge
+  description: Exercise – Complete the code documentation challenge
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 07/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-complete-code-documentation-challenge.md)]

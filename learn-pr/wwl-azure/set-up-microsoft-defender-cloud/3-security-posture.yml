@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.security-posture
+title: Security posture
+metadata:
+  title: Security posture
+  description: "Security posture"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-security-posture.md)]

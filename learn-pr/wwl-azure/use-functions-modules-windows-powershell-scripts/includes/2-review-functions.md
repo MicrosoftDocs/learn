@@ -17,7 +17,7 @@ To call the function within a script, use the following syntax:
 Get-SecurityEvent -ComputerName LON-DC1
 ```
 
-In the previous example, the value for the *-Computer* parameter is passed to the `$Computer` variable in the function. **Get-EventLog** then queries the most recent 10 events from the security log of that computer and displays them on the screen. If you want those events placed in a variable and available for use in the remainder of the script, use the following syntax:
+In the previous example, the value for the *-Computer* parameter is passed to the `$ComputerName` variable in the function. **Get-EventLog** then queries the most recent 10 events from the security log of that computer and displays them on the screen. If you want those events placed in a variable and available for use in the remainder of the script, use the following syntax:
 
 ```powershell
 $securityEvents = Get-SecurityEvent -ComputerName LON-DC1

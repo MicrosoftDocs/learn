@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-sap-workloads
+title: Explore high availability of SAP workloads
+metadata:
+  title: Explore high availability of SAP workloads
+  description: "Explore high availability of SAP workloads"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explore-high-availability-sap-workloads.md)]

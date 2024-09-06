@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.large-language-model-deployment.try-model-exercise
+title: "Exercise: Try out your deployed model"
+metadata:
+  title: "Exercise: Try out your deployed model"
+  description: Practice trying out your deployed model in the Azure OpenAI completions playground.
+  ms.date: 12/04/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-try-model-exercise.md)]

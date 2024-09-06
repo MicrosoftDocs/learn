@@ -123,7 +123,7 @@ You can set up email notifications that will send you updates on threat analytic
 
 To set up email notifications for threat analytics reports, perform the following steps:
 
-1. Select Settings in the Microsoft 365 Defender sidebar. Select Microsoft 365 Defender from the list of settings.
+1. Select Settings in the Microsoft Defender XDR sidebar. Select Microsoft Defender XDR from the list of settings.
 
 2. Choose Email notifications > Threat analytics, and select the button, + Create a notification rule. A flyout will appear.
 

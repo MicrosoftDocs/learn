@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-arc-enabled-data-services.6-summary
 metadata:
   title: Summary
   description: This unit is the summary for the module.
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 3

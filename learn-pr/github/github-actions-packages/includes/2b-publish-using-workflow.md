@@ -18,8 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 12
       - run: npm ci
@@ -29,8 +29,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
@@ -44,7 +44,7 @@ First, the workflow file must exist in the `.github/workflows` directory. It's c
 
 The preceding workflow does a few things after a new release is created:
 
-1. A job named `build` runs `npm ci` (named after Continuous Integration) to install dependencies directly from the `package-lock.json` file, as well as the tests for the project.
+1. A job named `build` runs `npm ci` ("ci" for Continuous Integration) to install dependencies directly from the `package-lock.json` file, as well as the tests for the project.
 1. Once the `build` job succeeds, the job named `publish-gpr` publishes the package.
 1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an access token for authentication.
 

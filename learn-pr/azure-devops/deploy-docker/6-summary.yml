@@ -4,12 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 03/16/2023
+  ms.date: 12/05/2023
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

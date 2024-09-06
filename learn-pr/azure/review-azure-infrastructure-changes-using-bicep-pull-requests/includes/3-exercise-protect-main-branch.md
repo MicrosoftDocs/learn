@@ -90,7 +90,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it.
 
-1. Select **Code**, and then select the copy icon.
+1. Select **Code**, and then select the **Copy** icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 

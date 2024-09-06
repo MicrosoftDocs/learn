@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.introduction-to-accessibility.what-is-disability
+title: What is disability?
+metadata:
+  title: What is disability?
+  description: This content is a part of the 'Introduction to accessibility' module.
+  ms.date: 04/10/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-disability.md)]

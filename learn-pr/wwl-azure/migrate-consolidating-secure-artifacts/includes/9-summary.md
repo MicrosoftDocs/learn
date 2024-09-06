@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Azure Artifacts overview](/azure/devops/artifacts/start-using-azure-artifacts).
- -  [Azure Artifacts: best practices](/azure/devops/artifacts/concepts/best-practices).
- -  [Configure permissions](/azure/devops/artifacts/feeds/feed-permissions).
+ -  [Azure Artifacts overview - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/start-using-azure-artifacts).
+ -  [Best practices when working with Azure Artifacts - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/concepts/best-practices).
+ -  [Set up permissions - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/feeds/feed-permissions).

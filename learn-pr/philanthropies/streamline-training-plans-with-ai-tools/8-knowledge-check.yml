@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.streamline-training-plans-with-ai-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the Streamline training plans with AI tools module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/07/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5 
+content: |
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "How can AI tools help in improving the quality of writing in training plans?"
+      choices:
+        - content: "By providing real-time support for applications like Microsoft Word."
+          isCorrect: true
+          explanation: "Correct. With AI integrated into writing applications like Microsoft Word, real-time support is available while writing training plans, optimizing the writing context, and offering suggestions for wording and formatting."
+        - content: "By writing the training plans based on a topic."
+          isCorrect: false
+          explanation: "Incorrect. While AI can help writing, it doesn't write the entire training plan. The trainer retains full authority over the materials."
+        - content: "By printing the training plans so they're ready for the trainer to use."
+          isCorrect: false
+          explanation: "Incorrect. Printing is a function of a printer, not an AI tool. AI tools can help the creation and editing of the training plan, but they don't physically print the document."
+    - content: "What is one way AI supports the creation of training content?"
+      choices:
+        - content: "By creating learning aids."
+          isCorrect: true
+          explanation: "Correct. AI tools can generate ideas that complement trainers’ expertise, offering suggestions and recommendations aligned with training goals and creating personalized learning materials."
+        - content: "By grading the assessments completed by the learners."
+          isCorrect: false
+          explanation: "Incorrect. While AI can help grading, the question specifically asks about content creation, which grading doesn't fall under."
+        - content: "By attending the classes on behalf of the trainer."
+          isCorrect: false
+          explanation: "Incorrect. AI tools can't attend classes on behalf of the trainer. They're designed to assist the trainer in various tasks, not to replace them."
+    - content: "How can AI tools enhance the scheduling of meetings in a remote training environment?"
+      choices:
+        - content: "By manually checking each participant’s calendar."
+          isCorrect: false
+          explanation: "Incorrect. AI tools automate the scheduling process, they don't perform it manually."
+        - content: "By automatically scheduling meetings based on the invitees’ calendars and availability."
+          isCorrect: true
+          explanation: "Correct. AI tools can automate the scheduling of meetings based on the invitees’ calendars and availability."
+        - content: "By randomly selecting a time based on participants' time zones."
+          isCorrect: false
+          explanation: "Incorrect. AI tools schedule meetings based on the invitees’ calendars and availability, not randomly."
+  
+
+ 

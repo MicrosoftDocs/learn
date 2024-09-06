@@ -6,9 +6,8 @@ metadata:
   description: This unit talks about the effects of poor communication and then shows how effective communication can be adopted in a team.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 content: |

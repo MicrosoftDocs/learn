@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.python-install-vscode
 metadata:
-  title: Get started with Python in Visual Studio Code
-  description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
+  title: Install and configure Visual Studio Code for Python development
+  description: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
   ms.date: 01/09/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: vs-code
   ms.custom: team=nextgen, devdivchpfy22, engagement-fy23
-title: Get started with Python in Visual Studio Code
-summary: Get started with learning Python by installing and configuring the
-  tools you'll need to build real applications.
+  ms.devlang: python
+title: Install and configure Visual Studio Code for Python development
+summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
 abstract: |
   By the end of this module, you'll be able to:
   - Install Python 3, if needed.
   - Install and configure Visual Studio Code and extensions on your computer.
   - Create a Python file.
-  - Write and run Python code in Visual Studio Code.
+  - Write and run simple Python code in Visual Studio Code.
 prerequisites: |
   - Ability to install programs locally.
   - Basic familiarity with programming concepts.
@@ -30,8 +30,6 @@ roles:
   - student
 products:
   - vs-code
-subjects:
-- development-tools
 units:
   - learn.languages.python-install-vscode.introduction
   - learn.languages.python-install-vscode.python-programming-language

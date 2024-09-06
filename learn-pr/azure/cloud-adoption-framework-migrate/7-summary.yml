@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-migrate.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/03/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

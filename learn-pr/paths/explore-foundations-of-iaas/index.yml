@@ -3,15 +3,15 @@ uid: learn.wwl.explore-foundations-of-iaas
 metadata:
   title: Explore the foundations of IaaS for SAP on Azure
   description: Explore the foundations of IaaS for SAP on Azure
-  ms.date: 11/09/2021
+  ms.date: 07/29/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Explore the foundations of IaaS for SAP on Azure
-prerequisites: ""
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
 summary: |
-  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID. These modules will provide the basis for running SAP workloads in Azure.
 iconUrl: /training/achievements/explore-the-foundations-of-iaas.svg
 levels:
 - advanced
@@ -27,5 +27,6 @@ modules:
 - learn.wwl.explore-azure-networking
 - learn.wwl.explore-azure-storage
 - learn.wwl.explore-azure-databases
+- learn.wwl.explore-azure-networking-sap-rise
 trophy:
   uid: learn.wwl.explore-foundations-of-iaas.trophy

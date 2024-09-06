@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deployment-pipeline-github-actions.10-exercise-deploy-workflow
 metadata:
-  title: Create the deployment pipeline
+  title: Exercise - Create the Deployment Pipeline
   description: Put all the concepts together to successfully create and run a build and deployment pipeline with GitHub Actions
-  ms.date: 10/08/2020
+  ms.date: 01/08/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: github
-title: Create the deployment pipeline
+  ms.topic: unit
+title: Exercise - Create the deployment pipeline
 durationInMinutes: 10
 content: |
   [!include[](includes/10-exercise-deploy-workflow.md)]

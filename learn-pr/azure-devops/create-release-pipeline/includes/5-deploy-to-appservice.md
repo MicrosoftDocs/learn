@@ -1,4 +1,4 @@
-In this module, you will create a multistage pipeline to build and deploy your application to Azure App Service. You will learn how to:
+In this module, you create a multistage pipeline to build and deploy your application to Azure App Service. You learn how to:
 
 > [!div class="checklist"]
 > * Create an App Service instance to host your web application.
@@ -11,7 +11,7 @@ In this module, you will create a multistage pipeline to build and deploy your a
 
 1. Select **App Services** from the left pane.
 
-1. Select **Create** to create a new Web App.
+1. Select **Create** > **Web App** to create a new Web App.
 
 1. On the **Basics** tab, enter the following values.
 
@@ -21,16 +21,16 @@ In this module, you will create a multistage pipeline to build and deploy your a
     | Subscription | *your subscription* |
     | Resource Group | Select **Create new**, and then enter *tailspin-space-game-rg*, and select **OK**. |
     | **Instance Details** |
-    | Name | Provide a unique name, such as *tailspin-space-game-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
+    | Name | Provide a unique name, such as *tailspin-space-game-web-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
     | Publish  | Code |
-    | Runtime stack | .NET 6 |
+    | Runtime stack | .NET 6 (LTS) |
     | Operating System | Linux |
     | Region | Select a region, preferably one close to you.|
     | **Pricing plans** |
     | Linux Plan | Accept the default.                                                                       |
-    | Pricing plan | Select the dropdown menu, and then select the **Basic B1** pricing tier. |
+    | Pricing plan | Select the **Basic B1** pricing tier from the drop-down menu. |
 
-1. Select **Review + create**, review the form and then select **Create**. The deployment takes a few moments to complete.
+1. Select **Review + create**, review the form, and then select **Create**. The deployment takes a few moments to complete.
 
 1. When deployment is complete, select **Go to resource**. The **App Service** Essentials displays details related to your deployment.
 
@@ -69,13 +69,13 @@ In this module, you will create a multistage pipeline to build and deploy your a
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **Save** when you are done.
+1. Select **Save**.
 
 ## Add the Build stage to your pipeline
 
-A *multistage pipeline* enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
+A *multistage pipeline* allows you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this section, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
 
-To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration, and then you add one or more `stage` section for each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
+To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration, and then you add one or more `stage` sections for each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code:
 
@@ -113,7 +113,7 @@ An *environment* is an abstract representation of your deployment environment. E
 
 ## Store your web app name in a pipeline variable
 
-The *Deploy* stage that we will be creating will use the name to identify which App Service instance to deploy to e.g: *tailspin-space-game-web-1234*.
+The *Deploy* stage that we're creating uses the name to identify which App Service instance to deploy to e.g: *tailspin-space-game-web-1234*.
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
@@ -127,21 +127,21 @@ Although you could hard-code this name in your pipeline configuration, defining 
 
 1. Select **Add** under **Variables** to add a new variable.
 
-1. Enter *WebAppName* for the variable name and your App Service instance's name for its value: e.g. *tailspin-space-game-web-1234*.
+1. Enter *WebAppName* for the variable name and your App Service instance's name for its value: for example, *tailspin-space-game-web-1234*.
 
-1. Select **Save** when you are done.
+1. Select **Save**.
 
 ## Add the deployment stage to your pipeline
 
-We will extend our pipeline by adding a deployment stage to deploy the *Space Game* to App Service using the `download` and `AzureWebApp@1` tasks to download the build artifact and then deploy it.
+We extend our pipeline by adding a deployment stage to deploy the *Space Game* to App Service using the `download` and `AzureWebApp@1` tasks to download the build artifact and then deploy it.
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with the following yaml:
 
     [!code-yml[](code/5-azure-pipelines-2.yml?highlight=68-89)]
 
-    Notice the highlighted section and how we are using the `download` and `AzureWebApp@1` tasks. The pipeline will fetch the `$(WebAppName)` from the variable group we created earlier.
+    Notice the highlighted section and how we're using the `download` and `AzureWebApp@1` tasks. The pipeline fetches the `$(WebAppName)` from the variable group we created earlier.
 
-    Also notice how we are using `environment` to deploy to the **dev** environment.
+    Also notice how we're using `environment` to deploy to the **dev** environment.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Then commit the change and push it up to GitHub.
 
@@ -159,12 +159,12 @@ We will extend our pipeline by adding a deployment stage to deploy the *Space Ga
 
 ## View the deployed website on App Service
 
-1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: e.g. *`https://tailspin-space-game-web-1234.azurewebsites.net`*
+1. If you still have your App Service tab open, refresh the page. Otherwise, navigate to your Azure App Service in the Azure portal and select the instance's **URL**: for example, *`https://tailspin-space-game-web-1234.azurewebsites.net`*
 
     :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details.":::
 
-1. The *Space Game* website has been successfully deployed to Azure App Service.
+1. The *Space Game* website is successfully deployed to Azure App Service.
 
     :::image type="content" source="../media/5-deployed-website.png" alt-text="Screenshot of web browser showing the Space Game website.":::
 
-Congratulations! You've successfully deployed the *Space Game* website to Azure App Service by using Azure Pipelines.
+Congratulations! You successfully deployed the *Space Game* website to Azure App Service by using Azure Pipelines.

@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.github.introduction-prompt-engineering-with-github-copilot
+title: Introduction to prompt engineering with GitHub Copilot
+metadata:
+  title: Introduction to prompt engineering with GitHub Copilot
+  description: This module highlights the basic core principles of prompt engineering and explains the best practices to create prompts quickly and effectively in GitHub Copilot. Learn the strategies that transform comments into precise code, identify the steps within GitHub Copilot's prompt processing flow, and gain an understanding of the important role that Large Language Models (LLMs) play in enhancing suggestion quality.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 11/10/2023
+  ms.service: github-copilot
+  ms.topic: module-intro-to-product
+  ms.collection:
+    - ce-skilling-ai-copilot
+    - github-ai-copilot
+summary: >
+  Discover the essentials of creating effective prompts with GitHub Copilot. Uncover techniques to transform your coding comments into precise, actionable code, enhancing your development workflow. 
+abstract: |
+  By the end of this module, you'll be able to:
+  - Craft effective prompts that optimize GitHub Copilot's performance, ensuring precision and relevance in every code suggestion.
+  - Understand the intricate relationship between prompts and Copilot's responses, and utilize best practices in prompt engineering.
+  - Gain insights into the underlying mechanism of how GitHub Copilot handles user prompts, from secure transmission to content filtering and context analysis.
+prerequisites: |
+  - Basic coding knowledge.
+  - GitHub Copilot Access: To use it, you can install the GitHub Copilot extension available to you in the following Integrated Development Environments (IDEs):
+    -	Visual Studio
+    - Visual Studio Code
+    - Neovim
+    - JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+  - A GitHub account to connect your code editor to Copilot.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - developer
+  - devops-engineer
+  - student
+products:
+  - github
+subjects:
+  - collaboration
+  - productivity 
+  - artificial-intelligence
+units:
+  - learn.github.introduction-prompt-engineering-with-github-copilot.introduction
+  - learn.github.introduction-prompt-engineering-with-github-copilot.prompt-engineering-foundations-best-practices
+  - learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-user-prompt-process-flow
+  - learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-large-language-models
+  - learn.github.introduction-prompt-engineering-with-github-copilot.knowledge-check
+  - learn.github.introduction-prompt-engineering-with-github-copilot.summary
+badge:
+  uid: learn.github.introduction-prompt-engineering-with-github-copilot.badge

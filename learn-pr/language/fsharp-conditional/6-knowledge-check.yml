@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 07/23/2021
+  ms.date: 11/23/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: Choose the best response for each question. Then, select **Check your answers**.

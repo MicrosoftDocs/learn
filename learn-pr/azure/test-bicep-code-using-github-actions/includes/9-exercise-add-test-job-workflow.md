@@ -1,4 +1,4 @@
-Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you configure your workflow to run a smoke test that checks the security team's requirement.
+Your toy company's security team wants you to verify that your website is accessible only through HTTPS. In this exercise, you configure your workflow to run a smoke test that checks the security team's requirement.
 
 During the process, you'll do the following tasks:
 
@@ -17,14 +17,14 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    :::image type="content" source="../media/9-visual-studio-code-website-tests-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the deploy folder and the test file shown.":::
 
-1. Paste the following test code into the file:
+1. Copy and paste the following test code into the file:
 
    :::code language="powershell" source="code/9-test.ps1" :::
 
    The result is a Pester test file. It requires a parameter named `$HostName`. It runs two tests against the host name:
 
-   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
-   - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
+   - Tries to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
+   - Tries to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
    For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We provide links in the summary so you can learn more if you're interested.
 
@@ -63,7 +63,7 @@ Now, you can add a smoke test job that runs your tests.
 
    :::code language="yaml" source="code/9-workflow.yml" highlight="69-70, 80, 89-102" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If your file looks different, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -81,7 +81,7 @@ Now, you can add a smoke test job that runs your tests.
 
    Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
+1. Select the **Review deployments** button, select the **Website** environment, then select **Approve and deploy**.
 
    Wait for the workflow run to finish.
 
@@ -95,11 +95,11 @@ Now, you can add a smoke test job that runs your tests.
 
    :::image type="content" source="../media/9-workflow-run-test-results.png" alt-text="Screenshot of the GitHub interface that shows the workflow run's test results, with the failed test highlighted.":::
 
-   This text indicates that the website hasn't been correctly configured to meet your security team's requirement.
+   This text indicates that the website wasn't correctly configured to meet your security team's requirement.
 
 ## Update the Bicep file
 
-Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
+Now that you identified that your Bicep definition doesn't meet your security team's requirement, you can fix it.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
@@ -127,13 +127,13 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Select the **preview** job, and review the what-if results again.
 
-   Notice that the what-if command has detected the change in the `httpsOnly` property's value:
+   Notice that the what-if command detected the change in the `httpsOnly` property's value:
 
    :::code language="plaintext" source="code/9-what-if-output.txt" highlight="25" :::
 
 1. Go back to the workflow run.
 
-1. Select the **Review deployments** button, select the **Website** environment and select **Approve and deploy**.
+1. Select the **Review deployments** button, select the **Website** environment, then select **Approve and deploy**.
 
    Wait for the workflow run to finish.
 
@@ -143,7 +143,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 ## Clean up the resources
 
-Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+After you complete the exercise, you can remove the resources so you aren't billed for them.
 
 In the Visual Studio Code terminal, run the following command:
 

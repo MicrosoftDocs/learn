@@ -4,17 +4,15 @@ title: Manage certificate revocation
 metadata:
   title: Manage certificate revocation
   description: "Manage certificate revocation"
-  ms.date: 08/04/2021
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
+  ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/5-manage-certificate-revocation.md)]
 quiz:
-  title: "Quick review"
+  title: "Check your knowledge"
   questions:
   - content: "What is required to publish a CRL to a file share by using the Certification Authority console?"
     choices:

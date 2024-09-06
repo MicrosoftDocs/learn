@@ -3,12 +3,14 @@ uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.manage-workspace-a
 title: Manage workspace assets with CLI (v2)
 metadata:
   title: Manage workspace assets with CLI (v2)
-  description: "Manage workspace assets with CLI (v2)"
-  ms.date: 03/02/2023
+  description: Manage workspace assets with CLI (v2)
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

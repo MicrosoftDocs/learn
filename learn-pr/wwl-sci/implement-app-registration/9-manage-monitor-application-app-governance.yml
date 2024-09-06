@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-app-registration.manage-monitor-application-app-governance
-title: Manage and monitor application with App governance
+title: Manage and monitor application by using app governance
 metadata:
-  title: Manage and monitor application with App governance
-  description: "Manage and monitor application with App governance"
-  ms.date: 04/03/2023
+  title: Manage and monitor application by using app governance
+  description: "Manage and monitor application by using app governance"
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/9-manage-monitor-application-app-governance.md)]

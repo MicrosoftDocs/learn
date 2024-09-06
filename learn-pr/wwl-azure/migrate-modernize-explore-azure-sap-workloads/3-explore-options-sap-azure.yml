@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads.explore-options-sap-azure
+title: Explore your options with SAP on Azure
+metadata:
+  title: Explore your options with SAP on Azure
+  description: "Explore your options with SAP on Azure"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-options-sap-azure.md)]

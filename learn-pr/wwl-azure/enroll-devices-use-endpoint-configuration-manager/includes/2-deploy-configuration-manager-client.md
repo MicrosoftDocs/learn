@@ -1,4 +1,3 @@
-
 The Configuration Manager client installation on a Windows computer allows not only the site to manage the device, but ultimately allows both the IT administrator and the end user to benefit from what it can provide.
 
 #### Benefits of the Configuration Manager client
@@ -15,7 +14,7 @@ To successfully manage a Windows computer using Configuration Manager, you can d
  -  **Manual deployment**: This method usually involves the manual deployment of client installation source files accompanied by a script file containing the install parameters. The installation of the agent is typically executed from the ccmsetup.exe file, however it's also possible to install the client from the MSI that is part of the client files. When installed using either option, there are various client installation parameters that dictate how the client will be installed. These parameters make up part of the scripted install. While the manual scripted install achieves the desired results, when not used through an automation tool, this process can be somewhat time consuming as a delivery mechanism. Below shows an example of a CCM Setup command line.
     
     ```cmd
-    Ccmsetup.exe  SMSSITECODE=AUTO /noservice /skipprereq:Silverlight.exe CCMLOGMAXSIZE=10000 CCMLOGMAXHISTORY=2
+    Ccmsetup.exe  SMSSITECODE=AUTO CCMLOGMAXSIZE=10000 CCMLOGMAXHISTORY=2
     ```
 
  -  **OS deployment**. This method is one of the most common ways to deliver the client. When installing and setting up Windows using a task sequence, you can slip-stream the Configuration Manager client into the Windows setup and provide it with the necessary installation parameters. To use this method, the client must be installed when a device is built for the first time (or rebuilt), therefore it isn't appropriate for existing devices.

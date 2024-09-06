@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-monitoring-requirements-azure-for-sap-workloads
+title: Explore the monitoring requirements of Azure for SAP workloads
+metadata:
+  title: Explore the monitoring requirements of Azure for SAP workloads
+  description: "Explore the monitoring requirements of Azure for SAP workloads"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-monitoring-requirements-azure-for-sap-workloads.md)]

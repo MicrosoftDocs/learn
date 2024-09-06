@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.date: 09/19/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What type of data does Data Wrangler currently support?
+    choices:
+    - content: Only Pandas DataFrames.
+      isCorrect: false
+      explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
+    - content: Only Spark DataFrames.
+      isCorrect: false
+      explanation: Incorrect. Data Wrangler supports Pandas DataFrames and Spark DataFrames.
+    - content: Both Pandas and Spark DataFrames.
+      isCorrect: true
+      explanation: Correct. Both Pandas and Spark DataFrames are supported.
+  - content: How can you launch Data Wrangler from a Microsoft Fabric notebook?
+    choices:
+    - content: By selecting the DataFrame you wish to open in Data Wrangler from the "Data" tab under the notebook ribbon.
+      isCorrect: true
+      explanation: Correct. Users can launch Data Wrangler directly from a Microsoft Fabric notebook to explore and transform any Pandas DataFrame.
+    - content: By right-clicking on the DataFrame and selecting "Open in Data Wrangler".
+      isCorrect: false
+      explanation: Incorrect. The correct way to launch Data Wrangler from a notebook is by using the "Data" tab under the notebook ribbon.
+    - content: By double-clicking on the DataFrame.
+      isCorrect: false
+      explanation: Incorrect. Double-clicking on the DataFrame won't launch Data Wrangler.
+  - content: What is the purpose of one-hot encoding in machine learning?
+    choices:
+    - content: To handle missing values in the dataset.
+      isCorrect: false
+      explanation: Incorrect. One-hot encoding doesn't handle missing values. It's used for converting categorical data.
+    - content: To convert categorical data into a format that can be provided to machine learning algorithms to improve prediction accuracy.
+      isCorrect: true
+      explanation: Correct. One-hot encoding is a process of converting categorical data variables so they can be provided to machine learning algorithms to improve prediction accuracy.
+    - content: To increase the dimensionality of the dataset.
+      isCorrect: false
+      explanation: Incorrect. While one-hot encoding does increase the dimensionality of the dataset, its primary purpose is to convert categorical data for machine learning algorithms. Increasing dimensionality is a side effect and can sometimes lead to the curse of dimensionality.

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/06/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Tailwind Traders has a subscription that contains multiple Log Analytics workspaces across multiple resource groups. The administrator needs to assign the Log Analytics Reader role to a new user. Which scope should the role assignment be configured to allow the user access to all the Log Analytics workspaces in a specific resource group?"
+    choices:
+    - content: "Subscription"
+      isCorrect: false
+      explanation: "Incorrect. Subscription scope allows access to all workspaces in the subscription."
+    - content: "Resource group"
+      isCorrect: true
+      explanation: "Correct. Resource group scope allows access to all workspaces in a particular resource group."
+    - content: "Resource"
+      isCorrect: false
+      explanation: "Incorrect. Resource scope allows access only to the specified workspace."
+  - content: "Tailwind Traders needs to collect information about all HTTP requests and responses that occur on their web server. An IT staff member decides to create a data collection rule that collects this information from virtual machines that are monitored with Azure Monitor Agent. When configuring the data collection rule, which data source should the staff member specify?"
+    choices:
+    - content: "Performance counters"
+      isCorrect: false
+      explanation: "Incorrect. Performance counters are a type of metric used to measure the performance of hardware, software and networks. Performance counters can help you identify performance bottlenecks and fine-tune performance of your system."
+    - content: "Windows event logs"
+      isCorrect: false
+      explanation: "Incorrect. Windows event logs collect various types of data related to the system, security, and application events that occur on a Windows operating system."
+    - content: "IIS logs"
+      isCorrect: true
+      explanation: "Correct. IIS logs contain information on each request made to the server, such as the request's date and time, the client IP address, the user's username, the HTTP status code provided by the web server as a result of the request, and more."
+  - content: "Tailwind Traders needs to set up an Azure Resource Health alert that notifies them of any changes in the health status of any resources due to a restart or a shutdown. Which type of alert should be used?"
+    choices:
+    - content: "Activity log alert"
+      isCorrect: true
+      explanation: "Correct. Activity log alerts are triggered when a new activity log event occurs that matches defined conditions."
+    - content: "Metric alert"
+      isCorrect: false
+      explanation: "Incorrect. Metric alerts are used to evaluate resource metrics at regular intervals."
+    - content: "Log alert"
+      isCorrect: false
+      explanation: "Incorrect. Log alerts are used to monitor resource logs at a set frequency. If an alert is triggered you can perform advanced logic operations on your data."

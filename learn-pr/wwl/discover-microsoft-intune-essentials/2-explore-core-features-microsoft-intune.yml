@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.explore-core-features-microsoft-intune
+title: Explore core features of Microsoft Intune
+metadata:
+  title: Explore core features of Microsoft Intune
+  description: "Explore core features of Microsoft Intune"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-core-features-microsoft-intune.md)]

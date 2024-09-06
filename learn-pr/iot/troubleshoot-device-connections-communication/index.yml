@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-device-connections-communication
+metadata:
+  title: Troubleshoot Azure IoT Hub device connections and communication
+  description: "This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections."
+  ms.date: 12/06/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Troubleshoot Azure IoT Hub device connections and communication
+summary: This module introduces you to troubleshooting device connection and communications issues, and it examines best practice approaches and troubleshooting guidelines that apply to device connections.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe device reconnection management.
+  - Describe device disconnect troubleshooting using Azure Monitor and Event Grid.
+  - Describe the device communication troubleshooting guide.
+  - Describe message routing troubleshooting.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+iconUrl: /training/achievements/device-connection-communication.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.troubleshoot-device-connections-communication.introduction
+- learn.wwl.troubleshoot-device-connections-communication.examine-device-reconnection-management
+- learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-disconnects
+- learn.wwl.troubleshoot-device-connections-communication.examine-device-communications-troubleshooting-guide
+- learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-message-routing
+- learn.wwl.troubleshoot-device-connections-communication.knowledge-check
+- learn.wwl.troubleshoot-device-connections-communication.summary
+badge:
+  uid: learn.wwl.troubleshoot-device-connections-communication.badge

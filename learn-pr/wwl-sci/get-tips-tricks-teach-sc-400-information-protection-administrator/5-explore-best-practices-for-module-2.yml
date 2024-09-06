@@ -4,12 +4,10 @@ title: Explore best practices for module 2
 metadata:
   title: Explore best practices for module 2
   description: "Explore best practices for module 2"
-  ms.date: 04/11/2023
+  ms.date: 11/17/2023
   author: wwlpublish
-  ms.author: Trinity Sheppard
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-  ms.service: azure
+  ms.author: tsheppard
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/5-explore-best-practices-for-module-2.md)]

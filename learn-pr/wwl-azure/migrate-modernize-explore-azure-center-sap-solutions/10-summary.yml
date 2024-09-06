@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary - Azure Center for SAP solutions (ACSS) is an end-to-end solution that enables you to create and run SAP systems as a unified workload on Azure."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/01/2022
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Azure Kubernetes Service (AKS) application and cluster scalability
 summary: |
   In this learning path, you'll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes drive how your cluster scales to meet workload needs.
@@ -31,7 +30,6 @@ roles:
 products:
 - azure
 subjects:
-- development-tools
 - cloud-computing
 modules:
 - learn.aks-application-autoscaling-native

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-responsible-ai-principles.use-the-transparency-principle
+title: Use the transparency principle
+metadata:
+  title: Use the transparency principle
+  description: This content is a part of the 'Apply responsible AI principles in learning environments' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/25/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-use-the-transparency-principle.md)]

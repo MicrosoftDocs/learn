@@ -1,10 +1,10 @@
-You're now ready to start implementing the design to deploy a highly available application. To test the application, you'll download and install Fiddler.
+You're now ready to start implementing the design to deploy a highly available application. To test the application, download and install Fiddler.
 
 Recall that your application needs to automatically fail over and use the storage accounts at the secondary location if there's a failure connecting to the primary region that holds your data in Azure storage. The circuit breaker forces the application to behave in this manner. When the primary location is back online, the circuit breaker reroutes the application back to the primary region.
 
 Before you commit to full-blown development of the healthcare application, you want to test this approach by using a sample application with dummy data.
 
-In this exercise, you'll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. When a problem is detected, the application switches to the secondary storage account, and it fails back to the primary location when it's available again. The application uploads a file to Blob storage and then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but it returns to the secondary location if the primary location is still unavailable.
+In this exercise, you run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. When a problem is detected, the application switches to the secondary storage account, and it fails back to the primary location when it's available again. The application uploads a file to Blob storage and then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but it returns to the secondary location if the primary location is still unavailable.
 
 ![Diagram of a scenario for configuring failover.](../media/5-exercise-failover-visual.png)
 
@@ -12,7 +12,7 @@ In this exercise, you'll run an application that shows how you can use the Circu
 
 Fiddler is a third-party tool that's used to help debug applications, particularly web applications. It captures network traffic between computers and, based on the result, uses its event-based scripting subsystem to halt connections.
 
-In this unit, you'll use Fiddler Classic to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
+In this unit, you use Fiddler Classic to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you can see the traffic being directed to the various storage account endpoints.
 
 If you don't have Fiddler Classic installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/download/fiddler?azure-portal=true).
 
@@ -21,7 +21,7 @@ If you don't have Fiddler Classic installed already, download and install it fro
 
 ## Install Visual Studio and download the sample code
 
-The application code runs locally on your desktop. You'll need Visual Studio to build the application.
+The application code runs locally on your desktop. You need Visual Studio to build the application.
 
 1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/?azure-portal=true).
 
@@ -31,6 +31,9 @@ The application code runs locally on your desktop. You'll need Visual Studio to 
     git clone https://github.com/MicrosoftDocs/mslearn-ha-application-storage-with-grs <folder>
     ```
 
+    > [!NOTE]
+    > This sample repository uses .NET 3.1. If you need to use a more recent framework version, such as .NET 6.0, open the **circuitbreaker.csproj** file. Change the target framework line under `<PropertyGroup>` to `<TargetFramework>netcoreapp6.0</TargetFramework>`.
+
 ## Configure Fiddler
 
 1. Start Fiddler.
@@ -39,7 +42,7 @@ The application code runs locally on your desktop. You'll need Visual Studio to 
 
 1. In the **Options** pane, select the **HTTPS** tab.
 
-1. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, and then close and restart Fiddler.
+1. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install more certificates from Fiddler, accept them, and then close and restart Fiddler.
 
     :::image type="content" source="../media/5-fiddler-options.png" alt-text="Screenshot of the Fiddler HTTPS configuration tab in the Options dialog box." loc-scope="third-party"::: <!--Fiddler, no-loc -->
 
@@ -187,7 +190,7 @@ The application code runs locally on your desktop. You'll need Visual Studio to 
     }
     ```
 
-    This block implements part of the Circuit Breaker pattern. The `OperationContext` object provides events that you can use to retry a failed request. A *Retrying* event occurs when a request fails and is being retried, and a *RequestCompleted* event is raised when the request has finished (either successfully or with a failure). The `DownloadToFileAsync` method downloads the blob data from storage, and it also takes the `OperationContext` object as a parameter. If the download fails, the operation runs the `OperationContextRetrying` method. When the download is completed, it runs the `OperationContextRequestCompleted` method.
+    This block implements part of the Circuit Breaker pattern. The `OperationContext` object provides events that you can use to retry a failed request. A *Retrying* event occurs when a request fails and is being retried. A *RequestCompleted* event is raised when the request has finished, either successfully or with a failure. The `DownloadToFileAsync` method downloads the blob data from storage, and it also takes the `OperationContext` object as a parameter. If the download fails, the operation runs the `OperationContextRetrying` method. When the download is completed, it runs the `OperationContextRequestCompleted` method.
 
 1. Scroll down to the **OperationContextRetrying** method:
 
@@ -278,7 +281,7 @@ The application code runs locally on your desktop. You'll need Visual Studio to 
 
 1. Return to your application, and press any key to continue running it.
 
-   Fiddler displays the HTTP 503 errors that are being generated against the primary location. The application window displays the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from it instead. You'll see messages with the "S" prefix (for secondary) rather than "P" (for primary). After the circuit breaker reads from the secondary account for a short period, it attempts to switch back to the primary location. This fails, so the circuit breaker reverts to the secondary location for another period. This process continues until the primary location becomes available again, as shown in the following image:
+   Fiddler displays the HTTP 503 errors that are being generated against the primary location. The application window displays the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from it instead. You see messages with the *S* prefix for secondary rather than *P* for primary. After the circuit breaker reads from the secondary account for a short period, it attempts to switch back to the primary location. This attempt fails, so the circuit breaker reverts to the secondary location for another period. This process continues until the primary location becomes available again, as shown in the following image:
 
    :::image type="content" source="../media/5-app-switch.png" alt-text="Screenshot of the output from the sample application, showing the switch from the primary account to the secondary account." loc-scope="other"::: <!-- no-loc -->
 
@@ -294,7 +297,7 @@ The application code runs locally on your desktop. You'll need Visual Studio to 
 
 1. In the **Options** pane, select the **HTTPS** tab.
 
-1. On the **HTTPS** tab, select **Actions**, then select **Reset All Certificates**. Allow Fiddler to remove its certificates from the Trusted Root List and the Root Store. This action removes the HTTPS inspection certificate that was installed by Fiddler earlier.
+1. On the **HTTPS** tab, select **Actions**, then select **Reset All Certificates**. Allow Fiddler to remove its certificates from the Trusted Root List and the Root Store. This action removes the HTTPS inspection certificate that Fiddler installed earlier.
 
 1. Select **OK**, then close Fiddler.
 

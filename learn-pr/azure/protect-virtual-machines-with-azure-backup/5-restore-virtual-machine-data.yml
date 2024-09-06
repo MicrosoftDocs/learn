@@ -3,11 +3,10 @@ uid: learn.protect-virtual-machines-with-azure-backup.5-restore-virtual-machine-
 metadata:
   title: Restore virtual machine data
   description: Learn about the different options for restoring an Azure VM from a previous backup.
-  ms.date: 08/27/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/10/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Restore virtual machine data
 durationInMinutes: 5
 content: |

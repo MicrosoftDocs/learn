@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-model-managed-online-endpoint.deploy-your-mlflow-model-man
 title: Deploy your MLflow model to a managed online endpoint
 metadata:
   title: Deploy your MLflow model to a managed online endpoint
-  description: "Deploy your MLflow model to a managed online endpoint"
-  ms.date: 11/17/2022
+  description: Deploy your MLflow model to a managed online endpoint
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-deploy-your-mlflow-model-managed-online-endpoint.md)]

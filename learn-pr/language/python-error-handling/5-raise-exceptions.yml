@@ -5,12 +5,13 @@ metadata:
   unitType: learning-content
   title: Raise exceptions
   description: "Useful programs can raise exceptions to signal an error condition. Use exceptions to exit early out of problems in code."
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-raise-exceptions.md)]

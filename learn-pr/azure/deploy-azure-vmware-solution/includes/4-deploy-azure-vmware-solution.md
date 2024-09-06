@@ -1,4 +1,4 @@
-The Azure VMware Solution environment can be built after all planning steps are complete. Azure VMware Solution will give your company the ability to deploy a vSphere cluster in Azure. Azure VMware Solution also provides an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning units to successfully deploy Azure VMware Solution.
+You can build the Azure VMware Solution environment after all planning steps are complete. Azure VMware Solution gives your company the ability to deploy a vSphere cluster in Azure. Azure VMware Solution also provides an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning units to successfully deploy Azure VMware Solution.
 
 ## Register the resource provider
 
@@ -33,8 +33,8 @@ To register the resource provider by using PowerShell:
 To register the resource provider by using the Azure portal:
 
 1. Search for **Subscriptions**.
-1. Select the subscription you want to register the provider for.
-1. Select **Resource providers** and enter **Microsoft.Azure VMware Solution** in the search bar. If the resource provider isn't registered, select **Register**.
+1. Select the subscription for which you want to register the provider.
+1. Select **Resource providers** and enter **Microsoft.AVS** in the search bar. If the resource provider isn't registered, select **Register**.
 
     :::image type="content" source="../media/4-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page in the Azure portal.":::
 
@@ -47,12 +47,12 @@ Follow these steps:
 1. On the Azure portal menu, select **Create a resource**.
 1. In the **Search the Marketplace** text box, enter **Azure VMware Solution**, select the resource, and then select **Create**.
 1. On **Azure VMware Solution**, select **Create**.
-1. The pre-requisites we covered earlier in the module are highlighted in the first screen for the deployment. 
+1. The prerequisites we covered earlier in the module are highlighted in the first screen for the deployment.
 1. If you missed any of these steps, now is a good time to review before building the Azure VMware Solution environment.
 1. After reviewing all pre-requisites one last time, select **Next: Basics >**.
 
-    :::image type="content" source="../media/4-pre-requisites-create-private-cloud.png" alt-text="Screenshot that shows the pre-requisites pane before building the Azure VMware Solution environment in Azure.":::
-    
+    :::image type="content" source="../media/4-pre-requisites-create-private-cloud.png" alt-text="Screenshot that shows the prerequisites pane before building the Azure VMware Solution environment in Azure.":::
+
 1. On the **Basics** tab, enter values for the fields:
 
     :::image type="content" source="../media/4-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
@@ -91,8 +91,6 @@ Follow these steps:
     | Virtual network gateway public IP | This resource provides a public IP used to establish a peering between the Azure virtual network and the Azure VMware Solution ExpressRoute circuit. |
     | ExpressRoute authorizations | There are two authorizations that get created: one for inbound and one for outbound connectivity, both to and from the Azure VMware Solution private cloud. |
 
-1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. You should see a deployment complete screen like what is shown below:
-
-    :::image type="content" source="../media/4-deployment-complete.png" alt-text="Screenshot displaying the additional resources created after saving the Azure vNet connect configuration.":::
+1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. The deployment complete page appears displaying your **Deployment name**, **Subscription**, **Resource group**, **Correlation ID**, and the resources deployed.
 
  Azure VMware Solution connectivity will require further configuration to communicate with the on-premises VMware environment. In the next unit, we'll go through network-configuration steps. You'll take those steps to successfully connect to the Azure VMware Solution environment, both from within Azure and from your on-premises environment.

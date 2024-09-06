@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.philanthropies.a-guide-to-artifical-intelligence
+
+metadata:
+  title: A guide to artificial intelligence
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/23/2024
+  ms.service: artificial-intelligence
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: A guide to artificial intelligence
+summary: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Distinguish between supervised, unsupervised, and reinforcement learning, and identify the type of machine learning most suitable for certain scenarios. 
+  - Assess the effectiveness of neural networks in handling unstructured and unlabeled data compared to other machine learning techniques. 
+  - Evaluate statements on the role of continuous refinement in machine learning models.
+
+iconUrl: /training/achievements/a-guide-to-artificial-intelligence.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.a-guide-to-artifical-intelligence.introduction
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-artificial-intelligence
+- learn.philanthropies.a-guide-to-artifical-intelligence.foundational-concepts-of-ai
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.types-of-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.an-application-of-machine-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.how-are-ai-and-machine-learning-connected
+- learn.philanthropies.a-guide-to-artifical-intelligence.what-is-deep-learning
+- learn.philanthropies.a-guide-to-artifical-intelligence.how-are-machine-learning-and-neural-networks-connected
+- learn.philanthropies.a-guide-to-artifical-intelligence.knowledge-check
+- learn.philanthropies.a-guide-to-artifical-intelligence.summary
+badge:
+  uid: learn.philanthropies.a-guide-to-artifical-intelligence.badge

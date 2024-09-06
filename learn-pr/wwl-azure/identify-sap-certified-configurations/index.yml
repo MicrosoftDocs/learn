@@ -3,21 +3,28 @@ uid: learn.wwl.identify-sap-certified-configurations
 metadata:
   title: Identify SAP-certified configurations
   description: "Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Identify SAP-certified configurations
 summary: Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure.
 abstract: |
   After completing this module, you will be able to:
-  - Explore general prerequisites for SAP support in public cloud environments.
-  - Discover SAP certifications and configurations running on Microsoft Azure.
+
+  -   Explore general prerequisites for SAP support in public cloud environments.
+
+  -   Discover SAP certifications and configurations running on Microsoft Azure.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/3-identify-sap-certified-configurations.svg
 levels:
 - advanced

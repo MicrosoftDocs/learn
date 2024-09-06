@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.train-track-model-fabric
+metadata:
+  title: Train and track machine learning models with MLflow in Microsoft Fabric
+  description: Learn how to train machine learning models in notebooks and track your work with MLflow experiments in Microsoft Fabric.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 09/20/2023
+  ms.service: fabric
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Train and track machine learning models with MLflow in Microsoft Fabric
+summary: In Microsoft Fabric, data scientists can train models in notebooks, track their work in experiments, and manage their models with MLflow.
+abstract: |
+  In this module, you'll learn how to:
+  - Train machine learning models with open-source frameworks
+  - Train models with notebooks in Microsoft Fabric
+  - Track model training metrics with MLflow and experiments in Microsoft Fabric
+prerequisites: |
+  Before starting this module, you should be familiar with the data science process.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-management
+- machine-learning
+units:
+- learn.wwl.train-track-model-fabric.introduction
+- learn.wwl.train-track-model-fabric.train-model
+- learn.wwl.train-track-model-fabric.mlflow
+- learn.wwl.train-track-model-fabric.fabric-models
+- learn.wwl.train-track-model-fabric.exercise
+- learn.wwl.train-track-model-fabric.knowledge-check
+- learn.wwl.train-track-model-fabric.summary
+badge:
+  uid: learn.wwl.train-track-model-fabric.badge

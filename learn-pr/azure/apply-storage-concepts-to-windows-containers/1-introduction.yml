@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Containers give you a way to package and run applications across diverse environments on-premises and in the cloud. They provide a lightweight, isolated environment that makes apps easier to develop, deploy, and manage.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

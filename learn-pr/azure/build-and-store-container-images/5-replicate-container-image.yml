@@ -3,11 +3,10 @@ uid: learn.azure-container-registry.image-replication
 metadata:
   title: Exercise - Replicate a container image to different Azure regions
   description: Replicate a container image to different Azure regions
-  ms.date: 09/24/2018
+  ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Replicate a container image to different Azure regions
 durationInMinutes: 5
 content: |

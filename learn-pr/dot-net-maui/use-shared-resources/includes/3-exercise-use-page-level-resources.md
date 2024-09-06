@@ -1,19 +1,21 @@
-All the exercises in this module relate to the prebuilt **TipCalculator** application. You'll modify and improve this app throughout this module. In this exercise, you'll use page-level resources to eliminate repeated XAML values.
+All the exercises in this module relate to the prebuilt **TipCalculator** application. You modify and improve this app throughout the module. In this exercise, you use page-level resources to eliminate repeated XAML values.
+
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Open the starter solution
 
-> [!NOTE]
-> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
-
 1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-use-shared-resources).
 
-1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio or this folder directly in Visual Studio Code.
 
 1. Verify that it builds and runs in your environment. (Any platform is fine.)
 
 1. Take a few minutes to examine and run the application so you understand how it behaves.
 
-    The application provides two pages. The **StandardTipPage** page is a simple tip calculator. You enter a value, and the page calculates the tip (15%) and the total due. The image below shows the application running on an Android device:
+    The application provides two pages. The **StandardTipPage** page is a simple tip calculator. You enter a value, and the page calculates the tip (15%) and the total due. The following image shows the application running on an Android device:
 
     :::image type="content" source="../media/3-standard-tip-page.png" alt-text="A screenshot of the standard tip page of tip calculator app running on Android.":::
 
@@ -25,7 +27,7 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 ## Find repeated XAML
 
-1. In Visual Studio, open the **StandardTipPage.xaml** file.
+1. Open the **StandardTipPage.xaml** file.
 
 1. Find the XAML markup that sets the background color of the **LayoutRoot** grid. Notice that it uses a hard-coded value.
 
@@ -57,7 +59,7 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 ## Define resources
 
-You've now seen all the repeated code that exists in the application. Let's create resources in XAML to start eliminating some of this repeated code.
+Now let's create resources in XAML, so you can start eliminating some of the repeated code that you found in the application.
 
 1. Open the **StandardTipPage.xaml** file.
 

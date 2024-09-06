@@ -1,6 +1,3 @@
-
-
-
 In this exercise, you review the code in the Starter project, perform some code clean-up tasks, and then start adding features to your application. The tasks that you complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
@@ -50,7 +47,7 @@ In this task, you complete a walkthrough of the Starter project code. The Progra
 
     The next group of variables is a mix of `string` and `int` variables that you'll use to generate sample data, read user input, and establish exit criteria for your main program loop. You may have noticed the code line `string? readResult;`. When used in a variable declaration like this, the `?` character defines a nullable type variable. When reading user entered values with the `Console.ReadLine()` method, it's best to use a nullable type.
 
-    The final variable is a two-dimensional string array named `ourAnimals`. Since you're not initializing the array, you use the `new` operator. The number of rows is defined by `maxPets`, which has been initialized to eight. The number of characteristics that you're storing is six, the string variables that you examined above.
+    The final variable is a two-dimensional string array named `ourAnimals`. Since you're instantiating the array without initializing any values, you use the `new` operator (the `new` operator is used to create a new instance of a type). The number of rows is defined by `maxPets`, which has been initialized to eight. The number of characteristics that you're storing is six, the string variables that you examined above.
 
 1. Scroll down to examine the `for` loop that contains an `if-elseif-else` selection construct.
 

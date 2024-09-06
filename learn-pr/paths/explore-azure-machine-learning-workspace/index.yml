@@ -1,19 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-azure-machine-learning-workspace
 metadata:
-  title: Explore the Azure Machine Learning workspace
-  description: Explore the Azure Machine Learning workspace
-  ms.date: 01/09/2023
+  title: Explore and configure the Azure Machine Learning workspace
+  description: Explore and configure the Azure Machine Learning workspace, its resources and its assets. Explore which developer tools you can use to interact with the workspace, focusing on the CLI and Python SDK v2.
+  ms.date: 09/01/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Explore the Azure Machine Learning workspace
+  ms.topic: learning-path
+title: Explore and configure the Azure Machine Learning workspace
 prerequisites: |
   None
-summary: |
-  Throughout this learning path you'll explore the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. You'll also explore the various developer tools you can use to interact with the workspace.
-iconUrl: /training/achievements/generic-trophy.svg
+summary: Throughout this learning path you explore and configure the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. Explore the various developer tools you can use to interact with the workspace. Configure the workspace for machine learning workloads by creating data assets and compute resources.
+iconUrl: /training/achievements/explore-azure-machine-learning-workspace.svg
 levels:
 - beginner
 roles:
@@ -25,5 +23,8 @@ subjects:
 modules:
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets
 - learn.wwl.explore-developer-tools-for-workspace-interaction
+- learn.wwl.make-data-available-azure-machine-learning
+- learn.wwl.work-compute-resources-azure-machine-learning
+- learn.wwl.work-environments-azure-machine-learning
 trophy:
   uid: learn.wwl.explore-azure-machine-learning-workspace.trophy

@@ -12,7 +12,7 @@ Consider the following Venn diagram:
 
 :::image type="content" source="../media/learning-path-basic-venn-diagram.png" alt-text="Diagram that shows two slightly overlapping circles, one for good ideas, and the other for absurd-sounding ideas.":::
 
-The blue set on the left represents all ideas that sound absurd. When you first describe these ideas to people, their most common reaction is, "That wouldn't work."
+The blue set on the left represents all ideas that sound absurd. When you first describe these ideas to people, their most common reaction is: "That wouldn't work."
 
 The green set on the right represents all ideas that are in fact a good idea (that is, they could be the basis for a product that customers want and would pay for).
 
@@ -30,13 +30,13 @@ If most people think your startup idea won't work, but you have some unique insi
 
 When Airbnb started, many smart people looked at the idea and said: "There's no way people will give their house keys to a stranger and let them stay in their house just to make a few extra bucks. It won't work, at least not at scale."
 
-Of course, today we know that Airbnb is a wildly successful tech company. The unique insights of the founders gave them the ability to see past this objection and pursue a business model that most people thought wouldn't be viable.
+Of course, today we know that Airbnb is a wildly successful tech company. The founders' unique insights gave them the ability to see past this objection and pursue a business model that most people thought wouldn't be viable.
 
 ## Task: Research your competitors
 
-Imagine you're trying to raise money from a venture capital fund, and you send them your pitch deck. One of the first things they'll do is consider the competitive landscape and make an assessment as to whether your startup is doing anything new, or at least different than existing competitors.
+Imagine you're trying to raise money from a venture capital fund and you send them your pitch deck. One of the first things they'll do is consider the competitive landscape and make an assessment as to whether your startup is doing anything new, or at least different than existing competitors.
 
-Now put yourself in the shoes of the analyst at that fund. Spend half an hour doing some online research on your company's problem space and see how many competitors you can find. Don't just look for direct competitors that are doing the same thing, but also indirect competitors that might provide an alternative solution to the same problem.
+Now, put yourself in the shoes of the analyst at that fund. Spend half an hour doing some online research on your company's problem space and see how many competitors you can find. Don't just look for direct competitors that are doing the same thing, but also indirect competitors that might provide an alternative solution to the same problem.
 
 Does your startup stand out as doing something new and innovative, or does it appear to be one of a large number of undifferentiated competitors?
 
@@ -46,7 +46,7 @@ It's fine to be a sole founder at the outset, but before long most founders real
 
 The amount of [work needed to build and launch a startup is massive](https://www.alexanderjarvis.com/sole-founders-are-bad-you-cant-build-a-billion-dollar-despicable-me-startup/?azure-portal=true), and it's been shown that [sole founders struggle to cope with the workload](https://www.entrepreneur.com/article/245132?azure-portal=true).
 
-Furthermore, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought-leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup. The team helps you build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem-solving that will ultimately contribute to faster progress.
+Furthermore, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought-leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup. The team helps you build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem solving that will ultimately contribute to faster progress.
 
 ## Task: Complete a startup skills checklist
 
@@ -63,7 +63,7 @@ Complete the following startup skills checklist to see how your team stacks up. 
 
 ## Intense customer pain
 
-You may have heard of "painkiller" companies versus "vitamin" companies. *Painkillers* are the ones that are solving a significant pain for customers, whereas *vitamin* companies are making products that might be useful but are more of a "nice to have" than a "need to have."
+You might have heard of "painkiller" companies versus "vitamin" companies. *Painkillers* are the ones that are solving a significant pain for customers, whereas *vitamin* companies are making products that might be useful but are more of a "nice to have" than a "need to have."
 
 The benefit of being a painkiller company is that your target customers are probably looking for a solution to whatever problem is causing them the pain. Maybe they've tried other products, or even invested time and money trying to create their own solution.
 
@@ -79,7 +79,7 @@ Successful startups tend to be highly scalable, meaning that they can grow rapid
 
 If your business model relies on having to perform repetitive, non-scalable tasks (even doing in-person sales calls), you might face major barriers to scalability and growth. That's because these constraints might place an upper limit on the number of customers you can serve.
 
-The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic-design business. As the company gets more customers, it does more graphic design work and generates more revenue. But at the same time, it needs to employ more graphic designers, so its costs increase proportionally. At some point, it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing. However, this isn't what scalability looks like.
+The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic-design business. As the company gets more customers, it does more graphic design work and generates more revenue. At the same time, however, it needs to employ more graphic designers, so its costs increase proportionally. At some point, it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing. However, this isn't what scalability looks like.
 
 :::image type="content" source="../media/learning-path-not-scalable.png" alt-text="Line chart that shows revenues exceeding costs when both reach a plateau.":::
 
@@ -91,7 +91,7 @@ In a scalable company, at some point revenues become decoupled from costs. For m
 
 If your product is software or something that can be achieved through software, after your product is built, the incremental cost of digitally delivering your product to each additional customer is very close to zero.
 
-After you've built the product and invested in developing and launching it, a scalable business model will enable your company to grow rapidly.
+After you've built the product and invested in developing and launching it, a scalable business model enables your company to grow rapidly.
 
 ## Large opportunity
 
@@ -99,7 +99,7 @@ The success of a startup is a function of volume and value; *volume* being the n
 
 Startup founders should aim to serve as large a market as possible and ensure that their product creates meaningful value for customers.
 
-As noted by Marc Andreessen, founder of Netscape and cofounder of the venture capital firm Andreessen Horowitz, "software is eating the world." Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old, legacy companies to new, digitally enabled ones. There are countless opportunities to build companies capable of disrupting multibillion-dollar markets, so why create a company that is serving a narrow niche or focused just on a small market?
+As noted by Marc Andreessen, founder of Netscape and cofounder of the venture capital firm Andreessen Horowitz, "software is eating the world." Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old, legacy companies to new, digitally enabled ones. There are countless opportunities to build companies capable of disrupting multibillion-dollar markets, so why create a company that's serving a narrow niche or focused just on a small market?
 
 > [!TIP]
 > Ask yourself: Am I focused on a large and growing market? Are there enough people who will rely on my product every day to make this an opportunity worth pursuing? Is this a market that's dominated by large, inefficient incumbents who could be disrupted by my solution?
@@ -110,7 +110,7 @@ Remember that you could be devoting the next 10 years of your life to this compa
 
 There's an optimal time for every startup idea. Make sure that you're not launching your startup too far ahead of the opportunity, or too far behind.
 
-An example of launching too far ahead of the opportunity would be a marketplace for the sharing of quantum computing capability. Quantum computing is going to be a huge opportunity at some point. But it might not be wise to set up a marketplace for sharing that capability today; you'd be some years ahead of the curve.
+An example of launching too far ahead of the opportunity would be a marketplace for sharing quantum computing capability. Quantum computing is going to be a huge opportunity at some point, but it might not be wise to set up a marketplace for sharing that capability today; you'd be some years ahead of the curve.
 
 Conversely, you'd be a brave person to start an online bookstore company today. The optimal time for starting that business has passed.
 
@@ -140,7 +140,7 @@ Hotmail is a great example. The company started in 1996, and at that time was ju
 
 Hotmail decided to make their product shareable by putting a footer at the bottom of every email that read "Sent from Hotmail. Get your free email here." The result of this shareability was that many people got a Hotmail address.
 
-Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, check out [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet, but in 1997, [this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
+Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, check out [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet; but in 1997, [this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
 
 ## Task: Find ways to share your product
 
@@ -154,13 +154,13 @@ Unlike one-off sales, recurring revenues occur on a regular, ongoing basis. For 
 
 Recurring revenues are highly attractive because:
 
-- They can lead to a high customer life-time value (LTV).
-- The cost of retaining an existing customer is almost always lower than the cost of acquiring a new customer.
+- They can lead to a high customer lifetime value (LTV).
+- The cost to retain an existing customer is almost always lower than the cost to acquire a new customer.
 - Revenues are predictable as long as you have a high level of customer retention.
 - Predictable revenues enable more confidence in investing in product development, often leading to better products over time.
-- Companies that generate recurring revenues can be scaled much more rapidly.
+- Companies that generate recurring revenues can scale much more rapidly.
 - Investors are usually more interested in businesses that generate recurring revenues than those that make one-off sales, because each new customer is building cumulatively on an existing revenue base.
-- Customers often prefer to spread the cost of your product over a monthly billing cycle rather than having to pay for it up-front.
+- Customers often prefer to spread the cost of your product over a monthly billing cycle rather than having to pay for it up front.
 - You can make money while you sleep!
 
 ## Task: Find ways to make revenue recurring

@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-app-registration.configure-application-permission
-title: Configure application permission
+title: Configure permission for an application
 metadata:
-  title: Configure application permission
-  description: "Configure application permission"
-  ms.date: 04/03/2023
+  title: Configure permission for an application
+  description: "Configure permission for an application"
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 11
+  ms.topic: unit
+durationInMinutes: 1
 content: |
   [!include[](includes/5-configure-application-permission.md)]

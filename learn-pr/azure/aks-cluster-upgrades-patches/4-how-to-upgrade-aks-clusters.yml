@@ -1,28 +1,28 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-cluster-upgrades-patches.how-to-upgrade-aks-clusters
-title: How to safely upgrade AKS clusters?
+title: How to safely upgrade AKS clusters
 metadata: 
-  title: How to safely upgrade AKS clusters?
+  title: How to safely upgrade AKS clusters
   description: Understand how to upgrade AKS clusters through a Blue/Green deployment method.
-  ms.date: 07/15/2021
+  ms.date: 10/09/2023
   ms.author: mixie 
   author: microsoftmichelle
   ms.product: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-how-to-upgrade-aks-clusters.md)]
 
 quiz:
   questions:
-  - content: "Your organization has decided to use Blue/Green deployment to test and deploy the newly upgraded AKS clusters. Which of the following most accurately describes this test and deployment strategy?"
+  - content: "Your organization decided to use the Blue/Green deployment method to test and deploy newly upgraded AKS clusters. Which of the following most accurately describes this testing and deployment strategy?"
     choices:
-    - content: "Run two identical AKS clusters, upgrade one cluster then switch the router to the upgrade cluster."
+    - content: "Run two identical AKS clusters, upgrade one cluster, and then switch the router to the upgrade cluster."
       isCorrect: true
-      explanation: "Blue/Green deployment strategy involves keeping two environments as identical to one another as possible and using a router to switch between the test environment and the production environment to deploy changes."
-    - content: "Run two AKS clusters, label one as 'staging' and the other as 'production', first upgrade the staging cluster then upgrade the production cluster."
+      explanation: "The Blue/Green deployment method involves creating and maintaining two identical environments and using a router to switch between the test environment and the production environment to deploy changes."
+    - content: "Run two AKS clusters, label one as *staging* and the other as *production*, upgrade the staging cluster, and then upgrade the production cluster."
       isCorrect: false
-      explanation: "Blue/Green deployment strategy involves keeping two environments as identical to one another as possible and using a router to switch between the test environment and the production environment to deploy changes."
-    - content: "Make a copy of your existing AKS cluster, upgrade the copy then shut down the original cluster."
+      explanation: "The Blue/Green deployment method involves creating and maintaining two identical environments and using a router to switch between the test environment and the production environment to deploy changes."
+    - content: "Make a copy of your existing AKS cluster, upgrade the copy, and then shut down the original cluster."
       isCorrect: false
-      explanation: "Blue/Green deployment strategy involves keeping two environments as identical to one another as possible and using a router to switch between the test environment and the production environment to deploy changes."
+      explanation: "The Blue/Green deployment method involves creating and maintaining two identical environments and using a router to switch between the test environment and the production environment to deploy changes."

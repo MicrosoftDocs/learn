@@ -4,13 +4,12 @@ title: Configure Azure Application Gateway components
 metadata:
   title: Configure Azure Application Gateway components
   description: "Configure Azure Application Gateway components"
-  ms.date: 02/01/2023
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/4-app-gateway-components.md)]

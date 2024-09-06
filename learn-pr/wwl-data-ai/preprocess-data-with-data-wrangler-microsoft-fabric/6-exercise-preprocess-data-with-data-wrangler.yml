@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.exercise-preprocess-data-with-data-wrangler
+title: 'Exercise: Preprocess data with Data Wrangler in Microsoft Fabric'
+metadata:
+  title: "Exercise: Preprocess data with Data Wrangler in Microsoft Fabric"
+  description: Learn how to preprocess data for data science with Data Wrangler in Microsoft Fabric.
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.date: 09/19/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-preprocess-data-with-data-wrangler.md)]

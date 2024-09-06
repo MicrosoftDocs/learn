@@ -1,4 +1,4 @@
-Azure Private 5G Core provides 5G and 4G network functions for enterprise private mobile networks. It allows you to manage the network functions centrally from the Azure portal. While providing the convenience of central management through the cloud, the private MEC solution powered by Azure Private 5G Core can ensure data security and low latency levels with local data processing.
+Azure Private 5G Core provides 5G and 4G network functions for enterprise private mobile networks. This allows you to manage the network functions centrally from the Azure portal. Providing the convenience of central management through the cloud, the private MEC solution powered by Azure Private 5G Core can ensure data security and low latency levels with local data processing.
 
 This unit introduces the key features of Azure Private 5G Core.
 
@@ -17,7 +17,7 @@ This unit introduces the key features of Azure Private 5G Core.
 Azure Private 5G Core uses the following network functions when supporting 4G UEs.
 
 - Mobile Management Entity (MME)
-- MME-Proxy - The MME-Proxy works to allow 4G UEs to be served by 5G network functions.
+- MME-Proxy - The MME-Proxy works to allow 4G UEs to use 5G network functions.
 
 To support 4G UEs, the 5G UDR operates as a Home Subscriber Store (HSS), and the 5G UPF operates as a System Architecture Evolution Gateway (SAEGW-U).
 
@@ -37,7 +37,7 @@ You can use the Azure portal or Azure Resource Manager (ARM) APIs to perform tas
 
 Each packet core instance is standards-compliant and compatible with several RAN partners in the Azure private MEC ecosystem.
 
-Azure Private 5G Core respectively exposes the N1 and N2 interfaces for the 5G control plane, and the N3 and N6 interfaces for the 5G user plane. It complies with the relevant 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models. For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
+Azure Private 5G Core exposes the N1 and N2 interfaces for the 5G control plane, and the N3 and N6 interfaces for the 5G user plane. It complies with the relevant 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models. For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
 
 Azure Private 5G Core also employs a simple, scalable provisioning model to allow you to bring the SIM partner of your choice to Azure.
 
@@ -45,8 +45,8 @@ Azure Private 5G Core also employs a simple, scalable provisioning model to allo
 
 Azure Private 5G Core supports authentication methods like:
 
-- Authentication using Subscription Permanent Identifiers (SUPI) and 5G Globally Unique Temporary Identities (5G-GUTI) for 5G user equipment (UEs).
-- Authentication using International Mobile Subscriber Identities (IMSI) and Globally Unique Temporary Identities (GUTI) for 4G UEs.
+- Subscription Permanent Identifiers (SUPI) and 5G Globally Unique Temporary Identities (5G-GUTI) for 5G user equipment (UEs).
+- International Mobile Subscriber Identities (IMSI) and Globally Unique Temporary Identities (GUTI) for 4G UEs.
 - 5G Authentication and Key Agreement (5G-AKA) for mutual authentication between 5G UEs and the network.
 - Evolved Packet System based Authentication and Key Agreement (EPS-AKA) for mutual authentication between 4G UEs and the network.
 

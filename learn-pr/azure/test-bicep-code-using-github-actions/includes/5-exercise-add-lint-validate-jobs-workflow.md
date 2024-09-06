@@ -1,8 +1,8 @@
-You've spoken to your team and have decided to further automate your deployments by using a workflow. You want to build more confidence in what you deploy.
+You spoke to your team and decided to further automate your deployments by using a workflow. You want to build more confidence in what you deploy.
 
 In this exercise, you'll add validation jobs to your workflow. You'll then run the linter and preflight validation before each deployment.
 
-During the process, you'll do the following tasks:
+During the process, you do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -53,7 +53,7 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
    :::image type="content" source="../media/5-visual-studio-code-bicep-config-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the new file shown in the deploy folder.":::
 
-1. Copy the following code into the file:
+1. Copy and paste the following code into the file:
 
    :::code language="json" source="code/5-bicepconfig.json" :::
 
@@ -77,7 +77,7 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
    :::code language="yaml" source="code/5-workflow.yml" highlight="14, 18-42, 46, 58" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If your file looks different, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -87,13 +87,13 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
    git push
    ```
 
-1. This commit is the first time you've pushed to this repository, so you might be prompted to sign in.
+1. This commit is the first time you pushed to this repository, so you might be prompted to sign in.
 
-   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+   On Windows, type *1* to authenticate using a web browser, and select **Enter**.
 
    On macOS, select **Authorize**.
 
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
    Immediately after you push, GitHub Actions starts a new workflow run.
 
@@ -109,9 +109,9 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
    Notice that the workflow run now shows the three jobs that you defined in the YAML file. The **lint** and **validate** jobs run in parallel before the **deploy** job starts.
 
-1. If the workflow is still running, wait until it's finished. Although workflows automatically update the page with the latest status, it's a good idea to refresh your page occasionally.
+1. If the workflow is still running, wait until it finishes. Although workflows automatically update the page with the latest status, it's a good idea to refresh your page occasionally.
 
-   Notice that the **lint** and **validate** jobs have failed.
+   Notice that the **lint** and **validate** jobs failed.
 
    :::image type="content" source="../media/5-workflow-run-jobs-lint-validate.png" alt-text="Screenshot of a workflow run in GitHub Actions, with the Lint and Validate jobs reporting failure.":::
 
@@ -131,11 +131,11 @@ When you use a custom linter configuration, Bicep writes log data that GitHub Ac
 
 ## Fix the linter error
 
-Now that you've identified the problem, you can fix it in your Bicep file.
+Now that you identified the problem, you can fix it in your Bicep file.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, a squiggly line is displayed under the parameter. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
+1. Notice that the Bicep linter also detected that the `storageAccountNameParam` parameter isn't used. In Visual Studio Code, a squiggly line is displayed under the parameter. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red.
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -159,7 +159,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 1. Select the most recent run.
 
-   Wait until the workflow run is finished. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow run finishes. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
 1. Notice that the **lint** job finished successfully, but the **validate** job is still failing.
 
@@ -181,7 +181,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 ## Fix the validation error
 
-You've found another problem in the Bicep file. Here, you fix the problem.
+You found another problem in the Bicep file. Here, you fix the problem.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
@@ -189,7 +189,7 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
    :::code language="bicep" source="code/5-template-2.bicep" range="16-20" highlight="5" :::
 
-   There seems to be a typo, and the string interpolation hasn't been configured correctly.
+   There seems to be a typo, and the string interpolation isn't configured correctly.
 
 1. Update the `storageAccountName` variable to use string interpolation correctly:
 
@@ -211,12 +211,12 @@ You've found another problem in the Bicep file. Here, you fix the problem.
 
 1. Select the most recent run.
 
-   Wait until the workflow run is finished. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the workflow run finishes. Although GitHub Actions automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that all three jobs in the workflow have finished successfully:
+1. Notice that all three jobs in the workflow finished successfully:
 
    :::image type="content" source="../media/5-workflow-run-jobs-success.png" alt-text="Screenshot of the workflow run in GitHub Actions, with all three jobs reporting success.":::
 
-   Some warnings are listed in the **Annotations** panel. All of these warnings are because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
+   Some warnings are listed in the **Annotations** panel. These warnings appear because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
 
 You now have a workflow that successfully detects errors in your Bicep code early in your deployment process, and then deploys to Azure if there are no errors.

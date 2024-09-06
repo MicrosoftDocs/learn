@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-manage-deployed-container-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a revision in Azure Container Apps?"
+    choices:
+    - content: "A version of your container app that can be deleted."
+      isCorrect: false
+      explanation: "Incorrect. A revision is an immutable snapshot of your container app."
+    - content: "A snapshot of your container app that can be edited."
+      isCorrect: false
+      explanation: "Incorrect. A revision is an immutable snapshot of your container app."
+    - content: "An immutable snapshot of your container app."
+      isCorrect: true
+      explanation: "Correct. A revision is an immutable snapshot of your container app."
+  - content: "What is the purpose of using revisions in Azure Container Apps?"
+    choices:
+    - content: "To manage the release of updates to your container app by creating a new revision each time you make a revision-scope change to your app."
+      isCorrect: true
+      explanation: "Correct. Revisions help you manage the release of updates to your container app by creating a new revision each time you make a revision-scope change to your app. You can control which revisions are active, and the external traffic that is routed to each active revision."
+    - content: "To merge multiple versions of your app into one."
+      isCorrect: false
+      explanation: "Incorrect. Revisions are used to manage the release of updates to your container app by creating a new revision each time you make a revision-scope change to your app."
+    - content: "To delete previous versions of your app."
+      isCorrect: false
+      explanation: "Incorrect. Revisions are used to manage the release of updates to your container app by creating a new revision each time you make a revision-scope change to your app."
+  - content: "What is the purpose of enabling ingress in Azure Container Apps?"
+    choices:
+    - content: "To enable outgoing HTTP requests or TCP traffic."
+      isCorrect: false
+      explanation: "Incorrect. Enabling ingress controls incoming HTTP requests or TCP traffic."
+    - content: "To control the routing of external and internal traffic to your container app."
+      isCorrect: true
+      explanation: "Correct. Enabling ingress allows you to enforce a set of rules that control the routing of external and internal traffic to your container app."
+    - content: "To create an Azure Load Balancer."
+      isCorrect: false
+      explanation: "Incorrect. Enabling ingress does not require creating an Azure Load Balancer."
+  - content: "Which of the following statements is true about scaling in Azure Container Apps?"
+    choices:
+    - content: "Adding or editing scaling rules creates a new revision of your container app."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true, but it does not provide a complete answer."
+    - content: "Scaling is defined by the combination of limits, rules, and behavior."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true, but it does not provide a complete answer."
+    - content: "Azure Container Apps manages automatic horizontal scaling through a set of declarative scaling rules."
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps manages automatic horizontal scaling through a set of declarative scaling rules."

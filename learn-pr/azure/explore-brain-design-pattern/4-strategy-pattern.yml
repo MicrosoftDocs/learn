@@ -4,11 +4,12 @@ title: Strategy Pattern
 metadata:
   title: Strategy Pattern
   description: An introduction to the strategy pattern.
-  ms.date: 10/18/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/4-strategy-pattern.md)]

@@ -1,5 +1,3 @@
-
-
 Azure Container Apps provides built-in authentication and authorization features to secure your external ingress-enabled container app with minimal or no code. The built-in authentication feature for Container Apps can save you time and effort by providing out-of-the-box authentication with federated identity providers, allowing you to focus on the rest of your application.
 
 * Azure Container Apps provides access to various built-in authentication providers.
@@ -33,7 +31,7 @@ The authentication and authorization middleware component is a feature of the pl
 
 The platform middleware handles several things for your app:
 
-* Authenticates users and clients with the specified identity provider(s)
+* Authenticates users and clients with the specified identity providers
 * Manages the authenticated session
 * Injects identity information into HTTP request headers
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.3-implement-application-resiliency
+metadata:
+  title: Implement application resiliency
+  description: Learn how to use .NET resiliency with cloud-native microservices apps.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+title: Implement application resiliency
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-implement-application-resiliency.md)]

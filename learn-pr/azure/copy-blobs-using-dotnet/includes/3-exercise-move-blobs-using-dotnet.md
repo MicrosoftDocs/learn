@@ -1,6 +1,6 @@
 The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications that move data around Azure storage.
 
-In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
+In this exercise, you see how to write an application that can migrate blobs from hot to cool storage.
 
 ## Create and add data to hot storage
 
@@ -16,7 +16,7 @@ First, create two accounts by using the Azure CLI.
     LOCATION=<location>
     ```
 
-2. Next, run the following command to create a storage account to hold blobs.
+1. Next, run the following command to create a storage account to hold blobs.
 
     ```azurecli
     az storage account create \
@@ -28,7 +28,7 @@ First, create two accounts by using the Azure CLI.
       --access-tier Hot
     ```
 
-3. Create a storage account for holding the archived blobs. Use the **Cool** access tier. As before, specify an appropriate region, and choose a unique name for your storage account.
+1. Create a storage account for holding the archived blobs. Use the **Cool** access tier. As before, specify an appropriate region, and choose a unique name for your storage account.
 
     ```azurecli
     az storage account create \
@@ -39,16 +39,37 @@ First, create two accounts by using the Azure CLI.
       --kind BlobStorage \
       --access-tier Cool
 
-5. Create a new container named specifications in the hot storage destination to hold fictitious specification files.
+1. Obtain the keys for your storage account.
 
-   ```azurecli
-      az storage container create \
-      --name $containerName \
-      --account-name $storageAccount \
-      --auth-mode login
+    ```azurecli
+    az storage account keys list \
+      --account-name $HOT_STORAGE_NAME \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --output table
+    ```
+
+1. Create an environment variable for your account key. Use the value of the first key retrieved by the previous command.
+
+    ```bash
+    HOT_KEY="<source account key>"
+    ```
+
+1. Create a container named *specifications* in your storage account.
+
+    ```azurecli
+    az storage container create \
+      --name specifications \
+      --account-name $HOT_STORAGE_NAME \
+      --account-key $HOT_KEY
    ```
 
-6. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
+1. Run the following command to download the sample source code for this exercise.
+
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
+    ```
+
+1. Upload the files to your storage account and save each one as a blob. This command uploads several specification files.
 
     ```azurecli
     az storage blob upload-batch \
@@ -59,7 +80,7 @@ First, create two accounts by using the Azure CLI.
       --account-key $HOT_KEY
     ```
 
-7. Verify that the blobs have been created.
+1. Verify that the blobs are created.
 
     ```azurecli
     az storage blob list \
@@ -71,36 +92,30 @@ First, create two accounts by using the Azure CLI.
 
 ## Set up your project
 
-1. Run the following command to download the sample source code for this exercise.
-
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
-    ```
-
-2. Move to the samples folder.
+1. Move to the samples folder.
 
     ```bash
     cd sample/code
     ```
 
-3. Open the *TransferBlobs.csproj* project file using the `Code` editor.
+1. Open the *TransferBlobs.csproj* project file using the `Code` editor.
 
     ```bash
     code TransferBlobs/TransferBlobs.csproj
     ```
 
-4. Change the `<TargetFramework>` value to *net6.0*.
+1. Change the `<TargetFramework>` value to *net7.0*.
 
     ```C#
     <PropertyGroup>
       <OutputType>Exe</OutputType>
-      <TargetFramework>net6.0</TargetFramework>
+      <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
     ```
 
-5. Save the file by selecting <kbd>Ctrl+S</kbd>, and close the `Code` editor by selecting <kbd>Ctrl+Q</kbd>.
+1. Save the file by selecting <kbd>Ctrl+S</kbd>, and close the `Code` editor by selecting <kbd>Ctrl+Q</kbd>.
 
-6. Build the sample application.
+1. Build the sample application.
 
     ```bash
     dotnet build TransferBlobs
@@ -133,11 +148,11 @@ First, create two accounts by using the Azure CLI.
 
     The *TransferBlobs* application takes the following command-line parameters:
 
-    - A connection string for accessing the source storage account
-    - The name of the container in the source storage account containing the blobs that you want to move
-    - A connection string for accessing the destination storage account
-    - The name of the container in the destination storage account for holding the blobs after they've been moved
-    - A date/time string ([in UTC](https://www.bing.com/search?q=utc+time)). Blobs in the source container that **have been modified** since this date and time will be moved to the destination
+    - A connection string for accessing the source storage account.
+    - The name of the container in the source storage account containing the blobs that you want to move.
+    - A connection string for accessing the destination storage account.
+    - The name of the container in the destination storage account for holding the blobs after they're moved.
+    - A date/time string ([in UTC](https://www.bing.com/search?q=utc+time)). Blobs in the source container that **have been modified** since this date and time are moved to the destination.
 
     > [!NOTE]
     > This application performs no validation or error handling. This is to keep the code short and concise. In a production system, you should validate all input carefully, and implement error handling for all storage account operations.
@@ -191,7 +206,7 @@ First, create two accounts by using the Azure CLI.
 
     This method takes a blob container and a `DateTimeOffset` object. The method iterates through the container to find all blobs that have a last modified date after the value specified in the `DateTimeOffset` object. The *blobList* collection is populated with a reference to each matching blob. When the method finishes, the *blobList* collection is passed back to the caller.
 
-    In the *Main* method, this method is invoked by the following statement.
+    In the *Main* method, invoke the `FindMatchingBlobsAsync` method with the following statement.
 
     ```C#
     // Find all blobs that have been changed since the specified date and time
@@ -230,11 +245,11 @@ First, create two accounts by using the Azure CLI.
     }
     ```
 
-    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it's removed from the source container.
+    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation is initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. The blob is removed from the source container when the copy is complete.
 
     The `StartCopyFromUriAsync` method call takes a URL containing a SAS token for the source object, as described in the previous unit.
 
-    In the *Main* method, this method is invoked by the following statement.
+    In the *Main* method, invoke `MoveMatchingBlobsAsync` method with the following statement.
 
     ```C#
     // Move matching blobs to the destination container
@@ -251,7 +266,7 @@ First, create two accounts by using the Azure CLI.
 
 1. Select the **specifications** container.
 
-To have some blobs with a different modified date from the batch upload time, you'll modify a few of them.
+Modify a few of the blobs, so that you have some blobs with a different modified date from the batch upload time.
 
 1. From the **specifications** container, select one of the specification files (for example, _specifications04.md_).
 
@@ -266,7 +281,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
     > [!NOTE]
-    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was `6/15/2021, 10:04:27 AM` in Korean Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
+    > The Azure portal will show times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was `6/15/2021, 10:04:27 AM` in Korean Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
 
 1. Using the portal, move to your destination (cool) storage account.
 
@@ -276,7 +291,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. Select **+ Container**, and create a new container named **transfer-test**.
 
-1. In the Cloud Shell window, run the following command. Replace *\<source connection string>* and *\<destination connection string>* with the connection strings you recorded in notepad. Replace *\<selected date and time>* with the date and time for your blobs, in the same format as it appeared in the Azure portal. Enclose the connection strings and date/time in double quotes, to prevent them being interpreted by the Bash shell:
+1. In the Cloud Shell window, run the following command. Replace *\<source connection string>* and *\<destination connection string>* with the connection strings you recorded in notepad. Replace *\<selected date and time>* with the date and time for your blobs, in the same format as it appeared in the Azure portal. To prevent the Bash shell from interpreting the connection strings and date/time, enclose them in double quotes:
 
     ```bash
     dotnet run "<source connection string>" specifications "<destination connection string>" transfer-test "<selected date and time>"
@@ -287,7 +302,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. The application should list the name of each matching blob that it finds, and move them.
 
-1. When the application has finished, return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. When the application finishes, return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Move to your destination (cool) storage account.
 
@@ -295,4 +310,4 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. Move to your source (hot) storage account.
 
-1. Browse the **specifications** folder. Verify the blobs that were transferred have been removed from this folder.
+1. Browse the **specifications** folder. Verify that the blobs that were transferred are removed from this folder.

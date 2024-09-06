@@ -36,7 +36,7 @@ The main features of Storage Replica are listed in the following table.
 |Simplicity|You can rely on Windows Admin Center to guide you through the process of creating a replication partnership between two servers. To deploy a stretch cluster, you can use a Failover Cluster Manager-based wizard.|
 |Use of Server Message Block (SMB) 3.0|Storage Replica relies on SMB 3.x, introduced in Windows Server 2012 and considerably enhanced in subsequent versions of Windows Server. All of SMB's advanced characteristics, such as SMB Multichannel and SMB Direct, are available to Storage Replica.|
 |Security|Storage Replica features a wide range of security mechanisms, including packet signing, AES-128-GCM full data encryption, support for third-party encryption acceleration, and pre-authentication integrity man-in-the-middle attack prevention. Storage Replica also relies on Kerberos AES256 for all authentication between nodes.|
-|Network constraints|In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you minimize potential impact of the replication traffic on production workloads.|
+|Network constraints|In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you to minimize potential impact of the replication traffic on production workloads.|
 |Thin provisioning|You have the option of implementing thin provisioning in Storage Spaces Direct, minimizing initial replication times.|
 
 ## Prerequisites for deploying stretch clusters
@@ -45,7 +45,7 @@ The prerequisites for implementing stretched clusters include:
 
 - Cluster nodes must be members of the same or trusted AD DS forest.
 - Each cluster node should have at least 2 GB of RAM and two CPU cores per server.
-- Each cluster node should be running Windows Server 2019 Datacenter or Windows Server 2016 Datacenter edition. It's possible to use Windows Server 2019 Standard edition, but such configuration supports replication of a single volume of up to 2 terabytes (TB) in size only.
+- Each cluster node should be running Windows Server 2025 Datacenter or Windows Server 2016 Datacenter edition. It's possible to use Windows Server 2025 Standard edition, but such configuration supports replication of a single volume of up to 2 terabytes (TB) in size only.
 - Each cluster node should have at minimum 1 Gigabit Ethernet adapter for synchronous replication, although Remote Direct Memory Access (RDMA) is preferable.
 - Two sets of volumes (one for data and the other for logs) at the primary and the secondary site, with the following settings:
 

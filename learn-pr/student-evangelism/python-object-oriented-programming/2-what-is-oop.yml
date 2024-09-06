@@ -7,9 +7,10 @@ metadata:
   author: ttorble
   ms.author: chnoring
   ms.date: 01/27/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-oop.md)]

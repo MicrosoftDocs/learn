@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/22/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the three built-in Azure portal IoT Hub features that you can use to analyze Azure IoT Hub data?"
+    choices:
+    - content: "Workbooks, Devices, and Alerts."
+      isCorrect: false
+      explanation: "Incorrect. Workbooks are a visualization tool, devices is used for device management, and alerts are used for notification."
+    - content: "Metrics, Logs, and the overview page."
+      isCorrect: true
+      explanation: "Correct. You can view essential charts on the **Overview** page, use **Metrics** to build charts using metrics of your choice, and use Logs run data query analysis."
+    - content: "Resource Health, device heartbeat, and Diagnostic Settings."
+      isCorrect: false
+      explanation: "Incorrect. Resource health and device heartbeat can tell you if a resource is running as expected, but it's not use for data analysis. Diagnostic settings are used to set up routing of data from source to destination."
+  - content: "Are you required to configure a diagnostic setting in order to use a Log Analytics workspace?"
+    choices:
+    - content: "Yes."
+      isCorrect: true
+      explanation: "Correct. You must define the source data that is to be made available to your log analytics workspace."
+    - content: "No."
+      isCorrect: false
+      explanation: "Incorrect. You must define the source data that is to be made available to your log analytics workspace."
+  - content: "Metrics explorer is a component of the Azure portal IoT Hub blade that you can use to..."
+    choices:
+    - content: "view and analyze storage log data."
+      isCorrect: false
+      explanation: "Incorrect. Metrics Explorer a chart-based environment used to analyze metrics data."
+    - content: "troubleshoot individual device connection problems."
+      isCorrect: false
+      explanation: "Incorrect. Metrics Explorer a chart-based environment used to analyze metrics data."
+    - content: "plot charts, visually correlate trends, and investigate spikes and dips in metrics values."
+      isCorrect: true
+      explanation: "Correct. Metrics Explorer a chart-based environment used to analyze metrics data."
+  - content: "Which of the following tools can you use to quickly check the health status of all IoT hubs in your subscription?"
+    choices:
+    - content: "Event Grid."
+      isCorrect: false
+      explanation: "Incorrect. Event Grid is used to troubleshoot individual device connections."
+    - content: "Azure Service Health."
+      isCorrect: true
+      explanation: "Correct. You can quickly use Azure Service Health to check the health status of all IoT hubs in your subscription."

@@ -1,5 +1,3 @@
-
-
 Azure Container Apps implements container app versioning by creating revisions. A revision is an immutable snapshot of a container app version. You can use revisions to release a new version of your app, or quickly revert to an earlier version of your app. New revisions are created when you update your application with [revision-scope changes](/azure/container-apps/revisions#revision-scope-changes). You can also update your container app based on a specific revision.
 
 You can control which revisions are active, and the external traffic that is routed to each active revision. Revision names are used to identify a revision, and in the revision's URL. You can customize the revision name by setting the revision suffix.
@@ -26,7 +24,7 @@ az containerapp revision list \
   -o table
 ```
 
-For more information about Container Apps commands, visit the [az containerapp](/cli/azure/containerapp) reference.
+For more information about Container Apps commands, visit the [`az containerapp`](/cli/azure/containerapp) reference.
 
 ## Manage secrets in Azure Container Apps
 
@@ -35,7 +33,7 @@ Azure Container Apps allows your application to securely store sensitive configu
 * Secrets are scoped to an application, outside of any specific revision of an application.
 * Adding, removing, or changing secrets doesn't generate new revisions.
 * Each application revision can reference one or more secrets.
-* Multiple revisions can reference the same secret(s).
+* Multiple revisions can reference the same secrets.
 
 An updated or deleted secret doesn't automatically affect existing revisions in your app. When a secret is updated or deleted, you can respond to changes in one of two ways:
 
@@ -54,7 +52,7 @@ When you create a container app, secrets are defined using the `--secrets` param
 * The parameter accepts a space-delimited set of name/value pairs.
 * Each pair is delimited by an equals sign (`=`).
 
-In the example below a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
+In the example below, a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
 
 ```bash
 az containerapp create \
@@ -78,4 +76,5 @@ az containerapp create \
   --secrets "queue-connection-string=$CONNECTIONSTRING" \
   --env-vars "QueueName=myqueue" "ConnectionString=secretref:queue-connection-string"
 ```
+
 

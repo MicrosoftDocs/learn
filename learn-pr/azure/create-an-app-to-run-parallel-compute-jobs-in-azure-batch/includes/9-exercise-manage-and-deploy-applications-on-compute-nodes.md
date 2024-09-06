@@ -1,6 +1,6 @@
 The Azure batch client API allows you to programmatically control all the components of an Azure Batch account.
 
-Continuing to enhance your companies console app, you'll now add all the components needed to convert the videos you uploaded in the last exercise.
+Continuing to enhance your company's console app, you'll now add all the components needed to convert the videos you uploaded in the last exercise.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -14,7 +14,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
     code Program.cs
     ```
 
-1. Add a constant to **Program.cs** for the JobId we'll use in our Batch job. 
+1. Add a constant to **Program.cs** for the JobId we'll use in our Batch job:
 
     ```csharp
     private const string JobId = "WinFFmpegJob";
@@ -29,7 +29,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
         await CreateBatchPoolAsync(batchClient, PoolId);
     ```
 
-    With a using block for the `batchClient`
+    With a using block for the `batchClient`:
 
     ```csharp
     using (BatchClient batchClient = BatchClient.Open(sharedKeyCredentials))
@@ -47,7 +47,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 ## Create a job
 
-1. Add this new method, `CreateJobAsync()` to **Program.cs** to create and add a job to the pool.
+1. Add this new method, `CreateJobAsync()`, to **Program.cs** to create and add a job to the pool:
 
     ```csharp
     private static async Task CreateJobAsync(BatchClient batchClient, string jobId, string poolId)
@@ -62,11 +62,11 @@ By the end of this exercise, you'll have a working Batch process that can conver
     }
     ```
 
-    The code above uses the batch client to create a job. The method assigns the given job ID and information about the pool.
+    The preceding code uses the batch client to create a job. The method assigns the given job ID and information about the pool.
 
 ## Add a task
 
-1. With the job created, the last step is to add a task to the job. Add the following method, `AddTaskAsync()`, to **Program.cs**.
+1. With the job created, the last step is to add a task to the job. Add the following method, `AddTaskAsync()`, to **Program.cs**:
 
     ```csharp
     private static async Task<List<CloudTask>> AddTasksAsync(BatchClient batchClient, string jobId, List<ResourceFile> inputFiles, string outputContainerSasUrl)
@@ -121,7 +121,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
     `%AZ_BATCH_APP_PACKAGE_ffmpeg#3.4%`
 
-    Using this approach it's easy to upload and increment newer versions of the `ffmpeg` app. The command looks into the zip folder, and executes:
+    Using this approach, it's easy to upload and increment newer versions of the `ffmpeg` app. The command looks into the zip folder, and executes:
 
     `ffmpeg.exe -i input-filename output-filename`
 
@@ -129,17 +129,17 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 ## Test the console app
 
-1. In the code editor, right-click and select **Save**, and then select **Quit**.
+1. In the code editor, right-click and select **Save**, then right-click and select **Quit**.
 
-1. In the cloud shell, build and run the app.
+1. In the cloud shell, build and run the app:
 
     ```bash
     dotnet run
     ```
 
-1. The below messages are written to the terminal.
+1. The following messages are written to the terminal:
 
-    ```bash
+    ```output
     Creating container [input].
     Creating container [output].
     Uploading file ~\cutifypets\InputFiles\3.mp4 to container [input]...
@@ -155,20 +155,18 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 1. The console app closes as soon as it has added the tasks. In Azure, the pool, nodes, job, and tasks are created. There's nothing monitoring what's happening within the app as it has exited. To see the current status of the conversion, and check the results, return to the Azure portal.
 
-1. In the Azure portal, on the **Dashboard** select the Batch account beginning `cutify`.
+1. In the Azure portal, select the Batch account beginning `cutify` on the **Dashboard**.
 
     ![Screenshot of the Overview page of the Batch account.](../media/9-batch-results.png)
 
-1. The health dashboard is shown on the Overview page, from here you can check the status of the current running job and the pool of nodes.
+1. The health dashboard is shown on the **Overview** page. From here, you can check the status of the current running job and the pool of nodes.
 
-1. On the left, select **Jobs**, select **WinFFmpegJob**. On this page, you'll see the current status of the tasks.
+1. On the left menu, select **Jobs** under **Features**, then select **WinFFmpegJob**. On this page, you'll see the current status of the tasks.
 
-1. When the tasks have completed, on the left select **Storage accounts**, then select the storage account your created in the first exercise.
+1. When the tasks have completed, return to the storage account you created in the first exercise.
 
-1. On the left select **Containers**, then select the **output** folder.
+1. On the left menu, select **Containers** under **Data storage**, then select the **output** folder.
 
-1. The folder contains the converted animated gif files.
-
-1. Download a file to check the cutest pet video.
+1. The folder contains the converted animated gif files. Download a file to check the cutest pet video.
 
     <!-- TODO replace the above with the cutest pet video -->

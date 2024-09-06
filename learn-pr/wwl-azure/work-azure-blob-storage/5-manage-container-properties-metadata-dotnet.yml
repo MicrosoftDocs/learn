@@ -4,11 +4,12 @@ title: Manage container properties and metadata by using .NET
 metadata:
   title: Manage container properties and metadata by using .NET
   description: "Manage container properties and metadata by using .NET"
-  ms.date: 04/26/2023
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-manage-container-properties-metadata-dotnet.md)]

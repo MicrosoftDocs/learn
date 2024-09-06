@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Structure types and cloud functions
   description: Understand which organizational structure best fits your operating model and the related cloud functions.
-  ms.date: 05/10/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-structure-types-cloud-functions.md)]
@@ -20,13 +19,13 @@ quiz:
     choices:
     - content: Learning about the cloud platform
       isCorrect: false
-      explanation: Incorrect. That's the function of the cloud platform team.
+      explanation: Incorrect. The cloud platform team fulfills that function.
     - content: Adapting existing IT practices to ensure that adoption efforts result in well-governed, well-managed environments in the cloud
       isCorrect: false
-      explanation: Incorrect. That's the function of the central IT team.
+      explanation: Incorrect. The central IT team fulfills that function.
     - content: Ensuring that risks and risk tolerance are properly evaluated and managed
       isCorrect: false
-      explanation: Incorrect. That's the function of the cloud governance team.
+      explanation: Incorrect. The cloud governance team fulfills that function.
     - content: Defining motivations and business outcomes, and validating and maintaining alignment between business priorities and cloud adoption efforts
       isCorrect: true
       explanation: Correct.

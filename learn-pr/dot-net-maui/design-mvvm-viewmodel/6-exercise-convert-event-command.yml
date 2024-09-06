@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.exercise-convert-event-to-command
+title: Exercise - Convert an event handler to a command
+metadata:
+  title: Exercise - Convert an event handler to a command
+  description: "Use the MenuItem's command instead of its `Clicked` event."
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-convert-event-command.md)]

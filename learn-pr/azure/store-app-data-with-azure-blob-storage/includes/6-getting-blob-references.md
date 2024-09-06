@@ -4,7 +4,7 @@ To interact with a container in Blob Storage, use a `BlobContainerClient` object
 
 ::: zone pivot="csharp"
 
-You can get a list of the blobs in a container using `BlobContainerClient`'s `GetBlobsAsync` method. Behind the scenes, this method will make one or more HTTP calls to Azure to list all of the blobs in the container. Since this method is asynchronous, you need to `await` the results as you read them since they may not all be returned in a single HTTP call to Azure. The standard pattern for reading the results with a `foreach` loop is shown below.
+Get a list of the blobs in a container using `BlobContainerClient`'s `GetBlobsAsync` method. Behind the scenes, the client makes one or more HTTP calls to Azure to list all of the blobs in the container. Since this method is asynchronous, you need to `await` the results as you read them. They might not all be returned in a single HTTP call. The following code shows the standard pattern for reading the results with a `foreach` loop.
 
 ```csharp
 AsyncPageable<BlobItem> blobs = containerClient.GetBlobsAsync();
@@ -19,7 +19,7 @@ await foreach (var blob in blobs)
 
 ::: zone pivot="java"
 
-You can get a list of the blobs in a container using the `listBlobs` method in `BlobContainerClient`. Behind the scenes, the client will make one or more HTTP calls to Azure to list all of the blobs in the container. This method returns `PagedIterable<BlobItem>` that implements `Iterable<BlobItem>`. You can then read it one item at a time or by page of items. The standard patterns for reading the results with a `for` loop or streaming API are shown below.
+You can get a list of the blobs in a container using the `listBlobs` method in `BlobContainerClient`. Behind the scenes, the client makes one or more HTTP calls to Azure to list all of the blobs in the container. This method returns `PagedIterable<BlobItem>` that implements `Iterable<BlobItem>`. You can then read it one item at a time or by page of items. The following code shows the standard pattern for reading the results with a `for` loop.
 
 ```java
 for (BlobItem blob : blobContainerClient.listBlobs()) {
@@ -38,11 +38,11 @@ blobContainerClient.listBlobs()
 
 ## Exercise
 
-One of the features in your app requires getting a list of blobs from the API. You'll use the pattern previously shown to list all the blobs in our container. As you process the list, you'll get the name of each blob.
+One of the features in your app requires getting a list of blobs from the API. Use the pattern previously shown to list all the blobs in our container. As you process the list, you get the name of each blob.
 
 ::: zone pivot="csharp"
 
-Using the editor, replace `GetNames` in `BlobStorage.cs` with the following code, and save your changes.
+Using the editor, replace `GetNames` in *BlobStorage.cs* with the following code, and save your changes.
 
 ```csharp
 public async Task<IEnumerable<string>> GetNames()
@@ -65,7 +65,7 @@ public async Task<IEnumerable<string>> GetNames()
 }
 ```
 
-To turn the names returned by this method into URLs, the names this method returns are processed by `FilesController`. When returned to the client, the names are rendered as hyperlinks on the page.
+The `FilesController` processes the names that this method returns to turn the names into URLs. When returned to the client, the names are rendered as hyperlinks on the page.
 
 ::: zone-end
 
@@ -82,6 +82,6 @@ public List<String> listNames() {
 }
 ```
 
-The names returned by this method are processed by `IndexBean` and `index.xhmtl` to be rendered as hyperlinks on the page.
+`IndexBean` and `index.xhmtl` process the names returned by this method to be rendered as hyperlinks on the page.
 
 ::: zone-end

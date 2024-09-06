@@ -4,11 +4,11 @@ title: Exercise - Install Node.js
 metadata:
   title: Exercise - Install Node.js
   description: Exercise - Install Node.js
-  ms.date: 06/10/20222
-  author: ericd-mst-github
-  ms.author: erd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/21/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom: devx-track-js, linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

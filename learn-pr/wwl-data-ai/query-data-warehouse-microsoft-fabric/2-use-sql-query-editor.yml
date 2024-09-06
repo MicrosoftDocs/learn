@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.query-data-warehouse-microsoft-fabric.use-sql-query-editor
+title: Use the SQL query editor
+metadata:
+  title: Use the SQL query editor
+  description: "Learn how to use the SQL query editor in Microsoft Fabric to query a data warehouse."
+  ms.date: 12/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-use-sql-query-editor.md)]

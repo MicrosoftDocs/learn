@@ -4,7 +4,7 @@ This module uses [vscode.dev](https://vscode.dev/) - a web-based version of Visu
 
 ## Create a Project
 
-You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. Using VSCode with CodeSwing allows you to quickly make modifications with a preview of updates happening in real time.
+You'll start by creating a folder, setting up your tooling, and creating a "swing" using CodeSwing in vscode.dev. A swing will automatically display the results of your code in vscode.dev. Using Microsoft Visual Studio Code with CodeSwing allows you to quickly make modifications with a preview of updates happening in real time.
 
 1. Create a folder on your desktop named **resume**.
 1. Open [vscode.dev](https://vscode.dev).
@@ -32,42 +32,43 @@ You'll use existing HTML to allow us to focus solely on the CSS. The HTML includ
 
     ```html
     <html>
-    <head>
-        <title>Your Name resume</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <head>
+            <title>Your Name resume</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
 
-    <body>       
-        <h1>Your Name</h1>
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
-    <div id="social-media">
-        <h2>Social media</h2>
-        <ul>
-            <li><a href="https://github.com/">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
-            <li><a href="https://twitter.com/">Twitter</a></li>
-        </ul>
-    </div>
-    
-        <h2>Education</h2>
-        <h3>School name</h3>
-        <h4>Major</h4>
-        <ul>
-            <li>GPA: 4.0</li>
-            <li>Years attended</li>
-        </ul>
+        <body>
+            <h1>Your Name</h1>
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
 
-    <h2>Experience</h2>
-    <div class="experience">
-        <h3>Company name</h3>
-        <h4>Title</h4>
-    </div>
-    <div class="experience">
-        <h3>Cool hackathon</h3>
-        <h4>Project title</h4>
-    </div>
+            <div id="social-media">
+                <h2>Social media</h2>
+                <ul>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                </ul>
+            </div>
 
-    </body>
+            <h2>Education</h2>
+            <h3>School name</h3>
+            <h4>Major</h4>
+            <ul>
+                <li>GPA: 4.0</li>
+                <li>Years attended</li>
+            </ul>
+
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Company name</h3>
+                <h4>Title</h4>
+            </div>
+            <div class="experience">
+                <h3>Cool hackathon</h3>
+                <h4>Project title</h4>
+            </div>
+
+        </body>
     </html>
     ```
 
@@ -116,4 +117,4 @@ By default, most browsers will use a serif font such as Times New Roman. You wan
 
 The following screenshot is the result of the CSS you applied in this exercise. If you wish to experiment with different fonts and sizes, you can modify the CSS as you wish.
 
-:::image type="content" source="../media/fonts-final.png" alt-text="Screenshot of final page as rendered in browser":::
+:::image type="content" source="../media/fonts-final.png" alt-text="Screenshot of final page as rendered in browser.":::

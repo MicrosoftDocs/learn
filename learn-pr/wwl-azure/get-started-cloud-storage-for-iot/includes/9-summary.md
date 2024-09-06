@@ -1,1 +1,0 @@
-Your team needs to implement device message processing to support downstream data analysis and other downstream requirements. Your ability to describe the features of specific Azure storage options and the benefits that each option provides will help to ensure that data is stored appropriately in support of business requirements.

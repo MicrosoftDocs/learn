@@ -3,55 +3,44 @@ uid: learn.az104-admin-prerequisites
 metadata:
   title: 'AZ-104: Prerequisites for Azure administrators'
   description: 'AZ-104: Prerequisites for Azure administrators'
-  ms.date: 10/12/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-104: Prerequisites for Azure administrators'
 prerequisites: |
-  - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
+  -   [Microsoft Azure Fundamentals: Describe cloud concepts](https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  -   [Azure Fundamentals: Describe Azure architecture and services](https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  -   [Azure Fundamentals: Describe Azure management and governance](https://learn.microsoft.com/training/paths/describe-azure-management-governance/)
 summary: |
-  Learn the basic Azure concepts you'll need to know as an Azure administrator. 
+  Learn the basic Azure concepts you need to know as an Azure administrator.
   Here are the learning paths in the AZ-104 Azure Administrator series:
-
   :::row:::
   :::column:::
-    <img src="/training/achievements/az-104-administrator-prerequisites.svg" width="84" height="70" alt="The trophy for the AZ-104 Prerequisites for Azure administrators learning path." role="presentation"></img>
-
-    AZ-104: Prerequisites for Azure administrators
+   ![The trophy for the AZ-104 Prerequisites for Azure administrators learning path.](/learn/achievements/az-104-administrator-prerequisites.svg)
+   AZ-104: Prerequisites for Azure administrators
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-identities-governance.svg" width="101" height="84" alt="The trophy for the AZ-104 Manage identities and governance in Azure learning path." role="presentation"></img>
-
-    [AZ-104: Manage identities and governance in Azure](/training/paths/az-104-manage-identities-governance/)
+   ![The trophy for the AZ-104 Manage identities and governance in Azure learning path.](/learn/achievements/az-104-manage-identities-governance.svg)
+   [AZ-104: Manage identities and governance in Azure](/learn/paths/az-104-manage-identities-governance/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-storage.svg" width="113" height="84" alt="The trophy for the AZ-104 Implement and manage storage in Azure learning path." role="presentation"></img>
-
-    [AZ-104: Implement and manage storage in Azure](/training/paths/az-104-manage-storage/)
+   ![The trophy for the AZ-104 Implement and manage storage in Azure learning path.](/learn/achievements/az-104-manage-storage.svg)
+   [AZ-104: Implement and manage storage in Azure](/learn/paths/az-104-manage-storage/)
   :::column-end:::
   :::row-end:::
-
-
   :::row:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-compute-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Deploy and manage Azure compute resources learning path." role="presentation"></img>
-
-    [AZ-104: Deploy and manage Azure compute resources](/training/paths/az-104-manage-compute-resources/)
-
+   ![The trophy for the AZ-104 Deploy and manage Azure compute resources learning path.](/learn/achievements/az-104-manage-compute-resources.svg)
+   [AZ-104: Deploy and manage Azure compute resources](/learn/paths/az-104-manage-compute-resources/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-manage-virtual-networks.svg" width="101" height="84" alt="The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path." role="presentation"></img>
-
-    [AZ-104: Configure and manage virtual networks for Azure administrators](/training/paths/az-104-manage-virtual-networks/)
+   ![The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path.](/learn/achievements/az-104-manage-virtual-networks.svg)
+   [AZ-104: Configure and manage virtual networks for Azure administrators](/learn/paths/az-104-manage-virtual-networks/)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/az-104-monitor-backup-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Monitor and back up Azure resources learning path." role="presentation"></img>
-
-    [AZ-104: Monitor and back up Azure resources](/training/paths/az-104-monitor-backup-resources/)
+   ![The trophy for the AZ-104 Monitor and back up Azure resources learning path.](/learn/achievements/az-104-monitor-backup-resources.svg)
+   [AZ-104: Monitor and backup Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
 iconUrl: /training/achievements/az-104-administrator-prerequisites.svg
@@ -61,20 +50,19 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
 - azure-clis
 - azure-container-instances
 - azure-container-registry
 - azure-virtual-machines
 - azure-virtual-network
+- entra-id
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.configure-azure-resources-tools
 - learn.wwl.use-azure-resource-manager
+- learn.intro-to-azure-cloud-shell
+- learn.student-evangelism.bash-introduction
+- learn.powershell.intro-to-powershell
 - learn.wwl.configure-resources-arm-templates
-- learn.automate-azure-tasks-with-powershell
-- learn.control-azure-services-with-cli
-- learn.azure.create-resource-manager-template-vs-code
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/28/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-prepare.md)]

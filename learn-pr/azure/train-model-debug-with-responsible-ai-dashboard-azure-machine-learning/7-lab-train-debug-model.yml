@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.lab-train-debug-model
+title: Exercise- Train a model and debug it using Responsible AI dashboard
+metadata:
+  title: Exercise- Train a model and debug it using Responsible AI dashboard
+  description: "Exercise- Train a model with Azure Machine Learning and debug it using Responsible AI dashboard"
+  ms.date: 11/03/2023
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit 
+azureSandbox: false
+labId: 149850
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-lab-train-debug-model.md)]

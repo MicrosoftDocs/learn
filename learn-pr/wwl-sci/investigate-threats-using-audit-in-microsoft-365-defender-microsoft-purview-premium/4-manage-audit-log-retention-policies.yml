@@ -7,8 +7,7 @@ metadata:
   ms.date: 3/22/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-manage-audit-log-retention-policies.md)]
@@ -22,7 +21,7 @@ quiz:
       explanation: "Incorrect. If an organization has non-E5 users or guest users, their corresponding audit records are retained for 90 days. However, this value isn't the retention period for the default audit log retention policy."
     - content: "One year"
       isCorrect: true
-      explanation: "Correct. Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year."
+      explanation: "Correct. Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Entra audit records for one year."
     - content: "Ten years"
       isCorrect: false
       explanation: "Incorrect. An organization can create a custom audit log retention policy that retains Exchange Online audit records for 10 years. However, this value isn't the retention period for the default audit log retention policy."

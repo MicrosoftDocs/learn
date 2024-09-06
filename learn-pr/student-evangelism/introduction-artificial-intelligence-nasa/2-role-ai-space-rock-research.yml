@@ -3,11 +3,12 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.2-role-a
 metadata:
   title: Artificial intelligence and space rock research
   description: Learn what artificial intelligence (AI) is, and how it can be used to research space rocks.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Artificial intelligence and space rock research
 durationInMinutes: 4

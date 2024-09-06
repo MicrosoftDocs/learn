@@ -4,13 +4,12 @@ title: Use RANK, AGGREGATE, and OFFSET functions
 metadata:
   title: Use RANK, AGGREGATE, and OFFSET functions
   description: "Use RANK, AGGREGATE, and OFFSET functions"
-  ms.date: 06/01/2022
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-use-rank-aggregate-offset-functions.md)]

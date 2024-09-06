@@ -4,13 +4,10 @@ title: Understand Microsoft Secure Score
 metadata:
   title: Understand Microsoft Secure Score
   description: "Understand Microsoft Secure Score"
-  ms.date: 02/27/2023
+  ms.date: 01/24/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.author: kelawson
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/10-understand-microsoft-secure-score.md)]

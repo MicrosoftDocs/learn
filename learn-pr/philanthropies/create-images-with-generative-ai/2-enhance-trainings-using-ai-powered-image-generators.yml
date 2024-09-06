@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-images-with-generative-ai.enhance-trainings-using-ai-powered-image-generators
+title: Enhance trainings using AI-powered image generators
+metadata:
+  title: Enhance trainings using AI-powered image generators
+  description: This content is a part of the 'Create images with generative AI' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-enhance-trainings-using-ai-powered-image-generators.md)]

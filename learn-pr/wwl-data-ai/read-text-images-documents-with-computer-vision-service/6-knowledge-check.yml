@@ -3,12 +3,13 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 10/20/2022
+  description: Knowledge Check
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 02/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
@@ -16,36 +17,36 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which API would be best for this scenario? You need to read a large amount of text with high accuracy. Some of the text is handwritten in English and some of it is printed in multiple languages."
+  - content: "Which API would be best for this scenario? You need to read a large number of files with high accuracy. The text is short sections of handwritten text, some in English and some of it is in multiple languages."
     choices:
-    - content: "Vision API"
+    - content: "A custom Language API"
       isCorrect: false
-      explanation: "Incorrect: Computer Vision is a grouping of APIs, and not an API itself."
-    - content: "Read API"
-      isCorrect: true
-      explanation: "Correct: The Read API is the best choice for large amounts of text and multiple languages."
+      explanation: "Incorrect: Azure AI Language custom models aren't able to perform OCR."
+    - content: "Document Intelligence API"
+      isCorrect: false
+      explanation: "Incorrect: Document Intelligence is the best choice for large amounts of structured text and multiple languages, however isn't the best choice for shorter, unstructured handwritten text."
     - content: "Image Analysis API"
-      isCorrect: false
-      explanation: "Incorrect: The Image Analysis service is a Computer Vision service, but its features extract visual features from images, such as objects and faces."
-  - content: "What languages can the Read API detect?"
-    choices:
-    - content: "Only English at this time"
-      isCorrect: false
-      explanation: "Incorrect: There are more than 160 languages available for printed text via the Read API."
-    - content: "Nine languages, including Chinese, French, German, Italian, Japanese, Korean, Portuguese, and Spanish."
       isCorrect: true
-      explanation: "Incorrect: There are more than 160 languages available for printed text via the Read API."
-    - content: "Over 160 different languages."
+      explanation: "Correct: The Image Analysis service OCR feature is best suited for short sections of handwritten text."
+  - content: "What levels of division are the OCR results returned?"
+    choices:
+    - content: "Only total content and pages of text."
       isCorrect: false
-      explanation: "Correct: There are more than 160 languages available for printed text via the Read API."
+      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
+    - content: "Blocks, words and lines of text."
+      isCorrect: true
+      explanation: "Correct: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
+    - content: "Total content, image tags, pages, words and lines of text."
+      isCorrect: false
+      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
   - content: "You've scanned a letter into PDF format and need to extract the text it contains. What should you do?"
     choices:
-    - content: "Use the Custom Vision service"
+    - content: "Use the Azure AI Custom Vision service"
       isCorrect: false
-      explanation: "Incorrect: The Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
-    - content: "Use the Image Analysis API of the Computer Vision service."
+      explanation: "Incorrect: The Azure AI Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
+    - content: "Use the Image Analysis API of the Azure AI Vision service."
       isCorrect: false
-      explanation: "Incorrect: The Image Analysis API can't be used to process PDF formatted files."
-    - content: "Use the Read API of the Computer Vision service."
+      explanation: "Incorrect: The Image Analysis API isn't well suited to process PDF formatted files."
+    - content: "Use the Document Intelligence API."
       isCorrect: true
-      explanation: "Correct: The Read API can be used to process PDF formatted files."
+      explanation: "Correct: The Document Intelligence API can be used to process PDF formatted files."

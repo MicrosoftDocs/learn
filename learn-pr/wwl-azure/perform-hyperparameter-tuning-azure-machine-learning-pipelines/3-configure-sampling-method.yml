@@ -3,12 +3,13 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.co
 title: Configure a sampling method
 metadata:
   title: Configure a sampling method
-  description: "Configure a sampling method"
-  ms.date: 11/17/2022
+  description: Configure a sampling method
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/3-configure-sampling-method.md)]

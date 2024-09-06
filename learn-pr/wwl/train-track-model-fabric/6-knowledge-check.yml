@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-track-model-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 09/20/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You have a prepared dataset that you loaded into a notebook. You want to train a classification model. What should you do before training the model?"
+    choices:
+    - content: "Split the data."
+      isCorrect: true
+      explanation: "Correct. When you train a model you need the dataset split into a training and test dataset, with the features and label separated."
+    - content: "Score the model."
+      isCorrect: false
+      explanation: "Incorrect. You need to train the model before you can use it to score."
+    - content: "Evaluate the model."
+      isCorrect: false
+      explanation: "Incorrect. You need to train the model before you can evaluate the model."
+  - content: "Which feature in Microsoft Fabric allows you to write and run code to train models?"
+    choices:
+    - content: "Notebooks"
+      isCorrect: true
+      explanation: "Correct. Use notebooks to write and run code."
+    - content: "Experiments"
+      isCorrect: false
+      explanation: "Incorrect. Experiments allow you to review your work."
+    - content: "Models"
+      isCorrect: false
+      explanation: "Incorrect. Models show the models you've trained and saved."
+  - content: "You want to log the accuracy of a model, which logging function should you use?"
+    choices:
+    - content: "`mlflow.log_param()`"
+      isCorrect: false
+      explanation: "Incorrect. `log_param()` logs a single key-value input parameter."
+    - content: "`mlflow.log_metric()`"
+      isCorrect: true
+      explanation: "Correct. `log_metric()` logs a single key-value metric."
+    - content: "`mlflow.log_artifact()`"
+      isCorrect: false
+      explanation: "Incorrect. `log_artifact()` logs a file."

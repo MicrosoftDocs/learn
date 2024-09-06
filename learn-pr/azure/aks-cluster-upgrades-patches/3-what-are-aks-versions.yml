@@ -4,28 +4,28 @@ title: What are Azure Kubernetes Service cluster versions?
 metadata: 
   title: What are Azure Kubernetes Service cluster versions? 
   description: Understand the Kubernetes version release and deprecation process supported by Azure Kubernetes Service. 
-  ms.date: 07/15/2021
+  ms.date: 10/09/2023
   ms.author: mixie 
   author: microsoftmichelle
   ms.product: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/3-what-are-aks-versions.md)]
 
 quiz:
   questions:
-  - content: "Kubernetes has just released a new minor version 1.20.0. Which of the following Kubernetes versions will go out of support according to the N-2 rule?"
+  - content: "Kubernetes released a new minor version *1.20.0*. Which of the following Kubernetes versions will go out of support according to the N-2 rule?"
     choices:
     - content: "1.19.8"
       isCorrect: false
-      explanation: "The minor version according to semantic versioning is determine by the change in y in x.y.z. As version x.19.z is within N-2 window of the new release x.20.z, it will remain in support by AKS."
+      explanation: "According to semantic versioning, minor version releases involve a change to the `Y` value in `X.Y.Z`. Version `X.19.Z` is within the N-2 window of the new release `X.20.Z`, so it remains in support by AKS."
     - content: "1.18.0"
       isCorrect: false
-      explanation: "The minor version according to semantic versioning is determine by the change in y in x.y.z. As version x.18.z is within N-2 window of the new release x.20.z, it will remain in support by AKS."
+      explanation: "According to semantic versioning, minor version releases involve a change to the `Y` value in `X.Y.Z`. Version `X.18.Z` is within the N-2 window of the new release `X.20.Z`, so it remains in support by AKS."
     - content: "1.17.0"
       isCorrect: true
-      explanation: "The minor version according to semantic versioning is determine by the change in y in x.y.z. As version x.17.z is outside the N-2 window of the new release x.20.z, AKS will no longer provide support for it."
+      explanation: "According to semantic versioning, minor version releases involve a change to the `Y` value in `X.Y.Z`. Version `X.17.Z` is outside of the N-2 window of the new release `X.20.Z`, so AKS no longer provides support."
   - content: "How many days do you have to upgrade an AKS cluster version that becomes deprecated?"
     choices:
     - content: "30 days"
@@ -37,14 +37,14 @@ quiz:
     - content: "90 days"
       isCorrect: false
       explanation: "When an AKS version is deprecated, you have 30 days to upgrade any existing AKS clusters running on a deprecated version."
-  - content: "How many patch version of a minor version does Azure Kubernetes Services support?"
+  - content: "How many patch versions of a minor version does AKS support?"
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "At any given time, only the latest two Kubernetes patch version of a Kubernetes minor version is supported by AKS."
+      explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."
     - content: "2"
       isCorrect: true
-      explanation: "At any given time, only the latest two Kubernetes patch version of a Kubernetes minor version is supported by AKS."
+      explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."
     - content: "3"
       isCorrect: false
-      explanation: "At any given time, only the latest two Kubernetes patch version of a Kubernetes minor version is supported by AKS."
+      explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."

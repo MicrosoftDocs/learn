@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.maintain-secure-repository-github.3-security-strategy-essentials
-title:  Exercise - Add a .gitignore file
+title:  Exercise - Secure your repository's supply chain
 metadata:
-  title:  Exercise - Add a .gitignore file
+  title:  Exercise - Secure your repository's supply chain
   description: Learn to build, host, and maintain a secure repository on GitHub.
-  ms.date: 09/27/2021
+  ms.date: 04/22/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-security-strategy-essentials.md)]

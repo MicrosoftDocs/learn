@@ -1,8 +1,8 @@
-You'll now create a Spring Boot application that will send messages to an Azure Service Bus queue. You'll complete the following steps locally.
+In this unit, you create a Spring Boot application that sends messages to an Azure Service Bus queue. Complete the following steps locally.
 
 ## Create a Spring Boot project
 
-To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the following command line:
+To create our Spring Boot project, we use [Spring Initializr](https://start.spring.io/) with the following command line:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
@@ -37,7 +37,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the following com
 
 ### Add code to send messages to Service Bus
 
-Next, we'll add the business logic to send messages to a Service Bus queue.
+Next, we add the business logic to send messages to a Service Bus queue.
 
 In the directory `src/main/java/com/example/demo`, create a `SendController.java` file that has the following content:
 
@@ -90,7 +90,7 @@ public class SendController {
 
     You can change the string value in the message query parameter and send any text to the Service Bus queue.
 
-    The browser will display whatever is passed as the message query string parameter, which implies that the message has been accepted by Service Bus.
+    The browser displays whatever is passed as the message query string parameter, which implies that the Service Bus is accepting the message.
 
 ## See the messages on the Service Bus queue
 

@@ -4,13 +4,11 @@ title: Describe Azure Pipelines and open-source projects
 metadata:
   title: Describe Azure Pipelines and open-source projects
   description: "Describe Azure Pipelines and open-source projects"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.topic: unit
+  ms.custom: N/A, devx-track-dotnet
+durationInMinutes: 6
 content: |
   [!include[](includes/4-describe-azure-pipelines-open-source-projects.md)]

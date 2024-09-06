@@ -1,4 +1,4 @@
-Data analysts often use SQL to query relational data and create reports and dashboards. Azure Databricks provides support for SQL-based data analytics through SQL Warehouses and the SQL persona. 
+Data analysts often use SQL to query relational data and create reports and dashboards. Azure Databricks provides support for SQL-based data analytics through SQL Warehouses. 
 
 In this module, you'll learn how to:
 
@@ -7,4 +7,4 @@ In this module, you'll learn how to:
 - Create queries and dashboards.
 
 > [!NOTE]
-> SQL Warehouses and the SQL persona are available in *premium-tier* Azure Databricks workspaces.
+> SQL Warehouses are available in *premium-tier* Azure Databricks workspaces.

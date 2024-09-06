@@ -12,5 +12,5 @@ For more information, refer to:
 
 - [Azure Route Server](https://azure.microsoft.com/services/route-server/#features)
 - [Azure Route Server documentation](/azure/route-server/)
-- [Tutorial: Configure peering between Azure Route Server and Quagga network virtual appliance](/azure/route-server/tutorial-configure-route-server-with-quagga)
+- [Tutorial: Configure peering between Azure Route Server and Network Virtual Appliance](/azure/route-server/tutorial-configure-route-server-with-quagga)
 - [Azure Route Server pricing](https://azure.microsoft.com/pricing/details/route-server/)

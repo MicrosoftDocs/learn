@@ -1,6 +1,3 @@
-
-
-
 Use Visual Studio Code to develop update the Contoso Pets adoption C# console application. The application already creates sample data on pets available for adoption, and is able to display the pet's description information. The application provides searching with a single term within the description data for each dog. The main feature addition is search with multiple terms. The secondary improvement is to the "search status" animation and includes adding a search countdown in the animation.
 
 ## Project specification overview

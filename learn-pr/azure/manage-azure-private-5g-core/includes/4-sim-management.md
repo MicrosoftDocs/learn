@@ -1,10 +1,10 @@
-After the deployment of a private mobile network, you'll need to manage the SIMs for attached UEs on a routine basis. For example, you may need to provision a SIM for a newly attached UE, or you may need to adjust [SIM groups](#manage-sims-and-sim-groups) due to application requirement changes.
+After the deployment of a private mobile network, you need to manage the SIMs for attached user equipment (UE) on a routine basis. For example, you might need to provision a SIM for a newly attached UE, or you might need to adjust [SIM groups](#manage-sims-and-sim-groups) due to application requirement changes.
 
 This unit introduces you to the SIM management tasks, such as SIM provisioning and SIM group management.
 
 ## Provision new SIMs
 
-Azure Private 5G Core uses SIM resources to represent the physical SIMs or eSIMs that the UEs in a private mobile network use. For the UEs to communicate with the DNs through the packet core instances, you need to provision their SIMs with the SIM resources.
+Azure Private 5G Core uses SIM resources to represent the physical SIMs or eSIMs that the UEs in a private mobile network use. For the UEs to communicate with the Data Networks (DNs) through the packet core instances, you need to provision their SIMs with the SIM resources.
 
 You can provision SIMs either through the Azure portal or an Azure template.
 
@@ -49,11 +49,11 @@ To provision the SIMs, take these steps:
 
    - If you want to manually enter each provisioning value of the SIM, select **Add manually**, and then add the SIM field values in **Add SIMs** on the right, as shown in the following screenshot:
 
-     :::image type="content" source="../media/add-sim-manually.png" alt-text="A screenshot that shows the Add SIMs dialogue box with the fields for SIM values." border="true":::
+     :::image type="content" source="../media/add-sim-manually.png" alt-text="A screenshot that shows the 'Add SIMs' dialogue box with the fields for SIM values." border="true":::
 
    - If you want to use a JSON file, select **Upload JSON from file**, and then upload the JSON file in **Add SIMs** on the right, as shown in the following screenshot:
 
-     :::image type="content" source="../media/add-sim-with-json-file.png" alt-text="A screenshot that shows the Add SIMs dialogue box with the fields for using a JSON file." border="true":::
+     :::image type="content" source="../media/add-sim-with-json-file.png" alt-text="A screenshot that shows the 'Add SIMs' dialogue box with the fields for using a JSON file." border="true":::
 
 For detailed instructions on provisioning new SIMs through the Azure portal, see [Provision new SIMs for Azure Private 5G Core - Azure portal](/azure/private-5g-core/provision-sims-azure-portal).
 
@@ -67,7 +67,7 @@ The article [Provision new SIMs for Azure Private 5G Core Preview - ARM template
 
 ## Manage SIMs and SIM groups
 
-Once SIMs are provisioned, you may need to make configuration changes to them. For example, for a SIM to communicate with a DN, you'll need to assign a SIM policy to it. Additionally, you may want to assign static IP addresses to the SIMs.
+Once SIMs are provisioned, you might need to make configuration changes to them. For example, for a SIM to communicate with a DN, you need to assign a SIM policy to it. Additionally, you might want to assign static IP addresses to the SIMs.
 
 For easier management, you can categorize SIMs into SIM groups. Each SIM must be a member of a SIM group but can't be a member of more than one.
 
@@ -91,7 +91,7 @@ For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/man
 
 ### Assign static IP addresses to SIMs
 
-If you've configured static IP address allocation for your packet core instance(s), you can assign static IP addresses to the SIMs you've provisioned. With a static IP address, a UE receives the same IP address every time it connects to the private mobile network. This is useful when you want applications to consistently connect to the same device with the same IP address.
+If you configure static IP address allocation for your packet core instances, you can assign static IP addresses to the SIMs you provisioned. With a static IP address, a UE receives the same IP address every time it connects to the private mobile network. A static IP address is useful when you want applications to consistently connect to the same device with the same IP address.
 
 > [!NOTE]
 >
@@ -120,7 +120,7 @@ For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/man
 
 ### Modify SIMs
 
-For a SIM that has been provisioned, you can edit its device type. If you want to modify other properties of the SIM, delete the SIM, and then provision it again.
+You can edit the device type of a SIM after you provision it. If you want to modify other properties of the SIM, delete the SIM, and then provision it again.
 
 To modify the device type of a SIM, take these steps:
 
@@ -138,9 +138,9 @@ For detailed instructions, see [Manage existing SIMs](/azure/private-5g-core/man
 
 ### Manage SIM groups
 
-SIM groups allow you to sort SIMs into categories for easier management. For example, you may want to categorize the SIMs by their purpose or by their on-site location.
+SIM groups allow you to sort SIMs into categories for easier management. For example, you might want to categorize the SIMs by their purpose or by their on-site location.
 
-If you've configured the customer-managed keys (CMK) encryption for a SIM group, you can modify the key URI and user-assigned identity.
+If you configured the customer-managed keys (CMK) encryption for a SIM group, you can modify the key URI and user-assigned identity.
 
 > [!TIP]
 > You can optionally add SIMs when you create a SIM group.

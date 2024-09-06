@@ -1,22 +1,21 @@
-The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
+The Cloud Adoption Framework Migrate methodology provides proven guidance to help you prepare for and carry out a migration to the cloud.
 
-Migration of any datacenter can involve the migration of various technology platforms and workloads. Re-creating the architecture and configuration of workloads in the cloud is time consuming and produces diminishing returns.
+The migration process includes four stages: prepare, assess, deploy, and release. This approach is vendor-neutral, so you can migrate workloads to any cloud service.
 
-The Migrate methodology in the Cloud Adoption Framework, the Azure migration center, and Azure Migrate tooling, reduce that effort. They use repeatable processes and tools that facilitate a successful migration with minimal time and effort for all of your technology and workload needs.
+:::image type="content" source="../media/migrate-overview.svg" alt-text="Diagram that shows the four steps of the migration methodology." border="false":::
 
-In this module, you learn the tools, the processes, and the options used in migration. You can then apply that knowledge to the migration of all workloads and platforms in your current environment.
+In this module, you learn about tools and processes that you can use in your migration. You can apply that guidance to each resource and asset in your environment.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Understand the tools commonly used in migration.
-- Learn about the migration processes required to migrate effectively.
-- Demonstrate a migration (hands-on if possible).
-- Understand options for properly migrating various platforms and workloads.
-- Choose the best learning path to migrate a specific platform or workload.
+- Prepare your landing zone for migration.
+- Evaluate the readiness of your workload and plan for the migrated state.
+- Deploy assets and remediate problems.
+- Release your deployed workloads to production.
 
 ## Prerequisites
 
-- Foundational understanding of cloud migration
-- Understanding of your organization's migration plan and the types of workloads you need to migrate
+- A foundational understanding of cloud migration
+- An understanding of your organization's migration plan and the types of workloads that you need to migrate

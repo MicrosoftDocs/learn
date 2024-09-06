@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-roll-device-certificates
+title: Examine how to roll device certificates
+metadata:
+  title: Examine how to roll device certificates
+  description: "Examine how to roll device certificates"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-roll-device-certificates.md)]

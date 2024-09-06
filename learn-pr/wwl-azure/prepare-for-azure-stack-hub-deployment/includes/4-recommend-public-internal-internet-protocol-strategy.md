@@ -19,7 +19,7 @@ Azure Stack Hub will accept any address block that you provide if it's a valid a
 
 ## Add the IP address range to Azure Stack Hub
 
-1.  In a browser, go to your administrator portal dashboard. For this example, we'll use *https://adminportal.local.azurestack.external*.
+1.  In a browser, go to your administrator portal dashboard. For this example, we'll use ``` https://adminportal.local.azurestack.external ```.
 2.  Sign in to the Azure Stack Hub administrator portal as a cloud operator.
 3.  On the default dashboard, find the Region management list and select the region you want to manage. For this example, we use local.
 4.  Find the Resource providers tile and click on the network resource provider.

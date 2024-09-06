@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-create-specific-unit-test-github-copilot-inline-chat
+title: Exercise - Create unit tests for specific conditions by using GitHub Copilot
+metadata:
+  title: Exercise - Create unit tests for specific conditions by using GitHub Copilot
+  description: Exercise - Create unit tests for specific conditions by using GitHub Copilot
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 05/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-create-specific-unit-test-github-copilot-inline-chat.md)]

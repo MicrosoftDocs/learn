@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.explore-azure-front-door
+title: Explore Azure Front Door
+metadata:
+  title: Explore Azure Front Door
+  description: "Explore Azure Front Door"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-explore-azure-front-door.md)]

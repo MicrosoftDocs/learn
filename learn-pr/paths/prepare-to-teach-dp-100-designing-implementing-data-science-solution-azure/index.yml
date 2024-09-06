@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-to-teach-dp-100-designing-implementing-data-science-solution-azure
+metadata:
+  title: 'Prepare to teach DP-100 Designing and Implementing a Data Science Solution on Azure '
+  description: Learn about the Microsoft Learn for Educators program and how to best deliver content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
+  ms.date: 07/22/2024
+  author: wwlpublish
+  ms.author: WWL
+  ms.topic: learning-path
+title: Prepare to teach DP-100 Designing and Implementing a Data Science Solution on Azure
+prerequisites: |
+  None
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver content to your students. Prepare to deliver Microsoft’s DP-100 Designing and Implementing a Data Science Solution on Azure in an academic program.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+modules:
+- learn.wwl.microsoft-learn-for-educator-program-open-house
+- learn.wwl.begin-your-microsoft-learn-educators-journey
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators
+- learn.wwl.close-out-microsoft-learn-educators-course
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution
+trophy:
+  uid: learn.wwl.prepare-to-teach-dp-100-designing-implementing-data-science-solution-azure.trophy

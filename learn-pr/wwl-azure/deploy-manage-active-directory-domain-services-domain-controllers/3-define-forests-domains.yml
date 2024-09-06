@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-forests-domains
+title: Define Active Directory Domain Services forests and domains
+metadata:
+  title: Define Active Directory Domain Services forests and domains
+  description: "Define Active Directory Domain Services forests and domains"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-define-forests-domains.md)]

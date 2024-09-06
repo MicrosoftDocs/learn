@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.apply-critical-thinking-when-using-generative-ai
+title: Apply critical thinking when using generative AI
+metadata:
+  title: Apply critical thinking when using generative AI
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/21/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-apply-critical-thinking-when-using-generative-ai.md)]

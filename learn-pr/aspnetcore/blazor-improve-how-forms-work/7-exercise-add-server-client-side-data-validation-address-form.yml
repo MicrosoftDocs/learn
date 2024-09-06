@@ -5,11 +5,11 @@ metadata:
   unitType: Exercise
   title: "Exercise - Add server-side and client-side data validation to the address form "
   description: "Use data annotations on a model to add custom validation to a Blazor EditForm component."
-  ms.date: 08/31/2021
+  ms.date: 11/09/2023
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-add-server-client-side-data-validation-address-form.md)]

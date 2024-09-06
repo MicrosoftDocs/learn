@@ -7,7 +7,7 @@ In this module, you:
 - Identified security gaps using the threat modeling framework.
 - Reduced or eliminated risks with known security requirements and controls.
 
-Additional Reading:
+Further reading:
 
 - Learn more about [privileged access workstations](/security/compass/overview).
 - Check out how Microsoft protects [high-risk environments](https://www.microsoft.com/itshowcase/protecting-high-risk-environments-with-secure-admin-workstations) with privileged access workstations.

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-identity-with-windows-server.implement-configure-azure-ad-ds
-title: Implement and configure Azure Active Directory Domain Services
+title: Implement and configure Microsoft Entra Domain Services
 metadata:
-  title: Implement and configure Azure Active Directory Domain Services
-  description: "Implement and configure Azure Active Directory Domain Services"
+  title: Implement and configure Microsoft Entra Domain Services
+  description: "Implement and configure Microsoft Entra Domain Services"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

@@ -4,13 +4,12 @@ title: Explore analytical data stores
 metadata:
   title: Explore analytical data stores
   description: "Explore analytical data stores"
-  ms.date: 08/31/2022
+  ms.date: 03/18/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-analytical-data-stores.md)]

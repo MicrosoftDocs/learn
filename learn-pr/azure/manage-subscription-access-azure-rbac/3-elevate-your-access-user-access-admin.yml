@@ -4,11 +4,10 @@ title: Understand when you might need to elevate your access
 metadata:
   title: Understand when you might need to elevate your access
   description: Learn about the scenarios where you might need to elevate your access to User Access Administrator.
-  ms.date: 01/13/2020
+  ms.date: 11/20/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-elevate-your-access-user-access-admin.md)]

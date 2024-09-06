@@ -38,7 +38,7 @@ ml_client.environments.create_or_update(env_docker_image)
 
 ## Create a custom environment with a conda specification file
 
-Though Docker images contain all necessary packages when working with a specific framework, it may be that you need to include other packages to run your code. 
+Though Docker images contain all necessary packages when working with a specific framework, it may be that you need to include other packages to run your code.
 
 For example, you may want to train a model with PyTorch, and track the model with MLflow.
 
@@ -78,11 +78,11 @@ ml_client.environments.create_or_update(env_docker_conda)
 > [!NOTE]
 > Since all curated environments are prefixed with **AzureML-**, you can't create an environment with the same prefix.
 
-## Use an environment 
+## Use an environment
 
-Most commonly, you use environments when you want to run a script as a (**command**) **job**. 
+Most commonly, you use environments when you want to run a script as a (**command**) **job**.
 
-To specify which environment you want to use to run your script, you reference an environment using the `azureml:<curated-environment-name>:<version>` or `azureml:<curated-environment-name>@latest` syntax. 
+To specify which environment you want to use to run your script, you reference an environment using the `<curated-environment-name>:<version>` or `<curated-environment-name>@latest` syntax.
 
 For example, the following code shows how to configure a command job with the Python SDK, which uses a curated environment including Scikit-Learn:
 
@@ -103,6 +103,6 @@ job = command(
 returned_job = ml_client.create_or_update(job)
 ```
 
-When you submit the job, the environment is built. The first time you use an environment, it can take 10-15 minutes to build the environment. You can review the logs of the environment build in the logs of the job. 
+When you submit the job, the environment is built. The first time you use an environment, it can take 10-15 minutes to build the environment. You can review the logs of the environment build in the logs of the job.
 
 When Azure Machine Learning builds a new environment, it's added to the list of custom environments in the workspace. The image of the environment is hosted in the Azure Container registry associated to the workspace. Whenever you use the same environment for another job (and another script), the environment is ready to go and doesn't need to be build again.

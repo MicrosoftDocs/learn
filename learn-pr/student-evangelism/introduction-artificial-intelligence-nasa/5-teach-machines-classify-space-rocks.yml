@@ -3,11 +3,12 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.5-teach-
 metadata:
   title: Classify space rocks by using artificial intelligence
   description: Discover the AI process that's used to teach machines how to classify space rocks by type.
-  ms.date: 04/11/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/11/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Classify space rocks by using artificial intelligence
 durationInMinutes: 4

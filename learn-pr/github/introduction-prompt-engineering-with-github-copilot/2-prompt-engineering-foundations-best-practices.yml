@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-prompt-engineering-with-github-copilot.prompt-engineering-foundations-best-practices
+title: Prompt engineering foundations and best practices
+metadata:
+  title: Prompt engineering foundations and best practices
+  description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 11/10/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-prompt-engineering-foundations-best-practices.md)]

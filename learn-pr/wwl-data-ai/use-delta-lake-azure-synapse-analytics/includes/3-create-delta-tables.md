@@ -52,7 +52,7 @@ deltaTable.update(
 The data modifications are recorded in the transaction log, and new parquet files are created in the table folder as required.
 
 > [!TIP]
-> For more information about using the Data Lake API, see [the Delta Lake API documentation](https://docs.delta.io/latest/delta-apidoc.html).
+> For more information about using the Delta Lake API, see [the Delta Lake API documentation](https://docs.delta.io/latest/delta-apidoc.html).
 
 ## Querying a previous version of a table
 

@@ -10,8 +10,8 @@ If you're going to use a CSP subscription, review the table below to identify wh
 
 | **Scenario**                                                                                     | **Domain and subscription options**                                                                                                                       |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| You're a Direct CSP Partner or an Indirect CSP Provider, and you'll operate the Azure Stack Hub. | Use a CSP Shared Services subscription.<br>or<br>Create an Azure AD tenant with a descriptive name in Partner Center.                                     |
-| You're an Indirect CSP Reseller, and you'll operate the Azure Stack Hub.                         | Ask your indirect CSP Provider to create an Azure AD tenant for your organization with an Azure CSP subscription associated with it using Partner Center. |
+| You're a Direct CSP Partner or an Indirect CSP Provider, and you'll operate the Azure Stack Hub. | Use a CSP Shared Services subscription.<br>or<br>Create a Microsoft Entra tenant with a descriptive name in Partner Center.                                     |
+| You're an Indirect CSP Reseller, and you'll operate the Azure Stack Hub.                         | Ask your indirect CSP Provider to create a Microsoft Entra tenant for your organization with an Azure CSP subscription associated with it using Partner Center. |
 
 ### Capacity-based billing
 

@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customize-dotnet-aspire-existing-resources.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that requires developers to migrate services in a deployed .NET Aspire app from containers to Azure services.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

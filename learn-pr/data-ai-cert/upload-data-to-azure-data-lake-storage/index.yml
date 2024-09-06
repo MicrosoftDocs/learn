@@ -6,8 +6,8 @@ metadata:
   ms.date: 03/25/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-data-lake-storage
 title: Upload data to Azure Data Lake Storage
 summary: Learn various ways to upload data to Data Lake Storage Gen 2. Upload data through the Azure portal, Azure Storage Explorer, or .NET. Or copy the data in Azure Data Factory.
 abstract: |
@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 subjects:
-- data-lake
+- data-storage
 units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.introduction
 - learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake

@@ -4,13 +4,12 @@ title: Deploy Docker containers to Azure App Service web apps
 metadata:
   title: Deploy Docker containers to Azure App Service web apps
   description: "Deploy Docker containers to Azure App Service web apps"
-  ms.date: 12/09/2022
+  ms.date: 05/25/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/8-deploy-docker-containers-to-azure-app-service-web-apps.md)]

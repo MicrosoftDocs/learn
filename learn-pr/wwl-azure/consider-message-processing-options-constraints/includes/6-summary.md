@@ -1,1 +1,0 @@
-Your team needs to implement device message processing to support downstream data analysis and other downstream requirements. Understanding the alternatives to message routing and the throttling limits that apply to IoT Hub message throughput will help to ensure team's success.

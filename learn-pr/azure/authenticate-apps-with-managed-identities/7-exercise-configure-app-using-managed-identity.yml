@@ -3,11 +3,12 @@ uid: learn.authenticate-apps-with-managed-identities.7-exercise-configure-app-us
 metadata:
   title: Exercise - Configure a custom application in .NET by using managed identity
   description: Create a secret and store it in Azure Key Vault. Assign your VM's service principal permissions to get the secret. Build and run an app on your VM.
-  ms.date: 03/29/2022
+  ms.date: 12/27/2023
   author: barclayn
   ms.author: barclayn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 title: Exercise - Configure a custom application in .NET by using managed identity
 durationInMinutes: 10
 interactive: bash

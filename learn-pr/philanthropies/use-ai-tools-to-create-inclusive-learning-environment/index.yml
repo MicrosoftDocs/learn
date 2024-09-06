@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment
+
+metadata:
+  title: Use AI tools to create an inclusive learning environment
+  description: In this module, you learn how AI tools can help foster inclusive and adaptive learning environments, enabling trainers to address the varied needs of their learners.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/11/2024
+  ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Use AI tools to create an inclusive learning environment
+summary: This module showcases how AI can be used to create tailored and inclusive educational experiences. You explore adaptive learning platforms adjusted to individual learning styles, AI-driven feedback systems, and personalized content delivery for diverse learner needs.
+
+abstract: |
+  By the end of this module, you are able to:
+  - Recognize the role of AI in supporting collaborate learning.
+  - Assess how applications utilize text-to-speech technology and who can benefit from this functionality.
+  - Determine how AI in Microsoft Teams enhances accessibility for learners with a hearing disability or Attention deficit hyperactivity disorder (ADHD). 
+
+iconUrl: /training/achievements/use-ai-tools-to-create-an-inclusive-learning-environment.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- business-user
+- higher-ed-educator
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.introduction
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.personalize-learning-with-generative-ai
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.collaborative-learning-empowered-by-ai
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.inclusive-and-accessible-learning
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.knowledge-check
+- learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.summary
+badge:
+  uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment.badge

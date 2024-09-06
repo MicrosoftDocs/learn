@@ -6,9 +6,8 @@ metadata:
   description: This unit explores how to give feedback in the context of code reviews. It shows a process and some guidelines for conducting an inclusive code review.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7
 content: |

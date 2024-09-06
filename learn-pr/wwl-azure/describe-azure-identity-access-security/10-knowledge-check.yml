@@ -4,24 +4,23 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2023
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?"
+  - content: "Which Microsoft Entra tool can vary the credentials needed to log in based on signals, such as where the user is located?"
     choices:
     - content: "Conditional Access"
       isCorrect: true
-      explanation: "Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. Conditional Access might challenge you for a second authentication factor if your sign-in signals are unusual or from an unexpected location."
+      explanation: "Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) access to resources based on identity signals. Conditional Access might challenge you for a second authentication factor if your sign-in signals are unusual or from an unexpected location."
     - content: "Guest access"
       isCorrect: false
       explanation: "Guest access is an access method that helps enable collaboration across organizational boundaries, but isn’t an authentication method or a tool to help with authentication."

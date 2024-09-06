@@ -3,11 +3,11 @@ uid: learn.wwl.configure-virtual-machine-extensions
 metadata:
   title: Configure virtual machine extensions
   description: "Learn how to use virtual machine extensions to automate virtual machine deployments."
-  ms.date: 12/19/2022
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-virtual-machines
 title: Configure virtual machine extensions
 summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
 abstract: |

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/01/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement Windows Server IaaS VM Identity
 prerequisites: |
   - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
@@ -15,7 +14,7 @@ prerequisites: |
   - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
   - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
   - Basic experience with implementing and managing IaaS services in Microsoft Azure.
-  - Basic knowledge of Azure Active Directory.
+  - Basic knowledge of Microsoft Entra ID.
   - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
   - Basic knowledge of PowerShell scripting.
   - An understanding of the following concepts as related to Windows Server technologies:
@@ -33,7 +32,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines

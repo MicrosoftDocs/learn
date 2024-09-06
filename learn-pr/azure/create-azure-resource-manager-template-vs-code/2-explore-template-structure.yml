@@ -4,11 +4,12 @@ title: Explore Azure Resource Manager template structure
 metadata:
   title: Explore Azure Resource Manager template structure
   description: Understand Azure Resource Manager template structure and learn how to write templates and deploy them to Azure.
-  ms.date: 07/08/2020
+  ms.date: 09/06/2023
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-template-structure.md)]

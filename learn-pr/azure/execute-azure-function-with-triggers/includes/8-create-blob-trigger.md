@@ -10,15 +10,15 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 1. Select your Function App identified under the *Type* column. Your **Function App** pane appears.
 
-1. On the Function App pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. Select the **Functions** tab in the center of the screen.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. Select the **Create** button at the top of the **Functions** tab. The **Create function** pane appears.
 
-1. Under **Select a template**, select **Azure Blob Storage trigger**.
+1. Under **Select a template**, select **Azure Blob Storage trigger**, then select **Next**.
 
 1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Wait until the installation completes before continuing.
 
-1. Under **Template details**, accept the default value for the **New Function** field.
+1. Under **Template details**, accept the default value for the **Function name** field.
 
 1. Accept the default value for the **Path** field.
 
@@ -51,7 +51,7 @@ To create a container called **samples-workitems**:
 
 1. Select **Blob containers**, then select **Add container**. The **New container** pane appears.
 
-1. In the **Name** field, enter *samples-workitems*, accept the default **Private** setting in the **Public access level** field, and then select **Create**.
+1. In the **Name** field, enter *samples-workitems*, accept the default **Private** setting in the **Public access level** field, then select **Create**.
 
 ## Turn on your blob trigger
 
@@ -59,9 +59,7 @@ Now that we've created our container to monitor, let's run our function so we ca
 
 1. Switch back to the browser tab with your Azure Function (or reopen it).
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
-
-1. Select your blob trigger. In the left menu pane, under **Developer**, select **Code + Test**.
+1. Select your blob trigger in the **Functions** tab in the center of the screen. In the taskbar at the top of the screen, select **Code + Test**.
 
 1. Expand the **Logs** tab at the bottom of the screen if necessary.
 
@@ -74,6 +72,8 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 1. Switch back to the browser tab with Storage Browser.
 
 1. In Storage Browser, select the **samples-workitems** container from the **Blob containers** list.
+
+1. In the **Authentication method:** link at the top if the list, select **Switch to Access key**.
 
 1. In the top menu bar, select **Upload**. The **Upload blob** pane opens.
 

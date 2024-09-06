@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.render-api-responses-razor-pages
+metadata:
+  title: Render API responses in ASP.NET Core Razor Pages
+  description: "Render API responses in ASP.NET Core Razor Pages"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: aspnet-core
+  ai-usage: ai-assisted
+title: Render API responses in ASP.NET Core Razor Pages
+summary: Learn how to render API responses in ASP.NET Core Razor Pages and perform HTTP operations by using page handlers.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Combine HTML and C# to define dynamic page rendering logic
+
+  -   Render API responses in Razor Pages
+
+  -   Create pages that perform HTTP operations
+prerequisites: |
+  -   Experience writing C# at an intermediate level
+
+  -   Ability to write HTML at an intermediate level
+
+  -   Knowledge of RESTful services and HTTP action verbs
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+units:
+- learn.wwl.render-api-responses-razor-pages.introduction
+- learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
+- learn.wwl.render-api-responses-razor-pages.discover-razor-syntax
+- learn.wwl.render-api-responses-razor-pages.exercise-render-api-responses-razor-pages
+- learn.wwl.render-api-responses-razor-pages.knowledge-check
+- learn.wwl.render-api-responses-razor-pages.summary
+badge:
+  uid: learn.wwl.render-api-responses-razor-pages.badge

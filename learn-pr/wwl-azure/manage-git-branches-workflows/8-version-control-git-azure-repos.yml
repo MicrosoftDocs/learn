@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-branches-workflows.version-control-git-azure-repos
+title: Version Control with Git in Azure Repos
+metadata:
+  title: Version Control with Git in Azure Repos
+  description: "Version Control with Git in Azure Repos"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/8-version-control-git-azure-repos.md)]

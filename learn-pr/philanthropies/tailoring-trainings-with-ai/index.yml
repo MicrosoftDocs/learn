@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.philanthropies.introduction-to-ai-for-trainers
+
+metadata:
+  title: Tailoring trainings with AI
+  description: This module explores the dynamic integration of artificial intelligence (AI) in education.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/24/2024
+  ms.service: artificial-intelligence
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - ce-skilling-ai-copilot
+title: Tailoring trainings with AI
+summary: This module explores the dynamic integration of artificial intelligence (AI) in education.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Recognize how AI is being applied in an educational context. 
+  - Compare the use of AI-powered software in enhancing learning engagement and determine its impact on the learning process.
+
+iconUrl: /training/achievements/tailoring-trainings-with-ai.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- higher-ed-educator
+- business-user
+- data-engineer
+- school-leader
+products:
+- ai-services
+- azure-machine-learning
+- azure-machine-learning-designer
+- m365-apps
+- azure-translator-text
+- azure-translator-speech
+- ms-copilot
+- language-service
+subjects:
+- artificial-intelligence
+units:
+- learn.philanthropies.introduction-to-ai-for-trainers.introduction
+- learn.philanthropies.introduction-to-ai-for-trainers.integrate-artificial-intelligence-education
+- learn.philanthropies.introduction-to-ai-for-trainers.ai-and-future-of-education
+- learn.philanthropies.introduction-to-ai-for-trainers.knowledge-check
+- learn.philanthropies.introduction-to-ai-for-trainers.summary
+badge:
+  uid: learn.philanthropies.introduction-to-ai-for-trainers.badge

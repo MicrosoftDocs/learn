@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-evaluation-and-testing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the "Accessibility evaluation and testing" module.
+  ms.date: 04/15/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the three types of accessibility testing?"
+    choices:
+    - content: "Unit testing, system testing, performance testing"
+      isCorrect: false
+      explanation: "Incorrect. These aren't part of the accessibility testing methodology."
+    - content: "Manual testing, automated testing, and user testing"
+      isCorrect: true
+      explanation: "Correct. These are all part of the accessibility testing methodology."
+    - content: "Beta testing, alpha testing, compatibility testing"
+      isCorrect: false
+      explanation: "Incorrect. These aren't part of the accessibility testing methodology."
+  - content: "Accessibility Insights does a lot. Which of these does it NOT do for you?"
+    choices:
+    - content: "Help you perform both manual and automated accessibility testing."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Insights does provide automated testing and helps with manual testing."
+    - content: "Equip you with detailed accessibility reports and recommendations."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Insights does provide detailed reports and recommendations."
+    - content: "Use AI to develop branded copy and captions for all your web pages."
+      isCorrect: true
+      explanation: "Correct. Accessibility Insights isn't a generative AI tool."
+    - content: "Solve accessibility issues before you ship your apps to your customers."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Insights does help solve accessibility issues before you ship your product."
+  - content: "What does the Microsoft Accessibility Checker do to improve accessibility? "
+    choices:
+    - content: "Ensures PowerPoint, Word, and Outlook content is easy for people with disabilities to read."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "Finds accessibility problems in your documents; generates a list of accessibility errors/warnings."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "Presents how-to-fix recommendations for any accessibility issue it uncovers in your documents.  "
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+  - content: "What are the benefits of collaborating with others when testing accessibility?"
+    choices:
+    - content: "You leverage others' expertise, perspectives, and feedback to improve your product or process."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "You create a more inclusive and accessible product, service, and community."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "You broaden your knowledge with input from other accessibility professionals and advocates."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker helps ensure your content is usable, finds accessibility problems in your documents, and presents how to fix recommendations."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Leveraging others' expertise, creating an inclusive product, and broadening your knowledge are all benefits of collaborating with others when performing accessibility testing."

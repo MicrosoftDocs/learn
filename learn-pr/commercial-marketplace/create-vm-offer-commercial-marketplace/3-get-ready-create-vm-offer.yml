@@ -3,12 +3,11 @@ uid: learn.create-vm-offer-commercial-marketplace.3-get-ready-create-vm-offer
 title: Get ready to create your virtual machine offer
 metadata:
   title: Get ready to create your virtual machine offer
-  description: Overview of concepts and considerations that will help publishers plan for their Azure Marketplace VM offer
-  ms.date: 06/03/2021
-  author: marleva
-  ms.author: maevan
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  description: Overview of concepts and considerations that help publishers plan for their Azure Marketplace virtual machine (VM) offer.
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-get-ready-create-vm-offer.md)]

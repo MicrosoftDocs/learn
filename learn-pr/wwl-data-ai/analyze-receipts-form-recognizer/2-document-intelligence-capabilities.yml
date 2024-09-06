@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.document-intelligence-capabilities
+title: Explore capabilities of document intelligence
+metadata:
+  title: Explore capabilities of document intelligence
+  description: Explore capabilities of document intelligence
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/02/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-document-intelligence-capabilities.md)]

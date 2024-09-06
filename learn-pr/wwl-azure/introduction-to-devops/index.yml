@@ -3,21 +3,25 @@ uid: learn.wwl.introduction-to-devops
 metadata:
   title: Introduction to DevOps
   description: "Introduction to DevOps"
-  ms.date: 11/02/2022
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Introduction to DevOps
 summary: This module explores the key areas that organizations must apply to start their DevOps transformation Journey, change the team's mindset, and define timelines and goals.
 abstract: |
   By the end of this module, you'll be able to:
-  *   Understand what DevOps is and the steps to accomplish it
-  *   Identify teams to implement the process
-  *   Plan for the transformation with shared goals and timelines
-  *   Plan and define timelines for goals
-prerequisites: |
-  None
+
+  -   Understand what DevOps is and the steps to accomplish it
+
+  -   Identify teams to implement the process
+
+  -   Plan for the transformation with shared goals and timelines
+
+  -   Plan and define timelines for goals
+prerequisites: None
 iconUrl: /training/achievements/1-introduction-to-devops.svg
 levels:
 - advanced
@@ -47,7 +51,15 @@ units:
 - learn.wwl.introduction-to-devops.what-is-devops
 - learn.wwl.introduction-to-devops.explore-devops-journey
 - learn.wwl.introduction-to-devops.identify-transformation-teams
+- learn.wwl.introduction-to-devops.define-organization-structure-agile-practices
 - learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
+- learn.wwl.introduction-to-devops.what-is-azure-devops
+- learn.wwl.introduction-to-devops.what-is-github
+- learn.wwl.introduction-to-devops.design-license-management-strategy
+- learn.wwl.introduction-to-devops.what-source-control
+- learn.wwl.introduction-to-devops.describe-working-git-locally
+- learn.wwl.introduction-to-devops.introduction-azure-repos
+- learn.wwl.introduction-to-devops.introduction-to-github
 - learn.wwl.introduction-to-devops.knowledge-check
 - learn.wwl.introduction-to-devops.summary
 badge:

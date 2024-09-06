@@ -1,4 +1,4 @@
-Azure Boards is a tool in Azure DevOps to help teams plan the work that needs to be done. The Tailspin team will use this tool to get a better idea of what work needs to be done and how to prioritize it.
+Azure Boards is a tool in Azure DevOps to help teams plan the work they need to do. The Tailspin team will use this tool to get a better idea of what work they need to do and how to prioritize it.
 
 Mara created her own project on Azure Boards using the Basic process. It shows the problems in the build process that she and Andy identified. Mara gets the team together for a quick demo.
 
@@ -14,12 +14,12 @@ Perhaps it's easier to show you. Here's Azure Boards using the Basic process:
 
 **Amita:** Tell us about the Basic process. Are there other options?
 
-**Mara:** There are four processes to choose from. We can use:
+**Mara:** There are four processes from which to choose. We can use:
 
-* **Capability Maturity Model Integration (CMMI)**. This is really for large organizations and it's pretty complicated so I didn't use it.
-* **Scrum**. Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master; that's someone who's usually received some training and certification so I didn't pick that one either.
-* **Agile**. This seemed like the obvious choice since I'm always talking about Agile, but it has a few more things to consider than the simplest option.
-* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
+* **Capability Maturity Model Integration (CMMI)**: This is really for large organizations and it's pretty complicated, so I didn't use it.
+* **Scrum**: Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master; that's someone who's usually receives some training and certification, so I didn't pick that one either.
+* **Agile**: This seemed like the obvious choice because I'm always talking about Agile, but it has a few more things to consider than the simplest option.
+* **Basic**: Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
 
 **Amita:** OK, let's use it to get started. We can switch to something else, right?
 
@@ -50,13 +50,13 @@ Eventually, the team settles on seven top issues. Andy volunteers to add tasks t
 
 **Amita:** Wow, that's a lot of problems. How are we ever going to fix all those?
 
-**Mara:** We don't have to fix them all right away. For now, we've identified a _backlog_ or list of work we could pull from. When we plan work, we get to choose what's most urgent or important.
+**Mara:** We don't have to fix them all right away. For now, we've identified a _backlog_, or list of work from which we could pull. When we plan work, we get to choose what's most urgent or important.
 
 After some more discussion, the team decides to take on the three issues Mara originally proposed:
 
-* Stabilize the build server.
-* Create a Git-based workflow.
-* Create unit tests.
+* Stabilize the build server
+* Create a Git-based workflow
+* Create unit tests
 
 **Mara:** These seem like the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
 

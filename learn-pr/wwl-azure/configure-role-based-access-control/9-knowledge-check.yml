@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -28,25 +27,25 @@ quiz:
     - content: "Move VM3 to a new resource group, and then assign the admin to the Owner role on VM3."
       isCorrect: false
       explanation: "Incorrect. The Owner role gives the admin more permissions than they need. It's best to give only the permissions required."
-  - content: "Explain the main differences between Azure roles and Azure Active Directory (Azure AD) roles."
+  - content: "What is the purpose of the 'AssignableScopes' permissions in a role definition?"
     choices:
-    - content: "Azure roles apply to Azure resources. Azure AD roles apply to Azure AD resources such as users, groups, and domains."
+    - content: "Specifies the actions that aren't allowed"
+      isCorrect: false
+      explanation: "Incorrect. The 'AssignableScopes' permissions don't specify the actions that aren't allowed."
+    - content: "Specifies the scopes where a role definition can be assigned"
       isCorrect: true
-      explanation: "Correct.  Azure roles are used to manage access to VMs, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources like user accounts and passwords."
+      explanation: "Correct. The 'AssignableScopes' permissions specify the scopes where a role definition can be assigned."
+    - content: "Specifies the actions that are allowed"
+      isCorrect: false
+      explanation: "Incorrect. The 'AssignableScopes' permissions don't specify the actions that are allowed."
+  - content: "Explain the main differences between Azure roles and Microsoft Entra roles."
+    choices:
+    - content: "Azure roles apply to Azure resources. Microsoft Entra roles apply to Microsoft Entra resources such as users, groups, and domains."
+      isCorrect: true
+      explanation: "Correct.  Azure roles are used to manage access to VMs, storage, and other Azure resources. Microsoft Entra roles are used to manage access to Microsoft Entra resources like user accounts and passwords."
     - content: "Azure roles can be assigned at the root level."
       isCorrect: false
       explanation: "Incorrect. Azure roles can only be assigned at the management groups, subscriptions, resource groups, or resources scope."
-    - content: "Azure AD roles are used to manage access to Azure resources."
+    - content: "Microsoft Entra roles are used to manage access to Azure resources."
       isCorrect: false
-      explanation: "Incorrect. Azure roles are used to view and manage Azure resources. Azure roles are used to manage access to VMs, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources like user accounts and passwords."
-  - content: "What's included in a custom Azure role definition?"
-    choices:
-    - content: "Assignment of a custom role"
-      isCorrect: false
-      explanation: "Incorrect. Role assignment isn't part of a custom role definition."
-    - content: "Actions and DataActions operations scoped to the tenant level"
-      isCorrect: false
-      explanation: "Incorrect. Scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
-    - content: "Operations allowed for Azure resources, and scope of permissions"
-      isCorrect: true
-      explanation: "correct. A custom role definition includes the allowed operations, such as read, write, and delete for Azure resources. The custom role definition also includes the scope of these permissions."
+      explanation: "Incorrect. Azure roles are used to view and manage Azure resources. Azure roles are used to manage access to VMs, storage, and other Azure resources. Microsoft Entra roles are used to manage access to Microsoft Entra resources like user accounts and passwords."

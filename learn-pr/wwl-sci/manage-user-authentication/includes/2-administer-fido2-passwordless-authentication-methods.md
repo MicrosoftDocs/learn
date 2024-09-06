@@ -1,20 +1,19 @@
+As part of the sign-in experience for accounts in Microsoft Entra ID, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Microsoft Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
 
-As part of the sign-in experience for accounts in Azure AD, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
-
-:::image type="content" source="../media/authentication-methods-4b9b6734.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure A D.":::
+:::image type="content" source="../media/authentication-methods-4b9b6734.png" alt-text="Screenshot of the strengths and preferred authentication methods in Microsoft Entra ID.":::
 
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
-Azure AD Multi-Factor Authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user may have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
+Multifactor authentication (MFA) adds extra security over only using a password when a user signs in. The user can be prompted for other forms of authentication. The user might have to respond to a push notification, enter a code from a software or hardware token. Finally, the user might have to respond to an SMS or phone call.
 
 Simplify the user on-boarding experience by registering for both MFA and self-service password reset (SSPR). Microsoft recommends you enable combined security information registration. For resiliency, we recommend you require users to register multiple authentication methods. When one method isn't available for a user during sign-in or SSPR, they can choose to authenticate with another method.
 
 ### Authentication method strength and security
 
-When you deploy features like Azure AD Multi-Factor Authentication in your organization, review the available authentication methods. Choose the methods that meet or exceed your requirements in terms of security, usability, and availability. Where possible, use authentication methods with the highest level of security.
+When you deploy features like multifactor authentication in your organization, review the available authentication methods. Choose the methods that meet or exceed your requirements in terms of security, usability, and availability. Where possible, use authentication methods with the highest level of security.
 
-The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Azure AD:
+The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
 
 :::image type="content" source="../media/authentication-method-strength-security-c8fdb55b.png" alt-text="Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.":::
 
@@ -35,7 +34,7 @@ The following table outlines the security considerations for the available authe
 
 ### How each authentication method works
 
-Some authentication methods can be used as the primary factor when you sign in to an application or device. A good example of primary authentication is to use a FIDO2 security key or a password. Other authentication methods are only available as a secondary factor. Examples are when you use Azure AD Multi-Factor Authentication or SSPR.
+Some authentication methods can be used as the primary factor when you sign in to an application or device. A good example of primary authentication is to use a FIDO2 security key or a password. Other authentication methods are only available as a secondary factor. Examples are when you use multifactor authentication or SSPR.
 
 The following table outlines when an authentication method can be used during a sign-in event:
 
@@ -53,17 +52,17 @@ The following table outlines when an authentication method can be used during a 
 All of these authentication methods can be configured in the Azure portal and increasingly using the Microsoft Graph REST API beta.
 
 > [!NOTE]
-> In Azure AD, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using Azure AD Multi-Factor Authentication.
+> In Microsoft Entra ID, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using multifactor authentication.
 
 The following verification methods can be used in certain scenarios:
 
- -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user Azure AD Multi-Factor Authentication.
+ -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user multifactor authentication.
  -  Security questions - only used for SSPR.
  -  Email address - only used for SSPR.
 
 ## What is FIDO2
 
-The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can be used to sign into their Azure AD or hybrid Azure AD joined Windows 10 or 11 devices and get single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can be used to sign into their Microsoft Entra ID or hybrid Microsoft Entra joined Windows 10 or 11 devices and get single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
  -  FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
  -  Fast Identity Online (FIDO) is an open specification for passwordless authentication
@@ -71,8 +70,8 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 ## Enable FIDO2 security key method
 
-1.  Sign into the Azure portal.
-2.  Browse to **Azure Active Directory** \- **Security** \- **Authentication methods** \- **Authentication method policy**.
+1.  Sign into the Microsoft Entra admin center.
+2.  Browse to **Protection** \- **Authentication methods** \- **Authentication method policy**.
 3.  Under the method **FIDO2 Security Key**, choose the following options:
     
     
@@ -85,8 +84,8 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 1.  Browse to **https://myprofile.microsoft.com**.
 2.  Sign in if you haven't already.
 3.  Select **Security Info**.
-4.  If the user already has at least one Azure AD Multi-Factor Authentication method registered, they can immediately register a FIDO2 security key.
-5.  If they don't have at least one Azure AD Multi-Factor Authentication method registered, they must add one.
+4.  If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
+5.  If they don't have at least one multifactor Authentication method registered, they must add one.
 6.  Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
 7.  Choose **USB device** or **NFC device**.
 8.  Have your key ready and choose **Next**.
@@ -105,7 +104,7 @@ In the example below a user has already provisioned their FIDO2 security key. Th
 
  -  Windows 10, version 1511 or later or Windows 11
  -  Microsoft Azure account
- -  Azure AD
- -  Azure AD Multi-Factor Authentication
+ -  Microsoft Entra ID
+ -  Multifactor authentication
  -  Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
- -  Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure AD
+ -  Microsoft Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID

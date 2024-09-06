@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.introduction-to-device-provisioning-service
+metadata:
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  description: "This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle."
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: module-intro-to-product
+  ms.service: iot-dps
+title: Introduction to Azure IoT Hub Device Provisioning Service
+summary: This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle.
+abstract: |
+  After you complete this module, you'll be able to:
+  *   Evaluate whether Device Provisioning Service is appropriate for your Azure IoT solution.
+  *   Describe the concepts and features of Device Provisioning Service deployments, including device enrollment concepts, attestation methods, and the device auto-provisioning process.
+prerequisites: |
+  Ability to:
+  *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  *   Describe the role of Azure IoT Hub within an Azure IoT solution.
+iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.introduction-to-device-provisioning-service.introduction
+- learn.introduction-to-device-provisioning-service.what-is-device-provisioning-service
+- learn.introduction-to-device-provisioning-service.how-device-provisioning-service-works
+- learn.introduction-to-device-provisioning-service.when-to-use-device-provisioning-service
+- learn.introduction-to-device-provisioning-service.enrollment-concepts
+- learn.introduction-to-device-provisioning-service.get-started-x-509-certificate-attestation
+- learn.introduction-to-device-provisioning-service.get-started-tpm-attestation
+- learn.introduction-to-device-provisioning-service.get-started-symmetric-key-attestation
+- learn.introduction-to-device-provisioning-service.examine-reprovisioning-process
+- learn.introduction-to-device-provisioning-service.knowledge-check
+- learn.introduction-to-device-provisioning-service.summary
+badge:
+  uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge

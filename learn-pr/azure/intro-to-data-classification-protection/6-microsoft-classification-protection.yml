@@ -4,11 +4,10 @@ title: Microsoft technologies for data classification and protection
 metadata:
   title: Microsoft technologies for data classification and protection
   description: Microsoft technologies for data classification and protection
-  ms.date: 03/25/2021
+  ms.date: 05/03/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-microsoft-classification-protection.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-observability-cloud-native-app-with-opentelemetry.add-observability-cloud-native-app
+title: Add observability to a cloud-native application
+metadata:
+  title: Add observability to a cloud-native application
+  description: "Learn about how to add observability to a cloud-native application by using OpenTelemetry."
+  ms.date: 12/20/2023
+  author: codemillmatt  
+  ms.author: masoucou
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-add-observability-cloud-native-app.md)]

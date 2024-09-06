@@ -4,11 +4,11 @@ title: Challenge
 metadata:
   title: Challenge
   description: Use what you just learned about PowerShell to print messages to output.
-  ms.date: 03/29/2023
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 3
 azureSandbox: true
 interactive: powershell

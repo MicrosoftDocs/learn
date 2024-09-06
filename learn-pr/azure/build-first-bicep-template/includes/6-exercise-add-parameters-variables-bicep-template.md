@@ -22,7 +22,7 @@ During the process, you'll:
 
    Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice that you're using a variable for the name of the Azure App Service plan, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+   Also notice that you're using a variable for the Azure App Service plan name, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
    [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
 
@@ -60,7 +60,7 @@ After you've completed all of the preceding changes, your _main.bicep_ file shou
 
 :::code language="bicep" source="code/6-template-2.bicep" :::
 
-If your file doesn't match, copy the example, or adjust your file to match the example.
+If your file doesn't match, copy the example or adjust your file to match the example.
 
 ### Deploy the updated Bicep template
 
@@ -92,7 +92,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to the [Azure portal](https://portal.azure.com?azure-portal=true). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. In your browser, go back to the [Azure portal](https://portal.azure.com?azure-portal=true) and go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
