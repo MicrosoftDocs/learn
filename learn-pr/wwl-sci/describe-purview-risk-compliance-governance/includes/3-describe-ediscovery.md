@@ -9,6 +9,8 @@ eDiscovery is one of the solutions available through the Microsoft Purview porta
 # [eDiscovery](#tab/ediscovery)
 :::image type="content" source="../media/ediscovery-overview.png" lightbox="../media/ediscovery-overview.png" alt-text="A screen capture of the eDiscovery overview page in the Microsoft Purview portal.":::
 
+---
+
 > [!IMPORTANT]
 > eDiscovery can be accessed through the Microsoft Purview compliance portal, but the Microsoft Purview compliance portal is scheduled for retirement by the end of 2024. Unless otherwise stated, information in this unit refers to eDiscovery functionality available through the Microsoft Purview portal.
 
@@ -19,6 +21,8 @@ The Microsoft Purview portal presents a unified UI experience for eDiscovery. If
 
 # [Premium features](#tab/premium-features)
 :::image type="content" source="../media/ediscovery-premium.png" lightbox="../media/ediscovery-premium.png" alt-text="A screenshot of a case with premium features. Review sets are listed in the UI and enabled.":::
+
+---
 
 You can use Microsoft Purview eDiscovery to identify, review, and manage content in Microsoft 365 services to support your investigations. Supported Microsoft 365 services include:
 
