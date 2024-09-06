@@ -1,4 +1,4 @@
-Although logical networks offer the flexibility of incorporating the VLAN-based approach into your Azure Stack HCI networking model, your primary objective is to make the most of SDN virtual networks, which eliminate dependencies on the existing VLANs. The resulting flexibility will accelerate the onboarding of new customers and simplify management of the underlying infrastructure. It'll also help ensure the sufficient level of isolation and accommodate overlapping IP address ranges across multiple tenants.
+Although logical networks offer the flexibility of incorporating the VLAN-based approach into your Azure Stack HCI networking model, your primary objective is to make the most of SDN virtual networks. They eliminate dependencies on the existing VLANs. The resulting flexibility will accelerate the onboarding of new customers and simplify management of the underlying infrastructure. It'll also help ensure the sufficient level of isolation and accommodate overlapping IP address ranges across multiple tenants.
 
 ## Describe Azure Stack HCI tenant virtual networks
 
@@ -8,9 +8,9 @@ Each virtual network interface of a VM in a virtual network is associated with t
 
 - **Customer Address**: An IP address assigned to each VM by customers based on their preferred IP addressing scheme. This allows customers to preserve their existing network configuration when deploying workloads into Azure Stack HCI. The Customer Address is visible to the operating system within the corresponding VM.
 
-- **Provider Address**: An IP address assigned to Azure Stack HCI cluster nodes based on their physical network infrastructure. Provider Addresses appear in network packets that are exchanged between the cluster nodes hosting the customers' VMs. The Provider Address is visible on the physical network, but not to customer VMs.
+- **Provider Address**: An IP address assigned to Azure Stack HCI cluster nodes based on their physical network infrastructure. Provider Addresses appear in network packets that are exchanged between the cluster nodes hosting the customers' VMs. The Provider Address is visible on the physical network but not to customer VMs.
 
-Customer Addresses are part of the customer's network topology, which is virtualized and decoupled from the actual underlying physical network topology, and its addressing scheme is implemented by Provider Addresses.
+Customer Addresses are part of the customer's network topology, which is virtualized and decoupled from the actual underlying physical network topology. Its addressing scheme is implemented by Provider Addresses.
 
 A virtual network consists of one or more virtual subnets. A virtual subnet emulates the Layer 3 (L3) IP subnet functionality for the VMs connected to it. It forms a broadcast domain (similar to a VLAN), with isolation that you can enforce by using either NVGRE or VXLAN.
 
@@ -32,9 +32,9 @@ The simplest method to create an Azure Stack HCI tenant virtual network relies o
 
 The following screenshot depicts some of the settings you can use to perform common Azure Stack HCI tenant virtual network configuration tasks, such as:
 
-- Updating virtual network address prefixes
-- Configuring virtual network peering
-- Configuring Border Gateway Protocol (BGP) router and peers
+- Updating virtual network address prefixes.
+- Configuring virtual network peering.
+- Configuring Border Gateway Protocol (BGP) router and peers.
 
 :::image type="content" source="../media/3-configure-virtual-network.png" alt-text="Screenshot of the Virtual networks pane in Windows Admin Center depicting the settings for V NET 001." border="false" lightbox="../media/3-configure-virtual-network.png":::
 
@@ -42,7 +42,7 @@ Use the following procedure in Windows Admin Center to modify the settings of a 
 
 1. In Windows Admin Center, connect to the Azure Stack HCI cluster.
 1. In the **Tools** pane, in the **Networking** section, select **Virtual networks**.
-1. On the **Virtual networks** page, select the **Inventory** tab, next. Select the virtual network that you want to modify, and then select **Settings**.
+1. On the **Virtual networks** page, select the **Inventory** tab. Select the virtual network that you want to modify, and then select **Settings**.
 1. On the settings pane of the virtual network, use the **General** section settings to perform any of the following tasks:
     - Remove or add address prefixes.
     - Configure peering with another virtual network.
@@ -63,11 +63,11 @@ The benefits of using virtual network peering include:
 Peering introduces the following additional requirements and constraints:
 
 - Peered virtual networks must have non-overlapping IP address spaces.
-- After you peer a virtual network with another virtual network, you cannot add or delete address ranges in the address space.
+- After you peer a virtual network with another virtual network, you can't add or delete address ranges in the address space.
 
 Peering has the following characteristics:
 
-- A peering is unidirectional. For peering to provide connectivity between two virtual networks, it’s necessary to create two peerings: one in each direction.
+- A peering is unidirectional. For peering to provide connectivity between two virtual networks, it’s necessary to create two peerings, one in each direction.
 - After you peer virtual networks, the resources in either virtual network can directly connect with resources in the peered virtual network.
 - Network latency between VMs in peered virtual networks is the same as the latency within a single virtual network.
 - Network throughput is based on the bandwidth allowed for the VM. There are no additional restrictions on bandwidth imposed by the peering.
