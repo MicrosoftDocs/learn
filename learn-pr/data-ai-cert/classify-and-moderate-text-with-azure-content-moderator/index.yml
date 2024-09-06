@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.introduction
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation
-- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-create-moderator-service
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-use-the-api-console
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.knowledge-check
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.summary
