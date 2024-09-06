@@ -8,7 +8,9 @@ metadata:
   description: Fundamental concepts of AI security
   ms.topic: module
   ms.service: artificial-intelligence
-  ms.collection: TBD
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Fundamentals of AI security
 summary: In this module you learn about fundamental concepts of AI security
 abstract: |
