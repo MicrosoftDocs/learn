@@ -32163,6 +32163,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/2-implement-virtual-machines-extensions.md",
       "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/1-introduction.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
     }
   ]
 }
