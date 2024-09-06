@@ -8,7 +8,8 @@ metadata:
   ms.date: 12/4/2023
   ms.service: microsoft-copilot
   ms.topic: module-challenge-project
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
