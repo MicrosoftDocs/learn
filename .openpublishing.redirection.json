@@ -32108,6 +32108,11 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/4-explore-template-parameters.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/3-explore-template-schema.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
     }
   ]
 }
