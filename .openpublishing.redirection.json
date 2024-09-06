@@ -32098,6 +32098,11 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/index.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/5-consider-bicep-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
     }
   ]
 }
