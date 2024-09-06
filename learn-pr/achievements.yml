@@ -3852,6 +3852,11 @@ achievements:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.access-blob-storage-metrics-from-code.badge
+  type: badge
+  title: Access metrics from your Azure Blob Storage Containers Programmatically
+  summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
+  iconUrl: /training/achievements/access-blob-storage-metrics-from-code.svg
 - uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
   type: badge
   title: Classify and moderate text with Azure Content Moderator
