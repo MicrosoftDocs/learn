@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.deep-learning
+title: Deep learning
+metadata:
+  title: Deep learning
+  description: This content is a part of the AI basics module.
+  ms.date: 09/05/2024
+  author: Downes,Mary
+  ms.author: Downes,Mary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-deep-learning.md)]

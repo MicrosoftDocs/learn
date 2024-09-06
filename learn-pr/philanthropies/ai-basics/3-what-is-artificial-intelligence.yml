@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.what-is-artificial-intelligence
+title: What is artificial intelligence?
+metadata:
+  title: What is artificial intelligence?
+  description: This content is a part of the AI basics module.
+  ms.date: 09/05/2024
+  author: Downes,Mary
+  ms.author: Downes,Mary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-what-is-artificial-intelligence.md)]
