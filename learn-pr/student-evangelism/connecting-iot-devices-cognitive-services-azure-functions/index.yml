@@ -1,4 +1,5 @@
 ### YamlMime:Module
+# Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func
 metadata:
   title: "Connecting IoT devices to Azure AI services using Azure Functions"
@@ -9,7 +10,9 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
-  ms.collection: TBD
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: "Connecting IoT devices to Azure AI services using Azure Functions"
 summary: "Create and deploy an Azure function to make a language translation IoT device. The function will use Cognitive Speech Service. Your device will record a voice in a foreign language and convert the speech to a target language."
 abstract: |
