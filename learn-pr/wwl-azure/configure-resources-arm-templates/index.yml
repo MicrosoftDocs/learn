@@ -27,7 +27,6 @@ products:
 subjects:
 - data-modeling
 units:
-- learn.wwl.configure-resources-arm-templates.review-arm-template-advantages
 - learn.wwl.configure-resources-arm-templates.review-quickstart-templates
 - learn.wwl.configure-resources-arm-templates.summary-resources
 badge:
