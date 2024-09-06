@@ -54,8 +54,12 @@ DocumentIntelligenceClient client = new DocumentIntelligenceClient (new Uri(endp
 
 Uri fileUri = new Uri ("<url-of-document-to-analyze>");
 
-AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUri);
+var content = new AnalyzeDocumentContent()
+{
+    UrlSource = uriSource
+};
 
+Operation<AnalyzeResult> operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt-layout", content);
 AnalyzeResult result = operation.Value;
 ```
 
