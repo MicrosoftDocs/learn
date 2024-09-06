@@ -18,7 +18,7 @@ A conditional access policy in Microsoft Entra ID consists of two components, as
 
 When creating a conditional access policy, admins can determine which signals to use through assignments. The assignments portion of the policy controls the who, what, where, and when of the Conditional Access policy. All assignments are logically ANDed. If you have more than one assignment configured, all assignments must be satisfied to trigger a policy. Some of the assignments include:
 
-- **Users** assign who the policy will include or exclude. This assignment can include all users in the directory, specific users and groups,directory roles, external guests, and workload identities.
+- **Users** assign who the policy will include or exclude. This assignment can include all users in the directory, specific users and groups, directory roles, external guests, and workload identities.
 - **Target resources** include applications or services, user actions, Global Secure Access (preview), or authentication context.
     - Applications or services - Administrators can choose from the list of applications or services that include built-in Microsoft applications, including Microsoft Cloud applications, Office 365, the Windows Azure Service Management API, Microsoft Admin portals, and any Microsoft Entra registered applications.
     - User actions - Administrators can choose to define policy not based on a cloud application but on a user action like Register security information or Register or join devices, allowing Conditional Access to enforce controls around those actions.
