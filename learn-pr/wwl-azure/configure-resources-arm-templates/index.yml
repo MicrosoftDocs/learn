@@ -30,7 +30,6 @@ units:
 - learn.wwl.configure-resources-arm-templates.introduction
 - learn.wwl.configure-resources-arm-templates.review-arm-template-advantages
 - learn.wwl.configure-resources-arm-templates.explore-arm-template-schema
-- learn.wwl.configure-resources-arm-templates.explore-arm-template-parameters
 - learn.wwl.configure-resources-arm-templates.review-quickstart-templates
 - learn.wwl.configure-resources-arm-templates.interactive-lab-simulation-templates
 - learn.wwl.configure-resources-arm-templates.knowledge-check
