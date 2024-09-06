@@ -32133,6 +32133,11 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/2-review-template-advantages.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/6-review-quickstart-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
     }
   ]
 }
