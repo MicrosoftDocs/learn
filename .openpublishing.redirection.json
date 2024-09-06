@@ -32088,6 +32088,11 @@
       "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/2-overview-of-text-moderation.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/6-summary.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
