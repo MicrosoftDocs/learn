@@ -8,7 +8,8 @@ metadata:
   ms.date: 03/11/2024
   ms.service: artificial-intelligence
   ms.topic: module
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Implement AI tools into a training environment
 summary: In this module, you learn how to proactively apply AI tools into your training sessions while being aware of the applications limitations creating a more engaging and efficient learning environment for your learners.
