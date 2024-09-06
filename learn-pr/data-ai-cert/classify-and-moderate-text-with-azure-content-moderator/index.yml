@@ -32,7 +32,6 @@ products:
 subjects:
 - classification-analysis
 units:
-- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.introduction
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.knowledge-check
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.summary
