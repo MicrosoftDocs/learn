@@ -8,7 +8,8 @@ metadata:
   ms.date: 07/10/2024
   ms.service: artificial-intelligence
   ms.topic: module
-  ms.collection: TBD
+  ms.collection:
+    - TBD
     - ce-advocates-ai-copilot
   ms.custom:
     - team=cloud_advocates
