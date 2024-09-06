@@ -32058,6 +32058,126 @@
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/3-exercise-create-moderator-service.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/4-exercise-use-the-api-console.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/1-introduction.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/5-knowledge-check.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/2-overview-of-text-moderation.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/6-summary.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/index.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/5-consider-bicep-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/4-explore-template-parameters.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/3-explore-template-schema.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/7-simulation-template.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/8-knowledge-check.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/2-review-template-advantages.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/6-review-quickstart-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/9-summary-resources.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/index.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/3-implement-custom-script-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/4-implement-desired-state-configuration.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/2-implement-virtual-machines-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/1-introduction.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/5-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/6-summary-resources.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
     }
   ]
 }

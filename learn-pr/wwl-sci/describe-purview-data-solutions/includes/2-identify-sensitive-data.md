@@ -67,3 +67,6 @@ Administrators can also use the information gained from these tools to guide the
 
 # [Content explorer](#tab/content-explorer)
 :::image type="content" source="../media/content-explorer.png" lightbox="../media/content-explorer.png" alt-text="A screenshot of the content explorer page in the Microsoft Purview portal.":::
+
+---
+

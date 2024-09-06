@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an Azure storage account
   description: Exercise - Create an Azure storage account
   ms.date: 09/19/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
