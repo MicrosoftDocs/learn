@@ -63,6 +63,5 @@ modules:
 - learn.intro-to-azure-cloud-shell
 - learn.student-evangelism.bash-introduction
 - learn.powershell.intro-to-powershell
-- learn.wwl.configure-resources-arm-templates
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy
