@@ -8,7 +8,7 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.prod: learning-azure
+  
 durationInMinutes: 8
 content: |
   [!include[](includes/5-understand-machine-learning.md)]
