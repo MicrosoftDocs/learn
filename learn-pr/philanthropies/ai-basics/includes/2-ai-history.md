@@ -1,26 +1,24 @@
 # AI history
 
-Enjoying the convenience of your smart devices working seamlessly together at home, it is good to note that this same AI technology is transforming industries, personalizing education, and adding to our lives in countless ways.
+To appreciate advancements like smart home devices, it's helpful to be aware of the history of AI. From its beginnings with the simple rule-based systems of the 1950s, to the advanced algorithms of today, AI evolved continuously and significantly.
 
-To appreciate these advancements, it's essential to start at the beginning and understand the history of AI. From its early beginnings in the 1950s with simple rule-based systems to the advanced algorithms of today, AI has come a long way the past few decades.
-
-The video below reveals how AI concepts and breakthroughs have paved the way for the intelligent devices and applications we rely on daily. By exploring AI's past, we gain insight into how it has evolved to become an integral part of our modern world, impacting everything from our homes to our workplace.
+This video reveals how AI concepts and breakthroughs paved the way for the intelligent devices and applications we rely on daily. By exploring AI's past, we gain insight into how it evolved to become an integral part of our modern world, impacting everything from our homes to our workplace.
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285479]
 
 ## AI development timeline
 
-The history of AI is rich and spans several decades, with significant milestones that have shaped its development. To fully until how we got to AI today, we must understand the origins of AI.
+The history of AI is rich and spans several decades, with significant milestones that shaped its development. To fully appreciate how we got to AI today, we need to understand the origins of AI.
 
 ### Early concepts
 
-The idea of using machines to assist with calculations dates back to as early as 380 BC. However, terms such as "AI" or "machine learning" are much more recent.
+The idea of using machines to assist with calculations dates back to as early as 380 BCE.
 
 ### The early years
 
-In 1950, Alan Turing, a pioneer in computing, posed a profound question: "Can machines think?" This marked the beginning of a new era in technology.
+In 1950, Alan Turing, a pioneer in computing, posed a profound question: "Can machines think?" This question marked the beginning of a new era in technology.
 
-The term "artificial intelligence" was first coined by computer scientist John McCarthy during the Dartmouth Summer Research Project on AI in 1956. This event marked the beginning of AI as a field of study.
+In 1956, computer scientist John McCarthy first coined the term "artificial intelligence" during the Dartmouth Summer Research Project on AI. This event marked the beginning of AI as a field of study.
 
 In 1956, the Logic Theorist, considered the first AI program, was developed.
 
@@ -48,4 +46,4 @@ The 2010s marked a significant expansion in AI capabilities and applications. De
 
 AI continues to evolve rapidly, with advancements in generative AI and its integration into various aspects of daily life and industry. AI technologies are now capable of performing complex tasks, from language translation to autonomous driving.
 
-Understanding the history of AI helps us appreciate how far the technology has come and its potential for future innovations. With the understanding of it's history, we can now ponder the question what is artificial intelligence?
+Understanding the history of AI helps us appreciate how far the technology has come and its potential for future innovations. We can now ponder the question, "What is artificial intelligence?"
