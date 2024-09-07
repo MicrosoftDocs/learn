@@ -43,7 +43,7 @@ When using the Terraform CLI, there a four fundamental steps in the workflow:
 
 ## Terraform LifeCycle
 
-Terraform is designed and should be used to manage the life cycle of your resources. By using a state file, Terraform can manage your resources through these stages:
+Terraform is designed and should be used to manage the lifecycle of your resources. By using a state file, Terraform can manage your resources through these stages:
 
 1. Create: The resource is in desired state, but doesn't exist in actual state and is created in Azure.
 1. Update: The desired state of the resource attributes doesn't match the actual state and the resource is updated to bring in line with desired state.
