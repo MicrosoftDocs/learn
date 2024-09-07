@@ -5,7 +5,7 @@ metadata:
   description: Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 09/04/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:

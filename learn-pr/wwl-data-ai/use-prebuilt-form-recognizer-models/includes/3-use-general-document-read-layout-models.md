@@ -11,7 +11,7 @@ The Azure AI Document Intelligence read model extracts printed and handwritten t
 The read model can also detect the language that a line of text is written in and classify whether it's handwritten or printed text.
 
 > [!NOTE]
-> The read model supports more languages for printed text than handwritten text. Check the [documentation](/azure/ai-services/document-intelligence/language-support-oc) to see the current list of supported languages. 
+> The read model supports more languages for printed text than handwritten text. Check the [documentation](/azure/ai-services/document-intelligence/language-support-ocr#read-model) to see the current list of supported languages. 
 
 For multi-page PDF or TIFF files, you can use the `pages` parameter in your request to fix a page range for the analysis.
 

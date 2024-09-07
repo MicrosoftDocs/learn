@@ -32103,6 +32103,221 @@
       "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/2-organize-categorize-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/3-report-on-server-metadata.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/resource-graph/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/4-deploy-manage-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/policy/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/2-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/3-exercise-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/4-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/5-exercise-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/3-exercise-create-moderator-service.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/4-exercise-use-the-api-console.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/1-introduction.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/5-knowledge-check.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/2-overview-of-text-moderation.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/6-summary.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/index.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/5-consider-bicep-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/4-explore-template-parameters.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/3-explore-template-schema.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/7-simulation-template.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/8-knowledge-check.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/2-review-template-advantages.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/6-review-quickstart-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/9-summary-resources.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/index.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/3-implement-custom-script-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/4-implement-desired-state-configuration.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/2-implement-virtual-machines-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/1-introduction.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/5-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/6-summary-resources.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/2-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
     }
   ]
 }
