@@ -9,7 +9,7 @@ There are a few ways to continue your learning:
 - Follow along with the accompanying video series, [Azure SQL for beginners](https://aka.ms/azuresql4beginners?azure-portal=true).
 - Go deeper with more [code samples on GitHub](https://aka.ms/sqlworkshops?azure-portal=true).
 - Build more with an [Azure free trial account](https://aka.ms/c9-azurefree/?WT.mc_id=dataexposed-c9-niner?azure-portal=true).
-- Connect with the Azure SQL and SQL Server product group to learn about the latest innovations on its show, [Data Exposed](https://aka.ms/dataexposedyt?azure-portal=true), and on Twitter, [@AzureSQL](https://twitter.com/AzureSQL?azure-portal=true).
+- Connect with the Azure SQL and SQL Server product group to learn about the latest innovations on its show, [Data Exposed](https://aka.ms/dataexposedyt?azure-portal=true), and on X, [@AzureSQL](https://x.com/AzureSQL?azure-portal=true).
 
 ## Build solutions with Azure SQL
 
