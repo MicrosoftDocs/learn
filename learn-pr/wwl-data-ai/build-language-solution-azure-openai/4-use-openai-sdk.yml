@@ -6,7 +6,7 @@ metadata:
   description: Understand how to use the C# and Python SDKs to connect to the available endpoints of an Azure OpenAI resource.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 09/04/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

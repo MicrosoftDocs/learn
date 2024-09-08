@@ -8,7 +8,9 @@ metadata:
   ms.author: scottpolly
   ms.topic: module
   ms.service: azure-machine-learning
-  ms.collection: ce-skilling-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-skilling-ai-copilot
 title: Create and understand classification models in machine learning
 summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
 abstract: | 

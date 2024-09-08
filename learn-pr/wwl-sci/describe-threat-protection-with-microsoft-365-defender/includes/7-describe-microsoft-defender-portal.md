@@ -36,6 +36,8 @@ With Security Exposure Management you can discover and monitor assets, get rich 
 # [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
 
+---
+
 #### Attack surface
 
 Security Exposure Management automatically generates attack paths based on the data collected across assets and workloads. It simulates attack scenarios, and identifies vulnerabilities and weaknesses that an attacker could exploit.
@@ -67,7 +69,7 @@ The investigation and response tab includes access to incidents and alerts, hunt
 
 #### Incidents and alerts
 
-An incident in the Microsoft Defender portal is a collection of related alerts, assets, investigations, and evidence to give you a comprehensive look into the entire breadth of an attack. It serves as a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it. Because the Microsoft Defender portal is built upon a unified security operations platform, you get a view of all incidents including incidents generated from the suite of Microsoft Defender XDR solutions, Microsoft Sentinel, and Microsoft Defender for Cloud.
+An incident in the Microsoft Defender portal is a collection of related alerts, assets, investigations, and evidence to give you a comprehensive look into the entire breadth of an attack. It serves as a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it. Because the Microsoft Defender portal is built upon a unified security operations platform, you get a view of all incidents including incidents generated from the suite of Microsoft Defender XDR solutions, Microsoft Sentinel, and other solutions.
 
 Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan. If your organization is onboarded Microsoft to Copilot for Security you can also view an incident summary, guided responses, and more.
 
@@ -82,6 +84,8 @@ Within an incident, you analyze the alerts that affect your network, understand 
 
 # [Incident details page](#tab/incident-details)
 :::image type="content" source="../media/incident-details.png" lightbox="../media/incident-details.png" alt-text="A screenshot of the incident details page for a selected incident in the Microsoft Defender portal.":::
+
+---
 
 #### Hunting
 
@@ -118,6 +122,8 @@ The identity inventory provides a comprehensive view of all corporate identities
 
 # [Identities](#tab/identities)
 :::image type="content" source="../media/assets-identities.png" lightbox="../media/assets-identities.png" alt-text="A screenshot of the identities inventory page in the Microsoft Defender portal.":::
+
+---
 
 ### Microsoft Sentinel
 

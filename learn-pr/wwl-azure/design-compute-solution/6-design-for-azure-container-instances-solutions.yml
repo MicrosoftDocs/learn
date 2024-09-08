@@ -4,12 +4,12 @@ title: Design for Azure Container Instances solutions
 metadata:
   title: Design for Azure Container Instances solutions
   description: "Design for Azure Container Instances solutions"
-  ms.date: 08/05/2024
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-design-for-azure-container-instances-solutions.md)]

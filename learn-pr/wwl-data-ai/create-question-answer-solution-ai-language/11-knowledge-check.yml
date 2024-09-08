@@ -6,13 +6,13 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 08/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
   - content: "You want to create a knowledge base from an existing FAQ document. What should you do?"
     choices:

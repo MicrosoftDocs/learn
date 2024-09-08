@@ -10,6 +10,7 @@ metadata:
   ms.service: azure-ai-document-intelligence
   ms.topic: module
   ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Introduction to Azure AI Document Intelligence
 summary: Azure AI Document Intelligence enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
