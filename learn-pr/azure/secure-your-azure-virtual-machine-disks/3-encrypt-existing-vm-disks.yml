@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-virtual-machine-disks.3-encrypt-existing-vm-disks
 title: Encrypt existing VM disks
 metadata:
   title: Encrypt existing VM disks
-  description: Encrypt existing VM disks
+  description: Encrypt existing virtual machine (VM) disks.
   ms.date: 12/29/2023
   author: roygara
   ms.author: rogarana
