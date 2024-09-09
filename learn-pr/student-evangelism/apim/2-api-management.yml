@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.apim.apim
+uid: learn.apim.api-management
 title: API management
 metadata:
   title: API management
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-apim.md)]
+  [!include[](includes/2-api-management.md)]
 quiz:
   title: Check your knowledge
   questions:
