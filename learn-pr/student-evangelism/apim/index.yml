@@ -28,9 +28,9 @@ products:
 prerequisites: None
 units:
   - learn.apim.introduction
-  - learn.apim.apim
+  - learn.apim.api-management
   - learn.apim.token
-  - learn.apim.exercise
+  - learn.apim.exercise-api-management
   - learn.apim.summary
 badge:
   uid: learn.apim.badge
