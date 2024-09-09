@@ -26,7 +26,7 @@ Tailwind Traders wants to investigate how to implement identity management for u
 
 - **Consider reusable flows for user journeys**. A user journey is the path that you want people to take in your app to achieve their goal. A Tailwind Traders user might want to make a new account, update their profile, or frequently check for other users. Azure AD B2C comes with preconfigured policies called [user flows](/azure/active-directory-b2c/user-flow-overview). You can reuse the same user flows across different apps. Reusing user flows creates a consistent user journey across all apps.
 
-- **Consider allowing users to sign in with their social identities**. Support identity providers to enable Tailwind Traders users to sign in with their existing social or enterprise accounts. There's a long [list of identity providers](/azure/active-directory-b2c/add-identity-provider) and more are being added. Social providers include Amazon, Microsoft Entra ID, Facebook, LinkedIn, Twitter, and Microsoft accounts. 
+- **Consider allowing users to sign in with their social identities**. Support identity providers to enable Tailwind Traders users to sign in with their existing social or enterprise accounts. There's a long [list of identity providers](/azure/active-directory-b2c/add-identity-provider) and more are being added. Social providers include Amazon, Microsoft Entra ID, Facebook, LinkedIn, X, and Microsoft accounts. 
 
 - **Consider a customizable user interface to support branding**. Customize the pages in your Tailwind Traders user flow. Write your own HTML and CSS or use built-in templates called [page layout templates](/azure/active-directory-b2c/customize-ui?pivots=b2c-user-flow).
 

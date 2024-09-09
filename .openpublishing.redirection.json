@@ -32054,9 +32054,124 @@
       "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/2-last-writer-wins.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/3-exercise-observe-data-loss.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/4-implementing-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/5-exercise-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/6-implementing-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/7-exercise-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/2-organize-categorize-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/3-report-on-server-metadata.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/resource-graph/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/4-deploy-manage-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/policy/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/2-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/3-exercise-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/4-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/5-exercise-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
       "redirect_document_id": false
     },
     {
@@ -32177,6 +32292,31 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/6-summary-resources.md",
       "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/2-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
       "redirect_document_id": false
     }
   ]

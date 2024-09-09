@@ -3,6 +3,7 @@ uid: learn.wwl.train-evaluate-cluster-models
 metadata:
   title: Train and evaluate clustering models
   description: "Clustering is a type of machine learning that is used to group similar items into clusters."
+  ms.collection: TBD
   ms.date: 09/07/2023
   author: madiepev
   ms.author: madiepev
