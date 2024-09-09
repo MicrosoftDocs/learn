@@ -1,8 +1,8 @@
-SAP HANA workloads require high performance and low latency. When planning to use  Azure NetApp Files application volume groups for SAP HANA, you should understand proximity placement groups and the requirements of your SAP HANA workload. Developing this understanding enables your application volume group to meet the requirements of your SAP HANA workload. 
+SAP HANA workloads require high performance and low latency. When planning to use Azure NetApp Files application volume groups for SAP HANA, you should understand proximity placement groups and the requirements of your SAP HANA workload. Developing this understanding enables your application volume group to meet the requirements of your SAP HANA workload. 
 
 ## Architecture
 
-Application servers and storage resources are connected through network switches in the Azure infrastructure. With application volume groups, Azure NetApp Files creates key SAP HANA resources – data and log volumes – on separate storage endpoints for each to get direct access with low latency. (If you're using replication technology for backup, these volumes are placed on a different resource.) These features deliver the NFS client performance necessary to optimize your SAP HANA workload by specific optimized placement of your resources.
+Application servers and storage resources are connected through network switches in the Azure infrastructure. With application volume groups, Azure NetApp Files creates key SAP HANA resources (data and log volumes) on separate storage endpoints for each to get direct access with low latency. Note, if you're using replication technology for backup, these volumes are placed on a different resource. These features deliver the NFS client performance necessary to optimize your SAP HANA workload by specific optimized placement of your resources.
 
 ## Virtual machine pinning
 
