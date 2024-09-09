@@ -26,7 +26,7 @@ essentials we provided.
 
 Copilot will then produce a response that meets your request, such as a story text, an image file, or a video link. You can also ask Copilot to refine, expand, or revise its response, or to provide more details or examples. 
 
-Let’s try this prompt in Copilot. “Our organization is running a summer volunteer initiative for career coaching for career switchers. Can you create social media postings tailored to each of the following platforms: X/Twitter, LinkedIn and Facebook?” 
+Let’s try this prompt in Copilot. “Our organization is running a summer volunteer initiative for career coaching for career switchers. Can you create social media postings tailored to each of the following platforms: X, LinkedIn and Facebook?” 
 
 View Copilot’s results here:
 

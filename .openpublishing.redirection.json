@@ -32060,6 +32060,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/2-last-writer-wins.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/3-exercise-observe-data-loss.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/4-implementing-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/5-exercise-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/6-implementing-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/7-exercise-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
       "redirect_document_id": false
