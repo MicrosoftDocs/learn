@@ -6,11 +6,11 @@ Application servers and storage resources are connected through network switches
 
 ## Virtual machine pinning
 
-Azure NetApp Files application volume group leverages proximity placement groups (PPGs) in availability sets to ensure performance. PPGs enforce that the data, log, and shared volumes are created in the close proximity to the SAP HANA VMs so they can meet the performance and low latency requirements of the SAP HANA workload.
+Azure NetApp Files application volume group leverages proximity placement groups (PPGs) in availability sets to ensure performance. PPGs enforce that the data, log, and shared volumes are created in the close proximity to the SAP HANA VMs. This is so they can meet the performance and low latency requirements of the SAP HANA workload.
 
 A PPG resides in an availability set (AvSet). An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide for redundancy and availability. Before requesting pinning, you must create an AvSet then start a virtual machine in it.
 
-When using a PPG without a pinned availability set, the PPG would lose its anchor if the virtual machines in the PPG aren't running. When the virtual machines are restarted, they might then be started in a different location. This action can result in a latency increase because the volumes created with the application volume group aren't moved.
+When you use a PPG without a pinned availability set, the PPG would lose its anchor if the virtual machines in the PPG aren't running. When the virtual machines are restarted, they might then be started in a different location. This action can result in a latency increase because the volumes created with the application volume group aren't moved.
 
 ## Planning
 
