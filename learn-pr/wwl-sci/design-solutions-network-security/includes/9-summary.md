@@ -1,15 +1,16 @@
-In this module, you have learned about the different network segmentation options available on Azure. These include subscriptions, virtual networks (VNets), network security groups (NSGs), application security groups (ASGs), and Azure Firewall. You have also learned about common patterns for segmenting a workload in Azure from a networking perspective, including single VNet, multiple VNets that communicate through peering, and multiple VNets in a hub and spoke model. Each pattern provides a different type of isolation and connectivity, and you should choose a pattern based on your organization's needs. 
+In this module, you have learnt about the various features Azure offers for network security segmentation, including Subscriptions, Virtual Networks (VNets), Network Security Groups (NSGs), Application Security Groups (ASGs), and Azure Firewall. You've also explored the three common patterns for segmenting a workload in Azure: Single VNet, Multiple VNets with peering, and Multiple VNets in a hub and spoke model. Additionally, you've delved into the functionalities of Azure network security groups and Microsoft Defender for DNS, both crucial for maintaining network security.
 
-The main takeaways from this module are that segmentation is essential to maintaining your security posture, and you should capture all inbound and outbound traffic and perform near real-time analysis on that traffic to detect threats and mitigate network vulnerabilities. You should also enable Traffic Analytics and use Network Watcher packet capture regularly to get a more detailed understanding of your network traffic. Finally, you should not develop a custom solution to mirror traffic for large deployments, as the complexity and supportability issues tend to make custom solutions inefficient.
+The main takeaways from this module include understanding how to use Azure's segmentation features to secure your network and resources. You've learnt how to choose the appropriate segmentation pattern based on your operational needs. You've also gained knowledge on how to use Azure network security groups to filter network traffic and how Microsoft Defender for DNS adds an extra layer of protection to your resources. Furthermore, you've learnt about the importance of capturing and analyzing network traffic in real-time using Azure VPN Gateway and Azure Network Watcher. Lastly, you've understood how Microsoft Entra Internet Access and Microsoft Entra Private Access can enhance your organization's internet security and manage access to private apps and resources respectively.
 
 ## Learning objectives
 
 You learned how to:
 
--  Design solutions for network segmentation
--   Design solutions for filtering traffic with network security groups
--   Design solutions for network posture measurement
--   Design solutions for network monitoring
+- Design solutions for network segmentation
+- Design solutions for filtering traffic with network security groups
+- Design solutions for network posture measurement
+- Design solutions for network monitoring
+- Evaluate solutions that use Entra Internet Access and Entra Private Access
 
 ## Learn more with security documentation
 

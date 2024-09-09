@@ -11,12 +11,6 @@ Here's a list of the different Microsoft Defender XDR products and solutions tha
 -   [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp)
 -   [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance)
 
-## Microsoft Defender XDR interactive guide
-
-In this interactive guide, you'll learn how to protect your organization with Microsoft Defender XDR. You'll see how Microsoft Defender XDR can help you detect security risks, investigate attacks to your organization, and prevent harmful activities automatically.
-
-[Check out the interactive guide](https://aka.ms/M365Defender-InteractiveGuide)
-
 ## Microsoft Defender XDR protection
 
 Microsoft Defender XDR services protect:
