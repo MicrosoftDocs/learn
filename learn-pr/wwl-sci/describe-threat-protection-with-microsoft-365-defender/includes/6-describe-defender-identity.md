@@ -67,4 +67,6 @@ The Identities node on the left navigation panel of the Microsoft Defender porta
 # [Tools](#tab/tools)
 :::image type="content" source="../media/identity-tools.png" lightbox="../media/identity-tools.png" alt-text="A screenshot of the identities tools page in the Microsoft Defender portal.":::
 
-Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Microsoft Defender for Identity are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+---
+
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.

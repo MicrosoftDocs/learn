@@ -9,6 +9,7 @@ metadata:
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
+    - TBD
     - ce-advocates-ai-copilot
 title: Moderate content and detect harm with Azure AI Content Safety Studio
 summary: | 

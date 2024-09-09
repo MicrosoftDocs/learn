@@ -25,17 +25,17 @@ Items might be marked as records, but they can also be shown as regulatory recor
 - A regulatory label can’t be removed when an item has been marked as a regulatory record.
 - The retention periods can’t be made shorter after the label has been applied.
 
-For more information on comparing restrictions between records and regulatory records, see the section, "Compare restrictions for what actions are allowed or blocked section" in the article "Learn about records management", linked in the summary and resources unit of this module.
+For more information on comparing restrictions between records and regulatory records, see the section, "Compare restrictions for what actions are allowed or blocked section" in the article "Learn about records management," linked in the summary and resources unit of this module.
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 
-### Common use cases for Records Management
+### Common use cases for Microsoft Purview Records Management
 
-The capabilities of Microsoft Purview Records Management are flexible. There are different ways in which records management can be used across an organization, including:
+There are different ways in which Microsoft Purview Records Management can be used across an organization, including:
 
 - Enabling administrators and users to manually apply retention and deletion actions for documents and emails.
 - Automatically applying retention and deletion actions to documents and emails.
 - Enabling site admins to set default retain and delete actions for all content in a SharePoint library, folder, or document set.
 - Enabling users to automatically apply retain and delete actions to emails by using Outlook rules.
 
-To ensure records management is used correctly across the organization, administrators can work with content creators to put together training materials. Documentation should explain how to apply labels to drive usage, and ensure a consistent understanding.
+To ensure Microsoft Purview Records Management is used correctly across the organization, administrators can work with content creators to put together training materials. Documentation should explain how to apply labels to drive usage, and ensure a consistent understanding.
