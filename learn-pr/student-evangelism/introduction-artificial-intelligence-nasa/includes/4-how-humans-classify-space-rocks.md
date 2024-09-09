@@ -21,7 +21,9 @@ Our brains subconsciously do all of these visual searches and categorization wit
 
 The following image lists some features we can extract from a photo of a motorcycle:
 
-:::image type="content" source="../media/features.png" alt-text="A diagram that shows how humans extract and identify features from what they see. First, a picture of motorcycle. Arrows move from the motorcycle to an extraction algorithm that happens in the human brain. Next, arrows from the extraction algorithm produce a geometric table labeled as features. The table of features has nine boxes that show parts of the motorcycle." loc-scope="Azure":::
+:::image type="complex" source="../media/features.png" alt-text="Diagram that shows how humans extract and identify features from what they see.":::
+   First, a picture of motorcycle. Arrows move from the motorcycle to an extraction algorithm that happens in the human brain. Next, arrows from the extraction algorithm produce a geometric table labeled as features. The table of features has nine boxes that show parts of the motorcycle.
+:::image-end:::
 
 ### Step 2: Find relationships
 

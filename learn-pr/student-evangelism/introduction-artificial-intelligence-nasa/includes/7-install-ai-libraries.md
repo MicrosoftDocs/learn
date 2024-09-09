@@ -106,7 +106,7 @@ Now you have an environment you can use for the rest of the learning path. The l
 
    The saved Jupyter Notebook file should have the file extension *.ipynb*. You should see the file in the **Explorer** view in Visual Studio Code.
 
-1. In Visual Studio code's upper-right corner, change the environment to the new Anaconda environment you created.
+1. In Visual Studio Code's upper-right corner, change the environment to the new Anaconda environment you created.
 
 Congratulations! You've installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
 
