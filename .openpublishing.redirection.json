@@ -20277,6 +20277,66 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/11-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/2-what-is-continuous-integration.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/3-design-the-pipeline.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/4-exercise-set-up-project.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/5-application-images.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/6-exercise-build-staging-image.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/7-exercise-build-production-image.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/8-helm.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/9-exercise-set-up-helm-chart.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/10-exercise-deploy-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-azure-kubernetes-service/1-introduction.md",
       "redirect_url": "/training/modules/intro-to-kubernetes/"
     },
