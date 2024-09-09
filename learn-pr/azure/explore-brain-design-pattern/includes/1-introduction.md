@@ -12,13 +12,16 @@ In this module you'll learn about three key brain design patterns to design modu
 
 - **The Function Pattern** is used when the control actions of the different modules are functionally independent. In practice, it means that you have **independent** control knobs that control different parts of the process. For example:
   - Controlling the fingers and wrist on a robotic arm separately from the elbow and shoulder during the task of stacking pieces on a table.
+
   - Controlling three sections of a factory assembly line.
+
   - Controlling three different chemical reactors, connected sequentially, that are functionally independent and controlled using knobs.
 
 - **The Strategy Pattern** is used when the control actions of the different modules are the same. In practice, it means that the same physical control knobs are used in different scenarios and strategies. For example, in an interview with a machine operator you discover there are three strategies to operate the machine:
-
   - A strategy used during startup.
+
   - A strategy used during continuous operation when product demand is high.
+  
   - A strategy used during continuous operation when product demand is low.
 
     You design a brain with four modules. One module for each of the three strategies, and a fourth that decides which strategy should be used at any given time.
