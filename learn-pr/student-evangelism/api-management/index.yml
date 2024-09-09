@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.apim
+uid: learn.api-management
 metadata:
   title: Managing APIs at scale with API Management
   description: Learn how to
@@ -15,7 +15,7 @@ abstract: |
   - Identify challenges around managing APIs.
   - Distinguish key concepts in Azure API Management.
   - Learn to approach challenges on AI APIs around token management.
-iconUrl: /learn/achievements/apim.svg
+iconUrl: /learn/achievements/api-manangement.svg
 levels:
   - beginner
 roles:
@@ -27,10 +27,10 @@ products:
   - azure-api-management
 prerequisites: None
 units:
-  - learn.apim.introduction
-  - learn.apim.api-management
-  - learn.apim.token
-  - learn.apim.exercise-api-management
-  - learn.apim.summary
+  - learn.api-management.introduction
+  - learn.api-management.api-management
+  - learn.api-management.token
+  - learn.api-management.exercise-api-management
+  - learn.api-management.summary
 badge:
-  uid: learn.apim.badge
+  uid: learn.api-management.badge
