@@ -8,7 +8,7 @@ Of these, Face offers the widest range of facial analysis capabilities.
 
 ## Face service
 
-The Azure Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those face such as:
+The Azure Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of related attributes: 
 
 - **Accessories**: indicates whether the given face has accessories. This attribute returns possible accessories including headwear, glasses, and mask, with confidence score between zero and one for each accessory.
 - **Blur**: how blurred the face is, which can be an indication of how likely the face is to be the main focus of the image.
@@ -18,6 +18,7 @@ The Azure Face service can return the rectangle coordinates for any human faces 
 - **Mask**: indicates whether the face is wearing a mask.
 - **Noise**: refers to visual noise in the image. If you have taken a photo with a high ISO setting for darker settings, you would notice this noise in the image. The image looks grainy or full of tiny dots that make the image less clear.
 - **Occlusion**: determines if there might be objects blocking the face in the image.
+- **Quality For Recognition**: a rating of high, medium, or low that reflects if the image is of sufficient quality to attempt face recognition on. 
 
 ## Responsible AI use 
 
@@ -31,8 +32,9 @@ Anyone can use the Face service to:
 * Return the head pose coordinates for each face in an image.
 
 The Limited Access policy requires customers to [submit an intake form](https://aka.ms/facerecognition) to access additional Azure AI Face service capabilities including:
-* The ability to compare faces for similarity.
-* The ability to identify named individuals in an image. 
+* Face verification: the ability to compare faces for similarity.
+* Face identification: the ability to identify named individuals in an image. 
+* Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of code of conduct policies.
 
 ## Azure resources for Face
 
