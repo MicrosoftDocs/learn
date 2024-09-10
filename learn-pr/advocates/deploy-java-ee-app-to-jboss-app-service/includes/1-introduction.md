@@ -1,6 +1,6 @@
-Java EE applications are used in many enterprises, such as purchase management, manufacturing, and customer relationship management.
+Many enterprises, such as purchase management, manufacturing, and customer relationship management use Java EE applications.
 
-Take the example of a freight delivery system:
+Take the example of a freight-delivery system:
 
 - Your service receives a package, captures the shipping address information, and registers the delivery address.
 - Your service queries and updates data from a relational database.
@@ -11,10 +11,10 @@ In a similar way, in this module, you'll create a database on Azure Database for
 
 By the end of this module, you'll be able to:
 
-- Create and manage Azure Database for MySQL
-- Deploy a Java EE app to JBoss EAP on Azure App Service
-- Create a data source and bind your Java EE app to MySQL
-- Access and manage the Java EE app on JBoss
+- Create and manage Azure Database for MySQL.
+- Deploy a Java EE app to JBoss EAP on Azure App Service.
+- Create a data source and bind your Java EE app to MySQL.
+- Access and manage the Java EE app on JBoss.
 
 ## Prerequisites
 

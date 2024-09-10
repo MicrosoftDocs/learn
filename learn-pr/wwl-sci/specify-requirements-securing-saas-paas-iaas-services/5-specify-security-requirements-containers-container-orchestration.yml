@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-containers-container-orchestration
+title: Specify security requirements for containers and container orchestration
+metadata:
+  title: Specify security requirements for containers and container orchestration
+  description: "SC-100 preparatory unit on the topic: specify security requirements for containers and container orchestration."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-specify-security-requirements-containers-container-orchestration.md)]

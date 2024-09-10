@@ -4,11 +4,10 @@ title: Manage app deployments from IntelliJ IDEA
 metadata:
   title: Manage app deployments from IntelliJ IDEA
   description: In this unit, you'll learn how to use the Azure Toolkit for IntelliJ to manage your deployed web apps.
-  ms.date: 03/01/2020
+  ms.date: 03/18/2024
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/6-manage-deployment-intellij.md)]

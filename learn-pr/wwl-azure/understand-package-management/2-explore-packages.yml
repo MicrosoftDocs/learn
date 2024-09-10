@@ -4,13 +4,12 @@ title: Explore packages
 metadata:
   title: Explore packages
   description: "Explore packages"
-  ms.date: 01/10/2023
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-packages.md)]

@@ -2,30 +2,33 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
   title: Select, sort, and measure objects using the pipeline
-  description: "Select, sort, and measure objects using the pipeline"
-  ms.date: 12/21/2022
+  description: This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.
+  ms.date: 05/30/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-powershell
 title: Select, sort, and measure objects using the pipeline
 summary: This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Explain how to sort objects by a specified property.
-  *   Sort objects by using the Sort-Object command.
-  *   Explain how to measure objects’ numeric properties.
-  *   Measure objects by using the Measure-Object command.
-  *   Explain how to display a subset of objects in a collection.
-  *   Explain how to display a customized list of objects’ properties.
-  *   Select objects by using the Select-Object command.
-  *   Explain how to create calculated properties.
-  *   Create custom calculated properties for display.
+  -   Explain how to sort objects by a specified property.
+  -   Sort objects by using the Sort-Object command.
+  -   Explain how to measure objects’ numeric properties.
+  -   Measure objects by using the Measure-Object command.
+  -   Explain how to display a subset of objects in a collection.
+  -   Explain how to display a customized list of objects’ properties.
+  -   Select objects by using the Select-Object command.
+  -   Explain how to create calculated properties.
+  -   Create custom calculated properties for display.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation.
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  -   Familiarity with Windows networking technologies and implementation.
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 iconUrl: /training/achievements/select-sort-measure-objects-use-pipeline.svg
 levels:
 - intermediate
@@ -33,14 +36,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
+- entra-id
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

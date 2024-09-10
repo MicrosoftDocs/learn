@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.components-of-github-flow
+title: Components of the GitHub flow
+metadata:
+  title: Components of the GitHub flow
+  description: Learn to use the components of the GitHub flow
+  ms.date: 10/27/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-components-of-github-flow.md)]

@@ -13,11 +13,11 @@ When a client connects to a web app and starts a new session, the server generat
 
 On the web server, session data can be stored in memory, in a disk file, in a shared location such as Azure Table storage, or in a database of some sort.
 
-Retaining session data in memory ensures fast access, but affects horizontal scalability. If the web app is hosted by multiple servers acting as a web farm, or as part of a multiregion deployment, all requests from a client that specify a particular cookie must be directed to the same server. This situation results in *sticky* sessions.
+Retaining session data in memory ensures fast access, but affects horizontal scalability. If the web app is hosted by multiple servers acting as a web farm or as part of a multiregion deployment, all requests from a client that specify a particular cookie must be directed to the same server. This situation results in *sticky* sessions.
 
-It's possible for this level of client/server affinity to result in some servers becoming overloaded while others are used less heavily. Additionally, if the server fails, then the state information will be lost.
+It's possible for this level of client/server affinity to result in some servers becoming overloaded while others are used less heavily. Additionally, if the server fails, then the state information is lost.
 
-Saving session data to a file reduces the chances of session data being lost, but it can have similar issues if the file is stored on the local file system for a server. Client/server affinity is still an issue. If the web server fails, the session-state information will be unavailable until the server has been recovered.
+Saving session data to a file reduces the chances of session data being lost, but it can have similar issues if the file is stored on a server's local file system. Client/server affinity is still an issue. If the web server fails, the session-state information will be unavailable until the server has been recovered.
 
 The most scalable approach is to write session data to a shared data store that all servers can access. This approach not only enables improved load balancing of requests across servers, but also ensures availability of session state if an individual web server fails.
 
@@ -25,11 +25,11 @@ If you're using Azure, you can use Table storage, Azure SQL Database, or a servi
 
 ## Configuring a session-state provider in an ASP.NET web application
 
-A session-state provider manages session state in an ASP.NET web app. The session-state provider organizes the session data for each client, handles the lifetime of session data (ensuring it's removed when a session expires), and maintains privacy. Session data is often encrypted, and shouldn't be shared between different users.
+A session-state provider manages session state in an ASP.NET web app. The session-state provider organizes the session data for each client, handles the lifetime of session data (ensuring it's removed when a session expires), and maintains privacy. Session data is often encrypted, and shouldn't be shared among different users.
 
 In an ASP.NET web app, you can configure a session-state provider by using the *\<sessionState\>* section of the web.config file. The *\<sessionState\>*  tag specifies the session provider. Each provider is configured in its own *\<providers\>* section, which contains provider-specific settings.
 
-The default session state provider for ASP.NET operates in memory and doesn't require a separate provider. The configuration looks like this:
+The default session-state provider for ASP.NET operates in memory and doesn't require a separate provider. The configuration looks like this:
 
 ```xml
 <configuration>
@@ -43,7 +43,7 @@ The default session state provider for ASP.NET operates in memory and doesn't re
 </configuration>
 ```
 
-To use a different provider, set the mode to **Custom** in the *\<sessionState\>* element and add the NuGet package that contains the provider to your web app. Then, modify the *\<sessionState\>* section of the web.config file to reference the provider and configure the settings for the provider.
+To use a different provider, set the mode to **Custom** in the *\<sessionState\>* element and add the NuGet package that contains the provider to your web app. Then, modify the web.config file's *\<sessionState\>* section to reference the provider and configure the settings for the provider.
 
 The following example shows the configuration for the Azure Cosmos DB session state provider. This provider writes session data to a container in a Cosmos DB database. You specify the database and collection by using the **databaseId** and **collectionId** parameters.
 
@@ -70,7 +70,7 @@ The following example shows the configuration for the Azure Cosmos DB session st
 </sessionState>
 ```
 
-You must have previously created a Cosmos DB account. You provide the address of the endpoint and the authentication key in the **cosmosDBEndPointSettingKey** and **cosmosDBAuthKeySettingKey** parameters.
+You must have a previously created Cosmos DB account. You provide the address of the endpoint and the authentication key in the **cosmosDBEndPointSettingKey** and **cosmosDBAuthKeySettingKey** parameters.
 
 The following second example shows the configuration for the Azure Cache for Redis provider. Again, the Azure Cache for Redis instance must already exist.
 

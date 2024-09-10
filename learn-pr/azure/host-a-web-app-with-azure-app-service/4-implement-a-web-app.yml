@@ -4,11 +4,13 @@ title: Prepare the web application code
 metadata:
   title: Prepare the web application code
   description: Prepare the web application code
-  ms.date: 12/01/2020
+  ms.date: 05/03/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 durationInMinutes: 3
 content: |

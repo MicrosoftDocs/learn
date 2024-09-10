@@ -2,30 +2,33 @@
 uid: learn.wwl.review-azure-powershell-module
 metadata:
   title: Review Azure PowerShell module
-  description: "This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules."
-  ms.date: 10/19/2022
+  description: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-powershell
 title: Review Azure PowerShell module
-summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules.
+summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe Azure PowerShell.
-  - Describe the Azure Az PowerShell module.
-  - Install the Azure Az PowerShell module.
-  - Migrate Azure PowerShell from AzureRM to Az.
-  - Describe the Azure Active Directory Module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+  -   Describe Azure PowerShell.
+  -   Describe the Azure Az PowerShell module.
+  -   Install the Azure Az PowerShell module.
+  -   Migrate Azure PowerShell from AzureRM to Az.
+  -   Describe the Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation.
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
-  *   Familiarity with CIM and WMI technologies.
-  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
-  *   Familiarity to administer remote computers with Windows PowerShell.
+  -   Familiarity with Windows networking technologies and implementation.
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
+  -   Familiarity with CIM and WMI technologies.
+  -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
+  -   Familiarity to administer remote computers with Windows PowerShell.
 iconUrl: /training/achievements/review-azure-powershell-module.svg
 levels:
 - intermediate
@@ -33,14 +36,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

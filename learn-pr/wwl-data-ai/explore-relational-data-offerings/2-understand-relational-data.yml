@@ -4,13 +4,12 @@ title: Understand relational data
 metadata:
   title: Understand relational data
   description: "Understand relational data"
-  ms.date: 03/08/2023
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-relational-data.md)]

@@ -18,6 +18,6 @@ To ensure that DBAs can't see sensitive data stored in specific columns and that
 
 If highly sensitive data is in a database, you can use Always Encrypted to safely prevent even db_owners from seeing it. You can manage the Always Encrypted keys with role separation, so that the security admin doesn't access the database and the DBA doesn't access the physical keys in plaintext. By using this strategy in combination with monitoring through SQL Audit, you can monitor, mask, and track access to sensitive data, even from DBAs with db_owner rights.
 
-DBAs need to have sensitive data masked, but they still need to be able to troubleshoot performance by using the Azure portal and SQL Server Management Studio or Azure Data Studio. And they need to be able to create new contained database users who must be mapped to Azure Active Directory (Azure AD) principals. 
+DBAs need to have sensitive data masked, but they still need to be able to troubleshoot performance by using the Azure portal and SQL Server Management Studio or Azure Data Studio. And they need to be able to create new contained database users who must be mapped to Microsoft Entra principals. 
 
-One solution is to create an Azure AD group called SQL DBA for the DBAs on each instance. Then, assign the group to the Azure role-based access control (RBAC) role of SQL Server Contributor. Finally, you can set the group to be the Azure AD admin on the logical server.
+One solution is to create a Microsoft Entra group called SQL DBA for the DBAs on each instance. Then, assign the group to the Azure role-based access control (RBAC) role of SQL Server Contributor. Finally, you can set the group to be the Microsoft Entra admin on the logical server.

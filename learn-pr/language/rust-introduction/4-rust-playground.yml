@@ -3,11 +3,10 @@ uid: learn.language.rust-introduction.4-rust-playground
 metadata:
   title: The Rust playground
   description: Discover how to work with code in the Rust playground environment.
-  ms.date: 09/01/2021
+  ms.date: 12/02/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: The Rust playground
 durationInMinutes: 3

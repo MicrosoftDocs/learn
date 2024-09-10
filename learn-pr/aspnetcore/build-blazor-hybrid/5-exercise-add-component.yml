@@ -4,11 +4,12 @@ title: Exercise - Add a component
 metadata:
   title: Exercise - Add a component
   description: Add components to the Blazor Hybrid application.
-  ms.date: 07/22/2022
+  ms.date: 10/20/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  zone_pivot_groups: vsandcode
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-add-component.md)]

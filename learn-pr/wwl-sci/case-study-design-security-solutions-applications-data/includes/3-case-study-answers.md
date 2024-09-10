@@ -23,7 +23,7 @@ Contoso should use GitHub Actions to automate its software development and deliv
 
 ### Implement controls that minimize the risk of unauthorized access to CI/CD workflows.
 
-GitHub Enterprise for Cloud integrates with Azure Active Directory (Azure AD), including its conditional access and multifactor authentication. Users can access a GitHub organization by relying on Security Assertion Markup Language (SAML)-based single sign-on (SSO). SAML SSO supports access controls to such organizational resources as repositories, issues, and pull requests. Organizations can implement System for Cross-domain Identity Management (SCIM) to add, manage, or remove organization member access within GitHub. 
+GitHub Enterprise for Cloud integrates with Microsoft Entra ID, including its conditional access and multifactor authentication. Users can access a GitHub organization by relying on Security Assertion Markup Language (SAML)-based single sign-on (SSO). SAML SSO supports access controls to such organizational resources as repositories, issues, and pull requests. Organizations can implement System for Cross-domain Identity Management (SCIM) to add, manage, or remove organization member access within GitHub. 
 
 ### Standardize the development environment and enhance its security with minimal administrative effort.
 
@@ -60,7 +60,7 @@ The primary cloud service that helps enforce DevSecOps practices when using GitH
 Microsoft Azure Well-Architected Framework offers guidance regarding securing code deployments and infrastructure in the areas of code deployment security, credential scanning, accelerated rollback and roll-forward that address critical bugs and code updates outside of the normal deployment lifecycle
 
 
-To prevent credentials from being stored in the source code or configuration files, integrate code scanning tools within the CI/CD pipeline. This can be implemented throughout the entire application lifecycle. For example, during design, code analyzers can prevent credentials from getting pushed to the source code repository. During build, pipeline add-ons can discover credentials in the source code. During CI process, dependency scanning. Dynamic application security testing (DAST) and static application security testing (SAST) allow for testing applications in use. 
+To prevent credentials from being stored in the source code or configuration files, integrate code scanning tools within the CI/CD pipeline. This can be implemented throughout the entire application lifecycle. For example, during design, code analyzers can prevent credentials from getting pushed to the source code repository. During build, pipeline add-ons can discover credentials in the source code. During the CI process, use dependency scanning. Dynamic application security testing (DAST) and static application security testing (SAST) allow for testing applications in use. 
 
 It's essential that any security-sensitive artifacts, such as secrets or private keys, are stored outside of version control systems and pipelines in a managed key store, such as Azure Key Vault. 
 
@@ -105,7 +105,7 @@ Contoso should also consider purchasing GitHub Enterprise Cloud with GitHub Adva
 
 ### How would you minimize the risk of unauthorized use of CI/CD workflows for Contoso?
 
-In order to transition to GitHub-based CI/CID workflows in the most secure manner, Contoso should create an Azure AD tenant and enable multifactor authentication. GitHub Enterprise Cloud supports modern authentication and integrates with Azure AD, including its conditional access and multifactor authentication capabilities. This won't only enhance authentication security but also centralize identity management and resource authorization. Users are able to access GitHub resources such as repositories, issues, and pull requests by using SAML-based single sign-on. With GitHub Enterprise Cloud, Contoso could also implement System for Cross-domain Identity Management (SCIM) to facilitate user provisioning.
+In order to transition to GitHub-based CI/CID workflows in the most secure manner, Contoso should create a Microsoft Entra tenant and enable multifactor authentication. GitHub Enterprise Cloud supports modern authentication and integrates with Microsoft Entra ID, including its conditional access and multifactor authentication capabilities. This won't only enhance authentication security but also centralize identity management and resource authorization. Users are able to access GitHub resources such as repositories, issues, and pull requests by using SAML-based single sign-on. With GitHub Enterprise Cloud, Contoso could also implement System for Cross-domain Identity Management (SCIM) to facilitate user provisioning.
 
 In addition, Contoso should make sure that the credentials being used within workflows have the least privileges required and protect access to GitHub repositories. In addition, any security sensitive-artifacts, such as secrets or private keys should be stored outside of version control systems and pipelines in a managed key store, such as Azure Key Vault.
 

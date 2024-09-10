@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.types-of-machine-learning
+title: Types of machine learning
+metadata:
+  title: Types of machine learning
+  description: Types of machine learning
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 09/24/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-types-of-machine-learning.md)]

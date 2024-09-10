@@ -3,11 +3,10 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.1-introdu
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 08/01/2019
+  ms.date: 05/25/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

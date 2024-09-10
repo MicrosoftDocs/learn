@@ -4,11 +4,10 @@ title: Exercise - Retrieve a message from the queue
 metadata:
   title: Exercise - Retrieve a message from the queue
   description: Retrieve a message from the queue
-  ms.date: 04/04/2023
+  ms.date: 11/13/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.a-guide-to-artifical-intelligence.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 01/23/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Which type of machine learning is most suitable for a scenario where the data points do not have any attached labels or categories?"
+      choices:
+        - content: "Supervised learning"
+          isCorrect: false
+          explanation: "Incorrect. Supervised learning requires labeled data to train the model and make predictions."
+        - content: "Unsupervised learning"
+          isCorrect: true
+          explanation: "Correct. Unsupervised learning does not need labeled data to train the model. It can determine patterns and structures in the data without guidance."
+        - content: "Reinforcement learning"
+          isCorrect: false
+          explanation: "Incorrect. Reinforcement learning involves learning from trial and error based on rewards and penalties."
+    - content: "Evaluate the statement: 'Machine learning models in healthcare are static and do not change once they are trained.'"
+      choices:
+        - content: "True, because machine learning models cannot be updated like other models."
+          isCorrect: false
+          explanation: "Incorrect. Machine learning models need to be updated and retrained as new feedback and data become available to improve performance."
+        - content: "False, because as hospitals accumulate data over time, the machine learning model continuously refines its ability to identify risk factors and recommend personalized interventions."
+          isCorrect: true
+          explanation: "Correct. Machine learning models can learn from new data and feedback."
+        - content: "True, because machine learning models can only learn during the training phase."
+          isCorrect: false
+          explanation: "Incorrect. Machine learning models can learn not only during the training phase, but also during the testing and deployment phases."
+    - content: "Judge the effectiveness of neural networks in handling unstructured and unlabeled data compared to other machine learning techniques."
+      choices:
+        - content: "More effective"
+          isCorrect: true
+          explanation: "Correct. Neural networks are more effective in handling unstructured and unlabeled data than other machine learning techniques. They can learn complex and nonlinear features from data and achieve high accuracy and performance."
+        - content: "Less effective"
+          isCorrect: false
+          explanation: "Incorrect. Neural networks are not less effective in handling unstructured and unlabeled data than other machine learning techniques. They can outperform in many techniques."
+        - content: "Equally effective"
+          isCorrect: false
+          explanation: "Incorrect. Neural networks are not equally effective in handling unstructured and unlabeled data than other machine learning techniques. They can surpass other techniques in terms of accuracy, performance, and scalability."

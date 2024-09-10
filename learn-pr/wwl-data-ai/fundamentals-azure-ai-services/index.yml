@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.fundamentals-azure-ai-services
+metadata:
+  title: Fundamentals of Azure AI services
+  description: This module is an introduction to how Azure AI services can be used to build applications.
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 12/05/2023
+  ms.service: azure-ai-services
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Fundamentals of Azure AI services
+summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+abstract: |
+  *   Understand applications Azure AI services can be used to build
+  *   Understand how to access Azure AI services in the Azure portal
+  *   Understand how to use Azure AI services keys and endpoint for authentication
+  *   Create and use an Azure AI services resource in a Content Safety Studio setting
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.wwl.fundamentals-azure-ai-services.introduction
+- learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
+- learn.wwl.fundamentals-azure-ai-services.create-azure-ai-resource
+- learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
+- learn.wwl.fundamentals-azure-ai-services.understand-authentication
+- learn.wwl.fundamentals-azure-ai-services.exercise
+- learn.wwl.fundamentals-azure-ai-services.knowledge-check
+- learn.wwl.fundamentals-azure-ai-services.summary
+badge:
+  uid: learn.wwl.fundamentals-azure-ai-services.badge

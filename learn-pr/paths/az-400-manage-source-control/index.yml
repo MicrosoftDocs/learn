@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/25/2020
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Manage source control"
 summary: |
   Learn how GitHub enables you to build a modern source control strategy that fosters collaboration and enables you to automate your build and deployment processes.
@@ -24,8 +23,6 @@ roles:
 products:
 - azure
 - github
-subjects:
-- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.migrate-repository-github

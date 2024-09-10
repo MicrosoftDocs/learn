@@ -2,12 +2,12 @@
 uid: learn.wwl.introduction-open-source-analytics-offering
 metadata:
   title: Introduction to the Open source Analytics Offering
-  description: "Introduction to the Open source Analytics Offering"
+  description: Introduction to the Open source Analytics Offering
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Introduction to the Open source Analytics Offering
 summary: At the end of this module, you will learn that Azure HDInsight is a fully managed cloud service that enables you to efficiently process massive amounts of data using the most popular open source frameworks.
 abstract: |

@@ -1,3 +1,4 @@
+
 A virtual network _service endpoint_ provides the identity of your virtual network to the Azure service. After service endpoints are enabled in your virtual network, you can secure Azure service resources to your virtual network by adding a _virtual network rule_ to the resources.
 
 Today, Azure service traffic from a virtual network uses public IP addresses as source IP addresses. With service endpoints, service traffic switches to use virtual network private addresses as the source IP addresses when accessing the Azure service from a virtual network. This switch allows you to access the services without the need for reserved public IP addresses that are typically used in IP firewalls.
@@ -24,7 +25,7 @@ The following illustration shows a virtual machine connecting to the Azure servi
 
 There are several scenarios where using service endpoints can be advantageous. Review the following points and think about how you can implement service endpoints in your configuration.
 
-- **Consider improved security for resources**. Implement service endpoints to improve the security of your Azure service resources. Virtual network private address spaces can be overlapping and can't be used to uniquely identify traffic originating from your virtual network. When service endpoints are enabled in your virtual network, you secure Azure service resources to your virtual network with virtual network rules. The rule improves security by fully removing public internet access to resources, and allowing traffic only from your virtual network.
+- **Consider improved security for resources**. Implement service endpoints to improve the security of your Azure service resources. When service endpoints are enabled in your virtual network, you secure Azure service resources to your virtual network with virtual network rules. The rule improves security by fully removing public internet access to resources, and allowing traffic only from your virtual network.
 
 - **Consider optimal routing for service traffic**. Routes in your virtual network that force internet traffic to your on-premises or network virtual appliances also typically force Azure service traffic to take the same route as the internet traffic. This traffic control process is known as _forced-tunneling_. Service endpoints provide optimal routing for Azure service traffic to allow you to circumvent forced tunneling.
 

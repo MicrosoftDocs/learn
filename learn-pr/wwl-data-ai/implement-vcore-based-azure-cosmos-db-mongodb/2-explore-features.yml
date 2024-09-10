@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.explore-features
+title: Learn vCore-based Azure Cosmos DB for MongoDB
+metadata:
+  title: Learn vCore-based Azure Cosmos DB for MongoDB
+  description: "Learn vCore-based Azure Cosmos DB for MongoDB"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-features.md)]

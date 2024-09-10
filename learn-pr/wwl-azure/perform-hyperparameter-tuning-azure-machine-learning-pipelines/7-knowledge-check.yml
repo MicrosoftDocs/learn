@@ -3,12 +3,13 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.kn
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 11/17/2022
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

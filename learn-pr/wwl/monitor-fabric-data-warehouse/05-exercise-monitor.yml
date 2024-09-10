@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-data-warehouse.exercise-monitor
+title: Exercise - Monitor a data warehouse in Microsoft Fabric
+metadata:
+  title: Exercise - Monitor a data warehouse in Microsoft Fabric
+  description: "Exercise - Monitor a data warehouse in Microsoft Fabric"
+  ms.date: 04/02/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/05-exercise-monitor.md)]

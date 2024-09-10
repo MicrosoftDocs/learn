@@ -4,7 +4,7 @@ This module examines technical debt, complexity, quality metrics, and plans for 
 
 After completing this module, students and professionals can:
 
- -  Identify and manage technical debt.
+ -  Identify and manage technical debt.  
  -  Integrate code quality tools.
  -  Plan code reviews.
  -  Describe complexity and quality metrics.

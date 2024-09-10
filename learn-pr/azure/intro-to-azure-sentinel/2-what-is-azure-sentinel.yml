@@ -4,11 +4,10 @@ title: What is Microsoft Sentinel?
 metadata:
   title: What is Microsoft Sentinel?
   description: What is Microsoft Sentinel?
-  ms.date: 09/21/2020
+  ms.date: 04/05/2023
   author: deanobalino
   ms.author: deanbryen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: debryen-11292021
 durationInMinutes: 6

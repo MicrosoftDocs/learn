@@ -4,11 +4,10 @@ title: Deploy code to App Service
 metadata:
   title: Deploy code to App Service
   description: Deploy code to App Service
-  ms.date: 12/01/2020
+  ms.date: 05/03/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-deploying-code-to-app-service.md)]

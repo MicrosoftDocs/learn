@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-pipeline-strategy.implement-code-coverage-show-pipeline
+title: Implement code coverage and show in the pipeline
+metadata:
+  title: Implement code coverage and show in the pipeline
+  description: "Implement code coverage and show in the pipeline"
+  ms.date: 05/26/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-implement-code-coverage-show-pipeline.md)]

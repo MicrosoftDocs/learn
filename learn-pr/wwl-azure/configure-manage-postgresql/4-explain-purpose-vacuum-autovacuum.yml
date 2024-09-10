@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-postgresql.explain-purpose-vacuum-autovacuum
+title: Explain the purpose of vacuum and autovacuum
+metadata:
+  title: Explain the purpose of vacuum and autovacuum
+  description: "Explain the purpose of vacuum and autovacuum."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-explain-purpose-vacuum-autovacuum.md)]

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about Redis caching in .NET Aspire to check the knowledge you've gained in this module."
+  ms.date: 3/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-dotnet
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Your user interface microservice obtains information from up to five other microservices to formulate pages. You want to optimize performance by caching each page. Which .NET Aspire component should you use?"
+    choices:
+    - content: "The .NET Aspire StackExchange Redis component"
+      isCorrect: false
+      explanation: "Incorrect. The .NET Aspire StackExchange Redis component can save data to a Redis database or subscribe to a message channel but isn't focused on caching."
+    - content: ".NET Aspire StackExchange Redis output caching component"
+      isCorrect: true
+      explanation: "Correct. Use the output caching component when you want to cache complete HTML pages or smaller sections of user interface output."
+    - content: ".NET Aspire StackExchange Redis distributed caching component"
+      isCorrect: false
+      explanation: "Incorrect. The distributed caching component isn't focused on caching HTML pages or other user interface output."
+  - content: "You've installed and configured the .NET Aspire StackExchange Redis output caching component. Now you want to ensure that the app's homepage is cached for 5 minutes. What should you do?"
+    choices:
+    - content: "Use settings in the appsettings.json file to cache the homepage."
+      isCorrect: false
+      explanation: "Incorrect. You can use the appsettings.json file to configure the cache connection but not to specify which output to cache."
+    - content: "Use dependency injection to retrieve the cache object and add the homepage to it."
+      isCorrect: false
+      explanation: "Incorrect. You use dependency injection to retrieve the cache object when you work with a distributed cache, not an output cache."
+    - content: "Add the OutputCache attribute to the Razor code for the homepage."
+      isCorrect: true
+      explanation: "Correct. When you add the OutputCache attribute to a Razor page, the .NET Aspire output cache component automatically caches the page for the duration you specify."
+  - content: "You're using the .NET Aspire StackExchange Redis distributed caching component to cache information from your product catalog. Where should you call the AddRedisDistributedCache() method?"
+    choices:
+    - content: "In the Program.cs file for each project that will use the cache"
+      isCorrect: true
+      explanation: "Correct. You call the AddRedisDistributedCache() method in the Program.cs file for each project that will use the cache."
+    - content: "In the Program.cs file for the app host project"
+      isCorrect: false
+      explanation: "Incorrect. In the app host Program.cs file, you call the AddRedis() method, not the AddRedisDistributedCache() method."
+    - content: "In Razor pages for each project that will use the cache"
+      isCorrect: false
+      explanation: "Incorrect. If you want to cache output from Razor pages, use the output cache component, not the distributed cache component."

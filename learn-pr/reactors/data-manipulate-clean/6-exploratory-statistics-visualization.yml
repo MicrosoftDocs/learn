@@ -4,11 +4,10 @@ title: Exploratory statistics and visualization
 metadata:
   title: Exploratory statistics and visualization
   description: Exploratory statistics and visualization by using a pandas `DataFrame`.
-  ms.date: 04/22/2020
+  ms.date: 04/08/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-python
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 20
 content: |

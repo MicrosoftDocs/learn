@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-microsoft-defender-365-to-azure-sentinel.plan-for-microsoft-365-defender-connectors
-title: Plan for Microsoft 365 Defender connectors
+title: Plan for Microsoft Defender XDR connectors
 metadata:
-  title: Plan for Microsoft 365 Defender connectors
-  description: "Plan for Microsoft 365 Defender connectors"
+  title: Plan for Microsoft Defender XDR connectors
+  description: "Plan for Microsoft Defender XDR connectors"
   ms.date: 11/14/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

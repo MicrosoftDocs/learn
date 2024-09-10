@@ -3,12 +3,13 @@ uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.index-data-fr
 title: Index data from external data sources using Azure Data Factory
 metadata:
   title: Index data from external data sources using Azure Data Factory
-  description: "Index data from external data sources using Azure Data Factory"
-  ms.date: 09/21/2022
+  description: Index data from external data sources using Azure Data Factory
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 09/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

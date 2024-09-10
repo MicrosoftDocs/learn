@@ -21,7 +21,14 @@ Amita takes a deep breath.
 Amita opens a Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page opens.
 
 > [!TIP]
-> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests. Otherwise, you can just read along.
+> If you want to follow along with Amita's manual tests, you can run a local copy of the Space Game website. In the Visual Studio Code terminal run the following commands and then click the link that looks like `Now listening on: http://localhost:5000`.
+>
+> ```
+> git fetch upstream selenium
+> git checkout -B selenium upstream/selenium
+> dotnet build --configuration Release
+> dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+> ```
 
 **Andy:** OK. What do you check next?
 

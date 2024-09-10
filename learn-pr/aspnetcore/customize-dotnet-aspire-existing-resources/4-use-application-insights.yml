@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.customize-dotnet-aspire-existing-resources.use-application-insights
+title: Use Azure Application Insights to analyze telemetry
+metadata:
+  title: Use Azure Application Insights to analyze telemetry
+  description: In this unit, you'll see how to customize an Azure deployment of a .NET Aspire app to export telemetry data into Azure Application Insights.
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-application-insights.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.use-copilot-to-create-training-materials.design-training-materials-using-microsoft-copilot
+title: Exercise - Design training materials using Microsoft Copilot
+metadata:
+  title: Exercise - Design training materials using Microsoft Copilot
+  description: This content is a part of the 'Use Microsoft Copilot to create training materials' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/06/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 40
+content: |
+  [!include[](includes/2-design-training-materials-using-microsoft-copilot.md)]

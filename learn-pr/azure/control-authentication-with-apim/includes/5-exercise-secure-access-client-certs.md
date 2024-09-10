@@ -10,6 +10,9 @@ In this unit, you'll:
 - Edit the inbound policy to allow only clients with the specified certificate in their request
 - Call the API Management gateway and pass the certificate by using `curl`
 
+> [!NOTE]
+> This exercise uses the resources that you set up in the previous exercise.
+
 ## Create self-signed certificate
 
 First, use Cloud Shell to create a self-signed certificate, which you'll then use for authentication between the client and the API Management gateway.
@@ -100,7 +103,7 @@ You can now test the new authentication policy with and without the certificate.
 1. To test the API without the certificate, run the following command in Cloud Shell, replacing the placeholder values with your API gateway name and subscription key.
 
     ```PowerShell
-    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
+    curl -X -v GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]' 
     ```
 

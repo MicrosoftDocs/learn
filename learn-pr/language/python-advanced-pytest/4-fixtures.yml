@@ -3,13 +3,14 @@ uid: learn.python-advanced-pytest.fixtures
 title: Pytest fixtures
 metadata:
   title: Pytest fixtures
-  description: Use Pytest fixtures to create reusable test helpers. Find out how these fixtures can require other fixtures and automatically clean up after they run.
-  ms.date: 1/31/2022
+  description: Use pytest fixtures to create reusable test helpers. Learn how these fixtures can use other fixtures and automatically clean up after they run.
+  ms.date: 4/12/2024
   author: alfredodeza
   ms.author: alfredodeza
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language # Edit as appropriate for your portfolio area
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-fixtures.md)]

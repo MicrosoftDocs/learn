@@ -18,7 +18,7 @@ To view the connector page:
 
 1. Select **Data connectors page**.
 
-1. Select **Security Events**.
+1. Select **Security Events via Legacy Agent**.
 
 1. Then select the **Open connector** page on the preview pane.
 
@@ -38,7 +38,7 @@ To view the connector page:
 
 1. Select **Data connectors** page.
 
-1. Select **Security Events**.
+1. Select **Security Events via Legacy Agent**.
 
 1. Then select the **Open connector** page on the preview pane.
 

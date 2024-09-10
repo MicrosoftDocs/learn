@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.build-with-playwright
+metadata:
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
+  ms.date: 05/08/2024
+  title: Build Your first end-to-end test with Playwright
+  description: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests. Finally, you'll learn how to create a new test suite, and how to refine your tests.
+  ms.topic: module
+  ms.service: vs-code
+title: Build Your first end-to-end test with Playwright
+summary: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests. Finally, you'll learn how to create a new test suite, and how to refine your tests.
+abstract: |
+  In this module, you will learn
+  - How to use Playwright to test a sample web application.
+  - How to run tests, view test reports, and understand the structure of a Playwright project.
+  - How to use Visual Studio Code to run tests, debug tests, and record new tests.
+  - How to create a new test suite, and how to refine your tests.
+prerequisites: |
+  To get started with Playwright,
+  - Visual Studio Code installed
+  - Latest version of node
+  - Latest version of npm
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- playwright
+- vs-code
+units:
+-  learn.build-with-playwright.introduction
+-  learn.build-with-playwright.introduction-to-playwright
+-  learn.build-with-playwright.set-up-playwright
+-  learn.build-with-playwright.understand-test-configuration
+-  learn.build-with-playwright.understand-test-specification
+-  learn.build-with-playwright.get-started-using-vs-code
+-  learn.build-with-playwright.create-a-test-specification-with-codegen
+-  learn.build-with-playwright.exercise-manually-create-a-test-specification
+-  learn.build-with-playwright.solution-manually-create-a-test-specification
+-  learn.build-with-playwright.knowledge-check
+-  learn.build-with-playwright.summary
+badge:
+  uid: learn.advocates.build-with-playwright.badge

@@ -4,11 +4,10 @@ title: Customize and Manage CDN behavior
 metadata:
   title: Customize and manage CDN behavior
   description: Customize and manage CDN behavior
-  ms.date: 9/27/2022
+  ms.date: 01/10/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-customize-manage-cdn-behavior.md)]

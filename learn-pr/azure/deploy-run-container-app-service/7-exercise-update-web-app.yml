@@ -4,11 +4,13 @@ title: Exercise - Modify the image and redeploy the web app
 metadata:
   title: Exercise - Modify the image and redeploy the web app
   description: Modify the code for the web app, upload a new Docker image, and use a webhook to automatically redeploy the web app.
-  ms.date: 03/28/2019
+  ms.date: 04/27/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10
 content: |

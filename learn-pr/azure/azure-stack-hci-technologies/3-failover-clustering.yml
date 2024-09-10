@@ -3,11 +3,11 @@ uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
 metadata:
   title: What is Azure Stack HCI?
   description: Describe Azure Stack HCI and its components
-  ms.date: 12/09/2020
+  ms.date: 02/02/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 12
 title: What is Azure Stack HCI?

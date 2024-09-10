@@ -2,9 +2,9 @@ Whether you're using Dynamics 365 Remote Assist, Guides, or an Azure mixed reali
 
 ## HoloLens 2 solutions
 
-If you're interested in using business-ready solutions for your organization, start with the [Dynamics 365 applications](https://www.microsoft.com/hololens/apps). 
+If you're interested in using business-ready solutions for your organization, start with the [Dynamics 365 applications](https://www.microsoft.com/hololens/apps).
 
-If you're interested in creating a solution designed for your organization, contact Microsoft's [partner program](https://www.microsoft.com/hololens/partners). 
+If you're interested in creating a solution designed for your organization, contact Microsoft's [partner program](https://www.microsoft.com/hololens/partners).
 
 Independent software vendors that build mixed reality solutions on Azure are larger and more profitable.
 
@@ -15,15 +15,13 @@ Independent software vendors that build mixed reality solutions on Azure are lar
 ## Additional reading
 
 1. [The Total Economic Impact™ Of Mixed Reality Using Microsoft HoloLens 2, a commissioned study conducted by Forrester Consulting, November 2021](https://tools.totaleconomicimpact.com/go/microsoft/HoloLens2/)
-1. [Engineering and construction full customer story](https://customers.microsoft.com/story/1397624343978709058-microsoft-partner-professional-services-dynamics-365-hololens)
+1. [Porsche cars North America full customer story](https://customers.microsoft.com/story/1523387086361264063-porsche-cars-north-america-automotive-dynamics-365-guides-dynamics-365-remote-assist-hololens)
 1. [Imperial College Healthcare NHS Trust customer story](https://customers.microsoft.com/story/825289-imperial-nhs)
 1. [Case Western customer story](https://customers.microsoft.com/story/851349-case-western-reserve-university-higher-education-hololens-en-united-states)
 1. [HoloLens 2 capabilities and solutions](/hololens/hololens-commercial-features)
 1. [Develop for HoloLens - get Started](/windows/mixed-reality/develop/development?tabs=unity)
 1. [Microsoft Store](/hololens/holographic-store-apps)
 1. [Increase revenue and profits for ISVs](https://www.microsoft.com/hololens/forrester-total-economic-impact-isv)
-
-
 
 ## See also
 

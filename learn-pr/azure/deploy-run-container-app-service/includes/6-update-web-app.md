@@ -6,7 +6,7 @@ In this unit, you'll configure the continuous deployment of a web app that uses 
 
 ## What is a webhook?
 
-Azure App Service supports continuous deployment using *webhooks*. A webhook is a service offered by Container Registry. Services and applications can subscribe to the webhook to receive notifications about updates to images in the registry. A web app that uses App Service can subscribe to a Container Registry webhook to receive notifications about updates to the image that contains the web app. When the image is updated, and App Service receives a notification, your app automatically restarts the site, and pulls the latest version of the image.
+Azure App Service supports continuous deployment using *webhooks*. A webhook is a service offered by Container Registry. Services and applications can subscribe to the webhook to receive notifications about updates to images in the registry. A web app that uses App Service can subscribe to a Container Registry webhook to receive notifications about updates to the image that contains the web app. When the image is updated and App Service receives a notification, your app automatically restarts the site and pulls the latest version of the image.
 
 ## What is the Azure Container Registry tasks feature?
 
@@ -16,13 +16,13 @@ Let's use these two features to enable continuous integration from the App Servi
 
 ## Enable continuous integration from App Service
 
-The **Container settings** page of an App Service resource in the Azure portal automates the setup of continuous integration. If you turn on **Continuous Deployment**, App Service configures a webhook in your container registry to notify an App Service endpoint. Notifications from the registry that reach this endpoint cause your app to restart and pull the latest version of the container image.
+The **Deployment Center** page of an App Service resource in the Azure portal automates the setup of continuous integration. If you turn on **Continuous Deployment**, App Service configures a webhook in your container registry to notify an App Service endpoint. Notifications from the registry that reach this endpoint cause your app to restart and pull the latest version of the container image.
 
 ### Extend continuous integration to source control by using an Azure Container Registry task
 
-Container Registry tasks must be created from the command line. Unlike the `az acr build` command that we ran earlier to build our image, the `az acr task create` command creates and registers a long-lived task.
+You must create Container Registry tasks from the command line. Unlike the `az acr build` command that we ran earlier to build our image, the `az acr task create` command creates and registers a long-lived task.
 
-The following command shows how to create a task called *buildwebapp*. The task monitors the GitHub repository for the sample web app used by this module. Each time a change is committed, the task builds the `webimage` Docker image from the source code in GitHub and stores it to your registry in Container Registry. Before running this command, you need to create a GitHub personal access token with permissions to create a webhook in your repository. For private repositories, the token will also need full repository read permissions.
+The following command shows how to create a task called *buildwebapp*. The task monitors the GitHub repository for the sample web app this module uses. Each time a change is committed, the task builds the `webimage` Docker image from the source code in GitHub and stores it to your registry in Container Registry. Before running this command, you need to create a GitHub personal access token with permissions to create a webhook in your repository. For private repositories, the token will also need full repository read permissions.
 
 ```bash
 az acr task create --registry <container_registry_name> --name buildwebapp --image webimage --context https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git --file Dockerfile --git-access-token <access_token>

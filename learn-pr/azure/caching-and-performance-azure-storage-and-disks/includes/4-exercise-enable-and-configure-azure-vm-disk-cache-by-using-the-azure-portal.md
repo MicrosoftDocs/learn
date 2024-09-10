@@ -1,15 +1,15 @@
 Suppose you run a photo-sharing site with data stored on Azure virtual machines (VMs) running SQL Server and custom applications. You want to make the following adjustments:
 
-- You need to change the disk cache settings on a VM.
-- You want to add a new data disk to the VM with caching enabled.
+- Change the disk cache settings on a VM.
+- Add a new data disk to the VM with caching enabled.
 
-You've decided to make these changes through the Azure portal.
+You decide to make these changes through the Azure portal.
 
-In this exercise, we'll walk through making the changes to a VM just described. First, let's sign in to the Azure portal and create a VM.
+In this exercise, we walk through how to make these changes to a VM. First, let's sign in to the Azure portal and create a VM.
 
 ## Create a virtual machine
 
-In this step, we're going to create a VM.
+In this step, we create a VM.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
@@ -17,7 +17,7 @@ In this step, we're going to create a VM.
 
 1. Search for and select **Windows Server** using the *Search services and marketplace* box on the top of the screen.
 
-1. Select **Windows Server** in the search results, then select **Windows Server 2019 Datacenter** in the Plan drop-down. Select **Create**. The **Create a virtual machine** pane appears.
+1. Select **Windows Server** in the search results, then select **Windows Server 2019 Datacenter** in the **Plan** drop-down. Select **Create**. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -43,7 +43,7 @@ In this step, we're going to create a VM.
 
 1. After reviewing your new VM settings, select **Create** to start the deploying your new VM.
 
-VM creation can take a few minutes because it creates all the various resources (storage, network interface, and so on) to support the VM. Wait until the VM has deployed before continuing with the exercise.
+VM creation can take a few minutes because it creates all the various resources (storage, network interface, and so on) to support the VM. Wait until the VM is deployed before continuing with the exercise.
 
 ## View OS disk cache status in the portal
 
@@ -59,13 +59,13 @@ After our VM is deployed, we can confirm the caching status of the OS disk with 
 
 ## Change the cache settings of the OS disk in the portal
 
-From the dropdown list, change the **Host caching** value for the OS disk to **Read-only** and select **Save** in the top menu bar.
+From the dropdown list, change the **Host caching** value for the OS disk to **Read-only** and select **Apply** at the bottom of the page.
 
-This update can take some time, because changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you'll get a notification saying the VM disks have been updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
+This update can take some time, because changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you get a notification saying the VM disks are updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
 
 After completion, the OS disk cache type is set to **Read-only**.
 
-Let's move on to data disk cache configuration. To configure a disk, we'll need first to create one.
+Let's move on to data disk cache configuration. To configure a disk, we first need to create one.
 
 ## Add a data disk to the VM and set caching type
 
@@ -79,13 +79,13 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
     - **Max IOPS**: 120
     - **Max throughput MBps)**: 25
 
-1. Select **Save** in the top menu bar.
+1. Select **Apply** at the bottom of the page.
 
-    Wait until the disk has been created before continuing.
+    Wait until the disk is created before continuing.
 
-1. From the dropdown list, change the **Host caching** value for our new data disk to **Read-only**, and on the top menu bar, select **Save**.
+1. From the dropdown list, change the **Host caching** value for our new data disk to **Read-only**. Then, select **Apply** at the bottom of the page.
 
-    Wait for the VM to finish updating the new data disk. After completion, you'll have a new data disk on your VM.
+    Wait for the VM to finish updating the new data disk. After completion, you have a new data disk on your VM.
 
 In this exercise, we used the Azure portal to configure caching on a new VM, change cache settings on an existing disk, and configure caching on a new data disk. The following screenshot shows the final configuration.
 

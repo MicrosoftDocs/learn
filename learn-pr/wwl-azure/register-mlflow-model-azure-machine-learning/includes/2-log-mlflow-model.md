@@ -1,5 +1,3 @@
-
-
 To train a machine learning model, you may choose to use an open source framework that best suits your needs. After training, you want to deploy your model. **MLflow** is an open source platform that streamlines machine learning deployment, regardless of the type of model you trained and the framework you used.
 
 MLflow is integrated with Azure Machine Learning. The integration with Azure Machine Learning allows you to easily deploy models that you train and track with Mlflow. For example, when you have an MLflow model, you can opt for the no-code deployment in Azure Machine Learning.

@@ -4,7 +4,7 @@ These two areas are separated because the creation of the Key Vault is a managem
 
 ## Authentication
 
-Azure Key Vault uses Azure Active Directory (Azure AD) to authenticate users and apps that try to access a vault. Authentication is always performed by associating the request with the Azure AD tenant of the subscription that the Key Vault is part of. Every user or app making a request must be known to Azure AD. There's no support for anonymous access to a Key Vault.
+Azure Key Vault uses Microsoft Entra ID to authenticate users and apps that try to access a vault. Authentication is always performed by associating the request with the Microsoft Entra tenant of the subscription that the Key Vault is part of. Every user or app making a request must be known to Microsoft Entra ID. There's no support for anonymous access to a Key Vault.
 
 ## Authorization
 

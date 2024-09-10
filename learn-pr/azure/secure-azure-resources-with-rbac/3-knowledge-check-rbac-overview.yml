@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check - What is Azure RBAC?
   description: Knowledge check - What is Azure RBAC?
-  ms.date: 09/30/2022
+  ms.date: 09/07/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

@@ -1,1 +1,0 @@
-Your team needs to configure the company's IoT solution to include the ability to trigger downstream business processes in response to IoT Hub events. The experience that you have gained by implementing IoT Hub event-based notifications in a test environment will help the team to implement future business integration tasks.

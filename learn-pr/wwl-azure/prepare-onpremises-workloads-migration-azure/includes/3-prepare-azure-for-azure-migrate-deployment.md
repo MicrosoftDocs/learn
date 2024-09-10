@@ -28,10 +28,10 @@ When creating an Azure Migrate project, you enable the Azure Migrate: Server Ass
 
 ### Appliance registration process
 
-Registering the appliance enables it to push the metadata collected during discovery and assessment to the Azure Migrate project. To do this, Azure Migrate creates two Azure Active Directory (Azure AD) apps during appliance registration.
+Registering the appliance enables it to push the metadata collected during discovery and assessment to the Azure Migrate project. To do this, Azure Migrate creates two Microsoft Entra apps during appliance registration.
 
 - The first app communicates with Azure Migrate service endpoints.
-- The second app is used by the appliance to create an Azure Key Vault, which stores Azure AD app information and appliance configuration settings. (For VMware virtual machine migration, download an OVA file instead.) 
+- The second app is used by the appliance to create an Azure Key Vault, which stores Microsoft Entra app information and appliance configuration settings. (For VMware virtual machine migration, download an OVA file instead.) 
 
 When you register the appliance, these resource providers are registered with the subscription chosen in the appliance:
 
@@ -43,16 +43,16 @@ Registering a resource provider configures your subscription to work with the re
 
 ### Assign permissions to register the appliance
 
-To register the appliance, the Azure account needs permissions for Azure Migrate to create the Azure AD apps. A tenant/global administrator can assign the required permissions in either of two ways:
+To register the appliance, the Azure account needs permissions for Azure Migrate to create the Microsoft Entra apps. A tenant/global administrator can assign the required permissions in either of two ways:
 
-- Grant permissions to users in the tenant to create and register Azure AD apps.
+- Grant permissions to users in the tenant to create and register Microsoft Entra apps.
 - Assign the Application Developer role (that has the permissions) to the account.
 
 The apps need only enough access permission to create and register the AD apps, and don’t inherit permissions for any other actions on the subscription. You can revoke the permissions once discovery is set up.
 
-Your global administrator has granted permissions by navigating in Azure AD to **Azure Active Directory** > **Users** > **User Settings** and setting **App registrations** to **Yes**.
+Your global administrator has granted permissions by navigating in Microsoft Entra ID to **Microsoft Entra ID** > **Users** > **User Settings** and setting **App registrations** to **Yes**.
 
-![Screenshot of the User Settings page under Microsoft Active Directory in the Azure portal. The screenshot shows options for managing Azure AD access to applications. The App registrations option is highlighted with a red border.](../media/6653-app-registrations.png)
+![Screenshot of the User Settings page under Microsoft Active Directory in the Azure portal. The screenshot shows options for managing Microsoft Entra ID access to applications. The App registrations option is highlighted with a red border.](../media/6653-app-registrations.png)
 
 ## Finalize setting up Azure prerequisites
 

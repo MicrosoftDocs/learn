@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.configure-plugin
+title: Configure the Microsoft Sentinel plugin
+metadata:
+  title: Configure the Microsoft Sentinel plugin
+  description: Configure the Microsoft Sentinel plugin.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 06/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-configure-plugin.md)]

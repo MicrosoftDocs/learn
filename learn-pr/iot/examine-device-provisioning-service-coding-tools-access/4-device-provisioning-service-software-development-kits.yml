@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.sdks
+title: Examine the Device Provisioning Service SDKs
+metadata:
+  title: Examine the Device Provisioning Service SDKs
+  description: "Examine the Device Provisioning Service SDKs"
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-device-provisioning-service-software-development-kits.md)]

@@ -4,11 +4,10 @@ title: Step 1 - Design
 metadata:
   title: Step 1 - Design - Capture Requirements and Create a Data-Flow Diagram
   description: Capture Requirements and Create a Data-Flow Diagram
-  ms.date: 02/28/2020
+  ms.date: 10/24/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-step-1-design-phase.md)]

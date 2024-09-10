@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-premium-retention
+title: Configure audit retention with Audit (Premium)
+metadata:
+  title: Configure audit retention with Audit (Premium)
+  description: "Configure audit retention with Audit (Premium)."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-premium-retention.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the maximum retention period that Microsoft Purview Audit (Premium) allows for audit logs?"
+    choices:
+    - content: "180 days."
+      isCorrect: false
+      explanation: "Incorrect: While 180 days is a standard retention period, Audit (Premium) allows for longer retention."
+    - content: "5 years."
+      isCorrect: false
+      explanation: "Incorrect: Audit (Premium) supports retention periods longer than five years."
+    - content: "10 years."
+      isCorrect: true
+      explanation: "Correct: Audit (Premium) allows organizations to set retention periods up to 10 years with the appropriate add-on license."

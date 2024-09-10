@@ -3,14 +3,12 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-lo
 metadata:
   title: Exercise - Route resource logs to Log Analytics and then view log data
   description: In this exercise, we'll explore how to route storage resource logs, and then view log data.
-  ms.date: 05/05/2021
+  ms.date: 12/21/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Route resource logs to Log Analytics and then view log data
 durationInMinutes: 8
-interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-storage-logging.md)]

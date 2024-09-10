@@ -1,5 +1,5 @@
 
-You're a Security Operations Analyst working at a company that is implementing Microsoft Purview and Microsoft 365 Defender solutions.  You have already implemented Microsoft Purview Audit (Standard) and used it to search the Unified Audit Log (UAL). Now you need to understand how to setup and implement Microsoft Purview Audit (Premium). Your manager has asked you to create audit log retention policies and to conduct forensic investigations.
+You're a Security Operations Analyst working at a company that is implementing Microsoft Purview and Microsoft Defender XDR solutions.  You have already implemented Microsoft Purview Audit (Standard) and used it to search the Unified Audit Log (UAL). Now you need to understand how to setup and implement Microsoft Purview Audit (Premium). Your manager has asked you to create audit log retention policies and to conduct forensic investigations.
 
 This module explores the key functionality in Microsoft Purview Audit (Premium). Audit (Premium) builds on the capabilities of Audit (Standard). It does so by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 

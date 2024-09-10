@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-compliance-cloud-native-applications.exercise-redact-sensitive-data-cloud-native-application
+title: Exercise - Redact sensitive data in cloud-native applications
+metadata:
+  title: Exercise - Redact sensitive data in cloud-native applications
+  description: Learn how to redact sensitive data in cloud-native applications.
+  ms.date: 12/13/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+  ms.contributors:
+  - masoucou-05122021
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-redact-sensitive-data-cloud-native-application.md)]

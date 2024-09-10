@@ -1,6 +1,3 @@
-
-
-
 You may often find that you need to write a method that returns a string. For example, you may want to retrieve a string from a set of data or modify a string in some way. In this exercise, you'll gain some experience working with strings in methods while practicing a common interview question.
 
 ### Create a method that returns a string

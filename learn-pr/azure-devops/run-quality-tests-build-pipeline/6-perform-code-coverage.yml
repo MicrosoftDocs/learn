@@ -4,12 +4,13 @@ title: Exercise - Perform code coverage testing
 metadata:
   title: Exercise - Perform code coverage testing
   description: Measure the percentage of code that's covered by your unit tests.
-  ms.custom: devdivchpfy22
-  ms.date: 08/10/2022
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-dotnet
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/6-perform-code-coverage.md)]

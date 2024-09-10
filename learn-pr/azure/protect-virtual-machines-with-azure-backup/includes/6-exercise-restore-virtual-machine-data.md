@@ -1,4 +1,4 @@
-A few days after you backed up your first Azure virtual machine (VM), the server had issues. The VM needs to be restored from a backup. You want to restore the virtual machine's disk and attach it to the problematic live server, and then track the restore to ensure that it has finished successfully.
+A few days after you backed up your first Azure virtual machine (VM), the server had issues. The VM needs to be restored from a backup. You want to restore the VM's disk and attach it to the problematic live server, and then track the restore to ensure that it finished successfully.
 
 In this exercise, you'll see how to restore a successful backup to replace a VM that has become corrupted, and monitor its progress.
 
@@ -43,13 +43,13 @@ To prevent this error, follow these steps:
 
 1. In the top left of the Azure portal, select **Home**, select **Virtual Machines**, and then select **NW-APP01**.
 
-    ![Screenshot of the VM overview page.](../media/6-vm-overview.png)
+    ![Screenshot that shows the VM overview page.](../media/6-vm-overview.png)
 
-    The **NW-APP01** virtual machine pane appears.
+    The *NW-APP01* virtual machine pane appears.
 
 1. In the menu bar, select **Stop**.
 
-    ![Screenshot of stopping the VM.](../media/6-stop-vm.png)
+    ![Screenshot that shows how to stop the VM.](../media/6-stop-vm.png)
 
 1. In the **Stop this virtual machine** dialog box, select **OK**.
 
@@ -61,17 +61,17 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. In the menu pane, scroll to **Operations**, and select **Backup**.
 
-    ![Screenshot of the "Backup" operation for a VM](../media/6-vm-backup-menu.png)
+    ![Screenshot of the Backup operation for a VM.](../media/6-vm-backup-menu.png)
 
-1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *nw-app01* appears.
+1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *NW-APP01* appears.
 
 1. Under the **Restore point** text box, select **Select**. The **Select restore point** pane appears.
 
-1. By default the start and end date are set for a two week range. Set the **Start date** to an appropriate date for our restore points (07/05/2021), select the restore point to use for the recovery, and then select **OK**.
+1. By default, the start and end date are set for a two week range. Set the **Start date** to an appropriate date for our restore points (**07/05/2021**), select the restore point to use for the recovery, and then select **OK**.
 
     ![Screenshot of selecting a restore point.](../media/6-restore-point.png)
 
-    The **Restore Virtual Machine** pane for *nw-app01* appears.
+    The **Restore Virtual Machine** pane for *NW-APP01* appears.
 
 1. Configure the restore point using the following values for each setting.
 
@@ -83,23 +83,23 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot that shows the restore configuration options.](../media/6-restore-configuration.png)
 
-1. Select **Restore**. The **Backup** pane for the NW-APP01 virtual machine appears. Notice the notifications in the top right of the toolbar. The latest notification shows   **Triggering restore for NW-APP01**
+1. Select **Restore**. The **Backup** pane for the *NW-APP01* virtual machine appears. Notice the notifications in the top right of the toolbar. The latest notification shows **Triggering restore for NW-APP01**
 
 ## Track a restore
 
 1. In the **Alerts and Jobs** section, select **View all Jobs**. The **Backup Jobs** pane appears.
 
-    ![Screenshot of viewing all jobs.](../media/6-review-jobs.png)
+    ![Screenshot of view details for the restore job.](../media/6-review-jobs.png)
     
 1. In the **Details** column, select **View details** for the **Restore** job.
 
     :::image type="content" source="../media/6-restore-progress.png" alt-text="Screenshot of the restore progress." lightbox="../media/6-restore-progress.png":::
 
-    The **Restore** pane appears for nw-app01.
+    The **Restore** pane appears for *NW-APP01*.
 
 1. You can monitor the progress of the VM restore job:
     - **Job details**: Details about the restore job you launched for this VM.
     - **Job status**: Real-time progress of the restore job.
     - **Sub tasks**: Name and status of the tasks within the job.
 
-    ![Screenshot of the job details.](../media/6-job-details.png)
+    ![Screenshot of the job details pane.](../media/6-job-details.png)

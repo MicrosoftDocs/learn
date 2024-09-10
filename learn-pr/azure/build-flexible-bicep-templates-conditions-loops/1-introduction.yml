@@ -5,11 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to build flexible Bicep templates by using conditions and loops. 
-  ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/14/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,24 +1,4 @@
-Face detection and analysis is an area of artificial intelligence (AI) in which we use algorithms to locate and analyze human faces in images or video content.
-
-## Face detection         
-
-Face detection involves identifying regions of an image that contain a human face, typically by returning *bounding box* coordinates that form a rectangle around the face, like this:
-
-![An image with two faces highlighted in rectangles](../media/face-detection.png)
-
-## Facial analysis
-
-Moving beyond simple face detection, some algorithms can also return other information, such as facial landmarks (nose, eyes, eyebrows, lips, and others).
-
-![facial landmarks image showing data around face characteristics](../media/landmarks-1.png)
-
-These facial landmarks can be used as features with which to train a machine learning model. 
-
-## Facial recognition
-
-A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This usage is more generally known as *facial recognition*, and involves using multiple images of each person you want to recognize to train a model so that it can detect those individuals in new images on which it wasn't trained.
-
-![A person identified as "Wendell"](../media/facial-recognition.png)
+Face detection and analysis is an area of artificial intelligence (AI) which uses algorithms to locate and analyze human faces in images or video content.
 
 ## Uses of face detection and analysis
 
@@ -30,5 +10,3 @@ There are many applications for face detection, analysis, and recognition. For e
 - Advertising - analyzing faces in an image can help direct advertisements to an appropriate demographic audience.
 - Missing persons - using public cameras systems, facial recognition can be used to identify if a missing person is in the image frame.
 - Identity validation - useful at ports of entry kiosks where a person holds a special entry permit.
-
-When used responsibly, facial recognition is an important and useful technology that can improve efficiency, security, and customer experiences. Face is a building block for creating a facial recognition system.

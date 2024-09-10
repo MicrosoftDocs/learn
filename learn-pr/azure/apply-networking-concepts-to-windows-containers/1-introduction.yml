@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Containers are a common development approach for microservice architectures and applications. A containers-based implementation uses hardware efficiently because the security features allow multiple instances to run simultaneously on the same host without affecting each other.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

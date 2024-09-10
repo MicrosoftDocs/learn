@@ -1,0 +1,7 @@
+AI is revolutionizing all sectors, including healthcare. However, its specific implications on your business might not be evident. What are the business challenges and issues that AI can address? When is it most beneficial?
+
+This module aims to equip healthcare professionals with a fundamental understanding of what **Microsoft AI** can bring to the table. Microsoft AI solutions incorporate cutting-edge technologies like **generative AI**, which is projected to generate a staggering value of 1 trillion USD in the healthcare sector.<sup>1</sup>
+
+This module introduces all kinds of AI solutions, from everyday apps to machine learning platforms, so everyone is empowered to incorporate AI in their daily routine. You can learn more about them in the [Leverage AI tools and resources for your business](/training/modules/leverage-ai-tools/) module.
+
+It’s a priority for Microsoft that all these products are held to the highest standards of [responsible AI](https://www.microsoft.com/ai/responsible-ai). This motto implies that Microsoft AI technology must be: fair, reliable, safe, private, secure, inclusive, transparent, and that AI developers should be accountable. These efforts are even more pertinent for the healthcare sector.

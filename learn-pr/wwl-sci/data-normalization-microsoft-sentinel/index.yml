@@ -3,13 +3,13 @@ uid: learn.wwl.data-normalization-microsoft-sentinel
 metadata:
   title: Data normalization in Microsoft Sentinel
   description: "Data normalization in Microsoft Sentinel"
-  ms.date: 10/18/2022
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Data normalization in Microsoft Sentinel
-summary: By the end of this module, you'll be able to use ASIM parsers to identify threats inside your organization.
+summary: By the end of this module, you're able to use Advanced Security Information Model (ASIM) parsers to identify threats inside your organization.
 abstract: |
   After completing this module, you'll be able to:
   *   Use ASIM Parsers
@@ -25,9 +25,6 @@ roles:
 products:
 - azure
 - microsoft-sentinel
-- azure-monitor
-subjects:
-  - cloud-security
 units:
 - learn.wwl.data-normalization-microsoft-sentinel.introduction
 - learn.wwl.data-normalization-microsoft-sentinel.understand

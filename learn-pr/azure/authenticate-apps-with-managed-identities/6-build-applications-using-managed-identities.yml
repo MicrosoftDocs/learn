@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.authenticate-apps-with-managed-identities.6-build-applications-using-managed-identities
 metadata:
-  title: Build applications by using Azure AD managed identities
+  title: Build applications by using Microsoft Entra managed identities
   description: Apps can use managed identities to authenticate requests. See how to define an authorization policy with Azure Key Vault to enable an authenticated identity to read secret info.
-  ms.date: 03/29/2022
+  ms.date: 12/27/2023
   author: barclayn
   ms.author: barclayn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build applications by using Azure AD managed identities
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+title: Build applications by using Microsoft Entra managed identities
 durationInMinutes: 10
 content: |
   [!include[](includes/6-build-applications-using-managed-identities.md)]

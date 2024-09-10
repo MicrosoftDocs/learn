@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: Set up your development environment for this and future modules.
-  ms.date: 04/04/2023
+  ms.date: 04/02/2024
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 2
 content: |

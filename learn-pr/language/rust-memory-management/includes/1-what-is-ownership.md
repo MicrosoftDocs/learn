@@ -21,7 +21,7 @@ Let's say we have a `mascot` variable that's a string, defined within a scope:
 // this scope is now over, so `mascot` is no longer valid and cannot be used.
 ```
 
-If we try to use `mascot` beyond its scope, we'll get an error like this example:
+If we try to use `mascot` beyond its scope, we get an error like this example:
 
 ```rust
 {
@@ -53,8 +53,8 @@ In the previous example, the `mascot` variable owns the String data associated w
 ```rust
 {
     let mascot = String::from("ferris");
-    // mascot dropped here. The string data memory will be freed here.
 }
+// mascot is dropped here. The string data memory will be freed here.
 ```
 
 ## Move semantics
@@ -68,8 +68,8 @@ The simplest example is when declaring a new binding:
     let mascot = String::from("ferris");
     // transfer ownership of mascot to the variable ferris.
     let ferris = mascot;
-    // ferris dropped here. The string data memory will be freed here.
 }
+// ferris is dropped here. The string data memory will be freed here.
 ```
 
 A key thing to understand is that once ownership is transferred, the old variable is no longer valid. In our previous example, after we transfer ownership of the `String` from `mascot` to `ferris`, we can no longer use the `mascot` variable.
@@ -159,7 +159,7 @@ Simple types like numbers are *copy* types. They implement the `Copy` trait, whi
 
 ## Copying types that don't implement `Copy`
 
-One way to work around the errors we saw in the previous example is by *explicitly* copying types before they're moved: known as cloning in Rust. A call to `.clone` will duplicate the memory and produce a new value. The new value is moved meaning the old value can still be used.
+One way to work around the errors we saw in the previous example is by *explicitly* copying types before they're moved: known as cloning in Rust. A call to `.clone` duplicates the memory and produce a new value. The new value is moved meaning the old value can still be used.
 
 ```rust
 fn process(s: String) {}

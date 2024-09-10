@@ -1,10 +1,10 @@
-Administrative units are Azure Active Directory (Azure AD) resources that can be containers for other Azure AD resources. An administrative unit can contain only users and groups.
+Administrative units are Microsoft Entra ID resources that can be containers for other Microsoft Entra resources. An administrative unit can contain only users, groups, and devices.
 
 Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support. You can manage administrative units by using the Azure portal, PowerShell cmdlets and scripts, or Microsoft Graph.
 
 ### What is an administrative unit?
 
-In Azure AD, using a single tenant if you assign a user any administrator role, they're now an admin over every user in the tenant. Always think about the security principle of least privilege, it's always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Azure AD. If you want a User Administrator to be able to manage only a specific set of users and group. Say to only manage users in the Research Department of a hospital. You could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
+In Microsoft Entra ID, using a single tenant if you assign a user any administrator role, they're now an admin over every user in the tenant. Always think about the security principle of least privilege, it's always the best way to grant administrative responsibilities. Administrative units are containers created to solve for this challenge in Microsoft Entra ID. If you want a User Administrator to be able to manage only a specific set of users and group. Say to only manage users in the Research Department of a hospital. You could set up an administrative unit. Within that administrative unit you would add the users and groups for the research team, then you would add a specific user to the User Administrator role within the administrative unit, call them Admin-for-research. Admin-for-research would be able to manage the users in the administrative unit but not across the entire tenant, which helps to achieve the principle of least privilege.
 
 ### What admin roles are available for an administrative unit?
 
@@ -22,25 +22,25 @@ You can have users in the following roles to manage your administrative unit:
 
 ## Plan your administrative units
 
-You can use administrative units to logically group Azure AD resources. An organization whose IT department is scattered globally might create administrative units that define relevant geographical boundaries. In another scenario, where a global organization has suborganizations that are semi-autonomous in their operations, administrative units could represent the suborganizations.
+You can use administrative units to logically group Microsoft Entra resources. An organization whose IT department is scattered globally might create administrative units that define relevant geographical boundaries. In another scenario, where a global organization has suborganizations that are semi-autonomous in their operations, administrative units could represent the suborganizations.
 
 The criteria on which administrative units are created are guided by the unique requirements of an organization. Administrative units are a common way to define structure across Microsoft 365 services. We recommend that you prepare your administrative units with their use across Microsoft 365 services in mind. You can get maximum value out of administrative units when you can associate common resources across Microsoft 365 under an administrative unit.
 
 You can expect the creation of administrative units in the organization to go through the following stages:
 
-1. **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
-1. **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
-1. **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
+1.  **Initial adoption**: Your organization will start creating administrative units based on initial criteria, and the number of administrative units will increase as the criteria are refined.
+2.  **Pruning**: After the criteria are defined, administrative units that are no longer required will be deleted.
+3.  **Stabilization**: Your organizational structure is defined, and the number of administrative units isn't going to change significantly in the short term.
 
-## Delegate administration in Azure Active Directory
+## Delegate administration in Microsoft Entra ID
 
-With organizational growth comes complexity. One common response is to reduce some of the workload of access management with Azure Active Directory (AD) admin roles. You can assign the least possible privilege to users to access their apps and perform their tasks. Even if you don't assign the Global Administrator role to every application owner, you're placing application management responsibilities on the existing Global Administrators. There are many reasons for an organization move toward a more decentralized administration.
+With organizational growth comes complexity. One common response is to reduce some of the workload of access management with Microsoft Entra admin roles. You can assign the least possible privilege to users to access their apps and perform their tasks. Even if you don't assign the Global Administrator role to every application owner, you're placing application management responsibilities on the existing Global Administrators. There are many reasons for an organization move toward a more decentralized administration.
 
-In Azure AD, you can delegate Application creation and management permissions in the following ways:
+In Microsoft Entra ID, you can delegate Application creation and management permissions in the following ways:
 
- -  Restricting who can create applications and manage the applications they create. By default in Azure AD, all users can register application registrations and manage all aspects of applications they create. You can restrict to only allow selected people that permission.
- -  Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Azure AD configuration for a specific application.
- -  Assigning a built-in administrative role that grants access to manage configuration in Azure AD for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Azure AD not related to application configuration.
+ -  Restricting who can create applications and manage the applications they create. By default in Microsoft Entra ID, all users can register application registrations and manage all aspects of applications they create. You can restrict to only allow selected people that permission.
+ -  Assigning one or more owners to an application. A simple way to grant someone the ability to manage all aspects of Microsoft Entra ID configuration for a specific application.
+ -  Assigning a built-in administrative role that grants access to manage configuration in Microsoft Entra ID for all applications. The recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Microsoft Entra ID not related to application configuration.
  -  Create a custom role to define specific permissions. Then assign the role to a user to assign a limited-owner. Or you could assign at the directory scope - all applications - as a limited-administrator.
 
 When granting access, use one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
@@ -95,7 +95,7 @@ For even finer-grained app access delegation, you can assign ownership to indivi
 
 ## Develop a security plan
 
-Azure AD provides an extensive guide to planning and executing a security plan on your Azure AD admin roles, [Securing privileged access for hybrid and cloud deployments](/azure/active-directory/roles/security-planning).
+Microsoft Entra ID provides an extensive guide to planning and executing a security plan on your Microsoft Entra admin roles, [Securing privileged access for hybrid and cloud deployments](/azure/active-directory/roles/security-planning).
 
 ## Establish emergency accounts
 
@@ -103,4 +103,4 @@ To maintain access to your identity management store when issue arises, prepare 
 
 ## Secure your administrator roles
 
-Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.
+Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature that is available to all Microsoft Entra organizations. Security Defaults enforces multifactor authentication on privileged Microsoft Entra accounts.

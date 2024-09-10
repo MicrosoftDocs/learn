@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.plan-your-linux-environment-in-azure.implement-best-practices-for-managing-linux-on-azure-vms
-title: Implement best practices for managing Linux on Azure VMs
+title: Manage Azure Linux VMs
 metadata:
-  title: Implement best practices for managing Linux on Azure VMs
-  description: Learn how to implement best practices for managing Linux on Azure virtual machines.
-  ms.date: 04/07/2023
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Manage Azure Linux VMs
+  description: Learn how to implement best practices for managing Linux on Azure virtual machines, such as boot diagnostics and serial console.
+  ms.date: 10/16/2023
+  author: fossygirl
+  ms.author: carols
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 5
 content: |
   [!include[](includes/3-implement-best-practices-for-managing-linux-on-azure-vms.md)]

@@ -1,3 +1,4 @@
+
 ## Lab scenario
 
 Your organization is exploring Azure virtual networking capabilities. As the Azure Administrator you've been tasked to implement the following requirements:
@@ -17,6 +18,10 @@ Your organization is exploring Azure virtual networking capabilities. As the Azu
 > Tasks 1 - 4 focus on IP addresses and access. 
 
 ## Objectives
+
+> [!NOTE]
+> You may find slight differences between the interactive simulation and the Azure environment, but the core concepts and ideas being demonstrated are the same.
+
 
 + **Task 1**: Create and configure a virtual network in Azure. 
     + Create a virtual network, **az104-04-vnet1**.

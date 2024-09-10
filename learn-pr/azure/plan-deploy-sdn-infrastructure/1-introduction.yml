@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: This is an introduction to the module.
-  ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: An introduction to the module.
+  ms.date: 07/12/2024
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

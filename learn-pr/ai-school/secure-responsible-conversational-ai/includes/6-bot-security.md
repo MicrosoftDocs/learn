@@ -29,7 +29,7 @@ Neural models for conversational AI typically need to be trained on a dataset of
 * Hand-written rules
 * Existing conversational data (whether large-scale or small-scale)
 * New online conversations.
-Naturally occurring conversational data is hard to obtain, for reasons of privacy. However, conversations on public social media sites (for example, from Twitter and Reddit) are one common source of training data. Bear in mind that conversational types vary by the social mediums they appear in - for instance, Twitter conversations tend to be conversation-like and interactive; Reddit exchanges are more like a roundtable where individuals contribute a statement to a discussion.
+Naturally occurring conversational data is hard to obtain, for reasons of privacy. However, conversations on public social media sites (for example, from X and Reddit) are one common source of training data. Bear in mind that conversational types vary by the social mediums they appear in - for instance, X conversations tend to be conversation-like and interactive; Reddit exchanges are more like a roundtable where individuals contribute a statement to a discussion.
 
 Sources that are intrinsically private in nature, such as customer and service interaction data, may come under significant restrictions. They’ll require anonymization, and may only be subject to machine learning under eyes-off processes that don’t include personal information.
 

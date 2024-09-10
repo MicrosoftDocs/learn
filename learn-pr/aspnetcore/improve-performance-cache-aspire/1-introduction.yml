@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that can be addressed by using caching the .NET Aspire framework to optimize a cloud-native application.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -2,11 +2,11 @@ This unit will focus on using Azure API Management to secure APIs. Azure API Man
 
 ## API Management components
 
-Azure API Management is made up of an API _gateway_, a _management plane_, and a _developer portal_. These components are Azure-hosted and fully managed by default. API Management is available in various [tiers](https://learn.microsoft.com/azure/api-management/api-management-features) differing in capacity and features.
+Azure API Management is made up of an API _gateway_, a _management plane_, and a _developer portal_. These components are Azure-hosted and fully managed by default. API Management is available in various [tiers](/azure/api-management/api-management-features) differing in capacity and features.
 
 ![Diagram showing key components of Azure API Management.](../media/api-management-components.png)
 <!--
-[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#api-gateway)
+[](/azure/api-management/api-management-key-concepts#api-gateway)
 -->
 
 ## API gateway
@@ -16,27 +16,27 @@ All requests from client applications first reach the API gateway, which then fo
 Specifically, the gateway:
 
 -   Acts as a facade to backend services by accepting API calls and routing them to appropriate backends
--   Verifies [API keys](https://learn.microsoft.com/azure/api-management/api-management-subscriptions) and other credentials such as [JWT tokens and certificates](https://learn.microsoft.com/azure/api-management/api-management-access-restriction-policies) presented with requests
--   Enforces [usage quotas and rate limits](https://learn.microsoft.com/azure/api-management/api-management-access-restriction-policies)
--   Optionally transforms requests and responses as specified in [policy statements](https://learn.microsoft.com/azure/api-management/api-management-howto-policies)
--   If configured, [caches responses](https://learn.microsoft.com/azure/api-management/api-management-howto-cache) to improve response latency and minimize the load on backend services
--   Emits logs, metrics, and traces for [monitoring, reporting, and troubleshooting](https://learn.microsoft.com/azure/api-management/observability)
+-   Verifies [API keys](/azure/api-management/api-management-subscriptions) and other credentials such as [JWT tokens and certificates](/azure/api-management/api-management-access-restriction-policies) presented with requests
+-   Enforces [usage quotas and rate limits](/azure/api-management/api-management-access-restriction-policies)
+-   Optionally transforms requests and responses as specified in [policy statements](/azure/api-management/api-management-howto-policies)
+-   If configured, [caches responses](/azure/api-management/api-management-howto-cache) to improve response latency and minimize the load on backend services
+-   Emits logs, metrics, and traces for [monitoring, reporting, and troubleshooting](/azure/api-management/observability)
 <!--
-[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#self-hosted-gateway)
+[](/azure/api-management/api-management-key-concepts#self-hosted-gateway)
 -->
 
 
 ### Self-hosted gateway
 
-With the [self-hosted gateway](https://learn.microsoft.com/azure/api-management/self-hosted-gateway-overview), customers can deploy the API gateway to the same environments where they host their APIs, to optimize API traffic and ensure compliance with local regulations and guidelines. The self-hosted gateway enables customers with hybrid IT infrastructure to manage APIs hosted on-premises and across clouds from a single API Management service in Azure.
+With the [self-hosted gateway](/azure/api-management/self-hosted-gateway-overview), customers can deploy the API gateway to the same environments where they host their APIs, to optimize API traffic and ensure compliance with local regulations and guidelines. The self-hosted gateway enables customers with hybrid IT infrastructure to manage APIs hosted on-premises and across clouds from a single API Management service in Azure.
 
-The self-hosted gateway is packaged as a Linux-based Docker container and is commonly deployed to Kubernetes, including to Azure Kubernetes Service and [Azure Arc-enabled Kubernetes](https://learn.microsoft.com/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc).
+The self-hosted gateway is packaged as a Linux-based Docker container and is commonly deployed to Kubernetes, including to Azure Kubernetes Service and [Azure Arc-enabled Kubernetes](/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc).
 
 More information:
 
-- [API gateway in Azure API Management](https://learn.microsoft.com/azure/api-management/api-management-gateways-overview)
+- [API gateway in Azure API Management](/azure/api-management/api-management-gateways-overview)
 <!--
-[](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#management-plane)
+[](/azure/api-management/api-management-key-concepts#management-plane)
 -->
 
 ## Management plane
@@ -50,7 +50,7 @@ Use the management plane to:
 -   Provision and configure API Management service settings
 -   Define or import API schemas from a wide range of sources, including OpenAPI specifications, Azure compute services, or WebSocket or GraphQL backends
 -   Package APIs into products
--   Set up [policies](https://learn.microsoft.com/azure/api-management/api-management-key-concepts#policies) like quotas or transformations on the APIs
+-   Set up [policies](/azure/api-management/api-management-key-concepts#policies) like quotas or transformations on the APIs
 -   Get insights from analytics
 -   Manage users
 
@@ -66,7 +66,7 @@ Microsoft cloud security benchmark's API security baseline outlines a number of 
 * important features which support that control
 * configuration guidance for those features
 
-We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline).
+We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](/security/benchmark/azure/baselines/api-management-security-baseline).
 
 ### Network security
 
@@ -82,10 +82,10 @@ We have omitted controls from the baseline where the feature was not supported t
 ### Identity Management
 
 * IM-1: Use centralized identity and authentication system
-	* Azure AD Authentication Required for Data Plane Access - Use Azure Active Directory (Azure AD) as the default authentication method for API Management where possible.
+	* Microsoft Entra authentication Required for Data Plane Access - Use Microsoft Entra ID as the default authentication method for API Management where possible.
 	* Local Authentication Methods for Data Plane Access - Restrict the use of local authentication methods for data plane access, maintain inventory of API Management user accounts and reconcile access as needed. In API Management, developers are the consumers of the APIs that exposed with API Management. By default, newly created developer accounts are Active, and associated with the Developers group. Developer accounts that are in an active state can be used to access all of the APIs for which they have subscriptions.
 * IM-3: Manage application identities securely and automatically
-	* Managed Identities - Use a Managed Service Identity generated by Azure Active Directory (Azure AD) to allow your API Management instance to easily and securely access other Azure AD-protected resources, such as Azure Key Vault instead of using service principals. Managed identity credentials are fully managed, rotated, and protected by the platform, avoiding hard-coded credentials in source code or configuration files.
+	* Managed Identities - Use a Managed Service Identity generated by Microsoft Entra ID to allow your API Management instance to easily and securely access other Microsoft Entra ID-protected resources, such as Azure Key Vault instead of using service principals. Managed identity credentials are fully managed, rotated, and protected by the platform, avoiding hard-coded credentials in source code or configuration files.
 * IM-5: Use single sign-on (SSO) for application access
 * IM-8: Restrict the exposure of credential and secrets
 	* Service Credential and Secrets Support Integration and Storage in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
@@ -122,4 +122,3 @@ We have omitted controls from the baseline where the feature was not supported t
 
 * BR-1: Ensure regular automated backups
 	* Service Native Backup Capability - Azure API Management supports its own native backup capability.
-

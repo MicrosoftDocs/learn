@@ -3,11 +3,10 @@ uid: learn.language.vue-get-started.5-attribute-binding-exercise
 metadata:
   title: Exercise - Practice attribute binding
   description: Practice binding values to attributes.
-  ms.date: 03/01/2021 
+  ms.date: 01/10/2023 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vue
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Practice attribute binding
 durationInMinutes: 5

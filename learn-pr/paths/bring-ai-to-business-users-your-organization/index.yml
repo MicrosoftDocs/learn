@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/05/2020
   author: wwlpublish
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Bring AI to business users in your organization
 prerequisites: |
   None
@@ -24,7 +23,6 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.enable-business-users-with-key-ai-uses-cases
 - learn-bizapps.wwl.introduction-power-bi
 - learn-bizapps.wwl.introduction-power-platform
 trophy:

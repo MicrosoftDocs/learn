@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.optimize-deployment-strategies-intune
+title: Optimize deployment strategies with Intune
+metadata:
+  title: Optimize deployment strategies with Intune
+  description: "Optimize deployment strategies with Intune"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-optimize-deployment-strategies-intune.md)]

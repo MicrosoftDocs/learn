@@ -83,6 +83,7 @@ stages:
 
     - script: echo Building!
 - stage: Test
+  dependsOn: Build
   jobs:
 
   - job: TestOnWindows
@@ -94,6 +95,7 @@ stages:
 
     - script: echo Testing on Linux!
 - stage: Deploy
+  dependsOn: Test
   jobs:
 
   - job: Deploy

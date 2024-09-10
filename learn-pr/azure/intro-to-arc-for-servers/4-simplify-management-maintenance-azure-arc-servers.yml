@@ -4,11 +4,10 @@ title: What are the security and monitoring capabilities of Azure Arc-enabled se
 metadata:
   title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
   description: What are the security and monitoring capabilities of Azure Arc-enabled servers?
-  ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/13/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 10
 content: |

@@ -4,14 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/07/2021
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 quiz:
+  title: ""
   questions:
   - content: "How is it possible that Cosmos DB supports several database systems?"
     choices:
@@ -31,7 +32,7 @@ quiz:
       explanation: "That's incorrect. The Cassandra API is the most suitable API to access wide column store NoSQL data."
     - content: "Azure Table"
       isCorrect: false
-      explanation: "That's incorrect. The Azure Table API is the most suitable API if you are using data in Azure Table Storage."
+      explanation: "That's incorrect. The Azure Table API is the most suitable API if you're using data in Azure Table Storage."
     - content: "Gremlin"
       isCorrect: true
       explanation: "That's correct. Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
@@ -59,9 +60,9 @@ quiz:
       explanation: "That's correct. Cosmos DB guarantees less than 10-ms latency for indexed reads and writes globally."
   - content: "What is the size limit of a logical partition?"
     choices:
-    - content: "10-GB"
+    - content: "20-GB"
       isCorrect: true
-      explanation: "That's correct. It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+      explanation: "That's correct. It's important to select the correct key for the logical partition because each logical partition has a limit of 20-GB."
     - content: "100-GB"
       isCorrect: false
       explanation: "That's incorrect. It's not as large as 100-GB."

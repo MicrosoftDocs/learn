@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.evolve-operations-with-observability
+title: Evolve operations with observability
+metadata:
+  title: Evolve operations with observability
+  description: Learn how to evolve operations with observability to improve your operational excellence.
+  ms.date: 12/05/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-evolve-operations-with-observability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How was Contoso able to identify the root cause of the issue with blank pages and generic errors some users experienced?'
+    choices:
+    - content: 'The team asked the users to provide more information about the errors they were seeing.'
+      isCorrect: false
+      explanation: 'Incorrect. The users were unable to provide more information about the errors they were seeing.'
+    - content: 'The team added deeper monitoring to the application.'
+      isCorrect: true
+      explanation: 'Correct. Adding additional monitoring to the application allowed the team to identify that the database query timeouts were the root cause.'
+    - content: 'The team performed chaos testing.'
+      isCorrect: false
+      explanation: "Incorrect. Chaos testing is a great way to identify issues, but it wasn't part of this scenario."
+    - content: 'The team asked the operations team to reproduce the issue.'
+      isCorrect: false
+      explanation: "Incorrect. In this case, the workload team implemented additional monitoring to identify the root cause of the issue."
+  - content: 'Which of the following is good way to design monitoring dashboards?'
+    choices:
+    - content: 'Build a single dashboard that provides all the information that anyone might need.'
+      isCorrect: false
+      explanation: 'Incorrect. A single dashboard would have too much information and would be unwieldy.'
+    - content: 'Build a dashboard that provides all the information that anyone might need, but allow users to filter the information to only what they need.'
+      isCorrect: false
+      explanation: 'Incorrect. This would design would be difficult to use and would have too much information.'
+    - content: 'Build dashboards that are specific to each team that needs data about the workload.'
+      isCorrect: true
+      explanation: "Correct. Dashboards should be designed to provide the right information to the right people. This means that each team should have their own dashboard that provides the information they need to do their job."
+    - content: 'Build custom dashboards for each user.'
+      isCorrect: false
+      explanation: "Incorrect. This design would be very difficult to manage and maintain."
+  - content: 'True or false: alerts should mostly be informational.'
+    choices:
+    - content: 'True'
+      isCorrect: false
+      explanation: 'Incorrect. Alerts should be actionable, not informational.'
+    - content: 'False'
+      isCorrect: true
+      explanation: 'Correct. Alerts should be actionable, not informational.'

@@ -4,11 +4,10 @@ title: Write code to send and receive messages by using a queue
 metadata:
   title: Write code to send and receive messages by using a queue
   description: Learn how to write code that sends messages to and receives messages from a Service Bus queue.
-  ms.date: 04/04/2023
+  ms.date: 10/25/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-write-code-that-uses-service-bus-queues.md)]

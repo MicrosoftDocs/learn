@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Review what you've learned.
-  ms.date: 04/13/2021
+  ms.date: 11/12/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -17,15 +16,15 @@ quiz:
   questions:
   - content: "Artifacts from a GitHub Actions workflow can be saved with what action?"
     choices:
-    - content: "The ```actions/upload-artifacts``` action"
+    - content: "The ```actions/upload-artifact``` action"
       isCorrect: true
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact."
-    - content: "The ```actions/checkout@v1``` action"
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact."
+    - content: "The ```actions/checkout@v3``` action"
       isCorrect: false
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
     - content: "The ```actions/download-artifact``` action"
       isCorrect: false
-      explanation: "The ```actions/upload-artifacts``` action allows you to save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
   - content: "What is one way that GitHub Actions workflows can NOT be used?"
     choices:
     - content: "To automatically run test suites on each push"
@@ -47,14 +46,14 @@ quiz:
       explanation: "The ```actions/upload-artifact``` action saves an artifact."
     - content: "```actions/checkout```"
       isCorrect: true
-      explanation: "The ```actions/checkout``` accesses a repository's code from the virtual machine provided by GitHub Actions"
+      explanation: "The ```actions/checkout``` action accesses a repository's code from the virtual machine provided by GitHub Actions"
     - content: "```npm install```"
       isCorrect: false
       explanation: "The ```npm install``` command installs package and the dependencies."
     - content: "```actions/setup-node```"
       isCorrect: false
-      explanation: "The ```actions/setup-node``` sets up the correct version of Node."     
-  - content: "How many builds will the following matrix produce? `os: [ubuntu-latest, windows-2016] node-version: [8.x, 10.x, 12.x]`" 
+      explanation: "The ```actions/setup-node``` action sets up the correct version of Node."     
+  - content: "How many builds will the following matrix produce? `os: [ubuntu-latest, windows-latest] node-version: [14.x, 16.x, 18.x]`" 
     choices:
     - content: "6"
       isCorrect: true

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-subscription-access-azure-rbac.identify-appropriate-role-assign
-title: Understand the difference between Azure roles and Azure AD roles
+title: Understand the difference between Azure roles and Microsoft Entra roles
 metadata:
-  title: Understand the difference between Azure roles and Azure AD roles
-  description: Learn the difference between Azure roles and Azure AD roles, and identify the appropriate role to assign.
-  ms.date: 01/13/2020
+  title: Understand the difference between Azure roles and Microsoft Entra roles
+  description: Learn the difference between Azure roles and Microsoft Entra roles, and identify the appropriate role to assign.
+  ms.date: 11/20/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-appropriate-role-assign.md)]
@@ -22,18 +21,18 @@ quiz:
       explanation: The User Access Administrator manages access to Azure resources.
     - content: Assign the Billing Administrator role at the management group scope.
       isCorrect: false
-      explanation: Billing Administrator is an Azure AD role that allows you to make purchases, manage subscriptions and support tickets, and monitor service health. Azure AD roles apply to only one scope, the directory.
+      explanation: Billing Administrator is a Microsoft Entra role that allows you to make purchases, manage subscriptions and support tickets, and monitor service health. Microsoft Entra roles apply to only one scope, the directory.
     - content: Assign the Owner role at the subscription scope.
       isCorrect: true
       explanation: The Owner role gives full access to all resources under the scope that has been assigned to it.
-  - content: What's the main difference between Azure roles and Azure AD roles?
+  - content: What's the main difference between Azure roles and Microsoft Entra roles?
     choices:
-    - content: Azure roles apply to Azure resources. Azure AD roles apply to Azure AD resources such as users, groups, and domains. 
+    - content: Azure roles apply to Azure resources. Microsoft Entra roles apply to Microsoft Entra resources such as users, groups, and domains. 
       isCorrect: true
-      explanation: Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+      explanation: Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Microsoft Entra roles are used to manage access to Microsoft Entra resources such as user accounts and passwords.
     - content: You can assign Azure roles at the root level. 
       isCorrect: false
       explanation: You can assign Azure roles at the management groups, subscriptions, resource groups, or resources scope.
-    - content: Azure AD roles are used to manage access to Azure resources. Azure roles are used to view and manage Azure resources. 
+    - content: Microsoft Entra roles are used to manage access to Azure resources. Azure roles are used to view and manage Azure resources. 
       isCorrect: false
-      explanation: Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+      explanation: Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Microsoft Entra roles are used to manage access to Microsoft Entra resources such as user accounts and passwords.

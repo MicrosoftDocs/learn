@@ -3,15 +3,15 @@ uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint
 metadata:
   title: Perform actions on a device using Microsoft Defender for Endpoint
   description: "Perform actions on a device using Microsoft Defender for Endpoint"
-  ms.date: 02/20/2023
+  ms.date: 3/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: module
+  ms.service: defender-endpoint
 title: Perform actions on a device using Microsoft Defender for Endpoint
 summary: Learn how Microsoft Defender for Endpoint provides the remote capability to contain devices and collect forensics data.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Perform actions on a device using Microsoft Defender for Endpoint
   - Conduct forensics data collection using Microsoft Defender for Endpoint
   - Access devices remotely using Microsoft Defender for Endpoint
@@ -25,7 +25,7 @@ roles:
 products:
 - m365
 - m365-security-center
-- mdatp
+- defender-endpoint
 subjects:
 - cloud-security
 - security

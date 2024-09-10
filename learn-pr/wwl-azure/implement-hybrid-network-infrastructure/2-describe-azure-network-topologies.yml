@@ -3,14 +3,13 @@ uid: learn.wwl.implement-hybrid-network-infrastructure.describe-azure-network-to
 title: Describe Azure network topologies
 metadata:
   title: Describe Azure network topologies
-  description: Describe Azure network topologies
-  ms.date: 09/24/2020
+  description: "Describe Azure network topologies"
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: e2e-hybrid
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - e2e-hybrid
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-azure-network-topologies.md)]

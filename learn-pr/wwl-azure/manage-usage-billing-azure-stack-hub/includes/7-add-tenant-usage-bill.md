@@ -24,7 +24,7 @@ After you've created a record of your customer in Partner Center, you can sell t
 
 ### Create a guest user in the end customer directory
 
-By default, you, as the CSP, do not have access to the end customer's Azure Stack Hub subscription. However, if your customer wants you to manage their resources, they can then add your account as owner/contributor to their Azure Stack Hub subscription. In order to do that, they must add your account as a guest user to their Azure AD tenant. It's advised that you use a different account from your Azure CSP account to manage your customer's Azure Stack Hub subscription to ensure you don't lose access to your customer's Azure subscription.
+By default, you, as the CSP, do not have access to the end customer's Azure Stack Hub subscription. However, if your customer wants you to manage their resources, they can then add your account as owner/contributor to their Azure Stack Hub subscription. In order to do that, they must add your account as a guest user to their Microsoft Entra tenant. It's advised that you use a different account from your Azure CSP account to manage your customer's Azure Stack Hub subscription to ensure you don't lose access to your customer's Azure subscription.
 
 ### Update your registration with the new customer subscription
 
@@ -52,7 +52,7 @@ The following section describes the parameters for the **New-AzResource** cmdlet
 | **Parameter**              | **Description**                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | registrationSubscriptionID | The Azure subscription that was used for the initial registration of the Azure Stack Hub.                                                                                                                                                                                                                                                                                                |
-| customerSubscriptionID     | The Azure subscription (not Azure Stack Hub) belonging to the customer to be registered. Must be created in the CSP offer. In practice, this means through Partner Center. If a customer has more than one Azure Active Directory tenant, this subscription must be created in the tenant that will be used to log into Azure Stack Hub. The customer subscription ID is case-sensitive. |
+| customerSubscriptionID     | The Azure subscription (not Azure Stack Hub) belonging to the customer to be registered. Must be created in the CSP offer. In practice, this means through Partner Center. If a customer has more than one Microsoft Entra tenant, this subscription must be created in the tenant that will be used to log into Azure Stack Hub. The customer subscription ID is case-sensitive. |
 | resourceGroup              | The resource group in Azure in which your registration is stored.                                                                                                                                                                                                                                                                                                                        |
 | registrationName           | The name of the registration of your Azure Stack Hub. It's an object stored in Azure.                                                                                                                                                                                                                                                                                                    |
 
@@ -60,7 +60,7 @@ Tenants must be registered with each Azure Stack Hub they use. If you have two A
 
 ### Onboard tenant to Azure Stack Hub
 
-Configure Azure Stack Hub to support users from multiple Azure AD tenants to use services in Azure Stack Hub.
+Configure Azure Stack Hub to support users from multiple Microsoft Entra tenants to use services in Azure Stack Hub.
 
 ### Create a local resource in the end customer tenant in Azure Stack Hub
 

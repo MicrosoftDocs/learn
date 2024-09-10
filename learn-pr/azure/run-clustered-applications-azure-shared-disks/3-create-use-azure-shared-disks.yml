@@ -4,11 +4,12 @@ title: Create and use Azure shared disks
 metadata:
   title: Create and use Azure shared disks
   description: In this unit, you learn about creating Azure shared disks and how to use Azure shared disks with VMs.
-  ms.date: 06/23/2021
+  ms.date: 06/18/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 8
 content: |
   [!include[](includes/3-create-use-azure-shared-disks.md)]

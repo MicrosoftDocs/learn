@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.improve-search-results-vector-search
+metadata:
+  title: Perform vector search and retrieval in Azure AI Search
+  description: Perform vector search and retrieval in Azure AI Search.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.service: cognitive-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Perform vector search and retrieval in Azure AI Search
+summary: "Learn how to perform vector search and retrieval in Azure AI Search."
+abstract: |
+  By the end of this module, you'll learn how to:
+    - Describe vector search
+    - Describe embeddings 
+    - Run vector search queries using the REST API
+prerequisites: |
+    - Familiarity with Microsoft Azure
+    - Familiarity with Azure AI Search
+    - Application development experience
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - student
+  - data-scientist
+products: 
+  - azure-cognitive-search
+subjects: 
+  - artificial-intelligence
+units:
+- learn.improve-search-results-vector-search.introduction
+- learn.improve-search-results-vector-search.vector-search
+- learn.improve-search-results-vector-search.prepare-search
+- learn.improve-search-results-vector-search.understand-embedding
+- learn.improve-search-results-vector-search.exercise
+- learn.improve-search-results-vector-search.knowledge-check
+- learn.improve-search-results-vector-search.summary
+
+badge:
+  uid: learn.improve-search-results-vector-search.badge

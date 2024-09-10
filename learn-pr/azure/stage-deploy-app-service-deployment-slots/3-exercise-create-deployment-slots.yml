@@ -4,11 +4,10 @@ title: Exercise - Create deployment slots
 metadata:
   title: Exercise - Create deployment slots
   description: In this exercise, you'll set up a web app and then deploy code to two deployment slots.
-  ms.date: 03/27/2019
+  ms.date: 04/11/2023
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-create-deployment-slots.md)]

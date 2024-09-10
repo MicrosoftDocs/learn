@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-evaluation-and-testing.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the "Accessibility evaluation and testing" module.
+  ms.date: 04/15/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

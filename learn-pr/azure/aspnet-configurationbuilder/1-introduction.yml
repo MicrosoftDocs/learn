@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction to the module
   description: Introduction
-  ms.date: 06/30/2020
+  ms.date: 01/16/2024
   author: coderandhiker
   ms.author: chrisrt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,11 +4,10 @@ title: What is Enterprise State Roaming?
 metadata:
   title: What is Enterprise State Roaming?
   description: Learn about Enterprise State Roaming.
-  ms.date: 04/16/2020
+  ms.date: 03/17/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-what-is-enterprise-state-roaming.md)]

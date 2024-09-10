@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.remote-development-vs-code
+title: Remote development with Visual Studio Code
+metadata:
+  title: Remote development with Visual Studio Code
+  description: Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL). In this path, you'll learn about the different remote development offerings available in Visual Studio Code and practice using them.
+  ms.date: 01/29/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: learning-path
+summary: |
+  Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL). In this path, you will:
+    - Learn about the different remote development offerings available in Visual Studio Code.
+    - Practice getting started with each remote development offering.
+    - Discover tips for personalizing your own remote development workflow.
+prerequisites: |
+  - Basic familiarity with the Visual Studio Code editor, such as knowing how to install extensions
+  - Basic knowledge of software development, such as editing and running code and working with source control providers like GitHub
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs-code
+modules:
+- learn.use-docker-container-dev-env-vs-code
+- learn.edit-code-using-any-device
+- learn.create-tunnel
+- learn.develop-on-remote-machine
+- learn.developing-in-wsl
+- learn.personalize-remote-development-workflow
+trophy:
+  uid: learn.remote-development-vs-code.trophy

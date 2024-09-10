@@ -4,11 +4,10 @@ title: Troubleshoot hybrid authentication in Microsoft Azure
 metadata:
   title: Troubleshoot hybrid authentication in Microsoft Azure
   description: "Troubleshoot hybrid authentication in Microsoft Azure"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

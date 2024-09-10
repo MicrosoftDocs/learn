@@ -2,22 +2,21 @@
 uid: learn.wwl.describe-cloud-service-types
 metadata:
   title: Describe cloud service types
-  description: "Introduction to cloud service types (Infrastructure, Platform, and Software as a Service models) and associated use cases for each."
-  ms.date: 11/30/2022
+  description: Introduction to cloud service types (Infrastructure, Platform, and Software as a Service models) and associated use cases for each.
+  ms.date: 03/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: architecture-center
 title: Describe cloud service types
 summary: This module covers the different cloud service types and shares some of the use cases and benefits aligned with each service type.
 abstract: |
   Upon completion of this module, you'll be able to:
-  *   Describe Infrastructure as a Service (IaaS).
-  *   Describe Platform as a Service (PaaS).
-  *   Describe Software as a Service (SaaS).
-  *   Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
-prerequisites: |
-  *   Basic familiarity with IT terms and concepts
+  -   Describe Infrastructure as a Service (IaaS).
+  -   Describe Platform as a Service (PaaS).
+  -   Describe Software as a Service (SaaS).
+  -   Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-cloud-service-types.svg
 levels:
 - beginner

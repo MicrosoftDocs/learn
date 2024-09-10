@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.what-is-visual-studio-code-for-the-web
+title: What is Visual Studio Code for the Web?
+metadata:
+  title: What is Visual Studio Code for the Web
+  description: "Visual Studio Code for the Web is a browser-based experience that allows you to navigate repositories and make and commit lightweight code changes."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-visual-studio-code-for-the-web.md)]

@@ -3,11 +3,10 @@ uid: learn.app-management-using-microsoft-endpoint-manager.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 02/11/2021
+  ms.date: 10/23/2023
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge Check
 durationInMinutes: 3
 quiz:
@@ -26,7 +25,7 @@ quiz:
       explanation: ""      
   - content: "What are protected apps?"
     choices:
-    - content: "Protected apps are all apps that end users may be using on their device that is managed by a mobile device management (MDM) service."
+    - content: "Protected apps are all apps that end users might be using on their device that is managed by a mobile device management (MDM) service."
       isCorrect: false
       explanation: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android. Microsoft documentation lists the most commonly available protected apps."
     - content: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android."

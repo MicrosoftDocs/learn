@@ -12,6 +12,6 @@ GitHub is a platform that offers GitHub Actions for automation and repositories 
 
 In this module, you'll learn how to:
 
-- Work with trunk-based development.
+- Work with feature-based development.
 - Protect the main branch.
 - Trigger a GitHub Actions workflow by merging a pull request.

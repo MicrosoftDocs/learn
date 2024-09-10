@@ -4,11 +4,10 @@ title: Exercise - Build wind farm terrain
 metadata:
   title: Exercise - Build wind farm terrain
   description: Learn how to build the wind farm terrain from ready-made prefab assets.
-  ms.date: 05/12/2021
+  ms.date: 03/12/2024
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-wind-farm.md)]

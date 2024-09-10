@@ -1,4 +1,4 @@
-In this module, you learned about Azure Machine Learning, a cloud-based environment for building and deploying ML models. You learned about the different features within Azure ML—including Azure Studio and Designer for visual, no-code model training and deployment, AutoML for AI-assisted model selection and training, and MLOps principled tools and features to simplify workflows and create repeatable steps.
+In this module, you learned about Azure Machine Learning, a cloud-based environment for building and deploying ML models. You learned about the different features within Azure Machine Learning—including studio and designer for visual, no-code model training and deployment, AutoML for AI-assisted model selection and training, and MLOps principled tools and features to simplify workflows and create repeatable steps.
 
 Now that you've reviewed this module, you should be able to:
 

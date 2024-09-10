@@ -6,7 +6,7 @@ JIT VM access is one of the enhanced security features of Microsoft Defender for
 
 :::image type="content" source="../media/defender-environment-settings.png" alt-text="A screenshot of the Azure portal, selecting Microsoft Defender for Cloud, and then Environment settings.":::
 
-If you haven’t enabled Microsoft Defender for Cloud on your subscription, you’ll see the error below:
+If Microsoft Defender for Cloud isn't enabled on your subscription, you see the following error:
 
 :::image type="content" source="../media/defender-description-error.png" alt-text="A screenshot of the error shown if Microsoft Defender for Cloud isn’t enabled on a subscription. It shows there’s an Enable Microsoft Defender for Cloud button to select.":::
 
@@ -30,13 +30,13 @@ You can enable JIT access from the VM connection pane, from Workload protections
 
 You can then select the **Not Configured** tab to show all the VMs in your subscription that don’t have JIT access enabled.
 
-:::image type="content" source="../media/enable-just-time-access-defender.png" alt-text="A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on 1 VM is highlighted.":::
+:::image type="content" source="../media/enable-just-time-access-defender.png" alt-text="A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on one VM is highlighted.":::
 
 Select the check next to the VM you want to protect.
 
 Select **Enable JIT** on 1 VM.
 
-This page can also help you diagnose your VMs that aren’t supported by JIT VM access. The VMs having problems will likely have been deployed without using the Azure Resource Manager. Only VMs deployed through Azure Resource Manager are supported by JIT access.
+This page can also help you diagnose your VMs that JIT VM access doesn't support. The VMs having problems were likely deployed without using the Azure Resource Manager. JIT access only supports VMs deployed through Azure Resource Manager.
 
 ## Access
 
@@ -58,7 +58,7 @@ If your users are unable to request JIT access, check that their role has these 
 
 - Microsoft.Network/*/read
 
-You use Access control (IAM) to check which users have been granted access to a VM. In the Azure portal, select Virtual machine, and then select Access control (IAM).
+You use Access control (IAM) to check which users have access to a VM. In the Azure portal, select Virtual machine, and then select Access control (IAM).
 
 :::image type="content" source="../media/check-virtual-machine-access.png" alt-text="A screenshot showing a VM’s Access control (IAM) settings. The View button for View access to this resource is highlighted.":::
 

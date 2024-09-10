@@ -4,11 +4,10 @@ title: Discover Azure Blob storage resource types
 metadata:
   title: Discover Azure Blob storage resource types
   description: "Discover Azure Blob storage resource types"
-  ms.date: 04/25/2023
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-blob-storage-resources.md)]

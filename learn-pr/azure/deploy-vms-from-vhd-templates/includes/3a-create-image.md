@@ -2,9 +2,9 @@ After you've generalized the virtual machine, you can create an image. The image
 
 To create an image in the Azure portal, go to the page for the virtual machine and select **Capture**:
 
-![Image of the virtual machine page in the Azure portal.](../media/3-virtual-machine.png)
+![Screenshot of the virtual machine page in the Azure portal.](../media/3-virtual-machine.png)
 
-On the **Create an image** page that follows, specify a resource group in which to store the image. You can optionally select to automatically remove the virtual machine after the image is created. 
+On the **Create an image** page that follows, specify a resource group in which to store the image. You can optionally select to automatically remove the virtual machine after the image is created.
 
 ![Screenshot of the Create image page in the Azure portal.](../media/3-create-image.png)
 
@@ -56,9 +56,9 @@ az vm create \
 
 ## Create a snapshot of a VHD
 
-A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken.
+A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to its state when the snapshot was taken.
 
-If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots. By stopping the virtual machine, you can ensure that there is no disk activity and that a successful snapshot is taken.
+If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped and that you take a snapshot of every VHD. Failure to do so can result in inconsistencies if you need to restore the virtual machine from these snapshots. By stopping the virtual machine, you can ensure that there's no disk activity and that a successful snapshot is taken.
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process. You can continue running virtual machines by using the VHD afterward.
 

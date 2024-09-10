@@ -19,7 +19,7 @@ The two most common ways to create an instance for the **CosmosClient** class is
 > You can always retrieve the connection string, endpoint, or any of the keys from the Azure portal. For the examples in this section, we will use a fictional endpoint of **https­://dp420.documents.azure.com:443/** and a sample key of **fDR2ci9QgkdkvERTQ==**.
 
 > [!TIP]
-> You can also use the CosmosClient class with the Microsoft Identity Platform directly for Azure AD authentication, but that is beyond the scope of this module.
+> You can also use the CosmosClient class with the Microsoft Identity Platform directly for Microsoft Entra ID authentication, but that is beyond the scope of this module.
 
 ### Use with a connection string
 
@@ -110,7 +110,7 @@ Container container = database.GetContainer("products");
 
 ```csharp
 Container container = await database.CreateContainerAsync(
-    "cosmicworks", 
+    "products", 
     "/categoryId", 
     400
 );
@@ -120,7 +120,7 @@ Container container = await database.CreateContainerAsync(
 
 ```csharp
 Container container = await database.CreateContainerIfNotExistsAsync(
-    "cosmicworks", 
+    "products", 
     "/categoryId", 
     400
 );

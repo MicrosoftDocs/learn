@@ -1,19 +1,19 @@
-Search works best when the most relevant results are shown first. All search engines try to return the most relevant results to search queries. Azure Cognitive Search implements an enhanced version of Apache Lucene for full text search.
+Search works best when the most relevant results are shown first. All search engines try to return the most relevant results to search queries. Azure AI Search implements an enhanced version of Apache Lucene for full text search.
 
 Here, you'll explore how to write more complex Lucene queries. You'll then improve the relevance of results by boosting specific terms in your search query.
 
 ### Search an index
 
-Azure Cognitive Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/5-search-index).
+Azure AI Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/5-search-index).
 
-:::image type="content" source="../media/query-processing.png" alt-text="A diagram showing the four stages of query processing." border="false":::
+:::image type="content" source="../media/query-processing-small.png" alt-text="A diagram showing the four stages of query processing." lightbox="../media/query-processing.png" border="false":::
 
 In this unit, you'll be focusing on query parsing.
 
-You'll use the search explorer to see the difference between using the simple and full query type changes your search results. 
+You'll use the search explorer to see the difference between using the simple and full query type changes your search results.
 
 > [!NOTE]
-> If you want to run the queries yourself you'll need an Azure subscription. Create an Azure Cognitive Search service and import the hotels' sample data into an index.
+> If you want to run the queries yourself you'll need an Azure subscription. [Create an Azure AI Search service](/azure/search/search-create-service-portal) and import the hotels' sample data into an index.
 
 #### Write a simple query
 
@@ -104,7 +104,7 @@ With the Lucene syntax, you can write more precise queries. Here is a summary of
 - **Precedence grouping**: `(term AND (term OR term))` for example `(Description:luxury OR Category:luxury) AND Tags:air?con*`
 - **Term boosting**: `^` for example `Description:luxury OR Category:luxury^3` would give hotels with the category luxury a higher score than luxury in the description
 
-To read more detail about these features, see [Lucene query syntax in Azure Cognitive Search](/azure/search/query-lucene-syntax) in the docs.
+To read more detail about these features, see [Lucene query syntax in Azure AI Search](/azure/search/query-lucene-syntax) in the docs.
 
 #### Boost search terms
 

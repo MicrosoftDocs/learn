@@ -1,31 +1,21 @@
-You work for a growing video editing company that provides a cloud-based video rendering service.  Usage of its client application peaks at various times during a 24-hr period. Due to increasing and decreasing demand, the company needs to scale its application accordingly to provide a better experience to all customers. Since the application is event driven and receives a significant number of events at various times; CPU and Memory based metrics are not representative of pending work to scale properly.
+In this module, you deployed an application as a Deployment with a static replica count. We discussed why this situation might be challenging for workloads that process events and have fluctuating resource needs. After looking at the options for your scenario, you determined that using KEDA with a scaler for the Redis list would help autoscale in an efficient and effective manner.
 
-You first deployed the application as a Deployment with a static replica count.  We discussed why this would be challenging for workloads that process events and have fluctuating resource needs.  After looking at the options for our scenario, using KEDA with a scaler for the Redis list would help us autoscale in an efficient and effective manner.
+## Delete Azure resources
 
-## Clean up resources
+When you're done with the resources you created in this module, delete them to avoid incurring charges.
 
-In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
+1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1 Select **Resource groups** and select the resource group you created for this module.
+1. Under **Overview**, select **Delete resource group**.
+1. Enter the resource group name to confirm and select **Delete** to delete all of the resources you created in this module.
+1. Select **Delete** again to confirm deletion.
+1. Remove the cluster's context using the `kubectl config delete-context` command. Make sure you replace the name of the cluster with your cluster's name.
 
-1. Open the Azure portal.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
-
-2. Select **Resource groups** on the left.
-
-3. Find the **rg-contoso-video** resource group, or the resource group name you used, and select it.
-
-4. On the **Overview** tab of the resource group, select **Delete resource group**.
-
-5. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
-
-6. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
-
-    ```bash
-    kubectl config delete-context aks-contoso-video
+    ```azurecli-interactive
+    kubectl config delete-context CLUSTER_NAME
     ```
 
-    If successful, the command returns the following example output.
+    Your output should look similar to the following example output:
 
     ```output
     deleted context aks-contoso-video from /home/user/.kube/config
@@ -33,7 +23,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 ## Learn more
 
-To learn more about Azure Kubernetes Service, see the following articles:
+To learn more about AKS, see the following articles:
 
 - [AKS documentation](/azure/aks/)
 - [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)

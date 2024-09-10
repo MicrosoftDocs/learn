@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-identity-with-windows-server.enable-azure-ad-login-for-windows-vm-azure
-title: Enable Azure Active Directory login in for Windows VM in Azure
+title: Enable Microsoft Entra login in for Windows VM in Azure
 metadata:
-  title: Enable Azure Active Directory login in for Windows VM in Azure
-  description: "Enable Azure Active Directory login in for Windows VM in Azure"
+  title: Enable Microsoft Entra login in for Windows VM in Azure
+  description: "Enable Microsoft Entra login in for Windows VM in Azure"
   ms.date: 12/13/2021
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

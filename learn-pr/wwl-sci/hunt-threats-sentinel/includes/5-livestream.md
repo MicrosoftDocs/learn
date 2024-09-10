@@ -19,13 +19,13 @@ To create a livestream from the **Hunting** page in Microsoft Sentinel, select t
 
 ## View a livestream
 
-On the new **Livestream** page, specify a name for the livestream session and the query that will provide results for the session. Notifications for livestream events will appear in your Azure portal notifications.
+On the new **Livestream** page, specify a name for the livestream session and the query that provides results for the session. Notifications for livestream events appear in your Azure portal notifications.
 
 ## Manage a livestream
 
 You can play the livestream to review results or save the livestream for later reference. Saved livestream sessions can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
 
-You might use a livestream to track baseline activities for Azure resource deletion at Contoso and identify other Azure resources that should be tracked. For example, the following query will return any Azure Activity events that recorded a deleted resource:
+You might use a livestream to track baseline activities for Azure resource deletion, and identify other Azure resources that should be tracked. For example, the following query returns any Azure Activity events that recorded a deleted resource:
 
 ```kusto
   AzureActivity
@@ -39,4 +39,4 @@ You might use a livestream to track baseline activities for Azure resource delet
 
 If the query returns significant results, you can select **Create analytics rule** from the command bar to create an analytics rule based on the query. After the rule refines the query to identify the specific resources, it can generate alerts or incidents when the resources are deleted.
 
-Choose the best response for the following question. Then select **Check your answers**.
+Choose the best response for the following question, then select **Check your answers**.

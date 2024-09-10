@@ -12,13 +12,13 @@ Password authentication is the most familiar form of authentication. The user en
 
 ### Two-factor authentication
 
-:::image type="content" source="../media/3-two-fa.svg" alt-text="Image depicting two-factor authentication where the authentication token is sent to a mobile device.":::
+:::image type="content" source="../media/3-two-fa.svg" alt-text="Diagram depicting two-factor authentication where the authentication token is sent to a mobile device.":::
 
 Two-factor authentication is a mechanism that allows users to verify an authentication attempt. The user needs to provide a one-time code sent to their device as a confirmation of authentication. For example, they might receive a code through a text message, or a code generated through an app on their phone, like Microsoft Authenticator.
 
 ### Token authentication
 
-Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which may become compromised, a company may choose to use a device purpose-built for authentication. This token can be a USB-enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
+Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which might become compromised, a company might choose to use a device purpose-built for authentication. This token can be a USB-enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
 
 ### Biometric authentication
 
@@ -26,9 +26,9 @@ Biometric authentication uses the user's physical attributes for authentication.
 
 ### Transactional authentication
 
-You may not always want to rely only on information provided by a user. Instead, transactional authentication lets us scrutinize the characteristics of the user. You could, for example, expect users to regularly access the network from the United States during work hours. However, if there's a sign-in from the other side of the world at midnight, then the user's account would be flagged, and the system can prompt the user for additional verification steps before authentication.
+You might not always want to rely only on information a user provides. Instead, transactional authentication lets you scrutinize the user's characteristics. You could, for example, expect users to regularly access the network from the United States during work hours. However, if there's a sign-in from the other side of the world at midnight, then the user's account would be flagged, and the system can prompt the user for additional verification steps before authentication.
 
-Transactional authentication gives an additional layer of protection for your network.
+Transactional authentication provides an additional layer of protection for your network.
 
 ### Computer recognition authentication
 
@@ -36,17 +36,17 @@ Computer recognition authentication looks at the device being used to access the
 
 ### CAPTCHA
 
-:::image type="content" source="../media/3-captcha.png" alt-text="Image depicting a CAPTCHA test.":::
+:::image type="content" source="../media/3-captcha.png" alt-text="Screenshot depicting a CAPTCHA test.":::
 
 The Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) is used to verify whether the entity attempting access to a system is a human.
 
-Attackers can create applications that are capable of automating the steps to log into accounts. A CAPTCHA presents an obfuscated image of a scenario, letters, or numbers, and the user is asked to explain what they see. Compared to humans, applications have difficulty identifying distorted photos, letters, and numbers. Humans can typically make out what is shown in a distorted image.
+Attackers can create applications that are capable of automating the steps to log into accounts. A CAPTCHA presents an obfuscated image of a scenario, letters, or numbers, then asks the user to explain what they see. Compared to humans, applications have difficulty identifying distorted photos, letters, and numbers. Humans can typically make out what's shown in a distorted image.
 
 However, keep in mind that this method might present difficulties for users with vision impairments.
 
 ### Single sign-on
 
-Single sign-on lets users enter their credentials once to allow authentication across multiple applications and tools. For example, a user could sign in to their mail application and automatically become authenticated across tools they use to manage network security and storage. Single sign-on saves time for users. This method carries the risk that a single sign-on could also help an attacker gain access to several platforms, tools, and applications by successfully accessing one of them.
+Single sign-on lets users enter their credentials once to allow authentication across multiple applications and tools. For example, a user could sign in to their mail application and automatically be authenticated across tools they use to manage network security and storage. Single sign-on saves time for users. This method carries the risk that a single sign-on could also help an attacker gain access to several platforms, tools, and applications by successfully accessing one of them.
 
 ## Authentication protocols
 
@@ -70,9 +70,9 @@ In Kerberos, principals get tickets that grant them service tickets from the KDC
 
 TLS and the older SSL are both protocols for encrypting information sent over the internet. Because the data is encrypted, attackers can't view what is sent through TLS/SSL.
 
-You'll often see a padlock icon on the browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice-over-IP, and email.
+You'll often see a padlock icon on your browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice-over-IP, and email.
 
-SSL is the predecessor of TLS and is deprecated. We'll often find the two terms used interchangeably.  The protocols work as follows:
+SSL is the predecessor of TLS, and is deprecated. We'll often find the two terms used interchangeably.  The protocols work as follows:
 
 :::image type="content" source="../media/3-tls-ssl.svg" alt-text="Diagram that shows the process flow of SSL/TLS process authentication.":::
 
@@ -90,7 +90,7 @@ SSL is the predecessor of TLS and is deprecated. We'll often find the two terms 
 
 ## Network authorization
 
-When authentication is completed successfully, we'll need to ensure the authenticated user or client is authorized to access the resources or services they're requesting. Authorization can be granular. For example, a particular database user might have permission to access and make changes to a single database. However, the user can't access any other database, because they don't have the permissions.
+When authentication is completed successfully, we need to ensure the authenticated user or client is authorized to access the resources or services they're requesting. Authorization can be granular. For example, a particular database user might have permission to access and make changes to a single database. However, the user can't access any other database, because they don't have the permissions.
 
 Permissions can include read, write, delete, and more. Use the right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. You should give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
 

@@ -3,12 +3,11 @@ uid: learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-serv
 title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
 metadata:
   title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
-  description: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
-  ms.date: 02/02/2022
+  description: Learn how to onboard your Azure Arc-enabled servers to Microsoft Defender for Cloud by enabling Log Analytics.
+  ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-onboard-azure-arc-enabled-servers-to-microsoft-defender-for-cloud.md)]

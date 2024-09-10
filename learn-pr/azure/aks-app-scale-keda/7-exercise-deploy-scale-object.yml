@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-app-scaling-keda.7-exercise-deploy-scale-object
 metadata:
-  title: Exercise - Deploy a scaling object into Azure Kubernetes Service cluster
-  description: In this exercise, you'll deploy the 
-  ms.date: 05/09/2021
-  author: pplavetzki
-  ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Exercise - Deploy a scaler object into your Azure Kubernetes Service cluster
+  title: Exercise - Deploy a scale object into Azure Kubernetes Service cluster
+  description: In this exercise, you deploy a scale object into your Azure Kubernetes Service cluster.
+  ms.date: 06/03/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
+title: Exercise - Deploy a scale object into your Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-deploy-scale-object.md)]

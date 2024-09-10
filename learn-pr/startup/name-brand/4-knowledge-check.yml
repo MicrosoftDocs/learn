@@ -3,12 +3,11 @@ uid: learn.startups.name-brand.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts on startup naming and branding. Topics include choosing an effective name and strengthening your personal brand.
-  ms.date: 02/11/2022
+  description: Review concepts on startup naming and branding. Subjects include choosing an effective name and strengthening your personal brand.
+  ms.date: 06/05/2024
   author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 4
 quiz:
   questions:
@@ -31,19 +30,19 @@ quiz:
     choices:
     - content: "Future-proof."
       isCorrect: false
-      explanation: "Incorrect. The name Relecloud implies that the startup offers cloud services. If the company expands into other areas in the future, the name will no longer reflect its business. Startup names should be future-proof, but it's not the only option."
+      explanation: "Incorrect. The name Relecloud implies that the startup offers cloud services. If the company expands into other areas in the future, the name no longer reflects its business. Startup names should be future-proof, but it's not the only option."
     - content: "Free of infringements on existing trademarks."
       isCorrect: false
-      explanation: "Incorrect. A search of US trademarks shows that the name Rele is trademarked. Startup names should avoid possible trademark infringement, but it's not the only option."
+      explanation: "Incorrect. A search of US trademarks shows that the name Relecloud is trademarked. Startup names should avoid possible trademark infringement, but it's not the only option."
     - content: "Easy to say."
       isCorrect: false
       explanation: "Incorrect. When your startup name is easy to say, people can talk about your business confidently. Unlike Relecloud, startup names should be easy to pronounce, but it's not the only option."
     - content: "Safe in other languages."
       isCorrect: false
       explanation: "Incorrect. A startup name shouldn't translate to something that's off-putting in another language. In Haitian Creole, *rele* means scream or howl, which isn't ideal for a tech firm. But it's not the only option."
-    - content: "All of the above."
+    - content: "All of these principles."
       isCorrect: true
-      explanation: "Correct. The name Relecloud is hard to pronounce. It's not future-proof because the company might expand beyond cloud services at some point. Rele is trademarked and happens to mean scream or howl in Haitian Creole, which isn't ideal for a tech firm."
+      explanation: "Correct. The name Relecloud is hard to pronounce. It's not future-proof because the company might expand beyond cloud services at some point. Relecloud is trademarked and happens to mean scream or howl in Haitian Creole, which isn't ideal for a tech firm."
 
   - content: "When you're establishing your personal brand as a founder, which of the following activities is unlikely to be helpful?"
     choices:
@@ -60,7 +59,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. A media training course can be helpful in establishing your personal brand. When you improve your communication skills, you become more confident in pitches, presentations, and interviews, attracting more followers."
 
-  - content: "When you're seeking media coverage for your startup, which of the following events is the mainstream media likely cover?"
+  - content: "When you're seeking media coverage for your startup, which of the following events is the mainstream media likely to cover?"
     choices:
     - content: "Launching your MVP."
       isCorrect: false

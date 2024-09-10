@@ -4,11 +4,10 @@ title: Source scene data
 metadata:
   title: Source scene data
   description: Overview of the data sources the module uses to provide your Unity project with data.
-  ms.date: 05/12/2021
+  ms.date: 03/12/2024
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-source-scene.md)]

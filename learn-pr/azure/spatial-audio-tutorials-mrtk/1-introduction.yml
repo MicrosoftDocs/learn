@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 02/12/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

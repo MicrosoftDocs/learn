@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.explore-azure-virtual-networks
+title: Explore Azure virtual networks
+metadata:
+  title: Explore Azure virtual networks
+  description: "Explore Azure virtual networks"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-azure-virtual-networks.md)]

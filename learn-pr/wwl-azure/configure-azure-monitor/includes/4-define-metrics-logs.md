@@ -1,4 +1,3 @@
-
 All data collected by Azure Monitor fits into one of two fundamental types, [metrics and logs](/azure/azure-monitor/platform/data-collection):
 
 **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.

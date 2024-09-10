@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.accelerate-migration-journey.7-azure-migration-programs
-title: Azure Migration and Modernization Program
+uid: learn.azure.accelerate-migration-journey.7-azure-migrate-modernize-innovate
+title: Azure Migrate and Modernize and Azure Innovate
 metadata:
-  title: Azure Migration and Modernization Program
-  description: This unit examines the programs provided by Microsoft to provide expert help for successful moves to Azure. 
-  ms.date: 02/12/2021
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Azure Migrate and Modernize and Azure Innovate
+  description: Learn about the programs provided by Microsoft to provide expert help for successful moves to Azure. 
+  ms.date: 05/15/2023
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/7-azure-migration-programs.md)]

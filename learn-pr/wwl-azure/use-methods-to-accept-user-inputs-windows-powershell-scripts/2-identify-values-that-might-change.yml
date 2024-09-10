@@ -4,13 +4,12 @@ title: Identify values that might change in Windows PowerShell scripts
 metadata:
   title: Identify values that might change in Windows PowerShell scripts
   description: "Identify values that might change in Windows PowerShell scripts"
-  ms.date: 11/11/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-identify-values-that-might-change.md)]

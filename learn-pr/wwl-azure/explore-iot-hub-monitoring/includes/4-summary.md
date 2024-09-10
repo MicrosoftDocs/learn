@@ -1,1 +1,0 @@
-Your team will be responsible for monitoring IoT Hub and troubleshooting device connection/communication issues for the company's IoT solution. The experience that you have gained by configuring IoT Hub metrics, alerts, and logging in a test environment will help you to supporting the company's monitoring and troubleshooting goals.

@@ -2,7 +2,8 @@ The previous lesson reviewed subnets. These networks are within networks. These 
 
 Think of the router as a security guard. The guard stands at the door. They only allow people into a building who should be there and turns everyone else away.
 
-![Diagram showing a guard, illustrating software that keeps out some things and lets others in.](../media/security-guard.jpeg)
+:::image type="content" source="../media/security-guard-5daaa3d0.jpeg" alt-text="Diagram showing a guard, illustrating software that keeps out some things and lets others in.":::
+
 
 This works great for devices that are getting data directly from the router. But what if you want to be as secure as being behind the router but you can't or don't want to be in the same location as the device?
 
@@ -14,7 +15,8 @@ As the name implies, a VPN is a network or a grouping of computers. However, the
 
 If you do remote work with a computer, your company may have given you the program needed for you to "tunnel" into their virtual private network. You also may notice that when you're in that network, there are certain websites you can't visit and other limitations. But you also will have access to company data that you otherwise wouldn't be able to access.
 
-![Diagram showing the idea of being at one location and being able to use resources at another location. Illustrates a VPN.](../media/virtual-private-network-tunnel.jpeg)
+:::image type="content" source="../media/virtual-private-network-tunnel-1cfb8a3f.jpeg" alt-text="Diagram showing the idea of being at one location and being able to use resources at another location. Illustrates a VPN.":::
+
 
 ## How VPNs Work
 

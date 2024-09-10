@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-interfaces-c-sharp.examine-interfaces-abstract-classes
+title: Examine interfaces and abstract classes
+metadata:
+  title: Examine interfaces and abstract classes
+  description: "Examine interfaces and abstract classes"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/02-examine-interfaces-abstract-classes.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which line of code correctly implements an interface in C#?"
+    choices:
+    - content: "`class Ant implements IAnt`"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are implemented with the `:` operator."
+    - content: "`class Ant : IAnt`"
+      isCorrect: true
+      explanation: "Correct. Interfaces are implemented with the `:` operator."
+    - content: "`class Ant extends IAnt`"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are implemented with the `:` operator."
+  - content: "Which of the following statements is true about interfaces?"
+    choices:
+    - content: "An interface can define constructor methods"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't define constructors."
+    - content: "An interface can implement another interface"
+      isCorrect: true
+      explanation: "Correct. An interface can implement another interface."
+    - content: "An interface can contain instants fields"
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't contain fields, but they can provide properties to be implemented."

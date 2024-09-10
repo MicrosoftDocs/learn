@@ -4,11 +4,10 @@ title: Exercise - Scale a container instance in Kubernetes
 metadata:
   title: Exercise - Scale a container instance in Kubernetes
   description: Learn how to scale a containerized microservice once inside Kubernetes.
-  ms.date: 08/13/2021
+  ms.date: 11/06/2023
   author: codemillmatt
-  ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: masoucou  
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:

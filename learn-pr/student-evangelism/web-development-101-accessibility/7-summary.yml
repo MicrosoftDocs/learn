@@ -5,9 +5,8 @@ metadata:
   description: In this module, you learned about web accessibility.
   ms.date: 03/30/2021 
   author: GeekTrainer
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-web-accessibility
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1

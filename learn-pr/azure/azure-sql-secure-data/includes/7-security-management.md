@@ -1,4 +1,4 @@
-After your Azure SQL Database is secured on the networking, authentication, and data protection levels, the final step is to understand how you're going to manage security on an ongoing basis. Managing security includes auditing, monitoring, and data classification.
+After your Azure SQL Database is secured on the networking, authentication, and data-protection levels, the final step is to understand how you're going to manage security on an ongoing basis. Managing security includes auditing, monitoring, and data classification.
 
 ## Auditing
 
@@ -8,7 +8,9 @@ As an alternative to SQL Server audit, Azure SQL Database has *Azure SQL auditin
 
 ### Configure auditing
 
-In an earlier exercise for deploying SQL Database, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you'll see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards.
+In an earlier exercise for deploying SQL Database, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you'll see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards. 
+
+Complete the following steps to set up a Log Analytics workspace:
 
 1. In the [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) search bar, enter **Log analytics**, and then select **Log Analytics workspaces** from the results. The **Log Analytics workspaces** pane appears.
 
@@ -39,27 +41,27 @@ In an earlier exercise for deploying SQL Database, you set up auditing at the se
 
 1. Select the slide toggle to **Enable Azure SQL Auditing**.
 
-1. Select the  **Storage** check box, and then complete the required fields.
+1. Select the  **Storage** check box, and then complete the required fields:
      - For **Subscription**, from the dropdown list, select the *Concierge Subscription*.
-     - For **Storage Account**, from the dropdown list, select the account that starts with `sqlva` followed by a random string of letters and numbers.
-     - **Storage Authentication Type** can be left as the default **Storage Access Keys** option.
+     - For **Storage Account**, from the dropdown list, select the account that starts with `sql` followed by a random string of letters and numbers.
+     - Leave the **Storage Authentication Type** as the default **Storage Access Keys** option.
 
-   The `sqlva` storage account will be used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
+   The `sql` storage account is used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
 
     > [!TIP]
-    > If you do not see any storage accounts, create a new account. You may need to refresh your page after a couple minutes before it shows up.  
+    > If you don't see any storage accounts, create a new account. You might need to refresh your page after a couple minutes before it shows up.  
 
-    If you are going to be auditing your production environment, consider having a separate storage account for audit logs.
+    If you're going to be auditing your production environment, consider having a separate storage account for audit logs.
 
 1. Select **Advanced properties** to expand the section and set the following configuration items:
     - For **Retention (Days)**, enter **7**
     - For **Storage access key**, select **Primary**.
 
     > [!NOTE]
-    > If you do not see an **Advanced properties**, select **Save** from the command bar, and then repeat the configuration instructions for this page.  
+    > If you don't see an **Advanced properties**, select **Save** from the command bar, then repeat the configuration instructions for this page.  
 
-1. Select the **Log Analytics** check box, and then complete the required fields.
-    - For **Subscription**, select the Concierge Subscription from the dropdown list.
+1. Select the **Log Analytics** check box and complete the required fields:
+    - For **Subscription**, select the *Concierge Subscription* from the dropdown list.
     - For **Log Analytics**, select the Log Analytics workspace you created earlier in this exercise (*asuresql-la*).
 
 1. Select **Save**.  
@@ -72,21 +74,21 @@ You've now enabled auditing for a storage account and an Azure Log Analytics wor
 
 The [ledger feature](/sql/relational-databases/security/ledger/ledger-overview) provides tamper-evidence, cryptographic proof of data integrity capabilities in your database. This proof can help streamline the auditing process.
 
-Ledger helps protect data from any attacker or high-privileged user, including database administrators (DBAs), system administrators, and cloud administrators. As with a traditional ledger, the feature preserves historical data. When data is modified by a transaction in a ledger table, the event is cryptographically SHA-256 hashed using a Merkle tree data structure that creates a root hash representing all rows in the transaction. The transactions that the database processes are then also SHA-256 hashed together through a Merkle tree data structure. The result is a root hash that forms a block. The block is then SHA-256 hashed through the root hash of the block, along with the root hash of the previous block as input to the hash function. That hashing forms a blockchain. If a row is updated in the database, its previous value is maintained and protected in a history table. Ledger provides a chronicle of all changes made to the database over time.
+Ledger helps protect data from any attacker or high-privileged user, including database administrators (DBAs), system administrators, and cloud administrators. As with a traditional ledger, the feature preserves historical data. When a transaction in a ledger table modifies data, the event is cryptographically SHA-256 hashed using a Merkle tree data structure that creates a root hash representing all rows in the transaction. The transactions that the database processes are then also SHA-256 hashed together through a Merkle tree data structure. The result is a root hash that forms a block. The block is then SHA-256 hashed through the root hash of the block, along with the root hash of the previous block as input to the hash function. That hashing forms a blockchain. If a row is updated in the database, its previous value is maintained and protected in a history table. Ledger provides a chronicle of all changes made to the database over time.
 
 Ledger functionality is introduced to tables in two forms:
 
-- Updatable ledger tables, which allow you to update and delete rows in your tables.
-- Append-only ledger tables, which only allow insertions to your tables.
+- Updatable ledger tables, which allow you to update and delete rows in your tables
+- Append-only ledger tables, which only allow insertions to your tables
 
 Both updatable ledger tables and append-only ledger tables provide tamper-evidence and digital forensics capabilities.
 
 ### Exercise using ledger for Azure SQL Database
 
-In the exercise to create the Azure SQL Database, we added a database called `myLedgerDatabase`, and created a table called `Account.Balance`. In this exercise, we're going to insert data, make updates to the data, and query the history table and ledger views to see the tracking that is taking place and the relationship between the tables.
+In the exercise to create the Azure SQL Database, we added a database called `myLedgerDatabase` and created a table called `Account.Balance`. In this exercise, we're going to insert data, make updates to the data, and query the history table and ledger views to see the tracking that's taking place and the relationship between the tables.
 
 1. Open SSMS and connect to your Azure SQL Database logical server.
-1. Open a **New Query** for the `myLedgerDatabase` database.
+1. Right-click the `myLedgerDatabase` database, then select **New Query**.
 
 1. Insert the name `Nick Jones` as a new customer with an opening balance of $50.
 
@@ -104,7 +106,7 @@ In the exercise to create the Azure SQL Database, we added a database called `my
    (4, 'Michaels', 'Mary', 200);
    ```
 
-1. View the `[Account].[Balance]` updatable ledger table, and specify the [GENERATED ALWAYS](/sql/t-sql/statements/create-table-transact-sql#generate-always-columns) columns added to the table.
+1. View the `[Account].[Balance]` updatable ledger table, and specify the [GENERATED ALWAYS](/sql/t-sql/statements/create-table-transact-sql#generate-always-columns) columns added to the table. Select **Execute** to run your query.
 
    ```sql
    SELECT [CustomerID]
@@ -117,6 +119,7 @@ In the exercise to create the Azure SQL Database, we added a database called `my
       ,[ledger_end_sequence_number]
     FROM [Account].[Balance];  
    ```
+
    In the results window, you'll first see the values inserted by your T-SQL commands, along with the system metadata that's used for data lineage purposes.
 
    - The `ledger_start_transaction_id` column notes the unique transaction ID associated with the transaction that inserted the data. Because `John`, `Joe`, and `Mary` were inserted by using the same transaction, they share the same transaction ID.
@@ -129,7 +132,7 @@ In the exercise to create the Azure SQL Database, we added a database called `my
    WHERE [CustomerID] = 1;
    ```
 
-1. View the `[Account].[Balance]` ledger view, along with the transaction ledger system view to identify users that made the changes.
+1. View the `[Account].[Balance]` ledger view, along with the transaction ledger system view to identify users that made the changes. Select **Execute** to run the query.
 
     ```sql
   	SELECT
@@ -158,9 +161,9 @@ There are two aspects to monitoring and managing security:
 
 In Azure, you can apply tools such as activity logs and role-based access control auditing.
 
-In your Azure SQL Database, you can configure Azure SQL auditing and apply dynamic management views, metrics, and alerts to monitor security-related events. For example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall.  
+In your Azure SQL Database, you can configure Azure SQL auditing and apply dynamic management views, metrics, and alerts to monitor security-related events. For example, `sys.event_log` allows you to track the number of failed and successful connections and the number of connections blocked by the firewall.  
 
-Microsoft recommends that you configure [Microsoft Defender for Cloud](/azure/azure-sql/database/azure-defender-for-sql), including setting up alerts for Advanced Threat Protection. These security elements are discussed in the next section and exercise. Finally, you can use Microsoft Defender for Cloud to monitor, manage, and receive recommendations on all the resources in your Azure estate.
+Microsoft recommends that you configure [Microsoft Defender for Cloud](/azure/azure-sql/database/azure-defender-for-sql), including setting up alerts for Advanced Threat Protection. We discuss these security elements in the next section and exercise. Finally, you can use Microsoft Defender for Cloud to monitor, manage, and receive recommendations on all the resources in your Azure estate.
 
 ### Data Discovery & Classification
 
@@ -170,7 +173,7 @@ The Data Discovery & Classification service forms a new information-protection p
 - The ability to persistently add labels to columns by using metadata attributes
 - The ability to audit and query sensitive data access
 
-Azure SQL offers both SQL Information Protection policy and Microsoft Information Protection policy in data classification, and you can choose either of these two policies based on your requirement.
+Azure SQL offers both SQL Information Protection policy and Microsoft Information Protection policy in data classification, and you can choose either of these policies based on your requirement.
 
 The portal view is available only for Azure SQL, but SQL Server supports similar functionality through a wizard in SQL Server Management Studio.
 
@@ -185,11 +188,11 @@ Microsoft Defender for Cloud is a unified package for advanced SQL security capa
 
 #### Vulnerability Assessment
 
-At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and then provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results will be stored.
+At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results will be stored.
 
 #### Advanced Threat Protection
 
-With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine learning technologies to detect whether any of the following threats have occurred:
+With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine-learning technologies to detect whether any of the following threats have occurred:
 
 - SQL injection
 - SQL injection vulnerability
@@ -210,5 +213,5 @@ The access restriction logic is located in the database tier rather than away fr
 
 RLS supports two types of security predicates.
 
-- Filter predicates silently filter the rows available to read operations (SELECT, UPDATE, and DELETE)
-- Block predicates explicitly block write operations (AFTER INSERT, AFTER UPDATE, BEFORE UPDATE, BEFORE DELETE) that violate the predicate
+- **Filter predicates** silently filter the rows available to read operations (SELECT, UPDATE, and DELETE)
+- **Block predicates** explicitly block write operations (AFTER INSERT, AFTER UPDATE, BEFORE UPDATE, BEFORE DELETE) that violate the predicate

@@ -9,7 +9,7 @@ Azure Storage provides a REST API to work with the containers and data stored in
 
 The Storage REST APIs are accessible from anywhere on the Internet by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
 
-For example, if you wanted to list all the blobs in a container, you would create a request something like:
+For example, if you wanted to list all the blobs in a container, you'd create a request something like:
 
 ```http
 GET https://[url-for-service-account]/?comp=list&include=metadata
@@ -65,7 +65,7 @@ This request returns an XML block with data specific to the account:
 </EnumerationResults>  
 ```
 
-However, this approach requires manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
+However, this approach requires manual parsing and creating HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
 
 ## Use a client library
 
@@ -81,8 +81,7 @@ Client libraries can save a significant amount of work for app developers becaus
     - Go
     :::column-end:::
     :::column:::
-        <br> ![Logos of supported frameworks 
-        you can use with Azure.](../media/4-common-tools.png)
+        <br> ![Logos of supported frameworks you can use with Azure.](../media/4-common-tools.png)
     :::column-end:::  
 :::row-end:::  
 
@@ -112,6 +111,6 @@ for await (const blob of blobs) {
 ```
 
 > [!NOTE]
-> The client libraries are just thin _wrappers_ around the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to the source code for these libraries on GitHub, at the end of this module, see the *Additional Resources* section.
+> The client libraries are just thin _wrappers_ around the REST API. They're doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to these libraries' source code on GitHub, see the _Additional Resources_ section at the end of this module.
 
 Next, let's add client library support to your app.

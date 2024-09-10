@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-ai-services.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

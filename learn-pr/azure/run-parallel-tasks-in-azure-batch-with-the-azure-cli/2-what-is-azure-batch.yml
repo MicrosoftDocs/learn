@@ -3,11 +3,11 @@ uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.what-is-azure-ba
 metadata:
   title: What is Azure Batch?
   description: What is Azure Batch?
-  ms.date: 04/30/2019
+  ms.date: 04/04/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
 title: What is Azure Batch?
 durationInMinutes: 6
 content: |

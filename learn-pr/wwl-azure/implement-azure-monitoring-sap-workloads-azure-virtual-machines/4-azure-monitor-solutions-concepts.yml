@@ -3,13 +3,13 @@ uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-moni
 title: Azure Monitor for SAP Solutions concepts
 metadata:
   title: Azure Monitor for SAP Solutions concepts
-  description: "Azure Monitor for SAP Solutions concepts"
-  ms.date: 03/09/2021
+  description: "Review the capabilities of Azure Monitor for SAP Solutions."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-azure-monitor-solutions-concepts.md)]

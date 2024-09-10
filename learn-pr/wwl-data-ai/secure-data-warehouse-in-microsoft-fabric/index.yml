@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric
+metadata:
+  title: Secure a Microsoft Fabric data warehouse
+  description: Learn the key concepts and strategies for protecting sensitive data in Microsoft Fabric data warehouses.
+  ms.date: 5/23/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: azure
+title: Secure a Microsoft Fabric data warehouse
+summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+abstract: |
+  In this module, you'll:
+  - Learn the concepts of securing a data warehouse in Microsoft Fabric.
+  - Learn how to implement dynamic data masking to obscure sensitive information.
+  - Learn how to configure row-level security to provide granular control.
+  - Learn how to implement column-level security to protect sensitive data.
+  - Learn how to configure granular permissions using T-SQL.
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-engineering
+- data-analytics
+units:
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.introduction
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.explore-dynamic-data-masking
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-row-level-security
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-column-level-security
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.configure-sql-granular-permissions
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.exercise-secure-data-warehouse
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.knowledge-check
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric.summary
+badge:
+  uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.badge

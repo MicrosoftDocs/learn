@@ -3,13 +3,15 @@ uid: learn.wwl.design-solutions-securing-server-client-endpoints
 metadata:
   title: Design solutions for securing server and client endpoints
   description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration."
-  ms.date: 3/14/2023
+  ms.date: 3/04/2024
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for securing server and client endpoints
-summary: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration."
+summary: |
+  You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration.
 abstract: |
   By the end of this module, you are able to:
   -   Specify security requirements for servers
@@ -21,7 +23,7 @@ abstract: |
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   -   Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/design-solutions-for-securing-server-and-client-endpoints.svg
 levels:
 - advanced
 roles:
@@ -44,6 +46,7 @@ units:
 - learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
 - learn.wwl.design-solutions-securing-server-client-endpoints.specify-security-baselines-server-client-endpoints
 - learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-secure-remote-access
+- learn.wwl.design-solutions-securing-server-client-endpoints.evaluate-windows-local-admin-password-solution
 - learn.wwl.design-solutions-securing-server-client-endpoints.knowledge-check
 - learn.wwl.design-solutions-securing-server-client-endpoints.summary
 badge:

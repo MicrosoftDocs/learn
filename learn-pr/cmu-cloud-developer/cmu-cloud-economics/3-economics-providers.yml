@@ -4,11 +4,10 @@ title: Economics for cloud service providers
 metadata:
   title: Economics for cloud service providers
   description: The economics of cloud computing for cloud service providers.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 9
 content: |

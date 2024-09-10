@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-generative-ai-explore-basics.apply-generative-ai-to-enhance-your-training-experience
+title: Apply generative AI to enhance your training experience
+metadata:
+  title: Apply generative AI to enhance your training experience
+  description: This content is a part of the 'Introduction to generative AI - Exploring the basics' module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 02/21/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-apply-generative-ai-to-enhance-your-training-experience.md)]

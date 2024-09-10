@@ -1,4 +1,4 @@
-The deployment of your new website was a huge success. Usage volumes are much higher than anticipated. The single web server that the website runs on is showing signs of strain. Your organization wants to increase the number of servers and distribute the load using a load balancer.
+Your new website's deployment was a huge success. Usage volumes are much higher than anticipated. The single web server on which the website runs is showing signs of strain. Your organization wants to increase the number of servers and distribute the load using a load balancer.
 
 You now know you can use an Azure alias record to provide a dynamic, automatically refreshing link between the zone apex and the load balancer.
 
@@ -10,15 +10,15 @@ In this unit, you'll:
 
 ## Set up a virtual network, load balancer, and VMs in Azure
 
-Manually creating a virtual network, load balancer, and two VMs will take some time. To reduce this, you can use a Bash setup script, which is available on GitHub. Follow these instructions to create a test environment for your alias record.
+Manually creating a virtual network, load balancer, and two VMs will take some time. To reduce this time, you can use a Bash setup script that's available on GitHub. Follow these instructions to create a test environment for your alias record.
 
-1. In Azure Cloud Shell, run the following setup script.
+1. In Azure Cloud Shell, run the following setup script:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
     ```
 
-1. To run the setup script, run the following commands.
+1. To run the setup script, run the following commands:
 
     ```bash
     cd mslearn-host-domain-azure-dns
@@ -26,7 +26,7 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
     ./setup.sh
     ```
 
-    The setup script is going to take a few minutes to run. The script:
+    The setup script takes a few minutes to run. The script:
 
     - Creates a network security group.
     - Creates two network interface controllers (NICs) and two VMs.
@@ -45,7 +45,7 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 1. Select the resource group: <rgn>[sandbox resource group]</rgn>. The **Resource group** pane appears.
 
-1. In the list of resources, select the DNS zone you created in a previous exercise, wideworldimportsXXXX.com. The **wideworldimportsXXXX.com DNS zone** pane appears.
+1. In the list of resources, select the DNS zone you created in the previous exercise, wideworldimportsXXXX.com. The **wideworldimportsXXXX.com DNS zone** pane appears.
 
 1. In the menu bar, select **+ Record set**. The **Add record set** pane appears.
 
@@ -65,13 +65,13 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 When the new alias record is created, it should look something like this:
 
-![Screenshot of the DNS zone, with an alias record created.](../media/6-aliasrecord04.png)
+:::image type="content" source="../media/6-aliasrecord04.png" alt-text="Screenshot of the DNS zone, with an alias record created.":::
 
 ## Verify that the alias resolves to the load balancer
 
 Now, you need to verify that the alias record is set up correctly. In a real-world scenario, you'd have an actual domain, and would've completed the domain delegation to Azure DNS. You'd use the registered domain name for this exercise. Because this unit assumes there's no registered domain, you'll use the public IP address.
 
-1. In the Azure portal, go to the resource group,  select **myPublicIP**, and then select the IP address.
+1. In the Azure portal, go to the resource group,  select **myPublicIP**, then select the **Copy** icon next to the IP address.
 
    :::image type="content" source="../media/6-publicIpaddress.png" alt-text="Screenshot of the DNS zone with an alias record created.":::
 

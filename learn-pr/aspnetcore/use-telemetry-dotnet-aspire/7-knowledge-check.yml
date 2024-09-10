@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.use-telemetry-dotnet-aspire.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "In this unit, you'll answer questions about telemetry in .NET Aspire to check the knowledge you've gained in this module."
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-dotnet
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You have deployed your cloud-native app to production. Some users are complaining that the product catalog is slow to load. You want to see how request durations vary over time. Which type of telemetry should you use?"
+    choices:
+    - content: "Logs"
+      isCorrect: false
+      explanation: "Incorrect. Logs provided a timestamped record of what happened, but it's not straight forward to display visually how durations vary."
+    - content: "Metrics"
+      isCorrect: true
+      explanation: "Correct. By using the request duration counter, you can display a graph in the .NET Aspire dashboard that shows how durations vary over various time periods."
+    - content: "Distributed traces"
+      isCorrect: false
+      explanation: "Incorrect. Distributed traces can show the duration of a single request but it's not straight forward to display visually how durations vary."
+  - content: "You're troubleshooting an issue with a microservice, which is experiencing crashes. Which type of telemetry should you use?"
+    choices:
+    - content: "Logs"
+      isCorrect: true
+      explanation: "Correct. Both console logs and structured logs can provide diagnostic information on the causes of exceptions and errors."
+    - content: "Metrics"
+      isCorrect: false
+      explanation: "Incorrect. Metrics store how values vary over time, not error messages."
+    - content: "Distributed traces"
+      isCorrect: false
+      explanation: "Incorrect. Distributed traces store how each request was satisfied, not error messages."
+  - content: "You want to store some custom information in distributed tracing about the behavior of your shopping basket microservice. Which OpenTelemetry class or interface should you use?"
+    choices:
+    - content: "Meter"
+      isCorrect: false
+      explanation: "Incorrect. You use the Meter class to create a group of instruments that store metrics, not traces."
+    - content: "Activity"
+      isCorrect: true
+      explanation: "Correct. Use the Activity class to record distributed traces."
+    - content: "ILogger"
+      isCorrect: false
+      explanation: "Incorrect. You use the ILogger interface to log events in structured logs, not traces."

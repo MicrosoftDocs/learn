@@ -12,16 +12,16 @@ You also need to have that Bicep file you created earlier pushed into the Azure 
 
 ## Creating the pipeline
 
-1. From within your Azure DevOps project, select **Pipelines,** and **New pipeline**.
-1. Select Azure Repos Git (YAML) and specify your Azure Repo as a source.
+1.  From within your Azure DevOps project, select **Pipelines,** and **New pipeline**.
+2.  Select Azure Repos Git (YAML) and specify your Azure Repo as a source.
     
     :::image type="content" source="../media/new-pipeline-git-eed3f3a1.jpg" alt-text="Screenshot of a new Azure Pipeline from Azure Repo.":::
     
-1. Select the starter pipeline from the list of templates.
+3.  Select the starter pipeline from the list of templates.
     
     :::image type="content" source="../media/starter-pipeline-template-cf6fce79.jpg" alt-text="Screenshot of starter pipeline template.":::
     
-1. Replace everything in the starter pipeline file with the following snippet.
+4.  Replace everything in the starter pipeline file with the following snippet.
     
     ```Bicep
     trigger:
@@ -54,11 +54,11 @@ You also need to have that Bicep file you created earlier pushed into the Azure 
     
     > [!NOTE]
     > Don't forget to replace the service connection name with yours.
-1. Select **Save and run** to create a new commit in your repository containing the pipeline YAML file and then run the pipeline. Wait for the pipeline to finish running and check the status.
+5.  Select **Save and run** to create a new commit in your repository containing the pipeline YAML file and then run the pipeline. Wait for the pipeline to finish running and check the status.
     
     :::image type="content" source="../media/azure-devops-successful-job-51e2cf04.jpg" alt-text="Screenshot of Azure DevOps successful job.":::
     
-1. Once the pipeline runs successfully, you should be able to see the resource group and the storage account.
+6.  Once the pipeline runs successfully, you should be able to see the resource group and the storage account.
     
     :::image type="content" source="../media/azure-resource-group-bicep-b3c33069.jpg" alt-text="Screenshot of a resource group created by Bicep.":::
     

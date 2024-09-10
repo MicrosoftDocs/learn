@@ -7,8 +7,7 @@ metadata:
   ms.date: 05/17/2022
   author: msmbaldwin
   ms.author: mbaldwin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-create-an-azure-sql-database-baseline.md)]

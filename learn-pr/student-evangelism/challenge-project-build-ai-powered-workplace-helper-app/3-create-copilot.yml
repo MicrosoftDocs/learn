@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ai-powered-workplace-helper-app.create-copilot
+title: Exercise - Create an AI-Powered Copilot
+metadata:
+  title: Exercise - Create an AI-Powered Copilot
+  description: "Learn how to create a Copilot that can answer questions."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-create-copilot.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 12/03/2021
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

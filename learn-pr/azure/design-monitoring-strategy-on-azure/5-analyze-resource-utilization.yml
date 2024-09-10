@@ -1,28 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 metadata:
-  title: Analyze resource utilization and performance
-  description: Analyze resource utilization and performance using Azure Monitor Insights 
-  ms.date: 03/22/2021
+  title: Monitor VMs and containers by using insights
+  description: Analyze VM and container utilization and performance by using Azure Monitor VM insights and container insights.
+  ms.date: 11/13/2023
   author: kayodeprinceMS
   ms.author: kaprince
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze resource utilization and performance using Azure Monitor Insights 
+  ms.topic: unit
+title: Monitor VMs and containers by using insights
 durationInMinutes: 10
 content: |
   [!include[](includes/5-analyze-resource-utilization.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Where can IT Operations teams find a topology view with network connection details of their VMs and scale sets?
+  - content: Where can you see a topology view with network connection details of your VMs and virtual machine scale sets?
     choices:
-    - content: Azure Dashboards
+    - content: Log Analytics
       isCorrect: false
-      explanation: Azure Dashboards provide a single pane of glass for monitoring your Azure infrastructure and services including data from Azure Monitor.
-    - content: Azure Monitor Metrics Explorer
+      explanation: You can use Azure Monitor Log Analytics to cross-query monitoring data from multiple sources, but not to view network connections.
+    - content: Metrics Explorer
       isCorrect: false
-      explanation: Metrics Explorer enables you to analyze the health and availability metrics from your resources by charting the values of multiple metrics over time.
-    - content: Azure Monitor virtual machine insights
+      explanation: Metrics Explorer lets you chart multiple metrics over time, but doesn't show a topological view of network connections.
+    - content: VM insights Map tab
       isCorrect: true
-      explanation: Azure Monitor virtual machine insights include a map tab with a topology view that shows the processes, dependencies, and network connection details of your VMs and scale sets.
+      explanation: VM insights includes a Map tab with a topology view that shows the processes, dependencies, and network connection details of your VMs and virtual machine scale sets.
+  - content: What open-source monitoring system is specifically designed for containers and microservices?
+    choices:
+    - content: Prometheus
+      isCorrect: true
+      explanation: Prometheus is a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
+    - content: VM insights
+      isCorrect: false
+      explanation: VM insights is an Azure Monitor feature that helps get you started monitoring VM clients, not containers.
+    - content: Grafana
+      isCorrect: false
+      explanation: Grafana is a dashboard platform for analyzing and visualizing data from data sources like Prometheus.

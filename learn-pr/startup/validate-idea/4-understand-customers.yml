@@ -4,11 +4,10 @@ title: Test assumptions with customers
 metadata:
   title: Test assumptions with customers
   description: Learn how to test critical assumptions about your startup. See how to use customer interviews and user personas effectively.
-  ms.date: 02/11/2022
+  ms.date: 03/19/2024
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-understand-customers.md)]

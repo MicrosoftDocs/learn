@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.build-app-with-scale-sets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/03/2024
+  author: v-tcassi
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What scaling option do you have when using virtual machine scale sets?"
+    choices:
+    - content: Only scheduled scaling, where you can proactively schedule the scale set to deploy one or more instances to accommodate a spike in traffic and then scale back down when the spike ends
+      isCorrect: false
+      explanation: "Automatic scaling (autoscaling) is also available when using virtual machine scale sets."
+    - content: Only automatic scaling (autoscaling), where can use metric-based threshold scaling.
+      isCorrect: false
+      explanation: "Scheduled scaling is also available when using virtual machine scale sets."
+    - content: Both scheduled and automatic scaling.
+      isCorrect: true
+      explanation: "Both scheduled and automatic scaling (autoscaling) are scaling options when using virtual machine scale sets."
+
+  - content: "What is the primary feature virtual machine scale sets offer for application deployment?"
+    choices:
+    - content: Scaling
+      isCorrect: true
+      explanation: "Scaling is the main feature of virtual machine scale sets. You can scale via both scheduled scaling and automatic scaling (autoscaling)."
+    - content: Eviction policies
+      isCorrect: false
+      explanation: "While you can use eviction policies with virtual machine scale sets, scaling is the main offering of virtual machine scale sets."
+    - content: Reduced costs
+      isCorrect: false
+      explanation: "While virtual machine scale sets offer opportunities to reduce costs through Spot virtual machines, scaling is the main offering of virtual machine scale sets."
+
+  - content: "What can custom script extensions be used for when using virtual machine scale sets?"
+    choices:
+    - content: You can only install applications on a virtual machine scale set using custom script extensions.
+      isCorrect: false
+      explanation: "Custom script extensions can be used to both install and update applications across a scale set."
+    - content: You can only update applications on a virtual machine scale set using custom script extensions.
+      isCorrect: true
+      explanation: "Custom script extensions can be used to both install and update applications across a scale set."
+    - content: You can both install and update applications on a virtual machine scale set using custom script extensions.
+      isCorrect: false
+      explanation: "Custom script extensions can be used to both install and update applications across a scale set."

@@ -21,7 +21,7 @@ Module 2 Tips and Tricks
 - Dedicated is for data warehousing workloads 
 - Understand the dependencies and order for metadata object creation  
 	- They remain the same for serverless or dedicated 
-- Strongly prefer Azure Active Directory Authentication 
+- Strongly prefer Microsoft Entra authentication 
 
 Module 2 Demos 
 

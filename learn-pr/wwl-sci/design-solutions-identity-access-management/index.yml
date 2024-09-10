@@ -3,13 +3,15 @@ uid: learn.wwl.design-solutions-identity-access-management
 metadata:
   title: Design solutions for identity and access management
   description: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
-  ms.date: 3/14/2023
+  ms.date: 3/04/2024
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
 title: Design solutions for identity and access management
-summary: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
+summary: |
+  You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access.
 abstract: |
   By the end of this module, you are able to:
   -   Design cloud, hybrid and multicloud access strategies
@@ -21,7 +23,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-solutions-for-identity-and-access-management.svg
 levels:
 - advanced
 roles:

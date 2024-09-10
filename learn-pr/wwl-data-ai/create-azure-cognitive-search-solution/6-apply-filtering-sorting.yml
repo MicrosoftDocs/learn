@@ -3,13 +3,15 @@ uid: learn.wwl.create-azure-cognitive-search-solution.apply-filtering-sorting
 title: Apply filtering and sorting
 metadata:
   title: Apply filtering and sorting
-  description: "Apply filtering and sorting"
-  ms.date: 07/30/2021
+  description: Apply filtering and sorting
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-apply-filtering-sorting.md)]

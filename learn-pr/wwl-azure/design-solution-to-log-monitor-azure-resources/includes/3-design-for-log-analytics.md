@@ -2,11 +2,6 @@ Azure Monitor stores [log](/azure/azure-monitor/logs/data-platform-logs) data in
 
 While you can deploy one or more workspaces in your Azure subscription, there are several considerations you should understand to ensure your initial deployment follows Microsoft guidelines. The workspace should provide a cost effective, manageable, and scalable deployment that meets your organization's needs.
 
-| Availability, latency, and cost | Immutable storage |
-| --- | --- |
-| Premium Blob Storage | Legal hold policies |
-| Hot, cool, and archive access tiers | Time-based retention policies | 
-
 ### Things to know about Azure Monitor Logs workspaces
 
 Review these characteristics of Azure Monitor Logs workspaces and consider how they can contribute to your monitoring solution for Tailwind Traders.
@@ -53,7 +48,7 @@ Now you're ready to review considerations for designing with Azure Monitor Logs 
 
 As you consider your options for implementing Azure Monitor Logs workspaces and access control in your monitoring and logging solution, review these recommendations. This scenario shows a recommended design for a single workspace in your IT organization's subscription. 
 
-:::image type="content" source="../media/workspace-design.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
+:::image type="content" source="../media/workspace-design-expanded.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
 
 The workspace isn't constrained by data sovereignty or regulatory compliance. It doesn't need to map to the regions where your resources are deployed. Your organization's security and IT admin teams can take advantage of the improved integration with Azure access management and more secure access control.
 

@@ -4,13 +4,12 @@ title: Apply Azure Storage security best practices
 metadata:
   title: Apply Azure Storage security best practices
   description: "Apply Azure Storage security best practices"
-  ms.date: 02/17/2023
+  ms.date: 03/05/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/7-apply-best-practices.md)]

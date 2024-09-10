@@ -1,3 +1,4 @@
+
 Your search solutions performance can be affected by the size and complexity of your indexes. You also need to know how to write efficient queries to search it and choose the right service tier. 
 
 Here, you'll explore all these dimensions and see steps you can take to improve the performance of your search solution.
@@ -11,30 +12,30 @@ To start with, enable diagnostic logging using Log Analytics:
 - In the Azure portal, select **Diagnostic settings**.
 - Select **+ Add diagnostic settings**.
 
-:::image type="content" source="../media/add-diagnostic-logging.png" alt-text="Screenshot showing how to add diagnostics to an Azure Cognitive Search service." lightbox="../media/add-diagnostic-logging.png"::: 
+:::image type="content" source="../media/add-diagnostic-logging-small.png" alt-text="Screenshot showing how to add diagnostics to an Azure AI Search service." lightbox="../media/add-diagnostic-logging.png":::
 
 - Give your diagnostic setting a name.
 - Select **allLogs** and **AllMetrics**.
 - Select **Send to Log Analytics workspace**.
 - Choose, or create, your Log Analytics workspace.
 
-:::image type="content" source="../media/diagnostic-settings.png" alt-text="Screenshot of the diagnostic settings screen with all the options selected.":::
+:::image type="content" source="../media/diagnostic-settings-new.png" alt-text="Screenshot of the diagnostic settings screen with all the options selected.":::
 
 It's important to capture this diagnostic information at the search service level. As there are several places where your end-users or apps can see performance issues.
 
-:::image type="content" source="../media/possible-performance-issues.png" alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or cognitive search processing the query.":::
+:::image type="content" source="../media/possible-performance-issues.png" lightbox="../media/possible-performance-issues.png"alt-text="A diagram showing all the possible performance bottlenecks when searching. From network latency, app service performance, or AI Search processing the query.":::
 
 If you can prove that your search service is performing well, you can eliminate it from the possible factors if you're having performance issues.
 
 ### Check if your search service is throttled
 
-Azure Cognitive Search searches and indexes can be throttled. If your users or apps are having their searches throttled, it's captured in Log Analytics with a 503 HTTP response. If your indexes are being throttled, they'll show up as 207 HTTP responses.
+Azure AI Search searches and indexes can be throttled. If your users or apps are having their searches throttled, it's captured in Log Analytics with a 503 HTTP response. If your indexes are being throttled, they'll show up as 207 HTTP responses.
 
 This query you can run against your search service logs shows you if your search service is being throttled.
 
-:::image type="content" source="../media/throttle-baseline.png" alt-text="A screenshot of the Azure Search Service logs query for HTTP responses." lightbox="../media/throttle-baseline.png":::
+:::image type="content" source="../media/throttle-baseline-small.png" alt-text="A screenshot of the Azure Search Service logs query for HTTP responses." lightbox="../media/throttle-baseline.png":::
 
-In the Azure portal, under **Monitoring**, select **Logs**. In the New Query 1 tab, use this query:
+In the Azure portal, under **Monitoring**, select **Logs**. In the New Query 1 tab, you would use this query:
 
 ```kusto
 AzureDiagnostics
@@ -43,25 +44,25 @@ AzureDiagnostics
 | render barchart 
 ```
 
-Run the command to see a bar chart of your search services HTTP responses. In the above, you can see there have been several 503 responses.
+You'd run the command to see a bar chart of your search services HTTP responses. In the above, you can see there have been several 503 responses.
 
 ### Check the performance of individual queries
 
-The best way to test individual query performance is with a client tool like Postman. You can use any tool that will show you the headers in the response to a query. Azure Cognitive Search will always return an 'elapsed-time' value for how long it took the service to complete the query.
+The best way to test individual query performance is with a client tool like Postman. You can use any tool that will show you the headers in the response to a query. Azure AI Search will always return an 'elapsed-time' value for how long it took the service to complete the query.
 
-:::image type="content" source="../media/performance-elapsed-time.png" alt-text="Screenshot of Postman showing the elapsed time and total round trip time highlighted." lightbox="../media/performance-elapsed-time.png":::
+:::image type="content" source="../media/performance-elapsed-time-small.png" alt-text="Screenshot of Postman showing the elapsed time and total round trip time highlighted." lightbox="../media/performance-elapsed-time.png":::
 
 If you want to know how long it would take to send and then receive the response from the client, subtract the elapsed time from the total round trip. In the above, that would be 125 ms - 21 ms giving you 104 ms.
 
 ## Optimize your index size and schema
 
-How your search queries perform is directly connected to the size and complexity of your indexes. The smaller and more optimized your indexes, the fast Azure Cognitive Search can respond to queries. Here are some tips that can help if you've found that you've performance issues on individual queries.
+How your search queries perform is directly connected to the size and complexity of your indexes. The smaller and more optimized your indexes, the fast Azure AI Search can respond to queries. Here are some tips that can help if you've found that you've performance issues on individual queries.
 
 If you don't pay attention, indexes can grow over time. You should review that all the documents in your index are still relevant and need to be searchable.
 
 If you can't remove any documents, can you reduce the complexity of the schema? Do you still need the same fields to be searchable? Do you still need all the skillsets you started the index with?
 
-:::image type="content" source="../media/performance-selective-field-attributes.png" alt-text="A screenshot of how to reduce the attributes on a field in a search index." lightbox="../media/performance-selective-field-attributes.png":::
+:::image type="content" source="../media/performance-selective-field-attributes-small.png" alt-text="A screenshot of how to reduce the attributes on a field in a search index." lightbox="../media/performance-selective-field-attributes.png":::
 
 Consider reviewing all the attributes you've enabled on each field. For example, adding support for filters, facets, and sorting can quadruple the storage needed to support your index.
 
@@ -89,7 +90,7 @@ Adding extra partitions can help with performance as the search engine can run i
 
 You've seen that you can scale out service tiers by adding more partitions. You can scale out with replicas if you need to scale because of an increase in load. You can also *scale up* your search service by using a higher tier.
 
-:::image type="icon" source="../media/compare-service-tiers.png" border="false" alt-text="A diagram showing two different search tiers.":::
+:::image type="icon" source="../media/compare-service-tiers-small.png" lightbox="../media/compare-service-tiers.png"border="false" alt-text="A diagram showing two different search tiers.":::
 
 The above two search indexes are 200 GB in size. The S1 tier is using eight partitions and the S2 tier only has two. Both of them have two replicas, and both would cost approximately the same. Choosing the best tier for your search solution requires you to know the approximate total size of storage you're going to need. The largest index supported currently is 12 partitions in the L2 tier offering a total of 24 TB. 
 
