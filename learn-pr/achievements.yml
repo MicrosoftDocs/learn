@@ -3887,3 +3887,8 @@ achievements:
   title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
   summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender.trophy
+  type: trophy
+  title: Enhance IoT solution security by using Microsoft Defender for IoT
+  summary: You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
+  iconUrl: /training/achievements/azure-defender-security-solution.svg
