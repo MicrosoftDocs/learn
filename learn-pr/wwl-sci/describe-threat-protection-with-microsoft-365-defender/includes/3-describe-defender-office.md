@@ -66,7 +66,7 @@ Microsoft Defender for Office 365 functionality can be found under the Email & c
 :::image type="content" source="../media/defender-office-explorer.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Explorer page in the Microsoft Defender portal.":::
 
 # [Review](#tab/review)
-:::image type="content" source="../media/defender-office-review.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Explorer page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-office-review.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Review  page in the Microsoft Defender portal.":::
 
 ---
 
