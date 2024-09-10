@@ -3,10 +3,12 @@ uid: learn.wwl.guided-project-design-object-oriented-structure
 metadata:
   title: 'Guided project: Design object-oriented structures'
   description: "This is a guided project about exception handling."
-  ms.date: 03/19/2024
+  ms.date: 09/10/2024
   author: wwlpublish
-  ms.author: gregorfisher
+  ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ai-usage: ai-assisted
 title: 'Guided project: Design object-oriented structures'
