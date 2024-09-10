@@ -42,7 +42,7 @@ One of the benefits of using infrastructure as code is the level of confidence y
 
 - **Automated scanning**: Infrastructure as code scanning by automated tooling checks for errors in the code. Automated tooling can also review proposed changes to ensure that security and performance practices are followed.
 
-- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, an Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure-as-code tools can integrate with Key Vault to access these secrets securely at deply time. Or even better, do away with secrets altogether by using Workload identity federation and Managed identities.
+- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, an Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure-as-code tools can integrate with Key Vault to access these secrets securely at deploy time. Or even better, do away with secrets altogether by using Workload identity federation and Managed identities.
 
 - **Access control**: With infrastructure as code deployments, you have the option of using managed identities or service accounts to automate resource provisioning. Blocking user access prevents incorrect configurations deployed to production. If necessary, you can override this process by using an emergency access account (often called a _break glass account_) or by using the Microsoft Entra ID Privileged Identity Management feature.
 
