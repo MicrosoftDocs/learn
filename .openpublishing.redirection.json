@@ -32343,6 +32343,11 @@
       "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/5-iot-security-architecture-threat-modeling.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
