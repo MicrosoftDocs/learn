@@ -28,7 +28,7 @@ Once you've published your app, you can deploy it to any web server that support
 
 By default, ASP.NET Core apps run in ASP.NET Core's built-in web server, Kestrel. Kestrel is cross-platform and tuned for high performance. It supports all modern web server features, including HTTPS, HTTP/2, HTTP/3. and WebSockets. It is also customizable and extensible, so you can configure it to meet your app's needs.
 
-Kestrel is most often deployed behind a reverse proxy server, such as Internet Information Services (IIS), Nginx, or Apache. The reverse proxy server handles incoming requests from the internet and forwards them to Kestrel. This allows you to take advantage of the reverse proxy server's features, such as load balancing, caching, and SSL termination.
+Since Kestrel is built into ASP.NET Core, you can deploy your app to any machine capable of running .NET, including Windows, macOS, and Linus. Apps running on Kestrel are most often deployed behind a reverse proxy server, such as Internet Information Services (IIS), Nginx, or Apache. The reverse proxy server handles incoming requests from the internet and forwards them to Kestrel. This allows you to take advantage of the reverse proxy server's features, such as load balancing, caching, and SSL termination.
 
 ### Internet Information Services (IIS)
 
@@ -36,4 +36,4 @@ If you're deploying to Windows, you can host your ASP.NET Core app in IIS. To do
 
 ### Azure
 
-If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. The Azure CLI (azd) tool makes it easy to deploy your app to Azure from the command line. 
+If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. The Azure CLI (azd) tool makes it easy to deploy your app to Azure from the command line. You can also use Azure DevOps or GitHub Actions to automate your deployment process.
