@@ -43,6 +43,5 @@ products:
 subjects:
 - iot
 units:
-- learn.wwl.examine-security-fundamentals-for-iot.summary
 badge:
   uid: learn.wwl.examine-security-fundamentals-for-iot.badge
