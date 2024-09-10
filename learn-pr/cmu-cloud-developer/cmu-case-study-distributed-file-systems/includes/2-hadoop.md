@@ -7,7 +7,7 @@ The MapReduce programming model assumes the availability of a distributed storag
 
 An open-source version of MapReduce, called Apache Hadoop<sup>[2][^2]</sup>, is very popular in big-data circles. HDFS is an open-source DFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
-It is important to note that HDFS is not POSIX-compliant and is not a mountable file system on its own. HDFS is typically accessed via HDFS clients or by using application programming interface (API) calls from the Hadoop libraries. However, the development of a File system in User SpacE (FUSE) driver for ([HDFS](http://wiki.apache.org/hadoop/MountableHDFS)) allows it to be mounted as a virtual device in UNIX-like operating systems.
+It is important to note that HDFS is not POSIX-compliant and is not a mountable file system on its own. HDFS is typically accessed via HDFS clients or by using application programming interface (API) calls from the Hadoop libraries. However, the development of a File system in User SpacE (FUSE) driver for ([HDFS](https://cwiki.apache.org/confluence/display/HADOOP2/MountableHDFS)) allows it to be mounted as a virtual device in UNIX-like operating systems.
 
 ## HDFS architecture
 
