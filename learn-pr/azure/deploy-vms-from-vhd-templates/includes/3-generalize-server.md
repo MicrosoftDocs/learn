@@ -61,7 +61,7 @@ az vm generalize \
 
 If you're building a Linux image, you'll use the **waagent** tool to prepare a virtual machine for generalization. The waagent tool performs tasks like deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.
 
-To generalize a Linux virtual machine, sign in to the machine and run the following command:
+To generalize a Linux virtual machine, sign in to the machine, and run the following command:
 
 ```bash
 waagent -deprovision+user

@@ -58,7 +58,7 @@ az vm create \
 
 A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to its state when the snapshot was taken.
 
-If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped and that you take a snapshot of every VHD. Failure to do so can result in inconsistencies if you need to restore the virtual machine from these snapshots. By stopping the virtual machine, you can ensure that there's no disk activity and that a successful snapshot is taken.
+If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped and that you take a snapshot of every VHD. Failure to do so can result in inconsistencies if you need to restore the virtual machine from these snapshots. You can ensure there's no disk activity and take a successful snapshot by stopping the virtual machine.
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process. You can continue running virtual machines by using the VHD afterward.
 
