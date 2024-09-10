@@ -32323,6 +32323,11 @@
       "source_path": "learn-pr/paths/enhance-iot-solution-security-by-using-azure-defender/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
