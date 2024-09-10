@@ -26,7 +26,7 @@ quiz:
     - content: AI, machine learning, and deep learning are three distinct and unrelated fields.
       isCorrect: false
       explanation: "Incorrect: _AI is the broad field that includes both machine learning and deep learning as subfields._"
-  - content: "Question #2: Which algorithm would be the most appropriate for predicting house prices and why?"
+  - content: "Which algorithm would be the most appropriate for predicting house prices and why?"
     choices:
     - content: Classification algorithms because they are used to sort data into predefined categories.
       isCorrect: false
@@ -40,7 +40,7 @@ quiz:
     - content: Classification algorithms because they are used to find the best solution for relators such as determining the quickest sale.
       isCorrect: false
       explanation: "Incorrect: Optimization algorithms are used to find the best solution among many possible options, such as determining the quickest route for a delivery."
-  - content: "Question #3: Which milestone most significantly contributed to the practical applications of AI in every day life and why?"
+  - content: "Which milestone most significantly contributed to the practical applications of AI in every day life and why?"
     choices:
     - content: Alan Turing's question "Can machines think?" in 1950 because this sparked interest in AI.
       isCorrect: false
