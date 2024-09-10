@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-event-streams-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary function of the Main Editor in Microsoft Fabric event streams?"
+    choices:
+    - content: "It allows you to write code for managing the infrastructure of your event stream."
+      isCorrect: false
+      explanation: "Incorrect. The Main Editor is a no-code tool for designing and managing your event data pipeline."
+    - content: "It's to manually scale the event stream according to the volume of data."
+      isCorrect: false
+      explanation: "Incorrect. The Main Editor isn't responsible for scaling, which is handled automatically by Microsoft Fabric event stream."
+    - content: "It's to design your event data pipeline by adding and managing sources and destinations."
+      isCorrect: true
+      explanation: "Correct. The Main Editor allows you to drag and drop different nodes such as sources, destinations, and transformations to design your event data pipeline."
+  - content: "What is the purpose of the 'Manage fields' transformation in Microsoft Fabric event streams?"
+    choices:
+    - content: "It allows you to add, remove, change data type, or rename fields coming in from an input or another transformation."
+      isCorrect: true
+      explanation: "Correct. The 'Manage fields' transformation in Microsoft Fabric event streams is used to manipulate the fields in the incoming data."
+    - content: "It calculates an aggregation every time a new event occurs over a period of time."
+      isCorrect: false
+      explanation: "Incorrect. This is the description of the 'Aggregate' transformation, not the 'Manage fields' transformation."
+    - content: "It allows you to connect two or more nodes and add events with shared fields into one table."
+      isCorrect: false
+      explanation: "Incorrect. This is the description of the 'Union' transformation, not the 'Manage fields' transformation."
+  - content: "What is the purpose of the 'Group by' operator in the event processor editor of an event stream?"
+    choices:
+    - content: "It allows you to calculate aggregations across all events within a certain time window, grouping by the values in one or more fields."
+      isCorrect: true
+      explanation: "Correct. The 'Group by' operator is used for calculating aggregations across all events within a certain time window."
+    - content: "It allows you to filter out the events that don't meet your criteria based on the field values."
+      isCorrect: false
+      explanation: "Incorrect. This is the function of the 'Filter' operator, not the 'Group by' operator."
+    - content: "It allows you to connect two or more nodes and add events that Share fields into one table."
+      isCorrect: false
+      explanation: "Incorrect. This is the function of the 'Union' operator, not the 'Group by' operator."
+  - content: "What is the main purpose of creating a Microsoft Fabric event stream in this exercise?"
+    choices:
+    - content: "To launch the exercise"
+      isCorrect: false
+      explanation: "Incorrect. Launching the exercise is a step in the process, not the main purpose of creating an event stream."
+    - content: "To generate a free Fabric trial license"
+      isCorrect: false
+      explanation: "Incorrect. The Fabric trial license is required to complete the exercise, but it's not the main purpose of creating an event stream."
+    - content: "To create and link objects to read and write objects to a lakehouse"
+      isCorrect: true
+      explanation: "Correct. The main purpose of creating a Microsoft Fabric event stream in this exercise is to create and link objects for reading and writing to a lakehouse."

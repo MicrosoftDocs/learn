@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-defender-cloud-security-posture
+metadata:
+  title: Manage security posture by using Microsoft Defender for Cloud
+  description: "This module focuses on equipping administrators with the knowledge and skills needed to manage and enhance the security posture of their cloud environment using Microsoft Defender for Cloud, ensuring proactive identification and remediation of security risks."
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Manage security posture by using Microsoft Defender for Cloud
+summary: This module teaches administrators to manage and improve cloud security using Microsoft Defender for Cloud, focusing on proactive risk identification and remediation.
+abstract: |
+  By the end of this module, you will be able to:
+
+  -   Utilize Microsoft Defender for Cloud Secure Score and Inventory to identify and mitigate security risks, enhancing overall security posture.
+
+  -   Assess and align with security frameworks using Microsoft Defender for Cloud to ensure adherence to security standards and best practices.
+
+  -   Integrate specific industry and regulatory standards into Microsoft Defender for Cloud for tailored compliance.
+
+  -   Connect hybrid and multicloud environments to Microsoft Defender for Cloud for centralized security management, and monitor external assets to safeguard against external threats.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- defender-for-cloud
+subjects:
+- cloud-security
+- threat-protection
+units:
+- learn.wwl.microsoft-defender-cloud-security-posture.introduction
+- learn.wwl.microsoft-defender-cloud-security-posture.implement-microsoft-defender-for-cloud
+- learn.wwl.microsoft-defender-cloud-security-posture.secure-score
+- learn.wwl.microsoft-defender-cloud-security-posture.regulatory-compliance-dashboard
+- learn.wwl.microsoft-defender-cloud-security-posture.microsoft-cloud-security-benchmark
+- learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-for-cloud-secure-score
+- learn.wwl.microsoft-defender-cloud-security-posture.connect-hybrid-cloud-multi-cloud-environments
+- learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-external-attack-surface-management
+- learn.wwl.microsoft-defender-cloud-security-posture.knowledge-check
+- learn.wwl.microsoft-defender-cloud-security-posture.summary
+badge:
+  uid: learn.wwl.microsoft-defender-cloud-security-posture.badge

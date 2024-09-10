@@ -4,13 +4,10 @@ title: Describe guest access and Business to Business accounts
 metadata:
   title: Describe guest access and Business to Business accounts
   description: "Describe guest access and Business to Business accounts"
-  ms.date: 02/03/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-guest-access-business-to-business-accounts.md)]

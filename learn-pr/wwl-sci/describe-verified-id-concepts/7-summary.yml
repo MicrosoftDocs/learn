@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: summary
   description: "Summary and resources for decentralized identifiers (DIDs) and verifiable credentials."
-  ms.date: 03/06/2023
+  ms.date: 08/23/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

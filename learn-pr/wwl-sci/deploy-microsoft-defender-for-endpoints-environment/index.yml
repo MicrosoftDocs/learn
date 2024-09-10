@@ -6,8 +6,9 @@ metadata:
   ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: module
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Deploy the Microsoft Defender for Endpoint environment
 summary: Learn how to deploy the Microsoft Defender for Endpoint environment, including onboarding devices and configuring security.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - security-operations-analyst
 products:
 - m365
-- mdatp
+- defender-endpoint
 - windows
 subjects:
 - device-management

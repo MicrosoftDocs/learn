@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: "Exercise: Add a new tile"
   description: "In this unit, you learn how to add a new tile to an existing dashboard in Azure Data Explorer web UI."
-  ms.date: 8/17/2022
+  ms.date: 01/19/2024
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-add-new-tile.md)]

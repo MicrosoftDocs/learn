@@ -4,11 +4,10 @@ title: Publish a custom GitHub action
 metadata:
   title: Publish a custom GitHub action
   description: Learn about choosing the right visibility for your action, best practices for documenting and versioning your action, and how to publish your action to the GitHub Marketplace.
-  ms.date: 04/14/2021
+  ms.date: 07/24/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/publish-custom-github-action.md)]

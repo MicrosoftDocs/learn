@@ -83,7 +83,7 @@ This feature is available if your organization uses Microsoft Defender Antivirus
 Leave tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
 ### Show user details
-Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
+Turn on this feature so that you can see user details stored in Microsoft Entra ID. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
 - Security operations dashboard
 - Alert queue
@@ -104,7 +104,7 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 ### Office 365 Threat Intelligence connection
 This feature is only available if you've an active Office 365 E5 or the Threat Intelligence add-on. 
 
-When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 > [!NOTE]
 > You'll need to have the appropriate license to enable this feature.
@@ -141,7 +141,7 @@ This feature is only available if you've the following prerequisites:
 
 A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
 
-An active Microsoft Intune environment, with Intune-managed Windows devices Azure AD-joined.
+An active Microsoft Intune environment, with Intune-managed Windows devices Microsoft Entra joined.
 
 ### Conditional Access policy
 When you enable Intune integration, Intune will automatically create a classic Conditional Access (CA) policy. This classic CA policy is a prerequisite for setting up status reports to Intune. It shouldn't be deleted.

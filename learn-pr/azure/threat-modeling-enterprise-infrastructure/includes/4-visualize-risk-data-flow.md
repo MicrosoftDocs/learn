@@ -15,7 +15,7 @@ Data-flow refers to data movement between processes, data stores, and external e
 |Flow sequence|Is the data-flow enumerated to make it easier to follow the flow sequence?|
 |Type|What type of data is in the data-flow? Cookies? XML? SOAP payload? REST payload? JSON payload?|
 |Extra controls|Does the data-flow have forgery protection enabled? Other security flags enabled?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
+|Authentication|Does the process rely on Microsoft Entra ID for authentication? If not, what does it rely on?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
 #### Woodgrove data-flow elements

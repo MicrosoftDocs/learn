@@ -28,7 +28,10 @@ stream_df = spark.readStream.format("delta") \
 
 # Now you can process the streaming data in the dataframe
 # for example, show it:
-stream_df.show()
+stream_df.writeStream \
+    .outputMode("append") \
+    .format("console") \
+    .start()
 ```
 
 > [!NOTE]

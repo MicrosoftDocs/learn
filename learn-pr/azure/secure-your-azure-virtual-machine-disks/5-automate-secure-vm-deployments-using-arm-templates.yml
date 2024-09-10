@@ -4,11 +4,12 @@ title: Automate secure VM deployments by adding encryption to Azure Resource Man
 metadata:
   title: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
   description: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
-  ms.date: 09/24/2018
+  ms.date: 12/29/2023
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 durationInMinutes: 5
 content: |
   [!include[](includes/5-automate-secure-vm-deployments-using-arm-templates.md)]

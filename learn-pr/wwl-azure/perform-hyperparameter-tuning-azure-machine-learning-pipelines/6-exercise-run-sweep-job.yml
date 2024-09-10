@@ -3,12 +3,13 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.ex
 title: Exercise - Run a sweep job
 metadata:
   title: Exercise - Run a sweep job
-  description: "Exercise - Run a sweep job"
-  ms.date: 11/17/2022
+  description: Exercise - Run a sweep job
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-run-sweep-job.md)]

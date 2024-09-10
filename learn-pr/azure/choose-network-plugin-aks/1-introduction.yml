@@ -3,13 +3,12 @@ uid: learn.choose-best-networking-plugin-for-aks.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
-  description: "Learn how to choose an AKS network plugin"
-  ms.date: 03/23/2022
-  author: nickomang
-  ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  title: Introduction
+  description: "Learn how to choose an Azure Kubernetes Service (AKS) network plugin"
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

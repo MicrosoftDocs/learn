@@ -1,27 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-active-directory
 metadata:
-  title: Understand Azure Active Directory
-  description: "This module equips learners to describe Azure AD - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Azure AD Domain Services."
-  ms.date: 03/14/2023
+  title: Understand Microsoft Entra ID
+  description: "This module equips learners to describe Microsoft Entra ID - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Microsoft Entra Domain Services."
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Understand Azure Active Directory
-summary: This module explains Azure AD. You'll compare Azure AD to AD DS, learn about Azure AD Premium P1 and P2, and explore Azure AD Domain Services for managing domain-joined devices and apps in the cloud.
+  ms.topic: module
+  ms.service: active-directory
+title: Understand Microsoft Entra ID
+summary: This module explains Microsoft Entra ID. You'll compare Microsoft Entra ID to Active Directory DS, learn about Microsoft Entra ID P1 and P2, and explore Microsoft Entra Domain Services for managing domain-joined devices and apps in the cloud.
 abstract: |
   After this module, you should be able to:
-  - Describe Azure AD.
-  - Compare Azure AD to Active Directory Domain Services (AD DS).
-  - Describe how Azure AD is used as a directory for cloud apps.
-  - Describe Azure AD Premium P1 and P2.
-  - Describe Azure AD Domain Services.
+  - Describe Microsoft Entra ID.
+  - Compare Microsoft Entra ID to Active Directory Domain Services (AD DS).
+  - Describe how Microsoft Entra ID is used as a directory for cloud apps.
+  - Describe Microsoft Entra ID P1 and P2.
+  - Describe Microsoft Entra Domain Services.
 prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
   - Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-active-directory-explore.svg
 levels:
 - intermediate
 roles:
@@ -29,7 +29,7 @@ roles:
 - identity-access-admin
 products:
 - azure
-- azure-active-directory
+- entra-id
 - active-directory
 subjects:
 - identity-access

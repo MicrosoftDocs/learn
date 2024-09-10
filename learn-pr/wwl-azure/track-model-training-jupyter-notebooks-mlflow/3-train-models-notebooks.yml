@@ -3,12 +3,13 @@ uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.train-models-notebo
 title: Train and track models in notebooks
 metadata:
   title: Train and track models in notebooks
-  description: "Train and track models in notebooks"
-  ms.date: 04/19/2023
+  description: Train and track models in notebooks
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/3-train-models-notebooks.md)]

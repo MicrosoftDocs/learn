@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the correct way to handle exceptions in C#?"
+    choices:
+    - content: "Catch all exceptions and do nothing with them."
+      isCorrect: false
+      explanation: "Incorrect. You focus on specific exceptions and \"handle\" them."
+    - content: "Catch all exceptions and rethrow them using the throw keyword at the end of the catch block."
+      isCorrect: false
+      explanation: "Incorrect. The goal is to catch specific potential errors and to re-throw custom exceptions."
+    - content: "Only catch exceptions that you can handle and leave the application in a known state."
+      isCorrect: true
+      explanation: "Correct. The strategy is to handle specific potential exceptions and to notify the user and/or shut down the program gracefully."
+  - content: "What is the purpose of the `catch` block in C# exception handling?"
+    choices:
+    - content: "To execute code that must run regardless of whether an exception is thrown or not."
+      isCorrect: false
+      explanation: "Incorrect. A Catch block does not guarantee that your code will continue to run, only that it will handle an error gracefully."
+    - content: "To define a block of code that executes if an exception is thrown in the `try` block."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions are thrown in the Catch block, not in the Try block."
+    - content: "To catch and handle exceptions that are thrown in the `try` block."
+      isCorrect: true
+      explanation: "Correct. Exceptions are caught in the Try block and either a .NET or custom exception can be rethrown in the Catch block to handle it."
+  - content: "What is the purpose of the `try` block in C# exception handling?"
+    choices:
+    - content: "To execute code that must run regardless of whether an exception is thrown or not."
+      isCorrect: false
+      explanation: "Incorrect. A Try block only catches an exception when one occurs, so that it can be handled gracefully in the Catch block."
+    - content: "To catch and handle exceptions that are thrown in the `catch` block."
+      isCorrect: false
+      explanation: "Incorrect. Exceptions are caught in the Try block and handled in the Catch block, often with a custom exception."
+    - content: "To enclose code that may throw an exception."
+      isCorrect: true
+      explanation: "Correct. A Try block surrounds the code that might cause an exception. The exception is then rethrown as a .NET or custom exception to inform the user or shutdown the program gracefully."

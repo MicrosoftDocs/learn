@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/29/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which parameter controls the number of sentences returned in document extractive summarization using the `azure_ai` extension's `summarize_extractive()` function?"
+    choices:
+    - content: "sentenceCount"
+      isCorrect: true
+      explanation: "Correct. The sentenceCount parameter guides how many sentences are returned in the extractive summarization process. The default value is 3, and the range is from 1 to 20."
+    - content: "summaryLength"
+      isCorrect: false
+      explanation: "Incorrect. This parameter doesn't exist on the `summarize_extractive()` function."
+    - content: "maxSentences"
+      isCorrect: false
+      explanation: "Incorrect. This parameter doesn't exist on the `summarize_extractive()` function."
+  - content: "What are the two summarization techniques accessible through the `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server?"
+    choices:
+    - content: "Abstractive and query-focused summarization."
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL doesn't support the query-focused summarization technique. This technique requires the use of Azure OpenAI."
+    - content: "Abstractive and extractive summarization."
+      isCorrect: true
+      explanation: "Correct. The Azure AI extension for PostgreSQL supports both abstractive and extractive summarization techniques."
+    - content: "Extractive and query-focused summarization."
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI extension for PostgreSQL doesn't support the query-focused summarization technique. This technique requires the use of Azure OpenAI."
+  - content: "What does the rank score return for each sentence by the extractive summarization function convey?"
+    choices:
+    - content: "The order of the extracted sentence within the original text."
+      isCorrect: false
+      explanation: "Incorrect. The rank score is not related to the original position of the extracted sentence in the original text."
+    - content: "The predicted quality of the extracted sentence in the overall summary."
+      isCorrect: false
+      explanation: "Incorrect. The rank score does not convey the quality of extracted sentences to the overall summary."
+    - content: "The sentence's relevance to the original text's primary idea."
+      isCorrect: true
+      explanation: "Correct. The rank score, a value between 0 and 1 (inclusive), indicates how relevant a sentence is to the main idea of the original document."

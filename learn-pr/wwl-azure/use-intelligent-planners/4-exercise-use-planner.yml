@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-intelligent-planners.exercise-use-planner
+title: Exercise - Create a planner
+metadata:
+  title: Exercise - Create a planner
+  description: Exercise - Create a planner
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-use-planner.md)]

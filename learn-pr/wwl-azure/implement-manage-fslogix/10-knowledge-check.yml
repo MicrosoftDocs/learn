@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/27/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator is tasked with optimizing file I/O between host client and remote profile store in a virtual desktop environment. Which solution would be most effective for this task?"
+    choices:
+    - content: "Using an alternate profile solution to enable Microsoft 365 applications"
+      isCorrect: false
+      explanation: "Incorrect. While this can enhance application performance, it doesn't directly optimize file I/O between host client and remote profile store."
+    - content: "Redirecting only the portion of the profile that contains Office data by using an ODFC container"
+      isCorrect: false
+      explanation: "Incorrect. This method is more about managing Office data, not optimizing file I/O between host client and remote profile store."
+    - content: "Implementing FSLogix to provide a local profile experience, eliminating the need for roaming profiles"
+      isCorrect: true
+      explanation: "Correct. FSLogix optimizes file I/O between host client and remote profile store by providing a local profile experience."
+  - content: "A team is planning to host a general purpose file share for less than 200 users. Which performance tier should they use?"
+    choices:
+    - content: "Standard with multiple file shares"
+      isCorrect: false
+      explanation: "Incorrect. Standard with multiple file shares is recommended for light workloads with more than 200 users."
+    - content: "Premium file shares"
+      isCorrect: false
+      explanation: "Incorrect. Premium file shares are recommended for workloads with more than 200 users or heavy workloads."
+    - content: "Standard file shares"
+      isCorrect: true
+      explanation: "Correct. For light workloads with fewer than 200 users, standard file shares are recommended."
+  - content: "An IT administrator is managing the end user experience in a virtual desktop environment using FSLogix Apps RuleEditor. They need to set a registry value for a specific user group at sign in. Which type of rule should they create?"
+    choices:
+    - content: "Hiding rule"
+      isCorrect: false
+      explanation: "Incorrect. Hiding rules are used to hide specific items from a user or group of users."
+    - content: "Redirection rule"
+      isCorrect: false
+      explanation: "Incorrect. Redirection rules are used to redirect non-profile or other specific data into the user profile container."
+    - content: "Specify value rule"
+      isCorrect: true
+      explanation: "Correct. The specify value rule sets a registry value for a specific user or group of users at sign in."
+  - content: "A system administrator is configuring Cloud Cache for FSLogix profiles. They have followed the steps to configure the registry settings and now need to verify the configuration. What should they do to confirm that the Cloud Cache has been correctly set up?"
+    choices:
+    - content: "Reboot the system and check for any error messages during startup"
+      isCorrect: false
+      explanation: "Incorrect. Rebooting the system and checking for errors isn't a reliable method to verify Cloud Cache configuration."
+    - content: "Check the system's task manager for any FSLogix related processes"
+      isCorrect: false
+      explanation: "Incorrect. Checking the task manager won't provide information about the Cloud Cache configuration."
+    - content: "Review the Windows Event Viewer, File Explorer, or the FSLogix profile logs"
+      isCorrect: true
+      explanation: "Correct. Verifying the Cloud Cache configuration requires reviewing the Windows Event Viewer, File Explorer, or the FSLogix profile logs."

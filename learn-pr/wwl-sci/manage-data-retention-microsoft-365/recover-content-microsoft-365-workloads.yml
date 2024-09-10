@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
+title: Recover content in Microsoft 365 workloads
+metadata:
+  title: Recover content in Microsoft 365 workloads
+  description: "Recover content in Microsoft 365 workloads"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/recover-content-microsoft-365-workloads.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In what scenario might a complete restoration of OneDrive content be necessary?"
+    choices:
+    - content: "After a user accidentally deletes a single file."
+      isCorrect: false
+      explanation: "Incorrect: A single file deletion doesn't require a complete restoration; it can be restored from the Recycle Bin."
+    - content: "After a ransomware attack or widespread accidental deletions."
+      isCorrect: true
+      explanation: "Correct: A complete restoration of OneDrive content is necessary in scenarios involving extensive data changes, like after a ransomware attack or widespread accidental deletions, to revert the entire OneDrive to an earlier state."
+    - content: "When organizing files into new folders."
+      isCorrect: false
+      explanation: "Incorrect: Organizing files into new folders doesn't require a complete restoration; it involves normal file management activities."

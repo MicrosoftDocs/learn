@@ -1,10 +1,10 @@
-In this exercise, you'll see how you can recover from a common error by using point in time restore (PITR). This process is easy to do in the portal or programmatically. In this exercise, you'll learn how to do it by using the Azure CLI.
+In this exercise, you'll learn how you can recover from a common error by using point-in-time restore (PITR). This process is easy to do in the portal or programmatically. In this exercise, you'll learn how to do it by using the Azure CLI.
 
 ## Setup: Use scripts to deploy Azure SQL Database
 
-In the terminal on the right side, you'll see Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercises, you need to run a script there to create your environment: an Azure SQL Database that contains the AdventureWorks database. There will be some prompts in the script for a password and your local IP address.  
+In the terminal on the right, you'll see Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercises, you need to run a script there to create your environment: an Azure SQL Database that contains the AdventureWorks database. There will be some prompts in the script for a password and your local IP address.  
 
-These scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region because they won't be shown again.
+These scripts should take three to five minutes to complete. Make sure to note your password, unique ID, and region, because they won't be shown again.
 
 1. To get the IP address that's required, you need to disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser). Note the resulting IP address.
 
@@ -37,10 +37,11 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
     Write-Host "Your server name is:"
     Write-Host $serverName
     ```
+
    > [!IMPORTANT]
    > Don't forget to note your password, unique ID, and region. You'll need this information throughout the module.
 
-1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Microsoft Defender for Cloud, and create a storage account for use in upcoming units.
+1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script also adds your IP address as a firewall rule, enables Microsoft Defender for Cloud, and creates a storage account for use in upcoming units.
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -81,7 +82,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
         -Type "Standard_LRS"
     ```
 
-1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example, **aw-server\<unique ID>.database.windows.net**.  
+1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example: **aw-server\<unique ID>.database.windows.net**.  
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -90,7 +91,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
     1. In the **Authentication** box, enter **SQL Server Authentication**. Enter the corresponding Server Admin **Login** and **Password** (the one you provided during deployment in the previous exercise).  
 
-    1. Select **Remember password**, and then select **Connect**.  
+    1. Check the **Remember password** box, then select **Connect**.  
 
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot that shows how to connect to SQL Database in SSMS.":::  
 
@@ -102,12 +103,12 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 Before you go any further, it's important to understand the recommended process for doing PITR:  
 
 1. A table or database is deleted by accident.
-1. Determine the time that you need to go back to. It should be before the error happened.  
-1. Complete PITR via PowerShell or the Azure portal to go back to this time. This process deploys a new database and restores a copy of your database. For example, AdventureWorks-copy.  
-1. Confirm the new database (for example, AdventureWorks-copy) is in the correct state (as it was before the accident occurred).  
-1. Rename the original database. For example, rename AdventureWorks to AdventureWorks-old.
-1. Rename the new database with the original database name. For example, rename AdventureWorks-copy to AdventureWorks.  
-1. Delete the original database. For example, AdventureWorks-old.  
+1. Determine the time that you need to go back to; it should be before the error happened.  
+1. Complete PITR via PowerShell or the Azure portal to go back to this time. This process deploys a new database and restores a copy of your database. For example: *AdventureWorks-copy*.  
+1. Confirm the new database (for example, *AdventureWorks-copy*) is in the correct state (as it was before the accident occurred).  
+1. Rename the original database. For example, rename *AdventureWorks* to *AdventureWorks-old*.
+1. Rename the new database with the original database name. For example, rename *AdventureWorks-copy* to *AdventureWorks*.  
+1. Delete the original database. For example: *AdventureWorks-old*.  
 
 In this exercise, you'll complete these steps.  
 
@@ -115,11 +116,13 @@ In this exercise, you'll complete these steps.
 
 First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
 
-1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot.) Also, confirm that **Additional Connection Parameters** doesn't contain any text.  
+1. Go to SSMS and check/update your connection. Select **File** > **Connect Object Explorer**, then select the **Options** button. 
+
+1. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot.) Also, confirm that **Additional Connection Parameters** tab doesn't contain any text.  
 
     :::image type="content" source="../media/3-default.png" alt-text="Screenshot that shows the default connection.":::
 
-1. Right-click your AdventureWorks database and create a query. Run this query and review the results:  
+1. Expand the **Databases** folder, then right-click your AdventureWorks database and select **New Query**. Enter the following query and run it by selecting **Execute**, then review the results:  
 
     ```sql
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
@@ -129,16 +132,16 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
 
 1. Simulate the loss of data by dropping a table in the database.  
 
-    In the same query window, run this query and note the completion time:
+    In the same query window, run this query, then select the **Messages** tab in the **Results** window and note the completion time:
 
     ```sql
     DROP TABLE SalesLT.SalesOrderDetail
     ```
 
     > [!IMPORTANT]
-    > Save the completion time. You will need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
+    > Save the completion time. You'll need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
-1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right side of this page to configure your environment in Azure Cloud Shell: 
+1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right side of this page to configure your environment:
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
@@ -155,15 +158,15 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
 
     The `group` and `sql-server` parameters returned should match the names of your Microsoft Learn resource group and your Azure SQL Database logical server.
 
-### Identify the time to restore the database to
+### Identify the time to which to restore the database
 
-The first step is to figure out the time to restore the database to. You need to know when the last "good" transaction occurred before the "bad" one. You'll restore before the bad transaction but after the last good one.  
+The first step is to figure out the time to which to restore the database. You need to know when the last "good" transaction occurred before the "bad" one. You'll restore before the bad transaction but after the last good one.  
 
 1. One way to determine the drop time is by looking at the completion time of the DROP statement, which you noted in the previous step.  
 
-    An alternative way is to use the Audit logs in the Azure portal. In this exercise, you didn't configure auditing to Log Analytics, but let's explore what you could do if you  had. You could go to your Azure SQL database in the Azure portal. In the left pane, under **Security**, you could select **Auditing** and then you could select **View audit logs**. By then selecting **Log Analytics**, you are brought to a query editor that allows you to query logs by using Kusto Query Language (KQL). SQL professionals can use this query language to easily query logs.  
+    An alternative way is to use the Audit logs in the Azure portal. In this exercise, you didn't configure auditing to Log Analytics, but let's explore what you could do if you had. You could go to your Azure SQL database in the Azure portal. In the left pane, under **Security**, you could select **Auditing**, then you could select **View audit logs**. By then selecting **Log Analytics**, you're brought to a query editor that allows you to query logs by using Kusto Query Language (KQL). SQL professionals can use this query language to easily query logs.  
 
-    You could then run the following KQL query.
+    You could then run the following KQL query:
 
     ```kql
     search database_name_s == "AdventureWorks"
@@ -177,14 +180,14 @@ The first step is to figure out the time to restore the database to. You need to
     :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot that shows Log Analytics results.":::
 
     > [!NOTE]
-    > It can take 5-10 minutes for the logs to appear here, so for the purposes of this exercise it has been left out. You will instead use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
+    > It can take 5 to 10 minutes for the logs to appear here, so for the purposes of this exercise, we've left it out. You'll instead use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
 
 1. In this example, the date/time is `2020-07-24 08:06:24.386` from Log Analytics and `2020-07-24T13:06:24.386-07:00` from SSMS. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract 0.001 seconds to ensure you restore to a time *before* the error occurred:
     * Log Analytics format: `2020-07-24 08:06:24.386`
     * SSMS format: `2020-07-24T13:06:24.386-07:00`
     * Required format: `2020-07-24T20:06:24.385` 
  
-1. Set `$before_error_time` to the resulting value:
+1. Set `$before_error_time` to the resulting value, substituting your time for the time in this example:
 
     ```powershell
     $before_error_time ="2020-07-24T20:06:24.385"
@@ -201,15 +204,15 @@ In this section, you'll use `az cli db restore` to restore the database to a tim
     az sql db restore --dest-name "AdventureWorks-copy" --name "AdventureWorks" --time $before_error_time --verbose
     ```
 
-    The restore will take about 5-10 minutes. When you run a restore, Azure deploys a new Azure SQL database in your Azure SQL Database logical server. The new database has the same configuration options as the original. After the Azure SQL database is deployed, Azure will restore the database into the new Azure SQL database.  
+    The restore will take about 5 to 10 minutes. When you run a restore, Azure deploys a new Azure SQL database in your Azure SQL Database logical server. The new database has the same configuration options as the original. After the Azure SQL database is deployed, Azure restores the database into the new Azure SQL database.  
 
-1. You can check the status by refreshing your view of databases in SSMS. Right-click **Databases** and select **Refresh**. After the database is deployed, you'll see that the restore is in progress:  
+1. You can check the status by refreshing your view of databases in SSMS. Right-click the **Databases** folder and select **Refresh**. After the database is deployed, you'll see that the restore is in progress:  
 
     :::image type="content" source="../media/3-db-restore.png" alt-text="Screenshot that shows a database restoring in SSMS.":::  
 
-    After you see that the restore is in progress, the restore should take 2-3 minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you start a refresh.  
+    After you see that the restore is in progress, the restore should take two to three minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you start a refresh.  
 
-    If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Recover using automated database backups](/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
+    If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Restore a database from a backup in Azure SQL Database](/azure/azure-sql/database/recovery-using-backups).  
 
 1. You'll now confirm that the new database is in the correct state (as it was before the accident occurred). Right-click the logical server in SSMS and then select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
 
@@ -229,11 +232,12 @@ In this section, you'll use `az cli db restore` to restore the database to a tim
 
 ### Swap the databases and clean up
 
-Next, you'll rename the original database to AdventureWorks-old so you can later rename the new database to use the original database name. As long as your applications use retry logic, this change will make it so you don't need to change any connection strings.
+Next, you'll rename the original database to *AdventureWorks-old* so you can later rename the new database to use the original database name. As long as your applications use retry logic, this change will make it so you don't need to change any connection strings.
 
 If at any point your database appears unavailable (for example, you can't connect to the databases in SSMS if you refresh the connection), it could be because of updates happening to the DNS table. So although the database isn't physically unavailable, it is unresolvable. If you wait a minute or so, you should be able to resume normal activities.  
 
-1. Use this command to change the database name: 
+1. Use this command to change the database name:
+
     ```powershell
     az sql db rename --name "AdventureWorks" --new-name "AdventureWorks-old"
     ```

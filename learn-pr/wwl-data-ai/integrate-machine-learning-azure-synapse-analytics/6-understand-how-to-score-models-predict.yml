@@ -3,12 +3,13 @@ uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.underst
 title: Understand how to score machine learning models with PREDICT
 metadata:
   title: Understand how to score machine learning models with PREDICT
-  description: "Understand how to score machine learning models with PREDICT"
-  ms.date: 03/30/2021
+  description: Understand how to score machine learning models with PREDICT
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 7
 content: |

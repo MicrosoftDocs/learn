@@ -3,28 +3,43 @@ uid: learn.wwl.implement-ip-address-management
 metadata:
   title: Implement IP Address Management
   description: "Implement IP Address Management"
-  ms.date: 03/01/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ms.subservice: networking
+  ai-usage: human-only
 title: Implement IP Address Management
 summary: Learn to implement IPAM to help manage your organization’s DHCP and DNS servers and to manage IP address space.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe IPAM.
-  - Deploy IPAM.
-  - Describe how to administer IPAM.
-  - Configure IPAM options.
-  - Manage DNS zones with IPAM.
-  - Manage DHCP servers with IPAM.
-  - Use IPAM to manage IP addressing.
+
+  -   Describe IPAM.
+
+  -   Deploy IPAM.
+
+  -   Describe how to administer IPAM.
+
+  -   Configure IPAM options.
+
+  -   Manage DNS zones with IPAM.
+
+  -   Manage DHCP servers with IPAM.
+
+  -   Use IPAM to manage IP addressing.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Active Directory Domain Services concepts and technologies.
-  - Windows Server.
-  - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
-  - Windows PowerShell basics.
+
+  -   Active Directory Domain Services concepts and technologies.
+
+  -   Windows Server.
+
+  -   Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
+
+  -   Windows PowerShell basics.
 iconUrl: /training/achievements/implement-ip-address-management.svg
 levels:
 - intermediate

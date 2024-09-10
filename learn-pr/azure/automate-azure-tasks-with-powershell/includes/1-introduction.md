@@ -1,22 +1,34 @@
-Creating administration scripts is a powerful way to optimize your work flow. You can automate common, repetitive tasks. Once a script has been verified, it will run consistently, likely reducing errors.
+<!-- markdownlint-disable MD041 -->
 
-Suppose you work at a company that uses Azure Virtual Machines (VMs) to test your Customer Relationship Management (CRM) software. The VMs are built from images that include a web front end, a web service that implements business logic, and an SQL database.
+Imagine working for an organization that uses Azure Virtual Machines (VMs) to test its Customer
+Relationship Management (CRM) software. You create these VMs from images, including a web front-end
+and a SQL database.
 
-You've been executing multiple rounds of tests on a single VM, but you've noticed that changes in the database and configuration files can cause inconsistent results. In one case, a bug created a phone call record with no corresponding customer in the database. The orphaned record caused subsequent integration tests to fail, even after you fixed the bug. You plan to solve this problem by using a fresh VM deployment for each testing cycle. You want to automate the VM creation setup because it will be executed many times per week.
+During multiple testing iterations on a single VM, you notice that changes to configuration files
+and the database lead to inconsistent results. In one instance, a bug erroneously generated a phone
+call record without an associated customer in the database. This orphaned record caused subsequent
+integration tests to fail, even after you fixed the bug.
 
-Here, you'll learn how to manage Azure resources using Azure PowerShell. You'll use Azure PowerShell interactively for one-off tasks, and write scripts to automate repeated tasks. 
+Recognizing the frequency of these testing cycles, which occur multiple times per week, you decide
+to deploy a new VM for each cycle to ensure the consistency and reliability of your test
+environment. By developing PowerShell scripts for deployment, you streamline the process, optimize
+workflow efficiency, and minimize errors through automation.
+
+This module teaches you how to deploy and manage Azure resources using Azure PowerShell. You learn
+how to use Azure PowerShell interactively for one-off tasks and how to write PowerShell scripts to
+automate recurring tasks.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
-- Decide if Azure PowerShell is the right tool for your Azure administration tasks
-- Install Azure PowerShell on Linux, macOS, and/or Windows
-- Connect to an Azure subscription using Azure PowerShell
-- Create Azure resources using Azure PowerShell
+- Determine if Azure PowerShell is the appropriate tool for your Azure management tasks
+- Install Azure PowerShell on Windows, Linux, or macOS
+- Connect to Azure using Azure PowerShell
+- Create Azure resources with Azure PowerShell
 
 ## Prerequisites
 
-- Experience with a command-line interface such as PowerShell or Bash
-- Knowledge of basic Azure concepts such as resource groups and Virtual Machines
-- Experience administering Azure resources using the Azure portal
+- Experience with PowerShell
+- Understanding of basic Azure concepts, including resource groups and virtual machines
+- Experience administering Azure resources through the Azure portal

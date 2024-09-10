@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-ai-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How are client applications typically granted access to an Azure AI Services endpoint?"
+    choices:
+    - content: "The application must specify a valid subscription key for the Azure resource."
+      isCorrect: true
+      explanation: "Correct. By default, access to an Azure AI Services resource is based on a subscription key."
+    - content: "The user of the application must enter a user name and password associated with the Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. By default, access to an Azure AI Services resource is based on a subscription key."
+    - content: "Access to Azure AI Services is granted to anonymous users by default."
+      isCorrect: false
+      explanation: "Incorrect. By default, access to an Azure AI Services resource is based on a subscription key."
+  - content: "In which format are message exchanged between a client app and an Azure AI Services resource when using a REST API?"
+    choices:
+    - content: "XML"
+      isCorrect: false
+      explanation: "Incorrect. Client apps submit JSON requests and receive JSON responses."
+    - content: "JSON"
+      isCorrect: true
+      explanation: "Correct. Client apps submit JSON requests and receive JSON responses."
+    - content: "HTML"
+      isCorrect: false
+      explanation: "Incorrect. Client apps submit JSON requests and receive JSON responses."

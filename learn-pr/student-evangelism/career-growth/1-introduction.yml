@@ -5,10 +5,9 @@ metadata:
   title:  Introduction
   description: This unit introduces you to what you'll learn in this module.
   ms.date: 08/23/2021
-  author: jlooper
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

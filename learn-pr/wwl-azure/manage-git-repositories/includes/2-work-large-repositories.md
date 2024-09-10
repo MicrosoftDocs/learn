@@ -38,7 +38,7 @@ For more information on large repositories, see: [Working with large files](http
 
 ## Scalar
 
-:::image type="content" source="../media/scalar-5d38de1c.png" alt-text="Scalar icon.":::
+:::image type="content" source="../media/scalar-5d38de1c.png" alt-text="Screenshot of Scalar icon.":::
 
 
 Scalar is a .NET Core application available for Windows and macOS. With tools and extensions for Git to allow very large repositories to maximize your Git command performance. Microsoft uses it for Windows and Office repositories.

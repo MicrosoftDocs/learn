@@ -4,13 +4,15 @@ title: Exercise - Deploy your ARM templates
 metadata:
   title: Exercise - Deploy your Azure Manager Resource templates
   description: Walk-through of deploying your ARM templates
-  ms.date: 10/15/2020
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-shell-interface
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.contributors: pierrer-11122020
 azureSandbox: true
 durationInMinutes: 10

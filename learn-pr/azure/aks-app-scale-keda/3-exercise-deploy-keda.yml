@@ -2,12 +2,12 @@
 uid: learn.aks-app-scaling-keda.3-exercise-deploy-keda
 metadata:
   title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
-  description: In this exercise, you'll deploy KEDA into Azure Kubernetes Services with deployment files using `kubectl`.
-  ms.date: 04/13/2021
-  author: pplavetzki
-  ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: In this exercise, you deploy KEDA into an AKS cluster using the KEDA add-on.
+  ms.date: 06/03/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |

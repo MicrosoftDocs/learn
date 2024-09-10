@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-azure-resources-by-using-azure-cli.work-with-azure-cli
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
 title: Work with Azure CLI
 metadata:
   title: Work with Azure CLI
   description: "Work with Azure CLI"
-  ms.date: 07/01/2022
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+durationInMinutes: 4
 content: |
   [!include[](includes/3-work-azure-cli.md)]

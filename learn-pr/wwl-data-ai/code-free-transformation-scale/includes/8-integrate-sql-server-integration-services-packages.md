@@ -129,9 +129,3 @@ The alternative approach is to:
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration runtimes** page and select **Refresh**.
 
     ![Linked service page](../media/linked-service-page.png)
-
-
-
-
-
-

@@ -5,11 +5,10 @@ metadata:
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 08/31/2022  
+  ms.date: 02/13/2024  
   author: jonburchel
   ms.author: jburchel  
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-summary.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-with-delta-live-tables.data-ingestion-and-integration
+title: Data ingestion and integration
+metadata:
+  title: Data ingestion and integration
+  description: "Data ingestion and integration"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-data-ingestion-and-integration.md)]

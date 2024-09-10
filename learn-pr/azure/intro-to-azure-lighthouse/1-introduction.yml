@@ -1,18 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-lighthouse.1-introduction
+uid: learn.intro-to-azure-lighthouse.introduction
 metadata:
   title: Introduction
-  description: You'll look at the hybrid networking capabilities in Azure, the services for on-premises integration using tools like ExpressRoute and the scenarios that apply to the design of your company's hybrid architecture.
-  ms.date: 02/09/2023
-  author: iankensey
-  ms.author: socuff
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. 
+  ms.date: 07/24/2024
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: unit
   products:
     - azure
     - azure-lighthouse
-  ms.custom: team=cloud_advocates
-  ms.contributors: socuff-04232021
 title: Introduction
 durationInMinutes: 2
 content: |

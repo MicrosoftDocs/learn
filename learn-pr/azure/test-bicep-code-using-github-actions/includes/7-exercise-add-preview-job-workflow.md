@@ -4,7 +4,7 @@ During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
-> - Update the workflow YAML file to add a new preview job.
+> - Update the workflow definition YAML file to add a new preview job.
 > - Add an environment to your GitHub repository.
 > - Configure the environment to require a review.
 > - Update the workflow YAML file to use the environment for the deployment job.
@@ -20,7 +20,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    :::code language="yaml" source="code/7-workflow.yml" range="44-63" :::
 
-   Notice that the **preview** job depends on the successful completion of the **validate** and **lint** jobs.
+   Notice that the **preview** job depends on the successful completion of the **lint** and **validate** jobs.
 
 1. Update the **deploy** job to make it depend on the **preview** job:
 
@@ -73,7 +73,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    :::code language="yaml" source="code/7-workflow.yml" highlight="44-63, 67-68" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If your file looks different, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -91,7 +91,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    Wait until the workflow completes the **lint**, **validate**, and **preview** jobs. Although GitHub automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
-1. Notice that the workflow prompts you for a review. Dependent upon how you've set up your GitHub account, you'll receive an email or web notification with a request to review the workflow.
+1. Notice that the workflow prompts you for a review. Depending on how you set up your GitHub account, you'll receive an email or web notification with a request to review the workflow.
 
    :::image type="content" source="../media/7-workflow-run-review-required.png" alt-text="Screenshot of the GitHub interface that shows the workflow run, with the review requirement highlighted.":::
 
@@ -105,7 +105,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 
-   The what-if operation has detected a change to the log analytics workspace and website resources. However, the changes that it has detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, you can ignore the detected changes.
+   The what-if operation detected a change to the log analytics workspace and website resources. However, the changes that it detected are noise. They don't represent real changes to your resource. Over time, the Azure team works to reduce noise. In the meantime, you can ignore the detected changes.
 
    You might also see an item in the what-if output for the resource type `microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - toywebsite`. This is a resource that Application Insights creates automatically. The what-if command detects that no change will be made to the resource.
 
@@ -125,7 +125,7 @@ Here, you configure the **deploy** job to run against the **Website** environmen
 
 ## Observe the successful deployment
 
-1. After you've approved the workflow run, notice that the **deploy** job starts running.
+1. After you approve the workflow run, notice that the **deploy** job starts running.
 
    Wait for the job to finish.
 

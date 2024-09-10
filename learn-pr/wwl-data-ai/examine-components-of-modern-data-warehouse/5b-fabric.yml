@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.fabric
+title: Explore Microsoft Fabric
+metadata:
+  title: Explore Microsoft Fabric
+  description: "Explore Microsoft Fabric"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5b-fabric.md)]

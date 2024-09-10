@@ -5,9 +5,8 @@ metadata:
   description: This unit is about the importance of contrast checking and how to cater to users with color-blindness. It also describes the Lighthouse tool, which generates reports on things like page speed and accessibility. 
   ms.date: 03/30/2021 
   author: GeekTrainer
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-web-accessibility
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Ensuring accessibility with developer tools
 durationInMinutes: 2

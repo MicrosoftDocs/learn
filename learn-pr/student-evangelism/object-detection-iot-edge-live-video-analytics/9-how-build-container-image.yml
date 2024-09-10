@@ -4,12 +4,10 @@ title: How to build a container image with YOLOv4 TensorFlow Lite model
 metadata:
   title: How to build a container image with YOLOv4 TensorFlow Lite model
   description: In this section, we help learner how to build a container image to push edge device.
-  ms.date: 05/04/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/9-how-build-container-image.md)]

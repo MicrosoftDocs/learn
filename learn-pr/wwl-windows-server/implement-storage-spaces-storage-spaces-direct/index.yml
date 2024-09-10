@@ -2,12 +2,13 @@
 uid: learn.wwl.implement-storage-spaces-storage-spaces-direct
 metadata:
   title: Implement Storage Spaces and Storage Spaces Direct
-  description: "Implement Storage Spaces and Storage Spaces Direct"
+  description: Implement Storage Spaces and Storage Spaces Direct
   ms.date: 04/13/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
+  ms.subservice: storage-spaces
 title: Implement Storage Spaces and Storage Spaces Direct
 summary: Learn about the core functionality, benefits, use cases, and implementation of Storage Spaces and Storage Spaces Direct in Windows Server 2019.
 abstract: |

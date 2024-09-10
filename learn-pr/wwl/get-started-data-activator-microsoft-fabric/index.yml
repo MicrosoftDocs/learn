@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-data-activator-microsoft-fabric
+metadata:
+  title: Get started with Data Activator in Microsoft Fabric
+  description: "Use Data Activator in Microsoft Fabric to easily monitor and take action on your data."
+  ms.date: 06/14/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Get started with Data Activator in Microsoft Fabric
+summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Understand Data Activator.
+
+  -   Understand triggers, conditions, and actions in Data Activator.
+
+  -   Get data from Power BI Reports and EventStreams with Data Activator.
+
+  -   Assign data and create triggers in Data Activator.
+
+  -   Interact with Real-Time Intelligence.
+prerequisites: Before starting this module, you should be familiar with Microsoft Fabric. Familiarity with Power BI and EventStreams may be helpful.
+iconUrl: /training/achievements/get-started-data-activator-microsoft-fabric.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- automation
+- data-analytics
+- data-visualization
+units:
+- learn.wwl.get-started-data-activator-microsoft-fabric.introduction
+- learn.wwl.get-started-data-activator-microsoft-fabric.understand-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.get-started-with-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.understand-triggers-conditions-actions-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.get-data-from-power-bi-reports-eventstreams-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.assign-data-objects-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.create-triggers-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.exercise
+- learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-check
+- learn.wwl.get-started-data-activator-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge

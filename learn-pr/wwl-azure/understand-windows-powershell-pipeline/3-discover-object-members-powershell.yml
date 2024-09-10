@@ -4,13 +4,12 @@ title: Discover object members in PowerShell
 metadata:
   title: Discover object members in PowerShell
   description: "Discover object members in PowerShell"
-  ms.date: 10/20/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-discover-object-members-powershell.md)]

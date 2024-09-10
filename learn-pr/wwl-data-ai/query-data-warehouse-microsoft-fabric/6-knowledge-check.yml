@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.query-data-warehouse-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What is the primary language used for querying a data warehouse?
+    choices:
+    - content: Python
+      isCorrect: false
+      explanation: Incorrect. While Python is a powerful language for data analysis, the primary language used for querying a data warehouse is SQL.
+    - content: SQL
+      isCorrect: true
+      explanation: Correct. SQL (Structured Query Language) is the primary language used for querying a data warehouse.
+    - content: C#
+      isCorrect: false
+      explanation: Incorrect. C# is a general-purpose programming language and is not typically used for querying a data warehouse.
+  - content: Why is indexing important in a data warehouse?
+    choices:
+    - content: It makes the data warehouse look more organized.
+      isCorrect: false
+      explanation: Incorrect. While organization is a benefit, the primary purpose of indexing is to speed up data retrieval times.
+    - content: It speeds up data retrieval times.
+      isCorrect: true
+      explanation: Correct. Indexing is a data structure technique to efficiently retrieve records from the database files based on some attributes on which the indexing has been done.
+    - content: It helps in cleaning the data.
+      isCorrect: false
+      explanation: Incorrect. Indexing does not clean data. It is a technique used to speed up data retrieval times.
+  - content: What is the purpose of a fact table in a data warehouse?
+    choices:
+    - content: To store raw data.
+      isCorrect: false
+      explanation: Incorrect. Raw data is typically cleaned and transformed before being stored in a fact table.
+    - content: To store the results of calculations.
+      isCorrect: true
+      explanation: Correct. A fact table typically contains the results of calculations, along with foreign keys to dimension tables.
+    - content: To store metadata about the data warehouse.
+      isCorrect: false
+      explanation: Incorrect. Metadata about the data warehouse is typically stored separately, not in a fact table.
+

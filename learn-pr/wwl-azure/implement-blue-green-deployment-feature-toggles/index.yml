@@ -2,21 +2,24 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
   title: Implement blue-green deployment and feature toggles
-  description: "Implement blue-green deployment and feature toggles"
-  ms.date: 11/01/2022
+  description: Implement blue-green deployment and feature toggles
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-devops-pipelines
 title: Implement blue-green deployment and feature toggles
 summary: This module describes the blue-green deployment process and introduces feature toggle techniques to implement in the development process.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Explain deployment strategies
-  - Implement blue green deployment
-  - Understand deployment slots
-  - Implement and manage feature toggles&quot;
-prerequisites: ""
+  By the end of this module, you're able to:
+  -   Explain deployment strategies.
+  -   Implement blue green deployment.
+  -   Understand deployment slots.
+  -   Implement and manage feature toggles.
+prerequisites: None
 iconUrl: /training/achievements/5-implement-blue-green-deployment-and-feature-toggles.svg
 levels:
 - advanced
@@ -40,12 +43,11 @@ products:
 - azure-test-plans
 - github
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.implement-blue-green-deployment-feature-toggles.introduction
 - learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment
 - learn.wwl.implement-blue-green-deployment-feature-toggles.explore-deployment-slots
-- learn.wwl.implement-blue-green-deployment-feature-toggles.exercise-set-up-blue-green-deployment
 - learn.wwl.implement-blue-green-deployment-feature-toggles.introduction-feature-toggles
 - learn.wwl.implement-blue-green-deployment-feature-toggles.describe-feature-toggle-maintenance
 - learn.wwl.implement-blue-green-deployment-feature-toggles.knowledge-check

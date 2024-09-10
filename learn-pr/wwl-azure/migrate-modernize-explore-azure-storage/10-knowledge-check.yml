@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Storage account is capable of hosting different types of objects, including blobs, tables, queues, and files. What are Azure Storage blobs?"
+    choices:
+    - content: "Unstructured files such as media content, virtual machine disks, backups, or logs."
+      isCorrect: true
+      explanation: "Correct. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
+    - content: "Non-relational and partially structured content, which consists of multiple rows of data with different sets of properties."
+      isCorrect: false
+      explanation: "Incorrect. Non-relational and partially structured content is hosted in tables, not blobs."
+    - content: "Temporary storage for messages that Azure services commonly use to asynchronously communicate with each other."
+      isCorrect: false
+      explanation: "Incorrect. Temporary storage for messages that Azure services commonly use to asynchronously communicate with each other is a queue, not a blob."
+  - content: "Which of the following are the performance tiers offered by Azure Files?"
+    choices:
+    - content: "Basic and Standard"
+      isCorrect: false
+      explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares use high-performance, low-latency solid-state disks (SSDs)."
+    - content: "Standard and Premium"
+      isCorrect: true
+      explanation: "Correct. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares use high-performance, low-latency solid-state disks (SSDs)."
+    - content: "Basic, Standard and Premium"
+      isCorrect: false
+      explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares use high-performance, low-latency solid-state disks (SSDs)."
+  - content: "What is the maximum size of a data disk attached to an Azure VM?"
+    choices:
+    - content: "1 TB"
+      isCorrect: false
+      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."
+    - content: "16 TB"
+      isCorrect: false
+      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."
+    - content: "32 TB"
+      isCorrect: true
+      explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."

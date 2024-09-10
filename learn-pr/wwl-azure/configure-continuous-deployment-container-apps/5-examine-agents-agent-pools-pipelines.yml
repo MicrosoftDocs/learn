@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-continuous-deployment-container-apps.examine-agents-agent-pools-pipelines
+title: Examine agents and agent pools for pipelines
+metadata:
+  title: Examine agents and agent pools for pipelines
+  description: "Examine agents and agent pools for pipelines"
+  ms.date: 02/29/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-examine-agents-agent-pools-pipelines.md)]

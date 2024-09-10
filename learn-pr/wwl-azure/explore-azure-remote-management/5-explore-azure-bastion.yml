@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-remote-management.bastion
 title: Explore Azure Bastion
 metadata:
   title: Explore Azure Bastion
-  description: "Explore Azure Bastion"
-  ms.date: 04/21/2023
+  description: "Connect to a virtual machine using your browser and the Azure portal, with Azure Bastion."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/5-explore-azure-bastion.md)]

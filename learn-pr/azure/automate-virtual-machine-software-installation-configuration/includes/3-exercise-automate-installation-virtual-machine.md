@@ -112,7 +112,7 @@ Now that you've created all of the necessary networking infrastructure, your nex
         --name my-linux-vm \
         --availability-set my-availability-set \
         --nics my-nic \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --generate-ssh-keys \
         --resource-group my-resource-group-name

@@ -1,4 +1,4 @@
-Recall that your organization wants to automate customer chat support by using a chat bot on your website and social-networking sites. You need to determine which Azure Bot Service tool is the best choice for your needs. In this unit, you'll evaluate your company's requirements for a chat bot and compare three bot-creation tools.
+Recall that your organization wants to automate customer chat support by using a chat bot on your website and social-networking sites. You need to determine which Azure Bot Service tool is the best choice for your needs. In this unit, you evaluate your company's requirements for a chat bot and compare three bot-creation tools.
 
 ## Chat bot requirements
 
@@ -8,11 +8,11 @@ When you're choosing a bot service, a primary consideration should be which bot-
 - Bots must be easy to extend later with new code-based features.
 - Natural language capabilities must be built into the bot without needing to develop language machine learning models.
 
-The Azure Bot Service has several features that you can use. In this unit, you'll examine the considerations for choosing a bot service and the benefits that the Azure Bot Service provides.
+The Azure Bot Service has several features that you can use. In this unit, you examine the considerations for choosing a bot service and the benefits that the Azure Bot Service provides.
 
 ## Evaluating bot-building tools
 
-You have three primary bot-creation methods available: Power Virtual Agents, QnA Maker, and Bot Framework Composer. Each method has qualities that you'll evaluate against your requirements to choose the best fit for your organization.
+You have three primary bot-creation methods available: Power Virtual Agents, QnA Maker, and Bot Framework Composer. Each method has qualities that you can evaluate against your requirements to choose the best fit for your organization.
 
 ### Power Virtual Agents
 
@@ -29,11 +29,11 @@ Extend Power Virtual Agents bot capability by using the Bot Framework SDK. Bot e
 - Power Automate flows
 - Skills
 
-Power Virtual Agents does not support built-in integration of pre-configured LUIS resources, so it won't fulfill the requirements for your scenario.
+Power Virtual Agents doesn't support built-in integration of preconfigured Language Understanding Intelligence Service (LUIS) resources, so it doesn't fulfill the requirements for your scenario.
 
 ### QnA Maker
 
-Recall that QnA Maker is an Azure-based Natural Language Processing service. Use QnA Maker to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
+Recall that QnA Maker is an Azure-based Natural Language Processing service. Use QnA Maker to create a natural conversational layer over your data. Use it to find the most appropriate answer for any input from your custom knowledge base of information.
 
 The QnA Maker portal is a complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
@@ -42,7 +42,7 @@ The QnA Maker portal is a complete knowledge base authoring experience. You can 
 
 Once your knowledge base is edited, you can publish the knowledge base to a working Azure Web App bot without writing any code. Test your bot in the Azure portal or download it and continue development.
 
-QnA Maker does not support direct customization of conversation flow and logic, so it won't fulfill the requirements for your scenario.
+QnA Maker doesn't support direct customization of conversation flow and logic, so it doesn't fulfill the requirements for your scenario.
 
 ### Bot Framework Composer and Azure Bot Service
 
@@ -57,4 +57,4 @@ After evaluating the three options for bot creation, you decide that the Bot Fra
 
 - The visual designer makes it intuitive to create and manage bots.
 - Its built-in capabilities support language understanding integration.
-- If more advanced functionality is required in the future, you can extend the bots you create by using the Bot Framework SDK.
+- You can extend the bots you create by using the Bot Framework SDK if you require more advanced functionality in the future.

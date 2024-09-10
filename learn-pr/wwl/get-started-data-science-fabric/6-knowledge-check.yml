@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-science-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/23/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You have access to a historical dataset that contains the monthly expenses of the marketing department. You want to generate predictions of the expenses for the coming month. Which type of machine learning model is needed?"
+    choices:
+    - content: "Classification"
+      isCorrect: false
+      explanation: "Incorrect. Classification is used when you want to predict a categorical value."
+    - content: "Regression"
+      isCorrect: false
+      explanation: "Incorrect. Regression is used when you want to predict numerical values."
+    - content: "Forecasting"
+      isCorrect: true
+      explanation: "Correct. Forecasting is used when you want to predict future numerical values based on time-series data."
+  - content: "Which feature in Microsoft Fabric should you use to review the results of MLflow's tracking through a user interface?"
+    choices:
+    - content: "Notebooks"
+      isCorrect: false
+      explanation: "Incorrect. You can use MLflow in a notebook to review tracked metrics. However, when working with notebooks you need to write code and don't use a user interface."
+    - content: "Experiments"
+      isCorrect: true
+      explanation: "Correct. Microsoft Fabric's experiments offers a visual user interface to explore the metrics."
+    - content: "Models"
+      isCorrect: false
+      explanation: "Incorrect. Metrics are only shown when a model is saved."
+  - content: "Which feature in Microsoft Fabric should you use to accelerate data exploration and cleansing?"
+    choices:
+    - content: "Dataflows"
+      isCorrect: false
+      explanation: "Incorrect. Dataflows are used for data ingestion and transformation."
+    - content: "Data Wrangler"
+      isCorrect: true
+      explanation: "Correct. Use Data Wrangler to visualize and clean your data."
+    - content: "Lakehouse"
+      isCorrect: false
+      explanation: "Incorrect. Store your files in the lakehouse."

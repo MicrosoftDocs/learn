@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-setup-starter-app
+title: Exercise - Setup and run the starter web application
+metadata:
+  unitType: exercise
+  title: Exercise - Setup and run the starter web application
+  description: |
+    Open the starter Blazor web application in Visual Studio Code. Then, run the application for the first time to validate that it builds and runs successfully.
+  author: seesharprun
+  manager: jroth
+  ms.author: sidandrews
+  ms.reviewer: mjbrown
+  ms.topic: unit
+  ms.date: 03/07/2024
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-setup-starter-app.md)]

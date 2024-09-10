@@ -1,8 +1,8 @@
-Part of planning your app's architecture is deciding how the user will move between pages. In this module, you learned how to use flyouts and tabbed pages to implement an app that presents data on multiple pages. You should now understand when this navigation pattern is appropriate, how to implement it, and how you can customize the behavior of tabbed pages. You also learned how to combine tabbed pages with navigation pages that use the navigation stack. Specifically, you learned how to:
+Part of planning your app's architecture is deciding how you want the the user to move between pages. In this module, you learned how to use flyouts and tabbed pages to implement an app that presents data on multiple pages. You should now understand when this navigation pattern is appropriate, how to implement it, and how you can customize the behavior of tabbed pages. You also learned how to combine tabbed pages with navigation pages that use the navigation stack. Specifically, you learned how to:
 
-- Implement flyout navigation with .NET MAUI Shell 
-- Implement tab navigation with .NET MAUI Shell
-- Navigate between pages within tabbed pages
+- Implement flyout navigation with .NET MAUI Shell.
+- Implement tab navigation with .NET MAUI Shell.
+- Navigate between pages within tabbed pages.
 
 ## Learn more
 

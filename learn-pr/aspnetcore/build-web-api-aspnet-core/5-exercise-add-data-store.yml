@@ -3,11 +3,12 @@ uid: learn.build-web-api-net-core.5-exercise-add-data-store
 metadata:
   title: Exercise - Add a data store
   description: Learn how to add a model and an in-memory database to the web API.
-  ms.date: 04/28/2021
+  ms.date: 01/17/2024
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 title: Exercise - Add a data store
 durationInMinutes: 4
 content: |

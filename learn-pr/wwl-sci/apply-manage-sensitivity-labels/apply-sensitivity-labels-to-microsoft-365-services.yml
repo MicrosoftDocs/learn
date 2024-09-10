@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
+title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites
+metadata:
+  title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites
+  description: "Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites"
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/apply-sensitivity-labels-to-microsoft-365-services.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it important to apply sensitivity labels to Microsoft 365 services like SharePoint sites and Teams channels in our scenario of launching a new service powered by data analysis and AI?"
+    choices:
+    - content: "To ensure data protection and compliance across collaborative environments."
+      isCorrect: true
+      explanation: "Correct: Using sensitivity labels in services like SharePoint, Teams, and Outlook is key to ensuring only authorized individuals can access sensitive project details. This helps prevent unauthorized access and ensures the project follows data privacy laws."
+    - content: "To categorize data for easier retrieval during project audits."
+      isCorrect: false
+      explanation: "Incorrect: While categorizing data can make it easier to find during audits, the main reason for applying sensitivity labels is for improving data protection and compliance, especially with sensitive information involved in the project."
+    - content: "To make project management easier by automating the organization of project-related communications and documents."
+      isCorrect: false
+      explanation: "Incorrect: Using Microsoft 365 can make project management more efficient, but the main reason to apply sensitivity labels is to protect sensitive data from unauthorized access and sharing, not just for organizational convenience."

@@ -4,11 +4,12 @@ title: Exercise - Use Azure Resource Manager tags and parameter files
 metadata:
   title: Exercise - Use Azure Resource Manager tags and parameter files
   description: Update the tags on your Azure Storage account resource for better tracking, and use multiple parameter files to deploy the template to multiple Azure environments.
-  ms.date: 07/10/2020
+  ms.date: 01/30/2024
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 8

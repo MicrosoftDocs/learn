@@ -13,3 +13,8 @@ Review the following options and think about what storage accounts are required 
 
 > [!NOTE]
 > All storage account types are encrypted by using Storage Service Encryption (SSE) for data at rest.
+
+### How to manage your storage account
+
+Learn more about [how to manage your storage account](https://www.youtube.com/embed/-j_8clCWYn8). 
+

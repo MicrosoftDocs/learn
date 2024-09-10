@@ -3,11 +3,12 @@ uid: learn.wwl.create-configure-manage-identities
 metadata:
   title: Create, configure, and manage identities
   description: "Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job."
-  ms.date: 02/03/2023
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: entra
+  ms.subservice: standards
 title: Create, configure, and manage identities
 summary: Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just-enough access to do their job.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Explain custom security attributes and automatic user provisioning
 prerequisites: |
   None
-iconUrl: /training/achievements/create-configure-and-manage-identities.svg
+iconUrl: /learn/achievements/create-configure-and-manage-identities.svg
 levels:
 - advanced
 roles:
@@ -27,18 +28,16 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
-- entra-workload-identities
+- entra-id
 subjects:
 - identity-access
 units:
 - learn.wwl.create-configure-manage-identities.introduction
 - learn.wwl.create-configure-manage-identities.users
-- learn.wwl.create-configure-manage-identities.exercise-assign-licenses-to-users
+- learn.wwl.create-configure-manage-identities.exercise-assign-licenses-users
 - learn.wwl.create-configure-manage-identities.exercise-restore-remove-deleted-users
 - learn.wwl.create-configure-manage-identities.groups
-- learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-active-directory
+- learn.wwl.create-configure-manage-identities.exercise-add-groups-azure-active-directory
 - learn.wwl.create-configure-manage-identities.configure-manage-device-registration
 - learn.wwl.create-configure-manage-identities.manage-licenses
 - learn.wwl.create-configure-manage-identities.exercise-change-group-license-assignments

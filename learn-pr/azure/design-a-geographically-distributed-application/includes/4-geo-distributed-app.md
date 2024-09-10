@@ -6,11 +6,13 @@ Heres, we examine the application services in our solution and determine whether
 
 ![A diagram showing a multi-region architecture app services.](../media/4-multi-region-web-app-services.png)
 
-## Azure Active Directory
+<a name='azure-active-directory'></a>
 
-In our shipments tracking portal, users can track the delivery of their purchases by entering a tracking number. However, regular users can register for membership to access advanced features, such as delivery promptness and other statistics. We've developed the tracking portal to store user accounts in Azure Active Directory (Azure AD).
+## Microsoft Entra ID
 
-Azure AD is designed as a global system by default. As such, it's not vulnerable to regional failures, and we don't have to modify this component of the system.
+In our shipments tracking portal, users can track the delivery of their purchases by entering a tracking number. However, regular users can register for membership to access advanced features, such as delivery promptness and other statistics. We've developed the tracking portal to store user accounts in Microsoft Entra ID.
+
+Microsoft Entra ID is designed as a global system by default. As such, it's not vulnerable to regional failures, and we don't have to modify this component of the system.
 
 ## Azure Blob Storage
 

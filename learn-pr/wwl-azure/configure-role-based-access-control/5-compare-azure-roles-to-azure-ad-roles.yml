@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-azure-ad-roles
-title: Compare Azure roles to Azure Active Directory roles
+title: Compare Azure roles to Microsoft Entra roles
 metadata:
-  title: Compare Azure roles to Azure Active Directory roles
-  description: "Compare Azure roles to Azure Active Directory roles"
-  ms.date: 01/16/2023
+  title: Compare Azure roles to Microsoft Entra roles
+  description: "Compare Azure roles to Microsoft Entra roles"
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-compare-azure-roles-to-azure-ad-roles.md)]

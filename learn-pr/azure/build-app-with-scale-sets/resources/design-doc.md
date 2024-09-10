@@ -101,7 +101,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
           az vmss create \
             --resource-group <sandbox resource group> \
             --name webServerScaleSet \
-            --image UbuntuLTS \
+            --image Ubuntu2204 \
             --upgrade-policy-mode automatic \
             --custom-data cloud-init.yaml \
             --admin-username azureuser \

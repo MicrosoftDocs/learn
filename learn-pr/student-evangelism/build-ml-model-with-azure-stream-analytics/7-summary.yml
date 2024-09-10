@@ -6,10 +6,9 @@ metadata:
   ms.date: 06/04/2022
   author: acomfort248
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!INCLUDE[](includes/7-summary.md)]

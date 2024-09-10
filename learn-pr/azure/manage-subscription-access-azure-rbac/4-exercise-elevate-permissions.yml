@@ -4,11 +4,10 @@ title: Exercise - Get access to an Azure subscription
 metadata:
   title: Exercise - Get access to an Azure subscription
   description: As a Global Administrator, learn how to elevate your permissions to grant management access to an Azure subscription.
-  ms.date: 01/13/2020
+  ms.date: 11/20/2023
   author: rolyon
   ms.author: rolyon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-elevate-permissions.md)]

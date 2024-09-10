@@ -1,14 +1,13 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-build-iot-service.6-exercise-integrate-azure-cosmos-db-iot-data-pipelines
 title: Exercise - Integrate Azure Cosmos DB with the IoT data pipeline
 metadata:
   title: Exercise - Integrate Azure Cosmos DB with the IoT data pipeline
   description: Integrate Azure Cosmos DB with the IoT data pipeline
-  ms.date: 04/29/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/22/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-integrate-azure-cosmos-db-iot-data-pipelines.md)]

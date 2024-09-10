@@ -3,12 +3,13 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service.introduct
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 10/20/2022
+  description: Introduction
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 02/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

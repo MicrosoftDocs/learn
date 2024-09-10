@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.built-in-metrics-via-azure-monitor
+title: Built-in metrics in Azure Monitor
+metadata:
+  title: Built-in metrics in Azure Monitor 
+  description: Learn about the built-in metrics that you can view in Azure Monitor.
+  ms.date: 12/01/2023
+  author: AbhishekMallick-MS
+  ms.author: v-abhmallick
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-built-in-metrics-via-azure-monitor.md)]

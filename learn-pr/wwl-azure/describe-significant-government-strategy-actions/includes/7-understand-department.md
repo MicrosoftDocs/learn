@@ -6,7 +6,7 @@
     :::column-end:::
     :::column span="":::
 
-        Although the Department of Defense is a cabinet-level agency, because of its size, the nature of the data it handles, and its mission to protect national security, the cloud computing strategy of the DoD further builds upon the Federal CIO's Cloud Computing Strategy of 2011, providing strategic approaches unique to the mission of the DoD and intelligence community.
+        Although the Department of Defense is a cabinet-level agency, because of its size, the nature of the data it handles, and its mission to protect America's security, the cloud computing strategy of the DoD further builds upon the Federal CIO's Cloud Computing Strategy of 2011, providing strategic approaches unique to the mission of the DoD and intelligence community.
 
         On July 11 2012, the DOD released its cloud computing strategy, which includes a four step process to gradually ramp DOD branches and components into the cloud.
 

@@ -7,8 +7,7 @@ metadata:
   ms.date: 11/6/2022
   author: AbbyMSFT
   ms.author: abbyweisberg
-  ms.topic: interactive-tutorial
-  ms.prod: azure-monitor
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/5-add-visualization-for-query-results.md)]

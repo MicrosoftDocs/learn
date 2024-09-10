@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.exercise-bonus-material
+title: Exercise - Replace MirrorAnt
+metadata:
+  title: Exercise - Replace MirrorAnt
+  description: "The purpose of this bonus lesson is to replace MirrorAnt with GeneralizedAnt"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-bonus-material.md)]

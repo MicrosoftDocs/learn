@@ -2,17 +2,17 @@
 uid: learn.wwl.troubleshoot-authentication-access-control
 metadata:
   title: Troubleshoot authentication and access control issues in Microsoft Azure
-  description: "Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication. AZ720 AZ-720 az-720 networking"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: "Microsoft Azure has a sophisticated authentication and access control system to provide high security. Microsoft Entra authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication. AZ720 AZ-720 az-720 networking"
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
+  ms.topic: module
+  ms.service: azure 
 title: Troubleshoot authentication and access control issues in Microsoft Azure
-summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, multifactor authentication, hybrid integration, and passwordless authentication.
+summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Microsoft Entra authentication includes Self-service password reset, multifactor authentication, hybrid integration, and passwordless authentication.
 abstract: |
   By the end of this module, you will be able to:
-  - Troubleshoot Azure AD authentication
+  - Troubleshoot Microsoft Entra authentication
   - Troubleshoot hybrid authentication
   - Troubleshoot authorization issues
 prerequisites: |
@@ -28,8 +28,8 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
+- entra-id
+- entra
 subjects:
 - cloud-computing
 - identity-access

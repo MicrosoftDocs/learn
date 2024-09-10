@@ -3,11 +3,10 @@ uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.1-introdu
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 03/23/2023
+  ms.date: 09/15/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

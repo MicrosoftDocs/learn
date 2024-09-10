@@ -4,11 +4,10 @@ title: Exercise - Evaluate ROC curves
 metadata:
   title: Exercise - Evaluate ROC curves
   description: Exercise about good and bad ROC curves in machine learning
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/9-3-evaluate-roc-curves.ipynb

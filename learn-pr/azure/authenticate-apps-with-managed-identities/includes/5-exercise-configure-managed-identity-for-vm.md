@@ -4,14 +4,14 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
 
 ## Set up the environment
 
-1. Create an instance of Azure Key Vault to store your company's private data. Every Azure Key Vault name needs to be globally unique.
+1. Use the following code to create an instance of Azure Key Vault to store your company's private data. Every Azure Key Vault name needs to be globally unique.
 
     ```azurecli
     export VMNAME=prodserver
     export KVNAME=furniture-secrets$RANDOM
 
     az keyvault create --name $KVNAME \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --default-action Allow \
         --location $(az resource list --output tsv --query [0].location) \
         --sku standard
@@ -22,8 +22,8 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
     ```azurecli
     export publicIP=$(az vm create \
         --name $VMNAME \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --image UbuntuLTS \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --image Ubuntu2204 \
         --generate-ssh-keys \
         --output tsv \
         --query "publicIpAddress")
@@ -39,7 +39,7 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
     ```azurecli
     az vm identity assign \
       --name $VMNAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn>
+      --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
     This command should return a response that shows the managed identity. Here's an example  response:
@@ -78,7 +78,7 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
 
     At the prompt, type *yes*.
 
-1. For the next exercise, download and install the .NET Core version on the VM that will be used by the module's sample app.
+1. For the next exercise, download and install the .NET Core version on the VM that the module's sample app will use.
 
     ```bash
     sudo snap install dotnet-sdk --classic --channel=3.1

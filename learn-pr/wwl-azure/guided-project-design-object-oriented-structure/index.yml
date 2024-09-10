@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-design-object-oriented-structure
+metadata:
+  title: 'Guided project: Design object-oriented structures'
+  description: "This is a guided project about exception handling."
+  ms.date: 03/19/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ai-usage: ai-assisted
+title: 'Guided project: Design object-oriented structures'
+summary: In this guided project, you modify your Langton's Ant code to include exception handling. You learn how to throw and how to handle exceptions in your game buffer code.
+abstract: |
+  By the end of this module, you should be able to:
+
+  -   Create and exception class.
+
+  -   Use a Try...Catch block.
+
+  -   Throw an exception.
+
+  -   Implement exception handling in your code.
+prerequisites: |
+  -   Installation of VS Code configured for C# application development, including C# Dev Kit.
+
+  -   Experience with the VS Code editor.
+
+  -   Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+
+  -   Experience with basic C# syntax rules.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+units:
+- learn.wwl.guided-project-design-object-oriented-structure.introduction
+- learn.wwl.guided-project-design-object-oriented-structure.prepare
+- learn.wwl.guided-project-design-object-oriented-structure.exercise-work-with-exceptions
+- learn.wwl.guided-project-design-object-oriented-structure.exercise-improve-generalized-ant-exception-handling
+- learn.wwl.guided-project-design-object-oriented-structure.exercise-add-exception-ants-out-of-field
+- learn.wwl.guided-project-design-object-oriented-structure.exercise-add-game-buffer
+- learn.wwl.guided-project-design-object-oriented-structure.knowledge-check
+- learn.wwl.guided-project-design-object-oriented-structure.summary
+badge:
+  uid: learn.wwl.guided-project-design-object-oriented-structure.badge

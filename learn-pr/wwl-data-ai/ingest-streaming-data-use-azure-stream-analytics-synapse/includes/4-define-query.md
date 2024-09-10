@@ -55,7 +55,7 @@ INTO
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 GROUP BY SensorID, TumblingWindow(second, 60)
-HAVING COUNT(*) > 1
+HAVING COUNT(*) >= 1
 ```
 
 > [!TIP]

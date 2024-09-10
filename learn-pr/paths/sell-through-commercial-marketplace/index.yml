@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.sell-through-commercial-marketplace
 title: Sell through the commercial marketplace
-summary: The Microsoft commercial marketplace is a catalog of cloud applications and services that contains offerings from Microsoft and thousands of partners. In this learning path, you'll be introduced to concepts that will help your organization get ready to sell your cloud applications and services through the commercial marketplace. 
+summary: The Microsoft commercial marketplace serves as a comprehensive catalog of cloud-based applications and services, featuring a diverse array of offerings from Microsoft and a global network of partners enrolled in the Microsoft AI Cloud Partner Program. By becoming a partner in the commercial marketplace, you can equip your business or organization with the knowledge and tools necessary to propel your organization forward in the cloud marketplace. This learning path will guide you through the process of launching and marketing your cloud solutions in the commercial marketplace, enabling you to connect with customers across the globe. 
 metadata:
   title: Sell through the commercial marketplace
   description: The Microsoft commercial marketplace is a catalog of cloud applications and services that contains offerings from Microsoft and thousands of partners. In this learning path, you'll be introduced to concepts that will help your organization get ready to sell your cloud products and services through the commercial marketplace.
   ms.date: 07/09/2021
   author: marleva
   ms.author: maevan
-  ms.topic: interactive-tutorial
+  ms.topic: learning-path
 prerequisites: None
 iconUrl: /training/achievements/sell-through-commercial-marketplace.svg
 levels:

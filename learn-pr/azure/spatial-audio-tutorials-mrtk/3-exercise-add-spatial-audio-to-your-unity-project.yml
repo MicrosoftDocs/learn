@@ -4,11 +4,10 @@ title: Exercise - Add spatial audio to your unity project
 metadata:
   title: Exercise - Add spatial audio to your unity project
   description: Introduction for Add spatial audio to your unity project
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 02/12/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-add-spatial-audio-to-your-unity-project.md)]

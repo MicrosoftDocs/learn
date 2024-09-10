@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.understand-cloud-usage-costs
+title: Understand cloud usage and cost
+metadata:
+  title: Understand cloud usage and cost
+  description: Learn how to understand cloud usage and costs.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 32
+content: |
+  [!include[](includes/2-understand-cloud-usage-costs.md)]

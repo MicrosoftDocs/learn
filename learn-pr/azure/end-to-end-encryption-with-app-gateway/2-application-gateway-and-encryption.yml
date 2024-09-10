@@ -3,11 +3,10 @@ uid: learn.end-to-end-encryption-with-app-gateway.2-application-gateway-and-encr
 metadata:
   title: Application Gateway and encryption
   description: Application Gateway and encryption
-  ms.date: 02/22/2022
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/22/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 title: Application Gateway and encryption
 durationInMinutes: 10
 content: |

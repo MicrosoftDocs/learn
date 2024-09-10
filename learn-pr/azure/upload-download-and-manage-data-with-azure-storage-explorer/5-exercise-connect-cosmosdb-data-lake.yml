@@ -3,11 +3,10 @@ uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.5-exercis
 metadata:
   title: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
   description: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
-  ms.date: 03/23/2023
+  ms.date: 09/15/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
 durationInMinutes: 10
 interactive: bash

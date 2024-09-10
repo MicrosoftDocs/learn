@@ -1,7 +1,3 @@
-
-
-
-
 In this exercise you learn how to:
 
 * Create a Service Bus namespace, and queue, using the Azure CLI.
@@ -12,7 +8,7 @@ In this exercise you learn how to:
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
-* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the exercise.
+* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) is the target framework for the exercise.
 
 ## Sign in to Azure
 
@@ -149,7 +145,9 @@ In this section, you open your terminal and create some variables used throughou
 
 ## Review results
 
-1. Sign in to the Azure portal and navigate to your Service Bus namespace. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
+1. Sign in to the Azure portal and navigate to your Service Bus namespace.
+1. Select **Queues** from the **Entities** section of the navigation pane, then select the **az204-queue** from the list.
+1. Select the **Service Bus Explorer** in the Service Bus Queue navigation pane.
 1. Select **Peek from start** and the three messages that were sent appear.
 
     :::image type="content" source="../media/peek-messages.png" alt-text="Decorative.":::
@@ -242,3 +240,4 @@ When the resources are no longer needed, you can use the `az group delete` comma
 ```bash
 az group delete --name az204-svcbus-rg --no-wait
 ```
+

@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: Create a user interface with Blazor components
   description: "Learn how to create new Blazor components and write code in them to create an interactive user interface."
-  ms.date: 8/13/2021
+  ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-create-user-interfaces-with-blazor-components.md)]

@@ -7,8 +7,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen, devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.topic: module
+  ms.service: azure-python
+  ms.devlang: python
 title: Write your first Python programs
 summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
 abstract: |

@@ -1,4 +1,4 @@
-In this exercise, configure CDN settings to help optimize and control the delivery of content.
+In this exercise, you configure CDN settings to help optimize and control the delivery of content.
 
 ### Verify the CDN delivered page
 
@@ -44,11 +44,11 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. Switch to the browser tab displaying the CDN cached copy of the website, and refresh the page. The updated text will appear after a few minutes.
 
-The purge operation has completed successfully.
+The purge operation is successfully completed.
 
 ## Change Caching with Query strings
 
-In this next section, you'll configure the cache settings and show the effects of how the different caching options work with query strings.
+In this next section, you configure the cache settings and show the effects of how the different caching options work with query strings.
 
 ### Change the Caching Settings
 
@@ -62,7 +62,7 @@ In this next section, you'll configure the cache settings and show the effects o
 
 ### Add Query Strings and Check Caching Behavior
 
-After 10 minutes, the new settings should have updated on the CDN endpoint. Continue with the following steps:
+After 10 minutes, the new settings should update on the CDN endpoint. Continue with the following steps:
 
 1. Switch to the tab displaying the CDN cached copy of the website, add `/?Q=old` to the end of the URL, then press Enter. The page shouldn't change.
 
@@ -82,8 +82,8 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. In the Caching rules pane, in the **Query string caching behavior** drop-down, select **Bypass caching for query strings**, then select **Save**.
 
-1. Wait for 10 minutes until the new settings have updated on the CDN endpoint.
+1. Wait for 10 minutes until the new settings update on the CDN endpoint.
 
 1. Switch back to the tab displaying the CDN cached copy of the website and refresh the page using the `/?Q=old` query string. The page should update with the changed version of the page.
 
-You've cached a copy of the origin web site and shown the caching behavior with query strings.
+In this exercise, You cached a copy of the origin web site and demonstrated the caching behavior with query strings.

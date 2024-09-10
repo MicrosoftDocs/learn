@@ -1,4 +1,4 @@
-Right now, if we try to read from a journal file that doesn't exist, our program will panic with the following output:
+Right now, if we try to read from a journal file that doesn't exist, our program panics with the following output:
 
 ```output
     $ cargo run -- done 2
@@ -6,7 +6,7 @@ Right now, if we try to read from a journal file that doesn't exist, our program
     thread 'main' panicked at 'Failed to perform action: Os { code: 2, kind: NotFound, message: "No such file or directory" }'
 ```
 
-This error is a little verbose for our users, so we should make it more presentable. We could write lots of code to handle that task, but there's an excellent crate for displaying useful and pretty errors to users. It's called `anyhow`.
+This error is a little verbose for our users, so we should make it more presentable. We could write lots of code to handle that task, but there's an excellent crate for displaying useful and pretty errors to users called `anyhow`.
 
 The logic behind the `anyhow` crate is that it provides its own error type. This type has
 pretty-printing properties and can easily be converted from other errors, like
@@ -60,7 +60,7 @@ fn main() -> anyhow::Result<()> {
         .ok_or(anyhow!("Failed to find journal file."))?;
 
     match action {
-        Add { text } => tasks::add_task(journal_file, Task::new(text)),
+        Add { task } => tasks::add_task(journal_file, Task::new(task)),
         List => tasks::list_tasks(journal_file),
         Done { position } => tasks::complete_task(journal_file, position),
     }?;
@@ -68,14 +68,13 @@ fn main() -> anyhow::Result<()> {
 }
 ```
 
-Because most error types can be converted to `anyhow::Error`, we can use `?` syntax to remove the `expect` calls from our code. Also, note that we're using the `anyhow!` macro to produce an `anyhow::Error` on the fly that contains the provided error message.
+Because most error types can be converted to `anyhow::Error`, we can use `?` syntax to remove the `expect` calls from our code. Also, see how we're using the `anyhow!` macro to produce an `anyhow::Error` on the fly that contains the provided error message.
 
-Now every panic message caused by an I/O error being returned from within our program will be
-displayed to users like this:
+Now every panic message caused by an I/O error being returned from within our program is displayed to users like this:
 
 ```output
     $ cargo run -- -j missing-journal done 2
     Error: No such file or directory (os error 2)
 ```
 
-That's quite an improvement for a few extra lines of code.
+Quite an improvement for a few extra lines of code.

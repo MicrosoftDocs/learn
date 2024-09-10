@@ -4,11 +4,13 @@ title: Exercise - Configure an Azure web app with ConfigurationBuilder
 metadata:
   title: Exercise - Configure an Azure web app with ConfigurationBuilder
   description: In this unit, you use ConfigurationBuilder to configure an Azure web app and help protect sensitive configuration data.
-  ms.date: 06/30/2020
+  ms.date: 01/16/2024
   author: coderandhiker
   ms.author: chrisrt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 10
 interactive: powershell
 azureSandbox: true

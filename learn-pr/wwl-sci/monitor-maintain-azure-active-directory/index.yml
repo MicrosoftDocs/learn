@@ -1,27 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
-  title: Monitor and maintain Azure Active Directory
-  description: "Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
-  ms.date: 02/16/2023
+  title: Monitor and maintain Microsoft Entra ID
+  description: "Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Monitor and maintain Azure Active Directory
-summary: Azure AD audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Monitor and maintain Microsoft Entra ID
+summary: Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 abstract: |
   By the end of this module, you'll be able to:
   *   Analyze and investigate sign in logs to troubleshoot access issues
-  *   Review and monitor Azure AD audit logs
-  *   Enable and integrate Azure AD diagnostic logs with Log Analytics / Azure Sentinel
+  *   Review and monitor Microsoft Entra audit logs
+  *   Enable and integrate Microsoft Entra diagnostic logs with Log Analytics / Azure Sentinel
   *   Export sign in and audit logs to a third-party SIEM (security information and event management)
-  *   Review Azure AD activity by using Log Analytics / Azure Sentinel, excluding KQL (Kusto Query Language) use
-  *   Analyze Azure Active Directory workbooks / reporting
+  *   Review Microsoft Entra activity by using Log Analytics / Azure Sentinel, excluding KQL (Kusto Query Language) use
+  *   Analyze Microsoft Entra workbooks / reporting
   *   Configure notifications
 prerequisites: |
   None
-iconUrl: /training/achievements/monitor-and-maintain-azure-active-directory.svg
+iconUrl: /learn/achievements/monitor-and-maintain-azure-active-directory.svg
 levels:
 - advanced
 roles:
@@ -30,12 +30,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
-- azure-log-analytics
-- azure-monitor
 - entra
 - entra-identity-governance
+- entra-id
 subjects:
 - it-management-monitoring
 units:

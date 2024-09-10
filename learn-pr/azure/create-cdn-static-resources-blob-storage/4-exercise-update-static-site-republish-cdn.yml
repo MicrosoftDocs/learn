@@ -4,12 +4,11 @@ title: Exercise - Update a Website and republish to a Content Delivery Network
 metadata:
   title: Exercise - Update a Website and republish to a Content Delivery Network
   description: Update a Website and republish to a Content Delivery Network
-  ms.date: 09/27/2022
+  ms.date: 01/10/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: true
+  ms.topic: unit
+azureSandbox: True
 interactive: bash
 durationInMinutes: 6
 content: |

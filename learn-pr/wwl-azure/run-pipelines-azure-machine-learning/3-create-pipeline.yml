@@ -3,12 +3,13 @@ uid: learn.wwl.run-pipelines-azure-machine-learning.create-pipeline
 title: Create a pipeline
 metadata:
   title: Create a pipeline
-  description: "Create a pipeline"
-  ms.date: 04/17/2023
+  description: Create a pipeline
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-pipeline.md)]

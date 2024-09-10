@@ -3,11 +3,10 @@ uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration
 metadata:
   title: Network IP addressing and integration
   description: Network IP addressing and integration
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/28/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Network IP addressing and integration
 durationInMinutes: 8
 content: |
@@ -20,7 +19,7 @@ quiz:
     - content: "A dedicated leased line"
       isCorrect: false
       explanation: " A VPN can connect through the internet. You do not need to have a leased line."
-    - content: "A VM, subnet, firewall, and load balancer"
+    - content: "A virtual network, subnet, firewall, and load balancer"
       isCorrect: true
       explanation: "Typical components involved in a network design do include a VM, subnet, firewall, and load balancer. "
     - content: "A dedicated network security group"

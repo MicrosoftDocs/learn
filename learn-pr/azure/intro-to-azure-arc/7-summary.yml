@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-azure-arc.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 2

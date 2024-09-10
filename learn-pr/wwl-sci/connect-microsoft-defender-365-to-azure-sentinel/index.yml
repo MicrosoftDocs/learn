@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
 metadata:
-  title: Connect Microsoft 365 Defender to Microsoft Sentinel
-  description: "Connect Microsoft 365 Defender to Microsoft Sentinel"
+  title: Connect Microsoft Defender XDR to Microsoft Sentinel
+  description: "Connect Microsoft Defender XDR to Microsoft Sentinel"
   ms.date: 11/14/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Connect Microsoft 365 Defender to Microsoft Sentinel
-summary: Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.
+  ms.topic: module
+  ms.service: microsoft-sentinel
+title: Connect Microsoft Defender XDR to Microsoft Sentinel
+summary: Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft Defender XDR.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  *   Activate the Microsoft 365 Defender connector in Microsoft Sentinel
+  *   Activate the Microsoft Defender XDR connector in Microsoft Sentinel
   *   Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
   *   Activate the Microsoft Defender for IoT connector in Microsoft Sentinel
 prerequisites: |
-  * Intermediate understanding of Microsoft 365 Defender services
-  * Hands on experience with Microsoft Azure
+  * Intermediate understanding of Microsoft Defender XDR services
+  * Fundamental understanding of Microsoft Azure operations
 iconUrl: /training/achievements/connect-microsoft-defender-365-to-azure-sentinel.svg
 levels:
 - intermediate
@@ -28,6 +28,7 @@ products:
 - microsoft-sentinel
 - defender-for-cloud
 - defender-for-iot
+- defender-xdr
 subjects:
 - threat-protection
 - cloud-security

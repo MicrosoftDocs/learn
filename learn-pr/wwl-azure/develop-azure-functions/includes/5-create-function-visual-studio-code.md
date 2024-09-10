@@ -1,9 +1,8 @@
-
-In this exercise you'll learn how to create a simple C\# function that responds to HTTP requests. After creating and testing the code locally in Visual Studio Code you will deploy to Azure.
+In this exercise, you learn how to create a C\# function that responds to HTTP requests. After creating and testing the code locally in Visual Studio Code, you'll deploy to Azure.
 
 ## Prerequisites
 
-Before you begin make sure you have the following requirements in place:
+Before you begin, make sure you have the following requirements in place:
 
 * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
 
@@ -11,7 +10,7 @@ Before you begin make sure you have the following requirements in place:
 
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 
-* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+* [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) is the target framework.
 
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
@@ -19,31 +18,25 @@ Before you begin make sure you have the following requirements in place:
 
 ## Create your local project
 
-In this section, you use Visual Studio Code to create a local Azure Functions project in C#. Later in this exercise, you'll publish your function code to Azure.
+In this section, you use Visual Studio Code to create a local Azure Functions project in C#. Later in this exercise, you publish your function code to Azure.
 
-1. Choose the Azure icon in the Activity bar, then in the **Workspace** area, select **Add...**. Finally, select **Create Function...**.
+1. In Visual Studio Code, press F1 to open the command palette and search for and run the command `Azure Functions: Create New Project...`.
 
-    :::image type="content" source="../media/create-function.png" alt-text="Choosing to create a new project.":::    
-
-    > [!NOTE]
-    > A pop-up message will likely appear prompting you to create a new project, if it does select **Create new project**.
-
-1. Choose a directory location for your project workspace and choose **Select**.
-
-    > [!NOTE] 
-    > Be sure to select a project folder that is outside of an existing workspace.
+1. Select the directory location for your project workspace and choose **Select**. You should either create a new folder or choose an empty folder for the project workspace. Don't choose a project folder that is already part of a workspace.
 
 1. Provide the following information at the prompts:
 
     * **Select a language**: Choose `C#`.
-    * **Select a .NET runtime**: Choose `.NET 6`
-    * **Select a template for your project's first function**: Choose `HTTP trigger`.
+    * **Select a .NET runtime**: Choose `.NET 8.0 Isolated (LTS)`
+    * **Select a template for your project's first function**: Choose `HTTP trigger`.<sup>1</sup>
     * **Provide a function name**: Type `HttpExample`.
     * **Provide a namespace**: Type `My.Function`.
     * **Authorization level**: Choose `Anonymous`, which enables anyone to call your function endpoint.
-    * **Select how you would like to open your project**: Choose `Add to workspace`.
+    * **Select how you would like to open your project**: Select `Open in current window`.
 
-Using this information, Visual Studio Code generates an Azure Functions project with an HTTP trigger.
+    <sup>1</sup> Depending on your VS Code settings, you might need to use the `Change template filter` option to see the full list of templates.
+
+1. Visual Studio Code uses the provided information and generates an Azure Functions project with an HTTP trigger. You can view the local project files in the Explorer.
 
 ## Run the function locally
 
@@ -63,11 +56,11 @@ Visual Studio Code integrates with Azure Functions Core tools to let you run thi
 
 1. Press **Shift + F5** to stop Core Tools and disconnect the debugger.
 
-After you've verified that the function runs correctly on your local computer, it's time to use Visual Studio Code to publish the project directly to Azure.
+After verifying that the function runs correctly on your local computer, it's time to use Visual Studio Code to publish the project directly to Azure.
 
 ## Sign in to Azure
 
-Before you can publish your app, you must sign in to Azure. If you're already signed in, go to the next section.
+Before you can publish your app, you must sign in to Azure. If you already signed in, go to the next section.
 
 1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose **Sign in to Azure...**.
 
@@ -75,7 +68,7 @@ Before you can publish your app, you must sign in to Azure. If you're already si
 
 1. When prompted in the browser, choose your Azure account and sign in using your Azure account credentials.
 
-1. After you've successfully signed in, you can close the new browser window. The subscriptions that belong to your Azure account are displayed in the Side bar.
+1. After successfully signing in, you can close the new browser window. The subscriptions that belong to your Azure account are displayed in the Side bar.
 
 ## Create resources in Azure
 
@@ -89,11 +82,11 @@ In this section, you create the Azure resources you need to deploy your local fu
 
     * Select **Create Function App in Azure...**
     * **Enter a globally unique name for the function app**: Type a name that is valid in a URL path. The name you type is validated to make sure that it's unique in Azure Functions.
-    * **Select a runtime stack**: Use the same choice you made in the *Create your local project* section above.
+    * **Select a runtime stack**: Use the same choice you made in the *Create your local project* section earlier in this exercise.
     * **Select a location for new resources**:  For better performance, choose a region near you.
     * **Select subscription**: Choose the subscription to use. *You won't see this if you only have one subscription.*
 
-    The extension shows the status of individual resources as they are being created in Azure in the **AZURE: ACTIVITY LOG** area of the terminal window.
+    The extension shows the status of individual resources as they're being created in Azure in the **AZURE: ACTIVITY LOG** area of the terminal window.
     
 1. When completed, the following Azure resources are created in your subscription, using names based on your function app name:
 
@@ -103,18 +96,18 @@ In this section, you create the Azure resources you need to deploy your local fu
     * A function app, which provides the environment for executing your function code. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources within the same hosting plan.
     * An Application Insights instance connected to the function app, which tracks usage of your serverless function.
 
-## Deploy the code
+## Deploy the project to Azure
 
-1. In the **WORKSPACE** section of the **Azure** bar select the **Deploy...** button, and then select **Deploy to Function App...**.
+> [!IMPORTANT] 
+> Publishing to an existing function overwrites any previous deployments.
 
-    :::image type="content" source="../media/deploy-function-app.png" alt-text="Image showing location of the **Deploy...** button.":::
+1. In the command palette, search for and run the command `Azure Functions: Deploy to Function App...`.
 
-1. When prompted to **Select a resource**, choose the function app you created in the previous section.
+1. Select the function app you created. When prompted about overwriting previous deployments, select **Deploy** to deploy your function code to the new function app resource.
+    
+1. After deployment completes, select **View Output** to view the creation and deployment results, including the Azure resources that you created. If you miss the notification, select the bell icon in the lower right corner to see it again.
 
-1. Confirm that you want to deploy your function by selecting **Deploy** on the confirmation prompt.
-
-    > [!IMPORTANT] 
-    > Publishing to an existing function overwrites any previous deployments.
+    :::image type="content" source="../media/function-create-notifications.png" alt-text="Screenshot of the View Output window.":::
 
 ## Run the function in Azure
 
@@ -126,4 +119,3 @@ In this section, you create the Azure resources you need to deploy your local fu
 
 1. When the function executes in Azure and returns a response, a notification is raised in Visual Studio Code.
 
-    :::image type="content" source="../media/executed-function-notification.png" alt-text="Executed function notification":::

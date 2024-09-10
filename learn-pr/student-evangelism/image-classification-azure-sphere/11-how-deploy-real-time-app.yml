@@ -4,12 +4,10 @@ title: How to deploy a real-time image classification application to Azure Spher
 metadata:
   title: How to deploy a real-time image classification application to Azure Sphere
   description: In this section, we guide the learner in how to deploy a real-time application to an Azure Sphere device.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/11-how-deploy-real-time-app.md)]

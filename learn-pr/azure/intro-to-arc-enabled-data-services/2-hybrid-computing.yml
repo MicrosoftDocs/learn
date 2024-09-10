@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing
 metadata:
   title: Learn about hybrid computing
   description: This until will define what hybrid computing means and how Azure Arc provides solutions for hybrid scenarios. This solution will also describe Azure Arc-enabled infrastructure services to differentiate it from Azure Arc-enabled data services.
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: bwoody
   ms.author: bwoody
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Learn about hybrid computing
 durationInMinutes: 9

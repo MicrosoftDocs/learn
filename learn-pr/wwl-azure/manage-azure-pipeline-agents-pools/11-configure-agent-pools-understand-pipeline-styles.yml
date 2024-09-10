@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-pipeline-agents-pools.configure-agent-pools-understand-pipeline-styles
-title: Configure agent pools and understanding pipeline styles
+title: Configure agent pools and understand pipeline styles
 metadata:
-  title: Configure agent pools and understanding pipeline styles
-  description: "Configure agent pools and understanding pipeline styles"
-  ms.date: 06/23/2022
+  title: Configure agent pools and understand pipeline styles
+  description: "Configure agent pools and understand pipeline styles"
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 45
 content: |
   [!include[](includes/11-configure-agent-pools-understand-pipeline-styles.md)]

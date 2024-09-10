@@ -7,15 +7,15 @@ There are two components to an object detection prediction:
 - The class label of each object detected in the image. For example, you might ascertain that an image contains one apple and two oranges.
 - The location of each object within the image, indicated as coordinates of a *bounding box* that encloses the object.
 
-## Use the Custom Vision service for object detection
+## Use the Azure AI Custom Vision service for object detection
 
-You can use the **Custom Vision** cognitive service to train an object detection model. To use the Custom Vision service, you must provision two kinds of Azure resource:
+You can use the **Azure AI Custom Vision** service to train an object detection model. To use the Azure AI Custom Vision service, you must provision two kinds of Azure resource:
 
 - A *training* resource (used to train your models). This can be:
-    - A **Cognitive Services** resource.
-    - A **Custom Vision (Training)** resource.
+    - An **Azure AI Services** resource.
+    - An **Azure AI Custom Vision (Training)** resource.
 - A *prediction* resource, used by client applications to get predictions from your model. This can be:
-    - A **Cognitive Services** resource.
-    - A **Custom Vision (Prediction)** resource.
+    - An **Azure AI Services** resource.
+    - An **Azure AI Custom Vision (Prediction)** resource.
 
-You can use a single **Cognitive Services** resource for both training and prediction, and you can mix-and-match resource types (for example, using a **Custom Vision (Training)** resource to train a model that you then publish using a **Cognitive Services** resource).
+You can use a single **Azure AI Services** resource for both training and prediction, and you can mix-and-match resource types (for example, using an **Azure AI Custom Vision (Training)** resource to train a model that you then publish using an **Azure AI Services** resource).

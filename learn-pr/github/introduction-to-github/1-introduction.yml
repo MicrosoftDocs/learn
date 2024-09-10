@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
-  ms.date: 06/26/2020
+  ms.date: 10/27/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

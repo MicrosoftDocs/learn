@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: This unit concludes the module.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 07/23/2024
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-conclusion.md)]

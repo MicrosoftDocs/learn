@@ -4,11 +4,10 @@ title: Monitoring and logging
 metadata:
   title: Exercise - Monitoring and logging
   description: We discuss what monitoring and logging solutions are needed or useful for the event-driven scenario.
-  ms.date: 02/01/2021
+  ms.date: 02/05/2024
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-03012021
 durationInMinutes: 2

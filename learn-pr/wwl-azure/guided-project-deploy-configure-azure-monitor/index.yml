@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor
+metadata:
+  title: Guided Project – Deploy and configure Azure Monitor
+  description: In this module, you practice configuring monitoring of various workloads and infrastructure services using Azure Monitor. The skills validated include deploying and configuring Log Analytics, configuring monitoring for Web apps, monitoring compute and networking services, and configuring alerts.
+  ms.date: 10/06/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: module
+  ms.service: azure-monitor
+title: Guided Project – Deploy and configure Azure Monitor
+summary: Understand how to configure monitoring of various workloads and infrastructure services using Azure Monitor.
+abstract: |
+  - Deploy and configure Log Analytics.
+  - Configure monitoring for Web apps.
+  - Monitor compute and networking services.
+  - Configure alerts.
+prerequisites: ''
+iconUrl: /training/achievements/generic-badge.svg
+hidden: false
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-log-analytics
+units:
+- learn.wwl.guided-project-deploy-configure-azure-monitor.introduction
+- learn.wwl.guided-project-deploy-configure-azure-monitor.prepare-azure-environment
+- learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-deploy-log-analytics
+- learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-monitor-web-apps
+- learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-configure-monitoring-compute-services
+- learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-configure-alerts
+- learn.wwl.guided-project-deploy-configure-azure-monitor.knowledge-check
+- learn.wwl.guided-project-deploy-configure-azure-monitor.summary
+badge:
+  uid: learn.wwl.guided-project-deploy-configure-azure-monitor.badge

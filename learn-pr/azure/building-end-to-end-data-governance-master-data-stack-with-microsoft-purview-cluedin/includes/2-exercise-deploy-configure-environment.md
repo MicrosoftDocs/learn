@@ -1,11 +1,8 @@
-To provide an end to end data technology stack, we'll be creating many resources and integrating them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, an Azure Storage account, and Azure Key Vault. If you have these components already, you can move on to the next section. 
-
->[!TIP]
->Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
+To provide an end to end data technology stack, we create many resources and integrate them together to create a flow of data. This exercise includes setting up Azure Data Factory, Microsoft Purview, CluedIn, a service principal, an Azure Storage account, and Azure Key Vault. If you have these components already, you can move on to the next section. 
 
 ## Create an Azure Data Factory
 
-We'll be using Azure Data Factory as our mechanism to pull data from source systems into storage accounts, and pull data registered in Microsoft Purview to CluedIn to be processed.
+In this exercise, we use Azure Data Factory as our mechanism to pull data from source systems into storage accounts, and pull data registered in Microsoft Purview to CluedIn to be processed.
 
 If you don't have an Azure Data Factory instance, you can use the following guide to create one:
 
@@ -17,9 +14,9 @@ If you don't have an Azure Data Factory instance, you can use the following guid
 
 ## Create a Microsoft Purview instance
 
-You'll need to bring your own Microsoft Purview instance to the learning module, or you can create one using these steps:
+You need your own Microsoft Purview instance for this learning module, or you can create one using these steps:
 
-1. Select **Create a resource** in the [Azure portal](https://portal.azure.com),search for **Microsoft Purview**, and select **Create** to create a new Microsoft Purview account.
+1. Select **Create a resource** in the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Purview**. Select **Create** to create a new Microsoft Purview account.
 
     :::image type="content" source="../media/search-marketplace.png" alt-text="Screenshot showing Microsoft Purview in the Azure Marketplace, with the create button highlighted.":::
 
@@ -34,18 +31,21 @@ You'll need to bring your own Microsoft Purview instance to the learning module,
 
 ## Create a service principal
 
-You'll also need to set up a Service Principal to generate the right credentials for all the components to talk with each other.
+>[!TIP]
+>Even if you already have a security principal, confirm you have the correct permissions in the [set up authentication using a service principal](#set-up-authentication-using-service-principal) section.
+
+You also need to set up a Service Principal to generate the right credentials for all the components to talk with each other.
 
 To create a new service principal:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. From the portal, search for and select **Azure Active Directory**.
-1. From the **Azure Active Directory** page, select **App registrations** from the left pane.
+1. From the portal, search for and select **Microsoft Entra ID**.
+1. From the **Microsoft Entra ID** page, select **App registrations** from the left pane.
 1. Select **New registration**.
 1. On the **Register an application** page:
     1. Enter a **Name** for the application (the service principal name).
     1. Select **Accounts in this organizational directory only (_&lt;your tenant's name&gt;_ only - Single tenant)**.
-    1. For **Redirect URI (optional)**, select **Web** and enter a value. This value doesn't need to be a valid endpoint. `https://exampleURI.com` will do.
+    1. For **Redirect URI (optional)**, select **Web** and enter a value. This value doesn't need to be a valid endpoint. For example, `https://exampleURI.com`.
     1. Select **Register**.
 
     :::image type="content" source="../media/application-registration-inline.png" alt-text="Screenshot of the application registration page, with the above options filled out." lightbox="../media/application-registration.png":::
@@ -54,14 +54,14 @@ To create a new service principal:
 
    :::image type="content" source="../media/application-id-inline.png" alt-text="Screenshot of the application page in the portal with the Application (client) ID highlighted." lightbox="../media/application-id.png":::
 
-To use the service principal (application), you need to know the service principal's password that can be found by:
+To use the service principal (application), you need to know the service principal's password that can be found with these steps:
 
-1. From the Azure portal, search for and select **Azure Active Directory**, and then select **App registrations** from the left pane.
+1. From the Azure portal, search for and select **Microsoft Entra ID**, and then select **App registrations** from the left pane.
 1. Select your service principal (application) from the list.
 1. Select **Certificates & secrets** from the left pane.
 1. Select **New client secret**.
 1. On the **Add a client secret** page, enter a **Description**, select an expiration time under **Expires**, and then select **Add**.
-1. On the **Client secrets** page, the string in the **Value** column of your new secret is your password. Save this value to use later.
+1. On the **Client secrets** page, the string in the **Value** column of your new secret is your password. Save this value for use later.
 
    :::image type="content" source="../media/client-secret.png" alt-text="Screenshot showing a client secret.":::
 
@@ -72,7 +72,7 @@ Once the new service principal is created, or if you're bringing your own, you n
 1. Navigate to your [Microsoft Purview governance portal](https://web.purview.azure.com/resource/).
 1. Select the Data Map in the left menu.
 1. Select Collections.
-1. Select the root collection in the collections menu. This will be the top collection in the list, and will have the same name as your Microsoft Purview account.
+1. Select the root collection in the collections menu. The root collection is the top collection in the list, and has the same name as your Microsoft Purview account.
 
     >[!NOTE] 
     >You can also assign your service principal permission to any sub-collections, instead of the root collection. However, all APIs will be scoped to that collection (and sub-collections that inherit permissions), and users trying to call the API for another collection will get errors.
@@ -90,28 +90,28 @@ Once the new service principal is created, or if you're bringing your own, you n
 
 ## Create a CluedIn instance
 
-You can also create a CluedIn instance directly through the Azure Marketplace or Azure portal. You'll need to make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace/preflight.
+You can also create a CluedIn instance directly through the Azure Marketplace or Azure portal. Make sure that you check and validate that you have all the prerequisites for installing the trial, available here: https://documentation.cluedin.net/deployment/azure-marketplace.
 
-To create a CluedIn instance, go to the Azure portal and follow the steps below:
+To create a CluedIn instance, go to the Azure portal and follow these steps:
 
 1. Search **CluedIn** in your Azure portal and select the application under the Marketplace section.
 
     :::image type="content" source="../media/create-cluedin-azure-portal-inline.png" alt-text="Screenshot of Azure Marketplace, showing CluedIn Master Data Management." lightbox="../media/create-cluedin-azure-portal.png" :::
 
-1. This will take you to a form where you'll be asked to choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but will charge for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that is hourly based pricing. In this module, we'll walk you through using the CluedIn seven-day trial.
+1. On the form, choose the type of plan. CluedIn provides a seven-day trial that is cost-free from CluedIn, but charges you for the underlying Azure infrastructure used to install within your environment. You can also choose the **CluedIn Platform** plan that uses hourly based pricing. In this module, we walk you through using the CluedIn seven-day trial.
 
     :::image type="content" source="../media/choose-cluedin-instance.png" alt-text="Screenshot of CluedIn Master Data Management Page, showing the CluedIn Platform option.":::
 
 1. Choose **Trial Version** from the dropdown and select **Create**.
 
-1. Fill in the Subscription and Resource Group you would like to use. For the region, make sure you choose a region where you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, [there's a handy PowerShell script that you can run](https://documentation.cluedin.net/deployment/azure-marketplace/preflight) that will tell you if you have enough quota and all required prerequisites before running the installation.
+1. Fill in the Subscription and Resource Group you would like to use. For the region, make sure you choose a region where you're able to create infrastructure and that you have enough of a quota to spin up the required infrastructure. If you are in doubt, [there's a handy PowerShell script that you can run](https://documentation.cluedin.net/deployment/azure-marketplace) that tells you if you have enough quota and all required prerequisites before running the installation.
 
     >[!NOTE]
-    >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that will be easy for you to remember through the rest of the module.
+    >The Managed Resource Group name is autogenerated for you, there is no need to rename this. Call your Installation Name something that is easy for you to remember through the rest of the module.
 
     :::image type="content" source="../media/fill-cluedin-trial-form.png" alt-text="Screenshot of CluedIn Master Data Management Page creation form, showing some generic options.":::
 
-1. Select **Next : CluedIn - Organization Setup >** to set the Organization Name, Administrator Email Address, CluedIn Administrator Password, and Confirm Password. The Organization Name will be the name for your new instance of CluedIn and the subdomain that will be used to access your CluedIn Studio in the browser. Provide an email address that is valid and that you have access to, and provide a strong Password in the CluedIn Administration Password and Confirm password fields.
+1. Select **Next : CluedIn - Organization Setup >** to set the Organization Name, Administrator Email Address, CluedIn Administrator Password, and Confirm Password. The Organization Name is the name for your new instance of CluedIn and the subdomain that is used to access your CluedIn Studio in the browser. Provide an email address that is valid and that you have access to, and provide a strong Password in the CluedIn Administration Password and Confirm password fields.
 
     :::image type="content" source="../media/fill-cluedin-organization-details.png" alt-text="Screenshot of CluedIn Master Data Management Page organization setup page.":::
 
@@ -120,15 +120,15 @@ To create a CluedIn instance, go to the Azure portal and follow the steps below:
 
 1. Select **Next : CluedIn - AKS Setup >** and leave all of the values as the default.
 
-    :::image type="content" source="../media/fill-cluedin-aks-setup.png" alt-text="Screenshot of CluedIn Master Data Management Page AKS setup page.":::
+    :::image type="content" source="../media/fill-cluedin-aks-setup.png" alt-text="Screenshot of CluedIn Master Data Management Page - Azure Kubernetes Service (AKS) setup page.":::
 
 1. Select **Next : Review + create >**. On this next page, you'll need to check the checkbox to agree to the terms and conditions.
 
-In approximately 15 to 20 minutes, you'll have a created instance of CluedIn and will be able to access your newly created CluedIn environment. We'll show you how in the next section.
+In approximately 15 to 20 minutes, your newly created instance of CluedIn is able to access your new CluedIn environment. We'll show you how in the next section.
 
 ## Create an Azure Storage Account
 
-You need an ADLS Gen2 Storage Account to host all of the data used for the module.
+You need an ADLS (Azure Data Lake Storage) Gen2 Storage Account to host all of the data used for the module.
 
 You can bring an account you already have or use this guide to create one:
 
@@ -136,7 +136,7 @@ You can bring an account you already have or use this guide to create one:
 
     :::image type="content" source="../media/select-storage-account-inline.png" alt-text="Screenshot of the Azure Marketplace showing a Storage account." lightbox="../media/select-storage-account.png" :::
 
-1. In the basics tab, provide your subscription, resource group, a name, performance (for this module we'll use standard), and redundancy (for this module we'll use local redundancy.)
+1. In the basics tab, provide your subscription, resource group, a name, performance (for this module we use standard), and redundancy (for this module we use local redundancy.)
 
     :::image type="content" source="../media/create-storage-account-basics.png" alt-text="Screenshot of the Create a storage account page basics tab.":::
 
@@ -144,14 +144,14 @@ You can bring an account you already have or use this guide to create one:
 
     :::image type="content" source="../media/create-storage-account-advanced.png" alt-text="Screenshot of the Create a storage account page advanced tab.":::
 
-1. Select **Review** and after validation has passed, select **Create**.
+1. Select **Review** and after validation passes, select **Create**.
 
 ## Create an Azure Key Vault
 
-1. From the Azure portal menu, or from the Home page, select Create a resource.
-1. In the Search box, enter Key Vault.
-1. From the results list, choose Key Vault.
-1. On the Key Vault section, choose Create.
+1. From the Azure portal menu, or from the Home page, select **Create a resource**.
+1. In the Search box, enter *Key Vault*.
+1. From the results list, choose **Key Vault**.
+1. On the Key Vault section, choose **Create**.
 1. On the Create key vault section provide the following information:
     1. Name: A unique name is required.
     1. Subscription: Choose a subscription.

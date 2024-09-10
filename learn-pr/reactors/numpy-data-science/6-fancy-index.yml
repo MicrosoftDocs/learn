@@ -4,11 +4,10 @@ title: Fancy indexing
 metadata:
   title: Fancy indexing
   description: Learn how to pass an array of indices to an array in order to access or modify multiple array elements at the same time.
-  ms.date: 04/22/2020
+  ms.date: 04/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 12
 content: |

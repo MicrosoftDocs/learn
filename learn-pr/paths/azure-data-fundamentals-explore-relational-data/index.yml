@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/07/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'Microsoft Azure Data Fundamentals: Explore relational data in Azure'
 prerequisites: |
   None

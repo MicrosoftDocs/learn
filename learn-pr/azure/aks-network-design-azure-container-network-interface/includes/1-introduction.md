@@ -1,24 +1,15 @@
-You're an architect working for a business that wants to build an innovative new online store for your customers. The store will differentiate your business and give you a lead over your competitors. You want to use cloud native patterns and practices to allow you to rapidly deliver an initial version of the store. Then, you can iterate quickly to add new features, adapt to the needs of your business, and stay ahead of your competition. The store itself needs to be highly available, offering a high level of performance to ensure customers have a great experience while using the store. The store also needs to cope with varying levels of demand.
+## Example scenario
 
-You want to build the application using containers and will be adopting DevOps practices. The application consists of multiple discrete services and some services need to communicate with other services in Azure. This diagram provides a high-level overview of the architecture of the application.
+You're an architect working for a business that wants to build a new online store for its customers. This new online store can differentiate the business and give it a lead over its competitors. The store needs to be highly available and performant to ensure customers have a great experience. The store also needs to be able to handle varying levels of demand. The application consists of multiple discrete services. Some services need to communicate with other services in Azure. 
+
+The following diagram provides a high-level overview of the application's architecture:
 
 :::image type="content" source="../media/1-introduction-app-architecture.svg" alt-text="Diagram that shows two types of pipeline triggers." border="false":::
 
-Your company has recently standardized on Kubernetes to host all container-based workloads. You've been asked to design the cluster for the new service, but you quickly come to realize that involves the design of the network, which is heavily influenced by the needs of the application. Where do you begin with designing your network?
+Your team is tasked with building and delivering an initial version of the store as quickly as possible. From there, you can iterate to add new features, adapt to business needs, and stay ahead of the competition.
+
+Your team plans to build the application using DevOps and cloud native patterns and practices. Your company has recently standardized on Kubernetes to host all container-based workloads and decided to use the Azure Container Networking Interface (CNI) for the cluster. You're tasked with designing the cluster for the new service, which involves designing the network. To effectively design the network, you need to understand the requirements, constraints, and considerations of the Azure CNI networking model.
+
+Before you begin, it's important you understand the details about some key Kubernetes components. In the next unit, we provide an overview of key Kubernetes networking concepts.
 
 [!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
-
-## Learning objectives
-
-Upon completing this module, you will be able to:
-
-- List the key Kubernetes resource types that require network access.
-- Assess an application's needs and how that could impact network design.
-- Understand the steps to size an Azure Kubernetes Service cluster for a workload.
-- Design a network for an Azure Kubernetes Service cluster using Azure CNI networking.
-
-## Prerequisites
-
-- Understand Docker containers at a beginner level.
-- Understand Kubernetes at a beginner level.
-- Understand networking basics, such as IP addresses and CIDR address ranges.

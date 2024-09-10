@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/20/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module
+  ms.service: windows-server 
 title: Describe Windows Server administration tools
 summary: Select the most appropriate Windows Server administration tool for a given situation and learn how to use that tool.
 abstract: |

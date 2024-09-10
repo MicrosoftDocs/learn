@@ -3,11 +3,11 @@ uid: learn.wwl.plan-implement-entitlement-management
 metadata:
   title: Plan and implement entitlement management
   description: "When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources."
-  ms.date: 02/07/2023
+  ms.date: 01/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: entra
 title: Plan and implement entitlement management
 summary: When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources.
 abstract: |
@@ -16,10 +16,10 @@ abstract: |
   - Define access packages.
   - Plan, implement and manage entitlements.
   - Implement and manage terms of use.
-  - Manage the lifecycle of external users in Azure AD Identity Governance settings.
+  - Manage the lifecycle of external users in Microsoft Entra Identity Governance settings.
 prerequisites: |
   None
-iconUrl: /training/achievements/plan-and-implement-entitlement-management.svg
+iconUrl: /learn/achievements/plan-and-implement-entitlement-management.svg
 levels:
 - advanced
 roles:
@@ -28,11 +28,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
 - entra
 - entra-identity-governance
-- entra-permissions-management
+- entra-id
 subjects:
 - cloud-computing
 units:

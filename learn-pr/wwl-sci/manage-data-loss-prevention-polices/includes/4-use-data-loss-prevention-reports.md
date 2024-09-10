@@ -1,59 +1,59 @@
 After you create data loss prevention policies, administrators need to verify and monitor the performance of their DLP policies in production. This is an important recurring task for an organization to ensure they stay compliant with policies while minimizing impact on user productivity. 
 
-## Data loss prevention reports in the Microsoft Purview compliance portal
+## DLP Activity Explorer and reports
 
-The Microsoft Purview compliance portal provides the following DLP reports that can be accessed in reports under organization data:
+The Activity explorer tab on the DLP page has multiple filters you can use to view DLP events. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-- DLP Policy Matches
+You can view the last 30 days of DLP information in [Activity Explorer](/microsoft-365/compliance/data-classification-activity-explorer?azure-portal=true) using these preconfigured filters:
 
-- DLP Incidents
+- Endpoint DLP activities
+- Files containing sensitive info types
+- Egress activities
+- DLP policies that detected activities
+- DLP policy rules that detected activities
 
-- DLP false positive overrides
+|To see this information |Select this activity |
+|---------|---------|
+|User overrides|**DLP rule undo**|
+|Items that match a DLP rule|**DLP rule matched**|
 
-The following table provides an overview for each DLP report.
+To access the DLP report, you can use PowerShell and the Security & Compliance PowerShell module.
 
-| **Report**| **Report contains…**| **Report is used for…**| **Recommendation**|
-| :--- | :--- | :--- | :--- |
-| **DLP Policy Matches**| The count of DLP policy matches over time at a rule level, grouped by the available Microsoft 365 service locations. The report can be broken down by services, actions, or policies and get filtered by date, location, policy, or action. | Tune or refine your DLP policies as you run them in test mode. You can view the specific rule that matched the content.| The policy matches report is used for identifying matches with specific rules and fine-tuning DLP policies, to increase the accuracy of the policies matching a company's individual data shared regularly.|
-| **DLP Incidents**| The count of DLP policy matches over time on item level, grouped by the available Microsoft 365 service locations. The report can be filtered by date, location, policy, or action. | Identify specific pieces of content that are problematic for your DLP policies.| The incidents report is used for identifying specific pieces of content that are problematic for your DLP policies and to identify groups of items that may require more protective actions.|
-| **DLP false positives and overrides**| A count of user overrides and reported false positives. This report can be filtered by date, location, or policy.| Tune or refine your DLP policies by seeing which policies incur a high number of false positives.| The false positives and user overrides report should be used to identify the accuracy of the existing DLP policies, to be able to react fast when suddenly large numbers of faulty matches occur in a business impact.|
+1. Connect to the Security & Compliance PowerShell module:
 
-> [!TIP]
-> All DLP reports can display data from the most recent four-month time period. The most recent data can take up to 24 hours to appear in the reports.
+    ```powershell
+    Connect-IPPSSession
+    ```
 
-## Data loss prevention alert management dashboard
+1. Use the **Export-ActivityExplorerData** cmdlet to export activities from Data classification > Activity Explorer in the Microsoft 365 Purview compliance portal. Specify the desired time range using the **-StartTime** and **-EndTime** parameters. Choose the output format, such as JSON or CSV, by setting the **-OutputFormat** parameter. Here's an example:
 
-Reports provide a quick overview of DLP events and can inform about an organization's trends.  DLP policies can be configured to trigger an alert when the conditions are met. Use the incident report to investigate events.
+    ```powershell
+    Export-ActivityExplorerData -StartTime "06/24/2023 00:00 AM" -EndTime "06/25/2023 00:00 AM" -OutputFormat JSON
+    ```
 
-The DLP alert management dashboard in the Microsoft Purview compliance portal can be used to show alerts of the following workloads:
+To learn more about the **Export-ActivityExplorerData** cmdlet see:
+- [Export-ActivityExplorerData](/powershell/module/exchange/export-activityexplorerdata?azure-portal=true)
 
-- Exchange
+### Contextual summary
 
-- SharePoint
+You can see the text that surrounds the matched content, like a credit card number in a **DLPRuleMatch** event in Activity explorer. To do this you must first enable [Advanced classification scanning and protection](/microsoft-365/compliance/dlp-configure-endpoint-settings?azure-portal=true#advanced-classification-scanning-and-protection).
 
-- OneDrive
+**DLPRuleMatch** events are paired with the user activity event. They should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content.
 
-- Teams
+For endpoint, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices or above
 
-- Devices
-
-The remediation of Microsoft Defender for Cloud Apps DLP alerts is done through the Defender for Cloud Apps dashboard.
+For more information, see [Get started with activity explorer](/microsoft-365/compliance/data-classification-activity-explorer?azure-portal=true)
 
 ## Data loss prevention alerts in the Microsoft Defender for Cloud Apps dashboard
 
 You can also view a report for DLP alerts in the Defender for Cloud Apps Dashboard. This report shows the alerts and matches of all your Defender for Cloud Apps policies that are part of the DLP category. You can select each alert or match to gain information about:
 
 - The type of sensitive information
-
 - Location of the sensitive information
-
 - The policy creating the alert
-
 - The user triggering the policy match
-
 - The actions that have been taken to secure the matched file
 
-[ ![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png) ](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
+[![Screenshot of alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png)](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
 Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Microsoft Purview compliance portal, it's prudent to be aware of alerts in both dashboards.
-

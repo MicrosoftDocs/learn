@@ -3,11 +3,10 @@ uid: learn.language.rust-create-command-line-program.cli-module
 metadata:
   title: Create the CLI module
   description: Implement the module that will parse command-line input.
-  ms.date: 01/26/2021
+  ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Create the CLI module
 durationInMinutes: 7

@@ -3,12 +3,13 @@ uid: learn.languages.csharp-arrays-operations.challenge-1
 title: Exercise - Complete a challenge to reverse words in a sentence
 metadata:
   title: Exercise - Complete a challenge to reverse words in a sentence
-  description: "Exercise - Complete a challenge to reverse words in a sentence"
-  ms.date: 04/25/2023
+  description: "Use the array manipulations you've learned to help you write code that will reverse the words in a sentence."
+  ms.date: 03/27/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge-1.md)]

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "When would you use a vector search?"
+    choices:
+    - content: "To create a search to match text input."
+      isCorrect: false
+      explanation: "Incorrect. An Azure search service would accomplish this."
+    - content: "When you need to find matches across different types of data. from a search index."
+      isCorrect: true
+      explanation: "Correct. A vector query can be used to match criteria across text, video, image and audio data sources."
+    - content: "To upload and index a document library."
+      isCorrect: false
+      explanation: "Incorrect. You upload documents to your storage resource then create an index."
+  - content: "What do you need to run a successful vector query?"
+    choices:
+    - content: "Your search service URL and an admin key"
+      isCorrect: true
+      explanation: "Correct. These are inserted into the header information of your query."
+    - content: "Your Storage account name and location."
+      isCorrect: false
+      explanation: "Incorrect. This isn't the correct index."
+    - content: "Your Azure subscription ID."
+      isCorrect: false
+      explanation: "Incorrect. You don't need this information for vector query."
+  - content: "What type of vector search would you use to capture semantic similarity?"
+    choices:
+    - content: "A Text search."
+      isCorrect: false
+      explanation: "Incorrect. A Text search embedding is used when you need to look at the relevance of long documents to a short query"
+    - content: "A Similarity search."
+      isCorrect: true
+      explanation: "Correct. Use Similarity search embeddings to capture the semantic similarity between pieces of text."
+    - content: "A Code search"
+      isCorrect: false
+      explanation: "Incorrect. Find embedding code snippets and natural language search queries using a Code search embedding."

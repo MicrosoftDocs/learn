@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.document-intelligence-knowledge-mining
+metadata:
+  title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+  description: Understand how Azure AI Document Intelligence and Azure Cognitive Search support AI workloads.
+  ms.date: 10/18/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: learning-path
+title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+prerequisites: ""
+summary: |
+  Explore two AI workloads: document intelligence and knowledge mining.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-engineer
+- student
+products:
+- azure
+- azure-cognitive-search
+modules:
+- learn.wwl.analyze-receipts-form-recognizer
+- learn.azure-introduction-to-azure-search
+trophy:
+  uid: learn.wwl.document-intelligence-knowledge-mining.trophy

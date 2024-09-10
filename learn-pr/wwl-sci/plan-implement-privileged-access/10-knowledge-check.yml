@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -19,13 +16,13 @@ quiz:
   questions:
   - content: "How can Discovery and insights for privileged identity management help an organization?"
     choices:
-    - content: "Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
+    - content: "Discovery and insights can find privileged role assignments across Microsoft Entra ID, and then provide recommendations on how to secure them using Microsoft Entra governance features like Privileged Identity Management (PIM)."
       isCorrect: true
-      explanation: "Correct. Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
-    - content: "Discovery and insights can find when guest's access resources across Azure AD."
+      explanation: "Correct. Discovery and insights can find privileged role assignments across Microsoft Entra ID, and then provide recommendations on how to secure them using Microsoft Entra governance features like Privileged Identity Management (PIM)."
+    - content: "Discovery and insights can find when guest's access resources across Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. Discovery and insights can find privileged role assignments and authorized guest user access."
-    - content: "Discovery and insights can find security group assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
+    - content: "Discovery and insights can find security group assignments across Microsoft Entra ID, and then provide recommendations on how to secure them using Microsoft Entra governance features like Privileged Identity Management (PIM)."
       isCorrect: false
       explanation: "Incorrect. Discovery and insights can find privileged role assignments."
   - content: "Whether to assign a role to a group instead of to individual users is a strategic decision. When planning, consider assigning a role to a group to manage role assignments when the desired outcome is to delegate assigning the role and what else?"
@@ -43,10 +40,10 @@ quiz:
     choices:
     - content: "Permanently active roles."
       isCorrect: false
-      explanation: "Incorrect. Permanently active roles are the normal roles assigned through Azure Active Directory and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
+      explanation: "Incorrect. Permanently active roles are the normal roles assigned through Microsoft Entra ID and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
     - content: "Eligible roles."
       isCorrect: true
-      explanation: "Correct. Permanently active roles are the normal roles assigned through Azure Active Directory and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
+      explanation: "Correct. Permanently active roles are the normal roles assigned through Microsoft Entra ID and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
     - content: "Transient roles."
       isCorrect: false
       explanation: "Incorrect. Transient roles aren't a role assignment found in PIM."

@@ -6,7 +6,8 @@ This is partly why security is so important. But it also means computer programm
 
 Phishing is when someone tries to get personal data by hiding who they really are. A person may visit a site or get an email that looks real. For example, you may get an email from your favorite shopping site. It may have the company's logo and all the details at the bottom that look like it came from the store. The mail says that it's time for you to update your account information. It provides a link for you to do just that.
 
-![Illustration of money, credit cards, files, and folders on fish hooks.](../media/fish-hooks.png)
+:::image type="content" source="../media/fish-hooks.png" alt-text="Illustration of money, credit cards, files, and folders on fish hooks.":::
+
 
 When you click the link, it takes you to a web page that looks like your shopping site. But it isn't. It has been made to look like it, but it's just there to get your information. This is called a phishing attack.
 
@@ -18,7 +19,8 @@ The link exposure tool is one way programmers have developed to help protect use
 
 Hackers come in many shapes and sizes. There are "black hat" hackers that are after money or to cause harm. There are "white hat" hackers that can break into systems like any other hacker but have noble goals (like exposing weaknesses). There even are gray hat hackers that sometimes break the rules but generally have good intentions.
 
-![Illustration of a black hat, a white hat, and a grey hat.](../media/hats.png)
+:::image type="content" source="../media/hats.png" alt-text="Illustration of a black hat, a white hat, and a grey hat.":::
+
 
 The black hats are the ones to be most concerned about. Hackers have the ability to break into computer systems by violating security. They may use tools to test thousands of passwords a minute until they find one that works. They write code that can be injected into computers to gain access. They also can write code in programs that seem innocent (like a game) but are designed to steal information.
 

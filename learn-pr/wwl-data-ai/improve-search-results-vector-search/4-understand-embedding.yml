@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.understand-embedding
+title: Understand embedding
+metadata:
+  title: Understand embedding
+  description: Learn about embeddings
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-understand-embedding.md)]

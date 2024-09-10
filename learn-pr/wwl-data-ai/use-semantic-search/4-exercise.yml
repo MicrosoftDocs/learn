@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.use-semantic-search.exercise
+title: Exercise - Use semantic ranking on an index
+metadata:
+  title: Exercise - Use semantic ranking on an index
+  description: Learn how to use semantic ranking on an index.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/29/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise.md)]

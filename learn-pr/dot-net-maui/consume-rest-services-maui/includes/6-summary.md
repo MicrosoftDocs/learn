@@ -4,11 +4,11 @@ In .NET MAUI, you can use **HttpClient** to consume REST web services and perfor
 
 In this module, you saw how to connect to the Internet from within a .NET MAUI app and use a REST web service. Specifically, you learned how to:
 
-- Detect if your device is connected to the internet
-- Consume a REST web service by using **HttpClient**
-- Configure client network security using the native networking features of the platform
+- Detect if your device is connected to the internet.
+- Consume a REST web service by using **HttpClient**.
+- Configure client network security using the native networking features of the platform.
 
 ## Learn more
 
-- [Make HTTP requests in a C# console app](/dotnet/csharp/tutorials/console-webapiclient)
-- [HTTP with .NET](/dotnet/api/system.net.http.httpclient)
+- [Tutorial: Make HTTP requests in a .NET console app using C#](/dotnet/csharp/tutorials/console-webapiclient)
+- [HttpClient Class](/dotnet/api/system.net.http.httpclient)

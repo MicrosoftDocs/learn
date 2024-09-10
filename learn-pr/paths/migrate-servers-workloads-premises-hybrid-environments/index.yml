@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Migrate servers and workloads in on-premises and hybrid environments
 prerequisites: |
   *   Core Microsoft compute, storage, networking, and virtualization technologies
@@ -26,7 +25,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-storage-accounts
 - windows-server
 subjects:

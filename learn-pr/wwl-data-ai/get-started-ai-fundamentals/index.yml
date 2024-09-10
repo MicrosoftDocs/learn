@@ -1,17 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
-  title: Get started with AI on Azure
-  description: "Get started with AI on Azure"
-  ms.date: 04/03/2023
+  title: Fundamental AI Concepts
+  description: This module introduces common AI workloads and their corresponding Azure AI Services. It also introduces Microsoft's Responsible AI policies.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Get started with AI on Azure
+  ms.date: 12/05/2023
+  ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Fundamental AI Concepts
 summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.
 abstract: |
-  In this module, you'll learn about the kinds of solution AI can make possible and considerations for responsible AI practices.
+  In this module, you'll learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
 prerequisites: |
   None
 iconUrl: /training/achievements/get-started-ai-fundamentals.svg
@@ -23,17 +25,16 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
 - azure-machine-learning
 subjects:
 - artificial-intelligence
 units:
 - learn.wwl.get-started-ai-fundamentals.introduction-ai
 - learn.wwl.get-started-ai-fundamentals.understand-machine-learn
-- learn.wwl.get-started-ai-fundamentals.understand-anomaly-detection
 - learn.wwl.get-started-ai-fundamentals.understand-computer-vision
 - learn.wwl.get-started-ai-fundamentals.understand-natural-language-process
-- learn.wwl.get-started-ai-fundamentals.understand-knowledge-mining
+- learn.wwl.get-started-ai-fundamentals.understand-document-intelligence
+- learn.wwl.get-started-ai-fundamentals.understand-generative-ai
 - learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
 - learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
 - learn.wwl.get-started-ai-fundamentals.knowledge-check

@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: What is Azure Backup
   description: Learn what Azure Backup is.
-  ms.prod: learning-azure
-  ms.date: 4/30/2021
+  ms.date: 04/20/2023
   author: gerryaobrien
-  ms.author: gerryo
-  ms.topic: interactive-tutorial 
+  ms.author: nitinme
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-azure-backup.md)]

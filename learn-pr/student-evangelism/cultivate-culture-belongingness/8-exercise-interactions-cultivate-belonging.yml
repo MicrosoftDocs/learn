@@ -6,9 +6,8 @@ metadata:
   description: Further examine and understand what belonging will mean to you and your team.
   ms.date: 09/03/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

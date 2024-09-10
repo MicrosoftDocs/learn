@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.streamline-training-plans-with-ai-tools.ai-support-for-content-creation
+title: AI support for content creation
+metadata:
+  title: AI support for content creation
+  description: This content is a part of the Streamline training plans with AI tools module.
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 03/07/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-ai-support-for-content-creation.md)]

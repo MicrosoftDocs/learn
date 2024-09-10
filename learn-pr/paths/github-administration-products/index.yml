@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.github.github-administration-products
 metadata:
-  title: GitHub fundamentals - Administration basics and product features. 
+  title: GitHub fundamentals - Administration basics and product features 
   description: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers.
   ms.date: 12/04/2020
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
-title: GitHub fundamentals - Administration basics and product features.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: learning-path
+title: GitHub fundamentals - Administration basics and product features
 summary: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers.
 prerequisites: Familiarity with personal and organizational authentication technologies and processes would be helpful
 iconUrl: /training/achievements/github-administration-products.svg
@@ -20,11 +19,15 @@ roles:
 - technology-manager
 products:
 - github
-subjects:
-- development-tools
 modules:
 - learn.github.introduction-to-github
 - learn.github.github-introduction-administration
 - learn.github.github-introduction-products
+- learn.github.maintain-secure-repository-github
+- learn.github.manage-sensitive-data-security-policies
+- learn.github.authenticate-authorize-user-identities-github
+- learn.github-administration-for-enterprise-support-adoption
+- learn.github.manage-github-actions-enterprise
+- learn.github.github-actions-packages
 trophy:
   uid: learn.github-administration-products.trophy

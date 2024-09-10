@@ -4,13 +4,12 @@ title: Create a role assignment
 metadata:
   title: Create a role assignment
   description: "Create a role assignment"
-  ms.date: 01/16/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-create-role-assignment.md)]

@@ -1,10 +1,10 @@
-In this module, we went through a few advanced features of the Pytest framework. First, we started with _parametrize_, a useful Python decorator that can inject inputs for a single test while treating them as individual tests. Then we covered fixtures, which are reusable test helpers that can clean up automatically. 
+In this module, we explored a few advanced features of the pytest framework. First, we started with _parametrize_, a useful Python decorator that allows injecting multiple inputs for a single test, treating each input as a separate test case. Then we covered fixtures, which are reusable test helpers that can automatically manage setup and teardown tasks. 
 
-Finally, you tried writing tests with _parametrize_ and ported a test class to use a custom fixture for temporary files.
+You then applied what you learned by writing tests using _parametrize_ and refactoring an existing test class to incorporate a custom fixture designed for handling temporary files.
 
-With these Pytest features, you should be able to improve tests by using _parametrize_ and create robust test helpers with fixtures. Extending a test suite with these features or updating an existing test suite allows the following:
+These pytest capabilities enable you to enhance your testing framework. By using _parametrize_, you can streamline the test-writing process and ensure each test case is treated independently. Fixtures help create more maintainable and cleaner test code by providing reusable setup and cleanup logic. Overall, these features contribute to:
 
-- Makes tests easier to read
-- Reduces test code with reusable helpers
-- Creates granular tests, which improve error reports
-- Robust setup and cleanups that happen automatically 
+- Easier-to-read tests
+- Reduced redundancy through reusable test helpers
+- More detailed tests that improve error diagnostics
+- Automatic and robust setup and cleanup procedures 

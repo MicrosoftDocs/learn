@@ -2,20 +2,22 @@
 uid: learn.wwl.describe-azure-identity-access-security
 metadata:
   title: Describe Azure identity, access, and security
-  description: "Describe Azure identity, access, and security"
-  ms.date: 01/04/2023
+  description: Describe Azure identity, access, and security
+  ms.date: 01/05/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: architecture-center
 title: Describe Azure identity, access, and security
 summary: This module covers some of the authorization and authentication methods available with Azure.
 abstract: |
   By the end of this module, you will be able to:
-  - Describe directory services in Azure, including Azure Active Directory (AD) and Azure AD DS
+  - Describe directory services in Azure, including Microsoft Entra ID and Microsoft Entra Domain Services
   - Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication (MFA), and passwordless
   - Describe external identities and guest access in Azure
-  - Describe Azure AD Conditional Access
+  - Describe Microsoft Entra Conditional Access
   - Describe Azure Role Based Access Control (RBAC)
   - Describe the concept of Zero Trust
   - Describe the purpose of the defense in depth model

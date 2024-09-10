@@ -4,10 +4,12 @@ title: Explore Intune device profiles
 metadata:
   title: Explore Intune device profiles
   description: "This module explores Intune device profiles."
-  ms.date: 03/14/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-intune-device-profiles.md)]

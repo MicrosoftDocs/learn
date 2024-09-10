@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -32,18 +29,18 @@ quiz:
     choices:
     - content: "Password hash synchronization (PHS)."
       isCorrect: true
-      explanation: "Correct. PHS requires the least effort regarding deployment, maintenance, and infrastructure. Useful to organizations that only need their users to sign in to Microsoft 365, SaaS apps, and other Azure AD-based resources."
+      explanation: "Correct. PHS requires the least effort regarding deployment, maintenance, and infrastructure. Useful to organizations that only need their users to sign in to Microsoft 365, SaaS apps, and other Microsoft Entra based resources."
     - content: "Pass-through authentication (PTA)."
       isCorrect: false
       explanation: "Sorry, that's incorrect. PTA calls for one or more lightweight agents installed on existing servers. These agents must have access to your on-premises Active Directory Domain Services, including your on-premises AD domain controllers. They also need outbound access to the Internet."
     - content: "Federated authentication."
       isCorrect: false
       explanation: "The authentication system can provide advanced authentication requirements, such as smartcard-based authentication or third-party multifactor authentication."
-  - content: "Some situations might require the removal of a server from being monitored by the Azure AD Connect Health service. What needs to be done to start monitoring the same server again?"
+  - content: "Some situations might require the removal of a server from being monitored by the Microsoft Entra Connect Health service. What needs to be done to start monitoring the same server again?"
     choices:
-    - content: "The Azure AD Connect Health service needs to be stopped and restarted on any other targeted server in the network."
+    - content: "The Microsoft Entra Connect Health service needs to be stopped and restarted on any other targeted server in the network."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Stopping and restarting the Azure AD Connect Health service on another server won't allow you to start monitoring on the server you wish to start monitoring again."
+      explanation: "Sorry, that's incorrect. Stopping and restarting the Microsoft Entra Connect Health service on another server won't allow you to start monitoring on the server you wish to start monitoring again."
     - content: "The Health Agent needs to be uninstalled and reinstalled on this server"
       isCorrect: true
       explanation: "Correct. To start monitoring a server again, the Health Agent needs to be uninstalled and reinstalled"

@@ -1,4 +1,4 @@
-As an IT admin for Contoso Corporation, you're frequently on-call to perform administrative tasks and resolve workload disruptions to resources in your organization's Azure subscriptions. When visiting a family member during a weekend that you're on call, you're notified by the development team that an Azure VM became non-responsive during scheduled maintenance for the upgrade of an application running on the VM. Because the developers haven't been granted access to the underlying Azure virtual machine hosting infrastructure, and are only able to remotely access the VM when it's operating normally, you're being called to diagnose and remediate the problem.
+As an IT admin for Contoso Corporation, you're frequently on-call to perform administrative tasks and resolve workload disruptions to resources in your organization's Azure subscriptions. When visiting a family member during a weekend that you're on call, the development team notifies you of a problem with an Azure virtual machine (VM). The VM became nonresponsive during scheduled maintenance for the upgrade of an application that runs on it. Because the developers weren't granted access to the underlying Azure virtual machine hosting infrastructure, they're only able to remotely access the VM when it's operating normally. So, you're being called to diagnose and remediate the problem.
 
 Since you're visiting family, you don’t have access to your administrative workstation and diagnostic scripts. You do have access to a laptop with an internet browser. Using the laptop, you browse to the Azure portal, authenticate against your organization’s Azure subscription, open Azure Cloud Shell, mount an Azure File Share, access your diagnostic scripts, and diagnose and remediate the problems with the VM, returning it to operation.
 
@@ -18,7 +18,7 @@ You have a few different options for accessing Azure Cloud Shell:
 
   :::image type="content" source="../media/access-cloud-shell-from-code-snippets.png" alt-text="A screenshot of Cloud Shell accessed from code snippets." lightbox="../media/access-cloud-shell-from-code-snippets.png":::
 
-When you open a Cloud Shell session, a temporary host is allocated to your session. This VM is pre-configured with the latest versions of PowerShell and Bash. You can then select the command-line experience you want to use:
+When you open a Cloud Shell session, a temporary host is allocated to your session. This VM is preconfigured with the latest versions of PowerShell and Bash. You can then select the command-line experience you want to use:
 
 :::image type="content" source="../media/select-cli-experience.png" alt-text="A screenshot of how to choose a command-line experience in a Cloud Shell session." lightbox="../media/select-cli-experience.png":::
 
@@ -26,7 +26,7 @@ After you select the shell experience you want to use, you can start managing yo
 
 :::image type="content" source="../media/manage-azure-resources-in-cloud-shell.png" alt-text="A screenshot of how to use Cloud Shell to manage Azure resources." lightbox="../media/manage-azure-resources-in-cloud-shell.png":::
 
-Cloud Shell sessions terminate after 20 minutes of inactivity. When a session terminates, files on your CloudDrive are persisted, but you’ll have to start a new session to access the Cloud Shell environment.
+Cloud Shell sessions terminate after 20 minutes of inactivity. When a session terminates, files on your CloudDrive are persisted, but you need to start a new session to access the Cloud Shell environment.
 
 ## Access your own scripts and files
 
@@ -50,7 +50,7 @@ code temp.txt
 
 ## Cloud Shell tools
 
-If you need to manage resources (such as Docker containers or Kubernetes Clusters) or want to use third-party tools (such as Ansible and Terraform) in Cloud Shell, the Cloud Shell session comes with these add-ons already pre-configured.
+If you need to manage resources (such as Docker containers or Kubernetes Clusters) or want to use non-Microsoft tools (such as Ansible and Terraform) in Cloud Shell, the Cloud Shell session comes with these add-ons already preconfigured.
 
 Here’s a list of all add-ons available to you within a Cloud Shell session:
 

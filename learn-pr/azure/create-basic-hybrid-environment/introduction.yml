@@ -3,13 +3,12 @@ uid: learn.create-basic-hybrid-environment.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
-  description: "This learn module will guide you through the creation of a basic hybrid environment.  This environment will be the basis for subsequent learn modules."
-  ms.date: 5/31/2022
+  title: Introduction
+  description: "This learn module guides you through the creation of a basic hybrid environment. Use this environment as the basis for subsequent learn modules."
+  ms.date: 05/28/2024
   author: billmath
   ms.author: billmath
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 60
 content: |
   [!include[](includes/introduction.md)]

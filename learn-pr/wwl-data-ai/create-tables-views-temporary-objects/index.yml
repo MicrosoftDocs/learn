@@ -2,22 +2,26 @@
 uid: learn.wwl.create-tables-views-temporary-objects
 metadata:
   title: Create tables, views, and temporary objects
-  description: "Create tables, views, and temporary objects"
-  ms.date: 04/12/2023
+  description: "This content is a part of Create tables, views, and temporary objects."
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sql
+  ai-usage: human-only
 title: Create tables, views, and temporary objects
 summary: Learn how to use Transact-SQL to create tables, views, and temporary objects for your databases.
 abstract: |
   After completing this module, you should be able to:
+
   - Create and query tables using Transact-SQL
+
   - Create and query views using Transact-SQL
+
   - Create queries using Common Table Expressions (CTE)
+
   - Write queries that use derived tables
-prerequisites: |
-  Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
+prerequisites: Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
 iconUrl: /training/achievements/create-tabels-views-objects.svg
 levels:
 - advanced

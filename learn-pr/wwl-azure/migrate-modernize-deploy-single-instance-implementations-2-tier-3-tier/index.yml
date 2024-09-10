@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier
+metadata:
+  title: Modernize and deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
+  description: 'This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: sap-on-azure
+title: Modernize and deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
+summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore deployment methodologies.
+  - Prepare Azure virtual machines for a manual installation of SAP HANA.
+  - Discover key steps for SAP HANA installation when you use SAP SWPM.
+  - Discover key steps for SAP HANA installation using HDBLCM.
+  - Implement SAP HANA scale-out.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.introduction
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.explore-deployment-methodologies
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.prepare-azure-virtual-machines-manual-installation-sap-hana
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.discover-key-steps-sap-hana-installation-sap-swpm
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.discover-key-steps-sap-hana-installation-use-sap-hana-lifecycle-management
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.implement-sap-hana-scale-out
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.knowledge-check
+- learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.summary
+badge:
+  uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.badge

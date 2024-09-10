@@ -4,11 +4,10 @@ title: What is sensitive information?
 metadata:
   title: What is sensitive information?
   description: What is a sensitive information?
-  ms.date: 03/25/2021
+  ms.date: 05/03/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-sensitive-information.md)]

@@ -1,13 +1,12 @@
-Aside from writing test functions, Pytest allows using classes. As we've already mentioned, there is no need for inheritance and the test classes follow a few simple rules. Using classes gives you more flexibility and reusability. As you will see next, Pytest keeps out of the way and avoids forcing you to write tests in a certain way. 
+In addition to writing test functions, Pytest allows you to use classes. As we already mentioned, there's no need for inheritance and the test classes follow a few simple rules. Using classes gives you more flexibility and reusability. As you see next, Pytest keeps out of the way and avoids forcing you to write tests in a certain way.
 
-Just like functions, you can still write assertions using the `assert` statement. 
+Just like functions, you can still write assertions using the `assert` statement.
 
 ## Build a test class
 
-Let's use a real-world scenario to see how test classes can help. The following function checks if a given file has a content of "yes" to return `True`. If the file doesn't exist or if it contains a "no", it returns `False`.
-This scenario is common in asynchronous tasks that use the filesystem to indicate completion.
+Let's use a real-world scenario to see how test classes can help. The following function checks if a given file contains "yes" in its content. If so, it returns `True`. If the file doesn't exist or if it contains "no" in its content, it returns `False`. This scenario is common in asynchronous tasks that use the filesystem to indicate completion.
 
-This is how the function looks:
+Here's how the function looks:
 
 ```python
 import os
@@ -23,7 +22,7 @@ def is_done(path):
         return False
 ```
 
-This is how a class with two tests (one for each condition) would look like in a file named _test_files.py_:
+Now, here's how a class with two tests (one for each condition) in a file named *test_files.py* looks:
 
 ```python
 class TestIsDone:
@@ -40,9 +39,9 @@ class TestIsDone:
 ```
 
 > [!CAUTION]
-> The test methods are using the _/tmp_ path for a temporary test file because it's easier to use for the example. However, if you need to use temporary files, consider using a library like `tempfile` that can create (and remove) them safely for you. Not every system has a _/tmp_ directory and that location might not be temporary depending on the operating system.
+> The test methods are using the */tmp* path for a temporary test file because it's easier to use for the example. However, if you need to use temporary files, consider using a library like `tempfile` that can create (and remove) them safely for you. Not every system has a */tmp* directory and that location might not be temporary depending on the operating system.
 
-Running the tests with the `-v` flag to increase verbosity shows the tests passing:
+Running the tests with the `-v` flag to increase verbosity shows the tests passing:  
 
 ```bash
 pytest -v test_files.py
@@ -58,22 +57,22 @@ test_files.py::TestIsDone::test_no PASSED                                [100%]
 ============================== 2 passed in 0.00s ===============================
 ```
 
-Although the tests are passing, they look somewhat repetitive and they are also leaving files after the test is done. Before we see how we can improve this, let's cover helper methods in the next section.
+Although the tests are passing, they look repetitive and they're also leaving files after the test is done. Before we see how we can improve them, let's cover helper methods in the next section.
 
 ## Helper methods
 
-In a test class, there are a few methods you can use to setup and teardown test execution. Pytest will execute them automatically if defined. To use these methods, you should know that they have a specific order and behavior.
+In a test class, there are a few methods you can use to setup and teardown test execution. Pytest executes them automatically if they're defined. To use these methods, you should know that they have a specific order and behavior.
 
 - `setup`: Executes once before each test in a class
 - `teardown`: Executes once after each test in a class
 - `setup_class`: Executes once before all tests in a class
 - `teardown_class`: Executes once after all tests in a class
 
-You'll find useful to write setup methods when tests are going to require similar (or identical) resources to work. Ideally, a test shouldn't leave resources when it completes, so teardown methods can help in test cleanup in those situations.
+When tests require similar (or identical) resources to work, it's useful to write setup methods. Ideally, a test shouldn't leave resources when it completes, so teardown methods can help in test cleanup in those situations.
 
 ### Cleanup
 
-Let's check an updated test class that cleans up the files after each test:
+Let's look at an updated test class that cleans up the files after each test:
 
 ```python
 class TestIsDone:
@@ -94,11 +93,11 @@ class TestIsDone:
 
 ```
 
-By using the `teardown()` method, this test class will no longer leave a _/tmp/test_file_ behind. 
+Because we used the `teardown()` method, this test class no longer leaves a */tmp/test_file* behind.
 
 ### Setup
 
-Another improvement that we can do to this class is adding a variable that points to the file. Since the file is now declared in six places, any changes to the path would mean changing it in all of those spots. This is how the class looks with an added `setup()` method that declares the path variable:
+Another improvement that we can make to this class is to add a variable that points to the file. Since the file is now declared in six places, any changes to the path would mean changing it in all of those spots. This example shows how the class looks with an added `setup()` method that declares the path variable:
 
 ```python
 class TestIsDone:
@@ -123,7 +122,7 @@ class TestIsDone:
 
 ### Custom helper methods
 
-You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and cannot be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate the creation of the temporary file in a custom helper. This is how that helper method could look:
+You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and can't be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate the creation of the temporary file in a custom helper. That custom helper method might look like this example:
 
 ```python
     def write_tmp_file(self, content):
@@ -131,9 +130,9 @@ You can create custom helper methods in a class. These methods must not be prefi
             _f.write(content)
 ```
 
-The `write_tmp_file()` method will not get automatically executed by Pytest and other methods can call it directly to save on repetitive tasks like writing to a file.
+Pytest doesn't automatically execute the `write_tmp_file()` method, and other methods can call it directly to save on repetitive tasks like writing to a file.
 
-This is how the whole class looks after updating the test methods to use the custom helper:
+The whole class looks like this example, after updating the test methods to use the custom helper:
 
 ```python
 class TestIsDone:
@@ -160,9 +159,9 @@ class TestIsDone:
 
 ## When to use a class instead of a function
 
-There aren't any strict rules as to when to use a class instead of a function. It's always a good idea to follow the conventions in current projects and teams you are working with, but here are some general ideas that you can use to determine when to use a class.
+There aren't any strict rules as to when to use a class instead of a function. It's always a good idea to follow the conventions in current projects and teams that you're working with. Here are some general questions to ask that can help you determine when to use a class:
 
-- When tests need a similar setup or cleanup
-- When grouping them makes logical sense
-- If there are at least a few tests
-- When tests can benefit from a common set of helpers
+- Do your tests need similar setup or cleanup helper code?
+- Does grouping your tests together make logical sense?
+- Are there at least a few tests in your test suite?
+- Could your tests benefit from a common set of helper functions?

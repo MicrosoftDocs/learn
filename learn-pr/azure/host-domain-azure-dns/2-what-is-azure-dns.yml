@@ -4,11 +4,10 @@ title: What is Azure DNS?
 metadata:
   title: What is Azure DNS?
   description: What is Azure DNS?
-  ms.date: 03/20/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-dns.md)]
@@ -19,13 +18,13 @@ quiz:
     choices:
     - content: Manage the security and access to your website.
       isCorrect: false
-      explanation: Azure DNS supports a robust security model. But Azure DNS primarily allows you to host your domain, and manage DNS zone records.
+      explanation: Azure DNS supports a robust security model, but Azure DNS primarily allows you to host your domain and manage DNS zone records.
     - content: Register new domain names, removing the need to use a domain registrar.
       isCorrect: false
-      explanation: Azure DNS isn't a domain registrar. It hosts your domain, and allows you to manage DNS zone records.
+      explanation: Azure DNS isn't a domain registrar. It hosts your domain and allows you to manage DNS zone records.
     - content: Manage and host your registered domain and associated records.
       isCorrect: true
-      explanation: Azure DNS allows you to host your registered domains. You can control and configure the domain records, like A, CNAME, MX, and setup alias records.
+      explanation: Azure DNS allows you to host your registered domains. You can control and configure the domain records, like A, CNAME, MX, and set up alias records.
   - content: What security features does Azure DNS provide?
     choices:
     - content: Role-based access control, activity logs, and resource locking
@@ -33,10 +32,10 @@ quiz:
       explanation: Azure DNS is built on Azure Resource Manager, which provides security across all resources in Azure DNS.
     - content: Role-based access control, activity logs, and Azure threat detection
       isCorrect: false
-      explanation: Azure DNS uses role-based access control and activity logs, but threat detection is handled by Azure Security Manager.
+      explanation: Azure DNS uses role-based access control and activity logs, but Azure Security Manager handles threat detection.
     - content: Role-based access control, activity logs, and Azure infrastructure security
       isCorrect: false
-      explanation: Azure DNS uses role-based access control and activity logs. But infrastructure security is handled by Azure Security Manager.
+      explanation: Azure DNS uses role-based access control and activity logs, but Azure Security Manager handles infrastructure security.
   - content: What type of DNS record should you create to map one or more IP addresses against a single domain?
     choices:
     - content: CNAME

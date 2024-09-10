@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-external-identities.implement-manager-entra-verified-id
-title: Implement and manage Entra Verified ID
+title: Implement and manage Microsoft Entra Verified ID
 metadata:
-  title: Implement and manage Entra Verified ID
-  description: "Implement and manage Entra Verified ID"
-  ms.date: 02/03/2023
+  title: Implement and manage Microsoft Entra Verified ID
+  description: "Implement and manage Microsoft Entra Verified ID"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/12-implement-manager-entra-verified-id.md)]

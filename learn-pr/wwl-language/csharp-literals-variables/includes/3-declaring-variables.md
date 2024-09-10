@@ -1,6 +1,5 @@
 
 
-
 A literal is *literally* a hard-coded value. Hard-coded values are values that are constant and unchanged throughout the execution of the program. However, most applications will require you to work with values that you don't know much about ahead of time. In other words, you'll need to work with data that comes from users, from files, or from across the network.
 
 When you need to work with data that isn't hard-coded, you'll declare a variable.

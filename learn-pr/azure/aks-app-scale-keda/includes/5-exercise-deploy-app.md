@@ -1,53 +1,55 @@
-In this exercise, you'll deploy your company's backend messaging service as a test app onto Azure Kubernetes Service (AKS). The service will connect to the Redis PaaS service created in the previous exercise.
+In this exercise, you'll deploy your company's back-end messaging service as a test app onto Azure Kubernetes Service (AKS). The service connects to the Redis PaaS service you created in the previous exercise.
 
 > [!NOTE]
-> The code for the service is available in this [GitHub repository](https://github.com/Azure-Samples/mslearn-aks-app-scaling-keda) if you want to explore the source code further.
+> The code for the service is available in the [GitHub repository](https://github.com/Azure-Samples/mslearn-aks-app-scaling-keda).
 
 ## Create a list in Redis
 
-We first need to create a list in Redis and populate it with some random elements.  What we are simulating here is a queue that is receiving data.  Each item in the queue represents something that our microservice will process.  For simplicity sake, we are adding a static number of items. As you will see later in the exercise, we scale the microservice to the number of items that are in the queue (Redis List).
+You need to create a list in Redis and populate it with some random elements to simulate a queue receiving data. Each item in the queue represents something that the microservice will process. For this exercise, you'll add a static number of items. Later in the exercise, you'll scale the microservice to the number of items in the queue.
 
-1. Create a Redis container locally to connect to the Azure Cache for Redis we created earlier:
+1. Make sure Docker is running on your computer.
 
-    ```azurecli
+1. Create a Redis container locally to connect to your Azure Cache for Redis using the `docker run` command:
+
+    ```azurecli-interactive
     docker run -it --rm redis redis-cli -h $REDIS_HOST -a $REDIS_KEY
     ```
 
-    You should see something similar to this:
+    Your output should look similar to the following example output:
 
     ```output
     redis-contoso-video.redis.cache.windows.net:6379>
     ```
 
-2. Create a list and some random items:
+1. Create a list and populate it with random elements using the `lpush keda` command:
 
-    ```azurecli
+    ```azurecli-interactive
     lpush keda Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget interdum felis, ac ultricies nulla. Fusce vehicula mattis laoreet. Quisque facilisis bibendum dui, at scelerisque nulla hendrerit sed. Sed rutrum augue arcu, id maximus felis sollicitudin eget. Curabitur non libero rhoncus, pellentesque orci a, tincidunt sapien. Suspendisse laoreet vulputate sagittis. Vivamus ac magna lacus. Etiam sagittis facilisis dictum. Phasellus faucibus sagittis libero, ac semper lorem commodo in. Quisque tortor lorem, sollicitudin non odio sit amet, finibus molestie eros. Proin aliquam laoreet eros, sed dapibus tortor euismod quis. Maecenas sed viverra sem, at porta sapien. Sed sollicitudin arcu leo, vitae elementum
     ```
 
-  3. You can now verify the length of the list by running the following command:
+1. Verify the length of the list using the `llen keda` command:
 
-      ```azurecli
-      llen keda
-      ```
+    ```azurecli-interactive
+    llen keda
+    ```
 
-4. To exit the Redis shell, just type `exit`.
+1. Exit the Redis shell by typing `exit`.
 
 ## Create a Deployment manifest
 
-You create a Deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
+You create a Deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and the details associated with the workload.
 
-Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's create a Deployment file.
+Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application.
 
-1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` by using the integrated editor.
+1. In Cloud Shell, create a manifest file for the Kubernetes Deployment called `deployment.yaml` using the `touch` command:
 
-    ```azurecli
+    ```azurecli-interactive
     touch deployment.yaml
     ```
 
 2. Open the integrated editor in Cloud Shell by entering `code .`
 
-3. Open the `deployment.yaml` file, and add the following code section of YAML.
+3. Open the `deployment.yaml` file and paste in the following manifest code. Make sure to replace the Redis environment variables with your own values.
 
     ```yaml
     apiVersion: apps/v1
@@ -55,11 +57,11 @@ Kubernetes groups containers into logical structures called pods, which have no 
     metadata:
       name: contoso-microservice
     spec:
-      replicas: 1                   # Here we are telling K8S the number of containers to process the Redis list items
+      replicas: 1                   # Tells K8S the number of containers to process the Redis list items
       selector:                     # Define the wrapping strategy
         matchLabels:                # Match all pods with the defined labels
           app: contoso-microservice # Labels follow the `name: value` template
-      template:                     # This is the template of the pod inside the Deployment
+      template:                     # Template of the pod inside the Deployment
         metadata:
           labels:
             app: contoso-microservice
@@ -85,45 +87,42 @@ Kubernetes groups containers into logical structures called pods, which have no 
                   value: "******************************************"  # *** REPLACE with your value ***
     ```
 
-    > [!NOTE]
-    > The env (environment) values should be updated with the values that you have kept track of from your Redis instance.
-
-4. Save the manifest file and close the editor.
+4. Save the manifest file (<kbd>CTRL + S</kbd>) and close the editor(<kbd>CTRL + Q</kbd>).
 
 ## Apply the manifest
 
-1. In Cloud Shell, run the `kubectl apply` command to submit the Deployment manifest to your cluster.
+1. Deploy the manifest to your cluster using the `kubectl apply` command:
 
-    ```azurecli
+    ```azurecli-interactive
     kubectl apply -f ./deployment.yaml
     ```
 
-    The command should output a result similar to the following example.
+    Your output should look similar to the following example output:
 
     ```output
     deployment.apps/contoso-microservice created
     ```
 
-2. Run the `kubectl get deployments` command to check if the Deployment was successful.
+2. Verify the deployment was successful using the `kubectl get deployment` command:
 
-    ```azurecli
-    kubectl get deploy contoso-microservice
+    ```azurecli-interactive
+    kubectl get deployment contoso-microservice
     ```
 
-    The command should output a table similar to the following example.
+    Your output should look similar to the following example output:
 
     ```output
     NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
-    contoso-microservice   0/1     1            0           16s
+    contoso-microservice   1/1     1            0           16s
     ```
 
-3. Run the `kubectl get pods` command to check if the pod is running.
+3. Verify the pod is running using the `kubectl get pods` command:
 
-    ```azurecli
+    ```azurecli-interactive
     kubectl get pods
     ```
 
-    The command should output a table similar to the following example.
+    Your output should look similar to the following example output:
 
     ```output
     NAME                                    READY   STATUS    RESTARTS   AGE

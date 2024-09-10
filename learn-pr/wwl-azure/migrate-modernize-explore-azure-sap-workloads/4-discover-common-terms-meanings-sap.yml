@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads.discover-common-terms-meanings-sap
+title: 'Discover common terms and meanings: SAP'
+metadata:
+  title: 'Discover common terms and meanings: SAP'
+  description: "Discover common terms and meanings: SAP"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-discover-common-terms-meanings-sap.md)]

@@ -3,11 +3,10 @@ uid: learn.load-balance-web-traffic-with-application-gateway.4-create-configure-
 metadata:
   title: Application Gateway creation and configuration
   description: Describe how to create and configure Application Gateway
-  ms.date: 05/02/2019
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 title: Application Gateway creation and configuration
 durationInMinutes: 10
 content: |

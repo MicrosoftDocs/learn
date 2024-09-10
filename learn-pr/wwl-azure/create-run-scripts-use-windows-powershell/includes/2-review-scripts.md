@@ -12,3 +12,4 @@ Reporting is one complex and repetitive task that you can do with Windows PowerS
 Scripts can also use constructs such as **ForEach**, **If**, and **Switch**, which are seldom used in a single command. You can use these constructs to process objects and make decisions in your scripts.
 
 Windows PowerShell scripts have a .ps1 file extension. The most basic scripts are simply Windows PowerShell commands listed in a text file that's been saved with the .ps1 file extension. While the Windows PowerShell Integrated Scripting Environment (ISE) and Microsoft Visual Studio Code have better features, you can edit Windows PowerShell scripts by using a simple text editor such as Notepad.
+
