@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/05/2024
   author: yoosunee
   ms.author: andreapark
-  ms.topic: unit
-  
+  mstopic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-understand-machine-learning.md)]
