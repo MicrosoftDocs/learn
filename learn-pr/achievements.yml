@@ -3892,3 +3892,8 @@ achievements:
   title: Enhance IoT solution security by using Microsoft Defender for IoT
   summary: You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
   iconUrl: /training/achievements/azure-defender-security-solution.svg
+- uid: learn.wwl.examine-security-fundamentals-for-iot.badge
+  type: badge
+  title: Examine security fundamentals for IoT
+  summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
+  iconUrl: /learn/achievements/iot-security-fundamentals.svg
