@@ -20,5 +20,5 @@ Now that you’ve completed this module, you should be able to:
 - [Learn about sensitivity labels](/purview/sensitivity-labels)
 - [Learn about data loss prevention](/purview/dlp-learn-about-dlp)
 - [Learn about insider risk management](/purview/insider-risk-management)
-- [Help dynamically mitigate risks with adaptive protection](/insider-risk-management-adaptive-protection)
+- [Help dynamically mitigate risks with adaptive protection](/purview/insider-risk-management-adaptive-protection)
 - [Learn about Adaptive Protection in Data Loss Prevention](/purview/dlp-adaptive-protection-learn)
