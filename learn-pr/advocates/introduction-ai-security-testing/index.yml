@@ -7,7 +7,9 @@ metadata:
   title: Introduction to AI security testing
   description: Introduction to AI security testing
   ms.topic: module
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
   ms.service: artificial-intelligence
 title: Introduction to AI security testing
 summary: Overview of the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.

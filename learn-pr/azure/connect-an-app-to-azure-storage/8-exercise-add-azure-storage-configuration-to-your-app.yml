@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add Azure Storage configuration to your app
   description: Exercise - Add Azure Storage configuration to your app
   ms.date: 09/19/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
