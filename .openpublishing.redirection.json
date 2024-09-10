@@ -32318,6 +32318,11 @@
       "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/enhance-iot-solution-security-by-using-azure-defender/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
