@@ -13,7 +13,7 @@ metadata:
   ms.subservice: azure-ai-face
   ai-usage: human-only
 title: Fundamentals of Facial Recognition
-summary: Face detection, analysis, and recognition are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service in Azure makes it easy integrate these capabilities into your applications.
+summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
 abstract: Learn how to use Azure AI Face service to detect and analyze faces in images.
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /learn/achievements/detect-analyze-faces.svg

@@ -6,9 +6,9 @@ Microsoft Azure provides multiple Azure AI services that you can use to detect a
 
 Of these, Face offers the widest range of facial analysis capabilities. 
 
-## Face service
+## Azure AI Face service
 
-The Azure Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of related attributes: 
+The Azure AI Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of related attributes: 
 
 - **Accessories**: indicates whether the given face has accessories. This attribute returns possible accessories including headwear, glasses, and mask, with confidence score between zero and one for each accessory.
 - **Blur**: how blurred the face is, which can be an indication of how likely the face is to be the main focus of the image.
@@ -34,7 +34,7 @@ Anyone can use the Face service to:
 The Limited Access policy requires customers to [submit an intake form](https://aka.ms/facerecognition) to access additional Azure AI Face service capabilities including:
 * Face verification: the ability to compare faces for similarity.
 * Face identification: the ability to identify named individuals in an image. 
-* Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of code of conduct policies.
+* Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of policies (eg. such as if the input video stream is real or fake).
 
 ## Azure resources for Face
 
