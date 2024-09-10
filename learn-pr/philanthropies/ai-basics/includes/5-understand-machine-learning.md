@@ -1,5 +1,3 @@
-# Understand machine learning
-
 Machine learning involves feeding large amounts of data into an algorithm, which then processes this data to find patterns and relationships.
 
 For example, if you provide an AI model with data about your past vacuuming habits and the layout of your home, the model that results could be used to program a robot vacuum to sweep your carpet in a similar pattern to you. Now imagine many of these robots were sold, transmitting all their vacuuming data back to the developer. Using machine learning to detect patterns could discover even more efficient movement patterns and optimize paths for all robot vacuums with the same design.

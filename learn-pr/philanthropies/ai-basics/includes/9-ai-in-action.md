@@ -1,5 +1,3 @@
-# AI in action
-
 Now that you have a solid understanding of what AI is, the importance of data, machine learning, deep learning, and natural language processing, and how algorithms form the backbone of AI, it's time to see this technology in action.
 
 In this video, you'll witness how AI is integrated into everyday items and services. You'll be introduced to practical applications of AI and understand how it seamlessly operates in the background to enhance your daily life. From smart home devices that learn your preferences to AI-powered services that make your interactions more efficient, this video showcases the impact of AI on our daily routines.

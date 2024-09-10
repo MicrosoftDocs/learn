@@ -1,5 +1,3 @@
-# AI history
-
 To appreciate advancements like smart home devices, it's helpful to be aware of the history of AI. From its beginnings with the simple rule-based systems of the 1950s, to the advanced algorithms of today, AI evolved continuously and significantly.
 
 This video reveals how AI concepts and breakthroughs paved the way for the intelligent devices and applications we rely on daily. By exploring AI's past, we gain insight into how it evolved to become an integral part of our modern world, impacting everything from our homes to our workplace.

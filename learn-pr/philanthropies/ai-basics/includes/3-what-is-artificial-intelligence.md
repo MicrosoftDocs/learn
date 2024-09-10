@@ -1,5 +1,3 @@
-# What is artificial intelligence?
-
 Smart home devices, combined with the rise of useful tools like OpenAI's ChatGPT and Microsoft CopilotAI turned AI into a popular conversation topic. You now see AI isn't new; it's been part of our lives for years. At times, AI might seem like a new transformative force, but the evolution of AI spans decades. Along the way, it became more intertwined in our everyday lives. At its core, AI is the capability of a computer system to mimic human cognitive functions such as learning and problem solving. By using math and logic, AI systems can simulate human reasoning, make predictions, and take actions based on patterns in existing data.
 
 In the first video, you'll discover what AI is and how it was first explored back in the 1950s.

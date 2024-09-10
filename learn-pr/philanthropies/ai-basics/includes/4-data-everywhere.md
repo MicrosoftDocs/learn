@@ -1,5 +1,3 @@
-# Data everywhere
-
 Thinking back to household smart devices, you might wonder: How does a streaming app know what to recommend to you? How does my robot cleaner know where to clean? Well, data plays a crucial role. These devices rely on data to operate efficiently. Data is collected to make your experience more personalized and automated.
 
 Data is information that is collected, stored, and used for various purposes. It can come in many forms, such as text, images, and numbers. AI utilizes data for learning and reasoning. For example, when you consistently watch shows of the same genre on a streaming app, this data helps the AI model determine what to recommend to you next.

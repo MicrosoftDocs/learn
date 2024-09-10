@@ -1,5 +1,3 @@
-# Natural Language Processing
-
 Natural Language Processing, or NLP, is a branch of AI that focuses on the interaction between computers and humans through natural language. NLP uses machine learning to understand, interpret, and generate human language as text and speech.
 
 NLP enables applications that include text analysis, question answering, conversational language, speech recognition, and speech synthesis.
