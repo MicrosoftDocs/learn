@@ -62,6 +62,12 @@ Microsoft Defender for Office 365 functionality can be found under the Email & c
 - Attack simulation training - Access and build user resilience using simulated attacks and training.
 - Policies & rules - Configure security policies for email and other Microsoft 365 workspaces.
 
+# [Explorer](#tab/explorer)
 :::image type="content" source="../media/defender-office-explorer.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Explorer page in the Microsoft Defender portal.":::
 
-Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+# [Review](#tab/review)
+:::image type="content" source="../media/defender-office-review.png" lightbox="../media/defender-office-explorer.png" alt-text="A screenshot of the Explorer page in the Microsoft Defender portal.":::
+
+---
+
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. More information is covered in the unit, "Describe the Microsoft Defender portal," included in this module.
