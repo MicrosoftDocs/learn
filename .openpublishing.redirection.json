@@ -32353,6 +32353,11 @@
       "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/6-knowledge-check.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/2-security-recommendations-for-azure-iot-deployments.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
