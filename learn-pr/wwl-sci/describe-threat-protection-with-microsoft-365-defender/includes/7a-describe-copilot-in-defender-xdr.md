@@ -3,7 +3,7 @@ Microsoft Defender XDR integrates with Microsoft Copilot for Security. Integrati
 
 ### The standalone experience
 
-For businesses that are onboarded to Microsoft Copilot for Security, the integration is enabled through plugins accessed through the Copilot portal (the standalone experience). There are two separate plugins that support integration with Copilot for Security:
+For businesses that are onboarded to Microsoft Copilot for Security, the integration is enabled through plugins accessed through the Copilot portal (the standalone experience). There are two separate plugins that support integration with Microsoft Defender XDR:
 
 - Microsoft Defender XDR
 - Natural language to KQL for Microsoft Defender XDR
