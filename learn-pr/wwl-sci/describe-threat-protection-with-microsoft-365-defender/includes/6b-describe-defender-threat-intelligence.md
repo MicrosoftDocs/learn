@@ -64,7 +64,7 @@ To view a screen capture from each of the categories, select the tab from the im
 
 ---
 
-### Integration with Microsoft Copilot for Security
+### Microsoft Copilot for Security integration with Microsoft Threat Intelligence
 
 Copilot for Security integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
