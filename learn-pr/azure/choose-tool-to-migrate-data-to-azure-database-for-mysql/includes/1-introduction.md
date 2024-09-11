@@ -2,7 +2,7 @@
 
 ## Example scenario
 
-Suppose you work at an e-commerce startup, Wingtip Toys. You evaluated a cloud migration and chose to migrate to Azure Database for MySQL - Flexible Server. You also selected configuration settings and tested your application with the new database. It's time to migrate the database from your on-premises MySQL server to an Azure Database for MySQL flexible server.
+Suppose that you work at an e-commerce startup, Wingtip Toys. You evaluated a cloud migration and chose to migrate to Azure Database for MySQL - Flexible Server. You also selected configuration settings and tested your application with the new database. It's time to migrate the database from your on-premises MySQL server to an Azure Database for MySQL flexible server.
 
 Wingtip Toys will launch a holiday marketing campaign next quarter, so it's vital to complete the database migration before then. The team is familiar with managing a MySQL server but has never migrated a database to the cloud.
 

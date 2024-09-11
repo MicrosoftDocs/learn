@@ -1,4 +1,4 @@
-Contoso Camping Store provides customers with the ability to speak with an AI-powered customer support agent and post product reviews. We could use an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
+Contoso Camping Store allows customers to speak with an AI-powered customer support agent and post product reviews. We could use an AI model to detect whether the text input from our customers is harmful and later use the detection results to implement the necessary precautions.
 
 ## Safe content
 
@@ -37,4 +37,4 @@ We can’t anticipate that all text content from our customers would be free of 
 
 1. Run the cell.
 
-The **Severity level** for **Violence** is **2**. Should we block such content? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There may be no ill-intent in submitting this question and therefore, it may be a better choice not to block such content. As the developer, consider various scenarios where such content may be OK.
+The **Severity level** for **Violence** is **4**. Should we block such content? Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent in hopes of receiving guidance on how to clean the cooker. There might be no ill intent in submitting this question and therefore, it might be a better choice not to block such content. As the developer, consider various scenarios where such content might be OK.
