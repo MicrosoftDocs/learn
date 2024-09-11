@@ -1,4 +1,4 @@
-The union operator takes two or more tables and returns the rows of all of them.  Understanding how results are passed and impacted with the pipe character is essential.
+The union operator takes two or more tables and returns the rows of all of them. Understanding how results are passed and impacted with the pipe character is essential.
 
 Based on the time window set in the Query window:
 
