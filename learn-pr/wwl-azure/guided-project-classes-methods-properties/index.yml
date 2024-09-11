@@ -3,17 +3,18 @@ uid: learn.wwl.guided-project-classes-methods-properties
 metadata:
   title: 'Guided project: Implement, classes, methods, and properties'
   description: "This lesson describes building the LangtonsAnt project using classes and methods."
-  ms.date: 03/18/2024
+  ms.date: 09/11/2024
   author: wwlpublish
-  ms.author: gregorfisher
+  ms.author: cahowd
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: dotnet-csharp
   ai-usage: ai-assisted
-title: 'Guided project: Implement, classes, methods, and properties'
+title: 'Guided project: Implement classes with properties and methods'
 summary: |
   This module guides you through the steps required to begin building the LangtonsAnts demonstration. It sets up the application and then begins adding the classes, methods, and properties the application requires.
+
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
   After completing this module, you will be able to:
