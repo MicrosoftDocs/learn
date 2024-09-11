@@ -5,17 +5,3 @@ Suppose that whenever you try to add a new ant to the game, the screen freezes a
 While waiting for I/O-bound operations to complete, the system resources used by the current thread are released for other code to use. User interface (UI) updates run in a single thread. Moving compute-bound operations to another thread can improve the application's UI experience. Using asynchronous I/O for I/O-bound operations can prevent UI freezes and make the application more responsive.
 
 The concept of threads and their implementation has existed for a while. Programmers consider using and managing threads as a "low-level" or advanced subject. However, Microsoft has made it easier to use and manage threads through their implementation, which utilizes a higher level concept called a Task. In C#, a Task is an object that represents code to be executed asynchronously.
-
-## Learning objectives
-
-In this module, you'll learn how to:
-
-- Implement asynchronous programming in C# to create a new Task and prevent UI freezes during calculations.
-- Implement asynchronous IO operations using the `async` and `await` keywords in C# to make file IO operations asynchronous and prevent UI freezes.
-
-## Prerequisites
-
-- Installation of Visual Studio Code configured for C# application development, including C# Dev Kit.
-- Experience with the VS Code editor.
-- Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
-- Experience with basic C# syntax rules.

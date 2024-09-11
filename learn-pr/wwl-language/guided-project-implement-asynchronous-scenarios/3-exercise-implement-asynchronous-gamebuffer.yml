@@ -4,9 +4,9 @@ title: Implement an Asynchronous GameBuffer
 metadata:
   title: Implement an Asynchronous GameBuffer
   description: "The purpose of this lesson is to learn how to implement an asynchronous GameBuffer in C#."
-  ms.date: 01/29/2024
+  ms.date: 09/11/2024
   author: wwlpublish
-  ms.author: gregorfisher
+  ms.author: cahowd
   ms.topic: unit
 durationInMinutes: 3
 content: |

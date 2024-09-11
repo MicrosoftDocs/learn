@@ -1,27 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-implement-asynchronous-scenarios
 metadata:
-  title: 'Guided project: Implement asynchronous scenarios'
+  title: 'Guided project: Implement asynchronous programming scenarios'
   description: "This module introduces the learner to Tasks and the concept of asynchronous programming."
-  ms.date: 01/29/2024
+  ms.date: 09/11/2024
   author: wwlpublish
-  ms.author: gregorfisher
-  ms.topic: module-intro-to-product
-  ms.service: dotnet
+  ms.author: cahowd
+  ms.topic: module-guided-project
   ms.devlang: csharp
-title: 'Guided project: Implement asynchronous scenarios'
-summary: |
-  This module guides you through the basics of using asynchronous programming techniques in your Langton's Ants application.  You learn about Tasks and how to use the `async` and `await` keywords to make a method asynchronous.
-  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+  ai-usage: ai-assisted
+title: 'Guided project: Implement asynchronous programming scenarios'
+summary: This module guides you through the basics of using asynchronous programming techniques in your Langton's Ants application. You learn about Tasks and how to use the `async` and `await` keywords to make a method asynchronous.
 abstract: |
   After completing this module, you will be able to:
-  - Use a boolean flag for starting a thread.
-  - Put the calculation of a new ant in a new thread using a Task.
+
+  -   Use a boolean flag for starting a thread.
+
+  -   Put the calculation of a new ant in a new thread using a Task.
 prerequisites: |
-  - Installation of VS Code configured for C# application development, including C# Dev Kit.
-  - Experience with the VS Code editor.
-  - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
-  - Experience with basic C# syntax rules.
+  -   Installation of VS Code configured for C# application development, including C# Dev Kit.
+
+  -   Experience with the VS Code editor.
+
+  -   Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+
+  -   Experience with basic C# syntax rules.
 iconUrl: /training/achievements/generic-badge.svg
 hidden: true
 levels:
