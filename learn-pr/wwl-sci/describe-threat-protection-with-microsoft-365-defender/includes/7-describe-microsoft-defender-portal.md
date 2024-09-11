@@ -71,13 +71,15 @@ The investigation and response tab includes access to incidents and alerts, hunt
 
 An incident in the Microsoft Defender portal is a collection of related alerts, assets, investigations, and evidence to give you a comprehensive look into the entire breadth of an attack. It serves as a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it. Because the Microsoft Defender portal is built upon a unified security operations platform, you get a view of all incidents including incidents generated from the suite of Microsoft Defender XDR solutions, Microsoft Sentinel, and other solutions.
 
-Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan. If your organization is onboarded Microsoft to Copilot for Security you can also view an incident summary, guided responses, and more.
+Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan. The information provided for an incident includes:
 
 - The full story of the attack, including all the alerts, assets, and remediation actions taken.
 - All the alerts related to the incident.
 - All the assets (devices, users, mailboxes, and apps) that have been identified to be part of or related to the incident.
 - All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
+
+If your organization is onboarded Microsoft to Copilot for Security you can also view an incident summary, guided responses, and more.
 
 # [Incidents](#tab/incidents)
 :::image type="content" source="../media/incidents.png" lightbox="../media/incidents.png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
@@ -97,7 +99,7 @@ You can use the same threat hunting queries to build custom detection rules. The
 
 #### Actions and submissions
 
-The unified Action center brings together remediation actions across Microsoft Defender for Endpoint and Microsoft Defender for Office 365. It lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location
+The unified Action center brings together remediation actions across Microsoft Defender for Endpoint and Microsoft Defender for Office 365. It lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis.
 

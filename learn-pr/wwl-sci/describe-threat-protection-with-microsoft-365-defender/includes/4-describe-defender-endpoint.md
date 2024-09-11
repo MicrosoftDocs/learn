@@ -30,21 +30,21 @@ Microsoft Defender for Endpoints is experienced through the Microsoft Defender p
 
 The Endpoints node on the left navigation panel of the Microsoft Defender portal includes the following:
 
-- Vulnerability management - Manage vulnerabilities and other risk sources on devices.
+- Vulnerability management - Manage vulnerabilities and other risk sources on devices. From here you can access the vulnerability management dashboard, recommendations, remediation, weaknesses, and more. More details on Microsoft Defender Vulnerability Management are in a subsequent unit of this module.
 - Partners and APIs - From here you can select Connected applications and API explorer.
   - Connected applications - The Connected applications page provides information about the Microsoft Entra applications (SaaS applications that are preintegrated with Microsoft Entra ID) connected to Microsoft Defender for Endpoint in your organization. 
-  - API Explorer - Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs enable you to automate workflows and innovate based on Defender for Endpoint capabilities. The Microsoft Defender for Endpoint API Explorer is a tool that helps you explore various Defender for Endpoint APIs interactively.
+  - API Explorer - Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs enable you to automate workflows and innovate based on Defender for Endpoint capabilities. The Microsoft Defender for Endpoint API Explorer is a tool that helps you explore various Defender for Endpoint APIs interactively. You can use the API explorer to test Microsoft Defender for Endpoint capabilities by running sample queries or creating and testing your own API query.
 - Configuration management - Define endpoint policies and track deployment.
 
 # [Vulnerability management dashboard](#tab/vulnerability-management-dashboard)
-:::image type="content" source="../media/vulnerability-management-dashboard.png" lightbox="../media/vulnerability-management-dashboard.png" alt-text="A screenshot of the vulnerability dashboard page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/vulnerability-management-dashboard-v2.png" lightbox="../media/vulnerability-management-dashboard-v2.png" alt-text="A screenshot of the vulnerability dashboard page in the Microsoft Defender portal.":::
 
 # [API explorer](#tab/api-explorer)
-:::image type="content" source="../media/api-explorer.png" lightbox="../media/api-explorer.png" alt-text="A screenshot of the API explorer page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/api-explorer-v2.png" lightbox="../media/api-explorer-v2.png" alt-text="A screenshot of the API explorer page in the Microsoft Defender portal.":::
 
 # [Configuration management dashboard](#tab/configuration-management-dashboard)
-:::image type="content" source="../media/configuration-management-dashboard.png" lightbox="../media/configuration-management-dashboard.png" alt-text="A screenshot of the configuration management dashboard page in the Microsoft Defender portal.":::
+:::image type="content" source="../media/configuration-management-dashboard-v2.png" lightbox="../media/configuration-management-dashboard-v2.png" alt-text="A screenshot of the configuration management dashboard page in the Microsoft Defender portal.":::
 
 ---
 
-Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. More information is covered in the unit, "Describe the Microsoft Defender portal," included in this module.
