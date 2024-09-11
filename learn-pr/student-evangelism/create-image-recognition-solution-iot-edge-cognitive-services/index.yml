@@ -1,4 +1,5 @@
 ### YamlMime:Module
+# Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
   title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
@@ -9,7 +10,9 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
-  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
 summary: "Create a computer vision solution on the IoT Edge using Azure AI services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
 abstract: |

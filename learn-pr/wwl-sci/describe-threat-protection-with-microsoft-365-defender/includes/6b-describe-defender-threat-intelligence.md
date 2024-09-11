@@ -62,7 +62,9 @@ To view a screen capture from each of the categories, select the tab from the im
 # [Projects](#tab/projects)
 :::image type="content" source="../media/projects.png" lightbox="../media/projects.png" alt-text="A screenshot of the projects page in threat intelligence.":::
 
-### Integration with Microsoft Copilot for Security
+---
+
+### Microsoft Copilot for Security integration with Microsoft Threat Intelligence
 
 Copilot for Security integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
@@ -75,7 +77,7 @@ Copilot also includes a builtin promptbook that deliver information from Defende
 - Vulnerability impact assessment - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - Threat actor profile - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
 
-With the plugin enabled, Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Copilot for Security's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
+Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Copilot for Security's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
 
 - Threat analytics
 - Intel profiles

@@ -7,7 +7,9 @@ metadata:
   title: Introduction to chat completion
   description: Learn how to use chat completions via the Azure AI Studio playground.
   ms.topic: module
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
   ms.service: azure-ai-studio
 title: Introduction to chat completion
 summary: "This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground."

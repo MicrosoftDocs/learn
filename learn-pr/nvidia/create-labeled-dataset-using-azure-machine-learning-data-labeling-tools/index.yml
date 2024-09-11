@@ -9,7 +9,9 @@ metadata:
   ms.custom: team=cloud_advocates
   ms.topic: module
   ms.service: azure-machine-learning 
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Create a labeled dataset using Azure Machine Learning data labeling tools
 summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
 abstract: |
