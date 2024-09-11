@@ -7,6 +7,6 @@ Congratulations! You're now ready to deploy your app to a variety of environment
 ## Learn more
 
 - [`dotnet publish` command](/dotnet/core/tools/dotnet-publish)
-- [ASP.NET Core Module (ANCM) for IIS](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-8.0)
-- [Deploy ASP.NET Core apps to Azure App Service](/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-8.0)
-- [Run an ASP.NET Core app in Docker containers](/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-8.0)
+- [ASP.NET Core Module (ANCM) for IIS](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-8.0&preserve-view=true)
+- [Deploy ASP.NET Core apps to Azure App Service](/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-8.0&preserve-view=true)
+- [Run an ASP.NET Core app in Docker containers](/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-8.0&preserve-view=true)
