@@ -4,9 +4,9 @@ title: Connect telemetry data
 metadata:
   title: Connect telemetry data
   description: Learn how telemetry data plays a role in an Azure Digital Twin experience.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
 durationInMinutes: 3
 content: |
