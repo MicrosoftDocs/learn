@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/10/2024
+  ms.date: 09/11/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "To execute code that must run regardless of whether an exception is thrown or not."
       isCorrect: false
-      explanation: "Incorrect. A Catch block does not guarantee that your code will continue to run, only that it will handle an error gracefully."
+      explanation: "Incorrect. A Catch block doesn't guarantee that your code continues to run, only that it handles an error gracefully."
     - content: "To define a block of code that executes if an exception is thrown in the `try` block."
       isCorrect: false
       explanation: "Incorrect. Exceptions are thrown in the Catch block, not in the Try block."
