@@ -1,4 +1,4 @@
-You can use **Azure AI Translator** with a programming language of your choice or the REST API.  
+You can use **Azure AI Translator** with a programming language of your choice or the REST API. You can use some of its features with Language Studio. 
 
 You can get started with **Azure AI Speech** with Speech Studio or a programming language of your choice or the REST API.  
 
@@ -12,7 +12,7 @@ Alternatively, you can create an **Azure AI services** resource that provides ac
 
 ## Using Azure AI Translator
 
-Azure AI Translator includes the following APIs:
+Azure AI Translator includes the following capabilities:
 
 - **Text translation** - used for quick and accurate text translation in real time across all supported languages.
 - **Document translation** - used to translate multiple documents across all supported languages while preserving original document structure.  
@@ -25,7 +25,7 @@ Azure AI Translator's application programming interface (API) offers some option
 
 ## Speech translation with Azure AI Speech
 
-Azure AI Speech includes the following features:
+Azure AI Speech includes the following capabilities:
 
 - **Speech to text** - used to transcribe speech from an audio source to text format.
 - **Text to speech** - used to generate spoken audio from a text source.
