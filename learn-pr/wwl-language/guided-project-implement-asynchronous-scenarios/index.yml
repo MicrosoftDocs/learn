@@ -3,10 +3,12 @@ uid: learn.wwl.guided-project-implement-asynchronous-scenarios
 metadata:
   title: 'Guided project: Implement asynchronous programming scenarios'
   description: "This module introduces the learner to Tasks and the concept of asynchronous programming."
-  ms.date: 09/11/2024
+  ms.date: 09/12/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-guided-project
+  ms.service: dotnet-csharp
+  ms.subservice: async-task-programming
   ms.devlang: csharp
   ai-usage: ai-assisted
 title: 'Guided project: Implement asynchronous programming scenarios'
