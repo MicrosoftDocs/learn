@@ -6,7 +6,7 @@ metadata:
   description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 11/10/2023
+  ms.date: 09/12/2024
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -33,29 +33,29 @@ quiz:
     - content: "Generates instant bug fixes."
       isCorrect: false
       explanation: "Incorrect. While GitHub Copilot can suggest fixes, the quality and applicability of those fixes are heavily dependent on the quality of the prompts given by the user."
-    - content: "Enhances code suggestions quality."
+    - content: "Enhances the quality of code suggestions."
       isCorrect: true
       explanation: "Correct. The clarity and specificity of prompts play a crucial role in enhancing the quality of code suggestions provided by GitHub Copilot."
     - content: "Automates the coding process entirely."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot doesn't automate the entire coding process; it aids in code writing through suggestions, which are influenced by the user's prompts."
+      explanation: "Incorrect. GitHub Copilot doesn't automate the entire coding process; it aids in code writing through suggestions, influenced by the user's prompts."
     - content: "Implements real-time collaboration."
       isCorrect: false
       explanation: "Incorrect. Prompting in GitHub Copilot isn't related to real-time collaboration but to the user's communication with the AI to receive relevant code suggestions."
-  - content: "Which of the following is a principle of the 4 S's of prompt engineering?"
+  - content: "Which of the following rules is a principle of the **4S Method** of prompt engineering?"
     choices:
     - content: "Summarize code objectives concisely." 
       isCorrect: false
-      explanation: "Incorrect. While conciseness is encouraged, 'Summarize' isn't one of the 4 S's principles of prompt engineering."
+      explanation: "Incorrect. While conciseness is encouraged, 'Summarize' isn't one of the 4S Method principles of prompt engineering."
     - content: "Specify instructions explicitly and in detail."
       isCorrect: true
-      explanation: "Correct. The principle of being 'Specific' is one of the 4 S's, emphasizing clear and detailed instructions."
+      explanation: "Correct. The principle of being 'Specific' is one of the 4S Method principles, emphasizing clear and detailed instructions."
     - content: "Streamline processes for efficient code suggestions."
       isCorrect: false
-      explanation: "Incorrect. 'Streamline' isn't a term associated with the 4 S's principles."
+      explanation: "Incorrect. 'Streamline' isn't a term associated with the 4S Method principles."
     - content: "Simplify coding languages for universal understanding."
       isCorrect: false
-      explanation: "Incorrect. The 4 S's don't include simplifying coding languages. The 4 S's are about making the prompts single, specific, short, and surrounded by context."
+      explanation: "Incorrect. The 4S Method doesn't include simplifying coding languages. The 4S Method principles are about making the prompts single, specific, short, and surrounded by context."
   - content: "How does GitHub Copilot handle personal data?"
     choices:
     - content: "It saves all personal data for future references." 
@@ -63,14 +63,14 @@ quiz:
       explanation: "Incorrect. GitHub Copilot actively filters out personal data to ensure user privacy and data security."
     - content: "It shares personal data with other users for collaborative projects."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot doesn't share personal data; it's designed to respect user privacy."
+      explanation: "Incorrect. GitHub Copilot is designed to respect user privacy and doesn't share personal data."
     - content: "It encrypts personal data."
       isCorrect: false
       explanation: "Incorrect. It doesn't encrypt personal data, but rather, it avoids processing or storing it."
     - content: "It actively filters out personal data to protect user privacy."
       isCorrect: true
       explanation: "Correct. GitHub Copilot is designed to actively filter out personal data to safeguard user privacy and data security."
-  - content: "What is LoRA in the context of LLMs fine-tuning?"
+  - content: "What is **LoRA** in the context of fine-tuning Large Language Models (LLMs)?"
     choices:
     - content: "A method that adds trainable elements to each layer of the pretrained model without a complete overhaul." 
       isCorrect: true
@@ -98,7 +98,7 @@ quiz:
     - content: "It randomly selects context from the internet."
       isCorrect: false
       explanation: "Incorrect. Copilot's suggestions are based on the specific context provided, not random selections from the internet."
-  - content: "Which of the following helps to improve prompt effectiveness in GitHub Copilot?"
+  - content: "Which of these strategies helps to improve prompt effectiveness in GitHub Copilot?"
     choices:
     - content: "Providing detailed contextual information with clarity." 
       isCorrect: true
