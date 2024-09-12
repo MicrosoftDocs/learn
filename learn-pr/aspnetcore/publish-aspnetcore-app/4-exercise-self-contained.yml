@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.publish-aspnetcore-app.exercise-self-contained
-
 title: Exercise - Publish for self-contained deployment
 metadata:
   title: Exercise - Publish for self-contained deployment

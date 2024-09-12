@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.publish-aspnetcore-app.exercise-framework-dependent
-
 title: Exercise - Publish for framework-dependent deployment
 metadata:
   title: Exercise - Publish for framework-dependent deployment
