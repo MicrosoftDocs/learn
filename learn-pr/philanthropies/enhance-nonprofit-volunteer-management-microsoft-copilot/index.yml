@@ -7,11 +7,10 @@ metadata:
   ms.author: cohodge
   ms.date: 08/27/2024
   ms.service: artificial-intelligence
-  ai-usage: ai-assisted
   ms.topic: module-standard-task-based
   ms.collection:
-    - TBD
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
+  ai-usage: ai-assisted
 title: Enhance nonprofit volunteer management with Microsoft Copilot
 summary: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. 
 abstract: |

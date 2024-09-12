@@ -3,7 +3,7 @@ uid: learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-sc
 metadata:
   title: Azure Backup features and scenarios
   description: Learn how Azure Backup works, and some of the supported use cases for it.
-  ms.date: 10/10/2023
+  ms.date: 09/05/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
