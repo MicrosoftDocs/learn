@@ -5,4 +5,4 @@ You're a Security Operations Analyst working at a company that is implementing M
 The KQL summarize operator performs the calculations. To quickly see a pattern, an analyst can visualize the results in a graph. The KQL render operator performs the visualization. Combining the summarize and render operators provides the foundation for advanced visualizations, including time bucketing and time slicing.
 
 >[!TIP]
->You can test the following KQL query examples in the [LA Demo site](https://ms.portal.azure.com/#view/Microsoft_OperationsManagementSuite_Workspace/LogsDemo.ReactView/). If you recieve the message "No results found", try changing the time range.
+>You can test the following KQL query examples in the [LA Demo site](https://ms.portal.azure.com/#view/Microsoft_OperationsManagementSuite_Workspace/LogsDemo.ReactView/). If you receive the message "No results found", try changing the time range.
