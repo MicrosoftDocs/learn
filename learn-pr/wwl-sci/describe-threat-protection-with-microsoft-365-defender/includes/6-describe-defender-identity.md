@@ -69,4 +69,4 @@ The Identities node on the left navigation panel of the Microsoft Defender porta
 
 ---
 
-Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. More information is covered in the unit, "Describe the Microsoft Defender portal," included in this module.
