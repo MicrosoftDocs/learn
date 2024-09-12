@@ -33,6 +33,30 @@ You can use Microsoft Purview eDiscovery to identify, review, and manage content
 - SharePoint
 - Viva Engage
 
+### eDiscovery workflow
+
+The eDiscovery workflow helps you more quickly identify, investigate, and take action on electronic stored information (ESI) in your organization. Identifying and taking action on ESI items with eDiscovery (preview) uses the following workflow:
+
+:::image type="content" source="../media/ediscovery-workflow.png" lightbox="../media/ediscovery-workflow.png" alt-text="A diagram showing the eDiscovery workflow.":::
+
+**Step 1: Escalate from trigger event**: Trigger events are activities that are escalated in your organization and prompt the creation of a new case in eDiscovery (preview).
+
+**Step 2: Create and manage case**: A case in eDiscovery (preview) contains all searches, holds, and review sets related to a specific investigation.
+
+**Step 3: Search, evaluate results, and refine**: After you create a case, use the built-in search tools in eDiscovery (preview) to search the content locations in your organization.
+
+**Step 4a: Actions include**:
+  - Export search results
+  - Create review sets from the search results: A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, and analyze.
+  - Create holds: You can create holds to preserve content that might be relevant to an eDiscovery case.
+
+**Step 5: Review and take action from review sets**: There are many different actions you can take. Some of the actions include:
+  - Run analytics: eDiscovery provides integrated analytics tool that helps you further cull data from the review set that you determine isn't relevant to the investigation. 
+  - Tag items - When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags.
+  - Export items - After you search for and find data that's relevant to your investigation, you can export it out of your Microsoft 365 organization for review by people outside of the investigation team.
+
+### eDiscovery features and capabilities
+
 The list that follows describes some of the capabilities available with eDiscovery. For a complete listing, refer to the features and capabilities section of the article titled, "Learn about eDiscovery (preview)" linked in the summary and resources unit of this module.
 
 - **Search for content**: Search for content that's stored in Exchange mailboxes, OneDrive accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Viva Engage Teams. You can also use keyword queries and search conditions.
@@ -40,7 +64,7 @@ The list that follows describes some of the capabilities available with eDiscove
 - **Export search results**: Export search results to a local computer in your organization. When you export search results, items are copied from their original content location and packaged. Then you can download those items in the export package to a local computer.
 - **Place content locations on hold**: Preserve content relevant to your investigation by placing a hold on the content locations in a case. Holds let you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
 - **Review sets** (premium feature) -  A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models. You can also track and report on what content gets added to the review set.
-- **Advanced indexing** (premium feature) - When a search, review set, or export process is run, the associated content locations where items are partially indexed are reindexed in a process called Advanced indexing. Advanced indexing ensures any content deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
+
 - **Optical character recognition (OCR)** (premium feature) - When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 - **Conversation threading** (premium feature) - When chat messages from Teams and Viva Engage conversations are added to a review set, you can collect the entire conversation thread. The entire chat conversation that contains items that match the search criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
 - **Analytics** (premium feature) - eDiscovery allows you to analyze review set documents to help you organize the documents in a coherent manner and reduce the volume of documents to be reviewed. Near duplicate detection groups textually similar documents together to help you make your review process more efficient. Email threading identifies specific email messages that give a complete context of the conversation in an email thread. Themes functionality attempts to analyze themes in review set documents and assign a theme to documents so that you can review documents with related theme. These analytics capabilities help make your review process more efficient so that reviewers can review a fraction of collected documents.
