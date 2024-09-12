@@ -4,7 +4,7 @@ Your IT department has notified your team that for disaster recovery purposes, t
 
 In this exercise, you'll publish an ASP.NET Core app as self-contained deployments for Windows and Linux.
 
-## Create another ASP.NET Core app
+## Publish as a self-contained deployment
 
 1. In the terminal window, set your location to the *MyWebApp* directory. At the end of the previous exercise, you were in *MyWebApp/publish-fd*. You need to go back to the *MyWebApp* directory.
 
