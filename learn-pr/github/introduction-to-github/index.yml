@@ -11,12 +11,12 @@ metadata:
 title: "Introduction to GitHub"
 summary: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
 abstract: |
-  In this module, you will:
-  -	Identify the fundamental features of GitHub
-  -	Learn about repository management
-  -	Gain an understanding of the GitHub flow, including branches, commits, and pull requests
-  -	Explore the collaborative features of GitHub by reviewing issues and discussions
-  -	Recognize how to manage your GitHub notifications and subscriptions
+  In this module, you'll:
+  -	Identify the fundamental features of GitHub.
+  -	Learn about repository management.
+  -	Gain an understanding of the GitHub flow, which includes branches, commits, and pull requests.
+  -	Explore the collaborative features of GitHub by reviewing issues and discussions.
+  -	Recognize how to manage your GitHub notifications and subscriptions.
 prerequisites: |
   - A GitHub account
 iconUrl: /training/achievements/github/introduction-to-github.svg

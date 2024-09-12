@@ -19,10 +19,10 @@ quiz:
     - content: "Send an email to a project owner."
       isCorrect: false
       explanation: "Emails don't benefit from the issue-management infrastructure provided by GitHub."
-    - content: "I don't bother reporting software bugs because there's no transparency and they never get fixed anyway."
+    - content: "I don't bother reporting software bugs because there's no transparency, and they never get fixed anyway."
       isCorrect: false
       explanation: "GitHub provides great infrastructure for reporting, managing, and tracking bugs as issues. As a result, it's easy for the project's community to offer a resolution one way or another."
-    - content: "Search for the bug in the project's existing issues and create a new one if it hasn't been reported yet."
+    - content: "Search for the bug in the project's existing issues, and create a new one if it hasn't been reported yet."
       isCorrect: true
       explanation: "A project's issues are visible to anyone who has access to the project, so you might find a resolution is already planned or available. Otherwise, you can create and track the issue yourself."
   - content: "Suppose you created a bug fix on a new branch and want it to become part of the next production build generated from the `main` branch. What should you do next?"
