@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is a true of framework-dependent deployments?"
+  - content: "Which of the following is true of framework-dependent deployments?"
     choices:
     - content: "The app is published with the .NET runtime."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "The source code is included in the published app."
       isCorrect: false
       explanation: "Incorrect. The source code isn't included in the published app."
-  - content: "Which of the following is a true of self-contained deployments?"
+  - content: "Which of the following is true of self-contained deployments?"
     choices:
     - content: "The app is published with the .NET runtime."
       isCorrect: true
