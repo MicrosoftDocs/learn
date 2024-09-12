@@ -22,6 +22,3 @@ You learned how to:
 ## Learn more with reference architectures
 
 - [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
-
-> [!NOTE]
-> This module contains AI-generated content.
