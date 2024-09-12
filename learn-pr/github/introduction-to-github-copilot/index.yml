@@ -5,7 +5,7 @@ metadata:
   description: GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 12/5/2023
+  ms.date: 09/12/2024
   ms.service: github-copilot
   ms.topic: module
   ms.collection:
