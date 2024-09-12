@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "What's GitHub Copilot?"
     choices:
-    - content: "A platform for code repository."
+    - content: "A platform for code repositories."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot isn't a platform for hosting code repositories; that's what GitHub itself does. Copilot is an AI-powered code completion tool."
     - content: "A model powered by machine learning."
@@ -30,16 +30,16 @@ quiz:
       explanation: "Incorrect. GitHub Copilot isn't a web hosting service. It's an AI-powered tool for assisting with code writing."
   - content: "What role does prompting play in utilizing GitHub Copilot effectively?"
     choices:
-    - content: "Generates instant bug fixes."
+    - content: "It generates instant bug fixes."
       isCorrect: false
       explanation: "Incorrect. While GitHub Copilot can suggest fixes, the quality and applicability of those fixes are heavily dependent on the quality of the prompts given by the user."
-    - content: "Enhances the quality of code suggestions."
+    - content: "It enhances the quality of code suggestions."
       isCorrect: true
       explanation: "Correct. The clarity and specificity of prompts play a crucial role in enhancing the quality of code suggestions provided by GitHub Copilot."
-    - content: "Automates the coding process entirely."
+    - content: "It automates the coding process entirely."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot doesn't automate the entire coding process; it aids in code writing through suggestions, influenced by the user's prompts."
-    - content: "Implements real-time collaboration."
+    - content: "It implements real-time collaboration."
       isCorrect: false
       explanation: "Incorrect. Prompting in GitHub Copilot isn't related to real-time collaboration but to the user's communication with the AI to receive relevant code suggestions."
   - content: "Which of the following rules is a principle of the **4S Method** of prompt engineering?"
