@@ -1,9 +1,6 @@
-You've learned how to:
+In this module, you have learned strategies and solutions for securing privileged access, as part of an overall enterprise access model. The model emphasizes the importance of protecting business value stored in the Data/Workload plane, which includes business processes and intellectual property. The module also covers identity governance solutions including Privileged Identity Management (PIM), Privileged Access Management (PAM), Entitlement Management, and Access Reviews. It further discusses secure tenant administration from two perspectives: Azure tenant administration with Azure Lighthouse and principles for Microsoft 365 tenant administration. Lastly, the module delves into Permissions Management, a cloud infrastructure entitlement management (CIEM) solution that offers extensive visibility into permissions assigned to all identities across multicloud infrastructures.
 
-- Understand privileged access and the Enterprise Access Model
-- Design identity governance solutions
-- Design a solution for securing administration of cloud tenants
-- Design for cloud infrastructure entitlement management
+The main takeaways from this module include the understanding of the enterprise access model and its importance in protecting business value. You've also learned about various identity governance solutions and their roles in managing and controlling access to important resources within an organization. The module has provided insights into secure tenant administration, highlighting the benefits of Azure Lighthouse and the principles of Microsoft 365 tenant administration. Additionally, you've gained knowledge on Permissions Management and its role in managing access permissions across multicloud infrastructures. The module also emphasized the importance of secure workstations for all users, particularly administrators or sensitive accounts.
 
 ## Learn more with security documentation
 
@@ -21,5 +18,3 @@ You've learned how to:
 - [Multitenant SaaS on Azure - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/multi-saas/multitenant-saas)
 - [Improved-security access to multitenant web apps from an on-premises network - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/security/access-multitenant-web-app-from-on-premises)
 
-> [!NOTE]
-> This module contains AI-generated content.
