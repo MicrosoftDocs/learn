@@ -43,7 +43,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. In the **Create a resource** menu, select **Web**.
 
-1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** resource pane appears.
+1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -106,7 +106,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. In the **Create a resource** menu, select **Web**.
 
-1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** resource pane appears.
+1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
