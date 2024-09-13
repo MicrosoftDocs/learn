@@ -32,13 +32,13 @@ Productivity is accelerated with automation that the GitHub Enterprise Platform 
 
 GitHub focuses on integrating security directly into the development process from the start. GitHub Enterprise platform includes native, first-party security features that minimize security risk with a built-in security solution. Plus, your code remains private within your organization. At the same time, you're able to take advantage of security overview and Dependabot.
 
-GitHub has continued to make investments to ensure that our features are enterprise-ready. We’re backed by Microsoft, trusted by highly regulated industries, and meet compliance requirements globally.
+GitHub has continued to make investments to ensure that our features are enterprise-ready. Microsoft and highly regulated industries trust GitHub, and we meet global compliance requirements.
 
 ### Scale
 
 GitHub is the largest developer community of its kind with real-time data on over 100M+ developers, 330M+ repositories, and countless deployments. We’ve been able to understand the shifting needs of developers and make changes to our product to match.
 
-This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Everyday we are gaining more and more insights from this impressive community and evolving the platform to meet their needs.
+This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Everyday we're gaining more insights from this impressive community and evolving the platform to meet their needs.
 
 In essence, the GitHub Enterprise Platform focuses on the developer experience. It has the scale to provide industry-changing insights, collaboration capabilities for transformative efficiency, the tools for increased productivity, security at every step, and AI to power it all to new heights in a single, integrated platform.
 
@@ -56,7 +56,7 @@ Let’s first review:
 
 ### What is a repository?
 
-A repository contains all of your project's files and each file's revision history. It's one of the essential parts that helps you collaborate with people. You can use repositories to manage your work, track changes, store revision history and work with others. Before we dive too deep, let’s first start with how to create a repository.
+A repository contains all of your project's files and each file's revision history. It's one of the essential parts that helps you collaborate with people. You can use repositories to manage your work, track changes, store revision history, and work with others. Before we dive too deep, let’s first start with how to create a repository.
 
 ### How to create a repository
 
@@ -88,7 +88,7 @@ Next up, let’s review how to add files to your repository.
 
 ### How to add a file to your repository
 
-Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. It's worth knowing in order to add a file to a repository, you must first have minimum **Write** access within the repository you want to add a file.
+Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. It's worth knowing in order to add a file to a repository that you must first have minimum **Write** access within the repository you want to add a file.
 
 Let’s review how to add a file to your repository.
 
@@ -118,13 +118,13 @@ Let’s review how to add a file to your repository.
 
 Congratulations, you just created a new file in your repository! You have also created a new branch and made a commit.
 
-Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they are similar to repositories.
+Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they're similar to repositories.
 
 ### What are gists
 
 Now that we have a good understanding of repositories, we can review gists. Similarly to repositories, gists are a simplified way to share code snippets with others.
 
-Every gist is a Git repository, which you can fork and clone and be made either public or secret. Public gists are displayed publicly where people can browse new ones as they’re created. Public gists are also searchable. Conversely, secret gists are not searchable, but they aren’t entirely private. If you send the URL of a secret gist to a friend, they'll be able to see it.
+Every gist is a Git repository, which you can fork and clone and be made either public or secret. Public gists are displayed publicly where people can browse new ones as they’re created. Public gists are also searchable. Conversely, secret gists aren't searchable, but they aren’t entirely private. If you send the URL of a secret gist to a friend, they'll be able to see it.
 
 To learn more about gists, see the linked article in our Resources section at the end of this module titled *Creating Gists*.
 
