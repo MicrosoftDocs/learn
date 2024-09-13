@@ -30,7 +30,7 @@ The following outlines the command syntax:
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
-### `MyWebApp.csproj`
+### The `MyWebApp.csproj` project file
 
 The `<project name>.csproj` project file is used by MSBuild to:
  
@@ -39,7 +39,7 @@ The `<project name>.csproj` project file is used by MSBuild to:
 * Configure which version of .NET to use during the build.
 * Package the app for deployment.
 
-### `obj` folder
+### The `obj` folder
 
 The `obj` folder contains intermediate files that are used by the build system, including compiled object files generated from the source files. The final build output is placed in a `bin` folder created during the build process.
 
@@ -51,7 +51,7 @@ The `launchSettings.json` file contains the following:
 
 [!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
 
-### Program.cs
+### The `Program.cs` file
 
 The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
