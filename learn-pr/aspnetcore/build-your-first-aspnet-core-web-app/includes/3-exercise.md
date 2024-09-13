@@ -43,7 +43,7 @@ The `<project name>.csproj` project file is used by MSBuild to:
 
 The `obj` folder contains intermediate files that are used by the build system, including compiled object files generated from the source files. The final build output is placed in a `bin` folder created during the build process.
 
-### `Properties/launchSettings.json`
+### The `Properties/launchSettings.json` file
 
 The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:<port>`, where `<port>` is a random local port number assigned when the project is created.
 
