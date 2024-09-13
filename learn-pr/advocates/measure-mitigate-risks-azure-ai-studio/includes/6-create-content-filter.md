@@ -6,7 +6,7 @@ So far, the model has generated responses to neutral input. You should also test
 
 Given the harmful nature of this input, it’s best that we block such input altogether rather than have the model generate a product recommendation. To do so, we need to create a custom content filter.
 
-Azure OpenAI model deployments use the default content filter which sets all harmful content severity threshold levels to medium. As such, any input or output categorized with a medium severity level is both blocked and annotated. The content filtering system is powered by [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/overview), and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content.
+Azure OpenAI model deployments use the default content filter which sets all harmful content severity threshold levels to medium. As such, any input or output categorized with a medium severity level is both blocked and annotated. The content filtering system is powered by [Azure AI Content Safety](/azure/ai-services/content-safety/overview), and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content.
 
 Alternatively, you could also create your own custom content filter for Azure OpenAI model deployments.
 
