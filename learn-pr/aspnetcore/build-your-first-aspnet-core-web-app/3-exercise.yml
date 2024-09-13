@@ -2,7 +2,7 @@
 uid: learn.build-your-first-aspnet-core-web-app.exercise
 title: Create an ASP.NET Core web app project from a template using the .NET CLI
 metadata:
-  title: exercise
+  title: Exercise
   description: Create, build and run your first build your first ASP.NET Core web app
   ms.date: 9/9/2024
   author: wadepickett
