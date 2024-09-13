@@ -2,13 +2,13 @@ You want to ensure that the backup and restore jobs you put in place offer a way
 
 VMs that are hosted on Azure can take advantage of Azure Backup. You can easily back up and restore machines without installing extra software.
 
-In this unit, you'll explore all the methods of backing up Azure VMs provided by Azure Backup and make a decision on which to implement.
+In this unit, you explore all the methods of backing up Azure VMs provided by Azure Backup and make a decision on which to implement.
 
 **Azure VMs** are backed up by taking snapshots of the underlying disks at user-defined intervals and transferring those snapshots to the Recovery Services vault as per the customer-defined policy.
 
 ## Recovery Services vault
 
-Azure Backup uses a Recovery Services vault to manage and store the backup data. A vault is a storage-management entity, which provides a simple experience to carry out and monitor backup and restore operations. With Azure Backup, you don't need to worry about deploying or managing storage accounts. In fact, all you need to specify is the vault you want to back up the VM to. The backup data is transferred to the Azure Backup storage accounts (in a separate fault domain) in the background. The vault also acts as an RBAC boundary to allow secure access to the data.
+Azure Backup uses a Recovery Services vault to manage and store the backup data. A vault is a storage-management entity, which provides a simple experience to carry out and monitor backup and restore operations. With Azure Backup, you don't need to worry about deploying or managing storage accounts. In fact, all you need to specify is the vault that you want to back up the virtual machine (VM) to. The backup data is transferred to the Azure Backup storage accounts (in a separate fault domain) in the background. The vault also acts as a role-based access control boundary to allow secure access to the data.
 
 ![Screenshot that highlights the Recovery Services vaults that are available in context to the resources they're protecting.](../media/3-recovery-vault-in-context.png)
 
@@ -18,8 +18,8 @@ A snapshot is a point-in-time backup of all disks on the VM. For Azure VMs, Azur
 
 | Extension | OS | Description |
 |---|---|---|
-| VMSnapshot | Windows | The extension works with Volume Shadow Copy Service (VSS) to take a copy of the data on disk and in memory. |
-| VMSnapshotLinux | Linux | The snapshot is a copy of the disk. |
+| VM Snapshot | Windows | The extension works with Volume Shadow Copy Service (VSS) to take a copy of the data on disk and in memory. |
+| VM SnapshotLinux | Linux | The snapshot is a copy of the disk. |
 
 Depending on how the snapshot is taken and what it includes, you can achieve different levels of consistency:
 
@@ -36,11 +36,11 @@ Depending on how the snapshot is taken and what it includes, you can achieve dif
 
 ## Backup policy
 
-You can define the backup frequency and retention duration for your backups. Currently, the VM backup can be triggered daily or weekly, and can be stored for multiple years. The backup policy supports two access tiers: snapshot tier and the vault tier. By using the Enhanced policy, you can trigger hourly backups.
+You can define the backup frequency and retention duration for your backups. Currently, the VM backup can be triggered daily or weekly, and can be stored for multiple years. The backup policy supports two access tiers: *snapshot tier* and the *vault tier*. By using the Enhanced policy, you can trigger hourly backups.
 
-**Selective disk backup**:  Azure Backup provides **Selective Disk backup and restore** capability using **Enhanced policy**. By using this capability, you can selectively back up a subset of the data disks that are attached to your VM, and then restore a subset of the disks that are available in a recovery point, both from instant restore and vault tier. It helps you manage critical data in a subset of the VM disks and use database backup solutions when you want to back up only their OS disk to reduce cost.
+**Selective disk backup**: Azure Backup provides **Selective Disk backup and restore** capability using **Enhanced policy**. By using this capability, you can selectively back up a subset of the data disks that are attached to your VM. Then, you can restore a subset of the disks that are available in a recovery point, both from instant restore and vault tier. It helps you manage critical data in a subset of the VM disks and use database backup solutions when you want to back up only their OS disk to reduce cost.
 
-**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days. This is referred to as the snapshot tier. For all types of operation recoveries, we recommended that you restore from the snapshots because it's faster to do so. This capability is called **instant restore**.
+**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days, in what is called the snapshot tier. For all types of operation recoveries, we recommended that you restore from the snapshots because it's faster to do so. This capability is called **instant restore**.
 
 **Vault tier**: All snapshots are additionally transferred to the vault for more security and longer retention. At this point, the recovery point type changes to "snapshot and vault."
 
@@ -52,10 +52,10 @@ Here's how Azure Backup completes a backup for Azure VMs:
 
 2. During the first backup, a backup extension is installed on the VM, if the VM is running:
 
-   - For Windows VMs, the VMSnapshot extension is installed.
-   - For Linux VMs, the VMSnapshotLinux extension is installed.
+   - For Windows VMs, the VM Snapshot extension is installed.
+   - For Linux VMs, the VM SnapshotLinux extension is installed.
 
-3. After the snapshot is taken, it's stored locally as well transferred to the vault.
+3. After the snapshot is taken, the data is stored locally and transferred to the vault.
 
    - The backup is optimized by backing up each VM disk in parallel.
    - For each disk that's being backed up, Azure Backup reads the blocks on the disk and identifies and transfers only the data blocks that changed (the delta) since the previous backup.
