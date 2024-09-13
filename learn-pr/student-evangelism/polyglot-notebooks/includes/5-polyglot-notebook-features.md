@@ -31,14 +31,14 @@ When you want to output data from a cell, you have a few different techniques yo
 
 - **Display command**: To further improve the output, you can use a display helper. When you call the `display`function, it provides a more appealing output. Other benefits of using display helper include:
 
-    1. You can call it repeatedly. You can, for example, call `Display()` using either of the following code snippets, and each output is shown:
+    - You can call it repeatedly. You can, for example, call `Display()` using either of the following code snippets, and each output is shown:
 
     ```csharp
     (1+1).Display();
     name.Display();
     ```
 
-    1. It reacts to updates. You can assign the result of calling `display` to a reference, and by calling `Update`, the result updates in the cell's output like so:
+    - It reacts to updates. You can assign the result of calling `display` to a reference, and by calling `Update`, the result updates in the cell's output like so:
 
     ```csharp
     var displayRef =  "initial value".Display(); 
