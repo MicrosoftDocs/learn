@@ -2,13 +2,7 @@ This exercise checks your knowledge of GitHub key features, including committing
 
 ## Getting started
 
-When you select the **Start the exercise on GitHub** button below, you'll be navigated to a public GitHub template repository that prompts you to complete a series of small challenges. Before you can begin the exercise, complete the following tasks:
-
-- Select the **Start course** button or the **Use this template** feature within the template repository. This prompts you to create a new repository. We recommend creating a public repository, because private repositories will use Actions minutes.
-
-- After you make your own repository from the template, wait about 20 seconds and refresh.
-
-- Follow the instructions in the repository's README file to understand how the exercise works, its learning objectives, and how to successfully complete the exercise.
+When you select the **Start the exercise on GitHub** button below, you'll be navigated to a public GitHub template repository that prompts you to complete a series of small challenges.
 
 When you've finished the exercise in GitHub, return here for:
 
