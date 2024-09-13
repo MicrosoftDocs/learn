@@ -9,7 +9,7 @@ In this exercise, you will:
 
 From a terminal or the command line, navigate to the directory where you want to create the new project.
 
-Create an ASP.NET Core web app in a directory called *MyWebApp* by running the .NET CLI command `dotnet new`:
+Create an ASP.NET Core web app in a directory named *MyWebApp* by running the .NET CLI command `dotnet new`:
 
 ```dotnetcli
 dotnet new web -o MyWebApp
@@ -36,16 +36,18 @@ The `<project name>.csproj` project file is used by MSBuild to:
  
 * Build and manage the project
 * Manage dependencies
-* Determine which version of .NET to use during the build.
+* Configure which version of .NET to use during the build.
 * Package the app for deployment.
 
 ### `obj` folder
 
-The `obj` folder contains intermediate files that are used by the build system, including compiled object files generated from the source files. The final build output is placed in a bin folder created during the build process.
+The `obj` folder contains intermediate files that are used by the build system, including compiled object files generated from the source files. The final build output is placed in a `bin` folder created during the build process.
 
-### `Properties/launchappsettings.json`
+### `Properties/launchSettings.json`
 
-The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the applicationUrl property, which specifies the root URL the app uses, such as `https://localhost:<port>`, where `<port>` is a random local port number assigned when the project is created.
+The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:<port>`, where `<port>` is a random local port number assigned when the project is created.
+
+The `launchSettings.json` file contains the following:
 
 [!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
 
@@ -54,7 +56,7 @@ The `Properties/launchSettings.json` file contains configuration data for how th
 The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
 * Environment configuration: Sets up environment-specific settings for development, staging, and production.
-* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services like Blazor (interactive web UIs in C#), SignalR (real-time web functionality), and gRPC (high-performance RPC communication).
+* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services such as Blazor (interactive web UIs in C#), SignalR (real-time web functionality), or gRPC (high-performance RPC communication), to name a few.
 * Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware components.
 * Host configuration: Configures the host, including setting up the web server.
 
@@ -129,15 +131,9 @@ Press Ctrl+C at the commandline to shut down the app.
 ### How the web app is served
 
 When the `dotnet run --launch-profile https` command is run in the terminal, the following steps occur:
-1. The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the project file `MyWebApp.csproj` and compiles the source code into an assembly.
-1. The app reads configuration settings, including those specified in `launchSettings.json` for the HTTPS profile.
-1. The `CreateHostBuilder` method in `Program.cs` sets up the web host. By default, the `WebHostBuilder` configures Kestrel as the web server. Kestrel is a cross-platform web server for ASP.NET Core that’s designed for high performance.
-1. Kestrel starts listening for incoming HTTP requests on the configured URLs, including HTTPS if specified.
-
-When the `dotnet run --launch-profile https` command is run in the terminal, the following steps occur:
 
 Build and Configuration:
-* The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the project file `MyWebApp.csproj` and compiles the source code into an assembly.
+* The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the `MyWebApp.csproj` project file and compiles the source code into an assembly.
 * The app reads configuration settings, including those specified in `launchSettings`.json` for the HTTPS profile.
 
 Host Setup:

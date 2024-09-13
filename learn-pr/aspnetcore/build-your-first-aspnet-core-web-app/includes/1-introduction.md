@@ -9,10 +9,10 @@ In this module, you will:
 - Review ASP.NET Core default project templates available in the .NET SDK.
 - Create an ASP.NET Core web app project from a template using the .NET CLI (Command Line Interface).
 - Examine the structure of the created project.
-- Run your web app locally and view it in a browser using HTTPS.
+- Run your web app locally in a development environment and view it in a browser using HTTPS.
 - Review how the web app is served.
 
-At the end of this module, there are links to content providing deeper dives for ASP.NET web apps.
+At the end of this module, there are links to content providing deeper dives for ASP.NET web aplication development.
 
 ## Required tools
 

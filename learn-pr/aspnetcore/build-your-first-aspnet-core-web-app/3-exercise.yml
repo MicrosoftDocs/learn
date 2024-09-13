@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-your-first-aspnet-core-web-app.exercise
-title: Enter exercise title
+title: Create an ASP.NET Core web app project from a template using the .NET CLI
 metadata:
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Create, build and run your first build your first ASP.NET Core web app
   ms.date: 9/9/2024
   author: wadepickett
   ms.author: wpickett
