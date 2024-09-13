@@ -1,7 +1,11 @@
 
 Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. 
 
-eDiscovery is one of the solutions available through the Microsoft Purview portal, under the Risk & Compliance set of solutions. To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions.
+eDiscovery is one of the solutions available through the Microsoft Purview portal, under the Risk & Compliance set of solutions. 
+
+The Microsoft Purview portal presents a unified UI experience for eDiscovery. If you previously worked with eDiscovery through the Microsoft Purview compliance portal, a key difference is that you'll no longer experience a different UI for eDiscovery (Standard) and eDiscovery (Premium). Instead, you have one consistent UI and depending on the licensing and subscriptions for your organization, you can further manage cases and analyze content using premium eDiscovery features.
+
+To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions.
 
 # [Microsoft Purview portal](#tab/purview-portal)
 :::image type="content" source="../media/purview-portal-risk-compliance.png" lightbox="../media/purview-portal-risk-compliance.png" alt-text="A screen capture of the Microsoft Purview portal that highlights eDiscovery in the risk and compliance set of solutions.":::
@@ -13,16 +17,6 @@ eDiscovery is one of the solutions available through the Microsoft Purview porta
 
 > [!IMPORTANT]
 > eDiscovery can be accessed through the Microsoft Purview compliance portal, but the Microsoft Purview compliance portal is scheduled for retirement by the end of 2024. Unless otherwise stated, information in this unit refers to eDiscovery functionality available through the Microsoft Purview portal.
-
-The Microsoft Purview portal presents a unified UI experience for eDiscovery. If you previously worked with eDiscovery through the Microsoft Purview compliance portal, a key difference is that you'll no longer experience a different UI for eDiscovery (Standard) and eDiscovery (Premium). Instead, you have one consistent UI and depending on the licensing and subscriptions for your organization, you can further manage cases and analyze content using premium eDiscovery features. For example, the images that follow show the UI for an eDiscovery case and how the Review Sets feature is displayed with and without premium features. 
-
-# [Standard features](#tab/standard-features)
-:::image type="content" source="../media/ediscovery-standard.png" lightbox="../media/ediscovery-standard.png" alt-text="A screenshot of a case with standard features. Review sets are listed in the UI but not enabled.":::
-
-# [Premium features](#tab/premium-features)
-:::image type="content" source="../media/ediscovery-premium.png" lightbox="../media/ediscovery-premium.png" alt-text="A screenshot of a case with premium features. Review sets are listed in the UI and enabled.":::
-
----
 
 You can use Microsoft Purview eDiscovery to identify, review, and manage content in Microsoft 365 services to support your investigations. Supported Microsoft 365 services include:
 
@@ -57,17 +51,14 @@ The eDiscovery workflow helps you more quickly identify, investigate, and take a
 
 ### eDiscovery features and capabilities
 
-The list that follows describes some of the capabilities available with eDiscovery. For a complete listing, refer to the features and capabilities section of the article titled, "Learn about eDiscovery (preview)" linked in the summary and resources unit of this module.
+The list that follows is a small subset of the capabilities available with eDiscovery. For a complete listing, refer to the features and capabilities section of the article titled, "Learn about eDiscovery (preview)" linked in the summary and resources unit of this module.
 
-- **Search for content**: Search for content that's stored in Exchange mailboxes, OneDrive accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Viva Engage Teams. You can also use keyword queries and search conditions.
-- **Search statistics and samples**: After you run a search, you can view statistics of the estimated search results, such as the number and total size of items matching your search criteria. You can also view a representative sample of the items included in the search results.
+- **Search for content**: Search for content that's stored in Exchange mailboxes, OneDrive accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Viva Engage Teams.
 - **Export search results**: Export search results to a local computer in your organization. When you export search results, items are copied from their original content location and packaged. Then you can download those items in the export package to a local computer.
 - **Place content locations on hold**: Preserve content relevant to your investigation by placing a hold on the content locations in a case. Holds let you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
-- **Review sets** (premium feature) -  A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models. You can also track and report on what content gets added to the review set.
-
+- **Review sets** (premium feature) -  A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models.
 - **Optical character recognition (OCR)** (premium feature) - When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
-- **Conversation threading** (premium feature) - When chat messages from Teams and Viva Engage conversations are added to a review set, you can collect the entire conversation thread. The entire chat conversation that contains items that match the search criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
-- **Analytics** (premium feature) - eDiscovery allows you to analyze review set documents to help you organize the documents in a coherent manner and reduce the volume of documents to be reviewed. Near duplicate detection groups textually similar documents together to help you make your review process more efficient. Email threading identifies specific email messages that give a complete context of the conversation in an email thread. Themes functionality attempts to analyze themes in review set documents and assign a theme to documents so that you can review documents with related theme. These analytics capabilities help make your review process more efficient so that reviewers can review a fraction of collected documents.
+- **Conversation threading** (premium feature) - When chat messages from Teams and Viva Engage conversations are added to a review set, you can collect the entire conversation thread. This lets you review chat items in the context of the back-and-forth conversation.
 
 ### Integration with Microsoft Copilot for Security
 
