@@ -1,11 +1,11 @@
-In this exercise, we try out some of the more advanced features in Polyglot Notebooks.
+In this exercise, you'll try out some of the more advanced features in Polyglot Notebooks.
 
 ## Value sharing
 
-Let’s show how valuable it can be to share variables between cells using different kernels.  
+Let's show how valuable it can be to share variables between cells using different kernels.  
 
-1. Create a cell using +Code button.
-1. Select the kernel by selecting the button in the drop list on the right side, select **csharp C# Script** 
+1. Create a cell using the **+ Code** button.
+1. In the drop-down list on the right side, select **csharp C# Script**.
 1. Type the following code into the code cell:
 
     ```csharp
@@ -16,15 +16,14 @@ Let’s show how valuable it can be to share variables between cells using diffe
     }
     ```
 
-1. Run the code cell using the play icon.
-1. Create another cell in the same way using +Code button but this time select JavaScript as kernel.
-1. Select "variables" menu option on top.
-1. Select the share icon in the Actions column.
-1. Next, select the "JavaScript – JavaScript" option.
+1. Run the code cell using the **Run** icon.
+1. Select the **Variables** menu option on in the toolbar at the top of the screen.
+1. Select the **Share** icon in the Actions column.
+1. Next, select the **javascript – JavaScript** option.
 
     ![A screenshot showing the different kernels in Polyglot Notebook.](../media/different-kernels-14.png)
 
-    You should see a new code cell being created, with JavaScript as kernel, containing the following code:
+    You should see a new code cell being created, with JavaScript as kernel and containing the following code:
 
     ```javascript
     #!set --value @csharp:products --name products
@@ -40,9 +39,9 @@ Let’s show how valuable it can be to share variables between cells using diffe
 
 ## Working with value storage
 
-Let’s try another case of variable sharing. This time, we work with JSON data.  
+Let's try another case of variable sharing. This time, we'll work with JSON data.  
 
-1. Create a new code cell by select +Code and select **value – Raw Value Storage** for kernel.
+1. Create a new code cell by selecting **+ Code**, then select **value – Raw Value Storage** for kernel.
 
 1. In the new cell, paste the following JSON:
 
@@ -63,17 +62,17 @@ Let’s try another case of variable sharing. This time, we work with JSON data.
     ]
     ```
 
-1. Run the cell and **data** should show up in the variables table. So open that table if you haven’t already.
+1. Run the cell and **data** should show up in the variables table, which should still be open from the previous section. If you need to reopen it, select **Variables** in the toolbar at the top of the screen.
 
-1. Select the share icon to share the **data** variable.
+1. Select the share icon in the **Actions** column for the **data** variable.
 
-1. Then select **csharp** as target cell. Your cell should now have the following code:
+1. Select **csharp C# Script** as target cell. Your new C# cell should now have the following code:
 
-    ```
+    ```csharp
     #!set --value @value:data --name data
     ```
 
-1. Next, paste the following code:
+1. Next, paste the following code into the cell:
 
     ```csharp
     // import JSON in C#
@@ -102,4 +101,4 @@ Let’s try another case of variable sharing. This time, we work with JSON data.
     }
     ```
 
-Congrats, you successfully learnt more about working with variable sharing.
+Congrats, you successfully learned more about working with variable sharing.
