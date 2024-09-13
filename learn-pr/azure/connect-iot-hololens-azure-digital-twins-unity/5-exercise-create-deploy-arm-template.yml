@@ -4,9 +4,9 @@ title: Exercise - Set up the exercise environment
 metadata:
   title: Exercise - Set up the exercise environment
   description: Learn how to deploy an ARM template to create, configure, and deploy Azure Services.   
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template
