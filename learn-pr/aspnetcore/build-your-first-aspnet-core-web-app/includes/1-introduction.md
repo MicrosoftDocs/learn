@@ -1,7 +1,7 @@
 In this module, you create your first ASP.NET Core web app with .NET and C#.
 
 ## Example scenario
-You're just getting started with ASP.NET Core. You want to understand how to quickly build your first web app and get familiar with the structure of a basic project. You want to understand how to run and serve the web app on your local machine to view it in a browser.
+You're just getting started with ASP.NET Core. You want to understand how to quickly build your first web app and get familiar with the structure of a basic project. You want to understand how to run and serve a minimal web app on your local machine to view it in a browser.
 
 ## What will we be doing?
 In this module, you will:
