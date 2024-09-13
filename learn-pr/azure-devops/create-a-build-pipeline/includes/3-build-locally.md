@@ -40,7 +40,7 @@ Although you can propose changes to the original project, in this lesson, you wo
 
 Let's fork the *Space Game* web project into your GitHub account:
 
-1. In a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
+1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
 
 1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 
@@ -52,7 +52,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 ## Set up secrets for self-hosted agent
 
-Before you create your Codespace, you create several secrets that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, since your team is using Codespaces for testing, it's a good temporary solution to use it when you're building your pipelines.  
+Before you create your Codespace, you create several secrets that help your self-hosted Azure DevOps agent run. In production, you wouldn't want to use a self-hosted agent in GitHub Codespaces. However, because your team is using Codespaces for testing, it's a good temporary solution to use it when you're building your pipelines.  
 
 1. Go to your forked GitHub repository and select **Settings** > **Secrets and variables** > **Codespaces**.
 
@@ -66,7 +66,7 @@ Before you create your Codespace, you create several secrets that help your self
     |ADO_PAT     |   The Personal Access Token that you created in the previous step.     |
 
     > [!TIP]
-    > In this training module, your agent is assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example you are running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
+    > In this training module, your agent is assigned to the `Default` agent pool. If don't want to run your agent in the `Default` pool (for example, you're running this training module using your production Azure DevOps environment and you have other agents in the `Default` pool), you can create a secret named `ADO_POOL_NAME` and specify the name of the [agent pool to use](/azure/devops/pipelines/agents/pools-queues). If this secret isn't specified, the `Default` pool is used.
 
 ## Set up Codespaces
 
@@ -76,13 +76,15 @@ Next, you set up Codespaces so that you can build the website, work with source 
 
     :::image type="content" source="../media/3-create-new-options-codespaces.png" alt-text="Screenshot of create a new Codespace with options. ":::
 
-1. Wait for your Codespace to build. This build can take a few moments but you only have to do it once in this step of the training module. When the build completes, you're redirected to an online version of Visual Studio Code. Your Codespace comes with a fresh installation of Visual Studio Code, similar to a fresh installation of Visual Studio Code on your local machine. When the Codespace first starts, Visual Studio Code online might prompt you to provide certain configuration or ask you about preferences. You can choose the preferences that suit your Visual Studio Code usage style.
+1. Wait for your Codespace to build. This build can take a few moments, but you only have to do it once in this step of the training module.
+
+    When the build completes, you're redirected to an online version of Visual Studio Code. Your Codespace comes with a fresh installation of Visual Studio Code, similar to a fresh installation of Visual Studio Code on your local machine. When the Codespace first starts, Visual Studio Code online might prompt you to provide certain configurations or ask you about preferences. You can choose the preferences that suit your Visual Studio Code usage style.
 
 ### Set the upstream remote
 
 A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
 
-1. In the Visual Studio Code online editor, go to the terminal window, and choose **bash** from the right-hand side.
+1. In the Visual Studio Code online editor, go to the terminal window and choose **bash** from the right-hand side.
 
     :::image type="content" source="../media/3-terminal-window.png" alt-text="Screenshot of terminal window in Visual Studio Code online editor. ":::
 
@@ -154,7 +156,7 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 :::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard.":::
 
-When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.
+When you're finished, return to the terminal window, and to stop the running app, select **Ctrl** + **C**.
 
 ::: zone-end  
 
@@ -343,8 +345,8 @@ From a new browser tab, navigate to `http://localhost:5000` to see the running a
 :::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of a web browser showing the Space Game web site.":::
 
 > [!TIP]
-> If you see an error in your browser that's related to a privacy or certificate error, to stop the running app, select Ctrl+C from your terminal.
-> 
+> If you see an error in your browser that's related to a privacy or certificate error, to stop the running app, select **Ctrl** + **C** from your terminal.
+>
 > Next, run `dotnet dev-certs https --trust` and select **Yes** when prompted. For more information, [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true).
 >
 > After your computer trusts your local SSL certificate, to see the running app, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab.
