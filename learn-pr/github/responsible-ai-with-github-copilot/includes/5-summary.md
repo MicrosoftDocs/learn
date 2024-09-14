@@ -16,4 +16,4 @@ To recap, in this module, we covered:
 For more information on Responsible AI, check out these resources:
 
 - [Microsoft Responsible AI Transparency Report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW1l5BO)
-- [Explore the Microsoft approach to AI](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-approach-ai/)
+- [Explore the Microsoft approach to AI](/training/paths/explore-microsoft-approach-ai/)
