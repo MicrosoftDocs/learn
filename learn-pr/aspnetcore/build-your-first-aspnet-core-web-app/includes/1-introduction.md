@@ -12,7 +12,7 @@ In this module, you will:
 - Run your web app locally in a development environment and view it in a browser using HTTPS.
 - Review how the web app is served.
 
-At the end of this module, there are links to content providing deeper dives for ASP.NET web application development.
+At the end of this module, there are links to content providing deeper dives for ASP.NET Core web application development.
 
 ## Required tools
 
