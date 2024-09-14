@@ -1,5 +1,7 @@
 Automated Evaluations within Azure AI Studio execute an AI-assisted evaluation which uses large language models (LLMs), such as GPT-4, to evaluate the output of generative AI language systems. This process is achieved by instructing an LLM to annotate certain aspects of the AI-generated output. For instance, you can provide GPT-4 with a relevance severity scale (for example, provide criteria for relevance annotation on a 1-5 scale) and then ask GPT-4 to annotate the relevance of an AI system’s response to a given question.
 
+:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Studio. The screenshot displays the metric dashboard.":::
+
 We’re able to use AI-assisted evaluation to assess both the performance and safety of your generative AI application. AI-assisted evaluations can be beneficial in scenarios where ground truth and expected answers aren't available. In many generative AI scenarios, such as open-ended question answering or creative writing, single correct answers don't exist, making it challenging to establish the ground truth or expected answers that are necessary for traditional metrics.
 
 In the context of the Contoso Camping Store chatbot, you’re provided with a test dataset which includes sample input, and a generated response from the model that is based on its current configuration. Let’s run an automated evaluation to assess the model’s performance and safety.
@@ -63,26 +65,21 @@ Now that you have the results of the automated evaluation, you’re equipped wit
 
 ## Run a second automated evaluation
 
-To facilitate a comprehensive comparison between two or more runs, you can select the desired runs and initiate the comparison process within a **Compare** or **Dashboard** view. Let’s run another automated evaluation for the model and compare the results.
+To facilitate a comprehensive comparison between two or more runs, you can select the desired runs and initiate the comparison process within a **List** or **Dashboard** view. Let’s run another automated evaluation for the model and compare the results.
 
 > [!NOTE]
 > The **e2e-automated-evaluation-2.jsonl** file simulates a fictitious dataset where it is assumed that modifications were made to improve the model, such as modifying the system message, adjusting content filters, and/or grounding with additional data.
 
-## Compare view
+## Dashboard view
+
+:::image type="content" source="../media/compare-automated-evaluations.png" alt-text="A screenshot of the comparison of two automated evaluations in Azure AI Studio. The score are higher for the second evaluation.":::
 
 1. In the left navigation, within the **Tools** section, select **Evaluation**
 1. Create a new evaluation following the steps in the **Run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
 1. Once the evaluation is complete, select both the **automated-eval1** and **automated-eval2** evaluation runs in the **Automated evaluations** list.
 1. Select **Compare**.
-1. Observe how the metrics might change after the addition of the content filter.
-
-## Dashboard view
-
-1. Return to the **Automated evaluations** list.
-1. Select both the **automated-eval1** and **automated-eval2**.
-1. Select **Switch to dashboard view**.
-1. Hover over the **automated-eval1** evaluation run, right-click, and select **baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
-1. Observe how the metrics might change after the addition of the content filter.
-1. For a streamline view to observe differences, enabled the **Show delta** toggle. This toggle visualizes the differences between the baseline run **(automated-eval1)** and the latest run **(automated-eval2)**. This toggle modifies the table to only display the rows that differ between the evaluation runs. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
+1. Hover over the title of **automated-eval1** and select **Set as baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
+1. Observe how the metrics might change after making adjustments to the system prompt or refining the grounded data.
+1. For a streamline view to observe differences, enabled the **Show differences** toggle. This toggle only visualizes the differences between the baseline run **(automated-eval1)** and the latest run **(automated-eval2)**. This toggle modifies the table to only display the rows that differ between the evaluation runs. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
 
 There’s now a significant improvement in results after making changes to the model. Once the chatbot is deployed and used by Contoso Camping Store customers, you’re encouraged to execute more evaluation runs and compare results to analyze the model’s behavior.

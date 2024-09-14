@@ -15,6 +15,8 @@ Alternatively, you could also create your own custom content filter for Azure Op
 
 ## Create a content filter
 
+:::image type="content" source="../media/create-content-filter.png" alt-text="A screenshot of the create content filter wizard within Azure AI Studio. The screenshot displays the input filter settings.":::
+
 1. In the left navigation, within the **Shared Resources** section, select **Content filters**.
 1. In the **Content filters** tab, select + **Create content filter**.
 

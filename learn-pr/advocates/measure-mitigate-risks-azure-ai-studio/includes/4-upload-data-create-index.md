@@ -19,6 +19,8 @@ Let’s now upload the data and then create an index.
 
 Data can be sourced from an existing Azure Blob Storage connection, a storage URL, or uploaded via the **Add your data** interface. Furthermore, data can be organized into either a single reference file or a folder.
 
+:::image type="content" source="../media/add-your-data.png" alt-text="A screenshot of the add your data window within Azure AI Studio.":::
+
 Let’s add the Contoso Camping Store product data via an upload of the products folder.
 
 1. Within Azure AI Studio, in the left navigation under **Components** select **Data**.
@@ -33,6 +35,8 @@ Let’s add the Contoso Camping Store product data via an upload of the products
 ## Create an index
 
 Now that the data is uploaded, let’s create an index.
+
+:::image type="content" source="../media/create-an-index.png" alt-text="A screenshot of an index titled products-index created in Azure AI Studio.":::
 
 1. Within the left navigation in the **Components** section, select **Indexes**.
 1. Select **+ New index**
@@ -54,6 +58,8 @@ Now that the data is uploaded, let’s create an index.
 ## Test the model with the index
 
 We can now return to the **Chat playground** to test the model and validate whether it has the capability to ground its responses about Contoso Camping Store products with the provided product data.
+
+:::image type="content" source="../media/add-data-chat-playground.png" alt-text="A screenshot of the add your data section within the chat playground of Azure AI Studio. The fields for the section are highlighted.":::
 
 1. Within the left navigation, in the **Project playground** section, select **Chat**.
 1. On the **Chat playground** page, select the **Add your data** tab.

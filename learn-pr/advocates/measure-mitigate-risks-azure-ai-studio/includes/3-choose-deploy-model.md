@@ -1,4 +1,6 @@
-Selecting a model from the Model Catalog is the first step towards creating the Contoso Camping Store chatbot. The model catalog in Azure AI Studio is the hub to discover and use a wide range of models for building generative AI applications. The model catalog features hundreds of models across model providers such as Azure OpenAI Service, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained. 
+Selecting a model from the Model Catalog is the first step towards creating the Contoso Camping Store chatbot. The model catalog in Azure AI Studio is the hub to discover and use a wide range of models for building generative AI applications. The model catalog features hundreds of models across model providers such as Azure OpenAI Service, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained.
+
+:::image type="content" source="../media/model-catalog.png" alt-text="A screenshot of the model catalog within Azure AI Studio. Model suggestions are provided along the top followed by filters. A list of models available display under the filters.":::
 
 The model catalog organizes models into three types of collections:
 - Curated by Azure AI
@@ -34,6 +36,8 @@ The model card for the **Llama-2-70b-chat** model has more information about the
 
 While the model card provides more details about the available models, comparing your potentially chosen models gets you one step closer to choosing one (or some) for deployment. The **Model Benchmarks** section of Azure AI Studio provides a single interface to compare benchmarks across models and datasets available in the industry to assess which one meets your business scenario. You're using a **GPT** chat completion model to create the Contoso Camping Store chatbot. However, let’s compare some of the **GPT** chat completion models to analyze how each model scores differently across accuracy, coherence, groundedness, fluency, relevance, and GPT Similarity.
 
+:::image type="content" source="../media/model-benchmarks.png" alt-text="A screenshot of the model benchmarks page within the Azure AI Studio. There is a graph on the page that compares 3 models.":::
+
 1. Navigate to **Model Benchmarks**.
 1. In the **Models** filter, select the following models:
     - gpt-4o
@@ -48,6 +52,8 @@ Across all comparisons, for each metric, **gpt-4o** has the highest score. There
 ## Deploy a model
 
 You can deploy a model from either the model card or your project’s deployment page.
+
+:::image type="content" source="../media/deploy-model.png" alt-text="A screenshot of the model card for the gpt-4o model in Azure AI Studio. The deploy button is highlighted.":::
 
 > [!NOTE]
 > For Azure OpenAI models, the default quota for models varies by model and region. Certain models might only be available in some regions. Deploying consumes quota that is assigned to your subscription on a per-region, per-model basis in units of Tokens-per-Minute (TPM). When you sign up for Azure AI Studio, you receive default quota for most of the available models. Then, you assign TPM to each deployment as it is created, thus reducing the available quota for that model by the amount you assigned. You can continue to create deployments and assign them TPMs until you reach your quota limit.
@@ -66,6 +72,8 @@ Azure AI Studio also offers model monitoring for deployed models. Model monitori
 ## Chat with a deployed model in the chat playground
 
 In the Azure AI Studio chat playground, you can observe how your model responds with and without your data. Now that the **gpt-4o** model is deployed, let’s pass some prompts into the chat to see how the model currently responds both about general facts and towards questions about Contoso products.
+
+:::image type="content" source="../media/chat-playground.png" alt-text="A screenshot of the chat playground in Azure AI Studio. Setup for the model prompt displays on the left. The chat window display to the right.":::
 
 1. On the model deployment details page, select **Open in playground**.
 1. Within the chat box on the **Chat playground** page, individually submit the following prompts to observe the models generated response:
