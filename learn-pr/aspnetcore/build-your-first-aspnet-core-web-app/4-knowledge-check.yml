@@ -12,7 +12,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is needed to install *at a minimum* to create and run ASP.NET Core apps?"
+  - content: "What do you need to install *at a minimum* to create and run ASP.NET Core apps?"
     choices:
     - content: "Visual Studio"
       isCorrect: false
