@@ -43,7 +43,7 @@ quiz:
           explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
         - content: "Azure Container Apps"
           isCorrect: false
-          explanation: "Incorrect. Azure Container Apps offers managed service for running Spring Boot and Spring Cloud applications."
+          explanation: "Incorrect. Azure Container Apps offers managed services for Java workloads."
     - content: "With a platform as a service offer such as Azure App Service, who manages your Java Virtual Machine (JVM)?"
       choices:
         - content: "You're responsible for updating and patching your JVM."
