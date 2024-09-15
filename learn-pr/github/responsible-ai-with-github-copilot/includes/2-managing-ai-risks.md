@@ -1,4 +1,5 @@
 :::image type="content" source="../media/picture1.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/picture1.png" border="false":::
+
 Artificial Intelligence (AI) presents numerous opportunities for innovation and efficiency, but it also comes with significant risks that need to be carefully managed.
 
 One of the primary concerns is that AI systems can sometimes make decisions that are difficult to interpret, leading to a lack of transparency and accountability. Additionally, AI can result in unintended and harmful outcomes, such as biased decision-making or privacy violations.

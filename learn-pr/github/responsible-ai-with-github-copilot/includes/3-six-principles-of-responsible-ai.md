@@ -1,4 +1,5 @@
-:::image type="content" source="../media/picture2.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/picture2.png" border="false":::
+:::image type="content" source="../media/picture2.png" alt-text="Diagram showing six key principles that should guide AI development and usage." lightbox="../media/picture2.png" border="false":::
+
 Microsoft has been a global leader in Responsible AI, identifying six key principles that should guide AI development and usage. These principles are:
 
 - **Fairness**: AI systems should treat all people fairly.
