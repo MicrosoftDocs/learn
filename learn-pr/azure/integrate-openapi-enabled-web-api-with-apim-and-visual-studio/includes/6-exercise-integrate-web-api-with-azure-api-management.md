@@ -55,7 +55,7 @@ As you also created the Azure API Management instance and integrated the web API
 
 ## Verify Web API Integration on Azure API Management ##
 
-1. To verify whether your web API has been integrated with Azure API Management, open a web browser and sign in to Azure portal. Enter the keyword *api management* in the search bar at the top of the Azure portal. When the **API Management services** appears, select it.
+1. To verify whether your web API has been integrated with Azure API Management, open a web browser and sign in to Azure portal. Enter the keyword *API management* in the search bar at the top of the Azure portal. When the **API Management services** appears, select it.
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-13.png" alt-text="Search API Management.":::
 
