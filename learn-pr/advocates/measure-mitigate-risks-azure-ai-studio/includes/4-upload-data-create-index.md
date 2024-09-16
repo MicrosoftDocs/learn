@@ -2,7 +2,11 @@ While it’s great to use the model’s capabilities to generate responses to ge
 
 RAG is a pattern used in AI that uses a large language model (LLM) to generate answers with your own data. When a user asks a question, the data store is searched based on user input. The user question is then combined with the matching results and sent to the LLM using a prompt (explicit instructions to an AI or machine learning model) to generate the desired answer.
 
+:::image type="content" source="../media/rag-pattern.png" alt-text="The flow of the RAG pattern. The pattern starts with a question and then flows to your data store, matching results, the prompt, the LLM, and finally the response.":::
+
 For RAG to work well, we need to find a way to search and send your data in an easy and cost efficient manner to the LLMs. This process is achieved by using an index. An index is a data store that allows you to search data efficiently. An index can be optimized for LLMs by creating vectors (text data converted to number sequences using an embedding model). A good index usually has efficient search capabilities like keyword searches, semantic searches, vector searches, or a combination of these examples. This optimized RAG pattern can be illustrated as follows.
+
+:::image type="content" source="../media/rag-pattern-with-index.png" alt-text="The flow of the RAG pattern with an index. The pattern starts with a question and then flows to your index, matching results, the prompt, the LLM, and finally the response.":::
 
 Azure AI provides an index asset to use with RAG pattern. The index asset contains important information like:
 - Where is your index stored
@@ -68,12 +72,12 @@ We can now return to the **Chat playground** to test the model and validate whet
 > [!TIP]
 > Wait 2-3 minutes before proceeding to the next step. This should allow sufficient time for the updates to take effect.
 
-1. In the chat window, test the following prompts individually to validate whether the model references the product data:
+In the chat window, test the following prompts individually to validate whether the model references the product data:
 
-    | Prompt | Sample Response |
-    |----------|----------|
-    | How much is the Contoso TrailMaster X4 Tent?   | The Contoso TrailMaster X4 Tent is priced at $250.|
-    |  How do I wash the Contoso TrailBlaze Hiking Pants?    | To wash the TrailBlaze Hiking Pants, follow these care and maintenance guidelines: <br><br> 1. **Machine Wash**: Use cold water and a mild detergent to machine wash the pants.<br>2. **Avoid Bleach and Fabric Softeners**: Don't use bleach or fabric softeners during washing as they can damage the fabric.<br>3. **Separate Wash**: For best results, wash the pants separately or with similar colors to prevent any color bleeding or fabric damage.<br>4. **Drying**: Hang the pants to dry naturally. Avoid using a dryer as high heat can damage the fabric and affect the pants' performance.<br>5. **Ironing**: If necessary, iron the pants on a low setting, ensuring that they are completely dry before ironing. Avoid excessive heat. <br><br> By following these instructions, you can maintain the quality and performance of your TrailBlaze Hiking Pants.|
-    |  Which fuel types should I use with the Contoso CompactCook Camping Stove?    | The Contoso CompactCook Camping Stove is compatible with the following fuel types: <br><br> - Butane <br> - Propane <br> - Isobutane. <br><br>These fuel types provide versatility for your outdoor cooking need.   |
+| Prompt | Sample Response |
+|----------|----------|
+| How much is the Contoso TrailMaster X4 Tent?   | The Contoso TrailMaster X4 Tent is priced at $250.|
+|  How do I wash the Contoso TrailBlaze Hiking Pants?    | To wash the TrailBlaze Hiking Pants, follow these care and maintenance guidelines: <br><br> 1. **Machine Wash**: Use cold water and a mild detergent to machine wash the pants.<br>2. **Avoid Bleach and Fabric Softeners**: Don't use bleach or fabric softeners during washing as they can damage the fabric.<br>3. **Separate Wash**: For best results, wash the pants separately or with similar colors to prevent any color bleeding or fabric damage.<br>4. **Drying**: Hang the pants to dry naturally. Avoid using a dryer as high heat can damage the fabric and affect the pants' performance.<br>5. **Ironing**: If necessary, iron the pants on a low setting, ensuring that they are completely dry before ironing. Avoid excessive heat. <br><br> By following these instructions, you can maintain the quality and performance of your TrailBlaze Hiking Pants.|
+|  Which fuel types should I use with the Contoso CompactCook Camping Stove?    | The Contoso CompactCook Camping Stove is compatible with the following fuel types: <br><br> - Butane <br> - Propane <br> - Isobutane. <br><br>These fuel types provide versatility for your outdoor cooking need.   |
 
 The model should now provide responses about Contoso Camping Store products based on product data provided.

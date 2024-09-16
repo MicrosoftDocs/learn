@@ -1,6 +1,6 @@
 We now have a decent starting point for the Contoso Camping Store chatbot. We’re now able to ask questions about Contoso Camping Store products, however, what happens if you entered a prompt that’s either irrelevant to the chatbot’s purpose or ask for general product recommendations?
 
-In the chat window, test the following prompts individually to observe how the model responds:
+In the chat window, test the following prompt to observe how the model responds:
 
 | **Prompt** | **Sample Response** |
 | --- | --- |
@@ -20,7 +20,7 @@ Let’s start by defining the system message. The system message, also referred 
 
 ## Create a system message
 
-Let’s create a system message for the Contoso Camping Store bot that instructs the model to act as a conversational agent and only discuss company products.
+Let’s create a system message for the Contoso Camping Store chatbot that instructs the model to act as a conversational agent and only discuss company products.
 
 :::image type="content" source="../media/system-message.png" alt-text="A screenshot of the system message section of the chat playground in Azure AI Studio. The button to apply changes and the section for the system message are highlighted.":::
 

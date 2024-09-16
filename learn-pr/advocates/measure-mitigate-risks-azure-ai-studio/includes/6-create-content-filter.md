@@ -11,7 +11,7 @@ Azure OpenAI model deployments use the default content filter which sets all har
 Alternatively, you could also create your own custom content filter for Azure OpenAI model deployments.
 
 > [!NOTE]
-> Note: For Azure OpenAI models, only customers who have been approved for modified content filtering have full content filtering control, including configuring content filters at severity level high only or turning off content filters. Apply for modified content filters via this form: [Azure OpenAI Limited Access Review: Modified Content Filters and Abuse Monitoring (microsoft.com)](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xURE01NDY1OUhBRzQ3MkQxMUhZSE1ZUlJKTiQlQCN0PWcu)
+> For Azure OpenAI models, only customers who have been approved for modified content filtering have full content filtering control, including configuring content filters at severity level high only or turning off content filters. Apply for modified content filters via this form: [Azure OpenAI Limited Access Review: Modified Content Filters and Abuse Monitoring (microsoft.com)](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xURE01NDY1OUhBRzQ3MkQxMUhZSE1ZUlJKTiQlQCN0PWcu)
 
 ## Create a content filter
 
@@ -57,7 +57,7 @@ You could add the content filter to a deployment as part of the creation workflo
 
 ## Test the model for content filter changes
 
-Now that the content filter is created, its respective settings are applied to the model. You can return to the **Chat playground** to test various prompts to validate whether the filter blocks the input. Provided are the prompts that triggered the harmful content categories in the initial automated evaluation.
+Now that the content filter is created, its respective settings are applied to the model. You can return to the **Chat playground** to test various prompts to validate whether the filter blocks the input. Provided is the prompt that triggered the harmful content categories in the initial automated evaluation.
 
 | **Input** | **Sample Output** |
 | --- | --- |

@@ -1,4 +1,4 @@
-Automated Evaluations within Azure AI Studio execute an AI-assisted evaluation which uses large language models (LLMs), such as GPT-4, to evaluate the output of generative AI language systems. This process is achieved by instructing an LLM to annotate certain aspects of the AI-generated output. For instance, you can provide GPT-4 with a relevance severity scale (for example, provide criteria for relevance annotation on a 1-5 scale) and then ask GPT-4 to annotate the relevance of an AI system’s response to a given question.
+Automated Evaluations within Azure AI Studio execute an AI-assisted evaluation which uses LLMs, such as GPT-4, to evaluate the output of generative AI language systems. This process is achieved by instructing an LLM to annotate certain aspects of the AI-generated output. For instance, you can provide GPT-4 with a relevance severity scale (for example, provide criteria for relevance annotation on a 1-5 scale) and then ask GPT-4 to annotate the relevance of an AI system’s response to a given question.
 
 :::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Studio. The screenshot displays the metric dashboard.":::
 
@@ -14,7 +14,7 @@ In the context of the Contoso Camping Store chatbot, you’re provided with a te
 
 **Basic Information**
 
-1. In the **Evaluation name** field, enter:* automated-eval1*
+1. In the **Evaluation name** field, enter: *automated-eval1*
 1. For the **What kind of scenario are you evaluating?** field, select **Question and answer without context**.
 1. Select **Next**.
 
@@ -74,12 +74,12 @@ To facilitate a comprehensive comparison between two or more runs, you can selec
 
 :::image type="content" source="../media/compare-automated-evaluations.png" alt-text="A screenshot of the comparison of two automated evaluations in Azure AI Studio. The score are higher for the second evaluation.":::
 
-1. In the left navigation, within the **Tools** section, select **Evaluation**
-1. Create a new evaluation following the steps in the **Run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
+1. In the left navigation, within the **Tools** section, select **Evaluation**.
+1. Create a new evaluation following the steps in the **Configure and run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
 1. Once the evaluation is complete, select both the **automated-eval1** and **automated-eval2** evaluation runs in the **Automated evaluations** list.
 1. Select **Compare**.
 1. Hover over the title of **automated-eval1** and select **Set as baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
 1. Observe how the metrics might change after making adjustments to the system prompt or refining the grounded data.
-1. For a streamline view to observe differences, enabled the **Show differences** toggle. This toggle only visualizes the differences between the baseline run **(automated-eval1)** and the latest run **(automated-eval2)**. This toggle modifies the table to only display the rows that differ between the evaluation runs. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
+1. For a streamline view to observe differences, enabled the **Show differences** toggle. This toggle modifies the table to only display the rows that differ between the baseline run **(automated-eval1)** and the compared run **(automated-eval2)**. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
 
 There’s now a significant improvement in results after making changes to the model. Once the chatbot is deployed and used by Contoso Camping Store customers, you’re encouraged to execute more evaluation runs and compare results to analyze the model’s behavior.

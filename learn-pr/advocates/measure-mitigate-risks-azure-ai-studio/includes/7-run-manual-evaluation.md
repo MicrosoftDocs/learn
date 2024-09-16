@@ -30,7 +30,7 @@ A test set of data is provided for you which includes a set of prompts that cons
     *To Avoid Fabrication or Ungrounded Content*
     - *Your answer must not include any speculation or inference about the background of the document or the user's gender, ancestry, roles, positions, etc.*
     - *Do not assume or change dates and times.*
-    - *You must always perform searches on [insert relevant documents that your feature can search on] when the user is seeking information (explicitly or implicitly), regardless of internal knowledge or information.*
+    - *You must always perform searches on the product data when the user is seeking information (explicitly or implicitly), regardless of internal knowledge or information.*
 
     *To Avoid Copyright Infringements*
     - *If the user requests copyrighted content such as books, lyrics, recipes, news articles or other content that may violate copyrights or be considered as copyright infringement, politely refuse and explain that you cannot provide the content. Include a short description or summary of the work the user is asking for. You must not violate any copyrights under any circumstances.*
@@ -112,5 +112,3 @@ With a new system message in place, let’s run another manual evaluation, speci
 The model should now format product recommendations in the desired format. However, in the example provided, the model couldn’t retrieve the price of the **MountainDream Sleeping Bag**. In a real-world scenario, a recommended next step would be to review the Contoso Camping Store product data and validate whether the price is missing for that respective product.
 
 Let’s now evaluate the model using the second type of supported evaluations: Automated Evaluation.
-
-
