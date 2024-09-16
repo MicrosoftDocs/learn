@@ -31,7 +31,7 @@ Open the *MyWebApp* project folder in the current instance of Visual Studio Code
 ```dotnetcli
 code -r MyWebApp
 ```
-The *MyWebApp* project folder contents are displayed in the Visual Studio **Explorer**.
+The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**.
 
  :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer.":::
 
