@@ -3912,3 +3912,8 @@ achievements:
   title: Explore Microsoft Defender for IoT implementation
   summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
   iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
+- uid: learn.protect-identities-with-aad-idp.badge
+  type: badge
+  title: Protect your identities with Microsoft Entra ID Protection
+  summary: Use the advanced detection and remediation of identity-based threats to protect your Microsoft Entra identities and applications from compromise.
+  iconUrl: /training/achievements/protect-identities-with-aad-idp.svg
