@@ -2,7 +2,7 @@ Given the recent improvements you made to the model’s behavior, it’s best th
 
 Manual evaluation in Azure AI Studio enables you to continuously and manually iterate and evaluate your prompt (that is, system message, model, parameters) against your test data in a single interface. With each response generation, you can manually rate the outputs to help you gain confidence in your prompt. The interface enables you to run evaluations on both imported test data and manually entered test data.
 
-:::image type="content" source="../media/manual-evaluation.png" alt-text="A screenshot of the manual evaluation screen within Azure AI Studio. The screenshot displays the prompt settings and the manual evaluation results. lightbox="../media/manual-evaluation.png":::
+:::image type="content" source="../media/manual-evaluation.png" alt-text="A screenshot of the manual evaluation screen within Azure AI Studio. The screenshot displays the prompt settings and the manual evaluation results." lightbox="../media/manual-evaluation.png":::
 
 After completing an evaluation, you can save the results. Reference the results as needed to make decisions on how to potentially improve the model’s responses and/or to compare to future manual evaluations.
 
