@@ -31,7 +31,7 @@ Open the *MyWebApp* project folder in the current instance of Visual Studio Code
 ```dotnetcli
 code -r MyWebApp
 ```
-The *MyWebApp* project folder contents are displayed in the Visual Studio **Explorer**.
+The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**.
 
  :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer.":::
 
@@ -41,12 +41,11 @@ The following sections contain an overview of the main project folders and files
 
 ### The `MyWebApp.csproj` project file
 
-The `.csproj` project file is used by MSBuild to:
+The `.csproj` project file is used to:
 
-* Build and manage the project
-* Manage dependencies
-* Configure which version of .NET to use during the build.
-* Package the app for deployment.
+* Configure how to build the project
+* Specify which version of .NET to target
+* Manage project dependencies
 
 ### The `MyWebApp.sln` solution file
 
@@ -68,10 +67,10 @@ The `launchSettings.json` file contains the following:
 
 The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
-* Environment configuration: Sets up environment-specific settings for development, staging, and production.
-* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services such as Blazor (interactive web UIs in C#), SignalR (real-time web functionality), or gRPC (high-performance RPC communication), to name a few.
-* Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware components.
 * Host configuration: Configures the host, including setting up the web server.
+* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services for specific frameworks.
+* Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware instances.
+* Environment configuration: Sets up environment-specific settings for development, staging, and production.
 
 In the new empty ASP.NET Core project you created, the `Program.cs` file contains the following minimal code:
 
@@ -85,6 +84,6 @@ The `app.MapGet()` method directly defines an endpoint that handles HTTP GET req
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
 
-`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `https://localhost:<port>/`, where `<port>` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.`
+`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `https://localhost:<port>/`, where `<port>` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
 
 `() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"
