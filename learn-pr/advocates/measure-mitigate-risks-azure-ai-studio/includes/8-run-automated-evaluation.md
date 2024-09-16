@@ -72,7 +72,7 @@ To facilitate a comprehensive comparison between two or more runs, you can selec
 
 ## Dashboard view
 
-:::image type="content" source="../media/compare-automated-evaluations.png" alt-text="A screenshot of the comparison of two automated evaluations in Azure AI Studio. The scores are higher for the second evaluation." lightbox="..media/compare-automated-evaluations.png":::
+:::image type="content" source="../media/compare-automated-evaluations.png" alt-text="A screenshot of the comparison of two automated evaluations in Azure AI Studio. The scores are higher for the second evaluation." lightbox="../media/compare-automated-evaluations.png":::
 
 1. In the left navigation, within the **Tools** section, select **Evaluation**.
 1. Create a new evaluation following the steps in the **Configure and run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
