@@ -6,6 +6,7 @@ metadata:
   description: In this introductory unit, you'll see a business scenario that requires developers to deploy a .NET Aspire cloud-native app to multiple environments for testing and production.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 1
 content: |

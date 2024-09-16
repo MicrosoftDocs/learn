@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll learn how to add messages to, and receive messages from, the Azure Queue Storage service by using the .NET Aspire Azure Queue Storage component.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |
