@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.exercise-run-project
+title: Run your web app locally using HTTPS
+metadata:
+  title: Exercise
+  description: Run your web app locally using HTTPS and review how the web app is served.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-exercise-run-project.md)]

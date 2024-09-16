@@ -8,7 +8,7 @@ In this module, you will:
 
 - Review ASP.NET Core default project templates available in the .NET SDK.
 - Create an ASP.NET Core web app project from a template using the .NET CLI (Command Line Interface).
-- Examine the structure of the created project.
+- Examine the structure of the created project in Visual Studio Code.
 - Run your web app locally and view it in a browser using HTTPS.
 - Review how the web app is served.
 
@@ -20,3 +20,4 @@ This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) to
 The following tools are required:
 
   - The latest version of .NET SDK installed from the [.NET website](https://dot.net)
+  - The latest versions of [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.

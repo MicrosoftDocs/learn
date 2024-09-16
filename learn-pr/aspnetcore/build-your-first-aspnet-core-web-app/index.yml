@@ -25,6 +25,7 @@ prerequisites: |
 
   To complete this module, you'll need the following:
   - The latest version of .NET SDK installed from the [.NET website](https://dot.net)
+  - The latest versions of [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -38,7 +39,8 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
 units:
 - learn.build-your-first-aspnet-core-web-app.introduction
 - learn.build-your-first-aspnet-core-web-app.learning-content
-- learn.build-your-first-aspnet-core-web-app.exercise
+- learn.build-your-first-aspnet-core-web-app.exercise-create-project
+- learn.build-your-first-aspnet-core-web-app.exercise-run-project
 - learn.build-your-first-aspnet-core-web-app.knowledge-check
 - learn.build-your-first-aspnet-core-web-app.summary
 badge:
