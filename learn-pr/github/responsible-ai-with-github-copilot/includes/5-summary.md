@@ -10,8 +10,10 @@ We are excited for you to embark on your own AI journey and urge you to approach
 
 To recap, in this module, we covered:
 
-- Mitigating AI risks: Identifying limitations and potential harms (bias, security, fairness, privacy, transparency) in AI-generated code.
-- Responsible AI: Understanding the core principles of responsible AI and their significance with GitHub Copilot.
+- Understand and apply the principles of Responsible AI usage.
+- Identify limitations and mitigate risks associated with AI.
+- Learn best practices for ensuring AI-generated code aligns with ethical standards and project-specific requirements.
+- Recognize the importance of transparency and accountability in AI systems to build trust and maintain user confidence.
 
 For more information on Responsible AI, check out these resources:
 

@@ -8,7 +8,7 @@ To mitigate these risks, it is essential to implement robust governance framewor
 
 In the next section, we’ll discuss the concept of responsible AI and how to apply its principles to reduce the risks associated with AI tools like GitHub Copilot.
 
-What is Responsible AI?
+## What is Responsible AI?
 
 Responsible AI is an approach to developing, assessing, and deploying artificial intelligent systems in a safe, trustworthy, and ethical way. AI systems are the product of many decisions made by the people who develop and deploy them. From system purpose to how people interact with AI systems, Responsible AI can help proactively guide these decisions toward more beneficial and equitable outcomes. That means keeping people and their goals at the center of system design decisions and respecting enduring values like fairness, reliability, and transparency.
 
