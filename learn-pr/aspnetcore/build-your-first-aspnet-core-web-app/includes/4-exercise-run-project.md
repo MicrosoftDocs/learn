@@ -22,7 +22,7 @@ The preceding command displays the following dialog, provided the certificate wa
 
 Select **Yes** if you agree to trust the development certificate.
 
-## Run the web app locally and view it in a browser using HTTPS
+## Run the web app using HTTPS
 
 From a terminal in Visual Studio Code or the command line, navigate to the `MyWebApp` project directory that contains your `MyWebApp.csproj` file.
 
