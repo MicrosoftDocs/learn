@@ -16,7 +16,7 @@ The Azure AI hub resource is the top-level Azure resource for Azure AI Studio an
 1. Select **Next**.
 1. After reviewing the Hub details, select **Create**.
 
-## Azure AI Project
+## Azure AI project
 
 Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Follow the steps provided to create an Azure AI Project.
 
