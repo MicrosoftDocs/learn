@@ -12,11 +12,11 @@ dotnet new list
 
 Some common ASP.NET Core default project templates include:
 
-`blazor`
-Blazor Web App: A project template for creating a Blazor web app that supports both server-side rendering and client interactivity. This template can be used for web apps with rich dynamic user interfaces (UIs).
-
 `web`
 ASP.NET Core Empty: An empty project template for creating an ASP.NET Core application. This template doesn't have any example content in it.
+
+`blazor`
+Blazor Web App: A project template for creating a Blazor web app that supports both server-side rendering and client interactivity. This template can be used for web apps with rich dynamic user interfaces (UIs).
 
 `webapp`
 ASP.NET Core Web App: A project template for creating an ASP.NET Core application with example ASP.NET Core Razor Pages content.
