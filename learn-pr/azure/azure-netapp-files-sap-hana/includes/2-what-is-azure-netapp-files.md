@@ -13,7 +13,7 @@ Given the strict performance requirements of SAP HANA, it's vital to deploy VMs 
 
 ## Data management
 
-Azure NetApp Files offers a complete range of data management features. Features includes near-instantaneous snapshots for primary data protection and instant data recovery, volume cloning for frequent copies of production data for test/dev purposes, storage-based data replication to another zone or region, and backup integration for application-consistent data protection. These features improve data management without impacting storage and application performance.  
+Azure NetApp Files offers a complete range of data management features. Features include near-instantaneous snapshots for primary data protection and instant data recovery, volume cloning for frequent copies of production data for test/dev purposes, storage-based data replication to another zone or region, and backup integration for application-consistent data protection. These features improve data management without impacting storage and application performance.  
 
 Volume size and performance can be adjusted on the fly (without service interruption) to allow you to dynamically optimize cost to the changing application demands.
 
