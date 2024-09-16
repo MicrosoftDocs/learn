@@ -41,7 +41,7 @@ The following sections contain an overview of the main project folders and files
 
 ### The `MyWebApp.csproj` project file
 
-The `.csproj` project file is used by MSBuild to:
+The `.csproj` project file is used to:
 
 * Configure how to build the project
 * Specify which version of .NET to target
