@@ -34,7 +34,7 @@ ASP.NET Core gRPC Services: A project template for creating a gRPC service using
 
 All .NET project templates offer customization options to tailor the generated project to specific needs and extend it with additional services. For instance, you can add Entity Framework Core for database access, authentication, OpenAPI, caching, logging, and more, enabling the application to effectively meet specific requirements.
 
-To view all customization options for a specific template, use the following `dotnet new command` with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
+To view all customization options for a specific template, use the following `dotnet new` command with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
 
 ```dotnetcli
  dotnet new <template-name> --help
