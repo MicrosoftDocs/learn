@@ -2,11 +2,11 @@ While it’s great to use the model’s capabilities to generate responses to ge
 
 RAG is a pattern used in AI that uses a large language model (LLM) to generate answers with your own data. When a user asks a question, the data store is searched based on user input. The user question is then combined with the matching results and sent to the LLM using a prompt (explicit instructions to an AI or machine learning model) to generate the desired answer.
 
-:::image type="content" source="../media/rag-pattern.png" alt-text="The flow of the RAG pattern. The pattern starts with a question and then flows to your data store, matching results, the prompt, the LLM, and finally the response.":::
+:::image type="content" source="../media/rag-pattern.png" alt-text="Screenshot of the flow of the RAG pattern. The pattern starts with a question and then flows to your data store, matching results, the prompt, the LLM, and finally the response.":::
 
 For RAG to work well, we need to find a way to search and send your data in an easy and cost efficient manner to the LLMs. This process is achieved by using an index. An index is a data store that allows you to search data efficiently. An index can be optimized for LLMs by creating vectors (text data converted to number sequences using an embedding model). A good index usually has efficient search capabilities like keyword searches, semantic searches, vector searches, or a combination of these examples. This optimized RAG pattern can be illustrated as follows.
 
-:::image type="content" source="../media/rag-pattern-with-index.png" alt-text="The flow of the RAG pattern with an index. The pattern starts with a question and then flows to your index, matching results, the prompt, the LLM, and finally the response.":::
+:::image type="content" source="../media/rag-pattern-with-index.png" alt-text="Screenshot of the flow of the RAG pattern with an index. The pattern starts with a question and then flows to your index, matching results, the prompt, the LLM, and finally the response.":::
 
 Azure AI provides an index asset to use with RAG pattern. The index asset contains important information like:
 - Where is your index stored

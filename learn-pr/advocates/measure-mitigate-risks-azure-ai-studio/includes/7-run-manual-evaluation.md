@@ -86,7 +86,7 @@ In the **Assistant setup** section, for the **System message**, enter the follow
 
 With a new system message in place, let’s run another manual evaluation, specifically for the rows that were marked with a thumb down.
 
-:::image type="content" source="../media/manual-evaluation-correct-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is short and only lists the product and it's cost.":::
+:::image type="content" source="../media/manual-evaluation-correct-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is short and only lists the product and its cost.":::
 
 1. In the **Manual evaluation result** section, select **Run** next to the following inputs:
 

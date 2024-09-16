@@ -15,7 +15,7 @@ summary: Learn how to measure and mitigate risks for a generative AI app leverag
 abstract:  |
   By the end of this module, you're able to:
   - Upload data and create an index
-  - Setup a system message
+  - Set up a system message
   - Create and add a content filter
   - Execute a manual evaluation
   - Execute and analyze an AI-assisted evaluation
