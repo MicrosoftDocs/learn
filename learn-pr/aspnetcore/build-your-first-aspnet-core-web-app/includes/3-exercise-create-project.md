@@ -68,10 +68,10 @@ The `launchSettings.json` file contains the following:
 
 The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
-* Environment configuration: Sets up environment-specific settings for development, staging, and production.
-* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services such as Blazor (interactive web UIs in C#), SignalR (real-time web functionality), or gRPC (high-performance RPC communication), to name a few.
-* Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware components.
 * Host configuration: Configures the host, including setting up the web server.
+* Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services for specific frameworks.
+* Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware instances.
+* Environment configuration: Sets up environment-specific settings for development, staging, and production.
 
 In the new empty ASP.NET Core project you created, the `Program.cs` file contains the following minimal code:
 
