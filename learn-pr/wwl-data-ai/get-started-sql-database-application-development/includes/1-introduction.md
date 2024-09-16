@@ -2,7 +2,7 @@ Azure SQL Database is a fully managed relational database service provided by Mi
 
 In this module, we focus on Azure SQL Database, but it's important to note that there are several other products within the SQL family on Azure.
 
-:::image type="content" source="../media/1-sql-products.png" alt-text="Image showing all products available for SQL on Azure.":::
+:::image type="content" source="../media/1-sql-products.png" alt-text="Screenshot showing all products available for SQL on Azure.":::
 
 ## Integrate with development tools
 

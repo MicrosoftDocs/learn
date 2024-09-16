@@ -12,8 +12,6 @@ The single database deployment model is the simplest way to use Azure SQL Databa
 
 You can monitor the resource utilization of each database through the Azure portal. This feature allows you to easily track and assess the performance of your databases.
 
-:::image type="content" source="../media/2-azure-sql-database.png" alt-text="Screenshot of the Azure SQL Database page from Azure portal." lightbox="../media/2-azure-sql-database.png":::
-
 ### Elastic pools
 
 Elastic pools allow you to allocate storage and compute resources to a group of databases, simplifying management compared to handling each database individually. They're easier to scale than single databases, as changes to the elastic pool automatically adjust resources for all included databases.
@@ -34,7 +32,6 @@ This is the recommended purchasing model, where compute and storage resources ar
 
 In the vCore-based purchasing model, your costs depend on several factors, including the service tier, hardware configuration, number of vCores and amount of memory, reserved database storage, and actual backup storage.
 
-#TODO: add open in a diff tab tag
 > [!NOTE]
 > For pricing details, see the [Azure SQL Database pricing page](https://azure.microsoft.com/pricing/details/azure-sql-database/single/).
 
