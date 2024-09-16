@@ -33,7 +33,6 @@ subjects:
 modules:
 - learn.wwl.introduction-microsoft-365-threat-protection
 - learn.wwl.mitigate-incidents-microsoft-365-defender
-- learn.protect-identities-with-aad-idp
 - learn-m365.m365-threat-remediate
 - learn-m365.m365-threat-safeguard
 - learn-m365.cloud-app-security
