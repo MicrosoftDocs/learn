@@ -32070,6 +32070,46 @@
       "redirect_document_id": false
     },
     {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/exercise-azure-ad-tenant.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/exercise-create-vm.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/index.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/introduction.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/knowledge-check.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/prepare.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source-path": "learn-pr/azure/create-basic-hybrid-environment/summary.yml", 
+      "redirect-url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/3-exercise-observe-data-loss.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
       "redirect_document_id": false
