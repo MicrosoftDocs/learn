@@ -12,17 +12,11 @@ dotnet new list
 
 Some common ASP.NET Core default project templates include:
 
-`blazor`
-Blazor Web App: A project template for creating a Blazor web app that supports both server-side rendering and client interactivity. This template can be used for web apps with rich dynamic user interfaces (UIs).
-
 `web`
 ASP.NET Core Empty: An empty project template for creating an ASP.NET Core application. This template doesn't have any example content in it.
 
-`webapp`
-ASP.NET Core Web App: A project template for creating an ASP.NET Core application with example ASP.NET Core Razor Pages content.
-
-`mvc`
-ASP.NET Core Web App (Model-View-Controller): A project template for creating an ASP.NET Core application with example ASP.NET Core MVC Views and Controllers.
+`blazor`
+Blazor Web App: A project template for creating a Blazor web app that supports both server-side rendering and client interactivity. This template can be used for web apps with rich dynamic user interfaces (UIs).
 
 `webapi`
 ASP.NET Core Web API: A project template for creating a RESTful Web API using ASP.NET Core controllers or minimal APIs, with optional support for OpenAPI and authentication.
@@ -34,7 +28,7 @@ ASP.NET Core gRPC Services: A project template for creating a gRPC service using
 
 All .NET project templates offer customization options to tailor the generated project to specific needs and extend it with additional services. For instance, you can add Entity Framework Core for database access, authentication, OpenAPI, caching, logging, and more, enabling the application to effectively meet specific requirements.
 
-To view all customization options for a specific template, use the following `dotnet new command` with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
+To view all customization options for a specific template, use the following `dotnet new` command with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
 
 ```dotnetcli
  dotnet new <template-name> --help
