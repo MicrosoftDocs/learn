@@ -16,5 +16,5 @@ To view the connector page, do these steps:
 
 1. Wait until validation is complete and the button changes to **Disconnect**.
 
-:::image type="content" source="../media/defender-xdr.png" alt-text="Screen shot of the Microsoft Defender XDR Connector page.":::
+:::image type="content" source="../media/defender-xdr.png" alt-text="Screen shot of the Microsoft Defender XDR Connector page." lightbox="../media/defender-xdr.png":::
 
