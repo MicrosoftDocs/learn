@@ -18,12 +18,6 @@ ASP.NET Core Empty: An empty project template for creating an ASP.NET Core appli
 `blazor`
 Blazor Web App: A project template for creating a Blazor web app that supports both server-side rendering and client interactivity. This template can be used for web apps with rich dynamic user interfaces (UIs).
 
-`webapp`
-ASP.NET Core Web App: A project template for creating an ASP.NET Core application with example ASP.NET Core Razor Pages content.
-
-`mvc`
-ASP.NET Core Web App (Model-View-Controller): A project template for creating an ASP.NET Core application with example ASP.NET Core MVC Views and Controllers.
-
 `webapi`
 ASP.NET Core Web API: A project template for creating a RESTful Web API using ASP.NET Core controllers or minimal APIs, with optional support for OpenAPI and authentication.
 
