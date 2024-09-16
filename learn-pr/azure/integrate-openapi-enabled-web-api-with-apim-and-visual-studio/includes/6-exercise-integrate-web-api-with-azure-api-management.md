@@ -1,14 +1,13 @@
 In this exercise, you integrate your web API application running on [Azure App Service][az appsvc] with [Azure API Management][az apim] through Visual Studio.
 
-> [!NOTE] 
+> [!NOTE]
 > In the previous exercise, you already have the ASP.NET Core Web API app with the OpenAPI feature enabled. You'll use the app for this exercise.
-
 
 ## Integrate Web API Application with Azure API Management through Visual Studio ##
 
 The web API application is ready to publish. In order to deploy the web API application, run the following steps.
 
-1. In **Solution Explorer**, right-click the project and select the **Publish** menu.
+1. In **Solution Explorer**, right-click the project and select the **Publish** menu. Select **+New profile** if the following menu doesn't appear.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-02.png" alt-text="Screenshot that shows how to select the publish menu.":::
 
@@ -24,11 +23,11 @@ The web API application is ready to publish. In order to deploy the web API appl
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-05.png" alt-text="Choose Existing App Service.":::
 
-1. While you can use an existing **Azure API Management** instance, if you like, for this time, let's create a new one through Visual Studio. Select the `➕` button at the right-hand side of the dialogue modal to create a new **Azure API Management** instance.
+1. While you can use an existing **Azure API Management** instance if you like, let's create a new one through Visual Studio. Select the `➕` button of the dialogue modal to create a new **Azure API Management** instance.
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-06.png" alt-text="Select Create New API Management.":::
 
-1. When a new **API in API Management** dialogue modal pops up, all mandatory field values have already been automatically populated. You can use the prepopulated ones or change them. Fill in all the field values. However, there's no API Management instance yet. Select the **New...** button at the right-hand side of the dialogue modal.
+1. When a new **API in API Management** dialogue modal pops up, most mandatory field values have been automatically populated. You can use the prepopulated ones or change them. Fill in all the field values. However, there's no API Management instance yet. Select the **New...** button of the dialogue modal.
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-07.png" alt-text="Create New API in API Management.":::
 
@@ -44,7 +43,7 @@ The web API application is ready to publish. In order to deploy the web API appl
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-10.png" alt-text="Finish API Management Publish.":::
 
-1. Your web API app is ready to deploy. Check the **Service Dependencies** message at the bottom of Visual Studio window, and confirm that the Azure API Management instance is also configured for integration. Select the **Publish** button at the right-top corner of Visual Studio.
+1. Your web API app is ready to deploy. Check the **Service Dependencies** message at the bottom of Visual Studio window, and confirm that the Azure API Management instance is also configured for integration. Select the **Publish** button in Visual Studio.
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-11.png" alt-text="Publish Web API.":::
 
@@ -56,7 +55,7 @@ As you also created the Azure API Management instance and integrated the web API
 
 ## Verify Web API Integration on Azure API Management ##
 
-1. To verify whether your web API has been integrated with Azure API Management, open a web browser and sign in to Azure portal. Enter the keyword, `api management`, in the search bar at the top of the Azure portal. When the **API Management services** appears, select it.
+1. To verify whether your web API has been integrated with Azure API Management, open a web browser and sign in to Azure portal. Enter the keyword *api management* in the search bar at the top of the Azure portal. When the **API Management services** appears, select it.
 
    :::image type="content" source="../media/6-exercise-integrate-web-api-with-azure-api-management-13.png" alt-text="Search API Management.":::
 

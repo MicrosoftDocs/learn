@@ -51,7 +51,7 @@ After the previous exercise, the web API application is ready to publish. In ord
 
     :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-11.png" alt-text="Page Not Found.":::
 
-1. Edit the URL. If the website URL you copied is `https://apiapp-inventorymanagement-kc.azurewebsites.net`, replace `<copied-website-url>` according to the following example.
+1. Edit the URL with `/swagger` by selecting the `<copied-website-url>` according to the following example.
 
    ```text
    <copied-website-url>/swagger
