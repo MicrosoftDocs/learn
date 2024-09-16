@@ -16,7 +16,7 @@ At the end of this module, there are links to content providing deeper dives for
 
 ## Required tools
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) to demonstrate creating and running an ASP.NET Core web app.
+This module uses [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) to demonstrate creating and running an ASP.NET Core web app.
 The following tools are required:
 
   - The latest version of .NET SDK installed from the [.NET website](https://dot.net)
