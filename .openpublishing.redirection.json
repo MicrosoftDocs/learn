@@ -32080,6 +32080,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/achievements/learn.azure.create-basic-hybrid-environment.badge.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml", 
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
