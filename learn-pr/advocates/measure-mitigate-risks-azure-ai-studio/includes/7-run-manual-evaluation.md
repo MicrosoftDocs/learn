@@ -2,7 +2,7 @@ Given the recent improvements you made to the model’s behavior, it’s best th
 
 Manual evaluation in Azure AI Studio enables you to continuously and manually iterate and evaluate your prompt (that is, system message, model, parameters) against your test data in a single interface. With each response generation, you can manually rate the outputs to help you gain confidence in your prompt. The interface enables you to run evaluations on both imported test data and manually entered test data.
 
-:::image type="content" source="../media/manual-evaluation.png" alt-text="A screenshot of the manual evaluation screen within Azure AI Studio. The screenshot displays the prompt settings and the manual evaluation results.":::
+:::image type="content" source="../media/manual-evaluation.png" alt-text="A screenshot of the manual evaluation screen within Azure AI Studio. The screenshot displays the prompt settings and the manual evaluation results. lightbox="../media/manual-evaluation.png":::
 
 After completing an evaluation, you can save the results. Reference the results as needed to make decisions on how to potentially improve the model’s responses and/or to compare to future manual evaluations.
 
@@ -56,7 +56,7 @@ Although the model likely responded in a preferred manner, it may not always be 
 
 Consider the example output for the input: **Which tents can fit 4 or more people?**
 
-:::image type="content" source="../media/manual-evaluation-wrong-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is very long and verbose.":::
+:::image type="content" source="../media/manual-evaluation-wrong-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is very long and verbose." lightbox="../media/manual-evaluation-wrong-formatting.png":::
 
 Let’s say that for any response focused on product recommendations, the recommended products should be in bullet-point format and only the product name and price should be provided.
 
@@ -86,7 +86,7 @@ In the **Assistant setup** section, for the **System message**, enter the follow
 
 With a new system message in place, let’s run another manual evaluation, specifically for the rows that were marked with a thumb down.
 
-:::image type="content" source="../media/manual-evaluation-correct-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is short and only lists the product and its cost.":::
+:::image type="content" source="../media/manual-evaluation-correct-formatting.png" alt-text="A screenshot of the model response within the manual evaluation results. The model's response is short and only lists the product and its cost." lightbox="../media/manual-evaluation-correct-formatting.png":::
 
 1. In the **Manual evaluation result** section, select **Run** next to the following inputs:
 

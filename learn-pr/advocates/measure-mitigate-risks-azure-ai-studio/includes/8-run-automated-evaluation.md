@@ -1,6 +1,6 @@
 Automated Evaluations within Azure AI Studio execute an AI-assisted evaluation which uses LLMs, such as GPT-4, to evaluate the output of generative AI language systems. This process is achieved by instructing an LLM to annotate certain aspects of the AI-generated output. For instance, you can provide GPT-4 with a relevance severity scale (for example, provide criteria for relevance annotation on a 1-5 scale) and then ask GPT-4 to annotate the relevance of an AI system’s response to a given question.
 
-:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Studio. The screenshot displays the metric dashboard.":::
+:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Studio. The screenshot displays the metric dashboard." lightbox="../media/automated-evaluation-results.png":::
 
 We’re able to use AI-assisted evaluation to assess both the performance and safety of your generative AI application. AI-assisted evaluations can be beneficial in scenarios where ground truth and expected answers aren't available. In many generative AI scenarios, such as open-ended question answering or creative writing, single correct answers don't exist, making it challenging to establish the ground truth or expected answers that are necessary for traditional metrics.
 

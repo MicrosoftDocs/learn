@@ -2,11 +2,11 @@ While it’s great to use the model’s capabilities to generate responses to ge
 
 RAG is a pattern used in AI that uses a large language model (LLM) to generate answers with your own data. When a user asks a question, the data store is searched based on user input. The user question is then combined with the matching results and sent to the LLM using a prompt (explicit instructions to an AI or machine learning model) to generate the desired answer.
 
-:::image type="content" source="../media/rag-pattern.png" alt-text="Screenshot of the flow of the RAG pattern. The pattern starts with a question and then flows to your data store, matching results, the prompt, the LLM, and finally the response.":::
+:::image type="content" source="../media/rag-pattern.png" alt-text="Screenshot of the flow of the RAG pattern. The pattern starts with a question and then flows to your data store, matching results, the prompt, the LLM, and finally the response." lightbox="../media/rag-pattern.png":::
 
 For RAG to work well, we need to find a way to search and send your data in an easy and cost efficient manner to the LLMs. This process is achieved by using an index. An index is a data store that allows you to search data efficiently. An index can be optimized for LLMs by creating vectors (text data converted to number sequences using an embedding model). A good index usually has efficient search capabilities like keyword searches, semantic searches, vector searches, or a combination of these examples. This optimized RAG pattern can be illustrated as follows.
 
-:::image type="content" source="../media/rag-pattern-with-index.png" alt-text="Screenshot of the flow of the RAG pattern with an index. The pattern starts with a question and then flows to your index, matching results, the prompt, the LLM, and finally the response.":::
+:::image type="content" source="../media/rag-pattern-with-index.png" alt-text="Screenshot of the flow of the RAG pattern with an index. The pattern starts with a question and then flows to your index, matching results, the prompt, the LLM, and finally the response." lightbox="../media/rag-pattern-with-index.png":::
 
 Azure AI provides an index asset to use with RAG pattern. The index asset contains important information like:
 - Where is your index stored
@@ -23,7 +23,7 @@ Let’s now upload the data and then create an index.
 
 Data can be sourced from an existing Azure Blob Storage connection, a storage URL, or uploaded via the **Add your data** interface. Furthermore, data can be organized into either a single reference file or a folder.
 
-:::image type="content" source="../media/add-your-data.png" alt-text="A screenshot of the add your data window within Azure AI Studio.":::
+:::image type="content" source="../media/add-your-data.png" alt-text="A screenshot of the add your data window within Azure AI Studio." lightbox="../media/add-your-data.png":::
 
 Let’s add the Contoso Camping Store product data via an upload of the products folder.
 
@@ -40,7 +40,7 @@ Let’s add the Contoso Camping Store product data via an upload of the products
 
 Now that the data is uploaded, let’s create an index.
 
-:::image type="content" source="../media/create-an-index.png" alt-text="A screenshot of an index titled products-index created in Azure AI Studio.":::
+:::image type="content" source="../media/create-an-index.png" alt-text="A screenshot of an index titled products-index created in Azure AI Studio." lightbox="../media/create-an-index.png":::
 
 1. Within the left navigation in the **Components** section, select **Indexes**.
 1. Select **+ New index**
@@ -63,7 +63,7 @@ Now that the data is uploaded, let’s create an index.
 
 We can now return to the **Chat playground** to test the model and validate whether it has the capability to ground its responses about Contoso Camping Store products with the provided product data.
 
-:::image type="content" source="../media/add-data-chat-playground.png" alt-text="A screenshot of the add your data section within the chat playground of Azure AI Studio. The fields for the section are highlighted.":::
+:::image type="content" source="../media/add-data-chat-playground.png" alt-text="A screenshot of the add your data section within the chat playground of Azure AI Studio. The fields for the section are highlighted." lightbox="../media/add-data-chat-playground.png":::
 
 1. Within the left navigation, in the **Project playground** section, select **Chat**.
 1. On the **Chat playground** page, select the **Add your data** tab.
