@@ -43,10 +43,9 @@ The following sections contain an overview of the main project folders and files
 
 The `.csproj` project file is used by MSBuild to:
 
-* Build and manage the project
-* Manage dependencies
-* Configure which version of .NET to use during the build.
-* Package the app for deployment.
+* Configure how to build the project
+* Specify which version of .NET to target
+* Manage project dependencies
 
 ### The `MyWebApp.sln` solution file
 
