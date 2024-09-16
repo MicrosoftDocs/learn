@@ -21,7 +21,7 @@ After the previous exercise, the web API application is ready to publish. In ord
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-04.png" alt-text="Choose Specific Target.":::
 
-1. Let's create a new **Azure App Service** instance through Visual Studio, for this exercise. In the future, you could use an existing one. Select the `➕` button at the right-hand side of the dialogue modal to create a new **Azure App Service** instance.
+1. Let's create a new **Azure App Service** instance through Visual Studio, for this exercise. In the future, you could use an existing one. Select the `➕` button at the dialogue modal to create a new **Azure App Service** instance.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-05.png" alt-text="Select Create New App Service.":::
 
@@ -37,7 +37,7 @@ After the previous exercise, the web API application is ready to publish. In ord
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-08.png" alt-text="Finish New App Service.":::
 
-1. Your web API app is ready to deploy. In **Settings**, in the main pane, confirm that the Target Framework references your version of Visual Studio. Select the **Publish** button at the right-top corner of Visual Studio.
+1. Your web API app is ready to deploy. In **Settings**, in the main pane, confirm that the Target Framework references your version of Visual Studio. Select the **Publish** button in Visual Studio.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-09.png" alt-text="Publish Web API.":::
 
