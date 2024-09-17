@@ -37,7 +37,7 @@ quiz:
     - content: Regression algorithms because they group similar data points together based on their characteristics.
       isCorrect: false
       explanation: "Incorrect: Clustering algorithms group similar data points together which can be used for tasks like music or movie recommendations."
-    - content: Classification algorithms because they are used to find the best solution for relators such as determining the quickest sale.
+    - content: Classification algorithms because they are used to find the best solution for realtors such as determining the quickest sale.
       isCorrect: false
       explanation: "Incorrect: Optimization algorithms are used to find the best solution among many possible options, such as determining the quickest route for a delivery."
   - content: "Which milestone most significantly contributed to the practical applications of AI in every day life and why?"
