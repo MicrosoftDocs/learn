@@ -12,7 +12,6 @@ Supplemental Resources:
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 - [Create an Azure Machine Learning workspace](https://aka.ms/CreateAzureWorkspace) 
 - [Facial Recognition](https://aka.ms/faceapi) 
-- [AI Demos](https://aka.ms/demosai) 
 - [Azure Cognitive Services](https://aka.ms/cognitiveservices) 
 - [What is Language Understanding (LUIS)?](https://aka.ms/whatisLUIS) 
 - [Microsoft AI Business School](https://aka.ms/AIBS)
