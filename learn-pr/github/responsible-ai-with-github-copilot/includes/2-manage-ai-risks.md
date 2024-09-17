@@ -1,4 +1,4 @@
-:::image type="content" source="../media/picture1.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/picture1.png" border="false":::
+:::image type="content" source="../media/manage-ai-risks.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/picture1.png" border="false":::
 
 Artificial Intelligence (AI) presents numerous opportunities for innovation and efficiency, but it also comes with significant risks that need to be carefully managed.
 
@@ -12,4 +12,4 @@ In the next section, we’ll discuss the concept of responsible AI and how to ap
 
 Responsible AI is an approach to developing, assessing, and deploying artificial intelligent systems in a safe, trustworthy, and ethical way. AI systems are the product of many decisions made by the people who develop and deploy them. From system purpose to how people interact with AI systems, Responsible AI can help proactively guide these decisions toward more beneficial and equitable outcomes. That means keeping people and their goals at the center of system design decisions and respecting enduring values like fairness, reliability, and transparency.
 
-In the next unit, we’ll cover Microsoft and GitHub’s Six Principles of Responsible AI.
+In the next unit, we'll cover Microsoft and GitHub's Six Principles of Responsible AI.

@@ -29,7 +29,7 @@ products:
 - github
 units:
 - learn.github.responsible-ai-with-github-copilot.introduction
-- learn.github.responsible-ai-with-github-copilot.managing-ai-risks
+- learn.github.responsible-ai-with-github-copilot.manage-ai-risks
 - learn.github.responsible-ai-with-github-copilot.six-principles-of-responsible-ai
 - learn.github.responsible-ai-with-github-copilot.knowledge-check
 - learn.github.responsible-ai-with-github-copilot.summary
