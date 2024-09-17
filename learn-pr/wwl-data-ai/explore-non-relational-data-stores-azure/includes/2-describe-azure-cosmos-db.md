@@ -1,4 +1,4 @@
-![Diagram of Azure Cosmos DB as a store for multiple NoSQL formats](../media/azure-cosmos-db.png)
+![Diagram of Azure Cosmos DB as a store for multiple NoSQL formats.](../media/azure-cosmos-db.png)
 
 Azure Cosmos DB supports multiple application programming interfaces (APIs) that enable developers to use the programming semantics of many common kinds of data store to work with data in a Cosmos DB database. The internal data structure is abstracted, enabling developers to use Cosmos DB to store and query data using APIs with which they're already familiar.
 
