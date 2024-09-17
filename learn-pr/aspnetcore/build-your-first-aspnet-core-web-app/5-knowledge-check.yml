@@ -53,9 +53,6 @@ quiz:
     - content: "When you want to debug your application with detailed logging"
       isCorrect: false
       explanation: "`dotnet watch` isn't used for debugging with detailed logging. It's used to watch for file changes and recompile the application during development."                         
-    - content: "When you want to run your application without any launch profile"
-      isCorrect: false
-      explanation: "`dotnet watch` is used for development to watch for file changes and recompile the application. It isn't related to launch profiles."
     - content: "When you want to run your application with a different framework version"
       isCorrect: false
       explanation: "`dotnet watch` isn't used for running applications with custom build configurations. It's used to watch for file changes and recompile the application during development."
