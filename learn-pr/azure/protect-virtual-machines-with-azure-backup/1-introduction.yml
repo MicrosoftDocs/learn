@@ -3,7 +3,7 @@ uid: learn.protect-virtual-machines-with-azure-backup.1-introduction
 metadata:
   title: Introduction
   description: Learn about Azure Backup, and how you can use the Azure portal to back up and restore a virtual machine.
-  ms.date: 10/10/2023
+  ms.date: 09/05/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
