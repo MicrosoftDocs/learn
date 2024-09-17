@@ -1,6 +1,6 @@
 Azure Data Lake Store (Gen1) is a separate service for hierarchical data storage for analytical data lakes, often used by so-called *big data* analytical solutions that work with structured, semi-structured, and unstructured data stored in files. Azure Data Lake Storage Gen**2** is a newer version of this service that is integrated into Azure Storage; enabling you to take advantage of the scalability of blob storage and the cost-control of storage tiers, combined with the hierarchical file system capabilities and compatibility with major analytics systems of Azure Data Lake Store.
 
-![Screenshot of an Azure blob storage container with a hierarchical namespace](../media/azure-data-lake.png)
+![Screenshot of an Azure blob storage container with a hierarchical namespace.](../media/azure-data-lake.png)
 
 Systems like Azure Databricks can mount a distributed file system hosted in Azure Data Lake Store Gen2 and use it to process huge volumes of data. Microsoft Fabric tenants automatically provision OneLake, built on top of Azure Data Lake Storage Gen2.
 
