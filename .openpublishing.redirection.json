@@ -32070,6 +32070,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-azure-ad-tenant.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-create-vm.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.create-basic-hybrid-environment.badge.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/index.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/introduction.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/knowledge-check.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/prepare.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/summary.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/3-exercise-observe-data-loss.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
       "redirect_document_id": false
@@ -32482,6 +32527,26 @@
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/4-summary.md",
       "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4b-platform-services.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5-exercise-azure-synapse.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5b-fabric.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5c-exercise-fabric.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
       "redirect_document_id": false
     }
   ]

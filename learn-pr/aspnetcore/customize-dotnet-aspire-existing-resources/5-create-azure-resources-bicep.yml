@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll see how to customize an Azure deployment of a .NET Aspire app by editing Bicep files.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |
