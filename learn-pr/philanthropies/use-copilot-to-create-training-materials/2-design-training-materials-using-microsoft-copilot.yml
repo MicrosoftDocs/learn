@@ -9,7 +9,7 @@ metadata:
   ms.date: 03/06/2024
   ms.topic: unit
   ms.collection:
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
 durationInMinutes: 40
 content: |
   [!include[](includes/2-design-training-materials-using-microsoft-copilot.md)]

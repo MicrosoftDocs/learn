@@ -8,7 +8,9 @@ metadata:
   author: msakande
   ms.author: mopeakande
   ms.topic: module
-  ms.collection: ce-skilling-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-skilling-ai-copilot
 title: Introduction to machine learning
 summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
 abstract: | 

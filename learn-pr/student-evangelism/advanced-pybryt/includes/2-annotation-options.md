@@ -113,7 +113,7 @@ As you can see, the length of `max_ref.annotations` is 5 even though 1,000 annot
 
 The `group` option is similar to the `name` option in that it's used to group annotations together, but these annotations don't necessarily represent the "same annotation"; instead, they're grouped into meaningful chunks so that specific portions of references can be checked one at a time instead of all at once. This option can be useful in constructing assignments with multiple questions in PyBryt.
 
-For example, consider an assignment that asks students to implement a `mean` and `median` function. You may divide it up into two questions like so:
+For example, consider an assignment that asks students to implement a `mean` and `median` function. You can divide it up into two questions like so:
 
 ```python
 # Question 1

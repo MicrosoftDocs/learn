@@ -5,8 +5,8 @@ metadata:
   description: Learn how to deploy models to a managed online endpoint for real-time inferencing.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/11/2023
-  ms.service: azure
+  ms.date: 08/25/2024
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot

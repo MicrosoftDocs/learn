@@ -318,7 +318,7 @@ The user information will be `undefined` if they're not logged in, so the change
 1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class.
 
    ```typescript
-   providers = ['twitter', 'github', 'aad'];
+   providers = ['x', 'github', 'aad'];
    ```
 
 1. Add the following `redirect` property to capture the current URL for the post login redirection.
@@ -360,7 +360,7 @@ You should now see this webpage in your browser.
 1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function.
 
    ```javascript
-   const providers = ['twitter', 'github', 'aad'];
+   const providers = ['x', 'github', 'aad'];
    ```
 
 1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
@@ -401,7 +401,7 @@ You should now see this webpage in your browser.
 1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script.
 
    ```javascript
-   const providers = ['twitter', 'github', 'aad'];
+   const providers = ['x', 'github', 'aad'];
    ```
 
 1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
@@ -447,7 +447,7 @@ You should now see this webpage in your browser.
 1. Edit the file `vue-app/src/components/nav-bar.vue`, and add a list of providers to the data object.
 
    ```javascript
-    providers: ['twitter', 'github', 'aad'],
+    providers: ['x', 'github', 'aad'],
    ```
 
 1. Add the following`redirect` property to capture the current URL for the post login redirection.
@@ -544,7 +544,7 @@ import { UserInfo } from '../model/user-info';
   `,
 })
 export class NavComponent implements OnInit {
-  providers = ['twitter', 'github', 'aad'];
+  providers = ['x', 'github', 'aad'];
   redirect = window.location.pathname;
   userInfo: UserInfo;
 
@@ -596,7 +596,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = (props) => {
-  const providers = ['twitter', 'github', 'aad'];
+  const providers = ['x', 'github', 'aad'];
   const redirect = window.location.pathname;
   const [userInfo, setUserInfo] = useState();
 
@@ -686,7 +686,7 @@ Your completed file should now look like the following:
   import { onMount } from 'svelte';
   import { Link } from 'svelte-routing';
 
-  const providers = ['twitter', 'github', 'aad'];
+  const providers = ['x', 'github', 'aad'];
   const redirect = window.location.pathname;
   let userInfo = undefined;
 
@@ -779,7 +779,7 @@ Your completed file should now look like the following:
           type: Object,
           default() {},
         },
-        providers: ['twitter', 'github', 'aad'],
+        providers: ['x', 'github', 'aad'],
         redirect: window.location.pathname,
       };
     },

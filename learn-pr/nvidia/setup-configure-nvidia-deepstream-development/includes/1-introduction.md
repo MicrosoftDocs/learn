@@ -15,10 +15,10 @@ Your boss wants to adopt AI, specifically computer vision, to aid the automation
 
 After you finish this module, you'll be able to:
 
-- Describe the components of Intelligent Video Analytics applications
-- Install the NVIDIA DeepStream SDK and dependencies onto an x86 host
-- Run NVIDIA DeepStream applications
-- Modify and customize NVIDIA DeepStream application configurations
+- Describe the components of Intelligent Video Analytics applications.
+- Install the NVIDIA DeepStream SDK and dependencies onto an x86 host.
+- Run NVIDIA DeepStream applications.
+- Modify and customize NVIDIA DeepStream application configurations.
 
 ## What is the main goal?
 

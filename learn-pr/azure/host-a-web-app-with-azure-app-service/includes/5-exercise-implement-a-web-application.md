@@ -52,9 +52,9 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
           Content root path: /home/cephas_lin/BestBikeApp
     ```
 
-    The output describes the situation after starting your app: the application is running and listening at port 5022.
+    The output describes the situation after starting your app: the application is running and listening at port 5022. Take note of the port on which your application is running and listening from your output.
 
-1. From another Cloud Shell session, run the following command to browse to your web application:
+1. From another Cloud Shell session, run the following command to browse to your web application, replacing *5000* with the port you noted in the last step:
 
     ```bash
     curl -kL http://127.0.0.1:5000/

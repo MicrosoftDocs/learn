@@ -19,7 +19,7 @@ quiz:
       isCorrect: false
     - content: "Azure Service Health"
       isCorrect: true
-    - content: "@AzureSupport on Twitter"
+    - content: "@AzureSupport on X"
       isCorrect: false
     - content: "Microsoft Teams"
       isCorrect: false

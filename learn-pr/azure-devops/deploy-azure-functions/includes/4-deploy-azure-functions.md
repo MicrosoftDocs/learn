@@ -87,6 +87,4 @@ Add the following highlighted code to the end of your pipeline. Be sure to match
     http://tailspin-space-game-leaderboard-4692.azurewebsites.net/api/LeaderboardFunction?pageSize=10
     ```
 
-    :::image type="content" source="../media/4-leaderboard-azure-functions.png" alt-text="A screenshot of a web browser showing the JSON response from the leaderboard API Azure Functions app.":::
-
 **Andy:** This turned out great! Everyone should be pretty impressed with the potential we've shown here.

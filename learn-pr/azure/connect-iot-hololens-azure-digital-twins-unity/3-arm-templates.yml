@@ -4,9 +4,9 @@ title: Azure Resource Manager templates
 metadata:
   title: Azure Resource Manager templates
   description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and in mixed reality.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

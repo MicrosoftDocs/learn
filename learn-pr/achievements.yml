@@ -3852,3 +3852,63 @@ achievements:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.support-concurrency-blob-storage.badge
+  type: badge
+  title: Support concurrency in Blob storage apps with ETags and blob leases
+  summary: Develop apps that properly support concurrency against data in Azure Blob storage.
+  iconUrl: /training/achievements/support-concurrency-blob-storage.svg
+- uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.badge
+  type: badge
+  title: Organize and inventory hybrid and multicloud machines through Arc-enabled servers
+  summary: Discover the key products and services that allow you to organize and inventory hybrid and multicloud virtual machines through Azure Arc-enabled servers.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.access-blob-storage-metrics-from-code.badge
+  type: badge
+  title: Access metrics from your Azure Blob Storage Containers Programmatically
+  summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
+  iconUrl: /training/achievements/access-blob-storage-metrics-from-code.svg
+- uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
+  type: badge
+  title: Classify and moderate text with Azure Content Moderator
+  summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
+  iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+- uid: learn.wwl.configure-resources-arm-templates.badge
+  type: badge
+  title: Configure resources with Azure Resource Manager templates
+  summary: You'll learn how to use Azure Resource Manager templates to consistently deploy assets.
+  iconUrl: /training/achievements/arm-templates-resources.svg
+- uid: learn.wwl.configure-virtual-machine-extensions.badge
+  type: badge
+  title: Configure virtual machine extensions
+  summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
+  iconUrl: /training/achievements/virtual-machines-configure-extension.svg
+- uid: learn.azure.copy-blobs-using-dotnet.badge
+  type: badge
+  title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
+  summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender.trophy
+  type: trophy
+  title: Enhance IoT solution security by using Microsoft Defender for IoT
+  summary: You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
+  iconUrl: /training/achievements/azure-defender-security-solution.svg
+- uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot.badge
+  type: badge
+  title: Examine Microsoft Defender for Cloud and Microsoft Defender for IoT
+  summary: This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Microsoft Defender for IoT.
+  iconUrl: /learn/achievements/iot-security-fundamentals.svg
+- uid: learn.wwl.examine-security-fundamentals-for-iot.badge
+  type: badge
+  title: Examine security fundamentals for IoT
+  summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
+  iconUrl: /learn/achievements/security-center-defender-examine.svg
+- uid: learn.wwl.examine-azure-defender-for-iot-security-agents.badge
+  type: badge
+  title: Examine Microsoft Defender for IoT security agents
+  summary: This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
+  iconUrl: /learn/achievements/azure-defender-iot-security-agents.svg
+- uid: learn.wwl.explore-azure-defender-for-iot-implementation.badge
+  type: badge
+  title: Explore Microsoft Defender for IoT implementation
+  summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
+  iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
