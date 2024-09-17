@@ -1,9 +1,9 @@
 > [!IMPORTANT]
-> This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. Instructions for removing all resources are included at the end of the module.
+> This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. We've included instructions for removing all resources at the end of the module.
 
 This module assumes that you have Azure CLI installed. You can run commands from a Command Prompt window or Windows PowerShell. We recommend PowerShell.
 
-The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
+The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles or the Owner role on the Azure subscription.
 
 > [!IMPORTANT]
 > If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
@@ -16,7 +16,7 @@ In the previous unit, you cloned or downloaded [the repository from GitHub](http
 
 ## Sign in to Azure using Azure CLI
 
-1. Locate the *azuredeploy.bicep* script that has been created for you. Typically, this file is in the root of the repository folder.
+1. Locate the *azuredeploy.bicep* script that we created for you. Typically, this file is in the root of the repository folder.
 1. From the **Start** menu, open PowerShell. All Azure CLI commands run in your PowerShell console.
 1. Change the current path to the location of the *azuredeploy.bicep* script you found in step 1.
 
@@ -59,7 +59,7 @@ Run the following command to create a service principal and configure its access
 az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> > AppCredentials.txt
 ```
 
-The output from this command is redirected from standard output to *AppCredentials.txt* text file. The command creates the file in the same directory where your run the command. Any errors that might occur are displayed in your PowerShell console. Open the file to retrieve the credentials to configure the telemetry simulator application later.
+This command's output is redirected from standard output to an *AppCredentials.txt* text file. The command creates the file in the same directory where you run the command. Any errors that might occur are displayed in your PowerShell console. Open the file to retrieve the credentials to configure the telemetry simulator application later.
 
 > [!NOTE]
 > Be careful where you keep this file, because it contains credentials. Consider deleting the file after completing this learning path.
@@ -106,7 +106,7 @@ Pay particular attention to the location. It must be `eastus`. This region is on
 
 ## Deploy the ARM template to the newly created resource group
 
-Deploy the supplied *bicep* file to your resource group and redirect the output to a text file called *ARM_deployment_out.txt*. This process can take 10-15 minutes to complete.
+Deploy the supplied *bicep* file to your resource group and redirect the output to a text file called *ARM_deployment_out.txt*. This process can take 10 to 15 minutes to complete.
 
 ```console
 az deployment group create --template-file azuredeploy.bicep --resource-group ${projectname}-rg `
@@ -143,7 +143,7 @@ az deployment group show --name azuredeploy --resource-group ${projectname}-rg `
 
 ## Query Azure deployment for resource group connection parameter
 
-1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module. 
+1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module.
 
    ```console
    az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt

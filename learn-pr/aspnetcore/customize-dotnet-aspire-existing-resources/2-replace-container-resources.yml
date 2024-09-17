@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll see how to customize an Azure deployment of a .NET Aspire app to use the Azure Redis Cache service instead of an in-container Redis instance. You'll also learn how to use Azure Database for PostgreSQL instead of an in-container PostgreSQL server.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |
