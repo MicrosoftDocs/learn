@@ -8,7 +8,7 @@ The built-in authentication feature for App Service and Azure Functions can save
 
 * Azure App Service allows you to integrate various auth capabilities into your web app or API without implementing them yourself.
 * It’s built directly into the platform and doesn’t require any particular language, SDK, security expertise, or code.
-* You can integrate with multiple login providers. For example, Microsoft Entra ID, Facebook, Google, Twitter.
+* You can integrate with multiple login providers. For example, Microsoft Entra ID, Facebook, Google, X.
 
 ## Identity providers
 
@@ -19,7 +19,7 @@ App Service uses federated identity, in which a third-party identity provider ma
 | Microsoft identity platform | `/.auth/login/aad` | [App Service Microsoft identity platform login](/azure/app-service/configure-authentication-provider-aad) |
 | Facebook | `/.auth/login/facebook` | [App Service Facebook login](/azure/app-service/configure-authentication-provider-facebook) |
 | Google | `/.auth/login/google` | [App Service Google login](/azure/app-service/configure-authentication-provider-google) |
-| Twitter | `/.auth/login/twitter` | [App Service Twitter login](/azure/app-service/configure-authentication-provider-twitter) |
+| X | `/.auth/login/twitter` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 | GitHub | `/.auth/login/github` | [App Service GitHub login](/azure/app-service/configure-authentication-provider-github) |
 

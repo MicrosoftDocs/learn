@@ -48,6 +48,7 @@ units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-vulnerability-management
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-threat-intelligence
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-copilot-in-defender-xdr
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.summary-resources
 badge:

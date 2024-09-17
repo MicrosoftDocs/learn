@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create Azure Storage resources
   description: Exercise - Create Azure Storage resources
   ms.date: 10/23/2023
-  author: normesta
-  ms.author: normesta
+  author: pauljewellmsft
+  ms.author: pauljewell
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

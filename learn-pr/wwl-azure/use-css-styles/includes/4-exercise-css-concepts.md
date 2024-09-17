@@ -46,7 +46,7 @@ You'll use existing HTML to allow us to focus solely on the CSS. The HTML includ
                 <ul>
                     <li><a href="https://github.com/">GitHub</a></li>
                     <li><a href="https://linkedin.com/in/">LinkedIn</a></li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://x.com/">X</a></li>
                 </ul>
             </div>
 

@@ -147,7 +147,7 @@ When you see `Message was sent successfully`, run the following command to see h
 
 ```azurecli
 az servicebus topic subscription show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --topic-name salesperformancemessages \
     --name Americas \
     --query messageCount \
@@ -354,7 +354,7 @@ Run the following command to confirm that there are no remaining messages in the
 
 ```azurecli
 az servicebus topic subscription show \
-     --resource-group <rgn>[sandbox resource group name]</rgn> \
+     --resource-group "<rgn>[sandbox resource group name]</rgn>" \
      --topic-name salesperformancemessages \
      --name Americas \
      --query messageCount \

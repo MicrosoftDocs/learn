@@ -13,11 +13,13 @@ You must configure two pieces of information in your two console apps to access 
 
 You can get these values from the connection string.
 
-1. In Azure Cloud Shell on the right, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
+1. Run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name RootManageSharedAccessKey \
         --query primaryConnectionString \
         --output tsv \
@@ -213,7 +215,7 @@ You can get these values from the connection string.
 
     ```azurecli
     az servicebus queue show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name salesmessages \
         --query messageCount \
         --namespace-name <namespace-name>
@@ -441,7 +443,7 @@ Run the following code to confirm that all the messages have been removed from t
 
 ```azurecli
 az servicebus queue show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name salesmessages \
     --query messageCount \
     --namespace-name <namespace-name>
