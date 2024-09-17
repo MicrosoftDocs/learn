@@ -23,7 +23,7 @@ CodeQL supports both compiled and interpreted languages, and can find vulnerabil
 - JavaScript/TypeScript
 - Python
 - Ruby
-- Swifty
+- Swift
 
 The next section explains how to add the CodeQL workflow to your repository. You'll learn how to set up CodeQL using external tools in the *Enable code scanning with third party tools* unit.
 

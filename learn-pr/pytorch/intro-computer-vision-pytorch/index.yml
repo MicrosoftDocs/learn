@@ -9,6 +9,7 @@ metadata:
   ms.service: azure-ai-vision
   ms.topic: module
   ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 title: Introduction to Computer Vision with PyTorch 

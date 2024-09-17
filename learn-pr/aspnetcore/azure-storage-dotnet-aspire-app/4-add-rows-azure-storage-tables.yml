@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll learn how to use the Azure Storage Tables service as a repository for semi-structured data and how to access that data using the .NET Aspire Azure Data Tables component.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |

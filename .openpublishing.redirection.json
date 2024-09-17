@@ -32054,9 +32054,479 @@
       "redirect_url": "/training/modules/implement-manage-networking-azure-virtual-desktop/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-language/csharp-modify-content/3-exercise-lastindexof-indexofany.md",
       "redirect_url": "/training/modules/csharp-modify-content/3-exercise-lastindexof-indexof",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/2-last-writer-wins.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-azure-ad-tenant.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-create-vm.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.create-basic-hybrid-environment.badge.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/index.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/introduction.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/knowledge-check.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/prepare.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/summary.yml", 
+      "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/3-exercise-observe-data-loss.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/4-implementing-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/5-exercise-optimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/6-implementing-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/7-exercise-pessimistic-concurrency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/support-concurrency-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/concurrency-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/2-organize-categorize-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/3-report-on-server-metadata.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/resource-graph/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/4-deploy-manage-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/governance/policy/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/organize-and-inventory-machines-through-arc-enabled-servers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/servers/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/2-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/3-exercise-connect-to-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/4-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/5-exercise-access-azure-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/access-blob-storage-metrics-from-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/3-exercise-create-moderator-service.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/4-exercise-use-the-api-console.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/1-introduction.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/5-knowledge-check.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/2-overview-of-text-moderation.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/classify-and-moderate-text-with-azure-content-moderator/6-summary.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/index.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/5-consider-bicep-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/4-explore-template-parameters.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/3-explore-template-schema.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/7-simulation-template.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/8-knowledge-check.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/2-review-template-advantages.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/6-review-quickstart-templates.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/9-summary-resources.md",
+      "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/index.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/3-implement-custom-script-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/4-implement-desired-state-configuration.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/2-implement-virtual-machines-extensions.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/1-introduction.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/5-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-extensions/6-summary-resources.md",
+      "redirect_url": "/training/modules/implement-desired-state-configuration-dsc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/2-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/copy-blobs-using-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-copy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/enhance-iot-solution-security-by-using-azure-defender/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/4-iot-security-best-practices.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/3-iot-security-from-ground-up.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/5-iot-security-architecture-threat-modeling.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/2-security-recommendations-for-azure-iot-deployments.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-security-fundamentals-for-iot/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/2-what-is-azure-security-center.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/3-introduction-to-azure-defender-for-iot.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/4-azure-defender-for-iot-deployment-options.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/5-configure-built-iot-hub-integration.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/6-built-alerts.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/7-custom-alerts.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/8-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/9-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/2-introduction-to-security-agents.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/3-security-agent-authentication.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/4-security-agent-built-alerts.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/5-security-recommendations.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/6-baseline-custom-checks.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/7-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-defender-iot-security-agents/8-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/2-implement-azure-defender-for-iot.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/3-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/4-summary.md",
+      "redirect_url": "/training/browse/",
       "redirect_document_id": false
     }
   ]
