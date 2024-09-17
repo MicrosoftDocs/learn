@@ -1,4 +1,4 @@
-Self-contained deployments include the app and its dependencies, as well as the .NET runtime. Since the .NET runtime is included with the app, the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments, but it also makes them more portable. It also makes it easier to run multiple versions of the .NET runtime side by side on the same machine.
+Self-contained deployments include the app and its dependencies, as well as the .NET runtime. Since the .NET runtime is included with the app, the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments. Self-contained apps must also handle deploying .NET runtime updates to get the latest patches.
 
 Your IT department has notified your team that for disaster recovery purposes, they are testing your app on servers that don't have the .NET runtime installed. They intend to test the app on both a 64-bit Windows server and a 64-bit Linux server. To support this testing, you need to publish the app as a self-contained deployment for each environment.
 
@@ -27,14 +27,9 @@ In this exercise, you'll publish an ASP.NET Core app as self-contained deploymen
     - `-o publish-scd-win64` specifies the output directory for the published app.
     - `--self-contained` specifies that the app should be published as a self-contained deployment.
 
-    This command builds and publishes the app as a self-contained deployment for 64-bit Windows to the *publish-scd-win64* directory.
+    This command builds and publishes the app as a self-contained deployment for 64-bit Windows to the *MyWebApp/publish-scd-win64* directory.
 
-1. Set your location to the *publish-scd-win64* directory and list the files in the directory.
-
-    ```dotnetcli
-    cd publish-scd-win64
-    dir
-    ```
+1. Review the contents of the *MyWebApp/publish-scd-win64* directory in the Explorer window.
 
     Note that the list of files is much larger than the list of files in the *publish-fd* directory. This is because the self-contained deployment includes the same files as the framework-dependent deployment, as well as the .NET runtime. The *MyWebApp.exe* file is the 64-bit Windows executable for the app.
 
@@ -46,12 +41,7 @@ In this exercise, you'll publish an ASP.NET Core app as self-contained deploymen
 
     This time, the `-r linux-x64` option specifies that the app should be published for 64-bit Linux.
 
-1. Set your location to the *publish-scd-linux64* directory and list the files in the directory.
-
-    ```dotnetcli
-    cd publish-scd-linux64
-    dir
-    ```
+1. Review the contents of the *MyWebApp/publish-scd-linux64* directory in the Explorer window.
 
     The list of files in the *publish-scd-linux64* directory is similar to the list of files in the *publish-scd-win64* directory, but the executable file is named *MyWebApp* instead of *MyWebApp.exe*. This is because Linux doesn't use file extensions to determine file types. After you deploy the app to a Linux server, you'll need to grant execute permission to the *MyWebApp* file with the `chmod +x` command before it can run.
 

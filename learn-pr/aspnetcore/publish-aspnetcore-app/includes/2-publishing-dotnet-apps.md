@@ -40,4 +40,9 @@ If you're deploying to a containerized environment, you can package your ASP.NET
 
 ### Azure
 
-If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. The Azure Developer CLI (azd) tool makes it easy to deploy your app to Azure from the command line. You can also use Azure DevOps or GitHub Actions to automate your deployment process.
+If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. A variety of tools make it easy to deploy your app to Azure from the command line. These tools include:
+
+- Azure Tools extension for Visual Studio Code
+- Visual Studio
+- Azure CLI
+- Azure Developer CLI (azd)

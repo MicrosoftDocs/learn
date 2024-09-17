@@ -6,43 +6,46 @@ In this exercise, you'll publish an ASP.NET Core app as a framework-dependent de
 
 ## Create an ASP.NET Core app
 
-You'll need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using the .NET CLI.
+You'll need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using C# Dev Kit extension in Visual Studio Code.
 
-1. Open a terminal window.
-1. Run the following command to create a new ASP.NET Core app:
+1. Launch Visual Studio Code.
+1. Press **Ctrl+Shift+P** to open the command palette.
+1. Search for and select **.NET New Project**.
+1. Search for and select **ASP.NET Core Empty**.
 
-    ```dotnetcli
-    dotnet new webapp -o MyWebApp
-    ```
+    :::image type="content" source="../media/aspnetcore-empty" alt-text="A screenshot of the command palette with ASP.NET Core Empty selected."  lightbox="../media/aspnetcore-empty.png":::
 
-    This command creates a new ASP.NET Core web app in a folder named `MyWebApp`.
+1. Select or create a folder for the new project.
+1. Name the new app *MyWebApp*.
+1. Select **Create project** to create the project.
 
-1. Change to the `MyWebApp` directory and run the following command to build the app:
+## Run the app
 
-    ```dotnetcli
-    dotnet build
-    ```
+Test the app to make sure it runs.
 
-    This command compiles the app and its dependencies.
+1. In Visual Studio Code, press **F5** to build and run the app.
+    1. When prompted, select **C#** as the debugger.
+    1. When prompted, select **C#: MyWebApp [Default Configuration]** as the launch configuration to use. 
 
-1. Run the following command to start the app:
+    This command starts the app and hosts it on a local web server. A browser window opens and displays, "Hello, World!".
 
-    ```dotnetcli
-    dotnet run
-    ```
-
-    This command starts the app and hosts it on a local web server.
-
-1. In the output from `dotnet run`, find the URL where the app is hosted (for example, `http://localhost:5000`). Hold the **Ctrl** key and click the URL to open it in a web browser. You should see the default ASP.NET Core welcome page.
+1. Close the browser window and stop the app by pressing **Shift+F5** in Visual Studio Code.
 
 ## Publish the app as a framework-dependent deployment
 
 Now that you've verified that the app runs correctly, you can publish it as a framework-dependent deployment.
 
+1. In Visual Studio Code, press **Ctrl+`** to open the terminal window.
+1. Set your location to the *MyWebApp* directory.
+
+    ```dotnetcli
+    cd MyWebApp
+    ```
+
 1. Run the following command to publish the app:
 
     ```dotnetcli
-    dotnet publish -c Release -o publish-fd
+    dotnet publish -c Release -o publish-fd    
     ```
 
     In the preceding command:
@@ -52,27 +55,18 @@ Now that you've verified that the app runs correctly, you can publish it as a fr
 
     This command publishes the app as a framework-dependent deployment to the *publish-fd* directory.
 
-1. Change to the *publish-fd* directory and list the files in the directory. 
+1. In the Visual Studio Code Explorer window, expand the contents of the *MyWebApp/publish-fd* directory and view the list of files. The directory includes the app's files and dependencies, but not the .NET runtime or source code files. Some of the included files and directories are:
+
+    - **MyWebApp.dll**`**: The compiled app.
+    - **Other *MyWebApp.* files**: Additional files needed to run the app.
+    - **appsettings.json**: The configuration file for the app.
+    - **web.config**: The configuration file for IIS (Internet Information Services) on Windows.
+    - **wwwroot**: When present, this directory contains published static web assets, such as HTML, CSS, and JavaScript files. This directory isn't generated if the project doesn't contain any static web assets, so it isn't present in this case.
+
+1. Set your location to the *publish-fd* directory and run the app.
 
     ```dotnetcli
     cd publish-fd
-    dir
-    ```
-
-    > [!NOTE]
-    > Most command shells contain a `dir` command that lists the files in the current directory. If you're using a different shell, use the appropriate command to list the files, such as `ls`.
-
-    A list of files that includes the app's files and dependencies, but not the .NET runtime or source code files, is displayed. Some of the included files and directories are:
-
-    - `MyWebApp.dll`: The compiled app.
-    - Other `MyWebApp.*` files: Additional files needed to run the app.
-    - `wwwroot`: The directory that contains static web assets, such as HTML, CSS, and JavaScript files.
-    - `appsettings.json`: The configuration file for the app.
-    - `web.config`: The configuration file for IIS (Internet Information Services) on Windows.
-
-1. Run the following command to start the published app:
-
-    ```dotnetcli
     dotnet MyWebApp.dll
     ```
 

@@ -19,7 +19,11 @@ abstract: |
 prerequisites: |
   - Ability to write C# and Razor code at a beginner level.
   - Ability to use the .NET CLI at a beginner level.
-  - .NET 8 SDK installed.
+  - Latest .NET SDK installed.
+  - Visual Studio Code installed with the following extensions:
+    - C# Dev Kit
+    - Azure Tools (optional)
+  - An Azure subscription (optional).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

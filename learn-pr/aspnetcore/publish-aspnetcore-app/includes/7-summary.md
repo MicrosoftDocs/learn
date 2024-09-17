@@ -1,8 +1,11 @@
 Your team lead asked you to publish your team's app in a few different ways. 
 
-First, you published the app as a framework-dependent deployment. This means that the app requires the .NET Core runtime to be installed on the target machine. Next, you published the app as a self-contained deployment for Windows and again for Linux. The self-contained deployment, though, is much larger because it includes the .NET runtime with the app.
+First, you published the app as a framework-dependent deployment. This means that the app requires the .NET Core runtime to be installed on the target machine. Next, you published the app as a self-contained deployment for Windows and again for Linux. The self-contained deployment, though, is much larger because it includes the .NET runtime with the app. Finally, you deployed the app to Azure.
 
 Congratulations! You're now ready to deploy your app to a variety of environments. You can deploy your app to a web server, a container, or to Azure. You can even deploy your app to a Raspberry Pi running Linux. The possibilities are endless!
+
+> [!IMPORTANT]
+> Make sure to clean up the Azure resources you created during this module to avoid incurring charges. You can delete the Azure App Service web app you created using the Azure Tools extension for Visual Studio Code.
 
 ## Learn more
 
