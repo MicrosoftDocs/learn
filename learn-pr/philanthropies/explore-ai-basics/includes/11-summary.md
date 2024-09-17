@@ -6,6 +6,5 @@ As AI continues to evolve, it remains a crucial part of our world, influencing e
 
 ## Learn more
 
-**TODO**: You should provide some links to other useful/related information where customers can go to learn more about this subject.
-
-_Can share if needed_ 
+- [Microsoft and Linkedin's free learning paths for top jobs](https://aka.ms/MyLearningPath)
+- [Microsoft's AI skills resources](https://aka.ms/ai-skills)

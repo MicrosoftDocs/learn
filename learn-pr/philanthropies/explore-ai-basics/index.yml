@@ -22,6 +22,10 @@ levels:
 - beginner
 roles:
 - developer
+- student
+- AI engineer
+- technology manager
+- solution architect
 products:
 - azure
 units:

@@ -8,7 +8,7 @@ In the first video, you'll gain an understanding of what data is and why it's es
 
 Data allows AI to learn, adapt, and make informed decisions. However, it isn't just about the quantity of data available but also the quality. The effectiveness of AI models is directly tied to the quality of the training data.
 
-In the next video, you'll discover why finding patterns in data is important and how it can enhance user experience
+In the next video, you'll discover why finding patterns in data is important and how it can enhance user experience.
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2285655]
 
