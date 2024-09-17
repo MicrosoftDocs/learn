@@ -121,8 +121,8 @@
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "/learn.describe-purview-risk-compliance-governance/8-describe-data-governance-solutions.md",
-        "redirect_url": "https://learn.microsoft.com/en-us/training/modules/describe-purview-data-governance/",
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-purview-risk-compliance-governance/8-describe-data-governance-solutions.md",
+        "redirect_url": "/training/modules/describe-purview-data-governance/",
         "redirect_document_id": false
       }      
     ]
