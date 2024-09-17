@@ -12,11 +12,10 @@ title: Build your first ASP.NET Core web app
 summary: Learn how to build your first web app with ASP.NET Core.
 abstract: |
   By the end of this module, you'll be able to:
-    - Configure your local environment for ASP.NET Core development.
     - Understand what the ASP.NET Core default project templates are.
-    - Create an ASP.NET Core web app project from a template using the .NET CLI (Command Line Interface).
-    - Understand the basic structure of a project.
-    - Run a web app locally and view it in a browser using HTTPS.
+    - Create an ASP.NET Core web app project from a template.
+    - Understand the basic structure of an ASP.NET Core project.
+    - Run a web app locally and view it in a browser.
     - Understand how the web app is served.
 prerequisites: |
   - Knowledge of what ASP.NET Core is and why it's used
