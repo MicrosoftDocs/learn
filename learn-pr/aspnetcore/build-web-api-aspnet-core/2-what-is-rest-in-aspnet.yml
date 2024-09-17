@@ -26,4 +26,4 @@ quiz:
         explanation: "Web APIs are commonly used to provide a back-end server for mobile client applications."
       - content: "To serve a traditional HTML-based web application."
         isCorrect: true
-        explanation: "To serve a traditional HTML-based web application with ASP.NET Core, you would use Razor Pages or MVC."
+        explanation: "To serve a traditional HTML-based web application with ASP.NET Core, you would use Razor Pages or Model–view–controller (MVC)."
