@@ -3,20 +3,20 @@ uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
 metadata:
   title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: module
   ms.service: azure-digital-twins
 title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
-summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality.
+summary: In this module, you'll learn to stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality.
 abstract: |
   By the end of this module, you'll be able to:
 
-  -	Connect to a digital twin data source on Azure
-  -	Stream telemetry data to assets in your Unity scene, using Azure services, including Azure Digital Twins
-  -	Visualize the data in mixed reality by using Azure SignalR Service
-  -	Send data updates from mixed-reality app back to Azure Digital Twins
+  -	Connect to a digital twin data source on Azure.
+  -	Stream telemetry data to assets in your Unity scene, using Azure services, including Azure Digital Twins.
+  -	Visualize the data in mixed reality by using Azure SignalR Service.
+  -	Send data updates from mixed-reality app back to Azure Digital Twins.
 prerequisites: |
   - An Azure subscription
   - A mixed-reality project for Azure Digital Twins in a Unity module
