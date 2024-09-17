@@ -31,10 +31,11 @@ products:
 subjects:
   - information-protection-governance
 units:
-- learn.describe-purview-data-governance.introduction
-- learn.describe-purview-data-governance.describe-benefits-data-governance
-- learn.describe-purview-data-governance.describe-data-catalog
-- learn.describe-purview-data-governance.knowledge-check
-- learn.describe-purview-data-governance.summary
+  - learn.describe-purview-data-governance.introduction
+  - learn.describe-purview-data-governance.describe-benefits-data-governance
+  - learn.describe-purview-data-governance.describe-data-catalog
+  - learn.describe-purview-data-governance.knowledge-check
+  - learn.describe-purview-data-governance.summary
 badge:
   uid: learn.describe-purview-data-governance.badge
+  

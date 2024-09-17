@@ -32528,6 +32528,26 @@
       "source_path": "learn-pr/wwl-azure/explore-azure-defender-for-iot-implementation/4-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4b-platform-services.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5-exercise-azure-synapse.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5b-fabric.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5c-exercise-fabric.md",
+      "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
     }
   ]
 }
