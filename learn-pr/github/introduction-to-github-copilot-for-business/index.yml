@@ -13,7 +13,7 @@ metadata:
     - ce-skilling-ai-copilot
     - github-ai-copilot
 summary: > 
-  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals, specific use cases and customer stories for GitHub Copilot for Business, and how to enable it. 
+  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals. Also learn about specific use cases and customer stories for GitHub Copilot for Business as well as how to enable it. 
 abstract: |
   At the end of this module, you'll be able to: 
   - Understand the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals.

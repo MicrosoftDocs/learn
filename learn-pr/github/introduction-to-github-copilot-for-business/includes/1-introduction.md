@@ -1,6 +1,6 @@
-﻿Since its release, GitHub Copilot for Business has transformed developer productivity that enables  you to manage access to GitHub Copilot for organizations within your enterprise.
+﻿Since its release, GitHub Copilot for Business has transformed developer productivity that enables you to manage access to GitHub Copilot for organizations within your enterprise.
 
-More than 400 organizations are already using GitHub Copilot. Now, with GitHub Copilot for Business, we're opening it up to every developer, team, organization, and enterprise.
+More than 400 organizations are already using GitHub Copilot. GitHub Copilot for Business opens it up to every developer, team, organization, and enterprise.
 
 For an organization, developers fixing bugs faster means your product is more secure. Developers manually writing less standard code repeatedly means your teams are more productive and focused.
 
