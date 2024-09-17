@@ -6,5 +6,5 @@ As AI continues to evolve, it remains a crucial part of our world, influencing e
 
 ## Learn more
 
-- [Microsoft and Linkedin's free learning paths for top jobs](https://aka.ms/MyLearningPath)
+- [Microsoft and LinkedIn free learning pathways: New skills for a new way of working](https://aka.ms/MyLearningPath)
 - [Microsoft's AI skills resources](https://aka.ms/ai-skills)
