@@ -46,13 +46,13 @@ quiz:
       choices:
         - content: "Policies"
           isCorrect: false
-          explanation: This isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Policies isn't the first place to navigate in order to enable GitHub Copilot for Business.
         - content: "Your organizations in your profile dropdown menu"
           isCorrect: true
           explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business.
         - content: "Settings in your profile dropdown menu"
           isCorrect: false
-          explanation: Close, but this isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Close, but Settings isn't the first place to navigate in order to enable GitHub Copilot for Business.
         - content: "Selected teams/users"
           isCorrect: false
-          explanation: This isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Selected teams/users isn't the first place to navigate in order to enable GitHub Copilot for Business.

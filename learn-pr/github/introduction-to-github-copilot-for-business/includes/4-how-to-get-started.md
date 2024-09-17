@@ -35,4 +35,4 @@ Start at step 3 from the preceding enabling steps.
 5. In the **Confirm seat assignment** dialog, confirm that you want to disable GitHub Copilot for selected teams/users in your organization, then select **Confirm**.
 6. To save your changes, select **Save**.
 
-Next up, we'll test your knowledge on the content we just learned!
+Next up, we test your knowledge on the content we just learned!

@@ -10,7 +10,7 @@ Coyote Logistics, a third-party logistics provider, utilized GitHub Copilot for 
 
 **Developers stay in the flow longer**: Of developers that were surveyed, 73% said GitHub Copilot helps them stay in the flow longer and more easily. It also helped 87% of developers preserve mental energy when working through repetitive tasks. Previous research underscored how draining disruptive context switching, navigating interruptions, and repetitive work can be for developers.
 
-Duolingo, the language-learning app, has a team of more than 300 developers that accelerated their workflow with their recent adoption of GitHub Copilot. The tool offers two ways for developers to receive suggestions. They can either start to write the code they want to use, or they can write natural-language comments that describe what they want the code to do.
+Duolingo, the language-learning app, has a team of more than 300 developers that accelerated their workflow with their recent adoption of GitHub Copilot. The tool offers two ways for developers to receive suggestions. They can either write the code they want to use or write natural-language comments describing what they want the code to do.
 
 Jonathan Burket, a senior engineering manager at Duolingo, explains that GitHub Copilot increased developer productivity by:
 
