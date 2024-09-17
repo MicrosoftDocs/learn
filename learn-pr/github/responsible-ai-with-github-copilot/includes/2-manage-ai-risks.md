@@ -1,4 +1,4 @@
-:::image type="content" source="../media/manage-ai-risks.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/picture1.png" border="false":::
+:::image type="content" source="../media/manage-ai-risks.png" alt-text="Diagram showing a set of scales, representing the balance between the opportunities and risks posed by AI." lightbox="../media/manage-ai-risks.png" border="false":::
 
 Artificial Intelligence (AI) presents numerous opportunities for innovation and efficiency, but it also comes with significant risks that need to be carefully managed.
 

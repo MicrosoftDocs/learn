@@ -1,4 +1,4 @@
-:::image type="content" source="../media/six-principles-of-responsible-ai.png" alt-text="Diagram showing six key principles that should guide AI development and usage." lightbox="../media/picture2.png" border="false":::
+:::image type="content" source="../media/six-principles-of-responsible-ai.png" alt-text="Diagram showing six key principles that should guide AI development and usage." lightbox="../media/six-principles-of-responsible-ai.png" border="false":::
 
 Microsoft has been a global leader in Responsible AI, identifying six key principles that should guide AI development and usage. These principles are:
 
