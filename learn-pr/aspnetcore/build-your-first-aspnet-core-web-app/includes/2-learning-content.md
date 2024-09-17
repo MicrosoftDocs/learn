@@ -36,7 +36,7 @@ To view all customization options for a specific template, use the following `do
 
 ## Using the .NET CLI `dotnet new` command to create a project
 
-You create a new project using the `dotnet new <template-name>` command. For example, to create a new empty ASP.NET Core web app project you can run `dotnet new web`.
+You can create a new project using the `dotnet new <template-name>` command. For example, to create a new empty ASP.NET Core web app project you can run `dotnet new web`.
 
 Once you create a new .NET project, you can build and run the project using the `dotnet build` and `dotnet run` commands. 
 

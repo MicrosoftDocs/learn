@@ -1,62 +1,47 @@
 In this exercise, you will:
 
-* Create a self-signed development certificate.
-* Run your web app locally and view it in a browser using HTTPS.
+* Run your web app locally and view it in a browser.
 * Review how the web app is served.
 
-## Create a self-signed development certificate
 
-A self-signed development certificate allows the browser to trust the certificate and avoid security warnings during development as you access the HTTPS endpoint for testing. 
+## Run the web app using Visual Studio Code plus the C# Dev Kit and view in a browser
 
-Create a self-signed development certificate by running the following .NET CLI command in the Visual Studio Code terminal or the command line:
+In Visual Studio Code, press <kbd>F5</kbd> to run the app.
 
-  ```dotnetcli
-  dotnet dev-certs https --trust
-  ```
+At the **Select debugger** prompt in the **Command Palette** at the top of the Visual Studio Code UI, select **C#**. At the next prompt, select the default launch configuration (`C#: MyWebApp [Default Configuration]`).
 
-On Linux, the preceding command requires .NET 9 SDK or later. For Linux on .NET 8.0.401 SDK and earlier, see your Linux distribution's documentation for trusting a certificate.
+The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created. If you need to change the port due to a local port conflict, change the port in the project's `Properties/launchSettings.json` file.
 
-The preceding command displays the following dialog, provided the certificate wasn't previously trusted:
+The response displayed in the browser:
 
- :::image type="content" source="../media/cert.png" alt-text="Screenshot of the security warning dialog.":::
+:::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
 
-Select **Yes** if you agree to trust the development certificate.
-
-## Run the web app using HTTPS
+## Alternatively run the web app from the terminal using the .NET CLI
 
 From a terminal in Visual Studio Code or the command line, navigate to the `MyWebApp` project directory that contains your `MyWebApp.csproj` file.
 
 Build and Run the app with the following command:
 
 ```csharp
-dotnet run --launch-profile https
+dotnet run
 ```
-
-The following outlines the command syntax:
-
-* `dotnet run`: This command builds and runs the ASP.NET Core app.
-* `--launch-profile https`: This option launches the https profile, and provides both an HTTPS and HTTP endpoint. If this option isn't used, by default `donet run` provides only the HTTP endpoint.
 
 The project is built, run, and shows the following output on the command line:
 
 ```output
-dotnet run --launch-profile https
+C:\MyWebApp> dotnet run
 Building...
 info: Microsoft.Hosting.Lifetime[14]
-      Now listening on: https://localhost:7140
-info: Microsoft.Hosting.Lifetime[14]
-      Now listening on: http://localhost:5218
+      Now listening on: http://localhost:5267
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 ```
 
-The port number in the URL provided is set randomly in configuration at project creation, so your endpoint may have a different port number.
+Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
 
-Open a browser to the HTTPS URL generated at your own commandline output, the following is displayed:
+Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed.
 
- :::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
-
-Press Ctrl+C at the commandline to shut down the app.
+Press Ctrl+C at the to shut down the app.
 
 ### How the web app is served
 

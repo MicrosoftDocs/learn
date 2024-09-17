@@ -7,9 +7,9 @@ You're just getting started with ASP.NET Core. You want to understand how to qui
 In this module, you will:
 
 - Review ASP.NET Core default project templates available in the .NET SDK.
-- Create an ASP.NET Core web app project from a template using the .NET CLI (Command Line Interface).
-- Examine the structure of the created project in Visual Studio Code.
-- Run your web app locally and view it in a browser using HTTPS.
+- Create an ASP.NET Core web app project from a template.
+- Examine the structure of the created project.
+- Run your web app locally and view it in a browser.
 - Review how the web app is served.
 
 At the end of this module, there are links to content providing deeper dives for ASP.NET Core web application development.

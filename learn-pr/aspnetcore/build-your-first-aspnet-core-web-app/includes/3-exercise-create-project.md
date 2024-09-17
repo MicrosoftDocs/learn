@@ -1,9 +1,29 @@
 In this exercise, you will:
 
-* Create an ASP.NET Core web app project from a template using the .NET CLI (Command Line Interface).
+* Create an ASP.NET Core web app project from a template using Visual Studio Code with the C# Dev Kit extension.
 * Examine the structure of the created project.
 
-## Create an ASP.NET Core web app
+## Create an ASP.NET Core web app using Visual Studio Code and the C# Dev Kit
+
+In Visual Studio Code, create a new project:
+
+* Select the **Explorer** view:
+
+ :::image type="content" source="../media/vsc-select-explorer.png" alt-text="Selecting the Explorer view":::
+
+* Select the **Create .NET Project** button. Alternatively, you can bring up the **Command Palette** using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then type "`.NET`" to find and select the **.NET: New Project** command.
+
+ :::image type="content" source="../media/vsc-select-create-dotnet-project.png" alt-text="Selecting Create .NET Project":::
+
+* Select the **ASP.NET Core Empty** project template from the list.
+
+* In the **Project Location** dialog, create or select a folder for the project.
+
+* In the **Command Palette**, name the project `MyWebApp`, including matching the capitalization. Using this exact project name is important to ensure that the namespaces for code in this instruction match yours.
+
+* Select **Create project** from the **Command Palette**.
+
+## Alternatively create an ASP.NET Core web app from the command line
 
 In Visual Studio Code:
 
@@ -31,11 +51,12 @@ Open the *MyWebApp* project folder in the current instance of Visual Studio Code
 ```dotnetcli
 code -r MyWebApp
 ```
-The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**.
-
- :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer.":::
 
 ## Examine the structure of the project
+
+The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
+
+:::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer.":::
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
@@ -47,7 +68,7 @@ The `.csproj` project file is used to:
 * Specify which version of .NET to target
 * Manage project dependencies
 
-### The `MyWebApp.sln` solution file
+### The `.sln` solution file
 
 When an ASP.NET Core project is created or opened in Visual Studio Code, it creates a `<project name>.sln` solution file. The `<project name>.sln` solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
 
@@ -84,6 +105,6 @@ The `app.MapGet()` method directly defines an endpoint that handles HTTP GET req
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
 
-`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `https://localhost:<port>/`, where `<port>` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
+`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:<port>/`, where `<port>` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
 
 `() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"
