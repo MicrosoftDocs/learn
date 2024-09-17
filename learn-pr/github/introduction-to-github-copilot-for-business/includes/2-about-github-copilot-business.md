@@ -9,7 +9,7 @@ New features in Copilot for Business include:
 - **A more powerful AI model**: New modeling algorithms improve the quality of code suggestions.
 - **AI-based security vulnerability filtering**: GitHub Copilot for Business automatically blocks common insecure code suggestions by targeting issues such as hard-coded credentials, SQL injections, and path injections.
 - **VPN proxy support**: GitHub Copilot works with VPNs including self-signed certificates, allowing developers to use it in any working environment.
-- **Simple sign-up**: Any company can quickly purchase Copilot for Business licenses online and easily assign seats, even if they don't use the GitHub platform for their source code.
+- **Simple sign-up**: Any company can quickly purchase Copilot for Business licenses online and easily assign users, even if they don't use the GitHub platform for their source code.
 
 Now, let's review the differences between GitHub Copilot for Business and GitHub Copilot for Individuals.
 
