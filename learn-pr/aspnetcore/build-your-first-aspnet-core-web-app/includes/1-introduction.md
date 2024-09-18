@@ -1,4 +1,4 @@
-In this module, you create your first ASP.NET Core web app with .NET and C#.
+In this module, you will create your first ASP.NET Core web app with .NET and C#.
 
 ## Example scenario
 
@@ -13,7 +13,7 @@ In this module, you will:
 - Examine the structure of the created project.
 - Run your web app locally and view it in a browser.
 - Review how the web app is served.
-- Run your web app and view code change results instantly using the `dotnet watch` command.
+- Make code changes during local development.
 
 At the end of this module, there are links to content providing deeper dives for ASP.NET Core web application development.
 

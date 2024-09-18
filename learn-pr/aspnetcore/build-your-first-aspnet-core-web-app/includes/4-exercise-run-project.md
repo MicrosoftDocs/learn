@@ -36,7 +36,7 @@ In this exercise, you will:
     ```
 
     The project is built, run, and shows the following output on the command line:
-    
+
     ```output
     C:\MyWebApp> dotnet run
     Building...
@@ -54,12 +54,12 @@ In this exercise, you will:
 
 ### How the web app is served
 
-When the `dotnet run --launch-profile https` command is run in the terminal, the following steps occur:
+When the `dotnet run` command is run in the terminal, the following steps occur:
 
 Build and Configuration:
 
 - The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the `MyWebApp.csproj` project file and compiles the source code into an assembly.
-- The app reads configuration settings, including those specified in `launchSettings.json` for the HTTPS profile.
+- The app reads configuration settings, including those specified in `launchSettings.json` for the default launch profile (the first one listed).
 
 Host Setup:
 
