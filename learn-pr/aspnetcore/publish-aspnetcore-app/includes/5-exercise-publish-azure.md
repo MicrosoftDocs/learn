@@ -1,6 +1,6 @@
 Many integrated development environments and and other tools can publish an ASP.NET Core app to a variety of hosting environments. Behind the scenes, these tools are running the `dotnet publish` command with various options.
 
-Your manager is evaluating Azure as an option for hosting your app, and has asked you to publish the app as a proof-of-concept. You need to publish the app on Azure.
+Your manager is evaluating Azure as an option for hosting your app, and has asked you to publish the app as a proof-of-concept. You need to publish the app on Azure. You've selected Azure App Service as the hosting environment because it's easy to use and supports ASP.NET Core apps.
 
 In this exercise, you'll publish an ASP.NET Core app as a framework-dependent deployment for Azure.
 
@@ -9,7 +9,7 @@ In this exercise, you'll publish an ASP.NET Core app as a framework-dependent de
 
 ## Create an Azure App Service web app
 
-Make sure you have the Azure Tools extension for Visual Studio Code installed.
+In Azure App Service, a *web app* can be thought of as single-application web server. You need to create an Azure App Service web app in which to deploy your ASP.NET Core app. Make sure you have the Azure Tools extension for Visual Studio Code installed.
 
 1. In Visual Studio Code, press **Ctrl+Shift+A** to open the Azure Tools extension.
 1. Log in to your Azure subscription and directory if required.
