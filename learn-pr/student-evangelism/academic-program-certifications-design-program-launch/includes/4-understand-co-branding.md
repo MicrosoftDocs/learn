@@ -11,7 +11,7 @@ Microsoft and the University of Lincoln continue to pursue co-branding opportuni
 
 ## Social media channels
 
-Social media channels are a powerful way to amplify a degree program. Students at the University of Lincoln are encouraged to share their certification achievements online, particularly through digital validation services such as Credly badges. The digital badges Credly provides allow students to share their achievements on social and professional platforms such as Twitter and LinkedIn. This activity allows students to serve as marketing and outreach ambassadors for the program they're enrolled in, and to demonstrate the innovative opportunities students at Lincoln experience. Here's an example of a student sharing a Credly badge on a professional network:
+Social media channels are a powerful way to amplify a degree program. Students at the University of Lincoln are encouraged to share their certification achievements online, particularly through digital validation services such as Credly badges. The digital badges Credly provides allow students to share their achievements on social and professional platforms such as X and LinkedIn. This activity allows students to serve as marketing and outreach ambassadors for the program they're enrolled in, and to demonstrate the innovative opportunities students at Lincoln experience. Here's an example of a student sharing a Credly badge on a professional network:
 
 :::image type="content" source="../media/certification-logo-on-social-media.png" alt-text="Screenshot example of a student sharing certification achievement on a professional network.":::
 

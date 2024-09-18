@@ -4,9 +4,9 @@ title: Exercise - Add Azure Digital Twin prefabs to Unity project
 metadata:
   title: Exercise - Add Azure Digital Twin prefabs to Unity project
   description: Learn how to add and configure Azure Digital Twin prefabs to your Unity project.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -2,6 +2,14 @@ To query data from a table in a KQL database, you can use the **Kusto Query Lang
 
 A query statement consists of a table name followed by one or more operators that `take`, `filter`, `transform`, `aggregate`, or `join` data. For example:
 
+```kusto
+
+sales
+| take 10
+
+```
+
+
 KQL queries are created using relational operators to filter and transform data using a syntax similar to SQL. However, KQL syntax includes extensions that enable advanced text and pattern matching, statistical analysis, time-series projections, geo-spatial, and machine learning algorithms.
 
 ## Create and load tables in KQL

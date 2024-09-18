@@ -16,11 +16,9 @@ You explored the various considerations for designing, implementing, and managin
 
 - [Create stretched cluster volumes and set up replication](/azure-stack/hci/manage/create-stretched-volumes)
 
-- [Delete volumes on Azure Stack HCI and Windows Server clusters](/azure-stack/hci/manage/delete-volumes)
+- [Manage volumes in Azure Stack HCI and Windows Server](/azure-stack/hci/manage//manage-volumes?tabs=windows-admin-center)
 
-- [Expand volumes on Azure Stack HCI and Windows Server clusters](/azure-stack/hci/manage/extend-volumes)
-
-- [Enable volume encryption, deduplication, and compression in Azure Stack HCI](/azure-stack/hci/manage/volume-encryption-deduplication)
+- [Enable volume encryption and deduplication in Azure Stack HCI and Windows Server](/azure-stack/hci/manage/volume-encryption-deduplication)
 
 - [Use BitLocker with Cluster Shared Volumes (CSV)](/windows-server/failover-clustering/bitlocker-on-csv-in-ws-2022)
 

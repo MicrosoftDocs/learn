@@ -23,7 +23,7 @@ quiz:
     choices:
     - content: "**Health history** blade of Azure Service Health"
       isCorrect: true
-    - content: "@AzureSupport on Twitter"
+    - content: "@AzureSupport on X"
       isCorrect: false
     - content: "Microsoft Teams"
       isCorrect: false

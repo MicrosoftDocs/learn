@@ -1,14 +1,14 @@
-In this unit, you'll use developer tools to create the code for a starter web application.
+In this unit, you use developer tools to create the code for a starter web application.
 
 ## Create a new web project
 
 ::: zone pivot="csharp"
 
-The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you'll create a new ASP.NET Core web project.
+The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you create a new ASP.NET Core web project.
 
-First, let's install the 8.0 version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102.
+First, let's install the 8.0 version of `dotnet` into the Cloud Shell. For this exercise, we're using SDK version 3.1.102.
 
-1. Run the following commands on the right to download and install dotnet 8.0:
+1. Download and install dotnet 8.0 by running the following commands in the Azure Cloud Shell window:
 
     ```bash
     wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
@@ -18,13 +18,13 @@ First, let's install the 8.0 version of `dotnet` into the Cloud Shell. For this 
     echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
     ```
 
-1. Next, run the following command to create a new ASP.NET Core MVC application named "BestBikeApp":
+1. Next, run the following command to create a new ASP.NET Core Model-View Cotroller (MVC) application named "BestBikeApp":
 
     ```bash
     dotnet new mvc --name BestBikeApp
     ```
 
-The command will create a new folder named "BestBikeApp" to hold your project.
+The command creates a new folder named "BestBikeApp" to hold your project.
 
 ### Optionally test your web app
 
@@ -37,7 +37,7 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
     dotnet run
     ```
 
-    You should get output like the following:
+    You should get output like the following example:
 
     ```console
     warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
@@ -52,9 +52,9 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
           Content root path: /home/cephas_lin/BestBikeApp
     ```
 
-    The output describes the situation after starting your app: the application is running and listening at port 5022.
+    The output describes the situation after starting your app: the application is running and listening at port 5022. Take note of the port on which your application is running and listening from your output.
 
-1. From another Cloud Shell session, run the following command to browse to your web application:
+1. From another Cloud Shell session, run the following command to browse to your web application, replacing *5000* with the port you noted in the last step:
 
     ```bash
     curl -kL http://127.0.0.1:5000/
@@ -90,7 +90,7 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
 
 ::: zone pivot="java"
 
-To create a starter web application, we'll use Maven, a commonly used project-management and build tool for Java apps. We'll use the `maven-archetype-webapp` template to generate the code for our web application.
+To create a starter web application, we use Maven, a commonly used project-management and build tool for Java apps. We use the `maven-archetype-webapp` template to generate the code for our web application.
 
 1. Run the following commands in Azure Cloud Shell now to create a new web app:
 
@@ -113,15 +113,15 @@ To create a starter web application, we'll use Maven, a commonly used project-ma
     ls
     ```
 
-You'll have a file listed called `helloworld.war`. This is the web application package that we'll deploy to App Service.
+You now have a file called `helloworld.war` that's the web application package we're going to deploy to App Service.
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some JavaScript code to run the actual web page processing.
+To create a starter Node.js web application, we use Node Package Manager (`npm`) along with some JavaScript code to run the actual web page processing.
 
-1. Run the following commands in Azure Cloud Shell to create a new `package.json` that will describe our Node.js application:
+1. Run the following commands in the terminal to create a new `package.json` file that describes our Node.js application:
 
     ```bash
     cd ~
@@ -130,21 +130,21 @@ To create a starter Node.js web application, we'll use Node Package Manager (`np
     npm init -y
     ```
 
-This creates a new `package.json` file in the current folder. You should find it in the current folder if you enter `ls` in the terminal window. We'll need a JavaScript file to run our website logic. Because this is just a basic example, we'll only need one file: `index.js`.
+A new `package.json` file is created in the current folder. You should find it in the current folder if you enter `ls` in the terminal window. We need a JavaScript file to run our website logic. For this basic example, we only need one file: `index.js`.
 
-1. Run the following command in the terminal to create the file:
+1. Create the file by running the following command in the terminal:
 
     ```bash
     touch index.js
     ```
 
-1. Now we have to make a few edits to both of our files. Run the following command in the terminal to open an interactive editor:
+1. Now we have to make a few edits to both of our files. To open an interactive editor, run the following command in the terminal:
 
     ```bash
     code .
     ```
 
-1. Select the `package.json` file and make the following edits to the `scripts` section to use Node.js to launch the web app:
+1. To use Node.js to launch the web app, select the `package.json` file and make the following edits to the `scripts` section:
 
     ```json
     {
@@ -162,7 +162,7 @@ This creates a new `package.json` file in the current folder. You should find it
     > [!IMPORTANT]
     > Whenever you edit a file in the editor, make sure to save afterwards by selecting the **...** menu in the top right corner of the editor, or by pressing <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Command+S</kbd> on macOS. To exit the editor, press <kbd>Ctrl+Q</kbd> on Windows and Linux or click the top-right corner of the editor and select **Quit** on MacOS.
 
-1. Switch to the `index.js` file, and add the following contents to it. This is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
+1. Switch to the `index.js` file, and add the following contents to it. This code is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
 
     ```javascript
     const http = require('http');
@@ -211,7 +211,7 @@ While you're running the helloworld web app, you can verify it's running locally
 
 ::: zone pivot="python"
 
-To create a starter web application, we'll use the Flask web-application framework.
+To create a starter web application, we use the Flask web-application framework.
 
 1. Run the following commands in Azure Cloud Shell to set up a virtual environment and install Flask in your profile:
 
@@ -247,7 +247,7 @@ To create a starter web application, we'll use the Flask web-application framewo
 
 1. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux.
 
-1. To deploy your application to Azure, you'll need to save the list of application requirements you made for it in a *requirements.txt* file. To do so, run the following command:
+1. To deploy your application to Azure, you need to save the list of application requirements you made for it in a *requirements.txt* file. To do so, run the following command:
 
     ```bash
     pip freeze > requirements.txt
@@ -259,14 +259,14 @@ You can test your application locally in Azure while it's running.
 
 1. Open a second command shell session in a new browser tab  <https://shell.azure.com/>.
 
-1. From your primary command shell session (to the right), run the following commands to activate the virtual environment:
+1. From your primary command shell session (in the right-hand window), run the following commands to activate the virtual environment:
 
     ```bash
     cd ..
     source venv/bin/activate
     ``` 
 
-1. From your primary command shell session (to the right), run the following commands to start your web application:
+1. From your primary command shell session (in the right-hand window), run the following commands to start your web application:
 
     ```bash
     cd ~/BestBikeApp

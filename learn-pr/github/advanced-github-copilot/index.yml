@@ -9,7 +9,6 @@ metadata:
   ms.service: github-copilot
   ms.topic: module
   ms.collection:
-    - ce-advocates-ai-copilot
     - github-ai-copilot
 title: Using advanced GitHub Copilot features
 summary: "Use advanced GitHub Copilot features with a Python application."

@@ -1,7 +1,7 @@
 > [!IMPORTANT]
-> Be aware that this simulation generates a significant amount of data that simulates real world operations. Azure consumption occurs. Remember to stop the simulator whenever it isn't needed to avoid unnecessary charges on your Azure account.
+> Be aware that this simulation generates a significant amount of data that simulates real-world operations. Azure consumption occurs. Remember to stop the simulator whenever it isn't needed to avoid unnecessary charges on your Azure account.
 
-Use the Visual Studio **s** solution to simulate an operating wind farm. Send telemetry data to Azure Digital Twins, where your newly configured digital twin in Unity receives input and displays wind farm operating conditions.
+In this unit, you use the Visual Studio **s** solution to simulate an operating wind farm. You also send telemetry data to Azure Digital Twins, where your newly configured digital twin in Unity receives input and displays wind-farm operating conditions.
 
 ## Begin the wind farm device simulation
 
@@ -21,7 +21,7 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 
    :::image type="content" source="../media/simulated-turbine-telemetry.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running." lightbox="../media/simulated-turbine-telemetry.png":::
 
-1. Navigate in the **Game** tab by pressing and holding your right mouse button while you navigate. Move the scene so that the white circle hovers over a turbine or a turbine name in the **Site Overview Menu** panel, you see the **Turbine Panel** with specifics for that Turbine asset.
+1. Navigate in the **Game** tab by pressing and holding your right mouse button while you navigate. Move the scene so that the white circle hovers over a turbine or a turbine name. In the **Site Overview Menu** panel, you see the **Turbine Panel** with specifics for that Turbine asset.
 
    :::image type="content" source="../media/device-simulator-3.png" alt-text="Screenshot of the command window open and running the device simulator solution with updated console messages are displayed from the simulated IoT data.":::
 
@@ -29,7 +29,7 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 
    :::image type="content" source="../media/simulated-turbine-event.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running and updated turbine data.":::
 
-1. Observe wind turbine performance data by selecting the scriptable object of interest. Select **Assets** > **ScriptableObjects** > **Turbine Site Data** > **T103**. Examine the incoming data in the **Wind Turbine Data** section of the **Inspector** panel. You should see the **Time Interval**, **Wind Speed**, **Ambient Temperature**, **Rotor Speed**, and **Power** fluctuate as new telemetry messages are consumed by the application.
+1. Observe wind-turbine performance data by selecting the scriptable object of interest. Select **Assets** > **ScriptableObjects** > **Turbine Site Data** > **T103**. Examine the incoming data in the **Wind Turbine Data** section of the **Inspector** panel. You should see the **Time Interval**, **Wind Speed**, **Ambient Temperature**, **Rotor Speed**, and **Power** fluctuate as new telemetry messages are consumed by the application.
 
    :::image type="content" source="../media/wind-turbine-so.png" alt-text="Screenshot of the Unity Inspector with a turbine prefab selected.":::
 

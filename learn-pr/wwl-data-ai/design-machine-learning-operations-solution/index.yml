@@ -5,8 +5,8 @@ metadata:
   description: Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/08/2023
-  ms.service: azure
+  ms.date: 08/25/2024
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot

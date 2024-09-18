@@ -1,8 +1,8 @@
-Your company runs a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
+Your company runs a combination of Windows and Linux workloads. You're asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you help protect both kinds of virtual machines with Azure Backup.
 
-Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
+Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
-In this exercise, you'll create a VM, set up a backup, and start a backup.
+In this exercise, you create a virtual machine (VM), set up a backup, and start a backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
@@ -132,7 +132,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --output table
     ```
 
-    Keep running the preceding command until you see that `ConfigureBackup` has finished.
+    Keep running the preceding command until you see that `ConfigureBackup` is finished.
 
     ```output
     Name                                  Operation        Status      Item Name    Start Time UTC                    Duration
@@ -154,7 +154,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --backup-management-type AzureIaasVM
     ```
 
-    There's no need to wait for the backup to finish, because you'll see how to monitor the progress in the portal next.
+    There's no need to wait for the backup to finish, because the next section shows you how to monitor the progress in the portal.
 
 ## Monitor backups in the portal
 

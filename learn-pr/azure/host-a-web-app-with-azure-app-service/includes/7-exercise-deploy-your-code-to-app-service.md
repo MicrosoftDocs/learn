@@ -32,7 +32,7 @@ Let's browse to our application. Navigate back to the open browser tab containin
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
 
-Congratulations, you successfully hosted your new ASP.NET Core application on App Service!
+Congratulations, you successfully hosted your new ASP.NET Core application, on App Service!
 
 ::: zone-end
 
@@ -60,7 +60,7 @@ When the command finishes running, open a new browser tab and go to `https://<yo
 
 Let's deploy our Node.js application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where the app is built and deployed.
 
-First, we need to gather some information about our web app resource. Run the following commands to set shell variables that contain our app name, resource group name, plan name, sku, runtime, and location. Each of these variables uses a different `az` command to request the information from Azure; `az webapp up` needs these values to target our existing web app.
+First, we need to gather some information about our web app resource. Run the following commands to set shell variables that contain our app name, resource group name, plan name, SKU, runtime, and location. Each of these variables uses a different `az` command to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
 ```bash
 export APPNAME=$(az webapp list --query [0].name --output tsv)
@@ -93,7 +93,7 @@ Once it loads, you get the greeting message from your app. You deployed successf
 
 Let's deploy our Python application with `az webapp up`. This command packages up our application and sends it to our App Service instance, where the app is built and deployed.
 
-First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
+First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, SKU, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
 ```bash
 export APPNAME=$(az webapp list --query [0].name --output tsv)

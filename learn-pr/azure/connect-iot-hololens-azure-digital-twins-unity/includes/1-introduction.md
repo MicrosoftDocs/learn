@@ -1,4 +1,4 @@
-Visualizing assets in an immersive setting lets you experience the right data in the right context at the right time. Adding connectivity of your assets to operations data makes your assets more intelligent and reflective of physical assets or processes.
+Visualizing assets in an immersive setting lets you experience the right data in the right context at the right time. Connecting your assets to operations data makes your assets more intelligent and reflective of physical assets or processes.
 
 ## Example scenario
 
@@ -12,7 +12,7 @@ In this unit, you connect your wind turbines to a stream of Azure Digital Twins 
 
 By the end of this module, you can connect real-world operating data to digital assets, using live or historic IoT data, which allows you to:
 
-- Visualize operating conditions
-- Identify anomalies in performance or equipment health and integrity
-- Determine trends and patterns in data over time
-- Simulate future conditions or operations situations
+- Visualize operating conditions.
+- Identify anomalies in performance or equipment health and integrity.
+- Determine trends and patterns in data over time.
+- Simulate future conditions or operations situations.

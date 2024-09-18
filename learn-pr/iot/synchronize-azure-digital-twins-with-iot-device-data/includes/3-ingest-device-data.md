@@ -163,6 +163,8 @@ Now that your IoT Hub and Azure function are created, you can set up the connect
 
 First, get the simulated device data into IoT Hub.
 
+[!INCLUDE [iot-authentication-device-connection-string.md](../../includes/iot-authentication-device-connection-string.md)]
+
 Create a virtual device in IoT Hub to represent the thermostat device, by running the following command in the Azure CLI. The IoT Hub device twin will be called *Thermostat67*.
 
 ```azurecli
