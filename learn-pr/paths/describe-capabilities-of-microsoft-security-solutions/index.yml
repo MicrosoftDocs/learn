@@ -61,6 +61,7 @@ products:
 subjects:
 - security
 modules:
+- learn-wwl.security-copilot-getting-started
 - learn.wwl.describe-basic-security-capabilities-azure
 - learn.wwl.describe-security-management-capabilities-of-azure
 - learn.wwl.describe-security-capabilities-of-azure-sentinel
