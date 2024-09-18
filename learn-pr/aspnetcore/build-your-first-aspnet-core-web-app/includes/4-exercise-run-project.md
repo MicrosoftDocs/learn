@@ -59,7 +59,7 @@ When the `dotnet run --launch-profile https` command is run in the terminal, the
 Build and Configuration:
 
 - The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the `MyWebApp.csproj` project file and compiles the source code into an assembly.
-- The app reads configuration settings, including those specified in `launchSettings.json` for the HTTPS profile.
+- The app reads configuration settings, including those specified in `launchSettings.json` for the default launch profile (the first one listed).
 
 Host Setup:
 
