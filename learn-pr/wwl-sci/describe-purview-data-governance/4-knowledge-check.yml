@@ -9,8 +9,9 @@ metadata:
   ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 2
-
 content: |
+ [!include[](includes/4-knowledge-check.md)]
+
 quiz:
   questions:
 

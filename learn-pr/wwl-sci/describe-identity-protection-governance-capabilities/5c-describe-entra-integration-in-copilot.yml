@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-entra-integration-in-copilot
+title: Describe Microsoft Entra integration with Microsoft Copilot for Security
+metadata:
+  title: Describe Microsoft Entra integration with Microsoft Copilot for Security
+  description: "Describe Microsoft Entra integration with Microsoft Copilot for Security"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5c-describe-entra-integration-in-copilot.md)]
