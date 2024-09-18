@@ -54,7 +54,7 @@ In this exercise, you will:
 
 ### How the web app is served
 
-When the `dotnet run --launch-profile https` command is run in the terminal, the following steps occur:
+When the `dotnet run` command is run in the terminal, the following steps occur:
 
 Build and Configuration:
 
