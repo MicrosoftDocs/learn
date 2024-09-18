@@ -10,6 +10,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 | **Backend type** | IP based, NIC based | NIC based |
 | **Protocol** | TCP, UDP | TCP, UDP |
 | **Backend pool endpoints** | Any virtual machines or virtual machine scale sets in a single virtual network. | Virtual machines in a single availability set or virtual machine scale set. |
+| **Backend pool size limit** | 5,000 | 300 IP configurations, single availability set |
 | **[Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)** | TCP, HTTP, HTTPS | TCP, HTTP |
 | **[Health probe down behavior](/azure/load-balancer/load-balancer-custom-probe-overview#probedown)** | TCP connections stay alive on an instance probe down **and** on all probes down. | TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down. |
 | **Availability zones** | Zone-redundant and zonal frontends for inbound and outbound traffic. | Not available |
