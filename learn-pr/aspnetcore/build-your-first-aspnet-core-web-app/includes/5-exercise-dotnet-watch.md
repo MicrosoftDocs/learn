@@ -27,13 +27,13 @@ In Visual Studio Code with the .NET C# Dev Kit extension:
     dotnet watch
     ```
     
-The project is built, run, and provides the ASP.NET Core app's endpoint URL on the command line:
-
-```output
-Now listening on: http://localhost:5287
-```
-
-Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
+    The project is built, run, and provides the ASP.NET Core app's endpoint URL on the command line:
+    
+    ```output
+    Now listening on: http://localhost:5287
+    ```
+    
+    Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
 
 1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed.
 

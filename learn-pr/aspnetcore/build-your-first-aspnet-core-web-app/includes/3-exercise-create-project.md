@@ -32,16 +32,16 @@ In Visual Studio Code:
     dotnet new web -o MyWebApp
     ```
 
-  A new ASP.NET Core empty web project is created in a directory named **MyWebApp**.
-
-  The following outlines the command syntax:
-
-  - `dotnet new`: A .NET CLI command for creating various .NET development artifacts based on templates such as projects, solutions, libraries, configuration, and other specialized files.
-  - `web`: A project template used to create an ASP.NET Core empty web project, containing no example content. `web` is one of the many [built-in project templates](/dotnet/core/tools/dotnet-new-sdk-templates) available in the [.NET SDK](https://dotnet.microsoft.com/download).
-  - `-o`: The output option specifies the directory where the new project is created:
-      - If the directory doesn't exist, it's created. 
-      - The directory where the project is created serves as the default project name, namespace, and assembly name (the name of the compiled output).
-      - If the output option `-o <directory>` isn't used, then the current directory is used.
+    A new ASP.NET Core empty web project is created in a directory named **MyWebApp**.
+    
+    The following outlines the command syntax:
+    
+    - `dotnet new`: A .NET CLI command for creating various .NET development artifacts based on templates such as projects, solutions, libraries, configuration, and other specialized files.
+    - `web`: A project template used to create an ASP.NET Core empty web project, containing no example content. `web` is one of the many [built-in project templates](/dotnet/core/tools/dotnet-new-sdk-templates) available in the [.NET SDK](https://dotnet.microsoft.com/download).
+    - `-o`: The output option specifies the directory where the new project is created:
+        - If the directory doesn't exist, it's created. 
+        - The directory where the project is created serves as the default project name, namespace, and assembly name (the name of the compiled output).
+        - If the output option `-o <directory>` isn't used, then the current directory is used.
 
 1. Open the *MyWebApp* project folder in the current instance of Visual Studio Code by using the `code` command:
 
