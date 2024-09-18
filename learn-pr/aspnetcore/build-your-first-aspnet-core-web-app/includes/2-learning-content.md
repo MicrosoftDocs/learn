@@ -6,9 +6,9 @@ The [.NET SDK](https://dotnet.microsoft.com/download) includes [built-in templat
 
 With the .NET SDK installed, you can run .NET CLI (Command Line Interface) commands in a terminal or command prompt. To list the built-in templates, run the `dotnet new list` command:
 
-```dotnetcli
-dotnet new list
-```
+    ```dotnetcli
+    dotnet new list
+    ```
 
 Some common ASP.NET Core default project templates include:
 
@@ -30,9 +30,9 @@ All .NET project templates offer customization options to tailor the generated p
 
 To view all customization options for a specific template, use the following `dotnet new` command with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
 
-```dotnetcli
- dotnet new <template-name> --help
-```
+    ```dotnetcli
+     dotnet new <template-name> --help
+    ```
 
 ## Using the .NET CLI `dotnet new` command to create a project
 

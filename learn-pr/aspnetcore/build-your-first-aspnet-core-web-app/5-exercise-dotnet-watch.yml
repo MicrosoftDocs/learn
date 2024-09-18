@@ -3,7 +3,7 @@ uid: learn.build-your-first-aspnet-core-web-app.exercise-dotnet-watch
 title: View code changes while running your app
 metadata:
   title: Exercise
-  description: Run your web app and view code change results instantly using the dotnet watch command.
+  description: View code change results instantly using the dotnet watch command.
   ms.date: 9/9/2024
   author: wadepickett
   ms.author: wpickett

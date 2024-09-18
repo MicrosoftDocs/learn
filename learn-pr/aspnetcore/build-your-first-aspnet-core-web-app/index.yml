@@ -17,7 +17,7 @@ abstract: |
     - Understand the basic structure of an ASP.NET Core project.
     - Run a web app locally and view it in a browser.
     - Understand how the web app is served.
-    - Run your web app and view code change results instantly using the dotnet watch command.
+    - View code change results instantly using the dotnet watch command.
 prerequisites: |
   - Knowledge of what ASP.NET Core is and why it's used
   - Basic knowledge of web app concepts
