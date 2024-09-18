@@ -1,4 +1,4 @@
-Starting a new project can be a daunting task, setting up the initial structure and configurations. Fortunately, ASP.NET Core provides various project templates that simplify this process. The project templates offer a standardized and efficient way to kickstart your development. This unit explores the different ASP.NET Core project templates available and how to use them to create new projects.
+Starting a new project, including setting up the initial structure and configurations, can be a daunting task. Fortunately, ASP.NET Core provides various project templates that simplify this process. The project templates offer a standardized and efficient way to kickstart your development. This unit explores the different ASP.NET Core project templates available and how to use them to create new projects.
 
 ## What the ASP.NET Core project templates provide
 
