@@ -4,7 +4,7 @@ First, you published the app as a framework-dependent deployment. This means tha
 
 Congratulations! You're now ready to deploy your app to a variety of environments. You can deploy your app to a web server, a container, or to Azure. You can even deploy your app to a Raspberry Pi running Linux. The possibilities are endless!
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Make sure to clean up the Azure resources you created during this module to avoid incurring charges. You can delete the Azure App Service web app you created using the Azure Tools extension for Visual Studio Code.
 
 ## Learn more

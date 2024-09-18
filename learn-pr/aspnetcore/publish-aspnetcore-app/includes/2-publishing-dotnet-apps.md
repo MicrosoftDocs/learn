@@ -20,6 +20,50 @@ A framework-dependent deployment includes only your app's files and dependencies
 
 A self-contained deployment includes your app's files, dependencies, and the .NET runtime. The .NET runtime is included with the app, so the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments, but it also makes them more portable. It also makes it easier to run multiple versions of the .NET runtime side by side on the same machine.
 
+### Choosing a deployment type
+
+The type of deployment type you choose depends on your app's requirements and the target environment. Consider the following factors when choosing a deployment type:
+
+:::row:::
+    :::column:::
+        **Deployment Type**
+    :::column-end:::
+    :::column:::
+        **Advantages**
+    :::column-end:::
+    :::column:::
+        **Disadvantages**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Framework-dependent**
+    :::column-end:::
+    :::column:::
+        - Smaller deployment size
+        - Faster deployment times
+        - Uses the .NET runtime installed on the target machine, regardless of operating system
+    :::column-end:::
+    :::column:::
+        - Requires the .NET runtime to be installed on the target machine
+        - Requires managing the .NET runtime version(s) installed on the target machine
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        **Self-contained**
+    :::column-end:::
+    :::column:::
+        - No need to install .NET runtime on the target machine
+        - Easier to run multiple versions of .NET side by side
+    :::column-end:::
+    :::column:::
+        - Larger deployment size
+        - Slower deployment times
+        - .NET runtime updates must be deployed with the app
+    :::column-end:::
+:::row-end:::
+
 ## Where to deploy your app
 
 Once you've published your app, you can deploy it to any environment that supports ASP.NET Core. Here are a few options:
