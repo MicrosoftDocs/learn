@@ -11,6 +11,7 @@ In this module, you will:
 - Examine the structure of the created project.
 - Run your web app locally and view it in a browser.
 - Review how the web app is served.
+- View the results of your code changes instantly while running the web app using the `dotnet watch` command.
 
 At the end of this module, there are links to content providing deeper dives for ASP.NET Core web application development.
 

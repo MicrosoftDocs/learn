@@ -105,6 +105,6 @@ The `app.MapGet()` method directly defines an endpoint that handles HTTP GET req
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
 
-`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:<port>/`, where `<port>` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
+`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
 
 `() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"

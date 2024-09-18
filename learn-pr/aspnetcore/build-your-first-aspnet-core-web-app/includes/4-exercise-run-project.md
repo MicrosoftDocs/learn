@@ -18,13 +18,19 @@ The response displayed in the browser:
 
 :::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
 
+Close the browser window.
+
+In Visual Studio, either:
+* From the **Run** menu, select **Stop Debugging**.
+* Press <kbd>Shift</kbd>+<kbd>F5</kbd> on the keyboard.
+
 ## Alternatively run the web app using the .NET CLI
 
 From a terminal in Visual Studio Code or the command line, navigate to the `MyWebApp` project directory that contains your `MyWebApp.csproj` file.
 
 Build and Run the app with the following command:
 
-```csharp
+```dotnetcli
 dotnet run
 ```
 

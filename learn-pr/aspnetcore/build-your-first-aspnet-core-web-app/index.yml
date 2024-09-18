@@ -17,6 +17,7 @@ abstract: |
     - Understand the basic structure of an ASP.NET Core project.
     - Run a web app locally and view it in a browser.
     - Understand how the web app is served.
+    - Run your web app while viewing code changes with the `dotnet watch` command.
 prerequisites: |
   - Knowledge of what ASP.NET Core is and why it's used
   - Basic knowledge of web app concepts
@@ -40,6 +41,7 @@ units:
 - learn.build-your-first-aspnet-core-web-app.learning-content
 - learn.build-your-first-aspnet-core-web-app.exercise-create-project
 - learn.build-your-first-aspnet-core-web-app.exercise-run-project
+- learn.build-your-first-aspnet-core-web-app.exercise-dotnet-watch
 - learn.build-your-first-aspnet-core-web-app.knowledge-check
 - learn.build-your-first-aspnet-core-web-app.summary
 badge:
