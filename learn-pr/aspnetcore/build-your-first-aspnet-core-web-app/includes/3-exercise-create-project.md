@@ -79,7 +79,7 @@ The `Properties/launchSettings.json` file contains configuration data for how th
 
 The `launchSettings.json` file contains the following:
 
-[!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
+[!code-json[](../code/MyWebApp/Properties/launchSettings.json)]
 
 ### The `Program.cs` file
 
