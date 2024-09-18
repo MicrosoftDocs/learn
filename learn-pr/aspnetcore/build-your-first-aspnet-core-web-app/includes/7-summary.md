@@ -5,6 +5,7 @@ In this module, you set up your development environment to create and build ASP.
 - Examined the structure of the created project.
 - Ran your web app locally and viewed it in a browser.
 - Reviewed how the web app is served.
+- Made code changes to the app during local development.
 
 Congratulations on building your first ASP.NET Core web app!
 
