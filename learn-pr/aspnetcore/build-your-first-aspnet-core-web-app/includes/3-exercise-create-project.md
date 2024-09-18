@@ -53,7 +53,7 @@ In Visual Studio Code:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-    :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer.":::
+    :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
@@ -75,11 +75,11 @@ The `obj` folder contains intermediate files that are used by the build system, 
 
 ### The `Properties/launchSettings.json` file
 
-The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:<port>`, where `<port>` is a random local port number assigned when the project is created.
+The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:{port}`, where `{port}` is a random local port number assigned when the project is created.
 
 The `launchSettings.json` file contains the following:
 
-[!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
+    [!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
 
 ### The `Program.cs` file
 

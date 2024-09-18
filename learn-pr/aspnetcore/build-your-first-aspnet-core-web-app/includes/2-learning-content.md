@@ -31,7 +31,7 @@ All .NET project templates offer customization options to tailor the generated p
 To view all customization options for a specific template, use the following `dotnet new` command with the `--help` option, replacing `<template-name>` with the name of the template you want to explore:
 
     ```dotnetcli
-     dotnet new <template-name> --help
+    dotnet new <template-name> --help
     ```
 
 ## Using the .NET CLI `dotnet new` command to create a project
