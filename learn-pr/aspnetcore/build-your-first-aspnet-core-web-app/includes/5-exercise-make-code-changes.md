@@ -1,4 +1,4 @@
-Enhance your development workflow with the .NET CLI `dotnet watch` command. Unlike the `dotnet run` command, `dotnet watch` automatically rebuilds and re-runs your application whenever you make changes to the source files. This immediate feedback loop allows you to see the results of your changes instantly, significantly boosting productivity, and efficiency.
+Enhance your development workflow with the .NET CLI `dotnet watch` command. Unlike the `dotnet run` command, `dotnet watch` automatically rebuilds and re-runs your application whenever you make changes to the source files. This allows you to see the results of your changes faster, boosting productivity, and efficiency.
 
 In this exercise, you will:
 
