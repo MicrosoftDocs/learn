@@ -12,7 +12,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 
 | -- | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
 | - | - | - | - |
-| |![Screenshot of a SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Screenshot of an Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Screenshot of an Azure SQL Database logo](../media/azure-sql-database.png) |
+| |![Screenshot of a SQL Server Azure VM logo.](../media/azure-sql-vm.png) | ![Screenshot of an Azure SQL Managed Instance logo.](../media/azure-sql-managed-instance.png) | ![Screenshot of an Azure SQL Database logo.](../media/azure-sql-database.png) |
 | Type of cloud service | IaaS | PaaS | PaaS |
 | SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
 | Architecture | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases. | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances. | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
@@ -45,7 +45,7 @@ Running SQL Server on virtual machines allows you to meet unique and diverse bus
 
 It's not always easy for businesses to switch their DBMS to a fully managed service. There may be specific requirements that must be satisfied in order to migrate to a managed service that requires making changes to the database and the applications that use it. For this reason, using virtual machines can offer a solution, but using them doesn't eliminate the need to administer your DBMS as carefully as you would on-premises.
 
-## Azure SQL Database Managed Instance
+## Azure SQL Managed Instance
 
 Azure SQL Managed instance effectively runs a fully controllable instance of SQL Server in the cloud. You can install multiple databases on the same instance. You have complete control over this instance, much as you would for an on-premises server. SQL Managed Instance automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases. You can find detailed information at [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance).
 
