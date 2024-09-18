@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-your-first-aspnet-core-web-app.exercise-create-project
-title: Create an ASP.NET Core web app project from a template
+title: Exercise - Create an ASP.NET Core web app project from a template
 metadata:
   title: Exercise
   description: Create your first ASP.NET Core web app and examine the project structure.
