@@ -53,7 +53,7 @@ In Visual Studio Code:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-    :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+:::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
@@ -79,7 +79,7 @@ The `Properties/launchSettings.json` file contains configuration data for how th
 
 The `launchSettings.json` file contains the following:
 
-    [!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
+[!code-csharp[](../code/MyWebApp/Properties/launchSettings.json)]
 
 ### The `Program.cs` file
 
@@ -92,16 +92,16 @@ The `Program.cs` file serves as the entry point for an ASP.NET Core app and has 
 
 In the new empty ASP.NET Core project you created, the `Program.cs` file contains the following minimal code:
 
-    [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all)]
+[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all)]
 
 The following lines of code in this file create a `WebApplicationBuilder` with preconfigured defaults, and builds the app:
 
-    [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_application_builder)]
+[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_application_builder)]
 
 The `app.MapGet()` method directly defines an endpoint that handles HTTP GET requests:
 
-    [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
+[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
 
-    `app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
+`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
 
-    `() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"
+`() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"

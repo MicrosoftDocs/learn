@@ -35,16 +35,16 @@ In this exercise, you will:
     dotnet run
     ```
 
-    The project is built, run, and shows the following output on the command line:
+The project is built, run, and shows the following output on the command line:
 
-        ```output
-        C:\MyWebApp> dotnet run
-        Building...
-        info: Microsoft.Hosting.Lifetime[14]
-              Now listening on: http://localhost:5267
-        info: Microsoft.Hosting.Lifetime[0]
-              Application started. Press Ctrl+C to shut down.
-        ```
+```output
+C:\MyWebApp> dotnet run
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+        Now listening on: http://localhost:5267
+info: Microsoft.Hosting.Lifetime[0]
+        Application started. Press Ctrl+C to shut down.
+```
 
     Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
 
