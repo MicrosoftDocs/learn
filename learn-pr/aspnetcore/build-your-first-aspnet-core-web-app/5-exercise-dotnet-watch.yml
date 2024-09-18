@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-your-first-aspnet-core-web-app.exercise-dotnet-watch
-title: View code changes while running your app
+title: Make code changes
 metadata:
   title: Exercise
   description: View code change results instantly using the dotnet watch command.
