@@ -15,6 +15,6 @@ You should now be able to:
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Shared responsibility model](/azure/security/fundamentals/shared-responsibility) \- The shared responsibility model is the sharing of responsibilities for the cloud between you and your cloud provider.
- -  [Introduction to Azure VMware Solution](/learn/modules/intro-azure-vmware-solution/) is a Microsoft Learn course that dives deeper into Azure VMware Solution.
- -  [Introduction to Azure hybrid cloud services](/learn/modules/intro-to-azure-hybrid-services/) is a Microsoft Learn course that explains hybrid cloud in greater detail.
+ -  [Shared responsibility model](../media/shared-responsibility) \- The shared responsibility model is the sharing of responsibilities for the cloud between you and your cloud provider.
+ -  [Introduction to Azure VMware Solution](../media/media) is a Microsoft Learn course that dives deeper into Azure VMware Solution.
+ -  [Introduction to Azure hybrid cloud services](../media/media) is a Microsoft Learn course that explains hybrid cloud in greater detail.
