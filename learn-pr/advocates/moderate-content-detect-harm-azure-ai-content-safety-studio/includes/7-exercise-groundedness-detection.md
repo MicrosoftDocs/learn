@@ -16,7 +16,7 @@ We can provide a grounding source, submit a prompt, and provide a completion to 
 
     - **Completion** – *$250*
 
-    :::image type="content" source="../media/groundedness-prompts.png" alt-text="A screenshot of the groundedness inputs. A grounding source, prompt, and completion are provided.":::
+    :::image type="content" source="../media/groundedness-prompts.png" alt-text="A screenshot of the groundedness inputs for groundedness. A grounding source, prompt, and completion are provided.":::
 
 1. Select **Run test**.
 
@@ -36,7 +36,7 @@ Since models can sometimes provide incorrect information, we want to ensure that
 
     - **Completion** – *$350*
 
-    :::image type="content" source="../media/ungrounded-prompts.png" alt-text="A screenshot of the groundedness inputs. A grounding source, prompt, and completion are provided."  lightbox="../media/ungrounded-prompts.png":::
+    :::image type="content" source="../media/ungrounded-prompts.png" alt-text="A screenshot of the groundedness inputs for ungroundedness. A grounding source, prompt, and completion are provided."  lightbox="../media/ungrounded-prompts.png":::
 
 1. Select **Run test**.
 

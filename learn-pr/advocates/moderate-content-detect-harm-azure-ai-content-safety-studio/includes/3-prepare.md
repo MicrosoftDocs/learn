@@ -28,7 +28,7 @@ Projects are hosted by an Azure AI hub resource that provides enterprise-grade s
 
 ## Content Safety
 
-:::image type="content" source="../media/content-safety-capabilities.png" alt-text="A screenshot of the content safety page of the Azure AI Studio. A list of built-in features displays including moderate text content, groundedness detection, protected material detection, and prompt shields." lightbox="../media/content-safety-capabilities.png:::
+:::image type="content" source="../media/content-safety-capabilities.png" alt-text="A screenshot of the content safety page of the Azure AI Studio. A list of built-in features displays including moderate text content, groundedness detection, protected material detection, and prompt shields." lightbox="../media/content-safety-capabilities.png":::
 
 The **Content Safety** capabilities are available within the **AI Services** section of the **Azure AI Studio**. In the **Content Safety** section, you're able to try out the features within the exercises of this module.
 
