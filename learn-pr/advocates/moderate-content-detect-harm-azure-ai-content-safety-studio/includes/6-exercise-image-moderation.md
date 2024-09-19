@@ -4,12 +4,17 @@ Contoso Camping Store provides customers with the ability to upload photos to co
 
 Let’s first test an image of a family camping!
 
-1. In Content Safety Studio, select **Moderate** **image content**.
+1. On the **Content Safety** page, select **Moderate image content**.
 1. Select **Browse for a file** and upload the `family-builds-campfire.JPG` file.
 1. Set all **Threshold levels** to **Medium**.
+
+    :::image type="content" source="../media/image-moderation.png" alt-text="A screenshot of the image preview and filter configuration for image moderation."  lightbox="../media/image-moderation.png":::
+
 1. Select **Run test**.
 
 As expected, this image content is **Allowed,** and the **Severity level** is **Safe** across all categories.
+
+:::image type="content" source="../media/image-moderation-allow-results.png" alt-text="A screenshot of the image moderation results. The content is allowed. The severity level across all categories is safe. The threshold across all categories is medium. The judgement across all categories is allowed."  lightbox="../media/image-moderation-allow-results.png":::
 
 ## Violent content
 
@@ -24,6 +29,8 @@ We should also anticipate customers potentially posting harmful image content. T
 
 Rightfully so, the content is **Blocked**, and was rejected by the **Violence** filter that has a **Severity** level of **High**.
 
+:::image type="content" source="../media/image-moderation-blocked-content.png" alt-text="A screenshot of the image moderation results. The contnet is blocked. the severity for violence is high. The judgement for violence is blocked."  lightbox="../media/image-moderation-blocked-content.png":::
+
 ## Run a bulk test
 
 So far, we tested image content for singular isolated images. However, if we have a bulk dataset of image content, we could test the bulk dataset at once and receive metrics based on the model’s performance.
@@ -33,7 +40,12 @@ We have a bulk dataset of images provided by customers. The dataset also include
 1. Switch to the **Run a bulk test** tab.
 1. Select **Browse for a file** and upload the `bulk-image-moderation-dataset.zip` file.
 1. In the **Dataset preview** section, browse through the **Records** and their corresponding **Label**. A **0** indicates that the content is acceptable (not harmful). A **1** indicates that the content is unacceptable (harmful content).
+
+    :::image type="content" source="../media/bulk-image-moderation.png" alt-text="A screenshot of the dataset preview for bulk image moderation. A list of image records display alongside their labels. The configure filers for the severity thresholds are all set to medium.":::
+
 1. Set all **Threshold levels** to **Medium**.
 1. Select **Run test**.
+
+:::image type="content" source="../media/bulk-image-moderation-results.png" alt-text="A screenshot of the bulk image moderation results."  lightbox="../media/bulk-image-moderation-results.png":::
 
 Based on the results, is there room for improvement? If so, adjust the **Threshold** levels until the **Precision**, **Recall**, and **F1 Score** metrics are closer to **1**.
