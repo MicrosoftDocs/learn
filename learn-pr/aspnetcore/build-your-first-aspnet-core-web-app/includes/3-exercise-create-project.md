@@ -3,7 +3,9 @@ In this exercise, you will:
 * Create an ASP.NET Core web app project from a template using Visual Studio Code with the C# Dev Kit extension.
 * Examine the structure of the created project.
 
-## Create an ASP.NET Core web app using Visual Studio Code and the C# Dev Kit
+## Create an ASP.NET Core web app using a template
+
+::: zone pivot="vscode"
 
 In Visual Studio Code, create a new project:
 
@@ -20,7 +22,11 @@ In Visual Studio Code, create a new project:
 1. In the **Command Palette**, name the project `MyWebApp`, including matching the capitalization. Using this exact project name is important to ensure that the namespaces for code in this instruction match yours.
 1. Select **Create project** from the **Command Palette**.
 
-## Alternatively create an ASP.NET Core web app from the command line
+::: zone-end
+
+::: zone pivot="shell"
+
+Create a new project from the command line using the Visual Studio Code integrated terminal.
 
 In Visual Studio Code:
 
@@ -48,6 +54,7 @@ In Visual Studio Code:
    ```dotnetcli
    code -r MyWebApp
    ```
+::: zone-end
 
 ## Examine the structure of the project
 

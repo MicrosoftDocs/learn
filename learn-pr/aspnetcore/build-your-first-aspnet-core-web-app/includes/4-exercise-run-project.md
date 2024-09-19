@@ -4,9 +4,15 @@ In this exercise, you will:
 - Review how the web app is served.
 
 
-## Run the web app using Visual Studio Code and view in a browser
+## Run the web app and view in a browser
+
+::: zone pivot="vscode"
+
+Run the web app in Visual Studio Code and view in a browser:
 
 1. In Visual Studio Code, press <kbd>F5</kbd> to run the app. 
+
+The first time the project is run, the **Select debugger** prompt is displayed.
 
 1. At the **Select debugger** prompt in the **Command Palette** at the top of the Visual Studio Code UI, select **C#**. At the next prompt, select the default launch configuration (`C#: MyWebApp [Default Configuration]`):
 
@@ -25,9 +31,13 @@ In this exercise, you will:
     - From the **Run** menu, select **Stop Debugging**.
     - Press <kbd>Shift</kbd>+<kbd>F5</kbd> on the keyboard.
 
-## Alternatively run the web app using the .NET CLI
+::: zone-end
 
-1. From a terminal in Visual Studio Code or the command line, navigate to the `MyWebApp` project directory that contains your `MyWebApp.csproj` file.
+::: zone pivot="shell"
+
+Run the web app using the .NET CLI:
+
+1. From a terminal in Visual Studio Code or the command line, navigate to the *MyWebApp* project directory that contains your *MyWebApp.csproj* file.
 
 1. Build and Run the app with the following command:
 
@@ -52,18 +62,20 @@ In this exercise, you will:
 
 1. Press Ctrl+C at the command line to shut down the app.
 
+::: zone-end
+
 ### How the web app is served
 
 When the `dotnet run` command is run in the terminal, the following steps occur:
 
 Build and Configuration:
 
-- The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the `MyWebApp.csproj` project file and compiles the source code into an assembly.
-- The app reads configuration settings, including those specified in `launchSettings.json` for the default launch profile (the first one listed).
+- The .NET CLI invokes MSBuild to restore dependencies and compile the project. MSBuild processes the *MyWebApp.csproj* project file and compiles the source code into an assembly.
+- The app reads configuration settings, including those specified in *launchSettings.json* for the default launch profile (the first one listed).
 
 Host Setup:
 
-- The `CreateHostBuilder` method in `Program.cs` sets up the web host. By default, the `WebHostBuilder` configures Kestrel as the web server. Kestrel is a cross-platform web server for ASP.NET Core that’s designed for high performance.
+- The `CreateHostBuilder` method in *Program.cs* sets up the web host. By default, the `WebHostBuilder` configures Kestrel as the web server. Kestrel is a cross-platform web server for ASP.NET Core that’s designed for high performance.
 - Kestrel starts listening for incoming HTTP requests on the configured URLs, including HTTPS if specified.
 
 Request Handling:

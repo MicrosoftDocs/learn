@@ -5,9 +5,11 @@ In this exercise, you will:
 - Run your web app created in the previous exercise, using the `dotnet watch` command.
 - View code change results while the web app is running.
 
-## Run the web app with the `dotnet watch` task using Visual Studio Code
+## Run the web app with `dotnet watch`
 
-In Visual Studio Code with the .NET C# Dev Kit extension:
+::: zone pivot="vscode"
+
+Run the web app with the `dotnet watch` task in Visual Studio Code with the .NET C# Dev Kit extension:
 
 1. Open the **Command Palette** by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
 2. Type "Tasks: Run Task" and select Tasks: Run Task from the list. and select from the list.
@@ -17,10 +19,13 @@ In Visual Studio Code with the .NET C# Dev Kit extension:
 
     The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created.
 
-## Alternatively run the web app using the `dotnet watch` command from the command line
+::: zone-end
+
+::: zone pivot="shell"
+
+Run the web app using the `dotnet watch` command from the command line:
 
 1. In Visual Studio Code, if the integrated terminal pane isn't already available, select **New Terminal** from the **Terminal** menu to open the integrated terminal.
-
 1. Build and Run the app with the following command:
 
     ```dotnetcli
@@ -37,20 +42,22 @@ In Visual Studio Code with the .NET C# Dev Kit extension:
 
 1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed.
 
+::: zone-end
+
 ## Change the app's code and quickly view the results 
 
-With the `MyWebApp` application still running and the browser still displaying the `Hello World!` response:
+With the *MyWebApp* application still running and the browser still displaying the `Hello World!` response:
 
-1. Select the `Program.cs` in the **Explorer** pane of Visual Studio Code.
+1. Select the *Program.cs* in the **Explorer** pane of Visual Studio Code.
 1. Change the `app.MapGet` method so that it responds with `"Hello .NET Developer Community!"` instead of `"Hello World!"`.
 1. Save the changes to your code.
 
-After saving the changes, `dotnet watch` will automatically detect the modification to the `Program.cs` file. It will then:
+After saving the changes, `dotnet watch` will automatically detect the modification to the *Program.cs* file. It will then:
 
 - Rebuild the Application: dotnet watch rebuilds the application to incorporate the changes you made.
 - Restart the Application: Once the rebuild is complete, dotnet watch restarts the application.
 
-The output in the terminal indicates that the file `Program.cs` changed and the application was rebuilt and run.
+The output in the terminal indicates that the file *Program.cs* changed and the application was rebuilt and run.
 
 Refresh your browser. The updated response "Hello .NET Community!" is displayed.
 
