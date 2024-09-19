@@ -57,7 +57,7 @@ The *MyWebApp* project folder contents are displayed in the Visual Studio Code *
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
-### The `MyWebApp.csproj` project file
+### The *MyWebApp.csproj* project file
 
 The `.csproj` project file is used to:
 
