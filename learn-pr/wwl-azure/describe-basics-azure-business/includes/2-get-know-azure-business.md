@@ -15,4 +15,3 @@ Learn all about Azure and the cloud in this video.
  -  If you’re not ready to go all-in on the cloud, **you can use Azure in tandem with off-cloud IT in a hybrid arrangement**.
 
 In the next unit, we’ll explore the concepts of cloud economics a little deeper.
-

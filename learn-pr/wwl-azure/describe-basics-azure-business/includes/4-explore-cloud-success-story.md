@@ -16,4 +16,3 @@ Watch the following video to learn more:
 [Read more about Planzer’s cloud transition.](https://customers.microsoft.com/story/1480535568291163641-planzer-travel-transportation-azure?azure-portal=true)
 
 In the next unit, you can explore more cloud stories from worldwide businesses across many different industries.
-
