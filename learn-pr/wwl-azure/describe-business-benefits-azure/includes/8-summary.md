@@ -18,6 +18,5 @@ You should now be able to:
  -  Learn more about [cloud economics with Azure](https://azure.microsoft.com/solutions/cloud-economics/).
  -  Read about [Azure’s industry-specific solutions](https://azure.microsoft.com/solutions/industries/).
  -  Learn more about [security with Azure](https://azure.microsoft.com/explore/security/).
- -  Learn about [Azure’s global network of datacenters](/azure/networking/microsoft-global-network).
+ -  Learn about [Azure’s global network of datacenters](../media/microsoft-global-network).
  -  Learn about [sustainability with Azure](https://azure.microsoft.com/explore/global-infrastructure/sustainability/#overview).
-
