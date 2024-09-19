@@ -1,4 +1,4 @@
-GitHub Copilot is powered by Large Language Models (LLMs) to assist you in writing code seamlessly. In this unit, we'll focus on understanding the integration and impact of LLMs in GitHub Copilot. Let's review the following:
+GitHub Copilot is powered by Large Language Models (LLMs) to assist you in writing code seamlessly. In this unit, we focus on understanding the integration and impact of LLMs in GitHub Copilot. Let's review the following topics:
 
 - What are LLMs?
 - The role of LLMs in GitHub Copilot and prompting
@@ -35,7 +35,7 @@ Fine-tuning is a critical process that allows us to tailor pretrained large lang
 
 :::image type="content" source="../media/4-fine-tune-in-large-language-models-diagram.png" alt-text="Diagram that shows how fine-tuning is used in Large Language Models.":::
 
-Fine-tuning is essential to adapt LLMs for specific tasks, enhancing their performance. However, GitHub took it a step further by using the LoRA fine tuning method, which we'll discuss next.
+Fine-tuning is essential to adapt LLMs for specific tasks, enhancing their performance. However, GitHub took it a step further by using the LoRA fine tuning method, which we discuss next.
 
 ### LoRA fine-tuning
 
@@ -43,7 +43,7 @@ Traditional full fine-tuning means to train all parts of a neural network, which
 
 Here's how LoRA works:
 
-- Instead of changing everything, LoRA adds smaller trainable parts to each layer of the pretrained model.
+- LoRA adds smaller trainable parts to each layer of the pretrained model, instead of changing everything.
 - The original model remains the same, which saves time and resources.
 
 What's great about LoRA:
