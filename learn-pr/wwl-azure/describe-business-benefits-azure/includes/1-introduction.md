@@ -15,3 +15,4 @@ After completing this module, you’ll be able to:
  -  Describe how Azure can decrease your business’s carbon footprint.
 
 Read on to learn more! Throughout, you’ll encounter stories of real businesses that have reaped these benefits.
+

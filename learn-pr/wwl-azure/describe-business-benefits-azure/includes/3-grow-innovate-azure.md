@@ -39,3 +39,4 @@ Through Azure, your business can also explore new technologies such as artificia
 **Example**: [Watch this video about how global energy tech company Envision and its Energy Operating System EnOS use the Internet of Things to monitor and coordinate between smart energy devices](https://www.youtube.com/watch?v=LMGNhv7Ud2o).
 
 **Example**: [Dutch greenhouse tech company Blue Radix](https://customers.microsoft.com/story/1532065782621026828-blue-radix-professional-services-azure-automation) uses Azure Internet of Things capabilities to deliver the Crop Controller technology, which automates and optimizes climate and energy management in a greenhouse. Growers who could only maintain 10 hectares of crops before can now manage 40 or 50 hectares, with Crop Controller springing into action every five minutes, day and night.
+

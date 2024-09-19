@@ -20,3 +20,4 @@ For an example of a company that reaped the cost benefits of the cloud, consider
  -  Homepoint's pace of new digital releases increased by up to 40 percent.
 
 [Read more about Homepoint here](https://customers.microsoft.com/story/1427700939507289839-confluent-homepoint-customer-success-story-azure-us).
+

@@ -11,3 +11,4 @@ Watch this video to learn more:
  -  **Azure is one of the safest places you can store your data** – more secure than most off-cloud IT systems. From ultra-secure datacenters to AI-based threat detection to high-end encryption, you can rest easy that your business and company data is in good hands.
  -  **You can monitor everything that happens in your company’s cloud activities**. You can view usage reports to see how much cloud capacity you’re using, enforce company policies on employees’ cloud activities, and see who’s logging in, all from your own dashboard.
  -  **Azure services are highly reliable, with little downtime**, thanks to redundancies in the cloud network. These redundances can also protect your company from any data loss.
+
