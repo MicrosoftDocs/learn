@@ -44,3 +44,4 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
 ## Continue
 
 This exercise is complete for now. The sandbox keeps running, and you come back to this point in a few units to update the network configuration so you can get to the website.
+
