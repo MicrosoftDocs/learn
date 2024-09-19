@@ -6,7 +6,7 @@ metadata:
   description: Check what you've learned.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 12/5/2023
+  ms.date: 09/12/2024
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -52,7 +52,7 @@ quiz:
       explanation: "GitHub Copilot Business does have chat in IDE and mobile as features."
     - content: "GitHub Copilot Enterprise has an extra layer of personalization, with organization utilizing their own codebase to train GitHub Copilot."
       isCorrect: true
-      explanation: "Correct! GitHub Copilot Enterprise allows organizations to have a smarter more tailored experience by utilizing their own codebase to train GitHub Copilot."
+      explanation: "Correct! GitHub Copilot Enterprise allows organizations to have a smarter, more tailored experience by utilizing their own codebase to train GitHub Copilot."
     - content:  "GitHub Copilot Enterprise has an extra layer of security, with IP indemnity and enterprise-grade security, safety, and privacy."
       isCorrect: false
       explanation: "GitHub Copilot Business does have IP indemnity and enterprise-grade security, safety, and privacy."

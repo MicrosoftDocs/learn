@@ -47,7 +47,7 @@ Azure Storage offers different access tiers for your blob storage, helping you s
 
 The following considerations apply to the different access tiers:
 
- -  Hot and cool access tiers can be set at the account level. The cold and archive access tiers aren't available at the account level.
+ -  Hot, cool, and cold access tiers can be set at the account level. The archive access tier isn't available at the account level.
  -  Hot, cool, cold, and archive tiers can be set at the blob level, during or after upload.
  -  Data in the cool and cold access tiers can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool and cold data, a lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
  -  Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
@@ -76,4 +76,4 @@ Azure Disk storage, or Azure managed disks, are block-level storage volumes mana
 
 ## Azure Tables
 
-Azure Table storage stores large amounts of structured data. Azure tables are a NoSQL datastore that accepts authenticated calls from inside and outside the Azure cloud. This enables you to use Azure tables to build your hybrid or multi-cloud solution and have your data always available. Azure tables are ideal for storing structured, non-relational data.
+Azure Table storage stores large amounts of structured data. Azure tables are a NoSQL datastore that accepts authenticated calls from inside and outside the Azure cloud. This enables you to use Azure tables to build your hybrid or multicloud solution and have your data always available. Azure tables are ideal for storing structured, non-relational data.
