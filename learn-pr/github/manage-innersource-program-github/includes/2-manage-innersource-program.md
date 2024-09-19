@@ -2,7 +2,7 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 ## What is InnerSource?
 
-Open-source software can be freely used, modified, and shared by anyone. Using open-source software, anyone can view, modify, and distribute a project for any purpose with the idea that sharing code leads to better, more reliable software.
+Anyone can freely use, modify, and share open-source software. Using open-source software, anyone can view, modify, and distribute a project for any purpose with the idea that sharing code leads to better, more reliable software.
 
 **InnerSource** is the practice of applying open-source patterns to projects with a limited audience. For example, a company might establish an InnerSource program that mirrors the structure of a typical open-source project, except that it's only accessible to the employees of that company. In effect, it's an open-source program behind your company's firewall.
 
@@ -12,7 +12,7 @@ An InnerSource program can offer numerous benefits beyond what traditional close
 
 First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solve problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
 
-Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
+Next, they *reduce friction*. Let's say that a consumer team is dependent on a bug fix or new feature for a project owned by a different team. IN an InnerSource program, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
 Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams might prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either.
 
@@ -60,7 +60,7 @@ A README file communicates expectations for your project and helps you manage co
 - Include references to the projects on which you depend. These references are a good way to promote the work of others.
 - Use Markdown to guide readers through properly formatted content.
 
-If you put your README file in your repository's hidden *.github*, *docs*, or in the root directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the *.github* directory, then the repository's root directory, and finally the *docs* directory.
+If you put your README file in your repository's root directory, or in the hidden `.github` or `docs` directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the `.github` directory, then the repository's root directory, and finally the `docs` directory.
 
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
 
@@ -94,7 +94,7 @@ Check out some [Awesome GitHub issue & pull request templates](https://github.co
 
 ### Define workflows
 
-For projects that encourage external contributions, be sure to specify what workflow the project follows. The workflow should include details about where and how branches should be used for bugs and features, how pull requests should be opened, and any other details people outside the repository team should know before they push code. If you don't yet have a workflow in mind, you should consider [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
+For projects that encourage external contributions, be sure to specify what workflow the project follows. The workflow should include details about where and how branches should be used for bugs and features. It should also include how pull requests should be opened, and any other details people outside the repository team should know before they push code. If you don't yet have a workflow in mind, you should consider [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
 You should communicate a strategy for managing releases and deployments. These parts of the workflow affect day-to-day branching and merging, so it's important to communicate them to contributors. Learn more about how they relate to your [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true).
 
@@ -104,7 +104,7 @@ Any team venturing into InnerSource should think about the kinds of metrics they
 
 Instead, consider adding metrics that show how external participation improved project quality. Is the repository receiving pull requests from external sources that fix bugs and add features? Are there active participants in discussions around the project and its future? Is the program inspiring an InnerSource expansion that drives benefits elsewhere in the organization?
 
-In short, metrics are hard, especially when it comes to measuring the value and effect of individual and team contributions. If misused, metrics can harm the culture, existing processes, and diminish the collective sentiment towards the organization or leadership team. When thinking about measuring InnerSource adoption, consider the following:
+In short, metrics are hard, especially when it comes to measuring the value and effect of individual and team contributions. If misused, metrics can harm the culture, existing processes, and diminish the collective sentiment towards the organization or leadership team. When thinking about measuring InnerSource adoption, consider the following guidance on metrics:
 
 - Measure process, not output
   - Code review turnaround time
