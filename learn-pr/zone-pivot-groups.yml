@@ -1,33 +1,55 @@
 ### YamlMime:ZonePivotGroups
 groups:
-- id: arm-template-language-azure-shell-interface
-  title: ARM template language and Azure shell
-  prompt: Choose your ARM template language and Azure shell
+- id: supportfaq
+  title: SupportFAQ
+  prompt: What do you have questions about?
   pivots:
-    - id: bicepcli
-      title: Bicep + CLI
-    - id: biceppowershell
-      title: Bicep + PowerShell
-    - id: jsoncli
-      title: JSON + CLI
-    - id: jsonpowershell
-      title: JSON + PowerShell
-- id: aspnet-core-identity-data-store
-  title: Identity-Data-Store
-  prompt: Choose the ASP.NET Core Identity data store
+  - id: general
+    title: General
+  - id: profile
+    title: Profile & Dashboard
+  - id: sandbox
+    title: Sandbox
+  - id: support
+    title: Support
+  - id: educators
+    title: Educators
+- id: os
+  title: Operating system
+  prompt: Choose your operating system
   pivots:
-    - id: pg
-      title: PostgreSQL
-    - id: sql
-      title: SQL Server
-- id: azure-devops-actions
-  title: Choose an automation platform
-  prompt: Choose an automation platform
+    - id: linux
+      title: Linux
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
+- id: os-windows-mac
+  title: Operating system
+  prompt: Choose your operating system
   pivots:
-    - id: github-actions
-      title: GitHub Actions
-    - id: azure-devops
-      title: Azure Pipelines
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
+- id: platform
+  title: Platform
+  prompt: Choose your platform
+  pivots:
+    - id: linux
+      title: Linux
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
+- id: platform-windows-mac
+  title: Platform
+  prompt: Choose your platform
+  pivots:
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
 - id: azure-interface
   title: Shell
   prompt: Choose your shell
@@ -38,114 +60,14 @@ groups:
       title: PowerShell
     - id: portal
       title: Azure portal
-- id: azure-pipelines-agent-hosting
-  title: Azure Pipelines agent type
-  prompt: Choose your training module development environment
-  pivots:
-    - id: ms-hosted-agents
-      title: Local development environment using a Microsoft-hosted agent
-    - id: github-codespaces-agent
-      title: GitHub Codespaces development environment using a self-hosted agent
-- id: azure-resource-interaction
-  title: Azure interaction options
-  prompt: Choose how you interact with resources on Azure
-  pivots:
-    - id: azure-portal
-      title: Azure portal
-    - id: azure-cli
-      title: Azure CLI (local)
-    - id: vs-code
-      title: Visual Studio Code
-- id: azure-shell-interface
-  title: Shell
-  prompt: Choose your Azure shell
-  pivots:
-    - id: powershell
-      title: PowerShell
-    - id: cli
-      title: Azure CLI
-- id: bash-vscode
-  title: Operating system
-  prompt: Choose an Integrated Development Environment (IDE) or the shell
-  pivots:
-    - id: bash
-      title: Bash
-    - id: vscode
-      title: Visual Studio Code
-- id: bot-services
-  title: Azure Bot Services
-  prompt: Explore the Azure Bot Service scenarios below
-  pivots:
-    - id: commerce
-      title: Commerce
-    - id: information
-      title: Information
-    - id: enterprise
-      title: Enterprise Productivity
-- id: cognitive-services
-  title: Azure Cognitive Services
-  prompt: Choose the Azure Cognitive Services category you want to see
-  pivots:
-  - id: vision
-    title: Vision
-  - id: speech
-    title: Speech
-  - id: language
-    title: Language
-  - id: knowledge
-    title: Knowledge
-  - id: search
-    title: Search
-- id: com-strategy
-  title: COM-Strategy
-  prompt: Select each of the below buttons to learn more about the strategies.
-  pivots:
-    - id: business-strategy
-      title: Business Strategy
-    - id: people-strategy
-      title: People Strategy
-    - id: technology-strategy
-      title: Technology Strategy
-- id: cosmos-db-programming-model-java-spring
-  title: Cosmos DB programming model
-  prompt: Choose a Cosmos DB programming model
-  pivots:
-    - id: java
-      title: Java SDK for Azure Cosmos DB
-    - id: spring
-      title: Spring Data
-- id: data-azure-database
-  title: Azure database environment
-  prompt: Choose your database
-  pivots:
-    - id: azuresql
-      title: Azure SQL Database
-    - id: postgresql
-      title: Azure Database for PostgreSQL
-    - id: mysql
-      title: Azure Database for MySQL   
-- id: dev-env-csharp-java-cli
-  title: Development environment
-  prompt: Choose your development environment
+- id: dev-lang-csharp-javascript
+  title: Development language
+  prompt: Choose your development language
   pivots:
     - id: csharp
       title: C#
-    - id: java
-      title: Java
-    - id: cli
-      title: Azure CLI
-- id: dev-javascript-framework
-  title: JavaScript framework
-  prompt: Choose your JavaScript framework or library
-  pivots:
-    - id: angular
-      title: Angular
-    - id: react
-      title: React
-    - id: svelte
-      title: Svelte
-    - id: vue
-      title: Vue
+    - id: javascript
+      title: JavaScript
 - id: dev-lang-csharp-java
   title: Development language
   prompt: Choose your development language
@@ -176,22 +98,6 @@ groups:
       title: Node.js
     - id: python
       title: Python
-- id: dev-lang-csharp-javascript
-  title: Development language
-  prompt: Choose your development language
-  pivots:
-    - id: csharp
-      title: C#
-    - id: javascript
-      title: JavaScript
-- id: dev-lang-csharp-node
-  title: Development language
-  prompt: Choose your development language
-  pivots:
-    - id: csharp
-      title: C#
-    - id: node
-      title: Node.js
 - id: dev-lang-csharp-node-python
   title: Development language
   prompt: Choose your development language
@@ -202,14 +108,6 @@ groups:
       title: Node.js
     - id: python
       title: Python
-- id: dev-lang-csharp-powershell
-  title: Development language
-  prompt: Choose your development language
-  pivots:
-    - id: csharp
-      title: C#
-    - id: powershell
-      title: PowerShell
 - id: dev-lang-csharp-python
   title: Development language
   prompt: Choose your development language
@@ -218,6 +116,22 @@ groups:
       title: C#
     - id: python
       title: Python
+- id: dev-lang-nodeexpress-pythonflask
+  title: Development platform
+  prompt: Choose your platform
+  pivots:
+    - id: nodeexpress
+      title: Express and Node.js (JavaScript)
+    - id: pythonflask
+      title: Flask (Python)
+- id: dev-lang-csharp-node
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
 - id: dev-lang-javascript-powershell
   title: Development language
   prompt: Choose your development language
@@ -238,14 +152,6 @@ groups:
       title: Python
     - id: csharp
       title: C#
-- id: dev-lang-nodeexpress-pythonflask
-  title: Development platform
-  prompt: Choose your platform
-  pivots:
-    - id: nodeexpress
-      title: Express and Node.js (JavaScript)
-    - id: pythonflask
-      title: Flask (Python)
 - id: dev-lang-php-python-java
   title: Development language
   prompt: Choose your development language
@@ -256,14 +162,86 @@ groups:
       title: Python 
     - id: java
       title: Java
-- id: dev-m365-tenant
-  title: Development environment
-  prompt: Choose your development environment
+- id: dev-lang-csharp-powershell
+  title: Development language
+  prompt: Choose your development language
   pivots:
-    - id: m365
-      title: Microsoft 365 tenant
-    - id: devproxy
-      title: Simulated (Dev Proxy)
+    - id: csharp
+      title: C#
+    - id: powershell
+      title: PowerShell
+- id: platform-cloud
+  title: Platform
+  prompt: Choose which platform you want to run in the cloud
+  pivots:
+    - id: windows-cloud
+      title: Windows
+    - id: linux-cloud
+      title: Linux
+- id: platform-apps
+  title: Platform
+  prompt: Choose your app development platform
+  pivots:
+    - id: uwp
+      title: UWP
+    - id: wpf
+      title: WPF
+    - id: windowsforms
+      title: Windows Forms
+- id: platform-apps-uwp-wpf
+  title: Platform
+  prompt: Choose your app development platform
+  pivots:
+    - id: uwp
+      title: UWP
+    - id: wpf
+      title: WPF
+- id: cognitive-services
+  title: Azure Cognitive Services
+  prompt: Choose the Azure Cognitive Services category you want to see
+  pivots:
+  - id: vision
+    title: Vision
+  - id: speech
+    title: Speech
+  - id: language
+    title: Language
+  - id: knowledge
+    title: Knowledge
+  - id: search
+    title: Search
+- id: bot-services
+  title: Azure Bot Services
+  prompt: Explore the Azure Bot Service scenarios below
+  pivots:
+    - id: commerce
+      title: Commerce
+    - id: information
+      title: Information
+    - id: enterprise
+      title: Enterprise Productivity
+- id: com-strategy
+  title: COM-Strategy
+  prompt: Select each of the below buttons to learn more about the strategies.
+  pivots:
+    - id: business-strategy
+      title: Business Strategy
+    - id: people-strategy
+      title: People Strategy
+    - id: technology-strategy
+      title: Technology Strategy
+- id: migration-strategy 
+  title: Migration-Strategy
+  prompt: Click on each of the buttons to learn more about each migration strategy.
+  pivots:
+    - id: rehost
+      title: Rehost
+    - id: refactor
+      title: Refactor
+    - id: rearchitect
+      title: Rearchitect
+    - id: rebuild
+      title: Rebuild
 - id: ef-core-data-access-syntax
   title: Data-Access-Syntax
   prompt: Choose the data access syntax
@@ -284,118 +262,6 @@ groups:
       title: Visual Studio Code
     - id: vstudio
       title: Visual Studio
-- id: microsoft-entra-external-identities-configuration-options
-  title: Configuration options
-  prompt: Select a configuration option
-  pivots:
-    - id: microsoft-entra-admin-center
-      title: Microsoft Entra admin center
-    - id: microsoft-graph-api
-      title: Microsoft Graph API
-- id: migration-strategy 
-  title: Migration-Strategy
-  prompt: Click on each of the buttons to learn more about each migration strategy.
-  pivots:
-    - id: rehost
-      title: Rehost
-    - id: refactor
-      title: Refactor
-    - id: rearchitect
-      title: Rearchitect
-    - id: rebuild
-      title: Rebuild
-- id: os
-  title: Operating system
-  prompt: Choose your operating system
-  pivots:
-    - id: linux
-      title: Linux
-    - id: macos
-      title: Mac
-    - id: windows
-      title: Windows
-- id: os-windows-mac
-  title: Operating system
-  prompt: Choose your operating system
-  pivots:
-    - id: macos
-      title: Mac
-    - id: windows
-      title: Windows
-- id: platform
-  title: Platform
-  prompt: Choose your platform
-  pivots:
-    - id: linux
-      title: Linux
-    - id: macos
-      title: Mac
-    - id: windows
-      title: Windows
-- id: platform-apps
-  title: Platform
-  prompt: Choose your app development platform
-  pivots:
-    - id: uwp
-      title: UWP
-    - id: wpf
-      title: WPF
-    - id: windowsforms
-      title: Windows Forms
-- id: platform-apps-uwp-wpf
-  title: Platform
-  prompt: Choose your app development platform
-  pivots:
-    - id: uwp
-      title: UWP
-    - id: wpf
-      title: WPF
-- id: platform-cloud
-  title: Platform
-  prompt: Choose which platform you want to run in the cloud
-  pivots:
-    - id: windows-cloud
-      title: Windows
-    - id: linux-cloud
-      title: Linux
-- id: platform-windows-linux
-  title: Platform
-  prompt: Choose your platform 
-  pivots:
-    - id: windows
-      title: Windows
-    - id: linux
-      title: Linux
-- id: platform-windows-mac
-  title: Platform
-  prompt: Choose your platform
-  pivots:
-    - id: macos
-      title: Mac
-    - id: windows
-      title: Windows
-- id: repository-hosting-platform
-  title: Choose a repository hosting platform
-  prompt: Choose a repository hosting platform
-  pivots:
-    - id: github
-      title: GitHub
-    - id: azurerepos
-      title: Azure Repos
-- id: supportfaq
-  title: SupportFAQ
-  prompt: What do you have questions about?
-  pivots:
-  - id: general
-    title: General
-  - id: profile
-    title: Profile & Dashboard
-  - id: sandbox
-    title: Sandbox
-  - id: support
-    title: Support
-  - id: educators
-    title: Educators
 - id: visualstudio
   title: Visual Studio
   prompt: Choose your version of Visual Studio
@@ -406,6 +272,22 @@ groups:
       title: Visual Studio 2017
     - id: vs2019
       title: Visual Studio 2019
+- id: aspnet-core-identity-data-store
+  title: Identity-Data-Store
+  prompt: Choose the ASP.NET Core Identity data store
+  pivots:
+    - id: pg
+      title: PostgreSQL
+    - id: sql
+      title: SQL Server
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
 - id: vs-vscode-language
   title: IDE and language
   prompt: Choose your Integrated Development Environment (IDE) and development language
@@ -418,6 +300,78 @@ groups:
       title: Visual Studio + Node.js
     - id: vs-csharp
       title: Visual Studio + C#
+- id: bash-vscode
+  title: Operating system
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: bash
+      title: Bash
+    - id: vscode
+      title: Visual Studio Code
+- id: dev-env-csharp-java-cli
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: csharp
+      title: C#
+    - id: java
+      title: Java
+    - id: cli
+      title: Azure CLI
+- id: dev-javascript-framework
+  title: JavaScript framework
+  prompt: Choose your JavaScript framework or library
+  pivots:
+    - id: angular
+      title: Angular
+    - id: react
+      title: React
+    - id: svelte
+      title: Svelte
+    - id: vue
+      title: Vue
+- id: data-azure-database
+  title: Azure database environment
+  prompt: Choose your database
+  pivots:
+    - id: azuresql
+      title: Azure SQL Database
+    - id: postgresql
+      title: Azure Database for PostgreSQL
+    - id: mysql
+      title: Azure Database for MySQL   
+- id: platform-windows-linux
+  title: Platform
+  prompt: Choose your platform 
+  pivots:
+    - id: windows
+      title: Windows
+    - id: linux
+      title: Linux
+- id: azure-shell-interface
+  title: Shell
+  prompt: Choose your Azure shell
+  pivots:
+    - id: powershell
+      title: PowerShell
+    - id: cli
+      title: Azure CLI
+- id: cosmos-db-programming-model-java-spring
+  title: Cosmos DB programming model
+  prompt: Choose a Cosmos DB programming model
+  pivots:
+    - id: java
+      title: Java SDK for Azure Cosmos DB
+    - id: spring
+      title: Spring Data
+- id: azure-devops-actions
+  title: Choose an automation platform
+  prompt: Choose an automation platform
+  pivots:
+    - id: github-actions
+      title: GitHub Actions
+    - id: azure-devops
+      title: Azure Pipelines
 - id: vs-vsmac
   title: Choose your platform
   prompt: Choose your platform
@@ -426,14 +380,18 @@ groups:
       title: Visual Studio
     - id: vsstudiomac
       title: Visual Studio for Mac
-- id: vsandcode
-  title: IDE
-  prompt: Choose your app Integrated Development Environment (IDE)
+- id: arm-template-language-azure-shell-interface
+  title: ARM template language and Azure shell
+  prompt: Choose your ARM template language and Azure shell
   pivots:
-    - id: vscode
-      title: Visual Studio Code
-    - id: vstudio
-      title: Visual Studio
+    - id: bicepcli
+      title: Bicep + CLI
+    - id: biceppowershell
+      title: Bicep + PowerShell
+    - id: jsoncli
+      title: JSON + CLI
+    - id: jsonpowershell
+      title: JSON + PowerShell
 - id: webxr-vr-ar
   title: WebXR for Virtual Reality or Augmented Reality
   prompt: Choose your WebXR session type
@@ -442,3 +400,45 @@ groups:
       title: Virtual reality
     - id: ar
       title: Augmented reality
+- id: repository-hosting-platform
+  title: Choose a repository hosting platform
+  prompt: Choose a repository hosting platform
+  pivots:
+    - id: github
+      title: GitHub
+    - id: azurerepos
+      title: Azure Repos
+- id: azure-pipelines-agent-hosting
+  title: Azure Pipelines agent type
+  prompt: Choose your training module development environment
+  pivots:
+    - id: ms-hosted-agents
+      title: Local development environment using a Microsoft-hosted agent
+    - id: github-codespaces-agent
+      title: GitHub Codespaces development environment using a self-hosted agent
+- id: dev-m365-tenant
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: m365
+      title: Microsoft 365 tenant
+    - id: devproxy
+      title: Simulated (Dev Proxy)
+- id: azure-resource-interaction
+  title: Azure interaction options
+  prompt: Choose how you interact with resources on Azure
+  pivots:
+    - id: azure-portal
+      title: Azure portal
+    - id: azure-cli
+      title: Azure CLI (local)
+    - id: vs-code
+      title: Visual Studio Code
+- id: microsoft-entra-external-identities-configuration-options
+  title: Configuration options
+  prompt: Select a configuration option
+  pivots:
+    - id: microsoft-entra-admin-center
+      title: Microsoft Entra admin center
+    - id: microsoft-graph-api
+      title: Microsoft Graph API
