@@ -55,23 +55,9 @@ In this section, you'll create a Blob container and upload a picture.
 7.  Copy the URL from the URL field and paste it into a new tab. You should receive an error message similar to the following.
     
     ```
-    <Error>
       <Code>ResourceNotFound</Code>
       <Message>The specified resource does not exist. RequestId:4a4bd3d9-101e-005a-1a3e-84bd42000000</Message>
     </Error>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
