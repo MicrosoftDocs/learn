@@ -308,14 +308,14 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
-- id: shell-vscode
+- id: vscode-shell
   title: IDE or shell
   prompt: Choose an Integrated Development Environment (IDE) or the shell
   pivots:
-    - id: shell
-      title: Shell
     - id: vscode
       title: Visual Studio Code
+    - id: shell
+      title: Shell
 - id: dev-env-csharp-java-cli
   title: Development environment
   prompt: Choose your development environment

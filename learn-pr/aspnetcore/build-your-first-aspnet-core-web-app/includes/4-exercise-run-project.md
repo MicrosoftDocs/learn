@@ -58,7 +58,9 @@ Run the web app using the .NET CLI:
 
     Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
 
-1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed.
+1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed:
+
+    :::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
 
 1. Press Ctrl+C at the command line to shut down the app.
 
