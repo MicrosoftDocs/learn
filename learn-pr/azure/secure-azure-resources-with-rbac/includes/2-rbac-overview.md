@@ -1,7 +1,7 @@
 When it comes to identity and access, most organizations that are considering using the public cloud are concerned about two things:
 
 1. Ensuring that when people leave the organization, they lose access to resources in the cloud.
-1. Striking the right balance between autonomy and central governance; for example, giving project teams the ability to create and manage virtual machines in the cloud while centrally controlling the networks those VMs use to communicate with other resources.
+1. Striking the right balance between autonomy and central governance. For example, giving project teams the ability to create and manage virtual machines in the cloud, while centrally controlling the networks those VMs use to communicate with other resources.
 
 Microsoft Entra ID and Azure role-based access control (Azure RBAC) work together to make it simple to carry out these goals.
 
