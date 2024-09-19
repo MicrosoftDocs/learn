@@ -15,3 +15,4 @@ You should now be able to:
  -  Learn more about Azure from the [Azure product page](https://azure.microsoft.com?azure-portal=true).
  -  Explore a [virtual cloud datacenter](https://news.microsoft.com/stories/microsoft-datacenter-tour?azure-portal=true).
  -  If you’re more technologically inclined, check out this video to review more [technical aspects of cloud economics](https://www.youtube.com/watch?v=oZrOIza-SLE?azure-portal=true).
+

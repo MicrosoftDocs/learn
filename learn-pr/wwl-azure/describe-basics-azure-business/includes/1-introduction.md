@@ -16,3 +16,4 @@ After completing this module, you’ll be able to:
  -  Describe the basics of cloud economics, and how the consumption-based, operational expenditures model opens new business opportunities.
  -  Describe the basic financial and operational benefits of cloud over a traditional, off-cloud IT system.
  -  Cite real examples of businesses that have used Azure to transform their operations and improve their bottom lines.
+
