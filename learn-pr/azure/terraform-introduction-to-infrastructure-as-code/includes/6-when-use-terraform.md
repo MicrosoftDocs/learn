@@ -18,12 +18,12 @@ If you use Azure as your cloud platform, consider these advantages of using Terr
 
 - **State management**: Because of the state file, Terraform is effective at managing the lifecycle of your resource from creation through to decommissioning.
 
-- **Skill sets**: When making your choice, take into account the skillset of your team and the skills available in your market.
+- **Skill sets**: When making your choice, take into account the skill set of your team and the skills available in your market.
 
 ### When is Terraform not the right tool?
 
-Some situations might call for another tool set. Consider the following reasons not to use Bicep as your main tool set:
+Some situations might call for another tool set. Consider the following reasons not to use Terraform as your main tool set:
 
-- **Existing tool set**: When you're determining when to use Terraform, the first question to ask is, _does my organization already have a tool set in use?_ Many tooling options are available that can be used for infrastructure as code resource provisioning. Sometimes, it makes sense to use existing financial and knowledge investments when you consider adopting a new process.
+- **Existing tool set**: When you're determining when to use Terraform, the first question to ask is, *does my organization already have a tool set in use?* Many tooling options are available that can be used for infrastructure as code resource provisioning. Sometimes, it makes sense to use existing financial and knowledge investments when you consider adopting a new process.
 
-- **Single cloud**: If your organization only uses Azure and no other clouds or services, Bicep might be the right tool. Terraform supports the single cloud scenario, but you may wish to consider the trade-off in managing state files.
+- **Single cloud**: If your organization only uses Azure and no other clouds or services, Bicep might be the right tool. Terraform supports the single cloud scenario, but you might wish to consider the trade-off in managing state files.

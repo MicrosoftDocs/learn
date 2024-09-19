@@ -3,14 +3,14 @@ uid: learn.wwl.detect-analyze-faces.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/13/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 10/27/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 quiz:
   title: ""
   questions:
@@ -38,12 +38,12 @@ quiz:
       explanation: "Incorrect: Shutter speed applies to video more than images however, faster shutter speeds tend to create a sharper image, which is beneficial to facial detection"
   - content: "What two actions are required to try out the capabilities of the Face service?"
     choices:
-    - content: "Create an Azure Cognitive Search resource, and open Vision Studio"
+    - content: "Create an Azure AI Search resource, and open Vision Studio"
       isCorrect: false
-      explanation: "Incorrect: Azure Cognitive Search doesn't have face detection capabilities."
+      explanation: "Incorrect: Azure AI Search doesn't have face detection capabilities."
     - content: "Create a Face resource, and open Vision Studio"
       isCorrect: true
       explanation: "Correct: The Face resource has face detections capabilities, and can be used in Vision Studio to understand its capabilities."
-    - content: "Create a Face resource, and open Azure OpenAI Studio"
+    - content: "Create a Face resource, and open Azure AI Studio"
       isCorrect: false
-      explanation: "Incorrect: Azure OpenAI Studio doesn't include face detection capabilities."
+      explanation: "Incorrect: Azure AI Studio doesn't include face detection capabilities."

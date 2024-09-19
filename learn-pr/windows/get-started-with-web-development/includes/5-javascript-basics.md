@@ -1,6 +1,6 @@
 JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your web pages.
 
-For example, you can use JavaScript to define the behavior that happens when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
+For example, you can use JavaScript to define the behavior that happens when a user selects a button, like opening a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
 
 In this unit, you set up an example JavaScript file for your web page. In it, you create a button to switch between light and dark themes. Then, you attach the button to JavaScript code that performs the actual theme switching. Finally, you check the finished project using your browser's developer tools.
 
@@ -12,13 +12,13 @@ Like CSS, you could add JavaScript directly to the HTML file, but a recommended 
 <script>alert('Hello World')</script>
  ```
 
-However, it's better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality.
+However, it's better to add your JavaScript code to a separate file that you can link to every file that needs your custom functionality.
 
 The HTML script tag `<script>` lets us link to an external JavaScript file, which is how you configure your web app in this exercise.
 
-1. In **Visual Studio Code**, open your `index.html` file.
+1. In Visual Studio Code, open your `index.html` file.
 
-1. Find the closing `</body>` element and place your cursor on a new line above it. Enter `script:src` and then select <kbd>Enter</kbd>. The opening and closing tags for a `<script>` element are added to your code.
+1. Find the closing `</body>` element and place your cursor on a new line above it. Enter `script:src` and press <kbd>Enter</kbd>. The opening and closing tags for a `<script>` element are added to your code.
 
 1. Modify the `<script>` element to load your `app.js` file as shown in the following example. Ensure that it's located after the closing `</ul>` element for the list.
 
@@ -33,7 +33,7 @@ The HTML script tag `<script>` lets us link to an external JavaScript file, whic
     ...
     ```
 
-The `<script>` element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting the `<script>` element at the end of the `<body>` section enables all the page content to display on the screen first, before the script is loaded.
+You could place the `<script>` element in the `<head>` or elsewhere in the `<body>`. However, putting the `<script>` element at the end of the `<body>` section enables all the page content to display on the screen first, before the script is loaded.
 
 ## Add fault tolerance
 
@@ -48,11 +48,11 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
 
 ## Set strict mode
 
-JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. When you start learning JavaScript, having fewer errors is convenient. However, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
+JavaScript was designed to be easy to learn and allows the developer to make certain mistakes. For example, JavaScript doesn't throw an error when you use a misspelled variable, and instead creates a new global one. When you start learning JavaScript, having fewer errors is convenient. However, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
 
 Switch to strict mode to get more useful errors when you make mistakes.
 
-- In **Visual Studio Code**, open the `app.js` file, and enter the following.
+- In Visual Studio Code, open the `app.js` file and enter the following:
 
     ```javascript
     'use strict';
@@ -150,11 +150,11 @@ Before you can add the event handler, you need a reference to the button element
     });
     ```
 
-In the preceding code, you used the `toggle` method to modify the `<body>` element's class attribute. This method automatically adds or removes the `light-theme` and `dark-theme` classes. This code applies the dark styles instead of light styles on click, and then light styles instead of dark if you click again.
+In the preceding code, you used the `toggle` method to modify the `<body>` element's class attribute. This method automatically adds or removes the `light-theme` and `dark-theme` classes. This code applies the dark styles instead of light styles if you click, and then light styles instead of dark if you click again.
 
 However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
 
-Here's what your JavaScript code should look like with the event handler added.
+Here's what your JavaScript code should look like with the event handler added:
 
 ```javascript
 'use strict';
@@ -174,13 +174,13 @@ switcher.addEventListener('click', function() {
 });
 ```
 
-It's a JavaScript convention to use *camel case* for variable names with more than one word; for example: the variable `className`.
+It's a JavaScript convention to use *camel case* for variable names with more than one word; for example, the variable `className`.
 
 ## Console message
 
-As a web developer, you can create hidden messages that aren't visible on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
+As a web developer, you can create hidden messages that aren't visible on your webpage, but that you can read in the Developer Tools in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
 
-In your JavaScript file, add a call to `console.log` after the `if` statement, but inside the event listener. 
+In your JavaScript file, add a call to `console.log` after the `if` statement, but inside the event listener.
 
 After you make this change, your complete JavaScript code should look like this.
 
@@ -204,13 +204,13 @@ switcher.addEventListener('click', function() {
 });
 ```
 
-When you are in a JavaScript file in **Visual Studio Code**, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
+When you're in a JavaScript file in Visual Studio Code, you can use autocomplete for `console.log` by entering `log` and pressing <kbd>Enter</kbd>.
 
 You can define a text *string* with single or double quotes around the text.
 
 ## Open in the browser
 
-1. To preview, select `index.html`, and select **Open In Default Browser**, or reload the same browser tab by pressing <kbd>F5</kbd>.
+1. To preview, right-click `index.html` and select **Open In Default Browser**, or reload the same browser tab by pressing <kbd>F5</kbd>.
 
    :::image type="content" source="../media/light-theme-with-button.png" alt-text="Screenshot of the website showing the new button." lightbox="../media/light-theme-with-button.png":::
 
@@ -218,15 +218,13 @@ You can define a text *string* with single or double quotes around the text.
 
    :::image type="content" source="../media/dark-theme-with-button.png" alt-text="Screenshot of the website after switching to dark theme." lightbox="../media/dark-theme-with-button.png":::
 
-1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something
+1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something.
 
 ## Check the page in the developer tools
 
-1. Open Developer Tools.
+1. Open Developer Tools by right-clicking and selecting **Inspect**, or by using the keyboard shortcut <kbd>F12</kbd>. Alternatively, use the <kbd>Ctrl+Shift+I</kbd> shortcut on Windows or Linux, and <kbd>Option+Command+I</kbd> on macOS.
 
-   - Right-click and select **Inspect**, or use the keyboard shortcut <kbd>F12</kbd>. Alternatively, use the <kbd>Ctrl+Shift+I</kbd> shortcut on Windows or Linux, and <kbd>Option+Command+I</kbd> on macOS.
-
-1. Select the **Elements** tab and, inside the **Elements** tab, select the **Styles** tab.
+1. Select the **Elements** tab and select the **Styles** tab.
 
 1. Select the `<body>` element. In the **Styles** tab, look at the applied theme. If the current theme is dark, the `dark-theme` styles are applied.
 

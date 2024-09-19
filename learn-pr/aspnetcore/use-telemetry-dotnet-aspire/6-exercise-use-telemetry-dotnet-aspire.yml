@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll instrument a .NET Aspire cloud-native app and examine the data it emits in the dashboard.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
   ms.custom: devx-track-dotnet
 durationInMinutes: 10

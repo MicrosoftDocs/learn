@@ -30,4 +30,4 @@ There are four deployment strategies:
 - **Embedded** or **edge**: Deploy the model on local devices or edge servers to provide low-latency responses and offline capabilities. For example, to modify the air conditioning temperature in a car using voice command.
 
 > [!Note]
-> Edge (on-device) deployment is challenging with LLMs due to the space requirements. If you want to deploy a language model to the edge, you may want explore Small Language Models (SLMs) like [Phi-3 models](/blog/introducing-phi-3-redefining-whats-possible-with-slms/?azure-portal=true).
+> Edge (on-device) deployment is challenging with LLMs due to the space requirements. If you want to deploy a language model to the edge, you may want explore Small Language Models (SLMs) like [Phi-3 models](/shows/the-download/the-download-new-github-merch-phi-3-model-code-font-updates-and-more?azure-portal=true).
