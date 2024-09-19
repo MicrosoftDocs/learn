@@ -67,7 +67,7 @@ The `.csproj` project file is used to:
 
 ### The `.sln` solution file
 
-When an ASP.NET Core project is created or opened in Visual Studio Code, it creates a `<project name>.sln` solution file. The `<project name>.sln` solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
+When an ASP.NET Core project is created or opened in Visual Studio Code (with the C# Dev Kit extension), it creates a *<project name>.sln* solution file. The *<project name>.sln* solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
 
 ### The `obj` folder
 
