@@ -26,7 +26,7 @@ In Visual Studio Code:
 
 1. Select **New Terminal** from the **Terminal** menu to open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 1. Change to the directory (`cd`) that will contain the project.
-1. Create an ASP.NET Core web app in a directory named `MyWebApp` by running the .NET CLI command `dotnet new`:
+1. Create an ASP.NET Core web app in a directory named *MyWebApp* by running the .NET CLI command `dotnet new`:
 
     ```dotnetcli
     dotnet new web -o MyWebApp
