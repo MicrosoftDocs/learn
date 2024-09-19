@@ -1,10 +1,11 @@
 ### YamlMime:ModuleUnit
+
 uid: learn.describe-purview-data-governance.describe-benefits-data-governance
 title: Describe the benefits of data governance
 metadata:
   title: Describe the benefits of data governance
   description: "Describe the benefits of data governance."
-  ms.date: 9/13/2024
+  ms.date: 9/19/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
