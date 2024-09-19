@@ -6,8 +6,8 @@ This exercise walks you through the following steps:
 - Prompt GitHub Copilot for code suggestions
 - Accept code suggestions from GitHub Copilot
 
->[!Note] 
->Please be aware that when signing up for the free trial of GitHub Copilot you will be asked to submit a form of payment even though you will not be charged until the free trial is over. Ensure you cancel before the 30 days is over to avoid payment. 
+> [!NOTE]
+> Please be aware that when signing up for the GitHub Copilot free trial, you'll be asked to submit a form of payment even though you won't be charged until the free trial is over. Ensure you cancel before the 30 days is over to avoid being charged.
 
 ## Getting started
 
@@ -25,8 +25,7 @@ When you've finished the exercise in GitHub, return back to this module for:
 > * To earn a badge for completing this module
 
 >[!Note]
-> You don't need to modify any of the workflow files to complete this exercise.
-> **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
+> You don't need to modify any of the workflow files to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
 > [Start the exercise on GitHub](https://github.com/skills/copilot-codespaces-vscode)

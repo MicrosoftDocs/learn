@@ -8,5 +8,3 @@ You should now be able to:
  -  Describe platform as a service (PaaS).
  -  Describe software as a service (SaaS).
  -  Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
-
-## 
