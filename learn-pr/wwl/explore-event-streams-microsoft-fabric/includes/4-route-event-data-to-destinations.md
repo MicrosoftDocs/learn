@@ -111,8 +111,7 @@ Earlier, we mentioned the **Group by** operator in the event processor editor. T
     
       ![Screenshot of the hopping window concept.](./../media/hopping-window.png)
 
-  - **snapshot windows** snapshot windows group event stream events that have the same timestamp and are unlike the other windowing functions, which require the function to be named. In 
-  - **snapshot windows** you add the ```System.Timestamp()``` to the ```GROUP BY``` clause.
+  - **snapshot windows** snapshot windows group event stream events that have the same timestamp and are unlike the other windowing functions, which require the function to be named. In snapshot windows you add the ```System.Timestamp()``` to the ```GROUP BY``` clause.
 
     This window provides a count of tweets with the same article type that occur at exactly the same time.
 
