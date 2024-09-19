@@ -59,38 +59,38 @@ The following sections contain an overview of the main project folders and files
 
 ### The *MyWebApp.csproj* project file
 
-The `.csproj` project file is used to:
+The *.csproj* project file is used to:
 
 - Configure how to build the project
 - Specify which version of .NET to target
 - Manage project dependencies
 
-### The `.sln` solution file
+### The *.sln* solution file
 
 When an ASP.NET Core project is created or opened in Visual Studio Code (with the C# Dev Kit extension), it creates a *<project name>.sln* solution file. The *<project name>.sln* solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
 
-### The `obj` folder
+### The *obj* folder
 
 The `obj` folder contains intermediate files that are used by the build system, including compiled object files generated from the source files. The final build output is placed in a `bin` folder created during the build process.
 
-### The `Properties/launchSettings.json` file
+### The *Properties/launchSettings.json* file
 
-The `Properties/launchSettings.json` file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:{port}`, where `{port}` is a random local port number assigned when the project is created.
+The *Properties/launchSettings.json* file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:{port}`, where `{port}` is a random local port number assigned when the project is created.
 
-The `launchSettings.json` file contains the following:
+The *launchSettings.json* file contains the following:
 
 [!code-json[](../code/MyWebApp/Properties/launchSettings.json)]
 
 ### The *Program.cs* file
 
-The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
+The *Program.cs* file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
 - Host configuration: Configures the host, including setting up the web server.
 - Service registration: Adds services to the app’s functionality, such as database contexts, logging, and specialized services for specific frameworks.
 - Middleware pipeline configuration: Defines the app’s request handling pipeline as a series of middleware instances.
 - Environment configuration: Sets up environment-specific settings for development, staging, and production.
 
-In the new empty ASP.NET Core project you created, the `Program.cs` file contains the following minimal code:
+In the new empty ASP.NET Core project you created, the *Program.cs* file contains the following minimal code:
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all)]
 
@@ -102,6 +102,6 @@ The `app.MapGet()` method directly defines an endpoint that handles HTTP GET req
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
 
-`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the `Properties/launchSettings.json` file at project creation.
+`app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the *Properties/launchSettings.json* file at project creation.
 
 `() => "Hello World!"`: A lambda expression that serves as the request handler. When a GET request is made to the root URL, this lambda expression is executed, and it returns the string "Hello World!"

@@ -12,7 +12,7 @@ In this exercise, you will:
 
     :::image type="content" source="../media/vsc-select-bebugger.png" alt-text="Chosing Select debugger in the Command Pallette":::
 
-    The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created. If you need to change the port due to a local port conflict, change the port in the project's `Properties/launchSettings.json` file.
+    The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created. If you need to change the port due to a local port conflict, change the port in the project's *Properties/launchSettings.json* file.
 
     The response displayed in the browser:
 
