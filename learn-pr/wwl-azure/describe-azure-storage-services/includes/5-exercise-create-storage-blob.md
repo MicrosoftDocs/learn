@@ -58,9 +58,6 @@ In this section, you'll create a Blob container and upload a picture.
       <Code>ResourceNotFound</Code>
       <Message>The specified resource does not exist. RequestId:4a4bd3d9-101e-005a-1a3e-84bd42000000</Message>
     </Error>
-    
-    
-    
     ```
 
 ## Change the access level of your blob
