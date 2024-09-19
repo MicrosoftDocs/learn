@@ -32,7 +32,7 @@ In Visual Studio Code:
     dotnet new web -o MyWebApp
     ```
 
-    A new ASP.NET Core empty web project is created in a directory named **MyWebApp**.
+    A new ASP.NET Core empty web project is created in a directory named *MyWebApp*.
     
     The following outlines the command syntax:
     
