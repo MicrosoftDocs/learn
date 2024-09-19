@@ -15,7 +15,7 @@ Let’s first test some positive customer feedback.
 
 The content is allowed, and the severity level is **Safe** across all categories. This result is to be expected given the positive and unharmful sentiment of the customer’s feedback.
 
-:::image type="content" source="../media/text-moderation-allow-results.png" alt-text="A screenshot of the results for text moderation. The screenshot shows that the content is allowed. The severity level for all categories is safe. The threshold settings for all categories is medium. And the judgement for all categories is allowed."  lightbox="../media/text-moderation-allow-results.png":::
+:::image type="content" source="../media/text-moderation-allow-results.png" alt-text="A screenshot of the results for text moderation. The screenshot shows that the content is allowed. The severity level for all categories is safe. The threshold settings for all categories is medium. And the judgment for all categories is allowed."  lightbox="../media/text-moderation-allow-results.png":::
 
 ## Harmful content
 
@@ -39,7 +39,7 @@ But what happens if we test a harmful statement? Let’s test with negative cust
 
 The content is now **Blocked** and was rejected by the filter in the **Hate** category.
 
-:::image type="content" source="../media/text-moderation-blocked-content.png" alt-text="A screenshot of the text moderation results. The content is blocked. The severity level for the hate category is low. The threshold for the hate category is low. The judgement for the hate category is blocked."  lightbox="../media/text-moderation-blocked-content.png":::
+:::image type="content" source="../media/text-moderation-blocked-content.png" alt-text="A screenshot of the text moderation results. The content is blocked. The severity level for the hate category is low. The threshold for the hate category is low. The judgment for the hate category is blocked."  lightbox="../media/text-moderation-blocked-content.png":::
 
 ## Violent content with misspelling
 

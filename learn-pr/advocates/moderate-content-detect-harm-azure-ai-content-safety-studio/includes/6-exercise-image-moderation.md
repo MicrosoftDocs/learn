@@ -14,7 +14,7 @@ Let’s first test an image of a family camping!
 
 As expected, this image content is **Allowed,** and the **Severity level** is **Safe** across all categories.
 
-:::image type="content" source="../media/image-moderation-allow-results.png" alt-text="A screenshot of the image moderation results. The content is allowed. The severity level across all categories is safe. The threshold across all categories is medium. The judgement across all categories is allowed."  lightbox="../media/image-moderation-allow-results.png":::
+:::image type="content" source="../media/image-moderation-allow-results.png" alt-text="A screenshot of the image moderation results. The content is allowed. The severity level across all categories is safe. The threshold across all categories is medium. The judgment across all categories is allowed."  lightbox="../media/image-moderation-allow-results.png":::
 
 ## Violent content
 
@@ -29,7 +29,7 @@ We should also anticipate customers potentially posting harmful image content. T
 
 Rightfully so, the content is **Blocked**, and was rejected by the **Violence** filter that has a **Severity** level of **High**.
 
-:::image type="content" source="../media/image-moderation-blocked-content.png" alt-text="A screenshot of the image moderation results. The contnet is blocked. the severity for violence is high. The judgement for violence is blocked."  lightbox="../media/image-moderation-blocked-content.png":::
+:::image type="content" source="../media/image-moderation-blocked-content.png" alt-text="A screenshot of the image moderation results. The content is blocked. the severity for violence is high. The judgment for violence is blocked."  lightbox="../media/image-moderation-blocked-content.png":::
 
 ## Run a bulk test
 
