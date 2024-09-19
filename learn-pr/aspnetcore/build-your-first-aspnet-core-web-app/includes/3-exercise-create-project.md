@@ -81,7 +81,7 @@ The `launchSettings.json` file contains the following:
 
 [!code-json[](../code/MyWebApp/Properties/launchSettings.json)]
 
-### The `Program.cs` file
+### The *Program.cs* file
 
 The `Program.cs` file serves as the entry point for an ASP.NET Core app and has several key purposes, which include:
 
