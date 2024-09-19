@@ -20,20 +20,17 @@ Every individual virtual machine size represents a combination of the following 
 
 ## Key Features and Benefits for M-series VM Medium Memory and High Memory Series Azure Virtual Machines
 
-**Medium Memory Series**
-The Msv3 and Mdsv3 Medium Memory Virtual Machine series deliver:
+**Medium Memory Series:** The Msv3 and Mdsv3 Medium Memory Virtual Machine series deliver:
 
 - Memory sizes of up to 4 TB.
 - Up to 4,000-MBps throughput to remote storage.
 
-**High Memory Series**
-The Msv3 and Mdsv3 High Memory, memory-optimized VM sizes deliver:
+**High Memory Series:** The Msv3 and Mdsv3 High Memory, memory-optimized VM sizes deliver:
 
 - Memory sizes ranging from 6 TB to 16 TB.
 - Up to 8,000-MBps throughput to remote storage.
 
-**Common Benefits**
-Both the Msv3 and Mdsv3 Medium Memory & High Memory Virtual Machine series deliver:
+**Common Benefits:** Both the Msv3 and Mdsv3 Medium Memory & High Memory Virtual Machine series deliver:
 
 - Up to 25% networking performance improvement over previous generations.
 - Faster performance, lower total cost of ownership, and improved resilience to failures compared to the previous generation, Mv2-series VMs.
