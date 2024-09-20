@@ -5,7 +5,7 @@ The module also introduced you to Microsoft Purview Data Catalog, a data governa
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe benefits of data governance.
+- Describe the concepts and benefits of data governance.
 - Describe key features of Microsoft Purview Data Catalog.
 
 ### Learn more
