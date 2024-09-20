@@ -2,7 +2,7 @@ Microsoft Azure provides a robust alerting and monitoring solution called Azure 
 
 You work for a large shipping company that recently deployed several web applications to the Azure platform. Due to a configuration error, the customer-facing order tracker was offline. The issue wasn't identified until customers started complaining that they couldn't track their orders. As a consequence, customer satisfaction with your service dropped.
 
-As your company's Azure solution architect, you need to find a solution that detects problems in your environments in real time. The correct team will be notified so it can resolve any problems before your customers notice.
+As your company's Azure solution architect, you need to find a solution that detects problems in your environments in real time. The solution should notify the correct team so it can resolve any problems before your customers notice.
 
 ## Learning objectives
 

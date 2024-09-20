@@ -2,7 +2,7 @@ Azure Monitor is a powerful reporting and analytics tool. You can use it for ins
 
 After the downtime that your customers faced, you set up monitoring on your key resources in Azure. With the monitoring in place, you want to make sure the right people are being alerted at the right level.
 
-In this unit, you'll learn how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Finally, you'll learn how to create and manage your own alerts.
+In this unit, you learn how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Finally, you learn how to create and manage your own alerts.
 
 ## Data types in Azure Monitor
 
@@ -13,11 +13,11 @@ Azure Monitor receives data from target resources like applications, operating s
 
 ![Diagram that represents the target resources feeding into Azure Monitor and the two principal signal types: metrics and logs.](../media/2-azure-resource-signal-types.svg)
 
-You'll learn about the three signal types that you can use to monitor your environment:
+There are three signal types that you can use to monitor your environment:
 
 - **Metric** alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
 - **Activity log** alerts notify you when Azure resources change state. For example, an activity log alert can notify you when a resource is deleted.
-- **Log** alerts are based on things written to log files. For example, a log alert can notify you when a web server has returned a number of 404 or 500 responses.
+- **Log** alerts are based on things written to log files. For example, a log alert can notify you when a web server returns a particular number of 404 or 500 responses.
 
 ## Composition of an alert rule
 
@@ -27,9 +27,9 @@ Every alert or notification available in Azure Monitor is the product of a rule.
   - The *target resource* for the alert rule. You can assign multiple target resources to a single alert rule. The type of resource defines the available signal types.
 - **CONDITION**
   - The *signal type* used to assess the rule. The signal type can be a metric, an activity log, or logs. There are others, but this module doesn't cover them.
-  - The *alert logic* applied to the data that's supplied via the signal type. The structure of the alert logic changes depending on the signal type.
+  - The *alert logic* applied to the data that's being supplied via the signal type. The structure of the alert logic changes depending on the signal type.
 - **ACTIONS**
-  - The *action*, like sending an email, sending an SMS message, or using a webhook.
+  - The *action*, like sending an email, sending a Short Message Service (SMS) message, or using a webhook.
   - An *action group*, which typically contains a unique set of recipients for the action.
 - **ALERT DETAILS**
   - An *alert name* and an *alert description* that specify the alert's purpose.
@@ -56,7 +56,7 @@ You can get monitoring data from across most of the Azure services and report on
 
 Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
 
-As an Azure solution architect, you'd use Azure Monitor to enable tightly focused and specific alerts before any application change. You'd then disable the alerts after a successful deployment.
+As an Azure solution architect, you want to use Azure Monitor to enable tightly focused and specific alerts before any application change. Then, disable the alerts after a successful deployment.
 
 ## Alert summary view
 

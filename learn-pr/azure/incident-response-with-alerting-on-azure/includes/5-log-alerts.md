@@ -2,7 +2,7 @@ You can use Azure Monitor to capture important information from log files. Appli
 
 As a solution architect, you want to explore ways that monitoring log data can detect issues before they become issues for your customers. You know that Azure Monitor supports the use of log data.
 
-In this unit, you'll understand how using log data can improve resilience in your system.
+In this unit, you understand how using log data can improve resilience in your system.
 
 ## When to use log alerts
 
@@ -10,7 +10,7 @@ Log alerts use log data to assess the rule logic and, if necessary, trigger an a
 
 By its nature, log data is historical, so usage is focused on analytics and trends.
 
-You can use these types of logs to assess if any of your servers have exceeded their CPU utilization by a given threshold during the last 30 minutes, or you can evaluate response codes issued on your web application server in the last hour.
+You can use these types of logs to assess if any of your servers exceeded their CPU utilization by a given threshold during the last 30 minutes. Or, you could evaluate response codes issued on your web application server in the last hour.
 
 ## How log alerts work
 
@@ -20,12 +20,12 @@ When a log search evaluates as positive, it creates an alert record and triggers
 
 ## Composition of log search rules
 
-Every log alert has an associated search rule. The composition of these rules is as follows:
+Every log alert has an associated search rule with the following composition:
 
-- **Log query**: Query that runs every time the alert rule fires
-- **Time period**: Time range for the query
-- **Frequency**: How often the query should run
-- **Threshold**: Trigger point for an alert to be created
+- **Log query**: Query that runs every time the alert rule fires.
+- **Time period**: Time range for the query.
+- **Frequency**: How often the query should run.
+- **Threshold**: Trigger point for an alert to be created.
 
 Log search results are one of two types: *number of records* or *metric measurement*.
 
@@ -39,10 +39,10 @@ This type of log search returns a single alert when the number of records in a s
 
 Metric measurement logs offer the same basic functionality as metric alert logs.
 
-Unlike number-of-records search logs, metric measurement logs require additional criteria to be set:
+Unlike number-of-records search logs, metric measurement logs require further criteria to be set:
 
-- **Aggregate function**: The calculation that will be made against the result data. An example is count or average. The result of the function is called **AggregatedValue**.
-- **Group field**: A field by which the result will be grouped. This criterion is used with the aggregated value. For example, you might specify that you want the average grouped by computer.
+- **Aggregate function**: The calculation to be made against the result data. An example is count or average. The result of the function is called **AggregatedValue**.
+- **Group field**: Indicates how the result should be grouped. This criterion is used with the aggregated value. For example, you might specify that you want the average grouped by computer.
 - **Interval**: The time interval by which data is aggregated. For example, if you specify 10 minutes, an alert record is created for each aggregated block of 10 minutes.
 - **Threshold**: A point defined by an aggregated value and the total number of breaches.
 
@@ -52,4 +52,4 @@ As you can see, metric measurements greatly reduce the volume of alerts that are
 
 ## Stateless nature of log alerts
 
-One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-types#log-alerts)). A stateless log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
+One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-types#log-alerts)). A stateless log alert generates new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
