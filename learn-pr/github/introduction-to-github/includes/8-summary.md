@@ -1,4 +1,4 @@
-In this module, you've:
+In this module, you:
 
 - Identified the fundamental features of GitHub.
 - Learned about repository management.
