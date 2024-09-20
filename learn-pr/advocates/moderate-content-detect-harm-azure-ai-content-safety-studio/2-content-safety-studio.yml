@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.content-safety-studio
-title: Content Safety Studio
+title: Content Safety
 metadata:
-  title: Content Safety Studio
-  description: Learn about the Azure AI Content Safety Studio and how it can help you moderate content.
+  title: Content Safety
+  description: Learn about the Azure AI Content Safety service and how it can help you moderate content.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024

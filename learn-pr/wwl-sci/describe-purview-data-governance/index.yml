@@ -1,19 +1,20 @@
 ### YamlMime:Module
+
 uid: learn.describe-purview-data-governance
 metadata:
   title: Describe the data governance solutions of Microsoft Purview
   description: "Describe the data governance solutions of Microsoft Purview."
-  ms.date: 9/13/2024
+  ms.date: 9/19/2024
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
-  ms.topic: module-standard-task-based 
+  ms.topic: module-standard-task-based
   ms.service: purview
 title: Describe the data governance solutions of Microsoft Purview
 summary: "Learn about Microsoft Purview data governance solutions that leverage AI and modern technologies to ensure data quality, security, and compliance while also accelerating value creation."
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the benefits of data governance.
+  - Describe the concepts and benefits of data governance.
   - Describe the capabilities of Microsoft Purview Data Catalog.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
@@ -26,9 +27,9 @@ levels:
 roles:
   - business-user
   - student
-products:
+products: 
   - microsoft-purview
-subjects:
+subjects: 
   - information-protection-governance
 units:
   - learn.describe-purview-data-governance.introduction
