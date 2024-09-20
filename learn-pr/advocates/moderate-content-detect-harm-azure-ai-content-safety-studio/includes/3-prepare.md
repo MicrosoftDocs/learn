@@ -1,44 +1,32 @@
-The first step in moderating content with Azure AI Content Safety within the Content Safety Studio is to create an Azure AI Hub resource. After the hub resource is created, you need to create both an Azure AI Project and Content Safety resource.
+The first step in moderating content with Azure AI Content Safety within Azure AI Studio is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Studio.
 
-## Azure AI Hub Resource
+The Azure AI Hub resource is the top-level Azure resource for Azure AI Studio and provides the working environment for a team to build and manage AI applications. In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring. Follow the steps provided to create an Azure AI Hub resource.
 
-The Azure AI hub resource is the top-level Azure resource for Azure AI Studio and provides a working environment for a team to build and manage AI applications. In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring. Use the following steps to create an Azure AI Hub resource.
+## Create an Azure AI Hub resource
 
-1. Within [Azure AI Studio](https://ai.azure.com/), in the menu under **Management** select **All hubs**. Then select **+ New hub**.
+> [!IMPORTANT]
+> All features included in this module are supported in region **East US**. Selecting a different region may result in the inability to complete the exercises. To learn more, visit [Region availability](/azure/ai-services/content-safety/overview).
+
+1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Management** and select **All hubs**.
+1. Within hubs, select **+ New hub**.
 1. Complete the following fields:
-   - **Hub name** – provide a name for your hub.
-   - **Subscription** – select your Azure subscription that has access to Azure OpenAI Service.
-   - **Resource group** – select an existing resource group or create a new one.
-   - **Location** – For this example, select *East US*.
-   - **Connect Azure AI Services or Azure OpenAI** – select your AI Service.
-   - **Connect Azure AI Search** – Skip connecting.
+    - Hub name - provide a name for your hub
+    - Subscription - select your Azure subscription
+    - Resource group - selecting an existing resource group or create a new one
+    - Location - East US
+    - Connect Azure AI Services or Azure OpenAI - select **Create new AI Services**
+    - Connect Azure AI Search - Skip connecting
 1. Select **Next**.
 1. After reviewing the Hub details, select **Create**.
 
-## Azure AI Project
+## Navigate to Content Safety
 
-Projects are hosted in an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Use the following steps to create an Azure AI Project.
+:::image type="content" source="../media/content-safety-capabilities.png" alt-text="A screenshot of the content safety page of the Azure AI Studio. A list of built-in features displays including moderate text content, groundedness detection, protected material detection, and prompt shields." lightbox="../media/content-safety-capabilities.png":::
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Home** and select **+ New project**.
-1. Complete the following fields:
-   - **Project name** – provide a name for your project.
-   - **Hub** – select the Hub that was previously created.
-1. Select **Create a project**.
+The **Content Safety** capabilities are available within the **AI Services** section of the **Azure AI Studio**. In the **Content Safety** section, you're able to try out the features within the exercises of this module.
 
-## Content Safety Resource
-
-The Content Safety Resource is an Azure AI service. This service consists of machine learning assisted moderation APIs that detect material that is potentially offensive, risky, or otherwise undesirable, to assure the contents in community is safe. Use the following steps to create a Content Safety Resource.
-
-1. Within [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
-1. In the **All resources** section, select **+ Create a new resource**.
-1. Complete the following fields:
-   - **Subscription** – select your Azure subscription that has access to Azure OpenAI Service.
-   - **Resource group** – select the Resource Group that was previously created.
-   - **Region** – For this example, select *East US*.
-   - **Name** – provide a name for your resource.
-   - **Pricing tier** – Select *Free* or *Standard S0*.
-1. Select **Review + create**.
-1. Select **Create**.
+1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Get started** and select **AI Services**.
+1. On the **Integrate with generative AI page**, select **Content Safety**.
 
 ## Download the project files
 
@@ -46,3 +34,6 @@ Project files are available in the [data](https://github.com/Azure-Samples/aacs-
 
 > [!NOTE]
 > Within the `data` folder is a `bulk-image-moderation-dataset.zip` file. Do not unzip the `bulk-image-moderation-dataset.zip` file as this format is required for the **Image Moderation** exercise.
+
+> [!WARNING]
+> There are graphic images provided in the **Image Moderation** folder depicting scenes of harm. These image file names have **blood** appended and are used for the **Image moderation** exercises. You are not required to view the images to complete the exercises. There is a **Blur image** toggle within the **Image moderation** feature which hides the view of uploaded images by default.

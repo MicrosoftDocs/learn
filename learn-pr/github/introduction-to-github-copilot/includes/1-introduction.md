@@ -8,11 +8,11 @@ OpenAI created GitHub Copilot's generative pretrained language model, powered by
 
 By the end of this module, you'll:
 
-- Explain what GitHub Copilot is and the advantages it provides.
-- Understand the availability of GitHub Copilot Individual, Business, and Enterprise.
-- Discuss the future of GitHub Copilot.
-- Learn how to get started using GitHub Copilot and some common configurations.
-- Develop using GitHub Copilot with Visual Studio Code using hands-on exercises.
+- Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions.
+- Understand the different ways to trigger GitHub Copilot.
+- Comprehend the differences between GitHub Copilot Individual, Business, and Enterprise.
+- Learn how to configure GitHub Copilot.
+- Troubleshoot GitHub Copilot.
 
 ## Prerequisites
 
