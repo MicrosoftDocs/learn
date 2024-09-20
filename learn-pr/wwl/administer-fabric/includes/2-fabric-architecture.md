@@ -15,7 +15,7 @@ All of the Fabric experiences use OneLake as their native store without needing 
 
 ## Understand Fabric concepts: tenant, capacity, domain, workspace, and item
 
-A Fabric *tenant* is a dedicated space for organizations to create, store, and manage Fabric items. There's often a single instance of Fabric for an organization, and it's aligned with Azure Active Directory. The Fabric *tenant* maps to the root of OneLake and is at the top level of the hierarchy.
+A Fabric *tenant* is a dedicated space for organizations to create, store, and manage Fabric items. There's often a single instance of Fabric for an organization, and it's aligned with Microsoft Entra ID. The Fabric *tenant* maps to the root of OneLake and is at the top level of the hierarchy.
 
 *Capacity* is a dedicated set of resources that is available at a given time to be used. A tenant can have one or more capacities associated with it.  Capacity defines the ability of a resource to perform an activity or to produce output. Different items consume different capacity at a certain time. Fabric offers capacity through the Fabric SKU and Trials.
 
