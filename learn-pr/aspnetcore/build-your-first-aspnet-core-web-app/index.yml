@@ -7,7 +7,8 @@ metadata:
   author: wadepickett
   ms.author: wpickett
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-
+  ms.service: aspnet-core
+  manager: coxford
 title: Build your first ASP.NET Core web app
 summary: Learn how to build your first web app with ASP.NET Core.
 abstract: |

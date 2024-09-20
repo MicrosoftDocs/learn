@@ -1,4 +1,4 @@
-Enhance your development workflow with the .NET CLI `dotnet watch` command. Unlike the `dotnet run` command, `dotnet watch` automatically rebuilds and re-runs your application whenever you make changes to the source files. Additionally, `dotnet watch` includes a hot reload feature, which injects updates directly to your running application without requiring a full rebuild. `dotnet watch` allows you to see the results of your changes faster, boosting productivity, and efficiency.
+Enhance your development workflow with the .NET CLI `dotnet watch` command. Unlike the `dotnet run` command, `dotnet watch` automatically rebuilds and re-runs your application whenever you make changes to the source files. Additionally, `dotnet watch` includes a hot reload feature, which injects updates directly to your running application without requiring a restart. `dotnet watch` allows you to see the results of your changes faster, boosting productivity, and efficiency.
 
 In this exercise, you will:
 
@@ -54,12 +54,12 @@ With the *MyWebApp* application still running and the browser still displaying t
 
 After saving the changes, `dotnet watch` will automatically detect the modification to the *Program.cs* file. It will then:
 
-- Hot Reload the Application: dotnet watch applies the changes to the running application without requiring a full rebuild when possible.
-- Rebuild the Application (if necessary): If the changes can't be hot reloaded, dotnet watch automatically rebuilds the application to incorporate the changes you made.
-- Restart the Application (if necessary): If a full rebuild is required, dotnet watch restarts the application. Otherwise, it may only partially restart the necessary components to increase efficiency.
+- Hot Reload the Application: `dotnet watch` applies the changes to the running application without requiring a full rebuild when possible.
+- Rebuild the Application (if necessary): If the changes can't be hot reloaded, `dotnet watch` automatically rebuilds the application to incorporate the changes you made.
+- Restart the Application (if necessary): If a full rebuild is required, `dotnet watch` restarts the application.
 
-The output in the terminal indicates that the file *Program.cs* changed and the application was rebuilt and run.
+The output in the terminal indicates that the file *Program.cs* changed and the changes were hot reloaded into the running app.
 
-Refresh your browser. The updated response "Hello .NET Community!" is displayed.
+To see the result of the change, refresh your browser. The updated response "Hello .NET Community!" is displayed.
 
 This automatic rebuild and restart process allows you to quickly see the results of your changes without manually stopping and restarting the application.

@@ -315,7 +315,7 @@ groups:
     - id: vscode
       title: Visual Studio Code
     - id: shell
-      title: Shell
+      title: .NET CLI
 - id: dev-env-spring-jbosseap
   title: Java framework
   prompt: Choose your Java framework
