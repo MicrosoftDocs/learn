@@ -101,7 +101,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 1. In a new browser window, go to https://aka.ms/ssprsetup. 
 1. Sign in with the user name **balas@organization-domain-name.onmicrosoft.com** and the password that you noted earlier. Remember to replace "organization-domain-name" with the domain name of the Microsoft Entra organization you created.
 1. If you're asked to update your password, enter a new password of your choice. Make sure you note the new password.
-1. Select the **Security info** tab on the left, and then select **+ Add sign-in method**.
+1. Select the **Security info** tab, and then select **+ Add sign-in method**.
 1. In the **Add a method** box, select **Phone**.
 1. Enter your mobile phone details.
 
