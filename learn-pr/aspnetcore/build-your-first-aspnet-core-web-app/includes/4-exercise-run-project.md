@@ -12,7 +12,9 @@ Run the web app in Visual Studio Code and view in a browser:
 
 1. In Visual Studio Code, press <kbd>F5</kbd> to run the app. 
 
-The first time the project is run, the **Select debugger** prompt is displayed.
+    Pressing <kbd>F5</kbd> triggers the .NET CLI command `dotnet run` which builds and runs the application.
+
+    The first time the project is run in Visual Studio Code, the **Select debugger** prompt is displayed.
 
 1. At the **Select debugger** prompt in the **Command Palette** at the top of the Visual Studio Code UI, select **C#**. At the next prompt, select the default launch configuration (`C#: MyWebApp [Default Configuration]`):
 
