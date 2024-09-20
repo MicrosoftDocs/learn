@@ -13,6 +13,18 @@ az vm list
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 If you receive an empty response `[]`, you need to complete the first exercise in this module again. If the result lists your current VM and its settings, you may continue.
@@ -35,11 +47,35 @@ In this procedure, you get the IP address for your VM and attempt to access your
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 2.  Run the following `curl` command to download the home page:
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -54,6 +90,18 @@ In this procedure, you get the IP address for your VM and attempt to access your
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     This message means that the VM wasn't accessible within the timeout period.
@@ -64,6 +112,18 @@ In this procedure, you get the IP address for your VM and attempt to access your
         
         ```bash
         echo $IPADDRESS       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -93,12 +153,36 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     You see this output:
     
     ```output
     my-vmNSG
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -118,6 +202,18 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     You see a large block of text in JSON format in the output. In the next step, you'll run a similar command that makes this output easier to read.
@@ -133,6 +229,18 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     You see this output:
@@ -141,6 +249,18 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -171,6 +291,18 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     For learning purposes, here you set the priority to 100. In this case, the priority doesn't matter. You would need to consider the priority if you had overlapping port ranges.
@@ -186,6 +318,18 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     You see both the *default-allow-ssh* rule and your new rule, *allow-http*:
@@ -195,6 +339,18 @@ Here, you create a network security rule that allows inbound access on port 80 (
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
     allow-http          100        80      Allow    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -216,12 +372,36 @@ Now that you configured network access to port 80, let's try to access the web s
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     You see this response:
     
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
