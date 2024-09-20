@@ -1,9 +1,9 @@
 To view DLP Alerts from DLP Policies created in Microsoft Purview use the following steps:
 
 > [!IMPORTANT]
-> The current Microsoft Purview compliance portal [https://compliance.microsoft.com](https://compliance.microsoft.com?azure-portal=true), is being retired in 2024. The new [Microsoft Purview portal](https://purview.microsoft.com/) is available. We recommend you become familiar with the steps to navigate to and manage *Data loss prevention alerts* in the new *Microsoft Purview* portal. In either portal you must have the correct permissions assigned to use DLP.
+> The current Microsoft Purview compliance portal [https://compliance.microsoft.com](https://compliance.microsoft.com?azure-portal=true), is being retired in 2024. The new [https://purview.microsoft.com](https://purview.microsoft.com/) is available. We recommend you become familiar with the steps to navigate to and manage *Data loss prevention alerts* in the new *Microsoft Purview* portal. In either portal you must have the correct permissions assigned to use DLP.
 
-1. In the *new* [Microsoft Purview portal](https://purview.microsoft.com/), on the left navigation menu select the **Solutions** icon and select **Data loss prevention**.
+1. In the *new* [https://purview.microsoft.com](https://purview.microsoft.com/), on the left navigation menu select the **Solutions** icon and select **Data loss prevention**.
 
    > [!NOTE]
    > Once you select a solution in the new Microsoft Purview portal, an *icon* for that solution is displayed in the navigation menu.
