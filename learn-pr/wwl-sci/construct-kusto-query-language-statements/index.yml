@@ -3,7 +3,7 @@ uid: learn.wwl.construct-kql-statements
 metadata:
   title: Construct KQL statements for Microsoft Sentinel
   description: "Construct KQL statements for Microsoft Sentinel"
-  ms.date: 09/11/2024
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
