@@ -42,7 +42,7 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
       az mysql flexible-server import create --data-source-type "azure_blob" --data-source $BLOB_DATA_URL --data-source-backup-dir "mysql_backup_percona" –-data-source-token $SAS_TOKEN --resource-group $RESOURCE_GROUP --name $FLEXIBLE_SERVER_NAME –-sku-name Standard_D2ds_v4 --tier GeneralPurpose –-version 8.0 -–location westus --auto-scale-iops Enabled
       ```
 
-   1. Expect the import to take longer in proportion to the backup file. A 1-GiB backup file takes about half a minute to import, whereas a 1-TB file takes about 23 minutes.
+   2. Expect the import to take longer in proportion to the backup file. A 1-GiB backup file takes about half a minute to import, whereas a 1-TB file takes about 23 minutes.
 
 Keep in mind the following limitations:
 
@@ -53,4 +53,4 @@ Keep in mind the following limitations:
 After migrating users and privileges, connect your applications to the flexible server, and the migration is complete.
 
 > [!TIP]
-> Alternatively, if you were performing an online migration, you would have performed the export and import as above, and then set up replication from the source to the target. When the target fully caught up to the source, you'd have cut over the application before shutting down the source database.
+> Alternatively, if you were performing an online migration, you would have performed the export and import as explained previously, and then set up replication from the source to the target. When the target fully caught up to the source, you'd have cut over the application before shutting down the source database.

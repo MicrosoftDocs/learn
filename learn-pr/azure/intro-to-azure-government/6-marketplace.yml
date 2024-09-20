@@ -5,8 +5,8 @@ metadata:
   title: Azure Government Marketplace
   description: Learn how to find and deploy solutions in the Azure Government Marketplace.
   ms.date: 08/23/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 10
 content: |

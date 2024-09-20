@@ -5,8 +5,8 @@ metadata:
   description: Learn how to provide disaster recovery by replicating storage data across regions and failing over to a secondary location.
   manager: akashdubey
   ms.date: 11/03/2023
-  author: normesta
-  ms.author: normesta
+  author: stevenmatthew
+  ms.author: shaas
   ms.topic: module
   ms.service: azure-storage
 title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location

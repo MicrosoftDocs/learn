@@ -37,7 +37,9 @@ To obtain these details:
 1. Under **Resource Management**, select **Keys and Endpoint**.
 1. Copy either **KEY 1** or **KEY 2** and the **Endpoint** values and store them for use in your application code.
 
-The following code shows how to use these connection details to connect your application to Azure AI Document Intelligence. In this example, a sample document at a specified URL is submitted for analysis to the general document model. Replace `<endpoint>` and `<access-key>` with the connection details you obtained from the Azure portal:
+The following code shows how to use these connection details to connect your application to Azure AI Document Intelligence. If running this code, you'll need the libraries included in the top of the snippet.
+
+In this example, a sample document at a specified URL is submitted for analysis to the general document model. Replace `<endpoint>` and `<access-key>` with the connection details you obtained from the Azure portal:
 
 ::: zone pivot="csharp"
 
@@ -52,8 +54,12 @@ DocumentIntelligenceClient client = new DocumentIntelligenceClient (new Uri(endp
 
 Uri fileUri = new Uri ("<url-of-document-to-analyze>");
 
-AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUri);
+var content = new AnalyzeDocumentContent()
+{
+    UrlSource = uriSource
+};
 
+Operation<AnalyzeResult> operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt-layout", content);
 AnalyzeResult result = operation.Value;
 ```
 
@@ -74,8 +80,9 @@ docUrl = "<url-of-document-to-analyze>"
 document_analysis_client = DocumentIntelligenceClient(endpoint=endpoint, 
     credential=AzureKeyCredential(key))
 
-poller = document_analysis_client.begin_analyze_document_from_url(
-    "prebuilt-document", docUrl)
+poller = document_analysis_client.begin_analyze_document(
+        "prebuilt-layout", AnalyzeDocumentRequest(url_source=docUrl
+    ))
 result: AnalyzeResult = poller.result()
 ```
 

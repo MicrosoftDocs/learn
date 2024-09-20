@@ -81,7 +81,7 @@ Some of the most common pseudo-classes are listed in the following table:
 
 Similar to classes, an ID allows you to apply a style to an element. But, while a class can be applied to multiple elements, an ID must be unique and refer to only one element.
 
-On a resume, you might have a section for social media, such as Twitter, GitHub, or your blog. If you wanted a custom style for that section, you could set an ID:
+On a resume, you might have a section for social media, such as X, GitHub, or your blog. If you wanted a custom style for that section, you could set an ID:
 
 ```html
 <div id="social-media">

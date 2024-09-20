@@ -5,7 +5,7 @@ metadata:
   description: Create speech-enabled apps with Azure AI services.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 08/25/2024
   ms.service: azure-ai-speech
   ms.topic: module-standard-task-based
   ms.collection:
@@ -15,7 +15,7 @@ summary: The Azure AI Speech service enables you to build speech-enabled applica
 abstract: |
   In this module, you'll learn how to:
   - Provision an Azure resource for the Azure AI Speech service
-  - Use the Azure AI Speech to text API to implement speech recognition
+  - Implement speech recognition with the  Azure AI Speech to text API
   - Use the Text to speech API to implement speech synthesis
   - Configure audio format and voices
   - Use Speech Synthesis Markup Language (SSML)

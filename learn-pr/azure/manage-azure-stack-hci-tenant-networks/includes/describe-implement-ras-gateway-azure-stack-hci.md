@@ -2,7 +2,7 @@ A majority of customers that use financial services provided by your company req
 
 ## Describe RAS Gateway
 
-*RAS Gateway* is a software-based, BGP-capable router that’s based on Microsoft Hyper-V Network Virtualization and optimized for multitenancy scenarios. RAS Gateway implements routing between internal and external physical networks, and private and public clouds that support Internet Protocol security (IPsec) virtual private network (VPN) and GRE tunnels.
+*RAS Gateway* is a software-based, BGP-capable router that’s based on Microsoft Hyper-V Network Virtualization and optimized for multitenancy scenarios. RAS Gateway implements routing between internal and external physical networks, and private and public clouds that support Internet Protocol security (IPsec), virtual private network (VPN), and GRE tunnels.
 
 RAS Gateway offers support for the following core capabilities:
 
@@ -21,7 +21,7 @@ This RAS Gateway capability provides virtual network connectivity across the int
 
 *GRE* is a lightweight tunneling protocol that can encapsulate a range of network layer protocols inside virtual point-to-point links over IP without the overhead of encryption. GRE tunneling facilitates implementation of the following scenarios:
 
-- Access from the tenant's virtual networks to a physical network within the same hosting environment
+- Access from the tenant's virtual networks to a physical network within the same hosting environment.
 
 :::image type="content" source="../media/4-gre-tunnel-1.png" alt-text="Diagram that shows S 2 S G R E tunneling with access from the tenant's virtual networks to a physical network within the same hosting environment." border="false" lightbox="../media/4-gre-tunnel-1.png":::
 
@@ -29,11 +29,11 @@ This RAS Gateway capability provides virtual network connectivity across the int
 
 :::image type="content" source="../media/4-gre-tunnel-2.png" alt-text="Diagram that shows S 2 S G R E tunneling with high-speed connectivity over a M P L S connection from the tenant's own on-premises network." border="false" lightbox="../media/4-gre-tunnel-2.png":::
 
-- Integration with VLAN-based isolation
+- Integration with VLAN-based isolation.
 
 :::image type="content" source="../media/4-gre-tunnel-3.png" alt-text="Diagram that shows S 2 S G R E tunneling integration with V LAN-based isolation." border="false" lightbox="../media/4-gre-tunnel-3.png":::
 
-- Access from one or more tenants' virtual networks with non-overlapping IP address spaces to shared resources within a physical network of a hosting provider
+- Access from one or more tenants' virtual networks with nonoverlapping IP address spaces to shared resources within a physical network of a hosting provider.
 
 :::image type="content" source="../media/4-gre-tunnel-4.png" alt-text="Diagram that shows S 2 S G R E tunneling access from one or more tenants' virtual networks." border="false" lightbox="../media/4-gre-tunnel-4.png":::
 
@@ -43,12 +43,12 @@ In this scenario, the gateway serves as a router between the Azure Stack HCI vir
 
 ### Dynamic routing with BGP
 
-As a dynamic routing protocol, BGP minimizes the need for manual route configuration on routers. When operating in a multisite environment connected by BGP-enabled routers such as RAS Gateway, BGP allows the routers to automatically learn routes and update their configuration to reflect to the existing network infrastructure; for example, as a result of setting up new connections or in response to network connectivity issues. With RAS Gateway in multitenant mode, BGP provides the ability to manage network traffic routing between tenants' VM networks and their remote sites.
+As a dynamic routing protocol, BGP minimizes the need for manual route configuration on routers. When operating in a multisite environment connected by BGP-enabled routers such as RAS Gateway, BGP allows the routers to automatically learn routes and update their configuration to reflect to the existing network infrastructure. One example is as a result of setting up new connections or in response to network connectivity issues. With RAS Gateway in multitenant mode, BGP provides the ability to manage network traffic routing between tenants' VM networks and their remote sites.
 
 > [!NOTE]
 > You can also use BGP for single-tenant RAS Gateway deployments, and when you use the Remote Access server role to implement a LAN router.
 
-Routing information is advertised by RAS Gateway (and other SDN components such as Software Load Balancing Multiplexer) into the physical network using internal BGP peering. However, you’ll need to create a BGP peer on the router that your SDN infrastructure uses to receive routes for the networks advertised by the Software Load Balancing Multiplexer and RAS Gateway. BGP peering only needs to occur one way (from the Software Load Balancing Multiplexer or RAS Gateway to the external BGP peer).
+RAS Gateway (and other SDN components such as Software Load Balancing Multiplexer) advertises routing information into the physical network using internal BGP peering. However, you’ll need to create a BGP peer on the router that your SDN infrastructure uses to receive routes for the networks advertised by the Software Load Balancing Multiplexer and RAS Gateway. BGP peering only needs to occur one way (from the Software Load Balancing Multiplexer or RAS Gateway to the external BGP peer).
 
 > [!NOTE]
 > You must configure the BGP router peer to use its own ASN and allow peering from an ASN that’s assigned to the SDN components (Software Load Balancing Multiplexer and RAS Gateway).
@@ -61,15 +61,15 @@ Before you create gateway connections and virtual tenant gateways, you have to i
 
 *Gateway pools* are groups of SDN-managed VMs that route network traffic between physical and virtual networks. Pools have the following properties:
 
-- Each pool is *M+N* redundant, which means that *M* active gateway VMs are backed up by *N* standby gateway VMs. *M+N* redundancy provides extra flexibility when implementing highly available RAS Gateway deployments.
+- Each pool is *M+N* redundant with *M* active gateway VMs backed up by *N* standby gateway VMs. *M+N* redundancy provides extra flexibility when implementing highly available RAS Gateway deployments.
 - A pool can perform any combination of individual gateway functions, such as S2S, L3, and GRE.
 - In a multitenant RAS Gateway deployment, the gateway pools are deployed behind an SDN SLB, which allows you to assign a single public IP address for the entire deployment.
 - You can scale pools horizontally by adding or removing gateway VMs. Removing or adding gateways doesn’t disrupt the services that are provided by a pool.
 - You can define pools based on a number of criteria, including:
-  - Connection types, such as S2S, L3, or GRE
-  - Capacity
-  - Redundancy level
-  - Tenant separation
+  - Connection types, such as S2S, L3, or GRE.
+  - Capacity.
+  - Redundancy level.
+  - Tenant separation.
 
 For example, you can create a gateway pool that supports both high throughput and low throughput IKEv2 S2S connections, or one that’s available to a designated tenant only.
 
@@ -135,10 +135,10 @@ You can change a number of connection settings for IPsec, GRE, and L3 connection
   - IPsec preshared key
 - For GRE connections:
   - The maximum allowed inbound and outbound bandwidth
-  - The destination IP address, destination prefix and route metric
+  - The destination IP address, destination prefix, and route metric
   - The GRE key
 - For L3 connections:
-  - The maximum allowed inbound bandwidth and outbound bandwidth, destination prefix and route metric
+  - The maximum allowed inbound bandwidth and outbound bandwidth, destination prefix, and route metric
   - The L3 Logical Network, L3 Logical Subnet, L3 IP Address, and the L3 Peer IP
 
 Windows Admin Center also allows you to delete any of the gateway connections you created. You can do this from the **Inventory** tab on the **Gateway Connections** page.

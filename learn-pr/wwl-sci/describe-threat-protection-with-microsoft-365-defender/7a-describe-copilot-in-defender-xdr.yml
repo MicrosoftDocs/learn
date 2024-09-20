@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-copilot-in-defender-xdr
+title: Describe Copilot integration with Microsoft Defender XDR
+metadata:
+  title: Describe Copilot integration with Microsoft Defender XDR
+  description: "Describe Copilot integration with Microsoft Defender XDR."
+  ms.date: 09/10/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 12
+content: |
+  [!include[](includes/7a-describe-copilot-in-defender-xdr.md)]

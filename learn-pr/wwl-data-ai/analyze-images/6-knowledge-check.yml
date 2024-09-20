@@ -6,13 +6,13 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 08/29/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Tags"
       isCorrect: false
-      explanation: "That's incorrect. To generate a caption, include the Description visual feature in your analysis."
-    - content: "Description"
+      explanation: "That's incorrect. To generate a caption, include the DenseCaptions visual feature in your analysis."
+    - content: "DenseCaptions"
       isCorrect: true
-      explanation: "That's correct. To generate a caption, include the Description visual feature in your analysis."
-    - content: "Categories"
+      explanation: "That's correct. To generate a caption, include the DenseCaptions visual feature in your analysis."
+    - content: "Objects"
       isCorrect: false
-      explanation: "That's incorrect. To generate a caption, include the Description visual feature in your analysis."
+      explanation: "That's incorrect. To generate a caption, include the DenseCaptions visual feature in your analysis."
   - content: "What is the purpose of the Azure AI Vision service?"
     choices:
     - content: "To provide functionality for audio transcription"

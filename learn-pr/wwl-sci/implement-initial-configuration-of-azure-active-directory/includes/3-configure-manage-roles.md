@@ -39,7 +39,7 @@ Microsoft Entra roles are used to manage Microsoft Entra resources in a director
 
 In the Azure portal, you can see the list of Microsoft Entra roles on the **Roles and administrators** screen.
 
-:::image type="content" source="../media/directory-admin-roles-2034be7e.png" alt-text="Screenshot of the Microsoft Entra roles on the Roles and administrators window in Microsoft Entra ID manage menu of the Azure portal.":::
+:::image type="content" source="../media/directory-admin-roles-2034be7e-aa706600.png" alt-text="Screenshot of the Microsoft Entra roles on the Roles and administrators window in Microsoft Entra ID manage menu of the Azure portal.":::
 
 
 ## Differences between Azure roles and Microsoft Entra roles
@@ -59,7 +59,7 @@ By default, Azure roles and Microsoft Entra roles don't span Azure and Microsoft
 
 Several Microsoft Entra roles span Microsoft Entra ID and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you're a member of the Global Administrator role, you have global administrator capabilities in Microsoft Entra ID and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
-:::image type="content" source="../media/azure-office-roles-567e92bc.png" alt-text="Diagram of relationship of Azure roles to Microsoft Entra roles. Azure roles accessed in Azure tenant.  Microsoft Entra roles also accessed from Microsoft Entra ID and Microsoft 365.":::
+:::image type="content" source="../media/azure-office-roles-567e92bc-295a309a.png" alt-text="Diagram of relationship of Azure roles to Microsoft Entra roles. Azure roles accessed in Azure tenant.  Microsoft Entra roles also accessed from Microsoft Entra ID and Microsoft 365.":::
 
 
 ## Assign roles
@@ -90,7 +90,7 @@ A common way to assign Microsoft Entra roles to a user is on the Assigned roles 
 > [!NOTE]
 > If you have an Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
-:::image type="content" source="../media/privileged-identity-management-manages-roles-b4ad541b.png" alt-text="Screenshot of Privileged Identity Manager for users assigned Global Admin and have a Premium P2 license.":::
+:::image type="content" source="../media/privileged-identity-management-manages-roles-b4ad541b-125bfbd4.png" alt-text="Screenshot of Privileged Identity Manager for users assigned Global Admin and have a Premium P2 license.":::
 
 
 ## Create and assign a custom role in Microsoft Entra ID
@@ -101,16 +101,16 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
 
 1.  Select **Microsoft Entra ID** \- **Roles and administrators** \- **New custom role**.
     
-    :::image type="content" source="../media/new-custom-role-3acee266.png" alt-text="Screenshot of Create or edit custom roles from the Roles and administrators page.":::
+    :::image type="content" source="../media/new-custom-role-3acee266-3537352f.png" alt-text="Screenshot of Create or edit custom roles from the Roles and administrators page.":::
     
 2.  On the **Basics** tab, provide a name and description for the role and then select **Next**.
     
-    :::image type="content" source="../media/basics-tab-4558ef75.png" alt-text="Screenshot of the basics tab. You provide a name and description for a custom role on the Basics tab.":::
+    :::image type="content" source="../media/basics-tab-4558ef75-42299967.png" alt-text="Screenshot of the basics tab. You provide a name and description for a custom role on the Basics tab.":::
     
 3.  On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 4.  First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update` permission.
     
-    :::image type="content" source="../media/permissions-tab-e1f5602e.png" alt-text="Screenshot of the Select the permissions for a custom role on the Permissions tab.":::
+    :::image type="content" source="../media/permissions-tab-e1f5602e-aa612b83.png" alt-text="Screenshot of the Select the permissions for a custom role on the Permissions tab.":::
     
 5.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
 6.  On the **Review + create** tab, review the permissions and select **Create**.
