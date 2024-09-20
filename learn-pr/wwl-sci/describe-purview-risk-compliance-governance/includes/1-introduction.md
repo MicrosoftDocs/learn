@@ -3,9 +3,9 @@ Microsoft Purview is a comprehensive set of solutions, accessed through the Micr
 
 In this module, you'll learn about Microsoft Purview Data Compliance solutions and how they can help your organization manage and monitor its data, minimize compliance risks, and meet regulatory requirements.  
 
-You'll also learn about Microsoft Purview Data Governance solutions and how they enable organizations to responsibly unlock value creation from data.
-
 After completing this module, you'll be able to:
 
-- Describe Microsoft Purview Data Compliance solutions.
-- Describe Microsoft Purview Data Governance solutions.
+- Describe Microsoft Purview eDiscovery and Audit.
+- Describe Microsoft Purview Compliance Manager.
+- Describe Microsoft Purview Communication Compliance.
+- Describe Microsoft Purview Records Management.

@@ -3,7 +3,7 @@ uid: learn.wwl.describe-capabilities-of-microsoft-security-solutions
 metadata:
   title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft security solutions'
   description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft security solutions'
-  ms.date: 08/08/2022
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
@@ -61,6 +61,7 @@ products:
 subjects:
 - security
 modules:
+- learn-wwl.security-copilot-getting-started
 - learn.wwl.describe-basic-security-capabilities-azure
 - learn.wwl.describe-security-management-capabilities-of-azure
 - learn.wwl.describe-security-capabilities-of-azure-sentinel

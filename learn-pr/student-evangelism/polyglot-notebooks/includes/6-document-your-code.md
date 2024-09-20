@@ -1,10 +1,12 @@
-Asides writing text or code, Polyglot Notebooks is capable of rendering Mermaid diagrams. But what is Mermaid? Mermaid is a language that allows you express different types of charts and diagrams using text. Polyglot can take code written for Mermaid and rendering it. A good use case is to show how your code works.
+Besides writing text or code, Polyglot Notebooks is capable of rendering Mermaid diagrams. 
 
-Let’s work on an example that would document a purchase flow.
+Mermaid is a language that allows you express different types of charts and diagrams using text. Polyglot Notebooks can take code written for Mermaid and render it. A good use case is to show how your code works.
 
-Imagine you want to document how your API works when a payment is processed from a purchase. Here’s the Mermaid code from a checkout method where code is called in steps through various layers:
+Let's work on an example that documents a purchase flow.
 
-``` mermaid 
+Imagine you want to document how your API works when a payment is processed from a purchase. Here's the Mermaid code from a checkout method where code is called in steps through various layers:
+
+``` Mermaid
 class CheckoutService {
     private \_cart;
     private \_cardService;
@@ -33,7 +35,7 @@ class CheckoutService {
 }
  ```
 
-What you want is to quickly show through a visual how this code works, so therefore you use a Mermaid code like so:
+You want to quickly show through a visual how this code works, so you use a Mermaid code like so:
 
 ```mermaid
 sequenceDiagram
@@ -43,8 +45,8 @@ sequenceDiagram
     ShippingService -->> CheckoutService: OK, "shipping cart content"
 ```
 
-And finally, by putting the mermaid code in a code cell you get a nice rendering like so:
+Finally, by putting the Mermaid code in a code cell, you get a nice rendering like so:
 
 ![A screenshot of the visual rendered by putting your mermaid code in a Polyglot Notebook code cell.](../media/mermaid-13.png)
 
-The above visual from the Mermaid rendering is easier to comprehend at first glance and can also be shared with nontechnical stakeholders to show how the system works.
+The preceding visual from the Mermaid rendering is easier to comprehend at first glance, and you can also share it with nontechnical stakeholders to show how the system works.

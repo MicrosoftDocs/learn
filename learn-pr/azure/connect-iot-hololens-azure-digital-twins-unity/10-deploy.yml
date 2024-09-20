@@ -4,9 +4,9 @@ title: Exercise - Deploy to HoloLens 2, test, and uninstall
 metadata:
   title: Exercise - Deploy to HoloLens 2, test, and uninstall
   description: Get step-by-step instructions on deploying, testing, and uninstalling your project on a HoloLens 2 device.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
 durationInMinutes: 15
 content: |
