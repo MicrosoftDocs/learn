@@ -7,22 +7,6 @@ In this exercise, you will:
 
 ## Run the web app with `dotnet watch`
 
-::: zone pivot="vscode"
-
-Run the web app with the `dotnet watch` task in Visual Studio Code with the .NET C# Dev Kit extension:
-
-1. Open the **Command Palette** by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
-2. Type "Tasks: Run Task" and select Tasks: Run Task from the list. and select from the list.
-3. Choose **dotnet** > **dotnet watch MyWebApp** > **Continue without scanning the task output**.
-
-    Visual Studio Code runs the `dotnet watch MyWebApp` task without attempting to scan the output for errors or warnings.
-
-    The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created.
-
-::: zone-end
-
-::: zone pivot="shell"
-
 Run the web app using the `dotnet watch` command from the command line:
 
 1. In Visual Studio Code, if the integrated terminal pane isn't already available, select **New Terminal** from the **Terminal** menu to open the integrated terminal.
@@ -41,8 +25,6 @@ Run the web app using the `dotnet watch` command from the command line:
     Since the port number in the URL provided is set randomly in configuration at project creation, your endpoint may have a different port number.
 
 1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed.
-
-::: zone-end
 
 ## Change the app's code and quickly view the results 
 
