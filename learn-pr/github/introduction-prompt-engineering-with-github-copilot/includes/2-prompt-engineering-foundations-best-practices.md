@@ -1,4 +1,4 @@
-In this unit, we'll cover:
+In this unit, we cover:
 
 - What is prompt engineering?
 - Foundations of prompt engineering
@@ -7,38 +7,38 @@ In this unit, we'll cover:
 
 ## What is prompt engineering?
 
-Prompt engineering is the process of crafting clear instructions to guide AI systems, like GitHub Copilot, to generate context-appropriate code tailored to your project's specific needs. This ensures the code is syntactically, functionally, and contextually correct. Think of it like giving precise directions to a driver. Without them, the journey might be inefficient. But with clear guidance, the route becomes direct and efficient, saving time and energy. In this scenario, you're the one providing directions, and GitHub Copilot is your skilled driver, ready to drive you smoothly through your coding journey with the right guidance.
+Prompt engineering is the process of crafting clear instructions to guide AI systems, like GitHub Copilot, to generate context-appropriate code tailored to your project's specific needs. This process ensures the code is syntactically, functionally, and contextually correct. Think of it like giving precise directions to a driver. Without them, the journey might be inefficient. But with clear guidance, the route becomes direct and efficient, saving time and energy. In this scenario, you're the one providing directions, and GitHub Copilot is your skilled driver, ready to drive you smoothly through your coding journey with the right guidance.
 
 Now that you know what prompt engineering is, let's learn about some of its principles.
 
 ## Principles of prompt engineering
 
-Before we explore specific strategies, let's first understand the basic principles of prompt engineering, summed up in the **4 S's** below. These core rules are the basis for creating effective prompts.
+Before we explore specific strategies, let's first understand the basic principles of prompt engineering, summed up in the **4S Method** listed here. These core rules are the basis for creating effective prompts.
 
 - **Single**: Always focus your prompt on a single, well-defined task or question. This clarity is crucial for eliciting accurate and useful responses from Copilot.
 - **Specific**: Ensure that your instructions are explicit and detailed. Specificity leads to more applicable and precise code suggestions.
 - **Short**: While being specific, keep prompts concise and to the point. This balance ensures clarity without overloading Copilot or complicating the interaction.
-- **Surround**: Utilize descriptive filenames and keep related files open. This provides Copilot with rich context, leading to more tailored code suggestions.
+- **Surround**: Utilize descriptive filenames and keep related files open. Providing Copilot with rich context leads to more tailored code suggestions.
 
-These core principles lay the foundation for crafting efficient and effective prompts. Keeping the 4 S's in mind, let's dive deeper into advanced best practices that ensure each interaction with GitHub Copilot is optimized.
+These core principles lay the foundation for crafting efficient and effective prompts. Keeping the 4S Method in mind, let's dive deeper into advanced best practices that ensure each interaction with GitHub Copilot is optimized.
 
 ## Best practices in prompt engineering
 
-The following advanced practices, based on the 4 S's, refine and enhance your engagement with Copilot, ensuring that the generated code isn't only accurate but perfectly aligned with your project's specific needs and contexts.
+The following advanced practices are based on the 4S Method principles. They refine and enhance your engagement with Copilot, ensuring that the generated code isn't only accurate but perfectly aligned with your project's specific needs and contexts.
 
 ### Provide enough clarity
 
-Building on the 'Single' and 'Specific' principles, always aim for explicitness in your prompts. For instance, a prompt like "Write a Python function to filter and return even numbers from a given list" is both single-focused and specific.
+Building on the *Single* and *Specific* principles, always aim for explicitness in your prompts. For instance, a prompt like "Write a Python function to filter and return even numbers from a given list" is both single-focused and specific.
 
 :::image type="content" source="../media/2-python-prompt.png" alt-text="Screenshot of a Copilot chat with a Python prompt.":::
 
 ### Provide enough context with details
 
-Enrich Copilot's understanding with context, following the 'Surround' principle. The more contextual information provided, the more fitting the generated code suggestions are. For example, by adding some comments at the top of your code to give more details to what you want, you can give more context to Copilot to understand your prompt, and provide better code suggestions.
+The **Surround** principle enriches Copilot's understanding with context. The more contextual information provided, the more fitting the generated code suggestions are. For example, by adding some comments at the top of your code to give more details to what you want, you can give more context to Copilot. Allowing Copilot to understand your prompt, and provide better code suggestions.
 
 :::image type="content" source="../media/2-add-comments-example.gif" alt-text="Screenshot of comments added to code for better Copilot suggestions.":::
 
-In the example above, we used steps to give more detail while keeping it short. This practice follows the 'Short' principle, balancing detail with conciseness to ensure clarity and precision in communication.
+In the preceding example, we use steps to give more detail while keeping it short. This practice follows the *Short* principle, balancing detail with conciseness to ensure clarity and precision in communication.
 
 > [!NOTE]
 > Copilot also uses parallel open tabs in your code editor to get more context on the requirements of your code.
