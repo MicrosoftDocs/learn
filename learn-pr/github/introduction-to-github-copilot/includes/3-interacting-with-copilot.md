@@ -77,7 +77,7 @@ Below are different ways to trigger and use GitHub Copilot, along with examples 
 
 6. **Multiple Suggestions**: For complex code snippets, Copilot can offer multiple alternatives, allowing you to choose the best fit for your needs. You can explore different options and pick the one that aligns with your intent.
 
-   - When Copilot offers a suggestion, look for the lightbulb icon.
+   - When Copilot offers a suggestion, look for the light bulb icon.
    - Click the icon or use `Alt+]` (Windows/Linux) or `Option+]` (Mac) to cycle through alternatives.
 
    Multiple suggestions help you explore different coding approaches and select the most appropriate one.
