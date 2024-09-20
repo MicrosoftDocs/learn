@@ -32572,47 +32572,47 @@
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/2-what-sensitive-information.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/3-what-data-classification.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/4-common-scenarios-classification.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/5-what-data-loss-prevention.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/6-microsoft-classification-protection.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/7-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
