@@ -19,3 +19,4 @@ Now that you've finished this module, you should be able to:
 - [About GitHub Copilot and Neovim](https://docs.github.com/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=vimneovim#about-github-copilot-and-vimneovim)
 - [About GitHub Copilot and Visual Studio](https://docs.github.com/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=visualstudio#about-github-copilot-and-visual-studio)
 - [Viewing logs for GitHub Copilot in your environment](https://docs.github.com/copilot/troubleshooting-github-copilot/viewing-logs-for-github-copilot-in-your-environment)
+- [ GitHub Copilot documentation](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-copilot-subscription/subscribing-to-copilot-as-an-individual-user)
