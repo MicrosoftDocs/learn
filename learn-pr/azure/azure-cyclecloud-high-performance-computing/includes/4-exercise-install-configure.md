@@ -51,7 +51,6 @@ Start by deploying an Azure virtual machine that hosts the Azure CycleCloud appl
     | SSH public key source | Ensure that the **Generate new key pair** option is selected, |
     | Key pair name | Enter **cc-ssh-keys**. |
 
-
     > [!NOTE]
     > Azure provides the ability to automatically generate an SSH key pair and allows you to store it for future use.
 
@@ -113,7 +112,6 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 1. On the **cc-ssh-keys** pane, note the value of the public key and record it. You need it later in this task.
 
 1. On your computer, open another browser window and navigate to the `https://<IP_address>` URL, replacing the **<IP_address>** placeholder with the public IP address you identified in the previous step. If prompted, confirm that you want to connect to the target Azure VM.
-
     > [!NOTE]
     > Your browser will likely display the message about the connection not being private and warn you about connecting to that IP address. This is expected, because you're connecting to the target server by using a self-signed certificate and the URL you're connecting to doesn't match the subject name of the certificate.
 
