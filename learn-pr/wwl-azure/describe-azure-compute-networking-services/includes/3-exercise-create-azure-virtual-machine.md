@@ -30,6 +30,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     
     
     
+    
     ```
     
     Your VM takes a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
@@ -44,6 +45,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --version 2.1 \
       --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
       --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'    
+    
     
     
     
