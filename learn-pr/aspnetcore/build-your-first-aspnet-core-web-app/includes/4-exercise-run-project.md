@@ -12,7 +12,7 @@ Run the web app in Visual Studio Code and view in a browser:
 
 1. In Visual Studio Code, press <kbd>F5</kbd> to run the app. 
 
-    Pressing <kbd>F5</kbd>, Visual Studio Code:
+    Visual Studio Code:
     
     - Triggers the .NET CLI command `dotnet run` which builds and runs the application.
     - Attaches the debugger to the running application.
