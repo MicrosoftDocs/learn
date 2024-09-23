@@ -37,7 +37,6 @@ units:
 - learn.wwl.configure-role-based-access-control.create-role-definition
 - learn.wwl.configure-role-based-access-control.create-role-assignment
 - learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-azure-ad-roles
-- learn.wwl.configure-role-based-access-control.apply-rbac-authentication
 - learn.wwl.configure-role-based-access-control.determine-rbac-roles
 - learn.wwl.configure-role-based-access-control.interactive-lab-simualtion-role-based
 - learn.wwl.configure-role-based-access-control.knowledge-check
