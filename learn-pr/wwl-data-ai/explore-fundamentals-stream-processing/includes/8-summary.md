@@ -5,9 +5,8 @@ In this module, you learned how to:
 - Compare batch and stream processing
 - Describe common elements of streaming data solutions
 - Describe features and capabilities of Azure Stream Analytics
+- Describe features and capabilities of Microsoft Fabric Real-Time Intelligence
 - Describe features and capabilities of Spark Structured Streaming on Azure
-- Describe features and capabilities of Azure Synapse Data Explorer
-- Describe features and capabilities of realtime analytics in Microsoft Fabric
 
 ## Next steps
 
