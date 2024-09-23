@@ -9,7 +9,7 @@ As the developer for a board game company, you decide to implement caching for a
 
 ## Create a Redis cache
 
-We'll use the Consumption tier for API Management for this module. That's because Azure configures API Management instances for this tier in just a minute or so. Other tiers can take up to 30 minutes or longer.
+We'll use the Consumption tier for API Management for this module. That's because Azure configures API Management instances for this tier in just a minute or so. 
 
 The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It's a tier that has no internal cache. We must therefore create an external Redis cache and then configure an API Management caching policy to use it.
 
@@ -115,21 +115,13 @@ You can configure the API Management instance to use your Redis cache as an exte
 
 1. In the **Overview** section of the pane, you should see the resource status display as **Running**. If it isn't, continue to check the status every few minutes by clicking the **Refresh** link. Proceed only when your Redis cache deployment is running.
 
-1. In the **Azure Cache for Redis** menu, in the **Settings** section of the left pane, select **Access keys**. The **Access keys** pane appears for the Azure Cache for Redis instance that you just created.
-
-1. In the right corner of the **Primary connection string (StackExchange.Redis)** box, select the *Copy to clipboard* icon.
-
-    :::image type="content" source="../media/5-obtain-redis-cache-connection-string.png" alt-text="Screenshot that shows how to obtain the Redis cache connection string.":::
-
 1. In the **All resources** pane, select the same API Management service resource that you created earlier. The **API Management service** pane appears.
 
-1. On the **API Management service** menu, in **Deployment + Infrastructure** in the left navigation, select **External cache**. The **External cache** pane for your API Management service appears.
+1. On the **API Management service** menu, under**Deployment + Infrastructure** in the left navigation, select **External cache**. The **External cache** pane for your API Management service appears.
 
 1. Select **+ Add** from the command bar. The **External cache** pane for your API Management service appears.
 
-1. In the **Cache instance** dropdown list, select **Custom**. Then in the **Use from** box, select the same location that you used for the API Management instance.
-
-1. In the **Connection string** box, paste the primary connection string that you copied. Then in the command bar, select **Save**.
+1. In the **Cache instance** dropdown list, select the name of the Redis cache that you created. API Management populates the connection to the cache. Select **Save**.
 
     :::image type="content" source="../media/5-configure-external-cache.png" alt-text="Screenshot that shows how to configure the external cache.":::
 
@@ -141,7 +133,7 @@ We must apply a policy to enable users to access the API. However, before you ca
 
 1. In the [Azure portal](https://portal.azure.com/) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
 
-1. In the **APIs** menu, select **APIs**. The **APIs** pane for your API Management service appears. It offers numerous templates for you to choose from.
+1. In the left navigation, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears. It offers numerous templates for you to choose from.
 
 1. In the **Create from definition** section, choose **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
