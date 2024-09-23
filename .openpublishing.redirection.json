@@ -32598,6 +32598,11 @@
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/7-determine-roles.md",
       "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/2-implement.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
