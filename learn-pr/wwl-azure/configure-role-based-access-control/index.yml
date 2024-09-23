@@ -32,6 +32,5 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.configure-role-based-access-control.summary-resources
 badge:
   uid: learn.wwl.configure-role-based-access-control.badge
