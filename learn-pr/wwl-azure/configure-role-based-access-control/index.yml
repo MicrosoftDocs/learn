@@ -35,7 +35,6 @@ units:
 - learn.wwl.configure-role-based-access-control.introduction
 - learn.wwl.configure-role-based-access-control.implement
 - learn.wwl.configure-role-based-access-control.create-role-definition
-- learn.wwl.configure-role-based-access-control.create-role-assignment
 - learn.wwl.configure-role-based-access-control.determine-rbac-roles
 - learn.wwl.configure-role-based-access-control.interactive-lab-simualtion-role-based
 - learn.wwl.configure-role-based-access-control.knowledge-check
