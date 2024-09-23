@@ -32583,6 +32583,11 @@
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/5-compare-azure-roles-to-azure-ad-roles.md",
       "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/4-create-role-assignment.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
