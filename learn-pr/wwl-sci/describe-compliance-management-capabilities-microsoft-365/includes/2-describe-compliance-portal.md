@@ -2,7 +2,6 @@ The Microsoft Purview compliance portal brings together all of the tools and dat
 
 The compliance portal is available to customers with a Microsoft 365 SKU with one of the following roles:
 
-- Global administrator
 - Compliance administrator
 - Compliance data administrator
 
