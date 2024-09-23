@@ -3,16 +3,16 @@ When an alert is fired, Azure Monitor, Azure Service Health, and Azure Advisor u
 Azure Monitor can perform any of the following actions:
 
 - Send an email
-- Send an SMS message
+- Send a Short Message Service (SMS) message
 - Create an Azure app push notification
 - Make a voice call to a number
 - Call an Azure function
 - Trigger a logic app
 - Send a notification to a webhook
-- Create an ITSM ticket
-- Use a runbook (to restart a VM or scale a VM up or down)
+- Create an IT Service Management (ITSM) ticket
+- Use a runbook (to restart a virtual machine (VM) or scale a VM up or down)
 
-Once you've created an action group, you can reuse that action group as often as you want. For example, after you've created an action to email your company's operations team, you can add that action group to all service-health events.
+Once you create an action group, you can reuse that action group as often as you want. For example, after you create an action to email your company's operations team, you can add that action group to all service-health events.
 
 While you're creating the alert rule, you can either create a new action group or add an existing action group to the alert rule. You can also edit an existing alert to add an action group.
 
@@ -28,4 +28,4 @@ You can use alert processing rules to:
 
 You can apply alert processing rules to different resource scopes, from a single resource, or to an entire subscription. You can also use them to apply various filters or have the rule work on a predefined schedule.
 
-You can control when the alert processing rule applies. By default the rule is always active, but you can select a one-time window for this rule to apply, or you can have set a recurrence such as a weekly recurrence.
+You can control when the alert processing rule applies. By default the rule is always active. But, you can select a one-time window for this rule to apply, or you can set a recurrence such as a weekly recurrence.
