@@ -10,9 +10,9 @@ metadata:
   ms.custom: team=nextgen
   ms.devlang: typescript
 title: 'Access external libraries from TypeScript'
-summary: TypeScript provides two ways to organize your code, which are namespaces and modules. This learn module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+summary: TypeScript provides two ways to organize your code, namespaces and modules. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
 abstract: |
-  You will learn how to:
+  You'll learn how to:
   - Organize code using modules.
   - Import an external type library.
 prerequisites: |
