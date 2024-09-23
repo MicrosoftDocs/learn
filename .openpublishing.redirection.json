@@ -32573,6 +32573,11 @@
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/index.md",
       "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/6-apply-authentication.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
