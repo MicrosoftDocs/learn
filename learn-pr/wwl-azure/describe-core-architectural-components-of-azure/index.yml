@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ai-usage: human-only
-  ms.service: architecture-center
+  ms.service: azure-architecture-center
 title: Describe the core architectural components of Azure
 summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure, how resources are managed, and have a chance to create an Azure resource.
 abstract: |
