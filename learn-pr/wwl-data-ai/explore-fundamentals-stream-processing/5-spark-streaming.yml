@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-fundamentals-of-stream-processing.explore-apache-spark-microsoft-azure
-title: Explore Apache Spark on Microsoft Azure
+title: Explore Apache Spark structured streaming
 metadata:
-  title: Explore Apache Spark on Microsoft Azure
-  description: "Explore Apache Spark on Microsoft Azure"
-  ms.date: 04/19/2024
+  title: Explore Apache Spark structured streaming
+  description: "Explore Apache Spark structured streaming"
+  ms.date: 09/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-spark-streaming.md)]
+  [!include[](includes/5-spark-streaming.md)]
