@@ -3,13 +3,13 @@ uid: learn.wwl.explore-generative-ai-copilot-bing.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: "Summary"
+  ms.date: 09/23/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 04/01/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - copilot-learning-hub
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
