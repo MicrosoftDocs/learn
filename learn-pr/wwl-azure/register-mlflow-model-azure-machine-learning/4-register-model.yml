@@ -3,12 +3,13 @@ uid: learn.wwl.register-mlflow-model-azure-machine-learning.register-model
 title: Register an MLflow model
 metadata:
   title: Register an MLflow model
-  description: "Learn how to register an MLflow model in Azure Machine Learning."
-  ms.date: 02/17/2023
+  description: Learn how to register an MLflow model in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/12/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-register-model.md)]

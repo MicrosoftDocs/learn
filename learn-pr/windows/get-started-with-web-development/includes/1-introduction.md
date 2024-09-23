@@ -1,17 +1,17 @@
 
-It's impressive what you can do on the web today. You can build web experiences that run on all devices, include all sorts of media content, perform complicated computation, and even create apps that look and feel like native applications.
+It's impressive what you can do on the web today. You can build web experiences that run on all devices, include all sorts of media content, and perform complicated computation. You can even create apps that look and feel like native applications.
 
-If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, you'll learn the basic components of a website and some tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a website. You'll also use developer tools in the browser to understand what's happening.
+If you're interested in starting web development today, you might be faced with a dizzying array of options. In this module, you'll learn the basic components of a website and some tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a website and then use developer tools in the browser to understand what's happening.
 
-With this fundamental knowledge in place, you'll have a better context to make decisions in the future when building websites. For example, whether you should choose JavaScript frameworks or create your own JavaScript functions to build your website.
+With this fundamental knowledge in place, you'll have a better context to make decisions in the future when building websites; for example, whether you should choose JavaScript frameworks or create your own JavaScript functions to build your website.
 
-Let's get started by taking a look at where we want to go.
+Let's get started by looking at where we want to go.
 
 ## Scenario
 
-Imagine that you're a web developer and you've been asked to make your company's website appeal to a broader range of customers. To allow your customers to customize their experience on your website, you decide to add support for light and dark themes. You create a small, proof-of-concept website to demonstrate support for themes using CSS, and you write a JavaScript function to toggle between these themes.
+Imagine that you're a web developer, and you've been asked to make your company's website appeal to a broader range of customers. To allow your customers to customize their experience on your website, you decide to add support for light and dark themes. You create a small, proof-of-concept website to demonstrate support for themes using CSS, and you write a JavaScript function to toggle between these themes.
 
-When completed, your website will look like this example when the dark theme is selected:
+When completed, your website looks like this example when the dark theme is selected:
 
 :::image type="content" source="../media/themed-website.png" alt-text="Screenshot that shows the completed website with its dark theme enabled." lightbox="../media/themed-website.png":::
 

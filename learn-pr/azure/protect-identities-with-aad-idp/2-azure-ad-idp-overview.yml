@@ -1,21 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-identities-with-aad-idp.2-azure-ad-idp-overview
 metadata:
-  title: Azure AD Identity Protection overview
-  description: Azure AD Identity Protection overview
-  ms.date: 03/23/2019
+  title: Microsoft Entra ID Protection overview
+  description: Microsoft Entra ID Protection overview
+  ms.date: 07/28/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Azure AD Identity Protection overview
+  ms.topic: unit
+title: Microsoft Entra ID Protection overview
 durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-ad-idp-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: How do you protect against identity-based risks by using Azure AD Identity Protection?
+  - content: How do you protect against identity-based risks by using Microsoft Entra ID Protection?
     choices:
     - content: Configure an investigation policy and then remediate.
       isCorrect: false
@@ -26,14 +25,14 @@ quiz:
     - content: Configure a policy, investigate by using a report, and remediate.
       isCorrect: true
       explanation: Use your risk policy to help you investigate and remediate threats.
-  - content: You want to analyze risks that describe authentication requests for sign-ins that probably weren't authorized by users. Which type of risks will you analyze?
+  - content: You want to analyze risks that describe authentication requests for sign-ins that users probably haven't authorized. Which type of risks are you analyzing?
     choices:
     - content: User risk
       isCorrect: false
-      explanation: A user risk is the type of risk that can cause, or is caused by, a user's identity or account being compromised.
+      explanation: A user risk is suspicious activity and actions by users when they sign in. Often, these risks cause a user's identity or account to be compromised.
     - content: Sign-in risk
       isCorrect: true
-      explanation: Azure AD Identity Protection scrutinizes each authentication request to judge whether it was authorized by the owner of the identity.
+      explanation: Microsoft Entra ID Protection scrutinizes each authentication request to judge whether the owner of the identity has authorized it.
     - content: Authentication risk
       isCorrect: false
       explanation: There's no such thing as an authentication risk.

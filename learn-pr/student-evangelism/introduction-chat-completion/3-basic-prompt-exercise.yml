@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.basic-prompts-exercise
+title: "Exercise: Use basic prompts"
+metadata:
+  title: "Exercise: Use basic prompts"
+  description: Practice using basic prompts in the Azure AI Studio chat playground.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-basic-prompt-exercise.md)]

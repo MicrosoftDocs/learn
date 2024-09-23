@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.optimize-cloud-usage-costs
+title: Optimize cloud usage and cost
+metadata:
+  title: Optimize cloud usage and cost
+  description: Learn how to optimize your cloud usage and costs.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 27
+content: |
+  [!include[](includes/4-optimize-cloud-usage-costs.md)]

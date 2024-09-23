@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.evaluate-solutions-entra-private-access
+title: Evaluate solutions that use Microsoft Entra Private Access
+metadata:
+  title: Evaluate solutions that use Microsoft Entra Private Access
+  description: "SC-100 preparatory module on the topic: evaluate solutions that use Microsoft Entra Private Access."
+  ms.date: 7/1/2024
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-evaluate-solutions-entra-private-access.md)]

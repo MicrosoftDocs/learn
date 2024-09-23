@@ -1,0 +1,3 @@
+In this scenario, you're an IT administrator at a large financial services organization, and you're responsible for several custom-developed Oracle DB-based Java applications hosted in your on-premises datacenter. To open up opportunities for innovation, management wants you to move these applications to the same Azure platform where your organization is migrating many other mission-critical applications. 
+
+Your existing Oracle database infrastructure involves complex management and requires costly licensing fees. You're interested in minimizing these issues as part of the migration. You want to explain to management how you'll proceed and why it makes sense.

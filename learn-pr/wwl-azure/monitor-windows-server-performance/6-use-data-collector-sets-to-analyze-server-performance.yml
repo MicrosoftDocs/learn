@@ -4,13 +4,10 @@ title: Use Data Collector Sets to analyze server performance
 metadata:
   title: Use Data Collector Sets to analyze server performance
   description: "Use Data Collector Sets to analyze server performance"
-  ms.date: 04/06/2022
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/6-use-data-collector-sets-to-analyze-server-performance.md)]

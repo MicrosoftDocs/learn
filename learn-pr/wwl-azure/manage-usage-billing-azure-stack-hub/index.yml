@@ -6,8 +6,9 @@ metadata:
   ms.date: 08/09/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage usage and billing for Azure Stack Hub
 summary: 'Azure Commerce bills you for Azure Stack Hub usage as it bills for Azure usage. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |

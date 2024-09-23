@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check 
-  description: In this unit, you'll answer questions based on a scenario. 
-  ms.date: 05/07/2021
+  description: In this unit, you answer questions based on a scenario. 
+  ms.date: 08/03/2023
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5 
 content: |
 quiz:
@@ -25,11 +24,11 @@ quiz:
     - content: "`nocto` and `actimeo`"
       isCorrect: true
       explanation: "We recommend using `nocto` and `actimeo` on static data volumes with massive read operations."
-  - content: "You want to increase the number of TCP network connections of NFS client VMs. Which mount option will you use?"
+  - content: "You want to increase the number of parallel TCP network connections per NFS mount on NFS client VMs. Which mount option should you use?"
     choices:
     - content: "`nconnect`"
       isCorrect: true
-      explanation: "`nconnect` can increase the number of TCP network connections for NFS clients."
+      explanation: "`nconnect` can increase the number of parallel TCP network connections for NFS clients."
     - content: "`rsize` and `wsize`"
       isCorrect: false
       explanation: "`rsize` and `wsize` determine how much data is sent between the NFS client and the server for each packet sent."
@@ -47,3 +46,25 @@ quiz:
     - content: "`rsize=65536,wsize=65536(64 K/64 K)`"
       isCorrect: false
       explanation: "We generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options."
+  - content: "Why would you avoid using the `sync` mount option in EDA workloads?"
+    choices:
+    - content: "It causes data loss in the event of an outage."
+      isCorrect: false
+      explanation: "Using the `sync` mount option reduces overall performance due to the order of `WRITE`` operations."
+    - content: "It reduces overall performance."
+      isCorrect: true
+      explanation: "Using the `sync` mount option reduces overall performance due to the order of `WRITE`` operations."
+    - content: "It sends larger block sizes to the NFS server."
+      isCorrect: false 
+      explanation: "Using the `sync` mount option reduces overall performance due to the order of `WRITE`` operations."
+  - content: "How many WRITE operations would be sent to an Azure NetApp Files volume if creating a 1-GiB file using an 8 K block size on an NFS mount with 256 K wsize and async mount options?"
+    choices:
+    - content: "4096 (1048576/256)"
+      isCorrect: true
+      explanation: "When using the async mount option, data maximizes the available `wsize` and block sizes combine into the available size of 256 K."
+    - content: "4 (1048576/262144)"
+      isCorrect: false 
+      explanation: "When using the async mount option, data maximizes the available `wsize` and block sizes combine into the available size of 256 K."
+    - content: "131072 (1048576/8)"
+      isCorrect: false 
+      explanation: "When using the async mount option, data maximizes the available `wsize` and block sizes combine into the available size of 256 K."

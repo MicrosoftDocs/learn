@@ -6,11 +6,7 @@ Threat analytics is a threat intelligence solution from expert Microsoft securit
 - Common attack surfaces
 - Prevalent malware
 
-Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
-
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU?rel=0 ]
-
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
+You can access threat analytics either from the upper left-hand side of Microsoft Defender security portal's navigation menu by expanding *Threat intelligence*, or from a dedicated *Threat analytics* dashboard card that shows the threats to your org, both in terms of impact, and in terms of exposure.
 
 :::image type="content" source="../media/ta-dashboard-mtp.png" alt-text="Screenshot of the Threat analytics dashboard.":::
 
@@ -105,7 +101,7 @@ An asset is considered impacted if it's affected by an active, unresolved alert.
 ### Prevented email attempts: View blocked or junked threat emails
 Microsoft Defender for Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
 
-The Prevented email attempts tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365.
+The Prevented email attempts tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office.
 
 ### Exposure and mitigations: Review list of mitigations and the status of your devices
 In the Exposure & mitigations section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
@@ -119,13 +115,13 @@ In the Exposure & mitigations section, review the list of specific actionable re
 Mitigation information in this section incorporates data from threat and vulnerability management, which also provides detailed drill-down information from various links in the report.
 
 ### Set up email notifications for report updates
-You can set up email notifications that will send you updates on threat analytics reports.
+You can set up email notifications that send you updates on threat analytics reports.
 
 To set up email notifications for threat analytics reports, perform the following steps:
 
-1. Select Settings in the Microsoft 365 Defender sidebar. Select Microsoft 365 Defender from the list of settings.
+1. Select Settings in the Microsoft Defender XDR sidebar. Select Microsoft Defender XDR from the list of settings.
 
-2. Choose Email notifications > Threat analytics, and select the button, + Create a notification rule. A flyout will appear.
+2. Choose Email notifications > Threat analytics, and select the button, + Create a notification rule. A flyout appears.
 
 3. Follow the steps listed in the flyout. First, give your new rule a name. The description field is optional, but a name is required. You can toggle the rule on or off using the checkbox under the description field.
 

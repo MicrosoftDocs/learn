@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.examine-failover-clustering
+title: Examine failover clustering
+metadata:
+  title: Examine failover clustering
+  description: "Examine failover clustering"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-examine-failover-clustering.md)]

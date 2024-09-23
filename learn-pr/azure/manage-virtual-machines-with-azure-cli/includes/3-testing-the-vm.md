@@ -1,4 +1,4 @@
-When you create a virtual machine, it is assigned a public IP address that is reachable over the Internet, and a private IP address used within the Azure data center. Both of these values appear in the JSON block the `create` command returns, like the following:
+When you create a virtual machine, it's assigned a public IP address that's reachable over the Internet and a private IP address used within the Azure data center. Both of these values appear in the JSON block the `create` command returns, like the following:
 
 ```json
 {
@@ -11,7 +11,7 @@ When you create a virtual machine, it is assigned a public IP address that is re
 
 ## Connecting to the VM with SSH
 
-We can quickly test that the Linux VM is up and running by using the public IP address in the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we will need specify that. Make sure to use the public IP address from *your* running instance.
+We can quickly test that the Linux VM is up and running by using the public IP address in the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we need specify that. Make sure to use the public IP address from *your* running instance.
 
 ```azurecli
 ssh azureuser@<public-ip-address>
@@ -29,7 +29,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '40.83.165.85' (RSA) to the list of known hosts.
 ```
 
-Then you'll be presented with a remote shell where you can enter Linux commands.
+Then, you'll be presented with a remote shell where you can enter Linux commands.
 
 ```output
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 5.0.0-1014-azure x86_64)
@@ -61,4 +61,4 @@ See "man sudo_root" for details.
 azureuser@SampleVM:~$
 ```
 
-Try a few commands, such as `ps` or `ls` as practice. When you are finished, sign out of the virtual machine by typing `exit` or `logout`.
+Try a few commands, such as `ps` or `ls` as practice. When you're finished, sign out of the virtual machine by typing `exit` or `logout`.

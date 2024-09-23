@@ -12,19 +12,19 @@ You should first choose the appropriate Azure subscription. Based on the subscri
 
 Choose the instance name for the Azure Route Server, then select the region where your virtual network resides. Ensure that you select the proper region, or you won’t be able to select a virtual network.
 
-When you select a network for the Azure Route Server, the appropriate subnet with name **RouteServerSubnet** will be automatically selected. You’ll also have the option to create the subnet from this wizard.
+When you select a virtual network for the Azure Route Server, the appropriate subnet with name **RouteServerSubnet** will be automatically selected. You’ll also have the option to create the subnet from this wizard.
 
 In the last set of options, you need to create a public IP address for the Azure Route Server. You can select an existing public IP if you have it from before, or you can create a new one. Although Azure Router Server doesn’t actually manage the data between networks, it needs a public IP address to help ensure connectivity to the backend service that manages the Route Server configuration. At this time, only IPv4 addresses are supported.
 
 Before you create an Azure Route Server object, you’ll have a chance to assign it a tag. *Tags* are name/value pairs that enable you to categorize resources and review consolidated billing. You do this by applying the same tag to multiple resources and resource groups. This is not mandatory, however.
 
-After creating the Azure Route Server object, you need to create its peers so it can exchange route information. In the Azure Route Server portal, navigate to **Peers**, then select **Add a peer**. To add a peer, you need to provide a peer name, ASN number, and the IP address of the peer interface that’s accessible to Azure Route Server. The following screenshot depicts an example of these settings:
+After creating the Azure Route Server object, you need to add its peers so it can exchange route information. In the Azure Route Server portal, navigate to **Peers**, then select **+ Add**. To add a peer, you need to provide a peer name, ASN number, and the IP address of the peer interface that’s accessible to Azure Route Server. The following screenshot depicts an example of these settings:
 
 :::image type="content" source="../media/5-add-peer.png" alt-text="Screenshot of the Add Peer section with Name, ASN, and IPV4 address boxes filled in.":::
 
 After you add one or more peers to the Azure Route Server object, it will start learning and exchanging routes by using BGP. However, you can’t use the Azure portal to review these routes. If you want to check the routes that Azure Route Server received from its peers, you need to use the **Get-AzRouteServerPeerLearnedRoute** cmdlet. For this command, you need to provide the name of your Azure Route Server and resource group. You also need to provide the name of a peer, as routes are listed on a per-peer basis. For example:
 
-```azurecli
+```azurepowershell
 Get-AzRouteServerPeerLearnedRoute -RouteServerName TestARS -ResourceGroupName RG1 -PeerName NVA1 | ft
 ```
 

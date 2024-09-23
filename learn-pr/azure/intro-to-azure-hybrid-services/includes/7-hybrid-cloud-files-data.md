@@ -9,7 +9,7 @@ In this unit, you'll learn how certain hybrid technologies allow Tailwind Trader
 
 ## What is an Azure file share?
 
-Azure Files offers two industry-standard protocols for mounting Azure file share: the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. You can integrate Azure Files with Azure Active Directory (Azure AD) and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure file share endpoint. 
+Azure Files offers two industry-standard protocols for mounting Azure file share: the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. You can integrate Azure Files with Microsoft Entra ID and Microsoft Entra Connect to allow people to use their on-premises account credentials or their Microsoft Entra credentials to securely access the Azure file share endpoint. 
 
 You can also configure Azure file shares to support access control list (ACL) permissions. This allows you to limit access to files and folders in the same way that you would secure files and folders for an on-premises file server. 
 
@@ -17,7 +17,7 @@ Because Azure Files is backed by Azure Storage, Azure file shares can store subs
 
 The following image shows clients connecting to Azure file shares.
 
-:::image type="content" source="../media/7-client-connect.png" alt-text="Diagram that shows clients connected to Azure file shares by using authentication of credentials synchronized to an Azure AD tenant." border="false" lightbox="../media/7-client-connect.png":::
+:::image type="content" source="../media/7-client-connect.png" alt-text="Diagram that shows clients connected to Azure file shares by using authentication of credentials synchronized to a Microsoft Entra tenant." border="false" lightbox="../media/7-client-connect.png":::
 
 An Azure file share endpoint might provide a solution to some of the challenges that Tailwind Traders faces. Specifically, placing a file share in Azure can serve as an easy replacement for branch-office retail locations, such as the Wangaratta site, to use instead of making a VPN connection to a file server in the Melbourne Office. Azure file share endpoints can be used in conjunction with Azure File Sync, which you'll learn about in the next section.
 

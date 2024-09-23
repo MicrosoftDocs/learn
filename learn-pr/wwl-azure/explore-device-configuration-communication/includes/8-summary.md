@@ -1,1 +1,0 @@
-Your team will be working on an IoT solution and must be comfortable implementing device-to-cloud communication. Understanding the supported communication protocols and then implementing device communication with IoT Hub in a test environment demonstrates that you are ready to investigate deploying larger numbers of devices.

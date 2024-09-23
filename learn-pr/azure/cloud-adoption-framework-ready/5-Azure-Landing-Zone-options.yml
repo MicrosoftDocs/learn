@@ -6,10 +6,9 @@ metadata:
   title: Choose an Azure landing zone option
   description: Apply what you've learned to choose the best option for implementing an Azure landing zone.
   ms.date: 05/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-Azure-Landing-Zone-options.md)]

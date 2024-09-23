@@ -3,12 +3,13 @@ uid: learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint
 title: Deploy a custom model to a batch endpoint
 metadata:
   title: Deploy a custom model to a batch endpoint
-  description: "Deploy a custom model to a batch endpoint"
-  ms.date: 04/25/2023
+  description: Deploy a custom model to a batch endpoint
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/22/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/4-deploy-custom-model-batch-endpoint.md)]

@@ -1,6 +1,4 @@
-
-
-Now we will explore how to protect the SQL Server back end of an application using a combination of SQL Server business continuity and disaster recovery (BCDR) technologies and Azure Site Recovery.
+Now we'll explore how to protect the SQL Server back end of an application using a combination of SQL Server business continuity and disaster recovery (BCDR) technologies and Azure Site Recovery.
 
 SQL Server can be deployed in many ways:
 
@@ -17,61 +15,12 @@ This process uses the following native SQL disaster recovery technologies for re
 
 Site Recovery can protect SQL Server as summarized in the table.
 
-:::row:::
-  :::column:::
-    **Scenario**
-  :::column-end:::
-  :::column:::
-    **To a secondary site**
-  :::column-end:::
-  :::column:::
-    **To Azure**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Hyper-V
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VMware
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Physical server
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure
-  :::column-end:::
-  :::column:::
-    NA
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
+| **Scenario** | **To a secondary site** | **To Azure** |
+|---|---|---|
+| Hyper-V | Yes | Yes |
+| VMware | Yes | Yes |
+| Physical server | Yes | Yes |
+| Azure | NA | Yes |
 
 ## Supported SQL Server versions
 
@@ -87,61 +36,12 @@ The following SQL Server versions are supported, for the supported scenarios:
 
 Site Recovery can be integrated with native SQL Server BCDR technologies summarized in the table, to provide a disaster recovery solution.
 
-:::row:::
-  :::column:::
-    **Feature**
-  :::column-end:::
-  :::column:::
-    **Feature Details**
-  :::column-end:::
-  :::column:::
-    **SQL Server**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Always On availability group
-  :::column-end:::
-  :::column:::
-    Multiple standalone instances of SQL Server each run in a failover cluster that has multiple nodes. Databases can be grouped into failover groups that can be copied (mirrored) on SQL Server instances so that no shared storage is needed. Provides disaster recovery between a primary site and one or more secondary sites. Two nodes can be set up in a shared nothing cluster with SQL Server databases configured in an availability group with synchronous replication and automatic failover.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Failover clustering (Always On FCI)
-  :::column-end:::
-  :::column:::
-    SQL Server uses Windows failover clustering for high availability of on-premises SQL Server workloads. Nodes running instances of SQL Server with shared disks are configured in a failover cluster. If an instance is down the cluster fails over to a different one. The cluster doesn't protect against failure or outages in shared storage. The shared disk can be implemented with iSCSI, fiber channel, or shared VHDXs.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Database mirroring (high safety mode)
-  :::column-end:::
-  :::column:::
-    Protects a single database to a single secondary copy. Available in both high safety (synchronous) and high performance (asynchronous) replication modes. Doesn’t require a failover cluster.
-  :::column-end:::
-  :::column:::
-    SQL Server (all supported versions)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Standalone SQL Server
-  :::column-end:::
-  :::column:::
-    The SQL Server and database are hosted on a single server (physical or virtual). Host clustering is used for high availability if the server is virtual. No guest-level high availability.
-  :::column-end:::
-  :::column:::
-    Enterprise or Standard edition
-  :::column-end:::
-:::row-end:::
+| **Feature** | **Feature Details** | **SQL Server** |
+|---|---|---|
+| Always On availability group | Multiple standalone instances of SQL Server each run in a failover cluster that has multiple nodes. Databases can be grouped into failover groups that can be copied (mirrored) on SQL Server instances so that no shared storage is needed. Provides disaster recovery between a primary site and one or more secondary sites. Two nodes can be set up in a shared nothing cluster with SQL Server databases configured in an availability group with synchronous replication and automatic failover. | SQL Server (all supported versions) |
+| Failover clustering (Always On FCI) | SQL Server uses Windows failover clustering for high availability of on-premises SQL Server workloads. Nodes running instances of SQL Server with shared disks are configured in a failover cluster. If an instance is down the cluster fails over to a different one. The cluster doesn't protect against failure or outages in shared storage. The shared disk can be implemented with iSCSI, fiber channel, or shared VHDXs. | SQL Server (all supported versions) |
+| Database mirroring (high safety mode) | Protects a single database to a single secondary copy. Available in both high safety (synchronous) and high performance (asynchronous) replication modes. Doesn’t require a failover cluster. | SQL Server (all supported versions) |
+| Standalone SQL Server | The SQL Server and database are hosted on a single server (physical or virtual). Host clustering is used for high availability if the server is virtual. No guest-level high availability. | Enterprise or Standard edition |
 
 ## Deployment prerequisites
 
@@ -153,7 +53,7 @@ Site Recovery can be integrated with native SQL Server BCDR technologies summari
 Set up Active Directory, in the secondary recovery site, for SQL Server to run properly.
 
 - Small enterprise: With a small number of applications, and a single domain controller for the on-premises site, if you want to fail over the entire site, we recommend you use Site Recovery replication to replicate the domain controller to the secondary datacenter or to Azure.
-- Medium to large enterprise: If you have a large number of applications, an Active Directory forest, and you want to fail over by application or workload, we recommend you set up an additional domain controller in the secondary datacenter or in Azure. If you're using Always On availability groups to recover to a remote site, we recommend you set up another additional domain controller on the secondary site or in Azure, to use for the recovered SQL Server instance.
+- Medium to large enterprise: If you have a large number of applications, an Active Directory forest, and you want to fail over by application or workload, we recommend you set up an extra domain controller in the secondary datacenter or in Azure. If you're using Always On availability groups to recover to a remote site, we recommend you set up another extra domain controller on the secondary site or in Azure, to use for the recovered SQL Server instance.
 
 These instructions presume that a domain controller is available in the secondary location.
 
@@ -161,13 +61,13 @@ These instructions presume that a domain controller is available in the secondar
 
 Here's what you need to do:
 
-1. Import scripts available at [https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1) into your Azure Automation account. This repository contains the scripts to failover SQL Availability Group.
+1. Import scripts available at [https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/demos/asr-automation-recovery/scripts/ASR-SQL-FailoverAG.ps1) into your Azure Automation account. This repository contains the scripts to fail over SQL Availability Group.
 2. Add the ASR-SQL-FailoverAG script as a pre-action of the first group of the recovery plan.
 3. Follow the instructions available in the script to create an automation variable to provide the name of the availability groups.
 
 SQL Always On doesn’t natively support test failover. To perform a test failover, use the following procedure:
 
-1. Configure Azure VM Backup on the virtual machine that hosts the availability group replica in Azure.
+1. Configure Azure Virtual Machine Backup on the virtual machine that hosts the availability group replica in Azure.
 2. Before triggering test failover of the recovery plan, recover the virtual machine from the backup taken in the previous step into the test virtual network.
 3. Force a quorum in the virtual machine restored from backup.
 4. Update IP of the listener to an IP available in the test failover network.

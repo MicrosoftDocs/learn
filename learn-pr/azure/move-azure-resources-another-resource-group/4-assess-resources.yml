@@ -4,11 +4,10 @@ title: Assess resources that can move
 metadata:
   title: Assess resources that can move
   description: Assess resources that can move
-  ms.date: 12/23/2019
+  ms.date: 11/21/2023
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-assess-resources.md)]
@@ -17,9 +16,9 @@ quiz:
   questions:
   - content: Which one of these resource types can't be moved between resource groups?
     choices:
-    - content: Azure Active Directory Domain Services
+    - content: Microsoft Entra Domain Services
       isCorrect: true
-      explanation: According to the move operation support list, Azure AD DS can't be moved. 
+      explanation: According to the move operation support list, Microsoft Entra Domain Services can't be moved. 
     - content: Azure Storage accounts
       isCorrect: false
       explanation: According to the move operation support list, Azure Storage accounts can be moved.

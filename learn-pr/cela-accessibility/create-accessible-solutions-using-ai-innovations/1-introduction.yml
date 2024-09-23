@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-accessible-solutions-using-ai-innovations.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to AI innovations
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)] 

@@ -1,1 +1,0 @@
-Your team will be implementing an Azure IoT solution for the company and will be responsible for provisioning thousands of devices. Understanding the basic principals behind device provisioning and how the Device Provisioning Service works will ensure that deployments are successful.

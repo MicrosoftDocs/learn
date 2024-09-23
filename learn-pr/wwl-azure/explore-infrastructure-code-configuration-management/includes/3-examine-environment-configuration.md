@@ -17,63 +17,14 @@ Automated configuration, or treating configuration as code, can help with some o
 
 The following table lists the significant differences between manual configuration and configuration as code.
 
-:::row:::
-  :::column:::
-    **Manual configuration**
-  :::column-end:::
-  :::column:::
-    **Configuration as code**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configuration bugs are challenging to identify.
-  :::column-end:::
-  :::column:::
-    Bugs are easily reproducible.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Error-prone.
-  :::column-end:::
-  :::column:::
-    Consistent configuration.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    More verification steps and more elaborate manual processes.
-  :::column-end:::
-  :::column:::
-    Increase deployment cadence to reduce the amount of incremental change.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Increased documentation.
-  :::column-end:::
-  :::column:::
-    Treat environment and configuration as executable documentation.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment on weekends to allow time to recover from errors.
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Slower release cadence to minimize the requirement for long weekends.
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| **Manual configuration**                                              | **Configuration as code**                                               |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Configuration bugs are challenging to identify.                       | Bugs are easily reproducible.                                           |
+| Error-prone.                                                          | Consistent configuration.                                               |
+| More verification steps and more elaborate manual processes.          | Increase deployment cadence to reduce the amount of incremental change. |
+| Increased documentation.                                              | Treat environment and configuration as executable documentation.        |
+| Deployment on weekends to allow time to recover from errors.          |                                                                         |
+| Slower release cadence to minimize the requirement for long weekends. |                                                                         |
 
 ## Benefits of configuration management
 

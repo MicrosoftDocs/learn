@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-the-azure-portal
+title: Provision a Linux virtual machine by using the Azure portal
+metadata:
+  title: Provision a Linux virtual machine by using the Azure portal
+  description: Learn how to provision a Linux virtual machine by using the Azure portal.
+  ms.date: 10/30/2023
+  author: fossygirl
+  ms.author: carols
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-provision-linux-virtual-machine-using-the-azure-portal.md)]

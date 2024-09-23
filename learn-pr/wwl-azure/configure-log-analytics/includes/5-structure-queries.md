@@ -1,4 +1,3 @@
-
 Administrators build Log Analytics queries from data stored in dedicated tables in a Log Analytics workspace. Some common dedicated tables include Event, Syslog, Heartbeat, and Alert. When you build a Kusto Query Language (KQL) query, you begin by determining which tables in the Azure Monitor Logs repository have the data you're looking for. 
 
 The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources. 
@@ -35,7 +34,7 @@ We can build queries to search for data in the `StormEvent` table that has five 
 | `Water` | `Snow` | `3` | `4:00 PM 01-26-2023` | `10 hours` | `1, 2, 4, 5` |
 | `Water` | `Flood warning` | `2` | `9:00 AM 01-26-2023` | `10 hours` | `3` |
 
-To find other operators and examples, review [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language).
+To find other operators and examples, review: [Analyze monitoring data with Kusto Query Language - Training | Microsoft Learn](/training/paths/analyze-monitoring-data-with-kql/).
 
 #### Count number of items
 
@@ -87,48 +86,3 @@ Your query filters to one row in the `StormEvent` table:
 | --- | --- | --- | --- | --- | --- |
 | `Water` | `Snow` | `3` | `4:00 PM 01-26-2023` | `10 hours` | `1, 2, 4, 5` |
 
-#### Aggregate content
-
-Use the `summarize` operator to create a table that aggregates the content of the input record set based on your specifications.
-
-The following example returns an aggregate table for `StormEvent`. The results table shows the average (`avg`) severity level of each storm type for each `region` for all (`count`) data records in the dedicated table.
-
-```kusto
-StormEvent | summarize count(), avg(severity) by type, region
-```
-
-Query results:
-
-| type | avg(severity) | region |
-| --- | --- | --- |
-| `Water` | `2` | `1, 2, 3` |
-| `Water` | `3` | `4, 5` |
-| `Wind` | `1` | `1, 2, 4, 5` |
-| `Temperature` | `2` | `1, 2, 4, 5` |
-
-#### Chain operators
-
-Any query can contain an operator chain. 
-
-Suppose you want to search the `StormEvent` table to see how many days experienced below-zero freezing temperatures over the last two weeks. If there are results, you want to see them in descending order (oldest date first). 
-
-You can create a query with chained operators: `where` and `summarize`. The query searches the table data collected in the past `ago(14days)`. It looks for matches to the string `Below`, which is part of the entry text `Below freezing` for the storm type `Temperature`.
-
-The results table aggregates (`summarize`) all items (`count`) in the dedicated table and shows the returned items in descending (`desc`) order.
-
-```kusto
-StormEvent
-| where (EventLevelName == "Below")
-| where (TimeGenerated > ago(14days))
-| summarize StormEvent = count(), desc
-```
-
-Query results:
-
-| type | event | start |
-| --- | --- | --- |
-| `Temperature` | `Below freezing` | `11:00 PM 01-13-2023` |
-| `Temperature` | `Below freezing` | `12:00 AM 01-14-2023` |
-| `Temperature` | `Below freezing` |  `3:00 AM 01-16-2023` |
-| `Temperature` | `Below freezing` | `12:00 AM 01-17-2023` |
-| `Temperature` | `Below freezing` | `11:00 PM 01-26-2023` |

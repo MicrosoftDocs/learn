@@ -8,7 +8,7 @@ In this module, we're going to explore Flask and the Translator service. We'll s
 
 ## Learning objectives
 
-In this module, you'll build a website using Flask and Cognitive Services to translate text.
+In this module, you'll build a website using Flask and Azure AI services to translate text.
 
 - Learn how to set up a Flask development environment
 - Learn how to use Flask to build a form
@@ -16,6 +16,7 @@ In this module, you'll build a website using Flask and Cognitive Services to tra
 
 ## Prerequisites
 
-- An Azure account. Learn how to create a free account in [Create an Azure account](/training/modules/create-an-azure-account).
-- Python 3.6 or later and VS code installed on your computer. Follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- An Azure account. [Create Your Azure Free Account](https://azure.microsoft.com/free/).
+- Visual Studio Code installed on your computer. [Download Visual Studio Code](https://code.visualstudio.com/Download)
+- Python 3.6 or later installed on your computer. [Instructions for installing Python](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
+- The Python extension for Visual Studio Code installed on your computer. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)

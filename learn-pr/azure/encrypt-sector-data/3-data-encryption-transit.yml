@@ -4,11 +4,10 @@ title: Protect data in transit
 metadata:
   title: Protect data in transit
   description: Discussion of the stakes and options of encrypting data in transit to protect it from interception when using Azure.
-  ms.date: 04/11/2023
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-data-encryption-transit.md)] 

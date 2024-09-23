@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines
-title: Understand Azure Cognitive Search enrichment pipelines
+title: Understand Azure AI Search enrichment pipelines
 metadata:
-  title: Understand Azure Cognitive Search enrichment pipelines
-  description: "Understand Azure Cognitive Search enrichment pipelines"
-  ms.date: 11/01/2022
+  title: Understand Azure AI Search enrichment pipelines
+  description: Understand Azure AI Search enrichment pipelines
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 03/12/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-enrichment-pipelines.md)]

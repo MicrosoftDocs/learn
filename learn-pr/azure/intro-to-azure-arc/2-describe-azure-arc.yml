@@ -3,13 +3,12 @@ uid: learn.azure.intro-to-azure-arc.2-describe-azure-arc
 metadata:
   title: Describe Azure Arc
   description: Describe Azure Arc
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-azure-arc.md)]

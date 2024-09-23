@@ -2,29 +2,43 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell
 metadata:
   title: Manage Azure resources with Windows PowerShell
-  description: "Manage Azure resources with Windows PowerShell"
-  ms.date: 10/20/2022
+  description: "Learn to manage Azure resources with Windows PowerShell."
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure-powershell
+  ai-usage: human-only
 title: Manage Azure resources with Windows PowerShell
-summary: This module explains how to install the necessary modules for cloud services management and use PowerShell commands to perform simple administrative tasks on cloud resources like Azure virtual machines, Azure subscriptions and Azure storage accounts.
+summary: This module explains how to install necessary modules for cloud services management. It also explains how to use PowerShell commands to perform administrative tasks on cloud resources like Azure virtual machines, subscriptions, and storage accounts.
 abstract: |
-  Upon completion of this module, the learner will be able to:
-  - Describe, install, and use the Azure PowerShell environment.
-  - Describe and use Azure Cloud Shell.
-  - Manage Azure VMs with Azure PowerShell.
-  - Manage Azure storage accounts and subscriptions with Azure PowerShell.
+  Upon completion of this module, the learner is able to:
+
+  -   Describe, install, and use the Azure PowerShell environment.
+
+  -   Describe and use Azure Cloud Shell.
+
+  -   Manage Azure VMs with Azure PowerShell.
+
+  -   Manage Azure storage accounts and subscriptions with Azure PowerShell.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-  *   Familiarity with CIM and WMI technologies
-  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
-  *   Familiarity to administer remote computers with Windows PowerShell
+  -   Familiarity with Windows networking technologies and implementation.
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
+
+  -   Familiarity with Common Information Model (CIM) and Windows Management Instrumentation (WMI) technologies.
+
+  -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
+
+  -   Familiarity to administer remote computers with Windows PowerShell.
 iconUrl: /training/achievements/manage-azure-resources-windows-powershell.svg
 levels:
 - intermediate
@@ -32,14 +46,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

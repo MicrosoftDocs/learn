@@ -4,11 +4,10 @@ title: User authorization
 metadata:
   title: User authorization 
   description: Learn the different ways to authorize a user in GitHub.
-  ms.date: 11/01/2021
+  ms.date: 04/09/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-authorization.md)]

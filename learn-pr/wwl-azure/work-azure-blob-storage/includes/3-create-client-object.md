@@ -1,10 +1,8 @@
-
-
 Working with any Azure resource using the SDK begins with creating a client object. In this section, you learn how to create client objects to interact with the three types of resources in the storage service: storage accounts, containers, and blobs.
 
 When your application creates a client object, you pass a URI referencing the endpoint to the client constructor. You can construct the endpoint string manually, as shown in the examples in this article, or you can query for the endpoint at runtime using the Azure Storage management library.
 
-The code samples in this unit use [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential) to authenticate to Azure via an Azure Active Directory (Azure AD) security principal. The authentication process includes obtaining an access token for authorization. This access token is passed as a credential when the client is instantiated, and the credential persists throughout the client lifetime. The Azure AD security principal requesting the token must be assigned an appropriate Azure RBAC role that grants access to blob data.
+The code samples in this unit use [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential) to authenticate to Azure via a Microsoft Entra security principal. The authentication process includes obtaining an access token for authorization. This access token is passed as a credential when the client is instantiated, and the credential persists throughout the client lifetime. The Microsoft Entra security principal requesting the token must be assigned an appropriate Azure RBAC role that grants access to blob data.
 
 ## Create a BlobServiceClient object
 

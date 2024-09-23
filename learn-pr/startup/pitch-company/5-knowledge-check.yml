@@ -3,12 +3,11 @@ uid: learn.startups.pitch-company.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts of startup pitching. Topics include pitch deck material, how to polish presentation skills, and how to prepare pitch deck slides.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  description: Check what you learned about startup pitching, including how to polish presentation skills and how to prepare pitch deck slides.
+  ms.date: 04/22/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 4
 quiz:
   questions:

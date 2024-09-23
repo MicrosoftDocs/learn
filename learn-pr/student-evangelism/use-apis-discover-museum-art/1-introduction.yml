@@ -3,11 +3,10 @@ uid: learn.student-evangelism.use-apis-discover-museum-art.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/08/2020
-  author: jlooper
+  ms.date: 12/09/2020
+  author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: explore-rest-apis
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 2

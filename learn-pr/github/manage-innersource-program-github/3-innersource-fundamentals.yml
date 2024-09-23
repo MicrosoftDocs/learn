@@ -4,11 +4,10 @@ title:  Exercise - InnerSource fundamentals
 metadata:
   title:  Exercise - InnerSource fundamentals
   description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
-  ms.date: 06/26/2020
+  ms.date: 05/15/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 36
 content: |
   [!include[](includes/3-innersource-fundamentals.md)]

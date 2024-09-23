@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house.define-resources-benefits-my-students
+title: Define the resources and benefits for my students
+metadata:
+  title: Define the resources and benefits for my students
+  description: "Define the resources and benefits for my students"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-define-resources-benefits-my-students.md)]

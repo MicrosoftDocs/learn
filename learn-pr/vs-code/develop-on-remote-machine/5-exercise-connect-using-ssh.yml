@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-on-remote-machine.exercise-connect-using-ssh
+title: Exercise - Connect using SSH through Visual Studio Code
+metadata:
+  title: Exercise - Connect using SSH through Visual Studio Code
+  description: "Learn how to connect to an SSH host using the VS Code Remote - SSH extension."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-connect-using-ssh.md)]

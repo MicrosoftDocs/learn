@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-implement-events
+metadata:
+  title: 'Guided project: Create event handlers'
+  description: "This guided project demonstrates working with events and delegates."
+  ms.date: 09/11/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-intro-to-product
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: 'Guided project: Create event handlers'
+summary: In this module you learn about events and delegates are and how they're used. You'll implement event handler stub code for handling events.
+abstract: |
+  -   Understand how events and delegates are used.
+
+  -   Learn how to implement event handler stubs.
+prerequisites: |
+  -   Installation of Visual Studio Code configured for C# application development, including C# Dev Kit.
+
+  -   Experience with the VS Code editor.
+
+  -   Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+
+  -   Experience with basic C# syntax rules.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+units:
+- learn.wwl.guided-project-implement-events.introduction
+- learn.wwl.guided-project-implement-events.prepare
+- learn.wwl.guided-project-implement-events.exercise-review-events
+- learn.wwl.guided-project-implement-events.exercise-review-ui-elements
+- learn.wwl.guided-project-implement-events.exercise-implement-handler-stubs
+- learn.wwl.guided-project-implement-events.knowledge-check
+- learn.wwl.guided-project-implement-events.summary
+badge:
+  uid: learn.wwl.guided-project-implement-events.badge

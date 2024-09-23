@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Configure a Security Information and Event Management (SIEM) for Security Operations using Microsoft Sentinel."
+  ms.date: 10/3/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

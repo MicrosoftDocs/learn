@@ -1,19 +1,20 @@
 
+
 Windows offers advanced techniques for managing user profiles and data. By using cloud-based services such as Enterprise State Roaming and Microsoft OneDrive, companies can seamlessly empower their users to transition between various device platforms. With these services, employees can effortlessly access their data from any device and transfer their settings from one Windows device to another.
 
 ### Enterprise State Roaming
 
-Windows 8 introduced the Sync your settings feature, which uses Microsoft accounts to sync settings with Microsoft OneDrive. Enterprise State Roaming offers similar functionality, but it's targeted to enterprises, because it requires Azure AD Premium and it syncs Windows settings with Azure. Enterprise State Roaming can sync only settings and not data. However, you should note that Enterprise State Roaming can only sync the settings of the Universal Windows Platform (UWP) apps and Windows settings, and that it can't sync desktop-application settings. You can use the Settings app, Group Policy or mobile device management (MDM) to control which settings will be synced.
+Windows 8 introduced the Sync your settings feature, which uses Microsoft accounts to sync settings with Microsoft OneDrive. Enterprise State Roaming offers similar functionality, but it's targeted to enterprises, because it requires Microsoft Entra ID P1 or P2 and it syncs Windows settings with Azure. Enterprise State Roaming can sync only settings and not data. However, you should note that Enterprise State Roaming can only sync the settings of the Universal Windows Platform (UWP) apps and Windows settings, and that it can't sync desktop-application settings. You can use the Settings app, Group Policy or mobile device management (MDM) to control which settings will be synced.
 
-:::image type="content" source="../media/enterprise-sync-settings-c2bf2ecc.png" alt-text="Screenshot of two Windows 10 computers that are connected to Azure AD Premium illustrating that Enterprise State Roaming can sync Windows 10.":::
+:::image type="content" source="../media/enterprise-sync-settings-c2bf2ecc.png" alt-text="Screenshot of two Windows 10 computers that are connected to Microsoft Entra ID P1 or P2 illustrating that Enterprise State Roaming can sync Windows 10.":::
 
 
-Enterprise State Roaming syncs settings across Azure AD joined devices and provides users with the same experience across their devices. Enterprise State Roaming provides the following benefits:
+Enterprise State Roaming syncs settings across Microsoft Entra joined devices and provides users with the same experience across their devices. Enterprise State Roaming provides the following benefits:
 
- -  Separation of business and private data. Business data and private data are stored separately. If a user installs an app by using an Azure AD identity, the assumption is that the app is for business use. If an app was installed by using a Microsoft account, it's considered a personal app. Enterprise State Roaming syncs only state of the business UWP apps.
+ -  Separation of business and private data. Business data and private data are stored separately. If a user installs an app by using a Microsoft Entra identity, the assumption is that the app is for business use. If an app was installed by using a Microsoft account, it's considered a personal app. Enterprise State Roaming syncs only state of the business UWP apps.
  -  Enhanced security. Synced data is automatically encrypted by using Azure Rights Management (Azure RMS) when it moves from a Windows device to the cloud and back. All data that is stored in the cloud is encrypted. When you enable Enterprise State Roaming, your company is automatically issued a free, limited-use license for Azure RMS. This free subscription is limited to encrypting and decrypting enterprise settings and application data synced by Enterprise State Roaming.
  -  Better management and monitoring. You can enable and configure Enterprise State Roaming in the Azure portal or by using Windows PowerShell. In the portal, you can view information such as which devices are synced by Enterprise State Roaming, who syncs data in your company, and when devices were last synced.
- -  Synced data is kept in the same region. Enterprise State Roaming data is hosted in the Azure region that best aligns with the Azure AD tenant’s country/region, and data resides locally in the geographical region and doesn't replicate across regions.
+ -  Synced data is kept in the same region. Enterprise State Roaming data is hosted in the Azure region that best aligns with the Microsoft Entra tenant’s country/region, and data resides locally in the geographical region and doesn't replicate across regions.
  -  Data retention. Enterprise State Roaming data that was synced to Azure is kept at least 90 days after it was last accessed or until you delete it manually.
 
 #### Sync user data

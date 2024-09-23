@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-For your toy launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
+For your toy-launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
 
 During the process, you'll:
 
@@ -84,7 +84,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded.
+1. In **Overview**, you can see that one deployment succeeded. You might need to expand the **Essentials** area to see the deployment.
 
     :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
@@ -92,7 +92,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment called **main** to see which resources were deployed, then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
@@ -120,7 +120,7 @@ Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group na
 
 ## Add an App Service plan and app to your Bicep template
 
-In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
+In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you'll add an App Service plan and app to the Bicep template.
 
 1. In the _main.bicep_ file in Visual Studio Code, add the following code to the bottom of the file:
 
@@ -154,7 +154,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ### Check your deployment
 
-1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. Return to the Azure portal and go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 

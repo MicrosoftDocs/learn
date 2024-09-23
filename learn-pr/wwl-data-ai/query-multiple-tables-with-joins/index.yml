@@ -5,9 +5,11 @@ metadata:
   description: "Combine multiple tables with JOINs in T-SQL"
   ms.date: 12/03/2021
   author: wwlpublish
-  ms.author: kadelane
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: rcaper
+  ms.topic: module-standard-task-based
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Combine multiple tables with JOINs in T-SQL
 summary: Explore T-SQL queries accessing data from multiple tables with various kinds of JOIN operations.
 abstract: |
@@ -37,7 +39,7 @@ products:
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
 subjects:
-- database
+- databases
 units:
 - learn.wwl.query-multiple-tables-with-joins.introduction
 - learn.wwl.query-multiple-tables-with-joins.join-concepts

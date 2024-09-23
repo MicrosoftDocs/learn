@@ -2,12 +2,14 @@
 uid: learn.wwl.deploy-model-batch-endpoint
 metadata:
   title: Deploy a model to a batch endpoint
-  description: "Deploy a model to a batch endpoint"
-  ms.date: 04/25/2023
+  description: Azure Machine Learning Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/22/2023
+  ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Deploy a model to a batch endpoint
 summary: Learn how to deploy models to a batch endpoint. When you invoke a batch endpoint, you'll trigger a batch scoring job.
 abstract: |
@@ -16,8 +18,8 @@ abstract: |
   - Deploy your MLflow model to a batch endpoint.
   - Deploy a custom model to a batch endpoint.
   - Invoke batch endpoints.
-prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+prerequisites: ''
+iconUrl: /training/achievements/deploy-a-model-to-a-batch-endpoint.svg
 levels:
 - beginner
 roles:

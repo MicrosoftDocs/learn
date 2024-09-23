@@ -1,4 +1,3 @@
-
 In this unit, you'll learn how to enable autoscaling, create autoscale rules, and monitor autoscaling activity
 
 ## Enable autoscaling

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.measure-mitigate-risks-azure-ai-studio.run-manual-evaluation
+title: Run a manual evaluation
+metadata:
+  title: Run a manual evaluation
+  description: Learn how to run a manual evaluation.
+  ms.date: 09/14/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-run-manual-evaluation.md)]

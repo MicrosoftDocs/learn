@@ -1,12 +1,10 @@
-
-
 ## Create and connect to a Windows 11 desktop with Azure Virtual Desktop
  
 Azure Virtual Desktop is a desktop and app virtualization service that runs on the cloud. This tutorial shows you a simple method to deploy a Windows 11 Enterprise desktop in Azure Virtual Desktop using the Azure portal and how to connect to it. To learn more about the terminology used for Azure Virtual Desktop, see [Azure Virtual Desktop terminology.](/azure/virtual-desktop/environment-setup)
 
 You will:
 - Create a personal host pool.
-- Create a session host virtual machine (VM) joined to your Azure Active Directory tenant with Windows 11 Enterprise and add it to the host pool.
+- Create a session host virtual machine (VM) joined to your Microsoft Entra tenant with Windows 11 Enterprise and add it to the host pool.
 - Create a workspace and an application group that publishes a desktop to the session host VM.
 - Assign users to the application group.
 - Connect to the desktop.
@@ -17,7 +15,7 @@ You'll need:
 - An Azure account with an active subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - The account must be assigned the Owner or Contributor [built-in role-based access control (RBAC) roles](/azure/role-based-access-control/role-assignments-portal) on the subscription.
 - A [virtual network](/azure/virtual-network/quick-create-portal) in the same Azure region you want to deploy your session hosts to.
-- A user account in Azure Active Directory you can use for connecting to the desktop. This account must be assigned the Virtual Machine User Login or Virtual Machine Administrator Login RBAC role on the subscription. Alternatively, you can assign the role to the account on the session host VM or the resource group containing the VM after deployment.
+- A user account in Microsoft Entra ID you can use for connecting to the desktop. This account must be assigned the Virtual Machine User Login or Virtual Machine Administrator Login RBAC role on the subscription. Alternatively, you can assign the role to the account on the session host VM or the resource group containing the VM after deployment.
 - A Remote Desktop client installed on your device to connect to the desktop. You can find a list of supported clients in [Remote Desktop clients for Azure Virtual Desktop](/azure/virtual-desktop/users/remote-desktop-clients-overview). Alternatively, you can use the [Remote Desktop Web client](/azure/virtual-desktop/users/connect-web), which you can use through a supported web browser without installing any extra software.
 
 ### Create a personal host pool, workspace, application group, and session host VM
@@ -50,7 +48,7 @@ To create a personal host pool, workspace, application group, and session host V
     |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
     | Add Azure virtual machines      | Select Yes. This shows several new options.                                                                                            |
     | Resource group                  | This automatically defaults to the resource group you chose your host pool to be in on the Basics tab.                                |
-    | Name prefix                     | Enter a name for your session hosts, for example aad-hp01-sh.                                                                          |
+    | Name prefix                     | Enter a name for your session hosts, for example Microsoft Entra ID-hp01-sh.                                                                          |
     | Virtual machine location        | Select the Azure region where your session host VMs will be deployed. This must be the same region that your virtual network is in.   |
     | Availability options            | Select No infrastructure dependency required. This means that your session host VMs won't be deployed in an availability set or in availability zones. |
     | Security type                   | Select Standard.                                                                                                                        |
@@ -64,7 +62,7 @@ To create a personal host pool, workspace, application group, and session host V
     | Network security group          | Select Basic.                                                                                                                           |
     | Public inbound ports            | Select No.                                                                                                                              |
     | Domain to join                  |                                                                                                                                         |
-    | Select which directory you would like to join | Select Azure Active Directory.                                                                                   |
+    | Select which directory you would like to join | Select Microsoft Entra ID.                                                                                   |
     | Enroll VM with Intune           | Select No.                                                                                                                              |
     | Virtual Machine Administrator account |                                                                                                   |
     | Username                        | Enter a name to use as the local administrator account for these session host VMs.                                                     |
@@ -81,7 +79,7 @@ To create a personal host pool, workspace, application group, and session host V
     | Parameter                 | Value/Description                                                                                                       |
     |---------------------------|-------------------------------------------------------------------------------------------------------------------------|
     | Register desktop app group | Select Yes. This registers the default desktop application group to the selected workspace.                             |
-    | To this workspace         | Select Create new and enter a name, for example aad-ws01.                                                               |
+    | To this workspace         | Select Create new and enter a name, for example Microsoft Entra ID-ws01.                                                               |
 
     Once you've completed this tab, select Next: Review + create.
 
@@ -95,7 +93,7 @@ Once your host pool, workspace, application group, and session host VM(s) have b
 
 1. From the host pool overview, select Application groups.
 
-1. Select the application group from the list, for example aad-hp01-DAG.
+1. Select the application group from the list, for example Microsoft Entra ID-hp01-DAG.
 
 1. From the application group overview, select Assignments.
 
@@ -106,7 +104,7 @@ Once your host pool, workspace, application group, and session host VM(s) have b
 ## Enable connections from Remote Desktop clients
 
 >[!TIP]
->This section is optional if you're going to use a Windows device to connect to Azure Virtual Desktop that is joined to the same Azure AD tenant as your session host VMs and you're using the [Remote Desktop client for Windows.](/azure/virtual-desktop/users/connect-windows?toc=/azure/virtual-desktop/toc.json)
+>This section is optional if you're going to use a Windows device to connect to Azure Virtual Desktop that is joined to the same Microsoft Entra tenant as your session host VMs and you're using the [Remote Desktop client for Windows.](/azure/virtual-desktop/users/connect-windows?toc=/azure/virtual-desktop/toc.json)
 
 To enable connections from all of the Remote Desktop clients, you'll need to add an RDP property to your host pool configuration.
 

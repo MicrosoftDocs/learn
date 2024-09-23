@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependabot-security-updates-on-github-repo.dependency-review
+title: Dependency review
+metadata:
+  unitType: learning-content 
+  title: Dependency review
+  description: The dependency review for each manifest and lock file provides an easy way to see what has changed, and whether any of the new dependency versions contain known vulnerabilities.
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-dependency-review.md)]

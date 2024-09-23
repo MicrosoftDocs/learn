@@ -3,15 +3,15 @@ uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-e
 metadata:
   title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
   description: "Perform evidence and entities investigations using Microsoft Defender for Endpoint"
-  ms.date: 02/20/2023
+  ms.date: 03/13/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: module
+  ms.service: defender-endpoint
 title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
-summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that will provide you with insight to understand the overall impact to your environment.
+summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that provide you with insight to understand the overall impact to your environment.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Investigate files in Microsoft Defender for Endpoint
   - Investigate domains and IP addresses in Microsoft Defender for Endpoint
   - Investigate user accounts in Microsoft Defender for Endpoint
@@ -24,7 +24,7 @@ roles:
 - security-operations-analyst
 products:
 - m365
-- mdatp
+- defender-endpoint
 subjects:
 - information-protection-governance
 - threat-protection

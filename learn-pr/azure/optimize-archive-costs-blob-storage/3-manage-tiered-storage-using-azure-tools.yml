@@ -4,11 +4,13 @@ title: Manage tiered storage using Azure tools
 metadata:
   title: Manage tiered storage using Azure tools
   description: Manage tiered storage using Azure tools
-  ms.date: 09/30/2021
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/02/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 10
 content: |
   [!include[](includes/3-manage-tiered-storage-using-azure-tools.md)]

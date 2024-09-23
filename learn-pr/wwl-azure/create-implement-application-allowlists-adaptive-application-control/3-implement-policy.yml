@@ -4,12 +4,12 @@ title: Implement adaptive application control policies
 metadata:
   title: Implement adaptive application control policies
   description: "Implement adaptive application control policies"
-  ms.date: 10/15/2020
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/3-implement-policy.md)]

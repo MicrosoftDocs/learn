@@ -1,6 +1,3 @@
-
-
-
 In this first step of your development process, you'll begin planning your application through pseudo-code. You'll identify the steps and methods that are needed to complete the task. You also need to consider the input and output of these methods as well. Preparing methods via pseudo-code is a helpful step in any coding task, and can help you develop bug-free code quickly.
 
 > [!IMPORTANT]

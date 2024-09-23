@@ -4,11 +4,10 @@ title: Share a custom connector
 metadata:
   title: Share a custom connector
   description: In this unit, you will learn how to publish your custom connector, both inside your organization and to the wider community.
-  ms.date: 04/11/2019
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 6
 content: |

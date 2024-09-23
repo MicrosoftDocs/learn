@@ -6,7 +6,7 @@ A defense-in-depth strategy uses a series of mechanisms to slow the advance of a
 
 You can visualize defense-in-depth as a set of layers, with the data to be secured at the center and all the other layers functioning to protect that central data layer.
 
-:::image type="content" source="../media/defense-depth-486afc12.png" alt-text="A diagram the defense in depth layers. From the center: data, application, compute, network, perimeter, identity &amp; access, physical security.":::
+:::image type="content" source="../media/defense-depth-486afc12.png" alt-text="A diagram the defense in depth layers. From the center: data, application, compute, network, perimeter, identity & access, physical security.":::
 
 
 Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. This approach removes reliance on any single layer of protection. It slows down an attack and provides alert information that security teams can act upon, either automatically or manually.

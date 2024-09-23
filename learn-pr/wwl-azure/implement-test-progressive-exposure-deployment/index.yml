@@ -3,21 +3,27 @@ uid: learn.wwl.implement-testing-progressive-exposure-deployment
 metadata:
   title: Implement A/B testing and progressive exposure deployment
   description: "Implement A/B testing and progressive exposure deployment"
-  ms.date: 11/01/2022
+  ms.date: 05/27/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement A/B testing and progressive exposure deployment
-summary: This module introduces A/B test and progressive exposure deployment concepts and explores CI/CD with deployment rings -- ring-based deployment.
+summary: This module introduces A/B test and progressive exposure deployment concepts and explores CI/CD with deployment rings--ring-based deployment.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Implement progressive exposure deployment
-  *   Implement A/B testing
-  *   Implement CI/CD with deployment rings
-  *   Identify the best deployment strategy
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Implement progressive exposure deployment.
+
+  -   Implement A/B testing.
+
+  -   Implement CI/CD with deployment rings.
+
+  -   Identify the best deployment strategy.
+prerequisites: None
 iconUrl: /training/achievements/7-implement-a-b-testing-and-progressive-exposure-deployment.svg
 levels:
 - advanced
@@ -46,7 +52,6 @@ units:
 - learn.wwl.implement-testing-progressive-exposure-deployment.introduction
 - learn.wwl.implement-testing-progressive-exposure-deployment.what-ab-testing
 - learn.wwl.implement-testing-progressive-exposure-deployment.explore-ci-cd-deployment-rings
-- learn.wwl.implement-testing-progressive-exposure-deployment.exercise-ring-based-deployment
 - learn.wwl.implement-testing-progressive-exposure-deployment.knowledge-check
 - learn.wwl.implement-testing-progressive-exposure-deployment.summary
 badge:

@@ -3,20 +3,27 @@ uid: learn.wwl.implement-bicep
 metadata:
   title: Implement Bicep
   description: "Implement Bicep"
-  ms.date: 11/01/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: yasa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement Bicep
 summary: This module explains Bicep and how it integrates with different tools such as Azure CLI and Visual Studio Code for environment deployment configuration.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Learn what Bicep is
-  - Learn how to install it and create a smooth authoring experience
-  - Use Bicep to deploy resources to Azure
-  - Deploy Bicep files in Cloud Shell and Visual Studio Code
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  - Learn what Bicep is.
+
+  - Learn how to install it and create a smooth authoring experience.
+
+  - Use Bicep to deploy resources to Azure.
+
+  - Deploy Bicep files in Cloud Shell and Visual Studio Code.
+prerequisites: None
 iconUrl: /training/achievements/implement-bicep.svg
 levels:
 - advanced
@@ -47,6 +54,7 @@ units:
 - learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
 - learn.wwl.implement-bicep.exercise-deploy-bicep-file-azure-pipelines
 - learn.wwl.implement-bicep.exercise-deploy-bicep-file-github-workflows
+- learn.wwl.implement-bicep.azure-deployment-use-resource-manager-templates
 - learn.wwl.implement-bicep.knowledge-check
 - learn.wwl.implement-bicep.summary
 badge:

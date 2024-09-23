@@ -3,21 +3,27 @@ uid: learn.wwl.migrate-consolidating-secure-artifacts
 metadata:
   title: Migrate consolidating and secure artifacts
   description: "Migrate consolidating and secure artifacts"
-  ms.date: 05/17/2022
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Migrate consolidating and secure artifacts
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Migrate consolidate and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Identify artifact repositories
-  - Migrate and integrate artifact repositories
-  - Secure package feeds
-  - Understand roles, permissions and authentication
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Identify artifact repositories
+
+  -   Migrate and integrate artifact repositories
+
+  -   Secure package feeds
+
+  -   Understand roles, permissions and authentication
+prerequisites: None
 iconUrl: /training/achievements/3-migrate-consolidating-and-secure-artifacts.svg
 levels:
 - advanced

@@ -4,11 +4,10 @@ title: Exercise - Create your first project
 metadata:
   title: Exercise - Create your first project
   description: Create your first project in Django.
-  ms.date: 02/25/2021
+  ms.date: 12/30/2022
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |

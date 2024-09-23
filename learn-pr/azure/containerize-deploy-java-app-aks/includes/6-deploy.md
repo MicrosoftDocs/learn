@@ -1,9 +1,9 @@
 In this unit, you'll deploy a container image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you’ll be configuring your Kubernetes Cluster to run in a desired state via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You’ll create this ```deployment.yml``` manifest file in the following unit and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` container image that resides in Azure Container Registry (that we pushed in the previous unit). Without this deployment.yml, you'd have to manually create, update, and delete pods instead of letting the Kubernetes orchestrate the process.
+With Azure Kubernetes Service, you’ll configure your Kubernetes Cluster to run in a desired state via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You’ll create this ```deployment.yml``` manifest file and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` container image that resides in Azure Container Registry (that we pushed in the previous unit). Without this manifest file, you'd have to manually create, update, and delete pods instead of letting the Kubernetes orchestrate the process.
 
 > [!NOTE]
-> If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
+> If your session has idled out or you're doing this step at another point in time and/or from another CLI, you might have to reinitialize your environment variables and reauthenticate with the following CLI commands.
 >
 >AZ_RESOURCE_GROUP=javacontainerizationdemorg
 >
@@ -32,7 +32,7 @@ vi deployment.yml
 Add the following contents to deployment.yml, then save and exit:
 
 > [!NOTE]
-> You'll want to update with your AZ_CONTAINER_REGISTRY environment variable value that you set earlier; for example: `javacontainerizationdemoacr`.
+> Update with your AZ_CONTAINER_REGISTRY environment variable value that you set earlier; for example, `javacontainerizationdemoacr`.
 
 ```yml
 apiVersion: apps/v1
@@ -76,11 +76,11 @@ spec:
 ```
 
 > [!NOTE]
-> Optionally, the `deployment_solution.yml` file in the root of your project contains the contents needed; you may find it easier to rename/update the contents of that file.
+> Optionally, the `deployment_solution.yml` file in the root of your project contains the contents needed; you might find it easier to rename/update the contents of that file.
 
-In the preceding `deployment.yml`, you'll notice the file contains a Deployment and a Service. The deployment is used to administer a set of pods, while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest``` from Azure Container Registry. You'll also notice the service is configured to allow incoming HTTP pod traffic to port 8080, similar to the way you ran the container image locally with the ```-p``` port argument.
+In the preceding `deployment.yml`, you'll notice the file contains a Deployment and a Service. The deployment is used to administer a set of pods, and the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest``` from Azure Container Registry. You'll also notice the service is configured to allow incoming HTTP pod traffic to port 8080, similar to the way you ran the container image locally with the ```-p``` port argument.
 
-By now your Azure Kubernetes Cluster creation should have successfully completed.
+By now, your Azure Kubernetes Cluster creation should have successfully completed.
 
 You'll want to configure your Azure CLI to access your Azure Kubernetes Cluster via the ```kubectl``` command. Install kubectl locally using the ```az aks install-cli``` command. Run the following command in your CLI:
 
@@ -96,7 +96,7 @@ az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES
 
 You’ll get output similar to the following:
 
-```bash
+```output
 Merged AZ_KUBERNETES_CLUSTER as current context in ~/.kube/config
 ```
 
@@ -108,7 +108,7 @@ kubectl apply -f deployment.yml
 
 You’ll get output similar to the following:
 
-```bash
+```output
 deployment.apps/flightbookingsystemsample created
 service/flightbookingsystemsample created
 ```
@@ -121,7 +121,7 @@ kubectl get all
 
 You’ll get output similar to the following:
 
-```bash
+```output
 NAME                                   READY   STATUS    RESTARTS   AGE
 pod/flightbookingsystemsample-75647c4c98-v4v4r   1/1     Running   2          13d
 
@@ -139,7 +139,7 @@ replicaset.apps/flightbookingsystemsample-7564c58f55   0         0         0    
 
 If your ```POD``` status is ```Running```, the app should be accessible.
 
-You can view the app logs within each pod as well. Run the following command in your CLI:
+You can view the app logs within each pod, as well. Run the following command in your CLI:
 
 ```bash
  kubectl logs pod/flightbookingsystemsample-<POD_IDENTIFIER_FROM_YOUR_RUNNING_POD>
@@ -147,7 +147,7 @@ You can view the app logs within each pod as well. Run the following command in 
 
 You’ll get output similar to the following:
 
-```bash
+```output
 NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 07-Oct-2021 18:31:14.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.71
 07-Oct-2021 18:31:14.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 9 2021 18:43:14 UTC
@@ -202,12 +202,12 @@ WARNING: All illegal access operations will be denied in a future release
 You can now use the ```EXTERNAL-IP``` from your ```kubectl get services flightbookingsystemsample``` output to access the running app within Azure Kubernetes Service.
 
 > [!NOTE]
-> You'll want to substitute the ip address in the following (20.81.13.151) with that of your EXTERNAL-IP from the command you previously executed.
+> Substitute the ip address in the following (20.81.13.151) with that of your EXTERNAL-IP from the command you previously executed.
 
-Open up a browser and visit the Flight Booking System Sample landing page at [http://20.81.13.151:8080/FlightBookingSystemSample](http://20.81.13.151:8080/FlightBookingSystemSample)
+Open a browser and visit the Flight Booking System Sample landing page at [http://20.81.13.151:8080/FlightBookingSystemSample](http://20.81.13.151:8080/FlightBookingSystemSample)
 
 You’ll get a page similar to this one:
 
 ![Screenshot showing the running app.](../media/deploy.png)
 
-You can optionally sign in with any user from tomcat-users.xml; for example, `someuser@azure.com: password`.
+You can optionally sign in with any user from `tomcat-users.xml`; for example, `someuser@azure.com: password`.

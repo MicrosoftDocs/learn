@@ -3,11 +3,10 @@ uid: learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
 metadata:
   title: Build logic that responds to an event
   description: Learn how to add Event Grid logic to filter events.
-  ms.date: 04/04/2023
+  ms.date: 12/01/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Build logic that responds to an event
 durationInMinutes: 5
 content: |

@@ -2,8 +2,8 @@ The break phase is where you use the data-flow diagram to find potential threats
 
 ## Goals
 
-- Choose between "protecting the system" or "understanding the attacker" focused approaches
-- Use the STRIDE framework to identify common threats (described below)
+- Choose between *protecting the system* and *understanding the attacker* focused approaches
+- Use the STRIDE framework to identify common threats
 
 > [!IMPORTANT]
 > If you don't complete this phase, you won't find potential threats in your system, which can lead to future breaches.
@@ -23,7 +23,7 @@ Start by choosing whether you want to find ways to protect your system, or you w
 
 ## Select a threat framework
 
-Next, select a framework to help generate potential threats in your system. Microsoft traditionally uses STRIDE, an acronym for the six main threat categories to provide an extensive &mdash; but not exhaustive &mdash; list of threats.
+Next, select a framework to help generate potential threats in your system. Microsoft traditionally uses STRIDE, an acronym for the six main threat categories to provide an extensive—but not exhaustive—list of threats.
 
 The framework helps you ask a few important questions about your system:
 

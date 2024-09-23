@@ -3,11 +3,10 @@ uid: learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/06/2019
+  ms.date: 09/27/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

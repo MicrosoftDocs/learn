@@ -1,4 +1,4 @@
-You're familiar with the basic features of both Azure Firewall and Azure Firewall Manager. Now let's examine how these technologies work to provide security for your Azure resources. This information will help you evaluate whether Azure Firewall is the right tool for Contoso's network security strategy.
+You're familiar with the basic features of both Azure Firewall and Azure Firewall Manager. Now let's examine how these technologies work to provide security for your Azure resources. This information helps you evaluate whether Azure Firewall is the right tool for Contoso's network security strategy.
 
 ## How Azure Firewall protects an Azure virtual network
 
@@ -7,7 +7,7 @@ To understand how Azure Firewall protects your virtual network, know that there 
 - The firewall instance has a public IP address to which all inbound traffic is sent.
 - The firewall instance has a private IP address to which all outbound traffic is sent.
 
-That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes every check in all the firewall's rules is allowed to pass through.
+That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes all the firewall's rules is allowed to pass through.
 
 How Azure Firewall manages network traffic depends on where the traffic originates:
 
@@ -47,7 +47,7 @@ The following table describes the three types of rules you can create for an Azu
 |Application     |Filter traffic based on an FQDN. For example, you might use an application rule to allow outbound traffic to access an Azure SQL Database instance using the FQDN *server10.database.windows.net*.         |
 |Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, you might use a network rule to allow outbound traffic to access a particular DNS server at a specified IP address using port **53**.  |
 
-:::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram of an external computer requesting a remote desktop connection with a virtual machine and Azure Firewall translating its public IP address to the virtual machine's private IP address." border="false":::
+:::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram of an external computer requesting a remote desktop connection with a virtual machine. It shows Azure Firewall translating its public IP address to the virtual machine's private IP address." border="false":::
 
 > [!IMPORTANT]
 > Azure Firewall applies rules in priority order. Rules based on threat intelligence are always given the highest priority and are processed first. After that, rules are applied by type: NAT rules, then network rules, then application rules. Within each type, rules are processed according to the priority values you assign when you create the rule, from lowest value to highest value.
@@ -59,8 +59,8 @@ Azure Firewall offers many features designed to make it easier to create and man
 |Feature  |Description  |
 |---------|---------|
 |FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wild cards, such as *.google.com.        |
-|FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. There are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, Azure Backup, and more. FQDN tags are managed by Microsoft and can't be modified or created.       |
-|Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, Logic Apps, and more. Service tags are managed by Microsoft and can't be modified or created.        |
+|FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. There are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, Azure Backup, and more. Microsoft manages FQDN tags, and they can't be modified or created.       |
+|Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, Logic Apps, and more. Microsoft manages service tags, and they can't be modified or created.        |
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |
 |Custom DNS     |A custom DNS server that resolves domain names to IP addresses. If you use a custom DNS server rather than Azure DNS, you must also configure Azure Firewall as a DNS proxy.        |
 |DNS proxy     |You can configure Azure Firewall to act as a DNS proxy, which means that all client DNS requests go through the firewall before going to the DNS server.        |

@@ -6,10 +6,14 @@ metadata:
   description: In this unit, you'll learn how to deploy an Azure Database for MySQL instance
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 03/04/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
+  ms.date: 05/25/2023
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-javaee-jbosseap-appsvc
+    - devx-track-javaee
+    - devx-track-extended-java
   ms.contributors: yoterada-03082021
 durationInMinutes: 3
 content: |

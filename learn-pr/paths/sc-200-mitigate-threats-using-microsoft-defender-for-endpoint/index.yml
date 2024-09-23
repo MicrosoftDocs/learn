@@ -3,11 +3,10 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-defender-for-endpoint
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
   description: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
-  ms.date: 02/17/2023
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: learning-path
 title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
 prerequisites: |
   - Basic understanding of Microsoft 365
@@ -22,9 +21,9 @@ roles:
 - security-operations-analyst
 products:
 - m365-security-center
-- mdatp
 - windows
 - microsoft-defender
+- defender-endpoint
 subjects:
 - compliance
 - device-management

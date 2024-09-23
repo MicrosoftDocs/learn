@@ -3,12 +3,14 @@ uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.run-python-script-as-train
 title: Run a Python script as a training job with CLI (v2)
 metadata:
   title: Run a Python script as a training job with CLI (v2)
-  description: "Run a Python script as a training job with CLI (v2)"
-  ms.date: 01/06/2022
+  description: Run a Python script as a training job with CLI (v2)
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

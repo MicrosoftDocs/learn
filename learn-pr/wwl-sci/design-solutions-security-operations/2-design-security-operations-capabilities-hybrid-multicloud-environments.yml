@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
-title: Design security operations capabilities in hybrid and multicloud environments
+title: Design monitoring to support hybrid and multicloud environments
 metadata:
-  title: Design security operations capabilities in hybrid and multicloud environments
-  description: "SC-100 preparatory unit on the topic: design security operations capabilities in hybrid and multicloud environments."
+  title: Design monitoring to support hybrid and multicloud environments
+  description: "SC-100 preparatory unit on the topic: Design monitoring to support hybrid and multicloud environments."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-design-security-operations-capabilities-hybrid-multicloud-environments.md)]

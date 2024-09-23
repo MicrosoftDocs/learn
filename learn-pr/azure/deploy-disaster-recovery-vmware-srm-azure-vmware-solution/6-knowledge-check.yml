@@ -5,11 +5,10 @@ metadata:
   unitType: Knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
-  ms.date: 12/28/2021
-  author: AnuSridhar-25
-  ms.author: v-anursr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/14/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   questions:

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.build-accessible-sharepoint-sites
+metadata:
+  title: Build accessible SharePoint sites
+  description: Learn the best practices, benefits, and principles of creating accessible content for those using your SharePoint sites.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: module
+  ms.service: microsoft-365
+title: Build accessible SharePoint sites
+summary: Explore best practices for creating accessible content in Microsoft SharePoint. Learn how to use built-in accessibility features and tools in SharePoint to create and test accessible sites.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the importance and benefits of web accessibility.
+  - Identify the common barriers and challenges faced by people with disabilities when using SharePoint sites.
+  - Use the built-in accessibility features and tools in SharePoint to create and test accessible sites.
+  - Implement best practices and recommendations for improving the accessibility and usability of SharePoint sites.
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+units:
+- learn.cela-accessibility.build-accessible-sharepoint-sites.introduction
+- learn.cela-accessibility.build-accessible-sharepoint-sites.common-barriers-and-accessibility-needs
+- learn.cela-accessibility.build-accessible-sharepoint-sites.use-built-in-features-to-improve-sharepoint-site-accessibility
+- learn.cela-accessibility.build-accessible-sharepoint-sites.best-practices-to-improve-sharepoint-site-usability
+- learn.cela-accessibility.build-accessible-sharepoint-sites.knowledge-check
+- learn.cela-accessibility.build-accessible-sharepoint-sites.summary
+badge:
+  uid: learn.cela-accessibility.build-accessible-sharepoint-sites.badge

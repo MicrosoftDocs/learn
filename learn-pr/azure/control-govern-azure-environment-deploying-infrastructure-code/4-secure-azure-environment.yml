@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Secure your Azure environment
   description: Learn how to apply controls to your Azure environment to avoid manual and uncontrolled changes.
-  ms.date: 04/28/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/18/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-secure-azure-environment.md)]

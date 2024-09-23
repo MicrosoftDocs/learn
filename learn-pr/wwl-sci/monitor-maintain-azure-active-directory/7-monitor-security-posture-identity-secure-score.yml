@@ -4,13 +4,10 @@ title: Monitor security posture with Identity Secure Score
 metadata:
   title: Monitor security posture with Identity Secure Score
   description: "Monitor security posture with Identity Secure Score"
-  ms.date: 02/16/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-monitor-security-posture-identity-secure-score.md)]

@@ -4,15 +4,15 @@ Let's integrate the Azure Storage Blobs client library into your .NET Core conso
 
 ## Add the Azure Storage NuGet package
 
-1. In Unit 3, you created a .NET Core Console application called *PhotoSharingApp*. In Azure  Cloud Shell, `cd` to the **PhotoSharingApp** directory if you aren't already there.
+1. In Unit 3, you created a .NET Core Console application called *PhotoSharingApp*. In Azure Cloud Shell, `cd` to the **PhotoSharingApp** directory if you aren't already there.
 
-1. Enter the following code to add the **Azure.Storage.Blobs** package to the application.
+1. Enter the following code to add the **Azure.Storage.Blobs** package to the application:
 
     ```dotnetcli
     dotnet add package Azure.Storage.Blobs
     ```
 
-1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command.
+1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command:
 
     ```dotnetcli
     dotnet run
@@ -24,7 +24,7 @@ Let's integrate the Azure Storage Blobs client library into your .NET Core conso
 
 ::: zone pivot="javascript"
 
-Let's integrate the **Azure Storage Blob Client Library for JavaScript** into your application. The client library for Node.js is available through the Node Package manager (npm). You'll want to add the **@azure/storage-blob** package to your **packages.json** file.
+Let's integrate the **Azure Storage Blob Client Library for JavaScript** into your application. The Node.js client library is available through the Node Package manager (npm). You'll want to add the **@azure/storage-blob** package to your **packages.json** file.
 
 ## Add the Azure Storage package
 
@@ -36,7 +36,7 @@ Let's integrate the **Azure Storage Blob Client Library for JavaScript** into yo
     npm install @azure/storage-blob --save
     ```
 
-1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command.
+1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command:
 
     ```bash
     node index.js

@@ -3,13 +3,12 @@ uid: learn.improve-sign-in-security-authenticator.learning-content.validate-sign
 title: Validate the user sign-in experience
 metadata:
   unitType: learning-content
-  title: learning-content
-  description: "Create a new user account in Azure AD and enable it for Microsoft Authenticator. Sign in, perform MFA, and set up Microsoft Authenticator."
-  ms.date: 7/27/2022
+  title: Validate the user sign-in experience
+  description: "Create a new user account in Microsoft Entra ID and enable it for Microsoft Authenticator. Sign in, perform MFA, and set up Microsoft Authenticator."
+  ms.date: 02/29/2024
   author: Justinha
   ms.author: Justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/4-learning-content.md)]

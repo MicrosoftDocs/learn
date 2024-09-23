@@ -3,12 +3,13 @@ uid: learn.wwl.design-machine-learning-model-training-solution.decide-between-co
 title: Decide between compute options
 metadata:
   title: Decide between compute options
-  description: "Decide between compute options"
-  ms.date: 12/06/2022
+  description: Decide between compute options
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

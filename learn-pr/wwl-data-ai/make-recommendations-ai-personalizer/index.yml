@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.make-recommendations-ai-personalizer
+metadata:
+  title: Make recommendations with Azure AI Personalizer
+  description: In this module, learn how to use Azure AI Personalizer to make recommendations.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/27/2023
+  ms.service: azure-ai-personalizer
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Make recommendations with Azure AI Personalizer
+summary: "Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create an Azure AI Personalizer resource
+  - Configure a learning loop and learning behavior
+  - Import and export learning and model settings
+  - Use inference explainability and run evaluations
+
+  > [!IMPORTANT]
+  > Starting in September 2023, you aren't able to create new Personalizer resources. The Personalizer service is being retired on October 1 2026.
+prerequisites: |
+  - Familiarity with Azure
+  - Application development experience
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - student
+  - data-scientist
+products: 
+  - azure
+units:
+- learn.make-recommendations-ai-personalizer.introduction
+- learn.make-recommendations-ai-personalize.create-ai-personalizer-resource
+- learn.make-recommendations-ai-personalize.configure-loop
+- learn.make-recommendations-ai-personalize.configure-behavior
+- learn.make-recommendations-ai-personalizer.import-export-settings
+- learn.make-recommendations-ai-personalizer.use-inference-explainability
+- learn.make-recommendations-ai-personalizer.run-evaluations
+- learn.make-recommendations-ai-personalize.exercise
+- learn.make-recommendations-ai-personalize.knowledge-check
+- learn.make-recommendations-ai-personalize.summary
+badge:
+  uid: learn.make-recommendations-ai-personalizer.badge

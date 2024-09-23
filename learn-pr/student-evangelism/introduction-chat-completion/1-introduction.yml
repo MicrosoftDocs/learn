@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.chat-completions.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: Introduction to prompt engineering for generative AI models.
+  ms.date: 12/11/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

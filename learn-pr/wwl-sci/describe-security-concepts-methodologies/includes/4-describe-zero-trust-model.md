@@ -28,6 +28,6 @@ In the Zero Trust model, all elements work together to provide end-to-end securi
 - **Infrastructure**, whether on-premises or cloud based, represents a threat vector. To improve security, you assess for version, configuration, and JIT access, and use telemetry to detect attacks and anomalies. This allows you to automatically block or flag risky behavior and take protective actions.
 - **Networks** should be segmented, including deeper in-network micro segmentation. Also, real-time threat protection, end-to-end encryption, monitoring, and analytics should be employed.
 
-:::image type="content" source="../media/2-zero-trust-pillars-v2.png" alt-text="The Zero Trust model":::
+:::image type="content" source="../media/2-zero-trust-pillars-v2.png" alt-text="Diagram showing the Zero Trust model.":::
 
 A security strategy that employs the three principles of the Zero Trust model across the six foundational pillars helps companies deliver and enforce security across their organization.

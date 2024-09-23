@@ -4,13 +4,10 @@ title: Use Resource Monitor to review current resource usage
 metadata:
   title: Use Resource Monitor to review current resource usage
   description: "Use Resource Monitor to review current resource usage"
-  ms.date: 04/06/2022
+  ms.date: 12/28/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-resource-monitor-to-review-current-resource-usage.md)]

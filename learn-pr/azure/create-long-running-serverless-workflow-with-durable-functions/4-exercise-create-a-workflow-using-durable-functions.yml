@@ -4,11 +4,10 @@ title: Exercise - Create a workflow using Durable Functions
 metadata:
   title: Exercise - Create a workflow using Durable Functions
   description: Exercise - Create a workflow using Durable Functions
-  ms.date: 04/24/2019
+  ms.date: 10/19/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 16
 content: |

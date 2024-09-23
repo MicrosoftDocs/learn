@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-large-language-models.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/30/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the purpose of a Large language model (LLM)?"
+    choices:
+    - content: "To process and produce natural language text by learning from a massive amount of text data to discover patterns and rules of language."
+      isCorrect: true
+      explanation: "Correct. An LLM processes and produces natural language text by learning from a massive amount of text data to discover patterns and rules of language."
+    - content: "To exhibit anthropomorphism and understand emotions."
+      isCorrect: false
+      explanation: "Incorrect. An LLM can't exhibit anthropomorphism or understand emotions."
+    - content: "To understand language and facts."
+      isCorrect: false
+      explanation: "Incorrect. An LLM doesn't understand language or facts."
+  - content: "What is the difference between traditional Natural language processing (NLP) and Large language models (LLMs)?"
+    choices:
+    - content: "Traditional NLP uses many terabytes of unlabeled data in the foundation model, while LLMs provide a set of labeled data to train the machine-learning model."
+      isCorrect: false
+      explanation: "Incorrect. Traditional NLP uses a set of labeled data to train the machine-learning model, while LLMs use many terabytes of unlabeled data in the foundation model."
+    - content: "Traditional NLP is highly optimized for specific use cases, while LLMs describe in natural language what you want the model to do."
+      isCorrect: false
+      explanation: "Incorrect. Traditional NLP describes in natural language what you want the model to do, while LLMs are highly optimized for specific use cases."
+    - content: "Traditional NLP requires one model per capability, while LLMs use a single model for many natural language use cases."
+      isCorrect: true
+      explanation: "Correct. Traditional NLP requires one model per capability, while LLMs use a single model for many natural language use cases."
+  - content: "What is the purpose of tokenization in natural language models?"
+    choices:
+    - content: "To represent text in a manner that's meaningful for machines without losing its context, so that algorithms can more easily identify patterns."
+      isCorrect: true
+      explanation: "Correct. Tokenization allows AI models to generate words that you can't find in any dictionary without having to generate text on a letter-by-letter basis. It represents words as tokens, which can be a single character, a fraction of a word, or an entire word."
+    - content: "To generate text on a letter-by-letter basis."
+      isCorrect: false
+      explanation: "Incorrect. This method could easily result in gibberish."
+    - content: "To represent common words with a single token."
+      isCorrect: false
+      explanation: "Incorrect. Multiple tokens are needed to represent less common words."

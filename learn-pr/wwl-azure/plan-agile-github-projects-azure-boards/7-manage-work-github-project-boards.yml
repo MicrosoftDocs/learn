@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-agile-github-projects-azure-boards.manage-work-github-project-boards
+title: Manage work with GitHub Project boards
+metadata:
+  title: Manage work with GitHub Project boards
+  description: "Manage work with GitHub Project boards"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-manage-work-github-project-boards.md)]

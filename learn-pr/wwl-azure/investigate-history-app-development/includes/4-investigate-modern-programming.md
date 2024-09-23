@@ -8,7 +8,8 @@ In the past, everything a program needed to work had to be included in or with t
 
 Here's an analogy. Suppose, in a time before mobile phones, you were on a television show where you had to answer quiz questions. You can bring any people or books you need to answer questions on five different topics that you're given ahead of time. You can't call anyone to ask questions or to look things up. In order to be able to answer questions, you'd have to bring all the experts and books with you to the show.
 
-![Diagram showing a person taking on online quiz.](../media/quiz-show.jpeg)
+:::image type="content" source="../media/quiz-show-c0c9f325.jpeg" alt-text="Diagram showing a person taking on online quiz.":::
+
 
 Now add a mobile phone. You don't need to bring all those things with you. If you need to ask someone a question, you call them. If you want to look something up in a book, you look it up on the internet. You only access the information, people, and books when you need them.
 
@@ -20,6 +21,7 @@ Modern app programming works similarly. Small chunks of code, called functions, 
 
 These little programs are called microservices. They're a service because they do work. They're micro because each bit of code tends to do one job. One service may get data. Another service may log you into a website. A third service may change your username or password.
 
-![Diagram showing digital puzzle pieces.](../media/digital-puzzle.png)
+:::image type="content" source="../media/digital-puzzle-f7d6dbad.png" alt-text="Diagram showing digital puzzle pieces.":::
+
 
 By breaking code up in this way, it means programs can do more with less. A small base program can be extended by calling other programs on the internet. This makes the base program smaller, which means it uses fewer resources on your device, preserving your battery and saving space on your device.

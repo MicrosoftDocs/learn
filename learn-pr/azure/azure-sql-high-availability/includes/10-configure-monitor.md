@@ -13,9 +13,9 @@ A large part of creating a strategy is stepping back and thinking about the requ
 
 The answers to these questions will help you narrow down the configuration you should deploy to meet your availability requirements.
 
-The last question is often overlooked by the data professional: *Is your application ready?* This consideration is crucial to achieving the SLA that you want. 
+The last question is often overlooked by the data professional: *Is your application ready?* This consideration is crucial to achieving the SLA that you want.
 
-You need to make sure your database is meeting your availability requirements. But you also need to be sure your application is meeting those requirements. And you need to make sure the connectivity between the data and the applications meets your requirements. For example, if your application and database are in different regions, that placement will increase network latency. Place your application and data as close together as possible. Throughout this module, you've also seen how important implementing retry logic in your applications is for maintaining availability.
+You need to make sure your database is meeting your availability requirements, but you also need to be sure your application is meeting those requirements. You also need to make sure the connectivity between the data and the applications meets your requirements. For example, if your application and database are in different regions, that placement will increase network latency. Place your application and data as close together as possible. Throughout this module, you've also learned how important implementing retry logic in your applications is for maintaining availability.
 
 ## Monitor availability
 
@@ -37,9 +37,9 @@ In addition to Azure service events, you can also view the availability of your 
 
 One way to view a possible reason for a managed instance or database to be unavailable is to examine resource health by using the Azure portal or REST APIs.
 
-You can always use standard SQL Server tools like SQL Server Management Studio to connect to a managed instance or database server and check the status of these resources. You can use the tool or T-SQL queries.
+You can always use standard SQL Server tools like SQL Server Management Studio (SSMS) to connect to a managed instance or database server and check the status of these resources. You can use the tool or T-SQL queries.
 
-And interfaces like az CLI can show the status of Azure SQL. For example:
+Interfaces like Azure CLI can show the status of Azure SQL. For example:
 
 - `az sql mi list` lists the status of managed instances.
 - `az sql db list` lists the status of Azure SQL databases.
@@ -57,7 +57,7 @@ Any database restore that uses point in time restore creates a new database. You
 
 ### Replica status
 
-Replicas are used for Business critical service tiers. You can view the status of a replica by using the DMV **sys.dm_database_replica_states**.
+Replicas are used for Business Critical service tiers. You can view a replica's status by using the DMV **sys.dm_database_replica_states**.
 
 ### Failover causes
 
@@ -65,4 +65,4 @@ To determine the cause of a failover event for an Azure SQL Managed Instance or 
 
 ### System Center Management Pack for Azure SQL
 
-System Center provides management packs to monitor Azure SQL Managed Instance and Azure SQL Database. See the management pack documentation for requirements and details.
+System Center provides management packs to monitor Azure SQL Managed Instance and Azure SQL Database. See the [management pack documentation](/system-center/scom/azure-sql-management-pack-management-pack-delivery) for requirements and details.

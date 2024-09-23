@@ -1,8 +1,8 @@
-Use the Azure CLI to move blobs from one storage account to another. You can perform the move as a batch operation if you have many blobs. Additionally, you can apply the `--if-unmodified-since` parameter if you only want to copy blobs that haven't changed recently.
+Use the Azure CLI to move blobs from one storage account to another. If you have many blobs, you can perform the move as a batch operation. Additionally, you can apply the `--if-unmodified-since` parameter to only copy blobs that aren't recently changed.
 
 In the example scenario, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account. You can use a *Cool* storage account for this purpose; it's more cost effective for holding rarely accessed files than keeping them in *Hot* storage.
 
-In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed in the last six months to a separate storage account.
+In this exercise, you use the Azure CLI to migrate blobs that are unchanged in the last six months to a separate storage account.
 
 ## Create and add data to hot storage
 
@@ -21,7 +21,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
     az storage account create \
       --location $LOCATION \
       --name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Hot
@@ -32,7 +32,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
     ```azurecli
     az storage account keys list \
       --account-name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --output table
     ```
 
@@ -68,7 +68,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --account-key $HOT_KEY
     ```
 
-1. Verify that the blobs have been created.
+1. Verify that the blobs were created.
 
     ```azurecli
     az storage blob list \
@@ -78,9 +78,9 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --account-key $HOT_KEY
     ```
 
-## Create a Cool storage account
+## Create a cool storage account
 
-Now we'll create a second storage account and move data between accounts.
+Now we create a second storage account and move data between accounts.
 
 1. Create an environment variable for your cool storage account name.
 
@@ -94,7 +94,7 @@ Now we'll create a second storage account and move data between accounts.
     az storage account create \
       --location $LOCATION \
       --name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Cool
@@ -105,7 +105,7 @@ Now we'll create a second storage account and move data between accounts.
     ```azurecli
     az storage account keys list \
       --account-name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group]</rgn>" \
       --output table
     ```
 
@@ -115,7 +115,7 @@ Now we'll create a second storage account and move data between accounts.
     COOL_KEY="<source account key>"
     ```
 
-1. Create a container named *archived-specifications* in your storage account. Provide the name of the destination storage account and key as parameters to this command; otherwise, the container will be created in the source storage account.
+1. Create a container named *archived-specifications* in your storage account. Provide the name of the destination storage account and key as parameters to this command. Otherwise, the container is created in the source storage account.
 
     ```azurecli
     az storage container create \
@@ -134,9 +134,9 @@ Now we'll create a second storage account and move data between accounts.
       --output table
     ```
 
-## Copy blobs to Cool storage
+## Copy blobs to cool storage
 
-1. Batch-copy the blobs from the specifications container in the source storage account to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs will be copied, without actually copying them.
+1. Batch-copy the blobs from the specifications container in the source storage account, to the archived-specifications container in the destination storage account. Use the `--dryrun` flag to see which blobs would be copied, without actually copying them.
 
     ```azurecli
     az storage blob copy start-batch \
@@ -151,7 +151,7 @@ Now we'll create a second storage account and move data between accounts.
 
 1. Review the list of blobs to copy.
 
-1. Repeat the blob copy command, this time without the `--dryrun` parameter used in the previous step. This time, the blobs will be copied.
+1. Repeat the blob copy command, this time without the `--dryrun` parameter used in the previous step. This time, the blobs are copied.
 
     ```azurecli
     az storage blob copy start-batch \
@@ -163,7 +163,7 @@ Now we'll create a second storage account and move data between accounts.
       --source-container specifications
     ```
 
-1. Run the following command and verify that the blobs have been copied to the destination container.
+1. Run the following command and verify that the blobs were copied to the destination container.
 
     ```azurecli
     az storage blob list \

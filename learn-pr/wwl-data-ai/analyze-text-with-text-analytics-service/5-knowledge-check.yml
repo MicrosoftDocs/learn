@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-with-text-analytics-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 11/02/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+quiz:
+  title: ""
+  questions:
+  - content: "You want to use Azure AI Language to determine the key talking points in a text document. Which feature of the service should you use?"
+    choices:
+    - content: "Sentiment analysis"
+      isCorrect: false
+      explanation: "Incorrect. Sentiment analysis returns a numeric score indicating how positive or negative the text is."
+    - content: "Key phrase extraction"
+      isCorrect: true
+      explanation: "Correct. Key phrases can be used to identify the main talking points in a text document."
+    - content: "Entity detection"
+      isCorrect: false
+      explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
+  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+    choices:
+    - content: "The document is positive."
+      isCorrect: false
+      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
+    - content: "The document is neutral."
+      isCorrect: false
+      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
+    - content: "The document is negative."
+      isCorrect: true
+      explanation: "Correct. The sentiment is most likely the type with the highest confidence score, in this case .6 negative."
+  - content: "When might you see **NaN** returned for a score in language detection?"
+    choices:
+    - content: "When the score calculated by the service is outside the range of 0 to 1"
+      isCorrect: false
+      explanation: "Incorrect. The service only returns values from 0 to 1 and nothing outside that range."
+    - content: "When the predominant language in the text is mixed with other languages"
+      isCorrect: false
+      explanation: "Incorrect. The service will return a score of less than 1 for mixed language text, using the predominant language in the text."
+    - content: "When the language is ambiguous"
+      isCorrect: true
+      explanation: "Correct. The service will return **NaN** when it can't determine the language in the provided text."

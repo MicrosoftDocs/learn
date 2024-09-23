@@ -8,7 +8,7 @@ You'll start by deploying a new Windows VM in an Azure VM.
 
 ### Deploy Windows VM
 
-To create and deploy a new Windows VM, use the Azure PowerShell.
+To create and deploy a new Windows VM, use the Azure PowerShell window at the right.
 
 1. To hold the selected location, define a PowerShell variable. You'll use the same region as the resource group.
 
@@ -38,9 +38,9 @@ To create and deploy a new Windows VM, use the Azure PowerShell.
     When you're prompted by Cloud Shell, enter a username and password for the VM. This will be used as the initial account created for the VM.
 
     > [!NOTE]
-    > This command will use some defaults because we didn't supply a bunch of options. Specifically, this will create a _Windows 2016 Server_ image with the size to _Standard_DS1_v2_. Remember that the Basic tier VMs do not support ADE if you decide to specify the VM size.
+    > This command will use some defaults because we didn't supply many options. Specifically, this will create a *Windows 2016 Server* image with the size to *Standard_DS1_v2*. Remember that the Basic tier VMs don't support ADE if you decide to specify the VM size.
 
-1. After the VM finishes deploying, capture the VM details in a variable. You can use this variable to explore what was created:
+1. After the VM finishes deploying, capture the VM details in a variable. You can use this variable to explore what you created:
 
     ```powershell
     $vm = Get-AzVM -Name $vmName -ResourceGroupName $rgName
@@ -96,14 +96,14 @@ We need to protect this data, so let's encrypt the disks. Recall that there are 
 1. Inform Azure to encrypt the VM disks using the key stored in the key vault.
 
 > [!TIP]
-> We're going to walk through the steps individually, but when you're doing this task in your own subscription, you can use a handy PowerShell script, which is linked in the Summary of this module.
+> We're going to walk through the steps individually, but when you're doing this task in your own subscription, you can use a handy PowerShell script, which we've linked in this module's *Summary* section.
 
 ### Create a key vault
 
 To create an Azure Key Vault, we need to enable the service in our subscription. This is a one-time requirement.
 
 > [!TIP]
-> Depending on your subscription, you might need to enable the **Microsoft.KeyVault** provider with the `Register-AzResourceProvider` cmdlet. This is not necessary in the Azure sandbox subscription.
+> Depending on your subscription, you might need to enable the **Microsoft.KeyVault** provider with the `Register-AzResourceProvider` cmdlet. This isn't necessary in the Azure sandbox subscription.
 
 1. Decide on a name for your new key vault. It must be unique and can be between 3 and 24 characters, composed of numbers, letters, and dashes. Try adding some random numbers to the end, replacing the following *1234*:
 
@@ -112,9 +112,9 @@ To create an Azure Key Vault, we need to enable the service in our subscription.
     ```
 
 1. Create an Azure Key Vault with `New-AzKeyVault`:
-    - Make sure it's placed in the same resource group _and_ location as your VM.
-    - Enable the key vault for use with disk encryption.
-    - Specify a unique key vault name.
+    - Make sure it's placed in the same resource group *and* location as your VM
+    - Enable the key vault for use with disk encryption
+    - Specify a unique key vault name
 
     ```powershell
     New-AzKeyVault -VaultName $keyVaultName `
@@ -136,7 +136,7 @@ To create an Azure Key Vault, we need to enable the service in our subscription.
 You're almost ready to encrypt the disks. Before you do, here's a warning about creating backups.
 
 > [!IMPORTANT]
-> If this was a production system, we'd need to perform a backup of the managed disks, either using Azure Backup or by creating a snapshot. You can create snapshots in the Azure portal, or through the command line. In PowerShell, you'd use the `New-AzSnapshot` cmdlet. Because this is a simple exercise and you'll be disposing of this data when you're done, you're going to skip this step.
+> If this was a production system, you'd need to perform a backup of the managed disks, either by using Azure Backup or by creating a snapshot. You can create snapshots in the Azure portal or through the command line. In PowerShell, you'd use the `New-AzSnapshot` cmdlet. Because this is a simple exercise and you'll be disposing of this data when you're done, you're going to skip this step.
 
 1. To hold the key vault information, define a variable:
 
@@ -175,7 +175,7 @@ You're almost ready to encrypt the disks. Before you do, here's a warning about 
     Get-AzVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName $vmName
     ```
 
-    Now, the OS disk should be encrypted. Any attached data disks that are visible to Windows will also be encrypted.
+    The OS disk should now be encrypted. Any attached data disks that are visible to Windows are also encrypted.
 
     ```output
     OsVolumeEncrypted          : Encrypted
@@ -185,4 +185,4 @@ You're almost ready to encrypt the disks. Before you do, here's a warning about 
     ```
 
 > [!NOTE]
-> New disks added after encryption *won't* be automatically encrypted. You can re-run the `Set-AzVMDiskEncryptionExtension` cmdlet to encrypt new disks. If you add disks to a VM that's already had disks encrypted, make sure to provide a new number in sequence. In addition, disks that aren't visible to the operating system will not be encrypted. The disk must be properly partitioned, formatted, and mounted for the BitLocker extension to see it.
+> New disks added after encryption *won't* be automatically encrypted. You can rerun the `Set-AzVMDiskEncryptionExtension` cmdlet to encrypt new disks. If you add disks to a VM that's already had disks encrypted, make sure to provide a new number in sequence. In addition, disks that aren't visible to the operating system will not be encrypted. The disk must be properly partitioned, formatted, and mounted for the BitLocker extension to see it.

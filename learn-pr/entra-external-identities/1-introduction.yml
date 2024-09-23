@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microsoft-entra-external-identities.eeid-poc.Introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers.
+  ms.date: 6/25/2024
+  author: linkhp
+  ms.author: lipar
+  ms.topic: interactive-tutorial
+  ms.service: entra-external-id
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

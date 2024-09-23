@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.implement-variables-scripts
+title: Implement variables and scripts in a workflow
+metadata:
+  title: Implement variables and scripts in a workflow
+  description: "Implement variables and scripts in a workflow"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-implement-variables-scripts.md)]

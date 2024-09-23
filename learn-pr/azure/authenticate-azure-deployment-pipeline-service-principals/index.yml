@@ -4,11 +4,12 @@ metadata:
   moduleType: standard
   title: Authenticate your Azure deployment pipeline by using service principals
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
-  ms.date: 06/13/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 01/16/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
 title: Authenticate your Azure deployment pipeline by using service principals
 summary: |
   Service principals enable your deployment pipelines to authenticate securely with Azure.
@@ -25,7 +26,7 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
   To follow along with the exercises in the module, you'll need:
-  - An Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
+  - An Azure account, with the ability to create resource groups and to create Microsoft Entra applications and service principals.
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
   - Either:
@@ -42,7 +43,7 @@ languages:
   - bicep
 products:
   - azure
-  - azure-active-directory
+  - entra-id
   - azure-devops
   - azure-resource-manager
 subjects:

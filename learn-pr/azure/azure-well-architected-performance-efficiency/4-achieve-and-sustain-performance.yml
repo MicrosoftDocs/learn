@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
+title: Achieve and sustain performance
+metadata:
+  title: Achieve and sustain performance
+  description: Learn how to operate your workload to achieve and sustain performance.
+  ms.date: 12/13/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-achieve-and-sustain-performance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'True or false: performance testing during production is not recommended.'
+    choices:
+    - content: 'True.'
+      isCorrect: false
+      explanation: 'Incorrect. You should test performance throughout the development lifecycle, including production.'
+    - content: 'False.'
+      isCorrect: true
+      explanation: 'Correct. You should test performance throughout the development lifecycle, including production.'
+  - content: 'Which of the following aspects of your workload should you monitor to help ensure that performance targets are met?'
+    choices:
+    - content: 'Both real and synthetic transactions.'
+      isCorrect: true
+      explanation: 'Correct. It is important to monitor both real and synthetic transactions to ensure that performance during real-world usage is acceptable.'
+    - content: 'Only synthetic transactions.'
+      isCorrect: false
+      explanation: 'Incorrect. Synthetic transactions may not give you a full picture of how your workload performs under real-world usage.'
+    - content: 'Only real transactions.'
+      isCorrect: false
+      explanation: "Incorrect. Monitoring synthetic transactions can help you proactively identify performance issues before they impact real users."
+    - content: 'Neither real nor synthetic transactions.'
+      isCorrect: false
+      explanation: "Incorrect. It is important to monitor both real and synthetic transactions to ensure that performance during real-world usage is acceptable."
+  - content: 'Why is the Contoso team planning on changing their database structure?'
+    choices:
+    - content: 'To fix broken images in the application.'
+      isCorrect: false
+      explanation: 'Incorrect. The database structure isn’t related to broken images in the application.'
+    - content: 'To improve security.'
+      isCorrect: false
+      explanation: 'Incorrect. The team isn’t facing a security issue with their current database structure.'
+    - content: 'To handle increased load.'
+      isCorrect: true
+      explanation: "Correct. The team saw some inefficiencies in their database structure that could cause performance issues as the workload's usage increases."
+    - content: 'To begin the process of migrating to a new database solution.'
+      isCorrect: false
+      explanation: "Incorrect. The team isn’t planning on migrating to a new database solution."

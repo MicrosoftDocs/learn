@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-computer-vision.understand-computer-vision
+title: Images and image processing
+metadata:
+  title: Images and image processing
+  description: Understand how computers process images
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 07/04/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-computer-vision.md)]

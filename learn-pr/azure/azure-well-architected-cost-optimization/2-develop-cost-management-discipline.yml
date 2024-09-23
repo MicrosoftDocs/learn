@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.develop-cost-management-discipline
+title: Develop cost-management discipline
+metadata:
+  title: Develop cost-management discipline
+  description: Learn how to build a team culture that has awareness of budget, expenses, reporting, and cost tracking.
+  ms.date: 10/23/2023
+  author: martinekuan
+  ms.author: martinek
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-develop-cost-management-discipline.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What modeling technique is used to predict total cost of ownership (TCO) in a workload?"
+      choices:
+        - content: "A health model"
+          isCorrect: false
+          explanation: "Incorrect.  A health model is a technique used to represent system health, not cost."
+        - content: "A revenue model"
+          isCorrect: false
+          explanation: "Incorrect.  Total cost of ownership factors in more than just revenue."
+        - content: "A cost model"
+          isCorrect: true
+          explanation: "Correct. A cost model forecasts the total cost of ownership, including infrastructure, support, and implementation."
+        - content: "A budget"
+          isCorrect: false
+          explanation: "Incorrect.  A budget is a financial allocation, not a modeling process."
+
+    - content: "What sets the financial limits for a workload?"
+      choices:
+        - content: "A cost model"
+          isCorrect: false
+          explanation: "Incorrect.  A cost model helps in forecasting, but doesn’t inform financial governance."
+        - content: "Training"
+          isCorrect: false
+          explanation: "Incorrect.  While financial training is beneficial, it isn't used to set workload team constraints."
+        - content: "Cost monitoring"
+          isCorrect: false
+          explanation: "Incorrect.  Cost monitoring can be used to see if a workload is nearing or exceeding financial targets, but isn't used to set them."
+        - content: "A realistic budget"
+          isCorrect: true
+          explanation: "Correct. A budget is the ultimate financial boundary that drives design and implementation decisions."
+
+    - content: "If the mobile ticketing workload team wanted to predict how doubling its user base would impact the total cost of ownership, what should they do?"
+      choices:
+        - content: "Ask for more budget"
+          isCorrect: false
+          explanation: "Incorrect.  No additional budget should be requested for hypothetical growth."
+        - content: "Run the variation through the workload's cost model"
+          isCorrect: true
+          explanation: "Correct. The workload's cost model should include a usage factor to help predict the change in TCO."
+        - content: "Assume it's twice their current spend"
+          isCorrect: false
+          explanation: "Incorrect.  Costs are rarely linear in cloud architectures, so this assumption isn't warranted."
+        - content: "Do nothing, the workload should scale automatically"
+          isCorrect: false
+          explanation: "Incorrect.  The workload infrastructure handling more usage isn’t the same as holistic financial planning associated with workload growth."

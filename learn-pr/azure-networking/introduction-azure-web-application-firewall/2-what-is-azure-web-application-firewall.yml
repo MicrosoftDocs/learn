@@ -4,11 +4,10 @@ title: What is Azure Web Application Firewall?
 metadata:
   title: What is Azure Web Application Firewall?
   description: Learn the basics of Azure Web Application Firewall including key features and common attacks it protects against.
-  ms.date: 03/10/2023
+  ms.date: 02/14/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-web-application-firewall.md)]

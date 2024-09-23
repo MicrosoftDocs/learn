@@ -4,13 +4,12 @@ title: Determine Azure Application Gateway routing
 metadata:
   title: Determine Azure Application Gateway routing
   description: "Determine Azure Application Gateway routing"
-  ms.date: 02/01/2023
+  ms.date: 03/07/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-determine-routing.md)]

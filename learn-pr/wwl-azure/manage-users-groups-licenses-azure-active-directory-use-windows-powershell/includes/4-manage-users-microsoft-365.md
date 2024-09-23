@@ -114,7 +114,7 @@ The following table lists other commonly used cmdlets for user account managemen
 
 ## Synchronized users
 
-Users that you create in Microsoft 365 with Windows PowerShell are cloud users. Many organizations use Azure AD Connect to synchronize users and groups from on-premises AD DS to Microsoft 365. These users and groups are created by Azure AD Connect. and as such you can't delete them directly in Microsoft 365. Instead, you need to delete the object in AD DS, and the deletion is synchronized to Microsoft 365.
+Users that you create in Microsoft 365 with Windows PowerShell are cloud users. Many organizations use Microsoft Entra Connect to synchronize users and groups from on-premises AD DS to Microsoft 365. These users and groups are created by Microsoft Entra Connect. and as such you can't delete them directly in Microsoft 365. Instead, you need to delete the object in AD DS, and the deletion is synchronized to Microsoft 365.
 
 When objects are synchronized from AD DS to Microsoft 365, the value of some attributes in AD DS is authoritative. This means you can't modify the attribute's value in Microsoft 365. Instead, you need to modify the value in AD DS, and then the modified value synchronizes to Microsoft 365. Attempting to modify these attributes in Microsoft 365 will generate an error.
 

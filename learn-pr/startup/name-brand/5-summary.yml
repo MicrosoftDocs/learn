@@ -3,12 +3,11 @@ uid: learn.startups.name-brand.summary
 title: Summary
 metadata:
   title: Summary
-  description: Review the fundamentals of naming and branding for startups. Topics include identifying a good name for your startup and building a strong brand.
-  ms.date: 02/11/2022
+  description: Review the fundamentals of naming and branding for startups. Subjects include identifying a good name for your startup and building a strong brand.
+  ms.date: 06/05/2024
   author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.author: vahughes
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

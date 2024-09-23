@@ -3,7 +3,7 @@ This module outlined core concepts that relate to articulating and testing the a
 Here's a summary of what you learned:
 
 - You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
-- The value that a product creates for a company's customers can be described with reference to the jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
+- The value that a product creates for a company's customers can be described by referencing: The jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
 - The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
 - The Lean Canvas can help you capture assumptions about your business model.
 - The only way to know whether your assumptions are correct is to test them with customers.
@@ -13,7 +13,7 @@ Here's a summary of what you learned:
 
 ## Useful resources
 
-Consider these additional resources.
+Learn more from these other resources.
 
 ### Books
 

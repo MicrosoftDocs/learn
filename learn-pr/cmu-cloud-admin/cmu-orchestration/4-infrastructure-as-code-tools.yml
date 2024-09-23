@@ -4,12 +4,14 @@ title: Infrastructure as code tools
 metadata:
   title: Infrastructure as code tools
   description: Introducing popular infrastructure as code tools like Azure Resource Manager Templates, Puppet, Chef, and Ansible
-  ms.date: 12/31/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-ansible
+    - devx-track-arm-template
 durationInMinutes: 15
 content: |
   [!include[](includes/4-infrastructure-as-code-tools.md)]

@@ -1,8 +1,10 @@
-Azure DevOps can help your team release code in a more efficient, cooperative, and stable manner. Let's rejoin the team as they learn about DevOps. Together, we'll discover what it takes to get an Azure DevOps practice started.
+Azure DevOps can help your team release code in a more efficient, cooperative, and stable manner. 
 
 In the [previous module](/training/modules/assess-your-development-process?azure-portal=true), you met the team at Tailspin Toys. They're working on a new game, but their release process has several problems, which affect their ability to deliver quality products to their customers. The team knows they need to change, but they don't know how.
 
 The newest team member, Mara, believes DevOps will help. Her goal is to convince her teammates. She'll explain more about the value stream mapping (VSM) exercise she started in the previous module. Hopefully, her explanation will show the team why DevOps is the way forward.
+
+Let's rejoin the team as they learn about DevOps. Together, we'll discover what it takes to get an Azure DevOps practice started.
 
 ## Learning objectives
 

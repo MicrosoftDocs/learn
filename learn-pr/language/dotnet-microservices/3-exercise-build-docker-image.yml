@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.dotnet-microservices.exercise-build-docker-image
-title: Exercise - Build a Dockerfile for your microservice
+title: Exercise - Build a container image for your .NET microservice
 metadata:
-  title: Exercise - Build a Dockerfile for your microservice
-  description: Learn how to build a dockerfile that creates an image for your microservice. Then run that image to see your web API in action.
-  ms.date: 05/07/2021
+  title: Exercise - Build a container image for your .NET microservice
+  description: Learn how to build a container with the .NET SDK or Dockerfile that creates an image for your microservice, and then run the image to see your web API in action.
+  ms.date: 01/22/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 5

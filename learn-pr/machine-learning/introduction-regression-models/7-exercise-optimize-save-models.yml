@@ -4,11 +4,10 @@ title: Exercise - Optimize and save models
 metadata:
   title: Exercise - Optimize and save models
   description: In this exercise, you'll learn how to optimize and save models.
-  ms.date: 03/10/2022
+  ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/7-exercise-optimize-save-models.ipynb

@@ -1,6 +1,6 @@
 Application Gateway listens on an endpoint for incoming requests, then forwards these requests to one of the web servers in its back-end pool. You'll provide the configuration that describes how Application Gateway directs traffic, and how to load balance requests across web servers.
 
-In the motor vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle registration and license renewal sites to the proper back-end web services.
+In the motor-vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle registration and license renewal sites to the proper back-end web services.
 
 In this exercise, you'll create an instance of Application Gateway with a back-end pool of web servers. You'll verify that Application Gateway is configured with the correct listener to handle incoming HTTP requests, and routes these requests to a functioning web server.
 
@@ -42,7 +42,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 1. Use the following command to create an application gateway named `vehicleAppGateway` with the following configuration:
 
-    - A back-end pool containing the IP addresses of the web server virtual machines.
+    - A back-end pool containing the IP addresses of the web-server virtual machines.
     - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks.
     - A temporary listener that listens to port 8080. This listener will be replaced in a later step but is required for Application Gateway creation.
     - A rule that routes (and load balances) these requests to the web servers in the back-end pool.
@@ -67,7 +67,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     > [!NOTE]
     > This command can take several minutes to complete.
 
-1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands.
+1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands:
 
     ```azurecli
     az vm list-ip-addresses \
@@ -85,7 +85,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --output tsv
     ```
 
-1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle registration site running on virtual machines. Make sure that the IP addresses in the command below match the IP addresses that were output from the previous commands.
+1. Next, we'll add the back-end pools for each web site. First, create the back-end pool for the vehicle-registration site running on virtual machines. Make sure that the IP addresses in the command below match the IP addresses that were output from the previous commands.
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -95,7 +95,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --servers 10.0.1.4 10.0.1.5
     ```
 
-1. To create a back-end pool for the license renewal site running on App Service, run the following command:
+1. To create a back-end pool for the license-renewal site running on App Service, run the following command:
 
     ```azurecli
     az network application-gateway address-pool create \
@@ -170,7 +170,9 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --name urlPathMap \
         --paths /VehicleRegistration/* \
         --http-settings appGatewayBackendHttpSettings \
-        --address-pool vmPool
+        --default-http-settings appGatewayBackendHttpSettings \
+        --address-pool vmPool \
+        --default-address-pool vmPool
     ```
 
 1. To create the path map rule for the **appServicePool**, run the following command:

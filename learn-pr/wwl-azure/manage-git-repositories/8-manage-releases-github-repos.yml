@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-repositories.manage-releases-github-repos
+title: Manage releases with GitHub Repos
+metadata:
+  title: Manage releases with GitHub Repos
+  description: "Manage releases with GitHub Repos"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-manage-releases-github-repos.md)]

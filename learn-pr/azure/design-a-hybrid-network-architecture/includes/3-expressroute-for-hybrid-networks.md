@@ -1,8 +1,8 @@
 Your company is migrating some of its on-premises resources to Azure. As part of this migration, the central datacenter must remain on-premises with a connection to Azure. The architectural model also needs to consider Azure network connectivity for several satellite offices.
 
-So far, you've identified a need for a resilient high-bandwidth connection from the on-premises network to Azure. In your initial investigations, you found that Azure ExpressRoute could suit your organization's hybrid network needs.
+So far, you identified a need for a resilient high-bandwidth connection from the on-premises network to Azure. In your initial investigations, you found that Azure ExpressRoute could suit your organization's hybrid network needs.
 
-In this unit, you'll explore on-premises hybrid connectivity by using ExpressRoute, get an overview of the components that are available in ExpressRoute, and walk through a reference architecture that supports this topology.
+In this unit, you explore on-premises hybrid connectivity by using ExpressRoute, get an overview of the components that are available in ExpressRoute, and walk through a reference architecture that supports this topology.
 
 ## What is ExpressRoute?
 
@@ -85,12 +85,12 @@ Implementing ExpressRoute in your organization helps produce the following benef
 
 ### Considerations
 
-The following list identifies a few key considerations:
+The following list identifies a few key considerations when using ExpressRoute:
 
-- The setup and configuration for ExpressRoute is more complex, and requires collaboration with the connectivity provider.
-- ExpressRoute requires the on-premises installation of high-bandwidth routers.
+- The setup and configuration is more complex, and requires collaboration with the connectivity provider.
+- The on-premises installation of high-bandwidth routers is required.
 - The connectivity provider handles and manages the ExpressRoute circuit.
-- ExpressRoute doesn't support the Hot Standby Router Protocol (HSRP). Enable a Border Gateway Protocol (BGP) configuration.
-- ExpressRoute operates on a layer 3 circuit and requires a network security appliance to manage threats.
-- Monitoring the connectivity between your on-premises network and Azure must use the Azure Connectivity Toolkit.
-- To improve network security, ExpressRoute requires network security appliances between the provider's edge routers and your on-premises network.
+- The Hot Standby Router Protocol (HSRP) isn't supported. You need to enable a Border Gateway Protocol (BGP) configuration.
+- The ExpressRoute service operates on a layer 3 circuit and requires a network security appliance to manage threats.
+- The connectivity between your on-premises network and Azure must be monitored using the Azure Connectivity Toolkit.
+- The network security of ExpressRoute must be improved by adding network security appliances between the provider's edge routers and your on-premises network.

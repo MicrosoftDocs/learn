@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/26/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prepare to teach AI-102 Designing and Implementing a Microsoft Azure AI Solution in the classroom
 prerequisites: |
   - None

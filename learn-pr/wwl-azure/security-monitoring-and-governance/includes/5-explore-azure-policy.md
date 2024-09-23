@@ -2,7 +2,7 @@
 
 Policies enforce different rules and effects over your Azure resources, ensuring that your resources stay compliant with your standards and SLAs.
 
-:::image type="content" source="../media/azure-policy-icon-8655ffca.png" alt-text="Azure Policy icon":::
+:::image type="content" source="../media/azure-policy-icon-8655ffca.png" alt-text="Screenshot of Azure Policy icon.":::
 
 
 Azure Policy uses policies and initiatives to provide policy enforcement capabilities.

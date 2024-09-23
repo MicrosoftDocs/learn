@@ -4,11 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: Create Web API routes with Node.js by using JavaScript and Express
-  author: clarkio
-  ms.author: chnoring
-  ms.date: 07/12/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
+  ms.topic: unit
+  ms.custom:
+    - devx-track-js
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

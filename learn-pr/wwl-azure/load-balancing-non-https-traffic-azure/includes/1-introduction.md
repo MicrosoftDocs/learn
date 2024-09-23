@@ -6,12 +6,12 @@ Azure provides different flavors of load balancing services that help with the d
 
 In this module, you will:
 
- -  Understand options for load balancing
- -  Design and implement an Azure Load Balancer
- -  Implement a Traffic Manager profile
+- Understand options for load balancing
+- Design and implement an Azure Load Balancer
+- Implement a Traffic Manager profile
 
 ## Prerequisites
 
- -  You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
- -  You should have experience with network connectivity methods, such as VPN or WAN
- -  You should have experience with the Azure portal and Azure PowerShell 
+- You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
+- You should have experience with network connectivity methods, such as VPN or WAN.
+- You should have experience with the Azure portal and Azure PowerShell.

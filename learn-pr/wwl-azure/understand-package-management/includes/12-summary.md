@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Azure Artifacts overview - Azure Artifacts \| Microsoft Docs](/azure/devops/artifacts/start-using-azure-artifacts).
- -  [What are feeds? - Azure Artifacts \| Microsoft Docs](/azure/devops/artifacts/concepts/feeds).
- -  [Get started with NuGet packages - Azure Artifacts \| Microsoft Docs](/azure/devops/artifacts/get-started-nuget).
- -  [Use feed views to share your packages - Azure Artifacts \| Microsoft Docs](/azure/devops/artifacts/feeds/views).
+ -  [Azure Artifacts overview - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/start-using-azure-artifacts).
+ -  [What are feeds? - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/concepts/feeds).
+ -  [Get started with NuGet packages - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/get-started-nuget).
+ -  [Use feed views to share your packages - Azure Artifacts \| Microsoft Learn](/azure/devops/artifacts/feeds/views).

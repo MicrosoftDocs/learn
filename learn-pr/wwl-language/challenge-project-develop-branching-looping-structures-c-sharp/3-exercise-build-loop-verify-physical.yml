@@ -4,11 +4,12 @@ title: Exercise - Ensure that petAge and petPhysicalDescription contain valid in
 metadata:
   title: Exercise - Ensure that petAge and petPhysicalDescription contain valid information
   description: "Exercise - Ensure that petAge and petPhysicalDescription contain valid information"
-  ms.date: 03/16/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/3-exercise-build-loop-verify-physical.md)]

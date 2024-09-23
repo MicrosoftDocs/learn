@@ -7,8 +7,9 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language # Edit as appropriate for your portfolio area
+  ms.topic: module-standard-task-based
+  ms.service: azure-python
+  ms.devlang: python
 title: Get started with testing in Python
 summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
 abstract: |
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: |
   - Ability to write Python scripts
   - Familiarity with command-line tools and executing scripts
-  - Python 3.6 or later installed on your computer. Follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3) module.
+  - Python 3.6 or later installed on your computer. Follow the steps in the [Install a Python interpreter](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter) documentation.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
@@ -28,8 +29,6 @@ roles:
   - student
 products:
   - azure
-subjects:
-- development-tools
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest

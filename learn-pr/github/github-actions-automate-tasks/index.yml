@@ -3,18 +3,18 @@ uid: learn.github.github-actions-automate-tasks
 metadata:
   title: "Automate development tasks by using GitHub Actions"
   description: Create a basic GitHub Action and use that action in a workflow.
-  ms.date: 07/08/2022
+  ms.date: 10/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Automate development tasks by using GitHub Actions"
 summary: Create a basic GitHub Action and use that action in a workflow.
 abstract: |
   In this module, you will:
-  - Describe GitHub Actions, the types of actions, and where to find them
-  - Plan an automation of your software development life cycle with GitHub Actions workflows
-  - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
+  - Describe GitHub Actions, the types of actions, and where to find them.
+  - Plan an automation of your software development lifecycle with GitHub Actions workflows.
+  - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository.
 prerequisites: |
   - A [GitHub](https://github.com?azure-portal=true) account
   - The ability to navigate and edit files in GitHub
@@ -30,8 +30,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.github-actions-automate-tasks.1-introduction
 - learn.github.github-actions-automate-tasks.2-github-actions-automate-development-tasks

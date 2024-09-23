@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.web-accessibility-principles-guidelines.principles-of-accessibility-and-levels-of-conformance
+title: Principles of accessibility and levels of conformance
+metadata:
+  title: Principles of accessibility and levels of conformance
+  description: This content is a part of the "Web accessibility principles and guidelines" module.
+  ms.date: 04/11/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-principles-of-accessibility-and-levels-of-conformance.md)]

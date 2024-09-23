@@ -1,5 +1,3 @@
-
-
 > [!NOTE]
 > Azure Security Center and Azure Defender are now called Microsoft Defender for Cloud. We've also renamed *Azure Defender* plans to *Microsoft Defender* plans. For example, Azure Defender for Storage is now Microsoft Defender for Storage. [Learn more about the recent renaming of Microsoft security services.](https://aka.ms/secblg11)
 
@@ -9,42 +7,15 @@ Defender for Cloud provides the tools needed to harden your resources, track you
 
 Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
-:::row:::
-  :::column:::
-    **Security requirement**
-  :::column-end:::
-  :::column:::
-    **Defender for Cloud solution**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Continuous assessment** \- Understand your current security posture.
-  :::column-end:::
-  :::column:::
-    Secure score - A single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Secure** \- Harden all connected resources and services.
-  :::column-end:::
-  :::column:::
-    Security recommendations - Customized and prioritized hardening tasks to improve your posture. You implement a recommendation by following the detailed remediation steps provided in the recommendation. For many recommendations, Defender for Cloud offers a "Fix" button for automated implementation!
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Defend** \- Detect and resolve threats to those resources and services.
-  :::column-end:::
-  :::column:::
-    Security alerts - With the enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts appear in the Azure portal and Defender for Cloud can also send them by email to the relevant personnel in your organization. Alerts can also be streamed to SIEM, SOAR, or IT Service Management solutions as required.
-  :::column-end:::
-:::row-end:::
+| Security requirement | Defender for Cloud solution |
+|---|---|
+| **Continuous assessment** \- Understand your current security posture. | **Secure score** \- A single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level. |
+| **Secure** \- Harden all connected resources and services. | **Security recommendations** \- Customized and prioritized hardening tasks to improve your posture. You implement a recommendation by following the detailed remediation steps provided in the recommendation. For many recommendations, Defender for Cloud offers a "Fix" button for automated implementation! |
+| **Defend** \- Detect and resolve threats to those resources and services. | **Security alerts** \- With the enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts appear in the Azure portal and Defender for Cloud can also send them by email to the relevant personnel in your organization. Alerts can also be streamed to SIEM, SOAR, or IT Service Management solutions as required. |
 
 ## Posture management and workload protection
 
-Microsoft Defender for Cloud features cover the two broad pillars of cloud security: cloud security posture management and cloud workload protection.
+Microsoft Defender for Cloud features covers the two broad pillars of cloud security: cloud security posture management and cloud workload protection.
 
 ### Cloud security posture management (CSPM)
 
@@ -71,7 +42,7 @@ Defender for Cloud helps you detect threats across:
 
 - **Azure PaaS services** \- Detect threats targeting Azure services including Azure App Service, Azure SQL, Azure Storage Account, and more data services. You can also perform anomaly detection on your Azure activity logs using the native integration with Microsoft Defender for Cloud Apps (formerly known as Microsoft Cloud App Security).
 - **Azure data services** \- Defender for Cloud includes capabilities that help you automatically classify your data in Azure SQL. You can also get assessments for potential vulnerabilities across Azure SQL and Storage services, and recommendations for how to mitigate them.
-- **Networks** \- Defender for Cloud helps you limit exposure to brute force attacks. By reducing access to virtual machine ports, using the just-in-time VM access, you can harden your network by preventing unnecessary access. You can set secure access policies on selected ports for authorized users, allowed source IP address ranges or IP addresses, and for a limited amount of time.
+- **Networks** \- Defender for Cloud helps you limit exposure to brute force attacks. By reducing access to virtual machine ports, using the just-in-time virtual machine access, you can harden your network by preventing unnecessary access. You can set secure access policies on selected ports for authorized users, allowed source IP address ranges or IP addresses, and for a limited amount of time.
 
 ### Defend your hybrid resources
 

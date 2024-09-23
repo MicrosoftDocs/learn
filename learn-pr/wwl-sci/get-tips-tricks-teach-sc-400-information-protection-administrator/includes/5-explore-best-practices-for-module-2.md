@@ -1,5 +1,3 @@
-
-
 SC-400: Module 2 Implement data loss prevention with Microsoft Purview
 
 Module 2 Overview

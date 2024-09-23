@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.finetune-model-copilot-ai-studio
+metadata:
+  title: Integrate a fine-tuned language model with your copilot in the Azure AI Studio
+  description: When you want to maximize the consistency in the responses of your custom copilot, you can fine-tune a language model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model in the Azure AI Studio.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 6/26/2024
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Integrate a fine-tuned language model with your copilot in the Azure AI Studio
+summary: "Train a base language model on a chat-completion task. The model catalog in the Azure AI Studio offers many open-source models that can be fine-tuned for your specific model behavior needs."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand when to fine-tune a model.
+    - Prepare your data to fine-tune a chat completion model.
+    - Fine-tune a base model in the Azure AI Studio.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+products: 
+  - azure
+  - ai-services
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.finetune-model-copilot-ai-studio.introduction
+- learn.wwl.finetune-model-copilot-ai-studio.understand-finetune
+- learn.wwl.finetune-model-copilot-ai-studio.prepare-data
+- learn.wwl.finetune-model-copilot-ai-studio.finetune-model
+- learn.wwl.finetune-model-copilot-ai-studio.exercise
+- learn.wwl.finetune-model-copilot-ai-studio.knowledge-check
+- learn.wwl.finetune-model-copilot-ai-studio.summary
+badge:
+  uid: learn.wwl.finetune-model-copilot-ai-studio.badge

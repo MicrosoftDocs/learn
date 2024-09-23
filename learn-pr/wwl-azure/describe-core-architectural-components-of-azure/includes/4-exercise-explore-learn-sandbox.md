@@ -102,7 +102,6 @@ The commands should have worked the same as before, and given you the same resul
 
 ```azurecli
 exit
-
 ```
 
 ## Task 4: Use the Azure portal

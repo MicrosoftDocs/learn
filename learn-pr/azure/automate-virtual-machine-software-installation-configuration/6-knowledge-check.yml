@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 05/15/2020
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/04/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -23,8 +22,6 @@ quiz:
       isCorrect: false
     - content: A YAML-based *cloud-init* configuration file with a series of packages to install and commands to run.
       isCorrect: true
-    - content: An INI file with a series of key/value pairs that define your installation settings.
-      isCorrect: false
   - content: 'Before you create a virtual machine, you need to configure which of the following networking components?'
     choices:
     - content: A Virtual Network, a Network Firewall Rule, and a Network Interface.
@@ -33,12 +30,8 @@ quiz:
       isCorrect: true
     - content: A Network Interface, a Network Firewall Rule, and a Public IP Address.
       isCorrect: false
-    - content: A Virtual Network, a Network Security Group, a Virtual IP Rule, and a Network Interface.
-      isCorrect: false
   - content: 'You need to configure a Windows virtual machine during installation. Which file do you need to use to customize your installation?'
     choices:
-    - content: An INI file with a series of key/value pairs that define your installation settings.
-      isCorrect: false
     - content: A PowerShell script with a series of cmdlets and configuration settings.
       isCorrect: true
     - content: A YAML-based *cloud-init* configuration file with a series of packages to install and commands to run.

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.large-language-model-deployment.knowledge-check
+metadata:
+  title: "Knowledge check"
+  description: Answer questions to see what you learned.
+  ms.date: 12/04/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+title: "Knowledge check"
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the purpose of Azure OpenAI Service?"
+    choices:
+    - content: "Azure OpenAI Service provides a platform for building, deploying, and managing applications and services through a global network of Microsoft-managed datacenters."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of Azure App Service."
+    - content: "Azure OpenAI Service enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of Azure DevTest Labs."
+    - content: "Azure OpenAI Service provides REST API access to powerful OpenAI language models, including the GPT-4, GPT-35-Turbo, and Embeddings model series."
+      isCorrect: true
+      explanation: "Correct. Azure OpenAI Service provides REST API access to powerful OpenAI language models, including the GPT-4, GPT-35-Turbo, and Embeddings model series."
+  - content: "What is a _prompt_ in the context of a deployed model's completions endpoint?"
+    choices:
+    - content: "A response to a request sent to the deployed model's completions endpoint."
+      isCorrect: false
+      explanation: "Incorrect. This describes a completion, not a prompt."
+    - content: "The text portion of a request that is sent to the deployed model's completions endpoint."
+      isCorrect: true
+      explanation: "Correct. A prompt is the text portion of a request that is sent to the deployed model's completions endpoint."
+    - content: "A type of generative AI solution used for natural language processing."
+      isCorrect: false
+      explanation: "Incorrect. This describes a model, not a prompt."
+  - content: "What is the purpose of the Azure OpenAI completions playground?"
+    choices:
+    - content: "To use natural language to interact with an Azure OpenAI deployment."
+      isCorrect: true
+      explanation: "Correct. The purpose of the Azure OpenAI completions playground is to use natural language to interact with an Azure OpenAI deployment."
+    - content: "To create a chatbot."
+      isCorrect: false
+      explanation: "Incorrect. The Azure OpenAI completions playground can be used for more than chatbots."
+    - content: "To extract structured data from text."
+      isCorrect: false
+      explanation: "Incorrect. This is one of the examples of what can be done with the Azure OpenAI completions playground, but not the only one."
+      

@@ -3,21 +3,27 @@ uid: learn.wwl.explore-azure-blob-storage
 metadata:
   title: Explore Azure Blob storage
   description: "Learn the core features and functionality of Azure Blob storage."
-  ms.date: 04/25/2023
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-blob-storage
+  ai-usage: human-only
 title: Explore Azure Blob storage
 summary: Learn the core features and functionality of Azure Blob storage.
 abstract: |
-  After completing this module, you'll be able to:
-  * Identify the different types of storage accounts and the resource hierarchy for blob storage.
-  * Explain how data is securely stored.
-  * Enable a storage account for static website hosting.
+  The topics covered in this module include:
+
+  -   Understanding Azure Blob Storage: Features, Types of Storage Accounts, and Access Tiers
+
+  -   Understanding Azure Blob Storage: Storage Accounts, Containers, and Blobs
+
+  -   Understanding Azure Storage Security and Encryption Features
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
+
   *   Experience working with unstructured data solutions.
+
   *   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/1-explore-azure-blob-storage.svg
 levels:
@@ -25,7 +31,6 @@ levels:
 roles:
 - developer
 products:
-- azure
 - azure-blob-storage
 subjects:
 - storage
@@ -34,7 +39,6 @@ units:
 - learn.wwl.explore-azure-blob-storage.blob-storage-overview
 - learn.wwl.explore-azure-blob-storage.discover-resource-types
 - learn.wwl.explore-azure-blob-storage.storage-security-features
-- learn.wwl.explore-azure-blob-storage.blob-storage-static-website
 - learn.wwl.explore-azure-blob-storage.knowledge-check
 - learn.wwl.explore-azure-blob-storage.summary
 badge:

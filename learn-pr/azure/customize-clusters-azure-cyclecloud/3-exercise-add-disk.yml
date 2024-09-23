@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Add a disk to an HPC cluster's scheduler node
   description: This unit describes the process of adding disks to an HPC cluster's scheduler nodes by using an Azure CycleCloud template.
-  ms.date: 06/14/2021
+  ms.date: 02/01/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-add-disk.md)]

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-ai-services
+metadata:
+  title: Monitor Azure AI services
+  description: Learn to monitor Azure AI services.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/28/2023
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Monitor Azure AI services
+summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+abstract: |
+  After completing this module, you will be able to:
+  - Monitor Azure AI services costs.
+  - Create alerts and view metrics for Azure AI services.
+  - Manage Azure AI services diagnostic logging.
+prerequisites: |
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal.
+  - Have experience of provisioning Azure AI services resources.
+iconUrl: /learn/achievements/monitor-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+- developer
+- student
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+- cloud-computing
+units:
+- learn.monitor-ai-services.introduction
+- learn.monitor-ai-services.monitor-cost
+- learn.monitor-ai-services.create-alerts
+- learn.monitor-ai-services.view-metrics
+- learn.monitor-ai-services.diagnostic-logging
+- learn.monitor-ai-services.exercise-monitor
+- learn.monitor-ai-services.knowledge-check
+- learn.monitor-ai-services.summary
+badge:
+  uid: learn.wwl.monitor-ai-services.badge

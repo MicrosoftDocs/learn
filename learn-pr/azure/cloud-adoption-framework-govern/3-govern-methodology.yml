@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.govern-methodology
+title: Govern methodology
+metadata:
+  title: Govern methodology
+  description: Learn how the Govern methodology drives the right governance decisions during cloud adoption.
+  ms.date: 07/15/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-govern-methodology.md)]
+

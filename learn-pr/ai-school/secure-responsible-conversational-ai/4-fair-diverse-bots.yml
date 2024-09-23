@@ -4,11 +4,12 @@ title: Ensure your bot treats people fairly
 metadata:
   title: Ensure your bot treats people fairly
   description: Since AI solutions are susceptible to bias, it is important to make sure that you design your bot with fairness and diversity in mind. This unit will explain how you can make sure that your conversational AI treats your users fairly and is inclusive of different cultures and backgrounds.
-  ms.date: 02/20/2020
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/4-fair-diverse-bots.md)] 

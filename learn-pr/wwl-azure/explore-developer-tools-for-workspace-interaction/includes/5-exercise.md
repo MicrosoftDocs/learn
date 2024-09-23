@@ -1,8 +1,6 @@
+Now, it's your chance to explore with which developer tools you can interact with the Azure Machine Learning workspace.
 
-
-Now, it's your chance to create and explore the workspace.
-
-In this exercise, you will:
+In this exercise, you learn how to:
 
 - Create resources with the Azure CLI.
 - Explore the Azure Machine Learning workspace with the studio.
@@ -10,7 +8,6 @@ In this exercise, you will:
 
 ## Instructions
 
-Follow these instructions to complete the exercise:
+Launch the exercise and follow the instructions.
 
-1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml/?azure-portal=true).
-1. Complete the **Explore developer tools for workspace interaction** exercise.
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/02-Explore-developer-tools.html?azure-portal=true)

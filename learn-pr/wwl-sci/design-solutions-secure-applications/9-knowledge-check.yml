@@ -7,12 +7,11 @@ metadata:
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -41,7 +40,7 @@ quiz:
       - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
         isCorrect: false
         explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
-  - content: "What is a service principal in Azure AD?"
+  - content: "What is a service principal in Microsoft Entra ID?"
     choices:
     - content: "A managed identity for a specific Azure resource"
       isCorrect: true
@@ -54,12 +53,12 @@ quiz:
       explanation: "User identities are tied to individual users, Service Client Identities authenticate applications."
     - content: "Azure platform tokens revocation mechanism"
       isCorrect: false
-      explanation: "Azure platform tokens are time-bound authorization keys issued by Azure AD to resources. They've little to do with Service Principal authentication."
+      explanation: "Azure platform tokens are time-bound authorization keys issued by Microsoft Entra ID to resources. They've little to do with Service Principal authentication."
   - content: "What happens when a particular service account or machine accesses a resource using its Shared Access Signature token?"
     choices:
-    - content: "The access shows up under the computer's credentials in Azure AD's analytics logs."
+    - content: "The access shows up under the computer's credentials in Microsoft Entra ID's analytics logs."
       isCorrect: false
-      explanation: "Shared Access Signatures don't pertain to Azure AD, they're Azure object storage mechanism."
+      explanation: "Shared Access Signatures don't pertain to Microsoft Entra ID, they're Azure object storage mechanism."
     - content: "The resource will only be accessible if the token has the appropriate permission scope."
       isCorrect: true
       explanation: "Shared Access Signatures work at the level of the specific bound resource, meaning the permissions granted to the corresponding SAS token apply to this target only."

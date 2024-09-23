@@ -4,11 +4,10 @@ title: When to use IoT Hub
 metadata:
   title: When to use IoT Hub
   description: In this section, we describe the criteria customers should use when deciding whether the product will meet their needs
-  ms.date: 9/29/2019
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7 # dummy number at present
 content: |

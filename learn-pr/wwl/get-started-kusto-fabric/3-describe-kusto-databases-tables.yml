@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.describe-kusto-databases-tables
+title: Understand KQL database and tables
+metadata:
+  title: Understand KQL database and tables
+  description: "Understand KQL database and tables."
+  ms.date: 05/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-describe-kusto-databases-tables.md)]

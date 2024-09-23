@@ -4,11 +4,12 @@ title: 'Examine exceptions and the exception handling process '
 metadata:
   title: Examine exceptions and the exception handling process
   description: "Examine exceptions and the exception handling process"
-  ms.date: 03/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/2-examine-exceptions-exception-handling-process.md)]
@@ -25,7 +26,7 @@ quiz:
       explanation: "Correct. The `try`, `catch`, `finally`, and `throw` keywords are used for exception handling in C#."
     - content: "`try`, `catch`, and `throw`."
       isCorrect: false
-      explanation: "Incorrect. the `try`, `catch`, and `throw` keywords are used for exception handling in C#, but this isn't the complete list."
+      explanation: "Incorrect. The `try`, `catch`, and `throw` keywords are used for exception handling in C#, but this isn't the complete list."
   - content: "What does the `try` code block contain?"
     choices:
     - content: "The code that cleans up resources and is executed whether an exception occurs or not."

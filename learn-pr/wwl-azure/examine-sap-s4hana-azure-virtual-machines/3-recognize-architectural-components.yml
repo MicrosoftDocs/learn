@@ -3,12 +3,13 @@ uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.recognize-architectural
 title: Recognize architectural components
 metadata:
   title: Recognize architectural components
-  description: "Recognize architectural components"
-  ms.date: 04/20/2023
+  description: "Recognize architectural components of SAP S/4HANA on Azure Virtual Machines."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/3-recognize-architectural-components.md)]

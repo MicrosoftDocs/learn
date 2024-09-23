@@ -4,11 +4,10 @@ title: Validate resources in Azure
 metadata:
   title: Validate resources in Azure
   description: Validate resources in Azure
-  ms.date: 12/23/2019
+  ms.date: 11/21/2023
   author: tfitzmac
   ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-validate-resources.md)]
@@ -22,10 +21,10 @@ quiz:
       explanation: "The Azure portal always does a move validation test before it attempts the move operation itself."
     - content: "When you use the PowerShell to move resources to a new resource group."
       isCorrect: false
-      explanation: "The PowerShell Move-AzResource cmdlet doesn't automatically perform a move validation test."
-    - content: "When a mobile app calls the moveResources REST API method."
+      explanation: "The PowerShell `Move-AzResource` cmdlet doesn't automatically perform a move validation test."
+    - content: "When you use a mobile app to call the `moveResources` REST API method."
       isCorrect: false
-      explanation: "The moveResources method doesn't automatically perform a move validation test. Call the validateMoveResources method to perform the test."
+      explanation: "The `moveResources` method doesn't automatically perform a move validation test. Call the `validateMoveResources` method to perform the test."
   - content: "In which of the following situations do you need to obtain an access token before you can validate a move?"
     choices:
     - content: "When you use the Azure portal to move the resources."
@@ -34,6 +33,6 @@ quiz:
     - content: "When you use the Azure CLI to validate a move."
       isCorrect: false
       explanation: "The Azure CLI automatically gets the access token, and adds it to the request when you call any Azure REST API operation."
-    - content: "When you use custom code to call the validateMoveResources REST API."
+    - content: "When you use custom code to call the `validateMoveResources` REST API."
       isCorrect: true
       explanation: "To call any Azure REST API method from custom code, you must obtain and pass a valid access token."

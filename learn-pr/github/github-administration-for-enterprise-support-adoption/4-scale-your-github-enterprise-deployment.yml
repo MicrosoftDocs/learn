@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Scale your enterprise deployment
   description: In this unit, you'll learn more about the GitHub Enterprise features that support your enterprise organization as it grows.
-  ms.date: 10/08/2021
+  ms.date: 03/11/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-scale-your-github-enterprise-deployment.md)]

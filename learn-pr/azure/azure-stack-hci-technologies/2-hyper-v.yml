@@ -3,11 +3,11 @@ uid: learn.azure.azure-stack-hci-technologies.2-hyper-v
 metadata:
   title: What is Hyper-V?
   description: Describe Windows Server Hyper-V and its components
-  ms.date: 12/09/2020
+  ms.date: 02/02/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: What is Hyper-V?
 durationInMinutes: 12

@@ -77,11 +77,11 @@ The automated activity in the playbook is initiated by the Microsoft Sentinel tr
 
 
 
-Opening Microsoft Sentinel Connector for the first time prompts you to **Sign in** to your tenant either with a user account from Azure Active Directory (Azure AD) or with Service Principal. This establishes an API connection to your Azure AD. The API connections store variables and tokens that are required to access the API for the connection, such as Azure AD, Office 365, or similar.
+Opening Microsoft Sentinel Connector for the first time prompts you to **Sign in** to your tenant either with a user account from Microsoft Entra ID or with Service Principal. This establishes an API connection to your Microsoft Entra ID. The API connections store variables and tokens that are required to access the API for the connection, such as Microsoft Entra ID, Office 365, or similar.
 
 
 
-:::image type="content" source="../media/04-sign-in-aad-tenant.png" alt-text="Screenshot of sign-in to the Azure AD tenant." border="true":::
+:::image type="content" source="../media/04-sign-in-aad-tenant.png" alt-text="Screenshot of sign-in to the Microsoft Entra tenant." border="true":::
 
 
 

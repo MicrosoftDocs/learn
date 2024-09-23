@@ -3,11 +3,10 @@ uid: learn.cloud-adoption-framework-manage.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 02/22/2021
-  author: BrianBlanchard
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/21/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 10
 quiz:

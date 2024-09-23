@@ -4,11 +4,12 @@ title: Enable and configure App Service application logging
 metadata:
   title: Enable and configure App Service application logging
   description: Enable and configure App Service application logging
-  ms.date: 03/20/2019
+  ms.date: 08/15/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/2-enable-and-configure-app-service-application-logging.md)]
@@ -22,10 +23,10 @@ quiz:
       explanation: Any app that runs on Windows can save logs to Blob storage.
     - content: Node.js apps on Linux.
       isCorrect: false
-      explanation: Linux apps cannot write logs to Blob storage.
+      explanation: Linux apps can't write logs to Blob storage.
     - content: ASP.NET Core apps on Linux.
       isCorrect: false
-      explanation: Linux apps cannot write logs to Blob storage.
+      explanation: Linux apps can't write logs to Blob storage.
 
   - content: Why is file system logging automatically turned off after 12 hours?
     choices:
@@ -34,7 +35,7 @@ quiz:
       explanation: Excessive logging can potentially cause app performance to degrade.
     - content: So that storage space can be reused.
       isCorrect: false
-      explanation: There is no limit on storage space, but excessive logging can consume significant amounts of Azure storage, and add to billing overhead.
+      explanation: There's no limit on storage space, but excessive logging can consume significant amounts of Azure storage, and add to billing overhead.
     - content: To enable Web apps to reinstantiate on different server instances, with different file system storage.
       isCorrect: false
-      explanation: Web apps use a virtual file system, and restarting an app does not lose its association with this storage.
+      explanation: Web apps use a virtual file system, and restarting an app doesn't lose its association with this storage.

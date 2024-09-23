@@ -8,8 +8,8 @@ This module shows you how to encrypt traffic with SSL by using Application Gatew
 
 In this module, you will:
 
-- Implement SSL encryption between users and Application Gateway
-- Implement SSL encryption between Application Gateway and your web servers
+- Implement SSL encryption between users and Application Gateway.
+- Implement SSL encryption between Application Gateway and your web servers.
 
 ## Prerequisites
 

@@ -5,56 +5,55 @@ metadata:
   unitType: knowledge-check
   title: Knowledge check
   description: Knowledge check for the GitHub administration for GitHub Advanced Security module
-  ms.date: 2/14/2022
-  author: lucie-docs
-  ms.author: lucielenaour
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "Which GitHub Advanced Security feature is not available on public repositories?"
+  - content: "Which GitHub Advanced Security feature isn't available on public repositories?"
     choices:
-    - content: "Secret scanning"
+    - content: "Secret scanning."
       isCorrect: false
       explanation: "Incorrect. Secret scanning is available in a limited functionality mode on public repositories."
-    - content: "Security Overview"
+    - content: "Security Overview."
       isCorrect: true
       explanation: "Correct! The Security Overview is only available on private repositories with GitHub Advanced Security."
-    - content: "Code scanning"
+    - content: "Code scanning."
       isCorrect: false
       explanation: "Incorrect. Code scanning is available on public repositories."
   - content: "Where can you enable GitHub Advanced Security for all the private and internal repositories in an organization?"
     choices:
-    - content: "In the Site admin page of your enterprise account"
+    - content: "The setting is in the Site admin page of your enterprise account."
       isCorrect: false
       explanation: "Incorrect. The Site admin page is for enabling the GitHub Advanced Security features on an Enterprise Server instance."
-    - content: "In the organization's Security tab"
+    - content: "The setting is in the organization's Security tab."
       isCorrect: false
       explanation: "Incorrect. The Security tab of an organization contains the Security Overview."
-    - content: "In the organization's Code and security settings"
+    - content: "The setting is in the organization's Code and security settings."
       isCorrect: true
       explanation: "Correct! You can enable GitHub Advanced Security for all the private and internal repositories in your organization in its Code and security settings."
   - content: "What can you do to ensure that everyone in your organization is using GitHub Advanced Security?"
     choices:
-    - content: "Give access to security alerts to users and teams with write permission on their repositories"
+    - content: "Give access to security alerts to users and teams with write permission on their repositories."
       isCorrect: false
-      explanation: "Incorrect. Giving access to security alerts to users and teams in a repository only ensures that these users and teams can see security alerts in the repositories in which they are working."
-    - content: "Add a SECURITY.md file to your organization repositories' root, docs, or .github folders"
+      explanation: "Incorrect. If you give access to security alerts to users and teams in a repository. It only ensures that these users and teams can see security alerts in the repositories they're working in."
+    - content: "Add a SECURITY.md file to the `root`, `docs`, or `.github` folder of your organization's repositories."
       isCorrect: false
       explanation: "Incorrect. The SECURITY.md file is for documenting how to report security vulnerabilities for a project."
-    - content: "Set a security policy at the organization level"
+    - content: "Set a security policy at the organization level."
       isCorrect: true
       explanation: "Correct! You can enforce a security policy at the organization level that allows all repository administrators in your organization to enable features for Advanced Security for their repositories."
   - content: "What should you keep in mind when using GitHub Actions for your security workflows?"
     choices:
-    - content: "You should select the Send write tokens to workflows from pull requests option in the GitHub Actions settings."
+    - content: "You should select the **Send write tokens to workflows from pull requests** option in the GitHub Actions settings."
       isCorrect: false
-      explanation: "Incorrect. The Send write tokens to workflows from pull requests option is only for automatically granting write permissions to the GITHUB_TOKEN if the workflow is triggered by a pull request from a forked repository. If the option is not selected, the permissions are adjusted to change any write permissions to read only."
+      explanation: "Incorrect. The **Send write tokens to workflows from pull requests** option is only for automatically granting write permissions to the GITHUB_TOKEN if a pull request from a forked repository triggers the workflow. If the option isn't selected, the permissions are adjusted to change any write permissions to read only."
     - content: "You should make sure to use the Code Scanning API endpoints."
       isCorrect: false
       explanation: "Incorrect. You should use the Code Scanning API endpoints in your workflows only if you need them."
     - content: "You should correctly set up the permissions for the GITHUB_TOKEN used to make authenticated API calls."
       isCorrect: true
-      explanation: "Correct! If the default permissions for the GITHUB_TOKEN are restrictive, you may have to increase the permissions to allow some actions and commands to run successfully. If the default permissions are permissive, you can edit the workflow file to remove some permissions from the GITHUB_TOKEN."
+      explanation: "Correct! If the default permissions for the GITHUB_TOKEN are restrictive, you might have to increase the permissions to allow some actions and commands to run successfully. If the default permissions are permissive, you can edit the workflow file to remove some permissions from the GITHUB_TOKEN."

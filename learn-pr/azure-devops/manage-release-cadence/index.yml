@@ -3,20 +3,21 @@ uid: learn.azdo.manage-release-cadence
 metadata:
   title: Manage release cadence in Azure Pipelines by using deployment patterns
   description: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
-  ms.date: 08/08/2022
+  ms.date: 02/05/2024
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  manager: mijacobs
 title: Manage release cadence in Azure Pipelines by using deployment patterns
 summary: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain why deployment patterns matter
-  - Compare different deployment patterns so that you can choose the one that best suits your needs
-  - Apply the blue-green deployment pattern in your pipeline
+  - Explain why deployment patterns matter.
+  - Compare different deployment patterns so that you can choose the one that best suits your needs.
+  - Apply the blue-green deployment pattern in your pipeline.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization with access to parallel jobs
@@ -36,7 +37,7 @@ products:
 - azure
 - azure-devops
 subjects:
-- development-tools
+- app-development
 - data-engineering
 units:
 - learn.azdo.manage-release-cadence.1-introduction

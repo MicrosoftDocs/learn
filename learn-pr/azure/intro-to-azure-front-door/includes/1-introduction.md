@@ -10,8 +10,8 @@ In the past, you might have used a CDN to help ensure your application's availab
 
 ## What will we be doing?
 
-In this module, you'll identify the Azure Front Door Standard/Premium features. You'll then compare them with the Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall features. You'll also assess whether Azure Front Door can help you transform your global consumer and enterprise application into more secure, high-performing, personalized modern application. Finally, you'll determine when to use Azure Front Door Standard/Premium.
+In this module, you identify the Azure Front Door Standard/Premium features. You then compare them with the Azure Front Door, Azure Content Delivery Network, and Azure Web Application Firewall features. You also assess whether Azure Front Door can help you transform your global consumer and enterprise application into more secure, high-performing, personalized modern application. Finally, you determine when to use Azure Front Door Standard/Premium.
 
 ## What's the main goal?
 
-By the end of this module, you'll be able to evaluate whether Azure Front Door Standard/Premium can improve delivery of your organization's application infrastructure. You'll also be able to describe how Azure Front Door Standard/Premium features can help protect your applications.
+By the end of this module, you're able to evaluate whether Azure Front Door Standard/Premium can improve delivery of your organization's application infrastructure. You also be able to describe how Azure Front Door Standard/Premium features can help protect your applications.

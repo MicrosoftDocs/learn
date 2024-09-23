@@ -4,13 +4,10 @@ title: Inspect modern cloud structure
 metadata:
   title: Inspect modern cloud structure
   description: "Inspect modern cloud structure"
-  ms.date: 12/16/2022
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: robbarefoot
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-inspect-modern-cloud-structure.md)]

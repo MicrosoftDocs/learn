@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service-cluster.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Azure Policy in relation to Kubernetes clusters?"
+    choices:
+    - content: "Azure Policy is used to manage and report on the compliance state of your Kubernetes clusters from multiple places."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy allows for centralized management and reporting of compliance state."
+    - content: "Azure Policy is used to deploy policy definitions into the cluster as pod templates."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy deploys policy definitions as constraint templates and constraint custom resources."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. Azure Policy applies at scale enforcements and safeguards on Kubernetes clusters in a centralized, consistent manner to ensure secure and stable application hosting platforms."
+  - content: "What is host based encryption in Azure Kubernetes Service (AKS)?"
+    choices:
+    - content: "Encryption of data at rest using server side encryption with platform managed keys"
+      isCorrect: false
+      explanation: "Incorrect. Server side encryption with platform managed keys is used by Azure Storage, not host based encryption in AKS."
+    - content: "Encryption of data at rest using customer managed keys for all disks"
+      isCorrect: false
+      explanation: "Incorrect. Host based encryption in AKS can use either platform managed keys or customer managed keys depending on the encryption type set on the disks."
+    - content: "Enables encryption of data at rest on the VM host of AKS agent nodes using platform or customer managed keys, and encrypts data flows to the Storage service"
+      isCorrect: true
+      explanation: "Correct. Host based encryption in AKS encrypts data at rest on the VM host of AKS agent nodes using platform or customer managed keys, and encrypts data flows to the Storage service. It can be enabled at cluster or node pool creation time and requires a specific VM set type and supported VM sizes."
+  - content: "What are the two Azure built-in roles that have the appropriate Azure RBAC policy assignment operations to assign a policy definition to your Kubernetes cluster?"
+    choices:
+    - content: "Resource Group Contributor and Reader"
+      isCorrect: false
+      explanation: "Incorrect. Resource Group Contributor and Reader do not have the appropriate Azure RBAC policy assignment operations to assign a policy definition to your Kubernetes cluster."
+    - content: "Virtual Machine Contributor and Network Contributor"
+      isCorrect: false
+      explanation: "Incorrect. Virtual Machine Contributor and Network Contributor do not have the appropriate Azure RBAC policy assignment operations to assign a policy definition to your Kubernetes cluster."
+    - content: "Resource Policy Contributor and Owner"
+      isCorrect: true
+      explanation: "Correct. Resource Policy Contributor and Owner have the appropriate Azure RBAC policy assignment operations to assign a policy definition to your Kubernetes cluster."
+  - content: "What is the purpose of Azure Policy in relation to Kubernetes clusters?"
+    choices:
+    - content: "Azure Policy is used to deploy policy definitions into the cluster as pod templates."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy deploys policy definitions as constraint templates and constraint custom resources."
+    - content: "Azure Policy is used to manage and report on the compliance state of your Kubernetes clusters from multiple places."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy allows for centralized management and reporting of compliance state."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. Azure Policy applies at scale enforcements and safeguards on Kubernetes clusters in a centralized, consistent manner to ensure secure and stable application hosting platforms."

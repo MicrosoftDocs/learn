@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/14/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of creating a Reflex in Data Activator?"
+    choices:
+    - content: "To connect to data sources, monitor conditions, and initiate actions"
+      isCorrect: true
+      explanation: "Correct. A Reflex item contains all the necessary details to connect to data sources, monitor conditions, and initiate actions for each business segment or process being monitored."
+    - content: "To customize your Fabric experience to Data Activator"
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of selecting Data Activator from the menu."
+    - content: "To navigate between data mode and design mode"
+      isCorrect: false
+      explanation: "Incorrect. Navigating between data mode and design mode is done after setting up a Reflex."
+  - content: "What is Data Activator's capability in real-time data analysis?"
+    choices:
+    - content: "Data Activator can only analyze data in batches."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator is designed to handle real-time data streams and can quickly respond to and analyze data in real-time."
+    - content: "Data Activator can quickly respond to and analyze data in real-time."
+      isCorrect: true
+      explanation: "Correct. Data Activator is tailored to handle real-time data streams and can distinguish itself through its capability to quickly respond to and analyze data in real-time."
+    - content: "Data Activator can only analyze data from a single source."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator can handle multiple data sources and analyze them in real-time."
+  - content: "What is one of Data Activator's strengths in terms of interoperability with other Fabric experiences?"
+    choices:
+    - content: "Data Activator can ingest data from EventStreams and Power BI reports."
+      isCorrect: true
+      explanation: "Correct. One of Data Activator's strengths is its integration capabilities with other Fabric experiences, such as ingesting data from EventStreams and Power BI reports."
+    - content: "Data Activator can't ingest data from other Fabric experiences."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator can ingest data from other Fabric experiences, such as EventStreams and Power BI reports."
+    - content: "Data Activator can only ingest data from Power BI reports."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator can ingest data from both EventStreams and Power BI reports."

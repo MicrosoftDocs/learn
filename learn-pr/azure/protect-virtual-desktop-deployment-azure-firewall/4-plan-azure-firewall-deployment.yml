@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Plan Azure Firewall deployment
   description: Plan Azure Firewall deployment
-  ms.date: 07/05/2021
+  ms.date: 01/05/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-azure-firewall-deployment.md)]

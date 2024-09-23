@@ -6,9 +6,8 @@ metadata:
   description: In this exercise, you'll reflect on your approach to learning and tackling challenges.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |

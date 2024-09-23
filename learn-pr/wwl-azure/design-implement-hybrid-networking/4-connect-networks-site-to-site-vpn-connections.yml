@@ -4,13 +4,10 @@ title: Connect networks with Site-to-site VPN connections
 metadata:
   title: Connect networks with Site-to-site VPN connections
   description: "Connect networks with Site-to-site VPN connections"
-  ms.date: 01/05/2023
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-connect-networks-site-to-site-vpn-connections.md)]

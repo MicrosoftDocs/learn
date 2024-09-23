@@ -1,10 +1,8 @@
-
-
 The majority of customers considering deploying SAP workloads to Azure have an existing on-premises SAP implementation. The number of greenfield deployments is relatively small.
 
 Typically, enterprises have SAP systems for business functions like enterprise resource planning (ERP), global trade, business intelligence (BI), and others. Within those systems are environments like sandbox, development, test, and production.
 
-:::image type="content" source="../media/sap-example-environments-c15eeefd.png" alt-text="Diagram illustrating example environments.":::
+:::image border="false" type="content" source="../media/sap-example-environments-c15eeefd.png" alt-text="Diagram showing example environments.":::
 
 Each horizontal row in the figure above is an environment. Each column is an SAP system for a business function (for example, ERP and BI).
 

@@ -4,11 +4,10 @@ title: Create an indexer for data in Azure Cosmos DB for NoSQL
 metadata:
   title: Create an indexer for data in Azure Cosmos DB for NoSQL
   description: "Create an indexer for data in Azure Cosmos DB for NoSQL"
-  ms.date: 10/18/2022
+  ms.date: 07/10/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

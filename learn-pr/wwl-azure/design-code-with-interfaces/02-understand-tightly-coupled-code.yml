@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-code-with-interfaces.understand-tightly-coupled-code
+title: Understand tightly coupled code
+metadata:
+  title: Understand tightly coupled code
+  description: "Understand tightly coupled code"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-understand-tightly-coupled-code.md)]

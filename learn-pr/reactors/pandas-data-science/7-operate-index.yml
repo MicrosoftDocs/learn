@@ -4,11 +4,10 @@ title: Operating on data in pandas
 metadata:
   title: Operating on data in pandas
   description: Operating on data in pandas.
-  ms.date: 04/22/2020
+  ms.date: 04/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

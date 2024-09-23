@@ -4,11 +4,10 @@ title: Input accessibility fundamentals
 metadata:
   title: Input accessibility fundamentals
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 11/01/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/6-input-accessibility.md)]

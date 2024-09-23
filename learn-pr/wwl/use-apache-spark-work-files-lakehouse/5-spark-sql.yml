@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-apache-spark-work-files-lakehouse.spark-sql
+title: Work with data using Spark SQL
+metadata:
+  title: Work with data using Spark SQL
+  description: "Work with data using Spark SQL"
+  ms.date: 01/31/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-spark-sql.md)]

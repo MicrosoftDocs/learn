@@ -4,12 +4,13 @@ title: What is infrastructure as code?
 metadata:
   unitType: learning-content
   title: What is infrastructure as code?
-  description: Learn about infrastructure as code and how it helps you quickly and confidently scale your cloud deployments.
-  ms.date: 10/17/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  description: Learn about infrastructure as code and how it can help you quickly and confidently scale your cloud deployments.
+  ms.date: 10/05/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/2-what-infrastructure-code.md)]

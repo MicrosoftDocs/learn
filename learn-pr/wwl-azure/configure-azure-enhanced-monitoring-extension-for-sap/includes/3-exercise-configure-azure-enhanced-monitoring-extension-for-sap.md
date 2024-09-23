@@ -1,6 +1,4 @@
-
-
-## Azure PowerShell for Linux and Windows VMs
+## Azure PowerShell for Linux and Windows virtual machines
 
 To install the Azure Extension for SAP by using PowerShell:
 
@@ -29,7 +27,7 @@ The script output includes the following information:
 
 Wait 15-30 minutes for Azure Diagnostics to collect the relevant data.
 
-## Azure CLI for Linux VMs
+## Azure CLI for Linux virtual machines
 
 To install the Azure Extension for SAP by using Azure CLI:
 
@@ -54,70 +52,31 @@ To install the Azure Extension for SAP by using Azure CLI:
 
 ## Checks and troubleshooting for end-to-end monitoring
 
-After you've deployed your Azure VM and set up the relevant Azure monitoring infrastructure, run the readiness check for the Azure Extension for SAP to make sure that all performance metrics that appear inside your SAP application are provided by the underlying Azure monitoring infrastructure.
+After you've deployed your Azure Virtual Machine and set up the relevant Azure monitoring infrastructure, run the readiness check for the Azure Extension for SAP to make sure that all performance metrics that appear inside your SAP application are provided by the underlying Azure monitoring infrastructure.
 
 If all readiness check results are positive and all relevant performance counters appear fine, Azure monitoring has been set up successfully and you can proceed with the installation of SAP Host Agent. If the readiness check indicates that counters are missing, run the health check for the Azure monitoring infrastructure.
 
-### Readiness check on a Windows VM
+### Readiness check on a Windows virtual machine
 
-1. Sign in to the Azure virtual machine (using an admin account isn't necessary).
+1. Sign in to the Azure Virtual Machine (using an admin account isn't necessary).
 2. Open a Command Prompt window.
 3. At the command prompt, change the directory to the installation folder of the Azure Extension for SAP: `C:\Packages\Plugins\Microsoft.AzureCAT.AzureEnhancedMonitoring.AzureCATExtensionHandler\[version]\drop`. The version in the path to the monitoring extension might vary. If you see folders for multiple versions of the monitoring extension in the installation folder, check the configuration of the **AzureEnhancedMonitoring** Windows service, and then switch to the folder indicated as **Path to executable**.
 4. At the command prompt, run azperflib.exe without any parameters. Azperflib.exe runs in a loop and updates the collected counters every 60 seconds. To end the loop, close the Command Prompt window.
 
     > [!NOTE]
-    > If the Azure Extension for SAP is not installed, or the **AzureEnhancedMonitoring** service is not running, the extension has not been configured correctly.
+    > If the Azure Extension for SAP isn't installed, or the **AzureEnhancedMonitoring** service isn't running, the extension has not been configured correctly.
 5. Azperflib.exe output shows all populated Azure performance counters for SAP. At the bottom of the list of collected counters, a summary and health indicator show the status of Azure monitoring. Check the result returned for the **Counters total** output, which is reported as empty, and for **Health status**. Next, interpret the resulting values as follows:
 
-    :::row:::
-      :::column:::
-        **Azperflib.exe result values**
-      :::column-end:::
-      :::column:::
-        **Azure Extension for SAP health status**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        **API Calls - not available**
-      :::column-end:::
-      :::column:::
-        Counters that aren't available might be either not applicable to the virtual machine configuration or are errors. See **Health status**.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        **Counters total - empty**
-      :::column-end:::
-      :::column:::
-        The following two Azure storage counters can be empty:
-
-     - Storage Read Op Latency Server msec
-     - Storage Read Op Latency E2E msec
-
-    All other counters must have values.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        **Health status**
-      :::column-end:::
-      :::column:::
-        Only OK if return status shows **OK**.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        **Diagnostics**
-      :::column-end:::
-      :::column:::
-        Detailed information about health status.
-      :::column-end:::
-    :::row-end:::
+    | Azperflib.exe result values | Azure Extension for SAP health status |
+    |-|-|
+    | **API Calls - not available** |Counters that aren't available might be either not applicable to the virtual machine configuration or are errors. See **Health status**. |
+    | **Counters total - empty** | The following two Azure storage counters can be empty:<br>- Storage Read Op Latency Server msec<br>- Storage Read Op Latency E2E msec<br>All other counters must have values. |
+    |**Health status** | Only OK if return status shows **OK**. |
+    | **Diagnostics**| Detailed information about health status. |
 
 6. Make sure that every health check result is **OK**.
 
-### Readiness check on a Linux VM
+### Readiness check on a Linux virtual machine
 
 1. Connect to the Azure Virtual Machine by using SSH.
 2. Check the output of the Azure Enhanced Monitoring Extension.
@@ -131,7 +90,7 @@ If all readiness check results are positive and all relevant performance counter
      - Run `more /var/lib/AzureEnhancedMonitor/LatestErrorRecord`
 
          - Expected result: Returns as empty or doesn't exist.
-3. If the preceding check wasn't successful, run the following additional checks.
+3. If the preceding check wasn't successful, run the following extra checks.
 4. Make sure that the **waagent** is installed and enabled:
 
      - Run `sudo ls -al /var/lib/waagent/`
@@ -148,7 +107,7 @@ If all readiness check results are positive and all relevant performance counter
      - Run `ps -ax | grep AzureEnhancedImplementing HA SAP HANA on Azure VMs`
 
          - Expected result: Displays one entry similar to: `python /var/lib/waagent/Microsoft.OSTCExtensions.AzureEnhancedMonitorForLinux-2.0.0.2/handler.py daemon`
-6. Install SAP Host Agent as described in [SAP Note \#1031096](https://launchpad.support.sap.com/#/notes/1031096), and check the output of **saposcol**:
+6. Install SAP Host Agent as described in [SAP Note \#1031096](https://me.sap.com/notes/1031096), and check the output of **saposcol**:
 
      - Run `/usr/sap/hostctrl/exe/saposcol –d`
      - Run `dump ccm`
@@ -158,3 +117,4 @@ If all readiness check results are positive and all relevant performance counter
 
 > [!NOTE]
 > You can experience some warnings in cases where managed Standard Disks are used. Warnings will be displayed instead of the tests returning **OK**. This is normal and intended in case of that disk type.
+
