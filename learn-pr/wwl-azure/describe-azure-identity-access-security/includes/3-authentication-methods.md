@@ -4,7 +4,7 @@ For the longest time, security and convenience seemed to be at odds with each ot
 
 The following diagram shows the security level compared to the convenience. Notice Passwordless authentication is high security and high convenience while passwords on their own are low security but high convenience.
 
-:::image type="content" source="../media/passwordless-convenience-security-30321b4d.png" alt-text="Four quadrant diagram showing security vs convenience, with Passwords + 2 Factor authentication being high security but low convenience.":::
+:::image type="content" source="../media/passwordless-convenience-security-30321b4d-18aa7d73.png" alt-text="Four quadrant diagram showing security versus convenience, with Passwords + 2 Factor authentication being high security but low convenience.":::
 
 
 ## What's single sign-on?
@@ -35,8 +35,6 @@ Multifactor authentication provides additional security for your identities by r
 Multifactor authentication increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With multifactor authentication enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
 
 Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only a username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
-
-<a name='whats-azure-ad-multi-factor-authentication'></a>
 
 ### What's Microsoft Entra multifactor authentication?
 
