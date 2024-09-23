@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions
 metadata:
-  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
-  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
-  ms.date: 08/08/2022
+  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Priva and Microsoft Purview'
+  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Priva and Microsoft Purview'
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
-title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
+title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Priva and Microsoft Purview'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
-  Learn about compliance solutions in Microsoft. Topics covered will include the Microsoft Purview compliance portal, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions.  Also covered are Azure resources governance capabilities.
+  Learn about compliance solutions in Microsoft. Topics covered will include the Microsoft Purview compliance portal, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions. Also covered are Azure resources governance capabilities.
   
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
@@ -37,7 +37,7 @@ summary: |
   :::column:::
     <img src="/training/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
     
-    Part 4: Describe the capabilities of Microsoft compliance solutions
+    Part 4: Describe the capabilities of Microsoft Priva and Microsoft Purview
   :::column-end:::
   :::row-end:::
   
