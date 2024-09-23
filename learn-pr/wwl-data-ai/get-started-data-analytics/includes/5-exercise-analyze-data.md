@@ -5,7 +5,7 @@ In this lab, you analyze Rosie's lemonade sales, and create visualizations to he
 ## Before you start
 
 > [!NOTE]
-> If you have completed the previous module in this learning path, you can skip the **Before you start** section.
+> If you have completed the previous module in this learning path, you can skip this **Before you start** section and go straight to **Exercise 1: Analyze data with a PivotTable**.
 
 If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
@@ -28,7 +28,7 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-formatted-xlsx.png" alt-text="Screenshot of Lemonade-formatted x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
 
 ## Exercise 1: Analyze data with a PivotTable
 
