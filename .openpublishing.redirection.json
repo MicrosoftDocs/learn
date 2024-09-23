@@ -32568,6 +32568,61 @@
       "source_path_from_root": "/learn-pr/github/introduction-to-github-copilot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-to-github-copilot/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/index.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/6-apply-authentication.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/5-compare-azure-roles-to-azure-ad-roles.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/4-create-role-assignment.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/3-create-role-definition.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/7-determine-roles.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/2-implement.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/8-simulation-role-based.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/1-introduction.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/9-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/10-summary-resources.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
