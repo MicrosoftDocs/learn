@@ -32568,6 +32568,11 @@
       "source_path_from_root": "/learn-pr/github/introduction-to-github-copilot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-to-github-copilot/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/index.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
