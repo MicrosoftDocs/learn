@@ -32618,6 +32618,11 @@
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/9-knowledge-check.md",
       "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/10-summary-resources.md",
+      "redirect_url": "/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
     }
   ]
 }
