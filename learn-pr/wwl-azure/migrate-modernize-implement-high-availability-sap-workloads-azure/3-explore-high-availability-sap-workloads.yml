@@ -3,11 +3,12 @@ uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure
 title: Explore high availability of SAP workloads
 metadata:
   title: Explore high availability of SAP workloads
-  description: "Explore high availability of SAP workloads"
-  ms.date: 01/09/2024
+  description: "Explore high availability of SAP workloads and high availability capabilities of Azure infrastructure.durationInMinutes: 2"
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
-durationInMinutes: 2
+  ms.custom:
+  - N/A
 content: |
   [!include[](includes/3-explore-high-availability-sap-workloads.md)]
