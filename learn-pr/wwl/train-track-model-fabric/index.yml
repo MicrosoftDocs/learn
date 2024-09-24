@@ -5,7 +5,7 @@ metadata:
   description: Learn how to train machine learning models in notebooks and track your work with MLflow experiments in Microsoft Fabric.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/20/2023
+  ms.date: 09/10/2024
   ms.service: fabric
   ms.topic: module-standard-task-based
   ms.collection:
