@@ -16,9 +16,9 @@ The Remote Help app supports the following capabilities in general across the su
 
 > [!NOTE]
 > To know more about specific capabilities and requirements based on the platform that you're using, go to:
->  - [Remote Help on Windows with Microsoft Intune](remote-help-windows.md#remote-help-capabilities-and-requirements-on-windows)
->  - [Remote Help on Android with Microsoft Intune](remote-help-android.md#remote-help-capabilities-and-requirements-on-android)
->  - [Remote Help on macOS with Microsoft Intune](remote-help-macos.md#remote-help-capabilities)
+>  - [Remote Help on Windows with Microsoft Intune](/mem/intune/fundamentals/remote-help-windows#remote-help-capabilities-and-requirements-on-windows)
+>  - [Remote Help on Android with Microsoft Intune](/mem/intune/fundamentals/remote-help-android#remote-help-capabilities-and-requirements-on-android)
+>  - [Remote Help on macOS with Microsoft Intune](/mem/intune/fundamentals/remote-help-macos#remote-help-capabilities)
 
 - **Enable Remote Help for your tenant**: By default, Intune tenants aren't enabled for Remote Help. If you choose to turn on Remote Help, its use is enabled tenant-wide. Remote Help must be enabled before users can be authenticated through your tenant when using Remote Help.
 
@@ -186,4 +186,4 @@ This guide outlines the process for setting up, configuring, and monitoring **Re
 
 ### Try an interactive demo
 
-The [Remote Help]( https://regale.cloud/Microsoft/viewer/1746/remote-help/index.html#/0/0) interactive demo walks you through scenarios step by step with interactive annotations and navigation controls.
+The [Remote Help](https://regale.cloud/Microsoft/viewer/1746/remote-help/index.html#/0/0) interactive demo walks you through scenarios step by step with interactive annotations and navigation controls.

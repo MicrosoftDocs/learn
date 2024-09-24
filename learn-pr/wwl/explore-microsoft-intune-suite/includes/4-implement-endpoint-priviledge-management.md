@@ -48,4 +48,4 @@ In addition to the dedicated roles, the following built-in roles for Intune also
   - Read
   - View elevation requests
 
- For more information, see [Role-based access control for Microsoft Intune](../fundamentals/role-based-access-control.md).
+ For more information, see [Role-based access control for Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).

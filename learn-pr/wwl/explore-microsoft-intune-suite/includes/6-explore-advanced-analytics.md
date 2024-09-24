@@ -25,16 +25,16 @@ With increasing device diversity and security risks, having real-time insights i
 
 ## Prerequisites
 
-Intune Advanced Analytics features build on top of the existing base Endpoint analytics experience. You must [onboard and enroll your Intune-managed devices to Endpoint analytics](enroll-intune.md) to use the advanced features.
+Intune Advanced Analytics features build on top of the existing base Endpoint analytics experience. You must [onboard and enroll your Intune-managed devices to Endpoint analytics](/mem/analytics/enroll-intune) to use the advanced features.
 
 > [!NOTE]
 > The Advanced Analytics features are only available for Intune-managed (including co-managed) devices.
 
 ## License requirements
 
-In addition to [license requirements](enroll-intune.md#licensing-prerequisites) for Endpoint analytics, an add-on license is required to use features in Intune Advanced Analytics.
+In addition to [license requirements](/mem/analytics/enroll-intune#licensing-prerequisites) for Endpoint analytics, an add-on license is required to use features in Intune Advanced Analytics.
 
-The Advanced Analytics features are included under [Microsoft Intune Suite](../intune/fundamentals/intune-add-ons.md) and requires an extra cost to the licensing options that include Microsoft Intune. The capabilities are also available as an individual add-on to Microsoft subscriptions that include Intune. Global and billing administrators can use the centralized experience (Intune add-ons) in the Intune admin center to easily access trial licenses (up to 250 users for 90 days) and licenses to purchase.
+The Advanced Analytics features are included under [Microsoft Intune Suite](/mem/intune/fundamentals/intune-add-ons) and requires an extra cost to the licensing options that include Microsoft Intune. The capabilities are also available as an individual add-on to Microsoft subscriptions that include Intune. Global and billing administrators can use the centralized experience (Intune add-ons) in the Intune admin center to easily access trial licenses (up to 250 users for 90 days) and licenses to purchase.
 
 ---
 
