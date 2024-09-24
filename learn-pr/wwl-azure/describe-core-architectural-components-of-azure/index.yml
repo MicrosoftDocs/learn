@@ -15,7 +15,7 @@ metadata:
 title: Describe the core architectural components of Azure
 summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure, how resources are managed, and have a chance to create an Azure resource.
 abstract: |
-  Upon completion of this module, you will be able to:
+  Upon completion of this module, you'll be able to:
 
   -   Describe Azure regions, region pairs, and sovereign regions
 
