@@ -42,15 +42,15 @@ quiz:
       explanation: "Incorrect. SSH keys provide access for the git client through a username and password. You don't use them to access the GitHub website."
   - content: "What's the appropriate repository permission level for contributors who need to actively push changes to your repository?"
     choices:
-    - content: "admin"
+    - content: "Admin"
       isCorrect: false
       explanation: "Incorrect. The admin permission isn't appropriate because it provides too much access to the administration functions of the repository."
-    - content: "write"
+    - content: "Write"
       isCorrect: true
       explanation: "Correct! The write permission is the appropriate permission level."
-    - content: "triage"
+    - content: "Triage"
       isCorrect: false
       explanation: "Incorrect. The triage permission is for contributors who need to proactively manage issues and pull requests without making changes."
-    - content: "maintain"
+    - content: "Maintain"
       isCorrect: false
       explanation: "Incorrect. The maintain permission is for contributors who need to manage the repository without access to sensitive or destructive actions. It provides too much access for other users."

@@ -4,7 +4,7 @@ GitHub supplies administrators with the tools they can use flexibly to control a
 
 Hierarchical levels like teams, organizations, and enterprises enable ways of setting up and controlling authentication and other security measures. Permission levels allow for fine-grained control of specific tasks. Repository permissions apply to individual users or teams of users and cascade to child teams.
 
-Without these types of administrative controls, it'd be impossible to adequately secure a company's GitHub implementation.
+Without these types of administrative controls, it would be impossible to adequately secure a company's GitHub implementation.
 
 GitHub administrators perform vital tasks that ensure the security and viability of company repositories.
 
