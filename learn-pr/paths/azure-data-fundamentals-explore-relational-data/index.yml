@@ -3,7 +3,7 @@ uid: learn.wwl.azure-data-fundamentals-explore-relational-data
 metadata:
   title: 'Microsoft Azure Data Fundamentals: Explore relational data in Azure'
   description: 'Microsoft Azure Data Fundamentals: Explore relational data in Azure'
-  ms.date: 09/20/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Relational data is at the heart of most business applications, and is the foundation on which many enterprise data solutions are built. Microsoft Azure provides services for managing relational databases, enabling you to build new applications or migrate existing ones to the cloud.
-  This learning path helps you prepare for the [Azure Data Fundamentals](https://docs.microsoft.com/certifications/azure-data-fundamentals?azure-portal=true).
+  This learning path helps you prepare for the [Azure Data Fundamentals](https://docs.microsoft.com/certifications/azure-data-fundamentals?azure-portal=true)&nbsp;certification.
 iconUrl: /training/achievements/azure-data-fundamentals-explore-relational-data.svg
 levels:
 - beginner
