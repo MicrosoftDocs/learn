@@ -58,7 +58,7 @@ In addition to writing queries from scratch, the operations team can also take a
 
 1. On the left toolbar, select **Queries**. In the drop-down list in the left menu, you can view a list of the sample queries grouped by *Category*, *Query type*, *Resource type*, *Solution*, or *Topic*.
 
-    ![Screenshot of Group By dropdown options under Queries tab in side pane.](../media/4-azure-queries-category-groupby.png)
+    :::image type="content" source="../media/4-azure-queries-category-groupby.png" alt-text="Screenshot of Group By dropdown options under Queries tab in side pane.":::
 
 1. Select **Category** in the drop-down list, and then select **IT & Management Tools**.
 
