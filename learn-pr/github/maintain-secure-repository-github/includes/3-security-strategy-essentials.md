@@ -1,4 +1,4 @@
-In this exercise, we secure your repository's supply chain through Denpendency graph, Dependency alerts, Dependency security updates, and Dependency version updates.
+In this exercise, we secure your repository's supply chain through Dependency graph, Dependency alerts, Dependency security updates, and Dependency version updates.
 
 This GitHub exercise is graded automatically once you attempt a solution to the challenge. The results of your actions and your helpful feedback are provided in real time within the `grade-learner` workflow logs.
 
