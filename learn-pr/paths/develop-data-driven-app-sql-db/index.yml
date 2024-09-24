@@ -36,5 +36,6 @@ subjects:
 - artificial-intelligence
 modules:
 - learn-wwl.get-started-sql-database-application-development
+- learn-wwl.explore-security-practices-sql-database
 trophy:
   uid: learn-wwl.develop-data-driven-app-sql-db.trophy

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-security-practices-sql-database.understand-firewall-rules
+title: Understand firewall rules
+metadata:
+  title: Understand firewall rules
+  description: "Learn how firewall rules work in Azure SQL Database."
+  ms.date: 09/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-understand-firewall-rules.md)]

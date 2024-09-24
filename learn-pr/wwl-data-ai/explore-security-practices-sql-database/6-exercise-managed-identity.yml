@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-security-practices-sql-database.exercise-managed-identity
+title: 'Exercise: Configure managed identity for Azure SQL Database'
+metadata:
+  title: 'Exercise: Configure managed identity for Azure SQL Database'
+  description: "Learn how to configure managed identity for Azure SQL Database."
+  ms.date: 09/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-managed-identity.md)]
