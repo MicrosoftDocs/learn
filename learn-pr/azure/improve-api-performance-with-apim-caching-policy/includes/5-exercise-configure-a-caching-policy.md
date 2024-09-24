@@ -7,10 +7,6 @@ As the developer for a board game company, you decide to implement caching for a
 > [!NOTE]
 > In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net** domain.
 
-## Create a Redis cache
-
-For this module we'll use the Basic v2 tier for API Management, which is designed for development and testing scenarios and provides an internal cache. (As an option, you can configure an external cache.) Azure configures API Management instances for this tier in just a minute or so. 
-
 ## Create a web API in Azure App Service
 
 To create an Azure App Service web API, we use the following steps:
@@ -58,7 +54,7 @@ Leave these tabs open. They'll be handy later.
 
 ## Create a new API Management instance
 
-Now that we have a functional API, let's set up API Management:
+Now that we have a functional API, let's set up API Management. For this module we'll use the Basic v2 tier for API Management, which is designed for development and testing scenarios and provides an internal cache. (As an option, you can also configure an external cache.) Azure configures API Management instances for this tier in just a minute or so. 
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
