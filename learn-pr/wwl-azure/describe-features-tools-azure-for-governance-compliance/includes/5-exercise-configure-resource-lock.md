@@ -54,7 +54,7 @@ In this task, you add a container to the storage account, this container is wher
 4.  Enter a container name and select Create.
 5.  You should receive an error message: Failed to create storage container.
     
-    :::image type="content" source="../media/failed-to-create-warning-291af699.png" alt-text="Screenshot of the Failed to create storage container error message.":::
+    :::image type="content" source="../media/failed-create-warning-291af699.png" alt-text="Screenshot of the Failed to create storage container error message.":::
     
 
 > [!NOTE]
