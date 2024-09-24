@@ -35,7 +35,7 @@ In this task you apply a read-only resource lock to the storage account. What im
 2.  Select Locks.
 3.  Select + Add.
     
-    :::image type="content" source="../media/read-only-lock-e7777623.png" alt-text="Screenshot of the Add lock feature on a storage account set for a read-only lock.":::
+    :::image type="content" source="../media/read-only-lock-e7777623-da42899c.png" alt-text="Screenshot of the Add lock feature on a storage account set for a read-only lock.":::
     
 4.  Enter a Lock name.
 5.  Verify the Lock type is set to Read-only.
@@ -49,12 +49,12 @@ In this task, you add a container to the storage account, this container is wher
 2.  Select Containers.
 3.  Select + Container.
     
-    :::image type="content" source="../media/add-container-steps-a6739e88.png" alt-text="Screenshot of the add container process outlined in this task.":::
+    :::image type="content" source="../media/add-container-steps-a6739e88-0c5e4c13.png" alt-text="Screenshot of the add container process outlined in this task.":::
     
 4.  Enter a container name and select Create.
 5.  You should receive an error message: Failed to create storage container.
     
-    :::image type="content" source="../media/failed-create-warning-291af699.png" alt-text="Screenshot of the Failed to create storage container error message.":::
+    :::image type="content" source="../media/failed-create-warning-291af699-381fe98b.png" alt-text="Screenshot of the Failed to create storage container error message.":::
     
 
 > [!NOTE]
@@ -67,7 +67,7 @@ In this task, you add a container to the storage account, this container is wher
 3.  Select the read-only resource lock you created.
 4.  Change the Lock type to Delete and select OK.
     
-    :::image type="content" source="../media/resource-lock-change-e5281189.png" alt-text="Screenshot midway through task process of changing the lock type on a resource lock.":::
+    :::image type="content" source="../media/resource-lock-change-e5281189-aa175b31.png" alt-text="Screenshot midway through task process of changing the lock type on a resource lock.":::
     
 5.  Scroll up until you find the Data storage section of the blade on the left of the screen.
 6.  Select Containers.
@@ -79,18 +79,18 @@ You can now understand how the read-only lock prevented you from adding a contai
 
 ## Task 5: Delete the storage account
 
-You'll actually do this last task twice. Remember that there is a delete lock on the storage account, so you won't actually be able to delete the storage account yet.
+You'll actually do this last task twice. Remember that there's a delete lock on the storage account, so you won't actually be able to delete the storage account yet.
 
 1.  Scroll up until you find Overview at the top of the blade on the left of the screen.
 2.  Select Overview.
 3.  Select Delete.
     
-    :::image type="content" source="../media/storage-overview-page-ec75f9e6.png" alt-text="Screenshot of the deletion process for deleting a storage account.":::
+    :::image type="content" source="../media/storage-overview-page-ec75f9e6-e8e8a7d4.png" alt-text="Screenshot of the deletion process for deleting a storage account.":::
     
 
 You should get a notification letting you know you can't delete the resource because it has a delete lock. In order to delete the storage account, you'll need to remove the delete lock.
 
-:::image type="content" source="../media/storage-delete-lock-warning-5ea6faa5.png" alt-text="Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.":::
+:::image type="content" source="../media/storage-delete-lock-warning-5ea6faa5-ac48ca94.png" alt-text="Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.":::
 
 
 ## Task 6: Remove the delete lock and delete the storage account
@@ -107,7 +107,7 @@ In the final task, you remove the resource lock and delete the storage account f
 8.  Select Delete.
 9.  To prevent accidental deletion, Azure prompts you to enter the name of the storage account you want to delete. Enter the name of the storage account and select Delete.
     
-    :::image type="content" source="../media/storage-account-delete-f4d60c3b.png" alt-text="Screenshot of the deletion confirmation message before deleting a storage account.":::
+    :::image type="content" source="../media/storage-account-delete-f4d60c3b-65598364.png" alt-text="Screenshot of the deletion confirmation message before deleting a storage account.":::
     
 10. You should receive a message that the storage account was deleted. If you go Home &gt; Storage accounts, you should see that the storage account you created for this exercise is gone.
 
