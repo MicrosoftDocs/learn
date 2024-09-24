@@ -1,4 +1,4 @@
-When an alert is fired, Azure Monitor, Azure Service Health, and Azure Advisor use action groups to notify users about the alert and take an action. An action group is a collection of notification preferences and actions that are executed when the alert is fired. You can run one or more actions for each triggered alert.
+Azure Monitor, Azure Service Health, and Azure Advisor use *action groups* to notify users about the alert, and to take an action when an alert is fired. An action group is a collection of notification preferences and actions that are executed when the alert is fired. You can run one or more actions for each triggered alert.
 
 Azure Monitor can perform any of the following actions:
 
