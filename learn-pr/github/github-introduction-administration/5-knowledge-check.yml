@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "The admin permission on a repository"
       isCorrect: false
-      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository; it doesn't affect membership on a team."
+      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository. It doesn't affect membership on a team."
     - content: "The maintain permission on a repository"
       isCorrect: false
-      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository; it doesn't affect membership on a team."
+      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository. It doesn't affect membership on a team."
     - content: "Organization billing manager"
       isCorrect: false
-      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks; it doesn't affect membership on a team."
+      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks. It doesn't affect membership on a team."
     - content: "Team maintainer"
       isCorrect: true
       explanation: "Correct! As a team maintainer, the user can add and remove organization members to and from a team."
