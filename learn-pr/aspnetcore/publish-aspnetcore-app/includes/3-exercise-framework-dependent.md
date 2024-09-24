@@ -63,7 +63,7 @@ Now that you've verified that the app runs correctly, you can publish it as a fr
     - **web.config**: The configuration file for IIS (Internet Information Services) on Windows.
     - **wwwroot**: When present, this directory contains published static web assets, such as HTML, CSS, and JavaScript files. This directory isn't generated if the project doesn't contain any static web assets, so it isn't present in this case.
 
-1. Set your location to the *publish-fd* directory and run the app.
+1. Navigate to the *publish-fd* directory and run the app.
 
     ```dotnetcli
     cd publish-fd
