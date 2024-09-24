@@ -1,4 +1,4 @@
-[Managed identity](/entra/identity/managed-identities-azure-resources/overview) allows Azure services to authenticate and access other Azure resources securely without needing to manage credentials. It automatically handles the creation and management of the identity, making it easier and more secure to connect services.
+[Managed identity](/entra/identity/managed-identities-azure-resources/overview?azure-portal=true) allows Azure services to authenticate and access other Azure resources securely without needing to manage credentials. It automatically handles the creation and management of the identity, making it easier and more secure to connect services.
 
 Authentication with managed identities for Azure resources is the recommended authentication method for programmatic access to SQL.
 
@@ -6,7 +6,7 @@ When using Microsoft Entra authentication with Azure SQL Database, you must assi
 
 ## System-assigned managed identity
 
-When you enable a system-assigned managed identity on an Azure resource like a [SQL logical server](/azure/azure-sql/database/logical-servers), a special service principal is created in Microsoft Entra ID. This service principal is tied to the resource's lifecycle, meaning it is automatically deleted when the resource is deleted. This type of managed identity cannot be shared and is only associated with a single Azure resource. It is commonly used for workloads contained within a single resource that need independent identities, like an application running on a single virtual machine.
+When you enable a system-assigned managed identity on an Azure resource like a [SQL logical server](/azure/azure-sql/database/logical-servers?azure-portal=true), a special service principal is created in Microsoft Entra ID. This service principal is tied to the resource's lifecycle, meaning it's automatically deleted when the resource is deleted. This type of managed identity can't be shared and is only associated with a single Azure resource. It's commonly used for workloads contained within a single resource that need independent identities, like an application running on a single virtual machine.
 
 ### Use system-assigned manage identity
 
@@ -14,7 +14,7 @@ Imagine a scenario where you need to enable system-assigned managed identity for
 
 :::image type="content" source="../media/3-managed-identity.png" alt-text="Screenshot showing the system-assigned managed identity option for a Web App in Azure portal.":::
 
-Within the **System assigned** tab, you will need to switch the **Status** to **On** and then save your changes. 
+Within the **System assigned** tab, you'll need to switch the **Status** to **On** and then save your changes. 
 
 To enable your application to access the database using a system-managed identity, you need to create a user with the appropriate permissions on your database.
 

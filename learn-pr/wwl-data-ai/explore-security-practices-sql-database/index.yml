@@ -3,7 +3,7 @@ uid: learn-wwl.explore-security-practices-sql-database
 metadata:
   title: Explore security practices for Azure SQL Database
   description: "Learn how security works in Azure SQL Database, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
-  ms.date: 09/27/2024
+  ms.date: 09/24/2024
   author: jupadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

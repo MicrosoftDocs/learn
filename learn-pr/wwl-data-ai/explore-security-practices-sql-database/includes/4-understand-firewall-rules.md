@@ -14,14 +14,14 @@ Both server-level and database-level firewalls in Azure SQL Database use IP addr
 
 Server-level firewall rules permit users to connect to all databases on the server, while database-level firewall rules are used to grant or block specific IP addresses from accessing individual databases.
 
-You can configure server-level firewall rules using the Azure portal or by executing the [`sp_set_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database) stored procedure within the master database. This flexibility ensures that you can manage access efficiently and securely.
+You can configure server-level firewall rules using the Azure portal or by executing the [`sp_set_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database?azure-portal=true) stored procedure within the master database. This flexibility ensures that you can manage access efficiently and securely.
 
  > [!NOTE]
  >The **Allow Azure Services and resources to access this server** server setting counts as a single firewall rule when enabled.
 
 ### Database-level IP firewall rules
 
-Database-level IP firewall rules allow clients to access specific databases by creating rules for each database, including the master database. These rules are managed using Transact-SQL statements after configuring the first server-level firewall. You need to use the []`sp_set_database_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database) stored procedure from within the database.
+Database-level IP firewall rules allow clients to access specific databases by creating rules for each database, including the master database. These rules are managed using Transact-SQL statements after configuring the first server-level firewall. You need to use the [`sp_set_database_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database?azure-portal=true) stored procedure from within the database.
 
 When connecting to a database with database-level firewall rules enabled, Azure SQL Database first checks for a database-level firewall rule matching the database name in the connection string. If no such rule exists, it then checks the server-level IP firewall rules, which apply to all databases on the server. If either rule is found, the connection is completed.
 
