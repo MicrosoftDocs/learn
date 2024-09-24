@@ -1,4 +1,5 @@
 You have decided on the features you want to include use on Wingtip Toys' MySQL flexible server and you know how to configure them. In summary, you have:
+
 - Configured Microsoft Entra for centralized user management.
 
 - Encrypted data at rest with a customer-managed key.

@@ -4,8 +4,6 @@ For on-premises environments, Active Directory running on Windows Server provide
 
 When you secure identities on-premises with Active Directory, Microsoft doesn't monitor sign-in attempts. When you connect Active Directory with Microsoft Entra ID, Microsoft can help protect you by detecting suspicious sign-in attempts at no extra cost. For example, Microsoft Entra ID can detect sign-in attempts from unexpected locations or unknown devices.
 
-<a name='who-uses-azure-ad'></a>
-
 ## Who uses Microsoft Entra ID?
 
 Microsoft Entra ID is for:
@@ -14,8 +12,6 @@ Microsoft Entra ID is for:
  -  **App developers**. Developers can use Microsoft Entra ID to provide a standards-based approach for adding functionality to applications that they build, such as adding SSO functionality to an app or enabling an app to work with a user's existing credentials.
  -  **Users**. Users can manage their identities and take maintenance actions like self-service password reset.
  -  **Online service subscribers**. Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Microsoft Entra ID to authenticate into their account.
-
-<a name='what-does-azure-ad-do'></a>
 
 ## What does Microsoft Entra ID do?
 
@@ -26,15 +22,11 @@ Microsoft Entra ID provides services such as:
  -  **Application management**: You can manage your cloud and on-premises apps by using Microsoft Entra ID. Features like Application Proxy, SaaS apps, the My Apps portal, and single sign-on provide a better user experience.
  -  **Device management**: Along with accounts for individual people, Microsoft Entra ID supports the registration of devices. Registration enables devices to be managed through tools like Microsoft Intune. It also allows for device-based Conditional Access policies to restrict access attempts to only those coming from known devices, regardless of the requesting user account.
 
-<a name='can-i-connect-my-on-premises-ad-with-azure-ad'></a>
-
 ## Can I connect my on-premises AD with Microsoft Entra ID?
 
 If you had an on-premises environment running Active Directory and a cloud deployment using Microsoft Entra ID, you would need to maintain two identity sets. However, you can connect Active Directory with Microsoft Entra ID, enabling a consistent identity experience between cloud and on-premises.
 
 One method of connecting Microsoft Entra ID with your on-premises AD is using Microsoft Entra Connect. Microsoft Entra Connect synchronizes user identities between on-premises Active Directory and Microsoft Entra ID. Microsoft Entra Connect synchronizes changes between both identity systems, so you can use features like SSO, multifactor authentication, and self-service password reset under both systems.
-
-<a name='what-is-azure-active-directory-domain-services'></a>
 
 ## What is Microsoft Entra Domain Services?
 
@@ -43,8 +35,6 @@ Microsoft Entra Domain Services is a service that provides managed domain servic
 A Microsoft Entra Domain Services managed domain lets you run legacy applications in the cloud that can't use modern authentication methods, or where you don't want directory lookups to always go back to an on-premises AD DS environment. You can lift and shift those legacy applications from your on-premises environment into a managed domain, without needing to manage the AD DS environment in the cloud.
 
 Microsoft Entra Domain Services integrates with your existing Microsoft Entra tenant. This integration lets users sign into services and applications connected to the managed domain using their existing credentials. You can also use existing groups and user accounts to secure access to resources. These features provide a smoother lift-and-shift of on-premises resources to Azure.
-
-<a name='how-does-azure-ad-ds-work'></a>
 
 ### How does Microsoft Entra Domain Services work?
 
@@ -56,7 +46,7 @@ You don't need to manage, configure, or update these DCs. The Azure platform han
 
 A managed domain is configured to perform a one-way synchronization from Microsoft Entra ID to Microsoft Entra Domain Services. You can create resources directly in the managed domain, but they aren't synchronized back to Microsoft Entra ID. In a hybrid environment with an on-premises AD DS environment, Microsoft Entra Connect synchronizes identity information with Microsoft Entra ID, which is then synchronized to the managed domain.
 
-:::image type="content" source="../media/azure-active-directory-sync-topology-7359f2b8.png" alt-text="Diagram of Microsoft Entra Connect Sync synchronizing information back to the Microsoft Entra tenant from on-premises AD.":::
+:::image type="content" source="../media/azure-active-directory-sync-topology-7359f2b8-427db2d4.png" alt-text="Diagram of Microsoft Entra Connect Sync synchronizing information back to the Microsoft Entra tenant from on-premises AD.":::
 
 
 Applications, services, and VMs in Azure that connect to the managed domain can then use common Microsoft Entra Domain Services features such as domain join, group policy, LDAP, and Kerberos/NTLM authentication.

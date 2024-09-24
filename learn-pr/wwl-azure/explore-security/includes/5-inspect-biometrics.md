@@ -4,7 +4,7 @@ The term "biometric" refers to using a person's body (their biology) as a securi
 
 Passwords used with another tool like a mobile phone are pretty secure. Many computer scientists believe biometrics are even stronger. A lot of devices now use biometrics alone to sign in a user. On your mobile device, you may rely on face ID or a fingerprint to get access.
 
-:::image type="content" source="../media/fingerprint.png" alt-text="Illustration of a fingerprint.":::
+:::image type="content" source="../media/fingerprint-3b3ff156-b3927537.png" alt-text="Illustration of a fingerprint.":::
 
 
 Modern tools that use this type of identity are advanced. Using a face for ID involves a number of things. For example, these tools may measure the distance between the center of their eyes. It also may examine the shape of their mouth. The size of their forehead may play a factor. All of these pieces of data are used together to identify them.

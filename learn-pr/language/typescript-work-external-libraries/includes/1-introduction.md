@@ -1,4 +1,4 @@
-TypeScript provides two ways to organize you code: namespaces and modules. While both provide a way to categorize related code in meaningful ways and help you control which code is exposed to the global namespace of your applications, there are some differences between them. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.) 
+TypeScript provides two ways to organize your code, which are namespaces and modules. While both provide a way to categorize related code in meaningful ways and help you control which code is exposed to the global namespace of your applications, there are some differences between them. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.) 
 
 In addition to modules, you can import other external libraries containing type definitions that you can take advantage of in your code.
 

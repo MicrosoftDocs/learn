@@ -3,7 +3,7 @@ uid: learn.wwl.build-multi-table-statements-kql
 metadata:
   title: Build multi-table statements using KQL
   description: "Build multi-table statements using KQL"
-  ms.date: 06/20/2022
+  ms.date: 09/12/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
@@ -21,7 +21,7 @@ levels:
 roles:
 - security-operations-analyst
 products:
-- azure
+- defender-xdr
 - microsoft-sentinel
 - azure-log-analytics
 subjects:

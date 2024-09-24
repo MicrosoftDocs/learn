@@ -1,8 +1,8 @@
-To emulate real world functionality, use a simulator to replace a real IoT device in your data pipeline for your wind farm. The simulator sends telemetry data to the IoT Hub. IoT Hub informs the Azure Digital Twins service, which interfaces with the Azure SignalR Service. The data is then pulled into your mixed reality app.
+To emulate real-world functionality, use a simulator to replace a real IoT device in your data pipeline for your wind farm. The simulator sends telemetry data to the IoT Hub. IoT Hub informs the Azure Digital Twins service, which interfaces with the Azure SignalR Service. The data is then pulled into your mixed-reality app.
 
-In your wind farm digital twin, the simulator sends a property update to Azure Digital Twins on demand from a user to signal an alert. This alert signifies an operational event and is displayed in the mixed-reality app experience. The user can resolve the event by using the UI, for instance by pressing a button. The communication between Azure Digital Twins and your digital twin happens through the Azure Digital Twins REST API. Although this information isn't an accurate representation of real-world solution architecture, it simplifies the implementation of the simulator for your digital twin in this module. Normally, an IoT device wouldn't communicate directly with Azure Digital Twins. It would do so through Azure IoT Hub.
+In your wind-farm digital twin, the simulator sends a property update to Azure Digital Twins on demand from a user to signal an alert. This alert signifies an operational event and is displayed in the mixed-reality app experience. The user can resolve the event by using the UI, for instance by pressing a button. The communication between Azure Digital Twins and your digital twin happens through the Azure Digital Twins REST API. Although this information isn't an accurate representation of real-world solution architecture, it simplifies the implementation of the simulator for your digital twin in this module. Normally, an IoT device wouldn't communicate directly with Azure Digital Twins. It would do so through Azure IoT Hub.
 
-The prebuilt simulator that you're running sends telemetry every five seconds from the stand-alone console application to Azure Digital Twin. This telemetry represents a normal state and has `turbine OK` as the event code. When the user triggers an alert on the simulator, it sends modified telemetry that represents an alert situation. The simulator sends a property update to Azure Digital Twins. The update sets the Alert property to `True` on your digital twin for a particular turbine. The simulator begins to poll Azure Digital Twins at a regular interval until the Alert property is set back to `False`, triggered by the user clearing the alert from the app within the device. After the alert is cleared, the simulator resumes sending normal telemetry again with the `turbine OK` event code.
+The prebuilt simulator that you're running sends telemetry every five seconds from the standalone console application to Azure Digital Twin. This telemetry represents a normal state and has `turbine OK` as the event code. When the user triggers an alert on the simulator, it sends modified telemetry that represents an alert situation. The simulator sends a property update to Azure Digital Twins. The update sets the Alert property to `True` on your digital twin for a particular turbine. The simulator begins to poll Azure Digital Twins at a regular interval until the Alert property is set back to `False`, triggered by the user clearing the alert from the app within the device. After the alert is cleared, the simulator resumes sending normal telemetry again with the `turbine OK` event code.
 
 The data simulator connects to the Azure Digital Twin REST API for two purposes:
 
@@ -12,7 +12,7 @@ The data simulator connects to the Azure Digital Twin REST API for two purposes:
 Use the Visual Studio **DeviceSimulator** solution to simulate a wind farm that sends telemetry data to Azure Digital Twins. Your newly configured digital twin in Unity receives input and displays operating conditions on the wind farm.
 
 > [!NOTE]
-> Remember to stop the simulator whenever it is not needed to avoid unnecessary charges on your Azure account.
+> Remember to stop the simulator whenever it isn't needed to avoid unnecessary charges on your Azure account.
 
 ## Begin the wind farm device simulation
 
@@ -49,7 +49,7 @@ Description: Light icing (rotor bl. ice sensor)
 ## Observe the alert for turbine T102
 
 1. Flip your HoloLens 2 back down or put your mixed-reality headset back on and resume your immersive experience.
-1. In the mixed-reality app, select turbine T102. An alert icon appears above the turbine in the map and next to any UI panels for turbine T102 to highlight an Alert condition.
+1. In the mixed-reality app, select turbine **T102**. An alert icon appears above the turbine in the map and next to any UI panels for turbine T102 to highlight an Alert condition.
 
 For this exercise, an action is taken offline to solve the issue on site. For example, you might send a technician to the turbine location. To simulate normal operating conditions, clear the Alert and return the digital twin to full operating service, select the highlighted turbine, and resolve the alert from the turbine panel.
 
@@ -65,7 +65,7 @@ Select the **Send Reset Command** button. This action sends a message to Azure D
 1. Observe the **DeviceSimulator** console app sending normal, or nonalert, telemetry messages, with event code 100 instead of 400, and with *Turbine OK* as the description for Turbine T102.
 
    > [!NOTE]
-   > The properties of a digital twin can be examined directly in Azure Digital Twins. Use the Azure Digital Twins Explorer web app or an Azure CLI command to browse digital twin properties.
+   > You can examine a digital twin's properties directly in Azure Digital Twins. Use the Azure Digital Twins Explorer web app or an Azure CLI command to browse digital-twin properties.
 
 ## Stop the DeviceSimulator
 

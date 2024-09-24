@@ -1,7 +1,5 @@
 Face detection and analysis is an area of artificial intelligence (AI) which uses algorithms to locate and analyze human faces in images or video content.
 
-## Uses of face detection and analysis
-
 There are many applications for face detection, analysis, and recognition. For example,
 
 - Security - facial recognition can be used in building security applications, and increasingly it is used in smart phones operating systems for unlocking devices.

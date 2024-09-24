@@ -71,4 +71,6 @@ Microsoft Defender for Cloud apps functionality can be found under the Cloud app
 # [App governance](#tab/app-governance)
 :::image type="content" source="../media/app-governance.png" lightbox="../media/app-governance.png" alt-text="A screenshot of app governance page in the Microsoft Defender portal.":::
 
-Settings, permissions, incidents and alerts, reports and other features associated with Microsoft Defender workloads, including Defender for Cloud Apps are also available through the Microsoft Defender portal. For more information, refer to the unit, "Describe the Microsoft Defender portal" for more information.
+---
+
+Settings, permissions, incidents and alerts, reports and other features are also available through the Microsoft Defender portal. More information is covered in the unit, "Describe the Microsoft Defender portal," included in this module.

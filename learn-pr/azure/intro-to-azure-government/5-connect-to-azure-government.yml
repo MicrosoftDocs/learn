@@ -5,8 +5,8 @@ metadata:
   title: Connect to Azure Government
   description: Learn about the ways in which you can connect to Azure Government.
   ms.date: 08/23/2023
-  author: cwatson-cat
-  ms.author: cwatson
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 8
 content: |

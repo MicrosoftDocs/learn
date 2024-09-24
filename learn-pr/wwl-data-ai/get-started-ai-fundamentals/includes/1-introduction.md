@@ -1,4 +1,4 @@
-AI enables us to build amazing software that can improve health care, enable people to overcome physical disadvantages, empower smart infrastructure, create incredible entertainment experiences, and even save the planet!
+Artificial Intelligence (AI) enables us to build amazing software that can improve health care, enable people to overcome physical disadvantages, empower smart infrastructure, create incredible entertainment experiences, and even save the planet!
 
 Watch the following video to see some ways that AI can be used.
 
