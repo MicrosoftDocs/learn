@@ -4,6 +4,6 @@ For example, text-based generation can help draft content or brainstorm new conc
 
 The video will show how you can use these technologies today, highlighting their potential to enhance creativity and streamline the idea creation process. Whether you're exploring new ideas or bringing your visions to life, generative AI technology can significantly expand your creative toolkit.
 
-> [!VIDEO https://go.microsoft.com/fwlink/?2287701]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2287701]
 
 Generative AI technology offers a fresh set of tools for creativity, enabling you to push the limits of your aspirations and goals.

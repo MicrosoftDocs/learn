@@ -4,6 +4,6 @@ This technology isn't just limited to authors. Designers, marketers, educators, 
 
 This video will introduce you to text-to-image technology and how you can access it today in Microsoft Copilot. By leveraging tools like DALL·E, integrated into Microsoft Designer, you can turn your textual descriptions into vivid images, bridging the gap between imagination and reality. Whether you're looking to enhance a story, create visuals for a project, or simply explore your creativity, text-to-image AI is a powerful tool at your disposal.
 
-> [!VIDEO https://go.microsoft.com/fwlink/?2287802]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2287802]
 
 Generative AI is unlocking new possibilities for the creative process. With text-to-image generation, you can bring your ideas to life visually. In the next lesson, you'll learn how AI can further assist you in content creation, making it an invaluable companion in your creative journey.

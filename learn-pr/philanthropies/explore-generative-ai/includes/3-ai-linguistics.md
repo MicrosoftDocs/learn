@@ -4,7 +4,7 @@ These technologies enable computers to understand, generate and respond to human
 
 The video explains the meaning behind the acronyms and how this branch of AI is changing how humans interact with AI. 
 
-> [!VIDEO https://go.microsoft.com/fwlink/?2287801]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2287801]
 
 Natural Language Processing (NLP) is a branch of AI that helps computers understand and respond to human language. Recently, Large Language Models (LLMs) have improved NLP applications.
 
