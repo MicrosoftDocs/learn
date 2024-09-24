@@ -56,7 +56,9 @@ In addition to writing queries from scratch, the operations team can also take a
 
 1. Use the **Time Range** parameter in the command bar to set a custom range. Select the month, year, and day to a range from January to today. You can set and apply a custom time to any query.
 
-1. On the toolbar, select **Queries**. The **Queries** pane appears. Here, in the drop-down list in the left menu, you can view a list of the sample queries grouped by *Category*, *Query type*, *Resource type*, *Solution*, or *Topic*.
+1. On the left toolbar, select **Queries**. In the drop-down list in the left menu, you can view a list of the sample queries grouped by *Category*, *Query type*, *Resource type*, *Solution*, or *Topic*.
+
+![Screenshot of Group By dropdown options under Queries tab in side pane.](../media/4-azure-queries-category-groupby.png)
 
 1. Select **Category** in the drop-down list, and then select **IT & Management Tools**.
 
