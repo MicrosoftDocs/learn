@@ -24,8 +24,10 @@ Every request to a queue must be authorized and there are several options to cho
 | **Shared Key** | An encrypted key signature associated with the storage account that is sometimes referred to as an **account key**. Every storage account has two of these keys that can be passed with each request to authenticate access. Using this approach is like using a root password - it provides *full access* to the storage account. |
 | **Shared access signature** | A shared access signature (SAS) is a generated URI that grants limited access to objects in your storage account to clients. You can restrict access to specific resources, permissions, and scope the restrictions to a date range, so that it automatically turns off access after a period of time.  |
 
-> [!NOTE]
-> We will use the account key authorization because it is the simplest way to get started working with queues. However, it's recommended that you either use shared access signature (SAS) or Microsoft Entra ID in production apps.
+> [!IMPORTANT]
+> We will use the account key authorization because it is the simplest way to get started working with queues. However, for optimal security, Microsoft recommends using Microsoft Entra ID with managed identities to authorize requests queue data, whenever possible. Authorization with Microsoft Entra ID and managed identities provides superior security and ease of use over Shared Key authorization. To learn more about managed identities, see [What are managed identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview). For an example of how to enable and use a managed identity for a .NET application, see [Authenticating Azure-hosted apps to Azure resources with .NET](/dotnet/azure/sdk/authentication/azure-hosted-apps).
+>
+> For scenarios where shared access signatures (SAS) are used, Microsoft recommends using a user delegation SAS. A user delegation SAS is secured with Microsoft Entra credentials instead of the account key. To learn about shared access signatures, see [Grant limited access to data with shared access signatures](../articles/storage/common/storage-sas-overview.md). For an example of how to create and use a user delegation SAS with .NET, see [Create a user delegation SAS for a blob with .NET](/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet).
 
 ### Retrieve the connection string
 
