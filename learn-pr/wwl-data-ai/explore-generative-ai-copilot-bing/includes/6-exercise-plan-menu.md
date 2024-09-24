@@ -65,7 +65,7 @@ Use Copilot to do some research. Copilot can search the internet and bring back 
 
 **Sample prompt**:
 ```
-A signature drink is a refreshment that truly embodies the theme of the destination. It should be unique and an experience it itself. It might embrace local ingredients, culture or cues from the theme that influence how they look, how they are served or how they are made. They delight customers. We need to find some photo inspiration to help generate ideas for refreshments that would be fun to enjoy. Can you provide some photo inspiration of unique refreshments that are highly creative - it could be their colors, their ingredients, the container they are served in, how they are made or how someone needs to enjoy it.
+A signature drink is a refreshment that truly embodies the theme of the destination. It should be unique and an experience it itself. It might embrace local ingredients, culture, or cues from the theme that influence how they look, how they're served, or how they're made. They delight customers. We need to find some photo inspiration to help generate ideas for refreshments that would be fun to enjoy. Can you provide some photo inspiration of unique refreshments that are highly creative? It could be their colors, their ingredients, the container they're served in, how they're made, or how someone needs to enjoy it.
 ```
 
 **Sample response**:
@@ -91,10 +91,10 @@ Steps:
 ```
 We need to ideate about a signature drink. It should embrace the theme of the 
 destination and should surprise 
-and delight people. What it is served in matters, 
+and delight people. What it's served in matters, 
 the glass or container should be really unique and it
 should embrace the theme of the destination. 
-Can you give me three ideas for signature refreshments or drinks, but please be inclusive and include something in your suggestions for everyone. Please also name them something clever that reflects the theme. 
+Can you give me three ideas for signature refreshments or drinks? Please be inclusive, and include something in your suggestions for everyone. Please also name them something clever that reflects the theme.
 ```
 
 **Sample response**:
