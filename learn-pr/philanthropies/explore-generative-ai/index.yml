@@ -5,7 +5,7 @@ metadata:
   yoosunee: Downes,Mary
   ms.date: 09/24/2024
   title: "AI fluency: Explore generative AI"  
-  description: TBD
+  description: Discover the fundamentals of generative AI and how this technology is transforming our approach to creativity and productivity.
   ms.topic: module
   ms.service: artificial-intelligence
   moduleType: standard
@@ -34,6 +34,7 @@ units:
 - learn.philanthropies.explore-generative-ai.introduction
 - learn.philanthropies.explore-generative-ai.what-is-generative-ai
 - learn.philanthropies.explore-generative-ai.ai-linguistics
+- learn.philanthropies.explore-generative-ai.visualize-with-ai-from-text-to-image
 - learn.philanthropies.explore-generative-ai.ai-companion-in-content-creation
 - learn.philanthropies.explore-generative-ai.new-opportunities-with-generative-ai
 - learn.philanthropies.explore-generative-ai.knowledge-check
