@@ -6,7 +6,7 @@ The Service Trust Portal contains details about Microsoft's implementation of co
 
 You can access the Service Trust Portal at [https://servicetrust.microsoft.com/](https://servicetrust.microsoft.com/).
 
-:::image type="content" source="../media/service-trust-portal-f7b27e61.png" alt-text="Screenshot of the service trust portal with the main menu items visible.":::
+:::image type="content" source="../media/service-trust-portal-f7b27e61-b5ad84d7.png" alt-text="Screenshot of the service trust portal with the main menu items visible.":::
 
 
 The Service Trust Portal features and content are accessible from the main menu. The categories on the main menu are:

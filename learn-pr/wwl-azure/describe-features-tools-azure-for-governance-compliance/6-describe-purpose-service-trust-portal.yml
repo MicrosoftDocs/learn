@@ -4,7 +4,7 @@ title: Describe the purpose of the Service Trust portal
 metadata:
   title: Describe the purpose of the Service Trust portal
   description: "Describe the purpose of the Service Trust portal"
-  ms.date: 03/13/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-describe-purpose-of-service-trust-portal.md)]
+  [!include[](includes/6-describe-purpose-service-trust-portal.md)]

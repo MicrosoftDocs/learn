@@ -15,7 +15,7 @@ You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, 
 
 To view, add, or delete locks in the Azure portal, go to the Settings section of any resource's Settings pane in the Azure portal.
 
-:::image type="content" source="../media/resource-lock-54695e43.png" alt-text="A screenshot showing the resource lock control, under settings, for a storage account.":::
+:::image type="content" source="../media/resource-lock-54695e43-61c37c58.png" alt-text="A screenshot showing the resource lock control, under settings, for a storage account.":::
 
 
 ## How do I delete or change a locked resource?
