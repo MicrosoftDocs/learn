@@ -1,4 +1,4 @@
-Coding an app with ASP.NET Core is different than designing a static website with HTML, CSS, and JavaScript. A static website can be deployed to any web server that supports static files. The web server doesn't need to know anything about static files because they're just files that can be served over HTTP. When a web browser requests a resource, the web server simply sends the file back to the browser.
+Coding an app with ASP.NET Core is different from designing a static website with HTML, CSS, and JavaScript. A static website can be deployed to any web server that supports static files. The web server doesn’t need to process static files; it simply serves them over HTTP. When a web browser requests a resource, the web server simply sends the file back to the browser.
 
 An ASP.NET Core app, on the other hand, is a dynamic web application. It runs as a program on the web server. When the user's web browser sends a request to the web server, the web server runs the app to generate a response, and then the web server sends the response back to the browser.
 
@@ -22,7 +22,7 @@ A self-contained deployment includes your app's files, dependencies, and the .NE
 
 ### Choosing a deployment type
 
-The type of deployment type you choose depends on your app's requirements and the target environment. Consider the following factors when choosing a deployment type:
+The deployment type you choose depends on your app's requirements and the target environment. Consider the following factors when choosing a deployment type:
 
 :::row:::
     :::column:::
@@ -70,7 +70,7 @@ Once you've published your app, you can deploy it to any environment that suppor
 
 ### Kestrel
 
-By default, ASP.NET Core apps run in ASP.NET Core's built-in web server, Kestrel. Kestrel is cross-platform and tuned for high performance. It supports all modern web server features, including HTTPS, HTTP/2, HTTP/3. and WebSockets. It's also customizable and extensible, so you can configure it to meet your app's needs. Kestrel is the recommended web server for ASP.NET Core apps.
+By default, ASP.NET Core apps run in ASP.NET Core's built-in web server, Kestrel. Kestrel is cross-platform and tuned for high performance. It supports all modern web server features, including HTTPS, HTTP/2, HTTP/3, and WebSockets. It's also customizable and extensible, so you can configure it to meet your app's needs. Kestrel is the recommended web server for ASP.NET Core apps.
 
 Since Kestrel is built into ASP.NET Core, you can deploy your app to any machine capable of running .NET, including Windows, macOS, and Linux. Kestrel works great by itself, but apps running on Kestrel are often deployed behind a reverse proxy server, such as Internet Information Services (IIS), Nginx, or Apache. The reverse proxy server handles incoming requests from the internet and forwards them to Kestrel. This allows you to take advantage of the reverse proxy server's features, such as load balancing, caching, and SSL termination.
 

@@ -17,7 +17,7 @@ quiz:
     - content: "The app is published with the .NET runtime."
       isCorrect: false
       explanation: "Incorrect. The app is published without the .NET runtime."
-    - content: "The resulting published app is can be deployed to any system that has the .NET runtime installed."
+    - content: "The resulting published app can be deployed to any system that has the .NET runtime installed."
       isCorrect: true
       explanation: "Correct. The resulting published app is portable."
     - content: |
@@ -41,7 +41,7 @@ quiz:
     - content: "The source code is included in the published app."
       isCorrect: false
       explanation: "Incorrect. The source code isn't included in the published app."    
-  - content: "What is the name of ASP.NET Core's built-in web server?"
+  - content: "What is the name of the built-in web server in ASP.NET Core?"
     choices:
     - content: "IIS"
       isCorrect: false

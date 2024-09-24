@@ -1,4 +1,4 @@
-Self-contained deployments include the app and its dependencies, as well as the .NET runtime. Since the .NET runtime is included with the app, the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments. Self-contained apps must also handle deploying .NET runtime updates to get the latest patches.
+Self-contained deployments include the app and its dependencies, as well as the .NET runtime. Since the .NET runtime is included with the app, the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments. Self-contained apps must also handle deploying .NET runtime updates to receive the latest patches.
 
 Your IT department has notified your team that for disaster recovery purposes, they are testing your app on servers that don't have the .NET runtime installed. They intend to test the app on both a 64-bit Windows server and a 64-bit Linux server. To support this testing, you need to publish the app as a self-contained deployment for each environment.
 
@@ -6,7 +6,7 @@ In this exercise, you'll publish an ASP.NET Core app as self-contained deploymen
 
 ## Publish as a self-contained deployment
 
-1. In the terminal window, set your location to the *MyWebApp* directory. At the end of the previous exercise, you were in *MyWebApp/publish-fd*. You need to go back to the *MyWebApp* directory.
+1. In the terminal window, navigate to the *MyWebApp* directory. At the end of the previous exercise, you were in *MyWebApp/publish-fd*. You need to go back to the *MyWebApp* directory.
 
     ```dotnetcli
     cd ..

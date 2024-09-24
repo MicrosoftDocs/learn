@@ -36,7 +36,7 @@ Test the app to make sure it runs.
 Now that you've verified that the app runs correctly, you can publish it as a framework-dependent deployment.
 
 1. In Visual Studio Code, press **Ctrl+`** to open the terminal window.
-1. Set your location to the *MyWebApp* directory.
+1. Navigate to the *MyWebApp* directory.
 
     ```dotnetcli
     cd MyWebApp
