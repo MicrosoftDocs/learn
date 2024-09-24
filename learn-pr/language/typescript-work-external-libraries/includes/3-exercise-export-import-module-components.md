@@ -1,7 +1,7 @@
 Let's see how to organize variable, class, interface, and function declarations into multiple modules and then use these components in code.
 
 > [!NOTE]
-> You must use an IDE, such as Visual Studio Code, to implement modules. It is not possible to do this in the TypeScript Playground.
+> You must use an IDE, such as Visual Studio Code, to implement modules. It's not possible to do this in the TypeScript Playground.
 
 ## Export a module component
 
