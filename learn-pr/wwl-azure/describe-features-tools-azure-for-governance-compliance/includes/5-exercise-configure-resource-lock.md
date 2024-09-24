@@ -1,6 +1,6 @@
-In this exercise, you’ll create a resource and configure a resource lock. Storage accounts are one of the easiest types of resource locks to quickly see the impact, so you’ll use a storage account for this exercise.
+In this exercise, you create a resource and configure a resource lock. Storage accounts are one of the easiest types of resource locks to quickly see the impact, so you use a storage account for this exercise.
 
-This exercise is a Bring your own subscription exercise, meaning you’ll need to provide your own Azure subscription to complete the exercise. Don’t worry though, the entire exercise can be completed for free with the 12 month free services when you sign up for an Azure account.
+This exercise is a Bring your own subscription exercise, meaning you need to provide your own Azure subscription to complete the exercise. Don’t worry though, the entire exercise can be completed for free with the 12 month free services when you sign up for an Azure account.
 
 For help with signing up for an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
 
@@ -29,7 +29,7 @@ In order to apply a resource lock, you have to have a resource created in Azure.
 
 ## Task 2: Apply a read-only resource lock
 
-In this task you apply a read-only resource lock to the storage account. What impact do you think that will have on the storage account?
+In this task you apply a read-only resource lock to the storage account. What impact do you think that has on the storage account?
 
 1.  Scroll down until you find the Settings section of the blade on the left of the screen.
 2.  Select Locks.
@@ -43,7 +43,7 @@ In this task you apply a read-only resource lock to the storage account. What im
 
 ## Task 3: Add a container to the storage account
 
-In this task, you add a container to the storage account, this container is where you can store your blobs.
+In this task, you add a container to the storage account. This container is where you can store your blobs.
 
 1.  Scroll up until you find the Data storage section of the blade on the left of the screen.
 2.  Select Containers.
@@ -88,7 +88,7 @@ You'll actually do this last task twice. Remember that there's a delete lock on 
     :::image type="content" source="../media/storage-overview-page-ec75f9e6-e8e8a7d4.png" alt-text="Screenshot of the deletion process for deleting a storage account.":::
     
 
-You should get a notification letting you know you can't delete the resource because it has a delete lock. In order to delete the storage account, you'll need to remove the delete lock.
+You should get a notification letting you know you can't delete the resource because it has a delete lock. In order to delete the storage account, you need to remove the delete lock.
 
 :::image type="content" source="../media/storage-delete-lock-warning-5ea6faa5-ac48ca94.png" alt-text="Screenshot of the Delete storage account error, explaining that a resource lock prevents deletion.":::
 
