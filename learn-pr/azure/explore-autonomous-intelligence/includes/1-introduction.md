@@ -1,4 +1,4 @@
-We define **Autonomous Intelligence** as a set of AI technologies that are components of the Machine Teaching new AI paradigm, together with Automated Intelligence that includes control theory, optimization algorithms and expert systems. The AI technologies in Autonomous Intelligence are Machine Learning algorithms for advance perception (computer vision, any other sensory classification, and prediction) and Deep Reinforcement Learning.
+We define **Autonomous Intelligence** as a set of AI technologies that are components of the Machine Teaching new AI paradigm, together with Automated Intelligence that includes control theory, optimization algorithms, and expert systems. The AI technologies in Autonomous Intelligence are Machine Learning algorithms for advance perception (computer vision, any other sensory classification, and prediction) and Deep Reinforcement Learning.
 
 Automated Intelligence powered by AI is a key component to further optimize industrial machinery and processes by sensing and responding in near real time. Systems containing Autonomous Intelligence can make human-like decisions on their own.
 
