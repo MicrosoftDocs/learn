@@ -10,7 +10,6 @@ The [Azure Quantum website](https://quantum.microsoft.com/) allows you to learn 
 - **Quantum Elements** - One of the most important applications of quantum computing will be in the field of chemistry. Quantum Elements uses Copilot in Azure Quantum to design, code, and render molecular models.
 - **Quantum Katas** - Hands-on tutorials that teach quantum computing concepts and the Q# programming language.
 - **Code samples** - The Azure Quantum code library is a rich set of samples using Q#, Python, and Qiskit code to demonstrate quantum scenarios.
-- **Quantum concepts** - From the basics of quantum theory to advanced techniques of quantum computing, the Concepts library is a crash course to bring you up to speed on quantum computing. 
 - **Videos** - Browse the video library for interviews with leading quantum computing researchers and innovators.
 - **Azure Quantum blogs** - Stay up to date with the latest quantum computing research and innovations.
 
@@ -30,9 +29,9 @@ The following table might help you decide if you want to use the Azure Quantum w
 | <ul><li>Learn quantum programming using the tutorials in Quantum Katas</li><li>Read about quantum computing concepts</li><li>Run Q# programs online and simulate them in Quantinuum H-Series Emulator</li><li> Ask Copilot to explain quantum computing concepts or prompt it to generate a Q# program </li><li> Open your quantum program in VS Code for the Web</li></ul> | <ul><li>No installation required</li><li>No Azure subscription required</li><ul> | <ul><li> Save your programs and results</li><li> Select a quantum computing provider </li><li>Run Python code </li><li>Manage your quantum jobs</li><li>Debug your programs</li></ul>|
 
 
-## What is the Azure Quantum Development Kit (QDK) extension?
+## What is the Quantum Development Kit (QDK) extension?
 
-The Azure QDK extension is a software development kit for quantum computing. It is an extension for Visual Studio Code, a free, open-source code editor from Microsoft.
+The Quantum Development Kit (QDK) extension is a software development kit for quantum computing. It's an extension for Visual Studio Code, a free, open-source code editor from Microsoft.
 
 > [!NOTE]
 > The QDK extension is available both in Visual Studio Code and [VS Code for the Web](https://vscode.dev/quantum).
