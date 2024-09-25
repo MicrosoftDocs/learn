@@ -1,6 +1,6 @@
 A few days after you backed up your first Azure virtual machine (VM), the server had issues. The VM needs to be restored from a backup. You want to restore the VM's disk and attach it to the problematic live server, and then track the restore to ensure that it finished successfully.
 
-In this exercise, you'll see how to restore a successful backup to replace a VM that has become corrupted, and monitor its progress.
+In this exercise, you see how to restore a successful backup to replace a VM that became corrupted, and monitor its progress.
 
 ## Restore a virtual machine in the Azure portal
 
@@ -31,11 +31,11 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 1. After validation passes, select **Create**.
 
-    Wait for the storage account to be deployed.
+   Wait for the storage account to be deployed.
 
-### Stop the virtual machine to allow for the restore
+### Stop the virtual machine
 
-A backup can't be restored if the VM is allocated and running. If you forget to stop the VM and attempt to restore it, you'll see an error that's similar to the following example.
+A backup can't be restored if the VM is allocated and running. If you forget to stop the VM and attempt to restore it, you see an error that's similar to the following example.
 
 ![Screenshot that shows the error details when a VM is running.](../media/6-restore-error.png)
 
@@ -65,7 +65,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. To restore the virtual machine, in the menu bar, select **Restore VM**. The **Restore Virtual Machine** pane for *NW-APP01* appears.
 
-1. Under the **Restore point** text box, select **Select**. The **Select restore point** pane appears.
+1. Under the **Restore point** text box, choose **Select**. The **Select restore point** pane appears.
 
 1. By default, the start and end date are set for a two week range. Set the **Start date** to an appropriate date for our restore points (**07/05/2021**), select the restore point to use for the recovery, and then select **OK**.
 
@@ -90,7 +90,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 1. In the **Alerts and Jobs** section, select **View all Jobs**. The **Backup Jobs** pane appears.
 
     ![Screenshot of view details for the restore job.](../media/6-review-jobs.png)
-    
+
 1. In the **Details** column, select **View details** for the **Restore** job.
 
     :::image type="content" source="../media/6-restore-progress.png" alt-text="Screenshot of the restore progress." lightbox="../media/6-restore-progress.png":::

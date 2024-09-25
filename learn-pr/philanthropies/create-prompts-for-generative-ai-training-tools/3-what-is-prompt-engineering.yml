@@ -9,7 +9,7 @@ metadata:
   ms.date: 02/27/2024
   ms.topic: unit
   ms.collection:
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/3-what-is-prompt-engineering.md)]

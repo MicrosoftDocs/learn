@@ -57,5 +57,3 @@ However, if some documents in that site should be kept for five years and others
 **Retention labels and policies that apply them**
 
 When you publish retention labels, they're included in a retention label policy that makes them available for admins and users to apply to content.
-
-
