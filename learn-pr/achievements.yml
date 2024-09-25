@@ -3912,6 +3912,11 @@ achievements:
   title: Explore Microsoft Defender for IoT implementation
   summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
   iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
+- uid: learn.azure.data-classification-and-data-protection.badge
+  type: badge
+  title: Introduction to Microsoft data classification and protection
+  summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
+  iconUrl: /training/achievements/data-classification-and-data-protection.svg
 - uid: learn.azure.classification-and-protection.badge
   type: badge
   title: Intro to data classification and protection
