@@ -6,7 +6,7 @@ By the end of this module, you should have a comprehensive understanding of the 
 
 To continue learning about Azure SQL Database and find resources for implementation, you can check out the [documentation on Azure SQL Database](/azure/azure-sql/database?azure-portal=true) and the [Develop data-driven applications by using Azure SQL Database Learning Path](/training/paths/develop-data-driven-app-sql-db?azure-portal=true).
 
-### Additional Reading:
+### Additional Reading
 
 - [Azure SQL Database Overview](/azure/azure-sql/database/sql-database-paas-overview?azure-portal=true)
 - [Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-overview?azure-portal=true) 

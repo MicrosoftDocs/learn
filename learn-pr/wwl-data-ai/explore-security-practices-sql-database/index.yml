@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-wwl.explore-security-practices-sql-database
+uid: learn-wwl.explore-security-practices-azure-sql-database
 metadata:
   title: Explore security practices for Azure SQL Database
   description: "Learn how security works in Azure SQL Database, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
@@ -33,13 +33,13 @@ subjects:
   - databases
   - cloud-computing
 units:
-- learn-wwl.explore-security-practices-sql-database.introduction
-- learn-wwl.explore-security-practices-sql-database.explore-authentication-methods
-- learn-wwl.explore-security-practices-sql-database.configure-managed-identity
-- learn-wwl.explore-security-practices-sql-database.understand-firewall-rules
-- learn-wwl.explore-security-practices-sql-database.explore-advanced-data-security
-- learn-wwl.explore-security-practices-sql-database.exercise-managed-identity
-- learn-wwl.explore-security-practices-sql-database.knowledge-check
-- learn-wwl.explore-security-practices-sql-database.summary
+- learn-wwl.explore-security-practices-azure-sql-database.introduction
+- learn-wwl.explore-security-practices-azure-sql-database.explore-authentication-methods
+- learn-wwl.explore-security-practices-azure-sql-database.configure-managed-identity
+- learn-wwl.explore-security-practices-azure-sql-database.understand-firewall-rules
+- learn-wwl.explore-security-practices-azure-sql-database.explore-advanced-data-security
+- learn-wwl.explore-security-practices-azure-sql-database.exercise-managed-identity
+- learn-wwl.explore-security-practices-azure-sql-database.knowledge-check
+- learn-wwl.explore-security-practices-azure-sql-database.summary
 badge:
-  uid: learn-wwl.explore-security-practices-sql-database.badge
+  uid: learn-wwl.explore-security-practices-azure-sql-database.badge
