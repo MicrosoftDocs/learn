@@ -1,6 +1,6 @@
 Once you create an Azure AI service resource, you can build applications using the REST API, software development kits (SDKs), or visual studio interfaces.
 
-[![Screenshot of Azure AI Studio that features the content safety service page.](../media/azure-ai-studio-content-safety.png) ](../media/azure-studio-examples.png#lightbox) 
+[ ![Screenshot of several examples of Azure studios including Azure Language Studio, Azure OpenAI Studio, and Azure Vision Studio.](../media/azure-studio-examples.png) ](../media/azure-studio-examples.png#lightbox) 
 
 ## Using service studio interfaces
 
