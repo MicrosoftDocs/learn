@@ -245,4 +245,4 @@ Finally, check your email account to see if you received any emails for negative
    > - [Azure Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/). 
    > Select your region, currency, and then the **Consumption Plan (Mutlitenant)** tab.
 
-The next unit summarizes what you've learned and how to clean up resources.
+The next unit provides a knowledge check on what you've learned.
