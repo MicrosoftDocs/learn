@@ -22,7 +22,7 @@ Blazor is a framework for building interactive web UI components using C# instea
 #### MVC and more:
 
 - **MVC**: For server-side rendering, ASP.NET Core also offers MVC (Model-View-Controller). MVC provides a powerful pattern for building dynamic web applications with a clear separation of concerns. 
-- Integration with Front-End Frameworks: ASP.NET Core seamlessly integrates with popular client-side frameworks like React, Angular, and Vue. This allows you to build modern, single-page applications (SPAs) while applying ASP.NET Core’s robust backend capabilities. ASP.NET Core provides project templates for React, Angular, and Vue making it easy to get started.
+- **Integration with Front-End Frameworks**: ASP.NET Core seamlessly integrates with popular client-side frameworks like React, Angular, and Vue. This allows you to build modern, single-page applications (SPAs) while applying ASP.NET Core’s robust backend capabilities. ASP.NET Core provides project templates for React, Angular, and Vue making it easy to get started.
 
 ### The middleware pipeline
 
@@ -44,7 +44,7 @@ ASP.NET Core provides a robust and flexible backend for building a wide range of
 
 ### Add libraries and tools with NuGet Package Management
 
-NuGet is the primary tool for managing .NET packages, including those for ASP.NET Core. It allows you to easily add additional libraries and tools to your projects, facilitating code reuse and collaboration.
+[NuGet](https://www.nuget.org/) is the primary tool for managing .NET packages, including those for ASP.NET Core. It allows you to easily add additional libraries and tools to your projects, facilitating code reuse and collaboration.
 
 - **Adding functionality**: Use NuGet packages to integrate libraries like Entity Framework Core, logging frameworks, or authentication tools into your ASP.NET Core projects.
 - **Package repository**: NuGet provides a central repository for discovering and integrating third-party libraries.  You can also create and share your own NuGet packages with your team or the .NET community.
