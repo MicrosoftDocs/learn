@@ -40,7 +40,7 @@ Now, specify the condition to test.
 
    The finished condition looks like the following example:
 
-   :::image type="content" source="../media/condition-action-sentiment.png" alt-text="Screenshot shows condition action for evaluating sentiment ranking." lightbox="../media/condition-action-sentiment.png":::
+   :::image type="content" source="../media/condition-action-sentiment.png" alt-text="Screenshot shows condition action for evaluating sentiment ranking.":::
 
 1. When you finish, save your workflow.
 
@@ -120,11 +120,11 @@ You previously set up the condition, but the workflow currently doesn't have an 
 
    The finished action looks like the following example:
 
-   :::image type="content" source="../media/create-blob-bing-search.png" alt-text="Screenshot shows Create blob action with Bing Search trigger outputs." lightbox="../media/create-blob-bing-search.png":::
+   :::image type="content" source="../media/create-blob-bing-search.png" alt-text="Screenshot shows Create blob action with Bing Search trigger outputs.":::
 
    *Substitution*: If you're using the RSS trigger, the finished action looks like the following example:
 
-   :::image type="content" source="../media/create-blob-rss.png" alt-text="Screenshot shows Create blob action with RSS trigger outputs." lightbox="../media/create-blob-rss.png":::
+   :::image type="content" source="../media/create-blob-rss.png" alt-text="Screenshot shows Create blob action with RSS trigger outputs.":::
 
 1. When you finish, save your workflow.
 
@@ -158,11 +158,11 @@ Now, map the article data to the respective email fields.
 
    The finished action looks like the following example:
 
-   :::image type="content" source="../media/send-email-bing-search.png" alt-text="Screenshot shows Send an email action with Bing Search trigger outputs." lightbox="../media/send-email-bing-search.png":::
+   :::image type="content" source="../media/send-email-bing-search.png" alt-text="Screenshot shows Send an email action with Bing Search trigger outputs.":::
 
    *Substitution*: If you're using the RSS trigger, the designer automatically adds a **For each** loop around the **Send an email** action, so that the finished action looks like the following example:
 
-   :::image type="content" source="../media/send-email-rss.png" alt-text="Screenshot shows Send an email action with RSS trigger outputs." lightbox="../media/send-email-rss.png":::
+   :::image type="content" source="../media/send-email-rss.png" alt-text="Screenshot shows Send an email action with RSS trigger outputs.":::
 
 1. When you finish, save your workflow.
 
@@ -194,11 +194,11 @@ Now, map the article data to the respective email fields.
 
    For an article with a positive sentiment ranking so that the condition evaluates to true, the run details page looks like the following example:
 
-   :::image type="content" source="../media/shoe-news-results-true.png" alt-text="Screenshot shows run details page with workflow where condition evaluates to true." lightbox="../media/shoe-news-results-true.png":::
+   :::image type="content" source="../media/shoe-news-results-true.png" alt-text="Screenshot shows run details page with workflow where condition evaluates to true.":::
 
    For an article with any other sentiment ranking so that the condition evaluates to false, the run details page looks like the following example:
 
-   :::image type="content" source="../media/shoe-news-results-false.png" alt-text="Screenshot shows run details page with workflow where condition evaluates to false." lightbox="../media/shoe-news-results-false.png":::
+   :::image type="content" source="../media/shoe-news-results-false.png" alt-text="Screenshot shows run details page with workflow where condition evaluates to false.":::
 
 1. In the **OUTPUTS** section, in the **body** field, find the **text** content and the assigned **sentiment** label. To review the complete response in JSON format, select **Show raw outputs**.
 
@@ -214,11 +214,11 @@ Now, we examine the blob container for any positive articles.
 
    The container's **Overview** page lists any blobs created by your workflow, for example:
 
-   :::image type="content" source="../media/container-positive-articles.png" alt-text="Screenshot shows blob container with positive news articles." lightbox="../media/container-positive-articles.png":::
+   :::image type="content" source="../media/container-positive-articles.png" alt-text="Screenshot shows blob container with positive news articles.":::
 
 1. To view the blob content, select an article row, and then under the blob toolbar, select the **Edit** tab, for example:
 
-   :::image type="content" source="../media/blob-content.png" alt-text="Screenshot shows example blob content" lightbox="../media/blob-content.png":::
+   :::image type="content" source="../media/blob-content.png" alt-text="Screenshot shows example blob content.":::
 
 ## Review a negative sentiment article
 

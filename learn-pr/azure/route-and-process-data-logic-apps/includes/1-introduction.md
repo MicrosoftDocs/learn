@@ -21,4 +21,3 @@ In this module, you complete the following tasks:
 - Basic knowledge about Azure Logic Apps concepts, such as connector, trigger, and action
 - Experience creating and managing resources using the Azure portal at the beginner level
 - Familiarity with programming concepts such as conditions and loops
-- 

@@ -13,4 +13,4 @@ metadata:
 
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-EX-create-news-tracker.md)]
+  [!include[](includes/4-exercise-create-news-tracker.md)]

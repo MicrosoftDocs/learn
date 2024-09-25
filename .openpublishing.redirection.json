@@ -2,15 +2,15 @@
   "redirections": [
     {
       "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/4-EX-create-social-media-tracker.yml",
-      "redirect_url": "/training/modules/route-and-process-data-logic-apps/4-EX-create-news-tracker"
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/4-exercise-create-news-tracker"
     },
     {
       "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/6-EX-analyze-content-of-tweet.yml",
-      "redirect_url": "/training/modules/route-and-process-data-logic-apps/6-EX-analyze-article-content"
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/6-exercise-analyze-article-content"
     },
     {
       "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/8-EX-branch-based-on-tweet-sentiment.yml",
-      "redirect_url": "/training/modules/route-and-process-data-logic-apps/8-EX-branch-based-on-sentiment"
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/8-exercise-branch-based-on-sentiment"
     },
     {
       "source_path_from_root": "/learn-pr/achievements/learn-sqlserver.assess-convert-sql-server-databases-using-dma.badge.yml",

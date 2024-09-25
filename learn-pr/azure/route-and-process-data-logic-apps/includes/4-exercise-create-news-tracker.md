@@ -17,7 +17,7 @@ To use the **Bing Search** trigger in your workflow, you need an API key and API
    | **Subscription** | <*Azure-subscription*> | Select your Azure subscription. |
    | **Resource group** | <*resource-group*> | Select **Create New**, and then create a resource group with a unique name to use across this module. |
    | **Name** | <*Bing-resource*> | Enter unique name for your Bing resource. This example uses **MyBingSearch**. |
-   | **Region** | **Global** | Your resource works across multlple Azure regions. |
+   | **Region** | **Global** | Your resource works across multiple Azure regions. |
    | **Pricing tier** | **F1** | This tier provides 3 calls per second with a limit of 1,000 calls per month. For pricing information, see [Bing Search API pricing](https://www.microsoft.com/bing/apis/pricing). |
 
 1. When you finish, select **I confirm I have read and understood the notice above.** **>** **Review + create**.
@@ -31,7 +31,7 @@ To use the **Bing Search** trigger in your workflow, you need an API key and API
    * **Key 1** or **Key 2**
    * **Endpoint**
 
-   :::image type="content" source="../media/bing-search-api-info.png" alt-text="Screenshot shows Bing Search API key and endpoint." lightbox="../media/bing-search-api-info.png":::
+   :::image type="content" source="../media/bing-search-api-info.png" alt-text="Screenshot shows Bing Search API key and endpoint.":::
 
 ## Create the logic app resource
 
@@ -123,7 +123,7 @@ If you don't want to use Bing Search, you can follow the steps, but substitute t
 
    For example, the trigger now looks like the following example:
 
-   :::image type="content" source="../media/bing-search-trigger.png" alt-text="Screenshot shows Bing Search trigger with example values." lightbox="../media/bing-search-trigger.png":::
+   :::image type="content" source="../media/bing-search-trigger.png" alt-text="Screenshot shows Bing Search trigger with example values.":::
 
 1. If you're using the RSS trigger, provide the following information:
 
@@ -140,7 +140,7 @@ If you don't want to use Bing Search, you can follow the steps, but substitute t
    | **Interval** | Yes | **16** | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new articles every three hours. <br><br>For this exercise, we want to only manually activate the trigger, not on a schedule, so set the interval to the largest value possible for the **Month** frequency, which is **16** in this example. For the minimum interval, see [RSS connector reference](/connectors/rss/). |
    | **Frequency** | Yes | **Month** | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
 
-   :::image type="content" source="../media/dow-jones-trigger.png" alt-text="Screenshot shows RSS trigger with example values." lightbox="../media/dow-jones-trigger.png":::
+   :::image type="content" source="../media/dow-jones-trigger.png" alt-text="Screenshot shows RSS trigger with example values.":::
 
 1. When you finish, on the designer toolbar, select **Save**.
 
@@ -200,7 +200,9 @@ After the trigger successfully fires, you can view information about the found n
 
 ### View from trigger history
 
-1. On the **Trigger history** tab, select the row for either trigger entry. On the **History** page, under **Outputs link**, select the link.
+1. On the **Trigger history** tab, select the row for either trigger entry.
+
+1. On the **History** page, under **Outputs link**, select the link.
 
    On the **Outputs** page, in the **body** JSON object, information about the matching news article appears.
 

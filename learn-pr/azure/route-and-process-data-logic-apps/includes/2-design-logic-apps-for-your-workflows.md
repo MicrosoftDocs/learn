@@ -4,7 +4,7 @@ Azure Logic Apps gives you 1,000+ prebuilt connectors to access various cloud se
 
 In this unit, you plan the sequence of steps necessary to implement a business process. You then map these steps to the components available in Azure Logic Apps. Finally, you put these pieces together by building a workflow using the designer in Azure Logic Apps. The following diagram shows an overview for the app development process:
 
-:::image type="content" source="../media/app-design-process.png" alt-text="Diagram shows typical sequence of activities to create a logic app workflow." border="false" lightbox="../media/app-design-process.png":::
+:::image type="content" source="../media/app-design-process.png" alt-text="Diagram shows typical sequence of activities to create a logic app workflow." border="false":::
 
 The following sections describe each step in the app development process:
 
@@ -19,7 +19,7 @@ The first step to creating a logic app workflow is planning the steps of your bu
 
 Typically, you use a flowchart to capture and organize these steps. The following diagram shows the flowchart for the news media monitoring app:
 
-:::image type="content" source="../media/news-monitoring-workflow.png" alt-text="Diagram shows flowchart for the fictional company on how to process news articles about their market." border="false" lightbox="../media/news-monitoring-workflow.png":::
+:::image type="content" source="../media/news-monitoring-workflow.png" alt-text="Diagram shows flowchart for the fictional company on how to process news articles about their market." border="false":::
 
 ## Identify the type for each step in your process
 
@@ -27,7 +27,7 @@ The steps in a business process perform different kinds of operations. Some resp
 
 For example, in our news monitoring scenario, a *trigger* starts the process when a new article is available. An *action* performs a task such as analyzing the sentiment. And finally, a *control action* makes a decision based on the sentiment. The following diagram shows the type for each step in the news monitoring app:
 
-:::image type="content" source="../media/news-monitoring-step-types.png" alt-text="Diagram shows flowchart for shoe company news monitoring app." border="false" lightbox="../media/news-monitoring-step-types.png":::
+:::image type="content" source="../media/news-monitoring-step-types.png" alt-text="Diagram shows flowchart for shoe company news monitoring app." border="false":::
 
 ## Map your steps to components
 
@@ -43,19 +43,19 @@ A *connector* is a group with all related triggers and actions. This group is as
 
 For example, the **Bing Search** connector lets your workflow interact with the Bing Search service. Your news monitoring app can use a trigger from the **Bing Search** connector to determine when new relevant articles are available. The following diagram shows the **Bing Search** connector with its trigger and actions:
 
-:::image type="content" source="../media/bing-search-connector-operations.png" alt-text="Diagram shows triggers and actions in the Bing Search connector." border="false" lightbox="../media/bing-search-connector-operations.png":::
+:::image type="content" source="../media/bing-search-connector-operations.png" alt-text="Diagram shows triggers and actions in the Bing Search connector." border="false":::
 
 As another example, the Outlook connector lets your workflow manage your email, calendar, and contacts by also providing triggers and actions.
 
 Now, you need to map each task in your flowchart to the triggers and actions available in Azure Logic Apps. The following diagram shows the connectors that you use in the news monitoring app with the relevant triggers and actions, which are highlighted:
 
-:::image type="content" source="../media/news-design-process.png" alt-text="Diagram shows operations available in connectors used by news monitoring app." border="false" lightbox="../media/news-design-process.png":::
+:::image type="content" source="../media/news-design-process.png" alt-text="Diagram shows operations available in connectors used by news monitoring app." border="false":::
 
 ## Define your workflow with the designer
 
 The workflow designer in Azure Logic Apps is a graphical tool for creating workflows. You can pick from a gallery of connectors that contain the triggers and actions that you can use in your workflow. You use the designer to arrange the trigger, actions, and control actions. The following screenshot shows the designer with the completed workflow:
 
-:::image type="content" source="../media/news-app-designer-view.png" alt-text="Screenshot shows workflow designer with finished news monitoring app." lightbox="../media/news-app-designer-view.png":::
+:::image type="content" source="../media/news-app-designer-view.png" alt-text="Screenshot shows workflow designer with finished news monitoring app.":::
 
 After you save your workflow, Azure automatically publishes your logic app resource to production. The workflow runs whenever the trigger activates.
 

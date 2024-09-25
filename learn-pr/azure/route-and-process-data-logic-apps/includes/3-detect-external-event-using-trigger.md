@@ -16,7 +16,7 @@ Suppose you want to run your workflow only when called from code or another sour
 
 The following diagram summarizes the previously described trigger types:
 
-:::image type="content" source="../media/trigger-types.png" alt-text="Diagram shows four trigger types: polling, push, recurrence, and request." border="false" lightbox= "../media/trigger-types.png":::
+:::image type="content" source="../media/trigger-types.png" alt-text="Diagram shows four trigger types: polling, push, recurrence, and request." border="false":::
 
 The following sections provide more information about polling triggers and push triggers.
 
@@ -28,7 +28,7 @@ After you add a polling trigger to your workflow, you set the **Frequency** and 
 
 Polling triggers require you to choose between how often the triggers run and how much they cost to run. Often, there's a delay between when new data or an event happens and when the trigger detects that data or event. For example, suppose a polling trigger checks for data every five minutes. New data is available after seven minutes. The trigger doesn't detect the new data until the next poll, which happens at 10 minutes. The following diagram shows how this polling works:
 
-:::image type="content" source="../media/polling-trigger.png" alt-text="Diagram shows a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The trigger doesn't detect the new data until the next poll, which happens at 10 minutes." border="false" lightbox="../media/polling-trigger.png":::
+:::image type="content" source="../media/polling-trigger.png" alt-text="Diagram shows a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The trigger doesn't detect the new data until the next poll, which happens at 10 minutes." border="false":::
 
 In the worst case, the potential delay when detecting new data is equal to the polling interval. So why not use a smaller interval? To check for new data, the Azure Logic Apps execution engine needs to run your workflow, which incurs a cost. Generally, the shorter the interval, the higher the cost, but the trigger responds faster to new data or events. The best polling interval for your trigger depends on your business process and tolerance for delay.
 
@@ -46,13 +46,13 @@ A *push* trigger waits for notifications from a service or system when data or a
 
 On the positive side, push triggers don't run when no data or events are available. So, they don't incur as much cost as polling does. These triggers also immediately respond when new data or events exist. The following diagram shows how this push process works:
 
-:::image type="content" source="../media/push-trigger.png" alt-text="Diagram shows a timeline where a marker indicates when new data becomes available. The push trigger detects the data and immediately responds." border="false" lightbox="../media/push-trigger.png":::
+:::image type="content" source="../media/push-trigger.png" alt-text="Diagram shows a timeline where a marker indicates when new data becomes available. The push trigger detects the data and immediately responds." border="false":::
 
 Why not use push triggers all the time when they respond faster and cost less than polling triggers? Unfortunately, not every connector offers a push trigger. A service or system might not support push triggers, or maybe the connector author didn't choose to implement a push trigger. Generally, a connector offers either polling triggers or push triggers, but not both. In rare cases where a connector offers both options, consider using the push trigger for better efficiency and less cost.
 
 The following screenshot shows the designer with the news monitoring logic app workflow where the **Bing Search** trigger appears as the first step:
 
-:::image type="content" source="../media/news-complete-workflow-designer.png" alt-text="Screenshot shows example workflow in the designer. Arrows connect the operations to show execution through the workflow." lightbox="../media/news-complete-workflow-designer.png":::
+:::image type="content" source="../media/news-complete-workflow-designer.png" alt-text="Screenshot shows example workflow in the designer. Arrows connect the operations to show execution through the workflow.":::
 
 ## Trigger parameters and return values
 
@@ -62,7 +62,7 @@ A trigger's return values are the results or outputs from the trigger operation.
 
 Some triggers return an array or collection, rather than a single item. The following diagram shows what this output array or collection looks like:
 
-:::image type="content" source="../media/trigger-returns-array.png" alt-text="Diagram shows a trigger interacting with a service. The trigger sends inputs to the service, and the service returns an object array. Each object contains outputs that subsequent steps can use." border="false" lightbox="../media/trigger-returns-array.png":::
+:::image type="content" source="../media/trigger-returns-array.png" alt-text="Diagram shows trigger interacting with a service. Trigger sends inputs to service, and the service returns an object array." border="false":::
 
 To process each item, you can use a loop, such as a **For each** or **Until** loop. 
 
@@ -70,17 +70,17 @@ Some triggers accept an array or collection as input. By default, most triggers 
 
 The following diagram shows how the **RSS** trigger named **When a feed item is published** splits up the array and sends each item to an individual workflow instance for processing:
 
-:::image type="content" source="../media/trigger-splits-array.png" alt-text="Diagram shows three objects returned from a trigger and three workflow instances in the logic app. An arrow connects each object in the array with each workflow instance in the logic app." border="false" lightbox="../media/trigger-splits-array.png":::
+:::image type="content" source="../media/trigger-splits-array.png" alt-text="Diagram shows three objects returned from a trigger and three workflow instances in the logic app. An arrow connects each object in the array with each workflow instance in the logic app." border="false":::
 
 ## Triggers in the designer
 
 The workflow designer includes a connector gallery that contains the triggers and actions you can use in your workflow. Typically, you use the connector gallery search box to find and select a connector for your scenario. Then, you review any triggers that the connector provides. The following screenshot shows how the workflow designer presents connectors for you to select:
 
-:::image type="content" source="../media/choose-connector-trigger.png" alt-text="Screenshot shows workflow designer with available connectors." lightbox="../media/choose-connector-trigger.png":::
+:::image type="content" source="../media/choose-connector-trigger.png" alt-text="Screenshot shows workflow designer with available connectors.":::
 
 After you select a connector, the triggers available for that connector appear:
 
-:::image type="content" source="../media/choose-trigger.png" alt-text="Screenshot shows workflow designer and selected connector with available triggers." lightbox="../media/choose-trigger.png":::
+:::image type="content" source="../media/choose-trigger.png" alt-text="Screenshot shows workflow designer and selected connector with available triggers.":::
 
 The next unit shows how to create a logic app resource and workflow in the Azure portal along with how to add and configure trigger in the workflow designer.
 
