@@ -6,13 +6,13 @@ ASP.NET Core equips developers to handle a wide range of modern web development 
 
 ### Versatile application development
 
-- **Build modern web apps**: Create dynamic, responsive web applications that cater to a wide range of business needs. ASP.NET Core supports features like MVC and Blazor, enabling you to build interactive web UIs as reusable components using C#. Blazor also allows for code sharing between client and server, providing a seamless development experience.
+- **Build modern web apps**: Create dynamic, responsive web applications that cater to a wide range of business needs. ASP.NET Core supports features like MVC and Blazor which enabling you to build interactive web UIs as reusable components using C#. Blazor also allows for code sharing between client and server, providing a seamless development experience.
 - **Build robust API services**: Supports both RESTful APIs and gRPC. RESTful APIs are widely used for their simplicity and compatibility with web standards, while gRPC offers high performance and efficient communication, making it ideal for real-time applications and microservices.
 - **Develop Internet of Things (IoT) apps**: Utilize ASP.NET Core to connect and manage IoT devices, enabling real-time data processing and interaction. The framework’s cross-platform capabilities make it ideal for IoT solutions.
 - **Create mobile backends**: Support mobile applications with robust back-end services, ensuring seamless data synchronization and user management. ASP.NET Core’s flexibility allows you to build APIs that will be consumed by mobile apps.
 - **Deploy to the cloud or on-premises**: Flexibly deploy your applications to cloud platforms such as Azure, or host them on your own servers. ASP.NET Core’s integration with Azure services simplifies cloud deployment and management.
 - **Integrate with additional front-end frameworks**: Seamlessly work with popular front-end technologies like React, Angular, and Vue to build rich, interactive user interfaces. ASP.NET Core’s support for these frameworks allows for the creation of sophisticated client-side applications.
-- **Run on .NET, run cross-platform**: Benefit from a cross-platform framework that allows you to develop and run applications on Windows, macOS, and Linux. .NET provides a consistent runtime environment, extensive libraries, and a strong ecosystem, ensuring your applications are performant, secure, and scalable.
+- **Run on .NET, run cross-platform**: Benefit from a cross-platform framework that allows you to develop and run applications on Windows, macOS, and Linux. .NET provides a high-performance runtime environment, extensive libraries, and a strong ecosystem, ensuring your applications are performant, secure, and scalable.
 
 ### Robust architecture
 

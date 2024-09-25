@@ -18,6 +18,6 @@ ASP.NET Core provides the tools and libraries needed to implement these features
 ## What is the main goal?
 By the end of this session, you'll know:
 
-- What .NET web development features in ASP.NET Core will help you successfully meet modern web app demands.
+- What ASP.NET Core features will help you successfully meet modern web app demands.
 - An overview of how ASP.NET Core works.
 - When to use ASP.NET Core.
