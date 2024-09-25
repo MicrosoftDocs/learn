@@ -36,7 +36,7 @@ print("Blast off!! 🚀")
 The `for` loop is a statement with five important parts:
 
 - The word `for`, followed by a space.
-- The variable name you want to create for each value in the sequence (`number`).
+- The variable name you want to create for each value in the sequence (`number`). Note multiple variables need to be separated by commas.
 - The word `in`, surrounded by spaces.
 - The name of the list (`countdown`, in the preceding example), or iterable that you want to loop over, followed by a colon (`:`).
 - The code you want to run for each item in the iterable, separated by nested whitespace.
