@@ -24,10 +24,10 @@ quiz:
     - content: "Send email"
       isCorrect: true
       explanation: "The workflow sends an email when the sentiment is negative."
-    - content: "Insert row"
+    - content: "Create blob"
       isCorrect: false
       explanation: "The workflow inserts a row only when the sentiment is positive."
-    - content: "Both send email and insert row"
+    - content: "Both Send email and Create blob"
       isCorrect: false
       explanation: "The condition action runs a different branch based on whether the condition is true or false, not both branches."
 
