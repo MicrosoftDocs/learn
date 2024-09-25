@@ -33,6 +33,32 @@ The middleware pipeline in ASP.NET Core is a series of components that process H
 - **Custom middleware**: You can create custom middleware to handle specific requirements of your application. For example, you might create middleware to handle custom logging, request validation, or response modification.
 - **Real-time communication with SignalR**: SignalR is one of the many services that can be added to the ASP.NET Core modular middleware pipeline. It enables real-time web functionality by allowing server-side code to push updates to clients instantly. It's used for real-time interactions, such as chat applications, live dashboards, and collaborative tools.
 
+### Adding Built-in Components
+ASP.NET Core’s modular architecture allows you to easily add built-in components and services to your application. For example, you can add and configure the built-in logging service to capture and manage logs.
+
+The following code sample demonstrates how easy it is to plug in a built-in service like logging into your ASP.NET Core application. You can similarly add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
+
+```csharp
+// In Program.cs
+var builder = WebApplication.CreateBuilder(args);
+
+// Add built-in logging service
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+```
+
+In the previous sample:
+
+- `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear any existing providers and add the *Console* and *Debug* logging providers.
+- `app.MapGet`: This is a simple endpoint to demonstrate that the application is running.
+
 ### Server-side development
 
 ASP.NET Core provides a robust and flexible backend for building a wide range of applications, from simple web apps to complex, distributed systems.
