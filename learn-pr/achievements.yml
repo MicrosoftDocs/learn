@@ -3917,3 +3917,13 @@ achievements:
   title: Introduction to Microsoft data classification and protection
   summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
   iconUrl: /training/achievements/data-classification-and-data-protection.svg
+- uid: learn.azure.classification-and-protection.badge
+  type: badge
+  title: Intro to data classification and protection
+  summary: Learners should know and be able to describe data classification and data protection key concepts.
+  iconUrl: /training/achievements/classification-and-protection.svg
+- uid: learn.wwl.configure-role-based-access-control.badge
+  type: badge
+  title: Configure role-based access control
+  summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
+  iconUrl: /training/achievements/roles-based-access-control.svg

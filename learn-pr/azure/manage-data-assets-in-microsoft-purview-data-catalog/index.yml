@@ -20,7 +20,7 @@ abstract: |
     - Create and manage a business glossary to organize and define your data assets.
 prerequisites: |
   - Ability to navigate the Azure portal
-  - Access to a Microsoft Purview account with a data source added and scanned. You can follow our [deployment learn module to deploy a Microsoft Purview resource and scan the data.](/learn/modules/deploy-microsoft-purview-scan-data-resources/)
+  - Access to a Microsoft Purview account with a data source added and scanned. You can follow the steps in [Scan data sources in Microsoft Purview](/purview/scan-data-sources).
 iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg
 levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

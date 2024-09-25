@@ -43,7 +43,8 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | **Hierarchical Namespace** |
     | Enable hierarchical namespace | *Uncheck*. Data Lake hierarchical namespace is for big-data applications that aren't relevant to this module. |
     | **Access protocols** |
-    | Enable hierarchical namespace | Accept default. Blob and Data Lake Gen2 endpoints are provisioned by default. |
+    | Enable SFTP | Accept default. |
+    | Enable network file system v3 | Accept default. |
     | **Blob storage** |
     | Allow cross-tenant replication | *Uncheck*. Active Directory isn't being used for this exercise. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the *default* value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we use the high-performance option for our blobs. |
@@ -85,6 +86,6 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
 
 1. When validation passes successfully, select **Create** to deploy the storage account.
 
-1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about your new storage account.
+1. When deployment is complete, which can take up to two minutes, select **Go to resource**. View the details about your new storage account in the **Essentials** section.
 
-You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. The typical flow for creating a storage account is: first analyze your data and goals, and then configure the storage account options to match.
+You created a storage account with settings driven by your business requirements. For example, you might select a West US datacenter because your customers are primarily located in southern California. The typical flow for creating a storage account is: first analyze your data and goals, and then configure the storage account options to match.
