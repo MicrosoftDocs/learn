@@ -34,7 +34,7 @@ First, use Cloud Shell to create a self-signed certificate, which you'll then us
     openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem -nodes
     ```
 
-    When you're prompted for a password, enter **Pa$$w0rd**, and then press <kbd>Enter</kbd>.
+    When you're prompted, enter your secure password, and then press <kbd>Enter</kbd>.
 
 ## Configure the gateway to request client certificates
 
