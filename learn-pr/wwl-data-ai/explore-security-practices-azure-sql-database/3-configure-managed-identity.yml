@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.explore-security-practices-azure-sql-database.configure-managed-identity
-title: Configure Managed Identity
+title: Configure managed identity
 metadata:
-  title: Configure Managed Identity
+  title: Configure managed identity
   description: "Learn how to configure managed identity for Azure SQL Database."
   ms.date: 09/24/2024
   author: jupadrao
