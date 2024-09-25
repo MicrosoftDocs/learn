@@ -1,5 +1,7 @@
 RAG with Azure OpenAI allows developers to use supported AI chat models that can reference specific sources of information to ground the response. Adding this information allows the model to reference both the specific data provided and its pretrained knowledge to provide more effective responses.
 
+> [!VIDEO https://play.vidyard.com/2E323dRGxhs8P8fvXNhdg7?embed_button=0&hide_html5_playlist=1&v=3.1.1&viral_sharing=0&vyetoken=&type=inline&referring_url=https%253A%252F%252Fvideos.microsoft.com%252Fai-office-hours%252Fwatch%252Fe2boCRTaNDkRTEV5YuZaXz&]
+
 Azure OpenAI enables RAG by connecting pretrained models to your own data sources. Azure OpenAI on your data utilizes the search ability of Azure AI Search to add the relevant data chunks to the prompt. Once your data is in a AI Search index, Azure OpenAI on your data goes through the following steps:
 
 1. Receive user prompt.
