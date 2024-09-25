@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aspnet-core.how-aspnet-core-works
+title: How ASP.NET Core works
+metadata:
+  title: How ASP.NET Core works
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 9/13/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-aspnet-core-works.md)]

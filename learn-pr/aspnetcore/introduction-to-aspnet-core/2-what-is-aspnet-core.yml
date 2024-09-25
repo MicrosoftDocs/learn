@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aspnet-core.what-is-aspnet-core
+title: What is ASP.NET Core?
+metadata:
+  title: What is ASP.NET Core?
+  description: "ASP.NET Core is the modern, high-performance web development framework for .NET, that runs on Windows, Linux, macOS, and Docker"
+  ms.date: 9/13/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-aspnet-core.md)]
