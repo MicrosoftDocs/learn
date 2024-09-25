@@ -36,7 +36,7 @@ The middleware pipeline in ASP.NET Core is a series of components that process H
 ### Adding Built-in Components
 ASP.NET Core’s modular architecture allows you to easily add built-in components and services to your application. For example, you can add and configure the built-in logging service to capture and manage logs.
 
-In the following example logging services are added in an ASP.NET Core *Program.cs* file. The *Program.cs file* is the entry point of your ASP.NET Core application. It sets up the application host, configures services, and defines the request handling pipeline. This demonstrates how to quickly plug in a built-in service like logging into your ASP.NET Core application. You can similarly add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
+In the following example logging services are added in an ASP.NET Core *Program.cs* file. The *Program.cs file* is the entry point of your ASP.NET Core application. It sets up the application host, configures services, and defines the request handling pipeline. This demonstrates how to quickly plug in a built-in service like logging into your ASP.NET Core application. You can add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
