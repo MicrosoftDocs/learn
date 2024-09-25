@@ -18,27 +18,35 @@ quiz:
       choices:
         - content: "To maximize profits from AI systems."
           isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
         - content: "To develop AI systems as quickly as possible."
           isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
         - content: "To ensure AI systems are safe, trustworthy, and ethical."
           isCorrect: true
+          explanation: "Correct! Ensuring AI systems are safe, trustworthy, and ethical is the primary goal of Responsible AI."
         - content: "To replace human decision-making with AI."
           isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
     - content: "Which principle is NOT one of the six identified by Microsoft for Responsible AI?"
       choices:
         - content: "Fairness."
           isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
         - content: "Innovation."
           isCorrect: true
+          explanation: "Correct! This is NOT one of the six principles of Reponsible AI."
         - content: "Inclusiveness."
           isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
         - content: "Accountability."
           isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
     - content: "What does the principle of Fairness in Responsible AI emphasize?"
       choices:
         - content: "Maximizing AI performance at all costs."
           isCorrect: false
-           explanation: "Incorrect. This is not what the principle of Fairness in Responsible AI emphasizes."
+          explanation: "Incorrect. This is not what the principle of Fairness in Responsible AI emphasizes."
         - content: "Ensuring AI systems perform equally well across all demographic groups."
           isCorrect: true
           explanation: "Correct! Ensuring AI systems perform equally well across all demographic groups is what the principle of Fairness in Responsible AI emphasizes."
