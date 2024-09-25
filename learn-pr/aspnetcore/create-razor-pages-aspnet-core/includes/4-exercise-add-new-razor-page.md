@@ -39,7 +39,7 @@ To create a new Razor page, you'll use the .NET CLI.
     This adds a heading to the page, as well as two HTML comment placeholders for functionality you'll add later.
 
 1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
-1. Return to the terminal running `dotnet watch` and press **Ctrl+R** to reload the app and detect the new files.
+1. Return to the terminal running `dotnet watch`, and select **Ctrl+R** to reload the app and detect the new files.
 
 ## Add the Pizza List page to the navigation menu
 
