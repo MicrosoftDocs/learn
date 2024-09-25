@@ -3,8 +3,8 @@ uid:  learn.dotnet-maui.build-mobile-and-desktop-apps.describe-maui-architecture
 title: Describe the .NET MAUI architecture
 metadata:
   unitType: unit 
-  title: "Describe the .NET MAUI architecture"
-  description: "Explain the structure of .NET MAUI."
+  title: Describe the .NET MAUI architecture
+  description: "Explain the structure of .NET MAUI (Multi-platform Application User Interface)."
   ms.date: 10/13/2023
   author: codemillmatt  
   ms.author: masoucou  
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect, CSV isn't a markup language."
     - content: "XAML"
       isCorrect: true
-      explanation: "Correct, XAML is the language you use to lay out a .NET MAUI application's UI."
+      explanation: "Correct, XAML (Extensible Application Markup Language) is the language you use to lay out a .NET MAUI application's UI."

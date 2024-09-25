@@ -1,12 +1,12 @@
 After you install and configure the .NET MAUI tools, you can use Visual Studio to build a .NET MAUI app. 
 
-In this unit, you'll learn about the structure of the .NET MAUI template in Visual Studio. You'll use this template for creating cross-platform mobile and desktop apps.
+In this unit, you learn about the structure of the .NET MAUI template in Visual Studio. You use this template for creating cross-platform mobile and desktop apps.
 
 ## How to get started
 
 To create a new .NET MAUI project with Visual Studio, in the **Create a new project** dialog box, select the .NET MAUI project type, and then choose the .NET MAUI App template:
 
-:::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user has selected the .NET MAUI App template.":::
+:::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user selects the .NET MAUI App template.":::
 
 Follow the steps in the wizard to name the project and specify a location.
 
@@ -18,7 +18,7 @@ A newly created .NET MAUI project contains the items as shown:
 
 The project contents include the following items:
 
-- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder, and define app-wide colors and default styles for every .NET MAUI built-in control. Here, you'll see the two resource dictionaries being merged together:
+- **App.xaml**. This file defines the application resources that the app uses in the XAML layout. The default resources are located in the `Resources` folder, and define app-wide colors and default styles for every .NET MAUI built-in control. Here, you see the two resource dictionaries being merged together:
 
     ```xml
     <?xml version = "1.0" encoding = "UTF-8" ?>
@@ -37,7 +37,7 @@ The project contents include the following items:
     </Application>
     ```
 
-- **App.xaml.cs**. This is the code-behind for the App.xaml file. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`. These handlers are defined as members of the `Application` base class. The following code shows examples:
+- **App.xaml.cs**. This file is the code-behind for the App.xaml file. It defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`. These handlers are defined as members of the `Application` base class. The following code shows examples:
 
     > [!NOTE]
     > You can also override platform-specific lifecycle events when the app first starts running. This is described later.
