@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2024
+  ms.date: 09/23/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
       explanation: "Passwordless is an authentication method that relies on something you have; plus something you are or something you know. For example, Windows Hello is a passwordless authentication method."
   - content: "Which security model assumes the worst-case security scenario, and protects resources accordingly?"
     choices:
-    - content: "Zero trust"
+    - content: "Zero Trust"
       isCorrect: true
       explanation: "Zero Trust is a security model that assumes the worst case scenario and protects resources with that expectation."
     - content: "Defense-in-depth"
