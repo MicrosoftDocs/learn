@@ -30,7 +30,7 @@ For this exercise, you need an API key and endpoint to call the API and get back
    | **Region** | <*Azure-region*> | Select an Azure region that offers the free tier. This example selects **West US**. |
    | **Name** | <*Language-resource*> | Enter unique name for your Language resource. This example uses **My-Language-Resource**. |
    | **Pricing tier** | **Free F0 (5K Transactions per 30 days)** | This tier provides 5,000 transactions every month. For pricing information, see [Bing Search API pricing](https://azure.microsoft.com/pricing/details/cognitive-services/language-service/#pricing). |
-   | **By checking this box, I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.** | N/A | Select this option to confirm your acknowledgement. |
+   | **By checking this box, I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.** | N/A | Select this option to confirm your acknowledgment. |
 
 1. When you finish, select **Review + create**.
 
@@ -113,7 +113,7 @@ Next, set up the **Sentiment** action's parameters to pass in the article descri
 
 1. Save your workflow.
 
-   This step automatically pushes your saved changes to your deployed logic app resource. Azure AI services processes article descriptions that contain the specified search term and gives each description a sentiment ranking. Recall that the sentiment ranking can be **Negative**, **Neutral**, **Positive**, or **Mixed**.
+   This step automatically pushes your saved changes to your deployed logic app resource. Azure AI services process article descriptions that contain the specified search term and gives each description a sentiment ranking. Recall that the sentiment ranking can be **Negative**, **Neutral**, **Positive**, or **Mixed**.
 
 1. Test the workflow. To manually activate the trigger, on the designer toolbar, select **Run** > **Run**.
 

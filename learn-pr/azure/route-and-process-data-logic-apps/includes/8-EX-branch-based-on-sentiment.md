@@ -69,7 +69,7 @@ When the workflow trigger receives a positive article, you want to save the arti
 
 1. When you finish, select **Review + create**.
 
-1. After deployent completes, select **Go to resource**.
+1. After deployment completes, select **Go to resource**.
 
 ## Set up blob container
 
@@ -77,7 +77,7 @@ Now add a blob container to your storage account.
 
 1. In your storage account, on the left menu, under **Data storage**, select **Containers**.
 
-1. On the **Containers** tolbar, select **+ Container**, and provide the following information for this example:
+1. On the **Containers** toolbar, select **+ Container**, and provide the following information for this example:
 
    | Property | Value | Description |
    |----------|-------|-------------|
@@ -172,7 +172,7 @@ Now, map the article data to the respective email fields.
 
    - If the trigger doesn't find a matching article, the trigger "skips" execution, which means you have to rerun the workflow again at a later time to check for any new matches.
 
-   - If the trigger finds a matching article, the trigger fires and sends the content to the **Sentiment** action, which passes the content to the Azure AI Services API to get a sentiment ranking. The **If sentiment is positive** condition evalutes the sentiment and takes the corresponding action based on the outcome.
+   - If the trigger finds a matching article, the trigger fires and sends the content to the **Sentiment** action, which passes the content to the Azure AI Services API to get a sentiment ranking. The **If sentiment is positive** condition evaluates the sentiment and takes the corresponding action based on the outcome.
 
 1. After a workflow successfully executes, review the workflow run history.
 
