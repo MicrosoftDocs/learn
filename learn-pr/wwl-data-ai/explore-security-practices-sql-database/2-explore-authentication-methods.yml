@@ -8,6 +8,6 @@ metadata:
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-authentication-methods.md)]
