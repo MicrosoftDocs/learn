@@ -1,5 +1,3 @@
-
-
 In this exercise, you'll learn about how to create a thread. You'll do so using C#'s implementation of threads that uses something called a Task. The syntax for creating a Task uses a Lambda expression. In C#, a Lambda expression is a short block of code that accepts parameters and returns a value. It's defined as an anonymous function (function without a name).
 
 You begin by creating a boolean flag called `calculating` to tell you if a thread is already running or not. You then use it in an `if` statement, along with the `gameOver` and `IsMinNextReached`, to determine if it should create a new thread. If no Task is running, you create a Task in the form of a Lambda expression to calculate the new ant generation. Let's get started.
