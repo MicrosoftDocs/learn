@@ -30,7 +30,7 @@ df = spark.read.load('Files/data/products.csv',
 display(df.limit(10))
 ```
 
-As you learned previously, the `%%pyspark` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is PySpark. In most cases, PySpark is the default language; and well generally stick to it in the examples in this module. However, for completeness, here's the equivalent Scala code for the products data example:
+As you learned previously, the `%%pyspark` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is PySpark. In most cases, PySpark is the default language; and we'll generally stick to it in the examples in this module. However, for completeness, here's the equivalent Scala code for the products data example:
 
 ```scala
 %%spark
@@ -38,7 +38,7 @@ val df = spark.read.format("csv").option("header", "true").load("Files/data/prod
 display(df.limit(10))
 ```
 
-The magic `%%spark` is used to specify Scala. Notice that the Scala implementation of the dataframe behaves very similarly to the PySpark version.
+The magic `%%spark` is used to specify Scala. Notice that the Scala implementation of the dataframe behaves similarly to the PySpark version.
 
 Both of these code samples would produce output like this:
 

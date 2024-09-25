@@ -1,4 +1,4 @@
-You can use a Fabric notebook to connect to data held in Azure blob storage, an Azure SQL Database, and other storage options. By connecting to a data source, you can use the data in analytical processes even through it is not stored in a Fabric lakehouse. You can also use Spark code to filter and process the data before loading it into the lakehouse, enabling you to use Spark as a powerful tool for data ingestion into your Fabric analytics environment.
+You can use a Fabric notebook to connect to data held in Azure blob storage, an Azure SQL Database, and other storage options. By connecting to a data source, you can use the data in analytical processes even through it isn't stored in a Fabric lakehouse. You can also use Spark code to filter and process the data before loading it into the lakehouse, enabling you to use Spark as a powerful tool for data ingestion into your Fabric analytics environment.
 
 ## Connect to Azure blob storage
 
@@ -62,7 +62,7 @@ display (sql_df)
 
 ## Write data into a lakehouse file
 
-After connecting to your dataand loading it into a dataframe, you can save it into a lakehouse. For example, the following code saves a dataframe in *Parquet* format, which supports structured, semi-structured, and unstructured data. Parquet has an optimized columnar storage structure, and efficient compression capabilities.
+After connecting to your data and loading it into a dataframe, you can save it into a lakehouse. For example, the following code saves a dataframe in *Parquet* format, which supports structured, semi-structured, and unstructured data. Parquet has an optimized columnar storage structure, and efficient compression capabilities.
 
 ```python
 # Write dataframe to Parquet file format
