@@ -28,7 +28,7 @@ Complete the following steps to provision a resource in the Azure portal:
     |Resource group     |Use an existing resource group or create a new one.          |
     |Region      |Select a region close to you for best response times.          |
     |Name     |The name must be globally unique.          |
-    |Pricing tier     |Currently S0 is the only available tier.          |
+    |Pricing tier     |Currently *Standard S0* is the only available tier.          |
 
     :::image type="content" source="../media/project-details.png" alt-text="Screenshot from the Azure portal with configuration basic details of Azure OpenAI highlighted in red.":::
 
