@@ -1,31 +1,49 @@
-Our marketing team needed to gauge customer response to our new shoe. We wanted to monitor social media, determine customer reaction, and route the data to a database or to customer service based on sentiment.
+Now that you created your news monitoring logic app, the marketing and public relations teams can better monitor the athletic shoe market. You can also evaluate the article sentiment and route articles to an Azure Storage container or to a team, based on sentiment.
 
-The Azure Logic Apps integration platform lets us automate this business process by creating a logic app workflow. We mapped each step in our workflow to available components. Our workflow used the X trigger to detect mentions of our product and launch the subsequent steps, based on the tweet sentiment. The Azure AI services action let us analyze whether the tweets were positive or negative. A control action helped us decide where to route the tweet based on sentiment. Finally, we used actions to insert a row in SQL Server and send an Outlook email.
+You automated this business process by building a logic app workflow that integrated different services and systems using Azure Logic Apps. You mapped each step in the workflow to the following operations:
 
-Imagine the work necessary to build this app from scratch. We'd have to write code to access each of the services' APIs. We'd need a polling infrastructure to monitor X, and trigger our logic app workflow when new tweets were available. After all the code was ready, we'd need servers to host the app.
+- The **Bing Search** trigger found articles about the shoe industry and launched the subsequent steps, based on the article sentiment. 
 
-Azure Logic Apps made creating this monitoring app easy. Connectors did the hard work of integrating systems that were never designed to work together. Building the app took us less than an hour, and we didn't have to write any code or set up any servers. We can now analyze every tweet about our product and our business analytics can use the data to shape future products.
+- The **Azure Cognitive Services** action analyzed whether the articles were positive, negative, neutral, or mixed.
 
-## Clean up
+- The **Condition** control action chose where to route the article, based on sentiment.
 
-Resources that you leave running can cost you money, so it's a good idea to delete the resources you created for this module. To delete your resources:
+- The **Create blob** action added positive articles as blobs to a storage container.
 
-### Delete the resource group
+- The **Outlook** action sent emails for non-positive articles.
 
-1. In the Azure portal, select the portal menu on the left side of the screen.
-1. Select **Resource groups** in the menu.
-1. In the list of resource groups, find and select the resource group you created for this module.
-1. At the top of the screen, select **Delete resource group**.
-1. Enter the resource group name, then select **Delete**.
+Imagine the work necessary to create this app from scratch without prebuilt operations, a workflow designer, and the Azure cloud platform. Instead, we'd have to complete the following tasks ourselves:
+
+- Write code to access each service's API.
+
+- Build a polling infrastructure to monitor articles found through the **Bing Search** service, and trigger the logic app workflow when new relevant articles were available.
+
+- Set up and maintain servers to host the app.
+
+Azure Logic Apps made creating this monitoring app easier in the following ways:
+
+- Connectors did the hard work of integrating systems that weren't ever designed to work together.
+
+- Building the app took about an hour without having to write any code or set up any servers.
+
+- You can now analyze new articles about the shoe industry, and business analytics can use the data to shape future products.
+
+Congratulations, now that you created an example logic app workflow, you can try building other logic app workflows that use different operations.
+
+## Clean up your resources
+
+Resources that you leave running can continue to cost you money, so make sure to delete all the resources that you created for this module. If you used a single resource group to create all your resources, you only need to delete the group. If you didn't use the same resource group, you must find and delete individual resources.
+
+### Delete your resource group
+
+When you delete a resource group, you delete all the resources inside that group.
+
+1. In the Azure portal search box, enter and select **Resource groups**.
+
+1. From the resource group list, find and select the resource group that you created for this module.
+
+1. On the resource group toolbar, select **Delete resource group**.
+
+1. In the confirmation box, enter the resource group name, and select **Delete**.
+
 1. Select **Delete** again to confirm deletion.
-
-By deleting the resource group, you also delete all the resources contained in it.
-
-### Delete the SQL server
-
-1. In the Azure portal, search for and select **SQL Servers**.
-1. In the list, select the SQL Server we created for this exercise (it's named *mslearn-exercise-sqlserver-xxxxxx*, with the x's replaced with a random string).
-1. At the top of the overview page, select **Delete**. If you don't see the **Delete** button, select the ellipses (**...**) and select **Delete**.
-1. Select **Skip feedback**, then type the server name into the box and select **Delete**.
-
-By deleting the SQL server, you also delete the SQL database you created for this module.
