@@ -1,6 +1,10 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/9-summary.yml",
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/10-summary"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/4-EX-create-social-media-tracker.yml",
       "redirect_url": "/training/modules/route-and-process-data-logic-apps/4-exercise-create-news-tracker"
     },
