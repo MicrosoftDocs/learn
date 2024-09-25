@@ -1,6 +1,22 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/9-summary.yml",
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/10-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/4-EX-create-social-media-tracker.yml",
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/4-exercise-create-news-tracker"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/6-EX-analyze-content-of-tweet.yml",
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/6-exercise-analyze-article-content"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/8-EX-branch-based-on-tweet-sentiment.yml",
+      "redirect_url": "/training/modules/route-and-process-data-logic-apps/8-exercise-branch-based-on-sentiment"
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn-sqlserver.assess-convert-sql-server-databases-using-dma.badge.yml",
       "redirect_url": "/training/paths/migrate-sql-workloads-azure/"
     },
@@ -32568,6 +32584,106 @@
       "source_path_from_root": "/learn-pr/github/introduction-to-github-copilot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-to-github-copilot/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/2-what-microsoft-info-protection-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/2-what-sensitive-information.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/3-what-sensitivity-labels.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/3-what-data-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/4-use-sensitivity-labels-classify-protect-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/4-common-scenarios-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/5-what-unified-labeling-scanner.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/5-what-data-loss-prevention.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/6-what-microsoft-cloud-app-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/6-microsoft-classification-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/7-what-encryption-customer-key.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/8-what-office-365-message-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-data-classification-protection/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-role-based-access-control/index.md",

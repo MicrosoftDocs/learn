@@ -7,8 +7,6 @@ Teleportation protocol uses a combination of entanglement and classical communic
 
 Let's review the protocol of quantum teleportation.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## The protocol of quantum teleportation
 
