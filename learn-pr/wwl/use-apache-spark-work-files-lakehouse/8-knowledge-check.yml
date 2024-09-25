@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2024
+  ms.date: 09/25/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
-    - build-2023
     - build-2023-dataai
     - build-2023-fabric
 durationInMinutes: 3
@@ -21,9 +20,9 @@ quiz:
     - content: "A Spark job definition."
       isCorrect: false
       explanation: "Incorrect. A Spark job definition will run Spark code, but is not the best choice for interactive analytics."
-    - content: "A Data Factory pipeline."
+    - content: "A pipeline."
       isCorrect: false
-      explanation: "Incorrect. A Data Factory pipeline is not an interactive Spark environment."
+      explanation: "Incorrect. A pipeline is not an interactive Spark environment."
     - content: "A notebook."
       isCorrect: true
       explanation: "Correct. Notebooks enable you to run Spark code interactively."
@@ -38,14 +37,14 @@ quiz:
     - content: "Convert the data to Parquet format."
       isCorrect: false
       explanation: "Incorrect. While you could load the data into Spark from a Parquet file, you do not need to convert the data from CSV format in order to use it in Spark."
-  - content: "Which method is used to split the data across folders when saving a dataframe?"
+  - content: "Which format is used to store data as lakehouse tables in Microsoft Fabric?"
     choices:
-    - content: "`splitBy`"
+    - content: "`Comma-separated-values (CSV)`"
       isCorrect: false
-      explanation: "That's incorrect. The `splitBy` method isn't used to partition data across folders"
-    - content: "`distributeBy`"
+      explanation: "That's incorrect. CSV is a common format for delimited text data, bt it is not used for tables in Fabric."
+    - content: "`Avro`"
       isCorrect: false
-      explanation: "That's incorrect. The `distributeBy` method isn't used to split across folders when saving a DataFrame."
-    - content: "`partitionBy`"
+      explanation: "That's incorrect. AVRO is a common file format in big data processing, but it is not used for tabkes in Fabric."
+    - content: "`Delta`"
       isCorrect: true
-      explanation: "That's correct. The `partitionBy` method partitions the dataframe based on specified columns."
+      explanation: "That's correct. Tables in a Fabric lakehouse are based on Delta Lake technology, which uses an extended format of Parquet files known as Delta."
