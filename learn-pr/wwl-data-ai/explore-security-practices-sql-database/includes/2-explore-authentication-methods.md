@@ -29,7 +29,7 @@ After provisioning a Microsoft Entra admin for your Azure SQL Database, you can 
 
 After providing the correct username and password, users must complete an extra verification step, such as responding to a push notification or entering an access code from the Microsoft Authenticator app. This process ensures that even if a user's primary credentials are compromised, unauthorized access is still prevented, therefore improving the security of the database.
 
-To learn more about the authentication and verification methods are available in Microsoft Entra ID, see [What authentication and verification methods are available in Microsoft Entra ID?](/entra/identity/authentication/concept-authentication-methods?azure-portal=true).
+To learn more about the authentication and verification methods available in Microsoft Entra ID, see [What authentication and verification methods are available in Microsoft Entra ID?](/entra/identity/authentication/concept-authentication-methods?azure-portal=true).
 
 ## Connect to Azure SQL Database using Microsoft Entra authentication
 

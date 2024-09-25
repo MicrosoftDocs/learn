@@ -12,47 +12,36 @@ durationInMinutes: 8
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is the primary difference between the single database and elastic pools deployment models in Azure SQL Database?
+  - content: What is the role of Multifactor Authentication (MFA) in Microsoft Entra ID?
     choices:
-    - content: The single database model allows for the allocation of storage and compute resources to a group of databases, while the elastic pools model manages each database individually in terms of scale and data size.
+    - content: It allows users to access Azure SQL data sources without being prompted for credentials.
       isCorrect: false
-      explanation: Incorrect. The elastic pools model allows for the allocation of storage and compute resources to a group of databases, while the single database model manages each database individually in terms of scale and data size.
-    - content: In the single database model, each database has its own dedicated resources, while in the elastic pools model, resources are shared among multiple databases within the same pool.
+      explanation: Incorrect. This is a feature of Active Directory Integrated authentication mode, not MFA.
+    - content: It simplifies the sign-in process by requiring only one authentication factor.
+      isCorrect: false
+      explanation: Incorrect. MFA enhances security by requiring two or more authentication factors, not simplifying the sign-in process.
+    - content: It enhances security by requiring users to provide two or more authentication factors, significantly reducing the risk of unauthorized access.
       isCorrect: true
-      explanation: Correct. The single database model manages each database individually with its own resources, while the elastic pools model shares resources among multiple databases.
-    - content: In the single database model, resources are shared among multiple databases, while in the elastic pools model, each database has its own dedicated resources.
-      isCorrect: false
-      explanation: Incorrect. In the single database model, each database has its own dedicated resources, while in the elastic pools model, resources are shared among multiple databases within the same pool.
-  - content: How does the Hyperscale service tier affect the time needed to create database backups or to scale up or down?
+      explanation: Correct. MFA requires multiple authentication factors, enhancing the security of the database.
+  - content: What is a key difference between system-assigned and user-assigned managed identities?
     choices:
-    - content: It increases the time based on the volume of data in the database.
+    - content: System-assigned managed identities can be shared across multiple Azure resources, while user-assigned can't
       isCorrect: false
-      explanation: Incorrect. Hyperscale service tier actually reduces the time needed for these operations, regardless of the volume of data.
-    - content: It requires a constant amount of time, regardless of the volume of data in the database.
-      isCorrect: false
-      explanation: Incorrect. While Hyperscale does improve the speed of these operations, it doesn't require a constant amount of time.
-    - content: It's no longer dependent on the volume of data in the database.
+      explanation: Incorrect. It's the other way around. User-assigned managed identities can be shared, while system-assigned can't.
+    - content: User-assigned managed identities can be assigned to multiple instances of various Azure services, while system-assigned are tied to a single resource
       isCorrect: true
-      explanation: Correct. The time needed to create database backups or to scale up or down with Hyperscale isn't dependent on the volume of data in the database.
-  - content: What is the main difference between geo-replication and auto-failover groups in terms of replication type?
+      explanation: Correct. User-assigned managed identities are independent Azure resources that can be assigned to multiple instances, while system-assigned are tied to a single resource.
+    - content: User-assigned managed identities are automatically deleted when the resource is deleted, while system-assigned aren't
+      isCorrect: false
+      explanation: Incorrect. System-assigned managed identities are tied to the resource's lifecycle and are deleted when the resource is deleted.
+  - content: How does Azure SQL Database handle connection attempts when database-level firewall rules are enabled?
     choices:
-    - content: Geo-replication uses synchronous replication, while auto-failover groups use asynchronous replication.
-      isCorrect: false
-      explanation: Incorrect. Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
-    - content: Both geo-replication and auto-failover groups use asynchronous replication.
-      isCorrect: false
-      explanation: Incorrect. Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
-    - content: Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
+    - content: Azure SQL Database first checks for a database-level firewall rule matching the database name in the connection string. If no such rule exists, it then checks the server-level IP firewall rules.
       isCorrect: true
-      explanation: Correct. Geo-replication uses asynchronous replication that can cause data lag, while auto-failover groups use synchronous replication ensuring the secondary database is always in sync with the primary.
-  - content: What is the main function of Microsoft Copilot in Azure SQL Database?
-    choices:
-    - content: It allows database administrators to manage developers' tasks.
+      explanation: Correct. Azure SQL Database checks both levels of firewall rules to determine if a connection can be completed.
+    - content: It prompts the user to create a new firewall rule every time.
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot doesn't manage developers' tasks. It helps both administrators and developers manage databases and resolve issues independently.
-    - content: It translates SQL queries into natural language.
+      explanation: Incorrect. Users are prompted to create a firewall rule only if no matching rule exists.
+    - content: It only checks the server-level IP firewall rules.
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot doesn't translate SQL queries into natural language, it translates natural language into SQL queries.
-    - content: It enhances SQL management and troubleshooting by offering natural language to SQL conversion and self-help for database administration.
-      isCorrect: true
-      explanation: Correct. Microsoft Copilot in Azure SQL Database boosts productivity by translating natural language into SQL and providing self-help for database administration.
+      explanation: Incorrect. Azure SQL Database checks both database-level and server-level firewall rules.

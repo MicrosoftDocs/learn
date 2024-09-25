@@ -10,13 +10,13 @@ When you enable a system-assigned managed identity on an Azure resource like a [
 
 ### Use system-assigned manage identity
 
-Imagine a scenario where you need to enable system-assigned managed identity for your Azure Web App. You need to start by accessing the Azure portal and locating your Web App. Once there, navigate to the **Settings** section found in the left-hand menu and select **Identity**. 
+Imagine a scenario where you need to enable system-assigned managed identity for your Azure Web App. You need to start by accessing the Azure portal and finding your Web App. Once there, navigate to the **Settings** section found in the left-hand menu and select **Identity**. 
 
 :::image type="content" source="../media/3-managed-identity.png" alt-text="Screenshot showing the system-assigned managed identity option for a Web App in Azure portal.":::
 
 Within the **System assigned** tab, you'll need to switch the **Status** to **On** and then save your changes. 
 
-To enable your application to access the database using a system-managed identity, you need to create a user with the appropriate permissions on your database.
+To enable your application to access the database using a system-managed identity, you also need to create a user with the appropriate permissions on your database.
 
 ```sql
 CREATE USER [my-prod-web-app] FROM EXTERNAL PROVIDER;
@@ -24,7 +24,7 @@ ALTER ROLE db_datareader ADD MEMBER [my-prod-web-app];
 ALTER ROLE db_datawriter ADD MEMBER [my-prod-web-app];
 ```
 
-On your application code, you need to use the following connection string to connect to Azure SQL Database using a system-assigned managed identity.
+Then, in your application code, you need to use the following connection string to connect to Azure SQL Database using a system-assigned managed identity.
 
 ```
 Server=myserver.database.windows.net;Authentication=Active Directory Managed Identity; Encrypt=True;Database=my-db
