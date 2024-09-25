@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "`Comma-separated-values (CSV)`"
       isCorrect: false
-      explanation: "That's incorrect. CSV is a common format for delimited text data, bt it's not used for tables in Fabric."
+      explanation: "That's incorrect. CSV is a common format for delimited text data, but it's not used for tables in Fabric."
     - content: "`Avro`"
       isCorrect: false
-      explanation: "That's incorrect. Avro is a common file format in big data processing, but it's not used for tabkes in Fabric."
+      explanation: "That's incorrect. Avro is a common file format in big data processing, but it's not used for tables in Fabric."
     - content: "`Delta`"
       isCorrect: true
       explanation: "That's correct. Tables in a Fabric lakehouse are based on Delta Lake technology, which uses an extended format of Parquet files known as Delta."
