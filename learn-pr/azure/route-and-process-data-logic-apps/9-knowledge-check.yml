@@ -19,13 +19,13 @@ quiz:
   questions:
   - content: "To answer this question, examine the diagram that shows the news monitoring workflow. What is the workflow's outcome if an article was rated with a negative sentiment?"
     choices:
-    - content: "Send email"
+    - content: "Send an email"
       isCorrect: true
       explanation: "The workflow sends an email when the sentiment is negative."
     - content: "Create blob"
       isCorrect: false
-      explanation: "The workflow inserts a row only when the sentiment is positive."
-    - content: "Both Send email and Create blob"
+      explanation: "The workflow creates a blob only when the sentiment is positive."
+    - content: "Both Send an email and Create blob"
       isCorrect: false
       explanation: "The condition action runs a different branch based on whether the condition is true or false, not both branches."
   - content: "To answer this question, examine the diagram that shows the email attachment processing workflow. How many blobs are created from an email with six attachments?"
