@@ -29,7 +29,7 @@ quiz:
     - content: "Optimization algorithms"
       isCorrect: false
       explanation: "Incorrect. Optimization algorithms are an example of Automated intelligence, not Autonomous Intelligence. The algorithms explore the best action based on an approximation function or simulation."
-  - content: "Select which one of the following technologies has the following superpower, "It automatically learns strategy":"
+  - content: "Select which one of the following technologies has the superpower of automatically learning strategy:"
     choices:
     - content: "Optimization algorithms"
       isCorrect: false
