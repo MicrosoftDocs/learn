@@ -1,7 +1,7 @@
 > [!IMPORTANT]
-> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
 
-In this exercise, you will update a pre-developed data model to enforce security. Specifically, salespeople at the Adventure Works company should only be able to see sales data related to their assigned sales region. You learn how to:
+In this exercise, you'll update a predeveloped data model to enforce security. Specifically, salespeople at the Adventure Works company should only be able to see sales data related to their assigned sales region. You learn how to:
 
 - Create static roles
 - Create dynamic roles
