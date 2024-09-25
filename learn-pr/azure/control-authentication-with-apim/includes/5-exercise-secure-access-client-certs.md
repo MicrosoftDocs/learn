@@ -20,7 +20,7 @@ First, use Cloud Shell to create a self-signed certificate, which you'll then us
 1. To create the private key and the certificate, run the following commands in Cloud Shell.
 
     ```bash
-    pwd='Pa$$w0rd'
+    pwd='<Enter a secure password here>'
     pfxFilePath='selfsigncert.pfx'
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
     ```
