@@ -10,7 +10,7 @@ While migration to the cloud or modernization of workloads includes potential ri
 
 Some risk considerations include:
 
-| Risk Type | Questions | on-premises | Microsoft US Sovereign Clouds |
+| Risk Type | Questions | On-premises | Microsoft US Sovereign Clouds |
 | ------------- | --------- | ----------- | ---------------------- |
 | *Advanced Tooling* | Is there additional software you must procure and become familiar with in order to run workloads in this environment? | Sometimes | No - Tooling is provided (portal, CLI, PowerShell) |
 | *Application Suitability* | Can older/legacy workloads continue to be supported? Will the workload need to be distributed? Does the workload benefit from the scalability and elasticity that the hardware provides? How will you mitigate risk of supporting the workload? | Depends. There's a large capital investment required to implement hardware that can scale when a workload requires it. There's inherent risk that the workload may never need to scale to meet this demand. | Microsoft assumes this risk by already procuring and making hardware and software available to address scale. Most workloads, including mainframes, may be successfully migrated to U.S. Sovereign Clouds. |
