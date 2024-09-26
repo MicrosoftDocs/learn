@@ -1,4 +1,4 @@
-In this exercise, you start to build the .NET MAUI app for the grocery-store chain. You use the template to generate the default app and run it on Windows and in the Android emulator. In a later exercise, you modify this app to customize the user interface and add the functionality required by the grocery store chain app.
+In this exercise, you start to build the .NET MAUI (Multi-platform Application User Interface) app for the grocery-store chain. You use the template to generate the default app and run it on Windows and in the Android emulator. In a later exercise, you modify this app to customize the user interface and add the functionality required by the grocery store chain app.
 
 ## Create a new project
 
@@ -33,13 +33,13 @@ In this exercise, you start to build the .NET MAUI app for the grocery-store cha
 
     - The **AppShell.xaml** file contains the main layout for the application and starting page of **MainPage**.
 
-    - The **MainPage.xaml** file contains the layout for the page. This layout includes the XAML code for a button with the caption **Click me** and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
+    - The **MainPage.xaml** file contains the layout for the page. This layout includes the XAML (Extensible Application Markup Language) code for a button with the caption **Click me** and an image that displays the **dotnet_bot.png** file. There are two other labels as well.
 
     - The **MainPage.xaml.cs** file contains the application logic for the page. Specifically, the **MainPage** class includes a method named `OnCounterClicked` that runs when the user taps the **Click me** button.
 
 ## Build and run the application on Windows
 
-1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select the **.net8.0-windows** framework from the list in the frameworks drop-down list box.
+1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select **.net8.0-windows** from the list in the frameworks drop-down list box.
 
     :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user sets the Windows Machine profile as the startup profile for the solution.":::
 
@@ -49,7 +49,7 @@ In this exercise, you start to build the .NET MAUI app for the grocery-store cha
 
 1. Verify that the Windows version of the app starts up. Select the **Click me** button several times. The button text should update with the count being incremented with each tap.
 
-    :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the Windows UI app running. The user has tapped the 'Click me' button four times.":::
+    :::image type="content" source="../media/4-winui-app.png" alt-text="A screenshot of the Windows UI app running. The user tapped the 'Click me' button four times.":::
 
 1. On the **View** menu, select **Solution Explorer**. In the Solution Explorer window, expand the **MainPage.xaml** node and open the **MainPage.xaml.cs** code-behind file.
 
@@ -73,7 +73,7 @@ In this exercise, you start to build the .NET MAUI app for the grocery-store cha
 
     :::image type="content" source="../media/4-hot-reload-button.png" alt-text="A screenshot of the Visual Studio toolbar. The Hot Reload button is highlighted.":::
 
-1. Switch back to the app and select the **Click me** button. Verify that the count is now incremented by 5.
+1. Switch back to the app and select the **Click me** button. Verify that the count is incremented by 5.
 
     > [!NOTE]
     > Visual Studio's *Hot Reload* feature allows you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. As well as modifying code, you can also make changes to the XAML markup for a page, and these changes will become visible in the running app.
@@ -86,7 +86,7 @@ In this exercise, you start to build the .NET MAUI app for the grocery-store cha
 
 1. On the **Tools** menu, select **Android** and then select **Android Device Manager**. If you're prompted to let Android Device Manager make changes to your computer, select **Yes**.
 
-    :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user has selected the Android Device Manager option.":::
+    :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user selected the Android Device Manager option.":::
 
 1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
 
@@ -94,15 +94,15 @@ In this exercise, you start to build the .NET MAUI app for the grocery-store cha
 
 1. When the device is created, return to Visual Studio.
 
-1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile, and select the **pixel_3a-api_30** device. This is the device you just created.
+1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile. Select the **pixel_3a-api_30** device that you created.
 
-    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user has specified the Pixel 3 with the API 30 profile for the Android emulator to start debugging with.":::
+    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user specified the Pixel 3 with the API 30 profile for the Android emulator to start debugging with.":::
 
 1. Start debugging use the **pixel_3a-api_30** profile. This action builds, deploys, and runs the app on the Android device.
 
     :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile is selected and ready to start debugging with as soon as the user presses the play button.":::
 
-1. When the app starts running on the emulator (this can take several minutes), select the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
+1. When the app starts running on the emulator (this action can take several minutes), select the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 
     :::image type="content" source="../media/4-android-app.png" alt-text="A screenshot of the Android version of the Phoneword application running in the selected emulator.":::
 

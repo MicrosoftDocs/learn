@@ -4,7 +4,7 @@ title: Create a .NET MAUI project in Visual Studio
 metadata:
   unitType: unit
   title: "Create a .NET MAUI project in Visual Studio"
-  description: "Learn how to use the .NET MAUI template in Visual Studio to create a new .NET MAUI app."
+  description: "Learn how to use the .NET MAUI template in Visual Studio to create a new .NET MAUI (Multi-platform Application User Interface) app."
   ms.date: 10/13/2023
   author: codemillmatt  
   ms.author: masoucou  
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "In the XAML description of the page containing the control"
       isCorrect: false
-      explanation: "No. You implement the logic in the code-behind file for the XAML page containing the control."
+      explanation: "No. You implement the logic in the code-behind file for the XAML (Extensible Application Markup Language) page containing the control."
     - content: "You implement the logic in the code-behind file for the XAML page containing the control."
       isCorrect: true
-      explanation: "This is the correct answer"
+      explanation: "This answer is correct."
     - content: "In the App.xaml.cs file"
       isCorrect: false
       explanation: "No. You implement the logic in the code-behind file for the XAML page containing the control."

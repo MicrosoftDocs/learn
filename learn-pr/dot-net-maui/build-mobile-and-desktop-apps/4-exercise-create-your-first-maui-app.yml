@@ -4,7 +4,7 @@ title: "Exercise: Create your first .NET MAUI app"
 metadata:
   unitType: exercise
   title: "Exercise: Create your first .NET MAUI app"
-  description: "Use Visual Studio to create and run a default .NET MAUI app."
+  description: "Use Visual Studio to create and run a default .NET MAUI (Multi-platform Application User Interface) app."
   ms.date: 10/13/2023
   author: codemillmatt
   ms.author: masoucou  
