@@ -10,4 +10,5 @@ Natural language processing might be used to create:
 
 **Azure AI Language** is a cloud-based service that includes features for understanding and analyzing text. Azure AI Language includes various features that support sentiment analysis, key phrase identification, text summarization, and conversational language understanding.
 
-In this module, you'll explore the capabilities of text analytics, and how you might use them.
+In this module, you'll explore the capabilities of text analytics, and how you might use them. 
+
