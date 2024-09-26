@@ -17,7 +17,7 @@ This article describes how to use the **MITRE** page in Microsoft Sentinel to vi
 
 :::image type="content" source="../media/mitre-coverage.png" alt-text="Screenshot of the MITRE coverage page with both active and simulated indicators selected." lightbox="../media/mitre-coverage.png":::
 
-Microsoft Sentinel is currently aligned to The MITRE ATT&CK framework, version 9.
+Microsoft Sentinel is currently aligned to The MITRE ATT&CK framework, version 13.
 
 ##  View current MITRE coverage
 
