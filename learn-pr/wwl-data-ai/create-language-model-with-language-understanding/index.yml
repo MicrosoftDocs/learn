@@ -22,7 +22,7 @@ abstract: |
   -   Learn about key features, such as intents and utterances.
 
   -   Build and publish a natural-language machine-learning model.
-prerequisites: Ability to navigate the Azure portal
+prerequisites: '- Ability to navigate the Azure portal'
 iconUrl: /training/achievements/create-publish-luis-model.svg
 levels:
 - intermediate
