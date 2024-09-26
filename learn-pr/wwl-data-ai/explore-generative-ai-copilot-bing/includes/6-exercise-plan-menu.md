@@ -148,8 +148,8 @@ Use Copilot Image input as shown in the following screenshot to upload or share 
 **Sample prompt**:
 ```
 Could you take The Acorn image just created and add some of the smoke shown in this image?
-<put your image url here or add it via the 
-Image icon on the input box >
+*Put your image url here or add it via the 
+Image icon on the input box.*
 
 ```
 This sample is how it applied that reference image to create a new one.
