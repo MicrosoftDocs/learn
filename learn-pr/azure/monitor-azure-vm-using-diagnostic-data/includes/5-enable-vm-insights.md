@@ -12,7 +12,6 @@ Although you don't need to use VM insights to install Azure Monitor Agent, creat
 
 1. In the Azure portal, on your VM's **Overview** page, select **Insights** from the left navigation menu under **Monitoring**.
 1. On the **Insights** page, select **Enable**.
-1. On the **Monitoring configuration** page, select **Azure Monitor Agent (Recommended)**.
 1. Under **Data collection rule**, note the properties of the DCR that VM insights creates. In the DCR description, **Processes and dependencies (Map)** is set to **Enabled**, and a default **Log Analytics workspace** is created or assigned.
 1. Select **Configure**.
 
