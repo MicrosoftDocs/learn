@@ -4,8 +4,8 @@ metadata:
   title: Migrate Linux and PostgreSQL Workloads
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 9/16/2024
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: asw101
+  ms.author: aawislan
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
 ###########################################################################
 ###
