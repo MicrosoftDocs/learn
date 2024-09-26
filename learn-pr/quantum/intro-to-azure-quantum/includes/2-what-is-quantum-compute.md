@@ -2,24 +2,22 @@ Quantum computers introduce new concepts to traditional programming methods by u
 
 Let's see how quantum computing differs from classical computing and how to build a quantum computer.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## The birth of quantum computing
 
-The idea of a quantum computer was born out of the difficulty of simulating quantum systems on a classical computer. In the 1980s, Richard Feynman and Yuri Manin independently suggested that hardware based on quantum phenomena might be more efficient for the simulation of quantum systems than conventional computers.
+The idea of a quantum computer was born out of the difficulty of simulating quantum systems on a classical computer. In the 1980s, Richard Feynman and Yuri Manin suggested that hardware based on quantum phenomena might be more efficient for the simulation of quantum systems than conventional computers.
 
-There are many ways to understand why quantum mechanics is hard to simulate. The simplest is to see that matter, at a quantum level, is in a multitude of possible configurations (known as states).
+There are many ways to understand why quantum systems are hard to simulate. The simplest is to see that matter, at a quantum level, is in a multitude of possible configurations (known as states) at the same time.
 
 ### Quantum computing grows exponentially
 
-Consider a system of electrons where there are $40$ possible locations. The system therefore might be in any of $2^{40}$ configurations (since each location can either have or not have an electron). To store the quantum state of the electrons in a conventional computer memory, would require in excess of $130$ GB of memory! If we allowed the particles to be in any of $41$ positions, there would be twice as many configurations at $2^{41}$, which in turn would require more than $260$ GB of memory to store the quantum state.
+Consider a system of quantum particles, for example electrons. There are $40$ possible positions or locations for the electrons. The system therefore might be in any of $2^{40}$ configurations, since each location can either have or not have an electron. To store the quantum state of the electrons in a conventional computer memory would require in excess of $130$ GB of memory! If the electrons were allowed to one extra location, so that they could be in any of $41$ positions, there would be twice as many configurations at $2^{41}$, which in turn would require more than $260$ GB of memory to store the quantum state.
 
-This game of increasing the number of locations can't be played indefinitely. If we want to store the state conventionally, we would quickly exceed the memory capacities of the world's most powerful machines. At a few hundred electrons, the memory required to store the system exceeds the number of particles in the universe; thus there's no hope with our conventional computers to ever simulate their quantum dynamics.
+This game of increasing the number of locations can't be played indefinitely. If you want to store the state conventionally, you would quickly exceed the memory capacities of the world's most powerful machines. At a few hundred electrons, the memory required to store the system exceeds the number of particles in the universe; thus there's no hope with our conventional computers to ever simulate their quantum dynamics.
 
 ### Turning difficulty into opportunity
 
-The observation of this exponential growth led us to ask a powerful question: can we turn this difficulty into an opportunity? Specifically, if quantum dynamics are hard to simulate what would happen if we were to build hardware that had quantum effects as fundamental operations? Could we simulate quantum systems of interacting particles using a machine that exploits exactly the same laws of physics? And could we use that machine to investigate other tasks that are absent from quantum particles, but are crucial for us? These questions led to the genesis of Quantum Computing.
+The observation of this exponential growth led to ask a powerful question: is it possible to turn this difficulty into an opportunity? Specifically, if quantum systems are hard to simulate, what would happen if we build hardware that had quantum effects as fundamental operations? Could we simulate quantum systems of interacting particles using a machine that exploits exactly the same laws of physics? And could we use that machine to investigate other tasks that are absent from quantum particles, but are crucial for us? These questions led to the genesis of Quantum Computing.
 
 In 1985, David Deutsch showed that a quantum computer could efficiently simulate the behavior of any physical system. This discovery was the first indication that quantum computers could be used to solve problems that are intractable on classical computers.
 

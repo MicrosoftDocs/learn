@@ -3,8 +3,6 @@ Before you start writing quantum programs, it's important to understand the stru
 
 In this unit, you'll review the main components of a Q# program.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Namespaces
 

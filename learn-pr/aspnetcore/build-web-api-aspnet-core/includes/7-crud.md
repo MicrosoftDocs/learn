@@ -1,4 +1,4 @@
-Our pizza service supports CRUD operations for a list of pizzas. These operations are performed through HTTP verbs, which are mapped via ASP.NET Core attributes. As you've seen, the HTTP `GET` verb is used to retrieve one or more items from a service. Such an action is annotated with the `[HttpGet]` attribute.
+Our pizza service supports CRUD operations for a list of pizzas. These operations are performed through HTTP verbs, which are mapped via ASP.NET Core attributes. As you saw, the HTTP `GET` verb is used to retrieve one or more items from a service. Such an action is annotated with the `[HttpGet]` attribute.
 
 The following table shows the mapping of the four operations that you're implementing for the pizza service:
 
@@ -9,11 +9,11 @@ The following table shows the mapping of the four operations that you're impleme
 |`PUT`             |Update        |`[HttpPut]`           |
 |`DELETE`          |Delete        |`[HttpDelete]`        |
 
-You've already seen how `GET` actions work. Let's learn more about `POST`, `PUT`, and `DELETE` actions.
+You already saw how `GET` actions work. Let's learn more about `POST`, `PUT`, and `DELETE` actions.
 
 ## POST
 
-To enable users to add a new item to the endpoint, you must implement the `POST` action by using the `[HttpPost]` attribute. When you pass the item (in this example, a pizza) into the method as a parameter, ASP.NET Core automatically converts any application/JSON that's sent to the endpoint into a populated .NET `Pizza` object.
+To enable users to add a new item to the endpoint, you must implement the `POST` action by using the `[HttpPost]` attribute. When you pass the item (in this example, a pizza) into the method as a parameter, ASP.NET Core automatically converts any application/JSON sent to the endpoint into a populated .NET `Pizza` object.
 
 Here's the method signature of the `Create` method that you'll implement in the next section:
 

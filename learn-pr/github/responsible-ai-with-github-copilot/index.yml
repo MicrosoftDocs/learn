@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.github.responsible-ai-with-github-copilot
+metadata:
+  title: Responsible AI with GitHub Copilot
+  description: This module explores the responsible use of AI in the context of GitHub Copilot, a generative AI tool for developers. It will equip you with the knowledge and skills to leverage Copilot effectively while mitigating potential ethical and operational risks associated with AI usage.
+  ms.date: 09/13/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module
+  ms.service: github
+title: Responsible AI with GitHub Copilot
+summary: This module explores the responsible use of AI in the context of GitHub Copilot, a generative AI tool for developers. It will equip you with the knowledge and skills to leverage Copilot effectively while mitigating potential ethical and operational risks associated with AI usage.
+abstract: |
+  By the end of this module, students will be able to:
+  - Understand and apply the principles of Responsible AI usage.
+  - Identify limitations and mitigate risks associated with AI.
+  - Learn best practices for ensuring AI-generated code aligns with ethical standards and project-specific requirements.
+  - Recognize the importance of transparency and accountability in AI systems to build trust and maintain user confidence.
+prerequisites: A basic understanding of generative AI.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- developer
+- devops-engineer
+- student
+products:
+- github
+units:
+- learn.github.responsible-ai-with-github-copilot.introduction
+- learn.github.responsible-ai-with-github-copilot.manage-ai-risks
+- learn.github.responsible-ai-with-github-copilot.six-principles-of-responsible-ai
+- learn.github.responsible-ai-with-github-copilot.knowledge-check
+- learn.github.responsible-ai-with-github-copilot.summary
+badge:
+  uid: learn.github.responsible-ai-with-github-copilot.badge

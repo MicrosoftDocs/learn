@@ -1,8 +1,6 @@
 
 Now it's your turn to help Alice and Bob with their quantum teleportation experiment! You'll create a quantum teleportation program in Q# that uses the quantum teleportation protocol to send the state of a qubit from Alice to Bob. 
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Create a quantum teleportation program in Q#
 
