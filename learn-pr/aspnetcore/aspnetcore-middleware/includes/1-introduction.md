@@ -1,13 +1,13 @@
-An ASP.NET Core app is composed of source code files, assets, and configuration files. When you build an ASP.NET Core app, the source code is compiled into an executable form that can be run with the .NET runtime. Publishing an ASP.NET Core app is the process of packaging the executable app into a form that can be deployed and run on a server.
+When an ASP.NET Core app receives an HTTP request, it passes through a series of components that are responsible for processing the request and generating a response. These components are called middleware. ASP.NET Core includes a set of built-in middleware, and you can also create custom middleware to handle specialized requirements.
 
 ## Example scenario
 
-Suppose you are an entry-level ASP.NET Core developer at a small company. You have been tasked with developing a new web application for the company's customers and deploying it to a web server. 
+Suppose you are an entry-level ASP.NET Core developer at a small company. Your team is building a new web app. The requirements include URL rewriting, as well as real-time console output for monitoring purposes. You've been tasked with implenting the built-in middleware for URL rewriting, as well as creating a custom middleware component to log the request details.
 
 ## What will we be doing?
 
-In this module, you'll use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll publish the app in two different ways: as a framework-dependent deployment and as a self-contained deployment. Finally, you'll learn about the different ways to deploy an ASP.NET Core app to Azure.
+In this module, you'll use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement the built-in `UrlRewriter` middleware to rewrite URLs in the app. You'll then create a custom middleware component to log request details to the console.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to build and publish an ASP.NET Core app for deployment. You'll also be able to describe the different methods to deploy an ASP.NET Core app to Azure.
+By the end of this module, you'll be able to implement built-in and custom middleware in an ASP.NET Core app. You'll also understand how middleware components work together to process HTTP requests and generate responses.
