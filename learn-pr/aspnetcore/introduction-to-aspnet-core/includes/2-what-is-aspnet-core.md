@@ -18,7 +18,7 @@ ASP.NET Core equips developers to handle a wide range of modern web development 
 
 - **Modular middleware**: Offers a modular approach to middleware, including components for authentication, authorization, logging, real-time communication, and more. These can be easily integrated into your application to extend its functionality.
 - **Utilize a modular architecture**: Incorporate middleware components for authentication, authorization, logging, and real-time communication, allowing you to customize and extend your application as needed. ASP.NET Core’s middleware pipeline is highly - configurable and extensible.
-- **Ensure high performance and scalability**: Optimize your applications with built-in support for caching, asynchronous programming, and other performance-enhancing features. ASP.NET Core is designed to handle high traffic and large-scale applications efficiently.
+- **Built for high performance and scalability**: Optimize your applications with built-in support for caching, asynchronous programming, and other performance-enhancing features. ASP.NET Core is designed to handle high traffic and large-scale applications efficiently.
 - **Maintain security and compliance**: Implement best practices for security, including HTTPS, data protection, and compliance with industry standards. ASP.NET Core provides robust security features to protect your applications and data.
 
 ### Development flexibility

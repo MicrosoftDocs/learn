@@ -63,7 +63,7 @@ In the previous sample in the *Program.cs*:
 ASP.NET Core provides a robust and flexible backend for building a wide range of applications, from simple web apps to complex, distributed systems.
 
 - **Dependency injection**: ASP.NET Core has built-in support for dependency injection, a design pattern that promotes loose coupling and testability. This makes it easier to manage dependencies and configure services in your application.
-- Data Access: ASP.NET Core supports various data access technologies, including Entity Framework Core (EF Core) for ORM (Object-Relational Mapping) and Dapper for lightweight data access. These tools help you interact with databases and manage data efficiently.
+- **Data Access**: ASP.NET Core supports various data access technologies, including Entity Framework Core (EF Core) for ORM (Object-Relational Mapping) and Dapper for lightweight data access. These tools help you interact with databases and manage data efficiently.
 - **API development**: ASP.NET Core is well-suited for building APIs, with support for both RESTful APIs and gRPC. RESTful APIs are ideal for web-based communication, while gRPC offers high performance and efficient communication for real-time applications and microservices.
 - **Background Tasks**: ASP.NET Core allows you to run background tasks using hosted services. This is useful for tasks that need to run independently of user requests, such as processing messages from a queue or performing scheduled maintenance.
 
@@ -83,4 +83,4 @@ ASP.NET Core provides a comprehensive suite of tools for monitoring and maintain
 - **Flexible logging framework**: A flexible logging framework is built in, and supports various logging providers, including console, debug, and event source. This helps in capturing detailed logs for diagnostics and monitoring.
 - **Tracing**: ASP.NET Core supports distributed tracing, which helps you track the flow of requests across different services and components. This is useful for diagnosing performance issues and understanding the interactions between different parts of your application.
 - **Health Checks**: The health checks API allows you to monitor the health of your application and its dependencies. You can configure health checks to report the status of various components, such as databases, external services, and more.
-Diagnostics Tools: ASP.NET Core provides various diagnostic tools, such as dotnet-trace, dotnet-dump, and dotnet-gcdump, which help you collect and analyze diagnostic data from your application.
+- **Diagnostics Tools**: ASP.NET Core provides various diagnostic tools, such as dotnet-trace, dotnet-dump, and dotnet-gcdump, which help you collect and analyze diagnostic data from your application.
