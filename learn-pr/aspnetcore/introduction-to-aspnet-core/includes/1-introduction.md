@@ -1,3 +1,5 @@
+:::image type="content" source="../media/dotnet-logo-200x200.png.png" alt-text=".NET Logo":::
+
 Building modern web applications involves managing a complex stack of technologies and ensuring seamless integration between the front-end and back-end. Developers need a framework that provides robust tools for creating scalable, high-performance web applications while simplifying the development process. ASP.NET Core is a comprehensive framework within the .NET ecosystem designed for modern web development that effectively and efficiently addresses these challenges.
 
 In this module, you’ll discover what ASP.NET Core is, gain an overview of how it works, and learn when to use it.
