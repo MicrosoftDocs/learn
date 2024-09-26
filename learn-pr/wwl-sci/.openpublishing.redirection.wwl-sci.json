@@ -195,7 +195,16 @@
         "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/5-summary-resources.md",
         "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
         "redirect_document_id": false
-      }
-      
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.badge.yml",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-insider-risk-capabilities-microsoft-365.badge",
+        "redirect_url": "/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      }      
     ]
 }
