@@ -17,7 +17,7 @@ There are three signal types that you can use to monitor your environment:
 
 - **Metric** alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
 - **Activity log** alerts notify you when Azure resources change state. For example, an activity log alert can notify you when a resource is deleted.
-- **Log** alerts are based on things written to log files. For example, a log alert can notify you when a web server returns a particular number of 404 or 500 responses.
+- **Log** alerts are based on things written to log files. For example, a log search alert can notify you when a web server returns a particular number of 404 or 500 responses.
 
 ## Composition of an alert rule
 

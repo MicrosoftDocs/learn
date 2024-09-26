@@ -8,9 +8,9 @@ In this unit, you explore the two different kinds of activity log alerts. Now th
 
 ## When to use activity log alerts
 
-So far, you learned about two different types of alerts supported in Azure Monitor. *Metric alerts* are ideally suited to monitoring for threshold breaches or spotting trends; *Log alerts* allow for greater analytical monitoring of historical data.
+So far, you learned about two different types of alerts supported in Azure Monitor. *Metric alerts* are ideally suited to monitoring for threshold breaches or spotting trends; *Log search alerts* allow for greater analytical monitoring of historical data.
 
-Activity log alerts are designed to work with Azure resources. Typically, you create this type of log to receive notifications when specific changes occur on a resource within your Azure subscription.
+*Activity log alerts* are designed to work with Azure resources. Typically, you create this type of log to receive notifications when specific changes occur on a resource within your Azure subscription.
 
 There are two types of activity log alerts:
 
@@ -19,7 +19,7 @@ There are two types of activity log alerts:
 
 ## Composition of an activity log alert
 
-It's important to note that activity log alerts monitor events only in the subscription where the log alert was created.
+It's important to note that activity log alerts monitor events only in the subscription where the alert was created.
 
 Activity log alerts are based on events. The best approach for defining them is to use Azure Monitor to filter all the events in your subscription until you find the one that you want. To begin the creation process, you then select **Add activity log alert**.
 

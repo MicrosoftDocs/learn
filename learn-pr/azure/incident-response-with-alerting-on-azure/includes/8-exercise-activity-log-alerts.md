@@ -1,4 +1,4 @@
-The shipping company for which you work wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can activity log alerts.
+The shipping company for which you work wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can create activity log alerts.
 
 Your goal is to set up a Linux virtual machine (VM) and create an activity log monitoring rule to detect when a VM is deleted. Then, delete the VM to trigger this alert.
 
