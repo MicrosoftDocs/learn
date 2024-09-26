@@ -14,7 +14,7 @@ Advisor is available on the [Azure portal](https://portal.azure.com/?azure-porta
 
 After you take one of the previous steps, you'll see the Advisor dashboard.
 
-:::image type="content" source="../media/azure-advisor-overview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
+:::image type="content" source="../media/azure-advisor-overview-preview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
 
 ### Areas where Advisor can help
 
@@ -76,19 +76,19 @@ Advisor integrates with Microsoft Defender for Cloud to provide security recomme
 
 ## Remediating issues found by Advisor recommendations
 
-Now that you've learned a little about your Advisor recommendations, we'll show you the typical process you can follow to resolve them.
+Now that you learned a little about your Advisor recommendations, we show you the typical process you can follow to resolve them.
 
 First, on your Advisor dashboard, you can select a category that shows recommendations to resolve. You can also choose to see **All recommendations**, which shows a list of every Advisor recommendation across all five categories.
 
-You'll notice that each of the five category tiles shows:
+Notice that each of the five category tiles shows:
 
 - The number of Advisor recommendations.
 - The number of impacted resources.
 - Their impact level (low, medium, or high).
 
-:::image type="content" source="../media/azure-advisor-five-categories.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-five-categories.png":::
+:::image type="content" source="../media/azure-advisor-five-categories-preview.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-five-categories.png":::
 
-By making a selection, you open a new page that shows details about the recommendations for the chosen category. Under a summary of the recommendations, you'll see a table that provides more information, such as:
+By making a selection, you open a new page that shows details about the recommendations for the chosen category. Under a summary of the recommendations, see a table that provides more information, such as:
 
 - A linked description of each recommendation
 - The impact level of each recommendation
@@ -97,7 +97,7 @@ By making a selection, you open a new page that shows details about the recommen
 
 In addition, on the left side of the page under **Recommendations**, you can select a different category to quickly open a page where you can see the Advisor recommendations for that  selection.
 
-:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details." lightbox="../media/azure-advisor-cost-recommendations.png":::
+:::image type="content" source="../media/azure-advisor-cost-recommendations-preview.png" alt-text="Screenshot of Advisor Performance window with recommendation details." lightbox="../media/azure-advisor-cost-recommendations.png":::
 
 After you select a linked description for a recommendation, a window opens showing some suggestions for actions you can take. At this point in the flow, you have several options for how you want to handle the recommendation.
 
@@ -105,4 +105,4 @@ After you select a linked description for a recommendation, a window opens showi
 - If you'd prefer to handle the recommendation at a later time, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if the issue hasn't been resolved.
 - If you know that you don't want to resolve that issue, you can select **Dismiss**, and Advisor removes it from the list and no longer shows it as a recommendation for that resource. You can always revisit your dismissed recommendations in the **Postponed & Dismissed** tab under any of your recommendations.
 
-   :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing a recommended action in Azure Advisor." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
+   :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss-preview.png" alt-text="Screenshot showing a recommended action in Azure Advisor." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
