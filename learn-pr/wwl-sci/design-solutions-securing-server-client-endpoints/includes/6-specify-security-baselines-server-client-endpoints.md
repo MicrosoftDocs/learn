@@ -51,16 +51,16 @@ The following security baseline instances are available for use with Intune. Use
        
 -   **Microsoft Edge Baseline**
 
-  - [Microsoft Edge version 117](../protect/security-baseline-settings-edge?pivots=edge-v117) - November 2023
-  - [Microsoft Edge version 112 and later](../protect/security-baseline-settings-edge?pivots=edge-v112) - May 2023
-  - [Microsoft Edge version 85 and later](../protect/security-baseline-settings-edge?pivots-edge-sept-2020) - September 2020
-  - [Microsoft Edge version 80 and later](../protect/security-baseline-settings-edge?pivots-edge-april-2020) - April 2020
-  - [Preview: Microsoft Edge version 77 and later](../protect/security-baseline-settings-edge?pivots=edge-october-2019) - October 2019    
+  - [Microsoft Edge version 117](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-v117) - November 2023
+  - [Microsoft Edge version 112 and later](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-v112) - May 2023
+  - [Microsoft Edge version 85 and later](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-sept-2020) - September 2020
+  - [Microsoft Edge version 80 and later](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-april-2020) - April 2020
+  - [Preview: Microsoft Edge version 77 and later](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-october-2019) - October 2019    
 
 -   **Windows 365 Security Baseline**
     
-  - [Version 24H1](security-baseline-settings-windows-365?pivots=win365-24h1)
-  - [November 2021](security-baseline-settings-windows-365?pivots=win365-nov21)
+  - [Version 24H1](/mem/intune/protect/security-baseline-settings-windows-365?pivots=win365-24h1)
+  - [November 2021](/mem/intune/protect/security-baseline-settings-windows-365?pivots=win365-nov21)
 
 After a new version for a profile releases, settings in profiles based on the older versions become read-only. You can continue using those older profiles, including editing their name, description, and assignments, but you won't be able to edit settings for them or create new profiles based on the older versions.
 
