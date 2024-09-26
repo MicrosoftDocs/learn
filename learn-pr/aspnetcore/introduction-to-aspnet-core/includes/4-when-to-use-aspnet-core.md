@@ -17,6 +17,5 @@ ASP.NET Core for web development is ideal when your web app has any of these req
 
 ASP.NET Core might not be a good fit for your web development needs when your web app has any of these requirements:
 
-- Specific platform dependencies: Your application relies heavily on platform-specific features that are only available on a single operating system other than macOS, Linux, or Windows. In such cases, a framework tailored to that platform would be more appropriate.
 - Minimal requirements: Your application is a simple static page site.
 - Specific language preferences: Your team prefers working with languages other than C#. While ASP.NET Core supports multiple languages, it's primarily designed for C# development.
