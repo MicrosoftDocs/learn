@@ -19,11 +19,11 @@ Blazor is a framework for building interactive web UI components using C# instea
 - Blazor WebAssembly: Runs on WebAssembly (client-side), allowing you to create rich, interactive web applications with a single codebase.
 - Blazor Server: Runs on the server, providing a rich, interactive user experience with real-time updates over a SignalR connection.
 
-#### Integration with Front-End Frameworks
+#### Integration with Front-End Frameworks like React, Angular, and Vue
 
 ASP.NET Core seamlessly integrates with popular client-side frameworks like React, Angular, and Vue. This allows you to build modern, single-page applications (SPAs) while applying ASP.NET Core’s robust backend capabilities. 
 
-ASP.NET Core provides built-in project templates for React, Angular, and Vue making it easy to get started.
+ASP.NET Core provides built-in project templates for React, Angular, and Vue, making it easy to get started.
 
 ### The middleware pipeline
 

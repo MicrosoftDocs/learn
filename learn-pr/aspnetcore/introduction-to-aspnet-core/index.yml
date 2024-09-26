@@ -16,7 +16,7 @@ title: Introduction to .NET web development with ASP.NET Core
 ###########################################################################
 summary: "Discover the key features of ASP.NET Core for building your next web app."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Evaluate whether ASP.NET Core is appropriate for your next web development project.
     - Describe how ASP.NET Core works for building web apps.
 prerequisites: |
