@@ -32794,6 +32794,11 @@
       "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/6-describe-purpose-of-service-trust-portal.md",
       "redirect_url": "/training/modules/describe-features-tools-azure-for-governance-compliance/6-describe-purpose-service-trust-portal",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
