@@ -2,7 +2,7 @@
 uid: learn.wwl.design-solutions-securing-server-client-endpoints
 metadata:
   title: Design solutions for securing server and client endpoints
-  description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration."
+  description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements take into account different platforms and operating systems and set standards for endpoint protection, hardening, and configuration."
   ms.date: 09/09/2024
   author: hrasheed-msft
   ms.author: hrasheed
@@ -11,9 +11,9 @@ metadata:
   ai-usage: ai-assisted
 title: Design solutions for securing server and client endpoints
 summary: |
-  You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements will take into account different platforms and operating systems and set standards for endpoint protection, hardening and configuration.
+  You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements take into account different platforms and operating systems and set standards for endpoint protection, hardening, and configuration.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
   -   Specify security requirements for servers
   -   Specify security requirements for mobile devices and clients
   -   Specify security requirements for IoT devices and embedded systems
