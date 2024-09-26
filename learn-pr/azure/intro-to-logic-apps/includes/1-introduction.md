@@ -40,4 +40,3 @@ In this module, you complete the following tasks:
 
 - Basic knowledge about programming concepts, such as conditional logic and loops
 - Basic knowledge about APIs and REST services
-- 
