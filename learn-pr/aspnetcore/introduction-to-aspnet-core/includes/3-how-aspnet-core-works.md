@@ -39,6 +39,8 @@ ASP.NET Core’s modular architecture allows you to easily add built-in componen
 
 In the following example logging services are added in an ASP.NET Core *Program.cs* file. The *Program.cs file* is the entry point of your ASP.NET Core application. It sets up the application host, configures services, and defines the request handling pipeline. This demonstrates how to quickly plug in a built-in service like logging into your ASP.NET Core application. You can add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
 
+[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all&highlight=3-5)]
+
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
