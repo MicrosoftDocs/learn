@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.migrate-linux-postgres.{{unitName}}
+uid: learn.migrate-linux-postgres.configure-linux-application-workload
 title: Configure a Linux application workload​
 metadata:
   title: Configure a Linux application workload​
