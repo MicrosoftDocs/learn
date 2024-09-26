@@ -2,7 +2,7 @@
 Superposition is a fundamental concept in quantum computing. In the classical world, objects can only be in one state at a time. However, in the quantum world,
 quantum particles can be in multiple states at the same time. This phenomenon is called superposition.
 
-If the cat from the previous unit was a quantum cat, the state of the quantum cat and the box system wouldn't change: the sum of the six different positions of the quantum cat with respect to the box, weighted by the probability of finding the quantum cat in that position. The only difference is that the classic cat can be in one (and only one) of six possible positions while the quantum cat can also be in all six positions at the same time!
+If the cat from the previous unit was a quantum cat, the state of the quantum cat and the box system would be the same: the sum of the six different positions of the quantum cat with respect to the box, weighted by the probability of finding the quantum cat in that position. The only difference is that the classic cat can be in one (and only one) of six possible positions while the quantum cat can be in all six positions at the same time!
 
 In quantum computing nobody uses quantum cats - sadly - but qubits. The word "qubit" means "quantum bit". Just like in classical computing, where the basic unit of information is the bit, in quantum computing the basic unit of information is the qubit. And just like the bit can take two possibles values, 0 and 1, a qubit is any quantum particle that can be in two possibles states, like a photon, which can be polarized in two directions, or an electron, which can be in two energy levels. 
 
