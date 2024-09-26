@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.linux-postgres-migration.{{unitName}}
+uid: learn.migrate-linux-postgres.{{unitName}}
 title: Migrate Linux and PostgreSQL workloads
 metadata:
   title: Migrate Linux and PostgreSQL workloads
