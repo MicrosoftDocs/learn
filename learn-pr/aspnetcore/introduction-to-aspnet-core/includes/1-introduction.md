@@ -16,6 +16,7 @@ Imagine you and your team are asked to create a web app for an online store. You
 ASP.NET Core provides the tools and libraries needed to implement these features and more, efficiently and seamlessly, ensuring a high-quality user experience and robust application performance.
  
 ## What is the main goal?
+
 By the end of this session, you'll know:
 
 - What ASP.NET Core features will help you successfully meet modern web app demands.
