@@ -41,21 +41,6 @@ In the following example logging services are added in an ASP.NET Core *Program.
 
 [!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all&highlight=3-5)]
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-
-// Add built-in logging service
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-builder.Logging.AddDebug();
-
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
-```
-
 In the previous sample in the *Program.cs*:
 
 - `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear any existing providers and add the *Console* and *Debug* logging providers.
