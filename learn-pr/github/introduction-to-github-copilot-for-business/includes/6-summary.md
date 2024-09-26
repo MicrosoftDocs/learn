@@ -10,5 +10,5 @@ Now that you've finished this module, you should be able to:
 
 - [Setting up GitHub Copilot for your organization](https://docs.github.com/copilot/setting-up-github-copilot/setting-up-github-copilot-for-your-organization)
 - [What is GitHub Copilot?](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot)
-- [Coyote Logistics saves countless developer hours with GitHub's cutting-edge offerings.](https://github.com/customer-stories/coyote-logistics)
+- [Coyote Logistics saves countless developer hours with GitHub's cutting-edge offerings](https://github.com/customer-stories/coyote-logistics)
 - [Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot](https://github.com/customer-stories/duolingo)

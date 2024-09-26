@@ -1,4 +1,4 @@
-﻿## Using and Enabling GitHub Copilot for Business for your enterprise
+﻿## Using and enabling GitHub Copilot for Business for your enterprise
 
 You must first establish a policy for using GitHub Copilot for Business in your enterprise. Once GitHub Copilot for Business is enabled at the enterprise level, you can configure GitHub Copilot settings for each organization in your enterprise. By first establishing the policy and then assigning users, your enterprise owner can enable GitHub Copilot for Business.
 
