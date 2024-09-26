@@ -16,53 +16,31 @@ To create an app in an ASE, you use the same process as when you normally create
 
 If you don't have an ASE, you can create one by following the instructions in Create an App Service Environment.
 
-To create an app in an ASE:<br>
+To create an app in an ASE:
 
-1. Select **Create a resource**, **Web + Mobile**, **Web App**.<br>
-
-2. Enter a name for the app. If you already selected an App Service plan in an ASE, the domain name for the app reflects the domain name of the ASE:
+1.  Select **Create a resource**, **Web + Mobile**, **Web App**.<br>
+2.  Enter a name for the app. If you already selected an App Service plan in an ASE, the domain name for the app reflects the domain name of the ASE:
 
 :::image type="content" source="../media/application-service-environment-page-b72e75fb.png" alt-text="Screenshot showing an example of how to create a web application.":::
 
 
-3. Select a subscription.
-
-4. Enter a name for a new resource group, or select **Use existing** and select one from the drop-down list.<br>
-
-5. Select your OS.<br>
-
-6. Select an existing App Service plan in your ASE, or create a new one by following these steps:<br>
-
-    a. From the Azure portal left-side menu, select **Create a resource** &gt; **Web App**.<br>
-
-    b. Select the subscription.<br>
-
-    c. Select or create the resource group.<br>
-
-    d. Enter the name of your web app.<br>
-
-    e. Select **Code** or **DockerContainer**.<br>
-
-    f. Select a runtime stack.<br>
-
-    g. Select **Linux** or **Windows**.<br>
-
-    h. Select your ASE in the **Region** drop-down list.<br>
-
-    i. Select or create a new App Service plan. If creating a new App Service plan, select the appropriate **Isolated** SKU size.<br>
+3.  Select a subscription.
+4.  Enter a name for a new resource group, or select **Use existing** and select one from the drop-down list.<br>
+5.  Select your OS.<br>
+6.  Select an existing App Service plan in your ASE, or create a new one by following these steps:<br>a. From the Azure portal left-side menu, select **Create a resource** &gt; **Web App**.<br>b. Select the subscription.<br>c. Select or create the resource group.<br>d. Enter the name of your web app.<br>e. Select **Code** or **DockerContainer**.<br>f. Select a runtime stack.<br>g. Select **Linux** or **Windows**.<br>h. Select your ASE in the **Region** drop-down list.<br>i. Select or create a new App Service plan. If creating a new App Service plan, select the appropriate **Isolated** SKU size.<br>
 
 :::image type="content" source="../media/specification-picker-fb196b40.png" alt-text="Screenshot showing the specification picker dashboard.":::
 
 
-7. Select **Review + create**, make sure the information is correct, and then select **Create**.
+7.  Select **Review + create**, make sure the information is correct, and then select **Create**.
 
 ## How scale works
 
 Every App Service app runs in an App Service plan. App Service Environments hold App Service plans, and App Service plans hold apps. When you scale an app, you also scale the App Service plan and all the apps in that same plan.
 
-When you scale an App Service plan, the needed infrastructure is added automatically. There's a time delay to scale operations while the infrastructure is being added. If you do several scale operations in sequence, the first infrastructure scale request is acted on and the others are queued. When the first scale operation finishes, the other infrastructure requests all operate together. And when the infrastructure is added, the App Service plans are assigned as appropriate. Creating a new App Service plan is itself a scale operation because it requests additional hardware. A scale operation usually takes 30-60 minutes to complete.<br>
+When you scale an App Service plan, the needed infrastructure is added automatically. There's a time delay to scale operations while the infrastructure is being added. If you do several scale operations in sequence, the first infrastructure scale request is acted on and the others are queued. When the first scale operation finishes, the other infrastructure requests all operate together. And when the infrastructure is added, the App Service plans are assigned as appropriate. Creating a new App Service plan is itself a scale operation because it requests additional hardware. A scale operation usually takes 30-60 minutes to complete.
 
-In the multitenant App Service, scaling is immediate because a pool of resources is readily available to support it. In an ASE, there's no such buffer, and resources are allocated based on need.<br>
+In the multitenant App Service, scaling is immediate because a pool of resources is readily available to support it. In an ASE, there's no such buffer, and resources are allocated based on need.
 
 In an ASE, you can scale an App Service plan up to 100 instances. An ASE can have up to 201 total instances across all the App Service plans in that ASE.
 
@@ -70,15 +48,15 @@ In an ASE, you can scale an App Service plan up to 100 instances. An ASE can hav
 
 App Service can allocate a dedicated IP address to an app. This capability is available after you configure a IP-based TLS/SSL binding, as described in Bind an existing custom TLS/SSL certificate to Azure App Service. In an Internal load balancer (ILB) ASE, you can't add more IP addresses to be used for the IP-based TLS/SSL binding.
 
-With an External ASE, you can configure a IP-based TLS/SSL binding for your app in the same way as in the multitenant App Service. There's always one spare address in the ASE, up to 30 IP addresses. Each time you use one, another is added so that an address is always readily available. A time delay is required to allocate another IP address. That delay prevents adding IP addresses in quick succession.<br>
+With an External ASE, you can configure a IP-based TLS/SSL binding for your app in the same way as in the multitenant App Service. There's always one spare address in the ASE, up to 30 IP addresses. Each time you use one, another is added so that an address is always readily available. A time delay is required to allocate another IP address. That delay prevents adding IP addresses in quick succession.
 
 ## Front-end scaling
 
 When you scale out your App Service plans, workers are automatically added to support them. Every ASE is created with two front ends. The front ends automatically scale- out at a rate of one front end for every set of 15 App Service plan instances. For example, if you have three App Service plans with five instances each, you'd have a total of 15 instances and three front ends. If you scale to a total of 30 instances, you have four front ends. This pattern continues as you scale out.
 
-The number of front ends that are allocated by default is good for a moderate load. You can lower the ratio to as little as one front end for every five instances. You can also change the size of the front ends. By default, they're single core. In the Azure portal, you can change their size to two or four cores instead.<br>
+The number of front ends that are allocated by default is good for a moderate load. You can lower the ratio to as little as one front end for every five instances. You can also change the size of the front ends. By default, they're single core. In the Azure portal, you can change their size to two or four cores instead.
 
-There's a charge for changing the ratio or the front-end sizes. For more information, see Azure App Service pricing. If you want to improve the load capacity of your ASE, you'll get more improvement by first scaling to two-core front ends before you adjust the scale ratio. Changing the core size of your front ends will cause an upgrade of your ASE and should be done outside of regular business hours.<br>
+There's a charge for changing the ratio or the front-end sizes. For more information, see Azure App Service pricing. If you want to improve the load capacity of your ASE, you'll get more improvement by first scaling to two-core front ends before you adjust the scale ratio. Changing the core size of your front ends will cause an upgrade of your ASE and should be done outside of regular business hours.
 
 Front-end resources are the HTTP/HTTPS endpoint for the ASE. With the default front-end configuration, memory usage per front end is consistently around 60 percent. The primary reason to scale your front ends is CPU usage, which is primarily driven by HTTPS traffic.
 
@@ -89,18 +67,18 @@ In an External ASE, the domain suffix used for app creation is *.&lt;asename&gt;
  -  contoso.external-ase.p.azurewebsites.net<br>
  -  contoso.scm.external-ase.p.azurewebsites.net
 
-In an ILB ASE, the domain suffix used for app creation is .&lt;asename&gt;.appserviceenvironment.net. If your ASE is named ilb-ase and you host an app called contoso in that ASE, you reach it at these URLs:<br>
+In an ILB ASE, the domain suffix used for app creation is .&lt;asename&gt;.appserviceenvironment.net. If your ASE is named ilb-ase and you host an app called contoso in that ASE, you reach it at these URLs:
 
  -  contoso.ilb-ase.appserviceenvironment.net
  -  contoso.scm.ilb-ase.appserviceenvironment.net
 
-The Software Configuration Management (SCM) URL is used to access the Kudu console or publishing your app by using Web Deploy. The Kudu console gives you a web UI for debugging, uploading files, editing files, and much more.<br>
+The Software Configuration Management (SCM) URL is used to access the Kudu console or publishing your app by using Web Deploy. The Kudu console gives you a web UI for debugging, uploading files, editing files, and much more.
 
 ## DNS configuration
 
 When you use an External ASE, apps made in your ASE are registered with Azure DNS. There are no additional steps then in an External ASE for your apps to be publicly available. With an ILB ASE, you must manage your own DNS. You can do this in your own DNS server or with Azure DNS private zones.
 
-To configure DNS in your own DNS server with your ILB ASE:<br>
+To configure DNS in your own DNS server with your ILB ASE:
 
 1.  create a zone for &lt;ASE name&gt;.appserviceenvironment.net<br>
 2.  create an A record in that zone that points \* to the ILB IP address
@@ -117,7 +95,7 @@ To configure DNS in Azure DNS Private zones:
 
 The DNS settings for your ASE default domain suffix do not restrict your apps to only being accessible by those names. You can set a custom domain name without any validation on your apps in an ILB ASE. If you then want to create a zone named contoso.net, you could do so and point it to the ILB IP address. The custom domain name works for app requests but doesn't for the scm site. The scm site is only available at &lt;appname&gt;.scm.&lt;asename&gt;.appserviceenvironment.net.
 
-The zone named .&lt;asename&gt;.appserviceenvironment.net is globally unique. Before May 2019, customers were able to specify the domain suffix of the ILB ASE. If you wanted to use .contoso.com for the domain suffix, you were able do so and that would include the scm site. There were challenges with that model including; managing the default TLS/SSL certificate, lack of single sign-on with the scm site, and the requirement to use a wildcard certificate. The ILB ASE default certificate upgrade process was also disruptive and caused application restarts. To solve these problems, the ILB ASE behavior was changed to use a domain suffix based on the name of the ASE and with a Microsoft owned suffix. The change to the ILB ASE behavior only affects ILB ASEs made after May 2019. Pre-existing ILB ASEs must still manage the default certificate of the ASE and their DNS configuration. If your ILB ASE V2 was created after May 2019, you did not need to manage the ILB default certificate as it is managed by Microsoft.<br>
+The zone named .&lt;asename&gt;.appserviceenvironment.net is globally unique. Before May 2019, customers were able to specify the domain suffix of the ILB ASE. If you wanted to use .contoso.com for the domain suffix, you were able do so and that would include the scm site. There were challenges with that model including; managing the default TLS/SSL certificate, lack of single sign-on with the scm site, and the requirement to use a wildcard certificate. The ILB ASE default certificate upgrade process was also disruptive and caused application restarts. To solve these problems, the ILB ASE behavior was changed to use a domain suffix based on the name of the ASE and with a Microsoft owned suffix. The change to the ILB ASE behavior only affects ILB ASEs made after May 2019. Pre-existing ILB ASEs must still manage the default certificate of the ASE and their DNS configuration. If your ILB ASE V2 was created after May 2019, you did not need to manage the ILB default certificate as it is managed by Microsoft.
 
 ## Publishing
 
@@ -131,11 +109,11 @@ In an ASE, as with the multitenant App Service, you can publish by these methods
 
 With an External ASE, these publishing options all work the same way. For more information, see Deployment in Azure App Service.
 
-With an ILB ASE, the publishing endpoints are only available through the ILB. The ILB is on a private IP in the ASE subnet in the virtual network. If you don't have network access to the ILB, you can't publish any apps on that ASE. As noted in Create and use an ILB ASE, you must configure DNS for the apps in the system. That requirement includes the SCM endpoint. If the endpoints aren't defined properly, you can't publish. Your IDEs must also have network access to the ILB to publish directly to it.<br>
+With an ILB ASE, the publishing endpoints are only available through the ILB. The ILB is on a private IP in the ASE subnet in the virtual network. If you don't have network access to the ILB, you can't publish any apps on that ASE. As noted in Create and use an ILB ASE, you must configure DNS for the apps in the system. That requirement includes the SCM endpoint. If the endpoints aren't defined properly, you can't publish. Your IDEs must also have network access to the ILB to publish directly to it.
 
-Without additional changes, internet-based CI systems like GitHub and Azure DevOps don't work with an ILB ASE because the publishing endpoint isn't internet accessible. You can enable publishing to an ILB ASE from Azure DevOps by installing a self-hosted release agent in the virtual network that contains the ILB ASE. Alternatively, you can also use a CI system that uses a pull model, such as Dropbox.<br>
+Without additional changes, internet-based CI systems like GitHub and Azure DevOps don't work with an ILB ASE because the publishing endpoint isn't internet accessible. You can enable publishing to an ILB ASE from Azure DevOps by installing a self-hosted release agent in the virtual network that contains the ILB ASE. Alternatively, you can also use a CI system that uses a pull model, such as Dropbox.
 
-The publishing endpoints for apps in an ILB ASE use the domain that the ILB ASE was created with. You can see it in the app's publishing profile and in the app's portal pane (in Overview &gt; Essentials and also in Properties).<br>
+The publishing endpoints for apps in an ILB ASE use the domain that the ILB ASE was created with. You can see it in the app's publishing profile and in the app's portal pane (in Overview &gt; Essentials and also in Properties).
 
 ## Storage
 
@@ -145,9 +123,9 @@ An ASE has 1 TB of storage for all the apps in the ASE. An App Service plan in t
 
 As a customer, you should monitor the App Service plans and the individual apps running and take appropriate actions. For App Service Environment v2, you should also pay attention to the metrics around the platform infrastructure. These metrics will give you insights into how the platform infrastructure and frontend servers (multiRole) are doing, and you can take action if they're heavily utilized and you aren't getting maximum throughput.
 
-Through Azure portal and CLI, you can configure the scale ratio of your frontend servers between 5 and 15 (default 15) App Service plan instances per frontend server. An App Service Environment will always have a minimum of two frontend servers. You can also increase the size of the frontend servers.<br>
+Through Azure portal and CLI, you can configure the scale ratio of your frontend servers between 5 and 15 (default 15) App Service plan instances per frontend server. An App Service Environment will always have a minimum of two frontend servers. You can also increase the size of the frontend servers.
 
-The **metrics scope** used to monitor the platform infrastructure is called `Microsoft.Web/hostingEnvironments/multiRolePools`.<br>
+The **metrics scope** used to monitor the platform infrastructure is called `Microsoft.Web/hostingEnvironments/multiRolePools`.
 
 You'll see a scope called `Microsoft.Web/hostingEnvironments/workerPools`. The metrics here are only applicable to App Service Environment v1.
 
@@ -211,21 +189,19 @@ The upgradePreferences feature makes the most sense when you have multiple ASEs 
 
 The pricing SKU called Isolated is for use only with ASEs. All App Service plans that are hosted in the ASE are in the Isolated pricing SKU. Isolated rates for App Service plans can vary by region.
 
-In addition to the price of your App Service plans, there's a flat rate for the ASE itself. The flat rate doesn't change with the size of your ASE. It pays for the ASE infrastructure at a default scale rate of one additional front end for every 15 App Service plan instances.<br>
+In addition to the price of your App Service plans, there's a flat rate for the ASE itself. The flat rate doesn't change with the size of your ASE. It pays for the ASE infrastructure at a default scale rate of one additional front end for every 15 App Service plan instances.
 
-If the default scale rate of one front end for every 15 App Service plan instances isn't fast enough, you can adjust the ratio at which front ends are added or the size of the front ends. When you adjust the ratio or size, you pay for the front-end cores that wouldn't be added by default.<br>
+If the default scale rate of one front end for every 15 App Service plan instances isn't fast enough, you can adjust the ratio at which front ends are added or the size of the front ends. When you adjust the ratio or size, you pay for the front-end cores that wouldn't be added by default.
 
-For example, if you adjust the scale ratio to 10, a front end is added for every 10 instances in your App Service plans. The flat fee covers a scale rate of one front end for every 15 instances. With a scale ratio of 10, you pay a fee for the third front end that's added for the 10 App Service plan instances. You don't need to pay for it when you reach 15 instances because it was added automatically.<br>
+For example, if you adjust the scale ratio to 10, a front end is added for every 10 instances in your App Service plans. The flat fee covers a scale rate of one front end for every 15 instances. With a scale ratio of 10, you pay a fee for the third front end that's added for the 10 App Service plan instances. You don't need to pay for it when you reach 15 instances because it was added automatically.
 
 If you adjust the size of the front ends to two cores but don't adjust the ratio, you pay for the extra cores. An ASE is created with two front ends, so even below the automatic scaling threshold you would pay for two extra cores if you increased the size to two-core front ends.
 
 ## Delete an ASE
 
-1. To delete an ASE:
-
-2. Select **Delete** at the top of the **App Service Environment** pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
-
-3. Select **OK**.
+1.  To delete an ASE:
+2.  Select **Delete** at the top of the **App Service Environment** pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
+3.  Select **OK**.
 
 :::image type="content" source="../media/delete-application-service-environment-page-565fddaf.png" alt-text="Screenshot showing how to delete an application service environment.":::
 
@@ -236,4 +212,17 @@ There are command line capabilities to administer to an ASE. The Azure CLI comma
 
 ```azurecli
 C:\>az appservice ase --help Group az appservice ase : Manage App Service Environments v2. This command group is in preview. It may be changed/removed in a future release. Commands: create : Create app service environment. delete : Delete app service environment. list : List app service environments. list-addresses : List VIPs associated with an app service environment. list-plans : List app service plans associated with an app service environment. show : Show details of an app service environment. update : Update app service environment. For more specific examples, use: az find "az appservice ase"
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
