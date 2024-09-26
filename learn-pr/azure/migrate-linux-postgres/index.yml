@@ -17,8 +17,6 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
 title: Migrate Linux and PostgreSQL Workloads
 summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
@@ -32,14 +30,19 @@ prerequisites: |
   - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
+  - database-administrator
+  - developer
+  - devops-engineer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - azure-virtual-machines
   - azure-database-postgresql
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+  - backend-development
+  - frontend-development
+  - virtual-machine
+  - databases
 units:
 - learn.azure.migrate-linux-postgres.migrate-linux-and-postgresql-workloads
 - learn.azure.migrate-linux-postgres.deploy-linux-and-postgresql-infrastructure
