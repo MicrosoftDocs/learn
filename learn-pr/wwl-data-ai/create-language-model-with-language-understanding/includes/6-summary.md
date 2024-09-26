@@ -6,6 +6,6 @@ You learned you can either use an Azure AI Language resource for authoring and p
 
 Further reading:
 
-1. [Azure AI Language and CLU documentation](/azure/ai-services/language-service/conversational-language-understanding/overview?azure-portal=true).
-2. [What are Azure AI services?](/azure/ai-services/what-are-ai-services)
-3. [Get started with Language Studio](/azure/ai-services/language-service/language-studio)
+- [Azure AI Language and CLU documentation](/azure/ai-services/language-service/conversational-language-understanding/overview?azure-portal=true).
+- [What are Azure AI services?](/azure/ai-services/what-are-ai-services)
+- [Get started with Language Studio](/azure/ai-services/language-service/language-studio)
