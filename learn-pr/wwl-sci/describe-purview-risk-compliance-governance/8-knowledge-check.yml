@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for Describe risk and compliance and data governance solutions."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: An organization needs to retain audit records for a longer period of time and gain access to high-value intelligent insights. Which auditing solution should they use?
+    choices:
+    - content: Microsoft 365 Management Activity API
+      isCorrect: false
+      explanation: Incorrect. The Microsoft 365 Management Activity API is a method to retrieve audit logs, not an auditing solution.
+    - content: Audit (Standard)
+      isCorrect: false
+      explanation: Incorrect. Audit (Standard) does not provide longer retention of audit records or high-value intelligent insights.
+    - content: Audit (Premium)
+      isCorrect: true
+      explanation: Correct. Audit (Premium) provides longer retention of audit records, high-value intelligent insights, and higher bandwidth access to the Office 365 Management Activity API.
+
+  - content: An investigator is tasked with identifying and reviewing content in Microsoft 365 services for a legal case. They need to preserve relevant content from inadvertent deletion during the investigation. Which eDiscovery feature should they use?
+    choices:
+    - content: Place content locations on hold
+      isCorrect: true
+      explanation: Correct. 'Place content locations on hold' allows preservation of content relevant to an investigation by securing electronically stored information.
+    - content: Export search results
+      isCorrect: false
+      explanation: Incorrect. 'Export search results' allows copying of items from their original content location for download, not preserving content.
+    - content: Search statistics and samples
+      isCorrect: false
+      explanation: Incorrect. 'Search statistics and samples' allows viewing of estimated search results and representative samples, not preserving content.
+
+  - content: An organization wants to ensure that its employees are adhering to corporate policies in their day-to-day business communications. They want to detect any potential concerns of offensive language or harassment. Which Microsoft tool can they use to scan user communications across the organization?
+    choices:
+    - content: Microsoft Copilot for Microsoft 365
+      isCorrect: false
+      explanation: Incorrect. Microsoft Copilot for Microsoft 365 is a tool for managing Microsoft 365 services, not for scanning and detecting communication policy violations.
+    - content: Microsoft Purview Communication Compliance
+      isCorrect: true
+      explanation: Correct. Microsoft Purview Communication Compliance is an insider risk solution that helps detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within an organization.
+    - content: Microsoft Teams
+      isCorrect: false
+      explanation: Incorrect. While Microsoft Teams is a communication platform, it does not have built-in features for scanning and detecting policy violations.
+
+  - content: A company needs to manage its data lifecycle by ensuring content is kept only for a required time, and then permanently deleted. They want to apply different retention periods to different documents within the same SharePoint site. What should they do to achieve this?
+    choices:
+    - content: Apply a single retention label to all documents in the SharePoint site.
+      isCorrect: false
+      explanation: Incorrect. Applying a single retention label to all documents would not allow for different retention periods for different documents.
+    - content: Apply a policy to the SharePoint site with a retention period of five years and apply a retention label to the individual items with a retention setting of 10 years.
+      isCorrect: true
+      explanation: Correct. This approach allows for different retention periods for different documents within the same SharePoint site.
+    - content: Apply a single retention policy to the entire SharePoint site with a retention period of five years.
+      isCorrect: false
+      explanation: Incorrect. Applying a single retention policy to the entire SharePoint site would not allow for different retention periods for different documents.
+
+  - content: An administrator is setting up retention labels for an organization's records. What happens when content is labeled as a record using a retention label?
+    choices:
+    - content: Restrictions are put in place to block certain activities, activities are logged, and proof of disposition is kept at the end of the retention period.
+      isCorrect: true
+      explanation: Correct. When content is labeled as a record, restrictions are put in place, activities are logged, and proof of disposition is kept at the end of the retention period.
+    - content: The content is automatically deleted after a certain period.
+      isCorrect: false
+      explanation: Incorrect. Labeling content as a record does not automatically delete it, but puts restrictions and logs activities.
+    - content: The content becomes publicly accessible.
+      isCorrect: false
+      explanation: Incorrect. Labeling content as a record does not make it publicly accessible, but imposes restrictions and logs activities.

@@ -5,10 +5,9 @@ metadata:
   description: This learning path gets you started with the basics of storage management in Azure, Storage Account creation, and choices for data storage.
   brand: azure
   ms.date: 01/31/2018
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: normesta
+  ms.author: normesta
+  ms.topic: learning-path
 title: Store data in Azure
 summary:  |
   Azure provides a variety of ways to store data: unstructured, archival, relational, and more. Learn the basics of storage management in Azure, how to create a Storage Account, and how to choose the right model for the data you want to store in the cloud. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer).

@@ -1,12 +1,12 @@
-By using the powerful copy loops feature, you can create dynamic and flexible templates. It's important to understand how to control the way that loops execute when they create resources, and how to use loops to set resource properties and nest loops. 
+By using the powerful copy loops feature, you can create dynamic and flexible templates. It's important to understand how to control the way that loops execute when they create resources and how to use loops to set resource properties and nest loops. 
 
-In this unit, you learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
+In this unit, you'll learn how to control the execution of copy loops and how to use resource property loops and nested loops in Bicep.
 
 [!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Control loop execution
 
-By default, Azure Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created loops in the previous exercises, both of the Azure SQL logical servers were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once. 
+By default, Azure Resource Manager creates resources from loops in parallel and in a non-deterministic order. When you created loops in the previous exercises, both of the Azure SQL logical servers were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once.
 
 In some cases, however, you might need to deploy resources in loops sequentially instead of in parallel, or deploy small batches of changes together in parallel. For example, if you have lots of Azure App Service apps in your production environment, you might want to deploy changes to only a small number at a time to prevent the updates from restarting all of them at the same time.
 

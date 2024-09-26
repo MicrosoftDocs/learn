@@ -57,3 +57,4 @@ Param(
 > You can configure additional advanced options for parameters in a script, such as making a parameter mandatory, by using the **Parameter()** attribute in the **Param()** block.
 
 > **Additional reading:** For more information about the **Parameter()** attribute, refer to [about_Functions_Advanced_Parameters](https://aka.ms/about-functions-advanced-parameters).
+

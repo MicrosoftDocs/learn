@@ -1,8 +1,8 @@
-Enterprises use private mobile networks for their mission-critical applications. To ensure the smooth operation of the private mobile network and to satisfy the needs of your current and future applications, you'll need to occasionally manage the network after its initial setup. For example, you may need to provision SIMs for newly added user equipment (UE) or configure SIM policies for a new application.
+Enterprises use private mobile networks for their mission-critical applications. To ensure the smooth operation of the private mobile network and to satisfy the needs of your current and future applications, you need to occasionally manage the network after its initial setup. For example, you might need to provision SIMs for newly added user equipment (UE) or configure SIM policies for a new application.
 
-In this module, we'll introduce you to Azure Private 5G Core routine management tasks, including tasks for network and site management, SIM and SIM policy management, and system upgrade. For each task, we'll explain the reasons for performing it. We'll also provide high-level instructions for completing the task, with links to the detailed steps described in relevant documentation.
+In this module, we introduce you to Azure Private 5G Core routine management tasks. Including tasks for network and site management, SIM and SIM policy management, and system upgrade. For each task, we explain the reasons for performing it. We also provide high-level instructions for completing the task, with links to the detailed steps described in relevant documentation.
 
-At the end of this module, you'll take the Knowledge Check to ensure that you've successfully understood the material. With the knowledge taught in this module, you should be able to manage an Azure Private 5G Core powered private mobile network on a routine basis.
+At the end of this module, you take the Knowledge Check to ensure that you successfully understood the material. With the knowledge taught in this module, you should be able to manage an Azure Private 5G Core powered private mobile network on a routine basis.
 
 ## Video: Azure Private 5G Core Management
 
@@ -14,7 +14,7 @@ This video outlines routine management tasks for Azure Private 5G Core:
 
 You can complete many management tasks by using either the Azure portal or an [Azure Resource Manager template](/azure/azure-resource-manager/templates/overview) (ARM template). An ARM template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for a project.
 
-While the Azure portal provides intuitive graphical user interface (GUI), an ARM template can help you quickly complete repetitive steps. For example, with an ARM template, you can deploy multiple sites or provision multiple SIMs in a single step. Where applicable, this module provides instructions for using both the Azure portal and an ARM template to complete a task.
+While the Azure portal provides an intuitive graphical user interface (GUI), an ARM template can help you quickly complete repetitive steps. For example, with an ARM template, you can deploy multiple sites or provision multiple SIMs in a single step. Where applicable, this module provides instructions for using both the Azure portal and an ARM template to complete a task.
 
 > [!NOTE]
 >
@@ -23,9 +23,9 @@ While the Azure portal provides intuitive graphical user interface (GUI), an ARM
 
 ## Azure resources used by management tasks
 
-With either the Azure portal GUI or the ARM templates, you'll need to use different resources to manage the components in a private mobile network. For example, to provision SIMs, you'll need to use the **Mobile Network** resource.
+With either the Azure portal GUI or the ARM templates, you need to use different resources to manage the components in a private mobile network. For example, to provision SIMs, you need to use the **Mobile Network** resource.
 
-The following table describes the major resource types that you'll need for managing a private mobile network:
+The following table describes the major resource types that you need for managing a private mobile network:
 
 |Resource type  |Network component managed |Usage note  |
 |---------|---------|---------|
@@ -45,6 +45,6 @@ The following diagram shows an example of two SIM policies assigned to SIMs in t
 
 As shown in the diagram, SIM group 1 contains three SIMs, while SIM group 2 contains two SIMs. SIM policy 1 and SIM policy 2 are respectively assigned to the SIMs in SIM group 1 and SIM group 2.
 
-The private mobile network has two DNs and four slices. SIM policy 1 has two network scopes, through which service 1 and service 2 are respectively used. SIM policy 2 also has two network scopes, through which service 2 is used. Each network scope is restricted by the combination of a slice and a DN.
+The private mobile network has two data networks (DNs) and four slices. SIM policy 1 has two network scopes, through which service 1 and service 2 are respectively used. SIM policy 2 also has two network scopes, through which service 2 is used. The combination of a slice and a DN restricts each network scope.
 
-You'll learn more about these resources and their usage in later units.
+You learn more about these resources and their usage in later units.

@@ -22,7 +22,7 @@ Deployments to devices need to be done under tight control in production environ
 
 1. To fix the agent pools, from the **Tasks** dropdown, select **Create Deployment**, and then select **Agent Job** to change the agent pool.
 
-1. Repeat the same step. From the **Tasks** dropdown, select **Smoke Test**, and then select **Agent Job** to change the agent pool to **Hosted Ubuntu 1604**.
+1. Repeat the same step. From the **Tasks** dropdown, select **Smoke Test**, and then select **Agent Job** to change the agent pool to **ubuntu latest**.
 
 1. Now, you should be able to save the release pipeline. We highly recommended saving it at this point if Azure DevOps allows.
 

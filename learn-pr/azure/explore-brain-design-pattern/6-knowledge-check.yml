@@ -3,12 +3,13 @@ uid: learn.oxford.explore-design-brain-patterns.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: A knowledge check for the discover Microsoft guidelines for Automated Intelligence.
-  ms.date: 10/14/2022
+  description: A knowledge check for Microsoft's guidelines for Automated Intelligence.
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)] 
@@ -18,21 +19,21 @@ quiz:
     choices:
     - content: "When we need to classify images."
       isCorrect: false
-      explanation: "Incorrect. Classification is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
-    - content: "When there's an expert operator who currently decides on control strategies based on advance perception."
+      explanation: "Incorrect. Classification is a task for Machine Learning. If we need only classification, we don't need an Autonomous AI brain design pattern."
+    - content: "When there's an expert operator who currently decides on control strategies based on advanced perception."
       isCorrect: true
-      explanation: "Correct. The perception brain design pattern will automate human-like decision making based on advance perception, like vision or sound."
+      explanation: "Correct. The perception brain design pattern will automate human-like decision making based on advanced perception, like vision or sound."
     - content: "When we need to predict product demand."
       isCorrect: false
       explanation: "Incorrect. Prediction is a task for Machine Learning. If we only need prediction, we don't need an Autonomous AI brain design pattern."
     - content: "When we need to identify sounds."
       isCorrect: false
-      explanation: "Incorrect. Classification of sounds is a task for Machine Learning. If we need only classification, we don’t need an Autonomous AI brain design pattern."
+      explanation: "Incorrect. Classification of sounds is a task for Machine Learning. If we need only classification, we don't need an Autonomous AI brain design pattern."
   - content: "When is best to use the functional brain design pattern?"
     choices:
     - content: "When there are different tasks that can only be controlled by one expert operator at a time."
       isCorrect: false
-      explanation: "Incorrect. When there are different tasks that can only be controlled by an expert operator at a time is a hint that you need a strategy brain design decomposition."
+      explanation: "Incorrect. When there are different tasks that can only be controlled by one expert operator at a time, you may need a strategy brain design decomposition."
     - content: "When there are different tasks that are executed using the same control actions."
       isCorrect: false
       explanation: "Incorrect. When the tasks are executed using the same control actions, it's best to use the strategy decomposition."
@@ -41,7 +42,7 @@ quiz:
       explanation: "Correct. When we can divide the problem into tasks that are executed by different expert operators over independent control actions (different knobs in the process), the functional decomposition is the best choice."
     - content: "When there's an expert operator currently performing the task."
       isCorrect: false
-      explanation: "Incorrect. That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is functional."
+      explanation: "Incorrect. That means the expert operator is doing advanced perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods, but it isn't an indication that the best brain design decomposition is functional."
   - content: "When is best to use the strategy brain design pattern?"
     choices:
     - content: "When we identify strategies that are controlled using independent control actions."
@@ -52,7 +53,7 @@ quiz:
       explanation: "Incorrect. When you can divide the work by operators to control a system, it's a hint that you can use a functional brain design decomposition."
     - content: "When there's an expert operator currently performing the task."
       isCorrect: false
-      explanation: "Incorrect. That means that the expert operator is doing advance perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods but isn't an indication that the best brain design decomposition is strategy."
+      explanation: "Incorrect. That means that the expert operator is doing advanced perception and decision making that can't be performed by any current control method. It's a hint that Autonomous AI might outperform current methods, but it isn't an indication that the best brain design decomposition is strategy."
     - content: "When we identify strategies that are controlled using the same control actions."
       isCorrect: true
       explanation: "Correct. We identify strategies using the three-column exercise, and each strategy requires to control all control actions in different ways depending on the scenario."

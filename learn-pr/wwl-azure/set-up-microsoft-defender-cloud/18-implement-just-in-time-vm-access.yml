@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.implement-just-in-time-vm-access
+title: Implement just-in-time VM access
+metadata:
+  title: Implement just-in-time VM access
+  description: "Implement just-in-time VM access"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/18-implement-just-in-time-vm-access.md)]

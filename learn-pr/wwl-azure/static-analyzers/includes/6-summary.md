@@ -1,4 +1,6 @@
+
 This module introduced the static analyzers SonarCloud and CodeQL in GitHub.
+
 
 You learned how to describe the benefits and usage of:
 
@@ -9,5 +11,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Automatic Code Review, Testing, Inspection &amp; Auditing](https://sonarcloud.io)
+ -  [Automatic Code Review, Testing, Inspection & Auditing](https://sonarcloud.io)
  -  [CodeQL](https://codeql.github.com)

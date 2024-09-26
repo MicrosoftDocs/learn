@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction to optimizing IT operations and management with Azure Automanage.
-  ms.date: 01/10/2023
+  ms.date: 12/19/2023
   author: johnmarco
   ms.author: johnmarc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

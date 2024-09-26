@@ -20,5 +20,5 @@ The package addresses three central needs for security investigators and hunters
 
 - Visualizing data
 
-msticpy can query using KQL; the library also provides predefined queries for Microsoft Sentinel, Microsoft 365 Defender for Endpoint, and the Microsoft  Security Graph.  An example of a function is the list_logons_by_account, which retrieves the logon events for an account.  For details about msticpy visit: [https://msticpy.readthedocs.io/](https://msticpy.readthedocs.io/?azure-portal=true)
+msticpy can query using KQL; the library also provides predefined queries for Microsoft Sentinel, Microsoft Defender XDR for Endpoint, and the Microsoft  Security Graph.  An example of a function is the list_logons_by_account, which retrieves the logon events for an account.  For details about msticpy visit: [https://msticpy.readthedocs.io/](https://msticpy.readthedocs.io/?azure-portal=true)
 

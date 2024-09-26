@@ -1,8 +1,8 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you'll create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
+You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
 
-During the process, you'll:
+During the process, you:
 
 > [!div class="checklist"]
 > * Create a Bicep file that deploys a Cosmos DB account.
@@ -19,9 +19,9 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or press <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or press <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
@@ -46,7 +46,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
    > [!TIP]
    > Bicep is strict about where you put line breaks, so be sure to add line breaks only where shown here.
 
-   This Bicep template deploys an Azure Cosmos DB account. This is the parent resource that you'll build upon shortly.
+   This Bicep template deploys an Azure Cosmos DB account that is the parent resource you build upon in the next section.
 
 1. Save the changes to the file.
 
@@ -83,13 +83,13 @@ Next, you create the database, which is a child resource of the Azure Cosmos DB 
    }
    ```
 
-   Notice that this code deploys the database, which is a child resource, by using the `parent` property. Also notice that you've used the fully qualified resource type, and you've specified the API version explicitly.
+   Notice that this code deploys the database, which is a child resource, by using the `parent` property. Also notice that the code uses the fully qualified resource type, with the API version specified  explicitly.
 
 1. Save the changes to the file.
 
 ## Add a container
 
-Now you add another child resource. This time, you add it as a nested resource rather than use the `parent` property.
+Now you add another child resource. This time, you add it as a nested resource instead of using the `parent` property.
 
 1. Near the top of the file, below the `cosmosDBDatabaseName` variable definition, add the following variables:
 
@@ -118,9 +118,9 @@ Now you add another child resource. This time, you add it as a nested resource r
    }
    ```
 
-   Notice that you've used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You haven't specified an API version, so Bicep uses the version from the parent resource, `2020-04-01`.
+   Notice that you used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You didn't't specify an API version, so Bicep uses the version from the parent resource, `2020-04-01`.
 
-   After you're finished, your complete Bicep template should look like this:
+   After you're finished, your complete Bicep template should look like this example:
 
    :::code language="bicep" source="code/4-complete.bicep" :::
 
@@ -134,13 +134,11 @@ Now you add another child resource. This time, you add it as a nested resource r
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete, before you see a successful deployment.
 
 ```azurecli
 az deployment group create --template-file main.bicep
 ```
-
-You'll see `Running...` in the terminal.
 
 ::: zone-end
 
@@ -150,7 +148,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This operation can take a minute or two to complete, before you see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -182,4 +180,4 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Cosmos DB resources listed." border="true":::
 
-1. Leave the page open in your browser. You'll check on deployments again later.
+1. Leave the page open in your browser, so you can check on deployments again later.

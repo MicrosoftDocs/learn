@@ -4,7 +4,7 @@ Here, we explore how both humans and computers categorize, store, and interpret 
 
 ## Scenario: the last voyage of the Titanic
 
-As an eager marine archaeologist, you have an unusually keen interest in maritime disasters. Late one night, while clicking between images of whale bones and ancient scrolls about Atlantis, you find a public dataset that lists known and crew of the first – and last – voyage of the Titanic. Captured by the balance between fate and chance, you ponder – what factors determined the survival of a Titanic passenger? Data from this period are slightly patchy – much information for certain passengers is unknown. You must find ways to patch up this data before you can fully analyze it.
+As an eager marine archaeologist, you have an unusually keen interest in maritime disasters. Late one night, while clicking between images of whale bones and ancient scrolls about Atlantis, you find a public dataset that lists known passengers and crew of the first – and last – voyage of the Titanic. Drawn in by the balance between fate and chance, you wonder – what factors determined the survival of a Titanic passenger? Data from this period are somewhat incomplete – much information for certain passengers is unknown. You must find ways to patch up this data before you can fully analyze it.
 
 ## Prerequisites
 

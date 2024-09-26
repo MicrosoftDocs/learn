@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.tune-queries-azure-database-for-postgresql.exercise-assess-query-performance-query-store
-title: 'Exercise: Assess query performance using Query Store'
+title: Exercise - Assess query performance using Query Store
 metadata:
-  title: 'Exercise: Assess query performance using Query Store'
-  description: "Exercise: Assess query performance using Query Store"
-  ms.date: 10/13/2022
+  title: Exercise - Assess query performance using Query Store
+  description: "Exercise - Assess query performance using Query Store."
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-assess-query-performance-query-store.md)]

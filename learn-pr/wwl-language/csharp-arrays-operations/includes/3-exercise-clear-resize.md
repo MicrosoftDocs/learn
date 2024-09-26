@@ -1,11 +1,10 @@
-
-
-
 As you continue building a pallet tracker for the logistics company, suppose you also need track new pallets and remove old pallets from tracking. How can you accomplish creating tracking functionality for adding and removing pallets?
 
 ## Use array methods to clear and resize an array
 
-The `Array.Clear()` method allows you to remove the contents of specific elements in your array, and the `Array.Resize()` method adds or removes elements from your array.
+The `Array.Clear()` method allows you to remove the contents of specific elements in your array and replace it with the array default value. For example, in a `string` array the element value cleared is replaced with `null`, when you clear a `int` array element the replacement is done with `0` (zero).
+
+The `Array.Resize()` method adds or removes elements from your array.
 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
@@ -91,7 +90,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-You should see the following output:
+    You should see the following output:
 
     ```Output
     Before: B14
@@ -104,7 +103,7 @@ You should see the following output:
 
     ```
 
-If you focus on the line of output `After: `, you may think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
+If you focus on the line of output `After: `, you might think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
 
 ### Call a string helper method on a cleared element
 
@@ -185,7 +184,7 @@ if (pallets[0] != null)
 
 1. Take a few minutes to focus on the line `Array.Resize(ref pallets, 6);`. 
 
-    Here, you're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require you pass arguments by value (the default) or by reference (using the ref keyword). The reasons why this is necessary requires a long and complicated explanation about of how objects are managed in .NET. Unfortunately, that is beyond the scope of this module. When in doubt, you're recommended to look at Intellisense or Microsoft Docs for examples on how to properly call a given method.
+    Here, you're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require you pass arguments by value (the default) or by reference (using the ref keyword). The reasons why this is necessary requires a long and complicated explanation about of how objects are managed in .NET. Unfortunately, that is beyond the scope of this module. When in doubt, you're recommended to look at Intellisense or Microsoft Learn for examples on how to properly call a given method.
 
     In this case, you're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements. The two new elements will be null until you assign a value to them.
 

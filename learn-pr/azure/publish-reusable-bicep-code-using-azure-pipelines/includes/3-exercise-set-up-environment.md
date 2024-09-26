@@ -27,7 +27,7 @@ Run a template that sets up your Azure DevOps project.
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable)
 
-On the Azure DevOps Demo Generator site, do the following:
+On the Azure DevOps Demo Generator site:
 
 1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
@@ -53,7 +53,9 @@ On the Azure DevOps Demo Generator site, do the following:
 
    :::image type="content" source="../media/3-clone.png" alt-text="Screenshot of Azure DevOps showing the repository, with the Clone button highlighted.":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials**, and then copy the displayed username and password to somewhere safe.
+1. Select **Generate Git Credentials**. Copy your password and save it. You'll need this credential when authenticating to your repository when you later commit the updates to your `YAML` files.
+
+    :::image type="content" source="../media/3-generate-git-credentials.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Generate Git Credentials button highlighted.":::
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
@@ -71,11 +73,13 @@ On the Azure DevOps Demo Generator site, do the following:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
+
+
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you already installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
 [!INCLUDE [](../../includes/azure-exercise-terminal-cli.md)]
 
@@ -93,7 +97,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="powershell"
 
-To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps).
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you already installed [Azure PowerShell](/powershell/azure/install-az-ps).
 
 [!INCLUDE [](../../includes/azure-exercise-terminal-powershell.md)]
 

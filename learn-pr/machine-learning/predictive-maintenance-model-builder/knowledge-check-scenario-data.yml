@@ -5,12 +5,11 @@ metadata:
   unitType: knowledge_check
   title: "Knowledge check - Scenario and data"
   description: "Review your knowledge of scenarios and data preparation."
-  ms.date: 10/25/2021
+  ms.date: 07/30/2024
   author: luisquintanilla
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
 durationInMinutes: 5
 content: |
 quiz:

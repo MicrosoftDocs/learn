@@ -12,7 +12,7 @@ In both cases, Azure CLI can be used interactively or through scripts:
  -  **Interactive**. First, for Windows operating systems, launch a shell such as cmd.exe, or for Linux or macOS, use Bash. Then issue the command at the shell prompt.
  -  **Scripted**. Assemble the Azure CLI commands into a shell script using the script syntax of your chosen shell. Then execute the script.
 
-Azure CLI lets you control nearly every aspect of every Azure resource. You can work with resource groups, storage, VMs, Azure Active Directory (Azure AD), containers, machine learning, and so on.
+Azure CLI lets you control nearly every aspect of every Azure resource. You can work with resource groups, storage, VMs, Microsoft Entra ID, containers, machine learning, and so on.
 
 Commands in the CLI are structured in *groups* and *subgroups*. Each group represents a service provided by Azure, and the subgroups divide commands for these services into logical groupings. For example, the `storage` group contains subgroups including **account**, **blob**, **share**, and **queue**.
 

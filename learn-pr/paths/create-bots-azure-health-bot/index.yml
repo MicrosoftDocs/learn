@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/27/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create intelligent health bots with Azure Health Bot
 summary: |
   Azure Health Bot enables users to build a health bot by using built-in or custom scenarios. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.

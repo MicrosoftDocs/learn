@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-continuous-deployment-container-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/29/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does Azure Pipelines provide to support continuous integration and delivery of applications?"
+    choices:
+    - content: "Build and release services."
+      isCorrect: true
+      explanation: "Correct. Azure Pipelines provides build and release services to support continuous integration and delivery of applications."
+    - content: "Provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code."
+      isCorrect: false
+      explanation: "Incorrect. This is a description of Azure Repos, not Azure Pipelines."
+    - content: "Provides a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods."
+      isCorrect: false
+      explanation: "Incorrect. This is a description of Azure Boards, not Azure Pipelines."
+  - content: "What is a pipeline in Azure Pipelines?"
+    choices:
+    - content: "A collection of files or packages published by a run."
+      isCorrect: false
+      explanation: "Incorrect. This is the definition of an artifact."
+    - content: "Defines the continuous integration and deployment process for your app, made up of one or more stages."
+      isCorrect: true
+      explanation: "Correct. A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages."
+    - content: "A set of deployment target machines that have agents installed."
+      isCorrect: false
+      explanation: "Incorrect. This is the definition of a deployment group."
+  - content: "What is the purpose of an agent in Azure Pipelines?"
+    choices:
+    - content: "To manage and host pipelines for Microsoft."
+      isCorrect: false
+      explanation: "Incorrect. Agents are not used to manage and host pipelines for Microsoft."
+    - content: "To provide extra security measures for Azure Pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Agents are not used to provide extra security measures for Azure Pipelines."
+    - content: "To run one or more jobs during pipeline execution."
+      isCorrect: true
+      explanation: "Correct. Agents are computing infrastructure with installed agent software that runs one job at a time during pipeline execution."
+  - content: "What is the most common use of variables in Azure Pipelines?"
+    choices:
+    - content: "To define a value that you can then use in your pipeline."
+      isCorrect: true
+      explanation: "Correct. Variables give you a convenient way to get key bits of data into various parts of the pipeline."
+    - content: "To define a value that can only be used at the pipeline root level."
+      isCorrect: false
+      explanation: "Incorrect. Variables can be defined at the root, stage, and job level. A variable set in the pipeline root level overrides a variable set in the Pipeline settings UI."
+    - content: "To define a value that can't be changed from run to run or job to job of your pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Variables are mutable and their value can change from run to run or job to job of your pipeline."
+  - content: "A software development team wants to automate their build and testing process. Which Azure DevOps service can they use to achieve this goal?"
+    choices:
+    - content: "Azure Boards."
+      isCorrect: false
+      explanation: "Incorrect. Azure Boards provides Agile tools for planning and tracking work, code defects, and issues using Kanban and Scrum methods."
+    - content: "Azure Test Plans."
+      isCorrect: false
+      explanation: "Incorrect. Azure Test Plans provides several tools to test your apps, including manual/exploratory testing and continuous testing."
+    - content: "Azure Pipelines."
+      isCorrect: true
+      explanation: "Correct. Azure Pipelines provides build and release services to support continuous integration and delivery of your applications."
+  - content: "What is the purpose of a trigger in Azure Pipelines?"
+    choices:
+    - content: "A trigger is something that's set up to tell the pipeline when to run."
+      isCorrect: true
+      explanation: "Correct. A trigger is used to initiate the pipeline and can be configured to run upon a push to a repository, at scheduled times, or upon the completion of another build."
+    - content: "A trigger is a prepackaged script that performs an action."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of a task, not a trigger."
+    - content: "A trigger is a way of organizing jobs in a pipeline."
+      isCorrect: false
+      explanation: "Incorrect. This describes the purpose of a stage, not a trigger."

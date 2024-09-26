@@ -17,4 +17,4 @@ This exercise is a challenge based on content covered in this module, and there 
 When you've finished the exercise in GitHub, return here to continue with the module.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/githubtraining/exercise-check-installed-apps?azure-portal=true)
+> [Start this exercise](https://youtu.be/W88hnoqHEGg)

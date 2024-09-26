@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-finops.finops-domains-capabilities
+title: FinOps Domains and Capabilities
+metadata:
+  title: FinOps Domains and Capabilities
+  description: Learn about the FinOps Domains and Capabilities as defined by the FinOps Framework.
+  ms.date: 04/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-finops-domains-capabilities.md)]

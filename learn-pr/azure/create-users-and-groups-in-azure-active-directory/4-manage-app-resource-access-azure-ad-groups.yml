@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-users-and-groups-in-azure-active-directory.manage-app-resource-access-azure-ad-groups
-title: Manage app and resource access by using Azure Active Directory groups
+title: Manage app and resource access by using Microsoft Entra groups
 metadata:
-  title: Manage app and resource access by using Azure Active Directory groups
-  description: Manage app and resource access by using Azure Active Directory groups
-  ms.date: 03/21/2023
+  title: Manage app and resource access by using Microsoft Entra groups
+  description: Manage app and resource access by using Microsoft Entra groups
+  ms.date: 06/25/2024
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 3
 content: |
   [!include[](includes/4-manage-app-resource-access-azure-ad-groups.md)]

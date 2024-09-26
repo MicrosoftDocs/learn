@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.research.introduction-to-project-farmvibes-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A unit in the Intro to project FarmVibes.AI module. 
+  ms.date: 7/16/2024
+  author: RiyazPishori
+  ms.author: riyazp
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the primary function of FarmVibes.AI in agricultural technology?"
+    choices:
+    - content: "To automate all farming operations."
+      isCorrect: false
+      explanation: "Automation is a benefit, but the primary function is advanced data analysis for decision-making."
+    - content: "To provide advanced data analysis tools for smart decision-making."
+      isCorrect: true
+      explanation: "FarmVibes.AI is designed to empower farmers and agricultural technologists with data-driven insights for optimal farming practices, leveraging AI and machine learning to analyze farm related data."
+    - content: "To replace human farmers."
+      isCorrect: false
+      explanation: "The aim is to assist farmers in making smarter decisions, not to replace them."
+  - content: "How does FarmVibes.AI use satellite imagery?"
+    choices:
+    - content: "To analyze agricultural land characteristics."
+      isCorrect: true
+      explanation: "FarmVibes.AI uses satellite imagery for comprehensive land assessments, including soil nutrients and more, aiding in optimal soil sampling and sensor placement for improved agricultural practices."
+    - content: "Solely for monitoring farm boundaries."
+      isCorrect: false
+      explanation: "While boundary monitoring may be a feature, the primary use involves analyzing soil health and crop conditions."
+    - content: "To predict weather conditions."
+      isCorrect: false
+      explanation: "Weather prediction might be a part of its capabilities, but the document specifically highlights its use in soil and crop health analysis."
+  - content: "What enables FarmVibes.AI to function effectively in remote locations with limited connectivity?"
+    choices:
+    - content: "Requiring constant internet connection."
+      isCorrect: false
+      explanation: "The platform is designed to minimize reliance on constant internet connectivity, not require it."
+    - content: "Processing data locally for some early insights."
+      isCorrect: true
+      explanation: "Local data processing allows FarmVibes.AI to operate efficiently in remote areas, ensuring timely decisions without the need for constant cloud connectivity."
+    - content: "Using only cloud-based data storage."
+      isCorrect: false
+      explanation: "The system's ability to store and process data on-premises is key to its functionality in remote locations."
+  - content: "Which of the following best describes the role of data types in FarmVibes.AI's operational framework?"
+    choices:
+    - content: "Solely to serve as a database for historical agricultural records."
+      isCorrect: false
+      explanation: "While historical data is important, FarmVibes.AI's data types encompass a broader range of real-time and diverse data sources essential for dynamic agricultural analysis."
+    - content: "To provide a diverse set of inputs for analysis, including satellite imagery, soil sensor data, and weather information, enabling comprehensive agricultural insights."
+      isCorrect: true
+      explanation: "Data types are critical for the functionality of FarmVibes.AI, offering the necessary variety of data to ensure detailed and accurate analyses for agricultural decision-making."
+    - content: "To limit the scope of analysis to satellite imagery only."
+      isCorrect: false
+      explanation: "FarmVibes.AI processes a wide range of data types beyond satellite imagery, including soil and weather data, to support multifaceted agricultural research and operations."
+  - content: "How do workflows contribute to the utility of FarmVibes.AI for agricultural research and projects?"
+    choices:
+    - content: "By providing predefined processes for data processing, analysis, and reporting, enabling users to efficiently apply complex analyses to their datasets."
+      isCorrect: true
+      explanation: "Workflows are fundamental to FarmVibes.AI, streamlining the data analysis process and making advanced data processing accessible to users for informed agricultural decision-making."
+    - content: "By manually guiding users through each step of data analysis without any automation."
+      isCorrect: false
+      explanation: "The essence of workflows in FarmVibes.AI lies in their automation and predefined nature, which simplifies complex data analysis tasks, contrary to manual step-by-step guidance."
+    - content: "Workflows are designed exclusively for expert data scientists and are not user-friendly for researchers or ISVs."
+      isCorrect: false
+      explanation: "FarmVibes.AI's workflows are intended to be accessible to a wide range of users, including data scientists, researchers, and ISVs, with varying levels of expertise."
+  - content: "What purpose do the example notebooks within FarmVibes.AI serve?"
+    choices:
+    - content: "To restrict users to a set of predefined analyses, limiting customization and flexibility."
+      isCorrect: false
+      explanation: "Contrary to limiting user capabilities, the example notebooks aim to enhance user proficiency and encourage exploration of the platform's full potential."
+    - content: "Notebooks serve only as a repository for storing users' data, without any instructional value."
+      isCorrect: false
+      explanation: "Beyond data storage, the example notebooks are primarily instructional, guiding users through the effective application of FarmVibes.AI's features and workflows."
+    - content: "To help users, such as data scientists and researchers, become acquainted with and effectively utilize various workflows."
+      isCorrect: true
+      explanation: "The example notebooks are educational tools within FarmVibes.AI, designed to facilitate user understanding and application of the platform's workflows for their agricultural data analysis needs."
+  - content: "In what way does the FarmVibes.AI Client enhance the user experience?"
+    choices:
+    - content: "The Client solely functions as a basic data visualization tool without any analytical capabilities."
+      isCorrect: false
+      explanation: "The FarmVibes.AI Client offers much more than data visualization; it is a multifunctional interface supporting data management, analysis, workflow setup, and result integration."
+    - content: "It acts as an interface for accessing and managing data, running analyses, setting up workflows, and integrating solutions, tailored for data scientists, researchers, and ISVs."
+      isCorrect: true
+      explanation: "The FarmVibes.AI Client is central to the ISV experience, providing a comprehensive set of interface to interact with the platform's data and analytical capabilities."
+    - content: "It is designed exclusively for administrative tasks, such as user account management and billing, without involving any analytical functions."
+      isCorrect: false
+      explanation: "While administrative functionalities might be part of the Client's capabilities, its primary focus is on facilitating data analysis, workflow management, and result visualization for users."

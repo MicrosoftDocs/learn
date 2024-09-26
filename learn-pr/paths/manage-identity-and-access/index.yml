@@ -1,20 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.security.manage-identity-and-access
 metadata:
-  title: Manage identity and access in Azure Active Directory
-  description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
+  title: Manage identity and access in Microsoft Entra ID
+  description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Entra ID for workloads.
   brand: azure
   ms.date: 10/1/2019
   author: barclayn
   ms.author: barclayn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage identity and access in Azure Active Directory
+  ms.topic: learning-path
+title: Manage identity and access in Microsoft Entra ID
 summary: |
-  Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
+  Learn how to work with subscriptions, users, and groups by configuring Microsoft Entra ID for workloads. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
 prerequisites: None
 video:
-  title: "Manage Identity and Access in Azure Active Directory video"
+  title: "Manage Identity and Access in Microsoft Entra video"
   url: https://www.microsoft.com/videoplayer/embed/RWK4YI
 iconUrl: /training/achievements/manage-identity-and-access.svg
 levels:
@@ -28,16 +27,13 @@ products:
 - azure
 - azure-clis
 - azure-portal
-- azure-active-directory
+- entra-id
 subjects:
 - identity-access
 modules:
-- learn.azure.protect-against-security-threats-azure
-- learn.create-azure-account
 - learn.azure-security.manage-users-and-groups-in-aad
 - learn.azure.create-users-and-groups-in-azure-active-directory
 #- learn.secure-access-azure-ad-multi-factor-authentication
-- learn.secure-app-with-oidc-and-azure-ad
 - learn.azure-security.secure-aad-users-with-mfa
 - learn.azure.manage-device-identity-ad-join
 - learn.azure.allow-users-to-reset-their-password

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-compliance-cloud-native-applications.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 12/13/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+  ms.contributors:
+  - masoucou-05122021
+durationInMinutes: 2
+
+content: |
+quiz:
+  title: Check what you learned
+  questions:
+  - content: What is the first step to take when you want to implement compliance in your cloud-native application?
+    choices:
+    - content: Decide what data taxonomy applies to your application, and classify your data models appropriately.
+      isCorrect: true
+      explanation: That's correct. The first step is to decide how to categorize your data. This is called data taxonomy. Once you decide on a data taxonomy, you can classify your data models appropriately.
+    - content: Add the `Microsoft.Extensions.Compliance.Redaction` NuGet package to your project.
+      isCorrect: false
+      explanation: That's incorrect. This is the package you'll use to redact sensitive data in your application. However, it isn't the first thing you need to do.
+    - content: Add the `builder.Services.AddRedaction()` method to your Program.cs file.
+      isCorrect: false
+      explanation: That's incorrect. This is the method you'll use to redact sensitive data in your application. However, it isn't the first thing you need to do.
+  - content: Which of the following do you need to reference to be able to redact sensitive data only in your cloud-native application?
+    choices:
+    - content: Using `Microsoft.Extensions.AuditReports` and `Microsoft.Extensions.Compliance.Telemetry`
+      isCorrect: false
+      explanation: That's incorrect. The first package is used to generate compliance reports. The second isn't a valid package.
+    - content: Using `Microsoft.Extensions.Compliance.Redaction` and `Microsoft.Extensions.AuditReports`
+      isCorrect: false
+      explanation: That's incorrect. The first package is the one you need to use to redact sensitive data. The second is used to generate compliance reports.
+    - content: Using `Microsoft.Extensions.Compliance.Classification` and `Microsoft.Extensions.Compliance.Redaction`
+      isCorrect: true
+      explanation: That's correct. The first package is the one you need to use to classify your data. The second is the one you need to use to redact sensitive data.

@@ -19,7 +19,7 @@ This requirement further validates the suitability of Microsoft Defender for Clo
 
 ### Provide a solution to address the vulnerabilities of client devices used for remote access to the on-premises VDI environment.
 
-This requirement, combined with the lack of an existing mobile device management solution, influences the choice of Microsoft Intune for the management of personal devices. Windows client computers can be Microsoft Azure Active Directory (Azure AD) joined to provide a comprehensive set of security features. These features include passwordless authentication with Windows Hello for Business, single sign-on to both cloud and on-premises resources, support for Azure AD Conditional Access, and enforcement of organization-required configurations, such as disk encryption or software updates.
+This requirement, combined with the lack of an existing mobile device management solution, influences the choice of Microsoft Intune for the management of personal devices. Windows client computers can be Microsoft Entra joined to provide a comprehensive set of security features. These features include passwordless authentication with Windows Hello for Business, single sign-on to both cloud and on-premises resources, support for Microsoft Entra Conditional Access, and enforcement of organization-required configurations, such as disk encryption or software updates.
 
 ### Provide a tactical and strategic solution to address the vulnerabilities of the on-premises VDI environment.
 
@@ -45,7 +45,7 @@ This requirement suggests the use of Azure Arc as the technology that not only h
 
 ### What are the primary Microsoft Defender products and services that offer security solutions for an infrastructure?
 
-Microsoft Defender comprises a suite of security-focused products, including Microsoft 365 Defender, Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Defender Threat Intelligence, and Microsoft Defender capabilities in the Windows operating system. Solutions focusing on infrastructure benefit directly or indirectly from all of them, but the ones of particular importance are Microsoft Defender for Cloud and Microsoft Defender for IoT. 
+Microsoft Defender comprises a suite of security-focused products, including Microsoft Defender XDR, Microsoft Defender for Cloud, Microsoft Defender for IoT, Microsoft Defender Threat Intelligence, and Microsoft Defender capabilities in the Windows operating system. Solutions focusing on infrastructure benefit directly or indirectly from all of them, but the ones of particular importance are Microsoft Defender for Cloud and Microsoft Defender for IoT. 
 
 Microsoft Defender for Cloud provides unified security management and advanced threat protection across hybrid and multicloud workloads. The following Defender for Cloud plans offer comprehensive defenses for the compute, data, and service layers of your environment:
 
@@ -91,7 +91,7 @@ Microsoft Defender for Endpoint protects Windows and Linux machines whether in A
 The integration between Defender for Endpoint and Defender for Cloud offers the following capabilities:
 
 - Automated onboarding. Defender for Cloud automatically enables the Defender for Endpoint sensors on all supported machines connected to Defender for Cloud.
-- Single-pane of glass. The Defender for Cloud portal pages display Defender for Endpoint alerts. To investigate them further, you can use Microsoft Defender for Endpoint pages in the Microsoft Defender 365 portal, where you find additional information such as the alert process tree and the incident graph. 
+- Single-pane of glass. The Defender for Cloud portal pages display Defender for Endpoint alerts. To investigate them further, you can use Microsoft Defender for Endpoint pages in the Microsoft Defender portal, where you find additional information such as the alert process tree and the incident graph. 
 
 The integration between Defender for Endpoint and Defender for Cloud Apps provides you with the ability to perform anomaly detection against the Azure activity logs.
 
@@ -160,11 +160,11 @@ For multisubscription deployments, you might consider automation. Infrastructure
 
 As part of your solution, consider adding Microsoft Sentinel as the replacement for the on-premises SIEM instance. Traditional on-premises SIEM deployments, unlike Sentinel, have limited scalability and don't provide AI or machine learning capabilities. In addition, Microsoft Sentinel integrates with Microsoft Defender for Cloud by using a dedicated connector. The connector streams security alerts from Defender for Cloud into Microsoft Sentinel. This facilitates viewing, analyzing, and responding to Defender alerts, along with the incidents they generate, in a broader organizational threat context.
 
-Microsoft Intune is another cloud service you should incorporate in your design. While its primary focus is on mobile device and application management, it also allows for the enforcement of security-related features such as disk encryption, installation of software updates, and integration with Azure AD Conditional Access. 
+Microsoft Intune is another cloud service you should incorporate in your design. While its primary focus is on mobile device and application management, it also allows for the enforcement of security-related features such as disk encryption, installation of software updates, and integration with Microsoft Entra Conditional Access. 
 
 ### Which elements of your design should be implemented as soon as possible and which ones are suitable as part of a longer-term solution? 
 
-The first step towards implementing the comprehensive infrastructure security solution for Contoso is to create an Azure AD tenant and integrate it with the on-premises AD DS environment. That integration constitutes the starting point for setting up Azure subscriptions and provisioning Azure services such as Microsoft Defender for Cloud and Microsoft Intune. This is essential for subsequent stages of the transition to the cloud-based security model. This should be followed by remediating security vulnerabilities in the existing environment, including enrolling remote client computers into Intune, integrating on-premises and AWS resources with Microsoft Defender for Cloud through Azure Arc, and protecting the VDI farm. At that point, you should also consider using other Azure services, such as Azure Update Management to address any gaps in patch levels of existing servers. 
+The first step towards implementing the comprehensive infrastructure security solution for Contoso is to create a Microsoft Entra tenant and integrate it with the on-premises AD DS environment. That integration constitutes the starting point for setting up Azure subscriptions and provisioning Azure services such as Microsoft Defender for Cloud and Microsoft Intune. This is essential for subsequent stages of the transition to the cloud-based security model. This should be followed by remediating security vulnerabilities in the existing environment, including enrolling remote client computers into Intune, integrating on-premises and AWS resources with Microsoft Defender for Cloud through Azure Arc, and protecting the VDI farm. At that point, you should also consider using other Azure services, such as Azure Update Management to address any gaps in patch levels of existing servers. 
 
 The longer-term goals should involve modernizing the existing environment by transitioning on-premises workloads to Azure. This would include migrating the on-premises VDI farm to Azure Virtual Desktop and replacing on-premises SIEM with Microsoft Sentinel.
 

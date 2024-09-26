@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-automation-solutions.evaluate-alerts-and-incidents
+title: Evaluate alerts and incidents from Microsoft Sentinel
+metadata:
+  title: Evaluate alerts and incidents from Microsoft Sentinel
+  description: "Evaluate alerts and incidents from Microsoft Sentinel"
+  ms.date: 04/26/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom: N/A, devx-track-arm-template
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-evaluate-alerts-and-incidents.md)]

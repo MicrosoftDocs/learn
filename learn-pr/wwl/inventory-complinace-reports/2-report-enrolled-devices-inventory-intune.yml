@@ -4,11 +4,10 @@ title: Report enrolled devices inventory in Intune
 metadata:
   title: Report enrolled devices inventory in Intune
   description: "Report enrolled devices inventory in Intune"
-  ms.date: 03/30/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-report-enrolled-devices-inventory-intune.md)]

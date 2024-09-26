@@ -4,11 +4,12 @@ title: Set up intent and natural language understanding
 metadata:
   title: Set up intent and natural language understanding
   description: Description to Set up intent and natural language understanding
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.date: 01/17/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/8-set-up-intent-natural-language-understand.md)]

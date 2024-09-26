@@ -6,11 +6,11 @@ metadata:
   description: Check your understanding so far.
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.date: 01/25/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: tedhudek
+  ms.date: 01/04/2024
+  ms.topic: unit
   show_latex: true
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
@@ -33,15 +33,15 @@ quiz:
     choices:
     - content: 'You can pick from six predefined qubit models, and each of their values can be updated. You can modify existing models and create new ones.'
       isCorrect: true
-      explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models. The models can be customized by specifying the name of the qubit model and then updating any of the values.'
+      explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models. You can customize the models by specifying the name of the qubit model and updating any of the values.'
     - content: 'You can pick from two predefined qubit models, the Surface code and the Floquet code.'
       isCorrect: false
       explanation: 'The Resource Estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are QEC codes.'
     - content: "You can pick from six predefined qubit models, but you can't customize their parameters."
       isCorrect: false
-      explanation: 'The predefined qubit models can be customized by specifying the name of the qubit model and then updating any of the values.'
+      explanation: 'You can customize the predefined qubit models by specifying the name of the qubit model and updating any of the values.'
       
-  - content: 'The Resource Estimator evaluates the resource estimates of a requested QIR quantum algorithm. What is the output of the resource estimation job?'
+  - content: 'The Resource Estimator evaluates the resource estimates of a quantum algorithm. What is the output of the resource estimation job?'
     choices:
     - content: 'The Resource Estimator outputs the estimated economic cost of running the algorithm and its runtime.'
       isCorrect: false

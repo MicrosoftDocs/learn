@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/13/2022
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -21,21 +20,21 @@ quiz:
     choices:
     - content: "Nothing. Pg_stat_statements are already enabled."
       isCorrect: true
-      explanation: "That's correct. Pg_stat_statements are already enabled."
+      explanation: "Correct. Pg_stat_statements are already enabled."
     - content: "Turn on the **pg_stat_statements.track** setting."
       isCorrect: false
-      explanation: "That's incorrect. The **pg_stat_statements.track** setting is turned on by default."
+      explanation: "Incorrect. The **pg_stat_statements.track** setting is turned on by default."
     - content: "In **Server parameters**, enable **pg_qs.query_capture_mode**."
       isCorrect: false
-      explanation: "That's incorrect. **pg_qs.query_capture_mode** enables the Query Store."
+      explanation: "Incorrect. **pg_qs.query_capture_mode** enables the Query Store."
   - content: "In the Query Store, how do you view the SQL syntax of queries?"
     choices:
     - content: "Query the **query_store.runtime_stats_view** view."
       isCorrect: false
-      explanation: "That's incorrect. The **query_store.runtime_stats_view** view returns runtime statistics information."
+      explanation: "Incorrect. The **query_store.runtime_stats_view** view returns runtime statistics information."
     - content: "Query the **query_store.qs_view** view."
       isCorrect: true
-      explanation: "That's correct. The **query_store.qs_view** view includes blocks, runtime, and query text."
+      explanation: "Correct. The **query_store.qs_view** view includes blocks, runtime, and query text."
     - content: "Query the **query_store.pgms_wait_sampling_view** view."
       isCorrect: false
-      explanation: "That's incorrect. The **query_store.pgms_wait_sampling_view** view returns wait times for queries."
+      explanation: "Incorrect. The **query_store.pgms_wait_sampling_view** view returns wait times for queries."

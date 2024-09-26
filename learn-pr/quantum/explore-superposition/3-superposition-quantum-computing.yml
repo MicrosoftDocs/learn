@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-superposition.superposition-quantum-computing
+title: What is superposition in quantum computing?
+metadata:
+  title: What is superposition in quantum computing?
+  description: Learn how to represent a qubit using the Bloch sphere. 
+  ms.date: 03/04/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-superposition-quantum-computing.md)]

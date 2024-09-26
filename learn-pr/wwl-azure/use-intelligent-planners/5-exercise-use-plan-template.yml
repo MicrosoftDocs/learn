@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-intelligent-planners.exercise-use-plan-template
+title: Exercise - Use a plan template
+metadata:
+  title: Exercise - Use a plan template
+  description: Exercise - Use a plan template
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-use-plan-template.md)]

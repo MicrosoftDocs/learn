@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.add-custom-domain-name-azure-active-directory.domain-names-add
-title: What are domain names in Azure Active Directory?
+title: What are domain names in Microsoft Entra ID?
 metadata:
-  title: What are domain names in Azure Active Directory?
-  description: Explore how domain names are used in Azure Active Directory and how subdomains are supported.
-  ms.date: 02/25/2020
-  author: ajburnle
-  ms.author: ajburnle
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: What are domain names in Microsoft Entra ID?
+  description: Explore how domain names are used in Microsoft Entra ID and how subdomains are supported.
+  ms.date: 09/22/2022
+  author: amycolannino
+  ms.author: amycolannino
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-are-domain-names.md)]
@@ -19,23 +18,23 @@ quiz:
   - content: "What types of custom domain names are supported?"
     choices:
     - content: Only registered generic top-level domains.
-      explanation: "You can use any generic top-level domain or country code top-level domain as long as an Azure AD organization isn't already using it."
+      explanation: "You can use any generic top-level domain or country code top-level domain as long as a Microsoft Entra organization isn't already using it."
       isCorrect: false
     - content: Only registered country code top-level domains.
       isCorrect: false
-      explanation: "You can use any country code top-level domain or generic top-level domain as long as an Azure AD organization isn't already using it."
+      explanation: "You can use any country code top-level domain or generic top-level domain as long as a Microsoft Entra organization isn't already using it."
     - content: Any registered domains that aren't already being used.
       isCorrect: true
-      explanation: "You can use any registered domain as long as an Azure AD organization isn't already using it."
+      explanation: "You can use any registered domain as long as a Microsoft Entra organization isn't already using it."
 
-  - content: "Which resources can a custom-domain Azure AD account access?"
+  - content: "Which resources can a custom-domain Microsoft Entra account access?"
     choices:
     - content: Only internal resources.
       isCorrect: false
-      explanation: "Azure AD accounts can access both internal and external resources."
+      explanation: "Microsoft Entra accounts can access both internal and external resources."
     - content: Both internal and external resources.
-      explanation: "Azure AD accounts can access both internal and external resources."
+      explanation: "Microsoft Entra accounts can access both internal and external resources."
       isCorrect: true
     - content: Only external resources.
       isCorrect: false
-      explanation: "Azure AD accounts can access both external and internal resources."
+      explanation: "Microsoft Entra accounts can access both external and internal resources."

@@ -1,27 +1,25 @@
-Now that we have Azure Cache for Redis configured and working, let's use it to store HTTP session data through Spring Session.
+In this unit, learn how to use Azure Cache for Redis to store HTTP session data through Spring Session.
 
-## What are HTTP sessions?
+## HTTP sessions
 
-HTTP sessions store user data between requests. They typically store security information. But they can go further and store an application's state, or serve as a cache for frequently accessed user data. Because those sessions are stored on the server side, they cause scalability issues: you need to replicate them when your application scales out to multiple nodes.
+HTTP sessions store user data, typically security information, between requests. HTTP sessions can also store application state, or cache frequently accessed user data. Because HTTP sessions are stored on the server, they can present a scalability issue. You need to replicate the sessions when your application scales out to more nodes.
 
-In Java, HTTP sessions have been available since the early days of servlets. They're heavily used in technologies like JavaServer Faces (JSF). Scaling them has been an issue from the beginning, and session replication mechanisms exist in all major Java application servers.
+HTTP sessions have been available in Java since the early days of servlets, and technologies like JavaServer Faces (JSF) use them heavily. Scaling HTTP sessions has always been an issue, and session replication mechanisms exist in all major Java application servers.
 
-## What is Spring Session?
+One problem is that HTTP session replication mechanisms aren't standardized, but rely on APIs that are specific to each application server. This setup can cause portability problems.
 
-One of the problems with mechanisms for HTTP session replication is that they aren't standardized. They rely on APIs, which are specific to each application server. This setup causes some portability problems, so the Spring team created [Spring Session](https://spring.io/projects/spring-session) to have a generic solution.
+## Spring Session
 
-Spring Session is a Spring subproject that aims to simplify the configuration of HTTP session replication. It supports several back-end mechanisms, including Redis as a popular option. Spring Session will replicate all session data inside Redis so that when the application scales out, each node will have access to those user sessions.
+[Spring Session](https://spring.io/projects/spring-session) is a Spring subproject that provides a generic solution for configuring HTTP session replication. Spring Session supports Redis as one of several backend options. Spring Session replicates all session data within Redis, so when the application scales out, each node has access to the user sessions.
 
-This configuration is similar to the one we did before with Spring Data, and is another recommended usage scenario for Redis.
+Spring Session configuration is similar to the previous Spring Data configuration, and illustrates another recommended Redis usage scenario.
 
-## How to use Spring Session with Redis
+## Use Spring Session with Redis
 
-Some of this configuration is the same as the one we did for using Spring Data Redis. You need to do this configuration only once for both solutions.
+Some of the configuration is the same as for Spring Data Redis, and you need to do it only once for both solutions. As in the Spring Data configuration, you typically use [Spring Initializr](https://start.spring.io/) and do the following main tasks:
 
-Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you'll have three main tasks:
+1. Add the Spring Session Redis library to your application.
+1. Configure your *application.yml* file to connect to your Azure Cache for Redis instance.
+1. Use Java's HTTP session mechanism to store and retrieve data.
 
-- Add the Spring Session Data Redis library to your application.
-- Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
-- Use Java's HTTP session mechanism to store or retrieve data.
-
-We're going to achieve those tasks in the next section's exercise.
+Proceed to the next unit to implement this configuration.

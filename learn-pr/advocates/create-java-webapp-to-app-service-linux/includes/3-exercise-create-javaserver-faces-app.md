@@ -176,7 +176,7 @@ mv index.jsp index.xhtml
 
 ### Create a basic web page for JSF
 
-Delete all the contents described in `index.xhtml`, and copy the following code:
+Delete all the contents described in `index.xhtml` and copy the following code:
 
    ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -200,11 +200,12 @@ Delete all the contents described in `index.xhtml`, and copy the following code:
 
 ### Create a JSF backing bean
 
-Next, create a backing bean to implement server-side back-end processing. Create a new directory for your Java package, which will be used to create the backing bean under the `src/main` directory.
+Next, create a backing bean to implement server-side back-end processing. Create a new directory for your Java package, which you'll use to create the backing bean under the `src/main` directory.
 
 ```bash
 mkdir src/main/java
 mkdir src/main/java/com
+mkdir src/main/java/com/microsoft
 mkdir src/main/java/com/microsoft/azure
 mkdir src/main/java/com/microsoft/azure/samples
 ```
@@ -266,7 +267,7 @@ Compile the source code and run it in a locally installed Tomcat environment. Ex
 
 #### Compile and package the Java project
 
-Execute the following command to compile the code.
+Execute the following command to compile the code:
 
 ```bash
 mvn clean package
@@ -274,7 +275,7 @@ mvn clean package
 
 #### Copy the artifact to the deployment directory on Tomcat
 
-Copy the artifact war file to the directory in the Tomcat.
+Copy the artifact war file to the directory in the Tomcat"
 
 ```bash
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.39/webapps/

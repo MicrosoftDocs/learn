@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-You want to automate deployment of updates to your toy company's website. As a first step, you create a basic workflow in GitHub Actions.
+You want to automate deployment of updates to your toy company's website. As a first step, you'll create a basic workflow in GitHub Actions.
 
 In this exercise, you'll:
 
@@ -55,7 +55,7 @@ In Visual Studio Code, clone your repository.
    git clone https://github.com/mygithubuser/toy-website-workflow
    ```
 
-   A warning is displayed that you cloned an empty repository. You can ignore the message.
+   You'll get a warning that you cloned an empty repository. You can ignore the message.
 
 1. This is the first time you've used this repository, so you might be prompted to sign in.
 
@@ -63,7 +63,7 @@ In Visual Studio Code, clone your repository.
 
    On macOS, select **Authorize**.
 
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
 1. Reopen Visual Studio Code in the repository folder by running the following command:
 
@@ -72,7 +72,7 @@ In Visual Studio Code, clone your repository.
    ```
 
 > [!TIP]
-> You can also edit your GitHub Actions workflow definitions by using the GitHub web user interface. When you open a workflow definition, GitHub helps you with YAML file syntax and indentation, and provides example code snippets for the actions you might want to use. In this module, you work with the definition file in Visual Studio Code, but you can explore the GitHub editor to see how it works.
+> You can also edit your GitHub Actions workflow definitions by using the GitHub web user interface. When you open a workflow definition, GitHub helps you with YAML file syntax and indentation and provides example code snippets for the actions you might want to use. In this module, you'll work with the definition file in Visual Studio Code, but you can explore the GitHub editor to see how it works.
 
 ## Create a YAML workflow definition
 

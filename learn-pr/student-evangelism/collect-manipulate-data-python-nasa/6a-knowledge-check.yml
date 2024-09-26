@@ -3,12 +3,13 @@ uid: learn.student-evangelism.collect-manipulate-data-python-nasa.6a-knowledge-c
 metadata:
   title: Knowledge check
   description: Answer questions to see what you've learned. 
-  ms.date: 03/10/2021
+  ms.date: 05/19/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 title: Knowledge check
 durationInMinutes: 4
 content: |

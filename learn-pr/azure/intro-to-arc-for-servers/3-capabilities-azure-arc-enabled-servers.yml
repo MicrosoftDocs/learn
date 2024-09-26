@@ -4,11 +4,10 @@ title:  What are the core management and governance capabilities of Azure Arc-en
 metadata:
   title: What are the core management and governance capabilities of Azure Arc-enabled servers?
   description: What are the core management and governance capabilities of Azure Arc-enabled servers?
-  ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/01/2024
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 10
 content: |
@@ -32,7 +31,7 @@ quiz:
     - content: "Review Azure Advisor."
       isCorrect: false
       explanation: "That's incorrect. Azure Advisor is limited to cloud resources only."
-    - content: Search through the activity logs in the Azure portal."
+    - content: "Search through the activity logs in the Azure portal."
       isCorrect: false
       explanation: "That's incorrect. The activity log records events affecting the Azure resources only."
     - content: "Apply Azure Guest Configuration-based policy."

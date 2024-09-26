@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 08/31/2022  
+  ms.date: 02/13/2024  
   author: jonburchel
   ms.author: jburchel  
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -61,12 +60,12 @@ quiz:
       explanation: "Correct. For these organizations, Azure Data Factory provides the ability to run SSIS packages on Azure."
   - content: "Which authentication service might typically be used in the data storage and analysis phases of data integration with Azure Data Factory?"
     choices:
-    - content: "Azure AD"
+    - content: "Microsoft Entra ID"
       isCorrect: true
       explanation: "Correct. This is the cloud-based authentication service that underpins Azure Data Factory."
     - content: "Active Directory Domain Services (AD DS)"
       isCorrect: false
       explanation: "Incorrect. AD DS is an on-premises authentication service."
-    - content: "Azure AD DS"
+    - content: "Microsoft Entra Domain Services"
       isCorrect: false
-      explanation: "Incorrect. Azure AD DS is a cloud-based managed authentication service, but it's not used in this context."
+      explanation: "Incorrect. Microsoft Entra Domain Services is a cloud-based managed authentication service, but it's not used in this context."

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.apply-storage-concepts-to-windows-containers
+metadata:
+  title: Apply storage concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
+  description: Learn storage concepts that help you solve real problems with Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: module-standard-task-based
+  ms.service: azure-kubernetes-service
+title: Apply storage concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
+summary: Define storage solutions for applications, their pros, and cons, then choose the best option for your scenario.
+abstract: |
+  By the end of this module, you are able to:
+  - Describe storage concepts for Windows containers.
+  - Describe storage concepts for Kubernetes.
+  - Evaluate storage options for Windows containers with Azure Kubernetes Service.
+prerequisites: |
+  You should be familiar with:
+  - Familiarity with containers and operating system virtualization concepts such as Docker containers and Virtual Machines.
+  - Familiarity of container orchestration such as Kubernetes and Azure Kubernetes Service.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-kubernetes-service
+subjects:
+- networking
+units:
+- learn.azure.apply-storage-concepts-to-windows-containers.introduction
+- learn.azure.apply-storage-concepts-to-windows-containers.storage-concepts-for-containers
+- learn.azure.apply-storage-concepts-to-windows-containers.storage-concepts-for-kubernetes
+- learn.azure.apply-storage-concepts-to-windows-containers.windows-container-storage-with-azure-kubernetes-service
+- learn.azure.apply-storage-concepts-to-windows-containers.windows-container-storage-with-aks-hybrid
+- learn.azure.apply-storage-concepts-to-windows-containers.knowledge-check
+- learn.azure.apply-storage-concepts-to-windows-containers.summary
+badge:
+  uid: learn.azure.apply-storage-concepts-to-windows-containers.badge

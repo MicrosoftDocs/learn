@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-langstons-ant-with-json-serialization
+metadata:
+  title: Guided project - Langstons ant with JSON serialization
+  description: "This is a guided project that walks you through the steps to implement JSON serialization to save and load Langston's ant simulation states."
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Guided project - Langstons ant with JSON serialization
+summary: This is a guided project that walks you through the steps to implement JSON serialization to save and load Langston's ant simulation states.
+abstract: |
+  In this module, you practice how to:
+  - Serialize data to JSON.
+  - Deserialize JSON data.
+  - Read and write file data.
+prerequisites: |
+  - Visual Studio Community installed.
+  - A GitHub account to clone code repositories.
+  - Basic knowledge of the Visual Studio IDE and project structure.
+  - Basic understanding of the C# programming language.
+  - Familiarity with classes, abstract classes, and inheritance.
+  - Familiarity with JSON and serialization.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- azure
+- dotnet
+units:
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.introduction
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.prepare-guided-project
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.review-project-code
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-setup-game
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-serialize-state
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.exercise-deserialize-load-state
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.knowledge-check
+- learn.wwl.guided-project-langstons-ant-with-json-serialization.summary
+badge:
+  uid: learn.wwl.guided-project-langstons-ant-with-json-serialization.badge

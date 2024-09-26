@@ -1,36 +1,27 @@
-Application scalability is only one of the ideas that are possible within Kubernetes. The application scalability will scale out your application when there's need for more computing power or to distribute the load among more copies of the services.
-
-However, cluster nodes don't have infinite resources, which means there are only so many pods you can spin up in a single node.
-
 ## Node starvation
 
-A pod will require an amount of resources that is defined in the `spec.containers.resources` key in the pod's YAML file. Once you create a new pod within a node, Kubernetes automatically allocates that amount of resources to the pod so it can run with the requested amount of power it needs.
+In the `spec.containers.resources` key of a pod YAML file, you define the number of resources the pod requires. After you create a new pod within a node, Kubernetes automatically allocates that specified number of resources to the pod so it runs with the amount of power it needs.
 
-A single node is a single VM, which means it has a limited amount of resources like CPU and RAM available for pods, so you cannot spin up an infinite number of pods in it. When a node doesn't meet the needed requirements for the pod's resource, the pod remains on status **Pending**, and it's not scheduled to any nodes until there are enough resources available.
+A single node is a single virtual machine (VM) that has a limited amount of resources available for pods, like CPU and RAM. You can't spin up an infinite number of pods in a node. When a node doesn't meet the needed requirements for the pod's resource, the pod competes with the specified resources for the node's resources, which leads to *node starvation*. The pod remains in a *Pending* status and isn't scheduled to any nodes until enough resources are available.
 
 ## Cluster scalability
 
-To remedy that problem, the operator needs to scale out the cluster itself, adding more VMs to the NodePool. This can be done either via the Azure CLI with the `az aks scale` command or in the Azure portal inside the **Node Pools** menu item inside your AKS cluster object.
+To avoid node starvation, the operator needs to scale out the cluster and add more VMs to the node pool. You can perform manual *cluster scaling* using the Azure CLI `az aks scale` command. You can also use the Azure portal to manually scale your cluster. Sign in to the portal and select your Azure Kubernetes Service (AKS) cluster. Under **Settings**, select **Node pools**. Select the node pool you want to scale, and then select **Scale node pool**.
 
-:::image type="content" source="../media/2-portal-scale.png" alt-text="Screen that shows the Azure portal scalability button on node pools menu.":::
-
-This process can be a little overwhelming especially for a cluster with variable demand, when the number of pods fluctuates a lot, this would require the operator to constantly monitor for unscheduled pods to make tweaks in real time.
+Manual scaling can be overwhelming, especially for clusters with inconsistent and fluctuating demand. When the number of pods consistently fluctuates, you need to constantly monitor it for unscheduled pods and make any necessary tweaks in real time.
 
 ## Cluster autoscaler
 
-The cluster autoscaler AKS module is a tool that automatizes the process of scaling the cluster manually. It is installed within your AKS cluster and watches for unscheduled pods with resource constraints, then it automatically increases the number of nodes in a cluster to meet these requirements.
+In AKS, the **cluster autoscaler** tool automates the cluster scaling process. When you enable it on your AKS cluster, it watches for unscheduled pods with resource constraints and automatically increases the number of nodes to meet the requirements.
 
 :::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows how the cluster autoscaler works.":::
 
-The cluster autoscaler can not only increase but decrease the number of nodes in a cluster if there's unused cluster capacity for some time. When this condition is met, the autoscaler cordons and drains the node so all the pods that are scheduled in that node are safely moved to other nodes and no other pods are scheduled during the process. Then it removes the node from the pool.
+The cluster autoscaler can also decrease the number of nodes in a cluster if there's unused cluster capacity for a specified amount of time. When this condition is met, the autoscaler cordons (makes the node unavailable for the scheduling of new workloads) and drains (moves the existent workloads to other node) the node. As a result, all the pods that are scheduled in that node are safely moved to other nodes. It also ensures that no other pods are scheduled during the process. Then, it removes the node from the pool.
 
-But there are some situations where the cluster autoscaler won't remove the node because some pods cannot be moved out of that node:
+There are some situations where the cluster autoscaler can't remove a node due to pods that can't be moved out of that node. These situations include:
 
-- When a pod is directly created (by the operator with a YAML file) and it's not bound to any controllers such as Deployments or ReplicaSets
-- When the *Pod Disruption Budget* (PDB) is too restrictive and doesn't allow for the number of pods to fall below a certain threshold
-- When the pod has a node selector for that particular node or a node affinity that would prevent it to go somewhere else.
+- A pod is directly created with a YAML file and isn't bound to any controllers, such as Deployments or ReplicaSets.
+- The *Pod Disruption Budget* (PDB) is too restrictive and doesn't allow for the number of pods to fall below a certain threshold.
+- The pod has a node selector for that particular node or a node affinity that prevents it from going somewhere else.
 
-> [!TIP]
-> Take a look at the links in the summary section to learn more about the types of pods that can prevent the autoscaler to scale down.
-
-It's important to notice that, when autoscaling is enabled, the manual cluster scalability is disabled.
+When autoscaling is enabled, manual cluster scaling is disabled.

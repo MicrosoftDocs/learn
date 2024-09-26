@@ -4,12 +4,10 @@ title: Exercise - Visualize missing data
 metadata:
   title: Exercise - Visualize missing data
   description: Learn how to detect and visualize missing data.
-  ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.reviewer: franksolomon
-  ms.prod: learning-azure
+  ms.date: 01/30/2024
+  author: fbsolo-ms1
+  ms.author: franksolomon
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-3-exercise-detect-visualize-missing-data.ipynb

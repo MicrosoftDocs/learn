@@ -6,9 +6,8 @@ metadata:
   description: This unit discusses the need to create a plan, but the main message is to step back and reassess a situation if you need to.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 
 durationInMinutes: 6

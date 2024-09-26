@@ -7,8 +7,9 @@ metadata:
   ms.date: 08/01/2022
   author: ciphertxt
   ms.author: schoag
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 13
 content: |
   [!include[](includes/validate-performance-benefits-azure-premium-blob-storage.md)]

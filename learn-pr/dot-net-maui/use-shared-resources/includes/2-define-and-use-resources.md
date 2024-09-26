@@ -1,12 +1,12 @@
-A resource is like a symbolic constant from a programming language. You define it in one place and reference it everywhere you need it. Your code will be easier to read because you use a descriptive name instead of a "magic" value. If you need to change the value, you only need to update the definition. 
+A resource is like a symbolic constant from a programming language. You define it in one place and reference it everywhere you need it. Your code is easier to read because you use a descriptive name instead of a "magic" value. If you need to change the value, you only need to update the definition. 
 
-In this module, you'll see how to use resources to eliminate hard-coded values from your XAML.
+In this module, you see how to use resources to eliminate hard-coded values from your XAML.
 
 ## What is a resource?
 
 A resource is any object that can be shared across your UI. The most common examples are fonts, colors, and sizes. However, you can also store complex objects such as **Style** and **OnPlatform** instances as resources.
 
-You define a resource in either XAML or code. Then you apply it in either XAML or code. Typically, you'll work entirely in XAML, although you'll see a few cases later where code is useful.
+You define a resource in either XAML or code. Then you apply it in either XAML or code. Typically, you work entirely in XAML, although we show you a few cases later where code is useful.
 
 Consider an example. Suppose you want to use the same **TextColor** values across the controls on a page. If you used hard-coded values, your XAML would look like the following. Notice how the value for the text color is repeated in the two controls.
 
@@ -27,9 +27,9 @@ Before you can use a resource, you must store it in a resource dictionary.
 
 ## What is ResourceDictionary?
 
-**ResourceDictionary** is a .NET MAUI library class that's customized for use with UI resources. It's a dictionary, so it stores key/value pairs. The type of the key is limited to **String**, while the value can be any object.
+**ResourceDictionary** is a .NET MAUI library class customized for use with UI resources. It's a dictionary, so it stores key/value pairs. The type of the key is limited to **String**, while the value can be any object.
 
-Every .NET MAUI XAML page has a property named **Resources** that can hold a **ResourceDictionary** object. The property is null by default, so you'll need to create a dictionary instance before you can use it. The following code shows how you would create a **ResourceDictionary** object and assign it to the **Resources** property of a **ContentPage**:
+Every .NET MAUI XAML page has a property named **Resources** that can hold a **ResourceDictionary** object. The property is null by default, so you need to create a dictionary instance before you can use it. The following code shows how you would create a **ResourceDictionary** object and assign it to the **Resources** property of a **ContentPage**:
 
 ```XML
 <ContentPage.Resources>
@@ -47,10 +47,11 @@ Every .NET MAUI XAML page has a property named **Resources** that can hold a **R
 </ContentPage.Resources>
 ```
 
-Every page in your app can have its own dictionary. You use these page-specific dictionaries to store resources that will be used exclusively on that page.
+Every page in your app can have its own dictionary. You use these page-specific dictionaries to store resources that are used exclusively on that page.
 
 > [!NOTE]
 > Each control on a page can also have its own resource dictionary. For example, you can add a resource directory to a **Label** control like this:
+>
 > ```xml
 > <Label Text="Hello, World!"
 >         ...
@@ -59,11 +60,12 @@ Every page in your app can have its own dictionary. You use these page-specific 
 >         </Label.Resources>
 ></Label>
 > ```
+>
 > Apart from layouts and views, which can hold child elements, it's not common to do this at the control level.
 
 ## Create a resource
 
-To create a resource, you declare it inside the **Resources** property for a page. The example below creates the text-color resource described earlier
+To create a resource, you declare it inside the **Resources** property for a page. The following example creates the text-color resource described earlier
 
 ```XML
 <ContentPage.Resources>
@@ -75,7 +77,7 @@ When you select a key for your resource, choose a name that reflects the use rat
 
 ## Apply a resource by using StaticResource
 
-**StaticResource** is a markup extension for looking up resources in a resource dictionary. You provide the key of the resource, and the markup extension returns the corresponding value. The XAML mark-up below shows an example that creates and uses a `Color` resource named **PageControlTextColor**. The XAML mark-up for the label control in the example uses the **StaticResource** markup extension to retrieve the value.
+**StaticResource** is a markup extension for looking up resources in a resource dictionary. You provide the key of the resource, and the markup extension returns the corresponding value. The following XAML mark-up shows an example that creates and uses a `Color` resource named **PageControlTextColor**. The XAML mark-up for the label control in the example uses the **StaticResource** markup extension to retrieve the value.
 
 ```XML
 <ContentPage.Resources>

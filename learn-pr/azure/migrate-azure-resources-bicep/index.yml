@@ -4,18 +4,19 @@ metadata:
   moduleType: standard
   title: Migrate Azure resources and JSON ARM templates to use Bicep
   description: Learn how to migrate your Azure resources to Bicep.
-  ms.date: 12/01/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 01/19/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
 title: Migrate Azure resources and JSON ARM templates to use Bicep
 summary: Export and convert your Azure resources to Bicep files, and migrate your JSON Azure Resource Manager templates (ARM templates) to Bicep. Refactor your Bicep files to follow best practices. Test your Bicep files and deploy them to production.
 abstract: |
   After completing this module, you'll be able to:
-    - Convert JSON ARM templates to Bicep
-    - Create Bicep definitions for your existing Azure resources
-    - Verify template conversions by using the what-if operation and documentation
+    - Convert JSON ARM templates to Bicep.
+    - Create Bicep definitions for your existing Azure resources.
+    - Verify template conversions by using the what-if operation and documentation.
 prerequisites: |
   You should be familiar with the following:
   - Azure, including the Azure portal, subscriptions, and resource groups.
@@ -23,15 +24,15 @@ prerequisites: |
   - The what-if operation.
   - Refactoring Bicep files to align with best practices.
 
-  Before you begin to follow the exercises in the module, you'll need the following items:
+  Before you start the exercises in the module, you'll need the following items:
 
   - An Azure account, with the ability to create resource groups. If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/) and create a new Azure subscription and tenant.
   - Local installations of the following software:
-    - [Visual Studio Code](https://code.visualstudio.com).
-    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+    - [Visual Studio Code](https://code.visualstudio.com)
+    - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
     - The latest version of one of the following command-line interface applications:
-      - [Azure CLI](/cli/azure/install-azure-cli/).
-      - [Azure PowerShell](/powershell/azure/install-az-ps/).
+      - [Azure CLI](/cli/azure/install-azure-cli/)
+      - [Azure PowerShell](/powershell/azure/install-az-ps/)
 iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
 levels:
 - intermediate

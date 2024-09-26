@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.defender-iot-plan-deployment
+metadata:
+  title: Plan to deploy Microsoft Defender for IoT to monitor operational technology networks
+  description: "Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network."
+  ms.date: 11/29/2023
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: module-standard-task-based
+  ms.service: defender-for-iot
+title: Plan to deploy Microsoft Defender for IoT to monitor operational technology (OT) networks
+summary: "Plan for the deployment of Microsoft Defender for IoT, including the sites and zones, user access, and OT sensor and management connections."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the stages and the roles involved to deploy Microsoft Defender for IoT
+    - Organize the locations and systems across your network into sites and zones
+    - Choose a sensor connection method to use for my deployment
+    - Identify the users and roles your teams use with Defender for IoT
+prerequisites: |
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
+  - Familiarity with the Purdue networking model, like the device types that are included in each networking level
+  - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-plan-deployment.svg
+levels: 
+  - intermediate
+roles: 
+  - solution-architect
+products: 
+  - defender-for-iot
+subjects: 
+  - security
+units:
+- learn.defender-iot-plan-deployment.introduction
+- learn.defender-iot-plan-deployment.describe-process-to-deploy
+- learn.defender-iot-plan-deployment.identify-sites-zones
+- learn.defender-iot-plan-deployment.determine-connection-options
+- learn.defender-iot-plan-deployment.identify-azure-on-premises-roles
+- learn.defender-iot-plan-deployment.summary
+badge:
+  uid: |
+    learn.defender-iot-plan-deployment.badge

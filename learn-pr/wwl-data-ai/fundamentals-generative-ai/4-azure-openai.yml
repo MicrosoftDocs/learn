@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.azure-openai
+title: Using language models
+metadata:
+  title: Using language models
+  description: Learn what the GPT language model is in the context of other large language models and the evolution of generative AI capabilities.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 5/15/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-azure-openai.md)]

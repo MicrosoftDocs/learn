@@ -4,13 +4,12 @@ title: Describe inner source with forks
 metadata:
   title: Describe inner source with forks
   description: "Describe inner source with forks"
-  ms.date: 11/01/2022
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/4-describe-forks.md)]

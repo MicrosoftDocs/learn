@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-device-provisioning-service.what-is-device-provisioning-service
+title: What is Azure IoT Hub Device Provisioning Service
+metadata:
+  title: What is Azure IoT Hub Device Provisioning Service
+  description: "Overview of Azure IoT Hub Device Provisioning Service"
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-device-provisioning-service.md)]

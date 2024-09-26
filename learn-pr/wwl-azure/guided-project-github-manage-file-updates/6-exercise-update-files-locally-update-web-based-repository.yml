@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-update-files-locally-update-web-based-repository
+title: Exercise – Update files locally, and then update the web-based repository
+metadata:
+  title: Exercise – Update files locally, and then update the web-based repository
+  description: "Exercise – Update files locally, and then update the web-based repository"
+  ms.date: 04/08/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-update-files-locally-update-web-based-repository.md)]
+interactive: bash

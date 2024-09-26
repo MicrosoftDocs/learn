@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for the Encrypt public sector data in Azure in your business module.
-  ms.date: 04/11/2023
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)] 
@@ -19,16 +18,16 @@ quiz:
     choices:
     - content: "Data encryption at rest."
       isCorrect: false
-      explanation: "Incorrect.  Azure provides extensive options for data encryption at rest to help customers safeguard their data and meet their compliance needs using Microsoft-managed encryption keys and customer-managed encryption keys."
+      explanation: "Incorrect.  Azure provides extensive options for data encryption at rest to help customers safeguard their data and meet their compliance needs by using Microsoft-managed encryption keys and customer-managed encryption keys."
     - content: "Bring your own key capability."
       isCorrect: false
       explanation: "Incorrect. With Azure Key Vault, customers can import or generate encryption keys in HSMs, ensuring that keys never leave the HSM protection boundary. This protection supports bring your own key (BYOK) scenarios."
     - content: "Just-in-time (JIT) privileged access management system."
       isCorrect: false
       explanation: "Incorrect.  Controls are in place to restrict insider access to production systems and customer data, including the Just-in-Time (JIT) privileged access management system."
-    - content: "Azure Active Directory (Azure AD)."
+    - content: "Microsoft Entra ID."
       isCorrect: true
-      explanation: "Correct. To access encryption keys in Azure Key Vault HSMs, Azure AD must authenticate all callers. Azure AD authentication enforces tenant isolation and implements robust measures to prevent access by unauthorized parties, including Microsoft insiders."
+      explanation: "Correct. To access encryption keys in Azure Key Vault HSMs, Microsoft Entra ID must authenticate all callers. Microsoft Entra authentication enforces tenant isolation and implements robust measures to prevent access by unauthorized parties, including Microsoft insiders."
   - content: "What protects connections between customer’s client systems and Microsoft cloud services by generating a unique session key for every session a customer initiates?"
     choices:
     - content: "In-transit encryption for VMs."

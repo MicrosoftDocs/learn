@@ -1,4 +1,4 @@
-To put in practice the debugging concepts you just saw, you'll create a short Node.js program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
+To put in practice the debugging concepts you just saw, you'll create a short Node.js application to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
 
 The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1, with every other following number being the sum of the two previous numbers. The sequence continues like that:
 
@@ -6,27 +6,93 @@ The Fibonacci sequence is a suite of numbers that starts with the number 0 and 1
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-Let's create a new Node.js program to illustrate the concept.
+Let's create a new Node.js application to illustrate the concept.
+
+
+## Open project in development container
+
+This training module offers a development container, either in a browser or for your local computer. This container provides all the need environment so you can use this training module without having to install an IDE or Node.js. You don't need to know anything about the container to complete this training module.
+
+#### [Remote development (browser)](#tab/github-codespaces)
+
+1. Start the process to create a new GitHub Codespace on the `main` branch of the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
+
+    > [!div class="nextstepaction"]
+    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
+
+1. On the **Create codespace** page, review the codespace configuration settings and then select **Create codespace**
+
+    :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
+
+1. Wait for the codespace to start. This startup process can take a few minutes.
+
+1. Open a new terminal in the codespace.
+
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+
+1. Validate that Node.js is installed in your environment:
+
+    ```bash
+    node --version
+    ```
+
+    The dev container uses a Node.js LTS version. The exact version might be different.
+
+1. The remaining exercises in this project take place in the context of this development container.
+
+#### [Local development (Docker)](#tab/visual-studio-code)
+
+
+1. Open **Visual Studio Code** in the context of an empty directory.
+1. Ensure that you have the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) installed in Visual Studio Code.
+1. Open a new terminal in the editor.
+    > [!TIP]
+    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
+    >
+    > :::image type="content" source="../media/codespaces/open-terminal-option.png" lightbox="../media/codespaces/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+1. Clone the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository into the current directory.
+
+    ```bash
+    git clone https://github.com/MicrosoftDocs/node-essentials.git
+    ```
+
+1. Open the repository in code with the following commands in the terminal.
+
+    ```bash
+    cd node-essentials
+    code .
+    ```
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
+    :::image type="content" source="../media/codespaces/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
+    > [!TIP]
+    > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
+    >
+    > :::image type="content" source="../media/codespaces/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
+1. Validate that Node.js is installed in your environment:
+
+    ```bash
+    node --version
+    ```
+
+    The dev container uses a Node.js LTS version such as `v20.5.1`. The exact version might be different.
+
+1. The remaining exercises in this project take place in the context of this development container.
+
+---
 
 ## Prepare environment
 
 Before we dive into the exercise, we first have to prepare the code and environment.
 
-1. Copy the following command and paste it into the terminal on the right to prepare the Node.js environment:
+1. Open the `./nodejs-debug` subfolder, then create a new JavaScript file named `myfibonacci.js`. The file which already exists in the folder is a solution to the exercise, with the fix needed to the bug found during debugging. 
 
-    ```bash
-    source <(curl -Ls https://aka.ms/install-node-lts)
-    ```
+1. Paste this code into the file:
 
-1. After everything has finished installing, create a new JavaScript file with the following code:
-
-    ```bash
-    code fibonacci.js
-    ```
-
-1. Paste this code into the editor pane of the terminal:
-
-    ```js
+    ```javascript
     function fibonacci(n) {
       let n1 = 0;
       let n2 = 1;
@@ -45,14 +111,27 @@ Before we dive into the exercise, we first have to prepare the code and environm
     console.log(result);
     ```
 
-1. Save the file in the terminal by using <kbd>CTRL</kbd> + S, and then run the program by using the following command:
+1. Save the file, <kbd>CTRL</kbd> + <kbd>S</kbd>.
+1. Right-click the `./nodejs-debug` subfolder and select `Open in integrated terminal ` and run the program by using the following command:
 
     ```bash
     node fibonacci.js
     ```
 
-The program should display the result `3` (three) in the console. Oops, it seems there's a bug in there because we expected to see `5` (five) as the result. Let's understand what's going wrong by using the Node.js built-in debugger.
+The application should display the result `3` (three) in the console. Oops, it seems there's a bug in there because we expected to see `5` (five) as the result. Let's understand what's going wrong by using the Node.js built-in debugger.
 
+## Debugger commands cheat sheet
+
+The Node.js built-in debugger comes with a set of commands that you can use to control the execution of your program. Here's a quick cheat sheet of the most common commands:
+
+| Command | Description |
+|---------|-------------|
+| `c` | Continue. Continues the execution until the next breakpoint or the end of your program. |
+| `next` | Step over. This command is similar to the `step` command, except that if the next line of code is a function call, it executes the function without stepping into it. |
+| `s` | Step in. This command is similar to the`next` command, except that if the next line of code is a function call, go to the first line of this function's code. |
+| `sb()` | Add a breakpoint on the current line. |
+| `exec <EXPR>` | Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`. |
+| <kbd>Ctrl</kbd> + <kbd>D</kbd> | Stop the debugger. |
 ## Start built-in debugger
 
 Start the program again, this time with the built-in debugger enabled. Enter this command in the terminal:
@@ -61,7 +140,7 @@ Start the program again, this time with the built-in debugger enabled. Enter thi
 node inspect fibonacci.js
 ```
 
-You should see the debugger prompt displayed. Now, step into the code by running the `s` command until the execution point is located at the beginning of the `fibonacci` function, like this:
+In the terminal, you should see the debugger prompt displayed. Now, step into the code by running the `s` + `<Enter>` until the execution point is located at the beginning of the `fibonacci` function, like this:
 
 ```bash
 break in fibonacci.js:2
@@ -120,7 +199,7 @@ You should see the result `[ 3, 1 ]` in the console.
 The code hasn't yet updated the value of the `sum` variable for the current iteration, which is `3` (three).
 The value of the `sum` variable still shows the Fibonacci number for the previous iteration. Here's the calculation we're using in the code to get the current `sum` value:
 
-```js
+```javascript
 fibonacci(2) = fibonacci(0) + fibonacci(1)
              = 0 + 1
              = 1

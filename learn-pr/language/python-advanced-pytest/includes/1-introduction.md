@@ -1,17 +1,17 @@
-There’s much more to Pytest beyond the basics of running tests and rich reporting. Although using Pytest as a library isn’t a requirement for running or writing tests, it's useful to understand its capabilities. These Pytest capabilities allow you to write better tests and increase the coverage, while keeping you effective when dealing with failures.
+Beyond the basic tasks of running tests and generating reports, pytest offers many advanced features. These features can improve and simplify your testing and help you to craft more robust tests, expand test coverage, and troubleshoot failures.
 
-In this module, you'll go through some of the most essential features of the Pytest framework so that you can write powerful tests while keeping them simple and readable.
+In this module, you'll learn about features of the pytest framework that will help you write effective tests that are also simple and readable.
 
 ## What you will learn
 
-After completing this module, you'll be able to take advantage of a few features of the Pytest framework to write better tests. You'll find about how _parametrizing_ of tests can reduce code repetition while allowing more and better test coverage. Additionally, you'll get exposed to fixtures, which allows sharing common setups and cleanups in tests.
+After completing this module, you'll be able to use _parametrize_ in your tests to reduce code repetition and improve test coverage. You'll also learn about fixtures, which enable sharing common setups and cleanups in tests.
 
-This will allow you to:
+Completing this module helps you to:
 
-- Increase code coverage by easily adding more input values using parametrize.
-- Build common test code with fixtures and avoid code repetition.
-- Use code _patching_ to set specific behavior in tests.
+- Increase code coverage by adding input values using parametrize
+- Build common test code with custom _fixtures_ and avoid code repetition
+- Use the _monkey patch_ fixture to safely invoke code by calling mock functions and setting mock values
 
 ## What is the main goal
 
-You should feel empowered by leveraging some of the advanced features of Pytest. This will allow you to enhance a test suite or write new, better, and more powerful tests for better coverage and end up with a robust collection of tests.
+You should feel confident in your ability to begin using these advanced features of pytest. These features can help you to write more robust and powerful tests with improved coverage.

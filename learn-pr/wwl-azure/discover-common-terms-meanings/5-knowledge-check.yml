@@ -3,12 +3,13 @@ uid: learn.wwl.discover-common-terms-meanings.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/20/2023
+  description: "Check what you learn in this module."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -19,21 +20,21 @@ quiz:
     choices:
     - content: "Landscape"
       isCorrect: false
-      explanation: "That’s incorrect. \"Landscape\" refers to the entire SAP assets in a user's IT landscape. The SAP landscape includes all production and non-production environments."
+      explanation: "Incorrect. \"Landscape\" refers to the entire SAP assets in a user's IT landscape. The SAP landscape includes all production and non-production environments."
     - content: "System"
       isCorrect: false
-      explanation: "That’s incorrect. \"System\" refers to the combination of DBMS layer and application layer of, for example, an SAP ERP development system, an SAP BW test system, and an SAP CRM production system."
+      explanation: "Incorrect. \"System\" refers to the combination of DBMS layer and application layer of, for example, an SAP ERP development system, an SAP BW test system, and an SAP CRM production system."
     - content: "Environment"
       isCorrect: true
-      explanation: "That’s correct. The SAP term is \"environment\"."
+      explanation: "Correct. The SAP term is \"environment\"."
   - content: "Which of the following categories do Business Warehouse and Solution Manager fall into?"
     choices:
     - content: "Landscape"
       isCorrect: false
-      explanation: "That's incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
     - content: "Component"
       isCorrect: true
-      explanation: "That's correct. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Correct. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
     - content: "Environment"
       isCorrect: false
-      explanation: "That's incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."
+      explanation: "Incorrect. Both are individual SAP applications. SAP components can be based on traditional ABAP or Java technologies or a non-NetWeaver based application such as Business Objects."

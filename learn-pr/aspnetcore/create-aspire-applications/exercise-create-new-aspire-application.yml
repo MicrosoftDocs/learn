@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-aspire-application.exercise-create-new-aspire-application
+title: Exercise - Create a new .NET Aspire project
+metadata:
+  title: Exercise - Create a new .NET Aspire project
+  description: "Install all the prerequisites, then create a new .NET Aspire Starter app. See how to add a caching component using Redis to the app. Then test the application and quickly explore the Aspire Dashboard."
+  ms.date: 2/6/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/exercise-create-new-aspire-application.md)]

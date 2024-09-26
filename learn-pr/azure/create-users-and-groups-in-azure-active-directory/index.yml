@@ -1,25 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.create-users-and-groups-in-azure-active-directory
 metadata:
-  title: Create Azure users and groups in Azure Active Directory
-  description: Learn how to create users and groups in Azure Active Directory.
-  ms.date: 03/21/2023
+  title: Create Azure users and groups in Microsoft Entra ID
+  description: Learn how to create users and groups in Microsoft Entra ID.
+  ms.date: 06/25/2024
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.manager: amycollanino
   ms.service: active-directory
   ms.subservice: fundamentals
-title: Create Azure users and groups in Azure Active Directory
-summary: Create users in Azure Active Directory. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
+title: Create Azure users and groups in Microsoft Entra ID
+summary: Create users in Microsoft Entra ID. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
 abstract: | 
-  In this module, you will:
-  - Add users to Azure Active Directory.
-  - Manage app and resource access by using Azure Active Directory groups.
-  - Give guest users access in Azure Active Directory business to business (B2B).
+  In this module, you'll learn to:
+  - Add users to Microsoft Entra ID.
+  - Manage app and resource access by using Microsoft Entra groups.
+  - Give guest users access in Microsoft Entra business to business (B2B).
 prerequisites: | 
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
+  - A paid Azure account with an active subscription
 iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
 levels:
 - beginner
@@ -27,7 +26,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-security
 - identity-access

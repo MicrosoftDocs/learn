@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalizer.import-export-settings
+title: Import and export model and learning settings
+metadata:
+  title: Import and export model and learning settings
+  description: Learn how to export your model and learning settings, clear data for the learning loop, and more.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 9/27/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-import-export-settings.md)]

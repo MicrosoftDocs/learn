@@ -1,5 +1,3 @@
-
-
 When you have a script that train a machine learning model, you can run it as a command job in Azure Machine Learning. 
 
 ## Configure and submit a command job

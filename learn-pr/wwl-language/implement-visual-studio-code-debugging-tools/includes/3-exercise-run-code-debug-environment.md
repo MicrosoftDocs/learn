@@ -1,7 +1,3 @@
-
-
-
-
 The Visual Studio Code user interface enables developers to run their code in a debug environment. Support for debugging is provided by extensions, and for C# developers, debugger support is provided by the same extension that provides support for code development and IntelliSense.
 
 ## Debugger and application interaction
@@ -47,53 +43,35 @@ The first step in learning the debugger tools is creating a code project that yo
 
 Visual Studio Code uses a launch configuration file to specify the application that runs in the debug environment.
 
-1. Open the **Run** menu.
+1. If the Debug101 folder doesn't include a Debug101.sln file, select **Program.cs**, and then verify that a .sln file is created.
 
-1. Notice that the **Run** menu provides access to several debug options, including a menu option named **Add Configuration**.
+    Opening a C# code file prompts the environment to check for project files. The .sln file is a solution file that is used by Visual Studio to manage projects and is usually created automatically when you create a new project in Visual Studio Code. The .sln file is used by the debugger to identify the project that should be run in the debug environment.
 
-    ![Screenshot showing the Visual Studio Code run menu.](../media/run-menu-new-project-configure-debug.png)
+1. On the View menu, select **Command Palette**.
 
-    The **Open Configuration** menu option is currently disabled because you haven't added a launch configuration file to your project.
-
-1. In the EXPLORER view, select **Program.cs**.
-
-    Your C# code file opens in the Editor.
-
-1. After a few seconds, notice that a dialog box is displayed asking if you want to load the assets required for building and debugging.
-
-    ![Screenshot showing the Visual Studio Code required assets dialog.](../media/vscode-load-csharp-assets.png)
-
-    Visual Studio Code recognizes the C# file extension, `.cs`, and recognizes that your "Debug101" project is missing the required assets.
-
-1. To load the required assets, select **Yes**.
+1. At the command prompt, enter **.net: g** and then select **.NET: Generate Assets for Build and Debug**.
 
 1. Notice the new `.vscode` folder that has been added to your project folder.
 
     ![Screenshot showing the .vscode folder in the EXPLORER.](../media/vscode-debug-configure-folder.png)
 
-    > [!NOTE]
-    > You could have added the `.vscode` folder to your project from the **Run** menu by selecting **Add Configuration**, and then selecting the option for .NET code projects.
+    The `.vscode` folder contains files that are used to configure the debug environment.
 
-1. In the EXPLORER view, to expand the `.vscode` folder, select **`.vscode`**.
-
-    Notice that the `.vscode` folder contains a launch.json file. The launch.json file can be used to configure the debug environment.
-
-1. On the **Run** menu, select **Open Configurations**.
-
-    The launch.json file opens in the Visual Studio Code Editor. You could have opened the file directly from the EXPLORER view as well.
+1. Expand the `.vscode` folder, and then select the **launch.json** file.
 
 1. Take a minute to examine the launch.json file.
 
     The launch configurations file can include multiple configurations. Each configuration includes a collection of attributes that are used to define that configuration.
 
-1. Notice that the **program** attribute specifies a path to your **Debug101** application.
+1. Notice that the **prelaunchTask** attribute specifies a **build** task.
 
-    ```json
-    // If you have changed target frameworks, make sure to update the program path.
-    "program": "${workspaceFolder}/bin/Debug/net7.0/Debug101.dll",
-    ```
+1. In the `.vscode` folder, select **tasks.json**.
 
-    Connecting your application with the debugger is one of the primary goals of a configuration. You take a closer look at the launch configuration attributes later in this module.
+1. Notice that the tasks.json file contains the *build* task for your code project.
+
+1. Close the **launch.json** and **tasks.json** files.
+
+You take a closer look at the launch configuration attributes later in this module.
 
 ## Run your code from the Run menu
 
@@ -170,7 +148,7 @@ The **Run** menu includes the option to start a debug session.
 
     ```output
     Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.4\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-    Loaded 'C:\Users\cahowd\Desktop\Debug101\bin\Debug\net7.0\Debug101.dll'. Symbols loaded.
+    Loaded 'C:\Users\someuser\Desktop\Debug101\bin\Debug\net7.0\Debug101.dll'. Symbols loaded.
     ```
 
     The debugger uses a special instance of the .NET runtime to control the execution of your application and evaluate application state.

@@ -3,11 +3,10 @@ uid: learn.language.go-errors-logs.0-introduction
 metadata:
   title: Introduction
   description: Introduction.
-  ms.date: 01/21/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 1

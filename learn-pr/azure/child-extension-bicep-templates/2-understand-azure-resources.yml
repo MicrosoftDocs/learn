@@ -5,11 +5,12 @@ metadata:
   unitType: learning-content
   title: Understand Azure resources
   description: Learn about Azure resource types and resource IDs.
-  ms.date: 01/23/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 12/15/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-azure-resources.md)]

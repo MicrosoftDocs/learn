@@ -4,12 +4,11 @@ title: Use logs to get status information
 metadata:
   unitType: learning-content
   title: Use logs to get status information
-  description: Use Azure AD activity logs to get status information.
+  description: Use Microsoft Entra activity logs to get status information.
   ms.date: 07/21/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/use-logs-get-status-information.md)]

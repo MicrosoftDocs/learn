@@ -3,11 +3,10 @@ uid: learn.azure.threat-modeling-enterprise-security.6-summary
 metadata:
   title: Summary
   description: Review what you learned about securing your infrastructure with threat modeling
-  ms.date: 03/01/2021
+  ms.date: 08/07/2023
   author: rodrigosantos
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

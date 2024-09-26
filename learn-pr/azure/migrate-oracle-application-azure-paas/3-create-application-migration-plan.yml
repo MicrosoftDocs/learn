@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-application-azure-paas.create-application-migration-plan
+title: Assess your application and devise a migration plan
+metadata:
+  title: Assess your application and devise a migration plan
+  description: Learn how to assess your application and create a migration plan.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-application-migration-plan.md)]

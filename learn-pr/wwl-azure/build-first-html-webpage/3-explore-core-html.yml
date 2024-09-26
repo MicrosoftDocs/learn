@@ -3,14 +3,13 @@ uid: learn.wwl.build-first-html-webpage.explore-core-html
 title: Explore core HTML
 metadata:
   title: Explore core HTML
-  description: "Explore core HTML"
-  ms.date: 03/01/2023
+  description: "Explore some core concepts of Hypertext Markup Language (HTML)."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-core-html.md)]

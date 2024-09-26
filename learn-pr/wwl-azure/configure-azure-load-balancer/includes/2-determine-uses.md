@@ -1,9 +1,9 @@
-
 Azure Load Balancer delivers high availability and network performance to your applications. Administrators use load balancing to efficiently distribute incoming network traffic across back-end servers and resources. A load balancer is implemented by using load-balancing rules and health probes.
 
 The following diagram shows how Azure Load Balancer works. The frontend exchanges information with a load balancer. The load balancer uses rules and health probes to communicate with the backend.
 
 :::image type="content" source="../media/load-balancer-4caf947b.png" alt-text="Diagram that shows how a load balancer works as described in the text." border="false":::
+
 
 ### Things to know about Azure Load Balancer 
 

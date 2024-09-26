@@ -3,18 +3,18 @@ uid: learn.github.search-organize-repository-history-github
 metadata:
   title: "Search and organize repository history by using GitHub"
   description: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
-  ms.date: 10/18/2022
+  ms.date: 12/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: "Search and organize repository history by using GitHub"
 summary: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
 abstract: |
   In this module, you will:
-  - Find relevant issues and pull requests
-  - Search history to find context
-  - Make connections within GitHub to help others find things
+  - Find relevant issues and pull requests.
+  - Search history to find context.
+  - Make connections within GitHub to help others find things.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
@@ -30,8 +30,6 @@ roles:
 products:
 - github
 - azure
-subjects:
-- development-tools
 units:
 - learn.github.search-organize-repository-history-github.1-introduction
 - learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github

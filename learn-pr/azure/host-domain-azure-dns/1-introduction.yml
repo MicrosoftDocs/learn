@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to configure Azure DNS to host your domain.
-  ms.date: 03/20/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

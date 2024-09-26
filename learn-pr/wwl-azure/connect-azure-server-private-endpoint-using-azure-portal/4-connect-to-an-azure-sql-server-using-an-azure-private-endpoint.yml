@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.connect-to-an-azure-sql-server-using-an-azure-private-endpoint
+title: Exercise - Connect to an Azure SQL server using an Azure Private Endpoint using the Azure portal
+metadata:
+  title: Exercise - Connect to an Azure SQL server using an Azure Private Endpoint using the Azure portal
+  description: "Exercise - Connect to an Azure SQL server using an Azure Private Endpoint using the Azure portal"
+  ms.date: 05/31/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-connect-to-an-azure-sql-server-using-an-azure-private-endpoint.md)]

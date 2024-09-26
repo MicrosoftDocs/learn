@@ -1,7 +1,3 @@
-
-
-
-
 You've already seen that Visual Studio Code uses the launch.json file to configure the debugger. If you're creating a simple C# console application, it's likely that Visual Studio Code generates a launch.json file that has all of the information you need to successfully debug your code. However, there are cases when you need to modify a launch configuration, so it's important to understand the attributes of a launch configuration.
 
 ## Attributes of a launch configuration
@@ -89,7 +85,9 @@ To edit the `console` attribute:
 1. Locate the **console** attribute.
 
 1. Select the colon and assigned value, and then enter a colon character.
-   When you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
+
+1. Notice that when you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
+
    ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
 
 1. Select either **integratedTerminal** or **externalTerminal**.
@@ -110,7 +108,7 @@ The following screenshot shows the EXPLORER view and the folder structure contai
 
 Notice that the `.vscode` folder containing the launch.json and tasks.json files is associated with the workspace folder, **SpecialProjects**, not the individual project folders.
 
-The following screenshot shows how you could configure the launch.json file to include configurations for both the "Project123" and "Project456" applications.
+The following example shows how you could configure the launch.json file to include configurations for both the "Project123" and "Project456" applications.
 
 ```json
 "version": "0.2.0",
@@ -144,7 +142,7 @@ Notice that the **name**, **preLaunchTask**, and **program** fields are all conf
 
 The **name** attribute specifies the selectable launch option that's displayed in the RUN AND DEBUG view user interface, the **program** attribute specifies the path to your application. The **preLaunchTask** attribute is used to specify the name of the task that's performed prior to launching the debugger. The **tasks.json** file contains the named tasks and the information required to complete the task.
 
-The following screenshot shows how you could configure the tasks.json file. In this case, the named tasks specify build operations that are specific to the "Project123" and "Project456" applications. The build task ensures that any saved edits are compiled and represented in the corresponding .dll file that's attached to the debugger.
+The following example shows how you could configure the tasks.json file. In this case, the named tasks specify build operations that are specific to the "Project123" and "Project456" applications. The build task ensures that any saved edits are compiled and represented in the corresponding .dll file that's attached to the debugger.
 
 ```json
 "version": "2.0.0",

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.deployment-stack-scenario
+title: Deployment stack scenario
+metadata:
+  title: Deployment stack scenario
+  description: Evaluate a scenario for using deployment stacks.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 7
+content: | 
+  [!include[](includes/5-deployment-stack-scenario.md)]

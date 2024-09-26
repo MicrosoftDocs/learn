@@ -1,1 +1,0 @@
-Your team will be responsible for managing the IoT devices that the company deploys as part of their IoT solution. Understanding the device management patterns that the team is likely to encounter during the device lifecycle and how device twins and direct methods can be used to support these patterns helps to prepare you for your upcoming device management responsibilities.

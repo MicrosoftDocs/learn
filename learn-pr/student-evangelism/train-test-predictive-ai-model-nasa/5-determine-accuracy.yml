@@ -3,11 +3,12 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.5-determine-ac
 metadata:
   title: Exercise - Determine the accuracy of a neural network in classifying space rocks
   description: Learn how to determine accuracy in an AI model, and then run code to find the accuracy of your AI model.
-  ms.date: 04/28/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/28/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Exercise - Determine the accuracy of a neural network in classifying space rocks
 durationInMinutes: 4

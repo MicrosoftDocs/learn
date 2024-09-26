@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads
+metadata:
+  title: Modernize and explore monitoring requirements of Azure for SAP workloads
+  description: 'Explore monitoring of data from several Azure systems and tools to support SAP on Azure workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: sap-on-azure
+title: Modernize and explore monitoring requirements of Azure for SAP workloads
+summary: This module covers monitoring of data from several Azure systems and to support SAP on Azure workloads with logging, analysis and reporting using the Azure Extension for SAP.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore the monitoring requirements of Azure for SAP workloads.
+  - Examine monitoring, logging, and alerting services.
+  - Explore Azure VM monitoring considerations.
+  - Troubleshoot the Azure Extension for SAP.
+  - Explore the Azure Extension for SAP.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.introduction
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-monitoring-requirements-azure-for-sap-workloads
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.examine-monitoring-logging-alerting-services
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-virtual-machine-monitoring-considerations
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-enhanced-monitoring-extension-for-sap
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.troubleshoot-enhanced-azure-monitoring-sap
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.knowledge-check
+- learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.badge

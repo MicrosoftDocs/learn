@@ -1,6 +1,5 @@
 
 
-
 To understand how your code works, you need to step back and think about what a programming language is. Consider how your code communicates commands to the computer.
 
 ## What is a programming language?

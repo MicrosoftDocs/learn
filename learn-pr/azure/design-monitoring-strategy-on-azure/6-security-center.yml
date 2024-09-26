@@ -1,50 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
-  title: Analyze infrastructure security by using Microsoft Defender for Cloud
-  description: Analyze infrastructure security by using Microsoft Defender for Cloud
-  ms.date: 12/03/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze infrastructure security by using Microsoft Defender for Cloud
+  title: Manage infrastructure security by using Defender for Cloud
+  description: Learn how to monitor, analyze, and manage infrastructure security by using Microsoft Defender for Cloud.
+  ms.date: 11/13/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+title: Manage infrastructure security by using Defender for Cloud
 durationInMinutes: 10
 content: |
   [!include[](includes/6-security-center.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why would you use Microsoft Defender for Cloud?
+  - content: How can you use Defender for Cloud to prevent persistent access to your VMs?
     choices:
-    - content: You want to secure an infrastructure that consists of on-premises and cloud resources.
-      isCorrect: True
-      explanation: Microsoft Defender for Cloud helps you secure your on-premises and cloud resources.
-    - content: You want to secure an infrastructure that consists of only cloud resources.
+    - content: Use Azure Logic Apps.
       isCorrect: false
-      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
-    - content: You want to secure an infrastructure that consists of only on-premises resources.
-      isCorrect: false
-      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
-  - content: How can you prevent persistent access to your virtual machines by using Microsoft Defender for Cloud?
-    choices:
-    - content: Use playbooks to block access.
-      isCorrect: false
-      explanation: You use just-in-time access. Playbooks are for automating how you respond to alerts.
-    - content: Use just-in-time access to prevent persistent access.
+      explanation: You can trigger an automated alert response with Logic Apps, but not manage VM access.
+    - content: Use just-in-time (JIT) access.
       isCorrect: true
-      explanation: With just-in-time access, your virtual machines are only accessed based on rules that you configure.
-    - content: Use automation and orchestration to block access.
+      explanation: With JIT access, your VMs are accessed based only on rules that you configure.
+    - content: Use adaptive application controls.
       isCorrect: false
-      explanation: You use just-in-time access. Your virtual machines are only accessed based on audited access that you configure.
-  - content: Which tool allows you to automate your responses to alerts?
+      explanation: You use adaptive controls to control which applications run on your VMs, not who can access the VMs.
+  - content: How can you automate responses to Defender for Cloud alerts?
     choices:
-    - content: Use just-in-time access to automate your response to alerts.
+    - content: Use just-in-time (JIT) access.
       isCorrect: false
-      explanation: Just-in-time access is used to block virtual machine access.
-    - content: Use adaptive controls to automate your response to alerts.
+      explanation: Just-in-time access is used to control VM access, not respond to alerts.
+    - content: Use adaptive application controls.
       isCorrect: false
-      explanation: You use adaptive controls to control which applications are allowed to run on your virtual machines.
-    - content: Use playbooks to automate your response to alerts. 
+      explanation: You use adaptive controls to control which applications can run on your VMs, not to respond to alerts.
+    - content: Use Azure Logic Apps.
       isCorrect: true
-      explanation: Playbooks are automated procedures that you can run against alerts.
+      explanation: Defender for Cloud lets you take action on alerts by triggering an automated response with Azure Logic Apps.

@@ -19,7 +19,7 @@ You can access the Cloud Shell in three ways:
 
 - Direct link. Open a browser and refer to **https://shell.azure.com**.
 - Azure portal. Select the Cloud Shell icon on the Azure portal.
-- Code snippets. On [Microsoft Docs](https://aka.ms/microsoft-docs) and [Microsoft Learn](https://aka.ms/microsoft-learn-2), select the **Try It** option that displays with the Azure CLI and Azure PowerShell code snippets:
+- Code snippets. On [Microsoft Learn](https://learn.microsoft.com), select the **Try It** option that displays with the Azure CLI and Azure PowerShell code snippets:
 
   ```powershell
   az account show

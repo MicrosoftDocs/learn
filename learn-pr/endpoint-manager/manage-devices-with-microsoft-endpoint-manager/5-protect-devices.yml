@@ -4,11 +4,10 @@ title: Explore how to protect devices
 metadata:
   title: Explore how to protect devices
   description: Learn about protecting devices using Microsoft Intune.
-  ms.date: 10/23/2020
+  ms.date: 05/08/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-protect-devices.md)]

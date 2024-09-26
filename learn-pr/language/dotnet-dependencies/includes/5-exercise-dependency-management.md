@@ -16,7 +16,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
    dotnet list package
    ```
 
-   This should output the requested version and the final resolved (installed) version.
+   This should output the requested version and the final resolved (installed) version
 
    ```output
    Top-level Package      Requested   Resolved
@@ -33,7 +33,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 
    ```output
    Project `DotNetDependencies` has the following updates to its packages
-      [net6.0]:
+      [net8.0]:
       Top-level Package      Requested   Resolved   Latest
       > Humanizer            2.7.9       2.7.9      2.11.10
    ```

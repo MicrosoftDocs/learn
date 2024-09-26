@@ -4,11 +4,12 @@ title: Discover Automated decision methods
 metadata:
   title: Discover Automated decision methods
   description: An introduction to the different types of automated decision methods when designing Autonomous AI.
-  ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-discover-automated-decision-methods.md)] 

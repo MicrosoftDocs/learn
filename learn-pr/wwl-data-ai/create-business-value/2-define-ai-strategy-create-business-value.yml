@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.define-ai-strategy-create-business-value
+title: Create business value with an AI strategy
+metadata:
+  title: Create business value with an AI strategy
+  description: "Create business value with an AI strategy"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-define-ai-strategy-create-business-value.md)]

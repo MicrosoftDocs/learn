@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-with-delta-live-tables.exercise-data-pipeline
+title: Exercise - Create a data pipeline with Delta Live Tables
+metadata:
+  title: Exercise - Create a data pipeline with Delta Live Tables
+  description: "Exercise - Create a data pipeline with Delta Live Tables"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/5-exercise-data-pipeline.md)]

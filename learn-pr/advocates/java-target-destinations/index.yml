@@ -2,12 +2,11 @@
 uid: learn.java-target-destinations
 metadata:
   title: Choose the right Azure service for deploying your Java application
-  description: In this module, you'll learn about running your Java applications on Azure. You'll also choose the best service option among virtual machines (VMs), Azure App Service, serverless functions, Azure Kubernetes Service (AKS), and Azure Spring Apps.
+  description: In this module, you'll learn about running your Java applications on Azure. You'll also choose the best service option among virtual machines (VMs), Azure App Service, serverless functions, Azure Kubernetes Service (AKS), Azure Container Apps (ACA), and Azure Spring Apps.
   author: judubois
   ms.author: judubois
-  ms.date: 11/16/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/04/2024
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03032021
 title: Choose the right Azure service for deploying your Java application
@@ -31,9 +30,9 @@ products:
 - azure-functions
 - azure-app-service
 - azure-kubernetes-service
+- azure-container-apps
 subjects:
 - cloud-computing
-- development-tools
 units:
 - learn.java-target-destinations.1-introduction
 - learn.java-target-destinations.2-application-deployment-types

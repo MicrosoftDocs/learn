@@ -4,16 +4,15 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 08/08/2022
+  description: "Knowledge check for the information presented in this module."
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 2
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -36,20 +35,20 @@ quiz:
     - content: "Carefully look through all of the log data in your Log Analytics workspace."
       isCorrect: false
       explanation: "Raw log data contains an overwhelming amount of information that's often hard to understand in a meaningful way. Looking for specific data based on analysis goals is a more effective first step."
-    - content: "Define your analysis goals and assess which tables in your Log Analytics workspace hold data that's relevant to your analysis"
+    - content: "Define your analysis goals and assess which tables in your Log Analytics workspace hold the data that's relevant to your analysis"
       isCorrect: true
       explanation: "Raw log data contains an overwhelming amount of information that's often hard to understand in a meaningful way. Looking for which table holds specific data based on analysis goals is an effective first step to analyzing logs in Azure Monitor Logs."
   - content: "What can you do to familiarize yourself with the raw log data you've collected in a table?"
     choices:
     - content: "Run simple queries, like `take 10` and `distinct <column name>`, on a specific table or use the Log Analytics user interface to search through, filter and explore the data. "
       isCorrect: true
-      explanation: "Simple queries, like `take 10` and `distinct <column name>`, allow you to hone in on smaller amounts of data and filter away repeating values, which can be useful in assessing raw data."
+      explanation: "Simple queries, like `take 10` and `distinct <column name>`, allow you to hone in on smaller amounts of data and filter out repeating values, which can be useful in assessing raw data."
     - content: "Use the `make_set()` aggregate function to group together all of the data in the table so you can see it all in one place."
       isCorrect: false
       explanation: "Grouping together all of the data in the table makes it difficult to assess the data."
     - content: "Export the data to Excel or an external tool."
       isCorrect: false
-      explanation: "Log Analytics provides an intuitive user interface that lets search through, filter and explore the data."
+      explanation: "Log Analytics provides an intuitive user interface that lets search through, filter, and explore the data."
   - content: "How can you enrich your query results with additional data that's not available in the table you've queried in Log Analytics?"
     choices:
     - content: "Use the KQL `join` operator to retrieve information from a different table."
@@ -57,7 +56,7 @@ quiz:
       explanation: "The KQL `join` operator lets you correlate data from two tables that have a column in common."
     - content: "Use the KQL `import` operator to import the data from a different location."
       isCorrect: false
-      explanation: "The KQL `join` operator lets you correlate data from two tables that have a column in common."
+      explanation: "Instead, use the KQL `join` operator to correlate data from two tables that have a column in common."
     - content: "Add a column to the query results and populate the missing data manually."
       isCorrect: false
       explanation: "You cannot add data manually from the Log Analytics user interface."

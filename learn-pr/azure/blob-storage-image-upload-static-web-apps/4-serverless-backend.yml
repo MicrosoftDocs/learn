@@ -6,9 +6,8 @@ metadata:
   description: Describe how to generate shared access signatures from a serverless backend
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 11/12/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/23/2023
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: alvidela-11122021
 durationInMinutes: 2

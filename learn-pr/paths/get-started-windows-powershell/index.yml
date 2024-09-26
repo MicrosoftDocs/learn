@@ -6,8 +6,7 @@ metadata:
   ms.date: 12/21/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Get started with Windows PowerShell
 prerequisites: |
   This learning path assumes you have skills and experience with the following technologies and concepts:
@@ -25,14 +24,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 modules:

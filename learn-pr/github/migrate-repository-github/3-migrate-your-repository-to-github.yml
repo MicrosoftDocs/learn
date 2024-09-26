@@ -4,11 +4,10 @@ title:  Exercise - Migrating your repository to GitHub
 metadata:
   title:  Exercise - Migrating your repository to GitHub
   description: Prepare and execute a successful migration to GitHub.
-  ms.date: 06/26/2020
+  ms.date: 08/31/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 29
 content: |
   [!include[](includes/3-migrate-your-repository-to-github.md)]

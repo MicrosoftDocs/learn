@@ -1,6 +1,6 @@
 ## Audit logs
 
-The Azure AD audit logs provide records of system activities for compliance. To access the audit report, select **Audit logs** in the **Monitoring** section of **Azure Active Directory**.
+The Microsoft Entra audit logs provide records of system activities for compliance. To access the audit report, select **Audit logs** in the **Monitoring** section of **Microsoft Entra ID**.
 
 An audit log has a default list view that shows the:
 
@@ -47,7 +47,7 @@ You can filter the audit data on the following fields:
 The **Service** filter allows you to select from a drop-down list of the following services:
 
  -  All
- -  Azure AD Management UX
+ -  Microsoft Entra Management UX
  -  Access Reviews
  -  Account Provisioning
  -  Application Proxy
@@ -111,14 +111,14 @@ The **Date range** filter enables to you to define a timeframe for the returned 
 
 When you select a custom timeframe, you can configure a start time and an end time.
 
-You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Azure AD report retention policies.
+You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Microsoft Entra report retention policies.
 
 :::image type="content" source="../media/download-5c371428.png" alt-text="Screenshot of the Download data. Get the data in a CSV or JSON file to help you work offline.":::
 
 
 ## Audit logs shortcuts
 
-In addition to **Azure AD**, the Azure portal provides you with two additional entry points to audit data:
+In addition to **Microsoft Entra ID**, the Azure portal provides you with two additional entry points to audit data:
 
  -  Users and groups
  -  Enterprise applications
@@ -163,4 +163,4 @@ If you want to review audit data related to your applications, you can find a fi
 
 ## Microsoft 365 activity logs
 
-You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Azure AD activity logs share a lot of the directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
+You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Microsoft Entra activity logs share a lot of the directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.

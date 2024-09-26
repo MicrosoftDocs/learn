@@ -1,0 +1,7 @@
+Assessment is a crucial aspect of instruction that needs to be modified when creating a learning experience. There are two types of assessments: formative and summative.
+
+- **Formative assessments**. Formative assessments occur throughout a lesson, helping both learners and trainers to understand which concepts learners need more practice with. The goal of formative assessment is to gauge learner progress throughout a unit. Formative assessment doesn’t have to be graded for accuracy. Learners rely on feedback from trainers based on the results of the formative assessment performance.
+
+- **Summative assessments**. Summative assessments are typically given at the end of the unit to measure learners’ proficiency over content. While formative assessment isn’t graded for accuracy and relies on trainer feedback, summative assessment is graded and final. Trainers can use AI tools to be innovative in designing summative assessments.  
+
+  For example, instead of giving a traditional written test or essay, learners can be asked to create a presentation using Microsoft Sway, Microsoft PowerPoint, or Microsoft Clipchamp. The presentation serves as a summative assessment of their understanding and application of the skills they learned. This type of summative assessment allows them to apply the skills they learned in a practical and relevant way and provides an opportunity for them to receive feedback on their presentation skills and ability to effectively communicate their ideas.

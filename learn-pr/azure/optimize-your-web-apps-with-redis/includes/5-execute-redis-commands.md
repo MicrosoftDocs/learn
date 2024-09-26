@@ -27,8 +27,8 @@ You can pass this string to **StackExchange.Redis** to create a connection to th
 
 Notice that there are two more parameters at the end:
 
-- **ssl** - ensures that communication is encrypted
-- **abortConnection** - allows a connection to be created even if the server is unavailable at that moment
+- **ssl**: ensures that communication is encrypted
+- **abortConnection**: allows a connection to be created even if the server is unavailable at that moment
 
 There are several other [optional parameters](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Configuration.md#configuration-options) you can append to the string to configure the client library.
 
@@ -50,8 +50,8 @@ var redisConnection = ConnectionMultiplexer.Connect(connectionString);
 
 Once you have a `ConnectionMultiplexer`, there are three primary things you might want to do:
 
-1. Access a Redis Database. The focus of this module.
-2. Make use of the publisher/subscript features of Redis. Outside the scope of this module.
+1. Access a Redis Database (the focus of this module).
+2. Make use of the publisher/subscript features of Redis (outside the scope of this module).
 3. Access an individual server for maintenance or monitoring purposes.
 
 ### Access a Redis database
@@ -63,7 +63,7 @@ IDatabase db = redisConnection.GetDatabase();
 ```
 
 > [!TIP]
-> The object returned from `GetDatabase` is a lightweight object and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
+> The object returned from `GetDatabase` is a lightweight object and doesn't need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
 
 Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions, which return `Task` objects to make them compatible with the `async` and `await` keywords.
 
@@ -82,7 +82,7 @@ Console.WriteLine(value); // displays: ""i-love-rocky-road""
 
 #### Get and Set binary values
 
-Recall that Redis keys and values are *binary safe*. These same methods can be used to store binary data. There are implicit conversion operators to work with `byte[]` types so you can work with the data naturally:
+Recall that Redis keys and values are *binary safe*. You can use these same methods to store binary data. There are implicit conversion operators to work with `byte[]` types so you can work with the data naturally:
 
 ```csharp
 byte[] key = ...;
@@ -115,7 +115,7 @@ Here are some of the more common operations that work with single keys; you can 
 | `KeyRename` | Renames a key. |
 | `KeyTimeToLive` | Returns the TTL for a key. |
 | `KeyType` | Returns the string representation of the type of the value stored at key. The different types that can be returned are: string, list, set, zset, and hash. |
-       
+
 ### Execute other commands
 
 The `IDatabase` object has an `Execute` and `ExecuteAsync` method, which can be used to pass textual commands to the Redis server. For example:
@@ -201,7 +201,7 @@ Console.WriteLine(stat.Sport); // displays "Soccer"
 
 ## Clean up the connection
 
-Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This command will close all connections and shut down the communication to the server.
+Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This command closes all connections and shuts down the communication to the server:
 
 ```csharp
 redisConnection.Dispose();
@@ -256,7 +256,7 @@ var Promise = require("bluebird");
 Promise.promsifyAll(redis);
 ```
 
-The `promisifyAll` function will add `XXXAsync` versions of all command methods to `RedisClient` instances. Allowing you to use async methods, as in the following example:
+The `promisifyAll` function will add `XXXAsync` versions of all command methods to `RedisClient` instances, allowing you to use async methods as in the following example:
 
 ```javascript
 var result = await client.setAsync("myKey", "myValue");

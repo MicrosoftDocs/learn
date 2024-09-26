@@ -4,11 +4,10 @@ title: Learn about unified endpoint management
 metadata:
   title: Learn about unified endpoint management
   description: Understand how Microsoft Intune is streamlined and flexible.
-  ms.date: 10/26/2020
+  ms.date: 12/08/2022
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-streamlined-and-flexible.md)]

@@ -4,11 +4,10 @@ title: User identity and access management
 metadata:
   title: User identity and access management
   description: Learn how to manage the authentication and authorization of user identities on GitHub.
-  ms.date: 11/01/2021
+  ms.date: 04/09/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-user-identity-access-management.md)]

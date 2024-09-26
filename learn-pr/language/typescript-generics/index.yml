@@ -6,9 +6,9 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: 'Define generics in TypeScript'
 summary: Generics are code templates that you can define and reuse throughout your codebase. They provide a way to tell functions, classes, or interfaces what type you want to use when you call it. 
 abstract:  | 
@@ -35,8 +35,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.typescript-generics.1-introduction
 - learn.language.typescript-generics.2-what-are-generics

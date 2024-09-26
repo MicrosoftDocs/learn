@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-control-system-helps-manage-files.explain-benefits-use-source-control-system
+title: Explain the benefits of using a source control system
+metadata:
+  title: Explain the benefits of using a source control system
+  description: "Explain the benefits of using a source control system"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explain-benefits-use-source-control-system.md)]
+interactive: bash

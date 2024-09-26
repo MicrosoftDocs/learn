@@ -1,5 +1,3 @@
-
-
 A client application can request managed identities for Azure resources app-only access token for accessing a given resource. The token is based on the managed identities for Azure resources service principal. The recommended method is to use the `DefaultAzureCredential`.
 
 The Azure Identity library supports a `DefaultAzureCredential` type. `DefaultAzureCredential` automatically attempts to authenticate via multiple mechanisms, including environment variables or an interactive sign-in. The credential type can be used in your development environment using your own credentials. It can also be used in your production Azure environment using a managed identity. No code changes are required when you deploy your application.
@@ -11,10 +9,10 @@ The `DefaultAzureCredential` attempts to authenticate via the following mechanis
 
 1. **Environment** - The `DefaultAzureCredential` reads account information specified via environment variables and use it to authenticate.
 1. **Managed Identity** - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` authenticates with that account.
-1. **Visual Studio** - If the developer has authenticated via Visual Studio, the `DefaultAzureCredential` authenticates with that account.
-1. **Azure CLI** - If the developer has authenticated an account via the Azure CLI `az login` command, the `DefaultAzureCredential` authenticates with that account. Visual Studio Code users can authenticate their development environment using the Azure CLI.
-1. **Azure PowerShell** - If the developer has authenticated an account via the Azure PowerShell `Connect-AzAccount` command, the `DefaultAzureCredential` authenticates with that account.
-1. **Interactive browser** - If enabled, the `DefaultAzureCredential` will interactively authenticate the developer via the current system's default browser. By default, this credential type is disabled.
+1. **Visual Studio** - If the developer authenticated via Visual Studio, the `DefaultAzureCredential` authenticates with that account.
+1. **Azure CLI** - If the developer authenticated an account via the Azure CLI `az login` command, the `DefaultAzureCredential` authenticates with that account. Visual Studio Code users can authenticate their development environment using the Azure CLI.
+1. **Azure PowerShell** - If the developer authenticated an account via the Azure PowerShell `Connect-AzAccount` command, the `DefaultAzureCredential` authenticates with that account.
+1. **Interactive browser** - If enabled, the `DefaultAzureCredential` interactively authenticates the developer via the current system's default browser. By default, this credential type is disabled.
 
 ##  Examples
 

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-code-with-interfaces.examine-interface-designs
+title: Examine interfaces designs
+metadata:
+  title: Examine interfaces designs
+  description: "Examine interfaces designs"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-examine-interface-designs.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does code standardization primarily aim to achieve?"
+    choices:
+    - content: "Reduce the number of programming languages used."
+      isCorrect: false
+      explanation: "Incorrect. Code standardization is about creating rules for writing code, not about the number of languages used."
+    - content: "Make the code consistent and easy to read and modify across a project."
+      isCorrect: true
+      explanation: "Correct. Code standards establish rules for writing code that make it easier to read and modify."
+    - content: "Increase the complexity of the codebase."
+      isCorrect: false
+      explanation: "Incorrect. Code standardization helps make code easier to read and modify, not more complex."
+  - content: "What is the Single Responsibility Principle?"
+    choices:
+    - content: "A class should have only one reason to change."
+      isCorrect: true
+      explanation: "Correct. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+    - content: "A class should have multiple reasons for change."
+      isCorrect: false
+      explanation: "Incorrect. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+    - content: "A class should have no reasons for change."
+      isCorrect: false
+      explanation: "Incorrect. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+  - content: "According to the Dependency Inversion Principle (DIP), what should classes depend on for defining required behavior?"
+    choices:
+    - content: "Other classes directly"
+      isCorrect: false
+      explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
+    - content: "Interfaces or abstract classes"
+      isCorrect: true
+      explanation: "Correct. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
+    - content: "Specific properties of other classes"
+      isCorrect: false
+      explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."

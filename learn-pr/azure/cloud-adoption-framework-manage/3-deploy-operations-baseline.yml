@@ -3,11 +3,10 @@ uid: learn.cloud-adoption-framework-manage.3-operational-compliance
 metadata:
   title: Deploy an operations baseline
   description: Deploy an operations baseline.
-  ms.date: 02/22/2021
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/21/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Deploy an operations baseline
 durationInMinutes: 10
 content: |

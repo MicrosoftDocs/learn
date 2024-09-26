@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
-  ms.date: 09/30/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -25,7 +24,7 @@ quiz:
     - content: You need to deploy multiple copies of the template spec to different resource groups.
       isCorrect: false
       explanation: Incorrect. Template specs can always be used to deploy to another Azure resource group, whether you change the version number or not.
-  - content: You have created and published a template spec that includes a parameter. Which of these statements is true?
+  - content: You created and published a template spec that includes a parameter. Which of these statements is true?
     choices:
     - content: The parameter must have a default value.
       isCorrect: false
@@ -33,10 +32,10 @@ quiz:
     - content: Template specs can't have parameters.
       isCorrect: false
       explanation: Incorrect. Template specs allow you to have parameters, just like other templates.
-    - content: When the template spec is deployed, the user will need to provide values for the parameter if a default value isn't specified.
+    - content: When the template spec is deployed, the user needs to provide values for the parameter if a default value isn't specified.
       isCorrect: true
       explanation: Correct. Parameters in template specs work the same way as other templates. If a default value isn't specified in the template, then the user who runs the deployment needs to provide the parameter value.
-  - content: Which of these is a capability of template specs?
+  - content: Which of these statements describe a capability of template specs?
     choices:
     - content: Template specs provide a place for you to store and share templates throughout your organization.
       isCorrect: true
@@ -44,6 +43,6 @@ quiz:
     - content: Template specs control the lifetime of your Azure resources.
       isCorrect: false
       explanation: Incorrect. Template specs don't change the way your Azure resources are deleted or managed.
-    - content: Template specs ensure that your templates will definitely deploy.
+    - content: Template specs guarantee that your templates deploy.
       isCorrect: false
       explanation: Incorrect. Template specs aren't guaranteed to deploy. There are many reasons why a template spec might not deploy to a specific environment.

@@ -4,12 +4,13 @@ title: Remote debugging concepts
 metadata:
   title: Remote debugging concepts
   description: Review essential remote debugging concepts to understand how to debug apps running in Azure.
-  ms.date: 12/08/2022
+  ms.date: 05/29/2024
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 3
 content: |
   [!include[](includes/2-remote-debugging-concepts.md)]

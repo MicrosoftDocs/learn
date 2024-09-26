@@ -5,12 +5,11 @@ title: Configure a Virtual Machine Scale Set
 metadata:
   title: Configure a Virtual Machine Scale Set
   description: Configure a Virtual Machine Scale Set
-  ms.date: 04/11/2023
+  ms.date: 04/03/2024
   author: ju-shim
   ms.author: jushiman
   ms.reviewer: mimckitt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 7
 content: |

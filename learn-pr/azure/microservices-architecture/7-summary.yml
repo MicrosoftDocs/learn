@@ -3,11 +3,10 @@ uid: learn.microservices-architecture.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 08/30/2019
-  author: davidcberry13
-  ms.author: daberry
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

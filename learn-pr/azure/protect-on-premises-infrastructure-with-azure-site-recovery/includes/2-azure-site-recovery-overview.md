@@ -2,17 +2,17 @@ Azure Site Recovery is more than just a tool to help you recover from system out
 
 Your first task to protect your workloads from an earthquake, for example, is to review the company's current business continuity and disaster recovery (BCDR) plan. You need to identify the different recovery objectives and scope for the systems that need protection.
 
-In this unit, you'll investigate how Azure Site Recovery can help achieve these goals, and make failover and recovery of resources possible in the event of a disaster.
+In this unit, you investigate how Azure Site Recovery can help achieve these goals, and make failover and recovery of resources possible if a disaster occurs.
 
 ## Business continuity and disaster recovery
 
 Loss of service can cause disruption to your staff and users. Every second that systems are unavailable can result in lost revenue for your company. Your company also might face financial penalties for breaking agreements for the availability of services you provide.
 
-BCDR plans are formal documents that companies draw up that cover the scope and actions to be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a BCDR plan comes into action when a whole datacenter loses power.
+BCDR plans are formal documents that companies draw up to cover the scope and actions that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a BCDR plan comes into action when a whole datacenter loses power.
 
 In this example scenario, an earthquake occurred and damaged communications lines, making the datacenter useless and in need of repair. A disaster of this size might bring down services for days, not hours, so a full BCDR plan must be invoked to get the services back online.
 
-As part of your BCDR plan, identify the recovery time objectives (RTOs) and recovery point objectives (RPOs) for your applications. Together, these two objectives help to identify the maximum hours that your business can be without specified services, and, in turn, what the data recovery process should be. Let's look closer at each one.
+As part of your BCDR plan, identify the recovery time objectives (RTOs) and recovery point objectives (RPOs) for your applications. Together, these two objectives help to identify the maximum hours that your business can be without specified services, and what the data recovery process should be. Let's look closer at each one.
 
 ![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/4-rto-rpo.png)
 
@@ -35,7 +35,7 @@ Some notable features of Azure Site Recovery are:
 - **Central management**: Replication can be set up and managed, and failover and failback can be invoked all from within the Azure portal.
 - **On-premises virtual machine replication**: On-premises virtual machines can be replicated to Azure or to a secondary on-premises datacenter, if necessary.
 - **Azure virtual machine replication**: Azure virtual machines can be replicated from one region to another.
-- **App consistency during failover**: By using recovery points and application-consistent snapshots, virtual machines are kept in a consistent state at all times during replication.
+- **App consistency during failover**: By using recovery points and application-consistent snapshots, virtual machines are always kept in a consistent state during replication.
 - **Flexible failover**: Failovers can be run on demand as a test or triggered during an actual disaster. Tests can be run to simulate a disaster recovery scenario without interruption to your live service.
 - **Network integration**: Site Recovery can manage network management during a replication and disaster recovery scenario. Reserved IP addresses and load balancers are included so that the virtual machines can work in the new location.
 

@@ -1,12 +1,4 @@
-Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard. Now they can monitor pull requests and visualize the health of their builds.
-
-In this unit, you add a widget to your dashboard to help visualize your test runs over time.
-
-Amita takes a look and is excited.
-
-**Amita:** This is great progress. Thank you! Not to sound ungrateful, but is there any way I can see just a brief overview of the test results over time?
-
-**Mara:** Yes! Microsoft Azure DevOps lets you add widgets to your dashboards. It only takes a few minutes. Let me show you.
+In this unit, you'll add a widget to your dashboard to help visualize your test runs over time.
 
 ## Add the widget to the dashboard
 
@@ -18,7 +10,7 @@ Amita takes a look and is excited.
 1. Select **Add a widget**.
 1. In the **Add Widget** pane, search for **Test Results Trend**.
 1. Drag **Test Results Trend** to the canvas.
-1. Select the gear icon to configure the widget.
+1. Select the **Gear** icon to configure the widget.
 
     a. Under **Build pipeline**, select your pipeline.
 

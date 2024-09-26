@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.migrate-oracle-workload-azure-iaas
+metadata:
+  title: "Migrate Oracle workloads to Azure IaaS virtual machines"
+  description: "Learn how you can migrate your Oracle workloads to Azure IaaS virtual machines."
+  manager: akashdubey
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: module
+  ms.service: azure
+title: "Migrate Oracle workloads to Azure IaaS virtual machines"
+summary: "This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs). This approach helps minimize refactoring, development, and configuration."
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe how applications powered by Oracle databases work on Azure infrastructure as a service (IaaS).
+  - Identify when this migration model is appropriate and how to plan for it.
+  - Describe the migration process for your databases and your applications.
+prerequisites: |
+  - Basic understanding of the Azure platform
+  - Familiarity with hosting and operations of applications and Oracle databases 
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- database-administrator
+- business-user
+- technology-manager
+- developer
+products:
+- azure
+- azure-cost-management
+subjects:
+- databases
+units:
+- learn.azure.migrate-oracle-workload-azure-iaas.introduction
+- learn.azure.migrate-oracle-workload-azure-iaas.describe-rehosting-streamlines-migration
+- learn.azure.migrate-oracle-workload-azure-iaas.assess-workloads-build-migration-plan
+- learn.azure.migrate-oracle-workload-azure-iaas.oracle-database-server-virtual-machine-deployment-azure-iaas
+- learn.azure.migrate-oracle-workload-azure-iaas.application-migration-process-to-azure-iaas
+- learn.azure.migrate-oracle-workload-azure-iaas.management-cost-optimization-considerations
+- learn.azure.migrate-oracle-workload-azure-iaas.knowledge-check
+- learn.azure.migrate-oracle-workload-azure-iaas.summary
+badge:
+  uid: learn.azure.migrate-oracle-workload-azure-iaas.badge

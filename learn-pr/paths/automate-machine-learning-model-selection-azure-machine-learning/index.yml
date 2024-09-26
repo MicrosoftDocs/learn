@@ -1,19 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning
 metadata:
-  title: Automate machine learning model selection with Azure Machine Learning
-  description: Azure Machine Learning Python SDK v2
-  ms.date: 02/10/2023
+  title: Experiment with Azure Machine Learning
+  description: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Automate machine learning model selection with Azure Machine Learning
+  ms.topic: learning-path
+title: Experiment with Azure Machine Learning
 prerequisites: |
   None
 summary: |
-  Learn how to find the best model with automated machine learning (AutoML). Whether you're training a classification, regression, or forecasting model, you can use AutoML to quickly explore various featurization techniques and algorithms.
-iconUrl: /training/achievements/generic-trophy.svg
+  Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+iconUrl: /training/achievements/automate-machine-learning-model-selection-azure-machine-learning.svg
 levels:
 - beginner
 roles:
@@ -24,5 +23,6 @@ subjects:
 - machine-learning
 modules:
 - learn.wwl.find-best-classification-model-automated-machine-learning
+- learn.wwl.track-model-training-jupyter-notebooks-mlflow
 trophy:
   uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning.trophy
