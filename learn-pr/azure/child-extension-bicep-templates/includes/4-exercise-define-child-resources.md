@@ -29,7 +29,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
    param cosmosDBAccountName string = 'toyrnd-${uniqueString(resourceGroup().id)}'
    param location string = resourceGroup().location
    
-   resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+   resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-05-15' = {
      name: cosmosDBAccountName
      location: location
      properties: {
