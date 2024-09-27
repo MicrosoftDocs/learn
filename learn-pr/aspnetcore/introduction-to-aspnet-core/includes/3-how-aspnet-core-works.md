@@ -19,7 +19,7 @@ Blazor is a framework for building interactive web UI components using C# instea
 - Blazor WebAssembly: Runs on WebAssembly (client-side), allowing you to create rich, interactive web applications with a single codebase.
 - Blazor Server: Runs on the server, providing a rich, interactive user experience with real-time updates over a SignalR connection.
 
-#### Integration with Front-End Frameworks like React, Angular, and Vue
+#### Integration with front-end frameworks like React, Angular, and Vue
 
 ASP.NET Core seamlessly integrates with popular client-side frameworks like React, Angular, and Vue. This allows you to build modern, single-page applications (SPAs) while applying ASP.NET Core’s robust backend capabilities. 
 
@@ -34,7 +34,7 @@ The middleware pipeline in ASP.NET Core is a series of components that process H
 - **Custom middleware**: You can create custom middleware to handle specific requirements of your application. For example, you might create middleware to handle custom logging, request validation, or response modification.
 - **Real-time communication with SignalR**: SignalR is one of the many services that can be added to the ASP.NET Core modular middleware pipeline. It enables real-time web functionality by allowing server-side code to push updates to clients instantly. It's used for real-time interactions, such as chat applications, live dashboards, and collaborative tools.
 
-### Adding Built-in Components
+### Adding built-in components
 ASP.NET Core’s modular architecture allows you to easily add built-in components and services to your application. For example, you can add and configure the built-in logging service to capture and manage logs.
 
 In the following example logging services are added in an ASP.NET Core *Program.cs* file. The *Program.cs file* is the entry point of your ASP.NET Core application. It sets up the application host, configures services, and defines the request handling pipeline. This demonstrates how to quickly plug in a built-in service like logging into your ASP.NET Core application. You can add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
