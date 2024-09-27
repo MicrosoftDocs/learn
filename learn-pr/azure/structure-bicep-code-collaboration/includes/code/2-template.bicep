@@ -33,7 +33,7 @@ var hostingPlanName = 'hostingplan${uniqueString(resourceGroup().id)}'
 var sqlserverName = 'toywebsite${uniqueString(resourceGroup().id)}'
 var storageAccountName = 'toywebsite${uniqueString(resourceGroup().id)}'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   name: storageAccountName
   location: 'eastus'
   sku: {
@@ -49,12 +49,12 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
   }
 }
 
-resource container1 'Microsoft.Storage/storageAccounts/blobServices/containers@2019-06-01' = {
+resource container1 'Microsoft.Storage/storageAccounts/blobServices/containers@2023-05-01' = {
   parent: storageAccount::blobServices
   name: container1Name
 }
 
-resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
+resource sqlserver 'Microsoft.Sql/servers@2023-08-01-preview' = {
   name: sqlserverName
   location: location
   properties: {
@@ -65,7 +65,7 @@ resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
 }
 
 var databaseName = 'ToyCompanyWebsite'
-resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
+resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
   name: '${sqlserver.name}/${databaseName}'
   location: location
   sku: {
@@ -77,7 +77,7 @@ resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2020-08-01-
   }
 }
 
-resource sqlserverName_AllowAllAzureIPs 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
+resource sqlserverName_AllowAllAzureIPs 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = {
   name: '${sqlserver.name}/AllowAllAzureIPs'
   properties: {
     endIpAddress: '0.0.0.0'
@@ -88,10 +88,10 @@ resource sqlserverName_AllowAllAzureIPs 'Microsoft.Sql/servers/firewallRules@201
   ]
 }
 
-resource productmanuals 'Microsoft.Storage/storageAccounts/blobServices/containers@2019-06-01' = {
+resource productmanuals 'Microsoft.Storage/storageAccounts/blobServices/containers@2023-05-01' = {
   name: '${storageAccount.name}/default/${productmanualsName}'
 }
-resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
+resource hostingPlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   name: hostingPlanName
   location: location
   sku: {
@@ -100,7 +100,7 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
   }
 }
 
-resource webSite 'Microsoft.Web/sites@2020-06-01' = {
+resource webSite 'Microsoft.Web/sites@2023-12-01' = {
   name: webSiteName
   location: location
   properties: {
@@ -137,12 +137,12 @@ resource webSite 'Microsoft.Web/sites@2020-06-01' = {
 //  }
 //}
 
-resource msi 'Microsoft.ManagedIdentity/userAssignedIdentities@2018-11-30' = {
+resource msi 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-07-31-preview' = {
   name: managedIdentityName
   location: location
 }
 
-resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-preview' = {
+resource roleassignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
   name: guid(roleDefinitionId, resourceGroup().id)
 
   properties: {
@@ -152,7 +152,7 @@ resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
   }
 }
 
-resource AppInsights_webSiteName 'Microsoft.Insights/components@2018-05-01-preview' = {
+resource AppInsights_webSiteName 'Microsoft.Insights/components@2020-02-02' = {
   name: 'AppInsights'
   location: location
   kind: 'web'
