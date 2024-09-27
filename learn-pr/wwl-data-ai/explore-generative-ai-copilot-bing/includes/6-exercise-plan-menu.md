@@ -26,7 +26,7 @@ of our destination. Please provide 5 ideas.
 **Sample response**:
 
 ![Screenshot of a sample menu suggested by Copilot, formatted as a table.](../media/menu-table.png)
-```
+
 > [!NOTE]
 > **Iterate as needed!** You can iterate and ask for more ideas. However, pay attention to the number of prompts you have left.
 
