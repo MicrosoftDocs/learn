@@ -3,7 +3,7 @@ uid: learn.wwl.explore-microsoft-intune-suite
 metadata:
   title: Explore Microsoft Intune Suite
   description: "This module explores the Microsoft Intune Suite, highlighting its advanced device management and security capabilities, components, usage, and integration with the broader Microsoft security ecosystem."
-  ms.date: 09/25/2024
+  ms.date: 09/27/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
@@ -14,19 +14,19 @@ summary: This module explores the Microsoft Intune Suite, highlighting its advan
 abstract: |
   After completing this module, you will be able to:
 
-  - Understand the core features of the Microsoft Intune Suite
+  - Understand the core features of the Microsoft Intune Suite.
 
-  - Apply Zero Trust Security using Microsoft Intune
+  - Apply Zero Trust Security using Microsoft Intune.
 
-  - Implement Endpoint Privilege Management
+  - Implement Endpoint Privilege Management.
 
-  - Understand enterprise app management
+  - Understand enterprise app management.
 
-  - Understand advanced analytics for device and app insights
+  - Understand advanced analytics for device and app insights.
 
-  - Provide remote help to users
+  - Provide remote help to users.
 
-  - Understand what Microsoft Tunnel for mobile applications is
+  - Understand what Microsoft Tunnel for mobile applications is.
 prerequisites: |
   -   Basic Understanding of Microsoft Intune: Familiarity with the fundamental concepts of device management and security using Microsoft Intune, including enrollment, configuration policies, and app management.
 
@@ -50,7 +50,7 @@ units:
 - learn.wwl.explore-microsoft-intune-suite.introduction
 - learn.wwl.explore-microsoft-intune-suite.discover-essentials-microsoft-intune-suite
 - learn.wwl.explore-microsoft-intune-suite.apply-zero-trust
-- learn.wwl.explore-microsoft-intune-suite.implement-endpoint-priviledge-management
+- learn.wwl.explore-microsoft-intune-suite.implement-endpoint-privilege-management
 - learn.wwl.explore-microsoft-intune-suite.understand-enterprise-app-management
 - learn.wwl.explore-microsoft-intune-suite.explore-advanced-analytics
 - learn.wwl.explore-microsoft-intune-suite.provide-remote-help

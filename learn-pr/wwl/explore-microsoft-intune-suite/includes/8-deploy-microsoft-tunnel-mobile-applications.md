@@ -21,19 +21,19 @@ Microsoft Tunnel for MAM supports the following platforms:
 
 ### Key Features of Microsoft Tunnel for MAM:
 
-1. **Per-App VPN**:  
+- **Per-App VPN**:  
    Instead of routing all device traffic through the VPN, Microsoft Tunnel allows organizations to configure a **per-app VPN**. This means only specific apps can access corporate resources over the VPN, reducing security risks while optimizing network traffic. This is important in BYOD scenarios, where users may not want all their personal device traffic routed through the corporate network.
 
-2. **Device Flexibility**:  
+- **Device Flexibility**:  
    Microsoft Tunnel supports various platforms, including **iOS** and **Android**. This cross-platform support ensures that employees can access corporate resources securely, regardless of the type of mobile device they use.
 
-3. **Secure Access to On-Premises Resources**:  
+- **Secure Access to On-Premises Resources**:  
    Users can securely access internal corporate applications, such as SharePoint, ERP systems, or custom apps, directly from their mobile devices. By utilizing the Tunnel, IT administrators can ensure that only authorized users and applications can reach sensitive corporate data.
 
-4. **No Full Device Enrollment Needed**:  
+- **No Full Device Enrollment Needed**:  
    Microsoft Tunnel allows companies to provide secure access to internal resources without enrolling the entire device into **Intune MDM (Mobile Device Management)**. This feature is valuable for employees using personal devices who may be hesitant to enroll their device but still need secure access to work apps.
 
-5. **Conditional Access Integration**:  
+- **Conditional Access Integration**:  
    Microsoft Tunnel integrates seamlessly with **Microsoft Entra ID** (formerly Azure Active Directory) and **Conditional Access** policies. This ensures that users and devices are verified before being granted access to the corporate network, helping maintain a **Zero Trust** security framework.
 
 ---
