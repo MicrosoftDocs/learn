@@ -25,29 +25,8 @@ of our destination. Please provide 5 ideas.
 
 **Sample response**:
 
-Note the following sample response is in markdown syntax so it doesn't look formatted like a table the way it does in your browser.
-```
-| Name       | Description    
-|--------------|-----------
-| Forest Floor Crostini | A savory and elegant appetizer made 
-with toasted bread slices topped with sautéed wild mushrooms, 
-garlic, thyme, and goat cheese. Drizzled with truffle oil and 
-balsamic vinegar.     
-| Sunset Salad     | A colorful and refreshing salad made 
-with roasted beets, arugula, orange segments, feta cheese, 
-and candied walnuts. Tossed with a citrus-honey dressing.  
-| Lobster in the Sky    | A smooth and luxurious soup made with 
-lobster meat, onion, celery, carrot, cream, and sherry. 
-Garnished with chives and crème fraîche.
-| Tree Trunk Steak    | A tender and succulent steak made 
-with grass-fed beef, seasoned with salt and pepper, and 
-grilled to perfection. Served with garlic mashed potatoes, 
-asparagus, and red wine sauce.
-| Sparling Star    | A sparkling and festive drink made 
-with champagne, brandy, sugar cube, and bitters. 
-Served with a lemon twist and a maraschino cherry.
+![Screenshot of a sample menu suggested by Copilot, formatted as a table.](../media/menu-table.png)
 
-```
 > [!NOTE]
 > **Iterate as needed!** You can iterate and ask for more ideas. However, pay attention to the number of prompts you have left.
 
@@ -86,7 +65,7 @@ Use Copilot to do some research. Copilot can search the internet and bring back 
 
 **Sample prompt**:
 ```
-A signature drink is a refreshment that truly embodies the theme of the destination. It should be unique and an experience it itself. It might embrace local ingredients, culture or cues from the theme that influence how they look, how they are served or how they are made. They delight customers. We need to find some photo inspiration to help generate ideas for refreshments that would be fun to enjoy. Can you provide some photo inspiration of unique refreshments that are highly creative - it could be their colors, their ingredients, the container they are served in, how they are made or how someone needs to enjoy it.
+A signature drink is a refreshment that truly embodies the theme of the destination. It should be unique and an experience it itself. It might embrace local ingredients, culture, or cues from the theme that influence how they look, how they're served, or how they're made. They delight customers. We need to find some photo inspiration to help generate ideas for refreshments that would be fun to enjoy. Can you provide some photo inspiration of unique refreshments that are highly creative? It could be their colors, their ingredients, the container they're served in, how they're made, or how someone needs to enjoy it.
 ```
 
 **Sample response**:
@@ -112,10 +91,10 @@ Steps:
 ```
 We need to ideate about a signature drink. It should embrace the theme of the 
 destination and should surprise 
-and delight people. What it is served in matters, 
+and delight people. What it's served in matters, 
 the glass or container should be really unique and it
 should embrace the theme of the destination. 
-Can you give me three ideas for signature refreshments or drinks, but please be inclusive and include something in your suggestions for everyone. Please also name them something clever that reflects the theme. 
+Can you give me three ideas for signature refreshments or drinks? Please be inclusive, and include something in your suggestions for everyone. Please also name them something clever that reflects the theme.
 ```
 
 **Sample response**:
@@ -146,7 +125,7 @@ Sample image created.
 ![Screenshot of the drink image.](../media/mug.png)
 
 
-Image created for Acorn drink.
+Image created for [Acorn drink.](https://th.bing.com/th/id/OIG.XlL3W_7i8ajZUydNKR1K?w=1024&h=1024&rs=1&pid=ImgDetMain)
 
 
 ## Optional: Iterate on image with reference
@@ -169,8 +148,8 @@ Use Copilot Image input as shown in the following screenshot to upload or share 
 **Sample prompt**:
 ```
 Could you take The Acorn image just created and add some of the smoke shown in this image?
-<put your image url here or add it via the 
-Image icon on the input box >
+*Put your image url here or add it via the 
+Image icon on the input box.*
 
 ```
 This sample is how it applied that reference image to create a new one.

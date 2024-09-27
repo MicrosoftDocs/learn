@@ -3,13 +3,13 @@ uid: learn.wwl.create-language-model-with-luis.get-started
 title: Get started with conversational language understanding in Azure
 metadata:
   title: Get started with conversational language understanding in Azure
-  description: Get started with conversational language understanding in Azure
+  description: "Get started with conversational language understanding in Azure"
+  ms.date: 09/26/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 11/01/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-get-started.md)]
