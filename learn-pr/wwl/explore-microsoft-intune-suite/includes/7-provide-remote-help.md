@@ -2,13 +2,12 @@
 
 The **Remote Help** feature in the **Microsoft Intune Suite** enables IT professionals to provide real-time support to users, no matter where they're located. As organizations increasingly adopt hybrid and remote work models, this feature allows IT teams to offer efficient, secure assistance to end users without needing physical access to their devices.
 
----
-
 > [!IMPORTANT]
 > This article describes the capabilities and configuration tasks that are applicable in general for Remote Help across supported platforms. For specific capabilities, prerequisites, and other details based on the platform that you are using, go to:
-  > - [Remote Help on Windows with Microsoft Intune](/mem/intune/fundamentals/remote-help-windows)
-  > - [Remote Help on Android with Microsoft Intune](/mem/intune/fundamentals/remote-help-android)
-  > - [Remote Help on macOS with Microsoft Intune](/mem/intune/fundamentals/remote-help-macos)
+>
+> - [Remote Help on Windows with Microsoft Intune](/mem/intune/fundamentals/remote-help-windows)
+> - [Remote Help on Android with Microsoft Intune](/mem/intune/fundamentals/remote-help-android)
+> - [Remote Help on macOS with Microsoft Intune](/mem/intune/fundamentals/remote-help-macos)
 
 ## Remote Help capabilities and requirements
 
@@ -65,7 +64,7 @@ Limitations:
   - You can't establish a Remote Help session from one tenant to a different tenant.
   - Remote Help might not be available in all markets or localizations.
 
-### Supported platforms and devices:
+### Supported platforms and devices
 
 This feature is supported on the following platforms:
 - Windows 10/11
@@ -74,7 +73,7 @@ This feature is supported on the following platforms:
 - Samsung and Zebra devices enrolled as Android Enterprise dedicated devices
 - macOS 12, 13, and 14
 
-### Data and Privacy Considerations for Remote Help in Microsoft Intune
+### Data and privacy considerations for Remote Help in Microsoft Intune
 
 When utilizing the **Remote Help** feature within Microsoft Intune, certain data is logged to ensure security and compliance. Microsoft records the following information:
 
@@ -102,13 +101,11 @@ These details are drawn from the respective organizational profiles, and are ess
 
 Microsoft follows a strict data retention policy to ensure user privacy. All data related to the helper and sharer is stored for no longer than **30 days**. After this period, Microsoft permanently deletes all session-related data. This approach ensures that personal and session data isn't stored indefinitely, aligning with privacy best practices and regulatory compliance requirements.
 
-### Configure Remote Help for Your Tenant
+### Configure Remote Help for your tenant
 
 To configure **Remote Help** in your tenant, follow these steps to ensure the feature is properly set up across all supported platforms.
 
----
-
-### **Step 1: Enable Remote Help**
+### Step 1: Enable Remote Help
 
 1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/#home) and navigate to **Tenant administration** > **Remote Help**.
 
@@ -122,9 +119,7 @@ To configure **Remote Help** in your tenant, follow these steps to ensure the fe
 > [!NOTE] 
 > Once licenses are purchased or a trial is started, activation might take between 30 minutes to 8 hours. If you attempt to initiate a Remote Help session before the licenses are fully activated, you may see a message indicating that Remote Help isn't enabled for your tenant.
 
----
-
-### **Step 2: Configure Permissions for Remote Help**
+### Step 2: Configure permissions for Remote Help
 
 Remote Help uses **Intune Role-Based Access Control (RBAC)** to define the level of access for the helper. RBAC ensures that helpers can only perform actions within the limits set by their role, maintaining security and protecting privacy.
 
@@ -146,9 +141,7 @@ Additionally, under the **Remote tasks** category, you can enable the permission
 
 By default, the built-in **Help Desk Operator** role grants all these permissions. You can customize these roles or create new ones as needed.
 
----
-
-### **Step 3: Assign Users to Roles**
+### Step 3: Assign users to roles
 
 Once you’ve created the roles that manage Remote Help permissions, assign users to these roles.
 
@@ -163,9 +156,7 @@ Once you’ve created the roles that manage Remote Help permissions, assign user
 > [!IMPORTANT]  
 > A helper cannot provide assistance if the sharer or their device is outside the scope of the helper’s role.
 
----
-
-### **Monitoring and Reports**
+### Monitoring and reports
 
 You can monitor Remote Help usage within the **Microsoft Intune admin center**. For unenrolled devices, reporting may be limited.
 
@@ -179,8 +170,6 @@ You can monitor Remote Help usage within the **Microsoft Intune admin center**. 
 
 > [!NOTE] 
 > For Android Enterprise Dedicated devices without user affinity, the **Recipient ID** and **Recipient name** fields will display "--".
-
----
 
 This guide outlines the process for setting up, configuring, and monitoring **Remote Help** in the **Microsoft Intune Suite** while detailing role-based access control and reporting capabilities. 
 

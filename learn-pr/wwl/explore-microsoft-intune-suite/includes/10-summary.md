@@ -1,6 +1,6 @@
 In this module, you’ve gained an in-depth understanding of the **Microsoft Intune Suite** and how it enhances modern endpoint management. By exploring its core features, you now know how the Intune Suite streamlines device and app management, improves security, and supports user productivity in remote and hybrid environments.
 
-### Key highlights from this module include:
+### Key highlights from this module include
 
 - **Core Capabilities**: The Microsoft Intune Suite offers comprehensive tools for managing devices and applications, ensuring consistent security across different platforms.
 - **Zero Trust Security**: You learned how to apply **Zero Trust principles** to secure user access and corporate resources through continuous verification of users, devices, and apps.

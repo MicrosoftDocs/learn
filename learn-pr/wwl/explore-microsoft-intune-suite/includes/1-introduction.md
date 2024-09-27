@@ -2,7 +2,7 @@ As modern organizations expand, managing various devices, applications, and data
 
 By leveraging the Intune Suite, organizations can streamline their endpoint management processes, enhance security, and implement advanced protection measures such as **Zero Trust Security** and **Endpoint Privilege Management**. In this module, we will explore the key features of the Microsoft Intune Suite and how they can be applied to secure, manage, and monitor devices and applications within your organization.
 
-### Learning Objectives
+### Learning objectives
 
 After this module, you should be able to:
 

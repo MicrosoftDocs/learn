@@ -1,6 +1,6 @@
 Enterprise App Management in the Microsoft Intune Suite gives IT professionals the tools they need to secure, deploy, and manage corporate applications across devices, whether company-owned or personal. This feature ensures that applications are deployed consistently and securely, with detailed controls over app configuration, access, and updates.
 
-## How It’s Used in Modern IT
+## How it’s used in Modern IT
 
 Organizations today are heavily dependent on productivity apps such as Microsoft 365, line-of-business (LOB) applications, and third-party software. IT teams need a streamlined way to ensure apps are available and secure across a wide variety of devices and platforms, especially in hybrid work environments where employees often use personal devices to access corporate resources.
 
@@ -8,7 +8,7 @@ Organizations today are heavily dependent on productivity apps such as Microsoft
 
 **App Protection Policies** in Microsoft Intune are essential for protecting corporate data within apps, especially in **BYOD (Bring Your Own Device)** scenarios where the device itself isn't managed by the organization. These policies focus on controlling how data is accessed and shared within apps, ensuring that corporate data remains secure, even on personal devices.
 
-#### Key Features:
+#### Key features
 
 - **Data Protection**: App protection policies can enforce encryption, restrict copy-paste functions, and prevent data backup to personal services like iCloud. This ensures corporate data remains isolated within the app.
   
@@ -17,7 +17,7 @@ Organizations today are heavily dependent on productivity apps such as Microsoft
 - **Granular Control**: Policies allow administrators to specify what apps can do with corporate data, such as preventing the sharing of information between unmanaged and managed apps or ensuring that data remains within the company's ecosystem.
 
 
-## **Real-world Use Case**:
+## Real-world use case
 
 These policies are especially useful for organizations that implement a **Zero Trust security model**, as they help limit data leakage and ensure that sensitive information is protected, even on unmanaged devices. By managing data at the app level, organizations can maintain control over corporate assets without requiring full device enrollment.
 
@@ -37,6 +37,7 @@ When you add an Enterprise App Catalog app, Intune prefills the following instal
 - Return codes to indicate post-installation behavior
 - Whether to install the app for system or user
   
+
 Microsoft Intune prefills the detection rules that devices must meet before the app is installed:
 
 - File size

@@ -4,8 +4,6 @@ The **Microsoft Tunnel** is a powerful VPN gateway solution integrated within th
 
 As organizations shift towards remote and hybrid work, employees increasingly access corporate resources from various locations and devices. **Microsoft Tunnel** enables IT administrators to provide secure remote access to internal company resources while maintaining a high level of security and management control. This is especially beneficial in environments where employees are using personal devices, as it allows them to securely connect to internal applications without requiring full device control.
 
----
-
 ## Platform requirements and feature overview
 
 Before you begin, you must already have deployed the Microsoft Tunnel gateway. To learn more about Microsoft Tunnel gateway and how to install and configure it,  see:
@@ -19,7 +17,7 @@ Microsoft Tunnel for MAM supports the following platforms:
 - Android Enterprise version 10.0 or higher
 - iOS version 14.0 or higher
 
-### Key Features of Microsoft Tunnel for MAM:
+### Key features of Microsoft Tunnel for MAM
 
 - **Per-App VPN**:  
    Instead of routing all device traffic through the VPN, Microsoft Tunnel allows organizations to configure a **per-app VPN**. This means only specific apps can access corporate resources over the VPN, reducing security risks while optimizing network traffic. This is important in BYOD scenarios, where users may not want all their personal device traffic routed through the corporate network.
@@ -36,9 +34,7 @@ Microsoft Tunnel for MAM supports the following platforms:
 - **Conditional Access Integration**:  
    Microsoft Tunnel integrates seamlessly with **Microsoft Entra ID** (formerly Azure Active Directory) and **Conditional Access** policies. This ensures that users and devices are verified before being granted access to the corporate network, helping maintain a **Zero Trust** security framework.
 
----
-
-### How Microsoft Tunnel Enhances IT Operations:
+### How Microsoft Tunnel enhances IT operations
 
 - **Enhanced Security**:  
    By using per-app VPN, Microsoft Tunnel reduces the attack surface by limiting VPN access to only specific apps that need it, thereby reducing the risk of data leakage or misuse. This improves security without compromising user experience.

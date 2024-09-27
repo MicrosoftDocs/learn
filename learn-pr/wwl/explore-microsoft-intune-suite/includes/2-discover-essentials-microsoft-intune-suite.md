@@ -19,7 +19,7 @@ The following table provides a list of add-on capabilities and associated Intune
 |Firmware-over-the-air update| |✅  |✅  |
 |Specialized devices management| |✅ |✅ |
 
-## Key Features:
+## Key features
 
 - **Endpoint Privilege Management**: This feature allows you to manage and control administrative privileges on Windows 10 devices. It helps you reduce the risk of malware and other security threats by limiting the number of users with administrative access.
 - **Enterprise App Management**: This feature enables you to manage and secure applications on Windows 11 devices. It helps you control access to applications and data, ensuring that only authorized users can access sensitive information.
