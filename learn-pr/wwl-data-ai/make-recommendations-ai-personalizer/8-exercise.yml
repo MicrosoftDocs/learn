@@ -6,7 +6,7 @@ metadata:
   description: Learn how to configure Azure AI Personalizer resource, and use Visual Studio Code notebooks to create and run a learning loop.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 9/27/2023
+  ms.date: 09/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
