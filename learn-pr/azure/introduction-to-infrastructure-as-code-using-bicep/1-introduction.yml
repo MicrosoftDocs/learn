@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how you can use infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
-  ms.date: 10/05/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

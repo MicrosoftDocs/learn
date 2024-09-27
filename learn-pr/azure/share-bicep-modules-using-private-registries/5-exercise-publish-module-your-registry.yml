@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a module to your registry
   description: Publish a Bicep module to your container registry.
-  ms.date: 03/06/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
