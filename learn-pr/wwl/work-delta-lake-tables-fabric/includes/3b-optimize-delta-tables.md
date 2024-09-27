@@ -4,7 +4,7 @@ Spark is a parallel-processing framework, with data stored on one or more worker
 
 *OptimizeWrite* is a feature of Delta Lake which reduces the number of files as they're written. Instead of writing many small files, it writes fewer larger files. This helps to prevent the *small files problem* and ensure that performance isn't degraded.
 
-![Diagram showing how Optimize Write writes fewer large files.](../media/optimize_write.png)
+![Diagram showing how Optimize Write writes fewer large files.](../media/optimize-write.png)
 
 In Microsoft Fabric, `OptimizeWrite` is enabled by default. You can enable or disable it at the Spark session level:
 
@@ -29,7 +29,7 @@ Optimize is a table maintenance feature that consolidates small Parquet files in
 * better compression
 * efficient data distribution across nodes
 
-![Diagram showing how Optimize consolidates Parquet files.](../media/optimize_command.png)
+![Diagram showing how Optimize consolidates Parquet files.](../media/optimize-command.png)
 
 To run Optimize:
 
@@ -52,7 +52,7 @@ V-Order might not be beneficial for write-intensive scenarios such as staging da
 
 Apply V-Order to individual tables by using the Table Maintenance feature by running the `OPTIMIZE` command.
 
-![Screen picture of table maintenance with V-order selected](../media/table_maintenance_vorder.png)
+![Screen picture of table maintenance with V-order selected](../media/table-maintenance-v-order.png)
 
 ## Vacuum
 
@@ -81,7 +81,7 @@ Run VACUUM on individual tables by using the Table maintenance feature:
 1. Select **Run VACUUM command using retention threshold** and set the retention threshold.
 1. Select **Run now**.
 
-![Screen picture showing the table maintenance options.](../media/table_maintenance_vacuum.png)
+![Screen picture showing the table maintenance options.](../media/table-maintenance-vacuum.png)
 
 You can also run **VACUUM** as a SQL command in a notebook:
 
