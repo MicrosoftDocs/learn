@@ -2,11 +2,11 @@ Whether you're just learning to code, working as a developer at a start-up, or a
 
 Depending on your specific situation, it's important to know what GitHub plans fit your needs.
 
-In this module, you'll learn about the many different types of GitHub accounts, plans, and their associated features. You'll also discover how other features are licensed.
+In this module, you learn about the many different types of GitHub accounts, plans, and their associated features. You also discover how other features are licensed.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
 - Define the difference between the different types of GitHub accounts: Personal, Organization, and Enterprise.
 - Explain each GitHub plan: GitHub Free for personal accounts and organizations, GitHub Pro for personal accounts, GitHub Team, and GitHub Enterprise.

@@ -45,7 +45,7 @@ GitHub Copilot can autocomplete code as you type when you use Visual Studio Code
 
     :::image type="content" source="../media/vsc-settings.png" alt-text="Screenshot of the File menu in Visual Studio Code. The Preferences drop down submenu is open with Settings selected." border="false":::
 
-1. In the left-side panel of the settings tab, select **Extensions**, then select **Copilot**.
+1. In the left-side panel of the settings tab, select **Extensions**, then select **GitHub Copilot**.
 1. Under **Editor: Enable Auto Completions**, select or deselect the checkbox to enable or disable inline suggestions.
 
 Additionally, you can choose to enable or disable inline suggestions and specify for which languages you want to enable or disable GitHub Copilot.

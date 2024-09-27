@@ -3927,6 +3927,16 @@ achievements:
   title: Configure role-based access control
   summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
   iconUrl: /training/achievements/roles-based-access-control.svg
+- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
+  type: badge
+  title: Describe the insider risk capabilities in Microsoft Purview
+  summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
+  iconUrl: /training/achievements/describe-insider-risk-capabilities-in-microsoft-365.svg
+- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+  type: badge
+  title: Describe the eDiscovery and Audit capabilities in Microsoft Purview
+  summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
+  iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
 - uid: learn.wwl.realize-integrated-analytical-solutions-with-azure-synapse-analytics.trophy
   type: trophy
   title: Realize Integrated Analytical Solutions with Azure Synapse Analytics

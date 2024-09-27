@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-apache-spark-work-files-lakehouse.connect
-title: Connect to data sourceas and ingest data
+title: Connect to data sources and ingest data
 metadata:
-  title: Connect to data sourceas and ingest data
-  description: "Connect to data sourceas and ingest data"
+  title: Connect to data sources and ingest data
+  description: "Connect to data sources and ingest data"
   ms.date: 09/25/2024
   author: wwlpublish
   ms.author: anrudduc
