@@ -164,7 +164,7 @@ For our storage example, your template might look like this:
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2019-06-01",
+      "apiVersion": "2023-05-01",
       "name": "learntemplatestorage123",
       "location": "westus",
       "sku": {
