@@ -1,11 +1,11 @@
 
-Quantum computers are often perceived as scientific curiosities or a long way off. However, they are now within the grasp of developers. This module will demystify the principles of quantum computing and illustrate how you, as a developer, can contribute to this ground-breaking field. By understanding the foundational concepts, you will be prepared to take an active role in building the necessary tools for quantum computers and the rest of this course.
+Quantum computers are often perceived as scientific curiosities or a long way off. However, they're now within the grasp of developers. This module demystifies the principles of quantum computing and illustrate how you, as a developer, can contribute to this ground-breaking field. By understanding the foundational concepts, you are prepared to take an active role in building the necessary tools for quantum computers and the rest of this course.
 
 ## Learning objectives
 
 After completing this module, you'll:
 
-- Explain the basic principles of quantum computing, including qubits, superposition, entanglement, interference and measurement.
+- Explain the basic principles of quantum computing, including qubits, superposition, entanglement, interference, and measurement.
 - Understand the historical context and current state of quantum computing technology.
 - Recognize the potential applications and implications of quantum computing.
 - Identify resources and next steps for further learning and development in quantum computing.

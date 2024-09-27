@@ -2,17 +2,17 @@
 uid: learn.quantum.introduction-to-quantum-computing
 metadata:
   title: Introduction to Quantum Computing
-  description: This course aims to empower software and firmware developers, regardless of their physics or quantum computing background, to embark on a rewarding career in a talent-short, high-paying industry poised to grow significantly in the next decade.
+  description: This course empowers developers to understand the basics of quantum computing.
   author: a-a-ron
   ms.author: aastewar
   ms.date: 9/26/2024
   ms.service: azure-quantum
   ms.topic: module-standard-task-based
 title: Introduction to Quantum Computing
-summary: "This course aims to empower software and firmware developers, regardless of their physics or quantum computing background, to embark on a rewarding career in a talent-short, high-paying industry poised to grow significantly in the next decade."
+summary: "This course empowers developers to understand the basics of quantum computing."
 abstract: |
   By the end of this module, you're able to:
-    - Explain the basic principles of quantum computing, including qubits, superposition, entanglement, interference and measurement. 
+    - Explain the basic principles of quantum computing, including qubits, superposition, entanglement, interference, and measurement. 
     - Understand the historical context and current state of quantum computing technology. 
     - Recognize the potential applications and implications of quantum computing. 
     - Identify resources and next steps for further learning and development in quantum computing.
@@ -43,4 +43,4 @@ units:
 - learn.quantum.introduction-to-quantum-computing.summary
 
 badge:
-  uid: learn.github-copilot-with-python.badge
+  uid: learn.quantum.introduction-to-quantum-computing.badge
