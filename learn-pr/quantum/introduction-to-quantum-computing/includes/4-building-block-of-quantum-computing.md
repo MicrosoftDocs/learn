@@ -1,11 +1,11 @@
 
 Understanding the fundamental concepts of quantum computing is the first step on your journey to a career in quantum. You can learn more in other courses to describe what happens within the underlying physics, engineering, and mathematical principles. For now, we focus on what you need to understand why working with this emerging technology is so exciting.
 
-## What is a quibit?
+## Quibit
 
 A qubit is a quantum bit. It's the basic unit of information, the same way a bit is in classical computing. We must understand a few key concepts to understand how a qubit differs from a classical bit and how we can process data in a quantum computer.  
 
-However, before we do, it’s worth noting that we don’t experience quantum phenomena in our everyday lives. When matter behaves according to the rules of quantum mechanics, we must discard our intuitive understanding of the universe. And so, it is with qubits. The following descriptions likely seem unintuitive, but they're well-understood and tested. We won't have time to dig deeply into them here, but if you wish to learn more, there's a wealth of information.
+However, before we do, it’s worth noting that we don’t experience quantum phenomena in our everyday lives. When matter behaves according to the rules of quantum mechanics, we must discard our intuitive understanding of the universe. And so, it is with qubits. The following descriptions likely seem unintuitive, but they're well-understood and tested. We don't have time to dig deeply into them here, but if you wish to learn more, there's a wealth of information.
 
 ## Superposition
 
@@ -15,7 +15,7 @@ Superposition is the principle that allows qubits to exist in a quantum state. S
 
 Entanglement in a quantum computer is a phenomenon that interconnects two or more qubits. This means that one qubit's state influences the second qubit instantly, no matter how far apart they are.
 
-For example, if two qubits are entangled, measuring the state of one qubit will instantly determine the state of the other qubit. This perfect correlation means the state of one qubit is entirely dependent on the state of the other. This property allows quantum computers to share and process information between qubits in a way that classical computers cannot.
+For example, if two qubits are entangled, measuring the state of one qubit will instantly determine the state of the other qubit. This perfect correlation means the state of one qubit is entirely dependent on the state of the other. This property allows quantum computers to share and process information between qubits in a way that classical computers can't.
 
 ## Interference
 

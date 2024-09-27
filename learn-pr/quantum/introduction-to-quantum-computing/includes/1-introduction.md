@@ -1,5 +1,5 @@
 
-Quantum computers are often perceived as scientific curiosities or a long way off. However, they're now within the grasp of developers. This module demystifies the principles of quantum computing and illustrate how you, as a developer, can contribute to this ground-breaking field. By understanding the foundational concepts, you're prepared to take an active role in building the necessary tools for quantum computers and the rest of this course.
+Quantum computers are often perceived as scientific curiosities or a long way off. However, they're now within the grasp of developers. This module demystifies the principles of quantum computing and illustrates how you, as a developer, can contribute to this ground-breaking field. By understanding the foundational concepts, you're prepared to take an active role in building the necessary tools for quantum computers and the rest of this course.
 
 ## Learning objectives
 
