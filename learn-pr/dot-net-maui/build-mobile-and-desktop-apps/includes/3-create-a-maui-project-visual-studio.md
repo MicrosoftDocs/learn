@@ -90,7 +90,7 @@ The project contents include the following items:
     </Shell>
     ```
 
-- **MainPage.xaml**. This file contains the user-interface definition. The sample app that the MAUI App template generates contains two labels, a button, and an image. The controls are arranged using a `VerticalStackLayout` enclosed in a `ScrollView`. The `VerticalStackLayout` control arranges the controls vertically (in a stack), and the `ScrollView` provides a scrollbar if the view is too large to be displayed on the device. You're intended to replace the contents of this file with your own UI layout. You can also define more XAML pages if you have a multi-page app.
+- **MainPage.xaml**. This file contains the user-interface definition. The sample app that the MAUI App template generates contains two labels, a button, and an image. The controls are arranged using a `VerticalStackLayout` enclosed in a `ScrollView`. The `VerticalStackLayout` element arranges the controls vertically (in a stack), and the `ScrollView` provides a scrollbar if the view is too large to be displayed on the device. You're intended to replace the contents of this file with your own UI layout. You can also define more XAML pages if you have a multi-page app.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -164,7 +164,7 @@ The project contents include the following items:
     }
     ```
 
-- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code in the **Platforms** folder in the project. This code is platform-specific, but at the end it calls the `CreateMauiApp` method of the static `MauiProgram` class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application by using the `UseMauiApp` generic method of the app builder object; the type parameter specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
+- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code in the **Platforms** folder in the project. This code is platform-specific, but at the end it calls the `CreateMauiApp` method of the static `MauiProgram` class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application by using the `UseMauiApp` generic method of the app builder object; the type parameter (`<App>`) specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
 
     ```csharp
     namespace MyMauiApp;

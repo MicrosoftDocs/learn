@@ -73,7 +73,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
     :::image type="content" source="../media/4-hot-reload-button.png" alt-text="A screenshot of the Visual Studio toolbar. The Hot Reload button is highlighted.":::
 
-1. Switch back to the app and select the **Click me** button. Verify that the count is incremented by 5.
+1. Switch back to the app and select the **Click me** button. Verify that the count is now incrementing by 5.
 
     > [!NOTE]
     > Visual Studio's *Hot Reload* feature allows you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. As well as modifying code, you can also make changes to the XAML markup for a page, and these changes will become visible in the running app.
@@ -88,7 +88,11 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
     :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user selected the Android Device Manager option.":::
 
+
 1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
+
+    > [!NOTE]
+    > The example in this exercise uses the **Pixel 3a (+ Store)** base device, but you can use more recent devices. For example the **Pixel 5 - API 31** or **Pixel 5 - API 34**.
 
     :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 3 device with API 30 selected.":::
 
