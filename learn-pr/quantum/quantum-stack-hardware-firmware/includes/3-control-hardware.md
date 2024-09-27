@@ -23,10 +23,10 @@ Building these cryo-ASICs is an active area of research. Learning how to constru
 
 Ion trap and neutral atom quantum computers face different challenges. While the atoms are trapped in a vacuum, the electronics that control them sit at room temperature in 19” racks. These systems operate at lower frequencies, making the generation and control of electronic pulses easier.
 
-However, there are significant challenges. Lasers control the atoms, and not just any lasers; they must be extremely well-controlled, with incredibly low noise, and sufficient power. Additionally, the lasers that can be used are dictated by the specific atom the QPU uses, as determined by underlying atomic physics. This constraint often means that commercial telecom lasers aren't an option.
+However, there are significant challenges. Lasers control the atoms, and not just any lasers; they must be well-controlled, with incredibly low noise, and sufficient power. Additionally, the lasers that can be used are dictated by the specific atom the QPU uses, as determined by underlying atomic physics. This constraint often means that commercial telecom lasers aren't an option.
 
 Fortunately, it's possible to buy lasers that can generate all the necessary wavelengths of light to trap and control atoms. However, these scientific instruments are delicate and prone to failure, requiring significant maintenance and upkeep.
 
-Therefore, the future of atom-based QPUs require the development of commercial-grade lasers and optical systems—systems that can operate reliably day and night with minimal supervision.
+Therefore, the future of atom-based QPUs requires the development of commercial-grade lasers and optical systems—systems that can operate reliably day and night with minimal supervision.
 
 In conclusion, we can see that no matter the type of QPU, building the control electronics, optics, and laser systems needed to drive these devices still poses significant challenges – and opportunities.
