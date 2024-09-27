@@ -1,4 +1,4 @@
-You want to monitor the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you can view built-in metrics graphs, activity logs, and boot diagnostics.
+You want to monitor the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs. You can then view built-in metrics graphs, activity logs, and boot diagnostics.
 
 ## Create a VM and enable recommended alerts
 
@@ -24,7 +24,7 @@ You want to monitor the VMs that host your website, so you decide to quickly cre
 1. Under **Diagnostics**, for **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 
    > [!NOTE]
-   > Don't select **Enable guest OS diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable guest OS and client monitoring later.
+   > Don't select **Enable OS guest diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable OS guest and client monitoring later.
 
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
 
