@@ -1,7 +1,7 @@
 
 Understanding the fundamental concepts of quantum computing is the first step on your journey to a career in quantum. You can learn more in other courses to describe what happens within the underlying physics, engineering, and mathematical principles. For now, we focus on what you need to understand why working with this emerging technology is so exciting.
 
-## Quibit
+## Qubit
 
 A qubit is a quantum bit. It's the basic unit of information, the same way a bit is in classical computing. We must understand a few key concepts to understand how a qubit differs from a classical bit and how we can process data in a quantum computer.  
 
