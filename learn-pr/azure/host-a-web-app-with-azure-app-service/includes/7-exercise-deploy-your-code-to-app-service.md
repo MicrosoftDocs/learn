@@ -50,7 +50,15 @@ az webapp deploy \
     --name <your-app-name>
 ```
 
-When the command finishes running, open a new browser tab and go to `https://<your-app-name>.azurewebsites.net`. You get the greeting message from your app. You deployed successfully!
+When the command finishes running, you see an output message like this:
+
+```output
+Deployment has completed successfully
+You can visit your app at: http://<app-name>-<hash>.<region>.azurewebsites.net
+
+```
+
+Open a new browser tab and navigate to the URL in the output. You get the greeting message from your app. You deployed successfully!
 
 ::: zone-end
 

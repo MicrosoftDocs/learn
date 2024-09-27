@@ -102,7 +102,7 @@ To create a starter web application, we use Maven, a commonly used project-manag
 
     ```bash
     cd ~
-    mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+    mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.5
     ```
 
 1. Now, run these commands to change to the new "helloworld" application directory and package the application for deployment:
