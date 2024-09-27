@@ -30,20 +30,22 @@ The command creates a new folder named "BestBikeApp" to hold your project.
 
 Open a second command shell session by browsing to <https://shell.azure.com/> in a new tab. You can test your application locally on Azure. To do so, use the following steps:
 
-1. From your primary command shell session, run the following commands to build and run your web application:
+1. From your primary command shell session, run the following commands to build and run your web application in the background:
 
     ```bash
     cd BestBikeApp
-    dotnet run
+    dotnet run &
     ```
 
     You should get output like the following example:
 
     ```console
+    [1] 1275
+    <username> [ ~/BestBikeApp ]$ Building...
     warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
           No XML encryptor configured. Key {b4a2970c-215c-4eb2-92b4-c28d021158c6} may be persisted to storage in unencrypted form.
     info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: http://localhost:5022
+          Now listening on: http://localhost:5176
     info: Microsoft.Hosting.Lifetime[0]
           Application started. Press Ctrl+C to shut down.
     info: Microsoft.Hosting.Lifetime[0]
@@ -52,12 +54,12 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
           Content root path: /home/cephas_lin/BestBikeApp
     ```
 
-    The output describes the situation after starting your app: the application is running and listening at port 5022. Take note of the port on which your application is running and listening from your output.
+    The output describes the situation after starting your app. In the previous example, the application is running and listening at port 5176, and the process number is 1275. Take note of the port on which your application is running and listening from your output.
 
-1. From another Cloud Shell session, run the following command to browse to your web application, replacing *5000* with the port you noted in the last step:
+1. In the same Cloud Shell session, run the following command to browse to your web application, replacing *5000* with the port you noted in the last step. For example:
 
     ```bash
-    curl -kL http://127.0.0.1:5000/
+    curl -kL http://localhost:5176/
     ```
 
     You should see some HTML appear, ending in the following lines:
@@ -84,7 +86,11 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
     </html>
     ```
 
-1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
+1. Using the process number your previous output, stop dotnet. From the previous output example:
+
+    ```azurecli-interactive
+    kill 1275
+    ```
 
 ::: zone-end
 
