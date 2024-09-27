@@ -1,8 +1,8 @@
-### Applying Zero Trust Security using the Microsoft Intune Suite
+### Applying Zero Trust security using the Microsoft Intune Suite
 
 **Zero Trust** is a security framework that assumes threats can come from anywhere, both inside and outside the network. It requires continuous verification of users, devices, and applications before granting access to corporate resources. The **Microsoft Intune Suite** plays a key role in implementing a Zero Trust security model by integrating with other Microsoft security solutions to enforce strict access control, device compliance, and identity verification.
 
-### How Zero Trust Works in Modern IT
+### How Zero Trust works in Modern IT
 
 With the increasing adoption of remote and hybrid work environments, corporate networks are more dispersed than ever. This makes traditional perimeter-based security models insufficient. **Zero Trust** assumes that any device or user could be compromised, so access must be continuously evaluated. The Intune Suite helps organizations secure devices, users, and applications with a comprehensive approach to ensure that only trusted entities can access critical resources.
 
