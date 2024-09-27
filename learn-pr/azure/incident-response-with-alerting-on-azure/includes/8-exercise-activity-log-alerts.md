@@ -1,6 +1,6 @@
-The shipping company for which you work wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can activity log alerts.
+The shipping company for which you work wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can create activity log alerts.
 
-Your goal is to set up a Linux VM and create an activity log monitoring rule to detect when a VM is deleted. You'll then delete the VM to trigger this alert.
+Your goal is to set up a Linux virtual machine (VM) and create an activity log monitoring rule to detect when a VM is deleted. Then, delete the VM to trigger this alert.
 
 ## Create the Azure activity log monitor
 
@@ -10,7 +10,7 @@ Your goal is to set up a Linux VM and create an activity log monitoring rule to 
 
 1. In the Monitor menu, select **Alerts**. The **Monitor | Alerts** pane appears.
 
-1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right.
+1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right-hand side of your screen.
 
 1. In the **Select a resource** pane, the **Filter by subscription** field should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, search for and select **Virtual machines**.
 
@@ -57,7 +57,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Select **Create**.
 
-1. The **Create an alert rule** pane reappears. Select the **Next: Details** button and enter the following values for each setting.
+1. The **Create an alert rule** pane reappears. Select **Next: Details** and enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -88,7 +88,7 @@ To trigger an alert, you need to delete the Linux VM that you created in the pre
 
 1. Select **Delete** from the menu bar.
 
-1. Type "yes" in the **Confirm delete** field, then select **Delete**.
+1. Enter *delete* to confirm deletion and select **Delete**.
 
 1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 
@@ -96,7 +96,7 @@ To trigger an alert, you need to delete the Linux VM that you created in the pre
 
 In the exercise, you set up an Ubuntu VM and created an activity log rule to detect when the VM was deleted. You then deleted a VM from your resource group. Let's check whether an alert was triggered.
 
-1. You should have received a notification email that reads, **Important notice: Azure Monitor alert VM was deleted was activated...** If not, open your email program and look for an email from azure-noreply@microsoft.com.
+1. You should receive a notification email that reads, **Important notice: Azure Monitor alert VM was deleted was activated...** If not, open your email program and look for an email from azure-noreply@microsoft.com.
 
     ![Screenshot of alert email.](../media/7-alert-email.png)
 

@@ -1,4 +1,4 @@
-In this unit, you'll learn about GitHub account types and plans.
+In this unit, you learn about GitHub account types and plans.
 
 ## GitHub account types
 
@@ -14,13 +14,13 @@ Let's review each of these account types in detail.
 
 Every person who uses GitHub.com signs into a personal account (sometimes referred to as a user account). Your personal/user account is your identity on GitHub.com and has a username and profile.
 
-Your personal/user account can own resources such as repositories, packages, and projects as well as a straightforward way to manage your permission. Whenever you take an action on GitHub.com, such as creating an issue or reviewing a pull request, the action is attributed to your personal account.
+Your personal/user account can own resources such as repositories, packages, and projects and has a straightforward way to manage your permission. Actions that you take on GitHub.com, such as creating an issue or reviewing a pull request, are attributed to your personal account.
 
 Each personal account uses either GitHub Free or GitHub Pro. All personal accounts can own an unlimited number of public and private repositories, with an unlimited number of collaborators on those repositories. If you use GitHub Free, private repositories owned by your personal account have a limited feature set.
 
 ### Organization accounts
 
-Organization accounts are shared accounts where an unlimited number of people can collaborate across many projects at once. Unlike personal/user accounts, permissions with organization accounts are done at a tiered approach.
+Organization accounts are shared accounts where an unlimited number of people can collaborate across many projects at once. Unlike personal/user accounts, permissions with organization accounts are done with a tiered approach.
 
 Similar to personal accounts, organizations can own resources such as repositories, packages, and projects. However, you can't sign into an organization. Instead, each person signs into their own personal account, and any actions the person takes on organization resources are attributed to their personal account. Each personal account can be a member of multiple organizations.
 
@@ -36,7 +36,7 @@ Your enterprise account allows you to manage and enforce policies for all the or
 
 ## GitHub plans
 
-Now that you have a better understanding of the different types of accounts you can have with GitHub, we'll discuss the different plans available to improve your software management process and team collaboration.
+Now that you have a better understanding of the different types of accounts you can have with GitHub, let's look at the different plans available to improve your software management process and team collaboration.
 
 There are several free GitHub products, in addition to the paid ones:
 
@@ -58,16 +58,16 @@ With GitHub Free, a personal account includes:
 - GitHub Community Support
 - Dependabot alerts
 - Two-factor authentication enforcement
-- 500 MB GitHub Packages storage
+- 500-MB GitHub Packages storage
 - 120 GitHub Codespaces core hours per month
-- 15 GB GitHub Codespaces storage per month
+- 15-GB GitHub Codespaces storage per month
 - GitHub Actions:
   - 2,000 minutes per month
   - Deployment protection rules for public repositories
 
 #### GitHub Free for organizations
 
-With GitHub Free for organizations, you can work with unlimited collaborators on unlimited public repositories with a full feature set or unlimited private repositories with a limited feature set.
+With GitHub Free for organizations, you can work with unlimited collaborators on unlimited public repositories, with a full feature set. Or, unlimited private repositories with a limited feature set.
 
 In addition to the features available with GitHub Free for personal accounts, GitHub Free for organizations includes:
 
@@ -75,15 +75,15 @@ In addition to the features available with GitHub Free for personal accounts, Gi
 
 ### GitHub Pro
 
-GitHub Pro is similar to GitHub Free but comes with upgraded features. It's designed for individual developers (using their personal account) who want advanced tools and insight within their repositories but don't belong to a team.
+GitHub Pro is similar to GitHub Free but comes with upgraded features. The plan is designed for individual developers (using their personal account) who want advanced tools and insight within their repositories but don't belong to a team.
 
 GitHub Pro accounts include all of the features of a GitHub Free account, plus the following advanced features:
 
 - GitHub Support via email
 - 3,000 GitHub Actions minutes per month
-- 2 GB GitHub Packages storage
+- 2-GB GitHub Packages storage
 - 180 GitHub Codespaces core hours per month
-- 20 GB GitHub Codespaces storage per month
+- 20-GB GitHub Codespaces storage per month
 - Advanced tools and insights in private repositories:
   - Required pull request reviewers
   - Multiple pull request reviewers
@@ -100,21 +100,21 @@ GitHub Team is the version of GitHub Pro for organizations. GitHub Team is bette
 
 Let's go over the extra features in GitHub Team that help with team collaboration:
 
-  -	GitHub Support via email
-  -	3,000 GitHub Actions minutes per month
-  -	2 GB GitHub Packages storage
-  -	Advanced tools and insights in private repositories:
-    - Required pull request reviewers
-    - Multiple pull request reviewers
-    - Draft pull requests
-    - Team pull request reviewers
-    - Protected branches
-    - Code owners
-    - Scheduled reminders
-    - GitHub Pages
-    - Wikis
-  -	Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks
-  -	The option to enable or disable GitHub Codespaces
+- GitHub Support via email
+- 3,000 GitHub Actions minutes per month
+- 2-GB GitHub Packages storage
+- Advanced tools and insights in private repositories:
+  - Required pull request reviewers
+  - Multiple pull request reviewers
+  - Draft pull requests
+  - Team pull request reviewers
+  - Protected branches
+  - Code owners
+  - Scheduled reminders
+  - GitHub Pages
+  - Wikis
+- Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks
+- The option to enable or disable GitHub Codespaces
 
 ### GitHub Enterprise
 
@@ -126,8 +126,8 @@ In addition to the features available with GitHub Team, GitHub Enterprise includ
 
 - GitHub Enterprise Support
 - More security, compliance, and deployment controls
-- Authentication with SAML single sign-on
-- Access provisioning with SAML or SCIM
+- Authentication with security assertion markup language (SAML) single sign-on
+- Access provisioning with SAML or System for Cross-domain Identity Management (SCIM)
 - Deployment protection rules with GitHub Actions for private or internal repositories
 GitHub Connect
 - The option to purchase GitHub Advanced Security
@@ -143,10 +143,10 @@ The significant difference between GitHub Enterprise Server (GHES) and GitHub En
 
 The other difference between GHES and GitHub Enterprise Cloud is that GitHub Enterprise Cloud includes a dramatic increase in both GitHub Actions minutes and GitHub Packages storage.
 
-Here are the additional features of GitHub Enterprise Cloud:
+Here are the extra features of GitHub Enterprise Cloud:
 
 - 50,000 GitHub Actions minutes per month
-- 50 GB GitHub Packages storage
+- 50-GB GitHub Packages storage
 - A service level agreement for 99.9% monthly uptime
 - Option to centrally manage policy and billing for multiple GitHub.com organizations with an enterprise account
 - Option to provision and manage the user accounts for your developers, by using Enterprise Managed Users
