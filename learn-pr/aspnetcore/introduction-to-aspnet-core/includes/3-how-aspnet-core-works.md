@@ -4,7 +4,7 @@ Now that you know what ASP.NET Core is and what it can do, let’s overview how 
 
 ASP.NET Core provides project templates to create new ASP.NET Core projects with the necessary files, folders, and configurations to get a project up and running efficiently. For example, you can select a template that creates a ready to run web API or Blazor web app.
 
-All .NET project templates offer customization options to tailor the generated project to specific needs and extend it with additional services. For instance, you can add Entity Framework Core for database access, authentication, OpenAPI, caching, logging, and more, enabling the application to effectively meet specific requirements.
+All .NET project templates offer customization options to tailor the generated project to specific needs and extend it with additional services. For instance, you can add Entity Framework Core (for database access), authentication, OpenAPI, caching, logging, and more, enabling the application to effectively meet specific requirements.
 
 ## Key architecture components
 
