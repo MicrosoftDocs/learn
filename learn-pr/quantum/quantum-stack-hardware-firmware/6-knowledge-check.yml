@@ -26,9 +26,9 @@ quiz:
     - content: "Running high-level applications "
       isCorrect: false
       explanation: "Incorrect."
-  - content: What is one of the main challenges atomic QPUs face, such as ion trap and neutral atom quantum computers? 
+  - content: What is one of the main challenges that atomic QPUs face, such as ion trap and neutral atom quantum computers? 
     choices:
-    - content: "Ensuring the QPU can operate at extremely high temperatures."
+    - content: "Ensuring the QPU can operate at high temperatures."
       isCorrect: false
       explanation: "Incorrect."
     - content: "Developing commercial-grade lasers and optical systems."

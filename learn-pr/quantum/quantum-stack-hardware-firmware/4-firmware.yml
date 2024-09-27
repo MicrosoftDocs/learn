@@ -3,7 +3,7 @@ uid: learn.quantum.quantum-stack-hardware-firmware.firmware
 title: Firmware
 metadata:
   title: Firmware
-  description: This unit will introduce you to the firmware used in quantum computing.
+  description: This unit introduces you to the firmware used in quantum computing.
   ms.date: 9/26/2024
   author: a-a-ron
   ms.author: aastewar

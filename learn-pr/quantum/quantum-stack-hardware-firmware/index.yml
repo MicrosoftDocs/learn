@@ -2,7 +2,7 @@
 uid: learn.quantum.quantum-stack-hardware-firmware
 metadata:
   title: The Quantum Stack - Quantum Processor Units, Hardware, and Firmware
-  description: This module will introduce you to the quantum stack, including quantum processor units, hardware, and firmware.
+  description: This module introduces you to the quantum stack, including quantum processor units, hardware, and firmware.
   author: a-a-ron
   ms.author: aastewar
   ms.date: 9/26/2024

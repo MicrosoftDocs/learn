@@ -1,7 +1,7 @@
 
 Congratulations on completing the module!
 
-You gained a deeper understanding of how the quantum stack operates, from Quantum Processing Units (QPUs) at the core, all the way up to the critical firmware that controls them. You learned about the hardware requirements, such as the precision and isolation needed to operate QPUs, as well as the challenges in scaling quantum systems. Additionally, you explored how control hardware and advanced firmware work together to generate signals, manage errors, and optimize performance, using technologies like CPUs, GPUs, and FPGAs. With this foundational knowledge, you are now well-equipped to further explore this cutting-edge field and understand the exciting opportunities in quantum technology.
+You gained a deeper understanding of how the quantum stack operates, from Quantum Processing Units (QPUs) at the core, all the way up to the critical firmware that controls them. You learned about the hardware requirements, such as the precision and isolation needed to operate QPUs, and the challenges in scaling quantum systems. Additionally, you explored how control hardware and advanced firmware work together to generate signals, manage errors, and optimize performance, using technologies like CPUs, GPUs, and FPGAs. With this foundational knowledge, you're now well-equipped to further explore this cutting-edge field and understand the exciting opportunities in quantum technology.
 
 ## Further reading and links
 
