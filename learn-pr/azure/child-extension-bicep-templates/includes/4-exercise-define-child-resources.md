@@ -69,7 +69,7 @@ Next, you create the database, which is a child resource of the Azure Cosmos DB 
 1. Add the following resource definition at the bottom of the file, below the Azure Cosmos DB account resource definition.
 
    ```bicep
-   resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2020-04-01' = {
+   resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-05-15' = {
      parent: cosmosDBAccount
      name: cosmosDBDatabaseName
      properties: {
