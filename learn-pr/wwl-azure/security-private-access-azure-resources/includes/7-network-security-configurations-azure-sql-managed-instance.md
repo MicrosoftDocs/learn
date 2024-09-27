@@ -72,7 +72,7 @@ Azure Policy built-in definitions - Microsoft.Sql:
 | Private endpoint connections on Azure SQL Database should be enabled | Private endpoint connections enforce secure communication by enabling private connectivity to Azure SQL Database.                                                                                                                            | Audit, Disabled       | 1.1.0               |
 | Public network access on Azure SQL Database should be disabled       | Disabling the public network access property improves security by ensuring your Azure SQL Database can only be accessed from a private endpoint. This configuration denies all logins that match IP or virtual network based firewall rules. | Audit, Deny, Disabled | 1.1.0               |
 
-#### 6. Follow Azure Policy Recommendations:
+#### 6. Follow Azure Policy Recommendations
 
  -  Disable public network access on Azure SQL Managed Instances to ensure access is only from within their virtual networks or via Private Endpoints.<br>
  -  Enable private endpoint connections to fortify secure communication with Azure SQL Database.

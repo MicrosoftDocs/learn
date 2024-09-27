@@ -3,7 +3,7 @@ Virtual Network (VNet) service endpoint provides secure and direct connectivity 
 > [!NOTE]
 > Microsoft recommends use of Azure Private Link and private endpoints for secure and private access to services hosted on the Azure platform. Azure Private Link provisions a network interface into a virtual network of your choosing for Azure services such as Azure Storage or Azure SQL. For more information, see [Azure Private Link](/azure/private-link/private-link-overview) and [What is a private endpoint?](/azure/private-link/private-endpoint-overview).
 
-Service endpoints are available for the following Azure services and regions. The *Microsoft.\** resource is in parenthesis. Enable this resource from the subnet side while configuring service endpoints for your service:
+Service endpoints are available for the following Azure services and regions. The *Microsoft* resource is in parentheses. Enable this resource from the subnet side while configuring service endpoints for your service:
 
 ## **Generally available**
 
@@ -31,7 +31,7 @@ Service endpoints provide the following benefits:
     
      -  Today, any routes in your virtual network that force internet traffic to your on-premises and/or virtual appliances also force Azure service traffic to take the same route as the internet traffic. Service endpoints provide optimal routing for Azure traffic.<br>
     
-    Endpoints always take service traffic directly from your virtual network to the service on the Microsoft Azure backbone network. Keeping traffic on the Azure backbone network allows you to continue auditing and monitoring outbound Internet traffic from your virtual networks, through forced-tunneling, without impacting service traffic. For more information, see [Secure Azure service access from on-premises](/azure/virtual-network/virtual-network-service-endpoints-overview#secure-azure-services-to-virtual-networks)
+    Endpoints always take service traffic directly from your virtual network to the service on the Microsoft Azure backbone network. Keeping traffic on the Azure backbone network allows you to continue auditing and monitoring outbound Internet traffic from your virtual networks, through forced-tunneling, without impacting service traffic. For more information, see [Secure Azure service access from on-premises](/azure/virtual-network/virtual-network-service-endpoints-overview#secure-azure-services-to-virtual-networks).
  -  Simple to set up with less management overhead: You no longer need reserved, public IP addresses in your virtual networks to secure Azure resources through IP firewall. There is no Network Address Translation (NAT) or gateway devices required to set up the service endpoints. You can configure service endpoints through a single selection on a subnet. There's no extra overhead to maintaining the endpoints.<br>
 
 ## Limitations
