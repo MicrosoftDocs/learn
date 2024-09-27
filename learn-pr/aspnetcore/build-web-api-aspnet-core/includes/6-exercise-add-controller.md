@@ -40,7 +40,7 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you've learned about: `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
+    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you learned about: `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
 
 ## Get all pizzas
 
@@ -100,7 +100,7 @@ Build and start the web API by running the following command:
 dotnet run
 ```
 
-### Test the controller with .http file
+### Test the controller with an Http file
 
 1. Open **ContosoPizza.http**
 
@@ -190,10 +190,9 @@ dotnet run
     }
     ```
 
+Now that you finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
 
-You've now finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
-
-### Optional: Test the controller with Command Line HTTP REPL
+### Optional: Test the controller with Command Line HTTP Read-Eval-Print Loop (REPL)
 
 1. Open the existing `httprepl` terminal, or open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
@@ -313,4 +312,4 @@ You've now finished implementing the `GET` verbs. In the next unit, you can add 
 
 1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code and shut down the web API by selecting CTRL+C on your keyboard.
 
-You've now finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
+Now that you finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.

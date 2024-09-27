@@ -9,15 +9,3 @@ Your company has to maintain a large staff of transcribers, and these two types 
 You've heard that Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure AI speech to text features, and your manager has asked you to research how you can use speech to text features to create an application you can use to offset some of the transcription tasks, thereby alleviating some of your operating costs and service-level agreement issues.
 
 In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
-
-## Learning objectives
-
-In this module, you'll:
-
-- Create an Azure AI services account.
-- Create a command-line application that uses single-shot recognition to convert speech to text.
-- Create a command-line application that uses continuous recognition to convert speech to text.
-
-## Prerequisites
-
-- Basic familiarity with development tools

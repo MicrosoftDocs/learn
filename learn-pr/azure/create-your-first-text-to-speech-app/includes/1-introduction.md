@@ -3,15 +3,3 @@ Suppose you're a developer who works on a team that creates narrated videos for 
 You've heard that Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure AI text to speech features. Your manager has asked you to research how you can use text to speech to create an application you can use for narration while your videos are in progress, thereby alleviating some of your operating costs and scheduling issues.
 
 In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
-
-## Learning objectives
-
-In this module, you'll:
-
-- Create an Azure AI services resource.
-- Create a command-line application that converts text to an audio file.
-- Create a command-line application that converts SSML to an audio file.
-
-## Prerequisites
-
-- Basic familiarity with development tools

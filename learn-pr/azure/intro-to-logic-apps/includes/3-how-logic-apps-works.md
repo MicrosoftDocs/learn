@@ -88,6 +88,6 @@ The following diagram shows how to use the *condition* action in the workflow fo
 
 ## What is the workflow designer?
 
-The workflow designer is a graphical tool for creating your workflows. The designer provides a canvas surface where you build a workflow by adding a trigger and actions. For example, the industry news monitoring app uses the trigger named **On new news article**, a control action known as a *condition*, and actions named **Sentiment**, **Insert row**, and **Send an email**. The following screenshot shows the industry news monitoring workflow in the designer:
+The workflow designer is a graphical tool for creating your workflows. The designer provides a canvas surface where you build a workflow by adding a trigger and actions. For example, the industry news monitoring app uses the trigger named **On new news article**, a control action known as a *condition*, and actions named **Sentiment**, **Create blob**, and **Send an email**. The following screenshot shows the industry news monitoring workflow in the designer:
 
 :::image type="content" source="../media/news-monitoring-complete-designer.png" alt-text="Screenshot shows the industry news monitoring app in the workflow designer." border="false" lightbox="../media/news-monitoring-complete-designer.png":::
