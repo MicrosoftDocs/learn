@@ -205,7 +205,7 @@ Microsoft Sentinel delivers intelligent security analytics and threat intelligen
 
 There are two separate plugins in Copilot that relate to Sentinel:
 
-- Microsoft Sentinel ({review})
+- Microsoft Sentinel (Preview)
 - Natural language to Microsoft Sentinel KQL (Preview)
 
 :::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
