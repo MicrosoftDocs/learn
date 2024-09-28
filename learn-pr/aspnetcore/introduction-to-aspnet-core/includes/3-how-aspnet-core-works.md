@@ -43,7 +43,7 @@ In the following example logging services are added in an ASP.NET Core *Program.
 
 In the previous sample in the *Program.cs*:
 
-- `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear any existing providers and add the *Console* and *Debug* logging providers.
+- `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear all default providers and add the *Console* and *Debug* logging providers.
 - `app.MapGet`: This is a simple endpoint to demonstrate that the application is running.
 
 ### Server-side development
