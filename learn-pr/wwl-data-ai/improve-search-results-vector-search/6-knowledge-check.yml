@@ -19,9 +19,9 @@ quiz:
     - content: "To create a search to match text input."
       isCorrect: false
       explanation: "Incorrect. An Azure search service would accomplish this."
-    - content: "When you need to find matches across different types of data. from a search index."
+    - content: "When you need to find matches across different types of data from a search index."
       isCorrect: true
-      explanation: "Correct. A vector query can be used to match criteria across text, video, image and audio data sources."
+      explanation: "Correct. A vector query can be used to match criteria across text, video, image, and audio data sources."
     - content: "To upload and index a document library."
       isCorrect: false
       explanation: "Incorrect. You upload documents to your storage resource then create an index."
