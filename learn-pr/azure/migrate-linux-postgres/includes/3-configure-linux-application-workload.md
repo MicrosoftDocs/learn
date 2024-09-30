@@ -18,6 +18,8 @@ VM_ID=$(az vm show --resource-group 240900-linux-postgres --name vm-1 --query id
 
 ## Assign the 'Virtual Machine Administrator Login' role to the user for the VM
 
+You can read more about the Privileged role in Azure VMs on the [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator).
+
 ```bash
 az role assignment create \
     --assignee $USER_ID \
@@ -173,3 +175,4 @@ psql
 - [Sign in to a Linux virtual machine in Azure using Azure AD](/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
 - [Connect to an Azure Database for PostgreSQL server using a managed identity](/azure/postgresql/single-server/how-to-connect-with-managed-identity)
 - [Connect to an Azure Virtual Machine using the Azure CLI](/azure/virtual-machines/linux/quick-create-cli). 
+- [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator).

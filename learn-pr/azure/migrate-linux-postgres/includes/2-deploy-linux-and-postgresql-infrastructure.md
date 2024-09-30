@@ -9,9 +9,9 @@ In this module, we show you how to deploy a preconfigured [Bicep](/azure/azure-r
 The key resources deployed are:
 
 - Virtual Machine (VM) running Linux (Ubuntu 24.04 LTS).
-- Azure Database for Postgres running Postgres 16
-- A Managed Identity to enable secure access from the VM to the database.
-- Role-Based Access Controls (RBAC) including roles to access the database as an administrator, and more restrictive roles for the application itself.
+- Azure Database for Postgres running [Postgres 16 or above](https://www.postgresql.org/download/).
+- A [Managed Identity](/entra/identity/managed-identities-azure-resources/overview) to enable secure access from the VM to the database.
+- [Role-Based Access Controls (RBAC)](/azure/role-based-access-control/overview) including roles to access the database as an administrator, and more restrictive roles for the application itself.
 - A Virtual Network for both the VM and database.
 
 As this is a test/dev workload, and we're looking to keep things both cost-effective and performant, we've chosen the following configuration for you:
@@ -29,6 +29,8 @@ The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https:
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
 This module requires Azure CLI version 2.0.30 or later. 
+
+Run the following command to find out your version of Azure CLI:
 
 ```bash
 az --version
@@ -54,7 +56,8 @@ az group create \
 
 Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
 
-The bicep file we're using to deploy the compute resources is located at [deploy/vm-postgres.bicep](./deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM.
+The bicep file we're using to deploy the compute resources is located at [deploy/vm-postgres.bicep](./deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM. You can read 
+more about Bicep on [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep).
 
 If you run this command on your local machine, first clone the example repo to your machine.
 
@@ -76,8 +79,15 @@ az deployment group create \
     --template-file deploy/vm-postgres.bicep
 ```
 
+## Explore in Azure portal
+
+Once your 
+
 ## Resources
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
 - [Install Azure CLI](/cli/azure/install-azure-cli)
 - [Bicep Documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
 - [Create a resource group using Azure CLI](/cli/azure/group)
+- [Azure Role-Based Access Controls (RBAC)](/azure/role-based-access-control/overview) 
+- [Azure Managed Identity](/entra/identity/managed-identities-azure-resources/overview)
+- [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
