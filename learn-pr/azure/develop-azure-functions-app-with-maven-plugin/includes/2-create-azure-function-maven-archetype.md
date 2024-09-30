@@ -21,7 +21,7 @@ As a Java developer, you're already familiar with using Maven to create and comp
 >  
 > | Item | Version |
 > |---|---|
-> | **Java JDK** | 1.8 |
+> | **Java JDK** | 17 |
 > | **Maven** | 3.0 or higher |
 > | **Azure Functions Core Tools** | 2.7 or higher |
 >  
@@ -57,7 +57,7 @@ Where:
 | `archetype:generate` | Instructs Maven to generate a project from an archetype. |
 | `-DarchetypeGroupId` | Specifies the group ID of the archetype, which is usually the creator of the archetype. |
 | `-DarchetypeArtifactId` | Specifies the ID of the archetype, which is the Azure Functions archetype in this example. |
-| `-DjavaVersion=8` | Use `-DjavaVersion=11` if you want your functions to run on Java 11. |
+| `-DjavaVersion=17` | Use `-DjavaVersion=11` if you want your functions to run on Java 11. |
 
 When you create a project using the `mvn archetype:generate` command, Maven creates a folder for the project, and the root folder contains your project's *pom.xml* file.
 
