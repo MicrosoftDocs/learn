@@ -64,10 +64,9 @@ You can view and analyze the log data collected by your DCR by using KQL log que
 
    >[!NOTE]
    > The **Queries** window with sample queries might open when you open Log Analytics. For now, close this window, because you're going to manually create a simple query.
-   
+
 1. In the empty query window, type *Syslog*, and then select **Run**. All the system log events the DCR collected within the **Time range** are displayed.
 
 1. You can refine your query to identify events of interest. For example, you can display only the events that had a **SeverityLevel** of **warning**.
 
    :::image type="content" source="../media/dcr-log.png" alt-text="Screenshot that shows the events returned from the Syslog by the DCR." lightbox="../media/dcr-log.png":::
-
