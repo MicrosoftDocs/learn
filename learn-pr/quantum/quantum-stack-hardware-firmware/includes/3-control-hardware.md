@@ -1,5 +1,5 @@
 
-:::image type="content" source="../media/fpga.png" alt-text="Image of circuit boards with various electronic components, including cooling fans, heatsinks, and connectors.":::
+:::image type="content" source="../media/fpga-board.png" alt-text="Image of circuit boards with various electronic components, including cooling fans, heatsinks, and connectors.":::
 
 Now, we move one step up the quantum stack and look at the electronics used to control the QPUs we’ve just learnt about.  
 

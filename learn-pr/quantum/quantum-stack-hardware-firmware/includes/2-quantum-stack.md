@@ -45,6 +45,6 @@ Yet more lasers manipulate the atom's internal state, changing their energy leve
 
 Companies such as Infleqtion, QuEra, and Atom Computing are all pursuing this technology to build QPUs, as it offers a clear path to quickly reaching large numbers of qubits.
 
-:::image type="content" source="../media/Lasers.png" alt-text="Image of a bright blue laser beam passing through optical components on an optical table.":::
+:::image type="content" source="../media/laser.png" alt-text="Image of a bright blue laser beam passing through optical components on an optical table.":::
 
 In labs worldwide, scientists work tirelessly to understand how to build bigger and better QPUs for quantum computation. The challenge has been creating high-fidelity qubits that would allow us to build a large enough QPU to run a useful computation that can be applied in a commercial setting. Today, quantum computers that offer a real advantage over classical ones are still a way off. However, the good news is that progress has been made over the last few years, leaving the scientific community with a few puzzle pieces to solve and more input needed for engineering and programming challenges ahead.
