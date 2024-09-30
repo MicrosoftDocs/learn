@@ -1,5 +1,5 @@
 
-:::image type="content" source="../media/code.png" alt-text="Screenshot of code being edited in an IDE.":::
+:::image type="content" source="../media/code-editing.png" alt-text="Screenshot of code being edited in an IDE.":::
 
 We need firmware for the electronics layer to control our QPU. Operations at the firmware layer are crucial for the direct control and management of the quantum hardware. The firmware layer receives commands from the software layer above it, and these instructions are used to run our quantum program.  
 
