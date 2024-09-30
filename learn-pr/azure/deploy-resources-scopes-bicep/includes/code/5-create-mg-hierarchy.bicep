@@ -3,7 +3,7 @@ targetScope = 'managementGroup'
 @description('The name of the subscription alias to deploy.')
 param subscriptionAliasName string
 
-resource parentManagementGroup 'Microsoft.Management/managementGroups@2020-05-01' = {
+resource parentManagementGroup 'Microsoft.Management/managementGroups@2023-04-01' = {
   scope: tenant()
   name: 'NonProduction'
   properties: {
@@ -11,7 +11,7 @@ resource parentManagementGroup 'Microsoft.Management/managementGroups@2020-05-01
   }
 }
 
-resource childManagementGroup 'Microsoft.Management/managementGroups@2020-05-01' = {
+resource childManagementGroup 'Microsoft.Management/managementGroups@2023-04-01' = {
   scope: tenant()
   name: 'SecretRND'
   properties: {
@@ -24,7 +24,7 @@ resource childManagementGroup 'Microsoft.Management/managementGroups@2020-05-01'
   }
 }
 
-resource subscription 'Microsoft.Subscription/aliases@2020-09-01' = {
+resource subscription 'Microsoft.Subscription/aliases@2024-08-01-preview'
   scope: tenant()
   name: subscriptionAliasName
   properties: {
