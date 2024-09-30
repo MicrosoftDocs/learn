@@ -142,7 +142,7 @@ postgres=> \dt
 (14 rows)
 ```
 
-## Run a sql query to list the tables
+## Run a sql query listing the tables
 ```
 SELECT table_name
 FROM information_schema.tables
