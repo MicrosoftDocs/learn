@@ -16,17 +16,11 @@ summary: Data is so widespread that many services and roles are needed to manage
 abstract: |
   By the end of this module, you are able to:
 
-  -
+  -   Describe categories of data products.
 
-  Describe categories of data products.
+  -   Describe Azure data services.
 
-  -
-
-  Describe Azure data services.
-
-  -
-
-  Describe data professional roles.
+  -   Describe data professional roles.
 prerequisites: '-   You should be familiar with basic computing concepts and terminology.'
 iconUrl: /training/achievements/understand-data-roles-services-products.svg
 levels:
