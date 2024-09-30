@@ -14,12 +14,12 @@ To deploy the connector, do the following steps:
 
 1. Next, in the *Configuration* section, select the **Connect incidents & alerts** button.
 
-:::image type="content" source="../media/03-connect-microsoft-defender-xdr-data-connector.png" alt-text="Screen capture of the Defender XDR data connector configuration" lightbox="../media/03-connect-microsoft-defender-xdr-data-connector.png":::
+:::image type="content" source="../media/03-connect-microsoft-defender-xdr-data-connector.png" alt-text="Screen capture of the Defender XDR data connector configuration." lightbox="../media/03-connect-microsoft-defender-xdr-data-connector.png":::
 
 > [!NOTE]
 > If you uncheck the *Turn off all Microsoft incident creation rules for these products. Recommended* checkbox, you may may recieve duplications in the incidents queue.
 
-1. You can also connect (user and entity behavior analytics) *UEBA entities* and *events* logs from specific products.
+You can also connect (user and entity behavior analytics) *UEBA entities* and *events* logs from specific products.
 
 1. Select the **Connect entities** and **Connect events** sections.
 
