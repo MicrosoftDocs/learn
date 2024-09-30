@@ -6,7 +6,7 @@ In this exercise, we create a new repository using the GitHub template for a web
 First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.
 
 1. Open the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**
 1. Wait for the codespace to start. This startup process can take a few minutes.
 1. The remaining exercises in this project take place in the context of this development container.
 
@@ -17,15 +17,11 @@ First you need to launch the Codespaces environment, which comes preconfigured w
 
 When complete, Codespaces loads with a terminal section at the bottom. Codespaces installs all the required extensions in your container. Once the package installs are completed, Codespaces will execute the `uvicorn` command to start your web application running within your Codespace.
 
-When the web application has successfully started, a message in the terminal shows that the server is running on port 8000 within your Codespace.
-
-### Testing the API
-
-Try to interact with the API by sending a request using the self-documented page. Select the POST button and then on the Try it Out button:
+When the web application has successfully started, a message in the terminal **Ports** tab shows that the server is running on port 8000 within your Codespace.
 
 ## Sign up for GitHub Copilot
 
 If you haven't already, you need to register by setting up [a free trial or subscription for your account](https://github.com/github-copilot/signup).
 
 >[!Note]
-> Educators, Students and select open-source maintainers can sign up for Copilot for free, learn how at: https://aka.ms/Copilot4Students
+> Educators, Students and select open-source maintainers can sign up for Copilot for free, learn how at [Setting up GitHub Student and GitHub Copilot as an Authenticated Student Developer](https://aka.ms/Copilot4Students).
