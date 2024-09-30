@@ -4,7 +4,7 @@ You're guided through the creation of the compute resources that host your appli
 
 There are multiple methods to deploy infrastructure in Azure, including the Azure portal, Azure CLI, and Infrastructure as Code templates including Bicep and Terraform.
 
-In this module, we show you how to deploy a preconfigured [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application.
+In this module, we show you how to deploy a preconfigured [Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application.
 
 The key resources deployed are:
 
@@ -28,7 +28,7 @@ The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https:
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
-This module requires Azure CLI version 2.0.30 or later. Run `az --version` to find the version. If you need to install or upgrade, see [Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
+This module requires Azure CLI version 2.0.30 or later. Run `az --version` to find the version. If you need to install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
 
 ## Sign in to Azure using the CLI
 
@@ -72,6 +72,6 @@ az deployment group create \
 
 ## Resources
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
-- [Install Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
-- [Bicep Documentation](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep)
-- [Create a resource group using Azure CLI](https://learn.microsoft.com/cli/azure/group)
+- [Install Azure CLI](/cli/azure/install-azure-cli)
+- [Bicep Documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+- [Create a resource group using Azure CLI](/cli/azure/group)

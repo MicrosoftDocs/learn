@@ -2,7 +2,7 @@
 uid: learn.azure.migrate-linux-postgres
 metadata:
   title: Migrate Linux and PostgreSQL Workloads
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Migrate Linux and PostgreSQL workloads to Azure using Azure Migrate and Azure Database for PostgreSQL."
   ms.date: 9/16/2024
   author: asw101
   ms.author: aawislan
@@ -18,16 +18,16 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
 title: Migrate Linux and PostgreSQL Workloads
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "Migrate from an on-premises Linux server to Azure using Azure Migrate and Azure Database for PostgreSQL."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - "Understand how to migrate your Linux and PostgreSQL workloads to Azure."
+    - "Deploy a Linux virtual machine in Azure."
+    - "Run a sample application on your PostgreSQL database."
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - "Basic knowledge of Linux and PostgreSQL."
+  - "Knowledge of Azure services."
+  - "An Azure subscription."
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate

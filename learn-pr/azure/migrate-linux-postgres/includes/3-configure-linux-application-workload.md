@@ -170,5 +170,5 @@ psql
 ```
 
 ## Resources
-- [Sign in to a Linux virtual machine in Azure using Azure AD](https://learn.microsoft.com/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
-- [Connect to an Azure Database for PostgreSQL server using a managed identity](https://learn.microsoft.com/azure/postgresql/single-server/how-to-connect-with-managed-identity)
+- [Sign in to a Linux virtual machine in Azure using Azure AD](/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
+- [Connect to an Azure Database for PostgreSQL server using a managed identity](/azure/postgresql/single-server/how-to-connect-with-managed-identity)
