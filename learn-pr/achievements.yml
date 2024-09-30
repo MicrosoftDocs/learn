@@ -3798,6 +3798,11 @@ achievements:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
   iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
+- uid: learn.aks-deployment-pipeline-github-actions.badge
+  type: badge
+  title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+  summary: Learn how to use GitHub Actions to create an automated deployment pipeline for Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 - uid: learn.introduction-to-azure-web-pubsub.badge
   type: badge
   title: Introduction to Azure Web PubSub
