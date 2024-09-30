@@ -46,7 +46,7 @@ Now, you're going to create an Azure Function using Maven. This exercise uses th
     [INFO] Parameter: packageInPathFormat, Value: com/contoso/functions
     [INFO] Parameter: resourceGroup, Value: java-functions-group
     [INFO] Parameter: appName, Value: $(artifactId)-$(timestamp)
-    [INFO] Parameter: javaVersion, Value: 8
+    [INFO] Parameter: javaVersion, Value: 17
     [INFO] Parameter: groupId, Value: com.contoso.functions
     [INFO] Parameter: artifactId, Value: event-reporting
     [INFO] Parameter: appServicePlanName, Value: java-functions-app-service-plan
