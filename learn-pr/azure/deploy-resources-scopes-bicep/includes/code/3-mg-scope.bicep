@@ -1,5 +1,5 @@
 targetScope = 'managementGroup'
 
-resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-09-01' = {
+resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2024-05-01' = {
   // ...
 }
