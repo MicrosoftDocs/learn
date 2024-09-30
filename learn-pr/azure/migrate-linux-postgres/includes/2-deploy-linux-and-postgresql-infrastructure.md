@@ -28,7 +28,13 @@ The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https:
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
-This module requires Azure CLI version 2.0.30 or later. Run `az --version` to find the version. If you need to install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
+This module requires Azure CLI version 2.0.30 or later. 
+
+```bash
+az --version
+```
+
+If you need to install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
 
 ## Sign in to Azure using the CLI
 

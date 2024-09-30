@@ -3,7 +3,7 @@ uid: learn.azure.migrate-linux-postgres.migrate-linux-and-postgresql-workloads
 title: Migrate Linux and PostgreSQL workloads
 metadata:
   title: Migrate Linux and PostgreSQL workloads
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Explaination and in-depth assessment of how to migrate Linux and PostgreSQL workloads to Azure using Azure Migrate and Azure Database for PostgreSQL."
   ms.date: 9/16/2024
   author: asw101
   ms.author: aawislan

@@ -3,7 +3,7 @@ uid: learn.azure.migrate-linux-postgres.configure-linux-application-workload
 title: Configure a Linux application workload​
 metadata:
   title: Configure a Linux application workload​
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Configure a Linux application workload in Azure. Learn how to deploy a sample application on your Linux virtual machine. Explore how to connect to your Azure Database for PostgreSQL server."
   ms.date: 9/16/2024
   author: asw101
   ms.author: aawislan

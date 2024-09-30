@@ -3,7 +3,7 @@
 In this module, you will:
 
 - Configure a Linux application workload to connect to an Azure Database for PostgreSQL using a system-assigned managed identity.
-- Connect to the Azure Virtual Machine using the Azure CLI.
+- Connect to the [Azure Virtual Machine using the Azure CLI](/azure/virtual-machines/linux/quick-create-cli). 
 - Install the necessary tools.
 - Connect to the PostgreSQL server using `psql`.
 - Clone the repository containing the sample application.
@@ -172,3 +172,4 @@ psql
 ## Resources
 - [Sign in to a Linux virtual machine in Azure using Azure AD](/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
 - [Connect to an Azure Database for PostgreSQL server using a managed identity](/azure/postgresql/single-server/how-to-connect-with-managed-identity)
+- [Connect to an Azure Virtual Machine using the Azure CLI](/azure/virtual-machines/linux/quick-create-cli). 

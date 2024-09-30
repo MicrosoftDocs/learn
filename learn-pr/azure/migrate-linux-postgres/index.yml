@@ -21,13 +21,13 @@ title: Migrate Linux and PostgreSQL Workloads
 summary: "Migrate from an on-premises Linux server to Azure using Azure Migrate and Azure Database for PostgreSQL."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Understand how to migrate your Linux and PostgreSQL workloads to Azure."
-    - "Deploy a Linux virtual machine in Azure."
-    - "Run a sample application on your PostgreSQL database."
+    - Understand how to migrate your Linux and PostgreSQL workloads to Azure.
+    - Deploy a Linux virtual machine in Azure.
+    - Run a sample application on your PostgreSQL database.
 prerequisites: |
-  - "Basic knowledge of Linux and PostgreSQL."
-  - "Knowledge of Azure services."
-  - "An Azure subscription."
+  - Basic knowledge of Linux and PostgreSQL.
+  - Knowledge of Azure services.
+  - An Azure subscription.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
