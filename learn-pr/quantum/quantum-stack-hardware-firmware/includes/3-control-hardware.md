@@ -1,5 +1,5 @@
 
-:::image type="content" source="../media/FPGA.png" alt-text="Image of circuit boards with various electronic components, including cooling fans, heatsinks, and connectors.":::
+:::image type="content" source="../media/fpga.png" alt-text="Image of circuit boards with various electronic components, including cooling fans, heatsinks, and connectors.":::
 
 Now, we move one step up the quantum stack and look at the electronics used to control the QPUs we’ve just learnt about.  
 
@@ -11,7 +11,7 @@ While this electronic layer controls the QPU, it borrows from traditional networ
 
 The challenge of today's control hardware is that it's large and bulky. It's derived from test equipment and hasn’t had the long development journey of other computing technologies. This is compounded by the problem that the QPU must be isolated from the environment, either at the bottom of a dilution fridge or in a vacuum system only controlled with lasers.  
 
-### Challenges for Superconducting & Spin Quantum computers
+### Challenges for superconducting & spin quantum computers
 
 As quantum computers grow in size and move out of the lab, using conventional signal generation and cabling quickly becomes prohibitively complex and costly. Superconducting and silicon spin QPUs of sufficient scale would require tens of thousands, if not millions, of cables fed into a dilution fridge and to the QPU.  
 
