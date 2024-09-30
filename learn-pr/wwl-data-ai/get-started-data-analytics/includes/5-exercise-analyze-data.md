@@ -28,7 +28,7 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-formatted-xlsx.png" alt-text="Screenshot of Lemonade-formatted x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
+    :::image type="content" source="../media/lemonade-formatted-xlsx.png" alt-text="Screenshot of Lemonade-formatted x l s x file in One Drive." lightbox="../media/lemonade-formatted-xlsx.png":::
 
 ## Exercise 1: Analyze data with a PivotTable
 
