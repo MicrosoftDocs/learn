@@ -14,8 +14,8 @@ summary: Describes how Azure IoT Central facilitates the design, testing, and im
 abstract: |
   After completing this module, you'll know more about how to:
   - Describe the role of Azure IoT Central in the context of cloud-native applications.
-  - Set up Azure IoT Central.
-  - Process IoT telemetry by using Azure IoT Central.
+  - Set up Azure IoT Central applications.
+  - Process and analyze IoT telemetry by Azure IoT Central.
 prerequisites: | 
   - Basic understanding of cloud computing
   - Basic familiarity with Azure
