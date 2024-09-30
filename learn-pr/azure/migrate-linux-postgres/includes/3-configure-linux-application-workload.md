@@ -1,78 +1,174 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Introduction
 
-    Goal: briefly summarize the key skill this unit will teach
+In this module, you will:
 
-    Heading: none
+- Configure a Linux application workload to connect to an Azure Database for PostgreSQL using a system-assigned managed identity.
+- Connect to the Azure Virtual Machine using the Azure CLI.
+- Install the necessary tools.
+- Connect to the PostgreSQL server using `psql`.
+- Clone the repository containing the sample application.
+- Run the application and confirm it can connect to the PostgreSQL server using the managed identity.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Get the Currently Logged-In User and the VM ID
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+```bash
+USER_ID=$(az ad signed-in-user show --query id --output tsv)
+VM_ID=$(az vm show --resource-group 240900-linux-postgres --name vm-1 --query id --output tsv)
+```
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Assign the 'Virtual Machine Administrator Login' role to the user for the VM
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+```bash
+az role assignment create \
+    --assignee $USER_ID \
+    --scope $VM_ID \
+    --role "Virtual Machine Administrator Login"
+```
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Connect to the Azure Virtual Machine Using the Azure CLI
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```bash
+az ssh vm --resource-group 240900-linux-postgres --name vm-1
+```
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Install psql and Go (golang) on the Virtual Machine
 
-    Goal: State concisely what's covered in this unit
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```bash
+sudo apt-get update
+sudo apt-get install -y postgresql-client golang-go
+```
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+## Confirm the version of psql
+    
+```bash
+psql --version
+```
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+## Install the Azure CLI on the Virtual Machine
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
 
-    Heading: none
--->
-TODO: add a visual element
+## Login to the Azure CLI using the System Assigned Managed Identity
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+```bash
+az login --identity
+```
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+You should see output as follows:
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+```
+$ az login --identity
+[
+  {
+    "environmentName": "AzureCloud",
+    "homeTenantId": "b4c72be8-cae1-4584-be77-62b1e94ad0dc",
+    "id": "57039e18-c12e-4c87-a3e8-bf497991699d",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "CloudNative",
+    "state": "Enabled",
+    "tenantId": "b4c72be8-cae1-4584-be77-62b1e94ad0dc",
+    "user": {
+      "assignedIdentityInfo": "MSI",
+      "name": "systemAssignedIdentity",
+      "type": "servicePrincipal"
+    }
+  }
+]
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+## Connect to the PostgreSQL server using bash and psql
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Run the following commands on the remote machine
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+```bash
+MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
+export AZURE_CLIENT_ID=$(az identity show --resource-group 240900-linux-postgres --name $MANAGED_IDENTITY_NAME --query "clientId" -o tsv)
+PG_NAME=$(az postgres flexible-server list --resource-group 240900-linux-postgres --query "[0].name" -o tsv)
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+# set psql environment variables
+export PGHOST="${PG_NAME}.privatelink.postgres.database.azure.com"
+export PGPASSWORD=$(curl -s "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fossrdbms-aad.database.windows.net&client_id=${AZURE_CLIENT_ID}" -H Metadata:true | jq -r .access_token)
+export PGUSER=$MANAGED_IDENTITY_NAME
+export PGDATABASE=postgres
 
-<!-- Do not add a unit summary or references/links -->
+# login using psql
+psql
+```
+
+Once connected you should see the below output. Type the `\q` command to exit.
+
+```
+$ psql
+psql (16.4 (Ubuntu 16.4-0ubuntu0.24.04.2))
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off)
+Type "help" for help.
+
+postgres=> \q
+$ 
+```
+
+## Clone the sample application, Tailwind Traders (Go), to the machine
+
+Run the following commands on the remote machine
+
+```bash
+git clone https://github.com/asw101/tt-go.git
+```
+
+Change to the application directory
+
+```bash
+cd tt-go/app/
+```
+
+Run the application
+
+```bash
+go run main.go
+```
+
+The output should be similar to:
+
+```
+$ go run main.go
+go: downloading github.com/magefile/mage v1.15.0
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/azcore v1.14.0
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.7.0
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/internal v1.10.0
+go: downloading github.com/AzureAD/microsoft-authentication-library-for-go v1.2.2
+go: downloading golang.org/x/crypto v0.26.0
+go: downloading golang.org/x/net v0.28.0
+go: downloading github.com/google/uuid v1.6.0
+go: downloading github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c
+go: downloading github.com/kylelemons/godebug v1.1.0
+go: downloading github.com/golang-jwt/jwt/v5 v5.2.1
+go: downloading golang.org/x/text v0.17.0
+Targets:
+  app:sql      sets up the environment for connecting to a PostgreSQL database
+  app:token    gets a token using `azidentity.NewDefaultAzureCredential`
+```
+
+## Connect to the PostgreSQL server using Tailwind Trader (Go)'s `app:token` target
+
+```bash
+MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
+export AZURE_CLIENT_ID=$(az identity show --resource-group 240900-linux-postgres --name $MANAGED_IDENTITY_NAME --query "clientId" -o tsv)
+PG_NAME=$(az postgres flexible-server list --resource-group 240900-linux-postgres --query "[0].name" -o tsv)
+
+# psql
+export PGHOST="${PG_NAME}.privatelink.postgres.database.azure.com"
+export PGPASSWORD=$(go run main.go app:token)
+export PGUSER=$MANAGED_IDENTITY_NAME
+export PGDATABASE=postgres
+
+# login using psql
+psql
+```
+
+## Resources
+- [Sign in to a Linux virtual machine in Azure using Azure AD](https://learn.microsoft.com/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
+- [Connect to an Azure Database for PostgreSQL server using a managed identity](https://learn.microsoft.com/azure/postgresql/single-server/how-to-connect-with-managed-identity)

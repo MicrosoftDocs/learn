@@ -1,78 +1,263 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Introduction
 
-    Goal: briefly summarize the key skill this unit will teach
+In this module, you will:
 
-    Heading: none
+- Deploy an Azure Blob Storage account using a Bicep template.
+- Create a Blob Storage container and upload a file.
+- Connect to the Azure Virtual Machine using the Azure CLI.
+- Download the file from the storage account.
+- Connect to the PostgreSQL server using `psql` and import a SQL file.
+- Migrate images to the Azure Blob Storage account.
+- Run the application interactively via the command line.
+- Confirm the application runs correctly.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Deploy a storage account using deploy/vm-postgres.bicep
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+```bash
+az deployment group create \
+    --resource-group 240900-linux-postgres \
+    --template-file deploy/vm-postgres.bicep \
+    --parameters \
+        deployVm=false \
+        deployPostgres=false \
+        deployStorage=true
+```
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Add the current user to the 'Storage Blob Data Owner' role
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+```bash
+STORAGE_ACCOUNT_ID=$(az storage account list \
+    --resource-group 240900-linux-postgres \
+    --query '[0].id' \
+    -o tsv)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+USER_ID=$(az ad signed-in-user show \
+    --query id \
+    -o tsv)
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+az role assignment create \
+    --role "Storage Blob Data Owner" \
+    --assignee $USER_ID \
+    --scope $STORAGE_ACCOUNT_ID
+```
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Create a container called 'container1' in the storage account
 
-    Goal: State concisely what's covered in this unit
+```bash
+STORAGE_ACCOUNT_NAME=$(az storage account list \
+    --resource-group 240900-linux-postgres \
+    --query '[0].name' \
+    -o tsv)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+echo "STORAGE_ACCOUNT_NAME: $STORAGE_ACCOUNT_NAME"
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+az storage container create \
+    --account-name $STORAGE_ACCOUNT_NAME \
+    --auth-mode login \
+    --name container1
+```
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+## Upload app/data/postgres/tailwind.sql to the storage account
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+```bash
+az storage blob upload \
+    --account-name $STORAGE_ACCOUNT_NAME \
+    --auth-mode login \
+    --container-name container1 \
+    --file app/data/postgres/tailwind.sql \
+    --name tailwind.sql
+```
 
-    Heading: none
--->
-TODO: add a visual element
+## Connect to azure virtual machine using the az ssh command
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+```bash
+az ssh vm \
+    --resource-group 240900-linux-postgres \
+    --name vm-1
+```
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+## Download the tailwind.sql file from the storage account
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+```bash
+az storage blob download \
+    --account-name $STORAGE_ACCOUNT_NAME \
+    --auth-mode login \
+    --container-name container1 \
+    --file tailwind.sql \
+    --name tailwind.sql
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+### Run the following commands on your local machine
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+```bash
+MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
+export AZURE_CLIENT_ID=$(az identity show --resource-group 240900-linux-postgres --name $MANAGED_IDENTITY_NAME --query "clientId" -o tsv)
+PG_NAME=$(az postgres flexible-server list --resource-group 240900-linux-postgres --query "[0].name" -o tsv)
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+# set psql environment variables
+export PGHOST="${PG_NAME}.privatelink.postgres.database.azure.com"
+export PGPASSWORD=$(curl -s "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fossrdbms-aad.database.windows.net&client_id=${AZURE_CLIENT_ID}" -H Metadata:true | jq -r .access_token)
+export PGUSER=$MANAGED_IDENTITY_NAME
+export PGDATABASE=postgres
+```
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+## Import tailwind.sql using psql
 
-<!-- Do not add a unit summary or references/links -->
+```bash
+psql -f tailwind.sql
+```
+
+## Connect to the postgres server to confirm our import was successful
+
+```
+psql
+```
+
+## List the tables
+```bash
+\dt
+```
+
+the output should be as follows:
+
+```
+postgres=> \dt
+                           List of relations
+ Schema |         Name         | Type  |             Owner              
+--------+----------------------+-------+--------------------------------
+ public | cart_items           | table | 240900-linux-postgres-identity
+ public | checkouts            | table | 240900-linux-postgres-identity
+ public | collections          | table | 240900-linux-postgres-identity
+ public | collections_products | table | 240900-linux-postgres-identity
+ public | customers            | table | 240900-linux-postgres-identity
+ public | delivery_methods     | table | 240900-linux-postgres-identity
+ public | product_types        | table | 240900-linux-postgres-identity
+ public | products             | table | 240900-linux-postgres-identity
+ public | shipment_items       | table | 240900-linux-postgres-identity
+ public | shipments            | table | 240900-linux-postgres-identity
+ public | store_inventory      | table | 240900-linux-postgres-identity
+ public | stores               | table | 240900-linux-postgres-identity
+ public | suppliers            | table | 240900-linux-postgres-identity
+ public | supply_orders        | table | 240900-linux-postgres-identity
+(14 rows)
+```
+
+## Run a sql query to list the tables
+```
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public';
+```
+
+output should be as follows:
+
+```
+postgres=> SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public';
+      table_name      
+----------------------
+ collections
+ stores
+ customers
+ cart_items
+ product_types
+ products
+ suppliers
+ collections_products
+ checkouts
+ shipments
+ delivery_methods
+ shipment_items
+ store_inventory
+ supply_orders
+(14 rows)
+```
+
+## Set expanded mode to on and select from the products table
+
+```
+postgres=> \x
+Expanded display is on.
+postgres=> select * from products;
+```
+
+You should see a listing of products:
+
+
+```
+id                 | 1
+product_type_id    | 1
+supplier_id        | 2
+sku                | brush_cleaner
+name               | Meltdown Brush Cleaner
+price              | 12.99
+description        | We all leave our brushes sitting around, full of old dry paint. Don't worry! The Meltdown Brush Cleaner can remove just about anything.
+image              | brush_cleaner.jpg
+digital            | f
+unit_description   | 1 - 10oz Jar
+package_dimensions | 4x8x2
+weight_in_pounds   | 3.2
+reorder_amount     | 10
+status             | in-stock
+requires_shipping  | t
+warehouse_location | Zone 1, Shelf 12, Slot 6
+created_at         | ...
+updated_at         | ...
+...
+```
+
+## Exit psql
+
+```
+\q
+```
+
+## Migrate images to the storage account into a subfolder images/
+
+```bash
+az storage blob upload-batch \
+    --account-name $STORAGE_ACCOUNT_NAME \
+    --auth-mode login \
+    --overwrite \
+    --destination container1/images \
+    --source app/data/images
+```
+
+output should be as follows:
+
+```
+[
+  {
+    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/wrench_set.jpg",
+    "Last Modified": "...",
+    "Type": "image/jpeg",
+    "eTag": "\"0x8DCE0CA938AF41B\""
+  },
+  {
+    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/planer.jpg",
+    "Last Modified": "...",
+    "Type": "image/jpeg",
+    "eTag": "\"0x8DCE0CA939DF18B\""
+  },
+  ...
+]
+```
+
+## Run our application interactively via the command line
+
+change to the directory that contains our application
+
+```bash
+cd tt-go/app/local
+```
+
+run the application interactively from the command line
+
+```bash
+go run main.go app:serve
+```
+
+## Resources
+- [Azure Blob Storage Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/)
+- [Azure Role-Based Access Control (RBAC) Documentation](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)

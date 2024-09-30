@@ -1,62 +1,31 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Introduction 
 
-    Goal: orient the learner to the area covered in this module
+In this Learning Path, you will be guided through a series of modules that enable you to migrate an existing workload from an on-premises or cloud environment to Azure. This will cover the migration of the compute to an Azure Virtual Machine and the data to Azure Database for PostgreSQL. The application will be a cloud-agnostic sample application that is a stand-in for any real-world application prepared for migration to the cloud. You will explore the value of shifting from a self-hosted environment, such as from a self-managed database to a fully-managed database offering, as well as from bare-metal compute to cloud-hosted virtual machines with the benefit of a full suite of security and identity controls provided by Azure, such as Microsoft Entra ID. You will also explore the benefits of managing resources in the cloud from a cost and performance perspective. You will understand how to precisely calculate and manage costs prior to and following deployment, as well as how to optimize performance from both a compute and data perspective. 
 
-    Heading: none
+## Our workload 
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+Our workload is a cloud-agnostic application written in Go and/or Python that works with data inside PostgreSQL. 
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+Our data is an open dataset that will enable you to explore the power of our Postgres platform and related extensions. 
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+Though this application could easily be run within a container, the stakeholders have not chosen to do so at this stage. Therefore, building a container, deploying to a container platform, or using container orchestration are out of scope at this stage, but this may be a logical future step. 
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+The application and its associated data have been provided for you in the GitHub repository associated with this Learning Path. You will understand how to prepare your application and export your data to reach a similar state to this sample application, or even use it as a template for a green-field deployment. 
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+## What is the value of migrating this workload? 
 
-    Heading: "## Example scenario"
+As we consider this migration effort, you may wonder about the benefits of migrating this workload to the cloud. There are many, but some of the value propositions include:
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
+*Security and compliance.* When you bring compute and data workloads to the cloud, they benefit from increased security capabilities. Virtual Machines in Azure benefit from a vast array of security and compliance features, including firewalls, vnets, JIT, encryption, RBAC, and confidential computing. Azure Database for PostgreSQL supports many similar features as well, such as [encryption with customer-managed keys](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-data-encryption), [compliance certifications](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-compliance), and support for [Microsoft Defender for Cloud](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-security#microsoft-defender-for-cloud-support).  
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
+*Secure connections between your Virtual Machines and Databases.* As we integrate these two services, it is critical that they can connect to each other in a secure manner that reduces the risk of data loss. [Microsoft Entra ID authentication](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-azure-ad-authentication) enables you to connect to your Azure Database for PostgreSQL without traditional passwords, but instead using Entra ID identities for both your application workload (Managed Identity) as well as users and administrators via their Entra ID user accounts. This mitigates the risk of long-lived credentials being compromised and allowing bad actors to access your data. Entra ID, Managed Identities, and fine-grained Role-Based Access Control (RBAC) can enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege. 
 
-    Optional: a "scenario video" that visualizes the scenario
+*Access to high-performance and cost-effective compute across multiple regions.* Whether you need cost-effective compute for test-dev or the most recent, highest performance, or largest compute types available in the cloud today, Azure has you covered with a broad selection of compute options for both [Virtual Machines](https://learn.microsoft.com/azure/virtual-machines/sizes/overview) and [Azure Database for PostgreSQL](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-compute), which can be scaled up and down as needed, and are available across [over 60 regions](https://azure.microsoft.com/explore/global-infrastructure/products-by-region) in Azure. Compute can be scaled vertically as well as horizontally, including via [database replicas](https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-read-replicas) and [distributed options](https://learn.microsoft.com/azure/cosmos-db/postgresql/introduction) such as Azure Cosmos DB for PostgreSQL, a managed service for PostgreSQL extended with the Citus open source superpower of distributed tables. This compute is paired with some of the [fastest cloud storage options](https://learn.microsoft.com/azure/virtual-machines/disks-types) to tailor your compute and storage I/O requirements to your workload. 
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+*Cost management and cost-effectiveness.* You can optimize for cost management and cost-effectiveness on both the Linux and PostgreSQL sides. When compared with on-prem solutions, the cost can often be significantly more tailored and appropriate for your situation. You can right-size your compute in comparison to an on-prem solution. You can also easily manage your entire fleet to optimize for only the compute and storage you need, and pay only for what you use in a utility billing model. Utility billing enables customers to handle periods of high demand without having to pay the cost of over-provisioning and allows migration to faster and more efficient generations of compute as they become available. 
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+*Day 2 operations.* Operations across the board become more efficient through automation, the ability to upgrade easily with potentially zero downtime, monitoring, security patching, backups, and disaster recovery. Additionally, you can manage your infrastructure end-to-end with industry-standard toolchains.
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+## Resources
+- [Create a Free Azure account](https://azure.microsoft.com/free/)
+- [How to Install the Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)

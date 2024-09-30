@@ -1,78 +1,77 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## Introduction
 
-    Goal: briefly summarize the key skill this unit will teach
+In the following sections we will guide you through the creation of the compute resources that will host your application within Azure.
 
-    Heading: none
+There are multiple methods to deploy infrastructure in Azure, including the Azure Portal, Azure CLI, and Infrastructure as Code templates including Bicep and Terraform.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+In this module we will show you how to deploy a pre-configured [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+The key resources you will deploy are:
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- Virtual Machine (VM) running Linux (Ubuntu 24.04 LTS).
+- Azure Database for Postgres running Postgres 16
+- A Managed Identity to enable secure access from the VM to the database.
+- Role-Based Access Controls (RBAC) including roles to access the database as an administrator, and more restrictive roles for the application itself.
+- A Virtual Network for both the VM and database.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+As this is a test/dev workload, and we are looking to keep things both cost-effective and performant, we have chosen the following configuration for you:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+The VM SKU is a Standard D2s v4 (2 vcpus, 8 GiB memory). P10 Premium Solid State Disk (SSD) with 3200 max IOPs. with 128Gib storage. It has an attached P10 128GiB Premium SSD with 500 IOPs for the OS disk which can be upgraded to match the VMs IOPs as required.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+The database SKU is a General Purpose, D2ds_v4, 2 vCores, 8 GiB RAM with 3200 max IOPs. It has a P10 128GiB Premium SSD with 500 IOPs which can be upgraded to match the compute IOPs as required.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+At the completion of the module you will likely delete these resources to save cost. However, you can also turn both the VM and database off when not in use to save compute cost, and pay only for the storage used. This workload can also be scaled up as needed.
 
-    Goal: State concisely what's covered in this unit
+The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/) which is "an initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like". These modules are maintained by Microsoft and encapsulate many best practices for deploying resources in Azure. 
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Azure Subscription and Azure CLI 
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+This module requires Azure CLI version 2.0.30 or later. Run `az --version` to find the version. If you need to install or upgrade, see [Install Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+## Log in to Azure using the CLI
 
-    Heading: none
--->
-TODO: add a visual element
+In order to run commands in Azure using the CLI, you need to log in first. Log in using the `az login` command.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+## Create a resource group
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+A resource group is a container for related resources. All resources must be placed in a resource group. The [az group create](/cli/azure/group) command creates a resource group.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+```bash
+az group create \
+    --name 240900-linux-postgres \
+    --location westus2
+```
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+## Deploy the Bicep template using the Azure CLI
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+The bicep file we are using to deploy the compute resources is located at [deploy/vm-postgres.bicep](./deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+If you will run this command on your local machine, first clone the example repo to your machine.
 
-<!-- Do not add a unit summary or references/links -->
+```bash
+git clone https://github.com/Azure-Samples/linux-postgres-migration.git
+```
+
+Then navigate to the linux-postgres-migration directory:
+
+```bash
+cd linux-postgres-migration
+```
+
+Run the following az CLI command to deploy the bicep template.
+
+```bash
+az deployment group create \
+    --resource-group 240900-linux-postgres \
+    --template-file deploy/vm-postgres.bicep
+```
+
+## Resources
+- [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
+- [Install Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
+- [Bicep Documentation](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+- [Create a resource group using Azure CLI](https://learn.microsoft.com/cli/azure/group)
