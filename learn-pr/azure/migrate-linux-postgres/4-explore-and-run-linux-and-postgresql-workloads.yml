@@ -8,7 +8,6 @@ metadata:
   author: asw101
   ms.author: aawislan
   ms.topic: unit
-  ms.service: virtual-machines-linux
 durationInMinutes: 45
 content: |
   [!include[](includes/4-explore-and-run-linux-and-postgresql-workloads.md)]
