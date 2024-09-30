@@ -97,7 +97,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --location "eastus"
     ```
 
-1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
+1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az deployment group create`](/cli/azure/deployment/group#az-deployment-group-create).
 
     ```azurecli
     az deployment group create \
