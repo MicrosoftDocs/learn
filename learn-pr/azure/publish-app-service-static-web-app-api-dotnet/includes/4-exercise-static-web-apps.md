@@ -67,8 +67,6 @@ After your GitHub Action finishes building and publishing your web app, you can 
 
 Select the *URL* link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Screenshot of the Azure Static Web Apps overview page.":::
-
 Your app is now globally available, but still says *Loading data* because there's no data or API yet. You'll add the API for your web app in the next section.
 
 Congratulations! You deployed your first app to Azure Static Web Apps!

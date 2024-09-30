@@ -11,7 +11,7 @@ In this unit, you'll learn how to define a resource in a Bicep template, how res
 The main thing you'll do with Bicep templates is define your Azure resources. Here's an example of what a typical resource definition looks like in Bicep. This example creates a storage account named `toylaunchstorage`.
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   name: 'toylaunchstorage'
   location: 'westus3'
   sku: {
@@ -50,7 +50,7 @@ A Bicep template usually includes several resources. Often, you need a resource 
 You'll need to deploy an App Service app for the template that will help launch the toy product, but to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
 
 ```bicep
-resource appServicePlan 'Microsoft.Web/serverFarms@2022-03-01' = {
+resource appServicePlan 'Microsoft.Web/serverFarms@2023-12-01' = {
   name: 'toy-product-launch-plan'
   location: 'westus3'
   sku: {
@@ -64,7 +64,7 @@ This resource definition is telling Bicep you want to deploy an App Service plan
 Now that you've declared the App Service plan, the next step is to declare the app:
 
 ```bicep
-resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2023-12-01' = {
   name: 'toy-product-launch-1'
   location: 'westus3'
   properties: {
