@@ -1,5 +1,3 @@
-
-
 In this exercise, you modify the `btnSave_Click` method in your `WPF/MainWindow.xaml.cs` file to use C#'s `async` and `await` functionality. `Async` and `await` are keywords in C# that allow developers to write asynchronous code that is easier to read and write than traditional asynchronous code.
 
 In the discussion of threads and Tasks, to avoid UI freezes, you made your UI code asynchronous using C# Tasks. Unlike a Task, however, an `async` method runs synchronously. When an `async` method reaches its first `await` expression, it suspends the method until the awaited task is complete.

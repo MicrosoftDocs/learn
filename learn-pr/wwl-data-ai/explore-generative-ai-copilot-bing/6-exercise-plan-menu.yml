@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-generative-ai-copilot-bing.exercise-plan-menu
 title: 'Exercise: Plan the menu'
 metadata:
-  title: "Exercise: Plan the menu"
+  title: 'Exercise: Plan the menu'
   description: "Exercise: Plan the menu"
+  ms.date: 09/27/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 04/01/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - copilot-learning-hub
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-plan-menu.md)]

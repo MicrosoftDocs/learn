@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-secure-organization-data
 metadata:
   title: Design solutions for securing an organization's data
   description: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
-  ms.date: 3/14/2023
+  ms.date: 09/25/2024
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module

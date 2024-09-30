@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.implement-endpoint-privilege-management
+title: Implement Endpoint Privilege Management
+metadata:
+  title: Implement Endpoint Privilege Management
+  description: "Implement Endpoint Privilege Management"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-implement-endpoint-privilege-management.md)]
