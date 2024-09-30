@@ -72,14 +72,14 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 1. A few resources have symbolic names that don't reflect the current names of Azure resources:
 
-   ```bicep
-   resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
+   ```
+   resource hostingPlan 'Microsoft.Web/serverfarms@2023-12-01' = {
      // ...
    }
-   resource webSite 'Microsoft.Web/sites@2020-06-01' = {
+   resource webSite 'Microsoft.Web/sites@2023-12-01' = {
      // ...
    }
-   resource msi 'Microsoft.ManagedIdentity/userAssignedIdentities@2018-11-30' = {
+   resource msi 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-07-31-preview' = {
      // ...
    }
    ```
