@@ -29,8 +29,6 @@ In the previous unit, you cloned or downloaded [the repository from GitHub](http
    > [!NOTE]
    > If the command fails to open the appropriate browser window, use this command: `az login --use-device-code`. This device code flow returns a unique code. [Open the device sign-in page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal.
 
-   :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the output of the Windows PowerShell command running the az login command.":::
-
 ## Set variables in PowerShell
 
 1. Set the `$projectname` variable. This value is the base unique name for the Azure resources that you create in this exercise. Extra random characters are appended to the project name. Make sure that your values are enclosed in double quotes.
