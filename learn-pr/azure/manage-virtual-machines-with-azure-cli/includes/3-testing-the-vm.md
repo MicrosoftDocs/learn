@@ -1,4 +1,4 @@
-When you create a virtual machine, it's assigned a public IP address that's reachable over the Internet and a private IP address used within the Azure data center. Both of these values appear in the JSON block the `create` command returns, like the following:
+When you create a virtual machine, it's assigned a public IP address that's reachable over the internet and a private IP address used within the Azure datacenter. Both of these values appear in the JSON block the `create` command returns, like the following:
 
 ```json
 {
@@ -18,9 +18,9 @@ ssh azureuser@<public-ip-address>
 ```
 
 > [!NOTE]
-> We don't need a password because we generated an SSH key pair as part of the VM creation. The first time you shell into the VM, you will receive a prompt regarding the authenticity of the host.
-> 
-> This is because we are attempting to access an IP address directly instead of through a host name. Answering "yes" will save the IP address as a valid host for connection and allow the connection to proceed.
+> We don't need a password because we generated an SSH key pair as part of the VM creation. The first time you shell into the VM, you receive a prompt regarding the authenticity of the host.
+>
+> This is because we are attempting to access an IP address directly instead of through a host name. Answering **yes** saveS the IP address as a valid host for connection and allows the connection to proceed.
 
 ```output
 The authenticity of host '40.83.165.85 (40.83.165.85)' can't be established.
@@ -61,4 +61,4 @@ See "man sudo_root" for details.
 azureuser@SampleVM:~$
 ```
 
-Try a few commands, such as `ps` or `ls` as practice. When you're finished, sign out of the virtual machine by typing `exit` or `logout`.
+Try a few commands, such as `ps` or `ls`, as practice. When you're finished, sign out of the virtual machine by typing `exit` or `logout`.

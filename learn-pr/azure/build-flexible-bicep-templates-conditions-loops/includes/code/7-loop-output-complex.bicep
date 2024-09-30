@@ -4,7 +4,7 @@ param locations array = [
   'eastasia'
 ]
 
-resource storageAccounts 'Microsoft.Storage/storageAccounts@2021-09-01' = [for location in locations: {
+resource storageAccounts 'Microsoft.Storage/storageAccounts@2023-05-01' = [for location in locations: {
   name: 'toy${uniqueString(resourceGroup().id, location)}'
   location: location
   kind: 'StorageV2'
