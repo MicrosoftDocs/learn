@@ -2,7 +2,7 @@
 uid: learn.azure.migrate-linux-postgres
 metadata:
   title: Migrate Linux and PostgreSQL Workloads
-  description: "Migrate Linux and PostgreSQL workloads to Azure using Azure Migrate and Azure Database for PostgreSQL."
+  description: "Migrate Linux and PostgreSQL workloads to Azure using Azure Virtual Machines and Azure Database for PostgreSQL."
   ms.date: 9/16/2024
   author: asw101
   ms.author: aawislan

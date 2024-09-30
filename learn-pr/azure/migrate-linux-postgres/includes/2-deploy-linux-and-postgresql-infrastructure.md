@@ -30,7 +30,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 This module requires Azure CLI version 2.0.30 or later. 
 
-Run the following command to find out your version of Azure CLI:
+Run the below command to find the version:
 
 ```bash
 az --version
