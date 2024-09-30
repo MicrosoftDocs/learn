@@ -79,10 +79,6 @@ az deployment group create \
     --template-file deploy/vm-postgres.bicep
 ```
 
-## Explore in Azure portal
-
-Once your 
-
 ## Resources
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
 - [Install Azure CLI](/cli/azure/install-azure-cli)
