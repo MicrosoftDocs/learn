@@ -6,7 +6,7 @@ In this unit, let's explore Fabric's governance features.
 
 ## What is Microsoft Fabric?
 
-[![A diagram showing the architecture of Microsoft Fabric in a simplified form.](../media/fabric-architecture-1.png)](../media/fabric-architecture-1.png#lightbox)
+[![A diagram showing the architecture of Microsoft Fabric in a simplified form.](../media/fabric-architecture-1.png)](../media/fabric-architecture-1.png)
 
 Fabric is Microsoft's end-to-end analytics and data platform. The Software-as-a-Service (SaaS) platform can store, move, process, ingest, transform, and analyze your data regardless of its size and current format. Because Fabric seamlessly integrates your data, you no longer need to interface solutions from different vendors using diverse protocols. Once you have data in the location and format you need it, advanced business intelligence features can analyze it and generate insights to support your decision making. All Fabric features and tools are supported with AI integration, which accelerates your productivity.
 
