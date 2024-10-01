@@ -412,8 +412,8 @@
       "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
-      "redirect_url": "training/modules/introduction-to-azure-ai-studio",
+      "source_path": "/learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
       "redirect_document_id": false
     },
     {
@@ -421,13 +421,13 @@
       "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/explore-azure-openai/index.yml",
-      "redirect_url": "training/modules/introduction-to-azure-ai-studio",
+      "source_path": "/learn-pr/wwl-data-ai/explore-azure-openai/index.yml",
+      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/achievements/learn.wwl.explore-azure-openai.badge.yml",
-      "redirect_url": "training/modules/introduction-to-azure-ai-studio",
+      "source_path": "/learn-pr/achievements/learn.wwl.explore-azure-openai.badge.yml",
+      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
       "redirect_document_id": false
     },
     {
