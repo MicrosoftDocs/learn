@@ -1,3 +1,10 @@
+
+This module provides an in-depth exploration of designing identity and access management solutions in hybrid and multi-cloud environments. It covers various aspects such as user management, entitlement management, admin management, and credential management.
+
+Imagine you are a cloud architect for a multinational corporation that is transitioning its infrastructure to Azure. You are tasked with designing a robust and secure identity and access management system. The challenge lies in managing identities across different departments, regions, and external partners while ensuring secure access to resources. This module will guide you through the process of designing and implementing an effective identity and access management system in Azure.
+
+## Learning objectives
+
 In this module, you learn how to:
 
 - Design cloud, hybrid and multicloud access strategies

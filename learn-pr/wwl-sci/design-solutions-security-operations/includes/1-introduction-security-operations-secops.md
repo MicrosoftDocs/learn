@@ -1,3 +1,9 @@
+This module covers the topic of designing security operations solutions in hybrid, multicloud, and edge environments, focusing on Microsoft's solutions for cloud security, extended detection and response (XDR), and Security Information and Event Management (SIEM).
+
+Imagine you are a technology leader in a large organization that operates in a hybrid, multicloud, and edge environment. You are facing challenges in managing operations consistently across different cloud providers, which is leading to increased costs and strain on your team. You also need to enhance your organization's security posture by implementing advanced cybersecurity solutions and automating incident response processes. This module will guide you through the process of implementing unified operations and enhancing security using Microsoft's solutions.
+
+## Learning objectives
+
 In this module, you'll learn how to:
 
 - Design security operations capabilities in hybrid and multicloud environments
