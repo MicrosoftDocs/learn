@@ -9,6 +9,8 @@ In this exercise, you:
 
 ## Task 1: Configure and run device simulator
 
+[!INCLUDE [iot-authentication-device-connection-string.md](../../includes/iot-authentication-device-connection-string.md)]
+
 1. On your development machine, create a working folder for this project named **DeviceSimulator**. You create all Visual Studio Code files for this project within this folder.
 
 1. Open Visual Studio Code.

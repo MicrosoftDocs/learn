@@ -1,7 +1,7 @@
-In these exercises, you will use Copilot to streamline your everyday tasks. Whether it's writing fundraising prompts or drafting grant proposals, Copilot will provide contextual suggestions and generate targeted messages to meet your specific needs. Let's dive in and explore the power of Copilot.
+In these exercises, you'll use Copilot to streamline your everyday tasks. Whether it's writing fundraising prompts or drafting grant proposals, Copilot provides contextual suggestions and generates targeted messages to meet your specific needs. Let's dive in and explore the power of Copilot.
 
 >[!NOTE]
-> In the prompt templates below, replace the generic [information in the brackets] with your own to customize the prompt for your specific needs, then ask Copilot to generate a response.
+> In the following prompt templates, replace the generic [information in the brackets] with your own to customize the prompt for your specific needs, then ask Copilot to generate a response.
 >
 > You can revise or expand responses using Copilot’s contextual suggestions, add a follow-up prompt, or explore alternatives to refine your results. Always remember to review and verify the responses for accuracy and appropriateness.
 
@@ -23,7 +23,7 @@ Continue practicing by writing your own prompts for Copilot to assist with the f
 
 ## Write prompts for grant management
 
-Practice using Copilot to help draft and edit grant proposals, increasing efficiency and potentially the success rate. First, edit these prompts to fit your use-case, then ask Copilot to generate a response.
+Practice using Copilot to help draft and edit grant proposals, increasing efficiency and potentially the success rate. First, edit these prompts to fit your use case, then ask Copilot to generate a response.
 
 ```
 What are some donor segments my [cause e.g., family services] nonprofit can approach 
