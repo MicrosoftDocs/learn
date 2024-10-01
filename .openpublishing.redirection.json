@@ -32924,6 +32924,56 @@
       "source_path": "learn-pr/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/2-create-the-azure-storage-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/3-exercise-create-the-azure-storage-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/4-identify-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/5-exercise-identify-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/6-how-to-programmatically-access-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/7-exercise-implement-enqueue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/8-exercise-implement-dequeue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
     }
   ]
 }
