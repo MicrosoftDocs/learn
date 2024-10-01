@@ -5,13 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Publish your repository
   description: Learn how to publish your Git repository to GitHub or Azure Repos.
-  ms.date: 01/23/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
   ms.custom:
     - devx-track-bicep
-  ms.prod: learning-azure
   zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 5
 content: |

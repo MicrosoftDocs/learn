@@ -5,7 +5,7 @@ Azure Stack HCI supports different types of software-based load balancers. This 
 Software-based load balancers provide the following benefits:
 
 - Improve flexibility, resiliency, scalability, and performance.
-- Eliminate common challenges of traditional hardware-based load balancers, like expensive support contracts and disruptive firmware upgrades.
+- Eliminate common challenges of traditional hardware-based load balancers, like expensive support contracts, and disruptive firmware upgrades.
 - Significantly reduce the complexity of setting up highly available deployments.
 
 With Azure Stack HCI Software Load Balancer, the virtual machines (VMs) that host the load-balancing components reside on the same infrastructure as the load-balanced workloads. This configuration means that the load balancers benefit from the characteristics of the underlying platform, including rapid provisioning, with high throughput and low latency intra-cluster network operations.
@@ -14,7 +14,7 @@ With Azure Stack HCI Software Load Balancer, the virtual machines (VMs) that hos
 
 The Azure Stack HCI Software Load Balancer is an Open Systems Interconnection (OSI) model Layer 4 load balancer. Software Load Balancer distributes incoming traffic among virtual network resources in a backend pool according to rules you define. Software Load Balancer offers the following functionality:
 
-- Load balancing of TCP and UDP network traffic that targets Azure Stack HCI from external and internal networks, or *North-South* and *East-West* traffic. These networks include Hyper-V Network Virtualization-based virtual networks and VLAN-based logical networks.
+- Load balancing of Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) network traffic that targets Azure Stack HCI from external and internal networks, or *North-South* and *East-West* traffic. These networks include Hyper-V Network Virtualization-based virtual networks and VLAN-based logical networks.
 - Support for Network Address Translation (NAT) for inbound and outbound traffic.
 - Performance enhancements such as Direct Server Return, host-based health probes, and automatic support for Active-Active mode.
 - Integration with Switch Embedded Teaming (SET) or Single Root Input-Output Virtualization (SR-IOV).

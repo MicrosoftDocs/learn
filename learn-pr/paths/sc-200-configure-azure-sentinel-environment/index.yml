@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/05/2021
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: learning-path
 title: 'SC-200: Configure your Microsoft Sentinel environment'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products

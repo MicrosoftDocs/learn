@@ -24,6 +24,6 @@ The following diagram summarizes the recommended privileged access strategy to c
 
 ![Diagram that shows an end to end approach is required for meaningful security.](../media/end-to-end-approach.png)
 
-Securing privileged access effectively seals off unauthorized pathways completely and leaves a select few authorized access pathways that are protected and closely monitored. This diagram is discussed in more detail in the article, [Privileged Access Strategy](https://learn.microsoft.com/security/privileged-access-workstations/privileged-access-strategy).
+Securing privileged access effectively seals off unauthorized pathways completely and leaves a select few authorized access pathways that are protected and closely monitored. This diagram is discussed in more detail in the article, [Privileged Access Strategy](/security/privileged-access-workstations/privileged-access-strategy).
 
 Building this strategy requires a holistic approach combining multiple technologies to protect and monitor those authorized escalation paths using Zero Trust principles including explicit validation, least privilege, and assume breach. This strategy requires multiple complementary initiatives that establish a holistic technology approach, clear processes, and rigorous operational execution to build and sustain assurances over time.

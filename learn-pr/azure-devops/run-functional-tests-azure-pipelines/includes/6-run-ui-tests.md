@@ -28,7 +28,7 @@ spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net6.0/msedgedriver
 ## Export environment variables
 
 Later in this module, you'll run Selenium tests on Windows Server 2019. The 
-[documentation](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md?azure-portal=true) lists the software that's preinstalled for you.
+[documentation](https://github.com/actions/runner-images/blob/main/images/windows/Windows2019-Readme.md) lists the software that's preinstalled for you.
 
 The section **Selenium Web Drivers** lists the Selenium driver versions that are available for Chrome, Firefox, and Edge. Here's an example:
 

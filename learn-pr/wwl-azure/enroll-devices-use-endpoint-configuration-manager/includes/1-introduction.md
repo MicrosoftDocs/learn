@@ -1,5 +1,3 @@
-
-
 In this module, you'll learn about Microsoft Configuration Manager, a powerful tool for device management. We'll cover the benefits of managing clients using Configuration Manager and guide you through deploying the Configuration Manager client. We'll also explore how to monitor the Configuration Manager client effectively and discuss various approaches for managing devices within the ecosystem.
 
 ### Objectives

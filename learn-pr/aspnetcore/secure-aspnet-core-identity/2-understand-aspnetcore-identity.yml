@@ -3,12 +3,11 @@ uid: learn.secure-aspnet-core-identity.2-understand-aspnetcore-identity
 metadata:
   title: Understand ASP.NET Core Identity
   description: Understand the architecture of ASP.NET Core Identity to add user registration and login capabilities to an ASP.NET Core web UI.
-  ms.date: 05/19/2023
+  ms.date: 08/07/2024
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 title: Understand ASP.NET Core Identity
 durationInMinutes: 5
 content: |

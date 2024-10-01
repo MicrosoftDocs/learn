@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/25/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Large-Scale Data Processing with Azure Data Lake Storage Gen2
 prerequisites: |
   None.
@@ -24,7 +23,7 @@ products:
 - azure-storage
 - azure-virtual-machines
 subjects:
-- data-lake
+- data-storage
 modules:
 - learn.data-ai.introduction-to-azure-data-lake-storage
 - learn.data-ai.upload-data-to-azure-data-lake-storage

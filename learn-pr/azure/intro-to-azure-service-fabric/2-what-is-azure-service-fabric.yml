@@ -4,12 +4,11 @@ title: What is Azure Service Fabric?
 
 metadata:
   title: What is Azure Service Fabric?
-  description: What is Azure Service Fabric?
-  ms.date: 4/11/2022
+  description: Learn how Azure Service Fabric makes it easy to package, deploy, and manage scalable and reliable microservices and containers.
+  ms.date: 01/03/2024
   author: tomvcassidy
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 7
 content: |

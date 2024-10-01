@@ -6,9 +6,8 @@ metadata:
   description: This unit covers how to identify your emotions and calculate an EQ.
   ms.date: 09/03/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 9
 content: |

@@ -7,7 +7,7 @@ metadata:
   ms.date: 9/1/2021
   author: sadadow
   ms.author: saadad
-  ms.topic: interactive-tutorial 
+  ms.topic: module-standard-task-based
   ms.service: learn
 title: Navigate Microsoft Learn for Educators and School Leaders
 summary: |
@@ -37,7 +37,7 @@ roles:
 products:
 - m365	
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
 - learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn

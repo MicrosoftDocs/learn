@@ -4,25 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/28/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 quiz:
   questions:
   - content: What are some scenarios where SQL Server on Azure Virtual Machines is a better option than Azure SQL Managed Instance?
     choices:
-    - content: When you need direct access to the operating system or file system, such as installing third-party or custom agents on the same virtual machine alongside SQL Server.
+    - content: When you need direct access to the operating system or file system, such as installing non-Microsoft or custom agents on the same virtual machine alongside SQL Server.
       isCorrect: true
-      explanation: Correct. SQL Server on Azure Virtual Machines allows for direct access to the operating system or file system, which may be necessary for certain scenarios such as installing third-party or custom agents.
-    - content: When you heavily rely on features that are supported by Azure SQL Managed Instance, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
+      explanation: Correct. SQL Server on Azure Virtual Machines allows for direct access to the operating system or file system, which may be necessary for certain scenarios such as installing non-Microsoft or custom agents.
+    - content: When you heavily rely on features supported by Azure SQL Managed Instance, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
       isCorrect: false
       explanation: Incorrect. This answer describes a scenario where Azure SQL Managed Instance would be a better option than SQL Server on Azure Virtual Machines.
     - content: When your business requires staying at a particular version of Azure SQL Managed Instance.
       isCorrect: false
-      explanation: Incorrect. This answer describes a scenario where Azure SQL Managed Instance would not be a suitable option.
+      explanation: Incorrect. This answer describes a scenario where Azure SQL Managed Instance wouldn't be a suitable option.
   - content: What does the 'how' aspect of SQL Server migration planning encompass?
     choices:
     - content: Recognizing the benefits after the migration is completed.
@@ -44,7 +43,7 @@ quiz:
       explanation: Correct. Using SQL Server Always On availability group (AG) feature can help minimize downtime during migration by extending an on-premises database into the cloud.
     - content: To create a Windows Server Failover Cluster on the source and target.
       isCorrect: false
-      explanation: Incorrect. This is not required when using a distributed AG to migrate a standalone instance.
+      explanation: Incorrect. This isn't required when using a distributed AG to migrate a standalone instance.
   - content: What are the advantages of backing up to block blob instead of page blob in Azure Blob Storage for SQL Server 2016 and later versions?
     choices:
     - content: Block blobs offer safer authorization, improved backup performance, and support for larger database backups compared to page blob.

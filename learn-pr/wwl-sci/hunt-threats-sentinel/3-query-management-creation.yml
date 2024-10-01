@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: Explore creation and management of threat-hunting queries
 durationInMinutes: 10
 content: |

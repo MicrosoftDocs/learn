@@ -3,14 +3,13 @@ uid: learn.secure-your-azure-virtual-machine-disks.4-exercise-encrypt-existing-v
 title: Exercise - Encrypt existing VM disks
 metadata:
   title: Exercise - Encrypt existing VM disks
-  description: Exercise - Encrypt existing VM disks
-  ms.date: 09/24/2018
+  description: Exercise - Encrypt existing virtual machine (VM) disks.
+  ms.date: 09/10/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-  ms.prod: learning-azure
 interactive: powershell
 azureSandbox: true
 durationInMinutes: 20

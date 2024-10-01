@@ -1,4 +1,3 @@
-
 Microsoft Azure is more than just a means to continue business as usual. Azure also enables you to grow your business by:
 
  -  Scaling up your operations to new capacities.

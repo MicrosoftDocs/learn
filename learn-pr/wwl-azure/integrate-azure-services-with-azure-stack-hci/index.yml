@@ -6,7 +6,7 @@ metadata:
   ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
 title: Integrate Azure services with Azure Stack HCI

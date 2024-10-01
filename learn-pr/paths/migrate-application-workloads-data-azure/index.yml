@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/06/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Migrate application workloads and data to Azure
 prerequisites: |
   - Knowledge of cloud and traditional architecture concepts
@@ -33,7 +32,6 @@ subjects:
 - migration
 - cloud-computing
 modules:
-- learn.design-your-migration-to-azure
 - learn.wwl.prepare-onpremises-workloads-migration-azure
 - learn.wwl.migrate-onpremises-workloads-azure
 - learn-wwl.migrate-sql-workloads-azure-sql-databases

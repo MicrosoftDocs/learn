@@ -4,11 +4,10 @@ title: Describe Microsoft Entra Permissions Management
 metadata:
   title: Describe Microsoft Entra Permissions Management
   description: "Describe Microsoft Entra Permissions Management"
-  ms.date: 08/28/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5a-describe-entra-permissions-management.md)]

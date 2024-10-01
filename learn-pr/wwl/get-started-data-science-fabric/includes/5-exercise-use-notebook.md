@@ -5,4 +5,4 @@ Now it's your chance to explore the data science features in Microsoft Fabric.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-fabric-data-science?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259791&azure-portal=true)

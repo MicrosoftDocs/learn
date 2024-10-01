@@ -4,12 +4,12 @@ title: Define GPOs
 metadata:
   title: Define GPOs
   description: "Define GPOs"
-  ms.date: 07/13/2023
+  ms.date: 04/17/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-define-gpos.md)]

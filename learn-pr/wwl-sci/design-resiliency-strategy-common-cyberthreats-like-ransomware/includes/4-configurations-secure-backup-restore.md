@@ -1,97 +1,68 @@
-Azure Backup backs up the data, machine state, and workloads running on on-premises machines and Azure virtual machine (VM) instances. There are a number of Azure Backup scenarios.
+## Business continuity and disaster recovery
 
-## How does Azure Backup work?
+Organization and enterprise application workloads have recovery time objective (RTO) and recovery point objective (RPO) requirements. Effective business continuity and disaster recovery (BCDR) design provides platform-level capabilities that meet these requirements. To design BCDR capabilities, capture platform disaster recovery (DR) requirements.
 
-![Diagram showing the general architecture of Azure Backup.](../media/azure-backup-overview.png)
+### Design considerations
 
-You can back up machines and data by using a number of methods:
+Consider the following factors when designing BCDR for application workloads:
 
-- **Back up on-premises machines**:
-  - You can back up on-premises Windows machines directly to Azure by using the Azure Backup Microsoft Azure Recovery Services (MARS) agent. Linux machines aren't supported.
-  - You can back up on-premises machines to a backup server - either System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS). You can then back up the backup server to a Recovery Services vault in Azure.
+- Application and data availability requirements:
+  - RTO and RPO requirements for each workload.
+  - Support for active-active and active-passive availability patterns.
 
-- **Back up Azure VMs**:
-  - You can back up Azure VMs directly. Azure Backup installs a backup extension to the Azure VM agent that's running on the VM. This extension backs up the entire VM.
-  - You can back up specific files and folders on the Azure VM by running the MARS agent.
-  - You can back up Azure VMs to the MABS that's running in Azure, and you can then back up the MABS to a Recovery Services vault.
+- BCDR as a service for platform-as-a-service (PaaS) services:
+  - Native DR and high-availability (HA) feature support.
+  - Geo-replication and DR capabilities for PaaS services.
 
-![Diagram showing backup architecture for Azure VMs.](../media/backup-architecture.png)
+- Support for multiregion deployments for failover, with component proximity for performance.
 
-## Hybrid backup supported options
+- Application operations with reduced functionality or degraded performance during an outage.
 
-![Diagram showing backup architecture for on-premises machines.](../media/architecture-on-premises.png)
+- Workload suitability for Availability Zones or availability sets:
+  - Data sharing and dependencies between zones.
+  - Availability Zones compared to availability sets impact on update domains.
+  - Percentage of workloads that can be under maintenance simultaneously.
+  - Availability Zones support for specific virtual machine (VM) stock-keeping units (SKUs). For example, Azure Ultra Disk Storage requires using Availability Zones.
 
-Here's what's supported if you want to back up on-premises machines:
+- Consistent backups for applications and data:
+  - VM snapshots.
+  - Azure Backup Recovery Services vaults.
+  - Subscription limits restricting the number of Recovery Services vaults and the size of each vault.
 
-**Machine** | **What's backed up** | **Location** | **Features**
---- | --- | --- | ---
-**Direct backup of Windows machine with MARS agent** | - Files, folders <br><br> - System state | Back up to Recovery Services vault. | - Back up three times a day<br/><br/> - Back up once a day. <br><br> No app-aware backup<br/><br/> Restore file, folder, volume
-**Direct backup of Linux machine with MARS agent** | Backup not supported
-**Back up to DPM** | Files, folders, volumes, system state, app data | Back up to local DPM storage. DPM then backs up to vault. | App-aware snapshots<br/><br/> Full granularity for backup and recovery<br/><br/> Linux supported for VMs (Hyper-V/VMware)<br/><br/> Oracle not supported
-**Back up to MABS** | Files, folders, volumes, system state, app data | Back up to MABS local storage. MABS then backs up to the vault. | App-aware snapshots<br/><br/> Full granularity for backup and recovery<br/><br/> Linux supported for VMs (Hyper-V/VMware)<br/><br/> Oracle not supported
+- Network connectivity if a failover occurs:
+  - Bandwidth capacity planning for Azure ExpressRoute.
+  - Traffic routing during a regional, zonal, or network outage.
 
-## Where is data backed up?
+- Planned and unplanned failovers:
+  - IP address consistency requirements, and the potential need to maintain IP addresses after failover and failback.
+  - Maintaining engineering DevOps capabilities.
+  - Azure Key Vault DR for application keys, certificates, and secrets.
 
-Azure Backup stores backed-up data in vaults - Recovery Services vaults and Backup vaults. A vault is an online-storage entity in Azure that's used to hold data, such as backup copies, recovery points, and backup policies.
+- Data residency:
+  - Understand the in-country/region guidance for data residency that specifies whether data should be kept within country or regional borders. This guidance affects your design for cross-region replication.
+  - Azure regions that reside within the same geography as their enabled set can help with cross-region replication to meet data residency requirements such as tax and law enforcement requirements. For more information, see [Azure cross-region replication](/azure/reliability/cross-region-replication-azure).
 
-Vaults have the following features:
 
-- Vaults make it easy to organize your backup data, while minimizing management overhead.
-- You can monitor backed-up items in a vault, including Azure VMs and on-premises machines.
-- You can manage vault access with Azure role-based access control (Azure RBAC).
-- You specify how data in the vault is replicated for redundancy:
-  - **Locally redundant storage (LRS)**: To protect your data against server rack and drive failures, you can use LRS. LRS replicates your data three times within a single data center in the primary region. LRS provides at least 99.999999999% (11 nines) durability of objects over a given year.
-  - **Geo-redundant storage (GRS)**: To protect against region-wide outages, you can use GRS. GRS replicates your data to a secondary region. 
-  - **Zone-redundant storage (ZRS)**: replicates your data in availability zones, guaranteeing data residency and resiliency in the same region.
-  - By default, Recovery Services vaults use GRS.
+### Design recommendations
 
-Recovery Services vaults have the following additional features:
+The following design practices support BCDR for application workloads:
 
-- In each Azure subscription, you can create up to 500 vaults.
+- Employ Azure Site Recovery for Azure-to-Azure VM DR scenarios.
 
-## Backup agents
+  Site Recovery uses real-time replication and recovery automation to replicate workloads across regions. Built-in platform capabilities for VM workloads meet low RPO and RTO requirements. You can use Site Recovery to run recovery drills without affecting production workloads. You can also use Azure Policy to enable replication and to audit VM protection.
 
-Azure Backup provides different backup agents, depending on what type of machine is being backed up:
+- Use native PaaS DR capabilities.
 
-**Agent** | **Details**
---- | ---
-**MARS agent** | - Runs on individual on-premises Windows Server machines to back up files, folders, and the system state.<br><br>- Runs on Azure VMs to back up files, folders, and the system state.<br><br>- Runs on DPM/MABS servers to back up the DPM/MABS local storage disk to Azure.
-**Azure VM extension** | Runs on Azure VMs to back them up to a vault.
+  Built-in PaaS features simplify both design and deployment automation for replication and failover in workload architectures. Organizations that define service standards can also audit and enforce the service configuration through Azure Policy.
 
-## Backup types
+- Use Azure-native backup capabilities.
 
-The following table explains the different types of backups and when they're used:
+  Azure Backup and PaaS-native backup features remove the need for third-party backup software and infrastructure. As with other native features, you can set, audit, and enforce backup configurations with Azure Policy to ensure compliance with organization requirements.
 
-**Backup type** | **Details** | **Usage**
---- | --- | ---
-**Full** | A full backup contains the entire data source. Takes more network bandwidth than differential or incremental backups. | Used for initial backup.
-**Differential** |  A differential backup stores the blocks that changed since the initial full backup. Uses a smaller amount of network and storage, and doesn't keep redundant copies of unchanged data.<br/><br/> Inefficient because data blocks that are unchanged between later backups are transferred and stored. | Not used by Azure Backup.
-**Incremental** | An incremental backup stores only the blocks of data that changed since the previous backup. High storage and network efficiency. <br/><br/> With incremental backup, there's no need to supplement with full backups. | Used by DPM/MABS for disk backups, and used in all backups to Azure. Not used for SQL Server backup.
+- Use multiple regions and peering locations for ExpressRoute connectivity.
 
-## Advanced backup configuration details
+  A redundant hybrid network architecture can help ensure uninterrupted cross-premises connectivity if an outage affects an Azure region or peering provider location.
 
-To help you protect your backup data and meet the security needs of your business, Azure Backup provides confidentiality, integrity, and availability assurances against deliberate attacks and abuse of your valuable data and systems. Consider the following security guidelines for your Azure Backup solution:
+- Avoid using overlapping IP address ranges in production and DR networks.
 
-### Authentication and authorization using Azure role-based access control (Azure RBAC)
-
-- Azure role-based access control (Azure RBAC) enables fine-grained access management, segregation of  duties within your team and granting only the amount of access to users necessary to perform their jobs.
-
-- If you’ve multiple workloads to back up (such as Azure VMs, SQL databases, and PostgreSQL databases) and you've multiple stakeholders to manage those backups, it is important to segregate their responsibilities so that user has access to only those resources they’re responsible for. Azure role-based access control (Azure RBAC) enables granular access management, segregation of duties within your team, and granting only the types of access to users necessary to perform their jobs.
-
-- You can also segregate the duties by providing minimum required access to perform a particular task. For example, a person responsible for monitoring the workloads shouldn't have access to modify the backup policy or delete the backup items. Azure Backup provides three built-in roles to control backup management operations: Backup contributors, operators, and readers. Learn more here.
-
-- Azure role-based access control (Azure RBAC) also provides the flexibility to build Custom Roles based on your individual requirements. If you’re unsure about the types of roles recommended for specific operation, you can utilize the built-in roles provided by Azure role-based access control (Azure RBAC) and get started.
-
-  The following diagram explains about how different Azure built-in roles work:
-
-    ![Diagram explains about how different Azure built-in roles work.](../media/different-azure-built-in-roles-actions.png)
-
-  - In the above diagram, _User2_ and _User3_ are Backup Readers. Therefore, they have the permission to only monitor the backups and view the backup services.
-
-  - In terms of the scope of the access,
-
-    - _User2_ can access only the Resources of Subscription1, and User3 can access only the Resources of Subscription2. 
-    - _User4_ is a Backup Operator. It has the permission to enable backup, trigger on-demand backup, trigger restores, along with the capabilities of a Backup Reader. However, in this scenario, its scope is limited only to Subscription2. 
-    - _User1_ is a Backup Contributor. It has the permission to create vaults, create/modify/delete backup policies, and stop backups, along with the capabilities of a Backup Operator. However, in this scenario, its scope is limited only to _Subscription1_.
-
-- Storage accounts used by Recovery Services vaults are isolated and can't be accessed by users for any malicious purposes. The access is only allowed through Azure Backup management operations, such as restore.
+  Production and DR networks that have overlapping IP addresses require a failover process that can complicate and delay application failover. When possible, plan for a BCDR network architecture that provides concurrent connectivity to all sites.

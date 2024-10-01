@@ -4,10 +4,11 @@ metadata:
   moduleType: standard
   title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
   description: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
-  ms.date: 08/14/2023
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
+  manager: femila
+  ms.date: 08/06/2024
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: module
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
 title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI

@@ -37,7 +37,7 @@ The following table describes the five available tabs on the Access control (IAM
     Check access
   :::column-end:::
   :::column:::
-    You can use the links on the **Check access** tab to add a role assignment on the resource, review role assignments, and view deny assignments. You can also search for specific Azure AD security principals such as users and groups, and determine the access levels that they have on the resource. Learn more at [Quickstart: View the access a user has to Azure resources](https://aka.ms/check-access?azure-portal=true).
+    You can use the links on the **Check access** tab to add a role assignment on the resource, review role assignments, and view deny assignments. You can also search for specific Microsoft Entra security principals such as users and groups, and determine the access levels that they have on the resource. Learn more at [Quickstart: View the access a user has to Azure resources](https://aka.ms/check-access?azure-portal=true).
   :::column-end:::
 :::row-end:::
 :::row:::

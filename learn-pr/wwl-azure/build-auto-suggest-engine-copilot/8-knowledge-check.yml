@@ -3,12 +3,13 @@ uid: learn.wwl.build-auto-suggest-engine-copilot.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/22/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
+  ms.date: 03/19/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -29,7 +30,7 @@ quiz:
     - content: "It can replace the need for programmers in the software development process."
       isCorrect: false
       explanation: "Incorrect. Copilot can assist with code generation, but it can't replace the need for programmers."
-    - content: "It may generate code that doesn't align perfectly with the desired logic."
+    - content: "It might generate code that doesn't align perfectly with the desired logic."
       isCorrect: true
       explanation: "Correct! While Copilot can assist with code generation, its suggestions might not always precisely match the intended logic or design."
     - content: "It can predict the exact user requirements for complex projects."

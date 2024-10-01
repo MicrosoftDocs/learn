@@ -4,11 +4,10 @@ title: Exercise - Set up a DSC and configure a desired state
 metadata:
   title: Exercise - Set up a DSC and configure a desired state
   description: Exercise - Set up a DSC and configure a desired state
-  ms.date: 09/13/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/22/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 30
 interactive: bash
 azureSandbox: true

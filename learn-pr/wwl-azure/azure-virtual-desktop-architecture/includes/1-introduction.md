@@ -8,8 +8,8 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Plan name resolution for Active Directory (AD) and Azure Active Directory
- -  Domain Services (Azure AD DS)
+ -  Plan name resolution for Active Directory (AD) and Microsoft Entra ID
+ -  Microsoft Entra Domain Services
  -  Plan a host pools architecture
  -  Recommend resource groups, subscriptions, and management groups
  -  Configure a location for the Azure Virtual Desktop metadata

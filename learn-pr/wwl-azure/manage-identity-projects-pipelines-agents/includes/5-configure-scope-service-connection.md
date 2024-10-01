@@ -18,7 +18,7 @@ Follow these best practices when configuring the scope of a service connection:
 
 1. Sign in to your Azure DevOps portal, navigate to your project, and then go to 'Project settings' and 'Service connections.'
 2. Click on 'New service connection' and choose the type of connection you want to create, for example, 'Azure Resource Manager.'
-3. In the 'Authentication method' section, select 'Service principal (automatic).' This option will automatically create and manage a service principal in your Azure AD, which will be used for authentication.
+3. In the 'Authentication method' section, select 'Service principal (automatic).' This option will automatically create and manage a service principal in your Microsoft Entra ID, which will be used for authentication.
 4. Configure the scope of the service connection by selecting the appropriate subscription, resource group, or resource. The scope determines which resources the service connection has access to. Limit the scope as much as possible to reduce potential security risks.
    - Subscription: Grants access to all resources within the specified Azure subscription.
    - Resource Group: Grants access only to resources within a specific resource group in the Azure subscription.
@@ -38,5 +38,5 @@ Finally, review the roles assigned to the service principal and ensure that it h
 
 For more information about service connections, see:
 
-- [Manage service connections.](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-- [Use Azure Active Directory service principals & managed identities](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
+- [Manage service connections.](/azure/devops/pipelines/library/service-endpoints)
+- [Use Microsoft Entra service principals & managed identities](/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)

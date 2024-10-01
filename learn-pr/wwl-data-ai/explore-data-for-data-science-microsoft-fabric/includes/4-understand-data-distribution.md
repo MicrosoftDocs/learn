@@ -20,13 +20,14 @@ Let's explore some of the most common data distribution types such as normal, bi
 
 ## Normal distribution
 
-A [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution/?azure-portal=true) is represented by two parameters: the mean and the standard deviation. The mean indicates where the bell curve is centered, and the standard deviation indicates the spread of the distribution. 
+A [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) is represented by two parameters: the mean and the standard deviation. The mean indicates where the bell curve is centered, and the standard deviation indicates the spread of the distribution. 
 
 Let's see an example of a normal distributed feature. The code below generates the data for the `var` feature for demonstration purposes.
 
 ```Python
 import seaborn as sns
 import numpy as np
+​import matplotlib.pyplot as plt
 
 # Set the mean and standard deviation
 mu, sigma = 0, 0.1 

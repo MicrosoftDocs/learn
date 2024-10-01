@@ -4,19 +4,20 @@ title: "Improve your reliability with modern operations practices: Deployment"
 metadata:
   title: "Improve your reliability with modern operations practices: Deployment"
   description: Learn about deployment practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 04/05/2023
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04292021
-summary: With the right deployment practices, we can catch many problems before they get to our production environment and cause an incident. In this module we look at practices that can help us improve our reliability.
+  ms.service: azure-devops-pipelines
+summary: With the right deployment practices, we can catch many problems before they get to our production environment and cause an incident. In this module, we look at practices that can help us improve our reliability.
 abstract: |
   In this module, you will:
   - Learn about what software deployment is and different kinds of deployments we might employ.
   - Discover the significant benefits of switching from an "epic deployment" model to a "continuous deployment" model.
   - Explore the components of continuous deployment.
-  - Look deep into pipelines and how they are implemented in Azure Pipelines.
+  - Look deep into pipelines and how they're implemented in Azure Pipelines.
   - Learn a number of different strategies for deployment to production that can help us avoid incidents.
   - Examine some important best practices that can minimize the risk when rolling out new software or a new version of existing software.
 iconUrl: /training/achievements/improve-reliability-deployment.svg

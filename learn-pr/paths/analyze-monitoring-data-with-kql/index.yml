@@ -8,8 +8,7 @@ metadata:
   ms.date: 07/03/2023
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.service: azure-monitor
+  ms.topic: learning-path
 prerequisites: Familiarity with database structures like tables, columns, and rows.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
@@ -34,9 +33,8 @@ products:
 - microsoft-defender
 subjects:
 - cloud-computing
-- data-ai
 - data-analytics
-- data-science
+- data-management
 - data-visualization
 - infrastructure
 modules:

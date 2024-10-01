@@ -4,15 +4,14 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
-  ms.date: 10/17/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  description: Learn how you can use infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
   ms.custom:
     - devx-track-arm-template
     - devx-track-bicep
-  ms.prod: learning-azure
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/1-introduction.md)]

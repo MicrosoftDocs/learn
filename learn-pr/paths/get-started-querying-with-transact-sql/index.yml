@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/07/2021
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Get Started Querying with Transact-SQL
 prerequisites: |
   Familiarity with working with tables of data, for example in a spreadsheet.

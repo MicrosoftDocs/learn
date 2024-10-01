@@ -4,10 +4,12 @@ metadata:
   moduleType: standard
   title: Build reusable Bicep templates by using parameters
   description: Control and apply parameters to a Bicep template while protecting sensitive inputs.
-  ms.date: 01/03/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 09/26/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.devlang: bicep
 title: Build reusable Bicep templates by using parameters
 summary: |

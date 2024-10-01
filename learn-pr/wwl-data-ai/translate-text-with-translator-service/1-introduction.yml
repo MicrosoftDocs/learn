@@ -3,14 +3,13 @@ uid: learn.wwl.translate-text-with-translator-service.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 08/31/2023
+  description: Introduction
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-translator
-azureSandbox: false
-labModal: false
+  ms.date: 12/05/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

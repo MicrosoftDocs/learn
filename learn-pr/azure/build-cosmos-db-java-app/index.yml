@@ -4,11 +4,11 @@ metadata:
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
   description: Learn how to create a Java application to store and query data in Azure Cosmos DB
   ms.date: 09/13/2020
-  author: seesharprun
-  ms.author: sidandrews
+  author: kushagraThapar
+  ms.author: kuthapar
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.service: cosmos-db
+  ms.topic: module
+  ms.service: azure-cosmos-db
 title: Build a Java app with cloud-scale NoSQL Cosmos DB
 summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
 abstract: |
@@ -26,8 +26,6 @@ roles:
 products:
 - azure
 - azure-cosmos-db
-subjects:
-- development-tools
 units:
 - learn.cosmos-db-java-app.1-introduction
 - learn.cosmos-db-java-app.2-setup

@@ -21,7 +21,7 @@ To complete the component that sends messages about sales performance, complete 
 
     Between the quotation marks, paste the connection string you saved in the previous exercise.
 
-1. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
+1. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code:
 
     ```csharp
     const string TopicName = "salesperformancemessages";
@@ -89,7 +89,7 @@ To complete the component that sends messages about sales performance, complete 
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string TopicName = "salesperformancemessages";
     
             static void Main(string[] args)
@@ -147,7 +147,7 @@ When you see `Message was sent successfully`, run the following command to see h
 
 ```azurecli
 az servicebus topic subscription show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --topic-name salesperformancemessages \
     --name Americas \
     --query messageCount \
@@ -275,7 +275,7 @@ To create the component that retrieves messages about sales performance, complet
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://alexgeddyneil.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=LIWIyxs8baqQ0bRf5zJLef6OTfrv0kBEDxFM/ML37Zs=";
+            const string ServiceBusConnectionString = "Endpoint=sb://alexgeddyneil.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string TopicName = "salesperformancemessages";
             const string SubscriptionName = "Americas";
     
@@ -354,7 +354,7 @@ Run the following command to confirm that there are no remaining messages in the
 
 ```azurecli
 az servicebus topic subscription show \
-     --resource-group <rgn>[sandbox resource group name]</rgn> \
+     --resource-group "<rgn>[sandbox resource group name]</rgn>" \
      --topic-name salesperformancemessages \
      --name Americas \
      --query messageCount \

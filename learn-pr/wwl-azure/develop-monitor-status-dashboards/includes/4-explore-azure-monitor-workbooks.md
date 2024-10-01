@@ -1,6 +1,6 @@
 [Workbooks](/azure/application-insights/app-insights-usage-workbooks) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are helpful are troubleshooting guides and incident postmortem.
 
-:::image type="content" source="../media/workbooks-0b9dbd99.png" alt-text="Workbooks":::
+:::image type="content" source="../media/workbooks-0b9dbd99.png" alt-text="Screenshot of Workbooks.":::
 
 
 ## Advantages

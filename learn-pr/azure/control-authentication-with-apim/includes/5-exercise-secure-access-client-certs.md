@@ -20,7 +20,7 @@ First, use Cloud Shell to create a self-signed certificate, which you'll then us
 1. To create the private key and the certificate, run the following commands in Cloud Shell.
 
     ```bash
-    pwd='Pa$$w0rd'
+    pwd='<Enter a secure password here>'
     pfxFilePath='selfsigncert.pfx'
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
     ```
@@ -34,7 +34,7 @@ First, use Cloud Shell to create a self-signed certificate, which you'll then us
     openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem -nodes
     ```
 
-    When you're prompted for a password, enter **Pa$$w0rd**, and then press <kbd>Enter</kbd>.
+    When you're prompted, enter your secure password, and then press <kbd>Enter</kbd>.
 
 ## Configure the gateway to request client certificates
 
@@ -103,7 +103,7 @@ You can now test the new authentication policy with and without the certificate.
 1. To test the API without the certificate, run the following command in Cloud Shell, replacing the placeholder values with your API gateway name and subscription key.
 
     ```PowerShell
-    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
+    curl -X -v GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]' 
     ```
 

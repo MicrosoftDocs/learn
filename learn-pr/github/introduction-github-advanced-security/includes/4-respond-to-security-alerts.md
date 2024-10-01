@@ -1,33 +1,18 @@
-At the beginning of this module, you read case studies that showed how serious security breaches can be. In the example of the 2017 Equifax breach, a lack of proper dependency management by administrators was a root cause of the breach. Humans failed to respond when they received information that a dependency needed to be fixed quickly.
 
-In this unit, you'll learn the importance of responding to security alerts and what that response should look like. You'll also learn about GitHub functionality that allows you to quickly react to these alerts.
+:::image type="content" source="../media/security-lifecycle.png" alt-text="A screenshot of a GitHub pull request next to a conceptual diagram of developer lifecycle circle.":::
 
-## Evaluate security alerts
+Gone are the days when security is isolated and treated as a separate phase or gate in the software development lifecycle. As we learned, this approach may lead to delayed identification and remediation of vulnerabilities, as issues are only discovered late in the development process. It can result in increased time and resources spent on fixing security issues, potentially impacting project timelines.
 
-Although teams can't always avoid errors, quick action reduces risks. Failing to act promptly leaves your system or project open to exploitation by bad actors. You can reduce costs, retain customers, and protect your brand reputation when you avoid sensitive data leaks by quickly responding to security alerts.
+In today’s day and age, it is imperative that we integrate security seamlessly into each step of the software development life cycle. This approach ensures that security considerations are addressed from the project's inception, resulting in faster identification and resolution of vulnerabilities.
 
-### Triage security alerts
+- Early Detection: Integrating security early allows for the detection of vulnerabilities at the source code level, minimizing the likelihood of issues reaching production.
+- Efficient Remediation: Security issues can be addressed promptly as part of regular development activities, reducing the time and effort required to understand the context of the issue.
+- Consistent Security Standards: Integration ensures consistent adherence to security standards across the entire development life cycle, fostering a proactive security culture within the development team.
+- Improved Collaboration: Collaboration between developers, security teams, and other stakeholders is enhanced, as security becomes a shared responsibility throughout the development process.
 
-In Unit 2, you learned that GitHub's code scanning helps to identify vulnerabilities in your code. When the system identifies a problem, it notifies your team with alerts highlighting the issue. This helps you to quickly identify the issue. Once GitHub flags a vulnerability in your codebase, analyzing the flaw is the next step.
+By understanding and implementing these advanced security practices with the help of GHAS, organizations can significantly enhance their software development processes and create a more resilient and secure development ecosystem.
 
-:::image type="content" source="../media/triage.png" alt-text="Screenshot showing menu options for resolving alerts." border="false":::
+GHAS empowers DevSecOps teams to prioritize innovation and enhance developer productivity without sacrificing security. Automated security checks are run with every pull request, surfacing issues in the context of the development workflow so vulnerabilities are fixed in minutes, not months. 
 
-As shown in the preceding image, you control the code-scanning process. If the scan misunderstands your intent, you can dismiss the alert by identifying a reason for the dismissal. Indicate if the scan highlighted a false positive, code used in tests, or an irrelevant alert.
+Our developer-first solution unlocks your ability to keep your code, supply chain, and secrets secure before you push to production. GHAS gives security teams visibility into the cross-organizational security posture and supply chain and unparalleled access to curated security intelligence from millions of developers and security researchers around the world.
 
-You can also interact with scanning alerts through pull requests. You can get details related to the alert if you have write permission to the repository. A check must pass before you can merge the pull request.
-
-### Manage security alerts
-
-:::image type="content" source="../media/code-scanning-filter-by-tool.png" alt-text="Screenshot of code-scanning alerts." border="false":::
-
-GitHub provides you with an overview of your repository alerts along with the triage functionality. This summary facilitates the prioritization of security alerts. Navigate to the security tab of your repository and select **Code scanning alerts**. Use the free-text search box or the drop-down menus to filter alerts.
-
-GitHub can also suggest fixes for errors in your code. This functionality is more than a simple convenience; the direction saves you valuable time. The time you save goes toward your goal of quickly reacting to vulnerabilities.
-
-## Use security advisories
-
-Imagine a scenario where you find a vulnerability. You don't want to announce the vulnerability to the world. In situations like these, security advisories can help.
-
-Think of security advisories as a private forum that code maintainers use to discuss bugs or vulnerabilities found within their projects. With security in mind, maintainers keep these exchanges in this forum instead of using the standard method of GitHub issues for their conversations. When you use security advisories, you ensure that knowledge of any error or bug is not exposed to the public before you can fix it.
-
-After you resolve the problem, the security advisory is published back into the GitHub Advisory Database so that affected external parties affected can take any necessary steps.

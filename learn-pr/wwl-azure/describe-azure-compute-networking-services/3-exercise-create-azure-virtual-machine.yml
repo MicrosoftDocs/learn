@@ -4,10 +4,12 @@ title: Exercise - Create an Azure virtual machine
 metadata:
   title: Exercise - Create an Azure virtual machine
   description: "Exercise - Create an Azure virtual machine"
-  ms.date: 09/13/2023
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: true
 durationInMinutes: 10
 content: |

@@ -1,24 +1,17 @@
-You now have a solid understanding of GitHub Advanced Security and how its features defend against gaps in security. This module also explained the importance of responding quickly to threats. You reviewed examples of best practices to keep your supply chain, codebase, and development environment safe. Now, you can start improving how teams work within your organization.
+GitHub Advanced Security is a powerful suite of tools and features that gives you the ability to identify security vulnerabilities in your codebase and environment. These features allow you to secure your code at every step of the software-development lifecycle, not just in your production environment. You stay ahead of security threats and breaches, leverage the expertise of the security community, and continue to use open-source software securely. GitHub Advanced Security also includes implementing security best practices that help create a security-minded culture within your organization.
 
-Security is about much more than passing a complete project to a security team. Security needs to be front of mind at each step of the software-development lifecycle.
-
-In this unit, you learned how to:
-
-- Define GitHub Advanced Security.
-- Identify the purpose of specific GitHub Advanced Security features.
-- Understand the value of a security-focused team culture.
-- Highlight the roles involved in securing your workflow.
-- Recognize best practices for identifying and responding to security vulnerabilities.
+In this module, you learned:
+- Defined GHAS and the importance of the integral features such as Secret scanning, Code scanning, and Dependabot
+- Explored how to utilize GHAS to maximize security impact
+- Learned about GHAS and its role in the security ecosystem
 
 ## Learn more
 
 Use the following resources to learn more about GitHub Advanced Security:
 
 - [GitHub Security Overview](https://docs.github.com/en/code-security/security-overview/about-the-security-overview)
-- [Dependency graphs](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph)
-- [GitHub Advisory Database](https://github.com/advisories)
 - [Dependabot](https://docs.github.com/en/rest/dependabot) 
 - [Code scanning](https://docs.github.com/en/code-security/code-scanning)
 - [Secret scanning](https://docs.github.com/en/code-security/secret-scanning)
 - [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-code-scanning-with-codeql)
-- [About billing for GitHub Advanced Security](https://docs.github.com/en/billing/managing-billing-for-github-advanced-security/about-billing-for-github-advanced-security)
+- [Integrating with code scanning](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning)

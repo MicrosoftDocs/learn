@@ -3,12 +3,13 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/27/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 quiz:

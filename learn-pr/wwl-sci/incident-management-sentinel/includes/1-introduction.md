@@ -2,8 +2,8 @@
 Imagine that you're a security engineer for Contoso, Ltd., a midsize financial services company in London with a New York branch office. Contoso uses the following Microsoft security management products:
 
 - Microsoft 365
-- Azure Active Directory (Azure AD)
-- Azure AD Identity Protection
+- Microsoft Entra ID
+- Microsoft Entra ID Protection
 - Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender for Endpoint
@@ -32,4 +32,3 @@ Microsoft Sentinel is a cloud application that can help you protect Contoso's re
 
 > [!NOTE]
 > If you choose to do the optional exercise in this module, you might incur charges in your Azure subscription. To estimate the costs, see [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel).
-

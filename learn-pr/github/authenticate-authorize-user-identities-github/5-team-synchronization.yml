@@ -4,11 +4,10 @@ title: Team synchronization
 metadata:
   title: Team synchronization
   description: Learn about the team synchronization feature within GitHub.
-  ms.date: 11/01/2021
+  ms.date: 04/09/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-team-synchronization.md)]

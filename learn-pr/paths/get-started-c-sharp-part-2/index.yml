@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/29/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create and run simple C# console applications (Get started with C#, Part 2)
 prerequisites: |
   *   Declare string, numeric, and Boolean variable types in C#.
@@ -61,8 +60,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.wwl.install-configure-visual-studio-code
 - learn.languages.csharp-call-methods

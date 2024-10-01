@@ -3,11 +3,13 @@ uid: learn.languages.csharp-modify-content.solution
 title: Review the solution to extract, replace, and remove data from an input string
 metadata:
   title: Review the solution to extract, replace, and remove data from an input string
-  description: "Review the solution to extract, replace, and remove data from an input string"
-  ms.date: 09/08/2023
+  description: "Review the solution to extract, replace, and remove data from an input string."
+  ms.date: 08/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/6-review-solution-extract-replace-remove-data.md)]

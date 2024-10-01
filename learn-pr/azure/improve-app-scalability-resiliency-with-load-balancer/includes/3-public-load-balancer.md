@@ -28,9 +28,12 @@ Set-AzLoadBalancer -LoadBalancer $lb
 
 To add session persistence through the Azure portal:
 
-1. In the Azure portal, open the Load Balancer resource.
-1. Edit the relevant line of the **Load-balancing rules**.
-1. Change the value for **Session persistence** to **Client IP**.
+1. In the Azure portal, select your Load Balancer resource.
+1. In the **Load balancing rules** page under the *Settings* pane, select the relevant load balancing rule.
+
+    :::image type="content" source="../media/3-load-balancer-rules.png" alt-text="Screenshot showing how to select a load balancing rule in the Azure portal.":::
+
+1. In the *load balancing rule settings* page change the value for **Session persistence** from **None** to **Client IP**.
 
 :::image type="content" source="../media/3-screenshot-session-persistence.png" alt-text="Screenshot showing how to set IP affinity in the Azure portal." :::
 
@@ -42,4 +45,4 @@ Remote Desktop Gateway is a Windows service that you can use to enable clients o
 
 Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol.
 
-With the five-tuple hash, the load balancer likely will send the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.
+With the five-tuple hash, the load balancer likely sends the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.

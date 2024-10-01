@@ -1,8 +1,8 @@
-Before you connect the database to your app, you'll want to verify that you can connect to it, add a basic table, and work with sample data.
+Before you connect the database to your app, you want to verify that you can connect to it, add a basic table, and work with sample data.
 
 We maintain the infrastructure, software updates, and patches for your Azure SQL database. You can treat your Azure SQL database like you would any other SQL Server installation. For example, you can use Visual Studio, SQL Server Management Studio, Azure Data Studio, or other tools to manage your Azure SQL database.
 
-How you access your database and connect it to your app is up to you. To get some experience working with your database, here you'll connect to it directly from the portal, create a table, and run a few basic CRUD operations. You'll learn:
+How you access your database and connect it to your app is up to you. To get some experience working with your database, let's connect to it directly from the portal, create a table, and run a few basic CRUD operations. Here, you learn:
 
 - What Cloud Shell is and how to access it from the portal.
 - How to access information about your database from the Azure CLI, including connection strings.
@@ -13,18 +13,15 @@ How you access your database and connect it to your app is up to you. To get som
 
 Azure Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
-Behind the scenes, Cloud Shell runs on Linux, but depending on whether you prefer a Linux or Windows environment, you have two experiences from which to choose: Bash and PowerShell.
+Behind the scenes, Cloud Shell runs on Linux. But, depending on whether you prefer a Linux or Windows environment, you have two experiences from which to choose: Bash and PowerShell.
 
 Cloud Shell is accessible from anywhere. Besides the portal, you can also access Cloud Shell from [shell.azure.com](https://shell.azure.com/), the Azure mobile app, or from Visual Studio Code. 
 
-Cloud Shell includes popular tools and text editors. Here's a brief look at the `az`, `jq`, and `sqlcmd` utilities, which are three tools that you'll use for this exercise.
+Cloud Shell includes popular tools and text editors. Here's a brief look at the `az`, `jq`, and `sqlcmd` utilities, which are three tools that you use in this exercise.
 
-- `az` is also known as the Azure CLI. It's the command-line interface for working with Azure resources. You'll use this interface to get information about your database, including the connection string.
-- `jq` is a command-line JSON parser. You'll pipe output from `az` commands to this tool to extract important fields from JSON output.
-- `sqlcmd` enables you to execute statements on SQL Server. You'll use `sqlcmd` to create an interactive session with your Azure SQL database.
-
-> [!TIP]
-> When running the T-SQL commands in this module using `sqlcmd`, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you'll likely need to type this command out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+- `az` is also known as the Azure CLI. It's the command-line interface for working with Azure resources. You use this interface to get information about your database, including the connection string.
+- `jq` is a command-line JSON parser. You pipe output from `az` commands to this tool to extract important fields from JSON output.
+- `sqlcmd` enables you to execute statements on SQL Server. You use `sqlcmd` to create an interactive session with your Azure SQL database.
 
 ## Get information about your Azure SQL database
 
@@ -32,7 +29,7 @@ Before you connect to your database, it's a good idea to verify that it exists a
 
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
-1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
+1. The `az` commands you run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
 
     Replace `[server-name]` with the name of the Azure SQL logical server you created and `[resource-group]` with the resource group you used for your server.
 
@@ -80,7 +77,7 @@ Here, you use the `az` utility to list your databases and show some information 
 
     As before, you see a large block of JSON as output.
 
-1. Run the command a second time. This time, pipe the output to `jq` to limit output to only the name, maximum size, and status of the **Logistics** database.
+1. Run the command a second time. This time pipe the output to `jq` to limit output to only the name, maximum size, and status of the **Logistics** database.
 
     ```azurecli
     az sql db show --name Logistics | jq '{name: .name, maxSizeBytes: .maxSizeBytes, status: .status}'
@@ -111,13 +108,13 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     Your output resembles the following example. Copy this output for use in the next step.
 
     ```output
-    "sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
+    "sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
     ```
 
 1. Run the `sqlcmd` statement from the output of the previous step to create an interactive session. Remove the surrounding quotes and replace `<username>` and `<password>` with the username and password you specified when you created your database. Here's an example:
 
     ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
+    sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
 
     > [!TIP]
@@ -136,7 +133,7 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     > It may take up to five minutes for this change to take effect.
     > ```
 
-    If this error occurs, you'll need to add another firewall rule for your client. To do so, perform the following steps:
+    If this error occurs, you need to add another firewall rule for your client. To do so, perform the following steps:
 
     - Sign into the [Azure portal](https://portal.azure.com/).
 
@@ -152,11 +149,16 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
 
     - Select **Save**.
 
-    - Run the `sqlcmd` statement again to launch your interactive `sqlcmd` session. It will look something like the following example:
+    - Run the `sqlcmd` statement again to launch your interactive `sqlcmd` session. It should look something like the following example:
 
     ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
+    sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
+
+    Now that you've launched your `sqlcmd` session, the remaining commands use the language Transact-SQL, or T-SQL.
+
+    > [!TIP]
+    > When running the T-SQL commands in this module, the `GO` on the second line may not copy through to the `sqlcmd` prompt. After you enter the first line of the command, you may need to type in the `GO` command. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`:
 
@@ -166,9 +168,6 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     ```
 
     The table contains four columns: a unique identifier, the driver's last and first name, and the driver's city of origin.
-
-    > [!NOTE]
-    > The language you see here is Transact-SQL, or T-SQL.
 
 1. Run the following T-SQL statements to verify that the `Drivers` table exists:
 
@@ -274,4 +273,4 @@ Cloud Shell makes it easy to access and work with your Azure resources. Because 
 
 You gained some hands-on experience running Azure CLI commands to get information about your Azure SQL database. As a bonus, you practiced your T-SQL skills.
 
-In the next unit, we'll wrap up this module and describe how to tear down your database.
+In the next unit, we wrap up this module and describe how to tear down your database.

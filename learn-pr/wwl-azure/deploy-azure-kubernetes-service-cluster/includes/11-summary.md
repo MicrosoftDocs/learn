@@ -3,7 +3,7 @@ In this module, you learned how to:
  -  Create an Azure Kubernetes Service cluster.<br>
  -  Configure Azure Kubernetes Service Components.
  -  Connect to an Azure Kubernetes Service cluster.
- -  Configure Azure Active Directory Integration.<br>
+ -  Configure Microsoft Entra ID Integration.<br>
  -  Monitor an Azure Kubernetes Service cluster.
 
 ## Learn more

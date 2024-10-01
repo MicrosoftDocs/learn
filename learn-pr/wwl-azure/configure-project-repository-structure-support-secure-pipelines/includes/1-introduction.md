@@ -20,7 +20,7 @@ The course is divided into several modules, each covering a specific topic relat
 
 ## Why should I take the implement security through a pipeline using Azure DevOps learning path?
 
-Completing this module helps prepare you for the **Implement security through a pipeline using Azure DevOps** assessment.
+Completing this module helps prepare you for the [**Implement security through a pipeline using Azure DevOps**](/credentials/applied-skills/implement-security-through-pipeline-using-devops/) assessment.
 
 ### Learning objectives
 
@@ -46,32 +46,32 @@ After completing this module, students and professionals can:
 
 You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
-- [Create an organization - Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization).
-- [Create a project in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/projects/create-project).
+- [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).
+- [Create a project in Azure DevOps](/azure/devops/organizations/projects/create-project).
 
 To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management. If you don't have this experience, we recommend that you first complete a module or course on Azure DevOps and pipeline management:
 
 - Free online:
-  - [Choose the DevOps tools](https://learn.microsoft.com/training/modules/migrate-to-devops/).
-  - [Explore Azure Pipelines](https://learn.microsoft.com/training/modules/explore-azure-pipelines/).
-  - [Integrate with Azure Pipelines](https://learn.microsoft.com/training/modules/integrate-azure-pipelines/).
+  - [Choose the DevOps tools](/training/modules/migrate-to-devops/).
+  - [Explore Azure Pipelines](/training/modules/explore-azure-pipelines/).
+  - [Integrate with Azure Pipelines](/training/modules/integrate-azure-pipelines/).
 
-- Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](https://learn.microsoft.com/training/courses/az-400t00).
+- Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](/training/courses/az-400t00).
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 
-- Free online: [Azure Fundamentals](https://learn.microsoft.com/learn/paths/az-900-describe-cloud-concepts/).
-- Instructor-led course: [AZ-900: Azure Fundamentals](https://learn.microsoft.com/training/courses/az-900t00).
+- Free online: [Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/).
+- Instructor-led course: [AZ-900: Azure Fundamentals](/training/courses/az-900t00).
 
 If you're new to Azure Administration, consider taking the:
 
-- Free online: [Prerequisites for Azure Administrators](https://learn.microsoft.com/learn/paths/az-104-administrator-prerequisites/).
-- Instructor-led courses: [AZ-104: Microsoft Azure Administrator](https://learn.microsoft.com/learn/certifications/courses/az-104t00).
+- Free online: [Prerequisites for Azure Administrators](/learn/paths/az-104-administrator-prerequisites/).
+- Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/learn/certifications/courses/az-104t00).
 
 If you're new to Azure Developer, consider taking the:
 
-- Free online: [Create serverless applications](https://learn.microsoft.com/learn/paths/create-serverless-applications/).
-- Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](https://learn.microsoft.com/learn/certifications/courses/az-204t00).
+- Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
+- Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).
 
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 

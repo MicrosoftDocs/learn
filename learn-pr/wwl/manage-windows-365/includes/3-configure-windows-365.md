@@ -1,12 +1,10 @@
-
-
 The primary setup process for Windows 365 takes place within the Microsoft Intune admin center. Here's a general overview of the fundamental steps required to configure your system for provisioning on-demand Cloud PCs to your users.
 
 ### Assign licenses to users
 
-In order for a user to utilize a Cloud PC, it's necessary to allocate a Windows 365 license to that particular user. You can allocate licenses to either individual users or groups by utilizing administrative portals or PowerShell. To assign licenses using the Azure AD admin center, follow these steps.
+In order for a user to utilize a Cloud PC, it's necessary to allocate a Windows 365 license to that particular user. You can allocate licenses to either individual users or groups by utilizing administrative portals or PowerShell. To assign licenses using the Microsoft Entra admin center, follow these steps.
 
-1.  Sign in to the Azure AD admin center with a license administrator account.
+1.  Sign in to the Microsoft Entra admin center with a license administrator account.
 2.  Select **Licenses** to open a page where you can see and manage all licensable products in the organization.
 3.  Select a user or group, and then use the **Select** button at the bottom of the page to confirm your selection.
 4.  Under All products, select **Windows 365** Select **Assign** at the top of the page.
@@ -19,7 +17,7 @@ To enable Cloud PCs to join the organization's domain and access on-premises res
 
 To create an Azure network connection:
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center** with an account that is an Intune Administrator in Azure AD and has owner permissions to the virtual network in the Azure subscription.
+1.  Sign in to the **Microsoft Endpoint Manager admin center** with an account that is an Intune Administrator in Microsoft Entra ID and has owner permissions to the virtual network in the Azure subscription.
 2.  Select **Devices** > **Windows 365** (under **Provisioning**) > **Azure network connection** > **Create connection**.
 3.  On the **Network details** page, enter a **Name** for the new connection. The connection name must be unique within the customer tenant.
     
@@ -48,7 +46,7 @@ As most device configurations are applied through configuration policies, these 
 
 ### Create provisioning policies
 
-Cloud PCs are created and assigned to users based on provisioning policies. After provisioning policies are created and assigned to the Azure AD user security groups or Microsoft 365 Groups, the Windows 365 service checks for appropriate licensing for each user and configures the Cloud PCs accordingly.
+Cloud PCs are created and assigned to users based on provisioning policies. After provisioning policies are created and assigned to the Microsoft Entra user security groups or Microsoft 365 Groups, the Windows 365 service checks for appropriate licensing for each user and configures the Cloud PCs accordingly.
 
 Creating a provisioning policy requires the following steps:
 
@@ -70,7 +68,7 @@ Creating a provisioning policy requires the following steps:
 -   [Create provisioning policies](/windows-365/enterprise/create-provisioning-policy?azure-portal=true)
 
 > [!NOTE]
-> It can take up to 60 minutes for the policy creation process to complete, depending on when the Azure AD connect sync last happened.
+> It can take up to 60 minutes for the policy creation process to complete, depending on when the Microsoft Entra Connect Sync last happened.
 
 ### Configure and apply device and app configuration profiles
 

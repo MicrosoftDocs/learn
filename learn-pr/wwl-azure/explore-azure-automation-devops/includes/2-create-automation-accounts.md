@@ -8,7 +8,7 @@ These artifacts could be a container for all your runbooks, runbook executions (
 
 An Automation account allows you to manage all Azure resources via an API. To safeguard it, the Automation account creation requires subscription-owner access.
 
-:::image type="content" source="../media/create-run-account-5a4939c8.png" alt-text="Screenshot of the Add Automation Account blade, with the Yes button for create an Azure automation account highlighted.":::
+:::image type="content" source="../media/create-run-account.png" alt-text="Screenshot of the Add Automation Account blade, with the Yes button for create an Azure Automation account highlighted.":::
 
 
 You must be a subscription owner to create the Run As accounts that the service creates.

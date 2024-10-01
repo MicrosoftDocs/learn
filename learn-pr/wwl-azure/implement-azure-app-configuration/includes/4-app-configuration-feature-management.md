@@ -1,4 +1,3 @@
-
 Feature management is a modern software-development practice that decouples feature release from code deployment and enables quick changes to feature availability on demand. It uses a technique called feature flags (also known as feature toggles, feature switches, and so on) to dynamically administer a feature's lifecycle.
 
 ## Basic concepts
@@ -38,7 +37,7 @@ You can also evaluate the flag's state based on certain rules:
 bool featureFlag = isBetaUser();
 ```
 
-A slightly more complicated feature flag pattern includes an `else` statement as well:
+You can extend the conditional to set application behavior for either state:
 
 ```csharp
 if (featureFlag) {

@@ -6,8 +6,7 @@ metadata:
   ms.date: 08/25/2023
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: learning-path
 title: Implement a Lakehouse with Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
@@ -23,11 +22,10 @@ roles:
 products:
 - fabric
 subjects:
-- data-ai
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
+- data-storage
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses

@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.github.responsible-ai-with-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the "Responsible AI with GitHub Copilot" module.
+  ms.date: 09/13/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "What is the primary goal of Responsible AI?"
+      choices:
+        - content: "To maximize profits from AI systems."
+          isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
+        - content: "To develop AI systems as quickly as possible."
+          isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
+        - content: "To ensure AI systems are safe, trustworthy, and ethical."
+          isCorrect: true
+          explanation: "Correct! Ensuring AI systems are safe, trustworthy, and ethical is the primary goal of Responsible AI."
+        - content: "To replace human decision-making with AI."
+          isCorrect: false
+          explanation: "Incorrect. This is not the primary goal of Responsible AI."
+    - content: "Which principle is NOT one of the six identified by Microsoft for Responsible AI?"
+      choices:
+        - content: "Fairness."
+          isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
+        - content: "Innovation."
+          isCorrect: true
+          explanation: "Correct! This is NOT one of the six principles of Reponsible AI."
+        - content: "Inclusiveness."
+          isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
+        - content: "Accountability."
+          isCorrect: false
+          explanation: "Incorrect. This is one of the six principles of Reponsible AI."
+    - content: "What does the principle of Fairness in Responsible AI emphasize?"
+      choices:
+        - content: "Maximizing AI performance at all costs."
+          isCorrect: false
+          explanation: "Incorrect. This is not what the principle of Fairness in Responsible AI emphasizes."
+        - content: "Ensuring AI systems perform equally well across all demographic groups."
+          isCorrect: true
+          explanation: "Correct! Ensuring AI systems perform equally well across all demographic groups is what the principle of Fairness in Responsible AI emphasizes."
+        - content: "Prioritizing profitability over ethical concerns."
+          isCorrect: false
+          explanation: "Incorrect. This is not what the principle of Fairness in Responsible AI emphasizes."
+        - content: "Creating AI systems that are easy to understand."
+          isCorrect: false
+          explanation: "Incorrect. This is not what the principle of Fairness in Responsible AI emphasizes."
+    - content: "How does Microsoft address potential biases in AI systems?"
+      choices:
+        - content: "By ignoring the issue and focusing on other areas."
+          isCorrect: false
+          explanation: "Incorrect. This is not how Microsoft addresses potential biases in AI systems."
+        - content: "By providing AI systems with more data."
+          isCorrect: false
+          explanation: "Incorrect. This is not how Microsoft addresses potential biases in AI systems."
+        - content: "By reviewing training data, testing with balanced samples, and using adversarial debiasing."
+          isCorrect: true
+          explanation: "Correct! By reviewing training data, testing with balanced samples, and using adversarial debiasing are how we should combat biases in AI."
+        - content: "By allowing users to modify AI system outputs directly."
+          isCorrect: false
+          explanation: "Incorrect. This is not how Microsoft addresses potential biases in AI systems."
+    - content: "What is the role of transparency in Microsoft's Responsible AI principles?"
+      choices:
+        - content: "To keep AI operations secret from the public."
+          isCorrect: false
+          explanation: "Incorrect. This is not the role of transparency in Microsoft's Responsible AI principles."
+        - content: "To make AI systems' operations and decisions understandable and clear."
+          isCorrect: true
+          explanation: "Correct! This is not the role of transparency in Microsoft's Responsible AI principles."
+        - content: "To hide the limitations of AI systems."
+          isCorrect: false
+          explanation: "Incorrect. This is not the role of transparency in Microsoft's Responsible AI principles."
+        - content: "To prioritize efficiency over ethical considerations."
+          isCorrect: false
+          explanation: "Incorrect. This is not the role of transparency in Microsoft's Responsible AI principles."
+    - content: "Why is it important for developers to closely scrutinize AI-generated code?"
+      choices:
+        - content: "To reduce development time."
+          isCorrect: false
+          explanation: "Incorrect. This is not the reason developers should closely scrutinize AI-generated code."
+        - content: "To ensure that the code aligns with project-specific conventions and requirements."
+          isCorrect: true
+          explanation: "Correct! This is the reason developers should closely scrutinize AI-generated code."
+        - content: "To enhance the creative aspect of coding."
+          isCorrect: false
+          explanation: "Incorrect. This is not the reason developers should closely scrutinize AI-generated code."
+        - content: "To automatically improve system performance."
+          isCorrect: false
+          explanation: "Incorrect. This is not the reason developers should closely scrutinize AI-generated code."

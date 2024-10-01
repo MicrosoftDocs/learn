@@ -1,4 +1,3 @@
-
 Welcome to the **Get to know Microsoft Azure cloud platform: An overview for business professionals** learning path!
 
 This learning path consists of three modules designed for business decision makers looking to learn more about the cloud and Microsoft Azure.
@@ -9,7 +8,7 @@ After you complete the learning path, you should have a better sense of what the
 
 This first module, **Describe the basics of Azure for business**, presents an overview of how Azure works and what it might do for your business.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you’ll be able to:
 

@@ -1,5 +1,3 @@
-
-
 As a data scientist, you want to focus on training machine learning models. Though you need access to data as input for a machine learning model, you don't want to worry about *how* to get access. To simplify getting access to the data you want to work with, you can use **data assets**.
 
 ## Understand data assets
@@ -14,6 +12,8 @@ The benefits of using data assets are:
 
 There are three main types of data assets you can use:
 
+:::image type="content" source="../media/datasets.png" alt-text="Diagram of different types of data assets in Azure Machine Learning.":::
+
 - **URI file**: Points to a specific file.
 - **URI folder**: Points to a folder.
 - **MLTable**: Points to a folder or file, and includes a schema to read as tabular data.
@@ -23,13 +23,13 @@ There are three main types of data assets you can use:
 
 ## When to use data assets
 
-Data assets are most useful when executing machine learning tasks as Azure Machine Learning jobs. As a job, you can run a Python script that takes inputs and generates outputs. A data asset can be parsed as both an input or output of an Azure Machine Learning job. 
+Data assets are most useful when executing machine learning tasks as Azure Machine Learning jobs. As a job, you can run a Python script that takes inputs and generates outputs. A data asset can be parsed as both an input or output of an Azure Machine Learning job.
 
 Let’s take a look at each of the types of data assets, how to create them, and how to use the data asset in a job.
 
 ## Create a URI file data asset
 
-A URI file data asset points to a specific file. Azure Machine Learning will only store the path to the file, which means you can point to any type of file. When you use the data asset, you'll specify how you want to read the data, which will depend on the type of data you're connecting to. 
+A URI file data asset points to a specific file. Azure Machine Learning only stores the path to the file, which means you can point to any type of file. When you use the data asset, you specify how you want to read the data, which depends on the type of data you're connecting to.
 
 The supported paths you can use when creating a URI file data asset are:
 
@@ -60,7 +60,7 @@ my_data = Data(
 ml_client.data.create_or_update(my_data)
 ```
 
-When you parse the URI file data asset as input in an Azure Machine Learning job, you'll first need to read the data before you can work with it. 
+When you parse the URI file data asset as input in an Azure Machine Learning job, you first need to read the data before you can work with it.
 
 Imagine you create a Python script you want to run as a job, and you set the value of the input parameter `input_data` to be the URI file data asset (which points to a CSV file). You can read the data by including the following code in your Python script:
 
@@ -76,7 +76,7 @@ df = pd.read_csv(args.input_data)
 print(df.head(10))
 ```
 
-If your URI file data asset points to a different type of file, you'll need to use the appropriate Python code to read the data. For example, if instead of CSV files, you're working with JSON files, you'd use `pd.read_json()` instead.
+If your URI file data asset points to a different type of file, you need to use the appropriate Python code to read the data. For example, if instead of CSV files, you're working with JSON files, you'd use `pd.read_json()` instead.
 
 ## Create a URI folder data asset
 
@@ -101,9 +101,9 @@ my_data = Data(
 ml_client.data.create_or_update(my_data)
 ```
 
-When you parse the URI folder data asset as input in an Azure Machine Learning job, you'll first need to read the data before you can work with it. 
+When you parse the URI folder data asset as input in an Azure Machine Learning job, you first need to read the data before you can work with it.
 
-Imagine you create a Python script you want to run as a job, and you set the value of the input parameter `input_data` to be the URI folder data asset (which points to multiple CSV files). You may want to read all CSV files in the folder and concatenate them, which you can do by including the following code in your Python script:
+Imagine you create a Python script you want to run as a job, and you set the value of the input parameter `input_data` to be the URI folder data asset (which points to multiple CSV files). You can read all CSV files in the folder and concatenate them, which you can do by including the following code in your Python script:
 
 ```python
 import argparse
@@ -119,19 +119,19 @@ all_files = glob.glob(data_path + "/*.csv")
 df = pd.concat((pd.read_csv(f) for f in all_files), sort=False)
 ```
 
-Depending on the type of data you're working with, the code you use to read the files may change.
+Depending on the type of data you're working with, the code you use to read the files can change.
 
 ## Create a MLTable data asset
 
-A MLTable data asset allows you to point to tabular data. When you create a MLTable data asset, you specify the schema definition to read the data. As the schema is already defined and stored with the data asset, you don't have to specify how to read the data when you use it. 
+A MLTable data asset allows you to point to tabular data. When you create a MLTable data asset, you specify the schema definition to read the data. As the schema is already defined and stored with the data asset, you don't have to specify how to read the data when you use it.
 
-Therefore, you'll want to use a MLTable data asset when the schema of your data is complex or changes frequently. Instead of changing how to read the data in every script that uses the data, you only have to change it in the data asset itself.
+Therefore, you want to use a MLTable data asset when the schema of your data is complex or changes frequently. Instead of changing how to read the data in every script that uses the data, you only have to change it in the data asset itself.
 
-When you define the schema when creating a MLTable data asset, you can also choose to only specify a subset of the data. 
+When you define the schema when creating a MLTable data asset, you can also choose to only specify a subset of the data.
 
-For certain features in Azure Machine Learning, like Automated Machine Learning, you'll need to use a MLTable data asset, as Azure Machine Learning needs to know how to read the data.
+For certain features in Azure Machine Learning, like Automated Machine Learning, you need to use a MLTable data asset, as Azure Machine Learning needs to know how to read the data.
 
-To define the schema, it's recommended to include a **MLTable file** in the same folder as the data you want to read. The MLTable file includes the path pointing to the data you want to read, and how to read the data:
+To define the schema, you can include a **MLTable file** in the same folder as the data you want to read. The MLTable file includes the path pointing to the data you want to read, and how to read the data:
 
 ```yml
 type: mltable

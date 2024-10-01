@@ -4,13 +4,12 @@ title: Exercise - Degree of Parallelism feedback
 metadata:
   title: Exercise - Degree of Parallelism feedback
   description: "An exercise utilizing the Degree of Parallelism feedback feature to show query performance increase and see what's happening behind the scenes of setting DOP."
-  ms.date: 05/23/2023
+  ms.date: 05/23/2024
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - build-2023
-  ms.prod: learning-sqlserver
 durationInMinutes: 20
 content: |
   [!include[](includes/7-degree-of-parallelism-exercise.md)]

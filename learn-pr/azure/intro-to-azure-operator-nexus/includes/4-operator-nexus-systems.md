@@ -1,5 +1,6 @@
 Operator Nexus utilizes a curated and certified hardware Bill of Materials (BOM). It’s composed of commercially available off-the-shelf servers, network switches, and storage arrays. The infrastructure is deployed in the operator’s on-premises data center.
-The service that manages the Operator Nexus infrastructure is hosted in Azure. Operators can choose any supported Azure region for each on-premises Operator Nexus instance. The diagram illustrates the architecture of the Operator Nexus service.
+
+The service that manages the Operator Nexus infrastructure is hosted in Azure. Operators can choose any supported Azure region for each on-premises Operator Nexus instance. The following points outline the Operator Nexus service architecture:
 
 - The management layer of Operator Nexus is built on Azure Resource Manager (ARM), providing a consistent user experience in the Azure portal and Azure APIs.
 - Azure Resource Providers provide modeling and lifecycle management of Operator Nexus resources such as bare metal machines, clusters, and network devices.

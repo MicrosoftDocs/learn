@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/13/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -17,10 +16,10 @@ quiz:
   questions:
   - content: "Consider a Scenario where resources in two different Azure Virtual Networks need to communicate securely without going over the internet. The solution should be easy to implement and be cost effective. In this Scenario, what would you configure?"
     choices:
-    - content: "Create a VPN connection between the two virtual Networks."
+    - content: "Create a VPN connection between the two virtual networks."
       isCorrect: false
       explanation: "Incorrect. VPN connection is not the easiest, most cost effective solution."
-    - content: "Create an ExpressRoute connection between the two virtual Networks."
+    - content: "Create an ExpressRoute connection between the two virtual networks."
       isCorrect: false
       explanation: "Incorrect. An ExpressRoute connection is not the easiest, most cost effective solution."
     - content: "Create a virtual network peering connection."

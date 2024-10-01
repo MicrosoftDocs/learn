@@ -1,7 +1,6 @@
-
 In this module, you learned what the cloud is, what Microsoft Azure is, and what they might do for your business. You studied the basics of cloud economics and read stories of real businesses transformed by Azure.
 
-## Learning Objectives
+## Learning objectives
 
 You should now be able to:
 
@@ -10,7 +9,7 @@ You should now be able to:
  -  Describe the basic financial and operational benefits of cloud over a traditional, off-cloud IT system.
  -  Cite real examples of businesses that have used Azure to transform their operations and improve their bottom lines.
 
-## Additional Resources
+## Additional resources
 
  -  This was the first module in the **Get to know Microsoft Azure cloud platform: An overview for business professionals** learning path. The next module is **Describe the business benefits of Azure**, where you’ll explore the business benefits of Azure in greater detail.
  -  Learn more about Azure from the [Azure product page](https://azure.microsoft.com?azure-portal=true).

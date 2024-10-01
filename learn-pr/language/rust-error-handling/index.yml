@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: rust
 title: Handle errors in Rust
@@ -27,8 +27,6 @@ roles:
 - developer
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.language.rust-error-handling.1-introduction
 - learn.language.rust-error-handling.2-fatal-errors-with-panic

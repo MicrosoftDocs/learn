@@ -5,9 +5,9 @@ In the Azure portal, there are several settings to configure to create an Azure 
 :::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot that shows how to create Virtual Machine Scale Sets in the Azure portal.":::
 
 
-- **Orchestration mode**: Choose how virtual machines are managed by the scale set. In flexible orchestration mode, you manually create and add a virtual machine of any configuration to the scale set. In uniform orchestration mode, you define a virtual machine model and Azure will generate identical instances based on that model.
+- **Orchestration mode**: Choose how the scale set manages virtual machines. In flexible orchestration mode, you manually create and add a virtual machine of any configuration to the scale set. In uniform orchestration mode, you define a virtual machine model and Azure generates identical instances based on that model.
 
-- **Image**: Choose the base operating system or application for the VM.
+- **Image**: Choose the base operating system or application for the virtual machine (VM).
 
 - **VM Architecture**: Azure provides a choice of x64 or Arm64-based virtual machines to run your applications. 
 

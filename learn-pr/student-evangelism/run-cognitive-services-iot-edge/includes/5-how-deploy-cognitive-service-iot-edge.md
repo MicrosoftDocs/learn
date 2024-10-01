@@ -12,7 +12,7 @@ To deploy the Language Detection module, you:
 ## Components used
 
 - **Text Analytics API:** The Text Analytics API is a part of Azure AI services that provides advanced natural language processing over raw text. It includes four main functions: sentiment analysis, key phrase extraction, language detection, and named entity recognition.
-- **Language Detection module:** Analyze text on the edge, on-premises, and in the cloud using container support. It detects and reports in which language the input text is written. It's available in Azure Marketplace.
+- **Language Detection module:** Analyze text on the edge, on-premises, and in the cloud using container support. It detects and reports in which language the input text is written.
 
 <a name='parameters-for-configuring-ai-services-containers'></a>
 
@@ -26,7 +26,7 @@ To deploy the Language Detection module, you:
 
 In the following exercise, you'll complete these steps:
 
-1. Create a Azure AI Text Analytics resource
+1. Create an Azure AI Text Analytics resource
 1. Configure the Azure AI services API to the Language Detection module
 1. Deploy the Language Detection module to the edge device
 

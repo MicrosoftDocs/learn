@@ -1,4 +1,4 @@
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Create and explore a web API project
 
@@ -13,10 +13,10 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
 1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
-    dotnet new webapi -f net6.0
+    dotnet new webapi -controllers -f net8.0
     ```
 
-    This command creates the files for a basic web API project that uses controllers, along with a C# project file named *ContosoPizza.csproj* that returns a list of weather forecasts. If you get an error, ensure that you have the [.NET 6 SDK](https://dotnet.microsoft.com/download) installed.
+    This command creates the files for a basic web API project that uses controllers, along with a C# project file named *ContosoPizza.csproj* that returns a list of weather forecasts. If you get an error, ensure that you have the [.NET 8 SDK](https://dotnet.microsoft.com/download) installed.
 
     > [!IMPORTANT]
     > Web API projects are secured with `https` by default. If you have problems, [configure the ASP.NET Core HTTPS development certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos).
@@ -34,6 +34,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     -| appsettings.Development.json
     -| appsettings.json
     -| ContosoPizza.csproj
+    -| ContosoPizza.http
     -| Program.cs
     -| WeatherForecast.cs
     ```
@@ -44,7 +45,8 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     |----------------------------------------------|-----------------------------------------------------------------|
     | *:::no-loc text="Controllers/":::*           | Contains classes with public methods exposed as HTTP endpoints. |
     | *:::no-loc text="Program.cs":::*             | Configures services and the app's HTTP request pipeline, and contains the app's managed entry point.   |
-    | *:::no-loc text="ContosoPizza.csproj":::* | Contains configuration metadata for the project.                   |
+    | *:::no-loc text="ContosoPizza.csproj":::*    | Contains configuration metadata for the project.                   |
+    | *:::no-loc text="ContosoPizza.http":::*       | Contains configuration to test REST APIs directly from Visual Studio Code.                   |
 
 ## Build and test the web API
 
@@ -77,7 +79,7 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
           Hosting environment: Development        
     ```
 
-    If you're running this app on your own machine, you could direct a browser to the HTTPS link that's displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you use it throughout the module where `{PORT}` is used.
+    If you're running this app on your own machine, you could direct a browser to the HTTPS link displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you use it throughout the module where `{PORT}` is used.
 
     > [!IMPORTANT]
     > Check the terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps you troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
@@ -108,13 +110,53 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
     ]
     ```
 
+## Optional: Explore with `.http` files
+
+Included in the project is **ContosoPizza.http**, a file that is used to test API endpoints through a standard format. `.http` files are supported in several Integrated development environments (IDEs) including Visual Studio and inside of Visual Studio Code with the REST Client extension installed.
+
+1. Open the ContosoPizza.http file.
+
+    In some IDEs, this file is preconfigured with the **@ContosoPizza_HostAddress** variables and a **GET** command calling **/weatherforecast/** that accepts **application/json**.
+
+1. If it's present in your file, select the **Sent Request** command above the **GET** which sends a request to the running service.
+
+    Calling this command opens a response window with output similar to what we saw in the browser:
+
+    ```output
+    HTTP/1.1 200 OK
+    Connection: close
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 17 Jan 2024 16:46:40 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    [
+        {
+            "date": "2024-01-18",
+            "temperatureC": -2,
+            "temperatureF": 29,
+            "summary": "Warm"
+        },
+        {
+            "date": "2024-01-19",
+            "temperatureC": 24,
+            "temperatureF": 75,
+            "summary": "Chilly"
+        },
+        // ..
+    ]
+    ```
+
+
+## Optional: Explore APIs with Command Line HTTP REPL
+
 1. Open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu, then run the following command:
 
     ```dotnetcli
     dotnet tool install -g Microsoft.dotnet-httprepl
     ```
 
-    The preceding command installs the .NET HTTP REPL command-line tool that you use to make HTTP requests to the web API.
+    The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command-line tool that you use to make HTTP requests to the web API.
 
 1. Connect to the web API by running the following command:
   
@@ -197,4 +239,4 @@ To set up a .NET project to work with the web API, we use Visual Studio Code. Vi
 
 1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code. Shut down the web API by selecting CTRL+C on your keyboard.
 
-Now that you've created the web API, we can modify it to meet the needs of the pizza web API.
+Now that you created the web API, we can modify it to meet the needs of the pizza web API.

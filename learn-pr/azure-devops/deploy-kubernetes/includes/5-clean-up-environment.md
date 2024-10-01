@@ -1,4 +1,4 @@
-Having completed the assigned tasks for this module, the next steps involve cleaning up your Azure resources, transitioning the work item to the Done state on Azure Boards, and cleaning up your Azure DevOps environment.
+After completing the assigned tasks for this module, the next steps involve cleaning up your Azure resources, transitioning the work item to the **Done** state on Azure Boards, and cleaning up your Azure DevOps environment.
 
 > [!IMPORTANT]
 > Performing this cleanup is essential in order to to prevent incurring charges for Azure resources beyond the completion of this module.
@@ -19,7 +19,7 @@ The easiest way to clean up your Azure resources is to delete their parent resou
     az group delete --name tailspin-space-game-rg
     ```
 
-1. Optionally, after the previous command finishes, you can run the following command to confirm the deletion. You will notice that the resource group *tailspin-space-game-rg* no longer appears in the list.
+1. Optionally, after the previous command finishes, you can run the following command to confirm the deletion. You'll notice that the resource group *tailspin-space-game-rg* no longer appears in the list.
 
     ```azurecli
     az group list --output table
@@ -27,17 +27,17 @@ The easiest way to clean up your Azure resources is to delete their parent resou
 
 ## Move the work item to Done
 
-In this step, you will move the work item that you previously assigned to yourself in this module to the "Done" column. In practice, "Done" typically means delivering working software to users. However, for the purposes of this learning module, it means that the specific goal has been accomplished. To complete the work item:
+In this step, you move the work item that you previously assigned to yourself in this module to the **Done** column. In practice, **Done** typically means delivering working software to users. However, for the purposes of this learning module, it means that the specific goal was accomplished. To complete the work item:
 
 1. Navigate to your Azure DevOps project, and then select **Boards** then **Boards**.
 
 1. Move the **Create multi-container version of web site orchestrated with Kubernetes** work item to the **Done** column.
 
-    :::image type="content" source="../media/5-azure-boards-wi1-done.png" alt-text="Screenshot of Azure Boards, showing the card in the Done column.":::
+    :::image type="content" source="../media/5-azure-boards-wi1-done.png" alt-text="Screenshot of Azure Boards, showing the card in the Done column." lightbox="../media/5-azure-boards-wi1-done.png":::
 
 ## Disable the pipeline or delete your project
 
-This learning path provides a template for each module that you can use to create a fresh environment. If you run multiple templates, you'll end up with multiple Azure Pipelines projects that point to the same GitHub repository. This setup can cause multiple pipelines to run each time you push a change to your GitHub repository, which can create issues. Therefore, before moving to the next module, it's recommended to disable or delete the pipeline to avoid losing free build minutes.
+This learning path provides a template for each module that you can use to create a fresh environment. If you run multiple templates, you end up with multiple Azure Pipelines projects that point to the same GitHub repository. This setup can cause multiple pipelines to run each time you push a change to your GitHub repository, which can create issues. Therefore, before moving to the next module, you should disable or delete the pipeline to avoid losing free build minutes.
 
 Choose one of the following options:
 

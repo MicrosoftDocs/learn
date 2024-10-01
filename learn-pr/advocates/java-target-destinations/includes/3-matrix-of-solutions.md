@@ -1,14 +1,22 @@
 We've described the most typical deployment types for Java applications. Let's now see which Azure service can work best, depending on the deployment type you need.
 
+## Azure Container Apps
+
+Azure Container Apps is a managed service that runs Docker containers.
+
+Azure Container Apps can run any Java application, when packaged as a Docker image (including Tomcat, Spring Boot and Quarkus applications). Building and managing those images is your responsibility (for example, by using GitHub Actions): this gives you a lot of flexibility, but also requires some maintenance.
+
+It's a cost-effective and scalable solution, which makes it a great option for small and medium workloads.
+
+For running a container-based Java monolithic application, Azure Container Apps is therefore the best option.
+
 ## Azure App Service
 
-Azure App Service is a platform as a service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java web applications with automatic OS and Java Virtual Machine (JVM) updates and patches, as well as autoscaling or monitoring.
+Azure App Service is a platform as a service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications with automatic OS and Java Virtual Machine (JVM) updates and patches, as well as autoscaling or monitoring.
 
-App Service can run any executable JAR file—such as the files provided by Spring Boot—and it can deploy any WAR application on top of popular application servers such as Apache Tomcat or Red Hat JBoss.
+App Service can run any executable JAR file, which makes it an alternative to Azure Container Apps for running simple Java monolithic applications.
 
-For running a simple Java monolithic application, App Service is therefore the best option.
-
-If you need more control over your deployments, App Service also supports Docker images. This benefit makes it possible for you to include specific or custom solutions, but at the cost of more maintenance at your end.
+It can also deploy any WAR application on top of popular application servers such as Apache Tomcat or Red Hat JBoss. This makes it the best solution for running Jakarta EE applications on Azure.
 
 ## Azure Functions
 
@@ -22,7 +30,7 @@ As a result, Azure Functions is tailored for applications that need a lot of sca
 
 Azure Spring Apps is a unique Azure service that provides a platform as a service solution for running Spring Boot microservices. Spring Cloud provides many tools, such as a service registry or a configuration server. It also provides specific autoscaling and security mechanisms that greatly simplify the use of a microservice architecture that's based on Spring Boot.
 
-The Spring Cloud offering is created and managed jointly by Microsoft and VMware, the company that builds the Spring Framework. Spring Cloud provides support both for OS and JVM updates and patches, such as Azure App Service, and for advanced Spring services.
+The Spring Cloud offering is created and managed jointly by Microsoft and Broadcom, the company that builds the Spring Framework. Spring Cloud provides support both for OS and JVM updates and patches, such as Azure App Service, and for advanced Spring services.
 
 You can also use the Azure Spring Apps service to run other workloads, such as Spring Boot monolithic applications or even .NET microservices that use Steeltoe, but the service is mainly used to run Spring Boot microservices.
 

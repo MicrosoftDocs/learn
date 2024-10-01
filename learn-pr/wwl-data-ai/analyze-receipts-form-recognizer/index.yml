@@ -1,15 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
-  title: Analyze receipts with Azure AI Document Intelligence
-  description: "Use Azure AI Document Intelligence to automate data extraction."
-  ms.date: 08/22/2023
+  title: Fundamentals of Azure AI Document Intelligence
+  description: Use Azure AI Document Intelligence to automate data extraction.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: document-intelligence
-title: Analyze receipts with Azure AI Document Intelligence
+  ms.date: 11/02/2023
+  ms.service: azure-ai-document-intelligence
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Fundamentals of Azure AI Document Intelligence
 summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
 abstract: |
   Learn how to use the prebuilt receipt processing capabilities of Azure AI Document Intelligence.
@@ -30,6 +31,7 @@ subjects:
 - classification-analysis
 units:
 - learn.wwl.analyze-receipts-form-recognizer.introduction
+- learn.wwl.analyze-receipts-form-recognizer.document-intelligence-capabilities
 - learn.wwl.analyze-receipts-form-recognizer.get-started
 - learn.wwl.analyze-receipts-form-recognizer.exercise
 - learn.wwl.analyze-receipts-form-recognizer.knowledge-check

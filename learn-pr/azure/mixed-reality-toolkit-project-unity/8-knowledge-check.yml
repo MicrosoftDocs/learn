@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Five multiple-choice questions
-  ms.date: 06/26/2023
+  ms.date: 01/12/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -19,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: " In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
+    - content: "In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
       choices:
         - content: " WebGL"
           isCorrect: false
@@ -29,7 +28,7 @@ quiz:
           explanation: The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
         - content: "Universal Windows Platform"
           isCorrect: true
-          explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
+          explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices, Xbox One, and HoloLens with a single code base.
     - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
         - content: "org.mixedrealitytoolkit.core"
@@ -48,4 +47,4 @@ quiz:
           explanation: "The 'MRTK XR Rig' object already has its own camera."
         - content: "The Main Camera object should be deleted."
           isCorrect: true
-          explanation: "The Main Camera object should be deleted because the 'MRTK XR Rig' prefab that was added to the scene contains a camera in its child objects."
+          explanation: "You should delete the Main Camera object because the 'MRTK XR Rig' prefab you added to the scene contains a camera in its child objects."

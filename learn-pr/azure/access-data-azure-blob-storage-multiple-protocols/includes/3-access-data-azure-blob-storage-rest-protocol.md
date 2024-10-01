@@ -42,4 +42,4 @@ hdfs dfs -D "fs.azure.createRemoteFileSystemDuringInitialization=true" -ls abfs:
 hdfs dfs -ls <path>
 ```
 
-Your company can maintain the same storage solution for both object storage and analytics storage. You can use existing tools, applications, and services to access data in Blob Storage that have a hierarchical namespace, without having to modify your solution depending on the data.
+Your company can maintain the same storage solution for both object storage and analytics storage. You can use existing tools, applications, and services to access data in Blob Storage that have a hierarchical namespace without having to modify your solution depending on the data.

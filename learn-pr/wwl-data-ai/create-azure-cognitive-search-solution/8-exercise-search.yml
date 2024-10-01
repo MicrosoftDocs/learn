@@ -3,14 +3,15 @@ uid: learn.wwl.create-azure-cognitive-search-solution.exercise-search
 title: Exercise - Create a search solution
 metadata:
   title: Exercise - Create a search solution
-  description: "Exercise - Create a search solution"
-  ms.date: 09/18/2023
+  description: Exercise - Create a search solution
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
-labId: 93859
+labId: 152398
 labModal: true
 durationInMinutes: 30
 content: |

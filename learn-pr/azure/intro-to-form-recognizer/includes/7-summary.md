@@ -1,6 +1,6 @@
-In this module, you learned about Azure AI Document Intelligence, a cognitive service available on Azure. You learned about the different types of forms that prebuilt models can analyze and extract data from. You also learned how Layout API can extract document structures, and how prebuilt models can extract data tailored specifically to your forms.
+In this module, you learned about Azure AI Document Intelligence, a cloud-based Azure AI service that that uses machine learning to extract key text and structure elements from documents. You learned about the different types of forms and documents that Document Intelligence models can analyze and process and you had the opportunity to try the service.
 
-Now that you've reviewed this module, you should be able to:
+Now that you reviewed this module, you should be able to:
 
 - Assess the benefits of Document Intelligence.
 - Describe what Document Intelligence is.

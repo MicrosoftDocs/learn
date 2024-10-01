@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check questions for the Introduction to Microsoft Purview module."
-  ms.date: 05/09/2023
+  ms.date: 09/30/2023
   author: whhender 
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-knowledge-check.md)]

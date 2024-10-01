@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-governance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for the module, Describe the data governance capabilities of Microsoft Purview."
+  ms.date: 9/19/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  questions:
+
+  - content: "Which feature of Microsoft Purview Data Catalog is used to provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for users"
+    choices:
+    - content: "Glossary terms"
+      isCorrect: true
+      explanation: Correct. Glossary terms provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for use."
+    - content: "Data products"
+      isCorrect: false
+      explanation: "Incorrect. The data product feature provides context for the assets that are included within it, and provides a use case for data consumers. The data products feature doesn't apply policies."
+    - content: "Objectives and key results (OKRs)"
+      isCorrect: false
+      explanation: "Incorrect. OKRs in Microsoft Purview are trackable business objectives tied to governance domains and data products to emphasize the value of business data."
+
+  - content: "Which data governance concept is about organizing, annotating, and publishing your data so that it's safely accessible, reuseable, and protected."
+    choices:
+    - content: "Data curation"
+      isCorrect: true
+      explanation: "Correct. Data curation is about organizing, annotating, and publishing your data so that it's safely accessible, reuseable, and protected."
+    - content: "Data access"
+      isCorrect: false
+      explanation: "Data access is about quickly providing the right access and enforcing the right use to balance safety and innovation."
+    - content: "Data health"
+      isCorrect: false
+      explanation: "Data health is about ensuring data quality standards are maintained across your estate, and having an active data lifecycle keeping your data fresh and secure."

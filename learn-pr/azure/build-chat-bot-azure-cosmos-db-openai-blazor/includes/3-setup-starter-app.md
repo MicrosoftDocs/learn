@@ -2,8 +2,8 @@ The first step of this project is to walk through the existing starter applicati
 
 There are a few requirements in this exercise:
 
-- Open the **CodeTour** within the application and walk through the entire tour.
-- Successfully build the application.
+- Open the **CodeTour** within the application and walk through the entire tour
+- Successfully build the application
 - Run the application using the **Hot Reload** feature of .NET
 
 After you complete this exercise, you'll have a general understanding of the project and its components.
@@ -12,13 +12,16 @@ After you complete this exercise, you'll have a general understanding of the pro
 
 This application uses [CodeTour](https://github.com/microsoft/codetour), a Visual Studio Code extension to walk you through a guided tour of the codebase. Here, you walk through the codebase and orient yourself to the application that you're working on through this project.
 
+> [!IMPORTANT]
+> This code tour is only available in the `start` branch of the repository. If you don't see the tour commands or files, please validate that you are using the correct branch.
+
 1. Open the **Command Palette**, search for the **CodeTour** commands, and then select **CodeTour: Start Tour**.
 
     :::image type="content" source="../media/start-codetour-command-palette.png" alt-text="Screenshot of the Command Palette option to start the primary guided tour of the codebase.":::
 
 1. Review the overview of the guided tour.
 
-1. The guided tour of the codebase walks you through the following components of the application:
+1. The guided tour of the codebase walks you through the following components of the application.
 
     - The `Message` and `Session` types in the `/Models` path
     - The Bicep template and various properties of the resources it deployed

@@ -7,9 +7,7 @@ metadata:
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

@@ -6,9 +6,8 @@ metadata:
   description: In this exercise, you'll create your first function in JavaScript.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 05/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/26/2023
+  ms.topic: unit
   ms.custom:
     - team=nextgen
     - devx-track-js

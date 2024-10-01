@@ -3,14 +3,12 @@ uid: learn.wwl.use-apache-spark-work-files-lakehouse
 metadata:
   title: Use Apache Spark in Microsoft Fabric
   description: "Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data at scale."
-  ms.date: 05/10/2023
+  ms.date: 09/25/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
-    - build-2023
     - build-2023-dataai
     - build-2023-fabric
 title: Use Apache Spark in Microsoft Fabric
@@ -19,6 +17,7 @@ abstract: |
   In this module, you'll learn how to:
   - Configure Spark in a Microsoft Fabric workspace
   - Identify suitable scenarios for Spark notebooks and Spark jobs
+  - Use Spark to connect to data soueces and ingest data
   - Use Spark dataframes to analyze and transform data
   - Use Spark SQL to query data in tables and views
   - Visualize data in a Spark notebook
@@ -39,6 +38,7 @@ units:
 - learn.wwl.use-apache-spark-work-files-lakehouse.introduction
 - learn.wwl.use-apache-spark-work-files-lakehouse.spark
 - learn.wwl.use-apache-spark-work-files-lakehouse.spark-code
+- learn.wwl.use-apache-spark-work-files-lakehouse.connect
 - learn.wwl.use-apache-spark-work-files-lakehouse.dataframe
 - learn.wwl.use-apache-spark-work-files-lakehouse.spark-sql
 - learn.wwl.use-apache-spark-work-files-lakehouse.visualize-data

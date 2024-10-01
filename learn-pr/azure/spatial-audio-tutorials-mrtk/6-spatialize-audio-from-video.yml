@@ -4,11 +4,10 @@ title: Spatialize audio from a video
 metadata:
   title: Spatialize audio from a video
   description: Description to Spatialize audio from a video
-  ms.date: 06/26/2023
+  ms.date: 02/12/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-spatialize-audio-from-video.md)]

@@ -7,7 +7,7 @@ metadata:
   ms.date: 09/15/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -36,17 +36,17 @@ quiz:
     - content: "Enterprise edition"
       isCorrect: true
       explanation: "Correct. Enterprise edition builds on the features of Pro edition, with additional features that meet the needs of large enterprises. Enterprise edition is available to Volume Licensing customers only. They can choose the pace at which they adopt new technology. Enterprise edition also supports a broad range of options for operating system deployment and device and app management."
-  - content: "Your organization is in the process of migrating users to Microsoft 365 E3. You have a mix of Windows 10 editions deployed. You're required to provide conditional access and SSO from anywhere for the Microsoft 365 E3 users using Domain Join with Azure Active Directory. Which of the following Windows versions will support this requirement?"
+  - content: "Your organization is in the process of migrating users to Microsoft 365 E3. You have a mix of Windows 10 editions deployed. You're required to provide conditional access and SSO from anywhere for the Microsoft 365 E3 users using Domain Join with Microsoft Entra ID. Which of the following Windows versions will support this requirement?"
     choices:
     - content: "Windows 10 Home, Pro, and Enterprise"
       isCorrect: false
-      explanation: "Incorrect. These three versions don't all support the ability to join Azure Active Directory. Try again."
+      explanation: "Incorrect. These three versions don't all support the ability to join Microsoft Entra ID. Try again."
     - content: "Windows 10 Pro and Enterprise"
       isCorrect: true
-      explanation: "Correct. The Pro edition includes Domain Join functionality, which allows computers to be joined to an Active Directory domain. It also includes the ability to join Azure Active Directory. This enables them to perform single sign-on across Windows, Microsoft 365, and other cloud-hosted apps and services. Since the Enterprise edition builds on the features of the Pro edition, it also includes these features, along with additional features that meet the needs of large enterprises."
+      explanation: "Correct. The Pro edition includes Domain Join functionality, which allows computers to be joined to an Active Directory domain. It also includes the ability to join Microsoft Entra ID. This enables them to perform single sign-on across Windows, Microsoft 365, and other cloud-hosted apps and services. Since the Enterprise edition builds on the features of the Pro edition, it also includes these features, along with additional features that meet the needs of large enterprises."
     - content: "Windows 10 Enterprise only"
       isCorrect: false
-      explanation: "Incorrect. Windows 10 Enterprise isn't the only version of Windows that supports the ability to join Azure Active Directory. Try again."
+      explanation: "Incorrect. Windows 10 Enterprise isn't the only version of Windows that supports the ability to join Microsoft Entra ID. Try again."
   - content: "You're the IT Support professional for Contoso, a large enterprise organization that's a Microsoft Volume License customer. Contoso needs to deploy a set of Windows 11 computers for an isolated office that won't be managed for at least six months. Given Contoso's requirements, which of the following Windows 11 editions would be the most suitable for deployment?"
     choices:
     - content: "Pro edition"

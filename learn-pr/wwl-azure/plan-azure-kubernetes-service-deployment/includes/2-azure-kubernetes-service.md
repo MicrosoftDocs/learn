@@ -6,7 +6,7 @@ As an open platform, Kubernetes allows you to build your applications with your 
 
 AKS provides a managed Kubernetes service that reduces the complexity of deployment and core management tasks, like upgrade coordination. The Azure platform manages the AKS control plane, and you only pay for the AKS nodes that run your applications.
 
-:::image type="content" source="../media/kubernetes-architecture-components-fb87cc85.png" alt-text="Diagram showing how the basic components and resources for Azure Kubernetes.":::
+:::image type="content" source="../media/kubernetes-architecture-components-1-a5c3092e.png" alt-text="Diagram showing how the basic components and resources for Azure Kubernetes.":::
 
 
 The basic components for Azure Kubernetes Service are:

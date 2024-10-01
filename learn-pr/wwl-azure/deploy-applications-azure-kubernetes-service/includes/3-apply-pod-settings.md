@@ -62,7 +62,7 @@ In this task, you install the Azure Policy add-on for AKS.
     ```azurecli
     AKSRG='aks-01-RG'
     AKSNAME='aks-01'
-    az ads enable-addons --addons azure-policy --name $AKSNAME --resource-group $AKSRG
+    az aks enable-addons --addons azure-policy --name $AKSNAME --resource-group $AKSRG
     ```
     
     > [!NOTE]

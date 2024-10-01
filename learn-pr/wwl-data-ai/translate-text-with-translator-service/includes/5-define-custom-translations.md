@@ -1,4 +1,3 @@
-
 While the default translation model used by Azure AI Translator is effective for general translation, you may need to develop a translation solution for businesses or industries in that have specific vocabularies of terms that require custom translation.
 
 To solve this problem, you can create a custom model that maps your own sets of source and target terms for translation. To create a custom model, use the Custom Translator portal to:
@@ -62,7 +61,7 @@ The response returns a response code of `200` if the request was successful. It 
 ]
 ```
 
-If the request wasn't successful, then a number of different status codes may be returned depending on the error type, such as `403` (missing or invalid query parameters). See [Response status codes](/azure/ai-services/translator/reference/v3-0-translate?tabs=curl) for a full list of codes and their explanation.
+If the request wasn't successful, then a number of different status codes may be returned depending on the error type, such as `400` (missing or invalid query parameters). See [Response status codes](/azure/ai-services/translator/reference/v3-0-translate?tabs=curl) for a full list of codes and their explanation.
 
 > [!NOTE]
 > For more information about custom translation, see [Quickstart: Build, publish, and translate with custom models](/azure/ai-services/translator/custom-translator/quickstart).

@@ -3,13 +3,14 @@ uid: learn.github-copilot-with-javascript.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Review the differences in GitHub Copilot and Prompt engineering"
-  ms.date: 8/23/2023
+  description: Review the differences in GitHub Copilot and Prompt engineering
   author: abrilurena
   ms.author: abrilu
-  ms.topic: interactive-tutorial
+  ms.date: 08/12/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: devx-track-js
-  ms.prod: github
 durationInMinutes: 5
 content: |
 quiz:

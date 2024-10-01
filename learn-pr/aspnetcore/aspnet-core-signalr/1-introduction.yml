@@ -5,12 +5,11 @@ metadata:
   unitType: introduction
   title: Introduction
   description: This unit introduces you to using real-time web functionality with ASP.NET Core SignalR.
-  ms.date: 10/06/2023
+  ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Microsoft Fabric security is based on [Power BI security](/power-bi/enterprise/service-admin-power-bi-security). Your role as an admin is to manage security for the Fabric environment, including managing users and groups, and managing how users interact with Fabric in terms of sharing and distribution of content.
 
 ## Manage users: assign and manage licenses
@@ -18,7 +14,7 @@ License management for Fabric is handled in the Microsoft 365 admin center. For 
 
 As an admin, you can manage how users interact with Fabric in terms of sharing and distribution of content. This includes managing how users share content with others, and how they distribute content to others. You can also manage how users interact with items, such as data warehouses, data pipelines, datasets, reports, and dashboards.
 
-Items in workspaces are best distributed through a workspace app or the workspace directly. Granting the least permissive rights is the first step is securing the data. Share the read only app for access to the reports or grant access to the workspaces for collaboration and development. Another aspect of managing and distributing items is enforcing such best practices.
+Items in workspaces are best distributed through a workspace app or the workspace directly. Granting the least permissive rights is the first step in securing the data. Share the read only app for access to the reports or grant access to the workspaces for collaboration and development. Another aspect of managing and distributing items is enforcing such best practices.
 
 You can manage sharing and distribution both internally and outside of your organization, in compliance with your organization's policies and procedures.
 

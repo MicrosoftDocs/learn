@@ -4,11 +4,10 @@ title: Explore software composition analysis (SCA)
 metadata:
   title: Explore software composition analysis (SCA)
   description: "Explore software composition analysis (SCA)"
-  ms.date: 07/06/2023
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.service: azure-devops
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-software-composition-analysis.md)]

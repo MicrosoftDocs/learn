@@ -1,6 +1,6 @@
 Use Microsoft Sentinel to hunt for security threats across on-premises and cloud environments by using interactive queries and other tools.
 
-This module imagines a midsize financial services company called Contoso, Ltd., based in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Azure Information Protection.
+This module imagines a midsize financial services company called Contoso, Ltd., based in London with a New York branch office. Contoso uses Microsoft 365, Microsoft Entra ID, Microsoft Entra ID Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Azure Information Protection.
 
 As part of the Security Operations Center team, you've been tasked with using Microsoft Sentinel to identify security threats within Contoso's Azure environment.
 

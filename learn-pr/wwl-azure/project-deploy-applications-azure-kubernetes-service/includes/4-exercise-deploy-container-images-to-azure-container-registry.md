@@ -16,4 +16,4 @@ In Exercise 3, you deploy two container images you created earlier in this lab t
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1001-deploy-and-manage-containers-with-azure-kubernetes-service/Instructions/Labs/Exercise_03_deploy_container_images_azure_kubernetes_service.html)
+](https://go.microsoft.com/fwlink/?linkid=2247298)

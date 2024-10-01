@@ -1,10 +1,10 @@
-In this exercise, you'll try out some of the techniques you've learned about in this module to build a custom skill for a cognitive search solution.
+In this exercise, you'll try out some of the techniques you've learned about in this module to build a custom skill for an AI Search solution.
 
-[!INCLUDE [Lab note](../../../includes/wwl/lab-note.md)]
+To complete the exercise for this module, launch the VM and follow the instructions.
 
-If you're completing this exercise on your own computer, launch the exercise and follow the instructions.
+[!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://github.com/MicrosoftLearning/mslearn-knowledge-mining/blob/main/Instructions/Labs/02-search-skills.md) 
+If you'd like to follow these instructions on your own computer, you can follow the [exercise instructions here](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Exercises/02-search-skills.html?azure-portal=true).
 
 When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
 

@@ -4,13 +4,12 @@ title: Exercise - Set up Microsoft Entra ID
 metadata:
   title: Exercise - Set up Microsoft Entra ID
   description: Exercise - Set up Microsoft Entra ID
-  ms.date: 05/19/2021
+  ms.date: 08/22/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-set-up-azure-ad.md)]

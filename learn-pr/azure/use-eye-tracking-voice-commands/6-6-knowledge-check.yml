@@ -7,14 +7,13 @@ metadata:
   ms.date: 06/26/2023
   author: Sean-Kerawala
   ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: Choose the best response for each question. Then select Check your answers.
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following option enables simulated eye-tracking for the Unity editor?"
+    - content: "Which of the following option enables simulated eye tracking for the Unity editor?"
       choices:
       - content: "Enable eye tracking simulation on the scene's MRTK Input Simulator game object."
         isCorrect: true
@@ -29,10 +28,10 @@ quiz:
       choices:
         - content: "Speech Interactor"
           isCorrect: true
-          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
+          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when KeywordRecognitionSubsystem hears the associated keyword.
         - content: "Stateful Interactables"
           isCorrect: false
-          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
+          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when KeywordRecognitionSubsystem hears the associated keyword.
         - content: "Fuzzy Gaze Interactor"
           isCorrect: false
           explanation: The Fuzzy Gaze Interactor is used for interacting with interactables at a distance using gaze raycasts.

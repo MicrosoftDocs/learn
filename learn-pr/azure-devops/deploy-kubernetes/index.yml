@@ -2,16 +2,16 @@
 uid: learn.azdo.deploy-kubernetes
 metadata:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
-  description: Deploy multiple containers to AKS cluster with Azure Pipelines.
-  ms.date: 04/19/2023
+  description: Learn how to deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
+  ms.date: 02/01/2024
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.service: Azure Pipelines
+  ms.topic: module
+  ms.service: azure-devops-pipelines
   manager: mijacobs
 title: Automate multi-container Kubernetes deployments with Azure Pipelines
-summary: Deploy multiple containers to AKS cluster with Azure Pipelines.
+summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
 abstract: |
   After completing this module, you'll be able to:
   - Explain the benefits of Kubernetes and when to use it.

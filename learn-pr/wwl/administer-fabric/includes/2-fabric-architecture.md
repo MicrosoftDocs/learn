@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including:
 
 - data warehousing
@@ -32,4 +28,5 @@ Fabric *items* are the building blocks of the Fabric platform. They're the objec
 Understanding Fabric concepts is important for you as an admin, because it helps you understand how to manage the Fabric environment.
 
 > [!NOTE]
-> See [Enable Microsoft Fabric for your organization](https://learn.microsoft.com/fabric/admin/fabric-switch) to learn how to opt in to the Fabric public preview.
+> See [Enable Microsoft Fabric for your organization](/fabric/admin/fabric-switch) to learn how to opt in to the Fabric public preview.
+

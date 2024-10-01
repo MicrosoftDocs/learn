@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-machines-scale-powershell-scripts
+title: Connect machines at scale by running PowerShell scripts with Configuration Manager
+metadata:
+  title: Connect machines at scale by running PowerShell scripts with Configuration Manager
+  description: "Connect machines at scale by running PowerShell scripts with Configuration Manager"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 16
+content: |
+  [!include[](includes/4-connect-machines-scale-powershell-scripts.md)]

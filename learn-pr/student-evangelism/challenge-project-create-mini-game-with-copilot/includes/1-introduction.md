@@ -22,12 +22,12 @@ By the end of this module, you have a playable mini-game application with GitHub
 In this module, you demonstrate your ability to:
 
 - Use GitHub Codespaces as a development environment.
-- Develop input and output routines in a Python console application.
 - Use GitHub Copilot as an assistant.
+- Develop input and output routines in a Python console application.
 
 ## Prerequisites
 
 - A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
 - Basic of Python to work with variables, lists, loops, conditionals and print messages on the console.
-- Awareness of GitHub Copilot at the beginner level, including how to install the extension and how to use it in your editor.
-- Awareness of Codespaces at the beginner level, including its main features and benefits to application development.
+- GitHub Copilot enabled in your GitHub account.
+- Basic understanding of how to install extensions in Visual Studio Code.

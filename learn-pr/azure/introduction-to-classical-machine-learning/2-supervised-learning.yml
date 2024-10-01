@@ -4,12 +4,10 @@ title: Define supervised learning
 metadata: 
   title: Define supervised learning
   description: Conceptual unit that introduces what supervised learning in machine learning is.
-  ms.date: 05/25/2021
-  ms.service: machine-learning
+  ms.date: 09/20/2024
   author: lgayhardt
   ms.author: lagayhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-supervised-learning.md)]

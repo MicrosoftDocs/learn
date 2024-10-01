@@ -1,14 +1,14 @@
-In this exercise, you'll add tags to help organize and track your Microsoft Azure resources. You'll also use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations for each deployment.
+In this exercise, you add tags to help organize and track your Microsoft Azure resources. You also use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations for each deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create a tag to track the resource deployment environment and project
 
-First, you'll create a parameter to use as a resource tag in your template.
+First, you create a parameter to use as a resource tag in your template.
 
-1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor after the closing brace for the `storageSKU` parameter. Add a comma and select the <kbd>Enter</kbd> key.
+1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor after the closing brace for the `storageSKU` parameter. Add a comma and press <kbd>Enter</kbd>.
 1. Type **par**. You see a list of related snippets.
-1. Select **arm-param**. Remember, this action adds a generic parameter to the template. It will look like this code:
+1. Select **arm-param**. Remember, this action adds a generic parameter to the template. It looks like this code:
 
     ```json
     "parameter1": {
@@ -105,9 +105,9 @@ First, you'll create a parameter to use as a resource tag in your template.
 ### Verify that the new tags are in the deployment
 
 1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group, then select the storage account you deployed.
-1. You'll see the **Environment : Dev** and **Project : Tutorial** tags:
+1. Notice the **Environment : Dev** and **Project : Tutorial** tags:
 
-    :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Tutorial Storage account tags." border="true":::
+    :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the selected tags in the Storage account Overview page." border="true":::
 
 ## Use a parameter file
 
@@ -162,7 +162,7 @@ In this section, you deploy the ARM template, specifying which parameter file to
 
 1. Check Azure to ensure that the deployment was successful and that the tag value changed:
 
-    :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Learn tags." border="true":::
+    :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the updated tag values in the Storage account Overview page." border="true":::
 
 1. As a challenge, create a parameter file for the production environment. Change the parameter file path when you run the command to deploy to the production environment.
 
@@ -185,7 +185,7 @@ In this section, you deploy the ARM template, specifying which parameter file to
 
 1. Check Azure to ensure that the deployment was successful and that the tag value changed:
 
-    :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Learn tags." border="true":::
+    :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the updated tag values in the Storage account Overview page." border="true":::
 
 1. As a challenge, create a parameter file for the production environment. Change the parameter file path when you run the command to deploy to the production environment.
 

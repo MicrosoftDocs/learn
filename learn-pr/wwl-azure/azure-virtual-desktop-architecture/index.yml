@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.service: virtual-desktop
+  ms.topic: module
+  ms.service: azure-virtual-desktop
 title: Azure Virtual Desktop Architecture
 summary: Azure Virtual Desktop manages the infrastructure and brokering components, while customers manage their own desktop host virtual machines (VMs) and clients. Microsoft manages the Remote Connection Gateway, and Connection Broker services as part of Azure.
 abstract: |

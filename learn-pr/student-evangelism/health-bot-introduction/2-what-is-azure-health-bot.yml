@@ -6,9 +6,8 @@ metadata:
   description: In this unit, you'll learn the basics of Azure Health Bot.
   author: RuchaYagnik
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

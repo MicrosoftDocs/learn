@@ -1,8 +1,8 @@
-A successfully configured Kubernetes installation depends on a solid understanding of the Kubernetes system architecture. Here, you'll look at all the components that make up a Kubernetes installation.
+A successfully configured Kubernetes installation depends on a solid understanding of the Kubernetes system architecture. Here, you look at all the components that make up a Kubernetes installation.
 
 ## What is a computer cluster?
 
-A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster will typically do the same kinds of tasks. For example, they'll all host websites, APIs, or run compute-intensive work.
+A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster handle the same kinds of tasks. For example, they'll all host websites, APIs, or run compute-intensive work.
 
 A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The computers in a cluster that run the tasks are called *nodes*, and the computers that run the scheduling software are called control *planes*.
 
@@ -24,7 +24,7 @@ Now, look at both the control planes and worker nodes and the software that runs
 
 The Kubernetes control plane in a Kubernetes cluster runs a collection of services that manage the orchestration functionality in Kubernetes.
 
-From a learning perspective, it makes sense to use a single control plane in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you'll find that the preferred configuration is a high-availability deployment with three to five replicated control planes.
+From a learning perspective, it makes sense to use a single control plane in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you find that the preferred configuration is a high-availability deployment with three to five replicated control planes.
 
 > [!NOTE]
 > The fact that a control plane runs specific software to maintain the state of the cluster doesn't exclude it from running other compute workloads. However, you usually want to exclude the control plane from running noncritical and user app workloads.
@@ -55,11 +55,11 @@ For example, as a user, you use a command-line app called `kubectl` that allows 
 
 This API exposes a RESTful API that you can use to post commands or YAML-based configuration files. YAML is a human-readable, data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
 
-For example, assume that you want to increase the number of instances of your app in the cluster. You'll define the new state by using a YAML-based file and submit this file to the API server. The API server will validate the configuration, save it to the cluster, and finally enact the configured increase in app deployments.
+For example, assume that you want to increase the number of instances of your app in the cluster. You define the new state with a YAML-based file and submit this file to the API server. The API server validates the configuration, save it to the cluster, and finally enact the configured increase in app deployments.
 
 ### What is the backing store?
 
-The backing store is a persistence store that your Kubernetes cluster uses to save the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state and the desired state of all objects within your cluster.
+The backing store is a persistent storage in which your Kubernetes cluster saves its completed configuration. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state and the desired state of all objects within your cluster.
 
 In a production Kubernetes cluster, the official Kubernetes guidance is to have three to five replicated instances of the `etcd` database for high availability.
 
@@ -74,11 +74,11 @@ The scheduler is the component that's responsible for the assignment of workload
 
 The controller manager launches and monitors the controllers configured for a cluster through the API server.
 
-Kubernetes uses controllers to track object states in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
+Kubernetes uses controllers to track object states in the cluster. Each controller runs in a nonterminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
-The controller communicates with the API server to determine the object's state. If the current state is different from the wanted state of the object, the controller will take action to ensure the wanted state.
+The controller communicates with the API server to determine the object's state. If the current state is different from the wanted state of the object, the controller takes action to ensure the wanted state.
 
-Suppose that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
+Suppose that one of three containers running in your cluster stops responding and fails. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
 
 ### What is the cloud controller manager?
 
@@ -142,7 +142,7 @@ For example, let's say that you want to deploy a website to a Kubernetes cluster
 
 It's unlikely that a web app has a website as the only component in the solution. A web app typically has some kind of datastore and other supporting elements. Kubernetes pods can also contain more than one container.
 
-Assume that your site uses a database. The website is packaged in the main container, and the database is packaged in the supporting container. For these two containers to function and communicate with each other, you expect them to run in an environment that provides a host OS, a network stack, kernel namespaces, shared memory, and volumes to persist data. The pod is the sandbox environment that provides all of these services to your app. The pod also allows the containers to share its assigned IP address.
+Assume that your site uses a database. The website is packaged in the main container, and the database is packaged in the supporting container. Multiple containers communicate with each other through an environment. The containers include services for a host OS, network stack, kernel namespace, shared memory, and storage volume. The pod is the sandbox environment that provides all of these services to your app. The pod also allows the containers to share its assigned IP address.
 
 Because you can potentially create many pods that are running on many nodes, it can be hard to identify them. You can recognize and group pods by using string labels that you specify when you define a pod.
 
@@ -156,13 +156,13 @@ Here are the phases in a pod's lifecycle:
 
 | Phase | Description |
 |---|---|
-| Pending | The pod has been accepted by the cluster, but one or more of the containers isn't set up or ready to run. The Pending status includes the time a pod is waiting to be scheduled and the time spent downloading container images. |
+| Pending | The pod accepts the cluster, but not all containers in the cluster are set up or ready to run. The Pending status indicates the time a pod is waiting to be scheduled and the time spent downloading container images. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
 | Succeeded | The pod transitions to a succeeded state after the pod completes its intended task and runs successfully. |
-| Failed | Pods can fail for various reasons. A container in the pod might have failed, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
-| Unknown | If the state of the pod can't be determined, the pod is an Unknown state. |
+| Failed | Pods can fail for various reasons. A container in the pod might fail, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
+| Unknown | If the state of the pod can't be determined, the pod is in an Unknown state. |
 
-Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted and is replaced by a new pod, the new pod is an entirely new instance of the pod based on the pod manifest.
+Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted,  a new pod is created immediately after. The new pod is considered an entirely new instance based on the pod manifest isn't an exact copy, so it differs from the deleted pod.
 
 The cluster doesn't save the pod's state or dynamically assigned configuration. For example, it doesn't save the pod's ID or IP address. This aspect affects how you deploy pods and how you design your apps. For example, you can't rely on preassigned IP addresses for your pods.
 

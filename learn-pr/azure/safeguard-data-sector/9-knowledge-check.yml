@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: A knowledge check for Safeguard data with public sector with Azure.
-  ms.date: 02/23/2021
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2023
+  author: EliotSeattle
+  ms.author: eliotgra
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)] 

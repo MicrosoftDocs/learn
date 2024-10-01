@@ -4,12 +4,12 @@ metadata:
   moduleType: standard
   title: "Create a cross-platform app with .NET MAUI"
   description: "Learn how to use Visual Studio with .NET MAUI to create a cross-platform app."
-  ms.date: 09/11/2023
+  ms.date: 10/13/2023
   author: codemillmatt 
   ms.author: masoucou 
-  ms.topic: interactive-tutorial
-  ms.prod: dotnet-mobile
-  ms.technology: dotnet-maui
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Create a cross-platform app with .NET MAUI
 summary: "Learn how to use Visual Studio with .NET MAUI to create a cross-platform app." 
 abstract: | 
@@ -19,8 +19,9 @@ abstract: |
   - Define a shared UI for the platforms supported by .NET MAUI.
   - Deploy a .NET MAUI app from Visual Studio.
   - Dial a number from within the app.
-prerequisites: | 
-  - Visual Studio 2022 with the MAUI workload installed
+prerequisites: |
+  - [Visual Studio 2022](https://www.visualstudio.com?azure-portal=true) with the .NET MAUI workload
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com), the [.NET SDK](https://dotnet.microsoft.com/download) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/build-mobile-and-desktop-apps.svg
 levels: 

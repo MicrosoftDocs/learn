@@ -1,4 +1,4 @@
-The costs of running an Azure Cognitive Search solution vary depending on the capacity and features you use. 
+The costs of running an Azure AI Search solution vary depending on the capacity and features you use. 
 
 Here, you'll explore the billing model, learn how to estimate baseline costs, and monitor those costs with budgets. 
 
@@ -6,14 +6,14 @@ Here, you'll explore the billing model, learn how to estimate baseline costs, an
 
 The Azure pricing calculator is a great tool that allows you to estimate the costs of using any of the Azure services. Use it to create a baseline for your search service needs.
 
-1. Browse to the [Azure Cognitive Search pricing calculator](https://azure.microsoft.com/pricing/details/search/).
+1. Browse to the [Azure AI Search pricing calculator](https://azure.microsoft.com/pricing/details/search/).
 1. Choose your region, currency, and hour or monthly pricing.
 
 :::image type="content" source="../media/azure-price-calculator-new.png" alt-text="A screenshot of the Azure pricing tool showing the cost estimates of an S1 and S2 tier service." lightbox="../media/azure-price-calculator-new.png":::
 
 The above example shows estimates based on the number of search units. The shown monthly costs don't include everything you need for an accurate estimate. The pricing calculator also lists estimates on the additional services.
 
-:::image type="content" source="../media/additional-price-examples-new.png" alt-text="A screenshot of the additional Cognitive Search services." lightbox="../media/additional-price-examples-new.png":::
+:::image type="content" source="../media/additional-price-examples-new.png" alt-text="A screenshot of the additional AI Search services." lightbox="../media/additional-price-examples-new.png":::
 
 > [!IMPORTANT]
 > The prices shown are for illustration purposes, please check the price calculator for the most up-to-date values.
@@ -30,11 +30,11 @@ Using the above information an estimate for an S2 tier search solution, using fo
 
 The final costs related to running a search service are the data ingestion and storage costs. So the above estimate doesn't include other infrastructure costs you can accrue. These other costs would be things like the storage and processing of your source data.
 
-Part of running a cost-effective Azure Cognitive Search solution is always optimizing its capacity, from the tier you need, the data you're searching, and the features you use.
+Part of running a cost-effective Azure AI Search solution is always optimizing its capacity, from the tier you need, the data you're searching, and the features you use.
 
 ## Understand the billing model
 
-Azure Cognitive Search is billed in the same way as other resources you use in Azure. Take the above baseline estimate as an example, after you've created the all the resources you incur costs:
+Azure AI Search is billed in the same way as other resources you use in Azure. Take the above baseline estimate as an example, after you've created the all the resources you incur costs:
 
 - Hourly for the service tier search units you're using ($3,924.48 ÷ 744 =  $5.27 per hour approximately)
 
@@ -52,7 +52,7 @@ The other premium features are billed as you use them.
 Remember you're not charged for the number of search queries, responses, or documents ingested.
 
 > [!NOTE]
-> There are service quotas that you should be aware of, see [Service limits in Azure Cognitive Search](/azure/search/search-limits-quotas-capacity).
+> There are service quotas that you should be aware of, see [Service limits in Azure AI Search](/azure/search/search-limits-quotas-capacity).
 
 ## Tips to reduce the cost of your search solution
 

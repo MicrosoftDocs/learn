@@ -2,12 +2,11 @@ In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core 
 
 > [!NOTE]
 > Download the source code to your local computer to complete this exercise. After downloading the file, you will need to unzip it.
-> 
+>
 > [Download: ASP.NET Core Web API Application][exercise].
-> 
-> 1. Select the download button on the middle-right of the screen.
-> 1. Unzip the `exercise.zip` file.
 
+> 1. Select the **Download raw file** button.
+> 1. Unzip the `exercise.zip` file.
 
 ## Add the Swagger tooling ##
 
@@ -25,7 +24,6 @@ In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core 
 
    The NuGet package has now been installed. Close the **NuGet Package Manager** tab.
 
-
 ## Configure Swashbuckle to generate an OpenAPI document ##
 
 1. Open the `Startup.cs` file.
@@ -40,7 +38,7 @@ In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core 
     /* === using directive END === */
     ```
 
-1. Replace all of the code inside of the `ConfigureServices(IServiceCollection)` method, with the following code:
+1. Replace all of the code inside of the `ConfigureServices(IServiceCollection)` method with the following code:
 
     ```csharp
         services.AddControllers();
@@ -67,6 +65,9 @@ In this exercise, you're going to add Swagger and Swagger UI to an ASP.NET Core 
         app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "InventoryManagement.ApiApp v1"));
         /* === SwaggerUI END === */
     ```
+
+    > [!NOTE]
+    > It's very important that Swagger endpoints are only enabled in the development environment. Otherwise, it could expose your API to the public.
 
    You've now completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 

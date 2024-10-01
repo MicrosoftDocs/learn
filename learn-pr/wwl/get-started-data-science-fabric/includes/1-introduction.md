@@ -9,3 +9,4 @@ When you perform data science, you can analyze your data and identify *complicat
 Taking a data science project from beginning to end can be a challenge. Microsoft Fabric offers one workspace to manage an end-to-end data science project.
 
 In this module, you learn about a typical data science project. Additionally, you explore which Microsoft Fabric features you can use for each part of the data science process.
+

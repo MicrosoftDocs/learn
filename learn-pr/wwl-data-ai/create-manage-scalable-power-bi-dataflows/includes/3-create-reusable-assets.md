@@ -63,7 +63,7 @@ Dataflows can be consumed in three ways. Report builders can:
 You can connect to a dataflow in Power BI desktop using the **Power BI dataflows** connector in the Get Data window.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Power B I service dataflow settings, with the scheduled refresh toggled to on as indicated by a red box.](../media/get-data-from-dataflow.png)
+> ![Screenshot of Power BI Desktop connectors with the Power BI dataflows option.](../media/get-data-from-dataflow.png)
 
 > [!NOTE]
 > Learn more about [configuring and consuming dataflows](/power-bi/transform-model/dataflows/dataflows-configure-consume).

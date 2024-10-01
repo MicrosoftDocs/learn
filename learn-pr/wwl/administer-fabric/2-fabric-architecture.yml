@@ -4,13 +4,12 @@ title: Understand the Fabric Architecture
 metadata:
   title: Understand the Fabric Architecture
   description: "Understand the Fabric Architecture"
-  ms.date: 05/10/2023
+  ms.date: 09/20/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: powerbi
+  ms.author: anrudduc
+  ms.topic: unit
   ms.custom:
-    - build-2023
+  - build-2023
 durationInMinutes: 6
 content: |
   [!include[](includes/2-fabric-architecture.md)]

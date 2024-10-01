@@ -3,22 +3,22 @@ uid: learn.azdo.create-a-build-pipeline
 metadata:
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
-  ms.date: 04/04/2023
+  ms.date: 09/13/2024
   ms.custom: devdivchpfy22
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-build
   manager: mijacobs
 title: Create a build pipeline with Azure Pipelines
-summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
+summary: In this module, you'll learn to set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |
   After completing this module, you'll be able to:
-  - Create a build pipeline in Azure Pipelines
-  - Map manual build steps to automated build tasks
-  - Publish your builds so others can access them
-  - Use templates to build multiple configurations (optional)
+  - Create a build pipeline in Azure Pipelines.
+  - Map manual build steps to automated build tasks.
+  - Publish your builds so others can access them.
+  - Use templates to build multiple configurations (optional).
 prerequisites: |
   **Required knowledge and skills**:
     - Familiarity with forking and cloning a GitHub repo
@@ -30,7 +30,7 @@ prerequisites: |
     - A [GitHub](https://github.com/join) account
 
   **Software requirements**:
-    - If using GitHub Codespaces to complete the module, there are no software requirements as all software is included in the Codespace
+    - If using GitHub Codespaces to complete the module, there are no software requirements because all software is included in the Codespace
     - If using a local development environment with Microsoft-hosted agents, you must have the following software installed:
       - [Visual Studio Code](https://code.visualstudio.com)
       - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)

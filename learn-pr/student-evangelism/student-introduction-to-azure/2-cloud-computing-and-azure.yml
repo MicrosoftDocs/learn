@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-introduction-to-azure.cloud-computing-and-azure
-title: |
-  Cloud computing and Azure
+title: Cloud computing and Azure
 metadata:
-  title: |
-    Cloud computing and Azure
+  title: Cloud computing and Azure
   description: "Introduction to the concept of cloud computing and its platform, Azure."
   ms.date: 9/11/2023
   author: v-regandowner
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |

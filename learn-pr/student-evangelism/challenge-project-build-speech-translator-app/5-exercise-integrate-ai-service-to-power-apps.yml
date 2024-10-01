@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-integrate-ai-service-to-power-apps
-title: Exercise - Integrate AI Service to Power Apps
+title: Exercise - Integrate AI services with Power Apps
 metadata:
-  title: Exercise - Integrate AI Service to Power Apps
-  description: "Exercise - Integrate AI Service to Power Apps"
-  ms.date: 10/2/2023
+  title: Exercise - Integrate AI services with Power Apps
+  description: Exercise - Integrate AI services with Power Apps.
   author: theoyinbooke
-  ms.author: ooyinbooke
+  ms.author: somelezediko
+  ms.date: 12/13/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-integrate-ai-service-to-power-apps.md)]

@@ -3,12 +3,13 @@ uid: learn.health-bot-template-scenarios
 metadata:
   title: Azure Health Bot scenario templates
   description: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+  ms.collection: TBD
   ms.date: 03/13/2023
   author: sfoteini
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
-  ms.service: healthbot
+  ms.service: azure-ai-health-bot
 title: Azure Health Bot scenario templates
 summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
 abstract: |
@@ -30,7 +31,7 @@ prerequisites: |
   - Language understanding in Azure Health Bot
   - Azure Health Bot built-in scenarios
 subjects:
-- chatbot
+- chatbots
 units:
   - learn.health-bot-template-scenarios.1-introduction
   - learn.health-bot-template-scenarios.2-introduction-scenario-templates

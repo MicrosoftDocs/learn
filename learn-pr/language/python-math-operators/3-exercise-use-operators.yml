@@ -4,14 +4,13 @@ title: Exercise - Use arithmetic operators
 metadata:
   title: Exercise - Use arithmetic operators
   description: This exercise walks you through a scenario where you use arithmetic operators in Python.
-  ms.date: 12/02/2021
+  ms.date: 06/05/2023
   author: geektrainer
   ms.author: chnoring
   ms.custom:
     - team=nextgen
     - devx-track-python
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-exercise-use-operators.ipynb

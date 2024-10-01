@@ -7,10 +7,10 @@ metadata:
   ms.date: 10/04/2023
   author: codemillmatt 
   ms.author: masoucou
-  ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: dotnet-mobile
-  ms.technology: dotnet-maui
+  manager: coxford
+  ms.topic: module
+  ms.service: dotnet-mobile
+  ms.subservice: dotnet-maui
 title: Create a UI in a .NET MAUI app by using XAML
 summary: "Learn how to design a UI for a .NET MAUI app using XAML"
 abstract: |
@@ -21,7 +21,8 @@ abstract: |
   - How to create and use XAML markup extensions.
   - How to set platform-specific values in XAML markup.
 prerequisites: |
-  - Visual Studio 2022 with the .NET MAUI workload installed
+  - [Visual Studio 2022](https://www.visualstudio.com?azure-portal=true) with the .NET MAUI workload
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true), the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui?azure-portal=true)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/create-user-interface-xaml.svg
 levels:

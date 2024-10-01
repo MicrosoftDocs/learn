@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/29/2021
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Expand the capabilities for Java apps on Azure
 summary: |
   Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including:
@@ -57,7 +56,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-app-service
 # - azure-application-insights
 #- azure-automation
@@ -69,8 +68,6 @@ products:
 - azure-spring-apps
 - msal-java
 - azure-service-bus
-subjects:
-- development-tools
 modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-java-ee-app-to-app-service

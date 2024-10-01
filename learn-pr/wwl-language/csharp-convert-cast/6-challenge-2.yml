@@ -3,11 +3,11 @@ uid: learn.languages.csharp-convert-cast.challenge-2
 title: Exercise - Complete a challenge to output math operations as specific number types
 metadata:
   title: Exercise - Complete a challenge to output math operations as specific number types
-  description: "Exercise - Complete a challenge to output math operations as specific number types"
-  ms.date: 10/11/2023
+  description: "Practice outputting math operations as specific number types."
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 6

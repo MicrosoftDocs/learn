@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/14/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -22,9 +21,9 @@ quiz:
     - content: "SQL Authentication."
       isCorrect: true
       explanation: "Correct. SQL Authentication uses an authentication method of a username and password stored within the serverless SQL pool."
-    - content: "Azure Active Directory."
+    - content: "Microsoft Entra ID."
       isCorrect: false
-      explanation: "Incorrect. Azure Active Directory uses identities managed by Azure Active Directory."
+      explanation: "Incorrect. Microsoft Entra ID uses identities managed by Microsoft Entra ID."
   - content: "Which Azure Synapse Studio hub is where you assign administrator privileges to an Azure Synapse workspace?"
     choices:
     - content: "Manage."

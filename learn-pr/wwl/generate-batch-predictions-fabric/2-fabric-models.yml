@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-batch-predictions-fabric.fabric-models
+title: Customize the model's behavior for batch scoring
+metadata:
+  title: Customize the model's behavior for batch scoring
+  description: Understand how to customize the model's behavior for batch scoring and save it to the Microsoft Fabric workspace.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 10/25/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-fabric-models.md)]

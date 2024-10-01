@@ -4,11 +4,10 @@ title: Describe Microsoft Entra Verified ID
 metadata:
   title: Describe Microsoft Entra Verified ID
   description: "Describe Microsoft Entra Verified ID"
-  ms.date: 08/24/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5b-describe-entra-verified-id.md)]

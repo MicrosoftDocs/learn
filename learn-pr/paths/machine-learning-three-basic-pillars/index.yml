@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/15/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-python
+  ms.topic: learning-path
   show_latex: true
 title: 'Machine learning: Regression, classification, and clustering'
 summary: |

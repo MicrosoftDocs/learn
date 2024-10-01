@@ -3,14 +3,13 @@ uid: learn.wwl.build-language-understanding-model.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 08/31/2023
+  description: Summary
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-clu
+  ms.date: 08/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

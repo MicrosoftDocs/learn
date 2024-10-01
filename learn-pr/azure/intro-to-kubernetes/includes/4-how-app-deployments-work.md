@@ -1,4 +1,4 @@
-The drone-tracking app has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here, you'll look at some of the deployment options available to you to deploy these components.
+The drone-tracking app has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here, you look at some of the deployment options available to you to deploy these components.
 
 :::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that shows the drone-tracking solution components." border="false":::
 
@@ -15,7 +15,7 @@ You can use any of these four Kubernetes object-type definitions to deploy a pod
 
 ## What is a pod template?
 
-A pod template enables you to define the configuration of the pod you want to deploy. The template contains information such as the name of container image and which container registry to use to fetch the images. The template may also include runtime configuration information, such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
+A pod template enables you to define the configuration of the pod you want to deploy. The template contains information such as the name of container image and which container registry to use to fetch the images. The template also includes runtime configuration information, such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
 
 You can use templates to deploy pods manually. However, a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated. To manage the lifecycle of a pod, you need to create a higher-level Kubernetes object.
 
@@ -39,13 +39,13 @@ Assume that you have five instances of your app deployed in your cluster. There 
 
 :::image type="content" source="../media/4-pods-running-same-version.svg" alt-text="Diagram that shows five pods running on a node with the same pod version." border="false":::
 
-If you decide to update your app manually, you can remove all pods, then launch new pods running version 2.0.0 of your app. With this strategy, your app will experience downtime.
+If you decide to update your app manually, you can remove all pods, then launch new pods running version 2.0.0 of your app. With this strategy, your app experiences downtime.
 
-Instead, you'll want to execute a rolling update where you launch pods with the new version of your app before you remove the older app versioned pods. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it replaces old pods with new pods.
+Instead, you want to execute a rolling update where you launch pods with the new version of your app before you remove the older app versioned pods. Rolling updates launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It maintains the number of pods specified in the replica set as it replaces old pods with new pods.
 
-:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods, two pods set as version 1 and three pods set as version 2." border="false":::
+:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods, two pods set as version 1 and 3 pods set as version 2." border="false":::
 
-Deployments, by default, provide a rolling update strategy for updating pods. You can also use a re-create strategy. This strategy will terminate pods before launching new pods.
+Deployments, by default, provide a rolling update strategy for updating pods. You can also use a re-create strategy. This strategy terminates pods before launching new pods.
 
 Deployments also provide you with a rollback strategy, which you can execute by using `kubectl`.
 
@@ -71,7 +71,7 @@ Each pod that you deploy gets assigned an IP from a pool of IP addresses. For ex
 
 By default, the pods and nodes can't communicate with each other by using different IP address ranges.
 
-To further complicate matters, recall that pods are transient. The pod's IP address is temporary, and can't be used to reconnect to a newly created pod. This configuration affects how your app communicates with its internal components and how you and services interact with it externally.
+To further complicate matters, recall that pods are transient. The pod's IP address is temporary, and can't be used to reconnect to a newly created pod. This configuration affects how your app communicates to its internal components and how you and services interact with it externally.
 
 To simplify communication, Kubernetes expects you to configure networking in such a way that:
 
@@ -87,7 +87,7 @@ Cloud providers also provide their own networking solutions. For example, Azure 
 
 A Kubernetes service is a Kubernetes object that provides stable networking for pods. A Kubernetes service enables communication between nodes, pods, and users of your app, both internal and external, to the cluster.
 
-Kubernetes assigns a service an IP address on creation, just like a node or pod. These addresses get assigned from a service cluster's IP rang; for example, 10.96.0.0/12. A service is also assigned a DNS name based on the service name, and an IP port.
+Kubernetes assigns a service an IP address on creation, just like a node or pod. These addresses get assigned from a service cluster's IP range; for example, 10.96.0.0/12. A service is also assigned a DNS name based on the service name, and an IP port.
 
 In the drone-tracking app, network communication is as follows:
 
@@ -117,7 +117,7 @@ Managing pods by IP address isn't practical. Pod IP addresses change as controll
 
 A service object allows you to target and manage specific pods in your cluster by using selector labels. You set the selector label in a service definition to match the pod label defined in the pod's definition file.
 
-For example, assume that you have many running pods. Only a few of these pods are on the front end, and you want to set a LoadBalancer service that targets only the front-end pods. You can apply your service to expose these pods by referencing the pod label as a selector value in the service's definition file. The service will now group only the pods that match the label. If a pod is removed and re-created, the new pod is automatically added to the service group through its matching label.
+For example, assume that you have many running pods. Only a few of these pods are on the front end, and you want to set a LoadBalancer service that targets only the front-end pods. You can apply your service to expose these pods by referencing the pod label as a selector value in the service's definition file. The service groups only the pods that match the label. If a pod is removed and re-created, the new pod is automatically added to the service group through its matching label.
 
 ## Kubernetes storage
 

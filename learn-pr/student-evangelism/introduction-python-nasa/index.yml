@@ -6,7 +6,7 @@ metadata:
   ms.date: 01/23/2023
   author: sguthals
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
   ms.devlang: python
 title: Introduction to Python for space exploration
@@ -29,7 +29,7 @@ roles:
 products: 
 - azure
 subjects:
-- data-ai
+- data-management
 units:
 - learn.student-evangelism.introduction-python-nasa.1-introduction
 - learn.student-evangelism.introduction-python-nasa.2-artemis

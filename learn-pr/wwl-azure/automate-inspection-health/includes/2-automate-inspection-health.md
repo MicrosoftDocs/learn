@@ -1,4 +1,3 @@
-
 Inspection of the release pipeline and release is something you should consider from the start.
 
 When you run multiple deployments a day, you want to:

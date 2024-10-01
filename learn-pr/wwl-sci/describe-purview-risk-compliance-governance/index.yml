@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.describe-purview-risk-compliance-governance
+metadata:
+  title: Describe the data compliance solutions of Microsoft Purview
+  description: "Describe the data compliance solutions of Microsoft Purview."
+  ms.date: 8/23/2024 
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: module-standard-task-based
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Describe the data compliance solutions of Microsoft Purview
+summary: "Learn how Microsoft Purview data compliance solutions help organizations manage risk and regulatory requirements."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe Microsoft Purview eDiscovery and Audit
+  - Describe Microsoft Purview Compliance Manager
+  - Describe Microsoft Purview Communication Compliance
+  - Describe Microsoft Purview Data Lifecycle Management
+  - Describe Microsoft Purview Records Management
+ 
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+hidden: false
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - business-user
+  - student
+products:
+  - microsoft-purview
+subjects:
+  - insider-risk
+  - compliance
+units:
+- learn.describe-purview-risk-compliance-governance.introduction
+- learn.describe-purview-risk-compliance-governance.describe-audit
+- learn.describe-purview-risk-compliance-governance.describe-ediscovery
+- learn.describe-purview-risk-compliance-governance.describe-compliance-manager
+- learn.describe-purview-risk-compliance-governance.describe-communication-compliance
+- learn.describe-purview-risk-compliance-governance.describe-data-lifecycle-management
+- learn.describe-purview-risk-compliance-governance.describe-records-management
+- learn.describe-purview-risk-compliance-governance.knowledge-check
+- learn.describe-purview-risk-compliance-governance.summary
+
+badge:
+  uid: learn.describe-purview-risk-compliance-governance.badge

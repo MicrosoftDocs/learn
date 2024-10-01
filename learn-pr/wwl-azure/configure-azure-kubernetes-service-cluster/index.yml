@@ -2,24 +2,22 @@
 uid: learn.wwl.configure-azure-kubernetes-service-cluster
 metadata:
   title: Configure an Azure Kubernetes Service cluster
-  description: "Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization."
-  ms.date: 10/03/2023
+  description: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: module
+  ms.service: azure-kubernetes-service
 title: Configure an Azure Kubernetes Service cluster
-summary: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale.  Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
+summary: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
 abstract: |
   After completing this module, you'll be able to:
-  * Enable and configure Azure Policy for Azure Kubernetes Service.
-  * Assign policy definitions to an Azure Kubernetes Service cluster.
-  * Use namespaces to logically isolate workloads and resources.
-  * Enable host-based encryption for Azure Kubernetes Service agent nodes.
-prerequisites: |
-  None
+  -   Enable and configure Azure Policy for Azure Kubernetes Service.
+  -   Assign policy definitions to an Azure Kubernetes Service cluster.
+  -   Use namespaces to logically isolate workloads and resources.
+  -   Enable host-based encryption for Azure Kubernetes Service agent nodes.
+prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:

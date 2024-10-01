@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary unit for the Introduction to Azure API Management module
-  ms.date: 11/01/2022
+  ms.date: 04/07/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: engagement-fy23
 durationInMinutes: 2
 content: |

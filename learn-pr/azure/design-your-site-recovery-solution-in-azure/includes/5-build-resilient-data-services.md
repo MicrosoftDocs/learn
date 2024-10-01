@@ -19,7 +19,7 @@ Always On availability groups run on top of a Windows Server failover cluster th
 
 You can configure Always On availability groups in Azure by creating two availability sets: one for Windows Server failover cluster nodes, and another for domain controllers.
 
-![Diagram that shows an example of availability sets.](../media/5-availability-group-example.png)
+:::image type="content" source="../media/5-availability-group-example.png" alt-text="Diagram that shows an example of availability sets." lightbox="../media/5-availability-group-example.png":::
 
 The Windows Server failover cluster needs to contain at least three machines. There should be one SQL Server machine for the primary replica and another for the secondary replica in the cluster. A third server should act as a file share witness, or you can use an Azure file share as a witness.
 
@@ -27,23 +27,23 @@ The Windows Server failover cluster needs to contain at least three machines. Th
 
 You can use SQL Database auto-failover groups to configure the failover and replication of database groups on a SQL Database server. You put together defined policies that can perform failovers based on your needs. If necessary, you can also manually trigger failovers. SQL Database can automatically fail over your databases to a secondary server in a secondary region if a failure occurs.
 
-SQL Database auto-failover secondary databases can be used as readable databases. You can use these secondary databases to service read access to data for any connecting clients and spread usage and demand between primary and secondary databases.
+SQL Database auto-failover secondary databases can be used as readable databases. You can use these secondary databases to service read access to data for any connecting clients and spread usage and demand among primary and secondary databases.
 
-If you're using automatic failover policies, and a failure occurs on at least one database in your primary database group, an automatic failover is triggered to the secondary databases. Your endpoints remain the same during failover. When the problem that caused the failure has been addressed and you're ready, you can fail back to your original location. You can manually fail over your groups to their original location.
+If you're using automatic failover policies and a failure occurs on at least one database in your primary database group, an automatic failover is triggered to the secondary databases. Your endpoints remain the same during failover. When the problem that caused the failure has been addressed and you're ready, you can fail back to your original location. You can manually fail over your groups to their original location.
 
-Databases in one database server can be included in a single auto-failover group. You can also put all databases in an elastic pool in a single failover group. When primary databases are part of an elastic pool, your secondary databases are also provisioned in an elastic pool. This pool has the same name as the primary elastic pool.
+Databases in one database server can be included in a single auto-failover group. You can also put all databases in an elastic pool in a single failover group. When primary databases are part of an elastic pool, your secondary databases are also provisioned in an elastic pool. This secondary pool has the same name as the primary elastic pool.
 
 ## Automated backup for Azure SQL Database
 
 Azure SQL Database can make backups of your databases that are stored from 7 to 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe, even if something happens to a datacenter.
 
-You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest. All SQL databases that you create have transparent data encryption enabled by default.
+You can extend backup retention for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest. All SQL databases that you create have transparent data encryption enabled by default.
 
-SQL Database does backups automatically for you in the background. It creates backups of your databases at different intervals, depending on the type of backup. For example, it creates:
+SQL Database does backups automatically for you in the background. It creates backups of your databases at different intervals, depending on the type of backup. For example, it creates the following backup types:
 
 - Backups for transaction logs at an interval of 5 to 10 minutes.
-- Full backups of your databases every week. The first full backup happens as soon as your database is created. How long SQL Database takes to complete a full backup depends on the size of your database.
-- Differential backups for any data that has changed since the last full backup every 12 hours.
+- Full backups of your databases every week. The first full backup happens as soon as your database is created. How long SQL Database takes to complete a full backup depends on your database size.
+- Differential backups every 12 hours for any data that changed since the last full backup.
 
 SQL Database keeps backups in storage blobs that provide read access. It then copies those backups into a paired datacenter.
 
@@ -63,4 +63,4 @@ Your data is replicated at least four times. You can set up an Azure Cosmos DB a
 
 You should configure your Azure Cosmos DB database to span at least two regions. The more regions you have, the more resilient your data becomes. You should also explicitly set your Azure Cosmos DB database to have multiple write regions, so that you can perform read and write operations from all your regions.
 
-You can also configure zone redundancy for some regions. With this feature, Azure Cosmos DB puts replicas of data across multiple availability zones in any single region, for extra resilience.
+You can also configure zone redundancy for some regions. With zone redundancy, Azure Cosmos DB puts replicas of data across multiple availability zones in any single region, for extra resilience.

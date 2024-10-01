@@ -1,16 +1,18 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.github.introduction-to-github-copilot-for-business
 title: Introduction to GitHub Copilot for Business
 metadata:
   title: Introduction to GitHub Copilot for Business
   description: GitHub Copilot for Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
-  ms.date: 09/13/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
+  ms.date: 09/16/2024
+  ms.service: github-copilot
+  ms.topic: module
+  ms.collection:
+   - github-ai-copilot
 summary: > 
-  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals, specific use cases and customer stories for GitHub Copilot for Business, and how to enable it. 
+  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals. Also learn about specific use cases and customer stories for GitHub Copilot for Business as well as how to enable it. 
 abstract: |
   At the end of this module, you'll be able to: 
   - Understand the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals.

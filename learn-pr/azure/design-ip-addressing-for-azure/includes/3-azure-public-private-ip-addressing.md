@@ -1,6 +1,6 @@
 You work for a manufacturing company, and you're moving resources into Azure. The database server must be accessible for clients in your on-premises network. Public resources—like web servers—must be accessible from the internet. You want to ensure that you plan IP addresses that support both these requirements.
 
-In this unit, you'll explore the constraints and limitations for public and private IP addresses in Azure. You'll also look at the capabilities that are available in Azure to reassign IP addresses in your network.
+In this unit, you explore the constraints and limitations for public and private IP addresses in Azure. Also, you look at the capabilities that are available in Azure to reassign IP addresses in your network.
 
 ## IP address types
 

@@ -39,8 +39,8 @@ To practice configuring agents for projects:
 
 For more information about agents configuration, see:
 
-- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
-- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
-- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
-- [Set pipeline permissions](https://learn.microsoft.com/azure/devops/pipelines/policies/permissions)
-- [Plan how to secure your YAML pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/approach)
+- [Azure Pipelines agents.](/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues/)
+- [Set pipeline permissions](/azure/devops/pipelines/policies/permissions)
+- [Plan how to secure your YAML pipelines](/azure/devops/pipelines/security/approach)

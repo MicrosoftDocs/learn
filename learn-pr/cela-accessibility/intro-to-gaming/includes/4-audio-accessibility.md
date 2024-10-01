@@ -8,7 +8,7 @@ Similar to visual elements, gaming experiences also use audio-based elements to 
 
 In the following video, you can learn more about the relationship between audio and game experiences. You also learn how to identify common audio-based elements that can pose unintentional barriers for players.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPH8n]
+> [!VIDEO a1919ecd-0378-40ff-801a-a6fbe96c2a86]
 
 ## Hearing and disability
 

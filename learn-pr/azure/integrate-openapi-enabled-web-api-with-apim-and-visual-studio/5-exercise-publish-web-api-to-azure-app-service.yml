@@ -3,13 +3,12 @@ uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5
 title: Exercise - Publish an OpenAPI enabled web API to Azure App Service
 metadata:
   title: Exercise - Publish an OpenAPI enabled web API to Azure App Service
-  description: Publish your Open API enabled web API to Azure App Service using Visual Studio
-  ms.date: 04/16/2021
+  description: Publish your OpenAPI enabled web API to Azure App Service using Visual Studio
+  ms.date: 09/13/2024
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 8

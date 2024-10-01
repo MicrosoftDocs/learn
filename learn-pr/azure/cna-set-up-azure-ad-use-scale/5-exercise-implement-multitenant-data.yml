@@ -4,14 +4,13 @@ title: Exercise - Implement multitenant data
 metadata:
   title: Exercise - Implement multitenant data
   description: Exercise - Implement multitenant data
-  ms.date: 05/19/2021
+  ms.date: 08/22/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
     - devx-track-js
-  ms.prod: learning-azure
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-implement-multitenant-data.md)]

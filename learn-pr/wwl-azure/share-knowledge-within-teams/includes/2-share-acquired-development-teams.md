@@ -1,4 +1,3 @@
-
 Organizational knowledge builds up within development teams over time.
 
 It's essential to avoid endlessly relearning the same lessons that the team (and the organization) has learned before.

@@ -4,11 +4,10 @@ title: Use Performance analyzer
 metadata:
   title: Use Performance analyzer
   description: "Use Performance analyzer"
-  ms.date: 01/16/2023
-  author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

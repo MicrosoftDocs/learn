@@ -3,18 +3,16 @@ uid: learn.wwl.get-started-fabric
 metadata:
   title: Get started with Microsoft Fabric
   description: Microsoft Fabric learn modules, Fabric learn modules, learn Fabric, Fabric training, Microsoft Fabric training, Microsoft Fabric learning paths, Get started with Microsoft Fabric
-  ms.date: 10/04/2023
+  ms.date: 11/08/2023
   author: wwlpublish
   ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-power-bi
-  ms.service: fabric
+  ms.topic: learning-path
 title: Get started with Microsoft Fabric
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |
   Explore the capabilities of Microsoft Fabric.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/get-started-fabric.svg
 levels:
 - beginner
 roles:
@@ -27,14 +25,11 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-lake
 - data-management
 - data-modeling
-- data-privacy
-- data-science
+- information-protection-governance
 - data-storage
 - data-visualization
-- data-warehousing
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses

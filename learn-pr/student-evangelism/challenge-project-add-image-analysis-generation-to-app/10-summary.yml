@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.summary
-title: |
-  Summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summary"
   ms.date: 9/5/2023
   author: carlottac94
   ms.author: cacaste
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 ###########################################################################
 ###
 ### If your content is related to a product or service, apply one value from the either the ms.prod allowlist

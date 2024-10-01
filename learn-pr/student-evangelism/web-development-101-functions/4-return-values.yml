@@ -6,9 +6,8 @@ metadata:
   description: Functions can return values, which is great when you want to allow functions to perform calculations or other operations that return results. In this unit, you learn how to use return values in JavaScript functions.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 05/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/26/2023
+  ms.topic: unit
   ms.custom:
     - team=nextgen
     - devx-track-js

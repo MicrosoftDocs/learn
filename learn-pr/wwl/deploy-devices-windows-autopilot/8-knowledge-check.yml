@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/19/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -46,13 +46,13 @@ quiz:
     choices:
     - content: "Reboot the device and attempt the deployment again."
       isCorrect: false
-      explanation: "Incorrect. While rebooting the device may solve some issues, it's not the most helpful step in identifying the root cause of a deployment failure. Try again."
+      explanation: "Incorrect. While rebooting the device might solve some issues, it's not the most helpful step in identifying the root cause of a deployment failure. Try again."
     - content: "Check the Event Viewer for errors related to device enrollment."
       isCorrect: true
       explanation: "Correct. The Event Viewer can provide detailed error messages related to device enrollment, which can be crucial in identifying the root cause of a deployment failure."
     - content: "Reinstall the operating system on the device."
       isCorrect: false
-      explanation: "Incorrect. While this may ultimately be necessary in some cases, it's a drastic step and won't help identify the root cause of the deployment failure. Try again."
+      explanation: "Incorrect. While this might ultimately be necessary in some cases, it's a drastic step and won't help identify the root cause of the deployment failure. Try again."
     - content: "Physically inspect the device for hardware issues."
       isCorrect: false
       explanation: "Incorrect. Hardware issues are unlikely to be the root cause of a Windows Autopilot deployment failure. Try again."

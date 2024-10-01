@@ -1,133 +1,135 @@
-Here, we discuss the key GitHub features you'll use on a daily basis to manage and contribute to software projects. 
+In this unit, we review the following learning objectives:
 
-## The GitHub flow
+- Brief overview of the GitHub Enterprise Platform
+- How to create a repository
+- Adding files to a repository
+- How to search for repositories
+- Introduction to gists and wikis
 
-In addition to providing a platform for collaborative software development, GitHub also offers a workflow designed to optimize using its various features. While this unit offers a cursory overview of important platform components, we recommend that you first review [the GitHub flow](https://docs.github.com/get-started/quickstart/github-flow).
+## GitHub
 
-## Git and GitHub
+:::image type="content" source="../media/github-enterprise-platform.png" alt-text="A conceptual image of the GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
 
-As you work with **Git** and **GitHub**, you might wonder about the difference between the two.
+**GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
 
-**Git** is a distributed version-control system (DVCS) that allows multiple developers or other contributors to work on a project. It provides a way to work with one or more local branches and push them to a remote repository. Git is responsible for everything GitHub-related that happens locally on your computer. Key Git features include:
+As we learned earlier, GitHub provides an AI powered developer platform to build, scale, and deliver secure software. Let’s break down each one of the core pillars of the GitHub Enterprise platform, AI, Collaboration, Productivity, Security, and Scale.
 
-- It's installed and used on your local machine
-- Handles version control
-- Supports branching
+### AI
 
-To learn more about **Git**, see [Using Git](https://docs.github.com/get-started/using-git).
+Generative AI is dramatically transforming software development as we speak. The GitHub Enterprise platform is enhancing collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
 
-**GitHub** is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together. GitHub acts as the "remote repository" mentioned previously in the **Git** section.
+### Collaboration
 
-Key GitHub features include:
+Collaboration is at the core of everything GitHub does. We know inefficient collaboration results in wasted time and money. We counteract that with a suite of seamless tools that allow collaboration to happen effortlessly.
 
-- Issues
-- Discussions
-- Pull requests
-- Notifications
-- Labels
-- Actions
-- Forks
-- Projects
+Repositories, Issues, Pull Requests, and other tools help to enable developers, project managers, operation leaders, and others at the same company. It enables them to work faster together, cut down approval times, and ship more quickly.
 
-To learn more about **GitHub**, see [Get started with GitHub](https://docs.github.com/get-started).
+### Productivity
 
-## Issues
+Productivity is accelerated with automation that the GitHub Enterprise Platform provides. With built-in CI/CD (Continuous Integration and Continuous Delivery) tools directly integrated into the workflow, the platform gives users the ability to set tasks and forget them, taking care of routine administration and speeding up day-to-day work. This gives your developers more time to focus on what matters most, creating innovative solutions.
 
-**Issues** are where most of the communication between a project's consumers and development team occurs. You can create an *issue* to discuss a broad set of topics, including bug reports, feature requests, documentation clarifications, and more. Once you've created an issue, you can assign owners, labels, projects, and milestones. You can also associate issues with pull requests and other GitHub items to provide future traceability.
+### Security
 
-:::image type="content" source="../media/2-issue.png" alt-text="Screenshot of a GitHub Issue that provides feedback to developers about a bug or feature suggestion." border="false":::
+GitHub focuses on integrating security directly into the development process from the start. GitHub Enterprise platform includes native, first-party security features that minimize security risk with a built-in security solution. Plus, your code remains private within your organization. At the same time, you're able to take advantage of security overview and Dependabot.
 
-To learn more about GitHub Issues, see [About Issues](https://docs.github.com/issues/tracking-your-work-with-issues/about-issues).
+GitHub has continued to make investments to ensure that our features are enterprise-ready. Microsoft and highly regulated industries trust GitHub, and we meet global compliance requirements.
 
-## Notifications
+### Scale
 
-As a collaborative platform, GitHub offers **notifications** for virtually every event that takes place within a given workflow. You can finely tune these notifications to meet your preferences. For example, you can subscribe to all issue creations and edits on a project, or you can just receive notifications for issues in which you're mentioned. You can also decide whether you receive notifications via email, web and mobile, or both. To keep track of all of your notifications across different projects, use the [GitHub Notifications dashboard](https://github.com/notifications?azure-portal=true).
+GitHub is the largest developer community of its kind with real-time data on over 100M+ developers, 330M+ repositories, and countless deployments. We’ve been able to understand the shifting needs of developers and make changes to our product to match.
 
-:::image type="content" source="../media/2-notifications.png" alt-text="Screenshot of the GitHub Notifications dashboard. GitHub provides an inbox that developers use to stay up-to-date on changes across repositories." border="false":::
+This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Everyday we're gaining more insights from this impressive community and evolving the platform to meet their needs.
 
-To learn more about GitHub notifications, see [Configuring notifications](https://docs.github.com/enterprise-server@3.10/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications).
+In essence, the GitHub Enterprise Platform focuses on the developer experience. It has the scale to provide industry-changing insights, collaboration capabilities for transformative efficiency, the tools for increased productivity, security at every step, and AI to power it all to new heights in a single, integrated platform.
 
-## Branches
+Now let’s get into the backbone of GitHub, repositories.
 
-**Branches** are the preferred way to create changes in [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true). They provide isolation so that multiple people can simultaneously work on the same code in a controlled way. This model enables stability among critical branches, such as `main`, while allowing complete freedom for developers to commit any changes they need to meet their goals. Once the code from a branch is ready to become part of the `main` branch, you can merge it via pull request.
+## Introduction to repositories
 
-:::image type="content" source="../media/2-branching.png" alt-text="GitHub flow with a feature branch. Changes made to a branch can be merged back into the main branch." border="false":::
+Let’s first review:
 
-To learn more about GitHub branches, see [About branches](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches).
+- What is a repository?
+- How to create a repository
+- Adding files to a repository
+- How to search for repositories
+- Introduction to gists, wikis, and GitHub pages
 
-## Commits
+### What is a repository?
 
-A **commit** is a snapshot of a change or changes to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+A repository contains all of your project's files and each file's revision history. It's one of the essential parts that helps you collaborate with people. You can use repositories to manage your work, track changes, store revision history, and work with others. Before we dive too deep, let’s first start with how to create a repository.
 
-:::image type="content" source="../media/2-commits.png" alt-text="Screenshot of a list of GitHub commits to a main branch." border="false":::
+### How to create a repository
 
-To learn more about GitHub commits, see [Committing and reviewing changes to your project](https://docs.github.com/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop).
+You can create a new repository on your personal account or any organization where you have sufficient permissions.
 
-## Pull Requests
+Let’s tackle creating a repository from github.com.
 
-A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. The developer submitting the **pull request** will often request one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes are approved (if approval is required), the pull request's source branch (the compare branch) can be merged into the base branch.
+1. In the upper-right corner of any page, use the drop-down menu, and select **New repository**.
 
-:::image type="content" source="../media/2-pull-request.png" alt-text="Screenshot of a GitHub pull request; pull requests provide a way to get commits from one branch into another branch." border="false":::
+    :::image type="content" source="../media/2-new-repo-option.png" alt-text="A screenshot of the drop-down menu of the plus sign in the top right corner of GitHub.com, with the first option being New repository." border="false":::
 
-To learn more about GitHub pull requests, see [About pull requests](https://docs.github.com/enterprise-server@3.10/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+1. Use the **Owner** drop-down menu to select the account you want to own the repository.
 
-## Labels
+    :::image type="content" source="../media/2-selecting-repo-owner.png" alt-text="A screenshot of the drop-down menu of who should be the owner of the new repository." border="false":::
 
-Labels provide a way to categorize and organize **issues** and **pull requests** in a repository. As you create a GitHub repository, several labels are automatically added for you. You can also create new ones.
+1. Type a name for your repository, and an optional description.
 
-Examples of Labels include:
+    :::image type="content" source="../media/2-repo-name-text-box.png" alt-text="An image of the text box of the repository name highlighted." border="false":::
 
-- bug
-- documentation
-- duplicate
-- help wanted
-- enhancement
-- question
+1. Choose a repository visibility.
 
-:::image type="content" source="../media/2-labels.png" alt-text="Screenshot of GitHub labels, which you can use to categorize your GitHub repository issues and pull requests." border="true":::
+    - **Public repositories** are accessible to everyone on the internet.
 
-To learn more about GitHub labels see [Managing labels](https://docs.github.com/issues/using-labels-and-milestones-to-track-work/managing-labels).
+    - **Private repositories** are only accessible to you, people you explicitly share access with, and, for organization repositories, certain organization members.
 
-## Actions
+1. Select **Create repository** and congratulations! You just created a repository!
 
-**GitHub actions** provide task automation and workflow functionality in a repository. You can use actions to streamline processes in your software-development lifecycle and implement continuous integration and continuous deployment (CI/CD).
+Next up, let’s review how to add files to your repository.
 
-GitHub Actions have the following components:
+### How to add a file to your repository
 
-- **Workflows**: Automated processes added to your repository.
-- **Events**: An activity that triggers a workflow.
-- **Jobs**: A set of steps that execute on a runner.
-- **Steps**: A task that can run one or more commands (actions).
-- **Actions**: Standalone commands that you can combine into steps. You can combine multiple steps to create a job.
-- **Runners**: Server that has the GitHub Actions runner application installed.
+Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. It's worth knowing in order to add a file to a repository that you must first have minimum **Write** access within the repository you want to add a file.
 
-:::image type="content" source="../media/2-actions.png" alt-text="Diagram of GitHub actions, which provide a way to automate the software development lifecycle." border="false":::
+Let’s review how to add a file to your repository.
 
-To learn more about GitHub actions, see [Understanding GitHub Actions](https://docs.github.com/actions/learn-github-actions/understanding-github-actions).
+1. On GitHub.com, navigate to the main page of the repository.
+1. In your repository, browse to the folder where you want to create a file by selecting the **creating a new file** link or **uploading an existing file**.
+1. Once added, above the list of files select the **Add file ᐁ** drop-down menu. Then select **Create new file**.
 
-## Cloning and forking
+    :::image type="content" source="../media/add-file-options.png" alt-text="A screenshot of the option to add a file to your new repository highlighted in red with the add file button towards the right of the screen." border="false":::
 
-GitHub provides multiple ways to copy a repository so that you can work on it.
+1. In the file name field, type the name and extension for the file. To create subdirectories, type the **/** directory separator.
+1. In the file contents text box, type **content** for the file.
+1. To review the new content, above the file contents, select **Preview**.
 
-- **Cloning a repository**: Cloning a repository makes a copy of the repository and its history on your local machine. If you have write access to the repository, you can push changes from your local machine to the remote repository (called the **origin**) as they're completed. To clone a repository, you can use the [`git clone [url]`](https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository?azure-portal=true#cloning-a-repository) command or the GitHub CLI's [`gh repo clone [url]`](https://cli.github.com/manual/gh_repo_clone?azure-portal=true) command.
-- **Forking a repository**: Forking a repository makes a copy of the repository in your GitHub account. The parent repository is referred to as the **upstream**, while your forked copy is referred to as the **origin**. Once you've forked a repository into your GitHub account, you can **clone** it to your local machine. Forking allows you to freely make changes to a project without affecting the original **upstream** repository. To contribute changes back to the upstream repository, you create a **pull request** from your forked repository. You can also run `git` commands to ensure that your local copy stays synced with the **upstream** repository.
+    :::image type="content" source="../media/2-preview-option-in-a-file.png" alt-text="Screenshot showing a yml file with the preview button highlighted in the top left." border="false":::
 
-When would you clone a repository versus fork a repository? If you're working with a repository and have write access, you can clone it to your local machine. From there, you can make modifications and push your changes directly to the **origin** repository.
+1. Select **Commit changes**.
+1. In the **Commit message** field, type a short and meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message.
+1. If you have more than one email address associated with your account on GitHub.com, select the email address drop-down menu. Then select the email address to use as the Git author email address. Only verified email addresses appear in this drop-down menu. If you enabled email address privacy, then *[username]@users.noreply.github.com* is the default commit author email address.
 
-If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your GitHub account, then clone the fork to your local machine. To see this visually, let's assume that your GitHub account is called `githubtraining`. Using the GitHub website, you can fork `github/example` or any other repository into your account. From there, you can clone the forked version of the repository to your local machine. The following image illustrates these steps:
+    :::image type="content" source="../media/2-commit-description-box.png" alt-text="Screenshot showing a commit change with a description box and the drop-down menu of the email to select as the author of the commit." border="false":::
 
-:::image type="content" source="../media/2-fork-clone.png" alt-text="Diagram of forking a repository, which creates a copy of it in your GitHub account. You can then clone your forked copy to your local machine." border="false":::
+1. Below the **Commit message** fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit, and then create a pull request.
 
-You can make changes to your local copy of `githubtraining/example`, then push them back to your remote **origin** repository (`githubtraining/example`). You can then submit these changes to the `github/example` **upstream** repository using a **pull request**, as shown in the following image:
+     :::image type="content" source="../media/2-create-a-new-branch.png" alt-text="Screenshot showing creating a new branch from a commit option select with the textbox of the new branch below it." border="false":::
 
-:::image type="content" source="../media/2-fork-pullrequest.png" alt-text="Diagram showing how you can push Local changes to the origin repository then create a pull request to get the changes into the upstream repository." border="false":::
+1. Select **Commit changes** or **Propose changes**.
 
-To learn more, see [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo?azure-portal=true).
+Congratulations, you just created a new file in your repository! You have also created a new branch and made a commit.
 
-## GitHub Pages
+Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they're similar to repositories.
 
-**GitHub Pages** is a hosting engine that's built right into your GitHub account. By following a few conventions and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repository.
+### What are gists
 
-:::image type="content" source="../media/2-github-pages.png" alt-text="Screenshot of GitHub Pages, which is a hosting engine available with your GitHub account. You can use it to host static sites generated from your repository." border="false":::
+Now that we have a good understanding of repositories, we can review gists. Similarly to repositories, gists are a simplified way to share code snippets with others.
 
-To learn more, see [GitHub Pages](https://pages.github.com/?azure-portal=true).
+Every gist is a Git repository, which you can fork and clone and be made either public or secret. Public gists are displayed publicly where people can browse new ones as they’re created. Public gists are also searchable. Conversely, secret gists aren't searchable, but they aren’t entirely private. If you send the URL of a secret gist to a friend, they'll be able to see it.
+
+To learn more about gists, see the linked article in our Resources section at the end of this module titled *Creating Gists*.
+
+### What are wikis?
+
+Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. While a README file quickly tells what your project can do, you can use a wiki to provide additional documentation.
+
+It’s worth a reminder that if your repository is private, only people who have at least read access to your repository will have access to your wiki.

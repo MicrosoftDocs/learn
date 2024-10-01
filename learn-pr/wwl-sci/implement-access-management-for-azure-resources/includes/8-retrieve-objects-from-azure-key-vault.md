@@ -1,5 +1,4 @@
-
-Azure Key Vault is a secure tool for storing secrets, keys, and certificates. Once stored, these items can be used by users and applications to perform actions and operations in a secure method. The process to retrieve any of these resources is common. So we'll look at how to review a secret from a key vault.
+Azure Key Vault is a secure tool for storing secrets, keys, and certificate. Once stored, these items can be used by users and applications to perform actions and operations in a secure method. The process to retrieve any of these resources is common. So we'll look at how to review a secret from a key vault.
 
 ### Add a secret to your key vault
 
@@ -33,12 +32,14 @@ You can quickly and easily grab a secret from your key vault using scripting lan
 ```
 az keyvault secret show --name "mySC300keyvaultSecret" --vault-name "<your-unique-keyvault-name>" --query "value"
 
+
 ```
 
 ***PowerShell***
 
 ```
 $secret = Get-AzKeyVaultSecret -VaultName "<your-unique-keyvault-name>" -Name "mySC300keyvaultSecret" -AsPlainText
+
 
 ```
 

@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.copilot-foundations
+metadata:
+  title: Copilot Foundations
+  description: Learn about generative AI and how to use copilots with Copilot Studio and Azure AI Studio.
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: learning-path
+title: Copilot Foundations
+prerequisites: |
+  Familiarity with Azure and the Azure portal.
+summary: |
+  Copilots are quickly becoming a popular way to use with AI models, automate tasks, and improve productivity. In this learning path, you'll explore options for adopting, using, and creating copilots. 
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- ai-engineer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+- machine-learning
+- natural-language-processing
+modules:
+- learn.wwl.fundamentals-generative-ai
+- learn-bizapps.power-virtual-agent-bots
+- learn.wwl.introduction-to-azure-ai-studio
+- learn.wwl.build-copilot-ai-studio
+trophy:
+  uid: learn.wwl.copilot-foundations.trophy

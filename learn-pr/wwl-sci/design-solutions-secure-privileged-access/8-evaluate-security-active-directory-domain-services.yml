@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-privileged-acces.evaluate-security-active-directory-domain-services
+
+title: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks
+metadata:
+  title: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks
+  description: "SC-100 preparatory unit on the topic: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks."
+  ms.date: 5/20/2024
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-evaluate-security-active-directory-domain-services.md)]

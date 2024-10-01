@@ -3,10 +3,11 @@ uid: learn.intro-to-kubernetes
 metadata:
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
-  ms.date: 08/16/2023
+  manager: rayoflores
+  ms.date: 10/25/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure-kubernetes-service
 title: Introduction to Kubernetes
 summary: Determine the types of business problems that you can solve by using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
@@ -33,7 +34,7 @@ products:
 - azure
 - azure-kubernetes-service
 subjects:
-- container
+- containers
 units:
 - learn.intro-to-kubernetes.introduction
 - learn.intro-to-kubernetes.what-is-kubernetes

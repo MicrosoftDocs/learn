@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check about fine-tuning a foundation model."
-  ms.date: 7/18/2023
+  ms.date: 07/25/2024
   author: madiepev
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question

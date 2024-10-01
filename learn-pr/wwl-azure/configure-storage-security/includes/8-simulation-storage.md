@@ -14,7 +14,7 @@ Your organization is migrating storage to Azure. As the Azure Administrator you 
 ## Objectives
 
 + **Task 1**: Create the infrastructure environment.
-    + Use a template to create the virtual networks and virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/07/az104-07-vm-template.json).
+    + Use a template to create the virtual networks and virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Interactive%20Lab%20Simulation%20Files/07).
     + Use Azure PowerShell to deploy the template. 
 + **Task 2**: Create and configure Azure Storage accounts.
     + Create a storage account.

@@ -12,15 +12,20 @@ On Android, the app looks like this:
 
 You've been asked to add some further features to this page. Before you start, you want to understand how the page was created, so you look at the source code. You notice that the UI was created entirely using C# code. While this approach works, it intermingles the code that handles the layout with the code that controls the way in which the UI works. You realize that before long, there's a danger of the two aspects of the app becoming locked together, making future maintenance difficult and possibly making the app more fragile as more features are added. You decide to separate the UI design from the UI logic by extracting the C# code that defines the layout from the app and replacing it with a XAML page.
 
+[!include[](../../../includes/dotnet8-sdk-version.md)]
+
 ## Review the existing app
 
 1. Clone the [GitHub repository](https://github.com/microsoftdocs/mslearn-dotnetmaui-create-user-interface-xaml) for this exercise locally on your computer.
 
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
 1. Move to the **exercise1** folder in your local copy of the repository.
 
-1. Open the **Notes.sln** Visual Studio solution file in this folder.
+1. Open the **Notes.sln** Visual Studio solution file in this folder or the folder in Visual Studio Code.
 
-1. In the **Solution Explorer** window, expand the **Notes** project and open the **MainPage.xaml.cs** file.
+1. In the **Solution Explorer** window, expand the **Notes** project, expand the **MainPage.xaml** file, and open the **MainPage.xaml.cs** file.
 
 1. Review the **MainPage** class defined in this file. The constructor contains the following code that creates the UI:
 
@@ -67,7 +72,7 @@ You've been asked to add some further features to this page. Before you start, y
 
 1. Build and run the app on Windows, just to see what it looks like. Select **F5** to build and run the app.
 
-1. Close the app and return to Visual Studio when you've finished.
+1. Close the app and return to Visual Studio or Visual Studio Code when you've finished.
 
 ## Create a XAML version of the UI
 

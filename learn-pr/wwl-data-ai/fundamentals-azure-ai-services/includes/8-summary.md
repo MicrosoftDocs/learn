@@ -1,4 +1,4 @@
-Azure AI services are easy to use AI capabilities made available as resources on the Azure platform. AI service capabilities include Language, Speech, Vision, Decision, Cognitive Search, and Azure OpenAI.
+Azure AI services are easy to use AI capabilities made available as resources on the Azure platform. Azure AI service capabilities include Language, Speech, Vision, Decision, Search, and Azure OpenAI.
 
 In this module we’ve used several different terms relating to AI services. Here's a recap:
 - **API** – application programming interfaces (APIs) enable software components to communicate, so one side can be updated without stopping the other from working.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-device-provisioning-service.how-device-provisioning-service-works
+title: How the Device Provisioning Service works
+metadata:
+  title: How the Device Provisioning Service works
+  description: "How the Device Provisioning Service works"
+  ms.date: 12/15/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-how-device-provisioning-service-works.md)]

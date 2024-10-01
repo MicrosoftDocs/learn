@@ -3,11 +3,11 @@ uid: learn.wwl.case-study-design-security-solutions-infrastructure
 metadata:
   title: "Case study: Design security solutions for infrastructure"
   description: "Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
-  ms.date: 4/4/2023
+  ms.date: 09/25/2024
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: module
+  ms.service: security
 title: "Case study: Design security solutions for infrastructure"
 summary: "Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
@@ -26,7 +26,7 @@ roles:
   - solution-architect
 products: 
   - entra
-  - azure-active-directory
+  - entra-id
 subjects: 
   - security
   - cloud-security

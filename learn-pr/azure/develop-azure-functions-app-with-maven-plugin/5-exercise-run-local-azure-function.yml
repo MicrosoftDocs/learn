@@ -4,11 +4,10 @@ title: Exercise - run and test an Azure function locally
 metadata:
   title: Exercise - run and test an Azure function locally
   description: You have created an Azure function using the Azure Maven archetype. Now you'll build, run and test that it works.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 interactive: bash
 azureSandbox: true

@@ -3,12 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 05/11/2023
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.author: berryivor
+  ms.date: 12/10/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -41,10 +42,10 @@ quiz:
     choices:
     - content: "The Azure AI service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Cognitive Search"
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."
+    - content: "Azure AI Search"
       isCorrect: true
-      explanation: "That's correct. Use Azure Cognitive Search to index documents for search."
-    - content: "Azure Bot Service"
+      explanation: "That's correct. Use Azure AI Search to index documents for search."
+    - content: "Azure OpenAI Service"
       isCorrect: false
-      explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
+      explanation: "That's incorrect. Use Azure AI Search to index documents for search."

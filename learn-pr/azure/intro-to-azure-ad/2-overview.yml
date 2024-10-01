@@ -3,11 +3,10 @@ uid: learn.intro-to-azure-ad.2-overview
 metadata:
   title: Microsoft Entra overview
   description: Microsoft Entra overview
-  ms.date: 02/25/2020
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Microsoft Entra overview
 durationInMinutes: 10
 content: |
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: A tenant represents an entire organization.
       isCorrect: true
-      explanation: You create a tenant for your organization so that your internal users can be managed by Microsoft Entra ID.
+      explanation: You create a tenant for your organization so that Microsoft Entra ID can manage your internal users.
     - content: A tenant represents a user in an organization.
       isCorrect: false
       explanation: A tenant represents an organization.

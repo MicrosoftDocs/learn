@@ -76,4 +76,4 @@ In this unit, you go through the steps to configure Secure Files in Azure DevOps
 
 Secure Files in Azure DevOps is an essential tool for storing and protecting sensitive files in your projects. Ensure your sensitive files are securely accessible to authorized users in your pipelines.
 
-For more information about Secure Files (YAML or classic UI), see: [Use secure files](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files/).
+For more information about Secure Files (YAML or classic UI), see: [Use secure files](/azure/devops/pipelines/library/secure-files/).

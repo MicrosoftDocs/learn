@@ -3,13 +3,13 @@ uid: learn.wwl.recognize-synthesize-speech.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 08/18/2023
+  description: Introduction
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-  ms.service: azure
-durationInMinutes: 3
+  ms.date: 12/21/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

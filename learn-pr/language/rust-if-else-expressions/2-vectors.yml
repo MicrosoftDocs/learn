@@ -3,11 +3,10 @@ uid: learn.language.rust-if-else-expressions.2-vectors
 metadata:
   title: Explore the vector data type 
   description: Discover how to work with vector data in Rust.
-  ms.date: 09/20/2021
+  ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Explore the vector data type 
 durationInMinutes: 6

@@ -5,10 +5,9 @@ metadata:
   title: Loading and normalizing datasets
   description: Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity.
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: sgilley
+  ms.date: 08/22/2024
+  ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - build-2023
@@ -21,20 +20,20 @@ notebook: notebooks/3-data.ipynb
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is the difference between a PyTorch `DataSet` and a PyTorch `DataLoader`"
+    - content: "What's the difference between a PyTorch `DataSet` and a PyTorch `DataLoader`?"
       choices:
-        - content: "A `DataSet` is designed to work with _batches_ of data while a `DataLoader` is designed for retrieval of _individual_ data items."
+        - content: "A `DataSet` is designed to work with _batches_ of data, while a `DataLoader` is designed to retrieve _individual_ data items."
           isCorrect: false
-          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
-        - content: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+          explanation: "A `DataSet` is designed to retrieve _individual_ data items, while a `DataLoader` is designed to work with _batches_ of data."
+        - content: "A `DataSet` is designed to retrieve _individual_ data items, while a `DataLoader` is designed to work with _batches_ of data."
           isCorrect: true
-          explanation: "Correct, a `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+          explanation: "Correct, a `DataSet` is designed to retrieve _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
         - content: "The `DataLoader` class is the parent of the `DataSet` class"
           isCorrect: false
-          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+          explanation: "A `DataSet` is designed to retrieve _individual_ data items, while a `DataLoader` is designed to work with _batches_ of data."
         - content: "The `DataSet` class is the parent of the `DataLoader` class"
           isCorrect: false
-          explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+          explanation: "A `DataSet` is designed to retrieve _individual_ data items, while a `DataLoader` is designed to work with _batches_ of data."
     - content: "Transforms in PyTorch are designed to:"
       choices:
         - content: "Perform some manipulation of the data to make it suitable for training."

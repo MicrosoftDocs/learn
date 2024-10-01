@@ -35,15 +35,17 @@ So, how do you get started?
 
 ## Creating an API with minimal API
 
-With .NET 6 installed, this command example creates a minimal API project:
+Let's walkthrough what you're going to learn in this module. This is just an explanation of how it works. Don't do anything yourself yet! 
+
+New projects are created with the `dotnet new` command:
 
 ```bash
-dotnet new web -o PizzaStore -f net6.0
+dotnet new web -o PizzaStore -f net8.0
 ```
 
 The newly created *PizzaStore* folder contains the API project.
 
-### Inspect the files
+### Generated files
 
 The files generated are much like those you would get with a controller-based API:
 
@@ -60,16 +62,16 @@ Inside *PizzaStore.csproj*, there's an entry like this one:
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net6.0</TargetFramework>
+  <TargetFramework>net8.0</TargetFramework>
   <Nullable>enable</Nullable>
 </PropertyGroup>
 ```
 
-This code tells you that you're using .NET 6.
+This code tells you that you're using .NET 8.
 
 ### Understand the code
 
-*Program.cs* contains your API code. Let's have a closer look at a program example:
+*Program.cs* contains your API code. Here's an example of what that code looks like:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -79,9 +81,6 @@ app.Run();
 ```
 
 If you've used earlier versions of .NET, you'll notice the lack of `using` statements. With .NET 6, the compiler figures out `using` statements for you. It's not something you need to care about.
-
-> [!NOTE]
-> As you add more features, like Entity Framework, for example, you'll need to add `using` statements. But for a simple API like the preceding example, you don't need them yet.
 
 In the first two lines of code, you create a builder. From the `builder`, you construct an application instance `app`:
 
@@ -115,7 +114,7 @@ Finally, `app.Run()` starts your API and makes it listen for requests from the c
 
 To run your code, you start your project, like any .NET project, with `dotnet run`. By default, that means you have a project running on *http://localhost:{PORT}*, where `PORT` is a value between 5000 and 5300.
 
-## Add documentation with Swagger
+## Adding documentation with Swagger
 
 Documentation is something you want for your API. You want it for yourself, your colleagues, and any third-party developers who might want to use your API. It's key to keep the documentation in sync with your API as it changes. A good approach is to describe your API in a standardized way and ensure it's self-documenting. By *self-documenting*, we mean that if the code changes, the documentation changes with it.
 
@@ -123,7 +122,7 @@ Swagger implements the OpenAPI specification. This format describes your routes 
 
 To use Swagger and the Swagger UI in your API, you do two things:
 
-- **Install a package.** To install Swagger, you specify to install a package called Swashbuckle:
+- **Install a package.** To install Swagger, you specify to install a package called Swashbuckle, like this:
 
     ```bash
     dotnet add package Swashbuckle.AspNetCore --version 6.1.4   
@@ -137,28 +136,31 @@ To use Swagger and the Swagger UI in your API, you do two things:
      using Microsoft.OpenApi.Models;
       ```
 
-   - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number.
+   - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number. Note that Swagger should be limited to development time, as it can be a security risk if it's available in production.
 
      ```csharp
      builder.Services.AddEndpointsApiExplorer();
-     builder.Services.AddSwaggerGen(c =>
-       {
+     if (app.Environment.IsDevelopment())
+     {
+       builder.Services.AddSwaggerGen(c =>
+         {
            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo API", Description = "Keep track of your tasks", Version = "v1" });
-       });
+         });
      ```
 
    - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file *swagger.json*.
 
      ```csharp
-     app.UseSwagger();
-     app.UseSwaggerUI(c =>
-       {
-         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
-       });
+       app.UseSwagger();
+       app.UseSwaggerUI(c =>
+        {
+          c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo API V1");
+        });
+     } // end of if (app.Environment.IsDevelopment()) block
      ```
 
 That's all that's involved with building a minimal API! Starting the project and navigation to *http://localhost:5000/swagger* displays something like this:
 
 :::image type="content" source="../media/swagger-todo-api.png" alt-text="Screenshot of a Swagger example that shows a to-do A P I.":::
 
-In the next unit, you'll build your own minimal API!
+Are you ready for some hands-on activities? In the next unit, you'll build your own minimal API!

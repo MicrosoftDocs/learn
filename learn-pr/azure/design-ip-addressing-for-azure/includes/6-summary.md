@@ -1,4 +1,4 @@
-In this module, you've:
+In this module, you have:
 
 - Identified the private and public IP addressing capabilities of Azure virtual networks.
 - Identified how to integrate on-premises networks with Azure.

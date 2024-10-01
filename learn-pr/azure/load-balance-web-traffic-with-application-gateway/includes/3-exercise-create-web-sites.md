@@ -1,6 +1,6 @@
-In the motor vehicle department system, you decide to run the web app on two servers. You implement each server using a virtual machine.
+In the motor-vehicle department system, you decide to run the web app on two servers. You implement each server using a virtual machine.
 
-In this exercise, you create a pair of virtual machines and install the vehicle registration web app. You also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you deploy the license renewal web site to an instance of Azure App Service.
+In this exercise, you'll create a pair of virtual machines and install the vehicle-registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license-renewal web site to an instance of Azure App Service.
 
 ![Diagram showing the resources that will be deployed.](../media/3-resources.svg)
 
@@ -86,17 +86,17 @@ In this exercise, you create a pair of virtual machines and install the vehicle 
     webServer2    MyResourceGroup    VM running                          southcentralus
     ```
 
-You have now created the virtual machines running the vehicle registration web app. Both virtual machines are identical and are part of the same virtual network.
+You've now created the virtual machines running the vehicle-registration web app. Both virtual machines are identical and are part of the same virtual network.
 
 ## Create App Service and deploy the license renewal site
 
-1. To start, to generate a unique name for the website, run the following command:
+1. To start, generate a unique name for the website by running the following command:
 
     ```bash
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the App Service plan the web app uses, run the following command:
+1. Next, create the App Service plan the web app uses by running the following command:
 
     ```azurecli
     az appservice plan create \
@@ -116,4 +116,4 @@ You have now created the virtual machines running the vehicle registration web a
         --deployment-source-branch appService 
     ```
 
-Now, let's take a closer look at configuring Application Gateway.
+Next, let's take a closer look at configuring Application Gateway.

@@ -3,19 +3,18 @@ uid: learn.aks-application-autoscaling-native.4-concepts-scaling-fine-tune
 metadata:
   title: Understand scaler configurations
   description: Understand scaler configurations
-  ms.date: 03/04/2021
+  ms.date: 01/05/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 title: Understand scaler configurations
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/4-concepts-scaling-fine-tune.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What does the stabilization window mean?"
+    - content: "What is the stabilization window?"
       choices:
         - content: "The amount of time the HPA looks back to the metrics API to get stable data."
           isCorrect: true
@@ -34,12 +33,12 @@ quiz:
         - content: "Min, Max, and Deactivated"
           isCorrect: false
           explanation: "Incorrect. HPAs have no Deactivated value."
-        - content: "Min, Max and Disabled"
+        - content: "Min, Max, and Disabled"
           isCorrect: true
           explanation: "Correct."
     - content: "When should you define behavior to your HPA?"
       choices:
-        - content: "On every created HPA, since the key is required."
+        - content: "On every created HPA since the key is required."
           isCorrect: false
           explanation: "The behavior key isn't required."
         - content: "When you want to fine-tune the HPA behavior."

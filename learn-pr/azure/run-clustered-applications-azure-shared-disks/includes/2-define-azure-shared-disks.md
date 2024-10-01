@@ -15,35 +15,35 @@ You use Azure shared disks to run clustered databases, parallel file systems, pe
 
 An Azure shared disk is created as a *managed disk*. A managed disk is a virtual hard disk for which Azure manages all required physical infrastructure. Because Azure takes care of the underlying complexity, managed disks are easy to use. You simply set up and attach them to VMs.
 
-Azure shared disks are available on the following disk types: 
+Azure shared disks are available on the following disk types:
 
 - Ultra Disks. These disks deliver high throughput, high I/O operations per second (IOPS), and consistent low latency disk storage for Azure infrastructure as a service (IaaS) VMs. By using Ultra Disks, you can dynamically change a disk's performance without restarting your VMs. Ultra Disks have the fastest performance on Azure along with low submillisecond latencies. They're scalable to 64 tebibytes (TiB).
 - Premium SSD v2 offers higher performance than Premium SSD while also generally being less costly. You can individually tweak the performance of Premium SSD v2 at any time, allowing your workloads to be more cost efficient.
-- Premium SSD (P15 and greater). Premium SSDs are backed by solid-state drives (SSDs). They deliver high-performance, low-latency disk support for VMs that are running I/O-intensive workloads.
+- Premium SSD (P15 and greater). Premium SSDs use solid-state drives (SSDs) to deliver high-performance, low-latency disk support for VMs running I/O-intensive workloads.
 - Standard SSDs are optimized for workloads that need consistent performance at lower IOPS levels than Premium SSD or Premium SSD v2.
 
 For Premium SSD and Standard SSD, the disk size defines the number of maximum shares, which can't be more than 10. For each disk, a *maxShares* value represents the maximum number of nodes that can simultaneously share the disk.
 
-Ultra Disks and Premium SSD v2 don't have size restrictions. The maximum value for the *maxShares* setting is 5.
+Ultra Disks and Premium SSD v2 don't have share restrictions based on size. The maximum value for the *maxShares* setting is 5.
 
 > [!NOTE]
 > You can share Azure shared disks only as data disks and not as OS disks.
 
 ## Use-case scenarios for Azure shared disks
 
-Azure shared disks offer the flexibility to migrate on-premises clustered environments that run on Windows or Linux. Applications that run on Windows Server instances can use the failover cluster service to control the Azure shared disks' read and write operation.
+Azure shared disks provide the flexibility needed to migrate on-premises clustered environments running on Windows or Linux. Applications running Windows Server instances can use the failover cluster service to control the Azure shared disks' read and write operation.
 
 ### A failover cluster scenario
 
-In a failover cluster scenario, you use multiple VMs to access an Azure shared disk. One of the VMs acts as a primary node and reads and writes to the disk. The other VMs act as secondary nodes. If the primary node loses access to the disk, the secondary nodes can take over the read and write operations. A common use-case scenario that uses a failover cluster with active-passive mode is а clustered database such as a SQL Server failover cluster instance (FCI).
+In a failover cluster scenario, you use multiple VMs to access an Azure shared disk. One of the VMs acts as a primary node and reads and writes to the disk. The other VMs act as secondary nodes. If the primary node loses access to the disk, the secondary nodes can take over the read and write operations. A common use-case for a failover cluster with active-passive mode is а clustered database such as a SQL Server failover cluster instance (FCI).
 
 To help you understand how shared disks work, let's examine the following step-by-step example:
 
 1. The clustered application that runs on the VMs uses the SCSI PR protocol to register its intent to read or write to disk. In this step, each VM reads information on the target about existing reservations and registrations.
-1. One application instance on VM1 takes an exclusive reservation to write to the disk.
+1. An application instance on VM1 takes an exclusive reservation to write to the disk.
 1. After that reservation is enforced, only VM1 can write to the disk. This action prevents other VMs from writing to the disk at the same time.
 1. If the application instance on VM1 goes down, VM2 issues a *preempt and abort* command and assumes disk control.
-1. The reservation to write is now enforced on the VM2, and other VMs can't write to the disk.
+1. The reservation to write is now enforced on VM2, and other VMs can't write to the disk.
 1. The applications that were running on VM1 now fail over to VM2.
 
 :::image type="content" source="../media/02-diagram-for-failover-clustering-using-shared-disk.png" alt-text="Diagram that shows how failover clustering works with shared disks on Azure." border="true":::
@@ -57,7 +57,7 @@ You can create a SQL Server FCI by using two or more Windows Azure VMs. To achie
 
 ### SAP ASCS/SCS
 
-SAP application servers use clustered shared disks to place SAP ASCS/SCS and SAP global host files. You can deploy SAP applications on both Windows and Linux.
+SAP application servers use clustered shared disks to store SAP Central Services (ASCS for ABAP and SCS for Java) and SAP global host files. You can deploy SAP applications on both Windows and Linux.
 
 Windows Server failover clustering with Azure VMs requires more configuration steps. When you build a cluster, you need to set up several IP addresses and virtual host names for the SAP ASCS/SCS instance. You can deploy both single and multiple security identifier (SID) options for SAP ASCS/SCS. You can use only Premium SSDs as Azure shared disks for an SAP ASCS/SCS instance.
 
@@ -89,9 +89,9 @@ The following Linux clusters support Azure shared disks:
 - Red Hat Enterprise Linux (RHEL) developer preview on any RHEL 8 version
 - Oracle Enterprise Linux
 
-### SLES for SAP
+### SUSE Linux Enterprise Server (SLES) for SAP
 
-Use SLES distribution with Azure shared disks to create either of the following:
+You can use SLES distribution with Azure shared disks to create:
 
 - An active/passive network file system (NFS) server.
 - An active/active Oracle Cluster File System version 2 (OCFS2) cluster file system.
@@ -102,18 +102,18 @@ For detailed information about creating SLES for SAP, see [Azure shared disks wi
 
 ### Ubuntu high availability
 
-Ubuntu clusters use Pacemaker as a cluster manager that runs on top of the Corosync Cluster Engine. Control the consistency among various cluster resources by using one of the following fencing options:
+Ubuntu clusters use Pacemaker as a cluster manager that runs on top of the Corosync Cluster Engine. You control the consistency among various cluster resources by using one of the following fencing options:
 
 - SCSI PR
 - SBD
 
 Similar to SLES, a small Linux kernel model called *softdog* controls access to the shared disk. You can deploy both an active/passive and an active/active cluster. However, for the active/active cluster, a distributed lock manager (DLM) is also necessary.
 
-### RHEL cluster using shared disks
+### Red Hat Enterprise Linux (RHEL) cluster using shared disks
 
-You can use a shared disk as a shared block storage for an RHEL high availability cluster. Clustered applications running on RHEL highly available VMs access the same storage device on each server in a cluster through Global File System 2 (GFS2). Use Pacemaker for cluster management, Corosync for member communications, and STONITH for fencing and data integrity. 
+You can use a shared disk as a shared block storage for an RHEL high availability cluster. Clustered applications running on RHEL highly available VMs access the same storage device on each server in a cluster through Global File System 2 (GFS2). Use Pacemaker for cluster management, Corosync for member communications, and STONITH for fencing and data integrity.
 
-For detailed information about creating an RHEL cluster with shared disks, see the Red Hat Enterprise Linux documentation for either [RHEL 7.9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/deploying_red_hat_enterprise_linux_7_on_public_cloud_platforms/configuring-rhel-high-availability-on-azure_cloud-content) or [RHEL 8.3+](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_red_hat_enterprise_linux_8_on_public_cloud_platforms/configuring-rhel-high-availability-on-azure_cloud-content).
+For detailed information about creating an RHEL cluster with shared disks, see the Red Hat Enterprise Linux documentation for either [RHEL 7.9](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/deploying_red_hat_enterprise_linux_7_on_public_cloud_platforms/configuring-rhel-high-availability-on-azure_cloud-content) or [RHEL 8.3+](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/deploying_rhel_8_on_microsoft_azure/configuring-rhel-high-availability-on-azure_cloud-content-azure#azure-configuring-shared-block-storage_configuring-rhel-high-availability-on-azure).
 
 ### Use Azure shared disks on containers
 

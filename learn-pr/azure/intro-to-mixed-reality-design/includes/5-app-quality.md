@@ -12,14 +12,15 @@ Building immersive and reliable experiences requires a thorough understanding of
 
 **Use of spatial sound** - Using spatial sound in an application allows developers to convincingly place sounds in a 3-dimensional space (sphere) all around the user. Those sounds seem as if they're coming from real physical objects or the mixed reality holograms in the user's surroundings.
 
-**Focus on holographic frame (FOV) boundaries** - Mitigating the effect of the FOV boundaries involves a thoughtful design of content scale and context, use of spatial audio, guidance systems, and the user's position.
+**Focus on holographic frame field of view boundaries** - Mitigating the effect of the field of view (FOV) boundaries involves a thoughtful design of content scale and context, use of spatial audio, guidance systems, and the user's position.
 
 **Content reacts to user position** - Designing an app that correctly adapts to user position creates a more believable experience and make it easier to use.
 
 **Input interaction clarity** - Input interaction clarity is critical to an app's usability and includes input consistency, approachability, discoverability of interaction methods.
 
 **Interactable objects** - Interactable objects should be clearly recognizable by the user through visual and audio cues.
-Room scanning - If the user is required to scan the environment, clear guidance should be provided during the scanning experience.
+
+**Room scanning** - If the user is required to scan the environment, clear guidance should be provided during the scanning experience.
 
 **Directional indicators** - A well-designed app makes it easier for the user to find nonvisible content. Directional indicators alert a user to important content and provide guidance to the content relative to the user's position.
 

@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Pipelines in Microsoft Fabric encapsulate a sequence of *activities* that perform data movement and processing tasks. You can use a pipeline to define data transfer and transformation activities, and orchestrate these activities through control flow activities that manage branching, looping, and other typical processing logic. The graphical pipeline *canvas* in the Fabric user interface enables you to build complex pipelines with minimal or no coding required.
 
 ![Screenshot of a pipeline in Microsoft Fabric.](../media/pipeline.png)
@@ -21,7 +17,9 @@ There are two broad categories of activity in a pipeline.
 - **Control flow activities** - activities that you can use to implement loops, conditional branching, or manage variable and parameter values. The wide range of control flow activities enables you to implement complex pipeline logic to orchestrate data ingestion and transformation flow.
 
 > [!TIP]
-> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](https://learn.microsoft.com/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
+> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
+
+<!-- Update URL for release -->
 
 ### Parameters
 

@@ -1,6 +1,6 @@
 The board wants to enable secure and easy access to applications and services. These applications are available to internal staff and doctors from various countries/regions. Your team manager believes that Microsoft Entra ID can address these needs. Your manager wants you to find out what Microsoft Entra ID is, how it works, and what it does.
 
-Here, you'll get an overview of Microsoft Entra ID and see why you would use it. You'll learn about the differences between Microsoft Entra ID and the traditional on-premises Active Directory.
+Here, you get an overview of Microsoft Entra ID and see why you would use it. You learn about the differences between Microsoft Entra ID and the traditional on-premises Active Directory.
 
 <a name='what-is-azure-ad'></a>
 
@@ -8,15 +8,15 @@ Here, you'll get an overview of Microsoft Entra ID and see why you would use it.
 
 Microsoft Entra ID is a cloud-based identity-management solution. It helps your company's internal users to:
 
-- Access external resources like Azure services, Microsoft 365, and third-party SaaS applications
+- Access external resources like Azure services, Microsoft 365, and third-party SaaS applications.
 
-- Access internal resources such as applications on your corporate network and cloud-based applications that your company builds
+- Access internal resources such as applications on the corporate network and cloud-based applications that your company builds.
 
 Microsoft Entra ID also helps you keep user identities and applications secure through features like Conditional Access and identity protection.
 
-![Azure AD.](../media/2-azure-ad.svg)
+![Diagram of Microsoft Entra ID.](../media/2-azure-ad.svg)
 
-Microsoft Entra ID stores your users in a tenant that represents an organization. For example, say you have a company tenant where all of your employee user accounts are stored. You can add users in this tenant to groups so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications. Each tenant can have multiple groups that hold multiple users.
+Microsoft Entra ID stores your users in a *tenant* that represents an organization. For example, say you have a company tenant where all of your employee user accounts are stored. You can add users in this tenant to groups so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications. Each tenant can have multiple groups that hold multiple users.
 
 <a name='who-benefits-from-azure-ad'></a>
 
@@ -24,7 +24,7 @@ Microsoft Entra ID stores your users in a tenant that represents an organization
 
 Microsoft Entra ID meets the needs of many types of users. For instance, an IT administrator can use Microsoft Entra ID to determine who should have access to applications and resources, based on company requirements. An administrator can add another layer of protection to applications and services by enforcing multifactor authentication on sign-ins.
 
-Application developers can use Microsoft Entra ID to allow users to use preexisting credentials to access applications. Developers also use Microsoft Entra ID to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Microsoft Entra ID.
+Application developers can use Microsoft Entra ID to allow users to use pre-existing credentials to access applications. Developers can also use Microsoft Entra ID to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Microsoft Entra ID.
 
 If you subscribe to services like Azure or Microsoft 365, you're already taking advantage of Microsoft Entra ID. You could use Microsoft Entra ID to further manage access to your cloud applications.
 
@@ -38,7 +38,7 @@ You can find your tenant's identity secure score in the Azure portal. Go to your
 
 ![Secure identity score.](../media/2-secure-identity-score.png)
 
-The dashboard shows information such as how you compare with the industry average and with tenants of the same size as yours. The dashboard also provides a graph that shows how your score has changed over time. You can see what to do to improve your score and how much impact each improvement will have.
+The dashboard shows information such as how you compare with the industry average and with tenants of the same size as yours. The dashboard also provides a graph that shows the changes in your score over time. You can see what to do to improve your score and how much effect each improvement can have on your score.
 
 Use the identity secure score to improve and monitor the security of your identities in Microsoft Entra ID.
 
@@ -46,16 +46,16 @@ Use the identity secure score to improve and monitor the security of your identi
 
 ## How Microsoft Entra ID compares with Active Directory
 
-Active Directory and Microsoft Entra ID share a similar name, but they're separate services that are used for different purposes.
+Active Directory and Microsoft Entra ID are separate services that are used for different purposes.
 
 Microsoft Entra ID is a cloud-based identity solution that helps you manage users and applications. Active Directory manages objects, like devices and users, on your on-premises network. Here are some other differences:
 
-|Service|Authentication  |Structure  |What it's used for  
+|Service|Authentication  |Structure  |Used for  
 |---------|---------|---------|---------|
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units | Authentication and authorization for on-premises printers, applications, file services, and more
 |Microsoft Entra ID     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Microsoft 365, Azure services, and third-party SaaS applications
 
-![A comparison between Active Directory and Azure AD.](../media/2-azure-ad-compared-active-directory.svg)
+![A comparison between Active Directory and Microsoft Entra ID.](../media/2-azure-ad-compared-active-directory.svg)
 
 Microsoft Entra ID doesn't replace Active Directory. The service you use depends on your organization's needs. You can use the two services together so you can take advantage of their combined features and capabilities.
 
@@ -63,7 +63,7 @@ Microsoft Entra ID doesn't replace Active Directory. The service you use depends
 
 ## Hybrid identity for linking on-premises Active Directory with Microsoft Entra ID
 
-Your users will want to access applications from both the cloud and on-premises. You can use Microsoft Entra ID and Active Directory together to provide an identity solution that spans on-premises and the cloud. Users can use single user identity for authentication and to access applications and resources, whatever their location. This user identity is called a hybrid identity.
+Your users want to access applications from both the cloud and on-premises. You can use Microsoft Entra ID and Active Directory together to provide an identity solution that spans on-premises and the cloud. Users can use single user identity for authentication and to access applications and resources, whatever their location. This user identity is called a hybrid identity.
 
 Multiple authentication methods let you achieve hybrid identity for users:
 
@@ -79,16 +79,16 @@ Use the following table as a reference for which options to use for particular s
 
 |You want to:  |Password hash synchronization|Pass-through authentication|Federated authentication|
 |---------|---------|---------|---------|
-|Automatically synchronize to the cloud the users, contacts, and groups that have been set up on on-premises Active Directory|Yes|Yes|Yes|
+|Automatically synchronize to the cloud the users, contacts, and groups that are set up on on-premises Active Directory|Yes|Yes|Yes|
 |Allow users to access cloud applications and resources by using their on-premises password|Yes|Yes|Yes|
 |Ensure that password hashes aren't stored in the cloud|No|Yes|Yes|
 |Use cloud-based multifactor authentication|Yes |Yes|Yes|
 |Use on-premises multifactor authentication|No|No|Yes|
-|Use smart card authentication for additional protection|No|No|Yes|
+|Use smart card authentication for added protection|No|No|Yes|
 
 ## European identity data storage
 
-When you subscribe to a service like Azure or Microsoft 365, all of your identity data is stored based on the address you provide during the subscription process. If you're a customer who uses an address in Europe, Microsoft Entra ID stores most of your data in European datacenters. However, some data is stored outside Europe by services you use with Microsoft Entra ID. Here are a few examples of some of the data that's stored outside Europe:
+When you subscribe to a service like Azure or Microsoft 365, all of your identity data is stored based on the address you provide during the subscription process. If you're a customer who uses an address in Europe, Microsoft Entra ID stores most of your data in European datacenters. However, services that you use with Microsoft Entra ID store some data outside Europe. Here are a few examples of some of the data stored outside Europe:
 
 |Microsoft Entra ID-based service |Data location  |
 |---------|---------|

@@ -1,7 +1,7 @@
 Recall that you can create items within your container using the Azure Cosmos DB SDK for .NET. For this project, the products container contains both the individual *product* items and special *category* items for each category. There's two cases you want to handle in this application:
 
 - If a category is empty, it's fine to just create that category's item individually. There are no related product items to create.
-- However, if a category has related products, you want to create the category item and the related product items simultaneously.
+- However, if a category includes related products, you want to create the category item and the related product items simultaneously.
 
 Right now, you have two key requirements:
 
@@ -89,7 +89,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. *Cr
 Now, consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
 :::image type="complex" source="../media/diagram-items.png" alt-text="Diagram of items in Azure Cosmos DB grouped by their partition key." lightbox="../media/diagram-items.png" border="false":::
-    Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the "tents" partition key value and only one item belongs to "helmets".
+    Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the "tents" partition key value and only one item belongs to "helmets."
 :::image-end:::
 
 In this section, we create a transactional batch to create the `tents` category and related products together.

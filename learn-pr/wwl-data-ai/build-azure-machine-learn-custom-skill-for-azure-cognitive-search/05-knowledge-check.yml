@@ -3,18 +3,19 @@ uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/27/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.date: 09/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following options is the only supported endpoint for use with Azure Cognitive Search custom AML skill?"
+  - content: "Which of the following options is the only supported endpoint for use with Azure AI Search custom AML skill?"
     choices:
     - content: "Real-time endpoint."
       isCorrect: false

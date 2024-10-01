@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which capability supports organizations to define strategies to assign and share cloud costs by using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization?"
+    choices:
+    - content: "Allocation"
+      isCorrect: true
+      explanation: "Correct: This capability helps you to implement these tasks."
+    - content: "Cloud sustainability"
+      isCorrect: false
+      explanation: "Incorrect: This capability supports your efforts to establish the strategic and tactical direction, metrics, and criteria to incorporate sustainability goals and targets into other FinOps Capabilities and decision making."
+    - content: "Anomaly management"
+      isCorrect: false
+      explanation: "Incorrect: This capability supports your efforts to implement strategies to detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations."
+    - content: "Budgeting"
+      isCorrect: false
+      explanation: "Incorrect: This capability supports your efforts to implement the strategic, ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle."
+  - content: "You're considering commitment discounts to reduce cloud costs. Which FinOps capability can support your efforts to manage this type of pricing options?"
+    choices:
+    - content: "Reporting + analytics"
+      isCorrect: false
+      explanation: "Incorrect: This capability supports your efforts to examine and showback cloud data to gain insights into usage & spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud."
+    - content: "Rate optimization"
+      isCorrect: true
+      explanation: "Correct: Rate optimization supports your efforts to drive cloud rate efficiency by acquiring and managing a portfolio of Committed Use Discounts, Reserved Instances, Savings Plans, or other rate discounts offered by cloud service providers while meeting the organization's operational and budgetary objectives."
+    - content: "Forecasting"
+      isCorrect: false
+      explanation: "Incorrect: This capability supports your efforts to apply statistical methods and forecasting techniques by using historical data, current spend patterns, planned changes, and related financial metrics to forecast future cloud costs, plan budgets, and allocate resources efficiently."
+    - content: "Budgeting"
+      isCorrect: false
+      explanation: "Incorrect: Within this capability, the organization implements the strategic, ongoing process for setting, monitoring, and managing financial plans to manage cloud spending effectively, align it with business objectives, and ensure financial accountability throughout the cloud services lifecycle."
+  - content: "In which domain is the FinOps education and enablement capability included?"
+    choices:
+    - content: "Understand cloud usage and cost"
+      isCorrect: false
+      explanation: "Incorrect: This capability isn't included in this domain."
+    - content: "Optimize cloud usage and cost"
+      isCorrect: false
+      explanation: "Incorrect: This capability isn't included in this domain."
+    - content: "Manage the FinOps practice"
+      isCorrect: true
+      explanation: "Correct: This capability is included in this domain."
+    - content: "Quantify business value"
+      isCorrect: false
+      explanation: "Incorrect: This capability isn't included in this domain."
+  - content: "Which capability can help you address inaccurate budgets that are consistently over or under actual spend?"
+    choices:
+    - content: "Anomaly management"
+      isCorrect: true
+      explanation: "Incorrect: While anomaly management can help you avoid and manage unexpected changes, it doesn't help improve budget accuracy."
+    - content: "Forecasting"
+      isCorrect: false
+      explanation: "Correct: Since forecasts are the baseline for budgeting, if you improve those forecasts and incorporate them into the onboarding and budget review processes, you can significantly improve budget accuracy over time."
+    - content: "Architecting for cloud"
+      isCorrect: false
+      explanation: "Incorrect: While establishing the right architecture upfront will reduce time and effort to build efficient workloads, it doesn't directly improve budget accuracy."
+    - content: "Onboarding workloads"
+      isCorrect: false
+      explanation: "Incorrect: While establishing budgets is part of onboarding new workloads, it doesn't address the accuracy of these budgets."

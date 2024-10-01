@@ -7,8 +7,7 @@ metadata:
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
-  ms.topic: interactive-tutorial
-  ms.prod: hololens
+  ms.topic: unit
 durationInMinutes: 60
 content: |
   [!include[](includes/2-application-description-and-storyboarding.md)]

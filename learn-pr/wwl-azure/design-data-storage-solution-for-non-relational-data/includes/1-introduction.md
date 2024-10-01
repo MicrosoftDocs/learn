@@ -1,8 +1,6 @@
-
-
 Data storage describes how different data is stored and managed in your organization. The type of data storage that you implement is based on the structure of your data and how your data is accessed.
 
-Data can be highly organized like machine configurations and customer invoices. Other data is less structured, such as fax images and engineering white papers. Some data is accessed by only specific users like system administrators or file owners. And other data is accessed by all users, including internal employees and external partners.
+Data can be highly organized like machine configurations and customer invoices. Other data is less structured, such as fax images and engineering white papers. Some data is used only by specific users like system administrators or file owners. And other data is used by all users, including internal employees and external partners.
 
 ## Meet Tailwind Traders
 
@@ -34,7 +32,7 @@ The content in this module helps you prepare for Exam AZ-305: Designing Microsof
 
 Design data storage solutions
 
-- Design a data storage solution for non-relational data
+- Design a data storage solution for nonrelational data
 
    - Recommend a data storage solution to balance features, performance, and cost
 

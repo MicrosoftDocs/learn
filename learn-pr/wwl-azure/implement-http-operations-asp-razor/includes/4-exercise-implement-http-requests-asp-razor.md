@@ -2,4 +2,9 @@ In this exercise, you learn how to add the necessary code to an ASP.NET Core Raz
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/APL-2002-develop-aspnet-core-consumes-api/Instructions/Labs/02-implement-http-operations.html)
+<br/>
+
+<a href="https://go.microsoft.com/fwlink/?linkid=2261384" target="_blank">
+    <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
+</a>
+

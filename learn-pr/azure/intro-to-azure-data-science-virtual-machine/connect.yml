@@ -3,13 +3,11 @@ uid: learn.azure.intro-to-data-science-virtual-machine.connect
 metadata:
   title: Using SSH and RDP to connect
   description: Learn how to connect to your Data Science Virtual Machine by using both command-line and graphical clients.
-  ms.date: 06/02/2023
-  ms.service: machine-learning
+  ms.date: 04/09/2024
   author: jesscioffi
   ms.author: jcioffi
   ms.reviewer: franksolomon 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Using SSH and RDP to connect
 durationInMinutes: 6
 content: |

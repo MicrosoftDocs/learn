@@ -1,12 +1,12 @@
 ## Configure external collaboration settings
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
-2.  Select **Azure Active Directory**.
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2.  Select **Identity.**
 3.  Select **External Identities - External collaboration settings**.
 4.  Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
     
     > [!NOTE]
-    > Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.<br>\- Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.<br>\- Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
+    > Guest users have the same access as members (most inclusive): This option gives guests the same access to Microsoft Entra resources and directory data as member users.<br>\- Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.<br>\- Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
 5.  Under **Guest invite settings**, mark **Only user assigned to specific admin roles can invite guest users**.
 6.  Inviting guests to collaborate moves the least restrictive option, where anyone can invite guests, to the most restrictive where no one can invite guests.
 7.  Anyone in the organization can invite guests: Set to allow anyone to invite guest users, including users, admins, and even other guest users.

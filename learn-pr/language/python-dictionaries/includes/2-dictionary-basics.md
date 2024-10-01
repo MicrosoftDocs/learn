@@ -5,7 +5,7 @@ name = 'Earth'
 moons = 1
 ```
 
-Although this method does work for smaller amounts of data, it can become increasingly complex when you're working with related data. Imagine wanting to store information about the moons of both Earth and Jupiter.
+Although this method does work for smaller amounts of data, it can become increasingly complex when you're working with related data. Imagine that you want to store information about the moons of Earth and the moons of Jupiter.
 
 ```python
 earth_name = 'Earth'
@@ -50,7 +50,7 @@ print(planet.get('name'))
 Earth
 ```
 
-As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This method uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following:
+As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This method uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following code:
 
 ```python
 # planet['name'] is identical to using planet.get('name')
@@ -70,7 +70,7 @@ wibble = planet['wibble'] # Throws KeyError
 
 ## Modify dictionary values
 
-You can also modify values inside a dictionary object, by using the `update` method. This method accepts a dictionary as a parameter, and updates any existing values with the new ones you provide. If you want to change the `name` for the `planet` dictionary, you can use the following, for example:
+You can also modify values inside a dictionary object, by using the `update` method. This method accepts a dictionary as a parameter, and updates any existing values with the new ones you provide. If you want to change the `name` for the `planet` dictionary, you can use the following code, for example:
 
 ```python
 planet.update({'name': 'Makemake'})
@@ -78,7 +78,7 @@ planet.update({'name': 'Makemake'})
 # No output: name is now set to Makemake.
 ```
 
-Similar to using the square brackets (`[ ]`) shortcut to read values, you can use the same shortcut to modify values. The key difference in syntax is that you use `=` (sometimes called the *assignment* operator) to provide a new value. To rewrite the preceding example to change the name, you can use the following:
+Similar to using the square brackets (`[ ]`) shortcut to read values, you can use the same shortcut to modify values. The key difference in syntax is that you use `=` (sometimes called the *assignment* operator) to provide a new value. To rewrite the preceding example to change the name, you can use the following code:
 
 ```python
 planet['name'] = 'Makemake'

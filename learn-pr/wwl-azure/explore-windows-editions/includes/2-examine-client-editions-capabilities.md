@@ -1,4 +1,4 @@
-It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows and later.
+It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows 10 and later.
 
 | **Windows 10 / Windows 11 Edition** | **Audience**                                                                      | **Availability**                                                    |
 | ----------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ Some of the features Pro edition provides:
  -  **Dynamic Provisioning:** Dynamic Provisioning allows an organization's out-of-the-box PC to be configured with minimal effort.
  -  **Mobile Device Management (MDM) support:** Mobile Device Management support allows devices to be managed through an MDM service instead of traditional management solutions.
  -  **Domain Join:** Computers can join the Active Directory domain.
- -  **Ability to join Azure Active Directory:** This ability enables users to perform single sign-on across Windows, Microsoft 365, and other cloud-hosted apps and services.
+ -  **Ability to join Microsoft Entra ID:** This ability enables users to perform single sign-on across Windows, Microsoft 365, and other cloud-hosted apps and services.
  -  **Group Policy Management:** Domain joined computers support the Group Policy Management feature.
  -  **BitLocker:** BitLocker functions as a complete volume encryption and boot environment protection solution.
  -  Windows Information Protection (with MDM management) helps protects apps and data leaks on organization and personally owned devices.

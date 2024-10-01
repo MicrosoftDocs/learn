@@ -5,14 +5,13 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy a subscription-scoped resource
   description: Learn how to create Bicep files that deploy resources to a subscription.
-  ms.date: 10/14/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
     - devx-track-bicep
-  ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 7
 content: |

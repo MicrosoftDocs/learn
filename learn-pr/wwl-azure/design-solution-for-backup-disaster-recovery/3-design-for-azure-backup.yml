@@ -4,11 +4,12 @@ title: Design for Azure Backup
 metadata:
   title: Design for Azure Backup
   description: "Design for Azure Backup"
-  ms.date: 06/09/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

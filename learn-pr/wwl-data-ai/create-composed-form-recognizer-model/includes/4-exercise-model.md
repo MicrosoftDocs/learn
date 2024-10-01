@@ -4,12 +4,12 @@ In this exercise, you'll create and train two custom models that analyze differe
 
 To start the exercise, let's connect to Cloud Shell, which you'll use to run the setup script:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
     :::image type="content" source="../media/4-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you do not see this option, skip the step.
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
+1. The first time you open the Cloud Shell, you might be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you don't see this option, skip the step.
+1. If you're prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created.
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it is *PowerShell*, switch to *Bash* by using the drop-down menu.
 1. Wait for Bash to start.
 
@@ -19,14 +19,18 @@ We'll use a script to create the Azure AI Document Intelligence resource, a stor
 
 1. In the Cloud Shell, to clone the code repository, enter this command:
 
-    ``` bash
-	git clone https://github.com/MicrosoftLearning/mslearn-formrecognizer.git
-	```
+    ```bash
+    rm -r doc-intelligence -f
+    git clone https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence doc-intelligence
+    ```
+  
+    > [!TIP]
+    > If you recently used this command in another lab to clone the *doc-intelligence* repository, you can skip this step.
 
-1. Change the **Mod4** directory and then execute the setup script:
+1. Change the **03-composed-model** directory and then execute the setup script:
 
    ``` bash
-   cd formsreadermodules/Mod4/
+   cd doc-intelligence/Labfiles/03-composed-model/
    bash setup.sh
    ```
 
@@ -35,9 +39,9 @@ We'll use a script to create the Azure AI Document Intelligence resource, a stor
 To create a composed model, we must first create two or more custom models. To create the first custom model:
 
 1. In a new browser tab, start the [Azure AI Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio).
-1. Scroll down, and then under **Custom model**, select **Custom model**. 
-1. If you are asked to sign into your account, use your Azure credentials.
-1. If you are asked which Azure AI Document Intelligence resource to use, select the subscription and resource name you used when you created the Azure AI Document Intelligence resource.
+1. Scroll down, and then under **Custom model**, select **Custom model**.
+1. If you're asked to sign into your account, use your Azure credentials.
+1. If you're asked which Azure AI Document Intelligence resource to use, select the subscription and resource name you used when you created the Azure AI Document Intelligence resource.
 1. Under **My Projects**, select **+ Create a project**.
 1. In the **Project name** textbox, type **1040 Forms**, and then select **Continue**.
 1. On the **Configure service resource** page, in the **Subscription** drop-down list, select your Azure subscription.
@@ -94,7 +98,7 @@ Now that the sample forms are labeled, we can train the first custom model:
 
 ## Create the 1099 Forms custom model
 
-Now, you must create a second model, which you will train on example 1099 tax forms:
+Now, you must create a second model, which you'll train on example 1099 tax forms:
 
 1. In Azure AI Document Intelligence Studio, select **Custom model**.
 1. Under **My Projects**, select **+ Create a project**.

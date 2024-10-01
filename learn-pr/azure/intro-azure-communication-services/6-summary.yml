@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: "A summary of the introduction to Azure Communication Services module."
-  ms.date: 03/09/2022
+  ms.date: 04/17/2024
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

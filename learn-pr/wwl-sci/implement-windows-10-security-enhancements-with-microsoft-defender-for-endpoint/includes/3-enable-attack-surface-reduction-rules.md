@@ -54,7 +54,7 @@ Use audit mode to evaluate how attack surface reduction rules would impact your 
 
 ## Notifications when a rule is triggered
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft 365 Defender portal.
+Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft Defender portal.
 
 ## Configure attack surface reduction rules
 

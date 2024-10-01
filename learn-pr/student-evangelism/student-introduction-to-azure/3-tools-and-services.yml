@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-introduction-to-azure.tools-and-services
-title: |
-  Tools and services
+title: Tools and services
 metadata:
-  title: |
-    Tools and services
+  title: Tools and services
   description: "Learn about Visual Studio Code, GitHub and GitHub tools."
   ms.date: 9/11/2023
   author: v-regandowner
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 content: |

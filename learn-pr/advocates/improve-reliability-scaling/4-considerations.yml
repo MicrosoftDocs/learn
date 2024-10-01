@@ -4,11 +4,10 @@ title: "Capacity planning considerations"
 metadata:
   title: "Capacity planning considerations"
   description: "Capacity planning considerations"
-  ms.date: 05/07/2020
+  ms.date: 06/23/2023
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-04282021
 durationInMinutes: 5

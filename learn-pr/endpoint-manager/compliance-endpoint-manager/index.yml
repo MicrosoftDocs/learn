@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/04/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: microsoft-intune
 title: Analyze and resolve compliance issues using Microsoft Intune
 summary: Microsoft Intune provides many methods to analyze, troubleshoot, and resolve compliance issues. In this module, you'll learn about such things as tenant status, health dashboards, troubleshooting portals, reports, and more.

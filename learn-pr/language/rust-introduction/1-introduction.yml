@@ -3,11 +3,10 @@ uid: learn.language.rust-introduction.1-introduction
 metadata:
   title: Introduction
   description: Introduction to the Rust programming language.
-  ms.date: 07/26/2021
+  ms.date: 12/02/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 2

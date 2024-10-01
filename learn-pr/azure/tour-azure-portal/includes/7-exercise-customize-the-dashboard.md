@@ -1,4 +1,4 @@
-In the last unit, you saw how dashboards are a flexible tool for managing different aspects of Azure services through the portal. They make it convenient to monitor the state of your services. Because they are shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components.
+In the last unit, you saw how dashboards are a flexible tool for managing different aspects of Azure services through the portal. They make it convenient to monitor the state of your services. Because they're shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components.
 
 Let's create a new dashboard and add some tiles to it.
 
@@ -34,7 +34,7 @@ Let's create a new dashboard and add some tiles to it.
 
 1. Select the gray corner on the bottom right-hand side of the tile, and drag it up to resize the tile to about 3.5 squares vertically, keeping the horizontal size the same. When you finish resizing, the tile adjusts to the closest available size, **6 x 4**.
 
-1. From the Tile Gallery, drag the **Resource Groups** tile onto the workspace. Place it underneath the **All resources** tile.
+1. From the Tile Gallery, drag the **Resource groups** tile onto the workspace. Place it underneath the **All resources** tile.
 
 1. From the Tile Gallery, select the **Metrics chart** tile, and drag it onto the workspace. Place it to the right of the **All resources** tile.
 
@@ -44,7 +44,7 @@ Let's create a new dashboard and add some tiles to it.
     - Microsoft Entra quick tasks
     - Marketplace
 
-1. After you've added these tiles, select *Save**. The **Customer Dashboard** dashboard that you just created will appear as your current dashboard.
+1. After you've added these tiles, select **Save**. The **Customer Dashboard** dashboard that you created appears as your current dashboard.
 
 ## Clone a dashboard
 
@@ -63,11 +63,11 @@ You now want to create a similar dashboard for some other customers, but with a 
     - Users and groups
     - User sign-in summary
 
-1. Reposition the tiles as necessary, then select **Save**. The **Microsoft Entra Admin Dashboard** dashboard that you just created will appear as your current dashboard.
+1. Reposition the tiles as necessary, then select **Save**. The **Microsoft Entra Admin Dashboard** dashboard that you created appears as your current dashboard.
 
 ## Share a dashboard
 
-You now want to make this dashboard available to other users. In the sandbox environment, you won't be able to share a dashboard with other users. But you can see how you'd publish a shared dashboard by completing the following steps.
+You now want to make this dashboard available to other users. In the sandbox environment, you can't share a dashboard with other users. But you can see how you'd publish a shared dashboard by completing the following steps.
 
 1. From the Microsoft Entra Admin dashboard, select the **Share** button at the top. The **Sharing + access control** appears.
 1. If the **Publish to the 'dashboards' resource group** checkbox is selected, uncheck the box.
@@ -93,7 +93,7 @@ You now want to make this dashboard available to other users. In the sandbox env
 
 1. In the **Reset dashboard to default state** message box, select **Yes**.
 
-   You'll see the Customer Dashboard with the default tiles instead of the edits you made.
+   You see the Customer Dashboard with the default tiles instead of the edits you made.
 
 1. Select **Save**.
 

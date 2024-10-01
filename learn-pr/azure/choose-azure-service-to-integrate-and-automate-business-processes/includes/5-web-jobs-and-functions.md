@@ -2,7 +2,7 @@ Now let's look at another process from our bike rental business and decide what 
 
 ## Scenario
 
-Your bike technicians currently use a spreadsheet to record the actions they take to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff has no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
+Your bike technicians currently use a spreadsheet to record the actions they take to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff has no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the company's brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 
@@ -11,7 +11,7 @@ You want to build a system that governs the maintenance and repair process and a
 - Which bikes are currently available to rent?
 - Which bikes are currently unavailable to rent?
 - For each bike that is unavailable:
-  - Why can't we rent them out?
+  - Why can't we rent it out?
   - Are we waiting for any parts, and what are those parts?
   - When is the bike likely to be available again for rent?
 
@@ -60,7 +60,7 @@ We have to make a decision between the following two technologies.
 
 The following factors will influence your choice:
 
-- Cost: With Web Jobs, you pay for the entire VM or App Service Plan that hosts the job. Azure Function can run on a consumption plan, so you only pay when the function runs. Since this process only kicks off when a bike is returned, we might stand to save by selecting Azure Functions.
-- Integrations: You want to integrate the maintenance workflow with the Logic App that you build for the bike booking and rental process in the previous unit. Although it's possible to call a WebJob from a Logic App, the integration between Logic Apps and Functions is closer. For example, you can more easily control your call to a Function from the Logic Apps designer.
+- Cost: With WebJobs, you pay for the entire VM or App Service Plan that hosts the job. Azure Functions can run on a consumption plan, so you only pay when the function runs. Since this process only kicks off when a bike is returned, we might save money by selecting Azure Functions.
+- Integrations: You want to integrate the maintenance workflow with the Logic App that you build for the bike booking and rental process in the previous unit. Although it's possible to call a WebJob from a Logic App, the integration between Logic Apps and Functions is closer. For example, you can more easily control your call to a Function from the Logic Apps visual designer.
 
 For these reasons, we'll select Azure Functions to manage your bike maintenance business process.

@@ -4,44 +4,43 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 06/26/2023
+  ms.date: 09/30/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: Choose the best response for each question. Then select Check your answers.
 quiz:
   title: Check your knowledge
   questions:
-    - content: " In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
+    - content: "In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
       choices:
-        - content: " WebGL"
+        - content: "WebGL"
           isCorrect: false
-          explanation: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. 
+          explanation: Incorrect. WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. 
         - content: "PC, Mac & Linux Standalone"
           isCorrect: false
-          explanation: The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
+          explanation: Incorrect. The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
         - content: "Universal Windows Platform"
           isCorrect: true
-          explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
+          explanation: Correct. With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (such as phones), Xbox One and HoloLens with a single code base.
     - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
         - content: "org.mixedrealitytoolkit.core"
           isCorrect: true
-          explanation: The core package is the only required package and includes the core components required to create a mixed reality application.
+          explanation: Correct. The core package is the only required package and includes the core components required to create a mixed reality application.
         - content: "org.mixedrealitytoolkit.spatialmanipulation"
           isCorrect: false
-          explanation: The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
+          explanation: Incorrect. The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
         - content: "org.mixedrealitytoolkit.extendedassets"
           isCorrect: false
-          explanation: The extended assets package is optional and contains additional materials, fonts, audio files and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
+          explanation: Incorrect. The extended assets package is optional and contains additional materials, fonts, audio files, and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
     - content: "After the Mixed Reality Toolkit is added to a Unity scene, what should you do with the Main Camera object?"
       choices:
         - content: "The Main Camera object should be left in the scene."
           isCorrect: false
-          explanation: "The 'MRTK XR Rig' object already has its own camera."
+          explanation: "Incorrect. The 'MRTK XR Rig' object already has its own camera."
         - content: "The Main Camera object should be deleted."
           isCorrect: true
-          explanation: "The Main Camera object should be deleted because the 'MRTK XR Rig' prefab that was added to the scene contains a camera in its child objects."
+          explanation: "Correct. The Main Camera object should be deleted because the 'MRTK XR Rig' prefab that was added to the scene contains a camera in its child objects."
     

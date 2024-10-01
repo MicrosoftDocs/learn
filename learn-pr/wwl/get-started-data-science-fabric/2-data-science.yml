@@ -4,15 +4,14 @@ title: Understand the data science process
 metadata:
   title: Understand the data science process
   description: "Understand the data science process"
-  ms.date: 06/07/2023
+  ms.date: 11/23/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 6
 content: |
   [!include[](includes/2-data-science.md)]

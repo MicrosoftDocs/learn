@@ -4,11 +4,10 @@ title: Exercise - Review the deployment and remove resources
 metadata:
   title: Exercise - Review the deployment and remove resources
   description: "Exercise - Review the deployment and remove resources"
-  ms.date: 10/06/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

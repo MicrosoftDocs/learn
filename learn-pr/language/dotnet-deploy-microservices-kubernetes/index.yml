@@ -6,8 +6,8 @@ metadata:
   ms.date: 07/17/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.manager: markl
-  ms.topic: interactive-tutorial
+  manager: coxford
+  ms.topic: module
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -25,8 +25,6 @@ abstract: |
 prerequisites: |
   - Familiarity with basic Docker concepts and a Docker account
   - Familiarity with microservice design
-  - Docker Desktop installed
-  - Visual Studio Code installed
 ratingEnabled: true
 iconUrl: /training/achievements/dotnet-deploy-microservices-kubernetes.svg
 levels:
@@ -36,7 +34,7 @@ roles:
 products:
 - dotnet
 subjects:
-- container
+- containers
 - custom-app-development
 units:
 - learn.languages.dotnet-deploy-microservices-kubernetes.introduction

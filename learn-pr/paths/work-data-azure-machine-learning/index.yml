@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/11/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Work with data in Azure Machine Learning
 prerequisites: |
   None

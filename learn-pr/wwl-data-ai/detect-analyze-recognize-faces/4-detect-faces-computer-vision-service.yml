@@ -3,14 +3,13 @@ uid: learn.wwl.detect-analyze-recognize-faces.detect-faces-computer-vision-servi
 title: Detect faces with the Azure AI Vision service
 metadata:
   title: Detect faces with the Azure AI Vision service
-  description: "Detect faces with the Azure AI Vision service"
-  ms.date: 07/13/2022
+  description: Detect faces with the Azure AI Vision service
   author: wwlpublish
-  ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.author: gmalc
+  ms.date: 03/11/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/4-detect-faces-computer-vision-service.md)]

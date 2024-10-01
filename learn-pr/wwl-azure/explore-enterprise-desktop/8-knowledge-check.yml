@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/28/2023
+  ms.date: 09/09/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Microsoft Intune"
       isCorrect: true
-      explanation: "Correct. Microsoft Intune is a cloud-based device management technology to secure data users can access on company owned or personal devices. With Intune, you can manage devices on the network, and selectively remove applications from the device. In a BYOD scenario, employees may not want to risk their personal data to be on a company network. Employees should be aware of policies and security requirements before enrolling personal devices."
+      explanation: "Correct. Microsoft Intune is a cloud-based device management technology to secure data users can access on company owned or personal devices. With Intune, you can manage devices on the network, and selectively remove applications from the device. In a BYOD scenario, employees might not want to risk their personal data to be on a company network. Employees should be aware of policies and security requirements before enrolling personal devices."
     - content: "Endpoint Analytics"
       isCorrect: false
       explanation: "Incorrect. Endpoint Analytics provides insights into the health, performance, and update readiness of devices in an organization's environment. It does not offer mobile device management capabilities like selectively removing applications and application data. Try again."

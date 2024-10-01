@@ -1,51 +1,52 @@
+This unit focuses on common SaaS pricing models and packaging strategies.
 
-## Balance pricing with costs
+## Pricing models
 
-When you determine the pricing model for your product, you need to balance the return on value (ROV) for your customers with the cost of goods sold (COGS) to deliver the service. Offering more flexible commercial models (for a solution) might increase the ROV for customers, but it might also increase the architectural and commercial complexity of the solution (and therefore also increase your COGS).
-
-In this module, we'll focus on common pricing models.
+When you determine the pricing model for your product, you need to balance the return on value (ROV) for your customers with the cost of goods sold (COGS) to deliver the service. Offering more flexible commercial models for a solution might increase the ROV for customers, but it might also increase the architectural and commercial complexity of the solution and therefore also increase your COGS.
 
 ### Consumption-based
-This model is often called as well "pay-as-you-go", as the use of your service increases, your revenue increases proportionally.
 
-From your customers' perspective, there is minimal upfront investment that's required to use your solution, so this model has a low barrier to entry. From your perspective as the service operator, your hosting and management costs increase as your customers' usage and your revenue increases. This increase can make it a highly scalable pricing model. Consumption pricing models work especially well when the Azure services which are used in the solution are consumption-based too.
+The consumption-based model is also called *pay-as-you-go*. As the use of your service increases, your revenue also increases.
+
+From your customers' perspective, minimal upfront investment is required to use your solution, so this model has a low barrier to entry. From your perspective as the service operator, your hosting and management costs increase as your customers' usage and your revenue increase.
+
+These corresponding increases in costs, usage, and revenue make consumption a highly scalable pricing model. Consumption pricing models work especially well when the Azure services used in the solution are also consumption-based.
 
 ### Seat-based
-Per-user pricing models are very common, due to their simplicity to implement in a multitenant solution. Multitenant solution is a solution, which is shared across all the customers and users, in opposite to single-tenant, where each customer gets their own installation of the solution. However, they're associated with several commercial risks, for example different user consumption patterns might result in a reduced profitability. For example, heavy users of the solution might cost more to serve, than light users. 
 
-In addition, there's a limitation of how much you can earn on each customer, because if customer has only 100 employees, the maximum potential deal for this customer is capped by 100 seats. Better business approach could be to focus on the value your service provides to customers and tie up pricing according to this value. In this case, the more customers use the product and the more value they gain, the more revenue they bring.
+When you bill your customers for each user, it's easy to calculate and forecast your revenue stream. Also, assuming that you have fairly consistent usage patterns for each user, revenue increases at the same rate as service adoption, making seat-based pricing a scalable model.
 
-When you bill your customers for each user, it's easy to calculate and forecast your revenue stream. Additionally, assuming that you have fairly consistent usage patterns for each user, then revenue increases at the same rate as service adoption, making this scalable model.
+Per-user pricing models are common because of their simplicity to implement in multitenant solutions. Multitenant solutions are shared across all customers and users, while single-tenant solutions give each customer its own installation of the solution.
+
+However, multitenant solutions have several commercial risks, such as different customer consumption patterns resulting in reduced profitability. For example, heavy users of the solution might cost more to serve than light users.
+
+There's also a limit on how much you can earn on each customer. If each customer has only 100 employees, the maximum potential deal for this customer is limited to 100 seats.
+
+A better business approach might be to focus on the value your service provides to customers and tie pricing to this value. In this case, the more customers use the product and the more value they gain, the more revenue they provide.
 
 ### Unit-based
-In many systems, the number of users isn't the element that has the greatest effect on the overall COGS. For example, in device-oriented solutions, also referred to as the internet of things or IoT, the number of devices often has the greatest impact on COGS. In these systems, a per-unit pricing model can be used, where you define what a unit is, such as a device
 
-## Packaging 
-One of the optimal pricing strategies which works well in B2C or B2B for small businesses is packaging. With packaging, SaaS providers can create the optimal packages with a certain set of features and pricing for the overall package. Package is a set of features which are bundled together.
+In many systems, the number of users isn't the element that has the greatest effect on the overall COGS. For example, in device-oriented solutions, also referred to as the internet of things or IoT, the number of devices often has the greatest impact on COGS. These systems can use a per-unit pricing model that defines what a unit is, such as a device.
 
-For example, let's consider simple example and the pricing for SaaS service where users can digitally sign contracts, as well as search through contents of contracts. 
+## Packaging
 
-- Free version includes 5 seats (users) and 10 searches per month.
-- Basic version includes 10 seats (users), 100 searches per month and 10 integrations. The price of this package is 10$ per month.
-- Premium version includes 100 seats (users), unlimited searches per month, unlimited integrations and premium (dedicated) support services for 100$ / month. 
-
-
+An optimal pricing strategy that works well in B2C or B2B for small businesses is packaging. A package is a set of features that are bundled together. SaaS providers can create optimal packages with certain sets of features and overall pricing.
 
 ## Contoso scenario
 
-Let's consider how Contoso could define pricing model for their lawyer solution. 
+For example, consider how Contoso defines a packaging pricing strategy for their lawyer solution.
 
-Contoso created 3 packages, starting from the very basic "Free" plan where only 1 website is allowed and no user behavioral analysis is included. 
+Contoso creates three packages, starting from a minimal "Free" plan that allows only one website and doesn't include user behavioral analysis.
 
-In the "Basic" plan additional functionality is included, such as: 
+The "Basic" plan costs £40 per month and includes more functionality, such as:
 
-- Up to 5 designs per website (customers often want to compare different designs and how they perform, or have additional designs for special occasions and promotions)
-- Up to 5 external integrations 
-- Ability to track and analyze users' behavior on the website and get auto-suggestions for improvement
+- Up to five designs per website. Customers often want to compare different designs and how they perform, or have different designs for special occasions and promotions.
+- Up to five external integrations.
+- Ability to track and analyze users' behavior on the website and get autosuggestions for improvement.
 
-"Premium" plan has more extensive capabilities on top of the Basic plan, such as dedicated support service. 
+The "Premium" plan costs £800 per month and has more extensive capabilities than the Basic plan, such as dedicated support service.
 
-![This diagram illustrates the progressive pricing for 3 Contoso packages which include different functionality: Free, Basic 50$ per month, and Premium 1000$ per month.](../media/pricing-packaging.png)
+![This diagram illustrates the progressive pricing for three Contoso packages that include different functionality, Free, Basic, and Premium.](../media/pricing-packaging.png)
 
-As you can see, Contoso tried to align their pricing to the most valuable features their customers are using within Contoso solution.
+Contoso aligns their pricing to the most valuable features their customers are using within the Contoso SaaS solution.
 

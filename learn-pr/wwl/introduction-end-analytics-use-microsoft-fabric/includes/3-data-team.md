@@ -1,10 +1,10 @@
 Microsoft Fabric's unified management and governance make it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
 
-Traditionally, the data engineer and data analyst role separation meant that there was an extra conversation that needed to happen to ensure that the engineer curated a perfect data model to help the analyst display data in an effective and insightful way for the business.
+Traditionally, the data engineer and data analyst role separation meant that there was an extra conversation that needed to happen to ensure that the engineer curated a perfect semantic model to help the analyst display data in an effective and insightful way for the business.
 
 With Fabric, data professionals work together in the same SaaS product to better understand and identify needs of each other and the business. Further, data analysts now have greater context and ability to transform data further upstream with data factory.
 
-Whether you're a data engineer looking to simplify your data model curation or expanding your knowledge with data science techniques, Fabric provides a complete experience to serve your organization.
+Whether you're a data engineer looking to simplify your semantic model curation or expanding your knowledge with data science techniques, Fabric provides a complete experience to serve your organization.
 
 For data analysts, who may have had to perform extensive downstream data transformations before creating Power BI reports, you can now see the lineage and connect with data more directly with DirectLake mode.
 

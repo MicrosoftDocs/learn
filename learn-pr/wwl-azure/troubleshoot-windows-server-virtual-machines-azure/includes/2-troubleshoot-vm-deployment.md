@@ -23,8 +23,8 @@ The following table describes the errors you might encounter in the preceding si
 
 | Operating system| Uploading specialized image| Uploading generalized image| Capturing specialized image| Capturing generalized image|
 | :--- | :--- | :--- | :--- | :--- |
-| Windows generalized| Provisioning timeout error with the VM stuck at the OOBE screen| No errors| Provisioning timeout error because the original VM is not usable as it is marked as generalized| No errors|
-| Windows specialized| No errors| Provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username, and password| No errors| Provisioning failure error because the new VM is running with the original computer name, username, and password. Also, the original VM is not usable because it is marked as specialized|
+| Windows generalized| Provisioning timeout error with the VM stuck at the OOBE screen| No errors| Provisioning timeout error because the original VM is marked as generalized and, thus, isn't usable| No errors|
+| Windows specialized| No errors| Provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username, and password| No errors| Provisioning failure error because the new VM is running with the original computer name, username, and password. Also, the original VM is marked as specialized and, thus, isn't usable|
 
 > [!TIP]
 > You must ensure that the type of the image doesn't change during the capture process to avoid errors when you deploy your custom image.
@@ -46,7 +46,7 @@ To resolve both errors that result during capture:
 
 Allocation errors occur when your new VM request is pinned to a cluster that:
 
-- Cannot support the VM size being requested.
+- Can't support the VM size being requested.
 
 - Doesn't have available free space to accommodate your request.
 

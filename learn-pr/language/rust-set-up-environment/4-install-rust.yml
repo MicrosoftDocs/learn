@@ -3,11 +3,10 @@ uid: learn.language.rust-set-up-environment.4-install-rust
 metadata:
   title: Install Rust
   description: Install Rust so you can start programming.
-  ms.date: 07/26/2021
+  ms.date: 03/30/2023
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Install Rust
 durationInMinutes: 4

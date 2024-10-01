@@ -9,8 +9,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-use-router-component-control-apps-navigation.md)]

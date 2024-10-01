@@ -4,11 +4,10 @@ title: Explore the Microsoft Fabric Lakehouse
 metadata:
   title: Explore the Microsoft Fabric Lakehouse
   description: "Explore the Microsoft Fabric Lakehouse"
-  ms.date: 09/08/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai

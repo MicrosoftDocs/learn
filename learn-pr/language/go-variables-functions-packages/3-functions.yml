@@ -3,11 +3,10 @@ uid: learn.language.go-variables-functions-packages.3-functions
 metadata:
   title: Create functions
   description: Learn how to create custom functions that contain reusable code and how to better work with pre-built functions in Go.
-  ms.date: 10/06/2021
+  ms.date: 01/25/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Create functions
 durationInMinutes: 7

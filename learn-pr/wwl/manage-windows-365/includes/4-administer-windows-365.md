@@ -1,6 +1,4 @@
-
-
-Managing Cloud PCs is just like managing any other device. You apply configuration profiles and assign apps. You apply quality and feature updates using update rings. You apply security policies in the same manor as physical devices. While you might specify separate policies just for Cloud PCs, the method is no different.
+Managing Cloud PCs is just like managing any other device. You apply configuration profiles and assign apps. You apply quality and feature updates using update rings. You apply security policies in the same manner as physical devices. While you might specify separate policies just for Cloud PCs, the method is no different.
 
 ### Remote actions
 
@@ -42,7 +40,7 @@ The Resize remote action lets you upgrade a Cloud PC’s RAM, CPU, and storage s
 
 To resize a Cloud PC, the following are required:
 
- -  The admin must have either Global Admin or the Intune Service Admin Azure AD role
+ -  The admin must have either Global Admin or the Intune Service Admin Microsoft Entra role
  -  The Cloud PC must have a status of provisioned.
  -  The user must be signed out with all work saved as resizing disconnects their session.
 

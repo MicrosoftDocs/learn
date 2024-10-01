@@ -6,7 +6,7 @@ This job allows users in that organization to collectively run only one build or
 
 When more jobs are triggered, they're queued and will wait for the previous job to finish.
 
-:::image type="content" source="../media/parallel-job-consumption-8af32918.png" alt-text="Parallel job consumption":::
+:::image type="content" source="../media/parallel-job-consumption-8af32918.png" alt-text="Screenshot of Parallel job consumption.":::
 
 
 A release consumes a parallel job only when it's being actively deployed to a stage.

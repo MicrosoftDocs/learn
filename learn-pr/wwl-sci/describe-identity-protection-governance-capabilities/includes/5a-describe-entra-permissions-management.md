@@ -1,4 +1,3 @@
-
 Microsoft Entra Permissions Management is a cloud infrastructure entitlement management (CIEM) product that provides comprehensive visibility and control over permissions for any identity and any resource in Microsoft Azure, Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
 This functionality helps organizations address the Zero Trust principle of least privilege access. Organizations need to consider permissions management as a central piece of their Zero Trust security strategy that includes implementing least privilege access across their entire infrastructure. Some of the key reasons include:
@@ -19,7 +18,8 @@ Customers can assess permission risks by evaluating the gap between permissions 
 - Cross-cloud permissions discovery: Granular and normalized metrics for key cloud platforms: AWS, Azure, and GCP.
 
 - Permission Creep Index (PCI): An aggregated metric that periodically evaluates the level of risk associated with the number of unused or excessive permissions across your identities and resources. It measures how much damage identities can cause based on the permissions they have.
-Permission usage analytics: Multi-dimensional view of permissions risk for all identities, actions, and resources.
+
+- Permission usage analytics: Multi-dimensional view of permissions risk for all identities, actions, and resources.
 
 ### Remediate
 Customers can right-size permissions based on usage, grant new permissions on-demand, and automate just-in-time access for cloud resources.

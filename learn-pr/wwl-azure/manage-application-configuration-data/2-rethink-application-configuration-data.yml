@@ -4,11 +4,10 @@ title: Rethink application configuration data
 metadata:
   title: Rethink application configuration data
   description: "Rethink application configuration data"
-  ms.date: 06/30/2023
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-rethink-application-configuration-data.md)]

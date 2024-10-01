@@ -19,7 +19,7 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 |----|----|
 |SharePoint              | Internal admin takeover |
 |OneDrive                | Internal admin takeover |
-|Microsoft 365              | Internal admin takeover |
+|Microsoft 365           | Internal admin takeover |
 |Power BI                | External admin takeover |
 |Azure Rights Management | External admin takeover |
 |Exchange Online         | External admin takeover |
@@ -47,7 +47,7 @@ Resolve-DnsName -Name proseware.com -Type TXT
 
 You should get something like this:
 
-```PowerShell
+```output
 Name                                     Type   TTL   Section    Strings
 ----                                     ----   ---   -------    -------
 proseware.com                            TXT    3600  Answer     {MS=ms94126796}

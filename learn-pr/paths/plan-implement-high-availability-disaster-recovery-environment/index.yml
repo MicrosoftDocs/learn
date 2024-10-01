@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Plan and implement a high availability and disaster recovery environment
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal
@@ -28,7 +27,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- business-continuity
+- site-reliability-engineering
 modules:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr

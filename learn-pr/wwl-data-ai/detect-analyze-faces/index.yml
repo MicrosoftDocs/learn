@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-analyze-faces
 metadata:
-  title: Detect and analyze faces with Azure AI Face
+  title: Fundamentals of Facial Recognition
   description: "Understand how to use Azure AI Face to detect and analyze faces."
-  ms.date: 08/21/2023
+  ms.date: 09/13/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: artificial-intelligence
-  ms.subservice: face-api
-title: Detect and analyze faces with Azure AI Face
-summary: Face detection, analysis, and recognition are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service in Azure makes it easy integrate these capabilities into your applications.
-abstract: |
-  Learn how to use Azure AI Face service to detect and analyze faces in images.
-prerequisites: |
-  Ability to navigate the Azure portal
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-vision
+  ms.subservice: azure-ai-face
+  ai-usage: ai-assisted
+title: Fundamentals of Facial Recognition
+summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+abstract: Learn how to use Azure AI Face service to detect and analyze faces in images.
+prerequisites: Ability to navigate the Azure portal
 iconUrl: /learn/achievements/detect-analyze-faces.svg
 levels:
 - beginner
@@ -30,6 +31,7 @@ subjects:
 - classification-analysis
 units:
 - learn.wwl.detect-analyze-faces.introduction
+- learn.wwl.detect-analyze-faces.understand-face-analysis
 - learn.wwl.detect-analyze-faces.get-started
 - learn.wwl.detect-analyze-faces.exercise
 - learn.wwl.detect-analyze-faces.knowledge-check

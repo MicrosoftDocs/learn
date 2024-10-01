@@ -3,10 +3,11 @@ uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-a
 metadata:
   title: Describe the function and identity types of Microsoft Entra ID
   description: "Describe the function and identity types of Microsoft Entra ID"
-  ms.date: 09/07/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ai-usage: ai-assisted
+  ms.topic: module
   ms.service: active-directory
 title: Describe the function and identity types of Microsoft Entra ID
 summary: Microsoft Entra ID is Microsoft’s cloud-based identity and access management solution that connects people to their apps, devices, and data. Learn about the functions and identity types supported by Microsoft Entra ID.
@@ -26,7 +27,7 @@ roles:
 - student
 products:
 - azure
-- azure-active-directory
+- entra-id
 - entra
 subjects:
 - identity-access

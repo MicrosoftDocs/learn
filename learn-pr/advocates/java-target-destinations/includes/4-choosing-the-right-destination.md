@@ -19,17 +19,18 @@ But some teams will prefer to have a full control over their infrastructure, mos
 
 ## Choose a PaaS solution on Azure
 
-For running Java workloads on a platform as a service solution, Azure provides three possible options:
+For running Java workloads on a platform as a service solution, Azure provides four possible options:
 
 - **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
-- **Azure App Service**: Best for normal web applications or for running Jakarta EE workloads.
+- **Azure App Service**: Best for running Jakarta EE workloads.
 - **Azure Spring Apps**: Best for running Spring Boot applications, and more specifically Spring Cloud microservices.
 
 ## Choose infrastructure control on Azure
 
 For full control over your deployments, Azure provides the following two main options:
 
-- **Azure Kubernetes Service (AKS)**: Best for running Docker images. You also benefit from the rich AKS ecosystem.
+- **Azure Container Apps**: Best for running simple container-based Java monolithic applications.
+- **Azure Kubernetes Service (AKS)**: Best for more complex container-based Java applications. You also benefit from the rich AKS ecosystem.
 - **Azure virtual machines**: Best for running any kind of workload, or if you want to "lift and shift" from an existing on-premises infrastructure without rearchitecting your applications.
 
 ## Final words to help you decide

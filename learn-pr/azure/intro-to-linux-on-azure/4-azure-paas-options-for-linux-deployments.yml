@@ -5,10 +5,10 @@ metadata:
   title: Identify Azure PaaS options for Linux deployments
   description: Learn about the Azure PaaS options for Linux deployments.
   ms.date: 05/01/2023
-  author: chasecrum
-  ms.author: chasecrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: fossygirl
+  ms.author: carols
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/4-azure-paas-options-for-linux-deployments.md)]

@@ -3,10 +3,10 @@ uid: learn.azure.intro-azure-vmware-solution
 metadata:
   title: Introduction to Azure VMware Solution
   description: Learn about Azure VMware Solution to host your VMware workloads in Azure.
-  ms.date: 03/13/2023
+  ms.date: 04/30/2024
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: phschmit-07282021
   ms.service: azure-vmware

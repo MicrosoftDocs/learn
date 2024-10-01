@@ -8,6 +8,8 @@ In this exercise, you create a storage account and upload some example patient i
 
 ### Create a storage account and upload images
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Using Azure Cloud Shell, enter the following code to create a storage account for patient images. The code generates a storage account name.
 
     ```azurecli
@@ -17,7 +19,7 @@ In this exercise, you create a storage account and upload some example patient i
         --name $STORAGENAME \
         --access-tier hot \
         --kind StorageV2 \
-        --resource-group <rgn>[sandbox resource group]</rgn>
+        --resource-group "<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. Create a container under the storage account for storing the images.
@@ -63,7 +65,7 @@ In this exercise, you create a storage account and upload some example patient i
 
     ```json
     {
-      "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=medicalrecords3215;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
+      "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=<account-name>;AccountKey=<account-key>"
     }
     ```
 
@@ -90,10 +92,10 @@ In this exercise, you create a storage account and upload some example patient i
       },
       "AllowedHosts": "*",
       "StorageAccount": {
-        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=medicalrecords3215;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA==;EndpointSuffix=core.windows.net",
+        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=<account-name>;AccountKey=<account-key>;EndpointSuffix=core.windows.net",
         "Container" : "patient-images",
-        "AccountName":"medicalrecords3215",
-        "AccountKey":"UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
+        "AccountName":"<account-name>",
+        "AccountKey":"<account-key>"
       }  
     }
     ```

@@ -7,7 +7,7 @@ metadata:
   ms.date: 08/25/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to PowerShell
 summary: Learn about the basics of PowerShell, a cross-platform command-line shell and scripting language that's built for task automation and configuration management. Learn what PowerShell is, what it's used for, and how to use it.
@@ -28,8 +28,6 @@ prerequisites: |
   - Visual Studio Code installed 
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system
-subjects:
-- development-tools
 units:
   - learn.powershell.intro-to-powershell.1-introduction
   - learn.powershell.intro-to-powershell.2-what-is-powershell

@@ -7,7 +7,7 @@ metadata:
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: e2e-hybrid
   ms.service: azure-arc
   ms.subservice: azure-arc-data

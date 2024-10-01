@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aks-edge-essentials.when-to-use-aks-edge-essentials
+title: When to use AKS Edge Essentials
+metadata:
+  title: When to use AKS Edge Essentials
+  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
+  ms.date: 11/3/2023
+  author: asergaz
+  ms.author: sergaz
+  manager: lizross
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-aks-edge-essentials.md)]

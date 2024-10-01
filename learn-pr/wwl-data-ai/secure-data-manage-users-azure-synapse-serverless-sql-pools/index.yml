@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/14/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.service: synapse-analytics
+  ms.topic: module
+  ms.service: azure-synapse-analytics
   ms.subservice: sql
 title: Secure data and manage users in Azure Synapse serverless SQL pools
 summary: Learn how you can set up security when using Azure Synapse serverless SQL pools
@@ -28,7 +28,7 @@ products:
 subjects:
 - data-analytics
 - security
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.introduction
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method

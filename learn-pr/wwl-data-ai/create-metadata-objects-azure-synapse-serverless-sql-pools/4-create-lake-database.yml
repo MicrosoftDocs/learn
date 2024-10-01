@@ -4,11 +4,10 @@ title: Create a lake database
 metadata:
   title: Create a lake database
   description: "Create a lake database"
-  ms.date: 06/12/2023
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -8,11 +8,7 @@ Now that you've finished this module, you should be able to:
 
 ## References
 
-- [Enabling and setting up GitHub Copilot for Business](https://docs.github.com/copilot/managing-copilot-for-business/enabling-and-setting-up-github-copilot-for-business)
-- [About GitHub Copilot for Business](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot-for-business)
+- [Setting up GitHub Copilot for your organization](https://docs.github.com/copilot/setting-up-github-copilot/setting-up-github-copilot-for-your-organization)
+- [What is GitHub Copilot?](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot)
 - [Coyote Logistics saves countless developer hours with GitHub's cutting-edge offerings](https://github.com/customer-stories/coyote-logistics)
-- [Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot, Codespaces](https://github.com/customer-stories/duolingo)
-
-## How to provide feedback
-
-If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. This content is maintained by GitHub, and a team member will triage the request. Thank you for taking the time to improve our content!
+- [Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot](https://github.com/customer-stories/duolingo)

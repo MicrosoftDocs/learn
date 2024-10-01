@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/11/2023
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -22,10 +23,10 @@ quiz:
       explanation: "Incorrect. Azure offers greater power and capacity at more cost-efficient rates than off-cloud IT. A business will often be able to do more while paying less."
     - content: "The business will always spend less on IT than before because Azure is so cheap."
       isCorrect: false
-      explanation: "Incorrect. Azure is more cost-efficient than off-cloud IT. If a business invests a lot in the cloud, it may end up spending more on IT, but it will be doing a lot more as well."
+      explanation: "Incorrect. Azure is more cost-efficient than off-cloud IT. If a business invests a lot in the cloud, it might end up spending more on IT, but it will be doing a lot more as well."
     - content: "The business’s IT spending will be more cost-efficient, regardless of the amount."
       isCorrect: true
-      explanation: "Correct. Azure-based IT is more cost-efficient than off-cloud IT, meaning that any given task will cost less in the cloud. A business may pay less for the same IT tasks or pay more for a big expansion in the cloud."
+      explanation: "Correct. Azure-based IT is more cost-efficient than off-cloud IT, meaning that any given task will cost less in the cloud. A business might pay less for the same IT tasks or pay more for a big expansion in the cloud."
   - content: "How does Azure handle compliance with government regulations?"
     choices:
     - content: "Azure offers products that are designed to be compliant with regulations from around the world."

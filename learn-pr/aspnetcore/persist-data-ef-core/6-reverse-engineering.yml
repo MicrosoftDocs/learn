@@ -4,12 +4,11 @@ title: Exercise - Reverse-engineer from an existing database
 metadata:
   title: Exercise - Reverse-engineer from an existing database
   description: "Scaffold DbContext and model classes from an existing database."
-  ms.date: 12/13/2021
+  ms.date: 10/04/2023
   author: camsoper
   ms.author: casoper
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/6-reverse-engineering.md)]

@@ -13,3 +13,4 @@ When you review the properties and methods for a variable, some of them will be 
 > **Additional reading:** For more information on .NET Framework variable types, refer to the **Structs** section at [System Namespace](https://aka.ms/system-namespace).
 
 The documentation for the .NET Framework is oriented towards developers and sometimes can be difficult to understand. You can also search the internet for examples relating to a specific method or property. Many examples are available online.
+

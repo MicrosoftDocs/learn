@@ -4,7 +4,7 @@ When your company chooses Microsoft Fabric for end-to-end analytics, the first s
 
 Fabric notebooks are the best choice if you:
 
-- Handle large external datasets
+- Handle large external data
 - Need complex transformations
 
 By the end of this module, you'll be able to use Spark and Fabric notebooks to ingest external data into your lakehouse. You'll also learn fundamental transformations and optimization techniques for a more efficient ETL process.

@@ -1,10 +1,10 @@
-Imagine that you work as a software engineer for an online retailer named *:::no-loc text="eShopOnContainers":::*. You're responsible for deploying and updating the retailer's online storefront, a cloud-native, microservices-based ASP.NET Core app.
+Imagine that you work as a software engineer for an online outdoor clothing retailer. You're responsible for deploying and updating the retailer's online storefront, a cloud-native, microservices-based .NET app.
 
-To fulfill project requirements and enhance your team's agile development practices, you decide to implement continuous integration and continuous deployment (CI/CD) through [GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions). CI/CD pipelines use a series of automated steps to compile, test, configure, and deploy apps from build through all environments.
+To fulfill project requirements and enhance your team's agile development practices, you decide to compare continuous integration and continuous deployment (CI/CD) through [GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions) and Azure Pipelines. CI/CD pipelines use a series of automated steps to compile and deploy apps from build through all environments.
 
-You begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference app for the [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices) guide. Because each microservice deploys independently, you start by setting up CI/CD for a single service.
+Because the current web has a microservices architecture, and each microservice deploys independently, you start by setting up CI/CD for a single service.
 
-The new app version includes a discount coupon that buyers can use in the shopping basket at checkout time. An ASP.NET Core web API named the *coupon service* supports the discount coupon feature. In this module, you use GitHub Actions to implement a CI/CD pipeline for the coupon service.
+The .NET web API, named the **product service**, supports all the backend catalog features of the website. In this module, you'll implement a CI/CD pipeline for the product service.
 
 This module guides you through the following steps:
 

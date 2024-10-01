@@ -1,15 +1,15 @@
-## Configure Azure AD role settings
+## Configure Microsoft Entra role settings
 
 ### Open role settings
 
-Follow these steps to open the settings for an Azure AD role.
+Follow these steps to open the settings for a Microsoft Entra role.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
-2.  Search for and then select **Azure AD Privileged Identity Management.**
-3.  In the Privileged Identity Management screen, in the left navigation, select **Azure AD roles.**
+1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2.  Search for and then select **Microsoft Entra Privileged Identity Management.**
+3.  In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
 4.  On the Quick start page, in the left navigation, select **Settings.**
     
-    :::image type="content" source="../media/privileged-identity-management-roles-settings-bfd346da.png" alt-text="Screenshot of the Azure AD roles page with the Settings menu highlighted.":::
+    :::image type="content" source="../media/privileged-identity-management-roles-settings-bfd346da.png" alt-text="Screenshot of the Microsoft Entra roles page with the Settings menu highlighted.":::
     
 5.  Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 6.  In the results, select **Compliance Administrator**.
@@ -27,6 +27,6 @@ If setting multiple approvers, approval completes as soon as one of them approve
 3.  Select **Select approvers**.
 4.  In the Select a member pane, select your administrator account, and then select **Select**.
     
-    :::image type="content" source="../media/privileged-identity-management-add-approver-b44ec980.png" alt-text="Screenshot of the edit role settings blade and select a member pane with the selected members highlighted.":::
+    :::image type="content" source="../media/privileged-identity-management-add-approver-b44ec980.png" alt-text="Screenshot of the edit role settings dialog and select a member pane with the selected members highlighted.":::
     
 5.  Once you have configured the role settings, select **Update** to save your changes.

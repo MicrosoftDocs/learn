@@ -4,11 +4,10 @@ title: Microsoft data categories and data protection principles
 metadata:
   title: Microsoft data categories and data protection principles
   description: Learn about Microsoft online services data categories, and Microsoft's principles and practices for data protection and governance.
-  ms.date: 03/24/2021
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/27/2023
+  author: TerryLanfear
+  ms.author: terrylan
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-how-microsoft-support-protection-privacy.md)]

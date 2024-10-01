@@ -4,11 +4,12 @@ metadata:
   moduleType: build-your-first-using-product
   title: Load balance your web service traffic with Front Door
   description: "Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers."
-  ms.date: 08/31/2023
+  manager: kumud
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.service: frontdoor
+  ms.topic: module
+  ms.service: azure-frontdoor
 title: Load balance your web service traffic with Front Door
 summary: "Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers. Secure your web applications from intruders and malicious attacks with managed and unmanaged rules."
 abstract: |

@@ -74,7 +74,7 @@ To access workbooks in Microsoft Entra ID, you must have access to the underlyin
 
 To access workbooks:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Reports Reader](/azure/active-directory/roles/permissions-reference.md#reports-reader).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Reports Reader.
 
 2. Navigate to **Microsoft Entra ID** > **Monitoring** > **Workbooks**.
 

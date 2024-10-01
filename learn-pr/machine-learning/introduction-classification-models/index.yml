@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.custom: nextgen
   ms.devlang: r
 title:  Introduction to classification models by using R and tidymodels

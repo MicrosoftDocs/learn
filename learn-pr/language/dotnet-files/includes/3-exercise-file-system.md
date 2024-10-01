@@ -5,7 +5,7 @@ Tailwind Traders has many physical stores all over the world. Every night, each 
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've learned by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
 
-[!INCLUDE [](../../../includes/dotnet6-sdk-version.md)]
+[!INCLUDE [](../../../includes/dotnet8-sdk-version.md)]
 
 ## Clone the project
 
@@ -15,11 +15,11 @@ A starter project has already been created for you. You clone it using the integ
 
 1. Open Visual Studio Code.
 
-1. In the main menu, select **View** > **Terminal** to open a TERMINAL window.
+1. In the main menu, select **View** > **Terminal** to open a terminal window.
 
-1. (Optional) In the TERMINAL window, change to a directory you want to copy the files to, such as `c:\MyProjects`.
+1. (Optional) In the terminal window, change to a directory to which you want to copy the files, such as `c:\MyProjects`.
 
-1. In the TERMINAL window, run the following command to clone the starter project and go to the cloned project:
+1. In the terminal window, run the following command to clone the starter project and go to the cloned project:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
@@ -28,7 +28,7 @@ A starter project has already been created for you. You clone it using the integ
 1. Run the following command to create a new .NET Console project:
 
     ```bash
-    dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
+    dotnet new console -f net8.0 -n mslearn-dotnet-files -o .
     ```
 
 1. Run the following command to open the new .NET project in the same instance of Visual Studio Code:
@@ -38,15 +38,15 @@ A starter project has already been created for you. You clone it using the integ
     ```
 
    > [!TIP]
-   > At this point, Visual Studio Code may prompt you that required assets to build and run the project are missing.
+   > At this point, Visual Studio Code might prompt you that required assets to build and run the project are missing.
    >
    >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from the project.":::
    >
    > Select the triangle with the exclamation point and then select **Relaunch terminal** to add the files that allow Visual Studio Code to run and debug the project.
 
-1. In the EXPLORER window, under **mslearn-dotnet-files**, expand the **stores** folder and each of the numbered folders inside.
+1. In the Explorer window, under **mslearn-dotnet-files**, expand the **stores** folder and each of the numbered folders inside.
 
-    :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot of EXPLORER window that shows the project folder structure.":::
+    :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot of Explorer window that shows the project folder structure.":::
 
 ## Find the sales.json files
 
@@ -54,7 +54,7 @@ The following tasks create a program to find all the sales.json files in all fol
 
 ### Include the System.IO namespace
 
-1. In the EXPLORER window, select the `Program.cs` file to open it in the editor.
+1. In the Explorer window, select the `Program.cs` file to open it in the editor.
 
     :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot of the Explorer window highlighting the program.cs file.":::
 
@@ -66,14 +66,13 @@ The following tasks create a program to find all the sales.json files in all fol
     ```
 
 > [!NOTE]
-> Starting with .NET 6, the two statements in the above code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net6.0` flag when we created a new console project, they are implicitly added. However, if you're working with an older project, they need to be included in the `Program.cs` file, and it doesn't affect this project if you leave them in the file.
-
+> Starting with .NET 6, the two statements in the preceding code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net8.0` flag when we created a new console project, they are implicitly added. However, if you're working with an older project, they need to be included in the `Program.cs` file, and it doesn't affect this project if you leave them in the file.
 
 ### Write a function to find the sales.json files
 
 Create a new function called `FindFiles` that takes a `folderName` parameter.
 
-1. Replace the **Console.WriteLine("Hello, World!");** line with the following code: 
+1. Replace the **Console.WriteLine("Hello, World!");** line with the following code:
 
     ```csharp
     IEnumerable<string> FindFiles(string folderName)

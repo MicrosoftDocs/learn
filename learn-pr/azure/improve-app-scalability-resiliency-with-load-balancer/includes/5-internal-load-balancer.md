@@ -1,8 +1,8 @@
 In addition to balancing requests from users to front-end servers, you can use Azure Load Balancer to distribute traffic from front-end servers evenly among back-end servers.
 
-In your healthcare organization, front-end servers call business logic that's hosted on a middle tier. You want to ensure that the middle tier is as scalable and resilient as the front end. You want to use a load balancer to distribute requests from the front-end servers evenly among the middle-tier servers. This way, you'll scale out the middle-tier servers to achieve the highest capacity possible. You'll also ensure that the middle tier is resilient to failure. When a server fails, the load balancer automatically reroutes traffic.
+In your healthcare organization, front-end servers call business logic services hosted on a middle tier. You want to ensure that the middle tier is as scalable and resilient as the front end. You want to use a load balancer to distribute requests from the front-end servers evenly among the middle-tier servers. This way, you can scale out the middle-tier servers to achieve the highest capacity possible. You'll also ensure that the middle tier is resilient to failure. When a server fails, the load balancer automatically reroutes traffic to another server.
 
-Here, you'll learn how to use load balancers to distribute internal traffic.
+Here, you learn how to use load balancers to distribute internal traffic.
 
 ## Configure an internal load balancer
 

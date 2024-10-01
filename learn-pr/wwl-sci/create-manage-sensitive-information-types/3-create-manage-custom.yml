@@ -4,11 +4,10 @@ title: Create and manage custom sensitive information types
 metadata:
   title: Create and manage custom sensitive information types
   description: "Create and manage custom sensitive information types"
-  ms.date: 05/26/2023
+  ms.date: 11/07/2023
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-durationInMinutes: 3
+  ms.topic: unit
+durationInMinutes: 4
 content: |
   [!include[](includes/3-create-manage-custom.md)]

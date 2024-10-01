@@ -4,11 +4,12 @@ title: Exercise - Configure network access
 metadata:
   title: Exercise - Configure network access
   description: "Exercise - Configure network access"
-  ms.date: 09/13/2023
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.custom: devx-track-azurecli
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: true
 durationInMinutes: 10
 content: |

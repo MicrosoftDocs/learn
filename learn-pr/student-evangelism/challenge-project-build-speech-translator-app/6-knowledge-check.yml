@@ -3,12 +3,14 @@ uid: learn.student-evangelism.challenge-project-build-speech-translator-app.know
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge Check"
-  ms.date: 10/2/2023
+  description: Knowledge check.
   author: theoyinbooke
-  ms.author: ooyinbooke
+  ms.author: somelezediko
+  ms.date: 12/13/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
 durationInMinutes: 5
 content: |
 quiz:
@@ -23,18 +25,18 @@ quiz:
       explanation: "Correct. The Speech API provides the speech recognition capability to convert speech to text."
     - content: "Canvas controls"
       isCorrect: false
-      explanation: "Incorrect. The Canvas controls are used to build the user interface in Power Apps."
+      explanation: "Incorrect. The canvas controls are used to build the user interface in Power Apps."
   - content: "Where should API keys be stored in a Power Apps solution?"
     choices:
     - content: "Directly in formula bars"
       isCorrect: false
-      explanation: "Incorrect. Storing keys directly in formula bars is insecure"
+      explanation: "Incorrect. Storing keys directly in formula bars is insecure."
     - content: "As app settings"
       isCorrect: false
-      explanation: "Incorrect. App settings are visible to users. Storing keys in controls is insecure"
+      explanation: "Incorrect. App settings are visible to users. Storing keys in controls is insecure."
     - content: "API connections"
       isCorrect: true
-      explanation: "Correct. Keys should be stored securely in API connections, not coded directly"
+      explanation: "Correct. Keys should be stored securely in API connections, not coded directly."
   - content: "How can the Speech API model be improved over time?"
     choices:
     - content: "Increase API call volume"

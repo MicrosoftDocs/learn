@@ -9,7 +9,7 @@ Instead, you capture the rules in the settings for a storage account, and those 
 > [!IMPORTANT]
 > When you're working in your own subscription, to avoid unwanted usage charges, you must remove any resources that you create.
 
-Use the following steps in the Azure portal to delete the resource group and all associated resources.
+To delete the resource group and all associated resources in the Azure portal, use the following steps.
 
 1. In the resource menu, select **Resource groups**.
 
@@ -21,4 +21,4 @@ Use the following steps in the Azure portal to delete the resource group and all
 
 1. When the expected name is a match, **Delete** is available. 
  
-1. Select **Delete**. It may take several minutes to delete your resource group. Check **Notifications** in the Global Controls in the upper right corner of the Azure portal to ensure your operation completed. 
+1. Select **Delete**. It can take several minutes to delete your resource group. Check **Notifications** in the Global Controls in the upper right corner of the Azure portal to ensure your operation completed. 

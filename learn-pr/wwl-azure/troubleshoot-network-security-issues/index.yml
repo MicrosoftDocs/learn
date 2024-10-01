@@ -6,7 +6,7 @@ metadata:
   ms.date: 04/27/2023
   author: fabianomira
   ms.author: famira
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: azure
 title: Troubleshoot network security issues with Microsoft Azure
 summary: Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network.
@@ -32,7 +32,7 @@ roles:
 - support-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 - entra
 - azure-cdn
 - azure-firewall

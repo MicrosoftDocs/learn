@@ -4,15 +4,15 @@ When moving a user to a new device or performing an in-place migration, it's imp
 
 ### Synchronize the user state
 
-Starting with Windows 10, Azure Active Directory (Azure AD) users gain the ability to securely synchronize their user settings and application settings data to the cloud. Enterprise State Roaming (ESR) provides users with a unified experience across their Windows devices and reduces the time needed for configuring a new device. Enterprise State Roaming operates similar to the standard consumer settings sync that was first introduced in Windows 8.
+Starting with Windows 10, Microsoft Entra users gain the ability to securely synchronize their user settings and application settings data to the cloud. Enterprise State Roaming (ESR) provides users with a unified experience across their Windows devices and reduces the time needed for configuring a new device. Enterprise State Roaming operates similar to the standard consumer settings sync that was first introduced in Windows 8.
 
 Enterprise State Roaming also offers:
 
  -  **Separation of corporate and consumer data**. Organizations possess complete control over their data, guaranteeing that there's no commingling of corporate data within a consumer cloud account or consumer data within an enterprise cloud account.
  -  **Enhanced security**. Data is automatically encrypted before leaving the user’s Windows device by using Azure Rights Management (Azure RMS), and data stays encrypted at rest in the cloud. All content stays encrypted at rest in the cloud, except for the namespaces, like settings names and Windows app names.
- -  **Better management and monitoring**. Provides control and visibility over who syncs settings in your organization and on which devices through the Azure AD portal integration.
+ -  **Better management and monitoring**. Provides control and visibility over who syncs settings in your organization and on which devices through the Microsoft Entra admin center integration.
 
-ESR (Enterprise State Roaming) facilitates the synchronization of settings across Azure AD joined devices. When ESR is enabled in an organization, users simply need to sign in to a new device, and the device will automatically retain all the supported settings. These include Microsoft Edge browser settings, personalized configurations, passwords, language preferences, mouse settings, and even certain UWP Apps (if supported by the developer).
+ESR (Enterprise State Roaming) facilitates the synchronization of settings across Microsoft Entra joined devices. When ESR is enabled in an organization, users simply need to sign in to a new device, and the device will automatically retain all the supported settings. These include Microsoft Edge browser settings, personalized configurations, passwords, language preferences, mouse settings, and even certain UWP Apps (if supported by the developer).
 
 As a general guideline, it's advisable to migrate all the settings and data that users require, while avoiding the migration of unnecessary and outdated data that only takes up storage space. Additionally, it's essential to consider the effort required to migrate specific data versus the time saved.
 
@@ -46,7 +46,7 @@ OneDrive allows users to seamlessly store and synchronize data between the cloud
 
 Historically, it's the user's responsibly to set this up. Known Folder Move enables IT to facilitate OneDrive to begin protecting the commonly used Desktop, Pictures, and Documents folders.
 
-Enabling Known Folder Move is done through Group Policy. You'll need to install the Group Policy templates, which are located at **%localappdata%\\Microsoft\\OneDrive\[BuildNumber\]\\adm** of a OneDrive client. You'll need to enable the **Prompt users to move Windows known folders to OneDrive** policy and configure it with your tenant ID (located in Azure AD admin center).
+Enabling Known Folder Move is done through Group Policy. You'll need to install the Group Policy templates, which are located at **%localappdata%\\Microsoft\\OneDrive\[BuildNumber\]\\adm** of a OneDrive client. You'll need to enable the **Prompt users to move Windows known folders to OneDrive** policy and configure it with your tenant ID (located in Microsoft Entra admin center).
 
 :::image type="content" source="../media/known-folder-move-b78855c6.jpg" alt-text="Screenshot of the user experience when Known Folder Move is implemented.":::
 

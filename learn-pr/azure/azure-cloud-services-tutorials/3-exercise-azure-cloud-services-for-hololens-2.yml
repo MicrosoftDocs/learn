@@ -4,11 +4,10 @@ title: Exercise - Azure Cloud Services for HoloLens 2
 metadata:
   title: Exercise - Azure Cloud Services for HoloLens 2
   description: Introduction for Azure Cloud Services for HoloLens 2
-  ms.date: 06/26/2023
+  ms.date: 01/11/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/3-exercise-azure-cloud-services-for-hololens-2.md)]

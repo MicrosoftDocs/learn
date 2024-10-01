@@ -3,13 +3,13 @@ uid: learn.wwl.create-question-answer-solution-ai-language.understand-question-a
 title: Understand question answering
 metadata:
   title: Understand question answering
-  description: "Understand question answering"
-  ms.date: 08/31/2023
+  description: Understand question answering
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-language
-  ms.subservice: azure-ai-question-answering
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-understand-question-answer-capability.md)]

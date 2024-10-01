@@ -3,12 +3,13 @@ uid: learn.wwl.plan-form-recognizer-solution.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/16/2022
-  author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  description: Knowledge check
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 09/04/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -50,28 +51,6 @@ quiz:
     - content: "R"
       isCorrect: false
       explanation: "Incorrect. There's no Azure AI Document Intelligence API for R, but you can submit requests through the RESTful web service."
-  - content: "You're building a solution that analyzes sales invoices. You expect to receive up to 10 concurrent requests at busy times and you want your solution to be as simple as possible. What kind of resource should you create?"
-    choices:
-    - content: "A Free tier Azure AI Document Intelligence resource."
-      isCorrect: false
-      explanation: "Incorrect. The Free tier supports one request at a time."
-    - content: "A Standard tier Azure AI Document Intelligence resource."
-      isCorrect: true
-      explanation: "Correct. The Standard tier supports up to 15 concurrent requests and you don't need other Azure AI Services."
-    - content: "An Azure AI Services multi-service resource."
-      isCorrect: false
-      explanation: "Incorrect. You can't add Azure AI Document Intelligence to an Azure AI Services multi-service resource."
-  - content: "Which of the following values is required to connect to an Azure AI Document Intelligence service?"
-    choices:
-    - content: "The name of your Azure subscription."
-      isCorrect: false
-      explanation: "Incorrect. The name of the Azure subscription isn't required to connect to Azure AI Document Intelligence."
-    - content: "The endpoint and API key for the Azure resource."
-      isCorrect: true
-      explanation: "Correct. You must supply the endpoint and an access key to authenticate when you use an Azure AI Document Intelligence service to analyze forms."
-    - content: "The name of the Azure region where your Azure AI Document Intelligence service runs."
-      isCorrect: false
-      explanation: "Incorrect. You don't need to specify an Azure region to connect to Azure AI Document Intelligence."
   - content: "Which of the following is an Azure AI Document Intelligence prebuilt model?"
     choices:
     - content: "Employment record"

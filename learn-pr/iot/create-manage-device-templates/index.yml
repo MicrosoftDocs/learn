@@ -3,13 +3,13 @@ uid: learn.wwl.create-manage-device-templates
 metadata:
   title: Create and manage device templates in Azure IoT Central
   description: Examine the features and component sections of the device template, a blueprint that defines the characteristics and behaviors of a type of device.
+  ms.service: iot-central
   ms.date: 05/11/2023
   author: dominicbetts
   ms.author: dobett
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.prod: azure-iot-central
 title: Create and manage device templates in Azure IoT Central
 summary: Examine the features and component sections of the device template, a blueprint that defines the characteristics and behaviors of a type of device that connects to your application.
 abstract: |

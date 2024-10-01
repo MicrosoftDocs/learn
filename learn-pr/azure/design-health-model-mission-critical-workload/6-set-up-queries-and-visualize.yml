@@ -4,11 +4,10 @@ title: Collect, query, and visualize health states
 metadata:
   title: Collect, query, and visualize health states
   description: Learn how to collect data, run queries, and visualize health states in a health model.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/6-set-up-queries-and-visualize.md)]

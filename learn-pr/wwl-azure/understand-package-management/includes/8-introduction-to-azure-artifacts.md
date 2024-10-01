@@ -1,4 +1,3 @@
-
 Previously you learned about packaging dependencies and the various packaging formats, feeds, sources, and package managers.
 
 Now, you'll know more about package management, creating a feed, and publishing packages.

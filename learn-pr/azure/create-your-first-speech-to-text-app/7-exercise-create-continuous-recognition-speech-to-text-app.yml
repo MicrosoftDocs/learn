@@ -4,11 +4,12 @@ title: Exercise - Create a continuous-recognition speech to text application
 metadata:
   title: Exercise - Create a continuous-recognition speech to text application
   description: In this exercise, you'll create a continuous-recognition speech to text application.
-  ms.date: 09/15/2022
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 azureSandbox: true
 interactive: bash
 durationInMinutes: 10

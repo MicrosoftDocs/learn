@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/04/2023
   author: Zimmergren
   ms.author: tozimmergren
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-customer-narrative.md)] 

@@ -12,35 +12,61 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     
     ```azurecli
     az vm create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --name my-vm \
       --public-ip-sku Standard \
       --image Ubuntu2204 \
       --admin-username azureuser \
-      --generate-ssh-keys
+      --generate-ssh-keys    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     ```
     
-    Your VM will take a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
+    Your VM takes a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
 2.  Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
     az vm extension set \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
       --vm-name my-vm \
       --name customScript \
       --publisher Microsoft.Azure.Extensions \
       --version 2.1 \
       --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
-      --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+      --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     ```
     
     This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub. While the command runs, you can choose to [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab. To summarize, the script:
+    
+    
     1.  Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
     2.  Installs Nginx.
     3.  Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's host name.
 
 ## Continue
 
-That's all for this exercise. The sandbox will keep running, and you'll come back to this point in a few units to update the network configuration so you can get to the website.
+This exercise is complete for now. The sandbox keeps running, and you come back to this point in a few units to update the network configuration so you can get to the website.

@@ -32,7 +32,7 @@ View the maximum number of parallel jobs that are available in your organization
 
 Select View in-progress jobs to display all the builds and releases that are actively consuming an available parallel job or queued waiting for a parallel job to be available.
 
-:::image type="content" source="../media/parallel-jobs-organization-settings-679bb5c6.png" alt-text="Parallel jobs in organization settings.":::
+:::image type="content" source="../media/parallel-jobs-organization-settings-679bb5c6.png" alt-text="Screenshot of parallel jobs in organization settings.":::
 
 
 ## Sharing of parallel jobs across projects in a collection

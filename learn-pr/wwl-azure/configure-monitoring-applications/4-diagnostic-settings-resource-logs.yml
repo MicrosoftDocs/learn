@@ -4,11 +4,10 @@ title: Diagnostic settings and resource logs
 metadata:
   title: Diagnostic settings and resource logs
   description: "Diagnostic settings and resource logs"
-  ms.date: 10/05/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-diagnostic-settings-resource-logs.md)]

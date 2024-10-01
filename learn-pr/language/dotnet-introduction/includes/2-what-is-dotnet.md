@@ -43,9 +43,12 @@ You might wonder which frameworks support which app models. Use the following ta
 | Web  | ASP.NET Core MVC |  The framework for building server-side logic for web pages or web APIs. |
 | Web  | ASP.NET Core Razor Pages |  The framework for building server-generated HTML.  |
 | Web client | Blazor | Blazor is a part of ASP.NET Core. Its two modes allow for either Document Object Model (DOM) manipulation via sockets as a communication vehicle for running server-side code, or a WebAssembly implementation for running compiled C# on a browser.  |
+| Desktop | .NET for Mac |  Allows .NET developers to build apps for Mac devices with native UI and API access. |
 | Desktop  | WinForms | A framework for building "battleship gray" Windows-style applications. |
 | Desktop  | Windows Presentation Foundation (WPF) | A framework for building dynamic desktop applications that conform to different form factors. WPF allows form elements to perform movement, fades, glides, and other effects with the help of a rich library of animations. |
-| Mobile | Xamarin |  Allows .NET developers to build apps for iOS and Android devices. |
+| Mobile | .NET for Android |  Allows .NET developers to build apps for Android devices with native UI and API access. |
+| Mobile | .NET for iOS |  Allows .NET developers to build apps for iOS and iPadOS with native UI and API access. |
+| Multi-Platform App UI | .NET MAUI |  The premier way to build apps for iOS, Android, Mac, and Windows from a single shared code base with native UI and access to native APIs.. |
 
 .NET also powers popular third-party and open-source gaming development environments and engines like Unity.
 
@@ -54,6 +57,8 @@ You might wonder which frameworks support which app models. Use the following ta
 Software developers rely on tools to write code, add references to code libraries, compile code, and debug code. This section describes several .NET tools you'll use to build .NET applications.
 
 *Visual Studio 2022* is the Microsoft flagship development environment. Millions of developers use it to build .NET applications. A graphical user interface (that includes menus, windows, visual designers, dialog boxes, and wizards) guides developers through the application development process. Visual Studio 2022 is available in three editions: Community, Professional, and Enterprise. Each edition includes different tools and is licensed for different purposes.
+
+**Visual Studio Code** is the Microsoft flagship code editor that supports multiple programming languages and is supported on Windows, Mac, and Linux. **C# Dev Kit Extension** brings improved editor-first C# development to Visual Studio Code and enhances the experience of working with .NET projects with support for a solution explorer, project system, testing enhancements and explorer, AI-assisted development, and a powerful languages services for best-in-class C# language features such as code navigation, refactoring, semantic awareness, and more.
 
 Developers who prefer a command-line workflow might use a combination of *Visual Studio Code*, the world's most popular code editor, and the .NET command-line interface, also known as the *.NET CLI*.
 
@@ -70,7 +75,7 @@ The following table features a few great resources you might want to bookmark an
 | Resource | Purpose |
 |---|---|---|
 | [Microsoft Learn](/?azure-portal=true) | Provides quick-start tutorials and definitive reference documentation. |  
-| [Patterns and Practices](/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. |
+| [Patterns and Practices](https://dotnet.microsoft.com/learn/dotnet/architecture-guides?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. |
 | [.NET Videos](https://dotnet.microsoft.com/learn/videos?azure-portal=true) | Provides video tutorials from the .NET team. These videos walk developers through common usage scenarios. |
 | [Get started with C#](../../../paths/get-started-c-sharp-part-1/index.yml?azure-portal=true) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. |
 
@@ -90,11 +95,11 @@ However, one of the most distinctive features of .NET is that its ongoing develo
 Additionally, the .NET ecosystem has momentum:
 
 - .NET developers number more than 5 million!
-- The results of Stack Overflow polls in 2019 and 2020 showed that .NET Core is the most loved framework.
+- The results of Stack Overflow polls consistently show that .NET Core & .NET are the most loved framework.
 - Students love .NET; 40 percent of developers who are new to .NET are students.
 - The GitHub repositories for .NET and ASP.NET are ranked among the top 30 highest-velocity open-source software (OSS) projects.
 - GitHub lists C# in the top five programming languages, and the language is increasing in popularity according to the 2020 TIOBE programming community index.
-- .NET has the fastest web framework on the planet according to [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#section=data-r19&hw=ph&test=plaintext&a=2?azure-portal=true), an independent, open-source set of web performance benchmarks that measure dozens of languages and application frameworks.
+- .NET has the fastest web framework on the planet according to [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#section=data-r21&hw=ph&test=plaintext&azure-portal=true), an independent, open-source set of web performance benchmarks that measure dozens of languages and application frameworks.
 
 
 ## A brief history of .NET
@@ -103,6 +108,6 @@ The original .NET Framework was first released in early 2002. Since then, many u
 
 After 2002, Microsoft worked to make a version of .NET that had cross-platform compatibility. The goal was to allow developers to write one code base and use it across macOS, Linux, and Windows operating systems.
 
-Through these efforts, .NET Core was introduced around 2014. Microsoft has maintained the original .NET Framework, but new features and improvements are reserved for .NET Core. *Core* was later dropped from the name. The next major versions are .NET 5, .NET 6, .NET 7, and so on. Versions are generally released each November.
+Through these efforts, .NET Core was introduced around 2014. Microsoft has maintained the original .NET Framework, but new features and improvements are reserved for .NET Core. *Core* was later dropped from the name. The next major versions are .NET 5, .NET 6, .NET 7, .NET 8, and so on. Versions are generally released each November.
 
 Why is the .NET history worth mentioning? Because you'll likely find blog posts, videos, and source code that targets the original .NET Framework. In some cases, the instructions or code still work, but in other cases, you might need to make adjustments to fit the new .NET.

@@ -6,10 +6,10 @@ metadata:
   ms.date: 09/14/2023
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: sql
   ms.subservice: t-sql
-  ms.devlang: t-sql
+  ms.devlang: tsql
 title: Use built-in functions and GROUP BY in Transact-SQL
 summary: Learn how to use functions in Transact-SQL, and how to group aggregated results.
 abstract: |
@@ -42,8 +42,7 @@ products:
 - azure-sql-virtual-machines
 subjects:
 - data-analytics
-- database
-- development-tools
+- databases
 units:
 - learn.wwl.use-built-functions-transact-sql.introduction
 - learn.wwl.use-built-functions-transact-sql.categorize-functions

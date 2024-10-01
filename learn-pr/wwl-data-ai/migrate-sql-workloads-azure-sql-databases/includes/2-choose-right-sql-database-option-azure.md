@@ -20,7 +20,7 @@ The following summarize the benefits of deploying single and elastic pool databa
 | **Service scalability** | Dynamic scale-up and scale-down |
 |  | Scale out with multiple shards |
 |  | Share compute resources between databases using elastic pools |
-| **Security** | Support for Azure Active Directory authentication |
+| **Security** | Support for Microsoft Entra authentication |
 |  | Cloud-only security features such as Advanced Threat Protection |
 |  | Transparent data encryption (TDE) enabled by default |
 |  | Support for dynamic and static data masking, row-level security, and Always Encrypted |
@@ -55,16 +55,19 @@ There are two modes of migration to Azure SQL Database: **Online** and **Offline
 
 | Tool | Migration mode |
 | --- | --- |
-| [Azure SQL Migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension) | **Offline** |
-| [Data Migration Assistant (DMA)](/sql/dma/dma-overview) | **Offline** |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | **Offline** |
 | [Transactional replication](/sql/relational-databases/replication/transactional/transactional-replication) | **Online** |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | **Offline** |
 | [SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) | **\* Offline** |
 | [Import Export Wizard/BACPAC](/azure/azure-sql/database/database-export) | **Offline** |
 | [Bulk copy (bcp utility)](/sql/relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server) | **Offline** |
 | [Azure Data Factory](/azure/data-factory/quickstart-get-started) | **Offline** |
+| [Data Migration Assistant (DMA)](/sql/dma/dma-overview) | **Offline** |
 
 \* Can have a higher performance impact, depending on the workload.
+
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
 
 ## Migration performance
 
@@ -89,4 +92,3 @@ We recommend waiting for 5 seconds at a minimum on your first retry. Each subseq
 > If a SELECT statement fails with a transient error for SQL Database, don't directly retry it. Instead, retry the SELECT statement in a new connection.
 
 To learn more about the connection retry principals, see [Troubleshoot transient connection errors in SQL Database and SQL Managed Instance](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
-

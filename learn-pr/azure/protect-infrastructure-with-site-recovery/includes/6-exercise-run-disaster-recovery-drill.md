@@ -1,6 +1,6 @@
-Azure Site Recovery is flexible enough to support many different recovery scenarios. You can choose to failover individual machines or our entire infrastructure with recovery plans. The flexibility enables you to simulate various disasters, like losing only part of your infrastructure. Multiple recovery plans can be defined to allow for all the different kinds of disaster drills you want to run.
+Azure Site Recovery is flexible enough to support many different recovery scenarios. You can choose to fail over individual machines or our entire infrastructure with recovery plans. The flexibility enables you to simulate various disasters, like losing only part of your infrastructure. Multiple recovery plans can be defined to allow for all the different kinds of disaster drills you want to run.
 
-With Site Recovery in place, the head of Ops has asked you to test how long it takes to fail over all your infrastructure. You've investigated the different options, and decided to create a recovery plan so that you can fail over all the VMs. With the plan in place, you'll run a test failover, and monitor its progress.
+With Site Recovery in place, the head of Operations has asked you to test how long it takes to fail over all your infrastructure. You've investigated the different options, and decided to create a recovery plan so that you can fail over all the VMs. With the plan in place, you'll run a test failover and monitor its progress.
 
 In this exercise, you'll complete the steps needed to run a DR drill using a recovery plan on the portal.
 
@@ -13,9 +13,9 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. On the home page, select **All resources**.
 
-1. From the list of resources, select the Recovery Services vault named *asr-vault*.
+1. From the list of resources, select the Recovery Services vault named **asr-vault**.
 
-1. On the left menu pane, under **Manage**, select **Recovery Plans (Site Recovery)**.
+1. On the left menu pane, select **Recovery Plans (Site Recovery)** under **Manage**.
 
 1. In the top menu bar, select **Recovery plan**. The **Create recovery plan** pane appears.
 
@@ -26,6 +26,8 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
     | Name | asr-dr-drill |
     | Source | West US 2 |
     | Target | East US 2 |
+
+1. Select **Resource Manager** in the **Allow items with deployment model** drop-down.
 
 1. Select the **Select items** link. The **Select items** pane appears.
 
@@ -61,47 +63,36 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     | Setting | Value |
     |---|---|
+    | **Failover direction** |
     | From | West US 2 |
     | To*| East US 2 |
-
-    For **Recovery Point**:
-
-    | Setting | Value |
-    |---|---|
-    | Choose a recovery point | From the dropdown list, select **Latest app-consistent** |
+    |**Recovery Point**  |
+    | Choose a recovery point | From the dropdown list, select **Latest (Lowest RPO)** |
     | Azure virtual network | From the dropdown list, select **asr-vnet-asr**. |
 
 1. To begin the failover, select **OK**.
 
     :::image type="content" source="../media/6-starting-dr-drill.png" alt-text="Screenshot of the test failover options." lightbox="../media/6-starting-dr-drill.png":::
 
-    The **Recovery Plans (Site Recovery)** pane for the **Recovery Services vault** named *asr-vault* reappears.
+
 
 ## Monitor failover progress
 
-1. In the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
-
-    :::image type="content" source="../media/6-site-recovery-monitoring.png" alt-text="Screenshot showing the list of recovery plans created." lightbox="../media/6-site-recovery-monitoring.png":::
-
-1. From the list, select **Test failover**.
-
-    :::image type="content" source="../media/6-dr-drill-job-list.png" alt-text="Screenshot of the list of Site Recovery jobs." lightbox="../media/6-dr-drill-job-list.png":::
-
-1. The **Test failover** pane appears where you can view the status of the jobs.
+1. Select the **Notifications** icon, then select the **Test failover of 'asr-dr'drill' is in progress** link to view the status of your failover test jobs.
 
     :::image type="content" source="../media/6-dr-drill-results.png" alt-text="Screenshot of the test failover jobs showing their status." lightbox="../media/6-dr-drill-results.png":::
 
     You'll use the information on this pane to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel (rather than a simple sum of all of jobs), to work out the total of time taken.
 
-1. After all the jobs have completed successfully, on the far left, select **Virtual machines**.
+1. After all the jobs have completed successfully, select **Virtual machines** from the Azure home page.
 
     :::image type="content" source="../media/6-listing-all-vms.png" alt-text="Screenshot showing all the current VMs, the original patient-records, and hr-records. Also the newly created patient-records-test and hr-records-test." lightbox="../media/6-listing-all-vms.png":::
 
 1. Select one of the new test VMs.
 
-1. In the left menu pane, under **Settings**, select **Networking**, and then select **Topology**.
+1. In the left menu pane, under **Settings**, select **Networking**, and then select **Topology**. You'll see an image similar to the following:
 
-    :::image type="content" source="../media/6-dr-infrastructure.svg" alt-text="Screenshot showing the network topology of the new failed over VMs." lightbox="../media/6-dr-infrastructure.svg":::
+    :::image type="content" source="../media/6-dr-infrastructure.png" alt-text="Screenshot showing the network topology of the new failed over VMs." lightbox="../media/6-dr-infrastructure.png":::
 
     > [!NOTE]
     > Both the patient-records and hr-records VMs have been failed over by Site Recovery. The VMs are running in their own disaster recovery virtual network.
@@ -110,4 +101,4 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     :::image type="content" source="../media/5-test-success.png" alt-text="Screenshot showing text." lightbox="../media/5-test-success.png":::
 
-1. To complete the cleanup process, select the **Testing is complete** checkbox, and then select **OK**. This step can take up to three minutes to complete.
+1. To complete the cleanup process, select the **Testing is complete** checkbox, then select **OK**. This step can take a few minutes to complete.

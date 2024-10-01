@@ -42,7 +42,7 @@ In our scenario, your company has a Microsoft Entra organization where you can a
 
 ## Verify your custom domain in Azure
 
-1. In Microsoft Entra ID, under **Manage** select **Custom domain names**.
+1. In Microsoft Entra ID, select **Custom domain names** under **Manage**.
 
 1. Select your custom domain name.
 
@@ -74,12 +74,12 @@ After you add the custom domain name and any subdomains, set one of the domain n
 
 ## Manage custom domain names by using Azure PowerShell
 
-You might prefer to manage your domain names by using Azure PowerShell.
+You might prefer to manage your domain names by using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview).
 
-- `New-AzureADDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
-- `Confirm-AzureADDomain`: Lets you try to validate the ownership of a domain.
-- `Set-AzureADDomain`: Updates a domain name and can set the domain to the primary domain name.
-- `Remove-AzureADDomain`: Deletes a domain from Microsoft Entra ID.
+- `New-MgDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
+- `Confirm-MgDomain`: Lets you try to validate the ownership of a domain.
+- `Update-MgDomain`: Updates a domain name and can set the domain to the primary domain name.
+- `Remove-MgDomain`: Deletes a domain from Microsoft Entra ID.
 
 ## Add a user
 
@@ -87,7 +87,7 @@ After you add a custom domain name and set it to be the primary domain, add user
 
 1. In the Azure portal, go to **Microsoft Entra ID**.
 
-1. On the left side of the pane, under **Manage** select **Users**.
+1. On the left side of the pane, select **Users** under **Manage**.
 
 1. Select **+ New user**, then select **Create new user**.
 

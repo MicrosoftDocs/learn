@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.personalize-remote-development-workflow.combine-remote-experiences
+title: Combine remote environments
+metadata:
+  title: Combine remote environments
+  description: "Learn how to combine remote environments to create a personalized development experience."
+  ms.date: 11/28/2023
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-combine-remote-experiences.md)]

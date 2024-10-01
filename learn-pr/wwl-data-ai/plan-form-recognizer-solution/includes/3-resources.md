@@ -1,4 +1,4 @@
-Azure AI Document Intelligence is built on Azure and runs in the Azure cloud. To build an Azure AI Document Intelligence solution, you must create and configure the necessary resources in your Azure subscription.
+To build an Azure AI Document Intelligence solution, you must create and configure the necessary resources in your Azure subscription.
 
 In your polling company, you're assessing Azure AI Document Intelligence to see if it can streamline your data entry workflow. You've decided to deploy an Azure AI Document Intelligence solution that will analyze data from your polling forms and you must plan the deployment to support your requirements. You want to know what resources to create in your Azure subscription.
 
@@ -6,16 +6,7 @@ In this unit, you'll learn how to choose and create Azure AI Document Intelligen
 
 ## Azure AI Document Intelligence resources
 
-Azure AI Document Intelligence is an Azure service and conforms to Azure's resource management model. To create an Azure AI Document Intelligence solution, you start by adding a resource to your Azure subscription. When you create an Azure AI Document Intelligence resource, you can choose from **Free (F0)** or **Standard (S0)** tiers. The tiers impose the following quotas and limits:
-
-| Quota | Free (F0) | Standard (S0) |
-| --- | --- | --- |
-| Concurrent request limit | 1 | 15 by default |
-| Composed model limit | 5 | 200 |
-| Custom neural model train | 10 per month | 10 per month by default |
-
-> [!NOTE]
-> These quotas and limits are subject to change as the service is improved. For the latest information, see the **Azure AI Document Intelligence service Quotas and Limits** link in the **Learn more** section at the end of this unit.
+Azure AI Document Intelligence is an Azure service and conforms to Azure's resource management model. To create an Azure AI Document Intelligence solution, you start by adding a resource to your Azure subscription. When you create an Azure AI Document Intelligence resource, you can choose from **Free (F0)** or **Standard (S0)** tiers.
 
 > [!IMPORTANT]
 > If you're using the **Standard** tier, and find your requests are being throttled, you can submit an Azure Support Request to have the default limits increased. The **Free** tier is not available if you are using a multi-service resource.
@@ -31,9 +22,6 @@ To create an Azure AI Document Intelligence resource in Azure and obtain connect
 1. Under **Instance details**, select a **Region** near your users.
 1. In the **Name** textbox, type a unique name for the resource.
 1. Select a **Pricing tier** and then select **Review + create**.
-
-    :::image type="content" source="../media/03-create-resource.png" alt-text="Screenshot showing the completed Create Azure AI Document Intelligence page in the Azure portal." lightbox="../media/03-create-resource.png":::
-
 1. If the validation tests pass, select **Create**. Azure deploys the new Azure AI Document Intelligence resource.
 
 ## Connect to Azure AI Document Intelligence
@@ -49,31 +37,59 @@ To obtain these details:
 1. Under **Resource Management**, select **Keys and Endpoint**.
 1. Copy either **KEY 1** or **KEY 2** and the **Endpoint** values and store them for use in your application code.
 
-    :::image type="content" source="../media/03-keys-endpoint.png" alt-text="Screenshot showing where to find the access keys and endpoint for an Azure AI Document Intelligence resource in the Azure portal." lightbox="../media/03-keys-endpoint.png":::
+The following code shows how to use these connection details to connect your application to Azure AI Document Intelligence. If running this code, you'll need the libraries included in the top of the snippet.
 
-The following code shows how to use these connection details to connect your application to Azure AI Document Intelligence. In this example, a sample document at a specified URL is submitted for analysis to the general document model. Replace `<endpoint>` and `<access-key>` with the connection details you obtained from the Azure portal:
+In this example, a sample document at a specified URL is submitted for analysis to the general document model. Replace `<endpoint>` and `<access-key>` with the connection details you obtained from the Azure portal:
+
+::: zone pivot="csharp"
 
 ``` csharp
 using Azure;
-using Azure.AI.FormRecognizer.DocumentAnalysis;
+using Azure.AI.DocumentIntelligence;
 
 string endpoint = "<endpoint>";
 string key = "<access-key>";
 AzureKeyCredential cred = new AzureKeyCredential(key);
-DocumentAnalysisClient client = new DocumentAnalysisClient(new Uri(endpoint), cred);
+DocumentIntelligenceClient client = new DocumentIntelligenceClient (new Uri(endpoint), cred);
 
-//sample form document
 Uri fileUri = new Uri ("<url-of-document-to-analyze>");
 
-AnalyzeDocumentOperation operation = await client.StartAnalyzeDocumentFromUriAsync("prebuilt-document", fileUri);
+var content = new AnalyzeDocumentContent()
+{
+    UrlSource = uriSource
+};
 
-await operation.WaitForCompletionAsync();
-
+Operation<AnalyzeResult> operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt-layout", content);
 AnalyzeResult result = operation.Value;
 ```
 
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.documentintelligence import DocumentIntelligenceClient
+from azure.ai.documentintelligence.models import AnalyzeResult
+
+endpoint = "<your-endpoint>"
+key = "<your-key>"
+
+docUrl = "<url-of-document-to-analyze>"
+
+document_analysis_client = DocumentIntelligenceClient(endpoint=endpoint, 
+    credential=AzureKeyCredential(key))
+
+poller = document_analysis_client.begin_analyze_document(
+        "prebuilt-layout", AnalyzeDocumentRequest(url_source=docUrl
+    ))
+result: AnalyzeResult = poller.result()
+```
+
+::: zone-end
+
 ## Learn more
 
-- [Create an Azure AI Document Intelligence resource](/azure/applied-ai-services/form-recognizer/create-a-form-recognizer-resource)
-- [Get started: Azure AI Document Intelligence C# SDK (beta)](/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-csharp-sdk)
-- [Azure AI Document Intelligence service Quotas and Limits](/azure/applied-ai-services/form-recognizer/service-limits)
+- [Create an Azure AI Document Intelligence resource](/azure/ai-services/document-intelligence/create-document-intelligence-resource)
+- [Azure AI Document Intelligence Quickstart](/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api)
+- [Azure AI Document Intelligence service Quotas and Limits](/azure/ai-services/document-intelligence/service-limits)

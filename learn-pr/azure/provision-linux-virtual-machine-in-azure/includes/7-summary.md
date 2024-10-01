@@ -1,4 +1,4 @@
-In this module, you reviewed several methods for provisioning Azure VMs running Linux. You started by exploring the deployment process available in the Azure portal, identifying the most common configuration options. Next, you reviewed an example of imperative provisioning by using Azure CLI. You concluded your review with declarative deployments by using Terraform and Bicep.
+In this module, you reviewed several methods for provisioning Azure VMs running Linux. You started by exploring the deployment process available in the Azure portal and identifying the most common configuration options. Next, you reviewed an example of imperative provisioning by using Azure CLI. You concluded your review with declarative deployments by using Terraform and Bicep.
 
 The knowledge you gained will help you choose the deployment methodology that offers the optimal balance between simplicity and efficiency according to your requirements or preferences.
 

@@ -13,7 +13,7 @@ Here, you'll create an Azure DevOps project.
 1. Sign in to your account at [dev.azure.com](https://dev.azure.com).
 
 1. Select your organization.
-1. Select **+ New project**.
+1. Select **+ New project**. If you don't already have existing projects in your organization, there won't be a **+ New project** button, and you can proceed to step 3.
 
     The **Create a project** dialog box opens.
 1. In the **Project name** field, enter **Space Game - web**.

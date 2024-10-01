@@ -3,11 +3,12 @@ uid: learn.azure.protect-vm-settings-with-dsc
 metadata:
   title: Protect your virtual machine settings with Azure Automation State Configuration
   description: Learn how to protect your virtual machine settings with Azure Automation State Configuration
+  manager: mkluck
   ms.date: 09/22/2023
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.service: automation
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
+  ms.service: azure-automation
 title: Protect your virtual machine settings with Azure Automation State Configuration
 summary: Create a desired state configuration script that checks that IIS is installed. Onboard virtual machines (VMs) for management by Azure Automation. Automatically install IIS on the VMs where that feature is missing.
 abstract: |

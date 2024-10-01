@@ -3,19 +3,27 @@ uid: learn.wwl.introduction-to-github-actions
 metadata:
   title: Introduction to GitHub Actions
   description: "Introduction to GitHub Actions"
-  ms.date: 12/09/2022
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Introduction to GitHub Actions
-summary: In this module, you will learn what GitHub Actions, action flow, and its elements are. Understand what events are, explore jobs and runners, and how to read console output from actions.
+summary: In this module, you learn what GitHub Actions, action flow, and its elements are. Understand what events are, explore jobs and runners, and how to read console output from actions.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Explain GitHub Actions and workflows
-  - Create and work with GitHub Actions and Workflows
-  - Describe Events, Jobs and Runners
-  - Examine output and release management for actions
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Explain GitHub Actions and workflows
+
+  -   Create and work with GitHub Actions and Workflows
+
+  -   Describe Events, Jobs and Runners
+
+  -   Examine output and release management for actions
+prerequisites: None
 iconUrl: /training/achievements/7-introduction-to-github-actions.svg
 levels:
 - advanced

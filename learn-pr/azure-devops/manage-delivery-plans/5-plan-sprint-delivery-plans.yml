@@ -8,8 +8,7 @@ metadata:
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-plan-sprint-delivery-plans.md)]

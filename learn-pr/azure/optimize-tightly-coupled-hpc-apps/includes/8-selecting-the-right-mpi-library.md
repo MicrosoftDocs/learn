@@ -34,8 +34,8 @@ In that command:
 | Parameter | Description |
 |---|---|
 | `$NPROCS` | Specifies the number of MPI processes. For example: `-n 16`. |
-| `$HOSTFILE` | Specifies a file containing the hostname or IP address, to indicate the location of where the MPI processes will run. For example: `--hostfile hosts`. |
-| `$NUMBER_PROCESSES_PER_NUMA` | Specifies the number of MPI processes that will run in each NUMA domain. For example, to specify four MPI processes per NUMA, you use `--map-by ppr:4:numa:pe=1`. |
+| `$HOSTFILE` | Specifies a file containing the hostname or IP address, to indicate the location of where the MPI processes run. For example: `--hostfile hosts`. |
+| `$NUMBER_PROCESSES_PER_NUMA` | Specifies the number of MPI processes that run in each NUMA domain. For example, to specify four MPI processes per NUMA, you use `--map-by ppr:4:numa:pe=1`. |
 | `$NUMBER_THREADS_PER_PROCESS` | Specifies the number of threads per MPI process. For example, to specify one MPI process and four threads per NUMA, you use `--map-by ppr:1:numa:pe=4`. |
 | `-report-bindings` | Prints MPI processes mapping to cores, which is useful to verify that your MPI process pinning is correct. |
 | `$MPI_EXECUTABLE` | Specifies the MPI executable built linking in MPI libraries. MPI compiler wrappers do this automatically. For example: `mpicc` or `mpif90`. |
@@ -64,9 +64,9 @@ In those arguments:
 
 | Parameters | Description |
 |---|---|
-| `FI_PROVIDER` | Specifies which libfabric provider to use, which will affect the API, protocol, and network used. `verbs` is another option, but generally `mlx` gives you better performance. |
+| `FI_PROVIDER` | Specifies which libfabric provider to use, which affects the API, protocol, and network used. `verbs` is another option, but generally `mlx` gives you better performance. |
 | `I_MPI_DEBUG` | Specifies the level of extra debug output, which can provide details about where processes are pinned, and which protocol and network are used. |
-| `I_MPI_PIN_DOMAIN` | Specifies how you want to pin your processes. For example, you can pin to cores, sockets, or NUMA domains. In this example, you set this environmental variable to `numa`, which means processes will be pinned to NUMA node domains. |
+| `I_MPI_PIN_DOMAIN` | Specifies how you want to pin your processes. For example, you can pin to cores, sockets, or NUMA domains. In this example, you set this environmental variable to `numa`, which means processes are pinned to NUMA node domains. |
 
 There are some other options that you can try, especially if collective operations are consuming a significant amount of time. Intel MPI 2019 update 5+ supports the provide mlx and uses the UCX framework to communicate with InfiniBand. It also supports HCOLL.
 
@@ -92,7 +92,7 @@ In those arguments:
 
 | Parameters | Description |
 |---|---|
-| `MV2_CPU_BINDING_POLICY` | Specifies which binding policy to use, which will affect how processes are pinned to core IDs. In this case, you specify `scatter`, so processes will be evenly scattered among the NUMA domains. |
+| `MV2_CPU_BINDING_POLICY` | Specifies which binding policy to use, which will affect how processes are pinned to core IDs. In this case, you specify `scatter`, so processes are evenly scattered among the NUMA domains. |
 | `MV2_CPU_BINDING_LEVEL` | Specifies where to pin processes. In this case, you set it to `numanode`, which means processes are pinned to units of NUMA domains. |
 | `MV2_SHOW_CPU_BINDING` | Specifies if you want to get debug information about where the processes are pinned. |
 | `MV2_SHOW_HCA_BINDING` | Specifies if you want to get debug information about which host channel adapter each process is using. |

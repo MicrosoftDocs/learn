@@ -4,7 +4,7 @@ The Microsoft Service Trust Portal provides a variety of content, tools, and oth
 The Service Trust Portal (STP) is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
 
 ### Accessing the Service Trust Portal
-To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft non-disclosure agreement for Compliance Materials.
+To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft non-disclosure agreement for Compliance Materials.
 
 ### Service Trust Portal Content Categories
 The Service Trust Portal landing page includes content that is organized into the following categories:
@@ -66,11 +66,3 @@ Additionally, the notifications feature lets you configure your My Library so th
 If a document is part of a series, you'll be subscribed to the series, and will receive notifications when there's an update to that series.
 
 :::image type="content" source="../media/stp-my-library.png" alt-text="Screenshot of the documents listed in the My Library page.":::
-
-### Interactive Guide
-In this interactive guide, you'll explore a few of the menu options available on the Service Trust Portal. Select the image that follows to get started then follow the prompts on the screen.
-
-> [!NOTE]
-> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
-
-[![Interactive guide](../media/stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/c002-lp04m01-explore1the-service-trust-portal-sept2022/index.html?azure-portal=true)

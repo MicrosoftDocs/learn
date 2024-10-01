@@ -4,11 +4,10 @@ title: Exercise - Define health state, metrics, and thresholds
 metadata:
   title: Exercise - Define health state, metrics, and thresholds
   description: Learn how to define the health state, metrics, and thresholds for a health model.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-define-health-states-metrics-threshold.md)]

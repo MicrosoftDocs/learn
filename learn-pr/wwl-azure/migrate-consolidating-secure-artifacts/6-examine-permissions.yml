@@ -4,13 +4,12 @@ title: Examine permissions
 metadata:
   title: Examine permissions
   description: "Examine permissions"
-  ms.date: 05/17/2022
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/6-examine-permissions.md)]

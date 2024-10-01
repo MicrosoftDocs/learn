@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
+  title: ""
   questions:
   - content: "Which of the following criteria would define a good candidate to embed two entities in a single document schema?"
     choices:
@@ -27,10 +27,10 @@ quiz:
       explanation: "That's incorrect. This is especially false with large documents. Updates in Azure Cosmos DB require the entire item to be replaced. If a document has a few properties that are frequently updated alongside a large number of mostly static properties, it's much more efficient to split the document into two."
   - content: "Consider the following scenario: Your company has customers across four countries/regions, with hundreds of thousands of customers for countries/regions 1 and 2, and a few thousand customers for countries/regions 3 and 4.  Requests for each country/region total approximately 50,000 RU/s every hour of the day. Your application team proposes to use ``countryId`` as the partition key for this container. This is a write-heavy application with no TTL being used. Which of the following statements is true?"
     choices:
-    - content: "This partition key will prevent throughput hot partitions."
+    - content: "This partition key prevents throughput hot partitions."
       isCorrect: false
       explanation: "That's incorrect. Throughput hot partitions would still be possible."
-    - content: "This partition key will cause fan outs when filtering by ``countryId``."
+    - content: "This partition key causes fan outs when filtering by ``countryId``."
       isCorrect: false
       explanation: "That's incorrect. This partition will actually prevent Fan outs since we'll always be going to one partition per ``countryId``."
     - content: "This partition key could cause storage hot partitions"

@@ -1,5 +1,9 @@
 It can be challenging to design and implement an effective AI governance system. In this unit, we take Microsoft as the example and explain how Microsoft ensures responsible AI is followed across the company. Based on this use case, consider how you could apply these ideas in your own organization.
 
+In the following video, Natasha Crampton, Vice President and Chief Responsible AI Officer at Microsoft, provides an overview of how Microsoft enforces responsible AI practices.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eec7a2b4-35f7-4f77-81b0-776f37b295f8]
+
 Our governance structure uses a hub-and-spoke model to provide the accountability and authority to drive initiatives while also enabling responsible AI policies to be implemented at scale. That is, it combines the centralized and decentralized approaches discussed in the last unit.
 
 ## Centralized governance
@@ -58,5 +62,9 @@ We expect every Microsoft employee to:
 * Develop a general understanding of our AI principles.
 * Report and escalate sensitive uses.
 * Contact their Responsible AI Champ when they need guidance on responsible AI.
+
+>[!TIP]
+>Take a moment to identify challenges in establishing a system of responsible AI governance in your organization. \
+>![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let's see this governance model in action in flagging and addressing sensitive use cases of AI.

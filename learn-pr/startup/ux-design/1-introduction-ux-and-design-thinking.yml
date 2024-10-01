@@ -1,14 +1,13 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.startup.ux-design.introduction-ux-and-design-thinking
 title: Introduction
 metadata:
   title: Introduction
   description: 'This content is part of the "Foundations of user experience and design thinking" module.'
-  ms.date: 04/19/2023
+  ms.date: 12/22/2023
   author: Obi-Akpuda
   ms.author: obiakpuda
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: unit
 durationInMinutes : 2
 content: |
   [!include[](includes/1-introduction-ux-and-design-thinking.md)]

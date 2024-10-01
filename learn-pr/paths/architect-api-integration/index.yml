@@ -7,8 +7,7 @@ metadata:
   ms.date: 06/14/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect API integration in Azure
 summary: Learn how to architect API integration in Azure, and provide secure, scalable API access for your applications.
 prerequisites: |
@@ -32,5 +31,6 @@ modules:
 - learn.protect-apis-on-api-management
 - learn.control-authentication-with-apim
 - learn.build-serverless-api-with-functions-api-management
+- learn.api-management
 trophy:
   uid: learn.architect-api-integration.trophy

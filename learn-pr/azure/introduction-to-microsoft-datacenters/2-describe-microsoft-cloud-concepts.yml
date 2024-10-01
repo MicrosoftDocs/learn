@@ -3,12 +3,11 @@ uid: learn.introduction-to-microsoft-datacenters.describe-microsoft-cloud-concep
 title: Describe Microsoft Cloud concepts
 metadata:
   title: Describe Microsoft Cloud concepts
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Describes the three general types of cloud services, software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS).
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe-microsoft-cloud-concepts.md)]

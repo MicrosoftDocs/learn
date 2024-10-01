@@ -1,7 +1,7 @@
 This unit addresses a few specific strategies for modern authentication:
 
 - Conditional access
-- Continuous access authentication
+- Continuous access evaluation
 - Threat intelligence integration
 - Risk scoring
 
@@ -9,11 +9,11 @@ This unit addresses a few specific strategies for modern authentication:
 
 Users can access your organization's resources by using various devices and apps from anywhere. As an IT admin, you want to make sure that these devices meet your standards for security and compliance. Just focusing on who can access a resource isn't sufficient anymore.
 
-To balance security and productivity, you need to think about how a resource is accessed before you can make a decision about access control. With Azure AD Conditional Access, you can address this requirement. With Conditional Access, you can make automated access control decisions based on conditions for accessing your cloud apps.
+To balance security and productivity, you need to think about how a resource is accessed before you can make a decision about access control. With Microsoft Entra Conditional Access, you can address this requirement. With Conditional Access, you can make automated access control decisions based on conditions for accessing your cloud apps.
 
 **Best practice**: Manage and control access to corporate resources.  
 
-**Detail**: Configure common Azure AD Conditional Access policies based on a group, location, and application sensitivity for SaaS apps and Azure AD–connected apps.
+**Detail**: Configure common Microsoft Entra Conditional Access policies based on a group, location, and application sensitivity for SaaS apps and Microsoft Entra ID–connected apps.
 
 **Best practice**: Block legacy authentication protocols.
 
@@ -21,13 +21,13 @@ To balance security and productivity, you need to think about how a resource is 
 
 ## Continuous access evaluation
 <!--
-BEGIN(https://learn.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+BEGIN(/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 -->
-Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Azure AD to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory. 
+Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Microsoft Entra ID to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory. 
 
-Customers have expressed concerns about the lag between when conditions change for a user, and when policy changes are enforced. Azure AD has experimented with the "blunt object" approach of reduced token lifetimes but found they can degrade user experiences and reliability without eliminating risks.
+Customers have expressed concerns about the lag between when conditions change for a user, and when policy changes are enforced. Microsoft Entra ID has experimented with the "blunt object" approach of reduced token lifetimes but found they can degrade user experiences and reliability without eliminating risks.
 
-Timely response to policy violations or security issues really requires a "conversation" between the token issuer (Azure AD), and the relying party (enlightened app). This two-way conversation gives us two important capabilities. The relying party can see when properties change, like network location, and tell the token issuer. It also gives the token issuer a way to tell the relying party to stop respecting tokens for a given user because of account compromise, disablement, or other concerns. The mechanism for this conversation is continuous access evaluation (CAE). The goal for critical event evaluation is for response to be near real time, but latency of up to 15 minutes may be observed because of event propagation time; however, IP locations policy enforcement is instant.
+Timely response to policy violations or security issues really requires a "conversation" between the token issuer (Microsoft Entra ID), and the relying party (enlightened app). This two-way conversation gives us two important capabilities. The relying party can see when properties change, like network location, and tell the token issuer. It also gives the token issuer a way to tell the relying party to stop respecting tokens for a given user because of account compromise, disablement, or other concerns. The mechanism for this conversation is continuous access evaluation (CAE). The goal for critical event evaluation is for response to be near real time, but latency of up to 15 minutes may be observed because of event propagation time; however, IP locations policy enforcement is instant.
 
 The initial implementation of continuous access evaluation focuses on Exchange, Teams, and SharePoint Online.
 
@@ -45,16 +45,15 @@ There are two scenarios that make up continuous access evaluation, critical even
 
 ### Critical event evaluation
 
-Continuous access evaluation is implemented by enabling services, like Exchange Online, SharePoint Online, and Teams, to subscribe to critical Azure AD events. Those events can then be evaluated and enforced near real time. Critical event evaluation doesn't rely on Conditional Access policies so it's available in any tenant. The following events are currently evaluated:
+Continuous access evaluation is implemented by enabling services, like Exchange Online, SharePoint Online, and Teams, to subscribe to critical Microsoft Entra events. Those events can then be evaluated and enforced near real time. Critical event evaluation doesn't rely on Conditional Access policies so it's available in any tenant. The following events are currently evaluated:
 
 - User Account is deleted or disabled
 - Password for a user is changed or reset
 - Multifactor Authentication is enabled for the user
 - Administrator explicitly revokes all refresh tokens for a user
-- High user risk detected by Azure AD Identity Protection
+- High user risk detected by Microsoft Entra ID Protection
 
 This process enables the scenario where users lose access to organizational SharePoint Online files, email, calendar, or tasks, and Teams from Microsoft 365 client apps within minutes after a critical event. 
-
 
 ### Conditional Access policy evaluation
 
@@ -82,30 +81,23 @@ This process enables the scenario where users lose access to organizational file
 | **SharePoint Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
 | **Exchange Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
 
-> \* Token lifetimes for Office web apps are reduced to 1 hour when a Conditional Access policy is set.
-<!--
-END()
--->
-## Threat intelligence integration - Azure AD Identity Protection
+## Microsoft Entra Identity Protection
 
-<!--
-BEGIN([What is Azure Active Directory Identity Protection? - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection))
--->
 Identity Protection allows organizations to accomplish three key tasks:
 
--   [Automate the detection and remediation of identity-based risks](https://learn.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
--   [Investigate risks](https://learn.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) using data in the portal.
--   [Export risk detection data to other tools](https://learn.microsoft.com/azure/active-directory/identity-protection/howto-export-risk-data).
+-   [Automate the detection and remediation of identity-based risks](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
+-   [Investigate risks](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) using data in the portal.
+-   [Export risk detection data to other tools](/azure/active-directory/identity-protection/howto-export-risk-data).
 
 [![Diagram showing how Identity Protection conceptually works.](../media/identity-protection-overview.png)](../media/identity-protection-overview.png#lightbox)
 
-Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Azure Active Directory, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyses trillions of signals per day to identify and protect customers from threats.
+Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyses trillions of signals per day to identify and protect customers from threats.
 
 The signals generated by and fed to Identity Protection, can be further fed into tools like Conditional Access to make access decisions, or fed back to a security information and event management (SIEM) tool for further investigation.
 
 ### Detect risk
 
-Identity Protection detects [risks](https://learn.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks) of many types, including:
+Identity Protection detects [risks](/azure/active-directory/identity-protection/concept-identity-protection-risks) of many types, including:
 
 -   Anonymous IP address use
 -   Atypical travel
@@ -117,7 +109,7 @@ Identity Protection detects [risks](https://learn.microsoft.com/azure/active-di
 
 The risk signals can trigger remediation efforts such as requiring: perform multifactor authentication, reset their password using self-service password reset, or block access until an administrator takes action.
 
-More detail on these and other risks including how or when they're calculated can be found in the article, [What is risk](https://learn.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks).
+More detail on these and other risks including how or when they're calculated can be found in the article, [What is risk](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
 ### Investigate risk
 
@@ -127,25 +119,22 @@ Administrators can review detections and take manual action on them if needed. T
 -   Risky sign-ins
 -   Risk detections
 
-More information can be found in the article, [How To: Investigate risk](https://learn.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
+More information can be found in the article, [How To: Investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 #### Risk levels
 
 Identity Protection categorizes risk into tiers: low, medium, and high.
 
 Microsoft doesn't provide specific details about how risk is calculated. Each level of risk brings higher confidence that the user or sign-in is compromised. For example, something like one instance of unfamiliar sign-in properties for a user might not be as threatening as leaked credentials for another user.
-<!--
-END([What is Azure Active Directory Identity Protection? - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection))
--->
 
 > [!NOTE]
-> Risk based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
+> Risk-based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
 
-## Risk-based access policies
+## Risk-based conditional access policies
 
 Access control policies can be applied to protect organizations when a sign-in or user is detected to be at risk. Such policies are called **risk-based policies**. 
 
-Azure AD Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies apply if the policy conditions are satisfied.
+Microsoft Entra Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies apply if the policy conditions are satisfied.
 
 ![Diagram that shows a conceptual risk-based Conditional Access policy.](../media/risk-based-conditional-access-diagram.png)
 
@@ -175,3 +164,28 @@ Identity Protection analyzes signals about user accounts and calculates a risk s
 - Allow access but require a secure password change.
 
 A secure password change remediates the user risk and close the risky user event to prevent unnecessary noise for administrators.
+
+## Protected actions
+
+Protected actions in Microsoft Entra ID are permissions that have been assigned Conditional Access policies. When a user attempts to perform a protected action, they must first satisfy the Conditional Access policies assigned to the required permissions. For example, to allow administrators to update Conditional Access policies, you can require that they first satisfy the Phishing-resistant MFA policy.
+
+### Why use protected actions?
+
+You use protected actions when you want to add an additional layer of protection. Protected actions can be applied to permissions that require strong Conditional Access policy protection, independent of the role being used or how the user was given the permission. Because the policy enforcement occurs at the time the user attempts to perform the protected action and not during user sign-in or rule activation, users are prompted only when needed.
+
+### What policies are typically used with protected actions?
+
+We recommend using multifactor authentication on all accounts, especially accounts with privileged roles. Protected actions can be used to require additional security. Here are some common stronger Conditional Access policies.
+
+- Stronger MFA authentication strengths, such as [Passwordless MFA](/entra/identity/authentication/concept-authentication-strengths#built-in-authentication-strengths) or [Phishing-resistant MFA](/entra/identity/authentication/concept-authentication-strengths#built-in-authentication-strengths),  
+- Privileged access workstations, by using Conditional Access policy [device filters](/entra/identity/conditional-access/concept-condition-filters-for-devices).
+- Shorter session timeouts, by using Conditional Access [sign-in frequency session controls](/entra/identity/conditional-access/concept-session-lifetime#user-sign-in-frequency).
+
+### What permissions can be used with protected actions?
+
+Conditional Access policies can be applied to limited set of permissions. You can use protected actions in the following areas:
+
+- Conditional Access policy management
+- Cross-tenant access settings management
+- Custom rules that define network locations
+- Protected action management

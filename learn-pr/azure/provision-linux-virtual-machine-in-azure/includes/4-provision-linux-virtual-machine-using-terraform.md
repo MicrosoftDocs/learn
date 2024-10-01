@@ -1,20 +1,18 @@
 Terraform implements and controls a target infrastructure by using configuration files that describe the desired state of its components. The basic format of the files and their general syntax&mdash;expressed in the Hashicorp Configuration Language (HCL)&mdash;are the same regardless of the cloud choice. However, individual component descriptions are cloud-dependent, as determined by the corresponding Terraform provider.
 
-Although there are several Terraform providers that support Azure infrastructure management, AzureRM is of particular relevance. The AzureRM provider facilitates provisioning and configuration of common Azure IaaS resources, such as virtual machines, storage accounts, and networking interfaces. There are also additional non-cloud-specific providers that you might want to incorporate into your deployments. These include the random provider, which helps with avoiding resource naming conflicts by generating pseudo-random character strings, and the tls provider that simplifies management of asymmetric keys for securing Linux authentication.
+Although there are several Terraform providers that support Azure infrastructure management, AzureRM is of particular relevance. The AzureRM provider facilitates provisioning and configuring common Azure IaaS resources, such as virtual machines, storage accounts, and networking interfaces. There are also additional non-cloud-specific providers that you might want to incorporate into your deployments. These include the random provider, which helps with avoiding resource-naming conflicts by generating pseudo-random character strings; and the tls provider, which simplifies managing asymmetric keys for securing Linux authentication.
 
-Terraform is available as a single binary downloadable from the [Hashicorp website](https://developer.hashicorp.com/terraform/downloads). This binary implements the Terraform command-line interface (CLI), which you can then invoke from a shell session to initialize Terraform and process configuration files. You can use Terraform CLI from any of the shells that support Azure CLI.
+Terraform is available as a single binary you can download from the [Hashicorp website](https://developer.hashicorp.com/terraform/downloads). This binary implements the Terraform command-line interface (CLI), which you can then invoke from a shell session to initialize Terraform and process configuration files. You can use Terraform CLI from any of the shells that support Azure CLI.
 
 > [!NOTE]
-> 
-> When using Azure Cloud Shell, make sure you run the current version of Terraform by following the instructions provided in the Microsoft Learn article [Configure Terraform in Azure Cloud Shell with Bash](/azure/developer/terraform/get-started-cloud-shell-bash).
+> When using Azure Cloud Shell, make sure you run the current version of Terraform by following the instructions provided in [Configure Terraform in Azure Cloud Shell with Bash](/azure/developer/terraform/get-started-cloud-shell-bash).
 
 ## Deploy a Linux VM by using Terraform
 
-Terraform offers the ability to define, preview, and deploy resources to a provider-specific cloud infrastructure. The provisioning process begins with creating configuration files that use the HCL syntax, which enables you to designate the target cloud environment&mdash;such as Azure&mdash;and the resources that make up your cloud infrastructure. After all relevant configuration files are in place (typically within the same file system location), you can generate an execution plan that allows you to preview the resulting infrastructure changes before the actual deployment. This requires you to initialize Terraform to download the provider modules necessary to implement cloud resources. After you validate the changes, you apply the execution plan to deploy the infrastructure.
+Terraform lets you define, preview, and deploy resources to a provider-specific cloud infrastructure. The provisioning process begins with creating configuration files that use the HCL syntax, which allows you to designate the target cloud environment&mdash;such as Azure&mdash;and the resources that make up your cloud infrastructure. After all relevant configuration files are in place (typically within the same file-system location), you can generate an execution plan that allows you to preview the resulting infrastructure changes before the actual deployment. This requires you to initialize Terraform to download the provider modules necessary to implement cloud resources. After you validate the changes, you can apply the execution plan to deploy the infrastructure.
 
 > [!NOTE]
-> 
-> Generating an execution plan is optional, but we recommend you do so because it enables you to identify any impact from the planned deployment without affecting the target environment. When you deploy Azure resources interactively, Terraform supports Azure CLI authentication transparently by reusing your credentials to access the target Azure subscription.
+> Generating an execution plan is optional, but we recommend you do so because it allows you to identify any impact from the planned deployment without affecting the target environment. When you deploy Azure resources interactively, Terraform supports Azure CLI authentication transparently by reusing your credentials to access the target Azure subscription.
 
 The process of provisioning an Azure VM running Linux by using Terraform typically involves the following sequence of high-level steps:
 
@@ -30,10 +28,9 @@ To identify the suitable VM image and size, follow the steps described in Unit 4
 ### Create configuration files
 
 > [!NOTE]
-> 
-> The filenames that you choose for your Terraform files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose, and you should use ".tf" for the file extension.
+> The filenames that you choose for your Terraform files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose. You should use ".tf" for the file extension.
 
-To deploy a Linux VM by using Terraform, you begin by creating a directory that will host configuration files. Next, create a file named _providers.tf_ that enforces the Terraform version and designates the providers you'll rely on when defining the resources included in your deployment. This file should have the content displayed in the following code snippet:
+To deploy a Linux VM by using Terraform, you begin by creating a directory to host configuration files. Next, create a file named _providers.tf_ that enforces the Terraform version and designates the providers you'll rely on when defining the resources included in your deployment. This file should have the content displayed in the following code snippet:
 
 ```terraform
 terraform {
@@ -196,7 +193,7 @@ resource "azurerm_linux_virtual_machine" "lnx-tf-vm" {
 }
 ```
 
-In the same directory, create another file named _variables.tf_ using the following code, that assigns the value to the variables appearing in the _main.tf_ file:
+In the same directory, create another file named _variables.tf_ using the following code, which assigns the value to the variables appearing in the _main.tf_ file:
 
 ```terraform
 variable "resource_group_location" {
@@ -229,7 +226,7 @@ output "tls_private_key" {
 
 ### Initialize Terraform
 
-To initialize the Terraform deployment, from the shell prompt, run the following command:
+To initialize the Terraform deployment, run the following command from the shell prompt:
 
 ```bash
 terraform init
@@ -239,7 +236,7 @@ This command downloads the Azure modules necessary to provision and manage Azure
 
 ### Generate an execution plan
 
-After initialization, create an execution plan by running terraform plan. The command creates an execution plan, but doesn't run it. Instead, it determines what actions are necessary to create the resources defined in your configuration files. The optional -out parameter allows you to specify an output file for the plan, which you can reference during the actual deployment. Using this file ensures that the plan you review matches the exact deployment outcome. Use the following command to generate an execution plan:
+After initialization, create an execution plan by running terraform plan. The command creates an execution plan, but doesn't run it. Instead, it determines what actions are necessary to create the resources defined in your configuration files. The optional `-out` parameter allows you to specify an output file for the plan, which you can reference during the actual deployment. Using this file ensures that the plan you review matches the exact deployment outcome. Use the following command to generate an execution plan:
 
 ```bash
 terraform plan -out <terraform_plan>.tfplan
@@ -247,13 +244,13 @@ terraform plan -out <terraform_plan>.tfplan
 
 ### Initiate a deployment
 
-When you're ready to apply the execution plan to your Azure environment, run terraform apply, including the name of the file you generated in the previous step. You'll have another chance to review the expected outcome. Terraform will prompt you for confirmation to proceed, although you can eliminate the prompt by adding the -auto-approve switch. Use the following command to initiate the deployment:
+When you're ready to apply the execution plan to your Azure environment, run `terraform apply`, including the name of the file you generated in the previous step. You'll have another chance to review the expected outcome. Terraform prompts you for confirmation to proceed, although you can eliminate the prompt by adding the `-auto-approve` switch. Use the following command to initiate the deployment:
 
 ```bash
 terraform apply <terraform_plan>.tfplan
 ```
 
-The Azure VM will shortly begin running, typically within a couple of minutes. The terraform apply command output will include the list of outputs, but terraform will replace the value of tls_private_key with the \<sensitive> label:
+The Azure VM will shortly begin running, typically within a couple of minutes. The `terraform apply` command output includes the list of outputs, but terraform will replace the value of `tls_private_key` with the \<sensitive> label:
 
 ```output
 Apply complete! Resources: 12 added, 0 changed, 0 destroyed.

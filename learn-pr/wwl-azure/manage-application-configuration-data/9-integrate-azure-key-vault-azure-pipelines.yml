@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.integrate-azure-key-vault-azure-pipelines
+title: Integrate Azure Key Vault with Azure Pipelines
+metadata:
+  title: Integrate Azure Key Vault with Azure Pipelines
+  description: "Integrate Azure Key Vault with Azure Pipelines"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-integrate-azure-key-vault-azure-pipelines.md)]

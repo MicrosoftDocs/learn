@@ -5,10 +5,9 @@ metadata:
   title: Load and run model predictions
   description: In this section, we look at how to persist model state with saving, loading, and running model predictions.
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.author: sgilley
+  ms.date: 08/22/2024
+  ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - build-2023

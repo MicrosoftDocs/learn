@@ -25,7 +25,7 @@ The first thing you decide to do is remove all the pages from the flyout and add
     </Shell>
     ```
 
-1. Next add in a `ShellContent` to the `Tab`. The content will be the `MoonPhasePage`.
+1. Next, add a `ShellContent` to the `Tab` and set its content to the `MoonPhasePage`.
 
     ```xaml
     <TabBar>
@@ -41,7 +41,7 @@ The first thing you decide to do is remove all the pages from the flyout and add
     <Tab Title="Moon Phase" Icon="moon.png">
     ```
 
-1. Add in another `Tab` for the `SunrisePage`. Make its `Title` equal **sunrise** and `Icon` equal **sun.png**. The finished XAML will look like this:
+1. Add in another `Tab` for the `SunrisePage`. Set its `Title` to **sunrise** and its `Icon` to **sun.png**. The finished XAML looks like this:
 
     ```xaml
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -50,14 +50,8 @@ The first thing you decide to do is remove all the pages from the flyout and add
         xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:local="clr-namespace:Astronomy.Pages"
-        FlyoutIcon="moon.png">
-    
-        <Shell.FlyoutHeader>
-            <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
-                <Image Source="moon.png"/>
-            </Grid>
-        </Shell.FlyoutHeader>
-        
+        FlyoutIcon="moon.png">  
+       
         <TabBar>
             <Tab Title="Moon Phase" Icon="moon.png">
                 <ShellContent ContentTemplate="{DataTemplate local:MoonPhasePage}" />
@@ -75,9 +69,10 @@ The first thing you decide to do is remove all the pages from the flyout and add
 
 ## Combine tab pages with a flyout
 
-You decide it makes sense to have the moon phase and sunrise pages in the same tab page. It also makes sense to keep the about page separate. So you decide to add the flyout back in. The first flyout item will display the tab page, and the second the about page.
+You decide it makes sense to have the moon phase and sunrise pages in the same tab page. It also makes sense to keep the about page separate. So you decide to add the flyout back in. The first flyout item displays the tab page, and the second the about page.
 
-1. Delete the `TabBar` and all of its children you just created.
+1. Delete the `TabBar` and all of the child items contained in it.
+
 1. In its place, add in a `<FlyoutItem>`. Set its `Title` property to **Astronomy** and its icon to **moon.png**.
 
     ```xaml
@@ -86,7 +81,7 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     </FlyoutItem>
     ```
 
-1. Within the `<FlyoutItem>` add a `<ShellContent>` that points to the `MoonPhasePage`. Set its `Title` property to **Moon Phase** and `Icon` property to **moon.png**.
+1. Within the `<FlyoutItem>`, add a `<ShellContent>` that points to the `MoonPhasePage`. Set its `Title` property to **Moon Phase** and `Icon` property to **moon.png**.
 
     ```xaml
     <FlyoutItem Title="Astronomy" Icon="moon.png">
@@ -95,7 +90,7 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     </FlyoutItem>
     ```
 
-1. Within the same `<FlyoutItem>` add another `<ShellContent>` to point to the `SunrisePage`. Set its `Title` property to **Sunrise** and `Icon` property to **sun.png**.
+1. Within the same `<FlyoutItem>`, add another `<ShellContent>` to point to the `SunrisePage`. Set its `Title` property to **Sunrise** and `Icon` property to **sun.png**.
 
     ```xaml
     <FlyoutItem Title="Astronomy" Icon="moon.png">
@@ -107,10 +102,10 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     </FlyoutItem>
     ```
 
-    Tapping on this flyout item will now display a tab page with two tabs.
+    Now, tapping on this flyout item displays a tab page with two tabs.
 
 1. To create a new flyout item that points to the `AboutPage`, add a new `<FlyoutItem>`. Set its `Title` property to **About** and `Icon` property to **question.png**.
-1. Within that `<FlyoutItem>` add a `<ShellContent>` that points to the `AboutPage`.
+1. Within that `<FlyoutItem>`, add a `<ShellContent>` that points to the `AboutPage`.
 
     ```xaml
     <FlyoutItem Title="About" Icon="question.png">
@@ -119,11 +114,11 @@ You decide it makes sense to have the moon phase and sunrise pages in the same t
     </FlyoutItem>
     ```
 
-1. Run the app again. You should see two items in the flyout. The first one will open up a tab page that contains the `MoonPhasePage` and `SunrisePage`. The second displays the `AboutPage` by itself.
+1. Run the app again. You should see two items in the flyout. The first one opens up a tab page that contains the `MoonPhasePage` and `SunrisePage`. The second displays the `AboutPage` by itself.
 
 ## Need help?
 
-The final XAML for **AppShell.xaml** should look like the following:
+The final XAML code for **AppShell.xaml** should look like this example:
 
 ```xaml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -141,7 +136,6 @@ The final XAML for **AppShell.xaml** should look like the following:
         </Grid>
     </Shell.FlyoutHeader>-->
 
-
     <FlyoutItem Title="Astronomy" Icon="moon.png">
         <ShellContent Title="Moon Phase" Icon="moon.png"
             ContentTemplate="{DataTemplate local:MoonPhasePage}"/>
@@ -154,6 +148,5 @@ The final XAML for **AppShell.xaml** should look like the following:
         <ShellContent
             ContentTemplate="{DataTemplate local:AboutPage}"/>
     </FlyoutItem>
-
 </Shell>
 ```

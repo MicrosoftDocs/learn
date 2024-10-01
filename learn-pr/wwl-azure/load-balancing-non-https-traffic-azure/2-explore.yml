@@ -4,11 +4,10 @@ title: Explore load balancing
 metadata:
   title: Explore load balancing
   description: "Explore load balancing"
-  ms.date: 08/21/2023
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.service: load-balancer
+  ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 6

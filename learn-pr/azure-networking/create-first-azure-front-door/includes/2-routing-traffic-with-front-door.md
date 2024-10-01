@@ -1,4 +1,4 @@
-Front Door manages the delivery of web application contents using the Microsoft's global edge network. With over 150 global and local edge locations distributed around the world, client applications are brought closer to end users. Front Door routes traffic to origins in an origin group based on the URL of a request. Origins can be web servers or contents hosted on an Azure virtual machine, App Services, Storage accounts, or on-premises. 
+Front Door manages the delivery of web application contents using the Microsoft's global edge network. With over 192 global and local edge locations distributed around the world, client applications are brought closer to end users. Front Door routes traffic to origins in an origin group based on the URL of a request. Origins can be web servers or contents hosted on an Azure virtual machine, App Services, Storage accounts, or on-premises. 
 
 :::image type="content" source="../media/2-overview.png" alt-text="Diagram of Azure Front Door traffic flow.":::
 
@@ -30,4 +30,4 @@ Front Door selects an origin from an origin group that can best respond to the c
 
 ### Routing for motor vehicle department
 
-Let's revisit our scenario of the motor vehicle department. Front Door can be used to address the problem of a possible regional failure and at the same time improve the overall experience for their end users globally. With route matching, users are directed to the correct motor vehicle website with the lowest latency when requesting resources from the origin. Caching is also enabled to help accelerate the response time for frequently requested content by users. With 150 edge locations around the world, users can access the motor vehicle website from anywhere without fear of availability.
+Let's revisit our scenario of the motor vehicle department. Front Door can be used to address the problem of a possible regional failure and at the same time improve the overall experience for their end users globally. With route matching, users are directed to the correct motor vehicle website with the lowest latency when requesting resources from the origin. Caching is also enabled to help accelerate the response time for frequently requested content by users. With 192 edge locations around the world, users can access the motor vehicle website from anywhere without fear of availability.

@@ -4,11 +4,10 @@ title: Considerations for managing your lakehouse
 metadata:
   title: Considerations for managing your lakehouse
   description: "Considerations for managing your lakehouse"
-  ms.date: 08/24/2023
+  ms.date: 01/31/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.author: anrudduc
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-secure-govern.md)]

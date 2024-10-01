@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/22/2019
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Architect compute infrastructure in Azure
 summary: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
 prerequisites: |
@@ -23,7 +22,7 @@ products:
 - azure
 - azure-virtual-machines
 subjects:
-- serverless-compute
+- serverless-computing
 modules:
 - learn.manage-vms-with-azure-cli
 - learn.choose-compute-provisioning

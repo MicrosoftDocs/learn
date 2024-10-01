@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-introduction-to-azure.summary
-title: |
-  Summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summarize the module."
   ms.date: 9/11/2023
   author: v-regandowner
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

@@ -43,7 +43,7 @@ To manage Azure resources by using Windows PowerShell, you must first install th
 > [!NOTE]
 > Deploying and managing Azure resources and services might require using other modules.
 
-After you install the Azure PowerShell modules, you can connect the Azure PowerShell session to the Azure subscriptions that you want to manage. To establish this connection, you first need to authenticate by using an account that exists in the Azure AD tenant that is associated with the target subscription.
+After you install the Azure PowerShell modules, you can connect the Azure PowerShell session to the Azure subscriptions that you want to manage. To establish this connection, you first need to authenticate by using an account that exists in the Microsoft Entra tenant that is associated with the target subscription.
 
 > [!TIP]
 > When managing Azure Resource Manager resources, you authenticate by running the `Connect-AzAccount` cmdlet.
@@ -57,7 +57,7 @@ You can use Azure PowerShell directly from Azure Cloud Shell in the Azure portal
 
 Azure Command-Line Interface (Azure CLI) provides a command-line, shell-based interface that you can use to interact with your Azure subscriptions. Azure CLI offers many of the same features as the Azure PowerShell modules, although the functionality might differ. Azure CLI is available on Windows, Linux, and macOS. You can install Azure CLI directly on Windows or within a Windows Subsystem for Linux.
 
-After you install the Azure CLI, you can connect to the Azure subscriptions that you want to manage. Similar to the Azure PowerShell modules, to establish such a connection you must first authenticate by using either a Microsoft account or a work or school account that exists in the Azure AD tenant associated with the target subscription. To initiate the authentication process, run the following command from a command prompt or Windows PowerShell command prompt.
+After you install the Azure CLI, you can connect to the Azure subscriptions that you want to manage. Similar to the Azure PowerShell modules, to establish such a connection you must first authenticate by using either a Microsoft account or a work or school account that exists in the Microsoft Entra tenant associated with the target subscription. To initiate the authentication process, run the following command from a command prompt or Windows PowerShell command prompt.
 
 ```AzureCLI
 az login

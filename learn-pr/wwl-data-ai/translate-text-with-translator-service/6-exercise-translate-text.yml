@@ -3,15 +3,15 @@ uid: learn.wwl.translate-text-with-translator-service.exercise
 title: Exercise - Translate text with the Azure AI Translator service
 metadata:
   title: Exercise - Translate text with the Azure AI Translator service
-  description: "Exercise - Translate text with the Azure AI Translator service"
-  ms.date: 08/31/2023
+  description: Exercise - Translate text with the Azure AI Translator service
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-translator
-azureSandbox: false
-labId: 99992
-labModal: true
+  ms.date: 12/05/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 30
+labId: 152401
+labModal: true
 content: |
   [!include[](includes/6-exercise-translate-text.md)]

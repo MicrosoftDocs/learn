@@ -6,8 +6,8 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.service: cosmos-db
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Build multi-item transactions with the Azure Cosmos DB for NoSQL
 summary: Author stored procedures using JavaScript in Azure Cosmos DB for NoSQL.

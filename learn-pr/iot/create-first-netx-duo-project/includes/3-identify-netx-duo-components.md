@@ -1,1 +1,0 @@
-The Hello World project will introduce you to some basic concepts including the fundamental structure of a NetX Duo project, NetX Duo initialization, the creation of packet pools, the use of address resolution protocol (ARP), internet control message protocol (ICMP), and ping requests.

@@ -1,4 +1,4 @@
-Modern deployment methods take a new approach to provisioning devices. One of the key benefits of Windows 11 and later is a feature called Windows Autopilot. Windows Autopilot is a cloud-based deployment method. With Autopilot, you can set up and preconfigure new and existing Windows 11 or later devices. Users in your organization use a new operating system out-of-the-box experience (OOBE) to configure their devices without needing a Windows image.
+Modern deployment methods take a new approach to provisioning devices. One of the key benefits of Windows 10 and later is a feature called Windows Autopilot. Windows Autopilot is a cloud-based deployment method. With Autopilot, you can set up and preconfigure new and existing Windows 10 or later devices. Users in your organization use a new operating system out-of-the-box experience (OOBE) to configure their devices without needing a Windows image.
 
 Autopilot offers the following advantages over on-premises deployment methods:
 
@@ -8,9 +8,9 @@ Autopilot offers the following advantages over on-premises deployment methods:
  -  Configuring Autopilot deployments are relatively simple compared to traditional image creation and management.
  -  With no images to deploy, heavy bandwidth consumption is no longer a concern.
 
-Windows Autopilot is cloud-driven and based around Microsoft Entra ID P1 or P2 and Microsoft Intune. Using Windows Autopilot, you can:
+Windows Autopilot is cloud-driven and based around Azure AD Premium and Microsoft Intune. Using Windows Autopilot, you can:
 
- -  Join devices to Microsoft Entra ID automatically.
+ -  Join devices to Azure AD automatically.
  -  Auto enroll your users' devices into MDM services.
  -  Restrict the creation of the Administrator account.
  -  Customize the OOBE content specifically to your organization.
@@ -25,20 +25,20 @@ From the user's standpoint, turning on the device initiates an Out-of-Box Experi
 
 ### Refresh existing devices
 
-Over time, scenarios arise where it may be beneficial to refresh the device. Performance may be impacted as more apps are installed over time, and it can lead to intermittent issues or challenges that are not easily resolved. IT might elect to perform a wipe-and-load, and as with new deployments, Autopilot can be used instead of traditional methods. Similarly, if a device is reassigned to another user, Autopilot can be used to reset the device with a new OOBE as if the device was wiped and reimaged.
+Over time, scenarios arise where it might be beneficial to refresh the device. Performance might be impacted as more apps are installed over time, and it can lead to intermittent issues or challenges that are not easily resolved. IT might elect to perform a wipe-and-load, and as with new deployments, Autopilot can be used instead of traditional methods. Similarly, if a device is reassigned to another user, Autopilot can be used to reset the device with a new OOBE as if the device was wiped and reimaged.
 
-Windows 11 and later still supports traditional deployment. Many organizations use image-based deployment to upgrade their computers to Windows 11, although in-place upgrade is the recommended upgrade path when upgrading from Windows 8.1. Once a device is upgraded to Windows 11, organizations have the choice as to whether they continue to use image-based deployment or adopt modern deployment methods such as Autopilot or, in the case of upgrading from Windows 11, using Feature update.
+Windows 10 and later still supports traditional deployment. Many organizations use image-based deployment to upgrade their computers to Windows 11, although in-place upgrade is the recommended upgrade path when upgrading from Windows 8.1. Once a device is upgraded to Windows 11, organizations have the choice as to whether they continue to use image-based deployment or adopt modern deployment methods such as Autopilot or, in the case of upgrading from Windows 11, using Feature update.
 
 ### Autopilot compared to traditional methods
 
 The following table compares traditional and modern Windows 11 deployment.
 
-|                               | Traditional deployment                                                         | Modern deployment |
+| -- | Traditional deployment                                                         | Modern deployment |
 |-------------------------------|--------------------------------------------------------------------------------|-------------------|
-| Deploys Windows 11 images   | Yes                                                                            | No                |
-| Can be used with any preinstalled operating system  | Yes                                                                            | No                |
-| Requires a previous Windows 11 installation | No                                                                             | Yes               |
-| Uses an on-premises infrastructure | Yes                                                                            | No                |
+| Deploys Windows 11 images     | Yes                                                                            | No                |
+| Can be used with any preinstalled operating system| Yes                                                        | No                |
+| Requires a previous Windows 11 installation | No                                                               | Yes               |
+| Uses an on-premises infrastructure | Yes                                                                       | No                |
 | Tools for preparing the deployment  | Windows ADK, Windows Deployment Services, Microsoft Deployment Toolkit (MDT), and Configuration Manager | Windows Configuration Designer and Windows Autopilot |
 
 

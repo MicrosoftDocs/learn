@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-introduction-to-azure.introduction
-title: |
-  Introduction
+title: Introduction
 metadata:
-  title: |
-    Introduction
+  title: Introduction
   description: "Learn about Azure and how it can help you as a student."
   ms.date: 9/11/2023
   author: v-regandowner
   ms.author: chnoring
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

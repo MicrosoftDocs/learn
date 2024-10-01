@@ -5,12 +5,11 @@ metadata:
   unitType: Exercise
   title: "Exercise - Create a Blazor event handler for onclick events"
   description: "Handle the onclick event for an HTML form control using C#"
-  ms.date: 08/31/2021
+  ms.date: 11/09/2023
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
 durationInMinutes: 5

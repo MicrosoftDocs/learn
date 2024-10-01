@@ -7,10 +7,9 @@ metadata:
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh 
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: azure-vmware-solution
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-create-firewall.md)]

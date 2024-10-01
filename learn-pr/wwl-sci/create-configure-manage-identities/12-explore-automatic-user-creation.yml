@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.explore-automatic-user-creation
+title: Explore automatic user creation
+metadata:
+  title: Explore automatic user creation
+  description: "Explore automatic user creation"
+  ms.date: 01/31/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-explore-automatic-user-creation.md)]

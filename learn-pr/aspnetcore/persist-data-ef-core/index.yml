@@ -6,10 +6,10 @@ metadata:
   ms.date: 10/04/2023
   author: camsoper
   ms.author: casoper
-  ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: entity-framework
-  ms.technology: entity-framework-core
+  manager: coxford
+  ms.topic: module
+  ms.service: entity-framework
+  ms.subservice: entity-framework-core
 title: Persist and retrieve relational data by using Entity Framework Core
 summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
 abstract: |
@@ -24,7 +24,7 @@ prerequisites: |
   - Experience writing C# at the beginner level
   - A basic understanding of relational databases
   - Visual Studio Code
-  - .NET 7.0 SDK
+  - .NET 8.0 SDK
   - Git command-line client
 iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
@@ -34,8 +34,6 @@ roles:
 products:
 - aspnet-core
 - ef-core
-subjects:
-- development-tools
 units:
 - learn.persist-data-ef-core.introduction
 - learn.persist-data-ef-core.understanding-ef-core

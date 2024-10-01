@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  author: GitHubber17
-  ms.author: chnoring
-  ms.date: 06/01/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
+  ms.topic: unit
   ms.custom:
     - team=nextgen
     - team=cloud_advocates

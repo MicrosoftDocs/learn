@@ -7,7 +7,7 @@ metadata:
   ms.date: 05/05/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
+  ms.topic: module
   showCreativeCommonsFooter: true
 title: Community collaboration for accessible design
 summary: Learn how to collaborate with the disability community in creating accessible gaming experiences. Identify methods to build connections with this community. Implement best practice etiquette during these collaboration sessions.
@@ -30,7 +30,7 @@ products:
 - xbox
 subjects:
 - accessibility
-- gaming-innovation
+- game-development
 units:
 - learn.community-collaboration.introduction
 - learn.community-collaboration.nothing-about-us-without-us

@@ -4,7 +4,7 @@ This exercise is a continuation of the previous exercise. Either use your existi
 
 ## Verify page-level resources
 
-Let's verify that resources defined on one page aren't available on another page. Your app won't run correctly at the end of this section. However, you'll fix it in the next section.
+Let's verify that resources defined on one page aren't available on another page. At the end of this section, your app doesn't run correctly. However, you fix it in the next section.
 
 1. In the **TipCalculator** project, open the **CustomTipPage.xaml** file.
 
@@ -16,7 +16,7 @@ Let's verify that resources defined on one page aren't available on another page
 
 1. Run the app.
 
-1. Select **Use Custom Calculator** to display the **CustomTipPage** page. Look at the Bill label. The font size should be smaller than the other labels and it isn't bold. This is because the page hasn't found a resource named **infoLabelStyle** (it's in the resource dictionary for a different page), so the default values are used for the font size and font attributes.
+1. Select **Use Custom Calculator** to display the **CustomTipPage** page. Look at the Bill label. The font size should be smaller than the other labels and it isn't bold. This behavior is because the page didn't find a resource named **infoLabelStyle** (it's in the resource dictionary for a different page), so the default values are used for the font size and font attributes.
 
     :::image type="content" source="../media/9-custom-tip-page.png" alt-text="A screenshot of the CustomTipPage page. The Bill label isn't styled correctly.":::
 

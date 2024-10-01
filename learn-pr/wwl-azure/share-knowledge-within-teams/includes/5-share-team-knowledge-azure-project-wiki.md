@@ -1,7 +1,4 @@
-
 **Estimated time:** 45 minutes.
-
-**Lab files:** none.
 
 ## Scenario
 
@@ -29,4 +26,4 @@ During this lab, you'll complete the following exercises:
  -  Exercise 2: Create and manage a project wiki.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
-](https://aka.ms/az-400-share-team-knowledge-using-azure-projectWikis)
+](https://go.microsoft.com/fwlink/?linkid=2270117)

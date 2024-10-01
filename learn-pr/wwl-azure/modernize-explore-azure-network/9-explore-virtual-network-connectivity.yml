@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.explore-virtual-network-connectivity
+title: Explore virtual network connectivity
+metadata:
+  title: Explore virtual network connectivity
+  description: "Explore virtual network connectivity"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-explore-virtual-network-connectivity.md)]

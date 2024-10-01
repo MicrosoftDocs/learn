@@ -6,9 +6,8 @@ metadata:
   description: Introduction
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 03/04/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/25/2023
+  ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - devx-track-java

@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 03/03/2022
-  author: MGoedtel
-  ms.author: magoedte
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 06/28/2024
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

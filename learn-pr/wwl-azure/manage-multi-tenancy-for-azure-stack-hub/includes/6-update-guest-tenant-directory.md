@@ -11,4 +11,4 @@ Update-AzsHomeDirectoryTenant -AdminResourceManagerEndpoint $adminResourceManage
 
 ```
 
-The script prompts you for administrative credentials on the Azure AD tenant, and takes several minutes to run. The alert should clear after you run the cmdlet.
+The script prompts you for administrative credentials on the Microsoft Entra tenant, and takes several minutes to run. The alert should clear after you run the cmdlet.

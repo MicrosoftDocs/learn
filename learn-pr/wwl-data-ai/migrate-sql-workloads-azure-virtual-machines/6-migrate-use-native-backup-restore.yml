@@ -4,11 +4,10 @@ title: Migrate databases using native backup and restore
 metadata:
   title: Migrate databases using native backup and restore
   description: "Learn how to migrate databases using the native backup and restore method."
-  ms.date: 07/28/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.describe-communication-compliance
+title: Describe Communication Compliance
+metadata:
+  title: Describe Communication Compliance
+  description: "Describe Communication Compliance."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-describe-communication-compliance.md)]

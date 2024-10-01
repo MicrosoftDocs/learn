@@ -3,12 +3,13 @@ uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.examin
 title: Examine diagnostic tools
 metadata:
   title: Examine diagnostic tools
-  description: "Examine diagnostic tools"
-  ms.date: 04/20/2023
+  description: "Use diagnostic tools to return potentially critical technical issues."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/8-examine-diagnostic-tools.md)]

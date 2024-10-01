@@ -3,12 +3,11 @@ uid: learn.azure.explore-fundamentals-kql.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "A knowledge check about Kusto Query Language (KQL) and how it's used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
-  ms.date: 3/26/2023
+  description: "A knowledge check about how Kusto Query Language (KQL) is used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
+  ms.date: 11/02/2023
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -28,7 +27,7 @@ quiz:
     choices:
     - content: "A KQL query is stated in plain text, using a data-flow model designed to make the syntax easy to author and automate."
       isCorrect: true
-      explanation: "KQL is organized around the way data is processed. Beginning with the data source, each introduces new logic, conditions, and filters."
+      explanation: "KQL is organized in the same way that data is processed. Beginning with the data source, each statement introduces new logic, conditions, and filters."
     - content: "KQL queries are case-insensitive, except for operators."
       isCorrect: false
       explanation: "KQL is always case-sensitive."
@@ -39,7 +38,7 @@ quiz:
     choices:
     - content: "Save them as files and import them as needed."
       isCorrect: false
-      explanation: "While you can technically save KQL queries as files on your computer, this method is not efficient and can lead to errors."
+      explanation: "While you can technically save KQL queries as files on your computer, this method isn't efficient and can lead to errors."
     - content: "Save them as functions."
       isCorrect: true
       explanation: "You can use a function as a standalone saved query or as a command as part of another query. Use functions to simplify complex queries, reuse common query patterns, and improve query readability."

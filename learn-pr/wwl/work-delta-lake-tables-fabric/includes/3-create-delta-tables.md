@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 When you create a table in a Microsoft Fabric lakehouse, a delta table is defined in the metastore for the lakehouse and the data for the table is stored in the underlying Parquet files for the table.
 
 With most interactive tools in the Microsoft Fabric environment, the details of mapping the table definition in the metastore to the underlying files are abstracted. However, when working with Apache Spark in a lakehouse, you have greater control of the creation and management of delta tables.
@@ -18,7 +14,7 @@ df = spark.read.load('Files/mydata.csv', format='csv', header=True)
 df.write.format("delta").saveAsTable("mytable")
 ```
 
-The code specifies that the table should be saved in delta format with a specified table name. The data for the table is saved in Parquet files (regardless of the format of the source file you loaded into the dataframe) in the **Tables** storage area in the lakehouse, along with a **_delta_log** folder containing the transaction logs for the table. The table will be listed in the **Tables** folder for the lakehouse in the **Data explorer** pane.
+The code specifies that the table should be saved in delta format with a specified table name. The data for the table is saved in Parquet files (regardless of the format of the source file you loaded into the dataframe) in the **Tables** storage area in the lakehouse, along with a **_delta_log** folder containing the transaction logs for the table. The table is listed in the **Tables** folder for the lakehouse in the **Data explorer** pane.
 
 ## *Managed* vs *external* tables
 
@@ -38,7 +34,7 @@ You can also specify a fully qualified path for a storage location, like this:
 df.write.format("delta").saveAsTable("myexternaltable", path="abfss://my_store_url..../myexternaltable")
 ```
 
-Deleting an external table from the lakehouse metastore <u>does not</u> delete the associated data files.
+Deleting an external table from the lakehouse metastore <u>doesn't</u> delete the associated data files.
 
 ## Creating table metadata
 
@@ -100,7 +96,7 @@ delta_path = "Files/mydatatable"
 df.write.format("delta").save(delta_path)
 ```
 
-After saving the delta file, the path location you specified includes Parquet files containing the data and a **_delta_log** folder containing the transaction logs for the data. Any modifications made to the data through the delta lake API or in an external table that is subsequently created on the folder will be recorded in the transaction logs.
+Delta files are saved in Parquet format in the specified path, and include a **_delta_log** folder containing transaction log files. Transaction logs record any changes in the data, such as updates made to external tables or through the delta lake API. 
 
 You can replace the contents of an existing folder with the data in a dataframe by using the **overwrite** mode, as shown here:
 

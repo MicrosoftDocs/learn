@@ -1,32 +1,30 @@
-The decoupled design of microservices combined with the atomicity of containers makes it possible to scale out apps, respond to increased demand by deploying more container instances, and to scale back if demand is decreasing.
+The decoupled design of microservices combined with the atomicity of containers makes it possible to scale out apps that respond to demand. In complex solutions, like the drone-tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
-In complex solutions, like the drone-tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
-
-Before looking at what Kubernetes is, here's a summary of a few concepts that are key to containerized workloads.
+Before looking at what's in Kubernetes, there are two concepts that you should understand first, container management and orchestrators.
 
 ## What is container management?
 
 Container management is the process of organizing, adding, removing, or updating a significant number of containers.
 
-The drone-tracking app consists of multiple microservices responsible for tasks like caching, queuing, or data processing. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from one another.
+The drone-tracking app consists of multiple microservices responsible for tasks like caching, queuing, or data processing. Each of these services is hosted in a container that's deployed, updated, and scaled independently from one another.
 
 :::image type="content" source="../media/2-container.png" alt-text="Diagram of a server or application replicated as containers for cloud deployment." border="false":::
 
-For example, with the drone-tracking app's website, you find that at specific times during the day, you need more instances of the site's caching service to keep up performance, so you add more caching service container instances.
+For example, with the drone-tracking app's website, you find during specific times of the day, you need more instances of the site's caching service to maintain performance, so you add more caching service container instances.
 
-Now, assume that you've increased the number of caching instances and need to roll out a new version of the microservice. You'll have to make sure to update *all* the active containers.
+Next, assume that you've increased the number of caching instances and need to roll out a new version of the microservice. You need to update *all* the active containers to use the new version.
 
-Container management helps you with these otherwise manual tasks.
+Container management helps you with these manual repetitive tasks.
 
-## What is container orchestration?
+## What is a container orchestrator?
 
-A container orchestrator is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed app, or it can ensure all deployed container instances get updated if a new version of a service is released.
+A container orchestrator is a system that automatically deploys and manages containerized apps. As part of management, the orchestrator handles scaling dynamic changes in the environment to increase or decrease the number of deployed instances of the app. It also ensures all deployed container instances are updated when a new version of a service is released.
 
-:::image type="content" source="../media/2-tasks-of-orchestrator.svg" alt-text="Diagram showing how number of deployed container instances is automatically increased if demand rises and how an orchestrator can ensure all deployed instances are updated with new software versions." border="false":::
+:::image type="content" source="../media/2-tasks-of-orchestrator.svg" alt-text="Diagram showing how number of deployed container instances is automatically increased if demand rises and how an orchestrator ensures all deployed instances are updated with the latest software version." border="false":::
 
 ## Define Kubernetes
 
-Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container-management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for your management and orchestration of containerized workloads. Kubernetes simplifies complex container-management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
 
 :::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Diagram of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
 
@@ -71,7 +69,7 @@ However, it's important to understand that Kubernetes isn't a single installed a
 
 - You're responsible for maintaining your Kubernetes environment. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
-Cloud services such Azure Kubernetes Service (AKS) reduce these challenges by providing a hosted Kubernetes environment. These services also simplify deploying and managing containerized apps in Azure. With AKS, you get the benefits of open-source Kubernetes without the complexity or operational overhead of running your own custom Kubernetes cluster.
+Cloud services such as Azure Kubernetes Service (AKS) reduce these challenges by providing a hosted Kubernetes environment. These services also simplify deploying and managing containerized apps in Azure. With AKS, you get the benefits of open-source Kubernetes without the complexity or operational overhead of running your own custom Kubernetes cluster.
 
 > [!NOTE]
 > Kubernetes is sometimes abbreviated to *K8s*. The 8 represents the eight characters between the K and the s of the word K[*ubernete*]s.

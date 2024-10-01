@@ -3,14 +3,14 @@ Intune standalone now supports Win32 app management capabilities. While there ar
 In order to deploy Win32 apps, the following criteria must be met:
 
  -  Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
- -  Devices must be joined to Azure AD and auto enrolled.
- -  Windows application size has a maximum of 8 GB per app.
+ -  Devices must be joined to Microsoft Entra ID and auto enrolled.
+ -  Windows application size has a maximum of 30 GB per app.
 
 Some features worth noting include:
 
  -  Both 32-bit and 64-bit apps are supported.
  -  Dependencies of other apps and install requirements can be defined.
- -  The Intune Management Extension supports Azure AD joined, hybrid domain joined, group policy enrolled devices are supported.
+ -  The Intune Management Extension supports Microsoft Entra joined, hybrid domain joined, group policy enrolled devices are supported.
 
 Before the Win32 app can be deployed with Intune, it must be prepped. The following chart illustrates the steps for preparing the app.
 

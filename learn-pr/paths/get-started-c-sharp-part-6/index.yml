@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/17/2023
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Debug C# console applications (Get started with C#, Part 6)
 prerequisites: |
   - An installation of Visual Studio Code that's configured for C# application development.
@@ -60,8 +59,6 @@ roles:
 products:
 - dotnet
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
 - learn.wwl.implement-visual-studio-code-debugging-tools

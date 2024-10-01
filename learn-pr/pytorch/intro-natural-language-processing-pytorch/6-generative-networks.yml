@@ -5,11 +5,10 @@ metadata:
   title: Generate text with recurrent networks
   description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
-  ms.custom: team=nextgen
+  ms.author: chnoring
+  ms.date: 07/30/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/6-generative-networks.ipynb
@@ -22,7 +21,7 @@ quiz:
         - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
           isCorrect: true
           explanation: "This is correct."
-        - content: "It is trained by a recurrent process"
+        - content: "It's trained by a recurrent process"
           isCorrect: false
           explanation: "Recurrent neural network is trained in the same manner as any other neural network"
         - content: "It consists of layers which include other subnetworks"

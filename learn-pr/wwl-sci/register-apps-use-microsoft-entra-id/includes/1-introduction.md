@@ -1,4 +1,4 @@
-Application registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications are used. This way you can confirm the user has access to the app and that the app has access to any needed resources. You ensure the security and privacy of users, apps, and your data.
+Application registration in Microsoft Entra ID is the process of ensuring that the identity system is aware of what applications are used. This way you can confirm the user has access to the app and that the app has access to any needed resources. You ensure the security and privacy of users, apps, and your data.
 
 ## Scenario
 
@@ -6,10 +6,10 @@ Imagine you're an application developer who wants to create an application that 
 
 ## Learning objectives
 
- -  Benefits of registering an app
- -  Single-tenant versus multitenant apps
- -  What happens when an app is registered
- -  Relationship between application objects and service principals<br>
+ -  Benefits of registering an app.
+ -  Single-tenant versus multitenant apps.
+ -  What happens when an app is registered.
+ -  Relationship between application objects and service principals.<br>
 
 ## Goals
 

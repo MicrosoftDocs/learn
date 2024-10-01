@@ -4,11 +4,10 @@ title: Exercise - Control the network traffic to and from the web application
 metadata:
   title: Exercise - Control the network traffic to and from the web application
   description: "Exercise - Control the network traffic to and from the web application"
-  ms.date: 06/13/2023
+  ms.date: 03/08/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-security-groups.md)]

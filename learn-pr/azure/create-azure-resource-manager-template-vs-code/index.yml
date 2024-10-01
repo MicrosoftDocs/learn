@@ -3,10 +3,11 @@ uid: learn.azure.create-resource-manager-template-vs-code
 metadata:
   title: Deploy Azure infrastructure by using JSON ARM templates
   description: Write JSON Azure Resource Manager templates by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
-  ms.date: 09/06/2023
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
+  manager: jasongroce
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module-standard-task-based
   ms.service: azure-resource-manager
 title: Deploy Azure infrastructure by using JSON ARM templates
 summary: Write JSON Azure Resource Manager templates (ARM templates) by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.

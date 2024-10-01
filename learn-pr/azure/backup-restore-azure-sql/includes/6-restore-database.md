@@ -15,7 +15,7 @@ You can create the new database on the same server where Azure SQL Database took
 
 ## How restore works
 
-To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose.
+To complete a restore, Azure restores the database from the storage account to the Azure SQL Database logical server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose.
 
 The length of this process varies widely. It depends on the database size, the transaction logs, network bandwidth, and the number of concurrent restore operations. Most restore operations finish in less than 12 hours.
 

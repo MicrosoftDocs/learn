@@ -23,8 +23,4 @@ Module 4 Tips and Tricks
 
 Module 4 Demo
 
-- Click-through demo: [Connected field service](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-FS-M2-CFS/index.html)
-
-Module 4 Labs
-
-- [Create and manage cases](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP04_M01_Lab1_Create_and_manage_Cases.md)
+- Click-through demo: [Connected field service](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-FS-M2-CFS/index.html)

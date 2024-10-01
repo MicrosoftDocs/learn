@@ -1,14 +1,13 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.startup.ux-design.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: 'This content is part of the “Foundations of user experience and design thinking” module.'
-  ms.date: 04/19/2023
+  ms.date: 12/22/2023
   author: Obi-Akpuda
   ms.author: obiakpuda
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: unit
 durationInMinutes : 5
 
 quiz:
@@ -35,12 +34,12 @@ quiz:
       explanation: "At this point, you want to start to formulate a clear problem statement that will guide you throughout the design process. What are the users' biggest pain points and their most common problems?"
     - content: "Generating and testing ideas."
       isCorrect: true
-      explanation: "After you've identified your target users and what they want, this phase can be broken down into two steps, generating and deciding the ideas – remember, “bad ideas are welcomed”."
+      explanation: "After you've identified your target users and what they want, this phase can be broken down into two steps, generating and deciding the ideas. Remember, bad ideas are welcome."
     - content: "Creating solutions."
       isCorrect: false
       explanation: "It's imperative that once you've successfully defined your users, have a deep understanding of the problem, and generated a preliminary set of ideas, then you can start to build a solution in iteration."
 
-  - content: "Suppose you're the VP of Product at a startup, KrashAIO, an automation software for checking out online items. You have been tasked with piloting and leading a new product launch in the next 12 weeks. Since you know you and your team will have your work cut out for you, and you already have more than 10 years of experience in the consumer retail industry, you decide that you have a good idea of what you feel like the user should want from a feature standpoint, and you figure it would be best to just start brainstorming ideas without consulting any users. Which one of the following phases of the design thinking process did you omit?"
+  - content: "Suppose you're the VP of Product at a startup, KrashAIO, an automation software for checking out online items. You have been tasked with piloting and leading a new product launch in the next 12 weeks. Because you know you and your team will have your work cut out for you, and you already have more than 10 years of experience in the consumer retail industry, you decide that you have a good idea of what you feel like the user should want from a feature standpoint, and you figure it would be best to just start brainstorming ideas without consulting any users. Which one of the following phases of the design thinking process did you omit?"
     choices:
     - content: "Define"
       isCorrect: false

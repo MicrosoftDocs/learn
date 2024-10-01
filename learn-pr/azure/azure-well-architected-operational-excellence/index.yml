@@ -6,8 +6,8 @@ metadata:
   ms.date: 06/27/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.service: waf
+  ms.topic: module
+  ms.service: azure-waf
 title: Microsoft Azure Well-Architected Framework - Operational excellence
 summary: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
 abstract:  | 
@@ -31,10 +31,12 @@ subjects:
 - architecture
 units:
 - learn.azure-well-architected-operational-excellence.1-introduction
-- learn.azure-well-architected-operational-excellence.2-design-build-orchestrate
-- learn.azure-well-architected-operational-excellence.3-use-monitoring-and-analytics-to-gain-operational-insights
-- learn.azure-well-architected-operational-excellence.4-use-automation-to-reduce-effort-and-error
-- learn.azure-well-architected-operational-excellence.5-test-strategies
-- learn.azure-well-architected-operational-excellence.6-summary
+- learn.azure-well-architected-operational-excellence.embrace-devops-culture
+- learn.azure-well-architected-operational-excellence.establish-development-standards
+- learn.azure-well-architected-operational-excellence.evolve-operations-with-observability
+- learn.azure-well-architected-operational-excellence.deploy-with-confidence
+- learn.azure-well-architected-operational-excellence.automate-for-efficiency
+- learn.azure-well-architected-operational-excellence.adopt-safe-deployment-practices
+- learn.azure-well-architected-operational-excellence.summary
 badge:
   uid: learn.azure-well-architected-operational-excellence.badge

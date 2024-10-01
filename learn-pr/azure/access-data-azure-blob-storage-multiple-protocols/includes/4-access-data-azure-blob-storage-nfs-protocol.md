@@ -9,7 +9,7 @@ Blob Storage supports the NFS 3.0 protocol, which provides users with the follow
 - Linux clients can seamlessly mount a container in Blob Storage.
 
 > [!NOTE]
-> Windows client for NFS isn't yet supported.
+> Windows client for NFS isn't supported yet.
 
 Blob Storage support for the NFS 3.0 protocol requires a hierarchical namespace, which Azure Data Lake Storage Gen2 offers. Azure stores all the data in the storage account that’s enabled for NFS 3.0 support as block blobs.
 
@@ -29,7 +29,7 @@ Perform the following tasks to enable NFS support in your Azure Blob Storage:
        az feature register --namespace Microsoft.Storage --name PremiumHns
     ```
 
-2. Secure the data access by enabling Blob Storage access from within the virtual network. To do this, you can use private endpoints that assign a private IP to the storage accounts and help secure all traffic between your NFS clients and the storage account over a private link.
+2. Secure the data access by enabling Blob Storage access from within the virtual network. You can use private endpoints that assign a private IP to the storage accounts and help secure all traffic between your NFS clients and the storage account over a private link.
 
 3. Create a container within the storage accounts, then mount that container using a client that supports the NFS 3.0 protocol.
 

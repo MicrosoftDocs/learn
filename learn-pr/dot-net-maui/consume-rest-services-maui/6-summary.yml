@@ -5,14 +5,13 @@ metadata:
   unitType: Summary
   title: "Summary"
   description: "Summary of the consuming REST services with .NET MAUI module"
-  ms.date: 04/29/2022
+  ms.date: 10/31/2023
   author: codemillmatt  
   ms.author: masoucou
   ms.manager: markl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-dotnet
-  ms.prod: learning-languages
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

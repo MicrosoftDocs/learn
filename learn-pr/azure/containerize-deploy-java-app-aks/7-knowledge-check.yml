@@ -5,13 +5,12 @@ metadata:
   unitType: Knowledge Check
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 9/28/2021
+  ms.date: 02/09/2024
   author: chtrembl
   ms.author: chtrembl
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-extended-java
-  ms.prod: learning-azure
 durationInMinutes: 2
 quiz:
   questions:

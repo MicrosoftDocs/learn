@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 11/17/2020
+  ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
-  ms.topic: interactive-tutorial
-  ms.prod: hololens
+  ms.topic: unit
 durationInMinutes: 15
 quiz:
   questions:

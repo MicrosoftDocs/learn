@@ -1,5 +1,5 @@
 
-Self-service password reset (SSPR) is a feature of Microsoft Entra that allows users to change or reset their password, without administrator or help desk involvement.  SSPR has several key benefits for organizations and users:
+Self-service password reset (SSPR) is a feature of Microsoft Entra ID that allows users to change or reset their password, without administrator or help desk involvement.  SSPR has several key benefits for organizations and users:
 - SSPR reduces IT support costs by enabling users to reset passwords on their own.
 - SSPR allows users to get back to work faster and be more productive.
 - Administrators can change settings to accommodate new security requirements and roll these changes out to users without disrupting their sign-in.
@@ -30,4 +30,3 @@ When users register for SSPR, they're prompted to choose the authentication meth
 When a user resets their password using self-service password reset, it can also be written back to an on-premises Active Directory. Password write-back allows users to use their updated credentials with on-premises devices and applications without a delay.
 
 To keep users informed about account activity, admins can configure email notifications to be sent when an SSPR event happens. These notifications can cover both regular user accounts and admin accounts. For admin accounts, this notification provides an extra layer of awareness when a privileged administrator account password is reset using SSPR. All global admins would be notified when SSPR is used on an admin account.
-

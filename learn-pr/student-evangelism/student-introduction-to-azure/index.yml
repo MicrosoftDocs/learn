@@ -1,16 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-introduction-to-azure
 metadata:
-  title: |
-    Introduction to Azure for students
+  title: Introduction to Azure for students
   description: "Learn about cloud computing and explore some common scenarios for using Azure, GitHub, and Visual Studio Code." 
   ms.date: 9/11/2023  
   author: v-regandowner 
   ms.author: chnoring
   ms.topic: module-intro-to-product 
   ms.custom: team=nextgen
-title: |
-  Introduction to Azure for students
+title: Introduction to Azure for students
 summary: "In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student."
 abstract: |
   By the end of this module, you'll be able to:

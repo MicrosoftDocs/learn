@@ -4,11 +4,12 @@ title: Explore continuous security validation
 metadata:
   title: Explore continuous security validation
   description: "Explore continuous security validation"
-  ms.date: 06/13/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/6-explore-continuous-security-validation.md)]

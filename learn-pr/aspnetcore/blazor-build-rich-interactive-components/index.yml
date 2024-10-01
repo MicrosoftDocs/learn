@@ -7,9 +7,10 @@ metadata:
   ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: dotnet-architecture
-  ms.technology: blazor 
+  manager: coxford
+  ms.topic: module
+  ms.service: dotnet-architecture
+  ms.subservice: blazor
 title: Build rich interactive components with Blazor web apps
 summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
 abstract: |

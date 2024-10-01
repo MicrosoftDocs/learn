@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.update-infrastructure-for-azure-stack-hub.update-azure-ad-home-director
-title: Update Azure AD Home Director
+title: Update Microsoft Entra Home Director
 metadata:
-  title: Update Azure AD Home Director
-  description: "Update Azure AD Home Director"
+  title: Update Microsoft Entra Home Director
+  description: "Update Microsoft Entra Home Director"
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

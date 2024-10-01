@@ -4,15 +4,14 @@ title: Optimize the benefits of Azure savings plan for compute
 metadata:
   title: Optimize the benefits of Azure savings plan for compute
   description: Optimize the benefits of Azure savings plan for compute.
-  ms.date: 04/28/2023
+  ms.date: 06/15/2023
   author: bandersmsft
   ms.author: banders
   ms.reviewer: onwokolo
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - ignite-2022
     - engagement-fy23
-  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/optimize-benefits-azure-savings-plan-for-compute.md)]

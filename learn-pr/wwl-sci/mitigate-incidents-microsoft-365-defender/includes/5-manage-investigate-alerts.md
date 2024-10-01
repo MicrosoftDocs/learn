@@ -2,13 +2,13 @@
 
 You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
 
-:::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft 365 Defender Alerts Queue page." lightbox="../media/alert-queue.png":::
+:::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft Defender XDR Alerts Queue page." lightbox="../media/alert-queue.png":::
 
 ## Alert management
 
 You can view and set metadata about the Alert preview or Alert details page.
 
-:::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft 365 Defender Alert details page." lightbox="../media/alert-manage.png":::
+:::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft Defender XDR Alert details page." lightbox="../media/alert-manage.png":::
 
 The metadata fields include and actions include:
 

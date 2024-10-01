@@ -2,10 +2,10 @@ The **Azure AI Vision** service is designed to help you extract information from
 
 - *Description and tag generation* - determining an appropriate caption for an image, and identifying relevant "tags" that can be used as keywords to indicate its subject.
 - *Object detection* - detecting the presence and location of specific objects within the image.
-- *Face detection* - detecting the presence, location, and features of human faces in the image.
+- *People detection* - detecting the presence, location, and features of people in the image.
 - *Image metadata, color, and type analysis* - determining the format and size of an image, its dominant color palette, and whether it contains clip art.
 - *Category identification* - identifying an appropriate categorization for the image, and if it contains any known landmarks.
-- *Brand detection* - detecting the presence of any known brands or logos.
+- *Background removal* - detecting the background in an image and output the image with the background transparent or a greyscale alpha matte image.
 - *Moderation rating* - determine if the image includes any adult or violent content.
 - *Optical character recognition* - reading text in the image.
 - *Smart thumbnail generation* - identifying the main region of interest in the image to create a smaller "thumbnail" version.

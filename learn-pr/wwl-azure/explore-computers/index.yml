@@ -2,21 +2,26 @@
 uid: learn.wwl.explore-computers
 metadata:
   title: Explore computers
-  description: "Explore computers"
-  ms.date: 12/16/2022
+  description: "Describes the fundamentals of computers and how they work on both a small and large scale."
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.service: learn
+  ai-usage: human-only
 title: Explore computers
 summary: Describes the fundamentals of computers and how they work on both a small and large scale.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the parts of a computer
-  - Explain how the parts of a computer work together
-  - Analyze small and large networks
-  - Describe the differences between authentication and authorization
-prerequisites: |
-  General knowledge of computer terminology.
+
+  -   Identify the parts of a computer
+
+  -   Explain how the parts of a computer work together
+
+  -   Analyze small and large networks
+
+  -   Describe the differences between authentication and authorization
+prerequisites: General knowledge of computer terminology.
 iconUrl: /learn/achievements/explore-computers.svg
 levels:
 - beginner
@@ -26,7 +31,7 @@ roles:
 - k-12-educator
 - student
 products:
-- industry-solutions
+- consumer
 subjects:
 - cloud-computing
 units:

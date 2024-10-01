@@ -29,4 +29,4 @@ In this exercise, we'll manage the SQL elastic pool and add an additional databa
 
 1. Select **Review + create**, then select **Create**.
 
-1. Wait for deployment to complete, and then select **Go to resource**. Your new SQL database Getting started pane appears.
+1. Wait for deployment to complete, and then select **Go to resource**. Your new SQL database **Getting started** pane appears.

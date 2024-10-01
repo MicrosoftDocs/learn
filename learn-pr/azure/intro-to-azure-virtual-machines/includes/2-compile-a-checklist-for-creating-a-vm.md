@@ -30,7 +30,7 @@ Let's walk through a checklist of things to think about.
 
 ## The network
 
-The first thing you should think about isn't the virtual machine at all - it's the network. Take a look at on of your on-premises servers:
+The first thing you should think about isn't the virtual machine at all - it's the network. Take a look at one of your on-premises servers:
 - What does the server communicate with?
 - Which ports are open?
 
@@ -106,7 +106,7 @@ You're able to filter on the workload type when you configure the VM size in the
 
 ### What if my size needs change?
 
-Azure allows you to change the VM size when the existing size no longer meets your needs. You can upgrade or downgrade the VM - as long as your current hardware configuration is allowed in the new size. The ability to change VM size provides a fully agile and elastic approach to VM management.
+Azure allows you to change the VM size when the existing size no longer meets your needs. You can upgrade or downgrade the VM, as long as your current hardware configuration is allowed in the new size. The ability to change VM size provides a fully agile and scalable approach to VM management.
 
 The VM size can be changed while the VM is running, as long as the new size is available in the current hardware cluster the VM is running on. The Azure portal makes the size options obvious by only showing you available size choices. The command line tools report an error if you attempt to resize a VM to an unavailable size. Changing a running VM size automatically reboots the machine to complete the request.
 
@@ -114,6 +114,21 @@ If you stop and deallocate the VM, you can then select any size available in you
 
 > [!WARNING]
 > Be careful about resizing production VMs - they will be rebooted automatically which can cause a temporary outage and change some configuration settings such as the IP address.
+
+### Parts of a VM and how they're billed
+
+When you create a virtual machine, you're also creating resources that support the virtual machine. These resources come with their own costs that should be considered.
+
+The default resources supporting a virtual machine and how they're billed are detailed in the following table:
+
+| Resource | Description | Cost | 
+|-|-|-|
+| Virtual network | For giving your virtual machine the ability to communicate with other resources | [Virtual Network pricing](https://azure.microsoft.com/pricing/details/virtual-network/) |
+| A virtual Network Interface Card (NIC) | For connecting to the virtual network  | There is no separate cost for NICs. However, there is a limit to how many NICs you can use based on your [VM's size](/azure/virtual-machines/sizes). Size your VM accordingly and reference [Virtual Machine pricing](https://azure.microsoft.com/pricing/details/virtual-machines/linux/). | 
+| A private IP address and sometimes a public IP address. | For communication and data exchange on your network and with external networks | [IP Addresses pricing](https://azure.microsoft.com/pricing/details/ip-addresses/) |
+| Network security group (NSG) | For managing the network traffic too and from your VM. For example, you might need to open port 22 for SSH access, but you might want to block traffic to port 80. Blocking and allowing port access is done through the NSG.| There are no additional charges for network security groups in Azure. |
+| OS Disk and possibly separate disks for data. | It's a best practice to keep your data on a separate disk from your operating system, in case you ever have a VM fail, you can simply detach the data disk, and attach it to a new VM. | All new virtual machines have an operating system disk and a local disk. <br> Azure doesn't charge for local disk storage. <br> The operating system disk, which is usually 127GiB but is smaller for some images, is charged at the [regular rate for disks](https://azure.microsoft.com/pricing/details/managed-disks/). <br> You can see the cost for attach Premium (SSD based) and Standard (HDD) based disks to your virtual machines on the [Managed Disks pricing page](https://azure.microsoft.com/pricing/details/managed-disks/). |
+| In some cases, a license for the OS | For providing your virtual machine runs to run the OS | The cost varies based on the number of cores on your VM, so [size your VM accordingly](/azure/virtual-machines/sizes). The cost can be reduced through the [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/#overview). |
 
 ### Understanding the pricing model
 

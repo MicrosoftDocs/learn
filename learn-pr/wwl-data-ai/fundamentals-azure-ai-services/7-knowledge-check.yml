@@ -3,12 +3,13 @@ uid: learn.wwl.fundamentals-azure-ai-services.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/05/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.date: 9/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
@@ -42,6 +43,6 @@ quiz:
     - content: "An AI service to recognize faces"
       isCorrect: false
       explanation: "Incorrect. The Azure AI Face resource is one of many Azure AI services."
-    - content: "A single-service resource for Azure Cognitive Search"
+    - content: "A single-service resource for Azure AI Search"
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search is the single-service resource for Azure Cognitive Search."
+      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."

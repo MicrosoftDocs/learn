@@ -1,34 +1,35 @@
+[Azure File Sync](/azure/storage/file-sync/file-sync-introduction) enables you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine. You can use Azure File Sync to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. 
 
-Before you can start synchronizing files with Azure File Sync, there are several high-level steps that need to be completed.
+:::image type="content" source="../media/file-sync-1d3fd2e7.png" alt-text="Illustration that depicts how Azure File Sync can be used to cache an organization's file shares in Azure Files." border="false":::
 
-:::image type="content" source="../media/file-sync-steps-b6fa9fd9.png" alt-text="Flowchart that shows the steps to complete before you start synchronizing files with Azure File Sync." border="false":::
+### Things to know about Azure File Sync
 
-### Step 1: Deploy the Storage Sync Service
+Let's take a look at the characteristics of Azure File Sync.
 
-You can deploy the Storage Sync Service from the Azure portal. You configure the following settings:
-- The deployment name for the Storage Sync Service
-- The Azure subscription ID to use for the deployment
-- A Resource Group for the deployment
-- The deployment location
+- Azure File Sync transforms Windows Server into a quick cache of your Azure Files shares.
 
-### Step 2: Prepare each Windows Server to use Azure File Sync
+- You can use any protocol that's available on Windows Server to access your data locally with Azure File Sync, including SMB, NFS, and FTPS.
 
-After you deploy the Storage Sync Service, you configure each Windows Server or cloud virtual machine that you intend to use with Azure File Sync, including server nodes in a Failover Cluster. 
+- Azure File Sync supports as many caches as you need around the world.
 
-### Step 3: Install the Azure File Sync agent
+#### Cloud tiering
 
-When the Windows Server configuration is complete, you're ready to install the Azure File Sync agent. The agent is a downloadable package that enables Windows Server to be synced with an Azure Files share. The Azure File Sync agent installation package should install relatively quickly.
+Cloud tiering is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
 
-> [!Note]
-> For the agent installation, Microsoft recommends using the default installation path. Also enable Microsoft Update to ensure your servers are running the latest version of Azure File Sync.
+- When a file is tiered, Azure File Sync replaces the file locally with a pointer. A pointer is commonly referred to as a _reparse point_. The reparse point represents a URL to the file in Azure Files.
 
-### Step 4: Register each Windows Server with the Storage Sync Service
+- When a user opens a tiered file, Azure File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file is stored in Azure.
 
-After the Azure File Sync agent installation completes, the **Server Registration** window opens. 
+- Cloud tiering files have greyed icons with an offline `O` file attribute to let the user know when the file is only in Azure.
 
-By registering the Windows Server with a Storage Sync Service, you establish a trust relationship between your server (or cluster) and the Storage Sync Service. For the registration, you need your Azure subscription ID and some of the deployment settings you configured in the first step:
-- The Storage Sync Service deployment name
-- The Resource Group for the deployment
+### Things to consider when using Azure File Sync
 
-> [!Note]
-> A server (or cluster) can be registered with only one Storage Sync Service resource at a time.
+There are many advantages to using Azure File Sync. Consider the following scenarios, and think about how you can use Azure File Sync with your Azure Files shares.
+
+- **Consider application lift and shift**. Use Azure File Sync to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. 
+
+- **Consider support for branch offices**. Support your branch offices that need to back up files by using Azure File Sync. Use the service to set up a new server that connects to Azure storage.
+
+- **Consider backup and disaster recovery**. After you implement Azure File Sync, Azure Backup backs up your on-premises data. Restore file metadata immediately and recall data as needed for rapid disaster recovery.
+
+- **Consider file archiving with cloud tiering**. Azure File Sync stores only recently accessed data on local servers. Implement cloud tiering so non-used data moves to Azure Files.

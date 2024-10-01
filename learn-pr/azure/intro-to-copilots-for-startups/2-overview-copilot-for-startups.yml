@@ -4,11 +4,10 @@ title: Overview of copilots for startups
 metadata:
   title: Overview of copilots for startups
   description: This content is part of the "Introduction to building copilots for startups" module.
-  ms.date: 08/03/2023
+  ms.date: 07/30/2024
   author: amit7200
   ms.author: amsvarze
-  ms.topic: module-intro-to-product
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-overview-copilot-for-startups.md)]

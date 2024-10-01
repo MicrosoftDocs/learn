@@ -2,7 +2,7 @@ To make an API available through an API gateway, you need to import and publish 
 
 In the shoe company example, NorthWind Shoes wants to enable selected partners to be able to query inventory and stock levels.
 
-Here, you'll learn how to import an API into Azure API Management, and how to make an API available to clients.
+Here, you learn how to import an API into Azure API Management, and how to make an API available to clients.
 
 ## API
 
@@ -47,7 +47,7 @@ You then provide a link to your API specification as a URL or file, and a name f
 
 ![Screenshot of create from OpenAPI specification import settings with OpenAPI specification and display name fields highlighted.](../media/4-api-details.png)
 
-The Azure portal isn't the most efficient tool for importing and configuring large numbers of APIs. As you scale up your API management, you'll need other tools, such as the Azure CLI, Azure Resource Manager or Bicep templates, or Azure PowerShell. For example, you can use Azure PowerShell cmdlets for deploying API gateways, defining and configuring products, importing APIs, and managing users and subscriptions.
+The Azure portal isn't the most efficient tool for importing and configuring large numbers of APIs. As you scale up your API management, you need other tools, such as the Azure CLI, Azure Resource Manager or Bicep templates, or Azure PowerShell. For example, you can use Azure PowerShell cmdlets for deploying API gateways, defining and configuring products, importing APIs, and managing users and subscriptions.
 
 ## Visualize
 
@@ -65,7 +65,7 @@ Popular configurations include:
 
 - Conversion from XML to JSON
 - Call rate limiting to restrict the number of incoming calls.
-- Setting inbound and outbound headers
+- Setting inbound and outbound headers.
 
 You use the Azure portal to apply different policies to APIs. Policies can be viewed in the **Design** tab.
 

@@ -3,12 +3,13 @@ uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/27/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: cognitive-search
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -25,7 +26,7 @@ quiz:
     - content: "Add the built-in Sentiment skill to the skillset used by the indexer."
       isCorrect: true
       explanation: "Correct. The built-in sentiment skill can be used to accomplish the goal in this scenario."
-  - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure Cognitive Search indexing process. What should you do?"
+  - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure AI Search indexing process. What should you do?"
     choices:
     - content: "Add a WebApiSkill to a skillset, referencing the Azure function's URI"
       isCorrect: true

@@ -6,9 +6,8 @@ metadata:
   description: This module presents the fundamentals of using functions in JavaScript.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 05/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/26/2023
+  ms.topic: unit
   ms.custom:
     - team=nextgen
     - devx-track-js

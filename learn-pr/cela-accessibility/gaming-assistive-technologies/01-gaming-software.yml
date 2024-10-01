@@ -4,11 +4,10 @@ title: Gaming software assistive technology
 metadata:
   title: Gaming software assistive technology
   description: This content is part of the Gaming Assistive Technologies module.
-  ms.date: 11/28/2021
+  ms.date: 05/10/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 16
 content: |
   [!include[](includes/01-gaming-software.md)]

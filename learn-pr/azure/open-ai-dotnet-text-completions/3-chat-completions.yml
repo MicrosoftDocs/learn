@@ -4,12 +4,11 @@ title: Work with text completions in Azure OpenAI
 metadata:
   title: Work with text completions in Azure OpenAI
   description: Add conversation-in and message-out capabilities to your applications with Azure OpenAI text completions
-  ms.date: 08/23/2023
+  ms.date: 08/29/2024
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom: devx-track-dotnet
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/3-chat-completions.md)]

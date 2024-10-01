@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary of autoscaling your Java applications on Azure
   description: We look at a summary of autoscaling your Java applications on Azure
-  ms.date: 11/18/2021
+  ms.date: 08/20/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.contributors: ropreddy-12032021
   ms.custom:
     - team=cloud_advocates

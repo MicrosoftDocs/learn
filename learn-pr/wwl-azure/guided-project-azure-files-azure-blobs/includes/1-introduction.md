@@ -1,26 +1,28 @@
+[!INCLUDE [](../../../includes/wwl/ai-contribution-notes.md)]
 
-Welcome to this interactive skills validation experience. Completing this module helps prepare you for the ***Implement storage for Azure Files and Azure Blob Storage*** assessment.
+This module covers different storage scenarios using Azure Files and Azure Blob Storage.
 
-In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. This module combines both learning and hands-on practice. The skills validated include creating storage accounts, storage containers, and file shares. Also, configuring encryption and networking to improve the security posture.
+In this module, you learn how to provide storage for different purposes. For example, IT department testing and training, a public website, and a new company app. 
+
+:::image type="content" source="../media/task-overview.png" alt-text="Diagram of customer requirements." border="false":::
+
+You are presented with a scenario for each purpose and a diagram showing the architecture of the solution. You then follow a set of tasks to create the storage account and configure it according to the scenario. Each exercise has a duration of 10 to 15 minutes.
+
+The module is divided into five exercises, each covering a specific storage scenario. The exercises are: 
+- Exercise 1 - Provide storage for the IT department testing and training, 
+- Exercise 2 - Provide storage for the public website, 
+- Exercise 3 - Provide private storage for internal company documents, 
+- Exercise 4 - Provide shared file storage for the company offices, and 
+- Exercise 5 - Provide storage for a new company app.
+
+By the end of this module, you gain hands-on experience in creating and configuring Azure Files and Azure Blob Storage for different storage scenarios. You can apply this knowledge to your own projects and provide secure and efficient storage solutions.
 
 > [!NOTE]
 > This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
 
-## Requirements
-
-Your organization is migrating storage to Azure. As the Azure Administrator your help is needed to configure the storage requirements. Your analysis shows that different audiences have different storage requirements. 
-
-:::image type="content" source="../media/task-overview.png" alt-text="Diagram of customer requirements." border="false":::
-
-* The IT department needs storage for test and development scenarios. They also need to train new personnel on how to properly configure the storage.  
-* The company website needs storage. Customers use the website to order products. The storage must be highly available with low latency.   
-* The company employees need access to private corporate information. Access to these proprietary documents should be tightly controlled. Partners may need access, but only on a temporary basis.  
-* The company offices need shared file storage. Specifically, the finance department needs to gather information and share financial statements. 
-* The company developers are creating a new app that requires storage. The developers need to manage credentials and secure communication with the app storage. 
-
 ## Skilling areas
 
-You've used the Azure documentation to [review your storage options](/azure/cloud-adoption-framework/ready/considerations/storage-options). The project requires configuring storage accounts, Azure blobs, Azure Files, storage encryption, and storage networking. For each area, you've identified the subtasks you need to become familiar with.
+You use the Azure documentation to [review your storage options](/azure/cloud-adoption-framework/ready/considerations/storage-options). The project requires configuring storage accounts, Azure blobs, Azure Files, storage encryption, and storage networking. For each area, you identify the subtasks you need to become familiar with.
 
 | Skilling area | Skilling task |
 | --- | --- | 

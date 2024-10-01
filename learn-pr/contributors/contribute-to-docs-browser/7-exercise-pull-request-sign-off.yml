@@ -7,8 +7,7 @@ metadata:
   ms.date: 8/2/2023
   author: sgaspari815
   ms.author: v-sgaspari
-  ms.topic: interactive-tutorial
-  ms.service: learn
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-exercise-pull-request-sign-off.md)]

@@ -2,7 +2,6 @@ There are two methods for scaling your Azure App Service plan and applications: 
 
 Watch the following video about how to implement automatic scaling for your Azure App Service plan and applications. 
 
-
 > [!VIDEO https://www.youtube.com/embed/LS8ZPbQzRpc]
 
 ### Things to know about Azure App Service scaling

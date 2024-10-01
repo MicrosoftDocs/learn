@@ -4,11 +4,12 @@ title: Exercise - Interact with an API
 metadata:
   title: Exercise - Interact with an API
   description: "Exercise - Interact with an API"
-  ms.date: 09/08/2023
+  ms.date: 08/21/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise-explore-api-documentation.md)]

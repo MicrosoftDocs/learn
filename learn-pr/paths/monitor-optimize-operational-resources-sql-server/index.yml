@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/28/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and optimize operational resources in Azure SQL
 prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
@@ -26,7 +25,7 @@ roles:
 products:
 - azure
 subjects:
-- data-warehousing
+- data-storage
 modules:
 - learn.wwl.describe-performance-monitoring
 - learn.wwl.configure-sql-server-resources-for-optimal-performance

@@ -45,6 +45,9 @@ We'll learn more about DMA in the next unit. However, it's important to note tha
 
 :::image type="content" source="../media/5-azure-migrate-dma.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate." lightbox="../media/5-azure-migrate-dma.png":::
 
+> [!NOTE]
+> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
+
 ## Exercise: Assess a database and sync results in Azure Migrate
 
 To run this exercise, ensure you follow these steps before proceeding:
@@ -60,7 +63,15 @@ To run this exercise, ensure you follow these steps before proceeding:
 - Once the database has been restored, run the following command:
     
     ```sql
+    USE [AdventureWorks]
+    GO    
+
     ALTER TABLE [Person].[Person] ADD [Next] VARCHAR(5);
+    
+    CREATE PROCEDURE [HumanResources].[usp_legacyIntegration]
+    AS
+    SELECT DataCreated, UserID, ActionID 
+    FROM LogDB..Logs
     ```
 
 - A SQL Server user with read access to the source database.

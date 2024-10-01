@@ -40,7 +40,7 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you've learned about: `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
+    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you learned about: `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
 
 ## Get all pizzas
 
@@ -92,13 +92,107 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 |`Ok` is implied              |200             |A product that matches the provided `id` parameter exists in the in-memory cache.<br>The product is included in the response body in the media type, as defined in the `accept` HTTP request header (JSON by default).|
 |`NotFound`                   |404             |A product that matches the provided `id` parameter doesn't exist in the in-memory cache.|
 
-## Build and test the controller
+## Build and run the new controller
 
-1. Build and start the web API by running the following command:
+Build and start the web API by running the following command:
 
-    ```dotnetcli
-    dotnet run
+```dotnetcli
+dotnet run
+```
+
+### Test the controller with an Http file
+
+1. Open **ContosoPizza.http**
+
+1. Add a new **GET** to call the `Pizza` endpoint under the **###** seperator:
+
+    ```output
+    GET {{ContosoPizza_HostAddress}}/pizza/
+    Accept: application/json
+
+    ###
     ```
+
+1. Select the **Send Request** command above this new **GET** call.
+
+    The preceding command returns a list of all pizzas in JSON:
+
+    ```output
+    HTTP/1.1 200 OK
+    Connection: close
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 17 Jan 2024 16:57:09 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    [
+        {
+            "id": 1,
+            "name": "Classic Italian",
+            "isGlutenFree": false
+        },
+        {
+            "id": 2,
+            "name": "Veggie",
+            "isGlutenFree": true
+        }
+    ]   
+    ```
+
+1. To query for a single pizza, you can make another `GET` request, but pass in an `id` parameter by using the following command:
+
+    ```output
+    GET {{ContosoPizza_HostAddress}}/pizza/1
+    Accept: application/json
+
+    ###
+    ```
+
+    The preceding command returns `Classic Italian` with the following output:
+
+    ```output
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+    Date: Fri, 02 Apr 2021 21:57:57 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    {
+        "id": 1,
+        "name": "Classic Italian",
+        "isGlutenFree": false
+    }
+    ```
+
+1. Our API also handles situations where the item doesn't exist. Call the API again, but pass in an invalid pizza `id` parameter by using the following command:
+
+    ```output
+    GET {{ContosoPizza_HostAddress}}/pizza/5
+    Accept: application/json
+
+    ###
+    ```
+
+    The preceding command returns a `404 Not Found` error with the following output:
+
+    ```output
+    HTTP/1.1 404 Not Found
+    Content-Type: application/problem+json; charset=utf-8
+    Date: Fri, 02 Apr 2021 22:03:06 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    {
+        "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+        "title": "Not Found",
+        "status": 404,
+        "traceId": "00-ec263e401ec554b6a2f3e216a1d1fac5-4b40b8023d56762c-00"
+    }
+    ```
+
+Now that you finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
+
+### Optional: Test the controller with Command Line HTTP Read-Eval-Print Loop (REPL)
 
 1. Open the existing `httprepl` terminal, or open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
@@ -218,4 +312,4 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
 
 1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code and shut down the web API by selecting CTRL+C on your keyboard.
 
-You've now finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
+Now that you finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.

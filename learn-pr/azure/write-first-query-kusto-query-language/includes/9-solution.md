@@ -33,4 +33,4 @@ Your results should look something like the following image:
 
 ## Insights
 
-From the results of this solution, you can see that all the top five damage-causing events in the month of April and in the state of Virginia were all frost or freeze events.
+From this solution's final results, you can see that all the top five damage-causing events in the month of April and in the state of Virginia were all frost or freeze events.

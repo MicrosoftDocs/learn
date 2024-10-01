@@ -1,4 +1,4 @@
-In this section, you will learn about using Azure Active Directory to transfer data to and from an Apache Spark pool and a dedicated SQL pool attached within the workspace you have created for your Azure Synapse Analytics account. If you're using the notebook experience from the Azure Synapse Studio environment linked to your workspace resource, you don’t have to use import statements. Import statements are only required when you don't go through the integrated notebook experience.
+In this section, you will learn about using Microsoft Entra ID to transfer data to and from an Apache Spark pool and a dedicated SQL pool attached within the workspace you have created for your Azure Synapse Analytics account. If you're using the notebook experience from the Azure Synapse Studio environment linked to your workspace resource, you don’t have to use import statements. Import statements are only required when you don't go through the integrated notebook experience.
 
 It is important that the Constants and the SqlAnalyticsConnector are set up as shown below:
 
@@ -10,7 +10,7 @@ It is important that the Constants and the SqlAnalyticsConnector are set up as s
 
 To read data from a dedicated SQL pool, you should use the Read API. The Read API works for Internal tables (Managed Tables) and External Tables in the dedicated SQL pool. 
 
-The Read API using Azure AD looks as follows:
+The Read API using Microsoft Entra ID looks as follows:
 
 ```
 #scala
@@ -23,7 +23,7 @@ The parameters it takes in are:
 
 To write data to a dedicated SQL Pool, you should use the Write API. The Write API creates a table in the dedicated SQL pool. Then, it invokes Polybase to load the data into the table that was created. One thing to keep in mind is that the table can't already exist in the dedicated SQL pool. If that happens, you'll receive an error stating: "There is already an object named..."
 
-The Write API using Azure Active Directory (Azure AD) looks as follows:
+The Write API using Microsoft Entra ID looks as follows:
 
 ```scala
 df.write.sqlanalytics("<DBName>.<Schema>.<TableName>", <TableType>)
@@ -61,7 +61,7 @@ WITH (
 );
 ```
 
-It is not necessary to create an EXTERNAL CREDENTIAL object if you are using Azure AD pass-through authentication from the storage account. The only thing you need to keep in mind is that you need to be a member of the "Storage Blob Data Contributor" role on the storage account. The next step is to use the df.write command within Scala with DATA_SOURCE, FILE_FORMAT, and the sqlanalytics command in a similar way to writing data to an internal table. 
+It is not necessary to create an EXTERNAL CREDENTIAL object if you are using Microsoft Entra pass-through authentication from the storage account. The only thing you need to keep in mind is that you need to be a member of the "Storage Blob Data Contributor" role on the storage account. The next step is to use the df.write command within Scala with DATA_SOURCE, FILE_FORMAT, and the sqlanalytics command in a similar way to writing data to an internal table. 
 
 The example is shown below:
 

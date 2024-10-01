@@ -4,11 +4,10 @@ title: Exercise - Add Azure Monitor metrics to a custom portal dashboard
 metadata:
   title: Exercise - Add Azure Monitor metrics to a custom portal dashboard
   description: Add Azure Monitor metrics to a custom portal dashboard.
-  ms.date: 05/05/2022
+  ms.date: 07/27/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 # interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10

@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Build Your First Azure Developer CLI Template module
-  ms.date: 07/17/2023
+  ms.date: 07/02/2024
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: engagement-fy23
 durationInMinutes: 4
 content: |

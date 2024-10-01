@@ -4,11 +4,10 @@ title: Exercise - Integrate Azure Spatial Anchors
 metadata:
   title: Exercise - Integrate Azure Spatial Anchors
   description: Exercise on Integrate Azure Spatial Anchors
-  ms.date: 06/26/2023
+  ms.date: 01/11/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-integrate-azure-spatial-anchors.md)]

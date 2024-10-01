@@ -1,4 +1,4 @@
-In this unit, to configure a build agent that you can use in Microsoft Azure Pipelines, you use a virtual machine that runs on Microsoft Azure. We provide a virtual machine that you can use for the duration of this module.
+In this unit, to configure a build agent that you can use in Microsoft Azure Pipelines, you'll use a virtual machine that runs on Microsoft Azure. We provide a virtual machine that you can use for the duration of this module.
 
 In this unit, you will:
 
@@ -10,10 +10,11 @@ In this unit, you will:
 > * Configure your agent to connect to Azure DevOps so that it can receive build jobs.
 > * Verify that the agent is connected to Azure DevOps and ready to receive build jobs.
 
-There are many ways to create a virtual machine on Azure. In this unit, you create an Ubuntu virtual machine by using an interactive terminal called Cloud Shell.
+There are many ways to create a virtual machine on Azure. In this unit, you'll create an Ubuntu virtual machine by using an interactive terminal called Cloud Shell.
 
 To configure your VM, you have several choices:
-* For a Linux VM, you can connect directly over SSH and interactively configure your system. 
+
+* For a Linux VM, you can connect directly over SSH and interactively configure your system.
 * You can automate the deployment by using an ARM template, Bicep, or other automated provisioning tool.
 * If you need to deploy many build agents, you can create a VM image that has all the software pre-installed.
 
@@ -31,7 +32,7 @@ In this section, you create a VM that's running Ubuntu 20.04, which will serve a
 > [!IMPORTANT]
 > To complete the exercises in this module, you need your own Azure subscription.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
@@ -45,7 +46,7 @@ A _region_ is one or more Azure datacenters within a geographic location. East U
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. From the Cloud Shell, to list the regions that are available from your Azure subscription, run the following `az account list-locations` command.
+1. From the Cloud Shell, to list the regions that are available from your Azure subscription, run the following `az account list-locations` command:
 
     ```azurecli
     az account list-locations \
@@ -55,7 +56,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 1. From the `Name` column in the output, select a region that's close to you. For example, choose `eastasia` or `westus2`.
 
-1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you selected.
+1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you selected:
 
     ```azurecli
     az configure --defaults location=<REGION>
@@ -71,7 +72,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 Create a resource group to contain the resources used in this training module.
 
-- To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command.
+- To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command:
 
     ```azurecli
     az group create --name tailspin-space-game-rg
@@ -79,7 +80,7 @@ Create a resource group to contain the resources used in this training module.
 
 ### Create the VM
 
-To create your VM, in Cloud Shell (at right), run the following `az vm create` command:
+To create your VM, run the following `az vm create` command:
 
 ```azurecli
 az vm create \
@@ -99,7 +100,7 @@ The `--resource-group` argument specifies the _resource group_ that holds all th
 
 ## Create the agent pool
 
-Recall that an agent pool organizes build agents. In this section, you create the agent pool in Azure DevOps. Later, you'll specify the name of the agent pool when you configure your agent so that it can register itself to the correct pool.
+Recall that an agent pool organizes build agents. In this section, you'll create the agent pool in Azure DevOps. Later, you'll specify the name of the agent pool when you configure your agent so that it can register itself to the correct pool.
 
 1. In Azure DevOps, go to the **Space Game - web - Agent** project.
 1. Select **Project settings**.
@@ -111,9 +112,9 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
     1. Under **Pool to link**, select **New**.
     1. Under **Pool type**, select **Self-hosted**.
-    1. Under **Name**, enter *MyAgentPool*.
+    1. Under **Name**, enter _MyAgentPool_.
 
-    In practice, you would choose a more descriptive name for your pool.
+    In practice, you'd choose a more descriptive name for your pool.
 1. Select **Create**.
     The new agent pool appears in the list.
 
@@ -121,18 +122,18 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
 For your build agent to register itself with Azure DevOps, you need a way for it to authenticate itself.
 
-To do that, you create a personal access token. A personal access token, or PAT, is an alternative to a password. You can use the PAT to authenticate with services such as Azure DevOps.
+To do that, you can create a personal access token. A personal access token—or PAT—is an alternative to a password. You can use the PAT to authenticate with services such as Azure DevOps.
 
 > [!IMPORTANT]
-> As you would with a password, be sure to keep your access token in a safe place. In this section, you store your access token as an environment variable so that it doesn't appear in your shell script.
+> As you would with a password, be sure to keep your access token in a safe place. In this section, you'll store your access token as an environment variable so that it doesn't appear in your shell script.
 
-1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
+1. In Azure DevOps, open your profile settings, and then select **Personal access tokens**.
 
     :::image type="content" source="../media/4-personal-access-token.png" alt-text="A screenshot of Azure DevOps showing the location of the Personal access tokens menu item.":::
 1. Select **New Token**.
-1. Enter a name for your token, such as *Build agent*.
-1. Under **Scopes**, select **Show all scopes** at the bottom.
-1. Look for **Agent Pools**, and then select **Read & manage**.
+1. Enter a name for your token, such as _Build agent_.
+1. Under **Scopes**, select the **Show all scopes** link at the bottom.
+1. Look for **Agent Pools**, then select **Read & manage**.
 1. Select **Create**.
 1. Copy the token to a safe place.
 
@@ -140,13 +141,13 @@ To do that, you create a personal access token. A personal access token, or PAT,
 
 ### Connect to your VM
 
-In this section, you connect to your Linux VM over SSH so that you can configure it.
+In this section, you'll connect to your Linux VM over SSH so that you can configure it.
 
 Recall that you can't interactively sign in to a Microsoft-hosted agent. Because a private build agent is your own, you can sign in to and configure it however you'd like.
 
-The ability to connect to your build agent enables you to configure it with the tools you need to build your software. It also enables you to troubleshoot issues as you build out your pipeline configuration.
+The ability to connect to your build agent lets you configure it with the tools you need to build your software. It also allows you to troubleshoot issues as you build out your pipeline configuration.
 
-1. To get your VM's IP address, in Cloud Shell, run `az vm show`:
+1. To get your VM's IP address, run `az vm show` in Cloud Shell:
 
     ```azurecli
     IPADDRESS=$(az vm show \
@@ -159,7 +160,7 @@ The ability to connect to your build agent enables you to configure it with the 
 
     This command stores the IP address in a Bash variable named `IPADDRESS`.
 
-1. Print the VM's IP address to the console.
+1. Print the VM's IP address to the console:
 
     ```bash
     echo $IPADDRESS
@@ -177,7 +178,7 @@ The ability to connect to your build agent enables you to configure it with the 
 
 ## Install build tools on your VM
 
-In this section, you configure your VM with the tools that are required to build the _Space Game_ website.
+In this section, you'll configure your VM with the tools that are required to build the _Space Game_ website.
 
 Recall that your existing build process uses these tools:
 
@@ -186,14 +187,14 @@ Recall that your existing build process uses these tools:
 * npm, the package manager for Node.js
 * gulp, a Node.js package that's used to minify JavaScript and CSS files
 
-These are the primary tools that the build process requires. To install them, you download and run a shell script from GitHub.
+These are the primary tools that the build process requires. To install them, you'll download and run a shell script from GitHub.
 
 > [!NOTE]
 > The build process uses other tools, such as node-sass, to convert Sass (*.scss*) files to CSS (*.css*) files. However, Node.js installs these tools when the build runs.
 
 Let's start by updating the Ubuntu package manager, named *apt*. This action fetches the latest information from the package repositories and is ordinarily the first thing you do when you set up a new Ubuntu system.
 
-1. In your SSH connection, update the apt package manager cache.
+1. In your SSH connection, update the apt package manager cache:
 
     ```bash
     sudo apt-get update
@@ -207,7 +208,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-tools.sh > build-tools.sh
     ```
 
-1. Print the script to the terminal so that you can examine its contents.
+1. Print the script to the terminal so that you can examine its contents:
 
     ```bash
     cat build-tools.sh
@@ -221,7 +222,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 
     By setting the `DOTNET_VERSION` environment variable, you can specify the .NET version to install. If you don't set this variable, the script installs the version that your existing build configuration uses. For learning purposes, you don't set this variable. You allow the script to use the default version.
 
-1. Make the script executable, and then run the script.
+1. Make the script executable, then run the script:
 
     ```bash
     chmod u+x build-tools.sh
@@ -238,18 +239,18 @@ Now it's time to install the agent software on your VM. This software enables th
 
 The registration process checks for installed software before it registers the agent with Azure Pipelines. Therefore, it's important to set up the agent after you install all other software. In practice, you can register the agent a second time if you need to install additional software.
 
-The documentation explains how to manually set up [self-hosted Linux agents](/azure/devops/pipelines/agents/v2-linux?azure-portal=true) as well as macOS and Windows agents. You run a shell script to configure your agent, much like the way you set up build tools in the preceding section.
+The documentation explains how to manually set up [self-hosted Linux agents](/azure/devops/pipelines/agents/linux-agent) as well as macOS and Windows agents. You run a shell script to configure your agent in much the same way you set up build tools in the preceding section.
 
 > [!IMPORTANT]
 > The script that you run here is for learning purposes. In practice, you should first understand how each command in the scripts you build affects the overall system. At the end of the module, we'll point to documentation that more completely describes your options.
 
-1. To download a shell script named *build-agent.sh* from GitHub, run the following `curl` command:
+1. To download a shell script named _build-agent.sh_ from GitHub, run the following `curl` command:
 
     ```bash
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-agent.sh > build-agent.sh
     ```
 
-1. Print the script to the terminal so that you can examine its contents.
+1. Print the script to the terminal so that you can examine its contents:
 
     ```bash
     cat build-agent.sh
@@ -261,7 +262,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
 
     You don't need to understand how each line works, but here's a brief summary of what this script does:
 
-    * It downloads the agent package as a *.tar.gz* file and extracts its contents.
+    * It downloads the agent package as a _.tar.gz_ file and extracts its contents.
     * In the extracted files, the script:
       * Runs a shell script named *installdependencies.sh* to install the agent software.
       * Runs a shell script named *config.sh* to configure the agent and register the agent with Azure Pipelines.
@@ -304,7 +305,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     export AZP_URL=https://dev.azure.com/organization
     ```
 
-1. Set the `AZP_TOKEN` environment variable to specify your personal access token (the long token value that you copied, to be used later). 
+1. Set the `AZP_TOKEN` environment variable to specify your personal access token (the long token value that you copied earlier in this unit).
 
     Replace *\<token>* with your token.
 
@@ -312,7 +313,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     export AZP_TOKEN=token
     ```
 
-1. Set the `AZP_POOL` environment variable to specify the name of your agent pool. Earlier, you created a pool named *MyAgentPool*.
+1. Set the `AZP_POOL` environment variable to specify the name of your agent pool. Earlier, you created a pool named _MyAgentPool_.
 
     ```bash
     export AZP_POOL=MyAgentPool
@@ -332,7 +333,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     echo $AZP_AGENT_VERSION
     ```
 
-1. Make the script executable, and then run it.
+1. Make the script executable, then run it:
 
     ```bash
     chmod u+x build-agent.sh

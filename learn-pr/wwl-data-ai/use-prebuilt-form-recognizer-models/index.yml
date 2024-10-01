@@ -1,29 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.use-prebuilt-form-recognizer-models
 metadata:
-  title: Use prebuilt Azure AI Document Intelligence models
-  description: "Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution."
-  ms.date: 11/01/2022
-  author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-document-intelligence
-title: Use prebuilt Azure AI Document Intelligence models
-summary: Learn what data you can analyze by choosing prebuilt Azure AI Document Intelligence models and how to deploy these models in a Form Analyzer solution.
+  title: Use prebuilt Document intelligence models
+  description: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Document intelligence solution.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 09/04/2024
+  ms.service: azure
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Use prebuilt Document intelligence models
+summary: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Document intelligence solution.
 abstract: |
-  In this module, you will learn to:
-  -	Identify business problems that you can solve by using prebuilt models in Azure AI Document Intelligence.
+  In this module, you'll learn to:
+  -	Identify business problems that you can solve by using prebuilt models in Forms Analyzer.
   -	Analyze forms by using the General Document, Read, and Layout models.
-  -	Analyze forms by using financial, ID, and tax prebuilt models
+  -	Analyze forms by using financial, ID, and tax prebuilt models.
 prerequisites: |
-  - Basic understanding of Azure AI Document Intelligence
+  - Basic understanding of Document intelligence
 iconUrl: /training/achievements/use-prebuilt-form-recognizer-models.svg
 levels:
 - intermediate
 roles:
 - ai-engineer
 products:
-- document-intelligence
 - ai-services
 subjects:
 - artificial-intelligence

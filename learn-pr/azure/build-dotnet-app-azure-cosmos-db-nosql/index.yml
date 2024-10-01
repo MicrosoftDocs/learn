@@ -11,9 +11,10 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.date: 06/08/2023
-  ms.service: cosmos-db
+  ms.topic: module
+  ms.date: 04/25/2024
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
 title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
 summary: |
   Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
@@ -32,6 +33,13 @@ prerequisites: |
   - Ability to execute scripts with Azure CLI
   - Experience with top-level statement projects in .NET 6 or later
   - Ability to write C# at an intermediate level
+
+  - Developing in browser:
+    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Developing locally:
+    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 iconUrl: /training/achievements/build-dotnet-app-azure-cosmos-db-nosql.svg
 levels:
   - beginner

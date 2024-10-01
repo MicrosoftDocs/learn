@@ -1,6 +1,6 @@
 The new company website is in final testing. You're working on the plan to deploy the wideworldimports.com domain by using Azure DNS. You need to understand what steps are involved.
 
-In this unit, you'll learn how to:
+In this unit, you learn how to:
 
 - Create and configure a DNS zone for your domain by using Azure DNS.
 - Understand how to link your domain to an Azure DNS zone.
@@ -8,7 +8,7 @@ In this unit, you'll learn how to:
 
 ## Configure a public DNS zone
 
-You'll use a DNS zone to host the DNS records for a domain, such as wideworldimports.com.
+You use a DNS zone to host the DNS records for a domain, such as wideworldimports.com.
 
 ### Step 1: Create a DNS zone in Azure
 
@@ -27,7 +27,7 @@ When creating a DNS zone, you need to supply the following details:
 
 ### Step 2: Get your Azure DNS name servers
 
-After you create a DNS zone for the domain, you need to get the name server details from the name servers (NS) record. You'll use these details to update your domain registrar's information and point to the Azure DNS zone.
+After you create a DNS zone for the domain, you need to get the name server details from the name servers (NS) record. You use these details to update your domain registrar's information and point to the Azure DNS zone.
 
 :::image type="content" source="../media/3-name-server.png" alt-text="Screenshot of the name server details on the DNS zone page.":::
 
@@ -39,11 +39,11 @@ Changing the NS details is called *domain delegation*. When you delegate the dom
 
 ### Step 4: Verify delegation of domain name services
 
-The next step is to verify that the delegated domain now points to the Azure DNS zone you created for the domain. This can take as few as 10 minutes, but might take longer.
+The next step is to verify that the delegated domain now points to the Azure DNS zone you created for the domain. This process can take as few as 10 minutes, but might take longer.
 
-To verify the success of the domain delegation, query the start of authority (SOA) record. The SOA record was automatically created when the Azure DNS zone was set up. You can do this by using a third-party tool like nslookup.
+To verify the success of the domain delegation, query the start of authority (SOA) record. The SOA record is automatically created when the Azure DNS zone is set up. You can verify the SOA record using a tool like nslookup.
 
-The SOA record represents your domain and will become the reference point when other DNS servers are searching for your domain on the internet.
+The SOA record represents your domain and becomes the reference point when other DNS servers are searching for your domain on the internet.
 
 To verify the delegation, use nslookup like this:
 
@@ -76,11 +76,11 @@ You'd create the CNAME record in the *wideworldimports* zone with the following 
 
 If you exposed a web function, you'd create a CNAME record that resolves to the Azure function.
 
-## Configure private DNS zone
+## Configure a private DNS zone
 
-To provide name resolution for virtual machines (VMs) within a virtual network and between virtual networks, create a private DNS zone.
+Another type of DNS zone that you can configure and host in Azure is a private DNS zone. Private DNS zones are not visible on the Internet, and don't require that you use a domain registrar. You can use private DNS zones to assign DNS names to virtual machines (VMs) in your Azure virtual networks.
 
-### Step 1: Create private DNS zone
+### Step 1: Create a private DNS zone
 
 In the Azure portal, search for *private DNS zones*. To create the private zone, you need enter a resource group and the name of the zone. For example, the name might be something like private.wideworldimports.com.
 
@@ -88,11 +88,11 @@ In the Azure portal, search for *private DNS zones*. To create the private zone,
 
 ### Step 2: Identify virtual networks
 
-Let's assume that your organization has already created your VMs and virtual networks in a production environment. Identify the virtual networks associated with VMs that need name-resolution support. To link the virtual networks to the private zone, you need the virtual network names.
+Let's assume that your organization already created your VMs and virtual networks in a production environment. Identify the virtual networks associated with VMs that need name-resolution support. To link the virtual networks to the private zone, you need the virtual network names.
 
 ### Step 3: Link your virtual network to a private DNS zone
 
-To link the private DNS zone to a virtual network, you'll create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
+To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, go to the private zone, and select **Virtual network links**.
 
 :::image type="content" source="../media/3-virtual-network-link-option.png" alt-text="Screenshot of the Virtual Network Links page in a private DNS zone.":::
 
@@ -102,4 +102,4 @@ Select **Add** to pick the virtual network you want to link to the private zone.
 
 You add a virtual network link record for each virtual network that needs private name-resolution support.
 
-In the next unit, you'll learn how to create a public DNS zone.
+In the next unit, you learn how to create a public DNS zone.

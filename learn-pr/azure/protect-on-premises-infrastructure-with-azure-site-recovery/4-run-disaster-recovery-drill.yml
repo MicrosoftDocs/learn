@@ -3,11 +3,10 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-dis
 metadata:
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives. Then, see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
-  ms.date: 08/01/2019
+  ms.date: 05/25/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Run a disaster recovery drill
 durationInMinutes: 7
 content: |
@@ -23,7 +22,7 @@ quiz:
     - content: The measure of the time between the disaster starting and the business recovering from the disaster.
       isCorrect: false
       explanation: This measurement has no bearing on an RTO.
-    - content: The measure of the maximum amount of time the business can survive if a disaster happens.
+    - content: The measure of the maximum amount of time your business can survive after a disaster until normal service must be restored.
       isCorrect: true
       explanation: An RTO is the amount of time that data can be lost via an outage before it impacts the company significantly.
     - content: The measure of the maximum amount of data that's recoverable from a backup.

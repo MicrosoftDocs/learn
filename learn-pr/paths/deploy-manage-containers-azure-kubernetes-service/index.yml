@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
 metadata:
-  title: Deploy containers by using Azure Kubernetes Service (AKS)
+  title: Deploy containers by using Azure Kubernetes Service (AKS) AZ-1001
   description: In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.  The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
-  ms.date: 10/04/2023
+  ms.date: 10/12/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  adobe-target: true
 title: Deploy containers by using Azure Kubernetes Service (AKS)
 prerequisites: |
   * Experience using the Azure portal to create resources.
@@ -18,7 +18,7 @@ summary: |
   In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.
   The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:
@@ -26,7 +26,12 @@ roles:
 products:
 - azure
 modules:
+- learn.wwl.plan-azure-kubernetes-service-deployment
 - learn.wwl.deploy-use-azure-container-registry
+- learn.wwl.deploy-azure-kubernetes-service-cluster
 - learn.wwl.configure-azure-kubernetes-service-cluster
+- learn.wwl.deploy-applications-azure-kubernetes-service
+- learn.wwl.configure-scaling-azure-kubernetes-service
+- learn.wwl.project-deploy-applications-azure-kubernetes-service
 trophy:
   uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service.trophy

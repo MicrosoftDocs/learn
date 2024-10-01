@@ -4,11 +4,10 @@ title: Deploy Azure Monitor Agent to IaaS Virtual Machines
 metadata:
   title: Deploy Azure Monitor Agent to IaaS Virtual Machines
   description: "Deploy Azure Monitor Agent to IaaS Virtual Machines"
-  ms.date: 10/11/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-deploy-azure-monitor-agent-iaas-vm.md)]

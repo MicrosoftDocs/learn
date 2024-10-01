@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit checks the user's understanding of deployment scenarios for a HoloLens."
-  ms.date: 7/12/2023
+  ms.date: 06/11/2024
   author: aprilspeight
   ms.author: apspeigh
-  ms.topic: interactive-tutorial
-  ms.prod: hololens
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -17,7 +16,7 @@ quiz:
     choices:
     - content: "Corporate Connected Environment"
       isCorrect: true
-      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+      explanation: "In this scenario, devices are connected to a corporate Wi-Fi network. This scenario is most suitable for internal users or within the corporate environment."
     - content: "Offline Secure Environment"
       isCorrect: false
       explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
@@ -28,7 +27,7 @@ quiz:
     choices:
     - content: "Corporate Connected Environment"
       isCorrect: false
-      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+      explanation: "In this scenario, devices are connected to a corporate Wi-Fi network. This scenario is most suitable for internal users or within the corporate environment."
     - content: "Offline Secure Environment"
       isCorrect: false
       explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
@@ -39,7 +38,7 @@ quiz:
     choices:
     - content: "Corporate Connected Environment"
       isCorrect: false
-      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+      explanation: "In this scenario, devices are connected to a corporate Wi-Fi network. This scenario is most suitable for internal users or within the corporate environment."
     - content: "Offline Secure Environment"
       isCorrect: false
       explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."
@@ -50,7 +49,7 @@ quiz:
     choices:
     - content: "Corporate Connected Environment"
       isCorrect: false
-      explanation: "In this scenario, devices are connected to a corporate wi-fi network. This scenario is most suitable for internal users or within the corporate environment."
+      explanation: "In this scenario, devices are connected to a corporate Wi-Fi network. This scenario is most suitable for internal users or within the corporate environment."
     - content: "Offline Secure Environment"
       isCorrect: true
       explanation: "In this scenario, devices are connected to a highly restrictive network or are purely offline devices. This scenario is most suitable for highly secure environments, or internet connectivity restrictions in remote areas."

@@ -2,11 +2,13 @@
 uid: learn.wwl.trigger-github-actions-trunk-based-development
 metadata:
   title: Trigger GitHub Actions with feature-based development
-  description: "Learn how to trigger GitHub Actions with feature-based development to achieve machine learning operations or MLOps."
-  ms.date: 06/30/2023
+  description: Learn how to trigger GitHub Actions with feature-based development to achieve machine learning operations or MLOps.
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: azure-machine-learning
+  ms.collection: wwl-ai-copilot
 title: Trigger GitHub Actions with feature-based development
 summary: Learn how to protect your main branch and how to trigger tasks in the machine learning workflow based on changes to the code.
 abstract: |

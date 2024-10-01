@@ -3,16 +3,17 @@ uid: learn.azure.build-3d-scene-mixed-reality-unity
 metadata:
   title: Build a 3D Scene for mixed reality in Unity  
   description: Learn how to create a 3D Scene in Unity using the Microsoft Maps SDK or static terrain. Get familiar with mixed reality scene design, the Unity interface, and deploying your Unity project to a mixed reality device.
-  ms.date: 05/12/2021
+  ms.date: 03/12/2024
   author: JBrentJ
   ms.author: jejacks
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.service: mixed-reality
 title: Build a 3D Scene for mixed reality in Unity 
 summary: Create a 3D Scene in Unity using the Microsoft Maps SDK or static terrain. Your workflow will include designing a scene, building a windfarm, and deploying to a mixed reality device.
 abstract: |
   By the end of this module, you'll be able to:
-  - Create a 3D scene in Unity using static terrain data
-  - Create a dynamic 3D scene in Unity using Microsoft’s Maps SDK
+  - Create a 3D scene in Unity using static terrain data.
+  - Create a dynamic 3D scene in Unity using Microsoft's Maps SDK.
 levels:
 - beginner
 roles:
@@ -34,7 +35,7 @@ products:
 - windows-mixed-reality
 prerequisites: |
   - Set up a Mixed Reality project for Azure Digital Twins in Unity 
-  - Fundamental understanding of raster data / imagery
+  - Fundamental understanding of raster data/imagery
   - Awareness of the Microsoft Maps SDK
   - Bing Maps Account and Dev Key
 iconUrl: /training/achievements/build-3d-scene-mixed-reality-unity.svg

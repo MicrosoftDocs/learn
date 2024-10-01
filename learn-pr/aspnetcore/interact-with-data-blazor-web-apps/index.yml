@@ -7,10 +7,10 @@ metadata:
   ms.date: 02/09/2023
   author: csharpfritz
   ms.author: jefritz
-  ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: dotnet-architecture
-  ms.technology: blazor
+  manager: coxford
+  ms.topic: module
+  ms.service: dotnet-architecture
+  ms.subservice: blazor
 title: Interact with data in Blazor web apps
 summary: Design user interface elements for a web app by using Blazor components. You'll also obtain data and display it to the user on dynamic webpages.
 abstract: |
@@ -32,8 +32,6 @@ roles:
 products:
   - blazor
   - aspnet
-subjects:
-- development-tools
 units:
 - learn.interact-with-data-blazor-web-apps.introduction
 - learn.interact-with-data-blazor-web-apps.create-user-interfaces-with-blazor-components

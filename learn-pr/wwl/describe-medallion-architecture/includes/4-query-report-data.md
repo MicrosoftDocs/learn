@@ -1,21 +1,21 @@
-Now that your medallion architecture is in place, data teams and the business can start using it to query and report on data. Fabric has several tools and technologies that enable you to query and report on data in your lakehouse, including SQL endpoints and Direct Lake mode in Power BI datasets.
+Now that your medallion architecture is in place, data teams and the business can start using it to query and report on data. Fabric has several tools and technologies that enable you to query and report on data in your lakehouse, including SQL analytics endpoints and Direct Lake mode in Power BI semantic models.
 
 ## Query data in your lakehouse
 
-Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL endpoint to connect to your lakehouse from third-party tools and applications.
+Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL analytics endpoint to connect to your lakehouse from third-party tools and applications.
 
-The SQL endpoint in Fabric enables you to write queries,  manage the data model, and query data using the new visual query experience.
+The SQL analytics endpoint in Fabric enables you to write queries,  manage the semantic model, and query data using the new visual query experience.
 
-![Screenshot of the SQL endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
+![Screenshot of the SQL analytics endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
 
 > [!NOTE]
-> The SQL endpoint operates in **read-only** mode over lakehouse delta tables. To modify data in your lakehouse you can use dataflows, notebooks, or pipelines.
+> The SQL analytics endpoint operates in **read-only** mode over lakehouse delta tables. To modify data in your lakehouse you can use dataflows, notebooks, or pipelines.
 
-In addition to using the SQL endpoint for data exploration, you can also create a Power BI dataset in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also provisions an associated default dataset. The default dataset is a semantic model with metrics on top of lakehouse data.
+In addition to using the SQL analytics endpoint for data exploration, you can also create a Power BI semantic model in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also creates an associated default semantic model. The default semantic model is a semantic model with metrics on top of lakehouse data.
 
-When a Power BI report displays a data element, it fetches it from the underlying dataset, which in turn accesses a lakehouse for data retrieval. To enhance efficiency, the default dataset preloads frequently requested data into the cache and updates it as necessary. This approach is called Direct Lake mode and truly gives you the best of both worlds: the performance of a semantic model and the freshness of lakehouse data.
+![Screenshot of the Power BI semantic model with relationships between tables.](../media/dataset-view.png)
 
-![Screenshot of the Power BI dataset](../media/dataset-view.png)
+Data analysts connect to the semantic model using **Direct Lake mode**, in which the semantic model accesses data from a lakehouse. Direct Lake mode caches often-used data and refreshes it as required, combining the speed of a semantic model with the up-to-date data from a lakehouse.
 
 ## Tailor your medallion layers for different needs
 

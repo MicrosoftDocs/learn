@@ -33,7 +33,7 @@ To configure permissions for Microsoft-hosted agent pools:
 
 ## Using Azure Pipelines agent pool in your pipelines
 
-To use a specific agent pool in your Azure Pipelines, you need to specify the name of the image, using the YAML VM Image Label from [this](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted) table. For example, consider the following YAML file:
+To use a specific agent pool in your Azure Pipelines, you need to specify the name of the image, using the YAML VM Image Label from [this](/azure/devops/pipelines/agents/hosted) table. For example, consider the following YAML file:
 
 ```YAML
 trigger:
@@ -63,6 +63,6 @@ To practice configuring permissions for Microsoft-hosted agent pools and pipelin
 
 For more information about Microsoft-hosted agents and pools, see:
 
-- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
-- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
-- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
+- [Azure Pipelines agents.](/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](/azure/devops/pipelines/agents/pools-queues/)

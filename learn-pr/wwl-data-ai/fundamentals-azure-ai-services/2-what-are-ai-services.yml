@@ -3,12 +3,13 @@ uid: learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
 title: AI services on the Azure platform
 metadata:
   title: AI services on the Azure platform
-  description: "AI services on the Azure platform"
-  ms.date: 10/05/2023
+  description: AI services on the Azure platform
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.service: azure-ai-services
+  ms.date: 9/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-are-ai-services.md)]

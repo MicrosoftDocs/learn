@@ -38,7 +38,7 @@ If you choose the General Purpose tier and the vCore-based model, you have anoth
 
 ## Hardware
 
-The default hardware generation at this time is referred to as *Gen5* hardware. As technology advances, you can expect the available hardware options to change as well. For example, Fsv2-series (compute-optimized), M-series (memory-optimized), and DC-series (confidential computing) hardware options recently became available for SQL Database.
+The default hardware generation at this time is referred to as standard-series hardware, formerly known as Gen5. Premium-series hardware provides the latest and greatest premium storage and compute hardware.
 
 If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option. It can currently scale up to 40 vCores.  
 

@@ -1,8 +1,8 @@
-You've seen the general structure of a KQL query. Now try running a few sample queries.
+In the previous unit, we examined the general structure of a KQL query. Now let's try running a few sample queries.
 
 ## Access demo query environments
 
-Some of the products that use KQL offer free environments that you can use for practicing queries. Choose the tab below that corresponds to the query environment you want to use.
+Some of the products that use KQL offer free environments that you can use for practicing queries. Choose one of the following tabs that corresponds to the query environment you want to use.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
@@ -31,14 +31,14 @@ StormEvents
 
 Here's a step-by-step analysis of how the query processes the data.
 
-1. The query begins with the *StormEvents* table as the tabular input.
-1. It filters on records for which the *EventType* column is exactly equal to *Flood*. 
-1. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. 
+1. The query begins with the `StormEvents` table as the tabular input.
+1. It filters on records for which the `EventType` column is exactly equal to *Flood*.
+1. The resulting list is sorted in descending order based on the value in the `DamageProperty` column.
 1. Finally, the top 10 records are returned.
 
 ### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
-Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed by searching for and selecting **Logs** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
@@ -63,14 +63,14 @@ LAQueryLogs
 
 Here's a step-by-step analysis of how the query processes the data.
 
-1. The query begins with the *LAQueryLogs* table as the tabular input.
-1. It filters on records for which the *TimeGenerated* column is between 24 hours ago and now, meaning in the past day. 
-1. Then the resulting list is sorted in descending order by the value in the *ResponseDurationMs* column. 
+1. The query begins with the `LAQueryLogs` table as the tabular input.
+1. It filters on records for which the `TimeGenerated` column is between 24 hours ago and now, meaning in the past day.
+1. The resulting list is sorted in descending order based on the value in the `ResponseDurationMs` column.
 1. Finally, the top 10 records are returned.
 
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
-The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
+The Azure Resource Graph Explorer is accessed by searching for and selecting **Resource Graph Explorer** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>
@@ -92,8 +92,7 @@ resources
 
 Here's a step-by-step analysis of how the query processes the data.
 
-1. The query begins with the *Resources* table as the tabular input.
-1. It filters on records for which the *type* column contains the term *storage*. 
-1. Then the resulting list is sorted in descending order by the *LastEnabledTime* value in the dynamic field called *properties*. 
+1. The query begins with the `Resources` table as the tabular input.
+1. It filters on records for which the `type` column contains the term *storage*. 
+1. The resulting list is sorted in descending order based on the *LastEnabledTime* value in the dynamic field called `properties`.
 1. Finally, the top 10 records are returned.
----

@@ -8,5 +8,4 @@ Now that you've completed this module, you can:
 ## Learn more
 
 - [Composed custom models](/azure/ai-services/document-intelligence/concept-composed-models)
-- [Code samples](/samples/azure/azure-sdk-for-net/azure-form-recognizer-client-sdk-samples)
 - [Build your training dataset for a custom model](/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model)

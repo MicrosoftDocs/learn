@@ -9,8 +9,7 @@ metadata:
   author: aprilspeight
   ms.author: apspeigh
   #ms.learn-contact: smmark
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: None
 iconUrl: /training/achievements/get-started-with-azure-remote-rendering.svg
 levels:
@@ -21,7 +20,7 @@ roles:
 products: 
 - hololens
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.intro-to-azure-remote-rendering
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity

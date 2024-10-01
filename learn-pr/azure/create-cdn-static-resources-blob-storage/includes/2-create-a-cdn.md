@@ -31,16 +31,15 @@ If the data is present on the POP, the data is retrieved.
 
 If the data isn't present, the POP requests it from the origin server, return the data to the user and store local copy. Follow-on requests for the data are then local to the POP.
 
-There are four types of CDN available in Azure:
+The following CDN types are available in Azure:
 
 - Standard Microsoft
-- Standard Akamai
-- Standard Verizon
-- Premium Verizon
+- Standard Edgio
+- Premium Edgio
 
 The types vary by features and caching options.
 
-This module focuses on the **Standard Microsoft** CDN. For more information on each type, see the Further Reading section of the Summary unit.
+This module focuses on the **Standard Microsoft** CDN. For more information on each type, see the Further Reading section in the Summary unit.
 
 ## What is an Azure CDN?
 
@@ -52,13 +51,13 @@ The server locations are referred to as Point-of-presence (POP) locations. CDN's
 
 Features that Microsoft Azure CDN's offer are:
 
-- **Dynamic site acceleration** - speed up the delivery of static files
-- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`
-- **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace
-- **File compression** - increase performance by reducing the number of bytes in transit
-- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries/regions
+- **Dynamic site acceleration** - speed up the delivery of dynamic files.
+- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`.
+- **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace.
+- **File compression** - increase performance by reducing the number of bytes in transit.
+- **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries/regions.
 
-For more information on these features, see the Further Reading section of the Summary unit.
+For more information on these features, see the Further Reading section in the Summary unit.
 
 The benefits from using Microsoft Azure CDNs include:
 
@@ -69,7 +68,7 @@ The benefits from using Microsoft Azure CDNs include:
 
 ## Assessing the Suitability of CDNs
 
-CDNs are typically best suited to technologies that employ many large static files. They can also be useful where you need the ability to serve files to a large number of simultaneous users worldwide, for example at a product launch. However, the standard Microsoft CDN in Azure doesn't provide significant advantage with dynamic sites.
+CDNs are typically best suited to technologies that employ many large static files. They can also be useful where you need the ability to serve files to a large number of simultaneous users worldwide, for example at a product launch. However, the standard Microsoft CDN in Azure doesn't provide a significant advantage with dynamic sites.
 
 ## CDNs and Web Servers
 
@@ -101,12 +100,11 @@ When you create a profile, you can specify to create a CDN endpoint, or you can 
 
 When you create an endpoint, you must ensure that the endpoint type matches the origin source correctly. For example, static websites in Azure require an endpoint set to "custom origin." With storage accounts, where you can create a CDN matched to that account.
 
-For more information on integrating a storage account into an Azure CDN, see the Further Reading section of the Summary unit.
+For more information on integrating a storage account into an Azure CDN, see the Further Reading section in the Summary unit.
 
 ### POP Propagation Times
 
 Propagation times between POPs vary, according to which CDN profile and pricing tier you're using.
 
-- Azure CDN Microsoft Standard profile typically propagates in 10 minutes
-- Azure CDN Verizon Standard and Azure CDN Verizon Premium profile typically complete in 10 minutes
-- Azure CDN Akamai Standard profile usually propagates in 1 minute
+- Azure CDN Microsoft Standard profile typically propagates in 10 minutes.
+- Azure CDN Edgio Standard and Azure CDN Edgio Premium profile typically complete in 10 minutes.

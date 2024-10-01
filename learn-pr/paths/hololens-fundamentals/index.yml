@@ -9,8 +9,7 @@ metadata:
   author: aprilspeight
   ms.author: apspeigh
   #ms.learn-contact: smmark
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 prerequisites: None
 iconUrl: /training/achievements/hololens-fundamentals.svg
 levels:
@@ -23,7 +22,7 @@ roles:
 products: 
 - hololens
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.introduction-to-hololens
 - learn.choose-deployment-strategy-hololens

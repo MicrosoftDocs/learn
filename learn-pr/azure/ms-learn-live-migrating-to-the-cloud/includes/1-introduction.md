@@ -10,8 +10,6 @@ Check out this short trailer to get an overview of the technologies covered in t
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LJ8B]
 
-There's a deployed version of the application available at [vanarsdel-realestate.azurewebsites.net](https://vanarsdel-realestate2.azurewebsites.net).
-
 ## Use the Microsoft Learn Live Sandbox to get free access to Azure resources
 
 We use Azure throughout this series to create resources like Azure App Services, Azure SQL Database, and Azure Storage. Some of these resources are available for free while others are paid offers. To follow along with our series, you have two options.

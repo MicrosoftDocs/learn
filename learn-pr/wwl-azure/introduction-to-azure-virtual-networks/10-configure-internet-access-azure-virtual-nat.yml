@@ -4,17 +4,17 @@ title: Configure internet access with Azure Virtual NAT
 metadata:
   title: Configure internet access with Azure Virtual NAT
   description: "Configure internet access with Azure Virtual NAT"
-  ms.date: 08/16/2023
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/10-configure-internet-access-azure-virtual-nat.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "What is the purpose of NAT?"
     choices:

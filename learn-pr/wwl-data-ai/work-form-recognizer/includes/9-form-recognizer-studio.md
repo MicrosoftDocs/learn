@@ -1,7 +1,7 @@
 In addition to SDKs and the REST API, Azure Document Intelligence services can be accessed through a user interface called the Azure Document Intelligence Studio (preview), an online tool for visually exploring, understanding, and integrating features from the Azure Document Intelligence service. The Studio can be used to analyze form layouts, extract data from prebuilt models, and train custom models. 
 
 > [!div class="mx-imgBorder"]
-> ![Gif of Azure Document Intelligence Studio capabilities.](../media/form-recognizer-demo-v3p2.gif)
+> ![Gif of Azure Document Intelligence Studio capabilities.](../media/doc-intelligence-studio.png)
 
 The Azure Document Intelligence Studio currently supports the following projects: 
 - **Document analysis models**
@@ -16,14 +16,14 @@ To extract text, tables, structure, key-value pairs, and named entities with doc
 
 - Create an Azure Document Intelligence or Azure AI Services resource
 - Select either "Read", "Layout", or "General Documents" under the Document analysis models category 
-- Analyze your document. You will need your Azure Document Intelligence or Azure AI service endpoint and key.
+- Analyze your document. You'll need your Azure Document Intelligence or Azure AI service endpoint and key.
 
 ### Build prebuilt model projects
 To extract data from common forms with prebuilt models:
 
 - Create an Azure Document Intelligence or Azure AI Services resource
 - Select one of the "prebuilt models" including W-2s, Invoices, Receipts, ID documents, Health insurance, vaccination, and business cards.
-- Analyze your document. You will need your Azure Document Intelligence or Azure AI service endpoint and key.
+- Analyze your document. You'll need your Azure Document Intelligence or Azure AI service endpoint and key.
 
 ### Build custom model projects
 You can use Azure Document Intelligence Studio's custom service for the entire process of training and testing custom models.
@@ -35,8 +35,7 @@ To train a custom model and use it to extract data with custom models:
 - Create an Azure Document Intelligence or Azure AI Services resource
 - Collect at least 5-6 sample forms for training and upload them to your storage account container.
 - Configure cross-domain resource sharing (CORS). CORS enables Azure Document Intelligence Studio to store labeled files in your storage container.
-- Create a custom model project in Azure Document Intelligence Studio. You will need to provide configurations linking your storage container and Azure Document Intelligence or Azure AI Service resource to the project.
+- Create a custom model project in Azure Document Intelligence Studio. You'll need to provide configurations linking your storage container and Azure Document Intelligence or Azure AI Service resource to the project.
 - Use Azure Document Intelligence Studio to apply labels to text.
 - Train your model. Once the model is trained, you'll receive a Model ID and Average Accuracy for tags.
-- Test your model by analyzing a new form that was not used in training.
-
+- Test your model by analyzing a new form that wasn't used in training.

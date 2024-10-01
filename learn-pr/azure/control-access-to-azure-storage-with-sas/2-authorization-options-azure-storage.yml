@@ -3,11 +3,10 @@ uid: learn.control-access-to-azure-storage-with-sas.2-authorization-options-azur
 metadata:
   title: Authorization options for Azure Storage
   description: Authorization options for Azure Storage
-  ms.date: 03/06/2020
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/13/2023
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.topic: unit
 title: Authorization options for Azure Storage
 durationInMinutes: 5
 content: |

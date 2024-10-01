@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.explore-iot-hub-monitoring
+metadata:
+  title: Guided project - Explore Azure IoT Hub monitoring
+  description: "Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs."
+  ms.date: 11/05/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-guided-project
+  ms.service: iot-hub
+title: Guided project - Explore Azure IoT Hub monitoring
+summary: Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs.
+abstract: |
+  After you complete this module, you will be able to:
+  - Enable IoT Hub diagnostics logs and metrics.
+  - Configure alerts for IoT Hub metrics.
+  - Trigger alerts and verify records in the diagnostics log.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe Azure Monitor support and IoT Hub metrics.
+  - Describe IoT device connection state and lifecycle events.
+iconUrl: /training/achievements/iot-hub-monitoring.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.explore-iot-hub-monitoring.introduction
+- learn.wwl.explore-iot-hub-monitoring.prepare
+- learn.wwl.explore-iot-hub-monitoring.exercise-simulate-device
+- learn.wwl.explore-iot-hub-monitoring.exercise-setup-use metrics-diagnostic-logs-iot-hub
+- learn.wwl.explore-iot-hub-monitoring.exercise-configure-an-alert
+- learn.wwl.explore-iot-hub-monitoring.exercise-review-metrics-alerts-archive
+- learn.wwl.explore-iot-hub-monitoring.knowledge-check
+- learn.wwl.explore-iot-hub-monitoring.summary
+badge:
+  uid: learn.wwl.explore-iot-hub-monitoring.badge

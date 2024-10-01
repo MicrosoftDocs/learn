@@ -7,11 +7,10 @@ metadata:
   ms.date: 05/15/2021
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
     - devx-track-js
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-set-up-next-js-app.yml.md)]

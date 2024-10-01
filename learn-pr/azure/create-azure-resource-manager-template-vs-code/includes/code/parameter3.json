@@ -29,9 +29,9 @@
   "variables": {},
   "resources": [
     {
-      "name": "[parameters('storageName')]",
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2019-06-01",
+      "apiVersion": "2023-05-01",
+      "name": "[parameters('storageName')]",
       "tags": {
         "displayName": "[parameters('storageName')]"
       },
@@ -39,7 +39,6 @@
       "kind": "StorageV2",
       "sku": {
         "name": "[parameters('storageSKU')]",
-        "tier": "Standard"
       }
     }
   ],

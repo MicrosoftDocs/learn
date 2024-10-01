@@ -4,11 +4,10 @@ title: Understand Application Insights
 metadata:
   title: Understand Application Insights
   description: "Understand Application Insights"
-  ms.date: 10/05/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-application-insights.md)]

@@ -4,11 +4,10 @@ title: Use reverb to add distance to spatial audio
 metadata:
   title: Use reverb to add distance to spatial audio
   description: Description to Use reverb to add distance to spatial audio
-  ms.date: 06/26/2023
+  ms.date: 02/12/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/10-use-reverb-to-add-distance-to-spatial-audio.md)]

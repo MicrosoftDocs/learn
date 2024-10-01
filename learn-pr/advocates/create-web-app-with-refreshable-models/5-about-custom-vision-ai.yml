@@ -3,11 +3,12 @@ uid: learn.advocates.create-web-app-with-refreshable-models.5-about-custom-visio
 metadata:
   title: About Custom Vision AI
   description: What is Custom Vision AI?
-  author: jlooper
-  ms.date: 02/10/2020
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: GitHubber17
+  ms.author: chnoring
+  ms.date: 12/22/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: About Custom Vision AI
 durationInMinutes: 5

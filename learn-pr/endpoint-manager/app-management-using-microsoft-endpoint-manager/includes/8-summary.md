@@ -1,6 +1,6 @@
 You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it's used with personal devices, only organization-related access and data are managed.
 
-In this module, you've learned about the possible migration path to Microsoft Intune. Here are some of the things you covered.
+In this module, you've learned about the possible migration path to Microsoft Intune. Here are some of the things you covered:
 
 - The app lifecycle follows the following stages: add, assign, configure, protect, and retire.
 - App configuration policies that can help you eliminate app setup problems.

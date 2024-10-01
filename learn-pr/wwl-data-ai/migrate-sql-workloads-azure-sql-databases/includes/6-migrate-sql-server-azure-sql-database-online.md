@@ -46,7 +46,7 @@ Follow the steps below to migrate the table `[Person].[Person]` from *AdventureW
 | `@subscriber_password` | Password for the SQL user. |
 | `@working_directory` | Replication working directory, change this location as appropriate. |
 
-Adjust the parameters above according to your own environment when running the script. The script assumes the publisher and the subscriber are the same, which is a requirement when replicating to Azure SQL Database.
+Adjust the parameters above according to your own environment when running the script. 
 
 ### Create the distributor
 

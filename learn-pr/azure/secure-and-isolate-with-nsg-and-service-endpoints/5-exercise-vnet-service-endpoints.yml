@@ -3,13 +3,12 @@ uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.5-exercise-vnet-ser
 metadata:
   title: Exercise - Restrict access to Azure Storage by using service endpoints
   description: Exercise - Restrict access to Azure Storage by using service endpoints
-  ms.date: 09/18/2023
+  ms.date: 10/11/2023
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
+  ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  ms.prod: learning-azure
 title: Exercise - Restrict access to Azure Storage by using service endpoints
 durationInMinutes: 10
 sandbox: true

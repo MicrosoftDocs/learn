@@ -1,4 +1,4 @@
-You updated your workflow to build and deploy your website's application to the Azure App Service app defined in your Bicep file. But the smoke test job is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your workflow to build and deploy the database's schema. You'll also update your workflow to add some sample product data for your test environment so that your team can try out the website.
+You updated your workflow to build and deploy your website's application to the Azure App Service app defined in your Bicep file, but the smoke test job is failing because the database isn't working yet. In this unit, you'll deploy a new Azure SQL logical server and database, and you'll configure your workflow to build and deploy the database's schema. You'll also update your workflow to add some sample product data for your test environment so that your team can try out the website.
 
 In the process, you'll:
 
@@ -60,7 +60,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
    :::code language="bicep" source="code/7-main.bicep" range="39-40" :::
 
    > [!NOTE]
-   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the Summary page at the end of the module.
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in this module's Summary page.
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 
@@ -98,25 +98,25 @@ Your website developers have prepared a Visual Studio database project that depl
 
 You need to securely store your Azure SQL logical server's administrator password for each environment. You decide to use GitHub secrets to protect the information.
 
-1. In your browser, go to **Settings** > **Secrets** > **Actions**.
+1. In your browser, go to **Settings** > **Secrets and variables** > **Actions**.
 
    :::image type="content" source="../media/7-secrets.png" alt-text="Screenshot of GitHub that shows the Secrets menu item under the Settings category.":::
 
 1. Select the **New repository secret** button.
 
-1. Enter _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST_ as the secret name, and _SecurePassword!111_ as the value.
+1. Enter _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST_ as the secret name and _SecurePassword!111_ as the value.
 
    :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
 
 1. Select **Add secret**.
 
-1. Repeat the process to add another secret named _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION_ as the secret name, and _SecurePassword!999_ as the value. Select **Add secret**.
+1. Repeat the process to add another secret named _SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION_ as the secret name and _SecurePassword!999_ as the value. Select **Add secret**.
 
 ## Add the secrets and inputs to your workflow
 
 1. In Visual Studio Code, open the _deploy.yml_ file in the _.github/workflows_ folder.
 
-1. At the top of the file, define a new input named `sqlServerAdministratorLogin`, and a new secret named `sqlServerAdministratorLoginPassword`:
+1. At the top of the file, define a new input named `sqlServerAdministratorLogin` and a new secret named `sqlServerAdministratorLoginPassword`:
 
    :::code language="yaml" source="code/7-deploy.yml" range="1-28" highlight="15-17, 27-28" :::
 
@@ -124,11 +124,11 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 1. Open the _workflow.yml_ file.
 
-1. In the _deploy-test_ definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
+1. In the _deploy-test_ definition, define a value for the `sqlServerAdministratorLogin` input and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
    :::code language="yaml" source="code/7-workflow.yml" range="24-38" highlight="9, 15" :::
 
-1. Repeat the process in the _deploy-production_ definition, with the production environment's values:
+1. Repeat the process in the _deploy-production_ definition with the production environment's values:
 
    :::code language="yaml" source="code/7-workflow.yml" range="40-57" highlight="12, 18" :::
 
@@ -158,7 +158,7 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 ## Add database and data seed jobs
 
-In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the workflow previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
+In this section, you define the steps that are required to deploy your website's database components. First, you add a step to deploy the DACPAC file that the workflow previously built. Then, you add sample data to the database and storage account, but only for nonproduction environments.
 
 1. Below the _deploy-website_ job, add a new job to deploy the DACPAC file:
 
@@ -168,13 +168,13 @@ In this section, you define the steps that are required to deploy the database c
 
    :::code language="yaml" source="code/7-deploy.yml" range="141-161" :::
 
-   Notice that the _Add test data to database_ step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
+   Notice that the _Add test data to database_ step has a condition applied to it. That is, it runs only for nonproduction environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
 
 1. Below the job you just added, and above the _smoke-test_ job, define another job to upload some sample toy images to the blob container by using Azure CLI:
 
    :::code language="yaml" source="code/7-deploy.yml" range="163-183" :::
 
-   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. But the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using various operating systems to achieve your requirements.
+   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run, but the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using various operating systems to achieve your requirements.
 
 ## Update the dependencies for the smoke test job
 
@@ -228,7 +228,7 @@ In this section, you define the steps that are required to deploy the database c
 
    Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
 
-   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of GitHub Actions showing the workflow log for the test environment's deploy-website job. The URL of the App Service app is highlighted.":::
+   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of GitHub Actions showing the workflow log for the test environment's deploy-website job. The App Service app URL is highlighted.":::
 
 1. Select **Toys**.
 

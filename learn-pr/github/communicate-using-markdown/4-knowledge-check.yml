@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
-  ms.date: 06/26/2020
+  ms.date: 05/30/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: training-unit
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -22,7 +22,7 @@ quiz:
     - content: "`**Hello, *world*!**`"
       isCorrect: false
       explanation: "Incorrect. This snippet would produce **Hello, *world*!**."
-    - content: "`*Hello, **world**!*`"
+    - content: "`***Hello, world!***`"
       isCorrect: true
       explanation: "Correct. Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
     - content: "`### Hello, world!`"
@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "Just add the HTML inline."
       isCorrect: true
-      explanation: "Correct. Markdown isn't a complete replacement for HTML. You may need to add HTML to get the final results you're looking for."
+      explanation: "Correct. Markdown isn't a complete replacement for HTML. You might need to add HTML to get the final results you're looking for."
     - content: "Cut the content. If it's not supported in Markdown, then it's probably not worth including."
       isCorrect: false
       explanation: "Incorrect. You can include HTML snippets in Markdown."

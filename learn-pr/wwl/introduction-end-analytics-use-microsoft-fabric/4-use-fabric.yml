@@ -4,11 +4,10 @@ title: Enable and use Microsoft Fabric
 metadata:
   title: Enable and use Microsoft Fabric
   description: "Enable and use Microsoft Fabric"
-  ms.date: 09/30/2023
+  ms.date: 04/12/2024
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.author: anrudduc
+  ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai

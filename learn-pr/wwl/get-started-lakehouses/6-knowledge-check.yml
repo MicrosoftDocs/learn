@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2023
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.service: fabric
+  ms.topic: unit
   ms.custom:
   - build-2023
   - build-2023-dataai
@@ -44,9 +43,9 @@ quiz:
     - content: "Create a notebook."
       isCorrect: true
       explanation: "Correct. A notebook enables interactive Spark coding."
-    - content: "Switch to the SQL Endpoint mode."
+    - content: "Switch to the SQL analytics endpoint mode."
       isCorrect: false
-      explanation: "Incorrect. The SQL Endpoint mode doesn't support interactive Spark code."
+      explanation: "Incorrect. The SQL analytics endpoint mode doesn't support interactive Spark code."
     - content: "Create a Dataflow (Gen2)."
       isCorrect: false
       explanation: "Incorrect. A dataflow doesn't provide an interactive Spark coding interface."

@@ -1,9 +1,8 @@
-In this unit, you'll create and run a Hello World Node.js script.
+In this unit, you create and run a Node.js script.
 
 ## Start your dev container in a browser
 
 A [development container](https://containers.dev/) environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces in a browser or locally using Visual Studio Code.
-
 
 [GitHub Codespaces](https://docs.github.com/codespaces) runs a development container managed by GitHub with [Visual Studio Code for the Web](https://code.visualstudio.com/docs/editor/vscode-web) as the user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
@@ -15,7 +14,7 @@ A [development container](https://containers.dev/) environment is available with
     > [!div class="nextstepaction"]
     > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=278117471)
 
-1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**
+1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create codespace**
 
     :::image type="content" source="../media/codespaces/codespace-configuration.png" alt-text="Screenshot of the confirmation screen before creating a new codespace.":::
 
@@ -69,22 +68,35 @@ Hello World, from the REPL.
 
 To exit the REPL console, enter Ctrl + C twice. 
 
-
 ## Create a Node.js script
 
 Node.js also supports running code from files.
 
 1. Create a new folder named **hello-world** in the dev container.
+1. Open the new folder in a terminal by right-clicking the folder name, then selecting **Open in Integrated Terminal**.
+1. In the terminal, initialize the node project.
+
+    ```console
+    npm init -y
+    ```
+
+1. Install a Node package, `node-fetch` to make async HTTP requests.
+
+    ```console
+    npm install node-fetch
+    ```
+
+1. Open the `package.json` file and add the following property to allow top-level async/await.
+
+    ```json
+    "type":"module",
+    ```
 
 1. Create a file named **index.js** in the new folder.
 
 1. Copy the following code into the **index.js** file:
 
-   ```javascript
-   console.log('Hello World, from a script file.');
-   ```
-
-1. Open the new folder in a terminal by right-clicking the folder name, then selecting **Open in Integrated Terminal**.
+    :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro-esm/5-try/index-1.js":::
 
 1. In the terminal, enter the `node` command followed by the name of the file index.js:
 
@@ -92,16 +104,44 @@ Node.js also supports running code from files.
    node index.js
    ```
 
-You should see the following output:
+    You should see the following output:
 
-```output
-Hello World, from a script file.
-```
+   ```output
+    Hello World, from a script file.
+   ```
 
-You have now run your first Node.js JavaScript code. Close the browser tab to stop the dev container.
+You have now run your first Node.js JavaScript code. 
+
+- Question: Is console.log synchronous or asynchronous?
+- Answer: The `console.log` method appears in development to execute immediately and is therefore assumed to be async. There's no guarantee of async behavior for this method so it must be considered synchronous. Because the code execution *can* block until the `console.log` method is finished, you're cautioned from keeping `console.log` statements in your code in production.
+
+## Add a top-level asynchronous function
+
+The following top-level asynchronous code requests an HTTP JSON data source then displays it.
+
+1. Add the following code to the `index.js` file to create an asynchronous HTTP request:
+
+    :::code language="javascript" source="~/../microsoftdocs-node-essentials/nodejs-intro-esm/5-try/top-level-async-await.js":::
+
+    The `https.get` method makes an HTTP request to the Node.js website and returns the response. The `get` method takes two parameters: the URL to request and a callback function that is called when the response is received. The callback function takes a single parameter, `res`, which is the response object.
+
+1. Rerun the application:
+
+    ```javascript
+    node index.js
+    ```
+
+1. The order of the console logs is as follows:
+
+    ```output
+    start
+    statusCode: 200
+    end
+    ```
+
+From the output, you can see the event loop in action. The HTTP method is called and put in the task queue, waiting for it to return. The event loop takes the next task, which is the console.log method.
 
 ## Stop your dev container
-
 
 Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
 
@@ -110,9 +150,9 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespaces sourced from the [`azure-samples/minimal-api-work-with-databases`](https://github.com/azure-samples/minimal-api-work-with-databases) GitHub repository.
+1. Locate your currently running Codespaces sourced from the [`MicrosoftDocs/node-essentials`](https://github.com/MicrosoftDocs/node-essentials) GitHub repository.
 
-    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running Codespaces including their status and templates.":::
 
 1. Open the context menu for the codespace and select **Delete**.
 

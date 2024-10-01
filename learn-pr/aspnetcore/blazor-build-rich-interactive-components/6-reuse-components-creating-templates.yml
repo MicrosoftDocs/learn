@@ -8,8 +8,7 @@ metadata:
   ms.date: 10/10/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-reuse-components-creating-templates.md)]

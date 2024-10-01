@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.groups
+title: Create, configure, and manage groups
+metadata:
+  title: Create, configure, and manage groups
+  description: "Create, configure, and manage groups"
+  ms.date: 01/31/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-groups.md)]

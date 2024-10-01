@@ -5,14 +5,12 @@ metadata:
   unitType: exercise
   title: "Exercise: Consume a model in a .NET console app"
   description: "Use a machine learning model trained with Model Builder in a .NET console application."
-  ms.date: 10/25/2021
+  ms.date: 07/30/2024
   author: luisquintanilla
   ms.author: chnoring
-  ms.manager: markl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
   ms.custom:
-    - team=nextgen
+    - team=xloud_advocates
     - devx-track-dotnet
 durationInMinutes: 2
 content: |

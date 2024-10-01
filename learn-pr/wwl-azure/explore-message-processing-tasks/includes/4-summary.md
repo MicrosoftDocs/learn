@@ -1,1 +1,0 @@
-Your team will be responsible for configuring a solution capable of processing and analyzing sensor telemetry using Azure IoT Hub message routing and Azure Stream Analytics jobs. The experience that you have gained by implementing the two service technologies in a test environment will help to ensure future success.

@@ -4,10 +4,12 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
-  ms.date: 09/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.devlang: bicep
 title: Build your first Bicep template
 summary: Define Azure resources within a Bicep template. Improve the consistency and reliability of your deployments, reduce the manual effort required, and scale your deployments across environments. Your template will be flexible and reusable by using parameters, variables, expressions, and modules.

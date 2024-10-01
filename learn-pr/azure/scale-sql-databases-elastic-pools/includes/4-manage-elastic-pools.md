@@ -2,9 +2,9 @@ SQL elastic pools can help reduce server costs. To make effective use of elastic
 
 ## DTU-based pricing model
 
-A database transaction unit (DTU) is a unit of measurement for the performance of a service tier in Azure, and is based on a bundled measure of compute, storage, and IO resources. Compute sizes are expressed in terms of Database Transaction Units (DTUs) for single databases or elastic Database Transaction Units (eDTUs) for elastic pools.
+A database transaction unit (DTU) is a unit of measurement for the performance of a service tier in Azure, and is based on a bundled measure of compute, storage, and IO resources. Compute sizes are expressed in terms of DTUs for single databases or elastic database transaction units (eDTUs) for elastic pools.
 
-If demand exceeds the available resources for your tier for any resource (CPU, storage, or IO), the performance of your database is throttled. This model is best for customers who want simple, pre-configured resource options available in three tiers: **Basic**, **Standard**, and **Premium**.
+If demand exceeds the available resources for your tier for any resource (CPU, storage, or IO), the performance of your database is throttled. This model is the simplest and is available in three tiers: *basic*, *standard*, and *premium*.
 
 ## vCore-based pricing model
 
@@ -14,7 +14,7 @@ The vCore-based purchasing model gives you flexibility and control over individu
 
 The following chart provides a comparison of the two pricing models:
 
-![Diagram comparing the DTU versus the vCore Pricing Model.](../media/DTUvCore.png)
+:::image type="content" source="../media/DTUv-core.png" alt-text="Diagram that compares the DTU versus the vCore pricing model.":::
 
 ## Review cost estimates
 
@@ -22,8 +22,8 @@ The Azure portal displays the results of your pool settings as an estimated mont
 
 #### DTU-based pricing model
 
-![Screenshot showing the DTU Pricing Model.](../media/DTUPricing.png)
+:::image type="content" source="../media/DTU-pricing.png" alt-text="Screenshot that shows the DTU pricing model." lightbox="../media/DTU-pricing.png":::
 
 #### vCore-based pricing model
 
-![Screenshot showing the vCore Pricing Model.](../media/VCorePricing.png)
+:::image type="content" source="../media/VCore-pricing.png" alt-text="Screenshot that shows the vCore pricing model." lightbox="../media/VCore-pricing.png":::

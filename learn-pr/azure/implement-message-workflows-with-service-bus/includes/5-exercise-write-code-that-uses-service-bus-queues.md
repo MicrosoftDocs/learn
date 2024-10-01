@@ -13,11 +13,13 @@ You must configure two pieces of information in your two console apps to access 
 
 You can get these values from the connection string.
 
-1. In Azure Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
+1. Run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name RootManageSharedAccessKey \
         --query primaryConnectionString \
         --output tsv \
@@ -27,7 +29,7 @@ You can get these values from the connection string.
     The last line in the response is the connection string, which contains the endpoint for your namespace and the shared access key. It should resemble the following example:
 
     ```output
-    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxx
     ```
 
 1. Copy the connection string from Cloud Shell. You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
@@ -61,7 +63,7 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code:
 
     ```csharp
     const string QueueName = "salesmessages";
@@ -149,7 +151,7 @@ You can get these values from the connection string.
     {
         class Program
         {
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxx";
             const string QueueName = "salesmessages";
     
             static void Main(string[] args)
@@ -186,11 +188,12 @@ You can get these values from the connection string.
         }
     }
     ```
+
 1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Send a message to the queue
 
-1. In the Cloud Shell (bottom window of the right pane) where you see commands, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
+1. In the Cloud Shell, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -212,7 +215,7 @@ You can get these values from the connection string.
 
     ```azurecli
     az servicebus queue show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name salesmessages \
         --query messageCount \
         --namespace-name <namespace-name>
@@ -440,7 +443,7 @@ Run the following code to confirm that all the messages have been removed from t
 
 ```azurecli
 az servicebus queue show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name salesmessages \
     --query messageCount \
     --namespace-name <namespace-name>

@@ -12,10 +12,10 @@ Azure DevOps Projects creates a CI/CD pipeline in Azure DevOps. First, you'll ne
 
     | Setting | Value |
     | --- | --- |
-    | **Deployment scope** |
+    | **Deployment scope** | |
     | Subscription | Select your subscription |
     | Resource group | Select a name from the dropdown, or select the **Create New** link, and in the **Name** text box, enter a name. |
-    | **Parameters** |
+    | **Parameters** | |
     | Region | Select the same region as your resource group |
     | Resource Name Suffix | Enter a globally unique value |
 
@@ -86,7 +86,7 @@ This repository contains an Azure DevOps build definition, which is preconfigure
 
 1. Now you need to add build variables in order to run the build successfully. You'll need to obtain:
 
-   - Azure Container Registry host name as `acr.host`
+   - Azure Container Registry login server name as `acr.host`
    - Azure Container Registry username as `acr.user`
    - Azure Container Registry password as `acr.password`
 
@@ -110,13 +110,13 @@ This repository contains an Azure DevOps build definition, which is preconfigure
 
 1. Go back to Azure DevOps project, and navigate to **Pipelines**.
 
-1. In the pipeline you ran earlier, select the far left vertical ellipsis, and then select **Edit**.
+1. In the pipeline you ran earlier, select the far right vertical ellipsis, and then select **Edit**.
 
-1. In the upper left, select **Variables**. The **New variable** pane appears.
+1. In the upper right, select **Variables**. The **New variable** pane appears.
 
     ![The illustration shows adding new variables to the pipeline.](../media/add-variables.png)
 
-1. Add four variables with names and values by slecting **OK** after each entry. When all four variables have been entered, select **Save**, and then select **Run**. The **Run pipeline** pane appears. Select **Run**.
+1. Add four variables `acr.host`, `acr.user`, `acr.password`, and `appinsights.instrumentationkey` using the values you copied from the Azure portal. Select **OK** after each entry. When all four variables have been entered, select **Save**, and then select **Run**. The **Run pipeline** pane appears. Select **Run**.
 
 1. Review the status of the pipeline by going back to **Pipelines**. The build should finish successfully as follows.
 
