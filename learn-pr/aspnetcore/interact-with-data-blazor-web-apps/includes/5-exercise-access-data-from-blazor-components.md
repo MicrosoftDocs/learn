@@ -183,7 +183,6 @@ The app checks to see if there's an existing SQLite database and creates one wit
 1. Insert this segment above the `app.Run();` method:
 
     ```csharp
-    ...
     // Initialize the database
     var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
     using (var scope = scopeFactory.CreateScope())
@@ -214,7 +213,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
 We can now replace the hard-coded pizza in the **Index.razor** page.
 
-1. In the file explorer, select **Index.razor**.
+1. In the file explorer, expand **Pages** and then select **Index.razor**.
 1. Replace the existing `OnInitialized()` method with:
 
     ```csharp
