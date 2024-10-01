@@ -5,12 +5,3 @@ Microsoft Fabric includes many data governance features as is. You can also use 
 Suppose you work as a data analyst and system architect at a health care provider. You have a large quantity of data on your products, services, and patients. You use Microsoft Fabric to store, analyze, manipulate, and govern this data. Now, you want to find out if Microsoft Purview helps you protect data and ensure compliance.
 
 In this module, you'll learn about the data governance features that Purview adds to Fabric and how to use them for the highest level of compliance, security, and discoverability.
-
-## Learning objectives
-
-At the end of this module, you'll be able to:
-
-- Describe the data governance features Microsoft Fabric includes before adding Microsoft Purview.
-- Justify the addition of Microsoft Purview for robust data governance and protection.
-- Connect Microsoft Purview to Microsoft Fabric.
-- Investigate Microsoft Fabric data in the Microsoft Purview hub.

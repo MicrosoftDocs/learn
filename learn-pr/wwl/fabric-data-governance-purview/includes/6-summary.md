@@ -3,6 +3,6 @@ At the healthcare provider you work for, your use of Microsoft Fabric ensures co
 ## Learn more
 
 - [Microsoft Purview documentation](/purview/)
-- [Microsoft Fabric get started documentation](fabric/get-started/)
-- [Microsoft Fabric governance documentation](fabric/governance/)
+- [Microsoft Fabric get started documentation](/fabric/get-started/)
+- [Microsoft Fabric governance documentation](/fabric/governance/)
 - [Use Microsoft Purview to govern Microsoft Fabric](/fabric/governance/microsoft-purview-fabric)

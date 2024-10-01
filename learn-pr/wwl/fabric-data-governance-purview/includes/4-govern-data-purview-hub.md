@@ -14,7 +14,7 @@ The stages to complete are:
 
 1. Register the Fabric tenant as a data source in Purview:
 
-    ![A screenshot showing how to select Fabric as a data source in Purview.](../media/select-fabric-data-source.png#lightbox)
+    ![A screenshot showing how to select Fabric as a data source in Purview.](../media/select-fabric-data-source.png)
 
 1. Configure Purview to authenticate with Fabric, for example by creating and selecting a managed identity in **Microsoft Entra ID**.
 1. Create a scan in Purview that uses the Fabric data source.
@@ -24,11 +24,9 @@ The stages to complete are:
 
 ### Connect Purview to Fabric in a different tenant
 
-If Microsoft Fabric is in a different tenant from Purview, all the same functionality is supported except that Purview's live view isn't available for Fabric items.
+If Microsoft Fabric is in a different tenant from Purview, all the same functionality is supported, except that Purview's live view isn't available for Fabric items.
 
-When you register the Fabric tenant in Purview, the system can't identify it automatically. Instead you must obtain and manually enter the tenant ID:
-
-![A screenshot showing how to enter the Fabric tenant ID as a data source in Purview.](../media/register-cross-tenant.png)
+When you register the Fabric tenant in Purview, the system can't identify it automatically, so you must obtain and manually enter the tenant ID.
 
 Finally, you can't use a managed identity for authentication in cross-tenant connections. Instead, use a service principal or delegated authentication.
 
