@@ -40,11 +40,11 @@ The display you see in the hub depends on your role:
 
 - Fabric administrators see information about their entire organization's Fabric data estate. At the top are links to Purview tools, including the **Data Catalog**, **Information Protection**, and **Audit**. Underneath, the main **Microsoft Fabric data** section displays tables and graphs that analyze the entire organization's items in Fabric.
 
-    [![A screenshot showing what an administrator sees in the Purview hub in Fabric.](../media/microsoft-purview-hub-general-admin-view.png)](../media/microsoft-purview-hub-general-admin-view.png)
+    [![A screenshot showing what an administrator sees in the Purview hub in Fabric.](../media/microsoft-purview-hub-general-admin-view.png)](../media/microsoft-purview-hub-general-admin-view.png#lightbox)
 
 - Other users only see information about their own Fabric items and data. At the top are links to the Purview tools the current user can access, such as **Get started with Microsoft Purview** and the **Data Catalog**. Underneath, the main **Microsoft Fabric data** section displays tables and graphs that analyze only items in Fabric that you have permission to access.
 
-    [![A screenshot showing what a data owner sees in the Purview hub in Fabric.](../media/microsoft-purview-hub-general-data-owner-view.png)](../media/microsoft-purview-hub-general-data-owner-view.png)
+    [![A screenshot showing what a data owner sees in the Purview hub in Fabric.](../media/microsoft-purview-hub-general-data-owner-view.png)](../media/microsoft-purview-hub-general-data-owner-view.png#lightbox)
 
 ## Getting insights about Fabric
 
@@ -72,7 +72,7 @@ In your health care provider, for example, patient records are highly sensitive.
 
 In the **Microsoft Fabric data** section, there's a button labeled **Open full report**. Select this button to view the full Purview hub insights report, which has greater detail and further analysis:
 
-[![A screenshot showing what an administrator sees in the Purview hub full report.](../media/microsoft-purview-hub-full-report-admin.png)](../media/microsoft-purview-hub-full-report-admin.png)
+[![A screenshot showing what an administrator sees in the Purview hub full report.](../media/microsoft-purview-hub-full-report-admin.png)](../media/microsoft-purview-hub-full-report-admin.png#lightbox)
 
 The report is divided into several pages:
 
