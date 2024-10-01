@@ -15,45 +15,45 @@ quiz:
 
   - content: "How many access keys are provided for accessing your Azure storage account?"
     choices:
-    - content: "1"
+    - content: "One"
       isCorrect: false
-      explanation: "Each storage account has two access keys. This lets you follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
-    - content: "2"
+      explanation: "Each storage account has two access keys so that you can follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
+    - content: "Two"
       isCorrect: true
-      explanation: "Each storage account has two access keys. This lets you follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
-    - content: "3"
+      explanation: "Each storage account has two access keys so that you can follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
+    - content: "Three"
       isCorrect: false
-      explanation: "Each storage account has two access keys. This lets you follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
-    - content: "4"
+      explanation: "Each storage account has two access keys so that you can follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
+    - content: "Four"
       isCorrect: false
-      explanation: "Each storage account has two access keys. This lets you follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
+      explanation: "Each storage account has two access keys so that you can follow the best-practice guideline of periodically replacing the key used by your applications without incurring downtime."
 
   - content: "You can use either the REST API or the Azure client library to programmatically access a storage account. What is the primary advantage of using the client library?"
     choices:
     - content: "Cost"
       isCorrect: false
-      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Availability"
       isCorrect: false
-      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Localization"
       isCorrect: false
-      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Convenience"
       isCorrect: true
-      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
 
-  - content: "Which of the following is a good analogy for the access keys of a storage account?"
+  - content: "Which of the following answers is a good analogy for the access keys of a storage account?"
     choices:
     - content: "IP Address"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access, similar to sign-in credentials like a username and password."
     - content: "REST Endpoint"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access, similar to sign-in credentials like a username and password."
     - content: "Username and password"
       isCorrect: true
-      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access, similar to sign-in credentials like a username and password."
     - content: "Cryptographic algorithm"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access, similar to sign-in credentials like a username and password."

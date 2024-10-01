@@ -1,6 +1,6 @@
 ::: zone pivot="csharp"
 
-Let's add support to our .NET core application to retrieve a connection string from a configuration file. We'll start by adding the necessary plumbing to manage a configuration in a JSON file.
+Let's add support to our .NET core application for retrieving a connection string from a configuration file. We start by adding the necessary plumbing to manage a configuration in a JSON file.
 
 ## Create a JSON configuration file
 
@@ -16,7 +16,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you're working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you're working in Azure Cloud Shell (to the right), we recommend the Cloud Shell editor. Use the following command to open the editor in either environment:
+1. Open the project in an editor. If you're working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you're working in Azure Cloud Shell (on the right-hand side of your screen), we recommend the Cloud Shell editor. Use the following command to open the editor in either environment:
 
     ```bash
     code .
@@ -34,7 +34,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Save the file using the keyboard shortcut (<kbd>Ctrl+S</kbd>) or select **Save** from the context menu (select the ellipsis `...` icon in the editor's title bar).
 
-1. Now, we need use an Azure command to obtain the actual storage-account connection string. In Cloud Shell session, paste the following command, replacing `<name>` with the unique storage account name that you created in the previous exercise, and then press <kbd>Enter</kbd> to run the command:
+1. Now, we need to use an Azure command to obtain the actual storage-account connection string. In your Cloud Shell session, paste the following command, replacing `<name>` with the unique storage account name that you created in the previous exercise, and then press <kbd>Enter</kbd> to run the command:
 
     ```azurecli
     az storage account show-connection-string \
@@ -51,7 +51,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the `<value>` placeholder with this connection string.
 
-1. Press <kbd>Ctrl+S</kbd> to save the file.
+1. Save the file by pressing <kbd>Ctrl+S</kbd>.
 
 1. In the editor, open the project file **PhotoSharingApp.csproj**.
 
@@ -65,19 +65,19 @@ Let's add support to our .NET core application to retrieve a connection string f
     </ItemGroup>
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save the file. (You must save this file, or you'll lose the change when you add the following package!)
+1. Save the file by pressing <kbd>Ctrl+S</kbd>. You must save this file, or you lose the change when you add the following package!
 
-## Add support to read a JSON configuration file
+## Add support for reading a JSON configuration file
 
-In Cloud Shell console, copy and run the following code to add a reference to the **Microsoft.Extensions.Configuration.Json** NuGet package:
+In the Cloud Shell console, copy and run the following code to add a reference to the **Microsoft.Extensions.Configuration.Json** NuGet package:
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Configuration.Json
 ```
 
-## Add code to read the configuration file
+## Add code for reading the configuration file
 
-Now that we've added the required libraries to enable reading the configuration, we need to enable that functionality in our console application.
+Now that we added the required libraries to enable reading the configuration, we need to enable that functionality in our console application.
 
 1. In the editor, select **Program.cs**.
 
@@ -139,7 +139,7 @@ Now that we've added the required libraries to enable reading the configuration,
 
 ::: zone pivot="javascript"
 
-Let's add support to our Node.js application to retrieve a connection string from a configuration file. We'll start by adding the necessary plumbing to manage a configuration from our JavaScript file.
+Let's add support to our Node.js application for retrieving a connection string from a configuration file. We start by adding the necessary plumbing to manage a configuration from our JavaScript file.
 
 ## Create an .env configuration file
 
@@ -192,7 +192,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 1. Copy the connection string, and replace `<value>` in the **.env** file with this connection string.
 
-1. Press <kbd>Ctrl+S</kbd> to save the file.
+1. Save the file by pressing <kbd>Ctrl+S</kbd>.
 
 ## Add support to read an environment configuration file
 
@@ -204,19 +204,19 @@ Node.js apps can include support to read from the **.env** file by adding the **
     npm install dotenv --save
     ```
 
-## Add code to read the configuration file
+## Add code for reading the configuration file
 
-Now that we've added the required libraries to enable reading the configuration, we need to enable that functionality in our application.
+Now that we added the required libraries to enable reading the configuration, we need to enable that functionality in our application.
 
 1. In the editor, open the **index.js** file.
 
-1. At the top of the file is a line of code `#!/usr/bin/env node`. Underneath that line, add following line of code:
+1. At the top of the file, is the line `#!/usr/bin/env node`. Underneath that line, add following code:
 
     ```javascript
     require('dotenv').config();
     ```
 
-1. Press <kbd>Ctrl+S</kbd> to save the file.
+1. Save the file by pressing <kbd>Ctrl+S</kbd>.
 
 ::: zone-end
 
