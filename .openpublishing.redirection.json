@@ -32859,6 +32859,46 @@
       "source_path": "learn-pr/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/2-authorization-options-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/3-use-shared-access-signatures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/4-exercise-use-shared-access-signatures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/5-use-stored-access-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/6-exercise-use-stored-access-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
     }
   ]
 }
