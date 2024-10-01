@@ -11,4 +11,4 @@ Various software development kits (SDKs) have been developed to abstract and use
 
 Users use these tools to create quantum jobs and submit them through a cloud platform to be run on their chosen hardware, for example, Rigetti’s superconducting quantum computers. These jobs are queued and run on real quantum hardware, and the user receives the result.
 
-Today, hundreds of thousands of registered users access quantum computing hardware through various cloud providers. As the quantum computing power increases, the amount of registered users will only grow.
+Today, hundreds of thousands of registered users access quantum computing hardware through various cloud providers. As the quantum computing power increases, the number of registered users will only grow.
