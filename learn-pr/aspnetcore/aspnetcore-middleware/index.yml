@@ -31,8 +31,8 @@ products:
 - aspnet-core
 units:
 - learn.aspnetcore-middleware.intro
-- learn.aspnetcore-middleware.exercise-framework-dependent
 - learn.aspnetcore-middlewar.understand-middleware
+- learn.aspnetcore-middleware.exercise-framework-dependent
 - learn.aspnetcore-middleware.exercise-self-contained
 - learn.aspnetcore-middleware.exercise-publish-azure
 - learn.aspnetcore-middleware.knowledge-check
