@@ -51,7 +51,7 @@ quiz:
     - content: "Increases the cost of running quantum algorithms."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Enforces a single quantum programming tool eg Q# or Qiskit."
+    - content: "Enforces a single quantum programming tool, eg, Q# or Qiskit."
       isCorrect: false
       explanation: "Incorrect."
   

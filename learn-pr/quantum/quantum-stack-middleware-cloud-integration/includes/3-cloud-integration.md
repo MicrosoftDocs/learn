@@ -9,6 +9,6 @@ Access through these services enables researchers to explore using quantum compu
 
 Various software development kits (SDKs) have been developed to abstract and use quantum hardware. Microsoft’s Q# or IBM’s Qiskit enable users to program quantum algorithms with minimal concern for the underlying hardware architecture.  
 
-Users will use these tools to create quantum jobs and submit them through a cloud platform to be run on their chosen hardware, e.g., Rigetti’s superconducting quantum computers. These jobs are queued and run on real quantum hardware, and the user receives the result.
+Users use these tools to create quantum jobs and submit them through a cloud platform to be run on their chosen hardware, for example, Rigetti’s superconducting quantum computers. These jobs are queued and run on real quantum hardware, and the user receives the result.
 
-Today, hundreds of thousands of registered users access quantum computing hardware through various cloud providers. As the quantum computing power increases, this will only grow.
+Today, hundreds of thousands of registered users access quantum computing hardware through various cloud providers. As the quantum computing power increases, the amount of registered users will only grow.
