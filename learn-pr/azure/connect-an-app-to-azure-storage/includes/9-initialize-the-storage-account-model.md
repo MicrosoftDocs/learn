@@ -16,7 +16,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
 
     To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and can only contain lowercase letters and the dash (-) character. For this application, we use the name *photos*.
 
-1. Add the following code to the Main section of your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
+1. Add the following code to the `Main` method in your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
 
     ```csharp
     var connectionString = configuration.GetConnectionString("StorageAccount");
@@ -79,7 +79,7 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
     }
     ```
 
-1. Save the changes to _index.js_.
+1. Save the changes to *index.js*.
 
    Now, let's add some code to execute an operation against our storage account. A storage account is organized into one or more containers, which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
 
@@ -103,7 +103,7 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
     }
     ```
 
-1. Save the changes to the _index.js_ file.
+1. Save the changes to the *index.js* file.
 
 1. In the Cloud Shell command line, enter the following command to build and run your program, which creates the container in your storage account:
 

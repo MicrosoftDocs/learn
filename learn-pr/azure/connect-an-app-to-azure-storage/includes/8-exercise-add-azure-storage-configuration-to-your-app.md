@@ -22,6 +22,9 @@ Let's add support to our .NET core application for retrieving a connection strin
     code .
     ```
 
+    > [!NOTE]
+    > If you're working in Azure Cloud Shell, and you enter the `code .` command for the first time, you might see a prompt asking if you want to "Switch to Classic mode". Select **Yes**, and when the shell refreshes, enter the command `cd PhotoSharingApp` to change back to the *PhotoSharingApp* directory.
+
 1. In the editor, select the **appsettings.json** file and add the following text:
 
     ```json
@@ -89,7 +92,7 @@ Now that we added the required libraries to enable reading the configuration, we
     using System.IO;
     ```
 
-1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code:
+1. Replace the rest of the contents `Console.WriteLine("Hello, World!");`, with the following code:
 
     ```csharp
     namespace PhotoSharingApp
@@ -143,7 +146,7 @@ Let's add support to our Node.js application for retrieving a connection string 
 
 ## Create an .env configuration file
 
-1. In the Azure Cloud Shell session, enter the following command to make sure you're in the correct working directory for your project.
+1. In Azure Cloud Shell session, `cd` to the **PhotoSharingApp** directory if you aren't already there.
 
     ```bash
     cd PhotoSharingApp 
