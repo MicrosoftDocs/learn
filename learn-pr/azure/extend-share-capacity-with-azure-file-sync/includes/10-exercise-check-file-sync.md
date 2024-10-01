@@ -8,7 +8,7 @@ You've deployed Azure File Sync and configured both the Azure and on-premises en
 
 1. In the service menu, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
 
-   ![Screenshot of the Access keys option under Security + networking.](../media/10-access-keys.png)
+   :::image type="content" source="../media/10-access-keys.png" alt-text="Screenshot of the Access keys option under Security + networking.":::
 
 1. Under **key1**, copy the **Key** value. You'll use this key to set up the mapped drive.
 
