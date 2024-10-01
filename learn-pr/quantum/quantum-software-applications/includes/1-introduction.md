@@ -1,5 +1,5 @@
 
-Quantum computing represents a paradigm shift in processing information. This shift requirs new software tools and frameworks tailored to its unique demands. This module explores the specialized programming tools and applications developed for quantum computers, such as Q#, Qiskit, and PennyLane. By understanding these tools and their applications, you gain insights into how quantum computing can revolutionize fields like drug discovery, materials science, and optimization.
+Quantum computing represents a paradigm shift in processing information. This shift requires new software tools and frameworks tailored to its unique demands. This module explores the specialized programming tools and applications developed for quantum computers, such as Q#, Qiskit, and PennyLane. By understanding these tools and their applications, you gain insights into how quantum computing can revolutionize fields like drug discovery, materials science, and optimization.
 
 ## Learning objectives
 

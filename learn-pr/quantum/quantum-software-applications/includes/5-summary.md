@@ -1,9 +1,9 @@
 
 Congratulations on completing the module!
 
-As we conclude this introduction to quantum computing, it’s clear that this field is poised to revolutionize numerous industries and aspects of our daily lives. From understanding the basics of qubits and their fundamental principles like superposition, entanglement, and interference to delving into the complexities of the quantum stack and its various layers, each section of this course highlights the incredible potential and intricate challenges of quantum technology.
+As we conclude this introduction to quantum computing, it’s clear that this field is poised to revolutionize numerous industries and aspects of our daily lives. This course started by covering the basics of qubits and their fundamental principles, such as superposition, entanglement, and interference. It then described the complexities of the quantum stack and its various layers, showcasing both the potential and the challenges of quantum technology.
 
-This journey into quantum computing is not merely academic; it opens doors to practical, impactful applications that could redefine cryptography, optimization, drug discovery, materials science, and beyond. For developers and engineers, now is a critical moment to engage with this cutting-edge technology. By expanding your knowledge and skills in quantum computing, you position yourself at the forefront of a transformative technological era.
+This journey into quantum computing isn't merely academic; it opens doors to practical, impactful applications that could redefine cryptography, optimization, drug discovery, materials science, and beyond. For developers and engineers, now is a critical moment to engage with this cutting-edge technology. By expanding your knowledge and skills in quantum computing, you position yourself at the forefront of a transformative technological era.
 
 As you move forward, remember that the landscape of quantum computing is ever-evolving, with continuous advancements in hardware, software, and applications. Keep exploring, learning, and contributing to this fascinating field. Your involvement today could shape tomorrow's technological breakthroughs, making a significant impact on the world.
 

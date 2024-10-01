@@ -34,7 +34,7 @@ quiz:
     - content: "They were designed for classical computers and lack the tools to describe and manipulate quantum data accurately."
       isCorrect: true
       explanation: "Correct"
-    - content: "They are too slow for quantum computing requirements."
+    - content: "They're too slow for quantum computing requirements."
       isCorrect: false
       explanation: "Incorrect."
     - content: "They can't handle the high volume of data produced by quantum computers."
