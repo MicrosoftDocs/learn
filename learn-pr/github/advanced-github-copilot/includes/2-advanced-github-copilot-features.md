@@ -7,7 +7,7 @@ When GitHub Copilot is enabled, it provides you with suggestions. These suggesti
 
 ## Chatting with GitHub Copilot
 
-GitHub Copilot allows you to have an interactive discussion using the chat feature. In Visual Studio Code, you can click the chat icon on the left sidebar, which opens the chat interface in a dedicate pane.
+GitHub Copilot allows you to have an interactive discussion using the chat feature. In Visual Studio Code, you can click the chat icon on the left sidebar, which opens the chat interface in a dedicated pane.
 
 In this pane, you can ask questions about the code you're currently working on or other software-related questions.
 

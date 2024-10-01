@@ -6,7 +6,7 @@ An API acts as the intermediary that allows different applications to communicat
 
 ## Extend the Web API
 
-The current API isn't exposing country/{country}, which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
+The current API isn't exposing country, which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
 
 >[!Note]
 > For this exercise, use the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.

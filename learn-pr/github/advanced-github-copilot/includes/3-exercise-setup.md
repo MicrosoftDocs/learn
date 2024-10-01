@@ -6,8 +6,8 @@ In this exercise, we create a new repository using the GitHub template for a web
 First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.
 
 1. Open the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.
-1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**
-1. Wait for the codespace to start. This startup process can take a few minutes.
+1. On the **Create codespace** page, review the Codespace configuration settings, and then select **Create new codespace**.
+1. Wait for the Codespace to start. This startup process can take a few minutes.
 1. The remaining exercises in this project take place in the context of this development container.
 
 > [!IMPORTANT]

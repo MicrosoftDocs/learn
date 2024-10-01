@@ -5,7 +5,7 @@ In this unit, let's discuss how Copilot can help you with existing projects and 
 
 ## Advanced tasks with GitHub Copilot
 
-It's common to work with existing project as an engineer. When fixing code or implementing features, we need to write documentation and tests and work with terminal commands. Let's go through some ways you can accomplish this using GitHub Copilot.
+It's common to work with an existing project as an engineer. When fixing code or implementing features, we need to write documentation and tests and work with terminal commands. Let's go through some ways you can accomplish this using GitHub Copilot.
 
 ### Implicit prompts
 
@@ -19,7 +19,7 @@ with open("file.txt", "r") as file:
     contents = file.read
 ```
 
-After selecting the code and using **Ctrl+I** on Windows or **Cmd+I** on a Mac, you can ask GitHub Copilot to help you fix the code using the inline chat and the `/fix` slash command.
+After selecting the code and using **Ctrl+i** on Windows or **Command+i** on a Mac, you can ask GitHub Copilot to help you fix the code using the inline chat and the `/fix` slash command.
 
 If you only type `/fix`, you might get a response from GitHub Copilot similar to this: _"To fix the code, I would add parentheses after file.read to call the read method and fix the typo in the method name."_
 
