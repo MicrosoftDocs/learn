@@ -3158,6 +3158,11 @@ achievements:
   title: Create custom controls with Xamarin.Forms renderers
   summary: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
   iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+- uid: learn.wwl.explore-azure-openai.badge
+  type: badge
+  title: Fundamentals of Azure OpenAI Service
+  summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
+  iconUrl: /learn-pr/achievements/learn.wwl.explore-azure-openai.badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
