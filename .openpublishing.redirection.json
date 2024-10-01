@@ -377,55 +377,68 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/2-what-is-generative-ai.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/3-describe-azure-openai.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/4-how-to-use-azure-openai.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/5-understand-openai-natural-language.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/6-understand-openai-code-generation.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/7-understand-openai-image-generation.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8-describe-openai-responsible-ai.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8a-exercise-openai.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/10-summary.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio"
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/wwl-data-ai/explore-azure-openai/index.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/achievements/learn.wwl.explore-azure-openai.badge.yml",
-      "redirect_url": "/training/modules/introduction-to-azure-ai-studio",
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-azure-openai.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/advocates/intro-to-nodejs/3-how-works.yml",
