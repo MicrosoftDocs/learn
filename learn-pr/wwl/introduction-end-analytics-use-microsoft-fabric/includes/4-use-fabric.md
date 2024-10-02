@@ -42,7 +42,7 @@ The OneLake data Hub in Microsoft Fabric helps users easily find and access vari
 - Explore default groups: *All data*, *My data*, *Endorsed in your org*, and *Favorites*.
 - Filter further by keyword or item type.
 
-:::image type="content" source="../media/onelake-data-hub.png" alt-text="Screenshot of the OneLake data hub." lightbox="./media/onelake-data-hub.png":::
+:::image type="content" source="../media/onelake-data-hub.png" alt-text="Screenshot of the OneLake data hub." lightbox="../media/onelake-data-hub.png":::
 
 ## Create items in Fabric
 
