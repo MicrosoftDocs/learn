@@ -8,7 +8,6 @@ metadata:
   author: asw101
   ms.author: aawislan
   ms.topic: unit
-  ms.service: azure-virtual-machines
 durationInMinutes: 45
 content: |
   [!include[](includes/2-deploy-linux-and-postgresql-infrastructure.md)]
