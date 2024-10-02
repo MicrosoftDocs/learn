@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-manipulation-azure-sql-database.use-external-rest-endpoint
+title: Use RESTful endpoints to import data to Azure SQL Database
+metadata:
+  title: Use RESTful endpoints to import data to Azure SQL Database 
+  description: "Learn how use RESTful endpoints to import data to Azure SQL Database."
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-use-external-rest-endpoint.md)]
