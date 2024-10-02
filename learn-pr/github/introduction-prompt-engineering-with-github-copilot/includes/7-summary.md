@@ -14,7 +14,7 @@ How Copilot handles data from prompts in different situations, including secure 
 
 - [Inside GitHub: Working with the Large Language Models (LLMs) behind GitHub Copilot - The GitHub Blog](https://github.blog/2023-05-17-inside-github-working-with-the-llms-behind-github-copilot/)
 - [How to use GitHub Copilot: Prompts, tips, and use cases - The GitHub Blog](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
-- [How Github copilot handles data](https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/)
+- [How GitHub copilot handles data](https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/)
 
 ## Provide feedback
 
