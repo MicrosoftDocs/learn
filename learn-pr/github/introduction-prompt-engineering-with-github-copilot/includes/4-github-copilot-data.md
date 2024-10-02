@@ -12,10 +12,10 @@ GitHub Copilot Chat operates as an interactive platform, allowing developers to 
 - **User Engagement**: You can actively engage with the response by asking follow-up questions, requesting clarifications, or providing additional input. The chat interface maintains a conversation history to facilitate contextual understanding in subsequent interactions.
 - **Data Retention**: For Copilot Chat used outside the code editor, GitHub typically retains prompts, suggestions, and supporting context for 28 days. Specific retention policies for Copilot Chat within the code editor may vary. 
 
-The same goes for CLI, Mobile, and GitHub Copilot Chat on GitHub.com
+The same goes for CLI, Mobile, and GitHub Copilot Chat on GitHub.com.
 
 
-## Prompt Types Supported by GitHub Copilot Chat
+## Prompt types supported by GitHub Copilot Chat
 
 GitHub Copilot Chat processes a wide range of coding-related prompts, demonstrating its versatility as a conversational coding assistant. Here are some common input types:
 
