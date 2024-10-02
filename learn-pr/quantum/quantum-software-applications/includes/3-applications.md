@@ -1,7 +1,7 @@
 
 The application layer focuses on solving specific problems using quantum algorithms. This is where quantum computing's potential to revolutionize fields such as cryptography, optimization, and drug discovery is realized. Similar to QPU and hardware development, this remains an active and evolving area of research. This research feeds into the overall development of the quantum stack. As we learn more about the use cases for quantum computers, we gain better insights into how to build and optimize them, and vice versa. Here, we explore a few applications for quantum computers in greater detail.
 
-### Revolutionizing Drug Discovery & Healthcare
+### Revolutionizing drug discovery & healthcare
 
 One of the most exciting research areas for quantum computing is the possibility of developing new treatments for sick patients. Today, developing new treatments is lengthy and expensive. It can take decades and billions of dollars to bring a new drug to market. This approach isn't only expensive for the patient, but also costs lives. Many patients who may benefit from the new treatments never get to receive the new medication.
 

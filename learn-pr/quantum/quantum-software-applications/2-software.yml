@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.quantum-software-applications.software
-title: Quantum Software and Applications
+title: Quantum software and applications
 metadata:
-  title: Quantum Software and Applications
+  title: Quantum software and applications
   description: This unit introduces you to the new software tools and frameworks are being developed specifically for building and running applications on QPUs.
   ms.date: 10/01/2024
   author: a-a-ron
