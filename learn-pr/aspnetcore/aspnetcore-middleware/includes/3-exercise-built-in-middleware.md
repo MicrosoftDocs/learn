@@ -61,11 +61,19 @@ Now that you have a working app, let's add a welcome message to the main page.
     This code adds a URL rewriter middleware component that redirects requests from `/history` to `/about`. The `AddRedirect()` method takes two parameters: a regular expression pattern to match the request path, and the replacement path to redirect to.
 
     > [!IMPORTANT]
-    > The `UrlRewriter` middleware component must be added before any middleware components that consume the URL. Accordingly, it must be added before the `app.MapGet()` middleware components. See the documentation for details.
+    > The `UrlRewriter` middleware component must be added before any middleware components that consume the URL. Accordingly, it should be added **before** the `app.MapGet()` middleware components.
+
+1. Add the following directive to the top of the file:
+
+    ```csharp
+    using Microsoft.AspNetCore.Rewrite;
+    ```
+
+    This directive resolves the reference to the `RewriteOptions` class.
 
 ## Test the changes
 
 1. Save all your changes and run the app as before.
 1. When the browser window opens, note the root URL displays "Welcome to Contoso!". Add `/about` to the URL and press **Enter**. The browser should display "Contoso was founded in 2000.".
 1. Replace `/about` with `/history` in the URL and press **Enter**. The browser should redirect to `/about`.
-1. Close the browser window and stop the app by pressing **Shift+F5** in Visual Studio Code.
+1. Leave the app running for the next exercise.

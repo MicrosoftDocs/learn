@@ -124,7 +124,7 @@ This is from a Blazor app created with the .NET 9 SDK. In the preceding code:
 - `app.MapStaticAssets()` adds a middleware component that serves static files.
 - `app.MapRazorComponents<App>()` adds a middleware component that serves Blazor components.
 
-There are many more built-in middleware components that you can use in your app. Check the documentation for the complete list.
+There are many more built-in middleware components that you can use in your app depending on the type of app and your needs. Check the documentation for the complete list.
 
 > [!IMPORTANT]
-> The order in which you add middleware components to the pipeline matters! Certain middleware components must run before others to work correctly. Check the documentation for each middleware component to determine the correct order.
+> The order middleware components are added to the pipeline matters! Certain middleware components must run before others to work correctly. Check the documentation for each middleware component to determine the correct order.
