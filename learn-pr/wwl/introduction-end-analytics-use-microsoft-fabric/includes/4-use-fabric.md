@@ -1,4 +1,4 @@
-Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You may need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
+Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You might need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
 
 - *Fabric admin*
 - *Power Platform admin*
@@ -27,6 +27,17 @@ All Fabric items (lakehouses, notebooks, pipelines, etc.) are stored in OneLake 
 > [!NOTE]
 > For more information on enabling Premium capacity in a workspace, see [Fabric capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
 
+## Discover data with OneLake data hub
+
+The OneLake data Hub in Microsoft Fabric helps users easily find and access various data sources within their organization. Users explore and connect to data sources, ensuring they have the right data for their needs. Users only see items shared with them. Here are some considerations when using OneLake Hub:
+
+- Narrow results by domains (if implemented).
+- Filter by workspaces in Explorer.
+- Explore default groups: *All data*, *My data*, *Endorsed in your org*, and *Favorites*.
+- Filter further by keyword or item type.
+
+:::image type="content" source="../media/onelake-data-hub.png" alt-text="Screenshot of the OneLake data hub." lightbox="./media/onelake-data-hub.png":::
+
 ## Create items in Fabric
 
 After you create your Fabric enabled workspace, you can start creating items in Fabric. You can create items in Fabric using the **Create** menu in the upper left corner of the Power BI service.
@@ -39,4 +50,4 @@ Fabric workloads refer to the different capabilities included in Fabric. You can
 
 ![Screenshot of the Fabric workload switcher, featuring Data engineering, Data factory, Data science, Data warehousing, real-time intelligence, and Power BI workloads.](../media/workspace-switcher.png)
 
-You may notice that Fabric workloads look similar to other Microsoft data offerings. Fabric is built on Power BI and Azure Data Lake Storage, and includes capabilities from Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Machine Learning. What makes Fabric unique is that it brings these capabilities together in a single, SaaS integrated experience without the need for access to Azure resources.
+You might notice that Fabric workloads look similar to other Microsoft data offerings. Fabric is built on Power BI and Azure Data Lake Storage, and includes capabilities from Azure Synapse Analytics, Azure Data Factory, Azure Databricks, and Azure Machine Learning. What makes Fabric unique is that it brings these capabilities together in a single, SaaS integrated experience without the need for access to Azure resources.
