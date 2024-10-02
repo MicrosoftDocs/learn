@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.introduction-prompt-engineering-with-github-copilot.introduction
-title: Introduction
+uid: learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-data
+title: GitHub Copilot data
 metadata:
-  title: Introduction
+  title: GitHub Copilot data
   description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
   author: a-a-ron
   ms.author: aastewar
@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/4-github-copilot-data.md)]
