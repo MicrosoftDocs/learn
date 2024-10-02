@@ -213,7 +213,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
 We can now replace the hard-coded pizza in the **Index.razor** page.
 
-1. In the file explorer, expand **Pages** and then select **Index.razor**.
+1. In the file explorer, expand **Pages**, and then select **Index.razor**.
 1. Replace the existing `OnInitialized()` method with:
 
     ```csharp
