@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fabric-data-governance-purview.govern-data
+title: Govern data in Microsoft Fabric
+metadata:
+  title: Govern data in Microsoft Fabric
+  description: "Learn how to use built-in features of Microsoft Fabric for basic data governance without adding Microsoft Purview."
+  ms.date: 9/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-govern-data.md)]

@@ -1,11 +1,8 @@
 Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You might need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
 
-- *Fabric admin*
+- *Fabric admin (formerly Power BI admin)*
 - *Power Platform admin*
 - *Microsoft 365 admin*
-
-Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Fabric administrator to find out if it's available to you. The Fabric administrator was formerly the Power BI administrator role.
-
 
 ## Enable Microsoft Fabric
 
@@ -13,19 +10,28 @@ If you have admin privileges, you can access the **Admin center** from the **Set
 
 Admins can make Fabric available to either the entire organization or specific groups of users, who can be organized based on their Microsoft 365 or Microsoft Entra security groups. Admins can also *delegate* the ability to enable Fabric to other users, at the capacity level.
 
-![Screenshot of the Enable Fabric settings in the Fabric admin portal, with the option toggled to enabled for specific security groups.](../media/enable-fabric.png)
+![Screenshot of the Enable Fabric settings in the Fabric admin portal..](../media/enable-fabric.png)
 
 > [!NOTE]
 > If your organization isn't using Fabric or Power BI today, you can sign up for a [free Fabric trial](/fabric/get-started/fabric-trial) to explore the different workloads.
 
-## Create Fabric enabled workspaces
+## Create workspaces
 
-All Fabric items (lakehouses, notebooks, pipelines, etc.) are stored in OneLake and accessed via Fabric workspaces. To enable Fabric in a workspace, choose a Trial or Fabric Capacity license mode.
+Workspaces are collaborative environments where you create and manage items like lakehouses, warehouses, and reports. All data is stored in OneLake, and is accessed through workspaces. Items are displayed in a list or lineage view, which is a visual representation of the dependency between items.
+
+In the *Workspace settings*, you can configure the license type to use Fabric features. There are several other settings you can configure in this area, some of which include:
+
+- OneDrive access for the workspace
+- Azure Data Lake Gen2 Storage connection
+- Integration with Git for version control
+- Spark workload settings
 
 ![Screenshot of the workspace license mode options including Trial and Fabric Capacity.](../media/workspace-settings-license.png)
 
+To grant access to a workspace, choose one of the four available roles. These roles have access to all items in a workspace. Workspace access is typically granted to collaborators, and it's recommended to grant access to specific items depending on the business need.
+
 > [!NOTE]
-> For more information on enabling Premium capacity in a workspace, see [Fabric capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
+> Learn more about workspaces in the [Fabric documentation](/fabric/get-started/workspaces).
 
 ## Discover data with OneLake data hub
 

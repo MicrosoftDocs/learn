@@ -3158,6 +3158,11 @@ achievements:
   title: Create custom controls with Xamarin.Forms renderers
   summary: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
   iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+- uid: learn.wwl.explore-azure-openai.badge
+  type: badge
+  title: Fundamentals of Azure OpenAI Service
+  summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
+  iconUrl: /learn-pr/achievements/learn.wwl.explore-azure-openai.badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -3798,6 +3803,11 @@ achievements:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
   iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
+- uid: learn.aks-deployment-pipeline-github-actions.badge
+  type: badge
+  title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+  summary: Learn how to use GitHub Actions to create an automated deployment pipeline for Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 - uid: learn.introduction-to-azure-web-pubsub.badge
   type: badge
   title: Introduction to Azure Web PubSub

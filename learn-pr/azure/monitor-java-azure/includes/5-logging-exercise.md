@@ -30,7 +30,7 @@ This command will return logs similar to the following:
 
 ### Continuously stream new logs
 
-By default, `az spring app log tail` prints only existing logs streamed to the app console, then exits. If you want to stream new logs, add `-f` (`--follow`):  
+By default, `az spring app logs` prints only existing logs streamed to the app console, then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
 az spring app logs --name customers-service -f

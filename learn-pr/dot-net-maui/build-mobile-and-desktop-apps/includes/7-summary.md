@@ -2,8 +2,8 @@
 
 In this module, you:
 
-- Learned the basic architecture of .NET MAUI.
-- Created .NET MAUI app.
+- Learned the basic architecture of .NET MAUI (Multi-platform Application User Interface).
+- Created a .NET MAUI app.
 - Defined a shared UI for the platforms supported by .NET MAUI.
 - Deployed a .NET MAUI app from Visual Studio.
 - Used .NET MAUI to access platform APIs.
