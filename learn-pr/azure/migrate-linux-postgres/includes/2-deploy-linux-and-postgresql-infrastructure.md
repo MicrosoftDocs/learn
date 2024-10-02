@@ -79,6 +79,142 @@ az deployment group create \
     --template-file deploy/vm-postgres.bicep
 ```
 
+At the completion of the deployment you will see JSON output that confirms the resources have been deployed.
+
+You may continue to the next section to explore and configure the deployed infrastructure.
+
+In this next section you will configure and explore Role-based Access Control (RBAC) and network security rules on your deployed infrastructure using the Azure Portal.
+
+While we can encode these into our Bicep template, we chose to use the Azure Portal for this section because it provides a visual interface that makes it easier to understand the relationships between resources and the permissions that are assigned to them.
+
+## Open the Resource Group in the Azure Portal
+
+Open the Azure Portal at [https://portal.azure.com](https://portal.azure.com).
+
+In the left-hand navigation pane, select **Resource groups**.
+
+In the **Resource groups** blade, select the Resource Group `240900-linux-postgres`.
+
+At the top-right you should see **Deployments:** `... Succeeded`. Here you have the option to check on the status of your Bicep template deployment. 
+
+## View the Virtual Machine's Network Security Group (NSG)
+
+Click on the Virtual Machine, `vm-1`.
+
+Click on the **Networking** section and then **Network settings** on the left-hand side.
+
+Here you can see the Network Security Group (NSG), `240900-linux-postgres-nsg` that is attached to the same subnet of our virtual network, `240900-linux-postgres-vnet`, as the Virtual Machine.
+
+The NSG is also visible inside the Resource Group. It contains a set of inbound and outbound security rules that control the traffic to and from the Virtual Machine.
+
+## Add an Inbound Security Rule to the Network Security Group
+
+We will add an inbound security rule to allow SSH traffic from your current IP address to the Virtual Machine.
+
+In a production scenario you would often use [just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](https://learn.microsoft.com/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to secure your Virtual Machine. This would allow you to restrict access to the Virtual Machine to only when it is needed.
+
+You will now add an inbound security rule to the NSG to allow SSH traffic from your current IP address.
+
+Click on `240900-linux-postgres-nsg`.
+
+Click **Settings** and then **Inbound security rules**.
+
+Click **Add**.
+
+Under **Source** select `My IP address`.
+
+Under **Service** select `SSH`.
+
+Click **Add**.
+
+## Return to the Resource Group
+
+At the top of the page, click the breadcrumb link to return to the Resource Group (`Home > Resource groups > 240900-linux-postgres`).
+
+Note the `240900-linux-postgres-identity` User Assigned Managed Identity is listed in the Resource Group.
+
+You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
+
+## View the Azure Database for PostgreSQL's Server Administrator
+
+Find the Azure Database for PostgreSQL flexible server which will be named `postgres-xxxxx`, where `xxxxx` is a unique string defined by our Bicep template that remains consistent across deployments to your Subscription and Resource Group.
+
+Click on `postgres-xxxxx`.
+
+Click on **Security** and then **Authentication**.
+
+You can see here we are using **Microsoft Entra authentication only** the `240900-linux-postgres-identity` User Assigned Managed Identity is listed under **Microsoft Entra Admins**.
+
+This Managed identity is currently the only administrator for the server. We have the option to add your own user account as an administrator, but for this scenario we will use the Managed Identity already in place.
+
+In the upcoming section you will use this identity from the Virtual Machine it is assigned to, both to administer the server via the CLI, and to provide access to the server for your application.
+
+In a production scenario, you would likely use a combination of Managed Identities, Azure AD, and fine-grained Role-Based Access Control (RBAC) to enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege.
+
+Read more about these scenarios via [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
+
+## Review the Azure Database for PostgreSQL Flexible Server Firewall Rules
+
+Click on **Settings** and then **Networking**.
+
+If we were administering the server from our local machine, rather than the Virtual Machine, we would need to add our IP address to the firewall rules.
+
+We have the option to create a firewall rule for our current IP address by clicking **Add current client IP address (xxx.xxx.xxx.xxx)**, and clicking **Save**. 
+
+This would enable us to access the test/dev server using tools on our local machine. 
+
+However, as we are using our Virtual Machine to access the database, we will not do this at this time. 
+
+In production, we would likely further isolate this server from the public internet entirely, and un-check the **Allow public access to this resource through the internet using a public IP address** option.
+
+Unlike the Virtual Machine, we have not associated our Azure Database for PostgreSQL with any Virtual Network. This means we retain the option of accessing it over the public internet which is useful for test/dev scenarios. 
+
+To provide both security and flexibility we will now enable access from the Virtual Machine via its Virtual Network using a private endpoint. This will allow the Virtual Machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-private-link).
+
+In the future we will configure this via Bicep, but for demonstration purposes we will use the Azure Portal to create the private endpoint.
+
+## Create a Private Endpoint for Azure Database for PostgreSQL Flexible Server
+
+Click on **Settings** and then **Networking**.
+
+Under **Private endpoint**, click **Add private endpoint**.
+
+Under **Basics** enter **Name:** `private-endpoint-1`
+
+Click **Next**
+
+Under **Resource**, click **Next**.
+
+Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. This will be in the `240900-linux-postgres` Resource Group.
+
+Click **Next**
+
+Under **DNS** click **Next**.
+
+Under **Review + create** click **Create**.
+
+You will be redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
+
+Once it says **Your deployment is complete**, click **Go to resource**.
+
+## Review the Virtual Machine's System assigned managed identity Role Assignments
+
+Return to the `240900-linux-postgres` Resource Group and click on `vm-1`.
+
+On the left-hand side click on **Security** and then **Identity**.
+
+Here you can see the **System assigned managed identity** that is attached to the Virtual Machine.
+
+Under **System assigned** click **Azure role assignments**. 
+
+Here you can see the **Reader** role assigned to the **System assigned managed identity** which has been scoped to the `240900-linux-postgres` Resource Group.
+
+This identity has permissions to list resources in the Resource Group.
+
+This allows us to use the Azure CLI within our VM to list resources in the Resource Group which avoids having to hard-code specific resource details into our scripts.
+
+At a later stage we will assign an additional role to the VM's managed identity to allow it to directly access an Azure Blob Storage account.
+
 ## Resources
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
 - [Install Azure CLI](/cli/azure/install-azure-cli)
@@ -87,3 +223,9 @@ az deployment group create \
 - [Azure Role-Based Access Controls (RBAC)](/azure/role-based-access-control/overview) 
 - [Azure Managed Identity](/entra/identity/managed-identities-azure-resources/overview)
 - [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+- [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types)
+- [Enable just-in-time access on VMs](/azure/defender-for-cloud/just-in-time-access-usage)
+- [What is Azure Bastion?](/azure/bastion/bastion-overview)
+- [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication)
+- [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication)
+- [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-private-link)
