@@ -8,7 +8,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 :::image type="content" source="../media/2-vsm-whiteboard1.png" alt-text="Screenshot of a whiteboard showing the value stream map.":::
 
-**Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
+**Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve, and we can decide which areas to tackle first.
 
 **Andy:** This shows us where we have problems, but not what to do about them.
 
@@ -34,7 +34,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps:
 
-**Ask Abel**
+#### Ask Abel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Lj29]
 
@@ -71,7 +71,7 @@ Elite performers:
 
     In fact, some teams deploy up to dozens of times per day.
 
-    Practices such as monitoring, continuous testing, database change management, and integrating security earlier in the software development process help elite performers deploy more frequently, and with greater predictability and security.
+    Practices such as monitoring, continuous testing, database change management, and integrating security earlier in the software-development process help elite performers deploy more frequently, and with greater predictability and security.
 
 - **Reduce lead time from commit to deploy**
 
@@ -87,13 +87,13 @@ Elite performers:
 
 How you implement cloud infrastructure also matters. The cloud improves software delivery performance, and teams that adopt essential cloud characteristics are more likely to become elite performers.
 
-Outsourcing can save money and provide a flexible labor pool, but it must be used in the correct areas. Low-performing teams are more likely to outsource whole functions (like testing and operations) than their high-performing counterparts.
+Outsourcing can save money and provide a flexible labor pool, but you must use it in the correct areas. Low-performing teams are more likely to outsource whole functions (like testing and operations) than their high-performing counterparts.
 
 ### The bottom line
 
 DevOps is a key reason many elite performers are able to deliver value to customers in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why you should learn more about DevOps:
 
-**Ask Abel**
+#### Ask Abel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Lj2J]
 
