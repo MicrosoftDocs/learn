@@ -1,12 +1,16 @@
-In this unit, we break down how GitHub Copilot turns your prompts into smart, usable code. We peek behind the curtain to see how this tool works its magic.
+In this unit, we'll break down how GitHub Copilot turns your prompts into smart, usable code. Generally, GitHub Copilot receives prompts and returns code suggestions or responses in its data flow. This process suggests an inbound and outbound flow. 
 
-## Process
+## Inbound flow:
+
+
+
+:::image type="content" source="../media/3-github-copilot-inbound-flow" alt-text="Illustration of GitHub Copilot inbound flow.":::
 
 Let's walk through all the steps Copilot takes to process a user's prompt into a code suggestion.
 
 ### 1-Secure prompt transmission and context gathering
 
-The process begins with the secure transmission of the user prompt over HTTPS, ensuring that your natural language comment is sent to GitHub Copilot's servers securely and confidentially, protecting sensitive information.
+The process begins with the secure transmission of the user prompt over HTTPS. This ensures that your natural language comment is sent to GitHub Copilot's servers securely and confidentially, protecting sensitive information.
 
 GitHub Copilot securely receives the user prompt, which could be a Copilot chat or a natural language comment provided by you within your code.
 
@@ -15,46 +19,44 @@ Simultaneously, Copilot collects context details:
 - Code before and after the cursor position, which helps it understand the immediate context of the prompt.
 - Filename and type of the file being edited, allowing it to tailor code suggestions to the specific file type.
 - Information about adjacent open tabs, ensuring that the generated code aligns with other code segments in the same project.
+- Information on project structure and file paths
+- Information on programming languages and frameworks
+- Pre-processing using Fill-in-the-Middle (FIM) technique to consider both the preceding and following code context, effectively expanding the model's understanding allowing Copilot to generate more accurate and relevant code suggestions by leveraging a broader context.
 
-### 2-Content filtering
+These steps translate the user's high-level request into a concrete coding task.
+
+### 2-Proxy filter: 
+Once the context is gathered and the prompt is built, it passes securely to a proxy server hosted in a GitHub-owned Microsoft Azure tenant. The proxy filters traffic, blocking attempts to hack the prompt or manipulate the system into revealing details about how the model generates code suggestions.
+
+### 3-Toxicity filtering
 
 Copilot incorporates content filtering mechanisms before proceeding with intent extraction and code generation, to ensure that the generated code and responses don't include or promote:
 
+- **Hate speech and inappropriate content**: Copilot employs algorithms to detect and prevent the intake of hate speech, offensive language, or inappropriate content that could be harmful or offensive.
 - **Personal data**: Copilot actively filters out any personal data, such as names, addresses, or identification numbers, to protect user privacy and data security.
-- **Hate speech and inappropriate content**: Copilot employs algorithms to detect and prevent the generation of hate speech, offensive language, or inappropriate content that could be harmful or offensive.
 
-### 3-Context analysis
+### 4-Code generation with LLM
 
-After content filtering, Copilot uses the gathered context information, including code snippets and file type, to contextualize the user's prompt. This comprehensive context helps Copilot understand the prompt's relevance and the coding task it means to address. Copilot understands the context and carries out the following actions:
+Finally, the filtered and analyzed prompt is passed to LLM Models, which generate appropriate code suggestions. These suggestions are based on Copilot’s understanding of the prompt and the surrounding context, ensuring that the generated code is relevant, functional, and aligned with project-specific requirements.
 
-- **Extract intent**: Copilot proceeds to extract your intent from the natural language comment. It identifies keywords, phrases, and context cues within the prompt.
-- **Intent mapping**: Copilot maps the extracted intent to specific coding actions or functionalities, considering both the prompt's content and the contextual information. This step translates the user's high-level request into a concrete coding task.
 
-### 4-Code generation
+## Outbound Flow: 
 
-Copilot, informed by mapped intent, completes the following actions:
+:::image type="content" source="../media/3-github-copilot-outbound-flow" alt-text="Illustration of GitHub Copilot outbound flow.":::
 
-- Delivers code suggestions tailored to your code preferences.
-- Proposes apt function and variable names.
-- Crafts complete code blocks ensuring syntax and context accuracy.
-- Aligns with the project's specific language, framework, and standards.
-- Respects customized settings like coding styles and constraints.
+### 5-Post-processing and response validation
+Once the model produces its responses, the toxicity filter removes any harmful or offensive generated content. The proxy server then applies a final layer of checks to ensure code quality, security, and ethical standards. These checks include:
+- **Code quality**: Responses are checked for common bugs or vulnerabilities, such as cross-site scripting (XSS) or SQL injection, ensuring that the generated code is robust and secure.
+- **Matching public code (optional)**: Optionally, administrators can enable a filter that prevents Copilot from returning suggestions over ~150 characters if they closely resemble existing public code on GitHub. This prevents coincidental matches from being suggested as original content.
+If any part of the response fails these checks, it is either truncated or discarded. 
 
-### 5-User interaction
+### 6-Suggestion delivery and feedback loop initiation
 
-You're presented with the generated code for review and interaction, and have the options to:
+Only responses that pass all filters are delivered to the user. Copilot then initiates a feedback loop based on your actions to achieve the following:
 
-- Accept the code as-is.
-- Make modifications to the suggested code.
-- Reject the code suggestions.
-
-### 6-Feedback loop initiation
-
-Copilot initiates a feedback loop based on your actions to achieve the following goals:
-
-- Growing its knowledge from accepted suggestions.
-- Learning and improving through modifications and rejections of its suggestions.
+- Grow its knowledge from accepted suggestions.
+- Learn and improve through modifications and rejections of its suggestions.
 
 ### 7-Repeat for subsequent prompts
 
-The process is repeated as you provide more prompts, with Copilot continuously handling user requests, understanding their intent, and generating code in response. Over time, as Copilot applies the cumulative feedback and interaction data, including context details, it improves its understanding of user intent and refines its code generation capabilities.
+The process is repeated as you provide more prompts, with Copilot continuously handling user requests, understanding their intent, and generating code in response. Over time, Copilot applies the cumulative feedback and interaction data, including context details, to improve its understanding of user intent and refine its code generation capabilities.
