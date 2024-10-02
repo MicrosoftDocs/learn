@@ -6,10 +6,10 @@ metadata:
   description: This content is part of the Introduction to prompt engineering with GitHub Copilot module.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 09/12/2024
+  ms.date: 10/02/2024
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-github-copilot-large-language-models.md)]
+  [!include[](includes/5-github-copilot-large-language-models.md)]
