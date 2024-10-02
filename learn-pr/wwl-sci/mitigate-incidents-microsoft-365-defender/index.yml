@@ -12,7 +12,7 @@ metadata:
 title: Mitigate incidents using Microsoft Defender
 summary: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Manage incidents in Microsoft Defender
   - Investigate incidents in Microsoft Defender
   - Conduct advanced hunting in Microsoft Defender
