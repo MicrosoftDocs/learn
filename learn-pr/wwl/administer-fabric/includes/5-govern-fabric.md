@@ -4,15 +4,13 @@ Admins can also make use of the *scanner API* to scan Fabric items for sensitive
 
 ## Endorse Fabric content
 
-Content endorsement is a key governance feature. It builds trust in your data assets by identifying Fabric items as trusted and approved for use across the organization. All Fabric items can be endorsed except dashboards.
-
-Endorsed assets are identified with a badge that indicates they're reviewed and approved. Endorsement helps your users know which assets they can trust and rely on for accurate information, and it also helps you as an admin manage the overall growth of items across your environment.
+**Endorsement** is a key governance feature that builds trust in your data assets by marking Fabric items as reviewed and approved. Endorsed items display a badge, signaling to users that these assets are reliable. Endorsement helps users trust the data, and it also helps you as an admin manage the overall growth of items across your environment.
 
 **Promoted** Fabric content appears with a Promoted badge in the Fabric portal. Workspace members with the contributor or admin role can promote content within a workspace. The Fabric admin can promote content across the organization.
 
 ![Screenshot of Promoted Fabric content in the workspace view.](../media/content-endorsement.png)
 
-Content **certification** is a more formal process that involves a review of the content by a designated reviewer. Certified Fabric content appears with a Certified badge in the Fabric portal. Admins manage the certification process and can customize it to meet the needs of your organization.
+**Certified** content requires a more formal process that involves a review of the content by a designated reviewer. Content appears with a Certified badge in the Fabric portal. Admins manage the certification process and can customize it to meet the needs of your organization.
 
 If you aren't an admin, you need to request item certification from an admin. You can do request certification by selecting the item in the Fabric portal, and then selecting **Request certification** from the **More** menu.
 
