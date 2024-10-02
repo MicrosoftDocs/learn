@@ -74,7 +74,7 @@ In the preceding code:
 - The first `app.Run()` defines a middleware component that writes "Hello from middleware 2!" to the response.
 - The second `app.Run()` starts the app.
 
-At runtime, when a web browser sends a request to this app, the middleware components run in the order they were added to the pipeline. In the case of The app returns the following response:
+At runtime, when a web browser sends a request to this app, the middleware components run in the order they were added to the pipeline. The app returns the following response:
 
 ```md
 Hello from middleware 1. Passing to the next middleware!
@@ -82,11 +82,49 @@ Hello from middleware 2!
 Hello from middleware 1 again!
 ```
 
-## 
+## Built-in middleware
+
+ASP.NET Core provides a set of built-in middleware components that you can use to add common functionality to your app. For example, consider the following *Program.cs* file:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error", createScopeForErrors: true);
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
 
 
+app.UseAntiforgery();
 
+app.MapStaticAssets();
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode();
 
+app.Run();
+```
 
+This is from a Blazor app created with the .NET 9 SDK. In the preceding code:
 
+- `app.UseExceptionHandler()` adds a middleware component that catches exceptions and returns an error page.
+- `app.UseHsts()` adds a middleware component that sets the Strict-Transport-Security header.
+- `app.UseHttpsRedirection()` adds a middleware component that redirects HTTP requests to HTTPS.
+- `app.UseAntiforgery()` adds a middleware component that prevents cross-site request forgery (CSRF) attacks.
+- `app.MapStaticAssets()` adds a middleware component that serves static files.
+- `app.MapRazorComponents<App>()` adds a middleware component that serves Blazor components.
 
+There are many more built-in middleware components that you can use in your app. Check the documentation for the complete list.
+
+> [!IMPORTANT]
+> The order in which you add middleware components to the pipeline matters! Certain middleware components must run before others to work correctly. Check the documentation for each middleware component to determine the correct order.

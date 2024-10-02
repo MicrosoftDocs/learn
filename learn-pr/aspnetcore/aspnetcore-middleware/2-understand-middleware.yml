@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore-middlewar.understand-middleware
 
-title: Publishing .NET apps
+title: Understand middleware
 metadata:
-  title: Publishing .NET apps
-  description: This unit explains the difference between building and publishing, as well as the different types of deployments available for .NET apps.
+  title: Understand middleware
+  description: This unit explains what middleware is and how it works in ASP.NET Core.
   ms.date: 8/29/2024
   author: camsoper
   ms.author: casoper
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-understand-middleware.md)]
