@@ -12,13 +12,13 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 **Andy:** This shows us where we have problems, but not what to do about them.
 
-**Mara:** Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there, but it was worth it. DevOps isn't a quick fix.
+**Mara:** Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think DevOps can help us. At my last company, our deployment rates went way up, lead times were faster, and operations had far fewer incidents. It took us a while to get there, but it was worth it. DevOps isn't a quick fix.
 
 **Tim:** I know someone who just got a job as a DevOps engineer. I think it's more for developers. That sounds like you, Andy.
 
 **Mara:** DevOps isn't a job title.
 
-**Amita:** Is there any software program we can get that will help us along, or a template? Maybe there's a DevOps spreadsheet.
+**Amita:** Is there any software program we can get that can help us along, or a template? Maybe there's a DevOps spreadsheet.
 
 **Mara:** DevOps isn't a piece of software.
 
@@ -32,7 +32,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 > _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
-In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps:
+In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our questions. Let's see how Abel defines DevOps:
 
 #### Ask Abel
 
@@ -97,9 +97,9 @@ DevOps is a key reason many elite performers are able to deliver value to custom
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Lj2J]
 
-## What DevOps is not
+## What DevOps isn't
 
-When considering what DevOps is, it's also important to make sure we learn what it's _not_. DevOps is _not_:
+When considering what DevOps is, it's also important to make sure we learn what it's _not_. DevOps *isn't*:
 
 - A methodology.
 - A specific piece of software.
