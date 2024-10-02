@@ -1,6 +1,6 @@
-Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
+Azure DNS is a hosting service for Domain Name System (DNS) domains that provides name resolution by using Microsoft Azure infrastructure.
 
-In this unit, you'll learn what DNS is and how it works. You will also learn about Azure DNS and why you'd use it.
+In this unit, you learn what DNS is and how it works. You also learn about Azure DNS and why you'd use it.
 
 ## What is DNS?
 
@@ -27,7 +27,7 @@ When you connect by using your on-premises network, the DNS settings come from y
 
 Here's a simplified overview of the process a DNS server uses when it resolves a domain-name lookup request:
 
-- Checks to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
+- If the domain name is stored in the short-term cache, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When a match is found, the DNS server updates the local cache and resolves the request.
 - If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* error.
 
@@ -37,15 +37,15 @@ Every computer, server, or network-enabled device on your network has an IP addr
 
 - **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot; for example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
-- **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon; for example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
+- **IPv6** is a relatively new standard and is intended to eventually replace IPv4. It consists of eight groups of hexadecimal numbers, each separated by a colon; for example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
 Many network devices are now provisioned with both an IPv4 and an IPv6 address. The DNS name server can resolve domain names to both IPv4 and IPv6 addresses.
 
 ### DNS settings for your domain
 
-Whether the DNS server for your domain is hosted by a third party or managed in-house, you'll need to configure it for each host type you're using. Host types include web, email, or other services you're using.
+Whether a third-party host your DNS server or you manage it in-house, you need to configure it for each host type you're using. Host types include web, email, or other services you're using.
 
-As the administrator for your company, you want to set up a DNS server by using Azure DNS. In this instance, the DNS server will act as a start of authority (SOA) for your domain.
+As the administrator for your company, you want to set up a DNS server by using Azure DNS. In this instance, the DNS server acts as a start of authority (SOA) for your domain.
 
 ### DNS record types
 
@@ -82,7 +82,7 @@ Azure DNS allows you to host and manage your domains by using a globally distrib
 
 Azure DNS acts as the SOA for the domain.
 
-You can't use Azure DNS to register a domain name; you need to use a third-party domain registrar for that.
+You can't use Azure DNS to register a domain name; you need to register it by using a third-party domain registrar.
 
 ## Why use Azure DNS to host your domain?
 
@@ -107,17 +107,17 @@ Azure DNS provides the following security features:
 
 Azure DNS can manage DNS records for your Azure services and provide DNS for your external resources. Azure DNS uses the same Azure credentials, support contract, and billing as your other Azure services.
 
-You can manage your domains and records by using the Azure portal, Azure PowerShell cmdlets, or the Azure CLI. Applications that require automated DNS management can integrate with the service by using the REST API and SDKs.
+You can manage your domains and records by using the Azure portal, Azure PowerShell cmdlets, or the Azure CLI. Applications that require automated DNS management can integrate with the service by using the REST API and software development kit (SDKs).
 
 ### Private domains
 
-Azure DNS handles translating external domain names to IP addresses. Azure DNS lets you create private zones. These provide name resolution for virtual machines (VMs) within a virtual network and between virtual networks without having to create a custom DNS solution. This allows you to use your own custom domain names rather than the Azure-provided names.
+Azure DNS handles translating external domain names to IP addresses. Azure DNS lets you create private zones. These zones provide name resolution for virtual machines (VMs) within a virtual network and between virtual networks without having to create a custom DNS solution. Private zones allow you to use your own custom domain names rather than the Azure-provided names.
 
-To publish a private DNS zone to your virtual network, you'll specify the list of virtual networks that are allowed to resolve records within the zone.
+To publish a private DNS zone to your virtual network, you specify the list of virtual networks that are allowed to resolve records within the zone.
 
 Private DNS zones have the following benefits:
 
-- There's no need to invest in a DNS solution. DNS zones are supported as part of the Azure infrastructure.
+- DNS zones are supported as part of the Azure infrastructure, so there's no need to invest in a DNS solution.
 - All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SRV.
 - Host names for VMs in your virtual network are automatically maintained.
 - Split-horizon DNS support allows the same domain name to exist in both private and public zones. It resolves to the correct one based on the originating request location.

@@ -32,21 +32,21 @@ To create your DNS zone:
     | Subscription  |  Concierge subscription  |
     | Resource group  | From the dropdown list, select <rgn>[sandbox resource group]</rgn> |
     | **Instance details** |
-    | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com`, replacing the Xs with letters or numbers. |
+    | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com`, and replace the "Xs" with letters or numbers. |
 
     :::image type="content" source="../media/4-creatednszone.png" alt-text="Screenshot of Create DNS zone page.":::
 
 1. Select **Review + create**.
 
-1. After validation passes, select **Create**. It'll take a few minutes to create the DNS zone.
+1. After validation passes, select **Create**. It takes a few minutes to create the DNS zone.
 
 1. When deployment is complete, select **Go to resource**. Your **DNS zone** pane appears.
 
-   By default, the NS and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
+   By default, the NS, and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
 
-1. Make a note of the NS record values. You'll need them in the next section.
+1. Make a note of the NS record values. You need them in the next section.
 
 ## Create a DNS record
 
@@ -66,8 +66,8 @@ The primary record set to create is the A record. The A record set is used to po
     |---------|---------|---------|
     | Name     |   www      | The host name that you want to resolve to an IP address. |
     | Type    |     A    |  The **A** record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
-    | Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
-    | TTL     |      1  | The time to live, which specifies the period of time each DNS server caches the resolution before it's purged.        |
+    | Alias record set    | No   | This setting can only be applied to A, AAAA, and CNAME record types.  |
+    | TTL     |      1  | The time to live, which specifies the period of time each DNS server caches the resolution before being purged.        |
     | TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
     | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you'd enter the public IP address for your web server. |
 
@@ -75,11 +75,11 @@ The primary record set to create is the A record. The A record set is used to po
 
     :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
 
-Note that it's possible to have more than one IP address set up for your web server. In that case, you'd add all the associated IP addresses as records in the A record set. After it's created, you can update the record set with additional IP addresses.
+It's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as records in the A record set. After the record set is created, you can update it with more IP addresses.
 
 ## Verify your global Azure DNS
 
-In a real-world scenario, after you create the public DNS zone, you'd update the NS records of the domain-name registrar to delegate the domain to Azure.
+In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar to delegate the domain to Azure.
 
 Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected by using the `nslookup` tool.
 
@@ -93,7 +93,7 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
     nslookup www.wideworldimportsXXXX.com <name server address>
     ```
 
-   The command should look something like the following:
+   The command should look something like the following example:
 
     ```bash
     nslookup www.wideworldimportsXXXX.com ns1-04.azure-dns.com
@@ -103,4 +103,4 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
 
     :::image type="content" source="../media/4-nslookup.png" alt-text="Screenshot of Cloud Shell, showing the nslookup results.":::
 
-You've successfully set up a DNS zone and created an A record.
+Congratulations! You successfully set up a DNS zone and created an A record.
