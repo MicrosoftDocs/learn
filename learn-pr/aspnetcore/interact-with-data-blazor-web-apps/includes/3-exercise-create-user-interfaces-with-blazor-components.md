@@ -7,8 +7,6 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Create a new Blazor app
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
-
 .NET lets you create new projects with any version of Visual Studio or terminal commands. The following exercises show you the steps by using the terminal and Visual Studio Code.
 
 1. Open Visual Studio Code.
@@ -74,7 +72,7 @@ The **Pages/Index.razor** component lets customers select and configure the pizz
 
 The team has also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
 
-1. In Visual Studio Code, in the file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
+1. In Visual Studio Code's file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
 
     ```csharp
     namespace BlazingPizza;

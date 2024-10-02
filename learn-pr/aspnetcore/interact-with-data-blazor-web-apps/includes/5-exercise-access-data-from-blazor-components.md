@@ -268,5 +268,4 @@ We can now replace the hard-coded pizza in the **Index.razor** page.
 
     The JSON has the pizzas listed in descending order of price as specified in the special pizza controller.
 
-
     :::image type="content" source="../media/5-more-blazing-pizzas.png" alt-text="Screenshot showing even more blazing pizzas.":::
