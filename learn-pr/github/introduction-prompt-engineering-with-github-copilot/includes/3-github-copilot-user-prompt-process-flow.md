@@ -4,7 +4,7 @@ In this unit, we'll break down how GitHub Copilot turns your prompts into smart,
 
 
 
-:::image type="content" source="../media/3-github-copilot-inbound-flow" alt-text="Illustration of GitHub Copilot inbound flow.":::
+:::image type="content" source="../media/3-github-copilot-inbound-flow.png" alt-text="Illustration of GitHub Copilot inbound flow.":::
 
 Let's walk through all the steps Copilot takes to process a user's prompt into a code suggestion.
 
@@ -42,7 +42,7 @@ Finally, the filtered and analyzed prompt is passed to LLM Models, which generat
 
 ## Outbound Flow: 
 
-:::image type="content" source="../media/3-github-copilot-outbound-flow" alt-text="Illustration of GitHub Copilot outbound flow.":::
+:::image type="content" source="../media/3-github-copilot-outbound-flow.png" alt-text="Illustration of GitHub Copilot outbound flow.":::
 
 ### 5-Post-processing and response validation
 Once the model produces its responses, the toxicity filter removes any harmful or offensive generated content. The proxy server then applies a final layer of checks to ensure code quality, security, and ethical standards. These checks include:

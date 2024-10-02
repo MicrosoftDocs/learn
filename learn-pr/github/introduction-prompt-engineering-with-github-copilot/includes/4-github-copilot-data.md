@@ -30,7 +30,7 @@ Copilot Chat's ability to process diverse input types enhances its utility as a 
 ## Limited Context Windows
 
 
-:::image type="content" source="../media/4-copilot-data-limited-context-window" alt-text="Illustration of GitHub Copilot context window.":::
+:::image type="content" source="../media/4-copilot-data-limited-context-window.png" alt-text="Illustration of GitHub Copilot context window.":::
 
 While GitHub Copilot Chat excels at understanding and responding to prompts, it's essential to acknowledge the limitation of context windows. This refers to the amount of surrounding code and text the model can process simultaneously to generate suggestions.
 GitHub Copilot's context window typically ranges from approximately 200-500 lines of code or up to a few thousand tokens. This limitation can vary depending on the specific implementation and version of Copilot being used.
