@@ -3,4 +3,4 @@ In this module you’ve learned about Autonomous Intelligence technologies that 
 You’ve also learned strengths and when to best use these technologies and their limitations and when Autonomous Intelligence methods can support them.
 
 > [!NOTE]
-> To learn about Machine Teaching that is new AI paradigm, review Module 2 – Introduction to Machine Teaching.
+> To learn about the new AI paradigm of Machine Teaching, review Module 2 – Introduction to Machine Teaching.
