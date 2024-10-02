@@ -56,7 +56,7 @@ az group create \
 
 Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
 
-The bicep file we're using to deploy the compute resources is located at [deploy/vm-postgres.bicep](./deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM. You can read 
+The bicep file we're using to deploy the compute resources is located at [deploy/vm-postgres.bicep](https://github.com/Azure-Samples/linux-postgres-migration/blob/main/deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM. You can read 
 more about Bicep on [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep).
 
 If you run this command on your local machine, first clone the example repo to your machine.
@@ -111,7 +111,7 @@ The NSG is also visible inside the Resource Group. It contains a set of inbound 
 
 We will add an inbound security rule to allow SSH traffic from your current IP address to the Virtual Machine.
 
-In a production scenario you would often use [just-in-time access](https://learn.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](https://learn.microsoft.com/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to secure your Virtual Machine. This would allow you to restrict access to the Virtual Machine to only when it is needed.
+In a production scenario you would often use [just-in-time access](/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to secure your Virtual Machine. This would allow you to restrict access to the Virtual Machine to only when it is needed.
 
 You will now add an inbound security rule to the NSG to allow SSH traffic from your current IP address.
 
@@ -133,7 +133,7 @@ At the top of the page, click the breadcrumb link to return to the Resource Grou
 
 Note the `240900-linux-postgres-identity` User Assigned Managed Identity is listed in the Resource Group.
 
-You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
+You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
 
 ## View the Azure Database for PostgreSQL's Server Administrator
 
@@ -151,7 +151,7 @@ In the upcoming section you will use this identity from the Virtual Machine it i
 
 In a production scenario, you would likely use a combination of Managed Identities, Azure AD, and fine-grained Role-Based Access Control (RBAC) to enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege.
 
-Read more about these scenarios via [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
+Read more about these scenarios via [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
 ## Review the Azure Database for PostgreSQL Flexible Server Firewall Rules
 
@@ -169,7 +169,7 @@ In production, we would likely further isolate this server from the public inter
 
 Unlike the Virtual Machine, we have not associated our Azure Database for PostgreSQL with any Virtual Network. This means we retain the option of accessing it over the public internet which is useful for test/dev scenarios. 
 
-To provide both security and flexibility we will now enable access from the Virtual Machine via its Virtual Network using a private endpoint. This will allow the Virtual Machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-private-link).
+To provide both security and flexibility we will now enable access from the Virtual Machine via its Virtual Network using a private endpoint. This will allow the Virtual Machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-private-link).
 
 In the future we will configure this via Bicep, but for demonstration purposes we will use the Azure Portal to create the private endpoint.
 
