@@ -32706,6 +32706,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/learn-pr/github/introduction-to-github-copilot/6-summary.yml",
+      "redirect_url": "/training/modules/introduction-to-github-copilot/7-summary",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/github/introduction-prompt-engineering-with-github-copilot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-prompt-engineering-with-github-copilot/7-summary",
       "redirect_document_id": true
@@ -32718,11 +32723,6 @@
     {
       "source_path_from_root": "/learn-pr/github/introduction-prompt-engineering-with-github-copilot/4-github-copilot-large-language-models.yml",
       "redirect_url": "/training/modules/introduction-prompt-engineering-with-github-copilot/5-github-copilot-large-language-models",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/github/manage-sensitive-data-security-policies/4-report-logs.yml",
-      "redirect_url": "/training/modules/manage-sensitive-data-security-policies/learn-pr/github/manage-sensitive-data-security-policies/5-report-logs",
       "redirect_document_id": true
     },
     {
