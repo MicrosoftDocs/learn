@@ -27,7 +27,7 @@ GitHub Copilot Chat processes a wide range of coding-related prompts, demonstrat
 Copilot Chat's ability to process diverse input types enhances its utility as a comprehensive coding companion.
 
 
-## Limited Context Windows
+## Limited context windows
 
 
 :::image type="content" source="../media/4-copilot-data-limited-context-window.png" alt-text="Illustration of GitHub Copilot context window.":::
