@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.aspnetcore-middleware
 metadata:
-  title: Publish an ASP.NET Core app
-  description: "Learn how to publish an ASP.NET Core app for deployment to a web server or cloud service."
-  ms.date: 8/28/2024
+  title: Customize ASP.NET Core behavior with middleware
+  description: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
+  ms.date: 10/02/2024
   author: camsoper
   ms.author: casoper
   ms.topic: module
   ms.service: aspnet-core
-title: Use Middleware in an ASP.NET Core app
+title: Customize ASP.NET Core behavior with middleware
 summary: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
 abstract: |
   By the end of this module, you'll be able to:
