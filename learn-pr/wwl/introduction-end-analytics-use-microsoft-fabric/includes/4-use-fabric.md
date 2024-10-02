@@ -1,4 +1,4 @@
-Before you can use Microsoft Fabric, it needs to be enabled for your organization. Fabric can be set up for the entire organization or specific user groups. If you don't have access, contact your Fabric administrator to check availability. The following roles can enable and grant access to Fabric.
+Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You might need to work with your IT department to enable Fabric for your organization. The permissions required to enable Fabric are either:
 
 - *Fabric admin (formerly Power BI admin)*
 - *Power Platform admin*
@@ -32,6 +32,17 @@ To grant access to a workspace, choose one of the four available roles. These ro
 
 > [!NOTE]
 > Learn more about workspaces in the [Fabric documentation](/fabric/get-started/workspaces).
+
+## Discover data with OneLake data hub
+
+The OneLake data Hub in Microsoft Fabric helps users easily find and access various data sources within their organization. Users explore and connect to data sources, ensuring they have the right data for their needs. Users only see items shared with them. Here are some considerations when using OneLake Hub:
+
+- Narrow results by domains (if implemented).
+- Filter by workspaces in Explorer.
+- Explore default groups: *All data*, *My data*, *Endorsed in your org*, and *Favorites*.
+- Filter further by keyword or item type.
+
+:::image type="content" source="../media/onelake-data-hub.png" alt-text="Screenshot of the OneLake data hub." lightbox="../media/onelake-data-hub.png":::
 
 ## Create items in Fabric
 
