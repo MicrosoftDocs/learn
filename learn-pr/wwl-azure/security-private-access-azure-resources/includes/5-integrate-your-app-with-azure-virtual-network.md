@@ -196,10 +196,10 @@ Connecting and disconnecting with a virtual network is at an app level. Operatio
 
 In the app view of your virtual network integration instance, you can disconnect your app from the virtual network and you can configure application routing. To disconnect your app from a virtual network, select **Disconnect**. Your app is restarted when you disconnect from a virtual network. Disconnecting doesn't change your virtual network. The subnet isn't removed. If you then want to delete your virtual network, first disconnect your app from the virtual network.
 
-The private IP assigned to the instance is exposed via the environment variable WEBSITE\_PRIVATE\_IP. Kudu console UI also shows the list of environment variables available to the web app. This IP is assigned from the address range of the integrated subnet. This IP is used by the web app to connect to the resources through the Azure virtual network.
+The private IP assigned to the instance is exposed via the environment variable WEBSITE_PRIVATE_IP. Kudu console UI also shows the list of environment variables available to the web app. This IP is assigned from the address range of the integrated subnet. This IP is used by the web app to connect to the resources through the Azure virtual network.
 
 > [!NOTE]
-> The value of WEBSITE\_PRIVATE\_IP is bound to change. However, it will be an IP within the address range of the integration subnet, so you'll need to allow access from the entire address range.
+> The value of WEBSITE_PRIVATE_IP is bound to change. However, it will be an IP within the address range of the integration subnet, so you'll need to allow access from the entire address range.
 
 ## Pricing details
 

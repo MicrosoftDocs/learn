@@ -56,7 +56,7 @@ When you scale out your App Service plans, workers are automatically added to su
 
 The number of front ends that are allocated by default is good for a moderate load. You can lower the ratio to as little as one front end for every five instances. You can also change the size of the front ends. By default, they're single core. In the Azure portal, you can change their size to two or four cores instead.
 
-There's a charge for changing the ratio or the front-end sizes. For more information, see Azure App Service pricing. If you want to improve the load capacity of your ASE, you'll get more improvement by first scaling to two-core front ends before you adjust the scale ratio. Changing the core size of your front ends will cause an upgrade of your ASE and should be done outside of regular business hours.
+There's a charge for changing the ratio or the front-end sizes. For more information, see [Azure App Service pricing](https://azure.microsoft.com/pricing/details/app-service/). If you want to improve the load capacity of your ASE, you'll get more improvement by first scaling to two-core front ends before you adjust the scale ratio. Changing the core size of your front ends will cause an upgrade of your ASE and should be done outside of regular business hours.
 
 Front-end resources are the HTTP/HTTPS endpoint for the ASE. With the default front-end configuration, memory usage per front end is consistently around 60 percent. The primary reason to scale your front ends is CPU usage, which is primarily driven by HTTPS traffic.
 
@@ -199,9 +199,10 @@ If you adjust the size of the front ends to two cores but don't adjust the ratio
 
 ## Delete an ASE
 
-1.  To delete an ASE:
-2.  Select **Delete** at the top of the **App Service Environment** pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
-3.  Select **OK**.
+To delete an ASE:
+
+1.  Select **Delete** at the top of the **App Service Environment** pane. Enter the name of your ASE to confirm that you want to delete it. When you delete an ASE, you also delete all the content within it.
+2.  Select **OK**.
 
 :::image type="content" source="../media/delete-application-service-environment-page-565fddaf.png" alt-text="Screenshot showing how to delete an application service environment.":::
 
@@ -212,22 +213,6 @@ There are command line capabilities to administer to an ASE. The Azure CLI comma
 
 ```azurecli
 C:\>az appservice ase --help Group az appservice ase : Manage App Service Environments v2. This command group is in preview. It may be changed/removed in a future release. Commands: create : Create app service environment. delete : Delete app service environment. list : List app service environments. list-addresses : List VIPs associated with an app service environment. list-plans : List app service plans associated with an app service environment. show : Show details of an app service environment. update : Update app service environment. For more specific examples, use: az find "az appservice ase"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
