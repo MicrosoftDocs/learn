@@ -33,7 +33,7 @@ When the app receives an HTTP request, the delegate is called. The delegate writ
 
 ## Chaining middleware
 
-In most apps, you'll have multiple middleware components that run in sequence. The order in which you add middleware components to the pipeline is important. The first middleware component added is the first to run, and the last middleware component added is the last to run.
+In most apps, you'll have multiple middleware components that run in sequence. The order in which you add middleware components to the pipeline is important. The components run in the order they were added.
 
 ### Terminal and non-terminal middleware
 
