@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-receipts-form-recognizer.get-started
-title: Get started with receipt analysis on Azure
+title: Understand Azure AI Document Intelligence capabilities
 metadata:
-  title: Get started with receipt analysis on Azure
-  description: Get started with receipt analysis on Azure
+  title: Understand Azure AI Document Intelligence capabilities
+  description: "Understand Azure AI Document Intelligence capabilities"
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 11/02/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/3-azure-document-intelligence.md)]

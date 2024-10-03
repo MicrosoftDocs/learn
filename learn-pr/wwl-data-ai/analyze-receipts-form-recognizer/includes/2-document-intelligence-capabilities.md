@@ -1,4 +1,4 @@
-Document intelligence relies on machine learning models that are trained to recognize data in text. The ability to extract text, layout, and key-value pairs are known as *document analysis*. Document analysis provides locations of text on a page identified by bounding box coordinates. 
+Document intelligence relies on machine learning models that are trained to recognize data in text. The ability to extract text, layout, and key-value pairs is known as *document analysis*. Document analysis provides locations of text on a page identified by bounding box coordinates. 
 
 ![A screenshot of a scanned receipt for the purchase of a Surface Pro and a Surface Pen.](../media/contoso-receipt-small.png)
 
