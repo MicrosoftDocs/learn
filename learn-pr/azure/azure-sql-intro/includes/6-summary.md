@@ -17,7 +17,7 @@ You can watch the 2008 [Microsoft Professional Developers Conference](https://ww
 
 ### SQL Server on Azure Virtual Machines
 
-To learn more about what you can get from IaaS services, check out [What is IaaS?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-iaas/). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
+To learn more about what you can get from IaaS services, check out [What is IaaS?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-iaas/). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
 
 - Install from [Azure gallery images](/azure/virtual-machines/shared-image-galleries) or take advantage of the [resource provider](/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
 - Consider memory-optimized or storage-optimized [VM sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
