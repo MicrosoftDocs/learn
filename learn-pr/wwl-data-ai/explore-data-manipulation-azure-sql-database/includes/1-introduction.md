@@ -4,10 +4,10 @@ Depending on the specific requirements of your application, one data manipulatio
 
 Whether you're dealing with large datasets, complex data structures, or specific performance requirements, it's recommended to test the various methods before deciding on the best approach for your specific application needs.
 
-In this module, you'll discover a range of methods for manipulating data, including importing, exporting, and copying data to and from Azure SQL Database. We use the terms data import, data export, data movement, and data copy as subsets of data manipulation.
+In this module, you'll discover a range of methods for manipulating data, including importing, exporting, and copying data to and from Azure SQL Database.
 
-> [!TIP] 
-> Explore other modules part of the [Develop data-driven applications by using Azure SQL Database learning path](/training/modules/get-started-sql-database-application-development?azure-portal=true).
+> [!NOTE] 
+> We use the terms data import, data export, data movement, and data copy as subsets of data manipulation.
 
 ## Understand data movement scenarios
 
@@ -22,4 +22,5 @@ Understanding the different purposes for data movement is essential for develope
 | **Backup** | Create a copy of the data to prevent data loss | Periodically | Exporting data to an external storage for backup purposes |
 | **Archiving** | Store historical data that is no longer actively used | Periodically | Exporting old transaction records to an archive database |
 
-
+> [!TIP] 
+> Explore other modules part of the [Develop data-driven applications by using Azure SQL Database learning path](/training/modules/get-started-sql-database-application-development?azure-portal=true).
