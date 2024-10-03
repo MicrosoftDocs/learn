@@ -1,6 +1,6 @@
-In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completions playground. 
+In this exercise, you use natural language to interact with an Azure OpenAI deployment in the completions playground.
 
-You might be familiar with natural language generative AI from applications like ChatGPT, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
+You might be familiar with applications like ChatGPT that use *natural language generative AI*, but you can use these models for more than chatbots. Let's explore other useful applications of these models.
 
 > [!NOTE]
 > To complete this exercise, you need the following:
@@ -16,7 +16,7 @@ Let's get started by opening the [Azure OpenAI completions playground](https://o
 
 ## Extract information
 
-In this example, you'll learn how to extract information by using a prompt that consists of both a sample text and an instruction.
+In this example, you learn how to extract information by using a prompt that consists of both a sample text and an instruction.
 
 1. Copy and paste the following text into the completions text box:
 
@@ -45,7 +45,7 @@ In this example, you combined a prompt with data to extract information using na
 
 ## Extract input and format the output
 
-In this next exercise, you'll ask your LLM to organize your text as a table, which shows that LLMs are capable of generating *and* formatting text.
+In this next exercise, you ask your large language model (LLM) to organize your text as a table, which shows that LLMs are capable of generating *and* formatting text.
 
 1. Clear the completions text box. Then paste the following text:
 
@@ -109,7 +109,7 @@ In this example, the model returned a JSON array of the fruits and their attribu
 
 ## Classify content
 
-In this exercise, you'll use an LLM to sort your content into different categories.
+In this exercise, you use an LLM to sort your content into different categories.
 
 1. Clear the completions text box. Then paste the following text:
 
@@ -134,7 +134,7 @@ In this exercise, you'll use an LLM to sort your content into different categori
     
     ```
 
-In this example, you provided one example of a headline and a category and asked the model to classify a second example. This is an example of "one-shot learning": with just one example, the model can generalize to classify a new example.
+You provided one example of a headline and a category and asked the model to classify a second example. This example demonstrates *one-shot learning*. With just one example, the model can generalize to classify a new example.
 
 > [!NOTE]
 > You can change the second headline to generate different categories.
@@ -170,7 +170,7 @@ Summarized content can be helpful if you want to quickly understand what a longe
     
     ```
 
-In this example, you used TL; DR (too long; didn't read) to make the model create a short summary of a larger piece of text.
+In this example, you used `TL;DR` (too long; didn't read) to make the model create a short summary of a larger piece of text.
 
 ## Generate novel content
 
