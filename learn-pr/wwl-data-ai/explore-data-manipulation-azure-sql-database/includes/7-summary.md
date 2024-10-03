@@ -4,7 +4,7 @@ One of the main takeaways from this module include understanding how to securely
 
 ### Additional Reading
 
-- [Azure API Management documentation](/azure/api-management/api-management-key-concepts)
-- [Azure SQL bindings for Azure Functions overview](/azure/azure-functions/functions-bindings-azure-sql)
-- [What is Azure Data Factory?](/azure/data-factory/introduction)
-- [Monitor Azure Functions](/azure/azure-functions/monitor-functions)
+- [Azure API Management documentation](/azure/api-management/api-management-key-concepts?azure-portal=true)
+- [Azure SQL bindings for Azure Functions overview](/azure/azure-functions/functions-bindings-azure-sql?azure-portal=true)
+- [What is Azure Data Factory?](/azure/data-factory/introduction?azure-portal=true)
+- [Monitor Azure Functions](/azure/azure-functions/monitor-functions?azure-portal=true)

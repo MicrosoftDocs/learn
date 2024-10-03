@@ -1,8 +1,8 @@
-REST endpoint is a useful resource to import data to Azure SQL Database. However, other tools for data movement include [Azure Data Factory (ADF)](/azure/data-factory/introduction), Bulk Copy Program (BCP), SQL Server Import and Export Wizard, and scripts in Azure CLI and PowerShell. These tools offer various options for data movement, each suitable for different scenarios.
+REST endpoint is a useful resource to import data to Azure SQL Database. However, other tools for data movement include [Azure Data Factory (ADF)](/azure/data-factory/introduction?azure-portal=true), Bulk Copy Program (BCP), SQL Server Import and Export Wizard, and scripts in Azure CLI and PowerShell. These tools offer various options for data movement, each suitable for different scenarios.
 
 ## Use SQL Data Sync to synchronize data
 
-[SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) is a feature in Azure SQL Database that allows you to synchronize data across multiple databases, both in the cloud and on-premises. This capability is essential for maintaining data consistency and enabling hybrid cloud scenarios. SQL Data Sync is a service built on Azure SQL Database that lets you synchronize selected data bi-directionally across multiple databases. It uses a hub-and-spoke topology, where one database acts as the hub and others as members. The hub database must be an Azure SQL Database, while member databases can be either Azure SQL Databases or SQL Server databases.
+[SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?azure-portal=true) is a feature in Azure SQL Database that allows you to synchronize data across multiple databases, both in the cloud and on-premises. This capability is essential for maintaining data consistency and enabling hybrid cloud scenarios. SQL Data Sync is a service built on Azure SQL Database that lets you synchronize selected data bi-directionally across multiple databases. It uses a hub-and-spoke topology, where one database acts as the hub and others as members. The hub database must be an Azure SQL Database, while member databases can be either Azure SQL Databases or SQL Server databases.
 
 :::image type="content" source="../media/3-data-sync-architecture.png" alt-text="Diagram showing SQL Data Sync architecture.":::
 
@@ -20,7 +20,7 @@ REST endpoint is a useful resource to import data to Azure SQL Database. However
 
 ## Use Azure Data Factory to manipulate data in Azure SQL Database
 
-[Azure Data Factory (ADF)](/azure/data-factory/introduction) is a fully managed, cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation. It supports a wide range of data sources and destinations and complex hybrid extract-transform-load (ETL), extract-load-transform (ELT) processes, making it a versatile tool for data integration tasks.
+[Azure Data Factory (ADF)](/azure/data-factory/introduction?azure-portal=true) is a fully managed, cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation. It supports a wide range of data sources and destinations and complex hybrid extract-transform-load (ETL), extract-load-transform (ELT) processes, making it a versatile tool for data integration tasks.
 
 With ADF, you can design your own data orchestration and integration process.
 
@@ -49,7 +49,7 @@ With ADF, you can design your own data orchestration and integration process.
 
 A BACPAC file is essentially a ZIP file with an extension of *.bacpac*, containing the database schema and data. It's used for database migration, backup, and archiving purposes. You can export a database to a BACPAC file and store it in Azure Blob Storage or on-premises, and later import it back into Azure SQL Database, Azure SQL Managed Instance, or SQL Server. Also, you can use BACPAC files to import just a subset of the data. This flexibility allows for a more tailored approach to data movement.
 
-You can import and export data with BACPAC files using the Azure portal and SQL Server Management Studio (SSMS), but you can also use the [SQLPackage utility](/sql/tools/sqlpackage/sqlpackage). 
+You can import and export data with BACPAC files using the Azure portal and SQL Server Management Studio (SSMS), but you can also use the [SQLPackage utility](/sql/tools/sqlpackage/sqlpackage?azure-portal=true). 
 
 Run the following example command to import data to a BACPAC file using SQLPackage. Replace `<ServerName>`, `<DatabaseName>`, `<UserName>`, `<Password>`, and `<PathToBacpacFile>` in the following scripts with your actual server name, database name, user credentials, and the path for the BACPAC file.
 
@@ -65,7 +65,7 @@ sqlpackage.exe /Action:Export /ssn:<ServerName> /sdn:<DatabaseName> /su:<UserNam
 
 ## Use Bulk Copy Program (BCP)
 
-The [BCP utility](https://learn.microsoft.com/en-us/sql/tools/bcp-utility?view=sql-server-ver16&tabs=windows) is a command-line tool that exports tables to files so you can import them. Use this approach to migrate from a single SQL Database to SQL Managed Instance and back.
+The [BCP utility](/sql/tools/bcp-utility?azure-portal=true) is a command-line tool that exports tables to files so you can import them. Use this approach to migrate from a single SQL Database to SQL Managed Instance and back.
 
 ## Use SQL Server Import and Export Wizard
 
@@ -75,4 +75,4 @@ SQL Server Import and Export Wizard are a graphical tool in SSMS for importing a
 
 You can use scripts in both Azure CLI and PowerShell to automate import and export processes. Using scripts for import or export is suitable for integrating into CI/CD pipelines, however each script requires a high degree of customization compared to other methods.
 
-To learn more about other tools available to export and import data, see [Import and export data from SQL Server and Azure SQL Database](/sql/relational-databases/import-export/overview-import-export).
+To learn more about other tools available to export and import data, see [Import and export data from SQL Server and Azure SQL Database](/sql/relational-databases/import-export/overview-import-export?azure-portal=true).

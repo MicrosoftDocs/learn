@@ -10,8 +10,8 @@ Depending on the binding mode you're using in your function app, there are exten
 
 There are two recommended modes for creating a C# function.
 
-- The [isolated worker model](#TODO), which is a compiled function that runs in a worker process isolated from the runtime. This model supports C# functions running on both LTS and non-LTS versions of .NET and the .NET Framework.
-- A [C# script](/azure/azure-functions/functions-dotnet-class-library), which is primarily used when creating C# functions in the Azure portal.
+- The [isolated worker model](/azure/azure-functions/dotnet-isolated-process-guide?azure-portal=true), which is a compiled function that runs in a worker process isolated from the runtime. This model supports C# functions running on both LTS and non-LTS versions of .NET and the .NET Framework.
+- A [C# script](/azure/azure-functions/functions-dotnet-class-library?azure-portal=true), which is primarily used when creating C# functions in the Azure portal.
 
 > [!IMPORTANT]
 > Editing .NET isolated Function Apps is not supported in the Azure portal. Use your local development environment to edit the Function App. 
@@ -37,7 +37,7 @@ You can add the Azure SQL Database connection string in the left-hand menu of yo
 
 ## Read data operation (input binding)
 
-The function operates in an [input binding mode](/azure/azure-functions/functions-bindings-azure-sql-input), which means that when the function runs, the Azure SQL input binding retrieves data from a database and passes it to the input parameter of the function.
+The function operates in an [input binding mode](/azure/azure-functions/functions-bindings-azure-sql-input?azure-portal=true), which means that when the function runs, the Azure SQL input binding retrieves data from a database and passes it to the input parameter of the function.
 
 ### Read a single record from an Azure SQL database
 
@@ -180,9 +180,9 @@ To trigger and validate the `AddEmployee` function, you need to send an HTTP POS
 
 ## Configure an Azure SQL trigger
 
-An [Azure SQL trigger](/azure/azure-functions/functions-bindings-azure-sql-trigger) is a feature used in Azure Functions that triggers a function when a change is detected on a SQL table. 
+An [Azure SQL trigger](/azure/azure-functions/functions-bindings-azure-sql-trigger?azure-portal=true) is a feature used in Azure Functions that triggers a function when a change is detected on a SQL table. 
 
-The trigger uses [SQL change tracking](/sql/relational-databases/track-changes/work-with-change-tracking-sql-server) to detect changes in the table by monitoring and responding to `INSERT`, `UPDATE`, and `DELETE` events efficiently.
+The trigger uses [SQL change tracking](/sql/relational-databases/track-changes/work-with-change-tracking-sql-server?azure-portal=true) to detect changes in the table by monitoring and responding to `INSERT`, `UPDATE`, and `DELETE` events efficiently.
 
 It operates on a polling loop that periodically checks for changes and triggers the function accordingly. If multiple changes are made during one polling interval, these changes are applied by the trigger in the order that the changes were originally made.
 
@@ -256,8 +256,8 @@ namespace AzureSQL.Employee
 This setup allows your function to react to data changes in near real-time, making it useful for scenarios like data synchronization, auditing, and more.
 
 > [!NOTE] 
-> To learn more about how SQL change tracking works, see [Work with change tracking](/sql/relational-databases/track-changes/work-with-change-tracking-sql-server).
+> To learn more about how SQL change tracking works, see [Work with change tracking](/sql/relational-databases/track-changes/work-with-change-tracking-sql-server?azure-portal=true).
 
 ## Monitor function execution
 
-Enable [Azure Application Insights](/azure/azure-functions/functions-monitoring) integration to keep track of your function's performance and any potential issues. Application Insights collects log, performance, and error data.
+Enable [Azure Application Insights](/azure/azure-functions/functions-monitoring?azure-portal=true) integration to keep track of your function's performance and any potential issues. Application Insights collects log, performance, and error data.

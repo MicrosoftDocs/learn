@@ -1,6 +1,6 @@
-Azure SQL Database enables you to import data using an external REST endpoint through the system-stored procedure [`sp_invoke_external_rest_endpoint`](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql). You can call any HTTP REST endpoints directly from your SQL queries, making it possible to integrate with a wide range of services, including Azure Functions, Azure Logic Apps, and Azure Apps Service.
+Azure SQL Database enables you to import data using an external REST endpoint through the system-stored procedure [`sp_invoke_external_rest_endpoint`](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true). You can call any HTTP REST endpoints directly from your SQL queries, making it possible to integrate with a wide range of services, including Azure Functions, Azure Logic Apps, and Azure Apps Service.
 
-Also, if you want to invoke a REST service that isn't within the allowed list, you can use [Azure API Management](/azure/api-management/api-management-key-concepts) to securely expose the desired service and make it available to `sp_invoke_external_rest_endpoint`.
+Also, if you want to invoke a REST service that isn't within the allowed list, you can use [Azure API Management](/azure/api-management/api-management-key-concepts?azure-portal=true) to securely expose the desired service and make it available to `sp_invoke_external_rest_endpoint`.
 
 ## Explore API usage
 
@@ -14,7 +14,7 @@ Let's explore some of the key use cases and scenarios where this functionality c
 
 - **Data enrichment:** Enrich your data by calling external APIs. For example, you might call a REST API to get additional information about a product or customer and then store the data in your database.
 
-- **API Management:** Use `sp_invoke_external_rest_endpoint` to interact with APIs managed by [Azure API Management](/azure/api-management/api-management-key-concepts). This allows you to use existing APIs for various functionalities without having to write complex integration code.
+- **API Management:** Use `sp_invoke_external_rest_endpoint` to interact with APIs managed by [Azure API Management](/azure/api-management/api-management-key-concepts?azure-portal=true). This allows you to use existing APIs for various functionalities without having to write complex integration code.
 
 ## Implement secure API calls
 
