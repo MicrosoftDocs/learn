@@ -249,7 +249,7 @@ output should be as follows:
 change to the directory that contains our application
 
 ```bash
-cd tt-go/app/local
+cd tailwind-traders-go/app
 ```
 
 run the application interactively from the command line

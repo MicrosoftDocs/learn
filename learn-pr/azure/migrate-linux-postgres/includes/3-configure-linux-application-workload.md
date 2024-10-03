@@ -118,13 +118,13 @@ $
 Run the following commands on the remote machine
 
 ```bash
-git clone https://github.com/asw101/tt-go.git
+git clone https://github.com/Azure-Samples/tailwind-traders-go.git
 ```
 
 Change to the application directory
 
 ```bash
-cd tt-go/app/
+cd tailwind-traders-go/app/
 ```
 
 Run the application
