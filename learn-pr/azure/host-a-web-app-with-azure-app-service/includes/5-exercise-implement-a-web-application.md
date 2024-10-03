@@ -16,9 +16,9 @@ The command creates a new folder named "BestBikeApp" to hold your project.
 
 ### Optionally test your web app
 
-Open a second command shell session by browsing to <https://shell.azure.com/> in a new tab. You can test your application locally on Azure. To do so, use the following steps:
+You can test your application locally on Azure. To do so, use the following steps:
 
-1. From your primary command shell session, run the following commands to build and run your web application in the background:
+1. Run the following commands to build and run your web application in the background:
 
     ```bash
     cd BestBikeApp
@@ -44,7 +44,7 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
 
     In the output, take note of the values of *&lt;process-number>* and *&lt;port>*.
 
-1. In the same Cloud Shell session, run the following command to browse to your web application, replacing *&lt;port>* with the port you noted in the last step.
+1. Run the following command to browse to your web application, replacing *&lt;port>* with the port you noted in the last step.
 
     ```bash
     curl -kL http://localhost:<port>/
