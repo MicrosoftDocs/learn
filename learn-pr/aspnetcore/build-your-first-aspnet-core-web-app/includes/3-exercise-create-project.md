@@ -1,6 +1,6 @@
 In this exercise, you will:
 
-* Create an ASP.NET Core web app project from a template using Visual Studio Code with the C# Dev Kit extension.
+* Create an ASP.NET Core web app project from a template.
 * Examine the structure of the created project.
 
 ## Create an ASP.NET Core web app using a template
