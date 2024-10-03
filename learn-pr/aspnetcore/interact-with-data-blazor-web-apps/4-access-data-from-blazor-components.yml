@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In which Blazor event handler is a good place to fetch data?"
+  - content: "Which Blazor event handler is a good place to fetch data?"
     choices:
     - content: "PageLoad"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "Blazor apps initialize their user interface in the OnInitializedAsync event handler and are a great place to fetch data to present on the page."
     - content: "OnAfterRenderAsync"
       isCorrect: false
-      explanation: "OnAfterRenderAsync is a Blazor event handler that runs after each time the Blazor runtime updates the user interface and is too late in the render process to fetch data without a visible repainting of the user interface."
+      explanation: "OnAfterRenderAsync is a Blazor event handler that runs each time after the Blazor runtime updates the user interface. It also runs when it's too late in the render process to fetch data without a visible repainting of the user interface."
   - content: "Which Blazor directive should you use to work with a data access service on a Blazor page?"
     choices:
     - content: "@inject"

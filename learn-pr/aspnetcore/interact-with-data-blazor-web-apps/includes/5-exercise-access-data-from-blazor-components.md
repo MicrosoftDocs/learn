@@ -12,7 +12,7 @@ In this exercise, you'll add packages to support database functionality, connect
     cd BlazingPizza
     ```
 
-1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite** and **System.Net.Http.Json** packages:
+1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite**, and **System.Net.Http.Json** packages:
 
     ```powershell
     dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8

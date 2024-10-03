@@ -26,7 +26,7 @@ You start by defining the component parameter in the child component. It's defin
 }
 ```
 
-Because the component parameters are members of the child component, you can render them in your HTML by using Blazor's reserved `@` symbol, followed by their name. Also, the preceding code specifies a default value for the `PizzaDescription` parameter. This value is rendered if the parent component doesn't pass a value. Otherwise, it's overridden by the value passed from the parent.
+Because the component parameters are members of the child component, you can render them in your HTML by using Blazor's reserved `@` symbol, followed by their name. Also, the preceding code specifies a default value for the `PizzaDescription` parameter. This value is rendered if the parent component doesn't pass a value. Otherwise, the value passed from the parent overrides it.
 
 You can also use custom classes in your project as component parameters. Consider this class that describes a topping:
 
@@ -96,7 +96,7 @@ So in this example, the `<h2>` tag has the content `Deal: Throwback Thursday` be
 > [!NOTE]
 > As for component parameters, you can pass objects as cascading parameters if you have more complex requirements.
 
-In the preceding example, the cascading value is identified by the `Name` attribute in the parent, which is matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. Omitting the name works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
+In the preceding example, the `Name` attribute in the parent identifies the cascading value, which is matched with the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. Omitting the name works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
 
 ## Share information by using AppState
 

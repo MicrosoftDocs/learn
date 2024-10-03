@@ -1,6 +1,6 @@
 Blazor components let you define webpages or portions of HTML that include dynamic content by using .NET code. In Blazor, you can formulate dynamic content by using C#, instead of using JavaScript.
 
-Suppose you're working for a pizza delivery company to create a new modern website. You're starting with a welcome page that'll become the landing page for most site users. You want to display special deals and popular pizzas on that page.
+Suppose you're working for a pizza delivery company to create a new modern website. You're starting with a welcome page that will become the landing page for most site users. You want to display special deals and popular pizzas on that page.
 
 In this unit, you'll learn how to create components in Blazor and write code that renders dynamic content on those components.
 
