@@ -3,10 +3,11 @@ uid: learn.wwl.explore-azure-networking-sap-rise
 metadata:
   title: Explore Azure networking for SAP RISE
   description: "Your SAP RISE architecture running in SAP's Azure subscription and tenant is created and managed by SAP. This module shows you how to use your Azure networks to connect to your SAP RISE instance."
-  ms.date: 08/13/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: sap-on-azure
