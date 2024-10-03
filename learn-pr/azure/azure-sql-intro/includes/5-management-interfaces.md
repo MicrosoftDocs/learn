@@ -2,7 +2,7 @@ As you deploy, use, and manage Azure SQL resources, you can use a variety of int
 
 ### Azure portal  
 
-The [Azure portal](https://portal.azure.com) provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy resources, administer resources, and even connect to databases and run queries.
+The [Azure portal](https://portal.azure.com) provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy and administer resources, and even connect to databases and run queries.
 
 :::image type="content" source="../media/5-azure-sql-portal.png" alt-text="Screenshot that shows the Azure SQL deployment options in the Azure portal.":::
   
@@ -34,4 +34,4 @@ Also, Azure CLI and Azure PowerShell cmdlets are supported for specific Azure SQ
 
 ## What to use when
 
-There are several interfaces you can use to interact with Azure SQL. Many capabilities are available in all the interfaces. Which one you choose depends on a combination of preference and what you're trying to accomplish. Throughout this learning path, you can use many of the interfaces described here. At the end of this module, there are resources to help you learn more about the ones that interest you.  
+There are several interfaces you can use to interact with Azure SQL. Many capabilities are available in all the interfaces. Which one you choose depends on a combination of preference, and what you're trying to accomplish. Throughout this learning path, you can use many of the interfaces described here. At the end of this module, there are resources to help you learn more about the ones that interest you.  
