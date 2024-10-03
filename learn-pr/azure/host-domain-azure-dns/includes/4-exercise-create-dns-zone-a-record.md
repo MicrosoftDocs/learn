@@ -40,7 +40,9 @@ To create your DNS zone:
 
 1. After validation passes, select **Create**. It takes a few minutes to create the DNS zone.
 
-1. When deployment is complete, select **Go to resource**. Your **DNS zone** pane appears.
+1. When deployment is complete, select **Go to resource**. The **Overview** pane for your **DNS zone** appears.
+
+1. Select **Record Sets** from the top menu bar.
 
    By default, the NS, and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
 
@@ -54,7 +56,9 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 
 The primary record set to create is the A record. The A record set is used to point traffic from a logical domain name to the hosting server's IP address. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses differ.
 
-1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the top menu bar, select **+ Record set**.
+1. If you're not already on the **Record Sets** screen, then open the **DNS zone** pane for *wideworldimportsXXXX.com*. In the top menu bar, select **Record sets**.
+
+1. On the **Record Sets** pane, select **+ Add** in the top menu bar.
 
     :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
@@ -71,7 +75,7 @@ The primary record set to create is the A record. The A record set is used to po
     | TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
     | IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you'd enter the public IP address for your web server. |
 
-1. Select **OK** to add the record to your zone.
+1. Select **Add** to add the record to your zone.
 
     :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
 
