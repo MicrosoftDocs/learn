@@ -1,5 +1,4 @@
-The reason we use AI to help with our space rock research is to improve predictions. When a model sees new pictures of rocks, it should predict the correct rock type based on pictures it's already seen. We want the prediction to be as close to 100% accurate as possible. An AI model that's well trained should more accurately predict the outcome than humans.
-
+The reason we use AI to help with our space-rock research is to improve predictions. When a model sees new pictures of rocks, it should predict the correct rock type based on pictures it's already seen. We want the prediction to be as close to 100% accurate as possible. An AI model that's well trained should more accurately predict the outcome than humans.
 
 ## Show the model accuracy
 
@@ -25,7 +24,6 @@ Even though 93.5% is high, you can do a few things to increase the accuracy even
 
 - Add more images and continue training the AI model.
 - Increase the number of `epoch` training iterations for deep learning.
-
 
 ## Save the model
 

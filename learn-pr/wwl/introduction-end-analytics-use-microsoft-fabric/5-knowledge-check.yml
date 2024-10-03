@@ -4,8 +4,8 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 09/30/2023
-  author: wwlpublish
+  ms.date: 09/30/2024
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
@@ -14,7 +14,6 @@ metadata:
   - build-2023-fabric
 durationInMinutes: 5
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which of the following is a key benefit of using Microsoft Fabric in data projects?"
     choices:
@@ -34,18 +33,18 @@ quiz:
       explanation: "Correct. The default storage format for OneLake is Delta Parquet, an open-source storage layer that brings reliability to data lakes."
     - content: "JSON"
       isCorrect: false
-      explanation: "Incorrect. JSON is not the default storage format for OneLake."
+      explanation: "Incorrect. JSON isn't the default storage format for OneLake."
     - content: "CSV"
       isCorrect: false
-      explanation: "Incorrect. CSV is not the default storage format for OneLake."
-  - content: "Which of the following Fabric workloads is used to move and transform data?"
+      explanation: "Incorrect. CSV isn't the default storage format for OneLake."
+  - content: "Which of the following Fabric experiences is used to move and transform data?"
     choices:
     - content: "Data Science"
       isCorrect: false
-      explanation: "Incorrect. The Data Science workload enables data scientists to collaborate on data science projects."
+      explanation: "Incorrect. The Data Science experience enables data scientists to collaborate on data science projects."
     - content: "Data Warehousing"
       isCorrect: false
-      explanation: "Incorrect. The Data Warehousing workload enables data professionals to build data warehouses."
+      explanation: "Incorrect. The Data Warehouse experience enables data professionals to build data warehouses."
     - content: "Data Factory"
       isCorrect: true
-      explanation: "Correct. The Data Factory workload combines Power Query with the scale of Azure Data Factory to move and transform data."
+      explanation: "Correct. The Data Factory experience combines Power Query with the scale of Azure Data Factory to move and transform data."
