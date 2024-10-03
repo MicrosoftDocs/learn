@@ -18,7 +18,7 @@ In Visual Studio Code, create a new project:
     :::image type="content" source="../media/vsc-select-create-dotnet-project.png" alt-text="Selecting Create .NET Project":::
 
 1. Select the **ASP.NET Core Empty** project template from the list.
-1. In the **Project Location** dialog, create folder a folder named `MyWebApp` that will contain the project.
+1. In the **Project Location** dialog, create a folder named `MyWebApp` that will contain the project.
 1. In the **Command Palette**, name the project `MyWebApp`, including matching the capitalization. Using this exact project name is important to ensure that the namespaces for code in this instruction match yours.
 1. Select **Create project** from the **Command Palette**.
 
