@@ -6,7 +6,7 @@ metadata:
   description: Answer some questions to see what you learned in the lesson.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/28/2021
+  ms.date: 09/24/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -41,12 +41,12 @@ quiz:
     choices:
     - content: "By training the model five more times."
       isCorrect: false
-      explanation: "Incorrect. Training the model more times won't necessarily increase the accuracy of the model."
+      explanation: "Incorrect. Training the model more times won't necessarily increase its accuracy."
     - content: "By reducing the number of epochs."
       isCorrect: false
-      explanation: "Incorrect. Reducing the number of epochs during training won't necessarily increase the accuracy of the model."
+      explanation: "Incorrect. Reducing the number of epochs during training won't necessarily increase the model's accuracy."
     - content: "By adding more images and increasing the number of epochs."
       isCorrect: true
-      explanation: "Correct! You can increase the accuracy of an AI model by adding more images and epochs when you train the model."
+      explanation: "Correct! You can increase an AI model's accuracy by adding more images and epochs when you train the model."
 
 

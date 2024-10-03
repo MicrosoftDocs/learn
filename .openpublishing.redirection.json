@@ -376,6 +376,71 @@
       "redirect_url": "/training/modules/intro-to-azure-data-science-virtual-machine"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/2-what-is-generative-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/3-describe-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/4-how-to-use-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/5-understand-openai-natural-language.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/6-understand-openai-code-generation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/7-understand-openai-image-generation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8-describe-openai-responsible-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8a-exercise-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+    "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-azure-openai.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/intro-to-nodejs/3-how-works.yml",
       "redirect_url": "/training/modules/intro-to-nodejs/4-how-works"
     },
@@ -20293,6 +20358,66 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-key-vault-networking-settings/11-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/2-what-is-continuous-integration.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/3-design-the-pipeline.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/4-exercise-set-up-project.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/5-application-images.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/6-exercise-build-staging-image.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/7-exercise-build-production-image.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/8-helm.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/9-exercise-set-up-helm-chart.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/10-exercise-deploy-workflow.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/aks-deployment-pipeline-github-actions/11-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/kubernetes-action",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-azure-kubernetes-service/1-introduction.md",
       "redirect_url": "/training/modules/intro-to-kubernetes/"
     },
@@ -32583,6 +32708,21 @@
     {
       "source_path_from_root": "/learn-pr/github/introduction-to-github-copilot/6-summary.yml",
       "redirect_url": "/training/modules/introduction-to-github-copilot/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/github/introduction-prompt-engineering-with-github-copilot/6-summary.yml",
+      "redirect_url": "/training/modules/introduction-prompt-engineering-with-github-copilot/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/github/introduction-prompt-engineering-with-github-copilot/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/introduction-prompt-engineering-with-github-copilot/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/github/introduction-prompt-engineering-with-github-copilot/4-github-copilot-large-language-models.yml",
+      "redirect_url": "/training/modules/introduction-prompt-engineering-with-github-copilot/5-github-copilot-large-language-models",
       "redirect_document_id": true
     },
     {

@@ -3158,6 +3158,11 @@ achievements:
   title: Create custom controls with Xamarin.Forms renderers
   summary: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
   iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+- uid: learn.wwl.explore-azure-openai.badge
+  type: badge
+  title: Fundamentals of Azure OpenAI Service
+  summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
+  iconUrl: /learn-pr/achievements/learn.wwl.explore-azure-openai.badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -3798,6 +3803,11 @@ achievements:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
   iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
+- uid: learn.aks-deployment-pipeline-github-actions.badge
+  type: badge
+  title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+  summary: Learn how to use GitHub Actions to create an automated deployment pipeline for Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 - uid: learn.introduction-to-azure-web-pubsub.badge
   type: badge
   title: Introduction to Azure Web PubSub
@@ -3937,6 +3947,16 @@ achievements:
   title: Describe the eDiscovery and Audit capabilities in Microsoft Purview
   summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
   iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
+- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
+  type: badge
+  title: Describe the compliance management capabilities in Microsoft Purview
+  summary: Explore the Microsoft Purview compliance portal, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
+  iconUrl: /training/achievements/describe-compliance-management-capabilities-microsoft-365.svg
+- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
+  type: badge
+  title: Describe information protection, data lifecycle management, and data governance capabilities in Microsoft Purview
+  summary: Microsoft Purview is a comprehensive set of solutions that help you govern, protect, and manage your entire data estate, providing unified data governance and risk management for your organization.
+  iconUrl: /training/achievements/describe-information-protection-microsoft-365.svg
 - uid: learn.wwl.realize-integrated-analytical-solutions-with-azure-synapse-analytics.trophy
   type: trophy
   title: Realize Integrated Analytical Solutions with Azure Synapse Analytics

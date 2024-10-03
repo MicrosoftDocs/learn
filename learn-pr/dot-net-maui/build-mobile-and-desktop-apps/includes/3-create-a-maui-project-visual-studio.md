@@ -1,12 +1,12 @@
-After you install and configure the .NET MAUI tools, you can use Visual Studio to build a .NET MAUI app. 
+After you install and configure the .NET MAUI tools, you can use Visual Studio to build a .NET MAUI (Multi-platform Application User Interface) app. 
 
-In this unit, you'll learn about the structure of the .NET MAUI template in Visual Studio. You'll use this template for creating cross-platform mobile and desktop apps.
+In this unit, you learn about the structure of the .NET MAUI template in Visual Studio. You use this template for creating cross-platform mobile and desktop apps.
 
 ## How to get started
 
 To create a new .NET MAUI project with Visual Studio, in the **Create a new project** dialog box, select the .NET MAUI project type, and then choose the .NET MAUI App template:
 
-:::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user has selected the .NET MAUI App template.":::
+:::image type="content" source="../media/3-create-maui-app.png" alt-text="A screenshot of the Create a new project dialog box in Visual Studio. The user selects the .NET MAUI App template.":::
 
 Follow the steps in the wizard to name the project and specify a location.
 
@@ -18,7 +18,7 @@ A newly created .NET MAUI project contains the items as shown:
 
 The project contents include the following items:
 
-- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder, and define app-wide colors and default styles for every .NET MAUI built-in control. Here, you'll see the two resource dictionaries being merged together:
+- **App.xaml**. This file defines the application resources that the app uses in the XAML (Extensible Application Markup Language) layout. The default resources are located in the `Resources` folder, and define app-wide colors and default styles for every .NET MAUI built-in control. Here, you see the two resource dictionaries being merged together:
 
     ```xml
     <?xml version = "1.0" encoding = "UTF-8" ?>
@@ -37,7 +37,7 @@ The project contents include the following items:
     </Application>
     ```
 
-- **App.xaml.cs**. This is the code-behind for the App.xaml file. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`. These handlers are defined as members of the `Application` base class. The following code shows examples:
+- **App.xaml.cs**. This file is the code-behind for the App.xaml file. It defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`. These handlers are defined as members of the `Application` base class. The following code shows examples:
 
     > [!NOTE]
     > You can also override platform-specific lifecycle events when the app first starts running. This is described later.
@@ -71,7 +71,7 @@ The project contents include the following items:
     }
     ```
 
-- **AppShell.xaml**. This file is a .NET MAUI application's main structure. The .NET MAUI `Shell` provides many features that are beneficial for multiple-platform apps including app styling, URI based navigation, and layout options including flyout navigation and tabs for the application's root. The default template provides a single page (or `ShellContent`) that is inflated when the app starts.
+- **AppShell.xaml**. This file is a .NET MAUI application's main structure. The .NET MAUI `Shell` provides many features that are beneficial for multiple-platform apps including app styling, URI based navigation, and options for layout, including flyout navigation and tabs for the application's root. The default template provides a single page (or `ShellContent`) that is inflated when the app starts.
 
    ```xml
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -90,7 +90,7 @@ The project contents include the following items:
     </Shell>
     ```
 
-- **MainPage.xaml**. This file contains the user-interface definition. The sample app that the MAUI App template generates contains two labels, a button, and an image. The controls are arranged using a `VerticalStackLayout` enclosed in a `ScrollView`. The `VerticalStackLayout` control arranges the controls vertically (in a stack), and the `ScrollView` provides a scrollbar if the view is too large to be displayed on the device. You're intended to replace the contents of this file with your own UI layout. You can also define more XAML pages if you have a multi-page app.
+- **MainPage.xaml**. This file contains the user-interface definition. The sample app that the MAUI App template generates contains two labels, a button, and an image. The controls are arranged using a `VerticalStackLayout` enclosed in a `ScrollView`. The `VerticalStackLayout` element arranges the controls vertically (in a stack), and the `ScrollView` provides a scrollbar if the view is too large to be displayed on the device. You're intended to replace the contents of this file with your own UI layout. You can also define more XAML pages if you have a multi-page app.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -136,7 +136,7 @@ The project contents include the following items:
     </ContentPage>
     ```
 
-- **MainPage.xaml.cs**. This is the code-behind for the page. In this file, you define the logic for the various event handlers and other actions that are triggered by the controls on the page. The example code implements a handler for the `Clicked` event for the button on the page. The code simply increments a counter variable and displays the result in a label on the page. The Semantic service provided as part of the MAUI Essentials library supports accessibility. The static `Announce` method of the `SemanticScreenReader` class specifies the text announced by a screen reader when the user selects the button:
+- **MainPage.xaml.cs**. This file contains the code-behind for the page. In this file, you define the logic for the various event handlers and other actions triggered by the controls on the page. The example code implements a handler for the `Clicked` event for the button on the page. The code simply increments a counter variable and displays the result in a label on the page. The Semantic service provided as part of the MAUI Essentials library supports accessibility. The static `Announce` method of the `SemanticScreenReader` class specifies the text announced by a screen reader when the user selects the button:
 
     ```csharp
     namespace MyMauiApp;
@@ -164,7 +164,7 @@ The project contents include the following items:
     }
     ```
 
-- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code in the **Platforms** folder in the project. This code is platform-specific, but at the end it calls the `CreateMauiApp` method of the static `MauiProgram` class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application. You do this with the `UseMauiApp` generic method of the app builder object; the type parameter specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
+- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code in the **Platforms** folder in the project. This code is platform-specific, but at the end it calls the `CreateMauiApp` method of the static `MauiProgram` class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application by using the `UseMauiApp` generic method of the app builder object; the type parameter (`<App>`) specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font:
 
     ```csharp
     namespace MyMauiApp;
@@ -187,7 +187,7 @@ The project contents include the following items:
     }
     ```
 
-- **Platforms**. This folder contains platform-specific initialization code files and resources. There are folders for Android, iOS, MacCatalyst, Tizen, and Windows. At runtime, the app starts up in a platform-specific way. Much of the start-up process is abstracted out by the MAUI libraries' internals, but the code files in these folders provide a mechanism for hooking up your own custom initialization. The important point is that when initialization is complete, the platform-specific code calls the `MauiProgram.CreateMauiApp` method, which then creates and runs the `App` object as described earlier. For example, the **MainApplication.cs** file in the **Android** folder, the **AppDelegate.cs** file in the **iOS** and **MacCatalyst** folder, and the **App.xaml.cs** file in the **Windows** folder all contain the overrides:
+- **Platforms**. This folder contains platform-specific initialization code files and resources. There are folders for Android, iOS, MacCatalyst, Tizen, and Windows. At runtime, the app starts up in a platform-specific way. The MAUI libraries abstract out much of the start-up process, but the code files in these folders provide a mechanism for hooking up your own custom initialization. The important point is that when initialization is complete, the platform-specific code calls the `MauiProgram.CreateMauiApp` method, which then creates and runs the `App` object as described earlier. For example, the **MainApplication.cs** file in the **Android** folder, the **AppDelegate.cs** file in the **iOS** and **MacCatalyst** folder, and the **App.xaml.cs** file in the **Windows** folder all contain the overrides:
 
     ```csharp
     protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
@@ -199,7 +199,7 @@ The following image illustrates the flow of control when a .NET MAUI app starts 
 
 ## Project resources
 
-The **.csproj** file for the main project includes several noteworthy sections. The initial `PropertyGroup` specifies the platform frameworks that the project targets, as well as items such as the application title, ID, version, display version, and supported operating systems. You can amend these properties as necessary.
+The project file (**.csproj**) for the main project includes several noteworthy sections. The initial `PropertyGroup` specifies the platform frameworks that the project targets, and items such as the application title, ID, version, display version, and supported operating systems. You can amend these properties as necessary.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -238,7 +238,7 @@ The **.csproj** file for the main project includes several noteworthy sections. 
 </Project>
 ```
 
-The `ItemGroup` section underneath the initial property group lets you specify an image and color for the splash screen that appears while the app is loading, prior to the first window appearing. You can also set the default locations for the fonts, images, and assets the app uses.
+The `ItemGroup` section underneath the initial property group lets you specify an image and color for the splash screen that appears while the app is loading, before the first window appears. You can also set the default locations for the fonts, images, and assets the app uses.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -276,9 +276,9 @@ The `ItemGroup` section underneath the initial property group lets you specify a
 
 In the Solution Explorer window in Visual Studio, you can expand the **Resources** folder to see these items. You can add any other fonts, images, and other graphical resources the application requires to this folder and subfolders.
 
-:::image type="content" source="../media/3-resources-folder.png" alt-text="A screenshot of the resources folder in the main project with a rectangle around it in the Visual Studio solution explorer. Inside the folder are font and image files.":::
+:::image type="content" source="../media/3-resources-folder.png" alt-text="A screenshot of the resources folder in the main project with a rectangle around it in the Visual Studio solution explorer. The folder contains font and image files.":::
 
-You should register any fonts added to the fonts folder with the app builder object when your app starts running. Recall that the **CreateMauiApp** method in the **MauiProgram** class does this with the `ConfigureFonts` method:
+You should register any fonts added to the fonts folder with the app builder object when your app starts running. Recall that the **CreateMauiApp** method in the **MauiProgram** class registers fonts with the `ConfigureFonts` method:
 
 ```csharp
 public static class MauiProgram
