@@ -2,5 +2,5 @@ Your team lead asked you to implement some features to your app using middleware
 
 ## Learn more
 
-- [ASP.NET Core Middleware](https://learn.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0&preserve-view=true)
-- [Write custom ASP.NET Core middleware](https://learn.microsoft.com/aspnet/core/fundamentals/middleware/write?view=aspnetcore-8.0&preserve-view=true)
+- [ASP.NET Core Middleware](/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0&preserve-view=true)
+- [Write custom ASP.NET Core middleware](/aspnet/core/fundamentals/middleware/write?view=aspnetcore-8.0&preserve-view=true)

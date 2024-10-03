@@ -48,7 +48,7 @@ Let's modify the existing ASP.NET Core app to include custom middleware that log
 
 ## Change the order of middleware
 
-The app seems to work, but there's a problem. You requested the `/history` page, but the console output doesn't show it. This is because the custom middleware component that logs request details is added before the URL rewriter middleware. The URL rewriter middleware redirects requests from `/history` to `/about` and sends the response. The custom middleware component doesn't see the request. Let's fix this.
+The app seems to work, but there's a problem. You requested the `/history` page, but the console output doesn't show it. This is because the custom middleware component that logs request details was added after the URL rewriter middleware. The URL rewriter middleware redirects requests from `/history` to `/about` and sends the response, and the custom middleware component doesn't see the request. Let's fix this.
 
 1. Move the `app.Use()` line you added to immediately before the app.UseRewriter() line.
 
