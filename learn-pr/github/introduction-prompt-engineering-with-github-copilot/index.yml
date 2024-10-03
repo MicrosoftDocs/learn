@@ -6,7 +6,7 @@ metadata:
   description: This module highlights the basic core principles of prompt engineering and explains the best practices to create prompts quickly and effectively in GitHub Copilot. Learn the strategies that transform comments into precise code, identify the steps within GitHub Copilot's prompt processing flow, and gain an understanding of the important role that Large Language Models (LLMs) play in enhancing suggestion quality.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 09/12/2024
+  ms.date: 10/02/2024
   ms.service: github-copilot
   ms.topic: module-intro-to-product
   ms.collection:
@@ -45,6 +45,7 @@ units:
   - learn.github.introduction-prompt-engineering-with-github-copilot.introduction
   - learn.github.introduction-prompt-engineering-with-github-copilot.prompt-engineering-foundations-best-practices
   - learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-user-prompt-process-flow
+  - learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-data
   - learn.github.introduction-prompt-engineering-with-github-copilot.github-copilot-large-language-models
   - learn.github.introduction-prompt-engineering-with-github-copilot.knowledge-check
   - learn.github.introduction-prompt-engineering-with-github-copilot.summary
