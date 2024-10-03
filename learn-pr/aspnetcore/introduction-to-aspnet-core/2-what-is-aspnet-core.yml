@@ -3,7 +3,7 @@ uid: learn.introduction-to-aspnet-core.what-is-aspnet-core
 title: What is ASP.NET Core?
 metadata:
   title: What is ASP.NET Core?
-  description: "ASP.NET Core is the modern, high-performance web development framework for .NET, that runs on Windows, Linux, macOS, and Docker"
+  description: "ASP.NET Core is the modern, high-performance web development framework for .NET. It's cross-platform, so it runs on lots of platforms including Windows, Linux, macOS, and Docker."
   ms.date: 9/13/2024
   author: wadepickett
   ms.author: wpickett
