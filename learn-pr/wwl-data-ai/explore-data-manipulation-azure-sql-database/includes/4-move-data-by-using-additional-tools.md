@@ -8,7 +8,7 @@ REST endpoint is a useful resource to import data to Azure SQL Database. However
 
 ### Setting up SQL Data Sync
 
-1. **Create a Sync Group:** To set up data synchronization, sign in to the Azure portal and navigate to your Azure SQL Database. Under the **Data management** section, select **Sync to other databases**. Then, select **New Sync Group** and configure the sync group settings, including the sync group name and the sync metadata database.
+1. **Create a sync group:** To set up data synchronization, sign in to the Azure portal and navigate to your Azure SQL Database. Under the **Data management** section, select **Sync to other databases**. Then, select **New Sync Group** and configure the sync group settings, including the sync group name and the sync metadata database.
 
     :::image type="content" source="../media/4-data-sync.png" alt-text="Screenshot showing how to create a Data Sync Group in Azure portal.":::
 

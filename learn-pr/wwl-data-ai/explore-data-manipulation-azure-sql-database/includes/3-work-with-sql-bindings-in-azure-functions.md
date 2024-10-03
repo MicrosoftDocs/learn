@@ -1,8 +1,8 @@
-One efficient way to automate data movement to Azure SQL Database is by using an Azure Function. Azure Functions is serverless compute services that allow you to run event-driven code without having to manage infrastructure. This code is capable of performing various tasks, such as data transformation, validation, logging, and more.
+Azure Functions is serverless compute services that allow you to run event-driven code without having to manage infrastructure. This code is capable of performing various tasks, such as data transformation, validation, logging, and more.
 
 Azure Functions supports multiple programming languages, making it versatile for developers with different skill set. They also integrate seamlessly with GitHub Actions, allowing for automatic data pushes to your application whenever there are changes. This ensures that your data is always up-to-date and your workflows remain efficient.
 
-Azure Functions supports input bindings, output bindings, and a function trigger for the Azure SQL and SQL Server products.
+Azure Functions supports [input binding](/azure/azure-functions/functions-bindings-azure-sql-input?azure-portal=true), [output binding](/azure/azure-functions/functions-bindings-azure-sql-output?azure-portal=true), and a [function trigger](/azure/azure-functions/functions-bindings-azure-sql-trigger?azure-portal=true) for the Azure SQL and SQL Server products.
 
 Depending on the binding mode you're using in your function app, there are extensions you need to install, see [Azure SQL bindings for Azure Functions overview](/azure/azure-functions/functions-bindings-azure-sql) to learn more.
 
