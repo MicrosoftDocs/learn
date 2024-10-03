@@ -9,15 +9,15 @@ To learn more about the history of Azure SQL and the options, models, and manage
 
 ### Video series: Azure SQL for beginners
 
-People learn in different ways. A Channel 9 video series related to this learning path is [available on YouTube](https://aka.ms/azuresql4beginners).
+People learn in different ways. A Channel 9 video series related to this learning path is [available on YouTube](https://www.youtube.com/playlist?list=PLlrxD0HtieHi5c9-i_Dnxw9vxBY-TqaeN).
 
 ### History of Azure SQL  
 
-You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg&azure-portal=true) keynote, where Microsoft Chief Software Architect at the time Ray Ozzie announced Azure for the first time.
+You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft Chief Software Architect at the time Ray Ozzie announced Azure for the first time.
 
 ### SQL Server on Azure Virtual Machines
 
-To learn more about what you can get from IaaS services, check out [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
+To learn more about what you can get from IaaS services, check out [What is IaaS?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-iaas/). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
 
 - Install from [Azure gallery images](/azure/virtual-machines/shared-image-galleries) or take advantage of the [resource provider](/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
 - Consider memory-optimized or storage-optimized [VM sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
