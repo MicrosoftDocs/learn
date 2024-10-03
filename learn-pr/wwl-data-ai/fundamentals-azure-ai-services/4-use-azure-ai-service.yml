@@ -3,13 +3,13 @@ uid: learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
 title: Use Azure AI services
 metadata:
   title: Use Azure AI services
-  description: Use Azure AI services
+  description: "Use Azure AI services"
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 9/25/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/4-use-azure-ai-service.md)]
