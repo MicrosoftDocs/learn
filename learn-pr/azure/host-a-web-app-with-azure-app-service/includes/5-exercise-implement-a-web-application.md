@@ -44,7 +44,7 @@ Open a second command shell session by browsing to <https://shell.azure.com/> in
 
     In the output, take note of the values of *&lt;process-number>* and *&lt;port>*.
 
-1. In the same Cloud Shell session, run the following command to browse to your web application, replacing *&lt;>* with the port you noted in the last step.
+1. In the same Cloud Shell session, run the following command to browse to your web application, replacing *&lt;port>* with the port you noted in the last step.
 
     ```bash
     curl -kL http://localhost:<port>/
@@ -158,7 +158,7 @@ While you're running the helloworld web app, you can verify it's running locally
 
 1. From a new browser tab, browse to <https://shell.azure.com/>.
 
-1. From your primary command shell session, run the following commands to start your web application:
+1. From your primary command shell session, run the following commands to start your web application in the background:
 
     ```bash
     cd ~/helloworld
@@ -239,16 +239,7 @@ To create a starter web application, we use the Flask web-application framework.
 
 You can test your application locally in Azure while it's running.
 
-1. Open a second command shell session in a new browser tab  <https://shell.azure.com/>.
-
-1. From your primary command shell session (in the right-hand window), run the following commands to activate the virtual environment:
-
-    ```bash
-    cd ..
-    source venv/bin/activate
-    ``` 
-
-1. From your primary command shell session (in the right-hand window), run the following commands to start your web application:
+1. Run the following commands to start your web application in the background:
 
     ```bash
     cd ~/BestBikeApp
@@ -269,7 +260,7 @@ You can test your application locally in Azure while it's running.
 
     In the output, take note of the value of *&lt;process-number>*. Since the process is running in the background, you can't quit with CTRL+C. You'll need to stop it with its process number.
 
-1. In the same Cloud Shell session, run the following command to browse to your web application.
+1. Run the following command to browse to your web application.
 
     ```bash
     curl -kL http://localhost:5000/
