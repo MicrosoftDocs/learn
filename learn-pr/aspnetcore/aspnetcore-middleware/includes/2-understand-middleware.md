@@ -115,7 +115,9 @@ app.MapRazorComponents<App>()
 app.Run();
 ```
 
-This is from a Blazor app created with the .NET 9 SDK. In the preceding code:
+This is from a Blazor app created with the .NET 9 SDK. This *Program.cs* is unchanged from when the project was created.
+
+In the preceding code:
 
 - `app.UseExceptionHandler()` adds a middleware component that catches exceptions and returns an error page.
 - `app.UseHsts()` adds a middleware component that sets the Strict-Transport-Security header.

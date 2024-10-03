@@ -42,7 +42,7 @@ Now that you have a working app, let's add a welcome message to the main page.
     app.MapGet("/", () => "Welcome to Contoso!");
     ```
 
-    `app.MapGet()` is a built-in middleware component that maps an HTTP GET request to a specified path. This is a feature of ASP.NET Core called **Endpoint routing**. This code adds a branch to the pipeline. If the request path is `/`, the middleware component writes "Welcome to Contoso!" to the response and completes the request. Otherwise, the request is passed to the next middleware component in the pipeline.
+    `app.MapGet()` is a built-in middleware component that maps an HTTP GET request to a specified path. This is a feature of ASP.NET Core called **endpoint routing**. This code adds a branch to the pipeline. If the request path is `/`, the middleware component writes "Welcome to Contoso!" to the response and completes the request. Otherwise, the request is passed to the next middleware component in the pipeline.
 
 1. On the next line, add the following code:
 
