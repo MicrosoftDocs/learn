@@ -15,6 +15,14 @@ When you enable Internet bound or incoming traffic with SAP RISE, the network co
 
 Applications within a customer's own virtual network connect to the Internet directly from the respective virtual network, or through centrally managed services like Azure Firewall, Azure Application Gateway, NAT Gateway, and others. Connectivity to SAP BTP from non-SAP RISE/ECS applications follows the same network Internet-bound path on the customer side. If an SAP Cloud Connector is needed for integration, run it on the customer's virtual machines. Essentially, customers manage SAP BTP or any public endpoint communication themselves if an SAP RISE workload is not involved.
 
+## SAP BTP connectivity
+
+SAP Business Technology Platform (BTP) provides a multitude of applications typically accessed through public IP/hostname via the Internet. Customer's services running in their Azure subscriptions access BTP through the configured [outbound access method](/azure/virtual-network/ip-services/default-outbound-access), such as central firewall or outbound public IPs. Some SAP BTP services, such as SAP Data Intelligence, however is by design accessed through a [separate virtual network peering](https://help.sap.com/docs/SAP_DATA_INTELLIGENCE/ca509b7635484070a655738be408da63/a7d98ac925e443ea9d4a716a91e0a604.html) instead of a public endpoint.
+
+SAP offers [Private Link Service](https://blogs.sap.com/2022/06/22/sap-private-link-service-on-azure-is-now-generally-available-ga/) for customers using SAP BTP on Azure. The SAP Private Link Service connects SAP BTP services through a private IP range into customer’s Azure network and thus accessible privately through the private link service instead of through the Internet. Contact SAP for availability of this service for SAP RISE/ECS workloads.
+
+See [SAP's documentation](https://help.sap.com/docs/private-link/private-link1/consume-azure-services-in-sap-btp) and a series of blog posts on the architecture of the SAP BTP Private Link Service and private connectivity methods, dealing with DNS and certificates in following SAP blog series [Getting Started with BTP Private Link Service for Azure](https://blogs.sap.com/2021/12/29/getting-started-with-btp-private-link-service-for-azure/).
+
 ## Network communication ports with SAP RISE
 
 Any Azure service with access to the customer virtual network can communicate with the SAP landscape running within the SAP RISE/ECS subscription via the available ports.
