@@ -45,7 +45,7 @@ Example table:
 The rule package in an EDM SIT defines:
 
 - **Matches** specify the primary element used for exact lookups, such as a regular expression or a function.
-- **Classification** determine the type of sensitive information being searched for.
+- **Classification** determines the type of sensitive information being searched for.
 - **Supporting elements** provide additional context, helping refine the accuracy of the match. For instance, finding "SSN" near a social security number increases confidence.
 - **Confidence levels** measure the likelihood of a match, based on how much supporting evidence is present.
 - **Proximity** defines the allowable character distance between the primary and supporting elements.
@@ -78,6 +78,8 @@ You can toggle back and forth between the new and classic experiences, but we re
 1. **Managing more than 10 SITs**: If you need to create or manage more than 10 SITs, you need to use the classic experience. Because you can map multiple EDM SITs to the same schema, you can have more than 10 EDM SITs. Attempting to create an eleventh schema with the new experience generates an error.
 1. **Custom schema names**: The classic experience lets you specify custom names for your EDM schemas, unlike the new experience that auto-generates schema names.
 1. **Editing existing schemas**: If you need to edit schemas created in the classic experience or uploaded via PowerShell, you must use the classic experience, as the new experience doesn't support this functionality.
+
+Use the procedure to understand how to create an EDM SIT. Select the appropriate tab for guidance on creating one with the **new** or **classic** experience.
 
 ## [New EDM experience](#tab/new)
 
@@ -128,7 +130,7 @@ You can toggle back and forth between the new and classic experiences, but we re
 
 1. Once you've captured the schema name, select **Done**.
 
-Once you created your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)
+Once you create your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)
 
 # [Classic EDM experience](#tab/classic)
 
@@ -187,4 +189,4 @@ Once you created your EDM schema, the next step is to hash and upload your sensi
 
 1. **Review and finish** creating your EDM SIT by selecting **Submit**.
 
-Once you created your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)
+Once you create your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)
