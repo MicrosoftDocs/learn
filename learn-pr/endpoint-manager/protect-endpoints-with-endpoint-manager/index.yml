@@ -3,7 +3,7 @@ uid: learn.protect-endpoints-with-endpoint-manager
 metadata:
   title: Protect your endpoint environment with Microsoft Intune
   description: In this module, you learn about protecting devices, apps, and data. Additionally, you understand the endpoint environment and the supported platforms available with Microsoft Intune. 
-  ms.date: 05/05/2023
+  ms.date: 10/04/2024
   author: Erikre
   ms.author: erikre
   ms.topic: module
