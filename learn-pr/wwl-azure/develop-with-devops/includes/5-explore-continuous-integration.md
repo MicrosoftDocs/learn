@@ -2,10 +2,15 @@ Continuous integration (CI) is one of the most fundamental DevOps elements. It p
 
 ## What is Continuous Integration?
 
-Continuous integration is the process of automatically building and testing updated versions of software following individual updates to the software repository. In general, the integration pattern involves developers submitting their changes in separate branches via pull requests. The changes are subject to a collective review and, assuming its successful outcome, are merged into the main branch. Individual commit or merge events might be used to trigger code build and testing in order to ensure that proposed or resulting changes don't have adverse effects. With continuous integration in place, the build and tests are fully automated.  
-This automation is based on build and test definitions created by developers and implemented in the repository hosting platform. For example, GitHub offers for this purpose GitHub Actions workflow, while Azure DevOps relies on Azure Pipelines.
+Continuous integration is the process of automatically building and testing updated versions of software following individual updates to the software repository. In general, the integration pattern involves developers submitting their changes in separate branches via pull requests. The changes are subject to a collective review and, assuming its successful outcome, are merged into the main branch. Individual commit or merge events might be used to trigger code build and testing in order to ensure that proposed or resulting changes don't have adverse effects. With continuous integration in place, the build and tests are fully automated.
 
 :::image type="content" source="../media/5-continuous-integration.png" alt-text="Diagram of the continuous integration flow.":::
+
+This automation is based on build and test definitions created by developers and implemented in the repository hosting platform. For example, GitHub offers for this purpose GitHub Actions workflow, while Azure DevOps relies on Azure Pipelines.
+
+---
+> [!VIDEO https://www.youtube.com/embed/URmeTqglS58?si=bSYm2OPSdWLEdxXI?cc_load_policy=1&cc_lang_pref=auto]
+---
 
 ## What are the benefits of Continuous Integration?
 
