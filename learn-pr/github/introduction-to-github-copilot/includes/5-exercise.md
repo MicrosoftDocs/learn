@@ -6,9 +6,6 @@ This exercise walks you through the following steps:
 - Prompt GitHub Copilot for code suggestions
 - Accept code suggestions from GitHub Copilot
 
-> [!NOTE]
-> Please be aware that when signing up for the GitHub Copilot free trial, you'll be asked to submit a form of payment even though you won't be charged until the free trial is over. Ensure you cancel before the 30 days is over to avoid being charged.
-
 ## Getting started
 
 When you select the **Start the exercise on GitHub** button, you're navigated to a public GitHub template repository that prompts you to complete a series of small challenges. Before you can begin the exercise, complete the following tasks:
@@ -17,15 +14,15 @@ Select the **Start course** button or the **Use this template** feature within t
 
 Follow the instructions in the repository's README to understand how the exercise works, its learning objectives, and how to successfully complete the exercise.
 
-When you've finished the exercise in GitHub, return back to this module for:
+When you finish the exercise in GitHub, return to this module for:
 
 > [!div class="checklist"]
-> * A quick knowledge check
-> * A summary of what you've learned
-> * To earn a badge for completing this module
+> * A quick knowledge check.
+> * A summary of what you learned.
+> * A badge for completing this module
 
->[!Note]
-> You don't need to modify any of the workflow files to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
+>[!NOTE]
+> You don't need to modify any of the workflow files to complete this exercise. Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results.
 
 > [!div class="nextstepaction"]
 > [Start the exercise on GitHub](https://github.com/skills/copilot-codespaces-vscode)

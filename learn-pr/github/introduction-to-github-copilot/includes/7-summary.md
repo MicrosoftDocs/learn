@@ -6,14 +6,14 @@ GitHub Copilot is heralding a new generation of more productive, fulfilled, and 
 
 Now that you've finished this module, you should be able to:
 
-- Understand the differences between GitHub Copilot, GitHub Copilot's Features, and GitHub Copilot Individual, Business, and Enterprise.
+- Explain the differences between GitHub Copilot, GitHub Copilot's Features, and GitHub Copilot Individual, Business, and Enterprise.
 - Get started with and configure GitHub Copilot.
-- Develop using GitHub Copilot and Visual Studio Code.
+- Develop by using GitHub Copilot and Visual Studio Code.
 
 ## References
 
 - [GitHub Copilot features](https://github.com/features/copilot)
-- [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+- [Research: quantifying GitHub Copilot's impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 - [What is GitHub Copilot?](https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot)
 - [About GitHub Copilot and JetBrains IDEs](https://docs.github.com/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=jetbrains#about-github-copilot-and-jetbrains-ides)
 - [About GitHub Copilot and Neovim](https://docs.github.com/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=vimneovim#about-github-copilot-and-vimneovim)

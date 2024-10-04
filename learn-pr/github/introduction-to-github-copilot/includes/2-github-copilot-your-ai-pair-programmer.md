@@ -1,53 +1,70 @@
-:::image type="content" source="../media/github-copilot.png" alt-text="The logo icon for GitHub Copilot that shows the copilot icon in the middle with a blue and green swirl around the logo." border="false":::
+:::image type="content" source="../media/github-copilot.png" alt-text="The logo icon for GitHub Copilot that shows the Copilot icon in the middle with a blue and green swirl around the logo." border="false":::
 
-It's no secret that AI is disrupting the technology landscape. AI is profoundly changing the way the world works and how each organization and team operates. These advancements in AI serve as a catalyst and dramatically improve the productivity of developers around the world as they use and apply it well.
+It's no secret that AI is disrupting the technology landscape. AI is profoundly changing the way the world works and how each organization and team operates. These advancements in AI serve as a catalyst and can dramatically improve the productivity of developers around the world as they use and apply it well.
 
-When it comes to developers, adding AI features to the developer tools you use and love helps you collaborate, develop, test, and ship your products faster and more efficiently than ever before.
+The addition of AI features to the developer tools that you use and love helps you collaborate, develop, test, and ship your products faster and more efficiently than ever before. GitHub Copilot is a service that provides you with an AI pair programmer that works with all of the popular programming languages.
 
-GitHub Copilot is a service that provides you with an AI pair programmer that works with all of the popular programming languages and dramatically accelerates overall developer productivity. In recent research, GitHub and Microsoft have found that developers experience a significant productivity boost when working on real-world projects and tasks when using GitHub Copilot. In fact, in the three years since its launch, developers have experienced the following while using GitHub Copilot:
+In recent research, GitHub and Microsoft found that developers experience a significant productivity boost when they use GitHub Copilot to work on real-world projects and tasks. In fact, in the three years since its launch, developers have experienced the following benefits while using GitHub Copilot:
 
-- 46% of new code is now written by AI
+- 46% of new code now written by AI
 - 55% faster overall developer productivity
-- 74% of developers feel more focused on satisfying work
+- 74% of developers feeling more focused on satisfying work
 
-Developed in collaboration with OpenAI, GitHub Copilot is powered by OpenAI Codex, an AI system created by OpenAI. OpenAI Codex has broad knowledge of how people use code and is more capable than GPT-3 in code generation, in part because it was trained on a dataset that includes a larger concentration of public source code.
+Microsoft developed GitHub Copilot in collaboration with OpenAI. GitHub Copilot is powered by the OpenAI Codex system. OpenAI Codex has broad knowledge of how people use code and is more capable than GPT-3 in code generation. OpenAI Codex is more capable, in part, because it was trained on a dataset that included a larger concentration of public source code.
 
-GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, Vim/Neovim, and the JetBrains suite of integrated development environments (IDEs).
+GitHub Copilot is available as an extension for VS Code, Visual Studio, Vim/Neovim, and the JetBrains suite of IDEs.
 
-## GitHub Copilot Features
+## GitHub Copilot features
 
-GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by autocompleting comments and code, but AI-powered autocompletion was just the starting point. Here are some features of GitHub Copilot that truly makes it a developer tool of the future, surpassing being just an editor and becoming a readily accessible AI assistant throughout the entire development lifecycle.
+GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by autocompleting comments and code. But AI-powered autocompletion was just the starting point.
+
+Here are some features of GitHub Copilot that truly make it a developer tool of the future. With these features, GitHub Copilot is more than just an editor. It's becoming a readily accessible AI assistant throughout the entire development life cycle.
 
 ### A ChatGPT-like experience in your editor with GitHub Copilot Chat
 
-GitHub Copilot brings a chat interface to the editor that's focused on developer scenarios and natively integrates with Visual Studio Code and Visual Studio. It's deeply embedded into the IDE, and recognizes what code a developer has typed and what error messages are shown. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
+GitHub Copilot brings a chat interface to the editor that's focused on developer scenarios and that natively integrates with VS Code and Visual Studio. It's deeply embedded in the IDE, and it recognizes what code a developer has typed and what error messages appear. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
 
-### Copilot for Pull Requests
+### Copilot for pull requests
 
-This new functionality is powered by OpenAI's new GPT-4 model, and adds support for AI-powered tags in pull-request descriptions through a GitHub app that organization admins and individual repository owners can install. GitHub Copilot automatically fills out these tags based on the changed code. Developers can then review or modify the suggested description.
+OpenAI's new GPT-4 model adds support in GitHub Copilot for AI-powered tags in pull-request descriptions through a GitHub app that organization admins and individual repository owners can install. GitHub Copilot automatically fills out these tags based on the changed code. Developers can then review or modify the suggested descriptions.
 
-### Copilot for the command line interface (CLI)
+### Copilot for the CLI
 
-Next to the editor and pull request, the terminal is the place where developers spend the most time. However, even the most proficient developers need to scroll through many pages to remember the precise syntax of many commands. GitHub Copilot CLI can compose commands and loops and throw around obscure find flags to satisfy your query.
+Next to the editor and pull request, the terminal is the place where developers spend the most time. However, even the most proficient developers need to scroll through many pages to remember the precise syntax of many commands. The GitHub Copilot command-line interface (CLI) can compose commands and loops, and it can and throw obscure `find` flags to satisfy your query.
 
-## GitHub Copilot Business
+## GitHub Copilot subscription plans
 
 GitHub Copilot is available through GitHub personal accounts with GitHub Copilot Individual, or through organization or enterprise accounts with GitHub Copilot Business and GitHub Copilot Enterprise.
 
-Copilot Business allows you to control who can use GitHub Copilot in your company. Once you give access to an organization, its admins can then give access to individuals and teams.
+### GitHub Copilot Business
 
-With Copilot Business, GitHub Copilot is open to every developer, team and organization, and enterprise.
+GitHub Copilot Business allows you to control who can use GitHub Copilot in your company. After you give access to an organization, its admins can give access to individuals and teams.
 
-With features like code completions, chat in IDE and mobile, security vulnerabilities filter, code referencing, public code filter, IP indemnity, and enterprise-grade security, safety, and privacy, GitHub Copilot Business is focused on making organizations more productive, secure, and fulfilled. These features allow developers to code faster and allows them to focus on more satisfying work.
+With GitHub Copilot Business, GitHub Copilot is open to every developer, team, organization, and enterprise.
 
-## GitHub Copilot Enterprise
+With the following features, GitHub Copilot Business is focused on making organizations more productive, secure, and fulfilled:
 
-GitHub Copilot Enterprise is available for organizations through GitHub Enterprise Cloud.
+- Code completions
+- Chat in IDE and mobile
+- Filter for security vulnerabilities
+- Code referencing
+- Filter for public code
+- IP indemnity
+- Enterprise-grade security, safety, and privacy
 
-Copilot Enterprise allows your teams of developers to quickly get up to speed on your codebase, search through and build documentation, get suggestions based on internal and private code, and quickly review pull requests.
+### GitHub Copilot Enterprise
 
-GitHub Copilot Enterprise includes everything in GitHub Copilot Business, as well as an additional layer of personalization for organizations and integration into GitHub as a chat interface to allow developers to converse about their codebase and action buttons throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions, and offers customers access to GitHub Copilot Customization to fine-tune custom, private models for code completion.
+GitHub Copilot Enterprise is available for organizations through GitHub Enterprise Cloud. This subscription plan enables your teams of developers to:
+
+- Quickly get up to speed on your codebase.
+- Search through and build documentation.
+- Get suggestions based on internal and private code.
+- Quickly review pull requests.
+
+GitHub Copilot Enterprise includes everything in GitHub Copilot Business, plus a layer of personalization for organizations. It provides integration into GitHub as a chat interface, so developers can converse about their codebase. It also provides action buttons throughout the platform.
+
+GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding and for suggestions that are more tailored. It offers customers access to GitHub Copilot customization to fine-tune custom, private models for code completion.
 
 To learn more about GitHub Copilot Business and Enterprise, check out the related links at the end of this module.
 
-In the next unit, we'll learn about how to get started with GitHub Copilot and some common configurations.
+In the next unit, you'll learn about how to get started with GitHub Copilot and some common configurations.
