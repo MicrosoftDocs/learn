@@ -62,7 +62,7 @@ For larger or more complex dictionaries, using PowerShell can provide greater fl
 
 ## Keyword dictionary management
 
-After creating a new keyword dictionary using it in a DLP policy, you might need to modify the keywords as your organizational requirements change. For example, a keyword dictionary used to detect medical disease classifications might need updates when new terms are introduced or outdated ones are removed. These changes ensure that your policies stay relevant and effective over time.
+After creating a new keyword dictionary and using it in a DLP policy, you might need to modify the keywords as your organizational requirements change. For example, a keyword dictionary used to detect medical disease classifications might need updates when new terms are introduced or outdated ones are removed. These changes ensure that your policies stay relevant and effective over time.
 
 For more information, see [Modify a keyword dictionary](/purview/sit-modify-keyword-dictionary?azure-portal=true).
 
