@@ -73,3 +73,36 @@ ASP.NET Core provides a comprehensive suite of tools for monitoring and maintain
 - **OpenTelemetry**: ASP.NET Core integrates with OpenTelemetry, an open-source observability framework for cloud-native software. OpenTelemetry provides standardized APIs and instrumentation for collecting metrics, logs, and traces, enabling you to monitor and diagnose your applications more effectively.
 - **Health Checks**: The health checks API allows you to monitor the health of your application and its dependencies. You can configure health checks to report the status of various components, such as databases, external services, and more.
 - **Diagnostics Tools**: ASP.NET Core provides various diagnostic tools, such as dotnet-trace, dotnet-dump, and dotnet-gcdump, which help you collect and analyze diagnostic data from your application.
+
+## Common web app scenario requirements addressed by ASP.NET Core features
+
+For the modern web app online store scenario, here are some of the aligned features that can be plugged in through ASP.NET Core's modular design:
+
+| **Modern Web App Requirement**               | **ASP.NET Core Features**                                                |
+|----------------------------------------------|--------------------------------------------------------------------------|
+| Customer Browsing and Search Options         | Blazor: Build interactive web UI components.                             |
+|                                              | Entity Framework Core: For database access.                              |
+|                                              |                                                                          |
+| Authentication, Authorization,               | ASP.NET Core Identity: Authentication and user management.               |
+| Profile Management, and Order Tracking       | Authorization Middleware: For handling authorization.                    |
+|                                              | IdentityServer: For implementing OpenID Connect and OAuth 2.0.           |
+|                                              | ASP.NET Core Data Protection: Secure the data.                           |
+|                                              | Entity Framework Core: Manage data persistence.                          |
+|                                              |                                                                          |
+| Secure Customer Payment Interaction          | HTTPS Enforcement: For secure communication.                             |
+|                                              | Data Protection: For securing sensitive data.                            |
+|                                              | Payment Gateway Integration: For handling payments.                      |
+|                                              | Anti-Forgery Tokens: For preventing CSRF attacks.                        |
+|                                              |                                                                          |
+| Real-Time Interactive Chat                   | SignalR: For real-time web functionality.                                |
+|                                              |                                                                          |
+| App Logging and Health Monitoring            | ASP.NET Core Logging: For capturing logs.                                |
+|                                              | Health Checks: For monitoring application health.                        |
+|                                              | Serilog: For structured logging.                                         |
+|                                              | Application Insights: For performance monitoring and diagnostics.        |
+|                                              | HealthChecks UI: For visualizing health checks.                          |
+|                                              |                                                                          |
+| Cloud-Ready, Environment-Based Configuration | Configuration Providers: For managing configuration settings.            |
+|                                              | Azure App Configuration: For centralized configuration management.       |
+|                                              | Docker Support: For containerizing applications.                         |
+|----------------------------------------------|--------------------------------------------------------------------------|

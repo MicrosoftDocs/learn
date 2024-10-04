@@ -9,7 +9,7 @@ ASP.NET Core for web development is ideal when your web app has any of these req
 - **Microservices architecture**: You're building a microservices-based architecture. ASP.NET Core’s lightweight and modular design is well-suited for microservices.
 - **High performance**: Your application demands high performance and scalability. ASP.NET Core is designed to handle high traffic and large-scale applications efficiently.
 - **Modern development practices**: You prefer modern development practices such as dependency injection, asynchronous programming, and modular architecture. ASP.NET Core supports these practices out of the box.
-- **Cross-platform requirements**: You need to develop applications that run on Windows, macOS, or Linux. ASP.NET Core’s cross-platform capabilities make it an excellent choice for diverse environments.
+- **Cross-platform requirements**: You need to develop applications that run on Windows, macOS, Linux and Docker. ASP.NET Core’s cross-platform capabilities make it an excellent choice for diverse environments.
 - **Cloud integration**: You plan to deploy your applications to the cloud. ASP.NET Core integrates seamlessly with Azure and other cloud platforms, simplifying deployment and management.
 - **Security and compliance**: You require strong security features and compliance with industry standards. ASP.NET Core provides built-in support for HTTPS, data protection, and other security best practices.
 
