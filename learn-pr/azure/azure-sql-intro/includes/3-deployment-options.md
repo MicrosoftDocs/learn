@@ -88,7 +88,7 @@ You've now learned about the three main deployment options within Azure SQL: vir
 
 **SQL Database elastic pools** allow you to host many databases within a single set of provisioned SQL Database resources. This option is ideal for software as a service (SaaS) application or provider because you can manage and monitor performance in a simplified way for many databases.
 
-**SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can pre-provision compute resources, which can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than in a single managed instance. This offer is currently in public preview.
+**SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can provision compute resources before deployment, which can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than in a single managed instance. This offer is currently in public preview.
 
 Paychex is a good example of a company that uses SQL Database elastic database pools. Paychex is a Human Capital Management firm that serves more than 650,000 businesses across the US and Europe. Paychex needed a way to separately manage the time and pay management for each of its customers and cut costs. The company chose SQL Database elastic database pools, which allowed it to simplify management and enable resource sharing between separate databases to lower costs.  
 

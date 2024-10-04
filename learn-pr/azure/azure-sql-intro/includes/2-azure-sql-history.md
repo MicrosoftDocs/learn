@@ -14,6 +14,6 @@ Let's look at an early explanation of Azure SQL from 2010:
 
 This explanation remains valid, but the capabilities around security, performance, availability, and scale have been enhanced greatly. Azure SQL has evolved over the years to include Azure virtual machines, managed instances, and several options for databases. There are now multiple deployment options that have the flexibility to scale to your needs.
 
-There have been more than seven million deployments of some form of Azure SQL. The architecture for Azure SQL has also evolved to meet the growing demands of applications. For example, the architecture introduced in 2014 set the stage for new possibilities like elastic database pools, vCore choices, business-critical deployments, hyperscale, and serverless architectures.
+There's been more than 7,000,000 deployments of some form of Azure SQL. The architecture for Azure SQL also evolved to meet the growing demands of applications. For example, the architecture introduced in 2014 set the stage for new possibilities like elastic database pools, vCore choices, business-critical deployments, hyperscale, and serverless architectures.
 
-Since 2008, SQL Server and Azure SQL have both evolved to become more available, scalable, and performant to meet the demands of any application. The database services offered have expanded from SQL Server. They now include open-source databases like Azure Database for PostgreSQL and Azure Database for MariaDB.
+Since 2008, SQL Server and Azure SQL both evolved to become more available, scalable, and performant to meet the demands of any application. The database services offered expanded from SQL Server. They now include open-source databases like Azure Database for PostgreSQL and Azure Database for MariaDB.
