@@ -3,7 +3,7 @@ uid: learn.introduction-to-aspnet-core.when-to-use-aspnet-core
 title: When to use ASP.NET Core
 metadata:
   title: when-to-use-{product}
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Learn when to use ASP.NET Core for web app development."
   ms.date: 9/13/2024
   author: wadepickett
   ms.author: wpickett
