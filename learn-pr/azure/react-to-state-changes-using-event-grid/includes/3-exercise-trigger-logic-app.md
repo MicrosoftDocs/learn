@@ -10,7 +10,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account that you used to activate the sandbox.
 
-1. In resource menu or on the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. In the resource menu or on the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a resource** pane, enter **Virtual machine** in global search. In the search results, select **Virtual machine** published by Microsoft for Azure, and then select **Create**.
 
@@ -49,7 +49,7 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 1. In the **Create a resource** menu, select **Integration**. Then in the results list, select **Create** under **Logic App**.
 
-1. On the **Select a hosting option** page select **Multi-tenant** under **Consumption** and choose **Select**.
+1. On the **Select a hosting option** page, select **Multi-tenant** under **Consumption** and choose **Select**.
 
 1. On the **Basics** tab, enter the following values for each setting. Note, don't select the **Looking for the classic consumption create experience? Click here** link as you won't be able to go back.
 
@@ -71,7 +71,7 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 ## Add an Event Grid trigger to the logic app
 
-1. In the menu on the left, select **Logic app designer** in the **Development Tools** section. 
+1. In the menu on the left, select **Logic app designer** in the **Development Tools** section.
 
 1. Scroll down to **Templates** section, then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
 

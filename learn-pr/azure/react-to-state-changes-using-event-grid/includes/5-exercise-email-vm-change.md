@@ -47,7 +47,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 > [!NOTE]
 > In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Designer** to return to the editor.
 
-##  email notification
+## Email notification
 
 Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com. The configuration steps for email programs may differ, so you may need to adjust accordingly.
 
