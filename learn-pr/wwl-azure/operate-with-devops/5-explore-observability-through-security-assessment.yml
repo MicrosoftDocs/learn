@@ -8,6 +8,6 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-explore-observability-through-security-assessment.md)]
