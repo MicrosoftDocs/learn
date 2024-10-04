@@ -20,4 +20,3 @@ Upon completion of this module, you should be able to:
 - Basic understanding of the Microsoft 365 services
 
 - Basic understanding information protection and governance in Microsoft 365
-
