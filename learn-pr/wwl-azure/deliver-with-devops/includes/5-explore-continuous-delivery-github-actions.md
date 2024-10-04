@@ -3,7 +3,7 @@ GitHub Actions provide the mechanism for implementing software delivery workflow
 ## What are GitHub Actions?
 
 ---
-> [!VIDEO https://www.youtube.com/embed/qT0VMdx7vuI?si=YsZWnf9MQx5ZwAw7?cc_load_policy=1&cc_lang_pref=auto]
+> [!VIDEO https://www.youtube.com/embed/cP0I9w2coGU?si=lV3HXOnSDRIio0p1?cc_load_policy=1&cc_lang_pref=auto]
 ---
 
 In the context of GitHub, the term *actions* actually have a dual meaning. The first one (capitalized *Actions*) represents the GitHub service, which provided the ability to implement CI/CD workflows. The second one (lower case *actions*) designates reusable units that can be included in workflows to deliver a specific functionality, such as running scripts and executables, building and uploading artifacts, or setting up access to an Azure subscription.
