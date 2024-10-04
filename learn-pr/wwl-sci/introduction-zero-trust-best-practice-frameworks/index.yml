@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted
+  ms.custom: "wwl-aipa"
 title: Introduction to Zero Trust and best practice frameworks
 summary: |
   You learn what best practices are, how cybersecurity architects use them, and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization.
