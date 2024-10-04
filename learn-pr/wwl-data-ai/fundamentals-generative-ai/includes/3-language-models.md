@@ -79,7 +79,7 @@ We can plot these vectors in three-dimensional space, like this:
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The embedding vectors for dog” and “puppy” describe a path along an almost identical direction, which is also fairly similar to the direction for “cat”. The embedding vector for “skateboard” however describes journey in a very different direction.
+The embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for “cat”. The embedding vector for “skateboard” however describes journey in a very different direction.
 
 > [!NOTE]
 > The previous example shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.

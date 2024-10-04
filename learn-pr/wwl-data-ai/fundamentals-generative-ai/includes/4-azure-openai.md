@@ -8,6 +8,11 @@ In addition to the Azure OpenAI models, the model catalog includes the latest op
 - Mistral
 - Meta and others.
 
+A few of common Azure OpenAI models are: 
+- *GPT-3.5-Turbo, GPT-4, and GPT-4o*: Conversation-in and message-out language models.
+- *GPT-4 Turbo with Vision*: A language model developed by OpenAI that can analyze images and provide textual responses to questions about them. It incorporates both natural language processing and visual understanding.
+- *DALL-E*: A language model that generates original images, variations of images, and can edit images.  
+
 ## Large and small language models
 There are many language models available that you can use to power generative AI applications. In general, language models can be considered in two categorize: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
 

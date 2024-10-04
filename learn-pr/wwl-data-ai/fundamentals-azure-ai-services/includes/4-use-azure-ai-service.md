@@ -1,10 +1,13 @@
 Once you create an Azure AI service resource, you can build applications using the REST API, software development kits (SDKs), or visual studio interfaces.
 
-[ ![Screenshot of several examples of Azure studios including Azure Language Studio, Azure OpenAI Studio, and Azure Vision Studio.](../media/azure-studio-examples.png) ](../media/azure-studio-examples.png#lightbox) 
+[ ![Screenshot of several examples of Azure studios including Azure Language Studio, Azure Document Intelligence Studio, and Azure Vision Studio.](../media/azure-studio-examples.png) ](../media/azure-studio-examples.png#lightbox) 
 
 ## Using service studio interfaces
 
 Studio interfaces provide a friendly user interface to explore Azure AI services. There are different studios for different Azure AI services, such as Vision Studio, Language Studio, Speech Studio, and the Content Safety Studio. You can test out Azure AI services using the samples provided, or experiment with your own content. A studio-based approach allows you to explore, demo, and evaluate Azure AI services regardless of your experience with AI or coding.
+
+> [!NOTE]
+> In addition to individual studios for individual Azure AI services, Microsoft Azure has another studio,  **Azure AI Studio**, which combines multiple Azure AI services into one platform. Developers can use the web platform to create AI applications with the latest APIs and models. Azure AI Studio is covered in its own module: [Introduction to Azure AI Studio](/training/modules/introduction-to-azure-ai-studio/).
 
 ## Associate the AI service resource
 Before you can use an AI service resource, you must associate it with the studio you want to use on the Settings page. Select the resource, and then select **Use Resource**. You are then ready to explore the Azure AI service within the studio.
@@ -15,3 +18,4 @@ As an example, let's look at the Azure AI Content Safety service, which identifi
 
 > [!NOTE]
 > When developers incorporate an AI service into their applications, they often use a [SDK](/training/modules/create-manage-cognitive-services/5-use-sdk?azure-portal=true) or the [REST API](/training/modules/create-manage-cognitive-services/4-use-rest?azure-portal=true).
+
