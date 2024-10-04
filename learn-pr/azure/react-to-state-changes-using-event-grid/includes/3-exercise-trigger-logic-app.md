@@ -47,9 +47,11 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 1. In the resource menu, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Integration**, and then in the results list, select **Logic App**. The **Create Logic App** pane appears.
+1. In the **Create a resource** menu, select **Integration**. Then in the results list, select **Create** under **Logic App**.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Select a hosting option** page select **Multi-tenant** under **Consumption** and choose **Select**.
+
+1. On the **Basics** tab, enter the following values for each setting. Note, don't select the **Looking for the classic consumption create experience? Click here** link as you won't be able to go back.
 
     | Setting | Value |
     | --- | --- |
@@ -60,7 +62,6 @@ Let's create a logic app that runs whenever a virtual machine change is detected
     | Logic app name | Enter a name |
     | Region | Choose from the free *sandbox regions* listed after this table. |
     | Enable log analytics | No |
-    | Plan type | Consumption |
 
     [!INCLUDE[Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -90,7 +91,7 @@ Let's create a logic app that runs whenever a virtual machine change is detected
     | **Resource Type** | `Microsoft.Resources.ResourceGroups` |
     | **Resource Name** | <rgn>[sandbox resource group]</rgn> |
     | **Event Type Item - 1** | Choose `Microsoft.Resources.ResourceActionSuccess` from the drop-down, then select **Add new item** |
-    | **Event Type Item - 2** | Choose `Microsoft.Resources.ResourceDeleteSuccess`from the drop-down, then select **Add new item** |
+    | **Event Type Item - 2** | Choose `Microsoft.Resources.ResourceDeleteSuccess` from the drop-down, then select **Add new item** |
     | **Event Type Item - 3** | Choose `Microsoft.Resources.ResourceWriteSuccess` from the drop-down. |
     | | |
 
