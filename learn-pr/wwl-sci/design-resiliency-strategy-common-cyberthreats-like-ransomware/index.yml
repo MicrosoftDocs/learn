@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted
-  ms.custom: "wwl-aipa"
+  ms.custom: wwl-aipa
 title: Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
 summary: |
   You learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for.
