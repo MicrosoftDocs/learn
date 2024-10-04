@@ -1,4 +1,4 @@
-When someone uses the term *.NET*, what they mean greatly depends on context. In this unit, you'll learn about .NET by looking at it as an ecosystem. In other words, .NET is a collection of many parts and people that together create a powerful environment for building applications.
+When someone uses the term *.NET*, what they mean greatly depends on context. In this unit, you learn about .NET by looking at it as an ecosystem. In other words, .NET is a collection of many parts and people that together create a powerful environment for building applications.
 
 ## .NET is an ecosystem for application development
 
@@ -8,19 +8,20 @@ The term *ecosystem* describes the multiple facets of an application development
 
 Software developers use .NET languages like C# and F# to write source code. Each line of code they write expresses an instruction or command the computer should perform while the program is running.
 
-Before software developers can run their code, they must first compile it. The *.NET compiler* is a program that converts the source code (in any supported programming language) into a portable language called *intermediate language* (IL).  The .NET compiler saves the IL code into a file called a *.NET assembly*. By compiling the code into an intermediate format, you can use the same code base wherever you run the code, whether on Windows or Linux, or on 32-bit or 64-bit computer hardware.
+Before software developers can run their code, they must first compile it. The *.NET compiler* is a program that converts the source code (in any supported programming language) into a portable language called *intermediate language* (IL). The .NET compiler saves the IL code into a file called a *.NET assembly*. By compiling the code into an intermediate format, you can use the same code base wherever you run the code, whether on Windows or Linux, or on 32-bit or 64-bit computer hardware.
 
-The *.NET runtime* is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what executes and manages your application as it runs on a host operating system. We'll talk more about what the .NET runtime does in just a moment.
+The *.NET runtime* is an execution environment for your compiled .NET assembly. In other words, the .NET runtime is what executes and manages your application as it runs on a host operating system. We talk more about what the .NET runtime does in just a moment.
 
-Fortunately, as a software developer just getting started with .NET, you don't need to get into details of how these mechanisms work. With experience, you'll come to more fully understand and appreciate the underlying power of .NET languages and compilers and the runtime.
+Fortunately, as a software developer just getting started with .NET, you don't need to get into details of how these mechanisms work. With experience, you come to more fully understand and appreciate the underlying power of .NET languages and compilers and the runtime.
 
 > [!TIP]
-> Sometimes people think that the C# programming language *is* .NET. However, C# and .NET are distinct. C# is a programming language syntax. As part of the syntax, you can reference and call methods defined in .NET code libraries, or *assemblies*. Next, you'll use the C# compiler that's installed with the .NET SDK to create a .NET assembly from your C# code. The .NET runtime then runs the .NET assemblies. These distinctions are important concepts as you learn more about .NET and C#.
+> Sometimes people think that the C# programming language *is* .NET. However, C# and .NET are distinct. C# is a programming language syntax. As part of the syntax, you can reference and call methods defined in .NET code libraries, or *assemblies*. Next, you use the C# compiler that's installed with the .NET SDK to create a .NET assembly from your C# code. The .NET runtime then runs the .NET assemblies. These distinctions are important concepts as you learn more about .NET and C#.
 
 ### Use .NET application frameworks and libraries to harness prebuilt functionality
 
 All software is built in layers, meaning software runs at various levels of abstraction on a computer:
-- At the lowest level, software communicates directly with your computer's hardware. It controls the flow of data on the motherboard, processors, memory, and hard drives. 
+
+- At the lowest level, software communicates directly with your computer's hardware. It controls the flow of data on the motherboard, processors, memory, and hard drives.
 - At the next level, software allows the end user to provide instructions through an operating system.
 - At the next level, software like .NET provides a way for you to develop and run applications.
 - At the next level, application frameworks and libraries of functionality allow you to quickly build rich applications with less effort than older development methods.
@@ -41,8 +42,8 @@ You might wonder which frameworks support which app models. Use the following ta
 |---|---|---|
 | Web  | ASP.NET Core |  The framework for building server-side logic. |
 | Web  | ASP.NET Core MVC |  The framework for building server-side logic for web pages or web APIs. |
-| Web  | ASP.NET Core Razor Pages |  The framework for building server-generated HTML.  |
-| Web client | Blazor | Blazor is a part of ASP.NET Core. Its two modes allow for either Document Object Model (DOM) manipulation via sockets as a communication vehicle for running server-side code, or a WebAssembly implementation for running compiled C# on a browser.  |
+| Web  | ASP.NET Core Razor Pages |  The framework for building server-generated HTML. |
+| Web client | Blazor | Blazor is a part of ASP.NET Core. Its two modes allow for either Document Object Model (DOM) manipulation via sockets as a communication vehicle for running server-side code, or a WebAssembly implementation for running compiled C# on a browser. |
 | Desktop | .NET for Mac |  Allows .NET developers to build apps for Mac devices with native UI and API access. |
 | Desktop  | WinForms | A framework for building "battleship gray" Windows-style applications. |
 | Desktop  | Windows Presentation Foundation (WPF) | A framework for building dynamic desktop applications that conform to different form factors. WPF allows form elements to perform movement, fades, glides, and other effects with the help of a rich library of animations. |
