@@ -2,11 +2,11 @@ All great efforts start with a simple question: *Why?* Digital transformation is
 
 In this executive-level module, you'll:
 
-- Compare motivations
-- Define business objectives and key results
-- Evaluate your financial and technical considerations
-- Successfully build your cloud business case with key financial and technical guidance
-- Learn how tools like the Cloud Adoption Strategy Evaluator and the Azure Virtual Machine (VM) Cost Estimator can help you better understand the value and financial considerations of cloud adoption
+- Compare motivations.
+- Define business objectives and key results.
+- Evaluate your financial and technical considerations.
+- Successfully build your cloud business case with key financial and technical guidance.
+- Learn how tools like the Cloud Adoption Strategy Evaluator, the Azure pricing calculator, and the Azure Virtual Machine (VM) Cost Estimator can help you better understand the value and financial considerations of cloud adoption.
 
 ## Learning objectives
 
