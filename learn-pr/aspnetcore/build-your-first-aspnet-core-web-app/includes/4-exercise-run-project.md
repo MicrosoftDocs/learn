@@ -37,12 +37,11 @@ Run the web app in Visual Studio Code and view in a browser:
     - Press <kbd>Shift</kbd>+<kbd>F5</kbd> on the keyboard.
 
 ::: zone-end
-
 ::: zone pivot="shell"
 
 Run the web app using the .NET CLI:
 
-1. From a terminal in Visual Studio Code or the command line, navigate to the *MyWebApp* project directory that contains your *MyWebApp.csproj* file.
+1. From a terminal or the command line, navigate to the *MyWebApp* project directory that contains your *MyWebApp.csproj* file.
 
 1. Build and Run the app with the following command:
 

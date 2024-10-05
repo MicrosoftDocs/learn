@@ -22,15 +22,17 @@ In Visual Studio Code, create a new project:
 1. In the **Command Palette**, name the project `MyWebApp`, including matching the capitalization. Using this exact project name is important to ensure that the namespaces for code in this instruction match yours.
 1. Select **Create project** from the **Command Palette**.
 
-::: zone-end
+## Examine the structure of the project
 
+The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
+
+:::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+
+::: zone-end
 ::: zone pivot="shell"
 
-Create a new project from the command line using the Visual Studio Code integrated terminal.
+From the terminal or the command line, create a new project:
 
-In Visual Studio Code:
-
-1. Select **New Terminal** from the **Terminal** menu to open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 1. Change to the directory (`cd`) that will contain the project.
 1. Create an ASP.NET Core web app in a directory named *MyWebApp* by running the .NET CLI command `dotnet new`:
 
@@ -49,18 +51,15 @@ In Visual Studio Code:
         - The directory where the project is created serves as the default project name, namespace, and assembly name (the name of the compiled output).
         - If the output option `-o <directory>` isn't used, then the current directory is used.
 
-1. Open the *MyWebApp* project folder in the current instance of Visual Studio Code by using the `code` command:
-
-   ```dotnetcli
-   code -r MyWebApp
-   ```
-::: zone-end
+1. Open the *MyWebApp* project folder
 
 ## Examine the structure of the project
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
 :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+
+::: zone-end
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
 
@@ -72,9 +71,14 @@ The *.csproj* project file is used to:
 - Specify which version of .NET to target
 - Manage project dependencies
 
+::: zone pivot="vscode"
 ### The *.sln* solution file
 
 When an ASP.NET Core project is created or opened in Visual Studio Code (with the C# Dev Kit extension), it creates a *[project name].sln* solution file. The *[project name].sln* solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
+
+::: zone-end
+::: zone pivot="shell"
+::: zone-end
 
 ### The *obj* folder
 
