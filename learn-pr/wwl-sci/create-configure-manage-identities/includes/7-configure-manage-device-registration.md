@@ -22,7 +22,7 @@ The goal of Microsoft Entra registered devices is to provide your users with sup
 | Device management              | Mobile Device Management (example: Microsoft Intune)                                               |
 | Key capabilities               | SSO to cloud resources, Conditional Access                                                         |
 
-:::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c.png" alt-text="Diagram of Microsoft Entra registered devices.  You have a laptop and a cell phone that are directly registered with your cloud directory.":::
+:::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c-c81224e6.png" alt-text="Diagram of Microsoft Entra registered devices.  You have a laptop and a cell phone that are directly registered with your cloud directory.":::
 
 
 Microsoft Entra registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have anMicrosoft Entra account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Microsoft Entra account and Conditional Access policies applied to the device identity.
@@ -77,7 +77,7 @@ The goal of Microsoft Entra joined devices is to simplify:
  -  Cloud-based management of work-owned devices
  -  Users to sign in to their devices with their Microsoft Entra ID or synced Active Directory work or school accounts.
 
-:::image type="content" source="../media/azure-active-directory-joined-device-9d2b59d5.png" alt-text="Diagram of Microsoft Entra joined devices connected to the cloud. There is a laptop registered to your cloud directory with full credentials to connect with on-premises services.":::
+:::image type="content" source="../media/azure-active-directory-joined-device-9d2b59d5-ee10b0a7.png" alt-text="Diagram of Microsoft Entra joined devices connected to the cloud. There is a laptop registered to your cloud directory with full credentials to connect with on-premises services.":::
 
 
 Microsoft Entra Join can be deployed by using a number of different methods.
@@ -103,7 +103,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management                 | Group Policy, Configuration Manager standalone or co-management with Microsoft Intune                                    |
 | Key capabilities                  | SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset |
 
-:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-83fd2bb7.png" alt-text="Diagram of the process flow of Hybrid Microsoft Entra joined devices.  A laptop is registered to an on-premises active directory, and has a synchronized account in the cloud directory for cloud access.":::
+:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-83fd2bb7-631a565c.png" alt-text="Diagram of the process flow of Hybrid Microsoft Entra joined devices.  A laptop is registered to an on-premises active directory, and has a synchronized account in the cloud directory for cloud access.":::
 
 
 ### Scenarios for hybrid joined

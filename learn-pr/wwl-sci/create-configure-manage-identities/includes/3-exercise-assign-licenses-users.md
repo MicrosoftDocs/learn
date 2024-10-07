@@ -3,24 +3,24 @@
 You can skip creating this user if you have already created the same user in the earlier module.
 
 1.  Browse to the Identity menu in the [Microsoft Entra admin center](https://entra.microsoft.com/).
-2.  In the left navigation, under select **Users**.
-3.  Within the Users page, on the menu, select **New user**.
+2.  In the left navigation, under select **Users**, then **All Users.**
+3.  Within the Users page, on the menu, select + **New user** and **Create new user**.
 4.  Create a user using the following information:
     
-    | **Setting** | **Value**                 |
-    | ----------- | ------------------------- |
-    | User name   | ChrisG                    |
-    | Name        | Chris Green               |
-    | First name  | Chris                     |
-    | Last name   | Green                     |
-    | Password    | make up a unique password |
-    |             |                           |
+    | **Setting**         | **Value**                 |
+    | ------------------- | ------------------------- |
+    | User principal name | ChrisG                    |
+    | Name                | Chris Green               |
+    | First name          | Chris                     |
+    | Last name           | Green                     |
+    | Password            | make up a unique password |
+    |                     |                           |
 5.  When complete, verify the account for Chris Green is shown in the **All users** list.
 
 ## Create a security group in Microsoft Entra ID
 
 1.  Browse to the Microsoft Entra admin center screen.
-2.  In the left navigation, under **Identity**, select **Groups**.
+2.  In the left navigation, under **Identity**, select **Groups** and then **All groups**.
 3.  In the Groups screen, on the menu, select **New group**.
 4.  Create a group using the following information:
     
@@ -32,7 +32,7 @@ You can skip creating this user if you have already created the same user in the
     | Owners          | Assign your own administrator account as the group owner |
     | Members         | Chris Green                                              |
     
-    :::image type="content" source="../media/create-group-7be1cd36.png" alt-text="Screenshot of the new group creation page in Microsoft Entra ID. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
+    :::image type="content" source="../media/create-group-7be1cd36-19fd1287.png" alt-text="Screenshot of the new group creation page in Microsoft Entra ID. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
     
 5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -40,16 +40,17 @@ You can skip creating this user if you have already created the same user in the
 
 1.  In the **All groups** list, select **Marketing**.
 2.  In the Marketing window, under **Manage**, select **Licenses**.
-3.  On the menu, select **Assignments**.
-4.  In the update license assignments, under **Select licenses**, review the list of available licenses and then select the check box for one of the licenses.
-5.  Under **Review license** options, review the available options for the license you have selected.
-    
-    > [!TIP]
-    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
-    
-    :::image type="content" source="../media/assign-license-group-779b730c.png" alt-text="Screenshot of the select license dialog. The image displays licenses selected and assigned to a group. The review license menu is also selected displaying multiple licenses being added to the group.":::
-    
-6.  Select **Save**.
+3.  Notices that no licenses are currently assigned to this group.
+4.  Open a new tab in your browser.
+5.  Go to the Microsoft 365 admin centert at [http://admin.microsoft.com](https://admin.microsoft.com).
+6.  Select **Billing** from the menu on the left.
+7.  Select **Licenses**.
+8.  From the list of licenses you have available, select one.
+9.  Next you will select **Groups** from the list near the top of the scrent.<br>
+10. On the Groups page, select + **Assign license**.<br>
+11. Search for and select the **Marketing** group we created earlier.
+12. Select the **Assign** button at the bottom of the dialog.
+13. You should get a message that licenses were successfully assigned.
 
 ## Restore or remove a recently deleted user with Microsoft Entra ID
 

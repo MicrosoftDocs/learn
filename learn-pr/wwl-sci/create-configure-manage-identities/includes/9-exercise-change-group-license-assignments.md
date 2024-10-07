@@ -6,7 +6,7 @@
 4.  In the left navigation, under **Manage**, select **Licenses**.
 5.  Review the current assignments and then, on the menu, select **+ Assignments**.
     
-    :::image type="content" source="../media/change-group-license-4fac5a1d.png" alt-text="Screenshot of the group license page in Microsoft Entra ID. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
+    :::image type="content" source="../media/change-group-license-4fac5a1d-7a8b1ae7.png" alt-text="Screenshot of the group license page in Microsoft Entra ID. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
     
 6.  On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
 7.  When complete, select **Save**.
@@ -26,19 +26,19 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
     
-    :::image type="content" source="../media/group-error-notification-919e1667.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to select to get more information.":::
+    :::image type="content" source="../media/group-error-notification-919e1667-9d146a23.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to select to get more information.":::
     
 2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
     
-    :::image type="content" source="../media/list-of-users-with-errors-381fee9b.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by selecting the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
+    :::image type="content" source="../media/list-of-users-with-errors-381fee9b-8dfa2c56.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by selecting the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
     
 3.  To find all groups that contain at least one error, on the **Microsoft Entra - Identity - Billing** menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
     
-    :::image type="content" source="../media/group-errors-widget-3f3842a5.png" alt-text="Screenshot of the Microsoft Entra ID licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
+    :::image type="content" source="../media/group-errors-widget-3f3842a5-af11454a.png" alt-text="Screenshot of the Microsoft Entra ID licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
     
 4.  Select the box to see a list of all groups with errors. You can select each group for more details.
     
-    :::image type="content" source="../media/list-of-groups-with-errors-416fb081.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. There is one error listed for Office 365 E1.":::
+    :::image type="content" source="../media/list-of-groups-with-errors-416fb081-4e3faf7b.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. There is one error listed for Office 365 E1.":::
     
 
 The following sections give descriptions of each potential problem and the way to resolve it.
@@ -194,11 +194,11 @@ Here is what the migration process could look like:
     
      -  This is the expected user state during migration:
         
-        :::image type="content" source="../media/expected-user-state-45157e0a.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
+        :::image type="content" source="../media/expected-user-state-45157e0a-6e5d1f39.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
         
 4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
     
-    :::image type="content" source="../media/direct-licenses-removed-d550929e.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
+    :::image type="content" source="../media/direct-licenses-removed-d550929e-c23edebd.png" alt-text="Screenshot of the Licenses page in Microsoft Entra ID after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
     
 
 ## Change license assignments for a user or group in Microsoft Entra ID
