@@ -32939,6 +32939,46 @@
       "source_path": "learn-pr/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/2-customer-narrative.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/3-operating-models.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/4-structure-types-cloud-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/5-mature-team-structures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/7-raci-matrix.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
     }
   ]
 }
