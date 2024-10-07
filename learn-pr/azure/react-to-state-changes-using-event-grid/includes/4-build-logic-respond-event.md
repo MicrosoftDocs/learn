@@ -29,7 +29,7 @@ Suppose you have a logic app that needs to send an email in response to an event
 
 ## JSON configuration
 
-The Logic Apps Designer command bar has two views of a logic app. Yaou can use both views for development and configuration:
+The Logic Apps Designer command bar has two views of a logic app. You can use both views for development and configuration:
 
 - **Designer**: Graphical interface for mapping all triggers, actions, and connectors.
 - **Code view**: JSON format of your logic app configuration, which allows you to edit any trigger, event, connection, or related field you've mapped.
