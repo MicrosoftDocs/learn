@@ -33,13 +33,13 @@ quiz:
       explanation: "You can write a comment that describes the logic that you want, and GitHub Copilot displays suggested code to implement the solution."
   - content: "What are the supported IDE extensions for GitHub Copilot?"
     choices:
-    - content: "Visual Studio Code and Visual Studio"
+    - content: "VS Code and Visual Studio"
       isCorrect: false
-      explanation: "Although GitHub Copilot supports Visual Studio Code and Visual Studio, the platform supports more than just these two IDEs."
-    - content: "GitHub.com, Visual Studio Code, Visual Studio, Neovim, and JetBrains"
+      explanation: "Although GitHub Copilot supports VS Code and Visual Studio, the platform supports more than just these two IDEs."
+    - content: "GitHub.com, VS Code, Visual Studio, Neovim, and JetBrains"
       isCorrect: false
       explanation: "Although GitHub.com is supported, it doesn't need an extension."
-    - content: "Visual Studio Code, Visual Studio, Neovim, and JetBrains"
+    - content: "VS Code, Visual Studio, Neovim, and JetBrains"
       isCorrect: true
       explanation: "Correct! All of the listed IDEs have supported GitHub extensions."
   - content: "What is the difference between GitHub Copilot Business and GitHub Copilot Enterprise?"

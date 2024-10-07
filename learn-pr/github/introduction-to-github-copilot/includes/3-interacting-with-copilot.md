@@ -11,9 +11,9 @@ The suggestions that Copilot offers appear as grayed-out text ahead of your curs
 - To accept a suggestion, select the `Tab` key or the `>` (right arrow) key.
 - To reject a suggestion, keep typing or select the `Esc` key.
 
-Inline suggestions are especially useful when you're working on repetitive tasks or need quick boilerplate code.
+Inline suggestions are especially useful when you're working on repetitive tasks or you need quick boilerplate code.
 
-Example:
+Here's an example:
 
 ```python
 def calculate_average(numbers):
@@ -65,9 +65,9 @@ Inline chat helps you focus on a particular section of your code and get targete
 
 ## Comments to code
 
-Copilot uses natural language processing to convert comments into code. You can describe the functionality that you want in a comment. When you select the Enter key, Copilot generates code based on your description.
+Copilot uses natural language processing to convert comments into code. You can describe the functionality that you want in a comment. When you select the `Enter` key, Copilot generates code based on your description.
 
-Example:
+Here's an example:
 
 ```python
 # Function to reverse a string
@@ -92,7 +92,7 @@ For complex code snippets, Copilot can offer multiple alternatives.
 
 Multiple suggestions help you explore different coding approaches and select the most appropriate one.
 
-## Explain This feature
+## Explanations
 
 Understanding existing code is crucial, especially in large projects. You can use the **Explain This** feature to get explanations for code snippets.
 
@@ -102,7 +102,7 @@ Understanding existing code is crucial, especially in large projects. You can us
 
 This feature is useful for learning purposes and when you're reviewing code that someone else wrote.
 
-## Generate Unit Tests feature
+## Automated test generation
 
 Unit tests are essential for ensuring code quality and reliability. Copilot can save you time and effort by generating unit tests for your functions or classes.
 
@@ -110,7 +110,7 @@ Unit tests are essential for ensuring code quality and reliability. Copilot can 
 1. Use the command palette to select **Copilot: Generate Unit Tests**.
 1. Review the test cases that Copilot suggests for your code.
 
-Example:
+Here's an example:
 
 ```python
 def add(a, b):

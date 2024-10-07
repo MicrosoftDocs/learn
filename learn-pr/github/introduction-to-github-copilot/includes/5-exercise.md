@@ -21,7 +21,7 @@ This exercise walks you through the following steps:
    > [!div class="checklist"]
    > - A quick knowledge check.
    > - A summary of what you learned.
-   > - A badge for completing this module
+   > - A badge for completing this module.
 
 > [!NOTE]
 > You don't need to modify any of the workflow files to complete this exercise. Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results.
