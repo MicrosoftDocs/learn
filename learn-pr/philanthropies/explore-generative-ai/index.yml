@@ -13,9 +13,8 @@ metadata:
   ms.collection: philanthropies-ai-copilot
 title: Explore Generative AI
 summary: Discover the fundamentals of generative AI and how this technology is transforming our approach to creativity and productivity. 
-abstract: >
+abstract: |
   By completing this module, you'll be able to:
-  
   - Distinguish between Natural Language Processing (NLP), Natural Language Generation (NLG), and Large Language Models (LLMs), assessing their roles, applications, and interrelationships with generating human language. 
   - Assess the differences between generative AI and traditional AI models, focusing on their applications, capabilities, and the role of data. 
   - Evaluate how generative AI services like Microsoft Copilot can enhance creativity in various fields. 
