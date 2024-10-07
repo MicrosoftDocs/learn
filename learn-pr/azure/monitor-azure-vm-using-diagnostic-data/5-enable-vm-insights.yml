@@ -4,7 +4,7 @@ title: Collect client performance counters by using VM insights
 metadata:
   title: Collect client performance counters by using VM insights
   description: Enable Azure Monitor VM insights with process and dependency mapping to monitor and map client performance counter metrics.
-  ms.date: 08/02/2024
+  ms.date: 09/26/2024
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: unit

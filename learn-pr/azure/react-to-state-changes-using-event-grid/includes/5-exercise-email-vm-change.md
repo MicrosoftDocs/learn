@@ -1,6 +1,6 @@
 You're ready to perform an action based on your logic app receiving a published event.
 
-In the previous exercise, you completed the initial setup of the logic app. Now, you now need the logic app to send an email notification that contains details whenever any change occurs to any virtual machine in your resource group.
+In the previous exercise, you completed the initial setup of the logic app. Now, you need the logic app to send an email notification that contains details whenever any change occurs to any virtual machine in your resource group.
 
 In this exercise, you'll learn how to set up a condition that enables the logic app to inspect a published event, respond with a logic app action, and send an email.
 
@@ -47,7 +47,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 > [!NOTE]
 > In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Designer** to return to the editor.
 
-##  email notification
+## Email notification
 
 Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com. The configuration steps for email programs may differ, so you may need to adjust accordingly.
 
