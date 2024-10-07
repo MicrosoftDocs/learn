@@ -51,7 +51,7 @@ From a terminal or the command line, create a new project:
         - The directory where the project is created serves as the default project name, namespace, and assembly name (the name of the compiled output).
         - If the output option `-o <directory>` isn't used, then the current directory is used.
 
-1. Open the *MyWebApp* project folder
+1. Open the *MyWebApp* project folder.
 
 ## Examine the structure of the project
 
