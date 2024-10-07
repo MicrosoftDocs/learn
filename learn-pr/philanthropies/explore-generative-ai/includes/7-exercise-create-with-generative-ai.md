@@ -4,7 +4,7 @@ Now it's your turn to use generative AI. Choose the scenarios that fits your cur
 
 Use generative AI to help plan a project you're blocked on, or to provide guidance for your career development based on your goals and current skill levels.
 
-1. **Identify a Blocked Project**: Choose a project you're currently working on or want to complete, that doesn't have a plan yet, or is blocked in some way..
+1. **Identify a Blocked Project**: Choose a project you're currently working on or want to complete, that doesn't have a plan yet, or is blocked in some way.
 2. **Generate an Outline**:
     - Use a generative AI tool to create an outline for your project.
     - Include key milestones, tasks, and deadlines.
