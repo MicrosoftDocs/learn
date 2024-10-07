@@ -42,11 +42,11 @@ You can skip creating this user if you have already created the same user in the
 2.  In the Marketing window, under **Manage**, select **Licenses**.
 3.  Notices that no licenses are currently assigned to this group.
 4.  Open a new tab in your browser.
-5.  Go to the Microsoft 365 admin centert at [http://admin.microsoft.com](https://admin.microsoft.com).
+5.  Go to the Microsoft 365 admin center at [http://admin.microsoft.com](https://admin.microsoft.com).
 6.  Select **Billing** from the menu on the left.
 7.  Select **Licenses**.
 8.  From the list of licenses you have available, select one.
-9.  Next you will select **Groups** from the list near the top of the scrent.<br>
+9.  Next you'll select **Groups** from the list near the top of the screen.<br>
 10. On the Groups page, select + **Assign license**.<br>
 11. Search for and select the **Marketing** group we created earlier.
 12. Select the **Assign** button at the bottom of the dialog.
