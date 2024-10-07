@@ -22,8 +22,8 @@ By the end of this module, you're able to:
 
 ## Prerequisites
 
-- You should have already written your first lines of C# code.
+- You have experience writing your first lines of C# code.
 - You should be able to recognize how to use `Console.WriteLine()` to send text to an output window.
 - You should be able to recognize minor issues in your code and fix them.
 
-If you haven't already written a simple "Hello World" application in C#, review the first module in this learning path, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
+If you don't have experience writing a simple "Hello World" application in C#, review the first module in this learning path, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
