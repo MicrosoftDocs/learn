@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.explore-generative-ai.ai-companion-in-content-creation
+uid: learn.philanthropies.explore-generative-a.ai-companion-content-creation
+
 title: AI companion in content creation
 metadata:
   title: AI companion in content creation
@@ -10,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-ai-companion-in-content-creation.md)]
+  [!include[](includes/5-ai-companion-content-creation.md)]

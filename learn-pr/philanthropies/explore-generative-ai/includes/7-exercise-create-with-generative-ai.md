@@ -9,10 +9,10 @@ Use generative AI to help plan a project you're blocked on, or to provide guidan
     - Use a generative AI tool to create an outline for your project.
     - Include key milestones, tasks, and deadlines.
 3. **Refine the Outline**:
-    - Review the generated outline and make necessary adjustments, by asking the generative AI tool to try agin with the specificity you need.
+    - Review the generated outline and make necessary adjustments, by asking the generative AI tool to try again with the specificity you need.
     - Ensure it aligns with your project goals and constraints.
 
-## Scenario 2: Career Development Guidance
+## Scenario 2: Career development guidance
 
 Use generative AI
 
@@ -25,7 +25,7 @@ Use generative AI
     - Evaluate the generated plan and tailor it to your personal preferences and circumstances.
     - If the plan generated is incomplete, ask the tool to try again, this time with the components or specificity you need.
 
-## Scenario 3: Generating Images
+## Scenario 3: Generating images
 
 You might want to add images to visualize your plan from one of the previous scenarios. Maybe you have a business idea that you just need a fast graphic to add to your test website and sign-up form to validate. 
 
