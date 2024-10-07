@@ -49,7 +49,7 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 1. In the **Create a resource** menu, select **Integration**. Then in the results list, select **Create** under **Logic App**.
 
-1. On the **Select a hosting option** page, select **Multi-tenant** under **Consumption** and choose **Select**.
+1. On the **Select a hosting option** page, select **Multi-tenant** under **Consumption**, and choose **Select**.
 
 1. On the **Basics** tab, enter the following values for each setting. Note, don't select the **Looking for the classic consumption create experience? Click here** link as you won't be able to go back.
 
