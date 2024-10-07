@@ -47,10 +47,10 @@ Here are the key factors to choosing a load balancing option.
 
 This flowchart helps you select the most appropriate load-balancing solution for your application.
 
-:::image type="content" source="../media/load-balancing-decision-tree-3f132096.png" alt-text="flow chart to help select a load-balancing solution for your application":::
+:::image type="content" source="../media/load-balancing-decision-tree-3f132096.png" alt-text="flow chart to help select a load-balancing solution for your application.":::
 
 
-**As every application has its own unique requirements. You should only use this flowchart and the suggested recommendation as a starting point. **
+**As every application has its own unique requirements, you should only use this flowchart and the suggested recommendation as a starting point.**
 
 **If your application consists of multiple workloads, evaluate each workload separately. A complete solution may incorporate two or more load-balancing solutions.**
 

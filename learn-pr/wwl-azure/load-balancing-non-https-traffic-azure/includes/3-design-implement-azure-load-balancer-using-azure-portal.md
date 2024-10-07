@@ -236,8 +236,6 @@ On the **Create load balancer** page, you must supply the following required inf
  -  **Tier** \- Select whether your load balancer is balancing within a region (**Regional**) or across regions (**Global**) - If you select the **Basic** SKU, this setting is greyed out.
  -  **Public IP address** \- Specify whether to create a new public IP address for your public-facing front-end, or use an existing one, and you also specify a name for your public IP address, and whether to use a dynamic or statically assigned IP address. You can optionally also assign an IPv6 address to your load balancer in addition to the default IPv4 one.
 
-:::image type="content" source="../media/create-load-balancer-basics.png" alt-text="Screenshot of the Created load balancer - Basics tab page.":::
-
 
 After you click **Review + Create**, the configuration settings for the new load balancer resource are validated. Then you can click **Create** to start creating it. 
 
@@ -266,12 +264,7 @@ From the Azure portal home page, select **All resources**.
 :::image type="content" source="../media/create-backend-pool-1-2abb10ab.png" alt-text="Screenshot of the Select All resources page.":::
 
 
-Select your load balancer from the list.
-
-:::image type="content" source="../media/create-backend-pool-2-af9160aa.png" alt-text="Screenshot of the Select the load balancer in the All resources list.":::
-
-
-Under the **Settings** section, choose **Backend pools**, and then **Add** to add a pool.
+Select your load balancer from the list. Under the **Settings** section, choose **Backend pools**, and then **Add** to add a pool.
 
 :::image type="content" source="../media/create-backend-pool-3-fa100624.png" alt-text="Screenshot of the Add backend pool page.":::
 
