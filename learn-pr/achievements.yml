@@ -3960,5 +3960,10 @@ achievements:
 - uid: learn.wwl.realize-integrated-analytical-solutions-with-azure-synapse-analytics.trophy
   type: trophy
   title: Realize Integrated Analytical Solutions with Azure Synapse Analytics
-  summary: Learn how Azure Synapse Analytics enables you to perform different types of analytics through its’ components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
+  summary: Learn how Azure Synapse Analytics enables you to perform different types of analytics through its components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
   iconUrl: /learn/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
+- uid: learn.azure.cloud-adoption-framework-organize.badge
+  type: badge
+  title: Use the Cloud Adoption Framework to manage organizational alignment
+  summary: Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises—typically a centralized control model—doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate. The Cloud Adoption Framework provides guidance for this modernization journey. This module is added learning after you complete the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/training/paths/cloud-adoption-framework/) learning path.
+  iconUrl: /training/achievements/cloud-adoption-framework-organize.svg
