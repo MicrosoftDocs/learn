@@ -31,7 +31,7 @@ The *MyWebApp* project folder contents are displayed in the Visual Studio Code *
 ::: zone-end
 ::: zone pivot="shell"
 
-From the terminal or the command line, create a new project:
+From a terminal or the command line, create a new project:
 
 1. Change to the directory (`cd`) that will contain the project.
 1. Create an ASP.NET Core web app in a directory named *MyWebApp* by running the .NET CLI command `dotnet new`:
@@ -55,10 +55,10 @@ From the terminal or the command line, create a new project:
 
 ## Examine the structure of the project
 
+::: zone pivot="vscode"
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
 :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
-
 ::: zone-end
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
