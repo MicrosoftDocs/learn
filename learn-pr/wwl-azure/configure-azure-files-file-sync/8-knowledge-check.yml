@@ -35,9 +35,9 @@ quiz:
     - content: "Soft delete can be enabled on either new or existing file shares."
       isCorrect: true
       explanation: "Correct. Soft delete can be enabled on either new or existing file shares."
-    - content: "Soft delete provides file protection for SMB and NFS file shares."
+    - content: "Soft delete provides protection only for NFS file shares."
       isCorrect: false
-      explanation: "Incorrect. Soft delete is only for SMB file shares."
+      explanation: "Incorrect. Soft delete can be used for SMB and NFS file shares."
   - content: "Which statement correctly describes file snapshots?"
     choices:
     - content: "A share snapshot is a point-in-time, read-only copy of your data."
