@@ -4,7 +4,7 @@ Let's see how Tailspin measures up.
 
 Mara, who's new to the team, is going to create a VSM to help her understand the existing process. With a VSM, she'll get a sense of where the team fits into the DevOps maturity model. As it turns out, more mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-Mara knows she doesn't understand everything yet, so she's going to create a quick VSM on the whiteboard in the meeting room. There'll be some gaps and unanswered questions. That's okay, it's a start. When she's done as much as she can, she'll share it with the team. The VSM gives everyone a common starting point for identifying the first steps toward improving how Tailspin develops and releases its websites.
+Mara knows she doesn't understand everything yet, so she's going to create a quick VSM on the whiteboard in the meeting room. There will be some gaps and unanswered questions. That's okay, it's a start. When she's done as much as she can, she'll share it with the team. The VSM gives everyone a common starting point for identifying the first steps toward improving how Tailspin develops and releases its websites.
 
 Let's take a look at her map.
 
@@ -14,7 +14,7 @@ Mara gathers the team in the meeting room to present her VSM.
 
 :::image type="content" source="../media/4-vsm-whiteboard2.png" alt-text="Photo of a whiteboard showing the value stream map. The image highlights six important phases in the development process.":::
 
-**Mara:** A VSM helps us measure where a process has value to the customer and where it's eating up time without producing any value. Our map begins on the upper-left with the functional specification for the software. Let's follow just one feature to see how it moves through our current release cycle.
+**Mara:** A VSM helps us measure where a process has value to the customer and where it's eating up time without producing any value. Our map begins with the functional specification for the software. Let's follow just one feature to see how it moves through our current release cycle.
 
 *Some people roll their eyes, but Mara presses on.*
 
@@ -64,7 +64,7 @@ As you can see, we have a lot of room for improvement. And taking 22 days to dev
 
 ## Where do we go from here?
 
-**Mara:** It helps to see where we are now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can improve our efficiency by adopting a DevOps approach. For one thing, we can automate many of these steps, which definitely cuts down on the time.
+**Mara:** It helps to see where we're at now so that we can pinpoint the areas where there's waste. We want to minimize the time we spend that has no value to the customer. I believe we can improve our efficiency by adopting a DevOps approach. For one thing, we can automate many of these steps, which definitely cuts down on the time.
 
 I'm not suggesting we drop our current processes. I think we can work toward a more efficient process in small increments without disrupting what we currently have in place.
 
