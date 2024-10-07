@@ -4,7 +4,7 @@ title: Explore load balancing
 metadata:
   title: Explore load balancing
   description: "Explore load balancing"
-  ms.date: 08/20/2024
+  ms.date: 10/07/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An engineer has a secure web application that experiences high traffic, and they want to use a load balancer to distribute the workload. Which load balancers will support this type of traffic?"
+  - content: "An engineer has a secure web application that experiences high traffic, and they want to use a load balancer to distribute the workload. Which load balancers support this type of traffic?"
     choices:
     - content: "Azure Application Gateway and Azure Front Door."
       isCorrect: true
