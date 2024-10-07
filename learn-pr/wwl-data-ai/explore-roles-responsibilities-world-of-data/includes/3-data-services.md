@@ -19,7 +19,7 @@ Data engineers may use Azure SQL database systems as sources for data pipelines 
 
 Data analysts may query Azure SQL databases directly to create reports, though in large organizations the data is generally combined with data from other sources in an analytical data store to support enterprise analytics.
 
-## Azure Database for open-source relational databases
+## Open-source databases in Azure
 
 ![Screen of an Azure Database for MariaDB, MySQL, and PostreSQL logos.](../media/azure-database.png) Azure includes managed services for popular open-source relational database systems, including:
 
