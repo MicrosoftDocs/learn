@@ -55,6 +55,7 @@ From a terminal or the command line, create a new project:
 
 ## Examine the structure of the project
 
+::: zone-end
 ::: zone pivot="vscode"
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
