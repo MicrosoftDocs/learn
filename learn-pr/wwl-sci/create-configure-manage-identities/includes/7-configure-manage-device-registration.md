@@ -25,7 +25,7 @@ The goal of Microsoft Entra registered devices is to provide your users with sup
 :::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c-c81224e6.png" alt-text="Diagram of Microsoft Entra registered devices.  You have a laptop and a cell phone that are directly registered with your cloud directory.":::
 
 
-Microsoft Entra registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have anMicrosoft Entra account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Microsoft Entra account and Conditional Access policies applied to the device identity.
+Microsoft Entra registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have an Microsoft Entra account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Microsoft Entra account and Conditional Access policies applied to the device identity.
 
 Administrators can secure and further control these Microsoft Entra registered devices using Mobile Device Management (MDM) tools like Microsoft Intune. MDM provides a means to enforce organization-required configurations like requiring storage to be encrypted, password complexity, and security software kept updated.
 
@@ -110,7 +110,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 
 Use Microsoft Entra hybrid joined devices if:
 
- -  You have WIN32 apps deployed to these devices that rely on Active Directory machine authentication.
+ -  You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
  -  You want to continue to use Group Policy to manage device configuration.
  -  You want to continue to use existing imaging solutions to deploy and configure devices.
  -  You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.
