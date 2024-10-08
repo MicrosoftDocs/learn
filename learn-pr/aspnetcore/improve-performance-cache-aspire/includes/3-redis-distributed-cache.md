@@ -45,7 +45,7 @@ dotnet add package Aspire.StackExchange.Redis.DistributedCache --prerelease
 
 Again, you can alternatively choose to use the NuGet package manager to install the integration:
 
-:::image type="content" source="../media/install-caching-integration.png" lightbox="../media/install-caching-integration.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching integrations.":::
+:::image type="content" source="../media/install-caching-component.png" lightbox="../media/install-caching-component.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching integrations.":::
 
 ## Using a distributed cache
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-dotnet-aspire.learn-about-integrations
+uid: learn.introduction-dotnet-aspire.learn-about-components
 title: Learn about .NET Aspire integrations
 metadata:
   title: Learn about .NET Aspire integrations
@@ -11,4 +11,4 @@ metadata:
   ms.custom: devx-track-dotnet
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-learn-about-integrations.md)]
+  [!include[](includes/3-learn-about-components.md)]

@@ -37,7 +37,7 @@ subjects:
 units:
 - learn.introduction-dotnet-aspire.introduction
 - learn.introduction-dotnet-aspire.what
-- learn.introduction-dotnet-aspire.learn-about-integrations
+- learn.introduction-dotnet-aspire.learn-about-components
 - learn.introduction-dotnet-aspire.learn-about-tools
 - learn.introduction-dotnet-aspire.exercise-use-eshop
 - learn.introduction-dotnet-aspire.knowledge-check

@@ -225,7 +225,7 @@ Now that the prerequisites are installed, let's create a new app.
 
 The dashboard opens in your default web browser.
 
-:::image type="content" source="../media-starter-app-dashboard.png" alt-text="A screenshot of the Aspire dashboard showing the Blazor App and API services." lightbox="../media-starter-app-dashboard.png":::
+:::image type="content" source="../media/aspire-starter-app-dashboard.png" alt-text="A screenshot of the Aspire dashboard showing the Blazor App and API services." lightbox="../media-starter-app-dashboard.png":::
 
 Select the **webfrontend** endpoint URL. The port is randomly assigned so your dashboard might not match.
 

@@ -37,7 +37,7 @@ The first time you add orchestration to your solution a dialog asks for the proj
 
 If you're creating a new project, during the new project workflow, Visual Studio asks if you want to enlist in .NET Aspire orchestration.
 
-:::image type="content" source="../media-enlist-orchestration.png" alt-text="A screenshot of the new project workflow showing the Enlist in Aspire orchestration option highlighted.":::
+:::image type="content" source="../media/aspire-enlist-orchestration.png" alt-text="A screenshot of the new project workflow showing the Enlist in Aspire orchestration option highlighted.":::
 
 ## Changes Aspire makes to an existing solution
 
