@@ -1,6 +1,6 @@
 Before you begin working on a new service for your company's latest project, you want to check your system has all the prerequisites for .NET Aspire. The best way to check is create a new .NET Aspire project with a starter template.
 
-In the exercise you'll install all the prerequisites, and then you'll create a new .NET Aspire Starter app. Then you'll see how to add a caching component using Redis to the app. Finally, you'll test the application and quickly explore the Aspire Dashboard.
+In the exercise you'll install all the prerequisites, and then you'll create a new .NET Aspire Starter app. Then you'll see how to add a caching integration using Redis to the app. Finally, you'll test the application and quickly explore the Aspire Dashboard.
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -56,7 +56,7 @@ Install the .NET Aspire workload using Visual Studio:
 
 1. On the **Installation details** panel, select **.NET Aspire SDK (Preview)**.
 
-1. Select **Modify** to install the .NET Aspire component.
+1. Select **Modify** to install the .NET Aspire integration.
 
 1. Check that the latest version of .NET Aspire is installed, in a new terminal run this command:
 
@@ -169,7 +169,7 @@ Now that the prerequisites are installed, let's create a new app.
 
     ```console
     The template ".NET Aspire Starter Application" was created successfully.
-    This template contains technologies from parties other than Microsoft, see https://aka.ms/aspire/1.0-third-party-notices for details.
+    This template contains technologies from parties other than Microsoft, see https://aka.ms/1.0-third-party-notices for details.
     
     Processing post-creation actions...
     Restoring C:\Users\...\source\repos\AspireTestApp\AspireTestApp.sln:
@@ -202,7 +202,7 @@ Now that the prerequisites are installed, let's create a new app.
 1. Run the app:
 
     ```dotnetcli
-    dotnet run --project AspireTestApp/AspireTestApp.AppHost
+    dotnet run --project AspireTestAppTestApp.AppHost
     ```
 
     You should see this output:
@@ -225,7 +225,7 @@ Now that the prerequisites are installed, let's create a new app.
 
 The dashboard opens in your default web browser.
 
-:::image type="content" source="../media/aspire-starter-app-dashboard.png" alt-text="A screenshot of the Aspire dashboard showing the Blazor App and API services." lightbox="../media/aspire-starter-app-dashboard.png":::
+:::image type="content" source="../media-starter-app-dashboard.png" alt-text="A screenshot of the Aspire dashboard showing the Blazor App and API services." lightbox="../media-starter-app-dashboard.png":::
 
 Select the **webfrontend** endpoint URL. The port is randomly assigned so your dashboard might not match.
 
@@ -235,9 +235,9 @@ The Blazor App has a simple counter page and a Weather page that calls the backe
 
 Close the browser tabs for the Blazor App and the .NET Aspire dashboard. In Visual Studio, stop debugging.
 
-## Add a caching component to a .NET Aspire project
+## Add a caching integration to a .NET Aspire project
 
-Now let's add a Redis caching component to the .NET Aspire project. We'll start with the app host:
+Now let's add a Redis caching integration to the .NET Aspire project. We'll start with the app host:
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -252,7 +252,7 @@ Now let's add a Redis caching component to the .NET Aspire project. We'll start 
 1. Navigate into the web project folder:
 
     ```console
-    cd AspireTestApp/AspireTestApp.AppHost
+    cd AspireTestAppTestApp.AppHost
     ```
 
 1. Add the Redis package to the project:
@@ -306,7 +306,7 @@ Now let's add a Redis caching component to the .NET Aspire project. We'll start 
 1. Navigate into the web project folder:
 
     ```console
-    cd AspireTestApp/AspireTestApp.Web
+    cd AspireTestAppTestApp.Web
     ```
 
 1. Add the Redis package to the project:
@@ -317,7 +317,7 @@ Now let's add a Redis caching component to the .NET Aspire project. We'll start 
 
 ---
 
-Now use Visual Studio to add code to use the Redis component.
+Now use Visual Studio to add code to use the Redis integration.
 
 1. If you need to, open the **AspireTestApp** solution in Visual Studio.
 1. In **Solution Explorer**, under the **AspireTestApp.Web** project, select *Program.cs*.
@@ -333,7 +333,7 @@ Now use Visual Studio to add code to use the Redis component.
     - Configures ASP.NET Core output caching to use a Redis instance with the specified connection name.
     - Automatically enables corresponding health checks, logging, and telemetry.
 
-1. Replace the contents of **AspireTestApp.Web/Components/Pages/Home.razor** with the following code:
+1. Replace the contents of **AspireTestApp.Web/integrations/Pages/Home.razor** with the following code:
 
     ```razor
     @page "/"
@@ -348,7 +348,7 @@ Now use Visual Studio to add code to use the Redis component.
 
     In the preceding code, the `OutputCache` attribute specifies a 10-second duration. After the page is cached, every subsequent request within the 10-second window receives the cached output.
 
-You can see that Aspire is designed to make it easy to add new components to your application. You add a new component to your application by adding a NuGet package, and then add a few lines of code to the *Program.cs* file in the **Web** and **AppHost** projects. Aspire then automatically configures the Redis container and the output caching for you.
+You can see that Aspire is designed to make it easy to add new integrations to your application. You add a new integration to your application by adding a NuGet package, and then add a few lines of code to the *Program.cs* file in the **Web** and **AppHost** projects. Aspire then automatically configures the Redis container and the output caching for you.
 
 ## Test the application
 
@@ -368,4 +368,4 @@ Now let's run the application to see the caching in action. In Visual Studio:
 
 1. Open **Docker Desktop**, and select **Containers/Apps**. You should see the **redis:latest** is no longer running.
 
-You've seen how easy it is to add a new caching component to an application using .NET Aspire. You added a NuGet package, and then added a few lines of code. .NET Aspire automatically configured the Redis container and the output caching for you.
+You've seen how easy it is to add a new caching integration to an application using .NET Aspire. You added a NuGet package, and then added a few lines of code. .NET Aspire automatically configured the Redis container and the output caching for you.

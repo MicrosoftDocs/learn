@@ -14,17 +14,17 @@ To use distributed caching, changes are required in both the app host project an
 
 ### Configure the app host
 
-In your solution's app host project, start by installing the distributed caching hosting component:
+In your solution's app host project, start by installing the distributed caching hosting integration:
 
 ```dotnetcli 
 dotnet add package Aspire.Hosting.Redis --prerelease
 ```
 
-Alternatively, you can use the **Add > .NET Aspire Component** shortcut in Visual Studio to install the component from the NuGet package manager:
+Alternatively, you can use the **Add > .NET Aspire integration** shortcut in Visual Studio to install the integration from the NuGet package manager:
 
-:::image type="content" source="../media/app-host-redis-install.png" lightbox="../media/app-host-redis-install.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching hosting component.":::
+:::image type="content" source="../media/app-host-redis-install.png" lightbox="../media/app-host-redis-install.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching hosting integration.":::
 
-Once the hosting component is installed, code in the app host's _Program.cs_ file registers the cache and passes it to projects that use the cache:
+Once the hosting integration is installed, code in the app host's _Program.cs_ file registers the cache and passes it to projects that use the cache:
 
 ```csharp
 // Register the cache
@@ -37,15 +37,15 @@ builder.AddProject<Projects.ConsumingProject>()
 
 ### Configure the consuming projects
 
-To install the .NET Aspire Distributed Cache component in a microservice, use a command like this one in your .NET Aspire projects:
+To install the .NET Aspire Distributed Cache integration in a microservice, use a command like this one in your .NET Aspire projects:
 
 ```dotnetcli
 dotnet add package Aspire.StackExchange.Redis.DistributedCache --prerelease
 ```
 
-Again, you can alternatively choose to use the NuGet package manager to install the component:
+Again, you can alternatively choose to use the NuGet package manager to install the integration:
 
-:::image type="content" source="../media/install-caching-component.png" lightbox="../media/install-caching-component.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching components.":::
+:::image type="content" source="../media/install-caching-integration.png" lightbox="../media/install-caching-integration.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching integrations.":::
 
 ## Using a distributed cache
 
@@ -93,7 +93,7 @@ Use a `ConnectionStrings` section in your configuration file, for example in _ap
 }
 ```
 
-You can also use _appsettings.json_ to configure the behavior of the distributed caching component. For example, this code configures the connection to time out after five seconds and retry three times:
+You can also use _appsettings.json_ to configure the behavior of the distributed caching integration. For example, this code configures the connection to time out after five seconds and retry three times:
 
 ```json
 {
@@ -121,5 +121,5 @@ builder.AddRedisDistributedCache(
 
 ## Learn more
 
-- [.NET Aspire StackExchange Redis distributed caching component](/dotnet/aspire/caching/stackexchange-redis-distributed-caching-component)
+- [.NET Aspire StackExchange Redis distributed caching integration](/dotnet/aspire/caching/stackexchange-redis-distributed-caching-integration)
 - [StackExchange Redis Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)

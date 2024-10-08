@@ -43,7 +43,7 @@ Cloud-native apps can realize many advantages for your business. For example:
 
 A cloud-native application consisting of multiple microservices and with many features can become complex and present challenges that don't arise with monolithic apps. For example:
 
-- **App definition.** Unless documented carefully, it can be difficult for developers to understand which components make up the complete cloud-native app.
+- **App definition.** Unless documented carefully, it can be difficult for developers to understand which integrations make up the complete cloud-native app.
 - **Communication.** Each microservice might need to exchange messages or data with other microservices in order to formulate a response to a user request. While you must enable such communication, you must do so in a way that doesn't tightly couple one microservice to another. You also need communication to remain reliable at times of high demand or during service failures.
 - **Resiliency.** No hosting service can be 100% available. You must ensure that, in rare occasions when a microservice is unavailable, the app handles failures robustly and keeps requests until the service returns.
 - **Distributed data.** Each microservice implements its own data storage layer and may not use the same database server as the others. You must consider how you'll query for data from multiple microservices and how will you implement transactions.
@@ -61,11 +61,11 @@ Recently, cloud-native application design has been gaining in popularity but cha
 Microservices and their loosely coupled nature increase the flexibility of your deployed app but can make configuration harder. The list of services that make up the app can become unclear and the endpoint where a microservice is available can be difficult to identify. .NET Aspire provides orchestration functionality so that:
 
 - You can specify clearly for all teams the .NET projects, containers, executables, and cloud resources that make up the application.
-- Microservices can automatically discover endpoints for all the application's components. .NET Aspire performs this service discovery by managing connection strings and injecting them into microservices where needed.
+- Microservices can automatically discover endpoints for all the application's integrations. .NET Aspire performs this service discovery by managing connection strings and injecting them into microservices where needed.
 
 When you create a .NET Aspire solution, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
 
-### Components
+### integrations
 
 Microservices commonly have functional requirements for complex backing services that underpin their features. For example:
 
@@ -73,16 +73,16 @@ Microservices commonly have functional requirements for complex backing services
 - **Caching.** To maximize performance, microservices can store partial or complete responses in a cache so that subsequent similar requests can be satisfied more quickly.
 - **Messaging.** Loosely coupled microservices must communicate with each other and you must ensure that this communication is reliable even when traffic is high or network conditions are challenging. A service that queues and distributes messages from senders to recipients is a common requirement.
 
-In .NET Aspire, it's easy to implement these backing services in each microservice because the stack includes .NET Aspire components. Each component is a NuGet package that you can add to your solution and implements a standard interface to a backing service. This standard interface ensures that your microservice connects to its backing services consistently and seamlessly.
+In .NET Aspire, it's easy to implement these backing services in each microservice because the stack includes .NET Aspire integrations. Each integration is a NuGet package that you can add to your solution and implements a standard interface to a backing service. This standard interface ensures that your microservice connects to its backing services consistently and seamlessly.
 
-The out-of-the-box .NET Aspire components include:
+The out-of-the-box .NET Aspire integrations include:
 
-- Data storage components such as those for PostgreSQL, SQL Database, Azure Cosmos DB, and MongoDB.
-- Caching components such as the component for Redis.
-- Messaging components such as those for RabbitMQ and Azure Service Bus.
+- Data storage integrations such as those for PostgreSQL, SQL Database, Azure Cosmos DB, and MongoDB.
+- Caching integrations such as the integration for Redis.
+- Messaging integrations such as those for RabbitMQ and Azure Service Bus.
 
 > [!IMPORTANT]
-> .NET Aspire includes many components that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire projects and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
+> .NET Aspire includes many integrations that work with Azure services, like Azure Storage and Azure Service Bus but Azure is not required for .NET Aspire projects and they work equally well with backing services outside Azure, like RabbitMQ and MongoDB.
 
 ### Tooling
 
@@ -90,7 +90,7 @@ The out-of-the-box .NET Aspire components include:
 
 - New project templates enable you to create .NET Aspire solutions with a few steps in a wizard.
 - The .NET Aspire dashboard is a web interface that appears whenever you start the solution from Visual Studio. This dashboard displays all the microservices and backing services for the app, and you can call them for testing. It also shows performance and monitoring tools.
-- Extra menus items appear, which you can use to add a .NET Aspire component, register a project for .NET Aspire orchestrator support, or complete other tasks.
+- Extra menus items appear, which you can use to add a .NET Aspire integration, register a project for .NET Aspire orchestrator support, or complete other tasks.
 
 > [!NOTE] 
 > You'll learn more about the .NET Aspire tools later in this module.

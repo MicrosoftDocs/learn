@@ -1,14 +1,14 @@
 .NET Aspire can be broken down into solutions for three issues that face modern cloud-native apps. These are:
 
 1. Managing the complexity of orchestration between microservices.
-1. Simplifying how your microservices use components through NuGet packages.
+1. Simplifying how your microservices use integrations through NuGet packages.
 1. Supporting developer velocity through tooling and templates.
 
 In this unit, see how using .NET Aspire orchestration brings benefits to your existing cloud-native apps. Then see how to enroll your app in .NET Aspire orchestration and examine the changes made to your solution.
 
 ## Benefits of .NET Aspire orchestration
 
-Orchestration is the coordination and management of the various services within a cloud-native app. .NET Aspire provides abstractions for managing your solution's service discovery, environment variables, and container configurations. These abstractions also provide consistent setup patterns across apps with many components and services.
+Orchestration is the coordination and management of the various services within a cloud-native app. .NET Aspire provides abstractions for managing your solution's service discovery, environment variables, and container configurations. These abstractions also provide consistent setup patterns across apps with many integrations and services.
 
 :::image type="content" source="../media/app-host-resource-diagram.png" alt-text="A diagram showing the relationship between the .NET Aspire AppHost project and the other services in an app." border="false":::
 
@@ -37,7 +37,7 @@ The first time you add orchestration to your solution a dialog asks for the proj
 
 If you're creating a new project, during the new project workflow, Visual Studio asks if you want to enlist in .NET Aspire orchestration.
 
-:::image type="content" source="../media/aspire-enlist-orchestration.png" alt-text="A screenshot of the new project workflow showing the Enlist in Aspire orchestration option highlighted.":::
+:::image type="content" source="../media-enlist-orchestration.png" alt-text="A screenshot of the new project workflow showing the Enlist in Aspire orchestration option highlighted.":::
 
 ## Changes Aspire makes to an existing solution
 

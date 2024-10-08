@@ -117,7 +117,7 @@ Let's use `git` to obtain a sample app built with .NET Aspire. The app doesn't y
 
 1. Start Visual Studio and then select **Open a project or solution**.
 1. Browse to the folder where you cloned the eShop, open the _start_ folder and select the _eShop.rediscache.sln_ file, and then select **Open**.
-1. In **Solution Explorer**, browse to _WebApp/Components/Pages_ and then double-click _Catalog.razor_.
+1. In **Solution Explorer**, browse to _WebApp/integrations/Pages_ and then double-click _Catalog.razor_.
 1. Locate the following line of code:
 
     ```razor
@@ -152,7 +152,7 @@ Let's use `git` to obtain a sample app built with .NET Aspire. The app doesn't y
 
 ## Add a caching backing service
 
-Now that you've seen how the homepage performs without caching, let's add output caching to see if it improves responsiveness. Start by adding the output caching component to the **AppHost** project:
+Now that you've seen how the homepage performs without caching, let's add output caching to see if it improves responsiveness. Start by adding the output caching integration to the **AppHost** project:
 
 1. In Visual Studio, in **Solution Explorer**, right-click the **eShop.AppHost** project, select **Add**, and then select **.NET Aspire package**.
 1. In the search textbox, at the end of the existing text, type **Redis**.
@@ -250,7 +250,7 @@ Now, let's use the Redis cache in the WebApp project to cache the homepage outpu
     app.UseOutputCache();
     ```
 
-1. In **Solution Explorer**, expand **WebApp > Components > Pages** and then double-click _Catalog.razor_.
+1. In **Solution Explorer**, expand **WebApp > integrations > Pages** and then double-click _Catalog.razor_.
 1. Locate the following line of code:
 
     ```razor
