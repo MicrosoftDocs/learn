@@ -63,7 +63,7 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/explain:** Provides explanations for selected code. This is particularly useful when you need to understand what a particular piece of code does. For example, `/explain the #file:controller.js` will give you a detailed explanation of that file.
 
-  :::image type="content" source="../media/explani-slash-commands.png" alt-text="Screenshot of /doc slash commands.":::
+  :::image type="content" source="../media/explani-slash-commands.png" alt-text="Screenshot of /explani slash commands.":::
 
 - **/fix:** Proposes fixes for problems in the selected code. If you're facing issues, you can highlight the problematic section and use `/fix` to receive suggestions for resolving the issue.
 
