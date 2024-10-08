@@ -65,7 +65,7 @@ Microservices and their loosely coupled nature increase the flexibility of your 
 
 When you create a .NET Aspire solution, you'll see a new project in the solution called **\<SolutionName\>.AppHost**. This project implements orchestration for your app and you should ensure it's the start-up project for the solution.
 
-### integrations
+### Integrations
 
 Microservices commonly have functional requirements for complex backing services that underpin their features. For example:
 

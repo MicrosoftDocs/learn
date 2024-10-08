@@ -11,4 +11,4 @@ Now that you've completed this module, you can:
 - [.NET Aspire documentation](/dotnet/aspire/)
 - [.NET Aspire code samples](/samples/browse/?products=dotnet-aspire)
 - [.NET Aspire source code](https://github.com/dotnet/aspire/tree/main)
-- [.NET Aspire integrations](https://github.com/dotnet/aspire/tree/main/src/integrations)
+- [.NET Aspire integrations](https://github.com/dotnet/aspire/tree/main/src/Components)

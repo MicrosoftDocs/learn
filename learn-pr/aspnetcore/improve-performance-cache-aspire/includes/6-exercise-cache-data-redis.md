@@ -117,7 +117,7 @@ Let's use `git` to obtain a sample app built with .NET Aspire. The app doesn't y
 
 1. Start Visual Studio and then select **Open a project or solution**.
 1. Browse to the folder where you cloned the eShop, open the _start_ folder and select the _eShop.rediscache.sln_ file, and then select **Open**.
-1. In **Solution Explorer**, browse to _WebApp/integrations/Pages_ and then double-click _Catalog.razor_.
+1. In **Solution Explorer**, browse to _WebApp/Integrations/Pages_ and then double-click _Catalog.razor_.
 1. Locate the following line of code:
 
     ```razor
@@ -250,7 +250,7 @@ Now, let's use the Redis cache in the WebApp project to cache the homepage outpu
     app.UseOutputCache();
     ```
 
-1. In **Solution Explorer**, expand **WebApp > integrations > Pages** and then double-click _Catalog.razor_.
+1. In **Solution Explorer**, expand **WebApp > Integrations > Pages** and then double-click _Catalog.razor_.
 1. Locate the following line of code:
 
     ```razor

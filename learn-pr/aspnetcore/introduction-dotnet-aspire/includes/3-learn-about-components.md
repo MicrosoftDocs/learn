@@ -95,4 +95,4 @@ In a cloud-native application, data security is often a business-critical topic.
 
 ## Learn more
 
-- [.NET Aspire integrations](/dotnet/aspire/get-started/aspire-overview#net-aspire-integrations)
+- [.NET Aspire Integrations](/dotnet/aspire/get-started/aspire-overview#net-aspire-integrations)

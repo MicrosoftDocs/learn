@@ -333,7 +333,7 @@ Now use Visual Studio to add code to use the Redis integration.
     - Configures ASP.NET Core output caching to use a Redis instance with the specified connection name.
     - Automatically enables corresponding health checks, logging, and telemetry.
 
-1. Replace the contents of **AspireTestApp.Web/integrations/Pages/Home.razor** with the following code:
+1. Replace the contents of **AspireTestApp.Web/Integrations/Pages/Home.razor** with the following code:
 
     ```razor
     @page "/"
