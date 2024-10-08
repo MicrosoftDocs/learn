@@ -3,7 +3,7 @@ uid: learn.aspnetcore-middleware.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is part of the "Publish an ASP.NET Core app" module.
+  description: Knowledge check for ASP.NET Core middleware.
   ms.date: 10/02/2024
   author: CamSoper
   ms.author: casoper

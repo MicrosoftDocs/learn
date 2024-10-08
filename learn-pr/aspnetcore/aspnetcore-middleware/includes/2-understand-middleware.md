@@ -22,7 +22,7 @@ app.Run(async context =>
 app.Run();
 ```
 
-This is the simplest possible ASP.NET Core app. In the preceding code:
+In the preceding code:
 
 - `WebApplication.CreateBuilder(args)` creates a new `WebApplicationBuilder` object.
 - `builder.Build()` creates a new `WebApplication` object.

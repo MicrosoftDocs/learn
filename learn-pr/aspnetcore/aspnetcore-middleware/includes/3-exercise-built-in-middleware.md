@@ -2,7 +2,7 @@ ASP.NET Core includes a set of built-in middleware components that handle common
 
 Your team lead has asked you to create a simple website for your company. The website should display a welcome message on the main page, and display a brief history of the company on a separate `/about` page. A previous version of the app had the company history at the `/history` URL, so you'll also need to redirect requests from `/history` to `/about` to maintain compatibility with existing links.
 
-You'll use the built-in `MapGet` middleware and `UrlRewriter` middleware to accomplish these tasks.
+You'll use the built-in `MapGet` method and `UrlRewriter` middleware to accomplish these tasks.
 
 ## Create an ASP.NET Core app
 
@@ -10,7 +10,7 @@ You'll need an ASP.NET Core app to play the role of your team's app. Let's creat
 
 1. Launch Visual Studio Code.
 1. Press **Ctrl+Shift+P** to open the command palette.
-1. Search for and select **.NET New Project**.
+1. Search for and select **.NET: New Project...**.
 1. Search for and select **ASP.NET Core Empty**.
 
     :::image type="content" source="../media/aspnetcore-empty.png" alt-text="A screenshot of the command palette with ASP.NET Core Empty selected."  lightbox="../media/aspnetcore-empty.png":::
@@ -42,7 +42,7 @@ Now that you have a working app, let's add a welcome message to the main page.
     app.MapGet("/", () => "Welcome to Contoso!");
     ```
 
-    `app.MapGet()` is a built-in middleware component that maps an HTTP GET request to a specified path. This is a feature of ASP.NET Core called **endpoint routing**. This code adds a branch to the pipeline. If the request path is `/`, the middleware component writes "Welcome to Contoso!" to the response and completes the request. Otherwise, the request is passed to the next middleware component in the pipeline.
+    `app.MapGet()` maps an HTTP GET request to a specified path. This is a feature of ASP.NET Core called **endpoint routing**. This code adds a branch to the pipeline. If the request path is `/`, the endpoint routing middleware routes the request to this endpoint, which then writes "Welcome to Contoso!" to the response.
 
 1. On the next line, add the following code:
 
@@ -50,7 +50,7 @@ Now that you have a working app, let's add a welcome message to the main page.
     app.MapGet("/about", () => "Contoso was founded in 2000.");
     ```
     
-    This code adds another branch to the pipeline. If the request path is `/about`, the middleware component writes "Our company was founded in 2000." to the response and completes the request.
+    This code adds another endpoint. If the request path is `/about`, the endpoint writes "Our company was founded in 2000." to the response.
 
 1. **Before the first `app.MapGet()`**, add the following code:
 
@@ -60,8 +60,6 @@ Now that you have a working app, let's add a welcome message to the main page.
 
     This code adds a URL rewriter middleware component that redirects requests from `/history` to `/about`. The `AddRedirect()` method takes two parameters: a regular expression pattern to match the request path, and the replacement path to redirect to.
 
-    > [!IMPORTANT]
-    > The `UrlRewriter` middleware component must be added before any middleware components that consume the URL. Accordingly, it should be added **before** the `app.MapGet()` middleware components.
 
 1. Add the following directive to the top of the file:
 
