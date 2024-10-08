@@ -105,9 +105,9 @@ You can also cancel a workflow run that's in progress in the GitHub UI from the 
 
 ## Use an organization's templated workflow
 
-If you have a workflow that multiple teams use within an organization you don't need to re-create the same workflow for each repository. Instead, you can promote consistency across your organization by using a workflow template that's defined in the organization's `.github` repository. Any member within the organization can use an organization template workflow, and any repository within that organization has access to those template workflows.
+If you have a workflow that multiple teams use within an organization, you don't need to re-create the same workflow for each repository. Instead, you can promote consistency across your organization by using a workflow template that's defined in the organization's `.github` repository. Any member within the organization can use an organization template workflow, and any repository within that organization has access to those template workflows.
 
-You can find these workflows by navigating to the **Actions** tab of a repository within the organization, selecting **New workflow**, and then finding the organization's workflow template section titled "Workflows created by *organization name*". For example, the organization called Mona has a template workflow as shown below.
+You can find these workflows by navigating to the **Actions** tab of a repository within the organization, selecting **New workflow**, and then finding the organization's workflow template section titled "Workflows created by *organization name*". For example, the organization called Mona has a template workflow as shown here.
 
 :::image type="content" source="../media/mona-workflow.png" alt-text="Screenshot of a template organization workflow called greet and triage by Mona.":::
 

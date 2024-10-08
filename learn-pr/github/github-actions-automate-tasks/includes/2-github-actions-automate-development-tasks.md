@@ -48,7 +48,7 @@ However, beyond those GitHub Actions featured on the Actions tab, you can:
 Many GitHub Actions are open source and available for anyone who wants to use them. However, just like with any open-source software, you need to carefully check them before using them in your project. Similar to recommended community standards with open-source software such as including a README, code of conduct, contributing file, and issue templates, you can follow these recommendations when using GitHub Actions:
 
 - Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
-- Check if the action is in the GitHub Marketplace. This is a good check, even if an action does not have to be on the GitHub Marketplace to be valid.
+- Check if the action is in the GitHub Marketplace. This is a good check, even if an action doesn't have to be on the GitHub Marketplace to be valid.
 - Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
 - Include the version of the action you're using by specifying a Git ref, SHA, or tag.
 
@@ -142,7 +142,7 @@ on:
   # Also trigger on page_build, as well as release created events
   page_build:
   release:
-    types: # This configuration does not affect the page_build event above
+    types: # This configuration doesn't affect the page_build event above
       - created
 ```
 
@@ -160,9 +160,9 @@ For more information on workflow syntax, see [Workflow syntax for GitHub Actions
 
 We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block, which told the workflow that the job will run using the GitHub-hosted runner that's running in the `ubuntu-latest` environment.
 
-When it comes to runners, there are two options from which to choose: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment that's specified by the GitHub-hosted runner type you define, `runs-on: {operating system-version}`. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following: `runs-on: [self-hosted, linux, ARM32]`.
+When it comes to runners, there are two options from which to choose: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment. The GitHub-hosted runner type you define, `runs-on: {operating system-version}` then specifices that environment. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following: `runs-on: [self-hosted, linux, ARM32]`.
 
-Each type of runner has its benefits, but GitHub-hosted runners offer a quicker and simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
+Each type of runner has its benefits, but GitHub-hosted runners offer a quicker and simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory. This will help to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
 ### GitHub Actions may have usage limits
 
