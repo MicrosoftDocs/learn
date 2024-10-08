@@ -14,7 +14,7 @@ Organizations should avoid the following configurations:
 
 ## Conditional Access sign-in interrupt
 
-The first way is to review the error message that appears. For problems signing in when using a web browser, the error page itself has detailed information. This information alone describes what the problem is and suggest a solution.
+The first way is to review the error message that appears. For problems signing in when using a web browser, the error page itself has detailed information. This information alone describes what the problem is and suggests a solution.
 
 :::image type="content" source="../media/image-1-1cf4c89a-a981600e.png" alt-text="Screenshot of the Sign-in error - compliant device required. With a button to cancel or get more information.":::
 
@@ -59,7 +59,9 @@ To find out which Conditional Access policy or policies applied and why, do the 
 Selecting the ellipsis on the right side of the policy in a sign-in event brings up policy details. This gives administrators additional information about why a policy was successfully applied or not.
 
 :::image type="content" source="../media/image-5-413a87aa-708def17.png" alt-text="Screenshot of the Sign-in event Conditional Access tab. Waiting for user input.":::
- :::image type="content" source="../media/policy-details-41ee5be2-d301c26c.png" alt-text="Screenshot of the Policy details (preview) screen in Microsoft Entra conditional access.":::
+
+
+:::image type="content" source="../media/policy-details-41ee5be2-d301c26c.png" alt-text="Screenshot of the Policy details (preview) screen in Microsoft Entra conditional access.":::
 
 
 The left side provides details collected at sign-in, and the right side provides details of whether those details satisfy the requirements of the applied Conditional Access policies. Conditional Access policies only apply when all conditions are satisfied or not configured.

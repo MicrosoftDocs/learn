@@ -15,9 +15,9 @@ Sign-in frequency defines the time period before a user is asked to sign in agai
 
 The Microsoft Entra ID default configuration for user sign-in frequency is a rolling window of 90 days. Asking users for credentials often seems like a sensible thing to do, but it can backfire: Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt.
 
-It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Microsoft Entra ID default configuration comes down to “don’t ask users to provide their credentials if the security posture of their sessions hasn't changed.”
+It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Microsoft Entra ID default configuration comes down to 'don’t ask users to provide their credentials if the security posture of their sessions hasn't changed.'
 
-The sign-in frequency setting works with apps that have implemented OAUTH2 or OIDC protocols according to the standards. Most Microsoft native apps for Windows, Mac, and mobile, including the following web applications, comply with the setting.
+The sign-in frequency setting works with apps that have implemented OAUTH2 or OIDC protocols according to the standards. Most apps for Windows, Mac, and mobile, including the following web applications, comply with the setting.
 
  -  Word, Excel, PowerPoint Online
  -  OneNote Online
@@ -57,7 +57,7 @@ Example 2:
 
 ## Persistence of browsing sessions
 
-A persistent browser session allows users to remain signed in after closing and reopening their browser window. The Microsoft Entra ID default for browser session persistence allows users on personal devices to choose whether to persist the session by showing a “Stay signed in?” prompt after successful authentication.
+A persistent browser session allows users to remain signed in after closing and reopening their browser window. The Microsoft Entra ID default for browser session persistence allows users on personal devices to choose whether to persist the session by showing a 'Stay signed in?' prompt after successful authentication.
 
 ## Validation
 

@@ -13,17 +13,17 @@ Although security defaults ensure a basic level of security, your organization n
 
 The benefits of deploying CA are:
 
- -  Increase productivity. Only interrupt users with a sign-in condition like MFA when one or more signals warrants it. CA policies allow you to control when users are prompted for MFA, when access is blocked, and when they must use a trusted device.
- -  Manage risk. Automating risk assessment with policy conditions means risky sign-ins are at once identified and remediated or blocked. Coupling Conditional Access with Identity Protection, which detects anomalies and suspicious events, allows you to target when access to resources is blocked or gated.
- -  Address compliance and governance. CA enables you to audit access to applications, present terms of use for consent, and restrict access based on compliance policies.
- -  Manage cost. Moving access policies to Microsoft Entra ID reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
- -  Zero trust. Conditional Access helps you move toward a zero-trust environment.
+ -  Increase productivity - only interrupt users with a sign-in condition like MFA when one or more signals warrants it. CA policies allow you to control when users are prompted for MFA, when access is blocked, and when they must use a trusted device.
+ -  Manage risk - automating risk assessment with policy conditions means risky sign-ins are at once identified and remediated or blocked. Coupling Conditional Access with Identity Protection, which detects anomalies and suspicious events, allows you to target when access to resources is blocked or gated.
+ -  Address compliance and governance - Conditional access enables you to audit access to applications, present terms of use for consent, and restrict access based on compliance policies.
+ -  Manage cost - moving access policies to Microsoft Entra ID reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
+ -  Zero Trust - Conditional Access helps you move toward a zero-trust environment.
 
 ## Understand Conditional Access policy components
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When the admin configures CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
-:::image type="content" source="../media/create-policy-3ac1e413-63582584.png" alt-text="Screenshot of the conditional access dialog with the create policy screen open for configuration.":::
+:::image type="content" source="../media/create-policy-3ac1e413-63582584.png" alt-text="Screenshot of the conditional access dialog with the policy creation screen open for configuration.":::
 
 
 Assignments define the users and groups to be affected by the policy, the cloud apps or actions to which the policy will apply, and the conditions under which the policy will apply. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
@@ -60,7 +60,7 @@ The Conditional Access framework provides you with great configuration flexibili
 
 ### Set up emergency access accounts
 
-If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the accidental administrator lockout by creating two or more emergency access accounts in your organization. You will learn more about emergency access accounts later in this course.
+If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the accidental administrator lockout by creating two or more emergency access accounts in your organization. Yo'll learn more about emergency access accounts later in this course.
 
 ### Set up report-only mode
 
@@ -84,7 +84,7 @@ When planning your CA policy solution, assess whether you need to create policie
  -  **Respond to potentially compromised accounts.** Three default policies can be enabled: require all users to register for MFA, require a password change for users who are high-risk, and require MFA for users with medium or high sign-in risk.
  -  **Require managed devices.** The proliferation of supported devices to access your cloud resources helps to improve the productivity of your users. You probably don't want certain resources in your environment to be accessed by devices with an unknown protection level. For those resources, require that users can only access them using a managed device.
  -  **Require approved client applications.** Employees use their mobile devices for both personal and work tasks. For BYOD scenarios, you must decide whether to manage the entire device or just the data on it. If managing only data and access, you can require approved cloud apps that can protect your corporate data.
- -  **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you are migrating an app to Microsoft Entra ID, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.
+ -  **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you're migrating an app to Microsoft Entra ID, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.
     
     > [!IMPORTANT]
     > If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
