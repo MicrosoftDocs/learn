@@ -2,7 +2,7 @@ In this module, you have learned about the creation and management of Azure SQL 
 
 One of the main takeaways from this module include understanding the importance of security considerations, monitoring, and troubleshooting in automating database publishing. Key security aspects include managing secrets and credentials, configuring firewall rules, using encrypted connections, implementing Role-Based Access Control (RBAC), and enabling auditing and monitoring. Effective monitoring and troubleshooting practices such as setting up alerts, comprehensive logging, performance monitoring, automated testing, and planning rollback strategies are essential for maintaining the health and performance of your database publishing process.
 
-### Additional Reading
+### Additional reading
 
 - [Azure SQL Database Overview](/azure/azure-sql/database/sql-database-paas-overview?azure-portal=true)
 - [Getting started with the SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension-getting-started?azure-portal=true)

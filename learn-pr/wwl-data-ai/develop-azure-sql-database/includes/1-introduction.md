@@ -4,7 +4,8 @@ With Azure SQL Database, developers can use advanced capabilities such as built-
 
 In this module, you'll learn about different methods to develop and automate Azure SQL Database publishing for development purposes.
 
-[!TIP] Before proceeding, make sure you have completed the [Get started with Azure SQL Database for modern application development module](/training/modules/get-started-sql-database-application-development?azure-portal=true).
+>[!TIP] 
+> Before proceeding, make sure you have completed the [Get started with Azure SQL Database for modern application development module](/training/modules/get-started-sql-database-application-development?azure-portal=true).
 
 ## Simplify continuous integration (CI) and continuous deployment (CD) processes
 
