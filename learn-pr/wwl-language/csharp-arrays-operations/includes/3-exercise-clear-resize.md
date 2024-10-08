@@ -11,7 +11,7 @@ The `Array.Resize()` method adds or removes elements from your array.
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -22,6 +22,9 @@ The `Array.Resize()` method adds or removes elements from your array.
     }
 
     ```
+
+    > [!NOTE]
+    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12.
 
 1. Take a minute to focus on the line of code `Array.Clear(pallets, 0, 2);`.
 
@@ -73,7 +76,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 1. Verify your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0]}");
@@ -120,7 +123,7 @@ To prove that the value stored in `pallets[0]` after being cleared is null, you'
 1. Make sure your code matches the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0].ToLower()}");
@@ -158,7 +161,7 @@ if (pallets[0] != null)
 1. Next, rework the code listing from Step 1 to include code to resize the array. When complete, your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets =  ["B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -184,7 +187,7 @@ if (pallets[0] != null)
 
 1. Take a few minutes to focus on the line `Array.Resize(ref pallets, 6);`. 
 
-    Here, you're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require you pass arguments by value (the default) or by reference (using the ref keyword). The reasons why this is necessary requires a long and complicated explanation about of how objects are managed in .NET. Unfortunately, that is beyond the scope of this module. When in doubt, you're recommended to look at Intellisense or Microsoft Learn for examples on how to properly call a given method.
+    Here, you're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require you pass arguments by value (the default) or by reference (using the ref keyword). The reasons why this is necessary requires a long and complicated explanation about of how objects are managed in .NET. Unfortunately, that is beyond the scope of this module. When in doubt, you're recommended to look at Intellisense or Microsoft Docs for examples on how to properly call a given method.
 
     In this case, you're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements. The two new elements will be null until you assign a value to them.
 
@@ -214,7 +217,7 @@ Conversely, you can remove array elements using `Array.Resize()`.
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
