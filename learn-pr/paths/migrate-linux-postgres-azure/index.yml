@@ -7,6 +7,7 @@ metadata:
   ms.date: 10/07/2024
   author: asw101
   ms.author: aawislan
+  ms.topic: learning-path
 summary: >
   "Migrate from an on-premises Linux server to Azure using Azure Migrate and Azure Database for PostgreSQL."
 prerequisites: None
@@ -25,5 +26,6 @@ modules:
   - learn.introduction-to-linux-on-azure
   - learn.plan-your-linux-environment-in-azure
   - learn.provision-linux-virtual-machine-in-azure
+  - learn.wwl.get-started-generative-ai-azure-database-postgresql
 trophy:
-uid: learn.azure-linux-postgres.trophy
+  uid: learn.azure-linux-postgres.trophy
