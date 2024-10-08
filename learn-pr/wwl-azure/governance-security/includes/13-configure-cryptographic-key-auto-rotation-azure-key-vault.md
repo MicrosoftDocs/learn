@@ -90,6 +90,18 @@ Set rotation policy on a key passing previously saved file using Azure CLI [az k
 az keyvault key rotation-policy update --vault-name <vault-name> --name <key-name> --value </path/to/policy.json>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ### Azure PowerShell
@@ -98,6 +110,18 @@ Set rotation policy using Azure PowerShell [Set-AzKeyVaultKeyRotationPolicy](/po
 
 ```powershell
 Set-AzKeyVaultKeyRotationPolicy -VaultName <vault-name> -KeyName <key-name> -ExpiresIn (New-TimeSpan -Days 720) -KeyRotationLifetimeAction @{Action="Rotate";TimeAfterCreate= (New-TimeSpan -Days 540)}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```
@@ -121,6 +145,18 @@ Use Azure CLI [az keyvault key rotate](/cli/azure/keyvault/key#az-keyvault-key-r
 az keyvault key rotate --vault-name <vault-name> --name <key-name>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ### Azure PowerShell
@@ -129,6 +165,18 @@ Use Azure PowerShell [Invoke-AzKeyVaultKeyRotation](/powershell/module/az.keyvau
 
 ```azurecli
 Invoke-AzKeyVaultKeyRotation -VaultName <vault-name> -Name <key-name>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```
