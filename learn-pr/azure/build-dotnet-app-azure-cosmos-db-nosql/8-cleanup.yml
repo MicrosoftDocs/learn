@@ -7,6 +7,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Clean up the project's Visual Studio Code environment after concluding the guided project steps.
   sandbox: true
@@ -14,7 +15,7 @@ metadata:
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
-  ms.date: 11/01/2023
+  ms.date: 10/07/2024
 durationInMinutes: 1
 content: |
   [!include[](includes/8-cleanup.md)]
