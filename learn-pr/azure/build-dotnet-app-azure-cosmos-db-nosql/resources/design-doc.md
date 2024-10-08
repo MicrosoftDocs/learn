@@ -55,7 +55,7 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
       - Use Azure Cloud Shell (50/50 split)
       - Create account using CLI
       - Get endpoint
-      - Get connection string
+      - Configure authentication
 1. Exercise: Create .NET app and reference SDK
     - Create .NET console application
     - Add a reference to the Microsoft.Azure.Cosmos SDK
@@ -73,7 +73,7 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
     - Using LINQ
     - Paginate results
 1. Knowledge check
-    - Create CosmosClient with endpoint and key
+    - Create CosmosClient with Microsoft Entra authentication
     - Create container parameters
     - Project results to serialize as C# type
     - Parse LINQ and identify query equivalent

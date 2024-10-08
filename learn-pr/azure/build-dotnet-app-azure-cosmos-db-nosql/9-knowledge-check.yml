@@ -20,29 +20,30 @@ content: |
 quiz:
   questions:
   - content: |
-      Which block of code should be used to create a client to connect to the Azure Cosmos DB account with only a connection string?
+      Which block of code should be used to create a client to connect to the Azure Cosmos DB account with an endpoint?
     choices:
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
-        using CosmosClient client = new(connectionString);
+        string endpoint = "<nosql-account-endpoint>";
+        DefaultAzureCredential credential = new();
+        using CosmosClient client = new(endpoint, credential);
         ```
       isCorrect: true
       explanation: |
         Correct.
-        This constructor only requires a single string parameter with the full connection string.
+        This constructor requires both the endpoint and a token credential.
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
-        using CosmosClient client = new(connectionString, "");
+        string endpoint = "<nosql-account-endpoint>";
+        using CosmosClient client = new(endpoint);
         ```
       isCorrect: false
       explanation: |
         Incorrect.
-        This constructor requires two strings; one for the endpoint and another for the key. You incorrectly passed in the connection string for the endpoint parameter.
+        This constructor requires a token credential to be passed in for authentication.
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
+        string endpoint = "<nosql-account-endpoint>";
         using CosmosClient client = new();
         ```
       isCorrect: false

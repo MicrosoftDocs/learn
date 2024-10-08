@@ -14,8 +14,8 @@ Diagram of a flowchart showing steps to authenticate the client. The flowchart t
 
 The key tasks you need to do are:
 
-1. Create an Azure Cosmos DB account and retrieve the connection string.
-1. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
+1. Create an Azure Cosmos DB account and configure authentication.
+1. Create a .NET console application and add a package reference to the Azure SDK for .NET ([`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos)).
 1. Create database and container resources.
 1. Add a single item as a simple operation.
 1. Create a transactional batch to add four items.
@@ -29,15 +29,12 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new shell variable named **suffix** with a random number. Create a new API for NoSQL account within the **<rgn>[sandbox resource group name]</rgn>** resource group.
+1. Create a new API for NoSQL account using a unique suffix within the **<rgn>[sandbox resource group name]</rgn>** resource group.
 
     ```azurecli
-    let suffix=$RANDOM*$RANDOM
-
     az cosmosdb create \
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name "mslearn-$suffix" \
-        --locations "regionName=westus"
+        --name "mslearn-nosql-$((RANDOM*RANDOM))"
     ```
 
     > [!IMPORTANT]
@@ -48,40 +45,56 @@ The API for NoSQL account is used to store the data you create in this project a
     > [!TIP]
     > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-### Get account connection string
+### Enable Microsoft Entra authentication for the endpoint
 
-Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get the account's credentials. In this section, you filter the output of the command to only return a single connection string.
+Now that you have an API for NoSQL account, you can use the `az cosmosdb` group of commands from the Azure CLI to get the account's information. In this section, you will enable Microsoft Entra authentication for the account and get its endpoint.
 
-1. First, get the name of the most recently created API for NoSQL accounts.
+1. First, get the name of the most recently created API for NoSQL accounts using `az cosmosdb list`. Record the name as you will need it in the next step.
 
     ```azurecli
-    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    
     az cosmosdb list \
-        --resource-group $resourceGroup \
-        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)" \
-        --output table
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --query sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
     ```
 
-1. Now, get the `Primary SQL Connection String` credential for the first account from the list of recently created accounts.
+1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you just created. Use the value of the account name you recorded in the previous step. Record this endpoint as you will also use it to connect from the .NET SDK.
 
     ```azurecli
-    let resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-
-    az cosmosdb keys list \
-        --resource-group $resourceGroup \
-        --name $(az cosmosdb list \
-            --resource-group $resourceGroup \
-            --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name" \
-            --output tsv) \
-        --type connection-strings \
-        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-        --output tsv
+    az cosmosdb show \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "<nosql-account-name>" \
+        --query "documentEndpoint"
     ```
 
-1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
+1. Next, use `az cosmosdb sql role definition show` to get the fully-qualified unique identifier of the built-in **Cosmos DB Built-in Data Contributor** data plane role for your account. Record this value as it will be used in an upcoming step.
 
-### Configure dev environment
+    ```azurecli
+    az cosmosdb sql role definition show \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "<nosql-account-name>" \
+        --id "00000000-0000-0000-0000-000000000002" \
+        --query "id"
+    ```
+
+1. Then, use `az ad signed-in-user show` to get your current logged-in account's identifier. Record this value as it will be used in the next step.
+
+    ```azurecli
+    az ad signed-in-user show \
+      --query "id"
+    ```
+
+1. Finally, assign the role to your currently logged-in account using `az cosmosdb sql role assignment create`. Use the role definition identifier, the principal identifier, and the account name recorded earlier in this section.
+
+    ```azurecli
+    az cosmosdb sql role assignment create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --name "<nosql-account-name>" \
+        --role-definition-id "<fully-qualified-role-definition-id>" 
+        --principal-id "<principal-id>" 
+        --scope "/"
+    ```
+
+### Configure development environment
 
 A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
 
