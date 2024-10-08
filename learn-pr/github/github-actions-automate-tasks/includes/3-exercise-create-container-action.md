@@ -6,7 +6,7 @@ When you select the **Start the exercise on GitHub** button, you'll be navigated
 
 - Select the **Start course** button or the **Use this template** feature within the template repository. This prompts you to create a new repository. We recommend creating a public repository because private repositories will use Actions minutes.
 
-    After you make your own repository from the template, wait about 20 seconds and refresh.
+- After you make your own repository from the template, wait about 20 seconds and refresh.
 
 - Follow the instructions in the repository's README to understand how the exercise works, its learning objectives, and how to successfully complete the exercise.
 

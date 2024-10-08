@@ -11,25 +11,25 @@ When combined, these features have allowed thousands of development teams to eff
 
 ## Use workflow automation to decrease development time
 
- We'll focus on automation in this module, so let's take a moment to understand how teams can use automation to reduce the amount of time it takes to complete a typical development and deployment workflow.
+ We'll focus on automation in this module. Let's take a moment to understand how teams can use automation to reduce the amount of time it takes to complete a typical development and deployment workflow.
 
 Consider all of the tasks that must happen *after* the code is written, but before you can reliably use the code for its intended purpose. Depending on your organization's goals, you'll likely need to perform one or more of the following tasks:
 
-- Ensure the code passes all unit tests
-- Perform code quality and compliance checks to make sure the source code meets the organization's standards
-- Check the code and its dependencies for known security issues
-- Build the code integrating new source from (potentially) multiple contributors
-- Ensure the software passes integration tests
-- Version the new build
-- Deliver the new binaries to the appropriate filesystem location
-- Deploy the new binaries to one or more servers
-- If any of these tasks don't pass, report the issue to the proper individual or team for resolution
+- Ensure the code passes all unit tests.
+- Perform code quality and compliance checks to make sure the source code meets the organization's standards.
+- Check the code and its dependencies for known security issues.
+- Build the code integrating new source from (potentially) multiple contributors.
+- Ensure the software passes integration tests.
+- Version the new build.
+- Deliver the new binaries to the appropriate filesystem location.
+- Deploy the new binaries to one or more servers.
+- If any of these tasks don't pass, report the issue to the proper individual or team for resolution.
 
 The challenge is to do these tasks reliably, consistently, and in a sustainable manner. This is an ideal job for workflow automation. If you're already relying on GitHub, you'll likely want to set up your workflow automation using GitHub Actions.
 
 ## What is GitHub Actions?
 
-*GitHub Actions* are packaged scripts to automate tasks in a software-development workflow in GitHub. You can configure GitHub Actions to trigger complex workflows that meet your organization's needs; each time developers check new source code into a specific branch, at timed intervals, or manually. The result is a reliable and sustainable automated workflow, which leads to a significant decrease in development time.
+*GitHub Actions* are packaged scripts to automate tasks in a software-development workflow in GitHub. You can configure GitHub Actions to trigger complex workflows that meet your organization's needs. The trigger can happen each time developers check new source code into a specific branch, at timed intervals, or manually. The result is a reliable and sustainable automated workflow, which leads to a significant decrease in development time.
 
 ## Where can you find GitHub Actions?
 
@@ -41,11 +41,11 @@ However, beyond those GitHub Actions featured on the Actions tab, you can:
 
 - Search for GitHub Actions in the [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true). The GitHub Marketplace allows you to discover and purchase tools that extend your workflow.
 - Search for open-source projects. For example, the [GitHub Actions](https://github.com/actions?azure-portal=true) organization features many popular open-source repos containing GitHub Actions you can use.
-- Write your own GitHub Actions from scratch. Furthermore, if you want, you could make them open source, or even publish them to the GitHub Marketplace.
+- Write your own GitHub Actions from scratch. You can make them open source, or even publish them to the GitHub Marketplace.
 
 ## Using open-source GitHub Actions
 
-Many GitHub Actions are open source and available for anyone who wants to use them. However, just like with any open-source software, you need to carefully check them before using them in your project. Similar to recommended community standards with open-source software—such as including a README, code of conduct, contributing file, and issue templates, just to name a few—you can follow these recommendations when using GitHub Actions:
+Many GitHub Actions are open source and available for anyone who wants to use them. However, just like with any open-source software, you need to carefully check them before using them in your project. Similar to recommended community standards with open-source software such as including a README, code of conduct, contributing file, and issue templates, you can follow these recommendations when using GitHub Actions:
 
 - Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
 - Check if the action is in the GitHub Marketplace. This is a good check, even if an action does not have to be on the GitHub Marketplace to be valid.
@@ -58,7 +58,7 @@ There are three types of GitHub actions: container actions, JavaScript actions, 
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
-**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM (virtual machine) in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
 
 **Composite actions** allow you to combine multiple workflow steps within one action. For example, you can use this feature to bundle together multiple run commands into an action, and then have a workflow that executes the bundled commands as a single step using that action.
 
@@ -111,7 +111,7 @@ A *GitHub Actions workflow* is a process that you set up in your repository to a
 
 To create a workflow, you add actions to a .yml file in the ```.github/workflows``` directory in your GitHub repository.
 
-In the exercise coming up, your workflow file, *main.yml*, will look like this:
+In the exercise coming up, your workflow file *main.yml* will look like this:
 
 ```yml
 name: A workflow for my Hello World file
@@ -162,7 +162,7 @@ We briefly mentioned runners as being associated with a job. A runner is simply 
 
 When it comes to runners, there are two options from which to choose: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment that's specified by the GitHub-hosted runner type you define, `runs-on: {operating system-version}`. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following: `runs-on: [self-hosted, linux, ARM32]`.
 
-Each type of runner has its benefits, but GitHub-hosted runners offer a quicker, simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
+Each type of runner has its benefits, but GitHub-hosted runners offer a quicker and simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
 ### GitHub Actions may have usage limits
 
