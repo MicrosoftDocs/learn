@@ -35,7 +35,7 @@ The sign-in frequency setting works with SAML applications as well, as long as t
 
 Sign-in frequency previously applied only to the first factor authentication on devices that were Microsoft Entra joined, Hybrid Microsoft Entra joined, and Microsoft Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
 
-:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b.png" alt-text="Diagram of multifactor authentication sign-in process with sign-in frequency.":::
+:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b-030310a4.png" alt-text="Diagram of multifactor authentication sign-in process with sign-in frequency.":::
 
 
 ### User sign-in frequency and device identities
@@ -63,7 +63,7 @@ A persistent browser session allows users to remain signed in after closing and 
 
 Use the What-If tool to simulate a sign-in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
-:::image type="content" source="../media/conditional-access-what-if-tool-result-3dc01f5c.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
+:::image type="content" source="../media/conditional-access-what-if-tool-result-3dc01f5c-686081c3.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
 
 
 ## Policy deployment

@@ -4,7 +4,7 @@ In a mobile-first, cloud-first world, your users access your organization's reso
 
 Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
 
-:::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
+:::image type="content" source="../media/conditional-access-overview-how-it-works-b5356a16-053aa373.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
 
 Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
@@ -23,7 +23,7 @@ The benefits of deploying CA are:
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When the admin configures CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
-:::image type="content" source="../media/create-policy-3ac1e413.png" alt-text="Screenshot of the conditional access dialog with the create policy screen open for configuration.":::
+:::image type="content" source="../media/create-policy-3ac1e413-63582584.png" alt-text="Screenshot of the conditional access dialog with the create policy screen open for configuration.":::
 
 
 Assignments define the users and groups to be affected by the policy, the cloud apps or actions to which the policy will apply, and the conditions under which the policy will apply. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
@@ -42,7 +42,7 @@ Access tokens enable clients to securely call protected web APIs, and they're us
 
 It’s important to understand how access tokens are issued.
 
-:::image type="content" source="../media/access-policy-token-issuance-516d80f1.png" alt-text="Diagram of the flow of issues an access token for conditional access, and how it is used.":::
+:::image type="content" source="../media/access-policy-token-issuance-516d80f1-982d356c.png" alt-text="Diagram of the flow of issues an access token for conditional access, and how it is used.":::
 
 
 > [!NOTE]

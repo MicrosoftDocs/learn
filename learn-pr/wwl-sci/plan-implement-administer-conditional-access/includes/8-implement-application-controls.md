@@ -2,7 +2,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 ## Conditional Access App Control
 
-:::image type="content" source="../media/conditional-access-app-control-21108d98.png" alt-text="Screenshot of Microsoft Entra Conditional Access policy wizard with the Use Conditional Access App Control highlighted.":::
+:::image type="content" source="../media/conditional-access-app-control-21108d98-6714716b.png" alt-text="Screenshot of Microsoft Entra Conditional Access policy wizard with the Use Conditional Access App Control highlighted.":::
 
 
 Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Microsoft Entra Conditional Access. Microsoft Entra Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
@@ -82,7 +82,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/mem/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
@@ -141,7 +141,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/mem/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ## App protection policies overview
 
