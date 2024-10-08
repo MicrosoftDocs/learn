@@ -2,7 +2,8 @@ In this unit, we discuss how Firewall Manager works and what tasks you can accom
 
 The following diagram displays a typical configuration. It includes an enterprise administrator who is creating and associating policies at the top level. These policies are associated with both a secured virtual hub and two hub virtual networks. A local admin can also configure and associate policies with one of the hub virtual networks.
 
-:::image type="content" source="../media/policy-overview.png" alt-text="A typical Firewall Manager configuration, with both an enterprise and local admin who are creating and associating properties as previously described.":::
+:::image type="content" source="../media/policy-overview.png" alt-text="Diagram showing a typical Firewall Manager configuration, with both an enterprise and local admin who are creating and associating properties as previously described.":::
+
 
 Azure Firewall policies consist of rules and settings that control traffic in protected resources. In this unit, you learn about:
 
