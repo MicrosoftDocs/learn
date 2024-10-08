@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
-uid: learn.azure.migrate-linux-postgres
-title: Migrate Linux and PostgreSQL Workloads
+uid: learn.migrate-linux-postgres-azure
+title: Migrate Linux and PostgreSQL Workloads to Azure
 metadata:
-  title: Migrate Linux and PostgreSQL Workloads
+  title: Migrate Linux and PostgreSQL Workloads to Azure
   description: "Migrate Linux and PostgreSQL workloads to Azure using Azure Virtual Machines and Azure Database for PostgreSQL."
   ms.date: 10/07/2024
   author: asw101
@@ -22,5 +22,8 @@ products:
   - azure-database-postgresql
 modules:
   - learn.azure.migrate-linux-postgres
+  - learn.introduction-to-linux-on-azure
+  - learn.plan-your-linux-environment-in-azure
+  - learn.provision-linux-virtual-machine-in-azure
 trophy:
-uid: learn.wwl.deploy-administer-linux-virtual-machines-azure.trophy
+uid: learn.azure-linux-postgres.trophy
