@@ -56,7 +56,7 @@ The `Array.Resize()` method adds or removes elements from your array.
 
 ## Empty string versus null
 
-When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. pointing to nothing is an important concept that can be difficult to grasp at first.
+When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. Pointing to nothing is an important concept that can be difficult to grasp at first.
 
 What if you attempt to retrieve the value of an element that was affected by the `Array.Clear()` method, could you do it?
 
