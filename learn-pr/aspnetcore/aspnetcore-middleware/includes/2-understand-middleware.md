@@ -115,7 +115,6 @@ app.MapRazorComponents<App>()
 app.Run();
 ```
 
-This is from a Blazor app created with the .NET 9 SDK. This *Program.cs* is unchanged from when the project was created.
 
 In the preceding code:
 
