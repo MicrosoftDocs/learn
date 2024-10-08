@@ -1,4 +1,4 @@
-Developers can create custom middleware components to add functionality to an ASP.NET Core app. Custom middleware can be inserted anywhere in the middleware pipeline, but typically it's added after the built-in middleware components, as seen in the example below:
+Developers can create custom middleware components to add functionality to an ASP.NET Core app. Custom middleware can be inserted anywhere in the middleware pipeline and can be used with built-in middleware components, as seen in the example below:
 
 :::image type="content" source="../media/middleware-pipeline.svg" alt-text="A diagram showing the flow of a request through the pipeline.":::
 
