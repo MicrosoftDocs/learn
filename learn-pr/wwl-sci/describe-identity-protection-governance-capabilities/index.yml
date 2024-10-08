@@ -8,7 +8,7 @@ metadata:
   ms.author: ceperezb
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: active-directory
+  ms.service: azure-active-directory
 title: Describe the identity protection and governance capabilities of Microsoft Entra
 summary: Microsoft Entra provides identity protection and governance capabilities. Learn about these capabilities, the use cases, and benefits.
 abstract: |
