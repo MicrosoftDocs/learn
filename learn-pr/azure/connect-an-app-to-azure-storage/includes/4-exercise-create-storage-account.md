@@ -29,7 +29,7 @@ Use this table to craft a command line in Cloud Shell on the right to create the
 
 ### Create a storage account
 
-1. Use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
+- Use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
 
     ```azurecli
     az storage account create \

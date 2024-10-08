@@ -36,7 +36,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
 
 1. Save your file.
 
-1. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times, but the container is only be created on the first run.
+1. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times, but the container is only created on the first run.
 
     ```dotnetcli
     dotnet run
@@ -53,7 +53,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
 
 ::: zone pivot="javascript"
 
-The **Azure Storage Blob client library for JavaScript** contains many client objects for interacting with Azure Storage Blobs. At the top of this hierarchy, is the `BlobServiceClient` object. To use this object in your JavaScript code:
+The **Azure Storage Blob client library for JavaScript** contains many client objects for interacting with Azure Storage Blobs. The top of this hierarchy is the `BlobServiceClient` object. To use this object in your JavaScript code:
 
 1. Open your *index.js* file in the code editor and add the following statement immediately after the `require('dotenv').config();` statement:
 

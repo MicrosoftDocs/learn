@@ -4,7 +4,7 @@ Let's add code to upload an image to our Azure Storage account. In this example,
 
 If you're working on your local machine, right-click this image and save it to the same folder as your application.
 
-1. If you're working in the Microsoft Learn Sandbox environment, run the following command in the application folder to download the image into your sandbox:
+- If you're working in the Microsoft Learn Sandbox environment, run the following command in the application folder to download the image into your sandbox:
 
     ```bash
     wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
@@ -18,7 +18,7 @@ If you're working on your local machine, right-click this image and save it to t
 
 To work with individual blob objects in your Azure Storage account, you use a `BlobClient` object. To get a `BlobClient` object, call the `GetBlobClient` method on the `BlobContainerClient` object of the container where the blob is to be stored. When calling the `GetBlobClient` method, you also supply a name for the blob in the container. For our example, the name of the blob is the same as the name of our file.
 
-1. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage. Add the following code to your _Program.cs_ file:
+- After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage. Add the following code to your _Program.cs_ file:
 
     ```csharp
     string blobName = "docs-and-friends-selfie-stick";
@@ -92,7 +92,7 @@ To validate that our program worked, let's exercise another capability of the **
 
 ## Run the app
 
-1. Build and run the application to verify everything works, and upload your image to Azure Blob Storage.
+- Build and run the application to verify everything works, and upload your image to Azure Blob Storage.
 
     > [!NOTE]
     > Make sure you're in the PhotoSharingApp directory.
@@ -119,7 +119,7 @@ You learned the essentials of working with **Azure Storage Blobs** SDK package a
 
 To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object. Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-1. Add this code to your *index.js* program file immediately after the code that creates the container:
+- Add this code to your *index.js* program file immediately after the code that creates the container:
 
     ```javascript
     const filename = 'docs-and-friends-selfie-stick.png';
@@ -184,7 +184,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
 ## Run the app
 
-1. Build and run the application. The output should list a single line of information for the one image that you uploaded.
+- Build and run the application. The output should list a single line of information for the one image that you uploaded.
 
     > [!NOTE]
     > Make sure you're in the PhotoSharingApp directory.

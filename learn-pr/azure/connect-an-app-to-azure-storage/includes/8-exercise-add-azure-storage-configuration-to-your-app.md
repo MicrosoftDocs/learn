@@ -92,7 +92,7 @@ Now that we added the required libraries to enable reading the configuration, we
     using System.IO;
     ```
 
-1. Replace the rest of the contents `Console.WriteLine("Hello, World!");`, with the following code:
+1. Replace the rest of the contents `Console.WriteLine("Hello, World!");` with the following code:
 
     ```csharp
     namespace PhotoSharingApp
@@ -213,7 +213,7 @@ Now that we added the required libraries to enable reading the configuration, we
 
 1. In the editor, open the **index.js** file.
 
-1. At the top of the file, is the line `#!/usr/bin/env node`. Underneath that line, add following code:
+1. The top of the file is the line `#!/usr/bin/env node`. Underneath that line, add the following code:
 
     ```javascript
     require('dotenv').config();
