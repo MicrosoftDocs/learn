@@ -1,7 +1,7 @@
 Recall that you can create items within your container using the Azure Cosmos DB SDK for .NET. For this project, the products container contains both the individual *product* items and special *category* items for each category. There's two cases you want to handle in this application:
 
 - If a category is empty, it's fine to just create that category's item individually. There are no related product items to create.
-- However, if a category includes related products, you want to create the category item and the related product items simultaneously.
+- If a category includes related products, you want to create the category item and the related product items simultaneously.
 
 Right now, you have two key requirements:
 
@@ -76,7 +76,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. *Cr
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
     ```
 
-1. Print various properties of `response` to the console including: The unique identifier of the underlying item, the type of the underlying item, and the request charge in RUs.
+1. Print various properties of `response` to the console including: The unique identifier of the underlying item, the type of the underlying item, and the request charge in per-second increments.
 
     ```csharp
     Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
