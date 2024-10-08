@@ -1,6 +1,6 @@
 Organizations with Azure-hosted resources want to secure access to those resources. Typically, they implement security technologies, such as firewalls, to create security perimeters. These perimeters can control traffic flow to and from hosted apps and other resources. However, as your organization's security requirements grow, it might become difficult to manage these security technologies. How can you simplify the management of your cloud-based security? Use Azure Firewall Manager to centralize your firewall-security policies and route management for your cloud-based security perimeters. 
 
-:::image type="content" source="../media/firewall-manager-overview.png" alt-text="Hierarchy of Firewall Manager. A global admin is managing Firewall Manager, which centralizes management of firewall policies.":::
+:::image type="content" source="../media/firewall-manager-overview.png" alt-text="Hierarchy of Firewall Manager. A firewall administrator uses Firewall Manager, which centralizes management of firewall policies.":::
 
 ## Example scenario
 
