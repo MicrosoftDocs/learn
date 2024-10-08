@@ -6,6 +6,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     This module walks through connecting to Azure Cosmos DB for NoSQL to create and query container items from a .NET console application. 
   author: seesharprun

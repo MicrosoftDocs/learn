@@ -15,10 +15,10 @@ Diagram of a flowchart showing steps to authenticate the client. The flowchart t
 The key tasks you need to do are:
 
 1. Create an Azure Cosmos DB account and configure authentication.
-1. Create a .NET console application and add a package reference to the Azure SDK for .NET ([`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos)).
+1. Set up a .NET console application and add a package reference to the Azure SDK for .NET ([`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos)).
 1. Create database and container resources.
 1. Add a single item as a simple operation.
-1. Create a transactional batch to add four items.
+1. Create four items using a transactional batch.
 1. Execute and observe the results of a query.
 
 ## Setup
@@ -47,9 +47,9 @@ The API for NoSQL account is used to store the data you create in this project a
 
 ### Enable Microsoft Entra authentication for the endpoint
 
-Now that you have an API for NoSQL account, you can use the `az cosmosdb` group of commands from the Azure CLI to get the account's information. In this section, you will enable Microsoft Entra authentication for the account and get its endpoint.
+Now that you have an API for NoSQL account, you can use the `az cosmosdb` group of commands from the Azure CLI to get the account's information. In this section, you enable Microsoft Entra authentication for the account and get its endpoint.
 
-1. First, get the name of the most recently created API for NoSQL accounts using `az cosmosdb list`. Record the name as you will need it in the next step.
+1. First, get the name of the most recently created API for NoSQL accounts using `az cosmosdb list`. Record the name as you'll need it in the next step.
 
     ```azurecli
     az cosmosdb list \
@@ -57,7 +57,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
         --query sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
     ```
 
-1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you just created. Use the value of the account name you recorded in the previous step. Record this endpoint as you will also use it to connect from the .NET SDK.
+1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you created. Use the value of the account name you recorded in the previous step. Record this endpoint as you also use it to connect from the .NET SDK.
 
     ```azurecli
     az cosmosdb show \
@@ -66,7 +66,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
         --query "documentEndpoint"
     ```
 
-1. Next, use `az cosmosdb sql role definition show` to get the fully-qualified unique identifier of the built-in **Cosmos DB Built-in Data Contributor** data plane role for your account. Record this value as it will be used in an upcoming step.
+1. Next, use `az cosmosdb sql role definition show` to get the fully qualified unique identifier of the built-in **Cosmos DB Built-in Data Contributor** data plane role for your account. Record this value as it is used in an upcoming step.
 
     ```azurecli
     az cosmosdb sql role definition show \
@@ -92,6 +92,30 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
         --role-definition-id "<fully-qualified-role-definition-id>" 
         --principal-id "<principal-id>" 
         --scope "/"
+    ```
+
+### Create database and container resources
+
+The Microsoft Entra authentication is only configured for items (or the data plane). You need to manually create your database and container resources using the Azure CLI. Use the account name you recorded in the previous section for these commands.
+
+1. Use `az cosmosdb sql database create` to create your database.
+
+    ```azurecli
+    az cosmosdb sql database create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --account-name "<nosql-account-name>" \
+        --name "cosmicworks"    
+    ```
+
+1. Next, use `az cosmosdb sql container create` to create your container.
+
+    ```azurecli
+    az cosmosdb sql container create \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --account-name "<nosql-account-name>" \
+        --database-name "cosmicworks" \
+        --name "products" \
+        --partition-key-path "/categoryId"
     ```
 
 ### Configure development environment

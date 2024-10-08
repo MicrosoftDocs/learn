@@ -1,6 +1,6 @@
 # Guided project - Build an app that queries and adds data to Azure Cosmos DB for NoSQL
 
-## Role(s)
+## Roles
 
 - [developer](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 
@@ -8,7 +8,7 @@
 
 - [beginner](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 
-## Product(s)
+## Products
 
 - [azure-cosmos-db](https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
 
@@ -33,7 +33,7 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
 
 ## Subtasks
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How are you assessing it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask are combined with it? |
+| Subtask | What part of the introduction scenario does this subtask satisfy? | How are you assessing it? (Exercise or Knowledge check) | Which learning objectives does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask are combined with it? |
 | ---- | ---- | ---- | ---- | ---- |
 | Connect to account | "use best practices" | Knowledge check | `1` | yes |
 | Create resources | "perform common tasks" | Exercise | `2` | yes |
@@ -49,7 +49,7 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
       - Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you build adds multiple items using the .NET SDK for Azure Cosmos DB for NoSQL. Although the version you build in this project is the first version of the application, you try to use the documented best practices when using the SDK.
     - Terminal learning objective (goal)
       - By the end of this module, you're able to create a .NET application that connects to Azure Cosmos DB for NoSQL and perform standard operations and queries.
-1. Prepare
+1. Preparation
     - Project overview
     - Setup
       - Use Azure Cloud Shell (50/50 split)

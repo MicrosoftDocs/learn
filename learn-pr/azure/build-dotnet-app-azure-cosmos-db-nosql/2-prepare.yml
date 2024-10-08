@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Review the project's environment and get started creating an Azure Cosmos DB for NoSQL account using the Azure CLI.
-
   sandbox: true
   interactive: bash
   author: seesharprun
