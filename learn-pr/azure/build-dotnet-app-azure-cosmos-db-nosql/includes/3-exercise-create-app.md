@@ -90,7 +90,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     > ```
     >
 
-1. Create a new variable of type <xref:DefaultAzureCredential> named `credential`.
+1. Create a new variable of type <xref:Azure.Identity.DefaultAzureCredential> named `credential`.
 
     ```csharp
     DefaultAzureCredential credential = new();
