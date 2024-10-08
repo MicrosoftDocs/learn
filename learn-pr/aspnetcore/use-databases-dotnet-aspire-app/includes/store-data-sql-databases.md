@@ -70,7 +70,7 @@ Or to use the .NET Aspire PostgreSQL Entity Framework Core integration, use this
 dotnet add package Aspire.Npgsql.EntityFrameworkCore.PostgreSQL --prerelease
 ```
 
-Alternatively, you can use the **Add > .NET Aspire integration** shortcut in Visual Studio to install the integration from the NuGet package manager:
+Alternatively, you can use the **Add > .NET Aspire package** shortcut in Visual Studio to install the integration from the NuGet package manager:
 
 :::image type="content" source="../media/adding-postgres-nuget-package.png" lightbox="../media/adding-postgres-nuget-package.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire PostgreSQL integrations.":::
 
@@ -258,7 +258,7 @@ Or to use the .NET Aspire SqlServer Entity Framework Core integration, use this 
 dotnet add package Aspire.Microsoft.EntityFrameworkCore.SqlServer --prerelease
 ```
 
-These NuGet packages can also be added using the **Add > .NET Aspire integration** shortcut in Visual Studio.
+These NuGet packages can also be added using the **Add > .NET Aspire package** shortcut in Visual Studio.
 
 The _*.AppHost_ project's _Program.cs_ file code to access the database is similar to the PostgreSQL example:
 
@@ -366,7 +366,7 @@ To install the .NET Aspire MySQL integration, use a command like this one in you
 dotnet add package Aspire.MySqlConnector --prerelease
 ```
 
-Or use the **Add > .NET Aspire integration** shortcut in Visual Studio to install the integration from the NuGet package manager.
+Or use the **Add > .NET Aspire package** shortcut in Visual Studio to install the integration from the NuGet package manager.
 
 The _*.AppHost_ project's _Program.cs_ file code to access the database is similar to the PostgreSQL example:
 

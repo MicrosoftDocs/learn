@@ -142,7 +142,7 @@ Let's use the eShop reference application to demonstrate the .NET Aspire stack. 
 
 We'll make a simple change in the source code to test when we run the app:
 
-1. In **Solution Explorer**, expand the _src/WebApp/Integrations/Pages/Catalog_ folder, and then select the _Catalog.razor_ page.
+1. In **Solution Explorer**, expand the _src/WebApp/Components/Pages/Catalog_ folder, and then select the _Catalog.razor_ page.
 1. Locate this line of code:
 
    ```csharp

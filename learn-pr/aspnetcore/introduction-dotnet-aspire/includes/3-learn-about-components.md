@@ -6,9 +6,9 @@ In this unit, you'll learn about the integrations that are included in .NET Aspi
 
 ## Use .NET Aspire integrations
 
-Each .NET Aspire integration is a NuGet package, and you can add it to your project using the NuGet package manager. In Visual Studio, there is a new **Add > .NET Aspire integration** menu item. This action displays the package manager with a filter applied to display only .NET Aspire integrations:
+Each .NET Aspire integration is a NuGet package, and you can add it to your project using the NuGet package manager. In Visual Studio, there is a new **Add > .NET Aspire package** menu item. This action displays the package manager with a filter applied to display only .NET Aspire integrations:
 
-:::image type="content" source="../media/add-integration.png" lightbox="../media/add-integration.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire integrations.":::
+:::image type="content" source="../media/add-component.png" lightbox="../media/add-component.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire integrations.":::
 
 > [!NOTE]
 > You'll see how to use this integration tools in the exercise later in this module.

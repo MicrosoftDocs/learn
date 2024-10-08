@@ -20,7 +20,7 @@ In your solution's app host project, start by installing the distributed caching
 dotnet add package Aspire.Hosting.Redis --prerelease
 ```
 
-Alternatively, you can use the **Add > .NET Aspire Integration** shortcut in Visual Studio to install the integration from the NuGet package manager:
+Alternatively, you can use the **Add > .NET Aspire package** shortcut in Visual Studio to install the integration from the NuGet package manager:
 
 :::image type="content" source="../media/app-host-redis-install.png" lightbox="../media/app-host-redis-install.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire Redis caching hosting integration.":::
 
