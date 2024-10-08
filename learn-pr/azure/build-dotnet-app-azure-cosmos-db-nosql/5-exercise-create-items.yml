@@ -6,16 +6,15 @@ metadata:
   title: Exercise - Create new items
   ms.custom:
     - build-2023
+    - build-2023-dataai
     - devx-track-dotnet
   description: |
-    - build-2023-dataai
     Insert newly created items into a container using the Microsoft.Azure.Cosmos .NET SDK library from NuGet.
-
   sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
-  ms.date: 11/01/2023
+  ms.date: 10/07/2024
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-items.md)]
