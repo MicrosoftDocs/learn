@@ -2,7 +2,7 @@ In this module, you have learned about the capabilities of Azure SQL Database in
 
 One of the main takeaways from this module include understanding how to securely expose a desired REST service through Azure API Management. You learned how to implement secure API calls using `DATABASE SCOPED CREDENTIALS` with the `IDENTITY` parameter. Additionally, you discovered how Azure Functions can read data from an Azure SQL database and write data to it, and how an Azure SQL trigger can be set up to respond to changes in the SQL table. You also learned about other tools like SQL Data Sync, Azure Data Factory, and BACPAC files that can be used for data synchronization, orchestration, migration, backup, and archiving.
 
-### Additional Reading
+### Additional reading
 
 - [Azure API Management documentation](/azure/api-management/api-management-key-concepts?azure-portal=true)
 - [Azure SQL bindings for Azure Functions overview](/azure/azure-functions/functions-bindings-azure-sql?azure-portal=true)
