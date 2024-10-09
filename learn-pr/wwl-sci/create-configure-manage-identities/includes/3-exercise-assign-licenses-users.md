@@ -32,7 +32,7 @@ You can skip creating this user if you have already created the same user in the
     | Owners          | Assign your own administrator account as the group owner |
     | Members         | Chris Green                                              |
     
-    :::image type="content" source="../media/create-group-7be1cd36-19fd1287.png" alt-text="Screenshot of the new group creation page in Microsoft Entra ID. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
+    :::image type="content" source="../media/create-group-7be1cd36-19fd1287.png" alt-text="Screenshot of the new group creation page in Microsoft Entra ID. Create new groups and add members.":::
     
 5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 

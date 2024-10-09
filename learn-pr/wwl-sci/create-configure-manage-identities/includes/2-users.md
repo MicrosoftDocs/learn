@@ -6,7 +6,7 @@ You use the **Microsoft Entra ID** dashboard in the Azure portal to work with us
 
 To view the Microsoft Entra users, select the **Users** entry under **Identity** \- then open the **All Users** view. Take a minute to access the portal and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
 
-:::image type="content" source="../media/all-users-dialog-50b4e098-07bb1a6e.png" alt-text="Screenshot of the Microsoft Entra ID view all users page.  It displays a list of the users in alphabetical order with basic information about each user like their full name, alias, and whether they are a member of the directory or a guest.":::
+:::image type="content" source="../media/all-users-dialog-50b4e098-07bb1a6e.png" alt-text="Screenshot of the Microsoft Entra ID view all users page. Information about each user is diplayed.":::
 
 
 Typically, Microsoft Entra ID defines users in three ways:

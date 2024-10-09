@@ -7,7 +7,7 @@
     > [!TIP]
     > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
     
-    :::image type="content" source="../media/remove-user-8ee7c315-4a9f143b.png" alt-text="Screenshot of Microsoft Entra ID all users' list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.":::
+    :::image type="content" source="../media/remove-user-8ee7c315-4a9f143b.png" alt-text="Screenshot of Microsoft Entra ID all users' list with one user check box selected.":::
     
 4.  With the user account selected, on the menu, select **Delete user**.
 5.  Review the dialog box and then select **OK**.
