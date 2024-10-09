@@ -127,9 +127,9 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
 
-1. Create a new GitHub Codespace using the `azure-samples/cosmos-db-dotnet` template.
+1. Create a new GitHub Codespace.
 
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/azure-samples/cosmos-db-dotnet?quickstart=1&azure-portal=true)
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/github/codespaces-blank?template=true&quickstart=1)
 
 1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
 
