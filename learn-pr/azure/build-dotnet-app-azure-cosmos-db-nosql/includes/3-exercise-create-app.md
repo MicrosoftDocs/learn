@@ -144,23 +144,17 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 
 ### [Review code](#tab/review-code)
 
-1. Review the *\*.csproj* project file to ensure that the project configuration matches this sample.
+1. Review the *\*.csproj* project file to ensure that the project configuration include both referenced projects.
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">    
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>codespaces_blank</RootNamespace>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-      </PropertyGroup>    
-      <ItemGroup>
-        <PackageReference Include="Azure.Identity" Version="1.*" />
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
-      </ItemGroup>    
-    </Project>
+    <ItemGroup>
+      <PackageReference Include="Azure.Identity" Version="1.*" />
+      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
+    </ItemGroup>
     ```
+
+    > [!NOTE]
+    > This is a subset of the project configuration XML. The rest of the content was omitted for brevity.
 
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
