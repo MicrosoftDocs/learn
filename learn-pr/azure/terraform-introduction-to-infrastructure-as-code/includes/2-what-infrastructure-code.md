@@ -18,7 +18,7 @@ Your company designs new toys for release to the market, and most new toys requi
 
 You can think of infrastructure as code as being like the instruction manual for your infrastructure. The manual details the end configuration of your resources and how to reach that configuration state.
 
-Infrastructure as code is the process of automating your infrastructure provisioning. It uses a declarative coding language and versioning system that's similar to what's used for source code. When you create an application, your source code generates the same result on each compilation. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your resources, like virtual networks, virtual machines, applications, storage, and even GitHub repositories or user accounts.
+Infrastructure as code is the process of automating your infrastructure provisioning. It uses a declarative coding language and versioning system that's similar to what's used for source code. When you create an application, your source code generates the same result on each compilation. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your resources. Such as virtual networks, virtual machines, applications, storage, and even GitHub repositories or user accounts.
 
 :::image type="content" source="../media/iac.svg" alt-text="Diagram that shows the infrastructure as code process using a source code repository with a module that deploys Azure resources." border="false" :::
 
@@ -36,7 +36,7 @@ Adopting an infrastructure as code approach offers many benefits to resource pro
 
 One of the benefits of using infrastructure as code is the level of confidence you gain in your deployments from improvements in consistency and security.
 
-- **Integration with current processes**: If your organization already uses standard software development practices, you can adopt those same processes for your infrastructure deployments. For example, peer reviews and static analysis can help in detecting problems in configurations that may be difficult to detect when making manual changes.
+- **Integration with current processes**: If your organization already uses standard software development practices, you can adopt those same processes for your infrastructure deployments. For example, peer reviews and static analysis can help in detecting problems in configurations that might be difficult to detect when making manual changes.
 
 - **Consistency**: Adopting an infrastructure as code approach helps your team follow well-established processes to deploy infrastructure. By following these processes, responsibility shifts from a small group of individuals to your automation process and tooling. Infrastructure as code helps reduce human error in resource provisioning and ensure consistent deployments.
 
@@ -68,7 +68,7 @@ Here are some of the key ways infrastructure as code can help you manage your en
 
 - **Provision new environments**: One of the main benefits of cloud computing is the ability to scale. Infrastructure as code can help you scale to multiple instances of your application. These instances can help during times of increased load, or you can deploy them for users in other areas of the world. This agility also can be beneficial when you test your application, like during penetration testing, load testing, and bug testing. With a well-defined code base, you can dynamically provision these new environments in a consistent manner.
 
-- **Nonproduction environments**: A common problem organizations face is differentiation between production and nonproduction environments. When you manually provision resources in separate environments, it's possible that the end configurations don't match. An example is when you deploy a new feature to a nonproduction environment that differs from the production environment. It's possible that the new feature won't work as expected in the production environment because of the differences between the two environments. Using infrastructure as code can help minimize these problems. You can use the same configuration files for each environment but supply different input parameters to create uniqueness. You can also be cost efficient by tearing down non-production environments when they're not in use.
+- **Nonproduction environments**: A common problem organizations face is differentiation between production and nonproduction environments. When you manually provision resources in separate environments, it's possible that the end configurations don't match. An example is when you deploy a new feature to a nonproduction environment that differs from the production environment. It's possible that the new feature doesn't work as expected in the production environment because of the differences between the two environments. Using infrastructure as code can help minimize these problems. You can use the same configuration files for each environment but supply different input parameters to create uniqueness. You can also be cost efficient by tearing down nonproduction environments when they're not in use.
 
 - **Disaster recovery**: In some situations, infrastructure as code can be used as part of an organization's disaster recovery plan. For example, you might need to re-create your environment in another region because of a service outage. By using infrastructure as code, you can quickly provision a new instance to fail over to instead of manually deploying and reconfiguring everything.
 
@@ -141,7 +141,7 @@ resource "azurerm_resource_group" "example" {
 
 resource "azurerm_storage_account" "example" {
   name                      = "mystorageaccount"
-  location                  = azure_resource_group.example.location
+  location                  = azurerm_resource_group.example.location
   resource_group_name       = azurerm_resource_group.example.name
   sku                       = "Standard"
   account_replication_type  = "GRS"
