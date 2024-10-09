@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.developer-use-cases-for-ai-with-github-copilot.understanding-limitations-and-measuring-impact
+title: Understanding Limitations and Measuring Impact
+metadata:
+  title: Understanding Limitations and Measuring Impact
+  description: This content is part of the "Developer Use Cases for AI with GitHub Copilot" module.
+  ms.date: 10/09/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-understanding-limitations-and-measuring-impact.md)]
