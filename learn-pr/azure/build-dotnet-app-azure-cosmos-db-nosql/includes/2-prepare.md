@@ -54,7 +54,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
     ```azurecli
     az cosmosdb list \
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --query sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
     ```
 
 1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you created. Use the value of the account name you recorded in the previous step. Record this endpoint as you also use it to connect from the .NET SDK.
