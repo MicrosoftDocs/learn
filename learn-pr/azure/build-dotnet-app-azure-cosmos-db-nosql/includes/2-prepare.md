@@ -25,15 +25,42 @@ The key tasks you need to do are:
 
 To complete this project, you need an API for NoSQL account.
 
+### Sign in to Azure CLI
+
+If you want to complete this exercise, you'll need to create an Azure subscription before you begin.
+
+1. Verify that the Azure CLI is installed in your development environment.
+
+    ```azurecli
+    az --version
+    ```
+
+1. Sign in to the Azure CLI.
+
+    ```azurecli
+    az login
+    ```
+
 ### Create Azure Cosmos DB for NoSQL account
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new API for NoSQL account using a unique suffix within the **<rgn>[sandbox resource group name]</rgn>** resource group.
+1. Create a new resource group named **learn-cosmos-db-dotnet-app**.
+
+    ```azurecli
+    az group create \
+        --name "learn-cosmos-db-dotnet-app" \
+        --location "westus"
+    ```
+
+    > [!TIP]
+    > You can replace this location with any region available in your Azure subscription.
+
+1. Create a new API for NoSQL account using a unique suffix within the resource group.
 
     ```azurecli
     az cosmosdb create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --name "mslearn-nosql-$((RANDOM*RANDOM))"
     ```
 
@@ -53,7 +80,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
     ```
 
@@ -61,7 +88,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --name "<nosql-account-name>" \
         --query "documentEndpoint"
     ```
@@ -70,7 +97,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb sql role definition show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --id "00000000-0000-0000-0000-000000000002" \
         --query "id"
@@ -87,7 +114,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb sql role assignment create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --role-definition-id "<fully-qualified-role-definition-id>"  \
         --principal-id "<principal-id>" \
@@ -102,7 +129,7 @@ The Microsoft Entra authentication is only configured for items (or the data pla
 
     ```azurecli
     az cosmosdb sql database create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --name "cosmicworks"    
     ```
@@ -111,7 +138,7 @@ The Microsoft Entra authentication is only configured for items (or the data pla
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --database-name "cosmicworks" \
         --name "products" \

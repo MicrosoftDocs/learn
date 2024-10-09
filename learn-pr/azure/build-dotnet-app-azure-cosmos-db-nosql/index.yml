@@ -35,13 +35,8 @@ prerequisites: |
   - Experience with top-level statement projects in .NET 6 or later
   - Ability to write C# at an intermediate level
 
-  - Developing in browser:
-    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
-  - Developing locally:
-    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
-    - [Visual Studio Code](https://code.visualstudio.com/)
-      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-iconUrl: /training/achievements/build-dotnet-app-azure-cosmos-db-nosql.svg
+  - [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+  - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
 levels:
   - beginner
 roles:
