@@ -150,11 +150,13 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
     <Project Sdk="Microsoft.NET.Sdk">    
       <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>codespaces_blank</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
       </PropertyGroup>    
       <ItemGroup>
+        <PackageReference Include="Azure.Identity" Version="1.*" />
         <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
       </ItemGroup>    
     </Project>
@@ -163,6 +165,7 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;
