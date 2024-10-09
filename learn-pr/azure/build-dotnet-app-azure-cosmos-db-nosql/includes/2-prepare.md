@@ -89,8 +89,8 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
     az cosmosdb sql role assignment create \
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name "<nosql-account-name>" \
-        --role-definition-id "<fully-qualified-role-definition-id>" 
-        --principal-id "<principal-id>" 
+        --role-definition-id "<fully-qualified-role-definition-id>"  \
+        --principal-id "<principal-id>" \
         --scope "/"
     ```
 
