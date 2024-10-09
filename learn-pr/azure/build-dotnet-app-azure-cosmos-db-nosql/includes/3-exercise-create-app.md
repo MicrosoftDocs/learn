@@ -162,6 +162,7 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;
