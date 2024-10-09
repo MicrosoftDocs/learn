@@ -39,18 +39,15 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     dotnet build
     ```
 
-    The output of the command should be similar to this example:
+    The output of the command should be similar to this truncated example:
 
     ```output
       Determining projects to restore...
       All projects are up-to-date for restore.
-      codespaces-blank -> /workspaces/codespaces-blank/bin/Debug/net8.0/codespaces-blank.dll
 
     Build succeeded.
         0 Warning(s)
         0 Error(s)
-
-    Time Elapsed 00:00:03.99
     ```
 
 ## Connect to the account
