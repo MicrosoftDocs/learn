@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Point read items and perform straightforward queries using the Microsoft.Azure.Cosmos .NET library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit

@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Build queries using the C# LINQ method syntax within the Microsoft.Azure.Cosmos .NET library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit

@@ -10,8 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Clean up the project's Visual Studio Code environment after concluding the guided project steps.
-  sandbox: true
-  interactive: bash
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit

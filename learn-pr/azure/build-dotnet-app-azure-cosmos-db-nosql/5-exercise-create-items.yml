@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Insert newly created items into a container using the Microsoft.Azure.Cosmos .NET SDK library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit

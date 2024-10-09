@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Create a new container and database using the methods available in the Microsoft.Azure.Cosmos .NET library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit

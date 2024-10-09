@@ -10,7 +10,6 @@ metadata:
     - devx-track-dotnet
   description: |
     Create a new .NET console application and add a package reference to the Microsoft.Azure.Cosmos .NET library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
