@@ -42,16 +42,15 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     The output of the command should be similar to this example:
 
     ```output
-    MSBuild version 17.5.0+6f08c67f3 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-      dotnet-env-azure-cosmos-db -> /workspaces/dotnet-env-azure-cosmos-db/bin/Debug/net7.0/dotnet-env-azure-cosmos-db.dll
-    
+      codespaces-blank -> /workspaces/codespaces-blank/bin/Debug/net8.0/codespaces-blank.dll
+
     Build succeeded.
         0 Warning(s)
         0 Error(s)
-    
-    Time Elapsed 00:00:05.96
+
+    Time Elapsed 00:00:03.99
     ```
 
 ## Connect to the account
