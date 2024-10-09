@@ -1,13 +1,13 @@
-You've added the required client libraries to your application and are ready to connect to your Azure storage account.
+You added the required client libraries to your application and now you're ready to connect to your Azure storage account.
 
-To work with data in a storage account, your app will need two pieces of data:
+To work with data in a storage account, your app needs two pieces of data:
 
 - Access key
 - REST API endpoint
 
 ## Security access keys
 
-Each storage account has two unique _access keys_ that are used to secure the storage account. If your app needs to connect to multiple storage accounts, your app will require an access key for each storage account.
+Each storage account has two unique *access keys* that are used to secure the storage account. If your app needs to connect to multiple storage accounts, it requires an access key for each storage account.
 
 ![An illustration showing an application connected to two different storage accounts in the cloud. Each storage account is accessible with a unique key.](../media/6-multiple-accounts.png)
 
@@ -47,13 +47,13 @@ Typically, storage-account connectivity information is stored within an environm
 > [!IMPORTANT]
 > Storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake, and means that anyone can browse your source code in the public repository and see your storage-account connection information.
 
-Each storage account has two access keys. This is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. You can do this from the Azure portal or the Azure CLI/PowerShell command line tool.
+Each storage account has two access keys so that you can rotate (regenerate) keys periodically as part of security best practice in keeping your storage account secure. You can rotate keys from the Azure portal or the Azure CLI/PowerShell command line tool.
 
 Rotating a key invalidates the original key value immediately and revokes access to anyone who obtained the key inappropriately. With support for two keys, you can rotate keys without causing downtime in your applications that use them. Your app can switch to using the alternate access key while the other key is regenerated. If you have multiple apps using this storage account, they should all use the same key to support this technique. Here's the basic idea:
 
-1. Update the connection strings in your application code to reference the storage account's secondary access key.
+1. Update the connection strings in your application code so that they reference the storage account's secondary access key.
 2. Regenerate your storage account's primary access key using the Azure portal or command-line tool.
-3. Update the connection strings in your code to reference the new primary access key.
+3. Update the connection strings in your code so that they reference the new primary access key.
 4. Regenerate the secondary access key in the same manner.
 
 > [!TIP]
@@ -63,4 +63,4 @@ Rotating a key invalidates the original key value immediately and revokes access
 
 Access keys are the easiest approach to authenticating access to a storage account. However, they provide full access to anything in the storage account, similar to a root password on a computer.
 
-Storage accounts offer a separate authentication mechanism called _shared access signatures_ that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you're allowing other users to read and write data to your storage account. You'll find links to our documentation on this advanced topic at the end of the module.
+Storage accounts offer a separate authentication mechanism called *shared access signatures* that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you're allowing other users to read and write data to your storage account. You can find links to our documentation on this advanced topic at the end of the module.
