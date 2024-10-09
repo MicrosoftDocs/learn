@@ -9,4 +9,4 @@ In this module, learn how to use the .NET Aspire project templates in Visual Stu
 By the end of this module, you're going to be able to:
 
 - Create new cloud-native apps by using the .NET Aspire templates in Visual Studio.
-- Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native components.
+- Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native integrations.

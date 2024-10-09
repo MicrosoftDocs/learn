@@ -1,4 +1,4 @@
-In any cloud-native app, microservices must communicate in order to obtain all the information they need to respond to users. You should make sure that this messaging is robust even when there are network issues or failures between the components. RabbitMQ is one tool you can use to increase the reliability of messaging.
+In any cloud-native app, microservices must communicate in order to obtain all the information they need to respond to users. You should make sure that this messaging is robust even when there are network issues or failures between the integrations. RabbitMQ is one tool you can use to increase the reliability of messaging.
 
 In your outdoor equipment retailer, you're making rapid progress with your microservices. However, in application testing some calls from one microservice to another seem to be lost. You'd like to ensure this problem doesn't arise in your production environment where your company's reputation is at stake.
 
@@ -69,10 +69,10 @@ This pattern is useful when some consumers should only process a subset of the m
 The direct exchange routes messages based on a single criteria. To make things even more flexible, you can use a **topic** exchange. For each message, you can use a routing key with multiple terms separated by dots. In the binding key, you can use the wild cards **\***, to substitute for exactly one word, or **#** to substitute for zero or more words.
 
 > [!NOTE]
-> Alternatives to RabbitMQ include Apache Kafka and Azure Service Bus. Both these message brokers are supported by dedicated components in .NET Aspire. You'll learn about Azure Service Bus in a later module in this Learning Path.
+> Alternatives to RabbitMQ include Apache Kafka and Azure Service Bus. Both these message brokers are supported by dedicated integrations in .NET Aspire. You'll learn about Azure Service Bus in a later module in this Learning Path.
 
 ## Learn more
 
 - [RabbitMQ Tutorials](https://www.rabbitmq.com/tutorials)
-- [.NET Aspire RabbitMQ component](/dotnet/aspire/messaging/rabbitmq-client-component)
-- [.NET Aspire Apache Kafka component](/dotnet/aspire/messaging/kafka-component)
+- [.NET Aspire RabbitMQ integration](/dotnet/aspire/messaging/rabbitmq-client-integration)
+- [.NET Aspire Apache Kafka integration](/dotnet/aspire/messaging/kafka-integration)
