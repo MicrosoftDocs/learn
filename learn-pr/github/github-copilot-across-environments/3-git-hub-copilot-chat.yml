@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-across-environments.git-hub-copilot-chat
+title: GitHub Copilot Chat
+metadata:
+  title: GitHub Copilot Chat
+  description: This content is part of the "GitHub Copilot Across Environments - IDE, Chat, and Command Line Techniques" module.
+  ms.date: 10/08/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-git-hub-copilot-chat.md)]
