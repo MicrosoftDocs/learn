@@ -1,7 +1,4 @@
-In this unit, we discuss how you can decide whether Microsoft Purview is the right choice for your data governance and discovery needs. The criteria that indicate whether Microsoft Purview will meet your requirements are:
-
-* Discovery
-* Governance
+In this unit, we discuss how you can decide whether Microsoft Purview is the right choice for your data governance and discovery needs. The criteria that indicate whether Microsoft Purview will meet your requirements are **Discovery** and **Governance**.
 
 Let's take a look at these criteria and see how Microsoft Purview can help address their needs.
 
