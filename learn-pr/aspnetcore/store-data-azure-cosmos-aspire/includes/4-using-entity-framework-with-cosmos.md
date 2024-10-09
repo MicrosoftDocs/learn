@@ -10,13 +10,13 @@ Entity Framework is an object-relational mapper. You can use it to work with dat
 
 For example, with Entity Framework, you define a class with properties in C# and create an instance of that class. Entity Framework automatically creates objects in the Cosmos DB database to store it.
 
-To use Entity Framework, you also need a context object. The context represents a session open with a specific database. In .NET Aspire, the Cosmos DB Entity Framework component automatically creates the context for you and passes it to the consuming projects.
+To use Entity Framework, you also need a context object. The context represents a session open with a specific database. In .NET Aspire, the Cosmos DB Entity Framework integration automatically creates the context for you and passes it to the consuming projects.
 
 Let's see how that works.
 
 ## Configuring the App Host
 
-When you use the .NET Aspire Cosmos DB Entity Framework component, the configuration steps in the app host are the same as in the last unit.
+When you use the .NET Aspire Cosmos DB Entity Framework integration, the configuration steps in the app host are the same as in the last unit.
 
 Install the `Aspire.Hosting.Azure.CosmosDB` package:
 
@@ -24,7 +24,7 @@ Install the `Aspire.Hosting.Azure.CosmosDB` package:
 dotnet add package Aspire.Hosting.Azure.CosmosDB
 ```
 
-In the app host's _Program.cs_ file, add the Cosmos DB component, create a database, and pass it to consuming packages. This example also configures the local Cosmos DB emulator:
+In the app host's _Program.cs_ file, add the Cosmos DB integration, create a database, and pass it to consuming packages. This example also configures the local Cosmos DB emulator:
 
 ```csharp
 var builder = DistributedApplication.CreateBuilder(args);
@@ -39,7 +39,7 @@ var consumingProject = builder.AddProject<Projects.ConsumingProject>()
 
 ## Configuring the consuming projects
 
-The configuration code for the Cosmos DB Entity Framework component is different from the last unit. In each project that uses the Cosmos DB database, start by installing the `Aspire.Microsoft.EntityFrameworkCore.Cosmos` package:
+The configuration code for the Cosmos DB Entity Framework integration is different from the last unit. In each project that uses the Cosmos DB database, start by installing the `Aspire.Microsoft.EntityFrameworkCore.Cosmos` package:
 
 ```dotnetcli
 dotnet add package Aspire.Microsoft.EntityFrameworkCore.Cosmos
@@ -103,4 +103,4 @@ public class StreetAddress
 
 ## Learn more
 
-- [.NET Aspire Microsoft Entity Framework Core Cosmos DB component](/dotnet/aspire/database/azure-cosmos-db-entity-framework-component)
+- [.NET Aspire Microsoft Entity Framework Core Cosmos DB integration](/dotnet/aspire/database/azure-cosmos-db-entity-framework-integration)
