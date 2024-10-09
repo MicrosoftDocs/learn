@@ -1,6 +1,6 @@
 Another nice Azure Advisor feature is that it lets you apply its recommendations in bulk so that you can quickly and easily resolve issues in batches.
 
-As we ran through the exercises, a **Quick Fix** button appears next to some of the Advisor recommendations. **Quick Fix** offers a faster, easier method to remediate an issue affecting multiple resources.
+As we ran through the exercises, a **Quick Fix** button appeared next to some of the Advisor recommendations. **Quick Fix** offers a faster, easier method to remediate an issue affecting multiple resources.
 
 It provides the capability to remediate resources in bulk, which helps you optimize your subscriptions faster by applying the recommendations at scale.
 

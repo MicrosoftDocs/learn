@@ -88,7 +88,7 @@ Notice that each of the five category tiles shows:
 
 :::image type="content" source="../media/azure-advisor-five-categories-preview.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-five-categories.png":::
 
-By making a selection, you open a new page that shows details about the recommendations for the chosen category. Under a summary of the recommendations, see a table that provides more information, such as:
+By making a selection, you open a new page that shows details about the recommendations for the chosen category. Under a summary of the recommendations, you see a table that provides more information, such as:
 
 - A linked description of each recommendation
 - The impact level of each recommendation
