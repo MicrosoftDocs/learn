@@ -95,6 +95,9 @@ Now, the .NET project should be built and ready for you to add your own custom c
     DefaultAzureCredential credential = new();
     ```
 
+    > [!TIP]
+    > The <xref:Azure.Identity.DefaultAzureCredential> token credential object automatically uses your currently logged in account for the Azure CLI to authenticate to the .NET SDK.
+
 1. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
 
     ```csharp
