@@ -2,7 +2,7 @@
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.exercise
 title: Practice the implementation of Unity Catalog
 metadata:
-  title: Practice the implementation of Unity Catalog
+  title: Exercise - Practice the implementation of Unity Catalog
   description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks with Unity Catalog."
   ms.date: 08/14/2024
   author: wwlpublish
