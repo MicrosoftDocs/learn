@@ -120,9 +120,7 @@ The Microsoft Entra authentication is only configured for items (or the data pla
 
 ### Configure development environment
 
-A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
-
-#### [Develop in browser](#tab/github-codespaces)
+A development container environment is available with all dependencies required to complete every exercise in this project.
 
 GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
@@ -148,25 +146,3 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 1. Close the terminal.
 
 The remaining exercises in this project take place in the context of this development container.
-
-#### [Develop locally](#tab/visual-studio-code)
-
-The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
-
-1. Open the `azure-samples/cosmos-db-dotnet` template repository from GitHub within Visual Studio Code.
-
-    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/cosmos-db-dotnet)
-
-1. Open a new terminal.
-
-1. Validate that .NET is installed in your environment:
-
-    ```bash
-    dotnet --list-sdks
-    ```
-
-1. Close the terminal.
-
-The remaining exercises in this project take place in the context of this development container.
-
----
