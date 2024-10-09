@@ -16,7 +16,7 @@ Now, let's walk through a real-world example to see how Advisor can work in your
 
    If you don't have any recommendations, it could mean that you're already following all our best practices for your deployed resources. It might also mean that you don't have any Azure subscriptions or resources, or that you don't have sufficient permissions to access them.
 
-   :::image type="content" source="../media/azure-advisor-select-cost.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-select-cost.png":::
+    :::image alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-select-cost.png" source="../media/azure-advisor-select-cost-preview.png" type="content":::
 
    The page for the tile you selected opens, where you can view things like:
 
@@ -26,13 +26,13 @@ Now, let's walk through a real-world example to see how Advisor can work in your
 
 1. Select a recommendation from the **Description** list to review it. The **Recommendation details** page suggests some ways that you can remediate the flagged issue. For this exercise, we're looking at the recommendation for **Right-size or shutdown underutilized virtual machines**, but feel free to select any active recommendation you see.
 
-   :::image type="content" source="../media/azure-advisor-select-cost-recommendation.png" alt-text="Screenshot showing how to select a recommendation from the Advisor Cost page." lightbox="../media/azure-advisor-select-cost-recommendation.png":::
+    :::image alt-text="Screenshot showing how to select a recommendation from the Advisor Cost page." lightbox="../media/azure-advisor-cost-recommendations-list.png" source="../media/azure-advisor-cost-recommendations-list-preview.png" type="content":::
 
-   When you select the recommendation, a more detailed page opens to show the impacted resources and the recommended actions you can take to resolve the issues. In our case, the **Shut down or resize your virtual machine** page also breaks down the cost savings you can achieve per resource.
+   When you select the recommendation, a more detailed page opens to show the impacted resources and the recommended actions you can take to resolve the issues. In our case, the **Right-size or shutdown underutilized virtual machines** page also breaks down the cost savings you can achieve per resource.
 
    For this exercise, there are a few recommended actions you can apply for each virtual machine.
 
-   :::image type="content" source="../media/azure-advisor-vm-resize-shutdown-recommendation.png" alt-text="Screenshot showing recommended actions you can take." lightbox="../media/azure-advisor-vm-resize-shutdown-recommendation.png":::
+   :::image alt-text="Screenshot showing recommended actions you can take." lightbox="../media/azure-advisor-recommendation-rightsize-shutdown-vm-recommended-actions.png" source="../media/azure-advisor-recommendation-rightsize-shutdown-vm-recommended-actions-preview.png" type="content":::
 
    > [!NOTE]
    > If you're not ready to take action during this exercise, simply close the Azure portal, and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
@@ -41,4 +41,4 @@ Now, let's walk through a real-world example to see how Advisor can work in your
 
    However, notice that you can also choose to **Postpone** or **Dismiss** the recommended action, as we discussed in a previous unit.
 
-   :::image type="content" source="../media/advisor-details-dashboard-postpone-dismiss.png" alt-text="Screenshot highlighting postpone and dismiss options." lightbox="../media/advisor-details-dashboard-postpone-dismiss.png":::
+   :::image type="content" source="../media/azure-advisor-recommendation-rightsize-shutdown-vm-action-preview.png" alt-text="Screenshot highlighting postpone and dismiss options." lightbox="../media/azure-advisor-recommendation-rightsize-shutdown-vm-action.png":::
