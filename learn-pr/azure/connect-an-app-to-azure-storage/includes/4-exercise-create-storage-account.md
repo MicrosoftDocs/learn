@@ -2,7 +2,7 @@ Now that we have an app, we need an Azure storage account to work with.
 
 ## Use the Azure CLI to create an Azure storage account
 
-We'll use the `az storage account create` command to create a new storage account. There are several parameters to control the storage account's configuration.
+Use the `az storage account create` command to create a new storage account. There are several parameters to control the storage account's configuration.
 
  | Option | Description |
  |--------|-------------|
@@ -13,11 +13,11 @@ We'll use the `az storage account create` command to create a new storage accoun
 
 Use this table to craft a command line in Cloud Shell on the right to create the account.
 
-- Use a unique name. We recommend something like "photostore" with your initials and a random number. You'll get an error if it's not unique.
+- Use a unique name. We recommend something like *photostore* with your initials and a random number. If it's not unique, you get an error and you must change it to proceed.
 
-- Normally, you'd create a new resource group to hold your app resources, but in this case, use the provided sandbox resource group "**<rgn>[sandbox resource group name]</rgn>**".
+- Normally, you create a new resource group to hold your app resources, but in this case, use the provided sandbox resource group "**<rgn>[sandbox resource group name]</rgn>**".
 
-- Use "Standard_LRS" for the **sku**. This will use standard storage with local replication, which is fine for this example.
+- Use "Standard_LRS" for the **sku**. This uses standard storage with local replication, which is fine for this example.
 
 ### Select a location
 
@@ -25,11 +25,11 @@ Use this table to craft a command line in Cloud Shell on the right to create the
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 > [!TIP]
-> You can select a location with the `--location` parameter. If you don't supply one, the storage account will be created in the same location as your resource group. Because this is a more basic exercise, you can omit the parameter from the following command, if you prefer.
+> You can select a location with the `--location` parameter. If you don't supply one, the storage account is created in the same location as your resource group. Because this is a more basic exercise, you can omit the parameter from the following command, if you prefer.
 
 ### Create a storage account
 
-1. Use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
+- Use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
 
     ```azurecli
     az storage account create \

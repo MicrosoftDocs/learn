@@ -16,7 +16,7 @@ With just a quick glance, Advisor Score helps you to:
 
 Advisor displays your category scores and your overall Advisor Score as percentages.
 
-:::image type="content" source="../media/azure-advisor-score-page.png" alt-text="Screenshot showing the Advisor score page." lightbox="../media/azure-advisor-score-page.png":::
+:::image type="content" source="../media/azure-advisor-score-page-preview.png" alt-text="Screenshot showing the Advisor score page." lightbox="../media/azure-advisor-score-page.png":::
 
 - A score of 100% in any category means all your resources, assessed by Advisor, follow the best practices that Advisor recommends.
 - By contrast, a score of 0% means that none of your resources, assessed by Advisor, follows Advisor recommendations.
@@ -33,9 +33,13 @@ As an example, for a single subscription, the Advisor Score is the simple mean o
 
 The Advisor Score would be 0.84, or **84%**, as shown in the following equation:
 
-<!-- $$\frac{73 + 81 + 89 + 77 + 100}{5 x 100} = 0.84$$ -->
+$$
+\frac{73+81+89+77+100}{5 \times 100}=0.84
+$$
 
+<!--
 :::image type="content" source="../media/advisor-equation.png" alt-text="(73 + 81 + 89 + 77 + 100)/(5 x 100) = 0.84" border="false":::
+-->
 
 The scores for multiple subscriptions are calculated a bit differently. Each category score is aggregated according to resources consumed by each subscription.
 

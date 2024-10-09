@@ -1,6 +1,6 @@
 ::: zone pivot="csharp"
 
-Let's integrate the Azure Storage Blobs client library into your .NET Core console application. The Azure Storage Blobs client library for .NET is distributed with NuGet. You'll want to add the **Azure.Storage.Blobs** package to your .NET or .NET Core applications.
+Let's integrate the Azure Storage Blobs client library into your .NET Core console application. The Azure Storage Blobs client library for .NET is distributed with NuGet. You want to add the **Azure.Storage.Blobs** package to your .NET or .NET Core applications.
 
 ## Add the Azure Storage NuGet package
 
@@ -12,7 +12,7 @@ Let's integrate the Azure Storage Blobs client library into your .NET Core conso
     dotnet add package Azure.Storage.Blobs
     ```
 
-1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command:
+1. You see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, build and run the app again to make sure everything is ready to go. Enter the following command:
 
     ```dotnetcli
     dotnet run
@@ -24,7 +24,7 @@ Let's integrate the Azure Storage Blobs client library into your .NET Core conso
 
 ::: zone pivot="javascript"
 
-Let's integrate the **Azure Storage Blob Client Library for JavaScript** into your application. The Node.js client library is available through the Node Package manager (npm). You'll want to add the **@azure/storage-blob** package to your **packages.json** file.
+Let's integrate the **Azure Storage Blob Client Library for JavaScript** into your application. The Node.js client library is available through the Node Package manager (npm). You want to add the **@azure/storage-blob** package to your **packages.json** file.
 
 ## Add the Azure Storage package
 
@@ -36,7 +36,7 @@ Let's integrate the **Azure Storage Blob Client Library for JavaScript** into yo
     npm install @azure/storage-blob --save
     ```
 
-1. You'll see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command:
+1. You see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, build and run the app again to make sure everything is ready to go. Enter the following command:
 
     ```bash
     node index.js
@@ -46,4 +46,4 @@ Let's integrate the **Azure Storage Blob Client Library for JavaScript** into yo
 
 ::: zone-end
 
-Now that we have the necessary libraries in place, let's look at the common tasks you'll do in your code to work with Azure storage.
+Now that we have the necessary libraries in place, let's look at the common tasks for working with Azure storage in your code.

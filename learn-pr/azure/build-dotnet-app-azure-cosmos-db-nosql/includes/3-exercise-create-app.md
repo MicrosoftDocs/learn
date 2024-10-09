@@ -21,10 +21,16 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     > [!TIP]
     > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventory).
 
-1. Add a package reference to version **3** of the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK from NuGet.
+1. Add a package reference to version **3** of the [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) library from NuGet.
 
     ```dotnetcli
     dotnet add package Microsoft.Azure.Cosmos --version 3.*
+    ```
+
+1. Add a package reference to version **1** of the [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity) library from NuGet.
+
+    ```dotnetcli
+    dotnet add package Azure.Identity --version 1.*
     ```
 
 1. Build the .NET project to ensure you correctly configured your project.
@@ -50,7 +56,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
 
 ## Connect to the account
 
-Now, the .NET project should be built and ready for you to add your own custom code. You have access to the <xref:Microsoft.Azure.Cosmos> namespace and all of the classes necessary to connect to the API for NoSQL. Here, you open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
+Now, the .NET project should be built and ready for you to add your own custom code. You have access to the <xref:Microsoft.Azure.Cosmos> and <xref:Azure.Identity> namespaces including all of the classes necessary to connect to the API for NoSQL. Here, you open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
 
 1. Open the *Program.cs* file within the code editor.
 
@@ -58,34 +64,36 @@ Now, the .NET project should be built and ready for you to add your own custom c
 
 1. Add using directives for the following namespaces:
 
+    - <xref:Azure.Identity>
     - <xref:Microsoft.Azure.Cosmos>
     - <xref:Microsoft.Azure.Cosmos.Fluent>
     - <xref:Microsoft.Azure.Cosmos.Linq>
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;
     ```
 
-1. Create a constant string variable named `connectionString`. Set the value of the variable to the connection string you recorded earlier in this module.
+1. Create a string variable of type named `endpoint`. Set the value of the variable to the account's *document endpoint* you recorded earlier in this module.
 
     ```csharp
-    const string connectionString = "<your-azure-cosmos-db-connection-string>";
+    const string endpoint = "<nosql-account-endpoint>";
     ```
 
     > [!TIP]
-    > Assuming the name of the Azure Cosmos DB account is `nybncrsna76fo-cosmos-nosql` and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the connection string like this example:
+    > Assuming the name of the Azure Cosmos DB account is `mslearn-nosql-000000000`, you would configure the endpoint like this example:
     >
     > ```csharp
-    > const string connectionString = "AccountEndpoint=https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/;AccountKey=Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==;";
+    > const string endpoint = "https://mslearn-nosql-000000000.documents.azure.com:443/";
     > ```
     >
 
-1. Print the connection string to the console.
+1. Create a new variable of type <xref:Azure.Identity.DefaultAzureCredential> named `credential`.
 
     ```csharp
-    Console.WriteLine($"[Connection string]:\t{connectionString}");
+    DefaultAzureCredential credential = new();
     ```
 
 1. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
@@ -97,10 +105,10 @@ Now, the .NET project should be built and ready for you to add your own custom c
     };
     ```
 
-1. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to create an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient> named `client`. Finally, wrap the creation of the client variable with a using statement.
+1. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the credential and endpoint to the constructor. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to create an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient> named `client`. Finally, wrap the creation of the client variable with a using statement.
 
     ```csharp
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
+    using CosmosClient client = new CosmosClientBuilder(endpoint, credential)
         .WithSerializerOptions(serializerOptions)
         .Build();
     ```
@@ -128,7 +136,6 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 1. Observe the output of running the application. The output should match the example here.
 
     ```output
-    [Connection string]:    <your-azure-cosmos-db-connection-string>
     [Client ready]
     ```
 
@@ -160,16 +167,16 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;
     
-    const string connectionString = "<your-azure-cosmos-db-connection-string>";
+    const string endpoint = "<nosql-account-endpoint>";
 
-    Console.WriteLine($"[Connection string]:\t{connectionString}");
+    DefaultAzureCredential credential = new();
     
     CosmosSerializationOptions serializerOptions = new()
     {
         PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
     };
     
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
+    using CosmosClient client = new CosmosClientBuilder(endpoint, credential)
         .WithSerializerOptions(serializerOptions)
         .Build();
     
