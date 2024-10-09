@@ -9,7 +9,7 @@ Now that you have finished this module, you should be able to:
 
 To avoid consuming all your monthly GitHub Codespaces time, it's important to delete all your resources after you upload your changes to your repository. Follow these steps to remove your resources:
 
-1. Go to [Codespaces on Github here](https://github.com/codespaces).
+1. Go to [Codespaces on GitHub here](https://github.com/codespaces).
 1. Find your Codespace instance from the list, and select the three dots menu to display your options.
 1. Select **Delete** to remove your Codespace instance.
 
