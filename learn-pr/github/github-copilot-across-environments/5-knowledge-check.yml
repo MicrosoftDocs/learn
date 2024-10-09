@@ -12,7 +12,7 @@ durationInMinutes: 15
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is NOT mentioned as one of the programming languages receiving particularly strong support from GitHub Copilot?"
+  - content: "Which of the following choices isn't mentioned as one of the programming languages receiving strong support from GitHub Copilot?"
     choices:
     - content: "Python"
       isCorrect: false
@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. JavaScript is mentioned as one of the languages receiving strong support from GitHub Copilot."
     - content: "Java"
       isCorrect: true
-      explanation: "Correct. Java is not mentioned in the list of languages receiving particularly strong support from GitHub Copilot."
+      explanation: "Correct. Java isn't mentioned in the list of languages receiving strong support from GitHub Copilot."
     - content: "Ruby"
       isCorrect: false
       explanation: "Incorrect. Ruby is mentioned as one of the languages receiving strong support from GitHub Copilot."
@@ -30,16 +30,16 @@ quiz:
     choices:
     - content: "/generate"
       isCorrect: false
-      explanation: "Incorrect. The /generate command is not used for generating unit tests."
+      explanation: "Incorrect. The /generate command isn't used for generating unit tests."
     - content: "/test"
       isCorrect: false
-      explanation: "Incorrect. The /test command is not the correct slash command for generating unit tests."
+      explanation: "Incorrect. The /test command isn't the correct slash command for generating unit tests."
     - content: "/tests"
       isCorrect: true
       explanation: "Correct. The /tests slash command is used for generating unit tests for selected code."
     - content: "/unittest"
       isCorrect: false
-      explanation: "Incorrect. The /unittest command is not a valid slash command in GitHub Copilot Chat."
+      explanation: "Incorrect. The /unittest command isn't a valid slash command in GitHub Copilot Chat."
   - content: "What is the purpose of the @workspace agent in GitHub Copilot Chat?"
     choices:
     - content: "To focus only on the current file"
@@ -50,10 +50,10 @@ quiz:
       explanation: "Correct. The @workspace agent broadens the scope of Copilot's understanding to the entire project or workspace."
     - content: "To run terminal commands"
       isCorrect: false
-      explanation: "Incorrect. Running terminal commands is not the primary purpose of the @workspace agent."
+      explanation: "Incorrect. Running terminal commands isn't the primary purpose of the @workspace agent."
     - content: "To change Visual Studio Code settings"
       isCorrect: false
-      explanation: "Incorrect. The @workspace agent is not used for changing IDE settings."
+      explanation: "Incorrect. The @workspace agent isn't used for changing IDE settings."
   - content: "What command would you use to get an explanation of a specific command using GitHub Copilot CLI?"
     choices:
     - content: "gh copilot suggest"
@@ -64,7 +64,7 @@ quiz:
       explanation: "Correct. The 'gh copilot explain' command is used to get explanations for specific commands."
     - content: "gh copilot clarify"
       isCorrect: false
-      explanation: "Incorrect. 'clarify' is not a valid command in GitHub Copilot CLI."
+      explanation: "Incorrect. 'clarify' isn't a valid command in GitHub Copilot CLI."
     - content: "gh copilot describe"
       isCorrect: false
-      explanation: "Incorrect. 'describe' is not a valid command in GitHub Copilot CLI."
+      explanation: "Incorrect. 'describe' isn't a valid command in GitHub Copilot CLI."
