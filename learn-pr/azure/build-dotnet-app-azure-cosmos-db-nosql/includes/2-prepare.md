@@ -139,7 +139,7 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 
 1. Open a new terminal in the codespace.
 
-1. Validate that .NET 8 is installed in your environment:
+1. Validate that .NET is installed in your environment:
 
     ```bash
     dotnet --list-sdks
@@ -159,7 +159,7 @@ The Dev Containers extension for Visual Studio Code requires Docker to be instal
 
 1. Open a new terminal.
 
-1. Validate that .NET 8 is installed in your environment:
+1. Validate that .NET is installed in your environment:
 
     ```bash
     dotnet --list-sdks
