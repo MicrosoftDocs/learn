@@ -133,7 +133,7 @@ Let's use the eShop reference application to demonstrate the .NET Aspire stack. 
 1. Expand the **AppHost** project, and then select the _eShop.AppHost/Program.cs_ file.
 1. In the _Program.cs_ file, notice that:
 
-   - Components of the application are added to a `DistributedApplicationBuilder` object named `builder`.
+   - Integrations of the application are added to a `DistributedApplicationBuilder` object named `builder`.
    - Backing services, such as a Redis cache, a RabbitMQ messaging service, and a PostgreSQL database, are added to the builder. Each will be provisioned in a Docker container.
    - Each microservice is added to the builder by using the `builder.AddProject()` method.
    - References to the backing services are injected into each microservice by using the `.WithReference()` method.

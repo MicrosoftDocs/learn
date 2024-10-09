@@ -117,6 +117,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;
