@@ -5,7 +5,7 @@ title: How Docker containers work
 metadata:
   title: How Docker containers work
   description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
-  ms.date: 09/16/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag isn't used with this network."
  
-  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution, for example the resolve.conf file on Linux?"
+  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution; for example, the resolve.conf file on Linux?"
     choices:
     - content: "A volume"
       isCorrect: false

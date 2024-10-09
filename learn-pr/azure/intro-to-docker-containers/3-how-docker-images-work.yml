@@ -5,7 +5,7 @@ title: How Docker images work
 metadata:
   title: How Docker images work
   description: In this unit, we discuss how we build Docker images and explore basic image management.
-  ms.date: 09/16/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "While Docker Desktop is only available for Windows and macOS, it does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
 
-  - content: "Which is correct Docker command to rebuild a container image?"
+  - content: "Which is the correct Docker command to rebuild a container image?"
     choices:
     - content: "docker rebuild"
       isCorrect: false
