@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.developer-use-cases-for-ai-with-github-copilot.aligning-with-developer-preferences
+title: Aligning with Developer Preferences
+metadata:
+  title: Aligning with Developer Preferences
+  description: This content is part of the "Developer Use Cases for AI with GitHub Copilot" module.
+  ms.date: 10/09/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-aligning-with-developer-preferences.md)]
