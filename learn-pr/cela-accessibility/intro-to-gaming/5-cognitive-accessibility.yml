@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Learning and cognitive processing applies to problem solving."
     - content: "Attention."
       isCorrect: true
-      explanation: "Correct. Attention can be affected by a range of sensory stimuli. The visual distraction provided by the animation in the background might make it difficult for someone who has a disability related to attention to navigate the menu."
+      explanation: "Correct. The visual distraction provided by the animation in the background might make it difficult for someone who has a disability related to attention to navigate the menu."
     - content: "Memory."
       isCorrect: false
       explanation: "Incorrect. Memory applies to recalling past information to inform future decisions."
