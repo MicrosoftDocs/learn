@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "A volume"
       isCorrect: false
-      explanation: "A volume is stored on the host filesystem at a specific folder location. However, volume data isn't meant to be updated by the host."
+      explanation: "A volume is stored on the host filesystem at a specific folder location. However, the host isn't meant to update volume data."
     - content: "Bind mount"
       isCorrect: true
-      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, bind mount data is expected to be updated by the host. The resolve.conf contents is expected to change by the host and used by both the container and host."
+      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, the host is expected to update bind mount data. The resolve.conf contents is expected to change by the host and used by both the container and host."
