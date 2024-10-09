@@ -11,7 +11,7 @@ metadata:
   description: |
     Review the project's environment and get started creating an Azure Cosmos DB for NoSQL account using the Azure CLI.
   codespaces-url: |
-    
+    https://codespaces.new/Azure-Samples/cosmos-db-dotnet?template=true&quickstart=1
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
