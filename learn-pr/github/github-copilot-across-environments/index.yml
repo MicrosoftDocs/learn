@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/08/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module-intro-interective-tutorial
-  ms.prod: learning-github
+  ms.topic: module
   ms.collection: github-ai-copilot
   ms.service: github-copilot
 title: "GitHub Copilot Across Environments: IDE, Chat, and Command Line Techniques"
