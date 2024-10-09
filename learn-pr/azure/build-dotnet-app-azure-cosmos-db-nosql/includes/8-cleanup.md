@@ -12,7 +12,7 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 ## Delete Azure resources
 
-In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them. You can delete resources individually or delete the resource group to delete the entire set of resources.
+In this module, you created resources using your Azure subscription. Clean up these resources so that you aren't still charged for them. You can delete resources individually or delete the resource group to delete the entire set of resources.
 
 1. Sign in to the Azure CLI.
 

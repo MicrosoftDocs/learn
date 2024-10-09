@@ -143,7 +143,7 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 
 ### [Review code](#tab/review-code)
 
-1. Review the *\*.csproj* project file to ensure that the project configuration include both referenced projects.
+1. Review the *\*.csproj* project file to ensure that the project configuration includes both referenced projects.
 
     ```xml
     <ItemGroup>

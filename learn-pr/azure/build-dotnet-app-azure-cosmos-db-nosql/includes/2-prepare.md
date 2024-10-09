@@ -27,7 +27,7 @@ To complete this project, you need an API for NoSQL account.
 
 ### Sign in to Azure CLI
 
-If you want to complete this exercise, you'll need to create an Azure subscription before you begin.
+If you want to complete this exercise, you need to create an Azure subscription before you begin.
 
 1. Verify that the Azure CLI is installed in your development environment.
 
