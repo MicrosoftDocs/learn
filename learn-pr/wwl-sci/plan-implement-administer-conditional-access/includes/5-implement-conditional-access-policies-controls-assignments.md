@@ -2,7 +2,7 @@ Visual Studio App Center supports Microsoft Entra Conditional Access, an advance
 
 ## Setting up Conditional Access
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [What is Conditional Access?](../media/df6c83b4).
+This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
 In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and select **Conditional Access**.
 
