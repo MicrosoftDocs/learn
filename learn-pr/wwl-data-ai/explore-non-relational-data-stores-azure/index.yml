@@ -3,10 +3,11 @@ uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
   title: Explore fundamentals of Azure Cosmos DB
   description: "Explore the features and capabilities of Azure Cosmos DB, Identify supported AIs, and interact with a Cosmos DB database."
-  ms.date: 09/17/2024
+  ms.date: 10/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-cosmos-db
