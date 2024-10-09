@@ -5,8 +5,6 @@ metadata:
   unitType: learning-content
   title: Clean up
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Clean up the project's Visual Studio Code environment after concluding the guided project steps.

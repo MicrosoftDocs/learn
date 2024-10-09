@@ -5,8 +5,6 @@ metadata:
   unitType: learning-content
   title: Prepare
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Review the project's environment and get started creating an Azure Cosmos DB for NoSQL account using the Azure CLI.

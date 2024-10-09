@@ -5,8 +5,6 @@ metadata:
   unitType: exercise
   title: Exercise - Read and query items
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Point read items and perform straightforward queries using the Microsoft.Azure.Cosmos .NET library from NuGet.

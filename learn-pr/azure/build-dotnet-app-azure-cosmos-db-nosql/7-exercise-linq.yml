@@ -5,8 +5,6 @@ metadata:
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Build queries using the C# LINQ method syntax within the Microsoft.Azure.Cosmos .NET library from NuGet.

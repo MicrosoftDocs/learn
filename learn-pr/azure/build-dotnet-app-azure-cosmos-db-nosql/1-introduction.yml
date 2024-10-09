@@ -5,8 +5,6 @@ metadata:
   unitType: introduction
   title: Introduction
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Introduction to the guided project, the goals of the project, and the hypothetical scenario for the project.
