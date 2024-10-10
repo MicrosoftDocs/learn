@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.service: azure-stack-hub
 title: Plan and configure business continuity and disaster recovery
 summary: |
   Learn the best practices for deploying and managing Azure Stack Hub to help mitigate data loss.
