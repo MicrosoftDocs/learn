@@ -8,6 +8,7 @@ metadata:
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
+  ai-usage: ai-assisted
 title: Explore security practices for Azure SQL Database
 summary: You'll explore different features and tools to help you secure an Azure SQL Database.
 abstract: |
