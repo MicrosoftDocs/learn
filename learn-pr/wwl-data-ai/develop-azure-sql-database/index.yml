@@ -8,6 +8,7 @@ metadata:
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
+  ai-usage: ai-assisted
 title: Develop for Azure SQL Database
 summary: You'll learn different methods to develop and automate Azure SQL Database publishing for development purposes.
 abstract: |
