@@ -2,7 +2,7 @@ Rapid responses to users are essential for any successful web application becaus
 
 Imagine you work for an outdoor clothing retailer. Your new public-facing ecommerce site, which is built from microservices and uses .NET Aspire, is approaching completion but you're not happy with its responsiveness. You want to investigate whether a Redis cache may solve this problem and remove the need to upgrade hardware or deploy extra containers.
 
-In this module, you'll learn how .NET Aspire components make it simple to connect to a Redis system for caching data and output.
+In this module, you'll learn how .NET Aspire integrations make it simple to connect to a Redis system for caching data and output.
 
 ## Learning objectives
 

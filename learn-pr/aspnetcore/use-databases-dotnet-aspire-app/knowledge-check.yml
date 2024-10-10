@@ -12,17 +12,17 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Which database components have support for a database management tool?"
+  - content: "Which database integrations have support for a database management tool?"
     choices:
     - content: "SQL Server, MySQL, and PostgreSQL"
       isCorrect: false
-      explanation: "That's incorrect. Not all of these components support a management tool."
+      explanation: "That's incorrect. Not all of these integrations support a management tool."
     - content: "MySQL, PostgreSQL, and MongoDB"
       isCorrect: true
       explanation: "That's correct. MySQL supports PhpMyAdmin, PostgreSQL supports pgAdmin, and MongoDB supports Mongo Express."
     - content: "SQL Server, MySQL, and MongoDB"
       isCorrect: false
-      explanation: "That's incorrect. Not all of these components support a management tool."
+      explanation: "That's incorrect. Not all of these integrations support a management tool."
   - content: "What ways are there to manage the configuration for a MongoDB connection?"
     choices:
     - content: "Connection strings in the appsettings.json file and inline code."

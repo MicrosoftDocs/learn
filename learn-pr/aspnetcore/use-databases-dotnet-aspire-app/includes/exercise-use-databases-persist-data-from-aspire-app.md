@@ -123,7 +123,7 @@ Let's use `git` to obtain the current Northern Mountains app:
 
 1. To stop debugging, press <kbd>Shift</kbd>+<kbd>F5</kbd>, or select **Debug > Stop Debugging**.
 
-## Add a .NET Aspire PostgreSQL component
+## Add a .NET Aspire PostgreSQL integration
 
 The team responsible for the catalog microservices built the app to use a locally stored SQLite database. This approach is fine for development, but the team wants to use a more robust database for production.
 
@@ -262,7 +262,7 @@ Using .NET Aspire allowed your team to remove a whole project. Also, the catalog
 1. The app opens and works as before.
 1. To stop debugging, press <kbd>Shift</kbd>+<kbd>F5</kbd>, or select **Debug > Stop Debugging**.
 
-## Add the .NET Aspire MongoDB component to the app
+## Add the .NET Aspire MongoDB integration to the app
 
 The current app uses Redis as an in-memory data store for a customer's shopping basket. The team wants to use a more robust and durable data store for the basket. Replace the Redis cache with a MongoDB database.
 
@@ -363,7 +363,7 @@ The basket microservice uses `HostingExtensions` to manage the Redis data store.
 1. If the **Preview Changes** dialog appears, select **Apply**.
 1. In the **License Acceptance** dialog, select **I Accept**.@
 1. In **Solution Explorer**, expand the **eShop.AppHost** project, and then open the _Program.cs_ file.
-1. In the Databases section, add a MongoDB component:
+1. In the Databases section, add a MongoDB integration:
 
     ```csharp
     var mongo = builder.AddMongoDB("mongo")
