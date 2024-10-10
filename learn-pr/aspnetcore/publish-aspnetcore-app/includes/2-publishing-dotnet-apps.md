@@ -12,13 +12,13 @@ When you publish a .NET app, you can choose between two different types of deplo
 
 :::image type="content" source="../media/framework-dependent.gif" alt-text="An animation showing how a framework-dependent deployment depends on the presence of the .NET runtime on the target machine.":::
 
-A framework-dependent deployment includes only your app's files and dependencies. It doesn't include the .NET runtime. Instead, the target machine must have the .NET runtime installed in order to run the app. This is the default deployment type for .NET apps.
+A framework-dependent deployment includes only your app's files and dependencies. It doesn't include the .NET runtime. Instead, the target machine must have the .NET runtime installed in order to run the app. This type of deployment is the default for .NET apps.
 
 ### Self-contained deployment
 
 :::image type="content" source="../media/self-contained.gif" alt-text="An animation showing how a self-contained deployment includes the .NET runtime with the app.":::
 
-A self-contained deployment includes your app's files, dependencies, and the .NET runtime. The .NET runtime is included with the app, so the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments, but it also makes them more portable. It also makes it easier to run multiple versions of the .NET runtime side by side on the same machine.
+A self-contained deployment includes your app's files, dependencies, and the .NET runtime. The .NET runtime is included with the app, so the target machine doesn't need to have the .NET runtime installed in order to run the app. Including the runtime makes self-contained deployments larger than framework-dependent deployments, but it also makes them more portable. It also makes it easier to run multiple versions of the .NET runtime side by side on the same machine.
 
 ### Choosing a deployment type
 
@@ -46,7 +46,7 @@ The deployment type you choose depends on your app's requirements and the target
     :::column-end:::
     :::column:::
         - Requires the .NET runtime to be installed on the target machine
-        - Requires managing the .NET runtime version(s) installed on the target machine
+        - Requires managing the .NET runtime versions installed on the target machine
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -84,7 +84,7 @@ If you're deploying to a containerized environment, you can package your ASP.NET
 
 ### Azure
 
-If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. A variety of tools make it easy to deploy your app to Azure from the command line. These tools include:
+If you're deploying to Azure, you can host your ASP.NET Core app in Azure App Service or Azure Container Apps. Various tools make it easy to deploy your app to Azure from the command line. These tools include:
 
 - Azure Tools extension for Visual Studio Code
 - Visual Studio

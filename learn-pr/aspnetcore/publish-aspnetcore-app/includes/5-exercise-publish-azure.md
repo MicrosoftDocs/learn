@@ -1,8 +1,8 @@
-Many integrated development environments and other tools can publish an ASP.NET Core app to a variety of hosting environments. Behind the scenes, these tools are running the `dotnet publish` command with various options.
+Many integrated development environments and other tools can publish an ASP.NET Core app to various hosting environments. Behind the scenes, these tools are running the `dotnet publish` command with various options.
 
-Your manager is evaluating Azure as an option for hosting your app, and has asked you to publish the app as a proof-of-concept. You need to publish the app on Azure. You've selected Azure App Service as the hosting environment because it's easy to use and supports ASP.NET Core apps.
+Your manager is evaluating Azure as an option for hosting your app, and they asked you to publish the app as a proof-of-concept. You need to publish the app on Azure. You've selected Azure App Service as the hosting environment because it's easy to use and supports ASP.NET Core apps.
 
-In this exercise, you'll publish an ASP.NET Core app as a framework-dependent deployment for Azure.
+In this exercise, you publish an ASP.NET Core app as a framework-dependent deployment for Azure.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure subscription, you can get a [free account](https://azure.microsoft.com/free/dotnet/) or skip this exercise. 
@@ -12,7 +12,7 @@ In this exercise, you'll publish an ASP.NET Core app as a framework-dependent de
 In Azure App Service, a *web app* can be thought of as a single-application web server. You need to create an Azure App Service web app in which to deploy your ASP.NET Core app. Make sure you have the Azure Tools extension for Visual Studio Code installed.
 
 1. In Visual Studio Code, press **Ctrl+Shift+A** to open the Azure Tools extension.
-1. Log in to your Azure subscription and directory if required.
+1. Sign in to your Azure subscription and directory if necessary.
 1. Press **Ctrl+Shift+P** to open the command palette.
 1. Search for and select **Azure App Service: Create New Web App...**. Do **NOT** select the **Advanced** option.
 

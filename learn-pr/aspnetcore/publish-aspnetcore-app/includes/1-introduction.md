@@ -2,7 +2,7 @@ An ASP.NET Core app is composed of source code files, static assets, and configu
 
 ## Example scenario
 
-Suppose you are an entry-level ASP.NET Core developer at a small company. You have been tasked with developing a new web application for the company's customers and deploying it to a web server. 
+Suppose you're an entry-level ASP.NET Core developer at a small company. Your manager tasked you with developing a new web application for the company's customers and deploying it to a web server. 
 
 ## What will we be doing?
 

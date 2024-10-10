@@ -1,8 +1,8 @@
 Self-contained deployments include the app and its dependencies, as well as the .NET runtime. Since the .NET runtime is included with the app, the target machine doesn't need to have the .NET runtime installed in order to run the app. This makes self-contained deployments larger than framework-dependent deployments. Self-contained apps must also handle deploying .NET runtime updates to receive the latest patches.
 
-Your IT department has notified your team that for disaster recovery purposes, they are testing your app on servers that don't have the .NET runtime installed. They intend to test the app on both a 64-bit Windows server and a 64-bit Linux server. To support this testing, you need to publish the app as a self-contained deployment for each environment.
+Your IT department notified your team that for disaster recovery purposes, they're testing your app on servers that don't have the .NET runtime installed. They intend to test the app on both a 64-bit Windows server and a 64-bit Linux server. To support this testing, you need to publish the app as a self-contained deployment for each environment.
 
-In this exercise, you'll publish an ASP.NET Core app as self-contained deployments for Windows and Linux.
+In this exercise, you publish an ASP.NET Core app as self-contained deployments for Windows and Linux.
 
 ## Publish as a self-contained deployment
 
@@ -23,7 +23,7 @@ In this exercise, you'll publish an ASP.NET Core app as self-contained deploymen
     In the previous command:
 
     - `-c Release` specifies that the app should be built in release mode. This optimizes the app for performance.
-    - `-r win-x64` specifies that the app should be published for 64-bit Windows. `win-x64` is the [runtime identifier](/dotnet/core/rid-catalog) (RID) for 64-bit Windows, so the app will be published as a self-contained deployment for 64-bit Windows.
+    - `-r win-x64` specifies that the app should be published for 64-bit Windows. `win-x64` is the [runtime identifier](/dotnet/core/rid-catalog) (RID) for 64-bit Windows, so the app is published as a self-contained deployment for 64-bit Windows.
     - `-o publish-scd-win64` specifies the output directory for the published app.
     - `--self-contained` specifies that the app should be published as a self-contained deployment.
 
@@ -31,7 +31,7 @@ In this exercise, you'll publish an ASP.NET Core app as self-contained deploymen
 
 1. Review the contents of the *MyWebApp/publish-scd-win64* directory in the Explorer window.
 
-    Note that the list of files is much larger than the list of files in the *publish-fd* directory. This is because the self-contained deployment includes the same files as the framework-dependent deployment, as well as the .NET runtime. The *MyWebApp.exe* file is the 64-bit Windows executable for the app.
+    The list of files in this directory is significantly larger than the list of files in the *publish-fd* directory. This is because the self-contained deployment includes the same files as the framework-dependent deployment, in addition to the .NET runtime. The *MyWebApp.exe* file is the 64-bit Windows executable for the app.
 
 1. Run the following command to publish the app as a self-contained deployment for 64-bit Linux:
 

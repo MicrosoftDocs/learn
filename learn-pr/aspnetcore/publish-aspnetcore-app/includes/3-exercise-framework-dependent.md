@@ -1,12 +1,12 @@
-Framework-dependent deployments are the default for ASP.NET Core apps. When you publish a framework-dependent app, only your app's files and dependencies are included in the deployment package. The .NET runtime is not included. The target machine must have the correct version of .NET runtime installed in order to run the app.
+Framework-dependent deployments are the default for ASP.NET Core apps. When you publish a framework-dependent app, only your app's files and dependencies are included in the deployment package. The .NET runtime isn't included. The target machine must have the correct version of .NET runtime installed in order to run the app.
 
-Your team lead has asked you to prepare your team's app for deployment. Since the server your app will run on already has the .NET runtime installed, you can publish the app as a framework-dependent deployment. This will reduce the size of the deployment package and make it easier to deploy the app.
+Your team lead asked you to prepare your team's app for deployment. Since the server your app will run on already has the .NET runtime installed, you can publish the app as a framework-dependent deployment. This reduces the size of the deployment package and make it easier to deploy the app.
 
-In this exercise, you'll publish an ASP.NET Core app as a framework-dependent deployment.
+In this exercise, you publish an ASP.NET Core app as a framework-dependent deployment.
 
 ## Create an ASP.NET Core app
 
-You'll need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using C# Dev Kit extension in Visual Studio Code.
+You need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using C# Dev Kit extension in Visual Studio Code.
 
 1. Launch Visual Studio Code.
 1. Press **Ctrl+Shift+P** to open the command palette.
@@ -70,6 +70,6 @@ Now that you've verified that the app runs correctly, you can publish it as a fr
     dotnet MyWebApp.dll
     ```
 
-    This command starts the published app and hosts it in Kestrel. Web browsers that connect to the app will see the same default ASP.NET Core welcome page.
+    This command starts the published app and hosts it in Kestrel. Web browsers that connect to the app see the same default ASP.NET Core welcome page.
 
 1. Close the web browser and stop the app by pressing **Ctrl+C** in the terminal window.
