@@ -33134,6 +33134,51 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-organize/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/2-what-is-data-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/3-what-are-privacy-regulations.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/4-common-data-protection-regulations-acts.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/5-how-microsoft-support-protection-privacy.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/6-security-privacy-compliance-options-in-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
     }
   ]
 }
