@@ -76,7 +76,7 @@ With user-defined routes, you can't specify the next hop type **VirtualNetworkSe
 
 ### Service tags for user-defined routes
 
-You can specify a service tag as the address prefix for a user-defined route instead of an explicit IP range. A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses chang, thus minimizing the complexity of frequent updates to user-defined routes and reducing the number of routes you need to create.
+You can specify a service tag as the address prefix for a user-defined route instead of an explicit IP range. A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, thus minimizing the complexity of frequent updates to user-defined routes and reducing the number of routes you need to create.
 
 ### Border gateway protocol
 
