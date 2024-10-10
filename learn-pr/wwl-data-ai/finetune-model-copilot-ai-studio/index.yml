@@ -8,6 +8,7 @@ metadata:
   ms.date: 6/26/2024
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Integrate a fine-tuned language model with your copilot in the Azure AI Studio
