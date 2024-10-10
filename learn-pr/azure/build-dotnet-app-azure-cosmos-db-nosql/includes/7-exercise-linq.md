@@ -65,13 +65,13 @@ Because we're querying across multiple logical partitions, we need to make sure 
     FeedResponse<Product> page = await linqFeed.ReadNextAsync();
     ```
 
-1. Still inside of the *while* loop, output the current page's request charge.
+1. Inside of the *while* loop, output the current page's request charge.
 
     ```csharp
     Console.WriteLine($"[Page RU charge]:\t{page.RequestCharge}");
     ```
 
-1. Still inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
+1. Inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
 
     ```csharp
     foreach (Product item in page)
@@ -117,6 +117,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;

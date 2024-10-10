@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fabric-data-governance-purview.why-purview-fabric
+title: Why use Microsoft Purview with Microsoft Fabric?
+metadata:
+  title: Why use Microsoft Purview with Microsoft Fabric?
+  description: "Understand when to use Microsoft Purview as part of your data governance strategy with Microsoft Fabric."
+  ms.date: 9/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-why-purview-fabric.md)]

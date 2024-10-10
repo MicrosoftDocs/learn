@@ -30,7 +30,7 @@ The **Content Safety** capabilities are available within the **AI Services** sec
 
 ## Download the project files
 
-Project files are available in the [data](https://github.com/Azure-Samples/aacs-workshops/) folder. Download the repository to access the files required for the **Text Moderation** and **Image Moderation** exercises. To download the repository, select **Code** > **Download ZIP**.
+Project files are available in the [data](https://github.com/Azure-Samples/RAI-workshops/) folder. Download the repository to access the files required for the **Text Moderation** and **Image Moderation** exercises. To download the repository, select **Code** > **Download ZIP**.
 
 > [!NOTE]
 > Within the `data` folder is a `bulk-image-moderation-dataset.zip` file. Do not unzip the `bulk-image-moderation-dataset.zip` file as this format is required for the **Image Moderation** exercise.

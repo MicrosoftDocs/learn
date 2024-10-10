@@ -27,7 +27,4 @@ Projects are hosted by an Azure AI hub resource that provides enterprise-grade s
 
 ## Download the project files
 
-Project files are available in the [data](https://github.com/Azure-Samples/aacs-workshops/) folder. Download the repository to access the files required for the Measure and Mitigate Workshop. To download the repository, select **Code** > **Download ZIP**.
-
-> [!NOTE]
-> Note: The `Measure and Mitigate Workshop` folder is within the `data` folder.
+Project files are available in the [Measure and Mitigate Workshop](https://github.com/Azure-Samples/RAI-workshops/) folder. Download the repository to access the files required this  module. To download the repository, select **Code** > **Download ZIP**.

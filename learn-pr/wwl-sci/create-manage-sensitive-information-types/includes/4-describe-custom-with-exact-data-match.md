@@ -1,4 +1,4 @@
-Exact data match (EDM) allows you to create a sensitive information type (SIT) that uses exact data values for identifying and protecting sensitive information. With EDM, you can ensure your SIT:
+Exact data match (EDM) allows you to create a sensitive information type (SITs) that uses exact data values for identifying and protecting sensitive information. With EDM, you can ensure your SIT:
 
 - **Is easily updated**: Quickly adapt to changes in your sensitive data.
 - **Reduces false positives**: Accurately identify the correct information, minimizing mistakes.
@@ -10,32 +10,31 @@ For example, if you have customer account numbers, EDM specifically flags those 
 
  :::image type="content" source="../media/exact-data-match-classification.png" alt-text="Diagram showing how exact data match based classification works." lightbox="../media/exact-data-match-classification.png":::  
 
-EDM-based classification enables you to create custom sensitive types that match exact values from a database, which can hold up to 100 million rows of data. This database can be refreshed daily to reflect changes such as new or departing employees, patients, or clients, ensuring your custom sensitive information types remain current and relevant. You can also apply these classifications to policies for enhanced data protection. Examples include [Microsoft Purview Data Loss Prevention policies](/purview/dlp-learn-about-dlp?azure-portal=true) or [Microsoft Cloud App Security file policies](/defender-cloud-apps/data-protection-policies?azure-portal=true).
+EDM-based classification enables you to create custom sensitive types that match exact values from a database. This database can hold up to 100 million rows of data and can be refreshed daily to reflect changes such as new or departing employees, patients, or clients. This ensures your custom sensitive information types remain current and relevant.
 
 ## What's different in an EDM SIT
 
-When you work with EDM SITs, it's helpful to understand a few concepts that are unique to them.  
+An EDM SIT is different from standard SITs because it matches exact data values instead of relying only on patterns or keywords. It also includes a few specific concepts:
 
 ### Schema
 
-The schema is a blueprint in an XML file format. It defines:
+The schema is an XML file that serves as the blueprint for your EDM SIT. It defines:
 
 - The name of the schema, later referred to as the _DataStore_.
-- The field names that your sensitive information source table contains. Each schema field corresponds directly to a column in your table.
-- Which fields are searchable.
-- A _configurable match_, which is an adjustable parameter for refining your search, like ignoring case sensitivity or punctuation in the data you're searching for.
+- Field names that correspond to the columns in your sensitive information source table.
+- Which fields are searchable, allowing precise control over what the SIT will check.
+- A _configurable match_ to refine your search, such as case sensitivity or ignoring punctuation.
 
 ### Sensitive information source table
 
-The sensitive information source table contains the values that the EDM SIT looks for. It contains:
+The sensitive information source table is the actual dataset used for matching. It contains:
 
-- Column headers represent the field names.
-- Rows correspond to individual records.
-- Each cell holds the specific value for its record and field.
+- Column headers representing the field names (like _First Name_, _Last Name_, _Date of Birth_).
+- Rows representing individual records, with each cell containing the specific value for its field.
 
-Here's a simple example of a sensitive information source table:
+Example table:
 
-|First name|Last name|Date of birth|
+|First name|Family name|Date of birth|
 |---|---|---|
 |Isaiah|Langer| 05-05-1960|
 |Ana|Bowman|11-24-1971|
@@ -43,55 +42,33 @@ Here's a simple example of a sensitive information source table:
 
 ### Rule package
 
-Every SIT has a rule package. You use the rule package in an EDM SIT to define:
+The rule package in an EDM SIT defines:
 
-- **Matches** specify the field used as the primary element for exact lookups. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
-- **Classification** determines the specific sensitive information type match criteria that triggers a search using EDM.
-- **Supporting elements** are extra pieces of data that, when found near the primary data, increase the likelihood that a match is correct. For instance, finding the keyword "SSN" in close proximity to an actual social security number. A supporting element can be a regular expression with or without a checksum validation, keyword list, or a keyword dictionary
-- **Confidence Levels** indicate the degree of certainty in a match, ranging from high to low, based on the amount of supporting evidence found with the primary element.
-- **Proximity** refers to the distance, in characters, between the primary and supporting elements.
-
-### You supply your own schema and data
-
-[Microsoft Purview comes with many predefined SITs](/purview/sensitive-information-type-entity-definitions?azure-portal=true). These SITs come with schemas, regex patterns, keywords and confidence levels. But, with EDM SITs, you're responsible for defining the schema and both the primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you encrypt them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes?azure-portal=true) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)?azure-portal=true) value. Only the hashed values are uploaded to the service, so your sensitive data is never in the open.
+- **Matches** specify the primary element used for exact lookups, such as a regular expression or a function.
+- **Classification** determines the type of sensitive information being searched for.
+- **Supporting elements** provide additional context, helping refine the accuracy of the match. For instance, finding "SSN" near a social security number increases confidence.
+- **Confidence levels** measure the likelihood of a match, based on how much supporting evidence is present.
+- **Proximity** defines the allowable character distance between the primary and supporting elements.
+- **Supporting elements** help reduce false positives by ensuring that detected data is correct within context.
 
 ### Primary and secondary support elements
 
-In an EDM SIT, a _primary element_ is the specific information you're looking to identify and protect, such as a credit card number or a social security number. EDM requires that the primary element are discoverable through an existing SIT. This process means before you set up your EDM SIT, you need to match your primary element to one of the predefined SITs that the system can already identify.
+In an EDM SIT, the _primary element_ is the key data point you're looking to protect, such as a social security number or credit card number. You must match the primary element to an existing SIT that Microsoft Purview can already identify.
 
-For example, if your EDM SIT schema has U.S. _social security number_ as the primary element, you need to associate it with the [U.S. social security number (SSN)](/purview/sit-defn-us-social-security-number?azure-portal=true) SIT. This requirement is important because primary elements need to be in a specific format in order to be detected.
+Once the primary element is detected, EDM looks for a _secondary supporting element_, like finding the term "SSN" near the actual social security number. This further confirms the identification, increasing confidence in the match.
 
-Once the primary element is found in a scanned item, EDM looks for a _secondary_ or supporting element. Secondary elements reinforce the identification of the primary element as sensitive. Secondary elements don't need to follow a fixed pattern unless they contain multiple tokens. If it contains multiple tokens, this condition requires association with a SIT, similar to a primary element. Secondary elements must be within a certain proximity to the primary element.
-
-## How matching works
-
-EDM works by comparing strings in your documents and emails against values in the sensitive information source table. It checks if the values in the scanned content are present in the table. The comparison is done by comparing one-way cryptographic hashes.
-
-For a more effective detection system, you can use EDM in combination with the standard SITs provided by the system. Set up the EDM with high confidence levels, meaning it alerts you when it finds a precise match with the sensitive data you specified. At the same time, you can use a standard SIT, like the one for U.S. Social Security Numbers, with a lower confidence level. This way, you're covered both for exact matches and for times when there's just a hint of something sensitive, catching more potential risks.
-
-For a list of services that EDM supports, see [Services that EDM supports](/purview/sit-learn-about-exact-data-match-based-sits?azure-portal=true#services-that-edm-supports).
+Supporting elements don't always need fixed patterns, but if they contain multiple words, a defined pattern is required.
 
 ## Create an EDM-based SIT
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. You can use the _new experience_, the existing _classic experience_, or via PowerShell.
+Creating an EDM SIT is a multi-phase process. You can use either the **new experience** or the **classic experience**, depending on your needs.
 
 ### The new EDM experience
 
-The new EDM experience combines the functionality of the EDM schema and EDM sensitive info types wizards into a single user experience. The new experience adds:
+The new EDM experience integrates schema creation and SIT definition into a streamlined workflow:
 
-- **Simplified workflow**: The creation of schemas and SITs is now a unified process, reducing steps and providing clear directions for mapping data elements to the system’s predefined SITs. This integrated approach also automatically sets the appropriate confidence levels for the detection rules, making the setup faster and more user-friendly.
-- **Automated schema and SIT creation**: By uploading a non-sensitive sample data file, the system can auto-generate a schema, then suggest the best SITs to link with your primary data fields. This automation eliminates the need to manually input schema details and helps ensure that the SITs are correctly matched, leading to more accurate data protection.
-- **Additional guardrails to ensure better performance**: The new system alerts you when a primary field is connected to a SIT that's too broad. This measure helps avoid potentially irrelevant matches that could slow down the process. These proactive notifications are designed to help maintain optimal system performance by steering you away from configurations that might lead to inefficiencies or errors in data matching.
-
-### The new EDM experience workflow at a glance
-
-|Phase|Requirements|
-|---|---|
-|[Phase 1: Export source data for exact data match based sensitive information type](/purview/sit-get-started-exact-data-match-export-data?azure-portal=true#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
-|[Phase 2:Create the sample file](/purview/sit-create-edm-sit-unified-ux-sample-file?azure-portal=true)|- Know the column headers and the format of the data you're looking for in each column.
-|[Phase 3: Create the EDM SIT](/purview/sit-create-edm-sit-unified-ux-schema-rule-package?azure-portal=true)|- Access to **Microsoft Purview Compliance portal** > **Data classification** > **Exact data match** |
-|[Phase 4: Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)|- Custom security group and user account </br>- **Hash and upload from one computer**: local admin access to a computer with direct internet access and to host the EDM Upload Agent </br>- **Hash and upload from separate computers**: local admin access to a computer with direct internet access and host the EDM Upload Agent for the upload and local admin access to a secure computer to host the EDM Upload Agent to hash the sensitive information source table </br>- Read access to the sensitive information source table file|
-|[Phase 5: Test an exact data match sensitive information type](/purview/sit-get-started-exact-data-match-test?azure-portal=true#test-an-exact-data-match-sensitive-information-type)| - Access to the Microsoft Purview compliance portal
+- **Simplified workflow**: The new EDM experience streamlines the process by combining schema and SIT creation, reducing steps and guiding you through mapping data fields to predefined SITs.
+- **Additional guardrails to ensure better performance**: Alerts you when fields are too broad, helping you avoid inefficient matches and ensuring high performance.
 
 ### The classic EDM experience
 
@@ -102,27 +79,114 @@ You can toggle back and forth between the new and classic experiences, but we re
 1. **Custom schema names**: The classic experience lets you specify custom names for your EDM schemas, unlike the new experience that auto-generates schema names.
 1. **Editing existing schemas**: If you need to edit schemas created in the classic experience or uploaded via PowerShell, you must use the classic experience, as the new experience doesn't support this functionality.
 
-### The classic EDM experience workflow at a glance
+Use the procedure to understand how to create an EDM SIT. Select the appropriate tab for guidance on creating one with the **new** or **classic** experience.
 
- :::image type="content" source="../media/swimlane-exact-data-match-process.png" alt-text="Diagram showing the process of creating an exact data match sensitive information type with the classic experience." lightbox="../media/swimlane-exact-data-match-process.png":::  
+## [New EDM experience](#tab/new)
 
-|Phase|Requirements|
-|---|---|
-|[Phase 1: Export source data for exact data match based sensitive information type](/purview/sit-get-started-exact-data-match-export-data?azure-portal=true#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
-|[Phase 2: Create the schema for exact data match based sensitive information types](/purview/sit-get-started-exact-data-match-create-schema?azure-portal=true#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Access to the sensitive information type wizard in the compliance portal </br>- access to the [Microsoft 365 admin center via Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) |
-|[Phase 3: Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- Custom security group and user account </br>- **Hash and upload from one computer**: local admin access to a computer with direct internet access and to host the EDM Upload Agent </br>- **Hash and upload from separate computers**: local admin access to a computer with direct internet access and host the EDM Upload Agent for the upload and local admin access to a secure computer to host the EDM Upload Agent to hash the sensitive information source table </br>- Read access to the sensitive information source table file </br> the schema file |
-|[Phase 4: Create exact data match sensitive information type/rule package](/purview/sit-get-started-exact-data-match-create-rule-package?azure-portal=true#create-exact-data-match-sensitive-information-typerule-package) |- Access to the Microsoft Purview compliance portal |
-|[Test an exact data match sensitive information type](/purview/sit-get-started-exact-data-match-test?azure-portal=true#test-an-exact-data-match-sensitive-information-type)| - Access to the Microsoft Purview compliance portal
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com?azure-portal=true), then navigate to **Solutions** > **Information Protection** > **Classifiers** > **EDM classifiers**.
 
-## Identify data using exact data match-based classification interactive guide
+1. Make sure the **New EDM experience** toggle is set to **On**.
 
-In this interactive guide, you see how Information Protection can help you categorize content with exact data match (EDM) classifiers and label sensitive items to protect your organization's data.
+   :::image type="content" source="../media/new-edm-toggle.png" alt-text="Screenshot showing the toggle to use the new EDM experience." lightbox="../media/new-edm-toggle.png":::  
 
-[:::image type="content" source="../media/exact-data-match-interactive-guide.png" alt-text="Illustration of the cover of an interactive guide that says Identify data using exact data match-based classification interactive guide." border="false":::](https://mslearn.cloudguides.com/guides/Identify%20data%20using%20exact%20data%20match-based%20classification%20in%20Microsoft%20Purview%20Information%20Protection)
+1. Select **Create EDM classifier**.
 
-## Learn more
+1. Review the **Familiarize yourself with the steps needed to put your classifier to work** page, then select **Create EDM classifier**.
 
-- [Learn about exact data match based sensitive information types](/purview/sit-learn-about-exact-data-match-based-sits?azure-portal=true)
-- [Get started with exact data match based sensitive information types](/purview/sit-get-started-exact-data-match-based-sits-overview?azure-portal=true)
-- [Create exact data match sensitive information type workflow new experience](/purview/sit-create-edm-sit-unified-ux-workflow?azure-portal=true)
-- [Create exact data match sensitive information type workflow classic experience](/purview/sit-create-edm-sit-classic-ux-workflow?azure-portal=true)
+1. On the **Name and describe your EDM classifier** page, name the SIT and add a description. The system uses this name, appended with the word _schema_, for the associated schema it generates.
+
+1. Select **Next**.
+
+1. On the **Choose a method for defining your schema** page, select the method you want to use for your schema: either **Upload a file containing sample data**, or **Manually define your data structure**.
+
+   Best practice is to upload a sample data file. The rest of this procedure assumes this option.
+
+1. Select **Next**.
+
+1. On the **Upload your sample file** page, select your sample file and then select **Upload file**. Select **Next**.
+
+   If errors display during the upload, address them and then try again.
+
+1. On the **Select primary elements** page:
+
+    1. In the **Primary element** column, select your primary element. Each primary element must be mapped to a SIT. Best practice is to select fields that show **Full match** under the **Match Validation** column.
+
+    1. In the **Match mode** column for each field, designate which of the following matching options to apply:
+        - **Option 1:** Do nothing to accept the system-suggested SIT.
+        - **Option 2:** Expand the dropdown menu. Under **Sensitive Info type (SIT)**, choose the pencil (**Edit**) icon and then select another existing SIT.
+        - **Option 3:** Under **Match mode** select **Single token**.
+        - **Option 4:** Under **Match mode** select **Multi-token**.
+
+1. Select **Next**.
+
+1. **Configure settings for data in selected columns**.
+    - The toggle **Use the same settings for all columns** is set to **On** by default. If you want to use separate settings for each data field, set the toggle to **Off**.
+    - The **Data in columns are case-insensitive** option is selected by default. To enforce **case-sensitive** detection, uncheck this box.
+    - If needed, select the option to **Ignore delimiters and punctuation for data in all columns** You can then either select the delimiters and punctuation marks you want to ignore from a list or you can enter custom delimiters and punctuation marks to ignore.
+
+1. On the **Review settings and finish** page, select **Submit**.
+
+1. On the **You successfully created an EDM classifier** page, capture the **Schema name**. This name is required when hashing and uploading the sensitive information source table to ensure proper mapping of the data to the schema.
+
+1. Once you've captured the schema name, select **Done**.
+
+Once you create your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)
+
+# [Classic EDM experience](#tab/classic)
+
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com?azure-portal=true), then navigate to **Solutions** > **Information Protection** > **Classifiers** > **EDM classifiers**.
+
+1. Make sure the **New EDM experience** toggle is set to **Off**.
+
+   :::image type="content" source="../media/new-edm-toggle-off.png" alt-text="Screenshot showing the toggle to use the new EDM experience." lightbox="../media/new-edm-toggle-off.png":::  
+
+1. Ensure the tab for **EDM schemas** is selected, then select **Create EDM schema** to open the schema tool configuration flyout.
+
+1. In the **New EDM schema** flyout panel, fill in an appropriate **Name** and **Description**.
+
+1. In the flyout panel, select **Ignore delimiters and punctuation for all schema fields** if you want to apply the **Ignore...** behavior for the entire schema.
+
+1. In the flyout panel, fill in your desired values for your **Schema field #1**. Add more fields as needed. Each schema field must be identical to the column headers in your sensitive information source file.
+
+1. In the flyout panel, if necessary, set the per-field values for the following:
+
+    - **Field is searchable**
+    - **Field is case-insensitive**
+    - **Choose delimiters and punctuation to ignore for this field**
+    - **Enter custom delimiters and punctuation for this field**
+
+1. Select **Save** at the bottom of the flyout panel. Your schema is now listed and available for use.
+
+   :::image type="content" source="../media/edm-classic-schema-configuration.png" alt-text="Screenshot showing the new schema configuration options for EDM classic." lightbox="../media/edm-classic-schema-configuration.png":::
+
+1. Back on the EDM classifiers page, select the tab for **EDM sensitive info types**.
+
+1. Select **+ Create EDM sensitive info type** to start the **EDM rule package** wizard.
+
+1. On the **Define data store schema** page, **Choose an existing EDM schema** or select **New EDM schema** to create a new one.
+
+1. Select **Next**.
+
+1. On the **Define patterns for this EDM sensitive info type** page, select **Create pattern**.
+
+1. A flyout panel appears to define your new pattern. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+
+1. In the flyout panel, select the **Primary element** for your EDM SIT. The options available for the primary element are based on fields you selected as searchable when you created your EDM schema.
+
+1. In the flyout panel, select an appropriate sensitive info type for your primary element.
+
+1. (Optional) In the flyout panel, add supporting elements if your data needs extra context to strengthen detection. The options available for the supporting element are based on the available fields that aren't your primary element.
+
+1. In the flyout panel, choose the **Matching options for supporting elements**. If multiple supporting elements are specified, select whether all or any must match. For Match if any, set the minimum and maximum number of matches (pre-filled with 1 and the total number of elements).
+
+1. Select **Done** in the flyout panel.
+
+1. **Define patterns for this EDM sensitive info type**, then select **Next**.
+
+1. Choose the **recommended confidence level and character proximity** for this EDM SIT, then select **Next**.
+
+1. **Name and describe your EDM sensitive info type**, then select **Next**.
+
+1. **Review and finish** creating your EDM SIT by selecting **Submit**.
+
+Once you create your EDM schema, the next step is to hash and upload your sensitive data. This ensures the data can be used securely for classification. For detailed steps on hashing and uploading your source table, see [Hash and upload the sensitive information source table for exact data match sensitive information types](/purview/sit-get-started-exact-data-match-hash-upload?azure-portal=true)

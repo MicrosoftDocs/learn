@@ -8,11 +8,11 @@ Microsoft provides free Azure DevOps accounts for individuals, small teams, and 
 Follow along with the team by setting up your own free Azure DevOps organization:
 
 1. Go to [dev.azure.com](https://dev.azure.com?azure-portal=true).
-1. Select the **Start free** button.
-1. Sign in by using your **Microsoft account**. Or if you don't have a Microsoft account, select **Create One!** and finish the steps.
+1. Sign in by using your **Microsoft account**; or if you don't have a Microsoft account, select **Create One!** and finish the steps.
 
     > [!NOTE]
     > You might have a Microsoft account already. Typically, these end with hotmail.com or outlook.com.
+
 1. Review the Terms of Service, Privacy Statement, and Code of Conduct, and select **Continue** if you agree to them.
 
     > [!NOTE]
@@ -24,7 +24,7 @@ Next, set up an organization. Here's how:
 
 1. If you've never created an Azure DevOps organization, you'll see a window with a **Create new organization** button. If you have, you'll see a link that reads **New organization**. Select the option you see.
 1. In the **Azure DevOps Terms of Service and Privacy notification** window, select **Continue**.
-1. Create an organization for the Microsoft Learn modules next to the **dev.azure.com/** field. If you're prompted that the name is already taken, just add some numbers to the end to make it unique. For example: Tailspin0523.
+1. Create an organization for the Microsoft Learn modules next to the **dev.azure.com/** field. If you're prompted that the name is already taken, just add some numbers to the end to make it unique; for example, *Tailspin0523*.
 1. Choose a location near you where your projects will be hosted.
 1. Complete the captcha.
 1. Select **Continue**.
