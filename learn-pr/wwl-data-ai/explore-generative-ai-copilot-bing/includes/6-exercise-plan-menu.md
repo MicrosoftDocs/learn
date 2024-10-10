@@ -47,7 +47,6 @@ Can you create an image for the first menu item suggested?
 **Sample response**:
 ![Screenshot of the Food image.](../media/food.png)
 
-Image created for [Forest Floor Crostini.](https://www.bing.com/images/create/toasted-bread-slices-topped-with-sautc3a9ed-wild-mush/649afba929ce4dbda62b311849131d62?id=lht3G5PBU%2fXK%2fF%2b5OpEbfg%3d%3d&view=detailv2&idpp=genimg&idpclose=1&FORM=SYDBIC)
 
 You need at least one image for food, but you're welcome to make more.  
 
