@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.service: azure-stack-hub
 title: Manage infrastructure certificates for Azure Stack Hub
 summary: |
   Learn to validate the generated public key infrastructure (PKI) certificates are for pre-deployment of Azure Stack Hub.
