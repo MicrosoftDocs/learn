@@ -2,7 +2,7 @@
 uid: learn.azure-storage-dotnet-aspire-app
 metadata:
   title: Use Azure Storage with .NET Aspire
-  description: In this module, you'll learn about the components built into .NET Aspire that make it simple to store files, data, and messages in Azure Storage accounts.
+  description: In this module, you'll learn about the integrations built into .NET Aspire that make it simple to store files, data, and messages in Azure Storage accounts.
   author: camsoper
   ms.author: casoper
   manager: coxford
@@ -16,9 +16,9 @@ summary: Learn how to access and use Azure Storage accounts from .NET Aspire sol
 abstract: |
   By the end of this module, you'll be able to:
 
-  - Use the .NET Aspire Azure Blob Storage component to store files.
-  - Use the .NET Aspire Azure Storage Queues component to add messages to a queue.
-  - Use the .NET Aspire Azure Table Storage component to add rows to a table.
+  - Use the .NET Aspire Azure Blob Storage integration to store files.
+  - Use the .NET Aspire Azure Storage Queues integration to add messages to a queue.
+  - Use the .NET Aspire Azure Table Storage integration to add rows to a table.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
