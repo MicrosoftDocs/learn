@@ -32941,6 +32941,71 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/2-explore-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/3-exercise-create-your-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/4-exercise-create-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/5-interact-with-azure-storage-apis.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/6-exercise-add-the-azure-storage-lib.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/7-connect-to-your-azure-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/8-exercise-add-azure-storage-configuration-to-your-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/9-initialize-the-storage-account-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/10-exercise-connect-with-your-azure-storage-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
       "redirect_document_id": false
@@ -33068,6 +33133,51 @@
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-organize/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/2-what-is-data-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/3-what-are-privacy-regulations.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/4-common-data-protection-regulations-acts.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/5-how-microsoft-support-protection-privacy.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/6-security-privacy-compliance-options-in-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
       "redirect_document_id": false
     }
   ]
