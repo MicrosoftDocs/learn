@@ -3982,3 +3982,8 @@ achievements:
   title: Use the Cloud Adoption Framework to manage organizational alignment
   summary: Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises—typically a centralized control model—doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate. The Cloud Adoption Framework provides guidance for this modernization journey. This module is added learning after you complete the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/training/paths/cloud-adoption-framework/) learning path.
   iconUrl: /training/achievements/cloud-adoption-framework-organize.svg
+- uid: learn.azure.introduction-data-protection-privacy.badge
+  type: badge
+  title: Introduction to data protection and privacy
+  summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
+  iconUrl: /training/achievements/introduction-data-protection-privacy.svg
