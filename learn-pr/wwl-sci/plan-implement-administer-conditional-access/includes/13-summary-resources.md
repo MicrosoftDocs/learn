@@ -1,7 +1,7 @@
-Now that you have reviewed this module, you should be able to:
+After completing this module, you are able to:
 
  -  Plan and implement security defaults.
- -  Plan Conditional Access policies.
+ -  Plan your Conditional Access policies.
  -  Implement Conditional Access policy controls and assignments (targeting, applications, and conditions).
  -  Test and troubleshoot Conditional Access policies.
  -  Implement application controls.
@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 ## Resources
 
-To learn more about some of the topics we've examined in this module, check out the following links to documentation.
+To learn more about the technology in this module, check out the following links to documentation:
 
  -  [What is Conditional Access?](https://youtu.be/ffMAw2IVO7A)
  -  [How to deploy Conditional Access?](https://youtu.be/c_izIRNJNuk)
@@ -22,4 +22,4 @@ To learn more about some of the topics we've examined in this module, check out 
  -  [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/fundamentals/deployment-plan-compliance-policies)
  -  [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
  -  [Plan a Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access)
- -  [Continuous Access Evaluation - CAE](/entra/identity/conditional-access/concept-continuous-access-evaluation)
+ -  [Continuous Access Evaluation (CAE](/entra/identity/conditional-access/concept-continuous-access-evaluation))
