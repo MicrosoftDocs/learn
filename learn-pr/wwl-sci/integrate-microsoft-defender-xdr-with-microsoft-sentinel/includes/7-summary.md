@@ -6,7 +6,6 @@ The main takeaways from this module include understanding the benefits of integr
 
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 - [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
-- [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
-- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
+- [Automatic attack disruption in Microsoft Defender XDR](https://learn.microsoft.com/defender-xdr/automatic-attack-disruption)
+- [Investigate incidents in Microsoft Defender XDR](https://learn.microsoft.com/defender-xdr/investigate-incidents)
 - [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access?tabs=defender-portal)
-
