@@ -1,4 +1,4 @@
-An ASP.NET Core app is composed of source code files, assets, and configuration files. When you build an ASP.NET Core app, the source code is compiled into an executable form that can be run with the .NET runtime. Publishing an ASP.NET Core app is the process of packaging the executable app into a form that can be deployed and run on a server.
+An ASP.NET Core app is composed of source code files, static assets, and configuration files. When you build an ASP.NET Core app, the source code is compiled into an executable form that can be run with the .NET runtime. Publishing an ASP.NET Core app is the process of packaging the executable app into a form that can be deployed and run on a server.
 
 ## Example scenario
 
