@@ -1,0 +1,12 @@
+In this module, you have learned about the integration of Microsoft Sentinel into the Microsoft Defender portal, creating a unified security operations platform. This integration simplifies operations by reducing the complexity of managing multiple tools, enhancing hunting capabilities, enabling automatic attack disruption for SAP applications, and providing unified entity pages. You also learned about the differences in managing multiple Microsoft Sentinel workspaces between the Azure and Defender portals. Additionally, the module covered the prerequisites for integrating Microsoft Defender XDR with Microsoft Sentinel, including having a Log Analytics workspace with Microsoft Sentinel enabled and access to Microsoft Defender XDR in the Defender portal.
+
+The main takeaways from this module include understanding the benefits of integrating Microsoft Sentinel into the Microsoft Defender portal, such as streamlined operations and enhanced hunting capabilities. You also learned about the unique features available in each portal and the steps to integrate Microsoft Defender XDR with Microsoft Sentinel. Furthermore, the module introduced the concept of a storage account using the example of a chocolate manufacturer, explaining how to create a storage account suitable for holding mission-critical business data.
+
+## Additional Reading
+
+- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
+- [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
+- [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
+- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
+- [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access?tabs=defender-portal)
+
