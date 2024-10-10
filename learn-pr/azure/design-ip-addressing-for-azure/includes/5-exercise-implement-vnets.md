@@ -42,8 +42,8 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --location westus
     ```
 
-> [!NOTE]
-> If the `--resource-group` name value in the following command is listed as "[sandbox resource group name]", replace that value with the sandbox `--resource-group` name value from the previous step.
+   > [!NOTE]
+   > If the `--resource-group` name value in the following command is listed as "[sandbox resource group name]", replace that value with the sandbox `--resource-group` name value from the previous step.
 
 1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 
