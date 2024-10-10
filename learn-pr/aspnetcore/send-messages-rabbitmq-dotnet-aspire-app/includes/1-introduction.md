@@ -2,7 +2,7 @@ When you create a cloud-native application, you build a set of microservices, ea
 
 Imagine that you work for an outdoor clothing retailer. Your new public-facing ecommerce site, which consists of microservices and uses .NET Aspire, must scale to cope with intense user demand at peak periods. You want to ensure that the separate microservices can communicate robustly and you want to assess RabbitMQ as a solution for queue management.
 
-In this module, you see how to use built-in components to send and receive messages through the RabbitMQ message queuing service.
+In this module, you see how to use built-in integrations to send and receive messages through the RabbitMQ message queuing service.
 
 ## Learning objectives
 

@@ -2,7 +2,7 @@ Azure Storage accounts don't only store blobs; they also enable developers to cr
 
 In the outdoor equipment retailer you work for, two of your microservice teams have implemented Azure Storage accounts to serve blobs to users. However, stress testing has identified a potential issue with microservice communications at times of high load. You want to investigate whether queues in Azure Storage accounts can help resolve the problem.
 
-In this unit, you'll learn about the .NET Aspire Azure Queue Storage component and how you can use it to communicate between microservices in a cloud-native app.
+In this unit, you'll learn about the .NET Aspire Azure Queue Storage integration and how you can use it to communicate between microservices in a cloud-native app.
 
 ## Why use Azure Queue Storage?
 
@@ -22,7 +22,7 @@ If the destination microservice is temporarily unavailable, messages wait in the
 
 ## Using Azure Queue Storage with .NET Aspire
 
-If you're using .NET Aspire to build a cloud-native app, you can add the **.NET Aspire Azure Queue Storage component** to work with Azure storage queues. The component registers a `QueueServiceClient` object in the dependency injection container maintained by the app host project. When you pass that object to consuming microservices, you can use it to create queues and send or receive messages.
+If you're using .NET Aspire to build a cloud-native app, you can add the **.NET Aspire Azure Queue Storage integration** to work with Azure storage queues. The integration registers a `QueueServiceClient` object in the dependency injection container maintained by the app host project. When you pass that object to consuming microservices, you can use it to create queues and send or receive messages.
 
 ### Modifying the app host Project
 
@@ -32,7 +32,7 @@ As for the blob client, you must install the `Aspire.Hosting.Azure.Storage` pack
 dotnet add package Aspire.Hosting.Azure.Storage
 ```
 
-Then, register the Azure Queue Storage component:
+Then, register the Azure Queue Storage integration:
 
 ```csharp
 var queues = builder.AddAzureStorage("storage")
@@ -48,7 +48,7 @@ var catalogMicroservice = builder.AddProject<Projects.CatalogMicroservice>()
 
 ### Modifying the consuming projects
 
-In a microservice where you want to send or receive messages, you must first install the component:
+In a microservice where you want to send or receive messages, you must first install the integration:
 
 ```dotnetcli
 dotnet add package Aspire.Azure.Storage.Queues
@@ -114,6 +114,6 @@ The string you pass to this method is the name of a connection string. You shoul
 
 ## Learn more
 
-- [.NET Aspire Azure Queue Storage component](/dotnet/aspire/storage/azure-storage-queues-component)
+- [.NET Aspire Azure Queue Storage integration](/dotnet/aspire/storage/azure-storage-queues-integration)
 - [Azure Storage Queues client library for .NET](/dotnet/api/overview/azure/storage.queues-readme)
 - [Quickstart: Azure Queue Storage client library for .NET](/azure/storage/queues/storage-quickstart-queues-dotnet)

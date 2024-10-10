@@ -1,12 +1,12 @@
 Data doesn't just take the form of well structured relational data. Sometimes, you need to store data that doesn't fit neatly into a table. For example, you might want to store a document that contains a list of items, each with a different schema. In this case, a NoSQL database is a better choice than a relational database. One of the most popular NoSQL databases is MongoDB.
 
-## Using the .NET Aspire MongoDB component
+## Using the .NET Aspire MongoDB integration
 
 The same pattern as before applies to MongoDB. You must configure both the app host and each consuming project.
 
 ### Configuring the app host
 
-Install the MongoDB hosting component:
+Install the MongoDB hosting integration:
 
 ```dotnetcli
 dotnet add package Aspire.Hosting.MongoDB --prerelease
@@ -28,7 +28,7 @@ var northernTradersCatalogAPI = builder.AddProject<Projects.NorthernTraders_Cata
 
 ### Configuring the consuming projects
 
-You need to add the .NET Aspire MongoDB component to any microservice project that uses the database. You add the `Aspire.MongoDB.Driver` NuGet package to the project that needs data access, using either .NET CLI or the Visual Studio NuGet package manager.
+You need to add the .NET Aspire MongoDB integration to any microservice project that uses the database. You add the `Aspire.MongoDB.Driver` NuGet package to the project that needs data access, using either .NET CLI or the Visual Studio NuGet package manager.
 
 ```dotnetcli
 dotnet add package Aspire.MongoDB.Driver --prerelease
@@ -45,7 +45,7 @@ var myService = builder.AddProject<Projects.MyService>()
                        .WithReference(mongoDB);
 ```
 
-The MongoDB component, like PostgeSQL and MySQL, provides a database management tool called Mongo Express. The above code adds a container for it.
+The MongoDB integration, like PostgeSQL and MySQL, provides a database management tool called Mongo Express. The above code adds a container for it.
 
 ## Using a MongoDB database
 
@@ -75,9 +75,9 @@ public class MongoBasketStore
 
 The above code creates a MongoDB collection that enables the method to query over all the `CustomerBasket` objects to find the one with the matching `BuyerId`.
 
-## Configuring the MongoDB component
+## Configuring the MongoDB integration
 
-Just as the previous database components, the MongoDB component supports .NET Aspire's service discovery and dependency injection. So if you use the same database name defined in the `AppHost` and projects, there's no need to manage connection strings. But if you're already using an existing MongoDB database not managed by .NET Aspire, you have other ways to configure it.
+Just as the previous database integrations, the MongoDB integration supports .NET Aspire's service discovery and dependency injection. So if you use the same database name defined in the `AppHost` and projects, there's no need to manage connection strings. But if you're already using an existing MongoDB database not managed by .NET Aspire, you have other ways to configure it.
 
 ### Using a connection string
 
