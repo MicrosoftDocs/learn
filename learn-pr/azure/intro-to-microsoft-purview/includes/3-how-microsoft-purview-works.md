@@ -78,7 +78,7 @@ After you register a data source, you can enrich its metadata. With proper acces
 
 Discovering and understanding data sources and their use is the primary purpose of registering the sources. If you're an enterprise user, you might need data for business intelligence, application development, data science, or any other task where the right data is required. You can use the data catalog discovery experience to quickly find data that matches your needs. You can evaluate the data's fit for the purpose, and then open the data source in your tool of choice.
 
-At the same time, you can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. You can also register new data sources, which are then discovered, evaluated, and used by the community of catalog users.
+At the same time, you can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. Also, new data sources can be registered for the community of catalog users to discover, evaluate, and use.
 
 ## Browse and search
 
