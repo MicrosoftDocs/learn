@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: active-directory
-  ms.subservice: aad-general
+  ms.subservice: domain-services
   ai-usage: human-only
 title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
 summary: In this module, you learn how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure virtual network (VNet) subnet.
