@@ -1,4 +1,4 @@
-You want to monitor the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs, and you can view built-in metrics graphs, activity logs, and boot diagnostics.
+You want to monitor the VMs that host your website, so you decide to quickly create a VM in the Azure portal and evaluate its built-in monitoring capabilities. In this unit, you use the Azure portal to create a Linux VM with recommended alerts and boot diagnostics enabled. As soon as the VM starts up, Azure automatically begins collecting basic metrics and activity logs. You can then view built-in metrics graphs, activity logs, and boot diagnostics.
 
 ## Create a VM and enable recommended alerts
 
@@ -24,7 +24,7 @@ You want to monitor the VMs that host your website, so you decide to quickly cre
 1. Under **Diagnostics**, for **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 
    > [!NOTE]
-   > Don't select **Enable guest OS diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable guest OS and client monitoring later.
+   > Don't select **Enable OS guest diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable OS guest and client monitoring later.
 
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
 
@@ -38,11 +38,11 @@ It can take a few minutes to create the VM. When you get the notification that t
 
 Once your VM is created, Azure starts collecting basic metrics data automatically. Built-in metrics graphs, along with the recommended alerts you enabled, can help you monitor whether and when your VM encounters health or performance issues. You can then use more advanced monitoring and analytics capabilities to investigate issue causes and remediation.
 
-1. To view basic metrics graphs, on the VM's **Overview** page, select the **Monitoring** tab.
+1. To view basic metrics graphs, on the VMs **Overview** page, select the **Monitoring** tab.
 
-   :::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VM's Overview screen." lightbox="../media/select-monitoring.png":::
+   :::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VMs Overview screen." lightbox="../media/select-monitoring.png":::
 
-1. Under **Performance and utilization** > **Platform metrics**, review the following metrics graphs related to the VM's performance and utilization. Select **Show more metrics** if all the graphs don't appear immediately.
+1. Under **Performance and utilization** > **Platform metrics**, review the following metrics graphs related to the VMs performance and utilization. Select **Show more metrics** if all the graphs don't appear immediately.
 
    - **VM Availability**
    - **CPU (average)**
@@ -56,7 +56,7 @@ Once your VM is created, Azure starts collecting basic metrics data automaticall
 
 ## View the activity log
 
-You can view the VM's activity log by selecting **Activity log** from the VM's left navigation menu. You can also retrieve entries by using PowerShell or the Azure CLI.
+You can view the VMs activity log by selecting **Activity log** from the VMs left navigation menu. You can also retrieve entries by using PowerShell or the Azure CLI.
 
 :::image type="content" source="../media/activity-log.png" alt-text="Screenshot of the activity log for a VM." lightbox="../media/activity-log.png":::
 
@@ -65,7 +65,7 @@ You can view the VM's activity log by selecting **Activity log** from the VM's l
 You enabled boot diagnostics when you created the VM. You can view boot diagnostics to view boot data and troubleshoot startup issues.
 
 1. In the left navigation menu for the VM, select **Boot diagnostics** under **Help**.
-1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VM's hypervisor. Select **Serial log** to view log messages created when the VM started.
+1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VMs hypervisor. Select **Serial log** to view log messages created when the VM started.
 
    :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured." lightbox="../media/3-boot-diagnostics.png":::
 

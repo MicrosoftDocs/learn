@@ -3,11 +3,12 @@ uid: learn-wwl.get-started-sql-database-application-development
 metadata:
   title: Get started with Azure SQL Database for modern application development
   description: "Learn how Azure SQL Database works, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
-  ms.date: 09/05/2024
+  ms.date: 10/02/2024
   author: jupadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
+  ai-usage: ai-assisted
 title: Get started with Azure SQL Database for modern application development
 summary: You'll explore different features and tools to help you develop in Azure SQL Database.
 abstract: |

@@ -60,7 +60,9 @@ The primary record set to create is the A record. The A record set is used to po
 
 1. On the **Record Sets** pane, select **+ Add** in the top menu bar.
 
-    :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
+1. Select **Add** at the top of the Record sets page.
+
+    :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of adding a record set." lightbox="../media/4-arecord.png":::
 
     The **Add record set** pane appears.
 

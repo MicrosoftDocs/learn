@@ -32939,6 +32939,246 @@
       "source_path": "learn-pr/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/2-explore-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/3-exercise-create-your-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/4-exercise-create-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/5-interact-with-azure-storage-apis.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/6-exercise-add-the-azure-storage-lib.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/7-connect-to-your-azure-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/8-exercise-add-azure-storage-configuration-to-your-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/9-initialize-the-storage-account-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/10-exercise-connect-with-your-azure-storage-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-an-app-to-azure-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-dotnet-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/2-create-the-azure-storage-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/3-exercise-create-the-azure-storage-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/4-identify-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/5-exercise-identify-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/6-how-to-programmatically-access-a-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/7-exercise-implement-enqueue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/8-exercise-implement-dequeue.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/9-summary.yml",
+      "redirect_url": "hhttps://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/communicate-between-apps-with-azure-queue-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
+      "redirect_document_id": false
+    },
+    {   
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/2-authorization-options-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/3-use-shared-access-signatures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/4-exercise-use-shared-access-signatures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/5-use-stored-access-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/6-exercise-use-stored-access-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/2-customer-narrative.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/3-operating-models.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/4-structure-types-cloud-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/5-mature-team-structures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/7-raci-matrix.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-organize/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/2-what-is-data-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/3-what-are-privacy-regulations.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/4-common-data-protection-regulations-acts.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/5-how-microsoft-support-protection-privacy.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/6-security-privacy-compliance-options-in-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-protection-privacy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
+      "redirect_document_id": false
     }
   ]
 }
