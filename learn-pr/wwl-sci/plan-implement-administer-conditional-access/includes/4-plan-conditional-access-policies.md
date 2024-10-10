@@ -60,7 +60,7 @@ The Conditional Access framework provides you with great configuration flexibili
 
 ### Set up emergency access accounts
 
-If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the accidental administrator lockout by creating two or more emergency access accounts in your organization. Yo'll learn more about emergency access accounts later in this course.
+If you misconfigure a policy, it can lock the organizations out of the Azure portal. Mitigate the accidental administrator lockout by creating two or more emergency access accounts in your organization. You'll learn more about emergency access accounts later in this course.
 
 ### Set up report-only mode
 
