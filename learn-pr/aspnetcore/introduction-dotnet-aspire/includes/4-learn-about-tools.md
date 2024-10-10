@@ -1,4 +1,4 @@
-.NET Aspire adds tools to the Visual Studio user interface to helps you create and manage cloud-native apps. These tools can ease confusion because it's clear what components make up your complete app, even though they run in different containers. The .NET Aspire dashboard also presents a unified view of your running app, with diagnostic and monitoring data to help you test and debug it.
+.NET Aspire adds tools to the Visual Studio user interface to helps you create and manage cloud-native apps. These tools can ease confusion because it's clear what integrations make up your complete app, even though they run in different containers. The .NET Aspire dashboard also presents a unified view of your running app, with diagnostic and monitoring data to help you test and debug it.
 
 Consider the imaginary outdoor clothing and equipment company scenario again. Your development teams have completed their architecture designs for each microservice and want to begin development. You want to understand how they can work with .NET Aspire in Visual Studio and at the command line.
 
@@ -19,7 +19,7 @@ If you use Visual Studio, you must install version 17.9 or higher.
 
 ## Install .NET Aspire
 
-If you're using Microsoft Visual Studio, you can install .NET Aspire by adding the **.NET Aspire SDK** component from the **ASP.NET and web development** workload. Once installed, new tools become available. You'll complete these steps in the exercise, later in this module.
+If you're using Microsoft Visual Studio, you can install .NET Aspire by adding the **.NET Aspire SDK** integration from the **ASP.NET and web development** workload. Once installed, new tools become available. You'll complete these steps in the exercise, later in this module.
 
 :::image type="content" source="../media/install-aspire.png" lightbox="../media/install-aspire.png" alt-text="Screenshot of the Visual Studio installer showing that you can install .NET Aspire as part of the ASP.NET and web development workload.":::
 
@@ -53,7 +53,7 @@ As you work on your application, you can use the Visual Studio debugger to run c
 > [!IMPORTANT]
 > The .NET Aspire project templates set the App Host project as the startup project for the solution. If you change the startup project, the .NET Aspire dashboard and other aspects of your solution won't function correctly during debugging.
 
-In the dashboard's homepage, you can see all the resources that make up the application. Each microservice is listed as a **Project**. Backing services, such as Redis caches, are listed as **Containers**. Other components may be present as **Executables**. You can obtain more **Details** for each resource. Microservices also have an **Endpoint** column. Select the link in this column to connect to and test the resource in the browser.
+In the dashboard's homepage, you can see all the resources that make up the application. Each microservice is listed as a **Project**. Backing services, such as Redis caches, are listed as **Containers**. Other integrations may be present as **Executables**. You can obtain more **Details** for each resource. Microservices also have an **Endpoint** column. Select the link in this column to connect to and test the resource in the browser.
 
 There are four monitoring sections in the dashboard:
 

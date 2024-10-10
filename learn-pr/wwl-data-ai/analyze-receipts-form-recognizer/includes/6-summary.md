@@ -1,16 +1,6 @@
-Azure AI Document Intelligence provides access to prebuilt and custom models for extracting text from various documents, such as receipts, invoices, IDs, and more. 
+In this module, you have learned about document intelligence, an AI capability that uses machine learning models to extract text from forms. This process, known as document analysis, involves identifying the location of text on a page using bounding box coordinates. The module also discussed the challenges posed by the diverse formats of forms and documents, which often require different machine learning models. You also learned about the potential benefits of automating this process, such as enhancing operations, customer experiences, and decision making.
 
-## Clean-up
-
-It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
-
-If you are continuing on to other modules in this learning path you can keep your resources for use in other exercises.
-
-If you have finished learning, you can delete the resource group or individual resources from your Azure subscription:
-
-1. In the [Azure portal](https://portal.azure.com/), in the **Resource groups** page, open the resource group you specified when creating your resource.
-
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), clicking on the three dots to see more options, and clicking **Delete**.
+The main takeaways from this module include understanding the features offered by Azure AI Document Intelligence, which are grouped by model type: Document Analysis, Prebuilt Models, and Custom Models. Document Analysis provides structured data representations, while Prebuilt Models are designed to process common document types. Custom Models can be trained to identify specific fields not included in the existing models. The module focused on Prebuilt Models, which use advanced machine learning to extract text, key-value pairs, tables, and structures from various documents. To use Azure AI Document Intelligence, a Document Intelligence or Azure AI services resource needs to be created in your Azure subscription.
 
 ## Learn more
 

@@ -2,15 +2,15 @@ Databases are a fundamental requirement in many advanced web applications as the
 
 Imagine working for the Northern Mountains retailer. Your current online store, which uses .NET Aspire, stores catalog data in a local SQLite database. The app also uses an in-memory Redis instance to store customers' shopping baskets. You want to investigate using more robust and durable database technologies for storing data.
 
-In this module, learn about the database systems that .NET Aspire can connect to using built-in components. Then see how to configure connections to, and store data in, relational and nonrelational databases.
+In this module, learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases.
 
 ## Learning objectives
 
 At the end of this module, you'll be able to:
 
-- Describe the database systems that .NET Aspire can connect to using built-in components.
-- Use .NET Aspire components to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
-- Use .NET Aspire components to read and write data to MongoDB databases.
+- Describe the database systems that .NET Aspire can connect to using built-in integrations.
+- Use .NET Aspire integrations to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
+- Use .NET Aspire integrations to read and write data to MongoDB databases.
 - Understand the basics of testing in .NET Aspire. 
 - Create a test project using xUnit. 
 - Write and run tests for .NET Aspire projects. 
