@@ -19,7 +19,7 @@ We should also anticipate customers potentially posting harmful image content. T
 > The image used for testing contains a graphic detection of a bear attack.
 
 1. In the notebook, go to the `VIOLENT IMAGE` CELL.
-1. Replace `sample_data` with the `data/Image Moderation` folder.
+1. Replace `sample_data` with the `../data/Image Moderation` folder.
 1. Replace `image.jpg` with `bear-attack-blood.jpg`.
 1. Run the cell.
 

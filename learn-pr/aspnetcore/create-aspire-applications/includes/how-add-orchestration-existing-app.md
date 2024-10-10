@@ -1,14 +1,14 @@
 .NET Aspire can be broken down into solutions for three issues that face modern cloud-native apps. These are:
 
 1. Managing the complexity of orchestration between microservices.
-1. Simplifying how your microservices use components through NuGet packages.
+1. Simplifying how your microservices use integrations through NuGet packages.
 1. Supporting developer velocity through tooling and templates.
 
 In this unit, see how using .NET Aspire orchestration brings benefits to your existing cloud-native apps. Then see how to enroll your app in .NET Aspire orchestration and examine the changes made to your solution.
 
 ## Benefits of .NET Aspire orchestration
 
-Orchestration is the coordination and management of the various services within a cloud-native app. .NET Aspire provides abstractions for managing your solution's service discovery, environment variables, and container configurations. These abstractions also provide consistent setup patterns across apps with many components and services.
+Orchestration is the coordination and management of the various services within a cloud-native app. .NET Aspire provides abstractions for managing your solution's service discovery, environment variables, and container configurations. These abstractions also provide consistent setup patterns across apps with many integrations and services.
 
 :::image type="content" source="../media/app-host-resource-diagram.png" alt-text="A diagram showing the relationship between the .NET Aspire AppHost project and the other services in an app." border="false":::
 
