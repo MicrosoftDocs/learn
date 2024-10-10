@@ -9,8 +9,7 @@ metadata:
   manager: femila
   ms.topic: module
   ms.custom: e2e-hybrid
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hci
+  ms.service: azure-stack-hci
 title: Plan and deploy Azure Stack HCI
 summary: This module introduces you to planning for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
 abstract: | 
