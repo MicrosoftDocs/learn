@@ -1,17 +1,17 @@
-In the previous unit, you configured peering connections between the virtual networks to enable resources to communicate with each other. Your configuration used a hub and spoke topology. MarketingVNet was the hub, and SalesVNet and ResearchVNet were spokes.
+In the previous unit, you configured peering connections between the virtual networks to enable resources to communicate with each other. Your configuration used a hub and spoke topology. **MarketingVNet** was the hub, and **SalesVNet** and **ResearchVNet** were spokes.
 
 :::image type="content" source="../media/5-hub-spoke-network.svg" alt-text="Diagram of a hub and spoke topology for virtual networks.":::
 
-Remember, peering connections are nontransitive. Intermediate virtual networks don't allow connectivity to flow through them to connected virtual networks. **SalesVNet** can communicate with **MarketingVNet**. **ResearchVNet** can communicate with **MarketingVNet**. **MarketingVNet** can communicate with both **SalesVNet** and **ResearchVNet**. The only communication that's not permitted is between **SalesVNet** and **ResearchVNet**. Even though **SalesVNet** and **ResearchVNet** are both connected to **MarketingVNet**, they can't communicate with each other because they're not directly peered to each other.
+Remember, peering connections are nontransitive. Intermediate virtual networks don't allow connectivity to flow through them to connected virtual networks. **SalesVNet** can communicate with **MarketingVNet**. **ResearchVNet** can communicate with **MarketingVNet**. **MarketingVNet** can communicate with both **SalesVNet** and **ResearchVNet**. The only communication that isn't permitted is between **SalesVNet** and **ResearchVNet**. Even though **SalesVNet** and **ResearchVNet** are both connected to **MarketingVNet**, they can't communicate with each other because they're not directly peered to each other.
 
-Let's confirm the connectivity across the peering connections. To do this, you'll first create a connection from Azure Cloud Shell to a target VM's *public* IP address. Then you'll connect from the target VM to the destination VM by using the destination VM's *private* IP address.
+Let's confirm the connectivity across the peering connections. First, you create a connection from Azure Cloud Shell to the *public* IP address of a target virtual machine (VM). Then you connect from the target VM to the destination VM by using the destination VM's *private* IP address.
 
 > [!IMPORTANT]
 > To test the virtual network peering connection, connect to the private IP address assigned to each VM.
 
-1. To connect to your VMs, you'll use SSH (Secure Shell) directly from Cloud Shell. When using SSH, you'll first find the public IP addresses that are assigned to your test VMs.
+1. Connect to your VMs by using SSH (Secure Shell) directly from Cloud Shell. When using SSH, you first find the public IP addresses that are assigned to your test VMs.
 
-1. In Cloud Shell, run the following command to list the IP addresses you'll use to connect to the VMs:
+1. Run the following command in Cloud Shell to list the IP addresses you use to connect to the VMs:
 
     ```azurecli
     az vm list \
@@ -21,13 +21,13 @@ Let's confirm the connectivity across the peering connections. To do this, you'l
         --output table
     ```
 
-1. Record the output. You'll need the IP addresses for the exercises in this unit.
+1. Record the output. You need the IP addresses for the exercises in this unit.
 
-Before you start the tests, think about what you've learned in this module. What results do you expect? Which VMs will and won't be able to communicate with each other?
+Before you start the tests, think about what you learned in this module. What results do you expect? Which VMs are able to communicate with each other, and which ones aren't?
 
 ## Test connections from SalesVM
 
-In the first test, you'll use SSH in Cloud Shell to connect to the public IP address of **SalesVM**. You'll then attempt to connect from **SalesVM** to **MarketingVM** and **ResearchVM**.
+In the first test, you use SSH in Cloud Shell to connect to the public IP address of **SalesVM**. You then attempt to connect from **SalesVM** to **MarketingVM** and **ResearchVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **SalesVM**. In the command, replace `<SalesVM public IP>` with the VM's *public* IP address.
 
@@ -67,7 +67,7 @@ In the first test, you'll use SSH in Cloud Shell to connect to the public IP add
 
 ## Test connections from ResearchVM
 
-In the second test, you'll use SSH in Cloud Shell to connect to the public IP address of **ResearchVM**. You'll then attempt to connect from **ResearchVM** to **MarketingVM** and **SalesVM**.
+In the second test, you use SSH in Cloud Shell to connect to the public IP address of **ResearchVM**. Then, you attempt to connect from **ResearchVM** to **MarketingVM** and **SalesVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **ResearchVM**. In the command, replace `<ResearchVM public IP>` with this VM's *public* IP address.
 
@@ -107,7 +107,7 @@ In the second test, you'll use SSH in Cloud Shell to connect to the public IP ad
 
 ## Test connections from Marketing VM
 
-In the final test, you'll use SSH in Cloud Shell to connect to the public IP address of **MarketingVM**. You'll then attempt to connect from **MarketingVM** to **ResearchVM** and **SalesVM**.
+In the final test, you use SSH in Cloud Shell to connect to the public IP address of **MarketingVM**. You then attempt to connect from **MarketingVM** to **ResearchVM** and **SalesVM**.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the public IP address of **MarketingVM**. In the command, replace `<MarketingVM public IP>` with this VM's *public* IP address.
 
@@ -125,7 +125,7 @@ In the final test, you'll use SSH in Cloud Shell to connect to the public IP add
     ssh -o StrictHostKeyChecking=no azureuser@<ResearchVM private IP>
     ```
 
-   :::image type="content" source="../media/5-marketing-step-5.svg" alt-text="Diagram that shows Azure Cloud Shell connecting to the Marketing V Net and the Research V Net virtual networks, using a peering connection.":::
+   :::image type="content" source="../media/5-marketing-step-5.svg" alt-text="Diagram that shows Azure Cloud Shell connecting to the MarketingVNet and the ResearchVNet virtual networks, using a peering connection.":::
 
     The connection attempt should succeed because of the peering connection between the **MarketingVNet** and **ResearchVNet** virtual networks.
 
@@ -139,9 +139,9 @@ In the final test, you'll use SSH in Cloud Shell to connect to the public IP add
    ssh -o StrictHostKeyChecking=no azureuser@<SalesVM private IP>
    ```
 
-   The connection attempt should also succeed because there *is* a peering connection between the **MarketingVNet** and **SalesVNet** virtual networks.
+   This connection attempt should also succeed because of the peering connection between the **MarketingVNet** and **SalesVNet** virtual networks.
 
-   :::image type="content" source="../media/5-marketing-step-9.svg" alt-text="Diagram that shows Azure Cloud Shell connecting to the Marketing V Net and the Sales V Net virtual machines, using a peering connection.":::
+   :::image type="content" source="../media/5-marketing-step-9.svg" alt-text="Diagram that shows Azure Cloud Shell connecting to the MarketingVNet and the SalesVNet virtual machines, using a peering connection.":::
 
 1. Sign in by using the password you used to create the VM.
 
@@ -149,6 +149,6 @@ In the final test, you'll use SSH in Cloud Shell to connect to the public IP add
 
 1. Enter `exit` to close the SSH session, and return to Cloud Shell.
 
-This is a simple test using SSH. It demonstrates network connectivity between peered virtual networks. It also demonstrates lack of network connectivity for transitive connections. 
+This simple test using SSH demonstrates network connectivity between peered virtual networks. It also demonstrates lack of network connectivity for transitive connections. 
 
 If these servers were running application services, the server connectivity would allow communication between the services running on the VMs. The connectivity would allow the business to share data across departments as required.
