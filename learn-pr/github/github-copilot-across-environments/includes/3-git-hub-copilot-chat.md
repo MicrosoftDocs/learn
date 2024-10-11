@@ -16,7 +16,7 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
 - **Complex Code Generation**
   When you need to implement complex algorithms, data structures, or generate boilerplate code for specific design patterns, Copilot Chat can help streamline the process. It can assist in creating intricate regular expressions, constructing detailed SQL queries, or developing advanced data structures like a Bubble sort in Python. 
 
-  :::image type="content" source="../media/chat-code-generation.png" alt-text="Screenshot of chat code generation.":::
+  :::image type="content" source="../media/chat-code-generation.png" alt-text="Screenshot of chat code generation." lightbox="../media/chat-code-generation.png" :::
 
 - **Debugging Assistance**
   If you encounter errors in your code, Copilot Chat can be valuable in analyzing error messages and suggesting potential fixes. It can help identify logical errors and provide step-by-step explanations of problematic sections of code. 
@@ -31,7 +31,7 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
 - **Code Explanations**
   Copilot Chat can also be used to better understand complex code snippets. It can break down code into simpler terms, explain the purpose and functionality of unfamiliar code, and offer insights into best practices and potential optimizations. For example, you could ask: - "Can you explain how this async/await code works in Python?"
 
-  :::image type="content" source="../media/chat-code-explanations.png" alt-text="Screenshot of chat code explanations.":::
+  :::image type="content" source="../media/chat-code-explanations.png" lightbox="../media/chat-code-explanations.png" alt-text="Screenshot of chat code explanations.":::
 
 
 ## How to Improve GitHub Copilot Chat Responses
@@ -67,7 +67,7 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/fix:** Proposes fixes for problems in the selected code. If you're facing issues, you can highlight the problematic section and use `/fix` to receive suggestions for resolving the issue.
 
-  :::image type="content" source="../media/fix-slash-commands.png" alt-text="Screenshot of /fix slash commands.":::
+  :::image type="content" source="../media/fix-slash-commands.png" lightbox="../media/fix-slash-commands.png" alt-text="Screenshot of /fix slash commands.":::
 
 - **/generate:** Helps in generating new code based on your requirements. For example, `/generate code to find the root of a number in client.js` will create a function to perform the task.
 
