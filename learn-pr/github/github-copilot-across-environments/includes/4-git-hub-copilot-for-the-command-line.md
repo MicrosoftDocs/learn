@@ -41,7 +41,7 @@ After receiving a suggestion, you can choose the `Execute command` option. This 
 
    :::image type="content" source="../media/executing-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
 
-1. **Revise suggested command**:
+- **Revise suggested command**:
    To give GitHub Copilot CLI to rework or revise a command to make it better or more suited to your expectations, use the "Revise command" option along with your feedback.
 
    :::image type="content" source="../media/revising-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of revising suggested command copilot suggest in cli.":::
