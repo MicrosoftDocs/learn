@@ -117,8 +117,6 @@ app.MapRazorComponents<App>()
 
 app.Run();
 ```
-
-
 In the preceding code:
 
 - `app.UseExceptionHandler()` adds a middleware component that catches exceptions and returns an error page.
@@ -128,6 +126,9 @@ In the preceding code:
 - `app.MapStaticAssets()` and `app.MapRazorComponents<App>()` map routes to endpoints, which are then handled by the endpoint routing middleware. The endpoint routing middleware is implicitly added by the `WebApplicationBuilder`.
 
 There are many more built-in middleware components that you can use in your app depending on the type of app and your needs. [Check the documentation for the complete list](https://learn.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0).
+
+> [!TIP]
+> In this context, methods that start with `Use` are generally for mapping middleware. Methods that start with `Map` are generally for mapping endpoints.
 
 > [!IMPORTANT]
 > The order middleware components are added to the pipeline matters! Certain middleware components must run before others to work correctly. Check the documentation for each middleware component to determine the correct order.
