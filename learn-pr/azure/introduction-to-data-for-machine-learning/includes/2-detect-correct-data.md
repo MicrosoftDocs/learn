@@ -1,4 +1,4 @@
-As a side effect of data's influence on machine learning, models trained only on small amounts of data rarely perform well in the real world. This behavior happens because small amounts of data don't usually serve as good real-world representations. For example, four randomly selected people on Earth wouldn't reliably represent the average person. By contrast, if we selected one billion people, our data would probably become representative.
+As a side effect of data's influence on machine learning, models trained only on small amounts of data rarely perform well in the real world. This behavior happens because small amounts of data don't usually serve as good real-world representations. For example, four randomly selected people on Earth wouldn't reliably represent the average person. By contrast, if we selected 1,000,000,000 people, our data would probably become representative.
 
 However, other factors also have importance. We need large, representative data samples that:
 
@@ -19,7 +19,7 @@ We need to think about whether the sample accurately represents the population. 
 
 ## What is a data error?
 
-The term _data errors_ refers to incorrect data. Enough data errors can skew a model so that it consistently makes incorrect predictions. It's simple: if you put bad data in, you get bad predictions.
+The term _data error_ refers to incorrect data. Enough data errors can skew a model so that it consistently makes incorrect predictions. It's simple: if you put bad data in, you get bad predictions.
 
 Errors in data are a fact of life, and we can group them in two categories, measurement errors and data entry errors.
 

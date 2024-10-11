@@ -1,4 +1,4 @@
-We covered a lot of ground. Let's review some of the key messages.
+We covered much ground. Let's review some of the key messages.
 
 ## What are data categories?
 
@@ -21,6 +21,6 @@ If we must deal with incomplete data, we can take steps to make sure that incomp
 
 ## Thinking about data
 
-We showed how data visualization can help to build an understanding of what might be useful in a model. Use of different types of graphs, colors, and so on can be fun and make complex information much more intuitive.
+We showed how data visualization can help to build an understanding of what might be useful in a model. Use of different types of graphs, colors, and the like can be fun and make complex information much more intuitive.
 
 We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model as we explored the count of cabins on the Titanic, and we considered how this information helped us. Yet overall, we found that we could improve this through simplification into nine Deck labels.
