@@ -15,13 +15,13 @@ quiz:
   questions:
   - content: 'Why do we clean our data before training?'
     choices:
-    - content: "Removing rows of data makes our model more powerful"
+    - content: "Removing rows of data makes our model more powerful."
       isCorrect: false
       explanation: "Incorrect. While removing bad data makes models perform better, only removing data does not make models more powerful."
-    - content: "Cleaning data helps us select features that will help the performance of the model"
+    - content: "Cleaning data helps us select features that will help the performance of the model."
       isCorrect: false
       explanation: "Incorrect. Cleaning data might help us select features, but cleaning data is used to fix problems with the data."
-    - content: "Removing rows that have errors prevents these rows from misleading the training process"
+    - content: "Removing rows that have errors prevents these rows from misleading the training process."
       isCorrect: true
       explanation: "Correct. Cleaning data helps prevent errors from incomplete or error-prone data points."
   - content: 'What kind of data are best encoded with one-hot vectors?'
@@ -37,7 +37,7 @@ quiz:
       explanation: "Correct. One-hot vectors are best used with multiple classes or categories so that models can better interpret them."
   - content: 'What is a data sample? What is a population?'
     choices:
-    - content: "A sample is all possible data we care about. A population is the subset of that data which we actually have on hand"
+    - content: "A sample is all possible data we care about. A population is the subset of that data which we actually have on hand."
       isCorrect: false
       explanation: "Incorrect. A sample is a portion, or subset, of the data we care about. A population is all the available data."
     - content: "Both population and sample refer to data we use to train our model."
@@ -48,10 +48,10 @@ quiz:
       explanation: "Correct. A population is all the possible data we could collect for a data set, and a sample is a portion of the data which we already have."
   - content: "You have a model that does not perform well. Which of these will definitely **not** help improve its performance?"
     choices:
-    - content: "Adding additional samples (rows)"
+    - content: "Adding additional samples (rows)."
       isCorrect: false
       explanation: "Incorrect. Adding rows of data will likely help your dataset become more representative, and so help your model train."
-    - content: "Adding a small number of features (columns) that you know relate to what the model is trying to predict"
+    - content: "Adding a small number of features (columns) that you know relate to what the model is trying to predict."
       isCorrect: false
       explanation: "Incorrect. So long as you have enough rows of data, adding relevant features is likely to help your model train."
     - content: "Adding a large number of features that you know have no relation to what the model is trying to predict."
