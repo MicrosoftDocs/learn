@@ -14,7 +14,7 @@ Select the appropriate tab to see what the Microsoft Sentinel integration with D
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="../media/sentinel-xdr.png" alt-text="Diagram of the the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr.png" border="false":::
+:::image type="content" source="../media/sentinel-xdr.png" alt-text="Diagram of the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 
@@ -27,7 +27,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
-:::image type="content" source="../media/sentinel-xdr-usx.png" alt-text="Diagram of the the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr-usx.png" border="false":::
+:::image type="content" source="../media/sentinel-xdr-u-s-x.png" alt-text="Diagram of the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr-u-s-x.png" border="false":::
 
 In this diagram:
 
@@ -38,11 +38,11 @@ In this diagram:
 
 ## Streamlined Operations
 
-By integrating your security solutions, you can streamline your operations and reduce the complexity of managing and switching between multiple tools. This not only saves time but also reduces the risk of errors that can occur when switching between different systems.
+By integrating your security solutions, you can streamline your operations and reduce the complexity of managing and switching between multiple tools. The integration not only saves time but also reduces the risk of errors that can occur when switching between different systems.
 
 ## Advanced hunting
 
-Query from a single portal across different data sets to make hunting more efficient and remove the need for context-switching. Use Copilot for Security to help generate your KQL. View and query all data including data from Microsoft security services and Microsoft Sentinel. Use all your existing Microsoft Sentinel workspace content, including queries and functions.
+Query from a single portal across different data sets to make hunting more efficient and remove the need for context-switching. Use Copilot for Security to help generate your Kusto Query Language (KQL) hunting queries. View and query all data including data from Microsoft security services and Microsoft Sentinel. Use all your existing Microsoft Sentinel workspace content, including queries and functions.
 
 ## Attack disruption
 
