@@ -6,7 +6,7 @@ This unit covers:
 - Exploring configuration options enabling you to make the most of GitHub Copilot directly from your terminal. 
 
 
-## Common Commands
+## Common commands
 Once you have Copilot set up in the CLI, here are some frequently used commands for interacting with it:
 
 - **Getting command explanations**:
@@ -47,7 +47,7 @@ After receiving a suggestion, you can choose the `Execute command` option. This 
    :::image type="content" source="../media/revising-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of revising suggested command copilot suggest in cli.":::
 
 
-## Configuration Options
+## Configuration options
 
 To make the most out of Copilot in the CLI, you may want to configure certain settings:
 
@@ -76,12 +76,12 @@ To make the most out of Copilot in the CLI, you may want to configure certain se
    echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
    ```
 
-- **Feedback Mechanism**:
+- **Feedback mechanism**:
    Copilot encourages user feedback to improve its suggestions. You can rate the quality of a suggestion by selecting the `Rate response` option after Copilot provides you with a command.
 
    :::image type="content" source="../media/rating-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of rating suggested command copilot suggest in cli.":::
 
-- **Organizational Settings**:
+- **Organizational settings**:
    If you're using Copilot within an organization your access to certain features may be governed by your organization's policies. Administrators can enable or disable Copilot's capabilities within the CLI.
 
    For further customization and detailed configuration so you can optimize Copilot's functionality for your specific needs, refer to the [GitHub documentation](https://docs.github.com/en/copilot).
