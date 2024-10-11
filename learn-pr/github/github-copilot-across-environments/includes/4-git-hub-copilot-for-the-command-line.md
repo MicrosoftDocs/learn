@@ -9,7 +9,7 @@ This unit covers:
 ## Common Commands
 Once you have Copilot set up in the CLI, here are some frequently used commands for interacting with it:
 
-1. **Getting command explanations**:
+- **Getting command explanations**:
    - If you're unsure about what a specific command does, you can ask Copilot to explain it. For instance:
 
      ```shell
@@ -20,7 +20,7 @@ Once you have Copilot set up in the CLI, here are some frequently used commands 
 
      This command provides you with a detailed explanation of the provided command.
 
-2. **Getting command suggestions**:
+- **Getting command suggestions**:
    - Need help with constructing a command? You can ask Copilot to suggest a command based on what you want to accomplish:
      ```shell
      gh copilot suggest "Undo the last commit"
@@ -30,7 +30,7 @@ Once you have Copilot set up in the CLI, here are some frequently used commands 
 
      Copilot starts an interactive session to clarify your request and suggest the best command.
 
-3. **Executing suggested commands**:
+- **Executing suggested commands**:
 After receiving a suggestion, you can choose the `Execute command` option. This copies the command to your clipboard. You can also allow Copilot to execute commands on your behalf only if you configure the `ghcs` alias, you. 
 
    Using the alias:
@@ -39,19 +39,19 @@ After receiving a suggestion, you can choose the `Execute command` option. This 
    ghcs suggest "What command to see running docker containers"
    ```
 
-   :::image type="content" source="../media/executing-suggested-command-copilot-suggest--in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
+   :::image type="content" source="../media/executing-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
 
 1. **Revise suggested command**:
    To give GitHub Copilot CLI to rework or revise a command to make it better or more suited to your expectations, use the "Revise command" option along with your feedback.
 
-   :::image type="content" source="../media/revising-suggested-command-copilot-suggest--in-cli.png" alt-text="Screenshot of revising suggested command copilot suggest in cli.":::
+   :::image type="content" source="../media/revising-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of revising suggested command copilot suggest in cli.":::
 
 
 ## Configuration Options
 
 To make the most out of Copilot in the CLI, you may want to configure certain settings:
 
-1. **Alias Configuration**:
+- **Alias Configuration**:
    If you want Copilot to execute commands on your behalf directly, you need to set up the `ghcs` alias. Using an alias allows you to bypass copying and pasting commands manually, and instead Copilot does it for you.
 
    To configure the `ghcs` alias, run the following commands:
@@ -76,17 +76,17 @@ To make the most out of Copilot in the CLI, you may want to configure certain se
    echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
    ```
 
-2. **Feedback Mechanism**:
+- **Feedback Mechanism**:
    Copilot encourages user feedback to improve its suggestions. You can rate the quality of a suggestion by selecting the `Rate response` option after Copilot provides you with a command.
 
    :::image type="content" source="../media/rating-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of rating suggested command copilot suggest in cli.":::
 
-3. **Organizational Settings**:
+- **Organizational Settings**:
    If you're using Copilot within an organization your access to certain features may be governed by your organization's policies. Administrators can enable or disable Copilot's capabilities within the CLI.
 
    For further customization and detailed configuration so you can optimize Copilot's functionality for your specific needs, refer to the [GitHub documentation](https://docs.github.com/en/copilot).
 
-4. **Data handling**:
+- **Data handling**:
    GitHub Copilot CLI doesn't retain your prompts, but it keeps your usage analytics. You can configure whether you want GitHub Copilot to keep and use your usage data to improve the product. Enter the command ` gh copilot config` , select "Optional Usage Analytics", then select "No" if you want to opt out.
 
    :::image type="content" source="../media/configure-usage-data-setting-in-cli.png" alt-text="Screenshot of configure usage data setting in cli.":::
