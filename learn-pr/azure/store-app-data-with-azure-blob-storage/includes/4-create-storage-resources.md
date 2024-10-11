@@ -34,7 +34,7 @@ The code you start with compiles and runs. The parts responsible for storing and
 
 Use Azure Cloud Shell with the Azure CLI to create a storage account. You need to provide a unique name for the storage account. Make a note of it for later. Replace `<your-unique-storage-account-name>` with a name you choose. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 
-To create the storage account, run this command.
+In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**. Then, to create the storage account, run this command.
 
 ```azurecli
 az storage account create \
