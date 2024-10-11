@@ -63,7 +63,7 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/explain:** Provides explanations for selected code. This is particularly useful when you need to understand what a particular piece of code does. For example, `/explain the #file:controller.js` will give you a detailed explanation of that file.
 
-  :::image type="content" source="../media/explani-slash-commands.png" alt-text="Screenshot of /explani slash commands.":::
+  :::image type="content" source="../media/explain-slash-commands.png" alt-text="Screenshot of /explain slash commands.":::
 
 - **/fix:** Proposes fixes for problems in the selected code. If you're facing issues, you can highlight the problematic section and use `/fix` to receive suggestions for resolving the issue.
 
@@ -87,11 +87,11 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
 - **@workspace:** This agent allows you to extend the context of whatever questions you ask Copilot to the whole project. It is very useful for getting code generated that would fit in your project right away, using information from your whole project. It can also be utilized for getting answers about your whole codebase. 
 
-  :::image type="content" source="../media/@workspace`-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
+  :::image type="content" source="../media/workspace-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
 
   You can also use the “@workspace /new” smart action which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and javascript for advanced calculations“
 
-  :::image type="content" source="../media/@workspace-new`-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
+  :::image type="content" source="../media/workspace-new-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
 
   Click on “Create Workspace” to proceed with code generation and just like that you have your new project with the code you requested.
 
@@ -99,16 +99,16 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
 - **@terminal:** This agent is useful for command-line related questions. For example, you could ask it to find the largest file in a directory or explain the last command you ran.
 
-  :::image type="content" source="../media/@terminal`-agent-command.png" alt-text="Screenshot of `@terminal` agent command.":::
+  :::image type="content" source="../media/terminal-agent-command.png" alt-text="Screenshot of `@terminal` agent command.":::
 
 - **@vscode:** Use this agent to ask questions related to Visual Studio Code, such as how to debug or change settings within the IDE.
 
-  :::image type="content" source="../media/@vscode`-agent-command.png" alt-text="Screenshot of `@vscode` agent command.":::
+  :::image type="content" source="../media/vscode-agent-command.png" alt-text="Screenshot of `@vscode` agent command.":::
 
   By effectively utilizing these tools and techniques, you can significantly improve the quality of responses you receive from GitHub Copilot Chat, making your coding experience more efficient and productive.
 
 ### Sharing feedback on GitHub Copilot Chat
-Most IDEs with Copilot Chat integration have built-in feedback mechanisms. For example, in VSCode, you can find feedback options at the beginning of GitHub Copilot Chat's suggestions. Hover over a suggestion, and you should see thumbs up and thumbs down buttons. 
+Most IDEs with Copilot Chat integration have built-in feedback mechanisms. For example, in VS Code, you can find feedback options at the beginning of GitHub Copilot Chat's suggestions. Hover over a suggestion, and you should see thumbs up and thumbs down buttons. 
 
 :::image type="content" source="../media/thumbs-up-helpful-buttons.png" alt-text="Screenshot of thumbs up helpful buttons.":::
 
