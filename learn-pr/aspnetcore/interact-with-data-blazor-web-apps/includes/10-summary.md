@@ -11,7 +11,7 @@ After completing this module, you've learned how to:
 
 ## Learn more
 
-- [Introduction to ASP.NET Core Blazor](/aspnet/core/blazor/)
+- [ASP.NET Core Blazor](/aspnet/core/blazor/)
 - [ASP.NET Core Razor components](/aspnet/core/blazor/components/)
 - [ASP.NET Core Blazor hosting models](/aspnet/core/blazor/hosting-models)
 - [ASP.NET Core Blazor cascading values and parameters](/aspnet/core/blazor/components/cascading-values-and-parameters)
