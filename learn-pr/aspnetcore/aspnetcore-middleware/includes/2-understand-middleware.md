@@ -125,7 +125,7 @@ In the preceding code:
 - `app.UseAntiforgery()` adds a middleware component that prevents cross-site request forgery (CSRF) attacks.
 - `app.MapStaticAssets()` and `app.MapRazorComponents<App>()` map routes to endpoints, which are then handled by the endpoint routing middleware. The endpoint routing middleware is implicitly added by the `WebApplicationBuilder`.
 
-There are many more built-in middleware components that you can use in your app depending on the type of app and your needs. [Check the documentation for the complete list](https://learn.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0).
+There are many more built-in middleware components that you can use in your app depending on the type of app and your needs. [Check the documentation for the complete list](/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0&preserve-view=true).
 
 > [!TIP]
 > In this context, methods that start with `Use` are generally for mapping middleware. Methods that start with `Map` are generally for mapping endpoints.
