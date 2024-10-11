@@ -51,7 +51,7 @@ Now that you've verified that the app runs correctly, you can publish it as a fr
     In the preceding command:
 
     - `-c Release` specifies that the app should be built in release mode. This optimizes the app for performance.
-    - `-o publish-fd` specifies the output directory for the published app.
+    - `-o` specifies the name of the output directory. In this case, the output directory will be named *publish-fd*.
 
     This command publishes the app as a framework-dependent deployment to the *publish-fd* directory.
 
