@@ -4,12 +4,12 @@ title: Trace and track activity
 metadata:
   title: Trace and track activity
   description: "Trace and track activity"
-  ms.date: 09/26/2022
+  ms.date: 10/11/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/4-trace-track-activity.md)]

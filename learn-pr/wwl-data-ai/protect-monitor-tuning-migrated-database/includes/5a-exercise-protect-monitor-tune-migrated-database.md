@@ -21,8 +21,6 @@ az postgres server create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $SERVERNAME \
     --location westus \
-    --admin-user awadmin \
-    --admin-password Pa55w.rdDemo \
     --version 10 \
     --storage-size 5120
 
@@ -335,3 +333,4 @@ echo $SERVERNAME.postgres.database.azure.com
 1. Return to the Cloud Shell and press enter, to stop the app.
 
 You have now seen how to monitor server activity using the tools available in the Azure portal. You have also learned how to configure replication, and seen how creating read-only replicas can distribute the workload in read-intensive data scenarios.
+
