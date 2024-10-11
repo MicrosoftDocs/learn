@@ -11,7 +11,7 @@ Computers store data as distinct types, and we usually try to match the datatype
 
 ## What makes a good dataset?
 
-We learned that a dataset it helpful if:
+We learned that a dataset is helpful if:
 
 - It contains relevant information.
 - It's complete.
