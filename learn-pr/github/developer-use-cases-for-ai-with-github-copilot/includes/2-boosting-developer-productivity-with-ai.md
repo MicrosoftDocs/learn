@@ -36,7 +36,6 @@ In the example below, notice how you can work with external resources (like APIs
 
 ![Minimizing context switching](https://github.com/user-attachments/assets/f4a941ef-18ce-498d-8476-96fbfa21b853)
 
-
 ### Enhanced Documentation Writing
 
 GitHub Copilot significantly improves the process of writing and maintaining code documentation:
