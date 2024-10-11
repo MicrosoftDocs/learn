@@ -13,12 +13,12 @@ To access Copilot in your IDE, click the chat icon on the left navbar.
 
 GitHub Copilot Chat is particularly beneficial in certain scenarios:
 
-- **Complex Code Generation**
+- **Complex code generation**
   When you need to implement complex algorithms, data structures, or generate boilerplate code for specific design patterns, Copilot Chat can help streamline the process. It can assist in creating intricate regular expressions, constructing detailed SQL queries, or developing advanced data structures like a Bubble sort in Python. 
 
   :::image type="content" source="../media/chat-code-generation.png" alt-text="Screenshot of chat code generation." lightbox="../media/chat-code-generation.png" :::
 
-- **Debugging Assistance**
+- **Debugging assistance**
   If you encounter errors in your code, Copilot Chat can be valuable in analyzing error messages and suggesting potential fixes. It can help identify logical errors and provide step-by-step explanations of problematic sections of code. 
   One way to achieve this is by using Copilot inline-chat by highlighting the piece of code containing the error, right clicking and selecting Copilot, then inline-chat. 
   
@@ -28,7 +28,7 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
 
   :::image type="content" source="../media/generating-code-chat-debugging.png" alt-text="Screenshot of generating code chat debugging.":::
   
-- **Code Explanations**
+- **Code explanations**
   Copilot Chat can also be used to better understand complex code snippets. It can break down code into simpler terms, explain the purpose and functionality of unfamiliar code, and offer insights into best practices and potential optimizations. For example, you could ask: - "Can you explain how this async/await code works in Python?"
 
   :::image type="content" source="../media/chat-code-explanations.png" lightbox="../media/chat-code-explanations.png" alt-text="Screenshot of chat code explanations.":::
@@ -37,11 +37,11 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
 ## How to Improve GitHub Copilot Chat Responses
 You can significantly improve the quality and relevance of GitHub Copilot Chat's responses with certain key features. Let's dive into them.
 
-### Scope Referencing
+### Scope referencing
 
 To enhance the accuracy and relevance of the responses provided by GitHub Copilot Chat, it’s important to properly scope your questions using references. Here’s how you can do that:
 
-- **File References:** You can specify a particular file in your question by adding a `#file:` before the file name. 
+- **File references:** You can specify a particular file in your question by adding a `#file:` before the file name. 
 
   :::image type="content" source="../media/chat-scope-file-referencing-pick.png" lightbox="../media/chat-scope-file-referencing-pick.png" alt-text="Screenshot of chat scope file referencing pick.":::
 
@@ -53,7 +53,7 @@ To enhance the accuracy and relevance of the responses provided by GitHub Copilo
 
   :::image type="content" source="../media/chat-scope-workspace-referencing.png" lightbox="../media/chat-scope-workspace-referencing.png" alt-text="Screenshot of chat scope workspace referencing.":::
 
-### Slash Commands
+### Slash commands
 
 Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of your query. This can significantly improve the quality of the responses you receive by making your requests more focused. Here are some commonly used slash commands:
 
