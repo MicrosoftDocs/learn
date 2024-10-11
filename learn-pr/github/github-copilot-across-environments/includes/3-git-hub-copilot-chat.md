@@ -59,7 +59,7 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/doc:** Adds comments to the specified or selected code. For example, you can type `/doc` followed by the code you want to document, and Copilot will generate appropriate comments.
 
-  :::image type="content" source="../media/doc-slash-commands.png" lightbox="./media/doc-slash-commands.png" alt-text="Screenshot of /doc slash commands.":::
+  :::image type="content" source="../media/doc-slash-commands.png" lightbox="../media/doc-slash-commands.png" alt-text="Screenshot of /doc slash commands.":::
 
 - **/explain:** Provides explanations for selected code. This is particularly useful when you need to understand what a particular piece of code does. For example, `/explain the #file:controller.js` will give you a detailed explanation of that file.
 
