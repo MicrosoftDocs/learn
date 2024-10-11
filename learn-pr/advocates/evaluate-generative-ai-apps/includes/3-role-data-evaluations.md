@@ -1,87 +1,69 @@
-Selecting a model from the Model Catalog is the first step towards creating the Contoso Camping Store chatbot. The model catalog in Azure AI Studio is the hub to discover and use a wide range of models for building generative AI applications. The model catalog features hundreds of models across model providers such as Azure OpenAI Service, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained.
+The quality and nature of data play a critical role in determining the efficacy and reliability of evaluation processes. Data serves as the backbone for testing, validating, and refining AI models, ensuring they perform optimally in real-world scenarios. The relationship between data and evaluation quality is symbiotic; high-quality, diverse, and representative data sets help ensure that the evaluation metrics accurately reflect the model's performance in various scenarios. Conversely, poor-quality or biased data can lead to misleading evaluation results, masking the model's weaknesses and overestimating its strengths. Therefore, the quality and variety of data directly impacts the reliability and validity of the evaluation process.
 
-:::image type="content" source="../media/model-catalog.png" alt-text="A screenshot of the model catalog within Azure AI Studio. Model suggestions are provided along the top followed by filters. A list of models available display under the filters." lightbox="../media/model-catalog.png":::
+## Characteristics of good evaluation data
 
-The model catalog organizes models into three types of collections:
-- Curated by Azure AI
-- Azure OpenAI models exclusively available on Azure
-- Open models from the Hugging Face hub
+Data used for evaluating generative AI applications should possess the following characteristics:
 
-You can deploy some models in the **Curated by Azure AI** and **Open models from the Hugging Face hub** collections with a managed compute option. Some models are available to be deployed through serverless APIs with pay-as-you-go billing.
+- **Diversity**: Good evaluation data encompasses a wide range of scenarios, contexts, and variations, ensuring the application is tested against different types of inputs.
+- **Representativeness**: The data should accurately reflect the real-world scenarios in which the AI model will be deployed, capturing the nuances and complexities of actual user interactions.
+- **Quality**: High-quality data is clean, well-labeled, and free from errors or inconsistencies. This ensures that the evaluation metrics are not skewed by noise or inaccuracies.
+- **Relevance**: The data should be aligned with the specific goals and requirements of the AI application, focusing on the aspects that are most critical for its performance and user experience.
+- **Regularly Updated and Refreshed**: Continuously update and refresh evaluation data to reflect evolving user needs, standards, and contexts.
+- **Balanced Data Quality and Quantity**: Ensure that the data is both high-quality and sufficiently large to provide meaningful and accurate evaluation results.
 
-## View model card
+## Importance of handling edge cases
 
-There’s various factors to consider when choosing a model such as model performance, relevance, and cost, to name a few. You can learn more about the models within the Model Catalog by reviewing the model’s respective model card. Let’s look at the model cards for both **gpt-4** and **Llama-2-70b-chat**.
+Edge cases, though rare, can have significant implications for the performance and reliability of generative AI applications. By including edge cases in the evaluation data, developers can validate that the model is robust and capable of handling a wide range of inputs, enhancing its overall reliability and user experience. In generative AI, edge cases might include inputs that are significantly different from the typical data the model was trained on, which can help identify potential weaknesses or biases in the model.
 
-1. Within Azure AI Studio, navigate to the **Model Catalog**.
-1. Apply the following filters:
-    - Collections > Azure OpenAI
-    - Inference tasks > Chat completion
+Consider a generative AI application designed for customer service chatbots. An edge case for this application might involve a user inputting a message that includes a mix of languages, such as English and Mandarin, along with slang and industry-specific jargon. For instance, a user might type, "Hey, can you帮我reset我的密码? Thanks!" This input combines English, Mandarin, and informal language, which could challenge the chatbot's language processing capabilities. Evaluating the AI model's response to such inputs can help developers identify whether the chatbot can accurately understand and respond to multilingual and informal queries, ensuring robustness and reliability in diverse communication scenarios.
 
-1. Select the **gpt-4** model to view its model card.
+## Data requirements
 
-The model card for the **gpt-4** model provides the model’s description, its various versions, and further descriptions about each model version which includes the extent of its training data and token limitations.
+The built-in evaluators used within Azure AI Studio and the Azure AI Evaluation SDK requires specific data in .jsonl format:
 
-Let’s now look at a model provided as a Model as a Service (MAAS) offering to compare the difference in information available on a model card.
+**Context** – The context is the source that the response is generated with respect to (i.e. grounding documents).
 
-1. Return to the **Model Catalog**.
-1. Apply the following filters:
-    - Collections > Curated by AzureAI
-    - Inference tasks > Chat completion
-    - Select the **Llama-2-70b-chat** model to view its model card.
+Ex: “Paris is the capital of France.”
 
-The model card for the **Llama-2-70b-chat** model has more information about the model, including its cost, information about the training data, and evaluation comparisons across other Llama models.
+**Query** – The query is the specific question or prompt given to the AI. It’s what the AI is directly asked to address or respond to.
 
-## Compare models
+Ex: “What is the capital of France?”
 
-While the model card provides more details about the available models, comparing your potentially chosen models gets you one step closer to choosing one (or some) for deployment. The **Model Benchmarks** section of Azure AI Studio provides a single interface to compare benchmarks across models and datasets available in the industry to assess which one meets your business scenario. You're using a **GPT** chat completion model to create the Contoso Camping Store chatbot. However, let’s compare some of the **GPT** chat completion models to analyze how each model scores differently across accuracy, coherence, groundedness, fluency, relevance, and GPT Similarity.
+**Response** – The AI’s generated answer to the query, considering the given context.
 
-:::image type="content" source="../media/model-benchmarks.png" alt-text="A screenshot of the model benchmarks page within the Azure AI Studio. There is a graph on the page that compares 3 models." lightbox="../media/model-benchmarks.png":::
+Ex: “The capital of France is Paris. It’s a big city with a famous tower called the Eiffel Tower.”
 
-1. Navigate to **Model Benchmarks**.
-1. In the **Models** filter, select the following models:
-    - gpt-4o
-    - gpt-4-turbo-2024-04-09
-    - gpt-35-turbo-0613
+**Ground truth** – The ground truth is the response to the query generated by a user/human as the true answer.
 
-1. View how each model scores in comparison to the various datasets.
-1. For a summarized view of performance, scroll down to the **Comparison** section and view how the models perform differently across each metric.
+Ex: “Paris is the capital and most populous city of France.”
 
-Across all comparisons, for each metric, **gpt-4o** has the highest score. Therefore, let’s use **gpt-4o** as the model for the Contoso Camping Store chatbot.
+Ensure that your dataset is formatted properly with the proper key-value pair for each entry.
 
-## Deploy a model
+## Types and sources of evaluation data
 
-You can deploy a model from either the model card or your project’s deployment page.
+There are several types and sources of data that can be used for evaluating generative AI applications, each offering unique benefits and challenges.
 
-:::image type="content" source="../media/deploy-model.png" alt-text="A screenshot of the model card for the gpt-4o model in Azure AI Studio. The deploy button is highlighted." lightbox="../media/deploy-model.png":::
+### Real-world data
 
-> [!NOTE]
-> For Azure OpenAI models, the default quota for models varies by model and region. Certain models might only be available in some regions. Deploying consumes quota that is assigned to your subscription on a per-region, per-model basis in units of Tokens-per-Minute (TPM). When you sign up for Azure AI Studio, you receive default quota for most of the available models. Then, you assign TPM to each deployment as it is created, thus reducing the available quota for that model by the amount you assigned. You can continue to create deployments and assign them TPMs until you reach your quota limit.
+Real-world data is user-generated data that reflects actual interactions and scenarios. It is invaluable for testing the model's performance in realistic conditions. In addition, real-world data embodies the subtle variations and complex patterns found in authentic user interactions.
 
-1. Within the **Comparison** section of the **Model Benchmarks** page, select the **gpt-4o** model.
-1. On the model card, select **Deploy**.
-1. For **Deployment name**, enter: *gpt-4*.
-1. For **Azure OpenAI resource**, select your Azure OpenAI resource.
-1. Select **Deploy**.
+### Synthetic data
 
-> [!NOTE]
-> For Azure OpenAI models such as GPT-4, Azure AI Studio provides a safety filter during the deployment to ensure responsible use of AI. A safety filter allows moderation of harmful and sensitive content to promote the safety of AI-enhanced applications.
+Synthetic data is artificially generated data designed to mimic real-world scenarios. It is used to supplement real-world data, especially when certain types of data are scarce or difficult to obtain. Synthetic data can be generated in large quantities, providing ample data for evaluation. In addition, synthetic data avoids potential privacy issues associated with user-generated data.
 
-Azure AI Studio also offers model monitoring for deployed models. Model monitoring for LLMs uses the latest GPT language models to monitor and alert when the outputs of a model perform poorly against the set thresholds of generation safety and quality. For example, you can configure a monitor to evaluate how well the model's generated answers align with information from the input source (groundedness). The monitor could also evaluate how closely the generated answer matches a ground-truth sentence or document (similarity).
+The Azure AI Evaluation SDK is equipped with a `Simulator` class which provides end-to-end synthetic data generation capabilities. This capability enables developers to effectively test their application’s responses to typical user queries, even in the absence of production data.
 
-## Chat with a deployed model in the chat playground
+`Simulator` offers the following features
 
-In the Azure AI Studio chat playground, you can observe how your model responds with and without your data. Now that the **gpt-4o** model is deployed, let’s pass some prompts into the chat to see how the model currently responds both about general facts and towards questions about Contoso products.
+- Create synthetic data based on text or indexes for input
+- Define target callbacks for simulation purposes
+- Customize how query-response pairs are generated from input text
+- Use fixed conversation starters for simulations
 
-:::image type="content" source="../media/chat-playground.png" alt-text="A screenshot of the chat playground in Azure AI Studio. Setup for the model prompt displays on the left. The chat window display to the right." lightbox="../media/chat-playground.png":::
+### Adversarial data
 
-1. On the model deployment details page, select **Open in playground**.
-1. Within the chat box on the **Chat playground** page, individually submit the following prompts to observe the models generated response:
+Adversarial data refers to carefully crafted inputs designed to challenge, confuse, or exploit AI models. Adversarial data is crucial when stress-testing a model because it pushes the model's boundaries, revealing its vulnerabilities and potential failure points. Evaluating the model using adversarial data can reveal possible vulnerabilities or pathways for attacks. This is critical for building generative AI applications that are resistant to malicious inputs and protect user data and privacy.
 
-    | Prompt | Sample Response |
-    |----------|----------|
-    | Provide a list of 2 national parks to visit during the summer.   | Certainly! Here are two national parks that offer great summer experiences: <br><br> 1. **Glacier National Park** (Montana) - Offers stunning mountain scenery, clear lakes, and the opportunity to drive along the famous Going-to-the-Sun Road. <br> 2. **Olympic National Park** (Washington) - Features diverse ecosystems, including temperate rainforests, alpine areas, and coastal tide pools.|
-    |  Recommend a tent that fits a family of 4.    | When recommending a specific tent for a family of four, it's helpful to select one that provides ample space, durability, and comfort. Here's a well-regarded option that has been popular among camping families: **REI Co-op Kingdom 6 Tent**.   |
-    |  How much is the Contoso MountainDream Sleeping Bag?    | I'm sorry for any confusion, but as an AI developed by OpenAI, I don't have the capability to access real-time pricing or inventory for products from specific retailers, including any product named "Contoso MountainDream Sleeping Bag."   |
+The Azure AI Evaluation SDK is equipped with a `AdversarialSimulator` class which generates an adversarial dataset against your application. We provide adversarial scenarios along with configured access to a service-side Azure OpenAI GPT-4 model with safety behaviors turned off to enable the adversarial simulation.
 
-The model isn’t configured yet to answer questions about Contoso Camping Store products. You can resolve by uploading your data, creating an index, and assigning the index to the model.
+The adversarial simulator works by setting up a service-hosted GPT large language model to simulate an adversarial user and interact with your application. You can bring any application endpoint to the adversarial simulator. The `AdversarialSimulator` supports a [range of scenarios](/azure/ai-studio/how-to/develop/simulator-interaction-data#supported-simulation-scenarios), hosted in the service, to simulate against your target application or function.

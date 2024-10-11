@@ -1,25 +1,17 @@
-In this workshop, you learned how to create and apply a mitigation plan across the four layers of technical mitigations:
- 
-- User experience
-- System message & grounding
-- Safety system
-- Model 
+holistic approach when interpreting results. Evaluating generative AI applications requires a thorough understanding of various metrics to measure performance and reliability. Azure provides tools for both manual and automated evaluations, including custom evaluators through its AI Studio and Azure AI Evaluation SDK.
 
-While manual evaluation enables human graders to spot-check, output performance, assessing your app with AI assistance in Azure AI Studio is a critical step in discovering model vulnerabilities at scale. Safeguarding your app with Azure AI Content Safety enables you to detect and mitigate problematic text and images. 
+The quality and nature of data are crucial in ensuring effective and reliable AI evaluation processes. High-quality, diverse, and representative datasets allow evaluation metrics to accurately reflect AI model performance across various scenarios, while poor or biased data can mislead outcomes.
 
-The next step for your app pre-deployment is to operationalize by creating a deployment and operational readiness plan. Operationalizing includes planning for phased delivery, developing an incident response plan, and ensuring you build features and processes to monitor your AI system and user feedback.
+Accurately interpreting evaluation results is essential, particularly as AI systems are increasingly deployed in critical domains like healthcare and finance. Proper interpretation goes beyond reading metrics; it involves contextualizing results, considering the AI system’s goals, and comparing them to benchmarks.
 
-Although the process applied today might look linear, it's an iterative process. As you introduce new features, monitor usage, and/or implement user feedback, you're encouraged to revisit each step in the generative AI development lifecycle.
-
-> [!NOTE]
-> After completing the workshop, if you've finished exploring Azure AI Services, delete the Azure resource that you created during the workshop.
+Once you have your evaluation results, you’re encouraged to either create or refine your existing mitigation plan based on your assessment. Measuring enables you to implement more targeted mitigations when doing prompt engineering and configuring content filters. As you continue to improve your AI system, be sure to execute subsequent evaluations and refine your approach as needed.
 
 ### Learn more
 
-[Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
-
-[Model catalog and collections in Azure AI Studio](/azure/ai-studio/how-to/model-catalog-overview)
-
-[Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
-
-[Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in)
+- [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
+- [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
+- [Content risk mitigation strategies with Azure AI](/azure/ai-studio/concepts/evaluation-improvement-strategies)
+- [Manually evaluate prompts in Azure AI Studio playground](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
+- [Evaluate with Azure AI Studio](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [View evaluation results in Azure AI Studio](/azure/ai-studio/how-to/evaluate-results)
