@@ -9,7 +9,7 @@ In this unit, we’ll cover:
 
 To access Copilot in your IDE, click the chat icon on the left navbar.
 
-:::image type="content" source="../media/chat.png" alt-text="Screenshot of Chat.":::
+:::image type="content" source="../media/chat.png" lightbox="../media/chat.png" alt-text="Screenshot of Chat.":::
 
 GitHub Copilot Chat is particularly beneficial in certain scenarios:
 
@@ -87,7 +87,7 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
 - **@workspace:** This agent allows you to extend the context of whatever questions you ask Copilot to the whole project. It is very useful for getting code generated that would fit in your project right away, using information from your whole project. It can also be utilized for getting answers about your whole codebase. 
 
-  :::image type="content" source="../media/workspace-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
+  :::image type="content" source="../media/workspace-agent-command.png" lightbox="../media/workspace-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
 
   You can also use the “@workspace /new” smart action which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and javascript for advanced calculations“
 
