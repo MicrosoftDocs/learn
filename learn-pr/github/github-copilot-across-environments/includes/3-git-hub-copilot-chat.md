@@ -43,15 +43,15 @@ To enhance the accuracy and relevance of the responses provided by GitHub Copilo
 
 - **File References:** You can specify a particular file in your question by adding a `#file:` before the file name. 
 
-  :::image type="content" source="../media/chat-scope-file-referencing-pick.png" alt-text="Screenshot of chat scope file referencing pick.":::
+  :::image type="content" source="../media/chat-scope-file-referencing-pick.png" lightbox="../media/chat-scope-file-referencing-pick.png" alt-text="Screenshot of chat scope file referencing pick.":::
 
   For example, if you’re working with a file named `controller.js`, you can use the #file command to select it and reference it directly in your question as `#file:controller.js`. This tells Copilot Chat to focus on the contents of that file when generating a response.
 
-  :::image type="content" source="../media/chat-scope-file-referencing.png" alt-text="Screenshot of chat scope file referencing.":::
+  :::image type="content" source="../media/chat-scope-file-referencing.png" lightbox="../media/chat-scope-file-referencing.png" alt-text="Screenshot of chat scope file referencing.":::
 
 - **Environment References:** You can reference the entire solution or workspace by using `@workspace`. This allows Copilot Chat to consider the broader context of the projects and configurations that are currently open in your Visual Studio IDE. For instance, asking "@workspace where is the calculate function?" will prompt Copilot to consider the entire solution to find the most relevant information.
 
-  :::image type="content" source="../media/chat-scope-workspace-referencing.png" alt-text="Screenshot of chat scope workspace referencing.":::
+  :::image type="content" source="../media/chat-scope-workspace-referencing.png" lightbox="../media/chat-scope-workspace-referencing.png" alt-text="Screenshot of chat scope workspace referencing.":::
 
 ### Slash Commands
 
@@ -59,11 +59,11 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/doc:** Adds comments to the specified or selected code. For example, you can type `/doc` followed by the code you want to document, and Copilot will generate appropriate comments.
 
-  :::image type="content" source="../media/doc-slash-commands.png" alt-text="Screenshot of /doc slash commands.":::
+  :::image type="content" source="../media/doc-slash-commands.png" lightbox="./media/doc-slash-commands.png" alt-text="Screenshot of /doc slash commands.":::
 
 - **/explain:** Provides explanations for selected code. This is particularly useful when you need to understand what a particular piece of code does. For example, `/explain the #file:controller.js` will give you a detailed explanation of that file.
 
-  :::image type="content" source="../media/explain-slash-commands.png" alt-text="Screenshot of /explain slash commands.":::
+  :::image type="content" source="../media/explain-slash-commands.png" lightbox="../media/explain-slash-commands.png" alt-text="Screenshot of /explain slash commands.":::
 
 - **/fix:** Proposes fixes for problems in the selected code. If you're facing issues, you can highlight the problematic section and use `/fix` to receive suggestions for resolving the issue.
 
@@ -71,11 +71,11 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
 - **/generate:** Helps in generating new code based on your requirements. For example, `/generate code to find the root of a number in client.js` will create a function to perform the task.
 
-  :::image type="content" source="../media/generate-slash-commands.png" alt-text="Screenshot of /generate slash commands.":::
+  :::image type="content" source="../media/generate-slash-commands.png" lightbox="../media/generate-slash-commands.png" alt-text="Screenshot of /generate slash commands.":::
 
 - **/optimize:** Analyzes and suggests improvements to the running time or efficiency of the selected code. For instance, `/optimize the `calculate` method in controller.js` will focus on enhancing the performance of that specific method.
 
-  :::image type="content" source="../media/optimize-slash-commands.png" alt-text="Screenshot of /optimize slash commands.":::
+  :::image type="content" source="../media/optimize-slash-commands.png" lightbox="../media/optimize-slash-commands.png" alt-text="Screenshot of /optimize slash commands.":::
 
 - **/tests:** Automatically creates unit tests for the selected code. You can simply highlight the code and use `/tests using Mocha` to generate tests.
 
@@ -91,7 +91,7 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
   You can also use the “@workspace /new” smart action which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and javascript for advanced calculations“
 
-  :::image type="content" source="../media/workspace-new-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
+  :::image type="content" source="../media/workspace-new-agent-command.png" lightbox="../media/workspace-new-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
 
   Click on “Create Workspace” to proceed with code generation and just like that you have your new project with the code you requested.
 
@@ -99,11 +99,11 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
 - **@terminal:** This agent is useful for command-line related questions. For example, you could ask it to find the largest file in a directory or explain the last command you ran.
 
-  :::image type="content" source="../media/terminal-agent-command.png" alt-text="Screenshot of `@terminal` agent command.":::
+  :::image type="content" source="../media/terminal-agent-command.png" lightbox="../media/terminal-agent-command.png" alt-text="Screenshot of `@terminal` agent command.":::
 
 - **@vscode:** Use this agent to ask questions related to Visual Studio Code, such as how to debug or change settings within the IDE.
 
-  :::image type="content" source="../media/vscode-agent-command.png" alt-text="Screenshot of `@vscode` agent command.":::
+  :::image type="content" source="../media/vscode-agent-command.png" lightbox="../media/vscode-agent-command.png" alt-text="Screenshot of `@vscode` agent command.":::
 
   By effectively utilizing these tools and techniques, you can significantly improve the quality of responses you receive from GitHub Copilot Chat, making your coding experience more efficient and productive.
 
