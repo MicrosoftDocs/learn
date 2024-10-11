@@ -2,11 +2,11 @@ When an ASP.NET Core app receives an HTTP request, it passes through a series of
 
 ## Example scenario
 
-Suppose you are an entry-level ASP.NET Core developer at a small company. Your team is building a new web app. The requirements include URL redirection, as well as real-time console output for monitoring purposes. You've been tasked with implementing the built-in middleware for URL redirection, as well as creating a custom middleware component to log the request details.
+Suppose you're an entry-level ASP.NET Core developer at a small company. Your team is building a new web app. The requirements include URL redirection, and real-time console output for monitoring purposes. Your team lead asked you to with implement the built-in middleware for URL redirection, and create a custom middleware component to log the request details.
 
 ## What will we be doing?
 
-In this module, you'll use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement the built-in `UrlRewriter` middleware to rewrite URLs in the app. You'll then create a custom middleware component to log request details to the console.
+In this module, you use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement the built-in `UrlRewriter` middleware to rewrite URLs in the app. You'll then create a custom middleware component to log request details to the console.
 
 ## What is the main goal?
 

@@ -42,15 +42,15 @@ quiz:
       explanation: "Correct. All of these choices are true."
   - content: "Which is true of `app.Use()`?"
     choices:
-    - content: "`app.Use()` is non-terminal middleware."
+    - content: "Delegates added with `app.Use()` may be terminal or nonterminal."
       isCorrect: true
-      explanation: "Correct. `app.Use()` is non-terminal middleware."
+      explanation: "Correct. `app.Use()` is for adding either terminal or nonterminal middleware."
     - content: "Delegates passed to `app.Use()` don't have access to the next middleware in the pipeline."
       isCorrect: false
       explanation: "Incorrect. `app.Use()` delegates can access the next middleware in the pipeline."
     - content: "`app.Use()` by itself (with no delegates) should be the last middleware in the pipeline."
       isCorrect: false
-      explanation: "Incorrect. `app.Use()` is non-terminal middleware."
+      explanation: "Incorrect. `app.Run()` (with no delegates) should be the last middleware in the pipeline."
     - content: "All of these choices are true."
       isCorrect: false
       explanation: "Incorrect. Only the one choice is true."

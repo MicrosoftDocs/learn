@@ -6,7 +6,7 @@ You'll use the built-in `MapGet` method and `UrlRewriter` middleware to accompli
 
 ## Create an ASP.NET Core app
 
-You'll need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using C# Dev Kit extension in Visual Studio Code.
+You'll need an ASP.NET Core app to play the role of your team's app. Let's create a new ASP.NET Core app using the C# Dev Kit extension in Visual Studio Code.
 
 1. Launch Visual Studio Code.
 1. Press **Ctrl+Shift+P** to open the command palette.
@@ -18,6 +18,7 @@ You'll need an ASP.NET Core app to play the role of your team's app. Let's creat
 1. Select or create a folder for the new project.
 1. Name the new app *MyWebApp*.
 1. Select **Create project** to create the project.
+1. When the new project opens, expand the `Solution Explorer` pane to view the project files.
 
 ## Run the app
 
@@ -52,7 +53,7 @@ Now that you have a working app, let's add a welcome message to the main page.
     
     This code adds another endpoint. If the request path is `/about`, the endpoint writes "Our company was founded in 2000." to the response.
 
-1. **Before the first `app.MapGet()`**, add the following code:
+1. **Before** the first `app.MapGet()`, add the following code:
 
     ```csharp
     app.UseRewriter(new RewriteOptions().AddRedirect("history", "about"));
