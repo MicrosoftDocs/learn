@@ -1,9 +1,9 @@
-GitHub Copilot offers numerous advantages for developers by streamlining development tasks, aligning with developer preferences, and enhancing various stages of the SDLC. From accelerating learning curves to automating mundane activities, GitHub Copilot significantly offers developers a powerful tool to enhance their productivity, creativity, and overall coding experience. Throughout this module, we've explored various aspects of GitHub Copilot's capabilities and its impact on the development process.
+GitHub Copilot offers numerous advantages for developers by streamlining development tasks, aligning with developer preferences, and enhancing various stages of the Software Development Life Cycle. GitHub Copilot accelerates learning curves and automates mundane activities offering developers a powerful tool to enhance their productivity, creativity, and overall coding experience. Throughout this module, we explored various aspects of GitHub Copilot's capabilities and its impact on the development process.
 
-Now that you've finished this module, moving forward, developers should:
+Now that you're finished with this module, moving forward, developers should:
 - Continuously explore new ways to integrate GitHub Copilot into their workflows
 - Regularly assess the impact of AI-assisted coding on their development processes
-- Maintain a balance between leveraging AI assistance and fostering human creativity and problem-solving skills
+- Maintain a balance between applying AI assistance and fostering human creativity and problem-solving skills
 
 
 ## References
@@ -19,4 +19,4 @@ Now that you've finished this module, moving forward, developers should:
 
 ## How to provide feedback
 
-If you have content feedback or suggested changes for this module, use [this issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide that feedback. This content is maintained by GitHub, and a team member will triage the request. Thank you for taking the time to improve our content!
+If you have content feedback or suggested changes for this module, use [this issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide that feedback. The GitHub team maintains this content, and a GitHub team member will triage the request. Thank you for taking the time to improve our content!
