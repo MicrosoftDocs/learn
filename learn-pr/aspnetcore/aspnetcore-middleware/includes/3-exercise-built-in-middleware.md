@@ -1,4 +1,4 @@
-ASP.NET Core includes a set of built-in middleware components that handle common tasks, such as routing, authentication, and logging. You can use these components to add functionality to your app without writing custom middleware.
+ASP.NET Core includes a set of built-in middleware components that handle common tasks, such as routing, authentication, and HTTP logging. You can use these components to add functionality to your app without writing custom middleware.
 
 Your team lead has asked you to create a simple website for your company. The website should display a welcome message on the main page, and display a brief history of the company on a separate `/about` page. A previous version of the app had the company history at the `/history` URL, so you'll also need to redirect requests from `/history` to `/about` to maintain compatibility with existing links.
 

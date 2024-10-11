@@ -88,7 +88,7 @@ The app seems to work, but there's a problem. You requested the `/history` page,
 
 ## Fix the status code
 
-The app is almost ready, but there's one more issue. The status code in the console output is always 200, even when the app redirects the request. The status code for the `/history` request should be a 302 redirect. The reason for this is another order issue.
+The app is almost ready, but there's one more issue. The status code in the console output is always 200, even when the app redirects the request. The status code for the `/history` request should be a 302 redirect. The reason for this is another order issue in which the middleware components are processed.
 
 The custom middleware component logs the details to the console, then calls `await next()` to pass to the next middleware component. The problem is, the `StatusCode` property of the `Response` object is set after the response is started by the terminal middleware component. Let's change the code to fix this.
 

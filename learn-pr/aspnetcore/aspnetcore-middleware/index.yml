@@ -18,8 +18,8 @@ abstract: |
 prerequisites: |
   - Ability to write C# code at a beginner level.
   - Ability to use the .NET CLI at a beginner level.
-  - Latest .NET SDK installed.
-  - Visual Studio Code installed with the following extensions:
+  - Latest [.NET SDK](https://dot.net) installed.
+  - [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.
     - C# Dev Kit
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
