@@ -22,7 +22,7 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
   If you encounter errors in your code, Copilot Chat can be valuable in analyzing error messages and suggesting potential fixes. It can help identify logical errors and provide step-by-step explanations of problematic sections of code. 
   One way to achieve this is by using Copilot inline-chat by highlighting the piece of code containing the error, right clicking and selecting Copilot, then inline-chat. 
   
-  :::image type="content" source="../media/selection-code-chat-debugging.png" alt-text="Screenshot of selection code chat debugging.":::
+  :::image type="content" source="../media/selection-code-chat-debugging.png" lightbox="../media/selection-code-chat-debugging.png" alt-text="Screenshot of selection code chat debugging.":::
 
   For example, you might ask, "I'm getting a `NullReferenceException` in this method. Can you help me debug it?"
 
@@ -77,9 +77,9 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
   :::image type="content" source="../media/optimize-slash-commands.png" alt-text="Screenshot of /optimize slash commands.":::
 
-- **/tests:** Automatically creates unit tests for the selected code. You can simply highlight the code and use `/tests using XUnit Framework` to generate tests.
+- **/tests:** Automatically creates unit tests for the selected code. You can simply highlight the code and use `/tests using Mocha` to generate tests.
 
-  :::image type="content" source="../media/tests-slash-commands.png" alt-text="Screenshot of /tests slash commands.":::
+  :::image type="content" source="../media/tests-slash-commands.png" lightbox="../media/tests-slash-commands.png" alt-text="Screenshot of /tests slash commands.":::
 
 ### Copilot Agents
 
@@ -95,7 +95,7 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
   Click on “Create Workspace” to proceed with code generation and just like that you have your new project with the code you requested.
 
-  :::image type="content" source="../media/new-generated-workspace-project.png" alt-text="Screenshot of new generated workspace project.":::
+  :::image type="content" source="../media/new-generated-workspace-project.png" lightbox="../media/new-generated-workspace-project.png" alt-text="Screenshot of new generated workspace project.":::
 
 - **@terminal:** This agent is useful for command-line related questions. For example, you could ask it to find the largest file in a directory or explain the last command you ran.
 
