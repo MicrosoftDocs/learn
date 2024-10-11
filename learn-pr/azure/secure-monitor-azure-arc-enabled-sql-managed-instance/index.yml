@@ -8,7 +8,7 @@ metadata:
   ms.author: mikeray
   ms.topic: module-standard-task-based
   ms.service: azure-arc
-  ms.subservice: azure-arc-data-sqlmi
+  ms.subservice: azure-arc-sql-mi
 title: Monitor Azure Arc-enabled SQL Managed Instance security performance
 summary: Azure Arc-enabled SQL Managed Instance offers a secure and performant solution for deploying the SQL Server database engine in a wide range of hybrid scenarios.
 abstract: |

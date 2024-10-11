@@ -34,14 +34,14 @@ When you use caching, a key design decision is how long to cache a particular pi
 
 ## Using Redis in .NET Aspire projects
 
-Redis is a popular choice for caching in a cloud-native application. .NET Aspire provides three components that you can use to interact with a Redis service:
+Redis is a popular choice for caching in a cloud-native application. .NET Aspire provides three integrations that you can use to interact with a Redis service:
 
-- **.NET Aspire StackExchange Redis component**: Use this component to interact directly with a Redis server. For example, you can use it to save and retrieve values in Redis database or subscribe to messages sent to a channel. Since this component isn't focused on caching, we won't consider it further in this module.
-- **.NET Aspire StackExchange Redis output caching component**: Use this component to cache complete HTTP responses. 
-- **.NET Aspire StackExchange Redis distributed caching component**: Use this caching component to store and retrieve data from a distributed cache. Distributed caching describes an architecture where multiple microservices or other client services share a single cache. 
+- **.NET Aspire StackExchange Redis integration**: Use this integration to interact directly with a Redis server. For example, you can use it to save and retrieve values in Redis database or subscribe to messages sent to a channel. Since this integration isn't focused on caching, we won't consider it further in this module.
+- **.NET Aspire StackExchange Redis output caching integration**: Use this integration to cache complete HTTP responses. 
+- **.NET Aspire StackExchange Redis distributed caching integration**: Use this caching integration to store and retrieve data from a distributed cache. Distributed caching describes an architecture where multiple microservices or other client services share a single cache. 
 
 ## Learn more
 
 - [Overview of caching in ASP.NET Core](/aspnet/core/performance/caching/overview)
-- [Tutorial: Implement caching with .NET Aspire components](/dotnet/aspire/caching/caching-components)
+- [Tutorial: Implement caching with .NET Aspire integrations](/dotnet/aspire/caching/caching-integrations)
 - [StackExchange.Redis Basic Usage](https://stackexchange.github.io/StackExchange.Redis/Basics)

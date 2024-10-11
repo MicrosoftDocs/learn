@@ -249,6 +249,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;

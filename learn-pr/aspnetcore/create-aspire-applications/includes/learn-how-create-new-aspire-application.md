@@ -17,7 +17,7 @@ In the next exercise, you'll go through the steps to install these prerequisites
 
 There are two .NET Aspire starter templates currently available:
 
-- **.NET Aspire Application**: This template is a good starting point for new projects. It only includes the **AspireSample.AppHost** and **AspireSample.ServiceDefaults** projects. This template is useful when you want to start from scratch and add your own components and services.
+- **.NET Aspire Application**: This template is a good starting point for new projects. It only includes the **AspireSample.AppHost** and **AspireSample.ServiceDefaults** projects. This template is useful when you want to start from scratch and add your own integrations and services.
 
 - **.NET Aspire Starter Application**: This template includes the **AspireSample.AppHost** and **AspireSample.ServiceDefaults** projects, but also includes an example Blazor App **AspireSample.Web** and an API that provides data to it **AspireSample.ApiService**. These projects are preconfigured with service discovery and other basic examples of common .NET Aspire functionality.
 
@@ -67,7 +67,7 @@ The .NET Aspire templates generate a solution with a specific structure. This st
      │    ├─── AspireSample.ServiceDefaults.csproj
      │    └─── Extensions.cs
      ├───📂 AspireSample.Web
-     │    ├───📂 Components
+     │    ├───📂 integrations
      │    │    ├───📂 Layout
      │    │    │    ├─── ...
      │    │    ├───📂 Pages

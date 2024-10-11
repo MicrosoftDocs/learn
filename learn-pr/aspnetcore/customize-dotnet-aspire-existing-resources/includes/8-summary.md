@@ -10,5 +10,5 @@ Now that you've completed this module, you can:
 ## Learn more
 
 - [Use Application Insights for .NET Aspire telemetry](/dotnet/aspire/deployment/azure/application-insights)
-- [Tutorial: Deploy a .NET Aspire project with a Redis Cache to Azure](/dotnet/aspire/caching/caching-components-deployment)
+- [Tutorial: Deploy a .NET Aspire project with a Redis Cache to Azure](/dotnet/aspire/caching/caching-integrations-deployment)
 - [Use custom Bicep templates](/dotnet/aspire/deployment/azure/custom-bicep-templates)
