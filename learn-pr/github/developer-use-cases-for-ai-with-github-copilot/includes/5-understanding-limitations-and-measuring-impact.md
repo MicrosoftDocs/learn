@@ -26,7 +26,6 @@ While GitHub Copilot is a powerful tool, it has limitations that developers shou
 - **Limitation in High-Level Design:** GitHub Copilot excels at code-level tasks but may not grasp complex architectural decisions.
 - **Creativity Constraints:** While helpful, GitHub Copilot cannot replace human creativity in solving novel problems.
 
-
 ## Measuring Productivity Gains
 
 Understanding the productivity gains provided by GitHub Copilot is essential to maximizing its benefits. The **REST API for GitHub Copilot usage metrics** and **GitHub Copilot Developer Survey** offers a powerful way to measure and analyze how GitHub Copilot influences your development workflow. This section introduces methods to evaluate GitHub Copilot’s impact using these tools and related metrics.
@@ -35,7 +34,7 @@ Understanding the productivity gains provided by GitHub Copilot is essential to 
 
 GitHub provides a REST API to access GitHub Copilot usage metrics for enterprise members, teams, and organization members. These metrics offer insights into daily usage of GitHub Copilot, including completions, chat interactions, and user engagement across different editors and languages.
 
-#### 1. **Get a Summary of GitHub Copilot Usage for Enterprise Members**
+#### Get a Summary of GitHub Copilot Usage for Enterprise Members
 
 **Endpoint:** `GET /enterprises/{enterprise}/GitHub Copilot/usage`
 
@@ -53,7 +52,7 @@ curl -L \
 - **Status Code:** `200 OK`
 - **Body:** JSON array with daily metrics, including suggestions, acceptances, active users, and breakdown by editor and language.
 
-#### 2. **Get a Summary of GitHub Copilot Usage for an Enterprise Team**
+#### Get a Summary of GitHub Copilot Usage for an Enterprise Team
 
 **Endpoint:** `GET /enterprises/{enterprise}/team/{team_slug}/GitHub Copilot/usage`
 
@@ -71,7 +70,7 @@ curl -L \
 - **Status Code:** `200 OK`
 - **Body:** JSON array with daily metrics for the team, including suggestions, acceptances, active users, and breakdown by editor and language.
 
-#### 3. **Get a Summary of GitHub Copilot Usage for Organization Members**
+#### Get a Summary of GitHub Copilot Usage for Organization Members
 
 **Endpoint:** `GET /orgs/{org}/GitHub Copilot/usage`
 
@@ -92,7 +91,7 @@ curl -L \
 
 ### Implementing a Measurement Framework
 
-To systematically assess GitHub Copilot’s impact, consider the following framework, using the  GitHub Copilot usage metric API at each stage:
+To systematically assess GitHub Copilot’s impact, consider the following framework, using the GitHub Copilot usage metric API at each stage:
 
 1. **Evaluation:** During the initial phase of adopting GitHub Copilot, focus on leading indicators such as developer satisfaction and task completion rates. Use the API to collect metrics like Average Daily Active Users, Total Acceptance Rate, and Lines of Code Accepted.
 
@@ -108,7 +107,7 @@ The GitHub Copilot Developer Survey is a valuable tool designed to gather insigh
 
 **1. Survey Cadence and Timing**
 
-When deploying the GitHub Copilot Developer Survey, it's important to establish a regular cadence to avoid survey fatigue while still gathering meaningful data. 
+When deploying the GitHub Copilot Developer Survey, it's important to establish a regular cadence to avoid survey fatigue while still gathering meaningful data.
 
 - **Short-Form Survey**: Can be conducted every two weeks if frequent feedback is needed, especially when coupled with other feedback channels like online or in-person discussions. 
 - **Long-Form Survey**: Recommended to be conducted no more than once every four weeks, particularly at the end of the evaluation and adoption stages, to capture comprehensive feedback.
