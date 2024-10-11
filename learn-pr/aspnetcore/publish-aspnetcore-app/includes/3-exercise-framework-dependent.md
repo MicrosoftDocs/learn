@@ -13,7 +13,7 @@ You need an ASP.NET Core app to play the role of your team's app. Let's create a
 1. Search for and select **.NET New Project**.
 1. Search for and select **ASP.NET Core Empty**.
 
-    :::image type="content" source="../media/aspnetcore-empty.png" alt-text="A screenshot of the command palette with ASP.NET Core Empty selected."  lightbox="../media/aspnetcore-empty.png":::
+    :::image type="content" source="../media/aspnet-core-empty.png" alt-text="A screenshot of the command palette with ASP.NET Core Empty selected."  lightbox="../media/aspnetcore-empty.png":::
 
 1. Select or create a folder for the new project.
 1. Name the new app *MyWebApp*.

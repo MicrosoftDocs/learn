@@ -28,7 +28,7 @@ In Azure App Service, a *web app* can be thought of as a single-application web 
 1. Select the **Free (F1)** pricing tier.
 1. After the extension finishes creating the web app, return to the Azure Tools extension. Note that the **App Services** node under your subscription now contains the new web app.
 
-    :::image type="content" source="../media/app-services-list.png" alt-text="A screenshot of the Azure Tools extension listing the Azure App Service web app"  lightbox="../media/app-services-list.png":::
+    :::image type="content" source="../media/app-services-list.png" alt-text="A screenshot of the Azure Tools extension listing the Azure App Service web app."  lightbox="../media/app-services-list.png":::
 
 ## Publish the app to Azure
 
