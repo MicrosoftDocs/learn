@@ -10,6 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - ai-learning-hub
 title: Develop Generative AI solutions with Azure OpenAI Service
 prerequisites: |
   Before starting this learning path, you should already have:
