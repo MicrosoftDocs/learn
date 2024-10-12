@@ -16,45 +16,45 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: Which feature isn't included in the system message?
+  - content: What is the primary purpose of evaluating generative AI applications?
     choices:
-    - content: Instructions that guide the user's input.
+    - content: To increase the speed of AI model training.
+      isCorrect: false
+      explanation: "Incorrect: The primary focus is not on the speed of training but on the quality and reliability of the AI models."
+    - content: To validate the performance, reliability, and efficacy of AI systems.
       isCorrect: true
-      explanation: "Correct: The user's input is freeform, and any instructions for the user would be part of the interface, not the system message."
-    - content: Data about the current conversation context.
+      explanation: "Correct: Evaluations are systematic processes designed to validate how well AI systems perform their intended tasks, ensuring they meet desired standards of accuracy and reliability."
+    - content: To reduce the cost of AI development.
       isCorrect: false
-      explanation: "Incorrect: The system message can include some contextual data to help the AI understand how to respond in line with past interactions."
-    - content: Restrictions or limitations for the AI's response.
+      explanation: "Incorrect: While evaluations may indirectly impact costs, their main goal is to validate the AI system's performance and reliability."
+    - content: To replace human evaluators with automated systems.
       isCorrect: false
-      explanation: "Incorrect: The system message often contains restrictions that limit the types of responses the AI can provide, ensuring it follows specific rules or avoids certain topics."
-    - content: Information that sets the behavior of the AI.
-      isCorrect: false
-      explanation: "Incorrect: The system message typically includes information that sets the AI's behavior, such as its personality or specific guidelines for how it should respond."
-  - content: For Azure OpenAI model deployments, what is the threshold level for the default content filter?
+      explanation: "Incorrect: Evaluations often involve a combination of automated and human assessments to capture both quantitative and qualitative insights."
+  - content: Which of the following is not a characteristic of good evaluation data?
     choices:
-    - content: High.
+    - content: Diversity.
       isCorrect: false
-      explanation: 'Incorrect: A content filter can only be set to "high" by creating a custom content filter.'
-    - content: Medium.
+      explanation: 'Incorrect: Diversity is a key characteristic of good evaluation data, ensuring the model is tested against different types of inputs.'
+    - content: Representativeness.
+      isCorrect: false
+      explanation: "Incorrect: Representativeness ensures the data accurately reflects real-world scenarios."
+    - content: High quality.
+      isCorrect: false
+      explanation: "Incorrect: High-quality data is essential for accurate and reliable evaluation results."
+    - content: Homogeneity.
       isCorrect: true
-      explanation: "Correct: The default content filter is set to a medium threshold. However, only customers who have been approved for modified content filtering have full content filtering control."
-    - content: Low.
-      isCorrect: false
-      explanation: "Incorrect: A content filter can only be set to low by creating a custom content filter."
-    - content: No detection.
-      isCorrect: false
-      explanation: "Incorrect: Although content filters can be turned off with approval, the threshold 'no detection' isn't an actual level."
-  - content: What is the view for comparing automated evaluation results, enabling you to visualize the delta and/or only showing differences?
+      explanation: "Correct: Good evaluation data should be diverse and representative, capturing a wide range of scenarios and contexts. Homogeneity, or uniformity, is not a desired characteristic as it does not reflect the complexities of real-world interactions."
+  - content: What is a key reason why strong AI performance in controlled evaluations might not translate to real-world success?
     choices:
-    - content: Compare view.
+    - content: The AI's metrics are too complex to understand.
       isCorrect: false
-      explanation: "Incorrect: The Compare view isn't a view within automated evaluations."
-    - content: List view.
+      explanation: "Incorrect: Complexity in metrics is not the reason for the gap between simulated and real-world performance."
+    - content: Real-world scenarios have fewer data variations than controlled environment.
       isCorrect: false
-      explanation: "Incorrect: The List view only lists all evaluation runs and their respective results. Although this view supports filters and modifying columns, this view does not include the ability to show the delta nor to show differences."
-    - content: Dashboard view.
+      explanation: "Incorrect: Real-world scenarios tend to have more, not fewer, data variations and complexities."
+    - content: Simulations often use idealized conditions that differ from real-world environments.
       isCorrect: true
-      explanation: "Correct: You can select the desired runs and initiate the evaluation comparison process within a List or Dashboard view."
-    - content: Contrast view.
+      explanation: "Correct: Simulations often rely on perfect sensor data and conditions that do not accurately reflect the complexity of real-world environments."
+    - content: Edge cases are always included in simulations.
       isCorrect: false
-      explanation: "Incorrect: The Contrast view isn't a view within automated evaluations."
+      explanation: "Incorrect: Edge cases are often overlooked in simulations."
