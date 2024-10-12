@@ -20,17 +20,17 @@ quiz:
     choices:
     - content: To increase the speed of AI model training.
       isCorrect: false
-      explanation: "Incorrect: The primary focus is not on the speed of training but on the quality and reliability of the AI models."
+      explanation: "Incorrect: The primary focus isn't on the speed of training but on the quality and reliability of the AI models."
     - content: To validate the performance, reliability, and efficacy of AI systems.
       isCorrect: true
       explanation: "Correct: Evaluations are systematic processes designed to validate how well AI systems perform their intended tasks, ensuring they meet desired standards of accuracy and reliability."
     - content: To reduce the cost of AI development.
       isCorrect: false
-      explanation: "Incorrect: While evaluations may indirectly impact costs, their main goal is to validate the AI system's performance and reliability."
+      explanation: "Incorrect: While evaluations might indirectly affect costs, their main goal is to validate the AI system's performance and reliability."
     - content: To replace human evaluators with automated systems.
       isCorrect: false
       explanation: "Incorrect: Evaluations often involve a combination of automated and human assessments to capture both quantitative and qualitative insights."
-  - content: Which of the following is not a characteristic of good evaluation data?
+  - content: Which of the characteristics isn't a characteristic of good evaluation data?
     choices:
     - content: Diversity.
       isCorrect: false
@@ -43,18 +43,18 @@ quiz:
       explanation: "Incorrect: High-quality data is essential for accurate and reliable evaluation results."
     - content: Homogeneity.
       isCorrect: true
-      explanation: "Correct: Good evaluation data should be diverse and representative, capturing a wide range of scenarios and contexts. Homogeneity, or uniformity, is not a desired characteristic as it does not reflect the complexities of real-world interactions."
+      explanation: "Correct: Good evaluation data should be diverse and representative, capturing a wide range of scenarios and contexts. Homogeneity, or uniformity, isn't a desired characteristic as it doesn't reflect the complexities of real-world interactions."
   - content: What is a key reason why strong AI performance in controlled evaluations might not translate to real-world success?
     choices:
     - content: The AI's metrics are too complex to understand.
       isCorrect: false
-      explanation: "Incorrect: Complexity in metrics is not the reason for the gap between simulated and real-world performance."
+      explanation: "Incorrect: Complexity in metrics isn't the reason for the gap between simulated and real-world performance."
     - content: Real-world scenarios have fewer data variations than controlled environment.
       isCorrect: false
       explanation: "Incorrect: Real-world scenarios tend to have more, not fewer, data variations and complexities."
     - content: Simulations often use idealized conditions that differ from real-world environments.
       isCorrect: true
-      explanation: "Correct: Simulations often rely on perfect sensor data and conditions that do not accurately reflect the complexity of real-world environments."
+      explanation: "Correct: Simulations often rely on perfect sensor data and conditions that don't accurately reflect the complexity of real-world environments."
     - content: Edge cases are always included in simulations.
       isCorrect: false
       explanation: "Incorrect: Edge cases are often overlooked in simulations."
