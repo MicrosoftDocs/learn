@@ -14,4 +14,4 @@ As you continue in your journey in developing AI responsibly, remember to keep r
 - [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
 - [Evaluate with Azure AI Studio](/azure/ai-studio/how-to/evaluate-generative-ai-app)
 - [View evaluation results in Azure AI Studio](/azure/ai-studio/how-to/evaluate-results)
-- [Azure AI Evaluation client library for Python](/azure/ai-evaluation-readme?view=azure-python-preview)
+- [Azure AI Evaluation client library for Python](/azure/ai-evaluation-readme?view=azure-python-preview&preserve-view=true)
