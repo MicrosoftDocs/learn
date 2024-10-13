@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.run-evaluations-generate-synthetic-datasets
+metadata:
+  ms.author: apspeigh
+  author: aprilspeight
+  ms.date: 10/13/2024
+  title: Measure and mitigate risks for a generative AI app in Azure AI Studio
+  description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Studio.
+  ms.service: artificial-intelligence
+  ms.topic: module-guided-project
+  ms.collection:
+    - ce-advocates-ai-copilot
+title: Measure and mitigate risks for a generative AI app in Azure AI Studio
+summary: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Studio.
+abstract:  |
+  By the end of this module, you're able to:
+  - Upload data and create an index
+  - Set up a system message
+  - Create and add a content filter
+  - Execute a manual evaluation
+  - Execute and analyze an AI-assisted evaluation
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.run-evaluations-generate-synthetic-datasets.introduction
+- learn.run-evaluations-generate-synthetic-datasets.prepare
+- learn.run-evaluations-generate-synthetic-datasets.performance-quality-metrics
+- learn.run-evaluations-generate-synthetic-datasets.risk-safety-metrics
+- learn.run-evaluations-generate-synthetic-datasets.track-evaluations-azure-ai-studio
+- learn.run-evaluations-generate-synthetic-datasets.custom-evaluator-prompty
+- learn.run-evaluations-generate-synthetic-datasets.evaluate-endpoint
+- learn.run-evaluations-generate-synthetic-datasets.generate-synthetic-dataset
+- learn.run-evaluations-generate-synthetic-datasets.knowledge-check
+- learn.run-evaluations-generate-synthetic-datasets.summary
+badge:
+  uid: learn.run-evaluations-generate-synthetic-datasets-badge
