@@ -2,8 +2,8 @@ If you have a list of queries that you'd like to run then evaluate, the `evaluat
 
 ## Scenario
 
-An Ask Wiki app has been created that uses the Wikipedia API to answer questions leveraging information available in Wikipedia articles.
+An Ask Wiki app is provided that uses the Wikipedia API to answer questions using information available in Wikipedia articles.
 
 ## Instructions
 
-In this exercise, you will assess the relevance of the chatbot’s responses given a query. Open the `evaluate-target.ipynb` file to get started.
+In this exercise, you assess the relevance of the chatbot’s responses given a query. Open the `evaluate-target.ipynb` file to get started.

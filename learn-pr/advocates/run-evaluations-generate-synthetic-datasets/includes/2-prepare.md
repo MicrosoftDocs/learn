@@ -1,4 +1,4 @@
-The first step to running evaluations with the Azure AI Evaluation SDK is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Studio. After the hub resource is created, you'll need to create an Azure AI Project. Afterwards, you’ll deploy a model to be used for running evaluations.
+The first step to running evaluations with the Azure AI Evaluation SDK is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Studio. After the hub resource is created, you'll need to create an Azure AI Project. Afterwards, you deploy a model to be used for running evaluations.
 
 ## Azure AI Hub resource
 
@@ -21,7 +21,7 @@ The Azure AI hub resource is the top-level Azure resource for Azure AI Studio an
 
 ## Azure AI project
 
-Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Follow the steps provided to create an Azure AI Project.
+Projects are hosted in an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Follow the steps provided to create an Azure AI Project.
 
 1. Within **All hubs**, select your newly created hub.
 1. On the hub page, within the **Projects** section, select **+ New project**.

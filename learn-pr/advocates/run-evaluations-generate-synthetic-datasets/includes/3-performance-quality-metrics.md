@@ -6,7 +6,7 @@ Contoso Home Furnishings is developing an app that generates product description
 
 ## Instructions
 
-In this exercise, you will evaluate the model output for the generated product description using performance and quality metrics. Open the `evaluate-performance-quality.ipynb` file to get started.
+In this exercise, you evaluate the model output for the generated product description using performance and quality metrics. Open the `evaluate-performance-quality.ipynb` file to get started.
 
 ## Metrics
 

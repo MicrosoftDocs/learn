@@ -1,4 +1,4 @@
-Synthetic data is artificially generated data designed to mimic real-world scenarios. It is used to supplement real-world data, especially when certain types of data are scarce or difficult to obtain. Synthetic data can be generated in large quantities, providing ample data for evaluation. In addition, synthetic data avoids potential privacy issues associated with user-generated data.
+Synthetic data is artificially generated data designed to mimic real-world scenarios. It's used to supplement real-world data, especially when certain types of data are scarce or difficult to obtain. Synthetic data can be generated in large quantities, providing ample data for evaluation. In addition, synthetic data avoids potential privacy issues associated with user-generated data.
 
 The Azure AI Evaluation SDK is equipped with a Simulator class which provides end-to-end synthetic data generation capabilities. This capability enables developers to effectively test their application’s responses to typical user queries, even in the absence of production data.
 
@@ -8,4 +8,4 @@ Contoso Zoo is developing an AI-powered smart guide app to enhance visitor’s e
 
 ## Instructions
 
-In this exercise, you will generate a synthetic question-answer dataset for the Contoso Zoo app. The dataset will not only include standard question-answer pairs, but also incorporate conversation starters to simulate contextually relevant interactions. Open the `generate-synthetic-data.ipynb` file to get started.
+In this exercise, you generate a synthetic question-answer dataset for the Contoso Zoo app. The dataset includes standard question-answer pairs, and also incorporates conversation starters to simulate contextually relevant interactions. Open the `generate-synthetic-data.ipynb` file to get started.
