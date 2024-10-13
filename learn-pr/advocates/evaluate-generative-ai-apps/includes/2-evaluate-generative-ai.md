@@ -17,7 +17,11 @@ You have the flexibility to run evaluations with Azure either through the UI in 
 
 Azure AI Studio supports running both manual and automated evaluations. Manual evaluation enables human graders to manually score generated outputs for both manual input entry and an uploaded dataset. After you run the evaluation, you can provide a thumb up or down rating to each response to grade the prompt output. When mitigating specific risks, it’s helpful to keep manually checking progress against a small dataset until evidence of the risk is no longer observed before moving on to automated evaluation.
 
+:::image type="content" source="../media/manual-evaluation.png" alt-text="A screenshot of the manual evaluation interface in Azure AI Studio. The assistant setup displays and a set of manual evaluation results. There's a set of percentages for the data rated, the responses that received a thumb-up, and the responses that received a thumb-down. There's also a table of the user input, expected result, and the output.":::
+
 Automated evaluation enables you to generate outputs for each data row in your test dataset. You can choose one or more built-in evaluation metrics to assess the output for different qualities.
+
+:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results in Azure AI Studio. There are four charts which display the average score and counts for coherence, fluency, groundedness, and relevance. ":::
 
 ## Evaluate with the Azure AI Evaluation SDK
 
