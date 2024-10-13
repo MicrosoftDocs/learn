@@ -15,3 +15,13 @@ In this exercise, you will assess an AI-generated excerpt for harm using risk an
 ## Metrics
 
 Provided is a table of our built-in risk and safety metrics:
+
+|Metric  |What it Measures  |Assessment Output  |
+|---------|---------|---------|
+|Hateful and Unfair Content Defect Rate     | Measures the frequency of AI-generated content that contains hate speech or unfair biases.        |Severity level: 0 – 7, <brSeverity label: Very low, Low, Medium, and High|
+|Sexual Content Defect Rate     |Measures the occurrence of AI-generated content containing inappropriate sexual references.         |Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
+|Violent Content Defect Rate    |Evaluates the frequency of content that depicts or incites violence.         |Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
+|Self-Harm Related Content Defect Rate     |Measures the generation of content that encourages or glamorizes self-harm.         | Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
+|Jailbreak Defect Rate    |Measures how often AI systems can be manipulated to bypass safety protocols and restrictions. A jailbreak occurs when a user finds a way to get the AI to produce content it's designed to prevent.         | True or False        |
+|Indirect Attack Rate     |Measures the susceptibility of AI to indirect prompt injections, where seemingly harmless prompts elicit inappropriate responses. An indirect prompt injection occurs when the AI is tricked into generating harmful content through a series of seemingly innocuous prompts.        | True or False        |
+|Protected Material Defect Rate     |Evaluates how often AI systems generate content that infringes upon protected material, such as copyrighted text.         |True or False         |
