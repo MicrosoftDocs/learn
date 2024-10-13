@@ -1,25 +1,17 @@
-In this workshop, you learned how to create and apply a mitigation plan across the four layers of technical mitigations:
- 
-- User experience
-- System message & grounding
-- Safety system
-- Model 
+In this workshop you learned how to use the Azure AI Evaluation SDK to run evaluations for different scenarios and how to generate a synthetic dataset. You’re now ready to configure and run your own evaluations for your generative AI app(s)!
 
-While manual evaluation enables human graders to spot-check, output performance, assessing your app with AI assistance in Azure AI Studio is a critical step in discovering model vulnerabilities at scale. Safeguarding your app with Azure AI Content Safety enables you to detect and mitigate problematic text and images. 
-
-The next step for your app pre-deployment is to operationalize by creating a deployment and operational readiness plan. Operationalizing includes planning for phased delivery, developing an incident response plan, and ensuring you build features and processes to monitor your AI system and user feedback.
-
-Although the process applied today might look linear, it's an iterative process. As you introduce new features, monitor usage, and/or implement user feedback, you're encouraged to revisit each step in the generative AI development lifecycle.
+As you continue in your journey in developing AI responsibly, remember to keep responsible AI principles at the forefront of your approach to integrating AI. The generative AI development lifecycle is an iterative process where the measurement phase is critical to iterative development and getting apps into production. You’re encouraged to explore additional evaluation scenarios and evolve your own approach to measuring the performance and safety of your AI systems.
 
 > [!NOTE]
 > After completing the workshop, if you've finished exploring Azure AI Services, delete the Azure resource that you created during the workshop.
 
 ### Learn more
 
-[Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
-
-[Model catalog and collections in Azure AI Studio](/azure/ai-studio/how-to/model-catalog-overview)
-
-[Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
-
-[Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in)
+- [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
+- [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
+- [Content risk mitigation strategies with Azure AI](/azure/ai-studio/concepts/evaluation-improvement-strategies)
+- [Manually evaluate prompts in Azure AI Studio playground](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
+- [Evaluate with Azure AI Studio](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [View evaluation results in Azure AI Studio](/azure/ai-studio/how-to/evaluate-results)
+- [Azure AI Evaluation client library for Python](/azure/ai-evaluation-readme?view=azure-python-preview)
