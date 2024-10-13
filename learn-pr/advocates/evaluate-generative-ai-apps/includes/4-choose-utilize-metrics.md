@@ -11,6 +11,8 @@ Provided is a table of our built-in performance and quality metrics:
 
 ### Qualitative Metrics
 
+Qualitative metrics measure the subjective qualities of AI-generated responses. Qualitative metrics focus on the human experience, assessing aspects like readability, creativity, and appropriateness.
+
 |Metric  |Definition  |Example of Use  |Interpretation  |
 |---------|---------|---------|---------|
 |Coherence     | The degree to which the output is logically consistent and makes sense.         | Assess whether the generated output for an AI creative writing assistant follows a logical sequence and maintains consistent character development throughout the story        |Assessed on a scale of 1.0 - 5.0. <br><br> High coherence means the content is easy to follow and understand as a whole.|
@@ -21,6 +23,8 @@ Provided is a table of our built-in performance and quality metrics:
 |F1 Score     |A measure of a model's accuracy that combines precision (relevance of retrieved items) and recall (completeness of retrieval).         |Assess how well a model correctly identifies and classifies various skin conditions for an AI app that assists doctors in diagnosing skin conditions from images.         | Assessed on a scale of 0 - 1. <br><br> A high F1 score indicates that the model has low false positives and low false negatives.|
 
 ### Quantitative Metrics
+
+Quantitative metrics involve objective, numerical measurements of the AI's performance. Quantitative metrics are often data-driven and based on specific algorithms or statistical analysis.
 
 |Metric  |Definition  |Example  |Interpretation  |
 |---------|---------|---------|---------|

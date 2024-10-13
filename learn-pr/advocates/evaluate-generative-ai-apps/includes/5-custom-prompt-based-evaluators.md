@@ -4,7 +4,7 @@ Custom evaluators can be tailored to measure these more subjective and context-s
 
 ## Prompty
 
-You can create a custom evaluator with Prompty, a prompt template experience within Prompt flow. Prompty standardizes prompts and their execution into a single asset and is composed of the specification, tooling, and runtime.
+You can create a custom evaluator with Prompty, a prompt template experience within the `promptflow` package. Prompty standardizes prompts and their execution into a single asset and is composed of the specification, tooling, and runtime.
 
 ### Specification
 
