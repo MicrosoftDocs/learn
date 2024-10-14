@@ -33284,6 +33284,11 @@
       "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/10-summary-resources.md",
       "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/index.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
     }
   ]
 }
