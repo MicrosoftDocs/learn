@@ -36,6 +36,5 @@ subjects:
   - cloud-computing
   - data-management
 units:
-- learn.wwl.responsible-generative-ai.summary
 badge:
   uid: learn.wwl.responsible-generative-ai.badge
