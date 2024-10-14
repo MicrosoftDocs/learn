@@ -5,7 +5,7 @@ metadata:
   description: Use virtual network peering to enable communication across virtual networks in a way that's secure and cost-effective.
   ms.service: azure-virtual-network
   manager: kumud
-  ms.date: 10/05/2023
+  ms.date: 10/14/2024
   author: asudbring
   ms.author: allensu
   ms.topic: module
