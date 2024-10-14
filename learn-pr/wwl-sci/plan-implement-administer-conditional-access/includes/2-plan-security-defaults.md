@@ -6,7 +6,7 @@ Managing security can be difficult with common identity-related attacks like pas
  -  Requiring users to perform multifactor authentication when necessary.
  -  Protecting privileged activities like access to the Azure portal.
     
-    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406.png" alt-text="Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.":::
+    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406-c9280b39.png" alt-text="Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.":::
     
 
 ## Availability

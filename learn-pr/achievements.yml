@@ -3162,7 +3162,7 @@ achievements:
   type: badge
   title: Fundamentals of Azure OpenAI Service
   summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
-  iconUrl: /learn-pr/achievements/learn.wwl.explore-azure-openai.badge.svg
+  iconUrl: /training/achievements/explore-azure-openai.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -3987,3 +3987,18 @@ achievements:
   title: Introduction to data protection and privacy
   summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
   iconUrl: /training/achievements/introduction-data-protection-privacy.svg
+- uid: learn.wwl.responsible-generative-ai.badge
+  type: badge
+  title: Fundamentals of Responsible Generative AI
+  summary: Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.use-azure-resource-manager.badge
+  type: badge
+  title: Use Azure Resource Manager
+  summary: You'll learn how to use resource groups to organize your Azure resources.
+  iconUrl: /training/achievements/arm-use-resource-manager.svg
+- uid: learn.wwl.use-intelligent-planners.badge
+  type: badge
+  title: Use intelligent planners
+  summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
+  iconUrl: /training/achievements/generic-badge.svg
