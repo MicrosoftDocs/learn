@@ -33334,6 +33334,11 @@
       "source_path": "learn-pr/wwl-azure/use-intelligent-planners/6-optimize-your-planners.md",
       "redirect_url": "/training/modules/automatic-function-calling/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/10-summary.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
     }
   ]
 }
