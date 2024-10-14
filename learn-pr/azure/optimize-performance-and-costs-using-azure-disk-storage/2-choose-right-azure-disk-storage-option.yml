@@ -4,11 +4,10 @@ title: Choose the right Azure Disk Storage option
 metadata:
   title: Choose the right Azure Disk Storage option
   description: Learn about the disk types available in Azure.
-  ms.date: 04/11/2023
+  ms.date: 07/16/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-right-azure-disk-storage-option.md)]

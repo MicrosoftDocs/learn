@@ -58,7 +58,7 @@ Windows Server doesn't replicate event logs among nodes. However, the Cluster Ev
 
 ### Deploy updates to cluster nodes
 
-With Cluster-Aware Updating (CAU) in Windows Server, you can automate deployment of updates to cluster nodes without downtime. This eliminates the need for manually coordinating patching of individual cluster nodes. CAU in Windows Server 2019 automatically evaluates the need for a restart for each installed update.
+With Cluster-Aware Updating (CAU) in Windows Server, you can automate deployment of updates to cluster nodes without downtime. This eliminates the need for manually coordinating patching of individual cluster nodes. CAU in Windows Server 2025 automatically evaluates the need for a restart for each installed update.
 
 CAU can operate in one of two modes:
 

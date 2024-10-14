@@ -5,11 +5,11 @@ metadata:
   unitType: summary
   title: "Summary" 
   description: "Summary"
-  ms.date: 05/02/2022
+  ms.date: 10/26/2023
   author: codemillmatt
   ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

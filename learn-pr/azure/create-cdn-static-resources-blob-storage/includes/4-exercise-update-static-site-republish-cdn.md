@@ -1,6 +1,6 @@
 Now that your delivery network is configured, let's verify that your site content is being delivered through the CDN.
 
-In this unit, review how CDNs update content and the delay that you typically see when updating the source files.
+In this unit, we review how CDN's update contents and examine the delay that you typically see when updating the source files.
 
 ## Review both the Origin Server and CDN Versions
 
@@ -14,11 +14,11 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
 1. Open another browser tab.
 
-1. Enter the URL of your Endpoint Hostname from the CDN endpoint in the form **endpointname.azureedge.net**. Again, the replicated copy of your source website should appear. You may see a _Page not Found_ if the content hasn't propagated. Propagation can take a few minutes to complete and you may need to refresh the page.
+1. Enter the URL of your Endpoint Hostname from the CDN endpoint in the form **endpointname.azureedge.net**. Again, the replicated copy of your source website should appear. Propagation can take a few minutes to complete and you might need to refresh the page if you see a *Page not Found* message.
 
     :::image type="content" source="../media/5-cdn-endpoint.png" alt-text="Screenshot of the website through the Azure CDN endpoint.":::
 
-1. Place both windows side by side on your screen. Both URLs can be found in the Azure portal, on the overview tab for the Endpoint you created in the previous exercise.
+1. Place both windows side by side on your screen. Both URLs can be found in the Azure portal, on the **Overview** tab for the Endpoint you created in the previous exercise.
 
 ## Change the Origin Files
 
@@ -40,7 +40,7 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
 1. Save (Ctrl + S) and close (Ctrl + Q) the editor.
 
-1. Upload the changed index.html to the $web blob storage container.
+1. Upload the changed `index.html` file to the `$web` blob storage container.
 
     ```azurecli
     az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME --overwrite
@@ -48,7 +48,7 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
 ## Verify site changes
 
-1. Switch to the browser connecting to the source URL (web.core.windows.net) and press F5 to refresh the page. The changes to the image and text should appear immediately.
+1. Switch to the browser connecting to the source URL (**web.core.windows.net**) and press F5 to refresh the page. The changes to the image and text should appear immediately.
 
     :::image type="content" source="../media/5-storage-website-changed.png" alt-text="Screenshot of the website through the storage account endpoint updated.":::
 
@@ -56,4 +56,4 @@ Open the URLs for the origin server and the link to the CDN-published version in
 
     :::image type="content" source="../media/5-cdn-endpoint-updated.png" alt-text="Screenshot of the website through the Azure CDN endpoint updated.":::
 
-1. You may continue to the next unit while you wait for the CDN to update.
+1. You can continue to the next unit while you wait for the CDN to update.

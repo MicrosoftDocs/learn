@@ -6,23 +6,23 @@ Now, let's learn about long-term retention policies in Azure SQL Database and ho
 
 ## Long-term backup retention policies
 
-Azure SQL Database automatic backups remain available to restore for up to 35 days. This period is enough for the purposes of day-to-day administration. But sometimes you might need to retain data for longer periods. For example, data protection regulations in your local jurisdiction might require you to keep backups for several years.
+Azure SQL Database automatic backups remain available to restore for up to 35 days. This period is enough for the purposes of day-to-day administration. But sometimes, you might need to retain data for longer periods. For example, data protection regulations in your local jurisdiction might require you to keep backups for several years.
 
 For these requirements, use the long-term retention (LTR) feature. This way, you can store Azure SQL Database backups in read-access geo-redundant storage (RA-GRS) blobs for up to 10 years. If you need access to any backup in LTR, you can restore it as a new database by using either the Azure portal or PowerShell.
 
 ## How SQL Database long-term retention works
 
-The LTR feature takes the backups that it has automatically made for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no effect on performance.
+The LTR feature takes the automatic backups for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no effect on performance.
 
 These backups don't happen by default. You must configure a policy to start and manage them.
 
 ## How to write a long-term retention policy
 
-The long-term retention policy sets how frequently an automatic backup will be copied for long-term retention. You specify this frequency with letters:
+The LTR policy sets how frequently an automatic backup is copied for long-term retention. You specify this frequency with letters:
 
-- `W`: Specifies that one full backup each week will be copied to long-term retention.
-- `M`: Specifies that one full backup from the first week of each month will be copied to long-term retention.
-- `Y`: Specifies that one full backup each year will be copied to long-term retention.
+- `W`: Specifies that one full backup each week is copied to long-term retention.
+- `M`: Specifies that one full backup from the first week of each month is copied to long-term retention.
+- `Y`: Specifies that one full backup each year is copied to long-term retention.
 
 If you use `Y` for yearly backups, you can specify the week of the year when that backup is copied by using the `WeekOfYear` parameter.
 

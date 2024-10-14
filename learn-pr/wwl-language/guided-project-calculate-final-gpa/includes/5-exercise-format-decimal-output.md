@@ -60,7 +60,10 @@ In this exercise, you'll calculate the final GPA and modify the console output t
 
  You might have noticed that decimal result contains many more digits than a standard GPA. In this task, you'll manipulate the decimal GPA value so that only three digits are displayed.
 
-Ultimately, you want to display the first digit of the GPA, a decimal point, followed by the first two digits after the decimal. You can achieve this format by using two variables to store the leading and trailing digits respectively, and then printing them together using Console.WriteLine(). You can use operations to extract the leading and trailing digits.
+Ultimately, you want to display the first digit of the GPA, a decimal point, followed by the first two digits after the decimal. You can achieve this format by using variables to store the leading and trailing digits respectively, and then printing them together using Console.WriteLine(). You can use the math operations you learned to extract the leading and trailing digits.
+
+>[!NOTE]
+> As you continue your developer journey, you'll discover built-in operations that can automatically apply formatting to your data. For now, this is a great opportunity to solidify what you've learned so far.
 
 1. Navigate to the top of the Console.WriteLine() statements.
 
@@ -78,25 +81,35 @@ Ultimately, you want to display the first digit of the GPA, a decimal point, fol
 1. To initialize a variable that will store the first two digits after the decimal, enter the following code:
 
     ```csharp
-    int trailingDigits = (int) (gradePointAverage * 100) - (leadingDigit * 100);
+    int firstDigit = (int) (gradePointAverage * 10) % 10;
     ```
 
-    In the first half of this operation, you're moving the decimal two digits to the right. In the second half, you're adding zeroes to the leading digit. Afterwards, you subtract the two and cast the result to an integer. Here's an example:
+    In the first half of this operation, you move the decimal one place to the right and cast it to an integer. In the second half, you use the remainder, or modulo, operator to get the remainder of division by 10, which isolates the last digit in the integer. Here's an example:
 
-    Suppose `gradePointAverage = 2.994573` and `leadingDigit = 2`
+    Suppose `gradePointAverage = 2.994573`
     Then, performing the operation on these values would result in the following steps:
 
     ```csharp
-    int trailingDigits = (int) (2.994573 * 100) - (2 * 100);
-    int trailingDigits = (int) 299.4573 - 200;
-    int trailingDigits = (int) 99.4573;
+    int firstDigit = (int) (2.994573 * 10) % 10;
+    int firstDigit = 29 % 10;
+    int firstDigit = 9;
     ```
-    And the resulting value of `trailingDigits` is 99;
+    And the resulting value of `firstDigit` is 9.
+
+    Next, you'll apply the same operation to retrieve the second digit.
+
+1. On a new blank code line, enter the following code:
+
+    ```csharp
+    int secondDigit = (int) (gradePointAverage * 100 ) % 10;
+    ```
+
+    In this line, you move the decimal two places and use the modulo operator to retrieve the last digit.
 
 1. To correct the final GPA output, update the last Console.WriteLine() statement as follows:
 
     ```csharp
-    Console.WriteLine($"Final GPA: {leadingDigit}.{trailingDigits}");
+    Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
 ## Check Your Work
@@ -145,7 +158,8 @@ In this task, you'll run the code and verify that the output is correct.
     decimal gradePointAverage = (decimal) totalGradePoints/totalCreditHours;
 
     int leadingDigit = (int) gradePointAverage;
-    int trailingDigits = (int) (gradePointAverage * 100) - (leadingDigit * 100);
+    int firstDigit = (int) (gradePointAverage * 10 ) % 10;
+    int secondDigit = (int) (gradePointAverage * 100 ) % 10;
 
     Console.WriteLine($"{course1Name} {course1Grade} {course1Credit}");
     Console.WriteLine($"{course2Name} {course2Grade} {course2Credit}");
@@ -153,7 +167,7 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine($"{course4Name} {course4Grade} {course4Credit}");
     Console.WriteLine($"{course5Name} {course5Grade} {course5Credit}");
 
-    Console.WriteLine($"Final GPA: {leadingDigit}.{trailingDigits}");
+    Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
 1. To run your code and display the formatted output, select **Run**.

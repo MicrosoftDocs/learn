@@ -4,11 +4,10 @@ title: Protect your network
 metadata:
   title: Protect your network
   description: "Protect your network"
-  ms.date: 08/17/2022
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

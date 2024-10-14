@@ -3,12 +3,11 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory.solve-common-issu
 title: Solve common problems when adding a custom domain name
 metadata:
   title: Solve common problems when adding a custom domain name
-  description: Resolve an unmanaged Azure Active Directory organization problem, and also explore other problems and how to resolve them.
-  ms.date: 02/25/2020
-  author: ajburnle
-  ms.author: ajburnle
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Resolve an unmanaged Microsoft Entra organization problem, and also explore other problems and how to resolve them.
+  ms.date: 09/22/2022
+  author: amycolannino
+  ms.author: amycolannino
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-solve-common-issues.md)]
@@ -17,7 +16,7 @@ quiz:
   questions:
   - content: "What should you do if domain name verification fails?"
     choices:
-    - content: "Wait up to an hour, go to the Azure Active Directory > Custom domain names pane, and select Verify again."
+    - content: "Wait up to an hour, go to the Microsoft Entra ID > Custom domain names pane, and select Verify again."
       isCorrect: false
       explanation: "Azure doesn't provide a way to reverify."
     - content: "Wait a half hour, and refresh your browser to view the status in Azure."
@@ -26,14 +25,14 @@ quiz:
     - content: "Wait at least an hour, then check that the data is correct with your domain registrar."
       explanation: "If you've waited for more than an hour, and the domain is still unverified, check that you've entered the correct details with your domain registrar."
       isCorrect: true
-  - content: "How many Azure AD organizations can use a single domain name?"
+  - content: "How many Microsoft Entra organizations can use a single domain name?"
     choices:
     - content: "None"
       isCorrect: false
-      explanation: "Domain names can be used by only a single Azure AD organization."
+      explanation: "Domain names can be used by only a single Microsoft Entra organization."
     - content: "1"
       isCorrect: true
-      explanation: "Domain names are unique and can be used by only a single Azure AD organization."
+      explanation: "Domain names are unique and can be used by only a single Microsoft Entra organization."
     - content: "900"
-      explanation: "You can have more than one domain name per Azure AD organization, with the maximum being 900. But each domain name can be used by only a single Azure AD organization."
+      explanation: "You can have more than one domain name per Microsoft Entra organization, with the maximum being 900. But each domain name can be used by only a single Microsoft Entra organization."
       isCorrect: false

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-compute.plan-implement-sap-solutions
+title: Plan for implementing SAP solutions
+metadata:
+  title: Plan for implementing SAP solutions
+  description: "Plan for implementing SAP solutions"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-plan-implement-sap-solutions.md)]

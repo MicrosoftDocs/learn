@@ -24,7 +24,7 @@ Later, you can use either the Visual Studio Code editor or the full Visual Studi
 
     We'll explain how and why the code works soon. But first, you should see it running, so you can be sure that you didn't enter it incorrectly.
 
-3. Save the file as *hello.cpp*.
+3. Save the file as *hello.cpp* by pressing <kbd>CTRL + S</kbd>.
 
 ## Build your code
 

@@ -4,11 +4,10 @@ title: Exercise - Autoscale and monitor a web app
 metadata:
   title: Exercise - Autoscale and monitor a web app
   description: Configure autoscaling for a web app and monitor the results.
-  ms.date: 04/10/2019
+  ms.date: 05/04/2022
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-autoscale-a-web-app.md)]

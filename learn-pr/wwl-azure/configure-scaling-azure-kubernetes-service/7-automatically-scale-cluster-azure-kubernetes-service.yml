@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-scaling-azure-kubernetes-service.automatically-scale-cluster-azure-kubernetes-service
+title: Automatically scale a cluster on Azure Kubernetes Service
+metadata:
+  title: Automatically scale a cluster on Azure Kubernetes Service
+  description: "Automatically scale a cluster on Azure Kubernetes Service"
+  ms.date: 10/25/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-automatically-scale-cluster-azure-kubernetes-service.md)]

@@ -3,12 +3,13 @@ uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.choo
 title: Choose how to serve data to machine learning workflows
 metadata:
   title: Choose how to serve data to machine learning workflows
-  description: "Choose how to serve data to machine learning workflows"
-  ms.date: 11/11/2022
+  description: Choose how to serve data to machine learning workflows
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

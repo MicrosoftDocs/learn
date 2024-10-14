@@ -4,11 +4,10 @@ title: Backup services
 metadata:
   title: Backup services
   description: Backup services
-  ms.date: 03/15/2020
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 13
 content: |

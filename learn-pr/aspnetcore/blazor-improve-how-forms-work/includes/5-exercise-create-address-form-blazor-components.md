@@ -1,8 +1,8 @@
 At the moment, the Blazing Pizza app is using HTML elements to capture data and for buttons. The Blazor framework has improved support for forms that allow them to use components that can be bound to a C# model.
 
-The team would like you to change the current HTML elements with Blazor components. The team would like you to only submit orders if the address and name aren't blank.
+The team would like you to replace the current HTML elements with Blazor components. The team would like you to only submit orders if the address and name aren't blank.
 
-In the exercise, you'll replace the current HTML fields with a Blazor component and change how the customer orders submission. You'll see how to use the EditContext to write manual validations for a form.
+In this exercise, you'll replace the current HTML fields with a Blazor component and change how the customer submits orders. You'll see how to use the EditContext to write manual validations for a form.
 
 ## Add a Blazor EditForm component
 
@@ -104,7 +104,7 @@ Let's add an error message the app can show a customer if they don't enter their
     }
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
     Try to order some pizzas without entering any information. You should see the error message.
 

@@ -4,11 +4,10 @@ title: Use the device inventory list
 metadata:
   title: Use the device inventory list
   description: "Use the device inventory list"
-  ms.date: 02/20/2023
+  ms.date: 11/28/2023
   author: wwlpublish
   ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

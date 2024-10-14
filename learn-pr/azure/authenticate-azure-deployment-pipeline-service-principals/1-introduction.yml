@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
-  ms.date: 06/13/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 01/16/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

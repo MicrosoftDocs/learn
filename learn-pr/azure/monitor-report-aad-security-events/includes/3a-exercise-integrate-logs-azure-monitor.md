@@ -36,7 +36,7 @@ In this exercise, you'll:
 
 To stream the audit and sign-in logs to your Log Analytics workspace:
 
-1. In the Azure portal, go to your Azure Active Directory instance.
+1. In the Azure portal, go to your Microsoft Entra instance.
 
 1. In the left menu under **Monitoring**, select **Diagnostic settings**, and then select **Add diagnostic setting**.
 

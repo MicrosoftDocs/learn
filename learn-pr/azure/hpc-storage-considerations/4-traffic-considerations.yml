@@ -4,11 +4,10 @@ title: File-system traffic considerations
 metadata:
   title: File-system traffic considerations
   description: A discussion of the various file-access traffic patterns and how each can affect your HPC workload. 
-  ms.date: 12/29/2020
+  ms.date: 04/04/2024
   author: scjescho
-  ms.author: scjescho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: padmalathas
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-traffic-considerations.md)]

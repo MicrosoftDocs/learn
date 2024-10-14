@@ -5,11 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introduction to the authentication and authorization with Azure AD module
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

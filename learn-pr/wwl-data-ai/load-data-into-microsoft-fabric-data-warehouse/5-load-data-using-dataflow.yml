@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-dataflow
+title: Load and transform data with Dataflow Gen2
+metadata:
+  title: Load and transform data with Dataflow Gen2
+  description: "Learn how to load and transform data with Dataflow Gen2."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-load-data-using-dataflow.md)]

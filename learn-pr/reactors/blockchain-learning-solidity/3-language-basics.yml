@@ -3,11 +3,10 @@ uid: learn.reactors.blockchain-learning-solidity.3-language-basics
 metadata:
   title: Understand the language basics
   description: Learn the fundamentals of using Solidity in a smart contract.
-  ms.date: 06/16/2021
+  ms.date: 02/10/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Understand the language basics
 durationInMinutes: 8

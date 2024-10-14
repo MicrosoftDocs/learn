@@ -4,29 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/22/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which object provides a security context for an application registered in Azure AD?'
+  - content: 'Which object provides a security context for an application registered in Microsoft Entra ID?'
     choices:
     - content: "managed identity"
       isCorrect: false
-      explanation: "Incorrect. Managed identities represent Azure resources, not applications registered in Azure AD."
+      explanation: "Incorrect. Managed identities represent Azure resources, not applications registered in Microsoft Entra ID."
     - content: "service principal"
       isCorrect: true
       explanation: "Correct. A service principal provides authentication and authorization functionality and references the application object."
     - content: "user"
       isCorrect: false
-      explanation: "Incorrect. User objects are used for interactive logons, rather than for applications registered in Azure AD."
-  - content: 'Which of the following steps helps ensure that an application registered in Azure AD can act on behalf of a signed-in user when it accesses resources?'
+      explanation: "Incorrect. User objects are used for interactive logons, rather than for applications registered in Microsoft Entra ID."
+  - content: 'Which of the following steps helps ensure that an application registered in Microsoft Entra ID can act on behalf of a signed-in user when it accesses resources?'
     choices:
     - content: "Setting the application's redirect URI to http://localhost."
       isCorrect: false
@@ -37,7 +36,7 @@ quiz:
     - content: "Configuring delegated permissions of the application."
       isCorrect: true
       explanation: "Correct. Delegated permissions are used by interactive apps with a signed-in user. As a result, the app acts on behalf of a signed-in user when it accesses the target resource."
-  - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should they configure as the sign-in requests endpoint for the app?'
+  - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Microsoft Entra tenant with the verified domain name of contoso.com. What should they configure as the sign-in request endpoint for the app?'
     choices:
     - content: 'login.microsoftonline.com/contoso.com'
       isCorrect: false

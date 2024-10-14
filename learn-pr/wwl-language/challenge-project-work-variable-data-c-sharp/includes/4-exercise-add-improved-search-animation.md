@@ -1,6 +1,3 @@
-
-
-
 The Contoso Pets app helps find new homes for abandoned pets. Part of the request for search feature improvement is to update the animated simulation indicating search progress.
 
 ## Search animation specification
@@ -15,7 +12,7 @@ In this second challenge exercise, you need to update the search animation to re
 - You can design the "searching" animation to display "spinning" to work differently than displayed in the animated image
 - The "searching..." animation, should continue to be overwritten, after each animation completes so it stays on the same line, and so that it doesn't display after the animation stops.
 
-    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Example of application searching dog descriptions with four user submitted terms":::
+    :::image type="content" source="../media/pet-search-animation.gif" alt-text="Animated Screenshot of an example of application searching dog descriptions with four user submitted terms.":::
 
 
 ### Add a countdown to the "searching" animation
@@ -56,7 +53,7 @@ To validate that your code satisfies the specified requirements, complete the in
 
 1. At the command prompt, enter **golden, big** and press enter to test the search status messages with animation and countdown
 
-1. Verify that the console panel updates with temporary "searching" status messages *similar* to the code output samples:
+1. Verify that the console panel updates with temporary "searching" status messages *similar* to the **code output samples**:
 
     ```Output
     Enter dog characteristics to search for separated by commas
@@ -66,14 +63,18 @@ To validate that your code satisfies the specified requirements, complete the in
     ```
 
     ```Output
-    searching our dog Nickname: lola for big / 1
+    searching our dog Nickname: lola for big -- 1
     ```
 
     ```Output
-    searching our dog Nickname: lola for golden * 1
+    searching our dog Nickname: lola for golden \ 1
     ```
 
-1. All the user entered search terms should display with the "`searching`" spin animation and countdown for each dog
+    ```Output
+    searching our dog Nickname: lola for golden * 0
+    ```
+
+1. All the user entered search terms should display with the "`searching`" spin animation and countdown for each dog where the "searching our dog..." line in the output overwrites the previous line to create an animation
 
 1. Refer to the previous animated image of the running program for more examples of the "searching" status animation with countdown
 

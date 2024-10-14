@@ -3,11 +3,10 @@ uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator
 metadata:
   title: 'Get tips and tricks for teaching SC-400: Microsoft Information Protection Administrator'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 04/11/2023
+  ms.date: 11/17/2023
   author: wwlpublish
-  ms.author: Trinity Sheppard
-  ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.author: tsheppard
+  ms.topic: module
   ms.service: azure
 title: 'Get tips and tricks for teaching SC-400: Microsoft Information Protection Administrator'
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
@@ -17,13 +16,13 @@ abstract: |
   - Leverage the lab environment during the instructional portion of the class
   - Discover additional resources and materials to prepare students for success on their Microsoft Certification exams
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-tips-tricks-teach-sc-400-information-protection-administrator.svg
 levels:
 - beginner
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 subjects:
 - security
 units:

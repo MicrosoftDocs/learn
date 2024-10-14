@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender.use-microsoft-security-center-portal
-title: Use the Microsoft 365 Defender portal
+title: Use the Microsoft Defender portal
 metadata:
-  title: Use the Microsoft 365 Defender portal
-  description: "Use the Microsoft 365 Defender portal"
-  ms.date: 02/27/2023
+  title: Use the Microsoft Defender portal
+  description: "Use the Microsoft Defender portal"
+  ms.date: 01/24/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.author: kelawson
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-use-microsoft-security-center-portal.md)]

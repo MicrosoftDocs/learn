@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.introduction-to-accessibility.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the 'Introduction to accessibility' module.
+  ms.date: 04/10/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

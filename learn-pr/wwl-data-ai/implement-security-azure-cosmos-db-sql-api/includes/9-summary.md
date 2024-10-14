@@ -5,7 +5,7 @@ Now that you have completed this module, you can:
 - Implement network level access control
 - Review data encryption options
 - Use role-based access control (RBAC)
-- Access Account Resources using Azure Active Directory
+- Access Account Resources using Microsoft Entra ID
 - Understand Always Encrypted
 
 
@@ -17,7 +17,7 @@ For more information about the topics discussed in this module, see:
 - [Configure IP firewall in Azure Cosmos DB][/azure/cosmos-db/how-to-configure-firewall]
 - [Data encryption in Azure Cosmos DB][/azure/cosmos-db/database-encryption-at-rest]
 - [Azure role-based access control in Azure Cosmos DB][/azure/cosmos-db/role-based-access-control]
-- [Configure role-based access control with Azure Active Directory for your Azure Cosmos DB account][/azure/cosmos-db/how-to-setup-rbac]
+- [Configure role-based access control with Microsoft Entra ID for your Azure Cosmos DB account][/azure/cosmos-db/how-to-setup-rbac]
 - [Use client-side encryption with Always Encrypted for Azure Cosmos DB][/azure/cosmos-db/how-to-always-encrypted]
 - [Quickstart: Register an application with the Microsoft identity platform][/azure/active-directory/develop/quickstart-register-app]
 

@@ -3,11 +3,10 @@ uid: learn.wwl.explore-basic-computer-concepts
 metadata:
   title: Exploring basic computer concepts
   description: Learn how computers work and how they connect to the internet. You’ll also learn the very basics of how computers are programmed.
-  ms.date: 02/13/2023
+  ms.date: 04/10/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robbarefoot
+  ms.topic: learning-path
 title: Exploring basic computer concepts
 prerequisites: |
   Working knowledge of computers and modern devices like cell phones and tablets.
@@ -22,8 +21,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- consumer
 subjects:
 - cloud-computing
 modules:

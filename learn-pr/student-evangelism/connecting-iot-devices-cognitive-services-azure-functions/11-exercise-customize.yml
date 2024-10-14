@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-customizing-cognitive-services
-title: Exercise - Customizing Cognitive Services as Azure Functions
+title: Exercise - Customizing Azure AI services as Azure Functions
 metadata:
-  title: Exercise - Customizing Cognitive Services as Azure Functions
-  description: In this section, we help the learner to how to customizing cognitive services using the Azure Functions to the IoT device
-  ms.date: 06/05/2020
+  title: Exercise - Customizing Azure AI services as Azure Functions
+  description: In this section, we help the learner to how to customizing Azure AI services using the Azure Functions to the IoT device
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7 # dummy number at present
 content: |

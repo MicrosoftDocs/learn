@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/21/2022
+  ms.date: 10/27/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -41,9 +40,9 @@ quiz:
       explanation: "Correct. Tags provide extra information, or metadata, about your resources. The team might create a tag named `BillingDept`, where the value is the name of the billing department. Azure Policy ensures that the proper tags are assigned when resources are provisioned."
   - content: "Which option preserves data residency, and offers comprehensive compliance and resiliency options?"
     choices:
-    - content: "Azure Active Directory (Azure AD) Account"
+    - content: "Microsoft Entra account"
       isCorrect: false
-      explanation: "Incorrect. An Azure AD account is an identity that's created through Azure AD or another Microsoft cloud service."
+      explanation: "Incorrect. A Microsoft Entra account is an identity that's created through Microsoft Entra ID or another Microsoft cloud service."
     - content: "Regions"
       isCorrect: true
       explanation: "Correct. Regions preserve data residency, and offer comprehensive compliance and resiliency options for customers."

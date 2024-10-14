@@ -40,5 +40,5 @@ Azure Synapse Link for Dataverse enables HTAP integration by replicating table d
 In the diagram above, the following key features of the Azure Synapse Link for Dataverse architecture are illustrated:
 
 1. Business applications store data in Microsoft Dataverse tables.
-2. Azure Synapse Link for SQL replicates the table data to an Azure Data Lake Gen2 storage account associated with an Azure Synapse workspace.
+2. Azure Synapse Link for Dataverse replicates the table data to an Azure Data Lake Gen2 storage account associated with an Azure Synapse workspace.
 3. The data in the data lake can be used to define tables in a lake database and queried using a serverless SQL pool, or read directly from storage using SQL or Spark.

@@ -1,4 +1,4 @@
-Azure Content Delivery (CDN) Network is a powerful way to improve performance and increase user satisfaction with websites that serve primarily large static files to a global audience. The ability to cache large video and audio files, along with web pages more locally to the user than the origin server both reduced load on the origin server and minimizes latency. 
+Azure Content Delivery (CDN) Network is a powerful way to improve performance and increase user satisfaction with websites that serve primarily large static files to a global audience. The ability to cache large video and audio files and web pages more locally to the user than the origin server, reduces the load on the origin server and minimizes latency.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
@@ -20,4 +20,4 @@ Azure Content Delivery (CDN) Network is a powerful way to improve performance an
 
 [Manage expiration of web content in Azure CDN](/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
 
-[Restrictions on Directory Paths](/azure/cdn/cdn-restrict-access-by-country-region)
+[Restrict Azure CDN content by country/region](/azure/cdn/cdn-restrict-access-by-country-region)

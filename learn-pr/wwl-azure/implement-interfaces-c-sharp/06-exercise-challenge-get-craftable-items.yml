@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-interfaces-c-sharp.exercise-challenge-get-craftable-items
+title: Complete the challenge to get craftable items
+metadata:
+  title: Complete the challenge to get craftable items
+  description: "Complete the challenge to get craftable items"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/06-exercise-challenge-get-craftable-items.md)]

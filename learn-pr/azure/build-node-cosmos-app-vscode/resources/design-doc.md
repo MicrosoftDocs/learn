@@ -140,7 +140,7 @@ Identify the subtasks of *module title*
             - A stored procedure is transactional; if an operation in a stored procedure fails (or the stored procedure times out), all the work performed by the stored procedure is undone.
             - A stored procedure can throw an exception back to the caller if it detects an error condition. This will also cause the transaction to be undone.
             - A stored procedure runs in an environment that restricts the amount of time and resources available (a *bounded execution* environment), to prevent a rogue stored procedure from adversely affected other users.
-    - Briefly summarize the JavaScript integrated query API for Cosmos DB, used from within stored procedures (https://learn.microsoft.com/azure/cosmos-db/javascript-query-api)
+    - Briefly summarize the JavaScript integrated query API for Cosmos DB, used from within stored procedures (/azure/cosmos-db/javascript-query-api)
     - Describe how to return data as a response message from a stored procedure.
     - Explain how to handle bounded execution by structuring a stored procedure to support *resume* functionality; the stored procedure runs until it is complete or runs out of time. If the stored procedure exceeds the time available, it returns state information in the form of a *continuation* token to the caller. The caller invokes the stored procedure again with the data in the continuation token, and the stored procedure continues processing from where it left off.
     - Describe how to create a stored procedure from the Azure portal.

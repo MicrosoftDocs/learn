@@ -4,12 +4,11 @@ title: What is Azure ExpressRoute?
 metadata:
   title: What is Azure ExpressRoute?
   description: Learn what Azure ExpressRoute does and how your organization can use it.
-  ms.date: 02/09/2022
+  ms.date: 12/22/2023
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure-expressroute.md)]

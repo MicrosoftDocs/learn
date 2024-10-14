@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.create-accessible-content.create-accessible-images
+title: Create accessible images
+metadata:
+  title: Create accessible images
+  description: This content is a part of the "Create accessible content" module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-create-accessible-images.md)] 

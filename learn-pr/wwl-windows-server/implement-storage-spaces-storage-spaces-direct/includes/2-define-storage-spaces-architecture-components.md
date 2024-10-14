@@ -2,7 +2,7 @@ Managing physical disks that are attached directly to a server can be a tedious 
 
 ## What are Storage Spaces?
 
-A storage space is a storage-virtualization capability built into Windows Server and Windows 10. The Storage Spaces feature consists of two components:
+A storage space is a storage-virtualization capability built into Windows Server and Windows 10 and later. The Storage Spaces feature consists of two components:
 
 - Storage pools. A storage pool is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. The pool can contain physical disks of any type and size. A single physical disk can belong to only one storage pool.
 - Storage Spaces. Storage Spaces are virtual disks created from free space in a storage pool. Storage Spaces provide such functionality as resiliency levels, including mirroring and parity, storage tiers, write-back caching, fixed and thin provisioning, and management controls. Virtual disks are equivalent to logical unit numbers (LUNs) on a SAN.
@@ -16,7 +16,7 @@ To create a highly available virtual disk, you need at least one physical disk t
 - A minimum of three physical disks are required to create a virtual disk with resiliency through parity.
 - Three-way mirroring requires at least five physical disks.
 - Disks must be blank and unformatted. No volume can exist on the disks.
-- You can attach disks by using a variety of bus interfaces, including, small computer system interface (SCSI), Serial Attached SCSI (SAS), Serial ATA (SATA), NVM Express (NVMe).
+- You can attach disks by using various bus interfaces, including, small computer system interface (SCSI), Serial Attached SCSI (SAS), Serial ATA (SATA), NVM Express (NVMe).
 
 > [!NOTE]
 > Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies, but Storage Spaces store the data differently than RAID.
@@ -42,7 +42,7 @@ The purpose of write-back caching is to optimize writing data to the disks in a 
 
 Fixed provisioning allocates the storage capacity up front when you create the space. Thin provisioning enables storage to be allocated readily on a just-enough and just-in-time (JIT) basis. In this case, storage capacity in the pool is organized into provisioning slabs that aren't allocated until datasets require the storage. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are allocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed using a process known as trim.
 
-You can create both thin and fixed provisioning virtual disks within the same storage pool. Having both in the same storage pool is convenient, especially when they are related to the same workload. For example, you can choose to use a thin provisioning space for a shared folder containing user files, and a fixed provisioning space for a database that requires high disk I/O.
+You can create both thin and fixed provisioning virtual disks within the same storage pool. Having both in the same storage pool is convenient, especially when they're related to the same workload. For example, you can choose to use a thin provisioning space for a shared folder containing user files, and a fixed provisioning space for a database that requires high disk I/O.
 
 ### Managing Storage Spaces
 

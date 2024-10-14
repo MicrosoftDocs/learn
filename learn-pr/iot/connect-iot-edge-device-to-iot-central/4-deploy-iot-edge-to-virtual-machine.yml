@@ -3,28 +3,28 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.deploy-iot-edge-to-virtual
 title: Deploy an IoT Edge enabled Linux VM
 metadata:
   title: Deploy an IoT Edge enabled Linux VM
-  description: Deploy an IoT Edge enabled Linux VM
-  ms.date: 01/11/2023
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
+  ms.date: 07/19/2024
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom: engagement-fy23, linux-related-content
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-deploy-iot-edge-to-virtual-machine.md)]
 quiz:
   title: "Deploy IoT Edge to a VM"
   questions:
-  - content: "How does an IoT Edge device connect to IoT Central?"
+  - content: "How does an IoT Edge device connect to Azure IoT Central?"
     choices:
     - content: "Using information in the configuration file on the device"
       isCorrect: true
-      explanation: "Yes. The configuration file on the IoT Edge device includes information such as the scope ID, device ID, and device key for a device in IoT Central."
+      explanation: "Yes. The configuration file on the IoT Edge device includes information such as the scope ID, device ID, and device key for a device in Azure IoT Central."
     - content: "Using information in the deployment manifest"
       isCorrect: false
-      explanation: "No. The device downloads the deployment manifest after it connects to IoT Central. The deployment manifest specifies the modules to run."
+      explanation: "No. The device downloads the deployment manifest after it connects to Azure IoT Central. The deployment manifest specifies the modules to run."
     - content: "Using information passed as command line parameters"
       isCorrect: false
       explanation: "No. The IoT Edge modules run as Docker containers that read configuration information from a file."
@@ -36,6 +36,6 @@ quiz:
     - content: "A container registry"
       isCorrect: true
       explanation: "Correct. Modules are downloaded from a container registry such as Azure Container Registry or Docker Hub."
-    - content: "Your IoT Central application"
+    - content: "Your Azure IoT Central application"
       isCorrect: false
-      explanation: "No. A device template in IoT Central contains the IoT Edge deployment manifest that specifies the modules the device must download from a container registry."
+      explanation: "No. A device template in Azure IoT Central contains the IoT Edge deployment manifest that specifies the modules the device must download from a container registry."

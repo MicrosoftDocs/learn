@@ -159,3 +159,4 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     The answer should be 29.
 
 You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using **INSERT** statements, modify the rows using **UPDATE** statements, and remove rows using **DELETE** statements.
+

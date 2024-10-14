@@ -4,10 +4,9 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 12/09/2020
-  author: jlooper
+  author: GitHubber17
   ms.author: chnoring 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 2

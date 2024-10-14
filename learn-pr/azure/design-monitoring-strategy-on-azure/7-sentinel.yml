@@ -1,50 +1,38 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
-  title: Analyze enterprise security by using Microsoft Sentinel
-  description: Analyze enterprise security by using Microsoft Sentinel
-  ms.date: 12/03/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze enterprise security by using Microsoft Sentinel
+  title: Manage enterprise security by using Microsoft Sentinel
+  description: Learn how to monitor, analyze, and manage enterprise security by using Microsoft Sentinel.
+  ms.date: 11/13/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+title: Manage enterprise security by using Microsoft Sentinel
 durationInMinutes: 10
 content: |
   [!include[](includes/7-sentinel.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why would you use Microsoft Sentinel?
+  - content: Why do you use Microsoft Sentinel?
     choices:
-    - content: You want to improve the development lifecycle for an application that spans across on-premises and the cloud.
+    - content: To improve the development lifecycle for an application.
       isCorrect: false
-      explanation: You use Application Insights with Azure Pipelines and deployment gates to improve your development lifecycle.
-    - content: You want a detailed overview of your enterprise, potentially across multiple clouds, and on-premises locations.
+      explanation: You use Application Insights to improve your application development lifecycle.
+    - content: To detect and respond to security threats across multiple clouds.
       isCorrect: true
-      explanation: Microsoft Sentinel will help monitor and respond to security threats across your entire enterprise.
-    - content: You want to be able to cross-query over data collected from multiple sources that span on-premises and the cloud.
+      explanation: Microsoft Sentinel helps monitor and respond to security threats across your entire enterprise.
+    - content: To cross-query data collected from multiple on-premises and cloud data sources.
       isCorrect: false
-      explanation: You use Azure Monitor Log Analytics to cross-resource query over data from multiple sources. Use Microsoft Sentinel to monitor and respond to security threats across your entire enterprise.
-  - content: How do you set up Microsoft Sentinel on Azure?
-    choices: 
-    - content: Create a Microsoft Sentinel instance, and then add Microsoft Sentinel to a workspace.
-      isCorrect: false
-      explanation: You create a workspace, and then add that workspace to Microsoft Sentinel.
-    - content: Connect your data source, create a workspace, and then add Microsoft Sentinel to that workspace. 
-      isCorrect: false
-      explanation: Create a workspace, and then add that workspace to Microsoft Sentinel before you can connect a data source.
-    - content: Create a workspace, and then add that workspace to Microsoft Sentinel.
-      isCorrect: true
-      explanation: You'll need to create a Log Analytics workspace.
-  - content: Sentinel has raised an incident. How can you investigate which users have been affected?
+      explanation: You can use Azure Monitor Log Analytics to cross-query monitoring data from multiple sources, but not to monitor data for an enterprise.
+  - content: How can you use the Microsoft Sentinel investigation map to determine which users an incident affected?
     choices:
-    - content: Use the investigation map, drill down into the incident, and look for data sources.
+    - content: Use exploration queries.
       isCorrect: false
-      explanation: You look for entities. Entities can include users, devices, and appliances.
-    - content: Use the investigation map, drill down into the incident, and look for user entities affected by the alert.
+      explanation: You can use predefined exploration queries to investigate incidents more effectively, but they don't show which users an incident affected.
+    - content: Use entities.
       isCorrect: true
-      explanation: Use entities to view users that might have been in the path of a particular threat or malicious activity.
-    - content: Use the investigation map, drill down into the incident, and look for playbooks.
+      explanation: Use entities to view users that a particular threat or malicious activity might have affected.
+    - content: Use the timeline.
       isCorrect: false
-      explanation: You look for entities. Entities can include users, devices, and appliances. You use playbooks to automatically respond to threats.
+      explanation: You can use the timeline feature to understand the path that a threat might have taken over time, but the timeline doesn't show affected users.

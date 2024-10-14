@@ -2,13 +2,15 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 5/03/2019
+  description: Introduction to Azure SQL Database elastic pools.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Introduction
 durationInMinutes: 3
 content: |

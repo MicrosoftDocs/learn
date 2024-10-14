@@ -14,9 +14,9 @@ But what do we mean by an identity? An identity is the set of things that define
 
 An identity may be associated with a user, an application, a device, or something else.
 
-![Identity is the new security perimeter](../media/3-identity-new-security-perimeter.png)
+![Diagram showing identity as the new security perimeter](../media/3-identity-new-security-perimeter.png)
 
-## Four pillars of an identity infrastructure
+### Four pillars of an identity infrastructure
 
 Identity is a concept that spans an entire environment, so organizations need to think about it broadly. There's a collection of processes, technologies, and policies for managing digital identities and controlling how they're used to access resources. These can be organized into four fundamental pillars that organizations should consider when creating an identity infrastructure. 
 

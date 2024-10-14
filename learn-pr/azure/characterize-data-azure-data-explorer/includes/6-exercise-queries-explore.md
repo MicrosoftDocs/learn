@@ -21,7 +21,7 @@ You should get results that look like the following image:
 
 ## Find minimum and maximum values
 
-It will be useful to know what ranges of values exist in the dataset. For example, you saw in the last unit that there are timestamps for each event. Run the following query to see the minimum and maximum values of the start time column:
+It's useful to know what ranges of values exist in the dataset. For example, you saw in the last unit that there are timestamps for each event. Run the following query to see the minimum and maximum values of the **StartTime** column:
 
 <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVcjNzNMILkksKgnJzE3V1FHITaxA4gMAZ2iu0TYAAAA=" target="_blank">Run the query</a>
 
@@ -36,20 +36,19 @@ You should get results that look like the following image:
 
 ## Get table schema
 
-Recall in the last unit that you looked at several rows of data to infer the data types. You can use a query to find out the actual schema of the data table. The schema is a mapping of column name to data type. 
+Recall in the last unit that you looked at several rows of data to infer the data types. You can use a query to find out the actual schema of the data table. The schema is a mapping of column name to data type.
 
 1. Run the following query.
-    
+
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSE8tKU7OSM1NBADhHoKkFwAAAA==" target="_blank">Run the query</a>
-    
+
     ```kusto
     StormEvents
     | getschema 
     ```
-    
-    You should get results that look like the following image: 
-    
-    :::image type="content" source="../media/5-metadata.png" alt-text="Screenshot of results grid showing metadata.":::
-    
-1. Look at each column. The first, **ColumnName** shows the columns you explored in the last unit. The **ColumnOrdinal** numbers the columns in order of how they appear in the table. The **DataType** isn't needed for this characterization. **ColumnType** displays the datatype for each column. Notice that the last column, **StormSummary**, is a dynamic object. A dynamic object can contain property bags or arrays.
 
+    You should get results that look like the following image:
+
+    :::image type="content" source="../media/5-metadata.png" alt-text="Screenshot of results grid showing metadata.":::
+
+1. Look at each column. The first, **ColumnName** shows the columns you explored in the last unit. The **ColumnOrdinal** numbers the columns in order of how they appear in the table. The **DataType** isn't needed for this characterization. **ColumnType** displays the datatype for each column. Notice that the last column, **StormSummary**, is a dynamic object. A dynamic object can contain property bags or arrays.

@@ -1,12 +1,12 @@
-You’ve learned how you can use Azure Stack HCI software-defined storage to address the resiliency and performance needs of your business-critical workloads by providing:
+You learned how you can use Azure Stack HCI software-defined storage to address the resiliency and performance needs of your business-critical workloads by providing:
 
-- Hyper-converged infrastructure
+- Hyper-converged infrastructure.
 
-- Multiple-node clustering
+- Multiple-node clustering.
 
 - Highly redundant disk configurations.
 
-- High-bandwidth, low latency interconnect combined with multiple-tier storage. 
+- High-bandwidth, low latency interconnect combined with multiple-tier storage.
 
 You explored the various considerations for designing, implementing, and managing Azure Stack HCI storage. You also learned how to further optimize the built-in functionality of Azure Stack HCI storage.
 

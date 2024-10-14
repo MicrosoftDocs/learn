@@ -5,10 +5,9 @@ metadata:
   description: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
   brand: azure
   ms.date: 10/22/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Architect infrastructure operations in Azure
 summary: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
 prerequisites: None
@@ -27,7 +26,6 @@ subjects:
 - infrastructure
 modules:
 - learn.control-and-organize-with-resource-manager
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.design-monitoring-strategy-on-azure
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs

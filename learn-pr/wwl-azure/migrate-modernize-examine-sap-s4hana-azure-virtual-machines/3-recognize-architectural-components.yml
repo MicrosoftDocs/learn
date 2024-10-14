@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.recognize-architectural-components
+title: Recognize architectural components
+metadata:
+  title: Recognize architectural components
+  description: "Recognize architectural components"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-recognize-architectural-components.md)]

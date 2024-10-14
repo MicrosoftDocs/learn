@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-compute-gallery.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 08/16/2023
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is the main goal of Azure Compute Gallery?
+    choices:
+    - content: The main goal of Azure Compute Gallery is to share custom images with your organization and the Azure community.
+      isCorrect: false
+      explanation: "Incorrect: While Azure Compute Gallery enables you to share your images, it offers other management capabilities in service of its goal."
+    - content: The main goal of Azure Compute Gallery is to help you build structure and organization around your Azure virtual machine resources.
+      isCorrect: true
+      explanation: "Correct: Azure Compute Gallery is meant to help you simplify the storage and management of large numbers of custom virtual machine images and applications."
+    - content: The main goal of Azure Compute Gallery is to enable customers to automatically create replicas of their virtual machine resources in other Azure regions.
+      isCorrect: false
+      explanation: "Incorrect: While Azure Compute Gallery enables you to replicate your resources, it offers other management capabilities in service of its goal."
+  - content: What types of resources can be stored in a gallery?
+    choices:
+    - content: A gallery can only store virtual machine images.
+      isCorrect: false
+      explanation: "Incorrect: Azure Compute Gallery can store your virtual machine images, but it can also store your virtual machine applications."
+    - content: A gallery can only store virtual machine applications.
+      isCorrect: false
+      explanation: "Incorrect: Azure Compute Gallery can store your virtual machine applications, but it can also store your virtual machine images."
+    - content: A gallery can store both virtual machine images and applications.
+      isCorrect: true
+      explanation: "Correct: Azure Compute Gallery can store both your virtual machine images and applications."
+  - content: What type of sharing supported by Azure Compute Gallery would enable you to share your images with another tenant?
+    choices:
+    - content: Only RBAC Sharing would enable you to share your images with another tenant.
+      isCorrect: false
+      explanation: "Incorrect: RBAC Sharing doesn't enable you to share your images with another tenant."
+    - content: Only RBAC + Direct shared gallery sharing would enable you to share your images with another tenant.
+      isCorrect: true
+      explanation: "Correct: Only RBAC + Direct shared gallery sharing is the only sharing method that enables you to share your images with another tenant."
+    - content: Both RBAC Sharing and RBAC + Community gallery sharing would enable you to share your images with another tenant.
+      isCorrect: false
+      explanation: "Incorrect: Neither RBAC Sharing nor RBAC + Community gallery sharing enable you to share your images with another tenant."

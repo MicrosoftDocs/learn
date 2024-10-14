@@ -1,4 +1,4 @@
-You're all done with the tasks for this module. Here, you'll move the work item to the **Done** state on Azure Boards, and clean up your Microsoft Azure DevOps environment.
+You're all done with the tasks for this module. Here, you'll move the work item to the **Done** state on Azure Boards and clean up your Microsoft Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
@@ -43,15 +43,15 @@ To disable the pipeline:
 
 ### Option 2: Delete the Azure DevOps project
 
-This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Select this option if you don't need your Azure DevOps project for future reference.
+This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that creates a new project in a state where this one leaves off. Select this option if you don't need your Azure DevOps project for future reference.
 
 To delete the project:
 
 1. From Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Dependencies**.
-1. Select **Project settings** in the lower corner.
+1. Select **Project settings** in the lower-left corner.
 1. From the **Project details** area, scroll to the bottom, and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
-1. From the window that appears, enter the project name, and select **Delete** a second time.
+1. From the window that appears, enter the project name and select **Delete** a second time.
 
     Your project is now deleted.

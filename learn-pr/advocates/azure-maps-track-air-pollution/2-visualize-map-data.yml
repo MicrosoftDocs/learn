@@ -5,10 +5,9 @@ metadata:
   title: Visualize mapping data with the Azure Maps web SDK
   description: Learn about the visualization capabilities of the Azure Maps web SDK.
   author: acomfort248
-  ms.author: jabenn
-  ms.date: 06/10/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

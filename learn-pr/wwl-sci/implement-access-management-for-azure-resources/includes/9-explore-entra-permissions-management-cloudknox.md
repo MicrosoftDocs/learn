@@ -1,4 +1,4 @@
-Microsoft Entra Permissions Management (formerly known as CloudKnox) is a cloud infrastructure entitlement management (CIEM) solution. Permissions management provides comprehensive visibility into permissions assigned to all identities. Permissions Management detects, automatically right-sizes, and continuously monitors unused and excessive permissions.
+Microsoft Entra Permissions Management is a cloud infrastructure entitlement management (CIEM) solution. Permissions Management provides comprehensive visibility into permissions assigned to all identities. The software detects, automatically right-sizes, and continuously monitors unused and excessive permissions.
 
 Organizations have to consider permissions management as a central piece of their Zero Trust security to implement least privilege access across their entire infrastructure:
 
@@ -8,15 +8,15 @@ Organizations have to consider permissions management as a central piece of thei
 
 ### Key use cases for Microsoft Entra Permissions Management
 
-| **Use case** | **Description**                                                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Discover     | Customers can assess permission risks by evaluating the gap between permissions granted and permissions used.                               |
-| Remediate    | Customers can right-size permissions based on usage, grant new permissions on-demand, and automate just-in-time access for cloud resources. |
-| Monitor      | Customers can detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.         |
+| **Use case** | **Description**                                                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Discover     | Customers can assess permission risks by evaluating gaps between permissions granted and permissions used.                                       |
+| Remediate    | Customers can right-size permissions based on usage, then grant new permissions on-demand, and automate just-in-time access for cloud resources. |
+| Monitor      | Customers can detect anomalous activities with machine language-powered (ML-powered) alerts and generate detailed forensic reports.              |
 
 ### Process flow
 
-:::image type="content" source="../media/entra-permissions-flow-776127df.png" alt-text="Diagram of how Microsoft Entra permissions management takes input from many sources to analyze what permissions are being used.":::
+:::image type="content" source="../media/entra-permissions-flow-776127df.png" alt-text="Diagram of how Microsoft Entra Permissions Management takes input from many sources to analyze what permissions are being used.":::
 
 
 Microsoft Entra Permissions Management comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers. It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP.

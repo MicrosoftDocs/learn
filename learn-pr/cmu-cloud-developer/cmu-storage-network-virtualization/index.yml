@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Storage and network virtualization
 summary: Learn about how storage and network resources can be virtualized to support software defined datacenters.

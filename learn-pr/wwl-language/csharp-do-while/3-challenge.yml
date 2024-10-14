@@ -4,11 +4,12 @@ title: Exercise - Complete a challenge activity using do and while iteration sta
 metadata:
   title: Exercise - Complete a challenge activity using do and while iteration statements
   description: "Exercise - Complete a challenge activity using do and while iteration statements"
-  ms.date: 02/27/2023
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/3-challenge.md)]

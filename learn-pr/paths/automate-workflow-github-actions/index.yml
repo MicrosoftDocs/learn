@@ -7,8 +7,7 @@ metadata:
   ms.date: 07/02/2020
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-github
+  ms.topic: learning-path
 title: Automate your workflow with GitHub Actions
 summary: |
   Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.

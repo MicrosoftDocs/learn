@@ -16,7 +16,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 - Use Azure Policy to prevent noncompliant resources from being created, and automatically remediate noncompliant resources.
 
-- Azure Policy integrates with Azure DevOps by applying pre-deployment and post-deployment policies. 
+- Azure Policy integrates with Azure DevOps by applying predeployment and post-deployment policies. 
 
 ### Things to consider when using Azure Policy
 
@@ -46,7 +46,7 @@ You're ready to consider how to apply Azure Policy settings to your Tailwind Tra
 
 	- Deploy related compliant resources.
 
-- **Consider when to automatically remediate noncompliant resources**. Decide if you want Azure Policy to do automatic remediation for noncompliant resources. Remediation is especially useful in resource tagging. Azure Policy can tag resources and reapply tags that have been removed. You can use Azure Policy to ensure all resources in a certain resource group are tagged with a specific tag like `Location` to identify the region.
+- **Consider when to automatically remediate noncompliant resources**. Decide if you want Azure Policy to do automatic remediation for noncompliant resources. Remediation is especially useful in resource tagging. Azure Policy can tag resources and reapply tags that are removed. You can use Azure Policy to ensure all resources in a certain resource group are tagged with a specific tag like `Location` to identify the region.
 
 - **Consider how Azure Policy is different from role-based access control (RBAC)**. It's important to understand that Azure Policy and Azure RBAC are different. For your Tailwind Traders strategy, Azure RBAC and Azure Policy should be used together to achieve full scope control.
 
@@ -58,4 +58,4 @@ You're ready to consider how to apply Azure Policy settings to your Tailwind Tra
 
 After you determine your identity management solution for Tailwind Traders, it's time to think about resource access. What resources should these identities be able to access? How will you enforce that access? How will you monitor and review the access?
 
-A user's identity goes through several phases. Initially, the user has no access. Access can be granted through RBAC and verified with Azure AD conditional access. Azure AD Identity Protection can be used to monitor the user's access. Periodically, Azure AD access reviews confirm the access is still required.
+A user's identity goes through several phases. Initially, the user has no access. Access can be granted through RBAC and verified with Microsoft Entra Conditional Access. Microsoft Entra ID Protection can be used to monitor the user's access. Periodically, Microsoft Entra access reviews confirm the access is still required.

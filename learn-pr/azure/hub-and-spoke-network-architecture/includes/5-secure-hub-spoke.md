@@ -1,6 +1,6 @@
 Azure provides many services to help enable an organization to secure and protect its cloud infrastructure. Your organization needs to understand how to secure its new network, and what other Azure services are available.
 
-In this unit, you'll explore secure networking in the Azure platform and see an overview of Azure Firewall. You'll also learn how to secure virtual networks by using network security groups.
+In this unit, you explore secure networking in the Azure platform and see an overview of Azure Firewall. Also, you learn how to secure virtual networks by using network security groups.
 
 ## Secure network design on Azure
 
@@ -27,7 +27,7 @@ Additionally, consider incorporating some of the following elements into your ne
 - Microsoft Defender for Cloud to prevent, detect, and respond to threats against your Azure services.
 - Azure Firewall as a network security service.
 
-There's a wide variety of security solutions for your organization, many of which complement each other to provide more layers of security. Microsoft has recommended best practices that you should align with overall. You then implement any features needed to meet your organization's internal security requirements.
+There's a wide variety of security solutions for your organization, many of which complement each other to provide more layers of security. Your organization should align with Microsoft's recommended best practices. You then implement any features needed to meet your organization's internal security requirements.
 
 ## Base components of Azure security for hub-spoke topologies
 
@@ -67,7 +67,7 @@ The logs can be stored in an Azure Storage Account, streamed to Azure Event Hubs
 
 ## Network security with network security groups
 
-Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate traffic using a 5-tuple method. To determine if traffic is allowed or denied, NSGs evaluate traffic using the:
+Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate traffic using a five-tuple method. To determine if traffic is allowed or denied, NSGs evaluate traffic using the:
 
 - Source IP
 - Source port

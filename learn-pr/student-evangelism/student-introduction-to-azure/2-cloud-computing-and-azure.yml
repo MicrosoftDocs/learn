@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.student-introduction-to-azure.cloud-computing-and-azure
+title: Cloud computing and Azure
+metadata:
+  title: Cloud computing and Azure
+  description: "Introduction to the concept of cloud computing and its platform, Azure."
+  ms.date: 9/11/2023
+  author: v-regandowner
+  ms.author: chnoring
+  ms.topic: unit
+  ms.custom: team=nextgen
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-cloud-computing-and-azure.md)]
+quiz:
+  questions:
+  - content: "What is cloud computing?"
+    choices:
+    - content: "Delivery of computing services over the internet."
+      isCorrect: true
+      explanation: "Correct! Cloud computing is the delivery of computing services over the internet."
+    - content: "Delivery of storage services over the internet."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is the delivery of computing services over the internet."
+    - content: "Delivery of websites accessible via the internet."
+      isCorrect: false
+      explanation: "Incorrect. Cloud computing is the delivery of computing services over the internet."
+  - content: "Which of the following statements best describes Azure?"
+    choices:
+    - content: "A platform to share data over the internet."
+      isCorrect: false
+      explanation: "Incorrect. Azure isn't used to share data over the internet."
+    - content: "A service to manage your finances."
+      isCorrect: false
+      explanation: "Incorrect. Azure doesn't provide financial services."
+    - content: "A platform to control and manage services and resources."
+      isCorrect: true
+      explanation: "Correct! Azure is a service that helps to control and manage services and resources."
+  - content: "Which of the following is a realistic example of Azure being used in the real world?"
+    choices:
+    - content: "A multinational corporation using Azure to store and analyze massive amounts of customer data for personalized marketing campaigns."
+      isCorrect: true
+      explanation: "Correct! Azure can be used to help you find patterns in your data for marketing campaigns."
+    - content: "A local bakery using Azure to host a website for online ordering and payment processing."
+      isCorrect: false
+      explanation: "Incorrect. Azure can be used to host a website, but it isn't used for payment processing."
+    - content: "A university using Azure to run virtual classrooms and manage student enrollment and grades."
+      isCorrect: false
+      explanation: "Incorrect. Azure isn't used to manage student enrollment and grades."

@@ -4,11 +4,12 @@ title: Manage admin roles in Exchange Online by using Windows PowerShell
 metadata:
   title: Manage admin roles in Exchange Online by using Windows PowerShell
   description: "Manage admin roles in Exchange Online by using Windows PowerShell"
-  ms.date: 10/24/2022
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

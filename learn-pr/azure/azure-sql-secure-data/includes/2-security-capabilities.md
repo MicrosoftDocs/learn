@@ -1,4 +1,4 @@
-SQL Server and Azure SQL services have been known for the importance it puts on security, specifically as being enterprise-class. In this unit, you'll learn about the various security capabilities related to network security, and access management. In the units that follow, you'll get hands on experience with some of these capabilities.
+SQL Server and Azure SQL services have been known for the importance they put on security, specifically as being enterprise-class. In this unit, you'll learn about the various security capabilities related to network security and access management. In the units that follow, you'll get hands-on experience with some of these capabilities.
 
 :::image type="content" source="../media/2-enterprise-security.png" alt-text="Diagram of enterprise-class security." border="false":::
 
@@ -19,17 +19,17 @@ In addition to these main choices, you have the opportunity to block all public 
 
 ### Allow access to Azure services
 
-During the deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services, such as Azure Virtual Machines, Azure App Service, or even Azure Cloud Shell, because you're allowing anything that comes through Azure to have the potential to connect.
+During the Azure SQL Database deployment, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services, such as Azure Virtual Machines, Azure App Service, or even Azure Cloud Shell, because you're allowing anything that comes through Azure to have the potential to connect.
 
-:::image type="content" source="../media/2-allow-access.png" alt-text="Diagram of allow access to Azure services." border="false":::
+:::image type="content" source="../media/2-allow-access.png" alt-text="Diagram of allowing access to Azure services." border="false":::
 
 Allowing access to Azure services does not, however, allow anything outside of Azure (for example, your on-premises environment) to have access.
 
-The most secure configuration is to set **Allow Azure services and resources access to this server** to **No**. Setting **Allow Azure services and resources access to this server** to **No** blocks all connections and networks, apart from ones you've explicitly added with the various options that follow in the next sections.
+The most secure configuration is to set **Allow Azure services and resources access to this server** to **No**, which blocks all connections and networks apart from ones you've explicitly added with the various options that follow in the next sections.
 
 ### Firewall rules
 
-Your next option is to apply firewall rules. Your results might be similar to those of **Allow Azure services and resources access to this server** except that, for each service to connect (in the following image, a virtual machine (VM)), you'll need to add a unique firewall rule to allow the VM to connect. Firewall rules also enable your on-premises environment to connect to the Azure SQL Database resource because you can add the rules for machines and applications in your on-premises environment.
+Your next option is to apply firewall rules. Your results might be similar to those of **Allow Azure services and resources access to this server** except that, for each service (in the following image, a virtual machine (VM)), you'll need to add a unique firewall rule to allow it to connect. Firewall rules also enable your on-premises environment to connect to the Azure SQL Database resource, because you can add the rules for machines and applications in your on-premises environment.
 
 :::image type="content" source="../media/2-firewall-rules.png" alt-text="Diagram of firewall rules." border="false":::
 
@@ -41,11 +41,11 @@ Let's look at the preceding example with the firewall rules configured. From a t
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```  
 
-The result would be `174.17.218.16`. This IP address is the public IP address of the Azure VM. Even though we're using firewall rules, all the connections being made are public.
+The result would be `174.17.218.16`. This is the public IP address of the Azure VM. Even though we're using firewall rules, all the connections being made are public.
 
 ### Virtual network rules
 
-If you want to use only firewall rules, setting this up can be complicated. It means that you have to specify a range of IP addresses for all your connections, which can sometimes have dynamic IP addresses. A much easier alternative is to use [virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview) to establish and manage access from specific networks that contain VMs or other services that need to access the data.
+If you want to use only firewall rules, it can be complicated to set up. Using only firewall rules means that you have to specify a range of IP addresses for all your connections, which can sometimes have dynamic IP addresses. A much easier alternative is to use [virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview) to establish and manage access from specific networks that contain VMs or other services that need to access the data.
 
 If you configure access from a virtual network with a virtual network rule, any resources in that virtual network can access the Azure SQL Database logical server. This can simplify the challenge of configuring access to all static and dynamic IP addresses that need to access the data. By using virtual network rules, you can specify one or more virtual networks, encompassing all the resources within them. You can also start to apply virtual network technologies to connect networks across regions in both Azure and on-premises.  
 
@@ -65,7 +65,7 @@ Another common strategy for analyzing your connection is to examine the Domain N
 nslookup aw-server.database.windows.net  
 ```
 
-By using this command, you can get details that are related to the DNS infrastructure. Your results would be something similar to the following:  
+By using this command, you can get details that are related to the DNS infrastructure. Your results would be similar to the following:  
 
 ```cmd
 Server: Unknown
@@ -78,20 +78,20 @@ Aliases:    aw-server.database.windows.net
             dataslice2.eastus.database.windows.net
 ```
 
-Under the non-authoritative answer are some important things to look at:  
+Under the non-authoritative answer, there are some important things to look at:  
 
 - **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, let's say that `cr2` is *control ring 2* and that there are multiple data "slices" below it.  
-- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although a tool such as SSMS final hop might be through your VM's private IP address, the public IP address of your VM is still being used to connect in some capacity.  
-- **Aliases**: Aliases are various points within the DNS hierarchy. In this case, the specific data "slice" and endpoint you connect to.  
+- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although a tool such as SSMS's final hop might be through your VM's private IP address, your VM's public IP address is still being used to connect in some capacity.  
+- **Aliases**: Aliases are various points within the DNS hierarchy; in this case, the specific data "slice" and endpoint you connect to.  
 
 > [!NOTE]
-> In the preceding image, **Address: 168.63.129.16** is a virtual public IP address that's used to facilitate a communication channel to Azure platform resources. It applies to all regions and all national clouds, and it won't change.
+> In the preceding output block, **Address: 168.63.129.16** is a virtual public IP address that's used to facilitate a communication channel to Azure platform resources. It applies to all regions and all national clouds, and it won't change.
 
-Although the connection through SSMS comes through the private IP address of the Azure VM, you're still ultimately connecting through a public endpoint.
+Although the connection through SSMS comes through the Azure VM's private IP address, you're still ultimately connecting through a public endpoint.
 
 ### Private Link for an Azure SQL Database
 
-You've seen how to configure the most secure network by using your database in Azure SQL Database with the public endpoint. This method of securing a database in SQL Database has been used for years. However, in 2019, Azure began moving toward a concept of a private link, which is more like the way that Azure SQL Managed Instance is deployed. With Azure Private Link, you can connect to your database in SQL Database and several other platform as a Service offerings by using a private endpoint. This means that it has a private IP address within a specific virtual network.  
+You've seen how to configure the most secure network by using your database in Azure SQL Database with the public endpoint. This method of securing a database in SQL Database has been used for years. However, in 2019, Azure began moving toward a concept of a private link, which is more like the way that Azure SQL Managed Instance is deployed. With Azure Private Link, you can connect to your database in SQL Database and several other platform-as-a-service (PaaS) offerings by using a private endpoint. This means that it has a private IP address within a specific virtual network.  
 
 :::image type="content" source="../media/2-private-endpoint.png" alt-text="Diagram of a private endpoint connection." border="false":::
 
@@ -103,7 +103,7 @@ As you continue with this example, on the Azure VM in virtual network `SQLDBVNet
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```
 
-The result would now be `10.0.0.2`, which is the private IP address of the Azure VM in this example. By adding access from your virtual network, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. This is the same result you saw with virtual network rules.  
+The result would now be `10.0.0.2`, which is the Azure VM's private IP address in this example. By adding access from your virtual network, connections to Azure SQL Database from your VM will appear to come through your VM's private IP address. This is the same result you saw with virtual network rules.  
 
 However, you might want to use the command prompt to look at the DNS hierarchy by using the following command:
 
@@ -123,13 +123,13 @@ Address:    10.0.0.5
 Aliases:    aw-server.database.windows.net
 ```
 
-Under the non-authoritative answer are some important things to look at:  
+Under the non-authoritative answer, there are some important things to look at:  
 
 - **Name**: Note that you're no longer pointing to the public DNS hierarchy, only to the Private Link DNS. This means that less information is revealed about your database server.  
-- **Addresses**: For virtual network rules, the address that's returned is the public IP address of your VM, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
+- **Addresses**: For virtual network rules, the address that's returned is your VM's public IP address, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
 - **Aliases**: As in the Name field, nothing is related to the DNS hierarchy, except that you can still connect to the server name (for example, `aw-server.database.windows.net`).  
 
-One thing you might be wondering, if you're connecting to the private endpoint, is *why are you still using the same server name?* In the backend, when you use only the Private Link method of connecting to Azure SQL Database(that is, no firewall or virtual network rules), the information is processed as follows:  
+One thing you might be wondering if you're connecting to the private endpoint is *why are you still using the same server name?* In the backend, when you use only the Private Link method of connecting to Azure SQL Database (that is, no firewall or virtual network rules), the information is processed as follows:  
 
 - `aw-server.database.windows.net`  
   - Resolved by service to `aw-server.privatelink.database.net`  
@@ -153,33 +153,33 @@ Built-in roles are available to reduce the need for higher-level RBAC roles, suc
 
 ### Authentication
 
-During deployment of an Azure SQL Database logical server, you can specify the following **Authentication method**:
+During an Azure SQL Database logical server deployment, you can specify the following **Authentication method**:
 
-- Use only Azure Active Directory (Azure AD) authentication
-- Use both SQL and Azure AD authentication
+- Use only Microsoft Entra authentication
+- Use both SQL and Microsoft Entra authentication
 - Use SQL authentication
 
 The server admin needs to be set during deployment. For databases in Azure SQL Database, the server admin is a server-level principal for the Azure SQL Database logical server.
 
-If you're migrating a workload that needs Windows authentication or your organization uses Azure Active Directory (Azure AD), you can use Azure AD. You can assign an Azure AD server admin by using the portal or command-line tools.
+If you're migrating a workload that needs Windows authentication or your organization uses Microsoft Entra ID, you can use Microsoft Entra ID. You can assign a Microsoft Entra server admin by using the portal or command-line tools.
 
-Azure AD-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) have been introduced to allow Azure AD server principals, which are logins in the virtual `master` database of a SQL Database. Azure AD logins can be created from Azure AD *users, groups, and service principals*. When using Azure AD-only authentication, SQL authentication logins can be created and existing logins will remain. However, only Azure AD authentication logins and users can connect to the logical server. To learn more about Azure AD-only authentication, see [Azure AD-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication)
+Microsoft Entra-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) have been introduced to allow Microsoft Entra server principals, which are logins in the virtual `master` database of a SQL Database. You can create Microsoft Entra logins from Microsoft Entra *users, groups, and service principals*. When using Microsoft Entra-only authentication, you can create SQL authentication logins, and existing logins will remain. However, only Microsoft Entra authentication logins and users can connect to the logical server. To learn more about Microsoft Entra-only authentication, see [Microsoft Entra-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication).
 
-:::image type="content" source="../media/2-azure-ad-admin.png" alt-text="Screenshot of setting the Azure AD administrator." border="false":::  
+:::image type="content" source="../media/2-azure-ad-admin.png" alt-text="Screenshot of setting the Microsoft Entra administrator." border="false":::  
 
-Depending on how your organization has configured the Azure AD instance, you can connect to it by using any of the following three methods (for example, in SSMS):
+Depending on how your organization has configured the Microsoft Entra instance, you can connect to it by using any of the following three methods (for example, in SSMS):
 
-- **Azure Active Directory - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Azure AD credentials from a federated domain.  
-- **Azure Active Directory - Password**: A non-interactive method that allows you to connect with an Azure AD principal name by using the Azure AD-managed domain. From the documentation:
+- **Microsoft Entra ID - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Microsoft Entra credentials from a federated domain.  
+- **Microsoft Entra ID - Password**: A non-interactive method that allows you to connect with a Microsoft Entra principal name by using the Microsoft Entra ID-managed domain. From the documentation:
 
-   *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database or Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*
+   *This can apply to native or federated Microsoft Entra users. A native user is one explicitly created in Microsoft Entra ID and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Microsoft Entra ID. The latter method (using user name & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database or Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*
 
-- **Azure Active Directory - Universal with Multi-Factor Authentication (MFA)**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Azure AD Multi-Factor Authentication.
+- **Microsoft Entra ID - Universal with multifactor authentication (MFA)**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Microsoft Entra multifactor authentication.
 
-For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Azure AD accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two [database level roles](/sql/relational-databases/security/authentication-access/database-level-roles) are available for SQL Database that only exist in the virtual `master` database:
+For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Microsoft Entra accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two [database level roles](/sql/relational-databases/security/authentication-access/database-level-roles) are available for SQL Database that only exist in the virtual `master` database:
 
-- **loginmanager**: A database-level role that allows members to create logins for the database server.
-- **dbmanager**: A database-level role that allows members to create and delete databases for the database server.
+- **loginmanager**: A database-level role that allows members to create logins for the database server
+- **dbmanager**: A database-level role that allows members to create and delete databases for the database server
 
 Here's a list of [server-level roles](/azure/azure-sql/database/security-server-roles#fixed-server-level-roles) in Azure SQL Database:
 

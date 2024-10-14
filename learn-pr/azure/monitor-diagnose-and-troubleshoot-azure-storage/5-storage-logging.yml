@@ -3,11 +3,10 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.5-storage-logging
 metadata:
   title: Troubleshoot with storage resource logs
   description: In this unit, we'll learn about resource logs and how to route them to various destinations for analysis.
-  ms.date: 05/05/2021
+  ms.date: 12/21/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Troubleshoot with storage resource logs
 durationInMinutes: 4
 content: |

@@ -3,24 +3,25 @@ uid: learn.dotnet-maui.build-mobile-and-desktop-apps.add-controls-to-the-ui
 title: Add visual controls to a .NET MAUI app 
 metadata:
   unitType: unit
-  title: "Add visual controls to a .NET MAUI app"
-  description: "Learn how to lay out controls on a .NET MAUI page and respond to events."
-  ms.date: 04/27/2022
+  title: Add visual controls to a .NET MAUI app
+  description: "Learn how to lay out controls on a .NET MAUI (Multi-platform Application User Interface) page and respond to events."
+  ms.date: 09/27/2024
   author: codemillmatt  
   ms.author: masoucou  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5 
 content: |
   [!include[](includes/5-add-controls-to-the-ui.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of these isn't a layout type in .NET MAUI?"
+  - content: "Which of these types isn't a layout type in .NET MAUI?"
     choices:
     - content: "DockableLayout"
       isCorrect: true
-      explanation: "This is the correct answer"
+      explanation: "This answer is correct."
     - content: "AbsoluteLayout"
       isCorrect: false
       explanation: "No. AbsoluteLayout is a valid layout type in .NET MAUI."
@@ -37,10 +38,10 @@ quiz:
       explanation: "Incorrect. There's no Screen class in .NET MAUI."
     - content: "Page"
       isCorrect: true
-      explanation: "This is the correct answer. Page is the base class of ContentPage and other types of page."
+      explanation: "This answer is correct. Page is the base class of ContentPage and other page types."
     - content: "ContentView"
       isCorrect: false
       explanation: "Incorrect. A ContentView is a control that enables the creation of custom controls."
     - content: "Grid"
       isCorrect: false
-      explanation: "Incorrect. Grid's allow you to place control's onto a page in a two dimensional pattern."
+      explanation: "Incorrect. A Grid allows you to place controls onto a page according to a column and row location that you set."

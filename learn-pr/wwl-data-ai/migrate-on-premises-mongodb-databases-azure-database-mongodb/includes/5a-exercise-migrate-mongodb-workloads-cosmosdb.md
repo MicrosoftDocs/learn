@@ -37,7 +37,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 1. Select the default subnet, and then select **Remove subnet**.
 1. Select **+ Add subnet**. In the **Add subnet** pane, set the **Subnet name** to **default**, set the **Subnet address range** to **10.0.0.0/28**, and then select **Add**.
 1. On the **IP Addresses** page, select **Next: Security**.
-1. On the **Security** page, verify that **DDoS Protection Standard** is set to **Disable**, and **Firewall** is set to **Disable**. Select **Review + create**.
+1. On the **Security** page, verify that **Azure DDoS Network Protection** is set to **Disable**, and **Firewall** is set to **Disable**. Select **Review + create**.
 1. On the **Create virtual network** page, select **Create**. Wait for the virtual network to be created before continuing.
 
 ### Create a MongoDB database server

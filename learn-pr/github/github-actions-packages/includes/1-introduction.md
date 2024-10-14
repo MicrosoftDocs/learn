@@ -1,6 +1,6 @@
 Package registries allow developers to easily share and use code libraries and use them across development workstations. Some developers are already familiar with public package registries, like npm or NuGet. Deploying private packages has many similarities.
 
-Development teams using GitHub Packages can share code libraries (npm, NuGet, Maven, RubyGems) and containers directly within GitHub. These packages can be public or restricted to specific people using the same secure login for their code and packages. With GitHub Actions, you can automate
+Development teams using GitHub Packages can share code libraries (such as npm, NuGet, Maven, or RubyGems) and containers directly within GitHub. These packages can be public or restricted to specific people, using the same secure GitHub login for their code and packages. With GitHub Actions, you can automate
 the packaging and publication of your code libraries and containers in minutes.
 
 In this module, you'll learn how to use GitHub Actions to publish to GitHub Packages.

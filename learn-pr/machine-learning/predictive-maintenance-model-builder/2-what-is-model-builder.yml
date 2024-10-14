@@ -5,12 +5,11 @@ metadata:
   unitType: learning-content
   title: What is Model Builder?
   description: "Learn what Model Builder is and what types of problems it can help you solve by using machine learning."
-  ms.date: 10/25/2021
+  ms.date: 07/30/2024
   author: luisquintanilla
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-model-builder.md)]

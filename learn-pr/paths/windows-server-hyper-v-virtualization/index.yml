@@ -3,15 +3,14 @@ uid: learn.wwl.windows-server-hyper-v-virtualization
 metadata:
   title: Windows Server Hyper-V and Virtualization
   description: Windows Server Hyper-V and Virtualization
-  ms.date: 03/02/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: learning-path
 title: Windows Server Hyper-V and Virtualization
 prerequisites: |
   To get the best experience from this learning path, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server 2012 R2 or later.
   - Working with virtualization technologies.
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V.

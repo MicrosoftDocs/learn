@@ -12,7 +12,7 @@ The bot has a symptom checker that simulates six scenarios, so users can take se
 
 ## Daman in the United Arab Emirates
 
-Daman, the leading national health insurance company in the United Arab Emirates, collaborated with Microsoft to deploy the Daman Health Bot. This AI-powered tool helps patients conduct self-assessments on COVID-19 symptoms and then guides patients to the appropriate level of care.
+Daman, the leading health insurance company in the United Arab Emirates, collaborated with Microsoft to deploy the Daman Health Bot. This AI-powered tool helps patients conduct self-assessments on COVID-19 symptoms and then guides patients to the appropriate level of care.
 
 The Daman Health Bot is bilingual. It asks a defined set of questions and follows specific protocols in providing patient assessment, triage, and symptom checking. From there, it offers medical information and makes medical recommendations. For example, it advises patients to connect with the Abu Dhabi Department of Health, the United Arab Emirates Ministry of Health and Prevention, and the Dubai Health Authority for further assistance.
 

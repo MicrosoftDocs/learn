@@ -6,9 +6,9 @@ metadata:
   description: In this exercise, you'll combine code written by other developers in your team to create a pipeline.
   author: softchris
   ms.author: chnoring
-  ms.date: 07/26/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.date: 03/03/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
 content: |

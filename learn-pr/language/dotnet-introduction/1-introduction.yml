@@ -3,12 +3,14 @@ uid: learn.languages.dotnet-introduction.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: See an overview of what you'll learn in this module.
-  ms.date: 10/12/2020
+  description: See an overview of what you learn in this module.
+  ms.date: 10/07/2024
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

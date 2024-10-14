@@ -4,11 +4,10 @@ title: What is ASP.NET app migration?
 metadata:
   title: What is ASP.NET app migration?
   description: Content
-  ms.date: 01/16/2021
+  ms.date: 01/26/2024
   author: wadepickett
   ms.author: wpickett
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-asp-net-app-migration.md)]

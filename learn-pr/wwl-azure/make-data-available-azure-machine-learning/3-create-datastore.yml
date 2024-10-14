@@ -3,12 +3,13 @@ uid: learn.wwl.make-data-available-azure-machine-learning.create-datastore
 title: Create a datastore
 metadata:
   title: Create a datastore
-  description: "Create a datastore"
-  ms.date: 01/13/2023
+  description: Create a datastore
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-create-datastore.md)]

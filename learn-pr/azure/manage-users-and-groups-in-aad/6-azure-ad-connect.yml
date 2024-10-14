@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.manage-users-and-groups-in-aad.azure-ad-connect
-title: Connect Active Directory to Azure AD with Azure AD Connect
+title: Connect Active Directory to Microsoft Entra ID with Microsoft Entra Connect
 metadata:
-  title: Connect Active Directory to Azure AD with Azure AD Connect
-  description: Connect Active Directory to Azure AD with Azure AD Connect
-  ms.date: 03/21/2023
+  title: Connect Active Directory to Microsoft Entra ID with Microsoft Entra Connect
+  description: Connect Active Directory to Microsoft Entra ID with Microsoft Entra Connect
+  ms.date: 11/08/2023
   author: shlipsey3
   ms.author: sarahlipsey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.manager: amycollanino
-  ms.service: active-directory
-  ms.subservice: fundamentals
 durationInMinutes: 8
 content: |
   [!include[](includes/6-azure-ad-connect.md)]

@@ -1,4 +1,4 @@
-Here you follow the Tailspin team as they discuss how to best deliver on new directive driven by management. The team discusses how Kubernetes can support their migration towards a microservices architecture.
+In this unit, you can follow the Tailspin team as they explore strategies for delivering on a new directive from management. The team examines how Kubernetes can assist in their transition to a microservices architecture.
 
 ## The future is smaller
 
@@ -38,20 +38,16 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 ## What is Kubernetes?
 
-Kubernetes is a technology for orchestrating multi-container deployments. It provides a framework for running distributed systems in a declarative, responsive fashion. It automatically applies and enforces your deployment patterns to ensure that containers are deployed and run as intended. It also offers support for specialized release cadences, such as those using canary deployments.  
+Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a framework for running distributed systems in a declarative, responsive fashion and can run containers across multiple hosts, providing efficient use of resources and increased reliability.
 
-The Tailspin team selected Kubernetes containers for this scenario because it met all their needs:
-* Complexity of multi-container deployments
+The Tailspin team selected Kubernetes for this scenario because it met all their needs:
 
-    Kubernetes is designed, first and foremost, to automate the processes around deploying and maintaining container deployments.
-* Consistency across environments and stages
+- Complexity of multi-container deployments: Kubernetes is designed, first and foremost, to automate the processes around deploying and maintaining container deployments.
 
-    Just as containers ensure a consistent deployment for the apps they contain, Kubernetes ensures a consistent deployment for the containers a cluster manages.
-* Azure DevOps support
+- Consistency across environments and stages: just as containers ensure a consistent deployment for the apps they contain, Kubernetes ensures a consistent deployment for the containers a cluster manages.
 
-    Azure DevOps offers first-class support for working with Kubernetes.
-* Ease of development
+- Azure DevOps support: Azure DevOps offers first-class support for working with Kubernetes.
 
-    The impact of Kubernetes on a source project is comparable to that of adding Docker support, which is minimal and limited to declarative configuration.
+- Ease of development: the impact of Kubernetes on a source project is comparable to that of adding Docker support, which is minimal and limited to declarative configuration.
 
 Adopting Kubernetes drastically simplifies the process of adopting a microservices architecture that makes use of multiple Docker containers.

@@ -4,12 +4,11 @@ title: Summary
 metadata:
   unitType:  Summary
   title:  Summary
-  description: Module summary
-  ms.date: 02/10/2022
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Review what you learned in this module.
+  ms.date: 05/01/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

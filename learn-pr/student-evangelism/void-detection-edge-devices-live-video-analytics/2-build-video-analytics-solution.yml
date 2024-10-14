@@ -4,12 +4,10 @@ title: Build the video analytics solution on IoT Edge
 metadata:
   title: Build the video analytics solution on IoT Edge
   description: An overview of how to build video analytics solution using Live Video Analytics and Custom Vision.
-  ms.date: 04/30/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/2-build-video-analytics-solution.md)]

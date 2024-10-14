@@ -89,11 +89,150 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
 ## Build and run the finished web API
 
-1. Build and start the web API by running the following command:
+Build and start the web API by running the following command:
+
+```dotnetcli
+dotnet run
+```
+
+### Test the finished web API with HTTP files
+
+1. Reopen the **ContosoPizza.http** file.
+
+1. Make a `POST` request to add a new pizza in `HttpRepl` by using the following command:
+
+    ```output
+    POST {{ContosoPizza_HostAddress}}/pizza/
+    Content-Type: application/json
+
+    {
+        "name": "Hawaii",
+        "isGlutenFree": false
+    }
+
+    ###
+    ```
+
+    The preceding command returns the newly created pizza:
+
+    ```output
+    HTTP/1.1 201 Created
+    Connection: close
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 17 Jan 2024 17:03:02 GMT
+    Server: Kestrel
+    Location: http://localhost:5192/Pizza/3
+    Transfer-Encoding: chunked
+
+    {
+        "id": 3,
+        "name": "Hawaii",
+        "isGlutenFree": false
+    }
+    ```
+
+1. Update the new `Hawaii` pizza to a `Hawaiian` pizza with a `PUT` request by using the following command:
+
+    ```output
+    PUT {{ContosoPizza_HostAddress}}/pizza/3
+    Content-Type: application/json
+
+    {
+        "id": 3,
+        "name": "Hawaiian",
+        "isGlutenFree": false
+    }
+
+    ###
+    ```
+
+    The preceding command returns the following output that indicates success:
+
+    ```output
+    HTTP/1.1 204 No Content
+    Connection: close
+    Date: Wed, 17 Jan 2024 17:07:30 GMT
+    Server: Kestrel
+    ```
+
+    To verify that the pizza was updated, rerun the `GET` action by using the following command:
+
+    ```output
+    GET {{ContosoPizza_HostAddress}}/pizza/3
+    Accept: application/json
+
+    ###
+    ```
+
+    The preceding command returns the newly updated pizza:
+
+    ```output
+    HTTP/1.1 200 OK
+    Connection: close
+    Content-Type: application/json; charset=utf-8
+    Date: Wed, 17 Jan 2024 17:09:01 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    {
+        "id": 3,
+        "name": "Hawaiian",
+        "isGlutenFree": false
+    }
+    ```
+
+1. Our API can also delete the newly created pizza through the `DELETE` action if you run the following command:
 
     ```dotnetcli
-    dotnet run
+    DELETE {{ContosoPizza_HostAddress}}/pizza/3
+
+    ###
     ```
+
+    The preceding command returns a `204 No Content` result for success:
+
+    ```output
+    HTTP/1.1 204 No Content
+    Date: Fri, 02 Apr 2021 23:30:04 GMT
+    Server: Kestrel
+    ```
+
+    To verify that the pizza was removed, rerun the `GET` action by using the following command:
+
+    ```dotnetcli
+    GET {{ContosoPizza_HostAddress}}/pizza/
+    Accept: application/json
+
+    ###
+    ```
+
+    The preceding command returns the original pizzas as results:
+
+    ```output
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+    Date: Fri, 02 Apr 2021 23:31:15 GMT
+    Server: Kestrel
+    Transfer-Encoding: chunked
+
+    [
+        {
+            "id": 1,
+            "name": "Classic Italian",
+            "isGlutenFree": false
+        },
+        {
+            "id": 2,
+            "name": "Veggie",
+            "isGlutenFree": true
+        }
+    ]
+    ```
+
+You're now finished implementing and testing a newly created web API built with ASP.NET Core.
+
+
+### Optional: Test the finished web API with Command Line HTTPREPL
 
 1. Reopen the existing `httprepl` terminal, or open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
@@ -136,7 +275,7 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
     post -c "{"name":"Hawaii", "isGlutenFree":false}"
     ```
 
-    The preceding command returns a list of all pizza:
+    The preceding command returns the newly created pizza:
 
     ```output
     HTTP/1.1 201 Created
@@ -232,4 +371,4 @@ Remember to save the *Controllers/PizzaController.cs* file before proceeding,
     ]
     ```
 
-You've now finished implementing and testing a newly created web API built with ASP.NET Core.
+You're now finished implementing and testing a newly created web API built with ASP.NET Core.

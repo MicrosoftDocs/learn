@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Learn how to continue your journey by configuring build pipelines that continuously build, test, and verify your applications.
-  ms.date: 06/16/2022
+  ms.date: 10/06/2023
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]

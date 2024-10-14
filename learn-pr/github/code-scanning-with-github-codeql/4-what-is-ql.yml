@@ -5,30 +5,10 @@ metadata:
   unitType: learning-content
   title: "What is QL?" # user input: module title for browser tab and search results
   description: "Learn about the QL programming language which powers the CodeQL analysis tool." # user input: a description for site search and SEO
-  ms.date: 2/15/2022
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/4-what-is-ql.md)]
-quiz:
-  title: What is QL?
-  questions:
-  - content: "What feature does QL add to the Datalog programming language?"
-    choices:
-    - content: "Support for aggregates"
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Recursive predicates"
-      isCorrect: false
-      explanation: "QL inherits recursive predicates from Datalog."
-  - content: "One major difference between QL and general purpose programming languages is:"
-    choices:
-    - content: "QL does not have any imperative features such as assignments to variables or file system operations."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "QL does not have object-oriented features like classes and inheritance."
-      isCorrect: false
-      explanation: "QL is an object-oriented language that does make use of classes and inheritance."

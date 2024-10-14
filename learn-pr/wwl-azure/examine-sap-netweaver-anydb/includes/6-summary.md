@@ -1,6 +1,4 @@
-
-
-You explored the SAP NetWeaver with AnyDB architecture for deploying SAP workloads on Azure virtual machines. You learned to recognize the architecture's components, and you examined a sample functional workflow.
+You explored the SAP NetWeaver with AnyDB architecture for deploying SAP workloads on Azure Virtual Machines. You learned to recognize the architecture's components, and you examined a sample functional workflow.
 
 ## Learn more
 

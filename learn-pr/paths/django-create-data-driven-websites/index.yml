@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
   ms.custom: vscode-azure-extension-update-completed
 title: Create data-driven websites by using the Python framework Django
 summary: |
@@ -34,8 +33,6 @@ roles:
 products:
 - azure
 - azure-app-service
-subjects:
-- development-tools
 modules:
 - learn.django.get-started
 - learn.django.models-data

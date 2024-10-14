@@ -4,11 +4,13 @@ title: Exercise - Build and store an image by using Azure Container Registry
 metadata:
   title: Exercise - Build and store an image by using Azure Container Registry
   description: Create a container registry, and then build and deploy a Docker image to Azure Container Registry.
-  ms.date: 03/28/2019
+  ms.date: 04/27/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10
 content: |

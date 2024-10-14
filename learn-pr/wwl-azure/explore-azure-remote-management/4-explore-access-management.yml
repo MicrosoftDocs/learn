@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-remote-management.explore-access-management
 title: Explore access management
 metadata:
   title: Explore access management
-  description: "Explore access management"
-  ms.date: 04/21/2023
+  description: "Manage access to Azure resources with role-based access control."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/4-explore-access-management.md)]

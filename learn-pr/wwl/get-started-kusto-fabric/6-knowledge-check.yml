@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "Which Kusto Query Language (KQL) keyword is used to limit the results of a query to a specified number of rows?"
+    choices:
+    - content: "`select`"
+      isCorrect: false
+      explanation: "Incorrect. `select` is a SQL keyword."
+    - content: "`take`"
+      isCorrect: true
+      explanation: "Correct. `take`  limits the results to a specified number of rows."
+    - content: "`project`"
+      isCorrect: false
+      explanation: "Incorrect. `project` is used to return specific columns."
+  - content: "Which Kusto Query Language (KQL) keyword is used to group and aggregate data?"
+    choices:
+    - content: "`group_by`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `group_by` keyword in KQL."
+    - content: "`aggregate`"
+      isCorrect: false
+      explanation: "Incorrect. There's no `aggregate` keyword in KQL."
+    - content: "`summarize`"
+      isCorrect: true
+      explanation: "Correct. Use the `summarize` keyword to group and aggregate data."
+  - content: "What is one of the main benefits of using Real-Time Intelligence in Microsoft Fabric?"
+    choices:
+    - content: "It requires complex data models and scripting to transform the data before analysis."
+      isCorrect: false
+      explanation: "Incorrect. Real-Time Intelligence allows analytical queries directly on raw data without the need for complex data models or scripting."
+    - content: "It allows ingestion of data from any source, in any data format."
+      isCorrect: true
+      explanation: "Correct. Real-Time Intelligence in Microsoft Fabric allows data ingestion from any source and in any format."
+    - content: "It only supports structured data formats."
+      isCorrect: false
+      explanation: "Incorrect. Real-Time Intelligence supports all types of data including structured, unstructured, and semi-structured data."
+  - content: "What is the role of a KQL database in Microsoft Fabric's Real-Time Intelligence?"
+    choices:
+    - content: "It's an upper-level entity that hosts a collection of tables, stored functions, materialized views, shortcuts, and datastreams."
+      isCorrect: true
+      explanation: "Correct. A KQL database hosts various entities and is used for data storage, streaming, and querying in Microsoft Fabric's Real-Time Intelligence."
+    - content: "It acts as a high-tech funnel that collects, changes, and sends data to different places automatically."
+      isCorrect: false
+      explanation: "Incorrect. This description refers to the Eventstream component, not the KQL database."
+    - content: "It's a customizable control panel that shows specific data in different sections or 'tiles.'"
+      isCorrect: false
+      explanation: "Incorrect. This description refers to the Real-Time Dashboards, not the KQL database."

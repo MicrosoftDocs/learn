@@ -7,3 +7,4 @@ In this module, you've learned how to send pipeline data to files and in various
  -  In PowerShell, you create JSON‑formatted data by using the **ConvertTo-Json** command. Unlike XML and CSV, however, JSON doesn't have an **Export** command for converting the data and creating an output file. Therefore, you must use **Out-File** or one of the text redirection operators to send the JSON data to a file.
  -  Windows PowerShell has the **ConvertTo-Html** command that you can use when you need to display your Windows PowerShell output in a web browser or send it to a process, like the **Send-MailMessage** command, which accepts HTML input.
  -  PowerShell provides various other options for controlling output.
+

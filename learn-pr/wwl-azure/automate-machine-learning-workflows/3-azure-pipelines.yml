@@ -3,12 +3,13 @@ uid: learn.wwl.automate-machine-learning-workflows.azure-pipelines
 title: Azure Pipelines
 metadata:
   title: Azure Pipelines
-  description: "Azure Pipelines"
-  ms.date: 08/08/2022
+  description: Azure Pipelines
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

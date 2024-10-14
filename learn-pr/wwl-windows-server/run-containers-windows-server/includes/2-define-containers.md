@@ -4,7 +4,7 @@ As Contoso migrates and virtualizes various workloads, an option to containerize
 
 A container is used to package an application along with all of its dependencies and abstract it from the host operating system (OS) in which it will run. Containers provide a lightweight development and runtime environment in which applications can be run and shared easily during development. Not only is a container isolated from the host OS, it's also isolated from other containers. Isolated containers provide a virtual runtime, which can also improve the security and reliability of the apps that run within them.
 
-Traditionally, a software application is developed to run on a supported processor, hardware, and OS platform. Software applications typically require additional coding to provide support for the different runtime platforms. With so many diverse computing systems, a more efficient software development and management platform is needed to support portability between multiple computing environments. Containers help provide such portability.
+Traditionally, a software application is developed to run on a supported processor, hardware, and OS platform. Software applications typically require additional coding to provide support for the different runtime platforms. With so many diverse computing systems, a more efficient software development and management platform are needed to support portability between multiple computing environments. Containers help provide such portability.
 
 **Benefits of using containers**
 
@@ -40,4 +40,4 @@ A container can host a monolithic application, but they were not designed for th
 
 While you can run a container and manage it much like a VM, it is recommended that you adopt the practices of separation of state and data and ensure your container can sustain being deleted. This will allow you to take advantage of other practices such as DevOps.
 
-In practice, you should store any data or state inside the container image and its layers. Instead, you should use external persistent storage that allows any container instance to access it.
+In practice, you should not store any data or state inside the container image and its layers. Instead, you should use external persistent storage that allows any container instance to access it.

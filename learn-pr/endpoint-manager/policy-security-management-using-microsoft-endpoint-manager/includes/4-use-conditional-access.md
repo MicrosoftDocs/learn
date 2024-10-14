@@ -21,9 +21,9 @@ With co-management, Intune evaluates every device in your network to determine h
 
    - This evaluation is pre-security breach and configuration-based.  
 
-   - For co-managed devices, Configuration Manager also does configuration-based evaluation. For example, required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
+   - For co-managed devices, Configuration Manager also does configuration-based evaluation; for example, required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
 
-1. Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender Advanced Threat Protection (formerly Windows Defender ATP) and other mobile threat defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, and then passes this information to Intune for real-time compliance evaluation.  
+1. Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender for Endpoint (formerly Microsoft Defender Advanced Threat Protection or Windows Defender ATP) and other mobile threat-defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, then passes this information to Intune for real-time compliance evaluation.  
 
    - This evaluation is post-security breach and incident-based.  
 
@@ -33,13 +33,13 @@ You need to configure the related compliance policies to drive Conditional Acces
 
 ### Device-based Conditional Access
 
-Intune and Azure Active Directory work together to make sure only managed and compliant devices can access email, Office 365 services, Software as a service (SaaS) apps, and on-premises apps. Additionally, you can set a policy in Azure Active Directory to only enable domain-joined computers or mobile devices that are enrolled in Intune to access Office 365 services.
+Intune and Microsoft Entra ID work together to make sure only managed and compliant devices can access email, Office 365 services, Software as a service (SaaS) apps, and on-premises apps. Additionally, you can set a policy in Microsoft Entra ID to only enable domain-joined computers or mobile devices that are enrolled in Intune to access Office 365 services.
 
-Intune provides device compliance policy capabilities that evaluate the compliance status of the devices. The compliance status is reported to Azure Active Directory that uses it to enforce the Conditional Access policy created in Azure Active Directory when the user tries to access company resources.
+Intune provides device compliance policy capabilities that evaluate the compliance status of the devices. The compliance status is reported to Microsoft Entra ID that uses it to enforce the Conditional Access policy created in Microsoft Entra ID when the user tries to access company resources.
 
 ### Conditional Access based on network access control
 
-Intune integrates with partners like Cisco ISE, Aruba Clear Pass, and Citrix NetScaler to provide access controls based on the Intune enrollment and the device compliance state.
+Intune integrates with partners like Cisco ISE, Aruba Clear Pass, and Citrix NetScaler to provide access controls based on the Intune enrollment and the device-compliance state.
 
 Users can be allowed or denied access to corporate Wi-Fi or VPN resources based on whether the device they're using is managed and compliant with Intune device compliance policies.
 
@@ -49,9 +49,9 @@ Intune partners with Mobile Threat Defense vendors that provide a security solut
 
 #### How the Intune and Mobile Threat Defense integration works
 
-When mobile devices have the Mobile Threat Defense agent installed, the agent sends compliance state messages back to Intune reporting when a threat is found on the mobile device itself.
+When mobile devices have the Mobile Threat Defense agent installed, the agent sends compliance state messages back to Intune, reporting when a threat is found on the mobile device itself.
 
-The Intune and mobile threat defense integration plays a factor in the Conditional Access decisions based on device risk.
+The Intune and Mobile Threat Defense integration plays a factor in the Conditional Access decisions based on device risk.
 
 ### Conditional Access for Windows PCs
 
@@ -59,9 +59,9 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 #### Corporate-owned
 
-- **Hybrid Azure AD joined:** This option is commonly used by organizations that are reasonably comfortable with how they're already managing their PCs through AD group policies or Configuration Manager.
+- **Microsoft Entra hybrid joined:** Organizations that are reasonably comfortable with how they're already managing their PCs through AD group policies or Configuration Manager commonly use this option.
 
-- **Azure AD domain joined and Intune management:** This scenario is for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Azure AD Join works well in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Azure AD and gets enrolled to Intune, which can be used as a Conditional Access criteria when accessing corporate resources.
+- **Microsoft Entra domain joined and Intune management:** This scenario is for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Microsoft Entra join works well in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Microsoft Entra ID and gets enrolled to Intune, which can be used as a Conditional Access criteria when accessing corporate resources.
 
 #### Bring your own device (BYOD)
 
@@ -69,4 +69,4 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 ## App-based Conditional Access
 
-Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
+Intune and Microsoft Entra ID work together to make sure only managed apps can access corporate e-mail or other Office 365 services.

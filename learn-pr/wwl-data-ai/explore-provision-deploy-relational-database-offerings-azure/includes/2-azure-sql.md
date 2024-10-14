@@ -10,9 +10,9 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 
 ## Compare Azure SQL services
 
-| | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
+| -- | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
 | - | - | - | - |
-| |![SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Azure SQL Database logo](../media/azure-sql-database.png) |
+| |![Screenshot of a SQL Server Azure VM logo.](../media/azure-sql-vm.png) | ![Screenshot of an Azure SQL Managed Instance logo.](../media/azure-sql-managed-instance.png) | ![Screenshot of an Azure SQL Database logo.](../media/azure-sql-database.png) |
 | Type of cloud service | IaaS | PaaS | PaaS |
 | SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
 | Architecture | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases. | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances. | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
@@ -45,11 +45,11 @@ Running SQL Server on virtual machines allows you to meet unique and diverse bus
 
 It's not always easy for businesses to switch their DBMS to a fully managed service. There may be specific requirements that must be satisfied in order to migrate to a managed service that requires making changes to the database and the applications that use it. For this reason, using virtual machines can offer a solution, but using them doesn't eliminate the need to administer your DBMS as carefully as you would on-premises.
 
-## Azure SQL Database Managed Instance
+## Azure SQL Managed Instance
 
 Azure SQL Managed instance effectively runs a fully controllable instance of SQL Server in the cloud. You can install multiple databases on the same instance. You have complete control over this instance, much as you would for an on-premises server. SQL Managed Instance automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases. You can find detailed information at [What is Azure SQL Managed Instance?](/azure/sql-database/sql-database-managed-instance).
 
-Managed instances depend on other Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Azure Active Directory for authentication, Azure Key Vault for Transparent Data Encryption (TDE) and a couple of Azure platform services that provide security and supportability features. The managed instances make connections to these services.
+Managed instances depend on other Azure services such as Azure Storage for backups, Azure Event Hubs for telemetry, Microsoft Entra ID for authentication, Azure Key Vault for Transparent Data Encryption (TDE) and a couple of Azure platform services that provide security and supportability features. The managed instances make connections to these services.
 
 All communications are encrypted and signed using certificates. To check the trustworthiness of communicating parties, managed instances constantly verify these certificates through certificate revocation lists. If the certificates are revoked, the managed instance closes the connections to protect the data.
 
@@ -65,7 +65,7 @@ Azure SQL Managed Instance enables a system administrator to spend less time on 
 
 Azure SQL Managed Instance has near 100% compatibility with SQL Server Enterprise Edition, running on-premises.
 
-Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Azure Active Directory (AD). SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Azure AD logins use the credentials associated with your current computer sign-in, and you don't need to provide them each time you connect to the server.
+Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Microsoft Entra ID. SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Microsoft Entra logins use the credentials associated with your current computer sign-in, and you don't need to provide them each time you connect to the server.
 
 ## Azure SQL Database
 
@@ -78,7 +78,7 @@ Azure SQL Database is available as a *Single Database* or an *Elastic Pool*.
 
 ### Single Database
 
-This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need more storage space, memory, or processing power. By default, resources are pre-allocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required.
+This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need more storage space, memory, or processing power. By default, resources are preallocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required.
 
 ### Elastic Pool
 
@@ -109,4 +109,4 @@ Advanced threat protection provides advanced security capabilities, such as vuln
 
 Auditing tracks database events and writes them to an audit log in your Azure storage account. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations.
 
-SQL Database helps secure your data by providing encryption that protects data that is stored in the database (*at rest*) and  while it is being transferred across the network (*in motion*).
+SQL Database helps secure your data by providing encryption that protects data that is stored in the database (*at rest*) and  while it's being transferred across the network (*in motion*).

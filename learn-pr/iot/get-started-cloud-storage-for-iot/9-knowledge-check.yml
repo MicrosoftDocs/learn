@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer needs to store time series data on a hot storage path. High availability and performance are critical, but they need the solution to be cost effective as well. The company must be able to use ASA to query the stored data as unstructured JSON. Which storage option should the developer select?"
+    choices:
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "Incorrect. Azure Blob storage is cost effective, but isn't the best option when performance is critical."
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Correct. Azure Cosmos DB is more expensive than Azure Blob storage or Azure Data Lake Gen2, but it's the only choice listed that supports all of the requirements."
+    - content: "Azure Data Lake Gen2"
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Lake Gen2 supports the high availability requirement, but is better suited to cold storage when a very large amount of storage space is required. Although it has been performance optimized on top of Azure Blob storage, it isn't critically fast, and it's more expensive than Azure Blob storage."
+  - content: "What are the names of the two storage paths in an IoT lambda architecture?"
+    choices:
+    - content: "High and low"
+      isCorrect: false
+      explanation: "Incorrect. Although data access rate requirements for the two paths could be thought of as high and low, these terms aren't the terms used to describe the two paths."
+    - content: "Hot and cold"
+      isCorrect: true
+      explanation: "Correct. The two data paths in the IoT lambda architecture are the hot path and cold path. The hot path storage is accessed frequently, often involving real-time data analytics, so performance is important. Cold path storage is for archiving large amounts of data for later analysis, so cost is important."
+    - content: "Large and small"
+      isCorrect: false
+      explanation: "Incorrect. Although the two paths typically vary in the amount of storage space required, these terms aren't the terms used to describe the two paths."

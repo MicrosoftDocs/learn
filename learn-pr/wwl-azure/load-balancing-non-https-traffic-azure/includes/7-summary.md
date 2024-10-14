@@ -2,8 +2,8 @@ In this module, you had a high-level overview of the different load-balancing op
 
 You now have the knowledge required to help you to load balance network traffic in your Azure networks.
 
-Now that you have reviewed this module, you should be able to:
 
- -  Understand options for load balancing
- -  Design and implement an Azure Load Balancer
- -  Implement a Traffic Manager profile
+## Learn more
+
+- [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/)
+- [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/)

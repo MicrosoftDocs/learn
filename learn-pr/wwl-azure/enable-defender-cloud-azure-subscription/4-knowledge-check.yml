@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-defender-cloud-azure-subscription.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/31/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team is tasked with enabling Microsoft Defender for Cloud on their Azure portal. They need to protect a specific subscription or workspace. After selecting 'Environment settings' in the Defender for Cloud menu, what should they do next?"
+    choices:
+    - content: "They should disable all of the plans for Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. Disabling all plans would not provide the protection they are seeking."
+    - content: "They should uninstall the extensions used by the plan."
+      isCorrect: false
+      explanation: "Incorrect. Uninstalling the extensions would stop data collection, not enable protection."
+    - content: "They should select the subscription or workspace they want to protect and then select 'Enable all' to enable all of the plans for Defender for Cloud."
+      isCorrect: true
+      explanation: "Correct. This action enables all plans and deploys the necessary monitoring components to the protected resources."
+  - content: "A team is tasked with securing their company's cloud applications. They are using Microsoft Defender for Cloud to unify security management, enhance security posture, and protect workloads. What should they do to ensure comprehensive end-to-end protection across their multicloud environment?"
+    choices:
+    - content: "Disconnect Azure subscriptions from Microsoft Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. Disconnecting Azure subscriptions from Microsoft Defender for Cloud would not enhance security monitoring or threat protection."
+    - content: "Avoid integrating Azure subscriptions for security monitoring."
+      isCorrect: false
+      explanation: "Incorrect. Not integrating Azure subscriptions would limit the ability to manage and ensure compliance across connected Azure subscriptions."
+    - content: "Connect Azure subscriptions to Microsoft Defender for Cloud."
+      isCorrect: true
+      explanation: "Correct. Connecting Azure subscriptions to Microsoft Defender for Cloud enhances security monitoring, manages compliance, and implements best practices for threat protection."
+  - content: "A security analyst is tasked with configuring and enabling Microsoft Defender for Cloud within an Azure subscription to monitor and protect cloud resources against security threats. What is the primary function of Microsoft Defender for Cloud?"
+    choices:
+    - content: "It provides a user interface for managing Azure resources."
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Defender for Cloud does have a user interface, its primary function is not to manage Azure resources."
+    - content: "It enables the automation of application deployment."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud is not primarily used for automating application deployment."
+    - content: "It monitors and protects cloud resources against security threats."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud is designed to monitor and protect cloud resources against security threats."
+  - content: "A security analyst is tasked with securing the company's cloud applications. They are considering using Microsoft Defender for Cloud to unify security management, enhance security posture, and protect workloads. What would be the primary benefit of connecting their Azure subscriptions to Microsoft Defender for Cloud?"
+    choices:
+    - content: "It allows for automatic updates of Azure applications."
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Defender for Cloud does provide many benefits, it does not automatically update Azure applications."
+    - content: "It provides a user-friendly interface for managing Azure subscriptions."
+      isCorrect: false
+      explanation: "Incorrect. Although Microsoft Defender for Cloud does have a user-friendly interface, its primary benefit is not in managing Azure subscriptions."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. Connecting Azure subscriptions to Microsoft Defender for Cloud enables automation and validation of environment creation and teardown, enhancing security and stability."

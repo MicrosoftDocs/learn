@@ -3,23 +3,33 @@ uid: learn.wwl.troubleshoot-premises-hybrid-networking
 metadata:
   title: Troubleshoot on-premises and hybrid networking
   description: "Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment."
-  ms.date: 06/08/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ms.subservice: networking
+  ai-usage: human-only
 title: Troubleshoot on-premises and hybrid networking
 summary: Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment.
 abstract: |
-  After completing this module, you will be able to:
-  *   Diagnose DHCP and DNS problems in on-premises contexts
-  *   Diagnose IP configuration and routing problems
-  *   Implement Packet Monitor to help diagnose network problems
-  *   Use Azure Network Watcher to troubleshoot Microsoft Azure virtual networks
+  After completing this module, you'll be able to:
+
+  -   Diagnose DHCP and DNS problems in on-premises contexts.
+
+  -   Diagnose IP configuration and routing problems.
+
+  -   Implement Packet Monitor to help diagnose network problems.
+
+  -   Use Azure Network Watcher to troubleshoot Microsoft Azure virtual networks.
 prerequisites: |
-  - Working knowledge of common Windows Server management tools
-  - Some experience of typical Windows Server workloads
-  - Basic knowledge of Windows PowerShell
+  -   Working knowledge of common Windows Server management tools
+
+  -   Some experience of typical Windows Server workloads
+
+  -   Basic knowledge of Windows PowerShell
 iconUrl: /training/achievements/7-troubleshoot-on-premises-and-hybrid-networking.svg
 levels:
 - intermediate

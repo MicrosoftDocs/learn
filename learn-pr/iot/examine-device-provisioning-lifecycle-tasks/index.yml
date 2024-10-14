@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.examine-device-provisioning-lifecycle-tasks
+metadata:
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  description: "This module introduces you to device enrollment processes and tools, X.509 certificate enrollment and rolling certificates, the deprovisioning process, and support for multi-tenancy."
+  ms.date: 01/08/2024
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: module-standard-task-based
+  ms.service: iot-hub
+title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+summary: This module introduces you to device enrollment processes and tools, X.509 certificate enrollment and rolling certificates, the deprovisioning process, and support for multi-tenancy.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe the device enrollment tools and processes.
+  - Describe how to configure and use certificates within the provisioning lifecycle.
+  - Describe the deprovisioning and disenrollment processes.
+  - Describe how to provision for multi-tenancy scenarios.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the phases of device provisioning, the concept of device enrollment and attestation, the high-level processes for device provisioning, and the tools used by developers to implement DPS tasks.
+iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-iot-hub
+- azure-iot-sdk
+subjects:
+- iot
+units:
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.introduction
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.review-device-enrollment-processes-tools
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-configure-verified-ca-certificates
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-roll-device-certificates
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-deprovisioning-process
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-manage-disenrollment
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-provision-for-multitenancy
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.knowledge-check
+- learn.wwl.examine-device-provisioning-lifecycle-tasks.summary
+badge:
+  uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge

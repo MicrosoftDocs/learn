@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/11/2021
   author: jamcneil
   ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to key Azure network security services
 prerequisites: |
   - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 

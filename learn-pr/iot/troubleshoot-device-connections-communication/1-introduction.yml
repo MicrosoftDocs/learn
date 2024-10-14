@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-device-connections-communication.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Module introduction"
+  ms.date: 12/06/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

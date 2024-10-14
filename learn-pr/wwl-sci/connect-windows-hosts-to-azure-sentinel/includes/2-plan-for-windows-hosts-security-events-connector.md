@@ -4,8 +4,10 @@ Based on your organization requirements, you have the option of installing an ag
 - Windows Security Events via AMA Connector
 - Security Events via Legacy Agent Connector
 
-The second option is to configure a Windows Event Collector device to receive events from the Windows devices. The Windows Event Collector device would then forward events to Microsoft Sentinel with the **Windows Forwarded Events connector**.  
+The third option is to configure a Windows Event Collector device to receive events from the Windows devices. The Windows Event Collector device would then forward events to Microsoft Sentinel with the **Windows Forwarded Events connector**.  
 
+ > [!NOTE]
+ > All three connectors are installed from corresponding Content Hub solutions.
 
 ## Windows Security Events via AMA Connector vs. Security Events via Legacy Agent Connector
 
@@ -18,7 +20,7 @@ Benefits:
 - Security improvements
 
 Limitations:
-- The Azure Monitor Agent is released in preview and is supported with the CSPM plan and Microsoft Defender for Servers Plan 2.
+ - None.
 
 Requirements:
 - non-Azure VM's/devices require Azure Arc.

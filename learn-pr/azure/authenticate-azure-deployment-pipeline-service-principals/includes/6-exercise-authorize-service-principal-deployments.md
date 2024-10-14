@@ -16,7 +16,7 @@ In the previous exercise, you signed in by using the service principal and then 
 
 ::: zone pivot="cli"
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
+1. In Visual Studio Code's Azure Cloud Shell (bash) terminal, sign in to Azure by running the following command: 
 
     ```azurecli
     az login
@@ -28,7 +28,7 @@ In the previous exercise, you signed in by using the service principal and then 
 
 ::: zone pivot="powershell"
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
+1. In Visual Studio Code's Azure Cloud Shell (PowerShell) terminal, sign in to Azure by running the following command:
 
     ```azurepowershell
     Connect-AzAccount
@@ -177,21 +177,17 @@ Use the Azure portal to inspect the resources that you deployed and to inspect t
 
 1. Select **ToyWebsite**.
 
-1. In the **Overview** section, you can see that one deployment has succeeded.
- 
-    :::image type="content" source="../media/6-deployment.png" alt-text="Screenshot of the Azure portal resource group overview pane, with a section displaying a successful deployment." border="true":::
+1. Select **Deployments** to see the successful deployment.
 
-1. Next to **Deployments**, select **1 Succeeded** to see the details of the deployment.
-
-    :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
+    :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group Deployments pane, displaying the successful deployment." border="true":::
 
    You might also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. Application Insights creates this deployment automatically.
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
+1. Select the **main** deployment to see what resources were deployed, and then expand **Deployment details**. 
  
    In this case, the App Service plan, the app, and the Application Insights instance are listed.
 
-    :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
+    :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal deployments overview pane for the main deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
 
    Notice that there's nothing unusual about this deployment. Even though a service principal initiated it, it's just like any other Bicep deployment.
 

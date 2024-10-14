@@ -1,20 +1,20 @@
-When setting up an Azure Kubernetes Service (AKS) cluster, choosing a network plugin is mandatory for the cluster to be operational. The role of a network plugin is to configure network connectivity so pods running on anywhere in the cluster can communicate with each other.
+When you set up an Azure Kubernetes Service (AKS) cluster, it's important to consider the different options of network plugins for your business. Network plugins are required to configure network connectivity so applications or pods in the cluster can communicate with each other.
 
 ## Example scenario
 
-Suppose you are the network administrator for Tailwind Traders, a traditional brick-and-mortar retailer, which has found success selling online. The company sees several opportunities to improve its e-commerce website; for example, converting from a traditional monolithic application to a microservices architecture.
+Let's say you're a network administrator for Tailwind Traders, a traditional brick-and-mortar retailer. You've shifted to selling online and have built your site on Azure. The company sees several opportunities to improve its e-commerce website, including converting from a traditional monolithic application to a microservices architecture.
 
-Tailwind Traders suspects that deploying the microservices in AKS clusters can help with container orchestration, but it needs help understanding which network plugin to use for the AKS clusters.
+Tailwind Traders suspects that deploying the microservices in AKS clusters can help with container orchestration. However, you're unsure of which network plugin to choose for your AKS clusters.
 
-## What will we be doing?
+## What is covered?
 
-By the end of this module, you will:
+By the end of this module, you'll understand:
 
-* Understand what a Kubernetes network plugin is
-* Understand the pros, cons, and limitations of kubenet
-* Understand the pros, cons, and limitations of Azure CNI
-* Understand the key decision criteria when selecting a plugin
+* What a Kubernetes network plugin is
+* The pros, cons, and limitations of kubenet (basic)
+* The pros, cons, and limitations of Azure CNI (advanced)
+* Key decision criteria for choosing a network plugin
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to choose the networking plugin for AKS that best addresses your business scenario and network constraints.
+By the end of this module, you're able to determine the tradeoffs and choose the best networking plugin on AKS that addresses your business scenario and network constraints.

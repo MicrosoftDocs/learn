@@ -4,11 +4,10 @@ title: Data store - The storage element
 metadata:
   title: Data store - The storage element
   description: The data store element in a data-flow diagram
-  ms.date: 02/28/2020
+  ms.date: 08/03/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-data-store-the-storage-element.md)]
@@ -17,12 +16,12 @@ quiz:
   questions:
   - content: "Which one of these actions best describes a data store?"
     choices:
-    - content: "Web portal asks a user for their credentials"
+    - content: "A web portal asks a user for their credentials."
       isCorrect: false
-      explanation: "The act of handling input and output is a process-related event"
-    - content: "Cache stores service-related cookies for a user"
+      explanation: "The act of handling input and output is a process-related event."
+    - content: "A cache stores service-related cookies for a user."
       isCorrect: true
-      explanation: "The act of storing data is a data store related event"
-    - content: "Third-party API sends requested data to its requestor"
+      explanation: "The act of storing data is a data store related event."
+    - content: "A third-party API sends requested data to its requestor."
       isCorrect: false
-      explanation: "The act of transmitting data is a data-flow related event"
+      explanation: "The act of transmitting data is a data-flow related event."

@@ -4,11 +4,10 @@ title: Learn how it works
 metadata:
   title: Learn how it works
   description: "Learn how it works"
-  ms.date: 04/13/2023
+  ms.date: 04/25/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-it-works.md)]

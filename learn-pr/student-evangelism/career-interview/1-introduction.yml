@@ -6,9 +6,8 @@ metadata:
   description: This unit gives a high-level explanation of interviews and the importance of knowing that there's more than one type of interview to master.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/19/2021
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

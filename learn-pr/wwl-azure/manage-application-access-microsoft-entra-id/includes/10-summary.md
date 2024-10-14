@@ -1,0 +1,1 @@
+This module covered managing application access in Microsoft Entra ID, including controlling enterprise app access, managing app registrations and permissions, utilizing service principals, and configuring the Entra Application Proxy for secure access.

@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-app-scaling-keda.4-concept-deploy-app
 metadata:
-  title: Deploy event driven app
-  description: Deploy a service that connects to the Azure Redis Cache and reads messages from a list
-  ms.date: 4/14/2021 
-  author: pplavetzki
-  ms.author: paplavet 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Deploy an event-driven application
+  description: Discuss how to deploy a service that connects to the Azure Redis Cache and reads messages from a list.
+  ms.date: 06/03/2024 
+  author: schaffererin
+  ms.author: schaffererin 
+  ms.topic: unit
 durationInMinutes: 5
 title: Concept - Deploy application
 content: |

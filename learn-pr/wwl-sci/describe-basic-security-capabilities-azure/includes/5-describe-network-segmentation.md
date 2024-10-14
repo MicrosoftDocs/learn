@@ -14,10 +14,10 @@ Assume breach is a principle of the Zero Trust model so the ability to contain a
 Network segmentation can secure interactions between perimeters. This approach can strengthen an organization's security posture, contain risks in a breach, and stop attackers from gaining access to an entire workload.
 
 ### Azure Virtual Network
-Azure Virtual Network (VNet) is the fundamental building block for your organization's private network in Azure. VNet is similar to a traditional network that you'd operate in your own data center, but brings with it additional benefits of Azure's infrastructure such as scale, availability, and isolation.
+Azure Virtual Network (VNet) is the fundamental building block for your organization's private network in Azure. A virtual network is similar to a traditional network that you'd operate in your own data center, but brings with it additional benefits of Azure's infrastructure such as scale, availability, and isolation.
 
-Azure VNet enables organizations to segment their network. Organizations can create multiple VNets per region per subscription, and multiple smaller networks (subnets) can be created within each VNet.
+Azure virtual network enables organizations to segment their network. Organizations can create multiple virtual networks per region per subscription, and multiple smaller networks (subnets) can be created within each virtual network.
 
-VNets provide network level containment of resources with no traffic allowed across VNets or inbound to the VNet, by default.   Communication needs to be explicitly provisioned. This enables more control over how Azure resources in a VNet communicate with other Azure resources, the internet, and on-premises networks.
+VNets provide network level containment of resources with no traffic allowed across VNets or inbound to the virtual network, by default.   Communication needs to be explicitly provisioned. This enables more control over how Azure resources in a virtual network communicate with other Azure resources, the internet, and on-premises networks.
 
-:::image type="content" source="../media/azure-virtual-networks.png" alt-text="Image depicting network segmentation using Azure Virtual Networks.":::
+:::image type="content" source="../media/azure-virtual-networks.png" alt-text="Diagram depicting network segmentation using Azure Virtual Networks.":::

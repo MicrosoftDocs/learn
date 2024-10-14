@@ -4,11 +4,13 @@ title: Explore the client API to interact with Redis
 metadata:
   title: Explore the client API to interact with Redis
   description: Explore the StackExchange.Redis API to interact with Redis
-  ms.date: 09/24/2018
+  ms.date: 03/11/2024
   author: flang-msft
   ms.author: franlanglois
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10
 content: |

@@ -4,14 +4,14 @@ title: Exercise - Read and query items
 metadata:
   unitType: exercise
   title: Exercise - Read and query items
+  ms.custom:
+    - devx-track-dotnet
   description: |
-    Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to point read items and perform straightforward queries.
-  sandbox: true
+    Point read items and perform straightforward queries using the Microsoft.Azure.Cosmos .NET library from NuGet.
   author: seesharprun
   ms.author: sidandrews
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.topic: unit
+  ms.date: 10/09/2024
 durationInMinutes: 9
 content: |
   [!include[](includes/6-exercise-read-query.md)]

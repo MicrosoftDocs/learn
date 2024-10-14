@@ -4,11 +4,13 @@ title: Exercise - Create a function app in the Azure portal
 metadata:
   title: Exercise - Create a function app in the Azure portal
   description: Create a function app in the Azure portal
-  ms.date: 04/19/2023
+  ms.date: 10/05/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-javascript-powershell
 azureSandbox: false
 durationInMinutes: 5

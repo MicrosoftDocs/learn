@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Analyze virtual machine agent health
   description: "Write KQL queries to retrieve and transform data from the heartbeat table in Azure Monitor Log Analytics. Obtain insights about the status of virtual machines in your Azure environment."
-  ms.date: 08/08/2022
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-list-active-machines-not-sending-logs.md)]

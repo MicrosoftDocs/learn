@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check for Configure and use secret scanning in your GitHub repository module
-  ms.date: 11/25/2021
-  author: lucie-docs
-  ms.author: lucielenaour
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Knowledge check for configuring and using secret scanning in GitHub.
+  ms.date: 04/30/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -18,34 +17,34 @@ quiz:
   questions:
   - content: "What do you need to do if you want to change the settings for secret scanning on a public repository?"
     choices:
-    - content: "Enable secret scanning on the repository"
+    - content: "Enable secret scanning on the repository."
       isCorrect: false
-      explanation: "This is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository."
-    - content: "Switch the repository to a private one with GitHub Advanced Security"
+      explanation: "This answer is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository."
+    - content: "Switch the repository to a private one with GitHub Advanced Security."
       isCorrect: true
       explanation: "Correct! You can change the settings for secret scanning only on private repositories with GitHub Advanced Security."
-    - content: "Get admin permissions on the repository"
+    - content: "Get admin permissions on the repository."
       isCorrect: false
-      explanation: "This is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository no matter what permissions you have on the repository."
+      explanation: "This answer is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository no matter what permissions you have on the repository."
   - content: "Where can you configure the recipients of secret scanning alerts?"
     choices:
-    - content: "In the Security and analysis settings of a repository"
+    - content: "In the Code security and analysis settings of a repository"
       isCorrect: true
-      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of a repository Security and analysis settings."
-    - content: "In the Manage access settings of a repository"
+      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of repository Code security and analysis settings."
+    - content: "In the Manage Access settings of a repository"
       isCorrect: false
-      explanation: "This is incorrect. The Manage access settings of a repository enable you to manage user permissions over the repository."
+      explanation: "This answer is incorrect. The Manage Access settings of a repository enable you to manage user permissions over the repository."
     - content: "In the Watch settings of a repository"
       isCorrect: false
-      explanation: "This is incorrect. The Watch settings of a repository enable you to manage the notifications you receive for the repository."
+      explanation: "This answer is incorrect. The Watch settings of a repository enable you to manage the notifications you receive for the repository."
   - content: "How many custom patterns can you create for an organization?"
     choices:
     - content: "100"
       isCorrect: false
-      explanation: "This is incorrect. You can create 100 custom patterns for a private repository."
+      explanation: "This answer is incorrect. You can create 100 custom patterns for a private repository."
     - content: "5,000"
       isCorrect: false
-      explanation: "This is incorrect. You cannot create 5,000 custom patterns for an organization."
+      explanation: "This answer is incorrect. You can't create 5,000 custom patterns for an organization."
     - content: "500"
       isCorrect: true
       explanation: "Correct! You can create up to 500 custom patterns for an organization."

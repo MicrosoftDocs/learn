@@ -23,5 +23,6 @@ By the end of this module, you'll be able to author Bicep templates that are cle
 You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
 
 To follow along with the exercises in the module, you'll need the following:
-- [Visual Studio Code](https://code.visualstudio.com), installed locally
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally
+
+- [Visual Studio Code](https://code.visualstudio.com) installed locally
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally

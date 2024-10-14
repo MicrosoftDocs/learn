@@ -2,17 +2,16 @@ As the solution architect for the manufacturing company, you now want to start m
 
 In this unit, you'll configure a network security group and security rules to restrict network traffic to specific servers. You want your app server to be able to connect to your database server over HTTP. You don't want the database server to be able to use HTTP to connect to the app server.
 
-![Diagram of exercise scenario network security groups.](../media/3-exercise-first-task.svg)
+:::image type="content" source="../media/3-exercise-first-task.svg" alt-text="Diagram of exercise scenario network security groups.":::
 
 ## Create a virtual network and network security group
 
-First, you'll create the virtual network, and subnets for your server resources. You'll then create a network security group.
-
+First, you'll create the virtual network and subnets for your server resources. You'll then create a network security group.
 
 1. In Azure Cloud Shell, run the following command to assign the sandbox resource group to the variable `rg`:
 
     ```azurecli
-    rg=<rgn>[sandbox resource group name]</rgn>
+    rg="<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. To create the **ERP-servers** virtual network and the **Applications** subnet, run the following command in Cloud Shell:
@@ -48,7 +47,7 @@ First, you'll create the virtual network, and subnets for your server resources.
 
 Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy **AppServer** to the **Applications** subnet, and **DataServer** to the **Databases** subnet. Add the VM network interfaces to the **ERP-SERVERS-NSG** network security group. Then, to test your network security group, use these VMs.
 
-1. To build the **AppServer** VM, in Cloud Shell, run the following command. For the admin account, replace `<password>` with a complex password.
+1. To build the **AppServer** VM, run the following command in Cloud Shell. For the admin account, replace `<password>` with a complex password.
 
     ```azurecli
     wget -N https://raw.githubusercontent.com/MicrosoftDocs/mslearn-secure-and-isolate-with-nsg-and-service-endpoints/master/cloud-init.yml && \
@@ -58,7 +57,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --vnet-name ERP-servers \
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --size Standard_DS1_v2 \
          --generate-ssh-keys \
         --admin-username azureuser \
@@ -67,7 +66,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --admin-password <password>
     ```
 
-1. To build the **DataServer** VM, in Cloud Shell, run the following command. For the admin account, replace `<password>` with a complex password.
+1. To build the **DataServer** VM, run the following command in Cloud Shell. For the admin account, replace `<password>` with a complex password.
 
     ```azurecli
     az vm create \
@@ -77,7 +76,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
         --size Standard_DS1_v2 \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --generate-ssh-keys \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
@@ -95,7 +94,7 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --output table
     ```
 
-   When your VM creation is complete, you should see the following output.
+   When your VM creation is complete, you should see the following output:
 
     ```output
     Name        Provisioned    Power
@@ -187,7 +186,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
     ssh azureuser@$APPSERVERIP -o ConnectTimeout=5
     ```
 
-    The network security group rule might take a minute or two to take effect. If you receive a connection failure message, try again.
+    The network security group rule might take a minute or two to take effect. If you receive a connection failure message, wait a moment and try again.
 
 1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, enter `yes`.
 
@@ -325,4 +324,4 @@ Next, create an app security group for database servers so that all servers in t
 
 1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press <kbd>Ctrl+C</kbd>.
 
-You've now confirmed that your network security group rule works using an app security group, in the same way as when you used a source IP address. If we were to add additional data servers, you could easily ensure they have the proper network security by adding the new servers to the **ERP-DB-SERVERS-ASG**.
+You've now confirmed that your network security group rule works using an app security group in the same way as when you used a source IP address. If we added additional data servers, we could easily ensure they have the proper network security by adding the new servers to the **ERP-DB-SERVERS-ASG**.

@@ -3,13 +3,15 @@ uid: learn.wwl.create-azure-cognitive-search-solution.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 07/30/2021
+  description: Summary
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/11/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

@@ -4,11 +4,10 @@ title: Configure a GitHub Actions workflow
 metadata:
   title: Configure a GitHub Actions workflow
   description: Learn common configurations within a workflow file. See workflow examples and best practice recommendations for action stability and security.
-  ms.date: 04/01/2021
+  ms.date: 10/06/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2c-configure-github-actions-workflow.md)]

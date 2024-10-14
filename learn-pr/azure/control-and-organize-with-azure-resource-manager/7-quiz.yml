@@ -4,11 +4,10 @@ title: Check your Knowledge
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 07/28/2022
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: 'Knowledge check'

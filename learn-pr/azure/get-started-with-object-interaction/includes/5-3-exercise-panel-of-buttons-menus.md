@@ -9,35 +9,35 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/button-object-selected.png" alt-text="Screenshot of Unity with newly created Buttons object selected and positioned." lightbox="../media/button-object-selected.png":::
 
-2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab onto the **Buttons** object, then right-click the PressableRoundButton and select **Duplicate** to create a copy, repeat until you've a total of three PressableRoundButton objects under **Buttons**:
+2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableCylinderButton** prefab onto the **Buttons** object, then right-click the PressableCylinderButton and select **Duplicate** to create a copy, repeat until you've a total of three PressableCylinderButton objects under **Buttons**:
 
-    :::image type="content" source="../media/pressable-round-button.png" alt-text="Screenshot of Unity with newly added PressableRoundButton prefabs." lightbox="../media/pressable-round-button.png":::
+    :::image type="content" source="../media/pressable-cylinder-button.png" alt-text="Screenshot of Unity with newly added PressableRoundButton prefabs." lightbox="../media/pressable-cylinder-button.png":::
 
-3. In the Hierarchy pane, select the **Buttons** object, and then in the Inspector pane, select **Add Component** to add the **GridObjectCollection** component. Configure it as follows:
+    A window will prompt you to import TextMesh Pro. Select the first option to 'Import TMP Essentials'.
 
-    * **Sort Type**: Child Order
-    * **Layout**: Horizontal
-    * **Cell Width**: 0.2
-    * **Anchor**: Middle Left
+3. In the Hierarchy pane, select the **Buttons** object, and then in the Inspector pane, select **Add Component** to add the **Object Bar** component. Configure it as follows:
 
-   Select **Update Collection** to update the position of the **Buttons** child objects:
+    * **Object Bar Flow Direction**: Horizontal
+    * **Spacing Between**: X = 0.2, Y = 0
 
-    :::image type="content" source="../media/grid-object-collection.png" alt-text="Screenshot of Unity Buttons object with GridObjectCollection component added, configured, and applied." lightbox="../media/grid-object-collection.png":::
+   Assign each object under **Buttons** to **Object Bar Objects** list on the **Object Bar** component:
 
-4. In the Hierarchy pane, name the buttons **Hints**, **Explode**, and **Reset**. For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, and in the Inspector pane, change the respective **TextMeshPro - Text** component text to match the button names:
+    :::image type="content" source="../media/object-bar.png" alt-text="Screenshot of Unity Buttons object with GridObjectCollection component added, configured, and applied." lightbox="../media/object-bar.png":::
+
+4. In the Hierarchy pane, name the buttons **Hints**, **Explode**, and **Reset**. For each button, change the **SpeechRecognitionKeyword** property under **Advanced StatefulInteractable Settings** in the **Pressable Button** component to match the button names::
 
     :::image type="content" source="../media/button-text-label.png" alt-text="Screenshot showing button text labels configured." lightbox="../media/button-text-label.png":::
 
-5. When all three buttons have Text Mesh Pro defined, collapse the Buttons object's child objects. In the Hierarchy pane, select the **Hints** button object, and then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
+5. In the Hierarchy pane, select the **Hints** button object, and then in the Inspector window, configure the **PressableButton.OnClicked ()** event as follows:
 
     * Assign the **RoverAssembly** object to the **None (Object)** field
     * From the **No Function** dropdown list, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be run when the event is triggered
 
     :::image type="content" source="../media/hints-button-object.png" alt-text="Screenshot of Hints button object OnClick event configured." lightbox="../media/hints-button-object.png":::
 
-6. In the Hierarchy pane, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
+6. In the Hierarchy pane, select the **Explode** button object, then in the Inspector window, configure the **PressableButton.OnClicked ()** event as follows:
     * Assign the **RoverAssembly** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered
+    * From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView()** to set this function as the action to be executed when the event is triggered
 
     :::image type="content" source="../media/explode-button-object.png" alt-text="Screenshot of Unity with Explode button object OnClick event configured." lightbox="../media/explode-button-object.png":::
 
@@ -49,25 +49,25 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/explode-button-pressed.png" alt-text="Screenshot of Unity Play mode split view with Explode button being pressed." lightbox="../media/explode-button-pressed.png":::
 
+    We will implement the **Reset** button later in the module.
+
 ## Create a dynamic menu that follows the user
 
-1. In the Project pane, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
+1. In the Project pane, navigate to the **Packages** > **MRTK UX Components** > **Near Menu** folder, click-and-drag the **NearMenuBase** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
     * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
     * Check the checkbox next to the **RadialView** Solver component so it's enabled by default
 
     :::image type="content" source="../media/near-menu-prefab.png" alt-text="Screenshot of Unity with newly added near menu prefab selected." lightbox="../media/near-menu-prefab.png":::
 
-2. In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:
+2. In the Hierarchy window, rename the object to **Menu**, then expand its **MenuContent-HorizontalLayout (Menu and Pin) > Buttons-GridLayout (Buttons)** child object to reveal the three buttons:
 
     :::image type="content" source="../media/menu-object-selected.png" alt-text="Screenshot of Unity with Menu object selected and ButtonCollection object expanded." lightbox="../media/menu-object-selected.png":::
 
-3. Rename the first button in the ButtonCollection to Indicator, then in the Inspector pane, configure the Button Config Helper (Script) component as follows:
+3. Rename the first button in the Buttons-GridLayout (Buttons) to Indicator, then in the Hierarchy window, configure the Indicator game object as follows:
 
-    * Change the **Main Label Text** to match the name of the button
-    * Assign the Indicator object that looks like a chevron, to the None (Object) field
-    * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
-    * Verify that the argument checkbox is **checked**
-    * Change the **Icon** to the 'search' icon
+    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
+    * Configure the **PressableButton.OnClicked()** event by assigning the **Indicator** object that looks like a chevron, to the **None (Object)** field and selecting **GameObject > SetActive (bool)** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the search icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 130'
 
     :::image type="content" source="../media/indicator-button-object.png" alt-text="Screenshot of Unity with Indicator button object Button Config Helper configured." lightbox="../media/indicator-button-object.png":::
 
@@ -78,13 +78,11 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/directional-indicator-controller.png" alt-text="Screenshot of Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added." lightbox="../media/directional-indicator-controller.png":::
 
-5. Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+5. Rename the second button to **TapToPlace**, then in the Hierarchy window, configure the TapToPlace game object as follows:
 
-    * Change the **Main Label Text** to match the name of the button
-    * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
-    * Verify that the argument checkbox is **checked**
-    * Change the **Icon** to the 'hand with ray' icon
+    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
+    * Configure the **PressableButton.OnClicked()** event by assigning the RoverExplorer > **RoverAssembly** object to the **None (Object)** field and selecting **TapToPlace** > **bool Enabled** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the hand icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 13'
 
     :::image type="content" source="../media/tap-to-place-button.png" alt-text="Screenshot of Unity with TapToPlace button object Button Config Helper configured." lightbox="../media/tap-to-place-button.png":::
 

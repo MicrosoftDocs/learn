@@ -3,11 +3,10 @@ uid: learn.language.rust-create-program.1-program-structure
 metadata:
   title: Understand the basic Rust program structure
   description: Review the basic structure of a Rust program, including the main function, and the println! macro.
-  ms.date: 09/20/2021
+  ms.date: 12/05/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Understand the basic Rust program structure
 durationInMinutes: 4

@@ -1,4 +1,4 @@
-Azure DevOps users will authenticate against Azure Active Directory when accessing the Azure DevOps portal.
+Azure DevOps users will authenticate against Microsoft Entra ID when accessing the Azure DevOps portal.
 
 After being successfully authenticated, they won't have to provide any credentials to Azure Artifacts itself. The roles for the user, based on its identity, or team and group membership, are for authorization.
 
