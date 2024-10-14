@@ -3987,3 +3987,8 @@ achievements:
   title: Introduction to data protection and privacy
   summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
   iconUrl: /training/achievements/introduction-data-protection-privacy.svg
+- uid: learn.wwl.responsible-generative-ai.badge
+  type: badge
+  title: Fundamentals of Responsible Generative AI
+  summary: Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation.
+  iconUrl: /learn/achievements/generic-badge.svg
