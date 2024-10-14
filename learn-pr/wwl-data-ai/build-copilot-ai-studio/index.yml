@@ -8,6 +8,7 @@ metadata:
   ms.date: 02/21/2024
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Build a RAG-based copilot solution with your own data using Azure AI Studio

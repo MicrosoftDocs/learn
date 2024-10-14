@@ -14,6 +14,7 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric
+    - ai-learning-hub
 title: Preprocess data with Data Wrangler in Microsoft Fabric
 summary: Data Wrangler serves as a comprehensive tool for preprocessing data. It enables users to clean data, handle missing values, and transform features to build machine learning models.
 abstract: |
