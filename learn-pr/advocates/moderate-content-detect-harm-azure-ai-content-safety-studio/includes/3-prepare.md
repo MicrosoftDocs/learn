@@ -27,7 +27,7 @@ You access the Content Safety capabilities within Azure AI Studio.
 
 1. In [Azure AI Studio](https://ai.azure.com/), under **Get started**, select **AI Services**.
 1. On the **Integrate with generative AI page**, select **Content Safety**.
-1. On the **Content Safety** page, you can you can view the features that you'll use in the exercises of this module.
+1. On the **Content Safety** page, you can view the features that you'll use in the exercises of this module.
 
 :::image type="content" source="../media/content-safety-capabilities.png" alt-text="Screenshot of the Content Safety page of Azure AI Studio. It shows the built-in features of moderate text content, groundedness detection, protected material detection, and prompt shields." lightbox="../media/content-safety-capabilities.png":::
 

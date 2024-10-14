@@ -17,4 +17,4 @@ Every harm category that the service applies also comes with a severity level. T
 
 The severity scale ranges from 0 to 7. The text model supports both the full scale of 0 to 7 and a trimmed scale of 0, 2, 4, and 6. The current version of the image model supports only the trimmed scale.
 
-To learn more, see [Severity levels](aka.ms/severity-levels).
+To learn more, see [Severity levels](/azure/ai-services/content-safety/concepts/harm-categories?tabs=definitions#severity-levels).

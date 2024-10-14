@@ -16,7 +16,7 @@ First, test some positive customer feedback:
 
 The content is **Allowed**, and the severity level is **Safe** across all categories. You probably expected this result, given the positive and unharmful sentiment of the customer's feedback.
 
-:::image type="content" source="../media/text-moderation-allow-results.png" alt-text="Screenshot of the results for text moderation. The content is allowed. The severity level for all categories is Safe. The threshold settings for all categories is Medium. And the judgment for all categories is Allowed."  lightbox="../media/text-moderation-allow-results.png":::
+:::image type="content" source="../media/text-moderation-allow-results.png" alt-text="Screenshot of the results for text moderation. The content is allowed. The severity level for all categories is Safe. The threshold setting for all categories is Medium. And the judgment for all categories is Allowed."  lightbox="../media/text-moderation-allow-results.png":::
 
 ## Harmful content
 
