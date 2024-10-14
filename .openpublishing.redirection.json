@@ -33219,6 +33219,11 @@
       "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/6-operate-responsibly.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/2-plan-responsible-ai.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
