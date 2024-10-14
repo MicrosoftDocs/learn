@@ -21,7 +21,7 @@ Azure AI Studio supports running both manual and automated evaluations. Manual e
 
 Automated evaluation enables you to generate outputs for each data row in your test dataset. You can choose one or more built-in evaluation metrics to assess the output for different qualities.
 
-:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results in Azure AI Studio. There are four charts which display the average score and counts for coherence, fluency, groundedness, and relevance. ":::
+:::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results in Azure AI Studio. There are four charts which display the average score and counts for coherence, fluency, groundedness, and relevance. There is a tab which provides the risk and safety counts for the risk and safety evaluators. There is also a drop-down that can be used to apply filters.":::
 
 ## Evaluate with the Azure AI Evaluation SDK
 

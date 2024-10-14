@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.evaluate-generative-ai-apps.interpret-evaluation-results
-title: Interpreting evaluation results
+title: Interpret evaluation results
 metadata:
-  title: Interpreting evaluation results
+  title: Interpret evaluation results
   description: Learn best practices for interpreting the results of your generative AI application evaluations.
   ms.date: 10/11/2024
   author: aprilspeight
