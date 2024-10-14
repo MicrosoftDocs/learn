@@ -34,7 +34,6 @@ units:
 - learn.wwl.use-azure-resource-manager.introduction
 - learn.wwl.use-azure-resource-manager.review-benefits
 - learn.wwl.use-azure-resource-manager.review-terminology
-- learn.wwl.use-azure-resource-manager.create-resource-groups
 - learn.wwl.use-azure-resource-manager.reorganize-azure-resources
 - learn.wwl.use-azure-resource-manager.remove-resources-resource-groups
 - learn.wwl.use-azure-resource-manager.determine-resource-limits
