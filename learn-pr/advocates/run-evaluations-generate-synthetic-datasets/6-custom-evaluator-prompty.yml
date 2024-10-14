@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-evaluations-generate-synthetic-datasets.custom-evaluator-prompty
-title: Create a content filter
+title: Exercise - Custom evaluator with Prompty
 metadata:
-  title: Create a content filter
+  title: Exercise - Custom evaluator with Prompty
   description: Learn how to create a custom prompt-based evaluator with Prompty.
   ms.date: 10/13/2024
   author: aprilspeight

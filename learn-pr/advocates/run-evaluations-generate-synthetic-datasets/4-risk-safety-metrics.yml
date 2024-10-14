@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-evaluations-generate-synthetic-datasets.risk-safety-metrics
-title: Upload data and create an index
+title: Exercise - Risk and safety metrics
 metadata:
-  title: Upload data and create an index
+  title: Exercise - Risk and safety metrics
   description: Learn how to run an evaluation using risk and safety metrics.
   ms.date: 10/13/2024
   author: aprilspeight

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-evaluations-generate-synthetic-datasets.generate-synthetic-dataset
-title: Run and compare automated evaluations
+title: Exercise - Generate a synthetic dataset
 metadata:
-  title: Run and compare automated evaluations
+  title: Exercise - Generate a synthetic dataset
   description: Learn how to generate a synthetic dataset.
   ms.date: 10/13/2024
   author: aprilspeight
