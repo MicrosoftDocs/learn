@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.evaluate-generative-ai-apps.role-data-evaluations
+title: The role of data in evaluations
+metadata:
+  title: The role of data in evaluations
+  description: Learn about the role of data in generative AI evaluations.
+  ms.date: 10/11/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-role-data-evaluations.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.evaluate-generative-ai-apps
+metadata:
+  ms.author: apspeigh
+  author: aprilspeight
+  ms.date: 10/11/2024
+  title: Evaluating generative AI applications
+  description: Learn the fundamental concepts of evaluating generative AI applications.
+  ms.service: artificial-intelligence
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
+title: Evaluating generative AI applications
+summary: Learn the fundamental concepts of evaluating generative AI applications.
+abstract:  |
+  By the end of this module, you're able to:
+  - Apply best practices for choosing evaluation data
+  - Understood the purpose of and types of synthetic data for evaluation
+  - Comprehend the scope of the built-in metrics
+  - Choose the appropriate metrics based on your AI system use case
+  - Understand how to interpret evaluation results
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.evaluate-generative-ai-apps.introduction
+- learn.evaluate-generative-ai-apps.evaluate-generative-ai
+- learn.evaluate-generative-ai-apps.role-data-evaluations
+- learn.evaluate-generative-ai-apps.choose-utilize-metrics
+- learn.evaluate-generative-ai-apps.custom-prompt-based-evaluators
+- learn.evaluate-generative-ai-apps.interpret-evaluation-results
+- learn.evaluate-generative-ai-apps.common-pitfalls-result-interpretation
+- learn.evaluate-generative-ai-apps.knowledge-check
+- learn.evaluate-generative-ai-apps.summary
+badge:
+  uid: learn.evaluate-generative-ai-apps-badge
