@@ -33194,6 +33194,11 @@
       "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/3-identify-harms.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/1-introduction.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
