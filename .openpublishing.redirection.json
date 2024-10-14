@@ -33204,6 +33204,11 @@
       "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/8-knowledge-check.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/4-measure-harms.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
