@@ -33274,6 +33274,11 @@
       "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/2-review-benefits.md",
       "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/3-review-terminology.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }
