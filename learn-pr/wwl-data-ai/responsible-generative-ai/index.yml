@@ -36,7 +36,6 @@ subjects:
   - cloud-computing
   - data-management
 units:
-- learn.wwl.responsible-generative-ai.introduction
 - learn.wwl.responsible-generative-ai.plan-responsible-ai
 - learn.wwl.responsible-generative-ai.measure-harms
 - learn.wwl.responsible-generative-ai.mitigate-harms
