@@ -18,12 +18,12 @@ Device policies allow you to perform several different types of actions to prote
 
 Intune configuration policies help you protect and configure devices by allowing you to control a multitude of settings and features. For example, you can:
 
-- Restrict use of hardware features on the device, such as the camera or Bluetooth.
-- Reset passcodes when users are locked out of their devices.
+- Restrict the use of hardware features on the device, such as the camera or Bluetooth.
+- Reset the passcodes when users are locked out of their devices.
 - Require devices to be compliant with the protection requirements implemented by your organization, such as requiring each device to use a PIN to access the device.
-- Configure compliant and noncompliant apps. You'll get an alert if a noncompliant app is installed (and some platforms can actually block the install).
+- Configure compliant and noncompliant apps. You get an alert if a noncompliant app is installed (and some platforms can actually block the install).
 - Protect apps and the data they use.
 - Protect devices based on identity by adding an extra layer of protection to devices.
-- Control Windows Hello for Business settings, which is an alternative sign-in method for Windows 10 and later.
+- Control the settings for Windows Hello for Business, which is an alternative sign-in method for Windows 10 and later.
 - Retire devices and remove data.
 - Configure email by allowing end users to access company email on their personal devices without any required setup on their part.

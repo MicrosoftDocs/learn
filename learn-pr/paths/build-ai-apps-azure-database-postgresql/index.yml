@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
+  ms.custom: ai-learning-hub
 title: Build AI Apps with Azure Database for PostgreSQL
 prerequisites: |
   Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of AI and ML concepts.
