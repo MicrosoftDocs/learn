@@ -94,9 +94,6 @@ Choose which of the options you wish to walk through. All provide you with the s
 
 1. For **Service type**, select **Load balancer**.
 1. Set a **Username** and **Password** for Metrics and Logs Dashboards (Kibana and Grafana) that you view locally.
-
-    ![Screenshot of Azure Arc data controller details.](../media/azure-arc-data-controller-4-details.png)
-
 1. Select **Next: Additional Settings**.
 
     You might already have a Log Analytics workspace configured, or you can create a new workspace specifically for your Arc data controller. Find the Log Analytics workspace ID and primary key (both values are required) under **Settings** > **Agents management** of your Log Analytics workspace.
@@ -111,8 +108,6 @@ Choose which of the options you wish to walk through. All provide you with the s
 
 1. On **Review + Create** and confirm all details are correct. Select **Create**.
 
-    ![Screenshot of Azure Arc data controller review and create.](../media/azure-arc-data-controller-6-review-create.png)
-
 1. Monitor the Arc data controller creation with this command:
 
     ```PowerShell
@@ -122,8 +117,6 @@ Choose which of the options you wish to walk through. All provide you with the s
     ![Screenshot of Azure Arc data controller successful deployment CloudShell](../media/azure-arc-data-controller-14-confirmation.png)
 
     Congratulations! You've successfully deployed your Arc data controller in directly connected mode.
-
-    ![Screenshot of Azure Arc data controller successful deployment.](../media/azure-arc-data-controller-7-deployment-success.png)
 
 1. Validate the deployment against the Kubernetes cluster. Execute `kubectl get ns` in the Cloud Shell.
 
@@ -195,8 +188,6 @@ Create your custom location for your Azure Arc data controller that you deploy o
     az customlocation list -o table
     ```
 
-    ![Screenshot of Create Azure Arc data controller custom location.](../media/azure-arc-custom-location-15-confirmation.png)
-
 1. Confirm you have Azure Data Studio downloaded and installed.
 1. Open ADS and select **Extensions** in the sidebar.
 
@@ -264,11 +255,7 @@ Create your custom location for your Azure Arc data controller that you deploy o
     - **Log Analytics primary key**: Available from your Log Analytics workspace (see step 11 in the *Option 1: Azure portal GUI deployment* section of this unit)
     - **Metrics and Logs Dashboard Credentials**: Kibana and Grafana
 
-    ![Screenshot of Azure Data Studio step 5 - data controller configuration.](../media/azure-data-studio-arc-data-controller-configuration-13.png)
-
 1. Once you confirm the configuration details, you're ready to deploy. Select **Deploy**.
-
-    ![Screenshot of Azure Data Studio Azure Arc Data controller review.](../media/azure-data-studio-arc-data-controller-review-14.png)
 
    This opens a notebook called *deploy.arc.data.controller*, which automatically starts executing each of the created cells. A prompt requests that you log in to your Azure subscription to allow the deployment to start.
 
@@ -741,8 +728,6 @@ Navigate to your `.kube` directory in the ADS terminal before you run any CLI co
     ![Screenshot of Azure Data Studio Azure Arc data controller infrastructure indirect mode.](../media/azure-data-studio-arc-data-controller-configuration-indirect-connected-mode-2.png)
 
 1. Once you review the configuration details, you're ready to deploy. Select **Deploy**.
-
-    ![Screenshot of Azure Data Studio - review configuration- indirect mode.](../media/azure-data-studio-arc-data-controller-review-indirect-mode-3.png)
 
     This opens a notebook called *deploy.arc.data.controller*, which automatically starts executing each of the created cells. As this is an indirect mode deployment, you don't need to log in to your Azure subscription.
 
