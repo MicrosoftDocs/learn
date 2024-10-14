@@ -31,7 +31,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.wwl.use-azure-resource-manager.review-benefits
 - learn.wwl.use-azure-resource-manager.review-terminology
 - learn.wwl.use-azure-resource-manager.summary-resources
 badge:
