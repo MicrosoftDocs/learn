@@ -33289,6 +33289,11 @@
       "source_path": "learn-pr/wwl-azure/use-intelligent-planners/index.md",
       "redirect_url": "/training/modules/automatic-function-calling/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/7-automatically-invoke-functions.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
     }
   ]
 }
