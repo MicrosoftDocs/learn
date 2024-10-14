@@ -99,10 +99,7 @@ In this exercise, you'll configure and use readable secondaries to take advantag
 1. Search the results from the CLI command you executed in step 8. Search for endpoints. Retrieve the secondary endpoint value.
 1. In the **Connections** tab, select **New Connection**. Enter the connection details for your secondary endpoint.
 1. Select **Connect**.
-
-    ![Screenshot of connection details for the Managed Instance secondary endpoint connection.](../media/exercise1-managed-instance-secondary-endpoint-1.png)
-
-1. Open a new query window for the new secondary endpoint connection and execute the following commands. Your servername shouldn't be the current primary replica:
+1. Open a new query window for the new secondary endpoint connection and execute the following commands. Your server name shouldn't be the current primary replica:
 
     ```sql
     Select @@ServerName;
@@ -113,8 +110,6 @@ In this exercise, you'll configure and use readable secondaries to take advantag
     Select *
     From HumanResources.Employee;
     ```
-
-    ![Screenshot of SQL Managed Instance readable secondary connection.](../media/exercise1-managed-instance-readable-secondary-2.png)
 
 ## Exercise 2 - Discover Azure Arc-enabled SQL Managed Instance General Purpose tier
 
@@ -134,8 +129,6 @@ For this exercise, you'll simulate the failure or loss of the Kubernetes pod hos
    Select *
    From HumanResources.Employee;
    ```
-
-   ![Screenshot of SQL Managed Instance General Purpose tier high availability connectivity 1.](../media/exercise2-manage-general-purpose-high-availability-1.png)
 
 1. Open the Terminal window.
 1. Execute the following commands to view the Kubernetes pods:
@@ -170,8 +163,6 @@ For this exercise, you'll simulate the failure or loss of the Kubernetes pod hos
 
 1. Re-execute step 4 to see if the instance is available again. This proves your instance is available and accessible again.
 
-    ![Screenshot of SQL Managed Instance General Purpose tier HA successful query.](../media/exercise2-manage-general-purpose-high-availability-1.png)
-
 ## Exercise 3 - Discovering Arc-enabled SQL Managed Instance Business Critical Tier High Availability
 
 For this exercise, you'll simulate the failure or loss of the Kubernetes pod hosting and running the Business Critical Tier Arc-enabled SQL Managed Instance container.
@@ -190,8 +181,6 @@ For this exercise, you'll simulate the failure or loss of the Kubernetes pod hos
    Select *
    From HumanResources.Employee;
    ```
-
-   ![Screenshot of SQL Managed Instance Business Critical Tier high availability connectivity 1.](../media/exercise2-manage-business-critical-high-availability-1.png)
 
 1. Open the Terminal window.
 1. Execute the following commands to view the Kubernetes pods:
@@ -222,16 +211,12 @@ For this exercise, you'll simulate the failure or loss of the Kubernetes pod hos
 
 1. Re-execute step 4 to determine if the instance is available and running on `SQLMI-1`. Service disruption should be minimal, and your applications need reconnect functionality.
 
-   ![Screenshot of SQL Managed Instance Business Critical tier high availability successful query.](../media/exercise2-manage-business-critical-high-availability-2.png)
-
 1. Execute the following command to view the contained availability group status:
 
     ```powershell
     $Env:MyResource-group = 'enter your resource group name here'
     az sql mi-arc list --k8s-namespace $Env:MyNamespace --use-k8s
     ```
-
-    ![Screenshot of SQL Managed Instance Business Critical tier high1availability failed query.](../media/exercise2-manage-business-critical-availability-group-status-1.png)
 
 1. Check the status of all replicas in the contained availability group with the following command. Search for `highAvailability` in the output:
 
@@ -333,9 +318,6 @@ For this exercise, you'll use the automated backups already created for the Adve
 1. Expand **Azure Arc Controllers**.
 1. Expand the Arc data controller.
 1. Right-click your Arc-enabled SQL Managed Instance and select **Manage**.
-
-   ![Screenshot of Azure Arc-enabled SQL Managed Instance management control in Azure Data Studio.](../media/exercise3-managed-instance-1.png)
-
 1. Select **Backups**.
 1. Review the earliest point in time and latest point in time for the AdventureWorks2019 sample database.
 1. Select the **Restore** icon to initiate the point-in-time restore process.
@@ -549,13 +531,7 @@ Make sure to complete the following before proceeding:
    ```
 
 1. Open SQL Server Management Studio (SSMS) and connect to the primary external endpoint for the primary site instance. Expand **Always On High Availability**. You should now see the newly created Azure failover group.
-
-   ![Screenshot of Arc-enabled SQL Managed Instance primary site distributed availability group - SQL Server Management Studio.](../media/exercise5-primary-site-distributed-availability-group.png)
-
 1. In SSMS, connect to the primary external endpoint for the secondary site instance. Expand **Always On High Availability**. You should now see the newly created Azure failover group.
-
-   ![Screenshot of Arc-enabled SQL Managed Instance primary site distributed availability group.](../media/exercise5-secondary-site-distributed-availability-group.png)
-
 1. Expand the database tree on the secondary site instance. You should see the AdventureWorks2019 database that was restored to your primary site instance previously.
 
 Notice that you didn't have to perform any tasks to get your primary site database onto your secondary site instance. With the creation of the Azure failover group (Distributed availability group), all databases on the primary instance are automatically seeded to the secondary site. Depending on the database size, the network bandwidth between the primary and secondary sites will dictate the time for the databases to be synchronized.
