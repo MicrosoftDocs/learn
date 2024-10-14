@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.publish-aspnetcore-app.publishing-dotnet-apps
-title: Publishing .NET apps
+title: Publish .NET apps
 metadata:
-  title: Publishing .NET apps
+  title: Publish .NET apps
   description: This unit explains the difference between building and publishing, as well as the different types of deployments available for .NET apps.
   ms.date: 8/29/2024
   author: camsoper
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-publishing-dotnet-apps.md)]
+  [!include[](includes/2-publish-dotnet-apps.md)]
