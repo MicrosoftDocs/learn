@@ -31,6 +31,5 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.wwl.use-azure-resource-manager.summary-resources
 badge:
   uid: learn.wwl.use-azure-resource-manager.badge
