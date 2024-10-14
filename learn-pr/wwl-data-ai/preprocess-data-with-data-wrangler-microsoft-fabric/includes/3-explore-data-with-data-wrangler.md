@@ -5,7 +5,7 @@ Through the visual exploration of summary statistics, data scientists are able t
 > [!Tip]
 > To learn more about the fundamentals of data exploration using notebooks, see [Explore data for data science with notebooks in Microsoft Fabric](/training/modules/explore-data-for-data-science-microsoft-fabric?azure-portal=true).
 
-##	View summary statistics
+## View summary statistics
 
 For demonstration purposes, let’s generate some random data to simulate a hypothetical scenario involving house prices in a particular neighborhood.
 
@@ -48,7 +48,7 @@ For our house prices scenario, imagine that we need the average of house price b
 
 :::image type="content" border="false" source="../media/3-aggregation.png" alt-text="Screenshot of the group by and aggregate operator in Data Wrangler." lightbox="../media/3-aggregation.png":::
 
-In just a few seconds, we can configure the group by and aggregate operator, where the code is automatically generated for you. Also, the grid shows the new data in green, and the columns to be removed in red. 
+In just a few seconds, we can configure the group by and aggregate operator, where the code is automatically generated for you. Also, the grid shows the new data in green, and the columns to be removed in red.
 
 Once the operator is applied, this is how your final grid should appear.
 

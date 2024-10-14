@@ -33179,6 +33179,166 @@
       "source_path": "learn-pr/azure/intro-to-data-protection-privacy/index.yml",
       "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/7-exercise-content-filters.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/3-identify-harms.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/1-introduction.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/8-knowledge-check.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/4-measure-harms.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/5-mitigate-harms.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/6-operate-responsibly.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/2-plan-responsible-ai.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/9-summary.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/index.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/5-create-locks.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/4-create-resource-groups.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/8-determine-resource-limits.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/1-introduction.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/9-knowledge-check.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/7-remove-resources-groups.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/6-reorganize-azure-resources.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/2-review-benefits.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/3-review-terminology.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/10-summary-resources.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/index.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/7-automatically-invoke-functions.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/8-exercise-automatically-invoke-functions.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/5-exercise-use-plan-template.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/4-exercise-use-planner.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/3-how-use-planner.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/1-introduction.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/9-knowledge-check.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/2-learn-about-ai-planners.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/6-optimize-your-planners.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-intelligent-planners/10-summary.md",
+      "redirect_url": "/training/modules/automatic-function-calling/",
+      "redirect_document_id": false
     }
   ]
 }
