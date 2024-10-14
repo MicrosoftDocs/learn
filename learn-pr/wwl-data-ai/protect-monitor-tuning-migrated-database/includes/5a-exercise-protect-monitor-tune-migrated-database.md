@@ -257,7 +257,7 @@ echo $SERVERNAME.postgres.database.azure.com
 1. In the Azure portal, on the page for your Azure Database for PostgreSQL server, under **Settings**, select **Replication**.
 1. On the **Replication** page, select **+ Add Replica**.
 1. On the **PostgreSQL server** page, in the **Server name** box, type **adventureworks[nnn]-replica1**, and then select **OK**.
-1. When the first replica is created (it takea several minutes), repeat the previous step and add another replica named **adventureworks[nnn]-replica2**.
+1. When the first replica is created (it takes several minutes), repeat the previous step and add another replica named **adventureworks[nnn]-replica2**.
 1. Wait until the status of both replicas changes from **Deploying** to **Available** before continuing.
 
     :::image type="content" source="../media/6-replicas.png" alt-text="Image showing the Replication page for Azure Database for PostgreSQL. Two replicas have been added.":::
@@ -312,7 +312,7 @@ echo $SERVERNAME.postgres.database.azure.com
     dotnet run
     ```
 
-    The application runa as before. However, this time, the requests are distributed across the three servers.
+    The application runs as before. However, this time, the requests are distributed across the three servers.
 
 1. Allow the app to run for a few minutes before continuing.
 
