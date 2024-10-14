@@ -11,6 +11,7 @@ metadata:
   ms.topic: module-intro-to-product
   ms.collection:
     - github-ai-copilot
+  ms.custom: ai-learning-hub
 summary: >
   Learn about the differences between GitHub Copilot for Enterprise, for Business, and for Individuals. Examine specific use cases, including how to enable and use GitHub Copilot Enterprise.
 abstract: |
