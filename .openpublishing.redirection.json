@@ -33179,6 +33179,11 @@
       "source_path": "learn-pr/azure/intro-to-data-protection-privacy/index.yml",
       "redirect_url": "https://learn.microsoft.com/compliance/assurance/assurance-privacy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/index.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
