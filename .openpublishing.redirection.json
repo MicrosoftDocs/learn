@@ -33184,6 +33184,11 @@
       "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/index.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/7-exercise-content-filters.md",
+      "redirect_url": "/training/modules/responsible-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
