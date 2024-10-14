@@ -38,6 +38,5 @@ products:
 - vs-code
 - azure-openai
 units:
-- learn.wwl.use-intelligent-planners.summary
 badge:
   uid: learn.wwl.use-intelligent-planners.badge
