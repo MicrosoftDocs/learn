@@ -76,7 +76,7 @@ Copilot uses comments in several ways to generate and suggest code:
 
 - **Code Completion**: Copilot uses comments to provide more accurate code completions, understanding the developer's intent.
 
-   :::image type="content" source="../media/whole-function--auto-completion-ghost-text.png" alt-text="Screenshot of whole function  auto completion ghost text.":::
+   :::image type="content" source="../media/whole-function-auto-completion-ghost-text.png" alt-text="Screenshot of whole function  auto completion ghost text.":::
 
    In this example, we have a comment describing a function to reverse a string. Based on this comment, Copilot is likely to suggest an implementation using Python's slice notation with a step of -1, which efficiently reverses the string.
 
