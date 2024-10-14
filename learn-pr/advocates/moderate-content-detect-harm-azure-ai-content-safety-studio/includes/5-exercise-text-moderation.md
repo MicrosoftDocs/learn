@@ -29,7 +29,7 @@ But what happens if you test a harmful statement? Try a test with negative custo
 1. Set all **Threshold level** values to **Medium**.
 1. Select **Run test**.
 
-   Although the content is **Allowed**, the **Severity level** value for **Hate** is **Low**.
+   Although the content is **Allowed**, the severity level for **Hate** is **Low**.
 
    :::image type="content" source="../media/text-moderation-low-hate.png" alt-text="Screenshot of the text moderation results. The content is allowed, but the severity level for the Hate category is Low. The severity level is Safe across all other categories."  lightbox="../media/text-moderation-low-hate.png":::
 
@@ -57,13 +57,13 @@ You can't expect all text content from customers to be free of spelling errors. 
 
 The content is **Blocked**, and the severity level for **Violence** is **Medium**.
 
-Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent. The customer hopes to receive guidance on how to clean the cooker. There might be no ill intent in submitting this question, so it might be a better choice not to block such content.
+Consider a scenario where the customer is asking this question in a conversation with the AI-powered customer support agent. The customer hopes to receive guidance on how to clean the cooker. There might be no ill intent in submitting this question, so allowing this content might be a better choice.
 
 As the developer, consider various scenarios where such content might be OK before you decide to adjust the filter and block similar content.
 
 ## Run a bulk test
 
-So far, you tested singular, isolated text content. However, you can test a bulk dataset of text content all at once and receive metrics based on the model's performance.
+So far, you've tested singular, isolated text content. However, you can test a bulk dataset of text content all at once and receive metrics based on the model's performance.
 
 You have a bulk dataset of statements from both customers and support agents. The dataset also includes fabricated harmful statements to test the model's ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful.
 
@@ -101,4 +101,4 @@ The final result from a bulk test is the distribution across categories. This re
 
 :::image type="content" source="../media/bulk-text-moderation-distribution-results.png" alt-text="Screenshot of the results for severity distributed by category."  lightbox="../media/bulk-text-moderation-distribution-results.png":::
 
-Based on the results, is there room for improvement? If so, adjust the **Threshold** levels until the **Precision**, **Recall**, and **F1 score** metrics are closer to **1**.
+Based on the results, is there room for improvement? If so, adjust the threshold levels until the **Precision**, **Recall**, and **F1 score** metrics are closer to **1**.

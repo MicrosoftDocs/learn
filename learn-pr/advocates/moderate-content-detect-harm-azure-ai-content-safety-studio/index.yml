@@ -20,7 +20,7 @@ abstract: |
   By the end of this module, you'll be able to:
   - Configure filters and threshold levels to block harmful content.
   - Perform text and image moderation for harmful content.
-  - Analyze and improve Precision, Recall, and F1 Score metrics.
+  - Analyze and improve the **Precision**, **Recall**, and **F1 score** metrics.
   - Detect groundedness in a model's output.
   - Identify and block AI-generated copyrighted content.
   - Mitigate direct and indirect prompt injections.

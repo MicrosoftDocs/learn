@@ -61,4 +61,4 @@ The model was able to detect jailbreaks in both **User prompt** and **Document**
 
 :::image type="content" source="../media/prompt-shield-jailbreak-both.png" alt-text="Screenshot of the results for a direct and indirect prompt injection. The results show that jailbreak attacks were detected in the document."  lightbox="../media/prompt-shield-jailbreak-detected.png":::
 
-Bad actors are savvy and seek alternative ways to modify their prompts in hopes of manipulating a model. Brainstorm other ways to potentially execute a prompt injection and test those prompts within **Prompt shields**.
+Bad actors are savvy and seek alternative ways to modify their prompts in hopes of manipulating a model. Brainstorm other ways to potentially execute a prompt injection, and test those prompts within **Prompt shields**.

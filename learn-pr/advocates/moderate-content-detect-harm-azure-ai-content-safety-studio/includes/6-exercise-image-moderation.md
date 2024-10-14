@@ -23,7 +23,7 @@ As expected, this image content is **Allowed**. The severity level is **Safe** a
 You should anticipate that customers can potentially post harmful image content. To ensure that you account for such a scenario, test the detection of harmful image content.
 
 > [!NOTE]
-> The image that you use for testing contains a graphic detection of a bear attack. The image is blurred by default in the image preview. However, you're welcome to use the **Blur image** toggle to change this setting.
+> The image that you use for testing contains a graphic depiction of a bear attack. The image is blurred by default in the image preview. However, you're welcome to use the **Blur image** toggle to change this setting.
 
 1. Select **Browse for a file** and upload the **bear-attack-blood.JPG** file.
 1. Set all **Threshold level** values to **Medium**.
@@ -35,7 +35,7 @@ The content is **Blocked**. The **Violence** filter rejected it and shows a seve
 
 ## Run a bulk test
 
-So far, you tested image content for singular, isolated images. However, you can test a bulk dataset of image content all at once and receive metrics based on the model's performance.
+So far, you've tested image content for singular, isolated images. However, you can test a bulk dataset of image content all at once and receive metrics based on the model's performance.
 
 You have a bulk dataset of images from customers. The dataset also includes sample harmful images to test the model's ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful.
 
@@ -50,6 +50,8 @@ Do another test round, but this time with the dataset:
 1. Set all **Threshold level** values to **Medium**.
 1. Select **Run test**.
 
+Examine the results.
+
 :::image type="content" source="../media/bulk-image-moderation-results.png" alt-text="Screenshot of results for bulk image moderation."  lightbox="../media/bulk-image-moderation-results.png":::
 
-Based on the results, is there room for improvement? If so, adjust the **Threshold** levels until the **Precision**, **Recall**, and **F1 score** metrics are closer to **1**.
+Is there room for improvement? If so, adjust the **Threshold** levels until the **Precision**, **Recall**, and **F1 score** metrics are closer to **1**.
