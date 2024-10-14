@@ -12,7 +12,7 @@ There are several key benefits to continuous access evaluation.
 
 ### Evaluation and revocation process flow
 
-:::image type="content" source="../media/user-revocation-event-flow-8219101e.png" alt-text="Diagram of the process flow when an access token is revoked and a client has to reverify access.":::
+:::image type="content" source="../media/user-revocation-event-flow-8219101e-b5213408.png" alt-text="Diagram of the process flow when an access token is revoked and a client has to reverify access.":::
 
 
 1.  A continuous access evaluation (CAE)-capable client presents credentials or a refresh token to Microsoft Entra ID asking for an access token for some resource.

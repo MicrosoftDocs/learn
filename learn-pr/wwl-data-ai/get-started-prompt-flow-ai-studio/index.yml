@@ -8,6 +8,7 @@ metadata:
   ms.date: 01/25/2024
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Get started with prompt flow to develop language model apps in the Azure AI Studio
