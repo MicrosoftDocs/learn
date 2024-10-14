@@ -33229,6 +33229,11 @@
       "source_path": "learn-pr/wwl-data-ai/responsible-generative-ai/9-summary.md",
       "redirect_url": "/training/modules/responsible-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/index.md",
+      "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }
