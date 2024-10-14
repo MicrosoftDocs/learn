@@ -3997,3 +3997,8 @@ achievements:
   title: Use Azure Resource Manager
   summary: You'll learn how to use resource groups to organize your Azure resources.
   iconUrl: /training/achievements/arm-use-resource-manager.svg
+- uid: learn.wwl.use-intelligent-planners.badge
+  type: badge
+  title: Use intelligent planners
+  summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
+  iconUrl: /training/achievements/generic-badge.svg
