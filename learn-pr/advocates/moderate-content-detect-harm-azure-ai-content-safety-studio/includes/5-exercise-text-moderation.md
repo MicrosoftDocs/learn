@@ -7,7 +7,7 @@ First, test some positive customer feedback:
 1. On the **Content Safety** page, select **Moderate text content**.
 1. In the **Test** box, enter the following content:
 
-   **I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!**
+   *I recently used the PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive. Great product!*
 
 1. Set all **Threshold level** values to **Medium**.
 
@@ -24,7 +24,7 @@ But what happens if you test a harmful statement? Try a test with negative custo
 
 1. In the **Test** box, enter the following content:
 
-   **I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.**
+   *I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.*
 
 1. Set all **Threshold level** values to **Medium**.
 1. Select **Run test**.
@@ -50,7 +50,7 @@ You can't expect all text content from customers to be free of spelling errors. 
 
 1. In the **Test** box, enter the following content:
 
-   **I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and dyed. Its blod is all over the interior. How do I clean the cooker?**
+   *I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and dyed. Its blod is all over the interior. How do I clean the cooker?*
 
 1. Set all **Threshold level** values to **Medium**.
 1. Select **Run test**.

@@ -10,11 +10,11 @@ You can provide a grounding source, submit a prompt, and provide a completion to
 1. In the **Choose a task** section, select **Q&A**.
 1. In the **Test** section, enter the following values:
 
-    - **Grounding sources**: **The tent costs $250**
+    - **Grounding sources**: *The tent costs $250*
 
-    - **Prompt**: **Tent cost?**
+    - **Prompt**: *Tent cost?*
 
-    - **Completion**: **$250**
+    - **Completion**: *$250*
 
     :::image type="content" source="../media/groundedness-prompts.png" alt-text="Screenshot of the inputs for groundedness, including a grounding source, prompt, and completion.":::
 
@@ -30,11 +30,11 @@ Because models can sometimes provide incorrect information, you want to ensure t
 
 1. In the **Test** section, enter the following values:
 
-    - **Grounding sources**: **The tent costs $250**
+    - **Grounding sources**: *The tent costs $250*
 
-    - **Prompt**: **Tent cost?**
+    - **Prompt**: *Tent cost?*
 
-    - **Completion**: **$350**
+    - **Completion**: *$350*
 
     :::image type="content" source="../media/ungrounded-prompts.png" alt-text="Screenshot of inputs for ungroundedness, including a grounding source, prompt, and completion."  lightbox="../media/ungrounded-prompts.png":::
 
@@ -53,9 +53,9 @@ You can test for groundedness by passing the customer's inquiry as the **Groundi
 1. In the **Choose a task** section, select **Summarization**.
 1. In the **Test** section, enter the following values:
 
-    - **Grounding sources**: **I recently purchased three TrailMaster X4 Tents for a family camping trip. While overall they performed well, I noticed a couple of minor issues. The zippers on one of the tents seemed a bit sticky, and there was a small tear in the storage bag. These are small concerns, but I thought I should bring them to your attention.**
+    - **Grounding sources**: *I recently purchased three TrailMaster X4 Tents for a family camping trip. While overall they performed well, I noticed a couple of minor issues. The zippers on one of the tents seemed a bit sticky, and there was a small tear in the storage bag. These are small concerns, but I thought I should bring them to your attention.*
 
-    - **Completion**: **I purchased 4 tents which performed well with no issues.**
+    - **Completion**: *I purchased 4 tents which performed well with no issues.*
 
     :::image type="content" source="../media/groundedness-summarization-inputs.png" alt-text="Screenshot of groundedness inputs for the summarization task."  lightbox="../media/groundedness-summarization-inputs.png":::
 
