@@ -34,7 +34,7 @@ products:
 - azure-app-service
 units:
 - learn.publish-aspnetcore-app.intro
-- learn.publish-aspnetcore-app.publishing-dotnet-apps
+- learn.publish-aspnetcore-app.publish-dotnet-apps
 - learn.publish-aspnetcore-app.exercise-framework-dependent
 - learn.publish-aspnetcore-app.exercise-self-contained
 - learn.publish-aspnetcore-app.exercise-publish-azure
