@@ -63,7 +63,7 @@ quiz:
       explanation: "Incorrect. Assistive technology might enhance a person's ability to perform a task, but might not make them better at that task."
     - content: "Assistive technology is any device, software, or tool that replaces the need for human assistance or intervention."
       isCorrect: false
-      explanation: "Incorrect. Assistive technology are support devices, tools, and services. For example, someone who is deaf might benefit from captions while also requiring the need for an American Sign Language interpreter. Captions do not replace the interpreter."
+      explanation: "Incorrect. Assistive technology is support devices, tools, and services. For example, someone who is deaf might benefit from captions while also requiring the need for an American Sign Language interpreter. Captions do not replace the interpreter."
     - content: "Assistive technology is any device, software, or tool that modifies or adapts the environment to suit the needs of people with disabilities."
       isCorrect: false
       explanation: "Incorrect. Assistive technology doesn't alter the environment, but rather helps support individuals when there's a mismatch between the environment and the person."
