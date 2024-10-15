@@ -4,13 +4,13 @@ metadata:
   ms.author: apspeigh
   author: aprilspeight
   ms.date: 10/13/2024
-  title: Run evaluations and generative synthetic datasets
+  title: Run evaluations and generate synthetic datasets
   description: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
     - ce-advocates-ai-copilot
-title: Run evaluations and generative synthetic datasets
+title: Run evaluations and generate synthetic datasets
 summary: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
 abstract:  |
   By the end of this module, you're able to:
