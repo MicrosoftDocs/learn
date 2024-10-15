@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.azure.evaluate-generative-ai-applications
+uid: learn.azure.evaluate-generative-ai-apps
 title: Evaluate generative AI applications
 metadata:
   title: Evaluate generative AI applications
@@ -33,4 +33,4 @@ modules:
   - learn.evaluate-generative-ai-apps
   - learn.run-evaluations-generate-synthetic-datasets
 trophy:
-  uid: learn.azure.evaluate-generative-ai-applications
+  uid: learn.azure.evaluate-generative-ai-apps
