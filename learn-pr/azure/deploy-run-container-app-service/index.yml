@@ -3,7 +3,7 @@ uid: learn.azure.deploy-run-container-app-service
 metadata:
   title: Deploy and run a containerized web app with Azure App Service
   description: Discover how to create a Docker image and store it in the Azure Container Registry, then use Azure App Service to deploy a web application based on the image.
-  ms.date: 04/27/2023
+  ms.date: 10/15/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: module-standard-task-based
