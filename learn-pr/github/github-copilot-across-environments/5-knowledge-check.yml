@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-across-environments.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "GitHub Copilot Across Environments - IDE, Chat, and Command Line Techniques" module.
+  ms.date: 10/08/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 15
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following choices isn't mentioned as one of the programming languages receiving strong support from GitHub Copilot?"
+    choices:
+    - content: "Python"
+      isCorrect: false
+      explanation: "Incorrect. Python is mentioned as one of the languages receiving strong support from GitHub Copilot."
+    - content: "JavaScript"
+      isCorrect: false
+      explanation: "Incorrect. JavaScript is mentioned as one of the languages receiving strong support from GitHub Copilot."
+    - content: "Java"
+      isCorrect: true
+      explanation: "Correct. Java isn't mentioned in the list of languages receiving strong support from GitHub Copilot."
+    - content: "Ruby"
+      isCorrect: false
+      explanation: "Incorrect. Ruby is mentioned as one of the languages receiving strong support from GitHub Copilot."
+  - content: "Which slash command in GitHub Copilot Chat is used to generate unit tests for selected code?"
+    choices:
+    - content: "/generate"
+      isCorrect: false
+      explanation: "Incorrect. The /generate command isn't used for generating unit tests."
+    - content: "/test"
+      isCorrect: false
+      explanation: "Incorrect. The /test command isn't the correct slash command for generating unit tests."
+    - content: "/tests"
+      isCorrect: true
+      explanation: "Correct. The /tests slash command is used for generating unit tests for selected code."
+    - content: "/unittest"
+      isCorrect: false
+      explanation: "Incorrect. The /unittest command isn't a valid slash command in GitHub Copilot Chat."
+  - content: "What is the purpose of the @workspace agent in GitHub Copilot Chat?"
+    choices:
+    - content: "To focus only on the current file"
+      isCorrect: false
+      explanation: "Incorrect. The @workspace agent doesn't limit the context to just the current file."
+    - content: "To extend the context of questions to the whole project"
+      isCorrect: true
+      explanation: "Correct. The @workspace agent broadens the scope of Copilot's understanding to the entire project or workspace."
+    - content: "To run terminal commands"
+      isCorrect: false
+      explanation: "Incorrect. Running terminal commands isn't the primary purpose of the @workspace agent."
+    - content: "To change Visual Studio Code settings"
+      isCorrect: false
+      explanation: "Incorrect. The @workspace agent isn't used for changing IDE settings."
+  - content: "What command would you use to get an explanation of a specific command using GitHub Copilot CLI?"
+    choices:
+    - content: "gh copilot suggest"
+      isCorrect: false
+      explanation: "Incorrect. The 'suggest' command is used for getting command suggestions, not explanations."
+    - content: "gh copilot explain"
+      isCorrect: true
+      explanation: "Correct. The 'gh copilot explain' command is used to get explanations for specific commands."
+    - content: "gh copilot clarify"
+      isCorrect: false
+      explanation: "Incorrect. 'clarify' isn't a valid command in GitHub Copilot CLI."
+    - content: "gh copilot describe"
+      isCorrect: false
+      explanation: "Incorrect. 'describe' isn't a valid command in GitHub Copilot CLI."
