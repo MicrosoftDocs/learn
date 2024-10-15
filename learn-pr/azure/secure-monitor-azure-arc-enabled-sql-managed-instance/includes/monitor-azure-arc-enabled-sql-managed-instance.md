@@ -14,8 +14,6 @@ For metrics and logs-monitoring data services operating in the indirectly connec
 
 Grafana is an open-source monitoring and analytics solution for databases that Azure Arc-enabled SQL Managed Instance supports in the directly and indirectly connected modes. To access Grafana dashboards, connect to the Azure Arc data controller from Azure Data studio, right-click or access the context menu for the entry representing your Azure Arc-enabled SQL Managed Instance, and then select **Manage**.
 
-:::image type="content" source="../media/grafana-endpoint-1.png" alt-text="Screenshot of Azure Arc-enabled SQL Managed Instance – ADS Grafana." border="false":::
-
 To access the Grafana dashboard, target the Grafana Dashboard endpoint, which is available in the Azure Data studio interface (as in the preceding screenshot). Alternatively, you can identify it by running the [`az sql mi-arc endpoint list`](/cli/azure/sql/mi-arc/endpoint#az-sql-managed-instance-arc-endpoint-list) Azure CLI command. When prompted, sign in with *Metrics and Logs dashboard credentials* you specified when deploying the data controller.
 
 :::image type="content" source="../media/grafana-sqlmi-metrics-2.png" alt-text="Screenshot of Azure Arc-enabled SQL Managed Instance – ADS Grafana SQLMI Metrics dashboard." border="false" lightbox="../media/grafana-sqlmi-metrics-2.png":::

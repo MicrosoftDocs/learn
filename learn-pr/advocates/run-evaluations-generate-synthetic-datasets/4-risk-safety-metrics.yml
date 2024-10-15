@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-evaluations-generate-synthetic-datasets.risk-safety-metrics
+title: Exercise - Risk and safety metrics
+metadata:
+  title: Exercise - Risk and safety metrics
+  description: Learn how to run an evaluation using risk and safety metrics.
+  ms.date: 10/13/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-risk-safety-metrics.md)]

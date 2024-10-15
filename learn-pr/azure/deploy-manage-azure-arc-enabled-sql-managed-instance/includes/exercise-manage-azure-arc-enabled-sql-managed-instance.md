@@ -179,11 +179,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
    kubectl get datacontrollers -A
    ```
 
-    ![Screenshot of Azure Arc-enabled data controller Upgrade monitoring.](../media/azure-data-studio-upgrade-monitoring-18.png)
-
-    The upgrade process upgrades the data controller first and then upgrades the monitoring stack. The status of the upgrade changes as shown:
-
-    ![Screenshot of Azure Arc-enabled data controller Upgraded.](../media/azure-data-studio-upgraded-19.png)
+    The upgrade process upgrades the data controller first and then upgrades the monitoring stack.
 
 You successfully upgraded the data controller to the latest version.
 
@@ -221,8 +217,6 @@ For this exercise, all statements are run in the Azure Data Studio Terminal wind
     $Env:MyScope = "/subscriptions/$Env:MySuscriptionID/resourceGroups/$Env:MyResourceGroup"
     ```
 
-   ![Screenshot of Service Principal creation parameters.](../media/service-principal-parameters-1.png)  
-
 1. Run the following command:
 
     ```PowerShell
@@ -241,8 +235,6 @@ For this exercise, all statements are run in the Azure Data Studio Terminal wind
         --role "Monitoring Metrics Publisher" `
         --scope $Env:MyScope
     ```
-
-    ![Screenshot of Service Principal role assignment.](../media/service-principal-role-assignment-3.png)  
 
 1. Verify the Service Principal role with the following command:
 
