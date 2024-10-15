@@ -4,9 +4,6 @@ Each operation updates the data display in real time and generates reusable code
 
 Think of Data Wrangler as a tool that generates code for your data exploration and preprocessing needs.
 
-> [!Note]
-> Data Wrangler currently supports only [Pandas](https://pandas.pydata.org/docs/index.html?azure-portal=true) dataframe.
-
 ## Work with Data Wrangler
 
 Data Wrangler can help with the preprocessing phase of building a machine learning model by providing tools and functionalities for data cleaning, feature engineering, data exploration, and improving efficiency in data preprocessing.
@@ -30,8 +27,6 @@ To launch Data Wrangler in Microsoft Fabric, follow these steps.
     ```python
     import pandas as pd
     df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/titanic.csv")
-    
-    Add another dataset example.
     ```
 
 1. Once your data is loaded into a dataframe, select **Data** in the notebook ribbon.
@@ -47,7 +42,7 @@ To launch Data Wrangler in Microsoft Fabric, follow these steps.
 
 Imagine you're working on a large dataset for a critical project. The data needs a lot of work. You have missing values, duplicate rows, and columns that need renaming. Plus, you need to transform some categorical data into a format that your machine learning model can understand.
 
-This is where Data Wrangler comes in. With minimal effort, you can sort and filter rows, one-hot encode categorical data, change column types, drop unnecessary columns, rename columns, handle missing values, and much more. Not only does Data Wrangler make these tasks easier, but it also generates reusable Python code for each operation, which you can save back to your notebook. This means you can automate data processing tasks for future datasets. 
+This is where Data Wrangler comes in. With minimal effort, you can sort and filter rows, one-hot encode categorical data, change column types, drop unnecessary columns, rename columns, handle missing values, and much more. Not only does Data Wrangler make these tasks easier, but it also generates reusable Python code for each operation, which you can save back to your notebook. This means you can automate data processing tasks for future datasets.
 
 Here are the operator categories that are currently available in Data Wrangler.
 

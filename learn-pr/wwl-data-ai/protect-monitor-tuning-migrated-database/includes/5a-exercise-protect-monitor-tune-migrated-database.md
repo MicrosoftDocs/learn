@@ -1,16 +1,16 @@
-You work as a database developer for the AdventureWorks organization. AdventureWorks has been selling bicycles and bicycle parts directly to end-consumers and distributors for over a decade. Their systems store information in a database that you have previously migrated to Azure Database for PostgreSQL.
+You work as a database developer for the AdventureWorks organization. AdventureWorks has sold bicycles and bicycle parts directly to end-consumers and distributors for over a decade. Their systems store information in a database that you previously migrated to Azure Database for PostgreSQL.
 
-After having performed the migration, you want assurance that the system is performing well. You decide to use the Azure tools available to monitor the server. To alleviate the possibility of slow response times caused by contention and latency, you decide to implement read replication. You need to monitor the resulting system and compare the results with the flexible server architecture.
+After performing the migration, you want assurance that the system is performing well. You decide to use the Azure tools available to monitor the server. To alleviate the possibility of slow response times caused by contention and latency, you decide to implement read replication. You need to monitor the resulting system and compare the results with the flexible server architecture.
 
-In this exercise, you'll perform the following tasks:
+In this exercise, you perform the following tasks:
 
 1. Configure Azure metrics for your Azure Database for PostgreSQL service.
 1. Run a sample application that simulates multiple users querying the database.
 1. View the metrics.
 
-### Setup the environment
+### Set up the environment
 
-Run these Azure CLI commands in the Cloud Shell to create an Azure database for PostgreSQL, with a copy of the adventureworks database. The last commands will print the server name.
+Run these Azure CLI commands in the Cloud Shell to create an Azure database for PostgreSQL, with a copy of the adventureworks database. The last commands print the server name.
 
 ```azurecli
 SERVERNAME="adventureworks$((10000 + RANDOM % 99999))"
@@ -21,8 +21,6 @@ az postgres server create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $SERVERNAME \
     --location westus \
-    --admin-user awadmin \
-    --admin-password Pa55w.rdDemo \
     --version 10 \
     --storage-size 5120
 
@@ -89,7 +87,7 @@ echo $SERVERNAME.postgres.database.azure.com
     | Metric | **IO percent** |
     | Aggregation | **Avg** |
 
-    These final three metrics show how resources are being consumed by the test application.
+    These final three metrics show how resources are consumed by the test application.
 
 1. Set the time range for the chart to **Last 30 minutes**.
 1. Select **Pin to Dashboard**, and then select **Pin**.
@@ -110,7 +108,7 @@ echo $SERVERNAME.postgres.database.azure.com
     code App.config
     ```
 
-1. Replace the value of **Database** with **azureadventureworks**, and replace **ConectionString0** with the connection string from the clipboard. Change the **User Id** to **azureuser@adventureworks[nnn]**, and set the **Password** to **Pa55w.rd**. The completed file should look similar to the example below:
+1. Replace the value of **Database** with **azureadventureworks**, and replace **ConectionString0** with the connection string from the clipboard. Change the **User Id** to **azureuser@adventureworks[nnn]**, and set the **Password** to **Pa55w.rd**. The completed file should look similar to the following example:
 
     ```XML
     <?xml version="1.0" encoding="utf-8" ?>
@@ -126,7 +124,7 @@ echo $SERVERNAME.postgres.database.azure.com
     ```
 
     > [!NOTE]
-    > Ignore the **ConnectionString1** and **ConnectionString2** settings for now. You will update these items later in the lab.
+    > Ignore the **ConnectionString1** and **ConnectionString2** settings for now. You'll update these items later in the lab.
 
 1. Save the changes and close the editor.
 1. At the Cloud Shell prompt, run the following command to build and run the app:
@@ -135,7 +133,7 @@ echo $SERVERNAME.postgres.database.azure.com
     dotnet run
     ```
 
-    When the app starts, it will spawn a number of threads, each thread simulating a user. The threads perform a loop, running a series of queries. You will see messages such as those shown below starting to appear:
+    When the app starts, it spawns threads, each thread simulating a user. The threads perform a loop, running a series of queries. You'll see messages such as the following messages starting to appear:
 
     ```sql
     Client 48 : SELECT * FROM purchasing.vendor
@@ -184,7 +182,7 @@ echo $SERVERNAME.postgres.database.azure.com
     - Memory utilization is increasing consistently over time.
     - IO utilization is close to zero. All the data required by the client applications is currently cached in memory.
   
-    If you leave the application running long enough, you will see connections starting to fail, with the error messages shown in the following image.
+    If you leave the application running long enough, you'll see connections starting to fail, with the error messages shown in the following image.
 
     :::image type="content" source="../media/6-connection-errors.png"  alt-text="Image showing the connection errors that can occur when the server has insufficient resources available":::
 
@@ -223,7 +221,7 @@ echo $SERVERNAME.postgres.database.azure.com
 1. On the **Query Performance Insight** page, on the **Long running queries** tab, set **Number of Queries** to 10, set **Selected by** to **avg**, and set the **Time period** to **Last 6 hrs**.
 1. Above the chart, select **Zoom in** (the magnifying glass icon with the "+" sign) a couple of times, to home in on the latest data.
 
-    Depending on how long you have let the application run, you will see a chart similar to that shown below. Query Store aggregates the statistics for queries every 15 minutes, so each bar shows the relative time consumed by each query in each 15 minute period:
+    Depending on how long you have let the application run, you'll see a chart similar to the following. Query Store aggregates the statistics for queries every 15 minutes, so each bar shows the relative time consumed by each query in each 15-minute period:
 
     :::image type="content" source="../media/6-long-running-queries.png" alt-text="Image showing the statistics for long running queries captured by using Query Store":::
 
@@ -235,14 +233,14 @@ echo $SERVERNAME.postgres.database.azure.com
     SELECT * FROM person.person
     ```
 
-    This information is useful for an administrator monitoring a system. Having an insight into the queries being run by users and apps enables you to understand the workloads being performed, and possibly make recommendations to application developers on how they can improve their code. For example, is it really necessary for an application to retrieve all 121,000+ rows from the **sales.salesorderdetail** table?
+    This information is useful for an administrator monitoring a system. Having insight into the queries run by users and apps enables you to understand the workloads performed, and possibly make recommendations to application developers on how they can improve their code. For example, is it necessary for an application to retrieve all 121,000+ rows from the **sales.salesorderdetail** table?
 
 ### Examine any waits that occur using Query Store
 
 1. Select the **Wait Statistics** tab.
 1. Set the **Time period** to **Last 6 hrs**, set **Group By** to **Event**, and set the **Max Number of Groups** to **5**.
 
-    As with the **Long running queries** tab, the data is aggregated every 15 minutes. The table below the chart shows that the system has been the subject of two types of wait event:
+    As with the **Long running queries** tab, the data is aggregated every 15 minutes. The table below the chart shows that the system was subject to two types of wait event:
 
     - **Client: ClientWrite**. This wait event occurs when the server is writing data (results) back to the client. It does **not** indicate waits incurred while writing to the database.
     - **Client: ClientRead**. This wait event occurs when the server is waiting to read data (query requests or other commands) from a client. It is **not** associated with time spent reading from the database.
@@ -259,17 +257,17 @@ echo $SERVERNAME.postgres.database.azure.com
 1. In the Azure portal, on the page for your Azure Database for PostgreSQL server, under **Settings**, select **Replication**.
 1. On the **Replication** page, select **+ Add Replica**.
 1. On the **PostgreSQL server** page, in the **Server name** box, type **adventureworks[nnn]-replica1**, and then select **OK**.
-1. When the first replica has been created (it will take several minutes), repeat the previous step and add another replica named **adventureworks[nnn]-replica2**.
+1. When the first replica is created (it takes several minutes), repeat the previous step and add another replica named **adventureworks[nnn]-replica2**.
 1. Wait until the status of both replicas changes from **Deploying** to **Available** before continuing.
 
     :::image type="content" source="../media/6-replicas.png" alt-text="Image showing the Replication page for Azure Database for PostgreSQL. Two replicas have been added.":::
 
 ### Configure the replicas to enable client access
 
-1. Select the name of the **adventureworks[nnn]-replica1** replica. You will be taken to the page for the Azure Database for PostgreSQL page for this replica.
+1. Select the name of the **adventureworks[nnn]-replica1** replica. You are redirected to the page for the Azure Database for PostgreSQL page for this replica.
 1. Under **Settings**, select **Connection security**.
 1. On the **Connection security** page, set **Allow access to Azure services** to **ON**, and then select **Save**. This setting enables applications that you run using the Cloud Shell to access the server.
-1. When the setting has been saved, repeat the previous steps and allow Azure services to access the **adventureworks[nnn]-replica2** replica.
+1. When the setting is saved, repeat the previous steps and allow Azure services to access the **adventureworks[nnn]-replica2** replica.
 
 ### Restart each server
 
@@ -280,7 +278,7 @@ echo $SERVERNAME.postgres.database.azure.com
 1. On the **Overview** page, select **Restart**.
 1. In the **Restart server** dialog box, select **Yes**.
 1. Wait for the server to be restarted before continuing.
-1. Following the same procedure, restart the the **adventureworks[nnn]-replica1** and **adventureworks[nnn]-replica2** servers.
+1. Following the same procedure, restart the **adventureworks[nnn]-replica1** and **adventureworks[nnn]-replica2** servers.
 
 ### Reconfigure the sample application to use the replicas
 
@@ -314,7 +312,7 @@ echo $SERVERNAME.postgres.database.azure.com
     dotnet run
     ```
 
-    The application will run as before. However, this time, the requests are distributed across the three servers.
+    The application runs as before. However, this time, the requests are distributed across the three servers.
 
 1. Allow the app to run for a few minutes before continuing.
 
@@ -326,12 +324,13 @@ echo $SERVERNAME.postgres.database.azure.com
 
     Remember that this chart displays the metrics for the adventureworks*[nnn]* server, but not the replicas. The load for each replica should be much the same.
 
-    The example chart illustrates the metrics gathered for the application over a 30 minute period, from startup. The chart shows that CPU utilization was still high, but memory utilization was lower. Additionally, after approximately 25 minutes, the system had established connections for over 30 connections. This might not seem a favorable comparison to the previous configuration, which supported 70 connections after 45 minutes. However, the workload was now spread across three servers, which were all performing at the same level, and all 101 connections had been established. Furthermore, the system was able to carrying on running without reporting any connection failures.
+    The example chart illustrates the metrics gathered for the application over a 30 minute period, from startup. The chart shows that CPU utilization was still high, but memory utilization was lower. Additionally, after approximately 25 minutes, the system established connections for over 30 connections. This might not seem a favorable comparison to the previous configuration, which supported 70 connections after 45 minutes. However, the workload was now spread across three servers, which were all performing at the same level, and all 101 connections were established. Furthermore, the system was able to carrying on running without reporting any connection failures.
 
     :::image type="content" source="../media/6-metrics-for-replicated-server.png" alt-text="Image showing the metrics for the Azure Database for PostgreSQL server while running the application, after replication was configured":::
     
-    You can address the issue of CPU utilization by scaling up to a higher pricing tier with more CPU cores. The example system used in this lab runs using the **Basic** pricing tier with 2 cores. Changing to the **General purpose** pricing tier will give you up to 64 cores.
+    You can address the issue of CPU utilization by scaling up to a higher pricing tier with more CPU cores. The example system used in this lab runs using the **Basic** pricing tier with 2 cores. Changing to the **General purpose** pricing tier gives you up to 64 cores.
 
 1. Return to the Cloud Shell and press enter, to stop the app.
 
-You have now seen how to monitor server activity using the tools available in the Azure portal. You have also learned how to configure replication, and seen how creating read-only replicas can distribute the workload in read-intensive data scenarios.
+You've seen how to monitor server activity using the tools available in the Azure portal. You've also learned how to configure replication, and seen how creating read-only replicas can distribute the workload in read-intensive data scenarios.
+
