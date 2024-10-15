@@ -371,7 +371,7 @@ Another useful option is to use the `empty.bicep` template to delete the resourc
 
 Running `az group deployment create` with the `--mode Complete` removes any resources not defined in the template. As the template `empty.json` has no resources, it deletes every resource.
 
-Deploying `empty.json` leaves `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
+Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
 
 ```bash
 az deployment group create \
