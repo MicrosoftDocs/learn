@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore-middlewar.understand-middleware
+uid: learn.configure-dependency-injection.understand-middleware
 
 title: Understand middleware
 metadata:
