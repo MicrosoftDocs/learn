@@ -35,7 +35,7 @@ Here are your team members:
 
 ## Good morning
 
-The team's product manager Irwin has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features, and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+The team's product manager, Irwin, has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features, and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features work correctly for only some game modes.
 * Updating the leaderboard takes too long, even with a few players.
