@@ -33339,6 +33339,51 @@
       "source_path": "learn-pr/wwl-azure/use-intelligent-planners/10-summary.md",
       "redirect_url": "/training/modules/automatic-function-calling/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/2-service-principals.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/3-managed-identities.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/4-use-managed-identities-with-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/5-exercise-configure-managed-identity-for-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/6-build-applications-using-managed-identities.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/7-exercise-configure-app-using-managed-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
     }
   ]
 }
