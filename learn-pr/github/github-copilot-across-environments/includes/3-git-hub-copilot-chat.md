@@ -34,7 +34,7 @@ GitHub Copilot Chat is particularly beneficial in certain scenarios:
   :::image type="content" source="../media/chat-code-explanations.png" lightbox="../media/chat-code-explanations.png" alt-text="Screenshot of chat code explanations.":::
 
 
-## How to Improve GitHub Copilot Chat Responses
+## How to improve GitHub Copilot Chat responses
 You can significantly improve the quality and relevance of GitHub Copilot Chat's responses with certain key features. Let's dive into them.
 
 ### Scope referencing
@@ -81,7 +81,7 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
   :::image type="content" source="../media/tests-slash-commands.png" lightbox="../media/tests-slash-commands.png" alt-text="Screenshot of /tests slash commands.":::
 
-### Copilot Agents
+### Copilot agents
 
 GitHub Copilot agents are custom tools that you can build and integrate with GitHub Copilot Chat to provide additional functionalities tailored to your specific needs. In addition to slash commands, you can use specific agents within Copilot Chat in your IDE to handle different tasks:
 
