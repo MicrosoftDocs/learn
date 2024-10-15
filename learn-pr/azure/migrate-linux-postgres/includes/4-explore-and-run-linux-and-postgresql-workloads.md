@@ -3,15 +3,19 @@
 In this module, you will:
 
 - Deploy an Azure Blob Storage account using a Bicep template.
-- Create a Blob Storage container and upload a file.
+- Create a Blob Storage container.
+- Migrate images to the Azure Blob Storage account.
+- Upload tailwind.sql to the Azure Blob Storage account.
 - Connect to the Azure Virtual Machine using the Azure CLI.
 - Download the file from the storage account.
 - Connect to the PostgreSQL server using `psql` and import a SQL file.
-- Migrate images to the Azure Blob Storage account.
+
 - Run the application interactively via the command line.
 - Confirm the application runs correctly.
 
 ## Deploy a storage account using deploy/vm-postgres.bicep
+
+Run the following command on your local machine.
 
 ```bash
 az deployment group create \
@@ -57,6 +61,37 @@ az storage container create \
     --name container1
 ```
 
+## Migrate images to the storage account into a subfolder images/
+
+```bash
+az storage blob upload-batch \
+    --account-name $STORAGE_ACCOUNT_NAME \
+    --auth-mode login \
+    --overwrite \
+    --destination container1/images \
+    --source app/data/images
+```
+
+Output should be as follows:
+
+```
+[
+  {
+    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/wrench_set.jpg",
+    "Last Modified": "...",
+    "Type": "image/jpeg",
+    "eTag": "\"0x8DCE0CA938AF41B\""
+  },
+  {
+    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/planer.jpg",
+    "Last Modified": "...",
+    "Type": "image/jpeg",
+    "eTag": "\"0x8DCE0CA939DF18B\""
+  },
+  ...
+]
+```
+
 ## Upload app/data/postgres/tailwind.sql to the storage account
 
 ```bash
@@ -78,6 +113,8 @@ az ssh vm \
 
 ## Download the tailwind.sql file from the storage account
 
+Run the following command on the Azure Virtual Machine.
+
 ```bash
 az storage blob download \
     --account-name $STORAGE_ACCOUNT_NAME \
@@ -87,7 +124,7 @@ az storage blob download \
     --name tailwind.sql
 ```
 
-### Run the following commands on your local machine
+### Set the environment variables for psql on the remote machine
 
 ```bash
 MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
@@ -107,13 +144,14 @@ export PGDATABASE=postgres
 psql -f tailwind.sql
 ```
 
-## Connect to the postgres server to confirm our import was successful
+## Connect to the postgres server to confirm the import was successful
 
-```
+```bash
 psql
 ```
 
 ## List the tables
+
 ```bash
 \dt
 ```
@@ -176,14 +214,27 @@ WHERE table_schema = 'public';
 
 ## Set expanded mode to on and select from the products table
 
+At the `postgres=> ` prompt, set expanded mode to on.
+
+```
+\x
+```
+
+Select from the products table.
+
+```
+select * from products;
+```
+
+The prompt should appear as follows:
+
 ```
 postgres=> \x
 Expanded display is on.
 postgres=> select * from products;
 ```
 
-You should see a listing of products:
-
+You will see a listing of products:
 
 ```
 id                 | 1
@@ -207,46 +258,17 @@ updated_at         | ...
 ...
 ```
 
+Press `<space>` to page through the results. Press `q` to exit the pager.
+
 ## Exit psql
 
 ```
 \q
 ```
 
-## Migrate images to the storage account into a subfolder images/
-
-```bash
-az storage blob upload-batch \
-    --account-name $STORAGE_ACCOUNT_NAME \
-    --auth-mode login \
-    --overwrite \
-    --destination container1/images \
-    --source app/data/images
-```
-
-Output should be as follows:
-
-```
-[
-  {
-    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/wrench_set.jpg",
-    "Last Modified": "...",
-    "Type": "image/jpeg",
-    "eTag": "\"0x8DCE0CA938AF41B\""
-  },
-  {
-    "Blob": "https://storageji2dbe.blob.core.windows.net/container1/images/planer.jpg",
-    "Last Modified": "...",
-    "Type": "image/jpeg",
-    "eTag": "\"0x8DCE0CA939DF18B\""
-  },
-  ...
-]
-```
-
 ## Run our application interactively via the command line
 
-Change to the directory that contains our application
+On the remote machine, change to the directory that contains our application
 
 ```bash
 cd tailwind-traders-go/app
@@ -265,7 +287,7 @@ $ go run main.go app:serve
 Listening on :8080
 ```
 
-## Find the public IP address of the Virtual Machine
+## Find the public IP address of the VM
 
 Get the public IP address of the Virtual Machine.
 
@@ -349,7 +371,7 @@ Another useful option is to use the `empty.bicep` template to delete the resourc
 
 Running `az group deployment create` with the `--mode Complete` removes any resources not defined in the template. As the template `empty.json` has no resources, it deletes every resource.
 
-Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
+Deploying `empty.json` leaves `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
 
 ```bash
 az deployment group create \
