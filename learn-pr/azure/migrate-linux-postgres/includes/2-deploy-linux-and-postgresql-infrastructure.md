@@ -105,6 +105,14 @@ Here you can see the Network Security Group (NSG), `240900-linux-postgres-nsg` t
 
 The NSG is also visible inside the Resource Group. It contains a set of inbound and outbound security rules that control the traffic to and from the Virtual Machine.
 
+## Return to the Resource Group
+
+At the top of the page, select the breadcrumb link to return to the Resource Group (`Home > Resource groups > 240900-linux-postgres`).
+
+Note the `240900-linux-postgres-identity` User Assigned Managed Identity is listed in the Resource Group.
+
+You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
+
 ## Add an Inbound Security Rule to the Network Security Group
 
 Next you add an inbound security rule to allow SSH traffic from your current IP address to the Virtual Machine.
@@ -113,25 +121,17 @@ In a production scenario, you would often use [just-in-time access](/azure/defen
 
 Now add an inbound security rule to the NSG to allow SSH traffic from your current IP address.
 
-Select `240900-linux-postgres-nsg`.
+1. Select `240900-linux-postgres-nsg`.
 
-Select **Settings** and then **Inbound security rules**.
+1. Select **Settings** and then **Inbound security rules**.
 
-Select **Add**.
+1. Select **Add**.
 
-Under **Source** select `My IP address`.
+1. Under **Source** select `My IP address`.
 
-Under **Service** select `SSH`.
+1. Under **Service** select `SSH`.
 
-Select **Add**.
-
-## Return to the Resource Group
-
-At the top of the page, select the breadcrumb link to return to the Resource Group (`Home > Resource groups > 240900-linux-postgres`).
-
-Note the `240900-linux-postgres-identity` User Assigned Managed Identity is listed in the Resource Group.
-
-You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
+1. Select **Add**.
 
 ## View the Azure Database for PostgreSQL's Server Administrator
 
@@ -173,27 +173,27 @@ We use the Azure portal instead of Bicep to create the private endpoint for demo
 
 ## Create a Private Endpoint for Azure Database for PostgreSQL Flexible Server
 
-Select **Settings** and then **Networking**.
+1. Select **Settings** and then **Networking**.
 
-Under **Private endpoint**, select **Add private endpoint**.
+1. Under **Private endpoint**, select **Add private endpoint**.
 
-Under **Basics** enter **Name:** `private-endpoint-1`
+1. Under **Basics** enter **Name:** `private-endpoint-1`
 
-Select **Next**
+1. Select **Next**
 
-Under **Resource**, select **Next**.
+1. Under **Resource**, select **Next**.
 
-Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. The virtual network is located in the `240900-linux-postgres` Resource Group.
+1. Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. The virtual network is located in the `240900-linux-postgres` Resource Group.
 
-Select **Next**
+1. Select **Next**
 
-Under **DNS** select **Next**.
+1. Under **DNS** select **Next**.
 
-Under **Review + create** select **Create**.
+1. Under **Review + create** select **Create**.
 
-You are then redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
+1. You are then redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
 
-Once it says **Your deployment is complete**, select **Go to resource**.
+1. Once it says **Your deployment is complete**, select **Go to resource**.
 
 ## Review the Virtual Machine's System assigned managed identity Role Assignments
 
