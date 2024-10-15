@@ -35,9 +35,15 @@ az ssh vm --resource-group 240900-linux-postgres --name vm-1
 
 ## Install psql and Go (golang) on the Virtual Machine
 
+Update the package list.
 
 ```bash
 sudo apt-get update
+```
+
+Install the PostgreSQL client and Go (golang) on the Virtual Machine.
+
+```bash
 sudo apt-get install -y postgresql-client golang-go
 ```
 
@@ -150,8 +156,11 @@ go: downloading github.com/kylelemons/godebug v1.1.0
 go: downloading github.com/golang-jwt/jwt/v5 v5.2.1
 go: downloading golang.org/x/text v0.17.0
 Targets:
-  app:sql      sets up the environment for connecting to a PostgreSQL database
-  app:token    gets a token using `azidentity.NewDefaultAzureCredential`
+  app:connectionString    outputs a connection string for the database from env vars
+  app:ping                pings the database
+  app:serve               runs a web server for our application
+  app:tables              lists the tables in the database
+  app:token               gets a token using `azidentity.NewDefaultAzureCredential`
 ```
 
 ## Connect to the PostgreSQL server using Tailwind Trader (Go)'s `app:token` target
@@ -169,6 +178,20 @@ export PGDATABASE=postgres
 
 # login using psql
 psql
+```
+
+## Quit psql and disconnect from the remote machine
+
+Quit psql.
+
+```bash
+\q
+```
+
+Disconnect from the remote machine.
+
+```bash
+exit
 ```
 
 ## Resources
