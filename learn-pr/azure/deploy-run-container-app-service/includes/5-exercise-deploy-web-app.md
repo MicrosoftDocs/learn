@@ -65,7 +65,7 @@ You're now ready to create your web app.
 
 ## Test the web app
 
-1. After deployment succeeds, select **Go to resource** to see the web app you just created. Your **App service** pane appears for your web app.
+1. After deployment succeeds, select **Go to resource** to see the web app you created. Your **App service** pane appears for your web app.
 
 2. Select the URL in the **Default domain** field to open the site in a new browser tab.
 
