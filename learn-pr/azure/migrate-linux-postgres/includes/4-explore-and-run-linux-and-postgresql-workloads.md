@@ -68,7 +68,7 @@ az storage blob upload \
     --name tailwind.sql
 ```
 
-## Connect to azure virtual machine using the az ssh command
+## Connect to Azure virtual machine using the az ssh command
 
 ```bash
 az ssh vm \
@@ -118,7 +118,7 @@ psql
 \dt
 ```
 
-the output should be as follows:
+The output should be as follows:
 
 ```
 postgres=> \dt
@@ -149,7 +149,7 @@ FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
-output should be as follows:
+The output should be as follows:
 
 ```
 postgres=> SELECT table_name
@@ -224,7 +224,7 @@ az storage blob upload-batch \
     --source app/data/images
 ```
 
-output should be as follows:
+Output should be as follows:
 
 ```
 [
@@ -246,16 +246,116 @@ output should be as follows:
 
 ## Run our application interactively via the command line
 
-change to the directory that contains our application
+Change to the directory that contains our application
 
 ```bash
 cd tailwind-traders-go/app
 ```
 
-run the application interactively from the command line
+Run the application interactively from the command line
 
 ```bash
 go run main.go app:serve
+```
+
+You'll see the following output:
+
+```
+$ go run main.go app:serve
+Listening on :8080
+```
+
+## Find the public IP address of the Virtual Machine
+
+Get the public IP address of the Virtual Machine.
+
+```bash
+IP_ADDRESS=$(az network public-ip show \
+    --resource-group 240900-linux-postgres \
+    --name vm-1-ip \
+    --query ipAddress \
+    --out tsv)
+```
+
+Output the URL to the terminal.
+
+```bash
+echo "Your URL is: http://${IP_ADDRESS}:8080"
+```
+
+Note we're using port 8080 for interactive test/dev purposes. In production, you would use port 443 and require a TLS certificate to secure traffic to the endpoint.
+
+## Browse the public API endpoint
+
+Open the URL in a web browser and you should see the following output.
+
+```
+{
+  "id": 5,
+  "product_type_id": 1,
+  "supplier_id": 2,
+  "sku": "drafting_tools",
+  "name": "Bespoke Drafting Set",
+  "price": 45,
+  "description": "Build your next bridge (or tunnel) using our Bespoke Drafting Set. Everyone drives across *regular* bridges everyday - but they'll rememeber yours - because it's _bespoke_.",
+  "image": "drafting_tools.jpg",
+  "digital": false,
+  "unit_description": "Tools and carrying case",
+  "package_dimensions": "5x10x3",
+  "weight_in_pounds": "1.2",
+  "reorder_amount": 10,
+  "status": "in-stock",
+  "requires_shipping": true,
+  "warehouse_location": "Zone 1, Shelf 4, Slot 1",
+  "created_at": "...",
+  "updated_at": "..."
+}
+```
+
+Alternatively you can make a request to the API endpoint using `curl`.
+
+```bash
+curl "http://${IP_ADDRESS}:8080"
+```
+
+This endpoint displays a random product from the database.
+
+## View requests logged to the terminal
+
+Return to the terminal where you're running the application interactively. The output shows the request to the API endpoint.
+
+```
+{"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:58592","method":"GET","url":"/"}
+{"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:59414","method":"GET","url":"/"}
+{"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:59414","method":"GET","url":"/favicon.ico"}
+```
+
+If these requests are successful, you have successfully migrated the application workload to Azure Virtual Machines and Azure Database for PostgreSQL (Flexible Server).
+
+## Clean up Azure Resources
+
+Once you finish exploring the Linux and PostgreSQL workloads, clean up the resources to save costs. 
+
+You can delete the resource group `240900-linux-postgres` manually via the Azure portal, or run the following Azure CLI command.
+
+```bash
+az group delete \
+    --name 240900-linux-postgres \
+    --yes \
+    --no-wait
+```
+
+Another useful option is to use the `empty.bicep` template to delete the resources created by the `vm-postgres.bicep` file.
+
+Running `az group deployment create` with the `--mode Complete` removes any resources not defined in the template. As the template `empty.json` has no resources, it deletes every resource.
+
+Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
+
+```bash
+az deployment group create \
+    --resource-group 240900-linux-postgres \
+    --template-file deploy/empty.bicep \
+    --mode Complete
 ```
 
 ## Resources
