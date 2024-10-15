@@ -30,7 +30,7 @@ The **More resources** option in the portal provides a list of these related por
 | Microsoft Defender for Cloud| Protect your data centers and get advanced threat protection for your Azure and non-Azure workloads in the cloud and on premises. Secure your Azure services fast with autoprovisioned, native protection.|
 
 > [!NOTE]
-> Microsoft Defender for Business is a licensing model designed especially for the small and medium-sized business (up to 300 employees). You might find Microsoft Defender portal content in the documentation section of Microsoft Defender for Business. The solutions use the same portal (https://security.microsoft.com) and therefore the documentation applies. 
+> Microsoft Defender for Business is a licensing model designed especially for the small and medium-sized business (up to 300 employees). You might find Microsoft Defender portal content in the documentation section of Microsoft Defender for Business. The solutions use the same portal (https://security.microsoft.com) and therefore the documentation applies.
 
 
 ## Required roles and permissions
@@ -40,18 +40,16 @@ The following table outlines the roles and permissions required to access each u
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
 
-
-
-
-| One of the following roles is required for Microsoft Defender XDR | One of the following roles is required for Defender for Endpoint | One of the following roles is required for Defender for Office 365 | One of the following roles is required for Defender for Cloud Apps |
+| One of the following role permission options is required for Microsoft Defender XDR | One of the following role permission options is required for Defender for Endpoint | One of the following roles or permission options is required for Defender for Office 365 | One of the following roles is required for Defender for Cloud Apps |
 | :--- | :--- | :--- | :--- |
 | Viewing investigation data: <br />- Alert page<br />- Alerts queue<br />- Incidents<br />- Incident queue<br />- Action center<br /> | View data-security operations | - View-only Manage alerts<br />- Organization<br />- configuration<br />- Audit logs<br />- View-only audit logs<br />- Security reader<br />- Security admin<br />- View-only recipients | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader<br />- Global reader |
 | Viewing hunting data | View data-security operations | - Security reader<br />- Security admin<br />- View-only recipients | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader<br />- Global reader |
 | Managing alerts and incidents | Alerts investigation | - Manage alerts<br />- Security admin | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader |
 | Action center remediation | Active remediation actions – security operations | Search and purge |  |
 | Setting custom detections | Manage security settings | - Manage alerts<br />- Security admin | - Global admin<br />- Security admin<br />- Compliance admin<br />- Security operator<br />- Security reader<br />- Global reader |
-| Threat Analytics | Alerts and incidents data: <br />- View data - security operations <br /><br />TVM mitigations: <br />- View data - Threat and vulnerability management | Alerts and incidents data:<br />- View-only Manage alerts<br />- Manage alerts<br />- Organization configuration<br />- Audit logs<br />- View-only audit logs<br />- Security reader<br />- Security admin<br />- View-only recipients<br /><br />Prevented email attempts:<br />- Security reader<br />- Security admin<br />- View-only recipients | Not available for Defender for Cloud Apps or MDI users |
+| Threat Analytics | Alerts and incidents data: <br />- View data - security operations <br /><br />Threat and Vulnerability Management (TVM) mitigations: <br />- View data - Threat and vulnerability management | Alerts and incidents data:<br />- View-only Manage alerts<br />- Manage alerts<br />- Organization configuration<br />- Audit logs<br />- View-only audit logs<br />- Security reader<br />- Security admin<br />- View-only recipients<br /><br />Prevented email attempts:<br />- Security reader<br />- Security admin<br />- View-only recipients | Not available for Defender for Cloud Apps or MDI users |
 
+For more information about the required roles and permissions for the Microsoft Defender portal, see [Microsoft Defender - Create and manage roles for role-based access control](/learn/defender-endpoint/user-roles#permission-options).
 
 ## Interactive Lab Simulation
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/06/2023
+  ms.date: 10/08/2024
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
@@ -43,13 +43,13 @@ quiz:
     choices:
     - content: "Making a commit"
       isCorrect: false
-      explanation: "Event triggers use Git references and a Git reference is produced when you make a commit."
+      explanation: "Event triggers use Git references, and a Git reference is produced when you make a commit."
     - content: "Opening a new tab in your browser"
       isCorrect: true
-      explanation: "Event triggers use Git references and opening a tab doesn't produce a Git reference."
+      explanation: "Event triggers use Git references, and opening a tab doesn't produce a Git reference."
     - content: "Merging a branch"
       isCorrect: false
-      explanation: "Event triggers use Git references and merging a branch produces a Git reference."
+      explanation: "Event triggers use Git references, and merging a branch produces a Git reference."
     - content: "Opening an issue"
       isCorrect: false
-      explanation: "Event triggers use Git references and opening an issue produces a Git reference."
+      explanation: "Event triggers use Git references, and opening an issue produces a Git reference."
