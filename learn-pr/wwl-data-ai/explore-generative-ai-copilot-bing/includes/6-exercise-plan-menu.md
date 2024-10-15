@@ -125,9 +125,6 @@ Sample image created.
 ![Screenshot of the drink image.](../media/mug.png)
 
 
-Image created for [Acorn drink.](https://th.bing.com/th/id/OIG.XlL3W_7i8ajZUydNKR1K?w=1024&h=1024&rs=1&pid=ImgDetMain)
-
-
 ## Optional: Iterate on image with reference
 
 This step is optional, but it's fun.
