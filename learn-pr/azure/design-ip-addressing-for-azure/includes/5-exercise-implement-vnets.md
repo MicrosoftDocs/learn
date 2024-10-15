@@ -1,8 +1,8 @@
 Now, you're ready to create and deploy some virtual networks with the IP addresses based on your design.
 
-In this unit, you deployed three virtual networks and subnets to support resources in those virtual networks.
+In this unit, you deploy three virtual networks and subnets to support resources in those virtual networks.
 
-The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network has the largest number of resources. It has connectivity to on-premises networks through a VPN connection. This network has web services, databases, and other systems that are key to business operations. Shared services, such as domain controllers and DNS, are located here as well. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
+The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network has the largest number of resources. It has connectivity to on-premises networks through a VPN connection. This network has web services, databases, and other systems that are key to business operations. Shared services, such as domain controllers and Domain Name System (DNS), are located here as well. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
 The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network contains systems for the manufacturing facilities' operations. The organization is anticipating a large number of internal connected devices from which their systems retrieve data (such as temperature) and need an IP address space for expansion.
 
@@ -28,7 +28,7 @@ You create the following resources:
 | | | | ResearchSystemSubnet | 10.40.40.0/24|
 | | | | | |
 
-These virtual networks and subnets are structured in a way that accommodates existing resources, yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
+These virtual networks and subnets are structured in a way that accommodates existing resources, yet allows for projected growth. To lay the foundation for our networking infrastructure, let's create these virtual networks and subnets.
 
 ## Create the *CoreServicesVnet* virtual network
 
@@ -41,6 +41,9 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.20.0.0/16 \
         --location westus
     ```
+
+   > [!NOTE]
+   > If the `--resource-group` name value in the following command is listed as "[sandbox resource group name]", replace that value with the sandbox `--resource-group` name value from the previous step.
 
 1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 

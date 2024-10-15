@@ -52,41 +52,41 @@ While GitHub Copilot is superb at suggesting code for you, it also demonstrates 
 ## Using coding comments for suggestions
 A key aspect of this capability is how it incorporates coding comments to enhance its suggestions. This section explores the various ways GitHub Copilot utilizes comments to improve its code completion and generation capabilities.
 
-### Understanding Comment Context
+### Understanding comment context
 When integrated into your existing codebase, GitHub Copilot uses various aspects of your code to provide more relevant suggestions, including code comments. Developers often use comments to clarify code intent and enhance collaboration, and Copilot, as your AI coding assistant, makes use of these comments in much the same way. By understanding the intent behind the comments, Copilot can provide more accurate and context-aware code suggestions through two key processes: 
 
 - **Natural Language Processing**: Copilot uses advanced natural language processing (NLP) techniques to interpret the meaning and intent behind comments in the code.
 - **Contextual Analysis**: It analyzes comments in relation to the surrounding code, understanding their relevance and purpose within the broader context of the file or project.
 
 
-## Types of Comments Utilized
+## Types of comments utilized
 Copilot can work with various types of comments to inform its suggestions:
-- **Inline Comments**: Short explanations next to specific lines of code.
-- **Block Comments**: Longer explanations that might describe a function or class.
+- **Inline comments**: Short explanations next to specific lines of code.
+- **Block comments**: Longer explanations that might describe a function or class.
 - **Docstrings**: Formal documentation strings in languages like Python.
-- **TODO Comments**: Notes about future implementations or improvements.
+- **TODO comments**: Notes about future implementations or improvements.
 - **API Documentation**: Comments that describe the usage and parameters of functions or methods.
 
 
-## Comment-Driven Code Generation
+## Comment-driven code generation
 Copilot uses comments in several ways to generate and suggest code:
-- **Function Implementation**: When a function is described in comments, Copilot can suggest an entire implementation based on that description.
+- **Function implementation**: When a function is described in comments, Copilot can suggest an entire implementation based on that description.
 
    :::image type="content" source="../media/multiple-line-code-completion-ghost-text.png" alt-text="Screenshot of multiple line code completion ghost text.":::
 
-- **Code Completion**: Copilot uses comments to provide more accurate code completions, understanding the developer's intent.
+- **Code completion**: Copilot uses comments to provide more accurate code completions, understanding the developer's intent.
 
-   :::image type="content" source="../media/whole-function--auto-completion-ghost-text.png" alt-text="Screenshot of whole function  auto completion ghost text.":::
+   :::image type="content" source="../media/whole-function-auto-completion-ghost-text.png" alt-text="Screenshot of whole function  auto completion ghost text.":::
 
    In this example, we have a comment describing a function to reverse a string. Based on this comment, Copilot is likely to suggest an implementation using Python's slice notation with a step of -1, which efficiently reverses the string.
 
-- **Variable Naming**: Comments can influence Copilot's suggestions for variable names, making them more descriptive and context-appropriate.
+- **Variable naming**: Comments can influence Copilot's suggestions for variable names, making them more descriptive and context-appropriate.
 
    :::image type="content" source="../media/variable-name-auto-completion-ghost-text.png" alt-text="Screenshot of variable name auto completion ghost text.":::
 
    Here, we have a comment describing a list of the user's favorite books. Copilot would likely suggest descriptive variable names that match the context. In this case, it suggested "favorite_books" as the variable name, which clearly describes the content of the list.
 
-- **Algorithm Selection**: When comments describe a specific algorithm or approach, Copilot can suggest code that aligns with that method.
+- **Algorithm selection**: When comments describe a specific algorithm or approach, Copilot can suggest code that aligns with that method.
 
    :::image type="content" source="../media/algorithm-auto-completion-ghost-text.png" alt-text="Screenshot of algorithm auto completion ghost text.":::
 

@@ -39,7 +39,7 @@ After receiving a suggestion, you can choose the `Execute command` option. This 
    ghcs suggest "What command to see running docker containers"
    ```
 
-   :::image type="content" source="../media/executing-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
+   :::image type="content" source="../media/executing-suggested-command-copilot-suggest-in-cli.png" lightbox="../media/executing-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
 
 - **Revise suggested command**:
    To give GitHub Copilot CLI to rework or revise a command to make it better or more suited to your expectations, use the "Revise command" option along with your feedback.

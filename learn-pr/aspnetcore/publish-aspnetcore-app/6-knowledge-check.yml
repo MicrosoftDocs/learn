@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-aspnetcore-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Publish an ASP.NET Core app" module.
+  ms.date: 09/11/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements is true of framework-dependent deployments?"
+    choices:
+    - content: "The app is published with the .NET runtime."
+      isCorrect: false
+      explanation: "Incorrect. The app is published without the .NET runtime."
+    - content: "The resulting published app can be deployed to any system that has the .NET runtime installed."
+      isCorrect: true
+      explanation: "Correct. The resulting published app is portable."
+    - content: |
+        "You must run `chmod +x` on the published app."
+      isCorrect: false
+      explanation: "Incorrect. You don't need to run `chmod +x` on the published app because the .NET runtime runs the app."
+    - content: "The source code is included in the published app."
+      isCorrect: false
+      explanation: "Incorrect. The source code isn't included in the published app."
+  - content: "Which of the following statements is true of self-contained deployments?"
+    choices:
+    - content: "The app is published with the .NET runtime."
+      isCorrect: true
+      explanation: "Correct. The app is published with the .NET runtime."
+    - content: "The resulting published app can run in any environment."
+      isCorrect: false
+      explanation: "Incorrect. The runtime that is included in the published app is specific to the operating system."
+    - content: "The size of the published app is smaller than a framework-dependent deployment."
+      isCorrect: false
+      explanation: "Incorrect. The size of the published app is larger than a framework-dependent deployment because it includes the runtime."
+    - content: "The source code is included in the published app."
+      isCorrect: false
+      explanation: "Incorrect. The source code isn't included in the published app."    
+  - content: "What is the name of the built-in web server in ASP.NET Core?"
+    choices:
+    - content: "IIS"
+      isCorrect: false
+      explanation: "Incorrect. IIS is a web server that can host ASP.NET Core apps, but it isn't built into ASP.NET Core."
+    - content: "Kestrel"
+      isCorrect: true
+      explanation: "Correct. Kestrel is ASP.NET Core's built-in web server."
+    - content: "Apache"
+      isCorrect: false
+      explanation: "Incorrect. Apache is a web server that can host ASP.NET Core apps, but it isn't built into ASP.NET Core."
+    - content: "Nginx"
+      isCorrect: false
+      explanation: "Incorrect. Nginx is a web server that can host ASP.NET Core apps, but it isn't built into ASP.NET Core."

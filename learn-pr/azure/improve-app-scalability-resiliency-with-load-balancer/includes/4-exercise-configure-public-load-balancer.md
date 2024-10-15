@@ -68,7 +68,7 @@ Now, let's create the load balancer.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Name | Enter a unique name for the front-end IP configuration. For example *myFrontendIP* |
+    | Name | Enter a unique name for the front-end IP configuration. For example, *myFrontendIP* |
     | IP version | Select **IPv4** |
     | IP type | Select **IP address** |
     | Public IP address | Select **Create new**, then give your IP address a name and select **Save** |
@@ -76,7 +76,7 @@ Now, let's create the load balancer.
 
    :::image type="content" source="../media/4-add-frontend-ip-config.png" alt-text="Screenshot that shows the completed settings for the Add frontend IP configuration.":::
 
-1. To close the dialog box, select **Add**. The **Create load balancer** pane appears.
+1. To close the dialog box, select **Save**. The **Create load balancer** pane appears.
 
 ## Add a back-end pool
 
@@ -138,7 +138,7 @@ Finally, let's create a rule for the load balancer.
     | Setting | Value |
     | ----- | ----------- |
     | Session persistence*| **None** (default) |
-    | Idle timeout (minutes) | Select **4** (default). This value is the time to keep a TCP or HTTP connection open without relying on clients to send keep-alive messages. |
+    | Idle timeout (minutes) | Select **4** (default). This value is the time to keep a Transmission Control Protocol (TCP) or HTTP connection open without relying on clients to send keep-alive messages. |
     | Floating IP | **Disabled** (default). |
 
    :::image type="content" source="../media/4-new-lb-rule.png" alt-text="Add a new load balancing rule.":::
@@ -189,7 +189,7 @@ First, we need a public IP address for the load balancer.
 
 When you use PowerShell to configure a load balancer, you must create the back-end address pool, the health probe, and the rule before you create the balancer itself.
 
-1. Create a back-end address pool by running the **New-AzLoadBalancerBackendAddressPoolConfig** cmdlet. You'll attach the virtual machines to this back-end pool in the final steps. The following example creates a back-end address pool named **myBackEndPool**:
+1. Create a back-end address pool by running the **New-AzLoadBalancerBackendAddressPoolConfig** cmdlet. You're going to attach the virtual machines to this back-end pool in the final steps. The following example creates a back-end address pool named **myBackEndPool**:
 
     ```powershell
     $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
@@ -282,7 +282,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --backend-pool-name myBackEndPool
     ```
 
-1. To allow the load balancer to monitor the healthcare portal's status, create a health probe. The health probe dynamically adds or removes virtual machines from the load-balancer rotation based on their response to health checks.
+1. Create a health probe that allows the load balancer to monitor the healthcare portal's status. The health probe dynamically adds or removes virtual machines from the load-balancer rotation based on their response to health checks.
 
     ```azurecli
     az network lb probe create \
@@ -308,7 +308,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --probe-name myHealthProbe
     ```
 
-1. Connect the virtual machines to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
+1. Connect the virtual machines to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
 
     ```azurecli
     az network nic ip-config update \
@@ -340,7 +340,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 ## Test the load balancer configuration
 
-Let's test the load balancer setup to show how it can handle availability and health issues dynamically.
+Let's test the load balancer setup, by showing how it can handle availability and health issues dynamically.
 
 1. In a new browser tab, go to the public IP address that you noted. A response from one of the virtual machines is displayed in the browser.
 
