@@ -6,7 +6,7 @@ metadata:
   description: Learn how to use the Visual Studio Code debugger to inspect variables and add watchers during execution.
   author: diberry
   ms.author: diberry
-  ms.date: 06/01/2023
+  ms.date: 04/19/2024
   ms.topic: unit
   ms.custom:
     - team=nextgen

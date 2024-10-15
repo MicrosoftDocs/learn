@@ -151,3 +151,4 @@ When you no longer need the resources in this exercise use the following command
 az group delete --name az204-evgrid-rg --no-wait 
 ```
 
+

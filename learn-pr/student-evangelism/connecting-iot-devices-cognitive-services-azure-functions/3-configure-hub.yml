@@ -4,12 +4,11 @@ title: How to configure IoT device to the IoT Hub
 metadata:
   title: How to configure IoT device to the IoT Hub
   description: In this section, we help the learner to configure the IoT device to the cloud
-  ms.date: 04/07/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-  ms.service: iot-hub
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-configure-hub.md)]

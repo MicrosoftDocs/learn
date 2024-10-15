@@ -1,8 +1,6 @@
----
-ms.custom:
-  - build-2023
----
-One of the most intuitive ways to analyze the results of data queries is to visualize them as charts. Notebooks in Microsoft Fabric provide some basic charting capabilities in the user interface, and when that functionality doesn't provide what you need, you can use one of the many Python graphics libraries to create and display data visualizations in the notebook.
+One of the most intuitive ways to analyze the results of data queries is to visualize them as charts. Microsoft Fabric includes Power BI, a rich data visualization technology that you can use to create reports and dashboards to support business analytics. However, in some data exploration and analytics scenarios you might want to visualize data in a notebook. That's the scenario we'll explore in this unit.
+
+Notebooks in Microsoft Fabric provide some basic charting capabilities in the user interface, and when that functionality doesn't provide what you need, you can use one of the many Python graphics libraries to create and display data visualizations in the notebook.
 
 ## Using built-in notebook charts
 

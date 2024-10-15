@@ -2,12 +2,14 @@
 uid: learn.wwl.analyze-images
 metadata:
   title: Analyze images
-  description: "Analyze images"
-  ms.service: azure-ai-services
-  ms.date: 02/05/2024
+  description: Analyze images
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
+  ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Analyze images
 summary: With the Azure AI Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
 abstract: |

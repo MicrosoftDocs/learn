@@ -3,7 +3,7 @@ uid: learn.wwl.advanced-security-compute
 metadata:
   title: Plan and implement advanced security for compute
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats."
-  ms.date: 05/02/2024
+  ms.date: 06/10/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product

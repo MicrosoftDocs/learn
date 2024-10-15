@@ -3,11 +3,13 @@ uid: learn.get-started-prompt-flow-ai-studio.variants-monitor
 title: Explore variants and monitoring options
 metadata:
   title: Explore variants and monitoring options
-  description: "Learn about variants and how to monitor within prompt flow."
-  ms.date: 01/25/2024
+  description: Learn about variants and how to monitor within prompt flow.
   author: madiepev
   ms.author: madiepev
+  ms.date: 01/25/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/5-variants-monitor.md)]

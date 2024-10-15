@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.describe-purview-data-solutions
+metadata:
+  title: Describe the data security solutions of Microsoft Purview
+  description: "Describe the data security solutions of Microsoft Purview."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.service: purview
+title: Describe the data security solutions of Microsoft Purview
+summary: "Describe the data security solutions of Microsoft Purview."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.
+  - Describe how Microsoft Purview Data Loss Prevention helps organizations prevent their users from inappropriately sharing sensitive data with people who shouldn't have it.
+  - Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/generic-badge.svg
+hidden: false
+levels:
+  - beginner
+roles:
+  - business-user
+  - student
+products:
+  - microsoft-purview
+subjects:
+  - information-protection-governance
+units:
+- learn.describe-purview-data-solutions.introduction
+- learn.describe-purview-data-solutions.identify-sensitive-data
+- learn.describe-purview-data-solutions.describe-sensitivity-labels-policies
+- learn.describe-purview-data-solutions.describe-data-loss-prevention
+- learn.describe-purview-data-solutions.describe-insider-risk-management
+- learn.describe-purview-data-solutions.describe-adaptive-protection
+- learn.describe-purview-data-solutions.knowledge-check
+- learn.describe-purview-data-solutions.summary
+badge:
+  uid: learn.describe-purview-data-solutions.badge
+  

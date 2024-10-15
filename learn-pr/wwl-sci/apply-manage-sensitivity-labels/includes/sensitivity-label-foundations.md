@@ -1,8 +1,10 @@
+Applying sensitivity labels in Microsoft 365 is essential for securing sensitive information, enabling organizations to protect critical data like financial details and strategic plans. These labels ensure that only authorized individuals have access, maintaining high data security standards while allowing seamless collaboration.
+
 In our global consultancy firm, the marketing team is preparing to launch a new service that uses data analysis and AI to offer unique insights to our clients. This initiative involves handling sensitive information, including financial details and strategic plans. Sensitivity labels in Microsoft 365 are essential tools at your disposal to ensure this data remains secure.
 
 As part of this effort, you're tasked with deploying sensitivity labels throughout our Microsoft 365 environment for the new service launch. This project requires teamwork from around the world, including remote workers. Your main goals are to keep client information safe and make sure teams can work together smoothly.
 
-This unit guides you on how to:
+Here you learn to:
 
 - **Identify the function of sensitivity labels**: Describe how sensitivity labels secure critical data in Microsoft 365 environments like Teams, Groups, and SharePoint Sites.
 - **Apply sensitivity labels for your organization**: Demonstrate the process to enable and implement sensitivity labels across Microsoft 365 services for data protection.
@@ -36,7 +38,7 @@ After a sensitivity label is applied to a site, you must have the following role
 
 ### Enable sensitivity labels for containers and synchronize labels
 
-When you enable sensitivity labels for containers like Microsoft Teams, Microsoft 365 Groups, and SharePoint sites allow you to extend the data protection and compliance capabilities of Microsoft 365 to these environments. Follow these steps in this one-time procedure if you need to enable sensitivity labels for containers in your environment:
+To use Microsoft Purview's data protection and compliance capabilities for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites, follow these steps to enable sensitivity labels for containers in your environment.:
 
 1. **Enable labels**: Follow the [Microsoft Entra documentation to enable sensitivity labels for Microsoft 365 Groups](/entra/identity/users/groups-assign-sensitivity-labels?azure-portal=true).
 1. **Synchronize labels**: Connect to [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true) as an administrator, and run the `Execute-AzureAdLabelSync` command to sync labels with Microsoft Entra ID.
@@ -64,7 +66,3 @@ After sensitivity labels are enabled for containers, you can then configure prot
 Now that we've covered the basics of using sensitivity labels in our Microsoft 365 tools, it's clear these steps are just the beginning of ensuring our firm's information is well protected and compliant.
 
 Next, we explore how to effectively manage sensitivity labels in Office applications, ensuring documents and emails are protected.
-
-## Knowledge check
-
-Select the best response to the question, then select **Check your answers**.

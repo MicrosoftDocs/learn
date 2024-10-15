@@ -14,11 +14,11 @@ Let's continue using our existing functions app and add an HTTP trigger.
 
 1. Select the **Create** button at the top of the **Functions** tab. This action starts the function creation process. The **Create function** pane appears.
 
-1. In the **Select a template** section, select **HTTP trigger**.
+1. In the **Select a template** section, select **HTTP trigger**, then select **Next**.
 
 1. In the **Template details** section, in **New Function** field, enter a name for the function. Scroll down and in the **Authorization level** dropdown list, select *Anonymous*, and then select **Create**. Your newly created Function pane appears.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**, and review the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. Check to see if *name* has a value. If it does, we return a greeting. Otherwise, it continues to ask for a value.
+1. In the taskbar at the top of the screen, select **Code + Test**, and review the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. Check to see if *name* has a value. If it does, we return a greeting. Otherwise, it continues to ask for a value.
 
 ## Get your function URL
 

@@ -3,12 +3,12 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
   title: Monitor your Azure virtual machines with Azure Monitor
   description: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
-  ms.date: 11/06/2023
+  ms.date: 09/26/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: module
   ms.custom: engagement-fy23
-  ms.service: virtual-machines
+  ms.service: azure-virtual-machines
 title: Monitor your Azure virtual machines with Azure Monitor
 summary: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
 abstract: | 

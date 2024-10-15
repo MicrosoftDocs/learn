@@ -3,6 +3,7 @@ uid: learn.azure.cna-build-iot-service
 metadata:
   title: Build an IoT service for your cloud-native apps by using IoT Central
   description: Extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and by using Cosmos DB to provide a persistent data store.
+  manager: mkluck
   ms.date: 02/22/2024
   author: rmcmurray
   ms.author: robmcm

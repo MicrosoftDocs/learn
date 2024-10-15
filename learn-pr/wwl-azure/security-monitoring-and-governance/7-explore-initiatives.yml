@@ -4,12 +4,12 @@ title: Explore initiatives
 metadata:
   title: Explore initiatives
   description: "Explore initiatives"
-  ms.date: 06/25/2023
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/7-explore-initiatives.md)]

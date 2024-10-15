@@ -3,13 +3,13 @@ uid: learn.wwl.understand-postgresql-query-process.identify-components
 title: Identify the query processing components
 metadata:
   title: Identify the query processing components
-  description: "Identify the query processing components"
-  ms.date: 10/27/2022
+  description: "Identify the query processing components."
+  ms.date: 05/11/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-identify-components.md)]

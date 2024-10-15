@@ -32,9 +32,9 @@ A plugin for Microsoft Sentinel may have similar capabilities but runs only with
 
 Copilot currently supports plug-ins for Microsoft services and non-Microsoft services, including websites and custom plug-ins that can be enabled.
 
-:::image type="content" source="../media/manage-plugins.png" lightbox="../media/manage-plugins.png" alt-text="A screen capture of the plugins window, showing the Microsoft plugins, including Entra, Intune, Microsoft Defender XDR, and more.":::
+:::image type="content" source="../media/microsoft-plugins-updated.png" lightbox="../media/microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the Microsoft plugins, including Entra, Intune, Microsoft Defender XDR, and more.":::
 
-:::image type="content" source="../media/plugins-other-web.png" lightbox="../media/plugins-other-web.png" alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
+:::image type="content" source="../media/non-microsoft-plugins-updated.png" lightbox="../media/non-microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
 
 Some plugins require setup and configuration, as depicted by the Set up button or the gear icon. For Microsoft plugins, set up may be required where resource specific information needs to be specified. For non-Microsoft sources, set up may be required for account authentication.
 

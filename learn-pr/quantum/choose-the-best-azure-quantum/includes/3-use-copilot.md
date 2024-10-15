@@ -1,10 +1,12 @@
 
-To start exploring the Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown.
+In this unit, you'll learn how to use Copilot in Azure Quantum to explore quantum computing and quantum programming. Copilot is an AI-powered tool that can generate Q# code from your prompts and engage in conversations about quantum computing. You can also run your code and ask Copilot to explain quantum computing concepts.
+
+To start exploring Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown.
 
 ## Run a quantum program
 
 1. Navigate to the [Code in Azure Quantum](https://quantum.microsoft.com/en-us/experience/quantum-coding).
-1. Select **Quantum Samples** and then select **Random Number Generator**. The following code is copied to the code window.
+1. Select **Quantum Samples**, and then select **Random Number Generator**. The following code is copied to the code window.
 
     ```qsharp
     /// # Sample
@@ -62,9 +64,9 @@ To run your program again using a different simulator:
     - The job status is displayed at the top of the code window.
     - A histogram of the results is displayed below the code window. Results for each shot aren't currently available with the Quantinuum H-Series Emulator.
 
-## Ask the Copilot
+## Ask Copilot
 
-You can prompt the Copilot in Azure Quantum for almost anything quantum related. For example ask the Copilot the following questions and see what happens:
+You can prompt Copilot in Azure Quantum for almost anything quantum related. For example, ask Copilot the following questions and see what happens:
 
 - "Explain the MResetZ operation"
 - "Write Q# code that entangles two qubits"

@@ -3,20 +3,28 @@ uid: learn.wwl.define-microsoft-ai-strategy-healthcare
 metadata:
   title: Define a Microsoft AI strategy to create business value in healthcare
   description: "Discover AI use cases and scenarios for healthcare. Get familiar with Microsoft AI tools and services for healthcare. Learn from real success stories."
-  ms.date: 11/30/2023
+  ms.date: 08/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.service: azure-ai-services
+  ms.custom:
+  - N/A
+  ms.service: microsoft-cloud-healthcare
+  ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in healthcare
 summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
 abstract: |
-  * Identify AI use cases in healthcare.
-  * Examine available AI tools and resources for healthcare scenarios.
-  * Discover insights from healthcare-specific AI success stories.
+  -   Describe goals and challenges in life sciences, pharmacology, and healthcare
+
+  -   Identify opportunities for AI in life sciences, pharmacology, and healthcare
+
+  -   Describe common use cases in life sciences, pharmacology, and healthcare
+
+  -   Explore how Microsoft AI technologies can help health providers
 prerequisites: |
-  * Basic understanding of AI concepts.
-  * Basic understanding of healthcare concepts.
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of healthcare concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -29,9 +37,10 @@ subjects:
 - data-management
 units:
 - learn.wwl.define-microsoft-ai-strategy-healthcare.introduction
-- learn.wwl.define-microsoft-ai-strategy-healthcare.explore-ai-goals-challenges-healthcare
-- learn.wwl.define-microsoft-ai-strategy-healthcare.identify-ai-sciences-pharmaceuticals-healthcare-sector
-- learn.wwl.define-microsoft-ai-strategy-healthcare.identify-ai-health-providers
+- learn.wwl.define-microsoft-ai-strategy-healthcare.1b-ai-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.goals-challenges-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.opportunities-ai-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.microsoft-ai-health-providers
 - learn.wwl.define-microsoft-ai-strategy-healthcare.discover-potential-zimmer-biomet-success-story
 - learn.wwl.define-microsoft-ai-strategy-healthcare.knowledge-check
 - learn.wwl.define-microsoft-ai-strategy-healthcare.summary

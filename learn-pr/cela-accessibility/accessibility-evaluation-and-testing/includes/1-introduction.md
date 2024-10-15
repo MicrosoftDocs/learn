@@ -6,3 +6,5 @@ Accessibility evaluation and testing are essential processes to ensure that acce
 - **Accessibility testing** is the process of verifying and validating the accessibility of a product or service, using various methods and tools.
 
 In this module, you learn about the different types of accessibility testing, including manual testing, automated testing, and user testing. You also develop the skills to conduct accessibility evaluations and testing, using Accessibility Insights and Accessibility Checker, two popular tools that help you identify and fix accessibility issues. You also understand how to interpret the results of accessibility testing and make recommendations for improvements. Finally, learn how to collaborate with others to identify and address accessibility issues and promote a culture of inclusion and accessibility.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9240899-2830-4f70-9fd2-d5d6db86e2e3]

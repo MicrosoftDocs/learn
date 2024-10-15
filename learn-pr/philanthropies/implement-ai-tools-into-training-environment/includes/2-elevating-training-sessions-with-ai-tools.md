@@ -1,6 +1,6 @@
 AI is optimizing education with innovative and interactive training and learning tools. In this video, you will learn how the workplace is changing and how you can benefit from integrating generative AI tools into your training environments.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6892a47c-017c-4e31-a330-69b1881f5e15]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2281095]
 
 Now that you have seen how workplaces are changing due to AI, let's explore how it can help learner engagement.
 

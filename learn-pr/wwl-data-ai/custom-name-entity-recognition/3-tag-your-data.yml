@@ -3,11 +3,13 @@ uid: learn.wwl.custom-name-entity-recognition.tag-your-data
 title: Label your data
 metadata:
   title: 3-tag-your-data
-  description: "Label your data"
-  ms.date: 2/21/2024
+  description: Label your data
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 2/21/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/3-tag-your-data.md)]

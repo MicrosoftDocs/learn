@@ -108,7 +108,7 @@ any_anns.success_message = "Found a1, a2, or a3"
 any_anns.failure_message = "Did not find a1, a2, or a3"
 
 one_ann = a1 ^ a2 ^ a3
-one_ann.success_message = "Found exactly of a1, a2, or a3"
+one_ann.success_message = "Found exactly one of a1, a2, or a3"
 one_ann.failure_message = "Did not find exactly one of a1, a2, or a3"
 ```
 

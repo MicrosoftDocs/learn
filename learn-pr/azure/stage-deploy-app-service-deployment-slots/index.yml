@@ -7,8 +7,8 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: module-standard-task-based
-  ms.service: app-service
-  manager: mijacobs
+  ms.service: azure-app-service
+  manager: susanpotter
 title: Stage a web app deployment for testing and rollback by using App Service deployment slots
 summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
 abstract: |

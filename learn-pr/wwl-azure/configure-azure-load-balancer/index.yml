@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: load-balancer
+  ms.service: azure-load-balancer
   ai-usage: ai-assisted
 title: Configure Azure Load Balancer
 summary: Learn how to configure an internal or public load balancer.

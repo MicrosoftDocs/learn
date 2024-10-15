@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-application-azure-paas.azure-cloud-native-services-modernize-database-workloads
+title: Discover how Azure cloud-native services can help modernize your database workloads
+metadata:
+  title: Discover how Azure cloud-native services can help modernize your database workloads
+  description: Learn how Azure cloud-native services can help modernize your database workloads.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-azure-cloud-native-services-modernize-database-workloads.md)]

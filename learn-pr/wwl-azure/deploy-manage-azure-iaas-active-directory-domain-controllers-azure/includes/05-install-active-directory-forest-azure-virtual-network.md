@@ -15,16 +15,6 @@ To implement a new Active Directory forest in Azure, perform the following proce
    - The name of the virtual network.
    - The DNS server addresses that point to the IP address of your new domain controller.
    - Virtual Network Address Spaces that define the IP address range for the VMs that run in Azure.
-1. Create a storage account:
-    1. Sign in to the Azure portal.
-    1. Search for and select **Storage accounts**, and then Select **Add**.
-    1. Select the Azure subscription and resource group that you want to use for the new storage account.
-    1. Enter a name for your storage account, and select a location.
-    1. Select a performance category.
-    1. Select the account type.
-    1. Specify the type of storage replication.
-    1. Choose whether to enable secure transfer.
-    1. Select **Review + Create**.
 1. Create the VMs to run both the domain controller and DNS server roles, using the procedure outlined in the preceding unit.
 1. Install the AD DS and DNS server roles, using the procedure outlined in the preceding unit.
 

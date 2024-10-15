@@ -13,11 +13,9 @@ When you assign roles, you must specify a scope. Scope is the set of resources t
 :::image type="content" source="../media/scope-levels-85683f9f.png" alt-text="Diagram showing an example of Azure role-based access control scope of resources.":::
 
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
-2. In the Search box at the top, search for the scope you want to grant access to. For example, search for **Management groups**, **Subscriptions**, **Resource groups**, or a specific resource.
-
-3. Click the specific resource for that scope.
+1.  Sign in to the [Azure portal](https://portal.azure.com/).
+2.  In the Search box at the top, search for the scope you want to grant access to. For example, search for **Management groups**, **Subscriptions**, **Resource groups**, or a specific resource.
+3.  Click the specific resource for that scope.
 
 The following shows an example resource group.
 
@@ -62,9 +60,7 @@ The following shows an example resource group.
     :::image type="content" source="../media/member-user-group-principal-20baff0d.png" alt-text="Screenshot showing how to assign who needs access in the role assignment page.":::
     
 2.  Click **Select members**.
-3.  Find and select the users, groups, or service principals.
-    
-    You can type in the **Select** box to search the directory for display name or email address.
+3.  Find and select the users, groups, or service principals. You can type in the **Select** box to search the directory for display name or email address.
     
     :::image type="content" source="../media/select-members-3c98ed7b.png" alt-text="Screenshot showing how to select a specific member for assignment.":::
     

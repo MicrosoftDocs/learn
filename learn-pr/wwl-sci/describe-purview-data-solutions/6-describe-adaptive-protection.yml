@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.describe-adaptive-protection
+title: Describe adaptive protection in Microsoft Purview
+metadata:
+  title: Describe adaptive protection in Microsoft Purview
+  description: "Describe adaptive protection in Microsoft Purview."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-describe-adaptive-protection.md)]

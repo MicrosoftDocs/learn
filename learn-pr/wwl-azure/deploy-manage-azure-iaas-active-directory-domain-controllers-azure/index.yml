@@ -3,14 +3,14 @@ uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azur
 metadata:
   title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
   description: "Learn to deploy and manage Azure IaaS Active Directory domain controllers in Azure."
-  ms.date: 04/19/2024
+  ms.date: 06/20/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: active-directory
-  ms.subservice: aad-general
+  ms.service: azure-active-directory
+  ms.subservice: non-product-specific
   ai-usage: human-only
 title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
 summary: In this module, you learn how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure virtual network (VNet) subnet.

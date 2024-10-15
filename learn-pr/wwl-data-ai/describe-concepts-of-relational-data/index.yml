@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: sql-database
+  ms.service: azure-sql-database
   ai-usage: human-only
 title: Describe concepts of relational data
 summary: Explore the relational model for databases, how tables are structured, how you can use indexes to improve query performance, and how you can use views to simplify complex queries.

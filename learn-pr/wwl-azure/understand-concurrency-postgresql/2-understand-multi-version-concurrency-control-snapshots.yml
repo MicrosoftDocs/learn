@@ -3,13 +3,13 @@ uid: learn.wwl.understand-concurrency-postgresql.understand-multi-version-concur
 title: Understand multi-version concurrency control (MVCC) and snapshots
 metadata:
   title: Understand multi-version concurrency control (MVCC) and snapshots
-  description: "Understand multi-version concurrency control (MVCC) and snapshots"
-  ms.date: 09/16/2022
+  description: "Understand multi-version concurrency control (MVCC) and snapshots."
+  ms.date: 05/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-understand-multi-version-concurrency-control-snapshots.md)]

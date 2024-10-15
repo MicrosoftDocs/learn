@@ -100,7 +100,22 @@ The portal also provides a convenient way to test your functions. As previously 
 
 ### Run function manually
 
-You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
+You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can one of these HTTP test tools to initiate an HTTP request to your function endpoint URL:
+
+- [Visual Studio Code](https://code.visualstudio.com/download) with an [extension from Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode)
+- [PowerShell Invoke-RestMethod](/powershell/module/microsoft.powershell.utility/invoke-restmethod)
+- [Microsoft Edge - Network Console tool](/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool)
+- [Bruno](https://www.usebruno.com/)
+- [curl](https://curl.se/)
+
+ > [!CAUTION]  
+ > For scenarios where you have sensitive data, such as credentials, secrets, access tokens, 
+ > API keys, and other similar information, make sure to use a tool that protects your data 
+ > with the necessary security features, works offline or locally, doesn't sync your data to 
+ > the cloud, and doesn't require that you sign in to an online account. This way, you reduce 
+ > the risk around exposing sensitive data to the public.
+  
+You can get the URL endpoint of an HTTP trigger by selecting **Get function URL** from the function definition page in the portal.
 
 ## Monitoring and Application Insights dashboard
 
@@ -115,9 +130,10 @@ After you've enabled Application Insights in the Azure portal, you can add loggi
 ::: zone pivot="javascript"
 Write to logs from your code using the `log` method on the `context` object, which is passed to the handler. The following example writes to the default log level (information):
 
-  ```javascript
-  context.log('Enter your logging statement here');
-  ```
+```javascript
+context.log('Enter your logging statement here');
+```
+
 ::: zone-end
 <!-- until we have a C# pivot
 - In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.

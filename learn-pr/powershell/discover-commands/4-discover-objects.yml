@@ -9,6 +9,6 @@ metadata:
   ms.date: 02/23/2023
   ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/4-discover-objects.md)]

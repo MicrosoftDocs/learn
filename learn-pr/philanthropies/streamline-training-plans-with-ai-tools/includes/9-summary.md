@@ -33,8 +33,6 @@ To continue your learning journey for this topic, go to:
 
 1. Lu A, Snyder D, Nadel R, Arnett W. [Copilot in Teams](https://adoption.microsoft.com/inside-microsoft-teams/season-7/copilot-in-teams/). Microsoft. Published July 17, 2023.
 
-1. Pleasant B. [The future of meetings – using AI to improve team collaboration](https://www.microsoft.com/microsoft-365/business-insights-ideas/resources/the-future-of-meetings-using-ai-to-improve-team-collaboration). Microsoft. Published April 1, 2019.
-
 1. Herskowitz N. [How Microsoft Teams uses AI and machine learning to improve calls and meetings](https://www.microsoft.com/microsoft-365/blog/2022/06/13/how-microsoft-teams-uses-ai-and-machine-learning-to-improve-calls-and-meetings/). Microsoft. Published June 13, 2023.  
   
 1. [Unit 2. Introduction to AI. in: Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/introduction-ai). Microsoft. Publication unavailable.

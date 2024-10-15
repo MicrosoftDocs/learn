@@ -1,6 +1,6 @@
 High availability of SAP workloads relies either on the high availability features built into the workload or on a failover cluster implemented on the operating system level. A failover cluster is a group of independent servers that work together to increase the availability of applications and services. If a node failure occurs, the cluster performs node arbitration, and depending on the outcome, transfers the workload to one of the remaining nodes.
 
-Windows Server Failover Clustering is the service providing high availability in Windows Server. Windows Server Failover Clustering relies on the quorum construct to avoid split-brain scenarios. There are several different quorum modes, including node majority, node and disk majority, node and file share majority, and disk only. The recommended choice is Cloud Witness (introduced in Windows Server 2016). When using earlier versions of Windows, you need to choose either node majority, or node and file share (you can implement a highly available file share in Azure by using a Storage Spaces Direct cluster). Shared locally attached disks aren't natively supported on Azure VMs. Optionally you can resort to third-party solutions, such as SIOS DataKeeper, which emulate shared disks by synchronously replicating local disks across clustered Azure VMs.
+Windows Server Failover Clustering is the service providing high availability in Windows Server. Windows Server Failover Clustering relies on the quorum construct to avoid split-brain scenarios. There are several different quorum modes, including node majority, node and disk majority, node and file share majority, and disk only. The recommended choice is Cloud Witness (introduced in Windows Server 2016). When using earlier versions of Windows, you need to choose either node majority, or node and file share (you can implement a highly available file share in Azure by using a Storage Spaces Direct cluster). Shared locally attached disks aren't natively supported on Azure Virtual Machines. Optionally you can resort to third-party solutions, such as SIOS DataKeeper, which emulate shared disks by synchronously replicating local disks across clustered Azure Virtual Machines.
 
 ## STONITH Block Devices
 
@@ -35,7 +35,7 @@ To set up the end-to-end HA using STONITH, the following steps need to be follow
 
 For a detailed step-by-step guide, refer to [High availability set up in SUSE using the STONITH device](/azure/virtual-machines/workloads/sap/ha-setup-with-fencing-device).
 
-If you don't want to deploy other Azure VMs, you can use the Azure Fence agent. When using the Azure Fence Agent, consider setting the `skipShutdown` flag to forcefully skip the power off command graceful shutdown period. When the skipShutdown flag isn't set, a failover can take between 10 to 15 minutes.
+If you don't want to deploy other Azure Virtual Machines, you can use the Azure Fence agent. When using the Azure Fence Agent, consider setting the `skipShutdown` flag to forcefully skip the power off command graceful shutdown period. When the skipShutdown flag isn't set, a failover can take between 10 to 15 minutes.
 
 ## Virtual server names
 

@@ -7,6 +7,7 @@ Teleportation protocol uses a combination of entanglement and classical communic
 
 Let's review the protocol of quantum teleportation.
 
+
 ## The protocol of quantum teleportation
 
 Alice and Bob work together in the same company. Alice is based in Seattle, and Bob is based in Los Angeles. They are working on a project that requires them to share quantum information. They decide to use quantum teleportation to send quantum information between them.

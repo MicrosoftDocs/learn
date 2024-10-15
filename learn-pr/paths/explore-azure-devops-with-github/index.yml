@@ -7,7 +7,6 @@ metadata:
   ms.date: 10/05/2023
   author: kjo-msft
   ms.author: karinjohnson
-  ms.service: azure-devops
   ms.topic: learning-path
 summary: |
   Learn how to use GitHub Actions, Azure DevOps, and Azure Pipelines to build, test, and deploy applications.
@@ -22,8 +21,6 @@ products:
   - github
   - azure-devops
 modules:
-  - learn.wwl.migrate-to-devops
-  - learn.wwl.work-azure-repos-github
   - learn.wwl.introduction-to-github-actions
   - learn.wwl.learn-continuous-integration-github-actions
   - learn.wwl.explore-azure-pipelines

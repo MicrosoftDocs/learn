@@ -5,7 +5,7 @@ Microsoft Fabric provides tools for both citizen and professional data practitio
 - Data engineering
 - Data integration
 - Data warehousing
-- Real-time analytics
+- Real-time intelligence
 - Data science
 - Business intelligence
 

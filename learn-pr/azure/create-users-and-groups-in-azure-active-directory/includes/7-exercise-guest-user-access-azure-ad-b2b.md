@@ -1,6 +1,6 @@
-The external and internal developer teams want to work together, so you decide to create guest user access for the external developer team. 
+The external and internal developer teams want to work together, so you decide to create guest-user access for the external developer team. 
 
-Use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to a Microsoft Entra organization, group, or application. After you invite a user, their account is added to Microsoft Entra ID, with a guest user type.
+Use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to a Microsoft Entra organization, group, or application. After you invite a user, their account is added to Microsoft Entra ID with a *guest user* type.
 
 After you add a guest user to the organization, send them a direct link to a shared app. Have the guest user open the redemption URL in the invitation email.
 
@@ -32,7 +32,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Search for the guest account you added to the organization.
 
-1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
+1. Select the box next to the account and select the **Select** button. The **Members** pane for your developer group appears.
 
    You now see the user in the list of members for this group. You might need to refresh to see the new user.
 
@@ -60,19 +60,19 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Under **Users and groups**, select the **None Selected** link. The **Users and groups** pane appears.
 
-1. Select the guest user you added in the previous exercise, and select **Select**. The **Add Assignment** pane reappears.
+1. Select the check box for the guest user you added in the previous exercise, then select the **Select** button. The **Add Assignment** pane reappears.
 
-1. Select **Assign**. The **Users and groups** pane for Docusign appears. You now see the user in the list for this application.
+1. Select **Assign**. The **Users and groups** pane for Docusign appears. The user is now in the list for this application.
 
-1. To check that the correct access level is set, select the user in the list.
+1. To check that the correct access level is set, select check box for the user in the list.
 
    :::image type="content" source="../media/7-select-user.png" alt-text="Screenshot that shows the user selected on the users and groups page.":::
 
-1. On the top menu bar, select **Edit**. The **Edit Assignment** pane appears.
+1. On the top menu bar, select **Edit assignment**. The **Edit Assignment** pane appears.
 
 1. Under **Select a role**, select the **None Selected** link. The **Select a role** pane appears.
 
-1. Select **DocuSign Sender**, and then select **Select** to make sure they have the correct access.
+1. Select **DocuSign Sender**, and then select the **Select** button to make sure they have the correct access.
 
    :::image type="content" source="../media/7-select-role.png" alt-text="Screenshot that shows role selected for user.":::
 
@@ -92,7 +92,7 @@ If the guest user didn't receive the first email invitation, you can resend an i
 
 1. In your Microsoft Entra organization, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-1. Select the user. The **Profile** pane for the user appears.
+1. Select the user. The user's **Profile** pane appears.
 
 1. Scroll down to the **B2B invitation** box and select the **Resend invitation** link.
 

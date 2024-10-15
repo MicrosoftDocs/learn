@@ -7,8 +7,12 @@ metadata:
   author: acomfort248
   ms.author: chnoring
   ms.topic: module-standard-task-based
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
   ms.devlang: python
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
+  ms.service: azure-ai-services
 title: Build an AI web app by using Python and Flask
 summary: Use Python, Flask, and Azure AI services to build a web app that incorporates AI
 abstract: | 

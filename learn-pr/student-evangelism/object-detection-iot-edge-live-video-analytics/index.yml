@@ -3,12 +3,13 @@ uid: learn.oxford.object-detection-lva-edge-device
 metadata:
   title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
   description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
-  ms.date: 4/27/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: chnoring
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.custom: team=cloud_advocates
   ms.service: iot-edge
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
 summary: "Use a Live Video Analytics module to deploy a machine learning solution to an IoT Edge device. The solution will process a video feed from cameras and detect objects at the edge using a YOLO model to perform inferencing operations. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |

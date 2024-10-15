@@ -2,7 +2,7 @@ Azure Backup provides independent and isolated backups to guard against unintend
 
 Your company has several critical virtual machine workloads running on Azure. You're responsible for ensuring the company can recover these virtual machines if there's data loss or corruption. You're using the built-in capabilities of Azure Backup to help protect your virtual machines. Your configuration uses Azure Backup for both Azure and on-premises workloads.
 
-In this module, you learn about different virtual machine backup strategies. these strategies work for both Azure and on-premises virtual machines. You review how Azure Backup provides many options for backup and recovery. You also learn about other strategies like snapshots, soft delete, and Azure Site Recovery.
+In this module, you learn about different virtual machine backup strategies. These strategies work for both Azure and on-premises virtual machines. You review how Azure Backup provides many options for backup and recovery. You also learn about other strategies like snapshots, soft delete, and Azure Site Recovery.
 
 The goal of this module is to equip you with the knowledge and skills to effectively use Azure Backup and Recovery Services. 
 

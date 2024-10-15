@@ -13,13 +13,9 @@ Azure also offers two types of file shares: standard and premium. There are key 
 
 ## Creating Azure SMB file shares
 
-This video shows you how to create an SMB Azure file share.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f846e86c-cf83-4311-a67d-190944635e53]
-
 There are two important settings that you need to be aware of when creating and configuring SMB Azure file shares.
 
-- **Open port 445**. Azure Files uses the SMB protocol. SMB communicates over TCP port 445. Be sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine.
+- **Open port 445**. Azure Files uses the SMB protocol. SMB communicates over TCP port 445. Be sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine. If you can't unblock port 445, then a VPN or ExpressRoute connection from on-premises to your Azure network is required, with Azure Files exposed on your internal network using private endpoints.
 
 - **Enable secure transfer**. The `Secure transfer required` setting enhances the security of your storage account by limiting requests to your storage account from secure connections only. Consider the scenario where you use REST APIs to access your storage account. If you attempt to connect, and secure transfer required is enabled, you must connect by using HTTPS. If you try to connect to your account by using HTTP, and secure transfer required is enabled, the connection is rejected.
 

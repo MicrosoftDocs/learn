@@ -1,4 +1,4 @@
-In this exercise, you'll use SQLite to store information locally with an application. In the sample scenario, you decided to cache data for the social-media app to improve responsiveness. This exercise creates and uses a local SQLite database for storing information about people. You'll save the physical database file in local storage.
+In this exercise, you use SQLite to store information locally with an application. In the sample scenario, you decided to cache data for the social-media app to improve responsiveness. This exercise creates and uses a local SQLite database for storing information about people. You save the physical database file in local storage.
 
 [!include[](../../../includes/dotnet8-sdk-version.md)]
 
@@ -9,7 +9,7 @@ In this exercise, you'll use SQLite to store information locally with an applica
     > [!NOTE]
     > It's best to clone the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
-1. Use Visual Studio to open the **People.sln** solution, which you'll find in **mslearn-dotnetmaui-store-local-data** > **People**, or the starter folder in Visual Studio Code.
+1. Use Visual Studio to open the **People.sln** solution, which you find in **mslearn-dotnetmaui-store-local-data** > **People**, or the starter folder in Visual Studio Code.
 
     > [!NOTE]
     > Don't try and build the solution just yet. The code is incomplete and won't compile until you add the missing elements later in this exercise.
@@ -23,10 +23,12 @@ In this exercise, you'll use SQLite to store information locally with an applica
 1. Modify the class and mark it as `public`:
 
     ```csharp
-    namespace People.Models;
-
-    public class Person
+    namespace People.Models
     {
+
+        public class Person
+        {
+        }
     }
     ```
 
@@ -35,12 +37,14 @@ In this exercise, you'll use SQLite to store information locally with an applica
 1. Add a `string` property called `Name`. The class should look like this:
 
     ```csharp
-    namespace People.Models;
-
-    public class Person
+    namespace People.Models
     {
+
+        public class Person
+        {
         public int Id { get; set; }
         public string Name { get; set; }
+        }
     }
     ```
 
@@ -70,10 +74,10 @@ dotnet add package SQLitePCLRaw.bundle_green
     ```csharp
     using SQLite;
 
-    namespace People.Models;
-
-    public class Person
+    namespace People.Models
     {
+
+        public class Person
         ...
     }
     ```
@@ -89,16 +93,18 @@ dotnet add package SQLitePCLRaw.bundle_green
     ```csharp
     using SQLite;
 
-    namespace People.Models;
-
-    [Table("people")]
-    public class Person
+    namespace People.Models
     {
-        [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
 
-        [MaxLength(250), Unique]
-        public string Name { get; set; }
+        [Table("people")]
+        public class Person
+        {
+            [PrimaryKey, AutoIncrement]
+            public int Id { get; set; }
+
+            [MaxLength(250), Unique]
+            public string Name { get; set; }
+        }
     }
     ```
 
@@ -108,7 +114,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. Open the **PersonRepository.cs** file.
 
-1. Examine the `PersonRepository` class. This class contains incomplete skeleton code with `TODO` markers where you'll add the functionality to access the database.
+1. Examine the `PersonRepository` class. This class contains incomplete skeleton code with `TODO` markers where you add the functionality to access the database.
 
 1. Add a `using` directive for the `SQLite` and `People.Models` namespaces to the file for the `PersonRepository.cs` class.
 
@@ -148,7 +154,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. In `PersonRepository` class, find the `AddNewPerson` method.
 
-1. Replace the `TODO` comment in this method with code to insert a new `Person` object. The code first calls `Init` to verify the database is initialized, then uses the `SQLiteConnection` object's `Insert` method. Set the `result` variable to the value the `Insert` method returns, as shown in the following code:
+1. To insert a new `Person` object, replace the `TODO` comment in this method with code. The code first calls `Init` to verify the database is initialized, then uses the `SQLiteConnection` object's `Insert` method. Set the `result` variable to the value the `Insert` method returns, as shown in the following code:
 
     ```csharp
     public void AddNewPerson(string name)
@@ -175,7 +181,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. In the `PersonRepository` class, find the `GetAllPeople` method.
 
-1. Call `Init` to verify the database has been initialized.
+1. Call `Init` to verify that the database is initialized.
 
 1. Use the generic `Table\<T>` method to retrieve all of the rows in the table. Specify `Person` as the type parameter.
 
@@ -208,7 +214,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. In the `CreateMauiApp` function, after the statements that add the `MainPage` page as a singleton service to the app, add code to perform the following tasks:
 
-    - Create a string variable named `dbPath`. Initialize this string with the expression `FileAccessHelper.GetLocalFilePath("people.db3")`. The database file the app uses will be called **people.db3**, and the app will save this file in local storage on the device.
+    - Create a string variable named `dbPath`. Initialize this string with the expression `FileAccessHelper.GetLocalFilePath("people.db3")`. The database file the app uses is called **people.db3**, and the app saves this file in local storage on the device.
 
     - Use dependency injection to add the `PersonRepository` class as a singleton service to the app. The `PersonRepository` class exposes a constructor that takes the path to the database file as a string parameter.
 
@@ -238,7 +244,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. Expand **App.xaml** in the Solution Explorer, then open the **App.xaml.cs** file.
 
-1. Add a `public`, `static` property called `PersonRepo` to hold a `PersonRepository` object to the `App` class.
+1. Add a `public`, `static` property called `PersonRepo`. This property holds a `PersonRepository` object to the `App` class.
 
 1. Initialize the `PersonRepo` property in the constructor by adding a `PersonRepository` parameter to the constructor and setting the 'PersonRepo' property to the value in this parameter. The completed `App` class should look like this:
 
@@ -263,9 +269,10 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 ## Test the application
 
-1. Build the solution by using <kbd>CTRL+Shift+B</kbd> and start debugging by using <kbd>F5</kbd>. When the UI appears, enter your name and select **Add Person**.
+1. Build the solution by using <kbd>CTRL+Shift+B</kbd>. 
+1. Once the build completes, start debugging by using <kbd>F5</kbd>. When the UI appears, enter your name and select **Add Person**.
 
-    :::image type="content" source="../media/4-app-person-results.png" alt-text="A screenshot of the app with a successful message stating a record has been added.":::
+    :::image type="content" source="../media/4-app-person-results.png" alt-text="A screenshot of the app with a successful message stating that a record is added.":::
 
 1. Select **Get All People** and verify that your name appears.
 

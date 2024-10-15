@@ -3,8 +3,8 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Validate the Microsoft Purview scan
 metadata:
   title: Validate the Microsoft Purview scan
-  description: "One of the main features of this data stack, is an end to end lineage of data movement through the data estate. If we look at what we have done so far, we can agree that we have our data in container storage and that it has also now moved through CluedIn and back out to the same container storage - but in a different folder."
-  ms.date: 11/29/2023
+  description: "One of the main features of this data stack, is an end to end lineage of data movement through the data estate. We can see that our data is in container storage. We can also see that it moved through CluedIn and back out to the same container storage, but in a different folder."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
   ms.topic: unit

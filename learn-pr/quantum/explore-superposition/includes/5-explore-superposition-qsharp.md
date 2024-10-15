@@ -1,15 +1,14 @@
 
-In this unit, you'll learn to explore quantum superposition and probabilities in Q# by using the `DumpMachine` function. 
+That's enough theory for now! Let's explore superposition in Q# by writing some code. 
 
-The `DumpMachine` function dumps information about the current status of the target machine at the point where it's called.
-
+In this unit, you'll learn to create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
 
 > [!NOTE]
 > The `DumpMachine` function is useful only for simulations. On quantum
-> hardware, `DumpMachine` does nothing because we can't access the
+> hardware, `DumpMachine` does nothing because you can't access the
 > state of the qubit register during execution. Remember that measuring the
 > state of a qubit can change its state. On simulated virtual quantum computers,
-> we can use tools like `DumpMachine` to explore the state of the system.
+> you can use tools like `DumpMachine` to explore the state of the system.
 
 ## Create a new Q# file
 
@@ -20,7 +19,7 @@ The `DumpMachine` function dumps information about the current status of the tar
 
 ### Get started
 
-Let's start with a simple program that generates a random bit using a qubit in superposition. We'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
+Let's start with a simple program that generates a random bit using a qubit in superposition. You'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
 
 1. Add the following code to the **Superposition.qs** file:
 
@@ -234,11 +233,11 @@ instead of measuring one qubit three times.
     }
     ```
 
-    Here, we introduce three concepts:
+    Here, you see three concepts:
 
     * The `qubits` variable now represents a `Qubit` array that has a length of three.
-    * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they useless code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
-    * The `BoolArrayAsInt`] and `ResultArrayAsBoolArray` functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
+    * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they use less code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
+    * The `BoolArrayAsInt` and `ResultArrayAsBoolArray` functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
 
 1. To run the program, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
 1. By using `DumpMachine`, you see how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states. For example, if you get the result `3`, it means that the state of the register collapsed to $|110\rangle$.

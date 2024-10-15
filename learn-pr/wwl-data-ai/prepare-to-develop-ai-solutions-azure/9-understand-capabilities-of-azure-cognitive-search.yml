@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-search
-title: Understand capabilities of Azure Cognitive Search
+title: Understand capabilities of Azure AI Search
 metadata:
-  title: Understand capabilities of Azure Cognitive Search
-  description: "Understand capabilities of Azure Cognitive Search"
-  ms.date: 12/10/2023
+  title: Understand capabilities of Azure AI Search
+  description: Understand capabilities of Azure AI Search
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 8/28/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

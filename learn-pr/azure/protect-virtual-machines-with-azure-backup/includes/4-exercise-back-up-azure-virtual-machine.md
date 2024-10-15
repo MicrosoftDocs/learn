@@ -1,8 +1,8 @@
-Your company runs a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
+Your company runs a combination of Windows and Linux workloads. You're asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you help protect both kinds of virtual machines with Azure Backup.
 
-Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
+Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
-In this exercise, you'll create a VM, set up a backup, and start a backup.
+In this exercise, you create a virtual machine (VM), set up a backup, and start a backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
@@ -60,7 +60,7 @@ az vm create \
     --resource-group $RGROUP \
     --name NW-RHEL01 \
     --size Standard_DS1_v2 \
-    --image RedHat:RHEL:7-RAW:latest \
+    --image RedHat:RHEL:8-gen2:latest \
     --authentication-type ssh \
     --generate-ssh-keys \
     --vnet-name NorthwindInternal \
@@ -83,7 +83,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     The **NW-RHEL01** virtual machine pane appears.
 
-1. In the middle menu pane, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. In the middle menu pane, select the **Capabilities** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. Select the radio button for **Standard**. You can accept the defaults for the following options:
 
@@ -94,7 +94,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **Enable backup** button.
 
-1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, scroll down to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
+1. Once deployment completes, go back to the **NW-RHEL01** virtual machine, select the **Capabilities** tab, then scroll down to and select **Backup**. The **Backup** pane for the *NW-RHEL01* virtual machine appears.
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
@@ -109,6 +109,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
     ```azurecli
     az backup vault create \
         --resource-group vmbackups \
+        --location westus2 \
         --name azure-backup
     ```
 
@@ -131,7 +132,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --output table
     ```
 
-    Keep running the preceding command until you see that `ConfigureBackup` has finished.
+    Keep running the preceding command until you see that `ConfigureBackup` is finished.
 
     ```output
     Name                                  Operation        Status      Item Name    Start Time UTC                    Duration
@@ -153,7 +154,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --backup-management-type AzureIaasVM
     ```
 
-    There's no need to wait for the backup to finish, because you'll see how to monitor the progress in the portal next.
+    There's no need to wait for the backup to finish, because the next section shows you how to monitor the progress in the portal.
 
 ## Monitor backups in the portal
 
@@ -165,7 +166,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **NW-APP01** virtual machine. The *NW-APP01* virtual machine pane appears.
 
-1. In the middle menu pane, scroll to **Backup + Disaster recovery**, and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
+1. In the middle menu pane, select the **Capabilities** tab, then scroll to and select **Backup**. The **Backup** pane for the *NW-APP01* virtual machine appears.
 
     Under the **Backup status** section, the **Last backup status** field displays the current status of the backup.
 

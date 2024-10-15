@@ -3,10 +3,11 @@ uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
   title: Describe threat protection with Microsoft Defender XDR
   description: "Describe threat protection with Microsoft Defender XDR"
-  ms.date: 01/03/2024
+  ms.date: 08/15/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
+  ai-usage: ai-assisted
   ms.custom:
   - N/A
   ms.service: microsoft-365-security
@@ -47,6 +48,7 @@ units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-vulnerability-management
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-threat-intelligence
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-copilot-in-defender-xdr
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.summary-resources
 badge:

@@ -65,7 +65,7 @@ The next steps deploy a VM into the public and private subnets.
 
     A **ProvisioningState** value of "Succeeded" and a **PowerState** value of "VM running" indicate a successful deployment. When all three VMs are running, you're ready to move on. Press <kbd>Ctrl-C</kbd> to stop the command and continue with the exercise.
 
-1. Run the following command to save the public IP address of the **public** VM to a variable named `PUBLICIP`.
+1. Run the following command to save the public IP address of the **public** VM to a variable named `PUBLICIP`:
 
     ```azurecli
     PUBLICIP="$(az vm list-ip-addresses \
@@ -77,7 +77,7 @@ The next steps deploy a VM into the public and private subnets.
     echo $PUBLICIP
     ```
 
-1. Run the following command to save the public IP address of the **private** VM to a variable named `PRIVATEIP`.
+1. Run the following command to save the public IP address of the **private** VM to a variable named `PRIVATEIP`:
 
     ```azurecli
     PRIVATEIP="$(az vm list-ip-addresses \
@@ -91,7 +91,7 @@ The next steps deploy a VM into the public and private subnets.
 
 ## Test traffic routing through the network virtual appliance
 
-The final steps use the Linux `traceroute` utility to show how traffic is routed. You'll use the `ssh` command to run `traceroute` on each VM. The first test will show the route taken by ICMP packets sent from the **public** VM to the **private** VM. The second test will show the route taken by ICMP packets sent from the **private** VM to the **public** VM.
+The final steps use the Linux `traceroute` utility to show how traffic is routed. You'll use the `ssh` command to run `traceroute` on each VM. The first test shows the route taken by ICMP packets sent from the **public** VM to the **private** VM. The second test shows the route taken by ICMP packets sent from the **private** VM to the **public** VM.
 
 1. Run the following command to trace the route from **public** to **private**. When prompted, enter the password for the **azureuser** account that you specified earlier.
 

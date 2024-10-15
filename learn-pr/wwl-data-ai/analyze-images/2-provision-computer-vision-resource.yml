@@ -3,11 +3,13 @@ uid: learn.wwl.analyze-images.provision-computer-vision-resource
 title: Provision an Azure AI Vision resource
 metadata:
   title: Provision an Azure AI Vision resource
-  description: "Provision an Azure AI Vision resource"
-  ms.date: 02/05/2024
+  description: Provision an Azure AI Vision resource
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 02/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

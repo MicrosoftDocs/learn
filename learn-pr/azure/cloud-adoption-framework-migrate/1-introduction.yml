@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-migrate.1-introduction
+uid: learn.cloud-adoption-framework-migrate.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: The Migrate methodology of the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
-  ms.date: 10/30/2023
+  description: Learn how to use the Cloud Adoption Framework Migrate methodology to prepare for and carry out a migration to the cloud.
+  ms.date: 07/03/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

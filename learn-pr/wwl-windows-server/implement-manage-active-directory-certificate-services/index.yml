@@ -3,25 +3,33 @@ uid: learn.wwl.implement-manage-active-directory-certificate-services
 metadata:
   title: Implement and manage Active Directory Certificate Services
   description: "Implement and manage Active Directory Certificate Services"
-  ms.date: 08/04/2021
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: active-directory
+  ms.service: azure
 title: Implement and manage Active Directory Certificate Services
 summary: Learn about the Active Directory Certificate Services (AD CS) concepts and administration tasks, including types of certification authorities (CAs), the process of issuing and revoking certificates, and establishing certificate trusts.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the purpose of Public Key Infrastructure (PKI) and components of AD CS.
-  - Identify types of AD CS certification authorities and the process of implementing them.
-  - Manage certificate enrollment.
-  - Manage certificate revocation.
-  - Manage certificate trusts.
+
+  -   Identify the purpose of Public Key Infrastructure (PKI) and components of AD CS.
+
+  -   Identify types of AD CS certification authorities and the process of implementing them.
+
+  -   Manage certificate enrollment.
+
+  -   Manage certificate revocation.
+
+  -   Manage certificate trusts.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
-  - Core networking technologies.
-  - Active Directory Domain Services (AD DS).
+
+  -   Windows Server 2012 or Windows Server 2016.
+
+  -   Core networking technologies.
+
+  -   Active Directory Domain Services (AD DS).
 iconUrl: /training/achievements/implement-and-manage-active-directory-certificate-services.svg
 levels:
 - intermediate

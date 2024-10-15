@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-network-security
 metadata:
   title: Design solutions for network security
   description: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring and posture management."
-  ms.date: 3/04/2024
+  ms.date: 09/09/2024
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
@@ -42,6 +42,8 @@ units:
 - learn.wwl.design-solutions-network-security.design-solutions-traffic-filtering-network-security-groups
 - learn.wwl.design-solutions-network-security.design-solutions-network-posture-management
 - learn.wwl.design-solutions-network-security.design-solutions-network-monitoring
+- learn.wwl.design-solutions-network-security.evaluate-solutions-entra-internet-access
+- learn.wwl.design-solutions-network-security.evaluate-solutions-entra-private-access
 - learn.wwl.design-solutions-network-security.knowledge-check
 - learn.wwl.design-solutions-network-security.summary
 badge:

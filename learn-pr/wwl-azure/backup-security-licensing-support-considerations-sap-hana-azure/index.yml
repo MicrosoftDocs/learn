@@ -2,12 +2,12 @@
 uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure
 metadata:
   title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
-  description: "This module covers considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  description: This module covers considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
 summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).
 abstract: |

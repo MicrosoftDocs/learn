@@ -3,8 +3,8 @@ uid: learn.azure.copy-blobs-using-azcopy.exercise-move-blobs-using-azcopy
 title: Exercise - Move Azure Storage blobs using AzCopy
 metadata:
   title: Exercise - Move Azure Storage blob using AzCopy
-  description: Exercise - Move Azure Storage blobs using AzCopy
-  ms.date: 3/17/2023
+  description: Exercise - Move Azure Storage blobs using AzCopy.
+  ms.date: 05/17/2024
   author: normesta
   ms.author: normesta
   ms.topic: unit

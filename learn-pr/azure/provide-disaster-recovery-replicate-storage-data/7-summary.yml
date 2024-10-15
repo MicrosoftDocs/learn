@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you've learned about replication and failover for Azure Storage.
   ms.date: 11/03/2023
-  author: tamram
-  ms.author: tamram
+  author: stevenmatthew
+  ms.author: shaas
   ms.topic: unit
 durationInMinutes: 2
 content: |

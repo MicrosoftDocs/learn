@@ -8,6 +8,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: learning-path
+  ms.custom: [copilot-learning-hub]
 title: GitHub Copilot Fundamentals - Understand the AI pair programmer
 summary: |
   Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
@@ -48,5 +49,6 @@ modules:
 - learn.github.intro-github-copilot-enterprise
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
+- learn.advanced-github-copilot
 trophy:
   uid: learn.github.trophy

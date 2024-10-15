@@ -7,10 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: learning-path
-  ms.service: synapse-analytics
 title: Work with Data Warehouses using Azure Synapse Analytics
 prerequisites: |
-  Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](https://learn.microsoft.com/training/modules/introduction-azure-synapse-analytics/) module first.
+  Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
 summary: |
   Relational data warehouses are at the heart of many business intelligence and enterprise analytics solutions. You can use Azure Synapse Analytics to implement highly scalable data warehouses in the cloud.
 iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics.svg

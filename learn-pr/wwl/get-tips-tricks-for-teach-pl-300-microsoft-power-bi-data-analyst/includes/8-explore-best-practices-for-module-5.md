@@ -17,7 +17,7 @@ This module consists of three lessons:
 Module 5 Tips and Tricks 
 
 - Spend ample time discussing DAX syntax 
-- Show DAX reference material like the Microsoft Docs DAX Function Reference and other sources you find helpful 
+- Show DAX reference material like the Microsoft Learn DAX Function Reference and other sources you find helpful 
 - Demonstrate DAX from the labs 
 
 Module 5 Lab/Exercise 

@@ -1,1 +1,3 @@
 Creating accessible content helps users to better understand and interact with your content. Microsoft 365 provides built-in accessibility features and tools to ensure everyone can create accessible content. In this module, we explore how to utilize these applications to create accessible headings/titles, images, color, and multimedia. You'll learn how to use the Microsoft 365 Accessibility Checker and Accessibility Assistant to get help creating and editing documents, presentations, emails, and websites that are accessible to people with disabilities.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a7d476f9-dc3e-4884-a082-d71a104fe9ad]

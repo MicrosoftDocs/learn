@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.5-cloud-attach
-title: Learn about Cloud Attach
+title: Learn about cloud attach
 metadata:
-  title: Learn about Cloud Attach
-  description: Learn about leveraging both Microsoft Intune and Microsoft Endpoint Configuration Manager from Microsoft Intune.
-  ms.date: 09/29/2023
+  title: Learn about cloud attach
+  description: Learn about steps to cloud attach your on-premises devices and implement co-management by using Microsoft Intune and Microsoft Endpoint Configuration Manager.
+  ms.date: 06/05/2024
   author: Erikre
   ms.author: erikre
   ms.topic: unit

@@ -3,7 +3,7 @@ uid: learn.wwl.explain-control-system-helps-manage-files
 metadata:
   title: Explain how a source control system helps manage files
   description: "Explain how a source control system helps manage files"
-  ms.date: 03/13/2024
+  ms.date: 05/20/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
@@ -22,7 +22,7 @@ abstract: |
 
   -   Describe how software helps interact with source control systems.
 prerequisites: A personal computer running Windows, macOS, or Linux.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/explain-control-system-helps-manage-files.svg
 levels:
 - beginner
 roles:

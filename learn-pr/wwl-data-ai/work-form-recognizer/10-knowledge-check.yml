@@ -3,18 +3,20 @@ uid: learn.wwl.work-with-form-recognizer.knowledge-check-summary
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/18/2024
+  description: Knowledge check
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: berryivor
+  ms.date: 09/05/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model, what are two calls they need to make to the API?"
+  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model and REST API language, what are two calls they need to make to the API?"
     choices:
     - content: "Train Model and Get Model Labels"
       isCorrect: false
@@ -25,23 +27,23 @@ quiz:
     - content: "Create Azure Document Intelligence and Get Analyze Invoice Result"
       isCorrect: false
       explanation: "Incorrect: While they do need to create an Azure Document Intelligence or Azure AI Service resource to use Azure Document Intelligence services, Create Azure Document Intelligence isn't one of the REST API calls used to extract data."
-  - content: "A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the **best** way to do this?"
+  - content: "A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the **best** way to build the application?"
     choices:
     - content: "Use the Read API of the Computer Vision service."
       isCorrect: false
-      explanation: "Incorrect: The Read API of the Computer Vision service can read text from an image, but they'll want to use Azure Document Intelligence to extract key-value pairs."
+      explanation: "Incorrect: The Read API of the Computer Vision service can read text from an image, but it is best for you to use Azure Document Intelligence to extract key-value pairs."
     - content: "Use Azure Document Intelligence's prebuilt receipts model"
       isCorrect: true
       explanation: "Correct: Use the Azure Document Intelligence's prebuilt receipts model. It can intelligently extract the required fields even if the scanned receipts have different names in them."
     - content: "Use Azure Document Intelligence's Layout service"
       isCorrect: false
-      explanation: "Incorrect: The Layout service will extract the structured output from documents, but the best way to build this application is to use a model specific to receipts."
+      explanation: "Incorrect: The Layout service extracts the structured output from documents, but the best way to build this application is to use a model specific to receipts."
   - content: "A person is building a custom model with Azure Document Intelligence services. What is required to train a model?"
     choices:
     - content: "Along with the form to analyze, JSON files need to be provided."
       isCorrect: true
       explanation: "Correct: The labels needed in training are referenced in the **ocr.json** files, **labels.json** files, and single **fields.json** file."
-    - content: "Training must be done through language specific SDKs."
+    - content: "Training must be done through language-specific SDKs."
       isCorrect: false
       explanation: "Incorrect: Labeled training can be done through SDKs, REST API, or Azure Document Intelligence Studio."
     - content: "Nothing else is required."

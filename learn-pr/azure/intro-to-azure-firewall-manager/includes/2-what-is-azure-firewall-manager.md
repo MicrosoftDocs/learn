@@ -59,6 +59,6 @@ You can implement Firewall Manager in one of two architectures, which the follow
 | Hub virtual network | A standard Azure virtual network that you create and manage. When you associate firewall policies with this type of hub, you're creating a *hub virtual network*. This architecture's underlying resource is a virtual network. |
 | Secured virtual hub | A Microsoft-managed resource that enables you to easily create hub and spoke architectures. When you associate policies, you're using a *secured virtual hub*. The underlying resource is a virtual WAN hub. |
 
-The following diagram depicts each of these architecture types. A global admin has overarching policy control over an organization's security policies. A local admin has some control over policies associated with a hub virtual network.
+The following diagram depicts each of these architecture types. An enterprise administrator has overarching policy control over an organization's security policies. A local administrator has some control over policies associated with a hub virtual network.
 
 :::image type="content" source="../media/firewall-manager-architecture.png" alt-text="Architecture of Firewall Manager depicting two scenarios: secured virtual hub and hub virtual network.":::

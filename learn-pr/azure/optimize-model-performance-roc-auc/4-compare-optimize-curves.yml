@@ -4,9 +4,9 @@ title: Compare and optimize ROC curves
 metadata:
   title: Compare and optimize ROC curves
   description: Conceptual unit about comparing and optimizing machine learning models ROC curves
-  ms.date: 04/17/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |

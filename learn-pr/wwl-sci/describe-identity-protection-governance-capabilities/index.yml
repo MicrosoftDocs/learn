@@ -3,11 +3,12 @@ uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
 metadata:
   title: Describe the identity protection and governance capabilities of Microsoft Entra
   description: "Describe the identity protection and governance capabilities of Microsoft Entra."
-  ms.date: 12/06/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
-  ms.service: active-directory
+  ai-usage: ai-assisted
+  ms.service: azure-active-directory
 title: Describe the identity protection and governance capabilities of Microsoft Entra
 summary: Microsoft Entra provides identity protection and governance capabilities. Learn about these capabilities, the use cases, and benefits.
 abstract: |
@@ -38,6 +39,7 @@ units:
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-permissions-management
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-verified-id
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-integration-in-copilot
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.knowledge-check
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.summary-resources
 badge:

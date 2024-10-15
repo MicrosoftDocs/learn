@@ -3,10 +3,12 @@ uid: learn.wwl.implement-github-actions-azure
 metadata:
   title: Implement GitHub Actions for Azure
   description: "Learn how to use GitHub Actions for Azure in your workflows and configure Azure with the necessary security principals to automate software development workflows between GitHub and Azure."
-  ms.date: 05/07/2024
+  ms.date: 06/19/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: github
   ai-usage: human-only
 title: Implement GitHub Actions for Azure

@@ -3,10 +3,10 @@ uid: learn.build-web-app-blazor-webassembly-vscode
 metadata:
   title: Build your first web app with Blazor
   description: Learn how to build your first web app with Blazor.
-  ms.date: 01/26/2024
+  ms.date: 10/09/2024
   author: danroth27
   ms.author: daroth
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
   ms.subservice: blazor
@@ -18,7 +18,7 @@ abstract: |
   - Create a new Blazor web app project.
   - Add component logic to a Blazor web app.
 prerequisites: |
-  - Knowledge of what Blazor is and how it works at the beginner level
+  - Knowledge of Blazor and how it works at the beginner level
   - Basic knowledge of web app concepts
   - C# and .NET experience at the beginner level
 iconUrl: /training/achievements/build-your-first-blazor-web-app.svg

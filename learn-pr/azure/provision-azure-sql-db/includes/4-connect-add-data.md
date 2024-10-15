@@ -108,13 +108,13 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     Your output resembles the following example. Copy this output for use in the next step.
 
     ```output
-    "sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
+    "sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
     ```
 
 1. Run the `sqlcmd` statement from the output of the previous step to create an interactive session. Remove the surrounding quotes and replace `<username>` and `<password>` with the username and password you specified when you created your database. Here's an example:
 
     ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
+    sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
 
     > [!TIP]
@@ -152,7 +152,7 @@ Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These te
     - Run the `sqlcmd` statement again to launch your interactive `sqlcmd` session. It should look something like the following example:
 
     ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
+    sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
 
     Now that you've launched your `sqlcmd` session, the remaining commands use the language Transact-SQL, or T-SQL.

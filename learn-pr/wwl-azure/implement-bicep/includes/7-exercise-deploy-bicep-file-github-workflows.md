@@ -91,4 +91,3 @@ Create another secret for the name of the resource group with a name such as `AZ
     
     :::image type="content" source="../media/github-success-job-eb496fe9.jpg" alt-text="Screenshot of GitHub action successful executed job.":::
     
-

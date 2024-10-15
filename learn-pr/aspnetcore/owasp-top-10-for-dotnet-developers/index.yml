@@ -3,10 +3,11 @@ uid: learn.owasp-top-10-for-dotnet-developers
 metadata:
   title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 06/12/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 05/31/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: obrocki      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: dawidobrocki           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module
+  ms.service: dotnet
 
 title: "Guide to Secure .NET Development with OWASP Top 10"
 
@@ -19,10 +20,10 @@ abstract: |
     - Always validate user input in your applications.
 
 prerequisites: |
-  - Basic knowledge of .NET and C# at the intermediate level.
-  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and razor syntax.
-  - Familiarity with software development and release cycle at the beginner level.
-  - Basic concepts and terminology of cloud hosting and security tooling, including automation and release process.
+  - Basic knowledge of .NET and C# at the intermediate level
+  - Basic knowledge of web development with ASP.NET at the beginner level, including controllers and Razor syntax
+  - Familiarity with software development and release cycle at the beginner level
+  - Basic concepts and terminology of cloud hosting and security tooling, including automation and release process
 
 iconUrl: /training/achievements/aspnetcore/owasp-top-ten-for-net-developers.svg
 

@@ -1,6 +1,8 @@
+Applying sensitivity labels in Microsoft Purview is essential for managing and protecting sensitive information within your organization. These labels help classify and secure data across various platforms and applications, ensuring compliance and data security. Sensitivity labels can be used in Office apps, manage file compatibility, secure cross-organizational data sharing, and audit label activities to maintain robust data security.
+
 As our consultancy firm rolls out its new AI-powered service, it's important we keep our sensitive data secure, especially with our marketing team working hard on the launch. Sensitivity labels are a valuable security feature that we can use once we create and publish them in the Microsoft Purview compliance portal.
 
-This unit guides you on how to:
+Here you learn how to:
 
 - **Use sensitivity labels in Office apps**: Apply sensitivity labels in Office apps to protect documents and emails.
 - **Understand file compatibility**: Identify which file types support sensitivity labels.
@@ -69,7 +71,3 @@ Sensitivity labels also play a role in securing collaborative efforts across org
 Microsoft Purview allows organizations to monitor and manage data protection and compliance across their digital assets by auditing sensitivity labels. This process involves tracking and logging events related to the usage of sensitivity labels on various items like SharePoint sites, Teams sites, documents, emails, and calendar events. When these items are labeled or unlabeled, specific events are triggered and recorded. These include actions like applying a new sensitivity label to a site or file, changing an existing label, or removing a label completely. Each event is carefully logged, whether the label was applied through Microsoft 365 apps, Office on the web, an auto-labeling policy, or even via PowerShell cmdlets.
 
 For information about the auditing events that sensitivity label activities generate, see the [Sensitivity label activities](/purview/audit-log-activities?azure-portal=true#sensitivity-label-activities) section from [Search the audit log in the Microsoft Purview compliance portal](/purview/audit-new-search?azure-portal=true). The auditing information is visually represented in the content explorer and activity explorer in the data classification dashboard. This visualization helps you understand how your sensitivity labels are being used and where this labeled content is located.
-
-## Knowledge check
-
-Select the best response to the question, then select **Check your answers**.

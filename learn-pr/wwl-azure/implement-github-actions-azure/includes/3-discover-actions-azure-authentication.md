@@ -14,7 +14,7 @@ There are three types of service principal:
 
 ## Use the Azure Login action with a service principal secret
 
-To use Azure login with a service principal, you first need to add your Azure service principal as a secret to your GitHub repository. The following examples show you hot to create a service principal, add the principal as a GitHub secret, and use that secret in the Azure Login action.
+To use Azure login with a service principal, you first need to add your Azure service principal as a secret to your GitHub repository. The following examples show you how to create a service principal, add the principal as a GitHub secret, and use that secret in the Azure Login action.
 
 ### Create a service principal
 

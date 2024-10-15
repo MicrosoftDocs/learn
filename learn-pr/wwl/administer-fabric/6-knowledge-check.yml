@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2024
-  author: wwlpublish
+  ms.date: 10/02/2024
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
-    - build-2023
+  - build-2023
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which of the following statements best describes the concept of capacity in Fabric?"
     choices:
@@ -35,4 +34,4 @@ quiz:
       explanation: "Incorrect. Promotion and certification don't require different levels of permissions."
     - content: "Certification must be enabled in the tenant by the admin, while promotion can be done by a workspace member."
       isCorrect: true
-      explanation: "Correct. Certification must be enabled in the tenant by the admin, and only designated certifiers can perform the endorsement. In contrast, promotion can be done by any workspace member who has been granted the necessary permissions."
+      explanation: "Correct. Certification must first be enabled in the tenant by the admin, and only designated certifiers can perform the endorsement. In contrast, promotion can be done by any workspace member who has been granted the necessary permissions."

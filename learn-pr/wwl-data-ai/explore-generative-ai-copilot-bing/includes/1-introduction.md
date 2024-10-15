@@ -7,8 +7,8 @@ This module is based on the SkillUp AI Challenge, developed by the Microsoft Gar
 
 **Before you start**
 
-Sign in to Copilot in [Bing](https://www.bing.com/) and select the chat icon. Be sure to use Copilot in Bing in the full browser, not in the sidebar. We recommended you [set up a personal profile in Microsoft Edge.](https://support.microsoft.com/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435)
-![Screenshot Bing.com with the Chat icon selected.](../media/bing-chat-select.png)
+Sign in to Copilot in [Bing](https://www.bing.com/) and select the Copilot icon. Be sure to use Copilot in Bing in the full browser, not in the sidebar. We recommended you [set up a personal profile in Microsoft Edge.](https://support.microsoft.com/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435)
+![Screenshot Bing.com with Copilot selected.](../media/bing-copilot-select.png)
 
 Sign in to [Image Creator from Designer](https://www.bing.com/images/create) with a personal account.
 

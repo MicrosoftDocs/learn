@@ -13,72 +13,74 @@ In this exercise, you create the route table, custom route, and subnets. You'll 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
 
 > [!NOTE]
-> You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
+> You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We're working on it!
 
-1. In Azure Cloud Shell, run the following command to create a route table.
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
 
-```azurecli
-    az network route-table create \
-        --name publictable \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --disable-bgp-route-propagation false
-```
+1. In Azure Cloud Shell, run the following command to create a route table:
 
-2. Run the following command in Cloud Shell to create a custom route.
+    ```azurecli
+        az network route-table create \
+            --name publictable \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --disable-bgp-route-propagation false
+    ```
 
-```azurecli
-    az network route-table route create \
-        --route-table-name publictable \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name productionsubnet \
-        --address-prefix 10.0.1.0/24 \
-        --next-hop-type VirtualAppliance \
-        --next-hop-ip-address 10.0.2.4
-```
+1. Run the following command in Cloud Shell to create a custom route:
+
+    ```azurecli
+        az network route-table route create \
+            --route-table-name publictable \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --name productionsubnet \
+            --address-prefix 10.0.1.0/24 \
+            --next-hop-type VirtualAppliance \
+            --next-hop-ip-address 10.0.2.4
+    ```
 
 ## Create a virtual network and subnets
 
 The next task is to create the **vnet** virtual network and the three subnets you need: **publicsubnet**, **privatesubnet**, and **dmzsubnet**.
 
-1. Run the following command to create the **vnet** virtual network and the **publicsubnet** subnet.
+1. Run the following command to create the **vnet** virtual network and the **publicsubnet** subnet:
 
-```azurecli
-    az network vnet create \
-        --name vnet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --address-prefixes 10.0.0.0/16 \
-        --subnet-name publicsubnet \
-        --subnet-prefixes 10.0.0.0/24
-```
+    ```azurecli
+        az network vnet create \
+            --name vnet \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --address-prefixes 10.0.0.0/16 \
+            --subnet-name publicsubnet \
+            --subnet-prefixes 10.0.0.0/24
+    ```
 
-2. Run the following command in Cloud Shell to create the **privatesubnet** subnet.
+1. Run the following command in Cloud Shell to create the **privatesubnet** subnet:
 
-```azurecli
-    az network vnet subnet create \
-        --name privatesubnet \
-        --vnet-name vnet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --address-prefixes 10.0.1.0/24
-```
+    ```azurecli
+        az network vnet subnet create \
+            --name privatesubnet \
+            --vnet-name vnet \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --address-prefixes 10.0.1.0/24
+    ```
 
-3. Run the following command to create the **dmzsubnet** subnet.
+1. Run the following command to create the **dmzsubnet** subnet:
 
-```azurecli
-    az network vnet subnet create \
-        --name dmzsubnet \
-        --vnet-name vnet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --address-prefixes 10.0.2.0/24
-```
+    ```azurecli
+        az network vnet subnet create \
+            --name dmzsubnet \
+            --vnet-name vnet \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --address-prefixes 10.0.2.0/24
+    ```
 
-4. You should now have three subnets. Run the following command to show all of the subnets in the **vnet** virtual network.
+1. You should now have three subnets. Run the following command to show all of the subnets in the **vnet** virtual network:
 
-```azurecli
-    az network vnet subnet list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --vnet-name vnet \
-        --output table
-```
+    ```azurecli
+        az network vnet subnet list \
+            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --vnet-name vnet \
+            --output table
+    ```
 
 ## Associate the route table with the public subnet
 

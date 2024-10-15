@@ -4,16 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2023
+  ms.date: 08/30/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit
-  ms.service: machine-learning
-  ms.subservice: responsible-ai  
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "After successfully running a training job, what is the final step in the workflow to make the trained model available for future predictions?"
+  - content: "After you successfully run a training job, what is the final step in the workflow to make the trained model available for future predictions?"
     choices:
     - content: "Register the model."
       isCorrect: true
@@ -31,10 +29,10 @@ quiz:
     choices:
     - content: "It configures the overall and feature error rates."
       isCorrect: false
-      explanation: "Incorrect. Configuring error rates isn't the primary role of the feature importance component; this task is generally performed by the error analysis component."
+      explanation: "Incorrect. Configuring error rates isn't the primary role of the feature importance component. The error analysis component generally performs this task."
     - content: "It calculates error distributions."
       isCorrect: false
-      explanation: "Incorrect. Calculating error distributions is typically handled by the error analysis component, not the feature importance component."
+      explanation: "Incorrect. The error analysis component calculates error distributions, not the feature importance component."
     - content: "It initializes the global data for the components."
       isCorrect: false
       explanation: "Incorrect. Initializing global data for components is typically the role of the RAI constructor component, not the feature importance component."

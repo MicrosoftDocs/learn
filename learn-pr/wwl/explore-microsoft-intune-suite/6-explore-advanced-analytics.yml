@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.explore-advanced-analytics
+title: Explore Advanced Analytics
+metadata:
+  title: Explore Advanced Analytics
+  description: "Explore Advanced Analytics"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-explore-advanced-analytics.md)]

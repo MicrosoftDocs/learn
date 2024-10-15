@@ -1,4 +1,4 @@
-In this exercise, you'll learn how to create programs that output code to the console. You'll build the start of a calculator program. You'll also analyze a program that has errors in it and learn how to fix the errors.
+In this exercise, you learn how to create programs that output code to the console. You build the start of a calculator program, and you also analyze a program that has errors in it and learn how to fix the errors.
 
 ## Create a project
 
@@ -11,20 +11,9 @@ Let's start by creating a project. You create a project from the command line by
    cd Variables
    ```
 
-   This command creates a new F# project in the directory _Variables_.
+   This command creates a new F# project in the directory *Variables*.
 
-1. Locate the `main()` method in _Program.fs_ and add the following code:
-
-   ```fsharp
-   printfn "Welcome to the calculator program"
-   // read input from the console and assign to `sum`
-   let sum = 0
-   printfn "The sum is %i" sum
-   ```
-
-   The first line welcomes the user of the program. On the second line, there's a comment that starts with "//" that shows code that you'll implement in the next exercise unit. Then you have `let sum = 0`. Finally, create a `sum` variable that holds the calculation result.
-
-   Your `main()` function should now look like so:
+1. Replace the code in *Program.fs* with the following code:
 
    ```fsharp
    [<EntryPoint>]
@@ -35,6 +24,8 @@ Let's start by creating a project. You create a project from the command line by
        printfn "The sum is %i" sum
        0
    ```
+
+   The first `printfn` statement welcomes the user of the program. On the second line, there's a comment that starts with `//` showing code that you'll implement in the next exercise unit. Then you have `let sum = 0`. Finally, you create a `sum` variable that holds the calculation result.
 
 1. Run the program by running `dotnet run`.
 
@@ -62,7 +53,7 @@ Part of learning to program in any language is learning how to recognize compila
    cd Errors
    ```
 
-1. Make sure the `main` method has the following code:
+1. Replace the code in *Program.fs* with the following code:
 
    ```bash
    [<EntryPoint>]
@@ -103,4 +94,4 @@ Part of learning to program in any language is learning how to recognize compila
    Here's a number 0
    ```
 
-Congratulations! You've debugged a program by reading the code, understanding what was wrong, and fixing it. Recognizing error messages and knowing how to correct the errors are essential skills to have as a developer.
+Congratulations! You debugged a program by reading the code, understanding what was wrong, and fixing it. Recognizing error messages and knowing how to correct the errors are essential skills to have as a developer.

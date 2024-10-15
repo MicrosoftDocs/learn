@@ -7,7 +7,7 @@
     az group create --name myResourceGroup --location eastus
     ```
 
-3. Create a new AKS cluster with the cluster autoscaler enabled using the `az aks create` command and the `--enable-cluster-autoscaler` flag.
+3. Create a new Azure Kubernetes Service (AKS) cluster with the cluster autoscaler enabled using the `az aks create` command and the `--enable-cluster-autoscaler` flag.
 
     ```azurecli-interactive
     az aks create --resource-group myResourceGroup --name myAKSCluster --enable-addons monitoring --enable-msi-auth-for-monitoring --enable-cluster-autoscaler --min-count 1 --max-count 10 --generate-ssh-keys

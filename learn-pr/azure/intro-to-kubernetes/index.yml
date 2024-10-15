@@ -3,6 +3,7 @@ uid: learn.intro-to-kubernetes
 metadata:
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
+  manager: rayoflores
   ms.date: 10/25/2023
   author: nickomang
   ms.author: nickoman

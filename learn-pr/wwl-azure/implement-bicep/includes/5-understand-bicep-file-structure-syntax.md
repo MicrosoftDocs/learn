@@ -61,7 +61,7 @@ In the above example, the `uniqueStorageName` is used to simplify the resource d
 
 ## Resources
 
-The `resource` keyword is used when you need to declare a resource in your templates. The resource declaration has a symbolic name for the resource that can be used to reference that resource later either for defining a subresource or for using its properties for an implicit dependency like a parent-child relationship.
+The `resource` keyword is used when you need to declare a resource in your templates. The resource declaration has a symbolic name for the resource that can be used to reference that resource later either for defining a subresource or use its properties for an implicit dependency like a parent-child relationship.
 
 There are certain properties that are common for all resources such as `location`, `name`, and `properties`. There are resource-specific properties that can be used to customize the resource pricing tier, `SKU`, and so on.
 
@@ -116,4 +116,3 @@ There are many other features available within a Bicep file such as loops, condi
 ## Next steps
 
 In the next unit, you'll learn how to use Bicep in an Azure Pipeline.
-

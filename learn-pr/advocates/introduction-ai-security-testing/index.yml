@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.introduction-to-ai-security-testing
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 09/01/2024  
+  title: Introduction to AI security testing
+  description: Introduction to AI security testing
+  ms.topic: module
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
+  ms.service: artificial-intelligence
+title: Introduction to AI security testing
+summary: Overview of the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.
+abstract:  |
+  After completing this module, you'll be able to:
+  - Describe AI red teaming
+  - Understand the three categories of AI red teaming
+  - Plan an AI red teaming exercise
+prerequisites:   |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-to-ai-security-testing.what-is-ai-red-teaming
+- learn.introduction-to-ai-security-testing.the-three-categories-of-ai-red-teaming
+- learn.introduction-to-ai-security-testing.planning-ai-red-teaming
+- learn.introduction-to-ai-security-testing.knowledge-check
+- learn.introduction-to-ai-security-testing.summary
+badge:
+  uid: learn.introduction-to-ai-security-testing-badge

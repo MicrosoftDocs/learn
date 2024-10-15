@@ -1,6 +1,3 @@
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is nearing End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 In addition to migrating on-premises VMs, Contoso IT staff are also planning how best to migrate storage. They've asked you to research the Windows Server Migration Service.
 
 The Windows Server Storage Migration Service is part of Windows Admin Center (WAC). This service automates the process of migrating from legacy Windows Server versions to supported platforms, whether on-premises or to Azure.
@@ -64,7 +61,6 @@ If the Orchestrator is running Windows Server, version 1903 or later, or if the 
 
 - Failover clusters running Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022
 - Linux servers that use Samba. The following have been tested:
-  - CentOS 7
   - Debian GNU/Linux 8
   - RedHat Enterprise Linux 7.6
   - SUSE Linux Enterprise Server (SLES) 11 SP4

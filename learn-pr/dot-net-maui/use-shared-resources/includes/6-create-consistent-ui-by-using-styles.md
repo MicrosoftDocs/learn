@@ -20,7 +20,7 @@ A resource provides a value for a single property. However, using lots of resour
     TextColor = "{StaticResource textColor}" />
 ```
 
-Notice how the same five properties are set on each of the buttons. Using resources removes the need for repeated, hard-coded values. However, this type of XAML mark-up quickly gets hard to read. Additionally, if you're setting a large number of properties for each control, it's easy to accidentally omit one of them, leading to inconsistencies in the appearance of the controls. The solution is to create a style that assigns all four properties at once.
+Notice how the same five properties are set on each of the buttons. Using resources removes the need for repeated, hard-coded values in four of them. However, this type of XAML mark-up quickly gets hard to read. Additionally, if you're setting a large number of properties for each control, it's easy to accidentally omit one of them, leading to inconsistencies in the appearance of the controls. The solution is to create a style that assigns all four properties at once.
 
 ## What is a setter?
 

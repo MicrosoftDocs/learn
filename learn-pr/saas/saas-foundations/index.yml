@@ -1,82 +1,40 @@
 ### YamlMime:Module
 uid: learn.saas-foundations
 metadata:
-  title: Foundations of SaaS # Do not edit: title must be "Introduction to (product)"
-  description: "Learn from Microsoft about SaaS (Software-as-a-Service), what is the difference from traditional software company, what is SLA and SLO, things to consider regarding security and privacy" # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 09/11/2022 # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: kostinams # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: irkostin # Alias     of the Microsoft employee either authoring or project-managing this content
+  title: Foundations of SaaS
+  description: Learn about Software as a Service (SaaS), service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing.
+  ms.date: 05/28/2024
+  author: kostinams
+  ms.author: irkostin
   ms.topic: module
+  ms.service: azure
 
 title: Foundations of SaaS
 
-###
-### Sentence 1:
-###   Goal: Describe how the module will achieve the 'evaluate' task.
-###   Pattern: "Characterize the types of (problem) that (product) can (solve)".
-###   Example 1: "Characterize the types of (business processes) that (Logic Apps) can (automate)."
-###   Example 2: "Determine the types of (software projects) for which (GitHub) is a (good development platform)."
-###
-### Sentence 2:
-###   Goal: List key features of the product covered here. Omit less-important parts or group low-level parts into one higher-level element.
-###   Pattern: "Describe the (list of covered features) that (perform the key product use-case)."
-###   Example 1: "Describe the function of (connectors, triggers, and actions) and show how you (combine them to create an app)."
-###   Example 2: "Survey GitHub (notifications, branches, commits, and pull requests) that help you (collaborate, build, and deploy software)."
-###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
-###
-summary: "Outline the foundation for SaaS solution. Define target market segment, pricing model, SLA or SLO."
+summary: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing models.
 
 abstract: |
-  By the end of this module, you'll be able to:
-    - Identify the most common reasons customers prefer SaaS model and solutions.
-    - Describe the difference between license-based software and SaaS.
-    - Describe the consumption-based model.
-    - Describe the difference between SLA and SLO and define simple SLOs for your solution.
-    - Identify suitable pricing model for your SaaS service
+  After you finish this module, you can:
+    - Identify the most common benefits of a SaaS model and solutions.
+    - Describe the differences between license-based software and SaaS.
+    - Compare SaaS pricing models and determine a suitable pricing model for your SaaS solution.
+    - Explain SLA and SLOs, and define basic SLOs for your solution.
 
 prerequisites: |
-  - Basic familiarity with IT terms and concepts
-###########################################################################
-###
-### Do not edit: will be replaced by the module icon when available
-###
+  - Basic familiarity with IT and cloud terms and concepts.
 iconUrl: /learn/achievements/generic-badge.svg
-###########################################################################
-###
-### Do not edit: level must be 'beginner'
-###
 levels:
   - beginner
-###########################################################################
-###
-### Specify the target roles.
-### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
-###
 roles:
   - developer
   - startup-founder
   - business-owner
   - student
 
-###########################################################################
-###
-### Specify the covered products.
-### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
-###
 products:
   - azure
-###########################################################################
-###
-### Specify the subject areas.
-### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
-###
 subjects:
   - cloud-computing
-###########################################################################
-###
-### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
-###
 units:
   - learn.saas-foundations.introduction
   - learn.saas-foundations.what-is-saas

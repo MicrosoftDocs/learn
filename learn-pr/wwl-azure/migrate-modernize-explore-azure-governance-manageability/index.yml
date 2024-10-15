@@ -2,12 +2,12 @@
 uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability
 metadata:
   title: Modernize and explore governance and manageability for SAP on Azure
-  description: "This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
+  description: 'This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/11/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
-  ms.service: azure
+  ms.service: sap-on-azure
 title: Modernize and explore governance and manageability for SAP on Azure
 summary: This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale.
 abstract: |

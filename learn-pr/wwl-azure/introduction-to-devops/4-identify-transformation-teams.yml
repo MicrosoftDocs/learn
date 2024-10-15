@@ -4,12 +4,10 @@ title: Identify transformation teams
 metadata:
   title: Identify transformation teams
   description: "Identify transformation teams"
-  ms.date: 11/02/2022
+  ms.date: 05/29/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-identify-transformation-teams.md)]

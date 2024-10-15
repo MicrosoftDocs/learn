@@ -14,10 +14,12 @@ Use Data Activator to:
 - Trigger alerts when a shipment hasn't been updated within an expected time frame.
 - Send alerts when a customer's account balance crosses a certain threshold.
 - Respond to anomalies or failures in data processing workflows immediately.
+- Run ads when same-store sales decline.
+- Alert store managers to move food from failing grocery store freezers before it spoils.
 
 ## Understand Data Activator key concepts
 
-Data Activator operates based on four core concepts: *Events, Objects, Triggers* and *Properties*. Understanding these four principles enables you to utilize the capabilities of Data Activator more effectively.
+Data Activator operates based on four core concepts: *Events, Objects, Triggers,* and *Properties*. Understanding these four principles enables you to utilize the capabilities of Data Activator more effectively.
 
 - **Events** - Data Activator considers all data sources as a sequence of events, each representing an observation about the status of a particular object. These events can occur frequently, as with IoT sensors, or less frequently, such as when monitoring package scanning in shipping locations.
 - **Objects** - Data Activator’s objects can be tangible items like vehicles or packages, or abstract concepts like advertising campaigns or user sessions. When creating a Reflex item, you model the object by connecting one or more event streams. You then select a column for the object ID, and specifying the fields to become properties of the object.
@@ -26,6 +28,8 @@ Data Activator operates based on four core concepts: *Events, Objects, Triggers*
 
 ## Interoperability with Other Fabric experiences
 
-One of Data Activator's strengths is its integration capabilities with other Fabric experiences. Data Activator can ingest data from *EventStreams* and *Power BI* reports.
+- Data Activator can be used in multiple ways with *EventStreams*.
+- One of Data Activator's strengths is its integration capabilities with other Fabric experiences. 
+- Data Activator can ingest data from *EventStreams*, *Power BI* reports, and *Real-Time Dashboards*.
 
 Now you have a grasp on what Data Activator is and its primary functions. Next up, we delve into setting up and using Data Activator.

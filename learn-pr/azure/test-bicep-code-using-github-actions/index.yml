@@ -4,6 +4,7 @@ metadata:
   moduleType: standard
   title: Test your Bicep code by using GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using GitHub and GitHub Actions.
+  manager: jasongroce
   ms.date: 04/10/2024
   author: mumian
   ms.author: jgao

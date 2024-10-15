@@ -4,6 +4,8 @@ To practice the work of Alice cloning a repo and making a pull request, we must 
 
 Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud Shell to the right.
 
+1. At the top right of the Cloud Shell window select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Use the `mkdir` command to create a folder named *Cats*:
 
     ```bash
@@ -21,7 +23,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 1. Now, initialize the new repository and set the name of the default branch to `main`.
 
     If you're running Git version 2.28.0 or later, use the following commands:
-     
+
     ```bash
     git init --initial-branch=main
     git init -b main
@@ -80,7 +82,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     </html>
     ```
 
-1. Save the file and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save the file and close the editor. You can select the ellipsis (**...**) in the right corner of the editor, or use the accelerator key (**Ctrl+S** on Windows and Linux, **Cmd+S** on macOS).
 
 1. Change to the *CSS* directory and open *site.css* in the editor:
 

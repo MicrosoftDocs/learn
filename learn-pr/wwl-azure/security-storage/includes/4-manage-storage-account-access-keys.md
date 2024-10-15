@@ -29,7 +29,7 @@ To view and copy your storage account access keys or connection string from the 
     :::image type="content" source="../media/portal-connection-c2097b8f.png" alt-text="Screenshot showing an example of the portal connection string.":::
     
 
-You can use either of the two keys to access Azure Storage, but in general it's a good practice to use the first key, and reserve the use of the second key for when you are rotating keys.<br>
+You can use either of the two keys to access Azure Storage, but in general it's a good practice to use the first key, and reserve the use of the second key for when you are rotating keys.
 
 To view or read an account's access keys, the user must either be a Service Administrator, or must be assigned an Azure role that includes **Microsoft.Storage/storageAccounts/listkeys/action**. Some Azure built-in roles that include this action are the **Owner**, **Contributor**, and **Storage Account Key Operator Service** Roles.
 
@@ -45,30 +45,25 @@ Two access keys are assigned so that you can rotate your keys. Having two keys e
 
 Regenerating your access keys can affect any applications or Azure services that are dependent on the storage account key. Any clients that use the account key to access the storage account must be updated to use the new key, including media services, cloud, desktop and mobile applications, and graphical user interface applications for Azure Storage, such as **Azure Storage Explorer.**
 
-Additionally, rotating or regenerating access keys revokes shared access signatures (SAS) that are generated based on that key. After access key rotation, you must regenerate account and service SAS tokens to avoid disruptions to applications. Note that **user delegation** SAS tokens are secured with Microsoft Entra credentials and aren't affected by key rotation.<br>
+Additionally, rotating or regenerating access keys revokes shared access signatures (SAS) that are generated based on that key. After access key rotation, you must regenerate account and service SAS tokens to avoid disruptions to applications. Note that **user delegation** SAS tokens are secured with Microsoft Entra credentials and aren't affected by key rotation.
 
 If you plan to manually rotate access keys, Microsoft recommends that you set a key expiration policy.
 
 After you create the key expiration policy, you can use Azure Policy to monitor whether a storage account's keys have been rotated within the recommended interval.
 
-To rotate your storage account access keys in the [Azure portal](https://portal.azure.com/):<br>
+To rotate your storage account access keys in the [Azure portal](https://portal.azure.com/):
 
-1. Update the connection strings in your application code to reference the secondary access key for the storage account.
-
-2. Navigate to your storage account in the Azure portal.
-
-3. Under **Security + networking**, select **Access keys**.
-
-4. To regenerate the primary access key for your storage account, select the **Regenerate** button next to the primary access key.
-
-5. Update the connection strings in your code to reference the new primary access key.
-
-6. Regenerate the secondary access key in the same manner.
+1.  Update the connection strings in your application code to reference the secondary access key for the storage account.
+2.  Navigate to your storage account in the Azure portal.
+3.  Under **Security + networking**, select **Access keys**.
+4.  To regenerate the primary access key for your storage account, select the **Regenerate** button next to the primary access key.
+5.  Update the connection strings in your code to reference the new primary access key.
+6.  Regenerate the secondary access key in the same manner.
 
 > [!CAUTION]
 > Microsoft recommends using only one of the keys in all of your applications at the same time. If you use Key 1 in some places and Key 2 in others, you will not be able to rotate your keys without some application losing access.
 
-To rotate an account's access keys, the user must either be a Service Administrator, or must be assigned an Azure role that includes the **Microsoft.Storage/storageAccounts/regeneratekey/action**. Some Azure built-in roles that include this action are the **Owner**, **Contributor**, and **Storage Account Key Operator Service Roles**.<br>
+To rotate an account's access keys, the user must either be a Service Administrator, or must be assigned an Azure role that includes the **Microsoft.Storage/storageAccounts/regeneratekey/action**. Some Azure built-in roles that include this action are the **Owner**, **Contributor**, and **Storage Account Key Operator Service Roles**.
 
 ## Create a key expiration policy<br>
 
@@ -101,7 +96,7 @@ Follow these steps to assign the built-in policy to the appropriate scope in the
     
     :::image type="content" source="../media/policy-definition-select-portal-page-40266255.png" alt-text="Screenshot showing a policy definition example of how to ensure storage account keys are not expired.":::
     
-6.  Select **Review + create** to assign the policy definition to the specified scope.<br>
+6.  Select **Review + create** to assign the policy definition to the specified scope.
     
     :::image type="content" source="../media/policy-assignment-create-page-53cecf86.png" alt-text="Screenshot showing how to assign the built-in policy for a resource scope.":::
     
@@ -112,9 +107,7 @@ To monitor your storage accounts for compliance with the key expiration policy, 
 
 1.  On the Azure Policy dashboard, locate the built-in policy definition for the scope that you specified in the policy assignment. You can search for *Storage account keys, should not be expired* in the **Search** box to filter for the built-in policy.<br>
 2.  Select the policy name with the desired scope.<br>
-3.  On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report.
-    
-    To bring a storage account into compliance, rotate the account access keys.
+3.  On the **Policy assignment** page for the built-in policy, select **View compliance**. Any storage accounts in the specified subscription and resource group that do not meet the policy requirements appear in the compliance report. To bring a storage account into compliance, rotate the account access keys.
     
     :::image type="content" source="../media/policy-compliance-report-page-238d8b1b.png" alt-text="Screenshot showing the policy compliance report portal.":::
     

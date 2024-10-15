@@ -21,7 +21,3 @@ In this module, you examined several options for securing Azure Storage. You dis
 - Secure your [Azure storage account](/training/modules/secure-azure-storage-account/).
 
 - Implement [Azure Storage security](/training/modules/storage-security/).
-
-## Learn more with optional hands-on exercises
-
-- Control [access to Azure Storage with shared access signatures (sandbox)](/training/modules/control-access-to-azure-storage-with-sas/).

@@ -1,6 +1,6 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you set up your toy company's pull request workflows, you need to configure your environment.
+Before you set up your toy company's pull-request workflows, you need to configure your environment.
 
 In this unit, you make sure that your Azure and GitHub environments are set up so that you can complete the rest of this module successfully.
 
@@ -15,7 +15,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-In this section, you set up your GitHub repository to complete the rest of this module. You do so by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module.
+In this section, you set up your GitHub repository to complete the rest of this module by creating a new repository based on a template repository. The template repository contains the files you need to get started on this module.
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -43,7 +43,7 @@ On the GitHub site, create a repository from the template by doing the following
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that work only with public repositories and GitHub Enterprise accounts.
 
-1. Select **Create repository from template**.
+1. Select **Create repository**.
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repository creation page.":::
 
@@ -79,7 +79,7 @@ You now have a copy of the template repository in your own account. Clone this r
 
 ## Sign in to Azure
 
-Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a workload identity for your GitHub Actions workflows to use.
+Now that you've cloned the repository locally to your computer, you'll sign in to your Azure environment. You'll use your Azure account to create a workload identity for your GitHub Actions workflows to use.
 
 ::: zone pivot="cli"
 
@@ -116,7 +116,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 ::: zone pivot="cli"
 
-To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group and role assignment, and prepare the GitHub secrets.
+To create the workload identities, the Azure CLI commands use `jq` to parse data from JSON output. If you don't have `jq` installed, you can use Bash in [Azure Cloud Shell](https://shell.azure.com/) to create the workload identity, resource group, and role assignment, and prepare the GitHub secrets.
 
 1. Run the following code to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
   description: "Create and manage sensitive information types."
-  ms.date: 03/22/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -32,6 +32,7 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.create-manage-sensitive-information-types.introduction
+- learn.wwl.create-manage-sensitive-information-types.sensitive-info-type-overview
 - learn.wwl.create-manage-sensitive-information-types.compare-built-versus-custom
 - learn.wwl.create-manage-sensitive-information-types.create-manage-custom
 - learn.wwl.create-manage-sensitive-information-types.describe-custom-with-exact-data-match

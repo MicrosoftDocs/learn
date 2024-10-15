@@ -2,12 +2,12 @@
 uid: learn.wwl.send-pass-data-output-from-pipeline
 metadata:
   title: Send and pass data as output from the pipeline
-  description: "This module explains how to send pipeline data to files and in various output formats."
+  description: This module explains how to send pipeline data to files and in various output formats.
   ms.date: 01/29/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-powershell
 title: Send and pass data as output from the pipeline
 summary: This module explains how to send pipeline data to files and in various output formats.
 abstract: |

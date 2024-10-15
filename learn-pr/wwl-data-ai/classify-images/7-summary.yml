@@ -3,11 +3,13 @@ uid: learn.wwl.classify-images.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 08/20/2021
+  description: Summary
   author: wwlpublish
   ms.author: berryivor
+  ms.date: 07/10/2024
   ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 content: |

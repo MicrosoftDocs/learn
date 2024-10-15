@@ -11,7 +11,7 @@ Now that you understand these tools, you're confident that Azure Monitor can eff
 
 ## Clean up resources
 
-In this module, you created a VM in your Azure subscription. So you don't continue to incur charges for this VM, you can delete it or the resource group that contains it.
+In this module, you created a VM in your Azure subscription. To prevent further charges for this VM, you can delete it or the resource group that contains it.
 
 To delete the resource group that contains the VM and its resources:
 
@@ -26,11 +26,11 @@ To learn more about monitoring your VMs with Azure Monitor, see the following re
 - [Azure Monitor documentation](/azure/azure-monitor)
 - [Monitor virtual machines with Azure Monitor](/azure/azure-monitor/vm/monitor-virtual-machine)
 - [Supported metrics with Azure Monitor](/azure/azure-monitor/reference/supported-metrics/metrics-index)
-- [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log)
+- [Send Azure Monitor Activity log data](/azure/azure-monitor/essentials/activity-log)
 - [Supported metrics for Microsoft.Compute/virtualMachines](/azure/azure-monitor/reference/supported-metrics/microsoft-compute-virtualmachines-metrics)
-- [What is VM insights?](/azure/azure-monitor/vm/vminsights-overview)
+- [Overview of VM insights](/azure/azure-monitor/vm/vminsights-overview)
 - [Create interactive reports with VM insights workbooks](/azure/azure-monitor/vm/vminsights-workbooks)
-- [View app dependencies with VM insights](/azure/azure-monitor/vm/vminsights-maps)
-- [Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-overview)
-- [Collect events and performance counters from virtual machines with Azure Monitor Agent](/azure/azure-monitor/agents/data-collection-rule-azure-monitor-agent)
+- [Use the Map feature of VM insights to understand application components](/azure/azure-monitor/vm/vminsights-maps)
+- [Azure Monitor Agent overview](/azure/azure-monitor/agents/azure-monitor-agent-overview)
+- [Collect data with Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-data-collection)
 - [Tutorial: Collect guest logs and metrics from an Azure virtual machine](/azure/azure-monitor/vm/tutorial-monitor-vm-guest)

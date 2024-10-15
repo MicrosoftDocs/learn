@@ -4,7 +4,8 @@ metadata:
   type: standard
   title: Automatically scale your AKS clusters with the cluster autoscaler
   description: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
-  ms.date: 11/08/2023
+  manager: rayoflores
+  ms.date: 06/06/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: module
@@ -16,12 +17,12 @@ abstract: |
   - Understand how cluster scalability can affect your workloads.
   - Configure the AKS cluster autoscaler on a running cluster.
 prerequisites: |
-  - An Azure subscription.
-  - Ability to use the Azure CLI.
-  - Ability to create a Docker container.
-  - Ability to navigate the Azure portal.
-  - Familiarity with Git and GitHub.
-  - Basic knowledge of Kubernetes and its concepts.
+  - An Azure subscription
+  - Ability to use the Azure CLI
+  - Ability to create a Docker container
+  - Ability to navigate the Azure portal
+  - Familiarity with Git and GitHub
+  - Basic knowledge of Kubernetes and its concepts
 iconUrl: /training/achievements/aks-cluster-autoscaling.svg
 levels:
   - beginner

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.provide-remote-help
+title: Provide Remote Help
+metadata:
+  title: Provide Remote Help
+  description: "Provide Remote Help"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-provide-remote-help.md)]

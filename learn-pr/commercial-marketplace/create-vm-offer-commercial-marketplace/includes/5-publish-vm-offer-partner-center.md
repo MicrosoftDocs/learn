@@ -24,7 +24,7 @@ For guidance to help you complete this step, reference our documentation on [off
 
 ### Adding a preview audience
 
-When you publish your offer, you can identify a preview audience that gets access to review your VM offer before it's available in Azure Marketplace. For more information, review our [documentation on adding a preview audience for your VM offer](/partner-center/marketplace/azure-vm-create-preview).
+When you publish your offer, you can identify a preview audience that gets access to review your VM offer before it's available in Azure Marketplace. For more information, review our [documentation on adding a preview audience for your VM offer](/partner-center/marketplace/azure-vm-preview-audience).
 
 ### Creating VM offer plans
 
@@ -53,7 +53,7 @@ After selecting your license model and entering pricing information, you'll tell
 >[!TIP]
 >To publish a private plan, you'll need to know the Azure tenant IDs of your customers.
 
-For more detailed guidance on creating plans for your VM offer, reference our [documentation on VM offer plans](/partner-center/marketplace/azure-vm-create-plans).
+For more detailed guidance on creating plans for your VM offer, reference our [documentation on VM offer plans](/partner-center/marketplace/azure-vm-plan-overview).
 
 ### Completing your offer's technical configuration
 
@@ -68,7 +68,7 @@ When you get to your offer's technical configuration, you're prompted to provide
 - Recommended VM sizes to deploy your software. Customers can see these recommendations before they deploy your software from Azure Marketplace. You can provide up to six recommended VM sizes for your offer's plan.
 - Add open ports (which are public ports that are automatically opened on a deployed VM). You can specify the ports individually or via a range along with the supported protocol: TCP, UDP, or both. Be sure to use a hyphen if specifying a port range (such as 80-150).
 - The VM generation type that you want to publish. This decision should be based on your customers' needs. You can publish a generation 1 VM, a generation 2 VM, or both. For help with understanding the difference between generation 1 and 2 VMs, reference our [documentation on support for generation 2 VMs on Azure](/azure/virtual-machines/generation-2).
-- To wrap up the technical configuration, you provide the VM image that customers use to deploy your offer. This step is where you select your VM image from the shared image gallery (Azure Compute Gallery) associated with your Azure tenant. If you don't see your image, make sure that you have access to the Azure Compute Gallery. For help with accessing your Azure Compute Gallery, reference [this documentation](/partner-center/marketplace/azure-vm-create-using-approved-base#capture-image).
+- To wrap up the technical configuration, you provide the VM image that customers use to deploy your offer. This step is where you select your VM image from the shared image gallery (Azure Compute Gallery) associated with your Azure tenant. If you don't see your image, make sure that you have access to the Azure Compute Gallery. For help with accessing your Azure Compute Gallery, reference [this documentation](/partner-center/marketplace/azure-vm-use-approved-base).
 
 When creating your plans, you can reuse the technical configuration from another one of your offer's plans. If you choose to reuse a technical configuration from another plan, the technical configuration tab isn't shown for the plan you're creating. The reused technical configuration, including any updates you make in the future, is used for this plan. You won't be able to change this setting after you publish the offer.
 

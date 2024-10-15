@@ -1,7 +1,7 @@
 
 Before getting into qubits and operations, let's start with a simple example to understand how superposition works.
 
-## How can we describe superposition?
+## How can you describe superposition?
 
 Imagine you have a cat and a box, and you want to describe the possible configurations of the *cat and box system*. For example, "the cat inside the box", "the cat next to the box", and so on. 
 
@@ -23,4 +23,4 @@ However, in the quantum world, things are different. A quantum cat and a quantum
 
 Quantum cats don't exist - as far as we know - but quantum particles do.
 
-In the next unit, you'll explore superposition in quantum computing.
+In the next unit, you'll see superposition in quantum computing.

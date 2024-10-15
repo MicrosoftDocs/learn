@@ -2,7 +2,7 @@ You're updating an existing .NET solution that has a Blazor application as it's 
 
 ## Project overview
 
-This project's goal is to implement two service classes for data storage and completions. For the data storage service class, use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in a pre-existing container. For chat completion, use the Azure OpenAI .NET SDK to send requests and parse responses.
+This project's goal is to implement two service classes for data storage and completions. For the data storage service class, use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in an existing container. For chat completion, use the Azure OpenAI .NET SDK to send requests and parse responses.
 
 The key tasks you need to do are:
 
@@ -51,6 +51,12 @@ A [development container](https://containers.dev/) environment is available with
     dotnet --list-sdks
     ```
 
+1. Change to the `src` directory, where the project file is located.
+
+    ```bash
+    cd src
+    ```
+
 1. Build the .NET project.
 
     ```bash
@@ -91,7 +97,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --location "eastus"
     ```
 
-1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az group deployment create`](/cli/azure/group/deployment#az-group-deployment-create).
+1. Deploy the [azuredeploy.json](https://github.com/Azure-Samples/cosmosdb-chatgpt/blob/start/azuredeploy.json) template file to the resource group using [`az deployment group create`](/cli/azure/deployment/group#az-deployment-group-create).
 
     ```azurecli
     az deployment group create \

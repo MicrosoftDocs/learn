@@ -4,7 +4,7 @@ title: Exercise - Investigate string formatting basics
 metadata:
   title: Exercise - Investigate string formatting basics
   description: "Learn methods to format strings for efficient display, especially for cases using multiple variables."
-  ms.date: 05/08/2024
+  ms.date: 08/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P1}\");`, where `tax` is defined by `decimal tax =.12051 m;`?"
+  - content: "Which is the output of `Console.WriteLine($\"Tax rate: {tax:P1}\");`, where `tax` is defined by `decimal tax =.12051m;`?"
     choices:
     - content: "`Tax rate: 12.05%`"
       isCorrect: false

@@ -9,7 +9,7 @@ For both SDKs covered in this unit, you need the endpoint and a key from your Az
 |--------------|-------|
 | `YOUR_ENDPOINT_NAME` | This base endpoint is found in the **Keys & Endpoint** section in the Azure portal. It's the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
 | `YOUR_API_KEY` | Keys are found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
-| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure OpenAI Studio. |
+| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure AI Studio. |
 
 ## Install libraries
 
@@ -18,7 +18,7 @@ First, install the client library for your preferred language. The C# SDK is a .
 ::: zone pivot="csharp"
 
 ```console
-dotnet add package Azure.AI.OpenAI --prerelease
+dotnet add package Azure.AI.OpenAI --version <insert preferred version>
 ```
 
 ::: zone-end

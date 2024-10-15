@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Create a workload identity for a GitHub Actions workflow
   description: Learn how to create workload identities and link them to GitHub Actions workflows.
-  ms.date: 01/31/2023
+  ms.date: 05/21/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

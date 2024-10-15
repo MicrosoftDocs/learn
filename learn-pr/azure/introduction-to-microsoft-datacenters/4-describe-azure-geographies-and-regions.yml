@@ -3,10 +3,10 @@ uid: learn.introduction-to-microsoft-datacenters.describe-azure-geographies-and-
 title: Describe Azure geographies and regions
 metadata:
   title: Describe Azure geographies and regions
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
+  description: Describes the Microsoft Cloud hierarchy consisting of Azure geographies and regions. 
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 4
 content: |

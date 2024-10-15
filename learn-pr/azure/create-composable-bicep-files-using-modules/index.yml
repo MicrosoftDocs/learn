@@ -4,7 +4,9 @@ metadata:
   moduleType: standard
   title: Create composable Bicep files by using modules
   description: Build Bicep modules that are reusable, flexible, and shareable. Add parameters, conditions, and outputs to make your modules composable into templates.
-  ms.date: 03/27/2023
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: module

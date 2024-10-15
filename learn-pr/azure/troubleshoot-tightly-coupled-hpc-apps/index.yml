@@ -3,14 +3,15 @@ uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps
 metadata:
   title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Troubleshoot tightly coupled HPC applications that are having runtime failures or are underperforming.
-  ms.date: 05/09/2023
+  ms.date: 05/29/2024
   author: garvct
   ms.author: cogarvey
   ms.topic: module
+  ms.service: azure-virtual-machines
 title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: Provide guidance on troubleshooting runtime failures and performance bottlenecks in tightly coupled HPC applications.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Troubleshoot runtime failures for tightly coupled HPC applications.
   - Troubleshoot tightly coupled HPC applications that are underperforming.
 prerequisites: |

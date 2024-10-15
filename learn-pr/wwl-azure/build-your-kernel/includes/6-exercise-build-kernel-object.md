@@ -1,4 +1,7 @@
-In this exercise, you learn how to build your first Semantic Kernel SDK project. You learn how to create a new project, add the Semantic Kernel SDK NuGet package, and add a reference to the Semantic Kernel SDK. Let's get started!
+In this exercise, you learn how to build your first Semantic Kernel SDK project. You create a new project, add the Semantic Kernel SDK NuGet package, create a kernel object, and run your first prompt. Let's get started!
+
+> [!IMPORTANT]
+> You must have [Visual Studio 2022](https://www.visualstudio.com) or Visual Studio Code with the [C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) and [.NET 8.0](https://dot.net/download) installed to complete these steps.
 
 1. Open Visual Studio Code and create a new project.
 
@@ -18,10 +21,10 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
     using Microsoft.SemanticKernel;
 
     var builder = Kernel.CreateBuilder();
-    builder.Services.AddAzureOpenAIChatCompletion(
-        "your-resource-name",
+    builder.AddAzureOpenAIChatCompletion(
+        "your-deployment-name",
         "your-endpoint",
-        "your-resource-key",
+        "your-api-key",
         "deployment-model");
     var kernel = builder.Build();
     ```
@@ -51,4 +54,4 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
     10. Baked eggs with cheese
     ```
 
-    The response comes from the Azure Open AI model you passed to the kernel. The Semantic Kernel SDK is able to connect to the large language model (LLM) and run the prompt. Notice how quickly you were able to receive responses from the LLM. The Semantic Kernel SDK makes building smart applications easy and efficient.
+    The response comes from the Azure OpenAI model you passed to the kernel. The Semantic Kernel SDK is able to connect to the large language model (LLM) and run the prompt. Notice how quickly you were able to receive responses from the LLM. The Semantic Kernel SDK makes building smart applications easy and efficient.

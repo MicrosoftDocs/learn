@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.share-knowledge-within-teams.integrate-github-azure-devops-microsoft-teams
+title: Integrate GitHub and Azure DevOps with Microsoft Teams
+metadata:
+  title: Integrate GitHub and Azure DevOps with Microsoft Teams
+  description: "Integrate GitHub and Azure DevOps with Microsoft Teams"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-integrate-github-azure-devops-microsoft-teams.md)]

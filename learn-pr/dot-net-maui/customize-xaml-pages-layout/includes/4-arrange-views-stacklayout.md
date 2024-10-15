@@ -45,9 +45,9 @@ To do the same thing in XAML, nest the children inside the `StackLayout` tags. T
 
 ```xaml
 <StackLayout>
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40" />
 </StackLayout>
 ```
 
@@ -61,9 +61,9 @@ It's common to want some space between the children of a `StackLayout`. `StackLa
 
 ```xaml
 <StackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40" />
 </StackLayout>
 ```
 
@@ -109,14 +109,14 @@ As mentioned earlier, the `VerticalStackLayout` and `HorizontalStackLayout` are 
 
 ```xaml
 <VerticalStackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" HeightRequest="40" />
+    <BoxView Color="Blue" HeightRequest="40" />
+    <BoxView Color="Gray" HeightRequest="40"/>
 </VerticalStackLayout>
 
 <HorizontalStackLayout Spacing="30">
-    <BoxView Color="Silver" />
-    <BoxView Color="Blue" />
-    <BoxView Color="Gray" />
+    <BoxView Color="Silver" WidthRequest="40" />
+    <BoxView Color="Blue" WidthRequest="40" />
+    <BoxView Color="Gray" WidthRequest="40" />
 </HorizontalStackLayout>
 ```

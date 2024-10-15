@@ -4,10 +4,10 @@ title: 'Explore best practices for DP-100: Designing and implementing a data sci
 metadata:
   title: 'Explore best practices for DP-100: Designing and implementing a data science solution on Azure learning path 11'
   description: "Explore best practices for DP-100: Designing and implementing a data science solution on Azure learning path 11"
-  ms.date: 09/07/2023
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/14-explore-best-practices-dp-100-learning-path-11.md)]

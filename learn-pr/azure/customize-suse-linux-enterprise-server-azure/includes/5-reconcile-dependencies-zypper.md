@@ -1,8 +1,8 @@
 Zypper is a command-line package manager that automatically reconciles package dependencies.
 
-With Apache webserver installed, it’s time to add MySQL database to your PAYG instance of SLES on Azure.
+With Apache webserver installed, it’s time to add MySQL database to your pay-as-you-go instance of SLES on Azure.
 
-In this unit, we’ll talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
+In this unit, we talk about how SUSE handles package dependencies and explain what zypper package manager is and how to use it for installation. 
 
 ## Packages alert you of dependencies…One. At. A. Time.
 
@@ -14,7 +14,7 @@ SUSE created zypper, a command-line package manager, which makes use of libzpp (
 
 ## Packages and corresponding modules configuration are updated 
 
-As soon as SUSE becomes aware of an error within a package, an update package is shipped. If you run PAYG, the updated packages are pushed out to a SUSE update infrastructure at your Azure datacenter location and on to your machine when you connect. If you run BYOS, you can download the updates through SUSE directly.  
+As soon as SUSE becomes aware of an error within a package, an update package is shipped. If you run pay-as-you-go, the updated packages are pushed out to a SUSE update infrastructure at your Azure datacenter location and on to your machine when you connect. If you run BYOS, you can download the updates through SUSE directly.  
 
 ## You can manually pull updates using zypper
 
@@ -29,8 +29,8 @@ Let’s have a look at some basic zypper examples:
 
 
 ## Command line vs. GUI (zypper vs. YaST)
-You might be wondering why did we use YaST to load apache and now we’re using zypper to add mariadb? Does it matter which one I use? The short answer is no. Zypper and YaST do the same things, they just go about it a little differently. 
+You might be wondering why did we use YaST to load apache and now we’re using zypper to add mariadb? Does it matter which one I use? The short answer is no. Zypper and YaST do the same things; they just go about it differently. 
 
 From command line, you can launch YaST and get a graphical menu that shows you all the different options you can use to administrate your system. Most of the time, graphical systems are preferred because they provide a visual overview of commands, so you don't need to remember everything.
 
-Zypper's command-line interface is faster because you don’t have to navigate several windows or menu bars to execute the command. It also allows you to create your own workflow (or script) which is not possible in a graphical environment. If you use the commands and parameters regularly, zypper can be a faster way to get things done.
+Zypper's command-line interface is faster because you don’t have to navigate several windows or menu bars to execute the command. It also allows you to create your own workflow (or script), which isn't possible in a graphical environment. If you use the commands and parameters regularly, zypper can be a faster way to get things done.

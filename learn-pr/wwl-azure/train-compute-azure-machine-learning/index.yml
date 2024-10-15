@@ -2,12 +2,14 @@
 uid: learn.wwl.train-compute-azure-machine-learning
 metadata:
   title: Train compute-intensive models with Azure Machine Learning
-  description: "Train compute-intensive models with Azure Machine Learning"
-  ms.date: 02/03/2023
+  description: Train compute-intensive models with Azure Machine Learning
   author: wwlpublish
   ms.author: madiepev
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
-  ms.service: machine-learning 
+  ms.collection:
+    - wwl-ai-copilot
 title: Train compute-intensive models with Azure Machine Learning
 summary: Train compute-intensive models with GPU compute in Azure Machine Learning. By monitoring workloads, you can find the optimal compute configuration. Distributed training allows you to train on multiple nodes to speed up training time.
 abstract: |

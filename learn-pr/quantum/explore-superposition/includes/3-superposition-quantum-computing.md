@@ -1,16 +1,24 @@
-The word "qubit" means "quantum bit". A qubit is a quantum particle that has two possible positions, or *states*. As analog to the classical bit, we can call these states $0$ and $1$.
 
-A qubit can be in the state $0$, in the state $1$, and in any superposition of both states.
+Superposition is a fundamental concept in quantum computing. In the classical world, objects can only be in one state at a time. However, in the quantum world,
+quantum particles can be in multiple states at the same time. This phenomenon is called superposition.
 
-## How can we represent the superposition in a qubit?
+If the cat from the previous unit was a quantum cat, the state of the quantum cat and the box system would be the same: the sum of the six different positions of the quantum cat with respect to the box, weighted by the probability of finding the quantum cat in that position. The only difference is that the classic cat can be in one (and only one) of six possible positions while the quantum cat can be in all six positions at the same time!
 
-Imagine that we draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. We place the state $0$ at the upper point of the vertical axis and the state $1$ at the lower point.
+In quantum computing nobody uses quantum cats - sadly - but qubits. The word "qubit" means "quantum bit". Just like in classical computing, where the basic unit of information is the bit, in quantum computing the basic unit of information is the qubit. And just like the bit can take two possibles values, 0 and 1, a qubit is any quantum particle that can be in two possibles states, like a photon, which can be polarized in two directions, or an electron, which can be in two energy levels. 
 
-How could we describe this representation? We could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
+How can you represent the superposition in a qubit? What is the probability of finding a qubit in a particular state?
+
+## How can you represent the superposition in a qubit?
+
+A qubit is a quantum particle that has two possible positions, or *states*. As analog to the classical bit, the quantum states of a qubit are also called $0$ and $1$. A qubit can be in the state $0$, in the state $1$, and in any superposition of both states. How can you represent this superposition?
+
+Imagine that you draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. The state $0$ is placed at the upper point of the vertical axis and the state $1$ is at the lower point.
+
+How could you describe this representation? You could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
 
 :::image type="content" source="../media/superposition-bloch-sphere.png" alt-text="Diagram of a circle with two arrows pointing up and down from the center of the circle. The arrows represent the states 0 and 1 respectively. Any other state is an arrow pointing at other directions.":::
 
-What about any other point of the circle? How can we represent that state? Just as coordinates in a plane, we could try to represent it as a combination of the two states $0$ and $1$. For example, we could take how close the vector is from the state $0$ and call this angle $\alpha$, and how close is from the state $1$ and call this angle $\beta$. We could represent the state as $\alpha 0 + \beta 1 $. Thus, the state is a *superposition* of the states $0$ and $1$.
+What about any other point of the circle? How can you represent that state? Just as coordinates in a plane, you could try to represent it as a combination of the two states $0$ and $1$. For example, you could take how close the vector is from the state $0$ and call this angle $\alpha$, and how close is from the state $1$ and call this angle $\beta$. We could represent the state as $\alpha 0 + \beta 1 $. Thus, the state is a *superposition* of the states $0$ and $1$.
 
 Just like the example of the cat and the box, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $.
 
@@ -23,7 +31,7 @@ This representation of a qubit is actually accurate, and it's known as the *Bloc
 
 ## What is the probability of finding a qubit in a state?
 
-Just like the example of the cat and the box, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $. The numbers $\alpha$ and $\beta$ represent how "close" the qubit state is to the states $0$ and $1$, respectively. So, are $\alpha$ and $\beta$ the probability of finding the qubit in the state $0$ or $1$? Not exactly.
+Like in the example of the cat and the box of the previous unit, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $. The numbers $\alpha$ and $\beta$ represent how "close" the qubit state is to the states $0$ and $1$, respectively. So, are $\alpha$ and $\beta$ the probability of finding the qubit in the state $0$ or $1$? Not exactly.
 
 The numbers $\alpha$ and $\beta$ are *probability amplitudes* for each state. Their absolute values, for example $|\alpha|^2$ give the corresponding probabilities. For example, the probability for observing state $0$ is $|\alpha|^2$, and the probability of observing state $1$ is $|\beta|^2$.
 

@@ -3,17 +3,18 @@ uid: learn.azure.configure-3d-assets-mixed-reality-unity
 metadata:
   title: Configure 3D assets for mixed reality in Unity
   description: Get step-by-step instructions on how to place Prefab 3D assets and models into a Unity scene. Learn about Unity Scriptable Objects and mixed reality design considerations before deploying to a HoloLens 2.
-  ms.date: 05/12/2021
+  ms.date: 05/24/2024
   author: JBrentJ
   ms.author: jejacks
   ms.topic: module
+  ms.service: mixed-reality
 title: Configure 3D assets for mixed reality in Unity
 summary: Learn how to place Prefab 3D assets or models into a Unity scene.
 abstract: |
-  By the end of this module you,'ll be able to:
-  - Incorporate design considerations into building a scene
-  - Use MRTK interactions to provide a rich user experience
-  - Place assets in a Unity scene
+  By the end of this module, you'll be able to:
+  - Incorporate design considerations into building a Scene.
+  - Use Mixed Reality Toolkit (MRTK) interactions to provide a rich user experience
+  - Place assets in a Unity scene.
 iconUrl: /training/achievements/configure-3d-assets-mixed-reality-unity.svg
 levels:
 - beginner
@@ -35,7 +36,7 @@ products:
 - windows
 - windows-mixed-reality
 prerequisites: |
-  - Introduction to Mixed Reality, Azure Digital Twin and Unity Module
+  - Introduction to Mixed Reality, Azure Digital Twin, and Unity Module
   - Build a 3D Scene in Unity with Maps SDK Module
   - Fundamental working knowledge of Unity
   - Understanding of how to build for and deploy to mixed reality devices

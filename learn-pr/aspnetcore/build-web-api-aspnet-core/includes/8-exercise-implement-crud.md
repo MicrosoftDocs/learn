@@ -95,11 +95,9 @@ Build and start the web API by running the following command:
 dotnet run
 ```
 
-
-### Test the finished web API with .http files
+### Test the finished web API with HTTP files
 
 1. Reopen the **ContosoPizza.http** file.
-
 
 1. Make a `POST` request to add a new pizza in `HttpRepl` by using the following command:
 
@@ -160,7 +158,7 @@ dotnet run
     To verify that the pizza was updated, rerun the `GET` action by using the following command:
 
     ```output
-    GET {{ContosoPizza_HostAddress}}/pizza/5
+    GET {{ContosoPizza_HostAddress}}/pizza/3
     Accept: application/json
 
     ###
@@ -231,10 +229,10 @@ dotnet run
     ]
     ```
 
-You've now finished implementing and testing a newly created web API built with ASP.NET Core.
+You're now finished implementing and testing a newly created web API built with ASP.NET Core.
 
 
-### Optional: Test the finished web API with Command Line HTTP REPL
+### Optional: Test the finished web API with Command Line HTTPREPL
 
 1. Reopen the existing `httprepl` terminal, or open a new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
@@ -373,4 +371,4 @@ You've now finished implementing and testing a newly created web API built with 
     ]
     ```
 
-You've now finished implementing and testing a newly created web API built with ASP.NET Core.
+You're now finished implementing and testing a newly created web API built with ASP.NET Core.

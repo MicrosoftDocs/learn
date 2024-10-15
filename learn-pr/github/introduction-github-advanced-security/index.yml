@@ -4,6 +4,8 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to GitHub Advanced Security          # Do not edit: title must be "Introduction to (product)"
   description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.service: github
+  manager: mkluck
   ms.date: 07/13/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: rmcmurray
   ms.author: robmcm

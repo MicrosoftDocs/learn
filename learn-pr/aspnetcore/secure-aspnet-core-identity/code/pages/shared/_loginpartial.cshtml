@@ -7,8 +7,8 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-    RazorPagesPizzaUser user = await UserManager.GetUserAsync(User);
-    var fullName = $"{user.FirstName} {user.LastName}";
+    RazorPagesPizzaUser? user = await UserManager.GetUserAsync(User);
+    var fullName = $"{user?.FirstName} {user?.LastName}";
 
     <li class="nav-item">
         <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello, @fullName!</a>

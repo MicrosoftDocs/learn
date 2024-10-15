@@ -54,7 +54,7 @@ We didn't specify a size when we created our VM, so Azure selected a default gen
 
 ```azurecli
 az vm create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM2 \
     --image Ubuntu2204 \
     --admin-username azureuser \
@@ -68,11 +68,11 @@ az vm create \
 
 ## Resize an existing VM
 
-We can also resize an existing VM if the workload changes or if it was incorrectly sized at creation. Let's use the first VM we created, SampleVM. Before requesting a resize, we must check to see if the desired size is available in the cluster our VM is part of. We can use the `vm list-vm-resize-options` command:
+We can also resize an existing VM if the workload changes or if it was incorrectly sized at creation. Let's use the first VM we created, SampleVM. Before requesting a resize, we must check to see if the desired size is available in the cluster of which our VM is a part. We can use the `vm list-vm-resize-options` command:
 
 ```azurecli
 az vm list-vm-resize-options \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --output table
 ```
@@ -86,7 +86,7 @@ To resize a VM, we'll use the `vm resize` command. For example, perhaps we find 
 
 ```azurecli
 az vm resize \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --name SampleVM \
     --size Standard_D2s_v3
 ```

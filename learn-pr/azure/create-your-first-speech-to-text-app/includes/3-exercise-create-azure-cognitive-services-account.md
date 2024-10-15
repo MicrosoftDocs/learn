@@ -8,7 +8,9 @@ The applications that you'll create in the upcoming exercises use this account t
 
 ## Create an Azure AI services account
 
-1. In the Cloud Shell on the right, create a variable to hold the name of the resource group that was created for you when you activated the Learn sandbox:
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
+1. Use the following code to create a variable to hold the name of the resource group that was created for you when you activated the Learn sandbox:
 
     ```bash
     RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>

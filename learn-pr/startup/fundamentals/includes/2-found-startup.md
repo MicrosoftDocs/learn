@@ -90,7 +90,7 @@ Even if you're a sole founder, it's still useful to capture these thoughts and d
 
 ## Worksheet
 
-Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet. Use it to start discussions with your cofounders (or if you're a sole founder, with your friends or family).
+Download and complete the Founder Alignment Exercise worksheet. Use it to start discussions with your cofounders (or if you're a sole founder, with your friends or family).
 
 :::image type="content" source="../media/founder-alignment-exercise.png" alt-text="Screenshot of a worksheet that outlines points to consider before pursuing a startup.":::
 
@@ -127,7 +127,7 @@ Emily has decided that she'll stagger her commitment of time and money to the co
 
 ## Worksheet
 
-Download and complete the [milestone worksheet](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE2%20-%20Founder%20commitment%20milestone%20worksheet.pdf?azure-portal=true). Use it as a tool to capture your thoughts about what milestones you'll need to hit before you're prepared to invest time and cash in your company.
+Download and complete the milestone worksheet. Use it as a tool to capture your thoughts about what milestones you'll need to hit before you're prepared to invest time and cash in your company.
 
 Remember that this is a living document, and you'll need to adjust the milestones and your commitments as you progress.
 

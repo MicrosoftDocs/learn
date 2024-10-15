@@ -4,10 +4,12 @@ title: Use Azure AI services
 metadata:
   title: Use Azure AI services
   description: "Use Azure AI services"
-  ms.date: 12/05/2023
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/4-use-azure-ai-service.md)]

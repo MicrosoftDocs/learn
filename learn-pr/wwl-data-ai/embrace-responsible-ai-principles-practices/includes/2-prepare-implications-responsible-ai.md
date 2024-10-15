@@ -16,12 +16,12 @@ It's important to recognize that as new intelligent technology emerges and proli
 
 ### Threats
 
-Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on Twitter called Tay, which could learn from interactions with Twitter users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
+Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on X called Tay, which could learn from interactions with X users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
 
 Novel threats require a constant evolution in our approach to responsible AI. For example, because generative AI enables people to create or edit videos, images, or audio files so credibly that they look real, media authenticity is harder to verify. In response, Microsoft is teaming with other technology and news stakeholders to develop technical standards to address deepfake-related manipulation.  
 
 >[!NOTE]
-> To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure AI Services or Bing Chat, are built upon these insights.
+>To prepare for new types of attacks that could influence learning datasets, Microsoft developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities. Current generative AI models, such as those provided in Azure AI Services or Bing Chat, are built upon these insights.
 
 ### Biased outcomes
 
@@ -30,7 +30,7 @@ Another unintended consequence that organizations should keep in mind is that AI
 For example, consider a large financial lending institution that wants to develop a risk scoring system for loan approvals. When engineers test the system before deployment, they realize that it only approves loans for male borrowers. Since the system was trained on past customer's data, it reproduced the historical sexist bias of loan officers. Validating the system before deployment allowed us to identify and address the issue before the system was operative.
 
 >[!NOTE]
-> At Microsoft, our researchers are exploring tools and techniques for detecting and reducing bias within AI systems. Prebuilt models are validated thoroughly, but nonetheless should be used wisely and their results should be always audited before taking action.
+>At Microsoft, our researchers are exploring tools and techniques for detecting and reducing bias within AI systems. Prebuilt models are validated thoroughly, but nonetheless should be used wisely and their results should be always audited before taking action.
 
 ### Sensitive use cases
 
@@ -39,6 +39,6 @@ Another illustration of our responsibility to mitigate unintended consequences i
 While new laws and regulations must be written, they aren't a substitute for the responsibility that we all have while engaging with AI. By working together, businesses, governments, NGOs, and academic researchers alike can address sensitive use cases.  
 
 >[!NOTE]
-> Microsoft assesses and develops principles to govern our work with facial recognition technologies. We anticipate these principles will evolve over time as we continue to learn and partner with customers, other tech companies, academics, civil society, and others on this issue. Microsoft uses responsible AI practices to detect, prevent, and mitigate these issues, but any AI-related project should consider them as well.
+>Microsoft assesses and develops principles to govern our work with facial recognition technologies. We anticipate these principles will evolve over time as we continue to learn and partner with customers, other tech companies, academics, civil society, and others on this issue. Microsoft uses responsible AI practices to detect, prevent, and mitigate these issues, but any AI-related project should consider them as well.
 
 Next, let's see how Microsoft’s six guiding principles for responsible AI can be applied within other organizations.

@@ -3,11 +3,12 @@ uid: learn.design-your-site-recovery-solution-in-azure
 metadata:
   title: Design your site recovery solution in Azure
   description: Help protect your applications and data from disasters with a well-designed site recovery solution.
+  manager: jsuri
   ms.date: 04/15/2024
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: module
-  ms.service: site-recovery
+  ms.service: azure-site-recovery
 title: Design your site recovery solution in Azure
 summary: Help protect your applications and data from disasters with a well-designed site recovery solution.
 abstract: |

@@ -1,4 +1,3 @@
-
 A release pipeline takes artifacts and releases them through stages and finally into production.
 
 :::image type="content" source="../media/pipeline-7793ffc6.png" alt-text="Screenshot of a release pipeline with dev, QA and production stages.":::

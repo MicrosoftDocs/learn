@@ -1,4 +1,4 @@
-In the previous exercise, you created a web application that provides sample weather forecast data, then interacted with it in the HTTP REPL.
+In the previous exercise, you created a web application that provides sample weather forecast data, then interacted with it in the HTTP Read-Eval-Print Loop (REPL).
 
 Before you dive in to writing your own `PizzaController` class, let's look at the code in the `WeatherController` sample to understand how it works. In this unit, you learn how `WeatherController` uses the `ControllerBase` base class and a few .NET attributes to build a functional web API in a few dozen lines of code. After you understand those concepts, you're ready to write your own `PizzaController` class.
 
@@ -72,6 +72,6 @@ public class WeatherForecastController : ControllerBase
 
 As you learn later in this module, other common actions are associated with a web API that performs CRUD operations (`GET`, `PUT`, `POST`, `DELETE`). But an API controller needs to implement only one controller action.
 
-In this case, you're getting the full list of `WeatherForecast` returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET, you can retrieve a single item by using the `[HttpGet("{id}")]` attribute. You'll implement that attribute in the next exercise.
+In this case, you're getting the full list of `WeatherForecast` items returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET, you can retrieve a single item by using the `[HttpGet("{id}")]` attribute. You'll implement that attribute in the next exercise.
 
-Now that you've learned the fundamental components of a web API controller, you're ready to create your own `PizzaController` class.
+Now that you know the fundamental components of a web API controller, you're ready to create your own `PizzaController` class.

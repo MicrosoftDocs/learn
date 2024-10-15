@@ -4,10 +4,12 @@ title: Examine webhooks
 metadata:
   title: Examine webhooks
   description: "Examine webhooks"
-  ms.date: 09/05/2023
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-examine-webhooks.md)]

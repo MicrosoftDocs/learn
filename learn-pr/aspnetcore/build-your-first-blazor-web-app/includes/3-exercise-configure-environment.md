@@ -10,7 +10,7 @@ This module gives you the option to use the [.NET CLI](/dotnet/core/tools/), [Vi
 
 To create a new Blazor web app project in Visual Studio Code with the C# Dev Kit:
 
-1. Bring up the Command Palette using Ctrl+Shift+P and then type ".NET".
+1. Bring up the Command Palette using **Ctrl** + **Shift** + **P** and then type *.NET*.
 
 1. Find and select the **.NET: New Project** command.
 
@@ -20,7 +20,9 @@ To create a new Blazor web app project in Visual Studio Code with the C# Dev Kit
 
 1. Name the project **BlazorApp** and press **Enter** to confirm.
 
-1. View your new Blazor app project in the **Solution Explorer**.
+1. Select **Create Project**.
+
+1. View your new Blazor app project in the **Explorer**.
 
 ## Optional: Create a new Blazor app with the .NET CLI
 
@@ -81,7 +83,7 @@ To create a new Blazor web app using Visual Studio:
 
 1. Start Visual Studio and select **Create a new project**.
 
-1. In **Create a new project** window, type **Blazor** in the search box and hit Enter.
+1. In **Create a new project** window, type **Blazor** in the search box and press **Enter**.
 
 1. Select the **Blazor Web App** template and select **Next**.
 
@@ -91,7 +93,7 @@ To create a new Blazor web app using Visual Studio:
 
     ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)
 
-1. In the **Additional information** window, select **.NET 8.0 (Long Term Support)** in the **Framework** drop-down if not already selected and click the **Create** button.
+1. In the **Additional information** window, select **.NET 8.0 (Long Term Support)** in the **Framework** drop-down if not already selected and select the **Create** button.
 
     When creating a Blazor Web App you can select from various options, like whether to enable authentication, what interactive render modes to enable, and how much of the app you want to be interactive. For this app, make sure the defaults are selected as follows:
 
@@ -116,19 +118,19 @@ Several files were created to give you a simple Blazor app that is ready to run:
 
 ## Run the app
 
-Click on the **Start Debugging** button (green arrow) in the Debug Toolbar in Visual Studio to run your app.
+Select the **Start Debugging** button (green arrow) in the Debug Toolbar in Visual Studio to run your app.
 
 ![Screenshot of the Debug Toolbar in Visual Studio with the Start Debugging button highlighted.](../media/click-debug-button.png)
 
-Once the app is running, you can apply code changes to the running app by clicking the **Hot Reload** button.
+Once the app is running, you can apply code changes to the running app by selecting the **Hot Reload** button.
 
 ![Screenshot of the Debug Toolbar in Visual Studio with the Hot Reload button highlighted.](../media/hot-reload.png)
 
-You can stop the app at any time by clicking on the **Stop** button in the top toolbar.
+You can stop the app at any time by selecting the **Stop** button in the top toolbar.
 
 ![Screenshot of the Debug Toolbar in Visual Studio with the Stop Debugging button highlighted.](../media/stop-debug.png)
 
-The first time you run a web app in Visual Studio, it will set up a development certificate for hosting the app over HTTPS and then prompt you to trust the certificate. We recommend agreeing to trust the certificate. The certificate is only used for local development, and without it most browsers complain about the security of the website.
+The first time you run a web app in Visual Studio, it sets up a development certificate for hosting the app over HTTPS and then prompts you to trust the certificate. We recommend agreeing to trust the certificate. The certificate is only used for local development, and without it most browsers complain about the website's security.
 
 Wait for the app to launch in the browser. Once you get to the following page, you've successfully run your first Blazor app!
 

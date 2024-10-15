@@ -11,7 +11,7 @@ The `Array.Resize()` method adds or removes elements from your array.
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -22,6 +22,9 @@ The `Array.Resize()` method adds or removes elements from your array.
     }
 
     ```
+
+    > [!NOTE]
+    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12.
 
 1. Take a minute to focus on the line of code `Array.Clear(pallets, 0, 2);`.
 
@@ -53,7 +56,7 @@ The `Array.Resize()` method adds or removes elements from your array.
 
 ## Empty string versus null
 
-When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. pointing to nothing is an important concept that can be difficult to grasp at first.
+When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. Pointing to nothing is an important concept that can be difficult to grasp at first.
 
 What if you attempt to retrieve the value of an element that was affected by the `Array.Clear()` method, could you do it?
 
@@ -73,7 +76,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 1. Verify your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0]}");
@@ -120,7 +123,7 @@ To prove that the value stored in `pallets[0]` after being cleared is null, you'
 1. Make sure your code matches the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0].ToLower()}");
@@ -158,7 +161,7 @@ if (pallets[0] != null)
 1. Next, rework the code listing from Step 1 to include code to resize the array. When complete, your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets =  ["B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -214,7 +217,7 @@ Conversely, you can remove array elements using `Array.Resize()`.
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);

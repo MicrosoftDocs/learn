@@ -3,8 +3,8 @@ uid: learn.azure.encrypt-sector-data.2-sector-key-management
 title: Describe encryption keys in Azure
 metadata:
   title: Describe encryption keys in Azure
-  description: Overview of solutions for key management, either multi-tenant (Azure Key Vault) and multi-tenant (Azure Dedicated HSM).
-  ms.date: 04/11/2023
+  description: Overview of solutions for key management, either multitenant (Azure Key Vault) and multitenant (Azure Dedicated HSM).
+  ms.date: 05/24/2024
   author: Adriamen
   ms.author: robmcm
   ms.topic: unit

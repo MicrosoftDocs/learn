@@ -3,13 +3,14 @@ uid: learn.wwl.describe-features-tools-azure-for-governance-compliance
 metadata:
   title: Describe features and tools in Azure for governance and compliance
   description: "Describe features and tools in Azure for governance and compliance"
-  ms.date: 03/13/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure
+  ms.service: azure-architecture-center
   ai-usage: human-only
 title: Describe features and tools in Azure for governance and compliance
 summary: This module introduces you to tools that can help with governance and compliance within Azure.

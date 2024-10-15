@@ -4,66 +4,66 @@ title: Check your knowledge
 metadata:
   title: Microsoft commercial marketplace knowledge check
   description: Check what you learned about the Microsoft commercial marketplace.
-  ms.date: 12/20/2023
-  author: marleva
-  ms.author: maevan
+  ms.date: 05/15/2024
+  author: JulCsc
+  ms.author: krmaddox
   manager: jasonh
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: 'Knowledge check'
+  title: "Knowledge check"
   questions:
-  - content: 'The Microsoft commercial marketplace is accessible through'
+  - content: "The Microsoft commercial marketplace is accessible through:"
     choices:
-    - content: 'The online stores, Microsoft AppSource and Azure Marketplace'
+    - content: "The online stores - Microsoft AppSource and Azure Marketplace"
       isCorrect: false
-    - content: 'The Microsoft network of resellers'
+    - content: "The Microsoft network of resellers"
       isCorrect: false
-    - content: 'In-product experiences in Microsoft products like Microsoft 365, Dynamics 365, the Power Platform, and Azure'
+    - content: "In-product experiences in Microsoft products like Microsoft 365, Dynamics 365, the Power Platform, and Azure"
       isCorrect: false
-    - content: 'All the above'
+    - content: "All of the above"
       isCorrect: true  
-  - content: 'One of the ways to access commercial marketplace products and services is through the online stores, Microsoft AppSource and Azure Marketplace. Which of the following describes the difference between the two online stores?'
+  - content: "One of the ways to access commercial marketplace products and services is through the online stores - Microsoft AppSource and Azure Marketplace. Which of the following answers describes the difference between the two online stores?"
     choices: 
-    - content: 'Microsoft AppSource contains consulting services offered by Microsoft partners, while Azure Marketplace only contains apps'
+    - content: "Microsoft AppSource contains consulting services offered by Microsoft partners, while Azure Marketplace only contains apps"
       isCorrect: false
-    - content: 'Microsoft AppSource contains business solutions, while Azure Marketplace contains IT software and services'
+    - content: "Microsoft AppSource contains business solutions, while Azure Marketplace contains IT software and services"
       isCorrect: true
-    - content: 'Microsoft AppSource contains IT software and services, while Azure Marketplace contains business solutions'
+    - content: "Microsoft AppSource contains IT software and services, while Azure Marketplace contains business solutions"
       isCorrect: false
-    - content: 'None of the above'
+    - content: "None of the above"
       isCorrect: false  
-  - content: 'The commercial marketplace is free to join'
+  - content: "The commercial marketplace is free to join."
     choices:
-    - content: 'True'
+    - content: "True"
       isCorrect: true
-    - content: 'False'
-      explanation: 'There is no sign up fee to join the commercial marketplace or to list your solution.'
+    - content: "False"
+      explanation: "There's no sign-up fee to join the commercial marketplace or to list your solution."
       isCorrect: false  
-  - content: 'Microsoft partners with active commercial marketplace offers get customer leads when potential customers interact with their listings, regardless of offer type'
+  - content: "Microsoft partners with active commercial marketplace offers get customer leads when potential customers interact with their listings, regardless of offer type."
     choices:
-    - content: 'True'
+    - content: "True"
       isCorrect: true
-    - content: 'False'
-      explanation: 'When customers click the call-to-action on your commercial marketplace listing and consent to share their basic account information, Microsoft sends lead information directly to your CRM.'
+    - content: "False"
+      explanation: "When customers select the call-to-action on your commercial marketplace listing and consent to share their basic account information, Microsoft sends lead information directly to your CRM."
       isCorrect: false
-  - content: 'Microsoft provides sales, technical, and marketing benefits to accelerate your commercial marketplace growth through a program called Marketplace Rewards. Which commercial marketplace offer type unlocks the most benefits and go-to-market engagement from Microsoft?'
+  - content: "Microsoft provides sales, technical, and marketing benefits to accelerate your commercial marketplace growth through a program called Marketplace Rewards. Which commercial marketplace offer type unlocks the most benefits and go-to-market engagement from Microsoft?"
     choices: 
-    - content: 'Contact Me listing'
+    - content: "Contact Me listing"
       isCorrect: false
-    - content: 'Trial listing'
+    - content: "Trial listing"
       isCorrect: false
-    - content: 'Transact listing'
+    - content: "Transact listing"
       isCorrect: true
-    - content: 'BYOL listing'
+    - content: "Bring your own listing (BYOL)"
       isCorrect: false
-  - content: 'Marketplace Rewards'
+  - content: "Marketplace Rewards:"
     choices:
-    - content: 'Provides benefits designed to help grow your commercial marketplace revenue'
+    - content: "Provides benefits designed to help grow your commercial marketplace revenue"
       isCorrect: false
-    - content: 'Is available to all partners with an active commercial marketplace offer'
+    - content: "Is available to all partners with an active commercial marketplace offer"
       isCorrect: false
-    - content: 'Is designed to support you at your stage of growth'
+    - content: "Is designed to support you at your stage of growth"
       isCorrect: false
-    - content: 'All the above'
+    - content: "All of the above"
       isCorrect: true

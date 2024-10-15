@@ -35,7 +35,7 @@ Start by deploying an Azure virtual machine that hosts the Azure CycleCloud appl
     | Region | Select the name of any Azure region that's close to your location where you can provision Azure VMs. |
     | Availability options | **No infrastructure redundancy required** |
     | Security type | **Standard** |
-    | Image | Accept the default image selection that is determined by the marketplace plan you chose in the previous step. |
+    | Image | Accept the default image selection determined by the marketplace plan you chose in the previous step. |
     | Azure Spot instance | Leave the checkbox unselected. |
     | Size | Select **See all sizes**. On the **Select a VM size** pane, select the **Standard E4s v3** entry, and then enter **Select**. |
 
@@ -50,8 +50,6 @@ Start by deploying an Azure virtual machine that hosts the Azure CycleCloud appl
     | Username | Enter **cc-admin**. |
     | SSH public key source | Ensure that the **Generate new key pair** option is selected, |
     | Key pair name | Enter **cc-ssh-keys**. |
-
-    :::image type="content" source="../media/u4-cyclecloud-create-basics-2.png" alt-text="Screenshot showing the lower section of the Basics tab of the Create a virtual machine blade in the Azure portal." border="false":::
 
     > [!NOTE]
     > Azure provides the ability to automatically generate an SSH key pair and allows you to store it for future use.
@@ -103,20 +101,17 @@ Start by deploying an Azure virtual machine that hosts the Azure CycleCloud appl
 
 ## Task 2: Connect to the Azure CycleCloud Azure VM
 
-After you deploy the Azure CycleCloud web application to an Azure VM, you can connect to it with the public IP address assigned to the network interface of that VM. After you're connected, you'll be prompted to complete an initial setup of the web application. During that initial setup, you'll define the application authentication settings. We recommend that you use the same username and SSH key pair that you chose when deploying the underlying Azure VM. Note that the SSH key pair you define here provides authentication to cluster nodes.
+After you deploy the Azure CycleCloud web application to an Azure VM, you can connect to it with the public IP address assigned to the network interface of that VM. After you connect, you'll be prompted to complete an initial setup of the web application. During that initial setup, you define the application authentication settings. We recommend that you use the same username and SSH key pair that you chose when deploying the underlying Azure VM. The SSH key pair you define here provides authentication to cluster nodes.
 
-1. On your computer, in the web browser window displaying the **cyclecloud-vm** page in the Azure portal, in the **Essentials** section, note the value of the public IP address assigned to the network adapter of the **cyclecloud-vm** Azure VM. You'll need it later in this task.
+1. On your computer, in the web browser window displaying the **cyclecloud-vm** page in the Azure portal, in the **Essentials** section, note the value of the public IP address assigned to the network adapter of the **cyclecloud-vm** Azure VM. You need it later in this task.
 
 1. In the **Essentials** section, select the link **cyclecloud-rg** to navigate to the **cyclecloud-rg** pane of the resource group hosting the CycleCloud Azure VM resources.
 
 1. On the **cyclecloud-rg** resource group pane, in the list of resources, select the **cc-ssh-keys** entry.
 
-1. On the **cc-ssh-keys** pane, note the value of the public key and record it. You'll need it later in this task.
-
-    :::image type="content" source="../media/u4-cyclecloud-public-key.png" alt-text="Screenshot showing the Essentials section of the cc-ssh-keys section, including the Public key entry in the Azure portal." border="false":::
+1. On the **cc-ssh-keys** pane, note the value of the public key and record it. You need it later in this task.
 
 1. On your computer, open another browser window and navigate to the `https://<IP_address>` URL, replacing the **<IP_address>** placeholder with the public IP address you identified in the previous step. If prompted, confirm that you want to connect to the target Azure VM.
-
     > [!NOTE]
     > Your browser will likely display the message about the connection not being private and warn you about connecting to that IP address. This is expected, because you're connecting to the target server by using a self-signed certificate and the URL you're connecting to doesn't match the subject name of the certificate.
 
@@ -131,7 +126,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     | User ID | Enter **cc-admin**. |
     | Name | Enter the name of your account associated with the target subscription. |
     | Password | Enter a complex password. |
-    | Confirm | Re-enter the same complex password. |
+    | Confirm | Reenter the same complex password. |
     | SSH Public Key | Paste the value of the public SSH key you previously recorded in this task. |
 
     > [!NOTE]
@@ -142,7 +137,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 
 ## Task 3: Add an Azure subscription to Azure CycleCloud
 
-To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you'll take.
+To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you take.
 
 > [!NOTE]
 > CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to Microsoft Learn.

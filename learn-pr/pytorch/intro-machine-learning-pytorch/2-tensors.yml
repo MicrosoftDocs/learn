@@ -5,11 +5,10 @@ metadata:
   title: What are Tensors?
   description: Tensors are specialized data structures that are similar to arrays and matrices.
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 08/05/2023
+  ms.author: sgilley
+  ms.date: 08/22/2024
   ms.topic: unit
   ms.custom:
-    - team=cloud_advocates
     - build-2023
     - build-2023-dataai
   ms.contributors:
@@ -30,3 +29,4 @@ quiz:
           explanation: "Incorrect"
         - content: "Tensors are specialized data structures that are similar to arrays and matrices."
           isCorrect: true
+          explanation: "Correct"

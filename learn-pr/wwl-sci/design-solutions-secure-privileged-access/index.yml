@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-secure-privileged-access
 metadata:
   title: Design solutions for securing privileged access
   description: "You learn advanced techniques for designing solutions that manage privileged access effectively."
-  ms.date: 3/04/2024
+  ms.date: 09/09/2024
   author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: module
@@ -43,6 +43,8 @@ units:
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-secure-tenant-administration
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-cloud-infrastructure-entitlement-management
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-privileged-access-workstations-bastion-services
+- learn.wwl.design-solutions-secure-privileged-access.evaluate-access-review-management-solution
+- learn.wwl.design-solutions-secure-privileged-acces.evaluate-security-active-directory-domain-services
 - learn.wwl.design-solutions-secure-privileged-access.knowledge-check
 - learn.wwl.design-solutions-secure-privileged-access.summary
 badge:

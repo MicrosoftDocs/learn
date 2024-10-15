@@ -2,7 +2,7 @@ You can integrate Microsoft Defender for Cloud into your workflows and use it in
 
 Many organizations only respond to security incidents after an attack has occurred. To reduce costs and damage, it's necessary to have an incident response plan *before* an attack occurs.
 
-:::image type="content" source="../media/security-center-incident-response-figure-1-cab022fe.png" alt-text="A set of circles linked with arrows illustrates the closure stages of an incident response plan detection, assessment, diagnosis, and stabilization.":::
+:::image type="content" source="../media/security-center-incident-response-figure-1-cab022fe.png" alt-text="Screenshot of a set of circles linked with arrows illustrates the closure stages of an incident response plan detection.":::
 
 
 The following examples show how to use Microsoft Defender for Cloud to detect, assess, and diagnose your incident response plan stages.

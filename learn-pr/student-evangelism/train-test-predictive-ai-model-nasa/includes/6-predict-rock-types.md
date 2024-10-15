@@ -7,7 +7,6 @@ To predict the type of rock in a new image, we need to complete these steps:
 - Step 3: Extract the features and characteristics of the image. Pass the image into the model to do the extractions.
 - Step 4: Predict the type of rock that's shown in the image. Use the associations we learned in Step 2 by finding the highest probability prediction from the model's results.
 
-
 ## Use the model to make predictions
 
 Follow these steps to make predictions with the neural network in your AI model.
@@ -21,7 +20,6 @@ Follow these steps to make predictions with the neural network in your AI model.
 
 1. Next, we create a function to predict the type of rock in a new image by comparing it against our model's matrix pattern. Add the following code in a new cell in your Jupyter Notebook file, and then run the cell:
 
-
    ```python
    def predict_image(image):
        image_tensor = test_transforms(image).float()
@@ -33,4 +31,4 @@ Follow these steps to make predictions with the neural network in your AI model.
        return index
    ```
 
-You've defined the image prediction function. Now you can continue to the final exercise and call this function to predict the type of rock in an image.
+You've defined the image-prediction function. Now you can continue to the final exercise and call this function to predict the type of rock in an image.

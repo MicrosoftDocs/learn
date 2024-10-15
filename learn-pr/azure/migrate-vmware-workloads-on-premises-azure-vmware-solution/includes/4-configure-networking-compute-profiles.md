@@ -35,8 +35,6 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
 
-    :::image type="content" source="../media/4-site-pairing-complete.png" alt-text="Screenshot when site pairing is complete in the on-premises VMware environment.":::
-
 ## Create network profiles
 
 VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. You'll create these network profiles for each network intended for use with VMware HCX. When you create network profiles, you'll use the IP segments identified during the VMware HCX deployment planning phase.
@@ -79,8 +77,6 @@ After the network profiles are created, you'll need to create a compute profile.
 1. In **Select Service Resources**, select one or more service resources (clusters) to enable the selected VMware HCX services.
 
 1. When you have the clusters in your on-premises datacenter, select **Continue**.
-
-    :::image type="content" source="../media/4-select-service-resource.png" alt-text="Screenshot that shows selected service resources and the Continue button in HCX Connector on-premises.":::
 
 1. On the **Select Datastore** pane, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note that when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
 

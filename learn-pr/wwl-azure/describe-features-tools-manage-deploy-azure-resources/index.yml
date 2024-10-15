@@ -3,13 +3,13 @@ uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources
 metadata:
   title: Describe features and tools for managing and deploying Azure resources
   description: "This module discusses tools and features that assist in managing and deploying resources within Azure."
-  ms.date: 03/15/2024
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - ai-video-concept
-  ms.service: azure
+  ms.service: azure-architecture-center
   ai-usage: ai-assisted
 title: Describe features and tools for managing and deploying Azure resources
 summary: This module covers tools that help you manage your Azure and on-premises resources.

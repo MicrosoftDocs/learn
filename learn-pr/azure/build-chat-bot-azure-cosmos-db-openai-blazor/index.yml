@@ -10,8 +10,9 @@ metadata:
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: module
+  ms.collection: TBD
   ms.date: 04/25/2024
-  ms.service: cosmos-db
+  ms.service: azure-cosmos-db
   ms.subservice: nosql
 title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
 summary: |

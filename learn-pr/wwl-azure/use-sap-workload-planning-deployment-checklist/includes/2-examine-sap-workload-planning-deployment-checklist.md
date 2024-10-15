@@ -1,5 +1,3 @@
-
-
 In general, when initiating a project to deploy SAP workloads to Azure, you should divide it into the following phases:
 
 1. Project preparation and planning

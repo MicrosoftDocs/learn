@@ -2,9 +2,12 @@ Through this module, we discussed the importance of embracing AI in a responsibl
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the importance of engaging with AI in a responsible manner.
-* Identify six guiding principles to develop and use AI responsibly.
-* Describe successful practices to responsible AI governance.
+* Prepare for the implications of responsible AI
+* Describe principles of responsible AI
+* Establish a system for AI governance
+* Take actions for AI governance
+* Engage across teams and organizations to implement responsible AI principles
+* Take inspiration from how responsible AI is approached at Microsoft
 
 ## Use these resources to discover more
 
@@ -12,7 +15,7 @@ Now that you have reviewed this module, you should be able to:
 
 * To assess how committed your organization currently is in responsible AI practices and which next steps to take, read our [Responsible AI Maturity Model](https://www.microsoft.com/research/publication/responsible-ai-maturity-model/).
 * To learn more about collaborative industry initiatives on responsible AI, read the [Partnership on AI homepage](https://partnershiponai.org/).
-* To learn more about Microsoft tools to help building transparent models and avoiding biases and unfair outcomes, read the [Responsible AI Dashboard homepage](https://www.microsoft.com/ai/ai-lab-responsible-ai-dashboard).
+* To learn more about Microsoft tools and practices to evaluate, understand, and make informed decisions about your AI systems, review [Responsible AI tools and practices ](https://www.microsoft.com/ai/tools-practices).
 * To learn more about open-source tools to build fair AI systems, read the [FairLearn homepage](https://fairlearn.org/).
 * To learn more about inclusive design practices, read the [Microsoft Inclusive Design homepage](https://inclusive.microsoft.design/) and the [Inclusive 101 Guidebook](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf).
 

@@ -47,7 +47,7 @@ First, follow these steps to create an example scope named `Employees.Read.All:`
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator).
 
-2. If you have access to multiple tenants, use the **Settings** icon :::image type="content" source="https://learn.microsoft.com/entra/identity-platform/media/common/admin-center-settings-icon.png" alt-text="Icon of gear.":::
+2. If you have access to multiple tenants, use the **Settings** icon :::image type="content" source="/entra/identity-platform/media/common/admin-center-settings-icon.png" alt-text="Icon of gear.":::
  in the top menu to switch to the tenant containing the app registration from the **Directories + subscriptions** menu.
 
 3. Browse to **Identity** &gt; **Applications** &gt; **App registrations**, and then select your API's app registration.

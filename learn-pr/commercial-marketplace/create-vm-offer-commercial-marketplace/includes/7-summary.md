@@ -3,8 +3,8 @@ Today, we spent some time covering virtual machine (VM) offer basics for the Mic
 Now that you have an understanding of the VM offer basics, we encourage you to use the resources shared via links throughout this module to go deeper. Here are some helpful links you can reference as you create your VM offer for the commercial marketplace:
 
 - [Documentation to help you plan a VM offer for the commercial marketplace](/partner-center/marketplace/marketplace-virtual-machines)
-- [Documentation for creating a VM offer on Azure Marketplace](/partner-center/marketplace/azure-vm-create)
-- [Documentation to help you create a VM using an approved base](/partner-center/marketplace/azure-vm-create-using-approved-base)
-- [Documentation to help you create a VM using your own image](/partner-center/marketplace/azure-vm-create-using-own-image)
+- [Documentation for creating a VM offer on Azure Marketplace](/partner-center/marketplace/azure-vm-offer-setup)
+- [Documentation to help you create a VM using an approved base](/partner-center/marketplace/azure-vm-use-approved-base)
+- [Documentation to help you create a VM using your own image](/partner-center/marketplace/azure-vm-use-own-image)
 - [Documentation on using Packer to create Windows VM images in Azure](/azure/virtual-machines/windows/build-image-with-packer)
 - [Documentation on using Packer to create Linux VM images in Azure](/azure/virtual-machines/linux/build-image-with-packer)

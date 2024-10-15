@@ -1,34 +1,39 @@
 Azure Storage supports using Microsoft Entra ID to authorize requests to blob data. With Microsoft Entra ID, you can use Azure role-based access control (Azure RBAC) to grant permissions to a security principal, which may be a user, group, or application service principal. The security principal is authenticated by Microsoft Entra ID to return an OAuth 2.0 token. The token can then be used to authorize a request against the Blob service.
 
-Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your blob applications when possible to assure access with minimum required privileges.
-
 Authorization with Microsoft Entra ID is available for all general-purpose and Blob storage accounts in all public regions and national clouds. Only storage accounts created with the Azure Resource Manager deployment model support Microsoft Entra authorization.
 
-Blob storage additionally supports creating shared access signatures (SAS) that are signed with Microsoft Entra credentials. For more information, see [Grant limited access to data with shared access signatures](/azure/storage/common/storage-sas-overview).
+For optimal security, Microsoft recommends using Microsoft Entra ID with managed identities to authorize requests against blob, queue, and table data, whenever possible. Authorization with Microsoft Entra ID and managed identities provides superior security and ease of use over Shared Key authorization. To learn more about managed identities, see [What are managed identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview). For an example of how to enable and use a managed identity for a .NET application, see [Authenticating Azure-hosted apps to Azure resources with .NET](/dotnet/azure/sdk/authentication/azure-hosted-apps).
+
+For resources hosted outside of Azure, such as on-premises applications, you can use managed identities through Azure Arc. For example, apps running on Azure Arc-enabled servers can use managed identities to connect to Azure services. To learn more, see [Authenticate against Azure resources with Azure Arc-enabled servers](/azure/azure-arc/servers/managed-identity-authentication).
+
+For scenarios where shared access signatures (SAS) are used, Microsoft recommends using a user delegation SAS. A user delegation SAS is secured with Microsoft Entra credentials instead of the account key. To learn about shared access signatures, see [Grant limited access to data with shared access signatures](/azure/storage/common/storage-sas-overview). For an example of how to create and use a user delegation SAS with .NET, see [Create a user delegation SAS for a blob with .NET](/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet).
 
 ## Overview of Microsoft Entra ID for blobs<br>
 
 When a security principal (a user, group, or application) attempts to access a blob resource, the request must be authorized, unless it's a blob available for anonymous access. With Microsoft Entra ID, access to a resource is a two-step process:
 
 1.  First, the security principal's identity is authenticated and an OAuth 2.0 token is returned.
-     -  The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access blob data.
+
+ -  The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to access blob data.
+
 2.  Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
-     -  The authorization step requires that one or more Azure RBAC roles be assigned to the security principal making the request.
+
+ -  Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
 
 ### Use a Microsoft Entra account with portal, PowerShell, or Azure CLI
 
-To learn about how to access data in the Azure portal with a Microsoft Entra account, see Data access from the Azure portal. To learn how to call Azure PowerShell or Azure CLI commands with a Microsoft Entra account, see Data access from PowerShell or Azure CLI.
+To learn about how to access data in the Azure portal with a Microsoft Entra account, see [Data access from the Azure portal](/azure/storage/blobs/authorize-access-azure-active-directory#data-access-from-the-azure-portal). To learn how to call Azure PowerShell or Azure CLI commands with a Microsoft Entra account, see [Data access from PowerShell or Azure CLI](/azure/storage/blobs/authorize-access-azure-active-directory#data-access-from-powershell-or-azure-cli).
 
-### Use Microsoft Entra ID to authorize access in application code
+### Use Microsoft Entra ID to authorize access in application code<br>
 
 To authorize access to Azure Storage with Microsoft Entra ID, you can use one of the following client libraries to acquire an OAuth 2.0 token:
 
- -  The Azure Identity client library is recommended for most development scenarios.<br>
- -  The Microsoft Authentication Library (MSAL) may be suitable for certain advanced scenarios.
+ -  The Azure Identity client library is recommended for most development scenarios.
+ -  The [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) may be suitable for certain advanced scenarios.
 
-### Azure Identity client library
+#### Azure Identity client library
 
-The Azure Identity client library simplifies the process of getting an OAuth 2.0 access token for authorization with Microsoft Entra ID via the Azure SDK. The latest versions of the Azure Storage client libraries for .NET, Java, Python, JavaScript, and Go integrate with the Azure Identity libraries for each of those languages to provide a simple and secure means to acquire an access token for authorization of Azure Storage requests.
+The Azure Identity client library simplifies the process of getting an OAuth 2.0 access token for authorization with Microsoft Entra ID via the [Azure SDK](https://github.com/Azure/azure-sdk). The latest versions of the Azure Storage client libraries for .NET, Java, Python, JavaScript, and Go integrate with the Azure Identity libraries for each of those languages to provide a simple and secure means to acquire an access token for authorization of Azure Storage requests.
 
 An advantage of the Azure Identity client library is that it enables you to use the same code to acquire the access token whether your application is running in the development environment or in Azure. The Azure Identity client library returns an access token for a security principal. When your code is running in Azure, the security principal may be a managed identity for Azure resources, a service principal, or a user or group. In the development environment, the client library provides an access token for either a user or a service principal for testing purposes.
 
@@ -100,9 +105,9 @@ To learn how to assign an Azure built-in role to a security principal, see [Assi
 
 For more information about how built-in roles are defined for Azure Storage, see [Understand role definitions](/azure/role-based-access-control/role-definitions#control-and-data-actions). For information about creating Azure custom roles, see [Azure custom roles](/azure/role-based-access-control/custom-roles).
 
-Only roles explicitly defined for data access permit a security principal to access blob data. Built-in roles such as Owner, Contributor, and Storage Account Contributor permit a security principal to manage a storage account, but don't provide access to the blob data within that account via Microsoft Entra ID. However, if a role includes Microsoft.Storage/storageAccounts/listKeys/action, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys. For more information, see [Choose how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal).
+Only roles explicitly defined for data access permit a security principal to access blob data. Built-in roles such as **Owner**, **Contributor**, and **Storage Account Contributor** permit a security principal to manage a storage account, but don't provide access to the blob data within that account via Microsoft Entra ID. However, if a role includes **Microsoft.Storage/storageAccounts/listKeys/action**, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys. For more information, see [Choose how to authorize access to blob data in the Azure portal](/azure/storage/blobs/authorize-data-operations-portal).
 
-For detailed information about Azure built-in roles for Azure Storage for both the data services and the management service, see the Storage section in [Azure built-in roles for Azure RBAC](/azure/role-based-access-control/built-in-roles#storage). Additionally, for information about the different types of roles that provide permissions in Azure, see [Azure roles, Microsoft Entra roles, and classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+For detailed information about Azure built-in roles for Azure Storage for both the data services and the management service, see the **Storage** section in [Azure built-in roles for Azure RBAC](/azure/role-based-access-control/built-in-roles#storage). Additionally, for information about the different types of roles that provide permissions in Azure, see [Azure roles, Microsoft Entra roles, and classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 Azure role assignments may take up to 30 minutes to propagate.
 

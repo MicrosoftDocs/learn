@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.research.introduction-to-project-farmvibes-ai.summary
+
+title: Summary
+metadata:
+  title: summary
+  description: A unit in the Intro to project FarmVibes.AI module. 
+  ms.date: 7/16/2024
+  author: RiyazPishori
+  ms.author: riyazp
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

@@ -3,10 +3,13 @@ uid: learn.wwl.explore-core-data-concepts
 metadata:
   title: Explore core data concepts
   description: "This content is a part of Explore core data concepts."
-  ms.date: 03/18/2024
+  ms.date: 08/28/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure-education
   ai-usage: human-only
 title: Explore core data concepts
@@ -14,15 +17,15 @@ summary: Data powers the digital transformation that is sweeping across organiza
 abstract: |
   In this module, you learn how to:
 
-  - Identify common data formats
+  -   Identify common data formats.
 
-  - Describe options for storing data in files
+  -   Describe options for storing data in files.
 
-  - Describe options for storing data in databases
+  -   Describe options for storing data in databases.
 
-  - Describe characteristics of transactional data processing solutions
+  -   Describe characteristics of transactional data processing solutions.
 
-  - Describe characteristics of analytical data processing solutions
+  -   Describe characteristics of analytical data processing solutions.
 prerequisites: None
 iconUrl: /training/achievements/explore-core-data-concepts.svg
 levels:

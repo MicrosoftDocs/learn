@@ -8,7 +8,6 @@ metadata:
   author: rmcmurray
   ms.author: keall
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/4-what-to-expect.md)]
@@ -20,7 +19,7 @@ quiz:
       isCorrect: false
     - content: "Azure Service Health"
       isCorrect: true
-    - content: "@AzureSupport on Twitter"
+    - content: "@AzureSupport on X"
       isCorrect: false
     - content: "Microsoft Teams"
       isCorrect: false
@@ -30,7 +29,7 @@ quiz:
       isCorrect: false
     - content: "False"
       isCorrect: true
-  - content: "True or False: Following @AzureSupport on Twitter is the best way to know there's an Azure incident and to keep informed."
+  - content: "True or False: Following @AzureSupport on X is the best way to know there's an Azure incident and to keep informed."
     choices:
     - content: "True"
       isCorrect: false

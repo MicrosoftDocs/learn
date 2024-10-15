@@ -4,46 +4,37 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2023
+  ms.date: 08/14/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In which type of tasks can Microsoft AI be useful in healthcare?"
+  - content: "Which statement is true about using health data in an AI solution?"
     choices:
-    - content: "It can be most helpful in automating administrative and menial tasks that don’t require medical expertise."
+    - content: "You don’t need to use health data in an AI system. AI models are pretrained and do not rely on your organization’s data."
       isCorrect: false
-      explanation: "Incorrect. While it’s true that you can automate with AI many daily managerial tasks, AI is also a powerful enabler in more demanding jobs requiring technical knowledge. For example, it’s useful as an assistant in R&D, making diagnoses, or designing personalized treatment."
-    - content: "It can be helpful in both administrative and medical tasks. Menial processes can be automated, while it can help in more complex duties."
+      explanation: "Incorrect. XXXX."
+    - content: "Your solution must take into account the need to protect sensitive data, ensuring that it is stored, exchanged, and used securely."
       isCorrect: true
-      explanation: "Correct. AI can be helpful in many daily routines, such as drafting responses for your communications. It’s also useful as an assistant in R&D, making diagnoses, or designing personalized treatment."
-    - content: "It can be helpful in both administrative and medical tasks. Most tasks can be automated, which improves performance and saves expenses in human resources."
+      explanation: "Correct. XXX."
+    - content: "You can use health data without worry – data used to train AI systems is exempt from confidentiality and data protection requirements."
       isCorrect: false
-      explanation: "Incorrect. It’s true that both administrative and medical tasks can be optimized with AI. However, AI often works best as a copilot, for example, suggesting diagnoses to doctors instead of replacing human professionals."
-  - content: "How can Microsoft AI improve drug trials?"
+      explanation: "Incorrect. XXX."
+  - content: "How can generative AI be used to improve patient care?"
     choices:
-    - content: "Drug trials data can be stored in Microsoft Cloud for Healthcare, which ensures all patient information is kept safe and private."
-      isCorrect: false
-      explanation: "Incorrect. While this statement is true, this feature isn’t directly fueled by AI. However, AI plays a major role in enabling drug trials to become decentralized, since it makes home measurements reliable with AI-powered interpretation."
-    - content: "AI can get more insights out of drug trials, as long as follow-ups are done in special AI-enabled facilities."
-      isCorrect: false
-      explanation: "Incorrect. It’s true that AI is helpful in analyzing results, but it also makes it possible to decentralize drug trials by enabling patients to take reliable measurements at home."
-    - content: "Combined with medical sensors, AI can help decentralize drug trials. This measure allows for less costly drug trials that reach a wider demographic."
+    - content: "Medical professionals can use generative AI technologies, such as Microsoft Copilot, to reduce time spent creating notes, finding information, and other tasks to increase time available to spend with patients."
       isCorrect: true
-      explanation: "Correct. AI algorithms can help get better measurements even when they’re not taken in professional, medical facilities."
-  - content: "Which medical standards are integrated in the Microsoft ecosystem?"
-    choices:
-    - content: "Microsoft has developed their own medical standards for the healthcare community, such as Azure Health Data (AHD)."
+      explanation: "Correct. Generative AI technologies increase the time medical professions have to spend with patients."
+    - content: "Generative AI eliminates the need for patient to consult with a medical professional. Instead, they can use a chatbot to diagnose their condition based on symptoms and advise appropriate treatment."
       isCorrect: false
-      explanation: "Incorrect. Azure Health Data Services isn't a standard, but a Microsoft product that, among other features, provides integration with international medical standards Fast Healthcare Interoperability Resources (FHIR) and Digital Imaging and Communications in Medicine (DICOM)."
-    - content: "Azure Health Data Services includes integration with the Fast Healthcare Interoperability Resources (FHIR) and Digital Imaging and Communications in Medicine (DICOM) standards."
-      isCorrect: true
-      explanation: "Correct. This integration allows you to store electronic health records (EHR) and medical images in Azure and feed the data to AI systems."
-    - content: "Microsoft Cloud for Healthcare includes integration with the electronic health records (EHR) and Digital Imaging and Communications in Medicine (DICOM) standards."
+      explanation: "Incorrect. Generative AI does not replace consultations with a medical professional."
+    - content: "Generative AI is not a suitable technology for use in healthcare scenarios."
       isCorrect: false
-      explanation: "Incorrect. This answer is only partially true. Microsoft Cloud for Healthcare is a package of many Microsoft products tailored for the sector. The specific product that handles this integration is Azure Health Data Services. Besides, EHR is just how the industry calls this type of data. The standard is named Fast Healthcare Interoperability Resources (FHIR)."
+      explanation: "Incorrect. Generative AI is suitable in many healthcare scenarios."

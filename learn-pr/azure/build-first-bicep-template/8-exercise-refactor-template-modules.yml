@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Refactor your template to use modules
   description: Learn how to create self-contained, reusable modules for your Bicep code.
-  ms.date: 09/28/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

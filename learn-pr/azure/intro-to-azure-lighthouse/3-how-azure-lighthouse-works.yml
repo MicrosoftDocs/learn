@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.how-azure-lighthouse-works
+metadata:
+  title: How Azure Lighthouse works
+  description: Learn how Azure Lighthouse uses Azure delegated resource management to enable multitenant access and management.
+  ms.date: 07/24/2024
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: unit
+title: How Azure Lighthouse works
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-azure-lighthouse-works.md)]

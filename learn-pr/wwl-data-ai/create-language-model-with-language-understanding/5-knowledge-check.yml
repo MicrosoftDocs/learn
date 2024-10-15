@@ -4,11 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/01/2023
+  ms.date: 09/26/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 quiz:
   title: ""
   questions:

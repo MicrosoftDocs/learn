@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-id-authentication-verification-methods
-title: 'Recommend and enforce modern authentication protocols '
+title: Recommend and enforce modern authentication protocols
 metadata:
   title: Recommend and enforce modern authentication protocols
   description: "Recommend and enforce modern authentication protocols"
-  ms.date: 05/07/2024
+  ms.date: 09/04/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

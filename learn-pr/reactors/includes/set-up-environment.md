@@ -13,8 +13,8 @@ Complete these steps to set up your environment:
 
 If you have successfully set up your environment with VS Code, Python, Anaconda, and the NumPy and Pandas libraries, you should be able to run a Jupyter notebook inside of VS Code.
 
-1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the folder that corresponds to this module in VS Code.
-2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/blob/main/microsoft-learn-resources/Intro-python-data-science/Test-Setup-Config.ipynb) file to ensure you're ready to continue through the module.
+1. Clone the Reactor repository and open the folder that corresponds to this module in VS Code.
+2. Run the Test-Setup-Config.ipynb file to ensure you're ready to continue through the module.
 
 <!--*Embedded Video Goes Here*-->
 

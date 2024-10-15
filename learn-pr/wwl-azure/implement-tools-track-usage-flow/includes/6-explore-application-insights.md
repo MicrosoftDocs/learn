@@ -1,4 +1,3 @@
-
 You install a small instrumentation package in your application and set up an Application Insights resource in the Microsoft Azure portal.
 
 The instrumentation monitors your app and sends telemetry data to the portal. (The application can run anywhere - it doesn't have to be hosted in Azure.)

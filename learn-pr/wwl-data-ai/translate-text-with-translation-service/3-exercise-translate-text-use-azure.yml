@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-with-translation-service.exercise-translate-text-use-azure
-title: Exercise - Explore translation
+title: Exercise - Explore Azure AI Translator
 metadata:
-  title: Exercise - Explore translation
-  description: "Exercise - Explore translation"
-  ms.date: 09/21/2023
+  title: Exercise - Explore Azure AI Translator
+  description: "Exercise - Explore Azure AI Translator"
+  ms.date: 09/13/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 20
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-translate-text-use-azure.md)]

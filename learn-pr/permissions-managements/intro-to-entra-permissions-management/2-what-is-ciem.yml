@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.permissions-management.intro-to-entra-permissions-management.what-is-ciem
+title: What is CIEM?
+metadata:
+  title: What is CIEM?
+  description: What is CIEM?
+  ms.date: 03/15/2023
+  author: jenniferf-skc 
+  ms.author: jfields
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-ciem.md)]

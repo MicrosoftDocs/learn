@@ -3,6 +3,7 @@ uid: learn.introduction-to-azure-files
 metadata:
   title: Introduction to Azure Files
   description: Learn how Azure Files and Azure File Sync can help you meet your needs for SMB and NFS cloud file shares.
+  manager: akashdubey
   ms.date: 11/10/2023
   author: khdownie
   ms.author: kendownie

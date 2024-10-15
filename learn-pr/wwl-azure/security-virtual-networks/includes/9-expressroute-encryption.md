@@ -7,11 +7,10 @@ Deploy Azure Virtual WAN to establish an IPsec/IKE VPN connection from your on-p
 
 The diagram shows a network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering. The connectivity establishment is straightforward:
 
-1. Establish ExpressRoute connectivity with an ExpressRoute circuit and private peering.<br>
+1.  Establish ExpressRoute connectivity with an ExpressRoute circuit and private peering.<br>
+2.  Establish the VPN connectivity as described in the example.
 
-2. Establish the VPN connectivity as described in the example.
-
-An important aspect of this configuration is routing between the on-premises networks and Azure over both the ExpressRoute and VPN paths.<br>
+An important aspect of this configuration is routing between the on-premises networks and Azure over both the ExpressRoute and VPN paths.
 
 ## Traffic from on-premises networks to Azure
 
@@ -26,7 +25,7 @@ To apply encryption to the communication, you must make sure that for the VPN-co
 
 The same requirement applies to the traffic from Azure to on-premises networks. To ensure that the IPsec path is preferred over the direct ExpressRoute path (without IPsec), you have two options:
 
-Advertise more specific prefixes on the VPN BGP session for the VPN-connected network. You can advertise a larger range that encompasses the VPN-connected network over ExpressRoute private peering, then more specific ranges in the VPN BGP session. For example, advertise 10.0.0.0/16 over ExpressRoute, and 10.0.1.0/24 over VPN.<br>
+Advertise more specific prefixes on the VPN BGP session for the VPN-connected network. You can advertise a larger range that encompasses the VPN-connected network over ExpressRoute private peering, then more specific ranges in the VPN BGP session. For example, advertise 10.0.0.0/16 over ExpressRoute, and 10.0.1.0/24 over VPN.
 
 Advertise disjoint prefixes for VPN and ExpressRoute. If the VPN-connected network ranges are disjoint from other ExpressRoute connected networks, you can advertise the prefixes in the VPN and ExpressRoute BGP sessions respectively. For example, advertise 10.0.0.0/24 over ExpressRoute, and 10.0.1.0/24 over VPN.
 
@@ -52,9 +51,13 @@ The following Azure resources and the corresponding on-premises configurations m
 The site resource is the same as the non-ExpressRoute VPN sites for a virtual WAN. The IP address of the on-premises VPN device can now be either a private IP address, or a public IP address in the on-premises network reachable via the previously created ExpressRoute private peering configuration.
 
 1.  Go to **Your Virtual WAN**, **VPN** sites and create a site for your on-premises network. Keep in mind the following settings values:
+    
+    
      -  Border Gateway Protocol: Select "Enable" if your on-premises network uses BGP.
      -  Private address space: Enter the IP address space that's located on your on-premises site. Traffic destined for this address space is routed to the on-premises network via the VPN gateway.
 2.  Select Links to add information about the physical links. Keep in mind the following settings information:
+    
+    
      -  Provider Name: The name of the internet service provider for this site. For an ExpressRoute on-premises network, it's the name of the ExpressRoute service provider.
      -  Speed: The speed of the internet service link or ExpressRoute circuit.
      -  IP address: The public IP address of the VPN device that resides on your on-premises site. Or, for ExpressRoute on-premises, it's the private IP address of the VPN device via ExpressRoute.
@@ -110,11 +113,9 @@ If you need instructions to configure your device, you can use the instructions 
 
 ## 5. View your virtual WAN
 
-1. Go to the virtual WAN.
-
-2. On the **Overview** page, each point on the map represents a hub.
-
-3. In the **Hubs and connections** section, you can view hub, site, region, and VPN connection status. You can also view bytes in and out.
+1.  Go to the virtual WAN.
+2.  On the **Overview** page, each point on the map represents a hub.
+3.  In the **Hubs and connections** section, you can view hub, site, region, and VPN connection status. You can also view bytes in and out.
 
 ## 6. Monitor a connection
 
