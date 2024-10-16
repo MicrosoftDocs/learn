@@ -1,13 +1,13 @@
 :::image type="content" source="../media/six-principles-of-responsible-ai.png" alt-text="Diagram showing six key principles that should guide AI development and usage." lightbox="../media/six-principles-of-responsible-ai.png" border="false":::
 
-Microsoft has been a global leader in Responsible AI, identifying six key principles that should guide AI development and usage. These principles are:
+Microsoft is a global leader in Responsible AI, identifying six key principles that should guide AI development and usage. These principles are:
 
 - **Fairness**: AI systems should treat all people fairly.
 - **Reliability and safety**: AI systems should perform reliably and safely.
 - **Privacy and security**: AI systems should be secure and respect privacy.
 - **Inclusiveness**: AI systems should empower everyone and engage people.
 - **Transparency**: AI systems should be understandable.
-Accountability: People should be accountable for AI systems.
+- **Accountability**: People should be accountable for AI systems.
 
 Now, let's explore each of these principles in greater detail to understand how they guide responsible AI practices.
 
@@ -21,7 +21,7 @@ Employs techniques to detect bias and mitigate unfair impacts such as:
 - Testing models with balanced demographic samples.
 - Using adversarial debiasing.
 - Monitoring model performance across user segments.
-- And implementing controls to override unfair model scores.
+- Implementing controls to override unfair model scores.
 
 Training AI models on diverse and balanced data can help reduce biases, ultimately promoting fairness.
 
@@ -35,11 +35,11 @@ Safety in AI refers to minimizing unintended harm, including physical, emotional
 
 ## Privacy and security: AI systems should be secure and respect privacy
 
-As artificial intelligence (AI) becomes more common, protecting user privacy and data security is very important. Microsoft and GitHub are aware of this and both companies have made privacy and security key parts of their Responsible AI plan. This plan focuses on using principles to guide data practices.
+As artificial intelligence (AI) becomes more common, it's important to protect user privacy and data security. Microsoft and GitHub are aware of this tenet and both companies include privacy and security as key parts of their Responsible AI plan. This plan focuses on using principles to guide data practices.
 
 Microsoft and GitHub’s approach to Responsible AI aims to stop abuse and keep user trust. Key points include:
 
-- Getting users' permission before collecting their data. Clearly explain how the AI will use their data and get their consent. Don't collect data secretly. Let users choose if they want to share personal data and inform them through clear prompts and policies.
+- Getting users' permission before collecting their data. Clearly explain how the AI uses their data and get their consent. Don't collect data secretly. Let users choose if they want to share personal data and inform them through clear prompts and policies.
 - Collecting only the data needed for the AI to work. Avoid gathering extra information and remove sensitive data once the AI is in use. Regularly check data inputs to ensure only essential data is collected.
 - Anonymizing personal data. Use methods like pseudonymization and aggregation to protect identities. Pseudonymization replaces personal details with random identifiers, while aggregation groups data into summaries, removing specific individual details.
 
@@ -88,7 +88,7 @@ Transparency is essential to build trust, ensure accountability, promote fairnes
 
 ## Accountability: People should be accountable for AI systems
 
-The Accountability principle states that AI creators should be responsible for how their systems operate. They need to continuously monitor system performance and mitigate risks. Accountability in the AI industry has become a pressing issue as high-profile cases of algorithmic harm, bias, and abuse come to light. Critics increasingly argue that without accountability, AI creators hold too much power over opaque systems impacting lives.
+The Accountability principle states that AI creators should be responsible for how their systems operate. They need to continuously monitor system performance and mitigate risks. Accountability in the AI industry is becoming a pressing issue as high-profile cases of algorithmic harm, bias, and abuse come to light. Critics increasingly argue that without accountability, AI creators hold too much power over opaque systems impacting lives.
 
 Microsoft emphasizes accountability in AI development and deployment through its Responsible AI Standard, which considers accountability a foundational principle. According to Microsoft, AI systems must be accountable to people, and companies deploying AI systems must take responsibility for their operation.
 

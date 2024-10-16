@@ -8,7 +8,7 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. In the search box, enter **Web**.
 
-1. From the search results, select **ASP.NET Core Web App**.
+1. From the search results, select **ASP.NET Core Web App (Razor Pages)**.
 
 1. Select **Next**.
 
@@ -18,12 +18,12 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. Select **Next**.
 
-1. Select **.NET 6.0 (Long-term support)** in the Framework drop-down.
+1. Select **.NET 8.0 (Long-term support)** in the Framework drop-down.
 
 1. Select **Create** to create your project.
 
     > [!NOTE]
-    > You can also select different starting templates in this dialog box, depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 6.0 if possible, though other recent versions of ASP.NET Core will work with this exercise as well.
+    > You can also select different starting templates in this dialog box, depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 8.0 if possible, though other recent versions of ASP.NET Core will work with this exercise as well.
 
 1. You should now have a new ASP.NET Core web application solution.
 
@@ -40,7 +40,7 @@ Now, let's build and test your application on your local machine before deployin
     > [!TIP]
     > Launching the app in non-debug mode allows you to make code changes, save the file, refresh the browser, and see the code changes. Many developers prefer to use non-debug mode to quickly launch the app and view changes.
 
-1. Visual Studio starts the IIS Express web browser and loads the app.
+1. Visual Studio starts the IIS (Internet Information Services) Express web browser and loads the app.
 
     :::image type="content" source="../media/3-webapp-launch-windows.png" alt-text="The web app running in a browser." loc-scope="other":::
 

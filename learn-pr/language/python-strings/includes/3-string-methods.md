@@ -1,6 +1,6 @@
-String methods are one of the most common method types in Python. You'll often need to manipulate strings to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
+String methods are one of the most common method types in Python. You often need to manipulate strings to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
-String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in initial caps and can be used with a string directly:
+String methods are part of the `str` type, meaning that the methods exist as string variables, or part of the string directly. For example, the method `.title()` returns the string in initial caps and can be used with a string directly:
 
 ```python
 print("temperatures and facts about the moon".title())
@@ -18,7 +18,7 @@ print(heading_upper)
 
 ## Split a string
 
-A common string method is `.split()`. Without arguments, the method will separate the string at every space. This would create a list of every word or number that's separated by a space:
+A common string method is `.split()`. Without arguments, the method separates the string at every space. If you use the method this way, you create a list of every word or number that's separated by a space:
 
 ```python
 temperatures = "Daylight: 260 F Nighttime: -280 F"
@@ -67,7 +67,7 @@ print(temperatures.find("Moon"))
 
 Output: `-1`
 
-The `.find()` method returns a `-1` when the word isn't found, or it returns the index (the number representing the place in the string). This is how it would behave if you're searching for the word *Mars*:
+The `.find()` method returns a `-1` when the word isn't found, or it returns the index (the number representing the place in the string). The following example shows how it would behave if you're searching for the word *Mars*:
 
 ```python
 temperatures = """Saturn has a daytime temperature of -170 degrees Celsius, while Mars has -28 Celsius."""
@@ -112,7 +112,7 @@ Output: `THE MOON AND THE EARTH`
 
 ## Check content
 
-There are times when you'll process text to extract information that's irregular in its presentation. For example, the following string is simpler to process than an unstructured paragraph:
+There are times when you process text to extract information that's irregular in its presentation. For example, the following string is simpler to process than an unstructured paragraph:
 
 ```python
 temperatures = "Mars Average Temperature: -60 C"
@@ -162,14 +162,14 @@ Similarly, the `.endswith()` method helps with verifying the last character of a
 
 ```python
 if "30 C".endswith("C"):
-print("This temperature is in Celsius")
+    print("This temperature is in Celsius")
 ```
 
 Output: `This temperature is in Celsius`
 
 ## Transform text
 
-There are other methods that help in situations where text needs to be transformed into something else. So far, you've seen strings that can use *C* for *Celsius* and *F* for *Fahrenheit*. You can use the `.replace()` method to find and replace occurrences of a character or group of characters:
+There are other methods that help in situations where text needs to be transformed into something else. So far, you saw strings that can use *C* for *Celsius* and *F* for *Fahrenheit*. You can use the `.replace()` method to find and replace occurrences of a character or group of characters:
 
 ```python
 print("Saturn has a daytime temperature of -170 degrees Celsius, while Mars has -28 Celsius.".replace("Celsius", "C"))
@@ -195,7 +195,7 @@ Output: `True`
 
 You might not need to do case-insensitive verification all the time, but lowercasing every letter is a good approach when the text uses mixed casing.
 
-After you've split the text and performed the transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together.
+After you split the text and perform the transformations, you might need to join the parts together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together.
 
 The `.join()` method requires an iterable (such as a Python list) as an argument, so its usage looks different from other string methods:
 
