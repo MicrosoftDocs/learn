@@ -4,10 +4,12 @@ title: Explore data visualization
 metadata:
   title: Explore data visualization
   description: "Explore data visualization"
-  ms.date: 03/18/2024
+  ms.date: 10/16/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-data-visualization.md)]
