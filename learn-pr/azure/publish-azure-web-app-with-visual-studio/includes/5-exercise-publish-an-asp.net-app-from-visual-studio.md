@@ -13,7 +13,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. In the **Subscription** drop-down, select **Concierge Subscription**.
 
-1. Near the bottom edge of the dialog, select the **Create a instance** link to open the **App Service (Windows)** dialog.
+1. Select **+Create new** to open the **App Service (Windows)** dialog.
 
 ### Configure your new Azure App Service
 

@@ -8,7 +8,7 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. In the search box, enter **Web**.
 
-1. From the search results, select **ASP.NET Core Web App**.
+1. From the search results, select **ASP.NET Core Web App (Razor Pages)**.
 
 1. Select **Next**.
 
