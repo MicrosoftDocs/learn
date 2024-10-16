@@ -42,6 +42,10 @@ If you need to install or upgrade, see [Install Azure CLI](/cli/azure/install-az
 
 In order to run commands in Azure using the CLI, you need to sign in first. Sign in using the `az login` command.
 
+```bash
+az login
+```
+
 ## Create a resource group
 
 A resource group is a container for related resources. All resources must be placed in a resource group. The [az group create](/cli/azure/group) command creates a resource group.
