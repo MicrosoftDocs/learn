@@ -4,6 +4,5 @@ The main takeaways from this module include understanding the benefits of integr
 
 ## Additional Reading
 
-- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
-- [Experience in Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+- [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
 - [Frequently asked questions about the unified security operations platform](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/frequently-asked-questions-about-the-unified-security-operations/ba-p/4212048)

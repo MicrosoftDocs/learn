@@ -19,4 +19,4 @@ This section covers the Microsoft Sentinel capabilities or integrations in the u
 | Incidents: Tasks |Azure portal only | Tasks are unavailable in the unified security operations platform. <br><br> |
 |Multiple workspace management for Microsoft Sentinel|Defender portal: Limited to one Microsoft Sentinel workspace per tenant <br><br>Azure portal: Centrally manage multiple Microsoft Sentinel workspaces for tenants  |Only one Microsoft Sentinel workspace per tenant is currently supported in the unified security operations platform. So, Microsoft Defender multitenant management supports one Microsoft Sentinel workspace per tenant.<br><br> |
 
-For more information, see [Capability differences between portals](/azure/sentinel/microsoft-sentinel-defender-portal)
+For more information, see [Capability differences between portals](/azure/sentinel/microsoft-sentinel-defender-portal?toc=%2Fdefender-xdr%2Ftoc.json&bc=%2Fdefender-xdr%2Fbreadcrumb%2Ftoc.json)
