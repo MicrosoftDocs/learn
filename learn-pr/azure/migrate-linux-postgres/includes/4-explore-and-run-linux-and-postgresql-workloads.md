@@ -113,7 +113,18 @@ az ssh vm \
 
 ## Download the tailwind.sql file from the storage account
 
-Run the following command on the Azure Virtual Machine.
+Set the bash variable `STORAGE_ACCOUNT_NAME` to the storage account name.
+
+```bash
+STORAGE_ACCOUNT_NAME=$(az storage account list \
+    --resource-group 240900-linux-postgres \
+    --query '[0].name' \
+    -o tsv)
+
+echo "STORAGE_ACCOUNT_NAME: $STORAGE_ACCOUNT_NAME"
+```
+
+Download `tailwind.sql` to the Azure Virtual Machine using the `az storage blob download` command.
 
 ```bash
 az storage blob download \
