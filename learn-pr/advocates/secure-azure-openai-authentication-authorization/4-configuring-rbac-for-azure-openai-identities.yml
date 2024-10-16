@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-configuring-rbac-for-azure-open-ai-identities.md)]
+  [!include[](includes/4-configuring-rbac-for-azure-openai-identities.md)]

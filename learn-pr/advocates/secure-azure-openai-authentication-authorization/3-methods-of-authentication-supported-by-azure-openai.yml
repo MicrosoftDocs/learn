@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-methods-of-authentication-supported-by-azure-open-ai.md)]
+  [!include[](includes/3-methods-of-authentication-supported-by-azure-openai.md)]
