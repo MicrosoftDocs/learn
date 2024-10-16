@@ -16,7 +16,8 @@ Azure Monitor Logs automatically creates tables required to store monitoring dat
 
 Table management settings let you control access to specific tables, and manage the data model, retention, and cost of data in each table. For more information, see [Manage tables in a Log Analytics workspace](/azure/azure-monitor/logs/manage-logs-tables).
 
-## :::image type="content" source="../media/logs-structure-ca436b70.png" alt-text="Screenshot showing an example of a log structure."::: <br>
+:::image type="content" source="../media/logs-structure-ca436b70.png" alt-text="Screenshot showing an example of a log structure.":::
+<br>
 
 ## Data retention<br>
 
