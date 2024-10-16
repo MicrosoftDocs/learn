@@ -3,13 +3,13 @@ uid: learn.wwl.analyze-text-with-text-analytics-service.exercise
 title: Exercise - Analyze text with Language Studio
 metadata:
   title: Exercise - Analyze text with Language Studio
-  description: Exercise - Analyze text with Language Studio
+  description: "Exercise - Analyze text with Language Studio"
+  ms.date: 10/16/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 11/02/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise.md)]
