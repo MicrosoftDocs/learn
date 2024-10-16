@@ -4,12 +4,13 @@ title: 'Exercise: Brainstorm destination features'
 metadata:
   title: 'Exercise: Brainstorm destination features'
   description: "Exercise: Brainstorm destination features"
-  ms.date: 09/27/2024
+  ms.date: 10/15/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
   ms.custom:
   - copilot-learning-hub
+  - ai-learning-hub
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-brainstorm-destination-features.md)]

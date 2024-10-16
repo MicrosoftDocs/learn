@@ -33,16 +33,16 @@ To add session persistence through the Azure portal:
 
     :::image type="content" source="../media/3-load-balancer-rules.png" alt-text="Screenshot showing how to select a load balancing rule in the Azure portal.":::
 
-1. In the *load balancing rule settings* page change the value for **Session persistence** from **None** to **Client IP**.
+1. In the *load balancing rule settings* page, change the value for **Session persistence** from **None** to **Client IP**.
 
 :::image type="content" source="../media/3-screenshot-session-persistence.png" alt-text="Screenshot showing how to set IP affinity in the Azure portal." :::
 
 ## Load Balancer and Remote Desktop Gateway
 
-Remote Desktop Gateway is a Windows service that you can use to enable clients on the internet to make Remote Desktop Protocol (RDP) connections through firewalls to Remote Desktop servers on your private network. The default five-tuple hash in Load Balancer is incompatible with this service. If you want to use Load Balancer with your Remote Desktop servers, use source IP affinity.
+Remote Desktop Gateway is a Windows service that enables clients on the internet to make Remote Desktop Protocol (RDP) connections through firewalls to Remote Desktop servers on your private network. The default five-tuple hash in Load Balancer is incompatible with this service. If you want to use Load Balancer with your Remote Desktop servers, use source IP affinity.
 
 ## Load Balancer and media upload
 
-Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol.
+Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a Transmission Control Protocol (TCP) protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate User Datagram Protocol (UDP) protocol.
 
-With the five-tuple hash, the load balancer likely sends the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.
+With the five-tuple hash, the load balancer likely sends the TCP and UDP connections to different destination IP addresses and the upload doesn't finish successfully. Use source IP affinity to resolve this issue.

@@ -1,4 +1,4 @@
-If you want your SQL queries to be endlessly flexible, why exclude any paths at all? Well, each insert or update operation requires the indexer to run to update the inverted index with data from your newly created or updated item. More oversized items, or bulk workloads, can cause the indexing to use many RU/s or take a significant amount of time.
+If you want your NoSQL queries to be endlessly flexible, why exclude any paths at all? Well, each insert or update operation requires the indexer to run to update the inverted index with data from your newly created or updated item. More oversized items, or bulk workloads, can cause the indexing to use many RU/s or take a significant amount of time.
 
 Let’s consider an example JSON object that is much larger than previous examples.
 

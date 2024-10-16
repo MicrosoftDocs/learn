@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
-  title: Moderate content and detect harm in Azure AI Studio with Content Safety
+  title: Moderate content and detect harm in Azure AI Studio by using Content Safety
   description: Learn how to choose and build a content moderation system in Azure AI Studio.
   author: aprilspeight
   ms.author: apspeigh
@@ -11,23 +11,23 @@ metadata:
   ms.collection:
     - TBD
     - ce-advocates-ai-copilot
-title: Moderate content and detect harm in Azure AI Studio with Content Safety
+title: Moderate content and detect harm in Azure AI Studio by using Content Safety
 summary: | 
   Learn how to choose and build a content moderation system in Azure AI Studio.
-  > [!NOTE]
-  >  This module is a **_guided project_** module where you complete an end-to-end project by following step-by-step instructions.
+  
+  This module is a _guided project_. You complete an end-to-end project by following step-by-step instructions.
 abstract: |
-  By the end of this module, you're able to:
+  By the end of this module, you'll be able to:
   - Configure filters and threshold levels to block harmful content.
   - Perform text and image moderation for harmful content.
-  - Analyze and improve Precision, Recall, and F1 Score metrics.
-  - Detect groundedness in a model’s output.
+  - Analyze and improve the **Precision**, **Recall**, and **F1 score** metrics.
+  - Detect groundedness in a model's output.
   - Identify and block AI-generated copyrighted content.
   - Mitigate direct and indirect prompt injections.
-  - Output filter configurations to code.
+  - Send filter configurations as output to code.
 prerequisites: |
-  - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)
-  - Familiarity with Azure and the Azure portal
+  - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/).
+  - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
