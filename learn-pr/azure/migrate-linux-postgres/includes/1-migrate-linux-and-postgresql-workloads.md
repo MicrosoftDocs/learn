@@ -81,7 +81,7 @@ If you don't have an Azure account, you can create a [free account](https://azur
 In order to run the commands in the following modules you need access to a bash shell. This can be on your local machine such as macOS, Linux, Windows Subsystem for Linux (WSL), Docker, a virtual machine such as Multipass, or in the cloud such as [Azure Cloud Shell](/azure/cloud-shell/overview), [GitHub Codespaces](https://github.com/features/codespaces), or an Azure Virtual Machine.
 
 
-To complete this learning path, you need the Azure CLI. You can install the Azure CLI on your local machine by following the instructions in the [Install the Azure CLI](/cli/azure/install-azure-cli) article. You also need to install [Git](https://git-scm.com/)
+To complete this learning path, you need the Azure CLI. You can install the Azure CLI on your local machine by following the instructions in the [Install the Azure CLI](/cli/azure/install-azure-cli) article. You also need to install [Git](https://git-scm.com/).
 
 ## Resources
 - [Create a Free Azure account](https://azure.microsoft.com/free/)
