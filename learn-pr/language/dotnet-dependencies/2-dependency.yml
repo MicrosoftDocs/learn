@@ -3,7 +3,7 @@ uid: learn.dotnet-dependencies.2-dependency
 title: Add packages to your .NET project
 metadata:
   title: Add packages to your .NET project
-  description: This unit will explain how to add and remove packages in your .NET application.
+  description: This unit explains how to add and remove packages in your .NET application.
   ms.date: 10/12/2023
   author: jamesmontemagno
   ms.author: jamont

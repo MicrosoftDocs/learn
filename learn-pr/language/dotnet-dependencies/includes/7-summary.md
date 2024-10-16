@@ -4,7 +4,7 @@ This module then showed you how to use the .NET CLI to install dependencies loca
 
 After that, you learned how to update your dependencies. Dependencies are updated for various reasons in the form of bug fixes, new features, or larger changes. In the project file, you can configure the types of updates in which you're interested on a per-dependency basis. If you work in an enterprise environment, we recommend that you carefully consider your approach regarding the types of updates you're OK with.
 
-## Additional resources
+## Learn more
 
 - Review the official [NuGet documentation](/nuget/).
 - Review the official [.NET CLI documentation](/dotnet/core/tools/).

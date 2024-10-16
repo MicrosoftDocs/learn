@@ -2,7 +2,7 @@
 
 .NET and its ecosystem use the word *dependency* a lot. A package dependency is a third-party library. It's a piece of reusable code that accomplishes something and that you can add to your application. The third-party library is something your application *depends on* to function, hence the word *dependency*.
 
-You can think of the third-party library as a package, and it's stored in a repository. A package consists of one or more libraries that you can add to your application so you can take advantage of its features.
+You can think of the third-party library as a package stored in a repository. A package consists of one or more libraries that you can add to your application so you can take advantage of its features.
 
 Here, we focus on package dependencies. However, a .NET project can have other types of dependencies in addition to package dependencies. Including, frameworks, analyzers, project references, and shared project dependencies.
 
@@ -11,7 +11,7 @@ Here, we focus on package dependencies. However, a .NET project can have other t
 How do you know if you need a package for your project? It's a complicated question that involves a few factors:
 
 - **Getting better code**: Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customers' data. There are standard patterns out there and libraries that many developers use. These libraries implement features that you probably always need, and issues are patched as they arise. You should use such libraries instead of creating your own. You're not likely to write the code as well yourself, because there are so many edge cases that you need to consider.  
-- **Saving time**: You can probably build most things yourself, like utility or UI component libraries, but it takes time. Even if the result is comparable to what's available, it's not a good use of your time to replicate the work of writing this code if you don't have to.
+- **Saving time**: You can probably build most things yourself, like utility or UI component libraries, but it takes time. Even if your results are comparable to what's available, it's not a good use of your time to replicate the work.
 - **Maintenance**: All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your time or your team's time to maintain a library, or is it better to let an open-source software team handle it?
 
 ## Evaluate a package
@@ -20,7 +20,7 @@ Before you install a library, you might want to inspect the dependencies on whic
 
 - **Size**: The number of dependencies might create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor might be a concern.
 - **Licensing**: You need to ensure that the license granted for the library covers your intended use, whether that use is commercial, personal, or academic.
-- **Active maintenance**: It might be a problem if your package relies on a dependency that's deprecated or hasn't been updated for a long time.
+- **Active maintenance**: It might be a problem if your package relies on a dependency that isn't actively maintained. The dependency could be deprecated or not updated for a long time.
 
 You can learn more about a package before installing it by going to `https://www.nuget.org/packages/<package name>`. This URL takes you to a detailed page for the package. Select the **Dependencies** drop-down list to see on which packages it relies to function.
 
