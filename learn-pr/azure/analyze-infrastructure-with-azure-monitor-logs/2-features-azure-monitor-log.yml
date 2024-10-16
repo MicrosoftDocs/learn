@@ -4,8 +4,8 @@ metadata:
   title: Features of Azure Monitor logs
   description: Features of Azure Monitor logs
   ms.date: 10/15/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: unit
 title: Features of Azure Monitor logs
 durationInMinutes: 10
