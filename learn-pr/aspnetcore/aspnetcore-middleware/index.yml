@@ -29,9 +29,9 @@ products:
 - aspnet-core
 units:
 - learn.aspnetcore-middleware.intro
-- learn.aspnetcore-middlewar.understand-middleware
-- learn.aspnetcore-middlewar.exercise-built-in-middleware
-- learn.aspnetcore-middlewar.exercise-custom-middleware
+- learn.aspnetcore-middleware.understand-middleware
+- learn.aspnetcore-middleware.exercise-built-in-middleware
+- learn.aspnetcore-middleware.exercise-custom-middleware
 - learn.aspnetcore-middleware.knowledge-check
 - learn.aspnetcore-middleware.summary
 badge:

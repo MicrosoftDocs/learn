@@ -2,7 +2,7 @@ Before we start our quick tour of Docker containers, let's have a look at how ou
 
 The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software and an operations team responsible for deploying these applications. The operations team is also responsible for managing the application-hosting infrastructure.
 
-For example, assume we're developing an order-tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
+For example, assume we're developing an order-tracking portal for our company's various outlets to use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
 
 There are several challenges that we'll need to consider in the preceding scenario:
 
@@ -20,7 +20,7 @@ There are several challenges that we'll need to consider in the preceding scenar
 
 - **Application portability**
 
-    There are several reasons why application portability is essential. A hosting environment might fail, or we might need to scale out our application. In both instances, the potential result is redeploying our software to a new environment. We want to move software from one host to another even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
+    There are several reasons why application portability is essential. A hosting environment might fail, or we might need to scale out our application. In both instances, the potential result is redeploying our software to a new environment. We want to move software from one host to another, even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
 
 Before we look at the Docker features that help solve these challenges, we'll discuss a few concepts and look at a brief overview of the Docker architecture.
 
@@ -58,11 +58,11 @@ The Docker Engine consists of several components configured as a client-server i
 
 #### The Docker client
 
-There are two alternatives for Docker client: A command-line application named `docker` or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The `docker` commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and function as the primary interface we use to manage our containers.
+There are two alternatives for Docker client: A command-line application named `docker`, or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The `docker` commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and function as the primary interface we use to manage our containers.
 
 #### The Docker server
 
-The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to requests from the client via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
+The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to client requests via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
 
 #### Docker objects
 
