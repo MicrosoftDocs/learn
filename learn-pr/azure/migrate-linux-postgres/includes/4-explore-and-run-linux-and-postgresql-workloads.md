@@ -124,7 +124,7 @@ az storage blob download \
     --name tailwind.sql
 ```
 
-### Set the environment variables for psql on the remote machine
+## Set the environment variables for psql on the remote machine
 
 ```bash
 MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
