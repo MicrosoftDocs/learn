@@ -8,3 +8,4 @@ Things to think about are:  Think about how your data is designed before
 https://learn.microsoft.com/en-us/fabric/security/security-scenario
 put examples from page above combined with architectures
 
+mention how for example data warehousing and workspace permissions work together.
