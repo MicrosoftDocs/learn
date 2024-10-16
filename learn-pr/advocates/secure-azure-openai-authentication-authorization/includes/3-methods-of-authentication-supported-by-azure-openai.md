@@ -39,5 +39,3 @@ When building an Azure OpenAI application, understanding the distinction between
 Choosing between system-assigned and user-assigned identities depends on the specific needs of your application. For single-resource applications where simplicity and minimal management are priorities, system-assigned identities are typically the best choice. Conversely, for applications that require a shared identity across multiple resources, user-assigned identities offer greater flexibility and reusability.
 
 ![Diagram showing diffferent managed identity options.](../media/managed-identity-options.png)
-
-TODO: How to create an identity
