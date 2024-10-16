@@ -23,15 +23,15 @@ In the following video, learn how to identify common cognitive elements that can
 
 Cognition is another area influenced by many factors. The primary aspects of cognition discussed in this module include how to:
 
- - Maintain attention to game information provided despite the presence of distraction.
- - Memorize information provided by games to inform future actions.
- - Assess all information provided to make the correct decision on how to proceed in the game.
+- Maintain attention to game information provided despite the presence of distraction.
+- Memorize information provided by games to inform future actions.
+- Assess all information provided to make the correct decision on how to proceed in the game.
 
 Cognitive, learning, or other disabilities that contribute to a player's ability to perform the actions previously mentioned can affect player experiences in different ways.
 
-Situational circumstances like being tired, stressed, or sick while gaming can also make it difficult to maintain attention, memorize and recall information, and make appropriate decisions for next steps.
+Situational circumstances like being tired, stressed, or sick while gaming can also make it difficult to maintain attention. These factors can also make it difficult to memorize and recall information, and make appropriate decisions for next steps.
 
-Consult with an array of players with cognitive disabilities to inform effective solutions that address each of these unique experiences.
+To inform effective solutions that address each of these unique experiences, consult with an array of players with cognitive disabilities.
 
 ### Attention and gaming
 
@@ -53,18 +53,18 @@ In general, the following supports can help decrease the cognitive demands place
 - A list of past and current objective tasks that can be referenced at any time
 - A way to reference the game's control scheme
 - A means of freely practicing these controls in an isolated environment
-- Maps, waypoint markers, and other directional supports that eliminate the need for players to recall important game locations and how to find them
+- Directional supports like maps and waypoint markers eliminate the need for players to recall important game locations and how to find them.
 
 ### Learning, cognitive processing, and gaming
 
 Players are often given complex objectives or tasks that gate progress until they're solved. The way to complete some of these tasks might be easily understood. Other solutions can require players to piece together subtle cues from the game that aren't clearly obvious.
 
-For example, let's say a player meets a locked door that blocks the entrance to the game's next level. Despite circling around for a long time, the player can't determine what's needed to unlock the door.
+For example, let's say a player meets a locked door that blocks the entrance to the game's next level. Despite circling around for a long time, the player can't determine what they need to unlock the door.
 
-The game might have provided subtle cues that led up to this experience, like the presence of a random altar in a previous game area. Ideally, the player was supposed to have placed a gem they received on the altar as they passed it so that the door unlocked when they approached.
+The game might provide subtle cues leading up to this experience, like the presence of a random altar in a previous game area. Ideally, the player was supposed to place a gem they received on the altar as they passed it so that the door unlocked when they approached.
 
 Unfortunately, the player was unable to deduce this information. As a result, they were blocked from moving forward. In these types of situations, general approaches that can support players include:
 
 - The option to enable hints when the game senses a player is stuck.
 - The ability to bypass certain types of challenges if they can't be unlocked.
-- Providing the references outlined in the previous section, like objective logs, maps, and a list of collected items, so players have opportunities to review what's happened to improve their chances of piecing together the information.
+- The inclusion of references like those outlined in the previous section. Objective logs, maps, and a list of collected items can give players an opportunity to review the action so far, and improve their chances of piecing together the information.
