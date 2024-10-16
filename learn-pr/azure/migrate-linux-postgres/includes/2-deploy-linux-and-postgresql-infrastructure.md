@@ -137,7 +137,7 @@ Now add an inbound security rule to the NSG to allow SSH traffic from your curre
 
 1. Select **Add**.
 
-## View the Azure Database for PostgreSQL's Server Administrator
+## View the Administrator for the Azure Database for PostgreSQL Flexible Server
 
 Find the Azure Database for PostgreSQL flexible server which is named `postgres-xxxxx`, where `xxxxx` is a unique string defined by our Bicep template that remains consistent across deployments to your Subscription and Resource Group.
 
