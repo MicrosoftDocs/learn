@@ -4,7 +4,7 @@ title: Exercise - Manage dependency updates in your .NET project
 metadata:
   title: Exercise - Manage dependency updates in your .NET project
   description: Exercise on how to update dependencies and configure the project file so that updates happen in a predictable way.
-  ms.date: 10/12/2023
+  ms.date: 10/16/2024
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
