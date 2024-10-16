@@ -40,7 +40,7 @@ Now, let's build and test your application on your local machine before deployin
     > [!TIP]
     > Launching the app in non-debug mode allows you to make code changes, save the file, refresh the browser, and see the code changes. Many developers prefer to use non-debug mode to quickly launch the app and view changes.
 
-1. Visual Studio starts the IIS Express web browser and loads the app.
+1. Visual Studio starts the IIS (Internet Information Services)Express web browser and loads the app.
 
     :::image type="content" source="../media/3-webapp-launch-windows.png" alt-text="The web app running in a browser." loc-scope="other":::
 

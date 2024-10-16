@@ -27,7 +27,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
     - **Resource Group:** Select the existing <rgn>[sandbox resource group name]</rgn> resource group.
 
-    - **Hosting Plan:** The hosting plan specifies the location, size, and features of the web server farm that hosts your app.  For this exercise, create a new hosting plan.
+    - **Hosting Plan:** The hosting plan specifies the location, size, and features of the web server farm that hosts your app. For this exercise, create a new hosting plan.
 
         Select **New** next to the hosting plan. In the Configure Hosting Plan window that appears, change the **Size** to **Shared** and select **OK**.
 

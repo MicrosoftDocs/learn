@@ -17,7 +17,7 @@ You can define an App Service plan in advance in the Azure portal, with PowerShe
 Each App Service plan defines:
 
 - Region (West US, East US, and so on).
-- Number of VM instances.
+- Number of VM (virtual machine) instances.
 - Size of VM instances (small, medium, large).
 - Pricing tier (Free, Shared, Basic, Standard, Premium, Premium V2, Isolated).
 
@@ -27,7 +27,7 @@ When creating an App Service plan, you have to define a region or location where
 
 ## Pricing and reliability levels
 
-**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps. That includes apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale out.
+**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps. That includes apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
 
 Free and Shared plans are best for small-scale personal projects with limited traffic demands, with a set limit of 165 MB (megabytes) of outbound data every 24 hours.
 
