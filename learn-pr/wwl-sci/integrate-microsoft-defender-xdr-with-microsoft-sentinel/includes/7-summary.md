@@ -5,7 +5,5 @@ The main takeaways from this module include understanding the benefits of integr
 ## Additional Reading
 
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
-- [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
-- [Automatic attack disruption in Microsoft Defender XDR](https://learn.microsoft.com/defender-xdr/automatic-attack-disruption)
-- [Investigate incidents in Microsoft Defender XDR](https://learn.microsoft.com/defender-xdr/investigate-incidents)
-- [Optimize your security operations](/azure/sentinel/soc-optimization/soc-optimization-access?tabs=defender-portal)
+- [Experience in Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+- [Frequently asked questions about the unified security operations platform](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/frequently-asked-questions-about-the-unified-security-operations/ba-p/4212048)
