@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/16/2024
   author: sarah-yo
   ms.author: sayoung
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-configuring-rbac-for-azure-open-ai-identities.md)]

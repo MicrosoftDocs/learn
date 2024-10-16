@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/16/2024
   author: sarah-yo
   ms.author: sayoung
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-methods-of-authentication-supported-by-azure-open-ai.md)]
