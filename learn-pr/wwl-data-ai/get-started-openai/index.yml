@@ -10,6 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
+  ms.custom: copilot-learning-hub, ai-learning-hub
 title: Get started with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
 abstract: |

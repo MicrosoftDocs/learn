@@ -12,9 +12,9 @@ You can protect apps and the data they use. Intune gives you a range of features
 - Restrict copy and paste to other apps.
 - Require a PIN to access an app.
 
-You can also add an additional layer of protection to devices, such as:
+You can also add another layer of protection to devices, such as:
 
-- **Multi-factor authentication**: Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multi-factor authentication that requires a second level of authentication such as a phone call or text message before users can gain access.
+- **Multifactor authentication**: Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multifactor authentication. Requiring a second level of authentication such as a phone call or text message before users can gain access.
 - **Windows Hello for Business settings**: Windows Hello for Business is an alternative sign-in method that lets users use a *gesture*—such as a fingerprint or Windows Hello—to sign in without needing a password.
 
 > [!NOTE]
@@ -26,10 +26,10 @@ An effective software update management process is necessary to maintain operati
 
 ### Intune software updates
 
-Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed.
+Intune can help you to secure your managed computers in several ways. Including, the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 
 ### Configuration Manager software updates
 
-Software updates in Configuration Manager provide a set of tools and resources that can help manage the complex task of tracking and applying software updates to client computers in the enterprise.
+Software updates in Configuration Manager provide a set of tools and resources that can help manage the complex task of tracking and applying software updates to client computers.
 
-[ ![Configuration Manager software updates.](../media/intro-to-endpoint-manager-17.png) ](../media/intro-to-endpoint-manager-17.png#lightbox)
+[![Configuration Manager software updates.](../media/intro-to-endpoint-manager-17.png) ](../media/intro-to-endpoint-manager-17.png#lightbox)

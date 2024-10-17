@@ -8,6 +8,7 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: learning-path
+  ms.custom: ai-learning-hub
 title: Build great solutions with the Microsoft Azure Well-Architected Framework
 summary: Learn how to design and build secure, scalable, high-performing solutions in Azure using the pillars of the Microsoft Azure Well-Architected Framework.
 prerequisites: None

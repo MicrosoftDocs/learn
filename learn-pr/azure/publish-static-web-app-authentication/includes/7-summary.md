@@ -6,6 +6,7 @@ As a reminder, the code for the sample project is on [GitHub in the _main_ branc
 
 See the following resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
+- Watch the Video series: [Deploy websites to the cloud with Azure Static Web Apps](https://aka.ms/azure/beginnervideos/learn/swa)
 - Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](/training/modules/publish-app-service-static-web-app-api/)
 - Learn how to [Publish an API to Azure Static Web Apps](/training/modules/publish-static-web-app-api-preview-url/)
 - [Azure Static Web Apps](/azure/static-web-apps)

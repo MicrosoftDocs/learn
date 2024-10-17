@@ -6,11 +6,11 @@ metadata:
   description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
   author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.date: 5/30/2024
+  ms.date: 09/24/2024
   ms.topic: unit
-  ai-usage: ai-assisted
   ms.collection:
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
+  ai-usage: ai-assisted
 durationInMinutes: 5
 content: |
   [!include[](includes/2-fundraising.md)]

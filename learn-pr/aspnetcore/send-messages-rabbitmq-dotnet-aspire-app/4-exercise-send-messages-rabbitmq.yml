@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll add a RabbitMQ backing service to the Northern Mountains website, and use it to exchange messages between microservices.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 10
 content: |

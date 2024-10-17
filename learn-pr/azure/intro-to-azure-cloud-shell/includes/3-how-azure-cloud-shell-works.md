@@ -48,6 +48,9 @@ code temp.txt
 
 :::image type="content" source="../media/cloud-shell-edit-scripts.png" alt-text="A screenshot of how to access the Cloud Shell editor mode." lightbox="../media/cloud-shell-edit-scripts.png":::
 
+> [!NOTE]
+> The `code` command only works in the Classic mode in Cloud Shell. To enable Classic mode, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 ## Cloud Shell tools
 
 If you need to manage resources (such as Docker containers or Kubernetes Clusters) or want to use non-Microsoft tools (such as Ansible and Terraform) in Cloud Shell, the Cloud Shell session comes with these add-ons already preconfigured.

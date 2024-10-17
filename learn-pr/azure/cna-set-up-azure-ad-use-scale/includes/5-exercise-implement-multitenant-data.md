@@ -196,10 +196,10 @@ To integrate the Azure Database for PostgreSQL server instance with Microsoft En
 
     ```json
     {
-      "accessToken": "eyJ0eXAiOiJKV1QiLDJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL29zc3JkYm1zLWFhZC5kYXRhYmFzZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2E2MTM5NTE0LTQxYTUtNDEyMy05ODFhLWVlN2JiOWU2YTNiNC8iLCJpYXQiOjE2MjE2MTc0NjUsIm5iZiI6MTYyMTYxNzQ2NSwiZXhwIjoxNjIxNjIxMzY0LCJhY3IiOiIxIiwiYWlvIjoiQVRRQXkvOFRBQUFBU1I5cXdVcm9KVVpmWEJabHY1NzRUenpmeGZFUlo1SXNDV3Z1aDVEOVBGWnZsL09SYWYzTGg3Zmx4NEFVaFpkVSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiJiNjc3YzI5MC1jZjRiLTRhOGUtYTYwZS05MWJhNjUwYTRhYmUiLCJhcHBpZGFjciI6IjIiLCJpcGFkZHIiOiIxNDIuMTA1LjQ4LjUxIiwibmFtZSI6ImFkYXR1bWFkbWluMSIsIm9pZCI6Ijc2ZTdmYWI5LTZiOTItNGQzZi1hOGI5LWY1NWNhNDQyYzZiMSIsInB1aWQiOiIxMDAzMjAwMTQ0RTNDMDBBIiwicmgiOiIwLkFYd0FGSlVUcHFWQkkwR1lHdTU3dWVhanRKRENkN1pMejQ1S3BnNlJ1bVVLU3I1OEFNay4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJvNmhNMWlHXzM3MExaQk92UlpUQjBYeEdjSmpaOUVmN21lc1N2RkJYY3FFIiwidGlkIjoiYTYxMzk1MTQtNDFhNS00MTIzLTk4MWEtZWU3YmI5ZTZhM2I0IiwidW5pcXVlX25hbWUiOiJhZGF0dW1hZG1pbjFAbGl2ZWlkMjE3b3V0bG9vay5vbm1pY3Jvc29mdC5jb20iLCJ1cG4iOiJhZGF0dW1hZG1pbjFAbGl2ZWlkMjE3b3V0bG9vay5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiJJdE81VndoU2lVV0o0UUZNQ04xQUFRIiwidmVyIjoiMS4wIn0.fFV3s2OjpVU52_SA8-atIDdkLN4onLgPmYrxa5eNCbuF0VbVOA5a9Ifv66H5a__6lMiLoV8n9EgTV4CpsLmvn6JFjAD9aHyEBkS2_iL_Rx-KCmlc7Vr6UHezrlrA3skf8oq3yb2Zqy_A3_kOrsnFgX8NP5uWoMmTzjWGTw3rOfjERJ7PowQC60nzlF1uCRDKIWw62SW4xiDQj23DSLDbkfUiG_Z9Swbw4DuMPTPeUVwz9AWhmg8lrqt5oawhKB-OMcpuwSf1-rE1cf2w54uthU6764DBEf5MVt8K95AKW0rey888znrIGKT-6yFenYUZZjL1aJ-jz8OIyNjuQK73XQ",
+      "accessToken": "<placeholder for token value>",
       "expiresOn": "2021-05-21 18:22:44.000000",
-      "subscription": "d15bacf3-b17b-4ad5-a913-5fb904bd2f71",
-      "tenant": "a6239514-41a5-4123-981a-ee7bb9e6a3b4",
+      "subscription": "cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a",
+      "tenant": "eeeeffff-4444-aaaa-5555-bbbb6666cccc",
       "tokenType": "Bearer"
     }
     ```
@@ -579,8 +579,6 @@ You're finally ready to test the functionality of your web app. While you could 
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
 1. Verify that the resulting webpage consists of the Microsoft Entra authentication information for the currently signed-in user (the output might differ).
-
-    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Microsoft Entra authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
 
 ## Results
 

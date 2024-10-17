@@ -8,6 +8,8 @@ metadata:
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
 title: Get started with language models in Azure Databricks
 summary: Large Language Models (LLMs) have revolutionized various industries by enabling advanced natural language processing (NLP) capabilities. These language models are utilized in a wide array of applications, including text summarization, sentiment analysis, language translation, zero-shot classification, and few-shot learning. 
 abstract: |

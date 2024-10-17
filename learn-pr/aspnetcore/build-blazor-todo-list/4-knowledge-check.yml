@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge about event handling and data binding in Blazor.
-  ms.date: 1/26/2024
+  ms.date: 09/30/2024
   author: danroth27
   ms.author: daroth
   ms.manager: markl
@@ -38,7 +38,7 @@ quiz:
       explanation: "Components aren't disposed after handling events."
     - content: "The component updates all data bindings."
       isCorrect: false
-      explanation: "Each data binding is only updated based on a specific event from the UI element it's applied to."
+      explanation: "Each data binding is only updated based on a specific event from the UI element it applies to."
   - content: "What is data binding used for in Blazor?"
     choices:
     - content: "To persist the state of a component to a database."

@@ -1,7 +1,6 @@
-
 In this module, you considered your motivations for moving to the cloud, and reviewed the high-level decisions and considerations that a switch to the cloud will entail.
 
-## Learning Objectives
+## Learning objectives
 
 You should now be able to:
 
@@ -10,6 +9,6 @@ You should now be able to:
  -  Describe public, private, and hybrid cloud arrangements, and the reasons for adopting each.
  -  Look ahead to the technical and organizational considerations you'll encounter when planning a cloud transition.
 
-## Additional Resources
+## Additional resources
 
  -  Begin exploring the [Cloud Adoption Framework](/azure/cloud-adoption-framework/).

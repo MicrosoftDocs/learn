@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll review what you've learned about using Azure resources with deployed .NET Aspire solutions.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 1
 content: |

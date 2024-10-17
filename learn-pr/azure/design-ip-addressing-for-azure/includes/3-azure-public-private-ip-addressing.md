@@ -18,7 +18,7 @@ Let's take a closer look at how the IP address types work together.
 
 ## Public IP addresses
 
-Use a public IP address for public-facing services. A public address can be either static or dynamic. A public IP address can be assigned to a VM, an internet-facing load balancer, a VPN gateway, or an application gateway.
+Use a public IP address for public-facing services. A public address can be either static or dynamic. A public IP address can be assigned to a virtual machine (VM), an internet-facing load balancer, a VPN gateway, or an application gateway.
 
 - **Dynamic public IP addresses** are assigned addresses that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM. The IP address is released when you stop or delete the VM. In each Azure region, public IP addresses are assigned from a unique pool of addresses. The default allocation method is dynamic.
 
@@ -28,14 +28,14 @@ Use a public IP address for public-facing services. A public address can be eith
 
 For public IP addresses, there are two SKUs from which to choose: **Basic** and **Standard**. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you can choose the scale, features, and pricing for load balancing internet traffic.
 
-Both Basic and Standard SKUs have:
+Both Basic and Standard SKUs have by default:
 
-- A default inbound originated flow idle timeout of four minutes, which is adjustable to up to 30 minutes.
+- An inbound originated flow idle timeout of four minutes, which is adjustable to up to 30 minutes.
 - A fixed outbound originated flow idle timeout of four minutes.
 
 #### Basic SKU
 
-You can assign Basic public IPs by using static or dynamic allocation methods. You can assign Basic public IPs to any Azure resource that can be assigned a public IP address, including network interfaces, VPN gateways, application gateways, and internet-facing load balancers.
+You can assign Basic public IPs by using static or dynamic allocation methods. You can assign Basic public IPs to any Azure resource that can be assigned a public IP address. Including network interfaces, VPN gateways, application gateways, and internet-facing load balancers.
 
 By default, Basic SKU IP addresses:
 

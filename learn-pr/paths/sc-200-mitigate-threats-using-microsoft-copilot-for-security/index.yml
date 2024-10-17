@@ -3,10 +3,11 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
   description: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
-  ms.date: 05/23/2024
+  ms.date: 09/3/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path
+  ms.custom: ai-learning-hub
 title: 'SC-200: Mitigate threats using Microsoft Copilot for Security'
 prerequisites: |
   - Working knowledge of Microsoft security, compliance, and identity products
@@ -33,5 +34,6 @@ modules:
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
 - learn.security-copilot-embedded-experiences
+- learn.security-copilot-exercises
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security.trophy

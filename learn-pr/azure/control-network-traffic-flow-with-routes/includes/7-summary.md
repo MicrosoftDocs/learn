@@ -9,4 +9,4 @@ For more information on using routes in your network infrastructure, see the fol
 - [Virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
 - [Tutorial: Route network traffic with a route table using the Azure portal](/azure/virtual-network/tutorial-create-route-table-portal)
 - [Deploy highly available network virtual appliances](/azure/architecture/reference-architectures/dmz/nva-ha)
-- [Implement a DMZ between Azure and the Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+- [Implement a secure hybrid network](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)

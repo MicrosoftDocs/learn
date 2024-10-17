@@ -35,20 +35,20 @@ Here are your team members:
 
 ## Good morning
 
-Irwin—the team's product manager—has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+The team's product manager, Irwin, has called everyone into a meeting, and he's in a bad mood. The leaderboard for the racing game was updated with several new features, and he showed it at a local gaming group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features work correctly for only some game modes.
 * Updating the leaderboard takes too long, even with a few players.
 * Multiple scores per player show up as multiple players.
 * The new ranking feature returns incorrect results.
 * There's no way to group scores according to a specific date or game session.
-* It took months to produce the new release (and it's broken).
+* It took months to produce the new release, and it's broken.
 
 He demands, "How long before these problems are fixed?"
 
 **Andy thinks**: I bet it'll take me a month to write that code.
 
-**Amita thinks**: It'll take me at least a week to test this code and I can't start until Andy is finished, and he always wants to sneak in new code.
+**Amita thinks**: It'll take me at least a week to test this code, and I can't start until Andy is finished. Plus he always wants to sneak in new code.
 
 **Tim thinks**: It'll take me at least a week to set up the environments and deploy this code to production. I can't start until Amita is finished, and she's never willing to call something a release candidate.
 

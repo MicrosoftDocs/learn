@@ -2,7 +2,7 @@ Another service included in Azure Storage accounts is Azure Table storage. In th
 
 In the outdoor equipment retailer you work for, you're already using Azure Storage accounts in several microservices to store blobs and message queues. One microservice uses an SQL database for product information but you want to assess whether Azure Table storage is a better place to keep this data.
 
-In this unit, you'll learn about the .NET Aspire Azure Data Tables component and how you can implement it in a cloud-native app.
+In this unit, you'll learn about the .NET Aspire Azure Data Tables integration and how you can implement it in a cloud-native app.
 
 ## Why use Azure Storage Tables?
 
@@ -18,7 +18,7 @@ Azure Storage accounts include a NoSQL structured data storage solution called A
 
 ## Using Azure Table Storage with .NET Aspire
 
-The choice of data store is usually made by each microservice development team. Each team may choose a different storage technology according to their requirements and preferences so your complete cloud-native app may use many different database technologies. If you build your cloud-native app by using .NET Aspire, then it's easy for each microservice to use Azure Storage Tables because they can use the .NET Aspire Azure Data Tables component.
+The choice of data store is usually made by each microservice development team. Each team may choose a different storage technology according to their requirements and preferences so your complete cloud-native app may use many different database technologies. If you build your cloud-native app by using .NET Aspire, then it's easy for each microservice to use Azure Storage Tables because they can use the .NET Aspire Azure Data Tables integration.
 
 ### Modifying the app host project
 
@@ -28,7 +28,7 @@ In the app host project for your solution, you must install the `Aspire.Hosting.
 dotnet add package Aspire.Hosting.Azure.Storage
 ```
 
-Next, register the Azure Table Storage component:
+Next, register the Azure Table Storage integration:
 
 ```csharp
 var tables = builder.AddAzureStorage("storage")
@@ -160,6 +160,6 @@ The string you pass to this method is the name of a connection string. You shoul
 
 ## Learn more
 
-- [.NET Aspire Azure Data Tables component](/dotnet/aspire/storage/azure-storage-tables-component)
+- [.NET Aspire Azure Data Tables integration](/dotnet/aspire/storage/azure-storage-tables-integration)
 - [What is Azure Table storage?](/azure/storage/tables/table-storage-overview)
 - [Azure Tables client library for .NET](/dotnet/api/overview/azure/data.tables-readme)

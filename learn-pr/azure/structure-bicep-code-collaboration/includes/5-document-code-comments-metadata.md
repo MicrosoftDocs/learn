@@ -90,11 +90,11 @@ param tags object = {
   Environment: 'Production'
 }
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   tags: tags
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2023-12-01' = {
   tags: tags
 }
 ```

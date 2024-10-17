@@ -3,7 +3,7 @@ uid: learn.github.manage-innersource-program-github
 metadata:
   title: "Manage an InnerSource program by using GitHub"
   description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
-  ms.date: 05/15/2023
+  ms.date: 09/19/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -11,15 +11,15 @@ metadata:
 title: "Manage an InnerSource program by using GitHub"
 summary: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 abstract: |
-  In this module, you will learn to:
-  - Contrast user versus organization owned projects
-  - Make recommendations about the number of GitHub organizations you should have
-  - Create discoverable repositories
-  - Create robust repository READMEs
-  - Use issue and pull request templates
-  - Build transparency into repositories
-  - Measure the success of InnerSource within your organization
-  - Distribute your InnerSource toolkit
+  In this module, you learn how to:
+  - Contrast user- versus organization-owned projects.
+  - Make recommendations about the number of GitHub organizations you should have.
+  - Create discoverable repositories.
+  - Create robust repository READMEs.
+  - Use issue and pull-request templates.
+  - Build transparency into repositories.
+  - Measure the success of InnerSource within your organization.
+  - Distribute your InnerSource toolkit.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

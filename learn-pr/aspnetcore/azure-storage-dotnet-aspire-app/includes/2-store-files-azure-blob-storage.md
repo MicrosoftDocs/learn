@@ -2,7 +2,7 @@
 
 In the outdoor equipment retailer you work for, your team is making good progress with the microservices for the new public-facing eShop. You've already decided to host the final app in Azure. Two separate teams have a need to store blobs: both high resolution photos and product demonstration videos. Now, you want to assess whether an Azure Storage account would be an optimal location to store these files.
 
-In this unit, you'll learn about the .NET Aspire Azure Blob Storage component and how it helps developers to store and retrieve blobs in Azure Storage accounts.
+In this unit, you'll learn about the .NET Aspire Azure Blob Storage integration and how it helps developers to store and retrieve blobs in Azure Storage accounts.
 
 ## What is an Azure Storage account?
 
@@ -15,7 +15,7 @@ Azure is Microsoft's industry leading cloud services solution and it includes ma
 You can use one, two, or all three of these services in a single storage account. If your organization uses Azure, you should consider Azure Storage as a simple and effective way to add these backing services to your cloud-native app.
 
 > [!NOTE]
-> Azure Storage is only one solution you can use for message queuing, blob storage, and semi-structured data storage. For example, MongoDB and RabbitMQ provide data tables and message queues without requiring Azure. Within Azure you can choose Cosmos DB and Azure Service Bus instead. .NET Aspire includes components for all these services.
+> Azure Storage is only one solution you can use for message queuing, blob storage, and semi-structured data storage. For example, MongoDB and RabbitMQ provide data tables and message queues without requiring Azure. Within Azure you can choose Cosmos DB and Azure Service Bus instead. .NET Aspire includes integrations for all these services.
 
 ## Why use Azure Blob Storage?
 
@@ -25,7 +25,7 @@ Azure Blob Storage is optimized to store large files or large numbers of files t
 
 ## Using Azure Blob Storage with .NET Aspire
 
-.NET Aspire makes it easy to work with files in Azure Blob Storage by including the built-in **.NET Aspire Azure Blob Storage component**. This component registers a connected `BlobServiceClient` object in the dependency injection container maintained by the app host project. You can pass that client to any microservice in your solution and use it to store or retrieve files. .NET Aspire also configures health checks and telemetry for the Blob Storage client.
+.NET Aspire makes it easy to work with files in Azure Blob Storage by including the built-in **.NET Aspire Azure Blob Storage integration**. This integration registers a connected `BlobServiceClient` object in the dependency injection container maintained by the app host project. You can pass that client to any microservice in your solution and use it to store or retrieve files. .NET Aspire also configures health checks and telemetry for the Blob Storage client.
 
 ### Modifying the app host project
 
@@ -35,7 +35,7 @@ Start by installing the `Aspire.Hosting.Azure.Storage` NuGet package:
 dotnet add package Aspire.Hosting.Azure.Storage
 ```
 
-Next, register the Azure Blob Storage component:
+Next, register the Azure Blob Storage integration:
 
 ```csharp
 var blobs = builder.AddAzureStorage("storage")
@@ -51,7 +51,7 @@ var catalogMicroservice = builder.AddProject<Projects.CatalogMicroservice>()
 
 ### Modifying the consuming projects
 
-To use the Azure Blob Storage component in a microservice, first you must install it using the NuGet package manager, or the .NET CLI:
+To use the Azure Blob Storage integration in a microservice, first you must install it using the NuGet package manager, or the .NET CLI:
 
 ```dotnetcli
 dotnet add package Aspire.Azure.Storage.Blobs
@@ -153,6 +153,6 @@ if (builder.Environment.IsDevelopment())
 
 - [Storage account overview](/azure/storage/common/storage-account-overview)
 - [Azure Blob Storage documentation](/azure/storage/blobs/)
-- [.NET Aspire Azure Blob Storage component](/dotnet/aspire/storage/azure-storage-blobs-component)
-- [Tutorial: Connect an ASP.NET Core app to .NET Aspire storage components](/dotnet/aspire/storage/azure-storage-components)
+- [.NET Aspire Azure Blob Storage integration](/dotnet/aspire/storage/azure-storage-blobs-integration)
+- [Tutorial: Connect an ASP.NET Core app to .NET Aspire storage integrations](/dotnet/aspire/storage/azure-storage-integrations)
 - [Use the Azurite emulator for local Azure Storage development](/azure/storage/common/storage-use-azurite)

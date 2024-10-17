@@ -4,12 +4,12 @@ title: Configure read replicas
 metadata:
   title: Configure read replicas
   description: "Configure read replicas"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/5-configure-read-replicas.md)]

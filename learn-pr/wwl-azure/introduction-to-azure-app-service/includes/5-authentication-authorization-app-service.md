@@ -1,4 +1,4 @@
-Azure App Service provides built-in authentication and authorization support, so you can sign in users and access data by writing minimal, or no code in your web app, RESTful API, mobile back end, and Azure Functions.
+Azure App Service provides built-in authentication and authorization support. You can sign in users and access data by writing minimal or no code in your web app, RESTful API, mobile back end, or Azure Functions.
 
 ## Why use the built-in authentication?
 
@@ -7,8 +7,8 @@ You're not required to use App Service for authentication and authorization. Man
 The built-in authentication feature for App Service and Azure Functions can save you time and effort by providing out-of-the-box authentication with federated identity providers, allowing you to focus on the rest of your application.
 
 * Azure App Service allows you to integrate various auth capabilities into your web app or API without implementing them yourself.
-* It’s built directly into the platform and doesn’t require any particular language, SDK, security expertise, or code.
-* You can integrate with multiple login providers. For example, Microsoft Entra ID, Facebook, Google, Twitter.
+* Auth is built directly into the platform and doesn’t require any particular language, SDK, security expertise, or code.
+* You can integrate with multiple login providers. For example, Microsoft Entra ID, Facebook, Google, X.
 
 ## Identity providers
 
@@ -19,7 +19,7 @@ App Service uses federated identity, in which a third-party identity provider ma
 | Microsoft identity platform | `/.auth/login/aad` | [App Service Microsoft identity platform login](/azure/app-service/configure-authentication-provider-aad) |
 | Facebook | `/.auth/login/facebook` | [App Service Facebook login](/azure/app-service/configure-authentication-provider-facebook) |
 | Google | `/.auth/login/google` | [App Service Google login](/azure/app-service/configure-authentication-provider-google) |
-| Twitter | `/.auth/login/twitter` | [App Service Twitter login](/azure/app-service/configure-authentication-provider-twitter) |
+| X | `/.auth/login/twitter` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 | GitHub | `/.auth/login/github` | [App Service GitHub login](/azure/app-service/configure-authentication-provider-github) |
 
@@ -27,10 +27,10 @@ When you enable authentication and authorization with one of these providers, it
 
 ## How it works
 
-The authentication and authorization module runs in the same sandbox as your application code. When it's enabled, every incoming HTTP request passes through it before being handled by your application code. This module handles several things for your app:
+The authentication and authorization module runs in the same sandbox as your application code. When enabled, every incoming HTTP request passes through it before being handed to your application code. This module handles several things for your app:
 
-* Authenticates users and clients with the specified identity provider(s)
-* Validates, stores, and refreshes OAuth tokens issued by the configured identity provider(s)
+* Authenticates users and clients with the specified identity provider
+* Validates, stores, and refreshes OAuth tokens issued by the configured identity provider
 * Manages the authenticated session
 * Injects identity information into HTTP request headers
 
@@ -43,9 +43,9 @@ The module runs separately from your application code and can be configured usin
 
 The authentication flow is the same for all providers, but differs depending on whether you want to sign in with the provider's SDK.
 
-* Without provider SDK: The application delegates federated sign-in to App Service. This is typically the case with browser apps, which can present the provider's login page to the user. The server code manages the sign-in process, so it's also called *server-directed flow* or *server flow*.
+* Without provider SDK: The application delegates federated sign-in to App Service. This delegation is typically the case with browser apps, which can present the provider's login page to the user. The server code manages the sign-in process and is referred to as *server-directed flow* or *server flow*.
 
-* With provider SDK: The application signs users in to the provider manually and then submits the authentication token to App Service for validation. This is typically the case with browser-less apps, which can't present the provider's sign-in page to the user. The application code manages the sign-in process, so it's also called *client-directed flow* or *client flow*. This applies to REST APIs, Azure Functions, JavaScript browser clients, and native mobile apps that sign users in using the provider's SDK.
+* With provider SDK: The application signs users in to the provider manually and then submits the authentication token to App Service for validation. This is typically the case with browser-less apps, which can't present the provider's sign-in page to the user. The application code manages the sign-in process and is referred to as *client-directed flow* or *client flow*. This applies to REST APIs, Azure Functions, JavaScript browser clients, and native mobile apps that sign users in using the provider's SDK.
 
 The following table shows the steps of the authentication flow.
 

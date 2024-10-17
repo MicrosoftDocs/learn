@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Publish a module to a private registry
   description: Learn how to create and control access to a private registry, and how to publish modules to the registry.
-  ms.date: 03/06/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

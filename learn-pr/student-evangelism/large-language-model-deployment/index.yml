@@ -3,16 +3,18 @@ uid: learn.large-language-model-deployment
 metadata:
   ms.author: chnoring
   author: softchris
-  ms.date: 12/04/2023
+  ms.date: 09/25/2024
   title: Create a large language model deployment
   description: Lean how to create a large language model deployment. 
   ms.topic: module
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
   ms.service: azure-ai-openai
 title: "Create a large language model deployment"
-summary: "This module provides a step-by-step guide on how to provision an Azure OpenAI cloud resource, create a deployment for a specific large language model (LLM), and experiment with different prompts to explore the capabilities of an LLM in various scenarios."
+summary: "This module provides a step-by-step guide on the following subjects: How to provision an Azure OpenAI cloud resource. How to create a deployment for a specific large language model (LLM). How to experiment with different prompts to explore the capabilities of an LLM in various scenarios."
 abstract: |
- In this module, you'll learn how to: 
+ In this module, you learn how to: 
   - Provision an Azure OpenAI cloud resource.
   - Create a deployment for a specific LLM model.
   - Experiment with different prompts to see what type of results an LLM can provide in different situations.

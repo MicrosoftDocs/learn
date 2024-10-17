@@ -5,7 +5,7 @@ metadata:
   description: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/11/2023
+  ms.date: 08/25/2024
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:

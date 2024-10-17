@@ -64,6 +64,8 @@ With a sufficiently large set of training text, a vocabulary of many thousands o
 
 While it may be convenient to represent tokens as simple IDs - essentially creating an index for all the words in the vocabulary, they don't tell us anything about the meaning of the words, or the relationships between them. To create a vocabulary that encapsulates semantic relationships between the tokens, we define contextual vectors, known as *embeddings*, for them. Vectors are multi-valued numeric representations of information, for example [10, 3, 1] in which each numeric element represents a particular attribute of the information. For language tokens, each element of a token's vector represents some semantic attribute of the token. The specific categories for the elements of the vectors in a language model are determined during training based on how commonly words are used together or in similar contexts.
 
+> [!VIDEO https://play.vidyard.com/sq5CuXbmZzdpqWABdwVjug?loop=1]
+
 Vectors represent lines in multidimensional space, describing *direction* and *distance* along multiple axes (you can impress your mathematician friends by calling these *amplitude* and *magnitude*). It can be useful to think of the elements in an embedding vector for a token as representing steps along a path in multidimensional space. For example, a vector with three elements represents a path in 3-dimensional space in which the element values indicate the units traveled forward/back, left/right, and up/down. Overall, the vector describes the direction and distance of the path from origin to end.
 
 The elements of the tokens in the embeddings space each represent some semantic attribute of the token, so that semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. A technique called *cosine similarity* is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
@@ -77,7 +79,7 @@ We can plot these vectors in three-dimensional space, like this:
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The embedding vectors for dog” and “puppy” describe a path along an almost identical direction, which is also fairly similar to the direction for “cat”. The embedding vector for “skateboard” however describes journey in a very different direction.
+The embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for “cat”. The embedding vector for “skateboard” however describes journey in a very different direction.
 
 > [!NOTE]
 > The previous example shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.

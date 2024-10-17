@@ -3158,6 +3158,11 @@ achievements:
   title: Create custom controls with Xamarin.Forms renderers
   summary: Extend the built-in functionality of Xamarin.Forms by modifying existing controls and creating new custom controls.
   iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+- uid: learn.wwl.explore-azure-openai.badge
+  type: badge
+  title: Fundamentals of Azure OpenAI Service
+  summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
+  iconUrl: /training/achievements/explore-azure-openai.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -3798,6 +3803,11 @@ achievements:
   title: Develop and configure an ASP.NET application that queries an Azure SQL database
   summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
   iconUrl: /training/achievements/develop-app-that-queries-azure-sql.svg
+- uid: learn.aks-deployment-pipeline-github-actions.badge
+  type: badge
+  title: Azure Kubernetes Service deployment pipeline with GitHub Actions
+  summary: Learn how to use GitHub Actions to create an automated deployment pipeline for Azure Kubernetes Service (AKS).
+  iconUrl: /training/achievements/aks-deployment-pipeline-github-actions.svg
 - uid: learn.introduction-to-azure-web-pubsub.badge
   type: badge
   title: Introduction to Azure Web PubSub
@@ -3852,3 +3862,148 @@ achievements:
   title: Containerize and migrate ASP.NET applications to Azure Kubernetes Service
   summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure Kubernetes Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.support-concurrency-blob-storage.badge
+  type: badge
+  title: Support concurrency in Blob storage apps with ETags and blob leases
+  summary: Develop apps that properly support concurrency against data in Azure Blob storage.
+  iconUrl: /training/achievements/support-concurrency-blob-storage.svg
+- uid: learn.azure.organize-and-inventory-machines-through-arc-enabled-servers.badge
+  type: badge
+  title: Organize and inventory hybrid and multicloud machines through Arc-enabled servers
+  summary: Discover the key products and services that allow you to organize and inventory hybrid and multicloud virtual machines through Azure Arc-enabled servers.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.access-blob-storage-metrics-from-code.badge
+  type: badge
+  title: Access metrics from your Azure Blob Storage Containers Programmatically
+  summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
+  iconUrl: /training/achievements/access-blob-storage-metrics-from-code.svg
+- uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge
+  type: badge
+  title: Classify and moderate text with Azure Content Moderator
+  summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
+  iconUrl: /training/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+- uid: learn.wwl.configure-resources-arm-templates.badge
+  type: badge
+  title: Configure resources with Azure Resource Manager templates
+  summary: You'll learn how to use Azure Resource Manager templates to consistently deploy assets.
+  iconUrl: /training/achievements/arm-templates-resources.svg
+- uid: learn.wwl.configure-virtual-machine-extensions.badge
+  type: badge
+  title: Configure virtual machine extensions
+  summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
+  iconUrl: /training/achievements/virtual-machines-configure-extension.svg
+- uid: learn.azure.copy-blobs-using-dotnet.badge
+  type: badge
+  title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
+  summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender.trophy
+  type: trophy
+  title: Enhance IoT solution security by using Microsoft Defender for IoT
+  summary: You will learn about security considerations that apply at each level of the solution and the Azure services and tools that can be configured to address security concerns from the ground up.
+  iconUrl: /training/achievements/azure-defender-security-solution.svg
+- uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot.badge
+  type: badge
+  title: Examine Microsoft Defender for Cloud and Microsoft Defender for IoT
+  summary: This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Microsoft Defender for IoT.
+  iconUrl: /learn/achievements/iot-security-fundamentals.svg
+- uid: learn.wwl.examine-security-fundamentals-for-iot.badge
+  type: badge
+  title: Examine security fundamentals for IoT
+  summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
+  iconUrl: /learn/achievements/security-center-defender-examine.svg
+- uid: learn.wwl.examine-azure-defender-for-iot-security-agents.badge
+  type: badge
+  title: Examine Microsoft Defender for IoT security agents
+  summary: This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
+  iconUrl: /learn/achievements/azure-defender-iot-security-agents.svg
+- uid: learn.wwl.explore-azure-defender-for-iot-implementation.badge
+  type: badge
+  title: Explore Microsoft Defender for IoT implementation
+  summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
+  iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
+- uid: learn.azure.data-classification-and-data-protection.badge
+  type: badge
+  title: Introduction to Microsoft data classification and protection
+  summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
+  iconUrl: /training/achievements/data-classification-and-data-protection.svg
+- uid: learn.azure.classification-and-protection.badge
+  type: badge
+  title: Intro to data classification and protection
+  summary: Learners should know and be able to describe data classification and data protection key concepts.
+  iconUrl: /training/achievements/classification-and-protection.svg
+- uid: learn.wwl.configure-role-based-access-control.badge
+  type: badge
+  title: Configure role-based access control
+  summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
+  iconUrl: /training/achievements/roles-based-access-control.svg
+- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
+  type: badge
+  title: Describe the insider risk capabilities in Microsoft Purview
+  summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
+  iconUrl: /training/achievements/describe-insider-risk-capabilities-in-microsoft-365.svg
+- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+  type: badge
+  title: Describe the eDiscovery and Audit capabilities in Microsoft Purview
+  summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
+  iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
+- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
+  type: badge
+  title: Describe the compliance management capabilities in Microsoft Purview
+  summary: Explore the Microsoft Purview compliance portal, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
+  iconUrl: /training/achievements/describe-compliance-management-capabilities-microsoft-365.svg
+- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
+  type: badge
+  title: Describe information protection, data lifecycle management, and data governance capabilities in Microsoft Purview
+  summary: Microsoft Purview is a comprehensive set of solutions that help you govern, protect, and manage your entire data estate, providing unified data governance and risk management for your organization.
+  iconUrl: /training/achievements/describe-information-protection-microsoft-365.svg
+- uid: learn.wwl.realize-integrated-analytical-solutions-with-azure-synapse-analytics.trophy
+  type: trophy
+  title: Realize Integrated Analytical Solutions with Azure Synapse Analytics
+  summary: Learn how Azure Synapse Analytics enables you to perform different types of analytics through its’ components that can be used to build Modern Data Warehouses through to Advanced Analytical solutions.
+  iconUrl: /learn/achievements/realize-integrated-analytical-solutions-with-azure-synapse-analytics.svg
+- uid: learn.connect-app-to-azure-storage.badge
+  type: badge
+  title: Connect an app to Azure Storage
+  summary: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
+  iconUrl: /training/achievements/connect-an-app-to-azure-storage.svg
+- uid: learn.communicate-between-applications-with-azure-queue-storage.badge
+  type: badge
+  title: Communicate between applications with Azure Queue storage
+  summary: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.
+  iconUrl: /training/achievements/communicate-between-apps-with-azure-queue-storage.svg
+- uid: learn.control-access-to-azure-storage-with-sas.badge
+  type: badge
+  title: Control access to Azure Storage with shared access signatures
+  summary: Grant access to data stored in your Azure Storage accounts securely by using shared access signatures.
+  iconUrl: /training/achievements/control-access-to-azure-storage-with-sas.svg
+- uid: learn.azure.cloud-adoption-framework-organize.badge
+  type: badge
+  title: Use the Cloud Adoption Framework to manage organizational alignment
+  summary: Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises—typically a centralized control model—doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate. The Cloud Adoption Framework provides guidance for this modernization journey. This module is added learning after you complete the [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/training/paths/cloud-adoption-framework/) learning path.
+  iconUrl: /training/achievements/cloud-adoption-framework-organize.svg
+- uid: learn.azure.introduction-data-protection-privacy.badge
+  type: badge
+  title: Introduction to data protection and privacy
+  summary: Learn about data protection and privacy, privacy laws and regulations, Microsoft data categories, and Microsoft data protection and compliance support.
+  iconUrl: /training/achievements/introduction-data-protection-privacy.svg
+- uid: learn.wwl.responsible-generative-ai.badge
+  type: badge
+  title: Fundamentals of Responsible Generative AI
+  summary: Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.use-azure-resource-manager.badge
+  type: badge
+  title: Use Azure Resource Manager
+  summary: You'll learn how to use resource groups to organize your Azure resources.
+  iconUrl: /training/achievements/arm-use-resource-manager.svg
+- uid: learn.wwl.use-intelligent-planners.badge
+  type: badge
+  title: Use intelligent planners
+  summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.develop-test-deploy-azure-functions-core-tools.badge
+  type: badge
+  title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
+  summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
+  iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg

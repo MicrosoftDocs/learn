@@ -1,8 +1,8 @@
 Earlier, you discovered the container becomes the unit you'll use to distribute your apps. You also learned the container is in a standardized format both your developer and operation teams use.
 
-In your example, you're developing an order-tracking portal that your company's various outlets will use. With the Docker image built, your operations team is now responsible for the deploying, rolling out updates, and managing your order-tracking portal.
+In your example, you're developing an order-tracking portal for your company's various outlets to use. With the Docker image built, your operations team is now responsible for the deploying, rolling out updates, and managing your order-tracking portal.
 
-In the previous unit, you looked at how a Docker image is built. Here, you'll look a bit at a Docker container's lifecycle and how to manage containers. You'll also look at how to think about configuring data storage and the network options for your containers.
+In the previous unit, you looked at how a Docker image is built. Here, you'll look a bit at a Docker container's lifecycle and how to manage containers. You'll also learn how to think about configuring data storage and the network options for your containers.
 
 ## How to manage Docker containers
 
@@ -12,15 +12,15 @@ A Docker container has a lifecycle that you can use to manage and track the stat
 
 To place a container in the run state, use the _run_ command. You can also restart a container that's already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
 
-A container is considered in a running state until it's either paused, stopped, or killed. A container, however, can also exit from the run state by itself. A container can self-exit when the running process completes, or if the process goes into a fault state.
+A container is considered in a running state until it's either paused, stopped, or killed. A container, however, can also exit from the running state by itself. A container can self-exit when the running process completes, or if the process goes into a fault state.
 
-To pause a running container, use the _pause_ command. This command suspends all processes in the container.
+To pause a running container, use the `pause` command. This command suspends all processes in the container.
 
-To stop a running container, use the _stop_ command. The stop command enables the working process to shut down gracefully by sending it a termination signal. The container's kernel terminates after the process shuts down.
+To stop a running container, use the `stop` command. The `stop` command enables the working process to shut down gracefully by sending it a termination signal. The container's kernel terminates after the process shuts down.
 
-If you need to terminate the container, use the _kill_ command to send a kill signal. The container's kernel captures the kill signal, but the running process doesn't. This command forcefully terminates the working process in the container.
+If you need to terminate the container, use the `kill` command to send a kill signal. The container's kernel captures the kill signal, but the running process doesn't. This command forcefully terminates the working process in the container.
 
-Lastly, to remove containers that are in a stopped state, use the _remove_ command. After removing a container, all data stored in the container gets destroyed.
+Lastly, to remove containers that are in a stopped state, use the `remove` command. After removing a container, all data stored in the container gets destroyed.
 
 ## How to view available containers
 
@@ -50,7 +50,7 @@ There are three items to review in the preceding output:
 
 ### Why are containers given a name?
 
-This feature enables you to run multiple container instances of the same image. Container names are unique, which means if you specify a name, you can't reuse that name to create a new container. The only way to reuse a specific name is to remove the previous container.
+This feature allows you to run multiple container instances of the same image. Container names are unique, which means if you specify a name, you can't reuse that name to create a new container. The only way to reuse a specific name is to remove the previous container.
 
 ## How to run a container
 
@@ -132,13 +132,13 @@ Containers can make use of two options to persist data. The first option is to m
 
 A volume is stored on the host filesystem at a specific folder location. Choose a folder where you know the data won't be modified by non-Docker processes.
 
-Docker creates and manages the new volume by running the `docker volume create` command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker will create the volume if it doesn't exist when you try to mount the volume into a container the first time.
+Docker creates and manages the new volume by running the `docker volume create` command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
 
-Volumes are stored within directories on the host filesystem. Docker will mount and manage the volumes in the container. After mounting, these volumes are isolated from the host machine.
+Volumes are stored within directories on the host filesystem. Docker mounts and manages the volumes in the container. After mounting, these volumes are isolated from the host machine.
 
 Multiple containers can simultaneously use the same volumes. Volumes also don't get removed automatically when a container stops using the volume.
 
-In this example, you can create a directory on our container host and mount this volume into the container when you create the tracking portal container. When your tracking portal logs data, you can access this information via the container host's filesystem. You'll have access to this log file even if your container is removed.
+In this example, you can create a directory on our container host and mount this volume into the container when you create the tracking-portal container. When your tracking portal logs data, you can access this information via the container host's filesystem. You'll have access to this log file even if your container is removed.
 
 Docker also provides a way for third-party companies to build add-ons to be used as volumes. For example, Azure Storage provides a plugin to mount Azure Storage as volumes on Docker containers.
 
@@ -150,11 +150,11 @@ Bind mounts have limited functionality compared to volumes, and even though they
 
 Volumes are considered the preferred data-storage strategy to use with containers.
 
-For Windows containers, another option is available: You can mount an SMB path as a volume and present it to containers. This allows containers on different hosts to use the same persistent storage.
+For Windows containers, another option is available: you can mount an SMB path as a volume and present it to containers. This allows containers on different hosts to use the same persistent storage.
 
 ## Docker container network configuration
 
-The default Docker network configuration allows for isolating containers on the Docker host. This feature enables you to build and configure apps that can communicate securely with each other.
+The default Docker network configuration allows for isolating containers on the Docker host. This feature allows you to build and configure apps that can communicate securely with each other.
 
 Docker provides different network settings for Linux and Windows.
 
@@ -188,7 +188,7 @@ By default, Docker doesn't publish any container ports. To enable port mapping b
 
 The publish flag effectively configures a firewall rule that maps the ports.
 
-In this example, your tracking portal is accessible to clients browsing to port 80. You'll have to map port 80 from the container to an available port on the host. You have port 8080 open on the host, which enables you to set the flag like this:
+In this example, your tracking portal is accessible to clients browsing to port 80. You'll have to map port 80 from the container to an available port on the host. You have port 8080 open on the host, which allows you to set the flag like this:
 
 ```console
 --publish 8080:80

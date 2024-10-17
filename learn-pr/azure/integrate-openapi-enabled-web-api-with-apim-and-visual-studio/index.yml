@@ -5,12 +5,12 @@ summary: Learn how to add an OpenAPI-enabled Web API application to Azure API Ma
 metadata:
   title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
   description: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
-  ms.date: 07/11/2023
+  ms.date: 09/13/2024
   author: justinyoo
   ms.author: juyoo
   manager: mijacobs
   ms.topic: module
-  ms.custom: team=cloud_advocates
+  ms.custom: team=cloud_advocates, ai-learning-hub
   ms.contributors: juyoo-01192022
   ms.service: azure-api-management
 abstract: |

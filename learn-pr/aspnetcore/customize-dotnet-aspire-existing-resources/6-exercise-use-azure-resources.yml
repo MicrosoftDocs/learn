@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll configure a .NET Aspire solution to use an Azure Cache for Redis instance for output caching and Azure Application Insights for telemetry.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 15
 content: |

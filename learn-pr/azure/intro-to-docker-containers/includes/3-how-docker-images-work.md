@@ -1,4 +1,4 @@
-Recall that we said the container image becomes the unit we use to distribute applications. We also mentioned that the container is in a standardized format both our developer and operation teams use.
+Recall that we said the container image becomes the unit we use to distribute applications. We also mentioned that the container is in a standardized format that both our developer and operation teams use.
 
 Here, we'll look at the differences between software, packages, and images as used in Docker. Knowing the differences between these concepts will help us better understand how Docker images work.
 
@@ -8,11 +8,11 @@ We'll also briefly discuss the roles of the OS running on the host and the OS ru
 
 The software packaged into a container isn't limited to the applications that our developers build.  When we talk about software, we refer to application code, system packages, binaries, libraries, configuration files, and the operating system running in the container.
 
-For example, assume we're developing an order-tracking portal that our company's various outlets will use. We need to look at the complete stack of software that will run our web application. The application we're building is a .NET Core MVC app, and we plan to deploy the application using nginx as a reverse proxy server on Ubuntu Linux. All of these software components form part of the container image.
+For example, assume we're developing an order-tracking portal for our company's various outlets to use. We need to look at the complete stack of software that will run our web application. The application we're building is a .NET Core MVC app, and we plan to deploy the application using nginx as a reverse proxy server on Ubuntu Linux. All of these software components form part of the container image.
 
 ## What is a container image?
 
-A container image is a portable package that contains software. It's this image that, when run, becomes our container. The container is the in-memory instance of an image.
+A container image is a portable package that contains software. It's this image that, when run, becomes our container. The container is an image's in-memory instance.
 
 A container image is immutable. Once you've built an image, you can't change it. The only way to change an image is to create a new image. This feature is our guarantee that the image we use in production is the same image used in development and QA.
 
@@ -22,7 +22,7 @@ The host OS is the OS on which the Docker engine runs. Docker containers running
 
 :::image type="content" source="../media/3-container-scratch-host-os.svg" alt-text="Diagram showing a Docker image with no base OS and the dependency on the host OS Kernel.":::
 
- However, Windows containers need a container OS. The container depends on the OS kernel to manage services such as the file system, network management, process scheduling, and memory management.
+However, Windows containers need a container OS. The container depends on the OS kernel to manage services such as the file system, network management, process scheduling, and memory management.
 
 ## What is the container OS?
 
@@ -62,7 +62,7 @@ On Windows, you can only create container images that are based on Windows base 
 
 ## What is a Dockerfile?
 
-A Dockerfile is a text file that contains the instructions we use to build and run a Docker image.  The following aspects of the image are defined:
+A Dockerfile is a text file that contains the instructions we use to build and run a Docker image. It defines the following aspects of the image:
 
 - The base or parent image we use to create the new image
 - Commands to update the base OS and install additional software
@@ -115,7 +115,7 @@ Docker images are large files that are initially stored on your PC, and we need 
 
 The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the `docker` client. The client doesn't execute the commands directly, and sends all queries to the `dockerd` daemon.
 
-We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _Learn more_ section at the end of this module includes links to Docker documentation, which covers all commands and command flags in detail.
+We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _Learn more_ section in this module's _Summary_ unit includes links to Docker documentation, which covers all commands and command flags in detail.
 
 ## How to build an image
 

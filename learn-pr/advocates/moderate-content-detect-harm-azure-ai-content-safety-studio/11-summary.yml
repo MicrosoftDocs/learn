@@ -3,10 +3,10 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summarize what you learned in this module about the Azure AI Content Safety Studio.
+  description: Summarize what you learned in this module about Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh
-  ms.date: 05/09/2024
+  ms.date: 08/29/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

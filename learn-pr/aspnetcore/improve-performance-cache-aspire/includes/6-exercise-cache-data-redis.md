@@ -152,7 +152,7 @@ Let's use `git` to obtain a sample app built with .NET Aspire. The app doesn't y
 
 ## Add a caching backing service
 
-Now that you've seen how the homepage performs without caching, let's add output caching to see if it improves responsiveness. Start by adding the output caching component to the **AppHost** project:
+Now that you've seen how the homepage performs without caching, let's add output caching to see if it improves responsiveness. Start by adding the output caching integration to the **AppHost** project:
 
 1. In Visual Studio, in **Solution Explorer**, right-click the **eShop.AppHost** project, select **Add**, and then select **.NET Aspire package**.
 1. In the search textbox, at the end of the existing text, type **Redis**.
