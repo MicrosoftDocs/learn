@@ -18,7 +18,6 @@ metadata:
   ms.topic: module
   ms.service: azure-javascript
   ms.custom: team=nextgen
-  ms.devlang: nodejs
   devlang: nodejs
 title: Build a web API with Node.js and Express
 summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
