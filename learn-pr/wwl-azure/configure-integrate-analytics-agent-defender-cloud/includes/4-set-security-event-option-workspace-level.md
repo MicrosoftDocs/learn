@@ -1,10 +1,10 @@
 Defender for Cloud collects data from your Azure virtual machines (VMs), Virtual Machine Scale Sets, IaaS containers, and non-Azure (including on-premises) machines to monitor for security vulnerabilities and threats. Some Defender plans require monitoring components to collect data from your workloads.
 
-Data collection is required to provide visibility into missing updates, misconfigured OS security settings, endpoint protection status, and health and threat protection. Data collection is only needed for compute resources such as VMs, Virtual Machine Scale Sets, IaaS containers, and non-Azure computers.<br>
+Data collection is required to provide visibility into missing updates, misconfigured OS security settings, endpoint protection status, and health and threat protection. Data collection is only needed for compute resources such as VMs, Virtual Machine Scale Sets, IaaS containers, and non-Azure computers.
 
-You can benefit from Microsoft Defender for Cloud even if you don’t provision agents. However, you'll have limited security and the capabilities listed above aren't supported.<br>
+You can benefit from Microsoft Defender for Cloud even if you don’t provision agents. However, you'll have limited security and the capabilities listed above aren't supported.
 
-Data is collected using:<br>
+Data is collected using:
 
  -  Azure Monitor Agent (AMA)<br>
  -  Microsoft Defender for Endpoint (MDE)
@@ -25,15 +25,21 @@ To save you the process of manually installing the extensions, Defender for Clou
 These plans use monitoring components to collect data:
 
  -  Defender for Servers
+    
+    
      -  [Azure Arc agent](/azure/azure-arc/servers/manage-vm-extensions) (For multicloud and on-premises servers)
      -  [Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
      -  Vulnerability assessment
      -  [Azure Monitor Agent](/azure/defender-for-cloud/monitoring-components#azure-monitor-agent-ama) or [Log Analytics agent](/azure/defender-for-cloud/monitoring-components#log-analytics-agent)
  -  [Defender for SQL servers on machines](/azure/defender-for-cloud/defender-for-sql-on-machines-vulnerability-assessment)
+    
+    
      -  [Azure Arc agent](/azure/azure-arc/servers/manage-vm-extensions) (For multicloud and on-premises servers)
      -  [Azure Monitor Agent](/azure/defender-for-cloud/monitoring-components#azure-monitor-agent-ama) or [Log Analytics agent](/azure/defender-for-cloud/monitoring-components#log-analytics-agent)
      -  Automatic SQL server discovery and registration
  -  Defender for Containers
+    
+    
      -  [Azure Arc agent](/azure/azure-arc/servers/manage-vm-extensions) (For multicloud and on-premises servers)
      -  [Defender sensor, Azure Policy for Kubernetes, Kubernetes audit log data](/azure/defender-for-cloud/defender-for-containers-introduction)
 
@@ -78,17 +84,17 @@ Also ensure your Log Analytics agent is [properly configured to send data to Def
 
 The following use cases explain how deployment of the Log Analytics agent works in cases when there's already an agent or extension installed.
 
-**Log Analytics agent is installed on the machine, but not as an extension (Direct agent)** \- If the Log Analytics agent is installed directly on the VM (not as an Azure extension), Defender for Cloud will install the Log Analytics agent extension and might upgrade the Log Analytics agent to the latest version. The installed agent will continue to report to its already configured workspaces and to the workspace configured in Defender for Cloud. (Multi-homing is supported on Windows machines.)<br>
+**Log Analytics agent is installed on the machine, but not as an extension (Direct agent)** \- If the Log Analytics agent is installed directly on the VM (not as an Azure extension), Defender for Cloud will install the Log Analytics agent extension and might upgrade the Log Analytics agent to the latest version. The installed agent will continue to report to its already configured workspaces and to the workspace configured in Defender for Cloud. (Multi-homing is supported on Windows machines.)
 
-If the Log Analytics is configured with a user workspace and not Defender for Cloud's default workspace, you'll need to install the "Security" or "SecurityCenterFree" solution on it for Defender for Cloud to start processing events from VMs and computers reporting to that workspace.<br>
+If the Log Analytics is configured with a user workspace and not Defender for Cloud's default workspace, you'll need to install the "Security" or "SecurityCenterFree" solution on it for Defender for Cloud to start processing events from VMs and computers reporting to that workspace.
 
-For Linux machines, Agent multi-homing isn't yet supported. If an existing agent installation is detected, the Log Analytics agent won't be deployed.<br>
+For Linux machines, Agent multi-homing isn't yet supported. If an existing agent installation is detected, the Log Analytics agent won't be deployed.
 
-For existing machines on subscriptions onboarded to Defender for Cloud before 17 March 2019, when an existing agent will be detected, the Log Analytics agent extension won't be installed and the machine won't be affected. For these machines, see to the "Resolve monitoring agent health issues on your machines" recommendation to resolve the agent installation issues on these machines.<br>
+For existing machines on subscriptions onboarded to Defender for Cloud before 17 March 2019, when an existing agent will be detected, the Log Analytics agent extension won't be installed and the machine won't be affected. For these machines, see to the "Resolve monitoring agent health issues on your machines" recommendation to resolve the agent installation issues on these machines.
 
-**System Center Operations Manager agent is installed on the machine** \- Defender for Cloud will install the Log Analytics agent extension side by side to the existing Operations Manager. The existing Operations Manager agent will continue to report to the Operations Manager server normally. The Operations Manager agent and Log Analytics agent share common run-time libraries, which will be updated to the latest version during this process.<br>
+**System Center Operations Manager agent is installed on the machine** \- Defender for Cloud will install the Log Analytics agent extension side by side to the existing Operations Manager. The existing Operations Manager agent will continue to report to the Operations Manager server normally. The Operations Manager agent and Log Analytics agent share common run-time libraries, which will be updated to the latest version during this process.
 
-**A pre-existing VM extension is present:**<br>
+**A pre-existing VM extension is present:**
 
  -  When the Monitoring Agent is installed as an extension, the extension configuration allows reporting to only a single workspace. Defender for Cloud doesn't override existing connections to user workspaces. Defender for Cloud will store security data from the VM in the workspace already connected, if the "Security" or "SecurityCenterFree" solution has been installed on it. Defender for Cloud may upgrade the extension version to the latest version in this process.<br>
  -  To see to which workspace the existing extension is sending data to, run the *TestCloudConnection.exe* tool to validate connectivity with Microsoft Defender for Cloud, as described in [Verify Log Analytics agent connectivity](/services-hub/unified/health/assessments-troubleshooting#verify-log-analytics-agent-connectivity).
