@@ -39,6 +39,7 @@ units:
 - learn.azure.migrate-linux-postgres.deploy-linux-and-postgresql-infrastructure
 - learn.azure.migrate-linux-postgres.configure-linux-application-workload
 - learn.azure.migrate-linux-postgres.explore-and-run-linux-and-postgresql-workloads
+- learn.azure.migrate-linux-postgres.knowledge-check
 - learn.azure.migrate-linux-postgres.summary
 badge:
   uid: learn.azure.migrate-linux-postgres.badge
