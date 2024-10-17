@@ -1,5 +1,3 @@
-# How does Azure AI Content Safety work?
-
 Azure AI Content Safety works with text and images, and AI-generated content.
 
 Content Safety vision capabilities are powered by Microsoft's Florence foundation model, which has been trained with billions of text-image pairs. Text analysis uses natural language processing techniques, giving a better understanding of nuance and context. Azure AI Content Safety is multilingual and can detect harmful content in both short form and long form. It's currently available in English, German, Spanish, French, Portuguese, Italian, and Chinese.

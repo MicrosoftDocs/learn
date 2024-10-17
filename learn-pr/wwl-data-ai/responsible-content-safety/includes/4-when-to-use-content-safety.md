@@ -1,5 +1,3 @@
-# When to use Azure AI Content Safety
-
 Many online sites encourage users to share their views. People trust other people's feedback about products, services, brands, and more. These comments are often frank, insightful, and seen to be free of marketing bias. But not all content is well intended.
 
 Azure AI Content Safety is an AI service designed to provide a more comprehensive approach to content moderation. Azure AI Content Safety helps organizations to prioritize work for human moderators in a growing number of situations:

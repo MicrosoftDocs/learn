@@ -1,5 +1,3 @@
-# Introduction
-
 The amount of user-generated content being posted online is growing rapidly. We are also increasingly aware of the need to protect everyone from inappropriate or harmful content.
 
 Azure AI Content Safety is an AI service designed to help developers include advanced content safety into their applications and services.
@@ -7,8 +5,6 @@ Azure AI Content Safety is an AI service designed to help developers include adv
 The challenges in maintaining safe and respectful online spaces are growing for developer teams responsible for hosting online discussions. Azure AI Content Safety identifies potentially unsafe content and helps organizations to comply with regulations and meet their own quality standards.
 
 The need for improving online content safety has four main drivers:
-
-![Four drivers to improve online content safety](need-for-content-safety.jpeg"Four drivers to improve online content safety")
 
 1. **Increase in harmful content**: There's been a huge growth in user-generated online content, including harmful and inappropriate content.
 2. **Regulatory pressures**: Government pressure to regulate online content.

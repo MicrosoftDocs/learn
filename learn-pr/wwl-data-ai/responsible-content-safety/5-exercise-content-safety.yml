@@ -4,7 +4,7 @@ title: Exercise - Implementing Azure AI Content Safety
 metadata:
   title: Exercise - Implementing Azure AI Content Safety
   description: Practice generating code to implement a prompt shield solution using Azure AI Content Safety. This exercise includes user prompt and document prompt tests.
-  ms.date: 8/31/2024
+  ms.date: 10/17/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

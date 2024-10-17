@@ -5,7 +5,7 @@ title: What is Content Safety
 metadata:
   title: What is Content Safety
   description: As both user-generated and AI-generated online content grow, there's a need to automatically detect harmful content. Azure AI Content Safety includes features to detect problem content automatically and at scale.
-  ms.date: 8/31/2024
+  ms.date: 10/17/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

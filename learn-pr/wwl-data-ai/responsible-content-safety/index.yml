@@ -3,7 +3,7 @@ uid: learn.wwl.responsible-ai-content-safety
 metadata:
   title: Use AI responsibly with Azure AI Content Safety
   description: As the amount of user-generated online content increases, so does the need to ensure harmful material is moderated effectively. Azure AI Content Safety resource includes features to help organizations moderate and manage both user-generated and AI-generated content.
-  ms.date: 8/31/2024
+  ms.date: 10/17/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
