@@ -13,7 +13,7 @@ Enabling the large dataset format enables fast user interactivity and allows dat
 > Datasets enabled for large models can't be downloaded as a Power BI Desktop (.pbix) file from the Power BI service. Read more about [.pbix download limitations.](/power-bi/create-reports/service-export-to-pbix#limitations-when-downloading-a-pbix-from-a-dataset)
 
 ## Enable large dataset storage format
-
+ 
 To take advantage of the large dataset storage format option, it must be enabled in the Power BI service. Here you can enable large dataset storage format for a single dataset, or for all datasets created in a workspace.
 
 ### Enable large dataset storage format for a single dataset
