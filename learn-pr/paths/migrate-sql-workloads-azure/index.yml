@@ -7,8 +7,6 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
-  ms.service: sql
-  ms.subservice: ssms
 title: Migrate SQL Server workloads to Azure SQL
 prerequisites: |
   - Experience with SQL Server databases.
