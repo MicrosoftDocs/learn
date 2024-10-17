@@ -9,7 +9,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-guided-project
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
 title: Guided project - Route and process messages from your Azure IoT Hub devices
 summary: This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data.
 abstract: |
