@@ -1,7 +1,5 @@
 In order for computer systems to interpret the subject of a text in a similar way humans do, they use **natural language processing** (NLP), an area within AI that deals with understanding written or spoken language, and responding in kind. *Text analysis* describes NLP processes that extract information from unstructured text.   
 
-> [!VIDEO https://play.vidyard.com/XYUdrPj43e5HhMYB6PRFVP?loop=1]
-
 Natural language processing might be used to create:
 
 - A social media feed analyzer that detects sentiment for a product marketing campaign. 
