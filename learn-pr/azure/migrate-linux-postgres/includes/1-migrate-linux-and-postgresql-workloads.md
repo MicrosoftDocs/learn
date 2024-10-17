@@ -1,6 +1,6 @@
 ## Introduction
 
-In this Learning Path you are guided through a series of units that enable you to migrate an existing workload from an on-premises or cloud environment to Azure. It covers the migration of the compute to an Azure Virtual Machine and the data to Azure Database for PostgreSQL. The application is a cloud-agnostic sample application that is a stand-in for any real-world application prepared for migration to the cloud. You explore the value of shifting from a self-hosted environment, such as from a self-managed database to a fully managed database offering and from bare-metal compute to cloud-hosted virtual machines with the benefit of a full suite of security and identity controls provided by Azure, such as Microsoft Entra ID. You explore the benefits of managing resources in the cloud from a cost and performance perspective. You learn how to precisely calculate and manage costs before and after deployment, as well as how to optimize performance from both a compute and a data perspective. 
+In this module you are guided through a series of units that enable you to migrate an existing workload from an on-premises or cloud environment to Azure. It covers the migration of the compute to an Azure Virtual Machine and the data to Azure Database for PostgreSQL. The application is a cloud-agnostic sample application that is a stand-in for any real-world application prepared for migration to the cloud. You explore the value of shifting from a self-hosted environment, such as from a self-managed database to a fully managed database offering and from bare-metal compute to cloud-hosted virtual machines with the benefit of a full suite of security and identity controls provided by Azure, such as Microsoft Entra ID. You explore the benefits of managing resources in the cloud from a cost and performance perspective. You learn how to precisely calculate and manage costs before and after deployment, as well as how to optimize performance from both a compute and a data perspective. 
 
 ## Our workload 
 
@@ -10,7 +10,7 @@ Our data is an open dataset that enables you to explore the power of our Postgre
 
 Though this application could easily be run within a container, the stakeholders chose to do so at this stage. Therefore, building a container, deploying to a container platform, or using container orchestration are out of scope at present, but migration to containers might be a logical future step. 
 
-The application and its associated data are provided for you in the GitHub repository associated with this Learning Path. You learn how to prepare your application and export your data to reach a similar state to this sample application, or use it as a template for a green-field deployment. 
+The application and its associated data are provided for you in the GitHub repository associated with this module. You learn how to prepare your application and export your data to reach a similar state to this sample application, or use it as a template for a green-field deployment. 
 
 ## What is the value of migrating this workload? 
 
@@ -28,7 +28,7 @@ As we consider this migration effort, you might wonder about the benefits of mig
 
 ## Before you begin
 
-This learning path is designed to help you migrate an existing Linux and PostgreSQL workload to Azure.
+This module is designed to help you migrate an existing Linux and PostgreSQL workload to Azure.
 
 However, we won't be focusing on how to export the data from your source database or how to prepare the application for migration. This approach is in part because there are many different types of source databases and applications that could be migrated, and the process for each one is unique.
 
@@ -81,7 +81,7 @@ If you don't have an Azure account, you can create a [free account](https://azur
 In order to run the commands in the following modules you need access to a bash shell. This can be on your local machine such as macOS, Linux, Windows Subsystem for Linux (WSL), Docker, a virtual machine such as Multipass, or in the cloud such as [Azure Cloud Shell](/azure/cloud-shell/overview), [GitHub Codespaces](https://github.com/features/codespaces), or an Azure Virtual Machine.
 
 
-To complete this learning path, you need the Azure CLI. You can install the Azure CLI on your local machine by following the instructions in the [Install the Azure CLI](/cli/azure/install-azure-cli) article. You also need to install [Git](https://git-scm.com/).
+To complete this module, you need the Azure CLI. You can install the Azure CLI on your local machine by following the instructions in the [Install the Azure CLI](/cli/azure/install-azure-cli) article. You also need to install [Git](https://git-scm.com/).
 
 ## Resources
 - [Create a Free Azure account](https://azure.microsoft.com/free/)
