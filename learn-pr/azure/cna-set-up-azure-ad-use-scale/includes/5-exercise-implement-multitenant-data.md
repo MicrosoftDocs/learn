@@ -580,8 +580,6 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Verify that the resulting webpage consists of the Microsoft Entra authentication information for the currently signed-in user (the output might differ).
 
-    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Microsoft Entra authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
-
 ## Results
 
 Congratulations! You've completed the second exercise of this module. In this exercise, you installed Azure Database for PostgreSQL in the single server deployment model, created a database with sample inventory data, integrated the server with Microsoft Entra ID, and implemented a simple Node.js-based application that queries the database by relying on Microsoft Entra authentication.
