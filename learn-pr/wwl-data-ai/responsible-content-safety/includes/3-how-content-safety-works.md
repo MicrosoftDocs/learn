@@ -4,7 +4,7 @@ Content Safety vision capabilities are powered by Microsoft's Florence foundatio
 
 Azure AI Content Safety classifies content into four categories:
 
-![Azure AI Content Safety classifies content into four categories]( ../media/four-perspectives.jpg "Azure AI Content Safety classifications")
+![Diagram of the four categories Azure AI Content Safety classifies content into.](../media/four-perspectives.jpg)
 
 A severity level for each category is used to determine whether content should be blocked, sent to a moderator, or auto approved.
 
@@ -12,25 +12,25 @@ Azure AI Content Safety features include:
 
 ## Safeguarding text content
 
-* **Moderate text** scans text across four categories: violence, hate speech, sexual content, and self-harm. A severity level from 0 to 6 is returned for each category. This level helps to prioritize what needs immediate attention by people, and how urgently. You can also create a blocklist to scan for terms specific to your situation.
+- **Moderate text** scans text across four categories: violence, hate speech, sexual content, and self-harm. A severity level from 0 to 6 is returned for each category. This level helps to prioritize what needs immediate attention by people, and how urgently. You can also create a blocklist to scan for terms specific to your situation.
 
-* **Prompt shields** is a unified API to identify and block jailbreak attacks from inputs to LLMs. It includes both user input and documents. These attacks are prompts to LLMs that attempt to bypass the model's in-built safety features. User prompts are tested to ensure the input to the LLM is safe. Documents are tested to ensure they don't contain unsafe instructions embedded within the text.
+- **Prompt shields** is a unified API to identify and block jailbreak attacks from inputs to LLMs. It includes both user input and documents. These attacks are prompts to LLMs that attempt to bypass the model's in-built safety features. User prompts are tested to ensure the input to the LLM is safe. Documents are tested to ensure they don't contain unsafe instructions embedded within the text.
 
-* **Protected material detection** checks AI-generated text for protected text such as recipes, copyrighted song lyrics, or other original material.
+- **Protected material detection** checks AI-generated text for protected text such as recipes, copyrighted song lyrics, or other original material.
 
-* **Groundedness detection** protects against inaccurate responses in AI-generated text by LLMs. Public LLMs use data available at the time they were trained. However, data can be introduced after the original training of the model or be built on private data. A grounded response is one where the model’s output is based on the source information. An ungrounded response is one where the model's output varies from the source information. Groundedness detection includes a *reasoning* option in the API response. This adds a *reasoning* field that explains any ungroundedness detection. However, reasoning increases processing time and costs.
+- **Groundedness detection** protects against inaccurate responses in AI-generated text by LLMs. Public LLMs use data available at the time they were trained. However, data can be introduced after the original training of the model or be built on private data. A grounded response is one where the model’s output is based on the source information. An ungrounded response is one where the model's output varies from the source information. Groundedness detection includes a *reasoning* option in the API response. This adds a *reasoning* field that explains any ungroundedness detection. However, reasoning increases processing time and costs.
 
 ## Safeguarding image content
 
-* **Moderate images** scans for inappropriate content across four categories: violence, self-harm, sexual, and hate. A severity level is returned: safe, low, or high. You then set a threshold level of low, medium, or high. The combination of the severity and threshold level determines whether the image is allowed or blocked for each category.  
+- **Moderate images** scans for inappropriate content across four categories: violence, self-harm, sexual, and hate. A severity level is returned: safe, low, or high. You then set a threshold level of low, medium, or high. The combination of the severity and threshold level determines whether the image is allowed or blocked for each category.  
 
-* **Moderate multimodal content** scans both images and text, including text extracted from an image using optical character recognition (OCR). Content is analyzed across four categories: violence, hate speech, sexual content, and self-harm.  
+- **Moderate multimodal content** scans both images and text, including text extracted from an image using optical character recognition (OCR). Content is analyzed across four categories: violence, hate speech, sexual content, and self-harm.  
 
 ## Custom safety solutions
 
-* **Custom categories** enables you to create your own categories by providing positive and negative examples, and training the model. Content can then be scanned according to your own category definitions.
+- **Custom categories** enables you to create your own categories by providing positive and negative examples, and training the model. Content can then be scanned according to your own category definitions.
 
-* **Safety system message** helps you to write effective prompts to guide an AI system's behavior. 
+- **Safety system message** helps you to write effective prompts to guide an AI system's behavior. 
 
 ## Limitations
 
@@ -42,9 +42,9 @@ Azure AI Content Safety should be tested and evaluated on real data before being
 
 When evaluating how accurately Azure AI Content Safety is for your situation, compare its performance against four criteria:
 
-1. **True positive** - correct identification of harmful content.
-2. **False positive** - incorrect identification of harmful content.
-3. **True negative** - correct identification of harmless content.
-4. **False negative** - harmful content isn't identified.
+- **True positive** - correct identification of harmful content.
+- **False positive** - incorrect identification of harmful content.
+- **True negative** - correct identification of harmless content.
+- **False negative** - harmful content isn't identified.
 
 Azure AI Content Safety works best to support human moderators who can resolve cases of incorrect identification. When people add content to a site, they don't expect posts to be removed without reason. Communicating with users about why content is removed or flagged as inappropriate helps everyone to understand what is permissible and what isn't.
