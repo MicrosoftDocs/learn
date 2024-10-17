@@ -1,31 +1,40 @@
-Imagine you're a Java developer working for a company that creates Quarkus applications. The applications currently run on on-premises servers. Your applications also integrate with a relational database (in this case, PostgreSQL).
+As a Java developer working for a company seeking to expand its Azure cloud services, you're tasked with creating a new web-based ToDo list application. The application's data will be stored in a relational Azure database.
 
-You want to build a to-do list application that uses a PostgreSQL database. You've decided to build this Quarkus application from scratch.
+Your company has a history of successfully deploying business services on Red Hat OpenShift, leveraging its scalability, elasticity, resilience, and rapid time-to-market benefits.
 
-In this module, you first scaffold a Quarkus web application by using the Quarkus Maven plugin. The Quarkus Maven plugin generates a Quarkus project that includes just what you need to start quickly. This scaffold gives you a base to work from.
+To align with this established architecture, your team has chosen [Quarkus, a Kubernetes-native Java framework](https://quarkus.io/), for developing the ToDo service since Quarkus focuses on developer productivity, containerization, and seamless OpenShift integration makes it an ideal fit for this project.
 
-You then code a to-do application that stores tasks in a relational database. These tasks are stored in a PostgreSQL database, so you need create an Azure Database for PostgreSQL.
+This module guides you through creating a new Java project using the Quarkus CLI. The generated project includes sample code, a Maven wrapper, Dockerfile, and unit tests.
 
-Next you build the application and also configure it to connect to the PostgreSQL database. Before you deploy it to Azure, you need to confirm the application can run locally. You then deploy through the Azure CLI (Command Line Interface) and host on Azure Container Apps.
+Next, you'll develop the business logic to store ToDo items in a relational database, such as PostgreSQL. This will involve implementing methods to retrieve specific ToDo items (entities) from the database.
 
-By the end of this module, you'll be able to incorporate Quarkus applications into Azure Container Apps and integrate with a relational database.
+Once you've thoroughly tested your ToDo list application locally, we'll move on to the deployment phase on the [Azure Red Hat OpenShift (ARO)](hhttps://azure.microsoft.com/en-us/products/openshift) platform.
 
-You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true) before you begin.
-> [!IMPORTANT]
-> To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
+As an optional challenge, we can explore the possibility of transforming your ToDo application into a serverless function. Serverless functions offer several advantages, including cost-efficiency, reliability, flexibility, and enhanced security. If you're interested in this option, we'll guide you through the process of deploying your application on [Red Hat OpenShift Serverless](https://www.redhat.com/en/technologies/cloud-computing/openshift/serverless).
+
+By the end of this module, you'll not only have a well-functioning ToDo application deployed on ARO with [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/products/postgresql), but you'll also gain the knowledge and skills to potentially evolve it into a serverless function on Red Hat OpenShift Serverless.
+
+This module requires you to deploy resources to your Azure subscription. If you haven't already, create a free Azure account using the following link: [Free Azure Account](https://azure.microsoft.com/free/java/?azure-portal=true).
+
+> ⚠️ **IMPORTANT**:
+> To avoid incurring unnecessary charges in your Azure subscription, remember to deprovision (clean up) the resources you create once you've finished working with them in this module.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Develop a Quarkus application.
-- Connect your application to a PostgreSQL database.
-- Deploy the web application to Azure Container Apps.
+- Create a new ToDo application using Quarkus.
+- Package and Run Locally to verify the functionalities.
+- Deploy the Todo application to Azure Red Hat OpenShift with Azure Database for PostgreSQL.
+- Evolve the ToDo application to OpenShift Serverless.
 
 ## Prerequisites
 
-As a Java developer, you're already familiar with Java applications. Quarkus is explained as you follow along. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
+As a Java developer, you're already familiar with the fundamentals of Java applications. We'll guide you through Quarkus as we progress. For the exercises in this module, you'll need a personal Azure account. Ensure you have the following resources ready:
   
 - An Azure subscription
-- Local installations of Java JDK (11 or later), Maven 3.8, and the Azure CLI (2.48 or later)
-- Docker and Docker Desktop
+- JDK 17+ installed with JAVA_HOME configured appropriately
+- Apache Maven 3.9.8
+- Azure CLI 2.64.0+
+- Podman or Docker
+- Quarkus CLI
