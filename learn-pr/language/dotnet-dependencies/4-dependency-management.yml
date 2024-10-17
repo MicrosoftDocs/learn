@@ -4,7 +4,7 @@ title: Manage dependency updates in your .NET project
 metadata:
   title: Manage dependency updates in your .NET project
   description: This unit explains how to update the dependencies in your .NET app and how to do so in a predictable way.
-  ms.date: 10/12/2023
+  ms.date: 10/16/2024
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
