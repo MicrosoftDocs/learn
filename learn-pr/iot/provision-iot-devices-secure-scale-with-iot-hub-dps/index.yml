@@ -9,7 +9,8 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-guided-project
-  ms.service: iot-dps
+  ms.service: azure-iot-hub
+  ms.subservice: azure-iot-hub-dps
 title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
 summary: Create code that authenticates with Azure IoT Hub Device Provisioning Service (DPS) using X.509 certificates, generates telemetry and accesses device twin properties. Use X.509 certificates to implement group enrollments, and deprovision enrollments groups and individual devices from an enrollment group.
 

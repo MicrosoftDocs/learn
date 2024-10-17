@@ -1,4 +1,4 @@
-As we've learned, Docker has several features for us to use. Here, we'll look at the benefits that Docker provides to our development and operations teams. We'll also look at a few scenarios where Docker may not be the best choice.
+As we've learned, Docker has several features for us to use. Here, we'll look at the benefits that Docker provides to our development and operations teams. We'll also look at a few scenarios where Docker might not be the best choice.
 
 These aspects will help you decide if Docker is a good fit for your containerization strategy.
 
@@ -25,7 +25,7 @@ Compared to a VM, we can see that a VM requires an OS installed to provide kerne
 
 ### Container isolation
 
-Docker containers provide security features to run multiple containers simultaneously on the same host without affecting each other. As we saw, we can configure both data storage and network configuration to isolate our containers or share data and connectivity between specific containers.
+Docker containers provide security features to run multiple containers simultaneously on the same host without affecting each other. As we learned, we can configure both data storage and network configuration to isolate our containers or share data and connectivity between specific containers.
 
 Let's compare this feature to using VMs.
 
@@ -41,7 +41,7 @@ Because containers are lightweight, they don't suffer from slow startup or shutd
 
 ### Application delivery
 
-With Docker, the container becomes the unit we use to distribute applications. This concept ensures that we have a standardized container format both our developer and operation teams use. Our developers can focus on developing software, and the operations team can focus on the deploying and managing software.
+With Docker, the container becomes the unit we use to distribute applications. This concept ensures that we have a standardized container format both our developer and operations teams use. Our developers can focus on developing software, and the operations team can focus on the deploying and managing software.
 
 We can use the container in every step of our deployment system once our development team releases a build of our application. Containers are ideal candidates for continuous integration, and speed up the time from build to production.
 
@@ -57,7 +57,7 @@ Docker containers are the default container architecture the Azure containerizat
 
 For instance, you can deploy Docker containers to Azure Container Instances, Azure App Service, and Azure Kubernetes Services. Each of these options provides you with different features and capabilities.
 
-For example, Azure container instances allow you to focus on designing and building your applications without the overhead of managing infrastructure. And when you have many containers to orchestrate, Azure Kubernetes service makes it easy to deploy and manage large-scale container deployments.
+For example, Azure container instances allow you to focus on designing and building your applications without the overhead of managing infrastructure. When you have many containers to orchestrate, Azure Kubernetes service makes it easy to deploy and manage large-scale container deployments.
 
 ## When not to use Docker containers
 
@@ -69,12 +69,12 @@ Containers provide a level of isolation. However, containers share a single host
 
 Windows hosts provide an additional isolation model on which a purpose-built VM can be used to isolate the container at the hypervisor level. This mode is called Hyper-V isolation mode, and adds another layer of security between containers and container host.
 
-We also need to take into account aspects such as storage and networks to make sure that we consider all security aspects. For example, all containers will use the bridge network by default and can access each other via IP address.
+We also need to take into account aspects such as storage and networks to make sure that we consider all security aspects. For example, all containers use the bridge network by default and can access each other via IP address.
 
-Not all applications will benefit from containerization. In such instances, it might make more sense to use a VM.
+Not all applications benefit from containerization. In such instances, it might make more sense to use a VM.
 
 ### Service monitoring
 
 Managing the applications and containers is more complicated than traditional VM deployments. There are logging features that tell us about the state of the running containers, but more detailed information about services inside the container is harder to monitor.
 
-For example, Docker provides us with the `docker stats` command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data sent and received, and process IDs assigned. This information is useful as an immediate data stream; however, no aggregation is done because the data isn't stored. We'd have to install third-party software for meaningful data capture over a period of time.
+For example, Docker provides us with the `docker stats` command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data sent and received, and process IDs assigned. This information is useful as an immediate data stream; however, no aggregation is done, because the data isn't stored. We'd have to install third-party software for meaningful data capture over a period of time.
