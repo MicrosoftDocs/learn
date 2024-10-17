@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
   title: Fundamentals of Text Analysis with the Language Service
   description: "Explore text analysis with Azure AI Language service."
-  ms.date: 10/16/2024
+  ms.date: 10/17/2024
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
