@@ -4,7 +4,7 @@ title: Collect data from your workloads with the Log Analytics agent
 metadata:
   title: Collect data from your workloads with the Log Analytics agent
   description: "Collect data from your workloads with the Log Analytics agent"
-  ms.date: 05/31/2024
+  ms.date: 10/17/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-set-security-event-option-workspace-level.md)]
+  [!include[](includes/4-set-security-event-option-workspace-level.md)]

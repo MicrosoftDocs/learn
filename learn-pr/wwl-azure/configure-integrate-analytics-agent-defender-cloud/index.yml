@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud
 metadata:
-  title: Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
   description: "Discover how to set up and integrate a Log Analytics agent with a workspace in Defender for Cloud using the Azure portal, enhancing security data analysis capabilities."
-  ms.date: 05/31/2024
+  ms.date: 10/17/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-standard-task-based
@@ -11,8 +11,8 @@ metadata:
   - N/A
   ms.service: azure
   ai-usage: human-only
-title: Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
-summary: This module will guide you to configure and integrate a Log Analytics agent with a workspace in Defender for Cloud via the Azure portal, boosting security analysis.
+title: Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
+summary: This module will guide you on how to deploy and manage Azure Monitor Agent, configure Data Collection Rules, and integrate it with Microsoft Defender for Cloud for enhanced security.
 abstract: |
   By the end of this training module, participants will:
 
@@ -42,8 +42,11 @@ products:
 - defender-for-cloud
 units:
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.introduction
+- learn.wwl.configure-integrate-analytics-agent-defender-cloud.deploy-azure-monitor-agent
+- learn.wwl.configure-integrate-analytics-agent-defender-cloud.collect-data-with-azure-monitor-agent
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.set-security-event-option-workspace-level
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-log-analytics-agent-workspace
+- learn.wwl.configure-integrate-analytics-agent-defender-cloud.create-edit-data-collection-rules-and-associations-in-azure-monitor
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-integration-with-the-log-analytics-agent
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.knowledge-check
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud.summary

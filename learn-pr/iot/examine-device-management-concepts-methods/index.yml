@@ -9,7 +9,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
 title: Examine device management concepts and methods for Azure IoT Hub
 summary: Evaluate the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub.
 abstract: |

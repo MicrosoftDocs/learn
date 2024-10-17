@@ -8,7 +8,7 @@ metadata:
   ms.author: dobett
   manager: lizross
   ms.topic: module-intro-to-product
-  ms.service: iot
+  ms.service: azure-iot
   ms.collection: ce-skilling-ai-copilot
 title: Introduction to Azure IoT
 summary: "Characterize the types of business processes that Azure IoT can add value to. Survey Azure IoT services such as IoT Hub and IoT Central that help you build IoT solutions."

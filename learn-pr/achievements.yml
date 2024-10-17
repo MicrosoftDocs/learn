@@ -4002,3 +4002,8 @@ achievements:
   title: Use intelligent planners
   summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.develop-test-deploy-azure-functions-core-tools.badge
+  type: badge
+  title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
+  summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
+  iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
