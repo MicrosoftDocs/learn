@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: module
   ms.custom: team=cloud-advocates
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
   ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Introduction to Azure IoT Hub"
 summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."

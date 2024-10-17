@@ -16,7 +16,7 @@ Let's review some characteristics of file share snapshots.
 
 - You can retrieve a share snapshot for an individual file. This level of support helps with restoring individual files rather than having to restore to the entire file share.
 
-- If you delete a file share that has share snapshots, all of its snapshots will be deleted along with the share.
+- Share snapshots provide only file-level protection. They don't prevent fat-finger deletions on a file share or storage account. If you delete a file share that has share snapshots, all of its snapshots will be deleted along with the share.
 
 ### Things to consider when using file share snapshots
 

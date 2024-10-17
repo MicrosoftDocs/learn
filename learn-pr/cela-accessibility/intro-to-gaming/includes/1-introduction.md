@@ -5,7 +5,7 @@ Consider the following scenario: You're a member of a new development team that 
 Your team wants to understand the following concepts:
 
 - How can they approach game play and development through accessibility?
-- What are the unintentional barriers to access? How do common game elements introduce these barriers to players?
+- How do common game elements introduce access barriers to players unintentionally? What are the unintentional barriers to access?
 - How do game play experiences differ among players with different and similar disabilities?
 
  In this module, you're introduced to foundational concepts about game accessibility. Specifically, this module focuses on vision, audio, cognition, and input-related aspects of game accessibility to build your foundational knowledge.
