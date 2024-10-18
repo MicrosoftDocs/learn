@@ -34,30 +34,22 @@ Add a user by entering the user's name and selecting the workspace role to assig
 ![Add people](../media/add-people.png)
 
 ## Configure item permissions
-Suppose that after a few months of having **Contributor** access on the workspace, the data engineer now only needs access to view a single lakehouse and read data in it. 
+Item permissions control access to individual Fabric items within a workspace. Item permission can be used to give a user access to one or more items within a workspace without adding the user to a workspace role or can be used in conjunction with workspace roles.
 
-Item permissions control access to individual Fabric items within a workspace. They  give a user access to one or more items within a workspace without adding the user to a workspace role.
+Suppose that after a few months of having **Contributor** access on a workspace, a data engineer no longer needs to create Fabric items and now only needs to view a single lakehouse and read data in it. 
 
 Since the engineer no longer needs to view all items in the workspace, the **Contributor** workspace role can be removed and item permissions on the lakehouse can be configured so the engineer will only be able to see the lakehouse metadata and data and nothing else in the workspace. This item access configuration helps you adhere to the principle of least privilege, where the engineer only has access to what's needed to perform their job duties.
 
-Item permissions can be configured by selecting on the ellipse (...) next to a Fabric item in a workspace and then selecting **Manage permissions** and then adding the user. 
+An item can be shared and item permissions can be configured by selecting on the ellipsis (...) next to a Fabric item in a workspace and then selecting **Manage permissions**.
 
  ![Configure item permissions](../media/manage-item-permissions.png)
 
-In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't click any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata and any reports associated with the lakehouse. The goal in this example was to grant the engineer the ability to read data and not just metadata, so **Read all SQL endpoint data** and **Read all Apache Spark** can be selected.
+In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't click any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata and any reports associated with the lakehouse. The user will not have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
 
  ![Grant people lakehouse read all access](../media/grant-people-access-lakehouse.png)
 
-As you can see from this example, there are nuances associated with granting access to Fabric items. To learn more about the differences in setting permissions for each Fabric item, see:
-
-* [Semantic model](/power-bi/connect-data/service-datasets-permissions)
-
-* [Warehouse](../data-warehouse/share-warehouse-manage-permissions.md)
-
-* [Data Factory](../data-factory/data-factory-overview.md)
-
-* [Lakehouse](../data-engineering/lakehouse-sharing.md)
-
-* [Data science](../data-science/models-experiments-rbac.md)
-
-* [Real-Time Intelligence](/azure/data-explorer/kusto/management/security-roles)
+> [!Tip]
+> Each Fabric data item has its own security model. To learn more about permissions that can be granted when a lakehouse or other Fabric data item is shared see: 
+> - [Warehouse](../fabric/data-warehouse/share-warehouse-manage-permissions)
+> - [Lakehouse](../fabric/data-engineering/lakehouse-sharing)
+> - [Semantic model](/power-bi/connect-data/service-datasets-permissions)
