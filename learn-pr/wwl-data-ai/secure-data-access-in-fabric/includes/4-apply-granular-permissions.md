@@ -55,7 +55,7 @@ Granular permissions can be applied to warehouses using the SQL analytics endpoi
  ![Warehouse granular permissions](../media/warehouse-granular-permissions.png)
 
 ### Configure Semantic model permissions
-A user's role in a workspace implicitly grants them permission on the semantic models in a workspace. Semantic models allow for security to be defined using DAX. More granular permission can be applied using row-level security (RLS). To learn more about the managing RLS or permissions on the semantic model see:
+A user's role in a workspace implicitly grants them permission on the semantic models in a workspace. Semantic models allow for security to be defined using DAX.  More granular permission can be applied using row-level security (RLS). To learn more about the managing RLS or permissions on the semantic model see:
 
 [Semantic model permissions](../power-bi/connect-data/service-datasets-permissions)
 [Row-level security (RLS) with Power BI](../fabric/security/service-admin-row-level-security)
