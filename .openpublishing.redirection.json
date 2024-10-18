@@ -33374,6 +33374,31 @@
       "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/2-set-security-event-option-workspace-level.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/4-set-security-event-option-workspace-level",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/3-configure-log-analytics-agent-workspace.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-configure-log-analytics-agent-workspace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
+      "redirect_document_id": false
     }
   ]
 }
