@@ -11,37 +11,36 @@ metadata:
 durationInMinutes: 8
 quiz:
   questions:
-  - content: What is the primary advantage of Dynamic Data Masking (DDM)?
+  - content: What is order of evaluation of access in Fabric?
     choices:
-    - content: It limits data exposure by obscuring sensitive information in real time.
-      isCorrect: true
-      explanation: Correct. DDM enhances security by applying dynamic masking to sensitive data in real time, thus preventing exposure to unauthorized users.
+    - content:  Data security, Fabric access, Microsoft Entra ID authentication
+      isCorrect: false
+      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
     - content: It changes the actual data in the database.
-      isCorrect: false
-      explanation: Incorrect. DDM doesn't change the actual data in the database. It only masks it in query results.
-    - content: It requires complex coding to implement.
-      isCorrect: false
-      explanation: Incorrect. DDM is straightforward to implement and doesn’t require complex coding.
-  - content: What is the purpose of a security predicate function in Row-Level Security (RLS)?
-    choices:
-    - content: It determines whether a row is accessible to a user based on certain conditions.
       isCorrect: true
-      explanation: Correct. The security predicate function in RLS is defined to return true or false based on certain conditions, typically involving the values of one or more columns in the table.
-    - content: It enables type conversions in predicate functions.
+      explanation: Correct. Microsoft Entra ID authentication, Fabric access, Data security
+    - content: The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
       isCorrect: false
-      explanation: Incorrect. The security predicate function doesn't enable type conversions. It returns true or false based on certain conditions, typically involving the values of one or more columns in the table.
-    - content: It allows users to run ad hoc queries.
-      isCorrect: false
-      explanation: Incorrect. The security predicate function doesn't allow users to run ad hoc queries. It determines whether a row is accessible to a user based on certain conditions.
-  - content: What happens when a user is granted a permission and then denied the same permission in a warehouse?
+      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Fabric access.
+  - content: What workspace role should be assigned to a data engineer who needs to create Fabric items and read all data in an existing lakehouse?
     choices:
-    - content: The GRANT statement supersedes the DENY, and the user will have access to the specific object.
+    - content: Viewer
       isCorrect: false
-      explanation: Incorrect. If a user is granted a permission and then denied the same permission, the DENY always supersedes the GRANT.
-    - content: The DENY always supersedes the GRANT, and the user is denied access to the specific object.
+      explanation: Incorrect. The Viewer role only allows viewing of content and data, but doesn't allow modification or creation of Fabric items.
+    - content: Contributor
       isCorrect: true
-      explanation: Correct. If a user is granted a permission and then denied the same permission, the DENY always supersedes the GRANT.
-    - content: The user has both permissions, and it causes a conflict.
+      explanation: Correct. The Contributor role allows the user to view and modify all content and data in the workspace, including creating Fabric items and reading data in the lakehouse.
+    - content: Admin
       isCorrect: false
-      explanation: Incorrect. There isn't a conflict. The DENY statement always supersedes the GRANT statement.
-
+      explanation: Incorrect. The Admin role has more permissions than needed, including managing all content, data, and permissions.
+    - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
+    choices:
+    - content: OneLake data access roles
+      isCorrect: true
+      explanation: Correct. OneLake data access roles allow you to create custom roles within a lakehouse and grant read access to specific folders.
+    - content: Data Manipulation Language (DML)
+      isCorrect: false
+      explanation: Incorrect. Data Control language (DCL) is used to provide granular T-SQL permissions. DML is used to manipulate data.
+    - content: Column-level security in the semantic model
+      isCorrect: false
+      explanation: Incorrect. There isn't column-level security in the semantic model.

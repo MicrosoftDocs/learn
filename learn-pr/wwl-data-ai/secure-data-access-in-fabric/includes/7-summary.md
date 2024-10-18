@@ -8,4 +8,4 @@ For more reading, you can refer to the following URLs:
 - [Microsoft Fabric permission model](/fabric/security/permission-model?azure-portal=true)
 - [Build common data architectures with OneLake in Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/building-common-data-architectures-with-onelake-in-microsoft-fabric?azure-portal=true)
 - [How to secure data for common Fabric data architectures](/fabric/onelake/security/how-to-common-data-architectures)
-- [End-to-end security scenario](https://learn.microsoft.com/en-us/fabric/security/security-scenario)
+- [End-to-end security scenario](/fabric/security/security-scenario)
