@@ -1,6 +1,4 @@
-
-## Configure workspace roles and item permissions
-Workspaces are environments where users can collaborate to create groups of items.  Items are the resources you can work with in Fabric such as lakehouses, warehouses and reports. Workspace roles are pre-configured sets of permissions that let you manage what users can do and access in a Fabric workspace.
+Workspaces are environments where users can collaborate to create groups of items. Items are the resources you can work with in Fabric such as lakehouses, warehouses, and reports. Workspace roles are preconfigured sets of permissions that let you manage what users can do and access in a Fabric workspace.
 
 Item permissions control access to individual Fabric items within a workspace. Item permissions let you either adjust the permissions set by a workspace role or give a user access to one or more items within a workspace without adding the user to a workspace role.
 
@@ -21,7 +19,7 @@ Workspace roles control what users can do and access within a Fabric workspace. 
 > [!Tip]
 > For a full list of the permissions associated with workspace roles, see: [Roles in workspaces](../get-started/roles-workspaces.md)
 
-To meet the access requirements for the new data engineer, you can assign them the workspace **Contributor**. This will give them access to modify content in the workspace, including creating Fabric items like lakehouses. The contributor role would also allow them to read data in the existing lakehouse.
+To meet the access requirements for the new data engineer, you can assign them the workspace **Contributor**. This gives them access to modify content in the workspace, including creating Fabric items like lakehouses. The contributor role would also allow them to read data in the existing lakehouse.
 
 ### Assign workspace roles
 
@@ -34,7 +32,7 @@ Add a user by entering the user's name and selecting the workspace role to assig
 ![Add people](../media/add-people.png)
 
 ## Configure item permissions
-Item permissions control access to individual Fabric items within a workspace. Item permission can be used to give a user access to one or more items within a workspace without adding the user to a workspace role or can be used in conjunction with workspace roles.
+Item permissions control access to individual Fabric items within a workspace. Item permission can be used to give a user access to one or more items within a workspace without adding the user to a workspace role or can be used with workspace roles.
 
 Suppose that after a few months of having **Contributor** access on a workspace, a data engineer no longer needs to create Fabric items and now only needs to view a single lakehouse and read data in it. 
 
@@ -44,7 +42,7 @@ An item can be shared and item permissions can be configured by selecting on the
 
  ![Configure item permissions](../media/manage-item-permissions.png)
 
-In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't click any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata and any reports associated with the lakehouse. The user will not have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
+In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't select any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata and any reports associated with the lakehouse. The user won't have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
 
  ![Grant people lakehouse read all access](../media/grant-people-access-lakehouse.png)
 

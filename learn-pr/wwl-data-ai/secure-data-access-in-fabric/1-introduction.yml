@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.introduction
+uid: learn-wwl.secure-data-access-in-fabric.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 5/23/2024
+  ms.date: 10/18/2024
   author: wwlpublish
-  ms.author: jupadrao
+  ms.author: theresai
   ms.topic: unit
 durationInMinutes: 4
 content: |
