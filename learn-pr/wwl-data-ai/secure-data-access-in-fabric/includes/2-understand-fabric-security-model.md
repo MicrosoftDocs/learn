@@ -9,7 +9,7 @@ The third level, data security, has several building blocks that be configured i
 
 - Workspace roles
 - Item permissions
-- Compute permissions
+- Compute or granular permissions
 - OneLake data access controls (preview)
 
 It's helpful to envision these building blocks in a hierarchy to understand how access controls can be applied individually or together.
@@ -20,6 +20,6 @@ A *workspace* in Fabric enables you to distribute ownership and access policies 
 
 Within each data item, *granular engine permissions* such as Read, ReadData, or ReadAll can be applied. 
 
-Compute permissions can be applied within a specific compute engine in Fabric, like the SQL Endpoint or semantic model.
+Compute or granular permissions can be applied within a specific compute engine in Fabric, like the SQL Endpoint or semantic model.
 
 Fabric data items store their data in OneLake. Access to data in the lakehouse can be restricted to specific files or folders using the role-based-access control (RBAC) feature called *OneLake data access controls (preview)*.
