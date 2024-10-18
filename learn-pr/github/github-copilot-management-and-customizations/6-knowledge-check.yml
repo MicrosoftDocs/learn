@@ -1,5 +1,5 @@
 ###YamlMime:ModuleUnit
-uid: learn.github-copilot-management-and-customizations.knowledge-check
+uid: learn.github.github-copilot-management-and-customizations.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
@@ -7,7 +7,7 @@ metadata:
   description: Knowledge check - Management and Customization Considerations with GitHub Copilot module
   ms.date: 10/18/2024
   author: a-a-ron
-  ms.author: astewr
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |

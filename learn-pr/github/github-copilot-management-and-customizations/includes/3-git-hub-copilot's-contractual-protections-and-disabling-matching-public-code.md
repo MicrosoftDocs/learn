@@ -1,4 +1,4 @@
-:::image type="content" source="../media/git-hub-copilot's-contractual-protections.png" alt-text="A futuristic, neon-coloured depiction of GitHub Copilot represented as a stylized robotic helmet alongside abstract graphics of orbs and atomic-like structures, with the text "GitHub Copilot's contractual protections" in bold white at the bottom.":::
+:::image type="content" source="../media/git-hub-copilot's-contractual-protections.png" alt-text="A futuristic, neon-coloured depiction of GitHub Copilot represented as a stylized robotic helmet alongside abstract graphics of orbs and atomic-like structures, with the text GitHub Copilot's contractual protections in bold white at the bottom.":::
 
 To help ensure your organization remains compliant with legal requirements, we’ll review the following:
 
