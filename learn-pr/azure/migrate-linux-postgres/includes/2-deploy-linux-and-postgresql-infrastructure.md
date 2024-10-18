@@ -151,7 +151,7 @@ This Managed identity is currently the only administrator for the server. You ca
 
 In the upcoming section you use the identity from the Virtual Machine to administer the server via the CLI. You also use it to provide access to the server for your application.
 
-In a production scenario, you would likely use a combination of Managed Identities, Entra ID, and fine-grained Role-Based Access Control (RBAC) to enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege.
+In a production scenario, you would likely use a combination of Managed Identities, Microsoft Entra ID, and fine-grained Role-Based Access Control (RBAC) to enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege.
 
 Read more about these scenarios via [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
@@ -163,7 +163,7 @@ If we're administering the server from our local machine, rather than the Virtua
 
 We can optionally create a firewall rule for our current IP address by selecting **Add current client IP address (xxx.xxx.xxx.xxx)**, and selecting **Save**. 
 
-This rule would let us to access the test/dev server using tools on our local machine. 
+This rule would let us access the test/dev server using tools on our local machine. 
 
 However, as we're using our Virtual Machine to access the database, we won't at this time. 
 
@@ -203,7 +203,7 @@ We use the Azure portal instead of Bicep to create the private endpoint for demo
 
 Return to the `240900-linux-postgres` Resource Group and select `vm-1`.
 
-On the left-hand, side select **Security** and then **Identity**.
+On the left-hand side, select **Security** and then **Identity**.
 
 Here you can see the **System assigned managed identity** that is attached to the Virtual Machine.
 
