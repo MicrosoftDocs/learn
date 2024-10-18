@@ -28,8 +28,6 @@ You discovered how role-based access control and conditional access help to supp
 
 - Support [secure access to your apps for external users with Azure AD B2C](/training/modules/enable-external-access-with-b2c/).
 
-- Authenticate apps to Azure services with [service principals and managed identities for Azure resources](/training/modules/authenticate-apps-with-managed-identities/).
-
 ## Learn more with optional hands-on exercises
 
 - Learn how to [add and delete users in Microsoft Entra ID](/training/modules/create-users-and-groups-in-azure-active-directory/).
