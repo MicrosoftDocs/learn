@@ -45,7 +45,7 @@ In the sample scenario, you want to work within Visual Studio Code, both as a de
 
     **Troubleshooting**: If you aren't able to find the Concierge Subscription, you may have to change tenants and sign in again. Use the following tenant ID to complete that:
 
-    * Tenant ID: 604c1504-c6a3-4080-81aa-b33091104187
+    * Tenant ID: aaaabbbb-0000-cccc-1111-dddd2222eeee
     * Name: Concierge Subscription
 
 1. Select **Concierge Subscription** and then **OK**.

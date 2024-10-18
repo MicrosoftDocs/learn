@@ -22,7 +22,7 @@ Resource and property changes are indicated with these symbols:
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
+Scope: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f
 
   ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
     - tags.Owner:                    "Team A"

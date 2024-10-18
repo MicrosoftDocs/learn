@@ -144,7 +144,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     [2023-10-19T13:33:09Z] Loading azure.json file from /etc/kubernetes/azure.json
     [2023-10-19T13:33:09Z] Checking managed identity...
     [2023-10-19T13:33:09Z] Cluster cloud name: AzurePublicCloud
-    [2023-10-19T13:33:09Z] Kubelet managed identity client ID: 71588cd0-9229-4914-9c8e-1dc229d775c8
+    [2023-10-19T13:33:09Z] Kubelet managed identity client ID: 00001111-aaaa-2222-bbbb-3333cccc4444
     [2023-10-19T13:33:09Z] Validating managed identity existance: SUCCEEDED
     [2023-10-19T13:33:09Z] Validating image pull permission: SUCCEEDED
     [2023-10-19T13:33:09Z] 
@@ -275,14 +275,14 @@ GitHub Actions can publish container images to an Azure Container Registry. The 
    A variation of the following output appears:
 
    ```console
-   Creating 'Contributor' role assignment under scope '/subscriptions/00000000-0000-0000-0000-000000000000'
+   Creating 'Contributor' role assignment under scope '/subscriptions/ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0'
    
    The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
     {
-     "clientId": "00000000-0000-0000-0000-000000000000",
+     "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
      "clientSecret": "abc1A~abc123ABC123abc123ABC123abc123ABC1",
-     "subscriptionId": "00000000-0000-0000-0000-000000000000",
-     "tenantId": "00000000-0000-0000-0000-000000000000",
+     "subscriptionId": "ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0",
+     "tenantId": "ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0",
      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
      "resourceManagerEndpointUrl": "https://management.azure.com/",
      "activeDirectoryGraphResourceId": "https://graph.windows.net/",

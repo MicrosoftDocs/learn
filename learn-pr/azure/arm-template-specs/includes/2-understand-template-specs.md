@@ -46,13 +46,13 @@ When you work with template specs, you create two resources:
 You work with template specs and versions by using their resource IDs. Here's an example resource ID for a template spec:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS
 ```
 
 A version is a child resource of the template spec. It has a resource ID like this example:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS/versions/1.0
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS/versions/1.0
 ```
 
 When you deploy a template spec, you need to specify the resource ID of the template spec version.

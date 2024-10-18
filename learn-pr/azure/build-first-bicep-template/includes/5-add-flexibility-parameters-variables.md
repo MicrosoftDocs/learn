@@ -121,10 +121,10 @@ param storageAccountName string = uniqueString(resourceGroup().id)
 This parameter's default value uses the `resourceGroup()` function again, like you did when you set the resource location. This time, though, you're getting the ID for a resource group. Here's what a resource group ID looks like:
 
 ```Output
-/subscriptions/3e57e557-826f-460b-8f1c-4ce38fd53b32/resourceGroups/MyResourceGroup
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/MyResourceGroup
 ```
 
-The resource group ID includes the Azure subscription ID (`3e57e557-826f-460b-8f1c-4ce38fd53b32`) and the resource group name (`MyResourceGroup`). The resource group ID is often a good candidate for a seed value for resource names, because:
+The resource group ID includes the Azure subscription ID (`aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`) and the resource group name (`MyResourceGroup`). The resource group ID is often a good candidate for a seed value for resource names, because:
 
 - Every time you deploy the same resources, they'll go into the same resource group. The `uniqueString()` function will return the same value every time.
 - If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` value will be different, because the resource group names will be different. The `uniqueString()` function will give different values for each set of resources.

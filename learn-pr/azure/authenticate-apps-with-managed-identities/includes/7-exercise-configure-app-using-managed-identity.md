@@ -137,8 +137,8 @@ In this exercise, you'll edit your app to use the new key vault. Then, you'll gr
 
     ```JSON
     {
-        "principalId": "aba6da53-9180-47fc-8fc4-4b35f154e845",
-        "tenantId": "a95baa51-dcb1-4b9a-8312-8774a8afddbe",
+        "principalId": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+        "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
         "type": "SystemAssigned",
         "userAssignedIdentities": null
     }
