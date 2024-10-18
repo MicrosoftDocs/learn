@@ -3,9 +3,9 @@ uid: learn.intro-to-microsoft-purview.how-microsoft-purview-works
 title: How Microsoft Purview works
 metadata:
   unitType: learning-content
-  title: how-azure-purview-works
+  title: How Microsoft Purview works
   description: "Learn how Microsoft Purview works, at a high level."
-  ms.date: 09/30/2023 
+  ms.date: 10/08/2024
   author: whhender 
   ms.author: whhender
   ms.topic: unit
