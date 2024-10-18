@@ -33474,6 +33474,11 @@
       "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
       "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-frameowrk-plan/4-exercise-digital-estate-assessment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan",
+      "redirect_document_id": false
     }
   ]
 }
