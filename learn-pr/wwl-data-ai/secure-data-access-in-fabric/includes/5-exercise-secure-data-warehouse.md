@@ -7,4 +7,4 @@ In this exercise, you’ll learn how to secure data access in Fabric using the c
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2277744)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2293021&azure-portal=true)

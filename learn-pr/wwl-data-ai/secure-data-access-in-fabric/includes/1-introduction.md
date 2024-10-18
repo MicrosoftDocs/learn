@@ -11,4 +11,4 @@ A security use case in Fabric refers to a set of users needing data access and a
 
 In this module, you will learn how to leverage the Fabric access control features available to secure your data and provide your team with the necessary access within Fabric to perform their job duties. You will explore Fabric’s multi-layer security model and how to use it to manage data access.
 
-By the end of this module, you will know how to configure security for an entire workspace, for individual Fabric data items, and how to apply granular permissions within Fabric data items, and how to combine permissions.
+By the end of this module, you will know how to configure security for an entire workspace, for individual Fabric data items, and how to apply granular permissions within Fabric data items.

@@ -10,7 +10,7 @@ The third level, data security, has several building blocks that be configured i
 - Workspace roles
 - Item permissions
 - Compute permissions
-- OneLake data access controls (in preview)
+- OneLake data access controls (preview)
 
 It's helpful to envision these building blocks in a hierarchy to understand how access controls can be applied individually or together.
 
