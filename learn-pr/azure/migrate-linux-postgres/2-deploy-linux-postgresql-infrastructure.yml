@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-linux-postgres.deploy-linux-and-postgresql-infrastructure
+uid: learn.azure.migrate-linux-postgres.deploy-linux-postgresql-infrastructure
 title: Deploy Linux and PostgreSQL infrastructure​
 metadata:
   title: Deploy Linux and PostgreSQL infrastructure​
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/2-deploy-linux-and-postgresql-infrastructure.md)]
+  [!include[](includes/2-deploy-linux-postgresql-infrastructure.md)]

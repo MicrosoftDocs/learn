@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-linux-postgres.migrate-linux-and-postgresql-workloads
+uid: learn.azure.migrate-linux-postgres.migrate-linux-postgresql-workloads
 title: Migrate Linux and PostgreSQL workloads
 metadata:
   title: Migrate Linux and PostgreSQL workloads
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/1-migrate-linux-and-postgresql-workloads.md)]
+  [!include[](includes/1-migrate-linux-postgresql-workloads.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-linux-postgres.explore-and-run-linux-and-postgresql-workloads
+uid: learn.azure.migrate-linux-postgres.explore-run-linux-postgresql-workloads
 title: Explore and run Linux and PostgreSQL workloads​
 metadata:
   title: Explore and run Linux and PostgreSQL workloads​
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/4-explore-and-run-linux-and-postgresql-workloads.md)]
+  [!include[](includes/4-explore-run-linux-postgresql-workloads.md)]
