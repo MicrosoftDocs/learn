@@ -32671,6 +32671,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/2-azure-ad-idp-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/3-detect-risks-with-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/4-investigate-detected-risks.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4b-platform-services.md",
       "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
       "redirect_document_id": false
