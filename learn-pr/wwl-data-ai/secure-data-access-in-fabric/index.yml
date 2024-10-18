@@ -9,14 +9,12 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Secure data access in Microsoft Fabric
-summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+summary: Microsoft Fabric uses a multi-layer security model with access controls at different levels. 
 abstract: |
   In this module, you'll:
-  - Learn the concepts of securing a data warehouse in Microsoft Fabric.
-  - Learn how to implement dynamic data masking to obscure sensitive information.
-  - Learn how to configure row-level security to provide granular control.
-  - Learn how to implement column-level security to protect sensitive data.
-  - Learn how to configure granular permissions using T-SQL.
+  - Learn about the permissions model in Microsoft Fabric.
+  - Learn how to configure workspace and item permissions.
+  - Learn how to apply granular permissions.
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/generic-badge.svg
