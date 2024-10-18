@@ -32671,6 +32671,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/2-azure-ad-idp-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/3-detect-risks-with-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/4-investigate-detected-risks.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-identities-with-aad-idp/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4b-platform-services.md",
       "redirect_url": "/training/modules/examine-components-of-modern-data-warehouse/",
       "redirect_document_id": false
@@ -33383,6 +33413,66 @@
     {
       "source_path": "learn-pr/azure/authenticate-apps-with-managed-identities/index.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/2-create-run-functions-locally-core-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/3-exercise-create-function-core-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/4-publish-function-core-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/5-exercise-publish-function-core-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-core-tools/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-vs-code-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/2-set-security-event-option-workspace-level.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/4-set-security-event-option-workspace-level",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/3-configure-log-analytics-agent-workspace.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-configure-log-analytics-agent-workspace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
       "redirect_document_id": false
     }
   ]

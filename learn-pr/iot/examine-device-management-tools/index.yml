@@ -9,7 +9,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
 title: Evaluate device management tools for Azure IoT Hub
 summary: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT Hub, and when the various approaches to device management should be applied.
 abstract: |

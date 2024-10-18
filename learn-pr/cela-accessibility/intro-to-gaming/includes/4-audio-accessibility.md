@@ -1,6 +1,6 @@
-You've learned about the portrayal of important game information through visual means and how players can become blocked from game progress if this visual information isn't accessible.
+In the previous unit, you learned about the portrayal of important game information through visual means. You learned that if this visual information isn't accessible, players can become blocked from game progress.
 
-In this unit, learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with disabilities.
+In this unit, you learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with disabilities.
 
 ## Audio and gaming
 
@@ -18,11 +18,11 @@ Consult with an array of players with hearing-related disabilities to help you c
 
 ### Gaming without audio
 
-Players who can't hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players might miss important game information when it's portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and nonplayer character dialogue can't inform the gameplay of these players.
+Players who can't hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players might miss important game information when you only portray it through audio. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and nonplayer character dialogue can't inform the gameplay of these players.
 
 General approaches to support these players include:
 
-- An option to enable subtitles and captions for all important character dialogue.
+- Providing an option to enable subtitles and captions for all important character dialogue.
 - Representing audio cues like enemy footsteps through visual cues within the UI or within captions.
 - Supporting accessible player-to-player communication tools like text to speech chat and speech to text chat.
 
