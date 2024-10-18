@@ -33,7 +33,7 @@ quiz:
     - content: Admin
       isCorrect: false
       explanation: Incorrect. The Admin role has more permissions than needed, including managing all content, data, and permissions.
-    - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
+  - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
     choices:
     - content: OneLake data access roles
       isCorrect: true
