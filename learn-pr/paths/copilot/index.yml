@@ -43,12 +43,15 @@ subjects:
 - devops
 
 modules:
+- learn.github.responsible-ai-with-github-copilot
 - learn.github.introduction-to-github-copilot
 - learn.github.introduction-prompt-engineering-with-github-copilot
+- learn.advanced-github-copilot
+- learn.github.github-copilot-across-environments
+- learn.wwl.develop-unit-tests-using-github-copilot-tools
 - learn.github.introduction-to-github-copilot-for-business
 - learn.github.intro-github-copilot-enterprise
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
-- learn.advanced-github-copilot
 trophy:
   uid: learn.github.trophy
