@@ -22,9 +22,9 @@ Structured data is straightforward in that it's easy to enter, query, and analyz
 
 Semi-structured data is less organized than structured data. Semi-structured data isn't stored in a relational format because the fields don't fit neatly into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent. One example is key/value pairs. Semi-structured data is also referred to as non-relational or *not only SQL (NoSQL)* data.
 
-Semi-structured data is defined by a data serialization language. In data classification, *serialization* is the process of converting data into a format that can be transmitted or stored.
+A data serialization language defines semi-structured data. In data classification, *serialization* is the process of converting data into a format that can be transmitted or stored.
 
-Software developers use data serialization languages to write data stored in memory to a file, which can then be sent to another system, parsed, and read. The sender and receiver don't need to know details about the other system. As long as the same serialization language is used, the data can be understood by both systems.<br /><br />
+Software developers use data serialization languages to write data stored in memory to a file, which can then be sent to another system, parsed, and read. The sender and receiver don't need to know details about the other system. Both systems can understand the data if using the same serialization language.<br /><br />
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBu6]
 
@@ -79,7 +79,7 @@ The JSON format isn't as formal as XML. It's closer to a key/value pair model th
 
 #### YAML
 
-*YAML Ain't Markup Language (YAML)* is a more recently developed data serialization language. One of the benefits of using YAML is that it's easier for humans to read than some other languages. The data structure is defined by line separation and indentation. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
+*YAML Ain't Markup Language (YAML)* is a more recently developed data serialization language. One of the benefits of using YAML is that it's easier for humans to read than some other languages. Line separation and indentation define the data structure. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
 
 Here's the same data expressed in YAML:
 
@@ -96,7 +96,9 @@ hobbies:
       value: Guitar
 ```
 
-This format is more readable than JSON. It's often used for configuration files that need to be written by people but parsed by programs. YAML is the newest of these data formats.
+This format is more readable than JSON. Configuration files that people write but programs parse is a common use for it. YAML is the newest of these data formats.
+
+It's often used for configuration files written by people but parsed by programs.
 
 ### What is semi-structured or NoSQL data?
 
@@ -127,7 +129,7 @@ Let's look at the datasets used in an online retail business and classify them.
 
 Product catalog data for an online retail business is semi-structured in nature. Each product has a product SKU, a description, a quantity, a price, size options, color options, a photo, and possibly a video. This data appears relational to begin with because it all has the same structure. However, as you introduce new products or different kinds of products, you might want to add data fields. For example, new tennis shoes you carry are Bluetooth-enabled to relay sensor data from the shoe to a fitness app on the user's phone. This feature appears to be a growing trend, and you want to give customers the option to filter on "Bluetooth-enabled" shoes. You don't want to update all your existing shoe data with a Bluetooth-enabled property. You want to add this new property only to new shoes.
 
-With the addition of the Bluetooth-enabled property, your shoe data is no longer homogenous. You've introduced differences in the schema. If this change is the only exception you expect to encounter, you can normalize the existing data so that all products included a "Bluetooth-enabled" field to maintain a structured, relational organization. However, if it's just one of many specialty fields that you envision supporting in the future, the classification of the data is semi-structured. The data is organized by tags, but each product in the catalog can contain unique fields.
+With the addition of the Bluetooth-enabled property, your shoe data is no longer homogenous. You've introduced differences in the schema. If this change is the only exception you expect to encounter, you can normalize the existing data so that all products included a "Bluetooth-enabled" field to maintain a structured, relational organization. However, if it's just one of many specialty fields that you envision supporting in the future, the classification of the data is semi-structured. Tags organize the data, but each product in the catalog can contain unique fields.
 
 The classification for product catalog data is *semi-structured*.
 

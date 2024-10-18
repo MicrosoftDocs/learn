@@ -62,7 +62,7 @@ You could upload your images to Azure App Service, so that the same server runni
 
 ### Recommended service: Azure SQL Database
 
-Business data most likely will be queried by business analysts, who are more likely to know SQL than any other query language. You can use Azure SQL Database as a solution by itself. However, if you pair it with Azure Analysis Services, data analysts can create a semantic model over the data in Azure SQL Database. Data analysts can then share the model with business users, who need only to connect to the model from any business intelligence (BI) tool to immediately explore the data and gain insights. Azure Analysis Services supports OLAP.
+Business analysts most likely will query business data using SQL, as they are more knowledgeable in this query language than any other. You can use Azure SQL Database as a solution by itself. However, if you pair it with Azure Analysis Services, data analysts can create a semantic model over the data in Azure SQL Database. Data analysts can then share the model with business users, who need only to connect to the model from any business intelligence (BI) tool to immediately explore the data and gain insights. Azure Analysis Services supports OLAP.
 
 #### Why not other Azure services?
 
