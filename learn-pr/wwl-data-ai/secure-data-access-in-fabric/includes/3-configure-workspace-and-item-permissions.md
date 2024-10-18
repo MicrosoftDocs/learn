@@ -5,7 +5,9 @@ Item permissions control access to individual Fabric items within a workspace. I
 Let's consider some scenarios where you would need to configure data access using  workspace roles and item permissions.
 
 ## Understand workspace roles
+
 Suppose you work at a health care company as the Fabric security admin. You need to set up access for a new data engineer. The data engineer needs the ability to:
+
 - Create Fabric items in an existing workspace
 - Read all data in an existing lakehouse that's in the same workspace where they can create Fabric items
 
@@ -32,6 +34,7 @@ Add a user by entering the user's name and selecting the workspace role to assig
 ![Add people](../media/add-people.png)
 
 ## Configure item permissions
+
 Item permissions control access to individual Fabric items within a workspace. Item permission can be used to give a user access to one or more items within a workspace without adding the user to a workspace role or can be used with workspace roles.
 
 Suppose that after a few months of having **Contributor** access on a workspace, a data engineer no longer needs to create Fabric items and now only needs to view a single lakehouse and read data in it. 
@@ -48,6 +51,7 @@ In the **Grant people access** window that appears after selecting **Manage perm
 
 > [!Tip]
 > Each Fabric data item has its own security model. To learn more about permissions that can be granted when a lakehouse or other Fabric data item is shared see: 
+>
 > - [Warehouse](../fabric/data-warehouse/share-warehouse-manage-permissions)
 > - [Lakehouse](../fabric/data-engineering/lakehouse-sharing)
 > - [Semantic model](/power-bi/connect-data/service-datasets-permissions)
