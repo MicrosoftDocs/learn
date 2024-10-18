@@ -4,6 +4,6 @@ For more information, see these articles:
 
 - [Select an Azure data store for your application](/azure/architecture/guide/technology-choices/data-store-decision-tree)
 - [Criteria for choosing a data store](/azure/architecture/guide/technology-choices/data-store-considerations)
-- [Non-relational data and NoSQL in Azure](/azure/architecture/data-guide/big-data/non-relational-data)
-- [Online transaction processing and Azure](/azure/architecture/data-guide/relational-data/online-transaction-processing)
-- [Online analytical processing and Azure](/azure/architecture/data-guide/relational-data/online-analytical-processing)
+- [Non-relational data and NoSQL](/azure/architecture/data-guide/big-data/non-relational-data)
+- [Online transaction processing (OLTP)](/azure/architecture/data-guide/relational-data/online-transaction-processing)
+- [Online analytical processing (OLAP)](/azure/architecture/data-guide/relational-data/online-analytical-processing)
