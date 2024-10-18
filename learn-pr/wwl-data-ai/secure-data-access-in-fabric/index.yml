@@ -34,6 +34,7 @@ units:
 - learn-wwl.secure-data-access-in-fabric.configure-workspace-and-item-permissions
 - learn-wwl.secure-data-access-in-fabric.apply-granular-permissions
 - learn-wwl.secure-data-access-in-fabric.exercise
+- learn-wwl.secure-data-access-in-fabric.knowledge-check
 - learn-wwl.secure-data-access-in-fabric.summary
 badge:
   uid: learn-wwl.secure-data-access-in-fabric.badge
