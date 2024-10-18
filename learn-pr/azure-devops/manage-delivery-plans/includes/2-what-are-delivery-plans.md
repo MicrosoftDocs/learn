@@ -1,12 +1,13 @@
-As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams usually have their work schedules, boards, and other processes that meet their unique needs within the context of the organization’s larger goals. Over time, organizations might find that they enjoy network benefits by consolidating their processes around a consistent framework.
+As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams usually have their work schedules, boards, and other processes that meet their unique needs within the context of the organization's larger goals. Over time, organizations might find that they enjoy network benefits by consolidating their processes around a consistent framework.
 
 A _delivery plan_ is a visualization of one or more work schedules. It's intended to provide teams and management an overall view of what each team is planning to produce and when. It allows decisions to be made that optimize the investments across the organization.
 
 Teams must regularly review their delivery plans to ensure that their work schedule aligns with other teams' schedules. These reviews should address questions like:
+
 * Are we sure we can deliver what we've committed to on our current schedule?
 * Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
-* Are there issues with dependencies within a team or across teams? 
+* Are there issues with dependencies within a team or across teams?
 
 Delivery plans add value at any point in a project's lifecycle. Because they're dynamically generated based on team backlogs, they're always up-to-date and offer the latest insights.
 
@@ -22,7 +23,7 @@ Andy navigates to the game engine's current sprint board. He and Mara review the
 
 **Andy:** Hmm...I just noticed that they're not planning to deploy their beta by the end of this sprint. Aren't we expecting to integrate our leaderboard with the beta database during our next sprint? We can't do that if they don't ship the beta first.
 
-**Mara:** That's a good point. We have a dependency on that team to produce that deliverable so that we can produce one of our own.
+**Mara:** That's a good point. We have a dependency on that team to produce that deliverable so we can produce one of our own.
 
 **Andy:** This could have really hurt our productivity next sprint. I'm going to give them a call to find out what's going on.
 
