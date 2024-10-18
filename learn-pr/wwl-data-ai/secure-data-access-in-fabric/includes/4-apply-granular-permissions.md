@@ -24,15 +24,15 @@ The SQL analytics endpoint is used to read data in the /Tables folder of the lak
 
 Using the SQL analytics endpoint, granular T-SQL permissions can be applied to SQL objects using Data Control Language (DCL) commands such as:
 
-- [GRANT](/sql/t-sql/statements/grant-transact-sql)
-- [DENY](/sql/t-sql/statements/deny-transact-sql)
-- [REVOKE](/sql/t-sql/statements/revoke-database-permissions-transact-sql)
+- [GRANT](/sql/t-sql/statements/grant-transact-sql?azure-portal=true)
+- [DENY](/sql/t-sql/statements/deny-transact-sql?azure-portal=true)
+- [REVOKE](/sql/t-sql/statements/revoke-database-permissions-transact-sql?azure-portal=true)
 
 Row-level security, column-level security, and dynamic data masking can also be applied using the SQL analytics endpoint. See:
 
-- [Row-level security](/fabric/data-warehouse/row-level-security) 
-- [Column-level security](/fabric/data-warehouse/column-level-security)
-- [Dynamic data masking](/fabric/data-warehouse/dynamic-data-masking)
+- [Row-level security](/fabric/data-warehouse/row-level-security?azure-portal=true) 
+- [Column-level security](/fabric/data-warehouse/column-level-security?azure-portal=true)
+- [Dynamic data masking](/fabric/data-warehouse/dynamic-data-masking?azure-portal=true)
 
 ## Configure data access through the lake view of the lakehouse
 
@@ -54,7 +54,7 @@ Workspace and item permissions provide coarse access to data in a lakehouse. To 
  ![Add OneLake data access role permissions](../media/assign-role-permissions.png) 
 
 > Tip
-> For more information on how OneLake RBAC permissions are evaluated with workspace and item permissions, see: [How OneLake RBAC permissions are evaluated with Fabric permissions](/fabric/onelake/security/data-access-control-model#how-onelake-rbac-permissions-are-evaluated-with-fabric-permissions)
+> For more information on how OneLake RBAC permissions are evaluated with workspace and item permissions, see: [How OneLake RBAC permissions are evaluated with Fabric permissions](/fabric/onelake/security/data-access-control-model#how-onelake-rbac-permissions-are-evaluated-with-fabric-permissions?azure-portal=true)
 
 ### Configure granular warehouse permissions
 
@@ -66,5 +66,5 @@ Granular permissions can be applied to warehouses using the SQL analytics endpoi
 
 A user's role in a workspace implicitly grants them permission on the semantic models in a workspace. Semantic models allow for security to be defined using DAX.  More granular permission can be applied using row-level security (RLS). To learn more about the managing RLS or permissions on the semantic model see:
 
-[Semantic model permissions](/power-bi/connect-data/service-datasets-permissions)
-[Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security)
+[Semantic model permissions](/power-bi/connect-data/service-datasets-permissions?azure-portal=true)
+[Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security?azure-portal=true)

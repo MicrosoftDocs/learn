@@ -19,7 +19,7 @@ Workspace roles control what users can do and access within a Fabric workspace. 
 - **Viewer** - Can view all content and data in the workspace, but can't modify it.
 
 > [!Tip]
-> For a full list of the permissions associated with workspace roles, see: [Roles in workspaces](/fabric/get-started/roles-workspaces)
+> For a full list of the permissions associated with workspace roles, see: [Roles in workspaces](/fabric/get-started/roles-workspaces?azure-portal=true)
 
 To meet the access requirements for the new data engineer, you can assign them the workspace **Contributor** role. This gives them access to modify content in the workspace, including creating Fabric items like lakehouses. The contributor role would also allow them to read data in the existing lakehouse.
 
@@ -52,6 +52,6 @@ In the **Grant people access** window that appears after selecting **Manage perm
 > [!Tip]
 > Each Fabric data item has its own security model. To learn more about permissions that can be granted when a lakehouse or other Fabric data item is shared see:
 >
-> - [Warehouse](/fabric/data-warehouse/share-warehouse-manage-permissions)
-> - [Lakehouse](/fabric/data-engineering/lakehouse-sharing)
-> - [Semantic model](/power-bi/connect-data/service-datasets-permissions)
+> - [Warehouse](/fabric/data-warehouse/share-warehouse-manage-permissions?azure-portal=true)
+> - [Lakehouse](/fabric/data-engineering/lakehouse-sharing?azure-portal=true)
+> - [Semantic model](/power-bi/connect-data/service-datasets-permissions?azure-portal=true)

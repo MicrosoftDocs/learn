@@ -1,7 +1,7 @@
 Data access in organizations is often restricted by users' responsibilities, and roles and by an organization's [Fabric deployment patterns,](/azure/architecture/analytics/architecture/fabric-deployment-patterns?azure-portal=true) and [data architecture](/fabric/onelake/security/how-to-common-data-architectures&azure-portal=true). Fabric has a flexible, multi-layer security model that allows you to configure security to accommodate different data access requirements. Having the ability to control permissions at different layers means you can adhere to the principle of least privilege, restricting user permissions to only what's needed to perform job tasks.
 
 Fabric has three security levels and they're evaluated sequentially to determine whether a user has data access. The order of evaluation for access is:  
-1. Microsoft Entra ID authentication: checks if the user can authenticate to the Azure identity and access management service: [Microsoft Entra ID tenant](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-entra-id-tenant-starters-guide-understanding-identity/ba-p/4154857).
+1. Microsoft Entra ID authentication: checks if the user can authenticate to the Azure identity and access management service: [Microsoft Entra ID tenant](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-entra-id-tenant-starters-guide-understanding-identity/ba-p/4154857?azure-portal=true).
 2. Fabric access: checks if the user can access Fabric.
 3. Data security: checks if the user can perform the action they've requested on a table or file.  
 
