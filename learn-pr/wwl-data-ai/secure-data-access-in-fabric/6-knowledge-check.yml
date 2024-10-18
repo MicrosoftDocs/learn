@@ -16,7 +16,7 @@ quiz:
     - content:  Data security, Fabric access, Microsoft Entra ID authentication
       isCorrect: false
       explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
-    - content: It changes the actual data in the database.
+    - content: Microsoft Entra ID authentication, Fabric access, Data security
       isCorrect: true
       explanation: Correct. Microsoft Entra ID authentication, Fabric access, Data security
     - content: The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
