@@ -16,7 +16,7 @@ Incorporating these pillars helps produce a high quality, stable, and efficient 
 | Operational Excellence | Operations processes that keep a system running in production. |
 | Performance Efficiency | The ability of a system to adapt to changes in load. |
 
-Please see [Architect successful workloads on Azure](https://learn.microsoft.com/shows/azure-essentials-show/architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series), for more information.
+Please see [Architect successful workloads on Azure](/shows/azure-essentials-show/architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series), for more information.
 
 ## Overview
 
