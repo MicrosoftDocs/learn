@@ -29,7 +29,6 @@ subjects:
 modules:
 - learn.choose-messaging-model
 - learn.implement-message-workflows-with-service-bus
-- learn.communicate-between-applications-with-azure-queue-storage
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.react-to-state-changes-using-event-grid
 trophy:

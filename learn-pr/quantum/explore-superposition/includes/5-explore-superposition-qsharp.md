@@ -1,8 +1,7 @@
 
-In this unit, you'll learn to explore quantum superposition and probabilities in Q# by using the `DumpMachine` function. 
+That's enough theory for now! Let's explore superposition in Q# by writing some code. 
 
-The `DumpMachine` function dumps information about the current status of the target machine at the point where it's called.
-
+In this unit, you'll learn to create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
 
 > [!NOTE]
 > The `DumpMachine` function is useful only for simulations. On quantum
@@ -10,9 +9,6 @@ The `DumpMachine` function dumps information about the current status of the tar
 > state of the qubit register during execution. Remember that measuring the
 > state of a qubit can change its state. On simulated virtual quantum computers,
 > you can use tools like `DumpMachine` to explore the state of the system.
-
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Create a new Q# file
 

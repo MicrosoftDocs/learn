@@ -6,5 +6,5 @@ In this module, you start by learning about key principles of data governance, t
 
 After completing this module, you'll be able to:
 
-- Describe benefits of data governance.
+- Describe the concepts and benefits of data governance.
 - Describe key features of Microsoft Purview Data Catalog.

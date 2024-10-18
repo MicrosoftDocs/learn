@@ -15,19 +15,19 @@ Azure Logic Apps helps you coordinate the flow of data through disparate systems
 
 Azure Logic Apps works best when you're integrating multiple services with some added control logic. Let's think about how to apply these criteria to our example processes.
 
-Our fictional shoe company needs to monitor social media, move old videos to archive storage, and sell shoes online. Our goal is to decide whether Azure Logic Apps is a good candidate to handle these tasks. To make our decision, we analyze each task using the four criteria that we developed: integration, performance, conditionals, and connectors. The following table summarizes the results:
+Our fictional shoe company needs to monitor industry news, move old videos to archive storage, and sell shoes online. Our goal is to decide whether Azure Logic Apps is a good candidate to handle these tasks. To make our decision, we analyze each task using the four criteria that we developed: integration, performance, control, and connectors. The following table summarizes the results:
 
 | | **Integration** | **Performance** | **Control** | **Connectors** | **Use Azure Logic Apps?** |
 |-|-----------------|-----------------|-------------|----------------|---------------------------|
-| **Social-media monitor** | Integrates multiple services | Don't need near real-time low latency | One condition simple action | Built-in connectors available for all needed systems | Yes |
-| **Video archive utility** | _Only needs to access one service, cloud storage_ | Don't need near real=time low latency | Two simple condition actions | Prebuilt connectors available for all needed systems | Yes |
+| **News monitor** | Integrates multiple services | Don't need near real-time low latency | One condition simple action | Built-in connectors available for all needed systems | Yes |
+| **Video archive utility** | _Only needs to access one service, cloud storage_ | Don't need near real-time low latency | Two simple condition actions | Prebuilt connectors available for all needed systems | Yes |
 | **Direct online sales** | Integrates multiple services | Don't need near real-time low latency | _Multiple complex conditions_ | _Multiple custom connectors needed_ | _Maybe_ |
 
 This analysis produces a few interesting things to consider:
 
 - The video archive task is a good fit for Azure Logic Apps even though the task doesn't integrate multiple systems. 
 
-  Azure Logic Apps has a built-in timer trigger and an Azure Blob Storage connector that are perfect to implement this process.
+  Azure Logic Apps has a built-in timer trigger and an Azure Blob Storage connector, which are perfect to implement this process.
 
 - The online sales process likely includes complex business logic.
 
@@ -47,4 +47,4 @@ Azure Logic Apps could work for all these tasks, and the online sales process is
 
 The following flowchart summarizes the key questions to ask when you're considering using Azure Logic Apps.
 
-:::image type="content" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work." lightbox="../media/decide-whether-to-use-logic-apps-flowchart.png":::
+:::image type="content" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart shows key questions to ask when evaluating Azure Logic Apps for your work." border="false" lightbox="../media/decide-whether-to-use-logic-apps-flowchart.png":::

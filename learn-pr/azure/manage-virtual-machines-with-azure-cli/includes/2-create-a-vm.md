@@ -24,7 +24,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index).
 
-Let's start with the first one: `az vm create`. You can use this command to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
+Let's start with the first one: `az vm create`. You can use this command to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that you must supply are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
@@ -38,7 +38,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 
 ## Create a Linux virtual machine
 
-Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the "West US" location.
+Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the *West US* location.
 
 ```azurecli
 az vm create \

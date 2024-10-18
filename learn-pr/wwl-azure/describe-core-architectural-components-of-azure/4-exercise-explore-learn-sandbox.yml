@@ -4,11 +4,12 @@ title: Exercise - Explore the Learn sandbox
 metadata:
   title: Exercise - Explore the Learn sandbox
   description: "Exercise - Explore the Learn sandbox"
-  ms.date: 03/06/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-  ms.custom: N/A, devx-track-azurecli
+  ms.custom:
+  - N/A
 azureSandbox: true
 durationInMinutes: 10
 content: |

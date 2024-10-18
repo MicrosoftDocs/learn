@@ -6,7 +6,7 @@ After you provision the resource, you can use its **endpoint** and one of its ke
 
 ## High-level deployment plan
 
-To get started with your LLM, follow these basic steps:
+To get started with your large language model (LLM), follow these basic steps:
 
 1. Provision a resource.
 
@@ -20,7 +20,7 @@ You can set up an Azure OpenAI resource in two ways. The method you choose is up
 
 - **Azure portal**: The Azure portal offers a graphical user interface and is a good option for beginners who want to learn more about cloud computing and Azure OpenAI.
 
-- **Azure CLI**:  The Azure CLI is ideal for businesses because it allows you to store, version-control, and parameterize deployment scripts, making it easy to reuse them elsewhere.
+- **Azure CLI**: The Azure CLI is ideal for businesses because it allows you to store, version-control, and parameterize deployment scripts, making it easy to reuse them elsewhere.
 
 ## Provision a resource by using the Azure portal
 
@@ -49,7 +49,7 @@ To create an Azure OpenAI Service resource from the CLI, ensure you have a **res
 
 Here's an example of how to create a resource group:
 
-- The following command creates a resource group called _resourceGroupName_ in the East US location. You can change the name and location as you want, but the name needs to be unique to your subscription.
+- The following command creates a resource group called *resourceGroupName* in the East US location. You can change the name and location as you want, but the name must be unique to your subscription.
 
     ``` azurecli
     az group create --name resourceGroupName --location eastus 

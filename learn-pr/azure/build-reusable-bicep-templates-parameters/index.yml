@@ -6,7 +6,7 @@ metadata:
   description: Control and apply parameters to a Bicep template while protecting sensitive inputs.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 01/03/2023
+  ms.date: 09/26/2024
   author: mumian
   ms.author: jgao
   ms.topic: module

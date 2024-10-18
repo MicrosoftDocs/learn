@@ -11,7 +11,7 @@ discussion topics that generate [type of feedback desired].
 ```
 
 ```
-Write a formal, yet friendly thank you email to sponsors who donated [dollar amount] in cash 
+Write a formal, yet friendly thank-you email to sponsors who donated [dollar amount] in cash 
 contributions over the past year. Include a real-life story that signifies the impact they are 
 making in the community. Direct them to [annual report or other resource] for a detailed overview 
 of our outcomes.
@@ -24,8 +24,8 @@ Next, practice using Copilot to manage and create content for social media platf
 ```
 Draft a social media post tailored to the following [targeted social media outlets] amplifying 
 the [event or call to action]. Encourage readers to participate and/or volunteer to help 
-[intended outcome, community in need e.g., adopt an orphaned pet]. [Call to action, 
-corresponding link e.g., sign up, view details]. Use catchy, persuasive language, and include hashtags.
+[intended outcome, community in need (such as adopting an orphaned pet)]. [Call to action, 
+corresponding link such as sign up or view details]. Use catchy, persuasive language, and include hashtags.
 ```
 
 Ask Copilot to generate an image for your post, remembering to specify the clear action, detailed subject, scene or setting, other elements, and specific style in your prompt.

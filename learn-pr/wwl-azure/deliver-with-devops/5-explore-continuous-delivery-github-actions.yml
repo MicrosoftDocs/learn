@@ -8,6 +8,6 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
   [!include[](includes/5-explore-continuous-delivery-github-actions.md)]

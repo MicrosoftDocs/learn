@@ -18,43 +18,43 @@ quiz:
   questions:
   - content: What is the purpose of the Precision metric?
     choices:
-    - content: To measure the total volume of harmful content identified by the model.
+    - content: To measure the total volume of harmful content that the model identifies.
       isCorrect: false
-      explanation: Precision doesn't measure the total volume of harmful content. It focuses on the accuracy of identification.
-    - content: To measure how much of the content identified as harmful is actually, harmful.
+      explanation: The Precision metric doesn't measure the total volume of harmful content.
+    - content: To measure how much of the content that the model identifies as harmful is actually harmful.
       isCorrect: true
-      explanation: The Precision metric in Content Safety Studio evaluates the accuracy of the model by measuring how much of the content identified as harmful is indeed harmful. It helps in understanding the effectiveness of the model in accurately identifying harmful content.
+      explanation: The Precision metric in Content Safety evaluates the accuracy of the model by measuring how much of the content that the model identifies as harmful is indeed harmful.
     - content: To measure the model's ability to identify actual harmful content.
       isCorrect: false
-      explanation: Precision doesn't directly measure the model's ability to identify actual harmful content; rather, it assesses the accuracy of the identified harmful content.
+      explanation: The Precision metric doesn't directly measure the model's ability to identify actual harmful content.
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
-      explanation: Precision doesn't measure the speed of detection; it solely focuses on the accuracy of identification.
-  - content: Which feature of the Azure AI Content Safety Studio is responsible for detecting and blocking incorrect information in model outputs?
+      explanation: The Precision metric doesn't measure the speed of detection.
+  - content: Which feature of Azure AI Content Safety is responsible for detecting and blocking incorrect information in model outputs?
     choices:
-    - content: Text Moderation
+    - content: Text moderation
       isCorrect: false
-      explanation: Text Moderation detects harmful content in text.
-    - content: Prompt Shields
+      explanation: Text moderation detects harmful content in text.
+    - content: Prompt shields
       isCorrect: false
-      explanation: To detect user Prompt attacks and Document attacks, Prompt Shields analyze Large Language Models (LLM) inputs.
-    - content: Image Moderation
+      explanation: To detect user prompt attacks and document attacks, prompt shields analyze large language model (LLM) inputs.
+    - content: Image moderation
       isCorrect: false
-      explanation: Image Moderation analyzes images to identify and block offensive content.
-    - content: Groundedness Detection
+      explanation: Image moderation analyzes images to identify and block offensive content.
+    - content: Groundedness detection
       isCorrect: true
-      explanation:  Groundedness Detection is the feature responsible for detecting and blocking incorrect information in model outputs, ensuring that the text responses are factual and accurate based on the provided source materials.
-  - content: What is the purpose of the F1 Score metric?
+      explanation:  The groundedness detection feature detects and blocks incorrect information in model outputs, to help ensure that the text responses are factual and accurate based on the provided source materials.
+  - content: What is the purpose of the F1 score metric?
     choices:
-    - content: To measure the total volume of harmful content identified by the model.
+    - content: To measure the total volume of harmful content that the model identifies.
       isCorrect: false
-      explanation: F1 Score doesn't measure the total volume of harmful content. The score evaluates the balance between *Precision* and *Recall*.
-    - content: To measure the balance between Precision and Recall.
+      explanation: The F1 score metric doesn't measure the total volume of harmful content.
+    - content: To measure the balance between **Precision** and **Recall**.
       isCorrect: true
-      explanation: The F1 Score metric in Content Safety Studio is a function of Precision and Recall. The metric is used when there's a need to balance between Precision (accuracy of identified harmful content) and Recall (model's ability to identify actual harmful content).
+      explanation: The F1 score metric in Content Safety is used when there's a need to balance Precision (the accuracy of identified harmful content) and Recall (the model's ability to identify actual harmful content).
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
-      explanation: F1 Score doesn't measure the speed of detection. The score focuses on the balance between *Precision* and *Recall*.
+      explanation: The F1 score metric doesn't measure the speed of detection.
     - content: To measure the model's ability to identify actual harmful content.
       isCorrect: false
-      explanation:  F1 Score doesn't directly measure the model's ability to identify actual harmful content. The score balances *Precision* and *Recall*.
+      explanation:  The F1 score metric doesn't directly measure the model's ability to identify actual harmful content.

@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
+  - ai-learning-hub
   ai-usage: ai-assisted
   ms.service: azure-devops-pipelines
 title: Configure continuous deployment for container apps

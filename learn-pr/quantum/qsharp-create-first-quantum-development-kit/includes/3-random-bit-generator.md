@@ -1,8 +1,6 @@
 
 You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Define a random bit generator
 

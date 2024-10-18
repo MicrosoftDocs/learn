@@ -8,6 +8,6 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-devops.md)]

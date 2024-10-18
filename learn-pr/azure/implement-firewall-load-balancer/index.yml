@@ -9,8 +9,7 @@ metadata:
   author: JasonGerend
   ms.author: jgerend
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hci
+  ms.service: azure-stack-hci
 title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
 summary: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
 abstract: |

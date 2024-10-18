@@ -75,7 +75,7 @@ Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copi
 |**Pull request summaries**| ✓ | ✕ |  ✕ |
 |**Copilot docset management**| ✓ | ✕ |  ✕ |
 |**Copilot code review**| ✓ | ✕ |  ✕ |
-|**Zero data retention for code snippets and usage telemetry**| ✓ | ✓ | ✓ |
+|**Zero data retention for code snippets and usage telemetry**| ✓ | ✓ | ✕ |
 |**Organization-wide policy management**| ✓ | ✓ | ✕ |
 |**Integration with security tools**| ✓ | Limited | ✕ |
 |**Audit logging and reporting**| ✓ | Limited | ✕ |

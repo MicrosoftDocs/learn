@@ -2,7 +2,7 @@
 uid: learn.use-databases-dotnet-aspire-app
 metadata:
   title: Use databases in a .NET Aspire project
-  description: "Learn about the database systems that .NET Aspire can connect to using built-in components. Then see how to configure connections to, and store data in, relational and nonrelational databases."
+  description: "Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases."
   ms.date: 3/20/2024
   author: camsoper
   ms.author: casoper
@@ -10,12 +10,12 @@ metadata:
   ms.topic: module
   ms.service: aspnet-core
 title: Use databases in a .NET Aspire project
-summary: "Learn about the database systems that .NET Aspire can connect to using built-in components. Then see how to configure connections to, and store data in, relational and nonrelational databases."
+summary: "Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases."
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the database systems that .NET Aspire can connect to using built-in components.
-  - Use .NET Aspire components to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
-  - Use .NET Aspire components to read and write data to MongoDB databases.
+  - Describe the database systems that .NET Aspire can connect to using built-in integrations.
+  - Use .NET Aspire integrations to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
+  - Use .NET Aspire integrations to read and write data to MongoDB databases.
   - Understand the basics of testing in .NET Aspire. 
   - Create a test project using xUnit. 
   - Write and run tests for .NET Aspire projects. 

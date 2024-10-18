@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check what you learn in this module."
-  ms.date: 08/01/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "300 instances"
       isCorrect: false
-      explanation: "Incorrect. Basic load balancer has a maximum backend pool size of 300 instances."
-    - content: "500 instances"
-      isCorrect: false
-      explanation: "Incorrect. Neither SKU of Azure load balancer has a maximum backend pool size of 500 instances."
+      explanation: "Incorrect. Standard load balancer supports up to 5,000 instances. Basic load balancer supports up to 300 instances."
     - content: "1,000 instances"
+      isCorrect: false
+      explanation: "Incorrect. Standard load balancer supports up to 5,000 instances. Basic load balancer supports up to 300 instances."
+    - content: "5,000 instances"
       isCorrect: true
-      explanation: "Correct. Standard load balancer supports up to 1,000 instances. Basic load balancer supports up to 300 instances."
+      explanation: "Correct. Standard load balancer supports up to 5,000 instances. Basic load balancer supports up to 300 instances."
   - content: "Which Azure service allows users to define, manage, and monitor the global routing for their web traffic?"
     choices:
     - content: "Azure Front Door"

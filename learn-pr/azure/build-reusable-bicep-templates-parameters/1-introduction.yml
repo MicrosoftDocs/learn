@@ -9,7 +9,7 @@ metadata:
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values and how to protect these values when you're working with secure information.
 
-  ms.date: 01/03/2023
+  ms.date: 09/26/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

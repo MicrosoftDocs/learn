@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 05/03/2024
+  ms.date: 10/3/2024
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
@@ -19,12 +19,12 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and increases or decreases the resources allocated to run your app as needed, depending on the demand."
     - content: "False"
       isCorrect: false
-      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and increases or decreases the resources allocated to run your app as needed, depending on the demand."
 
-  - content: "Which of the following isn't a valid automated deployment source?"
+  - content: "Which of the following options isn't a valid automated deployment source?"
     choices:
     - content: "GitHub"
       isCorrect: false

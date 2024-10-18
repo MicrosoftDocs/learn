@@ -4,10 +4,12 @@ title: Understand bad actors
 metadata:
   title: Understand bad actors
   description: "The understand bad actors unit discusses some of the bad actors and tactics that may undermine security, as it relates to security in the broader module."
-  ms.date: 02/06/2024
+  ms.date: 09/23/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-understand-bad-actors.md)]

@@ -306,7 +306,7 @@ Before we can receive messages in the new message consumer project, we must conf
 
 ## Receive a RabbitMQ message
 
-To receive a message, we must create a component that runs in the background waiting for messages to arrive. Use a `BackgroundService` class for this task:
+To receive a message, we must create a integration that runs in the background waiting for messages to arrive. Use a `BackgroundService` class for this task:
 
 1. In **Solution Explorer**, right-click the **RabbitConsumer** project, point to **Add** and then select **Class**.
 1. In the **Name** textbox, type **CatalogProcessingJob** and then select **Add**.

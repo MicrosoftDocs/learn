@@ -27,7 +27,7 @@ To generalize a Windows VM, follow these steps:
 
     ![Screenshot of the Sysprep dialog box.](../media/3-sysprep.png)
 
-After the virtual machine has been shut down, you must deallocate it while it's in this clean state. If you're using PowerShell, run the following command:
+After the virtual machine has been shut down, you must deallocate it while it's in this clean state. In Azure, select the **Cloud Shell** icon at the top of the page. The command line opens and using PowerShell, run the following command:
 
 ```powershell
 Stop-AzVM -ResourceGroupName <resource group> `
@@ -61,7 +61,7 @@ az vm generalize \
 
 If you're building a Linux image, you'll use the **waagent** tool to prepare a virtual machine for generalization. The waagent tool performs tasks like deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.
 
-To generalize a Linux virtual machine, sign in to the machine and run the following command:
+To generalize a Linux virtual machine, sign in to the machine, and run the following command:
 
 ```bash
 waagent -deprovision+user

@@ -5,9 +5,10 @@ metadata:
   description: Learn to monitor Azure AI services.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 09/28/2023
+  ms.date: 09/20/2024
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Monitor Azure AI services

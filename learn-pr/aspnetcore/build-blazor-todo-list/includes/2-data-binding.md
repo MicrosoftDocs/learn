@@ -8,7 +8,7 @@ When you want to render the value of a C# expression in Razor, you use a leading
 <p role="status">Current count: @currentCount</p>
 ```
 
-Razor can typically figure out when a C# expression ends and you've transitioned back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens.
+Razor can typically figure out when a C# expression ends and you transition back to writing HTML. But you can also be explicit about the beginning and ending of the expression using parens.
 
 ```razor
 <p role="status">Current count: @(currentCount)</p>
@@ -50,7 +50,7 @@ You can specify C# event handlers for other HTML events too, like `@onchange`, `
 <button class="btn btn-primary" @onclick="() => currentCount++">Click me</button>
 ```
 
-Event handler methods can optionally take an event argument with information about the event. For example, you can access the value of an input element that has changed like this:
+Event handler methods can optionally take an event argument with information about the event. For example, you can access the value of an input element that changed, like this:
 
 ```razor
 <input @onchange="InputChanged" />
@@ -106,7 +106,7 @@ Or to a component instance:
 <Counter @rendermode="InteractiveServer" />
 ```
 
-The `Counter` component is currently the only interactive component in our app, and it uses interactive server rendering. Interactive server rendering handles UI events from the server over a WebSocket connection with the browser. Blazor sends UI events to the server over this connection so they can be handled by the app's components. Blazor then handles updating the browser DOM with the rendered updates.
+The `Counter` component is currently the only interactive component in our app, and it uses interactive server rendering. Interactive server rendering handles UI events from the server over a WebSocket connection with the browser. Blazor sends UI events to the server over this connection so that the app's components can handle them. Blazor then handles updating the browser DOM with the rendered updates.
 
 ![Diagram of Blazor interactive server rendering.](../media/interactive-server.png)
 
@@ -114,4 +114,4 @@ Alternatively, Blazor components can use the `InteractiveWebAssembly` render mod
 
 ![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-webassembly.png)
 
-Which interactive render mode you choose to use depends on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we'll stick with static and interactive server rendering.
+Which interactive render mode you choose to use depends on your app's requirements. Currently our Blazor project is only set up for server-based rendering, so for this module we stick with static and interactive server rendering.

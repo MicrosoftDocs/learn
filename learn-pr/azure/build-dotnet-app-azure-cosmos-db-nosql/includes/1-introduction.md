@@ -12,7 +12,7 @@ This module specifically walks through the steps to connect to an Azure Cosmos D
 
 In short, the application will:
 
-- **Connect** to the API for NoSQL using a connection string.
+- **Connect** to the API for NoSQL using role-based access control (RBAC) and Microsoft Entra authentication.
 - **Create** the necessary databases and containers.
 - **Insert** new items into a container.
 - **Orchestrate** multiple item operations together within the same container.

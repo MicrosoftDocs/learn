@@ -5,44 +5,42 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Check your knowledge on creating, managing, and querying items and resources in an Azure Cosmos DB for NoSQL account using the .NET SDK library from NuGet.
-
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
-  ms.date: 11/01/2023
+  ms.date: 10/09/2024
 durationInMinutes: 5
 content: |
 quiz:
   questions:
   - content: |
-      Which block of code should be used to create a client to connect to the Azure Cosmos DB account with only a connection string?
+      Which block of code should be used to create a client to connect to the Azure Cosmos DB account with an endpoint?
     choices:
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
-        using CosmosClient client = new(connectionString);
+        string endpoint = "<nosql-account-endpoint>";
+        DefaultAzureCredential credential = new();
+        using CosmosClient client = new(endpoint, credential);
         ```
       isCorrect: true
       explanation: |
         Correct.
-        This constructor only requires a single string parameter with the full connection string.
+        This constructor requires both the endpoint and a token credential.
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
-        using CosmosClient client = new(connectionString, "");
+        string endpoint = "<nosql-account-endpoint>";
+        using CosmosClient client = new(endpoint);
         ```
       isCorrect: false
       explanation: |
         Incorrect.
-        This constructor requires two strings; one for the endpoint and another for the key. You incorrectly passed in the connection string for the endpoint parameter.
+        This constructor requires a token credential to be passed in for authentication.
     - content: |
         ```csharp
-        string connectionString = "<cosmos-connection-string>";
+        string endpoint = "<nosql-account-endpoint>";
         using CosmosClient client = new();
         ```
       isCorrect: false
@@ -54,9 +52,7 @@ quiz:
     choices:
     - content: |
         ```csharp
-        using CosmosClient client = new(
-            connectionString: cosmosConnectionString
-        );
+        using CosmosClient client = new(connectionString);
         ```
       isCorrect: false
       explanation: |
@@ -66,7 +62,7 @@ quiz:
         ```csharp
         Container container = await database.CreateContainerIfNotExistsAsync(
             "products",
-            partitionKeyPath: "/department",
+            "/department",
             throughput: 400
         );
         ```
@@ -77,20 +73,20 @@ quiz:
     - content: |
         ```csharp
         Database database = await client.CreateDatabaseIfNotExistsAsync(
-            "adventureworks"
+            "example-database"
         );
         ```
       isCorrect: true
       explanation: |
         Correct.
-        All containers must exist within a database that has been created within the Azure Cosmos DB account.
+        All containers must exist within a database within the Azure Cosmos DB account.
   - content: |
       An item already exists in the Azure Cosmos DB for NoSQL account with a unique identifier of `04b3038c-b966-4a86-a1f3-5d1fa5c2a47c`. Which of the following blocks of code replace the existing item in the container with a newly created item without running the risk of creating an entirely new item.
     choices:
     - content: |
         ```csharp
         Item item = new("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", "item-category", "item-name", 0, true);
-        container.UpsertItemAsync(item);
+        await container.UpsertItemAsync<Item>(item);
         ```
       isCorrect: false
       explanation: |
@@ -108,7 +104,7 @@ quiz:
     - content: |
         ```csharp
         Item item = new("04b3038c-b966-4a86-a1f3-5d1fa5c2a47c", "item-category", "item-name", 0, true);
-        container.CreateItemAsync(item);
+        await container.CreateItemAsync<Item>(item);
         ```
       isCorrect: false
       explanation: |
@@ -130,7 +126,7 @@ quiz:
     - content: |
         ```csharp
         using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
-            .Where(i => i.id == "some-category")
+            . Where(i => i.id == "some-category")
             .ToFeedIterator();
         ```
       isCorrect: false
@@ -140,7 +136,7 @@ quiz:
     - content: |
         ```csharp
         using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
-            .Where(i => i.partitionKey == "some-category")
+            . Where(i => i.partitionKey == "some-category")
             .OrderBy(i => i.id)
             .ToFeedIterator();
         ```

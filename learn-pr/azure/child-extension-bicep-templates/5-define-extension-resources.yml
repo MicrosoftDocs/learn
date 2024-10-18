@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Define extension resources
   description: Learn how to create extension resources in your Bicep template.
-  ms.date: 12/15/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

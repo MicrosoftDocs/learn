@@ -8,6 +8,7 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.service: azure-container-apps
+  ms.custom: ai-learning-hub
 title: Scale and manage deployed container apps
 summary: |
   This module reviews the concept of revisions in Azure Container Apps and examines options for application lifecycle management. It also examines options for scaling and traffic splitting using Azure Container Apps.

@@ -1,4 +1,4 @@
-The first step in getting your new site ready is to prepare your development environment. Creating and deploying ASP.NET Core web applications requires that you have the necessary tools installed on your local machine. Here, we'll cover the development tools you need and how to install them. 
+The first step in getting your new site ready is to prepare your development environment. Creating and deploying ASP.NET Core web applications requires that you have the necessary tools installed on your local machine. Here, we'll cover the development tools you need and how to install them.
 
 ## Configure your Development environment
 

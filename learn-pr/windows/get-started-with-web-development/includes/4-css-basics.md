@@ -1,6 +1,6 @@
 Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to define what the style should be for the elements that you use within your HTML pages. While the HTML elements define your content, CSS styles define what this content looks like.
 
-For example, you can apply rounded corners or give a gradient background to an element. Or you can use CSS to specify how hyperlinks look and respond when you interact with them. You can also perform sophisticated page layouts and animation effects.
+For example, you can apply rounded corners or give a gradient background to an element, or you can use CSS to specify how hyperlinks look and respond when you interact with them. You can also perform sophisticated page layouts and animation effects.
 
 You can apply styles to specific elements, all elements of a specific type, or use classes to style many different elements.
 
@@ -27,9 +27,9 @@ As described previously, you can also write CSS directly in HTML, which is calle
 
 ## CSS rules
 
-CSS rules are how you apply styles to HTML elements. CSS rules have a **selector** which is used to express which element, or elements, the styles should be applied to.
+CSS rules are how you apply styles to HTML elements. CSS rules have a **selector**, which is used to express the element (or elements) to which the styles should be applied.
 
-In **Visual Studio Code**, open the `main.css` file, and enter the following.
+In Visual Studio Code, open the `main.css` file and enter the following:
 
 ```css
 body {
@@ -43,18 +43,18 @@ ul {
 
 This code snippet contains two rules. Each rule has:
 
-* A *selector*. `body` and `ul` are the selectors of the two rules and are used to select which element(s) the styles apply to.
+* A *selector*. `body` and `ul` are the selectors of the two rules, and are used to select to which element(s) the styles apply.
 * An opening curly brace (`{`).
 * A list of style *declarations* that determine what the selected element(s) should look like.
 * A closing curly brace (`}`).
 
-For example, the `ul` selector selects the `<ul>` HTML element in the page, to apply styles to it. The declaration is `font-family: helvetica` and determines what the style should be. The *property name* is `font-family`, and the *value* is `helvetica`.
+For example, the `ul` selector selects the `<ul>` HTML element in the page to apply styles to it. The declaration is `font-family: helvetica`, and determines what the style should be. The *property name* is `font-family`, and the *value* is `helvetica`.
 
 As you see next, you can define your own custom names for elements.
 
 ## Selectors
 
-*ID* and *class* selectors enable you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can be used to style multiple elements.
+*ID* and *class* selectors let you apply styles to custom attribute names in your HTML. You use an ID to style one element, whereas you use classes to style multiple elements.
 
 1. Copy the following code and add it to your CSS file. Paste it in after the closing curly brace for the `ul` selector that you added previously.
 
@@ -84,7 +84,7 @@ As you see next, you can define your own custom names for elements.
 
 ## View in browser
 
-1. To preview using **Visual Studio Code**, right-click the file name `index.html`, and then select **Open In Default Browser**.
+1. To preview using Visual Studio Code, right-click the `index.html` file in Explorer, then select **Open In Default Browser**.
 
    > [!IMPORTANT]
    > Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.
@@ -95,9 +95,9 @@ As you see next, you can define your own custom names for elements.
 
 Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>`. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>` elements have a different font. The style for the `<li>` elements overrides the style set for `<body>` because the `<li>` element is a descendant of the `<ul>` element, which you defined a style for.
 
-When you use **Open In Default Browser** in **Visual Studio Code**, it opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
+When you use **Open In Default Browser** in Visual Studio Code, it opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
 
-To reload the tab press <kbd>F5</kbd>, which is the refresh keyboard shortcut, or press <kbd>Ctrl+R</kbd> on Windows or Linux, and <kbd>Command+R</kbd> on a Mac.
+To reload the tab, press <kbd>F5</kbd>, which is the refresh keyboard shortcut, or press <kbd>Ctrl+R</kbd> on Windows or Linux, and <kbd>Command+R</kbd> on a Mac.
 
 ## Add a light theme
 
@@ -122,7 +122,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 ## View in browser
 
-* To preview using **Visual Studio Code**, right-click `index.html`, and then select **Open In Default Browser** or reload the previous tab by pressing <kbd>F5</kbd>.
+* To preview using Visual Studio Code, right-click `index.html`, then select **Open In Default Browser** or reload the previous tab by pressing <kbd>F5</kbd>.
 
   Notice that the light theme using a green background appears.
 
@@ -132,9 +132,9 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 1. On the browser view, open Developer Tools.
 
-   Right-click the page and select **Inspect**, or select the shortcut <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>.
+   Right-click the page and select **Inspect**, or select the shortcut <kbd>F12</kbd> or <kbd>Ctrl+Shift+I</kbd>.
 
-1. Select the **Elements** tab and, inside the **Elements** tab, select the **Styles** tab (it should already be selected by default).
+1. Select the **Elements** tab and select the **Styles** tab inside the **Elements** tab (it should already be selected by default).
 
 1. Hover over the various HTML elements, and as you select a few elements, notice how the developer tools display which styles are applied to them in the **Styles** tab.
 
@@ -229,7 +229,7 @@ To add support for a dark theme to your CSS, use the following steps.
     }
     ``````
 
-1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` class attribute to dark theme (`dark-theme`). Save the file and then reload the page in the browser.
+1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` class attribute to dark theme (`dark-theme`). Save the file and reload the page in the browser.
 
    :::image type="content" source="../media/dark-theme.png" alt-text="Screenshot of the website with its dark theme applied and the Developer Tools next to it." lightbox="../media/dark-theme.png":::
 

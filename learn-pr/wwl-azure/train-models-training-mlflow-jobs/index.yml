@@ -5,8 +5,8 @@ metadata:
   description: Learn how to track model training with MLflow in jobs when running scripts.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/25/2023
-  ms.service: azure
+  ms.date: 09/20/2024
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot

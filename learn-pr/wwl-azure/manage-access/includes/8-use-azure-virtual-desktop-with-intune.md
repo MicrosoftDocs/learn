@@ -28,7 +28,7 @@ This feature supports Windows 10 or Windows 11 Enterprise multi-session VMs, whi
     
      -  Configured with Active Directory group policy, set to use Device credentials, and set to automatically enroll devices that are Hybrid Microsoft Entra-joined.
      -  Configuration Manager co-management.
- -  Microsoft Entra-joined and enrolled in Microsoft Intune by enabling [Enroll the VM with Intune](https://github.com/MicrosoftDocs/memdocs/blob/main/azure/virtual-desktop/deploy-azure-ad-joined-vm#deploy-azure-ad-joined-vms) in the Azure portal.
+ -  Microsoft Entra-joined and enrolled in Microsoft Intune by enabling [Enroll the VM with Intune](/mem/intune/fundamentals/windows-10-virtual-machines) in the Azure portal.
  -  Licensing: The appropriate Microsoft Intune license is required if a user or device benefits directly or indirectly from the Microsoft Intune service, including access to the Microsoft Intune service through a Microsoft API. For more information, see Microsoft Intune licensing.
 
 > [!NOTE]

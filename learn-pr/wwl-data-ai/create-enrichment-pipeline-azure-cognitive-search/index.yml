@@ -6,7 +6,7 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.date: 12/11/2023
-  ms.service: cognitive-search
+  ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot

@@ -2,8 +2,8 @@
 uid: learn.dotnet-maui.build-mobile-and-desktop-apps.introduction
 metadata:
   title: Introduction
-  description: "Introduction to .NET MAUI."
-  ms.date: 10/13/2023
+  description: "Introduction to .NET MAUI (Multi-platform Application User Interface)."
+  ms.date: 09/27/2024
   author: codemillmatt 
   ms.author: masoucou 
   ms.topic: unit

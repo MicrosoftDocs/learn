@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ai-usage: ai-assisted
 title: Create and manage Active Directory objects
 summary: This module focuses on the tasks associated with creating and managing Active Directory objects and AD domain services domain controllers.

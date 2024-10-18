@@ -12,4 +12,4 @@ You analyze your business process against each criteria, which help you evaluate
 
 As a result, this analysis gives you a better idea about how close Azure Logic Apps matches your needs.
 
-When we apply these criteria to our fictional shoe company, we can determine the difficulty in using Azure Logic Apps for each process. Both the *social-media monitor* and the *video archive utility* tasks use only prebuilt connectors. This characteristic makes them perfect for Azure Logic Apps. The *online sales portal* task requires more work because the process has complex conditionals and needs custom connectors.
+When we apply these criteria to our fictional shoe company, we can determine the difficulty in using Azure Logic Apps for each process. Both the *news monitor* and the *video archive utility* tasks use only prebuilt connectors. This characteristic makes them perfect for Azure Logic Apps. The *online sales portal* task requires more work because the process has complex conditionals and needs custom connectors.

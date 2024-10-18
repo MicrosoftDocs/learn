@@ -1,12 +1,12 @@
-Suppose you're an IT administrator for a large retail organization. Your organization has started using Microsoft Entra ID to allow employees to securely sign in and use software as a service (SaaS) apps and access the organization's resources in Microsoft 365. You're overwhelmed with password-reset requests, because you currently reset employees' passwords manually. To get these employees back to being productive quickly and reduce your workload, you decide to evaluate and set up self-service password reset in Microsoft Entra ID.
+Suppose you're an IT administrator for a large retail organization. Your organization has started using Microsoft Entra ID to allow employees to securely sign in and use software as a service (SaaS) apps and access the organization's resources in Microsoft 365. You're overwhelmed with password-reset requests because you currently reset employees' passwords manually. To get these employees back to being productive quickly and reduce your workload, you decide to evaluate and set up self-service password reset in Microsoft Entra ID.
 
-In this module, you'll learn how Azure supports this feature and how to set it up.
+In this module, you'll learn how Azure supports this feature and how to set it up. Note that only paid subscriptions can leverage this, while free and pay-as-you-go can't.
 
 By the end of this module, you'll be able to configure self-service password reset in Microsoft Entra ID.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Decide whether to implement self-service password reset.
 - Implement self-service password reset to meet your requirements.

@@ -3,6 +3,7 @@ Azure Storage Explorer isn't just about storage accounts. You can also use it to
 You've learned how simple creating and managing blob and queue resources in your Azure Storage account is. Now you want to push your understanding further and learn how the storage account connects to your developers' data lake, which they use to store infrastructure data for the CRM system.
 
 Azure Data Lake Storage Gen2 isn't a dedicated service or account type. It's a set of capabilities that you unlock by enabling the hierarchical namespace feature of an Azure Storage account.
+
 Here, you'll learn how to use Storage Explorer to connect to Azure Data Lake Storage Gen2, create a container, and upload data into it.
 
 ## Create a storage account with Azure Data Lake Storage Gen2 capabilities
@@ -26,7 +27,7 @@ To create the storage account, use the **az storage account create** command:
 
 ## Connect to your Data Lake Gen2 enabled storage account
 
-Now that you've created a Gen2 enabled storage account, Storage Explorer should automatically connect to it.
+Now that you've created a Gen2-enabled storage account, Storage Explorer should automatically connect to it.
 
 1. In Storage Explorer, in the **EXPLORER** pane, locate **Concierge Subscription** and expand it to show all the storage accounts.
 
@@ -39,9 +40,9 @@ Now that you've created a Gen2 enabled storage account, Storage Explorer should 
 
 ### Create a container
 
-All containers in a Data Lake Gen2 enabled storage account are blobs. To create a new container:
+All containers in a Data Lake Gen2-enabled storage account are blobs. To create a new container:
 
-1. Right-click the **dlstoragetest001** storage account, and select **Create Blob Container** from the shortcut menu.
+1. Expand the **dlstoragetest001** storage account, right-click **Blob Containers**, and select **Create Blob Container** from the shortcut menu.
 
     ![Screenshot that shows the shortcut menu for adding a container.](../media/5-data-lake-create-blob-container.png)
 
@@ -69,4 +70,4 @@ With the new **myfilesystem** container created, you can now upload files or fol
 
     ![Screenshot that shows the uploaded file.](../media/5-data-lake-file-uploaded.png)
 
-You can upload as many files as you want to this folder. Also, you can create an unlimited number of folders. You can then organize and manage the content in your folders, as you do with your file system.
+You can upload as many files as you want to this folder. Also, you can create an unlimited number of folders. You can then organize and manage the content in your folders as you do with your file system.

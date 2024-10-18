@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.service: azure-stack-hub
 title: Azure Stack Hub
 summary: |
   Azure Stack Hub runs apps in an on-premises environment and delivers Azure services in your datacenter.

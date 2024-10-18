@@ -97,13 +97,13 @@ Let's break this task down a bit more:
     The `**` part specifies to search the current directory and all child directories. The `*.csproj` part specifies any **.csproj** file.
     Wildcards let you act on multiple files without specifying each one. If you need to act on a specific file only, you can specify that file instead of using wildcards.
 
-The "@" in the task name, for example `DotNetCoreCLI@2`, refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.
+The "@" in the task name—for example, `DotNetCoreCLI@2`—refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.
 
 ## How are tasks used in a pipeline?
 
 Next, Mara's going to map the existing script commands to Azure Pipelines tasks. A Pipeline is created using a YAML file, which is a compact format that makes it easy to structure the kind of data that's in configuration files. Pipeline YAML files are typically maintained directly with your app's source code.
 
-Mara's used YAML previously to define similar build tasks and configurations. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
+Mara used YAML previously to define similar build tasks and configurations. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
 To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipelines tasks that she'll use to replace the existing script commands.
 
@@ -127,6 +127,6 @@ This table associates the script commands with the new Azure Pipelines tasks:
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
 
-There's no built-in task type that runs node-Sass or prints the date to a file. For those, Mara uses the `CmdLine@2` task, which lets her run any command that she wants. More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. For more information about the other common task shortcuts, see [YAML scheme reference for Azure Pipelines - steps](/azure/devops/pipelines/yaml-schema/steps).
+There's no built-in task type that runs `node-sass` or prints the date to a file. For those, Mara uses the `CmdLine@2` task, which lets her run any command that she wants. More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. For more information about the other common task shortcuts, see [YAML scheme reference for Azure Pipelines - steps](/azure/devops/pipelines/yaml-schema/steps).
 
 You'll soon create a YAML file of your own that uses these tasks.

@@ -6,7 +6,7 @@ metadata:
   description: Learn how to enforce controls over your Azure changes and deployments, to ensure that your infrastructure is deployed through an approved process.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 07/18/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: module

@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll learn about the manifest file format that deployment tools use to configure .NET Aspire solutions. You'll use this knowledge to configure values such as connection strings for backing services.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |

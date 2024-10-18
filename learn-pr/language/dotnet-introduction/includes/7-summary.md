@@ -1,4 +1,4 @@
-This module's goal was to introduce .NET. By now, you've begun to understand what .NET is and the major parts of the .NET ecosystem. You learned about the workflow developers use, the tools they rely on to build applications, and the scenarios for which .NET makes sense. You built a simple "Hello World" application to illustrate the workflow and how the parts of .NET work together.
+In this module, you got an introduction to .NET. By now, you can understand what .NET is and what the major parts of the .NET ecosystem are. You learned about the workflow developers use, the tools they rely on to build applications, and the scenarios for which .NET makes sense. You built a simple "Hello World" application to illustrate the workflow and how the parts of .NET work together.
 
 ## Resources
 

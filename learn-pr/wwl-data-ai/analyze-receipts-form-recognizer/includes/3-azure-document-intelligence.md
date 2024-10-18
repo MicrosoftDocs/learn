@@ -1,10 +1,12 @@
 **Azure AI Document Intelligence** consists of features grouped by model type:
+- **Document analysis** - general document analysis that returns structured data representations, including regions of interest and their inter-relationships.
 - **Prebuilt models** - pretrained models that have been built to process common document types such as invoices, business cards, ID documents, and more. These models are designed to recognize and extract specific fields that are important for each document type. 
-- **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models.   
-- **Document analysis** - general document analysis that returns structured data representations, including regions of interest and their inter-relationships. 
+- **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models. Includes custom classification models and document field extraction models such as the [custom generative AI model](/azure/ai-services/document-intelligence/concept-custom-generative?view=doc-intel-4.0.0) and [custom neural model](/azure/ai-services/document-intelligence/concept-custom-neural?view=doc-intel-4.0.0).  
+ 
+The rest of this module will focus on prebuilt models. 
 
 ## Prebuilt models
-The prebuilt models apply advanced machine learning to accurately identify and extract text, key-value pairs, tables, and structures from forms and documents. These capabilities include extracting: 
+The prebuilt models apply advanced machine learning to accurately identify and extract text, key-value pairs, tables, and structures from forms and documents. The main types of documents prebuilt models can process are financial services and legal, US tax, US mortgage, and personal identification documents. Some examples of these capabilities include extracting: 
 
 - customer and vendor details from invoices
 - sales and transaction details from receipts
@@ -27,19 +29,9 @@ Fields recognized include:
 - Name, quantity, and price of each item purchased
 - Total, subtotals, and tax values
 
-Each field and data pair has a confidence level, indicating the likely level of accuracy. This could be used to automatically identify when a person needs to verify a receipt.
+Each field and data pair has a confidence level, indicating the likely level of accuracy. Data extracted with a high confidence score could be used to automatically verify information on a receipt. The receipt model has been trained to recognize several different languages, depending on the receipt type.
 
-The model has been trained to recognize several different languages, depending on the receipt type. For best results when using the prebuilt receipt model, images should be:
-
-- JPEG, PNG, BMP, PDF, or TIFF format
-- File size less than 500 MB for paid (S0) tier and 4 MB for free (F0) tier
-- Between 50 x 50 pixels and 10000 x 10000 pixels
-- For PDF documents, no larger than 17 inches x 17 inches
-- One receipt per document
-
-You can get started with training models in the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio?azure-portal=true), a user interface for testing document analysis, prebuilt models, and creating custom models. 
-
-## Azure AI Document Intelligence resource
+## Using Azure AI Document Intelligence
 To use Azure AI Document Intelligence, create either a **Document Intelligence** or **Azure AI services** resource in your Azure subscription. If you have not used Document Intelligence before, select the free tier when you create the resource. There are some restrictions with the free tier, for example only the first two pages are processed for PDF or TIFF documents.
 
-After the resource has been created, you can create client applications that use its **key** and **endpoint** to connect forms for analysis, or use the resource in Document Intelligence Studio.
+After the resource has been created, you can use the resource in the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio?azure-portal=true), a user interface for testing document analysis, prebuilt models, and creating custom models. 

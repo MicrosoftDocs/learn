@@ -36,7 +36,7 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with two core instances.
 
-1. Create a new GitHub Codespace using the `https://codespaces.new/Azure-Samples/aacs-workshops?quickstart=1` template.
+1. Create a new GitHub Codespace using the `https://codespaces.new/Azure-Samples/RAI-workshops?quickstart=1` template.
 
     :::image type="content" border="true" source="https://github.com/codespaces/badge.svg" alt-text="Open in GitHub Codespaces" link="https://codespaces.new/Azure-Samples/aacs-workshops?quickstart=1?azure-portal=true":::
 
@@ -53,7 +53,7 @@ The Dev Containers extension for Visual Studio Code requires Docker to be instal
 1. Start Docker on your computer.
 1. Open **Visual Studio Code** in an empty folder.
 1. Use the **Command Palette** (**CTRL + SHIFT/COMMAND + P**) and enter **Git Clone**.
-1. Enter the repository URL `https://github.com/azure-samples/aacs-workshops`.
+1. Enter the repository URL `https://github.com/azure-samples/RAI-workshops`.
 1. Select a folder to store the cloned repository.
 1. Open the repository.
 1. Use the **Command Palette** or the automatic prompt to **Reopen in Container**.
@@ -76,7 +76,7 @@ Once you have the development container open, you can create environment variabl
 
 ## Open the Jupyter notebook
 
-1. In the repository files, open the **azure-ai-content-safety-module.ipynb** notebook.
+1. In the repository files, navigate to the **Azure AI Content Safety Workshop** folder and open the **azure-ai-content-safety-module.ipynb** notebook.
 1. If the kernel isn't selected, select **Select Kernel** at the upper-right of the notebook.
 1. Select **Python Environments** in the kernel drop-down menu.
 1. Choose the **Python 3.11** environment.

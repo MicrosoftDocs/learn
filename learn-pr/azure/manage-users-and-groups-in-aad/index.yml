@@ -8,7 +8,7 @@ metadata:
   ms.author: sarahlipsey
   ms.topic: module
   ms.manager: amycollanino
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ms.subservice: fundamentals
 
 title: Manage users and groups in Microsoft Entra ID

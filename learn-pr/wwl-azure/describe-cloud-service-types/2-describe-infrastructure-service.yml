@@ -4,10 +4,12 @@ title: Describe Infrastructure as a Service
 metadata:
   title: Describe Infrastructure as a Service
   description: "Describe Infrastructure as a Service"
-  ms.date: 03/12/2024
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-describe-infrastructure-service.md)]

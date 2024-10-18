@@ -8,7 +8,7 @@ metadata:
   ms.author: sarahlipsey
   ms.topic: module
   ms.manager: amycollanino
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ms.subservice: fundamentals
 title: Create Azure users and groups in Microsoft Entra ID
 summary: Create users in Microsoft Entra ID. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.

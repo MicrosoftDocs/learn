@@ -58,7 +58,7 @@ quiz:
     - content: "This example describes Firewall Manager being implemented in the hub virtual network architecture."
       isCorrect: false
       explanation: "Incorrect. Secured virtual hub architecture's underlying resource is Azure virtual networks."
-  - content: "The Research department requires specific firewall settings to help secure their resources in several Azure virtual networks. But the global administrator wants to ensure that the organization's overarching firewall policies also are applied. Which of the following statements about this configuration is true?"
+  - content: "The Research department requires specific firewall settings to help secure their resources in several Azure virtual networks. But the enterprise administrator wants to ensure that the organization's overarching firewall policies also are applied. Which of the following statements about this configuration is true?"
     choices:
     - content: "Firewall Manager can't be implemented because the global policies override any local policies."
       isCorrect: false

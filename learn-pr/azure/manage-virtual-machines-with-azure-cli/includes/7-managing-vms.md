@@ -2,7 +2,7 @@ One of the main tasks you'll want to do while running virtual machines is to sta
 
 ## Stop a VM
 
-We can stop a running VM with the `vm stop` command. You must pass the name and resource group, or the unique ID for the VM:
+We can stop a running VM with the `vm stop` command. You must pass the name and resource group or the unique ID for the VM:
 
 ```azurecli
 az vm stop \
@@ -10,7 +10,7 @@ az vm stop \
     --resource-group "<rgn>[sandbox resource group name]</rgn>"
 ```
 
-We can verify the VM has stopped by attempting to ping the public IP address, using `ssh`, or through the `vm get-instance-view` command. This final approach returns the same basic data as `vm show`, but includes details about the instance itself. Try entering the following command into Azure Cloud Shell to see the current running state of your VM:
+You can verify the VM has stopped by attempting to ping the public IP address, using `ssh`, or through the `vm get-instance-view` command. This final approach returns the same basic data as `vm show`, but includes details about the instance itself. Try entering the following command into Azure Cloud Shell to see the current running state of your VM:
 
 ```azurecli
 az vm get-instance-view \
@@ -31,7 +31,7 @@ az vm start \
     --resource-group "<rgn>[sandbox resource group name]</rgn>"
 ```
 
-This command will start a stopped VM. We can verify it through the `vm get-instance-view` query we used in the last section, which should now return `VM running`.
+This command starts a stopped VM. You can verify it through the `vm get-instance-view` query you used in the last section, which should now return `VM running`.
 
 ## Restart a VM
 

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ai-usage: ai-assisted
 title: Deploy and manage Active Directory Domain Services domain controllers
 summary: This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers.

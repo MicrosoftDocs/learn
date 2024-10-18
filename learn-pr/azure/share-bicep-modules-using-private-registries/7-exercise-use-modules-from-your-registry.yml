@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Use modules from your registry
   description: Create a Bicep file that uses modules from your private registry.
-  ms.date: 03/06/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit

@@ -8,7 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: module-standard-task-based
-  ms.service: active-directory
+  ms.service: azure-active-directory
 title: Monitor and report on authentication methods used in Microsoft Entra ID
 summary: "This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant."
 abstract: |

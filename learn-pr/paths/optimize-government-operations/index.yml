@@ -35,7 +35,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.azure.discover-azure-government
-- learn.azure.introduction-data-protection-privacy
 - learn.azure.safeguard-data-sector
 - learn.azure.support-hybrid-clouds
 trophy:

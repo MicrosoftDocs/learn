@@ -23,20 +23,7 @@ would fit the theme of this destination?
 
 **Sample response**:
 
-Note the following sample response is in markdown syntax so it doesn't look formatted like a table the way it does in your browser.
-```
-| Artist     | Song Title    
-|--------------|-----------
-|Louis Armstrong | When You're Smiling
-|Duke Ellington | It Don't Mean a Thing ( if it Ain't
-Got that Swing)
-| Billie Holiday | Summertime
-| Benny Goodman | Sing, Sing, Sing
-| Ella Fitzgerald | A-Tisket, A-Tasket
-| Cab Calloway | Minnie the Moocher 
-| Glenn Miller | In the Mood
-
-```
+![Screenshot of a sample music playlist suggested by Copilot, formatted as a table.](../media/music-table.png)
 
 ## Key takeaways and further exploration
 

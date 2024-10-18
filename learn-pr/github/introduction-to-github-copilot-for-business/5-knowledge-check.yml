@@ -6,7 +6,7 @@ metadata:
   description: This content is part of the Introduction to GitHub Copilot for Business module.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 08/25/2024
+  ms.date: 09/16/2024
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -42,17 +42,17 @@ quiz:
         - content: "90%"
           isCorrect: true
           explanation: Ninety percent (90%) is the correct percentage of developers that said GitHub Copilot helps them code faster.
-    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users?"
+    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate in order to enable Copilot for Business for all current and future users?"
       choices:
         - content: "Policies"
           isCorrect: false
-          explanation: This isn't the first place to navigate to in order to enable GitHub Copilot for Business
+          explanation: Policies isn't the first place to navigate in order to enable GitHub Copilot for Business.
         - content: "Your organizations in your profile dropdown menu"
           isCorrect: true
-          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business
+          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business.
         - content: "Settings in your profile dropdown menu"
           isCorrect: false
-          explanation: Close, but this isn't the first place to navigate to in order to enable GitHub Copilot for Business
+          explanation: Close, but Settings isn't the first place to navigate in order to enable GitHub Copilot for Business.
         - content: "Selected teams/users"
           isCorrect: false
-          explanation: This isn't the first place to navigate to in order to enable GitHub Copilot for Business
+          explanation: Selected teams/users isn't the first place to navigate in order to enable GitHub Copilot for Business.

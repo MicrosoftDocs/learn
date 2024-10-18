@@ -8,7 +8,7 @@ metadata:
   ms.author: jcioffi
   ms.reviewer: franksolomon 
   ms.topic: module
-  ms.service: data-science-vm
+  ms.service: azure-data-science-virtual-machines
 title: Create and connect to a Data Science Virtual Machine
 summary: Create, connect to, and share data among users on a Data Science Virtual Machine (DSVM) that's preloaded with data science and machine learning tools.
 abstract: Azure virtual machines are a fast way to use familiar operating systems and tools on powerful hardware. The DSVM is configured with applications, frameworks, and libraries for data science and machine learning. You'll learn how to create and connect to a DSVM, how to access it with your choice of command-line or graphical interfaces, and how to share data and projects between users. 

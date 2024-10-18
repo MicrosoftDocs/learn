@@ -40,7 +40,6 @@ Now you have:
 - [Oracle Data Guard](https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/preface.html#GUID-B6209E95-9DA8-4D37-9BAD-3F000C7E3590)
 - [Utilize Azure infrastructure virtual machine restart to achieve higher availability of an SAP system](/azure/virtual-machines/workloads/sap/sap-higher-availability-architecture-scenarios)
 - [Service Level Agreement](https://azure.microsoft.com/support/legal/sla/)
-- [Service Level Agreement Estimator sample app](https://github.com/mspnp/samples/tree/master/Reliability/SLAEstimator)
 - [SLA for Traffic Manager](https://azure.microsoft.com/support/legal/sla/traffic-manager/v1_0/)
 - [Traffic Manager endpoint monitoring](/azure/traffic-manager/traffic-manager-monitoring)
 - [SAP Note \#1928533](https://me.sap.com/notes/1928533)

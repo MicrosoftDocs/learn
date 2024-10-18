@@ -8,7 +8,7 @@ After you complete the learning path, you should have a better sense of what the
 
 This first module, **Describe the basics of Azure for business**, presents an overview of how Azure works and what it might do for your business.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you’ll be able to:
 

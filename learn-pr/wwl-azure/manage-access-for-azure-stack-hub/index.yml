@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.service: azure-stack-hub
 title: Manage access for Azure Stack Hub
 summary: |
   You configure Azure Stack Hub to support users from multiple Microsoft Entra tenants.

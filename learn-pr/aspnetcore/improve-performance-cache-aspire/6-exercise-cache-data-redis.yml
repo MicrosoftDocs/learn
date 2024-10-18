@@ -3,7 +3,7 @@ uid: learn.improve-performance-cache-aspire.exercise-cache-data-redis
 title: Exercise - Cache data in Redis
 metadata:
   title: Exercise - Cache data in Redis
-  description: In this unit, you'll use .NET Aspire components to implement distributed and output caching in a cloud-native app.
+  description: In this unit, you'll use .NET Aspire integrations to implement distributed and output caching in a cloud-native app.
   ms.date: 03/31/2024
   author: camsoper
   ms.author: casoper

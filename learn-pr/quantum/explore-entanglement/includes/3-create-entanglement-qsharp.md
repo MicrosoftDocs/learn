@@ -1,7 +1,5 @@
 Now, let's create some quantum entanglement using Q# and the Azure Quantum Development Kit.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## The Controlled-NOT (CNOT) operation
 

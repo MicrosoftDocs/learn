@@ -7,7 +7,7 @@ Let’s first test positive customer feedback.
 1. In the notebook, go to the `SAFE CONTENT` cell.
 1. For the `request` variable, replace `Your input text` with the following text:
 
-   *I recently used the Contoso PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive Great product!*
+   `I recently used the Contoso PowerBurner Camping Stove on my camping trip, and I must say, it was fantastic! It was easy to use, and the heat control was impressive Great product!`
 
 1. Run the cell.
 
@@ -20,7 +20,7 @@ But what would happen if we tested a harmful statement? Let’s test with some n
 1. In the notebook, go to the `HARMFUL CONTENT` cell.
 1. For the `request` variable, replace `Your input text` with the following text:
 
-   *I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.*
+   `I recently bought a tent, and I have to say, I'm really disappointed. The tent poles seem flimsy, and the zippers are constantly getting stuck. It's not what I expected from a high-end tent. You all suck and are a sorry excuse for a brand.`
 
 1. Run the cell.
 
@@ -33,7 +33,7 @@ We can’t anticipate that all text content from our customers would be free of 
 1. In the notebook, go to the `VIOLENT CONTENT WITH MISSPELLING` cell.
 1. For the `request` variable, replace `Your input text` with the following text:
 
-   *I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and died. It's blood is all over the interior. How do I clean the cooker?*
+   `I recently purchased a campin cooker, but we had an acident. A racon got inside, was shocked, and died. It's blood is all over the interior. How do I clean the cooker?`
 
 1. Run the cell.
 

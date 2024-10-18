@@ -7,7 +7,7 @@ metadata:
   author: calopez
   ms.author: calopez 
   ms.topic: learning-path
-  ms.custom: [copilot-learning-hub]
+  ms.custom: copilot-learning-hub, ai-learning-hub
 title: Build an AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI 
 prerequisites: |
   Before starting this learning path, you should already have:

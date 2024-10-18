@@ -10,10 +10,12 @@ The typical workflow for apps that use Azure Blob storage is as follows:
 
 Before you run your app, get the connection string for the storage account you use. You can use any Azure management interface to get it, including the Azure portal, the Azure CLI, and Azure PowerShell. When you set up the web app to run your code near the end of this module, use the Azure CLI to get the connection string for the storage account that you created earlier.
 
-Storage account connection strings include the account key. Consider the account key a secret. Store it securely. Here, you store the connection string in an App Service app setting. App Service app settings are a secure place for app secrets. This design doesn't support local development and isn't a robust, end-to-end solution on its own.
+Storage account connection strings include the account key. Consider the account key a secret and always store it securely. Here, you store the connection string in an App Service app setting. App Service app settings are a secure place for app secrets. This design doesn't support local development and isn't a robust, end-to-end solution on its own.
 
-> [!WARNING]
-> **Do not place storage account keys in code or in unprotected configuration files.** Storage account keys enable full access to your storage account. Leaking a key can result in unrecoverable damage and large bills. For storage guidance and advice about how to recover from a leaked key, see the *Further Reading* section at the end of this module.
+> [!IMPORTANT]
+> This code example uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+>
+> For optimal security, Microsoft recommends using Microsoft Entra ID with managed identities to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
 
 ## Initialize the Blob storage object model
 

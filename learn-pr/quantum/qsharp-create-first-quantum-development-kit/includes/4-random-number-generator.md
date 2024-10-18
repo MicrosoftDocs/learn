@@ -1,8 +1,5 @@
 In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator that you already created. You'll need to write some classical code for this phase.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
-
 ## Combine multiple random bits to form a larger number
 
 In the previous unit, you created a random bit generator that generates a random bit by putting a qubit into superposition and measuring it.

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-datalake-storage-gen2
-title: Explore Azure DataLake Storage Gen2
+title: Explore Azure Data Lake Storage Gen2
 metadata:
-  title: Explore Azure DataLake Storage Gen2
-  description: "Explore Azure DataLake Storage Gen2"
-  ms.date: 03/15/2024
+  title: Explore Azure Data Lake Storage Gen2
+  description: "Explore Azure Data Lake Storage Gen2"
+  ms.date: 09/17/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
