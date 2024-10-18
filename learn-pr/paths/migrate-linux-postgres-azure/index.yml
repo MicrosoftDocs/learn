@@ -9,7 +9,7 @@ metadata:
   ms.author: aawislan
   ms.topic: learning-path
 summary: >
-  "Migrate from an on-premises Linux server to Azure using Azure Migrate and Azure Database for PostgreSQL."
+  "Migrate from an on-premises Linux server to Azure using Azure Virtual Machines and Azure Database for PostgreSQL."
 prerequisites: None
 iconUrl: /training/achievements/generic-trophy.svg
 levels:

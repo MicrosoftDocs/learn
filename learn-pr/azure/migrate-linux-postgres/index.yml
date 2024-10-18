@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: virtual-machines-linux
 title: Migrate Linux and PostgreSQL Workloads
-summary: "Migrate from an on-premises Linux server to Azure using Azure Migrate and Azure Database for PostgreSQL."
+summary: "Migrate from an on-premises Linux server to Azure using Azure Virtual Machines and Azure Database for PostgreSQL."
 abstract: |
   By the end of this module, you'll be able to:
     - Understand how to migrate your Linux and PostgreSQL workloads to Azure.
