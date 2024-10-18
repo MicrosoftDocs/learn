@@ -4,9 +4,9 @@ title: Add flexibility to your Azure Resource Manager template by using template
 metadata:
   title: Add flexibility to your Azure Resource Manager template by using template functions
   description: Discover how to work with several Azure Resource Manager functions to create useful expressions.
-  ms.date: 01/30/2024
-  author: tfitzmac
-  ms.author: tomfitz
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template
