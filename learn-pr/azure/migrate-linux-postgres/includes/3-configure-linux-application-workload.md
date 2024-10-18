@@ -59,7 +59,7 @@ psql --version
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-## Login to the Azure CLI using the System Assigned Managed Identity
+## Log in to the Azure CLI using the System Assigned Managed Identity
 
 ```bash
 az login --identity
