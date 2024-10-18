@@ -4,10 +4,12 @@ title: Manage objects and their properties in Active Directory
 metadata:
   title: Manage objects and their properties in Active Directory
   description: "Manage objects and their properties in Active Directory"
-  ms.date: 06/18/2024
+  ms.date: 10/18/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-manage-objects-their-properties.md)]
