@@ -97,7 +97,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --location "eastus"
     ```
 
-2. Deploy the azuredeploy.json template file to the resource group using [`az deployment group create`](/cli/azure/deployment/group#az-deployment-group-create).
+1. Deploy the azuredeploy.json template file to the resource group using [`az deployment group create`](/cli/azure/deployment/group#az-deployment-group-create).
 
     ```azurecli
     az deployment group create \
@@ -106,7 +106,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
       --template-uri https://raw.githubusercontent.com/Azure-Samples/cosmosdb-chatgpt/start/azuredeploy.json
     ```
 
-3. Wait for the deployment to complete before proceeding with this project.
+1. Wait for the deployment to complete before proceeding with this project.
 
     > [!NOTE]
     > On average, this deployment can take five to ten minutes.
