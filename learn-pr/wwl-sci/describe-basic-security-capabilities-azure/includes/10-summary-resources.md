@@ -22,5 +22,5 @@ To find out more about any of the topics covered in this module, go to:
 - [Web Application firewall](/azure/web-application-firewall/)
 - [Azure Web Application Firewall integration in Copilot for Security (preview)](/azure/web-application-firewall/waf-copilot)
 - [Network Security Groups](/azure/virtual-network/network-security-groups-overview)
-- [Azure Bastion](/azure/bastion/)
+- [What is Azure Bastion?](/azure/bastion/bastion-overview)
 - [About Azure Key Vault](/azure/key-vault/general/overview)
