@@ -33474,6 +33474,11 @@
       "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
       "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
       "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/enable-defender-cloud-azure-subscription/3-upgrade-microsoft-defender-cloud.md",
+      "redirect_url": "/training/modules/enable-defender-cloud-azure-subscription/",
+      "redirect_document_id": false
     }
   ]
 }

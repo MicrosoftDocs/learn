@@ -8,5 +8,5 @@ Launch the exercise and follow the instructions.
 > [!TIP]
 > To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the Launch Exercise button and select Open link in new tab or Open link in new window.
 
-[:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
-](https://microsoftlearning.github.io/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/Instructions/Labs/LAB_01_Enable%20Defender%20for%20Cloud%20on%20your%20Azure%20subscription.html)
+[:::image type="content" source="../media/launch-exercise-162c1d6a-890b80cc.png" alt-text="Screenshot showing an icon for the Launch Exercise button.":::
+ ](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/blob/master/Instructions/Labs/LAB_01_Configuring%20Microsoft%20Defender%20for%20Cloud%20Enhanced%20Security%20Features%20for%20Servers.md)
