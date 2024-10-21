@@ -51,10 +51,15 @@ Perform the following actions to prepare Azure, and your local environment, for 
     * Select **Access keys** in the **Security + networking** section of the navigation pane. Here, you can view your account access keys and the complete connection string for each key.
     * Find the **Connection string** value under **key1**, and select the **Copy** button to copy the connection string. You'll add the connection string value to the code in the next section.
     * In the **Blob** section of the storage account overview, select **Containers**.  Leave the windows open so you can view changes made to the storage as you progress through the exercise.
- 
+
 ## Prepare the .NET project
 
-Create project named *az204-blob* and install the Azure Blob Storage client library. 
+> [!IMPORTANT]
+> The code in this project uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+>
+> For optimal security, Microsoft recommends using managed identities for Azure resources to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
+
+Create project named *az204-blob* and install the Azure Blob Storage client library.
 
 1. In the VS Code terminal, navigate to a directory where you want to store your project. 
 
