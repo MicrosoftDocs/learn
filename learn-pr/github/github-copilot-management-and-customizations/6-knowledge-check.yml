@@ -28,7 +28,6 @@ quiz:
       - content: "Both B and C” 
         isCorrect: true
         explanation: "This option is the correct answer because both the Business and Enterprise plans offer enterprise-grade security and privacy features."
-
     - content: “What should you do if GitHub Copilot isn't providing code suggestions?”
       choices:
       - content: "Restart your computer"
@@ -43,7 +42,6 @@ quiz:
       - content: "Change your programming language"
         isCorrect: false
         explanation: "This option is incorrect because changing your programming language isn't a relevant troubleshooting step for resolving issues with GitHub Copilot's code suggestions."
-
     - content: What is the purpose of GitHub Copilot's content exclusion feature?
       choices:
       - content: "To enhance code completion accuracy"
