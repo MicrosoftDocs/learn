@@ -5,8 +5,8 @@ metadata:
   title: Validate resources in Azure
   description: Validate resources in Azure
   ms.date: 11/21/2023
-  author: tfitzmac
-  ms.author: tomfitz
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
 durationInMinutes: 5
 content: |
