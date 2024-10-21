@@ -1,6 +1,6 @@
 ## Implement content exclusion strategies within repositories and organizations
 
-In this unit we’ll be going over:
+In this unit we are going over:
 
 - Enabling content exclusions from repositories and organizations
 
@@ -8,29 +8,29 @@ In this unit we’ll be going over:
 
 - Identifying Scenarios Where Content Exclusions Might Not Be Fully Effective
 
-GitHub Copilot’s content exclusion feature prevents specific files or repositories from being used to inform code completion suggestions. This ensures that sensitive or proprietary code is not inadvertently suggested by GitHub Copilot. To implement content exclusion strategies, repository administrators and organization owners can configure settings to exclude certain files or directories.
+GitHub Copilot’s content exclusion feature prevents specific files or repositories from being used to inform code completion suggestion. To implement content exclusion strategies, repository administrators and organization owners can configure settings to exclude certain files or directories.
 
-1. **Configure content exclusions for repositories**:
+- **Configure content exclusions for repositories**:
 
-   - Navigate to the main page of the repository on GitHub.
+   1. Navigate to the main page of the repository on GitHub.
 
-   - Under the repository name, click on "Settings".
+   1. Under the repository name, click on "Settings."
 
-   - In the "Code & automation" section of the sidebar, click "Copilot".
+   1. In the "Code & automation" section of the sidebar, click "Copilot."
 
-   - Specify the files or directories to be excluded from Copilot's suggestions by entering their paths in the "Repositories and paths to exclude" section.
+   2. Specify the files or directories to exclude from Copilot's suggestions in the "Repositories and paths to exclude" section.
 
-1. **Configure content exclusions for organizations**:
+- **Configure content exclusions for organizations**:
 
-   - In the upper-right corner of GitHub, select your profile photo, then click "Your organizations".
+   1. In the upper-right corner of GitHub, select your profile photo, then click "Your organizations."
 
-   - Next to the organization, click "Settings".
+   1. Next to the organization, click "Settings."
 
-   - In the left sidebar, click "Copilot" and then "Content exclusion".
+   1. In the left sidebar, click "Copilot" and then "Content exclusion."
 
-   - Enter the details of files or repositories to be excluded from Copilot's suggestions.
+   1. Enter the details of files or repositories to exclude from Copilot's suggestions.
 
-   These configurations ensure that Copilot does not use the excluded content for code completion, thereby protecting sensitive information.
+   These configurations ensure that Copilot protects sensitive information by excluding content for code completion.
 
 #### Understand the impact of content exclusion on code suggestions
 
@@ -40,22 +40,22 @@ For example, excluding a critical configuration file might prevent Copilot from 
 
 You can use content exclusions to configure GitHub Copilot to ignore certain files. When you exclude content from GitHub Copilot:
 
-- Code completion will not be available in the affected files.
+- Code completion is no longer available in the affected files.
 
 - The content in affected files will not inform code completion suggestions in other files.
 
 - The content in affected files will not inform GitHub Copilot Chat's responses.
 
-You can only specify content exclusions in the settings for an organization or repository. Content exclusion settings defined in an organization or repository within an enterprise will apply to all members of the enterprise who have been granted a seat as part of a GitHub Copilot Business or GitHub Copilot Enterprise subscription.
+You can only specify content exclusions in the settings for an organization or repository. Content exclusion settings that are defined in an organization or repository within an enterprise apply to all members who are licensed as part of a GitHub Copilot Business or GitHub Copilot Enterprise subscription.
 
-Anyone else who can access the specified files will still see code completion suggestions and GitHub Copilot Chat responses referencing the specified files.
+Anyone else who can access the specified files can still see code completion suggestions and GitHub Copilot Chat responses referencing the specified files.
 
 #### Limitations of content exclusions
 
 While content exclusions are a valuable tool for managing privacy and security, there are scenarios where they might not be fully effective. For instance:
 
-1. **IDE limitations**: In some integrated development environments (IDEs), content exclusions may not apply when using certain features, such as Copilot Chat. For example, in Visual Studio Code and Visual Studio, content exclusions are not applied when using the @github chat participant in your question.
-1. **Semantic information**: Copilot may still use semantic information from an excluded file if the information is provided by the IDE in a non-excluded file. This includes type information and hover-over definitions for symbols or function calls used in code.
-1. **Policy scope**: Content exclusion settings only apply to members of the organization in which the content exclusion is configured. Anyone else who can access the specified files will still see code completion suggestions and Copilot Chat responses referencing the specified files.
+- **IDE limitations**: In some integrated development environments (IDEs), content exclusions may not apply when using certain features, such as Copilot Chat. For example, in Visual Studio Code and Visual Studio, content exclusions are not applied when using the @github chat participant in your question.
+- **Semantic information**: Copilot may still use semantic information from an excluded file if the information is provided by the IDE in a nonexcluded file. This includes type information and hover-over definitions for symbols or function calls used in code.
+- **Policy scope**: Content exclusion settings only apply to members of the organization in which the content exclusion is configured. Anyone else who can access the specified files will still see code completion suggestions and Copilot Chat responses referencing the specified files.
 
 Understanding these limitations is crucial for effectively managing content exclusions and ensuring that sensitive information is adequately protected.
