@@ -13,13 +13,10 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
     ```
 
   - The system tablespace name should be `ibdata1`.
-
   - The system tablespace size should be greater than or equal to 12 MB. (MySQL Default)
-
   - Only the INNODB engine is supported.
 
 - You need an Azure Blob storage container. If you don't have an appropriate container, create one with this [quickstart](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container). You need the Azure Blob container's shared access signature (SAS) token. To optimize performance, keep the storage and target flexible server in the same region.
-
 - You need to shut down your application to prevent any changes to the database.
 
 ## Procedure
@@ -47,7 +44,6 @@ It's time to migrate the on-premises MySQL server to an Azure Database for MySQL
 Keep in mind the following limitations:
 
 - Users and privileges aren't migrated. You need to manually dump users and privileges to migrate logins after the import operation is complete.
-
 - High availability isn't available during import, so enable high availability after the migration is complete.
 
 After migrating users and privileges, connect your applications to the flexible server, and the migration is complete.

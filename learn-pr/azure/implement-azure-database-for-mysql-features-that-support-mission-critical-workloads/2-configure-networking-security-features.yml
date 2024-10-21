@@ -9,6 +9,6 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/2-configure-networking-security-features.md)]
