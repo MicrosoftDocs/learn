@@ -33481,32 +33481,32 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/1-introduction.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/2-identify-appropriate-role-assign.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/2-identify-appropriate-role-assign.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/3-elevate-your-access-user-access-admin.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/3-elevate-your-access-user-access-admin.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/4-exercise-elevate-permissions.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/4-exercise-elevate-permissions.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/5-summary.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/learn-pr/azure/manage-subscription-access-azure-rbac/index.yml",
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
     }
