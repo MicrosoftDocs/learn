@@ -18,7 +18,7 @@ content: |
       choices:
       - content: "Individual"
         isCorrect: false
-        explanation: "This option is incorrect because the Individual plan does not include enterprise-grade security and privacy features. It's designed for personal use and lacks the advanced security measures required by businesses and enterprises."
+        explanation: "This option is incorrect because the Individual plan doesn't include enterprise-grade security and privacy features. The Individual plan is for personal use and lacks the advanced security measures required by businesses and enterprises."
       - content: "Business”
         isCorrect: false
         explanation: "This option is partially correct as the Business plan does include enterprise-grade security and privacy features. However, it isn't the only correct answer.”
@@ -29,11 +29,11 @@ content: |
         isCorrect: true
         explanation: "This option is the correct answer because both the Business and Enterprise plans offer enterprise-grade security and privacy features."
 
-    - content: “What should you do if GitHub Copilot is not providing code suggestions?”
+    - content: “What should you do if GitHub Copilot isn't providing code suggestions?”
       choices:
       - content: "Restart your computer"
         isCorrect: false
-        explanation: "This option is incorrect because restarting your computer is not a primary troubleshooting step for this issue. While it might help in some cases, it isn't the most direct solution."
+        explanation: "This option is incorrect because restarting your computer isn't a primary troubleshooting step for this issue. While it might help in some cases, it isn't the most direct solution."
       - content: "Check your internet connection"
         isCorrect: true
         explanation: "This option is the correct answer because ensuring a stable internet connection is essential for GitHub Copilot to function properly and provide code suggestions."
@@ -51,7 +51,7 @@ content: |
         explanation: "This option is incorrect because the primary purpose of the content exclusion isn't to enhance code completion accuracy. Its true fuction is to manage the content used for suggestions."
       - content: "To prevent specific files or repositories from being used for code suggestions"
         isCorrect: true
-        explanation: "This option is the correct answer because the content exclusion feature ensures that sensitive or proprietary code isn't inadvertently suggested by GitHub Copilot."
+        explanation: "This option is the correct answer because the content exclusion feature ensures that sensitive or proprietary code isn't suggested by GitHub Copilot."
       - content: "To increase the speed of code suggestions"
         isCorrect: false
         explanation: "This option is incorrect because the content exclusion feature doesn't directly impact the speed of code suggestions."
