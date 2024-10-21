@@ -33514,6 +33514,11 @@
       "source_path": "learn-pr/azure/intro-to-batch-transcription/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/ai-services/speech-service/batch-transcription",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/enable-defender-cloud-azure-subscription/3-upgrade-microsoft-defender-cloud.md",
+      "redirect_url": "/training/modules/enable-defender-cloud-azure-subscription/",
+      "redirect_document_id": false
     }
   ]
 }

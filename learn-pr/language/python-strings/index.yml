@@ -8,7 +8,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: module
-  ms.service: azure-python
   ms.devlang: python
 title: Use strings in Python
 summary: Use one of the most common types in Python to represent text. From simple formatting to representing variables, using operating strings is a critical skill for Python developers.
