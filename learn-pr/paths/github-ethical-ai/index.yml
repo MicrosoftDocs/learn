@@ -1,0 +1,18 @@
+### YamlMime:LearningPath
+uid: github-ethical-ai
+title: GitHub Ethical AI
+summary: 
+roles:
+  - startup-founder
+  - 
+products:
+  - 
+modules:
+  - learn.wwl.get-started-ai-fundamentals
+  - learn.wwl.detect-analyze-faces
+  - learn.wwl.fundamentals-generative-ai
+  - learn.wwl.embrace-responsible-ai-principles-practices
+levels:
+  - intermediate
+iconUrl: /training/achievements/generic-trophy.svg
+achievement: 
