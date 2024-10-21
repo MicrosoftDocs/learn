@@ -31,7 +31,7 @@ You create a delivery plan from the **Delivery Plans** tab of Azure Boards. You 
 1. Select **Create**.
 
     > [!NOTE]
-    > The team project generated for this module uses the *Scrum* process, not the *Basic* process used in other modules in this learning path. While the Basic process uses *Issues*, the Scrum process uses *Backlog items*, which are functionally the same for the purposes of this module. You can use Delivery Plans with either process.
+    > The team project generated for this module uses the _Scrum_ process, not the _Basic_ process used in other modules in this learning path. While the Basic process uses _Issues_, the Scrum process uses _Backlog items_, which are functionally the same for the purposes of this module. You can use Delivery Plans with either process.
 
 ### Add schedule milestone markers
 
