@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which GitHub Copilot plan includes enterprise-grade security and privacy?
+  - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
     choices:
     - content: "Individual"
       isCorrect: false
