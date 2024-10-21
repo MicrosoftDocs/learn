@@ -39,7 +39,7 @@ Now, you use the database to scaffold the code:
     {
         public partial class Coupon
         {
-            public long Id { get; set; }
+            public int Id { get; set; }
             public string Description { get; set; } = null!;
             public DateOnly? Expiration { get; set; }
         }
