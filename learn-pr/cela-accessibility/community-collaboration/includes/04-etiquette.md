@@ -31,7 +31,7 @@ For in-person sessions, the physical spaces that participants use must be access
 
 Ensure that any virtual meeting platforms, survey platforms, and forms are accessible. For example, participants who are d/Deaf or hard of hearing might need live transcription of what's being said in the meeting. If the virtual meeting platform doesn't provide that capability, that participant is unable to participate.
 
-Make sure that online documents and survey platforms comply with Web Content Accessibility Guidelines (WCAG) 2.1 standards. Example considerations include:
+Make sure that online documents and survey platforms comply with Web Content Accessibility Guidelines (WCAG) standards. Example considerations include:
 
 - Is all text in a survey accessible for people who use a screen reader?
 - Do the images provide proper alternative text (alt text) descriptions?
