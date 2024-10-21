@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-troubleshooting-common-issues-with-git-hub-copilot.md)]
+  [!include[](includes/5-troubleshoot-common-issues-with-github-copilot.md)]
