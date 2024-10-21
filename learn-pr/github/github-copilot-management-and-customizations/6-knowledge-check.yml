@@ -14,7 +14,7 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: Which GitHub Copilot plan includes enterprise-grade security and privacy?
+    - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
       choices:
       - content: "Individual"
         isCorrect: false
@@ -42,7 +42,7 @@ quiz:
       - content: "Change your programming language"
         isCorrect: false
         explanation: "This option is incorrect because changing your programming language isn't a relevant troubleshooting step for resolving issues with GitHub Copilot's code suggestions."
-    - content: What is the purpose of GitHub Copilot's content exclusion feature?
+    - content: "What is the purpose of GitHub Copilot's content exclusion feature?"
       choices:
       - content: "To enhance code completion accuracy"
         isCorrect: false
