@@ -15,11 +15,11 @@ Defender for Cloud helps you find and fix security vulnerabilities. Defender for
 
  -  To view information related to a resource in Defender for Cloud, you must be assigned the Owner, Contributor, or Reader role for the subscription or for the resource group that the resource is located in.
     
-    :::image type="content" source="../media/microsoft-defender-cloud-subscription-f2daf5b1.png" alt-text="Screenshot showing an example of how to search for Microsoft Defender for Cloud.":::
+    :::image type="content" source="../media/microsoft-defender-cloud-subscription-f2daf5b1-597fb3a2.png" alt-text="Screenshot showing an example of how to search for Microsoft Defender for Cloud.":::
     
  -  The Defender for Cloud's overview page opens.
     
-    :::image type="content" source="../media/defender-cloud-overview-page-8c732b76.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud overview page.":::
+    :::image type="content" source="../media/defender-cloud-overview-page-8c732b76-064b7fda.png" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud overview page.":::
     
 
 Defender for Cloud is now enabled on your subscription and you have access to the basic features provided by Defender for Cloud. These features include:
@@ -52,12 +52,12 @@ To enable additional paid plans on a subscription:
 2.  Search for and select **Microsoft Defender for Cloud**.
 3.  In the Defender for Cloud menu, select **Environment settings**.
     
-    :::image type="content" source="../media/environmental-settings-b7df4178.png" alt-text="Screenshot showing an example of how to navigate to Defender for Cloud's Environment settings page.":::
+    :::image type="content" source="../media/environmental-settings-b7df4178-dfcf6719.png" alt-text="Screenshot showing an example of how to navigate to Defender for Cloud's Environment settings page.":::
     
 4.  Select the subscription or workspace that you want to protect.
 5.  Select **Enable** all to enable all of the plans for Defender for Cloud.
     
-    :::image type="content" source="../media/enable-all-plans-fe385b32.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page.":::
+    :::image type="content" source="../media/enable-all-plans-fe385b32-a9dc981e.png" alt-text="Screenshot showing an example of how to Enable all plans in Defender for Cloud's Settings page." lightbox="../media/enable-all-plans-fe385b32-a9dc981e.png":::
     
 6.  Select **Save**.
 
