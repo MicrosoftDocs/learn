@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  quiz:
+quiz:
     title: Check your knowledge
     questions:
     - content: Which GitHub Copilot plan includes enterprise-grade security and privacy?
@@ -48,7 +48,7 @@ content: |
       choices:
       - content: "To enhance code completion accuracy"
         isCorrect: false
-        explanation: "This option is incorrect because the primary purpose of the content exclusion isn't to enhance code completion accuracy. Its true fuction is to manage the content used for suggestions."
+        explanation: "This option is incorrect because the primary purpose of the content exclusion isn't to enhance code completion accuracy. Its true function is to manage the content used for suggestions."
       - content: "To prevent specific files or repositories from being used for code suggestions"
         isCorrect: true
         explanation: "This option is the correct answer because the content exclusion feature ensures that sensitive or proprietary code isn't suggested by GitHub Copilot."
