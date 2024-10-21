@@ -46,7 +46,7 @@ You can use content exclusions to configure GitHub Copilot to ignore certain fil
 
 - The content in affected files won't inform GitHub Copilot Chat's responses.
 
-You can only specify content exclusions in the settings for an organization or repository. Content exclusion settings defined in an organization or repository within an enterprise will apply to all members of the enterprise. This definition includes those who have been granted a seat as part of a GitHub Copilot Business or GitHub Copilot Enterprise subscription.
+You can only specify content exclusions in the settings for an organization or repository. Content exclusion settings defined in an organization or repository within an enterprise will apply to all members of the enterprise. This definition includes those who have been granted a license as part of a GitHub Copilot Business or GitHub Copilot Enterprise subscription.
 
 Anyone else who can access the specified files can still see code completion suggestions and GitHub Copilot Chat responses referencing the specified files.
 
@@ -54,8 +54,8 @@ Anyone else who can access the specified files can still see code completion sug
 
 While content exclusions are a valuable tool for managing privacy and security, there are scenarios where they might not be fully effective. For instance:
 
-1. **IDE Limitations**: In some integrated development environments (IDEs), content exclusions may not apply when using certain features, such as Copilot Chat. For example, in Visual Studio Code and Visual Studio, content exclusions are not applied when using the @github chat participant in your question.
-1. **Semantic Information**: Copilot may still use semantic information from an excluded file if the information is provided by the IDE in a nonexcluded file. This includes type information and hover-over definitions for symbols or function calls used in code.
-1. **Policy Scope**: Content exclusion settings only apply to members of the organization in which the content exclusion is configured. Anyone else who can access the specified files can still see code completion suggestions and Copilot Chat responses referencing the specified files.
+- **IDE Limitations**: In some integrated development environments (IDEs), content exclusions may not apply when using certain features, such as Copilot Chat. For example, in Visual Studio Code and Visual Studio, content exclusions are not applied when using the @github chat participant in your question.
+- **Semantic Information**: Copilot may still use semantic information from an excluded file if the information is provided by the IDE in a nonexcluded file. This includes type information and hover-over definitions for symbols or function calls used in code.
+- **Policy Scope**: Content exclusion settings only apply to members of the organization in which the content exclusion is configured. Anyone else who can access the specified files can still see code completion suggestions and Copilot Chat responses referencing the specified files.
 
 Understanding these limitations is crucial for effectively managing content exclusions and ensuring that sensitive information is adequately protected.
