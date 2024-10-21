@@ -2,6 +2,7 @@
 uid: learn.github.github-copilot-management-and-customizations.knowledge-check
 title: Knowledge check
 metadata:
+  unitType: knowledge_check
   title: Knowledge check - Introduction to GitHub Copilot Enterprise
   description: Knowledge check - Management and Customization Considerations with GitHub Copilot module
   ms.date: 10/18/2024
@@ -9,6 +10,7 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
+content: |
 quiz:
   title: Check your knowledge
   questions:
