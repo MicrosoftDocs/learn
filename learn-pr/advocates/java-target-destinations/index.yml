@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03032021
+  ms.service: azure-container-apps
 title: Choose the right Azure service for deploying your Java application
 summary: Explore the service options for deploying Java applications to Azure, and choose the one that best addresses your team's needs.
 abstract: | 
