@@ -1,12 +1,12 @@
-:::image type="content" source="../media/git-hub-copilot's-contractual-protections.png" alt-text="A futuristic, neon-coloured depiction of GitHub Copilot represented as a stylized robotic helmet alongside abstract graphics of orbs and atomic-like structures, with the text GitHub Copilot's contractual protections in bold white at the bottom.":::
+:::image type="content" source="../media/git-hub-copilots-contractual-protections.png" alt-text="Screenshot of a futuristic, neon-coloured depiction of GitHub Copilot represented as a stylized robotic helmet alongside abstract graphics of orbs and atomic-like structures, with the text GitHub Copilot's contractual protections in bold white at the bottom.":::
 
 To help ensure your organization remains compliant with legal requirements, we’ll review the following:
 
-- **Contractual Protections:** Understanding how contractual agreements safeguard your code and data
+- **Contractual protections:** Understanding how contractual agreements safeguard your code and data
 
 - Disabling matching public code to minimize potential code overlap
 
-#### Contractual Protections: Understanding How Contractual Agreements Safeguard Your Code and Data
+#### Contractual protections: understand how contractual agreements safeguard your code and data
 
 To help ensure your organization remains compliant with legal requirements, we will review GitHub Copilot's contractual safeguards to protect your code and data, including the option to disable matching with public code.
 
@@ -16,7 +16,7 @@ To help ensure your organization remains compliant with legal requirements, we w
 
 By understanding and leveraging these contractual protections, your organization can confidently use GitHub Copilot while safeguarding your code and data.
 
-#### Disabling Matching Public Code to Minimize Potential Code Overlap
+#### Disable matching public xode to minimize potential code overlap
 
 **Disabling matching public code** helps minimize potential code overlap by identifying and filtering out code suggestions that match publicly available code. This feature is essential for maintaining the originality and security of your codebase.
 

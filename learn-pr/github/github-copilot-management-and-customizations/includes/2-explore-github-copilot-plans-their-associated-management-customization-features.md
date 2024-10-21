@@ -4,11 +4,11 @@ In this unit we'll review:
 
 - The different management policies and customization features for GitHub Copilot Individual, Business, and Enterprise are in the two tables below.
 
-- Key security and privacy factors to consider when selecting a plan 
+- Key security and privacy factors to consider when selecting a plan.
 
-### Management Policy & Customization Features for GitHub Copilot Individual, Business and Enterprise
+### Management policy & customization features for GitHub Copilot individual, business and enterprise
 
-#### Management Policy Features
+#### Management policy features
 |             | Individual | Business | Enterprise |
 |----------|----------|----------|----------|
 | Public code filter    |     ✅     |      ✅    |     ✅     |
@@ -21,7 +21,7 @@ In this unit we'll review:
 | Requires GitHub Enterprise Cloud   |     ❌     |     ❌     |     ✅     |
 | Usage Metrics    |    ❌      |     ✅     |      ✅    |
 
-#### Customization Features
+#### Customization features
 
 |             | Individual | Business | Enterprise |
 |----------|----------|----------|----------|
