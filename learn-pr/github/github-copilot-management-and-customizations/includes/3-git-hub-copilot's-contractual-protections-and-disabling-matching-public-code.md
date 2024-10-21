@@ -1,6 +1,6 @@
-:::image type="content" source="../media/git-hub-copilot's-contractual-protections.png" alt-text="A futuristic, neon-coloured depiction of GitHub Copilot represented as a stylized robotic helmet alongside abstract graphics of orbs and atomic-like structures, with the text GitHub Copilot's contractual protections in bold white at the bottom.":::
+:::image type="content" source="../media/git-hub-copilot's-contractual-protections.png" alt-text="A futuristic, neon-coloured depiction of GitHub Copilot.":::
 
-To help ensure your organization remains compliant with legal requirements, we’ll review the following:
+To help ensure your organization remains compliant with legal requirements, we review the following topics:
 
 - **Contractual Protections:** Understanding how contractual agreements safeguard your code and data
 
@@ -8,13 +8,13 @@ To help ensure your organization remains compliant with legal requirements, we�
 
 #### Contractual Protections: Understanding How Contractual Agreements Safeguard Your Code and Data
 
-To help ensure your organization remains compliant with legal requirements, we will review GitHub Copilot's contractual safeguards to protect your code and data, including the option to disable matching with public code.
+To help ensure your organization remains compliant with legal requirements, we review GitHub Copilot's contractual safeguards to protect your code and data, including the option to disable matching with public code.
 
-1. **IP Indemnity**: GitHub Copilot's Business and Enterprise plans include IP indemnity, which provides legal protection against intellectual property claims related to the use of Copilot's suggestions. With IP indemnity, if any suggestion made by GitHub Copilot is challenged as infringing on third-party IP rights, GitHub will assume legal responsibility, provided that the “matching public code” setting is BLOCKED.
-1. **Data Protection Agreements (DPA)**: GitHub offers a DPA that outlines the measures taken to protect your data and ensure compliance with data privacy regulations. These agreements provide transparency and assurance that your data is handled securely and responsibly.
+1. **IP Indemnity**: GitHub Copilot's Business and Enterprise plans include IP indemnity, which provides legal protection against intellectual property claims related to the use of Copilot's suggestions. With IP indemnity, if any suggestion made by GitHub Copilot is challenged as infringing on third-party IP rights, GitHub assumes legal responsibility, if the “matching public code” setting is BLOCKED.
+1. **Data Protection Agreements (DPA)**: GitHub offers Data Protection Agreements that outlines the measures taken to protect your data and ensure compliance with data privacy regulations. These agreements provide transparency and assurance that your data is handled securely and responsibly.
 1. **GitHub Copilot Trust Center**: The GitHub Copilot Trust Center provides detailed information about how GitHub Copilot works, including security, privacy, compliance, and intellectual property safeguards. This resource helps organizations understand and feel confident using GitHub Copilot while adhering to best practices and legal requirements.
 
-By understanding and leveraging these contractual protections, your organization can confidently use GitHub Copilot while safeguarding your code and data.
+By understanding and using these contractual protections, your organization can confidently use GitHub Copilot while safeguarding your code and data.
 
 #### Disabling Matching Public Code to Minimize Potential Code Overlap
 
