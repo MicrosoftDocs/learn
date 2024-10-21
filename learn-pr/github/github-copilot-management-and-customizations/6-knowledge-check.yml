@@ -23,7 +23,7 @@ quiz:
         isCorrect: false
         explanation: "This option is partially correct as the Business plan does include enterprise-grade security and privacy features. However, it isn't the only correct answer.”
       - content: "Enterprise”
-        isCorrect: true
+        isCorrect: false
         explanation: "This option is also partially correct because the Enterprise plan includes enterprise-grade security and privacy features. But it isn't the only correct answer."
       - content: "Both B and C” 
         isCorrect: true
