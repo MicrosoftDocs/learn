@@ -1,4 +1,4 @@
-Now that you know about different options for hosting apps on Azure, you want to explore how to deploy Azure Database for MySQL - Flexible Server apps on these services. In this unit, you explore two of the most used services, Azure App Service and AKS, and then you review options for automating CI/CD tasks using Azure DevOps and GitHub.
+Now that you know about different options for hosting apps on Azure, you want to explore how to deploy Azure Database for MySQL - Flexible Server apps on these services. In this unit, you explore two of the most used services, Azure App Service and AKS, review options for automating CI/CD tasks using Azure DevOps and GitHub, and learn how to infuse Artificial Intelligence into these applications by integrating with Azure AI Search and Azure OpenAI.
 
 ## Azure App Service + Azure Database for MySQL - Flexible Server
 
@@ -77,3 +77,18 @@ Beyond these specific tools, you can use other technologies to enhance CI/CD wor
 - **Jenkins**: An open-source automation server that supports building, deploying, and automating any project, Jenkins can be particularly effective in complex environments that require custom scripting and extensive integration.
 
 By leveraging these tools, you can ensure that both your app and its underlying database infrastructure are always aligned with the latest changes in code, minimizing downtime and accelerating the delivery of new features and fixes.
+
+## Add intelligence by integrating with Azure AI Search and Azure OpenAI
+
+The simplest way to enhance the intelligence of MySQL applications is to include the rich capabilities of semantic search and generative AI by building a solution using the Retrieval Augmented Generation (RAG) architecture with Azure AI Search and Azure OpenAI services. RAG is an architecture that augments the natural language understanding and generation capabilities of LLMs like ChatGPT by adding an information retrieval system like Azure AI Search which works with your data stored in data sources like Azure Database for MySQL.
+
+A sample RAG pattern for a MySQL AI solution looks like this:
+
+1. Azure AI search pulls content from a backend data source like Azure Database for MySQL database by using an indexer that runs periodically.
+2. The data is vectorized by an in-built call to Azure OpenAI’s text embedding model.
+3. Azure AI Search then persists this vectorized data in a vector search index.
+4. When a user uses a client chat application, the query is sent to an Azure OpenAI Chat Completion Service.
+5. Azure AI Search is now used as a data source to find the most relevant response using vector-search or hybrid search (vector + semantic search).
+6. The Azure OpenAI Chat Completion service then uses these search results to generate a custom response back to the user query.
+
+If you’re running applications, such as content management systems (CMS), e-commerce applications, or gaming sites, with data hosted in Azure Database for MySQL, you can enhance your user experience by building generative AI search and chat applications using LLMs available in Azure OpenAI and vector storage and indexing provided by Azure AI Search.
