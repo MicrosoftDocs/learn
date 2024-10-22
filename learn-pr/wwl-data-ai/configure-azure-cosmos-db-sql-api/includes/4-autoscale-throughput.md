@@ -1,7 +1,8 @@
-We can often make an educated guess about where our workload will be as far as throughput, but we won’t know exactly where it lands until it’s in production. We also may know our operational tolerances. We know:
 
-- The maximum amount of money we are willing to spend
-- The minimum amount of performance we are ready to tolerate.
+We can often make an educated guess about where our workload is in terms of throughput, but we don’t know exactly where it lands until it’s in production. We also may know our operational tolerances. We know:
+
+- The maximum amount of money we're willing to spend
+- The minimum amount of performance we're ready to tolerate.
 
 With all of this information in mind, we could define a range. This range would represent our application running at a comfortable performance level without overspending without our knowledge.
 
