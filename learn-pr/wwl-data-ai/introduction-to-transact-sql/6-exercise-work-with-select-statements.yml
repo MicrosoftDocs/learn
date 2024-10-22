@@ -9,9 +9,6 @@ metadata:
   ms.author: gmalc
   zone_pivot_groups: sql-database
   ms.topic: unit
-azureSandbox: false
-labId: 96510
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-work-with-select-statements.md)]

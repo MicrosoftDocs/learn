@@ -454,7 +454,7 @@ groups:
   title: SQL database options
   prompt: Choose the SQL database platform you want to use
   pivots:
-    - id: sql-server
-      title: Microsoft SQL Server
     - id: azure-sql-database
       title: Microsoft Azure SQL Database
+    - id: sql-server
+      title: Microsoft SQL Server
