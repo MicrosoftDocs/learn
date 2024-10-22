@@ -1,6 +1,6 @@
-Management and customization control are a vital part of utilizing an AI pair programming tool. We at GitHub, are continuing to iterate and develop GitHub Copilot to ensure your developers and organization have control over your code. Through this module you're now equiped with a better understanding of GitHub Copilot's various plans and their associated features. With this knowledge you're now able to select the right fit for your organization's needs when it comes to GitHub Copilot.
+Management and customization control are a vital part of utilizing an AI pair programming tool. We at GitHub, are continuing to iterate and develop GitHub Copilot to ensure your developers and organization have control over your code. Through this module, you're now equiped with a better understanding of GitHub Copilot's various plans and their associated features. With this knowledge, you're now able to select the right fit for your organization's needs when it comes to GitHub Copilot.
 
-In this module we reviewed GitHub Copilot's management and customization features by:
+In this module, we reviewed GitHub Copilot's management and customization features by:
 
 - Exploring GitHub Copilot plans and their associated management and customization features
 - GitHub Copilot's contractual protections and disabling matching public code
@@ -19,4 +19,4 @@ In this module we reviewed GitHub Copilot's management and customization feature
 
 
 ## How to provide feedback
-If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. This content is maintained by GitHub, and a team member will triage the request. Thank you for taking the time to improve our content!
+If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
