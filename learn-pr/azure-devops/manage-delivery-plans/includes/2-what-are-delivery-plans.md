@@ -33,7 +33,7 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Mara:** The mountaintop music festival?
 
-**Andy:** Yeah, apparently, it's a huge deal in the design community, and their entire team just drops off the grid for a whole week to attend. The game engine team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would've made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our part.
+**Andy:** Yeah, apparently, it's a huge deal in the design community, and their entire team just drops off the grid for a whole week to attend. The game engine team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would have made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our part.
 
 **Mara:** Well, at least we can be glad that the game engine team is publishing their sprint plans. It helped us find this dependency issue early enough to adjust our schedule.
 

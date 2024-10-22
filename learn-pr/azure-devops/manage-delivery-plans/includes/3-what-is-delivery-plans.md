@@ -1,4 +1,4 @@
-_Delivery Plans_ is a hub in Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team can use this hub to get a better idea of how their work relates to the work to be produced by other teams.
+_Delivery Plans_ is a hub in Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team can use this hub to get a better idea of how their work relates to the work of other teams.
 
 Mara created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
 

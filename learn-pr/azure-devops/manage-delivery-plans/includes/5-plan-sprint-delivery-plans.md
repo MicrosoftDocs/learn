@@ -64,7 +64,7 @@ Milestone markers can be added to the delivery plan as reference points. They he
 
 ### Optimize the work schedule
 
-1. Notice that there's a work item for the Web team to **Integrate with beta DB** that's scheduled to be completed before the beta will be ready. This is a problem because this work item is dependent on that beta.
+1. Notice that there's a work item for the Web team to **Integrate with beta DB**. It's scheduled for completion before the beta will be ready. This is a problem because this work item is dependent on that beta.
 1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
 1. This change opens a significant amount of bandwidth in **Sprint 3**. Because that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 
