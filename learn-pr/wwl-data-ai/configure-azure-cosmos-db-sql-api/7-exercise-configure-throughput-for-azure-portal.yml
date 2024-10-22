@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-cosmos-db-sql-api.exercise-configure-throughput-for-azure-portal
-title: 'Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azure portal'
+title: 'Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Azure portal'
 metadata:
-  title: 'Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azure portal'
-  description: "Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azure portal"
-  ms.date: 10/18/2022
+  title: 'Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Azure portal'
+  description: "Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Azure portal"
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
