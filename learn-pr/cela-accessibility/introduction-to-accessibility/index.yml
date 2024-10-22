@@ -3,7 +3,7 @@ uid: learn.cela-accessibility.introduction-to-accessibility
 metadata:
   title: Introduction to accessibility
   description: Explore definitions of accessibility and disability, an assistive technology overview, and why accessibility is important for people with disabilities.
-  ms.date: 04/10/2024
+  ms.date: 10/15/2024
   author: erzelman
   ms.author: erzelman
   ms.topic: module
@@ -13,7 +13,7 @@ summary: This module presents the core ideas and definitions needed to understan
 abstract: |
   By the end of this module, you'll be able to:
   - Define accessibility. 
-  - Define disability and the different types of disabilities - permanent, temporary, and situational.
+  - Define disability and the different types of disabilities: permanent, temporary, and situational.
   - Describe how assistive technology enhances accessibility and independence for people with disabilities.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg

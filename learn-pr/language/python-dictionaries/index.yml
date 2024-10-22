@@ -9,7 +9,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: module
-  ms.service: azure-python
   ms.devlang: python
 title: Manage data with Python dictionaries
 summary: Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries.

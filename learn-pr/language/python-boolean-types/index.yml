@@ -8,7 +8,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: module
-  ms.service: azure-python
   ms.devlang: python
 title: Use Boolean logic in Python
 summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.

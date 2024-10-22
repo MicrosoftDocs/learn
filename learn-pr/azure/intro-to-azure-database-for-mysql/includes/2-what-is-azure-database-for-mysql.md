@@ -5,7 +5,7 @@ To help you decide whether your organization can benefit from migrating to Azure
 With a DBaaS, organizations can set up and access databases in the cloud without the need to manage virtual machines (VMs) and other underlying infrastructure. Azure Database for MySQL, a fully managed service, exemplifies this by enabling the development of database applications on a DBaaS platform, with all configuration and maintenance handled by Microsoft Azure.
 
 > [!NOTE]  
-> DBaaS apps fall within the broader category of Platform as a Service (PaaS) offerings.
+> DBaaS offerings fall within the broader category of Platform as a Service (PaaS) offerings.
 
 ### What is MySQL?
 
@@ -39,9 +39,10 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
   - Underlying hardware
   - OS
   - Database engine
-  - Flexibility to select your scheduled maintenance window
+  
+  The service also offers you the flexibility to select your scheduled maintenance window.
 
-- Predictable performance, with features like auto-scaling IOPS and Accelerated Logs, which help to match workload demands.
+- Predictable performance, with features like auto-scaling of IOPS and Accelerated Logs, which help to match workload demands.
 - Elastic scaling and optimized costs, with capabilities for starting/stopping the server and burstable compute tier.
 - Enterprise-grade security and compliance features to help protect sensitive data at rest and while in transit.
 - Advanced security features, including data encryption with Customer Managed Keys, private connectivity with Azure Private Link, and simplified threat protection using Microsoft Defender for Cloud.
@@ -90,7 +91,7 @@ You can deploy MySQL on Azure in different ways. The following table identifies 
 | Azure Database for MySQL | A fully managed DBaaS platform with extensive user configuration and control. |
 | MySQL on Azure VMs | An IaaS-based option giving full control over the database implementation. |
 
-Here is a closer examination of the differences in features:
+Here is a summary of the differences in features:
 
 - **MySQL version support**:
   - Azure Database for MySQL supports MySQL versions 5.7 and 8.0, with automated major and minor version upgrades.
@@ -98,30 +99,28 @@ Here is a closer examination of the differences in features:
 - **Compute scaling**:
   - Both options provide scalable resources to accommodate varying load demands.
 - **Network connectivity**:
-  - All options support:
+  - Both options support:
     - Public endpoints with a server firewall.
-    - Private access with Private Link support is available for MySQL on Azure VMs.
-    - Private access with Virtual Network integration is available for Azure Database for MySQL.
+    - Private access with Private Link support.
+    - Private access with Virtual Network integration.
 - **SSL/TLS connectivity**:
-  - Supported across all hosting methods to ensure secure data transmission.
+  - Supported across both hosting methods to ensure secure data transmission.
 - **Storage and IOPS**:
-  - Azure Database for MySQL supports storage sizes between 5 gigabytes (GiBs) and 32 terabytes (YiBs). It also supports automated storage scaling and auto-scaling of IOPS.
+  - Azure Database for MySQL supports storage sizes between 5 gigabytes (GiBs) and 32 terabytes (TiBs). It also supports automated storage scaling and auto-scaling of IOPS.
   - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage or IOPS scaling.
-- **Updating and patching**:
-  - OS updates:
-    - Automatic for Azure Database for MySQL.
-    - Managed by end users for MySQL on Azure VMs.
-  - MySQL patching:
-    - Automatic for Azure Database for MySQL.
-    - Managed by end users for MySQL on Azure VMs.
+- **Updating and patching of OS and MySQL**:
+  - Automatic for Azure Database for MySQL.
+  - Managed by end users for MySQL on Azure VMs.
 - **High availability**:
   - Azure Database for MySQL supports built-in high availability with multiple availability zones.
   - MySQL on Azure VMs requires that you custom-manage these settings.
 - **Data encryption at rest**:
   - Azure Database for MySQL supports data encryption at rest with service-managed or customer-managed keys.
-  - MySQL on Azure VMs doesn't support data encryption at rest.
+  - Implementing data encryption at rest for MySQL on Azure VMs requires manual intervention.
 - **Backup**:
   - Azure Database for MySQL provides automated backups with configurable retention up to 35 days and now supports long-term retention up to 10 years.
   - Backups on Azure VMs require manual management. Additionally, Azure Database for MySQL comes with other built-in features like monitoring and alerting, the ability to scale out up to 10 read replicas, Microsoft Entra ID authentication, and Microsoft Defender for Cloud support that are either not available or need manual management while running MySQL on Azure VMs.
+
+Additionally, Azure Database for MySQL comes with other built-in features like monitoring and alerting, the ability to scale out up to 10 read replicas, Microsoft Entra ID authentication, and Microsoft Defender for Cloud support that are either unavailable or need manual management while running MySQL on Azure VMs.
 
 In the next unit, you examine Azure Database for MySQL in more detail.

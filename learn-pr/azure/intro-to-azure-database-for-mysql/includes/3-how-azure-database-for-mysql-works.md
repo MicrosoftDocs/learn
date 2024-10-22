@@ -2,11 +2,16 @@ In this unit, you explore how Azure Database for MySQL works, beginning with its
 
 ## Azure Database for MySQL architecture
 
-The following diagram shows an instance of Azure Database for MySQL—Flexible Server configured with Azure Premium Storage (for data and logs) and access to locally redundant storage (for backup).
+The following diagram describes the architecture of an instance of Azure Database for MySQL - Flexible Server.
 
 :::image type="content" source="../media/3-how-azure-database-for-mysql-works/flexible-server.png" alt-text="Screenshot of A detailed architecture diagram of Azure Database for MySQL in a typical organization as previously described." lightbox="../media/3-how-azure-database-for-mysql-works/flexible-server.png":::
 
-While the MySQL flexible server is hosted in Availability zone 1, the instance can also use the other availability zones that are present. In addition, various client apps are connected to the MySQL flexible server.
+1. The MySQL instance runs on an Azure VM.
+2. Data and logs are stored in Azure Premium Storage.
+3. The data is replicated three times across locally redundant storage for backup and resiliency. The service also provides options to configure zone-redundant or geo-redundant storage backups.
+4. In addition, you have the option to co-locate your various client apps connected to the MySQL flexible server, within the same availability zone.
+
+You can further opt in for same-zone or zone-redundant high availability, which automatically provisions and maintain a standby replica.
 
 ### How high availability works
 
@@ -46,7 +51,7 @@ Scaling in Azure Database for MySQL involves adjusting the computing resources a
 
 Autoscale IOPS (Input/Output Operations Per Second) is a feature that dynamically adjusts the I/O throughput based on the current workload. This is particularly useful for unpredictable or spike-prone workload patterns, as it ensures that the database can handle sudden increases in load without manual intervention.
 
-- **IOPS scaling based on load**: When the workload increases and more I/O throughput is required, the Autoscale feature automatically increases the IOPS limit up to the maximum allowed in the chosen compute tier. Conversely, IOPS can be reduced during periods of low activity to minimize costs.
+- **IOPS scaling based on load**: When the workload increases and more I/O throughput is required, the Autoscale feature automatically increases the IOPS limit up to the maximum allowed in the chosen compute tier. Conversely, IOPS are reduced during periods of low activity to minimize costs.
 - **Cost-effectiveness**: By automatically adjusting IOPS based on actual usage, you only pay for the IOPS you use rather than over-provision resources to handle peak loads, which might only occur sporadically.
 
 #### Best practices for scaling
@@ -58,7 +63,5 @@ By understanding and using these scaling mechanisms, you can ensure that your Az
 ### Configure and tune engine behavior
 
 To easily configure and customize server variables and parameters in Azure Database for MySQL, you can use the Azure portal, the Azure CLI, or the REST API to adjust settings such as query cache size, connection timeouts, and storage engine preferences, ensuring optimal performance and behavior for your specific workload.
-
-Replication in Azure Database for MySQL is managed using asynchronous replication, such that data from the primary server is replicated to a read-only replica server, allowing for load balancing and enhanced data availability. You can also use read replicas to offload read-only queries from the primary server, improving performance and reducing the load on the primary instance.
 
 Next, consider whether Azure Database for MySQL meets the needs of your organization, its apps, and database workloads.
