@@ -16,16 +16,16 @@ quiz:
     questions:
     - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
       choices:
-      - content: "Individual"
+      - content: "Individual."
         isCorrect: false
         explanation: "This option is incorrect because the Individual plan doesn't include enterprise-grade security and privacy features. The Individual plan is for personal use and lacks the advanced security measures required by businesses and enterprises."
-      - content: "Business”
+      - content: "Business.”
         isCorrect: false
         explanation: "This option is partially correct as the Business plan does include enterprise-grade security and privacy features. However, it isn't the only correct answer.”
-      - content: "Enterprise”
+      - content: "Enterprise.”
         isCorrect: false
         explanation: "This option is also partially correct because the Enterprise plan includes enterprise-grade security and privacy features. But it isn't the only correct answer."
-      - content: "Both B and C” 
+      - content: "Both B and C.” 
         isCorrect: true
         explanation: "This option is the correct answer because both the Business and Enterprise plans offer enterprise-grade security and privacy features."
     - content: “What should you do if GitHub Copilot isn't providing code suggestions?”
