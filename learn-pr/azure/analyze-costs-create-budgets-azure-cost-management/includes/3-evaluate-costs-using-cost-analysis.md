@@ -8,7 +8,7 @@ This unit describes how you can use cost analysis, with several different defaul
 
 **Budget:** This view shows the planned spending limit for the selected scope, if available.
 
-**Pivot (donut) charts:** This view provides dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Costs are categorized by service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
+**Pivot (donut) charts:** This view provides dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Cost categories include service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
 
 ![Screenshot of initial view of cost analysis in the Azure portal.](../media/3-cost-analysis.png)
 
@@ -93,7 +93,7 @@ Go to **Subscriptions**, select a subscription from the list, and in the menu pa
 
 ![Screenshot that shows the New export panel.](../media/3-basics-exports.png)
 
-Select the type of export you'd like. In this case we'll **Create your own export**. Specify the type of data as **Cost and usage details (actual)**, add a name, and choose frequency as daily for your scheduled export. You can also provide a description. Once complete, add an **Export prefix** to ensure the exports have unique names.
+Select the type of export you'd like. In this case, we'll **Create your own export**. Specify the type of data as **Cost and usage details (actual)**, add a name, and choose frequency as daily for your scheduled export. You can also provide a description. Once complete, add an **Export prefix** to ensure the exports have unique names.
 
 Select **Next** to specify the storage type and select your subscription. If using an existing storage account, select it from the dropdown or choose **Create new** to add one. You can also create a new resource group if creating a new storage account. Specify the storage container and the directory path to which you'd like the export file to go. Configure the storage account location, format, and compression type. Select **Review + create** and **Create**.
 
