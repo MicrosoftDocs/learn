@@ -1,4 +1,4 @@
-Deleting a document is similar, in process, to reading an item. You will need the id and the value of the partition key path.
+Deleting a document is similar, in process, to reading an item. You need the id and the value of the partition key path.
 
 ```csharp
 string id = "027D0B9A-F9D9-4C96-8213-C8546C4AAE71";
