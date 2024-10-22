@@ -23,3 +23,6 @@ Even though we updated the document already, we don’t have to read a new item 
 ```csharp
 await container.ReplaceItemAsync<Product>(saddle);
 ```
+
+> [!NOTE]
+> Cosmos DB supports **optimistic concurrency** to check if an item has been updated since the last read and return a conflict error if it has. Details on how to use this are within the SDK documentation.
