@@ -38,9 +38,9 @@ By understanding and addressing these issues, you can ensure that content exclus
 
 If GitHub Copilot is not generating suggestions or the suggestions are unsatisfactory, there are several techniques you can use to prompt Copilot to provide better results:
 
-1. **Provide clear context**: Ensure that your code provides clear context for GitHub Copilot to generate relevant suggestions. This includes writing descriptive comments and using meaningful variable names.
-1. **Use Copilot commands**: In some IDEs, you can use specific commands to prompt Copilot to generate suggestions. For example, in Visual Studio Code, you can use the Ctrl+Enter shortcut to trigger GitHub Copilot.
-1. **Adjust prompt length**: Sometimes, providing a longer or more detailed prompt can help Copilot generate better suggestions. Experiment with different prompt lengths to see what works best.
+- **Provide clear context**: Ensure that your code provides clear context for GitHub Copilot to generate relevant suggestions. This includes writing descriptive comments and using meaningful variable names.
+- **Use Copilot commands**: In some IDEs, you can use specific commands to prompt Copilot to generate suggestions. For example, in Visual Studio Code, you can use the Ctrl+Enter shortcut to trigger GitHub Copilot.
+- **Adjust prompt length**: Sometimes, providing a longer or more detailed prompt can help Copilot generate better suggestions. Experiment with different prompt lengths to see what works best.
 
 By using these techniques, you can improve the quality of GitHub Copilot's suggestions and enhance your coding experience.
 
