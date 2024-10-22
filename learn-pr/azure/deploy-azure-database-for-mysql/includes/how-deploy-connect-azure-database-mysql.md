@@ -80,7 +80,7 @@ After you address the networking and certificate requirements, you should be abl
 - Azure Data Studio with the MySQL extension
   - Launch Azure Data Studio and make sure the MySQL extension is installed.
   - Select the **New Connection** icon or navigate to **File** > **New Query**.
-  - In the connection dialog box, fror **Connection type**, select **MySQL**.
+  - In the connection dialog box, for **Connection type**, select **MySQL**.
   - Specify the **Connection details**:
     - **Server name**: `<server-name>.mysql.database.azure.com`
     - **Username**: `<username>`

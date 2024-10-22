@@ -8,10 +8,10 @@ The following diagram describes the architecture of an instance of Azure Databas
 
 1. The MySQL instance runs on an Azure VM.
 2. Data and logs are stored in Azure Premium Storage.
-3. The data is replicated three times across locally-redundant storage for backup and resiliency. The service also provides options to configure zone-redundant or geo-redundant storage backups.
+3. The data is replicated three times across locally redundant storage for backup and resiliency. The service also provides options to configure zone-redundant or geo-redundant storage backups.
 4. In addition, you have the option to co-locate your various client apps connected to the MySQL flexible server, within the same availability zone.
 
-You can further opt-in for same-zone or zone-redundant high availability, which automatically provisions and maintain a standby replica.
+You can further opt in for same-zone or zone-redundant high availability, which automatically provisions and maintain a standby replica.
 
 ### How high availability works
 

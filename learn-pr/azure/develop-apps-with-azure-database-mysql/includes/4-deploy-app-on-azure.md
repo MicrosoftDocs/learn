@@ -80,7 +80,7 @@ By leveraging these tools, you can ensure that both your app and its underlying 
 
 ## Add intelligence by integrating with Azure AI Search and Azure OpenAI
 
-The simplest way to enhance the intelligence of MySQL applications is to include the rich capabilities of semantic search and generative AI by building a solution using the Retrieval Augmented Generation (RAG) architecture with Azure AI Search and Azure Open AI services. RAG is an architecture that augments the natural language understanding and generation capabilities of LLMs like ChatGPT by adding an information retrieval system like Azure AI Search which works with your data stored in data sources like Azure Database for MySQL.
+The simplest way to enhance the intelligence of MySQL applications is to include the rich capabilities of semantic search and generative AI by building a solution using the Retrieval Augmented Generation (RAG) architecture with Azure AI Search and Azure OpenAI services. RAG is an architecture that augments the natural language understanding and generation capabilities of LLMs like ChatGPT by adding an information retrieval system like Azure AI Search which works with your data stored in data sources like Azure Database for MySQL.
 
 A sample RAG pattern for a MySQL AI solution looks like this:
 

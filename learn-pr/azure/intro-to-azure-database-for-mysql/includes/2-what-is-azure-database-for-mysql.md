@@ -39,6 +39,7 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
   - Underlying hardware
   - OS
   - Database engine
+  
   The service also offers you the flexibility to select your scheduled maintenance window.
 
 - Predictable performance, with features like auto-scaling of IOPS and Accelerated Logs, which help to match workload demands.

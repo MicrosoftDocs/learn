@@ -10,6 +10,6 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-database-for-mysql.md)]

@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: "MySQL Workbench"
       isCorrect: false
-      explanation: "MySQL Workbench does not readily allow you to connect to Azure Database for MySQL using Microsoft Entra ID authentication. You are required to acquire an Entra ID token first, and then serve it as the password."
+      explanation: "MySQL Workbench does not readily allow you to connect to Azure Database for MySQL using Microsoft Entra ID authentication. You are required to acquire a Microsoft Entra ID token first, and then serve it as the password."
     - content: "Azure Data Studio"
       isCorrect: true
       explanation: "Azure Data Studio is a GUI client tool that allows you to connect to Azure Database for MySQL using Microsoft Entra ID authentication."

@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "What is required to manage high availability for MySQL on Azure VMs?"
     choices:
-    - content: "Azure Portal interface"
+    - content: "Azure portal interface"
       isCorrect: false
-      explanation: "Incorrect. While the Azure Portal is used for management, setting up high availability specifically requires more than just interface manipulation."
+      explanation: "Incorrect. While the Azure portal is used for management, setting up high availability specifically requires more than just interface manipulation."
     - content: "Manual configuration of replication and failover"
       isCorrect: true
       explanation: "Correct. High availability for MySQL on Azure VMs requires manual setup of replication and failover mechanisms."
