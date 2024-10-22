@@ -12,7 +12,7 @@ metadata:
 title: Management and Customization Considerations with GitHub Copilot
 summary: In this module, we review management and customization considerations with GitHub Copilot. 
 abstract: |
-  By the end of this module, you're be able to:
+  By the end of this module, you'll be able to:
     -	Understand the GitHub Copilot plans and their associated management and customization features
     -	Gain insight into GitHub Copilot's contractual protections and disabling matching public code
     -	Know how to managing content exclusions
