@@ -1,4 +1,4 @@
-To configure an Azure Function to use an Azure Cosmos DB for NoSQL binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you are using the Azure portal, this can be done automatically on your behalf. Once you have the app setting with the connection string, you can leverage the setting in bindings for your Azure Function.
+To configure an Azure Function to use an Azure Cosmos DB for NoSQL binding, you should first create an app setting in the function instance with the connection string of the Azure Cosmos DB account. If you're using the Azure portal, the app setting is done automatically on your behalf. Once you have the app setting with the connection string, you can use the setting in bindings for your Azure Function.
 
 > [!NOTE]
 > The following examples assume that an app setting named **cosmosdbsqlconnstr** is already configured in the function instance with the connection string of the Azure Cosmos DB account.
@@ -13,18 +13,18 @@ The function.json file is the configuration file for all bindings within a funct
 
 ## Trigger function on changes in the change feed
 
-Configuring the Azure Cosmos DB for NoSQL trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but are not limited to:
+Configuring the Azure Cosmos DB for NoSQL trigger requires a JSON object within the bindings array. This object contains various properties that you can configure to change the behavior of the trigger. These properties include, but aren't limited to:
 
 | **Property** | **Description** |
 | ---: | :--- |
-| **type** | This is statically set to **cosmosDBTrigger** |
-| **name** | This is the name used for the method parameter that will map to this binding in code |
-| **direction** | For a trigger, this will be set to **in** |
-| **connection** | This is the name of the connection string in the function’s app settings |
+| **type** | Set to **cosmosDBTrigger** |
+| **name** | Name used for the method parameter that maps to this binding in code |
+| **direction** | For a trigger, set to **in** |
+| **connection** | Name of the connection string in the function’s app settings |
 | **databaseName** | The name of the database, which contains the container to monitor |
 | **containerName** | The name of the container to monitor |
 | **leaseContainerName** | The name of the container used to manage change feed leases |
-| **createLeaseContainerIfNotExists** | A boolean value to indicate if the Azure Functions runtime should create the lease container on your behalf if it does not already exist |
+| **createLeaseContainerIfNotExists** | A boolean value to indicate if the Azure Functions runtime should create the lease container on your behalf if it doesn't already exist |
 
 An example of a trigger that monitors changes in the **cosmicworks** database and **products** container is included here. This trigger will use the change feed to monitor if new items are created or if existing items are updated.
 
@@ -41,11 +41,11 @@ An example of a trigger that monitors changes in the **cosmicworks** database an
 }
 ```
 
-This trigger will start the function when there is a new batch of items to process from the change feed.
+The trigger will start the function when there's a new batch of items to process from the change feed.
 
 ## Bind the function's input parameter to an item or query
 
-The bindings array can optionally have multiple input bindings within the bindings array. There are two types of input bindings; input bindings that perform a point read and lookup a single item, and input bindings that perform a SQL query and return multiple items.
+The bindings array can optionally have multiple input bindings within the bindings array. There are two types of input bindings. The first is the input bindings that perform a point read and lookup a single item. The second is the input bindings that perform a SQL query and return multiple items.
 
 ### Point read input binding
 
@@ -53,13 +53,13 @@ A point read input binding uses an item's unique identifier and partition key va
 
 | **Property** | **Description** |
 | ---: | :--- |
-| **type** | This input binding has a static type of **cosmosDB** |
+| **type** | The input binding has a static type of **cosmosDB** |
 | **direction** | Input bindings will be set to **in** |
 | **id** | Unique identifier for the target item |
 | **partitionKey** | Partition key value for the target item |
 
 > [!NOTE]
-> Duplicate properties, such as **databaseName** and **containerName**, are excluded from this table as they were described earlier in this unit.
+> Duplicate properties, such as **databaseName** and **containerName**, are excluded from the table as they were described earlier in the unit.
 
 An example of an input binding that reads an item with an **id** of **91AA100C-D092-4190-92A7-7C02410F04EA** and a **partition key** of **F3FBB167-11D8-41E4-84B4-5AAA92B1E737** is included here.
 
@@ -76,7 +76,7 @@ An example of an input binding that reads an item with an **id** of **91AA100C-D
 }
 ```
 
-This input binding, as configured, will include a single item as an input value to the function.
+The input binding, as configured, will include a single item as an input value to the function.
 
 ### SQL query input binding
 
@@ -86,7 +86,7 @@ A SQL query input binding uses a SQL query to look up multiple items and provide
 | ---: | :--- |
 | **sqlQuery** | SQL query used to look up multiple items |
 
-Included here is an example of this type of input binding that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
+Included here's an example of this type of input binding that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
 
 ```json
 {
@@ -100,7 +100,7 @@ Included here is an example of this type of input binding that performs a SQL qu
 }
 ```
 
-This input binding, as configured, will include multiple items as an input value to the function.
+This input binding, as configured, includes multiple items as an input value to the function.
 
 ## Output items from the function
 
@@ -111,7 +111,7 @@ In both examples, the output binding is configured by manipulating only a few pr
 | **Property** | **Description** |
 | ---: | :--- |
 | **type** | This output binding has a static type of **cosmosDB** |
-| **direction** | Output bindings will be set to **out** |
+| **direction** | Set the output bindings to **out** |
 
 An example of an output binding that writes one or more items to the **cosmicworks** container is included here.
 
