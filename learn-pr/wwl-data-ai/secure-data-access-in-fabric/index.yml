@@ -11,10 +11,10 @@ metadata:
 title: Secure data access in Microsoft Fabric
 summary: Microsoft Fabric uses a multi-layer security model with access controls at different levels. 
 abstract: |
-  In this module, you'll:
-  - Learn about the permissions model in Microsoft Fabric.
-  - Learn how to configure workspace and item permissions.
-  - Learn how to apply granular permissions.
+  In this module, you'll learn how to:
+  - Describe the permissions model in Microsoft Fabric.
+  - Configure workspace and item permissions.
+  - Apply granular permissions.
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/generic-badge.svg
