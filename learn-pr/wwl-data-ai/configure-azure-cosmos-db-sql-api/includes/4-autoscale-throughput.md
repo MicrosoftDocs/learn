@@ -7,7 +7,7 @@ With all of this information in mind, we could define a range. This range would 
 
 ![Application with usage oscillating between maximum potential spend and minimum performance](../media/4-autoscale-1.png)
 
-With Azure Cosmos DB autoscale, we can define a range of request units per second (RU/s) to scale our database or container automatically and instantly. The throughput RU/s is scaled based on real-time usage instantly.
+With Azure Cosmos DB autoscale, we can define a range of request units per second (RU/s) to scale our container automatically and instantly. The throughput RU/s is scaled based on real-time usage instantly.
 
 ![Autoscale between max and min RU/s](../media/4-autoscale-2.png)
 
