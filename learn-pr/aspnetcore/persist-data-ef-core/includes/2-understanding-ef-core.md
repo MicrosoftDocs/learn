@@ -1,4 +1,4 @@
-Entity Framework Core (EF Core) is an *object-relational mapper (ORM)*. An ORM provides a layer between the domain model that you implement in code and a database. EF Core is a data access API that allows you to interact with the database by using .NET *plain old Common Runtime Language (CLR) objects (POCOs)* and strongly typed *Language Integrated Query (LINQ)* syntax.
+Entity Framework Core (EF Core) is an *object-relational mapper (ORM)*. An ORM provides a layer between the domain model that you implement in code and a database. EF Core is a data access API that allows you to interact with the database by using .NET *plain old Common Runtime Language (CLR) objects (POCOs)* and the strongly typed *Language Integrated Query (LINQ)* syntax.
 
 In EF Core, the database is abstracted behind .NET POCOs. EF Core handles direct interaction with the underlying database. When you use this API, you can spend less time translating requests to and from the database and writing SQL and more time focusing on important business logic.
 
@@ -8,7 +8,7 @@ With EF Core, you can:
 - Add, modify, and delete data by calling methods on the entities.
 - Map multiple database tables to a single C# entity.
 - Handle concurrency issues that arise when multiple users simultaneously attempt to update the same record.
-- Use strongly typed LINQ (<xref:System.Linq?displayProperty=nameWithType>) syntax to query the database.
+- Use the LINQ (<xref:System.Linq?displayProperty=nameWithType>) syntax to query the database.
 - Access [multiple databases](/ef/core/providers/), including SQL Server, SQLite, Azure Cosmos DB, PostgreSQL, MySQL, and more.
 - Build your domain model from an existing database.
 - Manage your database schema based on your domain model.
@@ -32,7 +32,7 @@ The EF Core Provider translates object graph changes to SQL.
 
 The database provider:
 
-- Is a plug-in library that's designed for a specific database engine, such as SQL Server, Azure Cosmos DB, or PostgreSQL.
+- Is a plug-in library designed for a specific database engine, such as SQL Server, Azure Cosmos DB, or PostgreSQL.
 - Translates method calls and LINQ queries to the database's native SQL dialect.
 - Extends EF Core to enable functionality that's unique to the database engine.
 
@@ -51,10 +51,10 @@ In real-world projects, data models change as app features are implemented. As n
 
 When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration. EF Core compares the current model against a snapshot of the previous model to determine the differences. C# code to implement the changes is generated. You can modify the C# files for custom behaviors or to seed data. The files are tracked in your project's source control like any other source file.
 
-After a new migration is generated, it can be applied to a database in various ways. EF Core records all applied migrations in a special history table. The history table keeps a record of which migrations have been applied.
+After a new migration is generated, it can be applied to a database in various ways. EF Core records all applied migrations in a special history table. The history table keeps a record of which migrations were applied.
 
 ### Reverse engineering
 
-Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases that are managed by a database administrator.
+Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases that a database administrator manages.
 
-In the next unit, you'll get started with EF Core by using a migration.
+In the next unit, you get started with EF Core by using a migration.
