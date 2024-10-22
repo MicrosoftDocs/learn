@@ -1,4 +1,4 @@
-Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL database, Azure Cosmos DB is both nonrelational and horizontally scalable or scales out. This ability to scale out is achieved by adding more nodes, or partitions, to a container.. 
+Azure Cosmos DB is Microsoft's fully managed NoSQL database on Azure. As a NoSQL database, Azure Cosmos DB is both nonrelational and horizontally scalable or scales out. This ability to scale out is achieved by adding more nodes, or partitions, to a container.
 
 This ability to scale out allows containers to grow to a theoretically infinite size. So as a container grows in size, the container can also handle increasing numbers of requests, providing the same performance regardless of how large the container gets.
 
