@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 3
 quiz:
   questions:
   - content: What is order of evaluation of access in Fabric?
