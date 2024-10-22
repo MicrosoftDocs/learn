@@ -31,6 +31,7 @@ units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.choose-between-provisioned-throughput-serverless
 - learn.wwl.configure-azure-cosmos-db-sql-api.choose-between-standard-autoscale-provisioned-throughput
 - learn.wwl.configure-azure-cosmos-db-sql-api.provision-throughput-at-container-level
+- learn.wwl.configure-azure-cosmos-db-sql-api.provision-throughput-at-database-level
 - learn.wwl.configure-azure-cosmos-db-sql-api.configure-container-time-to-live-(TTL)-value
 - learn.wwl.configure-azure-cosmos-db-sql-api.exercise-configure-throughput-for-azure-portal
 - learn.wwl.configure-azure-cosmos-db-sql-api.knowledge-check
