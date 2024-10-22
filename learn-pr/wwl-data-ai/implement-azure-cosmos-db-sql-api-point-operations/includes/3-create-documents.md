@@ -17,7 +17,7 @@ Product saddle = new()
 
 Let’s infer there’s already a variable of type Microsoft.Azure.Cosmos.**Container** named **container**.
 
-We can asynchronously invoke the **CreateItemAsync\<\>** method passing in the generic Product type and the new item variable into the constructor.
+We can asynchronously invoke the **CreateItemAsync\<\>** method passing in the Product type and the new item variable into the constructor.
 
 ```csharp
 await container.CreateItemAsync<Product>(saddle);
