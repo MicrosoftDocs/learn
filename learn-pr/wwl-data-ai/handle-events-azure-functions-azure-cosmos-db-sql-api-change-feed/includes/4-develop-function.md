@@ -6,7 +6,7 @@ The code for a change feed trigger includes a method parameter of type **IReadOn
 
 If you don't want to define your own type or if your container has multiple different objects, you can set this to `dynamic`, deserialize the incoming item to a dynamic object, then inspect properties within it to determine which POCO you want to deserialize into for further processing.
 
-In this module, we'll define a type in C# to represent the data in a Azure Cosmos DB for NoSQL container.
+In this module, we'll define a type in C# to represent the data in an Azure Cosmos DB for NoSQL container.
 
 ```csharp
 public class Product
