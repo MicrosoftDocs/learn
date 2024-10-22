@@ -22,4 +22,8 @@ Serverless accounts can only run in a single Azure region but can be used with A
 
 Provisioned throughput allows you to store unlimited data in a container.
 
-Serverless only allows up to 50 GB of data in a container.
+Serverless allows up to 1 TB of data in a container.
+
+## Migrating between serverless and provisioned throughput
+
+Serverless accounts are capable of being migrated to autoscale throughput if the container needs more resources than serverless can provide. Accounts can also be migrated from autoscale to serverless if needed.
