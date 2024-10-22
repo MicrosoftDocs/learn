@@ -8,7 +8,7 @@ The first step when providing apps to your organization is to add the apps to In
 
 ## Deploy
 
-After you've added the app to either Intune or Configuration Manager, you can deploy the app. In Intune, you assign the app to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Azure portal. Additionally, in some app stores, you can purchase app licenses in bulk for your company. Intune synchronizes data with these stores, allowing you to deploy and track license usage for these types of apps right from the Intune administration console. In Configuration Manager, you deploy the app to a device collection based on the Windows OS requirements that you select.
+After you add the app to either Intune or Configuration Manager, you can deploy the app. In Intune, you assign the app to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Azure portal. Additionally, in some app stores, you can purchase app licenses in bulk for your company. Intune synchronizes data with these stores, allowing you to deploy and track license usage for these types of apps right from the Intune administration console. In Configuration Manager, you deploy the app to a device collection based on the Windows OS requirements that you select.
 
 ## Configure
 
@@ -17,7 +17,7 @@ Intune and Configuration Manager both provide methods to configure app installat
 - iOS/iPadOS app configuration policies supply settings for compatible iOS/iPadOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to which it must connect.
 - Managed browser policies help you to configure settings for Microsoft Edge, which replaces the default device browser and lets you restrict the websites that your users can visit.
 - You can set specific settings for Microsoft Outlook when you install it.
-- Configure whether to install certain apps in User or System context.
+- You can configure whether to install certain apps in User or System context.
 - Rules to detect if the app is installed, needs to be updated, or has specific installation dependencies.
 
 ## Protect
@@ -25,7 +25,7 @@ Intune and Configuration Manager both provide methods to configure app installat
 Intune gives you many ways to help protect the data in your apps. The main methods are:
 
 - Conditional Access, which controls access to email and other services based on conditions that you specify. Conditions include device types or compliance with a device compliance policy that you deployed.
-- App protection policies work with individual apps to help protect the company data that they use. For example, you can restrict copying data between unmanaged apps and apps that you manage. Or, you can prevent apps from running on devices that have been jailbroken or rooted.
+- App protection policies work with individual apps to help protect the company data that they use. For example, you can restrict copying data between unmanaged apps and apps that you manage. Or, you can prevent apps from running on devices that were jailbroken or rooted.
 
 ## Retire
 
