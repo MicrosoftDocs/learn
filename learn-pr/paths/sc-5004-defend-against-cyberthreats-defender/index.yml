@@ -17,7 +17,7 @@ summary: |
   Implement the Microsoft Defender for Endpoint environment to manage devices, perform investigations on endpoints, manage incidents in Defender XDR, and use Advanced Hunting with Kusto Query Language (KQL) to detect unique threats.
   > [!NOTE] 
   > You'll need to have access to a Microsoft 365 E5 Tenant with a Microsoft Defender for Endpoint P2 license to perform the exercises.  
-  iconUrl: /training/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
 hidden: true
 levels:
 - intermediate
