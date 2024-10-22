@@ -33592,7 +33592,7 @@
     },
     {
       "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/create-stretched-volumes-configure-replication.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/manage-azure-stack-hci-volumes/create-stretched-volumes-configure-replication",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/manage-volumes?tabs=windows-admin-center",
       "redirect_document_id": false
     },
     {
