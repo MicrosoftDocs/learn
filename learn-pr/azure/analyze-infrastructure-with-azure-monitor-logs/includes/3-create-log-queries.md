@@ -1,6 +1,6 @@
 You can use Azure Monitor log queries to extract information from log data. Querying is an important part of examining the log data that Azure Monitor captures.
 
-In the example scenario, the operations team will use Azure Monitor log queries to examine the health of its system.
+In the example scenario, the operations team uses Azure Monitor log queries to examine the health of its system.
 
 ## Write Azure Monitor log queries by using Log Analytics
 
@@ -20,7 +20,7 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
 You can use the Kusto Query Language to query log information for your services running in Azure. A Kusto query is a read-only request to process data and return results. You'll state the query in plain text by using a data-flow model that's designed to make the syntax easy to read, write, and automate. The query uses schema entities that are organized in a hierarchy similar to that of Azure SQL Database: databases, tables, and columns.
 
-A Kusto query consists of a sequence of query statements, delimited by a semicolon (`;`). At least one statement is a tabular expression statement. A tabular expression statement formats the data arranged as a table of columns and rows.
+A Kusto query consists of a sequence of query statements delimited by a semicolon (`;`). At least one statement is a tabular expression statement. A tabular expression statement formats the data arranged as a table of columns and rows.
 
 A tabular expression statement's syntax has a tabular data flow from one tabular query operator to another, starting with a data source. A data source might be a table in a database or an operator that produces data. The data then flows through a set of data-transformation operators that are bound together with the pipe (`|`) delimiter.
 

@@ -14,23 +14,18 @@ Azure Database for MySQL – Flexible Server provides robust firewall settings t
 
 Microsoft Defender for Cloud monitors your database for unusual and potentially harmful activities. Defender for Cloud is provided as an addon plan to address potential threats without needing to build or manage security monitoring. Defender for Cloud has multicloud availability on Azure Database for MySQL - Flexible Server, in addition to MySQL on AWS Aurora and RDS. Defender for Cloud also supports PostgreSQL and MariaDB.
 
-Defender for Cloud sends detection alerts to the Azure portal and over email. Alerts include:
-
-- Details of the suspicious activity.
-
-- The associated MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge).
-
-- Suggestions to investigate and mitigate the attack.
-
-- More options to investigate with Microsoft Sentinel.
-
 Defender for Cloud detects database threats such as:
 
 - Brute force attacks: abnormally high sign in failures, and successful sign in after many failures.
-
 - Unusual sign in patterns: if a user logs in for the first time in over two months.
-
 - Unusual sign in locations: if a user logs in from an unusual Azure database, or other cloud provider, or an IP flagged as suspicious.
+
+Defender for Cloud sends detection alerts to the Azure portal and over email. Alerts include:
+
+- Details of the suspicious activity.
+- The associated MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge).
+- Suggestions to investigate and mitigate the attack.
+- More options to investigate with Microsoft Sentinel.
 
 ## Authentication
 
@@ -57,11 +52,3 @@ By default, Azure Database for MySQL - Flexible Server encrypts data at rest (in
 BYOK gives you full control of data encryption and key lifecycle: creation, uploading, rotation, and deletion. Managing the key lifecycle lets you align key rotation with company policies and enables separation of security team, DBA, and system administrator responsibilities.
 
 Enabling CMK requires linking a database to a user-assigned managed identity (UMI) and then specifying the key, which is stored in Azure Key Vault, to use. If you create a copy of the server, the copy will be encrypted, and you can also add managed identities and keys to existing replicas.
-
-To support this scenario, your MySQL flexible server and Azure Key Vault must be in the same:
-
-- Microsoft Entra ID tenant. If you move resources in Key Vault, then you'll need to reconfigure data encryption.
-
-- Region.
-
-If the MySQL flexible server loses access to the CMK in the key vault and a related error message is displayed, then within 10 minutes the MySQL flexible server will begin denying new connections and the server state will shift to Inaccessible.

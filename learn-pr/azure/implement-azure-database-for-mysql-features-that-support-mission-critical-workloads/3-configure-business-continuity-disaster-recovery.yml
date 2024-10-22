@@ -9,6 +9,6 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/3-configure-business-continuity-disaster-recovery.md)]
