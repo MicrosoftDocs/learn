@@ -28,11 +28,11 @@ After you configure the budget amount, select **Next** to configure budget alert
 
 Set an alert condition when 90% of the budget is reached.
 
-After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 3 – Evaluate your costs using Cost Analysis**.
+After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 3 - Evaluate your costs using Cost Analysis**.
 
 ![Screenshot of budget and spending shown in cost analysis with several charts and graphs.](../media/5-cost-analysis.png)
 
-In the preceding example, you created a budget for a subscription. However, you can also create a budget for a resource group. If you want to create a budget for a resource group, go to **Cost Management + Billing** > **Subscriptions** > select a subscription > **Resource groups** > select a resource group > **Budgets** > and then **Add** a budget.
+In the preceding example, you created a budget for a subscription. However, you can also create a budget for a resource group. If you want to create a budget for a resource group, go to **Resource groups** > select a resource group > **Cost Management** > **Budgets** > and then **Add** a budget.
 
 ## Action groups for budgets
 
