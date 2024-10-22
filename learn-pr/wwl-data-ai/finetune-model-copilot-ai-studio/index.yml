@@ -5,7 +5,7 @@ metadata:
   description: When you want to maximize the consistency in the responses of your custom copilot, you can fine-tune a language model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model in the Azure AI Studio.
   author: madiepev
   ms.author: madiepev
-  ms.date: 6/26/2024
+  ms.date: 10/22/2024
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub
