@@ -4022,3 +4022,13 @@ achievements:
   title: Transcribe large amounts of audio data with Batch Transcription
   summary: Batch transcription is a feature of Azure AI Speech that lets you transcribe large amounts of pre-recorded audio data asynchronously. Batch transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and problems are dealt with quickly and properly.
   iconUrl: /training/achievements/intro-to-batch-transcription.svg
+- uid: learn.wwl.operate-maintain-azure-stack-hci.trophy
+  type: trophy
+  title: Operate and maintain Azure Stack HCI
+  summary: This learning path explains how to manage Azure Stack HCI clusters, integrate Microsoft Azure services with Azure Stack HCI, manage Azure Stack HCI VM workloads, and manage Azure Kubernetes Service on Azure Stack HCI.
+  iconUrl: /training/achievements/operate-and-maintain-azure-stack-hci.svg
+- uid: learn.azure-stack-hci-foundations.trophy
+  type: trophy
+  title: Azure Stack HCI foundations
+  summary: This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+  iconUrl: /training/achievements/azure-stack-hci.svg

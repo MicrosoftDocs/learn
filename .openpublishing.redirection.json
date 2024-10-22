@@ -33524,6 +33524,16 @@
       "source_path": "learn-pr/wwl-azure/enable-defender-cloud-azure-subscription/3-upgrade-microsoft-defender-cloud.md",
       "redirect_url": "/training/modules/enable-defender-cloud-azure-subscription/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-stack-hci-foundations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/operate-maintain-azure-stack-hci/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/azure-arc-vm-management-overview",
+      "redirect_document_id": false
     }
   ]
 }
