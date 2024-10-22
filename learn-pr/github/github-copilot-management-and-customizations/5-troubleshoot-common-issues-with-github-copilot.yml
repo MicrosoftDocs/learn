@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-copilot-management-and-customizations.troubleshooting-common-issues-with-git-hub-copilot
-title: Troubleshooting Common Issues with GitHub Copilot
+title: Troubleshoot Common Issues with GitHub Copilot
 metadata:
-  title: Troubleshooting Common Issues with GitHub Copilot
+  title: Troubleshoot Common Issues with GitHub Copilot
   description: This content is part of the "Management and Customization Considerations with GitHub Copilot" module.
   ms.date: 10/18/2024
   author: a-a-ron
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-troubleshooting-common-issues-with-git-hub-copilot.md)]
+  [!include[](includes/5-troubleshoot-common-issues-with-github-copilot.md)]
