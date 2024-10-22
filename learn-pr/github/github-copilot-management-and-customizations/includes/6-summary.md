@@ -22,5 +22,4 @@ In this module we reviewed management and customization considerations through G
 
 
 ## How to provide feedback
-
 If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. This content is maintained by GitHub, and a team member will triage the request. Thank you for taking the time to improve our content!
