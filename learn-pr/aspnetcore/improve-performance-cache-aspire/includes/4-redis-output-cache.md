@@ -10,11 +10,11 @@ Use an output cache when you want to store complete HTML pages in web apps or, i
 
 ## Setting up output caching in .NET Aspire
 
-Installation and configuration steps are the same as for the distributed caching component, except that you install the output caching component in the consuming projects.
+Installation and configuration steps are the same as for the distributed caching integration, except that you install the output caching integration in the consuming projects.
 
 ### Configure the app host
 
-In the app host, install same Redis hosting component as you used for distributed caching:
+In the app host, install same Redis hosting integration as you used for distributed caching:
 
 ```dotnetcli
 dotnet add package Aspire.Hosting.Redis --prerelease
@@ -33,7 +33,7 @@ builder.AddProject<Projects.ConsumingProject>()
 
 ### Configure the consuming projects
 
-In the microservice projects, add the Redis output caching component:
+In the microservice projects, add the Redis output caching integration:
 
 ```dotnetcli
 dotnet add package Aspire.StackExchange.Redis.OutputCaching
@@ -95,5 +95,5 @@ app.MapGet("/products/{ProdId}", [OutputCache] (int ProdId) => $"The product ID 
 
 ## Learn more
 
-- [.NET Aspire StackExchange Redis output caching component](/dotnet/aspire/caching/stackexchange-redis-output-caching-component)
+- [.NET Aspire StackExchange Redis output caching integration](/dotnet/aspire/caching/stackexchange-redis-output-caching-integration)
 - [StackExchange Redis Configuration](https://stackexchange.github.io/StackExchange.Redis/Configuration.html)

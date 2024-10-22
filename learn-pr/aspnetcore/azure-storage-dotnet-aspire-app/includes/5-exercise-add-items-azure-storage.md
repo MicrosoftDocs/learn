@@ -1,4 +1,4 @@
-In this exercise, you'll use the .NET Aspire Azure Queue Storage component to send a message to a queue.
+In this exercise, you'll use the .NET Aspire Azure Queue Storage integration to send a message to a queue.
 
 > [!NOTE]
 > Visual Studio includes the Azurite emulator. In this lab, you'll use this tool to emulate an Azure Storage account on your local computer.
@@ -120,7 +120,7 @@ Let's use `git` to obtain a sample app, which doesn't yet use Azure Storage:
 
 ## Add the Azure Storage backing service
 
-Next, let's add the Azure Storage components to the .NET Aspire solution host project:
+Next, let's add the Azure Storage integrations to the .NET Aspire solution host project:
 
 1. Start Visual Studio, and select **Open a project or solution**.
 1. Navigate to the folder where you cloned the project.
@@ -168,7 +168,7 @@ Next, let's add the Azure Storage components to the .NET Aspire solution host pr
 
 ## Store a message in a queue
 
-Now, let's modify the **Catalog.API** project to use an Azure Storage Queue. You must start by installing the correct Aspire component:
+Now, let's modify the **Catalog.API** project to use an Azure Storage Queue. You must start by installing the correct Aspire integration:
 
 1. In **Solution Explorer**, right-click the **Catalog.API** project, select **Add**, and then select **.NET Aspire package**.
 1. In the search textbox, at the end of the existing text, type **Storage**.

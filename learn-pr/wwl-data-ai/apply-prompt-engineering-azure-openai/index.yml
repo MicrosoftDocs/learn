@@ -13,6 +13,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - ai-learning-hub
 title: Apply prompt engineering with Azure OpenAI Service
 summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model."
 abstract: |

@@ -1,7 +1,7 @@
-:::image type="content" source="../media/automatic-user-provisioning-c953c4ef.png" alt-text="Diagram of the process flow for auto user provisioning.  The flow shows you can have users in an on-premises or cloud human resource management system automatically provisioned as user accounts in Microsoft Entra ID.  The Microsoft Entra provisioning service can be called to create and manage the user and groups.":::
+:::image type="content" source="../media/automatic-user-provisioning-c953c4ef-55508669.png" alt-text="Diagram of the process flow for auto user provisioning in Microsoft Entra ID.  Auto provision users and groups.":::
 
 
-### Components of system SCIM (System for Cross-Domain Identity Management)
+### Components of SCIM (System for Cross-Domain Identity Management)
 
  -  **HCM system** \- Applications and technologies that enable Human Capital Management process and practices that support and automate HR processes throughout the employee lifecycle.
  -  **Microsoft Entra Provisioning Service** \- Uses the SCIM 2.0 protocol for automatic provisioning. The service connects to the SCIM endpoint for the application, and uses the SCIM user object schema and REST APIs to automate provisioning and de-provisioning of users and groups.

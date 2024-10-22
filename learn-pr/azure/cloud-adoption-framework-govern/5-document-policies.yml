@@ -8,7 +8,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 8
 content: |
   [!include[](includes/5-document-policies.md)]
 quiz:

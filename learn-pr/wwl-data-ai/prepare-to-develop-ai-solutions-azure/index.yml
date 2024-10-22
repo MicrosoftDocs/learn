@@ -8,6 +8,7 @@ metadata:
   ms.date: 12/10/2023
   ms.service: azure-ai-services
   ms.topic: module
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Prepare to develop AI solutions on Azure

@@ -1,6 +1,6 @@
-The .NET Aspire stack is designed to make you more productive and to help you build robust, scalable, and secure web applications. You can store structured relational data quickly by adding one of the supported Aspire components.
+The .NET Aspire stack is designed to make you more productive and to help you build robust, scalable, and secure web applications. You can store structured relational data quickly by adding one of the supported Aspire integrations.
 
-The current SQL-compliant database components are:
+The current SQL-compliant database integrations are:
 
 - PostgreSQL Databases
 - SQL Databases
@@ -10,33 +10,33 @@ The current SQL-compliant database components are:
 > [!NOTE]
 > Microsoft may add support for other database systems and third parties can also contribute, so this list may expand.
 
-In this unit, learn about three of these components, which databases have Entity Framework Core support, and how to use them to store and retrieve data.
+In this unit, learn about three of these integrations, which databases have Entity Framework Core support, and how to use them to store and retrieve data.
 
-## How to add a database component to your project
+## How to add a database integration to your project
 
-Whichever database you choose, the approach to add a .NET Aspire database component to your project is the same.
+Whichever database you choose, the approach to add a .NET Aspire database integration to your project is the same.
 
 In the app host project:
 
-- Install the .NET Aspire hosting component to the app host project.
+- Install the .NET Aspire hosting integration to the app host project.
 - Register a database and create a container for it in the solution's app host.
 - Pass a reference to the projects that needs access to the created container hosting the database.
 
 In the projects that use the database:
 
-- Add the .NET Aspire component with a NuGet package to the projects that require data access. Optionally, if there's a .NET Core Entity Framework (EF) component, you can use that instead.
+- Add the .NET Aspire integration with a NuGet package to the projects that require data access. Optionally, if there's a .NET Core Entity Framework (EF) integration, you can use that instead.
 - Register the data source, or database context for EF, in the project's _Program.cs_ file.
 - Use dependency injection to inject the data source into your services.
 
 Let's look at the specifics of how to do these steps for each of the supported databases.
 
-## Using the .NET Aspire PostgreSQL components
+## Using the .NET Aspire PostgreSQL integrations
 
-The .NET Aspire PostgreSQL components require changes in both the app host project and any microservices that use the databases.
+The .NET Aspire PostgreSQL integrations require changes in both the app host project and any microservices that use the databases.
 
 ### Configuring the app host
 
-Start by installing the appropriate hosting component to the app host:
+Start by installing the appropriate hosting integration to the app host:
 
 ```dotnetcli
 dotnet add package Aspire.Hosting.PostgreSQL --prerelease
@@ -58,21 +58,21 @@ var northernTradersCatalogAPI = builder.AddProject<Projects.NorthernTraders_Cata
 
 ### Configuring the consuming projects
 
-To install the .NET Aspire PostgreSQL component, use a command like this one in your .NET Aspire projects:
+To install the .NET Aspire PostgreSQL integration, use a command like this one in your .NET Aspire projects:
 
 ```dotnetcli
 dotnet add package Aspire.Npgsql --prerelease
 ```
 
-Or to use the .NET Aspire PostgreSQL Entity Framework Core component, use this command instead:
+Or to use the .NET Aspire PostgreSQL Entity Framework Core integration, use this command instead:
 
 ```dotnetcli
 dotnet add package Aspire.Npgsql.EntityFrameworkCore.PostgreSQL --prerelease
 ```
 
-Alternatively, you can use the **Add > .NET Aspire Component** shortcut in Visual Studio to install the component from the NuGet package manager:
+Alternatively, you can use the **Add > .NET Aspire package** shortcut in Visual Studio to install the integration from the NuGet package manager:
 
-:::image type="content" source="../media/adding-postgres-nuget-package.png" lightbox="../media/adding-postgres-nuget-package.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire PostgreSQL components.":::
+:::image type="content" source="../media/adding-postgres-nuget-package.png" lightbox="../media/adding-postgres-nuget-package.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire PostgreSQL integrations.":::
 
 Code in the _*.AppHost_ project's _Program.cs_ file creates the database and passes it to projects that want to use it:
 
@@ -84,7 +84,7 @@ var exampleProject = builder.AddProject<Projects.SampleProject>()
                             .WithReference(postgres);
 ```
 
-Some of the .NET Aspire database components also allow you to create a container for database management tools. To add **PgAdmin** to your solution to manage the PostgreSQL database, use this code:
+Some of the .NET Aspire database integrations also allow you to create a container for database management tools. To add **PgAdmin** to your solution to manage the PostgreSQL database, use this code:
 
 ```csharp
 var postgresdb = builder.AddPostgres("pg")
@@ -102,7 +102,7 @@ In any project where you want to use the database, you add a data source to repr
 builder.AddNpgsqlDataSource("postgresdb");
 ```
 
-Or to use Entity Framework Core component, register the database context:
+Or to use Entity Framework Core integration, register the database context:
 
 ```csharp
 builder.AddNpgsqlDbContext<YourDbContext>("postgresdb");
@@ -143,7 +143,7 @@ public class YourService(YourDbContext context)
 }
 ```
 
-## Configuring the PostgreSQL component
+## Configuring the PostgreSQL integration
 
 The .NET Aspire stack tries to reduce the amount of configuring you need to do. Using dependency injection and service discovery, you can access the database without needing to configure the connection strings in your projects.
 
@@ -171,7 +171,7 @@ Then in the configuration file, you can add the connection string:
 
 ### Using configuration providers
 
-.NET Aspire has a feature of components that allows them to support a `Microsoft.Extensions.Configuration`. The PostgreSQL component supports this feature, and by default it looks for settings using the `Aspire:Npgsql` key. In projects using *appsettings.json*, an example configuration might look like this:
+.NET Aspire has a feature of integrations that allows them to support a `Microsoft.Extensions.Configuration`. The PostgreSQL integration supports this feature, and by default it looks for settings using the `Aspire:Npgsql` key. In projects using *appsettings.json*, an example configuration might look like this:
 
 ```json
 {
@@ -186,9 +186,9 @@ Then in the configuration file, you can add the connection string:
 }
 ```
 
-The previous configuration is setting the connection string, enabling health checks, tracing, and metrics for the PostgreSQL component. You code then no longer needs to specify the connection string, just use `builder.AddNpgsqlDataSource();`.
+The previous configuration is setting the connection string, enabling health checks, tracing, and metrics for the PostgreSQL integration. You code then no longer needs to specify the connection string, just use `builder.AddNpgsqlDataSource();`.
 
-If you're using the PostgreSQL Entity Framework Core component, you can use the `Aspire:Npgsql:EntityFrameworkCore:PostgreSQL` key to configure the database context:
+If you're using the PostgreSQL Entity Framework Core integration, you can use the `Aspire:Npgsql:EntityFrameworkCore:PostgreSQL` key to configure the database context:
 
 ```json
 {
@@ -207,24 +207,24 @@ If you're using the PostgreSQL Entity Framework Core component, you can use the 
 }
 ```
 
-For more information on the Entity Framework configuration options, see the [.NET Aspire documentation](/dotnet/aspire/database/postgresql-entity-framework-component?tabs=dotnet-cli#configuration).
+For more information on the Entity Framework configuration options, see the [.NET Aspire documentation](/dotnet/aspire/database/postgresql-entity-framework-integration?tabs=dotnet-cli#configuration).
 
 ### Using inline delegates
 
-The last option is to pass a `configureSettings` inline delegate to the `AddNpgsqlDataSource` method. This delegate allows you to configure the settings for the database component directly with code:
+The last option is to pass a `configureSettings` inline delegate to the `AddNpgsqlDataSource` method. This delegate allows you to configure the settings for the database integration directly with code:
 
 ```csharp
 builder.AddNpgsqlDataSource(
     "postgresdb", static settings => settings.HealthChecks = false);
 ```
 
-## Using the .NET Aspire SQL Database components
+## Using the .NET Aspire SQL Database integrations
 
-The previous pattern is the same for the SQL Database component. You make changes in both the app host project and the microservices that consume the database service.
+The previous pattern is the same for the SQL Database integration. You make changes in both the app host project and the microservices that consume the database service.
 
 ### Configuring the app host
 
-To install the SQL database hosting component, use this command:
+To install the SQL database hosting integration, use this command:
 
 ```dotnet
 dotnet add package Aspire.Hosting.SqlServer --prerelease
@@ -246,19 +246,19 @@ var northernTradersCatalogAPI = builder.AddProject<Projects.NorthernTraders_Cata
 
 ### Configuring the consuming projects
 
-To install the .NET Aspire SQL Database component, use a command like this one in your .NET Aspire projects:
+To install the .NET Aspire SQL Database integration, use a command like this one in your .NET Aspire projects:
 
 ```dotnetcli
 dotnet add package Aspire.Microsoft.Data.SqlClient --prerelease
 ```
 
-Or to use the .NET Aspire SqlServer Entity Framework Core component, use this command instead:
+Or to use the .NET Aspire SqlServer Entity Framework Core integration, use this command instead:
 
 ```dotnetcli
 dotnet add package Aspire.Microsoft.EntityFrameworkCore.SqlServer --prerelease
 ```
 
-These NuGet packages can also be added using the **Add > .NET Aspire Component** shortcut in Visual Studio.
+These NuGet packages can also be added using the **Add > .NET Aspire package** shortcut in Visual Studio.
 
 The _*.AppHost_ project's _Program.cs_ file code to access the database is similar to the PostgreSQL example:
 
@@ -290,13 +290,13 @@ app.MapGet("/weatherforecast", async (YourDbContext context) =>
 });
 ```
 
-## Configuring the SQL Server component
+## Configuring the SQL Server integration
 
-As before, if you use the same database name in app host and the consuming project, you don't need to configure the connection between your SQL Server database and the projects. The .NET Aspire SQL Server component also supports other ways to configure the component.
+As before, if you use the same database name in app host and the consuming project, you don't need to configure the connection between your SQL Server database and the projects. The .NET Aspire SQL Server integration also supports other ways to configure the integration.
 
 ### Using configuration providers
 
-The SQL Server component also supports `Microsoft.Extensions.Configuration`. By default, it looks for settings using the `Aspire:SqlServer:SqlClient` key. In projects using *appsettings.json*, an example configuration might look like this:
+The SQL Server integration also supports `Microsoft.Extensions.Configuration`. By default, it looks for settings using the `Aspire:SqlServer:SqlClient` key. In projects using *appsettings.json*, an example configuration might look like this:
 
 ```json
 {
@@ -315,7 +315,7 @@ The SQL Server component also supports `Microsoft.Extensions.Configuration`. By 
 
 ### Using inline configurations
 
-When you add the SQL Server component, you can pass a `configureSettings` inline delegate to the `AddSqlServerClient` method. This delegate allows you to configure the settings for the database component directly with code:
+When you add the SQL Server integration, you can pass a `configureSettings` inline delegate to the `AddSqlServerClient` method. This delegate allows you to configure the settings for the database integration directly with code:
 
 ```csharp
 builder.AddSqlServerClient("sqldata", static settings => settings.HealthChecks = false);
@@ -330,7 +330,7 @@ You can pass any of the supported options:
 
 ### Connect to multiple databases
 
-The SQL Server component supports multiple connections through named instances. For example, you can connect to two different SQL Server databases in the same project:
+The SQL Server integration supports multiple connections through named instances. For example, you can connect to two different SQL Server databases in the same project:
 
 ```json
 {
@@ -358,15 +358,15 @@ builder.AddSqlServerClient("INSTANCE_1");
 builder.AddSqlServerClient("INSTANCE_2");
 ```
 
-## Using the MySQL component
+## Using the MySQL integration
 
-To install the .NET Aspire MySQL component, use a command like this one in your .NET Aspire projects that require data access:
+To install the .NET Aspire MySQL integration, use a command like this one in your .NET Aspire projects that require data access:
 
 ```dotnetcli
 dotnet add package Aspire.MySqlConnector --prerelease
 ```
 
-Or use the **Add > .NET Aspire Component** shortcut in Visual Studio to install the component from the NuGet package manager.
+Or use the **Add > .NET Aspire package** shortcut in Visual Studio to install the integration from the NuGet package manager.
 
 The _*.AppHost_ project's _Program.cs_ file code to access the database is similar to the PostgreSQL example:
 
@@ -379,7 +379,7 @@ var myService = builder.AddProject<Projects.MyService>()
                        .WithReference(mysqldb);
 ```
 
-Like the PostgreSQL component, the MySQL component also allows you to create a container for database management tools. The previous example adds **PhpMyAdmin** to the solution.
+Like the PostgreSQL integration, the MySQL integration also allows you to create a container for database management tools. The previous example adds **PhpMyAdmin** to the solution.
  
 ## Using a MySQL database
 
@@ -404,9 +404,9 @@ app.MapGet("/catalog", async (MySqlConnection db) =>
 });
 ```
 
-## Configuring the MySQL component
+## Configuring the MySQL integration
 
-The MySQL component supports the same three options to manage the configuration.
+The MySQL integration supports the same three options to manage the configuration.
 
 ### Connection strings
 
@@ -428,7 +428,7 @@ builder.AddMySqlDataSource("MySqConnection");
 
 ### Configuration providers
 
-The `Aspire:MySqlConnector` key is used to configure the MySQL component.
+The `Aspire:MySqlConnector` key is used to configure the MySQL integration.
  
 ```json
 {
@@ -487,7 +487,7 @@ You can even split the SQL scripts into schema creation and data seeding scripts
 
 ### Seeding data using Entity Framework Core
 
-For the components that support Entity Framework Core, you can seed your database using the `DbContext` class and Entity Framework core migrations. This method uses C# code to seed the database. However, this seeding should only happen during development or testing, not in production.
+For the integrations that support Entity Framework Core, you can seed your database using the `DbContext` class and Entity Framework core migrations. This method uses C# code to seed the database. However, this seeding should only happen during development or testing, not in production.
 
 ```csharp
 // Register DbContext class
@@ -510,4 +510,4 @@ if (app.Environment.IsDevelopment())
 
 The above code checks the state of the app environment. If it's in development, the code retrieves the `CatalogContext` class and runs the `EnsureCreated` method. This method creates the database and runs any migrations that are pending.
 
-For more information on how to seed the different database components, see the [.NET Aspire documentation](/dotnet/aspire/database/seed-database-data).
+For more information on how to seed the different database integrations, see the [.NET Aspire documentation](/dotnet/aspire/database/seed-database-data).

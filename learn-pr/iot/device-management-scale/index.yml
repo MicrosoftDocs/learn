@@ -9,7 +9,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
 title: Examine approaches to device management at scale using Azure IoT Hub
 summary: Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub.
 abstract: |

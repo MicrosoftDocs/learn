@@ -8,6 +8,7 @@ metadata:
   ms.author: cahowd
   ms.topic: module
   ms.service: azure-container-apps
+  ms.custom: ai-learning-hub
 title: Get started with cloud native apps and containerized deployments
 summary: |
   This module provides an introduction to cloud-native applications, the benefits of containerized deployments, the options for containerized deployments on the Azure platform, and the features of Azure Container Apps.

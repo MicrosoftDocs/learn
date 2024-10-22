@@ -1,8 +1,8 @@
-Centralized logging and analysis of security data are essential for effective threat detection and response in cloud environments. Azure provides a powerful tool called Log Analytics workspace that enables organizations to collect, analyze, and monitor data from various sources. In this training module, we will explore how to utilize Azure to create a Log Analytics workspace specifically for Microsoft Defender for Cloud, a comprehensive security solution for cloud environments.
+A Log Analytics workspace is a data store into which you can collect any type of log data from all of your Azure and non-Azure resources and applications. We recommend that you send all log data to one Log Analytics workspace, unless you have specific business needs that require you to create multiple workspaces, as described in [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
 
 ## Scenario
 
-Imagine you are a security analyst for a large enterprise that utilizes Microsoft Defender for Cloud to monitor and protect their Azure environment. To enhance your security operations, you need to set up a centralized logging solution using Azure Log Analytics workspace specifically for Microsoft Defender for Cloud.
+Imagine you are an Azure Security Engineer using a Log Analytics workspace to collect data from Azure and non-Azure resources, enabling centralized monitoring, custom alerts, and advanced threat detection to enhance security and compliance across a hybrid cloud environment.
 
 ## Learning Objectives
 

@@ -74,7 +74,7 @@ Then, the following steps show how to use the multi-label binarizer operator for
 
     The result is a dataframe with variables for each category like *American*, *Dessert*, *Fast Food*, *Healthy*, and *Italian*. Each food item is marked with 1's or 0's in these columns to show which categories it belongs to. For instance, both **Pizza** and **Burger** fall under multiple categories.
 
-1. Select **Apply**. 
+1. Select **Apply**.
 
 1. Select **+ Add code to notebook** in the toolbar above the Data Wrangler grid. This generates a function that you can then execute in your preprocessing pipeline.
 
@@ -84,11 +84,11 @@ Then, the following steps show how to use the multi-label binarizer operator for
 
 It ensures that the significance of a feature is determined by its relative value, not its absolute value. In other words, features are not considered more important simply because they have larger scales.
 
-It takes each value in your data, subtracts the minimum value of that data, and then divides by the range of the data (the maximum value minus the minimum value). 
+It takes each value in your data, subtracts the minimum value of that data, and then divides by the range of the data (the maximum value minus the minimum value).
 
 The result is that your data is rescaled to a range of 0 to 1 typically, which can be useful for certain types of machine learning algorithms, particularly those that use distance measures like [K-Nearest Neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm?azure-portal=true).
 
-Let's consider a dataframe that represents the grades of students in a class. The dataframe has three columns: `Student`, `Math_Grade`, `English_Grade`, and `Hours_Studied`. 
+Let's consider a dataframe that represents the grades of students in a class. The dataframe has three columns: `Student`, `Math_Grade`, `English_Grade`, and `Hours_Studied`.
 
 ```python
 import pandas as pd

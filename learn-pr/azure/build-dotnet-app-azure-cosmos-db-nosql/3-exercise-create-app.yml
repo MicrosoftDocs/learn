@@ -5,16 +5,13 @@ metadata:
   unitType: exercise
   title: Exercise - Create .NET app and reference SDK
   ms.custom:
-    - build-2023
-    - build-2023-dataai
     - devx-track-dotnet
   description: |
     Create a new .NET console application and add a package reference to the Microsoft.Azure.Cosmos .NET library from NuGet.
-  sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: unit
-  ms.date: 10/07/2024
+  ms.date: 10/09/2024
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-app.md)]

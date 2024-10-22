@@ -1,8 +1,8 @@
-At the outset of this module, we assumed that you had written a "Hello World" application by using C#. If you haven't, you might want to review this learning path's first module, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
+At the outset of this module, we assumed that you have experience writing a "Hello World" application by using C#. If you haven't, you might want to review this learning path's first module, [Write your first C# code](/training/modules/csharp-write-first/?azure-portal=true).
 
 For simplicity, we're going to rewrite the "Hello World" application, but this time, we take a .NET perspective and see what's happening behind the scenes.
 
-## Build a simple app by using C#
+## Build a basic app by using C#
 
 Earlier, you learned that **Try .NET** provides an easy way to experiment with C# and .NET. You can use Try .NET without installing any software on your local computer.
 
@@ -44,7 +44,7 @@ public class Program
 }
 ```
 
-The in-browser Try .NET environment uses the same steps you learned about earlier. The only difference is that some of the code is hidden to simplify the experience.
+The browser version of Try .NET uses the same steps you learned about earlier. The only difference is that some of the code is hidden to simplify the experience.
 
 Focusing on that expanded view of the code, you can see a series of curly braces `{ }`. C# uses a pair of curly braces to define a *code block*. Different kinds of code blocks are used for different purposes.
 
@@ -54,15 +54,15 @@ In this case, the method contains only one line of code, and its purpose is to d
 
 Methods are organized inside other code blocks called classes. A *class* can contain one or more methods. All of the methods in a class have a related purpose in the system. The class in the preceding code is named `Program`.
 
-In your inserted line of code, `Console.WriteLine()` is *calling*, or running, the method `WriteLine()`. The method `WriteLine()` is contained in the class `Console`. 
+In your inserted line of code, `Console.WriteLine()` is *calling*, or running, the method `WriteLine()`. The method `WriteLine()` is contained in the class `Console`.
 
-Where is this code? It's in the base class library. Actually, its full name is `System.Console.WriteLine()`. In the preceding code example, you see the first line is:
+Where is this code? It's in the base class library. Actually, its full name is `System.Console.WriteLine()`. The opening line in the preceding code example is:
 
 ```csharp
 using System;
 ```
 
-The word `System` is omitted in your call to `Console.WriteLine()`. But the first line of code `using System;` tells the C# compiler to look in the base class library if it can't find the method definition in your code.
+The word `System` is omitted in your call to `Console.WriteLine()`. But the line `using System;` tells the C# compiler to look in the base class library if it can't find the method definition in your code.
 
 > [!NOTE]
 > Don't worry about C#-specific terms like method, class, System, and using. You can learn about those later. We'll focus right now on the process of compiling and executing your code.
@@ -81,4 +81,4 @@ The most important part of this exercise is what happens after the code you writ
 
 1. In this case, when the instruction to print the words "Hello world!" finishes, the running path continues to the next line but finds nothing. The path ends, and the .NET runtime removes the program from its memory. Meanwhile, the output from the `WriteLine()` instruction is delivered back to your web browser.
 
-This sequence of events, and the basic division of responsibilities between a programming language, a compiler, and a runtime, are the most important concepts to understand as you're getting started.
+The most important concepts to understand as you're getting started, are the sequence of events in this process. And the basic division of responsibilities between a programming language, a compiler, and a runtime.

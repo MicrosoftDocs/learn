@@ -9,7 +9,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-guided-project
-  ms.service: iot-hub
+  ms.service: azure-iot-hub
 title: Guided project - Explore Azure IoT Hub monitoring
 summary: Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs.
 abstract: |

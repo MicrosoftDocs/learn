@@ -8,5 +8,5 @@ In this module, you'll learn how to deploy a .NET Aspire solution to two service
 
 At the end of this module, you'll be able to:
 
-- Deploy a .NET Aspire solution, including microservices and components, to Azure Container Apps.
+- Deploy a .NET Aspire solution, including microservices and integrations, to Azure Container Apps.
 - Deploy a .NET Aspire solution to a Kubernetes cluster, such as Azure Kubernetes Service.

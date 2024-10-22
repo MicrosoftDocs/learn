@@ -19,7 +19,7 @@ Data engineers may use Azure SQL database systems as sources for data pipelines 
 
 Data analysts may query Azure SQL databases directly to create reports, though in large organizations the data is generally combined with data from other sources in an analytical data store to support enterprise analytics.
 
-## Azure Database for open-source relational databases
+## Open-source databases in Azure
 
 ![Screen of an Azure Database for MariaDB, MySQL, and PostreSQL logos.](../media/azure-database.png) Azure includes managed services for popular open-source relational database systems, including:
 
@@ -47,7 +47,7 @@ In some organizations, Cosmos DB instances may be provisioned and managed by a d
 
 ## Azure Data Factory
 
-![Azure Data Factory logo.](../media/azure-data-factory.png) Azure Data Factory is an Azure service that enables you to define and schedule data pipelines to transfer and transform data. You can integrate your pipelines with other Azure services, enabling you to ingest data from cloud data stores, process the data using cloud-based compute, and persist the results in another data store.
+![Screen of an Azure Data Factory logo.](../media/azure-data-factory.png) Azure Data Factory is an Azure service that enables you to define and schedule data pipelines to transfer and transform data. You can integrate your pipelines with other Azure services, enabling you to ingest data from cloud data stores, process the data using cloud-based compute, and persist the results in another data store.
 
 Azure Data Factory is used by data engineers to build *extract*, *transform*, and *load* (ETL) solutions that populate analytical data stores with data from transactional systems across the organization.
 

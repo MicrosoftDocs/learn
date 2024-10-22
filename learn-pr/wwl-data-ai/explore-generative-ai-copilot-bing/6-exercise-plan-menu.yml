@@ -4,12 +4,13 @@ title: 'Exercise: Plan the menu'
 metadata:
   title: 'Exercise: Plan the menu'
   description: "Exercise: Plan the menu"
-  ms.date: 09/27/2024
+  ms.date: 10/15/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
   ms.custom:
   - copilot-learning-hub
+  - ai-learning-hub
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-plan-menu.md)]

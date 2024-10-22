@@ -4,7 +4,7 @@ This unit covers the Terraform language and the benefits it provides to module a
 
 ## Terraform language - HashiCorp Configuration Language (HCL)
 
-The language used by Terraform is called HashiCorp Configuration Language normally shortened to HCL. The HCL language is used in other HashiCorp tools, such as Packer, but it's most widely known as the language of Terraform.
+The language used by Terraform is called HashiCorp Configuration Language normally shortened to HCL. The HCL language is used in other HashiCorp tools, such as Packer, but is most widely known as the language of Terraform.
 
 The HCL language is used to declaratively deploy Azure resources. HCL is a domain-specific language. A domain-specific language is designed for a specific scenario or _domain_. HCL isn't meant to be used as a standard programming language for writing applications. HCL is used only to create Terraform modules. Terraform is intended to be easy to understand and straightforward to learn, regardless of your experience with other programming languages. Any Azure resource type and properties can be specified in Terraform modules.
 
@@ -47,7 +47,7 @@ resource "azurerm_resource_group" "example" {
 
 resource "azurerm_storage_account" "example" {
   name                      = local.storage_account_name
-  location                  = azure_resource_group.example.location
+  location                  = azurerm_resource_group.example.location
   resource_group_name       = azurerm_resource_group.example.name
   sku                       = "Standard"
   account_replication_type  = local.storage_account_replication_type

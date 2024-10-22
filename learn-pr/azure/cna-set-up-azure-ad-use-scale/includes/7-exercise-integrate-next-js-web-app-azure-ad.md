@@ -189,28 +189,28 @@ With the application registered in the Microsoft Entra tenant, you can now proce
             cacheLocation: "sessionStorage", // This configures where your cache will be stored
             storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
         },
-        system: {	
-            loggerOptions: {	
-                loggerCallback: (level, message, containsPii) => {	
-                    if (containsPii) {		
-                        return;		
-                    }	
-                    switch (level) {		
-                        case LogLevel.Error:		
-                            console.error(message);		
-                            return;		
-                        case LogLevel.Info:		
-                            console.info(message);		
-                            return;		
-                        case LogLevel.Verbose:		
-                            console.debug(message);		
-                            return;		
-                        case LogLevel.Warning:		
-                            console.warn(message);		
-                            return;		
-                    }	
-                }	
-            }	
+        system: {  
+            loggerOptions: {  
+                loggerCallback: (level, message, containsPii) => {  
+                    if (containsPii) {    
+                        return;    
+                    }  
+                    switch (level) {    
+                        case LogLevel.Error:    
+                            console.error(message);    
+                            return;    
+                        case LogLevel.Info:    
+                            console.info(message);    
+                            return;    
+                        case LogLevel.Verbose:    
+                            console.debug(message);    
+                            return;    
+                        case LogLevel.Warning:    
+                            console.warn(message);    
+                            return;    
+                    }  
+                }  
+            }  
         }
     };
 
@@ -299,8 +299,6 @@ You're ready to validate the Microsoft Entra integration of the app. You could c
 
     > [!NOTE]
     > If the initial attempt fails, try again.
-
-    :::image type="content" source="../media/7-azure-ad-next-js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data." lightbox="../media/7-azure-ad-next-js-app-displayed-database-inventory.png":::
 
 1. Close the web browser window in the Incognito/InPrivate mode.
 

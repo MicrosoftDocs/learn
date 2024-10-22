@@ -59,7 +59,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.use-azure-resource-manager
 - learn.intro-to-azure-cloud-shell
 - learn.student-evangelism.bash-introduction
 - learn.powershell.intro-to-powershell

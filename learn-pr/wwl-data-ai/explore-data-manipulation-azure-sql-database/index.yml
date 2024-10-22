@@ -8,6 +8,7 @@ metadata:
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
+  ai-usage: ai-assisted
 title: Explore data manipulation options in Azure SQL Database
 summary: Azure SQL Database allows you to import data using RESTful endpoints. This capability integrates Azure SQL Database with various external services and APIs, making it a versatile and user-friendly platform. Also, by combining Azure Functions with Azure SQL Database, you can create seamless workflows that automate data processing and enhance the functionality of your applications.
 abstract: |

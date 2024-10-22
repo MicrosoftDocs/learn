@@ -39,19 +39,15 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     dotnet build
     ```
 
-    The output of the command should be similar to this example:
+    The output of the command should be similar to this truncated example:
 
     ```output
-    MSBuild version 17.5.0+6f08c67f3 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-      dotnet-env-azure-cosmos-db -> /workspaces/dotnet-env-azure-cosmos-db/bin/Debug/net7.0/dotnet-env-azure-cosmos-db.dll
-    
+
     Build succeeded.
         0 Warning(s)
         0 Error(s)
-    
-    Time Elapsed 00:00:05.96
     ```
 
 ## Connect to the account
@@ -95,6 +91,9 @@ Now, the .NET project should be built and ready for you to add your own custom c
     ```csharp
     DefaultAzureCredential credential = new();
     ```
+
+    > [!TIP]
+    > The <xref:Azure.Identity.DefaultAzureCredential> token credential object automatically uses your currently logged in account for the Azure CLI to authenticate to the .NET SDK.
 
 1. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
 
@@ -144,25 +143,22 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 
 ### [Review code](#tab/review-code)
 
-1. Review the *\*.csproj* project file to ensure that the project configuration matches this sample.
+1. Review the *\*.csproj* project file to ensure that the project configuration includes both referenced projects.
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">    
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-      </PropertyGroup>    
-      <ItemGroup>
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
-      </ItemGroup>    
-    </Project>
+    <ItemGroup>
+      <PackageReference Include="Azure.Identity" Version="1.*" />
+      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
+    </ItemGroup>
     ```
+
+    > [!NOTE]
+    > This is a subset of the project configuration XML. The rest of the content was omitted for brevity.
 
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;

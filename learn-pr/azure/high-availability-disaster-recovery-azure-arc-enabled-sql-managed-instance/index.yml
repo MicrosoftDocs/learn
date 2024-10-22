@@ -9,7 +9,7 @@ metadata:
   manager: jroth
   ms.topic: module-standard-task-based
   ms.service: azure-arc
-  ms.subservice: azure-arc-data-sqlmi
+  ms.subservice: azure-arc-sql-mi
 title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
 summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
 abstract: |

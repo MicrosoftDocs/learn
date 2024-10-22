@@ -35,14 +35,14 @@ quiz:
     - content: "The Azure CLI"
       isCorrect: false
       explanation: "Incorrect. .NET Aspire doesn't require you to use Azure or the Azure CLI."
-  - content: "You want to use a semi-structured database to store information for a microservice that implements the shopping cart for your application. Which of the following .NET Aspire components could you use?"
+  - content: "You want to use a semi-structured database to store information for a microservice that implements the shopping cart for your application. Which of the following .NET Aspire integrations could you use?"
     choices:
     - content: "MongoDB"
       isCorrect: true
-      explanation: "Correct. The .NET Aspire MongoDB component connects to the MongoDB database server, which is a semi-structured, NoSQL database server."
+      explanation: "Correct. The .NET Aspire MongoDB integration connects to the MongoDB database server, which is a semi-structured, NoSQL database server."
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "Incorrect. The .NET Aspire Azure Blob Storage component connects to the Azure Blob Storage service, which stores blob files such as images and videos, not semi-structured data."
+      explanation: "Incorrect. The .NET Aspire Azure Blob Storage integration connects to the Azure Blob Storage service, which stores blob files such as images and videos, not semi-structured data."
     - content: "MySQL"
       isCorrect: false
-      explanation: "Incorrect. The .NET Aspire MySQL component connects to the MySQL database server, which stores structrured, relational data, not semi-structured data."
+      explanation: "Incorrect. The .NET Aspire MySQL integration connects to the MySQL database server, which stores structrured, relational data, not semi-structured data."

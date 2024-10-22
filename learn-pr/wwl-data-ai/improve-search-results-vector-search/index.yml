@@ -8,6 +8,7 @@ metadata:
   ms.date: 09/20/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Perform vector search and retrieval in Azure AI Search

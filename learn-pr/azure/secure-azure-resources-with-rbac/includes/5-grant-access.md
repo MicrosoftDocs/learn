@@ -1,4 +1,4 @@
-A co-worker named Alain at First Up Consultants needs permission to create and manage virtual machines for a project on which he's working. Your manager has asked that you handle this request. Using the best practice to grant users the least privileges to get their work done, you decide to assign Alain the Virtual Machine Contributor role for a resource group.
+A coworker named Alain at First Up Consultants needs permission to create and manage virtual machines for a project on which they're working. Your manager has asked that you handle this request. Using the best practice to grant users the least privileges to get their work done, you decide to assign Alain the Virtual Machine Contributor role for a resource group.
 
 ## Grant access
 
@@ -56,7 +56,9 @@ Follow this procedure to assign the Virtual Machine Contributor role to a user a
 
 In Azure RBAC, you can remove a role assignment to remove access.
 
-1. In the list of role assignments, check the box for the user with the Virtual Machine Contributor role.
+1. In the list of role assignments, select **View Assignments**.
+
+1. Search for and check the box for the user with the Virtual Machine Contributor role.
 
 1. Select **Remove**.
 

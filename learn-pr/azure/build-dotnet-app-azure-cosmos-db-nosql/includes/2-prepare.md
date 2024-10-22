@@ -25,15 +25,42 @@ The key tasks you need to do are:
 
 To complete this project, you need an API for NoSQL account.
 
+### Sign in to Azure CLI
+
+If you want to complete this exercise, you need to create an Azure subscription before you begin.
+
+1. Verify that the Azure CLI is installed in your development environment.
+
+    ```azurecli
+    az --version
+    ```
+
+1. Sign in to the Azure CLI.
+
+    ```azurecli
+    az login
+    ```
+
 ### Create Azure Cosmos DB for NoSQL account
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-1. Create a new API for NoSQL account using a unique suffix within the **<rgn>[sandbox resource group name]</rgn>** resource group.
+1. Create a new resource group named **learn-cosmos-db-dotnet-app**.
+
+    ```azurecli
+    az group create \
+        --name "learn-cosmos-db-dotnet-app" \
+        --location "westus"
+    ```
+
+    > [!TIP]
+    > You can replace this location with any region available in your Azure subscription.
+
+1. Create a new API for NoSQL account using a unique suffix within the resource group.
 
     ```azurecli
     az cosmosdb create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --name "mslearn-nosql-$((RANDOM*RANDOM))"
     ```
 
@@ -53,15 +80,15 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --query sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
     ```
 
 1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you created. Use the value of the account name you recorded in the previous step. Record this endpoint as you also use it to connect from the .NET SDK.
 
     ```azurecli
     az cosmosdb show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --name "<nosql-account-name>" \
         --query "documentEndpoint"
     ```
@@ -70,8 +97,8 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb sql role definition show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name "<nosql-account-name>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
         --id "00000000-0000-0000-0000-000000000002" \
         --query "id"
     ```
@@ -87,10 +114,10 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb` group 
 
     ```azurecli
     az cosmosdb sql role assignment create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name "<nosql-account-name>" \
-        --role-definition-id "<fully-qualified-role-definition-id>" 
-        --principal-id "<principal-id>" 
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
+        --role-definition-id "<fully-qualified-role-definition-id>"  \
+        --principal-id "<principal-id>" \
         --scope "/"
     ```
 
@@ -102,7 +129,7 @@ The Microsoft Entra authentication is only configured for items (or the data pla
 
     ```azurecli
     az cosmosdb sql database create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --name "cosmicworks"    
     ```
@@ -111,62 +138,9 @@ The Microsoft Entra authentication is only configured for items (or the data pla
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "learn-cosmos-db-dotnet-app" \
         --account-name "<nosql-account-name>" \
         --database-name "cosmicworks" \
         --name "products" \
         --partition-key-path "/categoryId"
     ```
-
-### Configure development environment
-
-A development container environment is available with all dependencies required to complete every exercise in this project. You can run the development container in GitHub Codespaces or locally using Visual Studio Code.
-
-#### [Develop in browser](#tab/github-codespaces)
-
-GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
-
-> [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances.
-
-1. Create a new GitHub Codespace using the `azure-samples/cosmos-db-dotnet` template.
-
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/azure-samples/cosmos-db-dotnet?quickstart=1&azure-portal=true)
-
-1. On the **Create codespace** page, review the codespace configuration settings, and then select **Create new codespace**.
-
-1. Wait for the codespace to start. This startup process can take a few minutes.
-
-1. Open a new terminal in the codespace.
-
-1. Validate that .NET 8 is installed in your environment:
-
-    ```bash
-    dotnet --list-sdks
-    ```
-
-1. Close the terminal.
-
-The remaining exercises in this project take place in the context of this development container.
-
-#### [Develop locally](#tab/visual-studio-code)
-
-The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
-
-1. Open the `azure-samples/cosmos-db-dotnet` template repository from GitHub within Visual Studio Code.
-
-    [![Open in Dev Container](https://img.shields.io/static/v1?style=for-the-badge&label=Open+in+Visual+Studio+Code&message=Dev+container&color=blue&logo=visualstudiocode)](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/cosmos-db-dotnet)
-
-1. Open a new terminal.
-
-1. Validate that .NET 8 is installed in your environment:
-
-    ```bash
-    dotnet --list-sdks
-    ```
-
-1. Close the terminal.
-
-The remaining exercises in this project take place in the context of this development container.
-
----
