@@ -1,4 +1,4 @@
-:::image type="content" source="../media/metallic-version-github-copilot-icon.png" alt-text="Metallic version of the GitHub Copilot Icon with a black background.":::
+:::image type="content" source="../media/metallic-version-github-copilot-icon.png" alt-text="Diagram of metallic version of the GitHub Copilot Icon with a black background.":::
 
 In this unit, we'll explore how GitHub Copilot streamlines development workflows, allowing developers to focus on solving complex problems rather than getting bogged down in routine coding tasks.
 
@@ -15,14 +15,14 @@ GitHub Copilot offers numerous ways to accelerate and simplify common developmen
 
 Learning new programming languages or frameworks can be challenging, but GitHub Copilot makes this process smoother and faster, enabling developers to quickly grasp new concepts and apply them in practice. GitHub Copilot helps bridge the gap between learning and actual implementation through:
 
-- **Code suggestions**: Offers context-aware code snippets suggestions, that illustrate the usage of unfamiliar functions and libraries, guiding developers on proper usage and implementation when working with new frameworks. 
+- **Code suggestions**: Offers context-aware code snippets suggestions that illustrate the usage of unfamiliar functions and libraries, guiding developers on proper usage and implementation when working with new frameworks. 
 - **Language support**: Supports a wide range of languages, helping you transition smoothly from one language to another.
 - **Documentation integration:** By providing inline suggestions related to API usage and function parameters, GitHub Copilot reduces the need to constantly refer to external documentation.
 
 Let’s take a look at an example.
 Imagine working on a Golang project in a language you're unfamiliar with. GitHub Copilot can generate the code for you. You can then use the "Explain this" option in the context menu to explain what the code does.
 
-:::image type="content" source="../media/accelerate-learning.gif" alt-text="Screenshot of Accelerate learning":::
+:::image type="content" source="../media/accelerate-learning.gif" alt-text="Screenshot of Accelerate learning.":::
 
 ### Minimizing context switching
 
@@ -34,7 +34,7 @@ Context switching is a significant productivity drain for developers and can dis
 
 In the example below, notice how you can work with external resources (like APIs/libraries) in your code without needing to leave the editor to consult documentation. This saves valuable time and allows you to focus on more strategic tasks, enhancing overall productivity and enabling quicker project delivery.
 
-:::image type="content" source="../media/minimize-context-switching.gif" alt-text="Screenshot of Minimizing Context Switching":::
+:::image type="content" source="../media/minimize-context-switching.gif" alt-text="Screenshot of Minimizing Context Switching.":::
 
 ### Enhanced documentation writing
 
@@ -47,7 +47,7 @@ GitHub Copilot significantly improves the process of writing and maintaining cod
 
 GitHub Copilot can assimilate your code, and help you write relevant comments or documentation for functions or the entire code.
 
-:::image type="content" source="../media/enhanced-documentation-writing.gif" alt-text="Screenshot of Enhanced Documentation writing":::
+:::image type="content" source="../media/enhanced-documentation-writing.gif" alt-text="Screenshot of Enhanced Documentation writing.":::
 
 
 ### Automating the boring stuff
@@ -61,7 +61,7 @@ GitHub Copilot excels at handling routine coding tasks, freeing up time for deve
 
 You can accelerate your development process by using GitHub Copilot to generate boilerplate code, which can then be customized to meet your specific needs.
 
-:::image type="content" source="../media/automate-boring-stuff.gif" alt-text="Screenshot of Automating the boring stuff":::
+:::image type="content" source="../media/automate-boring-stuff.gif" alt-text="Screenshot of Automating the boring stuff.":::
 
 
 ### Personalized code completion
@@ -73,7 +73,7 @@ GitHub Copilot adapts to individual coding styles and project contexts, providin
 
 In the example below, notice how GitHub Copilot suggested a style of writing functions, but when a preferred style was used, it adapted and continued suggestions with the preferred style.
 
-:::image type="content" source="../media/personalized-code-completion.gif" alt-text="Screenshot of Personalized code completion":::
+:::image type="content" source="../media/personalized-code-completion.gif" alt-text="Screenshot of Personalized code completion.":::
 
 By leveraging GitHub Copilot in these ways, developers can significantly reduce the time spent on routine tasks, accelerate their learning of new technologies, and maintain better focus throughout their workday. This enhanced productivity allows for more time to be dedicated to solving complex problems and innovating within their projects.
 

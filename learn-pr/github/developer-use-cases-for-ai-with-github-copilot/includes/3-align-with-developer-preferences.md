@@ -33,7 +33,7 @@ Refactoring is an essential part of maintaining healthy codebases. GitHub Copilo
 While GitHub Copilot isn't a full-on debugger, it can assist in the debugging process in several ways:
 
 - **Error explanation:** When faced with error messages, GitHub Copilot can often provide plain-language explanations and suggest potential fixes.
-- **Log statement Generation:** GitHub Copilot can suggest relevant log statements to help diagnose issues in complex code paths.
+- **Log statement generation:** GitHub Copilot can suggest relevant log statements to help diagnose issues in complex code paths.
 - **Test case suggestions:** For bugs that are difficult to reproduce, GitHub Copilot can suggest additional test cases that might help isolate the issue.
 
 ### Data science support

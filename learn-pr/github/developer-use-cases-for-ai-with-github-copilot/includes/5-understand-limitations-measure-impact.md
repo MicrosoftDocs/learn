@@ -1,7 +1,7 @@
 While GitHub Copilot offers significant benefits, it's crucial to understand its limitations and accurately measure its impact on development processes. This unit explores the constraints of AI-assisted coding and introduces methods to quantify GitHub Copilot's influence on productivity.
 
 
-## Identifying limitations of GitHub Copilot
+## Identify limitations of GitHub Copilot
 
 While GitHub Copilot is a powerful tool, it has limitations that developers should be aware of:
 
@@ -26,11 +26,11 @@ While GitHub Copilot is a powerful tool, it has limitations that developers shou
 - **Limitation in high-level design:** GitHub Copilot excels at code-level tasks but may not grasp complex architectural decisions.
 - **Creativity constraints:** While helpful, GitHub Copilot cannot replace human creativity in solving novel problems.
 
-## Measuring productivity gains
+## Measure productivity gains
 
 Understanding the productivity gains provided by GitHub Copilot is essential to maximizing its benefits. The **REST API for GitHub Copilot usage metrics** and **GitHub Copilot Developer Survey** offers a powerful way to measure and analyze how GitHub Copilot influences your development workflow. This section introduces methods to evaluate GitHub Copilot’s impact using these tools and related metrics.
 
-### Using the REST API endpoints for GitHub Copilot usage metrics 
+### Use the REST API endpoints for GitHub Copilot usage metrics 
 
 GitHub provides a REST API to access GitHub Copilot usage metrics for enterprise members, teams, and organization members. These metrics offer insights into daily usage of GitHub Copilot, including completions, chat interactions, and user engagement across different editors and languages.
 
@@ -101,7 +101,7 @@ To systematically assess GitHub Copilot’s impact, consider the following frame
 
 4. **Sustained efficiency:** Continuously evaluate GitHub Copilot’s effectiveness as your organization evolves. The API allows for ongoing monitoring and adjustment to ensure long-term productivity gains.
 
-### Using the GitHub Copilot developer survey
+### Use the GitHub Copilot developer survey
 
 The GitHub Copilot Developer Survey is a valuable tool designed to gather insights from your teams, helping you understand how GitHub Copilot is being used, its benefits, and any challenges developers face. This survey is divided into two formats: short-form and long-form, each serving different purposes throughout the GitHub Copilot evaluation and adoption stages.
 
