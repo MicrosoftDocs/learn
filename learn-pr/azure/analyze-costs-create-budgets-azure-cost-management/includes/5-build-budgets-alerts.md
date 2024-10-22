@@ -48,7 +48,7 @@ Previously, you created a budget alert by setting an alert condition for the bud
 
 ### Budget alerts
 
-Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. You can create Cost Management budgets by using the Azure portal or the Azure Consumption API.
+Based on usage or cost, budget alerts notify you when spending reaches or exceeds the amount defined in the alert condition of the budget. You can create Cost Management budgets by using the Azure portal or the Azure Consumption API.
 
 In the Azure portal, you define your budgets by cost. When Using the Azure Consumption API, you define your budgets by cost or by consumption usage. Budget alerts support both cost-based and usage-based budgets. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts. An alert email is also sent to the people in the alert recipients list of the budget.
 
@@ -72,7 +72,7 @@ Support for alert types depends on the type of Azure account that you have (Micr
 
 ### View cost alerts
 
-To view cost alerts, open the desired scope in the Azure portal and select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope. Select **Cost alerts** in the menu.
+To view cost alerts, open the desired scope in the Azure portal. Select **Cost Management**, and then select **Cost alerts** in the menu.
 
 ![Screenshot listing cost alerts shown in Cost Management.](../media/5-budget-alerts-fullscreen.png)
 
