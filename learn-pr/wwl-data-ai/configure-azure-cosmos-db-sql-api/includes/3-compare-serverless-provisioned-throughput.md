@@ -8,7 +8,7 @@ On the other hand, serverless can handle workloads that have wildly varying traf
 
 ## Compare request units
 
-Provisioned throughput makes some number of request units available each second to each container for database operations. The number of request units can be updated either manually or via autoscale.
+Provisioned throughput makes some number of request units available each second to each container. The number of request units can be updated either manually or via autoscale.
 
 Serverless doesn’t require any planning or automatic provisioning and can deliver throughput up to a documented service limit.
 
@@ -16,7 +16,7 @@ Serverless doesn’t require any planning or automatic provisioning and can deli
 
 Provisioned throughput supports distributing your data to an unlimited number of Azure regions.
 
-Serverless accounts can only run in a single Azure region.
+Serverless accounts can only run in a single Azure region but can be used with Availability Zones in a single region.
 
 ## Compare storage limits
 
