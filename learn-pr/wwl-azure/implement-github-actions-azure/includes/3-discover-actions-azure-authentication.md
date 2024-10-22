@@ -72,7 +72,7 @@ az role assignment create --assignee <service-principal-id> \
     |--|--|
     | AZURE_CLIENT_ID | Enter the **Application (client) ID**. |
     | AZURE_TENANT_ID | Enter the **Directory (tenant) ID**. |
-    | AZURE_SUBSCRIPTION_ID | Enter your subscription ID. You can retrieve your id with the `az account show` command. |
+    | AZURE_SUBSCRIPTION_ID | Enter your subscription ID. You can retrieve your ID with the `az account show` command. |
 
 ### Use the Azure Login action
 
