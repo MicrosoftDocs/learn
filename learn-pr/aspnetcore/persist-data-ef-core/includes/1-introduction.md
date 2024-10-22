@@ -1,8 +1,8 @@
-In this module, you'll gain an understanding of object-relational mappers (ORMs) and Entity Framework Core (EF Core). You'll use EF Core to persist and retrieve relational data from a database.
+In this module, you gain an understanding of object-relational mappers (ORMs) and Entity Framework Core (EF Core). You use EF Core to persist and retrieve relational data from a database.
 
 ## Example scenario
 
-You're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful web API service as a prerequisite for the company's new web storefront and mobile application. The service will support adding, viewing, modifying, and removing types of pizza in the company's database. These four operations are often called *create, read, update, and delete (CRUD)*.
+You're an employee of a pizza company named Contoso Pizza. Your manager asks you to develop a RESTful web API service as a prerequisite for the company's new web storefront and mobile application. The service supports adding, viewing, modifying, and removing types of pizza in the company's database. These four operations are often called: *create, read, update, and delete (CRUD)*.
 
 ## Learning objectives
 
@@ -13,7 +13,7 @@ In this module, you'll:
 - Write C# code to interact with a database by using EF Core.
 - Use EF Core migrations to keep the code and database in sync.
 - Use reverse engineering to generate entity models from an existing database.
-- Seed a database on app startup.
+- Modify the app to seed the database on app startup.
 
 ## Required tools
 

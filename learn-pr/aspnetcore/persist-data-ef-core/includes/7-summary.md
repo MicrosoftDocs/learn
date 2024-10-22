@@ -12,7 +12,7 @@ In this module, you used Entity Framework Core (EF Core) to persist data to a da
 
 ## File issues and ask questions
 
-- [The efcore GitHub repository](https://github.com/dotnet/efcore)
+- [The EF Core GitHub repository](https://github.com/dotnet/efcore)
 
 ## Join us for .NET Data Community Standup
 
