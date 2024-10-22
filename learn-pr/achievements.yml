@@ -4017,6 +4017,11 @@ achievements:
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
   summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
   iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
+- uid: learn.azure.manage-subscription-access-azure-rbac.badge
+  type: badge
+  title: Manage access to an Azure subscription by using Azure role-based access control (Azure RBAC)
+  summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
+  iconUrl: /training/achievements/manage-subscription-access-azure-rbac.svg
 - uid: learn.azure.intro-to-batch-stt.badge
   type: badge
   title: Transcribe large amounts of audio data with Batch Transcription
