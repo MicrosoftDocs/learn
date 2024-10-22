@@ -1,6 +1,6 @@
-Management and customization control are a vital part of utilizing an AI pair programming tool. We at GitHub continue to iterate and develop GitHub Copilot to be a leader in the industry. We are customer obsessed and want to ensure your developers and organization have control over your code. With a better understanding of GitHub Copilot's various plans and their associated features you're able to select the right fit for your organization's needs.
+Management and customization control are a vital part of utilizing an AI pair programming tool. We will continue to iterate and develop GitHub Copilot to be a leader in the industry to ensure your developers and organization have control over your code. With a better understanding of GitHub Copilot's various plans and their associated features you'll be able to select the right fit for your organization's needs.
 
-In this module, we reviewed management and customization considerations through GitHub Copilot by:
+In this module we reviewed management and customization considerations through GitHub Copilot by:
 
 - Exploring GitHub Copilot plans and their associated management and customization features
 
@@ -23,4 +23,4 @@ In this module, we reviewed management and customization considerations through 
 
 ## How to provide feedback
 
-If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+If you have content feedback or suggested changes for this Microsoft Learn module, https://github.com/githubpartners/microsoft-learn/issues/new/choose. This content is maintained by GitHub, and a team member will triage the request. Thank you for taking the time to improve our content!
