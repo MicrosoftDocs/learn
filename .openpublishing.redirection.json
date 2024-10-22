@@ -33524,6 +33524,76 @@
       "source_path": "learn-pr/wwl-azure/enable-defender-cloud-azure-subscription/3-upgrade-microsoft-defender-cloud.md",
       "redirect_url": "/training/modules/enable-defender-cloud-azure-subscription/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/2-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#common-use-cases-for-azure-stack-hci",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/3-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/system-requirements-23h2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/4-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/5-verify-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/6-integration-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/2-azure-arc-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/3-manage-virtualized-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/4-monitor-virtualized-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/stack-hci-arc-integration/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
     }
   ]
 }
