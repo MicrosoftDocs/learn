@@ -3922,6 +3922,11 @@ achievements:
   title: Explore Microsoft Defender for IoT implementation
   summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
   iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
+- uid: learn.protect-identities-with-aad-idp.badge
+  type: badge
+  title: Protect your identities with Microsoft Entra ID Protection
+  summary: Use the advanced detection and remediation of identity-based threats to protect your Microsoft Entra identities and applications from compromise.
+  iconUrl: /training/achievements/protect-identities-with-aad-idp.svg
 - uid: learn.azure.data-classification-and-data-protection.badge
   type: badge
   title: Introduction to Microsoft data classification and protection
@@ -4002,8 +4007,18 @@ achievements:
   title: Use intelligent planners
   summary: This module introduces different ways to automatically invoke functions using the Semantic Kernel SDK. Learn how planners can generate plans to accomplish tasks and how to fine-tune planners to optimize performance.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.authenticate-apps-with-managed-identities.badge
+  type: badge
+  title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
+  summary: Securely authenticate applications to Azure to manage and access Azure services. Service principals and managed identities for Azure resources give your app a Microsoft Entra identity.
+  iconUrl: /training/achievements/authenticate-apps-with-managed-identities.svg
 - uid: learn-pr.develop-test-deploy-azure-functions-core-tools.badge
   type: badge
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
   summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
   iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
+- uid: learn.azure.intro-to-batch-stt.badge
+  type: badge
+  title: Transcribe large amounts of audio data with Batch Transcription
+  summary: Batch transcription is a feature of Azure AI Speech that lets you transcribe large amounts of pre-recorded audio data asynchronously. Batch transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and problems are dealt with quickly and properly.
+  iconUrl: /training/achievements/intro-to-batch-transcription.svg
