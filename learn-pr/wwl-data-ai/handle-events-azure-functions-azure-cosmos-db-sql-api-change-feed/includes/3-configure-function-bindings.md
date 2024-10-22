@@ -20,11 +20,11 @@ Configuring the Azure Cosmos DB for NoSQL trigger requires a JSON object within 
 | **type** | This is statically set to **cosmosDBTrigger** |
 | **name** | This is the name used for the method parameter that will map to this binding in code |
 | **direction** | For a trigger, this will be set to **in** |
-| **connectionStringSetting** | This is the name of the connection string in the function’s app settings |
+| **connection** | This is the name of the connection string in the function’s app settings |
 | **databaseName** | The name of the database, which contains the container to monitor |
-| **collectionName** | The name of the container to monitor |
-| **leaseCollectionName** | The name of the container used to manage change feed leases |
-| **createLeaseCollectionIfNotExists** | A boolean value to indicate if the Azure Functions runtime should create the lease container on your behalf if it does not already exist |
+| **containerName** | The name of the container to monitor |
+| **leaseContainerName** | The name of the container used to manage change feed leases |
+| **createLeaseContainerIfNotExists** | A boolean value to indicate if the Azure Functions runtime should create the lease container on your behalf if it does not already exist |
 
 An example of a trigger that monitors changes in the **cosmicworks** database and **products** container is included here. This trigger will use the change feed to monitor if new items are created or if existing items are updated.
 
@@ -33,11 +33,11 @@ An example of a trigger that monitors changes in the **cosmicworks** database an
   "type": "cosmosDBTrigger",
   "name": "changes",
   "direction": "in",
-  "connectionStringSetting": "cosmosdbsqlconnstr",
+  "connection": "cosmosdbsqlconnstr",
   "databaseName": "cosmicworks",
-  "collectionName": "products",
-  "leaseCollectionName": "productslease",
-  "createLeaseCollectionIfNotExists": false
+  "containerName": "products",
+  "leaseContainerName": "productslease",
+  "createLeaseContainerIfNotExists": false
 }
 ```
 
@@ -59,7 +59,7 @@ A point read input binding uses an item's unique identifier and partition key va
 | **partitionKey** | Partition key value for the target item |
 
 > [!NOTE]
-> Duplicate properties, such as **databaseName** and **collectionName**, are excluded from this table as they were described earlier in this unit.
+> Duplicate properties, such as **databaseName** and **containerName**, are excluded from this table as they were described earlier in this unit.
 
 An example of an input binding that reads an item with an **id** of **91AA100C-D092-4190-92A7-7C02410F04EA** and a **partition key** of **F3FBB167-11D8-41E4-84B4-5AAA92B1E737** is included here.
 
@@ -68,9 +68,9 @@ An example of an input binding that reads an item with an **id** of **91AA100C-D
   "type": "cosmosDB",
   "name": "item",
   "direction": "in",
-  "connectionStringSetting": "cosmosdbsqlconnstr",
+  "connection": "cosmosdbsqlconnstr",
   "databaseName": "cosmicworks",
-  "collectionName": "products",
+  "containerName": "products",
   "id": "91AA100C-D092-4190-92A7-7C02410F04EA",
   "partitionKey": "F3FBB167-11D8-41E4-84B4-5AAA92B1E737"
 }
@@ -120,8 +120,8 @@ An example of an output binding that writes one or more items to the **cosmicwor
   "type": "cosmosDB",
   "name": "output",
   "direction": "out",
-  "connectionStringSetting": "cosmosdbsqlconnstr",
+  "connection": "cosmosdbconnstr",
   "databaseName": "cosmicworks",
-  "collectionName": "products"
+  "containerName": "products"
 }
 ```
