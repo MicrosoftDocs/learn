@@ -40,7 +40,7 @@ Andy can identify with these issues, but the rest of the team has questions.
 Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
   :::column-end:::
   :::column:::
-:::image type="content" source="../media/3-whiteboard.png" alt-text="Screenshot of a whiteboard containing sticky notes. The contents of the sticky notes are not legible.":::
+:::image type="content" source="../media/3-whiteboard.png" alt-text="Screenshot of a whiteboard containing sticky notes. The contents of the sticky notes aren't legible.":::
   :::column-end:::
 :::row-end:::
 

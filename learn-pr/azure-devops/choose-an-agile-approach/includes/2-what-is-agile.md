@@ -75,4 +75,4 @@ Good tools can help your Agile team members collaborate more effectively, both w
 * [Skype](https://www.skype.com/?azure-portal=true): Skype is easy to use and a good general-purpose tool. Many people already have it installed.
 * [Slack](https://slack.com/?azure-portal=true): Slack provides many separate communication channels, all from a single interface. You can organize these channels in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
 
-Other common tools include Google Hangouts, Asana, Trello, GoToMeeting and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.
+Other common tools include Google Hangouts, Asana, Trello, GoToMeeting, and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.
