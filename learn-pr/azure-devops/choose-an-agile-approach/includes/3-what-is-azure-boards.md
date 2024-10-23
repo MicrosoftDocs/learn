@@ -6,7 +6,7 @@ Mara created her own project on Azure Boards using the Basic process. It shows t
 
 **Andy:** What's a work item?
 
-**Mara:** Work items help us plan and manage a project. A work item can track all types of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress.
+**Mara:** Work items help us plan and manage a project. A work item can track all types of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people, and keep track of their progress.
 
 Perhaps it's easier to show you. Here's Azure Boards using the Basic process:
 
@@ -54,9 +54,9 @@ Eventually, the team settles on seven top issues. Andy volunteers to add tasks t
 
 After some more discussion, the team decides to take on the three issues Mara originally proposed:
 
-* Stabilize the build server
-* Create a Git-based workflow
-* Create unit tests
+* Stabilize the build server.
+* Create a Git-based workflow.
+* Create unit tests.
 
 **Mara:** These seem like the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
 
