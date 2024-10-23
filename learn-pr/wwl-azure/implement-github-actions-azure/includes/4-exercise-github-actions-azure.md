@@ -17,6 +17,6 @@ Select the **Launch Exercise** button, it opens the exercise instructions in a n
 
 <br/>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2270303" target="_blank">
+<a href="https://microsoftlearning.github.io/AZ-2006-automate-azure-loadtesting-github-actions/Instructions/Labs/02-workflow-publish-azure.html" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>
