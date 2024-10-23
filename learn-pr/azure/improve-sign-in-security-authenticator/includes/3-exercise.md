@@ -14,7 +14,7 @@ When you're finished, you'll be ready to validate the user experience. You'll cr
 Before enabling a registration campaign, make sure prerequisites are complete. You need to enable your users to use Microsoft Authenticator for authentication.
 
 > [!NOTE]
-> This exercise assumes you already have an organization set up, with a user group for your remote workers. You can learn how to set up your organization in the [Create Azure users and groups in Microsoft Entra ID](/training/modules/create-users-and-groups-in-azure-active-directory/) module.
+> This exercise assumes you already have an organization set up, with a user group for your remote workers. You can learn how to set up your organization in the [Manage users and groups in Microsoft Entra ID](/training/modules/manage-users-and-groups-in-aady/) module.
 
 1. In the [Azure portal](https://portal.azure.com), search for and select **Microsoft Entra ID**.
 1. In the Microsoft Entra admin center, select **Security** > **Authentication methods** > **Policies**.
