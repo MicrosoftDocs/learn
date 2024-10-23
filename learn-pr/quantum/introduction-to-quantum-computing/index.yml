@@ -6,7 +6,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.date: 9/26/2024
-  ms.service: azure-quantum
   ms.topic: module-standard-task-based
 title: Introduction to Quantum Computing
 summary: "This course empowers developers to understand the basics of quantum computing."
@@ -30,7 +29,6 @@ roles:
 - student
 products:
   - github
-  - azure-quantum
 subjects:
   - devops
   - cloud-computing
