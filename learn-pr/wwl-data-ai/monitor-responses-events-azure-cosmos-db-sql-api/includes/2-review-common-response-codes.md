@@ -25,7 +25,7 @@ The Create Document operation creates a new document in a collection. Its status
 | **201** | Created | The operation was successful. |
 | **400** | Bad Request | The JSON body is invalid. |
 | **403** | Forbidden | The operation couldn't be completed because the storage limit of the partition has been reached. |
-| **409** | Conflict | The `id` provided for the new document has been taken by an existing document. |
+| **409** | Conflict | The parition key and `id` provided for the new document has been taken by an existing document. |
 | **413** | Entity Too Large | The document size in the request exceeded the allowable document size. |
 
 ## List documents under the collection using ReadFeed
@@ -44,7 +44,7 @@ The Get Document operation retrieves a document by its partition key and documen
 | :--- | :--- |  :--- |
 | **304** | Not Modified |The document requested wasn't modified since the specified eTag value in the If-Match header. The service returns an empty response body. |
 | **400** | Bad Request |The override set in the x-ms-consistency-level header is stronger than the one set during account creation. For example, if the consistency level is Session, the override can't be Strong or Bounded. |
-| **404** | Not Found | The document is no longer a resource, that is, the document was deleted. |
+| **404** | Not Found | The document no longer exists, that is, the document was deleted. |
 
 ## Replace a Document
 
@@ -54,7 +54,7 @@ The Replace Document operation replaces the entire contents of a document. Its s
 | :--- | :--- |  :--- |
 | **400** | Bad Request | The JSON body is invalid. Check for missing curly brackets or quotes. |
 | **404** | Not Found | The document no longer exists, that is, the document was deleted. |
-| **409** | Conflict | The `id` provided for the new document has been taken by an existing document. |
+| **409** | Conflict | The parition key and `id` provided for the new document has been taken by an existing document. |
 | **413** | Entity Too Large | The document size in the request exceeded the allowable document size. |
 
 ## Patch a Document
@@ -77,7 +77,7 @@ The Delete Document operation deletes an existing document in a collection. Its 
 
 ## Query Documents
 
-You can query the collection documents using Azure Cosmos DB SQL queries. Its status codes are:
+You can query the collection documents using Azure Cosmos DB for NoSQL queries. Its status codes are:
 
 | **Status Code** | **Operation Type** | **Description** |
 | :--- | :--- |  :--- |
