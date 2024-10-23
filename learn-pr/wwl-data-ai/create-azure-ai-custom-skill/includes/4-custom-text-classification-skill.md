@@ -82,7 +82,7 @@ Once the resource has been deployed, you can navigate directly to the Language S
 
 As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, by default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
 
-:::image type="content" source="../media/assign-document-testing-small.png" lightbox="../media/assign-document-testing.png"alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
+:::image type="content" source="../media/assign-document-testing.png" lightbox="../media/assign-document-testing.png"alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
 
 In Language Studio, in your project, select **Data labeling**. You'll see all your documents. Select each document you'd like to add to the testing set, then select **Testing the model's performance.** Save your updated labels and then create a new training job.
 
@@ -183,11 +183,11 @@ There are five things the function app needs to know:
 
 The text to be classified is passed from your custom skillset in AI Search to the function as input. The remaining four items can be found in Language Studio.
 
-:::image type="content" source="../media/copy-prediction-endpoint-small.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
+:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
 
 The endpoint and deployment name is on the deploying a model pane.
 
-:::image type="content" source="../media/project-settings-primary-key-small.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
+:::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
 
 The project name and primary key are on the project settings pane.
 
