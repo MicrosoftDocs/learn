@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-ai-custom-skill.ml-custom-skill
+title: Machine learning custom skill
+metadata:
+  title: Machine learning custom skill
+  description: "Machine learning custom skill."
+  ms.date: 10/1/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-ml-custom-skill.md)]
