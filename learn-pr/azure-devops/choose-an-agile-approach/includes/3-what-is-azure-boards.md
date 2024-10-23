@@ -16,10 +16,10 @@ Perhaps it's easier to show you. Here's Azure Boards using the Basic process:
 
 **Mara:** There are four processes from which to choose. We can use:
 
-* **Capability Maturity Model Integration (CMMI)**: This is really for large organizations and it's pretty complicated, so I didn't use it.
-* **Scrum**: Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master; that's someone who's usually receives some training and certification, so I didn't pick that one either.
+* **Capability Maturity Model Integration (CMMI)**: This is really for large organizations, and it's pretty complicated. So I didn't use it.
+* **Scrum**: Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master. That's someone who usually receives some training and certification, so I didn't pick that one either.
 * **Agile**: This seemed like the obvious choice because I'm always talking about Agile, but it has a few more things to consider than the simplest option.
-* **Basic**: Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
+* **Basic**: Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away. That's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
 
 **Amita:** OK, let's use it to get started. We can switch to something else, right?
 
@@ -27,9 +27,9 @@ Perhaps it's easier to show you. Here's Azure Boards using the Basic process:
 
 Andy can identify with these issues, but the rest of the team has questions.
 
-**Tim:** These are mostly dev problems. But while we're on the subject, other teams are talking about code vulnerabilities, and I've been asked to show that our code is secure. Is there a way we can add that?
+**Tim:** These are mostly dev problems. But while we're on the subject, other teams are talking about code vulnerabilities. I've been asked to show that our code is secure. Is there a way we can add that?
 
-**Mara:** I know the list isn't complete. The problems on the board are the ones Andy and I talked about earlier. And even some of these problems really need to get broken down into smaller tasks. I understand your concerns about code vulnerabilities. Andy, what do you think?
+**Mara:** I know the list isn't complete. The problems on the board are the ones Andy and I talked about earlier. Some of these problems really need to get broken down into smaller tasks. I understand your concerns about code vulnerabilities. Andy, what do you think?
 
 **Andy:** Right now, just getting a build out the door is hard. Let's start with some of the basic problems. I do like that we have a central place where we can keep track of our issues. We can add issues to the backlog and prioritize them once we're ready.
 
