@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-ai-custom-skill
 metadata:
   title: Create Azure AI custom skill
   description: "Learn how to define and implement a custom skill in Azure AI Search."
-  ms.date: 10/1/2024
+  ms.date: 10/23/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
