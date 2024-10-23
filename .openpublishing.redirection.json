@@ -33554,6 +33554,86 @@
       "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/2-describe-sdn-on-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/3-describe-network-controller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/4-plan-sdn-infrastructure-on-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/5-deploy-sdn-infrastructure-on-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-logical-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-logical-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-logical-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-logical-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/describe-implement-azure-stack-hci-tenant-logical-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-logical-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/describe-implement-azure-stack-hci-tenant-virtual-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/tenant-virtual-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/describe-implement-ras-gateway-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/gateway-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-tenant-networks/describe-route-reflector-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/gateway-overview",
+      "redirect_document_id": false
     }
   ]
 }
