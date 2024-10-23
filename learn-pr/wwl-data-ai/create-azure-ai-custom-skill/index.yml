@@ -6,6 +6,7 @@ metadata:
   ms.date: 10/23/2024
   author: ivorb
   ms.author: berryivor
+  ms.service: azure-ai-search
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
 title: Create a custom skill for Azure AI Search
 summary: Use the power of artificial intelligence to enrich your data and find new insights with custom skills in Azure AI Search.
