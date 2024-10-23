@@ -1,8 +1,8 @@
 Referring to our basic hierarchy of resources, an Azure Cosmos DB for NoSQL database is a unit of management for a set of schema-agnostic containers. Each container is a unit of scalability for both **throughput** and **storage**.
 
-Containers are partitioned horizontally across compute within an Azure region and distributed across all Azure Regions you configure in your Azure Cosmos DB for NoSQL account.
+Containers are partitioned horizontally across compute within an Azure region and distributed across all partitions within a container and all Azure Regions you configure in your Azure Cosmos DB for NoSQL account.
 
-When configuring Azure Cosmos DB, you can provision throughput at either or both the database and container levels.
+Even with the throughput distributed across the partitions for a container and regions in an accouht, with Dynamic Autoscale, only those partitions and regions in which requests are occuring will be scaled up. This ensures that costs reflect only the throughput consumed by an application.
 
 ## Container-level throughput provisioning
 
@@ -10,17 +10,7 @@ When configuring Azure Cosmos DB, you can provision throughput at either or both
 
 Any throughput provisioned exclusively at the container level is reserved only for this container. This throughput is available only for this container all the time. This throughput is also financially backed by SLAs.
 
+Users creating new accounts should look to start with Serverless as it only bills when requests are made. This makes it cost efficient when developing new applications. It also is suitable for production-grade applications with infrequent requests or otherwise low usage requirements.
+
 > [!NOTE]
-> This is the most commonly used method of manual throughput provisioning.
-
-## Database-level throughput provisioning
-
-![Throughput provisioned at database level](../media/2-database.png)
-
-Throughput provisioned on a database is shared across all containers in the database. Because all containers share the throughput resources, you may not get predictable performance in a specific container within the database.
-
-## Mixed-throughput provisioning
-
-![Throughput provisioned at both container and database level](../media/2-mixed.png)
-
-There may be situations where you may want to combine provisioning throughput at the database and container level. A container with provisioned throughput cannot be converted to a shared database container. Conversely, a shared database container cannot be converted to have dedicated throughput.
+> Users can also provision throughput for a database that is shared across all containers. However, this should only be used when all of the containers have roughly the same volume of requests and data as it is not possible to guarantee performance when these vary widely across containers.
