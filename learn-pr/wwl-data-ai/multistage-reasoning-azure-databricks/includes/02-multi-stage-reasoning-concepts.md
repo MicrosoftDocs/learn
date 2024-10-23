@@ -44,7 +44,7 @@ By breaking up your problem and designing a multi-stage reasoning system, you cr
 
 ## Choose a library
 
-After your initial design is complete, you can choose one of the popular composition libraries like [LangChain](https://python.langchain.com/v0.2/docs/introduction/?azure-portal=true), [LlamaIndex](https://docs.llamaindex.ai/en/stable/?azure-portal=true), [Haystack](https://docs.haystack.deepset.ai/docs/intro?azure-portal=true), or [DSPy](https://dspy-docs.vercel.app/docs/intro?azure-portal=true), to build your system.
+After your initial design is complete, you can choose one of the popular composition libraries like [LangChain](https://python.langchain.com/v0.2/docs/introduction/?azure-portal=true), [LlamaIndex](https://docs.llamaindex.ai/en/stable/?azure-portal=true), [Haystack](https://docs.haystack.deepset.ai/docs/intro?azure-portal=true), or [DSPy](https://dspy-docs.vercel.app/intro/?azure-portal=true), to build your system.
 
 To choose a library, you can consider the following factors:
 
