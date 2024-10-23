@@ -2,11 +2,11 @@ In this section, we'll diagnose and troubleshoot Azure Cosmos DB service unavail
 
 ## Required ports are blocked
 
-Verify that the following ports are enabled for the SQL API.
+Verify that the following ports are enabled for Azure Cosmos DB for NoSQL.
 
 | **Connection mode** | **Supported protocol** | **Supported SDKs** | **API/Service port** |
 | :--- | :--- | :--- | :--- |
-| Gateway | HTTPS | All SDKs | SQL (443) |
+| Gateway | HTTPS | All SDKs | NoSQL (443) |
 | Direct | TCP | .NET SDK, Java SDK | When using public/service endpoints: ports in the 10000 through 20000 range. When using private endpoints: ports in the 0 through 65535 range |
 
 ## Client-side transient connectivity issues
