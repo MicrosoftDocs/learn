@@ -1,8 +1,8 @@
-In this module, you've learned how Azure Cosmos DB for NoSQL allows you to launch a database with relatively little friction that can grow with your company as your needs evolve as well as build the new generation of AI-enabled applications..
+In this module, you learned how Azure Cosmos DB for NoSQL allows you to launch a database relatively easily. That database can grow with your company as your needs evolve as well as allows you to build the new generation of AI-enabled applications.
 
 Azure Cosmos DB for NoSQL eases many common pain points by offering an elastic, globally distributed database platform with support for vector indexing and search. Azure Cosmos DB for NoSQL scales up-and-down to meet your real-world usage. The NoSQL API for Azure Cosmos DB for NoSQL provides the widest variety of SDK options for developers in your organization. The NoSQL API also natively uses JSON documents, enabling your team to store a wide variety of data formats in your database.
 
-Now that you have completed this module, you can:
+Now that you completed this module, you can:
 
 - Evaluate whether Azure Cosmos DB for NoSQL is the right database for your application.
 - Describe how the features of the Azure Cosmos DB forNoSQL are appropriate for modern applications.
