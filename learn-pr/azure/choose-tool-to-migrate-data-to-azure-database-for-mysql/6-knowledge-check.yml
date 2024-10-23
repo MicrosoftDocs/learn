@@ -9,7 +9,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -57,7 +57,7 @@ quiz:
     - content: "Use mydumper and myloader to create and restore data."
       isCorrect: false
       explanation: "Even though these tools are fast, they'll still require downtime to migrate data once the application is frozen."
-    - content: "Use Azure Migrate and Azure Database Migration Service to automate migration and minimize downtime."
+    - content: "Use Azure Database Migration Service to automate migration and minimize downtime."
       isCorrect: true
       explanation: "Azure DMS automates the migration process, and can perform an online migration, or a near-zero downtime offline migration."
   - content: "You want to test application changes against realistic data. Which option should you pick?"

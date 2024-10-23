@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of the 'Introduction to accessibility' module.
-  ms.date: 04/10/2024
+  ms.date: 10/15/2024
   author: erzelman
   ms.author: erzelman
   ms.topic: unit
@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "What is accessibility?"
     choices:
-    - content: "Word used to describe how people access products."
+    - content: "Accessibility is a word used to describe how people access products."
       isCorrect: false
       explanation: "Incorrect. The ways in which people access technology don't describe the definition of accessibility."
-    - content: "Word used to describe whether a product or service can be used by people with disabilities."
+    - content: "Accessibility is a word used to describe whether people with disabilities can use a product or service."
       isCorrect: true
-      explanation: "Correct. Accessibility is a word used to describe whether a product or service can be used by people with disabilities."
-    - content: "Word used to rate the ease with which a person can use a product."
+      explanation: "Correct. Accessibility is a word used to describe whether people with disabilities can use a product or service."
+    - content: "Accessibility is a word used to rate the ease with which a person can use a product."
       isCorrect: false
       explanation: "Incorrect. The rate of ease that a person can access a product doesn't determine whether that product is accessible."
-    - content: "Word used to describe the security of products."
+    - content: "Accessibility is a word used to describe the security of products."
       isCorrect: false
       explanation: "Incorrect. Accessibility doesn't make a product more secure."
   - content: "What is a disability, as defined by the social model of disability?"
@@ -41,16 +41,16 @@ quiz:
       explanation: "Incorrect. A person with a disability doesn't lack ability."
   - content: "How can disabilities be categorized?"
     choices:
-    - content: "Situational - like a parent holding a baby and using a mobile phone."
+    - content: "Situational, like a parent holding a baby and using a mobile phone."
       isCorrect: false
       explanation: "Incorrect. Situational exclusion is only one category of disability."
-    - content: "Permanent - like a person who was born Blind or Deaf."
+    - content: "Permanent, like a person who was born blind or deaf."
       isCorrect: false
       explanation: "Incorrect. Permanent disability is only one category of disability."
-    - content: "Temporary - like a person who has a broken arm in a cast."
+    - content: "Temporary, like a person who has a broken arm in a cast."
       isCorrect: false
       explanation: "Incorrect. Temporary disability is only one category of disability."
-    - content: "All of the above"
+    - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Situational, permanent, and temporary disabilities are all categories of disability."
   - content: "What is assistive technology?"
@@ -60,10 +60,10 @@ quiz:
       explanation: "Correct. According to the World Health Organization, assistive technology is an umbrella term covering both devices and services that increase, maintain or improve the functional abilities and participation of people with disabilities and older people."
     - content: "Assistive technology is any device, software, or tool that enhances a person's capabilities."
       isCorrect: false
-      explanation: "Incorrect. Assistive technology may enhance a person's ability to perform a task but may not make them better at that task."
+      explanation: "Incorrect. Assistive technology might enhance a person's ability to perform a task, but might not make them better at that task."
     - content: "Assistive technology is any device, software, or tool that replaces the need for human assistance or intervention."
       isCorrect: false
-      explanation: "Incorrect. Assistive technology are support devices, tools, and services. For example, someone who is Deaf may benefit from captions while also requiring the need for an American Sign Language interpreter. Captions do not replace the interpreter."
+      explanation: "Incorrect. Assistive technology is support devices, tools, and services. For example, someone who is deaf might benefit from captions while also requiring the need for an American Sign Language interpreter. Captions do not replace the interpreter."
     - content: "Assistive technology is any device, software, or tool that modifies or adapts the environment to suit the needs of people with disabilities."
       isCorrect: false
       explanation: "Incorrect. Assistive technology doesn't alter the environment, but rather helps support individuals when there's a mismatch between the environment and the person."
