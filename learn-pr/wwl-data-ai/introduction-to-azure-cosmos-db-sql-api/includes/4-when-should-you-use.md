@@ -1,4 +1,4 @@
-Azure Cosmos DB for NoSQL is a fully managed NoSQL database service for modern and AI app development. It provides guaranteed single-digit millisecond response times, 99.999-percent availability and vector database capabilities, backed by SLAs with automatic and instant scalability.
+Azure Cosmos DB for NoSQL is a fully managed NoSQL database service for modern and AI app development. It provides guaranteed single-digit millisecond response times, 99.999-percent availability and [vector database capabilities][azure/cosmos-db/vector-database], backed by SLAs with automatic and instant scalability.
 
 For enterprise scenarios, Azure Cosmos DB for NoSQL has a comprehensive suite of financially backed [service level agreements (SLAs)][azure.microsoft.com/support/legal/sla/cosmos-db] that cover throughput, consistency, availability, and latency.
 
