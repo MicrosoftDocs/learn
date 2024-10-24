@@ -4,6 +4,7 @@ There are various SDKs available to connect to the Azure Cosmos DB for NoSQL fro
 - Java
 - Python
 - JavaScript (Node.js)
+- GO
 
 For this section, you will explore and get hands-on with the .NET SDK for the Azure Cosmos DB for NoSQL.
 
