@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-scalable-semantic-models.{{unitName}}
-title: Enter learning content title
+title: Work with relationships
 metadata:
-  title: learning-content
+  title: exercise
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 10/15/2024
-  author: angierudduck
-  ms.author: anrudduc
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
   ms.topic: unit
 ###########################################################################
 ###
@@ -21,6 +21,6 @@ metadata:
 ### To request new values, go to
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
   ms.service: TODO
-durationInMinutes: 6
+durationInMinutes: 1
 content: |
-  [!include[](includes/2-storage-modes.md)]
+  [!include[](includes/3-exercise.md)]

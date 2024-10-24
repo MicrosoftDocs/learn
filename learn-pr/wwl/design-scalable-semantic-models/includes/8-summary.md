@@ -67,3 +67,7 @@ TODO: describe the business impact
  -->
 
 <!-- Do not include any other content -->
+
+
+> [!TIP]
+> Review the [Optimization guide for Power BI](/power-bi/guidance/power-bi-optimization) for more ways to increase report performance.
