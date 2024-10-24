@@ -34,7 +34,7 @@ quiz:
       explanation: "This is the correct answer."
     - content: "Use the `subscribe` operator"
       isCorrect: false
-      explanation: "No. The subscribe operator is not a valid operator in C#."
+      explanation: "No. The `subscribe` operator isn't a valid operator in C#."
     - content: "You can't wire up event handling using C#. You must use XAML."
       isCorrect: false
       explanation: "No. Both XAML and C# provide a means to wire up event handling."
