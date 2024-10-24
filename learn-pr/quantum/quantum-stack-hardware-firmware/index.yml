@@ -1,4 +1,5 @@
 ### YamlMime:Module
+hidden: true
 uid: learn.quantum.quantum-stack-hardware-firmware
 metadata:
   title: The Quantum Stack - Quantum Processor Units, Hardware, and Firmware
