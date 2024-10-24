@@ -15,7 +15,7 @@ abstract: |
   - Evaluate the differences between a search engine and a reasoning engine by comparing their functionalities, underlying technologies, and applications. 
   - Assess the effectiveness of the crawling, indexing, and ranking processes in search engines and understand how these processes contribute to the retrieval of relevant search results. 
   - Assess the importance of prompt engineering by evaluating the effectiveness of different prompts, critiquing best practice in prompting, and determining how critical thinking plays a crucial part. 
-prerequisites: A basic understaning of AI 
+prerequisites: A basic understanding of AI 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
