@@ -1,5 +1,3 @@
-(7 minutes) 
-
 As technology advances, human and AI interaction grows more important. AI isn't just for automation; it's transforming industries, improving our lives, and sparking innovation. This video examines AI's societal impact and the key considerations for its integration.
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2294409]

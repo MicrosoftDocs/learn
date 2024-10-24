@@ -1,5 +1,3 @@
-(5 minutes) 
-
 As AI becomes more integrated into our lives, it's important to understand how to use it ethically and effectively. 
 
 In this video, you explore the best practices to follow while using AI. 

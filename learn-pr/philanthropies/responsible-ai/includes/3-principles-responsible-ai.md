@@ -1,5 +1,3 @@
-(5 minutes) 
-
 It is essential to develop AI systems based on trustworthy, fair, and privacy-conscious principles. This video outlines six key principles: accountability, inclusiveness, reliability & safety, fairness, transparency, privacy & security. Discover how these principles foster trust and help create AI systems that respect individual rights and serve society. 
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2294407]
