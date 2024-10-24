@@ -1374,8 +1374,8 @@ achievements:
   iconUrl:  /training/achievements/visual-studio-github-push.svg
 - uid: learn.azure.intro-to-azure-cosmos-db-core-api.badge
   type: badge
-  title: Introduction to Azure Cosmos DB SQL API
-  summary: Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
+  title: Introduction to Azure Cosmos DB for NoSQL
+  summary: Describe Azure Cosmos DB for NoSQL. Determine if Azure Cosmos DB for NoSQL is a good fit for your application.
   iconUrl: /training/achievements/intro-to-azure-cosmos-db-core-api.svg
 - uid: learn.create-cosmos-db-for-scale.badge
   type: badge
@@ -1659,8 +1659,8 @@ achievements:
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
 - uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
   type: badge
-  title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
-  summary: This module walks through connecting to Azure Cosmos DB SQL API to create and query container items from a .NET console application.
+  title: Guided project - Build an app that queries and adds data to Azure Cosmos DB for NoSQL
+  summary: This module walks through connecting to Azure Cosmos DB for NoSQL to create and query container items from a .NET console application.
   iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
