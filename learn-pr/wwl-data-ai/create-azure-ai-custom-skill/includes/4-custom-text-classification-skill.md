@@ -1,6 +1,6 @@
 Custom text classification allows you to map a passage of text to different user defined classes. For example, you could train a model on the synopsis on the back cover of books to automatically identify a books genre. You then use that identified genre to enrich your online shop search engine with a genre facet.
 
-:::image type="content" source="../media/flow-diagram.png" alt-text="A diagram showing the steps needed to enrich a search index." border="false":::
+:::image type="content" source="../media/flow-diagram.png" alt-text="Diagram showing the steps needed to enrich a search index." border="false":::
 
 Here, you'll see what you need to consider to enrich a search index using a custom text classification model:
 
@@ -69,7 +69,7 @@ There are two ways to create your Azure AI Language project. If you start using 
 
 The most flexible way to create an Azure AI Language project is to first create your language service using the Azure portal. If you choose this option, you get the option to add custom features.
 
-:::image type="content" source="../media/add-additional-features.png" alt-text="A screenshot showing creating a language service in the Azure portal.":::
+:::image type="content" source="../media/add-additional-features.png" alt-text="Screenshot showing creating a language service in the Azure portal.":::
 
 As you are going to create a custom text classification, select that custom feature when creating your language service. You'll also link the language service to a storage account using this method.
 
@@ -82,7 +82,7 @@ Once the resource has been deployed, you can navigate directly to the Language S
 
 As with all AI models, you need to have identified data that you can use to train it. The model needs to see examples of how to map data to a class and have some examples it can use to test the model. You can choose to let the model automatically split your training data, by default it will use 80% of the documents to train the model and 20% to blind test it. If you have some specific documents that you want to test your model with, you can label documents for testing.
 
-:::image type="content" source="../media/assign-document-testing.png" lightbox="../media/assign-document-testing.png"alt-text="A screenshot of Language Studio showing selecting a document to add to the test set.":::
+:::image type="content" source="../media/assign-document-testing.png" lightbox="../media/assign-document-testing.png"alt-text="Screenshot of Language Studio showing selecting a document to add to the test set.":::
 
 In Language Studio, in your project, select **Data labeling**. You'll see all your documents. Select each document you'd like to add to the testing set, then select **Testing the model's performance.** Save your updated labels and then create a new training job.
 
@@ -183,11 +183,11 @@ There are five things the function app needs to know:
 
 The text to be classified is passed from your custom skillset in AI Search to the function as input. The remaining four items can be found in Language Studio.
 
-:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="A screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
+:::image type="content" source="../media/copy-prediction-endpoint.png" alt-text="Screenshot showing where to copy the prediction endpoint from." lightbox="../media/copy-prediction-endpoint.png":::
 
 The endpoint and deployment name is on the deploying a model pane.
 
-:::image type="content" source="../media/project-settings-primary-key.png" alt-text="A screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
+:::image type="content" source="../media/project-settings-primary-key.png" alt-text="Screenshot showing where to copy the primary key for language services from." lightbox="../media/project-settings-primary-key.png":::
 
 The project name and primary key are on the project settings pane.
 

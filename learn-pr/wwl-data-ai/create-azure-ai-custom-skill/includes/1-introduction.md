@@ -8,7 +8,7 @@ For example:
 
 To support these scenarios, you can implement custom skills as web-hosted services (such as Azure Functions) that support the required interface for integration into a skillset.
 
-:::image type="content" source="../media/enrichment-pipeline.png" alt-text="A diagram showing how a skillset in an Azure AI Search solution connects to an Azure function to integrate a custom skill.":::
+:::image type="content" source="../media/enrichment-pipeline.png" alt-text="Diagram showing how a skillset in an Azure AI Search solution connects to an Azure function to integrate a custom skill.":::
 
 In this module you'll learn how to:
 

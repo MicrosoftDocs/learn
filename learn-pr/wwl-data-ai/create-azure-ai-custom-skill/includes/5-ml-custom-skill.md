@@ -60,7 +60,7 @@ The JSON to do this output field mapping is:
 
 You create your Azure Machine Learning model using developer tools like the Python SDK, REST APIs, or Azure CLI. Another option is to take advantage of the Azure AI Machine Learning studio, a graphical user interface that lets you create, train, and deploy models without writing any code.
 
-:::image type="content" source="../media/steps-enrich-search-index.png" alt-text="A diagram showing the steps to enrich a search index with an Azure AI Machine Learning Studio model." border="false":::
+:::image type="content" source="../media/steps-enrich-search-index.png" alt-text="Diagram showing the steps to enrich a search index with an Azure AI Machine Learning Studio model." border="false":::
 
 With a model created, you alter how the scoring code calls the model to allow it to be used by your custom search skill.
 
@@ -74,7 +74,7 @@ When you create the AML workspace, Azure will also create storage accounts, a ke
 
 Azure AI Machine Learning Studio  lets you use a designer to use drag and drop to create pipelines that create and train models. There's an even easier way to create models by using prebuilt templates.
 
-:::image type="content" source="../media/prebuilt-components-list.png" alt-text="A screenshot of all the prebuilt components in the Azure AI Machine Learning Studio." lightbox="../media/prebuilt-components-list.png":::
+:::image type="content" source="../media/prebuilt-components-list.png" alt-text="Screenshot of all the prebuilt components in the Azure AI Machine Learning Studio." lightbox="../media/prebuilt-components-list.png":::
 
 However you choose to create your models, they need to be registered in Azure AI Machine Learning Studio so that you can deploy the model to a web service.
 

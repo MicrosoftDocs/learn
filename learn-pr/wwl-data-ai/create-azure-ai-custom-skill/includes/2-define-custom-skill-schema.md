@@ -1,6 +1,6 @@
 Your custom skill must implement the expected schema for input and output data that is expected by skills in an Azure AI Search skillset.
 
-## Input Schema
+## Input schema
 
 The input schema for a custom skill defines a JSON structure containing a record for each document to be processed. Each document has a unique identifier, and a data payload with one or more inputs, like this:
 

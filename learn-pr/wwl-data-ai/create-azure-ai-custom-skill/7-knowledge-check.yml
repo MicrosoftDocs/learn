@@ -51,7 +51,7 @@ quiz:
       explanation: "Correct. The URI has to use an HTTPS endpoint."
     - content: "The URI has to use an HTTP endpoint"
       isCorrect: false
-      explanation: "Incorrect. The URI can't to an HTTP endpoint."
+      explanation: "Incorrect. The URI can't use an HTTP endpoint."
     - content: "The URI has to use an FTP endpoint"
       isCorrect: false
       explanation: "Incorrect. The URI can't use an FTP endpoint."
