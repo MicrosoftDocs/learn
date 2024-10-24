@@ -10,7 +10,7 @@ CosmosClientOptions options = new ()
 You can pass in this options instance as the last parameter to the **CosmosClient** constructor parameter. This options parameter can be used if you are using an endpoint and key pair.
 
 ```csharp
-CosmosClient client = new (endpoint, key, options);  
+CosmosClient client = new (endpoint, credential, options);  
 ```
 
 This options parameter can also be used if you are using a connection string constructor.
