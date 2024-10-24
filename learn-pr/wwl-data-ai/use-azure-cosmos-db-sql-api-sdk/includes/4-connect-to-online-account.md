@@ -110,9 +110,8 @@ Container container = database.GetContainer("products");
 
 ```csharp
 Container container = await database.CreateContainerAsync(
-    "products", 
-    "/categoryId", 
-    400
+    new ContainerProperties(chatContainerName, "/categoryId"), 
+    ThroughputProperties.CreateAutoscaleThroughput(1000)
 );
 ```
 
@@ -120,8 +119,7 @@ Container container = await database.CreateContainerAsync(
 
 ```csharp
 Container container = await database.CreateContainerIfNotExistsAsync(
-    "products", 
-    "/categoryId", 
-    400
+    new ContainerProperties(chatContainerName, "/categoryId"), 
+    ThroughputProperties.CreateAutoscaleThroughput(1000)
 );
 ```
