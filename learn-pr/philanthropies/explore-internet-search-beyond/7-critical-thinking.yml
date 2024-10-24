@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.critical-thinking
+title: Critical thinking
+metadata:
+  title: Critical thinking
+  description: This content is a part of the internet search and beyond module.
+  ms.date: 10/07/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-critical-thinking.md)]
