@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.developer-use-cases-for-ai-with-github-copilot.ai-in-the-software-development-lifecycle
+uid: learn.github.developer-use-cases-for-ai-with-github-copilot.ai-software-development-lifecycle
 title: AI in the Software Development Lifecycle (SDLC)
 metadata:
   title: AI in the Software Development Lifecycle (SDLC)
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-ai-in-the-software-development-lifecycle.md)]
+  [!include[](includes/4-ai-software-development-lifecycle.md)]
