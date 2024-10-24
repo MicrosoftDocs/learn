@@ -8,7 +8,6 @@ metadata:
   author: linkhp
   ms.author: lipar
   ms.topic: unit
-  ms.service: entra-external-id
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

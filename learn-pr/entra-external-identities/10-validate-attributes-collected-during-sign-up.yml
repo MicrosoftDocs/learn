@@ -9,7 +9,6 @@ metadata:
   ms.author: lipar
   ms.topic: unit
   zone_pivot_groups: microsoft-entra-external-identities-configuration-options
-  ms.service: entra-external-id
 durationInMinutes: 20
 content: |
   [!include[](includes/10-validate-attributes-collected-during-sign-up.md)]
