@@ -8,6 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  durationInMinutes: 1
+durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

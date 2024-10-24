@@ -8,6 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  durationInMinutes: 9
+durationInMinutes: 9
 content: |
   [!include[](includes/5-new-way-to-search-microsoft-copilot.md)]
