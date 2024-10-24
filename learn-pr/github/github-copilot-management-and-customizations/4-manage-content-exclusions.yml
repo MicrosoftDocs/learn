@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-management-and-customizations.managing-content-exclusions
+title: Manage Content Exclusions
+metadata:
+  title: Manage Content Exclusions
+  description: This content is part of the "Management and Customization Considerations with GitHub Copilot" module.
+  ms.date: 10/18/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-manage-content-exclusions.md)]
