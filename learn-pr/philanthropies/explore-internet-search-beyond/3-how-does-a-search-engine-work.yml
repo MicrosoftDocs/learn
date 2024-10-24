@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.prod: learning-azure
-durationInMinutes: 4
+  durationInMinutes: 4
 content: |
   [!include[](includes/3-how-does-a-search-engine-work.md)]

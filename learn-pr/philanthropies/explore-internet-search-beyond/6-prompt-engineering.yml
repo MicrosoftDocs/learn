@@ -8,7 +8,6 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.topic: unit
-  ms.prod: learning-azure
-durationInMinutes: 10
+  durationInMinutes: 10
 content: |
   [!include[](includes/6-prompt-engineering.md)]
