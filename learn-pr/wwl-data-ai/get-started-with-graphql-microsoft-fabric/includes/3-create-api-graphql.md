@@ -37,4 +37,4 @@ GraphQL offers support for one-to-one (1:1), one-to-many (1:N), and many-to-many
 
 These relationships enable developers to create rich, interconnected data models that can be queried efficiently.
 
-:::image type="content" source="../media/3-relationship.png" alt-text="Screenshot of the property to disable a query for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/3-relationship.png" alt-text="Screenshot of the new relationship dialog for GraphQL in Microsoft Fabric.":::
