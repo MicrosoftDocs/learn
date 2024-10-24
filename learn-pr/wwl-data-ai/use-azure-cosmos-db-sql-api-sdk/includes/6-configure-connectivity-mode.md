@@ -20,7 +20,7 @@ To configure the client, you will need to create an instance of the **CosmosClie
 You can either use the constructor that takes in an endpoint and key:
 
 ```csharp
-CosmosClientOptions options = new ();
+CosmosClientOptions clientOptions = new();
 
 CosmosClient client = new (endpoint, key, options);
 ```
@@ -28,7 +28,7 @@ CosmosClient client = new (endpoint, key, options);
 Or, use the constructor that takes in a connection string:
 
 ```csharp
-CosmosClientOptions options = new ();
+CosmosClientOptions clientOptions = new();
 
 CosmosClient client = new (connectionString, options);
 ```
