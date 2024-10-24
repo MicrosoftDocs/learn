@@ -21,8 +21,10 @@ modules:
   - learn.wwl.fundamentals-generative-ai
   - learn.wwl.embrace-responsible-ai-principles-practices
 levels:
-  - Beginner
+  - beginner
 iconUrl: /training/achievements/generic-trophy.svg
 prerequisites: |
   - A [GitHub](https://github.com) account
   - Basic understanding of AI fundamentals
+trophy:
+  uid: learn.github.ethical-ai
