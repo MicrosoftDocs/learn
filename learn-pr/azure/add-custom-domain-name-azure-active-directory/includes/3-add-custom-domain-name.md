@@ -36,7 +36,6 @@ In our scenario, your company has a Microsoft Entra organization where you can a
 
 1. Create records for your domain based on the DNS information you copied from Azure. The following screenshot shows a text record added to Azure DNS. Azure DNS is acting as the domain registrar.
 
-    ![Screenshot of a domain registrar that shows a TXT record for the custom domain.](../media/3-dns-records.png)
 
 1. Wait at least an hour for the DNS updates to propagate.
 
