@@ -48,6 +48,7 @@ modules:
 - learn.github.introduction-prompt-engineering-with-github-copilot
 - learn.advanced-github-copilot
 - learn.github.github-copilot-across-environments
+- learn.github.github-copilot-management-and-customizations
 - learn.wwl.develop-unit-tests-using-github-copilot-tools
 - learn.github.introduction-to-github-copilot-for-business
 - learn.github.intro-github-copilot-enterprise

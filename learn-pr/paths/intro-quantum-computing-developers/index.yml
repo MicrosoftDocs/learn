@@ -31,7 +31,6 @@ roles:
 - student
 products:
 - github
-- azure-quantum
 subjects:
 - devops
 - cloud-computing
