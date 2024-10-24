@@ -1,18 +1,28 @@
 ### YamlMime:LearningPath
 uid: github-ethical-ai
-title: GitHub Ethical AI
-summary: 
+metadata:
+  title: GitHub Ethical AI
+  description: Strengthen your AI knowledge through courses covering essential topics such as machine learning, facial recognition, generative AI, and responsible AI practices. Learn how AI tools detect and analyze faces, explore the creation of content with generative models, and embrace ethical considerations in AI development. These foundational classes build expertise in AI while focusing on responsible technology use. 
+  brand: github
+  ms.date: 10/24/2024
+  author: soyetubo
+  ms.author: soyetubo
+  ms.topic: learning-path
+title: Ethical AI
+summary: Strengthen your knowledge of essential AI topics while focusing on responsible technology use.
 roles:
   - startup-founder
-  - 
+  - developer
 products:
-  - 
+  - github
 modules:
   - learn.wwl.get-started-ai-fundamentals
   - learn.wwl.detect-analyze-faces
   - learn.wwl.fundamentals-generative-ai
   - learn.wwl.embrace-responsible-ai-principles-practices
 levels:
-  - intermediate
+  - Beginner
 iconUrl: /training/achievements/generic-trophy.svg
-achievement: 
+prerequisites: |
+  - A [GitHub](https://github.com) account
+  - Basic understanding of AI fundamentals
