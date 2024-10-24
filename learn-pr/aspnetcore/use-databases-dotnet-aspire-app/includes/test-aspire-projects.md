@@ -12,7 +12,7 @@ dotnet new aspire-xunit
 
 ## Explore the test project 
 
-The following example test project was created as part of the **.NET Aspire Starter Application** template. If you're unfamiliar with it, see [Quickstart: Build your first .NET Aspire project](/dotnet/aspire/get-started/build-your-first-aspire-app.md). The .NET Aspire test project takes a project reference dependency on the target app host. Consider the template project:
+The following example test project was created as part of the **.NET Aspire Starter Application** template. If you're unfamiliar with it, see [Quickstart: Build your first .NET Aspire project](/dotnet/aspire/get-started/build-your-first-aspire-app). The .NET Aspire test project takes a project reference dependency on the target app host. Consider the template project:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

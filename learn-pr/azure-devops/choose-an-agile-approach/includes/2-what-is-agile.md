@@ -27,7 +27,7 @@ After they shipped the release, Mara and Andy sat down for coffee. They were bot
 
  **Andy:** Look, if you know some magic way to make life easier, I'm all for it. My kids are always asleep by the time I get home. But this sounds very touchy-feely without any concrete solutions.
 
- **Mara:** It's not magic, but we can do it bit by bit, and Azure DevOps gives us the tools we need to implement Agile practices. For now, when we want to plan, we can use Azure Boards. First, can you explain the build process to me and help me identify the big problems?
+ **Mara:** It's not magic, but we can do it bit by bit. Azure DevOps gives us the tools we need to implement Agile practices. For now, when we want to plan, we can use Azure Boards. First, can you explain the build process to me and help me identify the big problems?
 
  After lots of coffee, Mara and Andy identify the biggest problems in the build process. All the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic process on Azure Boards to get all the problems in one place.
 
@@ -55,7 +55,7 @@ If collaboration is the key to becoming successful at Agile, what are some of th
 
 When changing a culture, keep a few things in mind. It's important that team members have a quiet, comfortable place to work. They need spaces where they can focus, without a lot of distractions and noise.
 
-Meetings are a fact of life and they can feel like they take over a person's working life. To give team members more control, meetings need an agenda and strict time frames.
+Meetings are a fact of life, and they can feel like they take over a person's working life. To give team members more control, meetings need an agenda and strict time frames.
 
 Asynchronous communications, like email and messages, can feel overwhelming and people often feel they have to be answered right away. Make it clear that not all of these communications need an immediate response.
 
@@ -75,4 +75,4 @@ Good tools can help your Agile team members collaborate more effectively, both w
 * [Skype](https://www.skype.com/?azure-portal=true): Skype is easy to use and a good general-purpose tool. Many people already have it installed.
 * [Slack](https://slack.com/?azure-portal=true): Slack provides many separate communication channels, all from a single interface. You can organize these channels in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
 
-Other common tools include Google Hangouts, Asana, Trello, GoToMeeting and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.
+Other common tools include Google Hangouts, Asana, Trello, GoToMeeting, and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.
