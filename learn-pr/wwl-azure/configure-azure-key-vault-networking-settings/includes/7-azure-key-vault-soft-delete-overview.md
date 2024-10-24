@@ -60,7 +60,7 @@ At the same time, Key Vault will schedule the deletion of the underlying data co
 
 ## Soft-delete retention period
 
-Soft-deleted resources are retained for a set period of time, 90 days. During the, soft-delete retention interval, the following apply:
+Soft-deleted resources are retained for a set period of time, 90 days.
 
  -  You may list all of the key vaults and key vault objects in the soft-delete state for your subscription as well as access deletion and recovery information about them.
     
