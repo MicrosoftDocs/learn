@@ -18,25 +18,25 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 There are two options for provisioning capacity:
 
-- Provision capacity within Security Copilot (recommended)
-- Provision capacity through Azure
+- Provision capacity within Security Copilot (recommended) - When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+- Provision capacity through Azure - The Azure portal now includes Security Copilot as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
 > [!NOTE]
-> Regardless of the method you choose, you will need to purchase a minimum of 1 and a maximum of 100 SCUs.
+> Regardless of the method you choose, you will need to purchase a minimum of 1 and a maximum of 100 SCUs.    
 
-  ***Provision capacity within Security Copilot***. When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity for your organization. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+# [Provision through Copilot](#tab/provision-through-copilot)
+:::image type="content" source="../media/set-up-capacity-new-v2.png" lightbox="../media/set-up-capacity-new-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
 
-   :::image type="content" source="../media/set-up-capacity-new-v2.png" lightbox="../media/set-up-capacity-new-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
+# [Provision through Azure portal](#tab/provision-through-azure)
+:::image type="content" source="../media/set-up-capacity-azure-portal.png" lightbox="../media/set-up-capacity-azure-portal.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
 
-  ***Provision capacity through Azure***. The Azure portal now includes Security Copilot as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
-
-  :::image type="content" source="../media/set-up-capacity-azure-portal.png" lightbox="../media/set-up-capacity-azure-portal.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
+---
 
 Regardless of the approach you choose to provision capacity, the process takes the information and establishes a resource group for the Microsoft Security Copilot service, within your Azure subscription. The SCUs are an Azure resource within that resource group. Deployment of the Azure resource can take a few minutes.
 
-Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Microsoft Security Copilot product itself. Security Copilot provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning.
+Once admins complete the steps to onboard to Copilot, they can manage capacity by increasing or decreasing provisioned SCUs within the Azure portal or the Microsoft Security Copilot product itself. Security Copilot provides a usage monitoring dashboard for capacity owners allowing them to track usage over time and make informed decisions about capacity provisioning. As an owner, you'll have visibility into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data
 
-:::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
+:::image type="content" source="../media/usage-monitoring-dashboard-new.png" lightbox="../media/usage-monitoring-dashboard-new.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
 ### Set up the default environment
 
@@ -50,6 +50,8 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 - SCU capacity - Select the capacity of SCUs previously provisioned.
 
 - Data storage - When an organization onboards to Copilot, the admin must confirm the geographic location of the tenant as the customer data collected by the services is stored there. Microsoft Security Copilot operates in the Microsoft Azure data centers in the European Union (EUDB), the United Kingdom, the United States, Australia and New Zealand, Japan, Canada, and South America.
+
+- Logging audit data in Microsoft Purview - As part of the initial setup, you can choose to allow Microsoft Purview to process and store admin actions, user actions, and Copilot responses. This includes data from any Microsoft and non-Microsoft Integrations. If you opt in and you already use Microsoft Purview, no further action is needed. If you opt in but are not already using Purview, you'll need to follow the Microsoft Purview guides to set up a limited experience.
 
 - Your organization's data - The admin must also opt in or opt out of data sharing options. Turn the toggles on or off for any of the following options:
 
