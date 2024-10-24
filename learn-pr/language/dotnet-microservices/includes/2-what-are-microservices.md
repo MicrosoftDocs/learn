@@ -37,7 +37,7 @@ Architecting fine-grained microservices-based applications enables continuous in
 
 Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You can test the containerized application as a unit, and deploy it as a container image instance on the host operating system.
 
-Just as shipping containers allow goods of all kinds to be transported by ship, train, or truck, software containers act as a standard unit of software deployment that can contain different code and dependencies. Developers and IT professionals can use containerized software to deploy code and dependencies across environments with little or no modification.
+Software containers act as a standard unit of software deployment that can contain different code and dependencies. This is similar to how shipping containers transport goods of all kinds by ship, train, or truck. Developers and IT professionals can use containerized software to deploy code and dependencies across environments with little or no modification.
 
 If it sounds like containerizing an application might be a great way to implement the microservices architecture pattern, it is. The benefits of using containers line up almost exactly with the benefits of using a microservices architecture.
 
@@ -54,14 +54,14 @@ The microservices you build in this module will run in a Docker container, publi
 
 ## .NET SDK container publishing
 
-In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish` command. The tools to do this do a bunch of inference based on the properties of your project and its outputs. .NET then creates the same image that a Dockerfile would create. It can take as few as two commands to create a new application and publish it as an image:
+In .NET 7, the .NET SDK gained the ability to create container images via the `dotnet publish` command. The tools do a bunch of inference based on the properties of your project and its outputs. .NET then creates the same image that a Dockerfile would create. It can take as few as two commands to create a new application and publish it as an image:
 
 ```donetcli
 dotnet new webapi
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release
 ```
 
-The preceding .NET CLI commands create a new web API and publishes the app as a container:
+The preceding .NET CLI commands create a new web API and publish the app as a container:
 
 - Targeting Linux as the OS (--os linux).
 - Specifying an x64 architecture (--arch x64).
