@@ -1,4 +1,4 @@
-Promptbooks in Copilot for Security are collections of prompts put together to accomplish specific security-related tasks. They run one prompt after another, building on previous responses.
+Promptbooks in Security Copilot are collections of prompts put together to accomplish specific security-related tasks. They run one prompt after another, building on previous responses.
 
 You can create your own promptbook with the promptbook builder to automate investigation flows and optimize repetitive steps in Copilot that are customized to your needs and requirements. You can also share the promptbooks you created with other users so they can also benefit from your work.
 

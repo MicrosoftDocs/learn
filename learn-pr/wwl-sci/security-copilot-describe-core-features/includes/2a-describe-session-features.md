@@ -43,7 +43,7 @@ For each option, the user is prompted for additional information. The image that
 
 :::image type="content" source="../media/feedback-needs-improvement-new.png" lightbox="../media/feedback-needs-improvement-new.png" alt-text="Screen capture showing the information a user can provide for a response that needs improvement.":::
 
-The option to provide feedback is also available for Copilot features that are available in the embedded experience. Refer to [Describe the embedded experiences of Microsoft Copilot for Security](/training/modules/security-copilot-embedded-experiences/).
+The option to provide feedback is also available for Copilot features that are available in the embedded experience. Refer to [Describe the embedded experiences of Microsoft Security Copilot](/training/modules/security-copilot-embedded-experiences/).
 
 ### Pin board
 

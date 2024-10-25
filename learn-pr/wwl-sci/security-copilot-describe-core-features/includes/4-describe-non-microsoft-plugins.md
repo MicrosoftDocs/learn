@@ -1,4 +1,4 @@
-Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities. These plugins are categorized as:
+Microsoft Security Copilot supports non-Microsoft plugins to extend Copilot's capabilities. These plugins are categorized as:
 
 - Other
 - Websites
@@ -13,8 +13,8 @@ Other plugins give Copilot access to information and capabilities from services 
 The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
 
 - CIRCL Hash Lookup (Preview)
-- Copilot for Security Plugin for ServiceNow (Preview)
-- Copilot for Security Plugin for Splunk (Preview)
+- Security Copilot Plugin for ServiceNow (Preview)
+- Security Copilot Plugin for Splunk (Preview)
 - CrowdSec Threat Intelligence (Preview)
 - GreyNoise Community (Preview)
 - GreyNoise Enterprise (Preview)
@@ -33,7 +33,7 @@ The website plugins are accessed using anonymous authentication.
 
 #### Custom
 
-The Microsoft Copilot for Security platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks.
+The Microsoft Security Copilot platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks.
 
 :::image type="content" source="../media/plugins-custom.png" lightbox="../media/plugins-custom.png" alt-text="Screen capture of the custom plugins.":::
 

@@ -1,5 +1,5 @@
 
-Knowledge base connections, a feature of Microsoft Copilot for Security currently in preview, allows you to integrate your organization’s knowledge base as another source of information. The inclusion of knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to your organization.
+Knowledge base connections, a feature of Microsoft Security Copilot currently in preview, allows you to integrate your organization’s knowledge base as another source of information. The inclusion of knowledge bases gives Copilot more context, resulting in responses that are more relevant, specific, and customized to your organization.
 
 There are two ways to integrate a knowledge base into Copilot:
 
@@ -8,7 +8,7 @@ There are two ways to integrate a knowledge base into Copilot:
 
 ### File upload
 
-You can upload a file in Microsoft Copilot for Security to allow Copilot to refer to the contents of the file for responses when you prompt Copilot for your "uploaded files" or by using the file’s name.
+You can upload a file in Microsoft Security Copilot to allow Copilot to refer to the contents of the file for responses when you prompt Copilot for your "uploaded files" or by using the file’s name.
 
 To upload a file, the steps are as follows:
 
@@ -21,7 +21,7 @@ To upload a file, the steps are as follows:
 1. Wait for the file to appear in Uploads. If an error message appears, correct the problem, and try again.
 
    > [!NOTE]
-   > Uploaded files are only available to the user account that uploaded them. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security).
+   > Uploaded files are only available to the user account that uploaded them. Uploaded files are stored like the rest of customer data as described in [Privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security).
 
 1. To include the file as a source in your current session, select the toggle button so it's lit up (the circle inside the toggle button is in the rightmost position). If you aren't going to use the file yet, or want to exclude it as a source in your current session, select the toggle button so it's greyed out (the circle inside the toggle button is in the leftmost position).
 
