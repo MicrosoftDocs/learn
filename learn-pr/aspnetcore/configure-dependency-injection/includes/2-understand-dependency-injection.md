@@ -83,9 +83,6 @@ This differs from the previous registration in two ways:
 1. The service is registered using the `IPersonService` interface instead of the `PersonService` class.
 1. The `PersonService` class is registered as the implementation of the `IPersonService` interface.
 
-> [!TIP]
-> Think of this as saying, "Whenever a component needs an `IPersonService`, provide an instance of the `PersonService` class."
-
 The `app.MapGet` line changes to:
 
 ```csharp
@@ -99,9 +96,12 @@ app.MapGet("/",
 
 Note the signature of the delegate now expects an `IPersonService` parameter instead of a `PersonService` parameter. When the app runs and a client requests the root URL, the service container provides an instance of the `PersonService` class because it's registered as the implementation of the `IPersonService` interface.
 
-But why go through the trouble of using interfaces? The main reason is flexibility. If you decide to change the implementation of the `IPersonService` interface, you only need to update the registration in the `Program.cs` file. The components that depend on the `IPersonService` interface don't need to change.
+> [!TIP]
+> Think of `IPersonService` as a contract. It defines the methods and properties that an implementation **must** have. The delegate wants an instance of `IPersonService`. It doesn't care at all about the underlying implementation, only that the instance has the methods and properties defined in the interface.
 
-Additionally, using interfaces makes it easier to test components in isolation. You can create a mock implementation of the `IPersonService` interface for testing purposes. When you register the mock implementation in the test, the service container provides the mock implementation to the component being tested.
+## Testing with dependency injection
+
+But why go through the trouble of using interfaces? The main reasons are maintainability and flexibility. Using interfaces makes it easier to test components in isolation. You can create a mock implementation of the `IPersonService` interface for testing purposes. When you register the mock implementation in the test, the service container provides the mock implementation to the component being tested.
 
 For example, say that instead of returning a hard-coded string, the `GetPersonName` method in the `PersonService` class fetches the name from a database. To test the component that depends on the `IPersonService` interface, you can create a mock implementation of the `IPersonService` interface that returns a hard-coded string. The component being tested doesn't know the difference between the real implementation and the mock implementation.
 
