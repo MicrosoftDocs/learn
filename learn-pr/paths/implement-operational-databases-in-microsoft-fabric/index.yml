@@ -37,6 +37,6 @@ subjects:
 modules:
 - learn-wwl.get-started-sql-database-microsoft-fabric
 - learn-wwl.get-started-with-graphql-microsoft-fabric
-- learn.wwl.ingest-dataflows-gen2-fabric
+- learn.wwl.use-data-factory-pipelines-fabric
 trophy:
   uid: learn-wwl.implement-operational-databases-in-microsoft-fabric.trophy
