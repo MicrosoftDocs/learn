@@ -1,7 +1,7 @@
 
-Identity risk investigation is a crucial step to defend an organization. Microsoft Entra ID Protection applies the capabilities of Microsoft Copilot for Security to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
+Identity risk investigation is a crucial step to defend an organization. Microsoft Entra ID Protection applies the capabilities of Microsoft Security Copilot to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
 
-Before you get started with Copilot in Microsoft Entra, your organization must be onboarded to Microsoft Copilot for Security, the Entra plugin must be enabled in Copilot, and users must have the appropriate role permissions. Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the Entra data.
+Before you get started with Copilot in Microsoft Entra, your organization must be onboarded to Security Copilot, the Entra plugin must be enabled in Copilot, and users must have the appropriate role permissions. Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the Entra data.
 
 To view and investigate a user’s risky sign-ins:
 

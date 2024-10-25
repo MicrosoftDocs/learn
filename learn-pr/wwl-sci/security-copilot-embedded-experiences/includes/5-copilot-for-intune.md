@@ -1,16 +1,16 @@
-Microsoft Intune has capabilities that are powered by Copilot. These capabilities access your Intune data, and can help you manage your policies & settings, understand your security posture, and troubleshoot device issues.
+Microsoft Intune has capabilities that are powered by Microsoft Security Copilot. These capabilities access your Intune data, and can help you manage your policies & settings, understand your security posture, and troubleshoot device issues.
 
-Access to your Intune data is supported through Microsoft Copilot for Security, referred to as the standalone experience, or embedded within the Intune admin center, referred to as Copilot in Intune. This unit focuses on the embedded experience.
+Access to your Intune data is supported through Microsoft Security Copilot, referred to as the standalone experience, or embedded within the Intune admin center, referred to as Copilot in Intune. This unit focuses on the embedded experience.
 
 ### Before you begin
 
-To enable Copilot to access your Intune data, for either the embedded or standalone experience, Microsoft Copilot for Security must be configured, the Microsoft Intune plugin must be enabled, and you need to have appropriate role permissions. You need a role permission that grants access to Copilot and you also need a separate Intune service-specific role like the Intune Endpoint Security Manager role. There isn't a built-in Intune role that includes access to Copilot.
+To enable Copilot to access your Intune data, for either the embedded or standalone experience, Microsoft Security Copilot must be configured, the Microsoft Intune plugin must be enabled, and you need to have appropriate role permissions. You need a role permission that grants access to Copilot and you also need a separate Intune service-specific role like the Intune Endpoint Security Manager role. There isn't a built-in Intune role that includes access to Copilot.
 
 :::image type="content" source="../media/intune-plugin.png" lightbox="../media/intune-plugin.png" alt-text="Screen capture showing the Microsoft Intune plugin enabled.":::
 
-For the specific setup tasks, go to [Describe how to enable Microsoft Copilot for Security](/training/modules/security-copilot-getting-started/6-describe-how-to-enable-security-copilot).
+For the specific setup tasks, go to [Describe how to enable Microsoft Security Copilot](/training/modules/security-copilot-getting-started/6-describe-how-to-enable-security-copilot).
 
-You can check the status of Microsoft Copilot in Intune from the Intune admin center.
+You can check the status of Copilot in Intune from the Intune admin center.
 
 :::image type="content" source="../media/copilot-in-intune-v2.png" lightbox="../media/copilot-in-intune-v2.png" alt-text="Screen capture of Intune admin portal showing that Copilot in Intune is enabled.":::
 
