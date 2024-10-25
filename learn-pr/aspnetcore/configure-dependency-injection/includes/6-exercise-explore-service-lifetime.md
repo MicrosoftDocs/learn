@@ -1,0 +1,1 @@
+WIP: This exercise will guide the learner through registering services using the Singleton, Scoped, and Transient service lifetimes in an ASP.NET Core app.

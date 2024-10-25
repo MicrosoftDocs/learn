@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.configure-dependency-injection
 metadata:
-  title: Customize ASP.NET Core behavior with middleware
-  description: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
-  ms.date: 10/02/2024
+  title: Configure services with dependency injection in ASP.NET Core
+  description: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
+  ms.date: 10/24/2024
   author: camsoper
   ms.author: casoper
   ms.topic: module
   ms.service: aspnet-core
-title: Customize ASP.NET Core behavior with middleware
-summary: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
+  ai-usage: ai-assisted
+title: Configure services with dependency injection in ASP.NET Core
+summary: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe the role of middleware in an ASP.NET Core app.
-    - Use included middleware like HTTP logging and authentication.
-    - Create custom middleware to handle requests and responses.
+    - Describe the role of the service container in an ASP.NET Core app.
+    - Register services with the service container.
+    - Retrieve services from the service container in C# code.
 prerequisites: |
   - Ability to write C# code at a beginner level.
   - Ability to use the .NET CLI at a beginner level.
@@ -29,9 +30,10 @@ products:
 - aspnet-core
 units:
 - learn.configure-dependency-injection.intro
-- learn.configure-dependency-injection.understand-middleware
-- learn.configure-dependency-injection.exercise-built-in-middleware
-- learn.configure-dependency-injection.exercise-custom-middleware
+- learn.configure-dependency-injection.understand-dependency-injection
+- learn.configure-dependency-injectio.exercise-register-services
+- learn.configure-dependency-injection.service-lifetimes
+- learn.configure-dependency-injectio.exercise-explore-service-lifetime
 - learn.configure-dependency-injection.knowledge-check
 - learn.configure-dependency-injection.summary
 badge:

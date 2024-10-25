@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: Check your knowledge
+  title: Ignore these questions, they're from another module
   questions:
   - content: "Which is a true statement about custom middleware?"
     choices:

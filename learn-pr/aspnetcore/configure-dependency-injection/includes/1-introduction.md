@@ -1,4 +1,4 @@
-When an ASP.NET Core app receives an HTTP request, it passes through a series of components that are responsible for processing the request and generating a response. These components are called middleware. ASP.NET Core includes a set of built-in middleware, and you can also create custom middleware to handle specialized requirements.
+When an ASP.NET Core app receives an HTTP request, the code handling the request sometimes needs to access other services. For example, a Blazor component might need to access a service that fetches data from a database. ASP.NET Core uses a built-in dependency injection (DI) container to manage the services that an app uses.
 
 ## Example scenario
 
@@ -6,8 +6,8 @@ Suppose you're an entry-level ASP.NET Core developer at a small company. Your te
 
 ## What will we be doing?
 
-In this module, you use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement the built-in `UrlRewriter` middleware to rewrite URLs in the app. You'll then create a custom middleware component to log request details to the console.
+In this module, you use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement a simple in-memory service ticket service. You'll then use the built-in dependency injection container to inject the service where needed.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to implement built-in and custom middleware in an ASP.NET Core app. You'll also understand how middleware components work together to process HTTP requests and generate responses.
+By the end of the module, you'll be able to create a simple ASP.NET Core web application that uses the built-in dependency injection container to manage services. You'll also be able to describe the benefits of using dependency injection in an ASP.NET Core app.

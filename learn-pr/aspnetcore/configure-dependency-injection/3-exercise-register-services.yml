@@ -1,9 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.configure-dependency-injection.exercise-built-in-middleware
+uid: learn.configure-dependency-injectio.exercise-register-services
 
-title: Exercise - Use built-in middleware
+
+title: Exercise - Register and consume services
+
 metadata:
-  title: Exercise - Use built-in middleware
+  title: Exercise - Register and consume services
+
   description: This unit is an exercise that demonstrates how to use built-in middleware in an ASP.NET Core app.
   ms.date: 8/29/2024
   author: camsoper
@@ -11,4 +14,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-exercise-built-in-middleware.md)]
+  [!include[](includes/3-exercise-register-services.md)]
