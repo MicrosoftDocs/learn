@@ -9,7 +9,7 @@ In previous units in this module, you saw how users might locate a hotel by spec
 
 `search=(Description:luxury OR Category:luxury)&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
-An important consideration when you're booking a hotel is its geographical location. For example, if you're booking a trip to see the Eiffel Tower, you'll want a hotel located near it.
+An important consideration when you're booking a hotel is its geographical location. For example, if you're booking a trip to see the Eiffel Tower, you'll want a hotel located near to it.
 
 To ask AI Search to return results based on their location information, you can use two functions in your query:
 
@@ -35,7 +35,7 @@ This query returns all the luxury hotels in the index within five kilometers of 
 > [!IMPORTANT]
 > When you use `geo.distance` in a filter, the equal to (`eq`) and not equal to (`ne`) operators are not supported. Instead, use `lt`, `le`, `gt`, or `ge`.
 
-Because `geo.distance` returns several kilometers, you can also use it in an `orderby` clause. For example, this query returns all luxury hotels in the index, but those closest to the Eiffel Tower are listed first:
+Because `geo.distance` returns the distance in kilometers, you can also use it in an `orderby` clause. For example, this query returns all luxury hotels in the index, but those closest to the Eiffel Tower are listed first:
 
 `search=(Description:luxury OR Category:luxury)&orderby=geo.distance(Location, geography'POINT(2.294481 48.858370)') asc&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
