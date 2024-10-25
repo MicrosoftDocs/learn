@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you'll create an Azure Resource Manager template (ARM template), deploy it to Azure, and then update that ARM template to add parameters and outputs.
+In this exercise, you create an Azure Resource Manager template (ARM template), deploy it to Azure, and then update that ARM template to add parameters and outputs.
 
 This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code before starting the exercise.
 
@@ -61,7 +61,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az login
     ```
 
-1. A browser opens so that you can sign in to your account. After you've signed in, a list of the subscriptions associated with this account displays in the terminal. If you activated the sandbox, you should see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+1. A browser opens so that you can sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. If you activated the sandbox, you should see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
 1. In the bash shell, run the following command to set the default subscription for all of the Azure CLI commands you run in this session.
 
