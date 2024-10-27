@@ -45,7 +45,7 @@ An item can be shared and item permissions can be configured by selecting on the
 
  ![Configure item permissions](../media/manage-item-permissions.png)
 
-In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't select any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata and any reports associated with the lakehouse. The user won't have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
+In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't select any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata. The user won't have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
 
  ![Grant people lakehouse read all access](../media/grant-people-access-lakehouse.png)
 

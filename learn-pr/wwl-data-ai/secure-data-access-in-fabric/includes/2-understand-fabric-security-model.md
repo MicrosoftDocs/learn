@@ -5,7 +5,7 @@ Fabric has three security levels and they're evaluated sequentially to determine
 2. Fabric access: checks if the user can access Fabric.
 3. Data security: checks if the user can perform the action they've requested on a table or file.  
 
-The third level, data security, has several building blocks that be configured individually or together to align with different access requirements. The primary access controls in Fabric are:
+The third level, data security, has several building blocks that can be configured individually or together to align with different access requirements. The primary access controls in Fabric are:
 
 - Workspace roles
 - Item permissions
