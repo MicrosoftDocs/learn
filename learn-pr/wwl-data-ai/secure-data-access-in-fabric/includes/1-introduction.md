@@ -4,9 +4,9 @@ Security in Microsoft Fabric is optimized for securing data for specific use cas
 
 A security use case in Fabric refers to a set of users needing data access and accessing data in a specific way. Once a use case is identified, Fabric permissions associated with that use case can be configured. Suppose you work at a healthcare company with multiple systems that store data, such as electronic health records (EHR), insurance claims data, clinical trial data, patient and disease registries, and administrative data. Different users within your company or partner organizations need to view, transform, analyze, aggregate, and use this data to derive business insights. Users need access to different Fabric compute engines, items, and workspaces to perform their jobs effectively:
 
-- **Data engineers** need access to data in a lakehouse to develop downstream data products. 
-- **Business or data analysts** need to query data to answer business questions. 
-- **Data scientists** need to access data in a lakehouse and consume it through Apache Spark to create models and experiments. 
+- **Data engineers** need access to data in a lakehouse to develop downstream data products.
+- **Business or data analysts** need to query data to answer business questions.
+- **Data scientists** need to access data in a lakehouse and consume it through Apache Spark to create models and experiments.
 - **Report creators** need to build reports to share with report consumers.
 - **Report consumers** need to view data in Power BI reports to make decisions.
 

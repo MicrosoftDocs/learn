@@ -18,8 +18,8 @@ quiz:
       explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
     - content: Microsoft Entra ID authentication, Fabric access, Data security
       isCorrect: true
-      explanation: Correct. Microsoft Entra ID authentication, Fabric access, Data security
-    - content: The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
+      explanation: Correct. The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
+    - content: Fabric access, Microsoft Entra ID authentication, Data security
       isCorrect: false
       explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Fabric access.
   - content: What workspace role should be assigned to a data engineer who needs to create Fabric items and read all data in an existing lakehouse?

@@ -30,7 +30,7 @@ Using the SQL analytics endpoint, granular T-SQL permissions can be applied to S
 
 Row-level security, column-level security, and dynamic data masking can also be applied using the SQL analytics endpoint. See:
 
-- [Row-level security](/fabric/data-warehouse/row-level-security?azure-portal=true) 
+- [Row-level security](/fabric/data-warehouse/row-level-security?azure-portal=true)
 - [Column-level security](/fabric/data-warehouse/column-level-security?azure-portal=true)
 - [Dynamic data masking](/fabric/data-warehouse/dynamic-data-masking?azure-portal=true)
 
