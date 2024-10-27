@@ -25,13 +25,9 @@ To meet the access requirements for the new data engineer, you can assign them t
 
 ### Assign workspace roles
 
-Users can be added to workspace roles from the **Manage access** button from within a workspace.  
+Users can be added to workspace roles from the **Manage access** button from within a workspace. Add a user by entering the user's name and selecting the workspace role to assign them in the **Add people** dialogue.
 
 ![Manage access](../media/manage-access.png)
-
-Add a user by entering the user's name and selecting the workspace role to assign them in the **Add people** dialogue. 
-
-![Add people](../media/add-people.png)
 
 ## Configure item permissions
 

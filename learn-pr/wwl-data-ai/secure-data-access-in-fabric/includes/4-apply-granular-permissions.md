@@ -48,10 +48,8 @@ Workspace and item permissions provide coarse access to data in a lakehouse. To 
  ![Manage OneLake data access roles](../media/manage-onelake-data-access.png)
 
 2. In the **New Role** window, create a new role name and select the folders to grant access to.
- ![Add OneLake data access role](../media/new-role.png)
 
 3. Once the role is created, assign a user or group to the role and select the permissions to assign.
- ![Add OneLake data access role permissions](../media/assign-role-permissions.png) 
 
 > [!Tip]
 > For more information on how OneLake RBAC permissions are evaluated with workspace and item permissions, see: [How OneLake RBAC permissions are evaluated with Fabric permissions](/fabric/onelake/security/data-access-control-model#how-onelake-rbac-permissions-are-evaluated-with-fabric-permissions?azure-portal=true)
