@@ -33586,6 +33586,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/7-exercise-guest-user-access-azure-ad-b2b.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
       "redirect_document_id": false
