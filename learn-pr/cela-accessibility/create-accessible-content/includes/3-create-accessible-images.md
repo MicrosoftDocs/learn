@@ -1,4 +1,4 @@
-Images are a great way to add visual interest or include graphics in your creations. Alternative text, or alt text, is a brief description of an image that helps people who cannot see the image understand its content and purpose. Alt text is read by screen readers and other assistive technologies. The alt text you write should convey the "why" of the image as it relates to the content of a document or webpage. 
+Images are a great way to add visual interest or include graphics in your creations. Alternative text, or alt text, is a brief description of an image that helps people who can't see the image understand its content and purpose. Screen readers and other assistive technologies read alt text. The alt text you write should convey the "why" of the image as it relates to the content of a document or webpage. 
 
 Best practice is that alt text is purposeful and meaningful about what's in the image. It's recommended to write alt text that is less than 150 characters in length since assistive technologies will read through the whole description without the ability to navigate or skip through it.
 
