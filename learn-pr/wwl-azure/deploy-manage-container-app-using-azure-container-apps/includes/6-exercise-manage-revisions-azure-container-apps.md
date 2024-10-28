@@ -51,7 +51,7 @@ You complete the following tasks during this exercise:
 1. On the Create and deploy new revision page, complete the following steps:
 
     - Name / suffix: Enter **v2**
-    - Under Container image, select your container image. For example, aca-apl2003.
+    - Under Container image, select your container image. For example, aca-az2003.
 
 1. Select **Create**.
 
