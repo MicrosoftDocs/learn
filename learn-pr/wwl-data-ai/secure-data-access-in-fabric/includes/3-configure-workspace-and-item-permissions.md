@@ -27,7 +27,7 @@ To meet the access requirements for the new data engineer, you can assign them t
 
 Users can be added to workspace roles from the **Manage access** button from within a workspace. Add a user by entering the user's name and selecting the workspace role to assign them in the **Add people** dialogue.
 
-![Manage access](../media/manage-access.png)
+![Screenshot of clicking the manage access button.](../media/manage-access.png)
 
 ## Configure item permissions
 
@@ -39,11 +39,11 @@ Since the engineer no longer needs to view all items in the workspace, the **Con
 
 An item can be shared and item permissions can be configured by selecting on the ellipsis (...) next to a Fabric item in a workspace and then selecting **Manage permissions**.
 
- ![Configure item permissions](../media/manage-item-permissions.png)
+ ![Screenshot of configuring item permissions.](../media/manage-item-permissions.png)
 
 In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't select any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata. The user won't have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
 
- ![Grant people lakehouse read all access](../media/grant-people-access-lakehouse.png)
+ ![Screenshot of grant people lakehouse read all access.](../media/grant-people-access-lakehouse.png)
 
 > [!Tip]
 > Each Fabric data item has its own security model. To learn more about permissions that can be granted when a lakehouse or other Fabric data item is shared see:

@@ -18,7 +18,8 @@ Data in a Fabric lakehouse is stored with the following folder structure:
 ### View the SQL analytics endpoint view of the lakehouse
 
 The SQL analytics endpoint is used to read data in the /Tables folder of the lakehouse using T-SQL.
- ![SQL analytics endpoint view](../media/analytics-endpoint.png)
+
+:::image type="content" source="../media/analytics-endpoint.png" alt-text="Screenshot of SQL analytics endpoint view." lightbox="../media/analytics-endpoint.png":::
 
 ### Apply granular permissions to the lakehouse using T-SQL
 
@@ -38,14 +39,14 @@ Row-level security, column-level security, and dynamic data masking can also be 
 
 The lake view of the lakehouse is used to read data in the /Tables and /Files folder of the lakehouse.
 
- ![Lake view of lakehouse](../media/lakehouse-files.png)
+:::image type="content" source="../media/lakehouse-files.png" alt-text="Screenshot of files in lakehouse." lightbox="../media/lakehouse-files.png":::
 
 ### Use OneLake data access roles to secure data
 
 Workspace and item permissions provide coarse access to data in a lakehouse. To further refine data access, folders in the lake view of the lakehouse can be secured using OneLake data access roles (preview). You can create custom roles within a lakehouse and grant read permissions only to specific folders in OneLake. Folder security is inheritable to all subfolders. To create a custom OneLake data access role:
 
 1. Select **Manage OneLake data access (preview)** from the menu in the lake view of the lakehouse.
- ![Manage OneLake data access roles](../media/manage-onelake-data-access.png)
+:::image type="content" source="../media/manage-onelake-data-access.png" alt-text="Screenshot of OneLake data access button." lightbox="../media/manage-onelake-data-access.png":::
 
 2. In the **New Role** window, create a new role name and select the folders to grant access to.
 
@@ -58,7 +59,7 @@ Workspace and item permissions provide coarse access to data in a lakehouse. To 
 
 Granular permissions can be applied to warehouses using the SQL analytics endpoint, similar to the way the endpoint is used for the lakehouse. The same permissions can be applied: GRANT, REVOKE, and DENY and row-level security, column-level security, and dynamic data masking.  
 
- ![Warehouse granular permissions](../media/warehouse-granular-permissions.png)
+:::image type="content" source="../media/warehouse-granular-permissions.png" alt-text="Screenshot of warehouse granular permissions." lightbox="../media/warehouse-granular-permissions.png":::
 
 ### Configure Semantic model permissions
 
