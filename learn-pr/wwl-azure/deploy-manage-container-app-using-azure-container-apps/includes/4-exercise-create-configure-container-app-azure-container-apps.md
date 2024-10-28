@@ -131,13 +131,11 @@ Complete the following steps to configure a connection between the container app
 
 1. Notice the Name assigned to your active revision.
 
-<<<<<<< HEAD
 1. On the left-side menu under Application, select **Containers**.
 
 1. To the right of **Based on revision**, ensure that your active revision is selected.
-=======
+
 1. On the left-side menu under Application, select **Scale**.
->>>>>>> 2570a60e7eee186e7bffaad66799b66b93b0261b
 
 1. At the top of the page, select **Edit and deploy**.
 
