@@ -48,7 +48,7 @@ When writing a prompt for Copilot, first give Copilot a broad description of the
 
 1. Write a function that tells me if a number is prime
 1. The function should take an integer and return true if the integer is prime
-1. The function should error if the input is not a positive integer
+1. The function should throw an error if the input is not a positive integer
 
 #### Give examples
 
