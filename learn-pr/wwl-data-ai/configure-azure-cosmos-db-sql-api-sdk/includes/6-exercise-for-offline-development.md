@@ -6,7 +6,7 @@
 
 To set up the lab environment for this exercise, sign into your Azure subscription and follow these instructions to provision your Azure resources:
 
-- **[Setup your local lab environment.](https://go.microsoft.com/fwlink/?linkid=2294752)**
+- **[Set up your local lab environment.](https://go.microsoft.com/fwlink/?linkid=2294752)**
 
 ### Complete the exercise
 
