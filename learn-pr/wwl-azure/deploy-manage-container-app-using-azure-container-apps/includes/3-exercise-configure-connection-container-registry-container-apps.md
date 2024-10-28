@@ -33,7 +33,7 @@ You complete the following tasks during this exercise:
 
 Complete the following steps to configure a user-assigned managed identity.
 
-1. Open your Azure portal
+1. Open your Azure portal.
 
 1. On the portal menu, select **+ Create a resource**.
 
@@ -48,7 +48,7 @@ Complete the following steps to configure a user-assigned managed identity.
     - Subscription: Specify the Azure subscription that you're using for this guided project.
     - Resource group: **RG1**
     - Region: **Central US**
-    - Name: **uai-apl2003**
+    - Name: **uai-az2003**
 
 1. Select **Review + create**.
 
@@ -74,7 +74,7 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
 1. On the Select managed identities page, under Managed identity, select **User-assigned managed identity**, and then select the user-assigned managed identity created for this project.
 
-    For example: `uai-apl2003`.
+    For example: `uai-az2003`.
 
 1. On the Select managed identities page, select **Select**.
 
@@ -96,7 +96,7 @@ Complete the following steps to configure Container Registry with AcrPull permis
 
     - Subscription: Specify the Azure subscription that you're using for this guided project.
     - Resource group: **RG1**
-    - Name: **pe-acr-apl2003**
+    - Name: **pe-acr-az2003**
     - Region: Ensure that **Central US** is selected.
 
 1. Select **Next: Resource**.
@@ -146,7 +146,7 @@ In this task, you verify that your configuration meets the specified requirement
 
 1. Under Private endpoint, select the private endpoint that you created.
 
-    For example, select **per-acr-apl2003**
+    For example, select **per-acr-az2003**
 
 1. On the Private endpoint page, under Settings, select **DNS configuration**.
 
