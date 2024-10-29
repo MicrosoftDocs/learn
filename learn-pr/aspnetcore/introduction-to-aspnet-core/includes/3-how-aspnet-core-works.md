@@ -52,13 +52,6 @@ ASP.NET Core provides a robust and flexible backend for building a wide range of
 - **API development**: ASP.NET Core is well-suited for building APIs, with support for both RESTful APIs and gRPC. RESTful APIs are ideal for web-based communication, while gRPC offers high performance and efficient communication for real-time applications and microservices.
 - **Background Tasks**: ASP.NET Core allows you to run background tasks using hosted services. This is useful for tasks that need to run independently of user requests, such as processing messages from a queue or performing scheduled maintenance.
 
-### Add libraries and tools with NuGet Package Management
-
-[NuGet](https://www.nuget.org/) is the primary tool for managing .NET packages, including those for ASP.NET Core. It allows you to easily add additional libraries and tools to your projects, facilitating code reuse and collaboration.
-
-- **Adding functionality**: Use NuGet packages to integrate libraries like Entity Framework Core, logging frameworks, or authentication tools into your ASP.NET Core projects.
-- **Package repository**: NuGet provides a central repository for discovering and integrating third-party libraries. You can also create and share your own NuGet packages with your team or the .NET community.
-
 ### Monitoring and maintenance
 
 ASP.NET Core provides a comprehensive suite of tools for monitoring and maintaining the health and performance of your applications. These features can be easily added to your application as middleware components, integrating specific functionalities into your project:
