@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-concepts-methods.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of Examine device management concepts and methods for Azure IoT Hub
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  manager: lizross
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Direct methods are recommended for which of the following device management patterns?"
+    choices:
+    - content: "Reboot and Factory Reset."
+      isCorrect: true
+      explanation: "Correct. Direct methods are recommended for the Reboot and Factory Reset patterns."
+    - content: "Configuration."
+      isCorrect: false
+      explanation: "Incorrect. The Configuration pattern uses Device Twin properties."
+    - content: "Reporting Progress and Status."
+      isCorrect: false
+      explanation: "Incorrect. The recommended approach for Reporting Progress and Status is to use Device Twins."
+  - content: "Which of the following choices is an example of an on-device operation that could occur during the device management process?"
+    choices:
+    - content: "Observe desired properties."
+      isCorrect: true
+      explanation: "Correct. A currently connected device can choose to be notified of updates to the desired properties when they happen."
+    - content: "Receive twin notifications."
+      isCorrect: false
+      explanation: "Incorrect. Twin notifications are received on the service-side. This operation allows the solution back end to be notified when the twin is modified."
+    - content: "Replace desired properties."
+      isCorrect: false
+      explanation: "Incorrect. This operation enables the solution back end to completely overwrite all existing desired properties."

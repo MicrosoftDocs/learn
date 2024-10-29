@@ -3,11 +3,10 @@ uid: learn.control-authentication-with-apim.understand-apim
 metadata:
   title: What is API Management?
   description: API Management helps businesses expose services and data through published APIs.
-  ms.date: 09/01/2019
+  ms.date: 06/14/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is API Management?
 durationInMinutes: 5
 content: |

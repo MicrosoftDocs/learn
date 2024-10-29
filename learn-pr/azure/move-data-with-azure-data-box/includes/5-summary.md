@@ -1,8 +1,8 @@
-In this module, you've considered the differences between various devices in the Azure Data Box family. You identified Azure Data Box Disk as the most suitable device to import data from the autonomous vehicles described in our scenario.
+In this module, you considered the differences between various devices in the Azure Data Box family. You identified Azure Data Box Disk as the most suitable device to import data from the autonomous vehicles described in our scenario.
 
-You've considered the overall workflow for ordering and using an Azure Data Box device. You've also seen how you can clone orders to facilitate regular data imports into Azure.
+You considered the overall workflow for ordering and using an Azure Data Box device. You also saw how you can clone orders to facilitate regular data imports into Azure.
 
-Finally, you've learned how to choose between Azure Data Box Disk and other Azure offerings, like Azure Import/Export, depending on your needs.
+Finally, you learned how to choose between Azure Data Box Disk and other Azure offerings, like Azure Import/Export, depending on your needs.
 
 ## Learn more
 

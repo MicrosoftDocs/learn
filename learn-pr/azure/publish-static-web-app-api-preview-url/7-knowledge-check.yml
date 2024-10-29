@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 12/08/2022
+  ms.date: 12/12/2023
   author: cshoe
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -17,18 +16,18 @@ quiz:
   questions:
     - content: "How do you customize the route endpoint for a function in an Azure Functions project?"
       choices:
-        - content: "Rename _index.js_ file to the name of the endpoint you desire."
+        - content: "Rename *index.js* file to the name of the endpoint you desire."
           isCorrect: false
-          explanation: "Incorrect. The name of the API endpoint is not related to the filename of the function."
-        - content: "Inside the function's _function.json_ file, add a **route** property and set it to your desired endpoint path name."
+          explanation: "Incorrect. The name of the API endpoint isn't related to the filename of the function."
+        - content: "Inside the function's *function.json* file, add a `route` property and set it to your desired endpoint path name."
           isCorrect: true
-          explanation: "Correct. The route endpoint has the same name as the folder that contains the function, by convention. You can customize the path to the endpoint using the **route** property in the _function.json_ file"
-        - content: "Endpoint paths cannot be customized."
+          explanation: "Correct. The route endpoint has the same name as the folder that contains the function, by convention. You can customize the path to the endpoint using the `route` property in the *function.json* file"
+        - content: "Endpoint paths can't be customized."
           isCorrect: false
-          explanation: "The route endpoint has the same name as the folder that contains the function, by convention. However, they can be customized in the _function.json_ file."
+          explanation: "The route endpoint has the same name as the folder that contains the function, by convention. However, they can be customized in the *function.json* file."
         - content: "Name the function's symbol in the code to your desired name."
           isCorrect: false
-          explanation: "Incorrect. The name of the API endpoint is not related to the name of any variable in the code."
+          explanation: "Incorrect. The name of the API endpoint isn't related to the name of any variable in the code."
     - content: "How do you deploy changes to your web app without affecting your production web site?"
       choices:
         - content: "Go to the production URL of your app."
@@ -36,10 +35,10 @@ quiz:
           explanation: "Incorrect. The production URL of your Azure Static Web Apps instance displays your web app, not your build progress."
         - content: "Go to your resource in the Azure portal and view the configuration."
           isCorrect: false
-          explanation: "Incorrect. The configuration for your resource in the Azure portal allows you to view or modify the configuration of the resource. It does not show the progress of your build and redeployment of your web app."
+          explanation: "Incorrect. The configuration for your resource in the Azure portal allows you to view or modify the configuration of the resource. It doesn't show the progress of your build and redeployment of your web app."
         - content: "Push your commits to your watched branched of your git repository."
           isCorrect: false
-          explanation: "Incorrect. Pushing your commits will not show your progress, but it will trigger a GitHub Actions workflow."
+          explanation: "Incorrect. Pushing your commits doesn't show your progress, but it triggers a GitHub Actions workflow."
         - content: "Create a preview URL by creating a pull request against the branch that your GitHub Action is watching."
           isCorrect: true
           explanation: "Correct. Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see preview your changes through preview URLs. "
@@ -48,12 +47,12 @@ quiz:
         - content: "In the package.json file."
           isCorrect: false
           explanation: "Incorrect. The configuration for your app's locations are defined in the GitHub Actions workflow file."
-        - content: "Add an entry in _staticwebapp.config.json_ for the location."
+        - content: "Add an entry in *staticwebapp.config.json* for the location."
           isCorrect: false
-          explanation: "Incorrect. The _staticwebapp.config.json_ file is where you define routing rules, not the location of your API."
+          explanation: "Incorrect. The *staticwebapp.config.json* file is where you define routing rules, not the location of your API."
         - content: "Azure Static Web Apps automatically knows where your code and API are located, without any configuration."
           isCorrect: false
-          explanation: "Incorrect. You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you do not specify these locations, default values will be used."
-        - content: "In the GitHub Actions workflow file in your _.github/workflows_ folder."
+          explanation: "Incorrect. You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you don't specify these locations, default values are used."
+        - content: "In the GitHub Actions workflow file, located in your *.github/workflows* folder."
           isCorrect: true
-          explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your _.github/workflows_ folder."
+          explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your *.github/workflows* folder."

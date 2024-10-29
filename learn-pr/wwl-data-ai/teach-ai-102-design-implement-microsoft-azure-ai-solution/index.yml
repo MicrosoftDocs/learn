@@ -2,33 +2,29 @@
 uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution
 metadata:
   title: Get tips and tricks for teaching AI-102 Designing and Implementing a Microsoft Azure AI Solution
-  description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 05/20/2022
+  description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials. &nbsp;
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/18/2024
+  ms.service: azure
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+  ai-usage: human-only
 title: Get tips and tricks for teaching AI-102 Designing and Implementing a Microsoft Azure AI Solution
-summary: Learn tips and tricks for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
+summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |
-  After completing this module, you will be able to:
-  - Understand how to utilize the tips and tricks for teaching AI-102: Designing and Implementing a Microsoft Azure AI Solution in the classroom
-  - Leverage the lab environment during the instructional portion of the class
-  - Explain course terminology and technical topics
-  - Discover additional resources and materials to prepare students for success on their Microsoft certification exams
-prerequisites: |
-  - Understand the Microsoft Learn for Educators program benefits
-  - Know how to navigate the Microsoft Learn for Educators portal
-  - Know how to access the Microsoft Learning Download Center and download content
-  - Understand the resources available through the Microsoft curriculum and teaching materials
-  - Understand the resources available to you help you get prepared to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes
-  - Understand how faculty members can prepare for to take a certification exam
-  - Know the different approaches to curriculum integration
-  - Understand the Microsoft technical training program
-  - Ability to utilize the built-in accessibility features
-  - Understand using the objective domains when preparing to teach
-  - Understand the exam structure
-iconUrl: /training/achievements/generic-badge.svg
+  After completing this module, you'll be able to:
+
+  - Understand how to utilize the tips and tricks for teaching AI-102: Designing and Implementing a Microsoft Azure AI Solution in academic programs.
+
+  - Use the lab environment during the instructional portion of the class.
+
+  - Explain course terminology and technical topics.
+
+  - Discover other resources and materials to prepare students for success on their Microsoft certification exams.
+prerequisites: ''
+iconUrl: /learn/achievements/teach-ai-102-design-implement-microsoft-azure-ai-solution.svg
 levels:
 - advanced
 roles:
@@ -38,19 +34,13 @@ products:
 units:
 - learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.introduction
 - learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.objective-domains
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.learn-module-best-practices
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-1
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-2
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-3
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-4
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-5
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-6
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-7
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-8
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-9
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-10
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-11
-- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-module-12
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.learn-learning-path-best-practices
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-1
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-2
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-3
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-4
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-5
+- learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-6
 - learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.bring-it-together
 - learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.knowledge-check
 - learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.summary

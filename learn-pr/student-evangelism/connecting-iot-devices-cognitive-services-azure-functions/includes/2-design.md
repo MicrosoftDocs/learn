@@ -9,7 +9,7 @@ You'll use the following components in the design of the solution:
    - Serverless Application Environments
    
    In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
-- **Cognitive Speech Service:** The Speech service is an API that provides you speech-to-text, text-to-speech, and speech translation functionality into a single Azure subscription. In this module, you'll use the Cognitive Speech service to integrate real-time speech translation.  
+- **Cognitive Speech Service:** The Speech service is an API that provides you speech to text, text to speech, and speech translation functionality into a single Azure subscription. In this module, you'll use the Cognitive Speech service to integrate real-time speech translation.  
 
 - **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT device.  
 
@@ -19,7 +19,7 @@ You'll use the following components in the design of the solution:
 
 - **Function app:** is the container that hosts the execution of individual functions.
 
-- **Devkit Translator sample:** is a project sample using Azure Functions and Cognitive Services that are available on [GitHub](https://github.com/Azure-Samples/mxchip-iot-devkit-translator). You'll use this code as a basis and modify it for the scenario outlined above  
+- **Devkit Translator sample:** is a project sample using Azure Functions and Azure AI services that are available on [GitHub](https://github.com/Azure-Samples/mxchip-iot-devkit-translator). You'll use this code as a basis and modify it for the scenario outlined above  
 
 - **Device code:** is Arduino Sketch File (.ino file extension) that you can use for controlling an Arduino circuit board.  
 
@@ -41,4 +41,4 @@ The overall module steps are:
 
    e. Configure and compile the code
 
-After completing the module, your device will be configured to the IoT Hub. You'll have the Azure function app deployed in the cloud. You'll also implement the device code in the IoT device. The device code will use the Azure function and will execute the code in a serverless environment. The resulting solution will perform speech translation using Cognitive Services for the Digital signage scenario.
+After completing the module, your device will be configured to the IoT Hub. You'll have the Azure function app deployed in the cloud. You'll also implement the device code in the IoT device. The device code will use the Azure function and will execute the code in a serverless environment. The resulting solution will perform speech translation using Azure AI services for the Digital signage scenario.

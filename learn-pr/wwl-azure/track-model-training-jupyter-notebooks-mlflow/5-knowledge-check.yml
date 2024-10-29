@@ -3,12 +3,13 @@ uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/19/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
@@ -16,13 +17,13 @@ quiz:
     choices:
     - content: "Autologging"
       isCorrect: true
-      explanation: "Correct. You can use autologging with scikit-learn. Enabling autologging will minimize the effort needed to log the model's results."
+      explanation: "Correct. You can use autologging with scikit-learn. Enabling autologging minimizes the effort needed to log the model's results."
     - content: "Custom logging"
       isCorrect: false
-      explanation: "Incorrect. You'll have to manually log any parameters, metrics, or artifacts."
+      explanation: "Incorrect. You have to manually log any parameters, metrics, or artifacts."
     - content: "A combination of autologging and custom logging."
       isCorrect: false
-      explanation: "Incorrect. Custom logging will not minimize the effort."
+      explanation: "Incorrect. Custom logging won't minimize the effort."
   - content: "When you use MLflow tracking when training a model in a notebook running on Azure Machine Learning compute, on which tab in the studio can you view the model's results?"
     choices:
     - content: "Data"
@@ -33,4 +34,4 @@ quiz:
       explanation: "Incorrect. The Models tab shows the registered models."
     - content: "Jobs"
       isCorrect: true
-      explanation: "Correct. Jobs will show the MLflow experiment runs including all metadata and logged parameters, metrics, and artifacts."
+      explanation: "Correct. Jobs shows the MLflow experiment runs including all metadata and logged parameters, metrics, and artifacts."

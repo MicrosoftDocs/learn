@@ -12,18 +12,23 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
 
 ## Objectives
 
+
+> [!NOTE]
+> The [lab files](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Interactive%20Lab%20Simulation%20Files/08) are available in the GitHub.
+
+
 + **Task 1**: Deploy zone-resilient Azure virtual machines by using the Azure portal and an Azure Resource Manager template. 
     + Create a virtual machine in the Azure portal.
     + Review the template and deploy a second virtual machine. 
 + **Task 2**: Configure Azure virtual machines by using virtual machine extensions. 
     + Create a blob storage container. 
-    + Upload an [Azure PowerShell script](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-install_IIS.ps1). This script will install the Windows Server Web Server role on a virtual machine. 
+    + Upload an Azure PowerShell script. This script installs the Windows Server Web Server role on a virtual machine. 
     + Use the custom script extension feature to run the script on a virtual machine. Export the template.
-    + Configure the exported [template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-custom_script_extension.json) to install the role on a different virtual machine. 
-+ **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you'll scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
+    + Configure the exported template to install the role on a different virtual machine. 
++ **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
     + Resize the virtual machine.
     + Create and attach a new disk to the virtual machine.
-    + [Use Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/lab08diskcode.txt) to initialize and partition the new disk.
+    + Use Azure PowerShell to initialize and partition the new disk.
     + Customize the template to resize the virtual machine and change the disk configuration. 
 + **Task 4**: Register the Microsoft Insights and Microsoft Alerts Management resource providers.
 + **Task 5**: Deploy zone-resilient Azure Virtual Machine Scale Sets by using the Azure portal.
@@ -34,7 +39,7 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
 + **Task 6**: Configure Azure Virtual Machine Scale Sets by using virtual machine extensions.
     + Upload an Azure PowerShell script to install the install Windows Server Web Server role. 
     + Run the script on the virtual machines using the custom script extension feature. 
-    + Confirm the IIS is now available on the virtual machines. 
+    + Confirm the Internet Information Service (IIS) is now available on the virtual machines. 
 + **Task 7**: Scale compute and storage for Azure Virtual Machine Scale Sets. 
     + Confirm the virtual machines in the scale set are in different regions.
     + Configure autoscale based on a metric.

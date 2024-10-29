@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.discover-devops
+metadata:
+  title: "Discover DevOps"
+  description: "This module explores how DevOps practices optimize application lifecycle management for accelerated time to market and operational stability."
+  ms.date: 02/05/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module
+  ms.service: azure-devops
+title: Discover DevOps
+summary: Optimize application lifecycle management through DevOps practices such as collaboration, continuous learning, agility, and automation. Your organization benefits from accelerated time to market, stability and reliability in operations, and minimize mean time to recovery.
+abstract: |
+  Upon completion of this module, you'll be able to:
+  *   Describe the DevOps approach.
+  *   Explore best practices for fostering DevOps culture.
+  *   Identify DevOps goals and benefits.
+  *   Understand the DevOps application lifecycle.
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-cloud-services
+  - github
+  - azure-devops
+subjects:
+  - devops
+  - cloud-computing
+units:
+  - learn.wwl.discover-devops.introduction
+  - learn.wwl.discover-devops.what-is-devops
+  - learn.wwl.discover-devops.explore-devops-culture
+  - learn.wwl.discover-devops.explore-devops-goals-benefits
+  - learn.wwl.discover-devops.explore-devops-application-lifecycle
+  - learn.wwl.discover-devops.knowledge-check
+  - learn.wwl.discover-devops.summary
+badge:
+  uid: learn.wwl.discover-devops.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-data-warehouse.dynamic-management-views
+title: Monitor current activity
+metadata:
+  title: Monitor current activity
+  description: "Monitor current activity"
+  ms.date: 04/02/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/03-dynamic-management-views.md)]

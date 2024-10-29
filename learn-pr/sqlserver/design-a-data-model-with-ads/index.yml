@@ -3,14 +3,14 @@ uid: learn.design-a-data-model-with-ads
 metadata:
   title: Design a Performant Data Model in Azure SQL Database with Azure Data Studio
   description: "Learn how to create a data model, tables, indexes, constraints, and use data types with Azure data studio."
-  ms.date: 1/3/2023
+  ms.date: 03/05/2024
   author: JetterMcTedder
   ms.author: bspendolini
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-data-studio
 title: Design a Performant Data Model in Azure SQL Database with Azure Data Studio
-summary: "Learn how to create a data model with Azure data studio. Create indexes, tables and use data types to help develop your applications"
+summary: "In this module, you'll learn how to create a data model with Azure data studio. You'll create indexes and tables and use data types to help develop your applications."
 abstract: |
   By the end of this module, you'll be able to:
     - Design a data model containing tables that have relationships to each other.
@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of what (product) is and how it works at the beginner level
   - Beginner database knowledge
   - Basic experience navigating the Visual Studio Code user interface
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-a-data-model-with-ads.svg
 levels:
   - beginner
 roles:
@@ -35,9 +35,8 @@ products:
 - azure-data-studio
 - sql-server
 subjects:
-- data-ai
 - data-modeling
-- database
+- databases
 units:
 - learn.design-a-data-model-with-ads.introduction
 - learn.design-a-data-model-with-ads.analyze-the-structure-of-a-database-table

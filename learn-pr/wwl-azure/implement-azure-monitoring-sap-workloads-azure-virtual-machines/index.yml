@@ -2,23 +2,25 @@
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms
 metadata:
   title: Implement Azure Monitoring for SAP workloads on Azure VMs
-  description: "Implement Azure Monitoring for SAP workloads on Azure VMs"
-  ms.date: 03/09/2021
+  description: Explore Azure Monitoring for SAP workloads configuration on Azure Virtual Machines.
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: sap-on-azure
 title: Implement Azure Monitoring for SAP workloads on Azure VMs
-summary: In this module, you will learn to select and configure monitoring for SAP on Azure, as well as navigate the Log Analytics interface in Azure Monitor.
+summary: In this module, you'll learn to select and configure monitoring for SAP on Azure, and navigate the Log Analytics interface in Azure Monitor.
 abstract: |
   In this module, you will:
   - Select the appropriate monitoring solution.
   - Evaluate Azure Monitor logs and Azure Monitor for VMs.
   - Configure a Log Analytics workspace.
   - Navigate the Log Analytics interface in Azure Monitor.
-prerequisites: |
-  Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information
-iconUrl: /training/achievements/azure-monitoring-sap-workloads.svg
+prerequisites: Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information.
+iconUrl: /learn/achievements/azure-monitoring-sap-workloads.svg
 levels:
 - intermediate
 roles:
@@ -26,8 +28,8 @@ roles:
 products:
 - azure
 subjects:
-- virtual-machine
 - data-management
+- virtual-machine
 units:
 - learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.introduction
 - learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-options-for-monitoring

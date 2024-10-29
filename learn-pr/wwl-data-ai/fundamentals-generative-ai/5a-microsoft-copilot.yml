@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.microsoft-copilot
+title: Microsoft Copilot
+metadata:
+  title: Microsoft Copilot
+  description: Understand the different ways Microsoft Copilot features can be used across Microsoft services.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 5/15/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/5a-microsoft-copilot.md)]

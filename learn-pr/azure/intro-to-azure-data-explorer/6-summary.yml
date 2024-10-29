@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Introduction to Azure Data Explorer
   description: Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data.
-  ms.date: 05/20/2021
+  ms.date: 08/21/2023
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure-data-explorer
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]

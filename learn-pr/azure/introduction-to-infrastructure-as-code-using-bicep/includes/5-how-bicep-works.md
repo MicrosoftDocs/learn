@@ -1,4 +1,4 @@
-You've developed an understanding of the Bicep template language and the benefits it provides to template authoring. Before you begin the process of writing Bicep templates to provision your resources, you want to learn more about how Bicep works.
+You've developed an understanding of the Bicep template language and the benefits that it provides for template authoring. Before you begin the process of writing Bicep templates to provision your resources, you want to learn more about how Bicep works.
 
 In this unit, you'll learn about how Bicep works with Azure Resource Manager.
 
@@ -21,7 +21,7 @@ az deployment group create \
   --resource-group storage-resource-group
 ```
 
-After this deployment is submitted, Resource Manager looks at what is already deployed in Azure. It then looks at what you're trying to deploy, and it sets up a sequence of steps to achieve this state. All these activities involve invoking the Resource Manager API.
+After this deployment is submitted, Resource Manager looks at what's already deployed in Azure. It then looks at what you're trying to deploy, and it sets up a sequence of steps to achieve this state. All these activities involve invoking the Resource Manager API.
 
 You can view the JSON template that's submitted to Resource Manager by using the `bicep build` command. In the next example, a Bicep template is converted into its corresponding JSON template:
 
@@ -33,9 +33,9 @@ bicep build main.bicep
 
 Bicep provides a simpler syntax to use when you're writing templates. Look at the following examples of two templates. The template on the left is a Bicep template. The template on the right is a JSON template.
 
-:::image type="content" source="../media/bicep-json-comparison-inline.png" alt-text="Comparison showing Bicep code on the left and the corresponding JSON code on the right." lightbox="../media/bicep-json-comparison-expanded.png":::
+:::image type="content" source="../media/bicep-json-comparison-inline.png" alt-text="Screenshot that compares Bicep code on the left and the corresponding JSON code on the right." lightbox="../media/bicep-json-comparison-expanded.png":::
 
-You'll notice that in the Bicep template, the code is smaller in size. The syntax is easier to read and comprehend, and there are no complex expressions like in the JSON template on the right.
+Notice that the Bicep template contains less code. The syntax is easier to read and comprehend, and there are no complex expressions like in the JSON template on the right.
 
 > [!NOTE]
-> To view equivalent JSON and Bicep files side by side, see [Bicep Playground](https://aka.ms/bicepdemo/).
+> To view equivalent JSON and Bicep files side by side, see [Bicep Playground](https://aka.ms/bicepdemo).

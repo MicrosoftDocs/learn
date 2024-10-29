@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Use the Maven Plugin for Azure Functions to create an Azure Function, and deploy the function to Azure.
-  ms.date: 04/01/2020
+  ms.date: 01/26/2024
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

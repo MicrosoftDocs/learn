@@ -4,13 +4,12 @@ title: How to deploy a cognitive service to an IoT Edge device
 metadata:
   title: How to deploy a prebuilt module to an IoT Edge device
   description: In this section, we explain submitting a new deployment to an IoT Edge device
-  ms.date: 6/12/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.date: 07/22/2024
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 5 # dummy number at present
+durationInMinutes: 5
 content: |
   [!include[](includes/5-how-deploy-cognitive-service-iot-edge.md)]
     

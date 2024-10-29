@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-language-models-azure-databricks.language-model-judge
+title: Describe LLM-as-a-judge for evaluation
+metadata:
+  title: Describe LLM-as-a-judge for evaluation
+  description: "Describe LLM-as-a-judge for evaluation"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-language-model-judge.md)]

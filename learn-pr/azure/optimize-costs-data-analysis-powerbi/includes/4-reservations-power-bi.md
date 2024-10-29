@@ -10,13 +10,13 @@ The report provides recommendations for VM RI purchases at a shared scope, even 
 
 To use the report, select the drill-down filter, as marked in the following image.
 
-:::image type="content" source="../media/4-vm-ri-coverage-shared-report.png" alt-text="Screenshot showing the V M R I Coverage (shared recommendation) report." lightbox="../media/4-vm-ri-coverage-shared-report.png" :::
+:::image type="content" source="../media/4-vm-ri-coverage-shared-report.png" alt-text="Screenshot showing the VM RI Coverage (shared recommendation) report." lightbox="../media/4-vm-ri-coverage-shared-report.png" :::
 
-Select the region that you want to analyze. Then select the instance size flexibility group, and so on.
+Select the region that you want to analyze, then select the instance size flexibility group, and so on.
 
 For each drill-down level, the following filters are applied to the report:
 
-- The coverage data on the right is the filter showing how much usage is charged using the on-demand rate vs. how much is covered by the reservation. Current reservation usage is shown in dark blue, while more expensive on-demand usage is shown in light blue.
+- The coverage data on the right is the filter showing how much usage is charged using the on-demand rate versus how much is covered by the reservation. Current reservation usage is shown in dark blue, while more expensive on-demand usage is shown in light blue.
 - Recommendations are also filtered.
 
 The table of recommendations below the graphs provides recommendations for reservation purchases based on the VM sizes used.
@@ -29,17 +29,17 @@ The report provides recommendations for VM RI purchases at a single subscription
 
 For details about how to use the report, see the previous VM RI Coverage (shared recommendation) section.
 
-:::image type="content" source="../media/4-vm-ri-coverage-single-report.png" alt-text="Screenshot showing the V M R I Coverage (single recommendation) report." lightbox="../media/4-vm-ri-coverage-single-report.png" :::
+:::image type="content" source="../media/4-vm-ri-coverage-single-report.png" alt-text="Screenshot showing the VM RI Coverage (single recommendation) report." lightbox="../media/4-vm-ri-coverage-single-report.png" :::
 
 ## RI Savings
 
 The Reservations Savings report shows the savings accrued by reservations for subscriptions, resource groups, and resources. It displays:
 
-- Cost with reservation
-- Estimated on-demand cost if the reservation didn't apply to the usage
-- Cost savings accrued from the reservation
+- Cost with reservation.
+- Estimated on-demand cost if the reservation didn't apply to the usage.
+- Cost savings accrued from the reservation.
 
-The report subtracts any under-utilized reservation waste cost from the total savings because the waste wouldn't occur without a reservation. If you have negative savings, then you have underused reservations. Try to maximize the use of all underused reservations. Otherwise, the reservation savings are wasted. You should consider exchanging unused reservations.
+The report subtracts any underutilized reservation waste cost from the total savings, because the waste wouldn't occur without a reservation. If you have negative savings, then you have underused reservations. Try to maximize the use of all underused reservations. Otherwise, the reservation savings are wasted. You should consider exchanging unused reservations.
 
 You can use the amortized usage data to build on the data.
 

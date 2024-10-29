@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory
-title: Describe Active Directory and Azure Active Directory
+title: Describe Active Directory and Microsoft Entra ID
 metadata:
-  title: Describe Active Directory and Azure Active Directory
-  description: "Describe Active Directory and Azure Active Directory"
+  title: Describe Active Directory and Microsoft Entra ID
+  description: "Describe Active Directory and Microsoft Entra ID"
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.create-accessible-content.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the "Create accessible content" module.
+  ms.date: 04/12/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+  - content: "What is the purpose of alt text for images in a document?"
+    choices:
+    - content: "To provide a description of the image for people who use screen readers or have low vision."
+      isCorrect: true
+      explanation: "Correct. Adding a description allows people using screen readers to understand the meaning and context of the image."
+    - content: "To provide a caption for the image that appears below it."
+      isCorrect: false
+      explanation: "Incorrect. Adding alt text doesn't alter the visible appearance of the image."
+    - content: "To provide a keyword for the image that can be searched online."
+      isCorrect: false
+      explanation: "Incorrect. Alt text doesn't provide a searchable term for images."
+    - content: "To provide a link to the source of the image."
+      isCorrect: false
+      explanation: "Incorrect. Alt text doesn't create a link to the image."
+  - content: "Accessibility Checker is available in which of the following apps?"
+    choices:
+    - content: "Word"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker is available in Word and other drop-down menu tools."
+    - content: "Excel"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker is available in Excel and other Microsoft 365 tools."
+    - content: "Outlook"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker is available in Outlook and other Microsoft 365 tools."
+    - content: "PowerPoint"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker is available in PowerPoint and other Microsoft 365 tools."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Accessibility Checker is available in Word, Excel, Outlook, and PowerPoint, in addition to other Microsoft 365 products."
+  - content: "Which type of caption can be turned off by the user? "
+    choices:
+    - content: "Open Captions"
+      isCorrect: false
+      explanation: "Incorrect. Open captions are always visible on the screen and can't be turned off."
+    - content: "Embedded captions"
+      isCorrect: false
+      explanation: "Incorrect. Embedded captions are always visible on the screen and can't be turned off."
+    - content: "Closed captions can be turned on or off by the user."
+      isCorrect: true
+      explanation: "Correct. Closed captions can be turned on or off by the user."
+  - content: "What are some ways you can ensure your emails are accessible in Outlook?"
+    choices:
+    - content: "Add captions to videos"
+      isCorrect: false
+      explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
+    - content: "Add alt text to images"
+      isCorrect: false
+      explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
+    - content: "Include headings"
+      isCorrect: false
+      explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
+  - content: "As you're creating a document, how does Accessibility Assistant assist you?"
+    choices:
+    - content: "It flags any issues that could prevent your documents from being accessible."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance"
+    - content: "It presents real-time, in-context remediation to correct issues as they arise."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance."
+    - content: "It delivers clear, simple guidance that appears in the flow of your work."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance."

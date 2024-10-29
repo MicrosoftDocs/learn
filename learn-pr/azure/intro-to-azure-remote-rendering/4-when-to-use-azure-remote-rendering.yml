@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content  
   title: When to use Azure Remote Rendering
   description: When to use Azure Remote Rendering
-  ms.date: 06/15/2021
+  ms.date: 04/21/2023
   author: DrewLonMS
   ms.author: oliverlondon
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-remote-rendering.md)]

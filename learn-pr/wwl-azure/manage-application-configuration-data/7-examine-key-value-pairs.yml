@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.examine-key-value-pairs
+title: Examine Key-value pairs
+metadata:
+  title: Examine Key-value pairs
+  description: "Examine Key-value pairs"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-examine-key-value-pairs.md)]

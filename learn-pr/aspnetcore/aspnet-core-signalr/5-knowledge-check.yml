@@ -5,11 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Test what you've learned about ASP.NET Core SignalR fundamentals.
-  ms.date: 09/28/2021
+  ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 4
 content: |
 quiz:

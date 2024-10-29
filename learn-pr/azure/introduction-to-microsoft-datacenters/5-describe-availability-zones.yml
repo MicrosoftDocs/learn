@@ -3,12 +3,11 @@ uid: learn.introduction-to-microsoft-datacenters.describe-availability-zones
 title: Describe availability zones
 metadata:
   title: Describe availability zones
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Describes availability zones that reside within regions.
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-describe-availability-zones.md)]

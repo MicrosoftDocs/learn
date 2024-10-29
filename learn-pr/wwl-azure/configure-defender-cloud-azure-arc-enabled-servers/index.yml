@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers
+metadata:
+  title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
+  description: "By the end of this module, you'll understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats."
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
+summary: By the end of this module, you'll understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Explain Microsoft Defender for Cloud.
+
+  -   Secure cloud applications with&nbsp;Defender for Cloud.
+
+  -   Protect cloud workloads with&nbsp;Defender for Cloud.
+
+  -   Connect your non-Azure machines to Microsoft Defender for Cloud.
+
+  -   Connect on-premises machines by using Azure Arc.
+
+  -   Connect on-premises machines by using the Azure portal.
+
+  -   Onboard a Windows server.
+
+  -   Onboard a Linux server.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.introduction
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.overview-microsoft-defender-cloud
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.secure-applications
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.protect-cloud-workloads
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-non-azure-machines-defender-cloud
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-on-premises-machines-azure-arc
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-on-premises-machines-azure-portal
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.onboard-windows-server
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.onboard-linux-server
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.verify-machines-connected
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.knowledge-check
+- learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.badge

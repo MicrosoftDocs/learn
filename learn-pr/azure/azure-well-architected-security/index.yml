@@ -3,18 +3,21 @@ uid: learn.azure-well-architected-security
 metadata:
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
-  ms.date: 10/27/2022
+  ms.date: 12/04/2023
   author: martinekuan
   ms.author: martinek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-waf
+  ms.subservice: waf-pillar-security
 title: Microsoft Azure Well-Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
 abstract:  | 
-  By the end of this module, you'll be able to:
-  - Develop a defense-in-depth approach to securing your architecture
-  - Choose the technologies to secure your Azure infrastructure
-  - Develop a strategy for secure identity management
+ By the end of this module, you'll understand the five principles of the Security pillar and learn three approaches for each of the following:
+  - Create a security readiness plan that's aligned with business priorities.
+  - Properly handle confidentiality requirements.
+  - Strengthen the integrity of your workload against security risks.
+  - Strengthen the availability of your workload against security incidents.
+  - Continuously maintain and improve your workload's security posture
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
@@ -26,17 +29,16 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-security
 units:
 - learn.azure-well-architected-security.1-introduction
-- learn.azure-well-architected-security.2-defense-in-depth
-- learn.azure-well-architected-security.3-identity-management
-- learn.azure-well-architected-security.4-infrastructure-protection
-- learn.azure-well-architected-security.5-encryption
-- learn.azure-well-architected-security.6-network-security
-- learn.azure-well-architected-security.7-application-security
-- learn.azure-well-architected-security.8-summary
+- learn.azure-well-architected-security.plan-your-security-readiness
+- learn.azure-well-architected-security.design-to-protect-confidentiality
+- learn.azure-well-architected-security.design-to-protect-integrity
+- learn.azure-well-architected-security.design-to-protect-availability
+- learn.azure-well-architected-security.sustain-and-evolve-your-security-posture
+- learn.azure-well-architected-security.summary
 badge:
   uid: learn.azure-well-architected-security.badge

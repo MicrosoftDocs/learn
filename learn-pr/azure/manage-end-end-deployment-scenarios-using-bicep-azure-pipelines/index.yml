@@ -4,14 +4,15 @@ metadata:
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Create a single pipeline to deploy infrastructure, applications, and data.
-  ms.date: 12/12/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: jasongroce
+  ms.date: 02/28/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.service: azure-devops-pipelines
 title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
 summary: |
-  Create a unified pipeline to deploy your entire environment. You'll add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
+  Create a unified pipeline to deploy your entire environment. You add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
 abstract: |
   After completing this module, you'll be able to:
     - Deploy Azure infrastructure, applications, database scripts, and storage blobs from a single pipeline
@@ -26,12 +27,12 @@ prerequisites: |
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   - YAML pipelines through Azure Pipelines, including multistage pipelines, environments, and service connections.
 
-  To work through the exercises in the module, you'll need:
+  To work through the exercises in the module, you need:
 
-  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account, with the ability to create resource groups, Microsoft Entra applications, and service principals.
   - An Azure DevOps organization and account.
 
-  To work through the exercises, you'll also need the following installed locally:
+  To work through the exercises, you also need the following installed locally:
 
   - [Visual Studio Code](https://code.visualstudio.com).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).

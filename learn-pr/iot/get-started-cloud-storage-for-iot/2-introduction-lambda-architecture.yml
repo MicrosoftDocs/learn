@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-cloud-storage-for-iot.examine-iot-lambda-architecture
+title: Examine the IoT Lambda architecture
+metadata:
+  title: Examine the IoT Lambda architecture
+  description: "Examine the IoT Lambda architecture"
+  ms.date: 02/16/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-introduction-lambda-architecture.md)]

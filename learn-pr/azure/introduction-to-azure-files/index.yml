@@ -2,14 +2,15 @@
 uid: learn.introduction-to-azure-files
 metadata:
   title: Introduction to Azure Files
-  description: Learn how Azure Files and Azure File Sync can help you meet your storage needs.
-  ms.date: 08/30/2022
-  author: kendownie
+  description: Learn how Azure Files and Azure File Sync can help you meet your needs for SMB and NFS cloud file shares.
+  manager: akashdubey
+  ms.date: 11/10/2023
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-file-storage
 title: Introduction to Azure Files
-summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols, and provides programmatic access via the Azure Files REST API. In this module, you'll learn how you can meet your storage needs using Azure Files and Azure File Sync.
+summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols. It also provides programmatic access via the Azure Files REST API. In this module, you learn how you can meet your storage needs using Azure Files and Azure File Sync.
 abstract: |
   After completing this module, you'll be able to:
   - Identify use cases for Azure Files with and without Azure File Sync.
@@ -26,6 +27,7 @@ roles:
 - developer
 products:
 - azure
+- azure-files
 units:
 - learn.introduction-to-azure-files.introduction
 - learn.introduction-to-azure-files.what-is-azure-files

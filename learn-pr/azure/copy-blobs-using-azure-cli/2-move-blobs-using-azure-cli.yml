@@ -4,11 +4,12 @@ title: Move Azure Storage blobs using Azure CLI
 metadata:
   title: Move Azure Storage blob using the Azure CLI
   description: Move Azure Storage blobs using the Azure CLI
-  ms.date: 03/17/2023
+  ms.date: 02/08/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 7
 content: |
   [!include[](includes/2-move-blobs-using-azure-cli.md)]

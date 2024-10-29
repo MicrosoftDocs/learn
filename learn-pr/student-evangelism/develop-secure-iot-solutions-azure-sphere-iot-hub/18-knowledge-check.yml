@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, you answer questions to validate that you've understood the learning objectives.
-  ms.date: 6/30/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 3 # dummy number at present
 content: |
 quiz:

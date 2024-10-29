@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Test your knowledge
-  ms.date: 04/09/2021  
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  description: Test your knowledge.
+  ms.date: 04/04/2024  
+  author: flang-msft
+  ms.author: franlanglois
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -33,7 +32,7 @@ quiz:
       explanation: "Incorrect. Standard tier doesn't provide sufficient high-availability features, and is based on an OSS Redis cache."
     - content: "Premium"
       isCorrect: false
-      explanation: "Incorrect. Although this tier provides for high-availability options, it's based on an OSS Redis cache."
+      explanation: "Incorrect. Although it provides for high-availability options, this tier is based on an OSS Redis cache."
     - content: "Enterprise"
       isCorrect: true
       explanation: "Correct. This tier supports the required high-availability options, and is based on Redis Labs' Redis Enterprise software."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concepts-of-data-analytics.explore-data-analytics-process
+title: Explore the data analytics process
+metadata:
+  title: Explore the data analytics process
+  description: "Explore the data analytics process"
+  ms.date: 10/27/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-explore-data-analytics-process.md)]

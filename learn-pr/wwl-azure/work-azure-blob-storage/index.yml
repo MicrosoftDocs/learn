@@ -3,21 +3,28 @@ uid: learn.wwl.work-azure-blob-storage
 metadata:
   title: Work with Azure Blob storage
   description: "Learn how to use the Azure Blob storage client library to create and update Blob storage resources."
-  ms.date: 04/26/2023
+  ms.date: 07/12/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-blob-storage
+  ai-usage: human-only
 title: Work with Azure Blob storage
 summary: Learn how to use the Azure Blob storage client library to create and update Blob storage resources.
 abstract: |
   After completing this module, you'll be able to:
-  * Create an application to create and manipulate data by using the Azure Storage client library for Blob storage.
-  * Manage container properties and metadata by using .NET and REST.
+
+  -   Create an application to create and manipulate data by using the Azure Storage client library for Blob storage.
+
+  -   Manage container properties and metadata by using .NET and REST.
 prerequisites: |
-  * You should be familiar with developer concepts and terminology.
-  * Experience working with unstructured data solutions.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with developer concepts and terminology.
+
+  -   Experience working with unstructured data solutions.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/3-work-with-azure-blob-storage.svg
 levels:
 - intermediate

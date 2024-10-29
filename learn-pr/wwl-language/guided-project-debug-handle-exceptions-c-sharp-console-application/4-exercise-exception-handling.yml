@@ -4,11 +4,12 @@ title: 'Exercise - Throw and catch exceptions in a C# console application  '
 metadata:
   title: Exercise - Throw and catch exceptions in a C# console application
   description: "Exercise - Throw and catch exceptions in a C# console application"
-  ms.date: 03/21/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-exception-handling.md)]

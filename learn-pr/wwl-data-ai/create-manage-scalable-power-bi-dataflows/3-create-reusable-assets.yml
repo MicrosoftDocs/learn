@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scalable-power-bi-dataflows.create-reusable-assets
+title: Create reusable assets
+metadata:
+  title: Create reusable assets
+  description: "Create reusable assets"
+  ms.date: 05/15/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-reusable-assets.md)]

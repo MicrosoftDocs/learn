@@ -4,11 +4,10 @@ title: Blameless postmortems
 metadata:
   title: Blameless postmortems
   description: Learn about a just culture and blameless postmortems.
-  ms.date: 12/20/2019
+  ms.date: 04/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-blameless-postmortem.md)]

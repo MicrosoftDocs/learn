@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.explore-data-load-strategies
+title: Explore data load strategies
+metadata:
+  title: Explore data load strategies
+  description: "Learn different strategies to load data into a data warehouse in Microsoft Fabric."
+  ms.date: 12/01/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric 
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-data-load-strategies.md)]

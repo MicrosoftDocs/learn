@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-agile-github-projects-azure-boards.customize-project-views
+title: Customize Project views
+metadata:
+  title: Customize Project views
+  description: "Customize Project views"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-customize-project-views.md)]

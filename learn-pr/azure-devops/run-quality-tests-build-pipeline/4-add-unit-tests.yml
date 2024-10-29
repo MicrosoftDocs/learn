@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Add unit tests to your application
   description: Add a unit test that tests an unstable feature.
   ms.custom: devdivchpfy22
-  ms.date: 08/10/2022
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/4-add-unit-tests.md)]

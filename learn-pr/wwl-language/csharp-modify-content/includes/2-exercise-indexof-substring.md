@@ -1,13 +1,10 @@
-
-
-
 In this exercise, you use the `IndexOf()` method to locate the position of one or more characters string inside a larger string. You use the `Substring()` method to return the part of the larger string that follows the character positions you specify.
 
 You'll also use an overloaded version of the `Substring()` method to set the length of characters to return after a specified position in a string.
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities helps you to become comfortable writing and running code in a developer environment used by professionals worldwide.
 
 > [!NOTE]
 > If you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip  the following section of steps, and delete the code in the `Project.cs` file used for a previous exercise.
@@ -46,7 +43,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Delete the existing code lines.
 
-    You are using this C# console project to create, build, and run code samples during this module.
+    You're using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
@@ -173,9 +170,9 @@ Hardcoded strings like `"<span>"` in the previous code listing are known as "mag
 
 1. Review the previous code to consider how the code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`.
 
-    The compiler won't catch `"<sapn>"` at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down.
+    The compiler doesn't catch `"<sapn>"` at compile time because the value is in a string. The misspelling leads to problems at run time, and depending on the complexity of your code, it might be difficult to track down.
 
-    Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
+    Furthermore, if you change the string `"<span>"` to the shorter `"<div>"`, but forget to change the number `6` to `5`, then your code produces undesirable results.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
@@ -195,9 +192,9 @@ Hardcoded strings like `"<span>"` in the previous code listing are known as "mag
 
 1. Take a minute to examine the updated code and the use of the keyword `const` as used in `const string openSpan = "<span>";`.
 
-    The code uses a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable will be caught by the compiler.
+    The code uses a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable is caught by the compiler.
 
-    The pervious code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property continues to be valid.
+    The previous code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property continues to be valid.
 
 ## Recap
 

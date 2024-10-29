@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-storage-types
+title: Explore Azure Storage types
+metadata:
+  title: Explore Azure Storage types
+  description: "Explore Azure Storage types"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-azure-storage-types.md)]

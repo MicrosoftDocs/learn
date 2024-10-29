@@ -3,12 +3,13 @@ uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.use-mlflow-model-tr
 title: Configure MLflow for model tracking in notebooks
 metadata:
   title: Configure MLflow for model tracking in notebooks
-  description: "Configure MLflow for model tracking in notebooks"
-  ms.date: 04/19/2023
+  description: Configure MLflow for model tracking in notebooks
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-use-mlflow-model-tracking.md)]

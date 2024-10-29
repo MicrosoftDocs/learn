@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.database-audit
+title: Enable and monitor database audit
+metadata:
+  title: Enable and monitor database audit
+  description: "Enable and monitor database auditing"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-database-audit.md)]

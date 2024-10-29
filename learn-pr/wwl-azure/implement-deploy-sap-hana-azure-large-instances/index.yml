@@ -2,12 +2,12 @@
 uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances
 metadata:
   title: Implement and deploy SAP HANA on Azure (Large Instances)
-  description: "This module explores how to deploy, validate, and install SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads."
+  description: 'This module explores how to deploy, validate, and install SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads.'
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sap-on-azure
 title: Implement and deploy SAP HANA on Azure (Large Instances)
 summary: Deploy, validate, and install SAP HANA on Azure (Large Instances).
 abstract: |
@@ -29,7 +29,7 @@ products:
 - azure
 subjects:
 - data-engineering
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.implement-deploy-sap-hana-azure-large-instances.introduction
 - learn.wwl.implement-deploy-sap-hana-azure-large-instances.provide-microsoft-all-data-to-deploy-for-you-large-instance

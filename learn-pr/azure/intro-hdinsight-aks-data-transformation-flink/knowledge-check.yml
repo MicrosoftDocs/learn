@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-hdinsight-aks-data-transformation-flink.knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/23/2024
+  author: sairamyeturi
+  ms.author: sairamyeturi 
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Apache Flink excels at processing which kind of data sets?"
+    choices:
+    - content: "Bounded"
+      isCorrect: false
+      explanation: Incorrect. Apache Flink excels can process both unbounded & bounded datasets.
+    - content: "Unbounded"
+      isCorrect: false
+      explanation: Incorrect. Apache Flink excels can process both unbounded & bounded datasets.
+    - content: "Unbounded and bounded"
+      isCorrect: true
+      explanation: Correct. Apache Flink excels at processing both unbounded and bounded type of data sets.
+  - content: "Apache Flink provides different APIs for stateful computations. Which one is used for windowing, record-at-a-time transformations, and enriching events by querying an external data store?"
+    choices:
+    - content: "DataStream API"
+      isCorrect: true
+      explanation: Correct. DataStream API is used for windowing, record-at-a-time transformations, and enriching events by querying an external data store.
+    - content: "SQL & Table API"
+      isCorrect: false
+      explanation: Incorrect. SQL & Table API ins't used for windowing, record-at-a-time transformations, and enriching events by querying an external data store.
+    - content: "Both"
+      isCorrect: false
+      explanation: Incorrect. SQL & Table API  and DataStream API both together aren't used for windowing, record-at-a-time transformations, and enriching events by querying an external data store.
+  - content: "What is the Default streaming file sink in Apache Flink on Azure HDInsight on AKS?"
+    choices:
+    - content: "ADLSGen2"
+      isCorrect: true
+      explanation:  Correct. ADLSGen2 is the default streaming file sink in Apache Flink on Azure HDInsight on AKS.
+    - content: "PostgreSQL"
+      isCorrect: false
+      explanation: Incorrect. PostgreSQL ins't the default streaming file sink in Apache Flink on Azure HDInsight on AKS.
+    - content: "RocksDB"
+      isCorrect: false
+      explanation: Incorrect. RocksDB ins't the default streaming file sink in Apache Flink on Azure HDInsight on AKS.
+  - content: "Which is an automatic snapshot created by Apache Flink's primary for failure recovery?"
+    choices:
+    - content: "Savepoint"
+      isCorrect: false
+      explanation: Incorrect. Savepoint ins't the automatic snapshot created by Apache Flink's primary for failure recovery.
+    - content: "Checkpoint"
+      isCorrect: true
+      explanation: Correct. Checkpoint is the automatic snapshot created by Apache Flink's primary for failure recovery.
+    - content: "None of these choices"
+      isCorrect: false
+      explanation: Incorrect. Both Savepoint, and Checkpoint together aren't the automatic snapshot created by Apache Flink's primary for failure recovery.

@@ -1,8 +1,8 @@
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you'll make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
+Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
-To meet these objectives, you'll do the following tasks:
+To meet these objectives, do the following tasks:
 
 > [!div class="checklist"]
 >
@@ -31,7 +31,7 @@ On the Azure DevOps Demo Generator site, do the following steps:
 
 1. Select **Sign In**, and then agree to the site usage terms by selecting **Accept**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as _toy-website-end-to-end_.
+1. On the **Create New Project** page, select your Azure DevOps organization and then, in the **New Project Name** box, enter a project name, such as *toy-website-end-to-end*.
 
     :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator pane for creating a new project.":::
 
@@ -55,7 +55,7 @@ On the Azure DevOps Demo Generator site, do the following steps:
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials**, and then copy the displayed username and password to somewhere safe.
 
-1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio (VS) Code to open, select **Open**.
 
     :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the Clone in VS Code button highlighted.":::
 
@@ -63,11 +63,11 @@ On the Azure DevOps Demo Generator site, do the following steps:
 
 1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
-1. You're using this repository for the first time, so you might be prompted to sign in.
+1. If it's the first time you're using this repository, you might be prompted to sign in.
 
-   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   - For Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - For macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 

@@ -3,12 +3,13 @@ uid: learn.wwl.register-mlflow-model-azure-machine-learning.exercise-register-ml
 title: Exercise - Log and register models with MLflow
 metadata:
   title: Exercise - Log and register models with MLflow
-  description: "Explore how to log and register models with MLflow in Azure Machine Learning."
-  ms.date: 02/17/2023
+  description: Explore how to log and register models with MLflow in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/12/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-register-mlflow-model.md)]

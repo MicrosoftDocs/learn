@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-approaches-to-device-management-at-scale.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of Examine approaches to device management at scale using Azure IoT Hub
+  ms.date: 10/01/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When you use IoT Hub jobs for device management, which approach to device management can be implemented?"
+    choices:
+    - content: "Either device twins or direct methods."
+      isCorrect: true
+      explanation: "Correct. IoT Hub jobs can be used to implement device management with device twins or direct methods."
+    - content: "Only direct methods."
+      isCorrect: false
+      explanation: "Incorrect. Device twin properties can set using IoT Hub jobs."
+    - content: "Only device twins."
+      isCorrect: false
+      explanation: "Incorrect. Direct methods can be invoked using IoT Hub jobs."
+  - content: "When you use IoT Hub automatic device management, which approach to device management is implemented?"
+    choices:
+    - content: "Either device twins or direct methods."
+      isCorrect: false
+      explanation: "Incorrect. IoT Hub automatic device management doesn't use direct methods."
+    - content: "Only direct methods."
+      isCorrect: false
+      explanation: "Incorrect. IoT Hub automatic device management doesn't use direct methods."
+    - content: "Only device twins."
+      isCorrect: true
+      explanation: "Correct. IoT Hub automatic device management used device twins to manage devices at scale."

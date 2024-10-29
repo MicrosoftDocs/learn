@@ -3,11 +3,10 @@ uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 metadata:
   title: Secure your hub-spoke network
   description: Secure your hub-spoke network
-  ms.date: 10/21/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/19/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Secure your hub-spoke network
 durationInMinutes: 8
 content: |
@@ -36,4 +35,4 @@ quiz:
       explanation: "Segmenting of resources happens when you create virtual networks and have resources assigned to them."
     - content: "It routes traffic from your network to Azure over the internet."
       isCorrect: false
-      explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It traverses a private circuit instead."
+      explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It goes through a private circuit instead."

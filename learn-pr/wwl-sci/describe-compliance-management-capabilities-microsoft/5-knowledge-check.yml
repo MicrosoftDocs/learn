@@ -4,17 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/09/2023
+  ms.date: 08/20/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
+
   - content: "When browsing Microsoft compliance documentation in the Service Trust Portal, you have found several documents that are specific to your industry. What is the best way of ensuring you keep up to date with the latest updates?"
     choices:
     - content: "Save the documents to your My Library."
@@ -25,7 +25,8 @@ quiz:
       explanation: "Incorrect. Printing the document doesn't ensure you have the latest updates."
     - content: "Download each document."
       isCorrect: false
-      explanation: "Incorrect.  Downloading the document doesn't ensure you have the latest updates."
+      explanation: "Incorrect. Downloading the document doesn't ensure you have the latest updates."
+
   - content: "Microsoft's approach to privacy is built on six principles: Three of the principles are strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect. Identify the three other principles that are part of Microsoft's approach to privacy."
     choices:
     - content: "Customer control, transparency, and security."
@@ -36,4 +37,16 @@ quiz:
       explanation: "Incorrect. The shared responsibility model identifies which security tasks are handled by the cloud provider, and which security tasks are handled by you, the customer."
     - content: "Customer control, transparency, and zero trust."
       isCorrect: false
-      explanation: "Incorrect.  Although zero trust is a model employed by Microsoft, it's not one of the privacy principles.  The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
+      explanation: "Incorrect. Although zero trust is a model employed by Microsoft, it's not one of the privacy principles. The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
+    
+  - content: A company needs to handle inquiries about personal data that they have collected, as per certain privacy regulations. Which Priva solution should they implement?
+    choices:
+    - content: Priva Privacy Assessments
+      isCorrect: false
+      explanation: Incorrect. Priva Privacy Assessments automates the discovery, documentation, and evaluation of personal data use across the entire data estate.
+    - content: Priva Consent Management
+      isCorrect: false
+      explanation: Incorrect. Priva Consent Management is used for streamlining the management of consented personal data.
+    - content: Priva Subject Rights Requests
+      isCorrect: true
+      explanation: Correct. Priva Subject Rights Requests helps handle inquiries about personal data that companies have collected.

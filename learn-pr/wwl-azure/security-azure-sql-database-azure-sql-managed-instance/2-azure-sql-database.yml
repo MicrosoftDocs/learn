@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.azure-sql-database
+title: Azure SQL Database and SQL Managed Instance security
+metadata:
+  title: Azure SQL Database and SQL Managed Instance security
+  description: "Azure SQL Database and SQL Managed Instance security"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-sql-database.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-identity-management-systems.design-implement-permissions-roles-github
+title: Design and implement permissions and roles in GitHub
+metadata:
+  title: Design and implement permissions and roles in GitHub
+  description: "Design and implement permissions and roles in GitHub"
+  ms.date: 05/27/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-design-implement-permissions-roles-github.md)]

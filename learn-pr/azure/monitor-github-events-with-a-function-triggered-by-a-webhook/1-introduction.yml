@@ -3,11 +3,10 @@ uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.in
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 04/30/2019
+  ms.date: 10/27/2022
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 3
 content: |

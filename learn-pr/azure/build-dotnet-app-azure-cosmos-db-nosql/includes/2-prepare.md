@@ -14,114 +14,133 @@ Diagram of a flowchart showing steps to authenticate the client. The flowchart t
 
 The key tasks you need to do are:
 
-01. Create an Azure Cosmos DB account and retrieve the connection string.
-01. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
-01. Create database and container resources.
-01. Add a single item as a simple operation.
-01. Create a transactional batch to add four items.
-01. Execute and observe the results of a query.
-
-> [!IMPORTANT]
-> All steps in this project are designed to be completed within Visual Studio Code either locally or through GitHub Codespaces.
+1. Create an Azure Cosmos DB account and configure authentication.
+1. Set up a .NET console application and add a package reference to the Azure SDK for .NET ([`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos)).
+1. Create database and container resources.
+1. Add a single item as a simple operation.
+1. Create four items using a transactional batch.
+1. Execute and observe the results of a query.
 
 ## Setup
 
 To complete this project, you need an API for NoSQL account.
 
+### Sign in to Azure CLI
+
+If you want to complete this exercise, you need to create an Azure subscription before you begin.
+
+1. Verify that the Azure CLI is installed in your development environment.
+
+    ```azurecli
+    az --version
+    ```
+
+1. Sign in to the Azure CLI.
+
+    ```azurecli
+    az login
+    ```
+
 ### Create Azure Cosmos DB for NoSQL account
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-01. Create a new shell variable named **suffix** with a random number and then output the number to the console.
+1. Create a new resource group named **learn-cosmos-db-dotnet-app**.
 
     ```azurecli
-    let suffix=$RANDOM*$RANDOM
-    
-    echo $suffix
+    az group create \
+        --name "learn-cosmos-db-dotnet-app" \
+        --location "westus"
     ```
 
-01. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
+    > [!TIP]
+    > You can replace this location with any region available in your Azure subscription.
 
-    ```azurecli
-    accountName="mslearn-$suffix"
-    
-    echo $accountName
-    ```
-
-01. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
-
-    ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    location="westus"
-    ```
-
-    > [!IMPORTANT]
-    > The sandbox will automatically create a resource group for you with the name specified in this code sample.
-
-01. Create a new API for NoSQL account using the three shell variables you created.
+1. Create a new API for NoSQL account using a unique suffix within the resource group.
 
     ```azurecli
     az cosmosdb create \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --locations regionName=$location
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --name "mslearn-nosql-$((RANDOM*RANDOM))"
     ```
 
-01. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
+    > [!IMPORTANT]
+    > This resource group was already created by the sandbox.
 
-### Get account connection string
-
-Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
-
-01. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
-
-    ```azurecli
-    az cosmosdb keys list \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --type connection-strings \
-        --output table
-    ```
-
-01. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
-
-    ```azurecli
-    az cosmosdb keys list \
-        --resource-group $resourceGroup \
-        --name $accountName \
-        --type connection-strings \
-        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-        --output tsv
-    ```
-
-01. Record the value of this connection string. You use the connection string later in this project to connect to this account.
-
-### Configure dev environment
-
-All your development work in this project is done directly in [Visual Studio Code](https://code.visualstudio.com). You have the option of using Visual Studio Code locally or with GitHub Codespaces.
-
-#### [GitHub Codespaces](#tab/github-codespaces)
-
-GitHub Codespaces runs your development environment in a container hosted by GitHub. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled on your machine to complete this training module.
-
-1. Create a new GitHub Codespace on the `main` branch of the [`azure-samples/dotnet-env-azure-cosmos-db`](https://github.com/azure-samples/dotnet-env-azure-cosmos-db) GitHub repository.
-
-    > [!div class="nextstepaction"]
-    > [Open this project in GitHub Codespaces](https://github.com/codespaces/new?azure-portal=true&hide_repo_select=true&ref=main&repo=621314195)
-
-1. Wait for the codespace to start. This startup process can take a few minutes.
-
-1. Open a new terminal in the codespace.
+1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
     > [!TIP]
-    > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
-    >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
+    > You can navigate to your new API for NoSQL account using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-#### [Visual Studio Code](#tab/visual-studio-code)
+### Enable Microsoft Entra authentication for the endpoint
 
-Optionally, you can walk through this training module using Visual Studio Code installed on your local machine. To run this project locally, you must have the following software installed:
+Now that you have an API for NoSQL account, you can use the `az cosmosdb` group of commands from the Azure CLI to get the account's information. In this section, you enable Microsoft Entra authentication for the account and get its endpoint.
 
-- [.NET 7 or later](https://dotnet.microsoft.com/download)
+1. First, get the name of the most recently created API for NoSQL accounts using `az cosmosdb list`. Record the name as you'll need it in the next step.
 
----
+    ```azurecli
+    az cosmosdb list \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --query "sort_by([].{name:name,created:systemData.createdAt}, &created)[0].name"
+    ```
+
+1. Now, use `az cosmosdb show` to get the `documentEndpoint` for the account you created. Use the value of the account name you recorded in the previous step. Record this endpoint as you also use it to connect from the .NET SDK.
+
+    ```azurecli
+    az cosmosdb show \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --name "<nosql-account-name>" \
+        --query "documentEndpoint"
+    ```
+
+1. Next, use `az cosmosdb sql role definition show` to get the fully qualified unique identifier of the built-in **Cosmos DB Built-in Data Contributor** data plane role for your account. Record this value as it is used in an upcoming step.
+
+    ```azurecli
+    az cosmosdb sql role definition show \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
+        --id "00000000-0000-0000-0000-000000000002" \
+        --query "id"
+    ```
+
+1. Then, use `az ad signed-in-user show` to get your current logged-in account's identifier. Record this value as it will be used in the next step.
+
+    ```azurecli
+    az ad signed-in-user show \
+      --query "id"
+    ```
+
+1. Finally, assign the role to your currently logged-in account using `az cosmosdb sql role assignment create`. Use the role definition identifier, the principal identifier, and the account name recorded earlier in this section.
+
+    ```azurecli
+    az cosmosdb sql role assignment create \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
+        --role-definition-id "<fully-qualified-role-definition-id>"  \
+        --principal-id "<principal-id>" \
+        --scope "/"
+    ```
+
+### Create database and container resources
+
+The Microsoft Entra authentication is only configured for items (or the data plane). You need to manually create your database and container resources using the Azure CLI. Use the account name you recorded in the previous section for these commands.
+
+1. Use `az cosmosdb sql database create` to create your database.
+
+    ```azurecli
+    az cosmosdb sql database create \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
+        --name "cosmicworks"    
+    ```
+
+1. Next, use `az cosmosdb sql container create` to create your container.
+
+    ```azurecli
+    az cosmosdb sql container create \
+        --resource-group "learn-cosmos-db-dotnet-app" \
+        --account-name "<nosql-account-name>" \
+        --database-name "cosmicworks" \
+        --name "products" \
+        --partition-key-path "/categoryId"
+    ```

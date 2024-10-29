@@ -4,41 +4,40 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 06/25/2021
+  ms.date: 07/16/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
  
-  - content: "An administrator must select the disk type that provides the highest IOPS for a new VM. Which disk type should they use, assuming their region supports all disk types?"
+  - content: "An administrator must select the disk type that provides the highest IOPS (Input/output operations per second) for a new virtual machine (VM). Which disk type should they use, assuming their region supports all disk types?"
     choices:
     - content: "Ultra Disk Storage"
       isCorrect: true
       explanation: "Ultra Disk Storage disks offer the best performance of disk types on Azure."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Standard HDD disks are a cost-effective solution, but they don't perform as well as Premium SSD disks or Ultra Disk Storage."
+      explanation: "Standard HDD disks are a cost-effective solution, but Premium SSD disks and Ultra Disk Storage offer better performance."
     - content: "Premium SSD"
       isCorrect: false
       explanation: "Premium SSD disks provide high performance, but they don't offer the best performance of all the available disk types in Azure."
  
-  - content: "You’re running an application that requires 15,000 IOPS on an Azure VM. You’ve provisioned one VM with the Standard_D8s_v3 tier. It provides 12,800 IOPS, a P30 operating system disk with 5,000 IOPS, and two P30 data disks with 5,000 IOPS each. Which of the following statements is true?"
+  - content: "You’re running an application that requires 15,000 IOPS on an Azure VM. You provisioned one VM with the Standard_D8s_v3 tier. It provides 12,800 IOPS, a P30 operating system disk with 5,000 IOPS, and two P30 data disks with 5,000 IOPS each. Which of the following statements is true?"
     choices:
-    - content: "You’ve met the application’s demands."
+    - content: "You met the application’s demands."
       isCorrect: false
-      explanation: "The maximum IOPS the application will get is limited by the VM limits and is 12,800 IOPS."
+      explanation: "The maximum IOPS the application gets is limited by the VM limits and is 12,800 IOPS."
     - content: "VM I/O capping prevents the application from receiving the demanding IOPS."
       isCorrect: true
-      explanation: "The application is capped by the VM limits and must allocate the allotted 12,800 IOPS."
+      explanation: "The VM limits cap the application at the allotted 12,800 IOPS."
     - content: "Disk I/O capping prevents the application from receiving the demanding IOPS."
       isCorrect: false
       explanation: "All attached disks are P30 disks, which can handle 5,000 IOPS. So, they respond back with their requested amounts, but in this case, VM I/O capping prevents the application from achieving demanding IOPS."
  
-  - content: "An administrator is creating an Azure VM by using Premium SSD disks to run a marketing application. You’ve scheduled a planned marketing event, for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator choose to meet the application requirements?"
+  - content: "An administrator is creating an Azure VM by using Premium SSD disks to run a marketing application. You scheduled a planned marketing event, for which you require a sustained increase in disk performance. Which of the performance-scaling options should the administrator choose to meet the application requirements?"
     choices:
     - content: "Use disk bursting."
       isCorrect: false

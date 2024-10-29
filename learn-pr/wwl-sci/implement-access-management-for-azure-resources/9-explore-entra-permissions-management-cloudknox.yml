@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-access-management-for-azure-resources.explore-entra-permissions-management-cloudknox
-title: Explore Entra Permissions Management (CloudKnox)
+title: Explore Microsoft Entra Permissions Management
 metadata:
-  title: Explore Entra Permissions Management (CloudKnox)
-  description: "Explore Entra Permissions Management (CloudKnox)"
-  ms.date: 03/24/2023
+  title: Explore Microsoft Entra Permissions Management
+  description: "Explore Microsoft Entra Permissions Management"
+  ms.date: 10/30/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-explore-entra-permissions-management-cloudknox.md)]

@@ -4,8 +4,8 @@ Tailwind Traders is advancing work on its customer rewards game. With each purch
 
 - **Update management**. The developers of the game expect scheduled software deployments and installation of updates within a defined maintenance window.
 
-- **Event handling**. During game play, millions of events are expected per second. Customers should expect a low latency on responses. The event stream should be saved to Azure Blob Storage.
+- **Event handling**. During game play, millions of events are expected per second. Customers should expect a low latency on responses. The stream should be saved to Azure Blob Storage.
 
 ### Answer the following questions
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions. Then select **Check your answers**.

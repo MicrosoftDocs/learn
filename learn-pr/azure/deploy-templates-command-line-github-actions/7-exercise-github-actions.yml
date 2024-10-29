@@ -4,12 +4,13 @@ title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub
 metadata:
   title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
   description: Deploying your ARM templates as part of your CI/CD efforts with GitHub Actions
-  ms.date: 10/15/2020
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-arm-template
   ms.contributors: pierrer-11122020
 durationInMinutes: 10
 content: |

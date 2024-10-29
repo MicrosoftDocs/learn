@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-hdinsight-aks-data-transformation-flink.flink-architecture  
+title: Apache Flink architecture 
+metadata:
+  unitType: learning-content  
+  title: Apache Flink architecture 
+  description: Apache Flink architecture
+  ms.date: 02/23/2024  
+  author: sairamyeturi
+  ms.author: sairamyeturi
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/flink-architecture.md)]

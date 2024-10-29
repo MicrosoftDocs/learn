@@ -4,11 +4,10 @@ title: Find Azure services for your data classification
 metadata:
   title: Find Azure services for your data classification
   description: List and discussion of the available Azure services for securing confidential, secret, and top secret data, according to this classification by level of sensitivity.
-  ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: EliotSeattle
+  ms.author: eliotgra
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-services-data-classification.md)] 

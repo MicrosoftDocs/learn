@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "This article is a summary of what we learned and did with the Microsoft Purview Data Catalog."
+  ms.date: 04/03/2024
+  author: whhender
+  ms.author: whhender
+  ms.topic: unit
+  ms.custom:
+    - ignite-2022
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

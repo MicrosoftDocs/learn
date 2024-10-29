@@ -3,21 +3,27 @@ uid: learn.wwl.implement-versioning-strategy
 metadata:
   title: Implement a versioning strategy
   description: "Implement a versioning strategy"
-  ms.date: 11/01/2022
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement a versioning strategy
 summary: This module explains versioning strategies for packaging, best practices for versioning, and package promotion.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Implement a versioning strategy
-  - Promote packages
-  - Push packages from pipeline
-  - Describe semantic and explore best practices for versioning
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+
+  -   Implement a versioning strategy
+
+  -   Promote packages
+
+  -   Push packages from pipeline
+
+  -   Describe semantic and explore best practices for versioning
+prerequisites: None
 iconUrl: /training/achievements/4-implement-a-versioning-strategy.svg
 levels:
 - advanced
@@ -48,9 +54,7 @@ units:
 - learn.wwl.implement-versioning-strategy.explore-semantic-versioning
 - learn.wwl.implement-versioning-strategy.examine-release-views
 - learn.wwl.implement-versioning-strategy.promote-packages
-- learn.wwl.implement-versioning-strategy.exercise-promote-package
 - learn.wwl.implement-versioning-strategy.explore-best-practices-for-versioning
-- learn.wwl.implement-versioning-strategy.exercise-push-from-pipeline
 - learn.wwl.implement-versioning-strategy.knowledge-check
 - learn.wwl.implement-versioning-strategy.summary
 badge:

@@ -3,14 +3,16 @@ uid: learn.wwl.custom-text-classification.exercise-classify-text
 title: Exercise - Classify text
 metadata:
   title: Exercise - Classify text
-  description: "Exercise - Classify text"
-  ms.date: 09/01/2022
+  description: Exercise - Classify text
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/31/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
-labModal: false
 durationInMinutes: 35
+labId: 152403
+labModal: true
 content: |
   [!include[](includes/4-exercise-classify-text.md)]

@@ -3,12 +3,11 @@ uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-
 title: Fix duplicate records
 metadata:
   title: Fix duplicate records
-  description: "Resolve duplicate records in CluedIn to create golden records. Golden records have the most accurate and up to date values for any one piece of data. They can be a source of truth for your data estate."
-  ms.date: 03/28/2023
+  description: "Create golden records by resolving duplicate records in CluedIn. Golden records have the most accurate and up to date values for any one piece of data. They can be a source of truth for your data estate."
+  ms.date: 05/28/2024
   author: whhender
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-fix-duplicate-records.md)]

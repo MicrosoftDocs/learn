@@ -3,13 +3,16 @@ uid: learn.advocates.create-web-app-with-refreshable-models.8-publish-deploy-git
 metadata:
   title: Exercise - Publish your web app and deploy it with a GitHub Action
   description: Exercise - publish your web app and deploy it with a GitHub Action
-  author: jlooper
-  ms.date: 02/10/2020
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen, devx-track-azurecli
+  author: GitHubber17
+  ms.author: chnoring
+  ms.date: 12/22/2022
+  ms.topic: unit
   azureSandbox: true
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom:
+    - team=nextgen
+    - devx-track-azurecli
 title: Exercise -  publish your web app and deploy it with a GitHub Action
 durationInMinutes: 10
 content: |

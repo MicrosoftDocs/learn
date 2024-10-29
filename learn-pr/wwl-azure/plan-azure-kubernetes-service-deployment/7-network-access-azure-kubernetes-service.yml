@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.network-access-azure-kubernetes-service
+title: Access to Azure Kubernetes Service
+metadata:
+  title: Access to Azure Kubernetes Service
+  description: "Access to Azure Kubernetes Service"
+  ms.date: 04/23/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-network-access-azure-kubernetes-service.md)]

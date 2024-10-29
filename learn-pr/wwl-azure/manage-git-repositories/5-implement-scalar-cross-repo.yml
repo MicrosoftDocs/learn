@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-repositories.implement-scalar-cross-repo
+title: Implement Scalar and cross repo when cross repo sharing
+metadata:
+  title: Implement Scalar and cross repo when cross repo sharing
+  description: "Implement Scalar and cross repo when cross repo sharing"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-implement-scalar-cross-repo.md)]

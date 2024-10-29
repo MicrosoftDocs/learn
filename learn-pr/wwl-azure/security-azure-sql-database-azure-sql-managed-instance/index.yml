@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance
+metadata:
+  title: Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
+  description: "This module is designed to empower administrators with the knowledge and skills needed to plan and implement robust security measures for Azure SQL Database and Azure SQL Managed Instance, ensuring data protection and regulatory compliance."
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
+summary: This module is designed to empower administrators with the knowledge and skills needed to plan and implement robust security measures for Azure SQL Database and Azure SQL Managed Instance, ensuring data protection and regulatory compliance.
+abstract: |
+  By the end of this module, participants will be able to:
+
+  -   Implement security for Azure SQL Managed Instance to safeguard sensitive data.
+
+  -   Use Microsoft Enterprise Identity for database authentication and conduct database auditing for compliance.
+
+  -   Utilize Microsoft Purview for data governance and classification to protect sensitive information.
+
+  -   Apply dynamic masking and Transparent Database Encryption, and recommend Always Encrypted for client-side data protection.
+prerequisites: '-   None'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-sql-database
+- azure-sql-managed-instance
+subjects:
+- security
+units:
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.introduction
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.azure-sql-database
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.authorize-database-access
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.database-audit
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.microsoft-purview-governance-portal-use-cases
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.implement-data-classification-sensitive-information
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.dynamic-data-mask
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.transparent-data-encryption
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.always-encrypted
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.knowledge-check
+- learn.wwl.security-azure-sql-database-azure-sql-managed-instance.summary
+badge:
+  uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.badge

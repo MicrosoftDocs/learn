@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aks-edge-essentials.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
+  ms.date: 11/3/2023
+  author: asergaz
+  ms.author: sergaz
+  manager: lizross
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

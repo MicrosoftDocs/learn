@@ -3,12 +3,16 @@ uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.optimize-data
 title: Optimize data loading and preprocessing in Azure Machine Learning
 metadata:
   title: Optimize data loading and preprocessing in Azure Machine Learning
-  description: "Optimize data loading and preprocessing in Azure Machine Learning"
-  ms.date: 06/14/2022
+  description: Optimize data loading and preprocessing in Azure Machine Learning
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

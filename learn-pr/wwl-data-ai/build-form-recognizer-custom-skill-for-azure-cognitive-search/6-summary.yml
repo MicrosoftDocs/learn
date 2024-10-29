@@ -3,14 +3,13 @@ uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.sum
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 11/01/2022
+  description: Summary
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 03/12/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

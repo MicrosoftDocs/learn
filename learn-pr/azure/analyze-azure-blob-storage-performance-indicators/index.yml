@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/01/2022
   author: ciphertxt
   ms.author: schoag
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-blob-storage
 title: 'Analyze performance indicators for Azure Blob Storage'
 summary: Learn how to analyze the performance indicators for Azure Blob Storage.
 abstract:  | 

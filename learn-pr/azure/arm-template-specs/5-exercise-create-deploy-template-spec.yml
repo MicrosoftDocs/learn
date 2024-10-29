@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: Exercise - Create and deploy a template spec
   description: Learn how to create, publish, and deploy a template spec.
-  ms.date: 09/30/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom: devx-track-bicep
   zone_pivot_groups: arm-template-language-azure-shell-interface
 durationInMinutes: 7
 azureSandbox: true

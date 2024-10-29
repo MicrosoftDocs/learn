@@ -3,14 +3,13 @@ uid: learn.wwl.explore-postgresql-architecture.explore-postgresql-architecture
 title: Understand PostgreSQL architecture
 metadata:
   title: Understand PostgreSQL architecture
-  description: "Understand PostgreSQL architecture"
-  ms.date: 10/27/2022
+  description: "Understand PostgreSQL architecture."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-understand-postgresql-architecture.md)]

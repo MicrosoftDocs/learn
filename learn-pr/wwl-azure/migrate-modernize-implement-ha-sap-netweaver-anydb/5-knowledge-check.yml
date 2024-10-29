@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When a single SID 3-tier SAP NetWeaver high availability AnyDB is deployed using a 3-tier SAP Azure Resource Manager template, IP addresses are created for Azure internal load balancers and for the network cards for all virtual machines. Which of the following statements about those IP addresses is true?"
+    choices:
+    - content: "The IP addresses are properly configured automatically, and don't need to be changed."
+      isCorrect: false
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+    - content: "All of the IP addresses are static by default, and need to be changed to dynamic."
+      isCorrect: false
+      explanation: "Incorrect. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+    - content: "All of the IP addresses are dynamic by default, and need to be changed to static."
+      isCorrect: true
+      explanation: "Correct. All IP addresses of the network cards and Azure internal load balancers are dynamic by default. They must be changed to static IP addresses."
+  - content: "The deployment of a new SAP landscape will use a 3-tier SAP Azure Resource Manager template to deploy a single SID 3-tier SAP NetWeaver high availability AnyDB. To prepare a highly available scenario, what extra step should be taken when deploying the templates?"
+    choices:
+    - content: "Change all Azure internal load balancer IP addresses to dynamic"
+      isCorrect: false
+      explanation: "Incorrect. To prepare a highly available infrastructure, when deploying the templates, set the SYSTEMAVAILABILITY parameter to HA."
+    - content: "Set the SYSTEMAVAILABILITY parameter to HA"
+      isCorrect: true
+      explanation: "Correct. To prepare a highly available infrastructure, when deploying the templates, set the SYSTEMAVAILABILITY parameter to HA."
+    - content: "Create network cards and IP addresses for all virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. To prepare a highly available infrastructure, when deploying the templates, set the SYSTEMAVAILABILITY parameter to HA."
+  - content: "When a single SID 3-tier SAP NetWeaver high availability AnyDB is deployed using a 3-tier SAP Azure Resource Manager template, the Azure internal load balancer is created with which ports?"
+    choices:
+    - content: "All ports for the ASCS/SCS instance"
+      isCorrect: false
+      explanation: "Incorrect. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."
+    - content: "All ports for the SQL Server DBMS"
+      isCorrect: false
+      explanation: "Incorrect. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."
+    - content: "Both"
+      isCorrect: true
+      explanation: "Correct. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."

@@ -4,12 +4,11 @@ title: Exercise - Summarize free space statistics by computer
 metadata:
   unitType: exercise
   title: Exercise - Summarize free space statistics by computer
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 08/08/2022
+  description: "Retrieve and transform data from the Perf table, using KQL queries, to analyze the free space of the machines logging data to your Log Analytics workspace."
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-summarize-free-space-by-computer.md)]

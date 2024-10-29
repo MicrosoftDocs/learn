@@ -3,12 +3,11 @@ uid: learn.deploy-azure-private-5g-core.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Checks that you've successfully learned the deployment tasks for the Azure Private 5G Core service.
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  description: Checks that you successfully learned the deployment tasks for the Azure Private 5G Core service.
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 6
 content: |
 quiz:
@@ -17,16 +16,16 @@ quiz:
     choices:
     - content: Provisioning SIMs
       isCorrect: false
-      explanation: Try Again. Provisioning SIMs is one of the steps in creating a private mobile network. This isn't a prerequisite.
+      explanation: Try Again. Provisioning SIMs is one of the steps in creating a private mobile network. It isn't a prerequisite.
     - content: Creating a site
       isCorrect: false
-      explanation: Try Again. Creating a site is performed after the mobile network creation. This isn't a prerequisite.
+      explanation: Try Again. Creating a site is performed after the mobile network creation. It isn't a prerequisite.
     - content: Order the ASE device
       isCorrect: true
-      explanation: Correct. We need to order the ASE device prior to deploying a private mobile network.
+      explanation: Correct. We need to order the ASE device before deploying a private mobile network.
     - content: Packet core configuration
       isCorrect: false
-      explanation: Try Again. Packet core configuration is performed automatically during site creation. This isn't a prerequisite for creating a mobile network.
+      explanation: Try Again. Packet core configuration is performed automatically during site creation. It isn't a prerequisite for creating a mobile network.
   - content: Which of the following method isn't the method of SIM provisioning during the deployment of a private mobile network?
     choices:
     - content: Add manually
@@ -59,10 +58,10 @@ quiz:
     choices:
     - content: Customer-managed keys
       isCorrect: true
-      explanation: Correct. Customer-managed keys will be used to encrypt all the SIM secrets that get added to the corresponding SIM group.
+      explanation: Correct. Customer-managed keys are used to encrypt all the SIM secrets that get added to the corresponding SIM group.
     - content: Microsoft-managed keys
       isCorrect: false
-      explanation: Try Again. On selecting **Microsoft Managed Key** option, SIM group and SIM workflow will remain the same as existing. No additional encryption will be applied on the SIM secrets. This is the default option.
+      explanation: Try Again. On selecting **Microsoft Managed Key** option, SIM group and SIM workflow remain the same as existing. No other encryption is applied on the SIM secrets. This is the default option.
     - content: Encryption keys
       isCorrect: false
       explanation: Try Again. Encryption keys don't exist.

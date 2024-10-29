@@ -18,24 +18,24 @@ The items highlighted indicate which HPC virtual machine is strongest and prefer
 | **Max attached disks** | `8` | 4 | 4 |
 | **Cost ratio** | 1.58 | 1.39 | `1.0` |
 
-## Reasons to choose HC44 
+## Reasons to choose HC44
 
-- Your HPC application is floating point bound and requires AVX 512 support.
+- Your HPC application is floating-point bound and requires AVX 512 support.
 - Your HPC application is sensitive to CPU frequency and generally performs better with a higher clock frequency.
 - Intel has a mature development ecosystem, so it's easier to develop and run applications.
 - You have a long history and experience with Intel processors and would prefer to use an Intel processor.
 
 ## Reasons to choose HB120_v2
 
-- Your HPC application is floating-point bound and will use all available cores.
-- Your HPC application is memory bandwidth bound.
+- Your HPC application is floating-point bound and uses all available cores.
+- Your HPC application is memory-bandwidth bound.
 - Your tightly coupled HPC application is network bound and is sensitive to latency and bandwidth.
-- Your tightly coupled HPC application is highly scalable and you plan on running your application with greater than 18000 cores.
+- Your tightly coupled HPC application is highly scalable and you plan on running your application with greater than 18,000 cores.
 - Your application needs a high-speed local NVMe SSD that supports NVMeDirect.
 - Your application needs more than four managed disks per VM.
 
 ## Reasons to choose HB60
 
-- Your HPC application will use &lt;= 60 cores per VM.
+- Your HPC application uses &lt;= 60 cores per VM.
 - Your HPC application is more memory bound than floating-point bound.
-- Your HPC application will scale to a smaller total core count of less than 18000 cores.
+- Your HPC application scales to a smaller total core count of less than 18,000 cores.

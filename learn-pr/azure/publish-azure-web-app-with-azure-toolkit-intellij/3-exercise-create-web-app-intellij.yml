@@ -4,11 +4,10 @@ title: Exercise - Build a web app in IntelliJ IDEA
 metadata:
   title: Exercise - Build a web app in IntelliJ IDEA
   description: In this unit, you'll use the Azure Toolkit for IntelliJ to create a new web app project.
-  ms.date: 03/01/2020
+  ms.date: 03/18/2024
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 azureSandbox: true
 content: |

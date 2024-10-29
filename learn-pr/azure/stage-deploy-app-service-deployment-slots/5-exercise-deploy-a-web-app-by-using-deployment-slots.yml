@@ -4,11 +4,10 @@ title: Exercise - Deploy a web app by using deployment slots
 metadata:
   title: Exercise - Deploy a web app by using deployment slots
   description: In this exercise, you'll swap deployment slots to roll out a new version of a site. You'll also use the auto swap feature and roll back a new version of a web app.
-  ms.date: 03/27/2019
+  ms.date: 04/11/2023
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-a-web-app-by-using-deployment-slots.md)]

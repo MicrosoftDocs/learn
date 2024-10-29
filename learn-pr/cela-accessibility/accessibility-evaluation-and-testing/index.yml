@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.accessibility-evaluation-and-testing
+metadata:
+  title: Accessibility evaluation and testing
+  description: Explore types of accessibility testing, how to evaluate and test for accessibility, and how to identify and address accessibility issues.
+  ms.date: 04/16/2024
+  author: erzelman
+  ms.author: erzelman 
+  ms.topic: module
+  ms.service: microsoft-365
+title: Accessibility evaluation and testing
+summary: This module explores the different types of accessibility testing, the skills needed to evaluate and test for accessibility, the steps used to identify and address accessibility issues, and how you promote a culture of inclusion and accessibility at your organization.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the different types of accessibility testing, including manual, automated, and user testing.
+  - Develop the skills to conduct accessibility evaluations and testing, using two popular tools: Accessibility Insights and Accessibility Checker.
+  - Recall how to interpret accessibility testing results and make recommendations for improvements.
+  - Collaborate with others to identify and address accessibility issues and promote a culture of inclusion and accessibility.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+units:
+- learn.cela-accessibility.accessibility-evaluation-and-testing.introduction
+- learn.cela-accessibility.accessibility-evaluation-and-testing.types-of-accessibility-testing
+- learn.cela-accessibility.accessibility-evaluation-and-testing.accessibility-evaluation-testing-tools
+- learn.cela-accessibility.accessibility-evaluation-and-testing.interpreting-accessibility-testing-results
+- learn.cela-accessibility.accessibility-evaluation-and-testing.collaborate-to-identify-address-accessibility-issues
+- learn.cela-accessibility.accessibility-evaluation-and-testing.knowledge-check
+- learn.cela-accessibility.accessibility-evaluation-and-testing.summary
+badge:
+  uid: learn.cela-accessibility.accessibility-evaluation-and-testing.badge

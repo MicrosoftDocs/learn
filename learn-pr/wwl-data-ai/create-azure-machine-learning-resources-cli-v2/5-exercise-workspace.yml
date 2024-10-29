@@ -2,13 +2,14 @@
 uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.exercise-workspace
 title: 'Exercise: Create an Azure Machine Learning workspace'
 metadata:
-  title: 'Exercise: Create an Azure Machine Learning workspace'
+  title: "Exercise: Create an Azure Machine Learning workspace"
   description: "Exercise: Create an Azure Machine Learning workspace"
-  ms.date: 03/02/2023
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

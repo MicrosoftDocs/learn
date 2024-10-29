@@ -5,13 +5,12 @@ title: Exercise - Explore the functionality of a Kubernetes cluster
 metadata:
   title: Exercise - Explore the functionality of a Kubernetes cluster
   description: An exercise that explores the functionality of a Kubernetes cluster
-  ms.date: 4/24/2020
+  ms.date: 10/25/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
   zone_pivot_groups: platform
-
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-kubernetes-functionality.md)]

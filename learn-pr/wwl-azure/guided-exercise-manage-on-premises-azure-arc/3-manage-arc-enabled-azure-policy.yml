@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.manage-arc-enabled-azure-policy
+title: Exercise 2 - Manage Azure Arc-enabled Windows servers by using Azure Policy
+metadata:
+  title: Exercise 2 - Manage Azure Arc-enabled Windows servers by using Azure Policy
+  description: "Exercise 2 - Manage Azure Arc-enabled Windows servers by using Azure Policy"
+  ms.date: 06/10/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-manage-arc-enabled-azure-policy.md)]

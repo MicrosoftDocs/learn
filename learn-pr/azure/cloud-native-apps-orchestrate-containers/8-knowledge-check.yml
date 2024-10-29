@@ -4,48 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/28/2023
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Containers are similar to virtual machines, but what is a key way that they differ?'
+  - content: 'What is a key difference between containers and virtual machines?'
     choices:
     - content: "Containers don't have their own internal operating system."
       isCorrect: true
       explanation: "Correct. Containers share part of their operating system with their hosts."
-    - content: "Containers and virtual machines are both made by Docker"
+    - content: "Containers and virtual machines are both made by Docker."
       isCorrect: false
       explanation: "Incorrect. While Docker is a popular type of software for containers, Docker isn't a virtual machine."
     - content: "Both containers and virtual machines are propriety technology, and you must pay a license fee."
       isCorrect: false
-      explanation: "Incorrect. Docker is an open, widely used standard that is free to use. Most virtual machines don't require a license fee payment also."
+      explanation: "Incorrect. Docker is an open widely used standard that is free to use. Most virtual machines don't require a license fee payment."
     - content: "Both containers and virtual machines require C++ experience."
       isCorrect: false
-      explanation: "Incorrect. Containers and virtual machines are approachable for beginners, and don't require extensive experience."
+      explanation: "Incorrect. Containers and virtual machines are approachable for beginners and don't require extensive experience."
   - content: 'In a Kubernetes cluster, what is a deployed container stored in?'
     choices:
-    - content: "A container registry"
+    - content: "A container registry."
       isCorrect: false
       explanation: "Incorrect. A container registry stores containers, but it doesn't store deployed containers."
-    - content: "The Kubernetes API server"
+    - content: "The Kubernetes API server."
       isCorrect: false
-      explanation: "Incorrect. The Kubernetes API server manages the IP address, network rules, and exposed ports, of the small deployable units that containers are stored in."
-    - content: "A master container"
+      explanation: "Incorrect. The Kubernetes API server manages the IP address, network rules, and exposed ports of the small deployable units that containers are stored in."
+    - content: "A main container."
       isCorrect: false
-      explanation: "Incorrect. Kubernetes doesn't have a master container, rather it stores containers in small deployable units with no built-in intelligence."
-    - content: "A pod"
+      explanation: "Incorrect. Kubernetes doesn't have a main container. Instead, it stores containers in small deployable units with no built-in intelligence."
+    - content: "A pod."
       isCorrect: true
-      explanation: "Correct. As containers are self-contained, and have the exact same container image when they're deployed, they reliably function the same on different machines."
+      explanation: "Correct. Containers are self-contained and have the exact same container image when they're deployed, so they function the same on different machines."
   - content: 'What does an ingress controller do?'
     choices:
-    - content: "Reduces the size of container images"
+    - content: "Reduces the size of container images."
       isCorrect: false
       explanation: "Incorrect. Ingress controllers aren't involved with building containers, only how they're deployed and able to be interacted with."
     - content: "Ingress controllers manage how to deploy and expose your applications to the world without the need to configure network-related services."
@@ -53,7 +52,7 @@ quiz:
       explanation: "Correct. Ingress controllers allow your applications to be accessed by other applications."
     - content: "Provides automation for container registries to tag the latest image."
       isCorrect: false
-      explanation: "Incorrect. Ingress controllers work with Kubernetes, to determine how your applications can be accessed."
-    - content: "Determine the health of container images, in order for Kubernetes to replace them as needed."
+      explanation: "Incorrect. Ingress controllers work with Kubernetes to determine how your applications can be accessed."
+    - content: "Determine the health of container images in order for Kubernetes to replace them as needed."
       isCorrect: false
       explanation: "Incorrect. While ingress controllers allow access to your containers, they don't determine the health of them."

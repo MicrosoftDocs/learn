@@ -4,15 +4,15 @@ title: Exercise - Work with the file system
 metadata:
   title: Exercise - Work with the file system
   description: Use the "fs" module to read files and folders on the file system.
-  author: burkeholland
-  ms.author: buhollan
-  ms.date: 04/20/2020
-  ms.topic: interactive-tutorial
-  ms.prod: vs
-  ms.custom: team=cloud_advocates
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 interactive: bash
-azureSandbox: true
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-file-system.md)]

@@ -4,11 +4,10 @@ title: Exercise - Create an HTTP trigger
 metadata:
   title: Exercise - Create an HTTP trigger and run an Azure Function with an HTTP request
   description: Create an HTTP trigger
-  ms.date: 09/24/2018
+  ms.date: 09/25/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 15
 content: |

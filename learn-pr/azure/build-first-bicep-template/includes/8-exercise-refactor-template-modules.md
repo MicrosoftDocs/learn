@@ -41,7 +41,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
    :::code language="bicep" source="code/8-app-service.bicep" range="30" :::
 
-   This code is declaring that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
+   This code declares that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
 
 1. Save the changes to the file.
 
@@ -65,7 +65,7 @@ Your _appService.bicep_ file should look like this example:
 
 :::code language="bicep" source="code/8-app-service.bicep" :::
 
-If either file doesn't match, copy the example, or adjust your template to match the example.
+If either file doesn't match, copy the example or adjust your template to match the example.
 
 ### Deploy the updated Bicep template
 

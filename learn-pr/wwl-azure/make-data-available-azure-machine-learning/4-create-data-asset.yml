@@ -3,12 +3,13 @@ uid: learn.wwl.make-data-available-azure-machine-learning.create-data-asset
 title: Create a data asset
 metadata:
   title: Create a data asset
-  description: "Create a data asset"
-  ms.date: 01/13/2023
+  description: Create a data asset
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-data-asset.md)]

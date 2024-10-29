@@ -3,11 +3,12 @@ uid: learn.end-to-end-encryption-with-app-gateway.6-exercise-configure-listener-
 metadata:
   title: Exercise - Configure an Application Gateway listener for encryption
   description: Exercise - Configure an Application Gateway listener for encryption
-  ms.date: 02/22/2022
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/22/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Configure an Application Gateway listener for encryption
 durationInMinutes: 10
 content: |

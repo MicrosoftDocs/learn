@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-aad-users-with-mfa.exercise-mfa
 metadata:
-  title: Exercise - Enable Azure AD Multi-Factor Authentication
-  description: Exercise - Enable Azure AD Multi-Factor Authentication
-  ms.date: 01/03/2021
+  title: Exercise - Enable Microsoft Entra multifactor authentication
+  description: Exercise - Enable Microsoft Entra multifactor authentication
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Exercise - Enable Azure AD Multi-Factor Authentication
+  ms.topic: unit
+title: Exercise - Enable Microsoft Entra multifactor authentication
 durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-mfa.md)]

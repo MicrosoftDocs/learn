@@ -4,14 +4,12 @@ title: Create an account, database and collection using Azure Cosmos DB for Mong
 metadata:
   title: Create an account, database and collection using Azure Cosmos DB for MongoDB
   description: "Create an account, database and collection using Azure Cosmos DB for MongoDB"
-  ms.date: 02/06/2023
+  ms.date: 03/20/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, devx-track-extended-java, devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-create-account-database-collection-azure-cosmos-db-mongodb.md)]

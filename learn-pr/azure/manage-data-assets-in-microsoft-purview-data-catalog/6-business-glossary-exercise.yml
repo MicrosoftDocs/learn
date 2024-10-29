@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.business-glossary-exercise
+title: Business glossary exercise
+metadata:
+  unitType: exercise
+  title: Business glossary exercise
+  description: "This exercise describes how you can use and manage your business glossary in the Microsoft Purview Data Catalog."
+  ms.date: 04/03/2024
+  author: whhender
+  ms.author: whhender
+  ms.topic: unit
+  ms.custom:
+    - ignite-2022
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-business-glossary-exercise.md)]

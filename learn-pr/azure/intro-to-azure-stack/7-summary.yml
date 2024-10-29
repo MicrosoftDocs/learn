@@ -3,11 +3,11 @@ uid: learn.azure.intro-to-azure-stack.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/09/2020
+  ms.date: 03/28/2023
   author: sethmanheim
   ms.author: sethm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: femila
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 3

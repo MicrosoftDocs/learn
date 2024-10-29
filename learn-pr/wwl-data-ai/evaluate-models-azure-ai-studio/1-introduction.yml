@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-models-azure-ai-studio.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Explore model evaluations for custom copilots in the Azure AI Studio."
+  ms.date: 07/24/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -5,11 +5,10 @@ metadata:
   title: Summary
   description: Summary
   ms.custom: devdivchpfy22
-  ms.date: 08/19/2022
+  ms.date: 11/29/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

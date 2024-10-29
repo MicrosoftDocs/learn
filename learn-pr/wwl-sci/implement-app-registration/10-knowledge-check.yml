@@ -4,14 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+durationInMinutes: 10
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -21,14 +18,14 @@ quiz:
     choices:
     - content: "SaaS directory"
       isCorrect: false
-      explanation: "Incorrect. Application publishers/vendors who integrate with Azure AD are required to have a SaaS directory."
+      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have a SaaS directory."
     - content: "Single-sign-on app connected directory"
       isCorrect: false
       explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
     - content: "App gallery directory"
       isCorrect: true
       explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."
-  - content: "Which one of the following is a best practice for building multi-tenant apps?"
+  - content: "Which one of the following is a best practice for building multitenant apps?"
     choices:
     - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."
       isCorrect: true
@@ -49,4 +46,4 @@ quiz:
       explanation: "Incorrect. Applications are authorized to call APIs when they're granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs"
     - content: "Use the App roles and App manifest editor."
       isCorrect: true
-      explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Azure AD emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."
+      explanation: "Correct. Application roles are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Microsoft Entra ID emits a roles claim for each role that the user has been granted individually to the user and from their group membership. The App roles and Manifest editor are found in the Manage section of the app."

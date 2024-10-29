@@ -1,14 +1,13 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-stream-iot-data.5-exercise-process-iot-telemetry
 title: Exercise - Implement processing of IoT telemetry
 metadata:
   title: Exercise - Implement processing of IoT telemetry
   description: Implement processing of IoT telemetry
-  ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-process-iot-telemetry.md)]

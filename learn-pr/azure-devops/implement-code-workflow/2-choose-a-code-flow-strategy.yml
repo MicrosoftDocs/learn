@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy
-title: Choose a code flow strategy
+title: Choose a code-flow strategy
 metadata:
-  title: Choose a code flow strategy
-  description: Learn the advantages of using a distributed version control system, such as Git.
-  ms.date: 07/29/2022
+  title: Choose a code-flow strategy
+  description: Learn the advantages of using a distributed version-control system such as Git.
+  ms.date: 10/24/2023
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-a-code-flow-strategy.md)]

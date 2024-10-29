@@ -1,5 +1,3 @@
-
-
 Reference types include arrays, classes, and strings. Reference types are treated differently from value types regarding the way values are stored when the application is executing.
 
 In this exercise, you learn how reference types are different from value types, and how to use the `new` operator to associate a variable with a value in the computer's memory.
@@ -59,6 +57,52 @@ Console.WriteLine(shortenedString);
 ```
 
 Behind the scenes, however, a new instance of `System.String` is created and initialized to "Hello World!".
+
+### Practical concerns using value and reference types
+
+1. **Value Type (int)**: In this example, `val_A` and `val_B` are integer value types.
+
+```csharp
+int val_A = 2;
+int val_B = val_A;
+val_B = 5;
+
+Console.WriteLine("--Value Types--");
+Console.WriteLine($"val_A: {val_A}");
+Console.WriteLine($"val_B: {val_B}");
+```
+
+You should see the following output:
+```output
+--Value Types--
+val_A: 2
+val_B: 5
+```
+
+When `val_B = val_A` is executed, the value of `val_A` is copied and stored in `val_B`. So, when `val_B` is changed, `val_A` remains unaffected.
+
+2. **Reference Type (array)**: In this example, `ref_A` and `ref_B` are array reference types.
+
+```csharp
+int[] ref_A= new int[1];
+ref_A[0] = 2;
+int[] ref_B = ref_A;
+ref_B[0] = 5;
+
+Console.WriteLine("--Reference Types--");
+Console.WriteLine($"ref_A[0]: {ref_A[0]}");
+Console.WriteLine($"ref_B[0]: {ref_B[0]}");
+```
+
+You should see the following output:
+
+```output
+--Reference Types--
+ref_A[0]: 5
+ref_B[0]: 5
+```
+
+When `ref_B = ref_A` is executed, `ref_B` points to the same memory location as `ref_A`. So, when `ref_B[0]` is changed, `ref_A[0]` also changes because they both point to the same memory location. This is a key difference between value types and reference types.
 
 ## Recap
 

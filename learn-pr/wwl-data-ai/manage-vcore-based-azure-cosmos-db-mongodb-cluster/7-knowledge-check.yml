@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 4/12/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should you consider when selecting a cluster tier for a vCore-based Azure Cosmos DB for MongoDB?"
+    choices:
+    - content: "The cost of the tiers."
+      isCorrect: false
+      explanation: "Incorrect. While cost could be a consideration, the selection is primarily based on application needs for processing power and memory."
+    - content: "The storage capacity."
+      isCorrect: false
+      explanation: "Incorrect. While storage capacity is an important factor, the primary considerations for selecting a cluster tier should be the application’s processing power and memory needs."
+    - content: "The specific requirements for processing power and memory."
+      isCorrect: true
+      explanation: "Correct. The choice of cluster tier should be based on the specific processing power and memory requirements of your applications."
+  - content: "How does Azure Cosmos DB for MongoDB vCore achieve high availability?"
+    choices:
+    - content: "By providing database Azure storage replication to other Azure regions."
+      isCorrect: false
+      explanation: "Incorrect. High availability in Azure Cosmos DB for MongoDB vCore specifically involves maintaining standby replicas across different availability zones."
+    - content: "By maintaining standby replicas of data shards in different availability zones"
+      isCorrect: true
+      explanation: "Correct. High availability is achieved by maintaining standby replicas of data shards in different availability zones, allowing quick failover if a primary shard fails."
+    - content: "Performing data backups and restores."
+      isCorrect: false
+      explanation: "Incorrect. While backups are important for data recovery, high availability specifically involves maintaining active standby replicas for immediate failover if there's shard failure."
+  - content: "How are backups in vCore-based Azure Cosmos DB for MongoDB secured?"
+    choices:
+    - content: "Using SSL/TLS encryption"
+      isCorrect: false
+      explanation: "Incorrect. While SSL/TLS is critical for secure data transmission, backups specifically use AES (Advanced Encryption Standard) 256-bit encryption for security."
+    - content: "With password-protected files"
+      isCorrect: false
+      explanation: "Incorrect. The security of backups doesn't depend on password-protected files but on AES 256-bit encryption."
+    - content: "Through AES 256-bit encryption"
+      isCorrect: true
+      explanation: "Correct. Backups are secured using AES 256-bit encryption to ensure data security."
+  - content: "Which scenario describes the use of an Azure Storage account in monitoring vCore-based Azure Cosmos DB for MongoDB?"
+    choices:
+    - content: "To perform real-time performance tuning of the database"
+      isCorrect: false
+      explanation: "Incorrect. An Azure Storage account is used for long-term data retention, not real-time tuning."
+    - content: "For storing diagnostic logs to meet compliance requirements"
+      isCorrect: true
+      explanation: "Correct. Azure Storage accounts provide a reliable solution for long-term storage of logs, supporting compliance and historical analysis."
+    - content: "To dynamically scale database resources based on load"
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage accounts are used for data retention, not for dynamically scaling resources."

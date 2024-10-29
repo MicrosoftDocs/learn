@@ -5,11 +5,10 @@ metadata:
   unitType: Summary
   title: Summary
   description: Summary
-  ms.date: 6/15/2021
+  ms.date: 04/24/2024
   author: jasonkellingtonwaypoint
-  ms.author: v-jaske
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

@@ -3,24 +3,34 @@ uid: learn.wwl.perform-backups-restores
 metadata:
   title: Perform backups and restores for SAP workloads on Azure
   description: "This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/25/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Perform backups and restores for SAP workloads on Azure
 summary: This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure.
 abstract: |
   After completing this module, you will be able to:
-  - Explore backup and restore of Azure virtual machines.
-  - Explore application backup.
-  - Explore SAP HANA backup.
-  - Explore Oracle backup.
-  - Explore SQL Server backups.
+
+  -   Explore backup and restore of Azure virtual machines.
+
+  -   Explore application backup.
+
+  -   Explore SAP HANA backup.
+
+  -   Explore Oracle backup.
+
+  -   Explore SQL Server backups.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/3-perform-backups-and-restores.svg
 levels:
 - advanced
@@ -30,7 +40,7 @@ roles:
 products:
 - azure
 subjects:
-- business-continuity
+- site-reliability-engineering
 - cloud-computing
 units:
 - learn.wwl.perform-backups-restores.introduction

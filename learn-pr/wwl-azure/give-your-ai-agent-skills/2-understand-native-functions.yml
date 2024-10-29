@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.understand-native-functions
+title: Understand native functions
+metadata:
+  title: Understand native functions
+  description: Understand native functions
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 06/11/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-native-functions.md)]

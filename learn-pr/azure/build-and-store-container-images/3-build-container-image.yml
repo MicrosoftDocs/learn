@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.build-image
 metadata:
-  title: Exercise - Build container images with Azure Container Registry Tasks
-  description: Build container images with ACR Tasks
-  ms.date: 09/24/2018
+  title: Exercise - Build container images using Azure Container Registry Tasks
+  description: Build container images using Azure Container Registry Tasks
+  ms.date: 11/09/2023
   author: tejaswikolli
   ms.author: tejaswikolli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Exercise - Build container images with Azure Container Registry Tasks
-durationInMinutes: 15
+  ms.topic: unit
+title: Exercise - Build container images using Azure Container Registry Tasks
+durationInMinutes: 10
 content: |
   [!include[](includes/3-build-images.md)]

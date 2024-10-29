@@ -4,11 +4,10 @@ title: Perform ongoing tuning to reduce meaningless alerts
 metadata:
   title: Perform ongoing tuning to reduce meaningless alerts
   description: Learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
-  ms.date: 12/20/2019
+  ms.date: 04/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-perform-ongoing-tuning.md)]

@@ -4,11 +4,10 @@ title: How to remotely restart Azure Sphere with Azure IoT direct methods
 metadata:
   title: How to remotely restart Azure Sphere with Azure IoT direct methods
   description: In this section, we remotely restart Azure Sphere with Azure IoT direct methods.
-  ms.date: 06/29/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |

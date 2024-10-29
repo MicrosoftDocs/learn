@@ -4,12 +4,13 @@ metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using Azure Pipelines
   description: Build Azure Pipelines deployment pipelines for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
-  ms.date: 04/10/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: jasongroce
+  ms.date: 06/29/2023
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: engagement-fy23
+  ms.service: azure-devops-pipelines
 title: Publish reusable Bicep code by using Azure Pipelines
 summary: |
   Publish Azure template specs and Bicep modules by using a deployment pipeline. Automatically validate and add versioning to your reusable Bicep code.
@@ -19,6 +20,7 @@ abstract: |
     - Publish Bicep files to a template spec from a deployment pipeline
     - Automatically add version numbers to your modules and template specs
 prerequisites: |
+
   You should be familiar with using:
 
   - Bicep modules and module registries.
@@ -30,8 +32,11 @@ prerequisites: |
 
   To work through the exercises in the module, you'll need:
 
-  - An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that has the ability to create resource groups, Microsoft Entra applications, and service principals.
   - An Azure DevOps organization and account.
+  - Microsoft-hosted parallelism enabled in your Azure DevOps organization. [Azure DevOps Parallelism Request Form](https://aka.ms/azpipelines-parallelism-request).
+
+  The parallelism request can take a few days. You won't be able to complete the first exercise in this module until the request is processed.
 
   You'll also need the following items installed locally:
 

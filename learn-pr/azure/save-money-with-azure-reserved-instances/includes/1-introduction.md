@@ -1,6 +1,6 @@
-You're an Azure subscription owner or billing admin in the Contoso organization. Your team has been using Azure for several years and has consistent base VM usage. Currently, you're paying for the VMs on a monthly pay-as-you-go basis, and are interested in lowering the overall annual cost of your environment. Lower Azure costs will free up additional funds for future development work.
+Imagine that you're an Azure subscription owner or billing admin for an organization called Contoso. Your team has used Azure for several years and has consistent base virtual machine (VM) usage. Currently, you pay for the VMs on a monthly pay-as-you-go basis, but you want to lower the overall annual cost of your environment. Lower Azure costs would free up additional funds for future development work.
 
-Azure Reservations are a benefit offered by Microsoft that can save you up to 72% as compared to pay-as-you-go prices. By taking advantage of this pricing discount, you commit to one-year or three-year plans for multiple products, and in the process, greatly optimize your month-over-month cost. Learn the in's and out's of Azure Reservations so you can start taking advantage of this benefit today!
+You can cut costs by using reserved instances to save money over your pay-as-you-go costs. With this pricing discount, you commit to one-year or three-year plans for multiple products, and in the process, greatly optimize your month-over-month cost. Learn how to use Azure Reservations so you can start taking advantage of this benefit today!
 
 ## Learning objectives
 

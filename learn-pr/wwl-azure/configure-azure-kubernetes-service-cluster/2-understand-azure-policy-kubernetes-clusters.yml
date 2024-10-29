@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service-cluster.understand-azure-policy-kubernetes-clusters
+title: Understand Azure Policy for Kubernetes clusters
+metadata:
+  title: Understand Azure Policy for Kubernetes clusters
+  description: "Understand Azure Policy for Kubernetes clusters"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-azure-policy-kubernetes-clusters.md)]

@@ -3,11 +3,10 @@ uid: learn.student-evangelism.machine-learning-model-nasa.6-score-model
 metadata:
   title: Exercise - Score the machine learning model that predicts rocket launch success
   description: See how accurate the model is.
-  ms.date: 05/24/2021
+  ms.date: 09/04/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Score the machine learning model that predicts rocket launch success
 durationInMinutes: 3

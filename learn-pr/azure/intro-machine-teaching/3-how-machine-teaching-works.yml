@@ -7,8 +7,7 @@ metadata:
   ms.date: 10/17/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-machine-teaching-works.md)] 

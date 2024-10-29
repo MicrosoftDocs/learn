@@ -3,22 +3,22 @@ uid: learn.wwl.implement-manage-external-identities
 metadata:
   title: Implement and manage external identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 02/03/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Implement and manage external identities
 summary: Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration.
 abstract: |
   By the end of this module, you will be able to:
-  - Manage external collaboration settings in Azure Active Directory
+  - Manage external collaboration settings in Microsoft Entra ID
   - Invite external users (individually or in bulk)
-  - Manage external user accounts in Azure Active Directory
+  - Manage external user accounts in Microsoft Entra ID
   - Configure identity providers (social and SAML/WS-fed)
 prerequisites: |
   None
-iconUrl: /training/achievements/implement-and-manage-external-identities.svg
+iconUrl: /learn/achievements/implement-and-manage-external-identities.svg
 levels:
 - advanced
 roles:
@@ -27,11 +27,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-b2c
-- azure-active-directory-domain
 - entra
-- entra-workload-identities
+- entra-verified-id
+- entra-external-id
 subjects:
 - identity-access
 units:
@@ -46,9 +44,9 @@ units:
 - learn.wwl.implement-manage-external-identities.user-accounts-azure-active-directory
 - learn.wwl.implement-manage-external-identities.manage-extern-users-microsoft-365-workload
 - learn.wwl.implement-manage-external-identities.exercise-explore-dynamic-groups
-- learn.wwl.implement-manage-external-identities.implement-cross-tenant-access-controls
-- learn.wwl.implement-manage-external-identities.configure-identity-providers
 - learn.wwl.implement-manage-external-identities.implement-manager-entra-verified-id
+- learn.wwl.implement-manage-external-identities.configure-identity-providers
+- learn.wwl.implement-manage-external-identities.implement-cross-tenant-access-controls
 - learn.wwl.implement-manage-external-identities.knowledge-check
 - learn.wwl.implement-manage-external-identities.summary-resources
 badge:

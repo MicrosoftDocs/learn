@@ -3,12 +3,11 @@ uid: learn.azure.accelerate-migration-journey.3-azure-migration-drivers
 title: Azure migration and modernization drivers
 metadata:
   title: Azure migration and modernization drivers
-  description: Understand the primary drivers for an Azure migration and modernization.
-  ms.date: 02/12/2021
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Understand the primary drivers for Azure migration, and how applications can be changed or replaced to use new cloud technologies.
+  ms.date: 05/15/2023
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-azure-migration-drivers.md)]

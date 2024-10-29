@@ -6,11 +6,13 @@ metadata:
   ms.date: 06/30/2021
   author: jasallen
   ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Create cloud native apps with Azure and open-source software
 summary: |
-  Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity. In focusing on open technologies, "Cloud Native", means flexibility of deployment target, while still being able to use Azure-specific services like Azure Cosmos DB and Azure Active Directory.
+  Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity. In focusing on open technologies, "Cloud Native", means flexibility of deployment target, while still being able to use Azure-specific services like Azure Cosmos DB and Microsoft Entra ID.
 
   This hands-on learning path covers the essentials of selecting components for cloud-native apps, building the integrations, and deploying to Azure.
 
@@ -36,8 +38,7 @@ products:
 - github
 - azure-database-postgresql
 - azure-monitor
-- azure-application-insights
-- azure-active-directory
+- entra-id
 subjects:
 - cloud-computing
 modules:
@@ -46,7 +47,6 @@ modules:
 - learn.azure.cna-build-basic-service
 - learn.azure.cna-stream-iot-data
 - learn.azure.cna-build-iot-service
-- learn.azure.cna-deploy-maintain-cloud-native-apps
 - learn.azure.cna-set-up-apps-use-scale
 trophy:
   uid: learn.azure.cna-architect-modern-apps.trophy

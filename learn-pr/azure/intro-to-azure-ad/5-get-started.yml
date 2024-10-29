@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.5-get-started
 metadata:
-  title: Get started with Azure AD
-  description: Getting started with Azure AD
-  ms.date: 02/25/2020
+  title: Get started with Microsoft Entra ID
+  description: Getting started with Microsoft Entra ID
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Get started with Azure AD
+  ms.topic: unit
+title: Get started with Microsoft Entra ID
 durationInMinutes: 5
 content: |
   [!include[](includes/5-get-started.md)]

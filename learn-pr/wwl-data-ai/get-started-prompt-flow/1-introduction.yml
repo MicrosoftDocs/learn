@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introducing concepts like Retrieval Augmented Generation (RAG) to augment the capabilities of Large Language Models (LLMs) and how they're leveraged by Azure Machine Learning's prompt flow."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

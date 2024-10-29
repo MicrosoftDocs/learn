@@ -4,11 +4,12 @@ title: Exercise - Create a pool of compute nodes to run our jobs
 metadata:
   title: Exercise - Create a pool of compute nodes to run our jobs
   description: In this hands-on exercise, you'll add a pool to your Batch account using the .NET client library.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs.md)]

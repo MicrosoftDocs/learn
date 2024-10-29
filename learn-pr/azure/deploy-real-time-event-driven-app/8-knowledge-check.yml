@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 02/01/2021
+  ms.date: 02/05/2024
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-03012021
 durationInMinutes: 2
@@ -16,16 +15,16 @@ quiz:
   questions:
   - content: "How fast is real time?"
     choices:
-    - content: "Two seconds"
+    - content: "Two seconds."
       isCorrect: false
       explanation: "Two seconds are too much for real-time requirements."
-    - content: "An instant, more properly defined by your specific use case"
+    - content: "An instant, more properly defined by your specific use case."
       isCorrect: true
       explanation: "Correct. Real-time tasks are performed with almost no delay. The execution time should be defined in advance and monitored properly."
-    - content: "Under 1 millisecond"
+    - content: "Under 1 millisecond."
       isCorrect: false
       explanation: "Wow, that's fast. Could be, but the execution time depends on your specific use case."
-  - content: 'Which of the following databases are best to perform event-driven workloads?'
+  - content: 'Which of the following databases perform best with event-driven workloads?'
     choices:
     - content: Azure Cosmos DB
       isCorrect: false
@@ -43,10 +42,10 @@ quiz:
     choices:
     - content: "Events should be built generically."
       isCorrect: false
-      explanation: "Generic events might look like a good idea for improved maintainability but will likely result in large events and disable loose coupling."
+      explanation: "Generic events might look like a good idea for improved maintainability but likely result in large events and disable loose coupling."
     - content: "Events should be precise and lightweight."
       isCorrect: true
       explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
-    - content: "Events should always follow a convention."
+    - content: "Events should always follow a naming convention."
       isCorrect: false
       explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."

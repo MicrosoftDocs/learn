@@ -2,12 +2,13 @@
 uid: learn.student-evangelism.train-custom-vision-ai.2-bungee-on-the-moon
 metadata:
   title: Why take pictures of Bungee on the Moon?
-  description: This unit sets up the premise for why "reprogramming" the Lunar Rover to capture pictures of Bungee is relevant to us here on Earth.
-  ms.date: 03/10/2021
+  description: This unit sets up the premise for why reprogramming the Lunar Rover to capture pictures of Bungee is relevant to us here on Earth.
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Why take pictures of Bungee on the Moon?
 durationInMinutes: 2

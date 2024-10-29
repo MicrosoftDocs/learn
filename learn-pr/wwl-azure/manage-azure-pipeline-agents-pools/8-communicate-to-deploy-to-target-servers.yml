@@ -4,13 +4,12 @@ title: Communicate to deploy to target servers
 metadata:
   title: Communicate to deploy to target servers
   description: "Communicate to deploy to target servers"
-  ms.date: 06/23/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/8-communicate-to-deploy-to-target-servers.md)]

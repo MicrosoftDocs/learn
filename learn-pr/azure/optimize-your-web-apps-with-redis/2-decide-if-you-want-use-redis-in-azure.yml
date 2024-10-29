@@ -4,11 +4,10 @@ title: Decide if you want to use Azure Cache for Redis
 metadata:
   title: Decide if you want to use Azure Cache for Redis
   description: Decide if you want to use Azure Cache for Redis
-  ms.date: 09/24/2018
+  ms.date: 03/11/2024
   author: flang-msft
   ms.author: franlanglois
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-decide-if-you-want-use-redis-in-azure.md)]

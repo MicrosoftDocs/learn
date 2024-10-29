@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
+title: Knowledge check
+metadata:
+  title: "Check your knowledge"
+  description: "Knowledge check"
+  ms.date: 07/25/2023
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/07-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of Spark Structured Streaming in setting up real-time data sources for incremental processing with Azure Databricks?"
+    choices:
+    - content: "It's used to process real-time data streams using the same DataFrame and Dataset APIs used for batch processing."
+      isCorrect: true
+      explanation: "Correct. Spark Structured Streaming allows writing streaming queries using the same DataFrame and Dataset APIs for batch processing."
+    - content: "It's used to store the processed data in Delta tables."
+      isCorrect: false
+      explanation: "Incorrect. Spark Structured Streaming doesn't store data. It processes real-time data streams."
+    - content: "It's used to configure the data sources that provide the real-time data streams."
+      isCorrect: false
+      explanation: "Incorrect. Spark Structured Streaming isn't used for configuring data sources, but for processing real-time data streams."
+  - content: "What is the purpose of using Z-Order Clustering in optimizing Delta Lake for incremental processing in Azure Databricks?"
+    choices:
+    - content: "To enable data skipping and indexing"
+      isCorrect: false
+      explanation: "Incorrect. Data skipping and indexing are separate features, not directly related to Z-Order Clustering."
+    - content: "To manage metadata efficiently"
+      isCorrect: false
+      explanation: "Incorrect. Managing metadata efficiently isn't the primary function of Z-Order Clustering."
+    - content: "To optimize the storage layout of data files, enhancing query performance"
+      isCorrect: true
+      explanation: "Correct. Z-Order Clustering optimizes the storage layout of data files, reducing the amount of data read during operations, thus enhancing query performance."
+  - content: "What is the purpose of watermarking in handling late data and out-of-order events in incremental processing in Azure Databricks?"
+    choices:
+    - content: "Watermarking is used to duplicate records using unique identifiers or a combination of event attributes."
+      isCorrect: false
+      explanation: "Incorrect. This explanation refers to the process of deduplication, not watermarking."
+    - content: "Watermarking sets a threshold for how long the system should wait for late data. Events arriving after the watermark are considered late and can be discarded or considered separately, reducing memory usage and ensuring timely processing."
+      isCorrect: true
+      explanation: "Correct. Watermarking in Azure Databricks helps manage late data by setting a threshold for its arrival."
+    - content: "Watermarking is used to adjust processing logic based on the observed latency patterns, dynamically modifying how late data is handled to balance accuracy and performance."
+      isCorrect: false
+      explanation: "Incorrect. This explanation refers to the process of latency-aware processing, not watermarking."

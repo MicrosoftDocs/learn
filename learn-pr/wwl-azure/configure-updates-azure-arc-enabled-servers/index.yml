@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-updates-azure-arc-enabled-servers
+metadata:
+  title: Configure updates of Azure Arc-enabled servers by using Azure Update Manager
+  description: "Update Manager  is a unified service that helps manage and govern updates for all your machines. It allows you to monitor Windows and Linux update compliance across Azure and on-premises from a single dashboard."
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module-intro-to-product
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Configure updates of Azure Arc-enabled servers by using Azure Update Manager
+summary: Update Manager is a unified service that helps manage and govern updates for all your machines. It allows you to monitor Windows and Linux update compliance across Azure and on-premises from a single dashboard.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Explain Azure Update Manager key features.
+
+  -   Understand how to manage updates for Azure Arc-enabled servers.
+
+  -   Create a maintenance configuration schedule.
+
+  -   Associate a VM with a schedule.&nbsp;
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-updates-azure-arc-enabled-servers.introduction
+- learn.wwl.configure-updates-azure-arc-enabled-servers.azure-update-manager
+- learn.wwl.configure-updates-azure-arc-enabled-servers.azure-update-manager-key-features
+- learn.wwl.configure-updates-azure-arc-enabled-servers.manage-updates-azure-arc-enabled-servers
+- learn.wwl.configure-updates-azure-arc-enabled-servers.create-maintenance-configuration-schedule
+- learn.wwl.configure-updates-azure-arc-enabled-servers.associate-virtual-machine-schedule-arc
+- learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
+- learn.wwl.configure-updates-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.wwl.configure-updates-azure-arc-enabled-servers.badge

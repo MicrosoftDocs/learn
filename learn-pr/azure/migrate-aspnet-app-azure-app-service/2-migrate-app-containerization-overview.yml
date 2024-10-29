@@ -3,15 +3,14 @@ uid: learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
 metadata:
   title: Azure Migrate App Containerization overview
   description: Provides an overview of Azure Migrate App Containerization feature
-  ms.date: 09/01/2021
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Azure Migrate App Containerization overview
 durationInMinutes: 4
 content: |
-  [!include[](includes/app-containerization-overview.md)]
+  [!include[](includes/app-containerization-overview.md)]s
 quiz:
   title: Check your knowledge
   questions:
@@ -23,7 +22,7 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "Azure Migrate: App Containerization can be downloaded and installed on any Windows 10 or Windows Server 2016 machine that has network access to your application servers."
-  - content: "Which of the following application types are supported by Azure Migrate: App Containerization?"
+  - content: "Azure Migrate: App Containerization supports which of the following application types?"
     choices:
     - content: "ASP.NET applications"
       isCorrect: true

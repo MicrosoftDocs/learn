@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a template spec
   description: Create an Azure Pipelines pipeline to publish a template spec to Azure.
-  ms.date: 04/10/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/13/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-publish-template-spec.md)]

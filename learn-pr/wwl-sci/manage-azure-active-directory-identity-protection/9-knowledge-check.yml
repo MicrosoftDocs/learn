@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2023
+  ms.date: 04/03/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -35,18 +34,18 @@ quiz:
       explanation: "Incorrect. There's no directory policy for mobile device access risk."
     - content: "Sign-in risk policy"
       isCorrect: true
-      explanation: "Correct. Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity directly. Sign-in risk policy analyzes the probability that the sign-in wasn't performed by the user."
+      explanation: "Correct. Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity directly. Sign-in risk policy analyzes the probability that the sign-in was performed by someone other than the user."
     - content: "Hybrid identity sign-in risk policy"
       isCorrect: false
       explanation: "Incorrect. There's no directory policy for hybrid identity."
   - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins"
     choices:
-    - content: "`riskDetection, riskyUsers, signIn`"
+    - content: "`riskDetection, riskyUsers, signIns`"
       isCorrect: true
-      explanation: "Correct. There are three APIs that expose information about risky users and sign-ins. RiskDetection, allows you to query Microsoft Graph for a list of user and sign-in linked risk detections. You'll also get associated information about the detection. The second API, `riskyUsers`, allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky. The API, `signIn`, allows you to query Microsoft Graph for information on Azure AD sign-ins. The information contains specific properties related to risk state, detail, and level."
-    - content: "`riskDetection, itemActivity, signIn`"
+      explanation: "Correct. There are three APIs that expose information about risky users and sign-ins. RiskDetection allows you to query Microsoft Graph for a list of user and sign-in linked risk detections. You also get associated information about the detection. The second API, `riskyUsers`, allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky. The API, `signIns`, allows you to query Microsoft Graph for information on Microsoft Entra ID sign-ins. The information contains specific properties related to risk state, detail, and level."
+    - content: "`riskDetection, itemActivity, signIns`"
       isCorrect: false
-      explanation: "Incorrect. The `riskyUsers` and `signIn` APIs are correct. However, the `itemActivity` resource provides information about activities that took place on an item or within a container."
-    - content: "`riskyUsers, signIn, IdentitySet`"
+      explanation: "Incorrect. The `riskyUsers` and `signIns` APIs are correct. However, the `itemActivity` resource provides information about activities that took place on an item or within a container."
+    - content: "`riskyUsers, signIns, IdentitySet`"
       isCorrect: false
-      explanation: "Incorrect. The `riskyUsers` and `signIn` APIs are correct. However, `IdentitySet`, is a keyed collection of identity resources. It's used to represent a set of identities with various events such as created by or last modified by."
+      explanation: "Incorrect. The `riskyUsers` and `signIns` APIs are correct. However, `IdentitySet`, is a keyed collection of identity resources. It's used to represent a set of identities with various events such as created by or last modified by."

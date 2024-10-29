@@ -1,5 +1,4 @@
-Azure Key Vault is a Secrets store provided by
-Azure. It's integrated with all major Azure services, making it easy to manage secrets with Azure
+Azure Key Vault is a Secrets store provided by Azure. Azure Key Vault is integrated with all major Azure services, making it easy to manage secrets with Azure
 App Services, Azure Kubernetes Services, or Azure Spring Apps.
 
 ## Using Azure Key Vault to enhance data protection and compliance
@@ -8,7 +7,7 @@ Azure Key Vault can encrypt keys and secrets in hardware security modules (HSMs)
 
 ## Azure Key Vault provides fine-grained control of who accesses your secrets
 
-You keep control over your keys: you grant permission for your applications to use those keys as needed. Applications never have direct access to the keys. Developers manage keys used for development and testing, and seamlessly migrate to production the keys that are managed by security operations.
+You keep control over your keys: you grant permission for your applications to use those keys as needed. Applications never have direct access to the keys. Developers manage keys used for development and testing, and seamlessly migrate to production using the keys managed by security operations.
 
 ## Use Azure Key Vault to manage SSL/TLS certificates
 
@@ -22,6 +21,6 @@ the Azure CLI can be used to grant an application access to secrets.
 Those secrets are then available using the Azure Key Vault SDK, which is available for all major
 languages, including Java.
 
-If you're a Spring developer, the Azure Key Vault Spring Boot Starter will make your life even easier.
-Using this starter, secrets will be automatically available in a Spring Boot application as
+If you're a Spring developer, the Azure Key Vault Spring Boot Starter makes your life even easier.
+As you learn in the next section, secrets are automatically available in a Spring Boot application as
 configuration properties.

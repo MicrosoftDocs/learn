@@ -3,21 +3,27 @@ uid: learn.wwl.configure-user-group-accounts
 metadata:
   title: Configure user and group accounts
   description: "Learn how to configure user and group accounts."
-  ms.date: 10/21/2022
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Configure user and group accounts
 summary: Learn how to configure user and group accounts.
 abstract: |
   In this module, you learn how to:
-  - Configure users accounts and user account properties.
-  - Create new user accounts.
-  - Import bulk user accounts with a template.
-  - Configure group accounts and assignment types.
-prerequisites: |
-  None
+
+  -   Configure users accounts and user account properties.
+
+  -   Create new user accounts.
+
+  -   Import bulk user accounts with a template.
+
+  -   Configure group accounts and assignment types.
+prerequisites: None
 iconUrl: /training/achievements/user-group-accounts-configure.svg
 levels:
 - intermediate
@@ -34,7 +40,6 @@ units:
 - learn.wwl.configure-user-group-accounts.create-bulk-user-accounts
 - learn.wwl.configure-user-group-accounts.create
 - learn.wwl.configure-user-group-accounts.create-administrative-units
-- learn.wwl.configure-user-group-accounts.interactive-lab-simulation-identity
 - learn.wwl.configure-user-group-accounts.knowledge-check
 - learn.wwl.configure-user-group-accounts.summary-resources
 badge:

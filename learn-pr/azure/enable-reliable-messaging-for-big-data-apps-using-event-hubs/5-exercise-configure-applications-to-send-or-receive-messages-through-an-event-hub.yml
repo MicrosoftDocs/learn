@@ -4,11 +4,12 @@ title: Exercise - Configure applications to send or receive messages through an 
 metadata:
   title: Exercise - Configure applications to send or receive messages through an event hub
   description: Configure applications to send or receive messages through an event hub
-  ms.date: 04/04/2023
+  ms.date: 11/22/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 interactive: bash		
 azureSandbox: true
 durationInMinutes: 10

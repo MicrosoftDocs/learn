@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-user-authentication.configure-azure-ad-user-authentication-virtual-machines
-title: Configure Azure AD user authentication for virtual machines
+title: Configure Microsoft Entra user authentication for virtual machines
 metadata:
-  title: Configure Azure AD user authentication for virtual machines
-  description: "Configure Azure AD user authentication for virtual machines"
-  ms.date: 04/06/2023
+  title: Configure Microsoft Entra user authentication for virtual machines
+  description: "Configure Microsoft Entra user authentication for virtual machines"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/10-configure-azure-ad-user-authentication-virtual-machines.md)]

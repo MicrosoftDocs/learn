@@ -4,11 +4,10 @@ title: What is Azure Functions
 metadata:
   title: What is Azure Functions
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
-  author: saifeemustafaq
-  ms.author: msaifee
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: ggailey777
+  ms.author: glenga
+  ms.date: 03/18/2024
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-azure-functions.md)]
@@ -22,7 +21,7 @@ quiz:
           explanation: "Correct!"
         - content: "A trigger is connection code that helps you access a data source, and a binding is condition that defines when code should run."
           isCorrect: false
-          explanation: "Incorrect! It’s the opposite, the trigger is why code runs and bindings are what connects to a data source via configuration."
-        - content: "A trigger is when code times out and binding is the code that runs as a result"
+          explanation: "Incorrect! It's the opposite: the trigger is why code runs and bindings are what connects to a data source via configuration."
+        - content: "A trigger is when code times out and binding is the code that runs as a result."
           isCorrect: false
           explanation: "Incorrect! A trigger defines a condition for when code should run. A timeout is a kind of trigger but there are many different types of triggers like blob storage events, database inserts, new message in message queues and more. Bindings are configuration that helps your code connect to a data source and make reading and writing to it possible by just a few lines of code."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.describe-records-management
+title: Describe Records Management
+metadata:
+  title: Describe Records Management
+  description: "Describe Records Management."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-describe-records-management.md)]

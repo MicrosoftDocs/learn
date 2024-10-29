@@ -6,9 +6,8 @@ metadata:
   description: In this unit, you learn how to configure your health bot with a data-connect cell.
   author: Meghana-ch
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/17/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |

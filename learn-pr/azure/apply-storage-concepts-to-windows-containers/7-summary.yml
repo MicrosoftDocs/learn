@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-storage-concepts-to-windows-containers.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: In this module, you learned about the storage concepts behind Windows containers. How containers have temporary storage for their own file system, network, and processes, but also provide mechanisms for persistent storage.
+  ms.date: 02/13/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

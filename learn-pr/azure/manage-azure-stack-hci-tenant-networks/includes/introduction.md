@@ -1,8 +1,8 @@
-Azure Stack HCI provides a highly flexible and more secure multitenant networking environment.
+Azure Stack HCI provides a highly flexible and secure multitenant networking environment.
 
 ## Example scenario
 
-Suppose you work as a systems engineer at a large, US-based financial services company. Your company develops highly specialized, proprietary commercial applications for its customers, and hosts those applications in its own datacenters.
+Suppose you work as a systems engineer at a large, US-based financial services company. Your company develops highly specialized, proprietary commercial applications for its customers and hosts those applications in its own datacenters.
 
 As part of modernizing its technology, the company started deploying Azure Stack HCI across its on-premises locations. This has significantly accelerated datacenter consolidation, enhanced the agility of compute workloads, and helped minimize the dependency on expensive storage-area networks (SANs) that are complex to manage.
 

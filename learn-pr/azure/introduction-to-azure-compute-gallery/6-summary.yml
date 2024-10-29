@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-compute-gallery.summary
+title: Summary
+metadata:
+  title: Summary
+  description: A summary of the Introduction to Azure Compute Gallery Training module.
+  ms.date: 08/16/2023
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

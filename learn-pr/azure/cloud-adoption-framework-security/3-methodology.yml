@@ -5,12 +5,11 @@ metadata:
   unitType: learning-content
   title: Methodology
   description: How the Microsoft Cloud Adoption Framework for Azure methodology works and how it fits in with the overall organization.
-  ms.date: 04/26/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 5
+  ms.date: 11/01/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 20
 content: |
   [!include[](includes/3-methodology.md)]
 quiz:
@@ -23,7 +22,7 @@ quiz:
       explanation: Incorrect. These are the key areas of business alignment.
     - content: Access control, security operations, asset protection, security governance, and innovation security.
       isCorrect: true
-      explanation: Correct. Each of these areas is extremely important as you adopt the cloud.
+      explanation: Correct. Each of these areas is crucial as you adopt the cloud.
     - content: Monitor decisions, configurations, and data to govern decisions made across the environment and within all workloads across the portfolio.
       isCorrect: false
       explanation: Incorrect. These are aspects of security governance.

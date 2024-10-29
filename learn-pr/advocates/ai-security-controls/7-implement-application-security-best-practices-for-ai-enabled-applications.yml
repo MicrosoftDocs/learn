@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-security-controls.implementing-application-security-best-practices-for-ai-enabled-applications
+title: Implement application security best practices for AI enabled applications
+metadata:
+  title: Implement application security best practices for AI enabled applications
+  description: Learn about application security best practices for AI enabled applications
+  ms.date: 07/24/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-implement-application-security-best-practices-for-ai-enabled-applications.md)]

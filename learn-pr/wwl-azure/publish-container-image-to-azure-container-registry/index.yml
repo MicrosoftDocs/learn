@@ -3,22 +3,30 @@ uid: learn.wwl.publish-container-image-to-azure-container-registry
 metadata:
   title: Manage container images in Azure Container Registry
   description: "Learn how to use Azure Container Registry to store your container images, and automate builds and deployments."
-  ms.date: 04/25/2023
+  ms.date: 07/15/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-container-registry
+  ai-usage: human-only
 title: Manage container images in Azure Container Registry
 summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
 abstract: |
   After completing this module, you'll be able to:
-  *   Explain the features and benefits Azure Container Registry offers.
-  *   Describe how to use ACR Tasks to automate builds and deployments.
-  *   Explain the elements in a Dockerfile.
-  *   Build and run an image in the ACR by using Azure CLI.
+
+  -   Explain the features and benefits Azure Container Registry offers.
+
+  -   Describe how to use ACR Tasks to automate builds and deployments.
+
+  -   Explain the elements in a Dockerfile.
+
+  -   Build and run an image in the ACR by using Azure CLI.
 prerequisites: |
-  * You should be familiar with container concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be familiar with container concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/azure-container-registry-publish.svg
 levels:
 - intermediate

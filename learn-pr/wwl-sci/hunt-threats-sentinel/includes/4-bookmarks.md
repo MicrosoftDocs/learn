@@ -2,7 +2,7 @@ To hunt for threats to Contoso's environment, you have to review large amounts o
 
 ## Hunt by using bookmarks
 
-Bookmarks in Microsoft Sentinel can help you hunt for threats by preserving the queries you ran in Microsoft Sentinel, along with the query results that you deem relevant. You can also record your contextual observations and reference your findings by adding notes and tags. Bookmarked data is visible to you and your teammates for easy collaboration.
+Bookmarks in Microsoft Sentinel can help you hunt for threats by preserving the queries you already ran, along with the query results that you deem relevant. You can also record your contextual observations and reference your findings by adding notes and tags. Bookmarked data is visible to you and your teammates for easy collaboration.
 
 You can revisit your bookmarked data at any time on the **Bookmarks** tab of the **Hunting** page. You can use filtering and search options to quickly find specific data for your current investigation. Alternatively, you can review your bookmarked data directly in the **HuntingBookmark** table in your Log Analytics workspace.
 
@@ -13,7 +13,7 @@ You can revisit your bookmarked data at any time on the **Bookmarks** tab of the
 
 You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the toolbar enables you to perform either of these tasks when a bookmark is selected.
 
-:::image type="content" source="../media/4-incident-actions.png" alt-text="The drop-down menu for incident actions in Microsoft Sentinel, with the options to create a new incident or add to an existing incident." :::
+:::image type="content" source="../media/4-incident-actions.png" alt-text="Screenshot of the drop-down menu for incident actions in Microsoft Sentinel." :::
 
 Incidents that you create from bookmarks can be managed from the **Incidents** page alongside other incidents created in Microsoft Sentinel.
 
@@ -31,4 +31,4 @@ You can select each entity on the graph to observe complete contextual informati
 
 You can select the bookmark item on the graph to observe important bookmark metadata related to the bookmark's security and environment context.
 
-Choose the best response for the following question. Then select **Check your answers**.
+Choose the best response for the following question, then select **Check your answers**.

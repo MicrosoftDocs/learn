@@ -4,11 +4,12 @@ title: Create an event hub using the Azure CLI
 metadata:
   title: Create an event hub using the Azure CLI
   description: Create an event hub using the Azure CLI
-  ms.date: 04/04/2023
+  ms.date: 11/22/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-an-event-hub-using-azure-cli.md)]

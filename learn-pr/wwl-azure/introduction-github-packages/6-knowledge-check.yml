@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/09/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
@@ -21,13 +20,13 @@ quiz:
     choices:
     - content: "Apache Maven, Gradle and Go modules."
       isCorrect: false
-      explanation: "Incorrect. GitHub Packages do not support Go modules."
+      explanation: "Incorrect. GitHub Packages don't support Go modules."
     - content: "RubyGems, Docker and NuGet."
       isCorrect: true
       explanation: "Correct. GitHub Packages can host npm, RubyGems, Apache Maven, Gradle, Docker, NuGet, and GitHub's Container registry."
     - content: "NuGet, Conan (for C/C++), and Cargo (for Rust)."
       isCorrect: false
-      explanation: "Incorrect. GitHub Packages do not support Conan (for C/C++) and Cargo (for Rust)."
+      explanation: "Incorrect. GitHub Packages don't support Conan (for C/C++) and Cargo (for Rust)."
   - content: "Which of the following choices is the most secure and recommended authentication method for GitHub Packages?"
     choices:
     - content: "Personal Access Token (PAT)."

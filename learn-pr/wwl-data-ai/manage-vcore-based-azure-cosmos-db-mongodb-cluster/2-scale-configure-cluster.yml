@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.scale-configure-cluster
+title: Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster
+metadata:
+  title: Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster
+  description: "Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster."
+  ms.date: 04/12/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-scale-configure-cluster.md)]

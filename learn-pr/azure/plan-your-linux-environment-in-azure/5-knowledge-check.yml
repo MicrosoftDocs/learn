@@ -4,60 +4,60 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/07/2023
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/16/2023
+  author: fossygirl
+  ms.author: carols
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which method should you use to provide SSH connectivity to Azure VMs running Linux directly from the Azure portal over the HTTPS protocol?"
+  - content: "Which SSH connectivity method to Azure Linux VMs runs directly from the Azure portal over the HTTPS protocol?"
     choices:
     - content: "Azure Bastion"
       isCorrect: true
-      explanation: "Correct: Azure Bastion supports SSH connectivity to Azure VMs running Linux directly from the Azure portal over the HTTPS protocol."
+      explanation: "Azure Bastion supports SSH connectivity to Azure Linux VMs directly from the Azure portal over the HTTPS protocol."
     - content: "JIT VM access"
       isCorrect: false
-      explanation: "Incorrect: JIT VM access supports SSH connectivity by dynamically modifying an NSG protecting the target Azure VM, but the connection isn't established by using the HTTPS protocol."
-    - content: "The VMaccess extension"
+      explanation: "JIT VM access supports SSH connectivity by dynamically modifying the NSG protecting the target VM, but it doesn't use the HTTPS protocol."
+    - content: "Serial console"
       isCorrect: false
-      explanation: "Incorrect: The VMaccess extension enables you to modify credentials used to access an Azure VM running Linux. However, you can't connect to it using the HTTPS protocol."
-  - content: "Which Azure resource must be provisioned first before you can deploy an Azure VM running Linux?"
+      explanation: "Serial console connects over the Azure Linux VM's serial port, but is independent of network connectivity."
+  - content: "Which Azure resource must be provisioned before you can deploy an Azure Linux VM?"
     choices:
     - content: "A storage account"
       isCorrect: false
-      explanation: "Incorrect: The ability to deploy an Azure VM doesn't rely on having an existing storage account."
+      explanation: "The ability to deploy an Azure VM doesn't rely on having an existing storage account."
     - content: "A virtual network"
       isCorrect: true
-      explanation: "Correct: A virtual network must exist before you can deploy an Azure VM."
+      explanation: "A virtual network must exist before you can deploy an Azure VM."
     - content: "A public IP address"
       isCorrect: false
-      explanation: "Incorrect: A public IP address is an optional (but not mandatory) resource that can be part of an Azure VM deployment."
-  - content: "Which property of an Azure VM running Linux affects its maximum available bandwidth?"
+      explanation: "A public IP address is an optional resource that can be part of an Azure VM deployment."
+  - content: "Which property of an Azure Linux VM affects its maximum available bandwidth?"
     choices:
-    - content: "The number of network interfaces"
+    - content: "Number of network interfaces"
       isCorrect: false
-      explanation: "Incorrect: The number of network interfaces doesn't affect the maximum available bandwidth of an Azure VM."
+      explanation: "The number of network interfaces doesn't affect the maximum available bandwidth of an Azure VM."
     - content: "Size"
       isCorrect: true
-      explanation: "Correct: The Azure VM size is the sole factor that determines its maximum available bandwidth."
-    - content: "VM Generation"
+      explanation: "The Azure VM size is the sole factor that determines its maximum available bandwidth."
+    - content: "Number of disks"
       isCorrect: false
-      explanation: "Incorrect: VM Generation doesn't affect the maximum available bandwidth of an Azure VM."
-  - content: "Which feature of an Azure VM must be implemented to provide access to its OS by using the Azure VM serial console?"
+      explanation: "The number of disks attached to an Azure VM doesn't directly determine its maximum bandwidth."
+  - content: "Which feature of an Azure VM must be implemented to provide access via the Azure VM serial console?"
     choices:
     - content: "JIT VM Access"
       isCorrect: false
-      explanation: "Incorrect: JIT VM Access provides SSH connectivity, rather than connectivity by using the serial console."
+      explanation: "JIT VM Access provides SSH connectivity, rather than connectivity by using the serial console."
     - content: "Azure Bastion"
       isCorrect: false
-      explanation: "Incorrect: Azure Bastion provides SSH connectivity to Azure VMs running Linux over the HTTPS protocol, not by using serial console."
+      explanation: "Azure Bastion provides SSH connectivity to Azure VMs over the HTTPS protocol, not by using serial console."
     - content: "Boot diagnostics"
       isCorrect: true
-      explanation: "Correct: Boot diagnostics must be enabled to provide connectivity to an Azure VM by using the serial console."
+      explanation: "Boot diagnostics must be enabled to connect to an Azure VM by using the serial console."
 #  - content: "Which label designates a temporary disk of an Azure VM running Linux?"
 #    choices:
 #    - content: "`dev/sda1`"
@@ -73,10 +73,10 @@ quiz:
     choices:
     - content: "Data disk"
       isCorrect: false
-      explanation: "Incorrect: Data disks are intended for storing files that need to persist across operations such as resizing, redeployments, or restarts."
+      explanation: "Data disks are intended for storing files that need to persist across operations such as resizing, redeployments, or restarts."
     - content: "Temporary disk"
       isCorrect: true
-      explanation: "Correct: The primary purpose of the temporary disk is to store a swap file."
+      explanation: "The primary purpose of the temporary disk is to store a swap file."
     - content: "OS disk"
       isCorrect: false
-      explanation: "Incorrect: You should use the OS disk to store the OS files."
+      explanation: "You should use the OS disk to store the OS files."

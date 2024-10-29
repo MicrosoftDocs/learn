@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.automate-for-efficiency
+title: Automate for efficiency
+metadata:
+  title: Automate for efficiency
+  description: Learn how to automate for efficiency to improve your operational excellence.
+  ms.date: 12/11/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-automate-for-efficiency.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following isn’t an important factor to consider when evaluating your workflows and potential for automation?'
+    choices:
+    - content: 'The frequency that the task is performed'
+      isCorrect: false
+      explanation: "Incorrect. The frequency of the task is an important factor to consider."
+    - content: 'The complexity of the task'
+      isCorrect: false
+      explanation: 'Incorrect. The complexity of the task is an important factor to consider.'
+    - content: 'How accurately the task is performed by humans'
+      isCorrect: false
+      explanation: "Incorrect. The accuracy of the task is an important factor to consider."
+    - content: 'The documentation available for the task'
+      isCorrect: true
+      explanation: "Correct. The documentation available for the task is important, but shouldn't be a deciding factor when evaluating it for automation."
+  - content: 'How did Contoso approach the automation of their UI testing?'
+    choices:
+    - content: 'They used a third-party tool to automate the UI testing'
+      isCorrect: false
+      explanation: "Incorrect. In this case, Contoso didn't use a third-party tool."
+    - content: 'They modified their UI components to better support automation'
+      isCorrect: true
+      explanation: "Correct. The team realized that the UI components didn't easily support automation, so they modified those components."
+    - content: 'They abandoned the idea of automating UI testing'
+      isCorrect: false
+      explanation: "Incorrect. The team didn't abandon the idea of automating UI testing, they modified the UI components to better support automation."
+    - content: 'They wrote new tests that were more automation-friendly'
+      isCorrect: false
+      explanation: "Incorrect. The team didn't write new tests, they modified the UI components to better support automation."
+  - content: 'How should you consider your automation with respect to your workload as a whole?'
+    choices:
+    - content: 'The automation should meet the same standards as the rest of the workload for all WAF pillar areas.'
+      isCorrect: true
+      explanation: 'Correct. Automation is integral to the workload, and should be maintained with the same standards as the rest of the workload components.'
+    - content: 'The automation should be considered a separate workload, and should be maintained independently.'
+      isCorrect: false
+      explanation: 'Incorrect. Automation should be considered an integral part of the workload.'
+    - content: 'The automation is an inconsequential part of the workload.'
+      isCorrect: false
+      explanation: "Incorrect. Automation is an integral part of the workload, and should be treated as such."
+    - content: 'All automation code should be maintained in a separate repository from the workload code.'
+      isCorrect: false
+      explanation: "Incorrect. Automation code should be maintained with the workload code, and should be subject to the same standards."

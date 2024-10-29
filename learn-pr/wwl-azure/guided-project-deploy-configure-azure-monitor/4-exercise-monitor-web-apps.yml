@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-monitor-web-apps
+title: Exercise - Monitor web apps
+metadata:
+  title: Exercise - Monitor web apps
+  description: "Exercise - Monitor web apps"
+  ms.date: 10/06/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-monitor-web-apps.md)]

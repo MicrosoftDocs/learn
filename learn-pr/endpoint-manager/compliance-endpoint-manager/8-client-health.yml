@@ -4,11 +4,10 @@ title: Understand client health with co-management
 metadata:
   title: Understand client health with co-management
   description: Understand client health with co-management. 
-  ms.date: 10/26/2020
+  ms.date: 05/04/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-client-health.md)]

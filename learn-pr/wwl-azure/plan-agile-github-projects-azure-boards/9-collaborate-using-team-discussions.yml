@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-agile-github-projects-azure-boards.collaborate-using-team-discussions
+title: Collaborate using team discussions
+metadata:
+  title: Collaborate using team discussions
+  description: "Collaborate using team discussions"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-collaborate-using-team-discussions.md)]

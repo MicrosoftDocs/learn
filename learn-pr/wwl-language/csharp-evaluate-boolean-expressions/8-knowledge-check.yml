@@ -4,26 +4,25 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/11/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
   - content: "Which line of code uses logical negation?"
     choices:
     - content: "`Console.WriteLine(!value);`."
       isCorrect: true
-      explanation: "Correct! Adding the `!` operator (the \"not-operator\") before a conditional expression checks to ensure the expression is false."
-    - content: "`Console.WriteLine( value!= true);`."
+      explanation: "Correct! Adding the `!` operator (the \"not-operator\") before a conditional expression forces your code to reverse its evaluation of the operand. When logical negation is applied, the evaluation produces `true` if the operand evaluates to `false` and `false` if the operand evaluates to `true`."
+    - content: "`Console.WriteLine(value != false);`."
       isCorrect: false
-      explanation: "Incorrect. Evaluating whether a value isn't equal to `true` isn't an example of logical negation."
-    - content: "`Console.WriteLine( value!= false);`."
+      explanation: "Incorrect. Using the inequality operator to evaluate whether `value` isn't equal to `false` isn't an example of logical negation."
+    - content: "`Console.WriteLine(a != b);`."
       isCorrect: false
-      explanation: "Incorrect. Evaluating whether a value isn't equal to `false` isn't an example of logical negation."
+      explanation: "Incorrect. Using the inequality operator to evaluate whether two values aren't equal isn't an example of logical negation."
   - content: "Which of the following lines of code is a valid use of the conditional operator?"
     choices:
     - content: "`int value = amount >= 10? 10: 20;`."

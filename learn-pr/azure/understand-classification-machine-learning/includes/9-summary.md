@@ -1,6 +1,6 @@
-We’ve completed our introduction to classification. Let’s recap some key points.
+We completed our introduction to classification, so let’s recap some key points.
 
-We’ve seen that classification has a lot in common with classic regression. For both we can use supervised learning, a cost function, and use test and train datasets to estimate real-world performance. We focused here on logistic regression, which is almost a hybrid between these two types of model, and showed how thresholding the output gives us a categorical label, like ‘avalanche’/’no-avalanche’.
+We saw that classification has a lot in common with classic regression. For both, we can use supervised learning, a cost function, and use test and train datasets to estimate real-world performance. We focused here on logistic regression, which is almost a hybrid between these two types of model, and showed how thresholding the output gives us a categorical label, like `avalanche`/`no-avalanche`.
 
 We discussed how assessing classification models can be slightly more difficult than with regression models, particularly because the costs functions involved are often unintuitive.
 

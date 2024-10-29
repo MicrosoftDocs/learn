@@ -4,11 +4,12 @@ title: Exercise - Move Azure Storage blobs using the Azure CLI
 metadata:
   title: Exercise - Move Azure Storage blob using the Azure CLI
   description: Exercise - Move Azure Storage blobs using the Azure CLI
-  ms.date: 03/15/2023
+  ms.date: 02/08/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 6
 interactive: bash
 azureSandbox: true

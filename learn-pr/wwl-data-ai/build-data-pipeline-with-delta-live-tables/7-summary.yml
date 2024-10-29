@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-pipeline-with-delta-live-tables.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 07/23/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

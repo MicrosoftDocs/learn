@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-azure-arc.1-introduction
 metadata:
   title: Introduction
   description: Introduction to Azure Arc
-  ms.date: 04/10/2023
+  ms.date: 12/07/2023
   author: JnHs
   ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Introduction
 durationInMinutes: 2

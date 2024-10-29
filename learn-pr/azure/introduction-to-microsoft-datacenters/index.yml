@@ -3,15 +3,15 @@ uid: learn.discover-how-microsoft-datacenters-work
 metadata:
   title: Introduction to Microsoft Datacenters
   description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
+  ms.service: azure-cloud-services-classic
 title: Introduction to Microsoft Datacenters
-summary: In this module, you'll learn the physical infrastructure of the Microsoft Cloud and its datacenters, which will help customers make better decisions when considering and planning for cloud infrastructure and workloads.
+summary: In this module, you learn about the physical infrastructure of the Microsoft Cloud and its datacenters, which helps you make better decisions when considering and planning for cloud infrastructure and workloads.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Explain major offerings in the Microsoft Cloud
   - Explain Microsoft datacenter basic components
   - Explain Azure geographies, regions, availability zones, and networking

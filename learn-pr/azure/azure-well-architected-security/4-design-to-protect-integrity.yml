@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.design-to-protect-integrity
+title: Design to protect integrity
+metadata:
+  title: Design to protect integrity
+  description: Learn how to employ strategies to protect the integrity of the data and resources within your workload.
+  ms.date: 12/04/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-design-to-protect-integrity.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is a reason to adopt threat scanning in your supply chain'
+    choices:
+    - content: 'Scanning can help detect vulnerabilities in your code.'
+      isCorrect: true
+      explanation: 'Correct. If attackers breach your systems, the threat of them injecting malicious code is serious.'
+    - content: 'Scanning prevents attackers from exploiting vulnerabilities in your software.'
+      isCorrect: false
+      explanation: "Incorrect. Scanning doesn't prevent attackers from exploiting vulnerabilities in your software, but it helps you identify vulnerabilities before you release code to production."
+    - content: 'Scanning ensures that your code is free of vulnerabilities.'
+      isCorrect: false
+      explanation: "Incorrect. Scanning doesn't ensure that your code is free of vulnerabilities, but it helps you identify vulnerabilities before you release code to production."
+    - content: "Scanning ensures that your code is free of malware." 
+      isCorrect: false
+      explanation: "Incorrect. Scanning doesn't ensure that your code is free of malware, but it helps you identify malware before you release code to production."
+  - content: 'Which of these are examples of cryptographic controls?'
+    choices:
+    - content: "Using Azure SQL Database's firewall function to block access to a database."
+      isCorrect: false
+      explanation: "Incorrect. A firewall isn't a cryptographic control, it is a network control."
+    - content: 'Using code signing and encryption.'
+      isCorrect: true
+      explanation: 'Correct. Code signing and encryption are examples of cryptographic controls.'
+    - content: 'Using Azure Policy to enforce security baselines.'
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy isn't a cryptographic control, it is a policy-based control."
+    - content: 'Using Microsoft Sentinel to scan your environment.'
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel isn't a cryptographic control, it is a security information and event management (SIEM) tool."
+  - content: 'How did Contoso ensure that their report backup is immutable?'
+    choices:
+    - content: "They automatically move the report to Archive Storage after it's created."
+      isCorrect: false
+      explanation: "Incorrect. Although Archive Storage is immutable, Contoso's report isn't automatically moved to Archive Storage."
+    - content: 'The backup is only kept on VM disk storage.'
+      isCorrect: false
+      explanation: "Incorrect. VM disk storage is not immutable, and the backup isn't kept only on VM disk storage."
+    - content: 'The report is automatically deleted after 30 days.'
+      isCorrect: false
+      explanation: "Incorrect. The report isn't automatically deleted after 30 days, and even if it was, that wouldn't make it immutable."
+    - content: 'The report is backed up to Azure Storage using the write-once-read-many (WORM) feature.'
+      isCorrect: true
+      explanation: "Correct. The WORM feature of Azure Storage ensures that the report is immutable."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.implement-sap-architecture-on-azure-virtual-machines-run-linux
+title: Lab - Implement SAP architecture on Azure Linux Virtual Machines
+metadata:
+  title: Lab - Implement SAP architecture on Azure Linux Virtual Machines
+  description: "Lab - Implement SAP architecture on Azure Linux virtual machines"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 100
+content: |
+  [!include[](includes/3-implement-sap-architecture-on-azure-virtual-machines-run-linux.md)]

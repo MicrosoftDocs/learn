@@ -3,12 +3,11 @@ uid: learn.azure.secure-azure-arc-enabled-servers.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 02/02/2022
+  description: Check your knowledge about what you learned.
+  ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -27,15 +26,15 @@ quiz:
       explanation: "Incorrect, you can use Microsoft Defender for Servers with Azure Arc-enabled servers."
       isCorrect: false
     - content: "Microsoft Defender for Containers"
-      explanation: "Correct, you can't use Microsoft Defender for Containers with Azure Arc-enabled servers. You can use Microsoft Defender for Containers with Azure Arc-enabled Kubernetes"
+      explanation: "Correct, you can't use Microsoft Defender for Containers with Azure Arc-enabled servers. You can use Microsoft Defender for Containers with Azure Arc-enabled Kubernetes."
       isCorrect: true
   - content: "Which of the following security services helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments?"
     choices:
     - content: "Microsoft Sentinel"
-      explanation: "Incorrect, Microsoft offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities"
+      explanation: "Incorrect, Microsoft offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities."
       isCorrect: false
     - content: "Microsoft Defender for Cloud"
-      explanation: "Correct, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments"
+      explanation: "Correct, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments."
       isCorrect: true
     - content: "Microsoft Defender for Servers"
       explanation: "Incorrect, Microsoft Defender for Servers offers enhanced security for your hybrid and multicloud machines."
@@ -49,7 +48,7 @@ quiz:
       explanation: "Correct, Microsoft Sentinel offers security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities."
       isCorrect: true
     - content: "Microsoft Defender for Cloud"
-      explanation: "Incorrect, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments"
+      explanation: "Incorrect, Microsoft Defender for Cloud helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments."
       isCorrect: false
     - content: "Microsoft Defender for Servers"
       explanation: "Incorrect, Microsoft Defender for Servers offers enhanced security for your hybrid and multicloud machines."
@@ -65,7 +64,7 @@ quiz:
     - content: "Azure Automation"
       explanation: "Incorrect, Azure Automation can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
-    - content: "Azure Log Analytics Workspace"
+    - content: "Azure Log Analytics workspace"
       explanation: "Correct, the Azure Arc-enabled server must be connected to a Log Analytics workspace to onboard to these Azure services."
       isCorrect: true
     - content: "Azure Function"

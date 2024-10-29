@@ -3,11 +3,10 @@ uid: learn.monitor-report-aad-security-events.4-visualize-reports-dashboards
 metadata:
   title: Set up dashboards and reports to visualize log data
   description: Set up dashboards and reports to visualize log data.
-  ms.date: 04/22/2022
+  ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Set up dashboards and reports to visualize log data
 durationInMinutes: 6
 content: |
@@ -20,9 +19,9 @@ quiz:
     - content: Log Analytics workspace
       isCorrect: false
       explanation: You use a Log Analytics workspace to create queries that you can pin to a dashboard, but you don't create a dashboard in the Log Analytics workspace.
-    - content: Azure Active Directory
+    - content: Microsoft Entra ID
       isCorrect: false
-      explanation: You use data that's collected in your Azure Active Directory tenant to create queries you can pin to a dashboard, but you don't create a dashboard in Azure Active Directory.
+      explanation: You use data that's collected in your Microsoft Entra tenant to create queries you can pin to a dashboard, but you don't create a dashboard in Microsoft Entra ID.
     - content: Your Azure subscription
       isCorrect: true
       explanation: A dashboard is created for your Azure subscription. You can pin resources from different Azure resources to a dashboard you create for your Azure subscription.

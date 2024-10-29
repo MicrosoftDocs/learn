@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.integrate-custom-saas-single-sign
-title: Integrate custom SaaS apps for single-sign-on
+title: Integrate custom SaaS apps for single sign-on
 metadata:
-  title: Integrate custom SaaS apps for single-sign-on
-  description: "Integrate custom SaaS apps for single-sign-on"
-  ms.date: 02/07/2023
+  title: Integrate custom SaaS apps for single sign-on
+  description: "Integrate custom SaaS apps for single sign-on"
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+durationInMinutes: 20
 content: |
   [!include[](includes/5-integrate-custom-saas-single-sign.md)]

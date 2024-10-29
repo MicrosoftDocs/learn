@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.query-data-kql-database-microsoft-fabric
+metadata:
+  title: Query data in a KQL database in Microsoft Fabric
+  description: "This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets."
+  ms.date: 05/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Query data in a KQL database in Microsoft Fabric
+summary: This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Use basic syntax and of Kusto Query Language (KQL).
+
+  -   Understand the basics of the Queryset canvas.
+
+  -   Describe how to execute T-SQL queries in the Queryset canvas.
+
+  -   Describe how to convert T-SQL queries into KQL queries.
+prerequisites: |
+  -   An understanding of Microsoft Fabric navigation between services.
+
+  -   A basic understanding of Real-Time Intelligence.
+
+  -   A basic understanding of streaming data sources.
+
+  -   A basic understanding of OneLake.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+units:
+- learn.wwl.query-data-kql-database-microsoft-fabric.introduction
+- learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
+- learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
+- learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
+- learn.wwl.query-data-kql-database-microsoft-fabric.exercise
+- learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
+- learn.wwl.query-data-kql-database-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge

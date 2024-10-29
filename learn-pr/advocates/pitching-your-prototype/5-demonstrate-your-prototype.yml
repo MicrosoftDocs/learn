@@ -5,10 +5,9 @@ metadata:
   title: Demonstrate your prototype
   description: This unit teaches you how to demonstrate a prototype.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 07/23/2024
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-demonstrate-your-prototype.md)]
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: "Your key user flows."
       isCorrect: true
-      explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers will experience."
+      explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers experience."
     - content: "The security features of your app."
       isCorrect: false
     - content: "The social sharing features of your app."

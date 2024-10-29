@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-client-server-communication-postgresql.exercise-explore-client-tools
+title: Exercise - Explore PostgreSQL with client tools
+metadata:
+  title: Exercise - Explore PostgreSQL with client tools
+  description: "Exercise - Explore PostgreSQL with client tools."
+  ms.date: 05/12/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-explore-client-tools.md)]

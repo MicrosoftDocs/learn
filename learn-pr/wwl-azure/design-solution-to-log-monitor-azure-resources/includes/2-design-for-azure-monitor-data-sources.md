@@ -40,7 +40,7 @@ You reviewed how Azure Monitor uses Logs and Metrics. Now consider how to implem
    - Operating system data is from the Windows or Linux virtual machines that host your app.
    - Azure resource data is from the operations of an Azure resource, such as a web app or a load balancer.
    - Azure subscription data is about your subscription, including information about Azure health and availability.
-   - Azure tenant data describes your Azure organization-level services, such as Azure Active Directory.
+   - Azure tenant data describes your Azure organization-level services, such as Microsoft Entra ID.
 
 - **Consider queries on Logs data**. Write log queries to analyze your collected data for Tailwind Traders. For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 

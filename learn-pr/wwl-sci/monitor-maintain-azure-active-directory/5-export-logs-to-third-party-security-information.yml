@@ -4,13 +4,10 @@ title: Export logs to third-party security information and event management syst
 metadata:
   title: Export logs to third-party security information and event management system
   description: "Export logs to third-party security information and event management system"
-  ms.date: 02/16/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-export-logs-to-third-party-security-information.md)]

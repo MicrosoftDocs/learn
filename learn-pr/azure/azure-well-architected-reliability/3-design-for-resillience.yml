@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-reliability.design-for-resilience
+title: Design for resilience
+metadata:
+  title: Design for resilience
+  description: Learn how to design your workload to be resilient to malfunction, platform outages, performance degradations and other faults.
+  ms.date: 12/18/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-design-for-resilience.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What capabilities should you design into your workload to ensure it’s s resilient to malfunctions?"
+    choices:
+    - content: "Monitoring and alerting"
+      isCorrect: false
+      explanation: "Monitoring and alerting are important, but they cannot minimize the effects of malfunctions on your workload. They can only help you detect them and respond to them."
+    - content: "Health modeling"
+      isCorrect: false
+      explanation: "Health modeling helps you understand the health of your workload, but it can’t  minimize the effects of malfunctions on your workload."
+    - content: "Threat analysis"
+      isCorrect: false
+      explanation: "Threat analysis helps you understand the threats to your workload, but it can’t minimize the effects of malfunctions on your workload."
+    - content: "Self-preservation"
+      isCorrect: true
+      explanation: "Correct. Self-preservation capabilities can minimize the effects of malfunctions on your workload by introducing mechanisms that help you operate in a degraded state when malfunctions occur."
+  - content: "What is an example of adding redundancy in your workload?"
+    choices:
+    - content: "Increasing the retention policy for your workload's data"
+      isCorrect: false
+      explanation: "Increasing the retention policy for your workload's data can be a good practice, but it isn’t  an example of adding redundancy."
+    - content: "Purchasing reserved instances for your workload's compute resources"
+      isCorrect: false
+      explanation: "Purchasing reserved instances for your workload's compute resources can help with cost optimization, but it isn’t an example of adding redundancy."
+    - content: "Enabling Transparent Data Encryption (TDE) for your workload's data"
+      isCorrect: false
+      explanation: "TDE can help protect your workload's data, but it isn’t an example of adding redundancy."
+    - content: "Enabling geo-replication for your workload's data"
+      isCorrect: true
+      explanation: "Correct. Enabling geo-replication for your workload's data is an example of adding redundancy by creating a secondary database that can be used as a failover instance."
+  - content: "The workload team needs to understand how a DDoS attack may affect the workload. What should the team do before any testing?"
+    choices:
+      - content: Research the Microsoft SLAs for the Azure services used by the workload.
+        isCorrect: false
+        explanation: "The Microsoft SLAs help you understand guaranteed reliability metrics, but not how a DDoS attack may affect the workload."
+      - content: "Enable autoscaling for the workload's compute resources."
+        isCorrect: false
+        explanation: "Autoscaling may help you respond to a DDoS attack, but you need to understand how a DDoS attack may affect the workload before enabling autoscaling."
+      - content: "Ensure that the Cosmos DB account used by the workload has geo-replication enabled."
+        isCorrect: false
+        explanation: "Geo-replication is a good practice for redundancy, but it doesn’t help you understand how a DDoS attack may affect the workload."
+      - content: "Perform a failure mode analysis."
+        isCorrect: true
+        explanation: "Correct. A failure mode analysis helps you understand how a DDoS attack may affect the workload."

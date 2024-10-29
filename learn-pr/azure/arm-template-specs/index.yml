@@ -4,14 +4,15 @@ metadata:
   moduleType: standard
   title: Publish libraries of reusable infrastructure code by using template specs
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
-  ms.date: 09/30/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 01/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
 title: Publish libraries of reusable infrastructure code by using template specs
 summary: |
-  Reuse and share your ARM templates across your organization. Publish template specs that deploy resources pre-configured for your organization's requirements. Control access and safely update template specs by using versions.
+  Reuse and share your ARM templates across your organization. Publish template specs that deploy resources preconfigured for your organization's requirements. Control access and safely update template specs by using versions.
 abstract: |
   After completing this module, you'll be able to:
     - Create and deploy template specs
@@ -21,7 +22,7 @@ prerequisites: |
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need the following items installed locally:
+  To follow along with the exercises in the module, you need the following items installed locally:
   - [Visual Studio Code](https://code.visualstudio.com)
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools

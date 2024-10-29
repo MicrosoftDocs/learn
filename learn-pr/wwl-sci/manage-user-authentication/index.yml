@@ -3,13 +3,13 @@ uid: learn.wwl.manage-user-authentication
 metadata:
   title: Manage user authentication
   description: "There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs."
-  ms.date: 04/06/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Manage user authentication
-summary: There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs.
+summary: There are multiple options for authentication in Microsoft Entra ID. Learn how to implement and manage the right authentications for users based on business needs.
 abstract: |
   By the end of this module, you will be able to:
   - Administer authentication methods (FIDO2 / Passwordless)
@@ -19,7 +19,7 @@ abstract: |
   - Implement and manage tenant restrictions
 prerequisites: |
   None
-iconUrl: /training/achievements/manage-user-authentication.svg
+iconUrl: /learn/achievements/manage-user-authentication.svg
 levels:
 - advanced
 roles:
@@ -28,12 +28,8 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- microsoft-identity-platform
-- windows-hello
-- windows-hello-for-business
 - entra
-- entra-workload-identities
+- entra-id
 subjects:
 - identity-access
 units:

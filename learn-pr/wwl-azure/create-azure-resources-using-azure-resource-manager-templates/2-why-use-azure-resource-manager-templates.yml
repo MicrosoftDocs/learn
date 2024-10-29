@@ -4,13 +4,11 @@ title: Why use Azure Resource Manager templates?
 metadata:
   title: Why use Azure Resource Manager templates?
   description: "Why use Azure Resource Manager templates?"
-  ms.date: 01/10/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom: N/A, devx-track-arm-template
+durationInMinutes: 3
 content: |
   [!include[](includes/2-why-use-azure-resource-manager-templates.md)]

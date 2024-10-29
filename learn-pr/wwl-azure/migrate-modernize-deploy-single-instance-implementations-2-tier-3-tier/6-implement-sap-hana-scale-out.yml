@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.implement-sap-hana-scale-out
+title: Implement SAP HANA scale-out
+metadata:
+  title: Implement SAP HANA scale-out
+  description: "Implement SAP HANA scale-out"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-implement-sap-hana-scale-out.md)]

@@ -4,13 +4,10 @@ title: Configure Privileged Identity Management for Azure resources
 metadata:
   title: Configure Privileged Identity Management for Azure resources
   description: "Configure Privileged Identity Management for Azure resources"
-  ms.date: 02/07/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/3-configure-privileged-identity-management-for-azure-resources.md)]

@@ -4,11 +4,11 @@ title: Exercise - "Hello World!"
 metadata:
   title: Exercise - "Hello World!"
   description: Write your first line of code to output a message to a console window with PowerShell.
-  ms.date: 03/29/2023
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 5
 azureSandbox: true
 interactive: powershell

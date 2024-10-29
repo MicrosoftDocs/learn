@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-databases.consider-security-recommendations-for-blo
 title: Consider security recommendations for Blob storage
 metadata:
   title: Consider security recommendations for Blob storage
-  description: "Consider security recommendations for Blob storage"
-  ms.date: 04/23/2023
+  description: "Review multiple recommendations designed to improve security when using Blob storage."
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-consider-security-recommendations-blob-storage.md)]

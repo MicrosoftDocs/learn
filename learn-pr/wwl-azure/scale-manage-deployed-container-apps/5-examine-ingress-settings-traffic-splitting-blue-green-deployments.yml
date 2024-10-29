@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-manage-deployed-container-apps.examine-ingress-settings-traffic-splitting-blue-green-deployments
+title: Examine ingress settings for traffic-splitting and blue-green deployments
+metadata:
+  title: Examine ingress settings for traffic-splitting and blue-green deployments
+  description: "Examine ingress settings for traffic-splitting and blue-green deployments"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-examine-ingress-settings-traffic-splitting-blue-green-deployments.md)]

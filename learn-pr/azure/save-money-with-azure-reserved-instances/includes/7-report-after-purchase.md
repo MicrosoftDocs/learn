@@ -1,15 +1,15 @@
-This unit covers some of the key reports that you might want to create or use after you buy a reservation to analyze and perform reporting.
+This unit covers some of the key reports that you might want to create or use to analyze and perform reporting after you buy a reservation.
 
 It's important to understand two concepts: actual cost data and amortized cost data.
 
-- Actual cost data shows the resource usage costs as zero when reservation is applied to the usage. This data also has reservation transactions in it. For example, if a resource’s on-demand cost is 1 USD per hour and a reservation applies to it, the cost will show as zero in the actual cost data.
-- Amortized data provides the effective cost of a resource when a reservation applies to it. For example, if a resource’s on-demand cost is 1 USD per hour, and a reservation provides 50% discount to the resource, then the effective cost will show as .5 USD per hour in the amortized data.
+- *Actual cost data* shows the resource usage costs as zero when reservation is applied to the usage. This data also has reservation transactions in it. For example, if a resource’s on-demand cost is $1 per hour and a reservation applies to it, the cost shows as zero in the actual cost data.
+- *Amortized cost data* provides the effective cost of a resource when a reservation applies to it. For example, if a resource’s on-demand cost is $1 per hour, and a reservation provides 50% discount to the resource, then the effective cost will show as $0.5 per hour in the amortized data.
 
 You can review reservation savings in Power BI. Amortized cost data is only available to Enterprise Agreement and Microsoft Customer Agreement customers.
 
 ## Chargeback data
 
-The following sections describe different ways to prepare for reservation chargeback.
+The following sections describe different ways to prepare for reservation chargebacks.
 
 ### Chargeback with cost analysis
 
@@ -19,7 +19,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 1. Change the view from **Actual cost** to **Amortized cost**.
 
-    ![Example showing Amortized cost selection.](../media/7-change-amortized-cost.png)
+    :::image type="content" source="../media/7-change-amortized-cost.png" alt-text="Screenshot showing Amortized cost selection.":::
 
 1. Apply the following filters:
 
@@ -28,7 +28,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 1. Select filters and views as follows. The view shows the monetary value of the reservation consumption by a subscription, resource group, or resource. You can use the view to charge back for reservation use.
 
-    [![Example showing cost analysis filters.](../media/7-set-cost-analysis-filters.png)](../media/7-set-cost-analysis-filters.png#lightbox)
+    :::image type="content" source="../media/7-set-cost-analysis-filters.png" alt-text="Screenshot showing cost analysis filters.":::
 
 ## Create a chargeback report from usage details data
 
@@ -39,7 +39,7 @@ You can create a chargeback report to charge internal cost centers using amortiz
 - Tags
 - Subscription
 
-To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select the **Amortized Data** in the dimension. You can also get the amortized data [using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select **Amortized Data** in the dimension. You can also get the amortized data [by using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
 
 ### Chargeback with Power BI
 
@@ -62,8 +62,8 @@ The unused reservation view in cost analysis shows the monetary value of underut
     - Set **Granularity** to **Monthly**.
     - Set the chart type to **Table**.
 
-    [![Example showing selections in cost analysis to view unused reservations.](../media/7-unused-reservation-selections.png)](../media/7-unused-reservation-selections.png#lightbox)
+    :::image type="content" source="../media/7-unused-reservation-selections.png" alt-text="Screenshot showing selections in cost analysis to view unused reservations.":::
 
-The same unused reservation information is in usage details data. To view it, get amortized data and then apply a filter on ChargeType = **unusedreservation** to get the reservation waste.
+The same unused reservation information is in usage details data. To view it, get amortized data and then apply a filter on **Charge type** = **unusedreservation** to get the reservation waste.
 
-The same data is available in [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
+The same data is available in the [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).

@@ -3,16 +3,16 @@ uid: learn.wwl.plan-transition-modern-endpoint-management
 metadata:
   title: MD-102 3-Plan a transition to modern endpoint management
   description: "Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices."
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Plan a transition to modern endpoint management
 summary: Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices.
 abstract: |
   After completing this module, you should be able to:
-  - Identify usage scenarios for Azure AD join.
+  - Identify usage scenarios for Microsoft Entra join.
   - Identify workloads that you can transition to Intune.
   - Identify prerequisites for co-management.
   - Identify considerations for transitioning to modern management.

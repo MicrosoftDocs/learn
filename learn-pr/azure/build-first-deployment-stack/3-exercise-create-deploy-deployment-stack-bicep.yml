@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-deployment-stack.exercise-create-deploy-deployment-stack
+title: Exercise - Create and deploy a deployment stack with Bicep
+metadata:
+  title: Exercise - Create and deploy a deployment stack with Bicep
+  description: Learn how to create and deploy a deployment stack with Bicep.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 10
+content: | 
+  [!include[](includes/3-exercise-create-deploy-deployment-stack-bicep.md)]

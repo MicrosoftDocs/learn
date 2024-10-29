@@ -1,7 +1,7 @@
 Hybrid, multicloud, and edge deployment approaches often lead to increases in operating costs. The unexpected increase in cost is the result of duplicated or disparate operations, with one set of operating practices per cloud provider. **Unified operations** is the intentional approach of maintaining one set of tools and processes to consistently manage each cloud provider through a common set of governance and operations management practices.
 
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#understand-and-minimize-costs-through-unified-operations)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#understand-and-minimize-costs-through-unified-operations)
 -->
 
 ## Understand and minimize costs through unified operations
@@ -12,9 +12,9 @@ Hybrid and multicloud strategies lead many decision makers to incorrectly conclu
 
 Organizations can modernize and optimize overall operations using a simple approach to overcoming risks, overhead cost increases, or challenges related to staffing core functions. The _Unified operations_ approach provides hybrid, multicloud, and edge cloud strategies that reduce short-term duplication and long-term strain on your technology staff. This article describes the provider-neutral approach of using unified operations to extend a single enterprise control plane across distributed assets in hybrid, multicloud, and edge environments.
 
-More articles will follow that outline the Azure approach to unified operations: delivering [governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/manage) across heterogeneous hybrid, multicloud, and edge environments. The overall goal in an Azure-specific approach to unified operations is to inventory, organize, and govern IT assets anywhere, on any infrastructure. This centralized enterprise control plane provides a consistent cloud operations management experience across on-premises, multicloud, and edge environments.
+More articles will follow that outline the Azure approach to unified operations: delivering [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) across heterogeneous hybrid, multicloud, and edge environments. The overall goal in an Azure-specific approach to unified operations is to inventory, organize, and govern IT assets anywhere, on any infrastructure. This centralized enterprise control plane provides a consistent cloud operations management experience across on-premises, multicloud, and edge environments.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-platform)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-platform)
 -->
 
 
@@ -25,7 +25,7 @@ Successful hybrid, multicloud, and edge strategies begin with a primary cloud pl
 Whether located in a public or private cloud, your primary cloud platform hosts your operational processes, along with a set of defined cloud facilities. In Azure, those facilities are [Azure regions](https://azure.microsoft.com/global-infrastructure/), whereas on-premises, they could be datacenters. These facilities host the cloud services necessary to manage core operations, and to support other workloads hosted on the platform. Your primary cloud platform also includes a series of controls designed to support operations within that cloud.
 
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#define-unified-operations)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#define-unified-operations)
 -->
 
 
@@ -37,7 +37,7 @@ When you implement unified operations, a single enterprise control plane extends
 
 When identifying your primary cloud platform, it's important to ensure that cloud has the necessary toolsets to manage all the clouds in your portfolio. Many cloud platforms were designed and built before operations required hybrid, multicloud, or edge deployment options. Insufficient capabilities in current operation tools can require operations teams to replicate processes-using different cloud controls to manage cloud services across each cloud platform. If your cloud strategy calls for hybrid, multicloud, or edge deployment options **and** your primary cloud platform doesn't support them, consider a platform that can deploy the requisite functionalities for unified operations.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations)
 -->
 
 
@@ -52,7 +52,7 @@ If you use an inconsistent approach to implementing unified operations, it can m
 
 If your current primary cloud provider doesn't offer the required capabilities for unified operations, consider optimizing your operations and processes using a modern cloud provider.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations-decomposed)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations-decomposed)
 -->
 
 
@@ -62,19 +62,19 @@ The following image shows the individual components required for unified operati
 
 ![Diagram that shows the components required to deliver unified operations (outlined in the remainder of this article).](../media/unified-operations.png)
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#customer-processes)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#customer-processes)
 -->
 
 
 ## Customer processes
 
-The primary objective of unified operations is to create as much process consistency as possible across deployments. No cloud service provider can reach 100% feature parity across all hybrid, multicloud, and edge deployments. But the provider should be able to deliver baseline feature sets common across all deployments, so that your [governance](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/manage) processes remain consistent.
+The primary objective of unified operations is to create as much process consistency as possible across deployments. No cloud service provider can reach 100% feature parity across all hybrid, multicloud, and edge deployments. But the provider should be able to deliver baseline feature sets common across all deployments, so that your [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) processes remain consistent.
 
 ![Diagram that shows the customer processes that unified operations support.](../media/unified-operations-customer-processes.png)
 
 Most commonly, customers require the ability to deliver consistency within their defined governance and operations management processes. To meet long-term requirements, your unified operations solution needs to scale to meet these common processes, specified in the following section.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-governance-processes-tasks)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-governance-processes-tasks)
 -->
 
 
@@ -86,7 +86,7 @@ Most commonly, customers require the ability to deliver consistency within their
 -   **Identity baseline:** Enforce authentication and authorization across user identity and access, and identify and provide risk-mitigation guidance for potential identity-related business risks.
 -   **Deployment acceleration:** Drive consistency using templates, automation, and pipelines (for deployments, configuration alignment, and reusable assets). Establish policies to ensure compliant, consistent, and repeatable resource deployment and configuration.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-operations-management-processes-tasks)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-operations-management-processes-tasks)
 -->
 
 
@@ -95,14 +95,14 @@ Most commonly, customers require the ability to deliver consistency within their
 -   **Inventory and visibility:** Account for, and ensure reporting for all assets, and collect and monitor your inventory's run state in enterprise-grade environments.
 -   **Optimized operations:** Track, patch, and optimize supported resources and minimize business interruption risks from configuration drift or vulnerabilities from inconsistent patch management.
 -   **Protection and recovery:** Backup, business continuity, and disaster recovery best practices reduce the duration and impact of unpreventable outages.
--   [Platform operations](https://learn.microsoft.com/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization): Specialized operations for common technology platforms such as SQL databases, virtual desktops, and SAP (for medium to high criticality workloads).
--   [Workload operations](https://learn.microsoft.com/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization): Specialized operations (for high priority/mission-critical workloads) with greater operations requirements.
+-   [Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization): Specialized operations for common technology platforms such as SQL databases, virtual desktops, and SAP (for medium to high criticality workloads).
+-   [Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization): Specialized operations (for high priority/mission-critical workloads) with greater operations requirements.
 
 Platform and workload operations both run an equivalent _iterative process_ to improve system design, automate remediation, scale changes with a service catalog, and continuously improve system design, automation, and scale.
 
 Your primary cloud platform should be able to provide the required technical capabilities and tooling to automate processes, and reach the goals described in the previous section for governance and operations management. Your unified operations solution should enable you to extend these processes across all hybrid, multicloud, and edge deployments.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-controls)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-controls)
 -->
 
 
@@ -112,7 +112,7 @@ Your primary cloud platform should include important features to facilitate or a
 
 ![Diagram that shows the common cloud controls, outlined in the following bullets.](../media/unified-operations-cloud-controls.png)
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#basic-features)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#basic-features)
 -->
 
 
@@ -124,7 +124,7 @@ All these basic features are required in order to deliver a cloud adoption plan,
 -   **Templatize, automate, and extend tooling** for consistent deployments.
 -   **Create access and security boundaries** to protect deployed assets.
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#enhanced-features)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#enhanced-features)
 -->
 
 
@@ -136,7 +136,7 @@ You'll likely need most, if not all, of the following enhanced features to opera
 -   **Security and compliance auditing and automation**
 -   **Tracking and reporting on applications and dependencies**
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#automated-controls)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#automated-controls)
 -->
 
 
@@ -156,7 +156,7 @@ It's because they're implemented as primary controls that the features above are
 -   Multiply cost inefficiencies for your organization
 -   Incur significant capital expenditures in the early phase of the cloud adoption journey
 <!-- 
-[](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#hybrid-multicloud-gateway-and-enterprise-control-plane)
+[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#hybrid-multicloud-gateway-and-enterprise-control-plane)
 -->
 
 
@@ -164,9 +164,9 @@ It's because they're implemented as primary controls that the features above are
 
 To extend your primary cloud controls, configure an extension or gateway. This type of extension lets your controls see and interact with resources that are deployed outside the cloud platform and creates one control plane and greater visibility across disparate, heterogeneous environments.
 
-In Microsoft's cloud platforms, [Azure Arc](https://learn.microsoft.com/azure/azure-arc/overview) is the extension. Azure Arc extends the same controls and processes you use to govern your Azure cloud to other public and private clouds and the edge. It's these cloud controls that enable a unified operations approach to consistent governance and operations management processes across heterogeneous on-premises, multicloud, and edge environments.
+In Microsoft's cloud platforms, [Azure Arc](/azure/azure-arc/overview) is the extension. Azure Arc extends the same controls and processes you use to govern your Azure cloud to other public and private clouds and the edge. It's these cloud controls that enable a unified operations approach to consistent governance and operations management processes across heterogeneous on-premises, multicloud, and edge environments.
 
-Unified operations extends the reach of [Azure Resource Manager (ARM)](https://learn.microsoft.com/azure/azure-resource-manager/management/overview), the _operating system_ of Azure. ARM reaches outside Azure to bring scattered resources inside Azure and represent them. By bringing Azure services and management to any kind of infrastructure, the unified operations approach extends Azure's reach, and enables new hybrid and multicloud solutions.
+Unified operations extends the reach of [Azure Resource Manager (ARM)](/azure/azure-resource-manager/management/overview), the _operating system_ of Azure. ARM reaches outside Azure to bring scattered resources inside Azure and represent them. By bringing Azure services and management to any kind of infrastructure, the unified operations approach extends Azure's reach, and enables new hybrid and multicloud solutions.
 
 When you use a unified operations approach, you can organize, govern, and secure any environment anywhere, with centralized visibility, operations, and compliance. Build cloud applications, anywhere, at scale, with standardized application services, from deployment to monitoring. Deploy Azure services anywhere, faster, consistently, and at scale with always-up-to-date Azure Arc enabled services.
 

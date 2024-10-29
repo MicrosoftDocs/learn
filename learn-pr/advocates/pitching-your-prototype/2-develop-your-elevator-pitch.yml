@@ -5,10 +5,9 @@ metadata:
   title: Develop your elevator pitch
   description: This unit teaches you how to develop your elevator pitch.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 07/23/2024
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-develop-your-elevator-pitch.md)]

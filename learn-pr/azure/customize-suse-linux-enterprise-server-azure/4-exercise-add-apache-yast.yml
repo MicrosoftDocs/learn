@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: Exercise - Install Apache with YaST
   description: Use YaST to install Apache on your SLES virtual machine.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-add-apache-yast.md)]

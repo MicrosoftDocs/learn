@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
+title: Integrate software composition analysis checks into pipelines
+metadata:
+  title: Integrate software composition analysis checks into pipelines
+  description: "Integrate software composition analysis checks into pipelines"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-integrate-software-composition-analysis-checks-into-pipelines.md)]

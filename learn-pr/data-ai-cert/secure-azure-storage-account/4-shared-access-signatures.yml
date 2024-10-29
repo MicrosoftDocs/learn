@@ -4,11 +4,10 @@ title: Understand shared access signatures
 metadata:
   title: Understand shared access signatures
   description: "Understand shared access signatures"
-  ms.date: 03/25/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

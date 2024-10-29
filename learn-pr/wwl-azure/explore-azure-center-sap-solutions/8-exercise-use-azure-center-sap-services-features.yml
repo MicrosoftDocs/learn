@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-center-sap-solutions.exercise-use-azure-center-sap-services-features
+title: Exercise - Use Azure Center for SAP solutions features
+metadata:
+  title: Exercise - Use Azure Center for SAP solutions features
+  description: "Use Azure Center for SAP solutions features. Explore the ACSS system visualization, monitoring, and management across Azure and SAP systems."
+  ms.date: 08/01/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-exercise-use-azure-center-sap-services-features.md)]

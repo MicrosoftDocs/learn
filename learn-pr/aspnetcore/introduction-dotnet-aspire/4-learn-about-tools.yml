@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.learn-about-tools
+title: Learn about .NET Aspire tools
+metadata:
+  title: Learn about .NET Aspire tools
+  description: In this unit, you'll learn about the extra tools that .NET Aspire adds to your cloud-native app and how they make it easier to build and debug them.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-learn-about-tools.md)]

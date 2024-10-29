@@ -2,12 +2,13 @@
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.design-an-azure-batch-job-to-run-parallel-task
 metadata:
   title: Design an Azure Batch job to run your parallel task
-  description: Design an Azure Batch job to run your parallel task
-  ms.date: 05/06/2019
+  description: Design an Azure Batch job to run your parallel task.
+  ms.date: 04/04/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Design an Azure Batch job to run your parallel task
 durationInMinutes: 5
 content: |

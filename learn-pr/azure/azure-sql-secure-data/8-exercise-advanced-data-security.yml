@@ -3,11 +3,10 @@ uid: learn.azure-sql-secure-data.8-exercise-advanced-data-security
 metadata:
   title: Exercise - Manage security and Microsoft Defender for Cloud
   description: Exercise - Manage security and Microsoft Defender for Cloud
-  ms.date: 03/15/2023
+  ms.date: 11/13/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Manage security and Microsoft Defender for Cloud
 durationInMinutes: 10
 azureSandbox: true

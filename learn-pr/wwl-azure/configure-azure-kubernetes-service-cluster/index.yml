@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-kubernetes-service-cluster
+metadata:
+  title: Configure an Azure Kubernetes Service cluster
+  description: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+title: Configure an Azure Kubernetes Service cluster
+summary: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
+abstract: |
+  After completing this module, you'll be able to:
+  -   Enable and configure Azure Policy for Azure Kubernetes Service.
+  -   Assign policy definitions to an Azure Kubernetes Service cluster.
+  -   Use namespaces to logically isolate workloads and resources.
+  -   Enable host-based encryption for Azure Kubernetes Service agent nodes.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-azure-kubernetes-service-cluster.introduction
+- learn.wwl.configure-azure-kubernetes-service-cluster.understand-azure-policy-kubernetes-clusters
+- learn.wwl.configure-azure-kubernetes-service-cluster.install-azure-policy-add-azure-kubernetes-service
+- learn.wwl.configure-azure-kubernetes-service-cluster.assign-policy-definition-azure-kubernetes-cluster
+- learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-azure-kubernetes-service
+- learn.wwl.configure-azure-kubernetes-service-cluster.create-custom-namespace
+- learn.wwl.configure-azure-kubernetes-service-cluster.knowledge-check
+- learn.wwl.configure-azure-kubernetes-service-cluster.summary
+badge:
+  uid: learn.wwl.configure-azure-kubernetes-service-cluster.badge

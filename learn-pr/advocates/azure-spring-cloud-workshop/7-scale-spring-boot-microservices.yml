@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-spring-cloud-workshop.7-scale-spring-boot-microservices
-title: Scale Spring Boot microservices
+title: Learn how to scale Spring Boot microservices
 metadata:
   title: Scale Spring Boot microservices
-  description: Scale Spring Boot microservices
+  description: Learn how to scale Spring Boot microservices.
   author: judubois
   ms.author: judubois
-  ms.date: 03/04/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/10/2023
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-12022020
 durationInMinutes: 3

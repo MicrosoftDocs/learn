@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 05/26/2021
-  author: wwlpublish
-  ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 2
 content: |

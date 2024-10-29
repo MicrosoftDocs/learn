@@ -2,12 +2,12 @@
 uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
-  description: "Describe performance monitoring"
+  description: Describe performance monitoring
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Describe performance monitoring
 summary: Compare Azure, and on-premises tools for monitoring and measuring performance. Determine critical metrics. Understand the purpose of a baseline for comparative analysis. Configure extended event sessions for tracing activities.
 abstract: |

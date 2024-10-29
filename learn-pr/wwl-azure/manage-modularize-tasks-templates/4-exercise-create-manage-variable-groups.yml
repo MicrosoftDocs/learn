@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-variable-groups
+title: Exercise - create and manage variable groups
+metadata:
+  title: Exercise - create and manage variable groups
+  description: "Exercise - create and manage variable groups"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-create-manage-variable-groups.md)]

@@ -7,8 +7,7 @@ metadata:
   ms.date: 09/25/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7
 content: |
@@ -27,14 +26,14 @@ quiz:
     - content: "**Owner** or **Contributor**"
       isCorrect: true
       explanation: "Owner or Contributor role is required to configure and register the Azure Migrate appliance."
-  - content: "Where does the appliance store Azure AD app information and appliance configuration settings?"
+  - content: "Where does the appliance store Microsoft Entra app information and appliance configuration settings?"
     choices:
     - content: "Azure Storage account"
       isCorrect: false
       explanation: "An Azure Storage account is needed to store virtual machine data during migration."
     - content: "Azure Key Vault"
       isCorrect: true
-      explanation: "The appliance stores Azure AD app information and appliance configuration settings in an Azure Key Vault."
+      explanation: "The appliance stores Microsoft Entra app information and appliance configuration settings in an Azure Key Vault."
     - content: "The appliance setup file"
       isCorrect: false
       explanation: "The appliance setup file is used to download the virtual machine image used to set up the appliance."

@@ -4,17 +4,15 @@ title: Design and implement AD CS
 metadata:
   title: Design and implement AD CS
   description: "Design and implement AD CS"
-  ms.date: 08/04/2021
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
+  ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/3-design-implement-ad-cs.md)]
 quiz:
-  title: "Quick review"
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following statements regarding installation of the AD CS Enterprise Root CA is correct?"
     choices:

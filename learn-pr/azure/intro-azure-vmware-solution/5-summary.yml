@@ -3,12 +3,11 @@ uid: learn.azure.intro-azure-vmware-solution.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this unit, we'll review what you've learned about Azure VMware Solution.
-  ms.date: 03/13/2023
+  description: In this unit, we review what you learned about Azure VMware Solution.
+  ms.date: 10/23/2024
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: phschmit-07282021
 durationInMinutes: 2

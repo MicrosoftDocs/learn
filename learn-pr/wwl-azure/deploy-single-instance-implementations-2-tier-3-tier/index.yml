@@ -3,23 +3,32 @@ uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier
 metadata:
   title: Deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
   description: "SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/25/2023
+  ms.date: 08/01/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: human-only
 title: Deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
 summary: SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure.
 abstract: |
   After completing this module, you will be able to:
-  - Explore deployment methodologies.
-  - Deploy via Azure Resource Manager templates.
-  - Prepare Azure virtual machines for a manual installation of SAP HANA.
-  - Implement SAP HANA scale-out.
+
+  -   Explore deployment methodologies.
+
+  -   Deploy via Azure Resource Manager templates.
+
+  -   Prepare Azure virtual machines for a manual installation of SAP HANA.
+
+  -   Implement SAP HANA scale-out.
 prerequisites: |
   Before taking this training, you should complete:
-  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
-  - SAP HANA or NetWeaver training.
+
+  -   Azure Administrator (AZ-104) or Azure Infrastructure Solutions (AZ-305) exam.
+
+  -   SAP HANA or NetWeaver training.
 iconUrl: /training/achievements/1-deploy-single-instance-implementations-2-tier-and-3-tier.svg
 levels:
 - advanced

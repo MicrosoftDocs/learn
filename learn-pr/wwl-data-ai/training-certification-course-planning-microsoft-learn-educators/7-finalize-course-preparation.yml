@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.finalize-course-preparation
+title: Finalize course preparation
+metadata:
+  title: Finalize course preparation
+  description: "Finalize course preparation"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-finalize-course-preparation.md)]

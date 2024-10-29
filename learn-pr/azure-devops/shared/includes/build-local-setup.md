@@ -48,6 +48,9 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
+> [!NOTE]
+> If you receive any errors about filenames being too long when you clone your repository, try cloning the repository in a folder that doesn't have a long name or is deeply nested.
+
 ### Clone your fork locally
 
 You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.

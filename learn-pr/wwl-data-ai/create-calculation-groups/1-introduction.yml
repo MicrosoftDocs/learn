@@ -6,8 +6,8 @@ metadata:
   description: "Introduction"
   ms.date: 01/05/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

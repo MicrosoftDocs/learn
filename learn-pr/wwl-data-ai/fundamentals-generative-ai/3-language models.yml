@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.language-models
+title: What are language models?
+metadata:
+  title: What are language models?
+  description: Learn about the transformer architecture of large language models.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 5/15/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-language-models.md)]

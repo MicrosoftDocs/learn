@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content  
   title: Identify the decision criteria
   description: Understand key factors that determine Azure NetApp Files throughput performance and limits.
-  ms.date: 04/06/2021
+  ms.date: 06/07/2024
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-decision-criteria.md)]

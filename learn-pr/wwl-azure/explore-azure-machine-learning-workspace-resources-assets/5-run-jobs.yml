@@ -3,12 +3,13 @@ uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.run-job
 title: Train models in the workspace
 metadata:
   title: Train models in the workspace
-  description: "Train models in the workspace"
-  ms.date: 01/05/2023
+  description: Train models in the workspace
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/09/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/5-run-jobs.md)]

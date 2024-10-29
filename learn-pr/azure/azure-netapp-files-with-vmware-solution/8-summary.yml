@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-with-vmware-solution.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary unit for the Introduction to using Azure NetApp Files with Azure VMware Solution module.
+  ms.date: 07/03/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

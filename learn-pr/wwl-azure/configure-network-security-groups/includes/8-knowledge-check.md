@@ -2,7 +2,7 @@ Your company is migrating several sites to Azure. You're responsible for impleme
 
 - The infrastructure team has two network security group security rules for inbound traffic to the back-end web servers. There's an allow rule with a priority of 200, and a deny rule with a priority of 150.
 
-- The IT team wants to apply new and pre-existing Azure service tags for the virtual machine IP addresses. 
+- The IT team wants to apply service tags for the virtual machine IP addresses. 
 
 - You're exploring how to use default rules to apply security to inbound traffic from virtual machines within your virtual network.
 

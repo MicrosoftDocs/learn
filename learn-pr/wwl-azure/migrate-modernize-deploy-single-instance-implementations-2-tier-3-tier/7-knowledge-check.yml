@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which deployment method would be most suitable for deploying similar infrastructure to Azure, other cloud providers and on-premises datacenters?"
+    choices:
+    - content: "Microsoft Azure PowerShell cmdlets"
+      isCorrect: false
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+    - content: "Microsoft Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+    - content: "Hashicorp Terraform"
+      isCorrect: true
+      explanation: "Correct. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+  - content: "Which deployment method might be more convenient for administrators with a Linux background?"
+    choices:
+    - content: "Microsoft Azure PowerShell cmdlets"
+      isCorrect: false
+      explanation: "Incorrect. For administrators with Linux background, it might be more convenient to use Azure CLI as an alternative to PowerShell. The Azure CLI integrates closely with Bash shell."
+    - content: "Microsoft Azure CLI"
+      isCorrect: true
+      explanation: "Correct. For administrators with Linux background, it might be more convenient to use Azure CLI as an alternative to PowerShell. The Azure CLI integrates closely with Bash shell."
+    - content: "Hashicorp Terraform"
+      isCorrect: false
+      explanation: "Incorrect. For administrators with Linux background, it might be more convenient to use Azure CLI as an alternative to PowerShell. The Azure CLI integrates closely with Bash shell."
+  - content: "Which kind of deployment can be carried out using the SAP HANA Database Lifecycle Manager (HDBLCM) tool?"
+    choices:
+    - content: "HANA-based NetWeaver deployments"
+      isCorrect: true
+      explanation: "Correct. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
+    - content: "NetWeaver AnyDB deployments"
+      isCorrect: false
+      explanation: "Incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."
+    - content: "The HDBLCM tool can carry out both types of deployments"
+      isCorrect: false
+      explanation: "Incorrect. For HANA-based NetWeaver deployments, use the SAP Software Provisioning Manager (SWPM), followed by HANA installation; or use the SAP HANA Database Lifecycle Manager (HDBLCM) tool, and then install NetWeaver. For NetWeaver AnyDB deployments, follow the standard (2-tier) or distributed (3-tier) NetWeaver installation options in SAP Software Provisioning Manager (SWPM)."

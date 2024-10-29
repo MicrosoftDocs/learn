@@ -4,11 +4,12 @@ title: Deploy a Docker image to an Azure Container Instance
 metadata:
   title: Deploy a Docker image to an Azure Container Instance
   description: Describe the purpose of an Azure Container Instance and the Azure Container Registry. Describe how to add an image to an Azure Container Registry. Explain how to create an Azure Container Instance from an image in the Azure Container Registry. Show how to run the application using the Azure Container Instance.
-  ms.date: 03/03/2022
-  author: MGoedtel
-  ms.author: magoedte
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 06/28/2024
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 5
 content: |
   [!include[](includes/6-deploy-docker-image-to-container-instance.md)]

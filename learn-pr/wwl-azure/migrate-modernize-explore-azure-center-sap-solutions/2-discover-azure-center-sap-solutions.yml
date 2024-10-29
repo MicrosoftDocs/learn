@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.discover-azure-center-sap-solutions
+title: Discover Azure Center for SAP solutions
+metadata:
+  title: Discover Azure Center for SAP solutions
+  description: "Discover Azure Center for SAP solutions."
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-discover-azure-center-sap-solutions.md)]

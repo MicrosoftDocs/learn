@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-testing-progressive-exposure-deployment.what-ab-testing
+title: What is A/B testing?
+metadata:
+  title: What is A/B testing?
+  description: "What is A/B testing?"
+  ms.date: 05/27/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-ab-testing.md)]

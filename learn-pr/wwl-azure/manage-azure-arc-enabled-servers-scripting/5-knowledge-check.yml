@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/11/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator needs to install the Connected Machine agent on multiple remote machines simultaneously. Which command should they run?"
+    choices:
+    - content: "New PSSession ComputerName myMachineName1, myMachineName2 Connect AzConnectedMachine ResourceGroupName myResourceGroup Location region PSSession sessions."
+      isCorrect: false
+      explanation: "Incorrect. This command is missing the third machine name in the list."
+    - content: "New PSSession ComputerName myMachineName Connect AzConnectedMachine ResourceGroupName myResourceGroup Location region PSSession sessions."
+      isCorrect: false
+      explanation: "Incorrect. This command is used for installing the agent on a single machine, not multiple machines."
+    - content: "New PSSession ComputerName myMachineName1, myMachineName2, myMachineName3 Connect AzConnectedMachine ResourceGroupName myResourceGroup Location region PSSession sessions."
+      isCorrect: true
+      explanation: "Correct. This command installs the agent on multiple machines by specifying each machine name separated by a comma."
+  - content: "A system administrator is tasked with installing the Connected Machine Agent to a collection of devices using a script. After completing the installation, how can the administrator verify a successful connection to Azure Arc?"
+    choices:
+    - content: "By running a diagnostic test on the network."
+      isCorrect: false
+      explanation: "Incorrect. A network diagnostic test doesn't confirm the connection to Azure Arc."
+    - content: "By checking the status of the devices in the device manager."
+      isCorrect: false
+      explanation: "Incorrect. The device manager doesn't provide information about the connection to Azure Arc."
+    - content: "By monitoring the script status and checking the visibility of onboarded servers in the Azure portal."
+      isCorrect: true
+      explanation: "Correct. The script status monitoring indicates if the script has successfully installed the Connected Machine Agent. Onboarded servers will also be visible in the Azure portal."
+  - content: "An administrator in a large IT company needs to manage both Windows and Linux machines efficiently, ensuring they're all connected to Azure Arc. What solution can automate the process, reducing the risk of errors?"
+    choices:
+    - content: "Using a third-party software not integrated with Azure."
+      isCorrect: false
+      explanation: "Incorrect. Third-party software may not ensure correct configuration and connection to Azure Arc."
+    - content: "Using a manual method for each machine."
+      isCorrect: false
+      explanation: "Incorrect. Manual methods are time consuming and prone to errors."
+    - content: "Automating the process of enabling Azure Arc for Windows or Linux machines."
+      isCorrect: true
+      explanation: "Correct. Automating the process ensures all machines are correctly configured and connected to Azure Arc."

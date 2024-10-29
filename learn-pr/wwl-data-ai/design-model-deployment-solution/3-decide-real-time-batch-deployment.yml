@@ -3,12 +3,13 @@ uid: learn.wwl.design-model-deployment-solution.decide-real-time-batch-deploymen
 title: Decide on real-time or batch deployment
 metadata:
   title: Decide on real-time or batch deployment
-  description: "Decide on real-time or batch deployment"
-  ms.date: 01/03/2023
+  description: Decide on real-time or batch deployment
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

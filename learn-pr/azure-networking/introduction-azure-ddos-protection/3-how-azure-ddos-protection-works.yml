@@ -4,11 +4,10 @@ title: How Azure DDoS Protection works
 metadata:
   title: How Azure DDoS Protection works
   description: Learn about the features of DDoS Protection and how it works.
-  ms.date: 03/08/2023
+  ms.date: 05/22/2024
   author: AbdullahBell
   ms.author: abell
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-how-azure-ddos-protection-works.md)]

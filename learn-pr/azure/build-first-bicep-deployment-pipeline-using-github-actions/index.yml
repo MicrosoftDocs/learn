@@ -4,28 +4,30 @@ metadata:
   moduleType: standard
   title: Build your first Bicep deployment workflow by using GitHub Actions
   description: Build a basic deployment workflow for Bicep infrastructure as code templates by using Azure DevOps and GitHub Actions.
+  ms.service: azure-resource-manager
+  manager: jasongroce
   ms.date: 01/17/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: engagement-fy23
+  ms.devlang: bicep
 title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
-  Create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. Configure your workflow to run on a schedule or when your configuration changes.
+  In this module, you'll create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. You'll also learn to configure your workflow to run on a schedule or when your configuration changes.
 abstract: |
   After completing this module, you'll be able to:
-    - Automate Bicep deployments by using a workflow in GitHub Actions
-    - Set up a workload identity to authenticate a workflow to Azure
-    - Select an appropriate workflow trigger and set of tasks for a Bicep deployment
+    - Automate Bicep deployments by using a workflow in GitHub Actions.
+    - Set up a workload identity to authenticate a workflow to Azure.
+    - Select an appropriate workflow trigger and set of tasks for a Bicep deployment.
 prerequisites: |
   You should be familiar with using:
 
-  - Bicep, including creating and deploying basic files.
-  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
+  - Bicep, including creating and deploying basic files
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub
 
-  To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups and Azure Active Directory applications.
+  To work through the exercises in the module, you'll need an Azure account with the ability to create resource groups and Azure Active Directory applications.
 
   You'll also need the following installed locally:
 

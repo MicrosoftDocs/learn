@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-hdinsight-aks-data-transformation-flink.create-flink-cluster  
+title: Create an Apache Flink cluster
+metadata:
+  unitType: learning-content  
+  title: Create an Apache Flink cluster
+  description: Create an Apache Flink cluster.
+  ms.date: 02/23/2024 
+  author: sairamyeturi
+  ms.author: sairamyeturi
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/create-flink-cluster.md)]

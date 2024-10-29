@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.design-to-protect-confidentiality
+title: Design to protect confidentiality
+metadata:
+  title: Design to protect confidentiality
+  description: Learn how to design your workload to protect confidential data safely and securely.
+  ms.date: 12/04/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-design-to-protect-confidentiality.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is an example of a user with a need to have access to confidential customer data?'
+    choices:
+    - content: 'A customer service representative who needs to resolve customer issues.'
+      isCorrect: true
+      explanation: 'Correct. A customer service representative may have a legitimate need to access customer data to resolve customer issues.'
+    - content: 'A marketing employee who sends out marketing emails to customers.'
+      isCorrect: false
+      explanation: 'Incorrect. A marketing employee does not have a legitimate need to access customer data.'
+    - content: 'A sales executive who needs to create a report for management.'
+      isCorrect: false
+      explanation: 'Incorrect. A sales executive does not have a legitimate need to access customer data.'
+    - content: 'A finance employee who needs to create invoices for customers.'  
+      isCorrect: false
+      explanation: 'Incorrect. A finance employee does not have a legitimate need to access customer data.'
+  - content: 'True of false: data classification is a process that you should perform only once.'
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Data classification is an ongoing process that you should perform regularly."
+    - content: 'False'
+      isCorrect: true
+      explanation: 'Correct. Data classification is an ongoing process that you should perform regularly.'
+  - content: 'What is an example of how Contoso applied encryption to protect data integrity?'
+    choices:
+    - content: "They used Azure Disk Encryption to encrypt data on their virtual machines."
+      isCorrect: false
+      explanation: "Incorrect, the workload doesn't use virtual machines."
+    - content: 'All of the data was encrypted by default.'
+      isCorrect: false
+      explanation: 'Incorrect, the storage accounts were not encrypted by default.'
+    - content: 'They used Azure Storage Service Encryption to encrypt data in their storage accounts.'
+      isCorrect: true
+      explanation: "Correct, the team encrypted the storage account used for their DR backup."
+    - content: 'They used Azure Key Vault to encrypt data in their storage accounts.'
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault is used to store encryption keys, not to encrypt data."

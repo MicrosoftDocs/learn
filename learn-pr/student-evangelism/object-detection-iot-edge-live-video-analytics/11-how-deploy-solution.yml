@@ -4,12 +4,10 @@ title: How to deploy your solution
 metadata:
   title: How to deploy your solution
   description: In this section, we help learner how to deploy the edge solution.
-  ms.date: 05/04/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 4 
 content: |
   [!include[](includes/11-how-deploy-solution.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-identity-services.exercise-integrate-microsoft-entra-id-sap-hana
+title: Integrate Microsoft Entra ID with SAP HANA
+metadata:
+  title: Integrate Microsoft Entra ID with SAP HANA
+  description: "Integrate Microsoft Entra ID with SAP HANA"
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-integrate-microsoft-entra-id-sap-hana.md)]

@@ -3,11 +3,10 @@ uid: learn.azure.intro-to-arc-for-servers.summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/13/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Summary
 durationInMinutes: 2

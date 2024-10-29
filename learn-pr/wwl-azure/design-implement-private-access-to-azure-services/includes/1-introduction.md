@@ -8,5 +8,5 @@ In this module, you will:
  -  Design and configure Private Endpoints
  -  Integrate a Private Link with DNS and on-premises clients
  -  Create, configure, and provide access to Service Endpoints
- -  Configure VNET integration for App Service
+
  

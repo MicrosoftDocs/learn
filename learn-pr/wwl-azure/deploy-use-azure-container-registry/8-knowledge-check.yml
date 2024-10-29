@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-use-azure-container-registry.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team needs to automate the creation and teardown of environments to deliver secure and stable application hosting platforms. Which Azure service can help them achieve this?"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service is a platform-as-a-service (PaaS) offering that allows users to build, deploy, and scale web apps and APIs."
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Machines is an infrastructure-as-a-service (IaaS) offering that allows users to deploy and manage virtual machines in the cloud."
+    - content: "Azure Kubernetes Service"
+      isCorrect: true
+      explanation: "Correct. Azure Kubernetes Service (AKS) enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+  - content: "A user wants to create a private registry service for building, storing, and managing container images and related artifacts. They want to use the Azure portal to create an Azure Container Registry instance. What is the purpose of creating an Azure Container Registry instance?"
+    choices:
+    - content: "To create a public registry service for building, storing, and managing container images and related artifacts."
+      isCorrect: false
+      explanation: "Incorrect. The user wants to create a private registry service, not a public one."
+    - content: "To create a virtual machine instance with the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. The user wants to create a container registry instance, not a virtual machine instance."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: true
+      explanation: "Correct. An Azure Container Registry instance allows users to create a private registry service for building, storing, and managing container images and related artifacts. It also enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

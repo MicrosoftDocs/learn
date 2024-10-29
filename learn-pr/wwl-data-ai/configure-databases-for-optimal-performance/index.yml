@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-databases-for-optimal-performance
 metadata:
   title: Configure databases for optimal performance
-  description: "Configure databases for optimal performance"
+  description: Configure databases for optimal performance
   ms.date: 05/05/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure databases for optimal performance
 summary: Implement tasks for both IaaS and PaaS to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database. Control database-level configuration options. Explore Intelligent Query Processing.
 abstract: |

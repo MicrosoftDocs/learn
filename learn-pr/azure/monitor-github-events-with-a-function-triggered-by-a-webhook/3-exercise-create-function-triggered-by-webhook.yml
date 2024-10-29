@@ -3,11 +3,10 @@ uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.ex
 metadata:
   title: Exercise - Create an Azure function triggered by a webhook
   description: Exercise - Create an Azure function triggered by a webhook
-  ms.date: 04/30/2019
+  ms.date: 10/27/2022
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Create an Azure function triggered by a webhook
 durationInMinutes: 6
 azureSandbox: true

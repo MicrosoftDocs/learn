@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
+metadata:
+  title: Create Real-Time Dashboards with Microsoft Fabric
+  description: "Real-Time Dashboards can fetch data from various sources, provide visual representations, and update automatically. This dashboard should be easy to use, accessible, and secure. It should also allow for data exploration, filtering, and drill-down capabilities. This scenario is common in many industries where real-time data analysis is crucial for decision-making."
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Create Real-Time Dashboards with Microsoft Fabric
+summary: In this module, you’ll explore the user-friendly Real-Time Dashboard in Microsoft Fabric. This dashboard offers an auto-refresh feature for data, supports parameterization, and allows for a multi-page dashboarding experience without requiring any coding. It also integrates with Copilot for managing underlying query sets. This creates a seamless and efficient user experience.
+abstract: |
+  By the end of this module, you're able to:
+
+  -   Create a Real-Time Dashboard in Microsoft Fabric.
+
+  -   Understand some of its advanced features.
+
+  -   Apply some best practices for effective use.
+
+  -   Have hands-on experience in a lab exercise.
+prerequisites: '- Familiarity with Microsoft Fabric.'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- data-engineer
+products:
+- fabric
+units:
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.introduction
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.get-started-with-real-time-dashboards
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.advanced-features
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.real-time-dashboards-best-practices
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.exercise
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
+- learn.wwl.create-real-time-dashboards-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.badge

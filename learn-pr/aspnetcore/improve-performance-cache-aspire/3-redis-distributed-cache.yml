@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-performance-cache-aspire.redis-distributed-cache
+title: Using a Redis distributed cache
+metadata:
+  title: Using a Redis distributed cache
+  description: In this unit, you'll learn how to cache information in a distributed Redis cache so that it can be used by multiple microservices in your app.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-redis-distributed-cache.md)]

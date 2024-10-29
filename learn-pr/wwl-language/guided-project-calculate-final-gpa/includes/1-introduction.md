@@ -1,7 +1,7 @@
 
 
 
-Developers perform some tasks nearly every day. Tasks including declaring string and numeric variables, assigning and extracting values, and performing calculations are routine, but essential. Equally important is the task of communicating results to the application user. Mastering the ability to apply these skills to solve a given problem is something that every developer must learn to do.
+Developers perform some tasks nearly every day. Tasks including declaring string and numeric variables, assigning and extracting values, and performing calculations are not only routine, but essential. Equally important is the task of communicating results to the application user. Mastering the ability to apply these skills to solve a given problem is something that every developer must learn to do.
 
 Suppose you're a teacher's assistant at a university. You're tasked with developing an application that helps calculate students' grade point average. The application uses the students' grades and credit hours taken to calculate their overall GPA. You're also provided a required format for reporting the students' GPA.
 

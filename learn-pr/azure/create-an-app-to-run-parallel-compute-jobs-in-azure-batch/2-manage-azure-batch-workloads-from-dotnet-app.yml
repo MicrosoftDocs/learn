@@ -4,11 +4,12 @@ title: Manage Azure Batch workloads from a .NET app
 metadata:
   title: Manage Azure Batch workloads from a .NET app
   description: Learn about the components of an Azure Batch workload, from pools, nodes, jobs and tasks.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/2-manage-azure-batch-workloads-from-dotnet-app.md)]

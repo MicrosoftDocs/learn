@@ -4,11 +4,12 @@ title: What is Translator?
 metadata:
   title: What is Translator?
   description: What is Translator?
-  ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/06/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-translator.md)]
+  [!INCLUDE[](includes/2-what-is-translator.md)]

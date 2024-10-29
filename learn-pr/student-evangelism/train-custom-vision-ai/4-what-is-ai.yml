@@ -3,11 +3,12 @@ uid: learn.student-evangelism.train-custom-vision-ai.4-what-is-ai
 metadata:
   title: Understand artificial intelligence and Custom Vision
   description: This unit is a high-level explanation of artificial intelligence as it applies to object recognition within images.
-  ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Understand artificial intelligence and Custom Vision
 durationInMinutes: 6

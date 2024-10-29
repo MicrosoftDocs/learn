@@ -6,7 +6,7 @@ Here is a brief summary of the important concepts learned in this module:
 
 - With third-party identity providers, user credentials are stored by the provider and are never seen by the application.
 
-- Cloud service providers offer identity-provider services, as do popular social-media companies such as Facebook and Twitter.
+- Cloud service providers offer identity-provider services, as do popular social-media companies such as Facebook and X.
 
 - Identity information regarding users within an organization (for example, a company) are usually stored in directory services such as Active Directory.
 

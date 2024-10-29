@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Knowledge check for intro to Azure DNS Private Resolver."
-  ms.date: 03/17/2023
+  description: Check what you learned about Azure DNS Private Resolver.
+  ms.date: 01/31/2024
   author: greg-lindsay
   ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -25,18 +24,18 @@ quiz:
     - content: "Azure DNS Private Resolver is a DNS management tool."
       isCorrect: false
       explanation: "Incorrect: Azure DNS Private Resolver isn't a DNS management tool."
-  - content: "What is the best description for Ruleset?"
+  - content: "What is the best description for a forwarding ruleset?"
     choices:
-    - content: "Ruleset can be understood as a group of forwarding rules."
+    - content: "A forwarding ruleset can be understood as a group of forwarding rules."
       isCorrect: true
-      explanation: "Correct: This is exactly the definition of Ruleset."
-    - content: "Ruleset is the definition of DNS Policies you can use within Azure DNS."
+      explanation: "Correct: This is exactly the definition of a forwarding ruleset."
+    - content: "A forwarding ruleset is the definition of DNS Policies you can use within Azure DNS."
       isCorrect: false
-      explanation: "Incorrect: This isn't the definition of a Ruleset."
-    - content: "A Ruleset contains matching domain with target DNS server IP addresses."
+      explanation: "Incorrect: This isn't the definition of a forwarding ruleset."
+    - content: "A forwarding ruleset contains matching domain with target DNS server IP addresses."
       isCorrect: false
-      explanation: "Incorrect: The Forwarding rules are what contains matching domain with target DNS server IP addresses "
-  - content: "What the DNS resolver's outbound endpoint does?"
+      explanation: "Incorrect: The forwarding rules are what contains matching domain with target DNS server IP addresses "
+  - content: "What does the DNS resolver's outbound endpoint do?"
     choices:
     - content: "Provides naming resolution for Azure endpoints."
       isCorrect: false
@@ -44,6 +43,6 @@ quiz:
     - content: "It receives the name resolution request from Azure & on-premises network and resolve names."
       isCorrect: false
       explanation: "Incorrect: This is what the Inbound Endpoint does."
-    - content: The DNS resolver’s outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
+    - content: "The DNS resolver's outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
       isCorrect: true
       explanation: "Correct: This is an accurate explanation of what the DNS resolver's outbound endpoint does."

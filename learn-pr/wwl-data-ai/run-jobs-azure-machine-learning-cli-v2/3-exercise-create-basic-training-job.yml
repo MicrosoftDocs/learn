@@ -2,13 +2,14 @@
 uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.exercise-create-basic-training-job
 title: 'Exercise: Create a basic training job'
 metadata:
-  title: 'Exercise: Create a basic training job'
+  title: "Exercise: Create a basic training job"
   description: "Exercise: Create a basic training job"
-  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

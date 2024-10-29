@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.examine-microsoft-learn-educators-page
+title: Examine the Microsoft Learn for Educators page
+metadata:
+  title: Examine the Microsoft Learn for Educators page
+  description: "Examine the Microsoft Learn for Educators page"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-examine-microsoft-learn-educators-page.md)]

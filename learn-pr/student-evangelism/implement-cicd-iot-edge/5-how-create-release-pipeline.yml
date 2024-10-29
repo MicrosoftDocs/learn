@@ -4,12 +4,10 @@ title: How to create a release pipeline with a smoke test
 metadata:
   title: How to create a release pipeline with a smoke test
   description: In this section, we help the learner to create a release pipeline with smoke test.
-  ms.date: 06/23/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.date: 07/20/2024
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
 durationInMinutes: 3 
 content: |
   [!include[](includes/5-how-create-release-pipeline.md)]

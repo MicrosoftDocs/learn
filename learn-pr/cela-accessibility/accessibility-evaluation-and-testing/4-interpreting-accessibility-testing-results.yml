@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-evaluation-and-testing.interpreting-accessibility-testing-results
+title: Interpreting accessibility testing results
+metadata:
+  title: Interpreting accessibility testing results
+  description: This content is a part of the "Accessibility evaluation and testing" module.
+  ms.date: 04/15/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-interpreting-accessibility-testing-results.md)]

@@ -2,15 +2,14 @@
 uid: learn.wwl.create-composed-form-recognizer-model.exercise-model
 title: 'Exercise: Create a composed model'
 metadata:
-  title: 'Exercise: Create a composed model'
+  title: "Exercise: Create a composed model"
   description: "Exercise: Create a composed model"
-  ms.date: 09/22/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 03/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-model.md)]

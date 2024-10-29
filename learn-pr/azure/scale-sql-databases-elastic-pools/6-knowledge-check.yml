@@ -2,25 +2,27 @@
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.knowledge-check
 metadata:
   title: Knowledge Check
-  description: Knowledge Check
-  ms.date: 5/03/2019
+  description: Check what you learned about SQL elastic pools.
+  ms.date: 12/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Knowledge Check
 durationInMinutes: 3
 quiz:
 
   questions:
 
-  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool."
+  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool?"
     choices:
-    - content: "You're hosting several SQL servers to track election data for a regional election."
+    - content: "You host several SQL servers to track election data for a regional election."
       isCorrect: false
-      explanation: "This scenario may not benefit from elastic pools as the demand on the servers is likely to increase uniformly and the servers would likely spike at similar times."
-    - content: "You're running a popular gaming website with customer data stored in an Azure SQL server."
+      explanation: "This scenario might not benefit from elastic pools as the demand on the servers is likely to increase uniformly and the servers would likely spike at similar times."
+    - content: "You run a popular gaming website with customer data stored in an Azure SQL server."
       isCorrect: false
       explanation: "Adding a single database to an elastic pool won't provide any cost or performance benefits."
     - content: "You manage a cloud platform that tracks inventory for car dealerships."

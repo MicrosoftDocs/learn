@@ -3,11 +3,10 @@ uid: learn.design-a-hybrid-network-architecture.3-expressroute-for-hybrid-networ
 metadata:
   title: Use Azure ExpressRoute for hybrid networks
   description: Explore on-premises hybrid connectivity by using Azure ExpressRoute, get an overview of the components available in ExpressRoute, and walk through a reference architecture that supports this topology.
-  ms.date: 01/14/2020
+  ms.date: 02/16/2024
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Use Azure ExpressRoute for hybrid networks
 durationInMinutes: 10
@@ -16,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is a valid connectivity model for Azure ExpressRoute?'
+  - content: 'Which of the following connectivity models is valid for Azure ExpressRoute?'
     choices:
-    - content: A cross-network connection
+    - content: A cross-network connection.
       isCorrect: false
       explanation: Cross-network connections and ExpressRoute are supported, but the correct model is via a colocated facility through a Cloud Exchange provider.
-    - content: A point-to-point Ethernet network
+    - content: A point-to-point Ethernet network.
       isCorrect: true
-      explanation: A point-to-point Ethernet connection, connects on-premises datacenters and offices to Azure through a point-to-point Ethernet link.
-    - content: Azure network-to-network connectivity
+      explanation: A point-to-point Ethernet connection connects on-premises datacenters and offices to Azure through a point-to-point Ethernet link.
+    - content: Azure network-to-network connectivity.
       isCorrect: false
       explanation: VNet-to-VNet connections can be configured in ExpressRoute, but it isn't a connectivity model.
-    - content: A point-to-site network
+    - content: A point-to-site network.
       isCorrect: false
       explanation: A point-to-site network is a connectivity model for a VPN gateway.
   - content: 'What is the maximum available bandwidth for an ExpressRoute circuit?'
@@ -46,15 +45,15 @@ quiz:
       explanation: A 100-Gbps bandwidth circuit is currently the maximum available with ExpressRoute.
   - content: 'What would you use a VPN gateway for?'
     choices:
-    - content: To connect to a CloudExchange provider
+    - content: To connect to a CloudExchange provider.
       isCorrect: false
       explanation: CloudExchange providers are used in a colocated ExpressRoute model. A VPN gateway isn't used.
-    - content: For ExpressRoute to connect to on-premises networks
+    - content: For ExpressRoute to connect to on-premises networks.
       isCorrect: false
       explanation: A VPN gateway is a separate resource to Azure ExpressRoute.
-    - content: As the cloud connector for the ExpressRoute circuit
+    - content: As the cloud connector for the ExpressRoute circuit.
       isCorrect: false
       explanation: The ExpressRoute circuit connects to the cloud through an ExpressRoute gateway. 
-    - content: As a coexisting connection for failover
+    - content: As a coexisting connection for failover.
       isCorrect: true
       explanation: A VPN gateway can be configured as a failover route if there's a loss of connectivity to an ExpressRoute circuit.

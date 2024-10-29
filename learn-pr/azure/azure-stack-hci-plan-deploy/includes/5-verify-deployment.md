@@ -23,21 +23,21 @@ You can run cluster validation by using the:
 
 - Validate Cluster option in Windows Admin Center.
 - Validate a Configuration Wizard in Failover Cluster Manager.
-- **Test-Cluster** Windows PowerShell cmdlet.
+- `Test-Cluster` Windows PowerShell cmdlet.
 
 > [!CAUTION]
 > Running the Validate Cluster option in Windows Admin Center requires that you enable Credential Security Service Provider (CredSSP) authentication for the duration of the validation process. You should disable it afterwards for security reasons. You can enable and disable CredSSP directly from Windows Admin Center.
 
 ## Validate the network operational state by using Test-NetStack
 
-Test-NetStack is a PowerShell-based testing tool that you download from GitHub at https://github.com/microsoft/Test-NetStack. Test-NetStack performs ICMP, TCP, and RDMA traffic testing of networks and can help identify potential network fabric and host misconfiguration or operational instability.
+Test-NetStack is a PowerShell-based testing tool that you [download from GitHub](https://github.com/microsoft/Test-NetStack). Test-NetStack performs ICMP, TCP, and RDMA traffic testing of networks and can help identify potential network fabric and host misconfiguration or operational instability.
 
 Test-NetStack can validate the various network data paths, testing native, synthetic, and hardware offloaded (RDMA) data paths for issues with:
 
-- Connectivity
-- Packet fragmentation
-- Low throughput
-- Congestion
+- Connectivity.
+- Packet fragmentation.
+- Low throughput.
+- Congestion.
 
 ## Validate cluster performance by using synthetic workloads
 

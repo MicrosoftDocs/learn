@@ -4,11 +4,10 @@ title: Evaluate upgrades and migrations in modern transitioning
 metadata:
   title: Evaluate upgrades and migrations in modern transitioning
   description: "Evaluate upgrades and migrations in modern transitioning"
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-evaluate-upgrades-migrations-modern-transitioning.md)]

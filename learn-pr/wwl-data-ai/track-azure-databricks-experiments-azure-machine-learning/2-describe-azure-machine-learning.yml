@@ -7,8 +7,8 @@ metadata:
   ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.collection: wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

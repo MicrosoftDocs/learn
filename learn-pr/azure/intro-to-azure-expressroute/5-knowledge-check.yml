@@ -4,19 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 02/09/2022
+  ms.date: 12/22/2023
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: Your employer Adatum has branch office locations in Auckland and Seattle. Each branch office location has an ExpressRoute connection configured. You want to ensure that data transferred from servers in Auckland to servers in Seattle uses the Azure global network backbone rather than being transferred across the public internet. Which ExpressRoute feature would you use to achieve this goal?
+    - content: Your employer Adatum has branch office locations in Auckland and Seattle. Each branch office location has an ExpressRoute connection configured. You want to ensure that data transferred from servers in Auckland to servers in Seattle use the Azure global network backbone instead of being transferred across the public internet. Which ExpressRoute feature would you use to achieve this goal?
       choices:
         - content: Site-to-site VPN
           isCorrect: false
@@ -42,13 +41,13 @@ quiz:
       choices:
         - content: Azure ExpressRoute
           isCorrect: false
-          explanation: Incorrect. Azure ExpressRoute isn't an appropriate option for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.      
+          explanation: Incorrect. Azure ExpressRoute isn't an appropriate option for individual hosts that need to securely access Azure resources, but only connect intermittently to on-premises networks.      
         - content: Site-to-site VPN
           isCorrect: false
-          explanation: Incorrect. A site-to-site VPN isn't an appropriate option for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.      
+          explanation: Incorrect. A site-to-site VPN isn't an appropriate option for individual hosts that need to securely access Azure resources, but only connect intermittently to on-premises networks.      
         - content: Point-to-site VPN
           isCorrect: true
-          explanation: Correct. A point-to-site VPN is an appropriate for individual hosts that need to securely access Azure resources, but which only intermittently connect to on-premises networks.
+          explanation: Correct. A point-to-site VPN is an appropriate for individual hosts that need to securely access Azure resources, but only connect intermittently to on-premises networks.
           
 
 

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.apply-networking-concepts-to-windows-containers.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz: 
+  title: Check your knowledge
+  questions: 
+    - content: "Which types of virtual switches are used in container networking?"
+      choices:
+        - content: "Standard, Hybrid"
+          isCorrect: false
+          explanation: "Incorrect. The terms standard and hybrid are used to describe an Azure Kubernetes Service (AKS) implementation with Windows containers, but these options aren't types of virtual switches."
+        - content: "NAT, Transparent, Overlay"
+          isCorrect: true
+          explanation: "Correct. Windows containers on Kubernetes require Azure container network interface (CNI) plugins. The Azure CNI plugin is an overlay virtual switch network solution. Two examples include Flannel Overlay and Project Calico."
+        - content: "Public, Private"
+          isCorrect: false
+          explanation: "Incorrect. You can implement network policies to control public and private access to your Windows containers, but these options aren't types of virtual switches."
+    - content: "What two types of runtime network isolation are supported for Windows containers?"
+      choices:
+        - content: "Virtual machine, Virtual switch"
+          isCorrect: false
+          explanation: "Incorrect. In a networking configuration, Windows containers function like virtual machines, where each container has a virtual network adapter connected to a virtual switch. These items aren't types of network isolation."
+        - content: "Kernel mode, User mode"
+          isCorrect: false
+          explanation: "Incorrect. The processor in a standard Windows computer has a kernel mode and a user mode. These items aren't types of network isolation."
+        - content: "Process, Hyper-V"
+          isCorrect: true
+          explanation: "Correct. Windows containers support Process and Hyper-V network isolation. Under process isolation, containers on the same host support isolation through the namespace, resource control settings, and other process functions. Under Hyper-V isolation, each container runs in an optimized virtual machine that provides hardware-level isolation between the container and the host."
+    - content: "What's the purpose of an ingress controller in a Kubernetes networking configuration?"
+      choices:
+        - content: "Configure traffic routing for Kubernetes services"
+          isCorrect: true
+          explanation: "Correct. When you use ingress rules with an ingress controller, you can configure a single IP address to route network traffic to multiple services in a Kubernetes cluster."
+        - content: "Assign IP addresses to nodes"
+          isCorrect: false
+          explanation: "Incorrect. In a Kubernetes networking configuration, the kube-proxy component ensures a unique IP address is assigned to each node."
+        - content: "Manage virtual machines"
+          isCorrect: false
+          explanation: "Incorrect. In a Kubernetes networking configuration, Kubernetes nodes (physical or virtual machines) are managed by a control plane. The control plane communicates with the nodes through the kubelet component."

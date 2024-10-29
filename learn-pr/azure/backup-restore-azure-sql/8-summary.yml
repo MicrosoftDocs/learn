@@ -2,13 +2,12 @@
 uid: learn.backup-restore-azure-sql.8-summary
 metadata:
   title: Summary
-  description: In this unit, you'll review what you have learned about Azure SQL Database backups.
-  ms.date: 09/25/2019
+  description: Review what you have learned about Azure SQL Database backups.
+  ms.date: 12/11/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 1
 content: |

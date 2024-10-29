@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

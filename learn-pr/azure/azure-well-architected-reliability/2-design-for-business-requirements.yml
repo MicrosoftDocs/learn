@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-reliability.design-for-business-requirements
+title: Design for business requirements
+metadata:
+  title: Design for business requirements
+  description: Learn about designing your workload to achieve the reliability requirements set by the business.
+  ms.date: 12/18/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic:  unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-design-for-business-requirements.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following isn't  an aspect of the workload to define reliability targets for?"
+    choices:
+    - content: "The workload's system and user flows."
+      isCorrect: false
+      explanation: "System and user flows define the user experience, so defining reliability targets for them is essential."
+    - content: "The security monitoring system that will monitor the workload."
+      isCorrect: true
+      explanation: "The security monitoring system is important, but it isn't part of the workload itself."
+    - content: "The workload's individual components."
+      isCorrect: false
+      explanation: "Determining reliability targets for the workload's individual components allow you to identify the reliability measures required to support flows using the components."
+    - content: "The workload as a whole."
+      isCorrect: false
+      explanation: "The workload as a whole should have reliability targets defined for it, so you can build a holistically reliable design."
+  - content: "When decomposing your workload into components, which of the following aspects should you consider for your reliability design?"
+    choices:
+    - content: "Internal dependencies only."
+      isCorrect: false
+      explanation: "Internal dependencies need to be considered, but you may also have external dependencies that can affect your workload if there’s an issue."
+    - content: "External dependencies only."
+      isCorrect: false
+      explanation: "External dependencies need to be considered, but you may also have internal dependencies that can affect your workload if there’s an issue."
+    - content: "All internal and external dependencies."
+      isCorrect: true
+      explanation: "Both internal and external dependencies can affect your workload if there's an issue, so you should consider all dependencies in your reliability design."
+    - content: "Only dependencies that are involved in critical flows."
+      isCorrect: false
+      explanation: "Dependencies that are not involved in critical flows still need to be considered as you may need to plan for operating in a degraded state if there is an issue with them."
+  - content: "The Contoso Insurance workload team is interested in learning about the guaranteed uptime for different Azure App Service SKUs. Where should they research this information?"
+    choices:
+    - content: "The Microsoft SLAs for Online Services documentation."
+      isCorrect: true
+      explanation: "The Microsoft SLAs for Online Services provide information about the guaranteed uptime for different Azure App Service SKUs."
+    - content: "The Azure App Service pricing page."
+      isCorrect: false
+      explanation: "The Azure App Service pricing page provides information about the cost of different Azure App Service SKUs, but not the guaranteed uptime."
+    - content: "The Azure App Service documentation."
+      isCorrect: false
+      explanation: "The Azure App Service documentation provides information about how to use Azure App Service, but not the guaranteed uptime."
+    - content: "The Azure App Service FAQ."
+      isCorrect: false
+      explanation: "The Azure App Service FAQ  provides information about how to use Azure App Service, but not the guaranteed uptime."

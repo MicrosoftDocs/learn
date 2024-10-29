@@ -1,7 +1,13 @@
+#### Overview of Azure Site Recovery
 
-Azure Site Recovery helps ensure business continuity by keeping business applications and workloads running during outages. Site Recovery replicates workloads running on physical and virtual machines from a primary site to a secondary location. When an outage occurs at your primary site, Site Recovery implements a failover to the secondary location to allow continued access to your applications. After the primary location is running again, you can resume application access on the primary machine.
+Azure Site Recovery is a service that helps ensure business continuity by replicating workloads from a primary site to a secondary location.
 
-The following illustration that shows two regions connected by Azure Traffic Manager. Azure Site Recovery is implemented to enable failover from region 1 to region 2.
+
+> [!Video https://www.youtube.com/embed/94LDYjBhz5c]
+
+Suppose you work for a large e-commerce company that relies heavily on its online platform to generate revenue. One day, a major storm hits the region where your primary data center is located, causing a power outage and rendering your website inaccessible. This outage results in significant financial losses and damages your company's reputation. To prevent such incidents in the future, you decide to implement Azure Site Recovery. By replicating your workloads to a secondary location, you can ensure that your applications remain accessible. You can continue serving your customers and minimize the impact on your business.
+
+The following illustration shows two regions connected by Azure Traffic Manager. Azure Site Recovery is implemented to enable failover from region 1 to region 2.
 
 :::image type="content" source="../media/site-recovery-scenarios-388c71fd.png" alt-text="Illustration that shows an implementation of Azure Site Recovery to enable failover from region 1 to region 2." border="false":::
 
@@ -17,9 +23,11 @@ Azure Site Recovery supports many configurations and complements various Azure s
 
 - Replicate on-premises VMware virtual machines, Hyper-V virtual machines managed by System Center VMM, and physical servers to a secondary site
 
+
+
 ### Things to consider when using Site Recovery
 
-There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your buniess requirements.
+There are many benefits to implementing Azure Site Recovery. As you review the following features, consider how the service can support your business requirements.
 
 | Feature | Description |
 | --- | --- |

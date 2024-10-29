@@ -2,12 +2,11 @@
 uid: learn.aks-app-scaling-keda.5-exercise-deploy-app
 metadata:
   title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
-  description: In this exercise, you'll deploy the workload from a container registry to an Azure Kubernetes Service cluster by creating a deployment manifest file. 
-  ms.date: 04/08/2021
-  author: pplavetzki
-  ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: In this exercise, you use a Deployment manifest file to deploy the workload from a container registry to your Azure Kubernetes Service cluster.
+  ms.date: 06/03/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
 title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |

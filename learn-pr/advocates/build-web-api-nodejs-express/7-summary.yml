@@ -4,12 +4,13 @@ title: Summary
 metadata:
   title: Summary
   description: summary
-  ms.date: 06/08/2022
-  author: softchris
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.date: 02/12/2024
+  author: diberry
+  ms.author: diberry
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-hub-message-routing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/06/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure IoT solution uses a common set of message features. Which of the following statements about the common set of message features is accurate?"
+    choices:
+    - content: "The common set of message features enables Azure IoT hub to interpret device-to-cloud messages that arrive unformatted."
+      isCorrect: false
+      explanation: "Incorrect. Device-to-cloud messages must be formatted correctly for Azure IoT hub."
+    - content: "Versions of the common set of message features are optimized for each of the messaging protocols supported by Azure IoT hub."
+      isCorrect: false
+      explanation: "Incorrect. One common set of message features applies to all device-facing protocols."
+    - content: "The common set of message features is used across protocols for both device-to-cloud and cloud-to-device messages."
+      isCorrect: true
+      explanation: "Correct. Azure IoT Hub defines a common set of message features for all device-facing protocols. This common set of message features is used for both device-to-cloud routing and cloud-to-device messages."
+  - content: "Within an IoT solution, under what conditions is the fallback route used?"
+    choices:
+    - content: "When multiple routes would have directed a message to the same custom endpoint, the fallback route is used specify which route delivers the message."
+      isCorrect: false
+      explanation: "Incorrect. When multiple routes direct a message to the same endpoint, Azure IoT hub automatically delivers a single instance of the message."
+    - content: "When multiple routes would have directed a message to multiple endpoints, the fallback route is used specify which endpoint the message should be delivered to."
+      isCorrect: false
+      explanation: "Incorrect. There is nothing wrong with messages being sent to more than one endpoint when multiple routes are defined."
+    - content: "When multiple routes are defined, but a message doesn't match any query conditions, the fallback route sends the message to the built-in endpoint."
+      isCorrect: true
+      explanation: "Correct. The fallback route sends all the messages that don't satisfy query conditions on any of the existing routes to the built-in endpoint."

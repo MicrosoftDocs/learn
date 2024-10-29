@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consider-message-processing-options-constraints.compare-iot-hub-message-routing-event-grid-integration
+title: Compare Azure IoT Hub message routing with Event Grid integration
+metadata:
+  title: Compare Azure IoT Hub message routing with Event Grid integration
+  description: "Compare Azure IoT Hub message routing with Event Grid integration"
+  ms.date: 02/22/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-message-routing-event-grid.md)]

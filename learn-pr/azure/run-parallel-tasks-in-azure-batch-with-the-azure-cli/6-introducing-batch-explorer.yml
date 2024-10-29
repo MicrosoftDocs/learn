@@ -3,11 +3,10 @@ uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introducing-batc
 metadata:
   title: Visualize batch jobs with the Batch Explorer
   description: Visualize batch jobs with the Batch Explorer
-  ms.date: 05/06/2019
+  ms.date: 04/04/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 title: Visualize batch jobs with the Batch Explorer
 durationInMinutes: 4
 content: |

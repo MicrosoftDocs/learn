@@ -1,15 +1,14 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-route-server.6-knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
-  ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/08/2023
+  author: halkazwini
+  ms.author: halkazwini
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -40,7 +39,7 @@ quiz:
     choices:
     - content: "They should enable branch-to-branch routing."
       isCorrect: false
-      explanation: "Incorrect. Branch-to-branch routing is not for SD-WAN NVAs."
+      explanation: "Incorrect. Branch-to-branch routing isn't for SD-WAN NVAs."
     - content: "They don't need to do anything. This happens automatically."
       isCorrect: false
       explanation: "Incorrect. Routes between Azure Route Server and NVA don't exchange automatically."
@@ -54,7 +53,7 @@ quiz:
       explanation: "Correct. Azure Route Server doesn't manage traffic. It just exchanges routes."
     - content: "Yes. The administrator should configure the Azure Route Server IP address as the default gateway to network adapter objects used by Azure VMs."
       isCorrect: false
-      explanation: "Incorrect. Azure Route Server cannot be the default gateway."
+      explanation: "Incorrect. Azure Route Server can't be the default gateway."
     - content: "Yes. They should add a firewall object in the virtual network."
       isCorrect: false
       explanation: "Incorrect. A firewall in Azure doesn't provide this functionality."
@@ -62,7 +61,7 @@ quiz:
     choices:
     - content: "BGP Peering."
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute is not a BGP peer."
+      explanation: "Incorrect. ExpressRoute isn't a BGP peer."
     - content: "Branch-to-branch settings."
       isCorrect: true
       explanation: "Correct. This is the setting for ExpressRoute."

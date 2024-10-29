@@ -4,11 +4,12 @@ title: Set up Azure Recovery Services vault backup options
 metadata:
   title: Set up Azure Recovery Services vault backup options
   description: "Set up Azure Recovery Services vault backup options for a virtual machine."
-  ms.date: 03/09/2023
+  ms.date: 07/24/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/4-setup-recovery-services-vault-backup-options.md)]

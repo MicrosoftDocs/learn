@@ -4,13 +4,12 @@ title: Troubleshoot ExpressRoute connection issues
 metadata:
   title: Troubleshoot ExpressRoute connection issues
   description: "Troubleshoot ExpressRoute connection issues"
-  ms.date: 03/02/2023
+  ms.date: 11/02/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/10-troubleshoot-expressroute-connection-issues.md)]
@@ -24,10 +23,10 @@ quiz:
       explanation: "Correct. A service key uniquely identifies an ExpressRoute circuit. If you need assistance from Microsoft or from an ExpressRoute partner to troubleshoot an ExpressRoute issue, provide the service key to readily identify the circuit."
     - content: "Circuit name."
       isCorrect: false
-      explanation: "Incorrect. The Circuit name may not be unique or easily searchable for the service provider."
+      explanation: "Incorrect. The Circuit name might not be unique or easily searchable for the service provider."
     - content: "Circuit number."
       isCorrect: false
-      explanation: "Incorrect. There is no circuit number property."
+      explanation: "Incorrect. There's no circuit number property."
   - content: "An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?"
     choices:
     - content: "Check the **Last modified by** property of the relevant peering."
@@ -35,7 +34,7 @@ quiz:
       explanation: "Correct. Azure resources record information about changes, in this case, who made the last change."
     - content: "Call the service provider and ask them."
       isCorrect: false
-      explanation: "Incorrect. This may get you the correct answer, but it is not the quickest way to check."
+      explanation: "Incorrect. This might get you the correct answer, but it isn't the quickest way to check."
     - content: "Raise a support ticket with Microsoft."
       isCorrect: false
-      explanation: "Incorrect. This may get you the correct answer, but it is not the quickest way to check."
+      explanation: "Incorrect. This might get you the correct answer, but it isn't the quickest way to check."

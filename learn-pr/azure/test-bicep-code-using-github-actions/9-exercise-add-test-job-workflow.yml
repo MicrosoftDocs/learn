@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Add a test job to your workflow
   description: Add a post-deployment test job to your Bicep deployment workflow.
-  ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/10/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 4
 content: |

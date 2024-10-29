@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster
+title: Guidelines for HDInsight on AKS cluster 
+metadata:
+  unitType: learning-content  
+  title: Guidelines for HDInsight on AKS cluster
+  description: Guidelines for HDInsight on AKS cluster
+  ms.date: 01/24/2024  
+  author: sairamyeturi
+  ms.author: sairamyeturi  
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-guidelines-for-hdinsight-on-aks-cluster.md)]

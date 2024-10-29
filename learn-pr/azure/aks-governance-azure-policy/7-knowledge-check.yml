@@ -4,57 +4,56 @@ title: Check your knowledge
 metadata:
   title: Check your knowledge
   description: Knowledge Check of Azure policy concepts
-  ms.date: 10/13/2021
+  ms.date: 04/22/2024
   author: mosabami
   ms.author: aayodeji
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-check-your-knowledge.md)]
 quiz:
   questions:
-    - content: "If a Policy is applied with the deny option to a Resource group, what happens to already existing non-compliant resources in that group?"
+    - content: "If a Policy is applied with the deny option to a Resource group, what happens to already existing noncompliant resources in that group?"
       choices:
-        - content: "The non-compliant resources get deleted."
+        - content: "The noncompliant resources get deleted."
           isCorrect: false
-          explanation: "Azure Policy does not delete Azure resources"
-        - content: "No changes will be made to the resources themselves but they will be listed as non-compliant resources."
+          explanation: "Azure Policy doesn't delete Azure resources."
+        - content: "No changes are made to the resources themselves but they're listed as noncompliant resources."
           isCorrect: true
-          explanation: "Correct. Azure Policy does not delete resources but you can always check for non-compliant already existing resources."
-        - content: "The resources will have a read-only lock on them so that no changes can be made to them."
+          explanation: "Correct. Azure Policy doesn't delete resources but you can always check for noncompliant already existing resources."
+        - content: "The resources have a read-only lock on them so that no changes can be made to them."
           isCorrect: false
-          explanation: "Azure Policies does not lock already deployed resources."
-        - content: "The resources become unusable and cannot be used to connect to other resources."
+          explanation: "Azure Policies doesn't lock already deployed resources."
+        - content: "The resources become unusable and can't be used to connect to other resources."
           isCorrect: false
-          explanation: "Azure Policies does not render already deployed resources unusable."
+          explanation: "Azure Policies doesn't render already deployed resources unusable."
     
     - content: "What happens when you have a Policy set as deny at the Subscription level and the same Policy set as audit at the Resource group level?"
       choices:
-        - content: "The two Policies would cancel each other out and have no effect"
+        - content: "The two Policies would cancel each other out and have no effect."
           isCorrect: false
-          explanation: "Policies do not cancel each other out when there is a conflict."
+          explanation: "Policies don't cancel each other out when there's a conflict."
         - content: "The Policy set as audit would take effect."
           isCorrect: false
-          explanation: "Even though the resource group scope is closer to the resource than the subscription, the more restrictive Policy would take effect"
+          explanation: "Even though the resource group scope is closer to the resource than the subscription, the more restrictive Policy would take effect."
         - content: "The Policy set as deny would take effect."
           isCorrect: true
           explanation: "Correct. The more restrictive Policy would take effect."
         - content: "You would get an error when you attempt to deploy the second Policy that contradicts the first one, so you would be unable to proceed."
           isCorrect: false
-          explanation: "Azure Policies do not prevent other Policies from being deployed because of a contradiction."
+          explanation: "Azure Policies don't prevent other Policies from being deployed because of a contradiction."
 
-    - content: "You have an Azure Policy applied the the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy, what's the best way to handle that?"
+    - content: "You have an Azure Policy applied at the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy. What's the best way to handle the situation?"
       choices:
-        - content: "Move the AKS cluster to another Subscription and apply the Policy to the previous Subscription."
+        - content: "Move the Azure Kubernetes Service (AKS) cluster to another Subscription and apply the Policy to the previous Subscription."
           isCorrect: false
-          explanation: "This would solve the problem but may not work if that resource needs to stay in that Subscription for business reasons."
+          explanation: "This solution solves the immediate problem but might not work if that resource needs to stay in that Subscription for business reasons."
         - content: "Apply the Policy at the resource level to the resources that need to have it in that Subscription."
           isCorrect: false
-          explanation: "You cannot apply a Policy at the resource level."
-        - content: "Tell your coworkers not to deploy resources that are not compliant with that Policy and add it to your training manual."
+          explanation: "You can't apply a Policy at the resource level."
+        - content: "Tell your coworkers not to deploy resources that aren't compliant with that Policy and add it to your training manual."
           isCorrect: false
-          explanation: "This may work but may require a lot of manual work. This is not the best option in this scenario."
-        - content: "Add an exclusion to the AKS cluster Resource group that the Policy should not apply to."
+          explanation: "This solution isn't the best option in this scenario. It might work, but it could require lots of manual work."
+        - content: "Add an exclusion to the AKS cluster Resource group that the Policy shouldn't apply to."
           isCorrect: true
           explanation: "Correct. Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."

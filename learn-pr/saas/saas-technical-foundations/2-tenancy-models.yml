@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.tenancy-models
+title: Tenancy models
+metadata:
+  title: Tenancy models
+  description: "Module covers definition of multitenant and single-tenant solution. It helps you understand pros and cons of each model and make the right choice for your solution."
+  ms.date: 2/9/2024
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-tenancy-models.md)]

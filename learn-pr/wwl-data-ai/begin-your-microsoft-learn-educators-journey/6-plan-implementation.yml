@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.begin-your-microsoft-learn-educators-journey.plan-implementation
+title: 'Plan for Implementation '
+metadata:
+  title: Plan for Implementation
+  description: "Plan for Implementation"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-plan-implementation.md)]

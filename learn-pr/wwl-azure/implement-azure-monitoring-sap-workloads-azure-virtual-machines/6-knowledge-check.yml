@@ -3,13 +3,13 @@ uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/09/2021
+  description: "Check what you learned in this module."
+  ms.date: 03/28/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -23,21 +23,21 @@ quiz:
       explanation: "Correct. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability"
     - content: "Azure Service Health"
       isCorrect: false
-      explanation: "Incorrect. Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action."
+      explanation: "Incorrect. Azure Service Health provides notifications about Azure service incidents and planned maintenance."
     - content: "Azure Log Analytics"
       isCorrect: false
       explanation: "Incorrect. Log Analytics is a tool in the Azure portal used to edit and run log queries with data in Azure Monitor Logs."
-  - content: "Which of the following is **not** one of the key resources deployed in the managed resource group that is deployed automatically as part of the Azure Monitor for SAP Solutions resource deployment?"
+  - content: "Which of the following is one of the key resources deployed in the managed resource group that is deployed automatically as part of the Azure Monitor for SAP Solutions resource deployment?"
     choices:
-    - content: "Collector VM"
-      isCorrect: false
-      explanation: "Incorrect. Collector VM is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
-    - content: "Log Analytics Workspace"
-      isCorrect: false
-      explanation: "Incorrect. Log Analytics Workspace is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment.."
-    - content: "SAP Monitor resource"
+    - content: "Azure Functions resource"
       isCorrect: true
-      explanation: "Correct. SAP Monitor resource is not located in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
+      explanation: "Correct. An Azure Functions resource is automatically deployed in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
+    - content: "Azure Monitor workbooks"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor workbooks aren't located in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
+    - content: "SAP Monitor resource"
+      isCorrect: false
+      explanation: "Incorrect. SAP Monitor resource is a key component of the architecture, but it isn't located in the managed resource group that is part of the Azure Monitor for SAP Solutions resource deployment."
   - content: "In what language are Azure Monitor Log queries written?"
     choices:
     - content: "Kusto Query Language (KQL)"

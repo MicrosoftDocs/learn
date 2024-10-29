@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-data-analysis-azure-databricks.data-exploration-tools
+title: Data exploration tools in Azure Databricks
+metadata:
+  title: Data exploration tools in Azure Databricks
+  description: "Data exploration tools in Azure Databricks"
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-data-exploration-tools.md)]

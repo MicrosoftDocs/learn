@@ -2,12 +2,17 @@
 uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning
 metadata:
   title: Deploy deep learning workloads to production with Azure Machine Learning
-  description: "Deploy deep learning workloads to production with Azure Machine Learning"
-  ms.date: 06/01/2022
+  description: Deploy deep learning workloads to production with Azure Machine Learning
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Deploy deep learning workloads to production with Azure Machine Learning
 summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
 abstract: |

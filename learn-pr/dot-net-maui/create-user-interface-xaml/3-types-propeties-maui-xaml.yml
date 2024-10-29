@@ -5,11 +5,13 @@ metadata:
   unitType: unit
   title: "Types and properties in .NET MAUI XAML"
   description: "Explain the different types available in XAML, and describe how to instantiate objects and set properties" 
-  ms.date: 04/29/2022
+  ms.date: 10/13/2023
   author: codemillmatt  
-  ms.author: masoucou  
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.author: masoucou
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/3-types-properties-maui-xaml.md)]

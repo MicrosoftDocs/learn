@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.apply-networking-concepts-to-windows-containers
+
+metadata:
+  title: Apply Networking concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
+  description: Learn networking concepts that help you solve real problems with Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid.
+  ms.date: 02/12/2024
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: module-standard-task-based
+  ms.service: azure-kubernetes-service
+title: Apply Networking concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
+summary: Define networking configurations for Kubernetes environments and their pros and cons, then choose the best option for your scenario.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe networking concepts for Windows containers.
+  - Describe networking concepts for Kubernetes containers.
+  - Evaluate networking options for Windows containers with Azure Kubernetes Service.
+prerequisites: |
+  You should be familiar with:
+  - Basic knowledge of microservice architectures and operating system virtualization.
+  - Basic knowledge of Docker containers for Windows.
+  - Basic knowledge of container orchestration with Kubernetes and Azure Kubernetes Service.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-kubernetes-service
+subjects:
+- networking
+units:
+- learn.azure.apply-networking-concepts-to-windows-containers.introduction
+- learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-containers
+- learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-windows-containers
+- learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-kubernetes-containers
+- learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service
+- learn.azure.apply-networking-concepts-to-windows-containers.windows-container-networking-with-azure-kubernetes-service-hybrid
+- learn.azure.apply-networking-concepts-to-windows-containers.knowledge-check
+- learn.azure.apply-networking-concepts-to-windows-containers.summary
+badge:
+  uid: learn.azure.apply-networking-concepts-to-windows-containers.badge

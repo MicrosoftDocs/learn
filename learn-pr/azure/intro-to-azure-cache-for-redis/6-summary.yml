@@ -5,11 +5,10 @@ metadata:
   unitType: summary  
   title: Summary
   description: Review of concepts discussed in the module
-  ms.date: 04/09/2021  
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.date: 04/04/2024  
+  author: flang-msft
+  ms.author: franlanglois
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Understand data concepts
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
@@ -27,7 +26,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.get-started-data-concepts
 - learn.wwl.get-started-data-analytics

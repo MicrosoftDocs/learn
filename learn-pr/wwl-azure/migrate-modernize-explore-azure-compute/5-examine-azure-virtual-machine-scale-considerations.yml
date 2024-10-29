@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-azure-compute.examine-azure-virtual-machine-scale-considerations
+title: Examine Azure virtual machine scaling considerations
+metadata:
+  title: Examine Azure virtual machine scaling considerations
+  description: "Examine Azure virtual machine scaling considerations"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-examine-azure-virtual-machine-scale-considerations.md)]

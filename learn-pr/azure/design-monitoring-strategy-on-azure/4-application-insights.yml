@@ -1,37 +1,25 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
-  title: Manage applications by using Azure Monitor Application Insights
-  description: Manage applications by using Azure Monitor Application Insights
-  ms.date: 03/22/2021
+  title: Monitor applications by using Application Insights
+  description: Learn how to monitor applications by using Azure Monitor Application Insights.
+  ms.date: 11/13/2023
   author: kayodeprinceMS
   ms.author: kaprince
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Manage applications by using Azure Monitor Application Insights
+  ms.topic: unit
+title: Monitor applications by using Application Insights
 durationInMinutes: 10
 content: |
   [!include[](includes/4-application-insights.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why would you use Azure Application Insights?
+  - content: Which aspects of application performance can Application Insights monitor?
     choices:
-    - content: You want to analyze and address problems that affect your cloud infrastructure's security.
+    - content: Key Vault requests and latency
       isCorrect: false
-      explanation: Azure Application Insights is used for your applications. You use Microsoft Defender for Cloud for your infrastructure's security.
-    - content: You want to analyze and address problems that affect your on-premises infrastructure's security.
-      isCorrect: false
-      explanation: You use Microsoft Defender for Cloud for your infrastructure's security. Azure Application Insights is used for your applications.
-    - content: You want to analyze and address problems that affect your application's health.
-      isCorrect: true
-      explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
-  - content: What aspect of application performance can be monitored by DevOps teams when using Azure Monitor Application Insights?
-    choices:
-    - content: Key Vault latency
-      isCorrect: false
-      explanation: You can view Key Vault’s overall service API latency using Key Vault metrics
-    - content: User behavior and usage patterns for your application 
+      explanation: You can view Key Vault performance by using Key Vault metrics or Key Vault insights, not Application Insights.
+    - content: User behavior and usage patterns
       isCorrect: true
       explanation: Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities.
     - content: Types of network delay
@@ -39,12 +27,12 @@ quiz:
       explanation: Azure Network Watcher and Connection Monitor are services that can be used to measure network delay between various Azure and non-Azure end-points.
   - content: How can you continuously monitor your applications from different geographic locations?
     choices:
-    - content: Use availability tests to continuously monitor your application from different geographic locations.
+    - content: Create availability tests.
       isCorrect: true
-      explanation: Availability tests let you monitor your application from multiple locations in the world.
-    - content: Use an instrumentation key to continuously monitor your application from different geographic locations.
+      explanation: Availability tests let you monitor your application from multiple geographic locations.
+    - content: Use an instrumentation script.
       isCorrect: false
-      explanation: You use availability tests to continuously monitor your live web application. Instrumentation keys are for using an instrumentation package. 
-    - content: Use Log Analytics to continuously monitor your application from different geographic locations.
+      explanation: You use an instrumentation script to instrument your application for browser-side usage and performance monitoring.
+    - content: View the Performance screen in Application Insights.
       isCorrect: false
-      explanation: You use availability tests to continuously monitor your live web application. You use Log Analytics to query the log data collected from your resources for analysis.
+      explanation: The Performance page shows many application operations, but doesn't show data from different geographic locations.

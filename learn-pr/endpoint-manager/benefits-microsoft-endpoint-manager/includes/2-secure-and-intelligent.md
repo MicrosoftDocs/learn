@@ -16,7 +16,7 @@ The following image shows the tools to endpoint security management, as well as 
 
 ## Unified security
 
-You can securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Azure Active Directory (Azure AD) and natively integrated in Microsoft Intune. Unified security management with Microsoft Defender for Intune enables quick, automated remediation of app vulnerabilities.
+You can securely access corporate resources through continuous assessment and intent-based policies with Conditional Access app control, powered by Microsoft Entra ID and natively integrated in Microsoft Intune. Unified security management with Microsoft Defender for Intune enables quick, automated remediation of app vulnerabilities.
 
 Microsoft Intune helps ensure cross-platform device controls to help manage your Zero Trust endpoint strategy, which includes:
 
@@ -26,7 +26,7 @@ Microsoft Intune helps ensure cross-platform device controls to help manage your
   - Determine risks calculated based on advanced Microsoft machine learning
 - **Conditional Access:**
   - Define contextual policies at the user, location, device, and app levels
-  - Evaluate compliance that Azure AD enforces to provide Conditional Access
+  - Evaluate compliance that Microsoft Entra ID enforces to provide Conditional Access
 - **App Protection Policy:**
   - Protect apps and Office365 data on unmanaged devices.
 - **Extend native platform security to meet all use cases**

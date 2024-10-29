@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-semantic-search-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/29/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Semantic search uses text embeddings to determine result relevance. What is an embedding vector?"
+    choices:
+    - content: "An array of n numbers that capture the text's meaning."
+      isCorrect: true
+      explanation: "Correct. Semantic search uses numeric vector distance to measure semantic distance. A vector of definition or topic words is like lexical search (augmenting a query with synonyms or searching by tag or topic)."
+    - content: "An array of n words that summarize the text's meaning."
+      isCorrect: false
+      explanation: "Incorrect. Semantic search uses a quantitative representation of text meaning derived from a language model, not synonyms or definitions. The core of semantic search is to represent semantics quantitatively so that normal vector operations can be used to measure semantic distance."
+    - content: "An array of n text strings embedded in the text."
+      isCorrect: false
+      explanation: "Incorrect. Semantic search uses a quantitative representation of text meaning derived from a language model, not a list of ideas or topics. The core of semantic search is to represent semantics quantitatively so that normal vector operations can be used to measure semantic distance."
+  - content: "An application's text data is stored in an Azure Database for PostgreSQL flexible server. The application needs a vector database to store the text embeddings and perform a semantic search. What is the most straightforward database choice?"
+    choices:
+    - content: "Use Azure Database for PostgreSQL."
+      isCorrect: true
+      explanation: "Correct. PostgreSQL is a suitable storage layer for vectors with the `vector` extension installed. It doesn't require new services or data migration."
+    - content: "Use Vector Database in Azure Cosmos DB for MongoDB."
+      isCorrect: false
+      explanation: "Incorrect. While the Vector Database in Azure Cosmos DB for MongoDB is a good choice for storing & querying vectors, it requires deploying & maintaining a separate service and performing ETL between the application database and Cosmos DB. The most straightforward option is to use the `vector` extension to handle vectors directly in the PostgreSQL database."
+    - content: "Use Azure AI Search's vector store."
+      isCorrect: false
+      explanation: "Incorrect. While Azure AI Search's vector store is a good choice for storing & querying vectors, it requires deploying a separate service and performing ETL between the application database and Azure AI Search. The most straightforward choice is to use the `vector` extension to store vectors directly in the PostgreSQL database."
+  - content: "An application has stored embedding vectors in a PostgreSQL flexible server database and is ready to query them. The user has supplied a query string. What is the simplest way to run a semantic search?"
+    choices:
+    - content: "The application calls a stored function to return ranked results."
+      isCorrect: true
+      explanation: "Correct. This approach requires minimal changes to the application code and encapsulates concepts like embedding vectors and cosine distance to application code."
+    - content: "Use Azure OpenAI Embeddings API in the application, and use the result as a query parameter to rank cosine distance."
+      isCorrect: false
+      explanation: "Incorrect. While this would work, it isn't the simplest approach: it introduces new services to applications and requires application developers to understand at least the basics of vector search."
+    - content: "Use Azure AI Search's integrated vectorization to generate the query embedding and use the SQL in-line."
+      isCorrect: false
+      explanation: "Incorrect. While this is a viable approach to running semantic search with Azure AI Search, it isn't the simplest approach for data already stored in a PostgreSQL flexible server."

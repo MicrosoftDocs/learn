@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborating-pull-requests
-title: Exercise - Azure Repos collaborating with pull requests
+title: Exercise Azure Repos collaborating with pull requests
 metadata:
-  title: Exercise - Azure Repos collaborating with pull requests
-  description: "Exercise - Azure Repos collaborating with pull requests"
-  ms.date: 11/01/2022
+  title: Exercise Azure Repos collaborating with pull requests
+  description: "Exercise Azure Repos collaborating with pull requests"
+  ms.date: 05/24/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.topic: unit
+durationInMinutes: 60
 content: |
   [!include[](includes/3-exercise-collaborate-pull-requests.md)]

@@ -2,12 +2,12 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory
 metadata:
   title: Run Azure Databricks Notebooks with Azure Data Factory
-  description: "Run Azure Databricks Notebooks with Azure Data Factory"
-  ms.date: 11/21/2022
+  description: Run Azure Databricks Notebooks with Azure Data Factory
+  ms.date: 08/29/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Run Azure Databricks Notebooks with Azure Data Factory
 summary: Using pipelines in Azure Data Factory to run notebooks in Azure Databricks enables you to automate data engineering processes at cloud scale.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   - Use a Notebook activity in a pipeline.
   - Pass parameters to a notebook.
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the [Explore Azure Databricks](/training/modules/explore-azure-databricks) module before this one.
 iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg
 levels:
 - intermediate

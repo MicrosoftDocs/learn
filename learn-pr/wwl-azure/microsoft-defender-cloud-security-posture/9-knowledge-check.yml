@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-security-posture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/21/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the advantage of using Microsoft Defender External Attack Surface Management?"
+    choices:
+    - content: "To identify and monitor assets that are exposed to the internet."
+      isCorrect: true
+      explanation: "This feature is crucial for security as it helps organizations identify and assess internet-facing assets for vulnerabilities, ensuring they can proactively manage and reduce their attack surface."
+    - content: "For automating employee onboarding processes."
+      isCorrect: false
+      explanation: "This tool focuses on security management, particularly for external assets, and is not related to HR processes like employee onboarding."
+    - content: "To create marketing strategies for cloud services."
+      isCorrect: false
+      explanation: "External Attack Surface Management is designed for security purposes, not for developing marketing strategies."
+  - content: "How does Microsoft Defender for Cloud help assess compliance?"
+    choices:
+    - content: "By providing real-time currency exchange rates."
+      isCorrect: false
+      explanation: "Compliance assessments are focused on security and regulatory standards, not financial metrics like currency exchange rates."
+    - content: "By measuring the physical dimensions of data centers."
+      isCorrect: false
+      explanation: "Compliance with security frameworks is not related to the physical dimensions of data centers but to the adherence to specific security policies and standards."
+    - content: "Through assessment against industry and regulatory standards."
+      isCorrect: true
+      explanation: "Microsoft Defender for Cloud provides tools to assess and ensure compliance with various industry and regulatory standards, helping organizations understand their compliance posture and make necessary adjustments."
+  - content: "What is the main purpose of the Microsoft Defender for Cloud Secure Score?"
+    choices:
+    - content: "To measure the network latency across cloud services."
+      isCorrect: false
+      explanation: "The Secure Score focuses on security posture, not on performance metrics like network latency."
+    - content: "To provide a quantitative measure of an organization's security posture."
+      isCorrect: true
+      explanation: "The Secure Score offers a quantifiable metric that helps organizations evaluate their security posture, identify areas of improvement, and track their progress over time."
+    - content: "To calculate the total cost of ownership for cloud resources."
+      isCorrect: false
+      explanation: "While financial management is important, the Secure Score specifically addresses security posture and compliance, not cost analysis."
+  - content: "What functionality does adding custom initiatives to Microsoft Defender for Cloud provide?"
+    choices:
+    - content: "Tailoring security policies and assessments to specific organizational needs."
+      isCorrect: true
+      explanation: "Custom initiatives allow organizations to extend the capabilities of Microsoft Defender for Cloud by creating and applying security policies that match their unique operational and security requirements."
+    - content: "Customizing the color scheme of the dashboard."
+      isCorrect: false
+      explanation: "Custom initiatives are designed for security policy customization, not for aesthetic adjustments to the dashboard."
+    - content: "Changing the geographical location of stored data."
+      isCorrect: false
+      explanation: "While data residency is an important consideration, custom initiatives in Microsoft Defender for Cloud are intended for tailoring security policies, not for data location management."
+  - content: "How can hybrid cloud and multicloud environments be integrated with Microsoft Defender for Cloud?"
+    choices:
+    - content: "Through manual log file uploads only."
+      isCorrect: false
+      explanation: "Microsoft Defender for Cloud offers more sophisticated and automated integration options than manual log uploads, providing comprehensive security management across environments."
+    - content: "Using exclusively third-party security tools."
+      isCorrect: false
+      explanation: "While third-party tools can be part of a comprehensive security strategy, the question focuses on how Microsoft Defender for Cloud itself facilitates integration and security management across different cloud environments."
+    - content: "By connecting environments to Defender for Cloud for unified security management."
+      isCorrect: true
+      explanation: "Integrating hybrid and multicloud environments with Microsoft Defender for Cloud allows organizations to centralize their security management, gaining visibility and control over their distributed resources."

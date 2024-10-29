@@ -3,12 +3,11 @@ uid: learn.introduction-to-microsoft-datacenters.explore-security-and-privacy-in
 title: Explore security and privacy in the Microsoft Cloud
 metadata:
   title: Explore security and privacy in the Microsoft Cloud
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Describes the basics of security and privacy in the Microsoft Cloud. Including data privacy and security, confidential computing, and reducing the attack surface. 
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/7-explore-security-and-privacy-in-the-microsoft-cloud.md)]
@@ -25,4 +24,4 @@ quiz:
       explanation: "Incorrect. This statement is true and reflects Microsoft policy."
     - content: "Microsoft support can access user or administrator accounts on customer VMs."
       isCorrect: true
-      explanation: "Correct. This statement is not a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."
+      explanation: "Correct. This statement isn't a Microsoft policy. Microsoft support personnel can't access user or administrator accounts on customer VMs."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.operations-masters
+title: Manage Active Directory Domain Services operations masters
+metadata:
+  title: Manage Active Directory Domain Services operations masters
+  description: "Manage Active Directory Domain Services operations masters"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/6-operations-masters.md)]

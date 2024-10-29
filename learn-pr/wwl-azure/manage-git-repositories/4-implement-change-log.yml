@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-repositories.implement-change-log
+title: Implement a change log
+metadata:
+  title: Implement a change log
+  description: "Implement a change log"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-implement-change-log.md)]

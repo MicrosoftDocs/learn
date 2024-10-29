@@ -4,11 +4,10 @@ title: Exercise - Create and call a custom connector from a workflow in Azure Lo
 metadata:
   title: Exercise - Create and call a custom connector from a workflow in Azure Logic Apps
   description: In this unit, you'll create a custom connector by importing the OpenAPI definition for a Web API.
-  ms.date: 04/11/2019
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 10
 interactive: bash

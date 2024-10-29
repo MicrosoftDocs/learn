@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-iaas.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Test your knowledge.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following scenarios is a reason to use the rehosting model when migrating your Oracle applications to Azure?"
+    choices:
+    - content: "You want to change database technology from Oracle to SQL Server."
+      isCorrect: false
+      explanation: "Incorrect. If you're changing database technology, you need to use a refactoring migration model, not a rehosting model."
+    - content: "You want to minimize any custom development or application refactoring related to the migration."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "You need to add new functionality to your application."
+      isCorrect: false
+      explanation: "Incorrect. If you're adding new functionality, you need to use a refactoring migration model, not a rehosting model."
+  - content: "Which tools can best help you understand the performance requirements of your database server migration target VMs?"
+    choices:
+    - content: "Oracle Automatic Workload Repository (AWR) and the Oracle Migration Automation Tool (OMAT)."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Oracle Recovery Manager and Data Guard."
+      isCorrect: false
+      explanation: "Incorrect. You can understand performance requirements with Oracle Automatic Workload Repository (AWR) and the Oracle Migration Automation Tool (OMAT)."
+    - content: "Azure Advisor and Microsoft Cost Management."
+      isCorrect: false
+      explanation: "Incorrect. You can understand performance requirements with Oracle Automatic Workload Repository (AWR) and the Oracle Migration Automation Tool (OMAT)."
+  - content: "To optimize costs, which of these is an important consideration?"
+    choices:
+    - content: "Ensure that your VMs and storage volumes are backed up."
+      isCorrect: false
+      explanation: "Incorrect. Correctly sizing your VMs and instance counts helps optimize costs."
+    - content: "Make sure that your network security is properly configured."
+      isCorrect: false
+      explanation: "Incorrect. Correctly sizing your VMs and instance counts helps optimize costs."
+    - content: "Correctly size your VMs and ensure that your instance counts are correctly meeting demand, and that your number of vCores matches your Oracle licensing."
+      isCorrect: true
+      explanation: "Correct!"

@@ -4,11 +4,10 @@ title: When to use Azure Web Application Firewall
 metadata:
   title: When to use Azure Web Application Firewall
   description: Learn about common scenarios for using Azure Web Application Firewall.
-  ms.date: 03/10/2023
+  ms.date: 02/14/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-when-to-use-azure-web-application-firewall.md)]

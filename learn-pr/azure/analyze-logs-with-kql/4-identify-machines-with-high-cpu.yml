@@ -4,12 +4,11 @@ title: Exercise - Identify machines with high CPU usage
 metadata:
   unitType: exercise
   title: Exercise - Identify machines with high CPU usage
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 08/08/2022
+  description: "Write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity, and which machines are being underused."
+  ms.date: 02/11/2024
   author: guywi-ms
   ms.author: guywild
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-identify-machines-with-high-cpu.md)]

@@ -4,11 +4,10 @@ title: Learn about using Conditional Access
 metadata:
   title: Learn about using Conditional Access
   description: Understand the two common types of Conditional Access.
-  ms.date: 10/26/2020
+  ms.date: 05/05/2023
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager 
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-use-conditional-access.md)]

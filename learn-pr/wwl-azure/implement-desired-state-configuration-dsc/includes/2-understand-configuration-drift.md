@@ -25,7 +25,7 @@ Configuration drift can also introduce security vulnerabilities into your enviro
 
 While eliminating configuration drift can be difficult, there are many ways you can manage it in your environments using configuration management tools and products such as:
 
- -  Windows PowerShell Desired State Configuration. It's a management platform in PowerShell that enables you to manage and enforce resource configurations. For more information about Windows PowerShell Desired State Configuration, go to Windows PowerShell Desired State Configuration Overview.
+ -  Windows PowerShell Desired State Configuration. It's a management platform in PowerShell that enables you to manage and enforce resource configurations. For more information about Windows PowerShell Desired State Configuration, go to [Windows PowerShell Desired State Configuration Overview](/powershell/scripting/dsc/overview?view=powershell-7.4).
  -  Azure Policy. Use Azure Policy to enforce policies and compliance standards for Azure resources. For more information about Azure Policy, go to [Azure Policy](https://azure.microsoft.com/services/azure-policy/).
 
 There are also other third-party solutions that you can integrate with Azure.

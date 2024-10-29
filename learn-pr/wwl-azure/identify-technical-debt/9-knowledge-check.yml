@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/06/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices is a characteristic in source code possibly indicating a deeper problem?"
+    choices:
+    - content: "Memory Leak."
+      isCorrect: false
+      explanation: "Incorrect. Code smells are characteristics in your code that could be a problem. Code smells hint at more profound problems in the design or implementation of the code."
+    - content: "Bug."
+      isCorrect: false
+      explanation: "Incorrect. Code smells are characteristics in your code that could be a problem. Code smells hint at more profound problems in the design or implementation of the code."
+    - content: "Code smell."
+      isCorrect: true
+      explanation: "Correct. Code smells are characteristics in your code that could be a problem. Code smells hint at more profound problems in the design or implementation of the code."
+  - content: "Which of the following choices can measure the probability that a system will run without failure over a specific period of operation?"
+    choices:
+    - content: "Maintainability"
+      isCorrect: false
+      explanation: "Incorrect. Maintainability measures how easily software can be maintained. It relates to the codebase's size, consistency, structure, and complexity. And ensuring maintainable source code relies on several factors, such as testability and understandability."
+    - content: "Reliability"
+      isCorrect: true
+      explanation: "Correct. Reliability measures the probability that a system will run without failure over a specific period of operation. It relates to the number of defects and availability of the software. Several defects can be measured by running a static analysis tool."
+    - content: "Reusability"
+      isCorrect: false
+      explanation: "Incorrect. Reusability measures whether existing assets, such as code."
+  - content: "Which of the following tools can you use to do code quality checks?"
+    choices:
+    - content: "Veracode."
+      isCorrect: false
+      explanation: "Incorrect. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
+    - content: "SonarCloud."
+      isCorrect: true
+      explanation: "Correct. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
+    - content: "Azure Security Center."
+      isCorrect: false
+      explanation: "Incorrect. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."

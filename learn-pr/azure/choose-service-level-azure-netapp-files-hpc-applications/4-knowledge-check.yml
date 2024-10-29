@@ -5,44 +5,54 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
-  ms.date: 04/06/2021
+  ms.date: 06/07/2024
   author: mengruts
   ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
   - content: "What's the top-down order of the Azure NetApp Files storage hierarchy?"
     choices:
-    - content: "Azure NetApp Files account -> container -> volume"
+    - content: "NetApp account -> container -> volume"
       isCorrect: false
       explanation: "There's no container concept in Azure NetApp Files."
-    - content: "Azure NetApp Files account -> capacity pool -> volume"
+    - content: "NetApp account -> capacity pool -> volume"
       isCorrect: true
       explanation: "Correct."
-    - content: "Azure NetApp Files account -> capacity pool -> storage target"
+    - content: "NetApp account -> capacity pool -> storage target"
       isCorrect: false
       explanation: "There's no storage target concept in Azure NetApp Files."
   - content: "After resizing Azure NetApp Files volume quota to reflect new performance requirements, what actions need to be done to make the change effective?"
     choices:
     - content: "Reboot the client VMs."
       isCorrect: false
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
     - content: "Restart the Azure NetApp Files service."
       isCorrect: false
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
-    - content: "Performance change will take effect automatically and almost immediately."
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
+    - content: "The performance change takes effect automatically and almost immediately."
       isCorrect: true
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
-  - content: "An HPC application needs at least a 20-TiB size of Azure NetApp Files storage and needs to ensure 1,400 MiB/s in throughput with 8 KiB 50/50 random read/write. Which of the following service levels and volume quotas are the best to be configured?"
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
+  - content: What are the three key components of Azure NetApp Files volume performance?
+    choices: 
+      - content: Volume quota, service levels, quality of service.
+        isCorrect: true
+        explanation: "Volume quotas impact the throughput per TiB. Service levels apply throttles to performance for cost efficiency. Quality of service is applied to a capacity pool and can be configured to allow higher performance for smaller volumes."
+      - content: "Volume quota, capacity pools, user quotas."
+        isCorrect: false
+        explanation: "Volume quotas impact the throughput per TiB. Capacity pools are how Azure NetApp Files allocates capacity and is billed. User quotas are used to control the capacity utilized by users of the service."
+      - content: "Volume type, volume quota, file count."
+        isCorrect: false 
+        explanation: "Volume type can be regular or large and can impact performance, but isn't one of the key components. Volume quotas impact the throughput per TiB. File count refers to the number of files in the volume."
+  - content: "A high-performance computing (HPC) application needs at least 50-TiB size of volume storage and also needs to ensure 5,000 MiB per second in throughput. Which of the following service levels and volume quotas are the best to be configured?"
     choices:
-    - content: "Standard service level with a 75-TiB volume size."
+    - content: "Standard service level with a 75-TiB regular volume size."
       isCorrect: false
-      explanation: "This configuration meets throughput requirements but has the highest capacity pool cost."
-    - content: "Premium service level with a 20-TiB volume size."
+      explanation: "This configuration can't meet throughput requirements."
+    - content: "Premium service level with a 50-TiB large volume size."
       isCorrect: true
       explanation: "This configuration meets throughput requirements with the lowest capacity pool cost."
-    - content: "Ultra service level with a 20-TiB volume size."
+    - content: "Ultra service level with a 100-TiB large volume size."
       isCorrect: false
       explanation: "This configuration meets throughput requirements but the capacity pool cost isn't the lowest."

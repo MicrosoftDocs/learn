@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/18/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What feature of vCore-based Azure Cosmos DB for MongoDB simplifies the building of AI-driven applications?"
+    choices:
+    - content: "Flexible shard key implementation"
+      isCorrect: false
+      explanation: "Incorrect. While shard keys are important for scaling, they do not simplify the building of AI-driven applications."
+    - content: "Integrated Vector Search feature"
+      isCorrect: true
+      explanation: "Correct. The Vector Search feature simplifies data indexing and querying using data embeddings for AI within the database."
+    - content: "Integrated Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor aids in performance monitoring and troubleshooting, not directly in building AI-driven applications."
+  - content: "Which method can you use to create a vCore-based Azure Cosmos DB for MongoDB cluster?"
+    choices:
+    - content: "Direct database insertion without a cluster"
+      isCorrect: false
+      explanation: "Incorrect. Direct database insertion is not a method for creating a cluster."
+    - content: "Using the Azure portal"
+      isCorrect: true
+      explanation: "Correct. The Azure portal provides straightforward prompts to create your cluster."
+    - content: "Manual configuration of each database node of the cluster"
+      isCorrect: false
+      explanation: "Incorrect. Manual node configuration is not required for creating a vCore-based cluster."
+  - content: "Why is native support for storing and searching vector embeddings important in vCore-based Azure Cosmos DB for MongoDB?"
+    choices:
+    - content: "It enables efficient AI features like similarity search"
+      isCorrect: true
+      explanation: "Correct. Vector embeddings are crucial for AI applications, enabling features like similarity searches."
+    - content: "It reduces the cost of storage significantly"
+      isCorrect: false
+      explanation: "Incorrect. While cost-efficient, the main importance isn't cost reduction."
+    - content: "To automate AI model training directly within the database"
+      isCorrect: false
+      explanation: "Incorrect. While vector embeddings enhance AI capabilities, they do not automate AI model training within the database."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-identity-protection
+title: Implement Microsoft Entra Identity protection
+metadata:
+  title: Implement Microsoft Entra Identity protection
+  description: "Implement Microsoft Entra Identity protection"
+  ms.date: 07/03/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-microsoft-entra-identity-protection.md)]

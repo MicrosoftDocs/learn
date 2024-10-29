@@ -4,13 +4,15 @@ title: Apply an automated workflow
 metadata:
   title: Apply an Automated Workflow
   description: Learn about automated workflow tooling and how they integrate with Terraform and Azure.
-  ms.date: 02/01/2021
+  ms.date: 08/02/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-devops-actions
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
+    - devx-track-terraform
   ms.contributors: ropreddy-04092021
 durationInMinutes: 3
 content: |

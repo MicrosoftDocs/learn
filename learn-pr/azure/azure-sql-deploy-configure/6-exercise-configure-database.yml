@@ -3,14 +3,15 @@ uid: learn.azure-sql-deploy-configure.6-exercise-configure-database
 metadata:
   title: Exercise - Configure Azure SQL Database
   description: Exercise - Configure Azure SQL Database
-  ms.date: 03/15/2023
+  ms.date: 10/16/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Configure Azure SQL Database
 durationInMinutes: 10
 interactive: powershell
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/6-exercise-configure-database.md)]

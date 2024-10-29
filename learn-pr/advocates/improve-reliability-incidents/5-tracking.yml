@@ -4,11 +4,10 @@ title: "Incident tracking"
 metadata:
   title: "Incident tracking"
   description: "Incident tracking"
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 7
@@ -18,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What of these questions is not immediately useful to ask about an incident when you evaluate your incident tracking process?'
+  - content: 'Which of these questions is not immediately useful to ask about an incident when you evaluate your incident tracking process?'
     choices:
     - content: 'How did we find out about the problem?'
       isCorrect: false
@@ -31,28 +30,28 @@ quiz:
       explanation: 'This example is a good question to ask.'
     - content: 'How quickly can we reach a C-level executive about the problem?'
       isCorrect: true
-      explanation: 'Correct, though C-level executives are important, this does not help you evaluate your process.'
+      explanation: 'Correct, though C-level executives are important, there are more critical factors to consider first.'
 
   - content: 'When creating a conversation bridge to communicate about an incident, why is it important to carve out a unique channel for it?'
     choices:
-    - content: 'this process will make sure we are HIPAA-compliant'
+    - content: 'This process will make sure we stay HIPAA-compliant'
       isCorrect: false
-      explanation: 'This is not a HIPAA requirement (and it does not relate to keeping irrelevant discussion out of the channel)'
-    - content: 'it will keep irrelevant discussion out of the channel making it easier to later use the data for post-incident review'
+      explanation: 'HIPAA has nothing to do with this process.'
+    - content: 'It will keep irrelevant discussion out of the channel, making it easier to later use the data for post-incident review.'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'it lets us keep channels for engineers and management separate'
+    - content: 'It lets us keep channels for engineers and management separate.'
       isCorrect: false
-      explanation: 'This process is not necessary when communicating about an incident (under normal circumstances).'
+      explanation: 'This process is unnecessary when communicating about an incident (under normal circumstances).'
 
   - content: 'Which of the following is true?'
     choices:
-    - content: 'You should keep information about incidents limited to only the primary and secondary responders until the incident has been resolved'
+    - content: 'You should keep information about incidents limited to only the primary and secondary responders until the incident has been resolved.'
       isCorrect: false
       explanation: 'All people associated with the incident need access to the information.'
-    - content: 'You should keep information about an incident in a centralized place where it is accessible to everyone on the team'
+    - content: 'You should keep information about an incident in a centralized place where everyone on the team can access it.'
       isCorrect: true
-      explanation: 'Correct, it is important that it is easy to find and access.'
+      explanation: 'Correct, keeping the information is easy to find and access is important.'
     - content: 'You should use only email to document discussions about the incident.'
       isCorrect: false
       explanation: 'There are many ways to document discussions about an incident.'
@@ -61,10 +60,10 @@ quiz:
     choices:
     - content: 'ChatOps'
       isCorrect: false
-      explanation: 'ChatOps is a practice, it is not a codeless automation tool.'
-    - content: 'troubleshooting guides'
+      explanation: 'ChatOps is a practice, not a codeless automation tool.'
+    - content: 'Troubleshooting guides'
       isCorrect: false
-      explanation: 'Troubleshooting guides are useful for providing runbooks for response, they are not a codeless automation tool.'
+      explanation: 'Troubleshooting guides are useful for providing runbooks for response, but not as a codeless automation tool.'
     - content: 'Logic Apps'
       isCorrect: true
       explanation: 'Correct.'

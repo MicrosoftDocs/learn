@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 06/13/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/16/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -18,49 +17,49 @@ quiz:
     choices:
     - content: User account
       isCorrect: false
-      explanation: Incorrect. Deployment agents run in an unattended mode, so you should never use a user account.
+      explanation: Deployment agents run in an unattended mode, so you should never use a user account.
     - content: Service principal
       isCorrect: false
-      explanation: Incorrect. A service principal can be used for this purpose, but using a service principal requires that you manage credentials. Because you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
+      explanation: A service principal can be used for this purpose, but using a service principal requires that you manage credentials. Because you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
     - content: Managed identity
       isCorrect: true
-      explanation: Correct. Managed identities are designed for unattended access, and they don't require you work with credentials. Because you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
+      explanation: Managed identities are designed for unattended access, and they don't require you work with credentials. Because you're running a custom deployment agent on a virtual machine, you should use a managed identity so that you don't have to maintain credentials.
   - content: You need to create a service principal for a pipeline that deploys your infrastructure to three environments - development, test, and production. Each environment is in a dedicated resource group in three different subscriptions. What should you do?
     choices:
     - content: Create a single service principal and grant it access to the tenant root management group.
       isCorrect: false
-      explanation: Incorrect. Although this will work, it's not a good practice to use a single service principal for all of your environments. Additionally, granting access to your tenant root management group will allow the service principal to modify resources anywhere in your Azure environment, which is unnecessarily permissive.
+      explanation: Although this will work, it's not a good practice to use a single service principal for all of your environments. Additionally, granting access to your tenant root management group will allow the service principal to modify resources anywhere in your Azure environment, which is unnecessarily permissive.
     - content: Create a single service principal and grant it access to each of the resource groups in the three subscriptions.
       isCorrect: false
-      explanation: Incorrect. Although this will work, it's not good practice to use a single service principal for all of your environments. At the very least, you should separate production and non-production environments by using two service principals, but a dedicated service principal for each environment is ideal.
+      explanation: Although this will work, it's not good practice to use a single service principal for all of your environments. At the very least, you should separate production and non-production environments by using two service principals, but a dedicated service principal for each environment is preferred.
     - content: Create three service principals, one per environment, and grant each access to a single resource group in the relevant subscription.
       isCorrect: true
-      explanation: Correct. When you work with multiple environments, it's best to use dedicated service principals for each environment so that your pipeline can't accidentally change anything in another environment.
+      explanation: When you work with multiple environments, it's best to use dedicated service principals for each environment so that your pipeline can't accidentally change anything in another environment.
   - content: You create a service principal with a key, and you set the key to expire 30 days in the future. What happens after that time?
     choices:
     - content: Nothing - the key will automatically renew.
       isCorrect: false
-      explanation: Incorrect. Service principal keys don't automatically renew.
+      explanation: Service principal keys don't automatically renew.
     - content: Your client can no longer authenticate.
       isCorrect: true
-      explanation: Correct. After a service principal's key has expired, the key can't be used to authenticate. You need to issue a new key.
+      explanation: After a service principal's key has expired, the key can't be used to authenticate. You'll need to issue a new key.
     - content: Your client can authenticate, but it receives a warning that the key has expired.
       isCorrect: false
-      explanation: Incorrect. After a service principal's key has expired, the key can't be used to authenticate. You need to issue a new key.
+      explanation: After a service principal's key has expired, the key can't be used to authenticate. You'll need to issue a new key.
   - content: You're creating a service principal to run a pipeline. The pipeline deploys a Bicep template that creates a single storage account. Which of the following options has the least privileged access that you need for your pipeline?
     choices:
     - content: |
         **Role definition:** Contributor<br />
         **Scope:** Subscription
       isCorrect: false
-      explanation: Incorrect. The Contributor role is a good one to use. However, you should avoid granting it over the subscription scope unless you need to. In this case, you don't.
+      explanation: The Contributor role is a good one to use. However, you should avoid granting it over the subscription scope unless you need to. In this case, you don't.
     - content: |
         **Role definition:** Contributor<br />
         **Scope:** Resource group
       isCorrect: true
-      explanation: Correct. The Contributor role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this pipeline needs.
+      explanation: The Contributor role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this pipeline needs.
     - content: |
         **Role definition:** Owner<br />
         **Scope:** Resource group
       isCorrect: false
-      explanation: Incorrect. This role assignment is too permissive. You should avoid granting the Owner role unless it's required. In this example, it's not.
+      explanation: This role assignment is too permissive. You should avoid granting the Owner role unless it's required. In this example, it's not.

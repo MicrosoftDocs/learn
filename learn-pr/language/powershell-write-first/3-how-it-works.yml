@@ -3,12 +3,12 @@ uid: learn.languages.powershell-write-first.how-it-works
 title: How PowerShell code works
 metadata:
   title: How PowerShell code works
-  description: How does code work in PowerShell? What do those words and symbols mean?
-  ms.date: 03/29/2023
+  description: Learn how code works in PowerShell, and what those words and symbols mean.
+  ms.date: 10/04/2023
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 4
 azureSandbox: false
 interactive: powershell

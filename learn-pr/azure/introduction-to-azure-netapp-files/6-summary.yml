@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary unit for the Introduction to Azure NetApp Files module.
-  ms.date: 06/18/2021
+  ms.date: 07/30/2024
   author: mengruts
-  ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anfdocs
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

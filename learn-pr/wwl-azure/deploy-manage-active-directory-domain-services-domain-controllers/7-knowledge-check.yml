@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When deploying the first domain controller in a forest by running the **Active Directory Domain Services Configuration Wizard**, which of the following options is configured by default?"
+    choices:
+    - content: "RODC"
+      isCorrect: false
+      explanation: "That's incorrect. This option isn't available for the first domain controller in a forest."
+    - content: "Global catalog"
+      isCorrect: true
+      explanation: "That's correct. This option is selected by default for the first domain controller in a forest."
+    - content: "DNS name"
+      isCorrect: false
+      explanation: "That's incorrect. When you create the first domain controller for a domain, you must specify the FQDN."
+  - content: "What does the global catalog contain?"
+    choices:
+    - content: "A copy of all objects and their attributes from all domains in an AD DS forests"
+      isCorrect: false
+      explanation: "That's incorrect. The global catalog doesn't contain all the attributes for each object; instead, the global catalog maintains the subset of attributes that are most likely to be useful in cross-domain searches."
+    - content: "A copy of all objects and some of their attributes from all domains in an AD DS forest"
+      isCorrect: true
+      explanation: "That's correct. The global catalog contains the subset of attributes that are most likely to be useful in cross-domain searches."
+    - content: "A copy of all objects and all their attributes from all domains in an AD DS forest"
+      isCorrect: false
+      explanation: "That's incorrect. The global catalog contains some of the attributes for each object in the AD DS forest."
+  - content: "Which of the following operations master is a forest-level operations master?"
+    choices:
+    - content: "Infrastructure"
+      isCorrect: false
+      explanation: "That's incorrect. Infrastructure master is a domain-level operations master."
+    - content: "Domain naming"
+      isCorrect: true
+      explanation: "That's correct. Domain naming master is a forest-level operations master."
+    - content: "RID"
+      isCorrect: false
+      explanation: "That's incorrect. RID master is a domain-level operations master."

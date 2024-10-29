@@ -4,11 +4,10 @@ metadata:
 # Search engine metadata  
   title: Knowledge check 
   description: Knowledge check
-  author: jlooper
-  ms.date: 02/10/2020
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: GitHubber17
+  ms.date: 12/22/2022
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Check your knowledge
 durationInMinutes: 11

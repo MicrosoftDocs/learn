@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/04/2021
+  ms.date: 06/11/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
+  ms.topic: unit
 durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -24,13 +24,13 @@ quiz:
       explanation: "That's correct. This component works as a proxy client between a computer running Windows and the CA. CES enables users, computers, or applications to connect to a CA by using web services."
     - content: "Certification Authority Web Enrollment"
       isCorrect: false
-      explanation: "That's incorrect. Certification Authority Web Enrollment provides a method to issue and renew certificates in scenarios where users use devices that are not joined to the domain or are running operating systems other than Windows."
+      explanation: "That's incorrect. Certification Authority Web Enrollment provides a method to issue and renew certificates in scenarios where users use devices that aren't joined to the domain or are running operating systems other than Windows."
   - content: "Which Enterprise CA functionality isn't available when using Standalone CA?"
     choices:
-    - content: "web enrollment"
+    - content: "Web enrollment"
       isCorrect: false
       explanation: "That's incorrect. Web enrollment is available with both Enterprise CA and Standalone CA."
-    - content: "automatic approval of certificate requests"
+    - content: "Automatic approval of certificate requests"
       isCorrect: true
       explanation: "That's correct. With Standalone CA, a CA administrator must approve all requests manually. Enterprise CA can issue certificates or deny certificate issuance automatically based on a CA administrator-defined custom configuration."
     - content: "You can configure it as offline root CA"
@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "You must configure a policy CA."
       isCorrect: false
-      explanation: "That's incorrect. You use policy CAs to issue CA certificates to their subordinate CAs. They are not required to use templates."
+      explanation: "That's incorrect. You use policy CAs to issue CA certificates to their subordinate CAs. They aren't required to use templates."
     - content: "You must implement an Enterprise CA."
       isCorrect: true
       explanation: "That's correct. Templates are available only when using Enterprise CA."

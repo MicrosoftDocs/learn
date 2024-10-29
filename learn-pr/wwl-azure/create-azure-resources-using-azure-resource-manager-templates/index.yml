@@ -2,22 +2,24 @@
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
   title: Create Azure resources using Azure Resource Manager templates
-  description: "Create Azure resources using Azure Resource Manager templates"
-  ms.date: 01/10/2023
+  description: Create Azure resources using Azure Resource Manager templates
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-resource-manager
 title: Create Azure resources using Azure Resource Manager templates
 summary: This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Create Azure resources using Azure Resource Manager templates
-  - Understand Azure Resource Manager templates and template components
-  - Manage dependencies and secrets in templates
-  - Organize and modularize templates
-prerequisites: |
-  None
+  By the end of this module, you're able to:
+  -   Create Azure resources using Azure Resource Manager templates.
+  -   Understand Azure Resource Manager templates and template components.
+  -   Manage dependencies and secrets in templates.
+  -   Organize and modularize templates.
+prerequisites: None
 iconUrl: /training/achievements/2-create-azure-resources-using-arm-templates.svg
 levels:
 - advanced
@@ -41,7 +43,7 @@ products:
 - azure-test-plans
 - github
 subjects:
-- serverless-compute
+- serverless-computing
 units:
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.introduction
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates
@@ -49,7 +51,6 @@ units:
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-dependencies
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.modularize-templates
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-secrets-templates
-- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.azure-deployment-using-resource-manager-templates
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.knowledge-check
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.summary
 badge:

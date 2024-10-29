@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-register-azure-ad-app
-title: Exercise - Register an application with Azure AD
+title: Exercise - Register an application with Microsoft Entra ID
 metadata:
   unitType: exercise
-  title: Exercise - Register an application with Azure AD
-  description: In this exercise, you will register a web application with Azure AD through the Azure portal.
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Exercise - Register an application with Microsoft Entra ID
+  description: In this exercise, you will register a web application with Microsoft Entra ID through the Azure portal.
+  ms.date: 11/21/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-register-azure-ad-app.md)]

@@ -3,14 +3,13 @@ uid: learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
 title: Train custom models
 metadata:
   title: Train custom models
-  description: "Train custom models"
-  ms.date: 05/17/2022
+  description: Train custom models
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: berryivor
+  ms.date: 04/18/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/6-train-custom-models.md)]

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators
+metadata:
+  title: Training, certification, and course planning for MSLE
+  description: "The VEPS series covers the MSLE program providing an understanding of all aspects of the program from joining MSLE, preparing to teach a course, closing out a course, and participating in the MSLE Teams-based community."
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: module-intro-to-product
+  ms.service: azure
+  ai-usage: human-only
+title: Training, certification, Course planning Microsoft Learn Educators
+summary: The VEPS series covers the MSLE program providing an understanding of all aspects of the program from joining MSLE, preparing to teach a course, closing out a course, and participating in the MSLE Teams-based community.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Register your course in the Microsoft Learn for Educators portal.
+
+  -   Learn how to set up your lab seats and access Azure credits.
+
+  -   Execute learning management system integration.
+
+  -   Access technical training.
+
+  -   Determine how you and your students get certified.
+
+  -   Finalize course preparation.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+units:
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.introduction
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.register-your-course-microsoft-learn-educators-portal
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.learn-how-set-up-your-lab-seats-access-azure-credits
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.execute-learn-management-system-integration
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.access-technical-training
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.determine-how-you-and-your-students-will-get-certified
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.finalize-course-preparation
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.knowledge-check
+- learn.wwl.training-certification-course-planning-microsoft-learn-educators.summary
+badge:
+  uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.badge

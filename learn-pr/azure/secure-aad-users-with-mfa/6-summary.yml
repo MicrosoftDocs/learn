@@ -3,11 +3,10 @@ uid: learn.azure-security.secure-aad-users-with-mfa.summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/03/2021
+  ms.date: 11/03/2023
   author: Justinha
   ms.author: justinha
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 4
 content: |

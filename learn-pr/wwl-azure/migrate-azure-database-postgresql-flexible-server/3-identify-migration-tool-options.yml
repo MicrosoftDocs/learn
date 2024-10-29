@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.identify-migration-tool-options
+title: Identify migration tool options
+metadata:
+  title: Identify migration tool options
+  description: "Identify migration tool options."
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-identify-migration-tool-options.md)]

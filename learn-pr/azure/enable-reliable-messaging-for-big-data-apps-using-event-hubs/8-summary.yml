@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/04/2023
+  ms.date: 11/22/2023
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]
@@ -25,20 +24,20 @@ quiz:
       isCorrect: false
       explanation: "Publishers can use either HTTPS or AMQP. HTTP isn't ideal for frequent publishing because it establishes a new connection for each publication."
  
-  - content: "By default, how many partitions a new event hub has?"
+  - content: "By default, how many partitions does a new event hub have?"
     choices:
-    - content: "1"
+    - content: "One"
       isCorrect: false
-      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
-    - content: "2"
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
+    - content: "Two"
       isCorrect: false
-      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
-    - content: "3"
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
+    - content: "Three"
       isCorrect: false
-      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
-    - content: "4"
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
+    - content: "Four"
       isCorrect: true
-      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to four partitions. Partitions are the buckets within an event hub. Each publication goes into only one partition. Each consumer group might read from one or more than one partition."
  
   - content: "What is the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs?"
     choices:

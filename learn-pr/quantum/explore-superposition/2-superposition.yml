@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-superposition.superposition
+title: What is superposition?
+metadata:
+  title: What is superposition?
+  description: Learn what superposition is. 
+  ms.date: 03/04/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-superposition.md)]

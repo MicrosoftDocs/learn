@@ -1,17 +1,25 @@
 ### YamlMime:Module
+###
+### Contributor instructions:
+### 1. Sample repo: 
+###     https://github.com/MicrosoftDocs/node-essentials/tree/main/nodejs-files 
+### 2. Changes to inline code must also be made in sample repo as PR
+###     @mention diberry for review
+
 uid: learn.azure.nodejs-files
 metadata:
   title: Work with files and directories in a Node.js app using JavaScript
-  description: Build an app that manipulates files and directories with Node.js using JavaScript.
-  ms.date: 03/22/2023
-  author: burkeholland
-  ms.author: buhollan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Build an app that manipulates files and directories with Node.js using JavaScript CommonJS.
+  ms.date: 04/19/2024
+  author: diberry
+  ms.author: diberry
+  manager: mcleans
+  ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: buhollan-09032021
+  ms.service: azure-javascript
 title: Work with files and directories in a Node.js app
-summary: Build an app that manipulates files and directories with Node.js.
+summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
 abstract: |
   By the end of this module, you will be able to:
   
@@ -29,8 +37,6 @@ roles:
 products:
   - azure
 prerequisites: None
-subjects:
-- development-tools
 units:
   - learn.azure.nodejs-files.1-introduction
   - learn.azure.nodejs-files.2-file-system

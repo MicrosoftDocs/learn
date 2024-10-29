@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rcaper
+  ms.date: 04/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of sentiment analysis?"
+    choices:
+    - content: "Extract specific aspects from text"
+      isCorrect: false
+      explanation: "Incorrect. Sentiment analysis focuses on understanding emotions in text, not extracting specific aspects or identifying entities."
+    - content: "Determine the emotional tone expressed in text"
+      isCorrect: true
+      explanation: "Correct. Sentiment analysis aims to understand whether text expresses positive, negative, or neutral emotions."
+    - content: "Identify entities such as people and locations"
+      isCorrect: false
+      explanation: "Incorrect. Sentiment analysis focuses on understanding emotions in text, not extracting specific aspects or identifying entities."
+  - content: "Which of the following best describes opinion mining (aspect-based sentiment analysis)?"
+    choices:
+    - content: "Identifying specific aspects within text and their associated sentiments"
+      isCorrect: true
+      explanation: "Correct. Opinion mining, or aspect-based sentiment analysis, considers specific aspects or features mentioned in a text. For example, it can determine whether a product review expresses a positive or negative opinion about the battery life, user interface, or customer service."
+    - content: "Analyzing the overall sentiment of a document"
+      isCorrect: false
+      explanation: "Incorrect. Opinion mining goes beyond overall sentiment to analyze opinions related to specific aspects (such as product features and service quality)."
+    - content: "Extracting key phrases from text"
+      isCorrect: false
+      explanation: "Incorrect. Opinion mining analyzes opinions related to specific aspects of the text, such as product features or service quality). It isn't used for extracting key phrases."
+  - content: "What does sentiment analysis provide in terms of sentiment labels?"
+    choices:
+    - content: "Positive, negative, and neutral"
+      isCorrect: true
+      explanation: "Correct. Sentiment analysis labels text with sentiments like positive, negative, or neutral."
+    - content: "High confidence scores"
+      isCorrect: false
+      explanation: "Incorrect. While sentiment analysis returns scores, these indicate the model's confidence in assigning a label to the associated text."
+    - content: "Overall sentiment orientation"
+      isCorrect: false
+      explanation: "Incorrect. Overall sentiment orientation refers to text classification based on underlying sentiment. Sentiment analysis labels are used to describe this, but it doesn't define the labels sentiment analysis provides."

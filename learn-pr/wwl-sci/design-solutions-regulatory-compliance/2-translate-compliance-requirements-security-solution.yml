@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
-title: Translate compliance requirements into a security solution
+title: Translate compliance requirements into security controls
 metadata:
-  title: Translate compliance requirements into a security solution
-  description: "SC-100 preparatory unit on the topic: translate compliance requirements into a security solution."
+  title: Translate compliance requirements into security controls
+  description: "SC-100 preparatory unit on the topic: Translate compliance requirements into security controls."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-translate-compliance-requirements-security-solution.md)]

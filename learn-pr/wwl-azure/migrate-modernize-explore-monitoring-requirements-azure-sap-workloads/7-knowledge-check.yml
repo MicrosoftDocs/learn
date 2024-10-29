@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/08/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following items is one of the four broad requirements that must be met to ensure full support for monitoring of SAP workloads on Azure?"
+    choices:
+    - content: "The Azure Extension for SAP is deployed and correctly configured."
+      isCorrect: true
+      explanation: "Correct. The user must set up every Azure instance that hosts SAP software and related DBMS systems such that the Azure Extension for SAP is deployed and correctly configured, data from the Azure Extension for SAP is visible in the SAP NetWeaver system, the Azure virtual machine instance has an active route to the internet, and SAP Enhanced Monitoring is deployed."
+    - content: "The Azure virtual machine is running an allowed Windows operating system only."
+      isCorrect: false
+      explanation: "Incorrect. This isn't one of the four broad requirements that must be met to ensure full support for monitoring of SAP workloads on Azure."
+    - content: "The Azure virtual machine instance must be isolated from the internet."
+      isCorrect: false
+      explanation: "Incorrect. One of the requirements is that the Azure virtual machine instance has an active route to the Internet."
+  - content: "Which Azure manageability feature reports platform-related issues that might affect customers' resources?"
+    choices:
+    - content: "Azure Advisor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability."
+    - content: "Azure Service Health"
+      isCorrect: true
+      explanation: "Correct. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability; and Azure Activity Log tracks events representing operations that alter the state of the user's resources; such as configuration changes, service health incidents, and autoscale operations."
+    - content: "Azure Activity Log"
+      isCorrect: false
+      explanation: "Incorrect. Azure Activity Log tracks events representing operations that alter the state of the user's resources; such as configuration changes, service health incidents, and autoscale operations."
+  - content: "Which version of the Azure Extension for SAP does Microsoft recommend for installation?"
+    choices:
+    - content: "The New version is recommended in all cases."
+      isCorrect: false
+      explanation: "Incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
+    - content: "The Standard version is recommended, except for certain specific use cases."
+      isCorrect: true
+      explanation: "Correct. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
+    - content: "The New version is recommended, except for certain specific use cases."
+      isCorrect: false
+      explanation: "Incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
+  - content: "Does Microsoft recommend a particular version of the Azure Extension for SAP for installation of SUSE SLES 15?"
+    choices:
+    - content: "Yes, the Standard version is recommended."
+      isCorrect: false
+      explanation: "Incorrect. Installing the extension on SUSE SLES 15 or higher is one of the specific use cases where the New version is recommended."
+    - content: "Yes, the New version is recommended."
+      isCorrect: true
+      explanation: "Correct. Choose the New version only in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
+    - content: "No, both versions are equally valid in this scenario."
+      isCorrect: false
+      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."

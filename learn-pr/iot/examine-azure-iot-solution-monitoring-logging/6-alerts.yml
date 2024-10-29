@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.alerts
+title: Examine alerts for Azure IoT Hub
+metadata:
+  title: Examine alerts for Azure IoT Hub
+  description: "Examine alerts for Azure IoT Hub"
+  ms.date: 01/17/2024
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-alerts.md)]

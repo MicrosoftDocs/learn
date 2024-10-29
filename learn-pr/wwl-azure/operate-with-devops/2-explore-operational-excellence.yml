@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operate-with-devops.explore-operational-excellence
+title: 'Explore operational excellence'
+metadata:
+  title: 'Explore operational excellence'
+  description: "This unit explores operational excellence in the context of DevOps, covering core aspects and principles."
+  ms.date: 02/06/2024
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-explore-operational-excellence.md)]

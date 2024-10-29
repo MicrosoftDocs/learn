@@ -3,19 +3,26 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 12/09/2022
+  ms.date: 05/28/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  ai-usage: human-only
 title: Create a release pipeline
-summary: This module describes Azure Pipelines capabilities, build and release tasks.
+summary: This module describes Azure Pipelines capabilities, build, and release tasks.
 abstract: |
-  By the end of this module, you'll be able to:
-  *   Explain the terminology used in Azure DevOps and other Release Management Tooling
-  *   Describe what a Build and Release task is, what it can do, and some available deployment tasks
-  *   Implement release jobs
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Explain the terminology used in Azure DevOps and other Release Management Tooling.
+
+  -   Describe what a Build and Release task is, what it can do, and some available deployment tasks.
+
+  -   Implement release jobs.
+prerequisites: None
 iconUrl: /training/achievements/1-create-a-release-pipeline.svg
 levels:
 - advanced
@@ -46,12 +53,11 @@ units:
 - learn.wwl.create-release-pipeline.explore-release-pipelines
 - learn.wwl.create-release-pipeline.explore-artifact-sources
 - learn.wwl.create-release-pipeline.choose-appropriate-artifact-source
-- learn.wwl.create-release-pipeline.exercise-select-artifact-source
 - learn.wwl.create-release-pipeline.examine-considerations-for-deployment-to-stages
-- learn.wwl.create-release-pipeline.exercise-set-up-stages
 - learn.wwl.create-release-pipeline.explore-build-release-tasks
 - learn.wwl.create-release-pipeline.explore-custom-build-release-tasks
 - learn.wwl.create-release-pipeline.explore-release-jobs
+- learn.wwl.create-release-pipeline.understand-database-deployment-task
 - learn.wwl.create-release-pipeline.configure-pipelines-code-with-yaml
 - learn.wwl.create-release-pipeline.knowledge-check
 - learn.wwl.create-release-pipeline.summary

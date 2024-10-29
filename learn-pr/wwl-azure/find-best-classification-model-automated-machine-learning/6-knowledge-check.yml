@@ -3,12 +3,13 @@ uid: learn.wwl.find-best-classification-model-automated-machine-learning.knowled
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your knowledge on how to use automated machine learning to find the best classification model in Azure Machine Learning."
-  ms.date: 01/20/2023
+  description: Test your knowledge on how to use automated machine learning to find the best classification model in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:

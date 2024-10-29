@@ -4,11 +4,12 @@ title: Exercise - Upload resources to be used by a Batch with the .NET storage l
 metadata:
   title: Exercise - Upload resources to be used by a Batch with the .NET storage library
   description: In this hands-on exercise, you'll use the storage library to connect to Azure storage and upload your pet videos.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-upload-resources-with-storage-library.md)]

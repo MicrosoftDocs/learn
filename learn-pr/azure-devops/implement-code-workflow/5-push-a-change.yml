@@ -4,12 +4,11 @@ title: Exercise - Push a change through the pipeline
 metadata:
   title: Exercise - Push a change through the pipeline
   description: Practice the entire process by adding a feature to a branch and then pushing that branch to GitHub.
-  ms.date: 07/29/2022
+  ms.date: 10/24/2023
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 19
 content: |
   [!include[](includes/5-push-a-change.md)]

@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-container-app-azure-container-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/22/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are some common uses of Azure Container Apps?"
+    choices:
+    - content: "Deploying API endpoints, hosting background processing jobs, handling event-driven processing, running microservices."
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps is designed to run microservices and containerized applications on a serverless platform, with common uses including deploying API endpoints, hosting background processing jobs, handle event-driven processing, and run microservices."
+    - content: "Managing cloud infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Apps is designed to abstract away the concerns of managing cloud infrastructure."
+    - content: "Deploying virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Apps is not used for deploying virtual machines."
+  - content: "What is the purpose of Azure Container Apps?"
+    choices:
+    - content: "To run microservices and containerized applications on a serverless platform while leaving behind the concerns of manually configuring cloud infrastructure and complex container orchestrators."
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps enables you to run microservices and containerized applications on a serverless platform while leaving behind the concerns of manually configuring cloud infrastructure and complex container orchestrators."
+    - content: "To manually configure cloud infrastructure and complex container orchestrators."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Apps eliminates the need for manual configuration of cloud infrastructure and complex container orchestrators."
+    - content: "To run only monolithic applications on a serverless platform."
+      isCorrect: false
+      explanation: "Incorrect. Azure Container Apps enables you to run microservices and containerized applications on a serverless platform."
+  - content: "What is the benefit of using a managed identity in a running container app?"
+    choices:
+    - content: "Managed identities are only useful for workloads contained within a single resource."
+      isCorrect: false
+      explanation: "Incorrect. Managed identities can be used for workloads that run on multiple resources and need pre-authorization to a secure resource."
+    - content: "Managed identities require you to manage credentials in your container app."
+      isCorrect: false
+      explanation: "Incorrect. With managed identities, you don't need to manage credentials in your container app."
+    - content: "Your app connects to resources with the managed identity. You don't need to manage credentials in your container app."
+      isCorrect: true
+      explanation: "Correct. Managed identities allow your app to connect to resources without needing to manage credentials in your container app."
+  - content: "What is the purpose of enabling ingress in Azure Container Apps?"
+    choices:
+    - content: "To create an Azure Load Balancer."
+      isCorrect: false
+      explanation: "Incorrect. Enabling ingress does not require creating an Azure Load Balancer."
+    - content: "To restrict access to the container app's internal environment."
+      isCorrect: false
+      explanation: "Incorrect. Enabling ingress allows traffic from both the public internet and the container app's internal environment."
+    - content: "To expose the container app to the public web, virtual network, and other container apps within the environment."
+      isCorrect: true
+      explanation: "Correct. Enabling ingress allows external and internal traffic to be routed to the container app, without requiring additional Azure resources like a Load Balancer or public IP address."
+  - content: "What happens when a secret is updated or deleted in Azure Container Apps?"
+    choices:
+    - content: "All revisions that reference the secret are automatically updated or deleted."
+      isCorrect: false
+      explanation: "Incorrect. An updated or deleted secret doesn't automatically affect existing revisions in your app. When a secret is updated or deleted, you can respond to changes in one of two ways: deploy a new revision or restart an existing revision."
+    - content: "A new revision is automatically generated for the application."
+      isCorrect: false
+      explanation: "Incorrect. Secrets are scoped to an application, outside of any specific revision of an application. Adding, removing, or changing secrets doesn't generate new revisions."
+    - content: "A new revision must be deployed or an existing revision must be restarted."
+      isCorrect: true
+      explanation: "Correct. When a secret is updated or deleted, you can respond to changes in one of two ways: deploy a new revision or restart an existing revision."
+  - content: "What is the main difference between container file system and ephemeral storage in Azure Container Apps?"
+    choices:
+    - content: "Container file system is visible to other containers, while ephemeral storage is only visible to processes running in the current container."
+      isCorrect: false
+      explanation: "Incorrect. Container file system storage is only visible to processes running in the current container."
+    - content: "Ephemeral storage is scoped to a single replica, while container file system storage is scoped to the local container."
+      isCorrect: true
+      explanation: "Correct. Ephemeral storage is scoped to a single replica, while container file system storage is scoped to the local container. This means that files written to ephemeral storage are persisted for the lifetime of the replica, while files written to container file system storage disappear when the container is shut down or restarted."
+    - content: "Ephemeral storage is permanent, while container file system is temporary."
+      isCorrect: false
+      explanation: "Incorrect. Ephemeral storage is also temporary, but scoped to a single replica."
+  - content: "What is the purpose of Service Connector in Azure Container Apps?"
+    choices:
+    - content: "Service Connector is used to manage the configuration of virtual machines in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Service Connector is not used to manage virtual machines in Azure."
+    - content: "Service Connector is used to connect Azure services together and manage the configuration of the network settings and connection information between different services."
+      isCorrect: true
+      explanation: "Correct. Service Connector is designed to provide a simple way to create and manage connections between Azure services, configure network settings, authentication, and manage connection environment variables or properties."
+    - content: "Service Connector is used to manage the configuration of network settings for on-premises servers."
+      isCorrect: false
+      explanation: "Incorrect. Service Connector is not used to manage the configuration of network settings for on-premises servers."

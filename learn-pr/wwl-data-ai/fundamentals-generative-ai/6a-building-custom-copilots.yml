@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.building-custom-copilots
+title: Extending and developing copilots
+metadata:
+  title: Extending and developing copilot
+  description: Understand when to use Copilot Studio and when to use Azure AI Studio to develop custom copilots.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 5/15/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/6a-building-custom-copilots.md)]

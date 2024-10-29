@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-inspection-of-health.explore-how-to-measure-quality-of-your-release-process
+title: Explore how to measure quality of your release process
+metadata:
+  title: Explore how to measure quality of your release process
+  description: "Explore how to measure quality of your release process"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-explore-how-to-measure-quality-of-your-release-process.md)]

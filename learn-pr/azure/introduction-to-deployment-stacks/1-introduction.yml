@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-deployment-stacks.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Describe the benefits of using deployment stacks to deploy your Azure resources.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: unit
+durationInMinutes: 1
+content: | 
+  [!include[](includes/1-introduction.md)]

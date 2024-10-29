@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: What are bot service and bot framework?
   description: What is Azure Bot Service?
-  ms.date: 6/15/2021
+  ms.date: 04/24/2024
   author: jasonkellingtonwaypoint
-  ms.author: v-jaske
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-bot-service.md)]

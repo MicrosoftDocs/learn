@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-workload-azure-odaa.assess-workloads-build-migration-plan
+title: Assess your workloads and build a migration plan
+metadata:
+  title: Assess your workloads and build a migration plan
+  description: Learn how to assess your workloads and create a migration plan.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-assess-workloads-build-migration-plan.md)]

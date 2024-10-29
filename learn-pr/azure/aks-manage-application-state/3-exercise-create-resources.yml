@@ -2,15 +2,19 @@
 uid: learn.aks-manage-application-state.3-exercise-create-resources
 metadata:
   title: Exercise - Host a new database by using Azure Cosmos DB
-  description: Host a new database by using Azure Cosmos DB, and create a new AKS cluster to save your API changes to the database
-  ms.date: 10/31/2020
+  description: Host a new database using Azure Cosmos DB and create a new AKS cluster to save your API changes to the database.
+  ms.date: 01/04/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Host a new database by using Azure Cosmos DB
-sandbox: true
-interactive: bash
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-azurecli
+title: Host a new database using Azure Cosmos DB
+sandbox: false
+# sandbox: true
+# interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-resources.md)]

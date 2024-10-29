@@ -4,11 +4,10 @@ title: Exercise - Specify and monitor blob metrics
 metadata:
   title: Exercise - Specify and monitor blob metrics
   description: Specify and monitor blob metrics.
-  ms.date: 05/05/2022
+  ms.date: 07/27/2023
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
 azureSandbox: true
 durationInMinutes: 15

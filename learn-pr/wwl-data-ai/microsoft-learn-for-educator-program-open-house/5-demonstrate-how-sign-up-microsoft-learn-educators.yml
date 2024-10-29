@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house.demonstrate-how-sign-up-microsoft-learn-educators
+title: Demonstrate how to sign up for Microsoft Learn for Educators
+metadata:
+  title: Demonstrate how to sign up for Microsoft Learn for Educators
+  description: "Demonstrate how to sign up for Microsoft Learn for Educators"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-demonstrate-how-sign-up-microsoft-learn-educators.md)]

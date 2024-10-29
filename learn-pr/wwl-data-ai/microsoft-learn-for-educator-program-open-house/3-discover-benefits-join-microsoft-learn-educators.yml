@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-for-educator-program-open-house.discover-benefits-join-microsoft-learn-educators
+title: Discover the benefits of joining Microsoft Learn for Educators
+metadata:
+  title: Discover the benefits of joining Microsoft Learn for Educators
+  description: "Discover the benefits of joining Microsoft Learn for Educators"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-discover-benefits-join-microsoft-learn-educators.md)]

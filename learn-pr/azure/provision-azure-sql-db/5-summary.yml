@@ -4,12 +4,11 @@ title: Summary and cleanup
 metadata:
   title: Summary and cleanup
   description: Summary and cleanup
-  ms.date: 09/24/2018
+  ms.date: 10/17/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-summary.md)]
@@ -18,7 +17,7 @@ quiz:
     questions:
     - content: "Who's responsible for performing software updates on your Azure SQL databases and the underlying OS?"
       choices:
-      - content: "You are. It's up to you to periodically log in and install the latest security patches and updates."
+      - content: "You are. It's up to you to periodically install the latest security patches and updates."
         isCorrect: false
         explanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering, meaning much less maintenance to manage yourself."
       - content: "Microsoft Azure. Azure manages the hardware, software updates, and OS patches for you."
@@ -32,12 +31,12 @@ quiz:
       - content: "An administrative container for your databases."
         isCorrect: true
         explanation: "You can control logins, firewall rules, and security policies through the logical server."
-      - content: "Another name for an Azure SQL database instance."
+      - content: "Another name for the Azure SQL Managed Instance service."
         isCorrect: false
-        explanation: "Remember that you can have multiple database instances. Is there a way to administer them collectively?"
+        explanation: "Remember that you can have multiple databases. You can manage multiple databases in a single Azure SQL Database logical server. Azure SQL Managed Instance is a different Azure service."
       - content: "A server that defines the logical rules that sort and compare data."
         isCorrect: false
-        explanation: "_Collation_ refers to the rules that sort and compare data."
+        explanation: "_Collation_ refers to the rules that sort and compare data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
     - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need more IO throughput. Which performance model might you use?"
       choices:
       - content: "DTU"
@@ -48,4 +47,4 @@ quiz:
         explanation: "vCore gives you greater control over what compute and storage resources you create and pay for. You can increase IO throughput but keep the existing amount of compute and storage."
       - content: "SQL elastic pool"
         isCorrect: false
-        explanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option won't help with IO performance because you're working with just one database."
+        explanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option doesn't help with IO performance because you're working with just one database."

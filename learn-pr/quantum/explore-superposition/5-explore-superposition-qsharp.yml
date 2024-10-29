@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-superposition.superposition-qsharp
+title: Explore superposition with Q#
+metadata:
+  title: Explore Superposition with Q#
+  description: Learn how to create superposition states and analyze them using Q#.
+  ms.date: 03/24/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-explore-superposition-qsharp.md)]

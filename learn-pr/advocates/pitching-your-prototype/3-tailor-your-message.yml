@@ -5,10 +5,9 @@ metadata:
   title: Tailor the message for your audience
   description: This unit teaches you how to tailor the message for your audience.
   author: czhu89
-  ms.date: 04/25/2019
+  ms.date: 07/23/2024
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-tailor-the-message.md)]
@@ -22,11 +21,11 @@ quiz:
       explanation: "Provides limited useful information about their interests."
     - content: "Their background, job history, their previous investment history, and their investment thesis."
       isCorrect: true
-      explanation: "Clear and useful information about the investor that will allow you to shape your pitch to their interests."
+      explanation: "Clear and useful information about the investor that lets you shape your pitch to their interests."
     - content: "How they take their coffee."
       isCorrect: false
       explanation: "Not useful."
-  - content: "What should you know about a customer you are pitching to?"
+  - content: "What should you know about a customer you're pitching to?"
     choices:
     - content: "Where their stores are located."
       isCorrect: false
@@ -36,4 +35,4 @@ quiz:
       explanation: "Provides limited useful information about the company."
     - content: "Their products, markets, current competitors, and their business model."
       isCorrect: true
-      explanation: "Clear and useful information about the customer that will allow you to shape your pitch to their needs."
+      explanation: "Clear and useful information about the customer that lets you shape your pitch to their needs."

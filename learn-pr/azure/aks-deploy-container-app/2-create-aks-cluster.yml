@@ -4,11 +4,10 @@ metadata:
   title: Create an Azure Kubernetes Service cluster
   description: Explore some of the architectural concepts you need to consider when you configure your first Azure Kubernetes Service cluster. You'll review concepts such as common cluster architecture and application routing.
   ms.published: 07/31/2020
-  ms.date: 03/01/2022
+  ms.date: 04/04/2023
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Create an Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |

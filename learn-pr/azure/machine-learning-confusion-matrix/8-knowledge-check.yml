@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 05/25/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
   - content: 'What does it mean to have an imbalanced dataset?'
     choices:
-    - content: "The number of samples is much smaller or greater than is required"
+    - content: "The number of samples is smaller or greater than is required"
       isCorrect: false
       explanation: "Incorrect."
     - content: "The feature columns contain many missing values"
@@ -29,20 +28,20 @@ quiz:
     - content: "Log loss, and/or mean squared error"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Whether the dataset has overfit the training set"
+    - content: "Whether the dataset has overfitted the training set"
       isCorrect: false
       explanation: "Incorrect."
     - content: "What kind of mistakes the model is making"
       isCorrect: true
       explanation: "Correct."
-  - content: 'Why don’t we use measures like “True Positives” or “Accuracy” to train our models directly?'
+  - content: 'Why are measures like True Positives or Accuracy not used to train our models directly?'
     choices:
     - content: "There are mathematical barriers that prevent these being used for some training regimens"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Subtle model improvements often do not affect these metrics"
+    - content: "Subtle model improvements often don't affect these metrics"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Both of the above"
       isCorrect: true
-      explanation: "Correct. In fact, these answers are often related. Methods like gradient descent rely on measures of slope, which do not exist for non-smooth functions like accuracy."
+      explanation: "Correct. In fact, these answers are often related. Methods like gradient descent rely on measures of slope, which don't exist for nonsmooth functions like accuracy."

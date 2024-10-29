@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-updates-azure-arc-enabled-servers.create-maintenance-configuration-schedule
+title: Create a maintenance configuration schedule
+metadata:
+  title: Create a maintenance configuration schedule
+  description: "Create a maintenance configuration schedule"
+  ms.date: 06/13/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-maintenance-configuration-schedule.md)]

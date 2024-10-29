@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.what-are-actions
-title: What are Actions?
+title: What are actions?
 metadata:
-  title: What are Actions?
-  description: "What are Actions?"
-  ms.date: 12/09/2022
+  title: What are actions?
+  description: "What are actions?"
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/2-what-are-actions.md)]

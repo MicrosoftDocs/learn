@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cna-set-up-apps-use-scale.3-exercise-set-up-azure-ad
-title: Exercise - Set up Azure AD
+title: Exercise - Set up Microsoft Entra ID
 metadata:
-  title: Exercise - Set up Azure AD
-  description: Exercise - Set up Azure AD
-  ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  title: Exercise - Set up Microsoft Entra ID
+  description: Exercise - Set up Microsoft Entra ID
+  ms.date: 08/22/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-set-up-azure-ad.md)]

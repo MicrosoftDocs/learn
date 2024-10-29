@@ -3,12 +3,14 @@ uid: learn.wwl.analyze-video.use-video-indexer-widgets-apis
 title: Use Video Analyzer widgets and APIs
 metadata:
   title: Use Video Analyzer widgets and APIs
-  description: "Use Video Analyzer widgets and APIs"
-  ms.date: 07/14/2022
+  description: Use Video Analyzer widgets and APIs
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/01/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

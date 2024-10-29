@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.explore-secure-score
+title: Explore secure score
+metadata:
+  title: Explore secure score
+  description: "Explore secure score"
+  ms.date: 04/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/14-explore-secure-score.md)]

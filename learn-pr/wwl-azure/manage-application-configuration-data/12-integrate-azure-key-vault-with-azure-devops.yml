@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.integrate-azure-key-vault-with-azure-devops
+title: Integrate Azure Key Vault with Azure DevOps
+metadata:
+  title: Integrate Azure Key Vault with Azure DevOps
+  description: "Integrate Azure Key Vault with Azure DevOps"
+  ms.date: 05/28/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/12-integrate-azure-key-vault-with-azure-devops.md)]

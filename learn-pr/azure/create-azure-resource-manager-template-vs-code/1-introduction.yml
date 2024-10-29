@@ -4,11 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction.
-  ms.date: 07/08/2020
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

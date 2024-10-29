@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.intro-to-azure-quantum.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.date: 01/09/2024
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  questions:
+
+  - content: 'What is a qubit?'
+    choices:
+    - content: "It's an apparatus for measuring quantum electrical impulses in laboratories."
+      isCorrect: false
+      explanation: "A qubit or quantum bit is the basic unit of information in a quantum computer. It's the quantum analog of the classical bit."
+    - content: "It's the quantum analog of the classical bit. A qubit can take the value `0`, `1`, and a superposition of both `0` and `1`."
+      isCorrect: true
+      explanation: 'The word *qubit* comes from quantum bit. A bit is a binary quantity that can take a value of `0` or `1`. A qubit can take a value of `0`, `1`, or a superposition of both `0` and `1`.'
+    - content: "It's a quantum state of two entangled particles."
+      isCorrect: false
+      explanation: "A qubit is a single particle, which can be in a superposition of two states, `0` and 1. Entanglement isn't required for a qubit."
+
+  - content: 'Which of the following sentences best describes the Azure Quantum service?'
+    choices:
+    - content: 'Azure Quantum is a cloud service that allows you to simulate quantum systems using accelerated classical supercomputers.'
+      isCorrect: false
+      explanation: 'With Azure Quantum you can run quantum algorithms on real quantum hardware, not on classical supercomputers.'
+    - content: 'Azure Quantum is a cloud service that allows you to write and run quantum algorithms on real quantum hardware.'
+      isCorrect: true
+      explanation: 'Azure Quantum provides tools and services to help you develop and run quantum programs on real quantum hardware.'
+    - content: 'Azure Quantum is a series of workshops and training courses that teach you how to program quantum computers.'
+      isCorrect: false
+      explanation: "Although you can learn quantum computing while using Azure Quantum, Azure Quantum isn't a workshop but a cloud service."
+
+  - content: "What advantages does a quantum programming language like Q# offer?"
+    choices:
+    - content: 'It allows you to develop programs that create qubits in the laboratory, and specify their characteristics and architecture.'
+      isCorrect: false
+      explanation: "A programming language doesn't create real qubits in the laboratory. It allows you to develop programs that run on a quantum computer."
+    - content: "None, because quantum programming languages are still in the research phase and aren't yet available for commercial use."
+      isCorrect: false
+      explanation: "Q# is a quantum programming language that's available for commercial use. It allows you to develop programs that run on a quantum computer."
+    - content: "It allows quantum algorithms to be performed without the need to express them in the form of circuits, and integrates classical and quantum computing."
+      isCorrect: true
+      explanation: "In the long term, we want to build algorithms and run them on universal quantum computers. Q# is designed to overcome circuits, respects the laws of physics, and integrates classical and quantum computing."

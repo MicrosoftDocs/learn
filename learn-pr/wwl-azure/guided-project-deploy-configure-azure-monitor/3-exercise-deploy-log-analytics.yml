@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-deploy-log-analytics
+title: Exercise - Deploy Log Analytics
+metadata:
+  title: Exercise - Deploy Log Analytics
+  description: "Exercise - Deploy Log Analytics"
+  ms.date: 10/06/2023
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-deploy-log-analytics.md)]

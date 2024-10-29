@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-code-to-cloud.what-is-code-to-cloud
+title: What is Code to Cloud?
+metadata:
+  title: What is Code to Cloud?
+  description: Learn the basic features and concepts of Code to Cloud
+  ms.date: 09/04/2023
+  author: juliamuiruri4
+  ms.author: juliamuiruri
+  ms.topic: unit
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-code-to-cloud.md)]

@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-prompt-flow.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check to test your knowledge on Azure Machine Learning's prompt flow."
+  ms.date: 11/30/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "A flow uses an LLM tool to generate text with a GPT-3.5 model. What do you need to create to ensure prompt flow can securely call the deployed model from Azure Open AI?"
+    choices:
+    - content: "Runtimes"
+      isCorrect: false
+      explanation: "Incorrect. Runtimes provide the necessary compute to run the flow."
+    - content: "Connections"
+      isCorrect: true
+      explanation: "Correct. Create a connection to allow prompt flow to securely communicate with Azure Open AI."
+    - content: "Tools"
+      isCorrect: false
+      explanation: "Incorrect. You use tools when adding nodes to your flow. Though a tool provides the functionality, it doesn't allow you to safely store connection information."
+  - content: "You want to integrate your flow with an online website. What do you need to do to easily integrate your flow?"
+    choices:
+    - content: "Create a custom environment."
+      isCorrect: false
+      explanation: "Incorrect. You create a custom environment when you need extra packages to be installed to run your flow."
+    - content: "Create a runtime."
+      isCorrect: false
+      explanation: "Incorrect. A runtime is needed to run your flow, during development and testing."
+    - content: "Deploy your flow to an endpoint."
+      isCorrect: true
+      explanation: "Correct. When you deploy a flow to an endpoint, prompt flow generates a URL and key that the website can use to call the flow for real-time predictions."
+  - content: "After deployment, you notice that your flow is underperforming. Which stage in the development lifecycle should you revert back to?"
+    choices:
+    - content: "Experimentation"
+      isCorrect: true
+      explanation: "Correct. Revert back to the experimentation stage to develop and test your flow with a small dataset."
+    - content: "Evaluation and refinement"
+      isCorrect: false
+      explanation: "Incorrect. Only move to evaluation and refinement to test your flow with a larger dataset when you developed and tested it with a smaller dataset first."
+    - content: "Production"
+      isCorrect: false
+      explanation: "Incorrect. During production you deploy and monitor the flow."

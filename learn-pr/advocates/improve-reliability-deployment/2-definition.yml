@@ -4,11 +4,10 @@ title: "What is software deployment?"
 metadata:
   title: "What is software deployment?"
   description: "What is software deployment?"
-  ms.date: 05/07/2020
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 3
@@ -20,12 +19,12 @@ quiz:
 
   - content: 'What is one of the characteristics of the “epic deployment?”'
     choices:
-    - content: "It's fast"
+    - content: "It's fast."
       isCorrect: false
       explanation: 'Epic deployments usually take a considerable amount of time because of their size.'
-    - content: "It's repeatable"
+    - content: "It's repeatable."
       isCorrect: false
-      explanation: "Because they're done so infrequently, there's only small amounts of effort put into repeatability."
-    - content: "It's complex"
+      explanation: "Because they're done so infrequently, there's only a small amount of effort put into repeatability."
+    - content: "It's complex."
       isCorrect: true
-      explanation: 'Because of the size and infrequency, they are often complex.'
+      explanation: "Because of the size and infrequency, they're often complex."

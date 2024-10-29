@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.saas-technical-foundations.multitenant-model
+title: Multitenant model
+metadata:
+  title: Multitenant model
+  description: "A multitenant solution is one used by multiple customers, or tenants. This module covers considerations for multitenant model, where one instance of SaaS solution is shared across customers/tenants."
+  ms.date: 2/9/2024
+  author: kostinams
+  ms.author: irkostin
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-multitenant-model.md)]

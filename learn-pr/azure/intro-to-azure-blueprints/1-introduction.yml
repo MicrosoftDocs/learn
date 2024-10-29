@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Introduction to Azure Blueprints and how you can use it to implement governance."
-  ms.date: 11/30/2021
-  author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Learn how to use Azure Blueprints to implement governance for your organization.
+  ms.date: 1/2/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

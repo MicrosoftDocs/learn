@@ -4,12 +4,12 @@ title: Considerations for migrating NoSQL databases to Cosmos DB
 metadata:
   title: Considerations for migrating NoSQL databases to Cosmos DB
   description: "Considerations for migrating NoSQL databases to Cosmos DB"
-  ms.date: 01/07/2021
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 21
 content: |
   [!include[](includes/4-considerations-migrate-nosql.md)]

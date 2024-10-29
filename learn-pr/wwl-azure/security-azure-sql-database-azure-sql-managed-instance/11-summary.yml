@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]

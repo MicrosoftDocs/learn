@@ -1,40 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-device-identity-ad-join.what-is-ad-join
-title: What is Azure AD join?
+title: What is Microsoft Entra join?
 metadata:
-  title: What is Azure AD join?
-  description: Learn about Azure AD join
-  ms.date: 04/16/2020
+  title: What is Microsoft Entra join?
+  description: Learn about Microsoft Entra join
+  ms.date: 03/17/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-what-is-ad-join.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What provisioning options are available through Azure AD join?"
+  - content: "What provisioning options are available through Microsoft Entra join?"
     choices:
     - content: "Self-service by using the Windows out-of-box experience (OOBE), Windows Autopilot, or bulk enrollment"
       isCorrect: true
-      explanation: "All three options allow devices to be joined to Azure AD."
+      explanation: "All three options allow devices to be joined to Microsoft Entra ID."
     - content: "Self-service by using MDM, Windows Autopilot, or bulk enrollment"
       isCorrect: false
       explanation: "There's no self-service capability that uses MDM."
     - content: "Windows Autopilot or bulk enrollment"
       isCorrect: false
-      explanation: "Windows Autopilot and bulk enrollment are supported, but you can also use the self-service OOBE option with Azure AD join."
+      explanation: "Windows Autopilot and bulk enrollment are supported, but you can also use the self-service OOBE option with Microsoft Entra join."
   - content: "What happens when a device isn't in the MDM scope?"
     choices:
-    - content: "The user is asked to add the device to MDM before the device can join Azure AD."
+    - content: "The user is asked to add the device to MDM before the device can join Microsoft Entra ID."
       isCorrect: false
       explanation: "The user is never asked to join the device to MDM."
-    - content: "The device can't join Azure AD until the device has been registered with MDM."
+    - content: "The device can't join Microsoft Entra ID until the device has been registered with MDM."
       isCorrect: false
-      explanation: "The device can join Azure AD, but it's unmanaged."
-    - content: "The Azure AD join finishes without the enrollment to MDM."
+      explanation: "The device can join Microsoft Entra ID, but it's unmanaged."
+    - content: "The Microsoft Entra join finishes without the enrollment to MDM."
       isCorrect: true
       explanation: "The device is joined, but the MDM system doesn't manage it."
   

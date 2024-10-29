@@ -4,11 +4,10 @@ title: Deploy private mobile network using Azure portal
 metadata:
   title: Deploy private mobile network using Azure portal
   description: Describes how you need to create a mobile network using Azure portal
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-private-mobile-network.md)]

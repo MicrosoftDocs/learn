@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.explore-entanglement.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 04/25/2024
+  author: SoniaLopezBravo
+  ms.author: sonialopez
+  manager: tedhudek
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

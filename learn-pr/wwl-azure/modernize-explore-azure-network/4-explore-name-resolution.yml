@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.modernize-explore-azure-network.explore-name-resolution
+title: Explore name resolution
+metadata:
+  title: Explore name resolution
+  description: "Explore name resolution"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-explore-name-resolution.md)]

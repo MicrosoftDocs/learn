@@ -3,11 +3,10 @@ uid: learn.load-balance-web-traffic-with-application-gateway.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 05/02/2019
+  ms.date: 01/31/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 5
 content: |

@@ -4,13 +4,12 @@ title: Explore Azure Load Testing
 metadata:
   title: Explore Azure Load Testing
   description: "Explore Azure Load Testing"
-  ms.date: 02/07/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-azure-load-testing.md)]

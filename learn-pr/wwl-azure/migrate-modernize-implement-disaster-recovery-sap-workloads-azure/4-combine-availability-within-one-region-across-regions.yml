@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.combine-availability-within-one-region-across-regions
+title: Combine availability within one region and across regions
+metadata:
+  title: Combine availability within one region and across regions
+  description: "Combine availability within one region and across regions"
+  ms.date: 01/09/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-combine-availability-within-one-region-across-regions.md)]

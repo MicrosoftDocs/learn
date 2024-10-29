@@ -3,12 +3,11 @@ uid: learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebui
 title: Exercise - Deploy a pre-built module to the IoT Edge
 metadata:
   title: Exercise - Deploy a pre-built module to the IoT Edge
-  description: In this unit, the exercise guides the learners to deploy a prebuilt module from Azure Marketplace
-  ms.date: 12/5/2019
-  author: leestott
+  description: In this unit, the exercise guides the learners to deploy a prebuilt IoT Edge module
+  ms.date: 11/27/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15 # dummy number at present
 content: |

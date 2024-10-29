@@ -2,12 +2,12 @@
 uid: learn.wwl.evaluate-performance-improvements
 metadata:
   title: Evaluate performance improvements
-  description: "Evaluate performance improvements"
+  description: Evaluate performance improvements
   ms.date: 07/13/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Evaluate performance improvements
 summary: Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore Query Store hints.
 abstract: |

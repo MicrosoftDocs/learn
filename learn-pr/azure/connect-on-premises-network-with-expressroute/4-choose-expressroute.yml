@@ -3,11 +3,10 @@ uid: learn.connect-on-premises-network-with-expressroute.4-choose-expressroute
 metadata:
   title: When to choose Azure ExpressRoute
   description: When to choose Azure ExpressRoute
-  ms.date: 07/17/2019
+  ms.date: 10/18/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
  
 title: When to choose Azure ExpressRoute
 durationInMinutes: 10
@@ -40,4 +39,4 @@ quiz:
       explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
     - content: "An ExpressRoute connection."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."

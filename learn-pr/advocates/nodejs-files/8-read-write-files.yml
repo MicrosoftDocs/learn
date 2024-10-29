@@ -4,12 +4,13 @@ title: Read and write to files
 metadata:
   title: Read and write to files
   description: Read and write to files
-  ms.date: 06/21/2020
-  author: burkeholland
-  ms.author: buhollan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.date: 04/19/2024
+  author: diberry
+  ms.author: diberry
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 durationInMinutes: 4
 content: |

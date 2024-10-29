@@ -4,11 +4,10 @@ title: Deployment methods
 metadata:
   title: Deployment methods
   description: Provides you details on the various deployment methods.
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
+  ms.topic: unit
 
 durationInMinutes: 2
 content: |

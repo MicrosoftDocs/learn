@@ -3,12 +3,13 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-considerations-f
 title: Understand considerations for AI Engineers
 metadata:
   title: Understand considerations for AI Engineers
-  description: "Understand considerations for AI Engineers"
-  ms.date: 07/14/2022
+  description: Understand considerations for AI Engineers
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/10/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

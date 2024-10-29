@@ -3,20 +3,27 @@ uid: learn.wwl.implement-open-source-software-azure
 metadata:
   title: Implement open-source software
   description: "Implement open-source software"
-  ms.date: 05/27/2022
+  ms.date: 05/07/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement open-source software
 summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Implement open-source software
-  - Explain corporate concerns for open-source components
-  - Describe open-source licenses
-  - Understand the license implications and ratings
-prerequisites: ""
+  By the end of this module, you're able to:
+
+  -   Implement open-source software.
+
+  -   Explain corporate concerns for open-source components.
+
+  -   Describe open-source licenses.
+
+  -   Understand the license implications and ratings.
+prerequisites: None
 iconUrl: /training/achievements/2-implement-open-source-software.svg
 levels:
 - advanced
@@ -39,8 +46,6 @@ products:
 - azure-repos
 - azure-test-plans
 - github
-subjects:
-- development-tools
 units:
 - learn.wwl.implement-open-source-software-azure.introduction
 - learn.wwl.implement-open-source-software-azure.explore-how-software-built

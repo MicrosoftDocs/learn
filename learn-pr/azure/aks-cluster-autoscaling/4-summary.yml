@@ -5,11 +5,10 @@ metadata:
   type: summary
   title: Summary
   description: Summary
-  ms.date: 04/27/2021
+  ms.date: 06/06/2024
   author: nickomang
   ms.author: nickoman
-  ms.prod: learning-azure
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/4-summary.md)]

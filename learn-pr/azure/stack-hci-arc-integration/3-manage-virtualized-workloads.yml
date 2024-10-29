@@ -3,12 +3,11 @@ uid: learn.azure.stack-hci-arc-integration.3-manage-virtualized-workloads
 metadata:
   title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
   description: As described in the previous unit of this module, Azure Arc expands the scope of a number of the Azure Resource Manager features to non-Azure servers running Windows or Linux, including Azure Stack HCI VMs. In some cases, it also enhances the capabilities of some of the hybrid Azure services that do not depend directly on Azure Arc. In this unit, you will learn how you can benefit from these features and capabilities when managing Azure Stack HCI VMs.
-  ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.date: 05/19/2023
+  author: JasonGerend
+  ms.author: jgerend
+  ms.topic: unit
+  ms.custom: e2e-hybrid, devx-track-arm-template, linux-related-content
 title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |

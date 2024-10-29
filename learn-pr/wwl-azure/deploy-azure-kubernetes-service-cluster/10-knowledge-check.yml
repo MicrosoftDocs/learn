@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended approach for scaling Kubernetes clusters?"
+    choices:
+    - content: "Cluster autoscaling"
+      isCorrect: false
+      explanation: "Incorrect. Cluster autoscaling is an AKS add-on component that scales the number of nodes in a node pool."
+    - content: "Manual scaling"
+      isCorrect: false
+      explanation: "Incorrect. Manual scaling requires monitoring and setting alerts on CPU utilization or custom metrics."
+    - content: "Autoscaling"
+      isCorrect: true
+      explanation: "Correct. Autoscaling is recommended because some of the manual mechanisms are built into the autoscaler, which can scale both pod replicas and the node count in the cluster."
+  - content: "What does the kubectl command 'apply' do?"
+    choices:
+    - content: "Lists all pods in all namespaces"
+      isCorrect: false
+      explanation: "Incorrect. The 'get pods --all-namespaces' command is used to list all pods in all namespaces."
+    - content: "Deletes a deployment"
+      isCorrect: false
+      explanation: "Incorrect. The 'delete' command is used to delete a deployment."
+    - content: "Applies a configuration to a resource by filename or stdin"
+      isCorrect: true
+      explanation: "Correct. The 'apply' command is used to apply a configuration to a resource by filename or stdin."
+  - content: "Why is it important to consider the address space of the virtual network when setting up an AKS cluster?"
+    choices:
+    - content: "To ensure that all pods have the same IP address"
+      isCorrect: false
+      explanation: "Incorrect. Pods should have individual IP addresses."
+    - content: "To limit the number of nodes in the cluster"
+      isCorrect: false
+      explanation: "Incorrect. The address space should be large enough to accommodate all nodes and their scalability limits."
+    - content: "To ensure that all entities that receive traffic have an IP address allocated from the subnet address space"
+      isCorrect: true
+      explanation: "Correct. The address space should be large enough to hold all subnets and allocate IP addresses for all entities that receive traffic, including nodes, pods, and Azure Private Link addresses."
+  - content: "What is the purpose of deploying Private Link endpoints in a dedicated subnet within the spoke virtual network?"
+    choices:
+    - content: "To keep the resources that belong to the cluster in a separate virtual network."
+      isCorrect: false
+      explanation: "Incorrect. While deploying Private Link endpoints in a dedicated subnet within the spoke virtual network does keep the resources that belong to the cluster in the same virtual network, this isn't the primary purpose of doing so."
+    - content: "To reduce traffic passing the hub virtual network connection."
+      isCorrect: false
+      explanation: "Incorrect. This answer describes the purpose of deploying Private Link endpoints in the hub virtual network, not in a dedicated subnet within the spoke virtual network."
+    - content: "To enable granular security rules at the subnet level using network security groups."
+      isCorrect: true
+      explanation: "Correct. Deploying Private Link endpoints in a dedicated subnet within the spoke virtual network allows for granular security rules to be applied at the subnet level using network security groups, which can help improve security."

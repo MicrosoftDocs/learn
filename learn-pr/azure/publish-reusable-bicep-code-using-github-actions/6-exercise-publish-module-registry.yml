@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a module to a registry
   description: Create a GitHub Actions workflow to publish a module to a Bicep registry and apply versioning.
-  ms.date: 04/05/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5
 content: |

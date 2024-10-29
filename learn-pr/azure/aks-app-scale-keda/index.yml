@@ -3,20 +3,21 @@ uid: learn.aks-app-scaling-keda
 metadata:
   moduleType: standard
   title: Scale container applications in Azure Kubernetes Services (AKS) using KEDA
-  description: Explore what your options are for autoscaling Kubernetes resources, earning when to use each and the know-how to implement KEDA
-  ms.date: 4/5/2021
-  author: pplavetzki
-  ms.author: paplavet
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Explore autoscaling options for Kubernetes resources, and learn how to use KEDA to autoscale containerized applications in Azure Kubernetes Services (AKS).
+  manager: mkluck
+  ms.date: 06/03/2024
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: module
+  ms.service: azure-kubernetes-service
 title: Scale container applications in Azure Kubernetes Services using KEDA
-summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using event driven scaling using KEDA.
+summary: In this module, you'll learn to scale a containerized application hosted on Azure Kubernetes Services (AKS) using KEDA.
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)
-  By the end of this module, you will be able to:
-    - Understand the concept of event driven auto scaling and how it applies to Kubernetes
-    - Deploy KEDA within AKS
-    - Deploy and configure a built-in KEDA scaler
-    - Understand K8S scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
+  By the end of this module, you'll be able to:
+    - Understand the concept of event-driven auto scaling and how it applies to Kubernetes.
+    - Deploy KEDA within AKS.
+    - Deploy and configure a built-in KEDA scaler.
+    - Understand K8S scaling options, including KEDA, Cluster Autoscaling, and Horizontal Pod Autoscaling.
 prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main)
   - An Azure subscription
   - Ability to use the Azure CLI
@@ -26,6 +27,7 @@ prerequisites: | # user input: prerequisites (https://review.learn.microsoft.com
   - Basic knowledge of AKS and its concepts
   - Basic knowledge of microservice concepts
 iconUrl: /training/achievements/aks-app-scale-keda.svg
+hidden: true
 levels: # user input: add levels from level taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
   - beginner
 roles: # user input: add roles from role taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
@@ -36,7 +38,7 @@ products:
   - azure-kubernetes-service
   - azure-container-registry
 subjects:
-- container
+- containers
 units:
 - learn.aks-app-scaling-keda.1-introduction
 - learn.aks-app-scaling-keda.2-concept-keda-scaling

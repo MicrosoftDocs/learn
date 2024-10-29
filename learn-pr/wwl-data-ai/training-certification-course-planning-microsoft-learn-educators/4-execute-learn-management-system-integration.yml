@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.execute-learn-management-system-integration
+title: Execute learning management system integration
+metadata:
+  title: Execute learning management system integration
+  description: "Execute learning management system integration"
+  ms.date: 07/19/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-execute-learn-management-system-integration.md)]

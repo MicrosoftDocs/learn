@@ -3,13 +3,14 @@ uid: learn.azure.deploy-java-spring-boot-app-service-mysql.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 11/16/2020
+  description: Check your knowledge.
+  ms.date: 11/08/2023
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: ropreddy-11202020
 durationInMinutes: 3
 quiz:
@@ -32,11 +33,11 @@ quiz:
       explanation: "Correct. By extending `JpaRepository`, you get a bunch of generic CRUD methods that allow you to manage JPA objects."
     - content: Controller
       isCorrect: false
-      explanation: "A `Controller` publishes REST interfaces to store and retrieve data through HTTP."
+      explanation: "A `controller` publishes REST interfaces to store and retrieve data through HTTP."
     - content: Entity
       isCorrect: false
       explanation: "A JPA entity object maps Java classes to database tables."
-  - content: "Which Maven command will create your Azure App Service instance in Azure?"
+  - content: "Which Maven command creates your Azure App Service instance in Azure?"
     choices:
     - content: "config"
       isCorrect: false

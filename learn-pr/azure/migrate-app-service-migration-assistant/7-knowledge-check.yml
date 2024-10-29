@@ -5,10 +5,9 @@ metadata:
   title: Knowledge check
   description: Check your knowledge
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 1
 quiz:
   title: Check your knowledge

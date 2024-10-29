@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-repositories.configure-source-control-repository-permissions-use-github
+title: Configure source control repository permissions using GitHub
+metadata:
+  title: Configure source control repository permissions using GitHub
+  description: "Configure source control repository permissions using GitHub"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-configure-source-control-repository-permissions-use-github.md)]

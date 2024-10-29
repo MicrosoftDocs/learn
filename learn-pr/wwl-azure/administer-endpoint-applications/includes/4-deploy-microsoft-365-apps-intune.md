@@ -1,4 +1,3 @@
-
 You have the option of installing Microsoft 365 Apps from Intune using the Microsoft 365 app type. This app type makes it easy and convenient for you to assign Office apps to devices you manage that run Windows client or macOS. You don’t need to download the installation files as they're already present in Intune. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Microsoft 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
 Be aware of the following limitations and caveats:
@@ -41,5 +40,5 @@ Be aware of the following limitations and caveats:
      -  **Use shared computer activation**: This is used for activating Microsoft 365 apps when multiple users use the same device.
      -  **Accept the Microsoft Software License Terms on behalf of users**: Choose if you wish to accept, which hides the prompt from end users.
      -  **Install background service for Microsoft Search in Bing**: If you decide to deploy this extension, it sets Bing as the default search engine for Google Chrome and provides easier access to Microsoft Search capabilities. If Bing is already the default search engine, the extension doesn't get installed.
-     -  **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end user's device. Select this option if you want to install additional languages with the app suite. You can deploy additional languages for Microsoft 365 Apps apps managed through Intune. The list of available languages includes the Type of language pack (core, partial, and proofing).
+     -  **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end user's device. Select this option if you want to install additional languages with the app suite. You can deploy additional languages for Microsoft 365 Apps managed through Intune. The list of available languages includes the Type of language pack (core, partial, and proofing).
 6.  Continue configuring the profile, assigning the profile to users, devices or groups. Review the settings and select **Create** to complete the profile.

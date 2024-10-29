@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability
+metadata:
+  title: Modernize and explore governance and manageability for SAP on Azure
+  description: 'This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
+  ms.date: 01/11/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: sap-on-azure
+title: Modernize and explore governance and manageability for SAP on Azure
+summary: This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Azure Resource Manager and Azure Resource Manager templates.
+  - Examine role-based access control.
+  - Explore Azure Policy.
+  - Explore security and compliance services.
+prerequisites: |
+  Before taking this training, you should complete:
+  *   Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam.
+  *   SAP HANA or NetWeaver training.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.introduction
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.explore-azure-resource-manager
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.examine-azure-resource-manager-templates
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.examine-role-based-access-control
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.explore-azure-policy
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.explore-security-compliance-services
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.knowledge-check
+- learn.wwl.migrate-modernize-explore-azure-governance-manageability.summary
+badge:
+  uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.badge

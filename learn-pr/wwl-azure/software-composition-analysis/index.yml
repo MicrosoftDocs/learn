@@ -3,21 +3,27 @@ uid: learn.wwl.software-composition-analysis
 metadata:
   title: Software Composition Analysis
   description: "Software Composition Analysis"
-  ms.date: 01/10/2023
+  ms.date: 05/13/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
 title: Software Composition Analysis
 summary: This module explains Composition Analysis, how to inspect and validate code bases for compliance, integration with security tools, and integration with Azure Pipelines.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Inspect and validate code bases for compliance
-  - Integrate security tools like WhiteSource with Azure DevOps
-  - Implement pipeline security validation
-  - Interpret alerts from scanning tools
-  - Configure GitHub Dependabot alerts and security
-prerequisites: ""
+  By the end of this module, you are able to:
+
+  -   Inspect and validate code bases for compliance.
+
+  -   Integrate security tools like WhiteSource with Azure DevOps.
+
+  -   Implement pipeline security validation.
+
+  -   Interpret alerts from scanning tools.
+
+  -   Configure GitHub Dependabot alerts and security.
+prerequisites: None
 iconUrl: /training/achievements/5-integrate-license-and-vulnerability-scans.svg
 levels:
 - advanced
@@ -45,13 +51,12 @@ subjects:
 units:
 - learn.wwl.software-composition-analysis.introduction
 - learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
-- learn.wwl.software-composition-analysis.explore-software-composition-analysis-sca
-- learn.wwl.software-composition-analysis.integrate-whitesource-azure-devops-pipeline
+- learn.wwl.software-composition-analysis.explore-software-composition-analysis
 - learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
 - learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
 - learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
+- learn.wwl.software-composition-analysis.automate-container-images
 - learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
-- learn.wwl.software-composition-analysis.implement-security-compliance-azure-pipeline
 - learn.wwl.software-composition-analysis.knowledge-check
 - learn.wwl.software-composition-analysis.summary
 badge:

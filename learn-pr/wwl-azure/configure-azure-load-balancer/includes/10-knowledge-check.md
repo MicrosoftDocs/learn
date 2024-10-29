@@ -1,5 +1,4 @@
-
-You're configuring load balancers to distribute incoming network traffic across a group of back-end resources and virtual machines. Your solution will scale your applications while maintaining throughput and keeping response times low. A few teams have submitted configuration requirements and questions for your consideration:
+You're configuring load balancers to distribute incoming network traffic across a group of back-end resources and virtual machines. Your solution must scale your applications while maintaining throughput and keeping response times low. A few teams submitted configuration requirements and questions for your consideration:
 
 - Your company wants to provide customers with a virtual network in the cloud.
 

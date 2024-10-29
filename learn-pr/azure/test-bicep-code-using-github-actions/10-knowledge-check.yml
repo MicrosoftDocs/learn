@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Knowledge check.
-  ms.date: 12/27/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Check what you learned.
+  ms.date: 04/10/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -48,4 +49,4 @@ quiz:
       explanation: Incorrect. The linter runs some basic code style checks. Your template might lint successfully but not deploy.
     - content: Linting ensures that your Bicep file meets a minimum code style quality level.
       isCorrect: true
-      explanation: Correct. The linter doesn't verify that your file will deploy successfully, but it checks that your Bicep file follows some basic code style rules.
+      explanation: Correct. The linter doesn't verify that your file deploys successfully, but it checks that your Bicep file follows some basic code style rules.

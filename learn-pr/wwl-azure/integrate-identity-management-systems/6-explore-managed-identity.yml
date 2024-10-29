@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-identity-management-systems.explore-managed-identity
+title: Implement managed identities
+metadata:
+  title: Implement managed identities
+  description: "Implement managed identities"
+  ms.date: 05/27/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-explore-managed-identity.md)]

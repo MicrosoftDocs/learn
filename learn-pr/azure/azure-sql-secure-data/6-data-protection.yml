@@ -3,11 +3,10 @@ uid: learn.azure-sql-secure-data.6-data-protection
 metadata:
   title: Protect your data
   description: Protect your data
-  ms.date: 03/15/2023
+  ms.date: 11/13/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Protect your data
 durationInMinutes: 10
 content: |

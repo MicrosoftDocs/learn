@@ -3,12 +3,11 @@ uid: learn.introduction-to-microsoft-datacenters.explore-the-components-of-a-dat
 title: Explore the components of a datacenter
 metadata:
   title: Explore the components of a datacenter
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Describes the physical aspects of Microsoft datacenters. 
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-the-components-of-a-datacenter.md)]

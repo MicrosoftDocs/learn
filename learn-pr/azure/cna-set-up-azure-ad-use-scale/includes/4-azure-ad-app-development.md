@@ -1,19 +1,21 @@
-Now that you have a better understanding of the basic principles and benefits of Azure AD, you need to determine how you can use its capabilities to implement authentication and authorization for your application. You realize that, to help secure your customers' data, you need to ensure that your implementation will integrate with PostgreSQL access control mechanisms. You decided to start by identifying the tasks that are involved in developing, provisioning, and managing Azure AD applications. You also want to determine how you can address the need to provide access to your application to multiple customers.
+Now that you have a better understanding of the basic principles and benefits of Microsoft Entra ID, you need to determine how you can use its capabilities to implement authentication and authorization for your application. You realize that, to help secure your customers' data, you need to ensure that your implementation will integrate with PostgreSQL access control mechanisms. You decided to start by identifying the tasks that are involved in developing, provisioning, and managing Microsoft Entra applications. You also want to determine how you can address the need to provide access to your application to multiple customers.
 
-## What are the primary application-related Azure AD tasks?
+<a name='what-are-the-primary-application-related-azure-ad-tasks'></a>
 
-To implement Azure AD-based applications, you'll need to perform several application-related management tasks, including registering, configuring its permissions, and managing its secrets.
+## What are the primary application-related Microsoft Entra ID tasks?
+
+To implement Microsoft Entra ID-based applications, you'll need to perform several application-related management tasks, including registering, configuring its permissions, and managing its secrets.
 
 ### What is application registration?
 
-When operating in an Azure AD environment, a user authenticates to an application in two stages:
+When operating in a Microsoft Entra environment, a user authenticates to an application in two stages:
 
-1. First, Azure AD verifies the user's identity. Upon successful authentication, Azure AD issues tokens that contain information reflecting the successful authentication.
+1. First, Microsoft Entra ID verifies the user's identity. Upon successful authentication, Microsoft Entra ID issues tokens that contain information reflecting the successful authentication.
 1. The user passes tokens to the application. The application validates the user’s security tokens to ensure that authentication was successful.
 
-To perform such validation, the application must be able to communicate securely with Azure AD. This, in turn, requires that the application itself operates as an Azure AD security principal. To make it possible, you must ensure that the application is represented in some form in the same Azure AD tenant that contains the account of the authenticating user.
+To perform such validation, the application must be able to communicate securely with Microsoft Entra ID. This, in turn, requires that the application itself operates as a Microsoft Entra security principal. To make it possible, you must ensure that the application is represented in some form in the same Microsoft Entra tenant that contains the account of the authenticating user.
 
-There are two representations of an application in Azure AD:
+There are two representations of an application in Microsoft Entra ID:
 
 - An application object, which defines the properties of the application.
 - A service principal, which provides authentication and authorization functionality and references the application object.
@@ -27,11 +29,11 @@ During application registration, you have the option of specifying the applicati
 
 ### What are application permissions?
 
-Applications that integrate with Azure AD follow an authorization model that allows you to control in a granular manner its permissions to other Azure AD-integrated applications and resources. Azure AD relies on the OAuth 2.0 authorization model to implement these permissions. In OAuth 2.0, permissions are organized into sets, commonly referred to as *scopes*.
+Applications that integrate with Microsoft Entra ID follow an authorization model that allows you to control in a granular manner its permissions to other Microsoft Entra integrated applications and resources. Microsoft Entra ID relies on the OAuth 2.0 authorization model to implement these permissions. In OAuth 2.0, permissions are organized into sets, commonly referred to as *scopes*.
 
-As a developer, you request the permissions your application needs by specifying a permission string as part of its configuration. For example, by setting the permission string to "https://graph.microsoft.com/Calendars.Read", you indicate that the application will need to be able to read users' calendars in Microsoft Graph. The application must be granted these permissions through a consent, which must be granted by either an Azure AD user or an Azure AD administrator, depending on the extent of these permissions.
+As a developer, you request the permissions your application needs by specifying a permission string as part of its configuration. For example, by setting the permission string to "https://graph.microsoft.com/Calendars.Read", you indicate that the application will need to be able to read users' calendars in Microsoft Graph. The application must be granted these permissions through a consent, which must be granted by either a Microsoft Entra user or a Microsoft Entra administrator, depending on the extent of these permissions.
 
-Azure AD supports two types of permissions:
+Microsoft Entra ID supports two types of permissions:
 
 - Delegated permissions are used by interactive apps with a signed-in user. As a result, the app acts on behalf of a signed-in user when it accesses the target resource.
 - Application permissions are used by apps that run without relying on a signed-in user, such as background services. These apps require administrative consent.
@@ -41,10 +43,10 @@ Azure AD supports two types of permissions:
 There are two types of authentication available for service principals:
 
 - Password-based authentication, which relies on application secrets that you can generate directly in the Azure portal. When generating a secret, you specify its lifetime.
-- Certificate-based authentication, which relies on certificates that you upload to Azure AD.
+- Certificate-based authentication, which relies on certificates that you upload to Microsoft Entra ID.
 
 > [!NOTE]
-> If your application will be hosted by an Azure compute resource, such as an Azure Virtual Machine (VM), Azure App Service web app, or an AKS cluster, instead of using service principals, consider using managed identities for your application identity. This eliminates the need to manage passwords or certificates for authentication.
+> If your application will be hosted by an Azure compute resource, such as an Azure Virtual Machine (VM), Azure App Service web app, or an AKS cluster, rather than using service principals, consider using managed identities for your application identity. This eliminates the need to manage passwords or certificates for authentication.
 
 ## What are different types of application authentication scenarios?
 
@@ -56,18 +58,20 @@ The authentication flow and the corresponding configuration details depend on th
 
 The first two items above authenticate a user, whereas the third only authenticates an app or service between the user and a back-end service. In this case, the back-end service won't know anything about the end user, but it will know which app is using it. For example, think of an app using Azure maps as a back-end service. The maps service needs to know that an authorized application is calling it for correct billing, but it doesn't need to know anything about the end user.
 
-## What is the difference between single-tenant and multitenant Azure AD applications?
+<a name='what-is-the-difference-between-single-tenant-and-multitenant-azure-ad-applications'></a>
+
+## What is the difference between single-tenant and multitenant Microsoft Entra applications?
 
 As a developer, you can choose to configure your app to be either single-tenant or multitenant during app registration:
 
 - Single-tenant apps are only available in the tenant they were registered in, and are referred to as their home tenant.
-- Multitenant apps are available to users in both their home tenant and other Azure AD tenants.
+- Multitenant apps are available to users in both their home tenant and other Microsoft Entra tenants.
 
 If you use the Azure portal for app registration, you specify the tenancy of the app by setting its audience property to one of the following values:
 
 - Accounts in this directory only. This results in the single-tenant configuration. Effectively, this allows you to grant access to the application to any security principal in your tenant, including guest accounts.
-- Accounts in any Azure AD directory. This results in a multitenant configuration. This allows users outside of your organization to register the application in their respective Azure AD tenants.
-- Accounts in any Azure AD directory and personal Microsoft accounts (such as Skype, Xbox, Outlook.com). This also results in a multitenant configuration, but it makes it possible for users with personal Microsoft accounts to use the app.
+- Accounts in any Microsoft Entra directory. This results in a multitenant configuration. This allows users outside of your organization to register the application in their respective Microsoft Entra tenants.
+- Accounts in any Microsoft Entra directory and personal Microsoft accounts (such as Skype, Xbox, Outlook.com). This also results in a multitenant configuration, but it makes it possible for users with personal Microsoft accounts to use the app.
 
 > [!NOTE]
-> An application object exists only in the home tenant, but in the case of the multitenant configuration, it can be referenced by multiple service principals across different Azure AD tenants.
+> An application object exists only in the home tenant, but in the case of the multitenant configuration, it can be referenced by multiple service principals across different Microsoft Entra tenants.

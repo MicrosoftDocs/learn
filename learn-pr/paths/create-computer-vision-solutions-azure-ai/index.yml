@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-computer-vision-solutions-azure-ai
+metadata:
+  title: Create computer vision solutions with Azure AI Vision
+  description: How to create computer vision solutions with Azure AI Vision
+  ms.date: 1/29/2024
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: learning-path
+title: Create computer vision solutions with Azure AI Vision
+prerequisites: |
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+summary: |
+  Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI Vision includes multiple services that support common computer vision scenarios.
+iconUrl: /training/achievements/cognitive-services-computer-vision.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+- azure-computer-vision
+- azure-face
+- azure-video-indexer
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.analyze-images
+- learn.wwl.custom-model-ai-vision-image-classification
+- learn.wwl.detect-analyze-recognize-faces
+- learn.wwl.read-text-images-documents-with-computer-vision-service
+- learn.wwl.analyze-video
+trophy:
+  uid: learn.wwl.create-computer-vision-solutions-azure-ai.trophy

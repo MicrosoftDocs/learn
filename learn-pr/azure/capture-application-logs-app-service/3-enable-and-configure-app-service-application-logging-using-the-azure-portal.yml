@@ -4,11 +4,12 @@ title: Exercise - Enable and configure App Service application logging using the
 metadata:
   title: Exercise - Enable and configure App Service application logging using the Azure portal
   description: Enable and configure App Service application logging using the Azure portal
-  ms.date: 03/20/2019
+  ms.date: 08/15/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true

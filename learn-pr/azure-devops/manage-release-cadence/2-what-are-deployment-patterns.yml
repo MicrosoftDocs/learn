@@ -4,12 +4,11 @@ title: What are deployment patterns?
 metadata:
   title: What are deployment patterns?
   description: Choose an appropriate deployment pattern that helps you minimize downtime and roll out new features progressively.
-  ms.date: 08/08/2022
+  ms.date: 02/05/2024
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-are-deployment-patterns.md)]

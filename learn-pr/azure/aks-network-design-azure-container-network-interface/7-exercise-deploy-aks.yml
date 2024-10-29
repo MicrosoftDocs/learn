@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-network-design-azure-container-network-interface.7-exercise-deploy-aks
+metadata:
+  title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
+  description: Exercise - Deploy an Azure kubernetes service cluster with Azure CNI
+  ms.date: 02/15/2024
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+  ms.author: schaffererin
+  author: schaffererin
+title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
+durationInMinutes: 15
+interactive: bash
+sandbox: false
+content: |
+  [!include[](includes/7-exercise-deploy-aks.md)]

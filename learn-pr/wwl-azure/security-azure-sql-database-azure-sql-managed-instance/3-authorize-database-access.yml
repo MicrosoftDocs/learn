@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.authorize-database-access
+title: Enable database authentication by using Microsoft Entra ID
+metadata:
+  title: Enable database authentication by using Microsoft Entra ID
+  description: "Enable SQL database authentication"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-authorize-database-access.md)]

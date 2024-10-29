@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn.azure.azure-vmware-solution
 title: Secure outbound internet connectivity for Azure VMware Solution
 metadata:
@@ -7,8 +7,8 @@ metadata:
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh
-  ms.topic: interactive-tutorial
-  ms.prod: azure-vmware-solution
+  ms.topic: module
+  ms.service: azure-vmware
 summary: > 
   Learn how to route, control, and inspect outbound network traffic from Azure VMware Solution private cloud. Define the outbound internet network path using either custom or third party network virtualization appliance with Azure Route Server and Azure Firewall.
 abstract: |

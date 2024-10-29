@@ -2,12 +2,12 @@
 uid: learn.wwl.design-network-solutions
 metadata:
   title: Design network solutions
-  description: "Azure Architects design and recommend network solutions."
-  ms.date: 03/17/2023
+  description: Azure Architects design and recommend network solutions.
+  ms.date: 10/09/2023
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Design network solutions
 summary: Azure Architects design and recommend network solutions.
 abstract: |
@@ -33,9 +33,9 @@ subjects:
 units:
 - learn.wwl.design-network-solutions.introduction
 - learn.wwl.design-network-solutions.recommend-network-architecture-solution-based-workload-requirements
-- learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 - learn.wwl.design-network-solutions.design-patterns-for-azure-network-connectivity-services
 - learn.wwl.design-network-solutions.design-outbound-connectivity-routing
+- learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 - learn.wwl.design-network-solutions.choose-application-delivery-service
 - learn.wwl.design-network-solutions.design-for-application-delivery-services
 - learn.wwl.design-network-solutions.design-for-application-protection-services

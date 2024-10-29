@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-deployment-stacks
+metadata:
+  title: Introduction to deployment stacks
+  description: Describe the benefits of using deployment stacks to deploy your Azure resources.
+  ms.date: 08/01/2023
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.service: azure-resource-manager
+  ms.topic: module-intro-to-product
+title: Introduction to deployment stacks
+summary: |
+  Describe the benefits of using deployment stacks to deploy your Azure resources. Determine the use cases for which deployment stacks are beneficial for resource deployment.
+abstract: | 
+  After completing this module, you'll be able to:
+    - Describe the benefits of deployment stacks
+    - Describe the deployment stacks resource
+    - Describe the use cases where deployment stacks are beneficial for resource deployment
+prerequisites: |
+  You should be familiar with using:
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Bicep, including creating and deploying basic files.
+  - Basic Azure PowerShell or AZ CLI commands.
+
+  To follow along with the exercises in the module, you need the following software installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
+  - Azure CLI [version 2.61.0 or later](/cli/azure/install-azure-cli) or Azure PowerShell [version 12.0.0 or later](/powershell/azure/install-az-ps).
+
+    > [!TIP]
+    > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
+
+iconUrl: /training/achievements/bicep/introduction-to-deployment-stacks.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+languages:
+  - bicep
+products:
+- azure
+- azure-resource-manager
+subjects:
+  - cloud-computing
+  - devops
+units:
+- learn.azure.introduction-to-deployment-stacks.introduction
+- learn.azure.introduction-to-deployment-stacks.what-deployment-stacks
+- learn.azure.introduction-to-deployment-stacks.why-deployment-stacks
+- learn.azure.introduction-to-deployment-stacks.deployment-stack-resource
+- learn.azure.introduction-to-deployment-stacks.deployment-stack-scenario
+- learn.azure.introduction-to-deployment-stacks.knowledge-check
+- learn.azure.introduction-to-deployment-stacks.summary
+badge:
+  uid: learn.azure.introduction-to-deployment-stacks.badge

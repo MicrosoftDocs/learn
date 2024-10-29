@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-best-networking-plugin-for-aks.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "Review what you've learned about AKS networking plugins."
+  ms.date: 03/18/2024
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

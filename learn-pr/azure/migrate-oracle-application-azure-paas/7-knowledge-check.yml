@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-oracle-application-azure-paas.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge.
+  ms.date: 05/01/2024
+  author: jjaygbay1
+  ms.author: jacobjaygbay
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do PaaS products help you reduce your IT management load?"
+    choices:
+    - content: "They give you fine control over the host operating system and hardware."
+      isCorrect: false
+      explanation: "Incorrect. One of the advantages of PaaS solutions is that they remove the need to manage OS and hardware configuration."
+    - content: "They allow you to closely recreate your on-premises datacenter infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. PaaS solutions don't aim to accurately recreate your on-premises configuration."
+    - content: "They manage the underlying software, host operating systems, and hardware infrastructure. "
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which of these answers is a reason to choose an Azure PaaS database server?"
+    choices:
+    - content: "You want to stop managing and configuring the operating system running your database servers."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "You want to reuse your existing Oracle software licensing."
+      isCorrect: false
+      explanation: "Incorrect. Although licensing is included in the cost of Azure PaaS database products, it doesn't use your existing Oracle licenses. These licenses can be used to expand existing workloads or to develop new ones."
+    - content: "You want your IT team to improve its cloud infrastructure skills."
+      isCorrect: false
+      explanation: "Incorrect. PaaS products manage the underlying infrastructure for you and eliminate many traditional IT tasks."
+  - content: "During an Oracle-to-PaaS-database migration, what do you need to do to your application code before deploying it to the cloud?"
+    choices:
+    - content: "Rebuild your application using .NET Core."
+      isCorrect: false
+      explanation: "Incorrect. Most popular programming languages can connect to PaaS database services if modified to do so."
+    - content: "Set up new DevOps processes to manage your code development."
+      isCorrect: false
+      explanation: "Incorrect. Your code DevOps processes shouldn't be affected by using a PaaS database solution."
+    - content: "Remediate issues introduced during the migration by identifying Oracle-specific code and updating it to work with your new database service. "
+      isCorrect: true
+      explanation: "Correct!"

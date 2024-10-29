@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.sustain-and-evolve-your-security-posture
+title: Sustain and evolve your security posture
+metadata:
+  title: Sustain and evolve your security posture
+  description: Learn how to optimize your security controls to sustain and evolve your security posture.
+  ms.date: 12/04/2023
+  author: claytonsiemens77
+  ms.author: csiemens
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-sustain-and-evolve-your-security-posture.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What type of exercise can help you identify gaps in your security controls?'
+    choices:
+    - content: 'Failure mode analysis'
+      isCorrect: false
+      explanation: 'Incorrect. Failure mode analysis is a process that helps you identify potential failure points in your system.'
+    - content: 'Health modeling'
+      isCorrect: false
+      explanation: 'Incorrect. Health modeling is a process that helps you define what a healthy, degraded or unhealthy state looks like for your system.'
+    - content: 'Intrusion detection and prevention'
+      isCorrect: false
+      explanation: 'Incorrect. Intrusion detection and prevention is a type of network control often found in firewalls.'
+    - content: 'Threat modeling'  
+      isCorrect: true
+      explanation: 'Correct. Threat modeling is a process that helps you identify gaps in your security controls.'
+  - content: 'True or false: the workload team should handle all security testing.'
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Teams external to the workload team should handle security testing to ensure that the workload team isn't biased in their testing."
+    - content: 'False'
+      isCorrect: true
+      explanation: "Correct. Teams external to the workload team should handle security testing to ensure that the workload team isn't biased in their testing."
+  - content: 'In what way was Contoso at risk with their old process for their Apache Spark jobs?'
+    choices:
+    - content: "The jobs were not being monitored for successful runs."
+      isCorrect: false
+      explanation: "Incorrect. This possibility didn't present a security risk."
+    - content: 'The jobs were automatically run over night when no one was able to monitor them.'
+      isCorrect: false
+      explanation: "Incorrect. This possibility didn't present a security risk."
+    - content: "The jobs weren't included in the update and patching process."
+      isCorrect: true
+      explanation: "Correct. The components used in the jobs weren't being updated and patched, which presented a security risk."
+    - content: 'The jobs were not being monitored for failed runs.'
+      isCorrect: false
+      explanation: "Incorrect. This possibility didn't present a security risk."

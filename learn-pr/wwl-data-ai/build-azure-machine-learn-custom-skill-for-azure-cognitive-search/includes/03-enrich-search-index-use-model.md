@@ -1,6 +1,6 @@
-You create your Azure Machine Learning model using developer tools like the Python SDK, REST APIs, or CLI v2. Another option is to take advantage of the Azure Machine Learning (AML) studio, a graphical user interface that lets you create, train, and deploy models without writing any code.
+You create your Azure Machine Learning model using developer tools like the Python SDK, REST APIs, or Azure CLI. Another option is to take advantage of the Azure AI Machine Learning studio, a graphical user interface that lets you create, train, and deploy models without writing any code.
 
-:::image type="content" source="../media/steps-enrich-search-index.png" alt-text="A diagram showing the steps to enrich a search index with an AML studio model." border="false":::
+:::image type="content" source="../media/steps-enrich-search-index.png" alt-text="A diagram showing the steps to enrich a search index with an Azure AI Machine Learning Studio model." border="false":::
 
 With a model created, you alter how the scoring code calls the model to allow it to be used by your custom search skill.
 
@@ -8,15 +8,15 @@ The last steps are to create a Kubernetes cluster to host an endpoint for your m
 
 #### Create an AML workspace
 
-When you create the AML workspace Azure will also create storage accounts, a key store, and application insights resources. The AML workspace Overview pane gives you a link to launch the AML studio.
+When you create the AML workspace, Azure will also create storage accounts, a key store, and application insights resources. The AML workspace Overview pane gives you a link to launch the Azure AI Machine Learning Studio.
 
 #### Create and train a model in Azure Machine Learning studio
 
-AML studio lets you use a designer to use drag and drop to create pipelines that create and train models. There's an even easier way to create models by using prebuilt templates.
+Azure AI Machine Learning Studio  lets you use a designer to use drag and drop to create pipelines that create and train models. There's an even easier way to create models by using prebuilt templates.
 
-:::image type="content" source="../media/prebuilt-components-list.png" alt-text="A screenshot of all the prebuilt components in the Azure Machine Learning studio." lightbox="../media/prebuilt-components-list.png":::
+:::image type="content" source="../media/prebuilt-components-list.png" alt-text="A screenshot of all the prebuilt components in the Azure AI Machine Learning Studio." lightbox="../media/prebuilt-components-list.png":::
 
-However you choose to create your models, they need to be registered in AML studio so that you can deploy the model to a web service.
+However you choose to create your models, they need to be registered in Azure AI Machine Learning Studio so that you can deploy the model to a web service.
 
 #### Alter how the model works to allow it to be called by the AML custom skill
 
@@ -87,17 +87,17 @@ return {
 
 #### Create an endpoint for your model to use
 
-The model is deployed to an endpoint. AML studio supports deploying a model to a real-time endpoint, a batch endpoint, or a web service. At the moment, the custom `AmlSkill` skill in Cognitive Search only supports web service endpoints.
+The model is deployed to an endpoint. Azure AI Machine Learning Studio supports deploying a model to a real-time endpoint, a batch endpoint, or a web service. At the moment, the custom `AmlSkill` skill in Azure AI Search only supports web service endpoints.
 
 The other restriction is that the endpoint has to be an Azure Kubernetes Service (AKS), container instances aren't supported.
 
-If you have experience in creating and managing AKS clusters, you can manually create the clusters in the Azure portal and reference them when you create your endpoint. However, an easier option is to let AML studio create and manage the cluster for you.
+If you have experience in creating and managing AKS clusters, you can manually create the clusters in the Azure portal and reference them when you create your endpoint. However, an easier option is to let Azure AI Machine Learning Studio create and manage the cluster for you.
 
 If you navigate to the compute section of the studio, you can create inference clusters. AML studio will then guide you through choosing the size of the cluster and even enable HTTPS and create a domain name for you. It will be in the format of `location.cloudapp.azure.com:443`.
 
 #### Connect the AML custom skill to the endpoint
 
-With everything above in place, you need to update your Azure Cognitive Search service. First, to enrich your search index you'll add a new field to your index to include the output for the model.
+With everything above in place, you need to update your Azure AI Search service. First, to enrich your search index you'll add a new field to your index to include the output for the model.
 
 Then you'll update your index skillset and add the `#Microsoft.Skills.Custom.AmlSkill` custom skill.
 

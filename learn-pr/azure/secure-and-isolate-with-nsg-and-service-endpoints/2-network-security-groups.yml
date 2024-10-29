@@ -3,11 +3,10 @@ uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.2-network-security-
 metadata:
   title: Use network security groups to control network access
   description: Use network security groups to control network access
-  ms.date: 04/25/2019
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/11/2023
+  author: asudbring
+  ms.author: allensu
+  ms.topic: unit
 title: Use network security groups to control network access
 durationInMinutes: 8
 content: |

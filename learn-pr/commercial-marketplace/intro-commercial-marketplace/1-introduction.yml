@@ -3,13 +3,12 @@ uid: learn.intro-commercial-marketplace.1-introduction
 title: Introduction to the Microsoft commercial marketplace
 metadata:
   title: Introduction to the Microsoft commercial marketplace
-  description: Introduction to the Microsoft commercial marketplace
-  ms.date: 4/21/2020
-  author: marleva
-  ms.author: maevan
+  description: Learn about the Microsoft commercial marketplace.
+  ms.date: 05/15/2024
+  author: JulCsc
+  ms.author: krmaddox
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-devops.what-source-control
+title: What is source control?
+metadata:
+  title: What is source control?
+  description: "What is source control?"
+  ms.date: 05/29/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-what-source-control.md)]

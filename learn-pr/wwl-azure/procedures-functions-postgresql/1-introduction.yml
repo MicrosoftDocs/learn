@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.procedures-functions-postgesql.introduction
+uid: learn.wwl.procedures-functions-postgresql.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 10/10/2022
+  ms.date: 05/10/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

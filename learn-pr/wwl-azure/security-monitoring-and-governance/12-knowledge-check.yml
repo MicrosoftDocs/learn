@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-and-governance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices is a monitoring service that can provide threat protection and security recommendations across all your services in Azure and on-premises?"
+    choices:
+    - content: "Azure Policy."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
+    - content: "Microsoft Defender."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
+    - content: "Azure Key Vault."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
+  - content: "Which of the following choices can you use to create, assign and manage policies?"
+    choices:
+    - content: "Azure Machine Learning."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
+    - content: "Microsoft Defender."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
+    - content: "Azure Policy."
+      isCorrect: true
+      explanation: "Correct. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
+  - content: "Which of the following choices is a tool to prevent accidental deletion of Azure resources?"
+    choices:
+    - content: "Locks."
+      isCorrect: true
+      explanation: "Correct. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
+    - content: "Policy."
+      isCorrect: false
+      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
+    - content: "Key Vault."
+      isCorrect: false
+      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."

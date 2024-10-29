@@ -5,11 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy a web application
   description: Update a workflow to build and deploy an application.
-  ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-web-application.md)]

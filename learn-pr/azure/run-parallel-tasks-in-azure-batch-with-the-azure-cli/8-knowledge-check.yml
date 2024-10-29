@@ -3,35 +3,46 @@ uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 05/06/2019
+  ms.date: 04/04/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 4
 quiz:
   title: Check your knowledge
+
   questions:
-  - content: "Once an Azure Batch account has been created, what is the next step to take in the workflow of setting up tasks to run on Azure Batch?"
+  - content: "Once you create an Azure Batch account, what is the next step to take in the workflow of setting up tasks to run on Azure Batch?"
     choices:
-    - content: "Sign in to the Batch account"
+    - content: "Sign in to the Batch account."
       isCorrect: true
       explanation: "Signing in to the created Batch account is a prerequisite before any other tasks can be performed."
-    - content: "Create a pool of virtual nodes"
+    - content: "Create a pool of virtual nodes."
       isCorrect: false
       explanation: "This action is impossible without logging in first."
-    - content: "Create a Batch job"
+    - content: "Create a Batch job."
       isCorrect: false
       explanation: "This action is impossible without logging in first."
   - content: "Which component of Azure Batch allows tasks to be logically grouped together and have settings in common configured?"
     choices:
     - content: "Azure Batch account"
       isCorrect: false
-      explanation: "A Batch account cannot be a container for Batch tasks."
+      explanation: "A Batch account can't be a container for Batch tasks."
     - content: "Azure Batch pool"
       isCorrect: false
-      explanation: "A Batch pool cannot be a container for Batch tasks."
+      explanation: "A Batch pool can't be a container for Batch tasks."
     - content: "Azure Batch job"
       isCorrect: true
       explanation: "An Azure Batch job allows tasks to be logically grouped together and have settings in common configured."
+  - content: "What can Azure Batch Explorer be used for?"
+    choices:
+    - content: "Only application management and monitoring."
+      isCorrect: false
+      explanation: "You can also use the Azure Batch Explorer for application creation and debugging."
+    - content: "Only application creation."
+      isCorrect: false
+      explanation: "You can also use the Azure Batch Explorer for application management, monitoring, and debugging."
+    - content: "Application creation, management, monitoring, and debugging."
+      isCorrect: true
+      explanation: "Correct, you can use the Azure Batch Explorer for all four functions."   

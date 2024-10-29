@@ -4,34 +4,46 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 07/15/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When defining a stored procedure in the Azure portal input parameters are always sent as what type to the stored procedure?"
+  - content: "What is the purpose of the context object in a stored procedure in Azure Cosmos DB?"
     choices:
-    - content: "String"
+    - content: "It provides access to the database schema and metadata."
+      isCorrect: false
+      explanation: "Incorrect. The context object does not provide access to the database schema or metadata."
+    - content: "It allows for the creation of new collections within the database."
+      isCorrect: false
+      explanation: "Incorrect. The context object does not allow for the creation of new collections within the database."
+    - content: "It provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects."
       isCorrect: true
-      explanation: "Correct. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
-    - content: "Integer"
-      isCorrect: false
-      explanation: "Incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
-    - content: "Boolean"
-      isCorrect: false
-      explanation: "Incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
-  - content: "Which of the following would one use to validate properties of an item being created?"
+      explanation: "Correct. The context object in a stored procedure provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects."
+  - content: "What is the role of pretriggers in Azure Cosmos DB?"
     choices:
-    - content: "Pretrigger"
+    - content: "Pretriggers are automatically executed for each database operation."
+      isCorrect: false
+      explanation: "Incorrect. Triggers aren't automatically executed. They must be specified for each database operation where you want them to execute."
+    - content: "Pretriggers are executed before modifying a database item and must be specified for each database operation where you want them to execute."
       isCorrect: true
-      explanation: "Correct. Pretriggers can be used to conform data before it's added to the container."
-    - content: "Post-trigger"
+      explanation: "Correct. Pretriggers in Azure Cosmos DB are executed before modifying a database item and they need to be specified for each database operation where they should execute."
+    - content: "Pretriggers are used to execute operations after modifying a database item."
       isCorrect: false
-      explanation: "Incorrect. Post-triggers run after an item is created."
-    - content: "User-defined function"
+      explanation: "Incorrect. Pretriggers are executed before modifying a database item, not after."
+  - content: "What is the purpose of the lease container in the Azure Cosmos DB change feed processor?"
+    choices:
+    - content: "It stores the data from which the change feed is generated."
       isCorrect: false
-      explanation: "Incorrect. User-defined functions run on existing data."
+      explanation: "Incorrect. The monitored container, not the lease container, stores the data from which the change feed is generated."
+    - content: "It processes the change feed across multiple workers."
+      isCorrect: false
+      explanation: "Incorrect. The lease container does not process the change feed, it coordinates the processing across multiple workers."
+    - content: "It acts as a state storage and coordinates processing the change feed across multiple workers."
+      isCorrect: true
+      explanation: "Correct. The lease container acts as a state storage and coordinates processing the change feed across multiple workers."

@@ -1,5 +1,6 @@
 In this module, you reviewed the process of deploying an Azure Arc data controller, which serves as the basis for implementing Azure Arc-enabled data services.
-By reviewing and assessing deployment modes and successfully completing your deployment, you’re now ready to implement an Azure Arc-enabled SQL Managed Instance in the directly connected and indirectly connected connectivity modes. This will allow you to address the concerns raised by the company’s Risk and Compliance teams, extending the Azure manageability and resiliency benefits to your on-premises datacenters. 
+
+By reviewing and assessing deployment modes and successfully completing your deployment, you're now ready to implement an Azure Arc-enabled SQL Managed Instance in the directly connected and indirectly connected connectivity modes. This allows you to address the concerns raised by the company’s Risk and Compliance teams, extending the Azure manageability and resiliency benefits to your on-premises datacenters.
 
 ## Learn more
 

@@ -4,11 +4,10 @@ title: "Deployment strategies"
 metadata:
   title: "Deployment strategies"
   description: "Deployment strategies"
-  ms.date: 05/07/2020
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 4

@@ -7,7 +7,7 @@ Organizations can create and manage audit log retention policies in the Microsof
 
 ### Default audit log retention policy
 
-Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Azure Active Directory audit records for one year. The default policy retains audit records that contain the value of Exchange, SharePoint, OneDrive, AzureActiveDirectory for the Workload property (which is the service in which the activity occurred).
+Microsoft Purview Audit (Premium) provides a default audit log retention policy for all organizations. This policy retains all Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Entra audit records for one year. The default policy retains audit records that contain the value of Exchange, SharePoint, OneDrive, AzureActiveDirectory for the Workload property (which is the service in which the activity occurred).
 
 > [!NOTE]
 > The default audit log retention policy can't be modified.
@@ -109,7 +109,7 @@ Follow these steps to create an audit log retention policy in PowerShell:
 Here's another example of creating an audit log retention policy. This policy:
 
 - Retains audit logs for the "User logged in" activity for six months.
-- It does so for the user admin@contoso.onmicrosoft.com.
+- It does so for the user `admin@contoso.onmicrosoft.com`.
 - Assigns a priority of 25 to the policy.
 
 ```powershell

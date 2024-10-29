@@ -4,12 +4,10 @@ title: Exercise - Upload a video to your edge device to be processed
 metadata:
   title: Exercise - Upload a video to your edge device to be processed
   description: In this section, we help learner to connect to web app and run the scenario that detects defect.
-  ms.date: 03/01/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/8-exercise-upload-video-edge-device.md)]

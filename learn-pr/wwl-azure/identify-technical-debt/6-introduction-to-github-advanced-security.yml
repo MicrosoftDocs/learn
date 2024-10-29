@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-technical-debt.introduction-to-github-advanced-security
+title: Introduction to GitHub Advanced Security
+metadata:
+  title: Introduction to GitHub Advanced Security
+  description: "Introduction to GitHub Advanced Security"
+  ms.date: 05/06/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-introduction-to-github-advanced-security.md)]

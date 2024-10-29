@@ -5,12 +5,12 @@ title: Exercise - Configure Azure Policy for Kubernetes on an AKS cluster
 metadata:
   title: Exercise - Configure Azure Policy for Kubernetes on an AKS cluster
   description: Here you'll configure Azure Policy for Kubernetes. You'll apply a built-in policy to optimize costs by limiting requests for workload resources. And, you'll see how a workload is denied when it violates the resource-limit policy.
-  ms.date: 7/10/2020
+  ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-resource-quota-azure-policy.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-and-governance.configure-github-advanced-security-github
+title: Configure GitHub Advanced Security for GitHub and Azure DevOps
+metadata:
+  title: Configure GitHub Advanced Security for GitHub and Azure DevOps
+  description: "Configure GitHub Advanced Security for GitHub and Azure DevOps"
+  ms.date: 05/13/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-configure-github-advanced-security-github.md)]

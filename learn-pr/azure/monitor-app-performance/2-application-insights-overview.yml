@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-app-performance.explore-application-insights
+title: Explore Application Insights
+metadata:
+  title: Explore Application Insights
+  description: "Explore Application Insights"
+  ms.date: 07/18/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-application-insights-overview.md)]

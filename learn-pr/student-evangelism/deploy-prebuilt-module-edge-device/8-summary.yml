@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: In this unit, we summarize the key ideas in the module and emphasize the ideas to ensure learning retention
-  ms.date: 12/5/2019
-  author: leestott
+  ms.date: 11/27/2023
+  author: PatAltimore
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2 # dummy number at present
 content: |

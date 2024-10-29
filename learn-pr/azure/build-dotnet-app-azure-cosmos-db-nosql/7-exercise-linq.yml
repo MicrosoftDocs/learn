@@ -4,14 +4,14 @@ title: Exercise - Enumerate items using language-integrated query (LINQ)
 metadata:
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
+  ms.custom:
+    - devx-track-dotnet
   description: |
-    Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to build queries using the C# LINQ method syntax.
-  sandbox: true
+    Build queries using the C# LINQ method syntax within the Microsoft.Azure.Cosmos .NET library from NuGet.
   author: seesharprun
   ms.author: sidandrews
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.topic: unit
+  ms.date: 10/09/2024
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-linq.md)]

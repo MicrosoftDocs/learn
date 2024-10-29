@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-aks-edge-essentials-azure-arc.remote-application-aks-edge-essentials
+title: Deploy applications remotely in Arc-enabled AKS Edge Essentials cluster
+metadata:
+  title: Deploy applications remotely in Arc-enabled AKS Edge Essentials cluster
+  description: This content is a part of Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc.
+  ms.date: 01/17/2024
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-remote-application-aks-edge-essentials.md)]

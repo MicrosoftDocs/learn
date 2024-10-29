@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-device-management-concepts-methods.choose-between-approaches
+title: Choose between device management approaches for Azure IoT Hub
+metadata:
+  title: Choose between device management approaches for Azure IoT Hub
+  description: This content is part of Examine device management concepts and methods for Azure IoT Hub
+  ms.date: 09/26/2023
+  author: kgremban
+  ms.author: kgremban
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-compare-device-management-approaches.md)]

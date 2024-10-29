@@ -1,4 +1,4 @@
-﻿This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. 
+This exercise takes you through the process of creating and configuring an Express.js-based web service that provides access to Azure Database for PostgreSQL. 
 
 In this exercise, you'll:
 
@@ -12,7 +12,7 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 * To have completed the first exercise of this module. You'll use the Azure PostgreSQL database you created and configured in that exercise.
 
 ## Create a sample Node.js Express web app
@@ -114,7 +114,7 @@ Next, you'll configure your newly created Node.js Express web app to connect to 
 1. To establish a connection to the database, you need to add a connection string in the Sequalize-specific format to the **index.js** file following the line you added in the previous step. Replace the `<server_name>` placeholder with the name of the Azure Database for PostgreSQL server you provisioned in the previous exercise:
 
     ```javascript
-    const sequelize = new Sequelize('postgres://Student%40<server_name>:Pa55w0rd1234@<server_name>.postgres.database.azure.com:5432/cnainventory')
+    const sequelize = new Sequelize('postgres://Student%40<server_name>:<your password placeholder>@<server_name>.postgres.database.azure.com:5432/cnainventory')
     ```
 
     > [!NOTE]
@@ -195,7 +195,7 @@ Now you're ready to configure the routes that will provide read and write access
     >
     ```javascript
     const Sequelize = require('sequelize')
-    const sequelize = new Sequelize('postgres://Student%40postgresql-ek.postgres.database.azure.com:Pa55w0rd1234@postgresql-ek.postgres.database.azure.com:5432/cnainventory')
+    const sequelize = new Sequelize('postgres://Student%40postgresql-ek.postgres.database.azure.com:<your password placeholder>@postgresql-ek.postgres.database.azure.com:5432/cnainventory')
     sequelize
     .authenticate()
     .then(() => {
