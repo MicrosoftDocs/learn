@@ -33629,6 +33629,66 @@
       "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/index.yml",
       "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/index.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/5-backup-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/3-create-snapshots.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/10-implement-azure-site-recovery.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/1-introduction.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/12-knowledge-check.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/11-simulation-machine-backups.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/9-manage-soft-delete.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/2-protect-data.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/6-restore-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/4-setup-recovery-services-vault-backup-options.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/13-summary-resources.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
