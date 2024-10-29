@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you create an Azure Resource Manager template (ARM template), deploy it to Azure, and then update that ARM template to add parameters and outputs.
+In this exercise, you create an Azure Resource Manager (ARM) template, deploy it to Azure, and then update that ARM template to add parameters and outputs.
 
 This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code before starting the exercise.
 
@@ -9,7 +9,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
 
-1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On the first line of the file, enter *arm*.
+1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On line 1 of the file, enter *arm*.
 
 1. Visual Studio Code automatically displays several potential choices that start with **arm!**. Select the **Azure Resource Manager (ARM) template**. Visual Studio Code automatically processes the schemas and languages for your template.
 
@@ -122,7 +122,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the command bar of the terminal window shows **PowerShell**, you have the right shell from which to work, and you can skip to the next section.
 
-      :::image type="content" source="../media/3-pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window with pwsh terminal selected.":::
+      :::image type="content" source="../media/3-pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window with the 'pwsh' terminal selected.":::
 
     1. If not, select the down arrow and in the dropdown list select PowerShell. If that option is missing, then select **Select Default Profile**.
 
@@ -211,7 +211,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 1. Enter *storage* inside the brackets. A list of related snippets appears. Select **arm-storage**.
 
-    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown under the typed word storage.":::
+    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code azure Resource Manager-storage snippet shown under the typed word storage.":::
 
     Your file looks like this:
 
