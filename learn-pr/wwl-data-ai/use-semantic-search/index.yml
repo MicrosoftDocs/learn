@@ -3,9 +3,9 @@ uid: learn.use-semantic-search
 metadata:
   title: Perform search reranking with semantic ranking in Azure AI Search
   description: Perform search reranking with semantic ranking in Azure AI Search.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.collection:

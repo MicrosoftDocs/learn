@@ -33554,6 +33554,141 @@
       "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/2-user-accounts-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/3-exercise-add-delete-users-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/4-manage-app-resource-access-azure-ad-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/5-exercise-assign-users-azure-ad-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/6-collaborate-guest-accounts-azure-ad-b2b.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/7-exercise-guest-user-access-azure-ad-b2b.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/2-what-are-domain-names.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/3-add-custom-domain-name.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/4-solve-common-issues.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/index.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/5-backup-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/3-create-snapshots.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/10-implement-azure-site-recovery.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/1-introduction.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/12-knowledge-check.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/11-simulation-machine-backups.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/9-manage-soft-delete.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/2-protect-data.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/6-restore-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/4-setup-recovery-services-vault-backup-options.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/13-summary-resources.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
