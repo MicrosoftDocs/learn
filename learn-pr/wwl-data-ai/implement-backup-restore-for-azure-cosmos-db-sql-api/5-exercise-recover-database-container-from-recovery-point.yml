@@ -4,12 +4,10 @@ title: Exercise - Recover a database or container from a recovery point
 metadata:
   title: Exercise - Recover a database or container from a recovery point
   description: "Exercise - Recover a database or container from a recovery point"
-  ms.date: 02/27/2024
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-recover-database-container-from-recovery-point.md)]
