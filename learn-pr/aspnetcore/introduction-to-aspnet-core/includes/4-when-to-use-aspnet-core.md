@@ -1,10 +1,10 @@
-ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-enabled, Internet-connected apps. Whether ASP.NET Core is the right web development framework for you depends on many factors.
+ASP.NET Core is a cross-platform, high-performance framework for building modern web applications. Whether ASP.NET Core is the right web development framework for you depends on many factors.
 
 ## When to use ASP.NET Core
 
 ASP.NET Core for web development is ideal when your web app has any of these requirements:
 
-- **Rich user interfaces**: You want to build interactive and dynamic web applications. With support for Blazor, React, Angular, and Vue, ASP.NET Core allows you to create rich user interfaces.
+- **Rich user interfaces**: You want to build interactive and dynamic web applications. With support for Blazor and popular frontend JavaScript frameworks, ASP.NET Core allows you to create rich user interfaces.
 - **API development**: You need to develop robust API services. ASP.NET Core supports both RESTful APIs and gRPC, providing flexibility for different communication needs.
 - **Microservices architecture**: You're building a microservices-based architecture. ASP.NET Core’s lightweight and modular design is well-suited for microservices.
 - **High performance**: Your application demands high performance and scalability. ASP.NET Core is designed to handle high traffic and large-scale applications efficiently.

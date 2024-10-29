@@ -52,11 +52,10 @@ ASP.NET Core provides a robust and flexible backend for building a wide range of
 - **API development**: ASP.NET Core is well-suited for building APIs, with support for both RESTful APIs and gRPC. RESTful APIs are ideal for web-based communication, while gRPC offers high performance and efficient communication for real-time applications and microservices.
 - **Background Tasks**: ASP.NET Core allows you to run background tasks using hosted services. This is useful for tasks that need to run independently of user requests, such as processing messages from a queue or performing scheduled maintenance.
 
-### Monitoring and maintenance
+### Monitoring and diagnostics
 
 ASP.NET Core provides a comprehensive suite of tools for monitoring and maintaining the health and performance of your applications. These features can be easily added to your application as middleware components, integrating specific functionalities into your project:
 
-- **Application Insights**: Integrated with Azure Monitor, this tool collects request rates, response times, failure rates, and exceptions. It provides powerful analytics and visualization tools to help you understand your application’s performance and usage patterns.
 - **Built-in metrics**: ASP.NET Core includes built-in metrics that track various aspects of your application’s performance, such as request rates, response times, and error rates. 
 - **Flexible logging framework**: A flexible logging framework is built in, and supports various logging providers, including console, debug, and event source. This helps in capturing detailed logs for diagnostics and monitoring.
 - **Tracing**: ASP.NET Core supports distributed tracing, which helps you track the flow of requests across different services and components. This is useful for diagnosing performance issues and understanding the interactions between different parts of your application.
