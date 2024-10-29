@@ -14,10 +14,7 @@ ASP.NET Core supports a variety of front-end development approaches, allowing yo
 
 #### Blazor
 
-Blazor is a framework for building interactive web UI components using C# instead of JavaScript. Blazor can run on WebAssembly (client-side) or on the server, allowing you to create rich, interactive web applications with a single codebase. Blazor offers two integrated hosting models that span both the front end and the server-side:
-
-- Blazor WebAssembly: Runs on WebAssembly (client-side), allowing you to create rich, interactive web applications with a single codebase.
-- Blazor Server: Runs on the server, providing a rich, interactive user experience with real-time updates over a SignalR connection.
+Blazor is a framework for building interactive web UI components using HTML, CSS, and C#. Blazor can run on WebAssembly (client-side) or on the server, allowing you to create rich, interactive web applications with a single codebase.
 
 #### Integration with front-end frameworks like React, Angular, and Vue
 
