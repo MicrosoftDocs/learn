@@ -65,7 +65,7 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 #### Bring your own device (BYOD)
 
-- **Workplace join and Intune management:** Here the user can join their personal devices to access corporate resources and services. You can use Workplace join and enroll devices into Intune MDM to receive device-level policies, which are another option to evaluate Conditional Access criteria.
+- **Workplace join and Intune management:** The user can join their personal devices to access corporate resources and services. You can use Workplace join and enroll devices into Intune MDM to receive device-level policies, which are another option to evaluate Conditional Access criteria.
 
 ## App-based Conditional Access
 
