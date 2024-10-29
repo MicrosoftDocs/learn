@@ -21,7 +21,7 @@ With co-management, Intune evaluates every device in your network to determine h
 
    - This evaluation is pre-security breach and configuration-based.  
 
-   - For co-managed devices, Configuration Manager also does configuration-based evaluation; for example, required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
+   - For co-managed devices, Configuration Manager also does configuration-based evaluation for things like required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
 
 1. Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender for Endpoint (formerly Microsoft Defender Advanced Threat Protection or Windows Defender ATP) and other mobile threat-defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, then passes this information to Intune for real-time compliance evaluation.  
 
