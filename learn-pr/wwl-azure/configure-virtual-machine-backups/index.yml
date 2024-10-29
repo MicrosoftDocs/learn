@@ -35,7 +35,6 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.configure-virtual-machine-backups.setup-recovery-services-vault-backup-options
 - learn.wwl.configure-virtual-machine-backups.summary-resources
 badge:
   uid: learn.wwl.configure-virtual-machine-backups.badge
