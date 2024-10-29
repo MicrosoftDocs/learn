@@ -13,7 +13,10 @@ metadata:
   ms.service: azure-container-apps
   ai-usage: ai-assisted
 title: Configure a container app in Azure Container Apps
-summary: This module examines the features and capabilities of Azure Container Apps, and then focuses on how to create, configure, scale, and manage container apps using Azure Container Apps. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: |
+  This module examines the features and capabilities of Azure Container Apps, and then focuses on how to create, configure, scale, and manage container apps using Azure Container Apps.&nbsp;
+
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   -   Examine the features and capabilities of Azure Container Apps.
 
