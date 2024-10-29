@@ -27,6 +27,6 @@ ASP.NET Core’s modular architecture offers a flexible approach to modern web d
 
 ASP.NET Core helps you build secure applications thanks to its robust built-in security features for authentication and authorization. These features help applications manage user identities and protect sensitive data effectively.
 
-### Productivity
+### Increased productivity
 
 Overall, ASP.NET Core provides a productive development experience, enabling developers to build high-quality full stack web apps efficiently and effectively.
