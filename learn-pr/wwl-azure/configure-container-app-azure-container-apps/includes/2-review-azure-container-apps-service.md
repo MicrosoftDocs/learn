@@ -51,4 +51,4 @@ With Azure Container Apps, you can:
 
 - Monitor logs using Azure Log Analytics.
 
-- Override (already generous) quotas to increase limits on a per-account basis.
+- Generous quotas, which can be overridden to increase limits on a per-account basis.
