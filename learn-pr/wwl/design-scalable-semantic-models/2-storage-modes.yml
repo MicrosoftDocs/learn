@@ -1,26 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-scalable-semantic-models.{{unitName}}
+uid: learn.design-scalable-semantic-models.storage-modes
 title: Choose the right storage mode for your semantic model
 metadata:
-  title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: "Choose the right storage mode for your semantic model"
+  description: "Understand the different storage modes and guidance to optimize each connection type."
   ms.date: 10/15/2024
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from
-### the ms.service allowlist.
-###
-### If your content isn't about a product or service, you can omit the ms.service field.
-###
-### For the list of approved ms.service values, go to
-### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
-###
-### To request new values, go to
-### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
-  ms.service: TODO
 durationInMinutes: 6
 content: |
   [!include[](includes/2-storage-modes.md)]

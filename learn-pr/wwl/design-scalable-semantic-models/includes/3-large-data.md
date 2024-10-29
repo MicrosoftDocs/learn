@@ -1,5 +1,3 @@
-## Configure semantic model for large data
-
 When working with very large datasets, you need a different data loading strategy. In this unit, we explain how to enable large semantic model storage formatting and how to configure incremental refresh. These features allow large semantic models to refresh at a more manageable rate and size.
 
 ## Large Semantic Model Storage Formats

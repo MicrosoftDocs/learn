@@ -38,6 +38,8 @@ In the following image, we have a matrix with the three fiscal years with the to
 
 ![Screenshot of the matrix visual showing the Total Sales for YTD, QTD, and MTD for each year.](../media/calculation-group-matrix.png)
 
+Now you can create another visual for Profit with the same calculation group and see Profit by MTD, QTD, and YTD. To complete this scenario without calculation groups, you need to measures for Profit, Profit MTD, Profit QTD, Profit YTD, Total Sales, Total Sales MTD, Total Sales QTD, and Total Sales YTD. The dynamic and reusable nature of calculation groups make them incredibly powerful to scale your semantic models.
+
 > [!TIP]
 > See the documentation to learn more about how to [Create calculations groups in Power BI](/power-bi/transform-model/calculation-groups).
 

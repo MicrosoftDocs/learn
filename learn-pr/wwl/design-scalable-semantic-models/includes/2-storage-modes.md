@@ -19,7 +19,7 @@ Guidance for Import models also applies to the other storage modes. You should a
 
 **DirectQuery** allows you to query data directly from the source without storing it in Power BI, making it ideal for handling large volumes of data and near real-time data delivery. However, it has slower performance compared to Import Mode and offers limited modeling capabilities.
 
-**Optimization Tips**
+**Optimization Tips**:
 
 - Simplify DAX measures to avoid complex calculations at the source.
 - Apply dual storage mode for dimensions related to fact tables.
@@ -35,7 +35,7 @@ Guidance for Import models also applies to the other storage modes. You should a
 
 **Optimization Tips**:
 
-- Configure Direct Lake to access ADLS storage through shortcuts.
+- Configure Direct Lake to access ADLS (Azure Data Lake Storage) storage through shortcuts.
 - Set up fallback behavior to DirectQuery for complex DAX queries.
 
 ### Composite model
