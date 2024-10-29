@@ -21,6 +21,9 @@ quiz:
     - content: "Using Microsoft Entra ID and Managed Identity"
       isCorrect: true
       explanation: "Using Microsoft Entra ID and Managed Identity enhances security by avoiding the use of embedded credentials and leveraging Azure's identity management capabilities."
+    - content: "Using a shared username and password"
+      isCorrect: false
+      explanation: "Using a shared username and password can expose sensitive information and is less secure."
   - content: "What is the benefit of using a Managed Identity for accessing Azure Database for PostgreSQL from a Virtual Machine?"
     choices:
     - content: "It eliminates the need for storing credentials in the application code."
@@ -29,6 +32,9 @@ quiz:
     - content: "It provides faster query execution times."
       isCorrect: false
       explanation: "Managed Identity is primarily a security feature and does not directly impact query execution times."
+    - content: "It allows access to the Azure portal."
+      isCorrect: false
+      explanation: "Managed Identity is primarily a security feature and does not provide access to the Azure portal."
   - content: "What role should be assigned to a user to allow them to administer a Virtual Machine in Azure?"
     choices:
     - content: "Virtual Machine Administrator Login"
@@ -37,8 +43,14 @@ quiz:
     - content: "Reader"
       isCorrect: false
       explanation: "The 'Reader' role only allows viewing resources and does not provide administrative access."
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "The 'Contributor' role allows managing resources but does not provide specific Virtual Machine administration capabilities."
   - content: "How can you secure network access to an Azure Virtual Machine?"
     choices:
+    - content: "By enabling all network interfaces"
+      isCorrect: false
+      explanation: "Enabling all network interfaces would make the Virtual Machine accessible to all traffic and is not a practical security measure."
     - content: "By configuring Network Security Group (NSG) rules"
       isCorrect: true
       explanation: "Network Security Group (NSG) rules allow you to control inbound and outbound traffic to and from an Azure Virtual Machine."
