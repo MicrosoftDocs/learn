@@ -4042,3 +4042,8 @@ achievements:
   title: Configure virtual machine backups
   summary: Learn how to configure virtual machine backups including restore operations.
   iconUrl: /training/achievements/virtual-machines-configure-backup.svg
+- uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.badge
+  type: badge
+  title: Manage data assets in the classic Microsoft Purview Data Catalog
+  summary: This module teaches you how to use the classic Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate.
+  iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg
