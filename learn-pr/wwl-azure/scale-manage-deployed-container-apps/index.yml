@@ -13,7 +13,10 @@ metadata:
   ms.service: azure-container-apps
   ai-usage: ai-assisted
 title: Scale and manage deployed container apps
-summary: This module reviews the concept of revisions in Azure Container Apps and examines options for application lifecycle management. It also examines options for scaling and traffic splitting using Azure Container Apps. [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
+summary: |
+  This module reviews the concept of revisions in Azure Container Apps and examines options for application lifecycle management. It also examines options for scaling and traffic splitting using Azure Container Apps.&nbsp;
+
+  [!INCLUDE [](../../includes/wwl/ai-contribution-notes.md)]
 abstract: |
   -   Examine the concept of revisions in Azure Container Apps.
 
