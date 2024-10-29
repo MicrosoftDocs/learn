@@ -38,7 +38,6 @@ units:
 - learn.wwl.configure-virtual-machine-backups.protect-data
 - learn.wwl.configure-virtual-machine-backups.setup-recovery-services-vault-backup-options
 - learn.wwl.configure-virtual-machine-backups.restore-virtual-machines
-- learn.wwl.configure-virtual-machine-backups.manage-soft-delete
 - learn.wwl.configure-virtual-machine-backups.summary-resources
 badge:
   uid: learn.wwl.configure-virtual-machine-backups.badge
