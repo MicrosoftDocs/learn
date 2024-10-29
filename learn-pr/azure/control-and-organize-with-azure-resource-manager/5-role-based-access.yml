@@ -3,8 +3,8 @@ uid: learn.control-and-organize-with-resource-manager.5-role-based-access
 title: Secure resources with role-based access control
 metadata:
   title: Secure resources with role-based access control
-  description: Provide fine-grained access control with RBAC
-  ms.date: 09/27/2024
+  description: Provide fine-grained access control with RBAC.
+  ms.date: 10/29/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
