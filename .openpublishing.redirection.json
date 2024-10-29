@@ -19080,6 +19080,51 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/index.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/2-browse-search-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/3-manage-assets.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/4-manage-assets-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/5-business-glossary.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/6-business-glossary-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/advanced-security-compute/4-microsoft-defender-containers.md",
       "redirect_url": "/training/modules/advanced-security-compute/5-microsoft-defender-containers",
       "redirect_document_id": true
