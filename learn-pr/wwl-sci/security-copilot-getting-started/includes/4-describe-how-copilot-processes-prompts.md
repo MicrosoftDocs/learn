@@ -5,7 +5,7 @@ So now that there's a basic understanding of plugins, capabilities, and how the 
 
 When a user submits a prompt, Copilot processes that prompt to generate the best possible response. The diagram that follows illustrates, at a high level, steps that Copilot takes to process the prompt and generate a response.
 
-:::image type="content" source="../media/copilot-how-it-works.png" lightbox="../media/copilot-how-it-works.png" alt-text="Diagram illustrating how Microsoft Security Copilot processes a prompt request.":::
+:::image type="content" source="../media/copilot-how-it-works-v2.png" lightbox="../media/copilot-how-it-works-v2.png" alt-text="Diagram illustrating how Microsoft Security Copilot processes a prompt request.":::
 
 1. Submit a prompt: The process starts when a user submits a prompt in the prompt bar.
 
