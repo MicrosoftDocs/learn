@@ -33669,6 +33669,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/9-manage-soft-delete.md",
       "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/2-protect-data.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
     }
   ]
 }
