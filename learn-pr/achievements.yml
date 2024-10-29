@@ -4037,3 +4037,8 @@ achievements:
   title: Create Azure users and groups in Microsoft Entra ID
   summary: Create users in Microsoft Entra ID. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
   iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
+- uid: learn.wwl.configure-virtual-machine-backups.badge
+  type: badge
+  title: Configure virtual machine backups
+  summary: Learn how to configure virtual machine backups including restore operations.
+  iconUrl: /training/achievements/virtual-machines-configure-backup.svg
