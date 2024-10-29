@@ -14,7 +14,7 @@ The third level, data security, has several building blocks that can be configur
 
 It's helpful to envision these building blocks in a hierarchy to understand how access controls can be applied individually or together.
 
-![Access control hierarchy](../media/data-access-controls.png)
+![Screenshot of Fabric access control hierarchy.](../media/data-access-controls.png)
 
 A *workspace* in Fabric enables you to distribute ownership and access policies using *workspace roles*. Within a workspace, you can create Fabric data *items* like lakehouses, data warehouses, and semantic models. *Item permissions* can be inherited from a workspace role or set individually by sharing an item. Items are shared using item permissions when workspace roles are too permissive.  
 

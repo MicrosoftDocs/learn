@@ -3,7 +3,7 @@ uid: learn-wwl.secure-data-access-in-fabric.apply-granular-permissions
 title: Apply granular permissions
 metadata:
   title: Apply granular permissions
-  description: "Learn how to configure granular permissions for SQL analytics endpoint, OneLake data access roles (preview), the warehouse, and the semantic model in Microsoft Fabric in Microsoft Fabric."
+  description: "Learn how to configure granular permissions for SQL analytics endpoint, OneLake data access roles (preview), the warehouse, and the semantic model in Microsoft Fabric."
   ms.date: 10/18/2024
   author: wwlpublish
   ms.author: theresai
