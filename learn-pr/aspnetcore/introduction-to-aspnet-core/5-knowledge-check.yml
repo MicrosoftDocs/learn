@@ -66,17 +66,4 @@ quiz:
       - content: "Requires separate codebases for different platforms."
         isCorrect: false
         explanation: "ASP.NET Core allows for a single codebase to run across different platforms, providing a consistent runtime environment."
-  - content: "What is the purpose of NuGet in ASP.NET Core development?"
-    choices:
-      - content: "To manage and share code libraries."
-        isCorrect: true
-        explanation: "NuGet is used to manage and share code libraries, facilitating code reuse and collaboration."
-      - content: "To compile C# code."
-        isCorrect: false
-        explanation: "NuGet role isn't for compiling C# code; it manages packages."
-      - content: "To monitor application performance."
-        isCorrect: false
-        explanation: "Monitoring application performance is done using tools like Application Insights, not NuGet."
-      - content: "To handle HTTP requests."
-        isCorrect: false
 
