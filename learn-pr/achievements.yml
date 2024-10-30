@@ -4032,6 +4032,51 @@ achievements:
   title: Transcribe large amounts of audio data with Batch Transcription
   summary: Batch transcription is a feature of Azure AI Speech that lets you transcribe large amounts of pre-recorded audio data asynchronously. Batch transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and problems are dealt with quickly and properly.
   iconUrl: /training/achievements/intro-to-batch-transcription.svg
+- uid: learn.azure.implement-firewall-load-balancer.badge
+  type: badge
+  title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
+  summary: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.manage-azure-stack-hci-tenant-networks.badge
+  type: badge
+  title: Manage Azure Stack HCI tenant networks
+  summary: Manage Azure Stack HCI tenant networks.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.plan-deploy-sdn-infrastructure.badge
+  type: badge
+  title: Plan for and deploy SDN infrastructure on Azure Stack HCI
+  summary: This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-azure-stack-hci-clusters.badge
+  type: badge
+  title: Manage Azure Stack HCI clusters
+  summary: This module covers the most common Microsoft Azure Stack HCI management and maintenance tasks that will help you improve the resiliency, stability, and performance of your existing IT infrastructure.
+  iconUrl: /training/achievements/manage-azure-stack-hci-clusters.svg
+- uid: learn-pr.azure.manage-azure-stack-hci-volumes.badge
+  type: badge
+  title: Manage Azure Stack HCI volumes
+  summary: Manage Azure Stack HCI (Hyperconverged infrastructure) volumes.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.integrate-azure-services-with-azure-stack-hci.badge
+  type: badge
+  title: Integrate Azure services with Azure Stack HCI
+  summary: This module describes the benefits, considerations, and implementation process of integrating Microsoft Azure services with Azure Stack HCI and its workloads.
+  iconUrl: /training/achievements/integrate-azure-services-with-azure-stack-hci.svg
+- uid: learn.wwl.manage-azure-stack-hci-virtual-machine-workloads.badge
+  type: badge
+  title: Manage Azure Stack HCI virtual machine workloads
+  summary: This module describes how to manage and maintain Microsoft Azure Stack HCI virtual machine (VM) workloads.
+  iconUrl: /training/achievements/manage-azure-stack-hci-virtual-machine-workloads.svg
+- uid: learn.azure.stack-hci-arc-integration.badge
+  type: badge
+  title: Integrate Azure Arc and Azure Stack HCI
+  summary: In this module, you'll learn the fundamentals of Azure Arc and how it's used to bring new capabilities to the management and monitoring of your Azure Stack HCI clusters at scale.
+  iconUrl: /training/achievements/stack-hci-arc-integration.svg
+- uid: learn.azure.azure-stack-hci-plan-deploy.badge
+  type: badge
+  title: Plan and deploy Azure Stack HCI
+  summary: This module introduces you to planning for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
+  iconUrl: /training/achievements/azure-stack-hci-plan-deploy.svg
 - uid: learn.azure.azure-stack-hci-technologies.badge
   type: badge
   title: Introduction to Azure Stack HCI core technologies
