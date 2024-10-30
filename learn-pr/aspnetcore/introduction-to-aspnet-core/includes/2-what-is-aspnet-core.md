@@ -2,10 +2,10 @@ ASP.NET Core is a cross-platform, high-performance framework for building modern
 
 ### Full stack web development
 
-ASP.NET Core is a full stack web framework that seamlessly integrates frontend and backend development needs within a single consistent framework: 
+ASP.NET Core is a full stack web framework that seamlessly integrates front-end and back-end development needs within a single consistent framework: 
 
-- For frontend development, ASP.NET Core includes Blazor, a component-based web UI framework based on C# that supports both server-side rendering and client-side rendering via WebAssembly. 
-- Alternatively, ASP.NET Core can be integrated with JavaScript frontend frameworks like Angular, React, and Vue.
+- For front-end development, ASP.NET Core includes Blazor, a component-based web UI framework based on C# that supports both server-side rendering and client-side rendering via WebAssembly. 
+- Alternatively, ASP.NET Core can be integrated with JavaScript front-end frameworks like Angular, React, and Vue.
 
 ### API development
 
@@ -13,7 +13,7 @@ ASP.NET Core is a powerful framework for API development:
 
 - It supports creating JSON-based APIs, gRPC services, and real-time services using SignalR. 
 - With built-in OpenAPI support, developers can easily generate and visualize API documentation, simplifying the design and consumption of APIs. 
-- You can use ASP.NET Core to build backend APIs for a variety of apps, including web apps and native mobile apps.
+- You can use ASP.NET Core to build back-end APIs for a variety of apps, including web apps and native mobile apps.
 
 ### Modular architecture
 
