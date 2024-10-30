@@ -33761,6 +33761,116 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/plan-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/plan-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/plan-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/plan-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/plan-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/plan-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/describe-fault-tolerance-storage-efficiency-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/concepts/fault-tolerance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/create-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/create-volumes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/create-stretched-volumes-configure-replication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/manage-volumes?tabs=windows-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/delete-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/manage-volumes?tabs=windows-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/expand-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/manage-volumes?tabs=windows-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-volumes/encrypt-deduplicate-compress-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/volume-encryption-deduplication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/2-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/3-update-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/4-monitor-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/5-configure-cluster-quorum.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/6-implement-stretched-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/7-add-remove-cluster-nodes.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/8-perform-node-maintenance.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/9-troubleshoot-credssp.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-clusters/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/monitoring-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
       "redirect_document_id": false
