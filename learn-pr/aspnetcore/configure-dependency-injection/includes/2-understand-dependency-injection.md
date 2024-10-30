@@ -1,8 +1,8 @@
-ASP.NET Core apps often have a need to access the same services across multiple components. For example, several components might need to access a service that fetches data from a database. ASP.NET Core users a built-in dependency injection (DI) container to manage the services that an app uses.
+ASP.NET Core apps often need to access the same services across multiple components. For example, several components might need to access a service that fetches data from a database. ASP.NET Core users a built-in dependency injection (DI) container to manage the services that an app uses.
 
 ## Dependency injection and Inversion of Control (IoC)
 
-The dependency injection pattern is a form of Inversion of Control (IoC). In the dependency injection pattern, a class receives its dependencies from external sources rather than creating them itself. This pattern decouples the class from the dependency, which makes code easier to test and maintain.
+The dependency injection pattern is a form of Inversion of Control (IoC). In the dependency injection pattern, a component receives its dependencies from external sources rather than creating them itself. This pattern decouples the code from the dependency, which makes code easier to test and maintain.
 
 Consider the following *Program.cs* file:
 
@@ -97,7 +97,7 @@ app.MapGet("/",
 Note the signature of the delegate now expects an `IPersonService` parameter instead of a `PersonService` parameter. When the app runs and a client requests the root URL, the service container provides an instance of the `PersonService` class because it's registered as the implementation of the `IPersonService` interface.
 
 > [!TIP]
-> Think of `IPersonService` as a contract. It defines the methods and properties that an implementation **must** have. The delegate wants an instance of `IPersonService`. It doesn't care at all about the underlying implementation, only that the instance has the methods and properties defined in the interface.
+> Think of `IPersonService` as a contract. It defines the methods and properties that an implementation **must** have. The delegate wants an instance of `IPersonService`. It doesn't care at all about the underlying implementation, only that the instance has the methods and properties defined in the contract.
 
 ## Testing with dependency injection
 
