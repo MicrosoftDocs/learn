@@ -33761,20 +33761,12 @@
       "redirect_document_id": false
     },
     {
-<<<<<<< HEAD
-      "source_path": "learn-pr/azure/implement-firewall-load-balancer/index.yml",
-=======
       "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/1-introduction.yml",
->>>>>>> 71dac53f1486bb09d154f5a7a1cbe0d79efb6616
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
       "redirect_document_id": false
     },
     {
-<<<<<<< HEAD
-      "source_path": "learn-pr/azure/implement-firewall-load-balancer/1-introduction.yml",
-=======
       "source_path": "learn-pr/azure/plan-deploy-sdn-infrastructure/2-describe-sdn-on-azure-stack-hci.yml",
->>>>>>> 71dac53f1486bb09d154f5a7a1cbe0d79efb6616
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
       "redirect_document_id": false
     },
