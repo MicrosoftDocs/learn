@@ -10,7 +10,7 @@ There are several different ways to enroll Windows devices to MDM, based on devi
 
 Automatic enrollment to MDM works for Windows devices, because only Windows devices can be joined to an on-premises AD DS and Microsoft Entra ID. Other devices, such as Android and iOS devices, can only be enrolled manually to MDM by using the Company Portal app. The Company Portal app isn't included on Android and iOS devices by default; it's available as a free app in Google Play store and the Apple app store. If you want to enroll iOS devices, you must ensure that MDM is configured with a valid Apple Push Notification (APN) certificate. iPhones, iPad, and macOS devices require an APN certificate for secure communication with MDM, regardless if MDM is Intune, MDM for Microsoft 365, or a third-party MDM product.
 
-For more details, refer to [Enable Windows device automatic enrollment](https://aka.ms/Ff5rl5).
+For more details, refer to [Enable Windows device automatic enrollment](/mem/intune/enrollment/quickstart-enroll-windows-device).
 
 #### Supported Devices
 

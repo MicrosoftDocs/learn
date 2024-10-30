@@ -2373,6 +2373,11 @@ achievements:
   title: Extract data from forms by using Azure AI Document Intelligence
   summary: In this learning path, you'll see how Azure Forms Analyzer solutions can enable you to capture data from typed or hand-written forms. You'll also learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
   iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
+- uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.badge   
+  type: badge   
+  title: Create a custom skill for Azure AI Search   
+  summary: Use the power of artificial intelligence to enrich your data and find new insights.   
+  iconUrl: /training/achievements/create-an-enrichment-pipeline.svg  
 - uid: learn.wwl.extract-text-from-images-documents.trophy
   type: trophy
   title: Extract text from images and documents
@@ -4017,6 +4022,11 @@ achievements:
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
   summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
   iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
+- uid: learn.azure.manage-subscription-access-azure-rbac.badge
+  type: badge
+  title: Manage access to an Azure subscription by using Azure role-based access control (Azure RBAC)
+  summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
+  iconUrl: /training/achievements/manage-subscription-access-azure-rbac.svg
 - uid: learn.azure.intro-to-batch-stt.badge
   type: badge
   title: Transcribe large amounts of audio data with Batch Transcription
@@ -4032,3 +4042,33 @@ achievements:
   title: Introduction to Azure Stack
   summary: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure. 
   iconUrl: /training/achievements/intro-to-azure-stack.svg
+- uid: learn.wwl.operate-maintain-azure-stack-hci.trophy
+  type: trophy
+  title: Operate and maintain Azure Stack HCI
+  summary: This learning path explains how to manage Azure Stack HCI clusters, integrate Microsoft Azure services with Azure Stack HCI, manage Azure Stack HCI VM workloads, and manage Azure Kubernetes Service on Azure Stack HCI.
+  iconUrl: /training/achievements/operate-and-maintain-azure-stack-hci.svg
+- uid: learn.azure-stack-hci-foundations.trophy
+  type: trophy
+  title: Azure Stack HCI foundations
+  summary: This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+  iconUrl: /training/achievements/azure-stack-hci.svg
+- uid: learn.azure.add-custom-domain-name-azure-active-directory.badge
+  type: badge
+  title: Add custom domain name to Microsoft Entra ID
+  summary: In this module, you'll learn to add your custom domain to Microsoft Entra ID. You'll also learn to add DNS information to the domain registrar, verify your custom domain name in the Azure portal, and set it as the primary.
+  iconUrl: /training/achievements/add-custom-domain-name-azure-active-directory.svg
+- uid: learn.azure.create-users-and-groups-in-azure-active-directory.badge
+  type: badge
+  title: Create Azure users and groups in Microsoft Entra ID
+  summary: Create users in Microsoft Entra ID. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
+  iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
+- uid: learn.wwl.configure-virtual-machine-backups.badge
+  type: badge
+  title: Configure virtual machine backups
+  summary: Learn how to configure virtual machine backups including restore operations.
+  iconUrl: /training/achievements/virtual-machines-configure-backup.svg
+- uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.badge
+  type: badge
+  title: Manage data assets in the classic Microsoft Purview Data Catalog
+  summary: This module teaches you how to use the classic Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate.
+  iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg

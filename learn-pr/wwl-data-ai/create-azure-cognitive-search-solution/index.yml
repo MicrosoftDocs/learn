@@ -3,9 +3,9 @@ uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure AI Search solution
   description: Create an Azure AI Search solution
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/11/2023
+  ms.date: 10/24/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub

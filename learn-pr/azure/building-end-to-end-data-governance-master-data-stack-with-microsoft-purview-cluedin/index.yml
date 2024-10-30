@@ -4,8 +4,8 @@ metadata:
   title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn.
   description: "This training module guides you in how to build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
   ms.date: 05/28/2024
-  author: whhender
-  ms.author: whhender
+  author: mannan1964 
+  ms.author: mannan 
   ms.topic: module
   ms.service: purview-data-governance
 title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn
