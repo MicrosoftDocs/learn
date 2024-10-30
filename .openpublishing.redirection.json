@@ -34159,6 +34159,46 @@
       "source_path": "learn-pr/azure/azure-stack-hci-technologies/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/2-describe-datacenter-firewall-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/3-implement-datacenter-firewall-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/4-describe-slb-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/5-implement-slb-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/implement-firewall-load-balancer/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
+      "redirect_document_id": false
     }
   ]
 }
