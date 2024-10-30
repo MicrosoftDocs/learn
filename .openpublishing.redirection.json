@@ -33571,6 +33571,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/azure-stack-hci-foundations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/operate-maintain-azure-stack-hci/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/azure-arc-vm-management-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
       "redirect_document_id": false
