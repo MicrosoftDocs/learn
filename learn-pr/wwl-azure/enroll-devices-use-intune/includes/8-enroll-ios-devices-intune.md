@@ -42,7 +42,7 @@ If an organization allows its users to bring their own devices, the users should
 
 You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
-For more information, refer to [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://aka.ms/AA6c2mq).
+For more information, refer to [Automatically enroll iOS devices with Apple's Device Enrollment Program](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios).
 
 #### Supervised mode
 

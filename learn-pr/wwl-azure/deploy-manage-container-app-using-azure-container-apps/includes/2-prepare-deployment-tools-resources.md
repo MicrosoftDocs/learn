@@ -70,7 +70,7 @@ Complete the following steps to install the .NET Software Development Kit (SDK).
 
 1. Open a browser window, and then navigate to the .NET download page: [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
-1. On the **Download .NET** page, select the *recommended* version of the .NET SDK.
+1. On the **Download .NET** page, select the latest Long Term Support (LTS) version of the .NET SDK.
 
 1. Wait for the installer file to finish downloading, and then run the .NET SDK installer file.
 
@@ -142,7 +142,7 @@ Complete the following steps install Azure CLI and the `containerapp` extension.
 
 1. In the browser window, follow the instructions for installing/updating Azure CLI for your computer's operating system.
 
-    The current version of the Azure CLI is 2.53.0. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `az version`. You can run `az upgrade` to install the latest version.
+    The current version of the Azure CLI is 2.65.0. For information about the latest release, see the release notes. To find your installed version and see if you need to update, run `az version`. You can run `az upgrade` to install the latest version.
 
 1. Open a command line or terminal application, such as Windows Command Prompt.
 
@@ -249,7 +249,7 @@ Complete the following steps to configure a Service Bus instance.
 
     - Subscription: Ensure that the Azure subscription that you're using for this guided project is selected.
     - Resource group name: Select **RG1**
-    - Namespace name: Enter **sb-apl2003-** followed by your name or initials. For example: **sb-apl2003-cah**.
+    - Namespace name: Enter **sb-az2003-** followed by your name or initials. For example: **sb-az2003-cah**.
     - Location: Ensure that **Central US** is selected.
     - Pricing tier: Select **Basic**.
 
@@ -271,16 +271,19 @@ Complete the following steps to configure a Container Registry instance.
 
 1. On the Container registries page, select **Create container registry** or **+ Create**.
 
-1. On the Basic tab of the Create container registry page, specify the following information:
+1. On the Basics tab of the Create container registry page, specify the following information:
 
     > [!NOTE]
     > The name of your Registry must be unique. Also, the Premium tier is required for private link with private endpoints.
 
     - Subscription: Ensure that the Azure subscription that you're using for this guided project is selected.
     - Resource group: Select **RG1**.
-    - Registry name: Enter **acrapl2003** followed by your initials and date. For example: **acrapl2003cah12oct**
+    - Registry name: Enter **acraz2003** followed by your initials and date. For example: **acraz2003cah25oct**
     - Location: Ensure that **Central US** is selected.
     - SKU: Select **Premium**.
+
+    > [!IMPORTANT]
+    > There is a daily fee associated with the Premium tier. You are responsible for the cost of the Azure resources that you use during this guided project. For more information, see the Azure Container Registry pricing page: [https://azure.microsoft.com/pricing/details/container-registry/](https://azure.microsoft.com/pricing/details/container-registry/)
 
 1. Select **Review + create**.
 
@@ -304,9 +307,9 @@ Complete the following steps to create a WebAPI app and publish to a GitHub repo
 
 1. On the File menu, select **Open Folder**.
 
-1. Create a new folder named **APL2003** in a location that is easy to find.
+1. Create a new folder named **AZ2003** in a location that is easy to find.
 
-    For example, create a folder named **APL2003** on the Windows Desktop.
+    For example, create a folder named **AZ2003** on the Windows Desktop.
 
 1. On the Terminal menu, select **New Terminal**.
 
@@ -343,11 +346,13 @@ Complete the following steps to create a WebAPI app and publish to a GitHub repo
 
 1. In Visual Studio Code, select **Publish to GitHub public repository**.
 
+1. Ensure that the **bin** and **obj** folders are not included in the repository.
+
 ### Create Docker image and push to Azure Container Registry
 
 Complete the following steps to create a Docker image and push the image to your Azure Container Registry.
 
-1. Ensure that you have your APL2003 code project open in Visual Studio Code.
+1. Ensure that you have your AZ2003 code project open in Visual Studio Code.
 
 1. To create a Dockerfile, run the following command in the Command Palette: **Docker: Add Docker Files to Workspace**.
 
@@ -368,6 +373,8 @@ Complete the following steps to create a Docker image and push the image to your
 
     This command builds a container image that is hosted by Docker and accessible using the Docker extension for VS Code.
 
+1. Wait for the Docker Build command to complete.
+
 1. Open the Visual Studio Code Command Palette, and then run the following command: **Docker Images: Push**.
 
 1. When the command runs, enter the following information:
@@ -382,19 +389,21 @@ Complete the following steps to create a Docker image and push the image to your
 
     - Azure subscription: Select the Azure Subscription that you're using for this guided project.
 
-    - Select your Azure Container Registry resource. For example: **acrapl2003cah12oct**
+    - Select your Azure Container Registry resource. For example: **acraz2003cah25oct**
 
-        An image tag is generated. For example: `acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest`
+        An image tag is generated. For example: `acraz2003cah12oct.azurecr.io/aspnetcorecontainer:latest`
 
     - To push the image to your Container Registry, press Enter.
 
     The following Docker command is executed:
 
     ```azurecli
-    docker image push acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest
+    docker image push acraz2003cah12oct.azurecr.io/aspnetcorecontainer:latest
     ```
 
-1. Open the Source Control view, and then **Commit** and **Sync Changes**.
+1. Wait for the image to be pushed to your Azure Container Registry.
+
+1. Open the Source Control view, and then **Commit** and **Sync** your file updates.
 
 ### Configure Azure DevOps and a starter Pipeline
 
@@ -408,17 +417,29 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
 1. Select **My Azure DevOps Organizations**.
 
-1. If you haven’t created an organization, select **Free**.
+1. If you haven’t created an organization, select **Free** or **Create new organization**.
+
+1. On the home page of your organization, in the lower-left corner of the page, select **Organization settings**.
+
+    ![Screenshot showing the Organization settings button on the organization home page.](../media/azure-devops-organization-settings-1.png)
+
+1. On the left side menu under **Security**, select **Policies**.
+
+1. Ensure that the **Allow public projects** policy is set to **On**.
+
+1. Return to the home page of your organization.
 
 1. To create a new project, select **New project**.
 
-1. On the Create new project page, enter the following information:
+    If you created a new organization, you may see the **Create a project to get started** page.
+
+1. On the Create new project page, specify the following information:
 
     - Project name: **Project1**
-    - Description: **APL-2003 project**
+    - Description: **AZ-2003 project**
     - Visibility: **Public**
 
-1. On the Create new project page, select **Create**.
+1. On the Create new project page, select **Create project**.
 
 1. On the left-side menu, select **Repos**.
 
@@ -428,7 +449,7 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
     Your repository URL should be similar to the following example:
 
-    `https://github.com/<your account>/APL2003`
+    `https://github.com/<your account>/AZ2003`
 
 1. On the left-side menu, select **Pipelines**.
 
@@ -450,6 +471,9 @@ Complete the following steps to configure Azure DevOps and a starter Pipeline:
 
     1. In the Rename/move pipeline dialog, under Name, enter **Pipeline1** and then select **Save**.
 
+> [!NOTE]
+> Don't run the pipeline now. You will configure this pipeline during the project exercises.
+
 ### Deploy a self-hosted Windows agent
 
 For an Azure Pipeline to build and deploy Windows, Azure, and other Visual Studio solutions you need at least one Windows agent in the host environment.
@@ -466,11 +490,11 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
 1. To create a personal access token, select **+ New Token**.
 
-1. Under Name, enter **APL2003**.
+1. Under Name, enter **AZ2003**.
 
 1. At the bottom of the Create a new personal access token window, to see the complete list of scopes, select **Show all scopes**.
 
-1. For the scope, select **Agent Pools (read, manage)** and **Deployment group (read, manage)**.
+1. For the custom designed scope, select **Agent Pools (Read & manage)** and **Deployment Groups (Read & manage)**.
 
     Ensure that all the other boxes are cleared.
 
@@ -480,7 +504,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     You use this token when you configure the agent.
 
-1. Ensure that you’re signed into Azure DevOps as the Azure DevOps organization owner.
+1. Ensure that you're signed into Azure DevOps as the Azure DevOps organization owner.
 
 1. Select your DevOps organization, and then select **Organization settings**.
 
@@ -490,9 +514,9 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
     If a list of Agent pools is displayed, complete the following steps:
 
-    1. To select the default pool, select **default**.
+    1. To select the default pool, select **Default**.
 
-        If the **default** pool doesn't exist, select **Add pool**, and then enter the following information:
+        If the **Default** pool doesn't exist, select **Add pool**, and then enter the following information:
 
         1. Under Pool type, select **Self-hosted**.
 
@@ -524,7 +548,9 @@ Complete the following steps to deploy a self-hosted Windows agent:
 
 1. Unpack the agent zip file into the directory you created.
 
-1. Open PowerShell as an Administrator, and then enter the following PowerShell command:
+1. Open PowerShell as an Administrator.
+
+1. Navigate to the "C:\agents" directory, and then enter the following PowerShell command:
 
     `.\config`
 
@@ -534,7 +560,7 @@ Complete the following steps to deploy a self-hosted Windows agent:
     - Enter authentication type (press enter for PAT) >: press Enter.
     - Enter personal access token >: Paste-in the personal access token that you copied to the clipboard earlier.
     - Enter agent pool (press enter for default) >: press Enter.
-    - Enter agent name (press enter for YOUR-PC-NAME) > enter **apl2003-agent**
+    - Enter agent name (press enter for YOUR-PC-NAME) > enter **az2003-agent**
     - Enter work folder (press enter for _work) >: press Enter.
     - Enter run agent as service? (Y/N) (press enter for N) >: enter **Y**
     - Enter enable SERVICE_SID_TYPE_UNRESTRICTED for agent service (Y/N) (press enter for N) >: enter **Y**

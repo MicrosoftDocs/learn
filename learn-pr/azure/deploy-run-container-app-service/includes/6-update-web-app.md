@@ -1,4 +1,4 @@
-Continuous deployment is a key feature for many fast-moving organizations. They need to deploy the latest version of their software quickly, but with the minimum of fuss.
+Continuous deployment is a key feature for many fast-moving organizations. They need to deploy the latest version of their software quickly but with minimum fuss.
 
 In the example scenario, the development team adds new features and enhancements to the web app regularly. For this reason, the team has decided to adopt a continuous-deployment approach.
 

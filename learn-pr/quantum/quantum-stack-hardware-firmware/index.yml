@@ -1,4 +1,5 @@
 ### YamlMime:Module
+hidden: true
 uid: learn.quantum.quantum-stack-hardware-firmware
 metadata:
   title: The Quantum Stack - Quantum Processor Units, Hardware, and Firmware
@@ -6,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.date: 9/26/2024
-  ms.service: azure-quantum
   ms.topic: module-standard-task-based
 title: The Quantum Stack - Quantum Processor Units, Hardware, and Firmware
 summary: "This module will introduce you to the quantum stack, including quantum processor units, hardware, and firmware."
@@ -30,7 +30,6 @@ roles:
 - student
 products:
   - github
-  - azure-quantum
 subjects:
   - devops
   - cloud-computing
