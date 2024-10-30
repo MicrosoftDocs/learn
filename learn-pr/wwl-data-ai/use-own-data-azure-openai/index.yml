@@ -46,5 +46,4 @@ units:
 - learn.wwl.use-own-data-azure-openai.knowledge-check
 - learn.wwl.use-own-data-azure-openai.summary
 badge:
-  uid: |
-    learn.wwl.use-own-data-azure-openai.badge
+  uid: learn.wwl.use-own-data-azure-openai.badge
