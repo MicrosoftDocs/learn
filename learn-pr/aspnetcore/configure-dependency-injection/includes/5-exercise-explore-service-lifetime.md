@@ -1,4 +1,4 @@
-In the previous exercise, you registered services using the Singleton service lifetime. In a code review, your team lead has asked you to investigate the differences between the **singleton**, **scoped**, and **transient** service lifetimes.
+In the previous exercise, you registered services using the singleton service lifetime. In a code review, your team lead has asked you to investigate the differences between the **singleton**, **scoped**, and **transient** service lifetimes.
 
 ## Test the singleton service lifetime
 
