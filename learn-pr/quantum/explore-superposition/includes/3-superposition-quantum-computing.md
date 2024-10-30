@@ -3,7 +3,7 @@ If the cat from the previous unit was a quantum cat, the state of the quantum ca
 
 In the classical world, objects can only be in one state at a time. However, in the quantum world, quantum particles can be in multiple states at the same time. This phenomenon is called **superposition**.
 
-In quantum computing nobody uses quantum cats - sadly - but qubits. The word "qubit" means "quantum bit". Just like in classical computing, where the basic unit of information is the bit, in quantum computing the basic unit of information is the qubit. And just like the bit can take two possibles values, 0 and 1, a qubit is any quantum particle that can be in two possibles states, like a photon, which can be polarized in two directions, or an electron, which can be in two energy levels. 
+In quantum computing nobody uses quantum cats - sadly - but **qubits**. The word "qubit" means "quantum bit". Just like in classical computing, where the basic unit of information is the bit, in quantum computing the basic unit of information is the qubit. And just like the bit can take two possible values, 0 and 1, a qubit is any quantum particle that can be in two possible states. For example, a qubit could be a photon, which can be polarized in two directions, or an electron, which can be in two energy levels.
 
 How can you represent the superposition in a qubit? What is the probability of finding a qubit in a particular state?
 

@@ -1,5 +1,5 @@
 
-In the previous units, you learned about superposition and Dirca notation. That's enough theory for now! Let's explore superposition in Q# by writing some code. 
+In the previous units, you learned about superposition and Dirac notation. That's enough theory for now! Let's explore superposition in Q# by writing some code. 
 
 In this unit, you'll create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
 
@@ -126,7 +126,7 @@ using the operation [Ry](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure
 
 > [!TIP]
 > To learn more about the math behind single-qubit operations, check out the
-> [Single-Qubit Gates tutorial in Quantum Katas](https://quantum.microsoft.com/en-us/experience/quantum-katas).
+> [Single-Qubit Gates tutorial in Quantum Katas](https://quantum.microsoft.com/tools/quantum-katas).
 
 1. Modify **Main.qs** like the following example, and then save the file. This example chooses $\alpha$ to be about $\frac13$.
 

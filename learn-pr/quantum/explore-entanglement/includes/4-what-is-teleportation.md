@@ -1,5 +1,5 @@
 
-In the previous units, you learnt that quantum entanglement can be an excellent resource for quantum communication. In this unit, you'll see one of the most famous applications of entanglement: the quantum teleportation protocol.
+In the previous units, you learned that quantum entanglement can be an excellent resource for quantum communication. In this unit, you'll see one of the most famous applications of entanglement: the quantum teleportation protocol.
 
 In teleportation, entanglement is used to transfer the state of a qubit from one location to another. The state of the qubit is transferred to another qubit, but the qubit itself is not physically moved. This is an important thing to remember! The information of the state of the qubit is transferred to another qubit which is used as a vessel to write the information of the message qubit on.
 

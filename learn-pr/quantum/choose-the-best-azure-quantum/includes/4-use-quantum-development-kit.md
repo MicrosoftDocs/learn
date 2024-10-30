@@ -3,7 +3,7 @@ In this unit, you'll learn how to use the Quantum Development Kit (QDK) extensio
 
 ## Install the required tools
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/)
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
 1. Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
     - You can also open [Visual Studio Code on the Web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
 1. If you want to run your programs on real hardware, you also need:

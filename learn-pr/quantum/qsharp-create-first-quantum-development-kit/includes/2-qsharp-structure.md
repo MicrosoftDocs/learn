@@ -29,7 +29,7 @@ operation Main() : Result {
 
 Q# provides many built-in types you might be already familiar with, including `Int`, `Double`, `Bool`, and `String`. Q# also provides types specific to quantum computing, such as `Qubit` and `Result`.
 
-In this example, the `MeasureOneQubit` operation returns a `Result` type. A `Result` type is the result of measuring a qubit and can be either `One` and `Zero`.
+In this example, the `MeasureOneQubit` operation returns a `Result` type. A `Result` type is the result of measuring a qubit and can be either `One` or `Zero`.
 
 ```qsharp
 operation MeasureOneQubit() : Result {

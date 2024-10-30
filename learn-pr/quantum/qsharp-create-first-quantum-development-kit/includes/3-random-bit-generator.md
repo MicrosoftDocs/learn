@@ -50,7 +50,7 @@ operation Main(): Result{
 
 ## Measure the qubit
 
-At this point the qubit `q` has 50% chance of being measured in the |0〉 state and 50% chance of being measured in the |1〉 state. Thus, if you measure the qubit, you'll get a random bit, either 0 or 1, with equal 50% probability. The value of this bit is truly random, there's no way of knowing what you get after the measurement.
+At this point the qubit `q` has 50% chance of being measured in the |0〉 state and 50% chance of being measured in the |1〉 state. Thus, if you measure the qubit, you'll get a random bit, either 0 or 1, with equal 50% probability. The value of this bit is truly random, there's no way of knowing in advance the result of the measurement.
 
 To measure the qubit value, use the `M` operation and store the measurement value in the `result` variable.
 
