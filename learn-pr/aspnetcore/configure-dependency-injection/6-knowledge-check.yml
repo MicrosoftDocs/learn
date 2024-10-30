@@ -26,7 +26,7 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct! All of the above statements are true."
-  - content: "What is the behavior or a service registered with the **singleton** service lifetime?"
+  - content: "What is the behavior of a service registered with the **singleton** service lifetime?"
     choices:
     - content: "A new instance of the service is created for each request."
       isCorrect: false
@@ -40,7 +40,7 @@ quiz:
     - content: "None of the above."
       isCorrect: false
       explanation: "Incorrect. One of the above choices is correct."
-  - content: "What is the behavior or a service registered with the **scoped** service lifetime?"
+  - content: "What is the behavior of a service registered with the **scoped** service lifetime?"
     choices:
     - content: "A new instance of the service is created for each request."
       isCorrect: true
