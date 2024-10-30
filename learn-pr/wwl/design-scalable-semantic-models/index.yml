@@ -1,24 +1,25 @@
 ### YamlMime:Module
 uid: learn.design-scalable-semantic-models
 metadata:
-  title: design-scalable-semantic-models
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  title: Design scalable semantic models
+  description: "In this module, you'll learn how to design scalable semantic models that can be used to create Power BI reports based on enterprise data."
   ms.date: 10/15/2024
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: fabric
-title: design-scalable-semantic-models
+  ai-usage: ai-assisted
+title: Design scalable semantic models
 summary: "In this module, you'll learn how to design scalable semantic models that can be used to create Power BI reports based on enterprise data."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Choose approprpriate storage modes for your semantic model."
-    - "Enable large semantic model storage format and incremental refresh."
-    - "Create relationships between tables in a semantic model."
-    - "Design dynamic elements to extend calculations in a semantic model."
+    - Choose appropriate storage modes for your semantic model.
+    - Enable large semantic model storage format and incremental refresh.
+    - Create relationships between tables in a semantic model.
+    - Design dynamic elements to extend calculations in a semantic model.
 prerequisites: |
-  - "Understanding of data modeling concepts."
-  - "Experience with Power BI."
+  - Understanding of data modeling concepts.
+  - Experience with Microsoft Fabric and Power BI.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - advanced

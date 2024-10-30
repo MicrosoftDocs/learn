@@ -10,14 +10,15 @@ For example, if you have a sales fact table, it might store data like the amount
 
 :::image type="content" source="../media/model-frameworks-star-schema-design.png" alt-text="Graphic showing a fact table in the center and multiple dimension tables connected by relationships organized in a star-like shape with a star background to explain the reason behind the star schema name.":::
 
-## Create Relationships
+## Create relationships
 
 Creating relationships between fact and dimension tables is straightforward by identifying the related columns in each table and creating the relationship. In relational sources like databases or data warehouses, these columns are often known as *keys*. If key columns are absent, examine the tables to determine which columns to use for relationships.
 
 Relationships come in different types:
 
-- **One-to-Many** is the most common type, where one record in a table relates to multiple records in another.
-- **One-to-Many** is the same as many-to-one, depending on which way the filter is configured between tables.
+- **One-to-Many** is the most common type, where one record in a table relates to multiple records in another. Typically, one-to-many is from a dimension table with one unique value to a fact table with many rows related to the one value.
+- **Many-to-One** is essentially the same as One-to-Many, depending on which way the filter is configured between tables.
+- **One-to-One** is less common as both tables have unique data. Consider if you need two tables or can combine them into a single table.
 - **Many-to-Many** is less common but necessary for complex data. It allows multiple records in one table to relate to multiple records in another.
 
 For many-to-many relationships, you might need to use a **bridge table**. A bridge table helps manage these relationships by linking the tables through intermediary keys. Composite models also assist with many-to-many relationships by allowing you to combine data from different sources.
@@ -26,7 +27,7 @@ For many-to-many relationships, you might need to use a **bridge table**. A brid
 
 When you create a relationship, you configure which direction the data is filtered from one table to another. In a star schema, the direction typically goes from the dimension table to the fact table, allowing the dimension table to filter the fact table's results.
 
-Bi-directional filters are also possible and sometimes used in one-to-one or many-to-many relationships. Before using a bi-directional filter, ensure your data and relationships are correctly configured. Be cautious, as bi-directional filters can negatively affect model query performance and potentially confuse report users.
+**Bi-directional filters** are also possible and sometimes used in one-to-one or many-to-many relationships. Before using a bi-directional filter, ensure your data and relationships are correctly configured. Be cautious, as bi-directional filters can negatively affect model query performance and potentially confuse report users.
 
 **Referential integrity** ensures that relationships between tables remain consistent. It means that every value in a foreign key column must have a corresponding value in the primary key column of the related table.
 

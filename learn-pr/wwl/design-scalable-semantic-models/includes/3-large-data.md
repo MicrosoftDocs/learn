@@ -1,15 +1,15 @@
 When working with very large datasets, you need a different data loading strategy. In this unit, we explain how to enable large semantic model storage formatting and how to configure incremental refresh. These features allow large semantic models to refresh at a more manageable rate and size.
 
-## Large Semantic Model Storage Formats
+## Large semantic model storage formats
 
-The large semantic model storage format in Microsoft Fabric allows you to handle bigger datasets efficiently. This format is ideal for complex analytical models that require more memory and processing power. This feature allows your semantic model to grow beyond the 10-GB limit. Your limit might vary because the capacity or Fabric admin determines the large semantic model limit. To enable this feature, it's as easy as selecting a box in the workspace settings.
+The *large semantic model storage format* in Microsoft Fabric allows you to handle bigger datasets efficiently. This format is ideal for complex analytical models that require more memory and processing power. This feature allows your semantic model to grow beyond the 10-GB limit. Your limit might vary because the capacity or Fabric admin determines the large semantic model limit. To enable this feature, it's as easy as selecting a box in the workspace settings.
 
 If your semantic model continues growing larger and progressively consumes more memory, be sure to configure Incremental refresh.
 
 > [!TIP]
 > See the documentation to learn more about [Large semantic models](/power-bi/enterprise/service-premium-large-models).
 
-## Incremental Refresh
+## Incremental refresh
 
 Incremental refresh allows you to refresh only the data that has changed or been added since the last refresh. This feature reduces the time and resources required for data refreshes, making it ideal for frequently updated large datasets.
 

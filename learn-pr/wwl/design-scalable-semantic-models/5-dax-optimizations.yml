@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-scalable-semantic-models.dax-optimizations
-title: Optimize DAX formulas for performance
+title: Write DAX for readability with complex calculations
 metadata:
-  title: "Optimize DAX formulas for performance"
+  title: "Write DAX for readability with complex calculations"
   description: "Use filtering conditions, variables, and iterator, window, and information functions to create efficient and readable formulas."
   ms.date: 10/15/2024
   author: angierudduck

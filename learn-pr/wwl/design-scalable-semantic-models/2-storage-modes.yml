@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-scalable-semantic-models.storage-modes
-title: Choose the right storage mode for your semantic model
+title: Choose the best storage mode
 metadata:
-  title: "Choose the right storage mode for your semantic model"
+  title: "Choose the best storage mode"
   description: "Understand the different storage modes and guidance to optimize each connection type."
   ms.date: 10/15/2024
   author: angierudduck

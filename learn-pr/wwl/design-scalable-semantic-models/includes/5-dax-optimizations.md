@@ -1,5 +1,3 @@
-## Write DAX for readability with complex calculations
-
 DAX provides a powerful set of functions that allow you to create basic to complex calculations to measure the data in your semantic model in Power BI. By using filtering conditions, variables, and iterator, window, and information functions, you can create efficient and readable formulas.
 
 ### Variables
