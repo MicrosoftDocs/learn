@@ -48,9 +48,9 @@ quiz:
       explanation: "The 'Contributor' role allows managing resources but does not provide specific Virtual Machine administration capabilities."
   - content: "How can you secure network access to an Azure Virtual Machine?"
     choices:
-    - content: "By enabling all network interfaces"
+    - content: "By adding a load balancer without any additional configuration"
       isCorrect: false
-      explanation: "Enabling all network interfaces would make the Virtual Machine accessible to all traffic and is not a practical security measure."
+      explanation: "Adding a load balancer without any additional configuration does not enhance security and can expose the Virtual Machine to potential threats."
     - content: "By configuring Network Security Group (NSG) rules"
       isCorrect: true
       explanation: "Network Security Group (NSG) rules allow you to control inbound and outbound traffic to and from an Azure Virtual Machine."
