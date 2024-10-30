@@ -126,4 +126,4 @@ public class PersonServiceTests
 }
 ```
 
-In this test, a mock implementation of the `IPersonService` interface is created using the Moq library. The mock implementation returns a hard-coded string when the `GetPersonName` method is called. The test asserts that the `GetPersonName` method returns the expected string.
+In this test, a mock implementation of the `IPersonService` interface is created using the Moq library. The mock implementation returns a hard-coded string when the `GetPersonName` method is called. The test asserts that the `GetPersonName` method returns the expected string. The component being tested doesn't know that it's using a mock implementation of the `IPersonService` interface. It only knows that it's using an implementation of the `IPersonService` interface.
