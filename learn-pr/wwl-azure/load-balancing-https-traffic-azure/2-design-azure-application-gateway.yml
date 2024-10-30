@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  adobe-target: true
 durationInMinutes: 10
 content: |
   [!include[](includes/2-design-azure-application-gateway.md)]
