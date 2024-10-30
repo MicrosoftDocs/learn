@@ -1,6 +1,6 @@
-In the previous unit, you learned about the concept of quantum entanglement and how it can be used to create Bell states.
+In the previous unit, you learned about the concept of quantum entanglement and Bell states.
 
-Now, let's create some quantum entanglement using Q# and the Azure Quantum Development Kit. To create entanglement, you need to apply two quantum operations: the Hadamard gate and the Controlled-NOT (CNOT) gate.
+Now, let's create quantum entanglement using Q# and the Azure Quantum Development Kit. To create entanglement, you need to apply two quantum operations: the Hadamard gate and the Controlled-NOT (CNOT) gate.
 
 ## The Controlled-NOT (CNOT) operation
 

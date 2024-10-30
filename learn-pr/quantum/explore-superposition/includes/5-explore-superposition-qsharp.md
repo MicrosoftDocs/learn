@@ -1,14 +1,7 @@
 
-That's enough theory for now! Let's explore superposition in Q# by writing some code. 
+In the previous units, you learned about superposition and Dirca notation. That's enough theory for now! Let's explore superposition in Q# by writing some code. 
 
-In this unit, you'll learn to create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
-
-> [!NOTE]
-> The `DumpMachine` function is useful only for simulations. On quantum
-> hardware, `DumpMachine` does nothing because you can't access the
-> state of the qubit register during execution. Remember that measuring the
-> state of a qubit can change its state. On simulated virtual quantum computers,
-> you can use tools like `DumpMachine` to explore the state of the system.
+In this unit, you'll create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
 
 ## Create a new Q# file
 
@@ -17,7 +10,7 @@ In this unit, you'll learn to create quantum superposition and dive into probabi
 1. Select **View -> Command Palette** and type **Q#: Set the Azure Quantum QIR target profile**. Press **Enter**.
 1. Select **Q#: Unrestricted**.
 
-### Get started
+## Get started with superposition
 
 Let's start with a simple program that generates a random bit using a qubit in superposition. You'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
 
@@ -112,7 +105,7 @@ Let's start with a simple program that generates a random bit using a qubit in s
     > [!NOTE]
     > Your outputs might differ because the random number generator is probabilistic. The probabilities of the outcomes are not deterministic.
 
-## Explore other types of superpositions
+## Explore other types of superposition states
 
 Now that you know how to inspect the state of a register, you can see more operations that modify the state of your qubits and place them into a superposition.
 
@@ -156,6 +149,7 @@ using the operation [Ry](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure
     }
     ```
 
+1. To run your program on the built-in simulator, click **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. You can see how `DumpMachine` displays the expected state after it applies the operations and displays the associated probabilities. Notice that the probability of getting `Zero` is about 33.33% and the probability of getting `One` is about 66.67%. Thus, the random bit generator is skewed.
 
     ```output

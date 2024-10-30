@@ -1,6 +1,6 @@
+In the previous unit, you learned about the basic building blocks of a Q# program. Now, you're ready to write your first quantum program: a quantum program to generate truly random numbers.
 
 You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
-
 
 ## Create the Q# program
 

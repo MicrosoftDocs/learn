@@ -1,4 +1,6 @@
-Quantum computing is a complex field that requires linear algebra and quantum mechanics to understand. How to write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+In the previous unit, you learned how to represents superposition in a Bloch sphere. But quantum computing requires linear algebra and quantum mechanics to understand. How can you write superposition and quantum states in a way that's easy to understand and work with?
+
+In this unit, you'll learn about a handy notation to write quantum states: the *Dirac bra-ket* notation.
 
 ## What's Dirac bra-ket notation?
 
