@@ -56,8 +56,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine (*MyWindowsVM*) appears.
 
-    :::image type="content" source="../media/4-original-vm-web-page.png" alt-text="Screenshot of the webpage from the Windows virtual machine." loc-scope="other":::
-
 ::: zone-end
 
 ::: zone pivot="linux-cloud"
@@ -91,8 +89,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```
 
 1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine *MyUbuntuVM* appears.
-
-    :::image type="content" source="../media/4-original-ubuntu-web-page.png" alt-text="Screenshot of the webpage from the Ubuntu virtual machine." loc-scope="other":::
 
 ::: zone-end
 
