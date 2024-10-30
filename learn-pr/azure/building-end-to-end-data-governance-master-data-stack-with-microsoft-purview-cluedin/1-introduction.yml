@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: "Introduce users to our training module to build a data governance and master data management stack with Microsoft Purview and CluedIn."
   ms.date: 05/28/2024
-  author: whhender
-  ms.author: whhender
+  author: mannan1964
+  ms.author: mannan
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -1,4 +1,5 @@
 ### YamlMime:LearningPath
+hidden: true
 uid: learn.quantum-intro-quantum-computing-developers
 metadata:
   title: Introduction to quantum computing for developers - from hardware to applications
@@ -31,7 +32,6 @@ roles:
 - student
 products:
 - github
-- azure-quantum
 subjects:
 - devops
 - cloud-computing

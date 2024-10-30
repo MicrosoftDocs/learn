@@ -3,9 +3,9 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
   title: Create a knowledge store with Azure AI Search
   description: Create a knowledge store with Azure AI Search
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/11/2023
+  ms.date: 10/24/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.collection:

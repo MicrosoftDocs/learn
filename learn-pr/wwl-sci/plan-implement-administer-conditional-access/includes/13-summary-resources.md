@@ -18,7 +18,7 @@ To learn more about the technology in this module, check out the following links
  -  [Conditional Access with device controls](https://youtu.be/NcONUf-jeS4)
  -  [Conditional Access with Microsoft Entra MFA](https://youtu.be/Tbc-SU97G-w)
  -  [Conditional Access in Enterprise Mobility + Security](https://youtu.be/A7IrxAH87wc)
- -  [Using the location condition in a Conditional Access policy](/entra/identity/conditional-access/howto-conditional-access-policy-locationdam/ms-learn/en/learn/sc-300/import-lp2/content-fragments/azure/active-directory/conditional-access/location-condition.html)
+ -  [Using the location condition in a Conditional Access policy](/entra/identity/conditional-access/howto-conditional-access-policy-location)
  -  [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/fundamentals/deployment-plan-compliance-policies)
  -  [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
  -  [Plan a Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access)

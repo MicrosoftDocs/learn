@@ -1,4 +1,4 @@
-You can use a Kusto query to explore datasets and gain insights. Recall that you have an unfamiliar meteorological dataset and want to explore what you can learn from this data. 
+You can use a Kusto query to explore datasets and gain insights. Recall that you have an unfamiliar meteorological dataset and want to explore what you can learn from this data.
 
 Here, you'll look at the data's structure to understand what kinds of questions you can ask about these storm events.
 

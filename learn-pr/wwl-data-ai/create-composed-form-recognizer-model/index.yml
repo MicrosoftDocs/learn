@@ -27,7 +27,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-search
+- ai-services
 - document-intelligence
 subjects:
 - artificial-intelligence

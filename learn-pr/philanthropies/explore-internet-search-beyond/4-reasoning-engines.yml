@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.reasoning-engines
+title: Reasoning engines
+metadata:
+  title: Reasoning engines
+  description: This content is a part of the internet search and beyond module.
+  ms.date: 10/07/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-reasoning-engines.md)]
