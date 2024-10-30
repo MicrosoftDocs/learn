@@ -38,9 +38,9 @@ Guidance for Import models also applies to the other storage modes. You should a
 - Configure Direct Lake to access ADLS (Azure Data Lake Storage) storage through shortcuts.
 - Set up fallback behavior to DirectQuery for complex DAX queries.
 
-### Composite model
+### Composite mode
 
-**Composite Model** combines Import and DirectQuery modes, allowing you to specify which visuals query back-end data sources or use the imported storage. This mode supports many-to-many relationships without the need for bridge tables. It offers the flexibility of querying and reporting capabilities by combining the benefits of both Import and DirectQuery modes. However, it requires periodic refreshes for Import mode tables and might have potential performance impacts when combining data from different sources.
+**Composite Mode** mode can mix Import and DirectQuery modes, or integrate multiple DirectQuery data sources. This mode supports many-to-many relationships without the need for bridge tables. It offers the flexibility of querying and reporting capabilities by combining the benefits of both Import and DirectQuery modes. However, it requires periodic refreshes for Import mode tables and might have potential performance impacts when combining data from different sources.
 
 **Optimization Tips**:
 
