@@ -26,6 +26,7 @@ roles:
 - ai-engineer
 products:
 - ai-services
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:
