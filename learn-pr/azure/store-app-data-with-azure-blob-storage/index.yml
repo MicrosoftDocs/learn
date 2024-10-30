@@ -13,9 +13,9 @@ title: Store application data with Azure Blob Storage
 summary: Build an app that stores user files with Azure Blob Storage.
 abstract: |
   In this module, you will:
-    - Organize your data with Azure Blob Storage
-    - Create storage resources to hold blobs
-    - Store and retrieve data from Azure Blob Storage
+    - Organize your data with Azure Blob Storage.
+    - Create storage resources to hold blobs.
+    - Store and retrieve data from Azure Blob Storage.
 prerequisites: None
 iconUrl: /training/achievements/store-app-data-with-azure-blob-storage.svg
 levels:
