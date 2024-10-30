@@ -1,5 +1,3 @@
-## Introduction
-
 You're guided through the creation of the compute resources that host your application within Azure.
 
 There are multiple methods to deploy infrastructure in Azure, including the Azure portal, Azure CLI, and Infrastructure as Code templates including Bicep and Terraform.

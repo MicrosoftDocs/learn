@@ -1,5 +1,3 @@
-## Introduction
-
 In this module, you will:
 
 - Deploy an Azure Blob Storage account using a Bicep template.
@@ -9,7 +7,6 @@ In this module, you will:
 - Connect to the Azure Virtual Machine using the Azure CLI.
 - Download the file from the storage account.
 - Connect to the PostgreSQL server using `psql` and import a SQL file.
-
 - Run the application interactively via the command line.
 - Confirm the application runs correctly.
 

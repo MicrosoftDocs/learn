@@ -1,5 +1,3 @@
-## Introduction
-
 In this module, you will:
 
 - Configure a Linux application workload to connect to an Azure Database for PostgreSQL using a system-assigned managed identity.
