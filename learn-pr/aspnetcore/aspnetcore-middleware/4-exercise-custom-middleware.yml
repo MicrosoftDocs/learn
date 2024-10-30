@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aspnetcore-middlewar.exercise-custom-middleware
+uid: learn.aspnetcore-middleware.exercise-custom-middleware
 
 title: Exercise - Create custom middleware
 metadata:

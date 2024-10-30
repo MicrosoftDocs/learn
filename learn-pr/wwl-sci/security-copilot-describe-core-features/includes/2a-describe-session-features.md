@@ -25,7 +25,7 @@ There's a consistent set of actions available for every prompt/response pair in 
 - Copy a response.
 - Provide feedback on a response
 
-:::image type="content" source="../media/prompt-response-actions.png" lightbox="../media/prompt-response-actions.png" alt-text="Screen capture showing highlighting the actions available on a prompt/response pair.":::
+:::image type="content" source="../media/prompt-response-actions-clean.png" lightbox="../media/prompt-response-actions-clean.png" alt-text="Screen capture showing highlighting the actions available on a prompt/response pair.":::
 
 ### Feedback
 
