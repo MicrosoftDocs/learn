@@ -46,7 +46,7 @@ quiz:
       isCorrect: true
       explanation: "Correct! Scoped services are created once per request, and may be reused within the scope of the request."
     - content: "A single instance of the service is created for the lifetime of the app."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. This is the behavior of a singleton service."
     - content: "A new instance of the service is created each time an instance is requested."
       isCorrect: false
