@@ -2,6 +2,8 @@
 uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.identify-decision-criteria
 title: Identify the decision criteria
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Identify the decision criteria
   description: Understand key factors that determine Azure NetApp Files throughput performance and limits.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-decision-criteria.md)]
+

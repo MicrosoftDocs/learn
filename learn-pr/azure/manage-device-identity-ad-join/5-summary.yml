@@ -2,6 +2,8 @@
 uid: learn.azure.manage-device-identity-ad-join.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review what you've learned about Microsoft Entra join and Enterprise State Roaming.
   ms.date: 03/17/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
+

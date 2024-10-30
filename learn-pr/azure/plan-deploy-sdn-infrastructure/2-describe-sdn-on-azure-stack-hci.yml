@@ -2,6 +2,8 @@
 uid: learn.azure.plan-deploy-sdn-infrastructure.2-describe-sdn-on-azure-stack-hci
 title: Describe SDN on Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Describe SDN on Azure Stack HCI
   description: This unit describes Software Defined Networking (SDN) on Azure Stack HCI.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-sdn-on-azure-stack-hci.md)]
+

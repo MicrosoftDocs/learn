@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.implement-firewall-load-balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
   description: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
@@ -41,3 +43,4 @@ units:
 - learn.azure.implement-firewall-load-balancer.7-summary
 badge:
   uid: learn.azure.implement-firewall-load-balancer.badge
+

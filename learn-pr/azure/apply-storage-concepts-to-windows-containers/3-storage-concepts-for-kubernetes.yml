@@ -2,6 +2,8 @@
 uid: learn.azure.apply-storage-concepts-to-windows-containers.storage-concepts-for-kubernetes
 title: Storage concepts for Kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Storage concepts for Kubernetes
   description: Kubernetes is an open platform that manages container-based applications and their associated networking and storage components. It provides a declarative approach to deployments, backed by a robust set of APIs for management operations.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-storage-concepts-for-kubernetes.md)]
+

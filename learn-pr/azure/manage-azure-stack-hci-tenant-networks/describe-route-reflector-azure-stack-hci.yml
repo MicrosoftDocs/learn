@@ -2,6 +2,8 @@
 uid: learn.azure.manage-azure-stack-hci-tenant-networks.describe-route-reflector-azure-stack-hci
 title: Describe Route Reflector on Azure Stack HCI 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Route Reflector on Azure Stack HCI 
   description: Determine the role of Route Reflector in optimizing the routing functionality in multitenant scenarios.
   ms.date: 09/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/describe-route-reflector-azure-stack-hci.md)]
+

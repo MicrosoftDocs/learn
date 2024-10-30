@@ -2,6 +2,8 @@
 uid: learn.azure.manage-azure-stack-hci-tenant-networks.describe-implement-azure-stack-hci-tenant-virtual-networks
 title: Describe and implement Azure Stack HCI tenant virtual networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe and implement Azure Stack HCI tenant virtual networks
   description: Describe and implement Azure Stack HCI tenant virtual networks.
   ms.date: 09/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/describe-implement-azure-stack-hci-tenant-virtual-networks.md)]
+

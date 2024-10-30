@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-dns-private-resolver.introduction
 title: Introduction 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to use Azure DNS Private Resolver to resolve DNS queries from on-premises to cloud.

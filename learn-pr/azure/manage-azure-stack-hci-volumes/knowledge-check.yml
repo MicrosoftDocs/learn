@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-volumes.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
   ms.date: 08/22/2024
@@ -68,3 +70,4 @@ quiz:
     - content: 'Four'
       isCorrect: true
       explanation: 'Correct. A stretched cluster can be implemented with four nodes.'
+

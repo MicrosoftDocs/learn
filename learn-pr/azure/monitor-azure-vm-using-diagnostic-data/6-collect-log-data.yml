@@ -2,6 +2,8 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.collect-log-data
 title: Collect VM client event logs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Collect VM client event logs
   description: Use the Azure Monitor Agent to create a data collection rule (DCR) that collects client system event logs and sends them to Azure Monitor Logs.
   ms.date: 09/26/2024
@@ -36,3 +38,4 @@ quiz:
     - content: By using a KQL query in your Log Analytics workspace.
       isCorrect: true
       explanation: You can view log data collected by a DCR in your Log Analytics workspace by using a KQL log query.
+

@@ -2,6 +2,8 @@
 uid: learn.azure.plan-deploy-sdn-infrastructure.5-deploy-sdn-infrastructure-on-azure-stack-hci
 title: Deploy SDN infrastructure on Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy SDN infrastructure on Azure Stack HCI
   description: This unit describes how to deploy software defined networking (SDN) infrastructure on Azure Stack HCI by using SDN Express and Windows Admin Center.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 16
 content: |
   [!include[](includes/5-deploy-sdn-infrastructure-on-azure-stack-hci.md)]
+

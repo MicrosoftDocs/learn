@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.6-accelerate-tune-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Accelerate and tune performance
   description: Accelerate and tune performance
   ms.date: 03/15/2023

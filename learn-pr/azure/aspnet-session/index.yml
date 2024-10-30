@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.aspnet-session
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
   description: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications. 
   ms.date: 02/27/2024
@@ -41,3 +43,4 @@ units:
 - learn.azure.aspnet-session.5-summary
 badge:
   uid: learn.azure.aspnet-session.badge
+

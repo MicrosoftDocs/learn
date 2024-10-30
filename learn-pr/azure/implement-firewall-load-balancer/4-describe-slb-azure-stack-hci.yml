@@ -2,6 +2,8 @@
 uid: learn.azure.implement-firewall-load-balancer.4-describe-slb-azure-stack-hci
 title: Software Load Balancer on Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Software Load Balancer on Azure Stack HCI
   description: This unit describes the purpose of Software Load Balancer on Azure Stack HCI.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-describe-slb-azure-stack-hci.md)]
+

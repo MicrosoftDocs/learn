@@ -2,6 +2,8 @@
 uid: learn.azure.implement-firewall-load-balancer.3-implement-datacenter-firewall-azure-stack-hci
 title: Implement Datacenter Firewall on Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Implement Datacenter Firewall on Azure Stack HCI
   description: Step through the process of implementing Datacenter Firewall on Azure Stack HCI.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-implement-datacenter-firewall-azure-stack-hci.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.azure.explore-fundamentals-kql.query-basics
 title: Query language basics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: learning-content
   description: "Explore the basics of a query language, KQL specifically, and begin to learn how, where, and when you might want to use it."
   ms.date: 11/02/2023

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.aks-app-scaling-keda
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Scale container applications in Azure Kubernetes Services (AKS) using KEDA
   description: Explore autoscaling options for Kubernetes resources, and learn how to use KEDA to autoscale containerized applications in Azure Kubernetes Services (AKS).
@@ -50,3 +52,4 @@ units:
 - learn.aks-app-scaling-keda.8-summary
 badge:
   uid: learn.aks-app-scaling-keda.badge
+

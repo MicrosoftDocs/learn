@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn-pr.azure.manage-azure-stack-hci-volumes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure Stack HCI volumes
   description: Azure Stack HCI provides highly resilient and performant software-defined volumes.
   manager: femila
@@ -44,3 +46,4 @@ units:
 - learn-pr.azure.manage-azure-stack-hci-volumes.summary
 badge:
   uid: learn-pr.azure.manage-azure-stack-hci-volumes.badge
+

@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.prepare
 title: Prepare
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Prepare
   description: |
@@ -17,3 +19,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-prepare.md)]
+

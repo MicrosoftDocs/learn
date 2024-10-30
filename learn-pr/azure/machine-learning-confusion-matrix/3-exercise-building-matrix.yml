@@ -2,6 +2,8 @@
 uid: learn.machinelearning.evaluate-real-world-models.exercise-building-matrix
 title: Exercise – Building a confusion matrix
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise – Building a confusion matrix
   description: Exercise unit about building a confusion matrix in machine learning
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/8-3-exercise-build-matrix.ipynb
+

@@ -1,7 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.troubleshoot-windows-containers.troubleshooting-monitor
 title: Troubleshooting Windows Containers with Azure Monitor
-metadata: 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true 
   title: Troubleshooting Windows Containers with Azure Monitor
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 08/13/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/6-troubleshooting-containers-monitor.md)]
+

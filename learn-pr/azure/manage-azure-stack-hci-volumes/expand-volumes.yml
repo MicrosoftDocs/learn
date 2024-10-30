@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-volumes.expand-volumes
 title: Expand volumes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Expand volumes
   description: As part of your Azure Stack HCI evaluation, assess the process of expanding volumes.
   ms.date: 08/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/expand-volumes.md)]
+

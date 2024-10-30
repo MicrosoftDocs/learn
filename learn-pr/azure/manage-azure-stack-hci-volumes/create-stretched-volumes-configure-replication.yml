@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-volumes.create-stretched-volumes-configure-replication
 title: Create stretched volumes and configure replication 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create stretched volumes and configure replication 
   description: Explore the functionality that would provide disaster recovery based on stretched clusters.
   ms.date: 08/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/create-stretched-volumes-configure-replication.md)]
+

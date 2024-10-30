@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-volumes.plan-volumes
 title: Plan volumes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan volumes
   description: Plan for an optimal volume configuration that reflects your Azure Stack HCI workload requirements.
   ms.date: 08/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/plan-volumes.md)]
+

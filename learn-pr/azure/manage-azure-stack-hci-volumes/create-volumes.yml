@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-volumes.create-volumes
 title: Create volumes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create volumes
   description: Create volumes in your Azure Stack HCI proof-of-concept environment.
   ms.date: 08/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/create-volumes.md)]
+
