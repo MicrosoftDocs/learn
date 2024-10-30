@@ -37,28 +37,6 @@ quiz:
     - content: It offers the most flexibility and fastest performance but requires periodic refreshes to keep the data current.
       isCorrect: true
       explanation: Correct. Import mode involves importing and storing data within Power BI, offering the most flexibility and fastest performance.
-  - content: What is the purpose of enabling large semantic model storage format in Microsoft Fabric?
-    choices:
-    - content: To limit the semantic model to a maximum of 10-GB.
-      isCorrect: false
-      explanation: Incorrect. The large semantic model storage format allows the semantic model to grow beyond the 10-GB limit.
-    - content: To reduce the time and resources required for data refreshes.
-      isCorrect: false
-      explanation: Incorrect. This is the purpose of Incremental refresh, not the large semantic model storage format.
-    - content: To handle bigger datasets expected to grow significantly.
-      isCorrect: true
-      explanation: Correct. The large semantic model storage format is designed to handle larger datasets and complex analytical models efficiently.
-  - content: What is the primary function of a bridge table in managing many-to-many relationships?
-    choices:
-    - content: It stores the main data about business activities.
-      isCorrect: false
-      explanation: Incorrect. The main data about business activities is stored in fact tables, not bridge tables.
-    - content: It manages these relationships by linking the tables through intermediary keys.
-      isCorrect: true
-      explanation: Correct. A bridge table helps manage many-to-many relationships by linking the tables through intermediary keys.
-    - content: It filters data from one table to another.
-      isCorrect: false
-      explanation: Incorrect. A bridge table does not filter data, it links tables through intermediary keys.
   - content: What is the purpose of iterator functions in DAX?
     choices:
     - content: To store the result of an expression and reuse it multiple times

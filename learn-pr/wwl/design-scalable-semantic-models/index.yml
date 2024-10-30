@@ -2,7 +2,7 @@
 uid: learn.design-scalable-semantic-models
 metadata:
   title: Design scalable semantic models
-  description: "In this module, you'll learn how to design scalable semantic models that can be used to create Power BI reports based on enterprise data."
+  description: "Microsoft Fabric enables scalable semantic models to simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
   ms.date: 10/15/2024
   author: angierudduck
   ms.author: anrudduc
@@ -10,7 +10,7 @@ metadata:
   ms.service: fabric
   ai-usage: ai-assisted
 title: Design scalable semantic models
-summary: "In this module, you'll learn how to design scalable semantic models that can be used to create Power BI reports based on enterprise data."
+summary: "Microsoft Fabric enables scalable semantic models to simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
 abstract: |
   By the end of this module, you'll be able to:
     - Choose appropriate storage modes for your semantic model.
