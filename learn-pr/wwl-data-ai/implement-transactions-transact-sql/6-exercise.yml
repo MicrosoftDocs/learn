@@ -4,12 +4,11 @@ title: 'Exercise: Implement transactions with Transact-SQL'
 metadata:
   title: 'Exercise: Implement transactions with Transact-SQL'
   description: "Exercise: Implement transactions with Transact-SQL"
-  ms.date: 08/25/2023
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-labId: 105122
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise.md)]

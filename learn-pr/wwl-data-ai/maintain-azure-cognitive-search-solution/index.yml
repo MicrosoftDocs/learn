@@ -3,9 +3,9 @@ uid: learn.wwl.maintain-azure-cognitive-search-solution
 metadata:
   title: Maintain an Azure AI Search solution
   description: Maintain the performance, cost, and reliability of your Azure AI Search solutions.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.collection:

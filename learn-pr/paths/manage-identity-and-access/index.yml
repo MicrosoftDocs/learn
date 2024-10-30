@@ -32,11 +32,9 @@ subjects:
 - identity-access
 modules:
 - learn.azure-security.manage-users-and-groups-in-aad
-- learn.azure.create-users-and-groups-in-azure-active-directory
 #- learn.secure-access-azure-ad-multi-factor-authentication
 - learn.azure-security.secure-aad-users-with-mfa
 - learn.azure.manage-device-identity-ad-join
 - learn.azure.allow-users-to-reset-their-password
-- learn.azure.add-custom-domain-name-azure-active-directory
 trophy:
   uid: learn.security.manage-identity-and-access.trophy

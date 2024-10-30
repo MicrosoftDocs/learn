@@ -8,7 +8,7 @@ To begin using Azure Cosmos DB, you first create various resources in Azure such
 
 ### Accounts
 
-**Accounts** are the fundamental units of distribution and high availability. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB for NoSQL. Accounts also contain the globally unique DNS name used for API requests. You can also set the default consistency level for requests at the account level. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
+**Accounts** are the fundamental units of high availability and tenant isolation for SaaS applications. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB for NoSQL. Accounts also contain the globally unique DNS name used for API requests. You can also set the default consistency level for requests at the account level. You can manage or create accounts using the Azure portal, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell.
 
 ### Databases
 
@@ -28,7 +28,7 @@ The NoSQL API for Azure Cosmos DB stores individual documents in JSON format as 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OAlA]
 
-Every Azure Cosmos DB for NoSQL container is required to specify a **partition key path**. Behind the scenes, Azure Cosmos DB for NoSQL uses this path to logically partition data using **partition key values**. For example, consider the following JSON document:
+Every Azure Cosmos DB for NoSQL container is required to specify a **partition key path** that is used to distribute data for scale out. Behind the scenes, Azure Cosmos DB for NoSQL uses this path to logically partition data using **partition key values**. For example, consider the following JSON document:
 
 ```json
 {
@@ -64,6 +64,6 @@ Every Azure Cosmos DB for NoSQL container is required to specify a **partition k
 
 If your container specifies a partition key **path** of `/department/name`, then the partition key **value** of this document would be `information-technology`. Behind the scenes, Azure Cosmos DB for NoSQL automatically manages the physical resources necessary to support your data workload.
 
-Selecting a partition key path for a container can be one of the most important design decisions for a new workload. Review the [choosing a partition key][azure/cosmos-db/partitioning-overview#choose-partitionkey] documentation for a deeper technical explanation and best practices.
+Selecting a partition key path for a container is critical to allow applications to scale and is one of the most important design decisions for a new workload. Review the [choosing a partition key][azure/cosmos-db/partitioning-overview#choose-partitionkey] documentation for a deeper technical explanation and best practices.
 
 [azure/cosmos-db/partitioning-overview#choose-partitionkey]: /azure/cosmos-db/partitioning-overview#choose-partitionkey
