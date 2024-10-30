@@ -33571,6 +33571,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/2-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/3-configure-affinity-of-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/4-configure-load-balancing-of-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/5-configure-gpu-support-for-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/6-implement-vdi.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/7-implement-trusted-enterprise-virtualization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hci-virtual-machine-workloads/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/2-monitor-by-using-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/3-protect-virtual-machines-by-using-azure-site-recovery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/4-protect-virtual-machines-by-using-azure-backup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/5-implement-azure-network-adapter-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-stack-hci-plan-deploy/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/deploy/deployment-introduction",
       "redirect_document_id": false
