@@ -23,5 +23,3 @@ The main takeaways for this module are:
 ## Learn more with self-paced training
 
 - [Manage users and groups in Microsoft Entra ID](/training/modules/manage-users-and-groups-in-aad/). This training module covers the basic principles of user and groups. 
-
-- [Create Azure users and groups in Microsoft Entra ID (exercise, subscription required)](/training/modules/create-users-and-groups-in-azure-active-directory/). This training module covers creating users and assigning them to groups. 

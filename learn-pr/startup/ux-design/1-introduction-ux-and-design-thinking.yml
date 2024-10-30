@@ -5,9 +5,10 @@ metadata:
   title: Introduction
   description: 'This content is part of the "Foundations of user experience and design thinking" module.'
   ms.date: 12/22/2023
-  author: Obi-Akpuda
-  ms.author: obiakpuda
+  author: vhawk85
+  ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes : 2
 content: |
   [!include[](includes/1-introduction-ux-and-design-thinking.md)]
