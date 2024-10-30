@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-data-analysis-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform data analysis with Azure Databricks
   description: Perform data analysis with Azure Databricks
   ms.date: 07/25/2024
@@ -34,3 +36,4 @@ units:
 - learn.wwl.perform-data-analysis-azure-databricks.summary
 badge:
   uid: learn.wwl.perform-data-analysis-azure-databricks.badge
+

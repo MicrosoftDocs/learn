@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hci-virtual-machine-workloads.vms
 title: Manage Azure Stack HCI VMs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure Stack HCI VMs
   description: "Manage Azure Stack HCI VMs"
   ms.date: 06/09/2021

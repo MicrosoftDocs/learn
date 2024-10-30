@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-migration-options.migrate-sap-s4hana-sap-business-suite
 title: Migrate to SAP S/4HANA from SAP Business Suite
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate to SAP S/4HANA from SAP Business Suite
   description: "Migrate to SAP S/4HANA from SAP Business Suite."
   ms.date: 08/01/2024

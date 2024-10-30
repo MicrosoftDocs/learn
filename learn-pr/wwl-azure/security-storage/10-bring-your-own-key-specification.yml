@@ -2,6 +2,8 @@
 uid: learn.wwl.security-storage.bring-your-own-key-specification
 title: Configure Bring your own key (BYOK)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Bring your own key (BYOK)
   description: "Configure Bring your own key (BYOK)"
   ms.date: 06/25/2024

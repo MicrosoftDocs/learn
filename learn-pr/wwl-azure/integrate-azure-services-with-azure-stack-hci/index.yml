@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-azure-services-with-azure-stack-hci
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Azure services with Azure Stack HCI
   description: "Integrate Azure services with Azure Stack HCI"
   ms.date: 07/29/2022
@@ -41,3 +43,4 @@ units:
 - learn.wwl.integrate-azure-services-with-azure-stack-hci.summary
 badge:
   uid: learn.wwl.integrate-azure-services-with-azure-stack-hci.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-data-roles-services-products
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data roles, services, and products
   description: "Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals."
   ms.date: 09/30/2024

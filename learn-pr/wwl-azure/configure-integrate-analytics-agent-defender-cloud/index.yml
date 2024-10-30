@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
   description: "Discover how to set up and integrate a Log Analytics agent with a workspace in Defender for Cloud using the Azure portal, enhancing security data analysis capabilities."
   ms.date: 10/17/2024

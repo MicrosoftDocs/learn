@@ -2,6 +2,8 @@
 uid: learn.introduction-large-language-models.introduction
 title: "Introduction"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction"
   description: Learn how to use large language models to improve your workflow.
   ms.date: 11/30/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

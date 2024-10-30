@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-for-azure-cache-for-redis.exercise-connect-app-to-by-using-net-core
 title: Exercise - Connect an app to Azure Cache for Redis by using .NET Core
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Connect an app to Azure Cache for Redis by using .NET Core
   description: "Exercise - Connect an app to Azure Cache for Redis by using .NET Core"
   ms.date: 07/19/2024

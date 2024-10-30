@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-log-analytics-workspace.configure-log-analytics-data-retention
 title: Configure Log Analytics data retention
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Log Analytics data retention
   description: "Configure Log Analytics data retention"
   ms.date: 10/25/2023

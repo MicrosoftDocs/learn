@@ -2,6 +2,8 @@
 uid: learn.wwl.offer-services-for-azure-stack-hub.create-manage-offers
 title: Create and manage offers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage offers
   description: "Create and manage offers"
   ms.date: 09/15/2023

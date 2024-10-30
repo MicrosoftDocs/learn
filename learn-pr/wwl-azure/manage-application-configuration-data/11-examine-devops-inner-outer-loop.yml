@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-configuration-data.examine-devops-inner-outer-loop
 title: Examine DevOps inner and outer loop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine DevOps inner and outer loop
   description: "Examine DevOps inner and outer loop"
   ms.date: 05/28/2024

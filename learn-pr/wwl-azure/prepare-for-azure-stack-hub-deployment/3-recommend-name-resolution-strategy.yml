@@ -2,6 +2,8 @@
 uid: learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-name-resolution-strategy
 title: Recommend a name resolution strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend a name resolution strategy
   description: "Recommend a name resolution strategy"
   ms.date: 06/02/2023

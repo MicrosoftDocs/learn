@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-computer-vision.multilayer-convolutions
 title: Train multi-layer convolutional neural network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train multi-layer convolutional neural network
   description: In this unit, we learn how several convolutional layers can be stacked in order to recognize hierarchy of patterns that build up objects on the image.
   author: shwars
@@ -42,3 +44,4 @@ quiz:
         - content: "Sigmoid"
           isCorrect: false
           explanation: "Sigmoid is usually used after the final layer to get the probability output"
+

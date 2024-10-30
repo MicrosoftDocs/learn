@@ -2,6 +2,8 @@
 uid: learn.startups.fundraising.how-investment-works
 title: How investment works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How investment works
   description: Learn about common types of startup investors such as friends and family, angel investors, and venture capitalists. See tips for seeking funds from each type.
   ms.date: 06/17/2024

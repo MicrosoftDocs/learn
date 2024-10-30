@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.protect-cloud-workloads
 title: Protect cloud workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect cloud workloads
   description: "Protect cloud workloads"
   ms.date: 06/11/2024

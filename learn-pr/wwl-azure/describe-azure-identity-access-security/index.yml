@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-identity-access-security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure identity, access, and security
   description: "Describe Azure identity, access, and security"
   ms.date: 10/03/2024

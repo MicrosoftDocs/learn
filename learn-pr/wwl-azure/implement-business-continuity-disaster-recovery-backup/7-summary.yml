@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 06/30/2022

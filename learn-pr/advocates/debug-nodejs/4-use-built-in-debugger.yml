@@ -2,6 +2,8 @@
 uid: learn.azure.debug-nodejs.4-use-built-in-debugger
 title: Exercise - Use the Node.js built-in debugger
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use the Node.js built-in debugger
   description: Learn how to use the Node.js built-in debugger with your programs.
   author: diberry
@@ -18,3 +20,4 @@ interactive: "bash"
 content: |
   [!include[](includes/4-use-built-in-debugger.md)]
   
+

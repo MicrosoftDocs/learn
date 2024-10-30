@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines
   description: "Populate slowly changing dimensions in Azure Synapse Analytics pipelines"
   ms.date: 05/12/2022
@@ -36,3 +38,4 @@ units:
 - learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.summary
 badge:
   uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.badge
+

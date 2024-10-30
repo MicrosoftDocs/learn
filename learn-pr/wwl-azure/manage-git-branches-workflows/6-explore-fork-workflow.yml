@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-branches-workflows.explore-fork-workflow
 title: Explore fork workflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore fork workflow
   description: "Explore fork workflow"
   ms.date: 05/24/2024

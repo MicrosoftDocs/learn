@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.replicate-azure-virtual-machines-running-proximity-placement-groups-to-another-r
 title: Replicate Azure Virtual Machines running in proximity placement groups to another region
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Replicate Azure Virtual Machines running in proximity placement groups to another region
   description: "Explore the considerations when replicating Azure Virtual Machines running in proximity placement groups to another region."
   ms.date: 08/01/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.consider-message-processing-options-constraints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Consider Azure IoT Hub message processing options and constraints
   description: "This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages. It also examines IoT Hub message processing limits."
   ms.date: 02/22/2024
@@ -41,3 +43,4 @@ units:
 - learn.wwl.consider-message-processing-options-constraints.summary
 badge:
   uid: learn.wwl.consider-message-processing-options-constraints.badge
+

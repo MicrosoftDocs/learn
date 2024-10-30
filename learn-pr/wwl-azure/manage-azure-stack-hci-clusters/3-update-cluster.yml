@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hci-clusters.update-cluster
 title: Update an Azure Stack HCI cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Update an Azure Stack HCI cluster
   description: "Update an Azure Stack HCI cluster"
   ms.date: 06/09/2021

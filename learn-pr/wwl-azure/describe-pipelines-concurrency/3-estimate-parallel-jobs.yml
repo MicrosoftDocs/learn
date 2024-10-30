@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-pipelines-concurrency.estimate-parallel-jobs
 title: Estimate parallel jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Estimate parallel jobs
   description: "Estimate parallel jobs"
   ms.date: 05/23/2024

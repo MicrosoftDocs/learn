@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-devices-windows-autopilot.prepare-device-ids-for-autopilot
 title: Prepare device IDs for Autopilot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare device IDs for Autopilot
   description: "Prepare device IDs for Autopilot"
   ms.date: 01/24/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-log-analytics-workspace.create-log-analytics-workspace
 title: Create a Log Analytics workspace
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a Log Analytics workspace
   description: "Create a Log Analytics workspace"
   ms.date: 10/25/2023

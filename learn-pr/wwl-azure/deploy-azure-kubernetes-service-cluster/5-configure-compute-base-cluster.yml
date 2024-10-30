@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-base-cluster
 title: Configure compute for nodes and node pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure compute for nodes and node pools
   description: "Configure compute for nodes and node pools"
   ms.date: 03/08/2024

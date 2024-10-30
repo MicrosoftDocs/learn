@@ -2,6 +2,8 @@
 uid: learn.introduction-large-language-models.when-to-use-llms
 title: "When to use LLMs"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "When to use LLMs"
   description: Learn when to use large language models.
   ms.date: 11/30/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-use-large-language-models.md)]
+

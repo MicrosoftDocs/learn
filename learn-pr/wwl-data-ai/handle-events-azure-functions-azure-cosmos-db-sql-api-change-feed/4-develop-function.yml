@@ -2,6 +2,8 @@
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.develop-function
 title: Develop function
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop function
   description: "Develop function"
   ms.date: 10/22/2024
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-develop-function.md)]
+

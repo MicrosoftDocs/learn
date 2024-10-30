@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-azure-services-with-azure-stack-hci.protect-vms-by-using-azure-backup
 title: Protect Azure Stack HCI VMs by using Azure Backup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect Azure Stack HCI VMs by using Azure Backup
   description: "Protect Azure Stack HCI VMs by using Azure Backup"
   ms.date: 07/29/2022

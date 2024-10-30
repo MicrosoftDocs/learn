@@ -2,6 +2,8 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.trace-track-activity
 title: Trace and track activity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Trace and track activity
   description: "Trace and track activity"
   ms.date: 10/14/2024

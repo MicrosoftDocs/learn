@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.understand
 title: Understand multi-region write
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand multi-region write
   description: "Understand multi-region write"
   ms.date: 10/18/2022

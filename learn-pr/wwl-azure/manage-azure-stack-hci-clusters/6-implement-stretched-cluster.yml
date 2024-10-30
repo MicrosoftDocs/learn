@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hci-clusters.implement-stretched-cluster
 title: Implement an Azure Stack HCI stretched cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement an Azure Stack HCI stretched cluster
   description: "Implement an Azure Stack HCI stretched cluster"
   ms.date: 06/09/2021

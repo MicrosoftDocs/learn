@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-identity-management-systems.integrate-github-single-sign-sso
 title: Integrate GitHub with single sign-on (SSO)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate GitHub with single sign-on (SSO)
   description: "Integrate GitHub with single sign-on (SSO)"
   ms.date: 05/27/2024

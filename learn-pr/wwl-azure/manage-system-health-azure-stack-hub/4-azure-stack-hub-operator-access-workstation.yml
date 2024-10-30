@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-system-health-azure-stack-hub.azure-stack-hub-operator-access-workstation
 title: Azure Stack Hub Operator Access Workstation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Stack Hub Operator Access Workstation
   description: "Azure Stack Hub Operator Access Workstation"
   ms.date: 08/10/2022

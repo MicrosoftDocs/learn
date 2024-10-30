@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell.create-new-azure-virtual-machine-use-commands
 title: Create a new Azure virtual machine by using Windows PowerShell commands
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a new Azure virtual machine by using Windows PowerShell commands
   description: "Create a new Azure virtual machine by using Windows PowerShell commands"
   ms.date: 03/22/2024
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-new-azure-virtual-machine-use-commands.md)]
+

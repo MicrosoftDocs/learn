@@ -2,6 +2,8 @@
 uid: learn.wwl.enrich-search-index-using-language-studio.explore-available-features-of-azure-cognitive-service-for-language
 title: Explore the available features of Azure AI Language
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the available features of Azure AI  Language
   description: Explore the available features of Azure AI  Language
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/02-explore-available-features-of-azure-cognitive-service-for-language.md)]
+

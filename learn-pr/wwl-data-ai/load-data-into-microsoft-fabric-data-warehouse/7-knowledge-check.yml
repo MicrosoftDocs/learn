@@ -2,6 +2,8 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/01/2023
@@ -48,3 +50,4 @@ quiz:
     - content: At least 10 MB.
       isCorrect: false
       explanation: Incorrect. The recommended minimum file size is 4 MB, not 10 MB.
+

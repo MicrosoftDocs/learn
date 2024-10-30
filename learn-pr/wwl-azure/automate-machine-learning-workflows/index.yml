@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-machine-learning-workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate machine learning workflows
   description: Learn about automation for machine learning, machine learning operations, and MLOps.
   author: wwlpublish
@@ -35,3 +37,4 @@ units:
 - learn.wwl.automate-machine-learning-workflows.summary
 badge:
   uid: learn.wwl.automate-machine-learning-workflows.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-deployment-patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to deployment patterns
   description: "Introduction to deployment patterns"
   ms.date: 05/06/2024

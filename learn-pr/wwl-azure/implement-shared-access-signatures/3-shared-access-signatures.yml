@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-shared-access-signatures.choose-when-to-use
 title: Choose when to use shared access signatures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose when to use shared access signatures
   description: "Choose when to use shared access signatures"
   ms.date: 03/13/2024

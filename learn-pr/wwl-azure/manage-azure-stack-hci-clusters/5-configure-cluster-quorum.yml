@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hci-clusters.configure-cluster-quorum
 title: Configure an Azure Stack HCI cluster quorum
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure an Azure Stack HCI cluster quorum
   description: "Configure an Azure Stack HCI cluster quorum"
   ms.date: 06/09/2021

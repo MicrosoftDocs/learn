@@ -2,6 +2,8 @@
 uid: learn.wwl.discover-azure-message-queue.discover-service-bus-queues-topics-subscriptions
 title: Discover Service Bus queues, topics, and subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover Service Bus queues, topics, and subscriptions
   description: "Discover Service Bus queues, topics, and subscriptions"
   ms.date: 07/18/2024

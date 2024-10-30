@@ -2,6 +2,8 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.use-client-tools
 title: Use client tools to query a warehouse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use client tools to query a warehouse
   description: "Learn how to use client tools to query a warehouse in Microsoft Fabric."
   ms.date: 12/19/2023

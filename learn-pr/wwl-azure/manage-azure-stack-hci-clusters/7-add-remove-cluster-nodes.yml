@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hci-clusters.add-remove-cluster-nodes
 title: Add and remove cluster nodes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add and remove cluster nodes
   description: "Add and remove cluster nodes"
   ms.date: 06/09/2021

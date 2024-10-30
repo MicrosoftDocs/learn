@@ -2,6 +2,8 @@
 uid: learn.introduction-to-application-resiliency-azure.resiliency-design-patterns
 title: Resiliency design patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Resiliency design patterns
   description: Learn about resiliency design patterns in Azure
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 35
 content: |
   [!include[](includes/10-resiliency-design-patterns.md)]
+

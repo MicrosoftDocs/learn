@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-azure-services-with-azure-stack-hci.implement-azure-network-adapter-scenarios
 title: Implement Azure Network Adapter in Azure Stack HCI scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Network Adapter in Azure Stack HCI scenarios
   description: "Implement Azure Network Adapter in Azure Stack HCI scenarios"
   ms.date: 07/29/2022

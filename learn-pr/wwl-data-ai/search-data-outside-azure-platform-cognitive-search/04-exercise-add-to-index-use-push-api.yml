@@ -2,6 +2,8 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.exercise-add-to-index-using-push-api
 title: 'Exercise: Add to an index using the push API'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Add to an index using the push API"
   description: "Exercise: Add to an index using the push API"
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/04-exercise-add-to-index-use-push-api.md)]
+

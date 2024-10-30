@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.enable-attack-surface-reduction-rules
 title: Enable attack surface reduction rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable attack surface reduction rules
   description: "Enable attack surface reduction rules"
   ms.date: 11/28/2023

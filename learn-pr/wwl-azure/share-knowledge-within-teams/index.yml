@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.share-knowledge-within-teams
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share knowledge within teams
   description: Share knowledge within teams
   ms.date: 05/24/2024
@@ -51,3 +53,4 @@ units:
 - learn.wwl.share-knowledge-within-teams.summary
 badge:
   uid: learn.wwl.share-knowledge-within-teams.badge
+
