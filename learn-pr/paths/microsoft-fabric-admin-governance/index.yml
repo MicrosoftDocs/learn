@@ -33,4 +33,4 @@ modules:
 - learn-wwl.secure-data-warehouse-in-microsoft-fabric
 - learn.fabric-data-governance-purview
 trophy:
-  uid: learn.wwl.ingest-data-with-microsoft-fabric.trophy
+  uid: learn.wwl.microsoft-fabric-admin-governance.trophy
