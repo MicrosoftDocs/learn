@@ -33621,11 +33621,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/integrate-azure-services-with-azure-stack-hci/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/hybrid-capabilities-with-azure-services-23h2#other-azure-hybrid-services",
       "redirect_document_id": false
