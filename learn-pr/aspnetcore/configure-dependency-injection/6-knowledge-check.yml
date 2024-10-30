@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: Ignore these questions, they're from another module
+  title: Check your understanding
   questions:
   - content: "Which is a true statement about dependency injection?"
     choices:
