@@ -1,6 +1,6 @@
 In the previous exercise, you created entity classes and a database context. You then used EF Core migrations to create the database schema.
 
-In this exercise, you'll complete the `PizzaService` implementation. The service uses EF Core to perform CRUD operations on the database.
+In this exercise, you complete the `PizzaService` implementation. The service uses EF Core to perform CRUD operations on the database.
 
 ## Code the CRUD operations
 
@@ -90,7 +90,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
     In the preceding code:
 
-    - `newPizza` is assumed to be a valid object. EF Core doesn't do data validation, so  the ASP.NET Core runtime or user code must handle any validation.
+    - `newPizza` is assumed to be a valid object. EF Core doesn't do data validation, so the ASP.NET Core runtime or user code must handle any validation.
     - The `Add` method adds the `newPizza` entity to the EF Core object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
@@ -174,7 +174,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
 ## Seed the database
 
-You've coded the CRUD operations for `PizzaService`, but it's easier to test the read operation if the database contains good data. You decide to modify the app to seed the database on startup.
+You coded the CRUD operations for `PizzaService`, but it's easier to test the *Read* operation if the database contains good data. You decide to modify the app to seed the database on startup.
 
 > [!WARNING]
 > This database seeding code doesn't account for race conditions, so be careful when using it in a distributed environment without mitigating changes.
@@ -304,4 +304,4 @@ The `DbInitializer` class is ready to seed the database, but it needs to be call
 
 1. Save all your changes and run `dotnet build`.
 
-You've written all the code you need to do basic CRUD operations and seed the database on startup. In the next exercise, you'll test those operations in the app.
+You wrote all the code you need to do basic CRUD operations and seed the database on startup. In the next exercise, you test those operations in the app.

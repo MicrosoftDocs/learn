@@ -32,6 +32,5 @@ modules:
 - learn.wwl.use-prebuilt-form-recognizer-models
 - learn.wwl.work-with-form-recognizer
 - learn.wwl.create-composed-form-recognizer-model
-- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 trophy:
   uid: learn.wwl.extract-data-from-forms-document-intelligence.trophy

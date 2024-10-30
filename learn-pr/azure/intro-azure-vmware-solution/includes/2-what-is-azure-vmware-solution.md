@@ -1,15 +1,15 @@
-Each company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
+Each company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure. Enabling them to deploy new virtual machines (VMs) and connect workloads directly to other Azure services.
 
 Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with the Azure global cloud service. It's a VMware-validated solution with ongoing certification and testing of enhancements and upgrades. 
 
-Azure VMware Solution is managed by Microsoft to meet performance, availability, security, and compliance requirements. Microsoft provides the following components to run Azure VMware Solution at scale in Azure:
+Microsoft manages Azure VMware Solution to meet performance, availability, security, and compliance requirements. Microsoft provides the following components to run Azure VMware Solution at scale in Azure:
 
 - Management systems
 - Networking services
 - Operating platform
 - Back-end infrastructure operations 
 
-The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, the Azure CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. If you choose the service for your company, you can gain elasticity with the ability to add and remove capacity (compute and storage resources) on demand.
+The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, the Azure CLI, or PowerShell. All provisioned private clouds have the standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. If you choose the service for your company, you can gain elasticity with the ability to add and remove capacity (compute and storage resources) on demand.
 
 The following diagram illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
@@ -28,7 +28,7 @@ Azure VMware Solution provides a comprehensive VMware environment in Azure. It e
   - Change management
   - Tooling
 
-   You can accelerate migration and minimize downtime by using the latest HCX Enterprise functionality for large-scale, live migration from on-premises to Azure.
+   You can accelerate migration and minimize downtime by using the latest VMware Hybrid Cloud Extension (HCX) Enterprise functionality for large-scale, live migration from on-premises to Azure.
 
 - **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 

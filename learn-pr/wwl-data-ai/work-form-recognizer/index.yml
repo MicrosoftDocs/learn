@@ -34,6 +34,7 @@ roles:
 - student
 products:
 - ai-services
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:

@@ -19080,6 +19080,51 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/index.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/2-browse-search-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/3-manage-assets.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/4-manage-assets-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/5-business-glossary.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/6-business-glossary-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-data-assets-in-microsoft-purview-data-catalog/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/purview/section1-setup-your-governance-domain",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/advanced-security-compute/4-microsoft-defender-containers.md",
       "redirect_url": "/training/modules/advanced-security-compute/5-microsoft-defender-containers",
       "redirect_document_id": true
@@ -33593,6 +33638,256 @@
     {
       "source_path": "learn-pr/azure/stack-hci-arc-integration/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-stack-hci-foundations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/operate-maintain-azure-stack-hci/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/azure-arc-vm-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/2-identify-appropriate-role-assign.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/3-elevate-your-access-user-access-admin.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/4-exercise-elevate-permissions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-subscription-access-azure-rbac/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/secure-azure-resources-with-rbac/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/2-user-accounts-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/3-exercise-add-delete-users-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/4-manage-app-resource-access-azure-ad-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/5-exercise-assign-users-azure-ad-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/6-collaborate-guest-accounts-azure-ad-b2b.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/7-exercise-guest-user-access-azure-ad-b2b.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-users-and-groups-in-azure-active-directory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-users-and-groups-in-aad/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/2-what-are-domain-names.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/3-add-custom-domain-name.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/4-solve-common-issues.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/add-custom-domain-name-azure-active-directory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/fundamentals/add-custom-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/index.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/5-backup-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/3-create-snapshots.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/10-implement-azure-site-recovery.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/1-introduction.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/12-knowledge-check.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/11-simulation-machine-backups.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/9-manage-soft-delete.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/2-protect-data.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/6-restore-virtual-machines.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/4-setup-recovery-services-vault-backup-options.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/13-summary-resources.md",
+      "redirect_url": "/training/modules/protect-virtual-machines-with-azure-backup/",
+      "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-azure-stack/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/2-azure-stack.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/3-azure-stack-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/4-azure-stack-hci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/5-azure-stack-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/6-azure-stack-portfolio.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-stack/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/2-hyper-v.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/3-failover-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/4-software-defined-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/5-software-defined-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-stack-hci-technologies/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview#azure-stack-hci-features-and-architecture",
       "redirect_document_id": false
     }
   ]
