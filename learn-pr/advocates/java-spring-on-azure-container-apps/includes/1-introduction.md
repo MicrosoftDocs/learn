@@ -18,5 +18,5 @@ Accelerate your Java applications using the built-in Java Stack on Azure Contain
 
 ## References
 
-- [Get started with Java on Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/java-get-started?pivots=jar)
-- [Overview of Java support on Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/java-overview)
+- [Get started with Java on Azure Container Apps](https://learn.microsoft.com/azure/container-apps/java-get-started?pivots=jar)
+- [Overview of Java support on Azure Container Apps](https://learn.microsoft.com/azure/container-apps/java-overview)
