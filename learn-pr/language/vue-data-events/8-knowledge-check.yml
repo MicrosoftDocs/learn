@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
   - content: Which one of the following options is a shortcut that binds functions to events in Vue.js?

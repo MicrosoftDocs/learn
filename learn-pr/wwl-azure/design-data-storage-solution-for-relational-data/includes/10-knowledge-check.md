@@ -9,4 +9,4 @@ Tailwind Traders has several workloads that are being migrated to Azure. You're 
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. Then select **Check your answers**.
+Choose the best response for each of the questions. 

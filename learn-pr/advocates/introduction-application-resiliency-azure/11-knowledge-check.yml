@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 3
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   questions:
     - content: "Which of the following strategies is recommended for handling heavy load in an Azure application?"

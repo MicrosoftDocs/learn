@@ -11,7 +11,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 
 content: |
-  Choose the best response for each question, and then select **Check your answers**.
+  Choose the best response for each question.
 quiz:
   questions:
   - content: "Which answer best describes how the Azure IoT Central application is used?"

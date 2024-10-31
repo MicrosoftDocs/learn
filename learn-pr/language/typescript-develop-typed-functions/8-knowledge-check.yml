@@ -13,7 +13,7 @@ metadata:
     - devx-track-js
 durationInMinutes: 2
 content: |
-  Choose the best response for each of the questions below. Then select **Check your answers**.
+  Choose the best response for each of the questions below. 
 quiz:
   questions:
   - content: "What is a difference between function parameters in TypeScript and function parameters in JavaScript?"
