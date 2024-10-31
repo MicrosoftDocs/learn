@@ -16,7 +16,7 @@ To simplify common IT Ops and DevOps tasks, use Terraform, an open-source declar
 
 - Define and provision datacenter and cloud-based infrastructure, including Azure.
 - Provision core platform capabilities such as management groups, policies, users, groups, and policies.
-- Provision Azure DevOps projects and pipelines to automate regular infrastructure and application deployments.
+- Provision Azure DevOps Projects and pipelines to automate regular infrastructure and application deployments.
 - Provision Azure resources required by your applications.
 
 Terraform uses its own Terraform CLI. If you want to use a declarative coding tool more closely integrated with Azure, consider Bicep, which works with Azure CLI and the Azure portal.
