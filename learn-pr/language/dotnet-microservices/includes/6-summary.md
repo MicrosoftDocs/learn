@@ -1,4 +1,4 @@
-The cloud has changed how developers build applications. 
+The cloud has changed how developers build applications.
 
 Some of the changing business needs include:
 
@@ -10,7 +10,7 @@ A microservices architecture helps address these needs by building a single appl
 
 Using containers is a common approach to building microservices. Each application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. Docker is a popular way to containerize applications.
 
-A _Dockerfile_ is a text file that contains instructions for how to build a Docker image. The .NET SDK now directly enables you to create containers through the `dotnet publish` command and support the same commands as the Dockerfile. A Docker Compose file is a YAML file that groups together several Docker containers for build and deployment. 
+A _Dockerfile_ is a text file that contains instructions for how to build a Docker image. The .NET SDK now directly enables you to create containers through the `dotnet publish` command and supports the same commands as the Dockerfile. A Docker Compose file is a YAML file that groups together several Docker containers for build and deployment.
 
 Finally, .NET was built to be cloud-native first. It runs cross-platform, so your container image can be based on a flavor of Linux, and your .NET code still runs. .NET is extremely fast, and Microsoft has already created .NET images for containers and Docker.
 
@@ -25,6 +25,6 @@ These resources can help you learn more about microservices with .NET:
 - [Containers with .NET and Docker for Beginners](https://aka.ms/dotnet/beginnervideos/youtube/containers)
 - [Microservices explained | Build your first microservice with .NET (Video)](https://youtu.be/DFDbh1c9zyE)
 - [.NET microservices: Architecture for containerized .NET applications](/dotnet/architecture/microservices/)
-- [Create and deploy a cloud-native ASP.NET Core microservice](/training/modules/microservices-aspnet-core/)
+- [Create cloud-native apps and services with .NET and ASP.NET Core](/training/paths/create-microservices-with-dotnet/)
 - [Introduction to Docker containers](/training/modules/intro-to-docker-containers/)
 - [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/)

@@ -115,6 +115,11 @@ Complete the following steps to configure a connection between the container app
 
 1. On the Authentication tab, select **User assigned managed identity**.
 
+1. Ensure that the correct subscription and user assigned managed identity are selected.
+
+    Subscription: The Azure subscription that you're using for this guided project.
+    User assigned managed identity: **uai-az2003**
+
 1. To change tabs, select **Review + Create**.
 
 1. Once the Validation passed message appears, select **Create**.
@@ -134,8 +139,6 @@ Complete the following steps to configure a connection between the container app
 1. On the left-side menu under Application, select **Containers**.
 
 1. To the right of **Based on revision**, ensure that your active revision is selected.
-
-1. On the left-side menu under Application, select **Scale**.
 
 1. At the top of the page, select **Edit and deploy**.
 
@@ -167,6 +170,8 @@ In this task, you verify that your configuration meets the specified requirement
 1. In the Azure portal, ensure that your Container App resource is open.
 
 1. On the left-side menu, under Settings, select **Deployment**.
+
+1. At the top of the page, ensure that the Continuous deployment tab is selected.
 
 1. Verify that the expected Registry settings are reported:
 
