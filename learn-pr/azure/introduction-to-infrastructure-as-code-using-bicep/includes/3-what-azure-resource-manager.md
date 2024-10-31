@@ -1,6 +1,6 @@
-You've spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it will be deploying a significant number of resources to Azure. As a team, you've decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure-as-code strategy.
+You spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it's going to deploy a significant number of resources to Azure. As a team, you decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure-as-code strategy.
 
-In this unit, you'll learn about Resource Manager and the two types of Resource Manager templates.
+In this unit, you learn about Resource Manager and the two types of Resource Manager templates.
 
 ## Azure Resource Manager concepts
 
@@ -15,7 +15,7 @@ As you begin your cloud journey with Resource Manager, it's important to underst
 - **Resource group**: A logical container that holds related resources for an Azure solution. The resource group includes resources you want to manage as a group. Most Azure resources are contained in a resource group. You decide which resources belong in a resource group based on what makes the most sense for your solution.
 
    > [!NOTE]
-   > A small number of resources aren't contained in resource groups. These resource types are for specific purposes like managing access control and enforcing policies. You'll learn more about these resources in a later module.
+   > A small number of resources aren't contained in resource groups. These resource types are for specific purposes like managing access control and enforcing policies. You learn more about these resources in a later module.
 
 - **Subscription**: A logical container and billing boundary for your resources and resource groups. Each Azure resource and resource group is associated with only one subscription.
 
@@ -40,7 +40,7 @@ For example, you use a control plane operation to create a virtual machine, but 
 
 #### Control plane
 
-When you send a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives, authenticates, and authorizes the request. Then, it sends the request to the Azure resource provider, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools that are available in Azure.
+When you send a request from any of the Azure tools, APIs, or Software Development Kits (SDKs), Resource Manager receives, authenticates, and authorizes the request. Then, it sends the request to the Azure resource provider, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools that are available in Azure.
 
 The following image shows the role that Resource Manager plays in handling Azure requests:
 
@@ -52,7 +52,7 @@ All control plane operation requests are sent to a Resource Manager URL. For exa
 PUT https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.Compute/virtualMachines/{virtualMachineName}?api-version=2022-08-01
 ```
 
-The control plane understands which resources need to be created and which resources already exist. Resource Manager understands the difference between these requests and won't create identical resources or delete existing resources, although there are ways to override this behavior.
+The control plane understands which resources need to be created and which resources already exist. Resource Manager understands the difference between these requests and doesn't create identical resources or delete existing resources, although there are ways to override this behavior.
 
 #### Data plane
 
@@ -76,7 +76,7 @@ There are many benefits to using ARM templates, either JSON or Bicep, for your r
 
 - **Orchestration**:  When a template deployment is submitted to Resource Manager, the resources in the template are deployed in parallel. This process allows deployments to finish faster. Resource Manager orchestrates these deployments in the correct order if one resource depends on another.
 
-- **Preview**:  The what-if tool, available in Azure PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool details any creations, modification, and deletions that will be made by your template.
+- **Preview**:  The what-if tool, available in Azure PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool details any creations, modification, and deletions that are made by your template.
 
 - **Testing and Validation**:  You can use tools like the Bicep linter to check the quality of your templates before deployment. ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
 
