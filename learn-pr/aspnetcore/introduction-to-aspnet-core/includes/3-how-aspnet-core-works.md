@@ -1,55 +1,189 @@
-Now that you know what ASP.NET Core is and what it can do, let’s overview how the modular architecture of ASP.NET Core allows you to quickly construct a modern web app to fit your specific needs.
+An ASP.NET Core app is essentially a .NET app with a Program.cs file that sets up the web app component features you need and gets it running.
 
-## Project templates
+The most basic ASP.NET Core app's Program.cs file:
 
-ASP.NET Core provides project templates to create new ASP.NET Core projects with the necessary files, folders, and configurations to get a project up and running efficiently. For example, you can select a template that creates a ready to run web API or Blazor web app.
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
 
-All .NET project templates offer customization options to tailor the generated project to specific needs and extend it with additional services. For instance, you can add Entity Framework Core (for database access), authentication, OpenAPI, caching, logging, and more, enabling the application to effectively meet specific requirements.
+app.MapGet("/", () => "Hello World!");
 
-## Key architecture components
+app.Run();
+```
 
-### Front-end development
+With the previous code:
 
-ASP.NET Core supports a variety of front-end development approaches, allowing you to choose the best tools and frameworks for your project. Whether you prefer traditional server-side rendering or modern client-side frameworks.
+- A basic ASP.NET Core web application is set up that listens for HTTP GET requests at the root URL ("/") and responds with "Hello World!".
+- The app is initialized, configures a single route, and starts the web server.
 
-#### Blazor
+### Blazor
 
-Blazor is a framework for building interactive web UI components using HTML, CSS, and C#. Blazor can run on WebAssembly (client-side) or on the server, allowing you to create rich, interactive web applications with a single codebase.
+Blazor is a component-based web UI framework integrated with ASP.NET Core, used for building interactive web UIs using C#.
 
-#### Integration with front-end frameworks like React, Angular, and Vue
+A reusable component, such as the following `Counter` component is defined in a *Counter.razor* file:
 
-ASP.NET Core seamlessly integrates with popular client-side frameworks like React, Angular, and Vue. This allows you to build modern, single-page applications (SPAs) while applying ASP.NET Core’s robust backend capabilities. 
+```razor
+@page "/counter"
+@rendermode InteractiveServer
 
-ASP.NET Core provides built-in project templates for React, Angular, and Vue, making it easy to get started.
+<PageTitle>Counter</PageTitle>
 
-### The middleware pipeline
+<h1>Counter</h1>
 
-The middleware pipeline in ASP.NET Core is a series of components that process HTTP requests and responses. This modular approach allows you to customize and extend the functionality of your application by adding or removing middleware components as needed:
+<p role="status">Current count: @currentCount</p>
 
-- **Request handling**: Middleware components handle various aspects of request processing, such as authentication, authorization, logging, and error handling. Each middleware component can either process the request and pass it to the next component or short-circuit the pipeline and generate a response.
-- **Built-in middleware**: ASP.NET Core includes a variety of built-in middleware components for common tasks, such as serving static files, enabling CORS (Cross-Origin Resource Sharing), and supporting WebSockets for real-time communication.
-- **Custom middleware**: You can create custom middleware to handle specific requirements of your application. For example, you might create middleware to handle custom logging, request validation, or response modification.
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-### Adding built-in components
-ASP.NET Core’s modular architecture allows you to easily add built-in components and services to your application. For example, you can add and configure the built-in logging service to capture and manage logs.
+@code {
+    private int currentCount = 0;
 
-In the following example logging services are added in an ASP.NET Core *Program.cs* file. The *Program.cs file* is the entry point of your ASP.NET Core application. It sets up the application host, configures services, and defines the request handling pipeline. This demonstrates how to quickly plug in a built-in service like logging into your ASP.NET Core application. You can add other built-in services such as authentication, Entity Framework Core, or middleware components by following a similar pattern:
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+```
 
-[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all&highlight=3-5)]
+With the previous code:
 
-In the previous sample in the *Program.cs*:
+- A component is created that displays a counter.
+- The @code block contains the component's logic using C#, including a method to increment the counter.
+- The counter value is displayed and updated each time the button is clicked.
+- A component approach allows for code reuse across different parts of the application and has the flexibility to be run either in the browser or on the server in a Blazor app.
 
+The `Counter` component can be added to any web page in the app by adding the <Counter /> element.
+
+```razor
+@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<Counter />
+```
+
+### APIs
+
+ASP.NET Core provides frameworks for building APIs, gRPC services, and real-time apps with SignalR to instantly push data updates to clients.
+
+Basic Minimal API:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.MapGet("/hello", () => "Hello, World!");
+
+app.Run();
+
+```
+
+With the previous code:
+
+- A minimal API is set up that listens for HTTP GET requests at the /hello URL and responds with "Hello, World!".
+- The `WebApplicationBuilder` is used to configure the app.
+- The `MapGet` method defines a route and a handler for GET requests.
+
+### Middleware
+
+ASP.NET Core uses a pipeline of middleware components to handle HTTP requests and responses. This modular approach provides flexibility, allowing you to customize and extend your application's functionality by adding or removing middleware components as needed.
+
+The middleware pipeline processes HTTP requests in a sequential manner, ensuring that each component can perform its designated task before passing the request to the next component in the pipeline.
+
+Adding built-in middleware in the *Program.cs* file:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.MapStaticAssets();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+```
+
+In the previous code, several common middleware components were added:
+
+- `UseHttpsRedirection`: Redirects HTTP requests to HTTPS.
+- `UseRouting`: Enables routing to map requests to endpoints.
+- `MapStaticAssets`: Optimizes the delivery of static files such as HTML, CSS, JavaScript, images and other assets.
+- `UseAuthentication`: Adds authentication capabilities.
+- `UseAuthorization`: Adds authorization capabilities.
 - `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear all default providers and add the *Console* and *Debug* logging providers.
 - `app.MapGet`: This is a simple endpoint to demonstrate that the application is running.
 
-### Server-side development
+### Dependency Injection
 
-ASP.NET Core provides a robust and flexible backend for building a wide range of applications, from simple web apps to complex, distributed systems.
+ASP.NET Core includes built-in support for dependency injection (DI) for configuring services that are used by the app and its various framework components.
 
-- **Dependency injection**: ASP.NET Core has built-in support for dependency injection, a design pattern that promotes loose coupling and testability. This makes it easier to manage dependencies and configure services in your application.
-- **Data Access**: ASP.NET Core supports various data access technologies, including Entity Framework Core (EF Core) for ORM (Object-Relational Mapping) and Dapper for lightweight data access. These tools help you interact with databases and manage data efficiently.
-- **API development**: ASP.NET Core is well-suited for building APIs, with support for both RESTful APIs and gRPC. RESTful APIs are ideal for web-based communication, while gRPC offers high performance and efficient communication for real-time applications and microservices.
-- **Background Tasks**: ASP.NET Core allows you to run background tasks using hosted services. This is useful for tasks that need to run independently of user requests, such as processing messages from a queue or performing scheduled maintenance.
+Configuring a database context as a service using dependency injection:
+
+```csharp
+public class MyDbContext : DbContext
+{
+    public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) { }
+}
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+app.Run();
+```
+
+With the previous code:
+
+- A `DbContext` is configured as a service using dependency injection.
+- The `WebApplicationBuilder` is used to configure the app.
+- The `AddDbContext` method registers the `DbContext` with the dependency injection container.
+- The connection string is retrieved from the configuration and used to set up the database context.
+
+### Configuration
+
+ASP.NET Core supports accessing configuration data from a variety of sources, like JSON files, environment variables, and command-line arguments.
+
+Configuring a connection string in an *appsetting.json* file:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=MyDatabase;Trusted_Connection=True;"
+  }
+}
+```
+
+In the Program.cs file:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+app.Run();
+```
+
+With the previous code:
+
+- The connection string is configured in the *appsettings.json* file.
+- The `WebApplicationBuilder` is used to configure the app.
+- The `AddDbContext` method registers the `DbContext` with the dependency injection container.
+- The connection string is retrieved from the configuration and used to set up the database context.
 
 ### Monitoring and diagnostics
 
