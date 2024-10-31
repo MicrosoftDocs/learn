@@ -29,7 +29,7 @@ When you create a relationship, you configure which direction the data is filter
 
 **Bi-directional filters** are also possible and sometimes used in one-to-one or many-to-many relationships. Before using a bi-directional filter, ensure your data and relationships are correctly configured. Be cautious, as bi-directional filters can negatively affect model query performance and potentially confuse report users.
 
-**Referential integrity** ensures that relationships between tables remain consistent. It means that every value in a foreign key column must have a corresponding value in the primary key column of the related table.
+**Referential integrity** ensures that relationships between tables remain consistent. It means that every value in a foreign key column must have a corresponding value in the primary key column of the related table. This feature also improves query performance when using INNER joins as opposed to LEFT OUTER joins.
 
 Understanding filter direction and referential integrity is crucial for accurate data modeling. Filters only propagate if the relationship path is intact and follows the defined direction. These configurations ensure data consistency and integrity across your model.
 

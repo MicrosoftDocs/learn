@@ -13,6 +13,8 @@ RETURN
     Total Sales / COUNTROWS(Sales)
 ```
 
+While this example is still readable without the variable, complex formulas can use multiple variables and increase readability in your code significantly.
+
 ## Iterators
 
 Iterator functions in DAX, such as SUMX, AVERAGEX, and MAXX, perform row-by-row calculations over a table and return a single value. These functions are useful for performing calculations that depend on the context of each row.
@@ -27,7 +29,7 @@ SUMX(
 )
 ```
 
-Be cautious using iterator functions for large amounts of data due to the row by row processing, which can affect performance.
+Be cautious using iterator functions for large amounts of data due to the row-by-row processing, which can affect performance.
 
 ## Table Filtering
 
@@ -49,41 +51,44 @@ CALCULATETABLE(
 )
 ```
 
+The CALCULATETABLE function modifies the filter context to include only the rows where the product category is “Electronics.” The SUMMARIZE function then lists the sales amounts within this filtered context. As a result, when using this measure in a visual showing total sales by category, each row will only show the total sales for “Electronics,” regardless of the actual category in the visual.
+
+These table filtering functions help you create dynamic and context-sensitive calculations, enabling more precise and insightful data analysis.
+
 ## Windowing Functions
 
-Windowing functions, such as RANKX, TOPN, and EARLIER, allow you to perform calculations over a specified window of data. These functions are useful for creating rankings, running totals, and other calculations that depend on the order of data.
+Windowing functions in DAX, such as INDEX, OFFSET, and WINDOW, allow you to perform calculations over a specified window of data. These functions are useful for creating rankings, running totals, and other calculations that depend on the order of data.
 
-For example, to rank products based on their total sales, you can use the RANKX function:
+For example, to compare the sales of the current product with the previous product, you can use the OFFSET function:
 
 ```dax
-Product Rank by Sales = 
-RANKX(
-    ALL(Products),
+Previous Product Sales = 
+CALCULATE(
     SUM(Sales[Amount]),
-    ,
-    DESC
+    OFFSET(-1, ORDERBY(Sales[Date], ASC))
 )
 ```
+
+In this example, the OFFSET function is used to shift the context to the previous row based on the order of the Sales[Date] column. This allows you to compare the sales amount of the current product with the previous one, which can be useful for trend analysis and other comparative calculations.
 
 ## Information Functions
 
 Information functions, such as ISBLANK, ISNUMBER, and CONTAINS, allow you to perform checks and return information about the data. These functions are useful for creating conditional calculations and handling special cases.
 
-For example, you can use the SWITCH function to create a measure that returns:
+For example, you can use the HASONEVALUE function to check if a column has a single distinct value. This is useful in scenarios where you want to perform calculations only when a single value is selected in a filter context.
 
-- "High" if the sales amount is greater than 1,000
-- "Medium" if it's between 500 and 1,000
-- "Low" otherwise
+Consider the scenario where you want to calculate the total sales amount only if a single product category is selected:
 
-```dax
-Sales Category = 
-SWITCH(
-    TRUE(),
-    [Total Sales] > 1000, "High",
-    [Total Sales] > 500, "Medium",
-    "Low"
+```DAX
+Total Sales for Single Category = 
+IF(
+    HASONEVALUE(Products[Category]),
+    SUM(Sales[Amount]),
+    BLANK()
 )
 ```
+
+The HASONEVALUE function checks if there is only one distinct value in the Products[Category] column. If a single category is selected, the formula calculates the total sales amount, and if more than one category is selected, the formula returns BLANK().
 
 By using DAX variables and functions, you can create more efficient, readable, and powerful calculations that enhance your semantic model in Power BI.
 

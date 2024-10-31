@@ -1,12 +1,12 @@
-Static calculations and visuals can present issues for report performance. Introduce flexibility to your semantic model by using calculation groups, dynamic format strings, and field parameters. These features make your reports scalable and user-friendly by simplifying calculations and reducing report visualizations.
+Static calculations and visuals can present issues for report performance, but you can add flexibility to your semantic model by using calculation groups, dynamic format strings, and field parameters. These features make your reports scalable and user-friendly by simplifying calculations and reducing report visualizations.
 
 ## Calculation groups
 
-Calculation groups allow you to define reusable calculations that apply across multiple measures. This reduces redundancy and simplifies the maintenance of your semantic models. Use calculation groups to streamline complex calculations, such as time intelligence functions, across your entire model. The calculations defined in the calculation group are applied against the selected measure in a visual.
+Calculation groups allow you to define reusable calculations that apply across multiple measures, which reduce redundancy and simplifies the maintenance of your semantic models. You can use calculation groups to streamline complex calculations, such as time intelligence functions, across your entire model.
 
-Remember our scenario where you need to improve the semantic model to scale for the major sales event. You're asked to include time intelligence calculations including Year-to-Date (YTD), Quarter-to-Date (QTD), and Month-to-Date (MTD) for the sales data. Instead of creating separate measures for each time intelligence function, you decide to use calculation groups to streamline these calculations.
+Consider you need to calculate Year-to-Date (YTD), Quarter-to-Date (QTD), and Month-to-Date (MTD) sales data. Instead of creating separate measures for each time intelligence function, you decide to use calculation groups to streamline these calculations.
 
-For this example, we created a calculation group called **Time Intelligence** and the following DAX formulas as separate calculation items in the calculation group. Calculation groups are created in the Model view of Power BI Desktop.
+For this example, we have a calculation group called **Time Intelligence** with the following calculation items.
 
 ```DAX
    Year-to-Date (YTD) = 
@@ -38,7 +38,9 @@ In the following image, we have a matrix with the three fiscal years with the to
 
 ![Screenshot of the matrix visual showing the Total Sales for YTD, QTD, and MTD for each year.](../media/calculation-group-matrix.png)
 
-Now you can create another visual for Profit with the same calculation group and see Profit by MTD, QTD, and YTD. To complete this scenario without calculation groups, you need to measures for Profit, Profit MTD, Profit QTD, Profit YTD, Total Sales, Total Sales MTD, Total Sales QTD, and Total Sales YTD. The dynamic and reusable nature of calculation groups make them incredibly powerful to scale your semantic models.
+Without calculation groups, you need to create YTD, QTD, and MTD measures for each calculation you need, such as Total Sales, Profit, Target, and so on. Instead, create your visuals and add the calculation group and the other measures.
+
+The dynamic and reusable nature of calculation groups makes them incredibly powerful to scale your semantic models.
 
 > [!TIP]
 > See the documentation to learn more about how to [Create calculations groups in Power BI](/power-bi/transform-model/calculation-groups).
@@ -58,15 +60,15 @@ Before field parameters, report developers might create a visual for Total Sales
 
 ## Dynamic format strings
 
-Dynamic format strings enable you to change the format of a measure based on certain conditions, enhancing the readability and presentation of your data. For instance, you might want to display sales figures in different formats depending on their value. Dynamic format strings can also be used for calculation groups.
+Dynamic format strings let you adjust the format of a measure based on conditions, improving data readability and presentation.
 
-A report developer requested the following conditional formatting for the `Total Sales` measure, and you decide dynamic format strings solve this problem.
+Consider you want to display sales figures in different formats based on their value:
 
-- Display values in millions (M) if the sales amount is greater than 1,000,000.
-- Display values in thousands (K) if the sales amount is greater than 1,000 but less than 1,000,000.
-- Display values as is if the sales amount is less than 1,000.
+- Millions (M) for sales over 1,000,000.
+- Thousands (K) for sales between 1,000 and 1,000,000.
+- Exact value for sales under 1,000.
 
-First you need to configure the measure properties to allow a dynamic format string, and then use the following code to define the format:
+The following code uses the `SWITCH` function to apply the different formats based on the sales amount:
 
 ```DAX
 Total Sales with Format = 
@@ -77,6 +79,8 @@ SWITCH(
     FORMAT([Total Sales], "$#,##0")
 )
 ```
+
+Dynamic format strings simplify your data presentation, reducing the need for multiple calculations or visuals, and can be used with calculation groups to reduce complexity and maintenance for your code.
 
 > [!TIP]
 > See the documentation to learn more about how to [Create dynamic format strings for measures](/power-bi/create-reports/desktop-dynamic-format-strings).
