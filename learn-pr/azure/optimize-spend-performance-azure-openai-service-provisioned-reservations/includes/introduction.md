@@ -1,6 +1,3 @@
-
-## Introduction
-
 Microsoft Azure OpenAI services include provisioned deployments, also known as provisioned throughput units (PTUs), that allows you to specify the amount of throughput you require in your AI deployment. You can use PTUs to deploy any Azure AI model as per your requirements.
 
 ## Example scenario
