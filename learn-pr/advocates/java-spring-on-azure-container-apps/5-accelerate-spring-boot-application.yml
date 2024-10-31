@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.java-on-azure-container-apps.4-accelerate-spring-boot-application
+uid: learn.java-on-azure-container-apps.5-accelerate-spring-boot-application
 title: Maintain Spring Boot application
 metadata:
   title: Maintain Spring Boot application
@@ -14,4 +14,4 @@ metadata:
   ms.contributors: hangwan97
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-accelerate-spring-boot-application.md)]
+  [!include[](includes/5-accelarate-spring-boot-application.md)]
