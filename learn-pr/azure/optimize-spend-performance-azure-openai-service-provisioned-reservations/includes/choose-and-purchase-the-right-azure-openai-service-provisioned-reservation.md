@@ -51,9 +51,9 @@ When you purchase a reservation, the Azure OpenAI PTU that matches the reservati
 A reservation applies to provisioned deployments only and doesn't include other offerings such as standard deployments or fine tuning. As previously stated, provisioned reservations also don't guarantee capacity availability.
 
 > [!NOTE]
-> As a best practice, you should always purchase a reservation after you have created the deployment. This prevents purchasing a reservation and then finding out that the required capacity is not available for the desired region or model and being charged without any deployments.
+> As a best practice, you should always purchase a reservation after you've created the deployment. This prevents purchasing a reservation and then finding out that the required capacity isn't available for the desired region or model and being charged without any deployments.
 
-When the reservation expires, Azure OpenAI deployments continue to run but are billed at the hourly rate. To prevent reservation expiration, you can choose to enable automatic renewal of reservations by selecting the option in the renewal settings, or at the time of purchase. When you have enabled auto-renewal, the reservation renews using the same reservation order ID, and a new reservation is not purchased.
+When the reservation expires, Azure OpenAI deployments continue to run but are billed at the hourly rate. To prevent reservation expiration, you can choose to enable automatic renewal of reservations by selecting the option in the renewal settings, or at the time of purchase. When you enable auto-renewal, the reservation renews using the same reservation order ID, and a new reservation isn't purchased.
 
 You can also choose to replace this reservation with a new reservation purchase. You select this option in renewal settings and a replacement reservation is purchased when the reservation expires. By default, the replacement reservation has the same attributes as the expiring reservation. You can optionally change the name, billing frequency, term, or quantity in the renewal settings as well. Any user with owner access on the reservation and the subscription used for billing can set up renewal.
 
@@ -145,4 +145,4 @@ The following examples illustrate how the Azure OpenAI reservation discount appl
 
 In this unit, you learned about how PTUs are billed and how you can save with PTU reservations by committing to a one-month or one-year term. You also learned that you'll be billed on the PTU hourly rate unless you purchase PTU reservations that can cover the PTUs purchased in that same region. You went through step by step how to purchase PTU reservations in the Azure portal and how the reservation price is applied to the hourly rate.
 
-Finally, you learned that the best practice is always to purchase a reservation after creating deployments. This prevents purchasing a reservation and then finding out that the required capacity is not available for the desired region or model.
+Finally, you learned that the best practice is always to purchase a reservation after creating deployments. This prevents purchasing a reservation and then finding out that the required capacity isn't available for the desired region or model.

@@ -5,7 +5,7 @@ Microsoft Azure OpenAI services include provisioned deployments, also known as p
 
 ## Example scenario
 
-Contoso Retail, a mid-sized retail company, wants to enhance customer support by implementing an AI-powered chatbot that can manage common customer inquiries, provide product recommendations, and assist with order tracking. Contoso Retail wants to design its chatbot to be highly available, have low latency, and provide predictable performance while managing costs effectively. For these reasons, they have decided to use Azure OpenAI as the core engine for their chatbot. You work as an Azure administrator for Contoso Retail. You have been tasked to recommend an appropriate solution to allocate resources for chatbot deployment in Azure OpenAI.
+Contoso Retail, a mid-sized retail company, wants to enhance customer support by implementing an AI-powered chatbot that can manage common customer inquiries, provide product recommendations, and assist with order tracking. Contoso Retail wants to design its chatbot to be highly available, have low latency, and provide predictable performance while managing costs effectively. For these reasons, they've decided to use Azure OpenAI as the core engine for their chatbot. You work as an Azure administrator for Contoso Retail. You've been tasked to recommend an appropriate solution to allocate resources for chatbot deployment in Azure OpenAI.
 
 ## What will we be doing?
 

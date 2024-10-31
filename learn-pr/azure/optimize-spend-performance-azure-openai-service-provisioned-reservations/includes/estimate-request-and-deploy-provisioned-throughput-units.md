@@ -58,7 +58,7 @@ By default, PTU quota is available in many regions. If an additional quota is re
 
 ## Creating a provisioned deployment - capacity is available
 
-You can create PTUs by using Azure OpenAI resource objects within Azure. You must have an Azure OpenAI resource in each region where you intend to create a deployment. Use the Azure portal to create a resource in a region with an available quota, if required. Note that Azure OpenAI resources can support multiple types of Azure OpenAI deployments at the same time. It is not necessary to dedicate new resources for your provisioned deployments.
+You can create PTUs by using Azure OpenAI resource objects within Azure. You must have an Azure OpenAI resource in each region where you intend to create a deployment. Use the Azure portal to create a resource in a region with an available quota, if required. Note that Azure OpenAI resources can support multiple types of Azure OpenAI deployments at the same time. It isn't necessary to dedicate new resources for your provisioned deployments.
 
 To create a provisioned deployment, follow the instructions in the **Deploy model** dialog box, entering the required information as depicted in the following example.
 
@@ -67,14 +67,14 @@ To create a provisioned deployment, follow the instructions in the **Deploy mode
 Important things to note when creating a provisioned deployment:
 
 - The deployment dialog box contains a reminder that you can purchase an Azure reservation for Azure OpenAI Provisioned to obtain a significant discount for a term commitment.
-- A message displays the listed hourly price of the deployment that would be charged if the deployment is not covered by a reservation. This is a list price that does not include any negotiated discounts for your company.
-- If you are unsure of the costs, cancel the deployment and proceed once you understand the payment model and underlying costs for provisioned deployment. This step may prevent unexpected, high charges on your payment invoice.
+- A message displays the listed hourly price of the deployment that would be charged if the deployment isn't covered by a reservation. This is a list price that doesn't include any negotiated discounts for your company.
+- If you're unsure of the costs, cancel the deployment and proceed once you understand the payment model and underlying costs for provisioned deployment. This step may prevent unexpected, high charges on your payment invoice.
 
 The following image displays an example of the pricing confirmation that you can review.
 
 :::image type="content" source="../media/4-confirm-pricing.png" alt-text="[A screenshot displaying the pricing confirmation for your deployment." border="false":::
 
-## Creating a provisioned deployment - capacity is not available
+## Creating a provisioned deployment - capacity isn't available
 
 Due to the dynamic nature of capacity availability, it is possible that the region of your selected resource might not have the service capacity to create the deployment of the specified model, version, and number of PTUs.
 

@@ -81,7 +81,7 @@ quiz:
     choices:
     - content: "Tokens-per-Minute (TPM)"
       isCorrect: false
-      explanation: "Incorrect. A provisioned throughput units (PTU) is the unit for sizing provisioned throughput deployments."
+      explanation: "Incorrect. A provisioned throughput unit (PTU) is the unit for sizing provisioned throughput deployments."
     - content: "Provisioned throughput unit (PTU)"
       isCorrect: true
       explanation: "Correct. A provisioned throughput unit (PTU) is the unit for sizing provisioned throughput deployments."

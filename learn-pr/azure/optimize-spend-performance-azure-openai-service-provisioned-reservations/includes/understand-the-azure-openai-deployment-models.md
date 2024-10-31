@@ -21,7 +21,7 @@ As part of your solution design, you need to make two key decisions
 - **Call volume: Standard versus Provisioned**
 
 For Standard deployment types, you can have two configurations within your resource: global or regional.
-Global deployments leverage Azure's global infrastructure, and dynamically route customer traffic to the data center with the best availability for the customer's inference requests. This means customers will get the highest initial throughput limits and best model availability while still providing an uptime service-level agreement (SLA) and low latency. However, you must choose regional deployment if you have specific data residency requirements. For high-volume workloads above the specified usage tiers, you might experience increased latency variation. Provisioned throughput is recommended for customers who require a lower latency variance at large workload usage.
+Global deployments use Azure's global infrastructure, and dynamically route customer traffic to the data center with the best availability for the customer's inference requests. This means customers will get the highest initial throughput limits and best model availability while still providing an uptime service-level agreement (SLA) and low latency. However, you must choose regional deployment if you have specific data residency requirements. For high-volume workloads above the specified usage tiers, you might experience increased latency variation. Provisioned throughput is recommended for customers who require a lower latency variance at large workload usage.
 
 The following table describes usage scenarios best suited for the various Azure OpenAI deployment types.
 

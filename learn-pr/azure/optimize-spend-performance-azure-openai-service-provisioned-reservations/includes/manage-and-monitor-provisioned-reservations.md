@@ -68,7 +68,7 @@ You can retrieve the same data by using APIs:
 
 - Use the Reservation Details API to determine which resources got a reservation discount and for what quantity at **Reservations Details - List**.
 
-If you discover that your organization's reservations are being underused, you can either change the reservation scope, or have the reservation refunded:
+If you discover that your organization's reservations are underused, you can either change the reservation scope, or have the reservation refunded:
 
 - **Change the reservation scope.** If your reservation is scoped to a single subscription or resource group, then another subscription or resource group may have matching resources that can benefit from the reservation. Consider one of the following two actions:
 
@@ -90,7 +90,7 @@ You can create several reports to help you analyze and perform reporting after b
 
 **Actual Cost data.** Provides data to reconcile with your monthly bill. This data has reservation purchase costs and reservation application details. With this data, you can know which subscription, resource group, or resource received the reservation discount on a particular day. The EffectivePrice for the usage that receives the reservation discount is zero.
 
-**Amortized Cost.** This dataset is similar to the Actual Cost dataset except that the EffectivePrice for the usage that gets a reservation discount is the prorated cost of the reservation (instead of being zero). This helps you understand the monetary value of reservation consumption by subscription, resource group, or resource. It can also help you charge back for the reservation utilization internally. The dataset also has unused reservation hours, but it does not have reservation purchase records.
+**Amortized Cost.** This dataset is similar to the Actual Cost dataset except that the EffectivePrice for the usage that gets a reservation discount is the prorated cost of the reservation (instead of being zero). This helps you understand the monetary value of reservation consumption by subscription, resource group, or resource. It can also help you charge back for the reservation utilization internally. The dataset also has unused reservation hours, but it doesn't have reservation purchase records.
 
 > [!NOTE]
 > Amortized cost data is only available to Enterprise Agreement and Microsoft Customer Agreement customers.
@@ -149,7 +149,7 @@ The same unused reservation information is in the usage details data. To review 
 
 ## Renewal options for Azure reservation
 
-You can renew reservations to automatically purchase a replacement when an existing reservation expires. Automatic renewal provides an easy way to continue getting reservation discounts. It also saves you from having to closely monitor a reservation's expiration. With automatic renewal, you prevent savings benefits loss by not having to manually renew. The renewal setting is turned on by default when you make a purchase. You can, however, manually turn off the renewal setting at the time of purchase. After purchase, you can enable or disable the renewal setting at any time, up to the expiration of the existing reservation. If auto-renewal is enabled, you have to manually turn it off to stop automatic renewal.
+You can renew reservations to automatically purchase a replacement when an existing reservation expires. Automatic renewal provides an easy way to continue getting reservation discounts. It also saves you from having to closely monitor a reservation's expiration. With automatic renewal, you prevent savings benefits loss by not having to manually renew. The renewal setting is turned on by default when you make a purchase. You can, however, manually turn off the renewal setting at the time of purchase. After purchase, you can enable or disable the renewal setting at any time, up to the expiration of the existing reservation. If auto-renewal is enabled, you need to manually turn it off to stop automatic renewal.
 
 The renewal price is available 30 days before the expiry of the existing reservation. If you enable renewal more than 30 days before the reservation expiration, you're sent an email 30 days before expiration detailing renewal costs. The reservation price might change between the time that you lock in the renewal price and the renewal time. If so, your renewal will not be processed, and you can purchase a new reservation to continue getting the benefit.
 
