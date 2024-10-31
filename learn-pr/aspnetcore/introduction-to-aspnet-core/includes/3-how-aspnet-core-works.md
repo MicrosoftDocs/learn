@@ -29,7 +29,6 @@ The middleware pipeline in ASP.NET Core is a series of components that process H
 - **Request handling**: Middleware components handle various aspects of request processing, such as authentication, authorization, logging, and error handling. Each middleware component can either process the request and pass it to the next component or short-circuit the pipeline and generate a response.
 - **Built-in middleware**: ASP.NET Core includes a variety of built-in middleware components for common tasks, such as serving static files, enabling CORS (Cross-Origin Resource Sharing), and supporting WebSockets for real-time communication.
 - **Custom middleware**: You can create custom middleware to handle specific requirements of your application. For example, you might create middleware to handle custom logging, request validation, or response modification.
-- **Real-time communication with SignalR**: SignalR is one of the many services that can be added to the ASP.NET Core modular middleware pipeline. It enables real-time web functionality by allowing server-side code to push updates to clients instantly. It's used for real-time interactions, such as chat applications, live dashboards, and collaborative tools.
 
 ### Adding built-in components
 ASP.NET Core’s modular architecture allows you to easily add built-in components and services to your application. For example, you can add and configure the built-in logging service to capture and manage logs.
