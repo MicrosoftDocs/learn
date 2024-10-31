@@ -76,7 +76,6 @@ var app = builder.Build();
 app.MapGet("/hello", () => "Hello, World!");
 
 app.Run();
-
 ```
 
 With the previous code:
