@@ -61,13 +61,13 @@ Since we have already prepared the code sample in the last chapter, make sure th
 
 ## Build and deploy the container app
 
-Build and deploy your first container app with the containerapp up command. This command will:
+Build and deploy your first Spring Boot app with the containerapp up command. This command will:
 
-- Create the resource group
-- Create an Azure Container Registry
-- Build the container image and push it to the registry
-- Create the Container Apps environment with a Log Analytics workspace
-- Create and deploy the container app using the built container image
+- Create the resource group.
+- Create an Azure Container Registry.
+- Build the container image and push it to the registry.
+- Create the Container Apps environment with a Log Analytics workspace.
+- Create and deploy the container app using the built container image.
 
 The `up` command uses the Dockerfile in the root of the repository to build the container image. In the following code example, the `..` (dot dot) tells `containerapp up` to run the `dockerfile` in the previous folder.
 

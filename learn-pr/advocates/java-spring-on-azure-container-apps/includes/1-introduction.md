@@ -8,8 +8,8 @@ This module introduces Azure Container Apps, highlighting its Java supports to h
 
 By the end of this module, you'll be able to:
 
-Launch your full-stack Java application on Azure Container Apps, featuring a Spring Boot web application with a MySQL database.
-Fine-tune your Java applications using the built-in Java Stack on Azure Container Apps.
+Launch your full-stack Java application on Azure Container Apps, featuring a Spring Boot web application with a PostgreSQL database.
+Accelerate your Java applications using the built-in Java Stack on Azure Container Apps.
 
 ## Prerequisites
 

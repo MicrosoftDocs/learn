@@ -25,7 +25,7 @@ With the database set up, the next step is to configure the Spring Pet Clinic ap
 
 1. Go to your PostgreSQL server in the Azure portal.
 
-2. Under Settings, select Networking.
+2. Under Settings, select **Networking**.
 
 3. To allow Azure Container Apps to connect, either:
  - Add the IP address of your Azure Container Apps environment.
@@ -38,10 +38,10 @@ With the database set up, the next step is to configure the Spring Pet Clinic ap
 2. Go to **Settings** > **Service Connector**.
 
 3. Click on **Create**, then fill out the connection form:
- - Service type: DB for PostgreSQL flexible server
- - PostgreSQL flexible server: your-server-name
- - PostgreSQL database: postgres
- - Client type: SpringBoot
+ - **Service type**: DB for PostgreSQL flexible server
+ - **PostgreSQL flexible server**: your-server-name
+ - **PostgreSQL database**: postgres
+ - **Client type**: SpringBoot
 
 Leave others as default.
 
@@ -57,7 +57,7 @@ Leave others as default.
 
 3. In the pop up window, switch to the ***Environment variables** tab and add one more line: **Name**: `spring.profiles.active`, **Source**: `Manual entry`, **Value**: `postgres`.
 
-4. Click `Save`, then Click `Create`
+4. Click **Save**, then Click **Create**.
 
 This will restart the app and apply the changes.
 
@@ -65,4 +65,3 @@ This will restart the app and apply the changes.
 ## Test the Database Connection
 
 Now that the configuration is complete, redeploy your Spring Pet Clinic application to verify the connection to PostgreSQL.
-
