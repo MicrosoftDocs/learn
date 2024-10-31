@@ -9,12 +9,10 @@ metadata:
   ms.author: andreapark
   ms.topic: unit
 durationInMinutes: 6
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: **How are AI initiatives enhancing accessibility for individuals with disabilities?**
+  - content: How are AI initiatives enhancing accessibility for individuals with disabilities?
     choices:
     - content: AI is creating new user interfaces and platforms that are more intuitive and adaptable, making technology more accessible.
       isCorrect: true
@@ -28,7 +26,7 @@ quiz:
     - content: AI development is focused on enhancing accessibility for individuals with physical disabilities.
       isCorrect: false
       explanation: "Incorrect: AI initiatives are enhancing accessibility for individuals with various types of disabilities."
-  - content: **Which of the following statements best illustrates the transformative effect of AI in the energy sector?**
+  - content: Which of the following statements best illustrates the transformative effect of AI in the energy sector?
     choices:
     - content: AI assists in fraud detection and risk management, improving client experiences
       isCorrect: false
@@ -42,7 +40,8 @@ quiz:
     - content: AI personalizes the shopping experience by tailoring the shopper's journey and enhancing store associates' experience.
       isCorrect: false
       explanation: "Incorrect: This statement is relevant to the retail sector, not the energy sector."
-      explanation: Which of the following best demonstrates the effectiveness of AI in enhancing humanitarian action?**
+  - content: Which of the following best demonstrates the effectiveness of AI in enhancing humanitarian action?
+    choices:
     - content: AI's role in creating a modern website for humanitarian organizations.
       isCorrect: false
       explanation: "Incorrect: While a modern website can improve communication, it does not directly demonstrate the effectiveness of AI in enhancing humanitarian action through case studies and real-world applications"
