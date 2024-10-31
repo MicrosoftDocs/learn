@@ -50,13 +50,14 @@ After you purchase a reservation, you should monitor its usage to ensure you're 
 You can review reservation usage in the Azure portal. To maximize savings, try to get the reservation to 100% utilization wherever possible. To review reservation usage, from the Azure portal, complete the follow steps:
 
 1. Sign in to the Azure portal.
+
 2. Navigate to **Reservations** and note the Utilization (%) for a reservation.
 
-    :::image type="content" source="../media/6-reservations.png" alt-text="A screenshot of the Reservations page in the Azure portal." border="false":::
+   :::image type="content" source="../media/6-reservations.png" alt-text="A screenshot of the Reservations page in the Azure portal." border="false":::
 
 3. Select the reservation utilization percentage to review utilization details.
 
-    :::image type="content" source="../media/6-reservation-utilization.png" alt-text="A screenshot depicting the utilization percentage for a reservation." border="false":::
+   :::image type="content" source="../media/6-reservation-utilization.png" alt-text="A screenshot depicting the utilization percentage for a reservation." border="false":::
 
 4. Select a point on the chart to review the usage breakdown by resource in the view.
 
@@ -99,13 +100,16 @@ You can review reservation savings in Power BI.
 
 ## Chargeback with cost analysis
 
-:::image type="content" source="../media/6-cost-analysis-1.png" alt-text="A screenshot depicting the Amortized cost selection." border="false":::
+:::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="[A screenshot displaying selections in cost analysis to view unused reservations." border="false":::
 
 Cost analysis displays charges as they appear on your bill. It displays them as actual costs or amortized over the course of your reservation period. To access cost analysis, perform the following steps:
 
 1. In the Azure portal, navigate to **Cost Management + Billing**.
+
 2. Select **Cost Management**, and then select **Cost analysis**.
+
 3. Change the view from **Actual cost** to **Amortized cost**.
+
 4. Apply the following filters:
 
    - For **Pricing Model**, select **Reservation**.
@@ -114,16 +118,13 @@ Cost analysis displays charges as they appear on your bill. It displays them as 
 
 5. You can select filters and views to display the monetary value of the reservation consumption by subscription, resource group, or resource. Using the data in this window, you can use information to charge back for reservation use.
 
- :::image type="content" source="../media/6-cost-analysis-2.png" alt-text="A screenshot displaying cost analysis filters." border="false":::
+   :::image type="content" source="../media/6-cost-analysis-1.png" alt-text="A screenshot depicting the Amortized cost selection." border="false":::
 
 You can create a chargeback report to charge internal cost centers using amortized data. In amortized data, the cost of a reservation is the consumption value based on the discounted price for the instances covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for:
 
 - Resources, such as a virtual machine
-
 - Resource group
-
 - Tags
-
 - Subscription
 
 To review amortized data, navigate to **Cost Management + Billing**, select **Exports**, and then select **Amortized Data** in the dimension. You can also obtain amortized data by using APIs.
@@ -133,6 +134,7 @@ Enterprise Agreement and Microsoft Customer Agreement customers can review the R
 In the Cost analysis window, the **unused reservation** view displays the monetary value of underutilized reservations. You can use this report to review reservation waste so you can prioritize fixing it. To review unused or underused reservations:
 
 1. In **Cost analysis**, change the view from **Actual cost** to **Amortized cost**.
+
 2. Set up your cost analysis view with the following selections:
 
    - Set **Charge type** to **unusedreservation**.
@@ -143,7 +145,7 @@ In the Cost analysis window, the **unused reservation** view displays the moneta
 
    - Set the **chart type** to **Table**.
 
- :::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="[A screenshot displaying selections in cost analysis to view unused reservations." border="false":::
+   :::image type="content" source="../media/6-cost-analysis-2.png" alt-text="A screenshot displaying cost analysis filters." border="false":::
 
 The same unused reservation information is in the usage details data. To review it, retrieve the amortized data, and then apply a filter on **Charge type** = **unusedreservation**. This will display the reservation waste.
 
@@ -158,7 +160,9 @@ Renewing a reservation creates a new reservation when the existing reservation e
 To set up Azure reservation renewal, from the Azure portal, perform the following steps:
 
 1. Select **Reservations**, and then select the reservation that you want to set up.
+
 2. Select **Renewal**.
+
 3. Select **Automatically purchase a new reservation upon expiry**.
 
    :::image type="content" source="../media/6-renewal.png" alt-text="A screenshot displaying reservation renewal." border="false":::
