@@ -26,7 +26,7 @@ Provisioned deployments by default are billed on an hourly basis. Customers can 
 
 The hourly model is useful for short-term deployment needs, such as validating new models or acquiring capacity for a hackathon.  However, the discounts provided by the Azure OpenAI Service provisioned reservations are considerable and most customers with consistent long-term usage will find a reserved model to be a better value proposition.
 
-Provisioned throughput deployments are charged an hourly rate (\$/PTU/hour), based on the number of PTUs that have been deployed.  For example, a 300 PTU deployment will be charged the hourly rate multiplied by 300.  All Azure OpenAI pricing is available in the Azure Pricing Calculator.
+Provisioned throughput deployments are charged an hourly rate (\\$/PTU/hour), based on the number of PTUs that have been deployed.  For example, a 300 PTU deployment will be charged the hourly rate multiplied by 300.  All Azure OpenAI pricing is available in the Azure Pricing Calculator.
 
 ## Azure OpenAI Service Quota
 

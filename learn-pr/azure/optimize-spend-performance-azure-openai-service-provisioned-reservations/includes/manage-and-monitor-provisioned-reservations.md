@@ -79,7 +79,7 @@ If you discover that your organization's reservations are underused, you can eit
 - **Refund a reservation** You can have a reservation refund as well.  From the Azure portal, select the reservation that you want to return, and then select **Refund**.
 
 > [!NOTE]
-> The total canceled commitment can't exceed (US dollar) \$50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the \$50,000 limit in a 12-month window for either a billing profile or EA enrollment.
+> The total canceled commitment can't exceed (US dollar) \\$50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the \\$50,000 limit in a 12-month window for either a billing profile or EA enrollment.
 
 ## Analyze and report after reservation purchase
 
