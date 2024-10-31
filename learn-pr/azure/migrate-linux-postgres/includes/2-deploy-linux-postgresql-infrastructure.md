@@ -1,44 +1,40 @@
-You're guided through the creation of the compute resources that host your application within Azure.
+This unit guides you through the creation of the compute resources that host your application within Azure.
 
-There are multiple methods to deploy infrastructure in Azure, including the Azure portal, Azure CLI, and Infrastructure as Code templates including Bicep and Terraform.
+There are multiple methods to deploy infrastructure in Azure, including the Azure portal, the Azure CLI, and infrastructure-as-code templates (including Bicep and Terraform).
 
-In this module, we show you how to deploy a preconfigured [Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application.
+In this unit, you deploy a preconfigured [Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application. The key resources are:
 
-The key resources deployed are:
+- A virtual machine running Linux (Ubuntu 24.04 LTS)
+- Azure Database for Postgres running [Postgres 16 or later](https://www.postgresql.org/download/)
+- A [managed identity](/entra/identity/managed-identities-azure-resources/overview) to enable secure access from the VM to the database
+- [RBAC](/azure/role-based-access-control/overview), including roles to access the database as an administrator, and more restrictive roles for the application itself
+- A virtual network for both the VM and the database
 
-- Virtual Machine (VM) running Linux (Ubuntu 24.04 LTS).
-- Azure Database for Postgres running [Postgres 16 or above](https://www.postgresql.org/download/).
-- A [Managed Identity](/entra/identity/managed-identities-azure-resources/overview) to enable secure access from the VM to the database.
-- [Role-Based Access Controls (RBAC)](/azure/role-based-access-control/overview) including roles to access the database as an administrator, and more restrictive roles for the application itself.
-- A Virtual Network for both the VM and database.
+Because this example is a dev/test workload, and we're looking to keep things both cost-effective and performant, we've chosen the following configuration for you:
 
-As this is a test/dev workload, and we're looking to keep things both cost-effective and performant, we've chosen the following configuration for you:
+- The VM is a Standard D2s_v4 (two vCPUs, 8 GB of memory). It has Azure Premium SSD with 3,200 maximum input/output operations per second (IOPS) and 128 GB of storage. It has an attached P10 128-GB Premium SSD disk with 500 IOPS for the OS disk. You can upgrade the OS disk to match the VM's IOPS as required.
 
-The VM SKU is a Standard D2s v4 (2 vcpus, 8 GB memory). P10 Premium Solid State Disk (SSD) with 3200 max IOPs with 128 GB storage. It has an attached P10 128 GB Premium SSD with 500 IOPs for the OS disk which can be upgraded to match the VMs IOPs as required.
+- The database is a General Purpose D2ds_v4 (two vCores, 8 GB of RAM) with 3,200 maximum IOPS. It has a P10 128-GB Premium SSD disk with 500 IOPS. You can upgrade this disk to match the compute IOPS as required.
 
-The database SKU is a General Purpose, D2ds_v4, 2 vCores, 8-GB RAM with 3200 max IOPs. It has a P10 128GB Premium SSD with 500 IOPs which can be upgraded to match the compute IOPs as required.
+At the completion of the module, you delete these resources to save cost. However, you can also turn off the VM and database when they're not in use to save compute cost and pay for only the storage that you use. You can also scale up this workload as needed.
 
-At the completion of the module, you delete these resources to save cost. However, you can also turn off the VM and database when not in use to save compute cost, and pay only for the storage used. This workload can also be scaled up as needed.
+The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/). AVM is an initiative to standardize infrastructure-as-code modules. Microsoft maintains these modules, and they encapsulate many best practices for deploying resources in Azure.
 
-The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/) which is "an initiative to consolidate and set the standards for what a good Infrastructure-as-Code module looks like". Microsoft maintains these modules and they encapsulate many best practices for deploying resources in Azure. 
-
-## Azure Subscription and Azure CLI 
+## Ensure that you have an Azure subscription and the Azure CLI
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
-This module requires Azure CLI version 2.0.30 or later. 
-
-Find the version with the following command:
+This module requires Azure CLI version 2.0.30 or later. Find the version by using the following command:
 
 ```bash
 az --version
 ```
 
-If you need to install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
+If you need to install or upgrade, see [Install the Azure CLI](/cli/azure/install-azure-cli).
 
-## Sign in to Azure using the CLI
+## Sign in to Azure by using the Azure CLI
 
-In order to run commands in Azure using the CLI, you need to sign in first. Sign in using the `az login` command.
+To run commands in Azure by using the Azure CLI, you need to sign in first. Sign in by using the `az login` command:
 
 ```bash
 az login
@@ -46,7 +42,7 @@ az login
 
 ## Create a resource group
 
-A resource group is a container for related resources. All resources must be placed in a resource group. The [az group create](/cli/azure/group) command creates a resource group.
+A resource group is a container for related resources. All resources must be placed in a resource group. Use the [az group create](/cli/azure/group) command to create a resource group:
 
 ```bash
 az group create \
@@ -54,176 +50,164 @@ az group create \
     --location westus2
 ```
 
-## Deploy the Bicep template using the Azure CLI
+## Deploy the Bicep template by using the Azure CLI
 
-Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure that you want to deploy to Azure. You then use that file throughout the development life cycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.
 
-The bicep file we're using to deploy the compute resources is located at [deploy/vm-postgres.bicep](https://github.com/Azure-Samples/linux-postgres-migration/blob/main/deploy/vm-postgres.bicep). It contains a Virtual Machine, a Virtual Network, a Managed Identity, a Network Security Group for the VM. You can read 
-more about Bicep on [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep).
+The Bicep file that you're using to deploy the compute resources for this unit is in the [deploy/vm-postgres.bicep](https://github.com/Azure-Samples/linux-postgres-migration/blob/main/deploy/vm-postgres.bicep) GitHub repo. It contains a virtual machine, a virtual network, a managed identity, and a network security group (NSG) for the VM. You can read more about Bicep in [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep).
 
-If you run this command on your local machine, first clone the example repo to your machine.
+1. Clone the example repo to your local machine:
 
-```bash
-git clone https://github.com/Azure-Samples/linux-postgres-migration.git
-```
+   ```bash
+   git clone https://github.com/Azure-Samples/linux-postgres-migration.git
+   ```
 
-Then navigate to the linux-postgres-migration directory:
+1. Go to the `linux-postgres-migration` directory:
 
-```bash
-cd linux-postgres-migration
-```
+   ```bash
+   cd linux-postgres-migration
+   ```
 
-Run the following az CLI command to deploy the bicep template.
+1. Deploy the Bicep template:
 
-```bash
-az deployment group create \
-    --resource-group 240900-linux-postgres \
-    --template-file deploy/vm-postgres.bicep
-```
+   ```bash
+   az deployment group create \
+       --resource-group 240900-linux-postgres \
+       --template-file deploy/vm-postgres.bicep
+   ```
 
-At the completion of the deployment, you see JSON output that confirms the resources are deployed.
+At the completion of the deployment, JSON output confirms that the resources are deployed.
 
-In this next section, you'll configure and explore Role-based Access Control (RBAC) roles and network security rules on your deployed infrastructure using the Azure portal.
+In the next sections, you'll configure and explore RBAC roles and network security rules on your deployed infrastructure by using the Azure portal. When you use the Azure poral, you can encode the roles and rules into the Bicep template. The Azure portal provides a visual interface that makes it easier to understand the relationships between resources and the permissions that are assigned to them.
 
-We can encode these roles and rules into our Bicep template we choose to use the Azure portal for this section. The Azure portal provides a visual interface that makes it easier to understand the relationships between resources and the permissions that are assigned to them.
+## Open the resource group in the Azure portal
 
-## Open the Resource Group in the Azure portal
+1. Open the [Azure portal](https://portal.azure.com).
 
-Open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
+1. On the service menu, select **Resource groups**.
 
-In the left-hand navigation pane, select **Resource groups**.
+1. On the **Resource groups** pane, select the resource group `240900-linux-postgres`.
 
-In the **Resource groups** blade, select the Resource Group `240900-linux-postgres`.
+In the upper-right part of the pane, the **Deployments** area shows the status of your Bicep template deployment. When deployment is successful, it shows **Succeeded**.
 
-At the top-right, you should see **Deployments:** `... Succeeded`. Here you can check on the status of your Bicep template deployment. 
+## View the virtual machine's network security group
 
-## View the Virtual Machine's Network Security Group (NSG)
+1. Select the virtual machine, `vm-1`.
 
-Select the Virtual Machine, `vm-1`.
+1. In the **Networking** section, select **Network settings**.
 
-Select the **Networking** section and then **Network settings** on the left-hand side.
+The network settings show that the network security group (`240900-linux-postgres-nsg`) is attached to the same subnet of the virtual network (`240900-linux-postgres-vnet`) as the virtual machine.
 
-Here you can see the Network Security Group (NSG), `240900-linux-postgres-nsg` that is attached to the same subnet of our virtual network, `240900-linux-postgres-vnet`, as the Virtual Machine.
+The NSG is also visible inside the resource group. It contains a set of inbound and outbound security rules that control the traffic to and from the virtual machine.
 
-The NSG is also visible inside the Resource Group. It contains a set of inbound and outbound security rules that control the traffic to and from the Virtual Machine.
+## Return to the resource group
 
-## Return to the Resource Group
+At the top of the page, select the breadcrumb link to return to the resource group (`Home > Resource groups > 240900-linux-postgres`).
 
-At the top of the page, select the breadcrumb link to return to the Resource Group (`Home > Resource groups > 240900-linux-postgres`).
+Note that the `240900-linux-postgres-identity` user-assigned managed identity is listed in the resource group.
 
-Note the `240900-linux-postgres-identity` User Assigned Managed Identity is listed in the Resource Group.
+You can learn more about system-assigned and user-assigned managed identities in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
 
-You can learn more about System Assigned and User Assigned managed identities in [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types).
+## Add an inbound security rule to the network security group
 
-## Add an Inbound Security Rule to the Network Security Group
+Next, you add an inbound security rule to the NSG. This rule allows SSH traffic from your current IP address to the virtual machine.
 
-Next you add an inbound security rule to allow SSH traffic from your current IP address to the Virtual Machine.
-
-In a production scenario, you would often use [just-in-time access](/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to secure your Virtual Machine. These security approaches allow you to restrict access to the Virtual Machine to only when needed.
-
-Now add an inbound security rule to the NSG to allow SSH traffic from your current IP address.
+In a production scenario, you would often use [just-in-time access](/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to help secure your virtual machine. These security approaches allow you to restrict access to the virtual machine to an as-needed basis.
 
 1. Select `240900-linux-postgres-nsg`.
 
-1. Select **Settings** and then **Inbound security rules**.
+1. Select **Settings** > **Inbound security rules**.
 
 1. Select **Add**.
 
-1. Under **Source** select `My IP address`.
+1. Under **Source**, select **My IP address**.
 
-1. Under **Service** select `SSH`.
+1. Under **Service**, select **SSH**.
 
 1. Select **Add**.
 
-## View the Administrator for the Azure Database for PostgreSQL Flexible Server
+## View the administrator for the Azure Database for PostgreSQL flexible server
 
-Find the Azure Database for PostgreSQL flexible server which is named `postgres-xxxxx`, where `xxxxx` is a unique string defined by our Bicep template that remains consistent across deployments to your Subscription and Resource Group.
+1. Find and select the Azure Database for PostgreSQL flexible server. It's named `postgres-xxxxx`, where `xxxxx` is a unique string that the Bicep template defined. The string remains consistent across deployments to your subscription and resource group.
 
-Select `postgres-xxxxx`.
+1. Select **Security** > **Authentication**.
 
-Select **Security** and then **Authentication**.
+For this scenario, you're using **Microsoft Entra authentication only**. The `240900-linux-postgres-identity` user-assigned managed identity is listed under **Microsoft Entra Admins**.
 
-You can see here we're using **Microsoft Entra authentication only** the `240900-linux-postgres-identity` User Assigned Managed Identity is listed under **Microsoft Entra Admins**.
+The `240900-linux-postgres-identity` managed identity is currently the only administrator for the server. You can optionally add your own user account as an administrator. But for this scenario, you use the managed identity that's already in place.
 
-This Managed identity is currently the only administrator for the server. You can optionally add your own user account as an administrator, but for this scenario we use the Managed Identity already in place.
+In an upcoming section, you use the identity from the virtual machine to administer the server via the Azure CLI. You also use that identity to provide access to the server for your application.
 
-In the upcoming section you use the identity from the Virtual Machine to administer the server via the CLI. You also use it to provide access to the server for your application.
+In a production scenario, you would likely use a combination of managed identities, Microsoft Entra ID, and fine-grained RBAC to enable your application workload to access data and manage resources in Azure securely. You would follow the principle of least privilege.
 
-In a production scenario, you would likely use a combination of Managed Identities, Microsoft Entra ID, and fine-grained Role-Based Access Control (RBAC) to enable your application workload to access data and manage resources in Azure securely, following the principle of least privilege.
+Read more about these scenarios in [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
 
-Read more about these scenarios via [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) and [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication).
+## Review the Azure Database for PostgreSQL Flexible Server firewall rules
 
-## Review the Azure Database for PostgreSQL Flexible Server Firewall Rules
+Select **Settings** > **Networking**.
 
-Select **Settings** and then **Networking**.
+If you were administering the server from your local machine, rather than the virtual machine, you would need to add your IP address to the firewall rules.
 
-If we're administering the server from our local machine, rather than the Virtual Machine, we would need to add our IP address to the firewall rules.
+You could create a firewall rule for your current IP address by selecting **Add current client IP address (xxx.xxx.xxx.xxx)** > **Save**. This rule would let you access the dev/test server by using tools on your local machine. But because you're using a virtual machine to access the database, you won't create a firewall rule at this time.
 
-We can optionally create a firewall rule for our current IP address by selecting **Add current client IP address (xxx.xxx.xxx.xxx)**, and selecting **Save**. 
+In production, you would likely isolate this server from the public internet entirely by clearing the **Allow public access to this resource through the internet using a public IP address** option.
 
-This rule would let us access the test/dev server using tools on our local machine. 
+Unlike the virtual machine, you haven't associated Azure Database for PostgreSQL with any virtual network. This means you retain the option of accessing it over the public internet, which is useful for dev/test scenarios.
 
-However, as we're using our Virtual Machine to access the database, we won't at this time. 
+To provide both security and flexibility, you enable access from the virtual machine via its virtual network by using a private endpoint. The private endpoint allows the virtual machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-networking-private-link).
 
-In production, we would likely further isolate this server from the public internet entirely, and uncheck the **Allow public access to this resource through the internet using a public IP address** option.
+Here, you use the Azure portal instead of Bicep to create the private endpoint for demonstration purposes.
 
-Unlike the Virtual Machine, we haven't associated our Azure Database for PostgreSQL with any Virtual Network. This means we retain the option of accessing it over the public internet which is useful for test/dev scenarios. 
+## Create a private endpoint for Azure Database for PostgreSQL Flexible Server
 
-To provide both security and flexibility, we enable access from the Virtual Machine via its Virtual Network using a private endpoint. The private endpoint allows the Virtual Machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-private-link).
-
-We use the Azure portal instead of Bicep to create the private endpoint for demonstration purposes.
-
-## Create a Private Endpoint for Azure Database for PostgreSQL Flexible Server
-
-1. Select **Settings** and then **Networking**.
+1. Select **Settings** > **Networking**.
 
 1. Under **Private endpoint**, select **Add private endpoint**.
 
-1. Under **Basics** enter **Name:** `private-endpoint-1`
+1. Under **Basics**, enter **Name:** `private-endpoint-1`.
 
-1. Select **Next**
+1. Select **Next**.
 
 1. Under **Resource**, select **Next**.
 
-1. Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. The virtual network is located in the `240900-linux-postgres` Resource Group.
+1. Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. The virtual network is located in the `240900-linux-postgres` resource group.
 
-1. Select **Next**
+1. Select **Next**.
 
-1. Under **DNS** select **Next**.
+1. Under **DNS**, select **Next**.
 
-1. Under **Review + create** select **Create**.
+1. Under **Review + create**, select **Create**.
 
-1. You are then redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
+1. You're redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
 
-1. Once it says **Your deployment is complete**, select **Go to resource**.
+1. When the message **Your deployment is complete** appears, select **Go to resource**.
 
-## Review the Virtual Machine's System assigned managed identity Role Assignments
+## Review the role assignments for the virtual machine's system-assigned managed identity
 
-Return to the `240900-linux-postgres` Resource Group and select `vm-1`.
+1. Return to the `240900-linux-postgres` resource group and select `vm-1`.
 
-On the left-hand side, select **Security** and then **Identity**.
+1. On the service menu, select **Security** > **Identity**.
 
-Here you can see the **System assigned managed identity** that is attached to the Virtual Machine.
+   Here, you can confirm that the system-assigned managed identity is attached to the virtual machine.
 
-Under **System assigned**, select **Azure role assignments**. 
+1. Under **System assigned**, select **Azure role assignments**.
 
-Here you can see the **Reader** role assigned to the **System assigned managed identity** which has been scoped to the `240900-linux-postgres` Resource Group.
+   Here, you can confirm that the **Reader** role is assigned to the system-assigned managed identity. The role is scoped to the `240900-linux-postgres` resource group.
 
-This identity has permissions to list resources in the Resource Group.
+This identity has permissions to list resources in the resource group. It allows you to use the Azure CLI within the VM to list resources in the resource group. With this ability, you don't have to hard-code specific resource details into your scripts.
 
-This identity allows us to use the Azure CLI within our VM to list resources in the Resource Group which avoids having to hard-code specific resource details into our scripts.
+At a later stage, you'll assign an additional role to the VM's managed identity so that the VM can directly access an Azure Blob Storage account.
 
-At a later stage we will assign an additional role to the VM's managed identity to allow it to directly access an Azure Blob Storage account.
-
-Next you will explore and configure the deployed infrastructure.
+Next, you'll explore and configure the deployed infrastructure.
 
 ## Resources
-- [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/)
-- [Install Azure CLI](/cli/azure/install-azure-cli)
-- [Bicep Documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
-- [Create a resource group using Azure CLI](/cli/azure/group)
-- [Azure Role-Based Access Controls (RBAC)](/azure/role-based-access-control/overview) 
-- [Azure Managed Identity](/entra/identity/managed-identities-azure-resources/overview)
+
+- [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/)
+- [Install the Azure CLI](/cli/azure/install-azure-cli)
+- [Bicep documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
+- [Create a resource group by using the Azure CLI](/cli/azure/group)
+- [Azure RBAC](/azure/role-based-access-control/overview)
+- [Azure managed identity](/entra/identity/managed-identities-azure-resources/overview)
 - [What is Bicep?](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
 - [What are managed identities for Azure resources?](/entra/identity/managed-identities-azure-resources/overview#managed-identity-types)
 - [Enable just-in-time access on VMs](/azure/defender-for-cloud/just-in-time-access-usage)
