@@ -2,7 +2,7 @@ The cloud drives today's application development and IT systems management. Mode
 
 Using containers can help you deploy applications that meet all of those requirements. But putting an application into a container without following a strategic design pattern is like getting into a vehicle and hoping to find your way to a new city without using a map or GPS. You might end up at your destination, but the route probably won't be direct or the most efficient.
 
-A microservices architecture is useful in this scenario. Microservices give you an approach to software development, and deployment that's perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
+A microservices architecture is useful in this scenario. Microservices give you an approach to software development and deployment that's perfectly suited to the agility, scalability, and reliability requirements of modern cloud applications.
 
 ## What is a microservices architecture?
 

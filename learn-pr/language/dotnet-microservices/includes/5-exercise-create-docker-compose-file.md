@@ -107,7 +107,7 @@ Now, use Docker Compose to build and start both front-end and back-end component
 
     :::image type="content" source="../media/codespace-ports-tab.png" alt-text="A screenshot of the codespace ports tab."  lightbox="../media/codespace-ports-tab.png":::
 
-1. To test the front-end service, select the **Ports** tab. Then, to the right of the local address for the **Front End** port, and select the globe icon. The browser displays the home page.
+1. To test the front-end service, select the **Ports** tab. Then, to the right of the local address for the **Front End** port, select the globe icon. The browser displays the home page.
 
 1. Select **Products**. The catalog shows Contoso's merchandise.
 
