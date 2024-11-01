@@ -2,12 +2,10 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 12/01/2023
-  author: wwlpublish
+  ms.date: 11/01/2024
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:
