@@ -10,7 +10,7 @@ In this unit, you deploy a preconfigured [Bicep](/azure/azure-resource-manager/b
 - [RBAC](/azure/role-based-access-control/overview), including roles to access the database as an administrator, and more restrictive roles for the application itself
 - A virtual network for both the VM and the database
 
-Because this example is a dev/test workload, and we're looking to keep things both cost-effective and performant, we've chosen the following configuration for you:
+Because this example is a dev/test workload, and we're looking to keep things both cost-effective and performant, we chose the following configuration for you:
 
 - The VM is a Standard D2s_v4 (two vCPUs, 8 GB of memory). It has Azure Premium SSD with 3,200 maximum input/output operations per second (IOPS) and 128 GB of storage. It has an attached P10 128-GB Premium SSD disk with 500 IOPS for the OS disk. You can upgrade the OS disk to match the VM's IOPS as required.
 
@@ -78,7 +78,7 @@ The Bicep file that you're using to deploy the compute resources for this unit i
 
 At the completion of the deployment, JSON output confirms that the resources are deployed.
 
-In the next sections, you'll configure and explore RBAC roles and network security rules on your deployed infrastructure by using the Azure portal. When you use the Azure poral, you can encode the roles and rules into the Bicep template. The Azure portal provides a visual interface that makes it easier to understand the relationships between resources and the permissions that are assigned to them.
+In the next sections, you'll configure and explore RBAC roles and network security rules on your deployed infrastructure by using the Azure portal. When you use the Azure portal, you can encode the roles and rules into the Bicep template. The Azure portal provides a visual interface that makes it easier to understand the relationships between resources and the permissions that are assigned to them.
 
 ## Open the resource group in the Azure portal
 

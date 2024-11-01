@@ -31,10 +31,10 @@ quiz:
       explanation: "A managed identity allows secure access to Azure resources without the need to store credentials in the application code."
     - content: "It provides faster query execution times."
       isCorrect: false
-      explanation: "A managed identity is primarily a security feature and does not directly affect query execution times."
+      explanation: "A managed identity is primarily a security feature and doesn't directly affect query execution times."
     - content: "It allows access to the Azure portal."
       isCorrect: false
-      explanation: "A managed identity is primarily a security feature and does not provide access to the Azure portal."
+      explanation: "A managed identity is primarily a security feature and doesn't provide access to the Azure portal."
   - content: "What role should be assigned to allow a user to administer a virtual machine in Azure?"
     choices:
     - content: "Virtual Machine Administrator Login"
@@ -45,12 +45,12 @@ quiz:
       explanation: "The Reader role only allows viewing resources. It doesn't provide administrative access."
     - content: "Contributor"
       isCorrect: false
-      explanation: "The Contributor role allows managing resources but does not provide specific administration capabilities for virtual machines."
+      explanation: "The Contributor role allows managing resources but doesn't provide specific administration capabilities for virtual machines."
   - content: "How can you secure network access to an Azure virtual machine?"
     choices:
     - content: "By adding a load balancer without any additional configuration"
       isCorrect: false
-      explanation: "Adding a load balancer without any additional configuration does not enhance security and can expose the virtual machine to potential threats."
+      explanation: "Adding a load balancer without any additional configuration doesn't enhance security and can expose the virtual machine to potential threats."
     - content: "By configuring network security group (NSG) rules"
       isCorrect: true
       explanation: "You can use NSG rules to control inbound and outbound traffic to and from an Azure virtual machine."

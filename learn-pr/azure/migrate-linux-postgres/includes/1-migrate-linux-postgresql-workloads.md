@@ -11,7 +11,7 @@ You also explore the benefits of managing resources in the cloud from a cost and
 
 Our workload is an application that's written in Go and works with data inside PostgreSQL. Our data is an open dataset that enables you to explore the power of the Postgres platform and related extensions.
 
-Though this application could easily be run within a container, the stakeholders chose not to do so at this stage. Building a container, deploying to a container platform, or using container orchestration is out of scope at present. But migration to containers might be a logical future step.
+Though this application could easily be run within a container, the stakeholders chose not to do so at this stage. Building a container, deploying to a container platform, or using container orchestration is currently out of scope. But migration to containers might be a logical future step.
 
 The GitHub repository associated with this module provides an application and its associated data for you. You learn how to prepare your application and export your data to reach a similar state to this sample application, or how to use the sample application as a template for a greenfield deployment.
 
@@ -41,7 +41,7 @@ You can scale compute both vertically and horizontally, including via [database 
 
 ### Cost management and cost-effectiveness
 
-You can optimize for cost management and cost-effectiveness on both the Linux and PostgreSQL sides. Compared with on-premises solutions, the cost can often be significantly more tailored and appropriate for your situation. You can right-size your compute in comparison to an on-premises solution. You can also easily manage your entire fleet to optimize for only the compute and storage that you need, and pay for only what you use in a utility billing model.
+You can optimize for cost management and cost-effectiveness on both the Linux and PostgreSQL sides. Compared with on-premises solutions, the cost can often be more tailored and appropriate for your situation. You can right-size your compute in comparison to an on-premises solution. You can also easily manage your entire fleet to optimize for only the compute and storage that you need, and pay for only what you use in a utility billing model.
 
 Utility billing enables customers to handle periods of high demand without having to pay the cost of overprovisioning. It allows migration to faster and more efficient generations of compute as they become available.
 

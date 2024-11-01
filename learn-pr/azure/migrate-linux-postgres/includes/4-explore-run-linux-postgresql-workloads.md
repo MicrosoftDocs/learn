@@ -188,7 +188,7 @@ postgres=> \dt
 (14 rows)
 ```
 
-## Run a sql query that lists the tables
+## Run a SQL query that lists the tables
 
 ```
 SELECT table_name
