@@ -1,4 +1,4 @@
-After conducting accessibility testing, you need to interpret the results and make recommendations for improvements. Accessibility testing results help you identify the accessibility issues and barriers that affect the user experience for people with disabilities and provide options for how to address them. The results also help measure your product ot service's accessibility level and compliance and tell you how to enhance them.
+After conducting accessibility testing, you need to interpret the results and make recommendations for improvements. Accessibility testing results help you identify the accessibility issues and barriers that affect the user experience for people with disabilities and provide options for how to address them. The results also help measure your product or service's accessibility level and compliance and tell you how to enhance them.
 
 When interpreting accessibility testing results, you should consider the following factors:
 
