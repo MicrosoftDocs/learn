@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.create-reusable-semantic-model-assets
+metadata:
+  title: create-reusable-semantic-model-assets
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 11/1/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+title: create-reusable-semantic-model-assets
+summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+  - power-bi
+subjects:
+  - data-management
+  - data-engineering
+  - data-analytics
+  - data-integration
+units:
+- learn.create-reusable-semantic-model-asset.introduction
+- learn.create-reusable-semantic-model-asset.learning-content
+- learn.create-reusable-semantic-model-asset.exercise
+- learn.create-reusable-semantic-model-asset.learning-content
+- learn.create-reusable-semantic-model-asset.exercise
+- learn.create-reusable-semantic-model-asset.knowledge-check
+- learn.create-reusable-semantic-model-asset.summary
+badge:
+  uid: learn.create-reusable-semantic-model-assets.badge
