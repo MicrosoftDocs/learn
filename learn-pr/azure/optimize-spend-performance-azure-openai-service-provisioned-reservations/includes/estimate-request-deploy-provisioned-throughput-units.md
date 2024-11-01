@@ -54,7 +54,7 @@ A default number of provisioned and global provisioned quota is assigned to all 
 
 For example, the following screenshot displays a quota limit of 500 PTUs in West US for the selected subscription. Note that you might observe lower values of available default quotas.
 
-:::image type="content" source="../media/4-quota-limit-small.png" alt-text="A screenshot of the available quotas in Azure OpenAI studi.." border="true" lightbox="../media/4-quota-limit.png":::
+:::image type="content" source="../media/4-quota-limit-small.png" alt-text="A screenshot of the available quotas in Azure OpenAI Studio." border="true" lightbox="../media/4-quota-limit.png":::
 
 By default, PTU quota is available in many regions. If an additional quota is required, customers can request it by using the **Request Quota** link next to the **Provisioned Managed Throughput Unit** quota item in Azure OpenAI Studio. The form allows customers to request an increase in the PTU quota for a specified region. After the request is approved, customers will receive an email at the included address, typically within two business days.
 
