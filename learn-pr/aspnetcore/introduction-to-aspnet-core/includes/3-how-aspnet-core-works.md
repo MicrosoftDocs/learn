@@ -18,7 +18,7 @@ With the previous code:
 
 ### Blazor
 
-Blazor is a component-based web UI framework integrated with ASP.NET Core, used for building interactive web UIs using C#.
+You can build interactive web UI with ASP.NET Core using Blazor. Blazor is a component-based web UI framework integrated with ASP.NET Core, used for building interactive web UIs using HTML, CSS, and C#.
 
 A reusable Blazor component, such as the following `Counter` component is defined in a *Counter.razor* file:
 
