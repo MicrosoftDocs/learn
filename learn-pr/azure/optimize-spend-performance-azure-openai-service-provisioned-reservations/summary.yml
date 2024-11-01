@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Provide a summary of using provisioned deployments in Azure OpenAI services.
   ms.date: 10/24/2024
-  author: kjo-msft
-  ms.author: karinjohnson
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 2
 content: |

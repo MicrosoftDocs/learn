@@ -4,8 +4,8 @@ metadata:
   title: Optimize spend and performance with Azure OpenAI Service provisioned reservations
   description: This module introduces you to provisioned deployments in Azure OpenAI services. 
   ms.date: 10/24/2024
-  author: kjo-msft
-  ms.author: karinjohnson
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: module-standard-task-based
   ms.service: azure
 title: Optimize spend and performance with Azure OpenAI Service provisioned reservations
@@ -34,10 +34,10 @@ products:
 units:
 - learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.introduction
 - learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.azure-openai-service-overview
-- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.understand-the-azure-openai-deployment-models
-- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.estimate-request-and-deploy-provisioned-throughput-units
-- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.choose-and-purchase-the-right-azure-openai-service-provisioned-reservation
-- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.manage-and-monitor-provisioned-reservations
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.understand-azure-openai-deployment-models
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.estimate-request-deploy-provisioned-throughput-units
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.choose-purchase-azure-openai-service-provisioned-reservation
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.manage-monitor-provisioned-reservations
 - learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.knowledge-check
 - learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.summary
 badge:

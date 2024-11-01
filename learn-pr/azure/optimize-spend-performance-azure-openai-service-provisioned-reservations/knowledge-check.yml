@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge.
   ms.date: 10/24/2024
-  author: kjo-msft
-  ms.author: karinjohnson
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 quiz:
