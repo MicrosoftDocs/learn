@@ -25,7 +25,7 @@ When you bring compute and data workloads to the cloud, they benefit from increa
 
 Virtual machines in Azure benefit from a vast array of security and compliance features, including firewalls, virtual networks, just-in-time VM access, encryption, role-based access control (RBAC), and confidential computing. Azure Database for PostgreSQL supports many similar features, such as [encryption with customer-managed keys](/azure/postgresql/flexible-server/concepts-data-encryption), [compliance certifications](/azure/postgresql/flexible-server/concepts-compliance), and support for [Microsoft Defender for Cloud](/azure/postgresql/flexible-server/concepts-security#microsoft-defender-for-cloud-support).
 
-### Secure connections between your virtual machines and databases
+### Security of connections between your virtual machines and databases
 
 As you integrate virtual machines with Azure Database for PostgreSQL, it's critical that they can connect to each other in a secure manner that reduces the risk of data loss.
 

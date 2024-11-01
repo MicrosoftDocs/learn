@@ -3,7 +3,7 @@ In this unit, you will:
 - Deploy an Azure Blob Storage account by using a Bicep template.
 - Create a Blob Storage container.
 - Migrate images to the Blob Storage account.
-- Upload tailwind.sql to the Blob Storage account.
+- Upload `tailwind.sql` to the Blob Storage account.
 - Connect to the Azure virtual machine by using the Azure CLI.
 - Download the file from the storage account.
 - Connect to the PostgreSQL server by using `psql` and import a SQL file.
@@ -361,7 +361,7 @@ Return to the terminal where you're running the application interactively. The o
 {"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:59414","method":"GET","url":"/favicon.ico"}
 ```
 
-If these requests are successful, you successfully migrated the application workload to an Azure virtual machines and Azure Database for PostgreSQL (Flexible Server).
+If these requests are successful, you successfully migrated the application workload to an Azure virtual machine and Azure Database for PostgreSQL (Flexible Server).
 
 ## Clean up Azure resources
 
@@ -376,11 +376,7 @@ az group delete \
     --no-wait
 ```
 
-Another option is to use the `empty.bicep` template to delete the resources that the `vm-postgres.bicep` file created.
-
-Running `az group deployment create` with `--mode Complete` removes any resources that the template doesn't define. Because the template `empty.json` has no resources, it deletes every resource.
-
-Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact, so you can redeploy the resources again with a single command:
+Another option is to use the `empty.bicep` template to delete the resources that the `vm-postgres.bicep` file created. Running `az deployment group create` with `--mode Complete` removes any resources that the template doesn't define. Because `empty.json` has no resources, the command deletes every resource.
 
 ```bash
 az deployment group create \
@@ -388,6 +384,8 @@ az deployment group create \
     --template-file deploy/empty.bicep \
     --mode Complete
 ```
+
+Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact, so you can redeploy the resources again with a single command.
 
 ## Resources
 
