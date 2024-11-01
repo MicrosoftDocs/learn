@@ -12,7 +12,7 @@ metadata:
   ms.contributors: alvidela-11122021
 durationInMinutes: 4
 quiz:
-  title: Choose the best response for each question. Then select Check your answers.
+  title: Choose the best response for each question. 
   questions:
 
   - content: "The `expiresOn` shared access signature (SAS Key) property specifies:"
