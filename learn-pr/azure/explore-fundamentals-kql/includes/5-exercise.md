@@ -6,7 +6,7 @@ Some of the products that use KQL offer free environments that you can use for p
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-Azure Data Explorer offers a help cluster with different types of data preloaded. You can access this clusterby using the Azure Data Explorer web UI.
+Azure Data Explorer offers a help cluster with different types of data preloaded. You can access this cluster by using the Azure Data Explorer web UI.
 
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
