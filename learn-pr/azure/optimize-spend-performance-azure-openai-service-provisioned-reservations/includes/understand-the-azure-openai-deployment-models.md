@@ -1,4 +1,4 @@
-## Azure OpenAI deployment types
+<!-- ## Azure OpenAI deployment types -->
 
 Azure OpenAI offers customers choices on the hosting structure that best fits their business and usage patterns. The service provides two main types of deployment:
 
@@ -15,9 +15,9 @@ Provisioned deployments allow you to specify the amount of throughput required i
 > [!NOTE]
 > All deployments can perform the same inference operations. However, the billing, scale, and performance are substantially different.
 
-As part of your solution design, you need to make two key decisions
+As part of your solution design, you need to make two key decisions:
 
-- **Data residency needs: global vs. regional resources**
+- **Data residency needs: global versus regional resources**
 - **Call volume: Standard versus Provisioned**
 
 For Standard deployment types, you can have two configurations within your resource: global or regional.

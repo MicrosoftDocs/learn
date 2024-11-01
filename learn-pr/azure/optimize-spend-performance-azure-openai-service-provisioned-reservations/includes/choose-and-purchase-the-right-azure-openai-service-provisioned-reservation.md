@@ -1,4 +1,4 @@
-## Understanding billing for provisioned deployments
+<!-- ## Understanding billing for provisioned deployments -->
 
 Provisioned deployments by default are billed on an hourly basis. Customers can realize additional savings by purchasing provisioned reservations.
 
@@ -10,7 +10,7 @@ If a deployment exists for a partial hour, it will receive a prorated charge bas
 
 If you change the deployment size, the costs of the deployment will adjust to match the new number of PTUs.
 
-:::image type="content" source="../media/5-hourly-billing.png" alt-text="A diagram illustrating  how hourly billing works." :::
+:::image type="content" source="../media/5-hourly-billing.png" alt-text="A diagram illustrating how hourly billing works." border="true":::
 
 Paying for provisioned deployments on an hourly basis is ideal for short-term deployment scenarios such as quality and performance benchmarking of new models, or temporarily increasing PTU capacity to cover an event such as a hackathon.
 
@@ -82,28 +82,30 @@ A reservation discount only applies to resources associated with subscriptions p
 To buy an Azure OpenAI reservation, perform the following steps:
 
 1. Sign in to the Azure portal.
+
 2. Select **All services**, select **Reservations**, and then select **Azure OpenAI**.
+
 3. Select a subscription using the **Subscription** list to choose the subscription that you want to use to pay for the reservation. (The payment method of the subscription will be charged the costs for the reservation.)
 
-    ​The subscription type must be one of the following types:
+   ​The subscription type must be one of the following types:
 
-    - An enterprise agreement (offer numbers: MS-AZR-0017P or MS-AZR-0148P)
+   - An enterprise agreement (offer numbers: MS-AZR-0017P or MS-AZR-0148P)
 
-    - A Microsoft Customer Agreement
+   - A Microsoft Customer Agreement
 
-    - A pay-as-you-go (offer numbers: MS-AZR-0003P or MS-AZR-0023P)
+   - A pay-as-you-go (offer numbers: MS-AZR-0003P or MS-AZR-0023P)
 
-      a.   For an enterprise subscription, the charges are deducted from the enrollment's Azure Prepayment (previously, the *monetary commitment*) balance, or charged as overage.
+      - For an enterprise subscription, the charges are deducted from the enrollment's Azure Prepayment (previously, the *monetary commitment*) balance, or charged as overage.
 
-      b.  For a pay-as-you-go subscription, the charges are billed to the credit card or invoice payment method on the subscription.
+      - For a pay-as-you-go subscription, the charges are billed to the credit card or invoice payment method on the subscription.
 
 4. Select a subscription scope from the **Scope** list. (Note that you can change the reservation scope after purchase.) Choose from the following scope types:
 
-    - **Single resource group scope.** Applies the reservation discount to the matching resources in the selected resource group only.
+   - **Single resource group scope.** Applies the reservation discount to the matching resources in the selected resource group only.
 
-    - **Single subscription scope.** Applies the reservation discount to the matching resources in the selected subscription.
+   - **Single subscription scope.** Applies the reservation discount to the matching resources in the selected subscription.
 
-    - **Shared scope.** Applies the reservation discount to matching resources in eligible subscriptions that are in the billing context. If you move a subscription to a different billing context, the benefit no longer applies to the subscription. It instead continues to apply to other subscriptions in the billing context.
+   - **Shared scope.** Applies the reservation discount to matching resources in eligible subscriptions that are in the billing context. If you move a subscription to a different billing context, the benefit no longer applies to the subscription. It instead continues to apply to other subscriptions in the billing context.
 
       - For enterprise customers, the billing context is the Enterprise Agreement (EA) enrollment. The reservation shared scope would include multiple Microsoft Entra tenants in an enrollment.
 
@@ -111,15 +113,18 @@ To buy an Azure OpenAI reservation, perform the following steps:
 
       - For pay-as-you-go customers, the shared scope is all pay-as-you-go subscriptions created by the account administrator.
 
-    - **Management group.** Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. The management group scope applies to all subscriptions throughout the entire management group hierarchy. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
+   - **Management group.** Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. The management group scope applies to all subscriptions throughout the entire management group hierarchy. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
 
 5. Select a region to choose an Azure region that the reservation covers, and then select **Add to cart**.
 
-     :::image type="content" source="../media/5-select-product-you-want-to-purchase.png" alt-text="A screenshot of the Select the product you want to purchase dialog box." border="false":::
+S   :::image type="content" source="../media/5-select-product-you-want-to-purchase-small.png" alt-text="A screenshot of the Select the product you want to purchase dialog box." border="true" lightbox="../media/5-select-product-you-want-to-purchase.png":::
 
 6. In the cart, choose the quantity of PTUs that you want to purchase. For example, a quantity of 64 would cover up to 64 deployed PTUs every hour.
+
 7. Select **Next: Review + Buy** and review your purchase choices and their prices.
+
 8. Select **Buy now**.
+
 9. After purchase, you can select **View this Reservation** to review your purchase status.
 
 ## How reservation discounts apply to Azure OpenAI
@@ -129,7 +134,9 @@ After you buy a reservation for Azure OpenAI, the discount associated with the r
 The Azure OpenAI reservation application is based on an hourly comparison between the reserved and deployed PTUs. The sum of deployed PTUs up to the amount reserved is covered (paid for) through the reservation, while any deployed PTUs in excess of the reserved PTUs get charged the hourly, pay-as-you-go rate. You must also consider the following points:
 
 - PTUs for partial-hour deployments are prorated based on the number of minutes the deployment is active during the hour. For example, a 100 PTU deployment that exists for only 15 minutes of an hour period is considered as a 25-PTU deployment. Specifically, 15 minutes is 1/4 of an hour, so only 1/4 of the deployed PTUs are considered for billing and reservation application during that hour.
+
 - Deployments are matched to reservations based on the reservation scope prior to when the reservation is applied. For example, a reservation scoped to a single subscription only covers deployments within that subscription. Deployments in other subscriptions are charged the hourly pay-as-you-go rate unless they're covered by other reservations that have them in scope.
+
 - The reservation price assumes a 24x7 deployment of the reserved PTUs. In periods with fewer deployed PTUs than reserved PTUs, all deployed PTUs get covered by the reservation, but the excess reserved PTUs aren't used. These excess reserved PTUs are lost and don't carry over to other periods.
 
 ### Discount examples
@@ -137,8 +144,11 @@ The Azure OpenAI reservation application is based on an hourly comparison betwee
 The following examples illustrate how the Azure OpenAI reservation discount applies, depending on the deployments.
 
 - **A reservation is the same size as the deployed units.** For example, you purchase 100 PTUs on a reservation and you deploy 100 PTUs. In this example, you only pay the reservation price.
+
 - **A reservation is larger than your deployed units.** For example, you purchase 300 PTUs on a reservation and you only deploy 100 PTUs. In this example, the reservation discount is applied to 100 PTUs. The remaining 200 PTUs in the reservation will go unused and won't carry forward to future billing periods.
+
 - **A reservation is smaller than the deployed units.** For example, you purchase 200 PTUs on a reservation and you deploy 600 PTUs. In this example, the reservation discount is applied to the 200 PTUs that were used. The remaining 400 PTUs are charged at the hourly rate.
+
 - **A reservation is the same size as the total of two deployments.** For example, you purchase 200 PTUs on a reservation and you have two deployments of 100 PTUs each. In this example, the discount is applied to the sum of deployed units.
 
 ## Summary

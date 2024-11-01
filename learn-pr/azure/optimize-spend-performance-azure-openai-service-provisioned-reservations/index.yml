@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - A basic understanding of Azure OpenAI services
   - A basic understanding of provisioned throughput deployments on Azure OpenAI Service 
-  - A basic understanding of Azure Cost Management and Billing
+  - A basic understanding of Microsoft Cost Management and Billing
   - A basic understanding of Azure Reservations
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

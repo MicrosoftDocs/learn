@@ -1,6 +1,8 @@
+In this module, you learned how to efficiently allocate and use resources needed for Azure OpenAI Service deployment. You examined the available Azure OpenAI deployment models and decided to use the provisioned deployment model for Contoso. You learned how to estimate the required throughput for Contoso's requirements using the Azure OpenAI capacity calculator. You then checked the PTU quota for your region, created an Azure OpenAI resource in US West, and then created a provisioned deployment in the region where quota was available. Finally, you purchased the appropriate Azure OpenAI Service provisioned reservation based on your organization's requirements.
+
 #### Resolution of module problem
 
-In this module, you learned how to efficiently allocate and use resources needed for Azure OpenAI Service deployment. You examined the available Azure OpenAI deployment models and decided to use the provisioned deployment model for Contoso. You learned how to estimate the required throughput for Contoso's requirements using the Azure OpenAI capacity calculator. You then checked the PTU quota for your region, created an Azure OpenAI resource in US West, and then created a provisioned deployment in the region where quota was available. Finally, you purchased the appropriate Azure OpenAI Service provisioned reservation based on your organization's requirements. You implemented the following process to resolve Contoso's requirements:
+You implemented the following process to resolve Contoso's requirements:
 
 1. Choose to use [standard or provisioned deployments](/azure/ai-services/openai/how-to/deployment-types):
 

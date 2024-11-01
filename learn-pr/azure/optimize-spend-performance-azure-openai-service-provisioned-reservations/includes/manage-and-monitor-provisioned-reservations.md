@@ -1,4 +1,4 @@
-## Review and manage reservations
+<!-- ## Review and manage reservations -->
 
 After you purchase a reservation, you can review it in the Azure portal. The reservation purchaser has owner access for both the reservation order and the reservation. As the purchaser, you can change the reservation scope. You can also exchange, refund, split, or merge the reservation.
 
@@ -15,7 +15,7 @@ You can delegate access management for a reservation order in the Azure portal b
 
 The reservation itself is a child object of the **Reservation Order**. When you want to grant permissions to a user, we recommend that you grant permissions to the reservation order. Access to the order allows users to make commercial transactions, such as an exchange or refund.
 
-:::image type="content" source="../media/6-access-control-iam.png" alt-text="A screenshot depicting how to add role assignment using access control." border="false":::
+:::image type="content" source="../media/6-access-control-iam-small.png" alt-text="A screenshot depicting how to add role assignment using access control." border="true" lightbox="../media/6-access-control-iam.png":::
 
 You can update the reservation scope from a shared scope to a single subscription, resource group, or vice-versa after the purchase. To update the reservation scope, select the reservation, select **Settings**, select **Configuration**, and then change the scope.
 
@@ -29,35 +29,39 @@ From the **Cost Management** window, billing administrators can review payments 
 
 Enterprise Agreement and Microsoft Customer Agreement billing administrators use the **Cost Management + Billing** **portal** to review reservation purchases, by selecting **Reservation transactions**.
 
-:::image type="content" source="../media/6-reservation-transactions.png" alt-text="A screenshot displaying reservation transactions in Cost Management.":::
+:::image type="content" source="../media/6-reservation-transactions-small.png" alt-text="A screenshot displaying reservation transactions in Cost Management." border="true" lightbox="../media/6-reservation-transactions.png":::
 
 Enterprise Agreement and Microsoft Customer Agreement customers can also use the **Cost Management** **Power BI** app to get reservation transactions. To do that, complete the following high-level steps:
 
 1. Download and open the **Cost Management** app.
+
 2. Access the **RI Purchases** report to review all purchases and refunds. Exchanges appear as a refund and another purchase.
 
 Enterprise Agreement and Microsoft Customer Agreement customers can get the purchase information from the usage details data, by following these steps:
 
 1. In the Azure portal, go to **Cost management + Billing**.
+
 2. Select the billing account, select **Usage + prices**, and then select **Download** to get the usage details in a CSV file.
+
 3. In the CSV file, filter for **chargeType** = **Purchase**.
+
 4. Select all records where the provider value is **Azure**.
 
 ## Monitor and optimize reservation use
 
 After you purchase a reservation, you should monitor its usage to ensure you're fully using it. To do this, you need to know how to find reservations with low utilization and optimize their use. To maximize savings, you want to try to get the reservation to 100 percent utilization wherever possible.
 
-You can review reservation usage in the Azure portal. To maximize savings, try to get the reservation to 100% utilization wherever possible. To review reservation usage, from the Azure portal, complete the follow steps:
+You can review reservation usage in the Azure portal. To maximize savings, try to get the reservation to 100% utilization wherever possible. To review reservation usage, from the Azure portal, complete the following steps:
 
 1. Sign in to the Azure portal.
 
 2. Navigate to **Reservations** and note the Utilization (%) for a reservation.
 
-   :::image type="content" source="../media/6-reservations.png" alt-text="A screenshot of the Reservations page in the Azure portal." border="false":::
+   :::image type="content" source="../media/6-reservations-small.png" alt-text="A screenshot of the Reservations page in the Azure portal." border="true" lightbox="../media/6-reservations.png":::
 
 3. Select the reservation utilization percentage to review utilization details.
 
-   :::image type="content" source="../media/6-reservation-utilization.png" alt-text="A screenshot depicting the utilization percentage for a reservation." border="false":::
+   :::image type="content" source="../media/6-reservation-utilization-small.png" alt-text="A screenshot depicting the utilization percentage for a reservation." border="true" lightbox="../media/6-reservation-utilization.png":::
 
 4. Select a point on the chart to review the usage breakdown by resource in the view.
 
@@ -100,7 +104,7 @@ You can review reservation savings in Power BI.
 
 ## Chargeback with cost analysis
 
-:::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="[A screenshot displaying selections in cost analysis to view unused reservations." border="false":::
+:::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="A screenshot displaying selections in cost analysis to view unused reservations." border="true":::
 
 Cost analysis displays charges as they appear on your bill. It displays them as actual costs or amortized over the course of your reservation period. To access cost analysis, perform the following steps:
 
@@ -118,7 +122,7 @@ Cost analysis displays charges as they appear on your bill. It displays them as 
 
 5. You can select filters and views to display the monetary value of the reservation consumption by subscription, resource group, or resource. Using the data in this window, you can use information to charge back for reservation use.
 
-   :::image type="content" source="../media/6-cost-analysis-1.png" alt-text="A screenshot depicting the Amortized cost selection." border="false":::
+   :::image type="content" source="../media/6-cost-analysis-1-small.png" alt-text="A screenshot depicting the Amortized cost selection." border="true" lightbox="../media/6-cost-analysis-1.png":::
 
 You can create a chargeback report to charge internal cost centers using amortized data. In amortized data, the cost of a reservation is the consumption value based on the discounted price for the instances covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for:
 
@@ -145,7 +149,7 @@ In the Cost analysis window, the **unused reservation** view displays the moneta
 
    - Set the **chart type** to **Table**.
 
-   :::image type="content" source="../media/6-cost-analysis-2.png" alt-text="A screenshot displaying cost analysis filters." border="false":::
+   :::image type="content" source="../media/6-cost-analysis-2-small.png" alt-text="A screenshot displaying cost analysis filters." border="true" lightbox="../media/6-cost-analysis-2.png":::
 
 The same unused reservation information is in the usage details data. To review it, retrieve the amortized data, and then apply a filter on **Charge type** = **unusedreservation**. This will display the reservation waste.
 
@@ -165,7 +169,7 @@ To set up Azure reservation renewal, from the Azure portal, perform the followin
 
 3. Select **Automatically purchase a new reservation upon expiry**.
 
-   :::image type="content" source="../media/6-renewal.png" alt-text="A screenshot displaying reservation renewal." border="false":::
+   :::image type="content" source="../media/6-renewal-small.png" alt-text="A screenshot displaying reservation renewal." border="true" lightbox="../media/6-renewal.png":::
 
 ## Summary
 

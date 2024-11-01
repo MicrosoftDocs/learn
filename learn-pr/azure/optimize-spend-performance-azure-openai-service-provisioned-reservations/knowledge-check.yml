@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: Test your knowledge.
   ms.date: 10/24/2024
   author: kjo-msft
@@ -29,7 +29,7 @@ quiz:
        explanation: "Incorrect. Azure OpenAI processes text by breaking it down into tokens."
      - content: "By breaking it down into tokens"
        isCorrect: true
-       explanation: "Correct.Azure OpenAI processes text by breaking it down into tokens."
+       explanation: "Correct. Azure OpenAI processes text by breaking it down into tokens."
      - content: "By converting it into squares"
        isCorrect: false
        explanation: "Incorrect. Azure OpenAI processes text by breaking it down into tokens."
