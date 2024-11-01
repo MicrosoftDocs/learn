@@ -3,7 +3,7 @@ uid: learn.azure-security.secure-aad-users-with-mfa
 metadata:
   title: Secure Microsoft Entra users with multifactor authentication
   description: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
-  ms.date: 11/03/2023
+  ms.date: 11/01/2024
   author: Justinha
   ms.author: justinha
   ms.topic: module
