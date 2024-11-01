@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: What is Linux on Azure?
   description: Learn about the services and platforms that Azure provides for Linux environments.
-  ms.date: 05/01/2023
+  ms.date: 10/31/2024
   author: fossygirl
   ms.author: carols
   ms.topic: unit
