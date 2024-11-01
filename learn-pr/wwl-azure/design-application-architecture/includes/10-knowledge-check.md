@@ -8,4 +8,4 @@ Tailwind Traders is advancing work on its customer rewards game. With each purch
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. Then select **Check your answers**.
+Choose the best response for each of the questions. 
