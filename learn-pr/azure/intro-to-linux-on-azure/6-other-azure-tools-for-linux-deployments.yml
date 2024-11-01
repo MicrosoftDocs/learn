@@ -27,9 +27,4 @@ quiz:
       explanation: "Correct. Azure CLI-based scripts can run in Bash, Cmd.exe, Windows PowerShell, and many other Linux-based shell environments."
     - content: "Azure CLI is designed primarily for people with Windows experience."
       isCorrect: false
-<<<<<<< HEAD
-      explanation: "Incorrect: Azure CLI is designed primarily for people with Linux experience, although it can also be used in both Windows and Linux environments."
-
-=======
       explanation: "Incorrect. Azure CLI is designed primarily for people with Linux experience, although you can also use it in both Windows and Linux environments."
->>>>>>> bd7e9144b1f3f7015a813a2e849660b77458d059

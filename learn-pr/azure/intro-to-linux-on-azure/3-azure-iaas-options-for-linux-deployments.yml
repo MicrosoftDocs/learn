@@ -41,9 +41,4 @@ quiz:
       explanation: "Correct. Properly qualified Red Hat Enterprise Linux and SUSE Linux Enterprise Server subscriptions are eligible for the Azure Hybrid Benefit."
     - content: "Only Windows VMs can take advantage of reserved instance fixed pricing."
       isCorrect: false
-<<<<<<< HEAD
-      explanation: "Incorrect: Several Linux distributions support reserved instance fixed pricing."
-
-=======
       explanation: "Incorrect. Several Linux distributions support reserved instance fixed pricing."
->>>>>>> bd7e9144b1f3f7015a813a2e849660b77458d059

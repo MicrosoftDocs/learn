@@ -30,9 +30,4 @@ quiz:
       explanation: "Incorrect. The Azure portal is a core Azure configuration tool and not a PaaS-specific service."
     - content: "Azure App Service"
       isCorrect: true
-<<<<<<< HEAD
-      explanation: "Correct: Azure App Service is a managed, web application–hosting platform that can host applications on Linux."
-
-=======
       explanation: "Correct. Azure App Service is a managed, web application-hosting platform that can host applications on Linux."
->>>>>>> bd7e9144b1f3f7015a813a2e849660b77458d059
