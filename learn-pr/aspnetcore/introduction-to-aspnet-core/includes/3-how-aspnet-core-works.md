@@ -118,7 +118,6 @@ In the previous code, several common middleware components were added:
 - `MapStaticAssets`: Optimizes the delivery of static files such as HTML, CSS, JavaScript, images and other assets.
 - `UseAuthentication`: Adds authentication capabilities.
 - `UseAuthorization`: Adds authorization capabilities.
-- `builder.Logging` is used to add and configure built-in logging providers. In this example, we clear all default providers and add the *Console* and *Debug* logging providers.
 - `app.MapGet`: This is a simple endpoint to demonstrate that the application is running.
 
 ### Dependency Injection
