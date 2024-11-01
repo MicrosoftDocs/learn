@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.explore-ai-for-all.the-impact-of-ai-on-accessibility
+uid: learn.philanthropies.explore-ai-for-all.the-impact-ai-accessibility
 title: The impact of AI on accessibility
 metadata:
   title: The impact of AI on accessibility
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-the-impact-of-ai-on-accessibility.md)]
+  [!include[](includes/2-impact-ai-accessibility.md)]

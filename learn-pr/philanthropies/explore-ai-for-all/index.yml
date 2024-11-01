@@ -24,9 +24,9 @@ products:
 - azure
 units:
 - learn.philanthropies.explore-ai-for-all.introduction
-- learn.philanthropies.explore-ai-for-all.the-impact-of-ai-on-accessibility
-- learn.philanthropies.explore-ai-for-all.impact-of-ai-in-job-roles
-- learn.philanthropies.explore-ai-for-all.ai-as-an-ally-for-humanitarian-action
+- learn.philanthropies.explore-ai-for-all.the-impact-ai-accessibility
+- learn.philanthropies.explore-ai-for-all.impact-ai-job-roles
+- learn.philanthropies.explore-ai-for-all.ai-ally-for-humanitarian-action
 - learn.philanthropies.explore-ai-for-all.inclusive-ai-with-copilot
 - learn.philanthropies.explore-ai-for-all.knowledge-check
 - learn.philanthropies.explore-ai-for-all.summary

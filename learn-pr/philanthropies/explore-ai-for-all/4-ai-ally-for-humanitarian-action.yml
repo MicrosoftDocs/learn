@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.explore-ai-for-all.ai-as-an-ally-for-humanitarian-action
+uid: learn.philanthropies.explore-ai-for-all.ai-ally-for-humanitarian-action
 title: AI as an ally for humanitarian action
 metadata:
   title: AI as an ally for humanitarian action
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-ai-as-an-ally-for-humanitarian-action.md)]
+  [!include[](includes/4-ai-ally-for-humanitarian-action.md)]
