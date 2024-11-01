@@ -13,7 +13,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
   - content: "What does the Azure Sphere microcontroller consist of?"

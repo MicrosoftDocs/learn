@@ -16,7 +16,7 @@ Azure Application Gateway includes the following features:
 
 ## How Azure Application Gateway works
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4cf48008-6182-482a-bd8c-045e28520347]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f42d6621-a73d-4c37-91ee-545aa0adbbd0]
 
 Azure Application Gateway has a series of components that combine to securely route and load balance requests across a pool of web servers. Application Gateway includes the following components: 
 

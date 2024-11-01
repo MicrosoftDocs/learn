@@ -13,7 +13,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: | 
-  Choose the best response for each of the following questions. Then select **Check your answers**.
+  Choose the best response for each of the following questions. 
 quiz:
   questions:
   - content: "Which of the following options is true about Altair BASIC?"

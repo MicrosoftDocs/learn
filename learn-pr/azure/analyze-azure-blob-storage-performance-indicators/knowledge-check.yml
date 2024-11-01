@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
-  title: Choose the best response for each question. Then select Check your answers.
+  title: Choose the best response for each question. 
   questions:
 
   - content: "Which performance indicator most significantly distinguishes Premium Blob Storage from General Purpose Storage?"

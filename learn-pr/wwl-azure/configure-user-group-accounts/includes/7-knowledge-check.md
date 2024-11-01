@@ -4,4 +4,4 @@ Your company decides to implement the user and group account features of Microso
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. Then select **Check your answers**.
+Choose the best response for each of the questions. 
