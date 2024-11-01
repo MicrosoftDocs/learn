@@ -2,6 +2,8 @@
 uid: learn.wwl.tune-queries-azure-database-for-postgresql.understand-statistics
 title: Understand statistics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand statistics
   description: "Understand statistics"
   ms.date: 05/10/2024

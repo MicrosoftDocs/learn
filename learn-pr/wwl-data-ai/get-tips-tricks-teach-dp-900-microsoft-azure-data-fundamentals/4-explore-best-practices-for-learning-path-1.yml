@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.explore-best-practices-for-learning-path-1
 title: Explore best practices for DP-900 Microsoft Azure Data Fundamentals Learning Path 1
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore best practices for DP-900 Microsoft Azure Data Fundamentals Learning Path 1
   description: "Explore best practices for learning path 1"
   ms.date: 12/14/2023

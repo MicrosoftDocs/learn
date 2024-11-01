@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.attach-volumes-virtual-machines
 title: Attach Azure NetApp Files volumes to virtual machines as guest-mounted file systems 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Attach Azure NetApp Files volumes to virtual machines as guest-mounted file systems
   description: You can provide direct access to Azure NetApp Files volume from your Azure VMware Solution VMs by using Network File System (NFS) or Server Message Block (SMB) file shares.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-attach-volumes-virtual-machines.md)]
+

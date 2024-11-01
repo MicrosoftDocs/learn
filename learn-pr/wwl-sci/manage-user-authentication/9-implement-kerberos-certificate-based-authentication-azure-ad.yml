@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-user-authentication.implement-kerberos-certificate-based-authentication-azure-ad
 title: Implement Kerberos and certificate-based authentication in Microsoft Entra ID
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Kerberos and certificate-based authentication in Microsoft Entra ID
   description: "Implement Kerberos and certificate-based authentication in Microsoft Entra ID"
   ms.date: 10/25/2023

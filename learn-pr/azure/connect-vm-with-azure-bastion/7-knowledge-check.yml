@@ -2,6 +2,8 @@
 uid: learn.connect-vm-with-azure-bastion.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 12/06/2023
@@ -67,3 +69,4 @@ quiz:
     - content: Remove the reader role on the Azure Bastion resource for all users
       isCorrect: false
       explanation: For you to connect to the VM resource by using Azure Bastion, you must have the reader role on the Azure Bastion resource. You also need the reader role on the virtual machine, and on the NIC with the private IP of the virtual machine.
+

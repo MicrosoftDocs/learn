@@ -2,6 +2,8 @@
 uid: learn.wwl.create-azure-ai-custom-skill.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary of custom skills in Azure AI Search."
   ms.date: 10/23/2024

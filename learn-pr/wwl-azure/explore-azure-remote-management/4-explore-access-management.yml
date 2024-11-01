@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-remote-management.explore-access-management
 title: Explore access management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore access management
   description: "Manage access to Azure resources with role-based access control."
   ms.date: 08/01/2024

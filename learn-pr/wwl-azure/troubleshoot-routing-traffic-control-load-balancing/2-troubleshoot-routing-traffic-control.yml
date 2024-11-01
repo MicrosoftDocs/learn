@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-routing-traffic-control
 title: Troubleshoot routing and traffic control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot routing and traffic control
   description: "Troubleshoot routing and traffic control"
   ms.date: 04/27/2023

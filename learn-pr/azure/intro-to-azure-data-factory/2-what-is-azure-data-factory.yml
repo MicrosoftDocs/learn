@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-data-factory.2-what-is-azure-data-factory  
 title: What is Azure Data Factory?  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: What is Azure Data Factory? 
   description: What is Azure Data Factory?
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-data-factory.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.improve-reliability-incidents.4-foundations
 title: "Foundations of incident response"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Foundations of incident response"
   description: "Foundations of incident response"
   ms.date: 02/28/2024
@@ -56,3 +58,4 @@ quiz:
     - content: 'No'
       isCorrect: true
       explanation: 'Correct, especially in smaller organizations or during more minor incidents, not all roles will be needed.'
+

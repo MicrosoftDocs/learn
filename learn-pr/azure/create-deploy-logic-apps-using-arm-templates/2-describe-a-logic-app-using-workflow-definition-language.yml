@@ -2,6 +2,8 @@
 uid: learn.azure.logic-apps-and-arm-templates.describe-a-logic-app-using-workflow-definition-language
 title: Describe an Azure Logic Apps workflow using the Workflow Definition Language
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe an Azure Logic Apps workflow using the Workflow Definition Language
   description: Describe an Azure Logic Apps workflow using the Workflow Definition Language
   ms.date: 07/16/2024
@@ -51,3 +53,4 @@ quiz:
     - content: 'Actions section'
       isCorrect: false
       explanation: 'This section is for defining actions.'
+

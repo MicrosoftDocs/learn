@@ -2,6 +2,8 @@
 uid: learn.wwl.offer-services-for-azure-stack-hub.create-user-subscriptions
 title: Create user subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create user subscriptions
   description: "Create user subscriptions"
   ms.date: 09/15/2023

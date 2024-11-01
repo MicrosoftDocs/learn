@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-resources-tools.use-azure-portal
 title: Use the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the Azure portal
   description: "Use the Azure portal"
   ms.date: 10/26/2022

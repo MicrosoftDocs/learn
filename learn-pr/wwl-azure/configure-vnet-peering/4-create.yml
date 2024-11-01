@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-vnet-peering.create
 title: Create virtual network peering
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create virtual network peering
   description: "Create a virtual network peering in the Azure portal."
   ms.date: 04/09/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-security.trust-principles-azure-virtual-desktop
 title: Apply Zero Trust principles to an Azure Virtual Desktop deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apply Zero Trust principles to an Azure Virtual Desktop deployment
   description: "Apply Zero Trust principles to an Azure Virtual Desktop deployment"
   ms.date: 08/07/2024

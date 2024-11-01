@@ -2,6 +2,8 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 08/25/2023

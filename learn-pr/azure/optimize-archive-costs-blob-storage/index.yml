@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-blob-storage-costs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize storage performance and costs using Azure Blob storage tiers
   description: Learn what the different storage tiers are for blob storage and how they can improve performance and reduce costs.
   manager: akashdubey
@@ -40,3 +42,4 @@ units:
 - learn.azure.optimize-blob-storage-costs.7-summary
 badge:
   uid: learn.azure.optimize-blob-storage-costs.badge
+

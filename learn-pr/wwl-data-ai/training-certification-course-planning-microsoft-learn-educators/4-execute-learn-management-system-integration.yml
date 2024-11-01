@@ -2,6 +2,8 @@
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.execute-learn-management-system-integration
 title: Execute learning management system integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Execute learning management system integration
   description: "Execute learning management system integration"
   ms.date: 07/19/2024

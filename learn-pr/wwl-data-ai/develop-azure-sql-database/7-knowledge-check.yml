@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-azure-sql-database.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 9/27/2024
@@ -44,4 +46,5 @@ quiz:
     - content: Azure Pipelines are used to store the data of the application.
       isCorrect: false
       explanation: Incorrect. Azure Pipelines don't store data, they build, test, and deploy code.
+
 

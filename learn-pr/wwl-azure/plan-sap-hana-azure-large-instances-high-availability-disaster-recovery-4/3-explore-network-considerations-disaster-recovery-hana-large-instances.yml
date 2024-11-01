@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore-network-considerations-for-disaster-recovery
 title: Explore network considerations for disaster recovery with SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore network considerations for disaster recovery with SAP HANA on Azure (Large Instances)
   description: "Explore network considerations for disaster recovery with SAP HANA on Azure (Large Instances)"
   ms.date: 12/08/2021

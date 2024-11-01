@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-api-management.secure-apis-by-using-subscriptions
 title: Secure APIs by using subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure APIs by using subscriptions
   description: "Secure APIs by using subscriptions"
   ms.date: 10/28/2024

@@ -2,6 +2,8 @@
 uid: learn.blob-storage-image-upload-static-web-apps.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Overview of the concepts and scenario you'll learn about in this module.
   author: videlalvaro
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

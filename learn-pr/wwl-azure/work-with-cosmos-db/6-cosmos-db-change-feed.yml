@@ -2,6 +2,8 @@
 uid: learn.wwl.work-with-cosmos-db.cosmos-db-change-feed
 title: Explore change feed in Azure Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore change feed in Azure Cosmos DB
   description: "Explore change feed in Azure Cosmos DB"
   ms.date: 07/15/2024

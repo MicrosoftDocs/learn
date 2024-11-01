@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-sap-hana-azure-large-instances.configure-networking-changes-for
 title: Configure networking changes for SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure networking changes for SAP HANA on Azure (Large Instances)
   description: "Configure networking changes for SAP HANA on Azure (Large Instances)"
   ms.date: 12/08/2021

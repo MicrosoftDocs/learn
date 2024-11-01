@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-analyze-data-with-python.examine-real-world-data
 title: Examine real world data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine real world data
   description: "Examine real world data"
   ms.date: 08/01/2024
@@ -14,3 +16,4 @@ azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-examine-real-world-data.md)]
+

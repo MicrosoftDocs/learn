@@ -2,6 +2,8 @@
 uid: learn.intro-to-containers.3-exercise-deploy-docker-image-locally
 title: Exercise - Retrieve an existing Docker image and deploy it locally
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Retrieve an existing Docker image and deploy it locally
   description: Pull an image from Docker Hub and load it into a local registry. Deploy and run the application from the registry. Examine and manage the registry.
   ms.date: 06/28/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-machine-learning.binary-classification
 title: Binary classification
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Binary classification
   description: Binary classification
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/5-binary-classification.md)]
+

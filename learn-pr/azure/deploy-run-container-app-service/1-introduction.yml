@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-run-container-app-service.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 10/15/2024

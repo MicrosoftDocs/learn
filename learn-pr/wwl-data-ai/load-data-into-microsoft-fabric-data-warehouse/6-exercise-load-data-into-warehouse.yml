@@ -2,6 +2,8 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.exercise-load-data-into-warehouse
 title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Load data into a warehouse in Microsoft Fabric'
   description: "Learn how to load data into a warehouse using T-SQL in Microsoft Fabric."
   ms.date: 12/01/2023

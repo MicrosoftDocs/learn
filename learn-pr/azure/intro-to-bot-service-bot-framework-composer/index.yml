@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-bot-service-bot-framework-composer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Bot Service and Bot Framework Composer
   description: Introduction to Azure Bot Service and Bot Framework Composer
@@ -48,3 +50,4 @@ units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.6-summary
 badge:
   uid: learn.intro-to-bot-service-bot-framework-composer.badge
+

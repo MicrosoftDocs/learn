@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share your location as a text message using Azure Functions and Twilio
   description: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
   ms.date: 05/06/2022
@@ -51,3 +53,4 @@ units:
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
 badge:
   uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
+

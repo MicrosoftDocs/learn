@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.recommend-when-to-use-external-identities
 title: Recommend when to use external identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend when to use external identities
   description: "Recommend when to use external identities"
   ms.date: 07/03/2024

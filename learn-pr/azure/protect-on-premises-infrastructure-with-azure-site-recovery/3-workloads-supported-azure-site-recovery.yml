@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-azure-site-recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Workloads supported for protection with Azure Site Recovery
   description: Explore the application-level protection you can take advantage of to protect your company's different workloads.
   ms.date: 05/25/2023
@@ -36,3 +38,4 @@ quiz:
     - content: Manual failover and failback only, DHCP network address backup, one-click failover
       isCorrect: false
       explanation: Manual failover and failback and DHCP network address backup aren't features of Site Recovery, but one-click failover is.
+

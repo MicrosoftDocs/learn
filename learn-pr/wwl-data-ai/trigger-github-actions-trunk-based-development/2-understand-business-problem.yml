@@ -2,6 +2,8 @@
 uid: learn.wwl.trigger-github-actions-trunk-based-development.understand-business-problem
 title: Understand the business problem
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the business problem
   description: "Understand the business problem"
   ms.date: 07/25/2024

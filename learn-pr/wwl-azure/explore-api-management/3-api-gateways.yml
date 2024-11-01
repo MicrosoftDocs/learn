@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-api-management.gateways
 title: Explore API gateways
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore API gateways
   description: "Explore API gateways"
   ms.date: 10/28/2024

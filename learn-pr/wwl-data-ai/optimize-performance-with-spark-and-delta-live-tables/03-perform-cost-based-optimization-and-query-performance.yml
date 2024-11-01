@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.perform-cost-based-optimization-and-query-performance
 title: Perform cost-based optimization and query tuning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform unit testing and integration testing
   description: "Perform unit testing and integration testing."
   ms.date: 08/06/2024

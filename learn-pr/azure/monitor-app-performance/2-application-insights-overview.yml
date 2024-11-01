@@ -2,6 +2,8 @@
 uid: learn.wwl.monitor-app-performance.explore-application-insights
 title: Explore Application Insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Application Insights
   description: "Explore Application Insights"
   ms.date: 07/18/2024

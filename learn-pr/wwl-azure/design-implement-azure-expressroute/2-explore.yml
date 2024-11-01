@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-azure-expressroute.explore
 title: Explore Azure ExpressRoute
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure ExpressRoute
   description: "Explore Azure ExpressRoute"
   ms.date: 11/02/2023

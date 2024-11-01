@@ -2,6 +2,8 @@
 uid: learn.azure-security.manage-users-and-groups-in-aad.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/08/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

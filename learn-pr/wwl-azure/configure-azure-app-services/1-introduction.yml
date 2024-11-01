@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-app-services.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 11/14/2023

@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.deployment
 title: Prepare to deploy a private MQTT broker
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare to deploy a private MQTT broker
   description: Get an overview of the steps for running a private MQTT broker.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/02-deployment.md)]
+

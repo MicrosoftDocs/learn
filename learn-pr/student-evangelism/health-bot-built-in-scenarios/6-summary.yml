@@ -2,6 +2,8 @@
 uid: learn.health-bot-built-in-scenarios.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 03/09/2023

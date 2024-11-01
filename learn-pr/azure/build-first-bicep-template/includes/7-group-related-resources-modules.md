@@ -10,7 +10,7 @@ You'll also often need to emit _outputs_ from the Bicep modules and templates. O
 
 ## Outputs
 
-Bicep templates can be deployed manually by a human, or they can be deployed by some sort of automated release process. Either way, it's common to have some data from the template you need to send back to whoever or whatever is executing the template deployment.
+A human can manually deploy Bicep templates, or some sort of automated release process can deploy them. Either way, it's common to have some data from the template you need to send back to whoever or whatever is executing the template deployment.
 
 Here are some example scenarios where you might need to get information from the template deployment:
 
@@ -26,7 +26,7 @@ output appServiceAppName string = appServiceAppName
 The output definition includes a few key parts:
 
 - The `output` keyword tells Bicep you're defining an output.
-- `appServiceAppName` is the output's name. When someone deploys the template successfully, the output values will include the name you specified so they can access the values they're expecting.
+- `appServiceAppName` is the output's name. When someone deploys the template successfully, the output values include the name you specified so they can access the values they're expecting.
 - `string` is the output type. Bicep outputs support the same types as parameters.
 - A value must be specified for each output. Unlike parameters, outputs always need to have values. Output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file.
 

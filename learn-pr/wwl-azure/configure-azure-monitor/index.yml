@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Monitor
   description: "Learn how to configure Azure Monitor, including querying the Azure Monitor activity log."
   ms.date: 11/02/2023

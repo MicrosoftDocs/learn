@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.load-dimension-tables
 title: Load dimension tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load dimension tables
   description: "Load dimension tables"
   ms.date: 10/27/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-blob-storage.discover-resource-types
 title: Discover Azure Blob storage resource types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover Azure Blob storage resource types
   description: "Discover Azure Blob storage resource types"
   ms.date: 07/12/2024

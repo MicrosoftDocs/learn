@@ -2,6 +2,8 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.create-delta-tables
 title: Create Delta Lake tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create Delta Lake tables
   description: "Create Delta Lake tables"
   ms.date: 10/11/2023

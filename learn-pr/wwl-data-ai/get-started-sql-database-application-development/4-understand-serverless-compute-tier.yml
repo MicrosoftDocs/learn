@@ -2,6 +2,8 @@
 uid: learn-wwl.get-started-sql-database-application-development.understand-serverless-compute-tier
 title: Understand the serverless compute tier
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the serverless compute tier
   description: "Learn how the serverless compute tier works in Azure SQL Database."
   ms.date: 10/02/2024

@@ -2,6 +2,8 @@
 uid: learn.control-and-organize-with-resource-manager.7-quiz
 title: Check your Knowledge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/27/2024
@@ -62,3 +64,4 @@ quiz:
       isCorrect: false
     - content: 'A storage account used to temporarily store images processed in a development environment'
       isCorrect: false
+

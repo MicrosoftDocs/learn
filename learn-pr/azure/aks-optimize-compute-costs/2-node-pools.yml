@@ -3,6 +3,8 @@ uid: learn.aks-optimize-compute-costs.node-pools
 title: Configure multiple nodes and enable scale-to-zero by using AKS
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure multiple nodes and enable scale-to-zero by using AKS
   description: You can configure multiple node pools on Azure Kubernetes Service (AKS) to run specific workloads. Node pools use virtual scale sets that allow you to set the number of nodes in a node pool. You can set the node count in a user node pool to zero to optimize your cluster's running costs when nodes aren't needed. Here you'll explore how to configure a user node pool to scale its node count to zero.
   ms.date: 12/20/2023
@@ -40,3 +42,4 @@ quiz:
     - content: "...the number of node pools on an AKS cluster. It monitors the Metrics API every 30 seconds to decide whether your application needs additional node pools to meet demand."
       isCorrect: false
       explanation: "The decision to add node pools to an AKS cluster is the responsibility of the cluster operator."
+

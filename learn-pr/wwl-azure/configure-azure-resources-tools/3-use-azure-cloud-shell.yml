@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-resources-tools.use-azure-cloud-shell
 title: Use Azure Cloud Shell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Cloud Shell
   description: "Use Azure Cloud Shell"
   ms.date: 10/26/2022

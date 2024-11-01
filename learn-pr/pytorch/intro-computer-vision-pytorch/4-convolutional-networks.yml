@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-computer-vision.convolutional-networks
 title: Use a convolutional neural network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use a convolutional neural network
   description: This unit is paramount to understanding the whole course. Here we learn about the CNN architecture, and how they can capture patterns in images using trained filters.
   author: shwars
@@ -50,3 +52,4 @@ quiz:
         - content: "48x200x200"
           isCorrect: false
           explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+

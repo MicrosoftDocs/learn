@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-business-benefits-azure.reduce-your-carbon-footprint-azure
 title: Reduce your carbon footprint with Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Reduce your carbon footprint with Azure
   description: "Reduce your carbon footprint with Azure"
   ms.date: 09/20/2024

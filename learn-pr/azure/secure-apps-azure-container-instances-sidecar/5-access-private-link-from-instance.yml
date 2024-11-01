@@ -2,6 +2,8 @@
 uid: learn.azure.azure-container-instances-sidecar.access-private-link-enabled-services
 title: Use Azure Private Link to access services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Private Link to access services
   description: Set up a private endpoint for Azure Container Instances to access Azure platform services.
   ms.date: 07/24/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-access-private-link-from-instance.md)]
+

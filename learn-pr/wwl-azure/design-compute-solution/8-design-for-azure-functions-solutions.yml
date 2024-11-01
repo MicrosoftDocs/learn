@@ -2,6 +2,8 @@
 uid: learn.wwl.design-compute-solution.design-for-azure-functions-solutions
 title: Design for Azure Functions solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Functions solutions
   description: "Design for Azure Functions solutions"
   ms.date: 08/29/2024
