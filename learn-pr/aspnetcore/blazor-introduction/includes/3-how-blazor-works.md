@@ -1,4 +1,4 @@
-Blazor provides many features to help you get started and deliver your next web app project fast. Let's take a tour of the core capabilities of Blazor to help you decide whether you should use Blazor for your next great web app.
+Blazor provides many features to get you started with delivering your next web app project fast. To help you decide whether you should use Blazor for your next great web app, let's take a tour of the core capabilities of Blazor.
 
 ## Blazor components
 
@@ -12,7 +12,7 @@ You author Blazor components using Razor syntax, a convenient mixture of HTML, C
 
 Interactive Blazor components can handle standard web UI interactions using C# event handlers. Components can update their state in response to UI events and adjust their rendering accordingly. Blazor also includes support for two-way data binding to UI elements as a way to keep component state in sync with UI elements.
 
-Below is an example of a simple Blazor counter component implemented in Razor. Most of the content is HTML, while the `@code` block contains C#. Every time the button is pressed the `IncrementCount` C# method is invoked, which increments the `currentCount` field, and then the component renders the updated value:
+The following example is a simple Blazor counter component implemented in Razor. Most of the content is HTML, while the `@code` block contains C#. Every time the button is pressed the `IncrementCount` C# method is invoked, which increments the `currentCount` field, and then the component renders the updated value:
 
 ```razor
 <h1>Counter</h1>
@@ -43,8 +43,8 @@ Alternatively, Blazor components can be rendered interactively from the client. 
 
 ![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-wasm.png)
 
-You can choose to render different components from the server or the client within the same app. Many of the pages in your app might not require any interactivity at all, and can be rendered statically from the server, while other more interactive parts of your app can be handled from the server or client. You can decide which component render mode to use at design time or runtime. With Blazor, you have the flexibility to build the web app architecture that's right for your scenario.
+You can choose to render different components from the server or the client within the same app. Many of the pages in your app might not require any interactivity at all, and can be rendered statically from the server. While other more interactive parts of your app can be handled from the server or client. You can decide which component render mode to use at design time or runtime. With Blazor, you have the flexibility to build the web app architecture that's right for your scenario.
 
 ## Using Blazor to build a pizza shop
 
-The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides build-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work from the server, interactive components are rendered on the client via WebAssembly. By building the entire app with a single web development stack, the app comes together quickly and soon the pizza orders are flowing in.
+The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides built-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work from the server, interactive components are rendered on the client via WebAssembly. The entire app is built with a single web development stack so the app comes together quickly and soon the pizza orders are flowing in.
