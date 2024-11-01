@@ -13,7 +13,7 @@ Our workload is an application that's written in Go and works with data inside P
 
 Though this application could easily be run within a container, the stakeholders chose not to do so at this stage. Building a container, deploying to a container platform, or using container orchestration is currently out of scope. But migration to containers might be a logical future step.
 
-The GitHub repository associated with this module provides an application and its associated data for you. You learn how to prepare your application and export your data to reach a similar state to this sample application, or how to use the sample application as a template for a greenfield deployment.
+The GitHub repository that's associated with this module provides an application and the related data for you. You learn how to prepare your application and export your data to reach a similar state to this sample application. You can also use the sample application as a template for a greenfield deployment.
 
 ## What is the value of migrating this workload?
 
@@ -27,9 +27,9 @@ Virtual machines in Azure benefit from a vast array of security and compliance f
 
 ### Security of connections between your virtual machines and databases
 
-As you integrate virtual machines with Azure Database for PostgreSQL, it's critical that they can connect to each other in a secure manner that reduces the risk of data loss.
+As you integrate a virtual machine with Azure Database for PostgreSQL, it's critical that they can connect to each other in a secure manner that reduces the risk of data loss.
 
-[Microsoft Entra ID authentication](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) enables you to connect to Azure Database for PostgreSQL without traditional passwords. Instead, you use Microsoft Entra ID identities for your application workload (that is, *managed identities*), users, and administrators via their Microsoft Entra ID user accounts. This approach mitigates the risk of long-lived credentials being compromised and allowing bad actors to access your data.
+[Microsoft Entra authentication](/azure/postgresql/flexible-server/concepts-azure-ad-authentication) enables you to connect to Azure Database for PostgreSQL without traditional passwords. Instead, you use Microsoft Entra identities for your application workload (that is, *managed identities*), users, and administrators via their Microsoft Entra user accounts. This approach mitigates the risk of long-lived credentials being compromised and allowing bad actors to access your data.
 
 Microsoft Entra ID, managed identities, and fine-grained RBAC can enable your application workload to access data and manage resources in Azure securely, by following the principle of least privilege.
 
@@ -41,7 +41,7 @@ You can scale compute both vertically and horizontally, including via [database 
 
 ### Cost management and cost-effectiveness
 
-You can optimize for cost management and cost-effectiveness on both the Linux and PostgreSQL sides. Compared with on-premises solutions, the cost can often be more tailored and appropriate for your situation. You can right-size your compute in comparison to an on-premises solution. You can also easily manage your entire fleet to optimize for only the compute and storage that you need, and pay for only what you use in a utility billing model.
+You can optimize for cost management and cost-effectiveness on both the Linux and PostgreSQL sides. Compared with on-premises solutions, the cost can often be more tailored and appropriate for your situation. You can right-size your compute in comparison to an on-premises solution. You can also easily manage your entire fleet to optimize for only the compute and storage that you need, and pay for only what you use, in a utility billing model.
 
 Utility billing enables customers to handle periods of high demand without having to pay the cost of overprovisioning. It allows migration to faster and more efficient generations of compute as they become available.
 
@@ -55,49 +55,49 @@ Customers can also reduce costs (up to 72 percent compared to pay-as-you-go pric
 
 ## Before you begin
 
-This module is designed to help you migrate an existing Linux and PostgreSQL workload to Azure. However, it doesn't focus on how to export the data from your source database or how to prepare the application for migration. This approach is in part because there are many different types of source databases and applications that could be migrated, and the process for each one is unique.
+This module is designed to help you migrate an existing Linux and PostgreSQL workload to Azure. However, it doesn't focus on how to export the data from your source database or how to prepare the application for migration. One reason for this approach is that there are many types of source databases and applications that you could migrate, and the process for each type is unique.
 
 This module provides you with a sample application, Postgres data, binary files, and infrastructure as code that you can use to simulate the migration process. After you complete the simulated migration, you can use the knowledge that you gained to apply the same principles to your own workload.
 
-You use the sample application, [Azure-Samples/tailwind-traders-go](https://github.com/Azure-Samples/tailwind-traders-go), as the stand-in for the application code to be migrated. The Bicep infrastructure as code, sample Postgres and binary data, and other resources to support the hands-on portion of this module are available in the [Azure-Samples/linux-postgres-migration](https://github.com/Azure-Samples/linux-postgres-migration) GitHub repository.
+You use the sample application, [Azure-Samples/tailwind-traders-go](https://github.com/Azure-Samples/tailwind-traders-go), as a stand-in for the application code to be migrated. The Bicep infrastructure as code, sample Postgres and binary data, and other resources to support the hands-on portion of this module are available in the [Azure-Samples/linux-postgres-migration](https://github.com/Azure-Samples/linux-postgres-migration) GitHub repository.
 
 To apply this approach to your own workload, you need to map your source application and data to the following structure.
 
 ### Application code
 
-Your application code should be stored in source control, preferably a repository in GitHub.
+You should store your application code in source control, preferably a repository in GitHub.
 
-The migration in this module shows the simplest scenario where you'll clone the repository directly to your Azure virtual machine. In a real-world scenario, you would likely have a more complex deployment pipeline, such as GitHub Actions, that builds and deploys your application code to your compute resources.
+The migration in this module shows the simplest scenario of cloning the repository directly to your Azure virtual machine. In a real-world scenario, you would likely have a more complex deployment pipeline, such as GitHub Actions, that builds and deploys your application code to your compute resources.
 
 ### Postgres data
 
-Your Postgres data should be stored in a `.sql` file that you can use to create the database schema and insert the data. In this simulated migration, you use a sample data file, `tailwind.sql`, within the `Azure-Samples/linux-postgres-migration` repo. You copy the file to Azure Blob Storage and then import it into Azure Database for PostgreSQL.
+You should store your Postgres data in a `.sql` file that you can use to create the database schema and insert the data. In this simulated migration, you use a sample data file, `tailwind.sql`, within the `Azure-Samples/linux-postgres-migration` repo. You copy the file to Azure Blob Storage and then import it into Azure Database for PostgreSQL.
 
-When it comes time to migrate your own data, you export your data from your source database and save it to a `.sql` file. You then copy the file to Azure Blob Storage as outlined in the module.
+When it comes time to migrate your own data, you export your data from your source database and save it to a `.sql` file. You then copy the file to Blob Storage as outlined in this module.
 
 ### Binary files
 
-Most applications have other binary files, such as media files, that need to be migrated. For the sample application, you learn how to migrate images by copying them from `Azure-Samples/linux-postgres-migration` to Azure Blob Storage.
+Most applications have other binary files, such as media files, that need to be migrated. For the sample application, you learn how to migrate images by copying them from `Azure-Samples/linux-postgres-migration` to Blob Storage.
 
-Similarly, you need to copy your binary files to Azure Blob Storage when you migrate your own workload. In this instance, the compute is *stateless*, and the application has permission to access the binary data directly in Blob Storage.
+Similarly, you need to copy your binary files to Blob Storage when you migrate your own workload. In this instance, the compute is *stateless*, and the application has permission to access the binary data directly in Blob Storage.
 
 ### Infrastructure as code (Bicep)
 
 The infrastructure as code for this module is also stored in `Azure-Samples/linux-postgres-migration`. It's designed to be a reference architecture that you can use as is, with minimal changes, if you can make your source data and application conform to the previously outlined structure.
 
-Security is a major theme of this migration, and we chose certain security settings to make the hands-on portion of this module easier to complete. For example, Azure Blob Storage uses a more secure, keyless authentication method, but we allow network connections from any IP address. In a production environment, you would want to lock down the network access to only the IP addresses that need access to the storage account.
+Security is a major theme of this migration, and we chose certain security settings to make the hands-on portion of this module easier to complete. For example, Blob Storage uses a more secure, keyless authentication method, but we allow network connections from any IP address. In a production environment, you would want to lock down the network access to only the IP addresses that need access to the storage account.
 
 Similarly, we leave the option to add a firewall rule to the PostgreSQL server to allow a specific IP address. In a production environment, you might completely disable all public access to the server.
 
 ## Differences between source environments and Azure
 
-One of the major differences you'll notice in migrating from another environment to Azure is that you're fully utilizing the security and identity controls that Azure provides:
+One of the major differences in migrating from another environment to Azure is that you're fully utilizing the security and identity controls that Azure provides:
 
 - You use managed identities for virtual machines and Azure Database for PostgreSQL.
 - You use Microsoft Entra ID for authentication to the database.
 - You use Microsoft Entra ID, rather than Secure Shell (SSH) keys, to access virtual machines.
 
-Rather than a lift-and-shift migration, you're taking the opportunity to modernize the application to take full advantage of the security and compliance features that Azure provides.
+Rather than doing a lift-and-shift migration, you're taking the opportunity to modernize the application to take full advantage of the security and compliance features that Azure provides.
 
 On-premises, you might use a username and password to authenticate to your database. In Azure, we showcase how to use the managed identity of the virtual machine to authenticate to the database. This method of authentication is more secure and reduces the risk of long-lived credentials being compromised.
 
@@ -109,15 +109,15 @@ If you don't have an Azure account, you can create a [free account](https://azur
 
 To run the commands in the following units, you need access to a Bash shell. This shell can be in any of these areas:
 
-- On your local machine; for example, macOS, Linux, Windows Subsystem for Linux (WSL), or Docker
-- On a virtual machine; for example, Multipass or Azure
-- In the cloud; for example, [Azure Cloud Shell](/azure/cloud-shell/overview) or [GitHub Codespaces](https://github.com/features/codespaces)
+- On your local machine. For example, use macOS, Linux, Windows Subsystem for Linux (WSL), or Docker.
+- On a virtual machine. For example, use Multipass or Azure.
+- In the cloud. For example, use [Azure Cloud Shell](/azure/cloud-shell/overview) or [GitHub Codespaces](https://github.com/features/codespaces).
 
 To complete this module, you need the Azure CLI. You can install the Azure CLI on your local machine by following the instructions in the [Install the Azure CLI](/cli/azure/install-azure-cli) article. You also need to install [Git](https://git-scm.com/).
 
 ## Resources
 
-- [Create a Free Azure account](https://azure.microsoft.com/free/)
+- [Create a free Azure account](https://azure.microsoft.com/free/)
 - [Install the Azure CLI](/cli/azure/install-azure-cli)
 - [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 - [Azure Hybrid Benefit for Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES) virtual machines](/azure/virtual-machines/linux/azure-hybrid-benefit-linux)

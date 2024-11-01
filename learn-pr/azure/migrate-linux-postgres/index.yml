@@ -2,14 +2,14 @@
 uid: learn.azure.migrate-linux-postgres
 metadata:
   title: Migrate Linux and PostgreSQL workloads
-  description: Migrate Linux and PostgreSQL workloads to Azure by using Azure Virtual Machines and Azure Database for PostgreSQL.
+  description: Migrate Linux and PostgreSQL workloads to Azure by using an Azure virtual machine and Azure Database for PostgreSQL.
   ms.date: 9/16/2024
   author: asw101
   ms.author: aawislan
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: virtual-machines-linux
 title: Migrate Linux and PostgreSQL workloads
-summary: Migrate from an on-premises Linux server to Azure by using Azure Virtual Machines and Azure Database for PostgreSQL.
+summary: Migrate from an on-premises Linux server to Azure by using an Azure virtual machine and Azure Database for PostgreSQL.
 abstract: |
   By the end of this module, you'll be able to:
     - Understand how to migrate your Linux and PostgreSQL workloads to Azure.

@@ -1,8 +1,6 @@
 This unit guides you through the creation of the compute resources that host your application within Azure.
 
-There are multiple methods to deploy infrastructure in Azure, including the Azure portal, the Azure CLI, and infrastructure-as-code templates (including Bicep and Terraform).
-
-In this unit, you deploy a preconfigured [Bicep](/azure/azure-resource-manager/bicep/overview?tabs=bicep) template that encapsulates the compute resources required for your application. The key resources are:
+There are multiple methods to deploy infrastructure in Azure, including the Azure portal, the Azure CLI, and infrastructure-as-code templates (including Bicep and Terraform). In this unit, you deploy a preconfigured Bicep template that encapsulates the compute resources required for your application. The key resources are:
 
 - A virtual machine running Linux (Ubuntu 24.04 LTS)
 - Azure Database for Postgres running [Postgres 16 or later](https://www.postgresql.org/download/)
@@ -10,13 +8,13 @@ In this unit, you deploy a preconfigured [Bicep](/azure/azure-resource-manager/b
 - [RBAC](/azure/role-based-access-control/overview), including roles to access the database as an administrator, and more restrictive roles for the application itself
 - A virtual network for both the VM and the database
 
-Because this example is a dev/test workload, and we're looking to keep things both cost-effective and performant, we chose the following configuration for you:
+Because this example is a dev/test workload, and we want to keep things both cost-effective and performant, we chose the following configuration for you:
 
-- The VM is a Standard D2s_v4 (two vCPUs, 8 GB of memory). It has Azure Premium SSD with 3,200 maximum input/output operations per second (IOPS) and 128 GB of storage. It has an attached P10 128-GB Premium SSD disk with 500 IOPS for the OS disk. You can upgrade the OS disk to match the VM's IOPS as required.
+- The VM is a Standard D2s_v4 (two vCPUs, 8 GB of memory). It has Azure Premium SSD with 3,200 maximum I/O operations per second (IOPS) and 128 GB of storage. It has an attached P10 128-GB Premium SSD disk with 500 IOPS for the OS disk. You can upgrade the OS disk to match the VM's IOPS as required.
 
 - The database is a General Purpose D2ds_v4 (two vCores, 8 GB of RAM) with 3,200 maximum IOPS. It has a P10 128-GB Premium SSD disk with 500 IOPS. You can upgrade this disk to match the compute IOPS as required.
 
-At the completion of the module, you delete these resources to save cost. However, you can also turn off the VM and database when they're not in use to save compute cost and pay for only the storage that you use. You can also scale up this workload as needed.
+At the completion of the module, you delete these resources to save costs. However, you can also turn off the VM and database when they're not in use to save compute costs and pay for only the storage that you use. You can also scale up this workload as needed.
 
 The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules/). AVM is an initiative to standardize infrastructure-as-code modules. Microsoft maintains these modules, and they encapsulate many best practices for deploying resources in Azure.
 
@@ -110,9 +108,9 @@ You can learn more about system-assigned and user-assigned managed identities in
 
 ## Add an inbound security rule to the network security group
 
-Next, you add an inbound security rule to the NSG. This rule allows SSH traffic from your current IP address to the virtual machine.
+Add an inbound security rule to the NSG to allow SSH traffic from your current IP address to the virtual machine.
 
-In a production scenario, you would often use [just-in-time access](/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to help secure your virtual machine. These security approaches allow you to restrict access to the virtual machine to an as-needed basis.
+In a production scenario, you would often use [just-in-time access](/azure/defender-for-cloud/just-in-time-access-usage), [Azure Bastion](/azure/bastion/bastion-overview), or a VPN (such as Azure or a mesh VPN) to restrict access to your virtual machine.
 
 1. Select `240900-linux-postgres-nsg`.
 
@@ -152,7 +150,7 @@ You could create a firewall rule for your current IP address by selecting **Add 
 
 In production, you would likely isolate this server from the public internet entirely by clearing the **Allow public access to this resource through the internet using a public IP address** option.
 
-Unlike the virtual machine, you haven't associated Azure Database for PostgreSQL with any virtual network. This means you retain the option of accessing it over the public internet, which is useful for dev/test scenarios.
+Unlike the virtual machine, you haven't associated Azure Database for PostgreSQL with any virtual network. You retain the option of accessing Azure Database for PostgreSQL over the public internet, which is useful for dev/test scenarios.
 
 To provide both security and flexibility, you enable access from the virtual machine via its virtual network by using a private endpoint. The private endpoint allows the virtual machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-networking-private-link).
 
@@ -192,9 +190,9 @@ Here, you use the Azure portal instead of Bicep to create the private endpoint f
 
 1. Under **System assigned**, select **Azure role assignments**.
 
-   Here, you can confirm that the **Reader** role is assigned to the system-assigned managed identity. The role is scoped to the `240900-linux-postgres` resource group.
+   Here, you can confirm that the Reader role is assigned to the system-assigned managed identity. The role is scoped to the `240900-linux-postgres` resource group.
 
-This identity has permissions to list resources in the resource group. It allows you to use the Azure CLI within the VM to list resources in the resource group. With this ability, you don't have to hard-code specific resource details into your scripts.
+The permissions in this identity allow you to use the Azure CLI within the VM to list resources in the resource group. With this ability, you don't have to hard-code specific resource details into your scripts.
 
 At a later stage, you'll assign an additional role to the VM's managed identity so that the VM can directly access an Azure Blob Storage account.
 
@@ -204,7 +202,6 @@ Next, you'll explore and configure the deployed infrastructure.
 
 - [Azure Verified Modules](https://azure.github.io/Azure-Verified-Modules/)
 - [Install the Azure CLI](/cli/azure/install-azure-cli)
-- [Bicep documentation](/azure/azure-resource-manager/bicep/overview?tabs=bicep)
 - [Create a resource group by using the Azure CLI](/cli/azure/group)
 - [Azure RBAC](/azure/role-based-access-control/overview)
 - [Azure managed identity](/entra/identity/managed-identities-azure-resources/overview)
@@ -214,4 +211,4 @@ Next, you'll explore and configure the deployed infrastructure.
 - [What is Azure Bastion?](/azure/bastion/bastion-overview)
 - [Microsoft Entra authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-azure-ad-authentication)
 - [Use Microsoft Entra ID for authentication with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-configure-sign-in-azure-ad-authentication)
-- [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-private-link)
+- [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-networking-private-link)

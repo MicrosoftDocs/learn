@@ -63,7 +63,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 az login --identity
 ```
 
-The following output should appear:
+The following output appears:
 
 ```
 $ az login --identity
@@ -105,7 +105,7 @@ export PGDATABASE=postgres
 psql
 ```
 
-After you're connected, the following output should appear. Enter the `\q` command to exit.
+After you're connected, the following output appears. Enter the `\q` command to exit.
 
 ```
 $ psql

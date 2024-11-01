@@ -69,7 +69,7 @@ az storage blob upload-batch \
     --source app/data/images
 ```
 
-The following output should appear:
+The following output appears:
 
 ```
 [
@@ -164,7 +164,7 @@ psql
 \dt
 ```
 
-The following output should appear:
+The following output appears:
 
 ```
 postgres=> \dt
@@ -196,7 +196,7 @@ FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
-The following output should appear:
+The following output appears:
 
 ```
 postgres=> SELECT table_name
@@ -235,7 +235,7 @@ Select from the products table:
 select * from products;
 ```
 
-The following prompt should appear:
+The following prompt appears:
 
 ```
 postgres=> \x
@@ -318,7 +318,7 @@ This unit uses port 8080 for interactive dev/test purposes. In production, you w
 
 ## Browse the public API endpoint
 
-Open the URL in a web browser. The following output should appear:
+Open the URL in a web browser. The following output appears:
 
 ```
 {
@@ -385,7 +385,7 @@ az deployment group create \
     --mode Complete
 ```
 
-Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact, so you can redeploy the resources again with a single command.
+Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact, so you can deploy the resources again by using a single command.
 
 ## Resources
 
