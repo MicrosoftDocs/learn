@@ -20,7 +20,7 @@ With the previous code:
 
 Blazor is a component-based web UI framework integrated with ASP.NET Core, used for building interactive web UIs using C#.
 
-A reusable component, such as the following `Counter` component is defined in a *Counter.razor* file:
+A reusable Blazor component, such as the following `Counter` component is defined in a *Counter.razor* file:
 
 ```razor
 @page "/counter"
@@ -125,12 +125,14 @@ In the previous code, several common middleware components were added:
 
 ASP.NET Core includes built-in support for dependency injection (DI) for configuring services that are used by the app and its various framework components.
 
-Configuring a database context as a service using dependency injection:
+For example, you might want to centrally configure a service using a framework like EntityFramework Core that other parts of your app depend on to access a database. You can configure a database context from EntityFramework Core as a service using dependency injection like this:
 
 ```csharp
 public class MyDbContext : DbContext
 {
     public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) { }
+    
+    public DbSet<Product> Products { get; set; } = default!;
 }
 
 var builder = WebApplication.CreateBuilder(args);
