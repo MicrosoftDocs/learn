@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect: AI initiatives are enhancing accessibility for individuals with various types of disabilities."
   - content: Which of the following statements best illustrates the transformative effect of AI in the energy sector?
     choices:
-    - content: AI assists in fraud detection and risk management, improving client experiences
+    - content: AI helps fraud detection and risk management, improving client experiences
       isCorrect: false
       explanation: "Incorrect: This statement pertains to the finance sector, not the energy sector."
     - content: AI sensors in wind farms predict wind patterns and adjust turbine angles to capture maximum wind.
