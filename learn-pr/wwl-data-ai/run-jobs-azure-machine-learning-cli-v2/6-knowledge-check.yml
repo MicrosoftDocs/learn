@@ -2,6 +2,8 @@
 uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -37,3 +39,4 @@ quiz:
     - content: "The type and size of the compute cluster that needs to be created."
       isCorrect: false
       explanation: "The configuration for the compute cluster can also be specified in a YAML file, but is then created with the `az ml compute create` command."
+

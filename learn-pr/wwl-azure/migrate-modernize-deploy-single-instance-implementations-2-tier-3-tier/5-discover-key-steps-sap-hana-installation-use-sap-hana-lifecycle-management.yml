@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.discover-key-steps-sap-hana-installation-use-sap-hana-lifecycle-management
 title: Discover key steps for SAP HANA installation using SAP HANA Database Lifecycle Management (HLM)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover key steps for SAP HANA installation using SAP HANA Database Lifecycle Management (HLM)
   description: "Discover key steps for SAP HANA installation using SAP HANA database lifecycle management(HLM)"
   ms.date: 01/09/2024

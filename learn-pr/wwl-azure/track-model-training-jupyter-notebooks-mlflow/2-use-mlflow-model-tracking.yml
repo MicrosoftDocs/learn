@@ -2,6 +2,8 @@
 uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.use-mlflow-model-tracking
 title: Configure MLflow for model tracking in notebooks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure MLflow for model tracking in notebooks
   description: Configure MLflow for model tracking in notebooks
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-use-mlflow-model-tracking.md)]
+

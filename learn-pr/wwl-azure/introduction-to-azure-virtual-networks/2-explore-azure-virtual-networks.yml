@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.understand-azure-virtual-networks
 title: Explore Azure Virtual Networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Networks
   description: "Explore Azure Virtual Networks"
   ms.date: 04/22/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.configure-secure-projects-repositories
 title: Configure secure projects and repositories
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure secure projects and repositories
   description: "Configure secure projects and repositories."
   ms.date: 1/25/2023

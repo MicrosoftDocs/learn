@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-desired-state-configuration-dsc.explore-azure-automation
 title: Explore Azure Automation State configuration (DSC)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Automation State configuration (DSC)
   description: "Explore Azure Automation State configuration (DSC)"
   ms.date: 05/23/2024

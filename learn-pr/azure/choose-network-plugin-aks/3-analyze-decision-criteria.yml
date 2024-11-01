@@ -2,6 +2,8 @@
 uid: learn.choose-best-networking-plugin-for-aks.analyze-decision-criteria
 title: Decision criteria
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Analyze decision criteria
   description: "Learn about the decision criteria, tradeoffs, and considerations when choosing an Azure Kubernetes Service (AKS) networking plugin."

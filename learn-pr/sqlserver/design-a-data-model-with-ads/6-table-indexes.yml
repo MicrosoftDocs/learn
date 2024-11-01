@@ -2,6 +2,8 @@
 uid: learn.design-a-data-model-with-ads.table-indexes
 title: Table indexes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Table indexes
   description: "Learn about index types in Azure SQL Database. Learn about clustered indexes, columnstore indexes and full text indexes."
   ms.date: 03/05/2024

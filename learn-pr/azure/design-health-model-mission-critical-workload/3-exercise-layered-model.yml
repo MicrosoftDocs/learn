@@ -2,6 +2,8 @@
 uid: learn.design-health-model-mission-critical-workload.exercise-layered-model
 title: Exercise - Build a layered health structure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Build a layered health structure
   description: Apply best practices to evaluate user flows and the key application components in a health model.
   ms.date: 08/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/3-exercise-layered-model.md)]
+

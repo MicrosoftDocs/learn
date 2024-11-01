@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.vcore-to-rus
 title: Convert vCores to RUs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Convert vCores to RUs
   description: "Convert vCores to RUs"
   ms.date: 02/06/2023

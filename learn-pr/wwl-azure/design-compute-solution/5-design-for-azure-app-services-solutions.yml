@@ -2,6 +2,8 @@
 uid: learn.wwl.design-compute-solution.design-for-azure-app-services-solutions
 title: Design for Azure App Service solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure App Service solutions
   description: "Design for Azure App Service solutions"
   ms.date: 08/29/2024

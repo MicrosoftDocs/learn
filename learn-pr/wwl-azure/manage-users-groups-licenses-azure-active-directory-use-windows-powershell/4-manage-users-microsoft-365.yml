@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.manage-users-microsoft-365
 title: Manage users in Microsoft 365 by using Windows PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage users in Microsoft 365 by using Windows PowerShell
   description: "Manage users in Microsoft 365 by using Windows PowerShell"
   ms.date: 10/26/2022
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/4-manage-users-microsoft-365.md)]
+

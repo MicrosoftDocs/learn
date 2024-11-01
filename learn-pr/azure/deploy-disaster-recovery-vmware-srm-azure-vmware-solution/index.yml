@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Deploy disaster recovery using VMware Site Recovery Manager and Azure VMware Solution
   description: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware VMs.
@@ -44,3 +46,4 @@ units:
 - learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.7-summary
 badge:
   uid: deploy-disaster-recovery-vmware-srm-azure-vmware-solution.badge
+

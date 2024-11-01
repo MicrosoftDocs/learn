@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-device-connections-communication.examine-device-reconnection-management
 title: Examine device reconnection management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine device reconnection management
   description: "This page provides high-level guidance to help you design resilient applications by adding a device reconnection strategy."
   ms.date: 12/06/2023

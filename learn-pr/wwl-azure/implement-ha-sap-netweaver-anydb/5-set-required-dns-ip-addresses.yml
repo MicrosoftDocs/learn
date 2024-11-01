@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-ha-sap-netweaver-anydb.set-required-dns-ip-addresses
 title: Set the required DNS IP addresses
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set the required DNS IP addresses
   description: "Assign the required DNS static IP addresses to the Azure Virtual Machines."
   ms.date: 08/01/2024

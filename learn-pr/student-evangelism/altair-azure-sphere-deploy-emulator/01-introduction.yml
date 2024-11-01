@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to deploying an Altair emulator to Azure Sphere.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4 
 content: |
   [!include[](includes/01-introduction.md)]
+

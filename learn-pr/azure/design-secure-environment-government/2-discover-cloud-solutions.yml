@@ -2,6 +2,8 @@
 uid: learn.azure.design-secure-environment-government.2-discover-cloud-solutions
 title: Discover cloud solutions with Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover cloud solutions with Azure
   description: Discussion of the challenges and opportunities of implementing cloud services for public agencies.
   ms.date: 05/04/2023

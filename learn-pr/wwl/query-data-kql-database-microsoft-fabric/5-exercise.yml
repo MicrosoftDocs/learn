@@ -2,6 +2,8 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.exercise
 title: Exercise - query a KQL database in Microsoft Fabric
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - query a KQL database in Microsoft Fabric
   description: "Exercise - query a KQL database in Microsoft Fabric"
   ms.date: 05/14/2024

@@ -2,6 +2,8 @@
 uid: learn.oxford.object-detection-lva-edge-device.how-install-vision-edge-solution
 title: How to install Vision on Edge solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to install Vision on Edge solution
   description: In this section, we explain how to install Vision on Edge solution using installer
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-how-install-vision-edge-solution.md)]
+

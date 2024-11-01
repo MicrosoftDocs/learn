@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-network-security-groups.interactive-lab-simulation-network-groups
 title: Interactive lab simulation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interactive lab simulation
   description: "Interactive lab simulation"
   ms.date: 08/29/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.cna-build-iot-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build an IoT service for your cloud-native apps by using IoT Central
   description: Extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and by using Cosmos DB to provide a persistent data store.
   manager: mkluck
@@ -52,3 +54,4 @@ units:
 - learn.azure.cna-build-iot-service.10-summary
 badge:
   uid: learn.azure.cna-build-iot-service.badge
+

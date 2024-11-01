@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of lessons learned
   ms.date: 06/04/2022
@@ -12,3 +14,4 @@ title: Summary
 durationInMinutes: 2
 content: |
   [!INCLUDE[](includes/7-summary.md)]
+

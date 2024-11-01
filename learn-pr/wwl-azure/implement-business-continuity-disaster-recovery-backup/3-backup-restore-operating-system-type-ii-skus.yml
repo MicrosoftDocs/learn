@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.back-up-restore-operating-system-for-type-ii-skus
 title: Back up and restore the operating system for Type II SKUs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Back up and restore the operating system for Type II SKUs
   description: "Back up and restore the operating system for Type II SKUs"
   ms.date: 06/30/2022

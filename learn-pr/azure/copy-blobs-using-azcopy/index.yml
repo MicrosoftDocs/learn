@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.copy-blobs-using-azcopy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Copy and move blobs from one container or storage account to another using the AzCopy command
   description: Use AzCopy to migrate files between Azure Storage accounts.
   manager: akashdubey
@@ -32,3 +34,4 @@ units:
 - learn.azure.copy-blobs-using-azcopy.summary
 badge:
   uid: learn.azure.copy-blobs-using-azcopy.badge
+

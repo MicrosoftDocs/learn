@@ -3,6 +3,8 @@ uid: learn.azure.route-and-process-data-logic-apps.detect-external-event-using-t
 title: Detect an external event using a trigger
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Detect an external event using a trigger
   description: Detect an external event using a trigger
   ms.date: 09/25/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-detect-external-event-using-trigger.md)]
+

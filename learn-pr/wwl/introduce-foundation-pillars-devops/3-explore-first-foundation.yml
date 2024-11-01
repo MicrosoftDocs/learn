@@ -2,6 +2,8 @@
 uid: learn.wwl.introduce-foundation-pillars-devops.explore-first-foundation
 title: Explore DevOps Culture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore DevOps Culture
   description: "Explore the first foundation pillar of DevOps, Culture"
   ms.date: 09/20/2020

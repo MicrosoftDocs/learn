@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.exercise-work-with-windowing-functions
 title: Exercise - work with windowing functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - work with windowing functions
   description: "Exercise - work with windowing functions"
   ms.date: 06/23/2022

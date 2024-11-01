@@ -2,6 +2,8 @@
 uid: learn.advocates.send-crop-weather-alerts.5-create-twilio-account
 title: Exercise - Create a Twilio account to send and receive text messages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a Twilio account to send and receive text messages
   description: Create a free Twilio account and get a phone number that can send and receive text messages.
   author: acomfort248

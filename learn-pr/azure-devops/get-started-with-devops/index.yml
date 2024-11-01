@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.get-started-with-devops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure DevOps
   description: Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.
   ms.date: 10/02/2024
@@ -39,3 +41,4 @@ units:
 - learn.get-started-with-devops.5-summary
 badge:
   uid: learn.get-started-with-devops.badge
+

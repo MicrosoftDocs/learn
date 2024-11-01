@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
   description: |
     This module walks through the steps to connect an existing Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
@@ -67,3 +69,4 @@ units:
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.summary
 badge:
   uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.badge
+

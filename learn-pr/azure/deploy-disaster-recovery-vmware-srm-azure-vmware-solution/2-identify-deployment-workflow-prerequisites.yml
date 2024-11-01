@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.2-identify-deployment-workflow-prerequisites
 title: Identify deployment workflow prerequisites
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Identify deployment workflow prerequisites
   description: This unit provides an overview of the deployment workflow prerequisites.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-identify-deployment-workflow-prerequisites.md)]
+

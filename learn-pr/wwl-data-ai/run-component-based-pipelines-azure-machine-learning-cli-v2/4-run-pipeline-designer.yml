@@ -2,6 +2,8 @@
 uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline-designer
 title: Run a pipeline with the Designer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run a pipeline with the Designer
   description: Run a pipeline with the Designer
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-run-pipeline-designer.md)]
+

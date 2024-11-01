@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-network-routing-endpoints.determine-service-endpoint-services
 title: Determine service endpoint services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine service endpoint services
   description: "Determine Azure services that can work with service endpoints."
   ms.date: 06/14/2024

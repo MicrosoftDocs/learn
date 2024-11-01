@@ -2,6 +2,8 @@
 uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.efficient-data-storage-options
 title: Efficient data storage options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Efficient data storage options
   description: Efficient data storage options
   author: wwlpublish
@@ -18,3 +20,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-efficient-data-storage-options.md)]
+

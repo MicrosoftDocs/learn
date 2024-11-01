@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.create-function-triggered-by-webhook
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a function that is triggered by a webhook
   description: Create a function that is triggered by a webhook
   ms.date: 10/27/2022
@@ -11,3 +13,4 @@ title: Create a function that is triggered by a webhook
 durationInMinutes: 4
 content: |
   [!include[](includes/2-create-function-triggered-by-webhook.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.exercise-identify-compatibility-issues
 title: 'Exercise: Identify compatibility issues'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Identify compatibility issues'
   description: "Learn to assess a legacy SQL Server database for migration to Azure SQL Database by identifying compatibility issues, necessary changes, unsupported features, configurations, and reviewing the database schema."
   ms.date: 05/23/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.modernize-explore-azure-network.explore-name-resolution
 title: Explore name resolution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore name resolution
   description: "Explore name resolution"
   ms.date: 01/09/2024

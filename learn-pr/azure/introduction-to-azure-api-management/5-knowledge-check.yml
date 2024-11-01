@@ -2,6 +2,8 @@
 uid: learn.azure.introduction-to-azure-api-management.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure API Management
@@ -69,3 +71,4 @@ quiz:
     - content: "Set rate limits"
       isCorrect: true
       explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame per subscription or other value, you help guard your API against customer misuse."
+

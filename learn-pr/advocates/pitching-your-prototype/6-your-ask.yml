@@ -2,6 +2,8 @@
 uid: learn.pitch-your-product-prototype.6-your-ask
 title: Making an ask of your audience
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Making an ask of your audience
   description: This unit teaches how to make an ask of your audience.
   author: czhu89

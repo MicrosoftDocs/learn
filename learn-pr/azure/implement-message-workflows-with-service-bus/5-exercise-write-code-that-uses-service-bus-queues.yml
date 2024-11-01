@@ -2,6 +2,8 @@
 uid: learn.implement-message-workflows-with-service-bus.5-exercise-write-code-that-uses-service-bus-queues
 title: Exercise - Send and receive messages by using a queue
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Send and receive messages by using a queue
   description: Write code that sends messages to and receives messages from a Service Bus queue.
   ms.date: 10/25/2023
@@ -13,3 +15,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-write-code-that-uses-service-bus-queues.md)]
+

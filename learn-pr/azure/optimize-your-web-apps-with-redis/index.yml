@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.optimize-web-app-with-redis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize your web applications by caching read-only data with Redis
   description: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   ms.date: 03/11/2024
@@ -41,3 +43,4 @@ units:
 - learn.optimize-web-app-with-redis.7-summary
 badge:
   uid: learn.optimize-web-app-with-redis.badge
+

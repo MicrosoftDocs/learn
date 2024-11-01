@@ -2,6 +2,8 @@
 uid: learn.wwl.offer-services-for-azure-stack-hub.manage-subscriptions-plans-offers-using-powershell
 title: Manage subscriptions, plans, and offers using PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage subscriptions, plans, and offers using PowerShell
   description: "Manage subscriptions, plans, and offers using PowerShell"
   ms.date: 09/15/2023

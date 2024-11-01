@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.4a-describe-azure-arc-enabled-data-services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Arc-enabled data services
   description: Describe Azure Arc-enabled data services
   ms.date: 12/07/2023

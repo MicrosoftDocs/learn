@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-api-management.discover-service
 title: Discover the API Management service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover the API Management service
   description: "Discover the API Management service"
   ms.date: 10/28/2024

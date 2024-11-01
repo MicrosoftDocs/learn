@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-active-directory-azure-ad-authentication
 title: Secure with Microsoft Entra authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure with Microsoft Entra authentication
   description: "Secure with Microsoft Entra authentication"
   ms.date: 04/19/2023
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-azure-active-directory-azure-ad-authentication.md)]
+

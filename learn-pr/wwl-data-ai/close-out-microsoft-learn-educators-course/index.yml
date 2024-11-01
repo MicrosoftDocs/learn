@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.close-out-microsoft-learn-educators-course
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Close out a Microsoft Learn for Educators course
   description: "The Microsoft Learn for Educators program can help you prepare to deliver a class and empower your students with the technical skills and industry recognized credentials needed to prepare them for their future careers."
   ms.date: 07/02/2024

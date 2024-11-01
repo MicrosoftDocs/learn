@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.usage-reporting-infrastructure-for-cloud-solution-providers
 title: Usage reporting infrastructure for Cloud Solution Providers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Usage reporting infrastructure for Cloud Solution Providers
   description: "Usage reporting infrastructure for Cloud Solution Providers"
   ms.date: 08/09/2022

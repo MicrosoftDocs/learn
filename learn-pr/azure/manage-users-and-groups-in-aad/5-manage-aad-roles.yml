@@ -2,6 +2,8 @@
 uid: learn.azure-security.manage-users-and-groups-in-aad.manage-aad-roles
 title: Use roles to control resource access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use roles to control resource access
   description: Use roles to control resource access
   ms.date: 11/08/2023
@@ -42,3 +44,4 @@ quiz:
        isCorrect: false
      - content: "`NotActions` allow you to specify a single operation that is not allowed."
        isCorrect: false
+

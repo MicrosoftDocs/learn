@@ -2,6 +2,8 @@
 uid: learn.develop-azure-functions-app-with-maven-plugin.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Use the Maven Plugin for Azure Functions to create an Azure Function, and deploy the function to Azure.
   ms.date: 01/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

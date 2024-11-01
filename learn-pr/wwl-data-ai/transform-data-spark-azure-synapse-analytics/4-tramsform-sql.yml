@@ -2,6 +2,8 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.tramsform-sql
 title: Transform data with SQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Transform data with SQL
   description: "Transform data with SQL"
   ms.date: 08/25/2023

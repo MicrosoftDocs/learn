@@ -2,6 +2,8 @@
 uid: learn.wwl.custom-name-entity-recognition.understand-custom-named
 title: Understand custom named entity recognition
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand custom named entity recognition
   description: Understand custom named entity recognition
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-custom-named.md)]
+

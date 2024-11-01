@@ -2,6 +2,8 @@
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -39,3 +41,4 @@ quiz:
     - content: "Check out the repo, sign in to Azure, install CLI and run trigger an Azure Machine Learning job."
       isCorrect: false
       explanation: "Incorrect. You need to install the Machine Learning extension for the CLI to run a job."
+
