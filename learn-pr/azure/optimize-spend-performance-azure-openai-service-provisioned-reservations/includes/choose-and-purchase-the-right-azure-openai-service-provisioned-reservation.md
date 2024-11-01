@@ -117,7 +117,7 @@ To buy an Azure OpenAI reservation, perform the following steps:
 
 5. Select a region to choose an Azure region that the reservation covers, and then select **Add to cart**.
 
-S   :::image type="content" source="../media/5-select-product-you-want-to-purchase-small.png" alt-text="A screenshot of the Select the product you want to purchase dialog box." border="true" lightbox="../media/5-select-product-you-want-to-purchase.png":::
+   :::image type="content" source="../media/5-select-product-you-want-to-purchase-small.png" alt-text="A screenshot of the Select the product you want to purchase dialog box." border="true" lightbox="../media/5-select-product-you-want-to-purchase.png":::
 
 6. In the cart, choose the quantity of PTUs that you want to purchase. For example, a quantity of 64 would cover up to 64 deployed PTUs every hour.
 
