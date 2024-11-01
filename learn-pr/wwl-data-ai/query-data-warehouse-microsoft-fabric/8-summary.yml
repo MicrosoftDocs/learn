@@ -2,18 +2,12 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 12/19/2023
-  author: wwlpublish
+  ms.date: 11/1/2014
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]

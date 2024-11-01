@@ -2,18 +2,12 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.exercise-query-data-warehouse-microsoft-fabric
 title: 'Exercise: Query a data warehouse in Microsoft Fabric'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Query a data warehouse in Microsoft Fabric'
   description: "Learn how to query a data warehouse in Microsoft Fabric."
-  ms.date: 12/19/2023
-  author: wwlpublish
+  ms.date: 11/1/2014
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-query-data-warehouse-microsoft-fabric.md)]
+  [!include[](includes/6-exercise-query-data-warehouse-microsoft-fabric.md)]
