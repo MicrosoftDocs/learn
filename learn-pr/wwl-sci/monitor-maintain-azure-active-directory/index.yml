@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor and maintain Microsoft Entra ID
   description: "Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
   ms.date: 10/23/2023

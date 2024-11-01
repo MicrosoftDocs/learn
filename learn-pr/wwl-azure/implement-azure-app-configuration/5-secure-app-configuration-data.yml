@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-app-configuration.secure-data
 title: Secure app configuration data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure app configuration data
   description: "Secure app configuration data"
   ms.date: 07/17/2024

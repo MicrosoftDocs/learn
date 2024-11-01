@@ -2,6 +2,8 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.use-sql-query-editor
 title: Use the SQL query editor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the SQL query editor
   description: "Learn how to use the SQL query editor in Microsoft Fabric to query a data warehouse."
   ms.date: 12/19/2023

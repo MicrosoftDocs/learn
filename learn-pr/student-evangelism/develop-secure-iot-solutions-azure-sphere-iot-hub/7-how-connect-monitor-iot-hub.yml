@@ -2,6 +2,8 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-connect-monitor-iot-hub
 title: How to connect a room environment monitor to Azure IoT Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to connect a room environment monitor to Azure IoT Hub
   description: In this section, we create an Azure Sphere application and connect it to Azure IoT Hub.
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/7-how-connect-monitor-iot-hub.md)]
+

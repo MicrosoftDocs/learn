@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn-wwl.enable-digital-transformation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Enabling digital transformation '
   description: Digital transformation is a wave of business innovation fueled by the explosion of technology—data, applications, and devices are everywhere. The cloud, artificial intelligence (AI), and the internet of things (IoT) give organizations new ways to make sense of information and generate insights to transform their business. Realizing the benefits of digital transformation requires business leaders to look beyond technology to reimagine existing business models and embrace a different way of bringing together people, data, and processes to create value for customers.
   ms.date: 10/14/2020
@@ -39,3 +41,4 @@ units:
 - learn-wwl.enable-digital-transformation.5-summary-and-resources
 badge:
   uid: learn-wwl.enable-digital-transformation.badge
+

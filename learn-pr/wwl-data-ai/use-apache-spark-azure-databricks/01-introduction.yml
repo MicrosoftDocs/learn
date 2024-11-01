@@ -2,6 +2,8 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 08/29/2023

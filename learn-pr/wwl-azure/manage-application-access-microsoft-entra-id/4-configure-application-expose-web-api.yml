@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-access-microsoft-entra-id.configure-application-expose-web-api
 title: Configure app registration permission scopes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure app registration permission scopes
   description: "Configure app registration permission scopes"
   ms.date: 04/29/2024

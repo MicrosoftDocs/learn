@@ -2,6 +2,8 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-managed-identities
 title: Design managed identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design managed identities
   description: "Design managed identities"
   ms.date: 03/06/2024

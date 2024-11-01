@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-aad-users-with-mfa.configure-authentication-methods
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure multi-factor authentication methods
   description: Configure multi-factor authentication methods
   ms.date: 11/03/2023
@@ -39,3 +41,4 @@ quiz:
      - content: "False"
        isCorrect: true
        explanation: "Correct. MFA can be enabled for a subset of your users; this is actually a recommendation - start small to ensure you don't lock someone out of your systems."
+

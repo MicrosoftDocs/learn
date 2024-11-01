@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-automation-devops.examine-webhooks
 title: Examine webhooks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine webhooks
   description: "Examine webhooks"
   ms.date: 05/23/2024

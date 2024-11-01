@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-application-configuration-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage application configuration data
   description: Manage application configuration data
   ms.date: 05/28/2024
@@ -65,3 +67,4 @@ units:
 - learn.wwl.manage-application-configuration-data.summary
 badge:
   uid: learn.wwl.manage-application-configuration-data.badge
+

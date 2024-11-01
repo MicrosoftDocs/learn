@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.design-for-application-protection-services
 title: Design for application protection services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for application protection services
   description: "Design for application protection services"
   ms.date: 10/09/2023

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Search data outside the Azure platform in Azure AI Search using Azure Data Factory
   description: Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes.
   author: wwlpublish
@@ -43,3 +45,4 @@ units:
 - learn.wwl.search-data-outside-azure-platform-cognitive-search.summary
 badge:
   uid: learn.wwl.search-data-outside-azure-platform-azure-cognitive-search-using-azure-data-facto.badge
+

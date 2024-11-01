@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.build-app-with-scale-sets
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a scalable application with Virtual Machine Scale Sets
   description: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
   manager: akashdubey
@@ -44,3 +46,4 @@ units:
 - learn.build-app-with-scale-sets.exercise-update-applications-virtual-machine-scale-sets
 - learn.build-app-with-scale-sets.knowledge-check
 - learn.build-app-with-scale-sets.summary
+

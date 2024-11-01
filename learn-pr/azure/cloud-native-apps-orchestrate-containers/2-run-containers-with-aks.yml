@@ -2,6 +2,8 @@
 uid: learn.azure.cna-orchestrate-containers.2-run-containers-with-aks
 title: Running containers with Kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Running containers with Kubernetes
   description: An overview of how Kubernetes runs containers.
   ms.date: 12/28/2023

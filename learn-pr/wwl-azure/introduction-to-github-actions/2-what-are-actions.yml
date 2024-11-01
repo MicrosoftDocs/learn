@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-github-actions.what-are-actions
 title: What are actions?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are actions?
   description: "What are actions?"
   ms.date: 05/08/2024

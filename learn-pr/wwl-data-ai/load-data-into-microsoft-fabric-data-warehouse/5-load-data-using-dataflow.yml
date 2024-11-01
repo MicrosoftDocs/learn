@@ -2,6 +2,8 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-dataflow
 title: Load and transform data with Dataflow Gen2
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load and transform data with Dataflow Gen2
   description: "Learn how to load and transform data with Dataflow Gen2."
   ms.date: 12/01/2023

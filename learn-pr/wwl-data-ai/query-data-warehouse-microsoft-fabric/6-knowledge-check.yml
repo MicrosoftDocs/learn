@@ -2,6 +2,8 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/19/2023
@@ -48,4 +50,5 @@ quiz:
     - content: To store metadata about the data warehouse.
       isCorrect: false
       explanation: Incorrect. Metadata about the data warehouse is typically stored separately, not in a fact table.
+
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-enhanced-monitoring-extension-for-sap
 title: Explore the Azure Enhanced Monitoring Extension for SAP
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the Azure Enhanced Monitoring Extension for SAP
   description: "Explore the Azure Enhanced Monitoring Extension for SAP"
   ms.date: 01/08/2024

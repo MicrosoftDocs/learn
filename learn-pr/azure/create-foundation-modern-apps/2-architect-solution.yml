@@ -2,6 +2,8 @@
 uid: learn.azure.create-foundation-modern-apps.architect-solution  
 title: Architect a solution using Azure 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Architect a solution using Azure
   description: Break down a scenario for an application and build a multi-service architecture using Azure.
@@ -57,3 +59,4 @@ quiz:
       - content: "Graph models"
         isCorrect: false
         explanation: "This feature is available in SQL Server and Azure SQL, but it doesn't help in supporting a 12-TB database."
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-manage-postgresql.explain-purpose-vacuum-autovacuum
 title: Explain the purpose of vacuum and autovacuum
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain the purpose of vacuum and autovacuum
   description: "Explain the purpose of vacuum and autovacuum."
   ms.date: 05/10/2024

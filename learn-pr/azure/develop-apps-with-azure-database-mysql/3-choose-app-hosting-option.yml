@@ -2,6 +2,8 @@
 uid: learn.develop-apps-with-azure-database-mysql.choose-app-hosting-option
 title: Choose a suitable hosting option for your MySQL app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Choose a suitable hosting option for your MySQL app
   description: Let's explore some common MySQL application architectures and Azure services to determine the most suitable hosting option for your app workload. We'll discuss web apps (Azure App Service), containerized applications with microservices architecture (AKS), event-driven serverless computing (Azure Functions and Logic Apps), and monolithic legacy apps (Azure Virtual Machines).
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-choose-app-hosting-option.md)]
+

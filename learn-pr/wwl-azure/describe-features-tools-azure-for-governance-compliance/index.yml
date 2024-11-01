@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-features-tools-azure-for-governance-compliance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe features and tools in Azure for governance and compliance
   description: "Describe features and tools in Azure for governance and compliance"
   ms.date: 09/24/2024

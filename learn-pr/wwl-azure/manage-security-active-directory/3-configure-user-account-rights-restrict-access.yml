@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-security-active-directory.configure-user-account-rights-restrict-access
 title: Configure user account rights to restrict access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure user account rights to restrict access
   description: "Configure user account rights to restrict access"
   ms.date: 10/22/2024

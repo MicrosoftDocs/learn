@@ -2,6 +2,8 @@
 uid: learn.saas-foundations.pricing-models-for-saas
 title: SaaS pricing models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: SaaS pricing models
   description: Learn about the most common pricing models for SaaS solutions and how to determine a pricing strategy.
   ms.date: 05/28/2024

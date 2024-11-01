@@ -2,6 +2,8 @@
 uid: learn.azure.gather-metrics-from-blob-storage.5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard
 title: Exercise - Add Azure Monitor metrics to a custom portal dashboard
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Add Azure Monitor metrics to a custom portal dashboard
   description: Add Azure Monitor metrics to a custom portal dashboard.
   ms.date: 07/27/2023
@@ -22,3 +24,4 @@ content: |
 #     resource:
 #       type: "Microsoft.Storage/storageAccounts"
 #       kind: "StorageV2"
+

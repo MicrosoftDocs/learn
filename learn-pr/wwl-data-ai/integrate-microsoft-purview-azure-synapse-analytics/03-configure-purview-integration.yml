@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.scan-workspaces
 title: Connect Microsoft Purview to an Azure Synapse Analytics workspace
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect Microsoft Purview to an Azure Synapse Analytics workspace
   description: "Connect Microsoft Purview to an Azure Synapse Analytics workspace"
   ms.date: 07/20/2023

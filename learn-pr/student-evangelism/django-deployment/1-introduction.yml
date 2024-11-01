@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy to Azure
   description: Using SQLite and locally hosting your application are perfect setups for development. But you need something better for production. See how to prepare your application for deployment and take the steps necessary to deploy it.
   ms.date: 03/01/2021 

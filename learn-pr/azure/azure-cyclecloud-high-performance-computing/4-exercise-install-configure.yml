@@ -2,6 +2,8 @@
 uid: learn.azure.azure-cyclecloud-high-performance-computing.exercise-install-configure
 title: Exercise - Install and configure Azure CycleCloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Install and configure Azure CycleCloud
   description: Learn about the process of installing and configuring Azure CycleCloud.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/4-exercise-install-configure.md)]
+

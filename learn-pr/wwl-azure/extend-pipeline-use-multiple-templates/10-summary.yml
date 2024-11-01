@@ -2,6 +2,8 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary."
   ms.date: 1/25/2023

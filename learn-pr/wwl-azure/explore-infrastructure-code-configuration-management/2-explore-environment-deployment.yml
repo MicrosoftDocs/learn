@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
 title: Explore environment deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore environment deployment
   description: "Explore environment deployment"
   ms.date: 05/08/2024

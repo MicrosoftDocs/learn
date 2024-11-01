@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.3-exercise-build
 title: Exercise - Create Azure resources and a Java Spring application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Azure resources and a Java Spring application
   description: Learn how to create Azure resources and a Java Spring application.
   ms.date: 11/08/2023
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-build.md)]
+

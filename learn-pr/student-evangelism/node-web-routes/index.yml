@@ -7,6 +7,8 @@
 ###     @mention diberry for review
 uid: learn.student-evangelism.node-web-routes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to route management in Node.js with JavaScript
   description: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript (CommonJS).
   ms.date: 04/19/2024
@@ -49,3 +51,4 @@ units:
 - learn.student-evangelism.node-web-routes.summary
 badge:
   uid: learn.student-evangelism.node-web-routes.badge
+

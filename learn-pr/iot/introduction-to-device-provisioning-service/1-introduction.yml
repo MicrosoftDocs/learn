@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 12/15/2023

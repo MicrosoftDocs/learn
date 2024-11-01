@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Cosmos DB for NoSQL point operations
   description: "Write code to create, read, update, and delete items in Azure Cosmos DB for NoSQL."
   ms.date: 10/17/2022

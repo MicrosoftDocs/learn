@@ -2,6 +2,8 @@
 uid: learn.azure-spring-cloud-workshop.2-create-instance
 title: Create an Azure Spring Apps instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an Azure Spring Apps instance
   description: Learn how to create an Azure Spring Apps instance.
   author: judubois
@@ -35,3 +37,4 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "The name of an Azure Spring Apps cluster should be unique across all of Azure."
+

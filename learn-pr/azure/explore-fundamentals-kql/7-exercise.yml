@@ -2,6 +2,8 @@
 uid: learn.azure.explore-fundamentals-kql.exercise-2
 title: "Exercise: Different types of KQL queries"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Different types of KQL queries"
   description: "Practice using the different types of sample queries shown in the previous unit."
   ms.date: 11/02/2023

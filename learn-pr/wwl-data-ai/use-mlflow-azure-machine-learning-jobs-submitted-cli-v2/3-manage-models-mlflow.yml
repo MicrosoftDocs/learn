@@ -2,6 +2,8 @@
 uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.manage-models-mlflow
 title: Manage models with MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage models with MLflow
   description: Manage models with MLflow
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-manage-models-mlflow.md)]
+

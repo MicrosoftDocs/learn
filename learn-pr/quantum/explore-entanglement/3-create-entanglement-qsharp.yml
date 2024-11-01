@@ -2,6 +2,8 @@
 uid: learn.quantum.explore-entanglement.create-entanglement-qsharp
 title: Create quantum entanglement with Q#
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create quantum entanglement with Q#
   description: Create quantum entanglement with Q#
   ms.date: 10/30/2024

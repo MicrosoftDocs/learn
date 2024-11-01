@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.3-install-srm-azure-vmware-solution
 title: Install SRM in Azure VMware Solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Install SRM in Azure VMware Solution
   description: This unit describes how to install SRM in Azure VMware Solution.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-install-srm-azure-vmware-solution.md)]
+

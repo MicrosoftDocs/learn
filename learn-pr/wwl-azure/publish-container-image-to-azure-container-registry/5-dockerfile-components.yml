@@ -2,6 +2,8 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.explore-elements-of-dockerfile
 title: Explore elements of a Dockerfile
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore elements of a Dockerfile
   description: "Explore elements of a Dockerfile"
   ms.date: 07/15/2024

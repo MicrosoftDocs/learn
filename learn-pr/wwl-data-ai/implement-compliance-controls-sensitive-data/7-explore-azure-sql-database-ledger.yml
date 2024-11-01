@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.explore-azure-sql-database-ledger
 title: Explore Azure SQL Database Ledger
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure SQL Database Ledger
   description: "Explore Azure SQL Database Ledger"
   ms.date: 09/02/2022

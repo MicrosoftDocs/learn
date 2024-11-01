@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-with-devops.foster-devops-culture
 title: 'Foster DevOps culture'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Foster DevOps culture'
   description: "Fostering DevOps culture for accelerated software delivery."
   ms.date: 02/06/2024

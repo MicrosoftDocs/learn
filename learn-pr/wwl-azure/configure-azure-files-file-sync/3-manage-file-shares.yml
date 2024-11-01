@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-files-file-sync.manage-file-shares
 title: Manage Azure file shares
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure file shares
   description: "Manage Azure file shares"
   ms.date: 04/04/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-manage-file-shares.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.manage-groups-microsoft-365
 title: Manage groups in Microsoft 365 by using Windows PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage groups in Microsoft 365 by using Windows PowerShell
   description: "Manage groups in Microsoft 365 by using Windows PowerShell"
   ms.date: 10/26/2022
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/5-manage-groups-microsoft-365.md)]
+

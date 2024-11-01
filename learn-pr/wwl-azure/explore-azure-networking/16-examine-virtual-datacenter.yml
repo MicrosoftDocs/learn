@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-networking.examine-virtual-datacenter
 title: Examine the virtual datacenter
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the virtual datacenter
   description: "Use the virtual datacenter to facilitate design and implementation of enterprise workloads."
   ms.date: 10/03/2024

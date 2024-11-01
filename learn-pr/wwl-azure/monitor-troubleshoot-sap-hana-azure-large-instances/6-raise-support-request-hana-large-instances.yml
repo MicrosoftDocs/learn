@@ -2,6 +2,8 @@
 uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.raise-support-requests-for
 title: Raise support requests for SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Raise support requests for SAP HANA on Azure (Large Instances)
   description: "Raise support requests for SAP HANA on Azure (Large Instances)"
   ms.date: 07/06/2022

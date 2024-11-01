@@ -2,6 +2,8 @@
 uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding of what we've covered in this module.
   ms.date: 06/22/2023

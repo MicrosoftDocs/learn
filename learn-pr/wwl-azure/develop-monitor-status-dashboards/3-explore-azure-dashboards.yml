@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-dashboards
 title: Explore Azure Dashboards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Dashboards
   description: "Explore Azure Dashboards"
   ms.date: 05/08/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-ai-studio.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of key learning points for Azure AI Studio.
   author: wwlpublish
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

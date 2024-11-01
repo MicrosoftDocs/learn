@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-llmops-azure-databricks.lifecycle-overview
 title: Transition from traditional MLOps to LLMOps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Transition from traditional MLOps to LLMOps
   description: "Transition from traditional MLOps to LLMOps"
   ms.date: 08/23/2024

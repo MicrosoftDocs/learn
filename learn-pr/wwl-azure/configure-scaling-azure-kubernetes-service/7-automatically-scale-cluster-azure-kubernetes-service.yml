@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.automatically-scale-cluster-azure-kubernetes-service
 title: Automatically scale a cluster on Azure Kubernetes Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automatically scale a cluster on Azure Kubernetes Service
   description: "Automatically scale a cluster on Azure Kubernetes Service"
   ms.date: 10/25/2023

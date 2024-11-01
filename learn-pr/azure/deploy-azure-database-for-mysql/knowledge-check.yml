@@ -3,6 +3,8 @@ uid: learn.deploy-azure-database-for-mysql.knowledge-check
 title: Knowledge check
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   author: shreyaaithal
@@ -66,3 +68,4 @@ quiz:
     - content: "3306"
       isCorrect: true
       explanation: "To connect to the Azure Database for MySQL - Flexible Server public endpoint, you must open the outbound TCP port 3306."
+

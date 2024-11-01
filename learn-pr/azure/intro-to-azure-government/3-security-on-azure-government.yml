@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-government.3-security-on-azure-government
 title:  Security on Azure Government
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Security on Azure Government
   description: Learn about physical and digital security offered on Azure Government.
   ms.date: 08/23/2023

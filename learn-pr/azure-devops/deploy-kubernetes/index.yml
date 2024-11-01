@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azdo.deploy-kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
   description: Learn how to deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
   ms.date: 02/01/2024
@@ -46,3 +48,4 @@ units:
 - learn.azdo.deploy-kubernetes.6-summary
 badge:
   uid: learn.azdo.deploy-kubernetes.badge
+

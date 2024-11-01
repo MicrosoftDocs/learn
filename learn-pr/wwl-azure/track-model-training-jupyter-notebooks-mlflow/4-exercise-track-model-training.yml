@@ -2,6 +2,8 @@
 uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.exercise-track-model-training
 title: Exercise - Track model training
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Track model training
   description: Exercise - Track model training
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-track-model-training.md)]
+

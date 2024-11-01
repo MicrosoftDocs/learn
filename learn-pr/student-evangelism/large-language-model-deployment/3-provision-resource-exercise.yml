@@ -2,6 +2,8 @@
 uid: learn.large-language-model-deployment.provision-resource-exercise
 title: "Exercise: Provision an Azure OpenAI resource"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Provision an Azure OpenAI resource"
   description: Practice provisioning an Azure OpenAI resource.
   ms.date: 09/25/2024

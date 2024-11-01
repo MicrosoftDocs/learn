@@ -2,6 +2,8 @@
 uid: learn.wwl.protect-azure-for-sap-workloads.explore-scenario
 title: Meet the scenario team
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Meet the scenario team
   description: "Meet the scenario team"
   ms.date: 12/10/2021

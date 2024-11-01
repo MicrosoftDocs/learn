@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-model-managed-online-endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a model to a managed online endpoint
   description: Learn how to deploy models to a managed online endpoint for real-time inferencing.
   author: wwlpublish
@@ -40,3 +42,4 @@ units:
 - learn.wwl.deploy-model-managed-online-endpoint.summary
 badge:
   uid: learn.wwl.deploy-model-managed-online-endpoint.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-capacityfor-azure-stack-hub.manage-storage-capacity
 title: Manage storage capacity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage storage capacity
   description: "Manage storage capacity"
   ms.date: 03/29/2022

@@ -2,6 +2,8 @@
 uid: learn.azure.support-hybrid-clouds.3-share-securely-stack
 title: Share information securely with Azure Stack Edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share information securely with Azure Stack Edge
   description: Discussion of how you can store and process highest classification data, uploading resulting information or models to Azure, with Azure Stack Edge.
   ms.date: 07/22/2024

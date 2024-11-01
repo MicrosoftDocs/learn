@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-question-answer-solution-ai-language
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create question answering solutions with Azure AI Language
   description: Create question answering solutions with Azure AI Language
   author: wwlpublish
@@ -48,3 +50,4 @@ units:
 - learn.wwl.create-question-answer-solution-ai-language.summary
 badge:
   uid: learn.wwl.create-question-answer-solution-ai-language.badge
+

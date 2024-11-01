@@ -2,6 +2,8 @@
 uid: learn.implement-message-workflows-with-service-bus.2-choose-a-messaging-platform
 title: Choose a messaging platform
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a messaging platform
   description: Understand how to choose a messaging platform.
   ms.date: 10/25/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-a-messaging-platform.md)]
+

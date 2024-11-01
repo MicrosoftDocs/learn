@@ -2,6 +2,8 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.monitor-solution
 title: Monitor your solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor your solution
   description: In this unit, we monitor the solution on IoT Edge and from Azure IoT Hub
   ms.date: 07/10/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 3 # dummy number at present
 content: |
    [!include[](includes/7-monitor-solution.md)]
+

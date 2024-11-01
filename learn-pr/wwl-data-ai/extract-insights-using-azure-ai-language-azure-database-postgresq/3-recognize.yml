@@ -2,6 +2,8 @@
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.recognize
 title: Recognize entities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recognize entities
   description: Recognize entities
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-recognize.md)]
+

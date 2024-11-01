@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-security.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction unit that introduces the content in the overall security module. This unit comes before any content units."
   ms.date: 09/23/2024

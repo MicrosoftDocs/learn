@@ -2,6 +2,8 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.load-data-using-data-pipeline
 title: Use data pipelines to load a warehouse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use data pipelines to load a warehouse
   description: "Learn how data pipelines work in Microsoft Fabric and how it can be used for loading purposes."
   ms.date: 12/01/2023

@@ -2,6 +2,8 @@
 uid: learn.quantum.explore-entanglement.what-is-teleportation
 title: How to use entanglement to send information?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to use entanglement to send information?
   description: How to use entanglement to send information?
   ms.date: 04/25/2024

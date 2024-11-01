@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-security-active-directory.protect-user-accounts-protected-users-group
 title: Protect User Accounts with the Protected Users group
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect User Accounts with the Protected Users group
   description: "Protect User Accounts with the Protected Users group"
   ms.date: 10/22/2024

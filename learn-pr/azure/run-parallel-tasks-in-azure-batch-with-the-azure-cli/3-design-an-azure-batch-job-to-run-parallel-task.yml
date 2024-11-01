@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.design-an-azure-batch-job-to-run-parallel-task
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design an Azure Batch job to run your parallel task
   description: Design an Azure Batch job to run your parallel task.
   ms.date: 04/04/2024
@@ -13,3 +15,4 @@ title: Design an Azure Batch job to run your parallel task
 durationInMinutes: 5
 content: |
   [!include[](includes/3-design-an-azure-batch-job-to-run-parallel-task.md)]
+

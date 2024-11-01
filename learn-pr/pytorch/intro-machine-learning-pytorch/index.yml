@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.pytorch.intro-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to machine learning with PyTorch
   description: Learn key concepts used to build machine learning models with PyTorch. Train a neural network model that recognizes and classifies images.
   ms.date: 08/22/2024
@@ -53,3 +55,4 @@ units:
 
 badge:
   uid: learn.pytorch.intro-machine-learning.badge
+

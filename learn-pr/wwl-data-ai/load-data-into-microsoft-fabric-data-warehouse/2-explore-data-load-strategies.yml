@@ -2,6 +2,8 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.explore-data-load-strategies
 title: Explore data load strategies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore data load strategies
   description: "Learn different strategies to load data into a data warehouse in Microsoft Fabric."
   ms.date: 12/01/2023

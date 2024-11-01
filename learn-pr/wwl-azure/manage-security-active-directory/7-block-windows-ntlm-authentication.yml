@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-security-active-directory.block-windows-ntlm-authentication
 title: Block Windows NTLM authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Block Windows NTLM authentication
   description: "Block Windows NTLM authentication"
   ms.date: 10/22/2024

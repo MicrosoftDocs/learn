@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-cloud-business-case-analysis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Cloud Business Case Analysis
   description: "Understand a cloud business case analysis through a business case analysis, analysis of alternatives, and non-financial operational benefits."
   ms.date: 09/25/2024
