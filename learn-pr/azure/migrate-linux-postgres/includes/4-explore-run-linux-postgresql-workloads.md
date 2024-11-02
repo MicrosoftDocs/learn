@@ -1,21 +1,18 @@
-## Introduction
+In this unit, you will:
 
-In this module, you will:
-
-- Deploy an Azure Blob Storage account using a Bicep template.
+- Deploy an Azure Blob Storage account by using a Bicep template.
 - Create a Blob Storage container.
-- Migrate images to the Azure Blob Storage account.
-- Upload tailwind.sql to the Azure Blob Storage account.
-- Connect to the Azure Virtual Machine using the Azure CLI.
+- Migrate images to the Blob Storage account.
+- Upload `tailwind.sql` to the Blob Storage account.
+- Connect to the Azure virtual machine by using the Azure CLI.
 - Download the file from the storage account.
-- Connect to the PostgreSQL server using `psql` and import a SQL file.
-
+- Connect to the PostgreSQL server by using `psql` and import a SQL file.
 - Run the application interactively via the command line.
-- Confirm the application runs correctly.
+- Confirm that the application runs correctly.
 
-## Deploy a storage account using deploy/vm-postgres.bicep
+## Deploy a storage account by using deploy/vm-postgres.bicep
 
-Run the following command on your local machine.
+Run the following command on your local machine:
 
 ```bash
 az deployment group create \
@@ -27,7 +24,7 @@ az deployment group create \
         deployStorage=true
 ```
 
-## Add the current user to the 'Storage Blob Data Owner' role
+## Add the current user to the Storage Blob Data Owner role
 
 ```bash
 STORAGE_ACCOUNT_ID=$(az storage account list \
@@ -45,7 +42,7 @@ az role assignment create \
     --scope $STORAGE_ACCOUNT_ID
 ```
 
-## Create a container called 'container1' in the storage account
+## Create a container called container1 in the storage account
 
 ```bash
 STORAGE_ACCOUNT_NAME=$(az storage account list \
@@ -61,7 +58,7 @@ az storage container create \
     --name container1
 ```
 
-## Migrate images to the storage account into a subfolder images/
+## Migrate images to the storage account into a subfolder
 
 ```bash
 az storage blob upload-batch \
@@ -72,7 +69,7 @@ az storage blob upload-batch \
     --source app/data/images
 ```
 
-Output should be as follows:
+The following output appears:
 
 ```
 [
@@ -103,7 +100,7 @@ az storage blob upload \
     --name tailwind.sql
 ```
 
-## Connect to Azure virtual machine using the az ssh command
+## Connect to the Azure virtual machine by using the az ssh command
 
 ```bash
 az ssh vm \
@@ -113,7 +110,7 @@ az ssh vm \
 
 ## Download the tailwind.sql file from the storage account
 
-Set the bash variable `STORAGE_ACCOUNT_NAME` to the storage account name.
+Set the Bash variable `STORAGE_ACCOUNT_NAME` to the storage account name:
 
 ```bash
 STORAGE_ACCOUNT_NAME=$(az storage account list \
@@ -124,7 +121,7 @@ STORAGE_ACCOUNT_NAME=$(az storage account list \
 echo "STORAGE_ACCOUNT_NAME: $STORAGE_ACCOUNT_NAME"
 ```
 
-Download `tailwind.sql` to the Azure Virtual Machine using the `az storage blob download` command.
+Download `tailwind.sql` to the Azure virtual machine by using the `az storage blob download` command:
 
 ```bash
 az storage blob download \
@@ -142,20 +139,20 @@ MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
 export AZURE_CLIENT_ID=$(az identity show --resource-group 240900-linux-postgres --name $MANAGED_IDENTITY_NAME --query "clientId" -o tsv)
 PG_NAME=$(az postgres flexible-server list --resource-group 240900-linux-postgres --query "[0].name" -o tsv)
 
-# set psql environment variables
+# Set psql environment variables
 export PGHOST="${PG_NAME}.privatelink.postgres.database.azure.com"
 export PGPASSWORD=$(curl -s "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fossrdbms-aad.database.windows.net&client_id=${AZURE_CLIENT_ID}" -H Metadata:true | jq -r .access_token)
 export PGUSER=$MANAGED_IDENTITY_NAME
 export PGDATABASE=postgres
 ```
 
-## Import tailwind.sql using psql
+## Import tailwind.sql by using psql
 
 ```bash
 psql -f tailwind.sql
 ```
 
-## Connect to the postgres server to confirm the import was successful
+## Connect to the Postgres server to confirm that the import was successful
 
 ```bash
 psql
@@ -167,7 +164,7 @@ psql
 \dt
 ```
 
-The output should be as follows:
+The following output appears:
 
 ```
 postgres=> \dt
@@ -191,14 +188,15 @@ postgres=> \dt
 (14 rows)
 ```
 
-## Run a sql query listing the tables
+## Run a SQL query that lists the tables
+
 ```
 SELECT table_name
 FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
-The output should be as follows:
+The following output appears:
 
 ```
 postgres=> SELECT table_name
@@ -223,21 +221,21 @@ WHERE table_schema = 'public';
 (14 rows)
 ```
 
-## Set expanded mode to on and select from the products table
+## Turn on expanded mode and select from the products table
 
-At the `postgres=> ` prompt, set expanded mode to on.
+At the `postgres=>` prompt, turn on expanded mode:
 
 ```
 \x
 ```
 
-Select from the products table.
+Select from the products table:
 
 ```
 select * from products;
 ```
 
-The prompt should appear as follows:
+The following prompt appears:
 
 ```
 postgres=> \x
@@ -245,7 +243,7 @@ Expanded display is on.
 postgres=> select * from products;
 ```
 
-You will see a listing of products:
+A listing of products appears:
 
 ```
 id                 | 1
@@ -269,7 +267,7 @@ updated_at         | ...
 ...
 ```
 
-Press `<space>` to page through the results. Press `q` to exit the pager.
+Select the Spacebar to page through the results. Enter `q` to exit the pager.
 
 ## Exit psql
 
@@ -277,21 +275,21 @@ Press `<space>` to page through the results. Press `q` to exit the pager.
 \q
 ```
 
-## Run our application interactively via the command line
+## Run the application interactively via the command line
 
-On the remote machine, change to the directory that contains our application
+On the remote machine, change to the directory that contains the application:
 
 ```bash
 cd tailwind-traders-go/app
 ```
 
-Run the application interactively from the command line
+Run the application interactively from the command line:
 
 ```bash
 go run main.go app:serve
 ```
 
-You'll see the following output:
+The following output appears:
 
 ```
 $ go run main.go app:serve
@@ -300,7 +298,7 @@ Listening on :8080
 
 ## Find the public IP address of the VM
 
-Get the public IP address of the Virtual Machine.
+Get the public IP address of the virtual machine:
 
 ```bash
 IP_ADDRESS=$(az network public-ip show \
@@ -310,17 +308,17 @@ IP_ADDRESS=$(az network public-ip show \
     --out tsv)
 ```
 
-Output the URL to the terminal.
+Output the URL to the terminal:
 
 ```bash
 echo "Your URL is: http://${IP_ADDRESS}:8080"
 ```
 
-Note we're using port 8080 for interactive test/dev purposes. In production, you would use port 443 and require a TLS certificate to secure traffic to the endpoint.
+This unit uses port 8080 for interactive dev/test purposes. In production, you would use port 443 and require a TLS certificate to help secure traffic to the endpoint.
 
 ## Browse the public API endpoint
 
-Open the URL in a web browser and you should see the following output.
+Open the URL in a web browser. The following output appears:
 
 ```
 {
@@ -345,7 +343,7 @@ Open the URL in a web browser and you should see the following output.
 }
 ```
 
-Alternatively you can make a request to the API endpoint using `curl`.
+Alternatively, you can make a request to the API endpoint by using `curl`:
 
 ```bash
 curl "http://${IP_ADDRESS}:8080"
@@ -355,7 +353,7 @@ This endpoint displays a random product from the database.
 
 ## View requests logged to the terminal
 
-Return to the terminal where you're running the application interactively. The output shows the request to the API endpoint.
+Return to the terminal where you're running the application interactively. The output shows the request to the API endpoint:
 
 ```
 {"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:58592","method":"GET","url":"/"}
@@ -363,13 +361,13 @@ Return to the terminal where you're running the application interactively. The o
 {"time":"...","level":"INFO","msg":"httpLog","remoteAddr":"[::1]:59414","method":"GET","url":"/favicon.ico"}
 ```
 
-If these requests are successful, you have successfully migrated the application workload to Azure Virtual Machines and Azure Database for PostgreSQL (Flexible Server).
+If these requests are successful, you successfully migrated the application workload to an Azure virtual machine and Azure Database for PostgreSQL (Flexible Server).
 
-## Clean up Azure Resources
+## Clean up Azure resources
 
-Once you finish exploring the Linux and PostgreSQL workloads, clean up the resources to save costs. 
+After you finish exploring the Linux and PostgreSQL workloads, clean up the resources to save costs.
 
-You can delete the resource group `240900-linux-postgres` manually via the Azure portal, or run the following Azure CLI command.
+You can delete the resource group `240900-linux-postgres` manually via the Azure portal, or run the following Azure CLI command:
 
 ```bash
 az group delete \
@@ -378,11 +376,7 @@ az group delete \
     --no-wait
 ```
 
-Another useful option is to use the `empty.bicep` template to delete the resources created by the `vm-postgres.bicep` file.
-
-Running `az group deployment create` with the `--mode Complete` removes any resources not defined in the template. As the template `empty.json` has no resources, it deletes every resource.
-
-Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact and lets you redeploy the resources again with a single command.
+Another option is to use the `empty.bicep` template to delete the resources that the `vm-postgres.bicep` file created. Running `az deployment group create` with `--mode Complete` removes any resources that the template doesn't define. Because `empty.json` has no resources, the command deletes every resource.
 
 ```bash
 az deployment group create \
@@ -391,6 +385,9 @@ az deployment group create \
     --mode Complete
 ```
 
+Deploying `empty.json` leaves the `240900-linux-postgres` resource group intact, so you can deploy the resources again by using a single command.
+
 ## Resources
-- [Azure Blob Storage Documentation](/azure/storage/blobs/)
-- [Azure Role-Based Access Control (RBAC) Documentation](/azure/role-based-access-control/overview)
+
+- [Azure Blob Storage documentation](/azure/storage/blobs/)
+- [Azure RBAC documentation](/azure/role-based-access-control/overview)
