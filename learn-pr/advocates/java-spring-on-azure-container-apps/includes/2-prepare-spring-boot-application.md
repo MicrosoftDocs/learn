@@ -22,8 +22,7 @@ cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
 
 2. Init and update the PetClinc to the latest version:
 ```bash
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 3. Build the project using Maven:

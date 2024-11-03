@@ -31,6 +31,11 @@ With the database set up, the next step is to configure the Spring Pet Clinic ap
  - Add the IP address of your Azure Container Apps environment.
  - Or enable Allow access to Azure services to permit connections from all Azure services.
 
+### Create a new Database
+1. Go to your PostgreSQL server in the Azure portal.
+2. Expand **Settings** > **Databases** > Click on **Add**.
+3. Name it as `petclinic` and save.
+
 ### Connect via Service Connector
 
 1. In the Azure portal, navigate to your **Azure Container Apps** instance.
@@ -38,30 +43,33 @@ With the database set up, the next step is to configure the Spring Pet Clinic ap
 2. Go to **Settings** > **Service Connector**.
 
 3. Click on **Create**, then fill out the connection form:
- - **Service type**: DB for PostgreSQL flexible server
- - **PostgreSQL flexible server**: your-server-name
- - **PostgreSQL database**: postgres
- - **Client type**: SpringBoot
-
+ - Basic:
+    - **Service type**: DB for PostgreSQL flexible server
+    - **PostgreSQL flexible server**: your-server-name
+    - **PostgreSQL database**: postgres
+    - **Client type**: SpringBoot
+ - Authentication:
+    - Choose `Connection string`.
+    - Fill in your Username and Password
 Leave others as default.
 
-4. Click on **Create On Cloud Shell** to execute the connection.
+4. Confirm and deploy your changes.
 
-5. CLick on **Validate** to validate your connection status.
+5. Once the deploy is ready, cLick on **Validate** to validate your connection status.
 
 ### Update `spring.profiles.active` for PostgreSQL
 
 1. In the Azure portal, navigate to your **Azure Container Apps** instance. In the left pane, under **Application**, select **Containers**.
 
-2. CLick on **Edit and Deploy**, then in the **Container Image** section, click on **petclinic**.
+2. Click on **Edit and Deploy**, then in the **Container Image** section, click on **petclinic**.
 
 3. In the pop up window, switch to the ***Environment variables** tab and add one more line: **Name**: `spring.profiles.active`, **Source**: `Manual entry`, **Value**: `postgres`.
 
 4. Click **Save**, then Click **Create**.
 
-This will restart the app and apply the changes.
+This will restart the app and apply changes, such as initializing the SQL tables.
 
 
-## Test the Database Connection
-
-Now that the configuration is complete, redeploy your Spring Pet Clinic application to verify the connection to PostgreSQL.
+## Validate the Database setup
+Now that the configuration is complete. If you connect to your PostgreSQL, you will see that the table has already been created.
+![Diagram of the PostgreSQL.](../media/postgresql.png)

@@ -74,6 +74,7 @@ The `up` command uses the Dockerfile in the root of the repository to build the 
 ```bash
 az containerapp up \
     --name $API_NAME \
+    --resource-group $RESOURCE_GROUP\
     --location $LOCATION \
     --environment $ENVIRONMENT \
     --source ..
@@ -82,4 +83,4 @@ az containerapp up \
 ## Verify deployment
 Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You may open the url to verify your project deployed on azure.
 
-![Diagram of the deployment verification.](../media/essentials.jpg)
+![Diagram of the deployment verification.](../media/deployment_success.png)
