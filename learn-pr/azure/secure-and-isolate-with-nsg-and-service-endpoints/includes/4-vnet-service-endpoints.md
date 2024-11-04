@@ -4,22 +4,22 @@ In this unit, you'll look at how to use virtual network service endpoints for se
 
 ## Virtual network service endpoints
 
-Use virtual network service endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone, and doesn't go out to the internet.
+Use virtual network service endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
 
 :::image type="content" source="../media/4-service-endpoint.svg" alt-text="Diagram of a service endpoint on a private network.":::
 
 By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
 
-Service endpoints can connect certain PaaS services directly to your private address space in Azure, so they act like they’re on the same virtual network. Use your private address space to access the PaaS services directly. Adding service endpoints doesn't remove the public endpoint. It simply provides a redirection of traffic.
+Service endpoints can connect certain PaaS services directly to your private address space in Azure, so they act like they're on the same virtual network. Use your private address space to access the PaaS services directly. Adding service endpoints doesn't remove the public endpoint. It simply provides a redirection of traffic.
 
 Azure service endpoints are available for many services, such as:
 
-- Azure Storage
-- Azure SQL Database
-- Azure Cosmos DB
-- Azure Key Vault
-- Azure Service Bus
-- Azure Data Lake
+- Azure Storage.
+- Azure SQL Database.
+- Azure Cosmos DB.
+- Azure Key Vault.
+- Azure Service Bus.
+- Azure Data Lake.
 
 For a service like SQL Database, which you can't access until you add IP addresses to its firewall, you should still consider service endpoints. Using a service endpoint for SQL Database restricts access to specific virtual networks, providing greater isolation and reducing the attack surface.
 
