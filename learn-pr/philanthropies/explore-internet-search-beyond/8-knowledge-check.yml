@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: Prompt engineering is important because it directly influences the accuracy and relevance of AI responses.
       isCorrect: true
-      explanation: "Correct: Prompt engineering is important because it directly influences accuracy and relevance of AI responses."
+      explanation: "Correct: Prompt engineering is important because it directly influences the accuracy and relevance of AI responses."
     - content: Prompt engineering is a minor aspect of AI development because it affects only the initial setup.
       isCorrect: false
       explanation: "Incorrect: This answer underestimates the ongoing impact of an effective prompt on AI performance."
