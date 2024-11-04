@@ -65,7 +65,7 @@ FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Micros
 
 This method is available for Android and iOS. Users can [register their mobile app here](https://aka.ms/mfasetup).
 
-* The Microsoft Authenticator app helps prevent unauthorized access to accounts. It pushes a notifcation that helps stop fraudulent transactions to your smartphone or tablet. Users view the notification, and confirm or deny the request.
+* The Microsoft Authenticator app helps prevent unauthorized access to accounts. It pushes a notification that helps stop fraudulent transactions to your smartphone or tablet. Users view the notification, and confirm or deny the request.
 
 * Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After the user enters the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication. Users can also set the Microsoft Authenticator app to deliver a push notification that they select and approve to sign in.
 

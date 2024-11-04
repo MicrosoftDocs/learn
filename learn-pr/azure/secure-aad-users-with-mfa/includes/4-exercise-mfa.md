@@ -16,7 +16,7 @@ You can walk through the basic steps necessary to configure and enable Microsoft
 
     :::image type="content" source="../media/4-mfa-options.png" alt-text="Screenshot showing MFA options in the dashboard.":::
 
-1. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page you can see all the MFA options for Azure under **Service Settings**.
+1. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.
 
     :::image type="content" source="../media/4-set-mfa.png" alt-text="Screenshot showing MFA configuration.":::
 
