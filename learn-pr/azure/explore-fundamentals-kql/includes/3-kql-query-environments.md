@@ -22,7 +22,7 @@ Microsoft Fabric is an all-in-one analytics solution for enterprises that covers
 
 For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set).
 
-For more product information, see [What is Real-Time Analytics in Fabric?](/fabric/real-time-analytics/overview)
+For more product information, see [What is Real-Time Intelligence in Fabric?](/fabric/real-time-intelligence/overview)
 
 ## Azure Monitor
 
