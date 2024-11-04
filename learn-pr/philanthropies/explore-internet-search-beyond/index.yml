@@ -7,6 +7,7 @@ metadata:
   title: Explore internet search and beyond    
   description: Discover the intricacies of internet search engines and reasoning engines in this comprehensive module. Learn how search engines crawl, index, and rank content to deliver relevant results, and explore the emerging field of reasoning engines. Enhance your skills in prompt engineering and critical thinking to optimize search queries and evaluate search technologies effectively.
   ms.topic: module
+  ms.service: artificial-intelligence
   moduleType: standard
 title: Explore internet search and beyond
 summary: Learn the intricacies of internet search engines and reasoning engines, and enhance your skills in prompt engineering and critical thinking.
