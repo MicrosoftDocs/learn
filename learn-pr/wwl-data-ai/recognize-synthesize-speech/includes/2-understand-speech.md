@@ -18,6 +18,6 @@ To synthesize speech, the system typically *tokenizes* the text to break it down
 
 You can use the output of speech synthesis for many purposes, including:
 - Generating spoken responses to user input
-- Creating voice menus for telephone systems
+- Creating voice menus for phone systems 
 - Reading email or text messages aloud in hands-free scenarios
 - Broadcasting announcements in public locations, such as railway stations or airports
