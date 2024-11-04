@@ -1,4 +1,4 @@
-Blazor provides many features to get you started with delivering your next web app project fast. To help you decide whether you should use Blazor for your next great web app, let's take a tour of the core capabilities of Blazor.
+Blazor provides many features to help you get started and deliver your next web app project fast. Let's take a tour of the core capabilities of Blazor to help you decide whether you should use Blazor for your next great web app.
 
 ## Blazor components
 
@@ -47,4 +47,4 @@ You can choose to render different components from the server or the client with
 
 ## Using Blazor to build a pizza shop
 
-The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides built-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work from the server, interactive components are rendered on the client via WebAssembly. The entire app is built with a single web development stack so the app comes together quickly and soon the pizza orders are flowing in.
+The UI of the pizza shop app breaks down into many reusable components: a page layout with a navbar, individual pages, a pizza catalog and editor, an order component, and so on. Blazor provides build-in support for many of these components, like components for forms and validation. Many of the pages in the app can be handled from the server using static server-side rendering so that the site is mostly stateless and ready to scale. Where more interactivity is needed, the components are made interactive by applying an interactive render mode. To offload work from the server, interactive components are rendered on the client via WebAssembly. By building the entire app with a single web development stack, the app comes together quickly and soon the pizza orders are flowing in.
