@@ -14,7 +14,7 @@ KQL was developed for Azure Data Explorer and can be used in various environment
 
 For more product information, see [What is Azure Data Explorer?](/azure/data-explorer/data-explorer-overview)
 
-## Synapse Real-Time Analytics in Microsoft Fabric
+## Real-Time Intelligence in Microsoft Fabric
 
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near-real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Analytics is a fully managed big-data analytics platform optimized for streaming and time-series data. Real-Time Analytics contains what we can think of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Queryset to run queries, view, and customize query results on data from a KQL database. You can also save queries for later use, or share with others to collaborate on data exploration.
 
