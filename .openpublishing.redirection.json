@@ -1,6 +1,30 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/2-use-sql-query-editor.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/3-explore-visual-query-editor.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/4-use-client-tools.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/5-exercise-query-data-warehouse-microsoft-fabric.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/7-summary.yml",
+      "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/route-and-process-data-logic-apps/9-summary.yml",
       "redirect_url": "/training/modules/route-and-process-data-logic-apps/10-summary"
     },
