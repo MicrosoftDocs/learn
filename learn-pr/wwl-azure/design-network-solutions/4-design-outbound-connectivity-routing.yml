@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.design-outbound-connectivity-routing
 title: Design outbound connectivity and routing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design outbound connectivity and routing
   description: "Design outbound connectivity with NAT and define routes in routing tables."
   ms.date: 10/09/2023

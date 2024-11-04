@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.recover-specific-data-git-commands
 title: Recover specific data by using Git commands
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recover specific data by using Git commands
   description: "Recover specific data by using Git commands"
   ms.date: 05/24/2024

@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-blob-storage-costs.2-design-a-strategy-for-using-tiered-storage
 title: Design a strategy for using tiered storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a strategy for using tiered storage
   description: Design a strategy for using tiered storage
   ms.date: 11/02/2023
@@ -39,3 +41,4 @@ quiz:
     - content: Archive to Hot
       isCorrect: false
       explanation: Any change from Archive involves rehydration, which may take several hours to complete.
+

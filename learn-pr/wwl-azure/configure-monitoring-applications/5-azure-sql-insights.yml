@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-applications.azure-sql-insights
 title: Azure SQL Insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure SQL Insights
   description: "Azure SQL Insights"
   ms.date: 10/25/2023

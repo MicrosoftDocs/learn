@@ -2,6 +2,8 @@
 uid: learn.wwl.build-language-solution-azure-openai.exercise
 title: Exercise - Integrate Azure OpenAI into your app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Integrate Azure OpenAI into your app
   description: Develop a console app with a hands on lab. This lab walks through using the C# and Python SDK to connect to Azure OpenAI for natural language processing.
   author: ivorb
@@ -17,3 +19,4 @@ labId: 152392
 labModal: true
 content: |
   [!include[](includes/5-exercise.md)]
+

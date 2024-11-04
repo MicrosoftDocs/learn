@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-restore-azure-arc-enabled-sql-managed-instance-database
 title: Exercise - Restore AdventureWorks2019 database in an Azure Arc-enabled SQL Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: learning-content
   description: Restore a database to an Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/exercise-restore-azure-arc-enabled-sql-managed-instance-database.md)]
+

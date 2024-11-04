@@ -2,6 +2,8 @@
 uid: learn.advocates.send-crop-weather-alerts.2-application-architecture
 title: Weather alert application architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Weather alert application architecture
   description: Review the application architecture and its multiple components. 
   author: acomfort248

@@ -2,6 +2,8 @@
 uid: learn.azure.create-your-first-speech-to-text-app.create-single-shot-recognition-speech-to-text-app
 title: Create a single-shot recognition speech to text application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a single-shot recognition speech to text application
   description: Learn how to create a single-shot recognition speech to text application.
   author: rmcmurray
@@ -14,3 +16,4 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/4-create-single-shot-recognition-speech-to-text-app.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-api-management.exercise-create-backend-api
 title: Exercise - Create a backend API
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a backend API
   description: "Exercise - Create a backend API"
   ms.date: 10/28/2024

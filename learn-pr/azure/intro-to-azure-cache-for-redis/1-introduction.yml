@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-cache-for-redis.1-introduction  
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction  
   title: Introduction to Microsoft Azure Cache for Redis
   description: Evaluate whether Azure Cache for Redis is the appropriate caching solution for your apps.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

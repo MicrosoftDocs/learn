@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.machine-learning-model-nasa.7-visualize-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Visualize the machine learning model 
   description: Use libraries to visualize the model you made.
   ms.date: 09/04/2024

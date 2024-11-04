@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-network-routing-endpoints.review-system-routes
 title: Review system routes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review system routes
   description: "Review how Azure implements system routes and route tables."
   ms.date: 06/14/2024

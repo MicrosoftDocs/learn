@@ -2,6 +2,8 @@
 uid: learn.wwl.design-for-user-identities-profiles.personal-multi-session-desktop-scenarios
 title: Personal and multi-session desktop scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Personal and multi-session desktop scenarios
   description: "Personal and multi-session desktop scenarios"
   ms.date: 02/10/2023

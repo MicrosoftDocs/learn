@@ -2,6 +2,8 @@
 uid: learn.wwl.classify-images-custom-vision.exercise
 title: Exercise - Explore image classification
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore image classification
   description: Exercise - Explore image classification
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/3-create-image-classifier.md)]
+

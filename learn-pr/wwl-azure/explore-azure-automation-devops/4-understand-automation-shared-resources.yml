@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-automation-devops.understand-automation-shared-resources
 title: Understand automation shared resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand automation shared resources
   description: "Understand automation shared resources"
   ms.date: 05/23/2024

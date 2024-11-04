@@ -2,6 +2,8 @@
 uid: learn.azure.intro-cloud-everyone.cloud-everyone
 title: What is Cloud for Everyone?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Cloud for Everyone?
   description: You learn about Cloud for Everyone.
   ms.date: 04/30/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-purpose.md)]
+

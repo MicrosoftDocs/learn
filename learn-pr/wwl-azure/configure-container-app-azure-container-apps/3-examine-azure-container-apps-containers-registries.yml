@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-container-app-azure-container-apps.examine-azure-container-apps-containers-registries
 title: Examine Azure Container Apps containers and containers registries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Container Apps containers and containers registries
   description: "Examine Azure Container Apps containers and containers registries"
   ms.date: 10/29/2024

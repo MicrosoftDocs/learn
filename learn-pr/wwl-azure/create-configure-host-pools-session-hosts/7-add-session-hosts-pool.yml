@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-host-pools-session-hosts.add-session-hosts-pool
 title: Add session hosts to a host pool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add session hosts to a host pool
   description: "Add session hosts to a host pool"
   ms.date: 08/22/2024

@@ -2,6 +2,8 @@
 uid: learn.introduction-code-to-cloud.exercise-deploy-to-code-to-cloud-using-starter-template
 title: Exercise - Deploy to Code to Cloud using a starter template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy to Code to Cloud using a starter template
   description: Exercise - Use a starter template with Code-to-Cloud
   ms.date: 09/04/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/3-exercise-deploy-to-code-to-cloud-using-starter-template.md)]
+

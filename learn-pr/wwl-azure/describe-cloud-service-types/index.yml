@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-cloud-service-types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe cloud service types
   description: "Introduction to cloud service types (Infrastructure, Platform, and Software as a Service models) and associated use cases for each."
   ms.date: 09/19/2024

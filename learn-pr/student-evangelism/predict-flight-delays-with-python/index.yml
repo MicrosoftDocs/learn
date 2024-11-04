@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-flight-delays-with-python
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Predict flight delays by creating a machine learning model in Python
   description: Learn how to import airline arrival data into a Jupyter notebook, use Pandas and Scikit-Learn, and then visualize the output with Matplotlib.
   ms.date: 02/24/2019
@@ -41,3 +43,4 @@ units:
 - learn.student-evangelism.predict-flight-delays-with-python.summary
 badge:
   uid: learn.student-evangelism.predict-flight-delays-with-python.badge
+

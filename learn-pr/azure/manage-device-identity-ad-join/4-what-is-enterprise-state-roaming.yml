@@ -2,6 +2,8 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-enterprise-state-roaming
 title: What is Enterprise State Roaming?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Enterprise State Roaming?
   description: Learn about Enterprise State Roaming.
   ms.date: 03/17/2023
@@ -36,3 +38,4 @@ quiz:
     - content: "Improved consumer data management"
       isCorrect: false
       explanation: "The three benefits of Enterprise State Roaming are: separation of corporate and consumer data, enhanced security, and better management."
+

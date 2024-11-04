@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise3
 title: Exercise - Protect the web application from malicious traffic and block unauthorized access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Protect the web application from malicious traffic and block unauthorized access
   description: "Exercise - Protect the web application from malicious traffic and block unauthorized access"
   ms.date: 03/08/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-system-health-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage system health on Azure Stack Hub
   description: "Manage system health on Azure Stack Hub"
   ms.date: 08/10/2022
@@ -51,3 +53,4 @@ units:
 - learn.wwl.manage-system-health-azure-stack-hub.summary
 badge:
   uid: learn.wwl.manage-system-health-azure-stack-hub.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-storage.explore-azure-virtual-machine-network-file-system-storage
 title: Explore Azure Virtual Machine NFS storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Machine NFS storage
   description: "Explore Azure Virtual Machine NFS storage"
   ms.date: 01/09/2024

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.choose-the-right-cli-tool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the right command-line tool
   description: Comparison of command-line tool options for managing and provisioning Azure resources
   ms.published: 02/27/2023
@@ -13,3 +15,4 @@ title: Choose the right command-line tool
 durationInMinutes: 3
 content: |
   [!include[](includes/choose-the-right-cli-tool.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.identify-sap-certified-configurations.discover-supported-azure-virtual-machine-types-for-sap-netweaver-ascs-sap-netwea
 title: Discover supported Azure Virtual Machines for SAP NetWeaver instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover supported Azure Virtual Machines for SAP NetWeaver instances
   description: "Discover supported Azure Virtual Machines for SAP NetWeaver instances."
   ms.date: 09/19/2024

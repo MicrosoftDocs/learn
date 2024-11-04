@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.secure
 title: Secure Azure Data Share
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure Azure Data Share
   description: "Secure Azure Data Share"
   ms.date: 01/05/2022

@@ -2,6 +2,8 @@
 uid: learn.azure-mission-critical.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: In this challenge module, you start your journey toward the mission critical grade by improving the resiliency and observability of an example workload.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-user-group-accounts.create-administrative-units
 title: Create administrative units
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create administrative units
   description: "Create administrative units"
   ms.date: 07/02/2024

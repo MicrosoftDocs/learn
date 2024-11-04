@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-network-security-issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot network security issues with Microsoft Azure
   description: "Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023
@@ -56,3 +58,4 @@ units:
 - learn.wwl.troubleshoot-network-security-issues.summary
 badge:
   uid: learn.wwl.troubleshoot-network-security-issues.badge
+

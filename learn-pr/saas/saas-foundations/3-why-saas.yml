@@ -2,6 +2,8 @@
 uid: learn.saas-foundations.why-saas
 title: Why build SaaS?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Why build SaaS?
   description: Learn why SaaS is a popular model and why software providers and customers prefer SaaS.
   ms.date: 05/28/2024

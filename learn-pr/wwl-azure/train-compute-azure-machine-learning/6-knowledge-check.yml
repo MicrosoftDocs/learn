@@ -2,6 +2,8 @@
 uid: learn.wwl.train-compute-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -39,3 +41,4 @@ quiz:
     - content: "Explore the Monitoring tab of the run in the Azure Machine Learning studio."
       isCorrect: true
       explanation: "That's correct. The Monitoring tab will show the average GPU utilization for the run."
+

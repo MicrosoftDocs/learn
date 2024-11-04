@@ -2,6 +2,8 @@
 uid: learn.introduction-to-microsoft-datacenters.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summarizes the Introduction to Microsoft Datacenters module.
   ms.date: 07/17/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
+

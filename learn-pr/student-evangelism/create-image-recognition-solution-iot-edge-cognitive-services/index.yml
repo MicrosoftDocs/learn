@@ -2,6 +2,8 @@
 # Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
   description: "This is a computer vision solution using Azure IoT Edge"
   ms.date: 07/10/2024
@@ -55,3 +57,4 @@ units:
 - learn.oxford.create-image-recognition-with-azure-iot-edge.monitor-solution
 - learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
 - learn.oxford.create-image-recognition-with-azure-iot-edge.summary
+

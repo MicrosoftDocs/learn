@@ -2,6 +2,8 @@
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-exercise-integrate-web-api-with-azure-api-management
 title: Exercise - Integrate OpenAPI enabled web API with Azure API Management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Integrate OpenAPI enabled web API with Azure API Management
   description: Integrate an OpenAPI enabled web API published to Azure App Service with Azure API Management instance.
   ms.date: 09/13/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-integrate-web-api-with-azure-api-management.md)]
+

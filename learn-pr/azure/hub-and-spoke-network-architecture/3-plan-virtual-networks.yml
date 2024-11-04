@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.hub-and-spoke-network-architecture.3-plan-virtual-networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan virtual networks in Azure
   description: Plan virtual networks in Azure
   ms.date: 02/19/2024
@@ -36,3 +38,4 @@ quiz:
     - content: "It depends on the size of the circuit."
       isCorrect: true
       explanation: "The limit is based on the SKU and size of the ExpressRoute circuit. At present, 100 is the maximum for both."
+

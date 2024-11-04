@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-subscriptions.obtain-subscription
 title: Obtain an Azure subscription
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Obtain an Azure subscription
   description: "Obtain an Azure subscription"
   ms.date: 10/27/2023

@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-add-bicep-deployment-task-pipeline
 title: Exercise - Add a Bicep deployment task to the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a Bicep deployment task to the pipeline
   description: Deploy a Bicep infrastructure as code template by using Azure Pipelines and create variables to make your pipeline code reusable.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-add-bicep-deployment-task-pipeline.md)]
+

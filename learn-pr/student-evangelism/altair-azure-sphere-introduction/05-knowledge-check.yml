@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
@@ -48,3 +50,4 @@ quiz:
       isCorrect: false
       explanation: "These cloud services form part of the Altair solution."
   
+

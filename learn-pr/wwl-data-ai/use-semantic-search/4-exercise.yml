@@ -2,6 +2,8 @@
 uid: learn.use-semantic-search.exercise
 title: Exercise - Use semantic ranking on an index
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use semantic ranking on an index
   description: Learn how to use semantic ranking on an index.
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]
+

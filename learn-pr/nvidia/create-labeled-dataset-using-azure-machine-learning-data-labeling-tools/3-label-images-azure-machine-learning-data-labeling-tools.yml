@@ -2,6 +2,8 @@
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.label-images-azure-machine-learning-data-labeling-tools
 title: Label images with Azure Machine Learning data labeling tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Label images with Azure Machine Learning data labeling tools
   description: Label images with Azure Machine Learning data labeling tools.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-label-images-azure-machine-learning-data-labeling-tools.md)]
+

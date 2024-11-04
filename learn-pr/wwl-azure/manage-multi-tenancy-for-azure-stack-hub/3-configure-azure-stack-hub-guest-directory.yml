@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-guest-directory
 title: Configure Azure Stack Hub guest directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Stack Hub guest directory
   description: "Configure Azure Stack Hub guest directory"
   ms.date: 10/26/2022
