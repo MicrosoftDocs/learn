@@ -30,7 +30,7 @@ To enable a service endpoint, you must:
 1. Turn off public access to the service.
 1. Add the service endpoint to a virtual network.
 
-When you enable a service endpoint, you restrict the flow of traffic and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
+When you enable a service endpoint, you restrict the flow of traffic and enable your Azure VMs to access the service directly from your private address space. Devices can't access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
 
 This is an example route table before enabling a service endpoint:
 
@@ -58,7 +58,7 @@ All traffic for the service now is routed to the **VirtualNetworkServiceEndpoint
 
 ## Service endpoints and hybrid networks
 
-Service resources that you've secured by using virtual network service endpoints are not, by default, accessible from on-premises networks. To access resources from an on-premises network, use NAT IPs. If you use ExpressRoute for connectivity from on-premises to Azure, you have to identify the NAT IP addresses ExpressRoute uses. By default, each circuit uses two NAT IP addresses to connect to the Azure backbone network. You then need to add these IP addresses into the Azure service resource's IP firewall configuration (for example, Azure Storage).
+Service resources that you've secured by using virtual network service endpoints aren't, by default, accessible from on-premises networks. To access resources from an on-premises network, use NAT IPs. If you use ExpressRoute for connectivity from on-premises to Azure, you have to identify the NAT IP addresses ExpressRoute uses. By default, each circuit uses two NAT IP addresses to connect to the Azure backbone network. You then need to add these IP addresses into the Azure service resource's IP firewall configuration (for example, Azure Storage).
 
 The following diagram shows how you can use a service endpoint and firewall configuration to enable on-premises devices to access Azure Storage resources:
 

@@ -34,7 +34,7 @@ Rules have several properties:
 |Port range     | An individual port or range of ports  |
 |Action     | Allow or deny the traffic      |
 
-Network security group security rules are evaluated by priority. They use the 5-tuple information (source, source port, destination, destination port, and protocol) to allow or deny the traffic. When the conditions for a rule match the device configuration, rule processing stops.
+Network security group security rules are evaluated by priority. They use the five-tuple information (source, source port, destination, destination port, and protocol) to allow or deny the traffic. When the conditions for a rule match the device configuration, rule processing stops.
 
 For example, suppose your company has created a security rule to allow inbound traffic on port 3389 (RDP) to your web servers, with a priority of 200. Next, suppose that another admin has created a rule to deny inbound traffic on port 3389, with a priority of 150. The deny rule takes precedence because it's processed first. The rule with priority 150 is processed before the rule with priority 200.
 
@@ -71,7 +71,7 @@ You can use augmented security rules for network security groups to simplify man
 - Service tags
 - App security groups
 
-Suppose your company wants to restrict access to resources in your datacenter, spread across several network address ranges. With augmented rules, you can add all these ranges into a single rule, reducing the administrative overhead and complexity in your network security groups.
+Suppose your company wants to restrict access to resources in your datacenter spread across several network address ranges. With augmented rules, you can add all these ranges into a single rule, reducing the administrative overhead and complexity in your network security groups.
 
 ### Service tags
 
@@ -101,7 +101,7 @@ For example, your company has many front-end servers in a virtual network. The w
 
 :::image type="content" source="../media/2-asg-nsg.svg" alt-text="Diagram of app security groups.":::
 
-Without app security groups, you'd need to create a separate rule for each VM. ALternatively, you could add a network security group to a subnet, and then add all the VMs to that subnet.
+Without app security groups, you'd need to create a separate rule for each VM. Alternatively, you'd need to add a network security group to a subnet, and then add all the VMs to that subnet.
 
 The key benefit of app security groups is that it makes administration easier. You can easily add and remove network interfaces to an app security group as you deploy or redeploy app servers. You can also dynamically apply new rules to an app security group, which are then automatically applied to all the VMs in that app security group.
 
