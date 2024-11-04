@@ -44,13 +44,13 @@ quiz:
     choices:
     - content: A search engine uses natural language processing to understand context, whereas a reasoning engine relies on keyword matching.
       isCorrect: false
-      explanation: "Incorrect: Search engines and reasoning engines can both use natural language processing, or NLP. Search engines often use NLP to improve search results, where reasoning engines use NLP for logical reasoning."
+      explanation: "Incorrect: Search engines and reasoning engines can both use natural language processing. Search engines often use it to improve search results, where reasoning engines use it for logical reasoning."
     - content: A search engine primarily utilizes data analysis, whereas a reasoning engine is used for web browsing.
       isCorrect: false
       explanation: "Incorrect: Search engines are not primarily used for data analysis. They're used for retrieving information from the web."
     - content: A search engine retrieves information based on keyword matching, whereas a reasoning engine generates new information by applying logical rules and using large language technology.
       isCorrect: true
       explanation: "Correct: Search engines retrieve information based on keyword matching. Reasoning engines generate new information by applying logical rules, so they're suitable for tasks that require inference and decision-making."
-    - content: A search engine operates on structured data, whereas a reasoning engine processes through unstructured data.
+    - content: A search engine operates on structured data, whereas a reasoning engine processes unstructured data.
       isCorrect: false
       explanation: "Incorrect: Search engines can operate on both structured and unstructured data. Reasoning engines can also process both types of data, depending on their design and application."

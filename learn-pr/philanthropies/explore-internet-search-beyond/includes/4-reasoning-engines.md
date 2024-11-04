@@ -4,4 +4,4 @@ In this video, you explore how these advancements transformed search engines int
 
 > [!VIDEO https://go.microsoft.com/fwlink/?linkid=2294511]
 
-It's no longer just about finding an answer; it's about creating responses that are informative, relevant, and engaging. Reasoning engines don't just provide answers. They also understand the context and nuances of your queries to deliver more personalized responses.
+It's no longer just about finding an answer; it's about creating responses that are informative, relevant, and engaging. Reasoning engines don't just provide answers. They understand the context and nuances of your queries to deliver more personalized responses.

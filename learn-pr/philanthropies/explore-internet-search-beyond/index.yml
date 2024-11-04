@@ -7,13 +7,14 @@ metadata:
   title: Explore internet search and beyond    
   description: Discover the intricacies of internet search engines and reasoning engines in this comprehensive module. Learn how search engines crawl, index, and rank content to deliver relevant results, and explore the emerging field of reasoning engines. Enhance your skills in prompt engineering and critical thinking to optimize search queries and evaluate search technologies effectively.
   ms.topic: module
+  ms.service: copilot
   moduleType: standard
 title: Explore internet search and beyond
 summary: Learn the intricacies of internet search engines and reasoning engines, and enhance your skills in prompt engineering and critical thinking.
 abstract: |
   By completing this module, you'll be able to:
   - Evaluate the differences between a search engine and a reasoning engine by comparing their functionalities, underlying technologies, and applications. 
-  - Assess the effectiveness of the crawling, indexing, and ranking processes in search engines and understand how these processes contribute to the retrieval of relevant search results. 
+  - Assess the effectiveness of the crawling, indexing, and ranking processes in search engines, and understand how these processes contribute to the retrieval of relevant search results. 
   - Assess the importance of prompt engineering by evaluating the effectiveness of various prompts, critiquing best practices in prompting, and determining how critical thinking plays a crucial part. 
 prerequisites: A basic understanding of AI 
 iconUrl: /learn/achievements/generic-badge.svg

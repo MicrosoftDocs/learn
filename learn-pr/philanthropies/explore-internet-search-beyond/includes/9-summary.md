@@ -1,4 +1,4 @@
-As you've seen, search technology has evolved significantly. It has transitioned from traditional search engines to advanced reasoning engines. These advancements have enhanced our ability to access and interact with information by making the process more intuitive and efficient.
+Search technology has evolved significantly. It has transitioned from traditional search engines to advanced reasoning engines. These advancements have enhanced our ability to access and interact with information by making the process more intuitive and efficient.
 
 In this module, you explored:
 
