@@ -10,9 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labId: 100992
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-custom-vision.md)]
