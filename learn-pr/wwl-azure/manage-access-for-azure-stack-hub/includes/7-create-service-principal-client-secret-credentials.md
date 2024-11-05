@@ -74,7 +74,7 @@ $SpObject
 
 ```
 ApplicationIdentifier : S-1-5-21-1634563105-1224503876-2692824315-2623
-ClientId              : 8e0ffd12-26c8-4178-a74b-f26bd28db601
+ClientId              : 00001111-aaaa-2222-bbbb-3333cccc4444
 Thumbprint            : 
 ApplicationName       : Azurestack-YourApp-6967581b-497e-4f5a-87b5-0c8d01a9f146
 ClientSecret          : 6RUWLRoBw3EebBLgaWGiowCkoko5_j_ujIPjA8dS
