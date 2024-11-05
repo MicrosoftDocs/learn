@@ -32,11 +32,11 @@ quiz:
     choices:
     - content: "Azure AI Custom Vision (Training)"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI services multi-service resource."
+      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
     - content: "Azure AI Vision"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI services multi-service resource."
+      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
     - content: "Azure AI Services"
       isCorrect: true
-      explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI services multi-service resource."
+      explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
 
