@@ -2,6 +2,8 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.solution
 title: Design a data ingestion solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a data ingestion solution
   description: Design a data ingestion solution
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-solution.md)]
+

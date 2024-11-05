@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-virtual-machines.configure-data-collection-rules-iaas-vm-logs
 title: Configure data collection rules for IaaS VM logs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure data collection rules for IaaS VM logs
   description: "Configure data collection rules for IaaS VM logs"
   ms.date: 10/25/2023

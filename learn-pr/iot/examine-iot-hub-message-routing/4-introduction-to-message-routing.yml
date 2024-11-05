@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-iot-hub-message-routing.examine
 title: Examine message routing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine message routing
   description: "Examine message routing"
   ms.date: 02/06/2024

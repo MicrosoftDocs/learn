@@ -2,6 +2,8 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-test-stage-pipeline
 title: Exercise - Add a test stage to your pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a test stage to your pipeline
   description: Add a post-deployment test stage to your Bicep deployment pipeline.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-add-test-stage-pipeline.md)]
+

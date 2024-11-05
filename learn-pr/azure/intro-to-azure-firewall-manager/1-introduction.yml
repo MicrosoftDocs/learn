@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-firewall-manager.1-introduction  
 title: Introduction to Azure Firewall Manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction to Azure Firewall Manager
   description: Learn how you can use Azure Firewall Manager to provide central security policy and route management for your cloud-based security perimeters
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+

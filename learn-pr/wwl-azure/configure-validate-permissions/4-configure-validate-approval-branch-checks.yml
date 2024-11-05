@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-validate-permissions.configure-validate-approval-branch-checks
 title: Configure and validate approval and branch checks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure and validate approval and branch checks
   description: "Configure and validate approval and branch checks."
   ms.date: 1/25/2023

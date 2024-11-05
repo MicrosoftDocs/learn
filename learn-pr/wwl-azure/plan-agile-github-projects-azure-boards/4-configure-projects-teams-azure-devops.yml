@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.configure-projects-teams-azure-devops
 title: Configure projects and teams in Azure DevOps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure projects and teams in Azure DevOps
   description: "Configure projects and teams in Azure DevOps"
   ms.date: 05/24/2024

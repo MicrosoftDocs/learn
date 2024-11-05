@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-generative-ai.exercise
 title: Exercise - Explore Microsoft Copilot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore Microsoft Copilot
   description: Use this exercise to explore generative AI with Microsoft Copilot.
   author: sherzyang
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 40
 content: |
   [!include[](includes/7-exercise.md)]
+

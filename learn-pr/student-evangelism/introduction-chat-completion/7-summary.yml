@@ -2,6 +2,8 @@
 uid: learn.chat-completions.summary
 title: "Summary"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Summary"
   description: Summary of the module.
   ms.date: 12/11/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

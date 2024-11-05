@@ -2,6 +2,8 @@
 uid: learn.azure.test-bicep-code-using-github-actions.lint-validate-bicep-code
 title: Lint and validate your Bicep code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Lint and validate your Bicep code
   description: Learn about linting and validating your Bicep code in a deployment workflow.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-lint-validate-bicep-code.md)]
+

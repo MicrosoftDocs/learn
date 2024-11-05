@@ -2,6 +2,8 @@
 uid: learn.analyze-logs-with-kql.identify-machines-with-high-cpu
 title: Exercise - Identify machines with high CPU usage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Identify machines with high CPU usage
   description: "Write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity, and which machines are being underused."

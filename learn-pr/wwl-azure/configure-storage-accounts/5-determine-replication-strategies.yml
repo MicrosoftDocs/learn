@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-storage-accounts.determine-replication-strategies
 title: Determine replication strategies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine replication strategies
   description: "Determine replication strategies"
   ms.date: 08/06/2024

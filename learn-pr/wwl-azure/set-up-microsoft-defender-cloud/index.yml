@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.set-up-microsoft-defender-cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up Microsoft Defender for Cloud
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 04/24/2024

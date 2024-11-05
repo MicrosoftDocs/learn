@@ -2,6 +2,8 @@
 uid: learn.azure.child-extension-bicep-templates.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists, which is rare)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
@@ -53,3 +55,4 @@ quiz:
     - content: You can access the properties of existing resources by using the resource's symbolic name.
       isCorrect: true
       explanation: Correct. You can use an existing resource to access its properties, including secrets that the resource exposes.
+

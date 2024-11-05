@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-network-monitoring.monitor-your-networks-using-azure-monitor
 title: Monitor your networks using Azure monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor your networks using Azure monitor
   description: "Monitor your networks using Azure monitor"
   ms.date: 08/19/2024

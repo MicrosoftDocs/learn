@@ -2,6 +2,8 @@
 uid: learn.azure.aspnet-session.2-exercise-deploy-resources
 title: Exercise - Set up an application and deploy Azure resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up an application and deploy Azure resources
   description: Exercise - Set up an application and deploy Azure resources
   ms.date: 02/27/2024
@@ -30,3 +32,4 @@ content: |
 #   azure:
 #     resource:
 #       type: Microsoft.Sql/servers
+

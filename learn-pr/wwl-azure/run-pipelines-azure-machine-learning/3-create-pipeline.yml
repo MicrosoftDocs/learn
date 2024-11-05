@@ -2,6 +2,8 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning.create-pipeline
 title: Create a pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a pipeline
   description: Create a pipeline
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-pipeline.md)]
+

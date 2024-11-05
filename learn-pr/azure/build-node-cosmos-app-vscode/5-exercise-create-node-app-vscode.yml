@@ -2,6 +2,8 @@
 uid: learn.azure.build-node-cosmos-app-vscode.5-exercise-create-node-app-vscode
 title: Exercise - Create a Node.js app in Visual Studio Code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a Node.js app in Visual Studio Code
   description: Use Visual Studio Code to create and run a Node.js app
   ms.date: 09/30/2022
@@ -15,3 +17,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-node-app-vscode.md)]
+

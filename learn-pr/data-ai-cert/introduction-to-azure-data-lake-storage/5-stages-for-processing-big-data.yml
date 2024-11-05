@@ -2,6 +2,8 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.stages-for-processing-big-data
 title: Understand the stages for processing big data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the stages for processing big data
   description: "Understand the stages for processing big data"
   ms.date: 07/18/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-performance
 title: Troubleshoot VM performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot VM performance
   description: "Troubleshoot VM performance"
   ms.date: 02/17/2023

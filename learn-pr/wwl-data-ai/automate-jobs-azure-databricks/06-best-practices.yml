@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-jobs-azure-databricks.best-practices
 title:  Explore best practices and guidelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore best practices and guidelines
   description: "Explore best practices and guidelines"
   ms.date: 08/05/2024

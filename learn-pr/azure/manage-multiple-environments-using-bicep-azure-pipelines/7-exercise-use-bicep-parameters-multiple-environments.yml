@@ -2,6 +2,8 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-use-bicep-parameters-multiple-environments
 title: Exercise - Use Bicep parameters with multiple environments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Use Bicep parameters with multiple environments
   description: Update a deployment pipeline to use variable groups for each environment's settings.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-use-bicep-parameters-multiple-environments.md)]
+

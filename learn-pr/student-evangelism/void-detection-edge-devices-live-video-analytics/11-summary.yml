@@ -2,6 +2,8 @@
 uid: learn.oxford.void-detection-edge-devices-lva.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of content covered in this module.
   ms.date: 07/20/2024

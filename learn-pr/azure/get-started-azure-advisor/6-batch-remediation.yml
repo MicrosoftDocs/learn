@@ -2,6 +2,8 @@
 uid: learn.azure.get-started-azure-advisor.6-batch-remediation
 title: Batch remediation of issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Batch remediation of issues
   description: Learn about Quick Fix and batch remediation of issues that Azure Advisor has surfaced.
   ms.date: 10/20/2023

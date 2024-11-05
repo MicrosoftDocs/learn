@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.remote-desktop-protocol-shortpath-azure-virtual-desktop-scenarios
 title: RDP Shortpath for Azure Virtual Desktop sample scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: RDP Shortpath for Azure Virtual Desktop sample scenarios
   description: "RDP Shortpath for Azure Virtual Desktop sample scenarios"
   ms.date: 08/22/2024

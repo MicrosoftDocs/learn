@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy the Altair emulator to Azure Sphere
   description: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
   ms.date: 11/16/2021
@@ -51,3 +53,4 @@ units:
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.summary
 badge:
   uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.badge
+

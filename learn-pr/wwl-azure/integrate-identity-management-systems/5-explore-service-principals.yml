@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-identity-management-systems.explore-service-principals
 title: Explore workload identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore workload identities
   description: "Explore workload identities"
   ms.date: 05/27/2024

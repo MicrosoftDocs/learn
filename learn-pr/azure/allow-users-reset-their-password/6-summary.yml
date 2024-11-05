@@ -2,6 +2,8 @@
 uid: learn.azure.allow-users-to-reset-their-password.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, you'll review what you've learned about self-service password reset in Microsoft Entra ID.
   ms.date: 09/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

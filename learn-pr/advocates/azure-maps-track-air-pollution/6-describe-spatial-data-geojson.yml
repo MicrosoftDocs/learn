@@ -2,6 +2,8 @@
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-geojson
 title: Describe spatial data with GeoJSON
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe spatial data with GeoJSON
   description: Learn about the GeoJSON format and how to use it to describe spatial data on a map.
   author: acomfort248

@@ -114,4 +114,4 @@ By integrating this information into your investigations, you can enhance the ac
 
 ## Knowledge check
 
-Choose the best response for the question below, then select **Check your answers**.
+Choose the best response for the question below.

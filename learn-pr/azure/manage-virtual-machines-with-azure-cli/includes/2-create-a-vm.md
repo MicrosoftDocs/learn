@@ -67,13 +67,13 @@ Once Azure CLI finishes creating the VM, you'll get a JSON response which includ
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/20f4b944-fc7a-4d38-b02c-900c8223c3a0/resourceGroups/Learn-2568d0d0-efe3-4d04-a08f-df7f009f822a/providers/Microsoft.Compute/virtualMachines/SampleVM",
+  "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/Learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Compute/virtualMachines/SampleVM",
   "location": "westus",
   "macAddress": "00-0D-3A-58-F8-45",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.4",
   "publicIpAddress": "40.83.165.85",
-  "resourceGroup": "2568d0d0-efe3-4d04-a08f-df7f009f822a",
+  "resourceGroup": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
   "zones": ""
 }
 ```

@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-sap-hana.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: In this guide, we have gone over the key points for using application volume groups including application volume group architecture, proximity placement groups, and Azure NetApp Files planning.       

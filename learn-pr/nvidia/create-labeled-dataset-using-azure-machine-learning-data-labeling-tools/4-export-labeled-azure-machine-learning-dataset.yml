@@ -2,6 +2,8 @@
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.export-labeled-azure-machine-learning-dataset
 title: Export a labeled Azure Machine Learning dataset
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Export a labeled Azure Machine Learning dataset
   description: Export a labeled Azure Machine Learning dataset.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-export-labeled-azure-machine-learning-dataset.md)]
+

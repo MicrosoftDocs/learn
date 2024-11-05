@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.troubleshoot-model-deployment
 title: Troubleshoot model deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot model deployment
   description: "Troubleshoot model deployment"
   ms.date: 03/22/2023

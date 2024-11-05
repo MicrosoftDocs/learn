@@ -2,6 +2,8 @@
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.4-analyze-scenario-map-it-hdinsight-configuration-option
 title: Analyze a scenario and map it to a HDInsight configuration option.
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze a scenario and map it to a HDInsight configuration option.
   description: "Analyze a scenario and map it to a HDInsight configuration option."
   ms.date: 04/06/2024

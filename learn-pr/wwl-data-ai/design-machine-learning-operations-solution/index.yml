@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-machine-learning-operations-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a machine learning operations solution
   description: Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2.
   author: wwlpublish
@@ -37,3 +39,4 @@ units:
 - learn.wwl.design-machine-learning-operations-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-operations-solution.badge
+

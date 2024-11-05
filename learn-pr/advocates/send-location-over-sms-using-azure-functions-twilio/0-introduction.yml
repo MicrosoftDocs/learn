@@ -2,6 +2,8 @@
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.0-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Azure Functions and Twilio
   ms.date: 05/06/2022
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/0-introduction.md)]
+

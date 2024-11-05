@@ -2,6 +2,8 @@
 uid: learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan
 title: Develop a business continuity and disaster recovery plan
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop a business continuity and disaster recovery plan
   description: Develop a business continuity and disaster recovery plan.
   ms.date: 04/15/2024

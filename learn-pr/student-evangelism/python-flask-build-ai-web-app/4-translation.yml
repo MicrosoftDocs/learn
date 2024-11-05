@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-text
 title: Translation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Translation
   description: Learn about Azure AI Translator.
   ms.date: 04/08/2022
@@ -15,3 +17,4 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-translation.md)]
   
+

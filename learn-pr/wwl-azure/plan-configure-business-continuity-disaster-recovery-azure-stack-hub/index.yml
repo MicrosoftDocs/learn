@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and configure business continuity and disaster recovery
   description: "Plan and configure business continuity and disaster recovery"
   ms.date: 06/09/2022
@@ -48,3 +50,4 @@ units:
 - learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.summary
 badge:
   uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.badge
+

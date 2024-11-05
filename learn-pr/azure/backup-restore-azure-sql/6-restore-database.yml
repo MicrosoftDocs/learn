@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.6-restore-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recover data by restoring an Azure SQL database
   description: Learn how to restore data from automated backups and long-term retention.
   ms.date: 12/11/2023

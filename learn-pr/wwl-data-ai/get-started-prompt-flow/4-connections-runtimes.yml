@@ -2,6 +2,8 @@
 uid: learn.get-started-prompt-flow.connections-runtimes
 title: Explore connections and runtimes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore connections and runtimes
   description: "Learn about the core components connections and runtimes to work with prompt flow."
   ms.date: 11/30/2023

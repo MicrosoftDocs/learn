@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.choose-appropriate-artifact-source
 title: Choose the appropriate artifact source
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the appropriate artifact source
   description: "Choose the appropriate artifact source"
   ms.date: 05/28/2024

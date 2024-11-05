@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore infrastructure as code and configuration management
   description: Explore infrastructure as code and configuration management
   ms.date: 05/08/2024
@@ -52,3 +54,4 @@ units:
 - learn.wwl.explore-infrastructure-as-code-configuration-management.summary
 badge:
   uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge
+

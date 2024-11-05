@@ -2,6 +2,8 @@
 uid: learn.wwl.discover-devops.summary
 title: 'Summary'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Summary'
   description: "In this module, you have learned about DevOps and its role in addressing the challenges associated with traditional application lifecycle."
   ms.date: 02/05/2024

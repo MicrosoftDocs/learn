@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Send an email when virtual machines change
   description: Check an event and trigger an email
   ms.date: 10/04/2024
@@ -12,3 +14,4 @@ durationInMinutes: 7
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-email-vm-change.md)]
+

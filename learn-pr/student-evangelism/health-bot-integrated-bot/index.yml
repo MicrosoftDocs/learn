@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-integrated-bot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Azure Health Bot with a database
   description: This module explains how to connect an Azure health bot to a database.
   ms.collection: TBD
@@ -37,3 +39,4 @@ units:
   - learn.health-bot-integrated-bot.6-summary
 badge:
   uid: learn.student-evangelism.health-bot-integrated-bot.badge
+

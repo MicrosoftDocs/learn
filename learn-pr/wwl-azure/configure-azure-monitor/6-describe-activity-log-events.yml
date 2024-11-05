@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-monitor.describe-activity-log-events
 title: Describe activity log events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe activity log events
   description: "Describe activity log events"
   ms.date: 11/02/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-pipelines-azure-synapse-analytics
 title: Understand pipelines in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand pipelines in Azure Synapse Analytics
   description: "Understand pipelines in Azure Synapse Analytics"
   ms.date: 10/06/2023

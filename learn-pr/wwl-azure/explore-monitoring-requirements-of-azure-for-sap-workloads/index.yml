@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore monitoring requirements of Azure for SAP workloads
   description: "This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

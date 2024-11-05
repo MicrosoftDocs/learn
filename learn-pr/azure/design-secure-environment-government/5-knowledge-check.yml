@@ -2,6 +2,8 @@
 uid: learn.azure.design-secure-environment-government.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: A knowledge check for the Design cloud solutions for the public sector module.
   ms.date: 05/04/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "Customer Lockbox."
       isCorrect: true
       explanation: "Correct: Customer Lockbox for Azure allows customers to approve/deny elevated access requests for customer data in support scenarios. It’s an extension of the Just-in-Time (JIT) workflow that comes with full audit logging enabled."
+

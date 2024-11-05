@@ -147,7 +147,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Set the default subscription for all PowerShell commands in this session
 
-1. Run the following command to obtain your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*:
+1. Run the following command to obtain your subscription(s) and their ID(s). The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It looks something like *aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e*:
 
     ```azurepowershell
     Get-AzSubscription

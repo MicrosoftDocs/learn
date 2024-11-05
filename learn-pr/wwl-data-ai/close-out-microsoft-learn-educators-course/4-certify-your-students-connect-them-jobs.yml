@@ -2,6 +2,8 @@
 uid: learn.wwl.close-out-microsoft-learn-educators-course.certify-your-students-connect-them-jobs
 title: Certify your students and connect them to jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Certify your students and connect them to jobs
   description: "Certify your students and connect them to jobs"
   ms.date: 07/02/2024

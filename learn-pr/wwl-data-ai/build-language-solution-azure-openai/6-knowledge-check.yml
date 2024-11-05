@@ -2,6 +2,8 @@
 uid: learn.wwl.build-language-solution-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding of the content presented in this module.
   author: ivorb
@@ -47,3 +49,4 @@ quiz:
     - content: "TranslateCompletion"  
       isCorrect: false  
       explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
+

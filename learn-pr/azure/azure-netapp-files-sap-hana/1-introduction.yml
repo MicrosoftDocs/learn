@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-sap-hana.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Using Azure NetApp Files application volume groups for SAP HANA module      

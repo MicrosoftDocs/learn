@@ -2,6 +2,8 @@
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.model-performance-inconsistencies
 title: Find model performance inconsistencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Find model performance inconsistencies
   description: "Find model performance inconsistencies"
   ms.date: 08/30/2024

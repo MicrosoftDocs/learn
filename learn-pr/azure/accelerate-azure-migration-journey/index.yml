@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.accelerate-migration-journey
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Accelerate your migration, modernization, and innovation journey to Azure
   description: Learn how to accelerate your migration and modernization journey to Azure.
   manager: jsuri
@@ -53,3 +55,4 @@ units:
 - learn.azure.accelerate-migration-journey.8-summary
 badge:
   uid: learn.azure.accelerate-migration-journey.badge
+

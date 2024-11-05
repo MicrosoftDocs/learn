@@ -2,6 +2,8 @@
 uid: learn.azure.introduction-to-deployment-stacks.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
   ms.date: 08/01/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: | 
   [!include[](includes/7-summary.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.7-exercise-host-a-static-website-using-a-storage-account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use a storage account to host a static website
   description: Customize your storage account, publish your function app and view your application hosted in the cloud.
   ms.date: 08/12/2024
@@ -12,3 +14,4 @@ title: Exercise - Use a storage account to host a static website
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-host-a-static-website-using-a-storage-account.md)]
+

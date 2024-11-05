@@ -72,4 +72,4 @@ The [Microsoft Sentinel repository](https://github.com/Azure/Azure-Sentinel) con
 
 The repo contains folders with contributed content for several areas of Microsoft Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Microsoft Sentinel workspace.
 
-Choose the best response for the following question, then select **Check your answers**.
+Choose the best response for the following question.
