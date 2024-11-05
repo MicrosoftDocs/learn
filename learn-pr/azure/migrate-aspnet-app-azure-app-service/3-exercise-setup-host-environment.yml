@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-aspnet-app-azure-app-service.exercise-setup-host-environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up host environment
   description: Describes the steps to prepare Azure subscription and source application to be containerized.
   ms.date: 01/02/2024

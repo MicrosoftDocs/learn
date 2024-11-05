@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-load-balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Load Balancer
   description: "Configure Azure Load Balancer"
   ms.date: 03/15/2024

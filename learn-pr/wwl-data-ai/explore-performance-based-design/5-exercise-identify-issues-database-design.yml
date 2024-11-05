@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-performance-based-design.exercise-identify-issues-database-design
 title: 'Exercise: Identify database design issues'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Identify database design issues'
   description: "Exercise: Identify database design issues"
   ms.date: 04/28/2022

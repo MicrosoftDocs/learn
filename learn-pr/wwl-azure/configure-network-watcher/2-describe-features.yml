@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-network-watcher.describe-features
 title: Describe Azure Network Watcher features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Network Watcher features
   description: "Describe Azure Network Watcher features"
   ms.date: 01/24/2024

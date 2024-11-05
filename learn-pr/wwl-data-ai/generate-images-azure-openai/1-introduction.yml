@@ -2,6 +2,8 @@
 uid: learn.wwl.generate-images-azure-openai.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Overview of DALL-E in Azure OpenAI service
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

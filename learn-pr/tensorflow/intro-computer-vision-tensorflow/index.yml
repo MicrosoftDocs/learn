@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-computer-vision
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to computer vision with TensorFlow
   description: Learn how to perform different computer vision tasks using TensorFlow.
   author: shwars
@@ -42,3 +44,4 @@ units:
 - learn.tensorflow.intro-computer-vision.summary
 badge:
   uid: learn.tensorflow.intro-computer-vision.badge
+

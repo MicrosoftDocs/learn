@@ -3,6 +3,8 @@ uid: learn.azure.route-and-process-data-logic-apps.knowledge-check
 title: Knowledge check
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/25/2024
@@ -39,3 +41,4 @@ quiz:
     - content: "Eight"
       isCorrect: false
       explanation: "Six blobs are created for the six attachments. One blob is created for the email body."
+

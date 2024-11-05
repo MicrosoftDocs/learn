@@ -2,6 +2,8 @@
 uid: learn.oxford.intro-iot-funtions-iot.how-azure-functions-works
 title: How Azure Functions for IoT work
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Functions for IoT work
   description: In this section, we provide a high-level explanation of the parts of the product and explain how these parts work together. We also show how the product would work when solving the scenario outlined in the introduction section
   ms.date: 07/25/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/3-how.md)]
+

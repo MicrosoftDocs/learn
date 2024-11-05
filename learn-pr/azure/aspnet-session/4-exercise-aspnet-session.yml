@@ -2,6 +2,8 @@
 uid: learn.azure.aspnet-session.4-exercise-aspnet-session
 title: Exercise - Store session state information in an ASP.NET web app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Store session state information in an ASP.NET web app
   description: Configure Azure Cache for Redis, and configure the cache as the session state provider for the web app.
   ms.date: 02/27/2024
@@ -22,3 +24,4 @@ content: |
 #   azure:
 #     resource:
 #       type: "Microsoft.Cache/Redis"
+

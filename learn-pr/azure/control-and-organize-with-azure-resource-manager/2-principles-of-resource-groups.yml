@@ -2,6 +2,8 @@
 uid: learn.control-and-organize-with-resource-manager.2-principles-of-resource-groups
 title: Principles of resource groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Principles of resource groups
   description: In this unit, we'll cover the key principles of resource groups
   ms.date: 09/27/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-principles-of-resource-groups.md)]
+

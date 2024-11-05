@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-api-management.create-advanced-policies
 title: Create advanced policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create advanced policies
   description: "Create advanced policies"
   ms.date: 10/28/2024

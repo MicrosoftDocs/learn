@@ -2,6 +2,8 @@
 uid: learn.wwl.security-public-access-azure-resources.azure-application-gateway
 title: Plan and implement an Azure Application Gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement an Azure Application Gateway
   description: "Plan and implement an Azure Application Gateway"
   ms.date: 06/25/2024

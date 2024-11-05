@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Microsoft Purview and Azure Synapse Analytics
   description: "Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking."
   ms.date: 07/20/2023

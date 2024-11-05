@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-postgresql-architecture.understand-postgresql-shared-memory
 title: Understand PostgreSQL shared memory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand PostgreSQL shared memory
   description: "Understand PostgreSQL shared memory."
   ms.date: 05/08/2024

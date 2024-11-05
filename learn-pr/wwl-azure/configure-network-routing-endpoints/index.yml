@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-network-routing-endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure network routing and endpoints
   description: Configure network routing and endpoints.
   ms.date: 06/14/2024
@@ -39,3 +41,4 @@ units:
 - learn.wwl.configure-network-routing-endpoints.summary-resources
 badge:
   uid: learn.wwl.configure-network-routing-endpoints.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.train-models-notebooks
 title: Train and track models in notebooks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train and track models in notebooks
   description: Train and track models in notebooks
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-train-models-notebooks.md)]
+

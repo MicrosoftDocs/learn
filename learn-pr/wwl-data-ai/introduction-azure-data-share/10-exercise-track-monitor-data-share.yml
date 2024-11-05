@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.exercise-track-monitor-data-sharing
 title: 'Exercise: Track and monitor data sharing using Azure Data Share'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Track and monitor data sharing using Azure Data Share'
   description: "Exercise: Track and monitor data sharing using Azure Data Share"
   ms.date: 01/05/2022

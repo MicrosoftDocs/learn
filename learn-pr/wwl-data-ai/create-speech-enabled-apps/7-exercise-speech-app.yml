@@ -2,6 +2,8 @@
 uid: learn.wwl.create-speech-enabled-apps.exercise-speech-app
 title: Exercise - Create a speech-enabled app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a speech-enabled app
   description: Exercise - Create a speech-enabled app
   author: wwlpublish
@@ -16,3 +18,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-speech-app.md)]
+

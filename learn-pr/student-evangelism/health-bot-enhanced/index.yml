@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-enhanced
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enhanced Azure Health Bot
   description: Learn how to enhance your healthcare bot with advanced functionalities.
   ms.collection: TBD
@@ -42,3 +44,4 @@ units:
   - learn.health-bot-enhanced.6-summary
 badge:
   uid: learn.student-evangelism.health-bot-enhanced.badge
+

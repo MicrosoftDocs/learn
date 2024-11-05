@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-cost-optimization.design-with-cost-efficiency-mindset
 title: Design with a cost-efficiency mindset
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design with a cost-efficiency mindset
   description: Learn how to spend only on what you need to achieve the highest return on your investments.
   ms.date: 10/23/2023

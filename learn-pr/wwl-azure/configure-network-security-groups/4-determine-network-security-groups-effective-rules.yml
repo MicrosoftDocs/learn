@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-network-security-groups.determine-nsg-effective-rules
 title: Determine network security group effective rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine network security group effective rules
   description: "Determine network security group effective rules"
   ms.date: 08/29/2024

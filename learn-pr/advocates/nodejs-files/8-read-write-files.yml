@@ -2,6 +2,8 @@
 uid: learn.azure.nodejs-files.8-read-write-files
 title: Read and write to files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Read and write to files
   description: Read and write to files
   ms.date: 04/19/2024
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/8-read-write-files.md)]
+

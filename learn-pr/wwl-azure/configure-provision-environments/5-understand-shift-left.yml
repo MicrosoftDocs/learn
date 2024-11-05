@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-provision-environments.understand-shift-left
 title: Understand Shift-left
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Shift-left
   description: "Understand Shift-left"
   ms.date: 05/06/2024

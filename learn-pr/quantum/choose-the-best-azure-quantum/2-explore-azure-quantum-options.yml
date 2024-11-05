@@ -2,6 +2,8 @@
 uid: learn.quantum.choose-the-best-azure-quantum.explore-azure-quantum-options
 title: Explore the different Azure Quantum options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the different Azure Quantum options
   description: Explore the different Azure Quantum options
   ms.date: 12/13/2023

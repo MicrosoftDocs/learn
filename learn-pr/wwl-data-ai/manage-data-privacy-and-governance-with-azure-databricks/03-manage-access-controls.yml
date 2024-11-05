@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.manage-access-controls
 title: Manage access controls in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage access controls in Azure Databricks
   description: "Manage access controls in Azure Databricks with Unity Catalog."
   ms.date: 08/14/2024

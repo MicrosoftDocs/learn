@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-configuration-management-hdinsight-aks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Configure and manage HDInsight on AKS cluster
   description: Learn how to set up and control HDInsight on AKS cluster. This guide walks you through the process, making it easy to configure and manage HDInsight within AKS.
@@ -43,3 +45,4 @@ units:
 - learn.intro-configuration-management-hdinsight-aks.9-summary
 badge:
   uid: learn.intro-configuration-management-hdinsight-aks.badge
+

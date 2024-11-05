@@ -2,6 +2,8 @@
 uid: learn.pitch-your-product-prototype.3-tailor-your-message
 title: Tailor the message for your audience
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Tailor the message for your audience
   description: This unit teaches you how to tailor the message for your audience.
   author: czhu89
@@ -36,3 +38,4 @@ quiz:
     - content: "Their products, markets, current competitors, and their business model."
       isCorrect: true
       explanation: "Clear and useful information about the customer that lets you shape your pitch to their needs."
+

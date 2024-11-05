@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.choose-application-delivery-service
 title: Choose an application delivery service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose an application delivery service
   description: "Choose an application delivery service"
   ms.date: 10/09/2023

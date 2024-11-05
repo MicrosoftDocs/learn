@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-load-balancer.create-rules
 title: Create load balancer rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create load balancer rules
   description: "Create load balancer rules"
   ms.date: 03/15/2024

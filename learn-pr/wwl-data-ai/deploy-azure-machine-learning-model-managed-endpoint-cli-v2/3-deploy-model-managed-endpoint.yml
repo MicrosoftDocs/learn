@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.deploy-your-model-managed-endpoint
 title: Deploy your model to a managed endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy your model to a managed endpoint
   description: Deploy your model to a managed endpoint
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-deploy-model-managed-endpoint.md)]
+

@@ -8,6 +8,8 @@
 
 uid: learn.azure.nodejs-files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Work with files and directories in a Node.js app using JavaScript
   description: Build an app that manipulates files and directories with Node.js using JavaScript CommonJS.
   ms.date: 04/19/2024
@@ -50,3 +52,4 @@ units:
   - learn.azure.nodejs-files.10-summary
 badge:
   uid: learn.azure.nodejs-files.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check about configuring language models."
   ms.date: 7/2/2024
@@ -45,3 +47,4 @@ quiz:
     - content: "Development toolbox"
       isCorrect: false
       explanation: "Incorrect. The development toolbox can contain various tools for development purposes, but it isn't the place where you would test a deployed model."
+

@@ -2,6 +2,8 @@
 uid: learn.azure.encrypt-sector-data.3-data-encryption-transit
 title: Protect data in transit
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect data in transit
   description: Discussion of the stakes and options of encrypting data in transit to protect it from interception when using Azure.
   ms.date: 05/24/2024

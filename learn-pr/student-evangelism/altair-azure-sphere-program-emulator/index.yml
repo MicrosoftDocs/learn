@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Program the Altair 8800 emulator
   description: Learn how to program the Altair 8800 emulator.
   ms.date: 11/16/2021
@@ -50,3 +52,4 @@ units:
 - learn.student-evangelism.altair-azure-sphere-program-emulator.summary
 badge:
   uid: learn.student-evangelism.altair-azure-sphere-program-emulator.badge
+

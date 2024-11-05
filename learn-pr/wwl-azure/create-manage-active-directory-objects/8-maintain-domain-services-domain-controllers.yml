@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-active-directory-objects.maintain-domain-services-domain-controllers
 title: Maintain Active Directory Domain Services domain controllers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Maintain Active Directory Domain Services domain controllers
   description: "Maintain Active Directory Domain Services domain controllers"
   ms.date: 10/22/2024

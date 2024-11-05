@@ -2,6 +2,8 @@
 uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.exercise-preprocess-data-rapids
 title: 'Exercise: Preprocess data with RAPIDs'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Preprocess data with RAPIDs"
   description: "Exercise: Preprocess data with RAPIDs"
   author: wwlpublish
@@ -18,3 +20,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-preprocess-data-rapids.md)]
+

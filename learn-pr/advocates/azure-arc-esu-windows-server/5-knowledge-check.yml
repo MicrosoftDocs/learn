@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom: team=cloud_advocates
 durationInMinutes: 5
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   questions:
     - content: "You want to delegate the task of creating and assigning ESUs to Azure Arc enabled Windows Server 2012 computers to your subordinate. You want to follow the principle of least privilege. Which Azure RBAC role should you assign to the subordinate so the are able to create and assign ESUs to these Arc enabled servers?"

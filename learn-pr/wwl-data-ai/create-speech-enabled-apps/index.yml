@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-speech-enabled-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create speech-enabled apps with Azure AI services
   description: Create speech-enabled apps with Azure AI services.
   author: wwlpublish
@@ -49,3 +51,4 @@ units:
 - learn.wwl.create-speech-enabled-apps.summary
 badge:
   uid: learn.wwl.create-speech-enabled-apps.badge
+

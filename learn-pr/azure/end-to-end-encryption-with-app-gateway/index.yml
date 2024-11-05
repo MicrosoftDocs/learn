@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.end-to-end-encryption-with-app-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Encrypt network traffic end to end with Azure Application Gateway
   description: Secure the traffic from your users all the way to your web servers by enabling TLS encryption on Application Gateway.
   manager: kumud
@@ -41,3 +43,4 @@ units:
 - learn.end-to-end-encryption-with-app-gateway.7-summary
 badge:
   uid: learn.end-to-end-encryption-with-app-gateway.badge
+

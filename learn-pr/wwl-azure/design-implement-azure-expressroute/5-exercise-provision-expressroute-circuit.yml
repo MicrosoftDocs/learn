@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-azure-expressroute.exercise-provision-expressroute-circuit
 title: 'Exercise: provision an ExpressRoute circuit'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: provision an ExpressRoute circuit'
   description: "Exercise: provision an ExpressRoute circuit"
   ms.date: 11/02/2023

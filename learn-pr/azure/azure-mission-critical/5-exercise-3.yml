@@ -2,6 +2,8 @@
 uid: learn.azure-mission-critical.exercise-three
 title: Exercise - Build an application health model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Build an application health model
   description: Define a health model and implementation that allows you to detect, diagnose, and predict issues across this architecture.
@@ -38,4 +40,5 @@ quiz:
     - content: "Azure Storage"
       isCorrect: false
       explanation: "Azure Storage can be used to offload telemetry for historical analysis, but it's not well-suited as the unified sink for telemetry."
+
 

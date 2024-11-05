@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-container-app-azure-container-apps.review-azure-container-apps-service
 title: Review the Azure Container Apps service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review the Azure Container Apps service
   description: "Review the Azure Container Apps service"
   ms.date: 10/29/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.install-configure-apps-session-host.publish-application-remoteapp
 title: Publish an application as a RemoteApp
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Publish an application as a RemoteApp
   description: "Publish an application as a RemoteApp"
   ms.date: 08/13/2024

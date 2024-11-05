@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.train-custom-vision-ai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use AI to recognize objects in images by using the Custom Vision service
   description: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
   author: sguthals
@@ -50,3 +52,4 @@ units:
 - learn.student-evangelism.train-custom-vision-ai.9-summary
 badge:
   uid: learn.student-evangelism.train-custom-vision-ai.badge
+

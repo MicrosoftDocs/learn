@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-storage
 title: Troubleshoot VM storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot VM storage
   description: "Troubleshoot VM storage"
   ms.date: 02/17/2023

@@ -11,7 +11,7 @@
 
 1. After you're signed in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
 
-1. Get the subscription ID. The following command lists your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It should look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. Get the subscription ID. The following command lists your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It should look something like `aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`.
 
     ```azurecli
     az account list -o table
@@ -131,11 +131,11 @@ In the following exercise, you deploy a template from your local machine. The na
 
     ```json
     {
-      "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2020-08-19",
+      "id": "/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2020-08-19",
       "location": null,
       "name": "DeployLocalTemplate-2020-08-19",
       "properties": {
-        "correlationId": "6ad759d5-cda5-4a71-a772-05a03d983c6f",
+        "correlationId": "aaaa0000-bb11-2222-33cc-444444dddddd",
         "debugSetting": null,
         "dependencies": [],
         "duration": "PT8.9060761S",
@@ -144,8 +144,8 @@ In the following exercise, you deploy a template from your local machine. The na
         "onErrorDeployment": null,
         "outputResources": [
           {
-            "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/    learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Network/virtualNetworks/VNet-001",
-            "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd"
+            "id": "/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/    learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a/providers/Microsoft.Network/virtualNetworks/VNet-001",
+            "resourceGroup": "learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a"
           }
         ],
         "outputs": null,
@@ -190,7 +190,7 @@ In the following exercise, you deploy a template from your local machine. The na
         "timestamp": "2020-08-19T14:47:06.403362+00:00",
         "validatedResources": null
       },
-      "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd",
+      "resourceGroup": "learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a",
       "tags": null,
       "type": "Microsoft.Resources/deployments"
     }
@@ -223,11 +223,11 @@ In the next exercise, you pass inline parameters to your deployment. You need to
 
     ```json
       {- Finished ..
-        "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2-2020-08-19",      
+        "id": "/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2-2020-08-19",      
         "location": null,
         "name": "DeployLocalTemplate-2-2020-08-19",
         "properties": {
-          "correlationId": "edb2992e-08be-4ec2-940e-df23b1c09453",
+          "correlationId": "bbbb1111-cc22-3333-44dd-555555eeeeee",
           "debugSetting": null,
           "dependencies": [],
           "duration": "PT4.6990388S",
@@ -236,8 +236,8 @@ In the next exercise, you pass inline parameters to your deployment. You need to
           "onErrorDeployment": null,
           "outputResources": [
             {
-              "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Network/virtualNetworks/VNet-001",
-              "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd"
+              "id": "/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a/providers/Microsoft.Network/virtualNetworks/VNet-001",
+              "resourceGroup": "learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a"
             }
           ],
           "outputs": null,
@@ -282,7 +282,7 @@ In the next exercise, you pass inline parameters to your deployment. You need to
           "timestamp": "2020-08-19T16:40:20.249786+00:00",
           "validatedResources": null
         },
-        "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd",
+        "resourceGroup": "learn-cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a",
         "tags": null,
         "type": "Microsoft.Resources/deployments"
       }
@@ -319,11 +319,11 @@ In the next exercise, you pass inline parameters to your deployment. You need to
 
     ```json
       {- Finished ..
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
+        "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
         "location": null,
         "name": "DeployLocalTemplate-3-2020-08-19",
         "properties": {
-          "correlationId": "2a668f55-d8d0-48ac-862f-7170b48c02b6",
+          "correlationId": "cccc2222-dd33-4444-55ee-666666ffffff",
           "debugSetting": null,
           "dependencies": [],
           "duration": "PT4.2058912S",
@@ -332,8 +332,8 @@ In the next exercise, you pass inline parameters to your deployment. You need to
           "onErrorDeployment": null,
           "outputResources": [
             {
-              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/VNet-001",
-              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
+              "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b/providers/Microsoft.Network/virtualNetworks/VNet-001",
+              "resourceGroup": "learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b"
             }
           ],
           "outputs": null,
@@ -378,7 +378,7 @@ In the next exercise, you pass inline parameters to your deployment. You need to
           "timestamp": "2020-08-19T20:42:44.069215+00:00",
           "validatedResources": null
         },
-        "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+        "resourceGroup": "learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b",
         "tags": null,
         "type": "Microsoft.Resources/deployments"
       }
@@ -412,11 +412,11 @@ In some instances, you need to deploy from an external or remote location instea
 
     ```json
     {- Finished ..
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-4-2020-08-19",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-4-2020-08-19",
       "location": null,
       "name": "DeployLocalTemplate-4-2020-08-19",
       "properties": {
-        "correlationId": "2ccc49de-9d46-4375-a25d-19ec10daf88b",
+        "correlationId": "dddd3333-ee44-5555-66ff-777777aaaaaa",
         "debugSetting": null,
         "dependencies": [],
         "duration": "PT24.3286124S",
@@ -425,8 +425,8 @@ In some instances, you need to deploy from an external or remote location instea
         "onErrorDeployment": null,
         "outputResources": [
           {
-            "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
-            "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
+            "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
+            "resourceGroup": "learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b"
           }
         ],
         "outputs": {
@@ -477,7 +477,7 @@ In some instances, you need to deploy from an external or remote location instea
         "timestamp": "2020-08-19T20:53:36.759312+00:00",
         "validatedResources": null
       },
-      "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+      "resourceGroup": "learn-dddd3d3d-ee4e-ff5f-aa6a-bbbbbb7b7b7b",
       "tags": null,
       "type": "Microsoft.Resources/deployments"
     }

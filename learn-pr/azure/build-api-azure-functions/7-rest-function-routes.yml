@@ -2,6 +2,8 @@
 uid: learn.azure.build-api-azure-functions.5-rest-function-routes
 title: REST and function routes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: REST and function routes
   description: REST and function routes
   ms.date: 02/27/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/7-rest-function-routes.md)]
+

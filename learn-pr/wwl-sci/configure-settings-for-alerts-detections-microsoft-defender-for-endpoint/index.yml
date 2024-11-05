@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure for alerts and detections in Microsoft Defender for Endpoint
   description: "Configure for alerts and detections in Microsoft Defender for Endpoint"
   ms.date: 11/28/2023

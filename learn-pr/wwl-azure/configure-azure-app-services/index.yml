@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-app-services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure App Service
   description: "Configure Azure App Service"
   ms.date: 11/14/2023

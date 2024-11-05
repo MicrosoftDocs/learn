@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-security.manage-users-and-groups-in-aad
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage users and groups in Microsoft Entra ID
   description: Manage users and groups in Microsoft Entra ID
   ms.date: 11/08/2023
@@ -46,3 +48,4 @@ units:
 - learn.azure-security.manage-users-and-groups-in-aad.summary
 badge:
   uid: learn.azure-security.manage-users-and-groups-in-aad.badge
+

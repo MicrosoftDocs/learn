@@ -2,6 +2,8 @@
 uid: learn.chain-azure-functions-data-using-input-output-bindings.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What we learned
   description: Summary
   ms.date: 06/06/2024
@@ -50,3 +52,4 @@ quiz:
     - content: "Two"
       isCorrect: false
       explanation: "A function must have exactly one trigger."
+

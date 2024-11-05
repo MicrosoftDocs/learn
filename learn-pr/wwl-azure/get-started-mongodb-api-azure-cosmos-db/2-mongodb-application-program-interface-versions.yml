@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.api-for-mongodb-api-versions
 title: Azure Cosmos DB for MongoDB API versions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Cosmos DB for MongoDB API versions
   description: "Azure Cosmos DB for MongoDB API versions"
   ms.date: 03/20/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
 title: Decide between compute options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Decide between compute options
   description: Decide between compute options
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-decide-between-compute-options.md)]
+

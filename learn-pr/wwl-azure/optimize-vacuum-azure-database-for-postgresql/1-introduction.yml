@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 10/05/2022

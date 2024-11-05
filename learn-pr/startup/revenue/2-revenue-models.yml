@@ -2,6 +2,8 @@
 uid: learn.startups.revenue.revenue-models
 title: Revenue models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Revenue models
   description: Learn about revenue models. See detailed descriptions and examples of revenue models that tech startups commonly use.
   ms.date: 06/18/2024

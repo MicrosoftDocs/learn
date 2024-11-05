@@ -2,6 +2,8 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles
 title: Describe Microsoft Intelligent Data Platform roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Microsoft Intelligent Data Platform roles
   description: "Describe Microsoft Intelligent Data Platform roles"
   ms.date: 03/06/2023

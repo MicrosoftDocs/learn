@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-computer-vision.image-data
 title: Introduction to processing image data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to processing image data
   description: In this unit, we learn how computer images can be represented as tensors in PyTorch, and how to do handle image datasets
   author: shwars
@@ -31,4 +33,5 @@ quiz:
         - content: "2x200x320"
           isCorrect: false
           explanation: "Remember that each second takes 30 clips!"
+
 
