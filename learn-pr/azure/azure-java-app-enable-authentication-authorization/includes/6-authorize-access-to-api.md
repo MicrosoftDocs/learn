@@ -37,7 +37,7 @@ Several of MSAL's token acquisition methods require a `scopes` parameter, which 
 
 MSAL caches a token after it has been acquired. For Web applications that use the OpenID Connect authorization code flow, the recommended pattern in the controllers is to:
 
-* First try to get a token silently from the cache before attempting to acquire a token by other means:
+* First try to get a token silently from the cache before attempting to acquire a token by other means. The following code is an excerpt from the implementation of the `acquireTokenSilently` method in the `AuthHelper` class.
 
     ```Java
     final SilentParameters parameters = SilentParameters

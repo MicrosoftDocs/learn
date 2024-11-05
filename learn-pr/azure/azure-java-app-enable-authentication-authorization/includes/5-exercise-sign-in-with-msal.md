@@ -30,13 +30,13 @@ To configure the code, open the application project in your preferred IDE like I
 
 1. Open the `./src/main/resources/authentication.properties` file.
 
-2. Find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Directory (tenant) ID** (as shown in the following image), because the app was registered with the **Accounts in this organizational directory only** option.
+2. In the `aad.authority` property, find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Directory (tenant) ID** (as shown in the following image), because the app was registered with the **Accounts in this organizational directory only** option.
 
-3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **Application (client) ID** (clientId) of the registered application copied from the Azure portal.
+3. In the `aad.clientId` property, find the string `{enter-your-client-id-here}` and replace the existing value with the **Application (client) ID** (clientId) of the registered application copied from the Azure portal.
 
    :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Microsoft Entra ID on Azure portal.":::
 
-4. Find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** you saved during the creation of the app in the Azure portal.
+4. In the `aad.secret` property, find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** you saved during the creation of the app in the Azure portal.
 
 ## Run the application
 
@@ -69,11 +69,11 @@ To add authentication to your application, you'll need to include the servlet cl
     <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>msal4j</artifactId>
-        <version>1.9.1</version>
+        <version>1.17.2</version>
     </dependency>
     ```
 
-1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user will sign in.
+1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user will sign in.The following code is an excerpt from the implementation of the `redirectToAuthorizationEndpoint` method in the `AuthHelper` class.
 
     ```Java
     final ConfidentialClientApplication client = getConfidentialClientInstance();
@@ -89,7 +89,7 @@ To add authentication to your application, you'll need to include the servlet cl
     - **REDIRECT_URI**: The redirect URI is the URI the identity provider will send the security tokens back to. Microsoft Entra ID will redirect the browser (along with auth code) to this URI after collecting user credentials. It must match the redirect URI in the Microsoft Entra app registration.
     - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
-1. The user is presented with a sign-in prompt by Microsoft Entra ID. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Microsoft Entra ID.
+1. The user is presented with a sign-in prompt by Microsoft Entra ID. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Microsoft Entra ID. The following code is an excerpt from the implementation of the processAADCallback method in the AuthHelper class.
 
     ```Java
     // First, validate the state, then parse any error codes in response, then extract the authCode. Then:
