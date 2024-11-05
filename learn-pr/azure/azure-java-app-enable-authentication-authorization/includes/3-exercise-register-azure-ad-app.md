@@ -15,7 +15,7 @@ Follow these steps to register your application on the Azure portal.
 1. Search for and select **Microsoft Entra ID**.
 1. Under **Manage**, select **App registrations**, then select the  **+ New registration** button.
    :::image type="content" source="../media/app-registration-menu.png" alt-text="Screenshot showing the menu of Microsoft Entra ID on Azure portal.":::
-   :::image type="content" source="../media/app-registration-new-reg.png" alt-text="Screenshot showing the menu of Microsoft Entra ID on Azure portal.":::
+   :::image type="content" source="../media/app-registration-new-reg.png" alt-text="Screenshot showing the new registration button of Microsoft Entra ID on Azure portal.":::
 1. In the **Register an application page** that appears, enter your application's registration information:
    - In the **Name** section, enter a meaningful application name that will be displayed to users of the app; for example, `java-servlet-webapp-authentication`.
    - Under **Supported account types**, select an option.

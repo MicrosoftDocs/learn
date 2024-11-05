@@ -5,7 +5,7 @@ In this exercise, you'll configure the application with permissions and use MSAL
 Web services secured by Microsoft Entra ID define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can access data or act on a user's behalf, it must request these permissions to be approved by the users. You can assign these API permissions to your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
 
 1. In the `App registrations` screen, select the **API permissions** blade in the left to add access to the APIs that your application needs.
-   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the API permissions blade of an app registered with Microsoft Entra ID on Azure portal.":::
+   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the menu of API permissions blade of an app registered with Microsoft Entra ID on Azure portal.":::
    - Select the **+ Add a permission** button.
 
    - Ensure that the **Microsoft APIs** tab is selected.
