@@ -116,14 +116,14 @@ In the following example, the index of the first found character of the characte
 
 1. Update your code in the Visual Studio Code editor as follows:
 
-```csharp
-string message = "Hello, world!";
-char[] charsToFind = { 'a', 'e', 'i' };
+    ```csharp
+    string message = "Hello, world!";
+    char[] charsToFind = { 'a', 'e', 'i' };
 
-int index = message.IndexOfAny(charsToFind);
+    int index = message.IndexOfAny(charsToFind);
 
-Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.");
-```
+    Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.");
+    ```
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
@@ -133,7 +133,7 @@ Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.")
     Found 'e' in 'Hello, world!' at index: 1.
     ```
 
-Update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
+    Update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
 
 1. Update your code in the Visual Studio Code editor as follows:
 
