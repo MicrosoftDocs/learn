@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-indicators
 title: Manage indicators
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage indicators
   description: "Manage indicators"
   ms.date: 11/28/2023

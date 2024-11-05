@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-network-design-azure-container-network-interface.7-exercise-deploy-aks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
   description: Exercise - Deploy an Azure kubernetes service cluster with Azure CNI
   ms.date: 02/15/2024
@@ -15,3 +17,4 @@ interactive: bash
 sandbox: false
 content: |
   [!include[](includes/7-exercise-deploy-aks.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 06/18/2024

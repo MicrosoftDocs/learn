@@ -2,6 +2,8 @@
 uid: learn.create-dashboards-azure-data-explorer.dashboard-parameters
 title: Dashboard parameters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Dashboard parameters
   description: "Learn how to create dashboard parameters, which act as filters on the visuals."

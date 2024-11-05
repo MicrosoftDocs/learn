@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
   description: Learn to extract insights using Azure AI Language and Azure Database for PostgreSQL.
   author: wwlpublish
@@ -42,3 +44,4 @@ units:
 - learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.summary
 badge:
   uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.discover-azure-message-queue.explore-service-bus-message-payloads-serialization
 title: Explore Service Bus message payloads and serialization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Service Bus message payloads and serialization
   description: "Explore Service Bus message payloads and serialization"
   ms.date: 07/18/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-ai-studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Responsible generative AI
   description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Studio.
   author: ivorb
@@ -47,3 +49,4 @@ units:
 - learn.wwl.responsible-ai-studio.summary
 badge:
   uid: learn.wwl.responsible-ai-studio.badge
+

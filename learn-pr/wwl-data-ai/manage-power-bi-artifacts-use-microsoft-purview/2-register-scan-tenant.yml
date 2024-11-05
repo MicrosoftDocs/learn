@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.register-scan-tenant
 title: Register and scan a Power BI tenant
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Register and scan a Power BI tenant
   description: "Register and scan a Power BI tenant"
   ms.date: 07/06/2023

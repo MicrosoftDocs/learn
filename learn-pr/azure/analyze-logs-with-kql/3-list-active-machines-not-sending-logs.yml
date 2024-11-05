@@ -2,6 +2,8 @@
 uid: learn.analyze-logs-with-kql.list-active-machines-not-sending-logs
 title: Exercise - List recently active virtual machines that stopped sending logs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Analyze virtual machine agent health
   description: "Write KQL queries to retrieve and transform data from the heartbeat table in Azure Monitor Log Analytics. Obtain insights about the status of virtual machines in your Azure environment."

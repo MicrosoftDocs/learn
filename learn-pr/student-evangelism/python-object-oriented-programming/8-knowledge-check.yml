@@ -13,7 +13,7 @@ metadata:
     - devx-track-python
 durationInMinutes: 4
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
     - content: What is the difference between a class and an object?

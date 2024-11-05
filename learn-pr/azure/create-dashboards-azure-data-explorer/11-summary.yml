@@ -2,6 +2,8 @@
 uid: learn.create-dashboards-azure-data-explorer.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "This section summarizes what you did in the module, creating dashboards in Azure Data Explorer."

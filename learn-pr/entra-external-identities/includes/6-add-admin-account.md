@@ -109,7 +109,7 @@ The following example assigns the **Security Administrator** role to Adele Vance
 ```json
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 {
-    "principalId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
+    "principalId": "aaaaaaaa-bbbb-cccc-1111-222222222222",
     "roleDefinitionId": "194ae4cb-b126-40b2-bd5b-6091b380977d",
     "directoryScopeId": "/"
 }

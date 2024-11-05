@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.exercise
 title: Exercise - Migrate from MongoDB to Azure Cosmos DB with Azure DMS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Migrate from MongoDB to Azure Cosmos DB with Azure DMS
   description: "Exercise - Migrate from MongoDB to Azure Cosmos DB with Azure DMS"
   ms.date: 02/06/2023

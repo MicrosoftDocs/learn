@@ -2,6 +2,8 @@
 uid: learn.aks-cluster-autoscaling.4-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   type: summary
   title: Summary
   description: Summary
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/4-summary.md)]
+

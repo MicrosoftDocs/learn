@@ -2,6 +2,8 @@
 uid: learn.azure.azure-vmware-solution.securing-network-communication
 title: Securing network communication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Securing network communication
   description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
   ms.date: 03/23/2023

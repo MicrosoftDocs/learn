@@ -2,6 +2,8 @@
 uid: learn.azure.create-foundation-modern-apps.exercise-configure-environment  
 title: Exercise - Configure your development environment with Visual Studio Code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Configure your development environment with Visual Studio Code
   description: Step-by-step description of the development environment needed to complete the module.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-configure-environment.md)]
+

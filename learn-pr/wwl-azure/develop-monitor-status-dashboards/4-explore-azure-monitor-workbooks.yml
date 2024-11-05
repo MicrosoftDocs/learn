@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-monitor-workbooks
 title: Explore Azure Monitor workbooks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Monitor workbooks
   description: "Explore Azure Monitor workbooks"
   ms.date: 05/08/2024

@@ -2,6 +2,8 @@
 uid: learn.iot.connect-iot-edge-device-to-iot-central.deploy-azure-function-to-iot-edge
 title: Use Azure Functions to filter data at the edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Functions to filter data at the edge
   description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
@@ -39,3 +41,4 @@ quiz:
     - content: "It routes messages to specific IoT Hub instances in the cloud"
       isCorrect: false
       explanation: "No. Each IoT Edge device is connected to a specific IoT Hub. Routing doesn't affect this behavior."
+

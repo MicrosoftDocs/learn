@@ -2,6 +2,8 @@
 uid: learn.azure.create-nodejs-project-dependencies.3-exercise-package-json
 title: Exercise - Configure the package.json
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure the package.json
   description: Exercise on how to configure the package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-package-json.md)]
+

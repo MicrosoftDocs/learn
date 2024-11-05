@@ -2,6 +2,8 @@
 uid: learn.azure.discover-azure-government.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: A knowledge check for Discover the potential of Azure for government.
   ms.date: 07/19/2024
@@ -56,3 +58,4 @@ quiz:
     - content: "Azure Stack Hub."
       isCorrect: true
       explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet. Or, where certain workload types must be hosted in a country/region because of law, compliance, or sentiment."
+

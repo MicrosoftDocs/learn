@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided exercise - Manage on-premises Windows servers by using Azure Arc
   description: "In this guided exercise, you practice onboarding, securing, monitoring, and updating on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice."
   ms.date: 06/10/2024

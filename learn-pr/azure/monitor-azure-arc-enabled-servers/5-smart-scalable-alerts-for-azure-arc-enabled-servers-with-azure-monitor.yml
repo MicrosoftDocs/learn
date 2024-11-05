@@ -2,6 +2,8 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor
 title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
   description: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
   ms.date: 08/17/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor.md)]
+

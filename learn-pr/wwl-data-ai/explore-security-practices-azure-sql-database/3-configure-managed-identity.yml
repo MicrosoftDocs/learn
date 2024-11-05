@@ -2,6 +2,8 @@
 uid: learn-wwl.explore-security-practices-azure-sql-database.configure-managed-identity
 title: Configure managed identity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure managed identity
   description: "Learn how to configure managed identity for Azure SQL Database."
   ms.date: 09/24/2024

@@ -2,6 +2,8 @@
 uid: learn.azure.automate-virtual-machine-software-installation-configuration.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 04/04/2024
@@ -38,3 +40,4 @@ quiz:
       isCorrect: false
     - content: A JSON file that defines the operating system version and optional software.
       isCorrect: false
+

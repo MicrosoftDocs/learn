@@ -2,6 +2,8 @@
 uid: learn.align-requirements-in-azure.2-public-private-hybrid
 title: Azure solutions for public, private, and hybrid cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure solutions for public, private, and hybrid cloud
   description: Learn about Azure solutions for public, private, and hybrid cloud.
   ms.date: 10/13/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-mysql-storage-engine.optimize-write-ahead-log
 title: Optimize write ahead logging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize write ahead logging
   description: "Optimize write ahead logging"
   ms.date: 11/08/2022

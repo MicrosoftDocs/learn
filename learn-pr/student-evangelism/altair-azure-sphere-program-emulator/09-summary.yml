@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of how to program the Altair emulator.
   ms.date: 11/16/2021

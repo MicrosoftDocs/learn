@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary of configuring language models."
   ms.date: 7/2/2024

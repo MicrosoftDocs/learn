@@ -2,6 +2,8 @@
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.set-up-http-file
 title:  Set up HTTP file in Visual Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title:  Set up HTTP file in Visual Studio
   description: Deploy an Azure Digital Twins instance, set up an HTTP file in Visual Studio for sending API requests, and learn about the Azure Digital Twin API categories.
   ms.date: 08/08/2024

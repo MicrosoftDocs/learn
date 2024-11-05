@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-system-health-azure-stack-hub.monitor-health-alerts
 title: Monitor health and alerts in Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor health and alerts in Azure Stack Hub
   description: "Monitor health and alerts in Azure Stack Hub"
   ms.date: 08/10/2022

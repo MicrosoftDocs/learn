@@ -2,6 +2,8 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.devops-environment-security-posture
 title: DevOps environment security posture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: DevOps environment security posture
   description: "DevOps environment security posture"
   ms.date: 08/27/2024

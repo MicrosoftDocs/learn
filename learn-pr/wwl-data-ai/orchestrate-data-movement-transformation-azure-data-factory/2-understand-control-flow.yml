@@ -2,6 +2,8 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.understand-control-flow
 title: Understand data factory control flow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data factory control flow
   description: "Understand data factory control flow"
   ms.date: 04/19/2022

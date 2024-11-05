@@ -222,4 +222,4 @@ The next step is to download the report from the Azure Storage area to your loca
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

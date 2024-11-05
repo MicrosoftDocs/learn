@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Cosmos DB for NoSQL
   description: "Select between the various throughput offerings in Azure Cosmos DB for NoSQL."
   ms.date: 10/22/2024
@@ -38,3 +40,4 @@ units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.configure-azure-cosmos-db-sql-api.badge
+

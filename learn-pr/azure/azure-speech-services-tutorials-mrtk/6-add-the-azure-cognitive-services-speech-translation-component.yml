@@ -2,6 +2,8 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.6-add-cognitive-services-speech-translation
 title: Add the Azure AI Speech translation component
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add the Azure AI Speech translation component
   description: Description to Add the Azure AI Speech translation component
   author: marlenaklein-msft
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-add-cognitive-services-speech-translation.md)]
+

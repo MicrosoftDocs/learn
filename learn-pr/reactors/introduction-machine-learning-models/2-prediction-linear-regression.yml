@@ -2,6 +2,8 @@
 uid: learn.reactors.introduction-machine-learning-models.2-prediction-linear-regression
 title: 'Prediction: Linear regression'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Prediction: Linear regression'
   description: Learn how to make predictions with linear regressions in machine learning models for data science.
   ms.date: 05/19/2020

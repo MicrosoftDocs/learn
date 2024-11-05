@@ -2,6 +2,8 @@
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.2-visualize-map-data
 title: Visualize mapping data with the Azure Maps web SDK
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Visualize mapping data with the Azure Maps web SDK
   description: Learn about the visualization capabilities of the Azure Maps web SDK.
   author: acomfort248

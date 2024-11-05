@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-storage-security.determine-storage-service-encryption
 title: Determine Azure Storage encryption
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine Azure Storage encryption
   description: "Determine Azure Storage encryption"
   ms.date: 03/05/2024

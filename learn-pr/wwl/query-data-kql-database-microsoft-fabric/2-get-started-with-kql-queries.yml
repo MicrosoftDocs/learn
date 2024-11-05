@@ -2,6 +2,8 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
 title: Get started with KQL queries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get started with KQL (Kusto Query Language) queries
   description: "Get started with KQL (Kusto Query Language) queries."
   ms.date: 05/14/2024

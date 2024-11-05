@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-cluster-architecture
 title: Azure Kubernetes cluster architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Kubernetes cluster architecture
   description: "Azure Kubernetes cluster architecture"
   ms.date: 04/23/2024

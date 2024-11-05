@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-package-management.introduction-to-azure-artifacts
 title: Introduction to Azure Artifacts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Artifacts
   description: "Introduction to Azure Artifacts"
   ms.date: 05/07/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-calculation-groups.understand
 title: Understand calculation groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand calculation groups
   description: "Understand calculation groups"
   ms.date: 01/05/2023

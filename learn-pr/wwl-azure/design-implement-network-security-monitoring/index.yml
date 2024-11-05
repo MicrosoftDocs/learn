@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-network-security-monitoring
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement network security
   description: You will learn to design and implement network security solutions such as Azure DDoS, Azure Firewall, Network Security Groups, and Web Application Firewall.
   ms.date: 02/08/2024
@@ -53,3 +55,4 @@ units:
 - learn.wwl.design-implement-network-security-monitoring.summary-resources
 badge:
   uid: learn.wwl.design-implement-network-security-monitoring.badge
+

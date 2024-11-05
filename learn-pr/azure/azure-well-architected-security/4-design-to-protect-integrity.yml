@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-security.design-to-protect-integrity
 title: Design to protect integrity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design to protect integrity
   description: Learn how to employ strategies to protect the integrity of the data and resources within your workload.
   ms.date: 12/04/2023
@@ -56,3 +58,4 @@ quiz:
     - content: 'The report is backed up to Azure Storage using the write-once-read-many (WORM) feature.'
       isCorrect: true
       explanation: "Correct. The WORM feature of Azure Storage ensures that the report is immutable."
+

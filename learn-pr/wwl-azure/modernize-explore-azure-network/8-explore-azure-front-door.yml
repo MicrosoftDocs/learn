@@ -2,6 +2,8 @@
 uid: learn.wwl.modernize-explore-azure-network.explore-azure-front-door
 title: Explore Azure Front Door
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Front Door
   description: "Explore Azure Front Door"
   ms.date: 01/09/2024

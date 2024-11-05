@@ -2,6 +2,8 @@
 uid: learn.aks-network-design-azure-container-network-interface.6-sizing the network
 title: Sizing the network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Sizing the network
   description: We reviewed the application to determine how many pods it needs and what kind of virtual machines and how many of them to deploy. Now, we can look at sizing the network.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-size-the-network.md)]
+

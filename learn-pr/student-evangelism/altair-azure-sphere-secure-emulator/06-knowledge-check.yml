@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
@@ -11,7 +13,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
-  Choose the best response for each question, and then select **Check your answers**.
+  Choose the best response for each question.
 quiz:
   questions:
   - content: "Azure Sphere is secure by design and secure by default. This means?"
@@ -26,3 +28,4 @@ quiz:
       isCorrect: false
       explanation: "The application running on Azure Sphere can connect only to network endpoints that are declared in the AllowedConnections section of the app_manifest.json file. You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so that the Altair emulator can connect to these network endpoints."
       
+

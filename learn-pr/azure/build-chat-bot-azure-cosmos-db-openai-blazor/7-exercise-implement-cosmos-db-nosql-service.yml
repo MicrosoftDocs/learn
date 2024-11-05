@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-cosmos-db-nosql-service
 title: Exercise - Implement the Azure Cosmos DB for NoSQL service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Implement the Azure Cosmos DB for NoSQL service
   description: |

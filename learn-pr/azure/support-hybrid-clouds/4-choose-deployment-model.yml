@@ -2,6 +2,8 @@
 uid: learn.azure.support-hybrid-clouds.4-choose-deployment-model
 title: Choose a deployment model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a deployment model
   description: Discussion of a potential Azure cloud architecture for several data classifications with Azure Stack Hub and Azure Stack Edge.
   ms.date: 07/22/2024

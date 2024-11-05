@@ -4,7 +4,7 @@ title: Exercise - Create a Docker Compose file for orchestration
 metadata:
   title: Exercise - Create a Docker Compose file for orchestration
   description: Learn how to group several microservices together in a single application by using Docker Compose file.
-  ms.date: 01/22/2024
+  ms.date: 10/23/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

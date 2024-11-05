@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-cosmos-db.discover-request-units
 title: Discover request units
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover request units
   description: "Discover request units"
   ms.date: 07/12/2024

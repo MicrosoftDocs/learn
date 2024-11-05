@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-data-platform-modernization.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 04/14/2023
