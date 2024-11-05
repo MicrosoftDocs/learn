@@ -36,7 +36,7 @@ Try the same for the **Contributor** and **Reader** roles to see the actions all
 
 ## Examine the built-in roles
 
-Next, let's explore some of the other built-in roles.
+Next, let's explore some of the other built-in roles. In this exercise, we'll use the Azure portal.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -151,10 +151,12 @@ Microsoft Entra ID comes with built-in roles that are likely to cover 99% of wha
 
 You can create a new role through several mechanisms:
 
+* **Microsoft Entra admin center**: You can use the Microsoft Entra admin center to create a custom role by selecting **Roles & admins** under **Roles & admins** in the left menu, then selecting **New custom role**.
+
 * **Azure portal**: You can use the Azure portal to create a custom role by selecting **Microsoft Entra ID** > **Roles and administrators** > **New custom role**.
 
 * **Azure PowerShell**: You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**: You can use a REST call to the Graph API to programmatically create a new role.
 
-This module's Summary section includes a link to the documentation for all three approaches.
+This module's Summary section includes a link to the documentation for these approaches.
