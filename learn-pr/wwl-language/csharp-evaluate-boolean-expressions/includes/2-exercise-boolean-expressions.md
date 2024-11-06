@@ -5,7 +5,7 @@ Examining how to construct and evaluate an expression is a good place to start.
 
 ## What is an expression?
 
-An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are comprised of one or more expressions. For example, the following `if` *statement* contains a single *expression* that returns a single value:
+An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements comprise one or more expressions. For example, the following `if` *statement* contains a single *expression* that returns a single value:
 
 ```c#
 if (myName == "Luiz")
