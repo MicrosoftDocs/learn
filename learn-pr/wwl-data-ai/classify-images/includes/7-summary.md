@@ -6,4 +6,4 @@ Now that you've completed this module, you can:
 - Describe image classification.
 - Train an image classifier.
 
-To find out more about the Azure AI Custom Vision service, see the [Azure AI Custom Vision documentation](/azure/cognitive-services/custom-vision-service/).
+To find out more about the Azure AI Custom Vision service, see the [Azure AI Custom Vision documentation](/azure/ai-services/custom-vision-service/).
