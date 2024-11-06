@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Start with the Tenant Status page. It allows you to view current and important details about your tenant."
       isCorrect: true
-      explanation: "In the Tenant Status page you'll find the Intune Service Health section and the Intune Message Center section. Both of these sections will provide helpful information."
+      explanation: "In the Tenant Status page, you'll find the Intune Service Health section and the Intune Message Center section. Both of these sections will provide helpful information."
     - content: "Start with connector status to determine if Intune is connected to the internet."
       isCorrect: false
-      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details will not provide the status of your Tenant."
+      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details won't provide the status of your Tenant."
     - content: "Start with the off-line device Intune status report."
       isCorrect: false
-      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details will not provide the status of your Tenant."
+      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details won't provide the status of your Tenant."
   - content: "What are some examples of the kind of data Intune reports provide?"
     choices:
     - content: "Device access, storage space availability, and detected use time are all examples of the type of information that Intune reports provide."
