@@ -24,13 +24,13 @@ When you train a model, you can include `mlflow.autolog()` to enable autologging
 
 Optionally, you can specify which flavor you want your model to be identified as by using `mlflow.<flavor>.autolog()`. Some common flavors that you can use with autologging are: 
 
-- Keras: `mlflow.keras.autolog`
+- Keras: `mlflow.keras.autolog()`
 - Scikit-learn: `mlflow.sklearn.autolog()`
-- LightGBM: `mlflow.lightgbm.autolog`
-- XGBoost: `mlflow.xgboost.autolog`
-- TensorFlow: `mlflow.tensorflow.autolog`
-- PyTorch: `mlflow.pytorch.autolog`
-- ONNX: `mlflow.onnx.autolog`
+- LightGBM: `mlflow.lightgbm.autolog()`
+- XGBoost: `mlflow.xgboost.autolog()`
+- TensorFlow: `mlflow.tensorflow.autolog()`
+- PyTorch: `mlflow.pytorch.autolog()`
+- ONNX: `mlflow.onnx.autolog()`
 
 > [!Tip]
 > Explore the complete list of [MLflow's built-in model flavors](https://mlflow.org/docs/latest/models.html#built-in-model-flavors?azure-portal=true).
