@@ -27,15 +27,15 @@ quiz:
     choices:
     - content: "Device access, storage space availability, and detected use time are all examples of the type of information that Intune reports provide."
       isCorrect: false
-      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provide other reporting data across Intune."
+      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization. They also provide other reporting data across Intune."
     - content: "Device compliance, feature update failures, and detected malware are all examples of the type of information that Intune reports provide."
       isCorrect: true
-      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provide other reporting data across Intune."
+      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization. They also provide other reporting data across Intune."
   - content: "Where should you look to view Intune end user information so that you can troubleshoot end user issues?"
     choices:
     - content: "Use the information provide by endpoint analytics to troubleshoot end user issues."
       isCorrect: false
-      explanation: "Although endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience, the troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
+      explanation: "Although endpoint analytics aim to improve user productivity and reduce IT support costs by providing insights into the user experience, the troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
     - content: "The service health dashboard provides the details you need to troubleshoot end user issues."
       isCorrect: false
       explanation: "The service health dashboard provides details for active incidents and advisories. The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
