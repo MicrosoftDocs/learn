@@ -182,7 +182,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, the level is set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`. Or, use the preferred method and pass it as an HTTP header named `x-functions-key`.
 
@@ -230,11 +230,11 @@ Because you specified *Function* when you created this function, you need to sup
 
 Let's add the logic to the function, to check temperature readings that it receives, and set a status for each temperature reading.
 
-Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we'll send to our function. Each `reading` entry has an ID, timestamp, and temperature.
+Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we send to our function. Each `Reading` entry has an ID, timestamp, and temperature.
 
 ```json
 {
-    "readings": [
+    "Readings": [
         {
             "driveGearId": 1,
             "timestamp": 1534263995,
@@ -254,7 +254,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 }
 ```
 
-Let's replace the default code in our function with the following code, to implement our business logic.
+Let's replace the default code in our function with the following code that implements our business logic.
 
 ::: zone pivot="javascript"
 
@@ -354,7 +354,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
     ```json
     {
-        "readings": [
+        "Readings": [
             {
                 "driveGearId": 1,
                 "timestamp": 1534263995,
@@ -378,8 +378,8 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
-    The **Output** tab shows that a status field has been correctly added to each of the readings.
+    The **Output** tab shows that a status field was correctly added to each of the readings.
 
-1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
+1. In the Developer menu on the left, select **Monitor** to see that the request was logged to Application Insights. The **Monitor** pane appears for your function.
 
    The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.
