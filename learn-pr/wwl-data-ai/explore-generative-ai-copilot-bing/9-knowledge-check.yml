@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/15/2024
+  ms.date: 11/07/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -17,28 +17,28 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What conversation style in Copilot in Bing is best for more imaginative output?"
+  - content: "What is the significance of providing specific details when asking Copilot to suggest a name for the destination?"
     choices:
-    - content: "More Precise."
+    - content: "To ensure that the name is long and complex."
       isCorrect: false
-      explanation: "That's incorrect.  This option is best for a concise and straightforward chat."
-    - content: "More Balanced."
+      explanation: "Incorrect. The goal is not to create a long and complex name, but rather a name that accurately reflects the destination's essence."
+    - content: "To make sure that the name includes a pun or cultural reference."
       isCorrect: false
-      explanation: "That's incorrect. This option is ideal for friendly and informative chats."
-    - content: "More Creative."
+      explanation: "Incorrect. While a pun or cultural reference could be included, it's not a requirement. The aim is to create a name that captures the destination's essence."
+    - content: "To generate a name that accurately captures the essence and feel of the destination."
       isCorrect: true
-      explanation: "That's correct. Selecting the more creative option at the beginning of your chat conversation leads to more inventive responses."
-  - content: "What is the main benefit of using the multimodal capabilities in Copilot in Bing?"
+      explanation: "Correct. Providing specific details helps Copilot generate a name that truly represents the destination's essence and evokes the desired feelings."
+  - content: "What is the main benefit of using the multimodal capabilities in Copilot?"
     choices:
-    - content: "It allows the copilot to understand images and videos shared in the chat."
+    - content: "It allows the copilot to understand images shared in the chat."
       isCorrect: true
-      explanation: "That's correct. Multimodal capabilities enable the copilot to interpret and answer questions about images and videos, as well as provide visual responses."
+      explanation: "That's correct. Multimodal capabilities enable the copilot to interpret and answer questions about images, and provide visual responses."
     - content: "It allows the copilot to search the web for web related content based on the chat history."
       isCorrect: false
-      explanation: "That's  incorrect. This speaks more to the features of Copilot in Bing."
+      explanation: "That's  incorrect. This speaks more to the features of Copilot."
     - content: "It allows the copilot to perform actions and tasks within the chat without leaving the browser."
       isCorrect: false
-      explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in Bing."
+      explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in."
   - content: "What is the main difference between few-shot prompting and zero-shot prompting in generative AI?"
     choices:
     - content: "Few-shot prompting sends many paragraphs where a zero-shot prompt is just a sentence."
