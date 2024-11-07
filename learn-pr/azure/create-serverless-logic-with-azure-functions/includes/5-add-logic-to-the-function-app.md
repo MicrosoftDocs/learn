@@ -404,12 +404,12 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 ::: zone-end
 
-1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+2. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
     The **Output** tab shows that a status field was correctly added to each of the readings.
 
-1. In the Developer menu on the left, select **Monitor** to see that the request was logged to Application Insights. The **Monitor** pane appears for your function.
+3. In the Developer menu on the left, select **Monitor** to see that the request was logged to Application Insights. The **Monitor** pane appears for your function.
 
    The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.
