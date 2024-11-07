@@ -51,7 +51,7 @@ With the previous code:
 - The counter value is displayed and updated each time the button is clicked.
 - A component approach allows for code reuse across different parts of the application and has the flexibility to be run either in the browser or on the server in a Blazor app.
 
-The `Counter` component can be added to any web page in the app by adding the <Counter /> element.
+The `Counter` component can be added to any web page in the app by adding the `<Counter />` element.
 
 ```razor
 @page "/"
