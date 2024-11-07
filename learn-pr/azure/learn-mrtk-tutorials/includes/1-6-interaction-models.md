@@ -1,7 +1,6 @@
 The Mixed Reality Toolkit enables you to consume inputs from various input sources such as 6DoF (six degrees of freedom) controllers, articulated hands, or speech. To determine the best interaction model for your app, think about your users' goals and consider any environmental factors that might impact their experience. 
 
-There are three primary interaction models that suit the majority of mixed reality experiences. 
-Although you could combine parts of various interaction models into your app, think carefully before doing so. It creates the risk of competing user input, such as simultaneous hand rays and a head-gaze cursor, and this might overwhelm and confuse users.
+There are three primary interaction models that suit the majority of mixed reality experiences. Although you could combine parts of various interaction models into your app, think carefully before doing so. It creates the risk of competing user input, such as simultaneous hand rays and a head-gaze cursor, and this might overwhelm and confuse users.
 
 ## Hands and motion controllers model
 
@@ -39,4 +38,4 @@ Some specific scenarios include:
 
 It's best to use gaze and commit when interacting with holographic content that's out of reach. The user gazes at an object or UI element, and then selects it ("commits" to it) using a secondary input. Commit methods include voice commands, a button press, or a hand gesture.
 
-There are two types of gaze input (head-gaze and eye-gaze) and they have different commit actions.
+There are two types of gaze input—head-gaze and eye-gaze—and they have different commit actions.
