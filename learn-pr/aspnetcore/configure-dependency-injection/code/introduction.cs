@@ -107,7 +107,7 @@ public class GreetingApiTests : IClassFixture<WebApplicationFactory<Program>>
         {
             builder.ConfigureServices(services =>
             {
-                services.AddSingleton(mockPersonService.Object);
+                services.AddSingleton(<IPersonService>,mockPersonService.Object);
             });
         }).CreateClient();
 
