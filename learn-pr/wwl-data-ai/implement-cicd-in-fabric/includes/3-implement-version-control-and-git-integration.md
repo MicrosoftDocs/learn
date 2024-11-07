@@ -39,11 +39,12 @@ Changes that you make to a workspace when you're doing development work affect a
 
 ### Create a dedicated branch and issue pull requests
 
-Create a dedicated branch and issue pull requests to pull changes from your branch into the main branch by following the steps below. Connect a development workspace to the main branch, following the instructions in the section above. 
+Create a dedicated branch and issue pull requests to pull changes from your branch into the main branch by following the steps below. 
 
-For development using a separate, isolated workspace: 
+For development using a separate, isolated workspace:
 
-1. If you're a developer who works in the Fabric web interface, create an isolated branch for your work from the development workspace that's connected to the main branch by selecting **Source control** and **Branch out to new workspace**. Name the branch and associate it with another workspace.  The new workspace will sync with the main branch and become an isolated work environment for your work.
+1. Connect a development workspace to the main branch, following the instructions in the section above. 
+2. If you're a developer who works in the Fabric web interface, create an isolated branch for your work from the development workspace that's connected to the main branch by selecting **Source control** and **Branch out to new workspace**. Name the branch and associate it with another workspace.  The new workspace will sync with the main branch and become an isolated work environment for your work.
 
     :::image type="content" source="../media/branchout-to-new-workspace.png" alt-text="Screenshot of uncommitted changes in workspace." :::
 
@@ -53,7 +54,8 @@ For development using a separate, isolated workspace:
 
 When using client tools for development, the process is similiar to that when developing in the Fabric web interface. A workspace that's connected to the main branch is created.
  
-1. Clone the repository on your local machine. 
-2. Push the changes to the remote repository when you're ready to test in Fabric. Test the changes by connecting your isolated branch to a separate workspace.
-3. Issue a PR in Git to merge your changes into the main branch.
-4. When you open the shared workspace associated with the main branch, you'll be prompted to sync the changes from the repository into the workspace.
+1. Connect a development workspace to the main branch, following the instructions in the section above. 
+2. Clone the repository on your local machine. 
+3. Push the changes to the remote repository when you're ready to test in Fabric. Test the changes by connecting your isolated branch to a separate workspace.
+4. Issue a PR *in Git* to merge your changes into the main branch.
+5. When you open the shared workspace associated with the main branch, you'll be prompted to sync the changes from the repository into the workspace.
