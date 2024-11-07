@@ -4,7 +4,7 @@ In the previous exercise, you registered services using the singleton service li
 
 1. The app should still be running from the previous exercise. If it's not, run the app as before.
 1. Refresh the browser window and note the time displayed in the welcome message.
-1. Wait a few seconds, and then refresh the browser window again. Observe that welcome message doesn't change. The timestamp and GUID remain the same.
+1. Wait a few seconds, and then refresh the browser window again. The welcome message doesn't change. The timestamp and GUID remain the same.
 
     The time and GUID displayed in the welcome message don't change because the `WelcomeService` service is registered as a Singleton service. The service is created once when the app starts and is reused for the lifetime of the app. Every request, from every client, uses the same instance of the service. No other instance of the service is created.
 
