@@ -32,6 +32,9 @@ You can also decide how the default directory is selected: last visited or a spe
 
 ## Create a new directory
 
+> [!NOTE]
+> You can accomplish many of these tasks in either the Azure portal or the Microsoft Entra admin center. For this tutorial, we'll use the Microsoft Entra admin center for most tasks, except where noted.
+
 An organization (tenant) has one associated default Microsoft Entra directory. However, owners can create additional directories to support development or testing purposes, or because they want to have separate directories to synchronize with their local Windows Server AD forests.
 
 > [!IMPORTANT]
@@ -51,7 +54,7 @@ An organization (tenant) has one associated default Microsoft Entra directory. H
 
     - **Organization name**: Enter a name for the directory to help distinguish it from your other directories. The directory to be created will be used in production; provide a name that your users will recognize as your organization's name. You can change the name later if you want.
 
-    - **Initial domain name**: Enter a domain name associated with your organization. Azure gives a validation error unless the domain isn't known. The default domain name will always have the suffix `.onmicrosoft.com`. You can't change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email, such as `john@contoso.com`.
+    - **Initial domain name**: Enter a domain name associated with your organization. An unknown or missing domain causes a validation error. The default domain name will always have the suffix `.onmicrosoft.com`. You can't change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email, such as `john@contoso.com`.
 
     - **Country or region**: Select the country/region in which the directory should reside. The country/region identifies the region and data center where the Microsoft Entra instance lives; you can't change it later.
 

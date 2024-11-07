@@ -52,10 +52,6 @@ You can manually add new users through the Microsoft Entra admin center. This is
 
     The invited user will need to create an associated Microsoft account (MSA) if that specific email address isn't associated with one, and the account will be added to the Microsoft Entra ID as a guest user.
 
-### Use the Azure portal
-
-You can also manually add users in the Azure portal. This is a good option if you have a single user or small group of users to add. From the portal home page, go to **Microsoft Entra ID**, then select **Users** in the **Manage** tab.
-
 ### Use the command line
 
 If you have a lot of users to add, a better option is to use a command-line tool. You can run the [New-MgUser](/powershell/module/microsoft.graph.users/new-mguser) PowerShell command to add cloud-based users.

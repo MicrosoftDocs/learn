@@ -34,21 +34,9 @@ AssignableScopes : {/}
 
 Try the same for the **Contributor** and **Reader** roles to see the actions allowed and denied.
 
-## Examine the built-in roles
+## Built-in roles
 
-Next, let's explore some of the other built-in roles. In this exercise, we'll use the Azure portal.
-
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
-
-1. On the Azure home page, select **Resource groups** in the left-hand menu.
-
-1. Select a resource group. Your *Resource group* pane appears.
-
-1. In the left menu pane, select the **Access control (IAM)**. The **Access control (IAM)** pane appears for your resource group.
-
-1. On the interior menu bar, select the **Roles** tab as follows to see the list of available roles.
-
-    ![Screenshot showing the roles in the Azure portal.](../media/5-list-roles.png)
+For an in-depth examination of the RBAC and user roles in Microsoft Entra ID, see [Examine RBAC and user roles in Microsoft Entra ID](/training/modules/manage-identities-azure-active-directory/2-examine-rbac-user-roles-azure-active-directory).
 
 ## What's a role definition?
 
