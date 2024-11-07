@@ -32,7 +32,7 @@ This interface defines the single method, `GetPersonName`, that returns a `strin
 
 Instead of registering the `PersonService` class directly, you can register it as an implementation of the `IPersonService` interface:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_programinterfaces":::
+:::code language="csharp" source="../code/introduction.cs" id="snippet_programinterfaces" highlight="3,7":::
 
 This example *Program.cs* differs from the previous example in two ways:
 
@@ -52,7 +52,7 @@ For example, say that instead of returning a hard-coded string, the `GetPersonNa
 
 Also suppose your app maps an API endpoint that returns a greeting message. The endpoint depends on the `IPersonService` interface to get the name of the person to greet. The code that registers the `IPersonService` service and maps the API endpoint might look like this:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_test_program":::
+:::code language="csharp" source="../code/introduction.cs" id="snippet_test_program" highlight="3,7-10":::
 
 This code registers the `PersonService` class as the implementation of the `IPersonService` interface. The `app.MapGet` line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` class fetches the name of the person to greet from a database.
 
@@ -61,7 +61,7 @@ Now consider the following XUnit test that tests the same API endpoint:
 > [!TIP]
 > Don't worry if you're not familiar with XUnit or Moq. Writing unit tests is outside the scope of this module.  This example is just to illustrate how dependency injection can be used in testing.
     
-:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice":::
+:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice" highlight="21-22,28":::
 
 The preceding test:
 
