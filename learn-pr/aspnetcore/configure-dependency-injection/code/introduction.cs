@@ -83,9 +83,8 @@ app.Run();
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
+using MyWebApp;
 using System.Net;
-using System.Threading.Tasks;
-using Xunit;
 
 public class GreetingApiTests : IClassFixture<WebApplicationFactory<Program>>
 {
@@ -107,7 +106,7 @@ public class GreetingApiTests : IClassFixture<WebApplicationFactory<Program>>
         {
             builder.ConfigureServices(services =>
             {
-                services.AddSingleton(<IPersonService>,mockPersonService.Object);
+                services.AddSingleton(mockPersonService.Object);
             });
         }).CreateClient();
 

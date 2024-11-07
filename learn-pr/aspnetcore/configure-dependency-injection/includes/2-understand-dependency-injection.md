@@ -1,4 +1,4 @@
-ASP.NET Core apps often need to access the same services across multiple components. For example, several components might need to access a service that fetches data from a database. ASP.NET Core users a built-in dependency injection (DI) container to manage the services that an app uses.
+ASP.NET Core apps often need to access the same services across multiple components. For example, several components might need to access a service that fetches data from a database. ASP.NET Core uses a built-in dependency injection (DI) container to manage the services that an app uses.
 
 ## Dependency injection and Inversion of Control (IoC)
 
@@ -12,9 +12,9 @@ And the following *PersonService.cs* file:
 
 :::code language="csharp" source="../code/introduction.cs" id="snippet_personservice":::
 
-To understand the code, start near the bottom of the *Program.cs* example with the `app.MapGet` line. This line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
+To understand the code, start with the highlighted `app.MapGet` code. This code maps HTTP GET requests for the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
 
-Where does the delegate get the `PersonService` service? It's implicitly provided by the service container. The `builder.Services.AddSingleton<PersonService>()` line tells the service container to create a new instance of the `PersonService` class when the app starts, and to provide that instance to any component that needs it.
+Where does the delegate get the `PersonService` service? It's implicitly provided by the service container. The highlighted `builder.Services.AddSingleton<PersonService>()` line tells the service container to create a new instance of the `PersonService` class when the app starts, and to provide that instance to any component that needs it.
 
 Any component that needs the `PersonService` service can declare a parameter of type `PersonService` in its delegate signature. The service container will automatically provide an instance of the `PersonService` class when the component is created. The delegate doesn't create the `PersonService` instance itself, it just uses the instance that the service container provides.
 
@@ -54,14 +54,14 @@ Also suppose your app maps an API endpoint that returns a greeting message. The 
 
 :::code language="csharp" source="../code/introduction.cs" id="snippet_test_program" highlight="3,7-10":::
 
-This code registers the `PersonService` class as the implementation of the `IPersonService` interface. The `app.MapGet` line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` class fetches the name of the person to greet from a database.
+This is similar the previous example with `IPersonService`. to  The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` that implements the interface fetches the name of the person to greet from a database.
 
 Now consider the following XUnit test that tests the same API endpoint:
 
 > [!TIP]
 > Don't worry if you're not familiar with XUnit or Moq. Writing unit tests is outside the scope of this module.  This example is just to illustrate how dependency injection can be used in testing.
     
-:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice" highlight="21-22,28":::
+:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice" highlight="20-21,27":::
 
 The preceding test:
 
