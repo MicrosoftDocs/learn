@@ -52,7 +52,7 @@ For development using a separate, isolated workspace:
 4. Then, *in Git*, create a **Pull Request (PR)** to pull the changes from your isolated branch into the main branch.  
 5. The main branch in Git will be updated once the PR is merged to the main branch. When you open the *shared* development workspace, you will be prompted to synchronize the new content from Git with the shared development workspace. 
 
-When using client tools for development, the process is similiar to that when developing in the Fabric web interface. A workspace that's connected to the main branch is created.
+Use client tools for development. The process is similiar to that when developing in the Fabric web interface. 
  
 1. Connect a development workspace to the main branch, following the instructions in the section above. 
 2. Clone the repository on your local machine. 
