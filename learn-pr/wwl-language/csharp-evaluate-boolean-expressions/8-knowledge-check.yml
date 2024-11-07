@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/06/2024
+  ms.date: 11/07/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
     - content: "`Console.WriteLine(value != false);`"
       isCorrect: false
       explanation: "Incorrect. Using the inequality operator to evaluate whether `value` isn't equal to `false` isn't an example of logical negation."
-    - content: "`Console.WriteLine(a != b);`."
+    - content: "`Console.WriteLine(a != b);`"
       isCorrect: false
       explanation: "Incorrect. Using the inequality operator to evaluate whether two values aren't equal isn't an example of logical negation."
   - content: "Which of the following lines of code is a valid use of the conditional operator?"
