@@ -11,8 +11,8 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
-- [What is Microsoft Defender XDR](defender-xdr/microsoft-365-defender)
+- [What is Microsoft Defender XDR](/defender-xdr/microsoft-365-defender)
 
-- [What is Microsoft Defender for Endpoint](defender-endpoint/microsoft-defender-endpoint)
+- [What is Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)
 
 - [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
