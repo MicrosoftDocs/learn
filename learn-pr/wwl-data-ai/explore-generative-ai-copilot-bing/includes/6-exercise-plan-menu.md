@@ -82,14 +82,14 @@ they're served in, how they're made, or how someone needs to enjoy it.
 **Sample response**:
 
 ```
-> Sure, I can help you brainstorm some vivid ideas for unique refreshments!
-> 
-> 1. **Forest Elixir**: A vibrant green drink made from freshly squeezed cucumber, mint, and a hint of lime, served in a carved bamboo cup with a sprig of rosemary.
-> 2. **Berry Blossom Iced Tea**: A deep purple tea brewed with a mix of wild berries and hibiscus, garnished with edible flowers and served in a mason jar with a twist of lemon.
-> 3. **Sunrise Citrus Spritzer**: Layers of orange, grapefruit, and passion fruit juices topped with sparkling water, creating a gradient effect in a tall, clear glass. Each sip reveals a new burst of flavor.
-> 4. **Mystic Mist Lemonade**: A refreshing blue butterfly pea flower lemonade that changes color to a vibrant purple when stirred with a bit of lemon juice. Served in a glass teapot so guests can witness the transformation.
-> 5. **Enchanted Herbal Infusion**: A calming blend of chamomile, lavender, and honey, served in a glass teacup that’s been lightly smoked for a mystical, aromatic experience.
-> 6. **Acorn Ambrosia**: A nutty, creamy concoction made from almond milk, vanilla, and a hint of maple syrup. Served in a hollowed-out acorn shell with a dusting of cinnamon on top, offering a whimsical touch.
+ Sure, I can help you brainstorm some vivid ideas for unique refreshments!
+ 
+1. **Forest Elixir**: A vibrant green drink made from freshly squeezed cucumber, mint, and a hint of lime, served in a carved bamboo cup with a sprig of rosemary.
+ 2. **Berry Blossom Iced Tea**: A deep purple tea brewed with a mix of wild berries and hibiscus, garnished with edible flowers and served in a mason jar with a twist of lemon.
+ 3. **Sunrise Citrus Spritzer**: Layers of orange, grapefruit, and passion fruit juices topped with sparkling water, creating a gradient effect in a tall, clear glass. Each sip reveals a new burst of flavor.
+ 4. **Mystic Mist Lemonade**: A refreshing blue butterfly pea flower lemonade that changes color to a vibrant purple when stirred with a bit of lemon juice. Served in a glass teapot so guests can witness the transformation.
+ 5. **Enchanted Herbal Infusion**: A calming blend of chamomile, lavender, and honey, served in a glass teacup that’s been lightly smoked for a mystical, aromatic experience.
+ 6. **Acorn Ambrosia**: A nutty, creamy concoction made from almond milk, vanilla, and a hint of maple syrup. Served in a hollowed-out acorn shell with a dusting of cinnamon on top, offering a whimsical touch.
  ```
 > Each of these drinks offers a unique sensory experience that complements the enchanting theme of your destination. Imagine how these could come to life visually! Ready to dive into one of these ideas or another element of our project?
 
@@ -123,16 +123,16 @@ the theme.
 
 **Sample response**:
 ```
-> Absolutely, let's craft some signature drinks that embody the essence of our magical destination:
-> 
-> **Acorn Ambrosia**
-> This nutty, creamy elixir combines almond milk, vanilla, and a hint of maple syrup, served in a hollowed-out acorn shell with a dusting of cinnamon on top. It's a whimsical and cozy delight that brings a touch of forest charm to every sip.
-> 
-> **Enchanted Forest Fizz**
-> A refreshing blend of elderflower, mint, and cucumber infused with sparkling water, served in a glass shaped like a forest leaf. Garnished with a twist of lemon and a sprig of rosemary, it offers a crisp, revitalizing taste of nature.
-> 
-> **Woodland Berry Breeze**
-> A vibrant mix of wild berries, hibiscus tea, and a splash of honey, served in a carved wooden cup adorned with edible flowers. This drink is not only visually stunning but also provides a burst of fruity flavors, perfect for anyone seeking a sweet yet sophisticated refreshment.
+ Absolutely, let's craft some signature drinks that embody the essence of our magical destination:
+ 
+ **Acorn Ambrosia**
+ This nutty, creamy elixir combines almond milk, vanilla, and a hint of maple syrup, served in a hollowed-out acorn shell with a dusting of cinnamon on top. It's a whimsical and cozy delight that brings a touch of forest charm to every sip.
+ 
+ **Enchanted Forest Fizz**
+ A refreshing blend of elderflower, mint, and cucumber infused with sparkling water, served in a glass shaped like a forest leaf. Garnished with a twist of lemon and a sprig of rosemary, it offers a crisp, revitalizing taste of nature.
+ 
+ **Woodland Berry Breeze**
+ A vibrant mix of wild berries, hibiscus tea, and a splash of honey, served in a carved wooden cup adorned with edible flowers. This drink is not only visually stunning but also provides a burst of fruity flavors, perfect for anyone seeking a sweet yet sophisticated refreshment.
 ```
 
 > Each of these drinks is designed to surprise and delight, capturing the enchanting spirit of the destination while offering something unique and memorable for all guests. Which one excites you the most?

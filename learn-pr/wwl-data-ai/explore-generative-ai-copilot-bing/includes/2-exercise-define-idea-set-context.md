@@ -43,7 +43,7 @@ creation of a new experience.
 **Sample response**:
 ```
 
-> I love this vision. Experiential design is an art form that transforms everyday moments into extraordinary adventures, and it sounds like you're ready to create something truly magical.
+ I love this vision. Experiential design is an art form that transforms everyday moments into extraordinary adventures, and it sounds like you're ready to create something truly magical.
 
 ```
 > [!NOTE]
@@ -119,9 +119,9 @@ the branches of a tree
 **Sample response**:
 
 ```
-> Nestled deep within an enchanting woodland, a cozy, secluded restaurant awaits those who seek a truly unique dining experience. Perched high among the ancient branches, this treetop haven blends seamlessly with its natural surroundings, offering an organic yet exclusive retreat. Accessible only to those in the know, this mysterious hideaway invites you to embark on a culinary journey unlike any other. Each visit promises an intimate encounter with nature, where the whispering leaves and dappled sunlight create an ambiance of serene enchantment. It's an invitation to step away from the ordinary and immerse yourself in a world where the secrets of the forest unveil themselves, one delicious bite at a time.
-> 
-> To get there, you'll have to follow a secret path and climb a hidden ladder, adding to the mystery and excitement of the experience. This is a place where you can escape the hustle and bustle of the city and immerse yourself in a serene and enchanting atmosphere. 
+ Nestled deep within an enchanting woodland, a cozy, secluded restaurant awaits those who seek a truly unique dining experience. Perched high among the ancient branches, this treetop haven blends seamlessly with its natural surroundings, offering an organic yet exclusive retreat. Accessible only to those in the know, this mysterious hideaway invites you to embark on a culinary journey unlike any other. Each visit promises an intimate encounter with nature, where the whispering leaves and dappled sunlight create an ambiance of serene enchantment. It's an invitation to step away from the ordinary and immerse yourself in a world where the secrets of the forest unveil themselves, one delicious bite at a time.
+ 
+ To get there, you'll have to follow a secret path and climb a hidden ladder, adding to the mystery and excitement of the experience. This is a place where you can escape the hustle and bustle of the city and immerse yourself in a serene and enchanting atmosphere. 
 Don’t miss this opportunity to discover this hidden gem in the forest. Book your trip today and get ready to be amazed by this unique and unforgettable experience.
 
 ```
