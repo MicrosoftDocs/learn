@@ -23,7 +23,7 @@ the name, followed by the description.
 
 ```
 **Sample response**:
-
+``` 
 > Absolutely, let's craft some unique features for this enchanting destination:
 > 
 > **The Nest**
@@ -41,6 +41,7 @@ magazines, and board games. It is located inside the trunk of the tree and has a
 > 
 > **The Garden**
 > A lush and colorful area that is planted with flowers, herbs, and fruits. It is located on the lower branch of the tree and has a fountain and a fire pit. It is a lovely place for visitors who want to enjoy the fresh air, smell the flowers, or roast marshmallows.
+```
 
 > [!TIP]
 > If you know an existing destination that has great spaces, try prompting Copilot to summarize or pull specific information from a web page for inspiration. For example, ask Copilot "What sorts of unique spaces are located in The Museum of Pop Culture https://wikipedia.org/wiki/Museum_of_Pop_Culture?".
@@ -69,7 +70,7 @@ three alternative names for the Nest?
 > **Complex directive**. You asked the model to do a few things here in a single prompt. Copilot will work to figure out what it needs to do when you issue multiple directives in a single prompt.
 
 **Sample response**:
-
+```
 > Sure, I can rewrite the description and suggest some names. Here is a possible rewrite:
 > 
 > **The Nest**
@@ -82,6 +83,7 @@ three alternative names for the Nest?
 > 3. Tree Top Hideaway
 > 
 > How’s this for capturing the essence of The Nest? Ready to visualize the next feature, or explore another element of this enchanting destination?
+```
 
 If you're happy with the result, move on to create an image. Perhaps you like the description, but would like some different alternative names, so now is the time to iterate.
 

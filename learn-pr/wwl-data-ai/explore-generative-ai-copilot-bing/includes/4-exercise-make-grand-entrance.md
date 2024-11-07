@@ -18,12 +18,12 @@ This part of the project work is called The Entrance.
 
 ```
 **Sample response**:
-
+```
 > I’ve got you covered. The entrance will set the stage for the entire experience, so here are three immersive ideas:
 > 1. **Mysterious Forest Path**: Guests begin their journey by stepping onto a winding,lantern-lit path through the dense forest. As they walk, subtle soundscapes of nature and whispers of the forest creatures guide them. The path is lined with ancient, moss-covered trees, creating a sense of stepping into a hidden realm.
 > 2. **Hidden Door**: A giant hollow log that serves as a slide that takes visitors to the base of the tree, where they can climb up a rope ladder or a spiral staircase.
 > 3. **Hidden Ladder Gateway**: To heighten the sense of adventure, guests discover a concealed ladder camouflaged within the thick foliage. Climbing up, they feel the anticipation build as they leave the ground behind and ascend into the trees. At the top, a small wooden platform welcomes them, offering a glimpse of the treetop restaurant nestled above.
-
+```
 > [!TIP]
 > Remember that you can ask Copilot to refine the ideas or generate more ideas. For example, perhaps you'ld rather the entrance to be behind a waterfall, or underground.
 
@@ -49,7 +49,7 @@ Can you elaborate on it?
 > ![Screenshot of the copilot search bar with the Talk to Copilot icon highlighted](../media/voice-input.png)
 
 **Sample response**:
-
+```
 > The entrance to the restaurant is a giant hollow log that looks like a natural part of the forest. Visitors have to crawl inside the log and slide down a smooth and curvy path that takes them to the base of the tree where the restaurant is located.
 > 
 > The slide is dark and thrilling, but also safe and comfortable. Along the way, visitors can hear sounds of nature and see glimpses of light through the cracks in the log. Once they reach the bottom, they have two options to climb up to the bar: a rope ladder or a spiral staircase.
@@ -63,7 +63,7 @@ choose whichever option suits their mood and preference.
 > The entrance is designed to create a sense of wonder and 
 excitement, as well as a contrast between the natural and 
 the man-made elements of the bar.
-
+```
 ## Edit the description
 Now, you need to rewrite this description in a marketing tone.
 
@@ -78,11 +78,11 @@ Can you rewrite that description in a tone that you’d find
 in a travel publication? Please keep it to a single paragraph.
 ```
 **Sample response**:
-
+```
 > If you're looking for a unique and thrilling way to enter a bar, look no further than this hidden gem in the woods. The entrance is a giant hollow log that invites you to slide down a dark and winding path that leads you to the base of a majestic tree.
 > 
 > Along the way, you will be immersed in the sounds and sights of nature, as you catch glimpses of light and hear birds and insects. Once you reach the bottom, you will have to climb up to the bar, either by a rope ladder or a spiral staircase. Both options will reward you with stunning views of the forest and the bar, as well as a sense of accomplishment and adventure. The entrance is a perfect blend of nature and artifice, creating a memorable experience that will leave you breathless and enchanted.
-
+```
 > [!TIP]
 > Ask Copilot to refine the the description. For example, you could ask Copilot to expand to a three paragraphs.
 
