@@ -1,4 +1,4 @@
-In this module, you will create your first ASP.NET Core web app with .NET and C#.
+In this module, you create your first ASP.NET Core web app with .NET and C#.
 
 ## Example scenario
 
