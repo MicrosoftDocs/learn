@@ -37,6 +37,7 @@ Run the web app in Visual Studio Code and view in a browser:
     - Press <kbd>Shift</kbd>+<kbd>F5</kbd> on the keyboard.
 
 ::: zone-end
+
 ::: zone pivot="shell"
 
 Run the web app using the .NET CLI:

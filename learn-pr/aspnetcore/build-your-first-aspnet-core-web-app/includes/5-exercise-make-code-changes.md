@@ -13,8 +13,11 @@ Run the web app using the `dotnet watch` command from the command line:
 In Visual Studio Code, if the integrated terminal pane isn't already available, select **New Terminal** from the **Terminal** menu to open the integrated terminal.
 
 ::: zone-end
+
 ::: zone pivot="shell"
+
 ::: zone-end
+
 1. Build and Run the app with the following command:
 
     ```dotnetcli

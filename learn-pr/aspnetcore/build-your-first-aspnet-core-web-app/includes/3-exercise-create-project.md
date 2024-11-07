@@ -59,9 +59,11 @@ From a terminal or the command line, create a new project:
 ::: zone-end
 
 ::: zone pivot="vscode"
+
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
 :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+
 ::: zone-end
 
 The following sections contain an overview of the main project folders and files of the empty ASP.NET Core project:
@@ -80,7 +82,9 @@ The *.csproj* project file is used to:
 When an ASP.NET Core project is created or opened in Visual Studio Code (with the C# Dev Kit extension), it creates a *[project name].sln* solution file. The *[project name].sln* solution file contains information for one or more related projects, including build information, settings, and any miscellaneous files that aren’t associated with just one particular project.
 
 ::: zone-end
+
 ::: zone pivot="shell"
+
 ::: zone-end
 
 ### The *obj* folder
@@ -93,7 +97,7 @@ The *Properties/launchSettings.json* file contains configuration data for how th
 
 The *launchSettings.json* file contains the following configuration: 
 
-[!code-json[](../code/MyWebApp/Properties/launchSettings.json)]
+[!code-json[](../code/mywebapp/properties/launchSettings.json)]
 
 ### The *Program.cs* file
 
@@ -106,15 +110,15 @@ The *Program.cs* file serves as the entry point for an ASP.NET Core app and has 
 
 In the new empty ASP.NET Core project you created, the *Program.cs* file contains the following minimal code:
 
-[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_all)]
+[!code-csharp[](../code/mywebapp/program.cs?name=snippet_all)]
 
 The following lines of code in this file create a `WebApplicationBuilder` with preconfigured defaults, and builds the app:
 
-[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_application_builder)]
+[!code-csharp[](../code/mywebapp/program.cs?name=snippet_web_application_builder)]
 
 The `app.MapGet()` method directly defines an endpoint that handles HTTP GET requests:
 
-[!code-csharp[](../code/MyWebApp/Program.cs?name=snippet_web_mapget)]
+[!code-csharp[](../code/mywebapp/program.cs?name=snippet_web_mapget)]
 
 `app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the *Properties/launchSettings.json* file at project creation.
 
