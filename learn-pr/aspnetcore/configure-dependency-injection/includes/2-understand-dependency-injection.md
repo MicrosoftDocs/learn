@@ -24,42 +24,15 @@ To avoid dependencies on a specific service implementation, you can instead conf
 
 Consider an interface for the `PersonService` class:
 
-```csharp
-public interface IPersonService
-{
-    string GetPersonName();
-}
-```
+:::code language="csharp" source="../code/introduction.cs" id="snippet_personserviceinterface":::
 
 This interface defines the single method, `GetPersonName`, that returns a `string`. This `PersonService` class implements the `IPersonService` interface:
 
-```csharp
-internal sealed class PersonService : IPersonService
-{
-    public string GetPersonName()
-    {
-        return "John Doe";
-    }
-}
-```
+:::code language="csharp" source="../code/introduction.cs" id="snippet_personserviceimplementation":::
 
 Instead of registering the `PersonService` class directly, you can register it as an implementation of the `IPersonService` interface:
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-    
-builder.Services.AddSingleton<IPersonService, PersonService>();
-var app = builder.Build();
-
-app.MapGet("/", 
-    (IPersonService personService) => 
-    {
-        return $"Hello, {personService.GetPersonName()}!";
-    }
-);
-    
-app.Run();
-```
+:::code language="csharp" source="../code/introduction.cs" id="snippet_programinterfaces":::
 
 This example *Program.cs* differs from the previous example in two ways:
 
@@ -79,20 +52,7 @@ For example, say that instead of returning a hard-coded string, the `GetPersonNa
 
 Also suppose your app maps an API endpoint that returns a greeting message. The endpoint depends on the `IPersonService` interface to get the name of the person to greet. The code that registers the `IPersonService` service and maps the API endpoint might look like this:
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddSingleton<IPersonService, PersonService>();
-
-var app = builder.Build();
-
-app.MapGet("/", (IPersonService personService) =>
-{
-    return $"Hello, {personService.GetPersonName()}!";
-});
-
-app.Run();
-```
+:::code language="csharp" source="../code/introduction.cs" id="snippet_test_program":::
 
 This code registers the `PersonService` class as the implementation of the `IPersonService` interface. The `app.MapGet` line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` class fetches the name of the person to greet from a database.
 
@@ -101,48 +61,7 @@ Now consider the following XUnit test that tests the same API endpoint:
 > [!TIP]
 > Don't worry if you're not familiar with XUnit or Moq. Writing unit tests is outside the scope of this module.  This example is just to illustrate how dependency injection can be used in testing.
     
-```csharp
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.DependencyInjection;
-using Moq;
-using System.Net;
-using System.Threading.Tasks;
-using Xunit;
-
-public class GreetingApiTests : IClassFixture<WebApplicationFactory<Program>>
-{
-    private readonly WebApplicationFactory<Program> _factory;
-
-    public GreetingApiTests(WebApplicationFactory<Program> factory)
-    {
-        _factory = factory;
-    }
-
-    [Fact]
-    public async Task GetGreeting_ReturnsExpectedGreeting()
-    {
-        // Arrange
-        var mockPersonService = new Mock<IPersonService>();
-        mockPersonService.Setup(service => service.GetPersonName()).Returns("Jane Doe");
-
-        var client = _factory.WithWebHostBuilder(builder =>
-        {
-            builder.ConfigureServices(services =>
-            {
-                services.AddSingleton(mockPersonService.Object);
-            });
-        }).CreateClient();
-
-        // Act
-        var response = await client.GetAsync("/");
-        var responseString = await response.Content.ReadAsStringAsync();
-
-        // Assert
-        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-        Assert.Equal("Hello, Jane Doe!", responseString);
-    }
-}
-```
+:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice":::
 
 The preceding test:
 
