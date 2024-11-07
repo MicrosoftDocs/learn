@@ -6,7 +6,7 @@ The dependency injection pattern is a form of Inversion of Control (IoC). In the
 
 Consider the following *Program.cs* file:
 
-:::code language="csharp" source="code/introduction.cs" id="snippet_program":::
+:::code language="csharp" source="../code/introduction.cs" id="snippet_program":::
 
 To understand the code, start near the bottom of the *Program.cs* example with the `app.MapGet` line. This line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
 
