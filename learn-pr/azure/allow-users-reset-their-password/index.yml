@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Allow users to reset their password with Microsoft Entra self-service password reset
   description: Learn how to allow users to reset their password with Microsoft Entra self-service password reset.
-  ms.date: 09/20/2024
+  ms.date: 11/07/2024
   author: Justinha
   ms.author: justinha
   ms.topic: module
