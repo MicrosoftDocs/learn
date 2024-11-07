@@ -37,7 +37,7 @@ Changes that you make to a workspace when you're doing development work affect a
 
  In both scenarios, your feature development work should take place in a dedicated branch instead of the main code branch.  This makes it easy for multiple developers to work on a features without affecting the main branch. 
 
-### Create a dedicated branch and issue pull requests
+### Create a dedicated branch, issue pull requests and sync a workspace with Git
 
 Create a dedicated branch and issue pull requests to pull changes from your branch into the main branch by following the steps below. 
 
