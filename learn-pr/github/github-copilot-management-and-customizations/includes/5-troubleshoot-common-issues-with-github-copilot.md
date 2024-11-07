@@ -1,47 +1,39 @@
-Now let's review common issues with GitHub Copilot and how to troubleshoot them. 
+Let's explore common problems with GitHub Copilot and how to troubleshoot them.
 
-Let's go over the following:
+## Code suggestions are missing
 
-- **Missing code suggestions:** Troubleshooting scenarios where code suggestions are not appearing in your editor
+One of the most common problems that users encounter with GitHub Copilot is the absence of code suggestions. If Copilot isn't providing code suggestions in your editor, try these troubleshooting actions:
 
-- **Content exclusion issues:** Resolving problems where content exclusions are not working as expected
+- **Check your internet connection**: Ensure that you have a stable internet connection, because GitHub Copilot requires an active connection to function properly.
+- **Update the Copilot extension**: Make sure you're using the latest version of the GitHub Copilot extension. Older versions might not communicate effectively with the Copilot servers.
+- **Verify IDE compatibility**: Confirm that your IDE is compatible with GitHub Copilot. Some IDEs might require specific configurations or updates to work with Copilot.
+- **Review content exclusions**: If certain files are excluded from Copilot's analysis, suggestions might not appear for those files. Check the content exclusion settings to ensure they're configured correctly.
 
-- **Triggering Copilot suggestions:** Techniques for prompting Copilot to generate suggestions when absent or unsatisfactory
+By taking these actions, you can often resolve problems related to missing code suggestions and ensure that Copilot functions as expected.
 
-#### Troubleshooting missing code suggestions
+## Content exclusions aren't working as expected
 
-One of the most common issues users encounter with GitHub Copilot is the absence of code suggestions. If you find that Copilot is not providing suggestions, there are several troubleshooting steps you can take:
+Content exclusions are designed to prevent GitHub Copilot from using specific files or directories. However, content exclusions might not work as expected in some scenarios. Here are some common problems and their resolutions:
 
-- **Check your internet connection**: Ensure that you have a stable internet connection, as GitHub Copilot requires an active connection to function properly.
-- **Update the Copilot extension**: Make sure you are using the latest version of the GitHub Copilot extension. Older versions may not communicate effectively with the Copilot servers.
-- **Verify IDE compatibility**: Confirm that your integrated development environment (IDE) is compatible with GitHub Copilot. Some IDEs may require specific configurations or updates to work with Copilot.
-- **Review content exclusions**: If certain files are excluded from Copilot's analysis, suggestions may not appear for those files. Check the content exclusion settings to ensure they are configured correctly.
+- **Delayed application of exclusions**: After you add or change content exclusions, the changes can take up to 30 minutes to take effect in IDEs where the settings are already loaded. To apply changes immediately, reload the content exclusion settings in your IDE.
+- **Inadequate scope of exclusions**:
 
-By following these steps, you can often resolve issues related to missing code suggestions and ensure that Copilot functions as expected.
+  - Content exclusion settings apply only to members of the organization in which you configured the exclusion. Ensure that all relevant team members have the appropriate settings applied.
 
-#### Content exclusion issues: Resolving problems where content exclusions are not working as expected
+  - Check the GitHub Copilot icon on the status bar. If a GitHub Copilot content exclusion applies to the file, the GitHub Copilot icon has a diagonal line through it. Hover over the icon to see whether an organization or the parent repository disabled GitHub Copilot for the file.
 
-Content exclusions are designed to prevent specific files or directories from being used by GitHub Copilot. However, there are scenarios where content exclusions may not work as expected. Here are some common issues and their resolutions:
+- **IDE-specific limitations**: In some IDEs, content exclusions might not apply when you're using certain features, such as GitHub Copilot Chat. Be aware of these limitations and adjust your workflow accordingly.
 
-- **Delayed application of exclusions**: After adding or changing content exclusions, it can take up to 30 minutes for the changes to take effect in IDEs where the settings are already loaded. To apply changes immediately, reload the content exclusion settings in your IDE.
-- **Scope of exclusions**:
+By understanding and addressing these problems, you can ensure that content exclusions are applied effectively and help protect sensitive information.
 
-   - Content exclusion settings only apply to members of the organization in which the exclusion is configured. Ensure that all relevant team members have the appropriate settings applied. 
+## Code suggestions are unsatisfactory
 
-   - Also check the GitHub Copilot icon in the status bar. If a GitHub Copilot content exclusion applies to the file, the GitHub Copilot icon will have a diagonal line through it. Hover over the icon to see whether an organization or the parent repository disabled GitHub Copilot for the file.
+If the suggestions that GitHub Copilot is generating are unsatisfactory, you can use these techniques to prompt Copilot to provide better results:
 
-- **IDE-specific limitations**: In some IDEs, content exclusions may not apply when using certain features, such as GitHub Copilot Chat. Be aware of these limitations and adjust your workflow accordingly.
-
-By understanding and addressing these issues, you can ensure that content exclusions are applied effectively and protect sensitive information.
-
-#### Prompting Copilot to regenerate unsatisfactory suggestions
-
-If GitHub Copilot is not generating suggestions or the suggestions are unsatisfactory, there are several techniques you can use to prompt Copilot to provide better results:
-
-- **Provide clear context**: Ensure that your code provides clear context for GitHub Copilot to generate relevant suggestions. This includes writing descriptive comments and using meaningful variable names.
+- **Provide clear context**: Ensure that your code provides clear context for GitHub Copilot to generate relevant suggestions. This task includes writing descriptive comments and using meaningful variable names.
 - **Use Copilot commands**: In some IDEs, you can use specific commands to prompt Copilot to generate suggestions. For example, in Visual Studio Code, you can use the Ctrl+Enter shortcut to trigger GitHub Copilot.
 - **Adjust prompt length**: Sometimes, providing a longer or more detailed prompt can help Copilot generate better suggestions. Experiment with different prompt lengths to see what works best.
 
-By using these techniques, you can improve the quality of GitHub Copilot's suggestions and enhance your coding experience.
+By using these techniques, you can improve the quality of GitHub Copilot suggestions and enhance your coding experience.
 
-Now let's test out the knowledge you gained from this module.
+Now, let's test the knowledge that you gained from this module.
