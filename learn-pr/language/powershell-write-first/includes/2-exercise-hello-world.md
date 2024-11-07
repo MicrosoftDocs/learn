@@ -17,6 +17,9 @@ In this module, you use a version of a code editor in Cloud Shell to write and r
     code HelloWorld.ps1
     ```
 
+    > [!NOTE]
+    > If you see a dialog that asks if you want to **Switch to Classic Cloud Shell**, select **Confirm**. Then, re-enter the second command `code HelloWorld.ps1` to open your file in the Cloud Shell code editor.
+
     The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` filename extension is the extension that's used for PowerShell scripts.
 
     The `code` command followed by the filename of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens where you can write and edit scripts and then save them to run in Cloud Shell. If you want to open a file which is stored in another location, you can define the full path instead of using only the filename.
