@@ -6,42 +6,9 @@ The dependency injection pattern is a form of Inversion of Control (IoC). In the
 
 Consider the following *Program.cs* file:
 
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using MyApp.Services;
+:::code language="csharp" source="{source}" range="{range}":::
 
-var builder = WebApplication.CreateBuilder(args);
-    
-builder.Services.AddSingleton<PersonService>();
-var app = builder.Build();
-
-app.MapGet("/", 
-    (PersonService personService) => 
-    {
-        return $"Hello, {personService.GetPersonName()}!";
-    }
-);
-    
-app.Run();
-```
-
-And the following *PersonService.cs* file:
-
-```csharp
-namespace MyApp.Services;
-
-public class PersonService
-{
-    public string GetPersonName()
-    {
-        return "John Doe";
-    }
-}
-```
-
-To understand the code, start near the bottom of the *Program.cs* example with the `app.MapGet` line. This line maps a GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
+To understand the code, start near the bottom of the *Program.cs* example with the `app.MapGet` line. This line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
 
 Where does the delegate get the `PersonService` service? It's implicitly provided by the service container. The `builder.Services.AddSingleton<PersonService>()` line tells the service container to create a new instance of the `PersonService` class when the app starts, and to provide that instance to any component that needs it.
 
@@ -49,7 +16,7 @@ Any component that needs the `PersonService` service can declare a parameter of 
 
 ## Interfaces and dependency injection
 
-Registering a service like this is a good start, but it's not the best practice. It's better to register services using interfaces. This approach makes the code more flexible and easier to maintain.
+To avoid dependencies on a specific service implementation, you can instead configure a service for a specific interface and then depend just on the interface. This approach gives you the flexibility to swap out the service implementation, which makes the code more testable and easier to maintain.
 
 Consider an interface for the `PersonService` class:
 
@@ -60,10 +27,10 @@ public interface IPersonService
 }
 ```
 
-This interface defines the single method, `GetPersonName`, that returns a string. This `PersonService` class implements the `IPersonService` interface:
+This interface defines the single method, `GetPersonName`, that returns a `string`. This `PersonService` class implements the `IPersonService` interface:
 
 ```csharp
-public class PersonService : IPersonService
+internal sealed class PersonService : IPersonService
 {
     public string GetPersonName()
     {
@@ -72,29 +39,30 @@ public class PersonService : IPersonService
 }
 ```
 
-The registration in the `Program.cs` file changes to:
+Instead of registering the `PersonService` class directly, you can register it as an implementation of the `IPersonService` interface:
 
 ```csharp
+var builder = WebApplication.CreateBuilder(args);
+    
 builder.Services.AddSingleton<IPersonService, PersonService>();
-```
+var app = builder.Build();
 
-This differs from the previous registration in two ways:
-
-1. The service is registered using the `IPersonService` interface instead of the `PersonService` class.
-1. The `PersonService` class is registered as the implementation of the `IPersonService` interface.
-
-The `app.MapGet` line changes to:
-
-```csharp
 app.MapGet("/", 
     (IPersonService personService) => 
     {
         return $"Hello, {personService.GetPersonName()}!";
     }
 );
+    
+app.Run();
 ```
 
-Note the signature of the delegate now expects an `IPersonService` parameter instead of a `PersonService` parameter. When the app runs and a client requests the root URL, the service container provides an instance of the `PersonService` class because it's registered as the implementation of the `IPersonService` interface.
+This example *Program.cs* differs from the previous example in two ways:
+
+- The `PersonService` instance is registered as an *implementation* of the `IPersonService` interface (as opposed to registering the `PersonService` class directly).
+- The delegate signature now expects an `IPersonService` parameter instead of a `PersonService` parameter.
+
+When the app runs and a client requests the root URL, the service container provides an instance of the `PersonService` class because it's registered as the implementation of the `IPersonService` interface.
 
 > [!TIP]
 > Think of `IPersonService` as a contract. It defines the methods and properties that an implementation **must** have. The delegate wants an instance of `IPersonService`. It doesn't care at all about the underlying implementation, only that the instance has the methods and properties defined in the contract.
@@ -105,25 +73,78 @@ Using interfaces makes it easier to test components in isolation. You can create
 
 For example, say that instead of returning a hard-coded string, the `GetPersonName` method in the `PersonService` class fetches the name from a database. To test the component that depends on the `IPersonService` interface, you can create a mock implementation of the `IPersonService` interface that returns a hard-coded string. The component being tested doesn't know the difference between the real implementation and the mock implementation.
 
-Consider this XUnit test:
+Also suppose your app maps an API endpoint that returns a greeting message. The endpoint depends on the `IPersonService` interface to get the name of the person to greet. The code that registers the `IPersonService` service and maps the API endpoint might look like this:
 
 ```csharp
-using Xunit;
-using Moq;
-using MyApp.Services;
+var builder = WebApplication.CreateBuilder(args);
 
-public class PersonServiceTests
+builder.Services.AddSingleton<IPersonService, PersonService>();
+
+var app = builder.Build();
+
+app.MapGet("/", (IPersonService personService) =>
 {
-    [Fact]
-    public void GetPersonName_ReturnsName()
+    return $"Hello, {personService.GetPersonName()}!";
+});
+
+app.Run();
+```
+
+This code registers the `PersonService` class as the implementation of the `IPersonService` interface. The `app.MapGet` line maps an HTTP GET request to the root URL (`/`) to a delegate that returns a greeting message. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` class fetches the name of the person to greet from a database.
+
+Now consider the following XUnit test that tests the same API endpoint:
+
+> [!TIP]
+> Don't worry if you're not familiar with XUnit or Moq. Writing unit tests is outside the scope of this module.  This example is just to illustrate how dependency injection can be used in testing.
+    
+```csharp
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
+using Moq;
+using System.Net;
+using System.Threading.Tasks;
+using Xunit;
+
+public class GreetingApiTests : IClassFixture<WebApplicationFactory<Program>>
+{
+    private readonly WebApplicationFactory<Program> _factory;
+
+    public GreetingApiTests(WebApplicationFactory<Program> factory)
     {
+        _factory = factory;
+    }
+
+    [Fact]
+    public async Task GetGreeting_ReturnsExpectedGreeting()
+    {
+        // Arrange
         var mockPersonService = new Mock<IPersonService>();
         mockPersonService.Setup(service => service.GetPersonName()).Returns("Jane Doe");
 
-        IPersonService personService = mockPersonService.Object;
-        Assert.Equal("Jane Doe", personService.GetPersonName());
+        var client = _factory.WithWebHostBuilder(builder =>
+        {
+            builder.ConfigureServices(services =>
+            {
+                services.AddSingleton(mockPersonService.Object);
+            });
+        }).CreateClient();
+
+        // Act
+        var response = await client.GetAsync("/");
+        var responseString = await response.Content.ReadAsStringAsync();
+
+        // Assert
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Equal("Hello, Jane Doe!", responseString);
     }
 }
 ```
 
-In this test, a mock implementation of the `IPersonService` interface is created using the Moq library. The mock implementation returns a hard-coded string when the `GetPersonName` method is called. The test asserts that the `GetPersonName` method returns the expected string. The component being tested doesn't know that it's using a mock implementation of the `IPersonService` interface. It only knows that it's using an implementation of the `IPersonService` interface.
+The preceding test:
+
+- Creates a mock implementation of the `IPersonService` interface that returns a hard-coded string.
+- Registers the mock implementation with the service container.
+- Creates an HTTP client to make a request to the API endpoint.
+- Asserts that the response from the API endpoint is as expected.
+
+The test doesn't care how the `PersonService` class gets the name of the person to greet. It only cares that the name is included in the greeting message. The test uses a mock implementation of the `IPersonService` interface to isolate the component being tested from the real implementation of the service. 
