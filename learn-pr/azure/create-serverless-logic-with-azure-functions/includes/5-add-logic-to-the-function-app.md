@@ -16,13 +16,13 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. On the Function App screen under the **Functions** tab, select **Create in Azure portal**. The **Create function** pane appears.
 
-1. Under **Select a template**, select *HTTP trigger*.
+1. Under **Select a template**, select *HTTP trigger* and select **Next**.
 
 ::: zone pivot="javascript"
 
-4. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+4. Leave the **Function name** as *HttpTrigger1* and the **Authorization Level** as *Function*, and select **Create**. The function **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-5. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+5. Select the **Code + Test** tab. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -186,7 +186,7 @@ HTTP triggers let you use API keys to block unknown callers by requiring a key a
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`. Or, use the preferred method and pass it as an HTTP header named `x-functions-key`.
 
-1. To find the function and master keys, in the Function App menu, under **Developer**, select **Function Keys**. The Function Keys pane for your function opens.
+1. To find the function keys, open the **Code + Test** menu by selecting the name of your function (for example, *HttpTriger1*) under the **Functions** tab on the **Overview** menu. Then, select the **Function Keys** tab.
 
 1. By default the function key value is hidden. Show the default function key value by selecting **Show value**. Copy the contents of the **Value** field to the clipboard, and then store this key in Notepad or a similar app for later use.
 
@@ -208,6 +208,7 @@ Because you specified *Function* when you created this function, you need to sup
 1. Check the logs.
 
     The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this:
+
 ::: zone pivot="javascript"
 
     ```output
@@ -217,6 +218,7 @@ Because you specified *Function* when you created this function, you need to sup
     ```
 
 ::: zone-end
+
 ::: zone pivot="powershell"
 
     ```output
@@ -230,7 +232,7 @@ Because you specified *Function* when you created this function, you need to sup
 
 Let's add the logic to the function, to check temperature readings that it receives, and set a status for each temperature reading.
 
-Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we send to our function. Each `Reading` entry has an ID, timestamp, and temperature.
+Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we send to our function. The name of the array might be slightly different for JavaScript or PowerShell, but each entry in the array has an ID, timestamp, and temperature.
 
 ```json
 {
@@ -297,6 +299,34 @@ The logic we added is straightforward. We iterate through the array and set the 
 
 Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements add messages in the Logs window.
 
+## Test our business logic
+
+We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to test our function.
+
+1. On the **Code + Test** tab, select **Test/Run**. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
+
+    ```json
+    {
+        "readings": [
+            {
+                "driveGearId": 1,
+                "timestamp": 1534263995,
+                "temperature": 23
+            },
+            {
+                "driveGearId": 3,
+                "timestamp": 1534264048,
+                "temperature": 45
+            },
+            {
+                "driveGearId": 18,
+                "timestamp": 1534264050,
+                "temperature": 55
+            }
+        ]
+    }
+    ```
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -344,13 +374,11 @@ The logic we added is straightforward. We iterate through the array and set the 
 
 Note the calls to the `Write-Host` cmdlet. When the function runs, these statements add messages in the Logs window.
 
-::: zone-end
-
-## Test our business logic
+## Test the business logic
 
 We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to test our function.
 
-1. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
+1. On the **Code + Test** tab, select **Test/Run**. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
 
     ```json
     {
@@ -373,6 +401,8 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
         ]
     }
     ```
+
+::: zone-end
 
 1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
