@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.1-introduction
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Introduction to the Defend against Cyberthreats with Microsoft Defender XDR exercises module."
   ms.date: 11/7/2024
   author: wwlpublish
   ms.author: kelawson
