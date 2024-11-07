@@ -4,7 +4,7 @@ Using scripts included with the Mixed Reality Toolkit, you can configure basic o
 
 ## Next steps
 
-You can continue to add objects to your scene and add scripts from the MRTK Foundation package to them. This allows you to experiment with different ways to manipulate various 2D and 3D objects. Consider finding and applying the appropriate scripts for the following interactions, then testing them:
+You can continue to add objects to your scene and add scripts from the MRTK Foundation package to them. Then, you can experiment with different ways to manipulate various 2D and 3D objects. Consider finding and applying the appropriate scripts for the following interactions, then testing them:
 
 - Point to an object that's far away to make the object rotate.
 - Configure a motion controller to select an object and scale it to a larger size.

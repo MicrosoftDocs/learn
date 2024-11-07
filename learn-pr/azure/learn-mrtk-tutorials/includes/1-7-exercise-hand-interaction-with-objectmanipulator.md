@@ -178,7 +178,7 @@ You can test holographic object behavior with the Unity in-editor input simulati
 
 1. Set your remote connection: on the menu bar, select **Project > Properties**.
 1. In the project's **Property Pages** window, select **Configuration Properties > Debugging**.
-1. Select the **Debugger to launch** drop down and then select **Remote Machine** if it's not selected already.
+1. Select the **Debugger to launch** drop-down and then select **Remote Machine** if it's not selected already.
 
     > [!IMPORTANT]
     > We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature. To find your IP address, on your HoloLens, go to **Settings > Updates & Security > For developers**. The IP address is listed towards the bottom of the window under **Ethernet**.
