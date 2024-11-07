@@ -36,7 +36,7 @@ units:
 - learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.introduction
 - learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-initialize-xdr.exercise
 - learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-deploy-endpoint.exercise
-- earn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-incidents.exercise
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-incidents.exercise
 - learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.summary
 badge:
   uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.badge
