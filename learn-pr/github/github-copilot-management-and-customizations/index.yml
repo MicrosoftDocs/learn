@@ -10,7 +10,7 @@ metadata:
   ms.collection: github-ai-copilot
   ms.service: github-copilot
 title: Management and customization considerations with GitHub Copilot
-summary: In this module, we review management and customization considerations with GitHub Copilot.
+summary: In this module, we explore management and customization considerations with GitHub Copilot.
 abstract: |
   By the end of this module, you'll:
     -	Understand the GitHub Copilot plans and their associated management and customization features.

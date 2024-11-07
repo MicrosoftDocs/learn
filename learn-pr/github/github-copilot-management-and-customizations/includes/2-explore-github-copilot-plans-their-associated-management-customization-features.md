@@ -31,7 +31,7 @@ In this unit, you learn about:
 | Attach knowledge bases to chat for organizational context    |     ❌     |     ❌     |     ✅     |
 | Fine-tuned models for code completion (coming soon as an add-on)   |     ❌     |     ❌     |     ✅     |
 
-When you're selecting a GitHub Copilot pricing plan, you and your organization should consider several key factors:
+When you're selecting a GitHub Copilot pricing plan, you and your organization should consider these key factors:
 
 - **Data privacy and security**: The plans offer varying levels of data privacy and security measures. For instance, GitHub Copilot Business and Enterprise are the only plans that provide more robust privacy     controls. These controls include the ability to exclude specific files from GitHub Copilot analysis, access detailed audit logs, and provide IP indemnity.
 - **Policy management**: The ability to manage Copilot policies at an organizational level is crucial. Business and Enterprise plans allow for comprehensive policy management, to help ensure that sensitive data is handled according to the organization's privacy policies.

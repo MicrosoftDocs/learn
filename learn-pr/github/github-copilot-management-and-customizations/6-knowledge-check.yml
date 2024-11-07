@@ -36,7 +36,7 @@ quiz:
       explanation: "Ensuring a stable internet connection is essential for GitHub Copilot to function properly and provide code suggestions."
     - content: "Disable the Copilot extension"
       isCorrect: false
-      explanation: "Disabling the extension would prevent GitHub Copilot from providing any code suggestions at all, which doesn't solve the problem."
+      explanation: "Disabling the extension would prevent GitHub Copilot from providing any code suggestions at all, which wouldn't solve the problem."
     - content: "Change the programming language"
       isCorrect: false
       explanation: "Changing your programming language isn't a relevant troubleshooting step for resolving problems with code suggestions from GitHub Copilot."
@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "To enhance code completion accuracy"
       isCorrect: false
-      explanation: "The primary purpose of the content exclusion feature is to manage the content that's used for suggestions."
+      explanation: "The main purpose of the content exclusion feature is to manage the content that's used for suggestions."
     - content: "To prevent specific files or repositories from being used for code suggestions"
       isCorrect: true
       explanation: "The content exclusion feature ensures that GitHub Copilot doesn't inadvertently suggest sensitive or proprietary code."
