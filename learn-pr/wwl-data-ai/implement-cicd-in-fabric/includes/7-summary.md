@@ -4,4 +4,4 @@ The main takeaways from this module include understanding how to configure secur
 
 For more reading, you can refer to the following URLs:
 
-- [Microsoft Fabric security white paper](/fabric/security/white-paper-landing-page?azure-portal=true)
+- [Tutorial: End to end lifecycle management](fabric/cicd/cicd-tutorial?azure-portal=true)

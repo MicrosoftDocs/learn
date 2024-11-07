@@ -1,6 +1,6 @@
 Now it's your chance to secure data access in Microsoft Fabric.
 
-In this exercise, you’ll learn how to secure data access in Fabric using the concepts explored in this module.
+In this exercise, you’ll learn how to use Fabric deployment pipelines to automate the process of copying changes between environments like development, test, and production.
 
 > [!NOTE]
 > You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial?azure-portal=true) to enable your Fabric trial license.
