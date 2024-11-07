@@ -1211,17 +1211,12 @@
       "redirect_url": "https://learn.microsoft.com/ai/"
     },
     {
-      "source_path": "learn-pr/paths/intro-quantum-computing-developers/index.md",
+      "source_path": "learn-pr/paths/intro-quantum-computing-developers/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/quantum/introduction-to-quantum-computing/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/introduction-to-quantum-computing/includes/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
@@ -1236,17 +1231,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/introduction-to-quantum-computing/includes/2-demystify-quantum-computing.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/quantum/introduction-to-quantum-computing/3-current-state-of-quantum-computing.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/introduction-to-quantum-computing/includes/3-current-state-of-quantum-computing.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
@@ -1256,17 +1241,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/introduction-to-quantum-computing/includes/4-building-block-of-quantum-computing.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/quantum/introduction-to-quantum-computing/7-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/introduction-to-quantum-computing/includes/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
@@ -1281,27 +1256,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/quantum-software-applications/includes/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-software-applications/includes/2-software.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-software-applications/includes/3-applications.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/quantum/quantum-software-applications/4-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-software-applications/includes/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
@@ -1361,31 +1316,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/quantum-stack-hardware-firmware/includes/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-hardware-firmware/includes/2-quantum-stack.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-hardware-firmware/includes/3-control-hardware.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-hardware-firmware/includes/4-firmware.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-hardware-firmware/includes/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -1412,26 +1342,6 @@
     },
     {
       "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/5-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/includes/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/includes/2-middleware.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/includes/3-cloud-integration.md",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/quantum/quantum-stack-middleware-cloud-integration/includes/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
