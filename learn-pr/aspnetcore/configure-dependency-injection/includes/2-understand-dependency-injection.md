@@ -54,7 +54,7 @@ Also suppose your app maps an API endpoint that returns a greeting message. The 
 
 :::code language="csharp" source="../code/introduction.cs" id="snippet_test_program" highlight="3,7-10":::
 
-This is similar the previous example with `IPersonService`. to  The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` that implements the interface fetches the name of the person to greet from a database.
+This is similar the previous example with `IPersonService`. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` that implements the interface fetches the name of the person to greet from a database.
 
 Now consider the following XUnit test that tests the same API endpoint:
 

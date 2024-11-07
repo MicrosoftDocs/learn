@@ -3,7 +3,7 @@ uid: learn.configure-dependency-injection
 metadata:
   title: Configure services with dependency injection in ASP.NET Core
   description: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
-  ms.date: 10/24/2024
+  ms.date: 11/7/2024
   author: camsoper
   ms.author: casoper
   ms.topic: module

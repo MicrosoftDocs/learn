@@ -6,8 +6,8 @@ title: Service lifetimes
 metadata:
   title: Service lifetimes
 
-  description: This unit explains what service lifetimes in ASP.NET Core app.
-  ms.date: 10/29/2024
+  description: This unit explains what service lifetimes are in an ASP.NET Core app.
+  ms.date: 11/7/2024
   author: camsoper
   ms.author: casoper
   ms.topic: unit

@@ -6,8 +6,8 @@ Suppose you're an entry-level ASP.NET Core developer at a small company. Your te
 
 ## What will we be doing?
 
-In this module, you use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement a simple in-memory service to generate the welcome message. You'll then use the built-in dependency injection container to inject the service where needed.
+In this module, you use the .NET SDK to create a boilerplate ASP.NET Core web application. After ensuring it runs correctly, you'll implement an in-memory service to generate the welcome message. You'll then use the built-in dependency injection container to inject the service where needed.
 
 ## What is the main goal?
 
-By the end of the module, you'll be able to create a simple ASP.NET Core web application that uses the built-in dependency injection container to manage services. You'll also be able to describe the benefits of using dependency injection in an ASP.NET Core app.
+By the end of the module, you'll be able to create an ASP.NET Core web application that uses the built-in dependency injection container to manage services. You'll also be able to describe the benefits of using dependency injection in an ASP.NET Core app.

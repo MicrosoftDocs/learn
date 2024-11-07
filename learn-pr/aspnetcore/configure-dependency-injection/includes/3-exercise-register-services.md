@@ -18,6 +18,8 @@ You need an ASP.NET Core app to play the role of your team's app. Let's create a
 1. Select **Create project** to create the project.
 1. When the new project opens, expand the `Solution Explorer` pane to view the project files.
 
+    :::image type="content" source="../media/solution-explorer.png" alt-text="A screenshot of the Solution Explorer pane in Visual Studio Code."  lightbox="../media/solution-explorer.png":::
+
 ## Run the app
 
 Test the app to make sure it runs.
@@ -35,36 +37,34 @@ Test the app to make sure it runs.
 Now that you have a working app, let's create a service that generates a welcome message for the main page.
 
 1. Right-click the *MyWebApp* project in the `Solution Explorer` pane. Select **Add** > **New Folder**. Name the folder *Services*.
-1. Right-click the *Services* folder. Select **Add** > **New File**. Select the file **Class** file type, and then name the file *WelcomeService.cs*.
+1. Right-click the *Services* folder. Select **Add** > **New File**. Select the **Class** file type, and then name the file *WelcomeService.cs*.
 1. Replace the contents of *WelcomeService.cs* with the following code:
 
     ```csharp
-    using MyWebApp.Interfaces;
-    
     namespace MyWebApp.Services;
     
     public class WelcomeService : IWelcomeService
     {
     
-        DateTime _welcomeMessageGenerated;
+        DateTime _serviceCreated;
         Guid _serviceId;
     
         public WelcomeService()
         {
-            _welcomeMessageGenerated = DateTime.Now;
+            _serviceCreated = DateTime.Now;
             _serviceId = Guid.NewGuid();                
         }
     
         public string GetWelcomeMessage()
         {
-            return $"Welcome to Contoso! The current time is {_welcomeMessageGenerated}. This service instance has an ID of {_serviceId}";
+            return $"Welcome to Contoso! The current time is {_serviceCreated}. This service instance has an ID of {_serviceId}";
         }
     }
     ```
 
     This code defines a `WelcomeService` class with a `GetWelcomeMessage` method that generates a welcome message. The message includes the current time when the service was created, as well as a unique identifier for each instance of the service.
 
-    Note that the `_welcomeMessageGenerated` and `_serviceId` fields are set in the constructor, and they never change for the lifetime of the service instance.
+    Note that the `_serviceCreated` and `_serviceId` fields are set in the constructor, and they never change for the lifetime of the service instance.
 
 ## Register the service
 
@@ -142,7 +142,7 @@ Your team reviews your code, and another developer suggests that you use an inte
     using MyWebApp.Interfaces;
     ```
 
-    This directive resolves the reference to the `IWelcomeService` interface.
+    This directive resolves the reference to the `IWelcomeService` interface you add in the next step.
 
 1. Update the `WelcomeService` class declaration to implement the `IWelcomeService` interface:
 
@@ -151,6 +151,7 @@ Your team reviews your code, and another developer suggests that you use an inte
     ```
 
     This is the only change you need to make to the `WelcomeService` class to implement the `IWelcomeService` interface. The `WelcomeService` class already has a `GetWelcomeMessage` method that matches the method signature in the `IWelcomeService` interface.
+
 1. Open the *Program.cs* file.
 1. Update the `builder.Services.AddSingleton<WelcomeService>();` line to the following code:
 
@@ -169,7 +170,7 @@ Your team reviews your code, and another developer suggests that you use an inte
     app.MapGet("/", (IWelcomeService welcomeService) => welcomeService.GetWelcomeMessage());
     ```
 
-    The difference here is that the anonymous method now expects an `IWelcomeService` instead of a `WelcomeService`.
+    The anonymous method now expects an `IWelcomeService` instead of a `WelcomeService`.
 
     Your *Program.cs* file should look like this:
 

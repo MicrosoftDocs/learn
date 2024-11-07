@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check for ASP.NET Core depenency injection.
-  ms.date: 10/28/2024
+  ms.date: 11/7/2024
   author: CamSoper
   ms.author: casoper
   ms.topic: unit
@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: Check your understanding
   questions:
-  - content: "Which is a true statement about dependency injection?"
+  - content: "Which of the following is a true statement about dependency injection?"
     choices:
     - content: "Dependency injection is a design pattern that allows you to loosely couple your app's dependencies."
       isCorrect: false
@@ -42,9 +42,9 @@ quiz:
       explanation: "Incorrect. One of the above choices is correct."
   - content: "What is the behavior of a service registered with the **scoped** service lifetime?"
     choices:
-    - content: "A new instance of the service is created for each request."
+    - content: "A new instance of the service is created for the current scope, like the current request."
       isCorrect: true
-      explanation: "Correct! Scoped services are created once per request, and may be reused within the scope of the request."
+      explanation: "Correct! ASP.NET Core creates a scope for each request, so scoped services can be reused within the scope of the request."
     - content: "A single instance of the service is created for the lifetime of the app."
       isCorrect: false
       explanation: "Incorrect. This is the behavior of a singleton service."

@@ -1,10 +1,10 @@
-In the previous exercise, you registered services using the singleton service lifetime. In a code review, your team lead has asked you to investigate the differences between the **singleton**, **scoped**, and **transient** service lifetimes.
+In the previous exercise, you registered services using the singleton service lifetime. In a code review, your team lead asks you to investigate the differences between the **singleton**, **scoped**, and **transient** service lifetimes.
 
 ## Test the singleton service lifetime
 
 1. The app should still be running from the previous exercise. If it's not, run the app as before.
 1. Refresh the browser window and note the time displayed in the welcome message.
-1. Wait a few seconds, and then refresh the browser window again. Note that the welcome message doesn't change. The timestamp and GUID remain the same.
+1. Wait a few seconds, and then refresh the browser window again. Observe that welcome message doesn't change. The timestamp and GUID remain the same.
 
     The time and GUID displayed in the welcome message don't change because the `WelcomeService` service is registered as a Singleton service. The service is created once when the app starts and is reused for the lifetime of the app. Every request, from every client, uses the same instance of the service. No other instance of the service is created.
 
@@ -45,11 +45,11 @@ To understand the scoped service lifetime, you need to change how the `WelcomeSe
     - The `app.MapGet()` delegate now has two parameters of type `IWelcomeService`. The delegate generates two welcome messages, one for each service instance.
     - The delegate returns both messages in a single response.
 
-1. Run the app as before. Note that even though the two welcome messages are generated at different times, and they were passed to the delegate as separate parameters, the messages are identical.
+1. Run the app as before. Observe that even though the two welcome messages are generated at different times, and they were passed to the delegate as separate parameters, the messages are identical.
 
-    This behavior is because the `WelcomeService` service is registered as a Scoped service. The service is created once per client request, and the same instance is provided to all components that need it during the same request. `welcomeService1` and `welcomeService2` are both references to the same instance of the `WelcomeService` service.
+    This behavior is because the `WelcomeService` service is registered as a *scoped* service. The service is created once per client request, and the same instance is provided to all components that need it during the same request. `welcomeService1` and `welcomeService2` are both references to the same instance of the `WelcomeService` service.
 
-1. Refresh the page a few times. Note that the timestamp and GUID in the welcome messages change each time, but the two messages are always identical.
+1. Refresh the page a few times. Observe that the timestamp and GUID in the welcome messages change each time, but the two messages are always identical.
 1. Stop the app by pressing **Shift+F5** in Visual Studio Code.
 
 ## Test the transient service lifetime
@@ -64,9 +64,9 @@ Now let's examine the transient service lifetime.
 
     This code registers the `WelcomeService` class with the service container with a transient lifetime.
 
-1. Run the app as before. Note that the time in both messages remains the same because both instances of the `WelcomeService` service are created at the same time. However, the GUID in each message is different because each instance of the service is unique.
+1. Run the app as before. The time in both messages remains the same because both instances of the `WelcomeService` service are created at the same time. However, the GUID in each message is different because each instance of the service is unique.
 
     This behavior is representative of the transient service lifetime. Every time the service is injected into a component, a new instance of the service is created. Since it's injected into the delegate twice, two instances of the service are created.
 
-1. Refresh the page a few times. Note that each time you refresh the page, the timestamp is always the same across both messages, but the GUID in each message is different.
+1. Refresh the page a few times. Each time you refresh the page, the timestamp is always the same across both messages, but the GUID in each message is different.
 1. Stop the app by pressing **Shift+F5** in Visual Studio Code.    
