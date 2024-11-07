@@ -1,10 +1,11 @@
+
 Decision logic is used to establish alternative pathways through your code, where the decision about which path to follow is based on the evaluation of an expression. For example, you might write some code that executes one of two paths based on a user's input. If the user enters the letter "a", your code will execute one code block. If they enter the letter "b", your code will execute a different code block. In this example, you're controlling the execution path based on the value assigned to a string. Your code selects an execution path based on an expression, how that expression is evaluated, and the underlying logic used to define the paths.
 
 Examining how to construct and evaluate an expression is a good place to start.
 
 ## What is an expression?
 
-An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are comprised of one or more expressions. For example, the following `if` *statement* contains a single *expression* that returns a single value:
+An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements comprise one or more expressions. For example, the following `if` *statement* contains a single *expression* that returns a single value:
 
 ```c#
 if (myName == "Luiz")
@@ -28,7 +29,7 @@ Now it's time to prepare your coding environment and begin writing code that eva
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You are encouraged you to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You are encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 1. Open Visual Studio Code.
 

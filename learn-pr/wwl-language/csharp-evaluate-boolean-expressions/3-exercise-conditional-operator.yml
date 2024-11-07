@@ -4,10 +4,12 @@ title: Exercise - Implement the conditional operator
 metadata:
   title: Exercise - Implement the conditional operator
   description: "Exercise - Implement the conditional operator"
-  ms.date: 02/22/2024
+  ms.date: 11/07/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-conditional-operator.md)]
@@ -16,12 +18,12 @@ quiz:
   questions:
   - content: "Which of the following lines of code is a valid use of the conditional operator?"
     choices:
-    - content: "`int bonus = amount >= 100? 10: 5;`."
+    - content: "`int bonus = amount >= 100? 10 : 5;`"
       isCorrect: true
       explanation: "Correct! This code line shows the correct syntax for a conditional operator `?:`."
-    - content: "`int bonus = amount >= 100: 10? 5;`."
+    - content: "`int bonus = amount >= 100: 10? 5;`"
       isCorrect: false
       explanation: "Incorrect. The conditional operator `?:` is reversed in this code line."
-    - content: "`int bonus = amount >= 100? 10, 5;`."
+    - content: "`int bonus = amount >= 100? 10, 5;`"
       isCorrect: false
       explanation: "Incorrect. The comma character `,` isn't part of a conditional operator."
