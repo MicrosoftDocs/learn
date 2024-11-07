@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module-guided-project
+  ms.service: microsoft-defender
   ai-usage: ai-assisted
 title: defend-against-cyberthreats-microsoft-defender-xdr-labs
 summary: "In this module, you learned how to configure Microsoft Defender XDR, deploy Microsoft Defender for Endpoint, and onboard devices. You also configured policies, mitigated threats and responded to incidents with Defender XDR."
