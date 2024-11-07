@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs
+metadata:
+  title: defend-against-cyberthreats-microsoft-defender-xdr-labs
+  description: "Learn how to configure Microsoft Defender XDR, deploy Microsoft Defender for Endpoint and onboard devices, configure policies, mitigate threats, and respond to incidents with Defender XDR."
+  ms.date: 11/7/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: module-guided-project
+  ai-usage: ai-assisted
+title: defend-against-cyberthreats-microsoft-defender-xdr-labs
+summary: "In this module, you learned how to configure Microsoft Defender XDR, deploy Microsoft Defender for Endpoint, and onboard devices. You also configured policies, mitigated threats and responded to incidents with Defender XDR."
+abstract: |
+  By the end of this module, you're able to:
+    - Configure the Microsoft Defender XDR environment
+    - Deploy Microsoft Defender for Endpoint
+    - Mitigate threats using Microsoft Defender for Endpoint
+    - Investigate and respond to incidents using Microsoft Defender XDR
+prerequisites: |
+    - Basic experience with the Microsoft Defender portal
+    - Basic experience and understanding of Security Operations Center (SOC) operations
+    - Access to a Microsoft 365 E5 tenant with a Microsoft Defender for Endpoint P2 license, or trial licenses
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-operations-analyst
+products:
+  - microsoft-defender
+  - defender-endpoint
+  - defender-xdr
+subjects:
+  - security
+units:
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.1-introduction
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.2-exercise
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.3-exercise
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.4-exercise
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.5-summary
+badge:
+  uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs.badge
