@@ -11,6 +11,8 @@ metadata:
   ms.author: robmcm
   ms.topic: module-standard-task-based
   ms.service: azure-active-directory
+### NOTE: Temporarily hiding this module while SFI issues are addressed.
+  hidden: true
 title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
 summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
 abstract: |
