@@ -17,11 +17,9 @@ app.MapGet("/",
 );
     
 app.Run();
-```
+#endregion
 
-And the following *PersonService.cs* file:
-
-```csharp
+#region snippet_personservice
 namespace MyApp.Services;
 
 public class PersonService
@@ -32,5 +30,3 @@ public class PersonService
     }
 }
 #endregion
-
-#region 
