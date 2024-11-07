@@ -1,4 +1,4 @@
-#region program_cs
+#region snippet_program
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
