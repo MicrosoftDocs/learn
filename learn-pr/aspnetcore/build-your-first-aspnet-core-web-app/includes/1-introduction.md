@@ -1,4 +1,4 @@
-In this module, you will create your first ASP.NET Core web app with .NET and C#.
+In this module, you create your first ASP.NET Core web app with .NET and C#.
 
 ## Example scenario
 
@@ -6,7 +6,7 @@ You're just getting started with ASP.NET Core. You want to understand how to qui
 
 ## What will we be doing?
 
-In this module, you will:
+In this module, you:
 
 - Review ASP.NET Core default project templates available in the .NET SDK.
 - Create an ASP.NET Core web app project from a template.

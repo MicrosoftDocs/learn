@@ -18,7 +18,7 @@ In Visual Studio Code, create a new project:
     :::image type="content" source="../media/vsc-select-create-dotnet-project.png" alt-text="Selecting Create .NET Project":::
 
 1. Select the **ASP.NET Core Empty** project template from the list.
-1. In the **Project Location** dialog, create a folder named `MyWebApp` that will contain the project.
+1. In the **Project Location** dialog, create a folder named `MyWebApp` to contain the project.
 1. In the **Command Palette**, name the project `MyWebApp`, including matching the capitalization. Using this exact project name is important to ensure that the namespaces for code in this instruction match yours.
 1. Select **Create project** from the **Command Palette**.
 
@@ -29,11 +29,12 @@ The *MyWebApp* project folder contents are displayed in the Visual Studio Code *
 :::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
 
 ::: zone-end
+
 ::: zone pivot="shell"
 
 From a terminal or the command line, create a new project:
 
-1. Change to the directory (`cd`) that will contain the project.
+1. Change to the directory (`cd`) that's going to contain the project.
 1. Create an ASP.NET Core web app in a directory named *MyWebApp* by running the .NET CLI command `dotnet new`:
 
     ```dotnetcli
@@ -47,7 +48,7 @@ From a terminal or the command line, create a new project:
     - `dotnet new`: A .NET CLI command for creating various .NET development artifacts based on templates such as projects, solutions, libraries, configuration, and other specialized files.
     - `web`: A project template used to create an ASP.NET Core empty web project, containing no example content. `web` is one of the many [built-in project templates](/dotnet/core/tools/dotnet-new-sdk-templates) available in the [.NET SDK](https://dotnet.microsoft.com/download).
     - `-o`: The output option specifies the directory where the new project is created:
-        - If the directory doesn't exist, it's created. 
+        - If the directory doesn't exist, the .NET CLI creates it.
         - The directory where the project is created serves as the default project name, namespace, and assembly name (the name of the compiled output).
         - If the output option `-o <directory>` isn't used, then the current directory is used.
 
@@ -56,6 +57,7 @@ From a terminal or the command line, create a new project:
 ## Examine the structure of the project
 
 ::: zone-end
+
 ::: zone pivot="vscode"
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
@@ -89,7 +91,7 @@ The `obj` folder contains intermediate files that are used by the build system, 
 
 The *Properties/launchSettings.json* file contains configuration data for how the app is launched during development. These settings include the `applicationUrl` property, which specifies the root URL the app uses, such as `https://localhost:{port}`, where `{port}` is a random local port number assigned when the project is created.
 
-The *launchSettings.json* file contains the following:
+The *launchSettings.json* file contains the following configuration: 
 
 [!code-json[](../code/MyWebApp/Properties/launchSettings.json)]
 
