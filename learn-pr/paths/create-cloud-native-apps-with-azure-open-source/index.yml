@@ -47,6 +47,6 @@ modules:
 - learn.azure.cna-build-basic-service
 - learn.azure.cna-stream-iot-data
 - learn.azure.cna-build-iot-service
-- learn.azure.cna-set-up-apps-use-scale
+# - learn.azure.cna-set-up-apps-use-scale
 trophy:
   uid: learn.azure.cna-architect-modern-apps.trophy
