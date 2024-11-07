@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
-  durationInMinutes: 30
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise.md)]
