@@ -8,9 +8,6 @@ Return to your conversation in Copilot. You start by ideating with your co-creat
 2. Paste the prompt into the chat.
 3. Review the response, and iterate as needed until you're happy with the output.
 
-> [!NOTE]
-> **Few Shot Prompt example**. This prompt is an example of a Few Shot prompt, where you provided some guidance or an example of what you wanted it to do and the output to be. Zero-shot gives no guidance.
-
 **Sample prompt**:
 ``` 
 We are now going to work on the part of the project called 
@@ -116,9 +113,8 @@ When you have two spaces complete and the images downloaded, you can move to the
 Key takeaways from this unit:
 
 - Copilot understands complex directives. A single prompt can have several tasks and it can infer what is required.  
-- **Few shot prompts** provide examples to direct output. Providing samples of how you want the output formatted or completed illustrates what is expected in a response.
 
 Explore ways to refine your prompts:
 
-- Craft a more detailed few shot prompt. Provide several examples for format or organizing content.
+- Craft a more detailed prompt. Provide several examples for format or organizing content.
 - Brainstorm with Copilot. The Copilot-generated ideas can be iterated or expanded.

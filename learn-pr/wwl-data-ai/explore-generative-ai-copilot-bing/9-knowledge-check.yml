@@ -39,14 +39,14 @@ quiz:
     - content: "It allows the copilot to perform actions and tasks within the chat without leaving the browser."
       isCorrect: false
       explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in."
-  - content: "What is the main difference between few-shot prompting and zero-shot prompting in generative AI?"
+  - content: "How do you refine image output using Copilot?"
     choices:
-    - content: "Few-shot prompting sends many paragraphs where a zero-shot prompt is just a sentence."
+    - content: "Request Copilot to create an image without providing any context"
       isCorrect: false
-      explanation: "That's incorrect. A few-shot prompt has an example in the prompt to guide the desired output, where a zero-shot prompt does not."
-    - content: "Few-shot prompting uses examples of the desired output, while zero-shot prompting uses none."
+      explanation: "Incorrect. Providing context helps Copilot generate an image that aligns with the user's requirements."
+    - content: "Use descriptive modifiers in the prompt and craft an image prompt with more details."
       isCorrect: true
-      explanation: "That's  correct. A few-shot prompt provides an example."
-    - content: "Few shot prompting provides better results."
+      explanation: "Correct. Detailed prompts help Copilot generate images that closely match the user's expectations."
+    - content: "Ask Copilot to generate a random image"
       isCorrect: false
-      explanation: "That's incorrect. Both zero-shot and few-shot prompting can produce good results. Your choice depends on the model, the task, and the prompt."
+      explanation: "Incorrect. Randomly generated images may not align with the desired context or theme."
