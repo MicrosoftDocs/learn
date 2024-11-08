@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise5
-title: Exercise 05 - DNS zones and DNS settings
+title: 'Exercise 05 - DNS zones '
 metadata:
-  title: Exercise 05 - DNS zones and DNS settings
-  description: "DNS zones and DNS settings"
+  title: Exercise 05 - DNS zones
+  description: "DNS zones"
   ms.date: 11/08/2024
   author: wwlpublish
   ms.author: jileary

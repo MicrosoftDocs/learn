@@ -1,7 +1,7 @@
 ## Scenario
 
-Your organization requires workloads to use domain names instead of IP addresses for internal communications. The organization doesn’t want to add a custom DNS solution. You identify these requirements.
-+ A private DNS zone is required for contoso.com.
+Your organization requires workloads to use domain names instead of IP addresses for internal communications. The organization doesn’t want to add a custom Domain Name Service (DNS) solution. You identify these requirements.
++ A private DNS zone is required for `private.contoso.com`.
 + The DNS uses a virtual network link to app-vnet. 
 + A new DNS record is required for the backend subnet. 
 
