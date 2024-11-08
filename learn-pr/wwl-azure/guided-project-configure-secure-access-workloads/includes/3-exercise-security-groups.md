@@ -1,11 +1,11 @@
 ## Scenario
 
-Your organization requires the network traffic in the app-vnet to wibe tightly controlled. You identify these requirements.
+Your organization requires the network traffic in the app-vnet to be tightly controlled. You identify these requirements.
 + The frontend subnet has web servers that can be accessed from the internet. An application security group (ASG) is required for those servers. The ASG should be associated with any virtual machine interface that is part of the group. 
 + An NSG rule is required to allow inbound HTTPS traffic to the ASG. This rule uses the TCP protocol on port 443. 
 + The backend subnet has database servers used by the frontend web servers. A network security group (NSG) is required to control this traffic. The NSG should be associated with any virtual machine interface accessed by the web servers. 
-+ An NSG rule is required to allow inbound network traffic from the ASG to the backend servers.  This rule uses the MS SQL service and port 1443. 
-+ A virtual machine should be installed in the frontend subnet (VM1) and the backend subnet (VM2).  The IT group has an Azure resource manager template to deploy these Ubuntu servers. 
++ An NSG rule is required to allow inbound network traffic from the ASG to the backend servers. This rule uses the MS SQL service and port 1443. 
++ A virtual machine should be installed in the frontend subnet (VM1) and the backend subnet (VM2). The IT group has an Azure Resource Manager template to deploy these Ubuntu servers. 
 
 ## Skilling Tasks
 
