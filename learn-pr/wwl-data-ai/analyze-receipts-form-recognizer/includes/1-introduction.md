@@ -1,5 +1,3 @@
-
-
 Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), document intelligence takes the next step a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text.  
 
 Consider an organization that needs to process large numbers of receipts for expenses claims, project costs, and other accounting purposes. Suppose someone needs to manually enter the information into a database. The manual process is relatively slow and potentially error-prone. 

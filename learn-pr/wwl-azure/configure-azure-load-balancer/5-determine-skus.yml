@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-load-balancer.determine-skus
 title: Determine load balancer SKUs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine load balancer SKUs
   description: "Determine load balancer SKUs."
   ms.date: 03/15/2024

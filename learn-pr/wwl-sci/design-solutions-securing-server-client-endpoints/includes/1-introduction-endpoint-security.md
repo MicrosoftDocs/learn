@@ -7,7 +7,7 @@ In this module, you learn how to:
 - Specify security baselines for server and client endpoints
 - Design a solution for secure remote access
 
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in this module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 

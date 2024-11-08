@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.programming-options
 title: Prepare to program the Altair by using CP/M
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare to program the Altair by using CP/M
   description: Get background information that will help you program the Altair by using CP/M.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/02-programming-options.md)]
+

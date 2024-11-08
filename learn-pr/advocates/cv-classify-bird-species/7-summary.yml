@@ -2,6 +2,8 @@
 uid: learn.advocates.cv-classify-bird-species.7-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: cassiebreviu
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

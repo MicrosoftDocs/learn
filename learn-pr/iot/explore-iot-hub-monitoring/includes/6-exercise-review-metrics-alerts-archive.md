@@ -103,7 +103,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
     ```json
     {
         "time": "2023-09-21T22:16:00Z",
-        "resourceId": "/SUBSCRIPTIONS/AE82FF3B-4BD0-462B-8449-D713DD18E11E/RESOURCEGROUPS/SandboxResourceGroup/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/IOT-TRAINING-DM092121",
+        "resourceId": "/SUBSCRIPTIONS/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/RESOURCEGROUPS/SandboxResourceGroup/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/IOT-TRAINING-DM092121",
         "operationName": "deviceConnect",
         "category": "Connections",
         "level": "Information",
@@ -112,7 +112,7 @@ Earlier in this lab, you set up your diagnostic logs to be exported to Blob Stor
     }
     {
         "time": "2023-09-21T22:33:34Z",
-        "resourceId": "/SUBSCRIPTIONS/AE82FF3B-4BD0-462B-8449-D713DD18E11E/RESOURCEGROUPS/SandboxResourceGroup/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/IOT-TRAINING-DM092121",
+        "resourceId": "/SUBSCRIPTIONS/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/RESOURCEGROUPS/SandboxResourceGroup/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/IOT-TRAINING-DM092121",
         "operationName": "deviceDisconnect",
         "category": "Connections",
         "level": "Error",

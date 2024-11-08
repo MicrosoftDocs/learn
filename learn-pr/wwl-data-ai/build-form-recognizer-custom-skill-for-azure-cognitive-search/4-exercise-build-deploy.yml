@@ -2,6 +2,8 @@
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.exercise-build-deploy
 title: 'Exercise: Build and deploy an Azure AI Document Intelligence custom skill'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Build and deploy an Azure AI Document Intelligence custom skill"
   description: "Exercise: Build and deploy an Azure AI Document Intelligence custom skill"
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-build-deploy.md)]
+

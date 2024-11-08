@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/18/2024
+  ms.date: 10/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

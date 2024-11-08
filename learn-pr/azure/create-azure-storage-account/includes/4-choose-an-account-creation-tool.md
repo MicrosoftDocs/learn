@@ -9,7 +9,7 @@ The available tools are:
 - Azure PowerShell
 - Management client libraries
 
-The portal provides a GUI with explanations for each setting, which makes it easy to use and helpful for learning about the options.
+The Azure portal provides a GUI with explanations for each setting, which makes it easy to use and helpful for learning about the options.
 
 The other tools in this list all support automation. The Azure CLI and Azure PowerShell let you write scripts, while the management libraries allow you to incorporate the creation into a client app.
 

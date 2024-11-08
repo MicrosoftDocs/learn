@@ -24,11 +24,16 @@ az webapp deploy \
     --name <your-app-name>
 ```
 
-The deployment takes a few minutes, during which time you get status output. A 202 status code means the deployment was successful.
+The deployment takes a few minutes, during which time you get status output. When the command finishes running, you see an output message like this:
+
+```output
+Deployment has completed successfully
+You can visit your app at: http://<app-name>-<hash>.<region>.azurewebsites.net
+```
 
 ## Verify the deployment
 
-Let's browse to our application. Navigate back to the open browser tab containing the placeholder page and refresh it. If the placeholder page appears again, your App Service instance isn't fully restarted yet, so wait a moment and try again. When you refresh after your app is restarted, you get the splash page for a new ASP.NET Core web app.
+In a new tab, navigate to the URL shown in the output. You get the splash page for a new ASP.NET Core web app.
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
 
@@ -50,7 +55,14 @@ az webapp deploy \
     --name <your-app-name>
 ```
 
-When the command finishes running, open a new browser tab and go to `https://<your-app-name>.azurewebsites.net`. You get the greeting message from your app. You deployed successfully!
+When the command finishes running, you see an output message like this:
+
+```output
+Deployment has completed successfully
+You can visit your app at: http://<app-name>-<hash>.<region>.azurewebsites.net
+```
+
+In a new tab, navigate to the URL in the output. You get the greeting message from your app. You deployed successfully!
 
 ::: zone-end
 
@@ -81,7 +93,7 @@ The deployment takes a few minutes to propagate. You're able to view the progres
 
 ## Verify the deployment
 
-Let's browse to our application. The last line of output from `az webapp up` before the JSON code block has a link to your app. Select it to navigate there in a new browser tab. The page takes a moment to load, as App Service is initializing your app for the first time.
+Let's browse to our application. In the JSON output, find the URL. Select it to navigate there in a new browser tab. The page takes a moment to load, as App Service is initializing your app for the first time.
 
 Once it loads, you get the greeting message from your app. You deployed successfully!
 
@@ -110,11 +122,11 @@ cd ~/BestBikeApp
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment takes a few minutes, during which time you get status output.
+The deployment takes a few minutes, during which time you get status output. A 202 status code means your deployment was successful.
 
 ## Verify the deployment
 
-Let's browse to your application. In the output, just before the JSON code block, there's a line with a URL. Select that link to open your app in a new browser tab. The page might take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application. In the JSON output, find the URL. Select that link to open your app in a new browser tab. The page might take a moment to load because the App Service is initializing your app for the first time.
 
 Once your program loads, you get the greeting message from your app. You deployed successfully!
 

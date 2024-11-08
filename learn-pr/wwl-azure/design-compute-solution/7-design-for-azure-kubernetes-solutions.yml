@@ -2,6 +2,8 @@
 uid: learn.wwl.design-compute-solution.design-for-azure-kubernetes-solutions
 title: Design for Azure Kubernetes Service solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Kubernetes Service solutions
   description: "Design for Azure Kubernetes Service solutions"
   ms.date: 08/29/2024

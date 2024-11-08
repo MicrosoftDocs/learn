@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.machine-learning-model-nasa
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a machine learning model
   description: In this module you focus on a local analysis of your data by using scikit-learn and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
   ms.date: 09/04/2024
@@ -49,3 +51,4 @@ units:
 - learn.student-evangelism.machine-learning-model-nasa.9-summary
 badge:
   uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
+

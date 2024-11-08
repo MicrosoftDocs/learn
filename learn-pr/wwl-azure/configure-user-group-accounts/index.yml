@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-user-group-accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure user and group accounts
   description: "Learn how to configure user and group accounts."
   ms.date: 07/02/2024

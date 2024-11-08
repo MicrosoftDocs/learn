@@ -1,12 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.move-azure-resources-to-another-resource-group
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Move Azure resources to another resource group
   description: Learn how to identify Azure resources you can move, and how to move them to a new resource group.
-  manager: mkluck
-  ms.date: 11/21/2023
-  author: tfitzmac
-  ms.author: tomfitz
+  manager: jasongroce
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
   ms.topic: module
   ms.service: azure-resource-mover
 title: Move Azure resources to another resource group
@@ -38,3 +40,4 @@ units:
 - learn.azure.move-azure-resources-to-another-resource-group.summary
 badge:
   uid: learn.azure.move-azure-resources-to-another-resource-group.badge
+

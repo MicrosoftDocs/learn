@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.migrate-domain-controller-new-site
 title: Migrate a domain controller to a new site
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate a domain controller to a new site
   description: "Migrate a domain controller to a new site"
   ms.date: 06/18/2024

@@ -5,7 +5,7 @@ metadata:
   description: Use data to train a neural network in an AI model how to accurately predict types of space rocks in photos.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/28/2021
+  ms.date: 09/24/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

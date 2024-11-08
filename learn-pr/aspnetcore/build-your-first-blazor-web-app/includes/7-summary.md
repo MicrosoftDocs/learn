@@ -10,4 +10,4 @@ Congratulations on building your first Blazor web app!
 
 - [Blazor homepage](https://blazor.net)
 - [Blazor docs](/aspnet/core/blazor)
-- [Project structure for Blazor apps](/aspnet/core/blazor/project-structure)
+- [ASP.NET Core Blazor project structure](/aspnet/core/blazor/project-structure)

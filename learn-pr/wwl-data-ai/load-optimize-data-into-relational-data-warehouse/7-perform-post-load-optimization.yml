@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.perform-post-load-optimization
 title: Perform post load optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform post load optimization
   description: "Perform post load optimization"
   ms.date: 10/27/2023

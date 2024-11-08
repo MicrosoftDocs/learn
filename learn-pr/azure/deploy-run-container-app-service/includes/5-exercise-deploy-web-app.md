@@ -1,4 +1,4 @@
-Azure App Service provides the hosting environment for an Azure-based web app. You can configure App Service to retrieve the image for the web app from a repository in Azure Container Registry. 
+Azure App Service provides the hosting environment for an Azure-based web app. You can configure App Service to retrieve the image for the web app from a repository in Azure Container Registry.
 
 In the example scenario, the team has uploaded the image for the web app to Azure Container Registry and is now ready to deploy the web app.
 
@@ -6,7 +6,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
 ## Enable Docker access to the Azure Container Registry
 
-You'll use Docker to log in to the registry and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
+You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**. The **All resources** pane appears.
 
@@ -65,7 +65,7 @@ You're now ready to create your web app.
 
 ## Test the web app
 
-1. After deployment succeeds, select **Go to resource** to see the web app you just created. Your **App service** pane appears for your web app.
+1. After deployment succeeds, select **Go to resource** to see the web app you created. Your **App service** pane appears for your web app.
 
 2. Select the URL in the **Default domain** field to open the site in a new browser tab.
 

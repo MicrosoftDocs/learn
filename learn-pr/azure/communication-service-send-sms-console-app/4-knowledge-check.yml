@@ -2,6 +2,8 @@
 uid: learn.azure.communication-service-send-sms-console-app.knowledge-check
 title: Check your knowledge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Review concepts around using Azure Communication Services to send an SMS message
   ms.date: 05/30/2023
@@ -54,3 +56,4 @@ quiz:
     - content: 'All of the above'
       isCorrect: true
       explanation: "Great job! You've learned about the Azure Communication Services scenarios."
+

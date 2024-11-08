@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-azure-identity-access-security.describe-defense-depth
 title: Describe defense-in-depth
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe defense-in-depth
   description: "Describe defense-in-depth"
-  ms.date: 01/05/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

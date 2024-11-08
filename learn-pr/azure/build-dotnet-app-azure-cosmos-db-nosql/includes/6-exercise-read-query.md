@@ -176,6 +176,7 @@ Your app now reads and queries items from the container. Here, you run the appli
 1. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Azure.Identity;
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     using Microsoft.Azure.Cosmos.Linq;

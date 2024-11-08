@@ -2,6 +2,8 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.create-pipeline-azure-synapse-studio
 title: Create a pipeline in Azure Synapse Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a pipeline in Azure Synapse Studio
   description: "Create a pipeline in Azure Synapse Studio"
   ms.date: 10/06/2023

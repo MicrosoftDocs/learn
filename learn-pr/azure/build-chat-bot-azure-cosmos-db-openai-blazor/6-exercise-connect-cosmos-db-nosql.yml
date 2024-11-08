@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-cosmos-db-nosql
 title: Exercise - Connect to Azure Cosmos DB for NoSQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Connect to Azure Cosmos DB for NoSQL
   description: |
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-connect-cosmos-db-nosql.md)]
+

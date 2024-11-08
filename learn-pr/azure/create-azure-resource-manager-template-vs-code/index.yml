@@ -1,12 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.create-resource-manager-template-vs-code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure infrastructure by using JSON ARM templates
   description: Write JSON Azure Resource Manager templates by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
-  manager: mkluck
-  ms.date: 09/06/2023
-  author: tfitzmac
-  ms.author: tomfitz
+  manager: jasongroce
+  ms.date: 10/29/2024
+  author: mumian
+  ms.author: jgao
   ms.topic: module-standard-task-based
   ms.service: azure-resource-manager
 title: Deploy Azure infrastructure by using JSON ARM templates
@@ -48,3 +50,4 @@ units:
 - learn.azure.create-resource-manager-template-vs-code.7-summary
 badge:
   uid: learn.azure.create-resource-manager-template-vs-code.badge
+

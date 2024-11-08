@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.create-kafka-spark-architecture
 title: Create a Kafka and Spark architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a Kafka and Spark architecture
   description: "Create a Kafka and Spark architecture"
   ms.date: 04/07/2024

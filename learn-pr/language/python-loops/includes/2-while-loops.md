@@ -32,7 +32,7 @@ while user_input.lower() != 'done':
     user_input = input('Enter a new value, or done when done')
 ```
 
-Notice that you're using `input` to prompt the users. Each time users enter a new value they're changing the condition, which means that the `while` loop will exit after they've entered *done*.
+Notice that you're using `input` to prompt the users. Each time users enter a new value they're changing the condition, which means that the `while` loop will exit after they've entered **done**.
 
 > [!NOTE]
 > In our example, we've used `lower` to convert the input to lowercase, which allows for a case-insensitive comparison.

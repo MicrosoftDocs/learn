@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-with-devops.explore-devops-practices
 title: 'Explore DevOps practices'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore DevOps practices'
   description: "This unit explores the implementation of various DevOps practices to maximize the benefits of incorporating DevOps into the application lifecycle."
   ms.date: 02/06/2024

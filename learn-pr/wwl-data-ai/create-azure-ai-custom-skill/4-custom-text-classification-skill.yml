@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-ai-custom-skill.custom-text-classification-skill
+title: Custom text classification skill
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Custom text classification skill
+  description: "Custom text classification skill."
+  ms.date: 10/23/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-custom-text-classification-skill.md)]

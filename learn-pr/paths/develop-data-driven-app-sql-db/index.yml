@@ -21,7 +21,8 @@ summary: |
   
   > [!NOTE]
   > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
-iconUrl: /training/achievements/develop-data-driven-app-sql-db.svg
+
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
@@ -36,5 +37,9 @@ subjects:
 - artificial-intelligence
 modules:
 - learn-wwl.get-started-sql-database-application-development
+- learn-wwl.develop-azure-sql-database
+- learn-wwl.develop-data-api-azure-sql-database
+- learn-wwl.explore-data-manipulation-azure-sql-database
+- learn-wwl.explore-security-practices-azure-sql-database
 trophy:
   uid: learn-wwl.develop-data-driven-app-sql-db.trophy

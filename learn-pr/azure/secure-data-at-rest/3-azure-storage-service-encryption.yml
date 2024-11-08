@@ -2,6 +2,8 @@
 uid: learn.secure-data-at-rest.3-azure-storage-service-encryption
 title: Secure data at rest by using Azure Storage Service Encryption
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure data at rest by using Azure Storage Service Encryption
   description: Secure data at rest by using Azure Storage Service Encryption
   ms.date: 05/02/2023
@@ -47,3 +49,4 @@ quiz:
     - content: Client-side encryption with Azure.
       isCorrect: false
       explanation: Client-side encryption would require you to encrypt and decrypt all of the data yourself by using multiple encryption keys.
+

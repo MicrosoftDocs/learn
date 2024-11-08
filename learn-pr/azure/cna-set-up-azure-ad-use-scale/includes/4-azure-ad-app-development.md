@@ -11,7 +11,7 @@ To implement Microsoft Entra ID-based applications, you'll need to perform sever
 When operating in a Microsoft Entra environment, a user authenticates to an application in two stages:
 
 1. First, Microsoft Entra ID verifies the user's identity. Upon successful authentication, Microsoft Entra ID issues tokens that contain information reflecting the successful authentication.
-1. The user passes tokens to the application. The application validates the user’s security tokens to ensure that authentication was successful.
+1. The user passes tokens to the application. The application validates the user's security tokens to ensure that authentication was successful.
 
 To perform such validation, the application must be able to communicate securely with Microsoft Entra ID. This, in turn, requires that the application itself operates as a Microsoft Entra security principal. To make it possible, you must ensure that the application is represented in some form in the same Microsoft Entra tenant that contains the account of the authenticating user.
 

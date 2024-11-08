@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.exercise-load-data-into-relational-data-warehouse
 title: Exercise - load data into a relational data warehouse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - load data into a relational data warehouse
   description: "Exercise - load data into a relational data warehouse"
   ms.date: 10/27/2023

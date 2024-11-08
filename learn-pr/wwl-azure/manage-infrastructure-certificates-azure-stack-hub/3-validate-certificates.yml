@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.validate-certificates
 title: Validate certificates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Validate certificates
   description: "Validate certificates"
   ms.date: 06/08/2022

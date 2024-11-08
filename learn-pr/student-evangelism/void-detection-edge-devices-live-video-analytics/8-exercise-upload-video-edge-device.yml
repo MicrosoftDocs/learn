@@ -2,6 +2,8 @@
 uid: learn.oxford.void-detection-edge-devices-lva.exercise-upload-video-edge
 title: Exercise - Upload a video to your edge device to be processed
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Upload a video to your edge device to be processed
   description: In this section, we help learner to connect to web app and run the scenario that detects defect.
   ms.date: 07/20/2024

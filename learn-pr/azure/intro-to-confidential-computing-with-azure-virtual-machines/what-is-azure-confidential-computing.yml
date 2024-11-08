@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.what-is-azure-confidential-computing
 title: What is Azure confidential computing?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure confidential computing?
   description: In this unit, you'll learn about Azure confidential computing.
   ms.date: 03/15/2024
@@ -36,3 +38,4 @@ quiz:
     - content: It's a capability incorporated into a portfolio of Azure products designed to meet trust and security requirements for sensitive workloads.
       isCorrect: true
       explanation: "Correct: Azure confidential computing is a capability offered through a portfolio that includes multiple Azure products."
+

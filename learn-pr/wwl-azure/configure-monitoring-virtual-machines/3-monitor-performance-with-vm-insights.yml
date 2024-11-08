@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-virtual-machines.monitor-performance-with-vm-insights
 title: Monitor Performance with VM insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor Performance with VM insights
   description: "Monitor Performance with VM insights"
   ms.date: 10/25/2023

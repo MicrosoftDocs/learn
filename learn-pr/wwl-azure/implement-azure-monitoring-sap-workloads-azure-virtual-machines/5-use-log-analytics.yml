@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.using-log-analytics
 title: Use Log Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Log Analytics
   description: "Use Log Analytics to process data and return results in easy-to-read plain text."
   ms.date: 03/28/2024

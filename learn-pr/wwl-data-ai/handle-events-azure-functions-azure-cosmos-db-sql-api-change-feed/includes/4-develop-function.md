@@ -2,14 +2,38 @@ The code to use various bindings in a function is primarily focused on the param
 
 ## Trigger function on changes in the change feed
 
-The code for a change feed trigger includes a method parameter of type **IReadOnlyList\<Document\>** that has an enumerated list of the current batch of changes. The name of the method parameter must match the value provided in the binding configuration for the name property. In this example method signature, the **name** in the binding is set to **changes**. Within the function code, your logic can use a foreach loop to iterate over all changes in the current batch.
+The code for a change feed trigger includes a method parameter of type **IReadOnlyList\<Product\>** where `Product` is a  custom object type that has an enumerated list of the current batch of changes. The name of the method parameter must match the value provided in the binding configuration for the name property. In this example method signature, the **name** in the binding is set to **changes**. Within the function code, your logic can use a foreach loop to iterate over all changes in the current batch.
+
+If you don't want to define your own type or if your container has multiple different objects, you can set this to `dynamic`, deserialize the incoming item to a dynamic object, then inspect properties within it to determine which POCO you want to deserialize into for further processing.
+
+In this module, we'll define a type in C# to represent the data in an Azure Cosmos DB for NoSQL container.
 
 ```csharp
-public static void Run(IReadOnlyList<Document> changes)
+public class Product
 {
-    foreach(Document doc in changes ?? Enumerable.Empty<Document>())
+    public string id { get; set; }
+
+    public string categoryName { get; set; }
+
+    public string name { get; set; }
+}
+```
+
+Then use it in the Azure Cosmos DB Trigger function
+
+```csharp
+[Function("CosmosTrigger")]
+public void Run([CosmosDBTrigger(
+    databaseName: "cosmicworks",
+    containerName:"product",
+    Connection = "cosmosdbconnstr",
+    LeaseContainerName = "leases",
+    CreateLeaseContainerIfNotExists = true)] IReadOnlyList<Product> products,
+    FunctionContext context)
+{
+    foreach (Product product in products ?? Enumerable.Empty<Product>())
     {
-        //Do something with each item
+        _logger.LogInformation($"Product: {product.name}");
     }
 }
 ```
@@ -26,16 +50,9 @@ An input binding for a function can include either a single item or multiple ite
 
 ### Point read input binding
 
-For a point read, the input binding’s parameter should be set to a simple type. In this first example, the binding is named **item** and is set to an object of type **Document**. The Document class is a special class that can represent an item in Azure Cosmos DB for NoSQL if you don't want to define your own type.
+For a point read, the input binding’s parameter should be set to a POCO object that defines the data in the container. In this first example, the binding is named **item** and is set to an object of type **Product**. If you don't want to define your own type or if your container has multiple different objects, you can set this to `dynamic`, deserialize the incoming item to a dynamic object, then inspect properties within it to determine which POCO you want to deserialize into for further processing.
 
-```csharp
-public static void Run(HttpRequest request, Document item)
-{
-    //Do something with this item
-}
-```
-
-As an alternative, you can define a type in C# to represent the data in your Azure Cosmos DB for NoSQL container.
+Define a type in C# to represent the data in your Azure Cosmos DB for NoSQL container.
 
 ```csharp
 public class Product
@@ -59,18 +76,18 @@ public static void Run(HttpRequest request, Product item)
 
 ### SQL query input binding
 
-Input bindings with a SQL query require a method parameter of type **IEnumerable\<\>**. The type used as a generic parameter can be **Document** or a type you created in C#.
+Input bindings with a SQL query require a method parameter of type **IEnumerable\<\>**. The type used as a generic parameter can be **dynamic** or a type you created in C#.
 
 In this first example, the input binding is named **items** and is bound to a collection of type **Document**.
 
 ```csharp
-public static async Task Run(HttpRequest request, IEnumerable<Document> items)
+public static async Task Run(HttpRequest request, IEnumerable<dynamic> items)
 {
     //Do something with these items
 }
 ```
 
-The second example illustrates the ability to use your own custom C# types instead of the **Document** type.
+The second example illustrates the ability to use your own custom C# types instead of the **dynamic** type.
 
 ```csharp
 public static async Task Run(HttpRequest request, IEnumerable<Product> items)

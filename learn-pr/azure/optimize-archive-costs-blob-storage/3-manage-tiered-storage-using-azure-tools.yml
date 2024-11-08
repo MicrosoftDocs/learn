@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-blob-storage-costs.3-manage-tiered-storage-using-azure-tools
 title: Manage tiered storage using Azure tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage tiered storage using Azure tools
   description: Manage tiered storage using Azure tools
   ms.date: 11/02/2023
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-manage-tiered-storage-using-azure-tools.md)]
+

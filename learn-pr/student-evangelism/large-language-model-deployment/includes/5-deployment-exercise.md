@@ -9,9 +9,9 @@ In this exercise, you create an Azure OpenAI deployment. Creating a deployment o
 
 ## Create a deployment
 
-Let's walk through creating a deployment by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource. To ensure you're managing the right one, navigate to Azure OpenAI Studio from the instance blade.
+Let's walk through creating a deployment by using Azure OpenAI Studio. You can have more than one Azure OpenAI cloud resource. To ensure you're managing the right one, navigate to Azure OpenAI Studio from the instance tab.
 
-1. Go to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing **openai** in the top search bar. From there, select your specific cloud instance.
+1. Go to the [Azure portal](https://portal.azure.com) and locate your newly provisioned Azure OpenAI instance by typing *OpenAI* in the top search bar. From there, select your specific cloud instance.
 
 1. On the left, select **Model deployments** and then select **Manage Deployments**.
 
@@ -21,9 +21,9 @@ Let's walk through creating a deployment by using Azure OpenAI Studio. You can h
 
     :::image type="content" source="../media/find-deployments.png" alt-text="Screenshot of Azure OpenAI Studio, in which the Deployments tab is highlighted with a red box.":::
 
-1. Select **Create new deployment** from the toolbar. A **Deploy model** window opens.
+1. Select **Create new deployment** from the toolbar to open the **Deploy model** window.
 
-    :::image type="content" source="../media/new-deployment.png" alt-text="A screenshot of the Deploy model window.":::
+    :::image type="content" source="../media/new-deployment.png" alt-text="A screenshot of the 'Deploy model' window.":::
 
 1. In the window, fill in the required fields:
 

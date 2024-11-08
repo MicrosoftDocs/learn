@@ -2,6 +2,8 @@ This module provides an overview of some of the technical considerations and ava
 
 Imagine you're a cybersecurity architect for a multinational corporation. Your company decided to migrate its infrastructure to Azure. You're tasked with ensuring the security and efficiency of the network architecture. Securing network infrastructure involves understanding and implementing Azure's segmentation features, setting up network security groups, utilizing Microsoft Defender for Domain Name Services (DNS), analyzing network traffic, and managing internet and private access. The challenge lies in choosing the right tools and strategies to ensure optimal network performance and security.
 
+## Learning objectives
+
 In this module, you learn how to:
 
 - Design solutions for network segmentation

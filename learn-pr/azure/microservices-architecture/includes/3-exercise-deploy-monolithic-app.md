@@ -14,7 +14,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```azurecli
     az deployment group create \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
 
@@ -35,7 +35,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```bash
     APPSERVICENAME="$(az webapp list \
-                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group]</rgn>" \
                         --query '[].name' \
                         --output tsv)"
     ```
@@ -44,7 +44,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```azurecli
     az webapp config appsettings set \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
         --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
     ```
@@ -53,7 +53,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```azurecli
     az webapp deployment source config-zip \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
         --src DroneDelivery-before.zip
     ```
@@ -62,7 +62,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```bash
     echo https://$(az webapp config hostname list \
-                    --resource-group <rgn>[sandbox resource group]</rgn> \
+                    --resource-group "<rgn>[sandbox resource group]</rgn>" \
                     --webapp-name $APPSERVICENAME \
                     --query [].name \
                     --output tsv)

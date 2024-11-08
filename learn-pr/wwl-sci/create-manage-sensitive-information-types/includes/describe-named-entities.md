@@ -33,12 +33,3 @@ Here are some examples of named entity SITs. You can find all of them in [Sensit
 DLP makes special use of named entities in _enhanced policy templates_. These are pre-configured DLP policies that you can customize for your organization's needs. You can also [create your own DLP policies](/purview/dlp-create-deploy-policy?azure-portal=true) from a blank template and use a named entity SIT as a condition. You can find 10 enhanced DLP policies in the **Microsoft Purview compliance portal** by navigating to **Data loss prevention** > **Create policy**. Enhanced templates can be used in DLP and auto-labeling.
 
 For more information about enhanced DLP policies that use named entity SITs, see [Examples of enhanced DLP policies](/purview/named-entities-learn?azure-portal=true#examples-of-enhanced-dlp-policies).
-
-## Monitor named entities with Microsoft Purview Information Protection interactive guide
-
-Use the **Monitor named entities with Microsoft Purview Information Protection** interactive guide for a step-by-step walkthrough.
-
-[:::image type="content" source="../media/named-entities-microsoft-purview-interactive-guide.png" alt-text="Cover for an interactive guide that says Monitor named entities with Microsoft Purview Information Protection." border="false":::](https://mslearn.cloudguides.com/guides/Monitor%20named%20entities%20with%20Microsoft%20Purview%20Information%20Protection)
-
-Learn more:
-- [Use named entities in your data loss prevention policies](/purview/named-entities-use?azure-portal=true)

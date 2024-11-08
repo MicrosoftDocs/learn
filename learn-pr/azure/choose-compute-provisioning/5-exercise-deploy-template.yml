@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-compute-provisioning.5-exercise-deploy-template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Analyze a scenario and map it to a technology option
   description: Analyze a scenario and map it to a technology option
   ms.date: 03/29/2023
@@ -22,3 +24,4 @@ content: |
 #       type: Microsoft.Compute/virtualMachines
 #       name: hostVM1
 #   hint: "Make sure you've successfully deployed the template."
+

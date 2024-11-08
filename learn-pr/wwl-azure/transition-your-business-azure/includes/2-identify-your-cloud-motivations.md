@@ -1,4 +1,3 @@
-
 To begin making decisions about how to transition to the cloud, your team needs to answer one critical question: Why do you want to move to the cloud?
 
 The answer to this question will help you define the next moves to make when planning a cloud transition.

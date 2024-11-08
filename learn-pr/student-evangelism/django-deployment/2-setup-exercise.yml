@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.setup-exercise
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Get the starter
   description: To streamline your experience in this module, we provided a starter project for you.
   ms.date: 03/01/2021 

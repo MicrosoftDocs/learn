@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Container Registry
   description: Introduction to Azure Container Registry
   ms.date: 11/09/2023
@@ -11,3 +13,4 @@ title: Introduction to Azure Container Registry
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

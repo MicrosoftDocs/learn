@@ -1,4 +1,3 @@
-
 With your cloud motivation in mind, it’s time to consider how you want your business to use Azure’s capabilities.
 
 Microsoft Azure offers three different categories of cloud services. You should know about these categories and what they can mean for your business, even if your IT team will manage the technical details. Keep in mind that your cloud vision may entail products from more than one of these categories.

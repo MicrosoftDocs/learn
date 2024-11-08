@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-enterprise-desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: MD-102 Explore the Enterprise Desktop
   description: "This module covers modern endpoint management and enterprise desktop lifecycle concepts."
   ms.date: 09/09/2024

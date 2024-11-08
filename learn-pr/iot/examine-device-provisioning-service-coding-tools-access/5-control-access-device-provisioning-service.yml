@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.examine-how-to-control-access-to-dps
 title: Examine how to control access to Device Provisioning Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine how to control access to Device Provisioning Service
   description: "Examine how to control access to Device Provisioning Service"
   ms.date: 01/08/2024

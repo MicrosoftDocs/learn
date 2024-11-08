@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -47,3 +49,4 @@ quiz:
     - content: "Using the `assignRole` attribute in the `chat` tag."
       isCorrect: false
       explanation: "Incorrect. You can assign a role to the LLM by using the `role` attribute in the `message` tag."
+

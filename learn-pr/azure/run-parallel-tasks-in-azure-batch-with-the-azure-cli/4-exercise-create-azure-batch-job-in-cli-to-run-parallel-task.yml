@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-create-azure-batch-job-in-cli-to-run-parallel-task
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Batch job in the CLI to run your parallel task
   description: Exercise - Create an Azure Batch job in the CLI to run your parallel task
   ms.date: 04/04/2024
@@ -13,3 +15,4 @@ title: Exercise - Create an Azure Batch job in the CLI to run your parallel task
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-create-azure-batch-job-in-cli-to-run-parallel-task.md)]
+

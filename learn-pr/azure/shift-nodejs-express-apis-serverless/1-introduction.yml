@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Refactor Node.js Express APIs into serverless APIs with Azure Functions
   ms.date: 02/20/2024
@@ -13,3 +15,4 @@ title: Introduction
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

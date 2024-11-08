@@ -2,11 +2,13 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.enhance-index
 title: Enhance the index
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enhance the index
   description: Enhance the index
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/11/2023
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-enhance-index.md)]
+

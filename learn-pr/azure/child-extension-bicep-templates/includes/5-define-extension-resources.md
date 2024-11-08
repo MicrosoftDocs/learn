@@ -19,7 +19,7 @@ For example, consider a lock, which can be used to prevent the deletion or modif
 In Bicep, you define an extension resource in mostly the same way as a normal resource. However, you add the `scope` property to tell Bicep that the resource should be attached to another resource defined elsewhere in the Bicep file. You use the resource's symbolic name to refer to it. For example, here's the definition of an Azure Cosmos DB account that we created previously:
 
 ```bicep
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-05-15' = {
   name: cosmosDBAccountName
   location: location
   properties: {

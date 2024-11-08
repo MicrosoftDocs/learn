@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a Document Intelligence custom skill for Azure AI Search
   description: Build a Document intelligence custom skill for Azure AI search
   author: wwlpublish
@@ -38,3 +40,4 @@ units:
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.summary
 badge:
   uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.badge
+

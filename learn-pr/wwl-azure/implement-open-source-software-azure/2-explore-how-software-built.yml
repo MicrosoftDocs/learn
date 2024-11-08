@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-open-source-software-azure.explore-how-software-built
 title: Explore how software is built
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore how software is built
   description: "Explore how software is built"
   ms.date: 05/07/2024

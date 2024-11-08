@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.add-virtual-network-rules
 title: Virtual network service endpoints for Azure Key Vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Virtual network service endpoints for Azure Key Vault
   description: "Virtual network service endpoints for Azure Key Vault"
-  ms.date: 05/31/2024
+  ms.date: 10/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

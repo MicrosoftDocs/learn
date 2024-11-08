@@ -2,10 +2,12 @@
 uid: learn.azure.share-bicep-modules-using-private-registries.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 03/06/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -52,3 +54,4 @@ quiz:
     - content: You need to share your module with a colleague.
       isCorrect: false
       explanation: Incorrect. You don't need to publish a new version of your module to share it with your colleagues. Instead, grant them access to the registry.
+

@@ -78,7 +78,7 @@ If you exposed a web function, you'd create a CNAME record that resolves to the 
 
 ## Configure a private DNS zone
 
-Another type of DNS zone that you can configure and host in Azure is a private DNS zone. Private DNS zones are not visible on the Internet, and don't require that you use a domain registrar. You can use private DNS zones to assign DNS names to virtual machines (VMs) in your Azure virtual networks.
+Another type of DNS zone that you can configure and host in Azure is a private DNS zone. Private DNS zones aren't visible on the Internet, and don't require that you use a domain registrar. You can use private DNS zones to assign DNS names to virtual machines (VMs) in your Azure virtual networks.
 
 ### Step 1: Create a private DNS zone
 

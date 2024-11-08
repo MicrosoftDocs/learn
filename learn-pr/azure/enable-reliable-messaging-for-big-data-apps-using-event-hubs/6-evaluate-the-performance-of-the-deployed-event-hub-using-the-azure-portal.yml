@@ -2,6 +2,8 @@
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.6-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal
 title: Evaluate the performance of the deployed event hub using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate the performance of the deployed event hub using the Azure portal
   description: Evaluate the performance of the deployed event hub using the Azure portal
   ms.date: 11/22/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal.md)]
+

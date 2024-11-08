@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
 title: Describe database and object permissions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe database and object permissions
   description: "Describe database and object permissions"
   ms.date: 04/26/2022

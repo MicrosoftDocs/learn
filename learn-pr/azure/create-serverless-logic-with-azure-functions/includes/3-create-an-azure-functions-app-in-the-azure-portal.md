@@ -1,4 +1,4 @@
-You're now ready to start implementing the temperature service. In the previous unit, you determined that a serverless solution would best fit your needs. Let's start by creating a function app to hold our Azure Function.
+You're now ready to start implementing the temperature service. In the previous unit, you determined that a serverless solution would best fit your needs. Let's start by creating a function app that can hold our Azure Function.
 
 ## What is a function app?
 
@@ -6,17 +6,17 @@ Functions are hosted in an execution context called a **function app**. You defi
 
 ### Choose a service plan
 
-Function apps may use one of the following hosting plans:
+Function apps can use one of the following hosting plans:
 
 - Consumption plan
 - Premium plan
 - Dedicated (App service) plan
 
-When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but may be configured to have a timeout as long as 10 minutes.
+When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but can be configured to have a timeout as long as 10 minutes.
 
-The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of VM instances to keep warm and reduce so called "cold starts." The Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability). 
+The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of virtual machine (VM) instances to keep warm and reduce so called "cold starts." The Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability). 
 
-The **Dedicated (App service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. An App service plan is technically not a serverless plan, because you're responsible for managing the app resources the function runs on. However, it may be a better choice when you already have excess App Service resources available on which to also run your functions.
+The **Dedicated (App service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. An App service plan is technically not a serverless plan, because you're responsible for managing the app resources the function runs on. However, it might be a better choice when you already have excess App Service resources available on which to also run your functions.
 
 ### Storage account requirements
 
@@ -115,4 +115,4 @@ Let's create a function app in the Azure portal. Completing this module incurs a
 
 1. When deployment completes, select **Go to resource**. The Function App pane for your escalator function appears.
 
-1. In the **Essentials** section, select the **URL** link to open it in a browser. A default Azure web page appears with a message that your Functions app is up and running.
+1. In the **Essentials** section, select the **Default domain** link to open it in a browser. A default Azure web page appears with a message that your Functions app is up and running.

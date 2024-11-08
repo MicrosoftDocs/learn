@@ -2,6 +2,8 @@
 uid: learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
 title: What are deployment patterns?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are deployment patterns?
   description: Choose an appropriate deployment pattern that helps you minimize downtime and roll out new features progressively.
   ms.date: 02/05/2024
@@ -48,3 +50,4 @@ quiz:
     - content: "A/B testing"
       isCorrect: false
       explanation: "Although A/B testing is typically used to sample users at random, it's more commonly used to test two or more variations of a feature against each other."
+

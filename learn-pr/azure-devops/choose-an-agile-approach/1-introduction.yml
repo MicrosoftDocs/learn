@@ -2,9 +2,11 @@
 uid: learn.azdo.choose-an-agile-approach.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Take your first DevOps steps by using an Agile approach and Azure Boards.
-  ms.date: 10/11/2023
+  ms.date: 10/23/2024
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -3,7 +3,7 @@ uid: learn.github.create-open-source-program-github
 metadata:
   title: "Create an open-source program by using GitHub best practices"
   description: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and by using community standards.
-  ms.date: 05/15/2023
+  ms.date: 09/20/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -12,11 +12,11 @@ title: "Create an open-source program by using GitHub best practices"
 summary: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and by using community standards.
 abstract: |
   In this module, you will:
-  - Assess your organization's existing open-source efforts
-  - Establish the goals of an open-source program
-  - Create a repository for your open-source program, complete with contributing and communication guidelines, codes of conduct, templates, and maintainer guides
-  - Abide by existing open-source licenses
-  - Choose a license for releasing an open-source project
+  - Assess your organization's existing open-source efforts.
+  - Establish the goals of an open-source program.
+  - Create a repository for your open-source program, complete with contributing and communication guidelines, codes of conduct, templates, and maintainer guides.
+  - Abide by existing open-source licenses.
+  - Choose a license for releasing an open-source project.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

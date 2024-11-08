@@ -3,16 +3,16 @@ uid: learn.wwl.sc-100-design-solutions-best-practices-priorities
 metadata:
   title: 'SC-100: Design solutions that align with security best practices and priorities'
   description: 'SC-100: Design solutions that align with security best practices and priorities'
-  ms.date: 04/05/2023
+  ms.date: 09/25/2024
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: learning-path
 title: 'SC-100: Design solutions that align with security best practices and priorities'
 prerequisites: |
-  -   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
-  -   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
+  -   Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
+  -   Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.
 summary: |
-  You learn how to use critical Microsoft security best practices such as the Cloud Adoption Framework (CAF), Well-Architected Framework (WAF), Microsoft Cybersecurity Reference Architecture (MCRA) to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
+  You learn how to use critical Microsoft security best practices to improve an organizations security posture, apply Zero Trust principles, and minimize risk from emerging attacks. Frameworks discussed include the Cloud Adoption Framework (CAF), Well-Architected Framework (WAF), and Microsoft Cybersecurity Reference Architecture (MCRA).
 iconUrl: /training/achievements/sc-100-design-solutions-that-align-security-best-practices-priorities.svg
 levels:
 - advanced

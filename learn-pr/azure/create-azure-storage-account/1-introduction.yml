@@ -2,12 +2,15 @@
 uid: learn.create-azure-storage-account.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 08/23/2023
+  ms.date: 09/18/2024
   author: normesta
   ms.author: normesta
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

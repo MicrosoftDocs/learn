@@ -2,6 +2,8 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
 title: Advanced features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Advanced features
   description: "Advanced features"
   ms.date: 05/14/2024

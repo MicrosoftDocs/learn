@@ -6,14 +6,14 @@ Unlike a dedicated SQL pool in Synapse Analytics, a warehouse in Microsoft Fabri
 
 :::image type="content" source="../media/1-access-onelake-data-other-tools.png" alt-text="Diagram showing the function and structure of OneLake." lightbox="../media/1-access-onelake-data-other-tools.png":::
 
-## Understand the ETL (Extract, Transform and Load) process
+## Understand the ETL (Extract, Transform, and Load) process
 
 ETL provides the foundation for data analytics and data warehouse workstreams. Let's review some aspects of data manipulation in an ETL process.
 
 |  | Description |
 |-------|-------------|
 | **Data extraction** | It involves connecting to the source system and collecting necessary data for analytical processing. |
-| **Data transformation** | It involves a series of steps performed on the extracted data to convert it into a standard format. Combining data from different tables, cleaning data, deduplicating data and performing data validations.|
+| **Data transformation** | It involves a series of steps performed on the extracted data to convert it into a standard format. Combining data from different tables, cleaning data, deduplicating data, and performing data validations.|
 | **Data loading** | The extracted and transformed data are loaded into the fact and dimension tables. For an incremental load, this involves periodically applying ongoing changes as per requirement. This process often involves reformatting the data to ensure its quality and compatibility with the data warehouse schema.|
 | **Post-load optimizations** | Once the data is loaded, certain optimizations can be performed to enhance the performance of the data warehouse. |
 

@@ -2,6 +2,8 @@
 uid: learn.optimize-operations-with-automanage.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to optimizing IT operations and management with Azure Automanage.
   ms.date: 12/19/2023

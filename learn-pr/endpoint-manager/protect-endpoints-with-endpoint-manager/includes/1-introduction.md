@@ -2,7 +2,7 @@ Microsoft Intune helps you protect the digital resources that your organization 
 
 Suppose that you're the administrator of a company with several thousand employees. Your company requires that each device must use a PIN to access the device as an extra safety requirement. This requirement must be implemented for all devices that access your corporate network, whether the device is company owned or personally owned. Also, you need to be able to reset the PINs when users are locked out of their devices. You plan to use Microsoft Intune to add this capability as a requirement to all devices that access organization data. Any device that doesn't accept this requirement isn't permitted to access your company's data.
 
-Here, you'll learn how you can use Intune configuration policies to manage and protect devices, apps, and data.
+Here, you learn how you can use Intune configuration policies to manage and protect devices, apps, and data.
 
 ## Learning objectives
 

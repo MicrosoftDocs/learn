@@ -1,4 +1,4 @@
-First Up Consultants reviews Azure role-based access control (Azure RBAC) changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in the [Azure Activity Log](/azure/azure-monitor/essentials/activity-log). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
+First Up Consultants reviews Azure RBAC changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in the [Azure Activity Log](/azure/azure-monitor/essentials/activity-log). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
 
 ## View activity logs
 

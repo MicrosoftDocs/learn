@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.connect-azure-virtual-machines-to-hana
 title: Connect Azure virtual machines to HANA Large Instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect Azure virtual machines to HANA Large Instances
   description: "Connect Azure virtual machines to HANA Large Instances"
   ms.date: 06/30/2022

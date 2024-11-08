@@ -2,11 +2,13 @@
 uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 09/27/2023
+  ms.date: 09/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -48,3 +50,4 @@ quiz:
     - content: "Reduce the complexity of the index properties being enriched."
       isCorrect: false
       explanation: "Incorrect. This option might have a small improvement in performance as the amount of data being processed is reduced. However, there's a better performance improvement."
+

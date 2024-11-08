@@ -45,7 +45,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. These nodes are part of **System mode**.
 
     > [!IMPORTANT]
-    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you are recieving limits you need to upgrade to a Standard Upgrades.
+    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you're receiving notifications about limits, you need to upgrade to a Standard Upgrade.
 
 1. Run the `az aks nodepool add` command to add another node pool that uses the default Linux operating system.
 
@@ -58,7 +58,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --node-vm-size Standard_B2s
     ```
 
-    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This new node pool is used to host applications and workloads, unlike the **System** node pool.
+    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This **User** node pool is used to host applications and workloads, unlike the **System** node pool.
 
 #### [Windows](#tab/windows)
 
@@ -101,7 +101,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. These nodes are part of **System mode**.
 
     > [!IMPORTANT]
-    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you are recieving limits you need to upgrade to a Standard Upgrades.
+    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you're receiving notifications about limits, you need to upgrade to a Standard Upgrade.
 
     The `--windows-admin-username` parameter is used to set up administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
@@ -117,7 +117,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --os-type Windows
     ```
 
-    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This new node pool is used to host applications and workloads, unlike the **System** node pool.
+    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This **User** node pool is used to host applications and workloads, unlike the **System** node pool.
 
     The `--os-type` parameter is used to specify operating system of the node pool. If not specified, the command uses Linux as operating system for the nodes.
 

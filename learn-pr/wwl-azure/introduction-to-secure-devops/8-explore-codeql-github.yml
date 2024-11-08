@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-secure-devops.explore-codeql-github
 title: Explore CodeQL in GitHub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore CodeQL in GitHub
   description: "Explore CodeQL in GitHub"
   ms.date: 05/22/2024

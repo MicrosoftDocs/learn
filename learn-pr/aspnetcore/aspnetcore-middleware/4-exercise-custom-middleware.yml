@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-middleware.exercise-custom-middleware
+
+title: Exercise - Create custom middleware
+metadata:
+  title: Exercise - Create custom middleware
+  description: This unit is an exercise that demonstrates how to create custom middleware in an ASP.NET Core app.
+  ms.date: 8/29/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-custom-middleware.md)]

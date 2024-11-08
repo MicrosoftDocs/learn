@@ -1,15 +1,23 @@
-Microsoft Fabric's unified management and governance make it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
+Microsoft Fabric's unified data analytics platform makes it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
 
-Traditionally, the data engineer and data analyst role separation meant that there was an extra conversation that needed to happen to ensure that the engineer curated a perfect semantic model to help the analyst display data in an effective and insightful way for the business.
+### Traditional roles and challenges
 
-With Fabric, data professionals work together in the same SaaS product to better understand and identify needs of each other and the business. Further, data analysts now have greater context and ability to transform data further upstream with data factory.
+In a traditional analytics development process, data engineers and data analysts face several challenges. Data engineers perform complex data processing and then curate and serve data sources so data analysts can display data effectively for the business. This process requires extensive communication and coordination between the two roles, often leading to potential delays and misinterpretations.
 
-Whether you're a data engineer looking to simplify your semantic model curation or expanding your knowledge with data science techniques, Fabric provides a complete experience to serve your organization.
+Data analysts need to perform extensive downstream data transformations before creating Power BI reports. This time-consuming process often lacks context, making it difficult for analysts to connect with data directly.
 
-For data analysts, who may have had to perform extensive downstream data transformations before creating Power BI reports, you can now see the lineage and connect with data more directly with DirectLake mode.
+Data scientists also struggle to integrate native data science techniques with existing data systems, which are often complex and cumbersome. As a result, data scientists find it challenging to provide data-informed insights efficiently.
 
-Data scientists now have an easier way to integrate native data science techniques and then use Power BI's interactive reporting to provide data-informed insights in a new way.
+### Evolution of collaborative workflows
 
-Because Fabric is a SaaS platform, it allows you to quickly and easily provision and run any type of workload or job without needing pre-approval or planning. This means that you can scale resources up or down as needed, and be more agile and responsive to changing business needs.
+Microsoft Fabric transforms the analytics development process by unifying tools into a SaaS platform, allowing flexibility for different roles to perform necessary skills without duplicating efforts.
 
-Lastly, Fabric is bringing the low-to-no-code concept, functionality, and approach that has successfully empowered many users on the Power Platform to its own SaaS offering. While it maintains scale and integrity for data science, data warehousing, data ingestion and prep, and analytics, it also offers many ways to visually represent code that previously blocked many from going further.
+**Data engineers** can now ingest, transform, and load large amounts of data into OneLake and present it in whichever data store makes most sense. Data loading patterns are simplified using pipelines and architectures, such as medallion, can be easily configured using workspaces.
+
+**Data analysts** gain greater context and streamline processes, transforming data upstream with Data Factory and connecting with data more directly using DirectLake mode.
+
+**Data scientists** Integrate native data science techniques more easily and use Power BI's interactive reporting to provide data-informed insights.
+
+**Analytics engineers** bridge the gap between data engineering and data analysis by curating data store assets, ensuring data quality, and enabling self-service analytics.
+
+**Low-to-no-code users** and **citizen developers** can now discover curated data through the OneLake hub, and further process and analyze it to suit their needs without being dependent on data engineers or duplicating data.

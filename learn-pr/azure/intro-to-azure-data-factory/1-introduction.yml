@@ -2,13 +2,16 @@
 uid: learn.intro-to-azure-data-factory.1-introduction  
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction  
   title: Introduction
   description: Azure Data Factory is a fully managed, serverless data integration service. It enables you to visually integrate data sources with more than 90 built-in, maintenance-free connectors.
-  ms.date: 02/13/2024  
+  ms.date: 10/22/2024  
   author: jonburchel
   ms.author: jburchel  
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
+

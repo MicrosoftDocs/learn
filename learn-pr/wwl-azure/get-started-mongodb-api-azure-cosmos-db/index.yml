@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get started with the MongoDB API in Azure Cosmos DB
   description: "Learn Azure Cosmos DB for MongoDB basics."
   ms.date: 03/20/2024

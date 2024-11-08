@@ -6,7 +6,7 @@ Here, you'll learn about Storage Explorer and how you can use it to manage data 
 
 ## What is Storage Explorer?
 
-Storage Explorer is a GUI application developed by Microsoft to simplify accessing and managing data stored in Azure Storage accounts. Storage Explorer is available on Windows, macOS, and Linux.
+Storage Explorer is a GUI application that Microsoft developed to simplify accessing and managing data stored in Azure Storage accounts. Storage Explorer is available on Windows, macOS, and Linux.
 
 Some of the benefits of using Storage Explorer are:
 
@@ -15,25 +15,25 @@ Some of the benefits of using Storage Explorer are:
 - You can also use the interface to update and view entities in your storage accounts.
 - Storage Explorer is free to download and use.
 
-With Storage Explorer, you can use a range of storage and data operation tasks on any of your Azure Storage accounts. These tasks include edit, download, copy, and delete.
+With Storage Explorer, you can use a range of storage and data-operation tasks on any of your Azure Storage accounts. These tasks include edit, download, copy, and delete.
 
 ### Supported software versions
 
-The Azure Storage Explorer application runs on the following versions of these platforms:
+The latest version of the Azure Storage Explorer application runs on the following versions of these platforms:
 
 | Operating system | Versions                                                |
 | ---------------- | ------------------------------------------------------ |
-| Windows          | Windows 11, Windows 10, Windows 8, or Windows 7      |
-| macOS            | macOS 10.12 Sierra and later                           |
-| Linux            | Ubuntu 18.04 x64, Ubuntu16.04 x64, or Ubuntu 14.04 x64 |
+| Windows          | Windows 11 and Windows 10      |
+| macOS            | macOS 10.15 Catalina and later                           |
+| Linux            | Ubuntu 20.04 x64, Ubuntu 18.04 x64, or Ubuntu 16.04 x64 |
 
 ### Azure Storage types
 
 Azure Storage Explorer can access many different data types from services like these:
 
-- **Azure Blob Storage**: Blob storage is used to store unstructured data as a binary large object (blob). 
+- **Azure Blob Storage**: Blob storage is used to store unstructured data as a binary large object (blob).
 - **Azure Table Storage**: Table storage is used to store NoSQL, semi-structured data.
-- **Azure Queue Storage**: Queue storage is used to store messages in a queue, which can then be accessed and processed by applications through HTTP(S) calls.
+- **Azure Queue Storage**: Queue storage is used to store messages in a queue, which applications can then access and process through HTTP(S) calls.
 - **Azure Files**: Azure Files is a file-sharing service that enables access through the Server Message Block protocol, similar to traditional file servers.
 - **Azure Data Lake Storage**: Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data. Azure Data Lake Storage Gen2 is Azure Blob Storage with the hierarchical namespace feature enabled on the account.
 
@@ -48,7 +48,7 @@ During the development phase of your project, you might not want developers to i
 - Azure Storage Emulator uses a local instance of Microsoft SQL Server 2012 Express LocalDB. It emulates Azure Table, Queue, and Blob storage.
 - Azurite, which is based on Node.js, is an open-source emulator that supports most Azure Storage commands through an API.
 
-Storage Explorer requires the emulator to be running before you open it. Connecting to your emulator is no different than connecting to Azure Storage accounts except that you'll choose the **Attach to a local emulator** connection type.
+Storage Explorer requires the emulator to be running before you open it. Connecting to your emulator is no different than connecting to Azure Storage accounts, except that you'll choose the **Attach to a local emulator** connection type.
 
 All locally emulated storage connection types appear in **Local & Attached** > **Storage accounts**.
 
@@ -71,7 +71,7 @@ There are many ways to connect an Azure Storage Explorer instance to your Azure 
 - Attach to a local emulator
 - Attach to Azure Data Lake Storage by using a URI
 
-We'll explore a few of these connection types, and provide an overview of the required steps to set up the connection.
+We'll explore a few of these connection types and provide an overview of the required steps to set up the connection.
 
 <a name='add-an-azure-account-by-using-azure-ad'></a>
 
@@ -104,7 +104,7 @@ To add a SAS connection:
 1. Connect to your Azure Storage account.
 1. Select the connection type: **Shared access signature URI (SAS)**.
 1. Provide a meaningful name for the connection.
-1. Provide the SAS URI.
+1. Provide the Service URL.
 1. Review and verify the connection details, and then select **Connect**.
 
 When you've added a connection, it appears in the resource tree as a new node. You'll find the connection node in this branch: **Local & attached** > **Storage Accounts** > **Attached Container** > **Service**.

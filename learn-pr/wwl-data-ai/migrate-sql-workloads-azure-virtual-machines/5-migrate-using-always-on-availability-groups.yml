@@ -2,6 +2,8 @@
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-always-on-availability-groups
 title: Understand distributed availability group for migration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand distributed availability group for migration
   description: "Learn how you can use distributed availability group for database migration."
   ms.date: 08/02/2024
