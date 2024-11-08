@@ -8,8 +8,8 @@ Some of the advantages of using the Fabric REST APIs are:
 ## Fabric REST APIs for CI/CD
 Fabric CI/CD REST APIs are available for deployment pipelines and Git integration.
 
-- [Deployment pipelines REST APIs](rest/api/fabric/core/deployment-pipelines)
-- [Git REST APIs](rest/api/fabric/core/git)
+- [Deployment pipelines REST APIs](/rest/api/fabric/core/deployment-pipelines?azure-portal=true)
+- [Git REST APIs](/rest/api/fabric/core/git?azure-portal=true)
 
 ## Use the Fabric REST APIs for CI/CD to automate processes 
 Some examples of things you can use the Fabric CI/CD REST APIs for are:
