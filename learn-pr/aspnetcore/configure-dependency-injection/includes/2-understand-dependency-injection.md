@@ -6,11 +6,11 @@ The dependency injection pattern is a form of Inversion of Control (IoC). In the
 
 Consider the following *Program.cs* file:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_program" highlight="8,11-16":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_program" highlight="8,11-16":::
 
 And the following *PersonService.cs* file:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_personservice":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_personservice":::
 
 To understand the code, start with the highlighted `app.MapGet` code. This code maps HTTP GET requests for the root URL (`/`) to a delegate that returns a greeting message. The delegate's signature defines an `PersonService` parameter named `personService`. When the app runs and a client requests the root URL, the code inside the delegate *depends* on the `PersonService` service to get some text to include in the greeting message.
 
@@ -24,15 +24,15 @@ To avoid dependencies on a specific service implementation, you can instead conf
 
 Consider an interface for the `PersonService` class:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_personserviceinterface":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_personserviceinterface":::
 
 This interface defines the single method, `GetPersonName`, that returns a `string`. This `PersonService` class implements the `IPersonService` interface:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_personserviceimplementation":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_personserviceimplementation":::
 
 Instead of registering the `PersonService` class directly, you can register it as an implementation of the `IPersonService` interface:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_programinterfaces" highlight="3,7":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_programinterfaces" highlight="3,7":::
 
 This example *Program.cs* differs from the previous example in two ways:
 
@@ -52,7 +52,7 @@ For example, say that instead of returning a hard-coded string, the `GetPersonNa
 
 Also suppose your app maps an API endpoint that returns a greeting message. The endpoint depends on the `IPersonService` interface to get the name of the person to greet. The code that registers the `IPersonService` service and maps the API endpoint might look like this:
 
-:::code language="csharp" source="../code/introduction.cs" id="snippet_test_program" highlight="3,7-10":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_test_program" highlight="3,7-10":::
 
 This is similar the previous example with `IPersonService`. The delegate expects an `IPersonService` parameter, which the service container provides. As mentioned earlier, assume that the `PersonService` that implements the interface fetches the name of the person to greet from a database.
 
@@ -61,7 +61,7 @@ Now consider the following XUnit test that tests the same API endpoint:
 > [!TIP]
 > Don't worry if you're not familiar with XUnit or Moq. Writing unit tests is outside the scope of this module.  This example is just to illustrate how dependency injection can be used in testing.
     
-:::code language="csharp" source="../code/introduction.cs" id="snippet_test_personservice" highlight="20-21,27":::
+:::code language="csharp" source="~/aspnetcore-snippets/learn-pr/aspnetcore/configure-dependency-injection/introduction.cs" id="snippet_test_personservice" highlight="20-21,27":::
 
 The preceding test:
 
