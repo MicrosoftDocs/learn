@@ -1,7 +1,7 @@
 In this guided project, you'll use GitHub Copilot in a Visual Studio Code environment to review, document, and complete an in-process application.
 
 > [!IMPORTANT]
-> To complete this guided project module, you must have an active subscription for GitHub Copilot in your personal GitHub account, or you need to be assigned to a subscription managed by an organization or enterprise.
+> To complete this guided project module, you must have an active subscription for GitHub Copilot in your personal GitHub account, or you must be assigned to a subscription managed by an organization or enterprise. To complete guided project exercises, you must configure your account to allow suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot seat through your organization, the setting for suggestions matching public code will be inherited from your organization or enterprise. If your account blocks suggestions that match public code, project exercises won't work as expected.
 
 ## Project overview
 
