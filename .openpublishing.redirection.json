@@ -34383,6 +34383,11 @@
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/3-identify-user-defined-routes.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/7-simulation-routing.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
     }
   ]
 }
