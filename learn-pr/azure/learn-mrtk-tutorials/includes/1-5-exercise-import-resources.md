@@ -1,10 +1,9 @@
-
 ## Install the Mixed Reality Feature Tool
 
-To import the Mixed Reality Toolkit into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
+To import the Mixed Reality Toolkit into your project, you'll use the Mixed Reality Feature Tool. The Mixed Reality Feature Tool allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
 1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
-1. After the download finishes, open the MixedRealityFeatureTool.exe file and use it to launch the Mixed Reality Feature Tool.
+1. After the download finishes, open the **MixedRealityFeatureTool.exe** file and use it to launch the Mixed Reality Feature Tool.
 
     > [!NOTE]
     > Before you can run the Mixed Reality Feature Tool, you might need to install the [.NET 6.0 runtime](https://dotnet.microsoft.com/download/dotnet/6.0).
@@ -28,7 +27,7 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 1. Add the **MRTK Input Simulator** (**Packages** > **MRTK Input** > **Simulation** > **Prefabs**) prefab to your scene.
 
     > [!NOTE]
-    > This step is optional, but required by in-editor simulations.
+    > This step is optional, but required for in-editor simulations.
 
      :::image type="content" source="../media/023-add-input-simulator.png" alt-text="Screenshot of the input simulator.":::
 
