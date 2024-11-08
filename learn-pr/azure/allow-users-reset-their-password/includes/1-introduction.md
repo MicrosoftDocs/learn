@@ -15,3 +15,5 @@ In this module, you'll:
 ## Prerequisites
 
 - Basic understanding of Microsoft Entra ID
+- A working Microsoft Entra tenant with a subscription package that incldues Microsoft Entra ID P1
+- An account with at least the Authentication Policy Administrator role

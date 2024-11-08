@@ -19,6 +19,8 @@ abstract: |
   - Configure self-service password reset to customize the experience.
 prerequisites: | 
   - Basic understanding of Microsoft Entra ID
+  - A working Microsoft Entra tenant with a subscription package that incldues Microsoft Entra ID P1
+  - An account with at least the Authentication Policy Administrator role
 iconUrl: /training/achievements/allow-users-reset-their-password.svg
 levels:
 - beginner
@@ -39,4 +41,3 @@ units:
 - learn.azure.allow-users-to-reset-their-password.summary
 badge:
   uid: learn.azure.allow-users-to-reset-their-password.badge
-
