@@ -3,7 +3,7 @@ uid: learn.configure-dependency-injection.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check for ASP.NET Core depenency injection.
+  description: Knowledge check for ASP.NET Core dependency injection.
   ms.date: 11/7/2024
   author: CamSoper
   ms.author: casoper
@@ -12,17 +12,17 @@ durationInMinutes: 5
 quiz:
   title: Check your understanding
   questions:
-  - content: "Which of the following is a true statement about dependency injection?"
+  - content: "Which of the following statements is true regarding dependency injection?"
     choices:
     - content: "Dependency injection is a design pattern that allows you to loosely couple your app's dependencies."
       isCorrect: false
-      explanation: "Incorrect. This is a true statement, but there is a better answer."
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
     - content: "ASP.NET Core comes with a built-in service container that supports dependency injection."
       isCorrect: false
-      explanation: "Incorrect. This is a true statement, but there is a better answer."
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
     - content: "ASP.NET Core's service container supports three service lifetimes: transient, scoped, and singleton."
       isCorrect: false
-      explanation: "Incorrect. This is a true statement, but there is a better answer."
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct! All of the above statements are true."
