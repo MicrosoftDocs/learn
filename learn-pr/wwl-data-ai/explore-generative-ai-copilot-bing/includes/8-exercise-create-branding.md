@@ -24,14 +24,16 @@ this destination along with a short one sentence tagline?
 
 ```
 **Sample response**:
-``` 
- Alright! Here are a few catchy names for your new destination, each with its own zingy tagline:
- 1. **The Treehouse**: A simple and catchy name that reflects the location and style of the destination.
- 2. **The Hideaway**: A mysterious and intriguing name that suggests a secret and exclusive place to escape and relax.
- 3. **The Branch**: A clever and playful name that refers to both the physical structure of the destination and the idea of branching out and trying something new.
- 
- That should capture the essence of a hidden forest escape!
-```
+
+> Alright! Here are a few catchy names for your new destination, each with its own zingy tagline:
+> 1. **The Treehouse**: A simple and catchy name that reflects the location and style of the destination.
+> 
+> 2. **The Hideaway**: A mysterious and intriguing name that suggests a secret and exclusive place to escape and relax.
+> 
+> 3. **The Branch**: A clever and playful name that refers to both the physical structure of the destination and the idea of branching out and trying something new.
+> 
+That should capture the essence of a hidden forest escape!
+
 ### Write copy with Copilot
 After you select a name and a tagline, it's time to write a short description that really sells this place to others. Ask Copilot to help you create this description.
 
@@ -48,10 +50,9 @@ this destination for potential visitors?
 
 ```
 **Sample response**:
-``` 
- If you are looking for a unique and creative place to enjoy a drink and a bite in the woods, look no further than **The Branch**. This cozy restaurant is located high above the ground and built into the branches of a tree, offering you a stunning view of the forest and the sky. The Branch is more than just a bar, it’s an experience that combines nature and art, where you can sip on signature drinks, listen to live music, and explore the hidden features of this amazing destination.
 
-```
+> If you are looking for a unique and creative place to enjoy a drink and a bite in the woods, look no further than **The Branch**. This cozy restaurant is located high above the ground and built into the branches of a tree, offering you a stunning view of the forest and the sky. The Branch is more than just a bar, it’s an experience that combines nature and art, where you can sip on signature drinks, listen to live music, and explore the hidden features of this amazing destination.
+
 > [!TIP]
 > **Pull it all together**. You now have everything you need to describe your idea and destination. You can copy your AI-generated content into another format, such as a Microsoft PowerPoint presentation, to further refine and share with others.
 
