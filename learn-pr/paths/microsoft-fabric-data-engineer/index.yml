@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.data-engineer-microsoft-fabric
+metadata:
+  title: Implement a data engineering solution using Microsoft Fabric
+  description: Implement a data engineering solution using Microsoft Fabric
+  ms.date: 10/3/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: learning-path
+title: Implement a data engineering solution using Microsoft Fabric
+prerequisites: |
+  None
+summary: |
+   Learn how to harness the power of Microsoft Fabric platform to run large data engineering workloads in the cloud.
+iconUrl: /training/achievements/data-engineer-microsoft-fabric.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-fabric
+subjects:
+- data-engineering
+modules:
+
+- learn.wwl.ingest-data-with-microsoft-fabric
+- learn.wwl.use-apache-spark-work-files-lakehouse
+- learn.wwl.implement-lakehouse-microsoft-fabric
+- learn.wwl.explore-real-time-analytics-microsoft-fabric
+trophy:
+  uid: learn.wwl.data-engineer-microsoft-fabric.trophy
