@@ -41,5 +41,5 @@ All Microsoft services that use Azure Data Explorer clusters provide a set of re
 
 - **Investigate or analyze**: Use KQL to troubleshoot issues or gain specific insights.
 - **Define your own alerts**: Trigger an alert based on logic you define using KQL.
-- **Create custom visualizations**": Create dashboards and workbooks that visualize the results of KQL queries.
+- **Create custom visualizations**: Create dashboards and workbooks that visualize the results of KQL queries.
 - **Transform data**: Transform data before you store or present it. For example, you can use KQL to convert data from one format to another. Some services let you use KQL to filter out data from a data source to save costs on ingesting and storing data you don't need.
