@@ -1,6 +1,6 @@
 Now it's your chance to deploy and configure a Microsoft Defender workspace.
 
-In this exercise, you’ll learn how to deploy and configure the Microsoft Defender XDR workspace.
+In this exercise, you learn how to deploy and configure the Microsoft Defender XDR workspace.
 
 > [!NOTE]
 > To complete this exercise, you will need access to a Microsoft 365 E5 [free trial subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide&preserve-view=true).

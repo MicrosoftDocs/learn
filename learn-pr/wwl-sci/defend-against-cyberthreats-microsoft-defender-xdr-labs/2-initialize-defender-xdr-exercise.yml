@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-initialize-xdr.exercise
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-lab.initialize-defender-xdr-exercise
+
 title: Configure the Microsoft Defender XDR environment
 metadata:
   title: exercise
@@ -10,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-exercise.md)]
+  [!include[](includes/2-initialize-defender-xdr-exercise.md)]

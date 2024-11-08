@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs-incidents.exercise
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-lab.incidents-exercise
+
 title: Mitigate Attacks with Microsoft Defender for Endpoint
 metadata:
   title: exercise
@@ -10,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/4-incidents-exercise.md)]
