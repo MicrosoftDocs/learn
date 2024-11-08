@@ -32,7 +32,7 @@ quiz:
     - content: To sync content between the workspace and Git, ensuring they have the same content.
       isCorrect: true
       explanation: Correct. Connecting a Fabric workspace to a Git repository allows for synchronization of content between the two, ensuring they have the same content.
-    - content: To allow multiple developers to work on the same code simultaneously without conflicts
+    - content: To allow multiple developers to work on the same code simultaneously without conflicts.
       isCorrect: false
       explanation: Incorrect. While Git does allow multiple developers to work simultaneously, the connection of a Fabric workspace to a Git repository isn't primarily for this purpose.
   

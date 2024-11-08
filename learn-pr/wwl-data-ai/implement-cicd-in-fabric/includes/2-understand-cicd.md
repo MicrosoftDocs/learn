@@ -1,6 +1,5 @@
 When you and members of your team are each responsible developing and maintaining different parts of your Fabric environment, a best practice is to work in isolated development environments until you're ready to combine your development efforts and publish your changes to a particular pre-production environment. When you're ready to publish your changes, you need to make sure that your changes don't break existing code or interfere with changes made by other developers. There's also a need to ensure that code changes are saved and can be reverted if there are issues. The built-in continuous integration and continuous delivery capabilities in Fabric can help facilitate this.
 
-## Understand Continuous Integration and Continuous Delivery/Deployment (CI/CD)
  Continuous integration and continuous delivery is a process for integrating code contributions from multiple developers into a main codebase. Contributions are frequently committed, and automated processes build and test the new code. Code is continuously moving into production, reducing feature development time.
 
 ### Continuous integration

@@ -31,7 +31,7 @@ To synchronize the workspace and repository:
     :::image type="content" source="../media/git-status.png" alt-text="Screenshot of uncommitted changes in workspace." :::
 
 ## Branching scenarios
-Changes that you make to a workspace when you're doing development work affect all other workspace users so it's best to work in isolation outside of shared workspaces. To keep your development work isolated from shared workspaces, you can develop using:
+Changes that you make to a workspace when you're doing development work affect all other workspace users so it's a best practice to work in isolation outside of shared workspaces. To keep your development work isolated from shared workspaces, you can develop using:
 - A separate, isolated workspace 
 - Client tools like Power BI Desktop for reports and semantic models or VS Code for Notebooks.
 
@@ -52,7 +52,7 @@ For development using a separate, isolated workspace:
 4. Then, *in Git*, create a **Pull Request (PR)** to pull the changes from your isolated branch into the main branch.  
 5. The main branch in Git will be updated once the PR is merged to the main branch. When you open the *shared* development workspace, you'll be prompted to synchronize the new content from Git with the shared development workspace. 
 
-Use client tools for development. The process is similar to that when developing in the Fabric web interface. 
+When using client tools for development, the process is similar to that when developing in the Fabric web interface. 
  
 1. Connect a development workspace to the main branch, following the instructions in the section on this page entitled "Connect a Fabric workspace to a Git repository".
 2. Clone the repository on your local machine. 
