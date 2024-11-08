@@ -1,10 +1,10 @@
-The process of training a model can be either supervised or unsupervised. Our goal here is to contrast these approaches, then take a deeper dive into the learning process with a focus on supervised learning. It's worth remembering throughout this discussion that the only difference between supervised and unsupervised learning is how the objective function works.
+The process of training a model can be either supervised or unsupervised. Our goal is to contrast these approaches, then take a deeper dive into the learning process with a focus on supervised learning. It's worth remembering throughout this discussion that the only difference between supervised and unsupervised learning is how the objective function works.
 
 ## What is unsupervised learning?
 
 In unsupervised learning, we train a model to solve a problem without us knowing the correct answer. In fact, unsupervised learning is typically used for problems where there isn't one correct answer, but instead, better and worse solutions.
 
-Imagine that we want our machine-learning model to draw realistic pictures of avalanche rescue dogs. There isn't one "correct" drawing to draw. As long as the image looks somewhat like a dog, we'll be satisfied. But if the produced image is of a cat, that's a worse solution.
+Imagine that we want our machine-learning model to draw realistic pictures of avalanche rescue dogs. There isn't one "correct" drawing to draw. As long as the image looks somewhat like a dog, we're satisfied. But if the produced image is of a cat, that's a worse solution.
 
 Recall that training requires several components:
 
@@ -21,7 +21,7 @@ Think of supervised learning as learning by example. In supervised learning, we 
 
 :::image type="content" source="../media/2-2-b.jpg" alt-text="Diagram of the model and objective function parts of the machine-learning lifecycle, with labels." border="false":::
 
-For example, consider our desire to predict what the temperature will be on January 31 of a given year. For this prediction, we'll need data with two components:
+For example, consider our desire to predict what the temperature will be on January 31 of a given year. For this prediction, we need data with two components:
 
 * Feature: Date
 * Label: Daily temperature (for example, from historical records)
