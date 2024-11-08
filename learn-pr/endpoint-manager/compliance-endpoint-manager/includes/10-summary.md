@@ -30,6 +30,6 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 
 For additional information about Microsoft Intune, see the following resources:
 
-- [Microsoft Intune documentation](/mem/?azure-portal=true)
-- [Protect Data and Devices with Intune](/mem/intune/protect/)
-- [Device compliance with documentation](/mem/configmgr/compliance/)
+- [Microsoft Intune product and capabilities documentation](/mem/?azure-portal=true)
+- [Microsoft Intune documentation](/mem/intune/)
+- [Device compliance documentation](/mem/configmgr/compliance/)
