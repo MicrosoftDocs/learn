@@ -170,7 +170,7 @@ Your team reviews your code, and another developer suggests that you use an inte
     app.MapGet("/", (IWelcomeService welcomeService) => welcomeService.GetWelcomeMessage());
     ```
 
-    The anonymous method now expects an `IWelcomeService` instead of a `WelcomeService`.
+    The anonymous function now expects an `IWelcomeService` instead of a `WelcomeService`.
 
     Your *Program.cs* file should look like this:
 
