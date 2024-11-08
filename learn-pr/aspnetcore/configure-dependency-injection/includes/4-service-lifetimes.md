@@ -24,4 +24,4 @@ Use the `AddTransient` method to add a transient service to the service containe
 
 ## Services that depend on other services
 
-When you register a service that depends on another service, you must take service lifetime into account. If a service with a shorter lifetime is injected into a service with a longer lifetime, the shorter-lived service can't outlive the longer-lived service. For example, a singleton service can't depend on a scoped service because the scoped service is disposed of when the request is completed.
+A service can depend on other services, typically by having its dependencies injected through its constructor. When you register a service that depends on another service, you must take service lifetime into account. For example, a singleton services shouldn't depend on a scoped services because the scoped service is disposed of when the request is completed but a singleton lives for the lifetime of the app. Fortunately, ASP.NET Core will by default check for this misconfiguration and will report a scope validation error when the app starts up so the issue can be quickly identified and addressed.
