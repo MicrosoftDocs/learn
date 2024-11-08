@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.security-storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement security for storage
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
   ms.date: 06/25/2024

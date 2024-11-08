@@ -2,6 +2,8 @@
 uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method
 title: Choose an authentication method in Azure Synapse serverless SQL pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose an authentication method in Azure Synapse serverless SQL pools
   description: "Choose an authentication method in Azure Synapse serverless SQL pools"
   ms.date: 06/14/2023

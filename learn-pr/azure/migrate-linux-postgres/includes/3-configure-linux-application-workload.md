@@ -1,24 +1,22 @@
-## Introduction
+In this unit, you will:
 
-In this module, you will:
-
-- Configure a Linux application workload to connect to an Azure Database for PostgreSQL using a system-assigned managed identity.
-- Connect to the [Azure Virtual Machine using the Azure CLI](/azure/virtual-machines/linux/quick-create-cli). 
+- Configure a Linux application workload to connect to Azure Database for PostgreSQL by using a system-assigned managed identity.
+- Connect to the [Azure virtual machine by using the Azure CLI](/azure/virtual-machines/linux/quick-create-cli).
 - Install the necessary tools.
-- Connect to the PostgreSQL server using `psql`.
-- Clone the repository containing the sample application.
-- Run the application and confirm it can connect to the PostgreSQL server using the managed identity.
+- Connect to the PostgreSQL server by using `psql`.
+- Clone the repository that contains the sample application.
+- Run the application and confirm that it can connect to the PostgreSQL server by using the managed identity.
 
-## Get the Currently Logged-In User and the VM ID
+## Get the currently logged-in user and the VM ID
 
 ```bash
 USER_ID=$(az ad signed-in-user show --query id --output tsv)
 VM_ID=$(az vm show --resource-group 240900-linux-postgres --name vm-1 --query id --output tsv)
 ```
 
-## Assign the 'Virtual Machine Administrator Login' role to the user for the VM
+## Assign the Virtual Machine Administrator Login role to the user for the VM
 
-You can read more about the Privileged role in Azure VMs on the [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator).
+You can read more about privileged roles for Azure VMs in [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator).
 
 ```bash
 az role assignment create \
@@ -27,45 +25,45 @@ az role assignment create \
     --role "Virtual Machine Administrator Login"
 ```
 
-## Connect to the Azure Virtual Machine Using the Azure CLI
+## Connect to the Azure virtual machine by using the Azure CLI
 
 ```bash
 az ssh vm --resource-group 240900-linux-postgres --name vm-1
 ```
 
-## Install psql and Go (golang) on the Virtual Machine
+## Install psql and Go on the virtual machine
 
-Update the package list.
+Update the package list:
 
 ```bash
 sudo apt-get update
 ```
 
-Install the PostgreSQL client and Go (golang) on the Virtual Machine.
+Install the PostgreSQL client and Go (Golang) on the virtual machine:
 
 ```bash
 sudo apt-get install -y postgresql-client golang-go
 ```
 
 ## Confirm the version of psql
-    
+
 ```bash
 psql --version
 ```
 
-## Install the Azure CLI on the Virtual Machine
+## Install the Azure CLI on the virtual machine
 
 ```bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-## Log in to the Azure CLI using the System Assigned Managed Identity
+## Sign in to the Azure CLI by using the system-assigned managed identity
 
 ```bash
 az login --identity
 ```
 
-You should see output as follows:
+The following output appears:
 
 ```
 $ az login --identity
@@ -88,26 +86,26 @@ $ az login --identity
 ]
 ```
 
-## Connect to the PostgreSQL server using bash and psql
+## Connect to the PostgreSQL server by using Bash and psql
 
-Run the following commands on the remote machine
+Run the following commands on the remote machine:
 
 ```bash
 MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
 export AZURE_CLIENT_ID=$(az identity show --resource-group 240900-linux-postgres --name $MANAGED_IDENTITY_NAME --query "clientId" -o tsv)
 PG_NAME=$(az postgres flexible-server list --resource-group 240900-linux-postgres --query "[0].name" -o tsv)
 
-# set psql environment variables
+# Set psql environment variables
 export PGHOST="${PG_NAME}.privatelink.postgres.database.azure.com"
 export PGPASSWORD=$(curl -s "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fossrdbms-aad.database.windows.net&client_id=${AZURE_CLIENT_ID}" -H Metadata:true | jq -r .access_token)
 export PGUSER=$MANAGED_IDENTITY_NAME
 export PGDATABASE=postgres
 
-# login using psql
+# Log in by using psql
 psql
 ```
 
-Once connected you should see the below output. Type the `\q` command to exit.
+After you're connected, the following output appears. Enter the `\q` command to exit.
 
 ```
 $ psql
@@ -119,21 +117,21 @@ postgres=> \q
 $ 
 ```
 
-## Clone the sample application, Tailwind Traders (Go), to the machine
+## Clone the sample application
 
-Run the following commands on the remote machine
+Clone the sample application, Tailwind Traders (Go). Run the following commands on the remote machine:
 
 ```bash
 git clone https://github.com/Azure-Samples/tailwind-traders-go.git
 ```
 
-Change to the application directory
+Change to the application directory:
 
 ```bash
 cd tailwind-traders-go/app/
 ```
 
-Run the application
+Run the application:
 
 ```bash
 go run main.go
@@ -163,7 +161,7 @@ Targets:
   app:token               gets a token using `azidentity.NewDefaultAzureCredential`
 ```
 
-## Connect to the PostgreSQL server using Tailwind Trader (Go)'s `app:token` target
+## Connect to the PostgreSQL server by using the Tailwind Traders (Go) app:token target
 
 ```bash
 MANAGED_IDENTITY_NAME=240900-linux-postgres-identity
@@ -176,26 +174,27 @@ export PGPASSWORD=$(go run main.go app:token)
 export PGUSER=$MANAGED_IDENTITY_NAME
 export PGDATABASE=postgres
 
-# login using psql
+# Log in by using psql
 psql
 ```
 
 ## Quit psql and disconnect from the remote machine
 
-Quit psql.
+Quit `psql`:
 
 ```bash
 \q
 ```
 
-Disconnect from the remote machine.
+Disconnect from the remote machine:
 
 ```bash
 exit
 ```
 
 ## Resources
-- [Sign in to a Linux virtual machine in Azure using Azure AD](/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
-- [Connect to an Azure Database for PostgreSQL server using a managed identity](/azure/postgresql/single-server/how-to-connect-with-managed-identity)
-- [Create a Linux virtual machine with the Azure CLI on Azure](/azure/virtual-machines/linux/quick-create-cli). 
-- [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator).
+
+- [Sign in to a Linux virtual machine in Azure by using Microsoft Entra ID and OpenSSH](/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
+- [Connect to an Azure Database for PostgreSQL server by using a managed identity](/azure/postgresql/single-server/how-to-connect-with-managed-identity)
+- [Create a Linux virtual machine with the Azure CLI on Azure](/azure/virtual-machines/linux/quick-create-cli)
+- [Azure built-in roles for Privileged](/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator)

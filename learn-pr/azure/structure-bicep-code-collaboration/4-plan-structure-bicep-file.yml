@@ -2,6 +2,8 @@
 uid: learn.azure.structure-bicep-code-collaboration.plan-structure-bicep-file
 title: Plan the structure of your Bicep file
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Plan the structure of your Bicep file
   description: Learn how a Bicep file can be structured to make it easy to understand and work with.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-structure-bicep-file.md)]
+

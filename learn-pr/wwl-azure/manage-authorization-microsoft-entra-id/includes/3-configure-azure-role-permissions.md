@@ -320,7 +320,7 @@ If the Owner role on the subscription is inherited from the current management g
 To move a subscription in PowerShell, you use the New-AzManagementGroupSubscription command.
 
 ```powershell
-New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
+New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId 'aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e'
 
 
 
@@ -340,7 +340,7 @@ New-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1
 To remove the link between the subscription and the management group use the Remove-AzManagementGroupSubscription command.
 
 ```powershell
-Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '12345678-1234-1234-1234-123456789012'
+Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId 'aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e'
 
 
 
@@ -362,7 +362,7 @@ Remove-AzManagementGroupSubscription -GroupId 'Contoso' -SubscriptionId '1234567
 To move a subscription in CLI, you use the add command.
 
 ```azurecli
-az account management-group subscription add --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
+az account management-group subscription add --name 'Contoso' --subscription 'aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e'
 
 
 
@@ -382,7 +382,7 @@ az account management-group subscription add --name 'Contoso' --subscription '12
 To remove the subscription from the management group, use the subscription remove command.
 
 ```azurecli
-az account management-group subscription remove --name 'Contoso' --subscription '12345678-1234-1234-1234-123456789012'
+az account management-group subscription remove --name 'Contoso' --subscription 'aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e'
 
 
 

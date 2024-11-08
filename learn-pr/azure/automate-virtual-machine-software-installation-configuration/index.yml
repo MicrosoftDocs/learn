@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.automate-virtual-machine-software-installation-configuration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate the installation and configuration of software in your Virtual Machines
   description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
   manager: akashdubey
@@ -41,3 +43,4 @@ units:
 - learn.azure.automate-virtual-machine-software-installation-configuration.summary
 badge:
   uid: learn.azure.automate-virtual-machine-software-installation-configuration.badge
+

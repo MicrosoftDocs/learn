@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services.explain-virtual-network-service-endpoints
 title: Explain virtual network service endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain virtual network service endpoints
   description: "Explain virtual network service endpoints"
   ms.date: 04/11/2024

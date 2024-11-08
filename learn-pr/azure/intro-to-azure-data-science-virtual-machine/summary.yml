@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review the Data Science Virtual Machine concepts discussed in this module. 
   ms.date: 06/02/2023
@@ -57,3 +59,4 @@ quiz:
         - content: "For the time that any process on the Data Science Virtual Machine is running under your account."
           isCorrect: false
           explanation: "Charges are based on machine uptime, not user activity. You can configure a daily shutdown to catch mistakes."
+

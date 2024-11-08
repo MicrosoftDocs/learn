@@ -184,7 +184,7 @@ az keyvault show --name $keyVaultName --query id --output tsv
 The resource ID will look something like this example:
 
 ```Output
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
 ```
 
 Copy the resource ID. You'll use it in the next step.

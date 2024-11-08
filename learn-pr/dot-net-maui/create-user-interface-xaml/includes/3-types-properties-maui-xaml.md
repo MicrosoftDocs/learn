@@ -6,19 +6,19 @@ In this unit, you'll learn how to use the types available in XAML, and how to se
 
 .NET MAUI implements a XAML parser that parses your declared XAML elements and instantiates each element as a .NET type. The XAML dialect that the .NET MAUI parser understands is specific to .NET MAUI, although it's similar to XAML other frameworks use, such as Windows Presentation Foundation.
 
-The .NET types that implement the items XAML code identifies are implemented by code in several .NET assemblies. Many of these assemblies are included as part of the .NET MAUI templates. You can also utilize other custom types by loading the appropriate assemblies as part of your project. Many assemblies are available as NuGet packages. Most of the common types used by a MAUI app are in the **Microsoft.Maui.Dependencies** and **Microsoft.Maui.Extensions** packages.
+The .NET types that implement the items XAML code identifies are implemented by code in several .NET assemblies. Many of these assemblies are included as part of the .NET MAUI templates. You can also utilize other custom types by loading the appropriate assemblies as part of your project. Many assemblies are available as NuGet packages. Most of the common types a MAUI app uses are in the **Microsoft.Maui.Dependencies** and **Microsoft.Maui.Extensions** packages.
 
 Each type is defined in a namespace. In your XAML code, you specify the namespaces for the types you reference. Most MAUI controls are located in the **Microsoft.Maui.Controls** namespace, while the **Microsoft.Maui** namespace defines utility types such as `Thickness`, and the **Microsoft.Maui.Graphics** namespace includes generalized types such as `Color`. The option to introduce types in this way highlights the extensibility of XAML. XAML allows you to create your app's UI with the freedom to include .NET MAUI XAML elements, .NET types, and custom types. For the most part, you don't need to worry about these namespaces as they're brought in using C#'s implicit `usings` feature that automatically adds them app-wide.
 
 ## How to instantiate types in XAML
 
-The first step in using XAML to build a UI is instantiating the UI control types. In XAML, you can create an object of a specified type by using Object Element Syntax. Object Element Syntax is a standard, well-formed, XML syntax to declare an element. For example, if you want to create a label with a specific color, your XAML element will look like the following code:
+The first step in using XAML to build a UI is instantiating the UI control types. In XAML, you can create an object of a specified type by using Object Element Syntax. Object Element Syntax is a standard, well-formed XML syntax to declare an element. For example, if you want to create a label with a specific color, your XAML element will look like the following code:
 
 ```xml
 <Label TextColor="AntiqueWhite"/>
 ```
 
-the .NET MAUI XAML parser will parse this XAML element to instantiate the object in memory. Effectively, the parsed XAML label is the same as the following C# code:
+The .NET MAUI XAML parser parses this XAML element to instantiate the object in memory. Effectively, the parsed XAML label is the same as the following C# code:
 
 ```csharp
 var myLabel = new Label
@@ -42,7 +42,7 @@ Remember that for the XAML parser to successfully parse the XAML definition of a
 
 The first namespace, `http://schemas.microsoft.com/dotnet/2021/maui`, is the page's default namespace. This URI form of namespace is typical of XML, and looks somewhat different from those with which you might be familiar in C#. However, this URI is simply an alias for one or more of the namespaces defined by the assemblies in the **Microsoft.Maui** NuGet package, so specifying this namespace at the start of the page brings all of the .NET MAUI types and controls into scope. If you omit this namespace, you won't be able to use controls such as `Button`, `Label`, `Entry`, or `StackLayout`.
 
-The second namespace, `http://schemas.microsoft.com/winfx/2009/xaml`, references the assemblies that contain the various .NET intrinsic types such as strings, numerics, and properties. In the preceding XAML code, this namespace is assigned the alias **x**. In the XAML code for this page, you reference the types in this namespace by prefixing them with **x:**. For example, each XAML page is compiled into a class, and you specify the name of the class that is generated with the **x:Class** attribute of the page:
+The second namespace, `http://schemas.microsoft.com/winfx/2009/xaml`, references the assemblies that contain the various .NET intrinsic types such as strings, numerics, and properties. In the preceding XAML code, this namespace is assigned the alias **x**. In the XAML code for this page, you reference the types in this namespace by prefixing them with **x:**. For example, each XAML page is compiled into a class, and you specify the name of the class that's generated with the **x:Class** attribute of the page:
 
 ```xml
 <ContentPage ...
@@ -83,7 +83,7 @@ This statement creates a new `Label` object and sets the `Text` and `TextColor` 
 <Label Text="Username" TextColor="Black" />
 ```
 
-One thing that you might notice that is different in the XAML code than the C# code is the values of the properties. For example, in the C# code, you use the `Color` type for the `TextColor` property. However, in the XAML definition, you set `TextColor` with a string value. This is because a string is the only valid element that you can use for an XML attribute value. Therefore, there needs to be a way to convert each string value to its correct type. In XAML, you can do this conversion by using a **Type Converter**.
+One thing you might notice that's different in the XAML code than the C# code is the property values. For example, in the C# code, you use the `Color` type for the `TextColor` property. However, in the XAML definition, you set `TextColor` with a string value. This is because a string is the only valid element that you can use for an XML attribute value. Therefore, there needs to be a way to convert each string value to its correct type. In XAML, you can do this conversion by using a **Type Converter**.
 
 ## What is a type converter?
 

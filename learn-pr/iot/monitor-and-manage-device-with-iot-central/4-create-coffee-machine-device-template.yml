@@ -2,6 +2,8 @@
 uid: learn.monitor-manage-device-with-iotcentral.create-coffee-machine-device-template
 title: Exercise - Create the coffee machine device template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create the coffee machine device template
   description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
   ms.date: 06/14/2023
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-create-coffee-machine-device-template.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-data-masking-and-anonymization
 title: Implement data masking and anonymization in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement data masking and anonymization in Azure Databricks
   description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks."
   ms.date: 08/14/2024

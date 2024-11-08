@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-model-managed-online-endpoint.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -35,3 +37,4 @@ quiz:
     - content: "`init()` and `run()`"
       isCorrect: true
       explanation: "Correct. You must implement init and run functions in the entry (scoring) script."
+

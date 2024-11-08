@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-network-solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design network solutions
   description: Azure Architects design and recommend network solutions.
   ms.date: 10/09/2023
@@ -43,3 +45,4 @@ units:
 - learn.wwl.design-network-solutions.summary-resources
 badge:
   uid: learn.wwl.design-network-solutions.badge
+

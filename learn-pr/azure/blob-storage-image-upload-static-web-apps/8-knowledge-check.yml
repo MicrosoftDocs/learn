@@ -2,6 +2,8 @@
 uid: learn.blob-storage-image-upload-static-web-apps.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Test your knowledge
   ms.date: 03/23/2023
@@ -12,7 +14,7 @@ metadata:
   ms.contributors: alvidela-11122021
 durationInMinutes: 4
 quiz:
-  title: Choose the best response for each question. Then select Check your answers.
+  title: Choose the best response for each question. 
   questions:
 
   - content: "The `expiresOn` shared access signature (SAS Key) property specifies:"
@@ -50,3 +52,4 @@ quiz:
     - content: "Create a shared access signature that grants restricted access to your Blob Storage account."
       isCorrect: true
       explanation: "Use shared access signatures to grant restricted access to your Blob Storage account to third parties."
+

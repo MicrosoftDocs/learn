@@ -6,4 +6,4 @@ Your company is implementing an Azure Virtual Network peering solution to enable
 
 ### Answer the following questions
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for each of the following questions. 

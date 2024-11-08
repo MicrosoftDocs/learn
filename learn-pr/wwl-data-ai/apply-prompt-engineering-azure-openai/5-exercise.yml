@@ -2,6 +2,8 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.exercise
 title: Exercise - Utilize prompt engineering in your application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Utilize prompt engineering in your application
   description: Develop an application that uses prompt engineering to improve the quality of responses from Azure OpenAI.
   author: ivorb
@@ -19,3 +21,4 @@ labId: 152391
 labModal: true
 content: |
   [!include[](includes/5-exercise.md)]
+

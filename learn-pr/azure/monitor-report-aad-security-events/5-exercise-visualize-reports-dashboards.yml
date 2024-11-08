@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.5-exercise-visualize-reports-dashboards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up a dashboard and add a report
   description: Exercise - Set up reports and dashboards to visualize log data.
   ms.date: 03/01/2023
@@ -11,3 +13,4 @@ title: Exercise - Set up a dashboard and add a report
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-visualize-reports-dashboards.md)]
+

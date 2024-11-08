@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-aspnet-app-azure-app-service.deploy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy app container to AKS
   description: Describes the basic concepts of Azure App Service and provides hands-on guidance to deploy the app container to App Service containers
   ms.date: 01/02/2024

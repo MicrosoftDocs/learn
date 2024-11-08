@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-database-authentication-authorization.identify-authentication-and-authorization
 title: Identify authentication and authorization failures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify authentication and authorization failures
   description: "Identify authentication and authorization failures"
   ms.date: 04/26/2022

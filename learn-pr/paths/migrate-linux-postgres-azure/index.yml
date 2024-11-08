@@ -26,6 +26,7 @@ modules:
   - learn.introduction-to-linux-on-azure
   - learn.plan-your-linux-environment-in-azure
   - learn.provision-linux-virtual-machine-in-azure
+  - learn.wwl.migrate-azure-database-postgresql-flexible-server
   - learn.wwl.get-started-generative-ai-azure-database-postgresql
 trophy:
   uid: learn.azure-linux-postgres.trophy

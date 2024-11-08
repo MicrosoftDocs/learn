@@ -2,6 +2,8 @@
 uid: learn.wwl.design-processes-to-automate-application-analytics.explore-rapid-responses-augmented-search
 title: Explore rapid responses and augmented search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore rapid responses and augmented search
   description: "Explore rapid responses and augmented search"
   ms.date: 05/06/2024

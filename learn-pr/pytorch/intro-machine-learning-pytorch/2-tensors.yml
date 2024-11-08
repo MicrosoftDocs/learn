@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-machine-learning.tensors
 title: What are Tensors?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are Tensors?
   description: Tensors are specialized data structures that are similar to arrays and matrices.
   author: cassiebreviu
@@ -30,3 +32,4 @@ quiz:
         - content: "Tensors are specialized data structures that are similar to arrays and matrices."
           isCorrect: true
           explanation: "Correct"
+

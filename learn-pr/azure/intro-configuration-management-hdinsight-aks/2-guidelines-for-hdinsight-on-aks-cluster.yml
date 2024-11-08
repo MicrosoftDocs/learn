@@ -2,6 +2,8 @@
 uid: learn.intro-configuration-management-hdinsight-aks.2-guidelines-for-hdinsight-on-aks-cluster
 title: Guidelines for HDInsight on AKS cluster 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Guidelines for HDInsight on AKS cluster
   description: Guidelines for HDInsight on AKS cluster
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-guidelines-for-hdinsight-on-aks-cluster.md)]
+

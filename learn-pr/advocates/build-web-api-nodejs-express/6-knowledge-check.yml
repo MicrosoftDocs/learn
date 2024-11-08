@@ -2,6 +2,8 @@
 uid: learn.azure.build-web-api-nodejs-express.8-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Answer the questions to see what you learned in the module.
   ms.date: 02/12/2024
@@ -10,7 +12,7 @@ metadata:
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   questions:
     - content: "What steps do you need to construct a web application with Express?"

@@ -14,7 +14,7 @@ In the **Create budget** window, make sure that the scope shown is correct. Sele
 
 After you've identified your scope and filters, enter a budget name, then select a monthly, quarterly, or annual budget reset period. This reset period determines the time window that the budget analyzes. The cost evaluated by the budget starts at zero at the beginning of each new period. When you create a quarterly budget, it works in the same way as a monthly budget. The difference is that the budget amount for the quarter is evenly divided among the three months of the quarter. An annual budget amount is evenly divided among all 12 months of the calendar year.
 
-If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those subscription types and resource groups, you can create a budget that's aligned to your invoice period or to calendar months. To create a budget aligned to your invoice period, select a reset period of **Billing month**, **Billing quarter**, or **Billing year**. To create a budget aligned to the calendar month, select a reset period of  **Monthly**, **Quarterly**, or **Annually**.
+If you have a pay-as-you-go, MSDN (Microsoft Developer Network), or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those subscription types and resource groups, you can create a budget that's aligned to your invoice period or to calendar months. To create a budget aligned to your invoice period, select a reset period of **Billing month**, **Billing quarter**, or **Billing year**. To create a budget aligned to the calendar month, select a reset period of  **Monthly**, **Quarterly**, or **Annually**.
 
 Next, identify the expiration date when the budget becomes invalid and stops evaluating your costs.
 
@@ -28,11 +28,11 @@ After you configure the budget amount, select **Next** to configure budget alert
 
 Set an alert condition when 90% of the budget is reached.
 
-After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 3 – Evaluate your costs using Cost Analysis**.
+After you create a budget, it appears in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as described in **Unit 3 - Evaluate your costs using Cost Analysis**.
 
 ![Screenshot of budget and spending shown in cost analysis with several charts and graphs.](../media/5-cost-analysis.png)
 
-In the preceding example, you created a budget for a subscription. However, you can also create a budget for a resource group. If you want to create a budget for a resource group, go to **Cost Management + Billing** > **Subscriptions** > select a subscription > **Resource groups** > select a resource group > **Budgets** > and then **Add** a budget.
+In the preceding example, you created a budget for a subscription. However, you can also create a budget for a resource group. If you want to create a budget for a resource group, go to **Resource groups** > select a resource group > **Cost Management** > **Budgets** > and then **Add** a budget.
 
 ## Action groups for budgets
 
@@ -48,7 +48,7 @@ Previously, you created a budget alert by setting an alert condition for the bud
 
 ### Budget alerts
 
-Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. You can create Cost Management budgets by using the Azure portal or the Azure Consumption API.
+Based on usage or cost, budget alerts notify you when spending reaches or exceeds the amount defined in the alert condition of the budget. You can create Cost Management budgets by using the Azure portal or the Azure Consumption API.
 
 In the Azure portal, you define your budgets by cost. When Using the Azure Consumption API, you define your budgets by cost or by consumption usage. Budget alerts support both cost-based and usage-based budgets. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts. An alert email is also sent to the people in the alert recipients list of the budget.
 
@@ -72,7 +72,7 @@ Support for alert types depends on the type of Azure account that you have (Micr
 
 ### View cost alerts
 
-To view cost alerts, open the desired scope in the Azure portal and select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope. Select **Cost alerts** in the menu.
+To view cost alerts, open the desired scope in the Azure portal. Select **Cost Management**, and then select **Cost alerts** in the menu.
 
 ![Screenshot listing cost alerts shown in Cost Management.](../media/5-budget-alerts-fullscreen.png)
 

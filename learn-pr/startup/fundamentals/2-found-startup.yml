@@ -2,6 +2,8 @@
 uid: learn.startups.fundamentals.found-startup
 title: Should you found a startup?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Should you found a startup?
   description: Consider questions that explore your suitability for founding a startup. Examples include your motivation, expertise, financial freedom, and risk tolerance.
   ms.date: 01/09/2024

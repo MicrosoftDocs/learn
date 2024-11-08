@@ -2,6 +2,8 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
 title: KQL best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: KQL best practices
   description: "KQL best practices"
   ms.date: 05/14/2024

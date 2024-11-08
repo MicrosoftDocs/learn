@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-defender-windows-client.manage-windows-defender-firewall
 title: Manage Windows Defender Firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Windows Defender Firewall
   description: "Manage Windows Defender Firewall"
   ms.date: 05/10/2023

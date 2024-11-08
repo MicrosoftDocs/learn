@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-machine-learning.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit we introduce the core PyTorch concepts covered in this course.
   author: cassiebreviu
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -3,7 +3,7 @@ uid: learn.save-money-with-azure-reserved-instances.knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 06/07/2023
+  ms.date: 10/24/2024
   author: bandersmsft
   ms.author: banders
   ms.topic: unit
@@ -34,17 +34,17 @@ quiz:
     - content: "Shared scope"
       isCorrect: true
       explanation: "The shared scope applies the reservation discount to matching resources of subscriptions that are in the billing context."
-  - content: "Which Azure customer types are supported by Azure reservations?"
+  - content: "Which Azure customer types do Azure reservations support?"
     choices:
     - content: "Enterprise Agreement, Web-direct, CSP, and Microsoft Customer Agreement"
       isCorrect: true
       explanation: "All the customer types shown are supported with Azure reservations."
     - content: "MPN credit subscriptions, Free Trial, and MSDN credit subscriptions"
       isCorrect: false
-      explanation: "Although the customer types can have Azure subscriptions, they are not supported with Azure reservations."
+      explanation: "Although the customer types can have Azure subscriptions, they aren't supported with Azure reservations."
     - content: "BizSpark, Azure in Open, and the Microsoft Azure for Students Starter Offer"
       isCorrect: false
-      explanation: "Although the customer types can have Azure subscriptions, they are not supported with Azure reservations."
+      explanation: "Although the customer types can have Azure subscriptions, they aren't supported with Azure reservations."
   - content: "What is one way to optimize your reservation purchase?"
     choices:
     - content: "Exchange unused quantity for a different reservation"

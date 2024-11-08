@@ -2,6 +2,8 @@
 uid: learn.monitor-ai-services.diagnostic-logging
 title: Manage diagnostic logging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage diagnostic logging
   description: Manage diagnostic logging.
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-manage-diagnostic-logging.md)]
+

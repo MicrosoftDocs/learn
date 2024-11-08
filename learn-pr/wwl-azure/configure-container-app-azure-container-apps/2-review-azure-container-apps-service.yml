@@ -4,10 +4,12 @@ title: Review the Azure Container Apps service
 metadata:
   title: Review the Azure Container Apps service
   description: "Review the Azure Container Apps service"
-  ms.date: 11/22/2023
+  ms.date: 11/06/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - ai-learning-hub
 durationInMinutes: 6
 content: |
   [!include[](includes/2-review-azure-container-apps-service.md)]

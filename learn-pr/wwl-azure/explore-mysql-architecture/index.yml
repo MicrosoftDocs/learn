@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-mysql-architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore MySQL Architecture
   description: "Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL."
   ms.date: 10/10/2022

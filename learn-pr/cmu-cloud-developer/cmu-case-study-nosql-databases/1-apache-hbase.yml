@@ -2,6 +2,8 @@
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase
 title: Apache HBase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apache HBase
   description: Apache HBase
   ms.date: 03/09/2022

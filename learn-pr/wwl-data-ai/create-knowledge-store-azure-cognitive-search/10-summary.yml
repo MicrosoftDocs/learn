@@ -2,6 +2,8 @@
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: ivorb
@@ -14,3 +16,4 @@ azureSandbox: false
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

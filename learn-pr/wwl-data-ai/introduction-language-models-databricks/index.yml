@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language-models-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get started with language models in Azure Databricks
   description: Get started with language models in Azure Databricks
   ms.date: 08/12/2024
@@ -38,3 +40,4 @@ units:
 - learn.wwl.introduction-language-models-databricks.summary
 badge:
   uid: learn.wwl.introduction-language-models-databricks.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-azure-identity-access-security.external-identities
 title: Describe Azure external identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure external identities
   description: "Describe Azure external identities"
   ms.date: 10/03/2024

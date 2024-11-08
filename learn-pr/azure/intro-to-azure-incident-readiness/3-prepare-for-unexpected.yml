@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-incident-readiness.prepare-for-unexpected
 title: How to prepare for the unexpected (before an incident)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to prepare for the unexpected (before an incident)
   description: "In this unit, you'll gain the knowledge and skills to proactively prepare for the unexpected, including navigating Azure Service Health, setting up alerts, and implementing recommended measures to enhance application resilience and secure your environment."
   ms.date: 6/25/2023
@@ -47,3 +49,4 @@ quiz:
       isCorrect: false
     - content: "Microsoft's public Status Page (azure.status.microsoft)"
       isCorrect: false
+

@@ -2,6 +2,8 @@
 uid: learn.health-bot-integrated-bot.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Answer three multiple-choice questions.
   ms.date: 03/17/2023
@@ -51,3 +53,4 @@ quiz:
         - content: "Disable **Allow Azure services and resources to access this server**. Enter the rule name *ALL*. Start IP: *0.0.0.0*. End IP: *255.255.255.255*."
           isCorrect: false
           explanation: "Incorrect. Disabling **Allow Azure services and resources to access this server** won't allow us to connect to the server to log in."
+

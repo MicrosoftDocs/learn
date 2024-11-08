@@ -2,6 +2,8 @@
 uid: learn.wwl.operate-with-devops.explore-resiliency-with-site-reliability-engineering
 title: 'Explore resiliency with site reliability engineering'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore resiliency with site reliability engineering'
   description: "Explore the correlation between SRE and DevOps and learn how to implement SRE for increased resiliency."
   ms.date: 02/06/2024

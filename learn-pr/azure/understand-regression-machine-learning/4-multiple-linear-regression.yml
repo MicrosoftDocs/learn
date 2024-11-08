@@ -2,6 +2,8 @@
 uid: learn.machinelearning.understand-regression-machine-learning.multiple-linear-regression
 title: Multiple linear regression and R-squared
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Multiple linear regression and R-squared
   description: Conceptual unit about multiple linear regression and R-squared in machine learning
   ms.date: 07/21/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-multiple-linear-regression.md)]
+

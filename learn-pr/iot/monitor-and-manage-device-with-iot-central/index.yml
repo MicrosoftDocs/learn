@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.monitor-manage-device-with-iotcentral
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build your first Azure IoT Central application to manage your coffee machines
   description: Create an Azure IoT Central application to monitor telemetry, observe the state, send commands and configure rules for maintenance notifications.
   ms.service: azure-iot-central
@@ -46,3 +48,4 @@ units:
 - learn.monitor-manage-device-with-iotcentral.summary
 badge:
   uid: learn.monitor-manage-device-with-iotcentral.badge
+

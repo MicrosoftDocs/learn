@@ -2,6 +2,8 @@
 uid: learn.azure.build-node-cosmos-app-vscode.7-exercise-javascript-cosmosdb
 title: Exercise - Add JavaScript code to work with Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Add JavaScript code to work with Cosmos DB
   description: Write JavaScript code to insert, update, delete, and query documents in Cosmos DB
   ms.date: 09/30/2022
@@ -15,3 +17,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-javascript-cosmosdb.md)]
+

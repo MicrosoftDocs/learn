@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.make-data-available-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Make data available in Azure Machine Learning
   description: Learn about how to connect to data from the Azure Machine Learning workspace. You're introduced to datastores and data assets.
   author: wwlpublish
@@ -37,3 +39,4 @@ units:
 - learn.wwl.make-data-available-azure-machine-learning.summary
 badge:
   uid: learn.wwl.make-data-available-azure-machine-learning.badge
+

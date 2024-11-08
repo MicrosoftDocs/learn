@@ -2,6 +2,8 @@
 uid: learn.introduction-azure-firewall.3-how-azure-firewall-works
 title: How Azure Firewall works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Firewall works
   description: Learn how Azure Firewall and Azure Firewall Manager protect Azure virtual networks.
   ms.date: 11/06/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-firewall-works.md)]
+

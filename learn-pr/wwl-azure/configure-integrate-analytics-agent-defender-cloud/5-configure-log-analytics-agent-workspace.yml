@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-log-analytics-agent-workspace
 title: Configure the Log Analytics agent and workspace
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure the Log Analytics agent and workspace
   description: "Configure the Log Analytics agent and workspace"
   ms.date: 10/17/2024

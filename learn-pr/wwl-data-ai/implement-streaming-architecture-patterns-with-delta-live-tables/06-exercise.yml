@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.exercise
 title: Exercise - end-to-end streaming pipeline with Delta Live tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Practice with the implementation of Delta Live tables
   description: "Exercise to show how to stream data with Spark Delta Live tables"
   ms.date: 7/25/2024

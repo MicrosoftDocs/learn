@@ -1,15 +1,5 @@
-Speech recognition is concerned with taking the spoken word and converting it into text, while speech synthesis is the process of converting text to audible speech. Both of these tasks are supported by Azure AI Speech.
+In this module, you learned about two key aspects of voice technology: speech recognition and synthesis. Speech recognition involves converting spoken words into data, often transcribed into text, using an acoustic model and a language model. This text can be used for various purposes like closed captions, transcripts, automated note dictation, and user input processing. Speech synthesis, on the other hand, is about vocalizing data, typically by converting text to speech. Synthesized speech can be used for generating spoken responses, creating voice menus, reading emails or texts aloud, and broadcasting announcements. You also learned about Microsoft Azure's AI Speech service, which provides speech recognition and synthesis capabilities through features such as Speech to Text and Text to Speech APIs.
+
+The main takeaways from this module are the functionalities of Azure AI Speech service. The Speech to Text API allows for real-time or batch transcription of audio into text, using a model based on the Universal Language Model trained by Microsoft. It can be used for real-time transcriptions during presentations or demos, or for batch transcriptions of stored audio files. The Text to Speech API converts text input into audible speech, which can be customized with different voices, languages, and regional pronunciationsAzure AI Speech is a versatile tool that can be accessed through various platforms such as Azure AI Speech Studio, Azure AI Studio, Command Line Interface (CLI), REST APIs, and Software Development Kits (SDKs).
 
 You can find out more about Azure AI Speech in the [service documentation](/azure/ai-services/speech-service?azure-portal=true).
-
-## Clean-up
-
-It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
-
-If you are continuing on to other modules in this learning path you can keep your resources for use in other labs.
-
-If you have finished learning, you can delete the resource group or individual resources from your Azure subscription:
-
-1. In the [Azure portal](https://portal.azure.com/), in the **Resource groups** page, open the resource group you specified when creating your resource.
-
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), clicking on the three dots to see more options, and clicking **Delete**.

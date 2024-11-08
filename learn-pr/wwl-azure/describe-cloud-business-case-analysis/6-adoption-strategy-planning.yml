@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-cloud-business-case-analysis.adoption-strategy-planning
 title: Describe cloud adoption strategy planning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe cloud adoption strategy planning
   description: "Describe cloud adoption strategy planning"
   ms.date: 09/25/2024

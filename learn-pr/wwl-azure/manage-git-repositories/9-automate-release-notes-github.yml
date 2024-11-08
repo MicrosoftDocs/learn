@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.automate-release-notes-github
 title: Automate release notes with GitHub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate release notes with GitHub
   description: "Automate release notes with GitHub"
   ms.date: 05/24/2024

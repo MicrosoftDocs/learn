@@ -2,6 +2,8 @@
 uid: learn.wwl.send-pass-data-output-from-pipeline.convert-pipeline-objects-other-forms-of-data-representation-powershell
 title: Convert pipeline objects to other forms of data representation in PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Convert pipeline objects to other forms of data representation in PowerShell
   description: "Convert pipeline objects to other forms of data representation in PowerShell"
   ms.date: 01/29/2024

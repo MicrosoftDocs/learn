@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-device-provisioning-lifecycle-tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine IoT Hub Device Provisioning Service lifecycle tasks
   description: "This module introduces you to device enrollment processes and tools, X.509 certificate enrollment and rolling certificates, the deprovisioning process, and support for multi-tenancy."
   ms.date: 01/08/2024
@@ -43,3 +45,4 @@ units:
 - learn.wwl.examine-device-provisioning-lifecycle-tasks.summary
 badge:
   uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+

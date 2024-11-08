@@ -2,6 +2,8 @@
 uid: learn.analyze-logs-with-kql.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "Analyzing log data in Log Analytics using KQL lets you gain crucial insights and manage your IT environment effectively and proactively."

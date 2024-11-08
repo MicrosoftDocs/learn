@@ -2,6 +2,8 @@
 uid: learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-predictive-analytics-azure-synapse-analytic
 title: Explore predictive analytics in Azure Synapse Analytic
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore predictive analytics in Azure Synapse Analytic
   description: "Explore predictive analytics in Azure Synapse Analytic"
   ms.date: 03/19/2024
