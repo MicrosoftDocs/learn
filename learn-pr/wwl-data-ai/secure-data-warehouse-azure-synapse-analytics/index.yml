@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure a data warehouse in Azure Synapse Analytics
   description: Secure a data warehouse in Azure Synapse Analytics
   ms.date: 07/04/2023
@@ -42,3 +44,4 @@ units:
 - learn.wwl.secure-data-warehouse-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.badge
+

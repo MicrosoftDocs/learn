@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-blob-storage-lifecycle.implement-policies
 title: Implement Blob storage lifecycle policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Blob storage lifecycle policies
   description: "Implement Blob storage lifecycle policies"
   ms.date: 07/12/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Read Text in images and documents with the Azure AI Vision Service
   description: Azure's AI Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure AI Vision's Image Analysis OCR feature.
   author: wwlpublish
@@ -43,3 +45,4 @@ units:
 - learn.wwl.read-text-images-documents-with-computer-vision-service.summary
 badge:
   uid: learn.wwl.read-text-images-documents-with-computer-vision-service.badge
+

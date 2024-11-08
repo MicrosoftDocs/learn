@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-oracle-application-azure-paas
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate Oracle-powered applications by using Azure PaaS database services
   description: Learn how to migrate Oracle-powered applications by using Azure PaaS database services.
   manager: akashdubey
@@ -46,3 +48,4 @@ units:
 - learn.azure.migrate-oracle-application-azure-paas.summary
 badge:
   uid: learn.azure.migrate-oracle-application-azure-paas.badge
+

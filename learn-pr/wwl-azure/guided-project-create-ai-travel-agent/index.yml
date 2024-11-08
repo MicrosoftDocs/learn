@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-create-ai-travel-agent
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided project - Create an AI travel agent
   description: Develop a proof of concept AI Travel assistant chatbot using the Semantic Kernel SDK.
   author: wwlpublish
@@ -48,3 +50,4 @@ units:
 - learn.wwl.guided-project-create-ai-travel-agent.summary
 badge:
   uid: learn.wwl.guided-project-create-ai-travel-agent.badge
+

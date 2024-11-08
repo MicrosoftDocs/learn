@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-performance-based-design.describe-normalization
 title: Describe normalization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe normalization
   description: "Describe normalization"
   ms.date: 04/28/2022

@@ -2,6 +2,8 @@
 uid: learn.azure.logic-apps-and-custom-connectors.4-access-an-api-with-a-logic-apps-custom-connector
 title: Access an API with an Azure Logic Apps custom connector
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Access an API with an Azure Logic Apps custom connector
   description: In this unit, you'll learn how to create a custom connector for Azure Logic Apps.
   ms.date: 05/02/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-access-an-api-with-a-logic-apps-custom-connector.md)]
+

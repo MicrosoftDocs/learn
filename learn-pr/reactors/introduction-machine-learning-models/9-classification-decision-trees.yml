@@ -2,6 +2,8 @@
 uid: learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
 title: 'Classification: Decision trees'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Classification: Decision trees'
   description: Learn how to perform classification with decision trees in machine learning models for data science.
   ms.date: 05/19/2020

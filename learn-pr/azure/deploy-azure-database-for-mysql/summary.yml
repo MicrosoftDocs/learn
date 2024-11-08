@@ -3,6 +3,8 @@ uid: learn.deploy-azure-database-for-mysql.summary
 title: Summary
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Provide a summary of the module content.
   author: shreyaaithal
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/summary.md)]
+

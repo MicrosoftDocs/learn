@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-overview
 title: What is Microsoft Entra ID?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Microsoft Entra ID?
   description: "What is Microsoft Entra ID?"
   ms.date: 07/03/2024

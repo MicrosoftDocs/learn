@@ -2,12 +2,15 @@
 uid: learn.store-app-data-with-azure-blob-storage.2-what-are-blobs
 title: What are blobs?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are blobs?
   description: What are blobs?
-  ms.date: 10/23/2023
+  ms.date: 10/29/2024
   author: pauljewellmsft
   ms.author: pauljewell
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-are-blobs.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-cost-optimization.design-for-rate-optimization
 title: Design for rate optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for rate optimization
   description: Learn how to increase efficiency without redesigning, renegotiating, or sacrificing requirements.
   ms.date: 10/23/2023

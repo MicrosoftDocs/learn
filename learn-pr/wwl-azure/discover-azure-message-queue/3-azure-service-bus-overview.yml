@@ -2,6 +2,8 @@
 uid: learn.wwl.discover-azure-message-queue.explore-azure-service-bus
 title: Explore Azure Service Bus
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Service Bus
   description: "Explore Azure Service Bus"
   ms.date: 07/18/2024

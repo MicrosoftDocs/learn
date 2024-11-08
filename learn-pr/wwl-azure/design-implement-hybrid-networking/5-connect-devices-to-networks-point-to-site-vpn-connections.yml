@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-hybrid-networking.connect-devices-to-networks-point-to-site-vpn-connections
 title: Connect devices to networks with Point-to-site VPN connections
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect devices to networks with Point-to-site VPN connections
   description: "Connect devices to networks with Point-to-site VPN connections"
   ms.date: 10/09/2023

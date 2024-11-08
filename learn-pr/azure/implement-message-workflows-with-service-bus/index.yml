@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.implement-message-workflows-with-service-bus
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement message-based communication workflows with Azure Service Bus
   description: Discover how to write code in .NET applications using Azure Service Bus for communications that can handle high demand, low bandwidth, and hardware failures.
   ms.date: 10/25/2023
@@ -41,3 +43,4 @@ units:
 - learn.implement-message-workflows-with-service-bus.8-summary
 badge:
   uid: learn.implement-message-workflows-with-service-bus.badge
+

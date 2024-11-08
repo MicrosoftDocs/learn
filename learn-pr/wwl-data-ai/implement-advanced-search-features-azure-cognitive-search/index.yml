@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement advanced search features in Azure AI Search
   description: Use more advanced features of Azure AI Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.service: azure-ai-search
   ms.topic: module-standard-task-based
   ms.collection:
@@ -48,3 +50,4 @@ units:
 - learn.wwl.implement-advanced-search-features-azure-cognitive-search.summary
 badge:
   uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.badge
+

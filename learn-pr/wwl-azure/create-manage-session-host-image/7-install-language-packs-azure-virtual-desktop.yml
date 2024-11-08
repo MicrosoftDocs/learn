@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-session-host-image.install-language-packs-azure-virtual-desktop
 title: Install language packs in Azure Virtual Desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Install language packs in Azure Virtual Desktop
   description: "Install language packs in Azure Virtual Desktop"
   ms.date: 08/21/2024

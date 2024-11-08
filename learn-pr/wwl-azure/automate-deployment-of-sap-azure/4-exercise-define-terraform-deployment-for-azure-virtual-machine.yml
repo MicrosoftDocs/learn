@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-deployment-of-sap-azure.exercise-terraform-deployment-for-infrastructure
 title: Exercise - Define a Terraform deployment for an Azure VM
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Define a Terraform deployment for an Azure VM
   description: "Exercise - Define a Terraform deployment for an Azure VM"
   ms.date: 08/19/2024

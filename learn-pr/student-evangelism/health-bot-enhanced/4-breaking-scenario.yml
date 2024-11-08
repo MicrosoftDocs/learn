@@ -2,6 +2,8 @@
 uid: learn.health-bot-enhanced.4-breaking-scenario
 title: Breaking scenario
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Breaking scenario
   description: In this unit, you'll learn how to build a bot by using a breaking scenario.
   author: shreyan1999

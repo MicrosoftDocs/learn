@@ -2,6 +2,8 @@
 uid: learn.monitor-authentication-methods.exercise-create-azure-ad-workbook
 title: Exercise - Create a Microsoft Entra workbook
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create a Microsoft Entra workbook
   description: Exercise - Create a Microsoft Entra workbook
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/exercise-create-azure-ad-workbook.md)]
+

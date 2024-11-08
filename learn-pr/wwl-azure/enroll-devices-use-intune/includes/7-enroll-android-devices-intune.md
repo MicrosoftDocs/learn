@@ -18,4 +18,4 @@ Android Enterprise management makes it easier to define the scope of management 
 
 To set up Android Enterprise, you must connect your Intune tenant account to your Managed Google Play account and set up an enrollment profile based on what method of management is being used.
 
-For more information, refer to [Enroll Android devices](https://aka.ms/AA6du6k).
+For more information, refer to [Enroll Android devices](/mem/intune/enrollment/android-kiosk-enroll).

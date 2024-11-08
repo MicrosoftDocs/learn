@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-firewall-manager.3-how-azure-firewall-manager-works  
 title: How Azure Firewall Manager works  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Firewall Manager works
   description: How Azure Firewall Manager works
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-firewall-manager-works.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-blob-storage-lifecycle.rehydrate-blob-data-from-archive-tier
 title: Rehydrate blob data from the archive tier
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Rehydrate blob data from the archive tier
   description: "Rehydrate blob data from the archive tier"
   ms.date: 07/12/2024

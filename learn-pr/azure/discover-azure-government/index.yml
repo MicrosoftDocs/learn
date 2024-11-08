@@ -2,6 +2,8 @@
 uid: learn.azure.discover-azure-government
 title: Discover the potential of Azure for government
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover the potential of Azure for government
   description: Discussion of the benefits of the public cloud for public sector agencies, with special attention to how Azure can be helpful to them. 
   ms.date: 07/19/2024
@@ -42,3 +44,4 @@ units:
 - learn.azure.discover-azure-government.6-summary
 badge: 
   uid: learn.azure.discover-azure-government.badge
+

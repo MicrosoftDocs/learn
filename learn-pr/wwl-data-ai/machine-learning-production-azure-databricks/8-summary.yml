@@ -2,6 +2,8 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/17/2023

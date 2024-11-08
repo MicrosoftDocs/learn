@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-lighthouse.what-is-azure-lighthouse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Lighthouse?
   description: Obtain a clear understanding of what Azure Lighthouse offers and the benefits it can bring.
   ms.date: 07/24/2024
@@ -11,3 +13,4 @@ title: What is Azure Lighthouse?
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-lighthouse.md)]
+

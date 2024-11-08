@@ -2,6 +2,8 @@
 uid: learn.health-bot-channelized-bot.4-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Four multiple-choice questions.
   ms.date: 03/22/2023
@@ -52,3 +54,4 @@ quiz:
         - content: "Delete app"
           isCorrect: true
           explanation: Correct. This option is available in the main section of the app page. 
+

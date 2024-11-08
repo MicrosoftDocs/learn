@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.exercise-deploy-azure-databricks-model
 title: Exercise - Deploy an Azure Databricks model in Azure Machine Learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy an Azure Databricks model in Azure Machine Learning
   description: "Exercise - Deploy an Azure Databricks model in Azure Machine Learning"
   ms.date: 03/22/2023

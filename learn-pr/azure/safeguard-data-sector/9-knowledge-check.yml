@@ -2,6 +2,8 @@
 uid: learn.azure.safeguard-data-sector.9-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: A knowledge check for Safeguard data with public sector with Azure.
   ms.date: 07/25/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "The CLOUD Act provides the US government with broader surveillance powers."
       isCorrect: false
       explanation: "Incorrect. The CLOUD Act isn't a mechanism for greater government surveillance."
+

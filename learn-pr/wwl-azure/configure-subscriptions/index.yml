@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure subscriptions
   description: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
   ms.date: 10/27/2023
@@ -45,3 +47,4 @@ units:
 - learn.wwl.configure-subscriptions.summary-resources
 badge:
   uid: learn.wwl.configure-subscriptions.badge
+

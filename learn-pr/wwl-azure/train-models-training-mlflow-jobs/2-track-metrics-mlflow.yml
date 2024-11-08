@@ -2,6 +2,8 @@
 uid: learn.wwl.train-models-training-mlflow-jobs.track-metrics-mlflow
 title: Track metrics with MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Track metrics with MLflow
   description: Learn how to track metrics with MLflow in scripts in Azure Machine Learning.
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/2-track-metrics-mlflow.md)]
+

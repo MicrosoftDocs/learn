@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-for-azure-stack-hub-deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare for Azure Stack Hub deployment
   description: Prepare for Azure Stack Hub deployment
   ms.date: 06/02/2023
@@ -47,3 +49,4 @@ units:
 - learn.wwl.prepare-for-azure-stack-hub-deployment.summary
 badge:
   uid: learn.wwl.prepare-for-azure-stack-hub-deployment.badge
+

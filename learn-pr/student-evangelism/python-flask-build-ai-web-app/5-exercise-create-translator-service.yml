@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.python-flask-build-ai-web-app.5-exercise-translate-text
 title: Exercise - Create Translator service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Translator service
   description: Create and configure your Translator service.
   ms.date: 04/08/2022
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-translator-service.md)]
+

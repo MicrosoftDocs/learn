@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.export-data-with-azure-import-export
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Export large amounts of data from Azure by using Azure Import/Export"
   description: "Learn how and when to use Azure Import/Export to copy large amounts of data from Azure"
   ms.date: 03/08/2023
@@ -33,3 +35,4 @@ units:
 - learn.azure.export-data-with-azure-import-export.summary
 badge:
   uid: learn.azure.export-data-with-azure-import-export.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.log-analytics-workspace-collect-logs-data
 title: Log Analytics workspace
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Log Analytics workspace
   description: "Log Analytics workspace"
   ms.date: 10/16/2024

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure HPC works
   description: In this unit, you learn about components of Azure HPC and the orchestration of components of Azure HPC.
   ms.date: 05/22/2023
@@ -36,3 +38,4 @@ quiz:
     - content: "Check that this VM is supported in your preferred region of deployment."
       isCorrect: true
       explanation: "HB-series VMs aren't supported in all Azure regions."
+

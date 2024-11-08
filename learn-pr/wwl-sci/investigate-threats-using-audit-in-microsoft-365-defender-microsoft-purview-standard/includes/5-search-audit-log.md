@@ -148,4 +148,4 @@ Organizations should keep in mind the following considerations when searching th
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

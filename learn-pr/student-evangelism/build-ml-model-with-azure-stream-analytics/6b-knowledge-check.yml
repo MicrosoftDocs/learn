@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6b-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge
   ms.date: 06/04/2022
@@ -81,3 +83,4 @@ quiz:
     - content: macOS and Linux
       isCorrect: false
       explanation: Incorrect. Power BI Desktop runs only on Windows, but you can view Power BI reports on any platform.
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.secure-azure-database-for-postgresql.describe-security
 title: Describe Azure Database for PostgreSQL security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Database for PostgreSQL security
   description: "Describe Azure Database for PostgreSQL security."
   ms.date: 05/10/2024

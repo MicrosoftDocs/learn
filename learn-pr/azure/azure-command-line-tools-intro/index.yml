@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-command-line-tools-intro
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Choose the best Azure command-line tools for managing and provisioning your cloud infrastructure
   description: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command-line tools best meet your organization's needs.
@@ -52,3 +54,4 @@ units:
 - learn.azure-command-line-tools-intro.summary
 badge:
   uid: learn.azure-command-line-tools-intro.badge
+

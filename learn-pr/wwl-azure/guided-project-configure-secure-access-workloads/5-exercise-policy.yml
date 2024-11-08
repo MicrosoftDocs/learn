@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise4
 title: Exercise - Operationalize and enforce policy to filter traffic
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Operationalize and enforce policy to filter traffic
   description: "Exercise - Operationalize and enforce policy to filter traffic"
   ms.date: 03/08/2024

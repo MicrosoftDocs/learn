@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Create a single pipeline to deploy infrastructure, applications, and data.
@@ -66,3 +68,4 @@ units:
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.summary
 badge:
   uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.badge
+

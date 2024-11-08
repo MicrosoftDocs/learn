@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe high availability and disaster recovery strategies
   description: Describe high availability and disaster recovery strategies
   ms.date: 06/21/2023
@@ -43,3 +45,4 @@ units:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies.summary
 badge:
   uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.badge
+

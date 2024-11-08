@@ -2,6 +2,8 @@
 uid: learn.azure.use-slurm-hpc-azure-cyclecloud.troubleshooting-procedures
 title: Conduct common troubleshooting procedures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Conduct common troubleshooting procedures
   description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
   ms.date: 08/18/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-troubleshooting-procedures.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate strategies for migrating to Azure SQL
   description: "Evaluate strategies for migrating to Azure SQL"
   ms.date: 04/15/2022
@@ -43,3 +45,4 @@ units:
 - learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.summary
 badge:
   uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.badge
+

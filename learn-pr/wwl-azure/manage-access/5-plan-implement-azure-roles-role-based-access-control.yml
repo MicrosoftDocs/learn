@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access.plan-implement-azure-roles-rbac-for-window-virtual-desktop
 title: Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop
   description: "Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop"
   ms.date: 08/20/2024

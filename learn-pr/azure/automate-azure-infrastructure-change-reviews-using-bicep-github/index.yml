@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: Build an automated pull request workflow for Bicep code. Lint code automatically during every pull request, and deploy temporary ephemeral environments by using GitHub and GitHub Actions.
@@ -63,3 +65,4 @@ units:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.summary
 badge:
   uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.badge
+

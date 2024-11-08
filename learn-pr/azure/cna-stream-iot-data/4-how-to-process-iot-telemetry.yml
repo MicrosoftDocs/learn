@@ -2,6 +2,8 @@
 uid: learn.azure.cna-stream-iot-data.4-how-to-process-iot-telemetry
 title: Describe how to process IoT telemetry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe how to process IoT telemetry
   description: Description of how to process IoT telemetry
   ms.date: 04/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-to-process-iot-telemetry.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-pipeline-agents-pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure Pipeline agents and pools
   description: "Manage Azure Pipeline agents and pools"
   ms.date: 05/07/2024

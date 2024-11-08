@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-open-source-database-migration-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to open-source database migration on Azure
   description: "Introduction to open-source database migration on Azure"
   ms.date: 11/07/2022

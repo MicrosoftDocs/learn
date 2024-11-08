@@ -2,6 +2,8 @@
 uid: learn.wwl.backup-restore-databases.backup-restore-database-using-azure-sql-database
 title: Back up and restore a database using Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Back up and restore a database using Azure SQL Database
   description: "Back up and restore a database using Azure SQL Database"
   ms.date: 07/25/2023

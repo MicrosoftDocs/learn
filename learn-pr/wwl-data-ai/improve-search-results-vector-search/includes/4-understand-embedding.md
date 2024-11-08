@@ -1,5 +1,5 @@
 
-An embedding is type of data representation that is used by machine learning models. An embedding represents the semantic meaning of a piece of text. You can visualize an embedding as an array of numbers, and the numerical distance between two embeddings represents their semantic similarity. For example, if two texts are similar, then their representations should also be similar.
+An embedding is a type of data representation that is used by machine learning models. An embedding represents the semantic meaning of a piece of text. You can visualize an embedding as an array of numbers, and the numerical distance between two embeddings represents their semantic similarity. For example, if two texts are similar, then their representations should also be similar.
 
 ## Embedding models
 
@@ -17,4 +17,4 @@ The result will be any documents matching the query that are contained in your s
 
 In this embedding space, similar items are located close together, and dissimilar items are located farther apart.
 
-For example, documents that talk about hotels with a water park would be close together in the embedding space. whereas, hotels without this facility would be farther away whilst still being in the neighborhood for hotels. Dissimilar concepts such as restaurants  would be farther away still. In practice, embedding spaces are abstract and don't have well-defined meanings comprehensible be people, but the core idea stays the same.
+For example, documents that talk about hotels with a water park would be close together in the embedding space, whereas, hotels without this facility would be farther away whilst still being in the neighborhood for hotels. Dissimilar concepts such as restaurants  would be farther away still. In practice, embedding spaces are abstract and don't have well-defined meanings comprehensible be people, but the core idea stays the same.

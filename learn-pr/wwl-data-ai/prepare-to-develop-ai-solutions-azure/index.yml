@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-to-develop-ai-solutions-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare to develop AI solutions on Azure
   description: Prepare to develop AI solutions on Azure
   author: wwlpublish
@@ -50,3 +52,4 @@ units:
 - learn.wwl.prepare-to-develop-ai-solutions-azure.summary
 badge:
   uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
+

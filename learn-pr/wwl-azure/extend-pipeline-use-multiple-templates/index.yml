@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.extend-pipeline-use-multiple-templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Extend a pipeline to use multiple templates
   description: Fundamental concepts and best practices for creating nested templates.
   ms.date: 01/18/2024
@@ -62,3 +64,4 @@ units:
 - learn.wwl.extend-pipeline-use-multiple-templates.summary
 badge:
   uid: learn.wwl.extend-pipeline-use-multiple-templates.badge
+

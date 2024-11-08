@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-generative-ai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundamentals of Generative AI
   description: Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot.
   author: sherzyang
@@ -47,3 +49,4 @@ units:
 - learn.wwl.fundamentals-generative-ai.summary
 badge:
   uid: learn.wwl.fundamentals-generative-ai.badge
+

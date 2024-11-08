@@ -31,6 +31,8 @@ subjects:
 modules:
 - learn.wwl.analyze-images
 - learn.wwl.custom-model-ai-vision-image-classification
+- learn.wwl.classify-images
+- learn.wwl.detect-objects-images
 - learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video

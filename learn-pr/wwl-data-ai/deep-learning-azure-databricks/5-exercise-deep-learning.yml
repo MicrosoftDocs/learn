@@ -2,6 +2,8 @@
 uid: learn.wwl.deep-learning-azure-databricks.exercise-deep-learning
 title: Exercise - Train deep learning models on Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train deep learning models on Azure Databricks
   description: Exercise - Train deep learning models on Azure Databricks
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-deep-learning.md)]
+

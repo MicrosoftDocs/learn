@@ -2,15 +2,14 @@
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.exercise-process-change-feed-events-using-sdk
 title: 'Exercise: Process change feed events using the Azure Cosmos DB for NoSQL SDK'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Process change feed events using the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Process change feed events using the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/18/2022
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labId: 107583
-labModal: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-process-change-feed-events-use-sdk.md)]

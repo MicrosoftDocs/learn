@@ -8,4 +8,4 @@ Your IT department is adding several web servers to distribute the load on the m
 
 ### Answer the following questions
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for each of the following questions. 

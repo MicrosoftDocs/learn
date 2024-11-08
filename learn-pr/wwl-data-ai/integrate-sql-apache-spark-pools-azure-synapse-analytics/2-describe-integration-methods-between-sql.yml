@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.describe-integration-methods-between-sql
 title: Describe the integration methods between SQL and spark pools in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the integration methods between SQL and spark pools in Azure Synapse Analytics
   description: "Describe the integration methods between SQL and spark pools in Azure Synapse Analytics"
   ms.date: 06/08/2022
@@ -16,3 +18,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-integration-methods-between-sql.md)]
+
