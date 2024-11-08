@@ -26,5 +26,6 @@ modules:
 - learn.wwl.use-apache-spark-work-files-lakehouse
 - learn.wwl.implement-lakehouse-microsoft-fabric
 - learn.wwl.explore-real-time-analytics-microsoft-fabric
+
 trophy:
   uid: learn.wwl.data-engineer-microsoft-fabric.trophy
