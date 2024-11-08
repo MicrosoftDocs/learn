@@ -2,6 +2,8 @@
 uid: learn.azure.manage-changes-bicep-code-git.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to use Git version control with your Bicep files and infrastructure as code.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

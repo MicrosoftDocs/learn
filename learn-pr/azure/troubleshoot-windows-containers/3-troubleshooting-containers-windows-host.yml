@@ -2,6 +2,8 @@
 uid: learn.azure.troubleshoot-windows-containers.troubleshooting-windows-host
 title: Troubleshooting Windows containers on Windows hosts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshooting Windows containers on Windows hosts
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 08/13/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-troubleshooting-containers-windows-host.md)]
+

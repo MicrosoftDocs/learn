@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-updates.view-update-assessments
 title: View update assessments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: View update assessments
   description: "View update assessments"
   ms.date: 09/24/2020

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 10/27/2022
@@ -11,3 +13,4 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/10-summary.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-aspnet-app-azure-app-service.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 01/02/2024

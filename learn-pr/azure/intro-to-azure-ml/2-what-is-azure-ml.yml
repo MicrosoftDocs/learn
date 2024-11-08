@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-ml.what-is-azure-ml
 title: What is Azure Machine Learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Machine Learning
   description: What is Azure Machine Learning
   ms.date: 07/20/2024

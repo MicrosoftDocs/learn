@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about Azure Backup, and how you can use the Azure portal to back up and restore a virtual machine.
   ms.date: 09/05/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.exercise-deploy-azure-sql-database
 title: 'Exercise: Deploy an Azure SQL Database'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Deploy an Azure SQL Database'
   description: "Exercise: Deploy an Azure SQL Database"
   ms.date: 05/27/2022

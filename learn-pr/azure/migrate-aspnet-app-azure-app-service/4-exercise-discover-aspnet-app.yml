@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-aspnet-app-azure-app-service.exercise-discover
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Discover your ASP.NET web application
   description: Discover your ASP.NET web application to be containerized
   ms.date: 01/02/2024

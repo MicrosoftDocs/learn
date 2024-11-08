@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary for building a basic deployment pipeline for Bicep by using Azure Pipelines.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

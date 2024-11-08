@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the Azure Cosmos DB for NoSQL SDK
   description: "Learn about the Microsoft.Azure.Cosmos library, and then download the library to use in a .NET application."
   ms.date: 03/28/2024

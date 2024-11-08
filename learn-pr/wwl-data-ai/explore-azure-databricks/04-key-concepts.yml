@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-databricks.understand-key-concepts
 title: Understand key concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand key concepts
   description: "Understand key concepts"
   ms.date: 08/05/2024

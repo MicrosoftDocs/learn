@@ -2,6 +2,8 @@
 uid: learn.oxford.intro-azure-sphere.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this section, we summarize the key ideas in the module and emphasize the ideas to ensure learning retention
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/6-summary.md)]
+

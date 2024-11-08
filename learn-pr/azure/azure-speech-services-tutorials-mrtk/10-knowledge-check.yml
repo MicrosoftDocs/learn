@@ -2,6 +2,8 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.10-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Three multiple-choice questions
   author: marlenaklein-msft
@@ -11,7 +13,7 @@ metadata:
   ms.collection:
     - ce-skilling-ai-copilot
 durationInMinutes: 3
-content: Choose the best response for each question. Then select Check your answers.
+content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
@@ -49,3 +51,4 @@ quiz:
           isCorrect: false
           explanation: "The process of drawing meaning out of written communication."
    
+

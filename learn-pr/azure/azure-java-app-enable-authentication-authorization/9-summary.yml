@@ -2,6 +2,8 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
+

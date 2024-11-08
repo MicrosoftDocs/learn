@@ -30,4 +30,4 @@ You discovered how role-based access control and conditional access help to supp
 
 ## Learn more with optional hands-on exercises
 
-- Learn how to [add and delete users in Microsoft Entra ID](/training/modules/create-users-and-groups-in-azure-active-directory/).
+- Learn how to [add and delete users in Microsoft Entra ID](/training/modules/manage-users-and-groups-in-aad/).

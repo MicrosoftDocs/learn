@@ -2,6 +2,8 @@
 uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.deploy
 title: Deploy an Event Hubs resource provider
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy an Event Hubs resource provider
   description: "Deploy an Event Hubs resource provider"
   ms.date: 03/29/2022

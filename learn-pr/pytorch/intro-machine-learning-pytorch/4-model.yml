@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-machine-learning.model
 title: Building the model layers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Building the model layers
   description: Neural networks are composed of layers/modules that perform operations on data. The torch.nn namespace provides all the building blocks you need to build your own neural network.
   author: cassiebreviu
@@ -27,3 +29,4 @@ quiz:
         - content: "False"
           isCorrect: false
           explanation: "Incorrect, the base class for all neural network modules in PyTorch is `torch.nn.Module`."
+

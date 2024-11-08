@@ -2,6 +2,8 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.preview-approve-deployment
 title: Preview and approve your deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Preview and approve your deployment
   description: Learn about previewing the changes that your Bicep code will make to your Azure environment by using the what-if operation in a deployment pipeline.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-preview-approve-deployment.md)]
+

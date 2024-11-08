@@ -2,6 +2,8 @@
 uid: learn.wwl.custom-text-classification.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -49,3 +51,4 @@ quiz:
     - content: "Call the URL provided in the header of the request response."
       isCorrect: true
       explanation: "That answer's correct. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
+

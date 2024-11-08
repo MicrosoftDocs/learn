@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-message-processing-tasks.exercise-create-azure-stream-analytics-job
 title: Exercise - Create an Azure Stream Analytics Job
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Stream Analytics Job
   description: "Exercise - Create an Azure Stream Analytics Job"
   ms.date: 10/25/2023

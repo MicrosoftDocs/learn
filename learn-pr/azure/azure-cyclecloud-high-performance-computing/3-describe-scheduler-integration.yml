@@ -2,6 +2,8 @@
 uid: learn.azure.azure-cyclecloud-high-performance-computing.describe-scheduler-integration
 title: Describe Azure CycleCloud scheduler integration and autoscaling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Azure CycleCloud scheduler integration and autoscaling
   description: Learn about Azure CycleCloud scheduler integration and autoscaling.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-describe-scheduler-integration.md)]
+

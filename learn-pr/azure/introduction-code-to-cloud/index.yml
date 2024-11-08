@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-code-to-cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Code to Cloud            
   description: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
   ms.date: 09/04/2023

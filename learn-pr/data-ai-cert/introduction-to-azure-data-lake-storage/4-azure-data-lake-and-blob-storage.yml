@@ -2,6 +2,8 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-and-blob-storage
 title: Compare Azure Data Lake Store to Azure Blob storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Compare Azure Data Lake Store to Azure Blob storage
   description: "Compare Azure Data Lake Store to Azure Blob storage"
   ms.date: 07/18/2023

@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn more about what containers and microservices are, why you'd want to use them, and how to build your first microservices in .NET with containers and Docker.
-  ms.date: 01/22/2024
+  ms.date: 10/23/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

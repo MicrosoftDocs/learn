@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.configure-alert-notifications
 title: Configure alert notifications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure alert notifications
   description: "Configure alert notifications"
   ms.date: 11/28/2023

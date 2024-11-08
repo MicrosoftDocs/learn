@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.exercise-enable-advanced-data-security-classification
 title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
   description: "Exercise: Enable Microsoft Defender for SQL and Data Classification"
   ms.date: 09/02/2022

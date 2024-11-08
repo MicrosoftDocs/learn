@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-iot-hub-message-routing.examine-common-message-format
 title: Examine the common set of message features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the common set of message features
   description: "Examine the common set of message features"
   ms.date: 02/06/2024

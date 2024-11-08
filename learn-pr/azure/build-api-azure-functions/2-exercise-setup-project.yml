@@ -2,6 +2,8 @@
 uid: learn.azure.build-api-azure-functions.2-exercise-setup-project
 title: Exercise - Set up the project
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up the project
   description: Exercise - Set up the project
   ms.date: 02/27/2024
@@ -17,3 +19,4 @@ azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/2-exercise-setup-project.md)]
+

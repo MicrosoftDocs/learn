@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-policy.implement-azure-policies
 title: Implement Azure policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure policies
   description: "Implement Azure policies"
   ms.date: 05/20/2024

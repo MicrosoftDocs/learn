@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-purpose-of-azure-arc
 title: Describe the purpose of Azure Arc
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the purpose of Azure Arc
   description: "Describe the purpose of Azure Arc"
   ms.date: 09/19/2024

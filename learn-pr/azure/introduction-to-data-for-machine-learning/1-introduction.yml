@@ -2,6 +2,8 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to data for machine learning module.
   ms.date: 10/10/2024

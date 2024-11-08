@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.explore-azure-policy
 title: Explore Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Policy
   description: "Explore Azure Policy"
   ms.date: 01/11/2024

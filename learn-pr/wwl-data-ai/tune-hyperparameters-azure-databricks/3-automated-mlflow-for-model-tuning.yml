@@ -2,6 +2,8 @@
 uid: learn.wwl.tune-hyperparameters-azure-databricks.automated-mlflow-for-model-tuning
 title: Automated MLflow for model tuning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automated MLflow for model tuning
   description: "Automated MLflow for model tuning"
   ms.date: 03/27/2023

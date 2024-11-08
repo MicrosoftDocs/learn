@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-of-azure-policy
 title: Describe the purpose of Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the purpose of Azure Policy
   description: "Describe the purpose of Azure Policy"
   ms.date: 09/24/2024

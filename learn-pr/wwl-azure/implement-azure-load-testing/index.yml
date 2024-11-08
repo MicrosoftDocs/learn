@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-load-testing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Load Testing
   description: "Learn how to optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to automate load testing with GitHub Actions to ensure consistent application performance and scalability."
-  ms.date: 05/13/2024
+  ms.date: 10/29/2024
   author: wwlpublish
-  ms.author: jileary
+  ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A

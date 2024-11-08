@@ -2,6 +2,8 @@
 uid: learn.wwl.build-language-understanding-model.define-intents-utterances-entities
 title: Define intents, utterances, and entities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define intents, utterances, and entities
   description: Define intents, utterances, and entities
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-define-intents-utterances-entities.md)]
+

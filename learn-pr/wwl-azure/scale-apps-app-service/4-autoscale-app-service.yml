@@ -2,6 +2,8 @@
 uid: learn.wwl.scale-apps-app-service.enable-autoscale
 title: Enable autoscale in App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable autoscale in App Service
   description: "Enable autoscale in App Service"
   ms.date: 06/10/2024

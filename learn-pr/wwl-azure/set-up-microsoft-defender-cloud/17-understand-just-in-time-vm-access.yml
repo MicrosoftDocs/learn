@@ -2,6 +2,8 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.understand-just-in-time-vm-access
 title: Understand just-in-time VM access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand just-in-time VM access
   description: "Understand just-in-time VM access"
   ms.date: 04/24/2024

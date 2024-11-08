@@ -2,6 +2,8 @@
 uid: learn.introduction-azure-firewall.5-when-to-use-azure-firewall-premium
 title: When to use Azure Firewall Premium
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure Firewall Premium
   description: Evaluate whether Azure Firewall Premium is the right solution for your company.
   ms.date: 11/06/2023

@@ -2,6 +2,8 @@
 uid: learn.build-dotnet-app-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   ms.custom:
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

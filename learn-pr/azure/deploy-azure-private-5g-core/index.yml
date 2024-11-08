@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.deploy-azure-private-5g-core
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy an Azure Private 5G Core service
   description: "Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site."
   ms.date: 06/24/2024

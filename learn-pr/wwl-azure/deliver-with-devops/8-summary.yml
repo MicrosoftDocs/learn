@@ -2,6 +2,8 @@
 uid: learn.wwl.deliver-with-devops.summary
 title: 'Summary'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Summary'
   description: "This module introduced continuous integration (CI) and continuous delivery (CD) concepts in DevOps, focusing on automating software release generation and deployment."
   ms.date: 02/06/2024

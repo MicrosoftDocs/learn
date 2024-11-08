@@ -2,6 +2,8 @@
 uid: learn.wwl.evaluate-models-azure-ai-studio.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Explore model evaluations for custom copilots in the Azure AI Studio."
   ms.date: 07/24/2024

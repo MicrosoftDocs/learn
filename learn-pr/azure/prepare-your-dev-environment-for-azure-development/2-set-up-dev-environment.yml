@@ -2,6 +2,8 @@
 uid: learn.prepare-azure-dev-environment.2-set-up-dev-environment
 title: Set up your development environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up your development environment
   description: Set up your development environment
   ms.date: 07/03/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-set-up-dev-environment.md)]
+

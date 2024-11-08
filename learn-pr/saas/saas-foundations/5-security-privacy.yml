@@ -2,6 +2,8 @@
 uid: learn.saas-foundations.security-and-privacy
 title: SaaS compliance and security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: SaaS compliance and security
   description: Learn about security considerations and region-based compliance regulations for SaaS providers.
   ms.date: 05/28/2024

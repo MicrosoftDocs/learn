@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.use-hdinsight-spark-kafka
 title: Use HDInsight Spark and Kafka
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use HDInsight Spark and Kafka
   description: "Use HDInsight Spark and Kafka"
   ms.date: 04/07/2024

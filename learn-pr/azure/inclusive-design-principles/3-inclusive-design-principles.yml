@@ -2,6 +2,8 @@
 uid: learn.azure.inclusive-design-principles.3-inclusive-design-principles
 title: Explain inclusive design principles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain inclusive design principles
   description: Describe the fundamental principles of inclusive product design
   ms.date: 05/23/2024

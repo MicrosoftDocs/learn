@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Process bulk data in Azure Cosmos DB for NoSQL
   description: "Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK."
   ms.date: 03/20/2024

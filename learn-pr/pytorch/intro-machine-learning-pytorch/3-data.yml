@@ -2,6 +2,8 @@
 uid: learn.pytorch.intro-machine-learning.data
 title: Loading and normalizing datasets
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Loading and normalizing datasets
   description: Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity.
   author: cassiebreviu
@@ -46,3 +48,4 @@ quiz:
           isCorrect: false
           explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training."
           
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-group-policy-objects.implement-gpo-scope-inheritance
 title: Implement GPO scope and inheritance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement GPO scope and inheritance
   description: "Implement GPO scope and inheritance"
   ms.date: 04/17/2024

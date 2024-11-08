@@ -212,7 +212,9 @@ az apic metadata list -g <resource-group-name> -n <api-center-name>
 
 The Contoso organization would like to recommend technical conferences for their engineering teams as part of their internal skilling drive. We'll add a Conference API with speakers, sessions, and topics.
 
-Conference API URL: <https://conferenceapi.azurewebsites.net/>
+Conference API URL: <https://bigconference.azurewebsites.net/>
+
+For the following steps, you can copy the OpenAPI definition from the website above and save it as a JSON file on your local machine. Or, substitute a different API definition when adding an API to the inventory.
 
 ::: zone pivot="azure-portal"
 

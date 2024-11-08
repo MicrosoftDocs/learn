@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-scaling-azure-kubernetes-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure scaling in Azure Kubernetes Service
   description: This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
   ms.date: 10/25/2023
@@ -38,3 +40,4 @@ units:
 - learn.wwl.configure-scaling-azure-kubernetes-service.summary
 badge:
   uid: learn.wwl.configure-scaling-azure-kubernetes-service.badge
+

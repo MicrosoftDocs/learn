@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-ai-studio.exercise-explore-ai-studio
 title: Exercise - Explore Azure AI Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore Azure AI Studio
   description: Explore Azure AI Studio for AI development on the Azure cloud platform.
   author: wwlpublish
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-explore-ai-studio.md)]
+

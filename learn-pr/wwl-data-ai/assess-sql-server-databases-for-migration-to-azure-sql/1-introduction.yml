@@ -2,6 +2,8 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to assessing SQL Server databases for migration."
   ms.date: 05/23/2023
