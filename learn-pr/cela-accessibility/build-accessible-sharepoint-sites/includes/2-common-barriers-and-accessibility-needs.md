@@ -28,7 +28,7 @@ Some considerations for browsing a SharePoint site for people with vision disabi
 
 Some considerations for browsing a SharePoint site for people who are Deaf or Hard of Hearing are:
 
-- **Captions and text transcripts for videos**: Adding closed captions makes video content accessible to a larger audience. This inlcudes people with hearing disabilities, those who speak languages other than the one in your video, or those playing your video in a noisy environment. Transcription and Closed Captions are automatically generated for video files uploaded to SharePoint.
+- **Captions and text transcripts for videos**: Adding closed captions makes video content accessible to a larger audience. This includes people with hearing disabilities, those who speak languages other than the one in your video, or those playing your video in a noisy environment. Transcription and Closed Captions are automatically generated for video files uploaded to SharePoint.
 - **Text transcripts for audio**: By using the transcribed feature in Microsoft Office, you convert speech to a text transcript with each speaker individually separated.
 - **Text or visual alternatives to sounds**: Users can get visual cues instead of sound alerts in Windows by changing their settings.
 - **Language that provides alternatives to "hearing" or "listening to" an element**: Rather than writing *Listen to the audio*, use clear and inclusive language. You can say instead, *Listen to the audio, or read the text transcript for it.*
