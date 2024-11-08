@@ -11,15 +11,14 @@ metadata:
   ms.author: robmcm
   ms.topic: module-standard-task-based
   ms.service: azure-active-directory
-### NOTE: Temporarily hiding this module while SFI issues are addressed.
-  hidden: true
+hidden: true
 title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
 summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
 abstract: |
   In this module, you'll:
   - Describe the characteristics and functionality of Microsoft Entra ID
   - Implement Microsoft Entra authentication for cloud-native applications
-prerequisites: | 
+prerequisites: |
   Before working on this module, it's helpful but not required that you have:
   - A basic understanding of cloud computing
   - Basic familiarity with Azure
@@ -50,4 +49,3 @@ units:
 - learn.azure.cna-set-up-apps-use-scale.9-summary
 badge:
   uid: learn.azure.cna-set-up-apps-use-scale.badge
-
