@@ -11,11 +11,11 @@ In Visual Studio Code, create a new project:
 
 1. Select the **Explorer** view:
 
-    :::image type="content" source="../media/vsc-select-explorer.png" alt-text="Selecting the Explorer view":::
+    :::image type="content" source="../media/vs-code-select-explorer.png" alt-text="Screenshot of selecting the Explorer view":::
 
 1. Select the **Create .NET Project** button. Alternatively, you can bring up the **Command Palette** using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then type "`.NET`" to find and select the **.NET: New Project** command.
 
-    :::image type="content" source="../media/vsc-select-create-dotnet-project.png" alt-text="Selecting Create .NET Project":::
+    :::image type="content" source="../media/vs-code-select-create-dotnet-project.png" alt-text="Screenshot of selecting Create .NET Project":::
 
 1. Select the **ASP.NET Core Empty** project template from the list.
 1. In the **Project Location** dialog, create a folder named `MyWebApp` to contain the project.
@@ -26,7 +26,7 @@ In Visual Studio Code, create a new project:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-:::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer":::
 
 ::: zone-end
 
@@ -62,7 +62,7 @@ From a terminal or the command line, create a new project:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-:::image type="content" source="../media/vsc-explorer-project-files.png" alt-text="The project files in the Visual Studio Code Explorer":::
+:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer":::
 
 ::: zone-end
 
@@ -97,7 +97,31 @@ The *Properties/launchSettings.json* file contains configuration data for how th
 
 The *launchSettings.json* file contains the following configuration: 
 
-[!code-json[](../code/mywebapp/properties/launchSettings.json)]
+```json
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5218",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7140;http://localhost:5218",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
 
 ### The *Program.cs* file
 
@@ -110,15 +134,27 @@ The *Program.cs* file serves as the entry point for an ASP.NET Core app and has 
 
 In the new empty ASP.NET Core project you created, the *Program.cs* file contains the following minimal code:
 
-[!code-csharp[](../code/mywebapp/program.cs?name=snippet_all)]
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+```
 
 The following lines of code in this file create a `WebApplicationBuilder` with preconfigured defaults, and builds the app:
 
-[!code-csharp[](../code/mywebapp/program.cs?name=snippet_web_application_builder)]
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+```
 
 The `app.MapGet()` method directly defines an endpoint that handles HTTP GET requests:
 
-[!code-csharp[](../code/mywebapp/program.cs?name=snippet_web_mapget)]
+```csharp
+app.MapGet("/", () => "Hello World!");
+```
 
 `app.MapGet("/")`: Defines a route for the HTTP GET request. The `/` indicates this route responds to the requests made to the root URL of the app. For example, `http://localhost:{port}/`, where `{port}` is a randomly assigned port number assigned in the *Properties/launchSettings.json* file at project creation.
 

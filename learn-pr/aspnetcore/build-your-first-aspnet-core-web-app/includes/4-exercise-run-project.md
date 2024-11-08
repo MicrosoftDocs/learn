@@ -21,13 +21,13 @@ Run the web app in Visual Studio Code and view in a browser:
 
 1. At the **Select debugger** prompt in the **Command Palette** at the top of the Visual Studio Code UI, select **C#**. At the next prompt, select the default launch configuration (`C#: MyWebApp [Default Configuration]`):
 
-    :::image type="content" source="../media/vsc-select-bebugger.png" alt-text="Chosing Select debugger in the Command Pallette":::
+    :::image type="content" source="../media/vs-code-select-debugger.png" alt-text="Screenshot of choosing Select debugger in the Command Pallette":::
 
     The default browser is launched at `http://localhost:{PORT}`, which displays the app's response. The `{PORT}` placeholder is the random port assigned to the app when the app's project is created. If you need to change the port due to a local port conflict, change the port in the project's *Properties/launchSettings.json* file.
 
     The response displayed in the browser:
 
-    :::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
+    :::image type="content" source="../media/browser-displays-hello-world.png" alt-text="Screenshot of a browser displaying the text output":::
 
 1. Close the browser window.
 
@@ -65,7 +65,7 @@ Run the web app using the .NET CLI:
 
 1. Open a browser to the URL generated at your own command line output, the app's response `Hello World!` is displayed:
 
-    :::image type="content" source="../media/browser-displays-helloworld.png" alt-text="A browser displaying the text output":::
+    :::image type="content" source="../media/browser-displays-hello-world.png" alt-text="Screenshot of a browser displaying the text output":::
 
 1. Press Ctrl+C at the command line to shut down the app.
 
