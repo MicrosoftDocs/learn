@@ -18,11 +18,10 @@ levels:
 roles:
 - data-engineer
 products:
-- azure-fabric
+- fabric
 subjects:
 - data-engineering
 modules:
-
 - learn.wwl.ingest-data-with-microsoft-fabric
 - learn.wwl.use-apache-spark-work-files-lakehouse
 - learn.wwl.implement-lakehouse-microsoft-fabric
