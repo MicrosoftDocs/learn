@@ -1,6 +1,6 @@
 Now that you're aware of KQL, let's look at the different query environments where you can use KQL in Microsoft products.
 
-The environments we describe in this unit are [Azure Data Explorer](#azure-data-explorer), [Synapse Real-Time Analytics in Microsoft Fabric)](#real-time-intelligence-in-microsoft-fabric), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
+The environments we describe in this unit are [Azure Data Explorer](#azure-data-explorer), [Real-Time Intelligence in Microsoft Fabric)](#real-time-intelligence-in-microsoft-fabric), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
 
 ## Azure Data Explorer
 
@@ -16,9 +16,9 @@ For more product information, see [What is Azure Data Explorer?](/azure/data-exp
 
 ## Real-Time Intelligence in Microsoft Fabric
 
-Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near-real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Analytics is a fully managed big-data analytics platform optimized for streaming and time-series data. Real-Time Analytics contains what we can think of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Queryset to run queries, view, and customize query results on data from a KQL database. You can also save queries for later use, or share with others to collaborate on data exploration.
+Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near-real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Intelligence is a fully managed big-data analytics platform optimized for streaming and time-series data. Real-Time Intelligence contains what we can think of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Queryset to run queries, view, and customize query results on data from a KQL database. You can also save queries for later use, or share with others to collaborate on data exploration.
 
-:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics." lightbox="../media/7-real-time-analytics.png":::
+:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Intelligence." lightbox="../media/7-real-time-analytics.png":::
 
 For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set).
 
