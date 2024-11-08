@@ -4,7 +4,7 @@ title: Learn about .NET Aspire integrations
 metadata:
   title: Learn about .NET Aspire integrations
   description: In this unit, you learn about common requirements for backing services that microservices often need. You also see how .NET Aspire built-in integrations make it easy to consume and work with such backing services.
-  ms.date: 01/31/2024
+  ms.date: 11/08/2024
   author: camsoper
   ms.author: casoper
   ms.topic: unit
