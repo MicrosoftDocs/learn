@@ -1,4 +1,4 @@
-Fabric REST APIs allow you to automate Fabric procedures and processes.  When using automation, you can complete tasks more quickly and with fewer errors. This leads to efficiency and improved productivity. REST API stands for Representational State Transfer Programming Application Interface. In Azure REST APIs are used to manage and interact with various Azure services. 
+Fabric REST APIs allow you to automate Fabric procedures and processes.  When using automation, you can complete tasks more quickly and with fewer errors. This leads to efficiency and improved productivity. REST API stands for Representational State Transfer Programming Application Interface. Azure REST APIs are used to manage and interact with various Azure services. 
 
 Some of the advantages of using the Fabric REST APIs are:
  
