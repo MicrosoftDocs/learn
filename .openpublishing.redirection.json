@@ -34398,6 +34398,11 @@
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/8-knowledge-check.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/2-review-system-routes.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
     }
   ]
 }
