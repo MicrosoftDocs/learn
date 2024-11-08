@@ -34363,6 +34363,11 @@
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/index.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/5-determine-service-endpoint-services.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
     }
   ]
 }
