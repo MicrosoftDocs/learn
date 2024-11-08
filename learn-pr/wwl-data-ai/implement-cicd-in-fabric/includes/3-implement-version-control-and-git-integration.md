@@ -46,7 +46,7 @@ For development using a separate, isolated workspace:
 1. Connect a development workspace to the main branch, following the instructions in the section above. 
 2. If you're a developer who works in the Fabric web interface, create an isolated branch for your work from the development workspace that's connected to the main branch by selecting **Source control** and **Branch out to new workspace**. Name the branch and associate it with another workspace.  The new workspace will sync with the main branch and become an isolated work environment for your work.
 
-    :::image type="content" source="../media/branchout-to-new-workspace.png" alt-text="Screenshot of uncommitted changes in workspace." :::
+    :::image type="content" source="../media/branchout-to-new-workspace.png" alt-text="Screenshot of creating new workspace and branch." :::
 
 3. Makes changes in your branch, then commit them to your isolated branch via the **Source control** interface in Fabric. 
 4. Then, *in Git*, create a **Pull Request (PR)** to pull the changes from your isolated branch into the main branch.  
