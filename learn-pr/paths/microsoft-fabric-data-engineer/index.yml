@@ -22,6 +22,7 @@ products:
 subjects:
 - data-engineering
 modules:
+- learn.wwl.data-engineer-microsoft-fabric
 - learn.wwl.ingest-data-with-microsoft-fabric
 - learn.wwl.use-apache-spark-work-files-lakehouse
 - learn.wwl.implement-lakehouse-microsoft-fabric
