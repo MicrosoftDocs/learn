@@ -4122,3 +4122,8 @@ achievements:
   title: Introduction to Code to Cloud
   summary: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.configure-network-routing-endpoints.badge
+  type: badge
+  title: Configure network routing and endpoints
+  summary: Learn how to configure network routes, including endpoints and private links.
+  iconUrl: /training/achievements/network-routing-endpoints-configure.svg

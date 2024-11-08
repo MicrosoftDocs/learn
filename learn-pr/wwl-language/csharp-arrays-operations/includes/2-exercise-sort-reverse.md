@@ -1,3 +1,4 @@
+
 The `Array` class contains methods that you can use to manipulate the content, arrangement, and size of an array. In this exercise, you code that performs various operations on an array of pallet identifiers. Your code could be the start of an application to track and optimize the usage of pallets for the company.
 
 ### Prepare your coding environment
@@ -29,7 +30,7 @@ This module includes hands-on activities that guide you through the process of b
     > [!NOTE]
     > This example uses **Collection expression** syntax, which was introduced in C#12.
 
-If working on your own PC, rather than in a sandbox or hosted environment, and you completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
+If you completed other Microsoft Learn modules in this C# series on your own computer, you might create a project folder for code samples. If so, you can skip the next step, which involves creating a console app in the TestProject folder.
 
 1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
 
