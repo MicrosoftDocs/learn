@@ -11,36 +11,40 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: What is order of evaluation of access in Fabric?
+  - content: What is the role of Git in the CI/CD process in Fabric?
     choices:
-    - content:  Data security, Fabric access, Microsoft Entra ID authentication
+    - content:  Git is used to deploy code changes to different environments.
       isCorrect: false
-      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
-    - content: Microsoft Entra ID authentication, Fabric access, Data security
+      explanation: Incorrect. Git is not used for deployment, it is used for version control and collaboration.
+    - content: Git is used for automated testing of code changes.
+      isCorrect: false
+      explanation: Incorrect. Git does not perform automated testing, it is used for version control and collaboration.
+    - content: Git lets your team collaborate using branches, and provides version control. It helps manage incremental code changes, and see code history.
       isCorrect: true
-      explanation: Correct. The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
-    - content: Fabric access, Microsoft Entra ID authentication, Data security
-      isCorrect: false
-      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Fabric access.
-  - content: What workspace role should be assigned to a data engineer who needs to create Fabric items and read all data in an existing lakehouse?
+      explanation: Correct. Git is used for version control and collaboration, allowing teams to manage code changes and view code history.
+  
+  
+  - content: What is the purpose of connecting a Fabric workspace to a Git repository?
     choices:
-    - content: Viewer
+    - content: To automatically deploy changes made in the workspace to a live environment.
       isCorrect: false
-      explanation: Incorrect. The Viewer role only allows viewing of content and data, but doesn't allow modification or creation of Fabric items.
-    - content: Contributor
+      explanation: Incorrect. The connection of a Fabric workspace to a Git repository does not automatically deploy changes to a live environment.
+    - content: To sync content between the workspace and Git, ensuring they have the same content.
       isCorrect: true
-      explanation: Correct. The Contributor role allows the user to view and modify all content and data in the workspace, including creating Fabric items and reading data in the lakehouse.
-    - content: Admin
+      explanation: Correct. Connecting a Fabric workspace to a Git repository allows for synchronization of content between the two, ensuring they have the same content.
+    - content: To allow multiple developers to work on the same code simultaneously without conflicts
       isCorrect: false
-      explanation: Incorrect. The Admin role has more permissions than needed, including managing all content, data, and permissions.
-  - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
+      explanation: Incorrect. While Git does allow multiple developers to work simultaneously, the connection of a Fabric workspace to a Git repository is not primarily for this purpose.
+  
+  
+  - content: What is the primary function of deployment pipelines in Fabric?
     choices:
-    - content: OneLake data access roles
+    - content: Deployment pipelines are used to create new content in Fabric.
+      isCorrect: false
+      explanation: Incorrect. Deployment pipelines do not create content, they automate the movement of content through different stages.
+    - content: Deployment pipelines are used to delete old content from Fabric. 
+      isCorrect: false
+      explanation: Incorrect. Deployment pipelines do not delete content, they facilitate the testing and updating of content.
+    - content: Deployment pipelines automate the movement of content through the development, test, and production stages.
       isCorrect: true
-      explanation: Correct. OneLake data access roles allow you to create custom roles within a lakehouse and grant read access to specific folders.
-    - content: Data Manipulation Language (DML)
-      isCorrect: false
-      explanation: Incorrect. Data Control language (DCL) is used to provide granular T-SQL permissions. DML is used to manipulate data.
-    - content: Column-level security in the semantic model
-      isCorrect: false
-      explanation: Incorrect. There isn't column-level security in the semantic model.
+      explanation: Correct. Deployment pipelines in Fabric help to automate the process of moving and updating content across different environments.
