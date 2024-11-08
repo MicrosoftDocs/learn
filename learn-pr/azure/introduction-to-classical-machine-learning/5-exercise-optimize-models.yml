@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Optimize a model by using cost functions
   description: Exercise unit about optimizing a model by using cost functions.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit
