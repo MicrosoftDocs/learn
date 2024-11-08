@@ -1,8 +1,8 @@
 ## Scenario
 
 To ensure the firewall policies are enforced, outbound application traffic must be routed through the firewall. You identify these requirements. 
-+ A route table is required. This route table will be associated with the frontend and backend subnets.  
-+ A route is required to filter all outbound IP traffic from the subnets to the firewall. The firewall’s private IP address will be used. 
++ A route table is required. This route table is associated with the frontend and backend subnets.  
++ A route is required to filter all outbound IP traffic from the subnets to the firewall.  
 
 ## Skilling Tasks
 
@@ -17,6 +17,6 @@ To ensure the firewall policies are enforced, outbound application traffic must 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261688)

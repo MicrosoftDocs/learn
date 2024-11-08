@@ -1,8 +1,8 @@
 ## Scenario
 
-Your organization requires workloads to use domain names instead of IP addresses for internal communications.  The organization doesn’t want to add a custom DNS solution. You identify these requirements.
+Your organization requires workloads to use domain names instead of IP addresses for internal communications. The organization doesn’t want to add a custom DNS solution. You identify these requirements.
 + A private DNS zone is required for contoso.com.
-+ The DNS will use a  virtual network link to app-vnet. 
++ The DNS uses a virtual network link to app-vnet. 
 + A new DNS record is required for the backend subnet. 
 
 ## Skilling Tasks
@@ -18,6 +18,6 @@ Your organization requires workloads to use domain names instead of IP addresses
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2262041)

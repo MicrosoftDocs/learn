@@ -1,10 +1,10 @@
 ## Scenario
 
-Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection will be needed. Also, it is expected the application will need continuous updates from Azure DevOps pipelines. You identify these requirements.
-+ Azure Firewall is required for additional security in the app-vnet. 
+Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection is needed. Also, it's expected the application needs continuous updates from Azure DevOps pipelines. You identify these requirements.
++ Azure Firewall is required for security in the app-vnet. 
 + A firewall policy should be configured to help manage access to the application. 
-+ A firewall policy **application rule** is required. This rule will allow the application access to Azure DevOps so the application code can be updated. 
-+ A firewall policy **network rule** is required. This rule will allow DNS resolution. 
++ A firewall policy **application rule** is required. This rule allows the application access to Azure DevOps so the application code can be updated. 
++ A firewall policy **network rule** is required. This rule allows DNS resolution. 
 
 ## Skilling Tasks
 
@@ -21,7 +21,7 @@ Your organization requires centralized network security for the application virt
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261961)
 
