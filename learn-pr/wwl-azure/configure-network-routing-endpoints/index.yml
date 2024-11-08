@@ -34,7 +34,6 @@ units:
 - learn.wwl.configure-network-routing-endpoints.review-system-routes
 - learn.wwl.configure-network-routing-endpoints.identify-user-defined-routes
 - learn.wwl.configure-network-routing-endpoints.determine-service-endpoint-uses
-- learn.wwl.configure-network-routing-endpoints.determine-service-endpoint-services
 - learn.wwl.configure-network-routing-endpoints.identify-private-link-uses
 - learn.wwl.configure-network-routing-endpoints.interactive-simulation-routing
 - learn.wwl.configure-network-routing-endpoints.knowledge-check
