@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.describe-security-copilot
-title: Describe Microsoft Sentinel integration with Microsoft Copilot for Security
+title: Describe Microsoft Sentinel integration with Microsoft Security Copilot
 metadata:
-  title: Describe Microsoft Sentinel integration with Microsoft Copilot for Security
-  description: "Describe Microsoft Sentinel integration with Microsoft Copilot for Security"
+  title: Describe Microsoft Sentinel integration with Microsoft Security Copilot
+  description: "Describe Microsoft Sentinel integration with Microsoft Security Copilot"
   ms.date: 08/06/2024
   author: wwlpublish
   ms.author: ceperezb
