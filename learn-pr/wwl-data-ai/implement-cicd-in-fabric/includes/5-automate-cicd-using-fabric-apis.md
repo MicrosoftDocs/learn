@@ -11,7 +11,8 @@ Fabric CI/CD REST APIs are available for deployment pipelines and Git integratio
 - [Deployment pipelines REST APIs](rest/api/fabric/core/deployment-pipelines)
 - [Git REST APIs](rest/api/fabric/core/git)
 
-Some things you can use the Fabric REST APIs to do are:
+## Use the Fabric REST APIs for CI/CD to automate processes 
+Some examples of things you can use the Fabric CI/CD REST APIs for are:
 
 - Commit the changes made in the workspace to the connected remote branch.
 - Update the workspace with commits pushed to the connected branch.
