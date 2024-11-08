@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.personality-quiz.knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Answer questions to see what you've learned.
   ms.date: 04/14/2021
@@ -56,3 +58,4 @@ quiz:
     - content: "Coding is for everyone."
       isCorrect: true
       explanation: "True! Even if you don't want to be a developer as your career, learning to code helps you develop problem-solving skills and gives you insight into the software that you use every day."
+

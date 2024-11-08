@@ -2,6 +2,8 @@
 uid: learn.wwl.prepare-for-azure-stack-hub-deployment.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/02/2023
@@ -38,3 +40,4 @@ quiz:
     - content: "Integrate the Azure Stack Hub DNS services with the DNS servers hosting DNS zones used in Azure Stack Hub."
       isCorrect: true
       explanation: "Correct. They should integrate the Azure Stack Hub DNS services with the DNS servers hosting DNS zones used in Azure Stack Hub."
+

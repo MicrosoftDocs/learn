@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore developer tools for workspace interaction
   description: Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2).
   ms.date: 07/25/2024
@@ -37,3 +39,4 @@ units:
 - learn.wwl.explore-developer-tools-for-workspace-interaction.summary
 badge:
   uid: learn.wwl.explore-developer-tools-for-workspace-interaction.badge
+

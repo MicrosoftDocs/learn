@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Policy
   description: Learn how to configure Azure Policy to implement compliance requirements.
   ms.date: 05/20/2024
@@ -42,3 +44,4 @@ units:
 - learn.wwl.configure-azure-policy.summary-resources
 badge:
   uid: learn.wwl.configure-azure-policy.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-aspnet-app-azure-app-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Containerize and migrate ASP.NET applications to Azure App Service
   description: Microsoft Learn module to learn Azure Migrate App Containerization with a hands-on lab using Azure App Service
   manager: mkluck
@@ -42,3 +44,4 @@ units:
 - learn.azure.migrate-aspnet-app-azure-app-service.summary
 badge:
   uid: learn.azure.migrate-aspnet-app-azure-app-service.badge
+

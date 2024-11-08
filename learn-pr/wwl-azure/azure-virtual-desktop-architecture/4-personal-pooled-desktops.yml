@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.personal-pooled-desktops
 title: Personal and pooled desktops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Personal and pooled desktops
   description: "Personal and pooled desktops"
   ms.date: 06/21/2023

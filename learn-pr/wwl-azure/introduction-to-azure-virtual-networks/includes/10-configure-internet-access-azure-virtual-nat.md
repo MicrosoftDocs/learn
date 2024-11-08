@@ -46,4 +46,4 @@ NAT and compatible Standard SKU features are aware of the direction the flow was
 - NAT can't span multiple virtual networks.
 - IP fragmentation isn't supported.
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions below. 

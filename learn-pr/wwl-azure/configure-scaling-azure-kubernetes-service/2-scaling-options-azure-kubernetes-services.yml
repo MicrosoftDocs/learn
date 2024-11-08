@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.scaling-options-azure-kubernetes-services
 title: Scaling options in Azure Kubernetes Services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scaling options in Azure Kubernetes Services
   description: "Scaling options in Azure Kubernetes Services"
   ms.date: 10/25/2023

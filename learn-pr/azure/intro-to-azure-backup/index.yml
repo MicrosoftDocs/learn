@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-backup # Do not edit: uid must be globally unique
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Backup          # Do not edit: title must be "Introduction to <product>"
   description: "Evaluate whether Azure Backup is appropriate to use for your backup needs and describe how the features of Azure Backup work to provide backup solutions for your needs."                 # Copy your 'evaluate' Learning Objective here (see below)
@@ -140,3 +142,4 @@ units:
 ###
 badge:
   uid: learn.azure.intro-to-azure-backup.badge
+

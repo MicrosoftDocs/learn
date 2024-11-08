@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.exercise-train-convolutional-neural-network
 title: Exercise - Train a convolutional neural network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train a convolutional neural network
   description: "Exercise - Train a convolutional neural network"
   ms.date: 07/10/2024

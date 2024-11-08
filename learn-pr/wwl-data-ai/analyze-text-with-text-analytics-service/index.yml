@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundamentals of Text Analysis with the Language Service
   description: "Explore text analysis with Azure AI Language service."
   ms.date: 10/17/2024

@@ -1,7 +1,9 @@
+ 
+Before getting into qubits and operations in the next units, let's start with a simple example to understand how superposition works.
 
-Before getting into qubits and operations, let's start with a simple example to understand how superposition works.
+In this unit, you'll learn how to describe the global state of a system: a cat and a box. 
 
-## How can you describe superposition?
+## How can you describe the global state of a system?
 
 Imagine you have a cat and a box, and you want to describe the possible configurations of the *cat and box system*. For example, "the cat inside the box", "the cat next to the box", and so on. 
 

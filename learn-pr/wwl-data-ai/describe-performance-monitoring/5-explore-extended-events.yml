@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-performance-monitoring.describe-extended-events
 title: Explore extended events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore extended events
   description: "Explore extended events"
   ms.date: 09/26/2022

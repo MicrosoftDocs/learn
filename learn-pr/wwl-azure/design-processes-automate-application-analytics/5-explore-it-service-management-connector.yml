@@ -2,6 +2,8 @@
 uid: learn.wwl.design-processes-to-automate-application-analytics.explore-it-service-management-connector
 title: Explore IT Service Management Connector
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore IT Service Management Connector
   description: "Explore IT Service Management Connector"
   ms.date: 05/06/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-indexes-to-improve
 title: Use indexes to improve query performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use indexes to improve query performance
   description: "Use indexes to improve query performance"
   ms.date: 08/05/2022

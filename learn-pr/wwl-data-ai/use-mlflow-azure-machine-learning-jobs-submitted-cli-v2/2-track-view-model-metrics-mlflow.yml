@@ -2,6 +2,8 @@
 uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
 title: Track and view model metrics with MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Track and view model metrics with MLflow
   description: Track and view model metrics with MLflow
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/2-track-view-model-metrics-mlflow.md)]
+

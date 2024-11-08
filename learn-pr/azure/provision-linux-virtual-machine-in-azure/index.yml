@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.provision-linux-virtual-machine-in-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: carols
   author: fossygirl
   manager: rayoflores
@@ -38,3 +40,4 @@ units:
 - learn.provision-linux-virtual-machine-in-azure.summary
 badge:
   uid: learn.provision-linux-virtual-machine-in-azure-badge
+

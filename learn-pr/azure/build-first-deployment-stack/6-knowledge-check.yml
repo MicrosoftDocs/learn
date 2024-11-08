@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-deployment-stack.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 08/01/2023
@@ -45,3 +47,4 @@ quiz:
     - content: az stack group modify
       isCorrect: false
       explanation: The command to update a deployment stack using Azure CLI is `az stack group create`. Azure CLI uses the same command to create and update a deployment stack.
+

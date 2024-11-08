@@ -2,6 +2,8 @@
 uid: learn.introduction-to-application-resiliency-azure.what-is-resiliency
 title: What is resiliency?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is resiliency?
   description: Introduction to resiliency in Azure
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-resiliency.md)]
+

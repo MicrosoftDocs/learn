@@ -2,9 +2,11 @@
 uid: learn.store-app-data-with-azure-blob-storage.7-blob-uploads-and-downloads
 title: Exercise - Blob uploads and downloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Blob uploads and downloads
   description: Exercise - Blob uploads and downloads
-  ms.date: 10/23/2023
+  ms.date: 10/29/2024
   author: pauljewellmsft
   ms.author: pauljewell
   ms.topic: unit
@@ -17,3 +19,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/7-blob-uploads-and-downloads.md)]
+

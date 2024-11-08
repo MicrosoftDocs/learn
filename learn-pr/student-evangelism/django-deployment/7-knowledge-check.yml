@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding so far.
   ms.date: 03/01/2021 
@@ -11,7 +13,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz: 
   questions: 
     - content: "What setting maintains the list of server names that are allowed to host your application?"
@@ -47,3 +49,4 @@ quiz:
       - content: migrate
         isCorrect: true
         explanation: 'Correct. The migrate tool creates or updates the database schema.'
+

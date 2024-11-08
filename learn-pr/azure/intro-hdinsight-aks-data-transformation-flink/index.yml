@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-hdinsight-aks-data-transformation-flink
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Use Apache Flink on Azure HDInsight on AKS
   description: Use Apache Flink on Azure HDInsight on AKS.
@@ -46,3 +48,4 @@ units:
 - learn.intro-hdinsight-aks-data-transformation-flink.summary
 badge:
   uid: learn.intro-hdinsight-aks-data-transformation-flink.badge
+

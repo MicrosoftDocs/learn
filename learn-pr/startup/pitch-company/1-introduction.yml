@@ -2,6 +2,8 @@
 uid: learn.startups.pitch-company.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn what pitches entail and why they're important.
   ms.date: 04/22/2024

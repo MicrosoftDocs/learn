@@ -2,6 +2,8 @@
 uid: learn.intro-to-containers.4-create-custom-docker-image
 title: Customize a Docker image to run your own web app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Customize a Docker image to run your own web app
   description: Explain how to create a custom Docker image. Show how to specify the steps for creating an image by using a Dockerfile
   ms.date: 06/28/2024

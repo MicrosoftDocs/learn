@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-host-pools-session-hosts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and configure host pools and session hosts for Azure Virtual Desktop
   description: "Create and configure host pools and session hosts for Azure Virtual Desktop"
   ms.date: 08/22/2024

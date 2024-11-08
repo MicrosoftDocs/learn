@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-subscriptions.apply-cost-savings
 title: Apply cost savings
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apply cost savings
   description: "Apply cost savings"
   ms.date: 10/27/2023

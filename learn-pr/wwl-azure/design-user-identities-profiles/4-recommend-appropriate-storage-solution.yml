@@ -2,6 +2,8 @@
 uid: learn.wwl.design-for-user-identities-profiles.recommend-appropriate-storage-solution
 title: Recommend an appropriate storage solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend an appropriate storage solution
   description: "Recommend an appropriate storage solution"
   ms.date: 02/10/2023

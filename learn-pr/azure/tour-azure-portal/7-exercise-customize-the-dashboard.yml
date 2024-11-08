@@ -2,6 +2,8 @@
 uid: learn.tour-azure-portal-features.7-exercise-customize-the-dashboard
 title: Exercise - Customize the dashboard
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Customize the dashboard
   description: Customize the dashboard and add new quick-access tiles to your Azure portal dashboard.
   ms.date: 04/08/2024
@@ -12,3 +14,4 @@ azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-customize-the-dashboard.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.learn-module-best-practices
 title: Learning path best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Learning path best practices
   description: "Learning path best practices"
   ms.date: 04/01/2024

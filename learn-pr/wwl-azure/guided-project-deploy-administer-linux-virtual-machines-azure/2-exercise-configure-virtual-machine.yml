@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise1
 title: Exercise - Create and configure Linux virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create and configure Linux virtual machines
   description: "Exercise - Create and configure Linux virtual machines"
   ms.date: 07/30/2024

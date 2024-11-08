@@ -2,6 +2,8 @@
 uid: learn.azure.create-foundation-modern-apps.summary  
 title: Summary  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary  
   title: Summary
   description: How did we solve the problem in the initial scenario with the knowledge learned in the module?
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+

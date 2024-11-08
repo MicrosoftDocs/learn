@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
 title: AI services on the Azure platform
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: AI services on the Azure platform
   description: "AI services on the Azure platform"
   ms.date: 10/03/2024

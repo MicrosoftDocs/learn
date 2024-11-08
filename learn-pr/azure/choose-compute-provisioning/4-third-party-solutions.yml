@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-compute-provisioning.4-third-party-solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a third-party solution
   description: Choose a third-party solution
   ms.date: 03/29/2023
@@ -13,3 +15,4 @@ title: Choose a third-party solution
 durationInMinutes: 10
 content: |
   [!include[](includes/4-third-party-solutions.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-access-for-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage access for Azure Stack Hub
   description: "Manage access for Azure Stack Hub"
   ms.date: 07/29/2022
@@ -54,3 +56,4 @@ units:
 - learn.wwl.manage-access-for-azure-stack-hub.summary
 badge:
   uid: learn.wwl.manage-access-for-azure-stack-hub.badge
+

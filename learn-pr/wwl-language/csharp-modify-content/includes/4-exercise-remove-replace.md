@@ -1,3 +1,4 @@
+
 In this exercise, you remove characters from a string using the `Remove()` method and replace characters using the `Replace()` method.
 
 Sometimes, you need to modify the contents of a string, removing or replacing characters. While you could replace characters with the tools you already know, it requires a bit of temporarily storing and stitching strings back together. Fortunately, the `string` data type has other built-in methods, `Remove()` and `Replace()`, for these specialized scenarios.

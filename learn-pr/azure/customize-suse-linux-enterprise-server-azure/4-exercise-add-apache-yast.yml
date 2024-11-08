@@ -2,6 +2,8 @@
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.exercise-add-apache-yast
 title: Exercise - Install Apache with YaST
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Install Apache with YaST
   description: Use YaST to install Apache on your SLES virtual machine.
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-add-apache-yast.md)]
+

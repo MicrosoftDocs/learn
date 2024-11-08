@@ -2,6 +2,8 @@
 uid: learn.wwl.consider-message-processing-options-constraints.examine-iot-hub-quotas-throttling
 title: Examine Azure IoT Hub quotas and throttling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure IoT Hub quotas and throttling
   description: "Examine Azure IoT Hub quotas and throttling"
   ms.date: 02/22/2024

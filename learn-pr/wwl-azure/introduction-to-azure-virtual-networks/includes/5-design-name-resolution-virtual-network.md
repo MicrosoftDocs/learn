@@ -146,4 +146,4 @@ Forwarding takes two forms:
 
 :::image type="content" source="../media/external-dns-fwd-7c81c29f.png" alt-text="On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution.":::
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions below. 

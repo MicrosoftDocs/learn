@@ -2,6 +2,8 @@
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.rollback-transactions
 title: Rollback transactions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Rollback transactions
   description: "Rollback transactions"
   ms.date: 10/17/2022

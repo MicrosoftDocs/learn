@@ -2,6 +2,8 @@
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.create-indexer
 title: Create an indexer for data in Azure Cosmos DB for NoSQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an indexer for data in Azure Cosmos DB for NoSQL
   description: "Create an indexer for data in Azure Cosmos DB for NoSQL"
   ms.date: 07/10/2024

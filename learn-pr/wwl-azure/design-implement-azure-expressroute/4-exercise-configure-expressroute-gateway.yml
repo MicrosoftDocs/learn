@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-azure-expressroute.exercise-configure-expressroute-gateway
 title: 'Exercise: configure an ExpressRoute gateway'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: configure an ExpressRoute gateway'
   description: "Exercise: configure an ExpressRoute gateway"
   ms.date: 11/02/2023

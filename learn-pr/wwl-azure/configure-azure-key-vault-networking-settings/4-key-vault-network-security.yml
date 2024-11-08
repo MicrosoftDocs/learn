@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.key-vault-network-security
 title: Azure Key Vault network security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Key Vault network security
   description: "Azure Key Vault network security"
   ms.date: 10/24/2024

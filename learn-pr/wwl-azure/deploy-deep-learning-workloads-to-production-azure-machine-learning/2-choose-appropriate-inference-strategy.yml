@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.choose-appropriate-inference-strategy
 title: Choose the appropriate inference strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the appropriate inference strategy
   description: Choose the appropriate inference strategy
   author: wwlpublish
@@ -18,3 +20,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-choose-appropriate-inference-strategy.md)]
+

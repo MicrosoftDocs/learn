@@ -3,6 +3,8 @@ uid: learn.research.introduction-to-project-farmvibes-ai.how-farmvibes-ai-works
 
 title: How FarmVibes.AI works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How FarmVibes.AI works
   description: A unit in the Intro to project FarmVibes.AI module. 
   ms.date: 7/16/2024

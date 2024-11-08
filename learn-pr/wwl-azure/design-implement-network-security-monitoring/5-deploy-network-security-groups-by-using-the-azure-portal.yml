@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-network-security-monitoring.deploy-network-security-groups-by-using-the-azure-portal
 title: Deploy Network Security Groups by using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Network Security Groups by using the Azure portal
   description: "Deploy Network Security Groups by using the Azure portal"
   ms.date: 02/08/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.monitor-report-aad-security-events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor and report on security events in Microsoft Entra ID
   description: Monitor Microsoft Entra security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.
   ms.date: 03/01/2023
@@ -42,3 +44,4 @@ units:
 - learn.monitor-report-aad-security-events.6-summary
 badge:
   uid: learn.monitor-report-aad-security-events.badge
+

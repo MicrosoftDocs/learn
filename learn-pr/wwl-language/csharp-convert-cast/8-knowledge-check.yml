@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check what you learn in this module."
-  ms.date: 08/20/2024
+  ms.date: 11/06/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which technique results in an error when used to convert a `string` value `4.123456789` into a `decimal`?"
+  - content: "Which technique results in an error when used to convert a `string` value `\"4.123456789\"` into a `decimal`?"
     choices:
     - content: "`Convert.ToDecimal()`"
       isCorrect: false

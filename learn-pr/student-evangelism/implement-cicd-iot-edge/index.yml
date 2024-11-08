@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.implement-cicd-iot-edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Implement CI/CD for IoT Edge"
   description: "This module implements CICD pipeline for edge devices."
   manager: lizross
@@ -42,3 +44,4 @@ units:
 - learn.oxford.implement-cicd-iot-edge.exercise-create-release-pipeline-iot-edge
 - learn.oxford.implement-cicd-iot-edge.knowledge-check
 - learn.oxford.implement-cicd-iot-edge.summary
+

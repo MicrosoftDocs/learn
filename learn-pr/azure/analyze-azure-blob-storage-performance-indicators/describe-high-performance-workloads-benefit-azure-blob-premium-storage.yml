@@ -2,6 +2,8 @@
 uid: learn.azure.analyze-azure-blob-storage-performance-indicators.describe-high-performance-workloads-benefit-azure-blob-premium-storage
 title: Describe high performance workloads that benefit from Azure Premium Blob Storage. 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe high performance workloads that benefit from Azure Premium Blob Storage
   description: Explain why the Premium tier is the optimum option for specific use cases and workloads.
   ms.date: 08/01/2022
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/describe-high-performance-workloads-benefit-azure-blob-premium-storage.md)]
+

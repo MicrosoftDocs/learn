@@ -2,6 +2,8 @@
 uid: learn.get-started-prompt-flow.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introducing concepts like Retrieval Augmented Generation (RAG) to augment the capabilities of Large Language Models (LLMs) and how they're leveraged by Azure Machine Learning's prompt flow."
   ms.date: 11/30/2023

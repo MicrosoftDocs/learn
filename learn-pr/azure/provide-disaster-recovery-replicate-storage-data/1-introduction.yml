@@ -2,6 +2,8 @@
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about a business scenario that storage replication can address.
   ms.date: 11/03/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

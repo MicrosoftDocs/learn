@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Answer the following questions, then select **Check your answers**.
+  Answer the following questions.
 quiz:
   questions:
   - content: "What is the expected outcome of a test function tagged with the `#[test]` attribute?"

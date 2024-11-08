@@ -2,6 +2,8 @@
 uid: learn.azure.protect-vm-settings-with-dsc.what-is-azure-automation-state-configuration
 title: What is Azure Automation State Configuration?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Automation State Configuration?
   description: What is Azure Automation State Configuration?
   ms.date: 09/22/2023

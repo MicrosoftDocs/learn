@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe pipelines and concurrency
   description: "Describe pipelines and concurrency"
   ms.date: 05/23/2024

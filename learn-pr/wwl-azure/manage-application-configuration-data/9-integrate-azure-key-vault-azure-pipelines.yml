@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-configuration-data.integrate-azure-key-vault-azure-pipelines
 title: Integrate Azure Key Vault with Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Azure Key Vault with Azure Pipelines
   description: "Integrate Azure Key Vault with Azure Pipelines"
   ms.date: 05/28/2024

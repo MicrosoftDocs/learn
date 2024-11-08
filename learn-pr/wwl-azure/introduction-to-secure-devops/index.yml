@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-secure-devops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Secure DevOps
   description: "This module introduces DevSecOps concepts, SQL injection attacks, threat modeling, and security for continuous integration."
   ms.date: 05/22/2024

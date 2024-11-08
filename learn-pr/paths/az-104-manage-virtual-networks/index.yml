@@ -78,7 +78,6 @@ modules:
 - learn.wwl.configure-virtual-networks
 - learn.wwl.configure-network-security-groups
 - learn.wwl.configure-vnet-peering
-- learn.wwl.configure-network-routing-endpoints
 - learn.wwl.configure-azure-load-balancer
 - learn.wwl.configure-azure-application-gateway
 - learn.design-ip-addressing-for-azure

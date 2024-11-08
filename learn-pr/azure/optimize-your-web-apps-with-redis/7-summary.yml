@@ -2,6 +2,8 @@
 uid: learn.optimize-web-app-with-redis.7-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 03/11/2024
@@ -46,3 +48,4 @@ quiz:
     - content: "Clusters"
       isCorrect: false
       explanation: "Data is stored in Redis by using nodes and clusters. A node is a single storage location and a cluster is a set of three or more nodes."
+

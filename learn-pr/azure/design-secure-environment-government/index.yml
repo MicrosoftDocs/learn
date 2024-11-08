@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.design-secure-environment-government
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design cloud solutions for the public sector
   description: Introduction to the stakes and options for implementing Azure to safeguard public sector data.
   ms.service: azure-stack
@@ -40,3 +42,4 @@ units:
 - learn.azure.design-secure-environment-government.6-summary
 badge: 
   uid: learn.azure.design-secure-environment-government.badge
+

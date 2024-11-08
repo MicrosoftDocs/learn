@@ -46,4 +46,4 @@ With its impressive computing power, expansive storage space, versatile developm
 
 ## Check your knowledge
 
-Choose the best response for each question. Then select **Check your answers**.
+Choose the best response for each question. 

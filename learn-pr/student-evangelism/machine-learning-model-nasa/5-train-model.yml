@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.machine-learning-model-nasa.5-train-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train and test the machine learning model to predict rocket launch success
   description: Use the concepts of training and testing data to train your model.
   ms.date: 09/04/2024

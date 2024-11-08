@@ -2,6 +2,8 @@
 uid: learn.wwl.install-configure-apps-session-host.implement-manage-microsoft-365-apps
 title: Implement and manage Microsoft 365 Apps on Azure Virtual Desktop session hosts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and manage Microsoft 365 Apps on Azure Virtual Desktop session hosts
   description: "Implement and manage Microsoft 365 Apps on Azure Virtual Desktop session hosts"
   ms.date: 08/13/2024

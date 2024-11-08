@@ -2,6 +2,8 @@
 uid: learn.wwl.update-infrastructure-for-azure-stack-hub.prepare-updates
 title: Prepare for Azure Stack Hub updates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare for Azure Stack Hub updates
   description: "Prepare for Azure Stack Hub updates"
   ms.date: 03/29/2022
