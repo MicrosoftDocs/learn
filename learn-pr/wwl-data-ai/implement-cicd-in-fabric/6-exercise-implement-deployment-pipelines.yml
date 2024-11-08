@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](6-exercise-implement-deployment-pipelines.md)]
+  [!include[](includes/6-exercise-implement-deployment-pipelines.md)]
