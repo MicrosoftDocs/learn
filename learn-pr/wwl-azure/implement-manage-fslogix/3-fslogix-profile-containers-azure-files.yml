@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-fslogix.fslogix-profile-containers-azure-files
-title: FSLogix profile containers and Azure files
+title: Understand FSLogix containers
 metadata:
-  title: FSLogix profile containers and Azure files
-  description: "FSLogix profile containers and Azure files"
-  ms.date: 02/10/2023
+  title: Understand FSLogix containers
+  description: "Understand FSLogix containers"
+  ms.date: 08/27/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-fslogix-profile-containers-azure-files.md)]

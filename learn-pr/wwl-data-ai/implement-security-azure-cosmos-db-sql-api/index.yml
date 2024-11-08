@@ -1,20 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement security in Azure Cosmos DB for NoSQL
   description: "We will learn the different security models that Azure Cosmos DB uses."
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
 title: Implement security in Azure Cosmos DB for NoSQL
 summary: We will learn the different security models that Azure Cosmos DB uses.
 abstract: |
   - Implement network level access control
   - Review data encryption options
   - Use role-based access control (RBAC)
-  - Access Account Resources using Azure Active Directory
+  - Access Account Resources using Microsoft Entra ID
   - Understand Always Encrypted
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
@@ -39,3 +41,4 @@ units:
 - learn.wwl.implement-security-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.badge
+

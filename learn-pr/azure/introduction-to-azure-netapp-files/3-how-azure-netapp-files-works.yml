@@ -2,14 +2,16 @@
 uid: learn.azure.introduction-to-azure-netapp-files.how-azure-netapp-files-works
 title: How Azure NetApp Files works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure NetApp Files works
   description: Learn how Azure NetApp Files works.
-  ms.date: 06/18/2021
+  ms.date: 07/30/2024
   author: mengruts
-  ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anfdocs
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-netapp-files-works.md)]
+

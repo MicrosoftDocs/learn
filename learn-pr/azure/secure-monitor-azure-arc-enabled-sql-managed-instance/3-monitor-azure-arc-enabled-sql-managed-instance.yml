@@ -2,13 +2,15 @@
 uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.monitor-azure-arc-enabled-sql-managed-instance
 title: Monitor of Azure Arc-enabled SQL Managed Instance
 metadata:
-  title: Monitor of Azure Arc-enabled SQL Managed Instance
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Monitor an Azure Arc-enabled SQL Managed Instance
   description: Implement monitoring Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/07/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/monitor-azure-arc-enabled-sql-managed-instance.md)]
+

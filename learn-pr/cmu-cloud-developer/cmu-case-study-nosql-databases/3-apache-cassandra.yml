@@ -2,13 +2,14 @@
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.3-apache-cassandra
 title: Apache Cassandra
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apache Cassandra
   description: Apache Cassandra
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true
 durationInMinutes: 27
@@ -72,3 +73,4 @@ quiz:
     - content: "ANY, QUORUM, ALL"
       isCorrect: false
       explanation: "Incorrect."
+

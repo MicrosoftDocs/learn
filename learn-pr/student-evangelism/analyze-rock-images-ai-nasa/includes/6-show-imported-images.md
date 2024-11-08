@@ -40,7 +40,7 @@ We're ready to add the code to transform the images.
        dataiter = iter(loader)
 
        # Get and return the images and labels from the iterator
-       images, labels = dataiter.next()
+       images, labels = next(dataiter)
        return images, labels
    ```
 

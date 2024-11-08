@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.2-application-infrastructure-resiliency
+metadata:
+  title: Application and infrastructure resiliency
+  description: Learn about approaches to resiliency for cloud-native microservices apps.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
+title: Application and infrastructure resiliency
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-application-infrastructure-resiliency.md)]

@@ -7,12 +7,11 @@ metadata:
   ms.date: 04/05/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -41,19 +40,18 @@ quiz:
         - content: "To offer a complete list of available cloud services with their descriptions."
           isCorrect: false
           explanation: "The Cloud Adoption Framework doesn't provide such a list. Microsoft Azure documentation is the recommended source of information about specific Azure services."
-
     - content: "What is the Well Architected Framework?"
       choices:
         - content: "A framework to develop resilient and fault-tolerant serverless applications."
           isCorrect: false
-          explanation: "The Well-Architected Framework is a tool designed to help developers build and operate reliable, secure, efficient, and cost-effective systems in the cloud. It applies to all types of cloud architectures, not just serverless."
+          explanation: "The Well-Architected Framework is a tool designed to help architects build and operate reliable, secure, efficient, and cost-effective systems in the cloud. It applies to all types of cloud architectures, not just serverless."
         - content: "A framework that focuses exclusively on security-related design decisions for cloud-based applications."
           isCorrect: false
-          explanation: "While the Well-Architected Framework emphasizes security principles, it covers more timeless than just security, including cost optimization, reliability, performance efficiency."
-        - content: "An AWS blueprint designed to expedite deployment times using predefined infrastructure stacks."
+          explanation: "While the Well-Architected Framework emphasizes security principles, it covers more topics than just security, including cost optimization, reliability, performance efficiency."
+        - content: "An Azure blueprint designed to expedite deployment times using predefined infrastructure stacks."
           isCorrect: false
-          explanation: "The Well-Architected Framework is not an AWS-specific framework. Its focus on architecture patterns that can be applied to any cloud provider as well companies own data centers."
-        - content: "A methodology developed by Amazon Web Services (AWS) to review and critique cloud architectures."
+          explanation: "The Well-Architected Framework is not an Azure-specific framework. It focuses on architecture patterns that can be applied to any cloud provider as well a company's own data centers."
+        - content: "A set of guiding tenets that you can use to improve the quality of a workload."
           isCorrect: true
           explanation: "The Well-Architected Framework is a systematic approach that provides customers with a consistent and methodically validated assessment of their cloud architectures based on available best practices."
     - content: "What are Azure Landing Zones?"
@@ -63,7 +61,7 @@ quiz:
           explanation: "Azure landing zones don't relate to device management or authentication."
         - content: "A system designed to manage identity and access for cloud resources in Azure."
           isCorrect: false
-          explanation: "Identity and Access Management are concerns handled by Azure Active Directory, but Azure Landing Zones aren't directly related to user identities."
+          explanation: "Identity and Access Management are concerns handled by Microsoft Entra ID, but Azure Landing Zones aren't directly related to user identities."
         - content: "A prescribed architecture for configuring a secure and scalable cloud environment."
           isCorrect: true
           explanation: "Azure Landing Zones provide an automated and prescriptive reference implementation to rapidly set up a comprehensive secure cloud baseline."

@@ -4,11 +4,10 @@ title: Layer 2 - The subprocess layer
 metadata:
   title: Layer 2 - The Subprocess Layer
   description: Learn what Layer 2 is and when to use it
-  ms.date: 02/28/2020
+  ms.date: 05/05/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-layer-2-the-sub-process-layer.md)]

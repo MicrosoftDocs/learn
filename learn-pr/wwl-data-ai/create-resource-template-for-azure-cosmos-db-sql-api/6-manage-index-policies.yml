@@ -2,15 +2,20 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.manage-index-policies
 title: Manage index policies through Azure Resource Manager templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage index policies through Azure Resource Manager templates
   description: "Manage index policies through Azure Resource Manager templates"
-  ms.date: 10/18/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-bicep
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-index-policies.md)]
+

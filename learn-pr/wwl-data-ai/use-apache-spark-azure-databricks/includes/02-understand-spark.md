@@ -34,3 +34,18 @@ Depending on the work being performed, multiple parallelized jobs may be require
 - The third stage would be to add the roof.
 
 Attempting to do any of these steps out of order just doesn't make sense, and may in fact be impossible. Similarly, Spark breaks each job into stages to ensure everything is done in the right order.
+
+### Modularity
+
+Spark includes libraries for tasks ranging from SQL to streaming and machine learning, making it a tool for data processing tasks.  Some of the Spark libraries include:
+
+- Spark SQL: For working with structured data.
+- SparkML: For machine learning.
+- GraphX: For graph processing.
+- Spark Streaming: For real-time data processing.
+
+![Diagram of Spark libraries.](../media/azure-databricks-apache-spark.png)
+
+### Compatibility
+
+Spark can run on a variety of distributed systems, including Hadoop YARN, Apache Mesos, Kubernetes, or Spark's own cluster manager. It also reads from and writes to diverse data sources like HDFS, Cassandra, HBase, and Amazon S3.

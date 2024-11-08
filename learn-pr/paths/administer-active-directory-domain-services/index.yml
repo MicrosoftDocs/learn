@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.administer-active-directory-domain-services
+metadata:
+  title: Administer Active Directory Domain Services
+  description: This learning path helps prepare you for the APL-1008 Administer Active Directory Domain Services modern credential. You'll learn how to create, deploy, and maintain an Active Directory Domain Services environment.
+  ms.date: 06/20/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: learning-path
+title: Administer Active Directory Domain Services
+prerequisites: |
+  Knowledge of and experience working with:
+  -   Windows Server.
+  -   Core networking technologies.
+summary: |
+  This learning path helps prepare you for the APL-1008 Administer Active Directory Domain Services modern credential. You'll learn how to create, deploy, and maintain an Active Directory Domain Services environment.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- active-directory
+subjects:
+- architecture
+- device-management
+- infrastructure
+modules:
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers
+- learn.wwl.create-manage-active-directory-objects
+- learn.wwl.create-configure-group-policy-objects-active-directory
+- learn.wwl.manage-security-active-directory
+- learn.wwl.guided-project-administer-active-directory-domain-services
+trophy:
+  uid: learn.wwl.administer-active-directory-domain-services.trophy

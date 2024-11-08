@@ -2,13 +2,14 @@
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.create triggers-use-triggers-sdk
 title: Create and use triggers with the SDK
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and use triggers with the SDK
   description: "Create and use triggers with the SDK"
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

@@ -2,21 +2,22 @@
 uid: learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline
 title: Design the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design the pipeline
   description: Define stages in your release pipeline and promote changes from one stage to the next.
   ms.custom: devdivchpfy22
-  ms.date: 08/19/2022
+  ms.date: 11/29/2023
   author: juliakm
   ms.author: jukullam
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/2-design-the-pipeline.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your pipeline includes many tests and quality checks that take several minutes to finish. Which kind of trigger is best for running tests only on code that a peer has reviewed?"
+  - content: "Your pipeline includes many tests and quality checks that take several minutes to finish. Which kind of trigger is best for running tests only on code that was peer reviewed?"
     choices:
     - content: "A build completion trigger"
       isCorrect: false
@@ -49,3 +50,4 @@ quiz:
     - content: "Use a build completion trigger."
       isCorrect: true
       explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, finishes successfully."
+

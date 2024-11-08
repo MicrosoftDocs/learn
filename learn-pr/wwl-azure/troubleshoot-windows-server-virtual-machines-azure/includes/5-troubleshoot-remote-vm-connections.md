@@ -51,7 +51,7 @@ If this basic connectivity test is successful, then attempt to reconnect using t
 > [!IMPORTANT]
 > Are you sure you have the right username and password for the target VM? If you're unsure, check the username and reset the password. Then update the details in your remote desktop client connection profile.
 
-A final thing to consider is that it's possible that Azure Firewall or Windows Defender Firewall might be blocking the required ports.
+A final thing to consider is that it's possible that Azure Firewall or Windows Firewall might be blocking the required ports.
 
 ## Consider implementing Azure Bastion
 
@@ -75,5 +75,5 @@ The following diagram displays the architecture of a typical Azure Bastion deplo
 
 ![A graphic depicting the textual explanation of Azure Bastion for remote administration. ](../media/bastion-remote-admin.png)
 
-In this scenario, the administrator connects using TCP port 443, and the RDP port is not exposed to the internet. By using Azure Bastion, you can simplify, and secure, the process of establishing a remote management connection.
+In this scenario, the administrator connects using TCP port 443, and the RDP port isn't exposed to the internet. By using Azure Bastion, you can simplify, and secure, the process of establishing a remote management connection.
 

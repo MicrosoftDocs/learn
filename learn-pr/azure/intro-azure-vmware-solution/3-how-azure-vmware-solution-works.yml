@@ -2,13 +2,14 @@
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
 title: How Azure VMware Solution works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
-  ms.date: 03/13/2023
+  ms.date: 10/23/2024
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: phschmit-07282021
 durationInMinutes: 7
@@ -30,13 +31,13 @@ quiz:
       explanation: "Incorrect. Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
     choices:
-    - content: "3 nodes"
+    - content: "Three nodes"
       isCorrect: true
-      explanation: "Correct. The minimum number of nodes required in a cluster is 3."
-    - content: "24 nodes"
+      explanation: "Correct. The minimum number of nodes required in a cluster is three."
+    - content: "Twenty-four nodes"
       isCorrect: false
       explanation: "Incorrect. The minimum number of nodes required in a cluster is 3."
-    - content: "16 nodes"
+    - content: "Sixteen nodes"
       isCorrect: false
       explanation: "Incorrect. The maximum number of nodes in a cluster is 16."
   - content: "What does the cloudAdmin role in the Azure VMware Solution vCenter do?"
@@ -51,3 +52,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
+

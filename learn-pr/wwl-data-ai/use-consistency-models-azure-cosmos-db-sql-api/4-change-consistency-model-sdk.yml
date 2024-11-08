@@ -2,13 +2,14 @@
 uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.change-consistency-model-sdk
 title: Change consistency model with the SDK
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Change consistency model with the SDK
   description: "Change consistency model with the SDK"
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

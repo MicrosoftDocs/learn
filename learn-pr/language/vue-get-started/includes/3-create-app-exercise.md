@@ -1,4 +1,4 @@
-In this unit, you'll create a starter Vue application by using an HTML file. The file is linked to the Vue core library and an external JavaScript file that contains the application details. You'll define one Vue data variable and display it dynamically within the HTML page.
+In this unit, you create a starter Vue application by using an HTML file. The file is linked to the Vue core library and an external JavaScript file that contains the application details. You define one Vue data variable and display it dynamically within the HTML page.
 
 ## Clone the starter repository
 
@@ -14,14 +14,14 @@ code .
 
 ## Link to the Vue core library in your HTML file
 
-You'll install Vue.js from the content delivery network (CDN).
+You install Vue.js from the content delivery network (CDN).
 
 1. In Visual Studio Code, open *index.html*.
 1. Install Vue.js by linking to the Vue core library. In your starter *index.html* file, below the `TODO: Import Vue.js core library` comment, paste the following script tag.
 
     ```html
     <!-- TODO: Import Vue.js core library -->
-    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     ```
 
 ## Create a JavaScript file for your Vue application
@@ -29,7 +29,7 @@ You'll install Vue.js from the content delivery network (CDN).
 You can start writing a Vue script inside your HTML file if you want. But typically you can manage your application more cleanly by placing the code in a separate JavaScript file.
 
 1. Create a new file named *index.js*.
-1. Add the following code to *index.js* to create the app.
+1. Create the app by adding the following code to *index.js*.
 
     ```javascript
     const app = Vue.createApp({
@@ -45,11 +45,11 @@ You can start writing a Vue script inside your HTML file if you want. But typica
     });
     ```
 
-    The `createApp()` function is available to you because you imported the Vue.js library into the `<head>` tag of your HTML page. You then pass an argument for this function as an object with a `data` property. This object returns another object that you'll use to store your data.
+    The `createApp()` function is available to you because you imported the Vue.js library into the `<head>` tag of your HTML page. You then pass an argument for this function as an object with a `data` property. This object returns another object that you use to store your data.
 
 ## Import and mount the application
 
-Now that you've created the JavaScript code, you can import and mount the application.
+Now that you created the JavaScript code, you can import and mount the application.
 
 1. Return to *index.html*.
 1. Below the `TODO: Import Vue app` comment, add the following script.
@@ -63,7 +63,7 @@ Now that you've created the JavaScript code, you can import and mount the applic
 
 ## Use the Vue application
 
-Now that you've created and imported your Vue application, you can create the display for the information.
+Now that you created and imported your Vue application, you can create the display for the information.
 
 In the *index.html* file, below the `TODO: Add information display` comment, add the following HTML.
 
@@ -79,7 +79,7 @@ In the *index.html* file, below the `TODO: Add information display` comment, add
 
 ## Open the page by using Live Server
 
-The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension for Visual Studio Code creates a development web server that automatically refreshes the page as changes are detected. Follow the preceding link to install the extension. Then use it to host your page.
+The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension for Visual Studio Code creates a development web server that automatically refreshes the page as changes are detected. To install the extension, follow the preceding link. Then use it to host your page.
 
 1. Save all files.
 1. Open the command palette in Visual Studio Code by selecting Ctrl+Shift+P. On a Mac, select Cmd+Shift+P.

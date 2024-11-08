@@ -12,9 +12,9 @@ The objective of this module is to learn about the Azure Communication Services 
 
 By the end of this module, you'll be able to:
 
-- Create and configure an Azure Communication Services resource
-- Provision a phone number using the Azure portal
-- Send a text message from a console application
+- Create and configure an Azure Communication Services resource.
+- Provision a phone number using the Azure portal.
+- Send a text message from a console application.
 
 ## Prerequisites
 

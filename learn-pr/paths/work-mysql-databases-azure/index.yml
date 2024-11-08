@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/10/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Work with MySQL Databases on Azure
 prerequisites: |
   - Demonstrate an understanding of relational databases.
@@ -28,7 +27,7 @@ roles:
 products:
 - azure-database-mysql
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-mysql-architecture
 - learn.wwl.understand-client-server-communication-mysql

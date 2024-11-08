@@ -23,3 +23,4 @@ $answer = Read-Host
 > Input from **Read-Host** is limited to 1022 characters.
 
 You can mask the input users enter at the prompt by using the *-MaskInput* or *-AsSecureString* parameters. Both parameters cause the characters entered by the user to display as asterisks (`*`). When *-MaskInput* is used, the response is collected as a String object. When *-AsSecureString* is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.
+

@@ -1,5 +1,3 @@
-
-
 Hyperparameter tuning helps you fine-tune your model and select the hyperparameter values that will make your model perform best. 
 
 For you to find the best model, however, can be a never-ending conquest. You always have to consider whether it's worth the time and expense of testing new hyperparameter values to find a model that may perform better.

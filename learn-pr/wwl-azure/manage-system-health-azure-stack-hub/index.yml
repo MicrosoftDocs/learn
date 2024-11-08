@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-system-health-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage system health on Azure Stack Hub
   description: "Manage system health on Azure Stack Hub"
   ms.date: 08/10/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack-hub
 title: Manage system health on Azure Stack Hub
 summary: |
   Use syslog to integrate Azure Stack Hub infrastructure with security solutions already deployed in your datacenter.
@@ -51,3 +53,4 @@ units:
 - learn.wwl.manage-system-health-azure-stack-hub.summary
 badge:
   uid: learn.wwl.manage-system-health-azure-stack-hub.badge
+

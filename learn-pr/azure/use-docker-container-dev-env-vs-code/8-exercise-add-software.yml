@@ -4,11 +4,10 @@ title: Exercise - Add software to an existing container
 metadata:
   title: Exercise - Add software to an existing container
   description: Modify your project's Dockerfile to install Node in your existing container.
-  ms.date: 04/07/2022
+  ms.date: 04/28/2023
   author: bamurtaugh
   ms.author: brmurtau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vs-code
+  ms.topic: unit
   ms.custom: devdivchpfy22
 durationInMinutes: 4
 content: |

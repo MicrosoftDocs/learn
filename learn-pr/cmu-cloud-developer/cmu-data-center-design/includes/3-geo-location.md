@@ -62,8 +62,6 @@ _Figure 17: Volcano risk map_
 
 _Figure 18: Wildfire risk map_
 
-Natural disaster threat maps for regions in the United States are available online in the [Global data vault](http://www.globaldatavault.com/natural-disaster-threat-maps.htm). Click a map figure to see an enlarged view.
-
 As a cloud user or cloud provider, you can benefit from having two (or more) geographically distinct datacenters for your services to mitigate risks of natural disaster—excluding large asteroid impacts, of course.
 
 ## Connectivity

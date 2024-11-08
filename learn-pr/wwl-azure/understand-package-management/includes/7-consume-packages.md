@@ -4,11 +4,11 @@ The package manager will download the individual packages from the sources and i
 
 The developer flow will follow this general pattern:
 
-1. Identify a required dependency in your codebase.
-1. Find a component that satisfies the requirements for the project.
-1. Search the package sources for a package offering a correct component version.
-1. Install the package into the codebase and development machine.
-1. Create the software implementation that uses the new components from the package.
+1.  Identify a required dependency in your codebase.
+2.  Find a component that satisfies the requirements for the project.
+3.  Search the package sources for a package offering a correct component version.
+4.  Install the package into the codebase and development machine.
+5.  Create the software implementation that uses the new components from the package.
 
 The package manager tooling will help search and install the components in the packages.
 

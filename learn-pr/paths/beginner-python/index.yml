@@ -7,8 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.topic: learning-path
 title: Python for beginners
 summary: |
   Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
@@ -38,12 +37,9 @@ roles:
 products:
 - azure
 - vs-code
-subjects:
-- development-tools
 modules:
-- learn.languages.python-install-vscode
+- learn.student-evangelism.intro-to-python
 - learn.beginner-python.create-run-program
-- learn.beginner-python.create-manage-projects
 - learn.beginner-python.use-boolean-types
 - learn.beginner-python.use-strings
 - learn.beginner-python.use-math-operators
@@ -52,6 +48,5 @@ modules:
 - learn.beginner-python.python-dictionaries
 - learn.beginner-python.functions-python
 - learn.beginner-python.python-error-handling
-- learn.beginner-python.create-run-jupyter-notebook
 trophy:
   uid: learn.beginner-python.trophy

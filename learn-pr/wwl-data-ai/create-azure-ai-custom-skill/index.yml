@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.create-azure-ai-custom-skill
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create Azure AI custom skill
+  description: "Learn how to define and implement a custom skill in Azure AI Search."
+  ms.date: 10/23/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.service: azure-ai-search
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+title: Create a custom skill for Azure AI Search
+summary: Use the power of artificial intelligence to enrich your data and find new insights with custom skills in Azure AI Search.
+abstract: |
+  In this module you'll learn how to:
+  - Implement a custom skill for Azure AI Search
+  - Create a custom text classification skill
+  - Create a machine learning custom skill
+prerequisites: |
+  - Familiarity with Microsoft Azure
+  - Application development experience with C# or Python
+  - Experience of building a basic search solution with Azure AI Search. If you haven't completed the [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/) module, you should do so before starting this module.
+iconUrl: /training/achievements/create-an-enrichment-pipeline.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+products:
+- azure-cognitive-search
+units:
+- learn.wwl.create-azure-ai-custom-skill.introduction
+- learn.wwl.create-azure-ai-custom-skill.define-custom-skill-schema
+- learn.wwl.create-azure-ai-custom-skill.add-custom-skill
+- learn.wwl.create-azure-ai-custom-skill.custom-text-classification-skill
+- learn.wwl.create-azure-ai-custom-skill.ml-custom-skill
+- learn.wwl.create-azure-ai-custom-skill.exercise
+- learn.wwl.create-azure-ai-custom-skill.knowledge-check
+- learn.wwl.create-azure-ai-custom-skill.summary
+badge:
+  uid: learn.wwl.create-azure-ai-custom-skill.badge

@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate strategies for migrating to Azure SQL
   description: "Evaluate strategies for migrating to Azure SQL"
   ms.date: 04/15/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-sql
 title: Evaluate strategies for migrating to Azure SQL
 summary: Describe database migration options and tools on Azure. Understand how compatibility level affects database behavior. Describe Azure private and public preview options.
 abstract: |
@@ -43,3 +45,4 @@ units:
 - learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.summary
 badge:
   uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.badge
+

@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn about the different tools you can use to analyze and resolve compliance issue using Microsoft Intune. 
-  ms.date: 10/26/2020
+  ms.date: 05/04/2023
   author: ErikRe
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,11 +4,10 @@ title: When to use Visual Studio Code
 metadata:
   title: When to use Visual Studio Code
   description: "Use decision criteria to determine if Visual Studio Code is the right code editor for your programming needs."
-  ms.date: 10/20/2022
+  ms.date: 11/22/2023
   author: kjo-msft
   ms.author: karinjohnson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-vs-code # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-visual-studio-code.md)]

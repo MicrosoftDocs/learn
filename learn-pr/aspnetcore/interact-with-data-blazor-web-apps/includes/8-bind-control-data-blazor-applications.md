@@ -19,7 +19,7 @@ To bind a control, you would use the `@bind` directive:
 </p>
 
 @code {
-    private string customerEmail = "john.doe@contoso.com"
+    private string customerEmail = "user@contoso.com"
 }
 ```
 

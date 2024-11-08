@@ -1,0 +1,1 @@
+In this module, you learned to utilize Microsoft Defender for Cloud's CNAPP capabilities, manage security posture, enable comprehensive protection plans, and apply best practices for safeguarding cloud resources across multicloud environments.

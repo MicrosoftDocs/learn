@@ -2,13 +2,14 @@
 uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.6-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/10/2019
+  ms.date: 10/03/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -71,3 +72,4 @@ quiz:
     - content: "Azure App Service WebJobs" 
       isCorrect: false
       explanation: "It's not necessary to write a WebJob as part of the existing Azure App Service application, because you want to manage the procedure code separately. Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+

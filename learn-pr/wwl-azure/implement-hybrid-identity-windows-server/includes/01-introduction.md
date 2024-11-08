@@ -10,25 +10,25 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 With more services available online and in the cloud, organizations like Contoso are finding that they need to define and manage cloud identities.Contoso can use cloud identities to authenticate and authorize their users when they try to access company resources.
 
-Microsoft provides a cloud-based directory service in the Azure platform called *Azure Active Directory* (Azure AD). Azure AD is a multitenant, cloud-based directory and identity management service. It provides identity and access services for resources that exist in the cloud. Azure AD can also provide for single-sign on (SSO) access to thousands of cloud software as a service (SaaS) applications.
+Microsoft provides a cloud-based directory service in the Azure platform called *Microsoft Entra ID* (Microsoft Entra ID). Microsoft Entra ID is a multitenant, cloud-based directory and identity management service. It provides identity and access services for resources that exist in the cloud. Microsoft Entra ID can also provide for single-sign on (SSO) access to thousands of cloud software as a service (SaaS) applications.
 
-Contoso could also choose to use Azure Active Directory Domain Services (Azure AD DS). Azure AD DS provides managed domain services such as domain join, group policy, Lightweight Directory Access Protocol (LDAP), and Kerberos authentication or NTLM authentication that is fully compatible with Windows Server AD DS. Contoso could integrate Azure AD DS with their Azure AD tenant. This makes it possible for users to sign in using their existing credentials. 
+Contoso could also choose to use Microsoft Entra Domain Services. Microsoft Entra Domain Services provides managed domain services such as domain join, group policy, Lightweight Directory Access Protocol (LDAP), and Kerberos authentication or NTLM authentication that is fully compatible with Windows Server AD DS. Contoso could integrate Microsoft Entra Domain Services with their Microsoft Entra tenant. This makes it possible for users to sign in using their existing credentials. 
 
-In this module, you'll learn how to select an Azure AD integration model, and plan for integration. You'll also prepare and install AD DS synchronization. You will learn how to implement SSO, and enable Azure AD login for an Azure virtual machine (VM). Finally, you'll learn to plan and implement Azure AD DS.  
+In this module, you'll learn how to select a Microsoft Entra integration model, and plan for integration. You'll also prepare and install AD DS synchronization. You will learn how to implement SSO, and enable Microsoft Entra login for an Azure virtual machine (VM). Finally, you'll learn to plan and implement Microsoft Entra Domain Services.  
 
 ## Learning objectives
 
 After completing this module, you will be able to:
 
-- Select an Azure AD integration model.
-- Plan for Azure AD integration.
+- Select a Microsoft Entra integration model.
+- Plan for Microsoft Entra integration.
 - Prepare on-premises AD DS for directory synchronization.
-- Install and configure directory synchronization using Azure AD Connect.
+- Install and configure directory synchronization using Microsoft Entra Connect.
 - Implement Seamless SSO.
-- Enable Azure AD login for an Azure Windows VM.
-- Describe Azure AD DS.
-- Implement and configure Azure AD DS.
-- Manage Windows Server 2019 in an Azure AD DS instance.
+- Enable Microsoft Entra login for an Azure Windows VM.
+- Describe Microsoft Entra Domain Services.
+- Implement and configure Microsoft Entra Domain Services.
+- Manage Windows Server 2019 in a Microsoft Entra Domain Services instance.
 - Join a Windows Server VM to a managed domain.
 
 
@@ -40,7 +40,7 @@ To get the best learning experience from this module, it's important that you ha
 - Common Windows Server management tools.
 - Core Microsoft compute, storage, networking, and virtualization technologies.
 - Implementing and managing IaaS services in Microsoft Azure.
-- Azure Active Directory (Azure AD).
+- Microsoft Entra ID.
 - Security-related technologies (firewalls, encryption, multi-factor authentication).
 - Windows PowerShell scripting.
 - Automation and monitoring.

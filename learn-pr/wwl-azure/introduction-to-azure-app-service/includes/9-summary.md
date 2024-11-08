@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 - Describe Azure App Service key components and value.

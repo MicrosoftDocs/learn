@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: We give knowledge checks to evaluate the students to discover Autonomous Intelligence and decide when to use it.
-  ms.date: 10/17/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/24/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -28,11 +29,11 @@ quiz:
     - content: "Optimization algorithms"
       isCorrect: false
       explanation: "Incorrect. Optimization algorithms are an example of Automated intelligence, not Autonomous Intelligence. The algorithms explore the best action based on an approximation function or simulation."
-  - content: "Select which one of the following technologies has the following superpower “It automatically learns strategy”:"
+  - content: "Select which one of the following technologies has the superpower of automatically learning strategy:"
     choices:
     - content: "Optimization algorithms"
       isCorrect: false
-      explanation: "Incorrect. Optimization algorithms don't learn strategies but query the approximator function of the model to find the best action that maximizes the target goal."
+      explanation: "Incorrect. Optimization algorithms don't learn strategies, but query the approximator function of the model to find the best action that maximizes the target goal."
     - content: "Expert systems"
       isCorrect: false
       explanation: "Incorrect. Expert Systems include a set of predefined rules to control the environment. Strategies are hardcoded into the algorithm, not learned."
@@ -52,7 +53,7 @@ quiz:
       explanation: "Incorrect. Machine Learning isn't optimal for searching across possible options. That is what optimization algorithms do well."
     - content: "Advance Perception, Prediction, and Classification."
       isCorrect: true
-      explanation: "Correct. You'll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding) or we need to predict or classify large sets of data."
+      explanation: "Correct. You'll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding), or we need to predict or classify large sets of data."
     - content: "Outstanding technology to learn human-like strategies."
       isCorrect: false
       explanation: "Incorrect. The technology that learns strategy isn't Machine Learning, it's Reinforcement Learning."

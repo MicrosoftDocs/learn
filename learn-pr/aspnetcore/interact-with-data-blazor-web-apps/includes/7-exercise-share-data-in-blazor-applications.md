@@ -57,7 +57,7 @@ In this exercise, you'll pass data to a new order configuration component and se
 
 When a customer selects a pizza, the dialog should allow them to change the size of their pizza. Let's enhance the **index.razor** control to add this interactivity.
 
-1. In the file explorer, expand **Pages** and then select **Index.razor**.
+1. In the file explorer, expand **Pages**, and then select **Index.razor**.
 1. Add this code in the `@code` block under the `List<PizzaSpecial>` variable:
 
     ```csharp
@@ -223,7 +223,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
     using BlazingPizza.Services;
     ```
 
-1. In the file explorer, expand **Pages** and then select **Index.razor**.
+1. In the file explorer, expand **Pages**, and then select **Index.razor**.
 1. At the top of the file, under `@inject NavigationManager NavigationManager`, add this code:
 
     ```razor
@@ -270,7 +270,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
 ## Cancel and make pizza orders
 
-You might have noticed in the OrderState class two methods that we haven't used yet. The `CancelConfigurePizzaDialog` and `ConfirmConfigurePizzaDialog` methods close the dialog and add the pizza to an `Order` object if the customer has confirmed the order. Let's connect these methods to the configuration dialog buttons.
+You might have noticed in the OrderState class two methods that we haven't used yet. The `CancelConfigurePizzaDialog` and `ConfirmConfigurePizzaDialog` methods close the dialog, and add the pizza to an `Order` object if the customer has confirmed the order. Let's connect these methods to the configuration dialog buttons.
 
 1. Stop the app if it's still running.
 1. In the file explorer, expand **Shared**. Then select **ConfigurePizzaDialog.razor**.

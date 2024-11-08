@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
-title: Specify requirements to secure Active Directory Domain Services (AD DS)
+title: Specify requirements to harden Active Directory Domain Services (AD DS)
 metadata:
-  title: Specify requirements to secure Active Directory Domain Services (AD DS)
-  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: specify requirements to secure Active Directory Domain Services (AD DS)."
+  title: Specify requirements to harden Active Directory Domain Services (AD DS)
+  description: "This is a unit that prepares for the Microsoft Cybersecurity Architect certification on the topic: specify requirements to harden Active Directory Domain Services (AD DS)."
   ms.date: 3/15/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-specify-requirements-secure-active-directory-domain-services.md)]

@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for explore use cases of Microsoft Copilot for Security.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 06/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+
+content: |
+quiz:
+  questions:
+
+  - content: How do you provision capacity for Microsoft Copilot for Security?
+    choices:
+    - content: You can provision capacity by selecting the 'Owner settings' option and then choosing 'Provision capacity.'
+      isCorrect: false
+      explanation: Incorrect. There's no 'Provision capacity' option available under owner settings.
+    - content: You can provision capacity by selecting the help icon and entering Provision Capacity.
+      isCorrect: false
+      explanation: Incorrect. While the help option can provide information on how to provision capacity, you can't provision capacity from the help icon.
+    - content: You can provision capacity by running the wizard that is part of the first run experience Microsoft Copilot for Security or by selecting 'Microsoft Copilot for Security compute capacities' in the Azure portal and completing the steps.
+      isCorrect: true
+      explanation: Correct. You can provision capacity by running the wizard that is part of the first run experience Microsoft Copilot for Security or by selecting 'Microsoft Copilot for Security compute capacities' in the Azure portal and completing the steps.
+   
+  - content: When adding a custom plugin, what are the options that you select as part of the upload process?
+    choices:
+    - content: You can select 'Who can use this plugin' and you upload a file in the format of .docx, .pdf, .txt, or .md.
+      isCorrect: false
+      explanation: Incorrect. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+    - content: You can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+      isCorrect: true
+      explanation: Correct. When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+    - content: You start by enabling the option 'Allow Copilot for Security to access data from your Microsoft 365 services' then you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+      isCorrect: false
+      explanation: Incorrect. The option to 'Allow Copilot for Security to access data from your Microsoft 365 services' isn't applicable to custom plugins. To add a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Copilot for Security plugin or an OpenAI plugin.
+  
+  - content: What the option that best describes the steps involved in creating a custom promptbook.
+    choices:
+    - content: From the owner settings, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
+      isCorrect: false
+      explanation: Incorrect. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
+    - content: Start with an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
+      isCorrect: true
+      explanation: Correct. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
+    - content: Select the Sources icon, select files, then upload a .json formatted file that contains the details of the promptbook.
+      isCorrect: false
+      explanation: Incorrect. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.

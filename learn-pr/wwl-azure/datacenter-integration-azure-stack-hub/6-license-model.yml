@@ -2,13 +2,14 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.license-model
 title: Licensing model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Licensing model
   description: "Licensing model"
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

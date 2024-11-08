@@ -2,14 +2,16 @@
 uid: learn.health-bot-introduction.4-azure-health-bot-use-cases
 title: When to use Azure Health Bot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure Health Bot
   description: This unit presents use cases for Azure Health Bot.
   author: RuchaYagnik
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/4-azure-health-bot-use-cases.md)]
+

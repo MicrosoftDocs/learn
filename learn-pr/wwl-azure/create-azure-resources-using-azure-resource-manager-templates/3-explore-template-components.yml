@@ -2,15 +2,16 @@
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.explore-template-components
 title: Explore template components
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore template components
   description: "Explore template components"
-  ms.date: 01/10/2023
+  ms.date: 05/22/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-template-components.md)]

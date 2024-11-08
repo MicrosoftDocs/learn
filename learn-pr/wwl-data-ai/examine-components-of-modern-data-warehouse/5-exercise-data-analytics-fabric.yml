@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.exercise-data-analytics-fabric
+title: 'Exercise: Explore data analytics in Microsoft Fabric'
+metadata:
+  title: 'Exercise: Explore data analytics in Microsoft Fabric'
+  description: "Exercise - Explore data analytics in Microsoft Fabric"
+  ms.date: 09/17/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-data-analytics-fabric.md)]

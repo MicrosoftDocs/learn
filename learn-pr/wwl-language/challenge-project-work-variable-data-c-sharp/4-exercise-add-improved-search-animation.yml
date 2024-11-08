@@ -3,12 +3,13 @@ uid: learn.wwl.challenge-project-work-variable-data-c-sharp.exercise-add-improve
 title: Exercise - Add improved search animation
 metadata:
   title: Exercise - Add improved search animation
-  description: "Exercise - Add improved search animation"
-  ms.date: 04/25/2023
+  description: "Add an improved animation to appear while a search is in progress."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-add-improved-search-animation.md)]

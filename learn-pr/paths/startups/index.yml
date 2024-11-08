@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/11/2022
   author: ryanmesches
   ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.topic: learning-path
 title: Build an early-stage startup
 summary: |
   This learning path is for early-stage startup founders, and anyone working on an idea for a startup. It acts as a guide to the core business concepts you need to know to launch a successful startup.
@@ -38,8 +37,6 @@ roles:
 - startup-founder
 products:
 - consumer
-subjects:
-- modern-life
 modules:
 - learn.startups.fundamentals
 - learn.startups.validate-idea

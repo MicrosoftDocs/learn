@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/17/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of table should an insurance company use to store supplier attribute details for aggregating claims?"
+    choices:
+    - content: "Fact table."
+      isCorrect: false
+      explanation: "Incorrect. A fact table stores measurements, metrics or facts of business processes."
+    - content: "Dimension table."
+      isCorrect: true
+      explanation: "Correct. A dimension table stores attributes used to group numeric measures."
+    - content: "Staging table."
+      isCorrect: false
+      explanation: "Incorrect. Staging tables are used as temporary storage for data as it is loaded into the data warehouse."
+  - content: "What is a semantic model in the data warehouse experience?"
+    choices:
+    - content: "A semantic model is a business-oriented data model that provides a consistent and reusable representation of data across the organization."
+      isCorrect: true
+      explanation: "Correct. A semantic model in the data warehouse experience provides a way to organize and structure data in a way that is meaningful to business users, enabling them to easily access and analyze data."
+    - content: "A semantic model is a physical data model that describes the structure of the data stored in the data warehouse."
+      isCorrect: false
+      explanation: "Incorrect. A semantic model is a business-oriented data model, not a physical data model."
+    - content: "A semantic model is a machine learning model that is used to make predictions based on data in the data warehouse."
+      isCorrect: false
+      explanation: "Incorrect. A semantic model is not a machine learning model, but rather a way to organize and structure data for business users."
+  - content: "What is the purpose of item permissions in a workspace?"
+    choices:
+    - content: "To grant access to all items within a workspace."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions only grant access to specific items."
+    - content: "To grant access to specific columns within a table."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions relate to accessing data within a warehouse, but don't pertain to specific columns within tables."
+    - content: "To grant access to individual warehouses for downstream consumption."
+      isCorrect: true
+      explanation: "Correct.  By granting access to a single data warehouse using item permissions, you can enable downstream consumption of data."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-dotnet-aspire.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this introductory unit, you'll see a business scenario that can be addressed by using the .NET Aspire stack to build a cloud-native application.
+  ms.date: 01/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

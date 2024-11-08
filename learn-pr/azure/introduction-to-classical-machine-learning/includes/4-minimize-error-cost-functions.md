@@ -14,11 +14,11 @@ Because of this goal, how we calculate cost dictates what the model tries to lea
 
 ## What is a cost function?
 
-In supervised learning, a cost function is a small piece of code that calculates cost from a model's prediction and the expected label—the correct answer. For example, in our previous exercise we calculated cost by calculating the prediction errors, squaring them, and summing them.
+In supervised learning, a cost function is a small piece of code that calculates cost from a model's prediction and the expected label: the correct answer. For example, in our previous exercise, we calculated cost by calculating the prediction errors, squaring them, and summing them.
 
-After the cost function has calculated cost, we know whether the model is performing well or not. If it's performing well, we might choose to stop training. If not, we can pass cost information to the optimizer, which uses this information to select new parameters for the model.
+After the cost function calculates cost, we know whether the model is performing well or not. If it's performing well, we might choose to stop training. If not, we can pass cost information to the optimizer, which uses this information to select new parameters for the model.
 
-:::image type="content" source="../media/2-4-a.png" alt-text="Diagram of the machine learning lifecycle with labels, but without features." border="false":::
+:::image type="content" source="../media/2-4-a.png" alt-text="Diagram of the machine-learning lifecycle with labels, but without features." border="false":::
 
 During training, different cost functions can change how long training takes, or how well it works. For example, if the cost function always states that errors are small, the optimizer will make only small changes to the model. As another example, if the cost function returns very large values when certain mistakes are made, the optimizer will make changes to the model so that it doesn't make these kinds of mistakes.
 

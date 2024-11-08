@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-privileged-access.summary
+title: Summary - Design solutions for securing privileged access
+metadata:
+  title: Summary - Design solutions for securing privileged access
+  description: "This is a summary unit to prepare for the Microsoft cybersecurity architect certification on the topic: Design solutions for securing privileged access."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

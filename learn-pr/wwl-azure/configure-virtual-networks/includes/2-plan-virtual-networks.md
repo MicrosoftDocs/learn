@@ -1,5 +1,3 @@
-
-
 A major incentive for adopting cloud solutions like Azure is to enable information technology departments to transition server resources to the cloud. Moving resources to the cloud can save money and simplify administrative operations. Relocating resources removes the need to maintain expensive datacenters with uninterruptible power supplies, generators, multiple fail-safes, or clustered database servers. For small and medium-sized companies, which might not have the expertise to maintain their own robust infrastructure, moving to the cloud is particularly appealing.
 
 After resources are moved to Azure, they require the same networking functionality as an on-premises deployment. In specific scenarios, the resources require some level of network isolation. Azure network services offer a range of components with functionalities and capabilities, as shown in the following image:
@@ -10,7 +8,7 @@ After resources are moved to Azure, they require the same networking functionali
 
 You can implement Azure Virtual Network to create a virtual representation of your network in the cloud. Let's examine some characteristics of virtual networks in Azure.
 
-- An Azure virtual network is a logical isolation of the Azure cloud that's dedicated to your subscription.
+- An Azure virtual network is a logical isolation of the Azure cloud resources.
 
 - You can use virtual networks to provision and manage virtual private networks (VPNs) in Azure.
 

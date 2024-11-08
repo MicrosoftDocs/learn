@@ -4,11 +4,11 @@ title: Exercise - Access platform features in Blazor Hybrid
 metadata:
   title: Exercise - Access platform features in Blazor Hybrid
   description: Add saving and loading of data using platform features.
-  ms.date: 07/22/2022
+  ms.date: 10/20/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/9-exercise-platform-features.md)]

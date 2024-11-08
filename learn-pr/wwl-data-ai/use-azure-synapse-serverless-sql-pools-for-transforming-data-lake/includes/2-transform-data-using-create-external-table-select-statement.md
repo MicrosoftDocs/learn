@@ -29,9 +29,13 @@ If the source data for the CETAS statement is in files in the same data lake pat
 To create an external data source, use the `CREATE EXTERNAL DATA SOURCE` statement, as shown in this example:
 
 ```sql
+-- Create an external data source for the Azure storage account
 CREATE EXTERNAL DATA SOURCE files
 WITH (
-    LOCATION = 'https://mydatalake.blob.core.windows.net/data/files/'
+    LOCATION = 'https://mydatalake.blob.core.windows.net/data/files/',
+    TYPE = HADOOP, -- For dedicated SQL pool
+    -- TYPE = BLOB_STORAGE, -- For serverless SQL pool
+    CREDENTIAL = storageCred
 );
 ```
 
@@ -51,7 +55,7 @@ WITH (
 ```
 
 > [!TIP]
-> In addition to SAS authentication, you can define credentials that use *managed identity* (the Azure Active Directory identity used by your Azure Synapse workspace), a specific Azure Active Directory principal, or passthrough authentication based on the identity of the user running the query (which is the default type of authentication). To learn more about using credentials in a serverless SQL pool, see the [Control storage account access for serverless SQL pool in Azure Synapse Analytics](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control) article in Azure Synapse Analytics documentation.
+> In addition to SAS authentication, you can define credentials that use *managed identity* (the Microsoft Entra identity used by your Azure Synapse workspace), a specific Microsoft Entra principal, or passthrough authentication based on the identity of the user running the query (which is the default type of authentication). To learn more about using credentials in a serverless SQL pool, see the [Control storage account access for serverless SQL pool in Azure Synapse Analytics](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control) article in Azure Synapse Analytics documentation.
 
 ### External file format
 
@@ -125,7 +129,7 @@ WHERE OrderType = 'Special Order';
 
 ## Dropping external tables
 
-If you no longer need the external table containing the transformed data, you can drop it from the database my using the `DROP EXTERNAL TABLE` statement, as shown here:
+If you no longer need the external table containing the transformed data, you can drop it from the database by using the `DROP EXTERNAL TABLE` statement, as shown here:
 
 ```sql
 DROP EXTERNAL TABLE SpecialOrders;

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/14/2022
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -46,7 +45,7 @@ quiz:
       explanation: "Incorrect. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."
     - content: "Avoid applications that employ open-source libraries."
       isCorrect: false
-      explanation: "Incorrect. That is not a practical option and in most cases, users may not know if their applications contain open-source libraries."
+      explanation: "Incorrect. That isn't a practical option and in most cases, users may not know if their applications contain open-source libraries."
     - content: "Enable automatic updates of your applications."
       isCorrect: true
       explanation: "Correct. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."

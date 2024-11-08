@@ -4,13 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 12/12/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -27,7 +24,7 @@ quiz:
       explanation: "Incorrect. This log doesn't contain login information"
     - content: "SigninLogs"
       isCorrect: false
-      explanation: "Incorrect. This log is for signing into Azure Active Directory"
+      explanation: "Incorrect. This log is for signing into Microsoft Entra ID"
   - content: "What table contains logs from Windows hosts collected directly to Microsoft Sentinel?"
     choices:
     - content: "SecurityEvent"
@@ -35,7 +32,7 @@ quiz:
       explanation: "Correct.  Logs from Windows events are stored in this table."
     - content: "AuditLogs"
       isCorrect: false
-      explanation: "Incorrect. This table contains Audit log data for Azure Active Directory."
+      explanation: "Incorrect. This table contains Audit log data for Microsoft Entra ID."
     - content: "SecurityAlert"
       isCorrect: false
       explanation: "Incorrect.  This table contains records created by Analytical rules"

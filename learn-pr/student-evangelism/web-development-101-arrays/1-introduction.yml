@@ -6,9 +6,8 @@ metadata:
   ms.date: 05/25/2021
   author: chloecodesthings
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, devx-track-js
 title: Introduction
 durationInMinutes: 1
 content: |

@@ -2,14 +2,15 @@
 uid: learn.azdo.create-a-build-pipeline.4-plan-build-tasks
 title: Plan your build tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan your build tasks
   description: See how the team maps scripted build steps to Azure Pipelines tasks.
-  ms.date: 04/04/2023
+  ms.date: 09/13/2024
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 7
 content: |
@@ -28,3 +29,4 @@ quiz:
     - content: "Is run on the build agent when the build completes to clean up the system."
       isCorrect: false
       explanation: "Build tasks are steps that you define to build or deploy your software."
+

@@ -39,7 +39,7 @@ The multi-container group has the following characteristics and configuration:
 
 ### Things to consider when using container groups
 
-Multi-container groups are useful when you want to divide a single functional task into a few container images. The images can be delivered by different teams and have separate resource requirements.
+Multi-container groups are useful when you want to divide a single functional task into a few container images. Different teams can deliver the images, and the images can have separate resource requirements.
 
 Consider the following scenarios for working with multi-container groups. Think about what options can support your internal apps for the online retailer.
 

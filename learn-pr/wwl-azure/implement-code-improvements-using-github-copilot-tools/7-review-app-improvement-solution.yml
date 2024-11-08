@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.review-app-improvement-solution
+title: Review the "app improvement" solution
+metadata:
+  title: Review the "app improvement" solution
+  description: Review the app improvement solution
+  author: wwlpublish
+  ms.author: cahowd
+  ms.date: 05/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-review-app-improvement-solution.md)]

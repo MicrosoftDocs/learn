@@ -2,13 +2,14 @@
 uid: learn.health-bot-integrated-bot.3-integrate-logic-app
 title: Integrate a logic app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate a logic app
   description: In this unit, you learn how to integrate a logic app so you can connect a database to the healthcare bot.
   author: Meghana-ch
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/17/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |

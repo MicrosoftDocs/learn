@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-github-actions
+metadata:
+  title: Implement GitHub Actions
+  description: "GitHub Actions is a powerful CI/CD platform that allows developers to automate their software development workflows. Learn how GitHub actions are implemented, how workflow files are structured, and how to control workflow execution."
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: module
+  ms.service: github
+  ai-usage: human-only
+title: Implement GitHub Actions
+summary: GitHub Actions is a powerful CI/CD platform that allows developers to automate their software development workflows.&nbsp;Learn how GitHub actions are implemented, how workflow files are structured, and how to control workflow execution.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Describe the components of GitHub Actions.
+
+  -   Implement variables and scripts in a workflow.
+
+  -   Use contexts and expressions to manage workflow execution.
+
+  -   Manage secrets in GitHub.
+
+  -   Create and run a GitHub Actions workflow.
+prerequisites: '-   Experience with GitHub and an understanding of pull requests, code merges, and other repository management practices.'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- automation
+units:
+- learn.wwl.implement-github-actions.introduction
+- learn.wwl.implement-github-actions.explore-github-actions
+- learn.wwl.implement-github-actions.examine-workflow-file
+- learn.wwl.implement-github-actions.implement-variables-scripts
+- learn.wwl.implement-github-actions.explore-github-contexts-expressions
+- learn.wwl.implement-github-actions.manage-github-secrets
+- learn.wwl.implement-github-actions.exercise-github-actions
+- learn.wwl.implement-github-actions.knowledge-check
+- learn.wwl.implement-github-actions.summary
+badge:
+  uid: learn.wwl.implement-github-actions.badge

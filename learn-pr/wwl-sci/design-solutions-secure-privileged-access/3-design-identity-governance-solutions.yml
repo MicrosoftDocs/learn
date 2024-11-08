@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-privileged-access.design-identity-governance-solutions
-title: Design identity governance solutions
+title: Evaluate the security and governance of Microsoft Entra ID solutions
 metadata:
-  title: Design identity governance solutions
-  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: design identity governance solutions."
+  title: Evaluate the security and governance of Microsoft Entra ID solutions
+  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: Evaluate the security and governance of Microsoft Entra ID solutions."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 17
 content: |
   [!include[](includes/3-design-identity-governance-solutions.md)]

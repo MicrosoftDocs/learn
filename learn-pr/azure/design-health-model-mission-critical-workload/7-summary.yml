@@ -2,13 +2,15 @@
 uid: learn.design-health-model-mission-critical-workload.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: In this module, you've designed a health model for a production-ready, mission-critical solution.
-  ms.date: 01/12/2022
+  description: In this module, you designed a health model for a production-ready, mission-critical solution.
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-summary.md)]
+

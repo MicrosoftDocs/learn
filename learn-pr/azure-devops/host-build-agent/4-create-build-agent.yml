@@ -2,16 +2,17 @@
 uid: learn.azdo.host-build-agent.4-create-build-agent
 title: Exercise - Create a build agent that runs on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a build agent that runs on Azure
   description: Use a virtual machine that runs on Azure to configure a build agent you can use in Azure Pipelines.
-  ms.custom: devdivchpfy22
-  ms.date: 08/12/2022
+  ms.custom: devdivchpfy22, linux-related-content
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
-azureSandbox: true
+# azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/4-create-build-agent.md)]
@@ -24,3 +25,4 @@ content: |
 #     resource:
 #       type: "Microsoft.Compute/virtualMachines"
 #   hint: "Run the `az vm create` command as shown to create your virtual machine."
+

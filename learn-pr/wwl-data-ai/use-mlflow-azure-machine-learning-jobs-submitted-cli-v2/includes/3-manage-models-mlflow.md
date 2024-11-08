@@ -21,7 +21,7 @@ The output in the shell will show you the summary information of the job you sub
   "environment": "azureml:basic-env-scikit:1",
   "environment_variables": {},
   "experiment_name": "train-churn-model",
-  "id": "azureml:/subscriptions/7ab3b8d0-8479-4753-a593-83f4c4c701a5/resourceGroups/diabetes-dev-rg/providers/Microsoft.MachineLearningServices/workspaces/aml-diabetes-dev/jobs/a29e10e9-aa33-415c-b4f9-50b38706cfa9",
+  "id": "azureml:/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/diabetes-dev-rg/providers/Microsoft.MachineLearningServices/workspaces/aml-diabetes-dev/jobs/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
   "inputs": {
     "customer": {
       "dataset": "azureml:customer-data:1",
@@ -31,7 +31,7 @@ The output in the shell will show you the summary information of the job you sub
   "name": "a30e10e9-aa33-415c-b4f9-50b38706cfa9",
   "outputs": {
     "default": {
-      "folder": "azureml://datastores/workspaceartifactstore/ExperimentRun/dcid.a29e10e9-aa33-415c-b4f9-50b38706cfa9",
+      "folder": "azureml://datastores/workspaceartifactstore/ExperimentRun/dcid.bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
       "mode": "rw_mount"
     }
   },

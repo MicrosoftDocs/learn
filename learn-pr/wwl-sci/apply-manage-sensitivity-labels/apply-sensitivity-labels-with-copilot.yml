@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-with-copilot
+title: Apply sensitivity labels with Copilot for Microsoft 365 for secure collaboration
+metadata:
+  title: Apply sensitivity labels with Copilot for Microsoft 365 for secure collaboration
+  description: "Apply sensitivity labels with Copilot for Microsoft 365 for secure collaboration"
+  ms.date: 06/03/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/apply-sensitivity-labels-with-copilot.md)]

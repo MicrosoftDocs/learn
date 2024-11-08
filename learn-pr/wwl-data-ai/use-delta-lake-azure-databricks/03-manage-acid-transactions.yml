@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-delta-lake-azure-databricks.manage-acid-transactions
+title: Manage ACID transactions
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage ACID transactions
+  description: "Manage ACID transactions"
+  ms.date: 08/26/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-manage-acid-transactions.md)]

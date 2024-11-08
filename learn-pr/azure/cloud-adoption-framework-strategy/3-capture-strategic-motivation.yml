@@ -3,11 +3,10 @@ uid: learn.cloud-adoption-framework-strategy.3-capture-strategic-motivation
 metadata:
   title: Capture strategic motivation
   description: Capture strategic motivation.
-  ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Capture strategic motivation
 durationInMinutes: 10
 content: |

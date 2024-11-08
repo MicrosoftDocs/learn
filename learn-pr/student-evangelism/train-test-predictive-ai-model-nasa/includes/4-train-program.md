@@ -1,17 +1,15 @@
-We now have an AI model that incorporates a neural network. We provided some data to our program to teach it the different features of space rocks. The program has plenty of neurons and they're wired together in a deep learning network.
+We now have an AI model that incorporates a neural network. We provided some data to our program to teach it the different features of space rocks. The program has plenty of neurons and they're wired together in a deep-learning network.
 
 Now, it's time to train our program. We'll use our training data from NASA. We'll add code to help our program become accurate in classifying space rocks.
 
-
 ## Iterate on the data and increase the accuracy
 
-In this section of code, look for the `epochs` variable. This variable tells the program how many times to search for associations in the features. In our example, we'll set the initial number of iterations to 5.
+In this section of code, look for the `epochs` variable. This variable tells the program how many times to search for associations in the features. In our example, we'll set the initial number of iterations to *5*.
 
-> [!Note]
-> You can increase the number of iterations to further improve the accuracy of the model.
-> Keep in mind that increasing the number of iterations makes the code run slower.
+> [!NOTE]
+> You can increase the number of iterations to further improve the accuracy of the model. Keep in mind that increasing the number of iterations makes the code run slower.
 
-To train our model, we load the image input from the `trainloader` variable that we built in the [Analyze images of rocks with AI][AnalyzeMod] module. The data is stored to the already selected device. We call the `optimizer.zero_grad()` function to zero out gradients and avoid the accumulation of gradients across training iterations.
+To train our model, we load the image input from the `trainloader` variable that we built in the [Analyze images of rocks with AI](/training/modules/analyze-rock-images-ai-nasa/4-import-and-clean-data?azure-portal=true) module. The data is stored to the already selected device. We call the `optimizer.zero_grad()` function to zero out gradients and avoid the accumulation of gradients across training iterations.
 
 The image input is passed through the model by using the `model.forward(inputs)` function, which returns the log probabilities of each label. The `criterion(logps, labels)` function runs the log probabilities through the criterion to get the output graph. The `loss.backward()` function uses the loss graph to compute the gradients. The `optimizer.step()` function then updates the parameters based on the current gradient.
 
@@ -21,14 +19,13 @@ The `torch.exp(logps)` function is used to get a new tensor with the true probab
 
 Finally, we compute the overall accuracy.
 
-
 ## Train the neural network
 
 Follow these steps to train the neural network in your AI model.
 
 1. Return to Visual Studio Code, and open your Jupyter Notebook file. In our example, we're using the file *ClassifySpaceRockProgram.ipynb*.
 
-1. Make sure you're running the correct Jupyter kernel. At the upper-right and lower-left corners of Visual Studio, change to the Anaconda environment `('myenv')` that you created earlier.
+1. Make sure you're running the correct Jupyter kernel. At the upper-right corner of Visual Studio Code, change to the Anaconda environment `('myenv')` that you created earlier.
 
 1. Add the following code in a new cell, and then run the cell.
 
@@ -164,7 +161,6 @@ Follow these steps to train the neural network in your AI model.
 
    Do you notice the output for each successive epoch takes slightly longer to display than the previous one?
 
-
 ## Analyze the training output
 
 After five epochs are complete, the system reaches our `epoch` limit. 
@@ -187,7 +183,7 @@ Training step 25
 
 The output shows the prediction accuracy for each epoch iteration with training and testing losses, and the test accuracy.
 
-Here are the results from our test with five epochs. Your specific results will differ because the computer chooses a set of random images for each test run. The results reveal the training loss, testing loss, and accuracy, all depend on the chosen image.
+Here are the results from our test with five epochs. Your specific results will differ because the computer chooses a set of random images for each test run. The results reveal the training loss, testing loss, and accuracy, all depending on the chosen image.
 
 Epoch | Training loss | Test loss | Test accuracy
 :---:|:---:|:---:|:---:
@@ -196,8 +192,3 @@ Epoch | Training loss | Test loss | Test accuracy
 3 | 0.342 | 0.233 | 0.902
 4 | 0.216 | 0.189 | 0.906
 5 | 0.234 | 0.175 | 0.935
-
-
-<!-- Links -->
-[AnalyzeMod]: /training/modules/analyze-rock-images-ai-nasa/4-import-and-clean-data?azure-portal=true
-[CheckEnviron]: /training/modules/train-test-predictive-ai-model-nasa/3-build-neural-network?azure-portal=true

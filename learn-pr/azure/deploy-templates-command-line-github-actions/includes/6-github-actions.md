@@ -1,8 +1,8 @@
 [GitHub Actions](/azure/azure-resource-manager/templates/deploy-github-actions) help your team to be agile and competitive in today's marketplace. They help you automate your tasks for the system development or solution development lifecycle.
 
-Suppose you and your team are developing a solution that will require a significant number of resources in an Azure environment. You need to ensure that the solution can be deployed quickly and automatically as part of a continuous integration and continuous delivery (CI/CD) pipeline. That way, you can automate the creation and teardown of the project's infrastructure. By including the resource management in your CI/CD pipeline, you're adopting infrastructure as code (IaC) to automate the IT tasks.
+Suppose you and your team are developing a solution that requires a significant number of resources in an Azure environment. You need to ensure that the solution can be deployed quickly and automatically as part of a continuous integration and continuous delivery (CI/CD) pipeline. That way, you can automate the creation and teardown of the project's infrastructure. By including the resource management in your CI/CD pipeline, you're adopting infrastructure as code (IaC) to automate the IT tasks.
 
-Proper CI/CD pipelines also allow you to include in your deployment tasks a testing step by using tools such as the Azure Resource Manager (ARM) template test toolkit (*arm-ttk* for short). For more information about this toolkit, see [Validate your deployments by using what-if and the test toolkit](/training/modules/arm-template-test/). 
+Proper CI/CD pipelines also allow you to include a testing step in your deployment tasks, by using tools such as the Azure Resource Manager (ARM) template test toolkit (*arm-ttk* for short). For more information about this toolkit, see [Validate your deployments by using what-if and the test toolkit](/training/modules/arm-template-test/). 
 
 It's a good idea to include testing in your pipeline so you can focus on authoring. The arm-ttk toolkit runs a series of tests to validate your template during the deployment to avoid issues.
 

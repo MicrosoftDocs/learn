@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/26/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Create modular code by using functions in JavaScript
 summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
@@ -29,8 +28,6 @@ products:
 prerequisites: |
   - A web browser
   - Visual Studio Code and Live Server extension, installed
-subjects:
-- development-tools
 units:
   - learn.student-evangelism.web-development-101.functions.introduction
   - learn.student-evangelism.web-development-101.functions.overview-functions

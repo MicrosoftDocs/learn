@@ -1,6 +1,4 @@
-
-
-To get access to an Azure Machine Learning workspace, you first need to create the **Azure Machine Learning** service in your Azure subscription. The **workspace** is cental place where you can work with all resources and assets available to train and deploy machine learning models. For reproducibility, the workspace stores a history of all training jobs, including logs, metrics, outputs, and a snapshot of your code. 
+To get access to an Azure Machine Learning workspace, you first need to create the **Azure Machine Learning** service in your Azure subscription. The **workspace** is central place where you can work with all resources and assets available to train and deploy machine learning models. For reproducibility, the workspace stores a history of all training jobs, including logs, metrics, outputs, and a snapshot of your code. 
 
 ## Understand the Azure Machine Learning service
 
@@ -79,7 +77,7 @@ Finally, if the built-in roles aren't meeting your needs, you can create a custo
 
 ## Organize your workspaces
 
-Initially, you may only work with one workspace. However, when working on large-scale projects, you may choose to use multiple workspaces.
+Initially, you might only work with one workspace. However, when working on large-scale projects, you might choose to use multiple workspaces.
 
 You can use workspaces to group machine learning assets based on projects, deployment environments (for example, test and production), teams, or some other organizing principle. 
 

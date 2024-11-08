@@ -1,4 +1,5 @@
-Often, users want to search for items associated with a geographical location. For example, they might want to find the nearest coffee shop to their location. To help you compare locations on the Earth's surface, Cognitive Search includes geo-spatial functions that you can call in queries.
+
+Often, users want to search for items associated with a geographical location. For example, they might want to find the nearest coffee shop to their location. To help you compare locations on the Earth's surface, AI Search includes geo-spatial functions that you can call in queries.
 
 Here, you'll learn how to search for things that are near a physical point or within a bounded area.
 
@@ -8,9 +9,9 @@ In previous units in this module, you saw how users might locate a hotel by spec
 
 `search=(Description:luxury OR Category:luxury)&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
-An important consideration when you're booking a hotel is its geographical location. For example, if you're booking a trip to see the Eiffel Tower, you'll want a hotel located near it.
+An important consideration when you're booking a hotel is its geographical location. For example, if you're booking a trip to see the Eiffel Tower, you'll want a hotel located near to it.
 
-To ask Cognitive Search to return results based on their location information, you can use two functions in your query:
+To ask AI Search to return results based on their location information, you can use two functions in your query:
 
 - `geo.distance`. This function returns the distance in a straight line across the Earth's surface from the point you specify to the location of the search result.
 - `geo.intersects`. This function returns `true` if the location of a search result is inside a polygon that you specify.
@@ -23,7 +24,7 @@ To use these functions, make sure that your index includes the location for resu
 
 Suppose you're looking for a hotel near the Eiffel Tower. You can modify the above query, adding a new filter:
 
-`search=(Description:luxury OR Category:luxury) AND geo.distance(Location, geography'POINT(2.294481 48.858370)') le 5&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
+`search=(Description:luxury OR Category:luxury)$filter=geo.distance(location, geography'POINT(-122.131577 47.678581)') le 5&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
 This query returns all the luxury hotels in the index within five kilometers of the Eiffel Tower. In the query:
 
@@ -34,7 +35,7 @@ This query returns all the luxury hotels in the index within five kilometers of 
 > [!IMPORTANT]
 > When you use `geo.distance` in a filter, the equal to (`eq`) and not equal to (`ne`) operators are not supported. Instead, use `lt`, `le`, `gt`, or `ge`.
 
-Because `geo.distance` returns several kilometers, you can also use it in an `orderby` clause. For example, this query returns all luxury hotels in the index, but those closest to the Eiffel Tower are listed first:
+Because `geo.distance` returns the distance in kilometers, you can also use it in an `orderby` clause. For example, this query returns all luxury hotels in the index, but those closest to the Eiffel Tower are listed first:
 
 `search=(Description:luxury OR Category:luxury)&orderby=geo.distance(Location, geography'POINT(2.294481 48.858370)') asc&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 

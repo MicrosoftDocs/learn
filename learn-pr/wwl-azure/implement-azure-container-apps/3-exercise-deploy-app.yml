@@ -2,13 +2,16 @@
 uid: learn.wwl.implement-azure-container-apps.exercise-deploy-app
 title: Exercise - Deploy a container app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy a container app
   description: "Exercise - Deploy a container app"
-  ms.date: 04/19/2023
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-deploy-app.md)]

@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy PaaS solutions with Azure SQL
   description: "Deploy PaaS solutions with Azure SQL"
   ms.date: 05/27/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-sql
 title: Deploy PaaS solutions with Azure SQL
 summary: Provision and deploy Azure SQL Database and Azure SQL managed instance. Select the appropriate options when performing a migration to the SQL PaaS  platform.
 abstract: |
@@ -33,7 +35,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.deploy-paas-solutions-with-azure-sql.introduction
 - learn.wwl.deploy-paas-solutions-with-azure-sql.explain-paas-options-for-deploying-sql-server-azure
@@ -47,3 +49,4 @@ units:
 - learn.wwl.deploy-paas-solutions-with-azure-sql.summary
 badge:
   uid: learn.wwl.deploy-paas-solutions-with-azure-sql.badge
+
