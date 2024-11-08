@@ -32,7 +32,6 @@ subjects:
 units:
 - learn.wwl.configure-network-routing-endpoints.introduction
 - learn.wwl.configure-network-routing-endpoints.review-system-routes
-- learn.wwl.configure-network-routing-endpoints.interactive-simulation-routing
 - learn.wwl.configure-network-routing-endpoints.knowledge-check
 - learn.wwl.configure-network-routing-endpoints.summary-resources
 badge:
