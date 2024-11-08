@@ -1,6 +1,6 @@
 Now that you're aware of KQL, let's look at the different query environments where you can use KQL in Microsoft products.
 
-The environments we describe in this unit are [Azure Data Explorer](#azure-data-explorer), [Real-Time Intelligence in Microsoft Fabric)](#real-time-intelligence-in-microsoft-fabric), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
+The environments we describe in this unit are [Azure Data Explorer](#azure-data-explorer), [Real-Time Intelligence in Microsoft Fabric](#real-time-intelligence-in-microsoft-fabric), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
 
 ## Azure Data Explorer
 
