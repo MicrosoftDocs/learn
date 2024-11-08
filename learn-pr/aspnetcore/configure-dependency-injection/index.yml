@@ -31,9 +31,9 @@ products:
 units:
 - learn.configure-dependency-injection.intro
 - learn.configure-dependency-injection.understand-dependency-injection
-- learn.configure-dependency-injectio.exercise-register-services
+- learn.configure-dependency-injection.exercise-register-services
 - learn.configure-dependency-injection.service-lifetimes
-- learn.configure-dependency-injectio.exercise-explore-service-lifetime
+- learn.configure-dependency-injection.exercise-explore-service-lifetime
 - learn.configure-dependency-injection.knowledge-check
 - learn.configure-dependency-injection.summary
 badge:

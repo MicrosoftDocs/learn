@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.configure-dependency-injectio.exercise-register-services
+uid: learn.configure-dependency-injection.exercise-register-services
 
 
 title: Exercise - Register and consume services
