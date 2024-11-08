@@ -34358,6 +34358,11 @@
       "source_path": "learn-pr/azure/implement-firewall-load-balancer/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/index.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
     }
   ]
 }
