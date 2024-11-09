@@ -34,5 +34,7 @@ modules:
 - learn.wwl.ingest-dataflows-gen2-fabric
 - learn.wwl.ingest-data-with-spark-fabric-notebooks 
 - learn.wwl.use-data-factory-pipelines-fabric
+- learn.wwl.explore-event-streams-microsoft-fabric
+
 trophy:
   uid: learn.wwl.ingest-data-with-microsoft-fabric.trophy
