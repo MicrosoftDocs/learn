@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
+uid: learn.wwl.query-data-kql-database-microsoft-fabric.using-kql-with-notebooks
 title: Advanced features
 metadata:
   title: Advanced features
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-advanced-features.md)]
+  [!include[](includes/4a-using-kql-with-notebooks.md)]
