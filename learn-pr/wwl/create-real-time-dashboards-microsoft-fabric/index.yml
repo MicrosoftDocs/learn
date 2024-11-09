@@ -40,7 +40,6 @@ units:
 - learn.wwl.create-real-time-dashboards-microsoft-fabric.real-time-dashboards-best-practices
 - learn.wwl.create-real-time-dashboards-microsoft-fabric.exercise
 - learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
-- learn.wwl.query-data-kql-database-microsoft-fabric
 - learn.wwl.create-real-time-dashboards-microsoft-fabric.summary
 badge:
   uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.badge
