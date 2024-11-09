@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-ai-studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure AI Studio
   description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Studio brings these services together in a single unified experience for AI development on the Azure cloud platform.
   author: wwlpublish
@@ -10,7 +12,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-  ms.custom: ignite-2023
+  ms.custom: ignite-2023, ai-learning-hub
 title: Introduction to Azure AI Studio
 summary: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Studio brings these services together in a single unified experience for AI development on the Azure cloud platform."
 abstract: |
@@ -44,3 +46,4 @@ units:
 - learn.wwl.introduction-to-azure-ai-studio.summary
 badge:
   uid: learn.wwl.introduction-to-azure-ai-studio.badge
+

@@ -4,12 +4,11 @@ title: Prepare to use Apache Spark
 metadata:
   title: Prepare to use Apache Spark
   description: "Prepare to use Apache Spark"
-  ms.date: 08/28/2024
+  ms.date: 09/25/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
-    - build-2023
     - build-2023-dataai
     - build-2023-fabric
 durationInMinutes: 3

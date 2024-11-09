@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-device-templates.add-cloud-properties-to-device-template
 title: Examine the cloud property capability type in a device template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the cloud properties section of a device template
   description: This content is a part of Create and manage device templates in Azure IoT Central
   ms.date: 05/11/2023

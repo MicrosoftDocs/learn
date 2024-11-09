@@ -1,6 +1,6 @@
 Azure Blob Storage is a service that enables you to store massive amounts of unstructured data as binary large objects, or *blobs*, in the cloud. Blobs are an efficient way to store data files in a format that is optimized for cloud-based storage, and applications can read and write them by using the Azure blob storage API.
 
-![An Azure blob storage container with two blobs](../media/azure-blob-storage.png)
+![Screenshot of an Azure blob storage container with two blobs.](../media/azure-blob-storage.png)
 
 In an Azure storage account, you store blobs in *containers*. A container provides a convenient way of grouping related blobs together. You control who can read and write blobs inside a container at the container level.
 

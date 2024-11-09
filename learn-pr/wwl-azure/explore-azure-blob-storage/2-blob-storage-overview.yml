@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-blob-storage.blob-storage-overview
 title: Explore Azure Blob storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Blob storage
   description: "Explore Azure Blob storage"
   ms.date: 07/12/2024

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.responsible-ai-with-github-copilot.six-principles-of-responsible-ai
+title: Microsoft and GitHub's six principles of responsible AI
+metadata:
+  title: Microsoft and GitHub's six principles of responsible AI
+  description: This content is a part of the "Responsible AI with GitHub Copilot" module.
+  ms.date: 09/13/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-six-principles-of-responsible-ai.md)]

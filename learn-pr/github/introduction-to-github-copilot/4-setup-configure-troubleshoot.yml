@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot.setup-configure-troubleshoot
+title: Set up, configure, and troubleshoot GitHub Copilot
+metadata:
+  title: Set up, configure, and troubleshoot GitHub Copilot
+  description: You can configure the behavior of GitHub Copilot on GitHub.com, which affects how GitHub Copilot functions in any IDE that you use.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 09/12/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-setup-configure-troubleshoot.md)]

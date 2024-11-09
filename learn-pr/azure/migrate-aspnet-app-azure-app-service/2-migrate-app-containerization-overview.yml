@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Migrate App Containerization overview
   description: Provides an overview of Azure Migrate App Containerization feature
   ms.date: 01/02/2024

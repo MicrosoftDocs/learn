@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.migrate-linux-postgres
+metadata:
+  title: Migrate Linux and PostgreSQL workloads
+  description: Migrate Linux and PostgreSQL workloads to Azure by using an Azure virtual machine and Azure Database for PostgreSQL.
+  ms.date: 9/16/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: virtual-machines-linux
+title: Migrate Linux and PostgreSQL workloads
+summary: Migrate from an on-premises Linux server to Azure by using an Azure virtual machine and Azure Database for PostgreSQL.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand how to migrate your Linux and PostgreSQL workloads to Azure.
+    - Deploy a Linux virtual machine in Azure.
+    - Run a sample application on your PostgreSQL database.
+prerequisites: |
+  - Basic knowledge of Linux and PostgreSQL
+  - Knowledge of Azure services
+  - An Azure subscription
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - database-administrator
+  - developer
+  - devops-engineer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure-virtual-machines
+  - azure-database-postgresql
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - backend-development
+  - frontend-development
+  - virtual-machine
+  - databases
+units:
+- learn.azure.migrate-linux-postgres.migrate-linux-postgresql-workloads
+- learn.azure.migrate-linux-postgres.deploy-linux-postgresql-infrastructure
+- learn.azure.migrate-linux-postgres.configure-linux-application-workload
+- learn.azure.migrate-linux-postgres.explore-run-linux-postgresql-workloads
+- learn.azure.migrate-linux-postgres.knowledge-check
+- learn.azure.migrate-linux-postgres.summary
+badge:
+  uid: learn.azure.migrate-linux-postgres.badge

@@ -1,4 +1,4 @@
-Create Azure Digital Twins equipped user interfaces (UIs) to provide a window into operations data.
+In this unit, you create Azure Digital Twins equipped user interfaces (UIs) to provide a window into operations data.
 
 ## Add the Operate menu to the main scene
 
@@ -6,13 +6,13 @@ Create Azure Digital Twins equipped user interfaces (UIs) to provide a window in
 1. Drag the prefab **Assets** > **Art** > **Prefabs** > **Bing Maps Operate** into the **Hierarchy** panel:
 
    - Configure the Maps SDK parameters, including your developer key.
-   - The Bing Maps Operate prefab has other components that load wind turbines using *addressables* at runtime. The Addressable Asset System allows you to request an asset by using its address. Once an asset, for example, a prefab, is marked *addressable*, it generates an address. A Unity application can call the address at runtime. Your application discovers and returns local and remotely stored assets, along with any associated dependencies.
-   - Turbine position can be changed by using the Turbine Site Data `ScriptableObject`. To alter the position of any turbine for placement at runtime, change the **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**. Find these configuration parameters for your digital twin turbines under **Assets** > **ScriptableObjects** > **Turbine Site Data**.
+   - The Bing Maps Operate prefab has other components that load wind turbines using *addressables* at runtime. The Addressable Asset System allows you to request an asset by using its address. Once an asset—for example, a prefab—is marked *addressable*, it generates an address. A Unity application can call the address at runtime. Your application discovers and returns local and remotely stored assets, along with any associated dependencies.
+   - You can change turbine position by using the Turbine Site Data `ScriptableObject`. To alter the position of any turbine for placement at runtime, change the **Latitude** or **Longitude** values in the **Wind Turbine Meta Data**. Find these configuration parameters for your digital twin turbines under **Assets** > **ScriptableObjects** > **Turbine Site Data**.
 
    :::image type="content" source="../media/scriptable-object-expanded.png" alt-text="Screenshot of the Unity editor with the Bing Maps operate prefab running in the main scene." lightbox="../media/scriptable-object.png":::
 
    > [!IMPORTANT]
-   > Don't change any other parameters or characteristics on addressables. Otherwise, you need to re-compile them, which is not covered in this module.
+   > Don't change any other parameters or characteristics on addressables. Otherwise, you need to recompile them, which isn't covered in this module.
 
 1. Drag the UI Panel prefab from **Assets** > **UIPrefabs** > **Prefabs** > **OperateSceneUI** into the **Hierarchy** panel.
 

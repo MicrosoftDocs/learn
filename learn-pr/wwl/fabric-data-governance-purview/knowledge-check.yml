@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.fabric-data-governance-purview.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge"
+  ms.date: 9/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "You're considering whether to add Microsoft Purview to your Microsoft Fabric environment for its extra governance features. Which of the following features is only available in Purview?"
+    choices:
+    - content: "Data Loss Prevention (DLP)"
+      isCorrect: true
+      explanation: "Correct. DLP policies aren't available in Microsoft Fabric until you add Purview to your subscriptions."
+    - content: "Sensitivity tags"
+      isCorrect: false
+      explanation: "Incorrect. You can use tags to label items in Microsoft Fabric without Purview."
+    - content: "Capacities"
+      isCorrect: false
+      explanation: "Incorrect. You can use capacities to limit compute resource usage in Fabric without Purview."
+  - content: "You open the Microsoft Purview hub in Microsoft Fabric but don't see a link to the Microsoft Purview Audit tool. What should you do?"
+    choices:
+    - content: "Sign out and sign back in as a Fabric administrator."
+      isCorrect: true
+      explanation: "Correct. Only Fabric administrators see a link to the Microsoft Purview Audit tool."
+    - content: "Add a Microsoft Purview subscription."
+      isCorrect: false
+      explanation: "Incorrect. You must already have a Microsoft Purview subscription because the Microsoft Purview hub is visible."
+    - content: "Select the Open full report button."
+      isCorrect: false
+      explanation: "Incorrect. The Audit link should appear on the hub home page. The full report doesn't display this link."
+  - content: "You're setting up a connection to Microsoft Fabric from Microsoft Purview in a different tenant. Which of these security entities can you use for authentication?"
+    choices:
+    - content: "An Outlook.com account"
+      isCorrect: false
+      explanation: "Incorrect. You can't use an Outlook.com account to authentication for Purview access to Fabric."
+    - content: "A managed identity"
+      isCorrect: false
+      explanation: "Incorrect. You can use a managed account to authenticate when Purview and Fabric are in the same tenant but not for cross-tenant authentication."
+    - content: "A service principal"
+      isCorrect: true
+      explanation: "Correct. You can only use a service principal or delegated authentication when Purview and Fabric are in different tenants."
+    
+  

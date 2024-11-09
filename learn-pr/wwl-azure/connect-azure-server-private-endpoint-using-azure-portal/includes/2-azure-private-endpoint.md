@@ -1,6 +1,6 @@
 A private endpoint is a network interface that uses a private IP address from your virtual network. This network interface connects you privately and securely to a service that's powered by Azure Private Link. By enabling a private endpoint, you're bringing the service into your virtual network.
 
-The service could be an Azure service such as:<br>
+The service could be an Azure service such as:
 
  -  Azure Storage<br>
  -  Azure Cosmos DB
@@ -9,7 +9,7 @@ The service could be an Azure service such as:<br>
 
 ## Private endpoint properties
 
-:::image type="content" source="../media/private-endpoint-properties-example-1c0d28c3.jpg" alt-text="Screenshot showing private endpoint properties.":::
+:::image type="content" source="../media/private-endpoint-properties-example-1c0d28c3-4690abd8.jpg" alt-text="Screenshot showing private endpoint properties.":::
  As you're creating private endpoints, consider the following:
 
  -  Private endpoints enable connectivity between the customers from the same:
@@ -18,7 +18,7 @@ The service could be an Azure service such as:<br>
      -  Virtual network
      -  Regionally peered virtual networks
      -  Globally peered virtual networks
-     -  On-premises environments that use VNP or Express Route.
+     -  On-premises environments that use VPN or Express Route.
      -  Services that are powered by Private Link
  -  Network connections can be initiated only by clients that are connecting to the private endpoint. Service providers don't have a routing configuration to create connections into service customers. Connections can be established in a single direction only.
  -  A read-only network interface is *automatically created* for the lifecycle of the private endpoint. The interface is assigned a dynamic private IP address from the subnet that maps to the private-link resource. The value of the private IP address remains unchanged for the entire lifecycle of the private endpoint.
@@ -34,6 +34,6 @@ You can create private endpoints only on a General Purpose v2 (GPv2) storage acc
 
 When you use private endpoints, traffic is secured to a private-link resource. The platform validates network connections, allowing only those that reach the specified private-link resource. To access more subresources within the same Azure service, more private endpoints with corresponding targets are required. In the case of Azure Storage, for instance, you would need separate private endpoints to access the *file* and *blob* subresources.
 
-Private endpoints provide a privately accessible IP address for the Azure service, but do not necessarily restrict public network access to it. All other Azure services require additional access controls, however. These controls provide an extra network security layer to your resources, providing protection that helps prevent access to the Azure service associated with the private-link resource.<br>
+Private endpoints provide a privately accessible IP address for the Azure service, but do not necessarily restrict public network access to it. All other Azure services require additional access controls, however. These controls provide an extra network security layer to your resources, providing protection that helps prevent access to the Azure service associated with the private-link resource.
 
 Private endpoints support network policies. Network policies enable support for Network Security Groups (NSG), User Defined Routes (UDR), and Application Security Groups (ASG).

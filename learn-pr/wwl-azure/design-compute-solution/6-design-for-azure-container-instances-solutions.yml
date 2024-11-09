@@ -2,6 +2,8 @@
 uid: learn.wwl.design-compute-solution.design-for-azure-container-instances-solutions
 title: Design for Azure Container Instances solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Container Instances solutions
   description: "Design for Azure Container Instances solutions"
   ms.date: 08/29/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-with-translator-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Translate text with the Translator service
   description: Translate text with the Translator service
   author: wwlpublish
@@ -43,3 +45,4 @@ units:
 - learn.wwl.translate-text-with-translator-service.summary
 badge:
   uid: learn.wwl.translate-text-with-translator-service.badge
+

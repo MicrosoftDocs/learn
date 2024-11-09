@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-storage.manage-storage-repair
 title: Manage storage repair in Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage storage repair in Azure Stack HCI
   description: Determine how Azure Stack HCI handles the storage repair process. Describe and manage storage repair speed settings in Azure Stack HCI.
   ms.date: 08/20/2024

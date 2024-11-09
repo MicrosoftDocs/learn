@@ -2,6 +2,8 @@
 uid: learn.wwl.design-data-integration.solution-azure-synapse-analytics
 title: Design a data integration and analytic solution with Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a data integration and analytic solution with Azure Synapse Analytics
   description: "Design a data integration and analytic solution with Azure Synapse Analytics"
   ms.date: 07/30/2024

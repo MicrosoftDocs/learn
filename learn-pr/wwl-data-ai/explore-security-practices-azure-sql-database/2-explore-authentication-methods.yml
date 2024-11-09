@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-security-practices-azure-sql-database.explore-authentication-methods
+title: Explore authentication methods
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore authentication methods
+  description: "Learn to explain authentication methods for Azure SQL Database."
+  ms.date: 09/24/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-authentication-methods.md)]

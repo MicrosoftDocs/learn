@@ -71,7 +71,7 @@ Developers can encounter various security flaws in their code, which can lead to
 - Insecure Direct Object References (IDOR): A type of access control issue that arises when an application provides direct access to objects based on user-supplied input.
 - Missing Function Level Access Control: Sometimes an application does not properly protect function level access controls, allowing attackers to forge requests to access functionality without proper authorization.
 
-Many other security flaws can found in code. It’s important for developers to use tools and practices to identify and fix these issues proactively.
+Many other security flaws can be found in code. It’s important for developers to use tools and best practices to identify and fix these issues proactively.
 
 ## Improve code security using GitHub Copilot Chat
 

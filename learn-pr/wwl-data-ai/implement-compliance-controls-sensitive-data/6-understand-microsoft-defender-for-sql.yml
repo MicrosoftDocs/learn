@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.understand-microsoft-defender-for-sql
 title: Understand Microsoft Defender for SQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Microsoft Defender for SQL
   description: "Understand Microsoft Defender for SQL"
   ms.date: 09/02/2022

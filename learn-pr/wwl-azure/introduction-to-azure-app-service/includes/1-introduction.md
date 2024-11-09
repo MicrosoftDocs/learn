@@ -1,4 +1,4 @@
-Your company is considering moving their web apps to the cloud and has asked you to evaluate Azure App Service.
+Your company is considering moving their web apps to the cloud and you're asked to evaluate Azure App Service.
 
 ## Learning objectives
 

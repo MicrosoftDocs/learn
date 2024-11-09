@@ -308,6 +308,14 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
+- id: dev-env-spring-jbosseap
+  title: Java framework
+  prompt: Choose your Java framework
+  pivots:
+    - id: spring
+      title: Spring
+    - id: jbosseap
+      title: JBoss EAP
 - id: dev-env-csharp-java-cli
   title: Development environment
   prompt: Choose your development environment
@@ -442,3 +450,11 @@ groups:
       title: Microsoft Entra admin center
     - id: microsoft-graph-api
       title: Microsoft Graph API
+- id: sql-database
+  title: SQL database options
+  prompt: Choose the SQL database platform you want to use
+  pivots:
+    - id: azure-sql-database
+      title: Microsoft Azure SQL Database
+    - id: sql-server
+      title: Microsoft SQL Server

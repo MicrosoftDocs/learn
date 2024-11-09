@@ -19,7 +19,7 @@ If you want to reduce your administrative load for those backing services, you c
 
 ## Using Azure PaaS database services with a .NET Aspire solution
 
-In cloud-native solutions, many microservices need to persist data and use relational database systems to do it. .NET Aspire makes database operations simple by providing .NET Aspire components for SQL Server, PostgreSQL, and other popular systems. For deployment, you can choose to use these services instead of hosting your database in a container:
+In cloud-native solutions, many microservices need to persist data and use relational database systems to do it. .NET Aspire makes database operations simple by providing .NET Aspire integrations for SQL Server, PostgreSQL, and other popular systems. For deployment, you can choose to use these services instead of hosting your database in a container:
 
 - **Azure SQL Database**: This PaaS service hosts SQL Server databases in this cloud.
 - **Azure Database for PostgreSQL**: This PaaS services hosts PostgreSQL databases in the cloud.
@@ -66,11 +66,11 @@ Now, when you debug the solution locally, .NET runs the database as a container 
 
 ## Using Azure Redis with a .NET Aspire app
 
-In cloud-native solutions, it's popular to use Redis either to provide a high-performance database service or to cache content to accelerate responses to users. .NET Aspire includes three Redis components:
+In cloud-native solutions, it's popular to use Redis either to provide a high-performance database service or to cache content to accelerate responses to users. .NET Aspire includes three Redis integrations:
 
-- **.NET Aspire Stack Exchange Redis component**: Use this component to create and call Redis databases in your solution.
-- **.NET Aspire Stack Exchange Redis output caching component**: Use this component to use Redis to cache entire web responses.
-- **.NET Aspire Stack Exchange Redis distributed caching component**: Use this component to use Redis to cache data across multiple instances of containers and multiple microservices.
+- **.NET Aspire Stack Exchange Redis integration**: Use this integration to create and call Redis databases in your solution.
+- **.NET Aspire Stack Exchange Redis output caching integration**: Use this integration to use Redis to cache entire web responses.
+- **.NET Aspire Stack Exchange Redis distributed caching integration**: Use this integration to use Redis to cache data across multiple instances of containers and multiple microservices.
 
 During development, .NET Aspire creates containers in your local container host (Docker or Podman) for the Redis service. During deployment, the default configuration is similar: the tools create a container in ACA or AKS to host the Redis service.
 
@@ -93,5 +93,5 @@ Now, when you debug the solution locally, .NET runs Redis as a container within 
 
 ## Learn more
 
-- [Tutorial: Deploy a .NET Aspire app with a SQL Server Database to Azure](/dotnet/aspire/database/sql-server-component-deployment)
-- [Tutorial: Deploy a .NET Aspire app with a Redis Cache to Azure](/dotnet/aspire/caching/caching-components-deployment)
+- [Tutorial: Deploy a .NET Aspire app with a SQL Server Database to Azure](/dotnet/aspire/database/sql-server-integration-deployment)
+- [Tutorial: Deploy a .NET Aspire app with a Redis Cache to Azure](/dotnet/aspire/caching/caching-integrations-deployment)

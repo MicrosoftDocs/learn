@@ -3,10 +3,11 @@ uid: learn.wwl.describe-security-capabilities-of-azure-sentinel
 metadata:
   title: Describe the capabilities in Microsoft Sentinel
   description: "Describe the capabilities in Microsoft Sentinel"
-  ms.date: 11/23/2023
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
+  ai-usage: ai-assisted
   ms.custom:
   - N/A
   ms.service: microsoft-sentinel

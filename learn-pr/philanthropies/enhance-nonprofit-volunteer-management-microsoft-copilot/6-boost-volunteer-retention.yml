@@ -8,9 +8,9 @@ metadata:
   ms.author: cohodge
   ms.date: 08/27/2024
   ms.topic: unit
-  ai-usage: ai-assisted
   ms.collection:
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
+  ai-usage: ai-assisted
 durationInMinutes: 4
 content: |
   [!include[](includes/6-boost-volunteer-retention.md)]

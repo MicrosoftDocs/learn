@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.explore-managed-online-endpoints
 title: Explore managed online endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore managed online endpoints
   description: Explore managed online endpoints
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore-managed-online-endpoints.md)]
+

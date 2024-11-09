@@ -2,6 +2,8 @@
 uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.choose-appropriate-ai-approach-for-your-data
 title: Choose the appropriate AI approach for your data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the appropriate AI approach for your data
   description: Choose the appropriate AI approach for your data
   author: wwlpublish
@@ -18,3 +20,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-choose-appropriate-ai-approach-for-your-data.md)]
+

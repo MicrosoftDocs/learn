@@ -1,3 +1,5 @@
+> [!VIDEO https://play.vidyard.com/XYUdrPj43e5HhMYB6PRFVP?loop=1]
+
 *Natural language processing* (NLP) is a common AI problem in which software must be able to work with text or speech in the natural language form that a human user would write or speak. Within the broader area of NLP, *natural language understanding* (NLU) deals with the problem of determining semantic meaning from natural language - usually by using a trained language model.
 
 A common design pattern for a natural language understanding solution looks like this:

@@ -14,7 +14,7 @@ Microsoft Entra ID Protection provides organizations with information of suspici
 
 - **User risk**. A user risk represents the probability that a given identity or account is compromised. Examples include leaked credentials, user reported suspicious activity, suspicious sending patterns, and more.
 
-For a detailed list of sign-in and user risk detections, see [Risk detections mapped to riskEventType](/entra/id-protection/concept-identity-protection-risks#risk-detections-mapped-to-riskeventtype)/
+For a detailed list of sign-in and user risk detections, see [Risk detections mapped to riskEventType](/entra/id-protection/concept-identity-protection-risks#risk-detections-mapped-to-riskeventtype)
 
 Identity Protection only generates risk detections when correct credentials are used in the authentication request. If a user uses incorrect credentials, it will not be flagged by Identity Protection since there isn't a risk of credential compromise unless a bad actor uses the correct credentials.
 

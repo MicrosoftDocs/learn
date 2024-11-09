@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe access management capabilities of Microsoft Entra
   description: "Describe access management capabilities of Microsoft Entra"
   ms.date: 08/02/2024
@@ -8,7 +10,7 @@ metadata:
   ms.author: ceperezb
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: active-directory
+  ms.service: azure-active-directory
 title: Describe access management capabilities of Microsoft Entra
 summary: A key function of Microsoft Entra is to manage access.  Learn about Microsoft's Security Service Edge (SSE) solution, conditional access, and how Microsoft Entra roles and role-based access control (RBAC) help organizations manage access.
 abstract: |

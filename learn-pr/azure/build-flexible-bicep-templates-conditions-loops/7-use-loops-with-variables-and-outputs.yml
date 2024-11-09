@@ -2,10 +2,12 @@
 uid: learn.azure.bicep-conditions-loops.use-loops-with-variables-and-outputs
 title: Use variable and output loops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Use variable and output loops
   description: Learn how to use loops with variables and outputs.
-  ms.date: 11/14/2023
+  ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/7-use-loops-with-variables-and-outputs.md)]
+

@@ -8,7 +8,7 @@ In this unit, you'll learn about the integration between .NET Aspire and OpenTel
 
 A principal aim in the design and implementation of .NET Aspire is to ensure that cloud-native apps are easy to monitor and troubleshoot. .NET Aspire simplifies ensuring that the complete app is observable and fully instrumented by using the OpenTelemetry APIs and automatically setting up the sources of telemetry data whenever you create a new app from the templates or add an existing app to .NET Aspire orchestration.
 
-.NET Aspire components also have built-in support for telemetry.
+.NET Aspire integrations also have built-in support for telemetry.
 
 .NET Aspire provides the .NET Aspire dashboard when you debug locally. This web interface includes rich tools that display logs, metrics in graphical formats, and traces in timelines. 
 

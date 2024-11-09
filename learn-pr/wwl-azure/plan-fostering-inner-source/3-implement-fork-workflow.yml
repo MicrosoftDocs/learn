@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-foster-inner-source.implement-fork-workflow
 title: Implement the fork workflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement the fork workflow
   description: "Implement the fork workflow"
   ms.date: 05/08/2024

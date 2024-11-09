@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-load-balancer.implement-public
 title: Implement a public load balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement a public load balancer
   description: "Implement a public load balancer"
   ms.date: 03/15/2024

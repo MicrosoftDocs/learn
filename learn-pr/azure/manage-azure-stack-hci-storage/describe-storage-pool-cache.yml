@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-storage.describe-storage-pool-cache
 title: Describe storage pool cache in Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe storage pool cache in Azure Stack HCI
   description: Learn about the storage pool cache’s role and behavior in Azure Stack HCI. View details about three common cache scenarios.
   ms.date: 08/20/2024

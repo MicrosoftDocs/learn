@@ -2,7 +2,7 @@
 uid: learn.introduction-to-polyglot-notebooks
 metadata:
   title: Introduction to Polyglot Notebooks
-  description: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
+  description: You can use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
   author: japhletnwamu
   ms.author: japhletnwamu
   ms.date: 04/03/2024
@@ -16,13 +16,13 @@ title: Introduction to Polyglot Notebooks
 summary: Use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the core concepts of Polyglot Notebooks
+  - Describe the core concepts of Polyglot Notebooks.
   - Explain why you should use Polyglot Notebooks.
   - Create and run Notebooks.
-  - Use features like variable sharing and commands to combine frontend and backend and mermaid to render flowcharts and diagrams.
-prerequisites:
-  To get started with Polyglot Notebooks, you need to.
-  - Install the latest .NET SDK,
+  - Use features like variable sharing and commands to combine frontend and backend, and features like Mermaid to render flowcharts and diagrams.
+prerequisites: |
+  To get started with Polyglot Notebooks, you need to:
+  - Install the latest .NET SDK.
   - Install Polyglot Notebooks as an extension on Visual Studio Code. From there, you can create and run Notebooks and do much more.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

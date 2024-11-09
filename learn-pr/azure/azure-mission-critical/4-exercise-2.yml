@@ -2,6 +2,8 @@
 uid: learn.azure-mission-critical.exercise-two
 title: Exercise - Expand your design to multiple regions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Expand your design to multiple regions
   description: Convert the architecture to an active-active, shared-state, multiregion topology designed to withstand a faulted region.
@@ -26,3 +28,4 @@ quiz:
     - content: "Azure Traffic Manager"
       isCorrect: false
       explanation: "Traffic Manager is a DNS-based global traffic load balancer, but it doesn't have the capabilities this architecture needs, like Web Application Firewall and fast failover."
+

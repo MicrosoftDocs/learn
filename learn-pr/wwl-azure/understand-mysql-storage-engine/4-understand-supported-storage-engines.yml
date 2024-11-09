@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-mysql-storage-engine.understand-supported-storage-engines
 title: Understand the supported storage engines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the supported storage engines
   description: "Understand the supported storage engines"
   ms.date: 11/08/2022

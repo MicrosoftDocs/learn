@@ -1,4 +1,4 @@
-In this lab, you'll use the .NET Aspire Azure Cosmos DB component to connect to and add data to a Cosmos DB database. You'll use the **Azure Cosmos DB Emulator**, running on your local computer, to simulate a Cosmos DB database in an Azure subscription in the cloud.
+In this lab, you'll use the .NET Aspire Azure Cosmos DB integration to connect to and add data to a Cosmos DB database. You'll use the **Azure Cosmos DB Emulator**, running on your local computer, to simulate a Cosmos DB database in an Azure subscription in the cloud.
 
 ## Install prerequisites
 
@@ -338,5 +338,5 @@ Your code is now complete. Let's test the eShop:
 
 ## Learn more
 
-- [.NET Aspire Azure Cosmos DB component](/dotnet/aspire/database/azure-cosmos-db-component)
+- [.NET Aspire Azure Cosmos DB integration](/dotnet/aspire/database/azure-cosmos-db-integration)
 - [What is the Azure Cosmos DB emulator?](/azure/cosmos-db/emulator)

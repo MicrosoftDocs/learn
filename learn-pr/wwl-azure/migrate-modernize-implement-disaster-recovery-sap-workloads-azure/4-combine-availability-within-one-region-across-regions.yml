@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.combine-availability-within-one-region-across-regions
 title: Combine availability within one region and across regions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Combine availability within one region and across regions
   description: "Combine availability within one region and across regions"
   ms.date: 01/09/2024

@@ -1,8 +1,8 @@
 At this point, you can build the *Space Game* web project through the pipeline.
 
-But where do the results of the build go? Right now, the output of the build remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
+But where do the build results go? Right now, the build output remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
 
-You can store build artifacts in Azure Pipelines so that they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
+You can store build artifacts in Azure Pipelines so that they're available to others on your team after the build completes, which is what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
 > Azure Pipelines lets you automatically deploy the built app to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
@@ -29,9 +29,9 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
     The first task uses the `DotNetCoreCLI@2` task to *publish* or package the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
-    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to show its use.
+    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it, but we show it here to show its use.
 
-1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change to GitHub.
 
     > [!TIP]
     > Before you run these Git commands, remember to save *azure-pipelines.yml*.
@@ -44,7 +44,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 1. As you did earlier, from Azure Pipelines, trace the build through each of the steps.
 
-1. When the pipeline completes, go back to the summary for the build.
+1. When the pipeline completes, go back to the build summary.
 
 1. Under **Related**, there's **1 published**.
 
@@ -62,7 +62,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 ## Define variables to enhance readability
 
-Mara steps back to examine her work. The build configuration does what she needs, but she wants to ensure Andy and others can easily help keep it up-to-date and extend it.
+Mara steps back to examine her work. The build configuration does what she needs, but she wants to ensure Andy and others can easily help keep it up to date and extend it.
 
 Variables allow you to define values once and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
 
@@ -121,7 +121,7 @@ You now use variables to define these values one time. You then reference the va
 
     The script command uses the variable to define both the source directory for Sass files and the directory in which to write CSS files. It also uses the variable to define the task name that's shown in the user interface.
 
-1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change to GitHub.
 
     ```bash
     git add azure-pipelines.yml

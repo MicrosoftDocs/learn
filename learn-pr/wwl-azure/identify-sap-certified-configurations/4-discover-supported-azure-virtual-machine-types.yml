@@ -2,9 +2,11 @@
 uid: learn.wwl.identify-sap-certified-configurations.discover-supported-azure-virtual-machine-types-for-sap-products-windows-linux
 title: Discover supported Azure Virtual Machines for SAP products on Windows and Linux
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover supported Azure Virtual Machines for SAP products on Windows and Linux
   description: "Discover supported Azure Virtual Machines for SAP products on Windows and Linux."
-  ms.date: 08/01/2024
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

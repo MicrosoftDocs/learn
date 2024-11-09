@@ -2,6 +2,8 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, you answer questions to validate that you've understood the learning objectives.
   ms.date: 07/20/2024
@@ -56,3 +58,4 @@ quiz:
     - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
       isCorrect: true
       explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores."
+

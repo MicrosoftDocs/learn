@@ -11,6 +11,8 @@ Your first task is to create a scale set. Configure it to run a web server, in t
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and open Azure Cloud Shell.
 
+1. In the toolbar at the top of the Cloud Shell window, select **Settings** > **Go to Classic version**.
+
 1. In Cloud Shell, start the code editor and create a file named *cloud-init.yaml*.
 
     ```bash
@@ -88,9 +90,9 @@ Your first task is to create a scale set. Configure it to run a web server, in t
       --lb-name webServerScaleSetLB \
       --probe-name webServerHealth \
       --backend-pool-name webServerScaleSetLBBEPool \
-      --backend-port 80 \
+      --backend-port 8080 \
       --frontend-ip-name loadBalancerFrontEnd \
-      --frontend-port 80 \
+      --frontend-port 8080 \
       --protocol tcp
     ```
 

@@ -2,6 +2,8 @@
 uid: learn.align-requirements-in-azure.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned about IaaS, PaaS, and SaaS approaches.
   ms.date: 10/13/2023

@@ -2,7 +2,7 @@ Playgrounds in Azure OpenAI Studio are interfaces that you can use to experiment
 
 ## Completions playground
 
-The completions playground allows you to make calls to your deployed model and adjust its parameters by using a text-in/text-out interface. Select the deployment name of your model under **Deployments**. If you're not sure where to start, you can use the provided examples. When you're more comfortable, you can enter your own prompts.
+The completions playground allows you to make calls to your deployed model and adjust its parameters by using a text-in/text-out interface. Select the deployment name of your large language model (LLM) under **Deployments**. If you're not sure where to start, you can use the provided examples. When you're more comfortable, you can enter your own prompts.
 
 :::image type="content" source="../media/completions-playground.png" alt-text="Screenshot of the Azure OpenAI Studio completions playground." lightbox="../media/completions-playground.png":::
 

@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.python-flask-build-ai-web-app.2-flask-fundamentals
 title: Flask fundamentals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Flask fundamentals
   description: Learn the fundamentals of Flask.
   ms.date: 04/08/2022
@@ -28,3 +30,4 @@ quiz:
       - content: "Python only"
         isCorrect: true
         explanation: "Correct! Flask is a framework for building Python web apps."
+

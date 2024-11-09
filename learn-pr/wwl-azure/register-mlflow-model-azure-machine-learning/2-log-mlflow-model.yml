@@ -2,14 +2,17 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning.log-mlflow-model
 title: Log models with MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Log models with MLflow
   description: Learn how to log models with MLflow for easy deployment in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 01/12/2024
+  ms.date: 11/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-log-mlflow-model.md)]
+

@@ -5,13 +5,9 @@ metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 09/19/2023
-  author: wwlpublish
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

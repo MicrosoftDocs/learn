@@ -23,10 +23,10 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
-    | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you also must configure **Runtime stack** to prepare App Service resources to run your app. |
+    | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you must also configure **Runtime stack** to prepare App Service resources to run your app. |
     | Runtime stack | .NET 8 (LTS) | The platform on which your application is going to run. Your choice might affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers to run your app. |
-    | Region | East US | The geographical region from which your app is hosted. |
+    | Region | Central US | The geographical region from which your app is hosted. |
     | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that powers your app. By default, the wizard creates a new plan in the same region as the web app. |
     | Pricing plan | Free F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
@@ -43,7 +43,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. In the **Create a resource** menu, select **Web**.
 
-1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** resource pane appears.
+1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -106,7 +106,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. In the **Create a resource** menu, select **Web**.
 
-1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** resource pane appears.
+1. Select **Web App**. If you don't see it, in the search box, search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

@@ -6,9 +6,9 @@ You deployed Azure File Sync and configured both the Azure and on-premises envir
 
 1. Go to the storage account by selecting **Storage accounts** > **extendcadfilesXXXX**. Your **Storage account** pane appears.
 
-1. In the left menu pane, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
+1. In the service menu, under **Security + networking**, select **Access keys**. The **Access keys** pane appears for your storage account.
 
-   :::image type="content" source="../media/10-access-keys-option.png" alt-text="Screenshot of the Access keys option under Security + settings.":::
+   :::image type="content" source="../media/10-access-keys.png" alt-text="Screenshot of the Access keys option under Security + networking.":::
 
 1. Under **key1**, copy the **Key** value. Use this key to set up the mapped drive.
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-testing-progressive-exposure-deployment.explore-ci-cd-deployment-rings
 title: Explore CI-CD with deployment rings
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore CI-CD with deployment rings
   description: "Explore CI-CD with deployment rings"
   ms.date: 05/27/2024

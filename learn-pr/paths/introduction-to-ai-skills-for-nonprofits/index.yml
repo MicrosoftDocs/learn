@@ -4,10 +4,12 @@ title: Introduction to AI Skills for nonprofits
 metadata:
   title: Introduction to AI Skills for nonprofits
   description: Learn how to boost productivity with AI by understanding how to craft effective prompts with Copilot across Microsoft applications such as Word, PowerPoint, Outlook, Excel, and Teams. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
-  ms.date: 05/29/2024
-  author: CourtneyHMicrosoft 
+  author: CourtneyHMicrosoft
   ms.author: courtney.hodge
+  ms.date: 05/29/2024
   ms.topic: learning-path
+  ms.collection:
+    - philanthropies-ai-copilot
 summary: Learn how to boost productivity with AI by understanding how to craft effective prompts with Copilot across Microsoft applications such as Word, PowerPoint, Outlook, Excel, and Teams. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
 prerequisites: None
 iconUrl: /training/achievements/generic-trophy.svg

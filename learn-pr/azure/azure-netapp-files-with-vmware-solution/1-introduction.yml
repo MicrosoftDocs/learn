@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Introduction to using Azure NetApp Files with Azure VMware Solution"

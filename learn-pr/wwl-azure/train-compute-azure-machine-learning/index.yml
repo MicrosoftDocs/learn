@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.train-compute-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train compute-intensive models with Azure Machine Learning
   description: Train compute-intensive models with Azure Machine Learning
   author: wwlpublish
@@ -38,3 +40,4 @@ units:
 - learn.wwl.train-compute-azure-machine-learning.summary
 badge:
   uid: learn.wwl.train-compute-azure-machine-learning.badge
+

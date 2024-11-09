@@ -2,6 +2,8 @@
 uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.3-analyze-the-decision-criteria
 title: Analyze the decision criteria
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze the decision criteria
   description: Analyze the decision criteria
   ms.date: 10/03/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-analyze-the-decision-criteria.md)]
+

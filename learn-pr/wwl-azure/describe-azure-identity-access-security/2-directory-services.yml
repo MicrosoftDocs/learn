@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-azure-identity-access-security.directory-services
 title: Describe Azure directory services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure directory services
   description: "Describe Azure directory services"
-  ms.date: 01/05/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy deep learning workloads to production with Azure Machine Learning
   description: Deploy deep learning workloads to production with Azure Machine Learning
   author: wwlpublish
@@ -40,3 +42,4 @@ units:
 - learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.summary
 badge:
   uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge
+

@@ -4,7 +4,7 @@ In this unit, you explore the requirements for a network IP address scheme. You 
 
 ## Gather your requirements
 
-Before planning your network IP address scheme, you must gather the requirements for your infrastructure. These requirements also will help you prepare for future growth by reserving extra IP addresses and subnets.
+Before planning your network IP address scheme, you must gather the requirements for your infrastructure. These requirements also help you prepare for future growth by reserving extra IP addresses and subnets.
 
 Here are two of the questions you might ask to discover the requirements:
 

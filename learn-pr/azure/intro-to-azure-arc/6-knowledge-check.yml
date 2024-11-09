@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.6-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 12/07/2023
@@ -53,4 +55,5 @@ quiz:
     - content: "Amazon Web Services	EKS and Google Cloud Platform	GKE only."
       isCorrect: false
       explanation: "Incorrect. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
+
 

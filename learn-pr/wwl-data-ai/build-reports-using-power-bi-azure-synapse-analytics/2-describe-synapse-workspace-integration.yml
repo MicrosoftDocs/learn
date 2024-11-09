@@ -2,6 +2,8 @@
 uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.describe-synapse-workspace-integration
 title: Describe the Power BI and Synapse workspace integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Power BI and Synapse workspace integration
   description: "Describe the Power BI and Synapse workspace integration"
   ms.date: 05/16/2023

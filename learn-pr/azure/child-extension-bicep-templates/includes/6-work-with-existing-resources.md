@@ -13,7 +13,7 @@ Bicep provides the `existing` keyword for you to use in these situations.
 Within a Bicep file, you can define a resource that already exists. The declaration looks similar to a normal resource definition, but there are a few key differences. In the following example of an existing resource definition, the definition refers to a storage account named `toydesigndocs`. The storage account is in the same resource group that your Bicep template is deploying resources to.
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' existing = {
   name: 'toydesigndocs'
 }
 ```

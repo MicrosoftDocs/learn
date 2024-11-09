@@ -8,7 +8,7 @@ Here, you'll try Storage Explorer by downloading, installing, and connecting to 
 
 First, you need to download and install Storage Explorer.  
 
-1. Browse to the [Azure Storage Explorer website](https://azure.microsoft.com/features/storage-explorer/?azure-sandbox=true).
+1. Browse to the [Azure Storage Explorer website](https://azure.microsoft.com/products/storage/storage-explorer/?azure-sandbox=true).
 
 1. Select **Download now**, then select your preferred operating system. The following steps will go through the Windows version of the application. Your steps will be different if you're using a different OS.
 
@@ -54,7 +54,7 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
     ```azurecli
     az storage account create \
-    --name  mslearn$RANDOM \
+    --name mslearn$RANDOM \
     --resource-group "<rgn>[sandbox resource group name]</rgn>" \
     --sku Standard_GRS \
     --kind StorageV2
@@ -73,17 +73,17 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
     > [!NOTE]
     > If the storage account you created earlier isn't listed, wait a few moments and select **Refresh All**; it can take a couple of minutes for the account to appear.
 
-1. Right-click the **Blob Containers** virtual folder to access the shortcut menu, and then select **Create Blob Container**.
+1. Right-click the **Blob Containers** virtual folder to access the shortcut menu, then select **Create Blob Container**.
 
     ![Screenshot that shows the shortcut menu options for the Blob Containers folder.](../media/3-storage-explorer-create-blob-context-menu.png)
 
-1. Name the container **myblobcontainer**, and press <kbd>Enter</kbd>.
+1. Name the container **myblobcontainer** and press <kbd>Enter</kbd>.
 
     Each created container appears in a tab to the right of the resource tree.
 
    ![Screenshot that shows the content and details of the new myblobcontainer blob container.](../media/3-storage-explorer-create-blob-view.png)
 
-1. Upload a blob to the container. In the **myblobcontainer** pane, select **Upload**, and then select **Upload Files**. The **Upload Files** dialog box appears.
+1. Upload a blob to the container. In the **myblobcontainer** pane, select **Upload**, then select **Upload Files**. The **Upload Files** dialog box appears.
 
 1. For **Selected files**, select the ellipsis (**...**). Browse to a small file on your device and select **Open**. Select **Upload** to upload the file.
 
@@ -103,7 +103,7 @@ To create a queue in your storage account:
 
 1. Expand the **cloudshell** storage account.
 
-1. Right-click the **Queues** virtual folder to access the shortcut menu, and then select **Create Queue**.
+1. Right-click the **Queues** virtual folder to access the shortcut menu, then select **Create Queue**.
 
 1. An empty and unnamed queue is created inside the **Queues** folder. The queue won't be created until you give it a name.
 

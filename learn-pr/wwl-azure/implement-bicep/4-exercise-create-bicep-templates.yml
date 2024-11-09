@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-bicep.exercise-create-bicep-templates
 title: Exercise - Create Bicep templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Bicep templates
   description: "Exercise - Create Bicep templates"
   ms.date: 05/23/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-create-bicep-templates.md)]
+

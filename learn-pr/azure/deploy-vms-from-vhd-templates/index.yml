@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.deploy-vms-from-vhd-templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure virtual machines from VHD templates
   description: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and error.
   manager: akashdubey
-  ms.date: 04/03/2024
+  ms.date: 09/09/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: module
@@ -39,3 +41,4 @@ units:
 - learn.deploy-vms-from-vhd-templates.4-exercise-create-image-provision-vm
 - learn.deploy-vms-from-vhd-templates.5-knowledge-check
 - learn.deploy-vms-from-vhd-templates.6-summary
+

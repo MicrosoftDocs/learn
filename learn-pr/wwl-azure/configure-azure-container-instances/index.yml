@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-container-instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Container Instances
   description: Learn how to configure Azure Container Instances including container groups.
   ms.date: 07/24/2024
@@ -39,3 +41,4 @@ units:
 - learn.wwl.configure-azure-container-instances.summary-resources
 badge:
   uid: learn.wwl.configure-azure-container-instances.badge
+

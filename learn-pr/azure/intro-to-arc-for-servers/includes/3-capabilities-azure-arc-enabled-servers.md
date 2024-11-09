@@ -90,4 +90,4 @@ Azure Automanage machine best practices is a service that eliminates the need to
 - Azure Automation Account
 - Log Analytics Workspace
 
-Choose the best response for each of the following questions, then select **Check your answers**.
+Choose the best response for each of the following questions.

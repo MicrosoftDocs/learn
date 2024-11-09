@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-setup-starter-app
 title: Exercise - Setup and run the starter web application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Setup and run the starter web application
   description: |

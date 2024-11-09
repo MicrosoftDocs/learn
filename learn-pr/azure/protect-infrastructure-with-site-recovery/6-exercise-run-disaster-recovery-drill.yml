@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.6-exercise-run-disaster-recovery-drill
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Run a disaster recovery drill
   description: Exercise - Run a disaster recovery drill
   ms.date: 12/07/2023

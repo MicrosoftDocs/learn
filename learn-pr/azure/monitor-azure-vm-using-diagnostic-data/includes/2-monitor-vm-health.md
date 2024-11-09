@@ -48,7 +48,7 @@ You can use Azure Monitor Metrics Explorer to plot more metrics graphs, investig
 
 ### Recommended alert rules
 
-Alerts proactively notify you of specified occurrences and patterns in your VM host metrics. *Recommended alert rules* are a predefined set of alert rules based on commonly monitored host metrics. These rules define recommended CPU, memory, disk, and network usage levels to alert on, as well as VM availability, which alerts you when the VM stops running.
+Alerts proactively notify you of specified occurrences and patterns in your VM host metrics. *Recommended alert rules* are a predefined set of alert rules based on commonly monitored host metrics. These rules define recommended CPU, memory, disk, and network usage levels to alert on. The rules also include VM availability, which alerts you when the VM stops running.
 
 You can quickly enable and configure recommended alert rules when you create an Azure VM, or afterwards from the VM's portal page. You can also view, configure, and create custom alerts by using Azure Monitor Alerts.
 
@@ -56,9 +56,9 @@ You can quickly enable and configure recommended alert rules when you create an 
 
 Azure Monitor automatically records and displays activity logs for Azure VMs. Activity logs include information like VM startup or modifications. You can create diagnostic settings to send activity logs to the following destinations:
 
-- Azure Monitor Logs, for more complex querying and alerting and for longer retention up to two years.
-- Azure Storage, for cheaper, long-term archiving.
-- Azure Event Hubs, to forward outside of Azure.
+- **Azure Monitor Logs:** For more complex querying and alerting, and for longer retention up to two years.
+- **Azure Storage:** For cheaper, long-term archiving.
+- **Azure Event Hubs:** To forward outside of Azure.
 
 ### Boot diagnostics
 
@@ -68,9 +68,9 @@ Once you enable boot diagnostics, you can see screenshots from the VM's hypervis
 
 ## Guest OS, client workload, and application monitoring
 
-VM client monitoring can include monitoring the operating system (OS), workloads, and applications that run on the VM. To collect metrics and logs from guest OS and client workloads and applications, you need to install Azure Monitor Agent and set up a data collection rule (DCR).
+VM client monitoring can include monitoring the operating system (OS), workloads, and applications that run on the VM. To collect metrics and logs from guest OS and client workloads and applications, you need to install Azure Monitor Agent and set up a DCR.
 
-DCRs define what data to collect and where to send that data. You can use a DCR to send Azure Monitor metrics data, or *performance counters*, to Azure Monitor Logs or Azure Monitor Metrics. Or, you can send event log data to Azure Monitor Logs. In other words, Azure Monitor Metrics can store only metrics data, but Azure Monitor Logs can store both metrics and event logs.
+DCRs define what data to collect and where to send that data. You can use a DCR to send Azure Monitor metrics data, or *performance counters*, to Azure Monitor Logs or Azure Monitor Metrics. You can also send event log data to Azure Monitor Logs. In other words, Azure Monitor Metrics can store only metrics data, but Azure Monitor Logs can store both metrics and event logs.
 
 ### VM insights
 
@@ -80,11 +80,10 @@ VM insights is an Azure Monitor feature that helps get you started monitoring yo
 - A preconfigured DCR that monitors and collects the most common performance counters for Windows and Linux.
 - Predefined trending performance metrics charts and workbooks from the VM's guest OS.
 - A set of predefined workbooks that show collected VM client metrics over time.
-- Optionally, collection of processes running on the VM, dependencies with other services, and a dependency map that displays interconnected components with other VMs and external sources.
+- Optionally, a collection of processes running on the VM, dependencies with other services, and a dependency map that displays interconnected components with other VMs and external sources.
 
-Predefined VM insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can view VM insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across VMs. You can edit the prebuilt workbook configurations or create your own custom workbooks.
+Predefined VM insights workbooks show performance, connections, active ports, traffic, and other collected data from one or several VMs. You can view VM insights data directly from a single VM, or see a combined view of multiple VMs to view and assess trends and patterns across VMs. You can edit the prebuilt workbook configurations, or create your own custom workbooks.
 
 ### Client event log data
 
-VM insights creates a DCR that collects a specific set of performance counters. To collect other data, such as event logs, you can create a separate DCR that specifies the data you want to collect from the VM and where to send it. Azure Monitor stores collected log data in a Log Analytics workspace, where you can access and analyze the data by using log queries written in Kusto Query Language (KQL).
-
+VM insights creates a DCR that collects a specific set of performance counters. To collect other data, such as event logs, you can create a separate DCR that specifies the data you want to collect from the VM and where to send it. Azure Monitor stores collected log data in a Log Analytics workspace. From there, you can access and analyze the data by using log queries written in Kusto Query Language (KQL).

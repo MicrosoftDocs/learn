@@ -2,6 +2,8 @@
 uid: learn.azure.arm-template-specs.exercise-update-version-template-spec
 title: Exercise - Update and version a template spec
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Update and version a template spec
   description: Learn how to update template specs safely by using versions.
@@ -16,3 +18,4 @@ durationInMinutes: 4
 azureSandbox: true
 content: |
   [!include[](includes/7-exercise-update-version-template-spec.md)]
+

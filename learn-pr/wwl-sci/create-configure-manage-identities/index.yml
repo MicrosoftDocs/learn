@@ -3,22 +3,28 @@ uid: learn.wwl.create-configure-manage-identities
 metadata:
   title: Create, configure, and manage identities
   description: "Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job."
-  ms.date: 01/31/2024
+  ms.date: 10/10/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: entra
   ms.subservice: standards
+  ai-usage: human-only
 title: Create, configure, and manage identities
 summary: Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just-enough access to do their job.
 abstract: |
   At the end of this module, you'll be able to:
+
   - Create, configure, and manage users
+
   - Create, configure, and manage groups
+
   - Manage licenses
+
   - Explain custom security attributes and automatic user provisioning
-prerequisites: |
-  None
+prerequisites: None
 iconUrl: /learn/achievements/create-configure-and-manage-identities.svg
 levels:
 - advanced

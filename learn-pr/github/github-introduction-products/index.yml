@@ -5,14 +5,14 @@ metadata:
   description: Overview of GitHub's products, plans, associated features, and billing. 
   ms.service: github
   manager: mkluck
-  ms.date: 08/21/2023
+  ms.date: 09/19/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module-intro-to-product
 title: Introduction to GitHub's products
 summary: This module provides an overview of GitHub products, including the account types, plan options, associated features, and billing. It also covers how to access GitHub on-the-go using GitHub Desktop and GitHub Mobile. 
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module, you're able to:
   - Define the difference between the different types of GitHub accounts: Personal, Organization, and Enterprise.
   - Explain each GitHub plan: GitHub Free for personal accounts and organizations, GitHub Pro for personal accounts, GitHub Team, and GitHub Enterprise.
   - Distinguish the features associated with accessing GitHub on GitHub Mobile and GitHub Desktop.

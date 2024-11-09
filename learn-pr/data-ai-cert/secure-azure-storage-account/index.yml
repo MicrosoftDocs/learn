@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.secure-azure-storage-account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure your Azure Storage account
   description: "Learn how Azure Storage provides multilayered security to protect your data with access keys, secure networks, and Advanced Threat Protection monitoring."
   ms.date: 09/02/2022
@@ -44,3 +46,4 @@ units:
 - learn.azure.secure-azure-storage-account.summary
 badge:
   uid: learn.azure.secure-azure-storage-account.badge
+

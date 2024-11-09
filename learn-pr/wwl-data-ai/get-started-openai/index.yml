@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-openai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get started with Azure OpenAI Service
   description: Azure OpenAI Service enables engineers to build enterprise-grade generative AI solutions.
   author: ivorb
@@ -10,6 +12,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
+  ms.custom: copilot-learning-hub, ai-learning-hub
 title: Get started with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
 abstract: |
@@ -46,3 +49,4 @@ units:
 - learn.wwl.get-started-openai.summary
 badge:
   uid: learn.wwl.get-started-openai.badge
+

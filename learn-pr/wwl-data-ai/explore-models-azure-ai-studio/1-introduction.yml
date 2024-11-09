@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to configuring the deployment of a language model using the Azure AI Studio."
   ms.date: 7/2/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

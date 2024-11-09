@@ -130,9 +130,10 @@ After you've enabled Application Insights in the Azure portal, you can add loggi
 ::: zone pivot="javascript"
 Write to logs from your code using the `log` method on the `context` object, which is passed to the handler. The following example writes to the default log level (information):
 
-  ```javascript
-  context.log('Enter your logging statement here');
-  ```
+```javascript
+context.log('Enter your logging statement here');
+```
+
 ::: zone-end
 <!-- until we have a C# pivot
 - In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.

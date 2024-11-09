@@ -2,6 +2,8 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.deploy-microsoft-defender-for-storage
 title: Deploy Microsoft Defender for Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Microsoft Defender for Storage
   description: "Deploy Microsoft Defender for Storage"
   ms.date: 08/27/2024

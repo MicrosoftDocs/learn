@@ -2,11 +2,13 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Get next steps and resources that can advance your mixed-reality journey.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
+  ms.author: lolab
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -38,11 +38,15 @@ Insider risk management can help you detect, investigate, and take action to mit
 
 ### Integration with Microsoft Copilot for Security
 
-Microsoft Purview Insider Risk Management supports integration with Microsoft Copilot for Security, through the embedded experience, to gain a comprehensive summary of alerts.
+Microsoft Purview Insider Risk Management supports integration with Microsoft Copilot for Security, through the standalone and embedded experiences.
 
-To experience this Copilot capability, organizations must be onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and users must have the appropriate role permissions,
+To experience Copilot integration, organizations must be onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and users must have the appropriate role permissions.
 
-To access Copilot from within Microsoft Purview Insider Risk Management, navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed. You select Summarize to have Copilot generate the alert summary.
+The Microsoft Purview capabilities, that you can view in the standalone experience by selecting the prompt icon and selecting all capabilities, are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
+
+:::image type="content" source="../media/purview-capabilities.png" lightbox="../media/purview-capabilities.png" alt-text="Screen capture of the Microsoft Purview capabilities available Microsoft Copilot for Security.":::
+
+In the embedded experience, Copilot in Microsoft Purview Insider Risk Management supports alert summarization. To access Copilot from within Microsoft Purview Insider Risk Management, navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed. You select Summarize to have Copilot generate the alert summary.
 
 # [Alert](#tab/alert)
 :::image type="content" source="../media/copilot-risk-management.png" lightbox="../media/copilot-risk-management.png" alt-text="Screen capture of an Insider Risk Management alerts page that shows the option to summarize an alert.":::

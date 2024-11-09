@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.recommend-certificate-strategy
 title: Recommend certificate strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend certificate strategy
   description: "Recommend certificate strategy"
   ms.date: 06/08/2022

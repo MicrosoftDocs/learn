@@ -2,9 +2,11 @@
 uid: learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-azure-key-vault
 title: Configure key rotation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure key rotation
   description: "Configure key rotation"
-  ms.date: 07/25/2024
+  ms.date: 10/08/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

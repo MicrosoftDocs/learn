@@ -2,6 +2,8 @@
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-delegate
 title: Implement a delegate for the change feed processor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement a delegate for the change feed processor
   description: "Implement a delegate for the change feed processor"
   ms.date: 10/18/2022

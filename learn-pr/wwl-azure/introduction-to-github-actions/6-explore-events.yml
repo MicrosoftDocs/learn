@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-github-actions.explore-events
 title: Explore Events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Events
   description: "Explore Events"
   ms.date: 05/08/2024

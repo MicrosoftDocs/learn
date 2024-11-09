@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-virtual-machines.determine-virtual-machine-sizing
 title: Determine virtual machine sizing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine virtual machine sizing
   description: "Determine virtual machine sizing"
   ms.date: 08/01/2024

@@ -9,7 +9,7 @@ In this unit, you'll install .NET Aspire and its prerequisites and then use the 
 The prerequisites for this .NET Aspire exercise are:
 
 - .NET 8
-- Visual Studio 2022 Preview
+- Visual Studio 2022
 - Docker Desktop
 - .NET Aspire workload in Visual Studio
 
@@ -28,12 +28,12 @@ dotnet --version
 You should see the version number of the .NET SDK you installed. For example:
 
 ```console
-8.0.300-preview.24203.14
+8.0.403
 ```
 
-### Install Visual Studio 2022 Preview
+### Install Visual Studio 2022
 
-Follow this [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/) link, and select **Download Preview**. After the download is complete, run the installer and follow the instructions.
+Follow this [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) link, and select **Download Visual Studio**. After the download is complete, run the installer and follow the instructions.
 
 ### Install Docker Desktop
 
@@ -119,8 +119,24 @@ Let's use the eShop reference application to demonstrate the .NET Aspire stack. 
    git clone https://github.com/dotnet/eShop.git
    ```
 
+1. Change to the eShop directory:
+
+   ```console
+   cd eShop
+   ```
+
+1. The eShop reference app is frequently updated. To ensure that you're using the correct version for this exercise, switch to the `dotnet8` tag:
+
+   ```console
+   git checkout dotnet8
+   ```
+
 1. Start Visual Studio and then select **Open a project or solution**.
 1. Browse to the folder where you cloned eShop, select the _eShop.Web.snlf_ file, and then select **Open**.
+
+   >[!IMPORTANT]
+   > Make sure you open the _eShop.Web.snlf_ file, not the _eShop.sln_ file.
+
 1. Examine the solution structure in **Solution Explorer**. At the top level, the eShop code includes folders for tests, GitHub actions, and solution items. Expand the _src_ folder, which contains source code for the microservices:
 
    :::image type="content" source="../media/eshop-solution-structure.png" lightbox="../media/eshop-solution-structure.png" alt-text="Screenshot showing the structure of the eShop solution in the Visual Studio Solution Explorer.":::
@@ -133,7 +149,7 @@ Let's use the eShop reference application to demonstrate the .NET Aspire stack. 
 1. Expand the **AppHost** project, and then select the _eShop.AppHost/Program.cs_ file.
 1. In the _Program.cs_ file, notice that:
 
-   - Components of the application are added to a `DistributedApplicationBuilder` object named `builder`.
+   - Integrations of the application are added to a `DistributedApplicationBuilder` object named `builder`.
    - Backing services, such as a Redis cache, a RabbitMQ messaging service, and a PostgreSQL database, are added to the builder. Each will be provisioned in a Docker container.
    - Each microservice is added to the builder by using the `builder.AddProject()` method.
    - References to the backing services are injected into each microservice by using the `.WithReference()` method.
@@ -186,4 +202,4 @@ Let's run the app and use the .NET Aspire dashboard to examine a request:
 
 ## Learn more
 
-- [eShop Reference Application - "Northern Mountains"](https://github.com/dotnet/eshop)
+- [eShop Reference Application - "Adventure Works"](https://github.com/dotnet/eshop)

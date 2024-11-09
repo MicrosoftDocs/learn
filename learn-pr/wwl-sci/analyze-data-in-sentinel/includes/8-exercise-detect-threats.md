@@ -1,5 +1,5 @@
 
-As a security engineer working for Contoso, you recently noticed that a significant number of VMs have been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
+As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
 
 ## Exercise: Threat detection with Microsoft Sentinel Analytics
 
@@ -22,13 +22,13 @@ In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform
     | Name | Azure VM Deletion. |
     | --- | --- |
     | Description | A simple detection to alert when someone deletes Azure Virtual Machine. |
-    | Tactics | From the **Tactics** drop-down menu, select Impact. |
+    | MITRE ATT&CK | From the **MITRE ATT&CK** drop-down menu, select **Impact**. |
     | Severity | Select the **Severity** drop-down menu select Medium. |
     | Status | Ensure the status is **Enabled**. You can select **Disabled** to disable a rule if it generates large numbers of false positives. |
   
     :::image type="content" source="../media/07-analytics-rule-wizard-create-new-rule.png" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
   
-1. On the **Set rule logic** tab, copy and paste the following code into the **Rule query** text box:
+1. On the **Set rule logic** tab, copy, and paste the following code into the **Rule query** text box:
 
     ```kusto
     AzureActivity

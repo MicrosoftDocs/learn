@@ -311,4 +311,4 @@ Steps you might take to resolve the routing problem might include:
 3. Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](/azure/virtual-network/manage-route-table).
 4. Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended.
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions below. 

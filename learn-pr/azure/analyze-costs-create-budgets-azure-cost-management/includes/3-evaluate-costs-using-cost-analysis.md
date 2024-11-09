@@ -2,13 +2,13 @@ This unit describes how you can use cost analysis, with several different defaul
 
 **Accumulated cost view:** This view represents the predefined cost analysis view configuration. Each view includes date range, granularity, group by, and filter settings. The default view shows accumulated costs for the current billing period, but you can change to other built-in views. This view answers questions like: How much have I spent so far this month? Will I stay within my budget?
 
-**Actual cost:** This view shows the total usage and purchase costs for the current month as they're accrued, and show on your bill.
+**Actual cost:** This view shows the total usage and purchase costs for the current month as they're accrued and shows on your bill.
 
 **Forecast:** This view shows the total forecasted costs for the period you choose. Use the forecast chart view to identify potential budget breaches. When there's a potential budget breach, projected overspending is shown as a red area. An indicator symbol is also shown in the chart. Hovering over the symbol shows the estimated date of the budget breach.
 
 **Budget:** This view shows the planned spending limit for the selected scope, if available.
 
-**Pivot (donut) charts:** This view provides dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Costs are categorized by service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
+**Pivot (donut) charts:** This view provides dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Cost categories include service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
 
 ![Screenshot of initial view of cost analysis in the Azure portal.](../media/3-cost-analysis.png)
 
@@ -52,7 +52,7 @@ Let's look at Azure service costs for the current month. You should see a graph 
 
 ![Screenshot of grouped daily accumulated view showing example Azure service costs for last month.](../media/3-grouped-daily-accum-view.png)
 
-By default, cost analysis shows all usage and purchase costs as they're accrued. This cost shows on your invoice, and is also known as **Actual cost**. Viewing actual cost is ideal for reconciling your invoice. However, purchase spikes in cost can be alarming when you're keeping an eye out for spending anomalies and other changes in cost. To flatten out spikes caused by reservation purchase costs, switch to **Amortized cost**.
+By default, cost analysis shows all usage and purchase costs as they're accrued. This cost shows on your invoice and is also known as **Actual cost**. Viewing actual cost is ideal for reconciling your invoice. However, purchase spikes in cost can be alarming when you're keeping an eye out for spending anomalies and other changes in cost. To flatten out spikes caused by reservation purchase costs, switch to **Amortized cost**.
 
 ![Screenshot showing actual cost and amortized cost selection.](../media/3-metric-picker.png)
 
@@ -82,30 +82,28 @@ Do you need to share your view outside of the portal? You can download the chart
 
 The filter bar shows both the:
 
-- Scope pill with the scope name for added clarity
-- View menu that is based on its growing importance with saved views
+- Scope pill with the scope name for added clarity.
+- View menu that is based on its growing importance with saved views.
 
 ## Export data
 
-Let's start by creating a daily export of your cost and usage data.
+Let's start by creating a daily export of your cost and usage data. Note that besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
-Go to **Subscriptions**, select a subscription from the list, and in the menu pane under **Cost Management**, select **Cost analysis**. At the top of the Cost analysis pane, select **Configure subscription**. On the **Configuration** pane, select **Exports**, and then select an export option. For example, select  **Schedule export**.
-
-Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
-
-Enter a name for the export, and for **Export type** setting, select **Daily export of month-to-date costs**. Select a start date.
+Go to **Subscriptions**, select a subscription from the list, and in the menu pane under **Cost Management**, select **Cost analysis**. At the top of the Cost analysis pane, select **Configure subscription**. On the **Configuration** pane, select **Exports** and then **+Create**.
 
 ![Screenshot that shows the New export panel.](../media/3-basics-exports.png)
 
-Specify the subscription for your Azure storage account, and then select your storage account. Specify the storage account, storage container, and the directory path to which you'd like the export file to go. You can also create a new resource group and storage account, and select the storage account region. Select **Create**.
+Select the type of export you'd like. In this case, we'll **Create your own export**. Specify the type of data as **Cost and usage details (actual)**, add a name, and choose frequency as daily for your scheduled export. You can also provide a description. Once complete, add an **Export prefix** to ensure the exports have unique names.
 
-Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, select any item in the list, and then select either **Disable**  or **Delete**.
+Select **Next** to specify the storage type and select your subscription. If using an existing storage account, select it from the dropdown or choose **Create new** to add one. You can also create a new resource group if creating a new storage account. Specify the storage container and the directory path to which you'd like the export file to go. Configure the storage account location, format, and compression type. Select **Review + create** and **Create**.
+
+Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, select any item in the list. Then select either **Disable**  or **Delete**.
 
 Initially, it can take 12-24 hours before the export runs. However, it can take longer before data is shown in exported files.
 
 ### Export schedule
 
-The time and day of week that you initially create the export, affects the schedule of the exports. When you create a scheduled export, the export runs at the same frequency for each subsequent export occurrence. For example, for a daily export of month-to-date costs export set at a daily frequency, the export runs daily. Similarly for a weekly export, the export runs every week on the same day as it's scheduled. The exact delivery time of the export isn't guaranteed, and the exported data is available within four hours of run time.
+The time and day of week that you initially create the export affects the schedule of the exports. When you create a scheduled export, the export runs at the same frequency for each subsequent export occurrence. For example, for a daily export of month-to-date costs export set at a daily frequency, the export runs daily. Similarly for a weekly export, the export runs every week on the same day as it's scheduled. The exact delivery time of the export isn't guaranteed, and the exported data is available within four hours of run time.
 
 Each export creates a new file, so older exports aren't overwritten.
 
@@ -125,8 +123,6 @@ In the export list, select the storage account name. On the storage account page
 ![Screenshot of storage account page showing example information and link to Open in Explorer.](../media/3-storage-account-page.png)
 
 In Storage Explorer, navigate to the container that you want to open and select the folder corresponding to the current month. A list of CSV files appears. Select one, then select **Open**.
-
-![Screenshot of example information shown in Storage Explorer.](../media/3-storage-explorer.png)
 
 The file opens with the program or application you've set to open CSV file extensions. Here's an example in Excel:
 

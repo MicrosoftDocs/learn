@@ -8,11 +8,12 @@ When choosing the optimal storage for AKS containerized workloads, you can choos
 
  -  **Application-level access to structured or semi-structured data**. For structured or semi-structured data, use a platform managed database, such as Azure SQL, Azure Database by MySQL, Azure Database for PostgreSQL, and Cosmos DB.
  -  **File-level access to data**. For shared application data that requires high performance, use either Azure NetApp Files or the *premium* tier of Azure Files. For shared data that requires moderate performance, use the *standard* tier of Azure Files.
- -  **Block-level access to data**. Use disks for storage for applications that require consistently low latency, high I/O operations per second (IOPS), and high throughput. For the best performance, consider using Azure Premium SSD, Azure Premium SSD v2, or Azure Ultra Disk Storage. Alternatively, apply Azure Blob storage by using BlobFuse virtual file system, or read from and write to blob storage directly.
+ -  **Block-level access to data (self managed)**. For applications requiring consistently low latency, high IOPS, and high throughput, use Azure Premium SSD, Azure Premium SSD v2, or Azure Ultra Disk Storage for optimal performance. Alternatively, you can use Azure Blob storage with BlobFuse, a virtual file system, or interact with Blob storage directly. These storage options are self-managed using open-source CSI drivers orchestrated by Microsoft, providing flexibility to manually manage your infrastructure.
+ -  **Block-level access to data (fully managed)**. For a fully managed, cloud-based volume management and orchestration solution, consider Azure Container Storage. It integrates with Kubernetes, allowing dynamic and automatic provisioning of persistent volumes. Azure Container Storage supports both Azure Disks and Ephemeral Disks as backing storage, offering flexibility and scalability for stateful applications running on Kubernetes clusters.
 
 ### Plan for pod volumes
 
-AKS typically treats individual pods as ephemeral, disposable resources. To implement a persistent storage for pods, you can create volumes. A *volume* offers a mechanism to store, retrieve, and persist data across pods and throughout the application lifecycle. When selecting the underlying storage for AKS volumes, your choices include Azure Disks, Azure Files, Azure NetApp Files, and Azure Blobs.
+AKS typically treats individual pods as ephemeral, disposable resources. To implement persistent storage for pods, you can create volumes. A *volume* offers a mechanism to store, retrieve, and persist data across pods and throughout the application lifecycle. When selecting the underlying storage for AKS volumes, your choices include Azure Disks, Ephemeral Disks, Azure Elastic SAN, Azure Files, Azure NetApp Files, Azure Blobs, and Azure Container Storage.
 
 AKS volume types include:
 

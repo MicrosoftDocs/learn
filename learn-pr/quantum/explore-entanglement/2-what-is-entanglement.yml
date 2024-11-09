@@ -2,6 +2,8 @@
 uid: learn.quantum.explore-entanglement.what-is-entanglement
 title: What is entanglement?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is entanglement?
   description: What is entanglement?
   ms.date: 04/25/2024

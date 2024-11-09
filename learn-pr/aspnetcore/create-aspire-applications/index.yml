@@ -14,7 +14,7 @@ summary: "Learn how to create cloud-native applications from scratch or add orch
 abstract: |
   By the end of this module, you're going to be able to:
     - Create new cloud-native apps by using the .NET Aspire templates in Visual Studio.
-    - Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native components.
+    - Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native integrations.
     - Use the .NET Aspire dashboard to diagnose connection issues between services.
 prerequisites: |
   - Experience building web applications using .NET and C#

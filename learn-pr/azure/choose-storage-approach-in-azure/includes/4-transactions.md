@@ -10,12 +10,12 @@ A transaction is a logical group of database operations that run together.
 
 Here's the question to ask yourself regarding whether you need to use transactions in your application: Will a change to one piece of data in your dataset affect another piece of data? If the answer is yes, you'll need support for transactions in your database service.
 
-Transactions are often defined by a set of four requirements call *ACID guarantees*. ACID is an acronym for *atomicity*, *consistency*, *isolation*, and *durability*.
+*ACID guarantees* define transactions by ensuring a set of four requirements are met. ACID is an acronym for *atomicity*, *consistency*, *isolation*, and *durability*.
 
 - *Atomicity* means a transaction must run exactly once, and it must be atomic. Either all of the work is done or none of it is. Operations within a transaction usually share a common intent and are interdependent.
 - *Consistency* ensures that the data is consistent both before and after the transaction.
 - *Isolation* ensures that each transaction is unaffected by other transactions.
-- *Durability* means that changes made as a result of a transaction are permanently saved in the system. The system saves data that's committed so that even in the event of a failure and system restart, the data is available in its correct state.
+- *Durability* means that changes made as a result of a transaction are permanently saved in the system. The system saves data that's committed so even in the event of a failure and system restart, the data is available in its correct state.
 
 When a database offers ACID guarantees, these principles are consistently applied to each transaction.
 

@@ -2,11 +2,13 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: An introduction to the Learn module, its objectives, and prerequisites.
-  ms.date: 10/10/2023
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks 
+  ms.author: lolab 
   ms.topic: unit
 durationInMinutes: 2
 content: |

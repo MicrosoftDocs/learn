@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you learn how to use the Aspir8 tool to deploy a .NET Aspire solution to Azure Kubernetes Services.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 7
 content: |

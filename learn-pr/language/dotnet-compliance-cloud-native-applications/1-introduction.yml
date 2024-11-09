@@ -9,9 +9,6 @@ metadata:
   ms.author: masoucou
   ms.topic: unit
   ms.custom: devx-track-dotnet
-  ms.prod: dotnet
-    - aspnet-core
-
   ms.contributors:
   - masoucou-05122021
 durationInMinutes: 1

@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-ml.how-azure-ml-works
 title: How Azure Machine Learning works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Machine Learning works
   description: How Azure Machine Learning works
   ms.date: 07/20/2024

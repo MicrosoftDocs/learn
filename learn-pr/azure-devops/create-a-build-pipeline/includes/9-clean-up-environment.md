@@ -3,7 +3,7 @@ You're all done with the tasks for this module. You'll now clean up your Azure D
 ::: zone pivot="ms-hosted-agents"
 
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)). Be sure to do the cleanup steps even if you didn't complete this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microsoft-hosted agents ([check your usage](/azure/devops/pipelines/licensing/concurrent-jobs#check-the-parallel-jobs-setting-directly)). Be sure to do the cleanup steps even if you didn't complete this module.
 
 ::: zone-end
 
@@ -51,8 +51,8 @@ To disable the pipeline:
 1. From the dropdown, select **Settings**.
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
-    
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
 
     Your pipeline will no longer process build requests.
 
@@ -67,5 +67,7 @@ To disable the pipeline:
 1. Select **...** by your Codespace, and choose **Delete**.
 
     :::image type="content" source="../media/9-delete-codespace.png" alt-text="Screenshot of deleting a Codespace. ":::
+
+1. Select **Delete** again to confirm deletion.
 
 ::: zone-end

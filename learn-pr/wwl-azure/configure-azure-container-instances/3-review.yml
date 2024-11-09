@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-container-instances.review
 title: Review Azure Container Instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review Azure Container Instances
   description: "Review Azure Container Instances"
   ms.date: 07/24/2024

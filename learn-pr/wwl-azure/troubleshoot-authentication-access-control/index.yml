@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-authentication-access-control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot authentication and access control issues in Microsoft Azure
   description: "Microsoft Azure has a sophisticated authentication and access control system to provide high security. Microsoft Entra authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023
@@ -43,3 +45,4 @@ units:
 - learn.wwl.troubleshoot-authentication-access-control.summary
 badge:
   uid: learn.wwl.troubleshoot-authentication-access-control.badge
+

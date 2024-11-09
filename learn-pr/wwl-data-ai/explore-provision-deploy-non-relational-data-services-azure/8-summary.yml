@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 03/15/2024
+  ms.date: 09/17/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit

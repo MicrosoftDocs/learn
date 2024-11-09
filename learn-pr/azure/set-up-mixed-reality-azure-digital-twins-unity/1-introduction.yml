@@ -2,6 +2,8 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: An introduction to the Learn module, its objectives, and prerequisites.
   ms.date: 01/24/2024

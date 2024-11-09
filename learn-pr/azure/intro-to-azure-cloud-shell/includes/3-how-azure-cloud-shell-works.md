@@ -48,6 +48,9 @@ code temp.txt
 
 :::image type="content" source="../media/cloud-shell-edit-scripts.png" alt-text="A screenshot of how to access the Cloud Shell editor mode." lightbox="../media/cloud-shell-edit-scripts.png":::
 
+> [!NOTE]
+> The `code` command only works in the Classic mode in Cloud Shell. To enable Classic mode, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 ## Cloud Shell tools
 
 If you need to manage resources (such as Docker containers or Kubernetes Clusters) or want to use non-Microsoft tools (such as Ansible and Terraform) in Cloud Shell, the Cloud Shell session comes with these add-ons already preconfigured.
@@ -57,7 +60,7 @@ Here’s a list of all add-ons available to you within a Cloud Shell session:
 | Category | Name |
 |---|---|
 | **Linux tools** | bash<br>zsh<br>sh<br>tmux<br>dig |
-| **Azure tools** | Azure CLI and [Azure classic CLI](https://github.com/Azure/azure-xplat-cli)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |
+| **Azure tools** | [Azure CLI](/cli/azure/)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |
 | **Text editors** | code (Cloud Shell editor)<br>vim<br>nano<br>emacs |
 | **Source control** | git |
 | **Build tools** | make<br>maven<br>npm<br>pip |

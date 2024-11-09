@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-azure-identity-access-security.describe-microsoft-defender-for-cloud
 title: Describe Microsoft Defender for Cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Microsoft Defender for Cloud
   description: "Describe Microsoft Defender for Cloud"
-  ms.date: 01/05/2024
+  ms.date: 10/03/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

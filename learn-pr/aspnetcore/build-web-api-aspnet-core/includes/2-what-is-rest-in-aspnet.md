@@ -18,7 +18,7 @@ Web service APIs that adhere to REST are called RESTful APIs. They're defined th
 - HTTP methods, such as `GET`, `POST`, `PUT`, `PATCH`, or `DELETE`.
 - A media type for the data, such as JavaScript Object Notation (JSON) or XML.
 
-An API often needs to provide services for a few different but related things. For example, our pizza API might manage pizzas, customers, and orders. We use *routing* to map URIs to logical divisions in our code, so that requests to https://localhost:5000/pizza are routed to `PizzaController` and requests to https://localhost:5000/order are routed to `OrderController`.
+An API often needs to provide services for a few different but related things. For example, our pizza API might manage pizzas, customers, and orders. We use *routing* to map URIs (uniform resource identifiers) to logical divisions in our code, so that requests to https://localhost:5000/pizza are routed to `PizzaController` and requests to https://localhost:5000/order are routed to `OrderController`.
 
 ## Benefits of creating APIs in ASP.NET Core
 
@@ -42,4 +42,4 @@ You can use your .NET skills and ecosystem to share logic from your web API to o
 
 When you're developing a traditional website, you usually view and test your work in a web browser. Web APIs accept and return data rather than HTML, so a web browser isn't the best web-API testing tool.
 
-One of the easiest options for exploring and interacting with web APIs is the .NET HTTP REPL. REPL stands for *read-evaluate-print loop*. It's a simple and popular way to build interactive command-line environments. In the next unit, you create a simple web API and then interact with it by using the .NET HTTP REPL.
+One of the easiest options for exploring and interacting with web APIs is the .NET HTTP REPL (*read-evaluate-print loop*). It's a simple and popular way to build interactive command-line environments. In the next unit, you create a simple web API and then interact with it by using the .NET HTTP REPL.

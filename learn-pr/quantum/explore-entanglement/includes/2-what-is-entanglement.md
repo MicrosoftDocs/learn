@@ -1,9 +1,7 @@
-Entanglement is one of the key features of quantum mechanics that distinguishes it from classical mechanics. 
+Entanglement is one of the key features of quantum mechanics that distinguishes it from classical mechanics. But what *is* entanglement? How does it work? And why is it so important for quantum information? 
 
-But what *is* entanglement? How does it work? And why is it so important for quantum information? 
+In this unit, you'll see how to define and describe quantum entanglement, and understand why it's such a powerful resource for quantum computing.
 
-> [!NOTE]
-> If you experience problems with the rendering of the formulas, hit the refresh button on your browser. This will reload the page and the formulas will render correctly.
 
 ## Understanding quantum entanglement
 
@@ -13,7 +11,7 @@ Now imagine that you entangle the qubits (you'll learn how to do this later). If
 
 :::image type="content" source="../media/entanglement-qubits.png" alt-text="Diagram showing two qubits in two different situations, not entangled and entangled. When entangled, information is shared between both qubits, and there's no way to infer information belonging to only qubit A or qubit B.":::
 
-Entanglement is a **quantum correlation** between two or more particles. If two particles are entangled, they cannot be described independently, but only as a whole system. 
+Entanglement is a **quantum correlation** between two or more particles. If two particles are entangled, they can't be described independently, but only as a whole system. 
 
 ## Describing quantum entanglement
 

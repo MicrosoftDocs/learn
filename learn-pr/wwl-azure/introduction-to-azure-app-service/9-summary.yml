@@ -2,9 +2,11 @@
 uid: learn.wwl.introduction-to-azure-app-service.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 06/11/2024
+  ms.date: 09/30/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

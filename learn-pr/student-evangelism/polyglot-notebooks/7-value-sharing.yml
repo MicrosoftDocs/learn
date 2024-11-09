@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-polyglot-notebooks.value-sharing
-title: Exercise – Value sharing
+title: Exercise - Value sharing
 metadata:
-  title: Exercise – value sharing
+  title: Exercise - value sharing
   description: Value sharing allows you to share variables between kernels in Polyglot Notebook. In this exercise, you'll learn how to do so.
   author: japhletnwamu
   ms.author: japhletnwamu
-  ms.date: 04/03/2024
+  ms.date: 08/28/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

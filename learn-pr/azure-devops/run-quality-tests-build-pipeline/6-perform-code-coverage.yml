@@ -2,15 +2,18 @@
 uid: learn.azdo.run-quality-tests-build-pipeline.6-perform-code-coverage
 title: Exercise - Perform code coverage testing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Perform code coverage testing
   description: Measure the percentage of code that's covered by your unit tests.
   ms.custom:
     - devdivchpfy22
     - devx-track-dotnet
-  ms.date: 04/02/2024
+  ms.date: 09/10/2024
   author: steved0x
   ms.author: sdanie
   ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/6-perform-code-coverage.md)]
+

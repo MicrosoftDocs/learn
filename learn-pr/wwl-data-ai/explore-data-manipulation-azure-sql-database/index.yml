@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn-wwl.explore-data-manipulation-azure-sql-database
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore data manipulation options in Azure SQL Database
+  description: "Learn how to invoke REST endpoints in Azure SQL Database and manipulate data using Azure Functions. Also, explore various tools and options for importing and exporting data to and from Azure SQL Database."
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Explore data manipulation options in Azure SQL Database
+summary: Azure SQL Database allows you to import data using RESTful endpoints. This capability integrates Azure SQL Database with various external services and APIs, making it a versatile and user-friendly platform. Also, by combining Azure Functions with Azure SQL Database, you can create seamless workflows that automate data processing and enhance the functionality of your applications.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Invoke an external REST endpoint in Azure SQL Database
+    - Manipulate data in Azure SQL Database by using Azure Functions
+    - Understand additional data movement tools
+prerequisites: |
+  * Experience using the Azure portal to create resources.
+  * Experience with T-SQL programming language at a basic level.
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-sql-database
+- azure
+subjects: 
+  - databases
+  - cloud-computing
+units:
+- learn-wwl.explore-data-manipulation-azure-sql-database.introduction
+- learn-wwl.explore-data-manipulation-azure-sql-database.use-external-rest-endpoint
+- learn-wwl.explore-data-manipulation-azure-sql-database.work-with-sql-bindings-in-azure-functions
+- learn-wwl.explore-data-manipulation-azure-sql-database.move-data-by-using-additional-tools
+- learn-wwl.explore-data-manipulation-azure-sql-database.exercise-import-export-sql-database
+- learn-wwl.explore-data-manipulation-azure-sql-database.knowledge-check
+- learn-wwl.explore-data-manipulation-azure-sql-database.summary
+badge:
+  uid: learn-wwl.explore-data-manipulation-azure-sql-database.badge
+
+
+

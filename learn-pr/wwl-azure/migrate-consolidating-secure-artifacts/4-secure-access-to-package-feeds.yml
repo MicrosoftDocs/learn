@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-consolidating-secure-artifacts.secure-access-to-package-feeds
 title: Secure access to package feeds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure access to package feeds
   description: "Secure access to package feeds"
   ms.date: 05/08/2024

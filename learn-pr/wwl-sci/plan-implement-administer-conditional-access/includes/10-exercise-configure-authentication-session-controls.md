@@ -6,7 +6,7 @@
 4.  On the Protection menu, select **Conditional access**.
 5.  On the top menu, select **New policy**.
     
-    :::image type="content" source="../media/conditional-access-new-policy-c60e6317.png" alt-text="Screenshot of the Conditional Access blade with New policy highlighted.":::
+    :::image type="content" source="../media/conditional-access-new-policy-c60e6317-e74990e4.png" alt-text="Screenshot of the Conditional Access blade with New policy highlighted.":::
     
 6.  In the **Name** box, enter **Sign in frequency**.
 7.  Under **Assignments**, select **Users and groups**.
@@ -21,5 +21,5 @@
 16. Select the units menu, select **Days**, and then select **Select**.
 17. Under **Enable policy**, select **Report-only**, and then select **Create**.
     
-    :::image type="content" source="../media/create-session-conditional-access-policy-0f474d5f.png" alt-text="Screenshot of the new conditional access policy with policy settings highlighted.":::
+    :::image type="content" source="../media/create-session-conditional-access-policy-0f474d5f-64faa81a.png" alt-text="Screenshot of the new conditional access policy with policy settings highlighted.":::
     

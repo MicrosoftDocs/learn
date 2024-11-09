@@ -2,10 +2,10 @@ After you create an Azure OpenAI resource, you must deploy a model to kickstart 
 
 ## Deployments
 
-Deployment provides an endpoint to the Azure OpenAI base model, or model of your choice, that's tailored to meet your needs, including the content moderation model, version handling, and deployment size.
+Deployment provides an endpoint to the Azure OpenAI base model or to the model of your choice. During deployment, you cn tailor the model to meet your needs, by specifying the content moderation model, version handling, and deployment size.
 
 > [!IMPORTANT]
-> After deployment, you'll receive two key items:
+> After deployment, you receive two key items:
 >
 > - An endpoint, which is a link that you can use to call your model or make HTTP requests.
 > - An API key, which acts like a password to authenticate requests to the endpoint and grant access to your account.
@@ -14,9 +14,9 @@ Deployment provides an endpoint to the Azure OpenAI base model, or model of your
 
 Azure OpenAI Studio is a web-based interface that allows you to interact with Azure OpenAI Service. You can use the playground to experiment with service capabilities by submitting prompts and generating completions. You can also use Azure OpenAI Studio to manage your deployments and models. To sign in to Azure OpenAI Studio:
 
-- Navigate directly to the interface, select your subscription, and select your cloud resource.<br>
-Or<br>
-- Navigate to the site via the cloud resource blade in the Azure portal.
+- Navigate directly to the interface, select your subscription, and select your cloud resource.
+<br>Or<br>
+- Navigate to the site via the cloud resource tab in the Azure portal.
 
 ## What you can do with Azure OpenAI Studio
 
@@ -33,7 +33,7 @@ The Azure CLI can be used instead of the Azure portal to deploy cloud resources.
 - **The resource name** to identify the account for which you're creating the model deployment.
 - **The resource group name**, which acts as the logical bucket to store the created resource.
 - **A deployment name (optional)** to help identify different deployments from the same model. For example, you must have a deployment name when you send requests programmatically. The default is the chosen model's name if a deployment name isn't specified.
-- **The model type name**. Enter the specific model type, depending on what you're trying to do. For example, enter _text generation_, _chat_, or _generating images_.
+- **The model type name**. Enter the specific model type, depending on what you're trying to do. For example, enter *text generation*, *chat*, or *generating images*.
 - **The model format**.
 - **The SKU capacity value (optional)**.
 - **The SKU name (optional)**.

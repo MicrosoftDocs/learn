@@ -1,10 +1,10 @@
-Donor relations is the process of building and maintaining relationships with your donors, and how to thank, acknowledge, and update them on your progress. Donor relations can be crucial for retaining and increasing your donor base, and for creating a loyal and engaged community of supporters. Copilot can help you with donor relations by providing you with:
+Donor relations is the process of building and maintaining relationships with your donors, and how to thank them, acknowledge them, and update them on your progress. Donor relations can be crucial for retaining and increasing your donor base, and for creating a loyal and engaged community of supporters. Copilot can help you with donor relations by providing you with:
 
-- Messages: Copilot can generate and personalize messages for your donors, such as thank-you notes, acknowledgments, updates, and appeals.
-- Materials: Copilot can create and customize materials for your donors, such as newsletters, brochures, certificates, and cards.
-- Feedback: Copilot can collect and analyze feedback from your donors, such as surveys, testimonials, and reviews.
+- **Messages**: Copilot can generate and personalize messages for your donors, such as thank-you notes, acknowledgments, updates, and appeals.
+- **Materials**: Copilot can create and customize materials for your donors, such as newsletters, brochures, certificates, and cards.
+- **Feedback**: Copilot can collect and analyze feedback from your donors, such as surveys, testimonials, and reviews.
 
-To use Copilot for donor relations for the same family services nonprofit, type your request in natural language. Here are sample prompts:
+To use Copilot for donor relations for the same family-services nonprofit, type your request in natural language. Here are sample prompts:
 
 ```  
 Find organizations that support family and social services through corporate sponsorship 
@@ -12,7 +12,7 @@ in Washington state, to include financial and in-kind donations, add their conta
 ```
 
 ```
-Generate a thank you note to donors who gave $500 or more last year that expresses our 
+Generate a thank-you note to donors who gave $500 or more last year that expresses our 
 gratitude and highlights the impact their contributions make.
 ```
 

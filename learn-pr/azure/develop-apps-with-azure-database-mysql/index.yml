@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.develop-apps-with-azure-database-mysql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Develop apps with Azure Database for MySQL - Flexible Server
-  description: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps or GitHub.
+  description: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy intelligent apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
   ms.date: 08/27/2024
   author: shreyaaithal
   ms.author: shaithal
@@ -15,13 +17,14 @@ metadata:
     - build-2023
     - build-2023-dataai
 title: Develop apps with Azure Database for MySQL - Flexible Server
-summary: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps, or GitHub.
+summary: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy intelligent apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
 abstract: |
   By the end of this module, you should be able to:
     - Connect to and query an Azure Database for MySQL flexible server from your app developed in the language of your choice.
     - Choose a hosting option suitable for your MySQL app.
     - Deploy your app on Azure services like Azure App Service and Azure Kubernetes Service (AKS).
     - Build a sample PHP app connecting to MySQL Flexible Server and deploy it on Azure App Service.
+    - Integrate with Azure services like Azure DevOps, GitHub, Azure AI Search, and Azure OpenAI.
     - Apply best practices for application development with Azure Database for MySQL.
 prerequisites: |
   - An understanding of cloud computing and some experience with the Azure portal and CLI.
@@ -48,3 +51,4 @@ units:
 - learn.develop-apps-with-azure-database-mysql.summary
 badge:
   uid: learn.develop-apps-with-azure-database-mysql.badge
+

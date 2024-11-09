@@ -2,6 +2,8 @@
 uid: learn.autoscale-java-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check of what you learned in the module.
   ms.date: 08/20/2024
@@ -51,3 +53,4 @@ quiz:
     - content: "A schedule-based rule."
       isCorrect: true
       explanation: "This answer is correct. Schedule-based rules allow scaling based on time patterns."
+

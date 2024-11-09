@@ -1,4 +1,4 @@
-You've created a new site, and your next step is to deploy it to Azure. We need to consider which Azure services to leverage. Azure App Service provides a highly scalable, self-patching web hosting service for your applications.
+You've created a new site, and your next step is to deploy it to Azure. We need to consider which Azure services to leverage. Azure App Service provides a web hosting service for your applications that's highly scalable and self-patching.
 
 Here, we'll look at how to use Visual Studio to publish your ASP.NET Core web application to an Azure App Service plan.
 
@@ -16,10 +16,10 @@ You can define an App Service plan in advance in the Azure portal, with PowerShe
 
 Each App Service plan defines:
 
-- Region (West US, East US, and so on)
-- Number of VM instances
-- Size of VM instances (small, medium, large)
-- Pricing tier (Free, Shared, Basic, Standard, Premium, Premium V2, Isolated)
+- Region (West US, East US, and so on).
+- Number of VM (virtual machine) instances.
+- Size of VM instances (small, medium, large).
+- Pricing tier (Free, Shared, Basic, Standard, Premium, Premium V2, Isolated).
 
 ## Select a region
 
@@ -27,9 +27,9 @@ When creating an App Service plan, you have to define a region or location where
 
 ## Pricing and reliability levels
 
-**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps, including apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale out.
+**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps. That includes apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
 
-Free and Shared plans are best for small-scale personal projects with limited traffic demands, with a set limit of 165 MB of outbound data every 24 hours.
+Free and Shared plans are best for small-scale personal projects with limited traffic demands, with a set limit of 165 MB (megabytes) of outbound data every 24 hours.
 
 **Dedicated compute**: The **Basic, Standard, Premium, and Premium V2** tiers run apps on dedicated Azure VMs. Only apps in the same App Service plan share the same compute resources. The higher the tier, the more VM instances are available to you for scale-out.
 

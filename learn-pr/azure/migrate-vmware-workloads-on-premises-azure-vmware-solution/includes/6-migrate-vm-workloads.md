@@ -24,8 +24,6 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. To set machine-specific **Transfer and Placement** and **Switchover** options, under **VM for Migration**, select a specific virtual machine and expand the entry.
 
-    :::image type="content" source="../media/6-transfer-placement-switchover.png" alt-text="Screenshot of where to set the transfer, placement, and switchover options.":::
-
 1. Select the destination network for each virtual machine to be migrated.
 
     :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM.":::

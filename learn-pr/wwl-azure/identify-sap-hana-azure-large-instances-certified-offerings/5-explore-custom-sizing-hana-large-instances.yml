@@ -2,6 +2,8 @@
 uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore-custom-sizing-for
 title: Explore custom sizing for SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore custom sizing for SAP HANA on Azure (Large Instances)
   description: "Explore custom sizing for SAP HANA on Azure (Large Instances)"
   ms.date: 07/07/2022

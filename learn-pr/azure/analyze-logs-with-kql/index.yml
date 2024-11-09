@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.analyze-logs-with-kql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: guided-project
   title: Guided project - Analyze logs in Azure Monitor with KQL
   description: "Write log queries to gain insights into your business, IT operations, and performance. Use Kusto Query Language (KQL) to extract log data in Azure Monitor Log Analytics."

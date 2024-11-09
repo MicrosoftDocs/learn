@@ -2,6 +2,8 @@
 uid: learn.azure.get-started-azure-advisor.7-share-recommendations-best-practices
 title: Share recommendations and stay on top of best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share recommendations and stay on top of best practices
   description: Learn how to manage your Azure Advisor recommendations and apply documented best practices.
   ms.date: 10/20/2023

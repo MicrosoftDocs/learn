@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.exercise-provision-relational-azure-data-services
 title: 'Exercise: Explore Azure relational database services'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Explore Azure relational database services'
   description: "Exercise: Explore Azure relational database services"
-  ms.date: 03/15/2024
+  ms.date: 10/09/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
