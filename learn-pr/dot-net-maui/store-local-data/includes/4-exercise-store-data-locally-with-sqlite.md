@@ -120,7 +120,7 @@ dotnet add package SQLitePCLRaw.bundle_green
 
 1. Add a private `SQLiteConnection` field named `conn` to the class, above the `Init` function.
 
-1. In the `Init` function, check to see if `conn` is not equal to `null`. If so, return immediately.
+1. In the `Init` function, check to see if `conn` isn't equal to `null`. If so, return immediately.
 
     ```csharp
     if (conn != null)
