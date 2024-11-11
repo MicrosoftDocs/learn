@@ -218,7 +218,7 @@ Consider the APL2007M2Sample1 project. Your code downloads web pages and calcula
 
 Use the following steps to complete this section of the exercise:
 
-1. Select the code lines that include the `ProcessUrlAsync` and `SumPageSizesAsync` methods.
+1. Select the code lines that include the `SumPageSizesAsync` and `ProcessUrlAsync` methods.
 
 1. In the Chat view, to have GitHub Copilot Chat explain how to handle exceptions thrown during the download process, enter the following question:
 
@@ -232,9 +232,9 @@ Use the following steps to complete this section of the exercise:
 
     ![Screenshot showing an explanation of how to handle exceptions thrown during the download process in the Chat view.](../media/explain-chat-view-workspace-explain-new-feature.png)
 
-    The response provides a detailed explanation of how to handle exceptions thrown during the download process. You also get a code snippet that implements the suggested exception handling code. You can copy the code snippet or insert it into your code project at the location of the cursor. The response also includes another "How can I" suggestion. In a work environment, you could use GitHub Copilot Chat to investigate further improvements.
+    The response provides a detailed explanation of how to handle exceptions thrown during the download process. You also get a code snippet that implements the suggested exception handling code. You can copy the code snippet or insert it into your code project at the location of the cursor.
 
-    Rather than copying or inserting the code snippet from the Chat view, the next step investigates using the inline chat to implement the suggested exception handling code.  
+    Rather than copying or inserting the code snippet from the Chat view, the next step investigates using the inline chat to implement the suggested exception handling code.
 
 1. To ask inline chat how to implement exception handling, select the `ProcessUrlAsync` method, press `Ctrl` + `I`, and then enter the following prompt:
 
