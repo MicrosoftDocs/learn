@@ -26,11 +26,11 @@ this destination along with a short one sentence tagline?
 **Sample response**:
 
 > Alright! Here are a few catchy names for your new destination, each with its own zingy tagline:
-> 1. **The Treehouse**: A simple and catchy name that reflects the location and style of the destination.
+> - **The Treehouse**: A simple and catchy name that reflects the location and style of the destination.
 > 
-> 2. **The Hideaway**: A mysterious and intriguing name that suggests a secret and exclusive place to escape and relax.
+> - **The Hideaway**: A mysterious and intriguing name that suggests a secret and exclusive place to escape and relax.
 > 
-> 3. **The Branch**: A clever and playful name that refers to both the physical structure of the destination and the idea of branching out and trying something new.
+> - **The Branch**: A clever and playful name that refers to both the physical structure of the destination and the idea of branching out and trying something new.
 > 
 That should capture the essence of a hidden forest escape!
 

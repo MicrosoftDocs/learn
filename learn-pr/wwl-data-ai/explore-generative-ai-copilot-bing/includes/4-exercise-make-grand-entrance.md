@@ -46,7 +46,7 @@ Can you elaborate on it?
 > **Try using voice input to prompt**. Select the **Talk to Copilot** icon in the Copilot search bar.
 > 
 > 
-> ![Screenshot of the copilot search bar with the Talk to Copilot icon highlighted](../media/voice-input.png)
+> ![Screenshot of the copilot search bar with the Talk to Copilot icon highlighted.](../media/voice-input.png)
 
 **Sample response**:
 

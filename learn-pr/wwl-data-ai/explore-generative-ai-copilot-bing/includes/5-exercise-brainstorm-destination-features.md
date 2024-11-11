@@ -74,9 +74,9 @@ three alternative names for the Nest?
 > High above the forest floor, The Nest is an intimate hideaway designed to resemble a bird’s nest, intricately woven from branches and adorned with plush cushions. Situated at the highest point of the tree, it offers sweeping panoramic views of the verdant canopy and the open sky. This cozy enclave is an idyllic retreat for couples or small groups, providing the perfect setting to unwind with a drink and engage in heartfelt conversations. The serene atmosphere and breathtaking vistas make The Nest a truly magical spot to experience the beauty of nature from an unparalleled vantage point.
 > 
 > Alternative Names:
-> 1. Canopy Nook
-> 2. Roost
-> 3. Tree Top Hideaway
+> - Canopy Nook
+> - Roost
+> - Tree Top Hideaway
 >
 > How’s this for capturing the essence of The Nest? Ready to visualize the next feature, or explore another element of this enchanting destination?
 

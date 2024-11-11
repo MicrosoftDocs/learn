@@ -84,12 +84,12 @@ they're served in, how they're made, or how someone needs to enjoy it.
 
 > Sure, I can help you brainstorm some vivid ideas for unique refreshments!
 >
-> 1. **Forest Elixir**: A vibrant green drink made from freshly squeezed cucumber, mint, and a hint of lime, served in a carved bamboo cup with a sprig of rosemary.
-> 2. **Berry Blossom Iced Tea**: A deep purple tea brewed with a mix of wild berries and hibiscus, garnished with edible flowers and served in a mason jar with a twist of lemon.
-> 3. **Sunrise Citrus Spritzer**: Layers of orange, grapefruit, and passion fruit juices topped with sparkling water, creating a gradient effect in a tall, clear glass. Each sip reveals a new burst of flavor.
-> 4. **Mystic Mist Lemonade**: A refreshing blue butterfly pea flower lemonade that changes color to a vibrant purple when stirred with a bit of lemon juice. Served in a glass teapot so guests can witness the transformation.
-> 5. **Enchanted Herbal Infusion**: A calming blend of chamomile, lavender, and honey, served in a glass teacup that’s been lightly smoked for a mystical, aromatic experience.
-> 6. **Acorn Ambrosia**: A nutty, creamy concoction made from almond milk, vanilla, and a hint of maple syrup. Served in a hollowed-out acorn shell with a dusting of cinnamon on top, offering a whimsical touch.
+> - **Forest Elixir**: A vibrant green drink made from freshly squeezed cucumber, mint, and a hint of lime, served in a carved bamboo cup with a sprig of rosemary.
+> - **Berry Blossom Iced Tea**: A deep purple tea brewed with a mix of wild berries and hibiscus, garnished with edible flowers and served in a mason jar with a twist of lemon.
+> - **Sunrise Citrus Spritzer**: Layers of orange, grapefruit, and passion fruit juices topped with sparkling water, creating a gradient effect in a tall, clear glass. Each sip reveals a new burst of flavor.
+> - **Mystic Mist Lemonade**: A refreshing blue butterfly pea flower lemonade that changes color to a vibrant purple when stirred with a bit of lemon juice. Served in a glass teapot so guests can witness the transformation.
+> - **Enchanted Herbal Infusion**: A calming blend of chamomile, lavender, and honey, served in a glass teacup that’s been lightly smoked for a mystical, aromatic experience.
+> - **Acorn Ambrosia**: A nutty, creamy concoction made from almond milk, vanilla, and a hint of maple syrup. Served in a hollowed-out acorn shell with a dusting of cinnamon on top, offering a whimsical touch.
 > 
 > Each of these drinks offers a unique sensory experience that complements the enchanting theme of your destination. Imagine how these could come to life visually! Ready to dive into one of these ideas or another element of our project?
 
