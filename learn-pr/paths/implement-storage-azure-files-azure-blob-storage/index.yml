@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-storage-azure-files-azure-blob-storage
 metadata:
-  title: Secure storage for Azure Files and Azure Blob Storage
-  description: Secure storage for Azure Files and Azure Blob Storage
+  title: Secure storage for Azure Files and Azure Blob Storage AZ-1003
+  description: Secure storage for Azure Files and Azure Blob Storage. (AZ-1003)
   ms.date: 07/17/2023
   author: wwlpublish
   ms.author: cynthist

@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel
 metadata:
-  title: 'Configure SIEM security operations using Microsoft Sentinel'
-  description: 'Configure Security Information and Event Management (SIEM) operations using Microsoft Sentinel'
+  title: 'Configure SIEM security operations using Microsoft Sentinel SC-5001'
+  description: 'Configure Security Information and Event Management (SIEM) operations using Microsoft Sentinel. (SC-5001)'
   ms.date: 8/01/2023
   author: wwlpublish
   ms.author: kelawson
