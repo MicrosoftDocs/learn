@@ -49,7 +49,7 @@ Now, you're ready to enable SSPR for the group.
 
     ![Screenshot of the Password Reset properties panel wwith SSPR enabled and selected group set to SSPRTesters.](../media/4-choose-sspr-group.png)
 
-1. Under **Manage**, select the **Authentication methods**, **Registration**, and **Notifications** pages to review the default values. Ensure **Authenication methods** has **Email** selected.
+1. Under **Manage**, select the **Authentication methods**, **Registration**, and **Notifications** pages to review the default values. Ensure **Authentication methods** has **Email** selected.
 1. Select **Customization**.
 1. Select **Yes**, and then in the **Custom helpdesk email or URL** text box, enter **admin@organization-domain-name.onmicrosoft.com**. Replace "organization-domain-name" with the domain name of the Microsoft Entra organization you created. If you've forgotten the domain name, hover over your profile in the Azure portal.
 1. Select **Save**.
