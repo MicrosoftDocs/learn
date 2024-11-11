@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-azure-arc-enabled-servers
 metadata:
-  title: Deploy and manage Azure Arc-enabled Servers
-  description: In this learning path, you're introduced to Azure Arc-enabled servers. You'll cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers.
+  title: Deploy and manage Azure Arc-enabled Servers AZ-1010
+  description: In this learning path, you're introduced to Azure Arc-enabled servers. You'll cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers. (AZ-1010)
   ms.date: 06/17/2024
   author: wwlpublish
   ms.author: bradj
