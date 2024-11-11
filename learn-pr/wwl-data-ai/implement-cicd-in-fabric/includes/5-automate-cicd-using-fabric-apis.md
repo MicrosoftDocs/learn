@@ -1,18 +1,17 @@
-Fabric REST APIs allow you to automate Fabric procedures and processes.  When using automation, you can complete tasks more quickly and with fewer errors. This leads to efficiency and improved productivity. REST API stands for Representational State Transfer Programming Application Interface. Azure REST APIs are used to manage and interact with various Azure services. 
+Fabric REST APIs allow you to automate Fabric procedures and processes, improving efficiency and productivity. REST API stands for Representational State Transfer Programming Application Interface. Azure REST APIs are used to manage and interact with various Azure services. 
 
 Some of the advantages of using the Fabric REST APIs are:
  
 - Automating repeat processes with consistency, making it easier to perform data processing on an ongoing basis.
 - Seamless integration with other systems and applications, providing a streamlined and efficient data pipeline.
 
-## Fabric REST APIs for CI/CD
 Fabric CI/CD REST APIs are available for deployment pipelines and Git integration.
 
 - [Deployment pipelines REST APIs](/rest/api/fabric/core/deployment-pipelines?azure-portal=true)
 - [Git REST APIs](/rest/api/fabric/core/git?azure-portal=true)
 
 ## Use the Fabric REST APIs for CI/CD to automate processes 
-Some examples of things you can use the Fabric CI/CD REST APIs for are:
+You can use the Fabric CI/CD REST APIs to:
 
 - Commit the changes made in the workspace to the connected remote branch.
 - Update the workspace with commits pushed to the connected branch.

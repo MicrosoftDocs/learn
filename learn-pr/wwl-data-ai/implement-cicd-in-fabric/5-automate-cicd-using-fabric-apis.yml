@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/5-automate-cicd-using-fabric-apis.md)]
