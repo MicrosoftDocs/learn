@@ -2,7 +2,7 @@ Companies that use an on-premises Windows Server Active Directory solution can i
 
 With Microsoft Entra Connect, you can provide your users with a common identity for Microsoft 365, Azure, and SaaS applications integrated with Microsoft Entra ID in a hybrid identity environment.
 
-![Diagram of Microsoft Entra Connect synchronizing an on-premises Active Directory with Microsoft Entra ID.](../media/M1-AAD-Connect1.png)
+![Diagram of Microsoft Entra Connect synchronizing an on-premises Active Directory with Microsoft Entra ID.](../media/M1-AAD-Connect-1.png)
 
 <a name='whats-included-in-azure-ad-connect'></a>
 
