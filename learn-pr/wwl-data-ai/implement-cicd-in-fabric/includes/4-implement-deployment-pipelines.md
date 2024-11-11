@@ -5,7 +5,7 @@ Pipelines enable a continuous integration/continuous deployment (CI/CD) approach
 Fabric deployment pipelines help you deploy your Fabric items across different environments like development, test, and production. They let you develop and test content in Fabric before it reaches end users.
 
 ## Create a deployment pipeline 
-A deployment pipelines can be created using two different methods:
+Deployment pipelines can be created using two different methods:
 - Using the **Workspaces** icon on the left navigation pane in Fabric.
 - Using the **Create deployment pipeline** icon at the top of a workspace
 
