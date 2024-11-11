@@ -11,8 +11,6 @@ Before you start to configure SSPR, you need a:
 - **Non-administrative user account**: You'll use this account to test SSPR. It's important that this account isn't an administrator, because Microsoft Entra imposes extra requirements on administrative accounts for SSPR. This user, and all user accounts, must have a valid license to use SSPR.
 - **Security group with which to test the configuration**: The non-administrative user account must be a member of this group. You'll use this security group to limit who you roll SSPR out to.
 
-If you don't already have a Microsoft Entra organization that you can use for this module, we'll set one up in the next unit.
-
 ## Scope of SSPR rollout
 
 There are three settings for the **Self-service password reset enabled** property:
