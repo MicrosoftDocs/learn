@@ -77,7 +77,7 @@ Use the following steps to complete this section of the exercise:
     > [!IMPORTANT]
     > GitHub Copilot Chat uses an AI model to generate responses. The responses you receive are similar to the responses shown in this training, but they aren't identical.
 
-    ![Screenshot showing an explanation of the Sample1 project in the Chat view.](../media/explain-chat-view-workspace-explain-this-project-sample1.png)
+    ![Screenshot showing an explanation of the Sample1 project in the Chat view.](../media/explain-chat-view-workspace-explain-this-project-sample-1.png)
 
 1. At the bottom of the Chat view, notice that GitHub Copilot Chat has suggested a follow-up question.
 

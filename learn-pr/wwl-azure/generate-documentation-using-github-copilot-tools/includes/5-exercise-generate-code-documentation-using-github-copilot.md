@@ -1,4 +1,4 @@
-Documenting your code is an important aspect of the software development process. Inline documentation (code comments) help developers understand the codebase, its purpose, and how to use it.
+Documenting your code is an important aspect of the software development process. Inline documentation (code comments) helps developers understand the codebase, its purpose, and how to use it.
 
 GitHub Copilot Chat can help you document your code quickly and accurately. You have a few options for generating inline documentation using GitHub Copilot Chat:
 
