@@ -1,26 +1,29 @@
 Every user who needs access to Azure resources needs an Azure user account. Your user account contains all the information needed to authenticate you during the sign-in process. Once authenticated, Microsoft Entra ID builds an access token to authorize you, determine what resources you can access, and determine what you can do with those resources.
 
-You can use the **Microsoft Entra ID** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time, but you can use the **Directory + Subscription** pane to switch directories. The dashboard also has a **Manage tenants** button in the toolbar, which makes it easy to view all your directories and switch to another available directory.
+The [Microsoft Entra admin center](https://entra.microsoft.com/) is a web-based identity portal for Microsoft Entra products. It provides a unified administrative experience for organizations and administrators to configure and manage their Microsoft Entra solutions in a centralized location.
+
+In this exercise, you'll use the Microsoft Entra admin center to work with user objects. Keep in mind that you can only work with a single directory at a time, but you can use the **Directory + Subscription** pane to switch directories. 
 
 ## View users
 
-To view the Microsoft Entra users, in the left menu pane, under **Manage**, select **Users**. The **All Users** pane appears. Notice the **User type** and **Identities** columns, as shown in the following screenshot:
+To view the Microsoft Entra users, select **Users** in the left pane, then select **All users**. The **All Users** pane appears. Notice the **User type** and **Identities** columns, as shown in the following screenshot:
 
 ![Screenshot that depicts the All users pane, with the **User type** and **Identities** columns noted.](../media/M1-AAD-Users.png)
 
 Typically, Microsoft Entra ID defines users in three ways:
 
-- **Cloud identities**: These users exist only in Microsoft Entra ID. Examples are administrator accounts and users that you manage yourself. Their source is **Microsoft Entra ID** or **External Microsoft Entra ID** if the user is defined in another Microsoft Entra instance, but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they are deleted.
+- **Cloud identities**: These users exist only in Microsoft Entra ID. Examples are administrator accounts and users that you manage yourself. Their source is **Microsoft Entra ID** or **External Microsoft Entra ID** if the user is defined in another Microsoft Entra instance, but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they're deleted.
 
 - **Directory-synchronized identities**: These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Microsoft Entra Connect** brings these users in to Azure. Their source is **Windows Server AD**.
 
-- **Guest users**: These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts, such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
+- **Guest users**: These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts (such as an Xbox LIVE account). Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
 
 ## Add users
 
 You can add cloud identities to Microsoft Entra ID in multiple ways:
 
 - Syncing an on-premises Windows Server Active Directory
+- Using the Microsoft Entra admin center
 - Using the Azure portal
 - Using the command line
 - Other options
@@ -29,11 +32,11 @@ You can add cloud identities to Microsoft Entra ID in multiple ways:
 
 Microsoft Entra Connect is a separate service that allows you to synchronize a traditional Active Directory with your Microsoft Entra instance. This is how most enterprise customers add users to the directory. The advantage to this approach is users can use single sign-on (SSO) to access local and cloud-based resources.
 
-### Use the Azure portal
+### Use the Microsoft Entra admin center
 
-You can manually add new users through the Azure portal. This is the easiest way to add a small set of users. You need to be in the **User Administrator** role to perform this function.
+You can manually add new users through the Microsoft Entra admin center. This is the easiest way to add a small set of users. You need to be in the **User Administrator** role to perform this function.
 
-1. To add a new user with the Azure portal, in the top menu bar, select **New user**, then select **Create new user**.
+1. To add a new user, select **New user** in the top menu bar, then select **Create new user**.
 
     ![Screenshot showing the New User button highlighted in the Microsoft Entra admin center.](../media/2-new-user-all-users-pane.png)
 
@@ -41,7 +44,7 @@ You can manually add new users through the Azure portal. This is the easiest way
 
     ![Screenshot showing the New user dialog.](../media/2-new-user-user-pane.png)
 
-    The default behavior is to create a new user in the organization. The user will have a username with the default domain name assigned to the directory such as alice@staracoustics.onmicrosoft.com.
+    The default behavior is to create a new user in the organization. The user will have a username with the default domain name assigned to the directory, such as alice@staracoustics.onmicrosoft.com.
 
 1. You can also *invite* a user into the directory. In this case, an email is sent to a known email address, and an account is created and associated with that email address if the user accepts the invitation.
 
