@@ -29,7 +29,6 @@ In this unit, you learn about:
 | Unlimited integrations with Copilot Extensions (public beta)   |     ✅      |     ✅     |     ✅     |
 | Build a private extension for internal tooling (public beta)   |     ✅      |     ✅     |     ✅     |
 | Attach knowledge bases to chat for organizational context    |     ❌     |     ❌     |     ✅     |
-| Fine-tuned models for code completion (coming soon as an add-on)   |     ❌     |     ❌     |     ✅     |
 
 When you're selecting a GitHub Copilot pricing plan, you and your organization should consider these key factors:
 
