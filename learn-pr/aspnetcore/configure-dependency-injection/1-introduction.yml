@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.intro
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to ASP.NET Core dependency injection.
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
