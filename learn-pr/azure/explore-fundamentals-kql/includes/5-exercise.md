@@ -6,7 +6,7 @@ Some of the products that use KQL offer free environments that you can use for p
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
+Azure Data Explorer offers a help cluster with different types of data preloaded. You can access this cluster by using the Azure Data Explorer web UI.
 
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
@@ -38,7 +38,7 @@ Here's a step-by-step analysis of how the query processes the data.
 
 ### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
-Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed by searching for and selecting **Logs** in the Azure portal.
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that you access by searching for and selecting **Logs** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
@@ -70,7 +70,7 @@ Here's a step-by-step analysis of how the query processes the data.
 
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
-The Azure Resource Graph Explorer is accessed by searching for and selecting **Resource Graph Explorer** in the Azure portal.
+You can access the Azure Resource Graph Explorer by searching for and selecting **Resource Graph Explorer** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>
@@ -93,6 +93,6 @@ resources
 Here's a step-by-step analysis of how the query processes the data.
 
 1. The query begins with the `Resources` table as the tabular input.
-1. It filters on records for which the `type` column contains the term *storage*. 
+1. It filters on records for which the `type` column contains the term *storage*.
 1. The resulting list is sorted in descending order based on the *LastEnabledTime* value in the dynamic field called `properties`.
 1. Finally, the top 10 records are returned.

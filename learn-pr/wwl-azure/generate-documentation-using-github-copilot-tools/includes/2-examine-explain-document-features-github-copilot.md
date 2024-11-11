@@ -9,7 +9,7 @@ Visual Studio Code provides easy access to the following GitHub Copilot Chat fea
 - **Quick Chat**: Ask a quick question and get back into what you're doing.
 - **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
 
-The inline chat, chat view, and quick chat features enable you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. The **Explain This** and **Generate Docs** smart actions enable you to generate explanations and documentation for your code with just a few clicks. These features make it easy to get help from GitHub Copilot Chat while you're working on your code.
+The inline chat, chat view, and quick chat features enable you to ask questions and get help from GitHub Copilot Chat without leaving the Visual Studio Code environment. The **Explain** and **Generate Docs** smart actions enable you to generate explanations and documentation for your code with just a few clicks. These features make it easy to get help from GitHub Copilot Chat while you're working on your code.
 
 Providing GitHub Copilot Chat with questions that include a clear scope and intent improves the generated responses. You can use *chat participants*, *slash commands*, and *chat variables* to supplement the natural language text in your questions. The context and intent provided by these specialized descriptors helps GitHub Copilot Chat generate more accurate and useful responses.
 
@@ -30,14 +30,14 @@ GitHub Copilot Chat helps explain selected code by generating natural language d
 There are several ways to generate an explanation of selected code using GitHub Copilot Chat. For example, after selecting code in the editor, you can generate an explanation using the following methods:
 
 - You can open an inline chat and use `/explain` in your prompt.
-- You can use the `Explain This` smart action.
+- You can use the `Explain` smart action.
 - You can open the Chat view and use `/explain #selection` in your prompt.
 
 GitHub Copilot Chat can also be used to generate explanations that address a broader scope. For example, you can use `@workspace` in the chat view to generate an explanation for an entire workspace. Responses can include a summary of the project, its purpose, and other information that's relevant to the workspace. You can also generate an explanation of a specific project file in the workspace by using the `#file` chat variable to specify a filename. Workspace explanations can help you to understand a project and its goals. Developers who are joining a project can use workspace explanations to accelerate their onboarding process.
 
 Some examples of questions you can ask Copilot Chat to generate explanations include:
 
-- Chat view: `@workspace Explain this project`
+- Chat view: `@workspace /explain Explain this project`
 - Chat view: `@workspace /explain Explain the dependencies of this project`
 - Chat view: `@workspace /explain #file:program.cs Explain how this file is used in the project`
 - Inline chat: `/explain #selection Explain how this method works`

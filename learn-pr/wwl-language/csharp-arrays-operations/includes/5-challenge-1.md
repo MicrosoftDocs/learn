@@ -1,6 +1,6 @@
 Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
-Many times you'll need to combine several of the ideas covered in this module into a single solution. You should work to decompose a larger problem into lots of mini-problems, then use the various ideas in this module to solve each mini-problem.
+Many times you need to combine several of the ideas covered in this module into a single solution. You should work to decompose a larger problem into lots of mini-problems, then use the various ideas in this module to solve each mini-problem.
 
 ## Write code to reverse each word in a message
 
@@ -15,7 +15,7 @@ Many times you'll need to combine several of the ideas covered in this module in
 
 1. Write the code necessary to reverse the letters of each word in place and display the result. 
 
-    In other words, don't just reverse every letter in the variable `pangram`. Instead, you'll need to reverse just the letters in each word, but print the reversed word in its original position in the message.
+    In other words, don't just reverse every letter in the variable `pangram`. Instead, you need to reverse just the letters in each word, but print the reversed word in its original position in the message.
 
     Your code must produce the following output:
 
