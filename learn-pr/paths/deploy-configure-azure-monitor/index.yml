@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-configure-azure-monitor
 metadata:
-  title: Deploy and configure Azure Monitor
-  description: In this learning path, you learn to deploy and configure Azure Monitor, including creating a Log Analytics workspace, and configuring monitoring for applications, virtual machines, and virtual networks. You also learn to create and configure alerts and responses. Finally, you practice these skills in a guided lab project.
+  title: Deploy and configure Azure Monitor AZ-1004
+  description: In this learning path, you learn to deploy and configure Azure Monitor, including creating a Log Analytics workspace, and configuring monitoring for applications, virtual machines, and virtual networks. You also learn to create and configure alerts and responses. Finally, you practice these skills in a guided lab project. (AZ-1004)
   ms.date: 10/13/2023
   author: wwlpublish
   ms.author: tonyj
