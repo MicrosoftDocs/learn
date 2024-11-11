@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: How Blazor works
   description: "Blazor supports full stack web UI development with components that can be rendered from the server or client via WebAssembly."
-  ms.date: 1/19/2024
+  ms.date: 11/01/2024
   author: danroth27
   ms.author: daroth
   ms.manager: markl
