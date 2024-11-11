@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-cicd-in-fabric.automate-cicd-using-fabric-apis
+title: Automate CI/CD using Fabric APIs
+metadata:
+  title: Automate CI/CD using Fabric APIs
+  description: "Learn how to automate CI/CD using Fabric APIs."
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-automate-cicd-using-fabric-apis.md)]

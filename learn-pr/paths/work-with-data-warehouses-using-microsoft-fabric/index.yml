@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
 metadata:
-  title: Implement a data warehouse with Microsoft Fabric
-  description: Implement a data warehouse with Microsoft Fabric.
+  title: Implement a data warehouse with Microsoft Fabric DP-602T00
+  description: Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric. (DP-602T00)
   ms.date: 12/20/2023
   author: jupadrao
   ms.author: jupadrao

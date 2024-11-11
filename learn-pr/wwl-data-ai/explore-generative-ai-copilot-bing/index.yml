@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-generative-ai-copilot-bing
 metadata:
-  title: Explore generative AI with Microsoft Copilot
+  title: Explore generative AI with Microsoft Copilot - for consumers
   description: "Interact with Microsoft Copilot to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Use Microsoft Copilot to ideate, research, and generate content. Use tips and techniques to write good prompts. Apply format and tone."
   ms.date: 11/11/2024
   author: wwlpublish
@@ -11,9 +11,9 @@ metadata:
   ms.custom:
   - copilot-learning-hub
   - ai-learning-hub
-  ms.service: bing-search-services
+  ms.service: microsoft-copilot
   ai-usage: ai-assisted
-title: Explore generative AI with Microsoft Copilot
+title: Explore generative AI with Microsoft Copilot - for consumers
 summary: Interact with Microsoft Copilot to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
 abstract: |
   In this module, learn how to:
@@ -28,10 +28,10 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- ai-engineer
-- business-owner
 - business-user
-- data-scientist
+- k-12-educator
+- parent-guardian
+- student
 products:
 - ms-copilot
 subjects:
