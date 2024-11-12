@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Store local data with SQLite in a .NET MAUI app"
   description: "Learn how to store and access data held in SQLite using a .NET Multi-platform App UI (MAUI) app"
-  ms.date: 10/10/2023
+  ms.date: 11/11/2024
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: module
