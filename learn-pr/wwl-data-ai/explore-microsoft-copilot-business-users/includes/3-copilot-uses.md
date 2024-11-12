@@ -21,7 +21,7 @@ Marie is a project manager at a business consultancy company. She's spent the la
 1. After reviewing the key customer requirements, Marie uses Copilot in Microsoft Word to generate a draft for a statement of work that describes the proposed solution based on the customer's requirements and examples of proposals from previous projects.
 1. Next, Marie uses Excel to create a budget for the project, including payment milestones; and uses Copilot in Excel to generate visualizations of the cost data.
 1. With the work planned and costed, Marie uses Copilot in Microsoft PowerPoint to create a presentation based on the statement of work.
-1. Now Marie can use Copilot in outlook to find Alex's availability and schedule a meeting to sync on the proposal.
+1. Now Marie can use Copilot in Outlook to find Alex's availability and schedule a meeting to sync on the proposal.
 1. That afternoon, Marie meets with Alex using Microsoft Teams, and uses Copilot to generate a summary of the call with specific actions for each of them.
 
 In this example, you can see some of the many ways in which Copilot can act as an AI-powered assistant, helping you prioritize work and achieve greater productivity.
