@@ -5,7 +5,7 @@ In this unit, you create a Spring Boot application that sends messages to an Azu
 To create our Spring Boot project, we use [Spring Initializr](https://start.spring.io/) with the following command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=3.4.0-SNAPSHOT -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=3.3.0.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 ## Send messages to a Service Bus queue

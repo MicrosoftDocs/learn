@@ -5,7 +5,7 @@ Now, let's create a Spring Boot application that can receive messages from an Az
 Let's open up a new terminal window, and just like we did with the sender Spring Boot application, we use the [Spring Initializr](https://start.spring.io/) to create a Spring Boot project.
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-receiver-application -d bootVersion=3.4.0-SNAPSHOT -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-receiver-application -d bootVersion=3.3.0.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 ## Receive messages from a Service Bus queue
