@@ -33,7 +33,7 @@ More information on both the standalone and embedded experience are covered in s
 
 Watch this short video for a summary of the users' experiences that Security Copilot offers.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=957ae869-a6cb-414b-83c1-99e5b13ce45a]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=257c1a95-04fb-422e-add2-51e91388ae5f]
 
 ### Natural language processing (NLP)
 

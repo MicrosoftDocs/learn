@@ -18,7 +18,7 @@ For Copilot, context can refer to the time frame, or that you'll use the respons
 
 Watch this short video for a summary on how to create effective prompts.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=972d5cc0-e83a-48fa-9729-7dea11edba9d]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b7fe7b15-6342-4f0b-bed0-9e8ad118ad96]
 
 ### Other prompting tips
 
