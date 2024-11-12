@@ -30,13 +30,13 @@ products:
 subjects:
   - artificial-intelligence
 units:
-- learn.explore-microsoft-copilot-business-user.introduction
-- learn.explore-microsoft-copilot-business-user.what-is-copilot
+- learn.explore-microsoft-copilot-business-users.introduction
+- learn.explore-microsoft-copilot-business-users.what-is-copilot
 - learn.explore-microsoft-copilot-business-users.copilot-uses
 - learn.explore-microsoft-copilot-business-users.how-copilot-works
 - learn.explore-microsoft-copilot-business-users.copilot-prompts
 - learn.explore-microsoft-copilot-business-users.exercise-explore-copilot
-- learn.explore-microsoft-copilot-business-user.knowledge-check
-- learn.explore-microsoft-copilot-business-user.summary
+- learn.explore-microsoft-copilot-business-users.knowledge-check
+- learn.explore-microsoft-copilot-business-users.summary
 badge:
   uid: learn.explore-microsoft-copilot-business-users.badge
