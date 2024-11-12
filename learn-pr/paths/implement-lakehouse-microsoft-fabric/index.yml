@@ -30,7 +30,5 @@ modules:
 - learn.wwl.get-started-lakehouses
 - learn.wwl.use-apache-spark-work-files-lakehouse
 - learn.wwl.work-delta-lake-tables-fabric
-- learn.wwl.ingest-dataflows-gen2-fabric
-- learn.wwl.use-data-factory-pipelines-fabric
 trophy:
   uid: learn.wwl.implement-lakehouse-microsoft-fabric.trophy
