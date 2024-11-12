@@ -8,7 +8,7 @@ In a star schema, *fact* tables and *dimension* tables work together to organize
 
 For example, if you have a sales fact table, it might store data like the amount sold and the date of each sale. The dimension tables would then provide additional details, such as customer information, product details, and time periods. By linking the fact table to the dimension tables, you can easily filter, group, and analyze the data.
 
-:::image type="content" source="../media/model-frameworks-star-schema-design.png" alt-text="Graphic showing a fact table in the center and multiple dimension tables connected by relationships organized in a star-like shape with a star background to explain the reason behind the star schema name.":::
+:::image type="content" source="../media/model-frameworks-star-schema-design.png" alt-text="Diagram showing a fact table in the center and multiple dimension tables connected by relationships organized in a star-like shape with a star background to explain the reason behind the star schema name.":::
 
 ## Create relationships
 

@@ -49,9 +49,9 @@ The dynamic and reusable nature of calculation groups makes them incredibly powe
 
 Field parameters allow you to create interactive reports by enabling users to select different fields or measures dynamically. This feature is useful for creating customizable reports where users can choose the data they want to see.
 
-In our scenario, we created a new parameter to include the Product, Category, and Color fields. Now we use our Total Sales measure and add the parameter in a visual instead of those individual fields. We also add a slicer with the parameter so users can switch between the selected fields.
+In our scenario, we created a new parameter to include the Product, Category, and Color fields. Now we use our Total Sales measure and add the parameter in a visual instead of those individual fields. We also add a slicer with the parameter so users can switch between the selected fields. The following image shows a column chart for Total Sales by Category configured with the parameter in the X-axis and Total Sales in the Y-axis. A slicer is also present to dynamically switch between the Total Sales by Product, Category, and Color.
 
-![Screenshot of a column chart for Total Sales by Category configured with the parameter in the X-axis and Total Sales in the Y-axis. A slicer is also present to dynamically switch between the Total Sales by Product, Category, and Color.](../media/column-chart-parameter-slicer.png)
+![Screenshot of the Total Sales by Product column chart and slicer.](../media/column-chart-parameter-slicer.png)
 
 Before field parameters, report developers might create a visual for Total Sales by Product and repeat for Category and Color. Users could switch between the different visuals in a similar experience by overlaying the visuals on top of each other and adding bookmarks and buttons. However, the more visuals you add to a report page might affect performance.
 
