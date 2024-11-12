@@ -14,7 +14,7 @@ In our introduction example, we recognized the need to reduce report size and pr
 
 To create a specialized semantic model, open a new Power BI Desktop instance and connect to the core semantic model. You're now connected live to that semantic model, which doesn't allow any changes to the model, but you can filter and visualize data. Use the **Make changes to the model** option to switch from a live connection to DirectQuery.
 
-:::image type="content" source="../media/dataset-direct-query.png" alt-text="Screenshot of Power BI Desktop notice that DirectQuery connection is required, after selecting the "make changes to the model" option.":::
+:::image type="content" source="../media/dataset-direct-query.png" alt-text="Screenshot of Power BI Desktop notice that DirectQuery connection is required, after selecting the Make changes to the model option.":::
 
 In the following screenshot, there are three tables from the connected semantic model and two new tables added. You can add measures, calculation groups, and more.
 
