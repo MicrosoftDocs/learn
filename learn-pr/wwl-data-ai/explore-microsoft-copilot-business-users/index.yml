@@ -8,6 +8,7 @@ metadata:
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
+  ms.service: microsoft-copilot
   ms.collection:
     - wwl-ai-copilot
 title: Explore Microsoft Copilot - for business users
