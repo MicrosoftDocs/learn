@@ -11,11 +11,11 @@ In Visual Studio Code, create a new project:
 
 1. Select the **Explorer** view:
 
-    :::image type="content" source="../media/vs-code-select-explorer.png" alt-text="Screenshot of selecting the Explorer view":::
+    :::image type="content" source="../media/vs-code-select-explorer.png" alt-text="Screenshot of selecting the Explorer view.":::
 
 1. Select the **Create .NET Project** button. Alternatively, you can bring up the **Command Palette** using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then type "`.NET`" to find and select the **.NET: New Project** command.
 
-    :::image type="content" source="../media/vs-code-select-create-dotnet-project.png" alt-text="Screenshot of selecting Create .NET Project":::
+    :::image type="content" source="../media/vs-code-select-create-dotnet-project.png" alt-text="Screenshot of selecting Create .NET Project.":::
 
 1. Select the **ASP.NET Core Empty** project template from the list.
 1. In the **Project Location** dialog, create a folder named `MyWebApp` to contain the project.
@@ -26,7 +26,7 @@ In Visual Studio Code, create a new project:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer":::
+:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer.":::
 
 ::: zone-end
 
@@ -62,7 +62,7 @@ From a terminal or the command line, create a new project:
 
 The *MyWebApp* project folder contents are displayed in the Visual Studio Code **Explorer**:
 
-:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer":::
+:::image type="content" source="../media/vs-code-explorer-project-files.png" alt-text="Screenshot of the project files in the Visual Studio Code Explorer.":::
 
 ::: zone-end
 
