@@ -34,7 +34,7 @@ In this step, you use Azure CLI to retrieve file system logs to your cloud share
    ```
 
    > [!NOTE]
-   > If you see a prompt to **Switch to Colassic Cloud shell**, select **Confirm**. Then, re-enter the previous command `code *.txt` to display the application log file.
+   > If you see a prompt to **Switch to Classic Cloud shell**, select **Confirm**. Then, re-enter the previous command `code *.txt` to display the application log file.
 
 1. In Cloud Shell, press <kbd>Ctrl+Q</kbd> to close the editor.
 
