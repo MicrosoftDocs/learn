@@ -1,4 +1,4 @@
-The key to using Copilot effectively is to create prompts that are likely to generate useful responses. As a general rule, you should use prompts that are detailed and structured for clarity. Generally using positive instructions (telling copilot what to *do* rather than what *not* to do) works best.
+The key to using Copilot effectively is to create prompts that are likely to generate useful responses. As a general rule, you should use prompts that are detailed and structured for clarity. Generally, using positive instructions (telling copilot what to *do* rather than what *not* to do) works best.
 
 Some key things to consider when submitting a prompt are:
 
