@@ -40,7 +40,7 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 1. Select your billing account.
 1. On the **Overview** page, copy the **Billing account ID**.
-1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step.
+1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number**, and paste the billing account ID from the previous step.
 1. Enter the number of months of data to get and then select **OK**.  
     :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account ID for an Enterprise Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
