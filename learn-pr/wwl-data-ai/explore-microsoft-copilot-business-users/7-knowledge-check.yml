@@ -18,33 +18,33 @@ quiz:
     choices:
     - content: "Microsoft Copilot"
       isCorrect: false
-      explanation: "This is incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
+      explanation: "Incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
     - content: "Microsoft Copilot Pro"
       isCorrect: false
-      explanation: "This is incorrect. Microsoft Copilot Pro is for individuals who need advanced functionality."
+      explanation: "Incorrect. Microsoft Copilot Pro is for individuals who need advanced functionality."
     - content: "Microsoft 365 Copilot"
       isCorrect: true
-      explanation: "This is correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."
+      explanation: "Correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."
   - content: "How can you ground a prompt for Copilot?"
     choices:
     - content: "Reference a source of data in the prompt to scope the response."
       isCorrect: true
-      explanation: "This is correct. Referencing a data source in your prompt helps ground the response."
+      explanation: "Correct. Referencing a data source in your prompt helps ground the response."
     - content: "Repeatedly submit the same prompt until you get the response you want."
       isCorrect: false
-      explanation: "This is incorrect. Repeating the same request does not ground the prompt."
+      explanation: "Incorrect. Repeating the same request does not ground the prompt."
     - content: "Enter the command 'GO' after your prompt"
       isCorrect: false
-      explanation: "This is incorrect. Copilot prompts do not require keyword commands."
+      explanation: "Incorrect. Copilot prompts do not require keyword commands."
   - content: "What should you do if Copilot returns a response that doesn’t fully answer your question?"
     choices:
     - content: "Restart the session and try again. Copilot answers are random."
       isCorrect: false
-      explanation: "This is incorrect. Copilot responses are not random. They are dependent on effective prompts and iterative conversations."
+      explanation: "Incorrect. Copilot responses are not random. They are dependent on effective prompts and iterative conversations."
     - content: "Submit a follow-up prompt asking for the specific information you need."
       isCorrect: true
-      explanation: "This is correct. Using follow-up prompts to iterate on a response can help you get the information you need."
+      explanation: "Correct. Using follow-up prompts to iterate on a response can help you get the information you need."
     - content: "Ask a human coworker instead. Copilot cannot answer your question."
       isCorrect: false
-      explanation: "This is incorrect. Copilot responses can be refined by submitting effective prompts in iterative conversations."
+      explanation: "Incorrect. Copilot responses can be refined by submitting effective prompts in iterative conversations."
   
