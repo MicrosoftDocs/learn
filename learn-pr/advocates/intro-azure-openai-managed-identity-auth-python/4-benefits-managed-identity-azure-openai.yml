@@ -7,7 +7,7 @@ metadata:
   ms.date: 11/11/2024
   author: sarah-yo
   ms.author: sayoung
-  ms.topic: module
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-benefits-managed-identity-azure-openai.md)]
