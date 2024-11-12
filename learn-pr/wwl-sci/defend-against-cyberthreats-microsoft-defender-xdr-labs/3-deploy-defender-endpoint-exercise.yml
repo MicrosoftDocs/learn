@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-lab.deploy-defender-endpoint-exercise
+
+title: Deploy Microsoft Defender for Endpoint
+metadata:
+  title: exercise
+  description: "Deploy Microsoft Defender for Endpoint and onboard devices."
+  ms.date: 11/7/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-deploy-defender-endpoint-exercise.md)]

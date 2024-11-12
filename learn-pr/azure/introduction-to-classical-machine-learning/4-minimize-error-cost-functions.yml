@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Minimize model errors with cost functions
   description: Conceptual unit about minimizing model errors by using cost functions in machine learning.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit

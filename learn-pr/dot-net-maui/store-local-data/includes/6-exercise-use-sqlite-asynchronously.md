@@ -1,4 +1,4 @@
-The application works well, but if the database contains many rows, the UI can become unresponsive while the app performs database queries and other operations. In this exercise, you'll convert the application from the synchronous SQLite API to the asynchronous version. This way, your application will always be responsive no matter how many queries you make to your database.
+The application works well, but if the database contains many rows, the UI can become unresponsive while the app performs database queries and other operations. In this exercise, you convert the application from the synchronous SQLite API to the asynchronous version. This way, your application is always responsive no matter how many queries you make to your database.
 
 ## Create an Async connection
 
@@ -95,7 +95,7 @@ The application works well, but if the database contains many rows, the UI can b
 
 1. Expand **MainPage.xaml** in the Solution Explorer and open the **MainPage.xaml.cs** file.
 
-1. Modify both of the button-click event handlers to use the asynchronous methods from the `PersonRepository` class. Make use of the `async` and `await` keywords:
+1. Modify both of the button-click event handlers so that they use the asynchronous methods from the `PersonRepository` class. Make use of the `async` and `await` keywords:
 
     ```csharp
       public async void OnNewButtonClicked(object sender, EventArgs args)
@@ -117,4 +117,4 @@ The application works well, but if the database contains many rows, the UI can b
 
 1. Save the **MainPage.xaml.cs** file.
 
-1. Build and run the program on Windows and Android to verify it still functions as before.
+1. Build and run the program on Windows and Android, verifying that it still functions as before.

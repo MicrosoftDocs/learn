@@ -60,9 +60,9 @@ GitHub Copilot Chat can help you understand new projects or specific project fil
 
 Use the following steps to complete this section of the exercise:
 
-1. On the Visual Studio Code activity bar, select **Chat**.
+1. On Visual Studio Code's top menu bar, select **Open Chat**.
 
-    The Visual Studio Code activity bar is the vertical bar on the far left side of the Visual Studio Code window. Hover the mouse pointer over the activity bar icons to see their names. The Chat icon looks like a speech bubble.
+    The Open Chat button is located on the menu bar at the top of the Visual Studio Code window, just to the right of the Searchbox. It displays a small GitHub Copilot logo.
 
 1. Use the following command to ask Copilot Chat to explain the `APL2007M2Sample1` project:
 
@@ -112,7 +112,7 @@ Use the following steps to complete this section of the exercise:
 
 Even experienced developers encounter code that's difficult to understand. Rather than spending time trying to decipher complex code, you can ask GitHub Copilot Chat to provide an explanation. Chat view, inline chat, and smart actions can each be used to generate explanations for selected code lines or sections.
 
-In this section of the exercise, you use the **Explain This** smart action to generate an explanation of selected code lines.
+In this section of the exercise, you use the **Explain** smart action to generate an explanation of selected code lines.
 
 1. Ensure that you have the `MainWindow.xaml.cs` file open in the editor.
 
@@ -142,9 +142,9 @@ In this section of the exercise, you use the **Explain This** smart action to ge
     }
     ```
 
-1. Select the following code lines, and then use the **Explain This** smart action to generate an explanation.
+1. Select the following code lines, and then use the **Explain** smart action to generate an explanation.
 
-    To select the **Explain This** smart action, right-click the selected code lines, select **Copilot**, and then select **Explain This** from the context menu.
+    To select the **Explain** smart action, right-click the selected code lines, select **Copilot**, and then select **Explain** from the context menu.
 
     ```csharp
 

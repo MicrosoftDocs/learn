@@ -34358,6 +34358,96 @@
       "source_path": "learn-pr/azure/implement-firewall-load-balancer/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure-stack/hci/manage/sdn-technical-reference",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/2-what-is-code-to-cloud.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/3-exercise-deploy-to-code-to-cloud-using-starter-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/4-exercise-bring-your-own-repository-to-code-to-cloud.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/5-manage-your-app-components-on-code-to-cloud.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-code-to-cloud/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/index.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/5-determine-service-endpoint-services.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/4-determine-service-endpoint-uses.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/6-identify-private-link-uses.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/3-identify-user-defined-routes.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/7-simulation-routing.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/1-introduction.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/8-knowledge-check.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/2-review-system-routes.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/9-summary-resources.md",
+      "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
     }
   ]
 }

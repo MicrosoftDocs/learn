@@ -4117,3 +4117,13 @@ achievements:
   title: Manage data assets in the classic Microsoft Purview Data Catalog
   summary: This module teaches you how to use the classic Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate.
   iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg
+- uid: learn.introduction-code-to-cloud.badge
+  type: badge
+  title: Introduction to Code to Cloud
+  summary: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.configure-network-routing-endpoints.badge
+  type: badge
+  title: Configure network routing and endpoints
+  summary: Learn how to configure network routes, including endpoints and private links.
+  iconUrl: /training/achievements/network-routing-endpoints-configure.svg
