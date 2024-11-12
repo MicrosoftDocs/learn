@@ -23,6 +23,6 @@
 4.  In the left navigation, select **Licenses.**
 5.  On the Update license assignments blade, select the check box for a single or multiple licenses.
     
-    :::image type="content" source="../media/assign-user-license-options-9eaa5705.png" alt-text="Screenshot of the Update license assignments page and the available licenses highlighted. Office 365 E5 and Windows 10 Enterprise E3 are selected. Selecting these licenses brings up a list of products available in those licenses, like Microsoft Bookings, Project, and others. You can choose to remove specific products.":::
+    :::image type="content" source="../media/assign-user-license-options-9eaa5705-6da74aad.png" alt-text="Screenshot of the Update license assignments page and the available licenses highlighted.":::
     
 6.  When complete, select **Save**.

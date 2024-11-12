@@ -1,7 +1,7 @@
 Here's where we take a look at how Microsoft Purview works. In this unit, you learn the core operational theory behind the functioning of Microsoft Purview for mapping and scanning your data sources. The key areas we focus on include how to:
 
-* Load data in the data map.
-* Browse and search information in the data catalog.
+- Load data in the data map.
+- Browse and search information in the data catalog.
 
 ## Load data in the data map
 
@@ -17,32 +17,32 @@ After you have a Microsoft Purview service configured in Azure, you use the Micr
 
 Each type of data source you choose requires specific information to complete the registration. For example, if your data sources reside in your Azure subscription, you choose the necessary subscription and storage account name. The following image is an example of choosing an Azure Blob Storage source.
 
-:::image type="content" source="../media/register-sources-form.png" alt-text="Screenshot that shows the dialog to register an Azure Blob Storage source for Microsoft Purview. The dialog has entries for a name, Azure subscription name and storage account name, an endpoint, and a collection to which to add the source.":::
+:::image type="content" source="../media/register-sources-form.png" alt-text="Screenshot that shows the dialog to register an Azure Blob Storage source for Microsoft Purview. The dialog has entries for a name, Azure subscription and storage account name, an endpoint, and a collection to which to add the source.":::
 
-After registration, you scan the data source. Scanning ingests metadata about your data source into the Microsoft Purview Data Map. Each data source has specific requirements for authenticating and configuration to permit scanning of the assets in that data source.
+After registration, you scan the data source. Scanning ingests metadata about your data source into the Microsoft Purview Data Map. Each data source has specific requirements for authentication and configuration to permit scanning of the assets in that data source.
 
 For example, if you have data stored in an Amazon S3 standard bucket, you'll need to provide a configuration for the connection. For this service, you use Microsoft Purview to provide a Microsoft account with secure access to AWS, where the Microsoft Purview scanner will run. The Microsoft Purview scanner uses this access to your Amazon S3 buckets to read your data. The scanner then reports the results (including only the metadata and classification) back to Azure. You can use the Microsoft Purview classification and labeling reports to analyze and review your data scan results.
 
 > [!NOTE]
 > Check the [Microsoft Purview connector for Amazon S3 documentation](/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
 
-In Microsoft Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are:
+In Microsoft Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are listed here.
 
-* Microsoft Purview managed identity
-* Account key (using Azure Key Vault)
-* SQL authentication (using Key Vault)
-* Service principal (using Key Vault)
+- Microsoft Purview managed identity
+- Account key (using Azure Key Vault)
+- SQL authentication (using Key Vault)
+- Service principal (using Key Vault)
 
 ### Map data
 
-The data map is the foundational platform for Microsoft Purview. The data map consists of:
+The data map is the foundational platform for Microsoft Purview. The data map consists of the following.
 
-- Data assets.
-- Data lineage.
-- Data classifications.
-- Business context.
+- Data assets
+- Data lineage
+- Data classifications
+- Business context
 
-Customers create a knowledge graph of data that comes in from a range of sources. Microsoft Purview makes it easy to register and automatically scan and classify data at scale. Within a data map, you can identify the type of data source, along with other details around security and scanning.
+Customers create a knowledge graph of data that comes in from a range of sources. Microsoft Purview makes it easy to register, automatically scan, and classify data at scale. Within a data map, you can identify the type of data source, along with other details around security and scanning.
 
 The data map uses collections to organize these details. Collections are a way of grouping data assets into logical categories to simplify management and discovery of assets within the catalog. You also use collections to manage access to the metadata that's available in the data map.
 
@@ -64,11 +64,11 @@ For example, you might want to scan only the `.csv` files in an Azure Data Lake 
 
 Metadata is used to help describe the data that's being scanned and made available in the catalog. During the configuration of a scan set, you can specify classification rules to apply during the scan that also serve as metadata. The classification rules fall under five major categories:
 
-* **Government**: Attributes such as government identity cards, driver license numbers, and passport numbers.
-* **Financial**: Attributes such as bank account numbers or credit card numbers.
-* **Personal**: Personal information such as a person's age, date of birth, email address, and phone number.
-* **Security**: Attributes like passwords that can be stored.
-* **Miscellaneous**: Attributes not included in the other categories.
+- **Government**: Attributes such as government identity cards, driver license numbers, and passport numbers.
+- **Financial**: Attributes such as bank account numbers or credit card numbers.
+- **Personal**: Personal information such as a person's age, date of birth, email address, and phone number.
+- **Security**: Attributes like passwords that can be stored.
+- **Miscellaneous**: Attributes not included in the other categories.
 
 You can use several system classifications to classify your data. These classifications align with the sensitive information types in the Microsoft Purview compliance portal. You can also create custom classifications to identify other important or sensitive information types in your data estate.
 
@@ -76,9 +76,9 @@ You can use several system classifications to classify your data. These classifi
 
 After you register a data source, you can enrich its metadata. With proper access, you can annotate a data source by providing descriptions, ratings, tags, glossary terms, identifying experts, or other metadata for requesting data-source access. This *descriptive metadata* supplements the structural metadata, such as column names and data types, that's registered from the data source.
 
-Discovering and understanding data sources and their use is the primary purpose of registering the sources. If you're an enterprise user, you might need data for business intelligence, application development, data science, or any other task where the right data is required. You can use the data catalog discovery experience to quickly find data that matches your needs. You can evaluate the data for its fitness for the purpose and then open the data source in your tool of choice.
+Discovering and understanding data sources and their use is the primary purpose of registering the sources. If you're an enterprise user, you might need data for business intelligence, application development, data science, or any other task where the right data is required. You can use the data catalog discovery experience to quickly find data that matches your needs. You can evaluate the data's fit for the purpose, and then open the data source in your tool of choice.
 
-At the same time, you can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. You can also register new data sources, which are then discovered, evaluated, and used by the community of catalog users.
+At the same time, you can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. Also, new data sources can be registered for the community of catalog users to discover, evaluate, and use.
 
 ## Browse and search
 
@@ -88,9 +88,9 @@ You can use business context to search information from the Microsoft Purview ca
 
 Discovery enables you to use:
 
-* Semantic search and browse.
-* Business glossary and workflows.
-* Data lineage with sources, owners, transformations, and lifecycle​.
+- Semantic search and browse.
+- Business glossary and workflows.
+- Data lineage with sources, owners, transformations, and lifecycle.
 
 :::image type="content" source="../media/search.png" alt-text="Screenshot that shows the fictional company Adatum Corporation by using the search function of Microsoft Purview.":::
 

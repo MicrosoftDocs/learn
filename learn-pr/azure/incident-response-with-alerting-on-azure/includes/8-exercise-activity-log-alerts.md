@@ -12,7 +12,7 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right-hand side of your screen.
 
-1. In the **Select a resource** pane, the **Filter by subscription** field should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, search for and select **Virtual machines**.
+1. In the **Resource type** dropdown list, search for and select **Virtual machines**.
 
 1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Apply**.
 
@@ -28,7 +28,9 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. In this exercise, we're adding an email alert when VMs are deleted.
 
-1. On the **Create an alert rule** pane, select the **Next: Actions** button, and select **Create action group**. The **Create an action group** pane appears.
+1. On the **Create an alert rule** pane, select the **Next: Actions** button, and select **Use action groups**. 
+
+1. Select **Create action group** in the **Select action group** pane. The **Create an action group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -40,7 +42,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Region | **Global** (default) |
     | **Instance details** |
     | Action group name | **Alert the operations team** |
-    | Display name | **AlertOpsTeam** |
+    | Display name | **AlertOps** |
 
 1. Select **Next: Notifications**, and enter the following values for each setting.
 

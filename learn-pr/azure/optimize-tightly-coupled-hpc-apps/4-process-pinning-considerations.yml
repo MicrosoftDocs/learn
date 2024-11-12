@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.4-process-pinning-considerations
 title: Process pinning considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Process pinning considerations
   description: Learn why, how, and when to pin processes and threads when you're running HPC parallel applications.
   ms.date: 08/05/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-roles-responsibilities-world-of-data.explore-job-roles
 title: Explore job roles in the world of data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore job roles in the world of data
   description: "Explore job roles in the world of data"
   ms.date: 10/09/2024

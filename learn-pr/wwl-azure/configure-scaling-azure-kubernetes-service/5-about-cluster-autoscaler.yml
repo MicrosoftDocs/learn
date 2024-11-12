@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.about-cluster-autoscaler
 title: When to use cluster autoscaler
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use cluster autoscaler
   description: "When to use cluster autoscaler"
   ms.date: 10/25/2023

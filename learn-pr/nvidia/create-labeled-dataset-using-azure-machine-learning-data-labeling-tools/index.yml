@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a labeled dataset using Azure Machine Learning data labeling tools
   description: Create a labeled dataset using Azure Machine Learning data labeling tools.
   ms.date: 03/14/2022
@@ -42,3 +44,4 @@ units:
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.summary
 badge:
   uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
+

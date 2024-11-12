@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.handling-late-data-and-out-of-order-events
 title: Handle late data and out-of-order events in incremental processing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Handle late data and out-of-order events
   description: "Learn how to handle late arriving data with Delta Lake in Azure Databricks"
   ms.date: 7/25/2024

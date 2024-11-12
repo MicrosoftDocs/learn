@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
   description: Learn how to get started with Azure Quantum Resource Estimator.
   ms.date: 06/05/2024
@@ -46,3 +48,4 @@ units:
 - learn.quantum.estimate-resources-quantum-algorithms.summary
 badge:
   uid: learn.quantum.estimate-resources-quantum-algorithms.badge
+

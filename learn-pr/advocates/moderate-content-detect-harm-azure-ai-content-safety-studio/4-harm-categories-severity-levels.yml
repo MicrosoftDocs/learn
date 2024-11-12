@@ -3,7 +3,7 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.harm-cate
 title: Harm categories and severity levels
 metadata:
   title: Harm categories and severity levels
-  description: Learn about the different harm categories and severity levels.
+  description: Learn about the harm categories and severity levels in Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024

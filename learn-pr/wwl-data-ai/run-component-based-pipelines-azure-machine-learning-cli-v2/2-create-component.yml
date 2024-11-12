@@ -2,6 +2,8 @@
 uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.create-component
 title: Create a component
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a component
   description: Create a component
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-create-component.md)]
+

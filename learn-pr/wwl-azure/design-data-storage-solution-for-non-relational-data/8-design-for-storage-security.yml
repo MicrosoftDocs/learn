@@ -2,6 +2,8 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-storage-security
 title: Design for storage security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for storage security
   description: "Design for storage security"
   ms.date: 09/02/2024

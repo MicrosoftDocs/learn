@@ -2,6 +2,8 @@
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/02/2023

@@ -9,7 +9,7 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Copy and transform data in Azure Cosmos DB (NoSQL API) by using Azure Data Factory][/azure/data-factory/connector-azure-cosmos-db]
+- [Copy and transform data in Azure Cosmos DB for NoSQL by using Azure Data Factory][/azure/data-factory/connector-azure-cosmos-db]
 - [Kafka Connect for Azure Cosmos DB][/azure/cosmos-db/sql/kafka-connector]
 - [Azure Cosmos DB output from Azure Stream Analytics][/azure/stream-analytics/azure-cosmos-db-output]
 - [Configure and use Azure Synapse Link for Azure Cosmos DB][/azure/cosmos-db/configure-synapse-link]

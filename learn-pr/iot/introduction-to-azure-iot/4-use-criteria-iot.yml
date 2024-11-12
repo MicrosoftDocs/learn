@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-iot.when-to-use-iot
 title: When to use Azure IoT
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure IoT
   description: "This content is a part of Introduction to Azure IoT."
   ms.date: 08/01/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-use-criteria-iot.md)]
+

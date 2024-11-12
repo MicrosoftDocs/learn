@@ -2,6 +2,8 @@
 uid: learn.wwl.design-for-user-identities-profiles.plan-for-desktop-client-deployment
 title: Plan for a desktop client deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for a desktop client deployment
   description: "Plan for a desktop client deployment"
   ms.date: 02/10/2023

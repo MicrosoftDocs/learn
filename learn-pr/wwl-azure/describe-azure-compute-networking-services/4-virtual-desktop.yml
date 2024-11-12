@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-desktop
 title: Describe Azure virtual desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure virtual desktop
   description: "Describe Azure virtual desktop"
   ms.date: 09/20/2024

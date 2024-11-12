@@ -2,6 +2,8 @@
 uid: learn.iot.introduction-to-azure-digital-twins.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: A summary review of what you've learned in this module.
   ms.date: 06/22/2023

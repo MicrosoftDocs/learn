@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-with-devops.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/06/2024
@@ -46,3 +48,4 @@ quiz:
         - content: "To manually, build and test updated versions of software."
           isCorrect: false
           explanation: "Incorrect. Continuous integration involves automating the build and testing process."
+

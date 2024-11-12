@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.plan-azure-vmware-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan an Azure VMware Solution deployment
   description: Plan an Azure VMware Solution deployment.
   ms.date: 08/01/2024
@@ -38,3 +40,4 @@ quiz:
     - content: "3"
       isCorrect: true
       explanation: "For a minimum deployment, AVS requires three nodes."
+

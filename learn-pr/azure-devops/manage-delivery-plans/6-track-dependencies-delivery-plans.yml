@@ -2,12 +2,15 @@
 uid: learn.azdo.manage-delivery-plans.6-track-dependencies-delivery-plans
 title: Exercise - Track dependencies using Delivery Plans
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Track dependencies using Delivery Plans
   description: Track dependencies, identify dependencies with issues, and resolve dependency issues using Delivery Plans.
-  ms.date: 10/06/2023
+  ms.date: 10/18/2024
   author: chcomley
   ms.author: chcomley
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-track-dependencies-delivery-plans.md)]
+

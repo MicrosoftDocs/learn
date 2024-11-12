@@ -1,6 +1,6 @@
 After you've created your XAML UI, you can add code to respond to the interactions that occur as the user visits the page. .NET MAUI notifies the application of user input and interactions through standard .NET events.
 
-In this unit, you'll learn how to handle these events and carry out the operations expected by the user.
+In this unit, you'll learn how to handle these events and carry out the user-expected operations.
 
 ## Naming elements in a XAML page
 
@@ -8,9 +8,9 @@ Event-handling code frequently needs to refer to specific controls and their pro
 
 - It adds a private field to the generated code-behind file that's mapped to this element. Use this field in your code to interact with the visual element to set runtime properties and to handle events.
 
-- The element is made known to XAML through this name. You can refer to these elements from other elements defined in the same XAML file.
+- It makes the element known to XAML through this name. You can refer to these elements from other elements defined in the same XAML file.
 
-You can't use any arbitrary string when you name the element. The value assigned to the `x:Name` attribute is used to create a field in code. Instead, it must conform to the naming conventions for a variable. The name also must be unique because it's compiled into the code-behind definition.
+You can't use any arbitrary string when you name the element. The value assigned to the `x:Name` attribute is used to create a field in code. Instead, it must conform to the naming conventions for a variable. The name also must be unique, because it's compiled into the code-behind definition.
 
 After you provide a name for an element, you can interact with that element in the code-behind file. The following XAML fragment defines a `Label` control. It's named **CounterLabel** (this example is taken from the default app the .NET MAUI template generates):
 
@@ -51,7 +51,7 @@ private void OnCounterClicked(object sender, EventArgs e)
 
 ## Separation of Concerns
 
-Wiring up events in XAML is convenient, but it mixes the control behavior with the UI definition. Many developers prefer to keep those elements distinct and do all the event-handler subscriptions in the code behind to named elements. It's easier to see what's hooked up and to where the behavior is mapped. This method also makes it harder to accidentally break the code by removing a handler in the XAML without realizing it. The compiler won't catch a removed handler, and it will only show itself as an issue when the code doesn't perform that behavior properly.
+Wiring up events in XAML is convenient, but it mixes the control behavior with the UI definition. Many developers prefer to keep those elements distinct and do all the event-handler subscriptions in the code-behind to named elements. It's easier to see what's hooked up and to where the behavior is mapped. This method also makes it harder to accidentally break the code by removing a handler in the XAML without realizing it. The compiler won't catch a removed handler, and it will only become an issue when the code doesn't perform that behavior properly.
 
 Whether you choose to wire up event handlers using XAML or by using code is a matter of personal choice.
 

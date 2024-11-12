@@ -2,6 +2,8 @@
 uid: learn.wwl.responsible-language-models-azure-databricks.exercise
 title: Exercise - Implement responsible AI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Implement responsible AI
   description: "Exercise - Implement responsible AI"
   ms.date: 08/23/2024

@@ -2,6 +2,8 @@
 uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "This unit introduces the module to implementing Azure Database for MySQL - Flexible Server features that support mission-critical workloads. It covers networking and security, business continuity, disaster recovery, and performance."
   ms.date: 08/28/2024
@@ -9,6 +11,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

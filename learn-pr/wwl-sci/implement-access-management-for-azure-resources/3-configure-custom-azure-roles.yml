@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-access-management-for-azure-resources.configure-custom-azure-roles
 title: Configure custom Azure roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure custom Azure roles
   description: "Configure custom Azure roles"
   ms.date: 10/30/2023

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-ai-custom-skill.exercise
+title: Exercise - Create a Custom Skill for Azure AI Search
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Create a Custom Skill for Azure AI Search
+  description: "Create a Custom Skill for Azure AI Search."
+  ms.date: 10/23/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 30
+labId: 152397
+labModal: true
+content: |
+  [!include[](includes/6-exercise.md)]

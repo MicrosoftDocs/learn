@@ -1,4 +1,4 @@
-In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator that you already created. You'll need to write some classical code for this phase.
+In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator you already created in the previous unit.
 
 ## Combine multiple random bits to form a larger number
 
@@ -38,35 +38,52 @@ The quantum random number generator returns the number 6.
 
 ## Create a complete random number generator
 
-Here, you expand on the `RandomNumberGenerator.qs` file to build larger random numbers.
+Here, you expand on the `Main.qs` file to build larger random numbers. 
 
-### Add the required libraries
+### Import the required libraries
 
-For the complete random number generator, you need to include three Q# libraries: `Microsoft.Quantum.Math`, `Microsoft.Quantum.Intrinsic`, and `Microsoft.Quantum.Convert`. Add the following `open` directives to `RandomNumberGenerator.qs` like this:
+First, you need to import the required namespaces from the Q# Standard library to the program. The Q# compiler loads many common functions and operations automatically, however for the complete quantum random number generator, you need some additional functions and operations from two Q# namespaces: `Microsoft.Quantum.Math`and `Microsoft.Quantum.Convert`.
+
+Copy and paste the following `import` directives to the top of your `Main.qs` file:
 
 ```qsharp
-namespace QuantumRandomNumberGenerator {
-open Microsoft.Quantum.Convert;
-open Microsoft.Quantum.Intrinsic;
-open Microsoft.Quantum.Math;
+import Microsoft.Quantum.Convert.*;
+import Microsoft.Quantum.Math.*;
+```
 
-// The rest of the code goes here.
+### Rename the `Main` operation to `GenerateRandomBit`
 
-}
+For the complete random number generator, you're going to reuse the operation defined in the previous unit. However, the operation name `Main` is the entry point of the program and should be unique. To avoid confusion, you need to rename the `Main` operation to `GenerateRandomBit`.
+
+The `GenerateRandomBit` operation should look like this:
+
+```qsharp
+    operation GenerateRandomBit() : Result {
+        // Allocate a qubit.
+        use q = Qubit();
+    
+        // Set the qubit into superposition of 0 and 1 using the Hadamard 
+        H(q);
+    
+        // Measure the qubit and store the result.
+    
+        let result = M(q);
+    
+        // Reset qubit to the |0〉 state.
+        Reset(q);
+    
+        // Return the result of the measurement.
+        return result;
+    }
 ```
 
 ### Define the quantum random number operation
 
 Here, you define the `GenerateRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build a string of bits.
 
-Modify `RandomNumberGenerator.qs` like this:
+Copy the following code and paste it before the `GenerateRandomBit` operation into your `Main.qs` file:
 
 ```qsharp
-namespace QuantumRandomNumberGenerator {
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Math;
-
     /// Generates a random number between 0 and `max`.
     operation GenerateRandomNumberInRange(max : Int) : Int {
         // Determine the number of bits needed to represent `max` and store it
@@ -78,12 +95,11 @@ namespace QuantumRandomNumberGenerator {
             set bits += [GenerateRandomBit()];
         }
         let sample = ResultArrayAsInt(bits);
-
+    
         // Return random number if it is within the requested range.
         // Generate it again if it is outside the range.
         return sample > max ? GenerateRandomNumberInRange(max) | sample;
     }
-}
 ```
 
 Let's take a moment to review the new code.
@@ -93,27 +109,37 @@ Let's take a moment to review the new code.
 * The variable `bits` is a mutable variable. A mutable variable is one that can change during the computation. You use the `set` directive to change a mutable variable's value.
 * The `ResultArrayAsInt` function comes from the `Microsoft.Quantum.Convert` library. This function converts the bit string to a positive integer.
 
-### Define the entry point
+### Add an entry point
 
-Your program can now generate random numbers. Here, you define the entry point for your program.
+Finally, you add an entry point to the program. By default, the Q# compiler looks for a `Main` operation and starts processing there, no matter where it's located. The `Main` operation calls the `GenerateRandomNumberInRange` operation to generate a random number between 0 and a `max` number. In this example, you define the maximum value as 100.
 
-Modify `RandomNumberGenerator.qs` file like this:
+Copy and paste the following code to your `Main.qs` file:
 
 ```qsharp
-namespace QuantumRandomNumberGenerator {
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Math;
+operation Main() : Int {
+    let max = 100;
+    Message($"Sampling a random number between 0 and {max}: ");
+    // Generate random number in the 0..max range.
+    return GenerateRandomNumberInRange(max);
+}
+```
 
-    @EntryPoint()
+### Final program
+
+Your `Main.qs` file should look like this:
+
+```qsharp
+import Microsoft.Quantum.Convert.*;
+import Microsoft.Quantum.Math.*;
+
     operation Main() : Int {
         let max = 100;
         Message($"Sampling a random number between 0 and {max}: ");
-
+    
         // Generate random number in the 0..max range.
         return GenerateRandomNumberInRange(max);
     }
-
+    
     /// Generates a random number between 0 and `max`.
     operation GenerateRandomNumberInRange(max : Int) : Int {
         // Determine the number of bits needed to represent `max` and store it
@@ -125,43 +151,37 @@ namespace QuantumRandomNumberGenerator {
             set bits += [GenerateRandomBit()];
         }
         let sample = ResultArrayAsInt(bits);
-
+    
         // Return random number if it is within the requested range.
         // Generate it again if it is outside the range.
         return sample > max ? GenerateRandomNumberInRange(max) | sample;
     }
-
+    
     operation GenerateRandomBit() : Result {
         // Allocate a qubit.
         use q = Qubit();
-
+    
         // Set the qubit into superposition of 0 and 1 using the Hadamard operation
         H(q);
-
-        // At this point the qubit `q` has 50% chance of being measured in the
-        // |0〉 state and 50% chance of being measured in the |1〉 state.
+    
         // Measure the qubit value using the `M` operation, and store the
         // measurement value in the `result` variable.
         let result = M(q);
-
+    
         // Reset qubit to the |0〉 state.
-        // Qubits must be in the |0〉 state by the time they are released.
         Reset(q);
-
+    
         // Return the result of the measurement.
         return result;
     }
-}
 ```
-
-The `let` directive declares variables that don't change during the computation. For learning purposes, here we define the maximum value as 100.
 
 ## Run the program
 
 Let's try out our new random number generator!
 
 1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View** > **Command Palette**, search for QIR, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
-1. To run your program, select **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. To run your program, select **Run** from the list of commands above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. Run the program again to see a different result.
 
 > [!NOTE]

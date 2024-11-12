@@ -3,10 +3,11 @@ uid: learn.languages.csharp-arrays-operations
 metadata:
   title: Perform operations on arrays using helper methods in C#
   description: "Use C# helper methods to perform reverse, resize, split and join operations on arrays."
-  ms.date: 10/08/2024
+  ms.date: 11/08/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: dotnet-csharp

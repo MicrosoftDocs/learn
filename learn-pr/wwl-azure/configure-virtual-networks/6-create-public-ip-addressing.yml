@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-virtual-networks.create-public-ip-addressing
 title: Create public IP addressing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create public IP addressing
   description: "Create public IP addressing."
   ms.date: 03/08/2024

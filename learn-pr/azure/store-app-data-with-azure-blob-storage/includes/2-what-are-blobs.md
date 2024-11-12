@@ -1,6 +1,6 @@
 Blobs are *files for the cloud*. Apps work with blobs in much the same way as they work with files on a disk. Apps read and write data to blobs. However, unlike a local file, you can reach blobs from anywhere with an internet connection.
 
-Azure Blob Storage is *unstructured*. There are no restrictions on the kinds of data it can hold. For example, a blob can hold a PDF document, a JPG image, a JSON file, video content, and more. 
+Azure Blob Storage is *unstructured*. There are no restrictions on the kinds of data it can hold. For example, a blob can hold a PDF document, a JPG image, a JSON file, video content, and more.
 
 Blobs aren't limited to common file formats. A blob could contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing.
 
@@ -19,7 +19,7 @@ Some apps constantly create, update, and delete blobs as part of their work. Oth
 
 In Blob Storage, every blob lives inside a *blob container*. You can store an unlimited number of blobs in a container and an unlimited number of containers in a storage account. Containers are *flat*. They can only store blobs, not other containers.
 
-Blobs and containers support tags and metadata in the form of name-value string pairs. Your apps can use tags and metadata for anything, such as a human-readable description of a blob's contents to display or a string that your app uses to determine how to process the data.
+Blobs and containers support tags and metadata in the form of name-value string pairs. Your apps can use tags and metadata for anything. For example, a human-readable description of a blob's contents to display or a string that your app uses to determine how to process the data.
 
 > [!TIP]
 > Blob Storage does not provide any mechanism for searching or sorting blobs by metadata. You can search and sort blobs by using Blob index tags. For information about using Azure Cognitive Search, see the *Further Reading* section at the end of this module.

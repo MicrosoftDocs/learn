@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-microsoft-azure-ai-service
 title: Exercise - Create Microsoft Azure services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Microsoft Azure services
   description: Exercise - Create Microsoft Azure services.
   author: theoyinbooke
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-create-microsoft-azure-ai-service.md)]
+

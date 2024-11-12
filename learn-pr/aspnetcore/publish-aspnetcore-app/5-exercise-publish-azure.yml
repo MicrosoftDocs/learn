@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-aspnetcore-app.exercise-publish-azure
+title: Exercise - Publish to Azure App Service (optional)
+metadata:
+  title: Exercise - Publish to Azure App Service (optional)
+  description: This unit is an exercise that demonstrates how to publish an ASP.NET Core app to Azure App Service.
+  ms.date: 8/29/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-publish-azure.md)]

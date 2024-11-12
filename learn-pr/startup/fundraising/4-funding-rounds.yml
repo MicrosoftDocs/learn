@@ -2,12 +2,15 @@
 uid: learn.startups.fundraising.funding-rounds
 title: Raise a funding round
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Raise a funding round
   description: Learn about funding rounds. See how to contact investors and understand term sheets. Find out how to make it easy for investors to complete due diligence.
   ms.date: 05/17/2024
   author: ryanmesches
   ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 10
 content: |
   [!include[](includes/4-funding-rounds.md)]

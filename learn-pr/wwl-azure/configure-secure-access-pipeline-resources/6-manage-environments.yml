@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-secure-access-pipeline-resources.manage-environments
 title: Manage environments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage environments
   description: "Manage environments."
   ms.date: 1/25/2023

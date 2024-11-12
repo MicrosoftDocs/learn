@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.examine-monitoring-logging-alerting-services
 title: Examine monitoring, logging, and alerting services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine monitoring, logging, and alerting services
   description: "Examine monitoring, logging, and alerting services"
   ms.date: 01/08/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-files-file-sync.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/04/2024
@@ -49,3 +51,4 @@ quiz:
     - content: "The snapshot capability is provided at the storage account level."
       isCorrect: false
       explanation: "Incorrect. The Azure Files share snapshot capability is provided at the **file share** level."
+

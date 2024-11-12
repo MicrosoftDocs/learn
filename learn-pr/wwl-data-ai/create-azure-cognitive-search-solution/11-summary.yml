@@ -2,11 +2,13 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/11/2023
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]
+

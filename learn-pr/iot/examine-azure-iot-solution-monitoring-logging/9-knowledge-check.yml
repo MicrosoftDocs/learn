@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/22/2024
@@ -52,3 +54,4 @@ quiz:
     - content: "Azure Service Health."
       isCorrect: true
       explanation: "Correct. You can quickly use Azure Service Health to check the health status of all IoT hubs in your subscription."
+

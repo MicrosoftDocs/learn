@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.receive-data
 title: Receive data using Azure Data Share
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Receive data using Azure Data Share
   description: "Receive data using Azure Data Share"
   ms.date: 01/05/2022

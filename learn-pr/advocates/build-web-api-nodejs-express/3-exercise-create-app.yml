@@ -2,6 +2,8 @@
 uid: learn.azure.build-web-api-nodejs-express.3-exercise-create-app
 title: Exercise - Create a new Express web application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a new Express web application
   description: Use Express to return different types of content like text and JSON.
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-app.md)]
+

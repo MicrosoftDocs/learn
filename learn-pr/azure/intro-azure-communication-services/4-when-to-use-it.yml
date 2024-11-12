@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-communication-services.when-to-use-it
 title: When to use Azure Communication Services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Communication Services
   description: "Explains how to evaluate when to use Azure Communication Services for your scenarios."

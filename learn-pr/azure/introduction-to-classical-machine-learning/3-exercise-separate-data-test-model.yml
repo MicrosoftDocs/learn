@@ -2,12 +2,15 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-separate-data-test-model
 title: Exercise - Implement supervised learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Implement supervised learning
-  description: Create and use a simple supervised learning model without using external libraries.
-  ms.date: 09/20/2024
+  description: Create and use a basic supervised learning model without using external libraries.
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/2-3-exercise-separate-data-test-model.ipynb
+

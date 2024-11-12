@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-oracle-workload-azure-iaas.assess-workloads-build-migration-plan
 title: Assess your workloads and build a migration plan
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assess your workloads and build a migration plan
   description: Learn how to assess your workloads and create a migration plan.
   ms.date: 05/01/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-assess-workloads-build-migration-plan.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure VMware Solution
   description: Deploy Azure VMware Solution.
   ms.date: 08/01/2024
@@ -38,3 +40,4 @@ quiz:
     - content: "Specify a service principal."
       isCorrect: false
       explanation: "A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. A service principal isn't required to deploy AVS."
+

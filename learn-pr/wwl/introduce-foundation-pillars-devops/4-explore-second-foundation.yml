@@ -2,6 +2,8 @@
 uid: learn.wwl.introduce-foundation-pillars-devops.explore-second-foundation
 title: Explore DevOps Lean Product
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore DevOps Lean Product
   description: "Explore the second foundation pillar of DevOps, Lean Product."
   ms.date: 09/20/2020

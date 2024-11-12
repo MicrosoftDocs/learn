@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-api-preview-url.5-action
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Publish the API with GitHub Actions
   description: Learn how to include your API when you publish a static site with a GitHub Action
   ms.date: 12/12/2023
@@ -12,3 +14,4 @@ title: Publish the API with GitHub Actions
 durationInMinutes: 3
 content: |
   [!include[](includes/5-action.md)]
+

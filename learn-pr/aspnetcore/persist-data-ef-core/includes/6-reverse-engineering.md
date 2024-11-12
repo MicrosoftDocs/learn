@@ -1,8 +1,8 @@
-Contoso Pizza's manager has asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
+Contoso Pizza's manager asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
 
 ## Inspect the promotions database
 
-Take a look at the database you'll use to generate the scaffolded code:
+Take a look at the database you're going to use to generate the scaffolded code:
 
 1. On the **Explorer** pane, expand the *Promotions* directory, right-click the *Promotions.db* file, and then select **Open Database**.
 
@@ -12,7 +12,7 @@ Take a look at the database you'll use to generate the scaffolded code:
 
 ## Scaffold the promotions context and coupon model
 
-Now, you'll use the database to scaffold the code:
+Now, you use the database to scaffold the code:
 
 1. Run the following command:
 
@@ -39,7 +39,7 @@ Now, you'll use the database to scaffold the code:
     {
         public partial class Coupon
         {
-            public long Id { get; set; }
+            public int Id { get; set; }
             public string Description { get; set; } = null!;
             public DateOnly? Expiration { get; set; }
         }
@@ -53,7 +53,7 @@ Now, you'll use the database to scaffold the code:
 
 ## Add a coupon endpoint
 
-Before you can test the scaffolded code, you need to add an endpoint to the API. So, you'll next add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. So, you next add a new API controller.
 
 To better understand how API controllers work, see [Create a web API with ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
 
@@ -129,6 +129,6 @@ Now that the endpoint is added, test the coupon operations:
     ]
     ```
 
-    Note that `expiration` is a datetime value.
+    Notice that `expiration` is a datetime value.
 
-That's it! You've created and modified scaffolding from an existing database!
+That's it! You created and modified scaffolding from an existing database!

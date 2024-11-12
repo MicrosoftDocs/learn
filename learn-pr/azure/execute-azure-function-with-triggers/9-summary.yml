@@ -2,6 +2,8 @@
 uid: learn.execute-azure-function-with-triggers.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 09/25/2023
@@ -52,3 +54,4 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Every Azure Function must have exactly one trigger associated with it. If you want to use multiple triggers, you must create multiple functions."
+

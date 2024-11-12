@@ -13,7 +13,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 3
 content: |
-  Choose the best response for each question, then select **Check your answers**.
+  Choose the best response for each question.
 quiz: 
   questions: 
     - content: Why use Polyglot Notebooks?

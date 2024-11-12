@@ -2,6 +2,8 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
 title: Set baselines for load tests
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set baselines for load tests
   description: Understand how to set up baselines for load tests, and use Azure Load Testing to evaluate thresholds.
   ms.date: 07/31/2024
@@ -42,3 +44,4 @@ quiz:
     - content: "Baselines should be updated on a yearly basis."
       isCorrect: false
       explanation: "Incorrect. Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly&ndash;for example, as part of every release or major change."
+

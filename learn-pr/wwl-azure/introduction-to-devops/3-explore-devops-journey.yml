@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-devops.explore-devops-journey
 title: Explore the DevOps journey
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the DevOps journey
   description: "Explore the DevOps journey"
   ms.date: 05/29/2024

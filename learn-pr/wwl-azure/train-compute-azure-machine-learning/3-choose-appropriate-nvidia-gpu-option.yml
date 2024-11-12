@@ -2,6 +2,8 @@
 uid: learn.wwl.train-compute-azure-machine-learning.choose-appropriate-nvidia-gpu-option
 title: Choose the appropriate Nvidia GPU option
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the appropriate Nvidia GPU option
   description: Choose the appropriate Nvidia GPU option
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-choose-appropriate-nvidia-gpu-option.md)]
+

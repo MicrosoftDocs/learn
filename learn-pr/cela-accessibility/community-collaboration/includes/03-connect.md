@@ -46,6 +46,6 @@ Consider using the following platforms and channels to form connections with mem
     > [!Note]
     > It's important to use testing services that include players with disabilities as part of the test team. Testing services that offer automated accessibility checks or services performed by individuals outside the disability community would not be considered true "community collaboration for accessible design."
 
-- **Preview ring opportunities:** [Preview rings](https://news.xbox.com/2021/05/06/all-about-xbox-update-preview-rings/) are another way to gather accessibility feedback. The Xbox Accessibility Insiders League (XAIL) is one example of a preview ring for content on the Xbox platform. Members of the XAIL preview ring consist of players who have self-identified as having a disability.
+- **Preview ring opportunities:** [Preview rings](https://news.xbox.com/2021/05/06/all-about-xbox-update-preview-rings/) are another way to gather accessibility feedback. The Xbox Accessibility Insiders League (XAIL) is one example of a preview ring for content on the Xbox platform. Members of the XAIL preview ring consist of players who self-identified as having a disability.
 
     When you submit your new feature, experience, or game to a preview ring like XAIL, it gives players with disabilities an opportunity to assess new gaming experiences and easily submit accessibility feedback from their own homes.

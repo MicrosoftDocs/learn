@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-user-group-accounts.create
 title: Create group accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create group accounts
   description: "Create group accounts"
   ms.date: 07/02/2024

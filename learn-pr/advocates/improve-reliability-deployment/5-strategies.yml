@@ -2,6 +2,8 @@
 uid: learn.improve-reliability-deployment.5-strategies
 title: "Deployment strategies"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Deployment strategies"
   description: "Deployment strategies"
   ms.date: 06/07/2024
@@ -40,3 +42,4 @@ quiz:
     - content: 'Canary deployment'
       isCorrect: true
       explanation: 'Correct.'
+

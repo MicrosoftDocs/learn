@@ -52,9 +52,7 @@ This option is only available with environments configured in the directly conne
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc compute and storage resource details. Configure storage.](../media/compute-storage-details-6.png)
 
 1. Enter an admin username for the Arc-enabled SQL Managed Instance.
-1. Enter an admin user password for the Arc-enabled SQL Managed Instance. 
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Arc Admin Account details](../media/admin-account-7.png) 
+1. Enter an admin user password for the Arc-enabled SQL Managed Instance.
 
 1. Select **Next: Tags**.
 
@@ -72,8 +70,6 @@ This option is only available with environments configured in the directly conne
     ![Screenshot of of Azure Arc-enabled SQL Managed Instance - deployment complete.](../media/deployed-10.png)
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - resource group.](../media/deployed-11.png)
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - status ready](../media/deployed-12.png)
 
 1. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and select **Refresh**. Right-click on your Arc data controller and select **Manage**. You can now manage your Arc-enabled SQL Managed Instance from Azure Data Studio.
 
@@ -98,9 +94,6 @@ This option is available with environments configured in either the directly or 
 1. Enter an admin user password for the Arc-enabled SQL Managed Instance.
 1. Choose your service tier.
 1. Select **I already have a SQL Server License** if you have [Azure Hybrid Benefits](/azure/azure-sql/azure-hybrid-benefit?view=azuresql&preserve-view=true&tabs=azure-portal).
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Azure Data Studio Azure Arc create details](../media/azure-data-studio-details-3.png)
-
 1. Select **Default** for the data storage class.
 1. Set the data volume size in gigabytes.
 1. Select  **Default** for the datalogs storage class.
@@ -123,8 +116,6 @@ This option is available with environments configured in either the directly or 
 1. Confirm your Arc-enabled Azure SQL Managed Instance deployment.
 
    ![Screenshot of Azure Arc-enabled SQL Managed Instance - resource group details.](../media/deployed-11.png)
-
-   ![Screenshot of Azure Arc-enabled SQL Managed Instance - status details.](../media/deployed-12.png)
 
 1. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and select **Refresh**. Right-click on your Arc data controller and select **Manage**. You can now manage your Arc-enabled SQL Managed Instance from Azure Data Studio.
 
@@ -196,8 +187,6 @@ This option is only available with environments configured in the directly conne
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - completely deployed resource group.](../media/deployed-11.png)
 
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Deployed2](../media/deployed-12.png)
-
 1. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and select **Refresh**. Right-click on your Arc data controller and select **Manage**. You can now manage your Arc-enabled SQL Managed Instance from Azure Data Studio.
 
 ## Option 4: Azure Data Studio terminal deployment
@@ -265,7 +254,5 @@ This option is available with environments configured in either the directly or 
 1. Confirm your Arc-enabled SQL Managed Instance deployment.
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - Deployed](../media/deployed-11.png)
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Deployed2](../media/deployed-12.png)
 
 1. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and select **Refresh**. Right-click on your Arc data controller and select **Manage**. You can now manage your Arc-enabled SQL Managed Instance from Azure Data Studio.

@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-core-architectural-components-of-azure.describe-azure-management-infrastructure
 title: Describe Azure management infrastructure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure management infrastructure
   description: "Describe Azure management infrastructure"
   ms.date: 09/24/2024

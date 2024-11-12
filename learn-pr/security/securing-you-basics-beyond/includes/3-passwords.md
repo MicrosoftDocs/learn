@@ -43,9 +43,7 @@ We'll explain multifactor authentication later in this training.
 
 What's a *passphrase*, and how is it different from a password?
 
-In the past, the recommendation for a strong password was to use eight characters. The characters had to include at least one uppercase character, number, and special character such as !, :, @, *, $, or #. This guidance resulted in passwords that were easy for a hacker to crack and hard for people to remember. People tended to create the simplest passwords possible that met all of those rules. To make matters worse, people often reused those weak passwords for other accounts.
-
-:::image type="content" source="../media/3-password-risks.png" alt-text="Visual table that presents 30 passwords you should never use, like strings of consecutive letters." lightbox="../media/3-password-risks-large.png":::
+In the past, the recommendation for a strong password was to use eight characters. The characters had to include at least one uppercase character, number, and special character such as `!`, `:`, `@`, `*`, `$`, or `#`. This guidance resulted in passwords that were easy for a hacker to crack and hard for people to remember. People tended to create the simplest passwords possible that met all of those rules. To make matters worse, people often reused those weak passwords for other accounts.
 
 One famous example is the password *Pa$$w0rd*. It meets all of the criteria, yet it's high on the list of the 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the 1,000,000 most commonly used passwords) that they simply plug into their password-cracking software.
 

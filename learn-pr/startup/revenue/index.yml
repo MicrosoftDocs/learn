@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.startups.revenue
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: The path to revenue
   description: Learn about the most common startup revenue models. See practical tips on how to get your startup to start generating revenue.
   ms.date: 06/18/2024
@@ -8,6 +10,7 @@ metadata:
   ms.author: vahughes
   ms.topic: module
   ms.service: azure
+  ms.collection: learn-startups
 title: The path to revenue
 summary: >
   This module explains the most common startup revenue models and gives practical tips on how to generate your first customer revenues in your startup.
@@ -39,3 +42,4 @@ units:
 - learn.startups.revenue.summary
 badge:
   uid: learn.startups.revenue.badge
+

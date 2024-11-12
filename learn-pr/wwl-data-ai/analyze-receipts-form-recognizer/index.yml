@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundamentals of Azure AI Document Intelligence
   description: "Use Azure AI Document Intelligence to automate data extraction."
   ms.date: 10/04/2024

@@ -2,6 +2,8 @@
 uid: learn.oxford.object-detection-lva-edge-device.how-deploy-solution
 title: How to deploy your solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to deploy your solution
   description: In this section, we help learner how to deploy the edge solution.
   ms.date: 07/20/2024

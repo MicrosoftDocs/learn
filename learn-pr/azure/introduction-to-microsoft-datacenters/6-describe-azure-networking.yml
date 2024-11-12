@@ -2,6 +2,8 @@
 uid: learn.introduction-to-microsoft-datacenters.describe-azure-networking
 title: Describe Azure networking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure networking
   description: Describes the major categories of Microsoft Cloud networking that include infrastructure, and services and product offerings.
   ms.date: 07/17/2024
@@ -28,3 +30,4 @@ quiz:
     - content: "The Microsoft global network is used for Azure services, not other Microsoft Cloud services."
       isCorrect: false
       explanation: "Incorrect. Many Microsoft Cloud services make use of the Microsoft global network."
+

@@ -3,6 +3,8 @@ uid: learn.azure.route-and-process-data-logic-apps.design-logic-apps-for-your-wo
 title: Design workflows with Azure Logic Apps
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design workflows with Azure Logic Apps
   description: Design workflows with Azure Logic Apps
   ms.date: 09/25/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-design-logic-apps-for-your-workflows.md)]
+

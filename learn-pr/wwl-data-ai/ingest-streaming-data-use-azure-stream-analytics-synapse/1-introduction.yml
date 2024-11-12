@@ -2,6 +2,8 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/24/2023

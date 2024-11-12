@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-manage-postgresql.understand-system-catalog-views
 title: Understand the system catalogs and system views
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the system catalogs and system views
   description: "Understand the system catalogs and system views."
   ms.date: 05/10/2024

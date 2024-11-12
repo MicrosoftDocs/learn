@@ -2,13 +2,15 @@
 uid: learn.wwl.troubleshoot-device-connections-communication.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/06/2023
   author: kgremban
   ms.author: kgremban
   ms.custom: engagement-fy23
-  ms.topic: module-standard-task-based
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]

@@ -47,7 +47,7 @@ You'll start by creating an instance of Azure Database for PostgreSQL server:
     | Version | Select **11**. |
     | Compute + storage | Select the **Configure server** link. On the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
     | Admin username | Enter **student**. |
-    | Password | Enter **Pa55w0rd1234**. |
+    | Password | Enter a `<password>`. |
 
     :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the server blade in the Azure portal.":::
 
@@ -90,7 +90,7 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 1. Within the Bash session on the **Cloud Shell** pane, paste the value of the **psql** connection string from the clipboard, modify it so it matches the following command, and run it to connect to the **postgres** database hosted on the newly deployed server instance of Azure Database for PostgreSQL. The value of the `<server_name>` placeholder will be already included in the connection string you pasted from the clipboard:
 
     ```
-    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname=postgres user=student@<server_name>.postgres.database.azure.com password=Pa55w0rd1234 sslmode=require"
+    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname=postgres user=student@<server_name>.postgres.database.azure.com password=<enter your password> sslmode=require"
     ```
 
     > [!NOTE]
@@ -125,7 +125,7 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 
     ```t-sql
     CREATE TABLE inventory (
-    id bigserial, 
+    id bigserial,
     tenant_id bigint REFERENCES tenants (id),
     name VARCHAR(50),
     quantity INTEGER,
@@ -179,7 +179,7 @@ To integrate the Azure Database for PostgreSQL server instance with Microsoft En
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin**, and then in the toolbar, select **Set admin**.
 1. On the **Active Directory admin** blade, in the list of Microsoft Entra user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
-1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account (with the **Pa55w.rd1234** password) you created in the previous exercise.
+1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account with the password you created in the previous exercise.
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. When you're prompted to select either **Bash** or **PowerShell**, select **Bash**, and then when presented with the message **You have no storage mounted**, select **Create storage**.
 1. Within the Bash session on the **Cloud Shell** pane, run the following commands to retrieve and display a Microsoft Entra access token required to access Azure Database for PostgreSQL:
@@ -196,10 +196,10 @@ To integrate the Azure Database for PostgreSQL server instance with Microsoft En
 
     ```json
     {
-      "accessToken": "eyJ0eXAiOiJKV1QiLDJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJodHRwczovL29zc3JkYm1zLWFhZC5kYXRhYmFzZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2E2MTM5NTE0LTQxYTUtNDEyMy05ODFhLWVlN2JiOWU2YTNiNC8iLCJpYXQiOjE2MjE2MTc0NjUsIm5iZiI6MTYyMTYxNzQ2NSwiZXhwIjoxNjIxNjIxMzY0LCJhY3IiOiIxIiwiYWlvIjoiQVRRQXkvOFRBQUFBU1I5cXdVcm9KVVpmWEJabHY1NzRUenpmeGZFUlo1SXNDV3Z1aDVEOVBGWnZsL09SYWYzTGg3Zmx4NEFVaFpkVSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiJiNjc3YzI5MC1jZjRiLTRhOGUtYTYwZS05MWJhNjUwYTRhYmUiLCJhcHBpZGFjciI6IjIiLCJpcGFkZHIiOiIxNDIuMTA1LjQ4LjUxIiwibmFtZSI6ImFkYXR1bWFkbWluMSIsIm9pZCI6Ijc2ZTdmYWI5LTZiOTItNGQzZi1hOGI5LWY1NWNhNDQyYzZiMSIsInB1aWQiOiIxMDAzMjAwMTQ0RTNDMDBBIiwicmgiOiIwLkFYd0FGSlVUcHFWQkkwR1lHdTU3dWVhanRKRENkN1pMejQ1S3BnNlJ1bVVLU3I1OEFNay4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJvNmhNMWlHXzM3MExaQk92UlpUQjBYeEdjSmpaOUVmN21lc1N2RkJYY3FFIiwidGlkIjoiYTYxMzk1MTQtNDFhNS00MTIzLTk4MWEtZWU3YmI5ZTZhM2I0IiwidW5pcXVlX25hbWUiOiJhZGF0dW1hZG1pbjFAbGl2ZWlkMjE3b3V0bG9vay5vbm1pY3Jvc29mdC5jb20iLCJ1cG4iOiJhZGF0dW1hZG1pbjFAbGl2ZWlkMjE3b3V0bG9vay5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiJJdE81VndoU2lVV0o0UUZNQ04xQUFRIiwidmVyIjoiMS4wIn0.fFV3s2OjpVU52_SA8-atIDdkLN4onLgPmYrxa5eNCbuF0VbVOA5a9Ifv66H5a__6lMiLoV8n9EgTV4CpsLmvn6JFjAD9aHyEBkS2_iL_Rx-KCmlc7Vr6UHezrlrA3skf8oq3yb2Zqy_A3_kOrsnFgX8NP5uWoMmTzjWGTw3rOfjERJ7PowQC60nzlF1uCRDKIWw62SW4xiDQj23DSLDbkfUiG_Z9Swbw4DuMPTPeUVwz9AWhmg8lrqt5oawhKB-OMcpuwSf1-rE1cf2w54uthU6764DBEf5MVt8K95AKW0rey888znrIGKT-6yFenYUZZjL1aJ-jz8OIyNjuQK73XQ",
+      "accessToken": "<placeholder for token value>",
       "expiresOn": "2021-05-21 18:22:44.000000",
-      "subscription": "d15bacf3-b17b-4ad5-a913-5fb904bd2f71",
-      "tenant": "a6239514-41a5-4123-981a-ee7bb9e6a3b4",
+      "subscription": "cccc2c2c-dd3d-ee4e-ff5f-aaaaaa6a6a6a",
+      "tenant": "eeeeffff-4444-aaaa-5555-bbbb6666cccc",
       "tokenType": "Bearer"
     }
     ```
@@ -363,7 +363,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
     const cca = new msal.ConfidentialClientApplication(config);
 
     app.get('/auth', (req, res) => {
-    
+
     redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://<webapp_name>.azurewebsites.net/redirect";
 
     // Construct a request object for auth code
@@ -381,7 +381,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
 
     app.get('/redirect', (req, res) => {
     redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://<webapp_name>.azurewebsites.net/redirect";
-    
+
     // Use the auth code in redirect request to construct a token request object
     const tokenRequest = {
         code: req.query.code,
@@ -579,8 +579,6 @@ You're finally ready to test the functionality of your web app. While you could 
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
 1. Verify that the resulting webpage consists of the Microsoft Entra authentication information for the currently signed-in user (the output might differ).
-
-    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Microsoft Entra authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
 
 ## Results
 

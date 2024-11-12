@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-machine-learning-workflows.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
+

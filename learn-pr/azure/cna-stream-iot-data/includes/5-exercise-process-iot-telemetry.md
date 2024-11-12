@@ -14,7 +14,7 @@ In this exercise, you'll:
 ## Prerequisites
 
 * An Azure subscription
-* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
+* A Microsoft account assigned to the _Owner_ or _Contributor_ role in the Azure subscription.
 * Completion of the exercise unit **Set up Azure IoT Central**
 
 ## Create an Azure function that logs an HTTP request payload

@@ -60,7 +60,7 @@ The applications that you'll create in the upcoming exercises use this resource 
     ```json
     {
       "etag": "\"00000000-0000-0000-0000-000000000000\"",
-      "id": "/subscriptions/11111111-1111-1111-1111-111111111111/resourceGroups/learn-22222222-2222-2222-2222-222222222222/providers/Microsoft.CognitiveServices/accounts/learn-account-33333",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.CognitiveServices/accounts/learn-account-33333",
       "identity": null,
       "kind": "AIServices",
       "location": "westus",
@@ -68,7 +68,7 @@ The applications that you'll create in the upcoming exercises use this resource 
       "properties": {
          ...
       },
-      "resourceGroup": "learn-22222222-2222-2222-2222-222222222222",
+      "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
       "sku": {
         "capacity": null,
         "family": null,

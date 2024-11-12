@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.static-analyzers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Static analyzers
   description: "Static analyzers"
   ms.date: 06/30/2023

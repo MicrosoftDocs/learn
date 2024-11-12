@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-openai.types-of-models
 title: Explore types of generative AI models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore types of generative AI models
   description: This unit explains the different types of generative AI models and their capabilities. Specific capabilities include text, code, and image generation.
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-types-of-models.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-access-reviews
 title: Design for access reviews
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for access reviews
   description: "Design for access reviews"
   ms.date: 03/06/2024
