@@ -52,6 +52,6 @@ Once a custom plugin is added, it can be turned on or off, updated, or deleted.
 
 To Learn more about custom plugins, see [Create your own custom plugins](/copilot/security/custom-plugins).
 
-Watch this short video for a summary on setting up non-Microsoft and custom plugins.
+Watch this short video for a summary on setting up non-Microsoft plugins.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4114bf13-6aa1-46c2-b448-22d982e07538]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f57f9efb-d800-4436-85cb-02f34811c608]

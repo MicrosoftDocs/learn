@@ -68,7 +68,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
    :::image type="content" source="../media/azure-ai-search-plugin-v2.png" lightbox="../media/azure-ai-search-plugin-v2.png" alt-text="Screen capture of the Azure AI Search plugin.":::
 
-1. The parameters that you configure for the plugin map to information for the Azure AI Search instance, the index within search instance that will be searched, and the fields associated with the index.
+1. The parameters that you configure for the plugin map to information for the Azure AI Search instance, the index within the search instance that will be searched, and the fields associated with the index.
 
     - Name of Azure AI Search service – This is the name of your search service.
     - Name of index – This is the name of the index, within your Azure AI search instance, that will be searched.
@@ -97,7 +97,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 
     :::image type="content" source="../media/ai-search-plugin-settings-index-name-mapping.png" lightbox="../media/ai-search-plugin-settings-index-name-mapping.png" alt-text="Screen capture of the Azure AI Search instance name pointing to the corresponding field in the plugin parameters window.":::  
 
-1. Select the index whose name you entered in plugin settings page. This opens the index page. From here, select the fields tab.
+1. Select the index whose name you entered in the plugin settings page. This opens the index page. From here, select the fields tab.
 
 1. The fields tab shows the field names for the index. The field names for the example index named "knowledge-base-bloc-index" and shown in the image that follows may be different than what is shown for your index. Work with the admin who manages your Azure AI Search service for guidance, as needed.
 

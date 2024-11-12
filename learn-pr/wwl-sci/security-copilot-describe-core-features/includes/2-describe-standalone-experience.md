@@ -93,7 +93,7 @@ For a complete listing of all the available promptbooks, select View promptbook 
 
 Watch this short video for a summary on using promptbooks.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb51c3d-ba80-430e-b3bc-2eed3942cf70]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c55cf83e-3f0f-4494-9d3c-ffd9b286f891]
 
 ### Prompt bar
 
@@ -158,4 +158,4 @@ By selecting the help icon, you can link to documentation, or if you encounter i
 
 Watch this short video for a tour of Microsoft Security Copilot.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b45ed29-1738-40e8-bc87-696d420155f8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ac67946e-9079-4268-9c61-458b52a43402]
