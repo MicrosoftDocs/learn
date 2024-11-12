@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for ASP.NET Core dependency injection.
+  ms.date: 11/7/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your understanding
+  questions:
+  - content: "Which of the following statements is true regarding dependency injection?"
+    choices:
+    - content: "Dependency injection is a design pattern that allows you to loosely couple your app's dependencies."
+      isCorrect: false
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
+    - content: "ASP.NET Core comes with a built-in service container that supports dependency injection."
+      isCorrect: false
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
+    - content: "ASP.NET Core's service container supports three service lifetimes: transient, scoped, and singleton."
+      isCorrect: false
+      explanation: "Incorrect. This is a true statement, but there's a better answer."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct! All of the above statements are true."
+  - content: "What is the behavior of a service registered with the **singleton** service lifetime?"
+    choices:
+    - content: "A new instance of the service is created for each request."
+      isCorrect: false
+      explanation: "Incorrect. This is the behavior of a scoped service."
+    - content: "A single instance of the service is created for the lifetime of the app."
+      isCorrect: true
+      explanation: "Correct! Services registered with the singleton lifetime are created once and reused for the lifetime of the app."
+    - content: "A new instance of the service is created each time an instance is requested."
+      isCorrect: false
+      explanation: "Incorrect. This is the behavior of a transient service." 
+    - content: "None of the above."
+      isCorrect: false
+      explanation: "Incorrect. One of the above choices is correct."
+  - content: "What is the behavior of a service registered with the **scoped** service lifetime?"
+    choices:
+    - content: "A new instance of the service is created for the current scope, like the current request."
+      isCorrect: true
+      explanation: "Correct! ASP.NET Core creates a scope for each request, so scoped services can be reused within the scope of the request."
+    - content: "A single instance of the service is created for the lifetime of the app."
+      isCorrect: false
+      explanation: "Incorrect. This is the behavior of a singleton service."
+    - content: "A new instance of the service is created each time an instance is requested."
+      isCorrect: false
+      explanation: "Incorrect. This is the behavior of a transient service." 
+    - content: "None of the above."
+      isCorrect: false
+      explanation: "Incorrect. One of the above choices is correct."
