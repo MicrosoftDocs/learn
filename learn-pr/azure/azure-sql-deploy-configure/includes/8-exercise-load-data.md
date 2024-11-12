@@ -1,8 +1,8 @@
 When you're bulk loading data, it has to come from somewhere. In Azure, it's common to store or dump data into Azure Blob Storage. Blob Storage is optimized for storing massive amounts of unstructured data at a relatively low cost.
 
-In this scenario, Adventure Works Cycles is receiving store return data based on store identification number. This data is stored in *.dat* files, which are then pushed into Azure Blob storage. After the data is in Blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the storage account. You can control access to that storage account through Microsoft Entra ID, shared key authorization, or a shared access signature (SAS).
+In this scenario, Adventure Works Cycles is receiving store-return data based on store identification number. This data is stored in *.dat* files, which are then pushed into Azure Blob storage. After the data is in Blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the storage account. You can control access to that storage account through Microsoft Entra ID, shared key authorization, or a shared access signature (SAS).
 
-In this exercise, explore one scenario for bulk loading data from Azure Blob storage into Azure SQL Database. The approach uses T-SQL and shared access signatures.
+In this exercise, we'll explore one scenario for bulk loading data from Azure Blob storage into Azure SQL Database. The approach uses T-SQL and shared access signatures.
 
 There are two options for completing this exercise:
 
@@ -13,7 +13,7 @@ Both exercises contain the same commands and content, so you can choose the opti
 
 ## Option 1: `sqlcmd` in Azure Cloud Shell
 
-`sqlcmd` is a command-line tool that allows you to interact with SQL Server and Azure SQL by using the command line. In this exercise, use `sqlcmd` in the PowerShell instance of Azure Cloud Shell. `sqlcmd` is installed by default, so it's easy to use from Azure Cloud Shell.
+`sqlcmd` is a command-line tool that allows you to interact with SQL Server and Azure SQL by using the command line. In this exercise, you'll use `sqlcmd` in the PowerShell instance of Azure Cloud Shell. `sqlcmd` is installed by default, so it's easy to use from Azure Cloud Shell.
 
 1. Because of the way Azure Cloud Shell for Bash is configured, you first need to change the terminal mode by running the following command in [Azure Cloud Shell](https://shell.azure.com).
 

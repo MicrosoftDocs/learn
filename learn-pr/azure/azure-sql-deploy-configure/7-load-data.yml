@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Load data into Azure SQL
   description: Load data into Azure SQL
-  ms.date: 10/16/2023
+  ms.date: 11/11/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit
@@ -30,7 +30,7 @@ quiz:
       - content: "SQL Server on an Azure VM and Azure SQL Managed Instance"
         isCorrect: true
         explanation: "In an Azure VM, it's just SQL Server, so it's supported. In Azure SQL Managed Instance, native restore from a URL is supported."
-    - content: "What isn't an example of how you can more efficiently load data into Azure SQL Database and Azure SQL Managed Instance?"
+    - content: "What's **not** an example of how you can more efficiently load data into Azure SQL Database and Azure SQL Managed Instance?"
       choices:
       - content: "Use clustered columnstore indexes"
         isCorrect: false
@@ -38,7 +38,7 @@ quiz:
       - content: "Use batching with appropriately sized batches"
         isCorrect: false
         explanation: "Loading in batches can help decrease network latency, but they need to be sized appropriately so they don't trigger log governance limits."
-      - content: "Use simple recovery mode"
+      - content: "Using simple recovery mode"
         isCorrect: true
         explanation: "This capability isn't currently supported in Azure SQL Database or Azure SQL Managed Instance. Full recovery mode is required to meet the SLA."
       - content: "All of the above will help in Azure SQL Database and Azure SQL Managed Instance"
