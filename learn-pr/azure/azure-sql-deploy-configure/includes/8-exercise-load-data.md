@@ -1,6 +1,6 @@
 When you're bulk loading data, it has to come from somewhere. In Azure, it's common to store or dump data into Azure Blob Storage. Blob Storage is optimized for storing massive amounts of unstructured data at a relatively low cost.
 
-In this scenario, Adventure Works Cycles is receiving store-return data based on store identification number. This data is stored in *.dat* files, which are then pushed into Azure Blob storage. After the data is in Blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the storage account. You can control access to that storage account through Microsoft Entra ID, shared key authorization, or a shared access signature (SAS).
+In this scenario, Adventure Works Cycles is receiving store return data based on store identification number. This data is stored in *.dat* files, which are then pushed into Azure Blob storage. After the data is in Blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the storage account. You can control access to that storage account through Microsoft Entra ID, shared key authorization, or a shared access signature (SAS).
 
 In this exercise, we'll explore one scenario for bulk loading data from Azure Blob storage into Azure SQL Database. The approach uses T-SQL and shared access signatures.
 

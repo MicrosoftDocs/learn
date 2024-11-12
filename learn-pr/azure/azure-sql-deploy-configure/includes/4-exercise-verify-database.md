@@ -108,7 +108,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-sys-databases-objects.png" alt-text="Screenshot of the results for sys.databases and sys.objects.":::  
 
-    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only `master` and your user database are listed. The master database for a database server for Azure SQL Database isn't the same as the physical master database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
+    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only `master` and your user database are listed. The `master` database in an Azure SQL logical server isn't the same as the physical `master` database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
 
     However, `sys.objects` looks similar to a normal SQL Server instance. That fact is true for system tables, internal tables, and user objects for the sample `AdventureWorksLT` database.
 
@@ -140,7 +140,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-dm-exec-requests.png" alt-text="Screenshot of the results showing dm_exec_requests.":::
 
-    Using `sys.dm_exec_requests` for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks or background tasks that don't have a database context that shows up as *master*. This behavior is because of the nature of an Azure SQL Database deployment, where each database is deployed on its own SQL Server instance.
+    Using `sys.dm_exec_requests` for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks or background tasks that don't have a database context that shows up as `master`. This behavior is because of the nature of an Azure SQL Database deployment.
 
 ### Option 2: SQL Notebooks in Azure Data Studio
 

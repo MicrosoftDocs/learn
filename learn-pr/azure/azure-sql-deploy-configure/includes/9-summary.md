@@ -32,10 +32,6 @@ Two common command-line tools for deploying, verifying, and configuring Azure SQ
 
 For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](/azure/azure-sql/database/file-space-manage#understanding-types-of-storage-space-for-a-database?azure-portal=true).
 
-#### Connectivity to Azure SQL
-
-You can find more information on connectivity for [Azure SQL Database](/azure/sql-database/sql-database-connectivity-architecture?azure-portal=true) and for [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connectivity-architecture-overview?azure-portal=true). Upcoming sections and modules also cover connectivity.  
-
 #### Azure Marketplace terms
 
 Similar to the Microsoft Software License Terms (EULA) for SQL Server, you must accept [Azure Marketplace terms](/legal/marketplace/marketplace-terms) before you deploy Azure SQL.
@@ -50,7 +46,7 @@ To learn more about the differences between SQL Server Agent in SQL Server and i
 
 #### Load data
 
-For more information about using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, see [this documentation page](/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.
+For more information about using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, see [Copy and transform data using Azure Data Factory](/azure/data-factory/connector-azure-sql-database?toc=%2Fazure%2Fazure-sql%2Ftoc.json&view=azuresql&tabs=data-factory) or [Import a bacpac file to a database in Azure SQL Database or Azure SQL Managed Instance](/azure/azure-sql/database/database-import?view=azuresql&tabs=azure-powershell).
 
 ## Clean up your resources
 

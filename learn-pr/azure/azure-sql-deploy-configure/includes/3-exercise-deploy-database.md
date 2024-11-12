@@ -6,7 +6,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. In the top search bar, enter *Azure SQL* and wait for results so you can review what appears.  
 
-    There are many items and categories here, but this menu gives you filters with which to to search. Let's break them down:
+    There are many items and categories here, but this menu gives you filters to search. Let's break them down:
 
     * **Services**: With this filter, you can see your existing resources all together. For example, if you selected Azure SQL, you'd see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
     * **Resources**: This search is based on existing resource names. For example, if you searched for *adventureworks*, any resources with "adventureworks" in the name would be returned.
@@ -105,7 +105,9 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     :::image type="content" source="../media/3-azure-server.png" alt-text="Screenshot of the view of SQL Database folders in SSMS.":::  
 
-    Spend a few minutes exploring the differences between the Azure SQL Database logical server and SQL Server. You don't deploy a managed instance as part of this exercise, but the following image shows how a managed instance would appear in SSMS:
+    Spend a few minutes exploring the differences between the Azure SQL Database logical server and SQL Server.
+
+    You don't deploy an Azure SQL Managed Instance as part of this exercise, but the following image shows how a SQL managed instance would appear in SSMS:
 
     :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of a managed instance in SSMS.":::  
 

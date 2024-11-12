@@ -43,7 +43,7 @@ For Azure SQL Database and Azure SQL Managed Instance, there are essentially six
 
 ### Server
 
-When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. For databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat-detection policies, and failover groups. You'll learn more about these elements later.
+When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. For databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. You'll learn more about these elements later.
 
 This logical server doesn't expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
@@ -59,7 +59,7 @@ Generally, if you're migrating, use a size that's similar to what you use on-pre
 
 Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an Azure SQL Database, the current default is **No access**.  
 
-You can select a public endpoint or private endpoint. In the exercise that follows this unit, use the public endpoint and set the **Allow Azure services and resources to access this server** option to **Yes**. Other Azure services—for example, Azure Data Factory or Azure Virtual Machines—can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the client computer's IP address that you used to deploy Azure SQL Database.
+You can select a public endpoint or private endpoint. In the exercise that follows this unit, use the public endpoint and set the **Allow Azure services and resources to access this server** option to **Yes**. Other Azure services can then access the database, for example Azure Data Factory or Azure Virtual Machines. You can also select **Add current client IP address** if you want to be able to connect from the client computer's IP address that you used to deploy Azure SQL Database.
 
 With Azure SQL Managed Instance, you deploy inside an Azure virtual network and a subnet that's dedicated to managed instances, which lets you have a secure, private IP address. Azure SQL Managed Instance can connect an on-premises network to a managed instance, connect a managed instance to a linked server or other on-premises data store, and connect a managed instance to other resources.
 
@@ -75,9 +75,9 @@ You can also deploy a blank database or create a database that's based on the re
 
 Collations in SQL Server and Azure SQL tell the database engine how to treat certain characters and languages. A collation provides the sorting rules, case, and accent-sensitivity properties for your data.
 
-When you create a new SQL database or managed instance, take into account the locale requirements of the data with which you're working. The collation set affects the characteristics of many operations in the database. In the SQL Server box product, the operating-system locale typically determines the default collation.
+When you create a new SQL database or SQL managed instance, take into account the locale requirements of the data. The collation set affects the characteristics of many operations in the database. In the SQL Server box product, the operating-system locale typically determines the default collation.
 
-In Azure SQL Managed Instance, set the server collation upon creation of the instance. You can't change it later. The server collation sets the default for all of the databases in that Azure SQL Managed Instance, but you can modify the collations on a database and column level.
+In Azure SQL Managed Instance, set the server collation upon creation of the instance. You can't change it later. The server collation sets the default for all of the databases in that SQL managed instance, but you can modify the collations on a database and column level.
 
 In Azure SQL Database, you can't set the server collation. It's set at the default and most common collation of `SQL_Latin1_General_CP1_CI_AS`, but you can set the database collation. To break that value into chunks:  
 
@@ -134,9 +134,9 @@ As you increase or decrease the resources in a service tier, the limits for dime
 
 * **Windows job objects** allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file's virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
 * **Resource Governor** is a SQL Server feature that helps users, and in this case Azure, govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
-* **File Server Resource Manager** is available in Windows Server. It governs file-directory quotas, which are used to manage **Data max size**.
+* **File Server Resource Manager** is available in Windows Server. It governs file directory quotas, which are used to manage **Data max size**.
 
-Other implementations to govern transaction log rate are built into the database engine for Azure through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
+Other implementations to govern transaction log rate are built into the database engine through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 
 ## Verification
 
