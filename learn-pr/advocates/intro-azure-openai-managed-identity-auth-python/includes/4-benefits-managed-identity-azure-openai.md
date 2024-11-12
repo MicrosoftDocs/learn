@@ -20,7 +20,7 @@ An API key functions similarly to a regular password. If an API key is compromis
 
 Conversely, if the client ID is leaked, the risks are minimal. This is because the client ID alone can't establish a connection to Azure OpenAI. To be able to authenticate with a Managed Identity, the app code must be running on an Azure host. Even if Azure OpenAI is public, a local environment can't be used as a Managed Identity, so an attacker can't generate tokens for it, and all their requests are rejected from the Azure OpenAI service as the token is incorrect.
 
-Additionally, the user-assigned identity only has the permissions of the roles assigned to it. For example, if we have used the Azure CLI to assign itthe identity a role:
+Additionally, the user-assigned identity only has the permissions of the roles assigned to it. For example, if we have used the Azure CLI to assign the identity a role:
 
 ```sh
 az role assignment create --assignee $USER_MANAGED_ID_PRINCIPAL_ID \

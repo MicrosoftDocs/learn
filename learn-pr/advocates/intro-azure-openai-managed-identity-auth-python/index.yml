@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: introduction-azure-openai-managed-identity-authentication-python
+uid: learn.intro-azure-openai-managed-identity-auth-python
 metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 11/11/2024
   title: Introduction to Azure OpenAI Managed Identity Authentication with Python
-  description: Introduction to Azure OpenAI Managed Identity Authentication with Python
+  description: Introduction to Azure OpenAI Managed Identity Authentication with Python.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: azure-ai-openai

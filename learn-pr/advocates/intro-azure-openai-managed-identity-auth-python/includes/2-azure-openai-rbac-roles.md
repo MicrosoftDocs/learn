@@ -5,7 +5,7 @@ These roles are the OpenAI RBAC roles that are available to be assigned to ident
 - The **Cognitive Services Contributor** role permits creating new resources, viewing and managing keys, creating and managing model deployments, and using playground experiences. It doesn't allow access to quota or making inference API calls.
 - The **Cognitive Services Usages Reader** role allows viewing quota usage across a subscription. This role provides minimal access and is typically combined with other roles.
 
-## Configuring role assignments in the Azure Portal
+## Configuring role assignments in the Azure portal
 
 To enable keyless authentication, follow these steps to configure the necessary role assignments:
 
@@ -27,19 +27,19 @@ To configure role assignments using Azure CLI, perform the following steps:
 - **Role name** - For Azure CLI or Azure PowerShell, you can use a role name.
 - **Role ID** - For Bicep, you need the role ID.
 
-1. Use the following table to select a role and ID:
+2. Use the following table to select a role and ID:
 
 | **Use case** | **Role name** | **Role ID** |
 |---|---|---|
 | **Assistants** | Cognitive Services OpenAI Contributor | a001fd3d-188f-4b5d-821b-7da978bf7442 |
 | **Chat completions** | Cognitive Services OpenAI User | 5e0bd9bd-7b93-4f28-af87-19fc36ad61bd |
 
-1. Select an identity type to use.
+3. Select an identity type to use.
 
 - **Personal identity**: This identity is your personal identity tied to your sign in to Azure.
 - **Managed identity**: This is an identity managed by and created for use on Azure. For managed identity, create a user-assigned managed identity. When you create the managed identity, you need the Client ID, also known as the app ID.
 
-1. Find your personal identity and use the ID as the \<identity-id> in the next step.
+4. Find your personal identity and use the ID as the \<identity-id> in the next step.
 
 For local development, to get your own identity ID, use the following command. You need to sign in with `az login` before using this command:
 
@@ -48,7 +48,7 @@ az ad signed-in-user show \
     --query id -o tsv
 ```
 
-Assign the role-based access control (RBAC) role to the identity for the resource group.To grant your identity permissions to your resource through RBAC, assign a role using the Azure CLI command `az role assignment create`.
+Assign the role-based access control (RBAC) role to the identity for the resource group. To grant your identity permissions to your resource through RBAC, assign a role using the Azure CLI command `az role assignment create`.
 
 ```azurecli
 az role assignment create \
