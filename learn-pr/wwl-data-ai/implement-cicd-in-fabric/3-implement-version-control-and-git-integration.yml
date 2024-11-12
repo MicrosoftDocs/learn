@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-cicd-in-fabric.implement-version-control-and-git-integration
+title: Implement version control and Git integration
+metadata:
+  title: Implement version control and Git integration
+  description: "Learn how to implement version control and Git integration in Microsoft Fabric."
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-implement-version-control-and-git-integration.md)]
