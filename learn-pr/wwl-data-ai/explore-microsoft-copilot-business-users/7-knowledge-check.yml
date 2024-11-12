@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-microsoft-copilot-business-users.knowlege-check
+uid: learn.explore-microsoft-copilot-business-users.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -8,7 +8,6 @@ metadata:
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
-  ms.service: microsoft-copilot
   ms.collection:
   - wwl-ai-copilot
 durationInMinutes: 3

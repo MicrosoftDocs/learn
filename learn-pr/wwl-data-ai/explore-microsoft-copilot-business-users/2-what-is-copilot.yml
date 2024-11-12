@@ -8,7 +8,6 @@ metadata:
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
-  ms.service: microsoft-copilot
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 5
