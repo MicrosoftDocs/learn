@@ -11,7 +11,7 @@ This diagram shows (at a high level) how Copilot works:
 
 For example, suppose you submit the following prompt to Microsoft Copilot:
 
-> Create an agenda next week’s budget meeting.
+> Create an agenda for next week’s budget meeting.
 
 Copilot uses its large language model to generate a response, which might be similar to this:
 
