@@ -2,7 +2,7 @@ In this module and throughout the activities, you learned how to deploy and conf
 
 After deployment, you dove deeper into running verification checks and configuring Azure SQL to meet your scenario's requirements. Finally, you learned how loading data into Azure SQL is similar to the process for SQL Server, except you now have more options available.
 
-After you've deployed and configured Azure SQL, you'll likely look to make sure it meets your security needs. In the next module, dive into the capabilities and tasks related to Azure SQL for securing your databases and instances.
+After you've deployed and configured Azure SQL, you likely look to make sure it meets your security needs. In the next module, dive into the capabilities and tasks related to Azure SQL for securing your databases and instances.
 
 ## Learn more
 
@@ -12,7 +12,7 @@ People learn in different ways. With that in mind, a [video series related to th
 
 ### Predeployment planning and migration to Azure
 
-To learn more about how to migrate to Azure SQL, review the [Azure Database Migration Guide](/data-migration). It has custom guidance on how to migrate based on your source and target database. Also consider accessing the resources and support available through [Azure Migrate and Modernize](https://azure.microsoft.com/solutions/migration/migrate-modernize-innovate).  
+To learn more about how to migrate to Azure SQL, review the [Azure Database Migration Guide](/data-migration). It has custom guidance on how to migrate based on your source and target database. Also consider accessing the resources and support available through [Azure Innovate & Azure Migrate and Modernize](https://azure.microsoft.com/solutions/migration/migrate-modernize-innovate).  
 
 One part of predeployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db) that can help you determine the number of vCores and the size.
 

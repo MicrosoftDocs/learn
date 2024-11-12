@@ -1,4 +1,4 @@
-After you select a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment succeeded. In this unit, you'll learn various methods for each step in the process.
+After you select a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment succeeded. In this unit, you learn various methods for each step in the process.
 
 ## Predeployment planning
 
@@ -43,7 +43,7 @@ For Azure SQL Database and Azure SQL Managed Instance, there are essentially six
 
 ### Server
 
-When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. For databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. You'll learn more about these elements later.
+When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. For databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. You learn more about these elements later.
 
 This logical server doesn't expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
@@ -126,7 +126,7 @@ The logical database server gives you something to which to connect. It also let
 
 The Hyperscale tier within Azure SQL Database, which isn't available in Azure SQL Managed Instance, has a unique architecture for Azure SQL. The Azure SQL team rearchitected Hyperscale for the cloud. This architecture includes a multilayer caching system that can help with both speed and scale. Scaling and other operations no longer become related to the size of data and can be completed in constant time, a matter of minutes. The use of remote storage also allows for snapshot backups.
 
-In a subsequent module of the Azure SQL fundamentals learning path, you'll learn more about the architecture and how it affects performance and availability. One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't *go back* to the General Purpose or Business Critical tier.
+In a subsequent module of the Azure SQL fundamentals learning path, you learn more about the architecture and how it affects performance and availability. One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't *go back* to the General Purpose or Business Critical tier.
 
 ### Resource governance
 

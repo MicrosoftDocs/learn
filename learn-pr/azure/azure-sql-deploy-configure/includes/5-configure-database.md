@@ -84,4 +84,4 @@ At the highest level, in Proxy mode, all connections are proxied through the gat
 
 The direct connection (redirect) allows for reduced latency and improved throughput. It also requires opening more ports to allow inbound and outbound communication in the range of 11000 to 11999.  
 
-In the next exercise, you'll see some commands for configuring Azure SQL with the Azure CLI. Then, you'll dive into evaluating the proxy and redirect connection policies.
+In the next exercise, you see some commands for configuring Azure SQL with the Azure CLI. Then, you dive into evaluating the proxy and redirect connection policies.

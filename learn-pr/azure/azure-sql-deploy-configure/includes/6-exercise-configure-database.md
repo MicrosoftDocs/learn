@@ -2,11 +2,11 @@ You've now seen the Azure portal, SQL Server Management Studio (SSMS), and SQL n
 
 To complete this activity, you can use a PowerShell notebook, which is the same concept as a SQL notebook but the coding language is PowerShell. You can use PowerShell notebooks to take advantage of Azure CLI or Azure PowerShell. This article focuses on Azure CLI commands. For both of these tools, you can also use Azure Cloud Shell, which is an interactive shell environment that you can use through your browser in the Azure portal.
 
-In this exercise, we'll use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
+In this exercise, we use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
 
 ## Connecting with Azure Cloud Shell and the Azure CLI
 
-In the example that follows, you'll explore the latency effects of using different connection policies in Azure SQL.  
+In the example that follows, you explore the latency effects of using different connection policies in Azure SQL.  
 
 Run all of the commands by using Cloud Shell. You can easily copy them and then select **Shift**+**Insert** to paste into the terminal.
 

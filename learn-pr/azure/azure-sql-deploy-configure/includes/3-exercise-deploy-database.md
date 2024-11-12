@@ -1,4 +1,4 @@
-In this activity, you'll deploy Azure SQL Database by using the Azure portal. Throughout this exercise, you'll explore the options that are available to you.
+In this activity, you deploy Azure SQL Database by using the Azure portal. Throughout this exercise, you explore the options that are available to you.
 
 ## Deploy Azure SQL Database by using the Azure portal
 
@@ -68,7 +68,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 ## Connect to Azure SQL Database
 
-Next, we'll look at the basics of connecting to your deployed SQL database and compare that experience to connecting to SQL Server.
+Next, we look at the basics of connecting to your deployed SQL database and compare that experience to connecting to SQL Server.
 
 ### What does connecting to SQL Server 2019 look like?
 
@@ -111,4 +111,4 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of a managed instance in SSMS.":::  
 
-In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares to SQL Server and Azure SQL Managed Instance. In the next exercise, you'll continue this comparison and go deeper by exploring various methods to verify your deployment and installation.
+In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares to SQL Server and Azure SQL Managed Instance. In the next exercise, you continue this comparison and go deeper by exploring various methods to verify your deployment and installation.
