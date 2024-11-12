@@ -30,7 +30,7 @@ Two common command-line tools for deploying, verifying, and configuring Azure SQ
 
 #### Data max size
 
-For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](/azure/azure-sql/database/file-space-manage?view=azuresql-db#understanding-types-of-storage-space-for-a-database?azure-portal=true).
+For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](/azure/azure-sql/database/file-space-manage#understanding-types-of-storage-space-for-a-database?azure-portal=true).
 
 #### Connectivity to Azure SQL
 
