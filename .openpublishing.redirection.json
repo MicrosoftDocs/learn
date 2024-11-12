@@ -34448,6 +34448,46 @@
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/9-summary-resources.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
     }
   ]
 }
