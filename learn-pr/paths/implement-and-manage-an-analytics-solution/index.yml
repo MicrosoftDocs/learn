@@ -7,7 +7,7 @@ metadata:
   author: jamesh
   ms.author: jamesh 
   ms.topic: learning-path
-title: Train compute-intensive models with Azure Machine Learning
+title: Implement and manage an analytics solution
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |
