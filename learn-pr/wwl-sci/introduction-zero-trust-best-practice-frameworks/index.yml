@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Zero Trust and best practice frameworks
   description: "You learn what best practices are, how cybersecurity architects use them, and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
   ms.date: 09/09/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted
