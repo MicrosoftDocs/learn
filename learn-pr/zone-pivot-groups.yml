@@ -458,3 +458,5 @@ groups:
       title: Microsoft Azure SQL Database
     - id: sql-server
       title: Microsoft SQL Server
+    - id: fabric-database
+      title: Microsoft Fabric
