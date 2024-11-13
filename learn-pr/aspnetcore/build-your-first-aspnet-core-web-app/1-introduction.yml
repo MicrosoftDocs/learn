@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Build your first ASP.NET Core web app.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
