@@ -4,7 +4,7 @@ Alternatively, you can select **New > API for GraphQL** from any workspace in **
 
 :::image type="content" source="../media/3-api-page.png" alt-text="Screenshot of the API for GraphQL page in Microsoft Fabric.":::
 
-Your next step is to connect to a data source. Select **Select data source**.
+Next, connect to a data source by selecting **Select data source**. In the **Choose connectivity option** dialog, choose between single sign-on (SSO) or saved credentials. Then, select the data you want to connect.
 
 :::image type="content" source="../media/3-data-source.png" alt-text="Screenshot of the data source selection page for GraphQL in Microsoft Fabric.":::
 

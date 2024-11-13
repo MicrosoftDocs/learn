@@ -8,11 +8,11 @@ This is because SQL Database in Microsoft Fabric is powered by the same SQL engi
 
 ### [**Workspaces roles**](/fabric/data-warehouse/workspace-roles/?azure-portal=true) 
 
-Designed to provide different levels of access and control within the workspace. You can assign users to the various workspace roles such as **Admin**, **Member**, **Contributor**, and **Viewer**. These roles are crucial for maintaining the security and efficiency of data warehousing operations within an organization.
+Designed to provide different levels of access and control within the workspace. You can assign users to the various workspace roles such as **Admin**, **Member**, **Contributor**, and **Viewer**. These roles are crucial for maintaining the security and efficiency of SQL database operations within an organization.
 
 ### [**Item permissions**](/fabric/database/sql/share-sql-manage-permission?azure-portal=true) 
 
-Individual databases can have item permissions assigned directly to them. The main intent behind assigning such permissions is to facilitate the sharing of the Warehouse for downstream use. You can review permissions for a SQL database, its SQL analytics endpoint, or its default semantic model by navigating to the item in the workspace and selecting the **Manage permissions** quick action.
+Individual databases can have item permissions assigned directly to them. The main intent behind assigning such permissions is to facilitate the sharing of the SQL database for downstream use. You can review permissions for a SQL database, its SQL analytics endpoint, or its default semantic model by navigating to the item in the workspace and selecting the **Manage permissions** quick action.
 
 > [!NOTE]
 > Granting item permissions has no impact on the security metadata inside the database.

@@ -4,7 +4,7 @@ These tools enable the creation of intelligent, responsive, and efficient applic
 
 ## Use Copilot for SQL database in Fabric
 
-[Microsoft Copilot](/azure/azure-sql/copilot/copilot-azure-sql-overview?azure-portal=true) in Azure is integrated with  SQL database in Fabric, enhancing SQL management and troubleshooting. It boosts productivity in the Azure portal by offering natural language to SQL conversion and self-help for users.
+[Microsoft Copilot](/azure/azure-sql/copilot/copilot-azure-sql-overview?azure-portal=true) is integrated with SQL database in Fabric, enhancing SQL management and troubleshooting. It boosts productivity by offering natural language to SQL conversion and self-help for users.
 
 Copilot can automatically correct T-SQL code errors as they occur. By sharing context with the active query tab, Copilot offers helpful suggestions to fix SQL query errors seamlessly. You can also generate T-SQL queries by asking questions in natural language.
 

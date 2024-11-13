@@ -20,7 +20,7 @@ You can query a SQL database in Fabric using similar tools available for Azure S
 
 :::image type="content" source="../media/2-query.png" alt-text="Screenshot showing how to query a SQL database in Microsoft Fabric.":::
 
-The **Open in Azure Data Studio** option allows you to launch Azure Data Studio with the connection properties prefilled, making it easier to connect and start working immediately.
+The **Open in** option allows you to launch Visual Studio Code and SQL Server Management Studio (SSMS) with the connection properties prefilled, making it easier to connect and start working immediately.
 
 ## Source control
 
@@ -29,8 +29,8 @@ Source control is an essential aspect of managing SQL databases in Microsoft Fab
 If you're familiar with source control, you notice that there's no major difference when committing changes to a SQL database in Microsoft Fabric compared to other code repositories. 
 
 - **Commit to source control:** You can commit database objects to source control, converting the live database into code. This process reads object definitions from the database and writes them to the repository.
-- **Update from source control:** You can update database objects from the contents of source control. The code in Azure DevOps Services is validated before applying a differential change to the database.
-- **History tracking:** Users can view the history of database objects in Azure DevOps Services, providing a clear record of changes and facilitating collaboration.
+- **Update from source control:** You can update database objects from the contents of source control. The code is validated before applying a differential change to the database.
+- **History tracking:** Users can view the history of database objects in the source control system, providing a clear record of changes and facilitating collaboration.
 
 ## Explore performance capabilities
 

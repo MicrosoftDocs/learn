@@ -12,16 +12,15 @@ The API for GraphQL in Microsoft Fabric supports two types of operations: querie
 
 A GraphQL schema is essential for defining the types of data that can be queried or mutated and how they're related. It provides a clear and concise way to describe an API's capabilities.
 
-- **Objects:** Objects represent data types in a GraphQL schema. They help organize related data and define the fields that can be queried on each type.
+- **Object types:** Types represent a data entity in a GraphQL schema. They help organize related data and define the fields that can be queried on each type.
 - **Fields:** Fields specify the data that can be queried on an object type. They can be scalar values or other object types and might include arguments to filter or modify the data.
+
+Object types are like SQL tables, representing data entities, while fields are similar to SQL columns, specifying the data that can be queried and possibly filtered or modified.
 
 ## Secure API access
 
-To use the API for GraphQL, your applications must authenticate through Microsoft Entra. This means your client application needs to be registered and properly configured to make API calls against Fabric. 
+To use the API for GraphQL, your applications can take advantage of saved credentials. This means that the authenticated user doesn't need access to the data source. 
 
-Additionally, the authenticated user in the app calling the GraphQL API must be a workspace member with a **contributor** role in the workspace where both the API and data source items are located. 
+Alternatively, you can connect to Fabric data sources using single sign-on (SSO) authentication.
 
-> [!NOTE]
-> Service Principals are not supported at this time.
-
-To learn more, see [Create a Microsoft Entra ID app](/rest/api/fabric/articles/get-started/create-entra-app?azure-portal=true).
+The authenticated user in the app calling the GraphQL API must be a workspace member with a **contributor** role in the workspace where both the API and data source items are located. 

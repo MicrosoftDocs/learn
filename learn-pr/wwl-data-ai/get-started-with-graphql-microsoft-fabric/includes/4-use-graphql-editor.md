@@ -105,7 +105,7 @@ For example, imagine we create a GraphQL API to expose sample data from the `Adv
 
 Then, you can use the copy endpoint option from the API item's toolbar. This option allows you to easily copy the endpoint URI for later use in your application.
 
-Additionally, you can automatically generate code for your application by selecting **Generate code** from the API item's toolbar in the GraphQL designer. This capability is helpful to verify that the API calls are working as expected and that the data is being correctly retrieved and processed.
+Additionally, you can automatically [generate code](/fabric/data-engineering/api-graphql-editor#generate-code) for your application by selecting **Generate code** from the API item's toolbar in the GraphQL designer. This capability is helpful to verify that the API calls are working as expected and that the data is being correctly retrieved and processed.
 
 ```python
 from azure.identity import InteractiveBrowserCredential
