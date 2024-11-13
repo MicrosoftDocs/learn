@@ -67,7 +67,7 @@ quiz:
       explanation: "Incorrect. You can use Event Hubs to stream monitoring data to external tools, but it isn't an optimal tool for combining metrics into a single view."
     - content: "Log Analytics workspace."
       isCorrect: false
-      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query data, but isn't an optimal tool for combining metrics into a single view."
+      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query data. However, it isn't an optimal tool for combining metrics into a single view."
     - content: "Azure Dashboards."
       isCorrect: true
       explanation: "Correct. Dashboards can combine different kinds of data into a single pane in the Azure portal."

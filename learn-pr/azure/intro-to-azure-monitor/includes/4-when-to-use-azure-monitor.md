@@ -6,7 +6,7 @@ Some Azure resource providers have created visualizations that provide a customi
 
 :::image type="content" source="../media/insights-box.svg"  alt-text="Diagram that shows the Insights part of Azure Monitor." border="false" lightbox="../media/insights-blowup.svg":::
 
-Azure Monitor includes many types of Insights. In the Azure portal, select **Insights Hub** in the Azure Monitor left navigation to list and access all the available types of Insights.
+Azure Monitor includes many types of Insights. In the Azure portal, select **Insights Hub** in the Azure Monitor navigation to list and access all the available types of Insights.
 
 The following sections describe some of the largest, most common Azure Monitor Insights.
 
@@ -20,11 +20,11 @@ Application Insights supports *distributed tracing*, which is also known as dist
 
 Application Insights also includes the following features:
 
-- **Live metrics** observe activity from your deployed application in real time with no effect on the host environment.
-- **Availability monitoring**, also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.
-- **Usage monitoring** helps you understand which features are popular with users and how users interact and use your application.
-- **Smart detection** detects failures and anomalies automatically through proactive telemetry analysis.
-- **Application Map** is a high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
+- **Live metrics**: Observe activity from your deployed application in real time with no effect on the host environment.
+- **Availability monitoring**: Also known as *synthetic transaction monitoring*, probes the external endpoints of your applications to test overall availability and responsiveness over time.
+- **Usage monitoring**: Helps you understand which features are popular with users and how users interact and use your application.
+- **Smart detection**: Detects failures and anomalies automatically through proactive telemetry analysis.
+- **Application Map**: A high-level, top-down view of your application architecture with at-a-glance visual references to component health and responsiveness.
 
 ### Container Insights
 
@@ -36,7 +36,7 @@ VM Insights monitors and analyzes the performance and health of your Azure Windo
 
 ### Network Insights
 
-Network Insights provides a comprehensive visual representation of health and metrics for all deployed network resources through topologies, without requiring any configuration. Network Insights also provide access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), Traffic Analytics, and other diagnostic features.
+Network Insights provides a comprehensive visual representation of health and metrics for all deployed network resources through topologies, without requiring any configuration. Network Insights also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), Traffic Analytics, and other diagnostic features.
 
 ## Visualizations
 
@@ -64,7 +64,7 @@ Power BI is a business analytics service that provides interactive visualization
 
 Grafana is an open platform for operational dashboards. Grafana includes the Azure Monitor data source plugin to visualize Azure Monitor metrics and logs. Azure Managed Grafana optimizes this experience for Azure-native data stores such as Azure Monitor and Azure Data Explorer.
 
-Grafana also has popular plugins and dashboard templates for non-Microsoft application performance monitoring (APM) tools such as Dynatrace, New Relic, and AppDynamics. Grafana includes AWS CloudWatch and GCP BigQuery plugins for multicloud monitoring in a single pane of glass. You can use these resources to visualize Azure Monitor data alongside other metrics that these other tools collect.
+Grafana also has popular plugins and dashboard templates for non-Microsoft application performance monitoring tools such as Dynatrace, New Relic, and AppDynamics. Grafana includes AWS CloudWatch and GCP BigQuery plugins for multicloud monitoring in a single pane of glass. You can use these resources to visualize Azure Monitor data alongside other metrics that these other tools collect.
 
 ## Actions
 
@@ -89,4 +89,3 @@ Alert rules use *action groups*, which can take actions such as sending email or
 ### Autoscale
 
 Autoscale lets you dynamically adjust the number of resources running to handle the load on your applications. To save money or increase performance, you can create rules that use Azure Monitor metrics to determine when to automatically add or remove resources. You can specify a minimum and maximum number of instances and the logic for when to increase or decrease resources.
-
