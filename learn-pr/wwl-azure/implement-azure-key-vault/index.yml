@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Azure Key Vault
   description: "Implement Azure Key Vault"
-  ms.date: 03/12/2024
+  ms.date: 11/13/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module-standard-task-based
