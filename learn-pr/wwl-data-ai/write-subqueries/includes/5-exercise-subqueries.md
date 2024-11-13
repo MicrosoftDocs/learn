@@ -15,7 +15,7 @@ To set up a database for this exercise, sign into your Azure subscription and fo
 
 ### Set up SQL Server
 
-To complete the exercise using Microsoft SQL Server, you will need to follow these **[setup instructions](https://go.microsoft.com/fwlink/?linkid=2294500&azure-portal=true)** to install Microsoft SQL Server and the required tools and database.
+To complete the exercise using Microsoft SQL Server, you'll need to follow these **[setup instructions](https://go.microsoft.com/fwlink/?linkid=2294500&azure-portal=true)** to install Microsoft SQL Server and the required tools and database.
 
 ::: zone-end
 
@@ -26,7 +26,7 @@ To complete the exercise using Microsoft SQL Server, you will need to follow the
 > [!NOTE]
 > You need access to a Microsoft Fabric capacity in which you have sufficient permission to create a Fabric SQL Database. See [Getting started with Fabric](/fabric/get-started/fabric-trial).
 
-To complete the exercise using Microsoft Fabric SQL Database, you will need to follow these **[setup instructions](https://go.microsoft.com/fwlink/?linkid=2296975&azure-portal=true)** to create a Fabric SQL Database for the lab.
+To complete the exercise using Microsoft Fabric SQL Database, you'll need to follow these **[setup instructions](https://go.microsoft.com/fwlink/?linkid=2296975&azure-portal=true)** to create a Fabric SQL Database for the lab.
 
 ::: zone-end
 
