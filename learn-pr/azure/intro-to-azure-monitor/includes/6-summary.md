@@ -17,7 +17,7 @@ Azure Monitor:
 Data collection:
 
 - [Azure Monitor data sources and data collection methods](/azure/azure-monitor/data-sources)
-- [Data collection rules (DCRs) in Azure Monitor](s/azure/azure-monitor/essentials/data-collection-rule-overview)
+- [Data collection rules (DCRs) in Azure Monitor](/azure/azure-monitor/essentials/data-collection-rule-overview)
 - [Azure Monitor Agent overview](/azure/azure-monitor/agents/azure-monitor-agent-overview)
 - [Monitor Kubernetes clusters using Azure services and cloud native tools](/azure/azure-monitor/containers/monitor-kubernetes)
 
