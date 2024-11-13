@@ -46,7 +46,7 @@ To learn more about the differences between SQL Server Agent in SQL Server and i
 
 #### Load data
 
-For more information about using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, see [Copy and transform data using Azure Data Factory](/azure/data-factory/connector-azure-sql-database?toc=%2Fazure%2Fazure-sql%2Ftoc.json&view=azuresql&tabs=data-factory) or [Import a bacpac file to a database in Azure SQL Database or Azure SQL Managed Instance](/azure/azure-sql/database/database-import?view=azuresql&tabs=azure-powershell).
+For more information about using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, see [Copy and transform data using Azure Data Factory](/azure/data-factory/connector-azure-sql-database) or [Import a bacpac file to a database in Azure SQL Database or Azure SQL Managed Instance](/azure/azure-sql/database/database-import).
 
 ## Clean up your resources
 
