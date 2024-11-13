@@ -2,15 +2,15 @@ Now that you know what Azure VMware Solution is and what it can do, let's see ho
 
 ## Shared support
 
-On-premises VMware environments require the customer to support all the hardware and software for running the platform. Azure VMware Solution doesn't. Microsoft maintains the platform for the customer. Let's take a look what the customer manages and what Microsoft manages.
+On-premises VMware vSphere environments require the customer to support all the hardware and software for running the platform. Azure VMware Solution doesn't. Microsoft maintains the platform for the customer. Let's look at what the customer manages and what Microsoft manages.
 
 For the following table: Microsoft manages = **Blue**, Customer manages = **Grey**
 
 :::image type="icon" source="../media/3-azure-vmware-solution-responsibility-matrix.png" border="false" alt-text="Diagram that shows the shared support matrix for Azure VMware Solution.":::
 
-In partnership with VMware, Microsoft covers the life-cycle management of VMware software (ESXi, vCenter, and vSAN). Microsoft also works with VMware for the life-cycle management of NSX-T appliances and bootstrapping the network configuration. Including, creating the Tier 0 gateway and enabling north/south routing.
+In partnership with VMware, Microsoft covers the life-cycle management of VMware software (ESXi, vCenter Server, and vSAN). Microsoft also works with VMware for the life-cycle management of NSX appliances and bootstrapping the network configuration. Including, creating the Tier-0 gateway and enabling north/south routing.
 
-The customer is responsible for NSX-T SDN configuration:
+The customer is responsible for the NSX SDN configuration:
 
 - Network segments
 - Distributed firewall rules
@@ -19,7 +19,7 @@ The customer is responsible for NSX-T SDN configuration:
 
 ## Monitoring and remediation
 
-Azure VMware Solution continuously monitors the health of both the underlying components and the VMware components. If Azure VMware Solution detects a failure, it takes action to repair the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
+Azure VMware Solution continuously monitors the health of both the underlying components and the VMware solution components. If Azure VMware Solution detects failure, it repairs the failed components. When Azure VMware Solution detects a degradation or failure on an Azure VMware Solution node, it triggers the host remediation process.
 
 Host remediation involves replacing the faulty node with a new healthy node in the cluster. Then, when possible, the faulty host is placed in VMware vSphere maintenance mode. VMware vMotion moves the VMs off the faulty host to other available servers in the cluster, potentially allowing zero downtime for live migration of workloads. If the faulty host can't be placed in maintenance mode, the host is removed from the cluster.
 
@@ -42,16 +42,16 @@ Azure VMware Solution monitors the following conditions on the host:
 
 Azure VMware Solution provides private clouds that contain vSphere clusters. Those clusters are built from dedicated bare-metal Azure hosts. 
 
-Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
+Each private cloud can have multiple clusters managed by the same vCenter Server and NSX Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable.
 
-For each private cloud created, there's one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. Choose the type of node that's appropriate for your region; the most common choice is AV36. 
+For each private cloud created, there's one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. Choose the type of node that's appropriate for your region; the most common choice is AV36P. 
 
 Minimum and maximum node configurations are:
 
 - Minimum of three nodes in a cluster
 - Maximum of 16 nodes in a cluster
-- Maximum of 12 clusters in an Azure private cloud
-- Maximum of 96 nodes in an Azure private cloud
+- Maximum of 12 clusters in an Azure VMware Solution private cloud
+- Maximum of 96 nodes in an Azure VMware Solution private cloud
 
 Each of the high-end hosts has 576 GB of RAM and dual Intel 18-core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.20 TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
