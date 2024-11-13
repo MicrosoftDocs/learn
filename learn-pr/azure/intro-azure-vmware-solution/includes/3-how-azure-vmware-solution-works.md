@@ -53,32 +53,40 @@ Minimum and maximum node configurations are:
 - Maximum of 12 clusters in an Azure VMware Solution private cloud
 - Maximum of 96 nodes in an Azure VMware Solution private cloud
 
-Each of the high-end hosts has 576 GB of RAM and dual Intel 18-core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.20 TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+The following table shows the CPU, memory, disk, and network specifications of the available AVS Hosts:
 
-You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
+| Host Type | CPU   | RAM   | vSAN Cache Tier | vSAN Capacity |
+| :---     | :---  | :---:  | :---            | :---          |
+| AV36      | Dual Intel Xeon Gold 6140 CPUs, 18 cores/CUP @ 2.3 GHz. Total 36 physical cores. | 576 GB | 3.2 TB (NVMe) | 15.20 TB (SSD)|
+| AV36P      | Dual Intel Xeon Gold 6240 CPUs, 18 cores/CPU @ 2.6 GHz / 3.9 GHz Turbo. Total 36 physical cores. | 768 GB | 1.5 TB (Intel Cache) | 19.20 TB (NVMe)|
+| AV52      | Dual Intel Xeon Platinum 8270 CPUs, 26 cores/CPU @ 2.7 GHz / 4.0 GHz Turbo. Total 52 physical cores. | 1,536 GB | 1.5 TB (Intel Cache) | 38.40 TB (NVMe)|
+| AV64*      | Dual Intel Xeon Platinum 8370C CPUs, 32 cores/CPU @ 2.8 GHz / 3.5 GHz Turbo. Total 64 physical cores. | 1,024 GB | 3.84 TB (NVMe) | 15.36 TB (NVMe)|
 
-The VMware software versions used in new deployments of private-cloud clusters in Azure VMware Solution are:
+(*) An Azure VMware Solition private cloud deployed with AV36, AV36P, or AV52 is required prior to adding AV64 hosts. 
+
+You use vSphere and NSX Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
+
+The VMware software versions used in new deployments of private cloud clusters in Azure VMware Solution are:
 
 | Software                     |    Version   |
-| :---                         |     :---:    |
-| VMware vCenter Server        |    7.0 U3c   |
-| ESXi                         |    7.0 U3c   |
-| vSAN                         |    7.0 U3c   |
-| vSAN on-disk format          |    10        |
-| HCX                          |    4.4.2     |
-| VMware NSX-T Data Center <br />**NOTE:** VMware NSX-T Data Center is the only supported version of NSX Data Center.               |      3.1.2     |
+| :---                         |     :---    |
+| VMware vCenter Server        |    7.0 U3o   |
+| ESXi                         |    7.0 U3o   |
+| vSAN                         |    7.0 U3    |
+| vSAN on-disk format          |    15        |
+| HCX                          |    4.8.2     |
+| VMware NSX                   |    4.1.1     |
 
 NSX-T is the only supported version of NSX. When new clusters are added to an existing private cloud, the currently running software version is applied. 
 
-After Azure VMware Solution is deployed into your subscription, Azure Monitor logs are automatically generated. You can use Azure Monitor logs to monitor virtual machine (VM) patterns inside Azure VMware Solution.
-
 ## Interconnectivity in Azure
 
-The private-cloud environment for Azure VMware Solution can be accessible from on-premises and Azure-based resources. The following services deliver the interconnectivity:
+The private cloud environment for Azure VMware Solution can be accessible from on-premises and Azure-based resources. The following services deliver the interconnectivity:
 
 - Azure ExpressRoute
 - VPN connections
 - Azure Virtual WAN
+- Azure ExpressRoute Gateway
 
 The following diagram shows the ExpressRoute and ExpressRoute Global Reach interconnectivity method for Azure VMware Solution.
 
