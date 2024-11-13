@@ -4,7 +4,7 @@ This unit describes how Azure Monitor Insights, visualizations, and dashboards c
 
 Some Azure resource providers have created visualizations that provide a customized monitoring experience and require minimal configuration. Insights are large, scalable, curated visualizations.
 
-:::image type="content" source="../media/insights-box.png"  alt-text="Diagram that shows the Insights part of Azure Monitor." border="false" lightbox="../media/insights-blowup.svg":::
+:::image type="content" source="../media/insights-box.svg"  alt-text="Diagram that shows the Insights part of Azure Monitor." border="false" lightbox="../media/insights-blowup.svg":::
 
 Azure Monitor includes many types of Insights. In the Azure portal, select **Insights Hub** in the Azure Monitor left navigation to list and access all the available types of Insights.
 
