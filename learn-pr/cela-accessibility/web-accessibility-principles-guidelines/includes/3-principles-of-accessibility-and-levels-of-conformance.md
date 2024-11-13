@@ -27,7 +27,7 @@ Let's compare the three levels of conformance by reviewing some *sample* success
 #### Perceivable
 
 - **A**: Provide text alternatives for non-text content (for example, images, audio, and video).
-- **AA**: Provide captions for live audio content (for example,, webinars, podcasts, and broadcasts).
+- **AA**: Provide captions for live audio content (for example, webinars, podcasts, and broadcasts).
 - **AAA**: Provide sign language interpretation for pre-recorded audio (for example, videos, animations, and presentations).
 
 #### Operable
