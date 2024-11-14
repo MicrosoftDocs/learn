@@ -1,6 +1,7 @@
 Azure NetApp Files is an enterprise storage service that offers to accelerate and simplify the migration of various workload categories. Azure NetApp Files provides a high-performance, scalable, and secure storage service for running mission-critical applications and workloads in Azure. 
 
-For businesses looking to migrate their applications and workloads to Azure, Azure NetApp Files provides a seamless experience for migrating Windows Apps and SQL server, Linux OSS Apps and Databases, and SAP on Azure. In addition to migration, Azure NetApp Files provides a platform for running specialized workloads in High-Performance Computing. 
+For businesses looking to migrate their applications and workloads to Azure, Azure NetApp Files provides a seamless experience for migrating Windows Apps and SQL server, Linux OSS Apps and Databases, and SAP on Azure. In addition to migration, Azure NetApp Files provides a platform for running specialized workloads in High-Performance Computing.
+
 Azure NetApp Files’ integration with Azure native services like Azure Kubernetes Service, Azure Batch, and Azure Machine Learning provides users with a seamless experience and enables them to leverage the full power of Azure's cloud-native services.
 
 The following diagram depicts the key use cases supported in Azure NetApp Files.
