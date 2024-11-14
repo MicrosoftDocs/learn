@@ -34450,37 +34450,37 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/1-introduction.yml",
+      "source_path": "learn-pr/language/cpp-first-program/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/2-exercise-hello-world.yml",
+      "source_path": "learn-pr/language/cpp-first-program/2-exercise-hello-world.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/3-how-it-works.yml",
+      "source_path": "learn-pr/language/cpp-first-program/3-how-it-works.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/4-common-mistakes-errors.yml",
+      "source_path": "learn-pr/language/cpp-first-program/4-common-mistakes-errors.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/5-exercise-fixing-broken-code.yml",
+      "source_path": "learn-pr/language/cpp-first-program/5-exercise-fixing-broken-code.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/6-summary.yml",
+      "source_path": "learn-pr/language/cpp-first-program/6-summary.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/lanuage/cpp-first-program/index.yml",
+      "source_path": "learn-pr/language/cpp-first-program/index.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
     }
