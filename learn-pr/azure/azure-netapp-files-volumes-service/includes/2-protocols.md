@@ -10,6 +10,8 @@ Azure NetApp Files supports any NFS client that operates within the RFC standard
 
 ### NFSv3 versus NFSv4.x
 
+NFSv4 and NFSv4.x offer different features:
+
 | Feature | NFSv3 | NFSv4.x |
 | --- | ----- | ------ |
 | State of NFS connections | NFSv3 is stateless, meaning that the NFS server doesn't keep track of the states of connections (including locks). | NFSv4.x is a stateful protocol. The client and server keep track of the states of the NFS connections, including lock states. |
