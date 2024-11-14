@@ -2,6 +2,8 @@
 uid: learn.azdo.manage-build-dependencies.5-create-package-pipeline
 title: Exercise - Create a pipeline for your package
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a pipeline for your package
   description: Create a project in Azure Pipelines to build your package.
   ms.custom: devdivchpfy22
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-create-package-pipeline.md)]
+

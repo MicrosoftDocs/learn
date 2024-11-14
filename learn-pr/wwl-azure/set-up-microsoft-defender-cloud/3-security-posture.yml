@@ -2,6 +2,8 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.security-posture
 title: Security posture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Security posture
   description: "Security posture"
   ms.date: 04/24/2024

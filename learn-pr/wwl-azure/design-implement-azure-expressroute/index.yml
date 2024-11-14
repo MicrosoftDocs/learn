@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-azure-expressroute
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement Azure ExpressRoute
   description: You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath.
   ms.date: 11/02/2023
@@ -48,3 +50,4 @@ units:
 - learn.wwl.design-implement-azure-expressroute.summary-resources
 badge:
   uid: learn.wwl.design-implement-azure-expressroute.badge
+

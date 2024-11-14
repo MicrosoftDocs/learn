@@ -4,7 +4,7 @@ Traffic between your virtual network and the service travels the Microsoft backb
 
 **Example: Private Link Center**
 
-:::image type="content" source="../media/azure-private-link-example-de4c462d.png" alt-text="Screenshot showing the Azure Private Link Center in the Azure dashboard.":::
+:::image type="content" source="../media/azure-private-link-example-de4c462d-7ca5f5a0.png" alt-text="Screenshot showing the Azure Private Link Center in the Azure dashboard.":::
 
 
 ## Key benefits<br>

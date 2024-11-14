@@ -2,6 +2,8 @@
 uid: learn.wwl.evaluate-models-azure-ai-studio.manual-evaluations
 title: Manually evaluate the performance of a model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manually evaluate the performance of a model
   description: "Learn how manually evaluate the performance of a model in the Azure AI Studio."
   ms.date: 07/24/2024

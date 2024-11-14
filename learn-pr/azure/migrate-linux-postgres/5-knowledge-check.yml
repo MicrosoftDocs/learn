@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-linux-postgres.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about migrating Linux and Postgres workloads.
+  ms.date: 10/17/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: unit
+  ROBOTS: INDEX,FOLLOW
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which method do we recommend for authenticating to Azure Database for PostgreSQL to enhance security?"
+    choices:
+    - content: "Using connection strings with embedded credentials"
+      isCorrect: false
+      explanation: "Using connection strings with embedded credentials can expose sensitive information and is less secure."
+    - content: "Using Microsoft Entra ID and a managed identity"
+      isCorrect: true
+      explanation: "Using Microsoft Entra ID and a managed identity enhances security by avoiding the use of embedded credentials and by taking advantage of the identity management capabilities in Azure."
+    - content: "Using a shared username and password"
+      isCorrect: false
+      explanation: "Using a shared username and password can expose sensitive information and is less secure."
+  - content: "What is the benefit of using a managed identity for accessing Azure Database for PostgreSQL from a virtual machine?"
+    choices:
+    - content: "It eliminates the need for storing credentials in the application code."
+      isCorrect: true
+      explanation: "A managed identity allows secure access to Azure resources without the need to store credentials in the application code."
+    - content: "It provides faster query execution times."
+      isCorrect: false
+      explanation: "A managed identity is primarily a security feature and doesn't directly affect query execution times."
+    - content: "It allows access to the Azure portal."
+      isCorrect: false
+      explanation: "A managed identity is primarily a security feature and doesn't provide access to the Azure portal."
+  - content: "What role should be assigned to allow a user to administer a virtual machine in Azure?"
+    choices:
+    - content: "Virtual Machine Administrator Login"
+      isCorrect: true
+      explanation: "The Virtual Machine Administrator Login role allows a user to administer a virtual machine in Azure."
+    - content: "Reader"
+      isCorrect: false
+      explanation: "The Reader role only allows viewing resources. It doesn't provide administrative access."
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "The Contributor role allows managing resources but doesn't provide specific administration capabilities for virtual machines."
+  - content: "How can you secure network access to an Azure virtual machine?"
+    choices:
+    - content: "By adding a load balancer without any additional configuration"
+      isCorrect: false
+      explanation: "Adding a load balancer without any additional configuration doesn't enhance security and can expose the virtual machine to potential threats."
+    - content: "By configuring network security group (NSG) rules"
+      isCorrect: true
+      explanation: "You can use NSG rules to control inbound and outbound traffic to and from an Azure virtual machine."
+    - content: "By disabling all network interfaces"
+      isCorrect: false
+      explanation: "Disabling all network interfaces would make the virtual machine inaccessible and is not a practical security measure."

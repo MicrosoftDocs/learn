@@ -2,6 +2,8 @@
 uid: learn.wwl.just-in-time-access.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
 title: Exercise - Enable just-in-time access on virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Enable just-in-time access on virtual machines
   description: "Exercise - Enable just-in-time access on virtual machines"
   ms.date: 05/31/2024

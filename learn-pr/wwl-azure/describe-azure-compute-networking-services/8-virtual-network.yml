@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-network
 title: Describe Azure virtual networking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure virtual networking
   description: "Describe Azure virtual networking"
   ms.date: 09/20/2024

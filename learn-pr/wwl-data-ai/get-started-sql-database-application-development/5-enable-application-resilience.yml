@@ -2,6 +2,8 @@
 uid: learn-wwl.get-started-sql-database-application-development.enable-application-resilience
 title: Enable application resilience with Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable application resilience with Azure SQL Database
   description: "Learn how to enable application resilience with Azure SQL Database."
   ms.date: 10/02/2024

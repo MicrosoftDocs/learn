@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts
 title: Understand versioning of artifacts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand versioning of artifacts
   description: "Understand versioning of artifacts"
   ms.date: 05/24/2024

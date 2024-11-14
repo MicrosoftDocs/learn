@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-devices-azure-iot-central
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage devices in Azure IoT Central
   description: Explore device management capabilities provided by Azure IoT Central and how to perform device management at scale with device groups and jobs.
   ms.service: azure-iot-central
@@ -43,3 +45,4 @@ units:
 - learn.wwl.manage-devices-azure-iot-central.summary
 badge:
   uid: learn.wwl.manage-devices-azure-iot-central.badge
+

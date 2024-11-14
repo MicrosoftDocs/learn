@@ -12,7 +12,7 @@ In addition, as WT hires more employees, their DBA team has struggled to keep up
 
 ## What you will do
 
-You'll evaluate, compare, and understand Azure Database for MySQL - Flexible Server's features to support Wingtip Toys' mission-critical operations. You'll learn about networking, security, business continuity, high availability, backups, performance, IOPS, and read replicas.
+You'll understand and implement the Azure Database for MySQL - Flexible Server's features, including networking, security, business continuity, high availability, backups, performance, IOPS, and read replicas, that support mission-critical operations.
 
 ## Primary goal
 

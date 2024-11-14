@@ -2,6 +2,8 @@
 uid: learn.improve-sign-in-security-authenticator.learning-content.prepare-azure-ad-environment
 title: Prepare your Microsoft Entra environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Prepare your Microsoft Entra environment
   description: "Review modern authentication methods and security features. Compare various methods for security, usability, and availability and decide how to switch remote employees to a more secure sign-in method."
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-learning-content.md)]
+

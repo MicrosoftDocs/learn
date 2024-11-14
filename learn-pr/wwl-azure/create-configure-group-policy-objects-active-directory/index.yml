@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-group-policy-objects-active-directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and configure Group Policy Objects in Active Directory
   description: "This module focuses on Group Policy objects, including using them to enforce a robust password policy."
   ms.date: 09/22/2024

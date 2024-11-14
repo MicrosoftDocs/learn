@@ -2,6 +2,8 @@
 uid: learn.wwl.create-run-container-images-azure-container-instances.set-environment-variables
 title: Set environment variables in container instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set environment variables in container instances
   description: "Set environment variables in container instances"
   ms.date: 07/24/2024

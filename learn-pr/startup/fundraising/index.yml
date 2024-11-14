@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.startups.fundraising
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundraising for your startup
   description: Learn how to raise money from investors such as angels and venture capital funds. See practical tips for asking potential investors for funding.
   ms.date: 06/17/2024
@@ -8,6 +10,7 @@ metadata:
   ms.author: vahughes
   ms.topic: module
   ms.service: azure
+  ms.collection: learn-startups
 title: Fundraising for your startup
 summary: >
   This module describes the process of raising money from early-stage investors and gives practical advice on how and when to approach different types of investors, such as angel investors and venture capital funds.
@@ -40,3 +43,4 @@ units:
 - learn.startups.fundraising.summary
 badge:
   uid: learn.startups.fundraising.badge
+

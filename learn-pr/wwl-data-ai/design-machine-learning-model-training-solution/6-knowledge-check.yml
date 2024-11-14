@@ -2,6 +2,8 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -37,3 +39,4 @@ quiz:
     - content: "Azure AI Services"
       isCorrect: false
       explanation: "Incorrect. Azure AI Services doesn't provide an API to customize a time-series forecasting model."
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-enterprise-desktop.plan-upgrades-retirement
 title: Plan for upgrades and retirement
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for upgrades and retirement
   description: "Plan for upgrades and retirement"
   ms.date: 09/09/2024

@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
@@ -11,7 +13,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
   - content: "Which option best describes Azure Sphere?"
@@ -48,3 +50,4 @@ quiz:
       isCorrect: false
       explanation: "These cloud services form part of the Altair solution."
   
+

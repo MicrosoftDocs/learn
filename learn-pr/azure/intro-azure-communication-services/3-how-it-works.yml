@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-communication-services.how-it-works
 title: How Azure Communication Services works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Communication Services works
   description: "Describes how Azure Communication Services works."

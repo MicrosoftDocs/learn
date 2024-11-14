@@ -2,6 +2,8 @@
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.monitor-jobs-and-backup-instances-in-backup-center
 title: Monitor jobs and backup instances in Backup center
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor jobs and backup instances in Backup center
   description: Learn about monitoring jobs and backup instances in Backup center.
   ms.date: 12/01/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-monitor-jobs-and-backup-instances-in-backup-center.md)]
+

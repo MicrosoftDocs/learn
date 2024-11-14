@@ -2,6 +2,8 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.exercise-migrate-sql-managed-instance
 title: Exercise - Migrate a SQL Server database to Azure SQL Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Migrate a SQL Server database to Azure SQL Managed Instance
   description: "Learn how to perform an online migration of a SQL Server database to Azure SQL Managed Instance using Log Replay Service (LRS)."
   ms.date: 05/26/2021

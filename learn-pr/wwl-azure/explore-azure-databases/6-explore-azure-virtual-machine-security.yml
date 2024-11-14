@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-databases.virtual-machine-security
 title: Explore Azure Virtual Machine security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Machine security
   description: "Review important considerations about Azure Virtual Machine security."
   ms.date: 08/01/2024

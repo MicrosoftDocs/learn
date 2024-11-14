@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a Spring Boot app to Azure App Service
   description: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
   ms.date: 11/08/2023
@@ -41,3 +43,4 @@ units:
 - learn.azure.deploy-java-spring-boot-app-service-mysql.7-summary
 badge:
   uid: learn.azure.deploy-java-spring-boot-app-service-mysql.badge
+

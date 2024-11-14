@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-generative-ai.building-custom-copilots
 title: Extending and developing copilots
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Extending and developing copilot
   description: Understand when to use Copilot Studio and when to use Azure AI Studio to develop custom copilots.
   author: sherzyang
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6a-building-custom-copilots.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.lab-train-debug-model
 title: Exercise- Train a model and debug it using Responsible AI dashboard
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise- Train a model and debug it using Responsible AI dashboard
   description: "Exercise- Train a model with Azure Machine Learning and debug it using Responsible AI dashboard"
   ms.date: 08/30/2024

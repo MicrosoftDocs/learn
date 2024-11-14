@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.provision-azure-sql-db
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Provision an Azure SQL database to store application data
   description: Find out what makes Azure SQL Database a good choice for your relational database, how to create the database from the portal and connect with Azure Cloud Shell.
   ms.date: 10/17/2023
@@ -39,3 +41,4 @@ units:
 - learn.provision-azure-sql-db.5-summary
 badge:
   uid: learn.provision-azure-sql-db.badge
+

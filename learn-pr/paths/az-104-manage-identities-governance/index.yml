@@ -62,7 +62,7 @@ modules:
 - learn.wwl.configure-user-group-accounts
 - learn.wwl.configure-subscriptions
 - learn.wwl.configure-azure-policy
-- learn.azure.create-users-and-groups-in-azure-active-directory
+- learn.azure-security.manage-users-and-groups-in-aad
 - learn.secure-azure-resources-with-rbac
 - learn.azure.allow-users-to-reset-their-password
 trophy:

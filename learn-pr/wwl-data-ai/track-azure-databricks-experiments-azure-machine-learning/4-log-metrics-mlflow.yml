@@ -2,6 +2,8 @@
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.log-metrics-mlflow
 title: Log metrics in Azure Machine Learning with MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Log metrics in Azure Machine Learning with MLflow
   description: "Log metrics in Azure Machine Learning with MLflow"
   ms.date: 03/22/2023

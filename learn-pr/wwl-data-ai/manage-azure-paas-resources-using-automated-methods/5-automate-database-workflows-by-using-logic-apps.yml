@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.automate-database-workflows-by-using-logic-apps
 title: Automate database workflows by using Logic Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate database workflows by using Logic Apps
   description: "Automate database workflows by using Logic Apps"
   ms.date: 06/10/2022

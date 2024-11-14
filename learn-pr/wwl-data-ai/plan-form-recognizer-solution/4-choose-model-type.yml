@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-form-recognizer-solution.choose-model-type
 title: Choose a model type
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a model type
   description: Choose a model type
   author: ivorb
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-choose-model-type.md)]
+

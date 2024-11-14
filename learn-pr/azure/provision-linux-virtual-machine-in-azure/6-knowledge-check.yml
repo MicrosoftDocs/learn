@@ -2,6 +2,8 @@
 uid: learn.provision-linux-virtual-machine-in-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 10/30/2023
@@ -79,3 +81,4 @@ quiz:
     - content: "Standard JSON format"
       isCorrect: false
       explanation: "Incorrect: Bicep uses a domain-specific language, rather than JSON."
+

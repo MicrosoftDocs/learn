@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-reliability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
   ms.date: 12/18/2023
@@ -50,3 +52,4 @@ units:
 - learn.azure-well-architected-reliability.summary
 badge:
   uid: learn.azure-well-architected-reliability.badge
+

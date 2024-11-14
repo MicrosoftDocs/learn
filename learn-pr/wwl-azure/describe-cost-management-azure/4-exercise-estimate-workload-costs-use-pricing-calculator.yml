@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-cost-management-azure.exercise-estimate-workload-costs-use-pricing-calculator
 title: Exercise - Estimate workload costs by using the Pricing calculator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Estimate workload costs by using the Pricing calculator
   description: "Exercise - Estimate workload costs by using the Pricing calculator"
   ms.date: 09/19/2024

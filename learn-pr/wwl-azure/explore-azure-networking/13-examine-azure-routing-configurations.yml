@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-networking.examine-azure-routing-configurations
 title: Examine Azure routing configurations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure routing configurations
   description: "Explore modifying Azure routing configuration."
   ms.date: 10/03/2024

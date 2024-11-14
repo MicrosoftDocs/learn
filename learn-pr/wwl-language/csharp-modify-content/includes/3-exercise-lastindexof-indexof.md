@@ -1,8 +1,9 @@
-In this exercise, we use the methods`IndexOf()` and `LastIndexOf()` to find the location of characters and strings within a given string. 
+
+In this exercise, we use the methods`IndexOf()` and `LastIndexOf()` methods to find the positions of characters and substrings within a given string.
 
 ### `IndexOf()` and `LastIndexOf`
 
-The method `.IndexOf()` returns the index position of the first occurrence of a character or string within a given string. The method `.LastIndexOf()` returns the index position of the last occurrence of a character or string within a given string. Both the `Indexof()` and `LastIndexOf()` methods return **-1** if the character or string is **not found**.
+The `.IndexOf()` method  returns the index of the first occurrence of a specified character or substring within a given string. The method `.LastIndexOf()` returns the index position of the last occurrence of a character or string within a given string. Both the `Indexof()` and `LastIndexOf()` methods return **-1** if the character or string is **not found**.
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
 
@@ -23,11 +24,11 @@ The method `.IndexOf()` returns the index position of the first occurrence of a 
     For the message: 'hello there!', the first 'h' is at position 0 and the last 'h' is at position 7.
     ```
 
-    The output identifies the first and last "**h**" in the string "**h**ello t**h**ere!" at position 0 and position 7.
+    The output identifies the first  "**h**" in the string "**h**ello t**h**ere!" at position 0 and the last "**h**" at position 7.
 
 ### Retrieve the last occurrence of a sub string
 
-You increase the complexity of the `message` variable by adding many sets of parentheses, then write code to retrieve the content inside the **last** set of parentheses.
+You increase the complexity of the `message` variable by adding multiple sets of parentheses, then write code to retrieve the content inside the **last** set of parentheses.
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
 
@@ -105,11 +106,34 @@ This time, update the `message` to have three sets of parentheses, and write cod
 
     The `IndexOf()` method returns `-1` if it can't find the input parameter in the string. You merely check for the value `-1` and `break` out of the loop.
 
-### Work with different types of symbol sets
+### Work with different types of symbol sets with `IndexOfAny()`
 
-This time, search for several different symbols, not just a set of parentheses.
+This time, search for several different character symbols, not just a set of parentheses by using `.IndexOfAny()`.
 
-Update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
+**`.IndexOfAny()`** reports the index of the first occurrence of any character in a supplied array of characters. The method returns **-1** if all characters in the array of characters are **not found**.
+
+In the following example, the index of the first found character of the characters 'a', 'e', or 'i' is returned. 
+
+1. Update your code in the Visual Studio Code editor as follows:
+
+    ```csharp
+    string message = "Hello, world!";
+    char[] charsToFind = { 'a', 'e', 'i' };
+
+    int index = message.IndexOfAny(charsToFind);
+
+    Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.");
+    ```
+
+1. Save your code file, and then use Visual Studio Code to run your code.
+
+    You should see the following output:
+
+    ```output
+    Found 'e' in 'Hello, world!' at index: 1.
+    ```
+
+    Update the `message` string, adding different types of symbols like square `[]` brackets and curly braces `{}`. To search for multiple symbols simultaneously, use `.IndexOfAny()`. You search with `.IndexOfAny()` to return the index of the first symbol from the array `openSymbols` found in the `message` string.
 
 1. Update your code in the Visual Studio Code editor as follows:
 

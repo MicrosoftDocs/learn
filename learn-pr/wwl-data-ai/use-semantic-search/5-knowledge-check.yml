@@ -2,11 +2,13 @@
 uid: learn.use-semantic-search.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,3 +49,4 @@ quiz:
     - content: "A summary of the content from all documents."
       isCorrect: false
       explanation: "Semantic captions don't include content from all documents."
+

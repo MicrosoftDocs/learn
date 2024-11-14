@@ -2,6 +2,8 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health
 title: Monitoring for Azure VMs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitoring for Azure VMs
   description: Understand Azure Monitor Metrics and Logs, and explore the various Azure Monitor capabilities for monitoring a virtual machine (VM).
   ms.date: 09/26/2024

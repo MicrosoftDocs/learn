@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-network-security-monitoring.secure-networks-with-azure-firewall-manager
 title: Secure your networks with Azure Firewall Manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure your networks with Azure Firewall Manager
   description: "Secure your networks with Azure Firewall Manager"
   ms.date: 02/08/2024

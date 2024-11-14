@@ -2,6 +2,8 @@
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.data-biases
 title: Expose data biases
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Expose data biases
   description: "Expose data biases"
   ms.date: 08/30/2024

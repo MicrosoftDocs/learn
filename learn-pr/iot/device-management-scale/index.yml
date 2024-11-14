@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-approaches-to-device-management-at-scale
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine approaches to device management at scale using Azure IoT Hub
   description: "Examine the approaches to apply device management tasks to large numbers of IoT devices using Azure IoT Hub."
   ms.date: 10/01/2023
@@ -43,3 +45,4 @@ units:
 - learn.wwl.examine-approaches-to-device-management-at-scale.summary
 badge:
   uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
+

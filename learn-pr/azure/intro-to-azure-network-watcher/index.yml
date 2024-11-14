@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-network-watcher
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Network Watcher
   description: This module explains what Azure Network Watcher does, how it works, and when you should choose to use Network Watcher as a solution to meet your organization's needs.
@@ -38,3 +40,4 @@ units:
   - learn.azure.intro-to-azure-network-watcher.summary
 badge:
   uid: learn.azure.intro-to-azure-network-watcher.badge
+

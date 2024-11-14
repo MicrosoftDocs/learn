@@ -2,6 +2,8 @@
 uid: learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-read-query
 title: Exercise - Read and query items
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Read and query items
   ms.custom:
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/6-exercise-read-query.md)]
+

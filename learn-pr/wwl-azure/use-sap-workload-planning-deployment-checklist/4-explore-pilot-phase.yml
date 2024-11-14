@@ -2,6 +2,8 @@
 uid: learn.wwl.use-sap-workload-planning-deployment-checklist.explore-pilot-phase
 title: Explore the pilot phase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the pilot phase
   description: "Explore the pilot phase of deploying SAP workloads to Azure."
   ms.date: 08/01/2024

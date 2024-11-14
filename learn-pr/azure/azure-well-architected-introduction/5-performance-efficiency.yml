@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-introduction.5-performance-efficiency
 title: Performance efficiency
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Performance efficiency
   description: Performance efficiency
   ms.date: 04/17/2023
@@ -42,3 +44,4 @@ quiz:
     - content: "Replicating backups to another region"
       isCorrect: false
       explanation: "Replicating backups to another region isn't applicable to scaling of resources."
+

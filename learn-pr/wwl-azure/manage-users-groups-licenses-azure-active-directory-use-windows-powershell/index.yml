@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage users, groups, and licenses in Microsoft Entra ID by using Windows PowerShell
   description: "This module covers how to give access to the services in Microsoft 365, so that you can create user accounts and then assign licenses that provide access to the services."
   ms.date: 10/26/2022
@@ -55,3 +57,4 @@ units:
 - learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.summary
 badge:
   uid: learn.wwl.manage-users-groups-licenses-azure-ad-by-using-windows-powershell.badge
+

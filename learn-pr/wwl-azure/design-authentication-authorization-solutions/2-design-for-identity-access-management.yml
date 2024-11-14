@@ -2,6 +2,8 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-identity-access-management
 title: Design for identity and access management (IAM)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for identity and access management (IAM)
   description: "Design for identity and access management (IAM)"
   ms.date: 03/06/2024

@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-storage.describe-azure-stack-storage-drives
 title: Describe Azure Stack HCI storage drives 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Stack HCI storage drives 
   description: Understand Azure Stack HCI architecture and explore its main components, beginning with storage drives.
   ms.date: 08/20/2024

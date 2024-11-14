@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-synapse-studio.explore-monitor-hub
 title: Explore the Monitor hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the Monitor hub
   description: "Explore the Monitor hub"
   ms.date: 08/18/2022

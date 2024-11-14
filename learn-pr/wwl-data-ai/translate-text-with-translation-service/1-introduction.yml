@@ -2,6 +2,8 @@
 uid: learn.wwl.translate-text-with-translation-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 09/13/2024

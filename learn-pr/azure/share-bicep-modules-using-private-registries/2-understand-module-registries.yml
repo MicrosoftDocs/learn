@@ -2,6 +2,8 @@
 uid: learn.azure.share-bicep-modules-using-private-registries.understand-module-registries
 title: Understand module registries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand module registries
   description: Learn what a module registry is and how you can use them in your organization.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-module-registries.md)]
+

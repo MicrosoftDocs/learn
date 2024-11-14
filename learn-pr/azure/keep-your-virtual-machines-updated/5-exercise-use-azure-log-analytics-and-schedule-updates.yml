@@ -2,6 +2,8 @@
 uid: learn.keep-your-virtual-machines-updated.5-exercise-use-azure-log-analytics-and-schedule-updates
 title: Exercise - Use Azure log analytics and schedule updates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use Azure log analytics and schedule updates
   description: Exercise - Use Azure log analytics and schedule updates
   ms.date: 03/15/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-use-azure-log-analytics-and-schedule-updates.md)] 
+

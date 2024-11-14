@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.design-name-resolution-for-your-virtual-network
 title: Design name resolution for your virtual network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design name resolution for your virtual network
   description: "Design name resolution for your virtual network"
   ms.date: 04/22/2024

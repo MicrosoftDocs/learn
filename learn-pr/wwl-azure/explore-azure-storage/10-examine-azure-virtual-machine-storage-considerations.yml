@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-storage.examine-azure-virtual-machine-storage-considerations
 title: Examine Azure Virtual Machine storage considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Virtual Machine storage considerations
   description: "Explore multiple considerations recommended when planning your Azure Virtual Machine storage."
   ms.date: 08/13/2024

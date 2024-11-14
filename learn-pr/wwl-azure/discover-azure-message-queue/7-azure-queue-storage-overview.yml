@@ -2,6 +2,8 @@
 uid: learn.wwl.discover-azure-message-queue.explore-azure-queue-storage
 title: Explore Azure Queue Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Queue Storage
   description: "Explore Azure Queue Storage"
   ms.date: 07/18/2024

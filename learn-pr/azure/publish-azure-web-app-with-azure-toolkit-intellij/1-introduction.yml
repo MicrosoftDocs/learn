@@ -2,6 +2,8 @@
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business problem that we can solve by using a Java web app deployed in Azure App Service.
   ms.date: 03/18/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+
