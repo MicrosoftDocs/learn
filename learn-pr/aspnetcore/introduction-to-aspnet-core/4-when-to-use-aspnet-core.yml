@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aspnet-core.when-to-use-aspnet-core
+title: When to use ASP.NET Core
+metadata:
+  title: When to use ASP.NET Core
+  description: "Learn when to use ASP.NET Core for web app development."
+  ms.date: 11/01/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-when-to-use-aspnet-core.md)]
