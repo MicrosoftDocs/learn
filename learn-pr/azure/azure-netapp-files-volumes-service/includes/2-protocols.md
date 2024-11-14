@@ -11,7 +11,7 @@ Azure NetApp Files supports any NFS client that operates within the RFC standard
 ### NFSv3 versus NFSv4.x
 
 | Feature | NFSv3 | NFSv4.x |
-| - | - | - |
+| --- | ----- | ------ |
 | State of NFS connections | NFSv3 is stateless, meaning that the NFS server doesn't keep track of the states of connections (including locks). | NFSv4.x is a stateful protocol. The client and server keep track of the states of the NFS connections, including lock states. |
 | File locking | Locking is handled outside of the NFS protocol, using Network Lock Manager (NLM). | Locking is integrated into the NFS protocol and doesn't require ancillary locking protocols to keep track of NFS locks. |
 | Performance | Because NFSv3 is stateless, performance with NFSv3 can be substantially better in workloads with high-metadata operations such as OPEN, CLOSE, SETATTR, and GETATTR. | The statefulness of NFSv4.x has some drawbacks, such as potential disruptions during network outages or storage failovers, and performance overhead in high metadata workload types.|
