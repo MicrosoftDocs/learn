@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path
+  adobe-target: true
 title: 'Defend against cyberthreats with Microsoft Defender XDR'
 prerequisites: |
   - Experience using the Microsoft Defender portal
