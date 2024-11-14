@@ -38,7 +38,7 @@ val df = spark.read.format("csv").option("header", "true").load("Files/data/prod
 display(df.limit(10))
 ```
 
-The magic `%%spark` is used to specify Scala. Notice that the Scala implementation of the dataframe behaves similarly to the PySpark version.
+The magic `%%spark` is used to specify Spark within a Scala code cell. Notice that the Scala implementation of the dataframe behaves similarly to the PySpark version.
 
 Both of these code samples would produce output like this:
 
