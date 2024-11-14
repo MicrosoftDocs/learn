@@ -11,11 +11,11 @@ metadata:
   ms.contributors: dnb-01102020
   ms.service: site-reliability-engineering 
 title: Introduction to Site Reliability Engineering (SRE)
-summary: Organizations large and small have started to realize just how crucial system and application reliability is to their business. They have also learned the difficulty of maintaining that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
+summary: Organizations large and small have started to realize just how crucial system and application reliability is to their business. They have also learned the difficulty of maintaining that reliability, while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
 abstract: |
   In this module you will:
-  - Gain a basic understanding of Site Reliability Engineering (SRE)
-  - Learn how to get started with this valuable operations practice
+  - Gain a basic understanding of Site Reliability Engineering (SRE).
+  - Learn how to get started with this valuable operations practice.
 iconUrl: /training/achievements/intro-to-site-reliability-engineering-sre.svg
 levels:
 - beginner
