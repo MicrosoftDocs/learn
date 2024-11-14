@@ -6,7 +6,7 @@ metadata:
   description: This unit summarizes the key concepts covered in the module, including using Azure AI Studio, deploying models, and prompt engineering.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/11/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

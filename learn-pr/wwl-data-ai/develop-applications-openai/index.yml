@@ -5,7 +5,7 @@ metadata:
   description: Azure OpenAI Service enables engineers to build enterprise-grade generative AI solutions.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/11/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
@@ -19,8 +19,6 @@ abstract: |
     - Build natural language solutions with Azure OpenAI Service 
     - Apply prompt engineering with Azure OpenAI Service 
     - Build code-generation solutions with Azure OpenAI Service 
-    - Generate images with DALL-E models in Azure OpenAI Service 
-    - Use your own data with Azure OpenAI Service 
 
 prerequisites: |
   - Familiarity with Azure and the Azure portal.

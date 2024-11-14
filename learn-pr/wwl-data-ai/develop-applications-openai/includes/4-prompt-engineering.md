@@ -1,5 +1,3 @@
-## Understand prompt engineering
-
 The quality of the input prompts we send to an AI model, like those available in Azure OpenAI, directly influences the quality of what we get back. By carefully constructing the prompts we send to the model, the model can provide better and more interesting responses.
 
 ### What is prompt engineering

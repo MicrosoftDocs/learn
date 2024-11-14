@@ -1,5 +1,3 @@
-## Provide context to improve accuracy
-
 By providing context to the AI model, it allows the model to better understand what you are asking for or what it should know to provide the best answer. Context can be provided in several ways.
 
 ### Request output composition

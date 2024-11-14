@@ -6,7 +6,7 @@ metadata:
   description: This unit contains a hands-on exercise. Learners can use the exercise to try out Azure OpenAI Service's prompt engineering capabilities.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/11/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

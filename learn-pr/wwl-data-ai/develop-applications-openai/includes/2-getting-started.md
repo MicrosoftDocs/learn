@@ -1,5 +1,3 @@
-## Access Azure OpenAI
-
 The first step in building a generative AI solution with Azure OpenAI is to provision an Azure OpenAI resource in your Azure subscription. You can get started by creating a resource in the [Azure portal](https://portal.azure.com/?azure-portal=true) or with the Azure command line interface (CLI).
 
 ### Create an Azure OpenAI Service resource in the Azure portal
@@ -121,23 +119,19 @@ Prompts can be grouped into types of requests based on task.
 
 Several factors affect the quality of completions you'll get from a generative AI solution.
 
-- The way a prompt is engineered. Learn more about prompt engineering in the *Prompt engineering* unit.
+- The way a prompt is engineered. Learn more about prompt engineering in the *Prompt engineering* unit, later in this module.
 - The model parameters (covered below).
 - The data the model is trained on, which can be adapted through [model fine-tuning with customization](/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio?portal=true).
 
 You have more control over the completions returned by training a custom model than through prompt engineering and parameter adjustment.
 
-### Making calls
+### Making API calls
 
-You can start making calls to your deployed model via the REST API, Python, C#, or from the Studio. If your deployed model has a GPT-3.5 or GPT-4 model base, use the [Chat completions documentation](/azure/ai-services/openai/how-to/chatgpt?azure-portal=true), which has endpoints and variables required for these base models.
+You can start making calls to your deployed model via the REST API, Python, or C#. If your deployed model has a GPT-3.5 or GPT-4 model base, use the [Chat completions documentation](/azure/ai-services/openai/how-to/chatgpt?azure-portal=true), which has endpoints and variables required for these base models.
 
 ## Use the Azure Studio playgrounds
 
 Playgrounds are useful interfaces in Azure AI Studio that you can use to experiment with your deployed models without needing to develop your own client application. Azure AI Studio offers multiple playgrounds with different parameter tuning options.  
-
-### Completions playground
-
-The Completions playground allows you to make calls to your deployed models through a text-in, text-out interface and to adjust parameters. You need to select the deployment name of your model under **Deployments**. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts.
 
 ### Chat playground
 

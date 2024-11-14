@@ -1,5 +1,3 @@
-## Construct code from natural language
-
 One of the capabilities of Azure OpenAI models is to generate code from natural language prompts. Tasks can range from a simple one line command to a full application. The AI models can also edit and update provided code or previous responses to complete the requested task.
 
 The examples in this unit are using `gpt-35-turbo`.
