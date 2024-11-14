@@ -66,12 +66,12 @@ Using export policy rules, you can select "Root access: off" to squash root to a
 
 The order of export policy rules determines how they are applied. Consider the following scenario with two export policies:
 
-:::image type="content" source="../media/3-export-policy-example.png" alt-text="Screenshot of create volume interface with export policies." lightbox="../media/3-export-policy-example.png":::
+:::image type="content" source="../media/3-export-policy-example.png" alt-text="Screenshot showing how to move export policies." lightbox="../media/3-export-policy-example.png":::
 
-- The first rule in the index includes all clients in all subnets by way of the default policy rule using 0.0.0.0/0 as the Allowed clients entry. That rule allows “Read & Write” access to all clients for that Azure NetApp Files NFSv3 volume.
-- The second rule in the index explicitly lists NFS client 10.10.10.10. It's is configured to limit access to “Read only” with no root access (root is squashed).
+- The first rule in the index includes all clients in all subnets by way of the default policy rule using 0.0.0.0/0 as the allowed client's entry. That rule allows “Read & Write” access to all clients for that Azure NetApp Files NFSv3 volume.
+- The second rule in the index explicitly lists NFS client 10.10.10.10. It's configured to limit access to “Read only” with no root access (root is squashed).
 
-In this scenario, the client 10.10.10.10 receives access due to the first rule in the list. To fix this and set access to the desired level, the rules can be reordered to place the desired client access rule above any subnet/CIDR rules. You can reorder export policy rules in te Azure portal.
+In this scenario, the client 10.10.10.10 receives access due to the first rule in the list. To fix this and set access to the desired level, the rules can be reordered to place the desired client access rule above any subnet/CIDR rules. You can reorder export policy rules in the Azure portal.
 
 ## SMB shares
 
@@ -83,7 +83,7 @@ Access controls for SMB shares are limited in the Azure NetApp Files control pla
 
 Share-level permission ACLs are managed through a Microsoft Management Console rather than through Azure NetApp Files. These ACLs are found under **System Tools > Shared Folders > Shares.**
 
-:::image type="content" source="../media/3-shared-folders.png" alt-text="Screenshot ofshare folders interface." lightbox="../media/3-shared-folders.png":::
+:::image type="content" source="../media/3-shared-folders.png" alt-text="Screenshot of share folders interface." lightbox="../media/3-shared-folders.png":::
 
 To manage share permissions, right-click the name of the share you want to modify from the list then select Properties. You can add, remove, or modify the share ACLs.
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-files-volumes-service.introduction
+uid: learn.azure.azure-netapp-files-volumes-service.file-permissions
 title: NAS file permissions in Azure NetApp Files 
 metadata:
   adobe-target: true

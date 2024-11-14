@@ -45,7 +45,7 @@ Numeric values are applied to different segments of an access control: owner, gr
 
 The following image shows an example of how a mode bit access control might be constructed for use with an NFSv3 object.
 
-:::image type="content" source="../media/4-mode-bits.png" alt-text="Diagram illustrating how access controls work in Azure NetApp Files." lightbox="../media/4-mode-bits.png":::
+:::image type="content" source="../media/4-mode-bits.png" alt-text="Diagram explaining mode bit numerals." lightbox="../media/4-mode-bits.png":::
 
 ### Auxiliary/supplemental groups with NFS in Azure NetApp Files
 
@@ -68,7 +68,7 @@ An NFSv4.x ACL consists of individual Access Control Entries (ACEs), each of whi
 
 :::image type="content" source="../media/4-access-control-lists-diagram.png" alt-text="Diagram of an access control list." lightbox="../media/4-access-control-lists-diagram.png":::
 
-Each NFSv4.x ACL is created with the format of type:flags:principal:permissions. A:g:group1@contoso.com:rwatTnNcCy is an example of a valid ACL.
+Each NFSv4.x ACL is created with the format of `type:flags:principal:permissions`. A:g:group1@contoso.com:rwatTnNcCy is an example of a valid ACL.
 
 - **Type:** the type of ACL being defined. Valid choices include Access (A), Deny (D), Audit (U), Alarm (L). Azure NetApp Files supports Access, Deny and Audit ACL types, but Audit ACLs, while being able to be set, don't currently produce audit logs.
 - **Flag:** adds extra context for an ACL. There are three kinds of ACE flags: group, inheritance, and administrative. For more information on flags, see NFSv4.x ACE flags.
