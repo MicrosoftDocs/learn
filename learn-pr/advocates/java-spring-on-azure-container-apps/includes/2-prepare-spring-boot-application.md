@@ -39,5 +39,7 @@ git submodule update --init --recursive
 
 5.Once the application is up, you can access it locally via [http://localhost:8080](http://localhost:8080). You should see the Spring PetClinic interface.
 
+![Diagram of petclinic.](../media/petclinic.png)
+
 ## Database configuration
 By default, Petclinic utilizes an in-memory H2 database, which is automatically populated with data during startup. The H2 console is accessible at [http://localhost:8080/h2-console](http://localhost:8080/h2-console), allowing you to inspect the database content via the URL `jdbc:h2:mem:<uuid>`. The specific UUID is displayed in the console when the application starts.

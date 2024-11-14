@@ -7,7 +7,6 @@ To successfully complete this project, ensure you have the following prerequisit
 | Requirement     | Instructions                                                                                                                                       |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Azure account   | If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the Contributor or Owner permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal?tabs=current) for details. |
-| GitHub Account  | Get one for [free](https://github.com/).                                                                                                        |
 | git             | [Install git](https://git-scm.com/downloads).                                                                                              |
 | Azure CLI       | Install the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).                                                                                             |
 
@@ -28,7 +27,7 @@ az upgrade
 
 Next, install or update the Azure Container Apps extension for the CLI.
 
-If you receive errors about missing parameters when you run `az containerapp` commands in Azure CLI or cmdlets from the `Az.App` module in Azure PowerShell, be sure you have the latest version of the Azure Container Apps extension installed.
+If you receive errors about missing parameters when you run `az containerapp` commands in Azure CLI, be sure you have the latest version of the Azure Container Apps extension installed.
 
 ```bash
 az extension add --name containerapp --upgrade

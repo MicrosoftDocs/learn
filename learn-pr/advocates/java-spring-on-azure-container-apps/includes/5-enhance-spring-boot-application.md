@@ -1,6 +1,7 @@
 Now that you’ve deployed the Spring Pet Clinic application with PostgreSQL on Azure Container Apps, you can enhance its performance by enabling Azure’s built-in Java support features, known collectively as the **Java Stack.**. One of these features, Java metrics, can help to collect and monitor data include memory usage, garbage collection, thread count of your JVM.
 
 This chapter will guide you through **Javak Stack** to accelerate your Spring Boot application on Azure Container Apps. 
+
 ## Enable Java Stack in Azure Container Apps
 
 Open your portal and find your deployed Container App, click on the **manage** of Development stack, in the pop up window, select **Java**. This will turn on the **Java Stack** to accelerate your Java applications, click on "Apply" to confirm the change.
