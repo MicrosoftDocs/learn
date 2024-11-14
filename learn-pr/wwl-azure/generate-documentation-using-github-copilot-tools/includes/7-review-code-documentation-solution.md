@@ -13,7 +13,7 @@ To generate inline documentation for the properties and methods of the Device cl
 
 1. Select the code block containing the Device class properties and methods.
 
-1. Open the Chat view, and the enter the following prompt:
+1. Open the Chat view, and then enter the following prompt:
 
     ```output
     @workspace #selection generate inline documentation
