@@ -2,7 +2,7 @@ In this module, you have learned about SQL Database in Microsoft Fabric, a Softw
 
 The main takeaways from this module include understanding how to create a new SQL database in Fabric, query a SQL database using similar tools available for Azure SQL Database, and manage features like object-level, column-level, and row-level security. You also learned about the integration of AI in SQL Database in Fabric, with features like Natural Language to SQL, code completion, quick actions, and intelligent insights. The module also highlighted the role of Microsoft Copilot in enhancing SQL management and troubleshooting. Lastly, you learned about data management simplification through mirroring and data virtualization, and how to secure your data by creating a database role.
 
-### Additional reading:
+### Additional reading
 
 - [Microsoft Fabric Documentation](/azure/service-fabric?azure-portal=true)
 - [SQL database in Microsoft Fabric](/fabric/database/sql/overview?azure-portal=true)

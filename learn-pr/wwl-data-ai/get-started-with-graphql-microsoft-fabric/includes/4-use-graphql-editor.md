@@ -4,7 +4,7 @@ You can access the editor by navigating to the API for GraphQL item in Fabric. O
 
 The GraphQL API interface in Fabric provides a set of capabilities to facilitate your development process. It includes a schema explorer, a run panel, a query variables Panel, and a results panel.
 
-:::image type="content" source="../media/4-editor.png" alt-text="Screenshot of the query editor for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/4-editor.png" alt-text="Screenshot of the query editor for GraphQL in Microsoft Fabric." lightbox="../media/4-editor.png":::
 
 1. **Schema explorer:** It allows users to quickly visualize the available types and fields, as well as queries and mutations defined in the API.
 1. **Run panel:** It provides an interface to run the code and see the results in real-time. You can also test and debug your GraphQL operations.
@@ -93,7 +93,7 @@ This means you can integrate various types of data, whether they come from SQL d
 
 This flexibility allows developers to create more comprehensive and powerful applications by using diverse data sets without the need for complex data integration processes.
 
-:::image type="content" source="../media/4-multiple-data-source.png" alt-text="Screenshot showing how to run a multi-data source query for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/4-multiple-data-source.png" alt-text="Screenshot showing how to run a multi-data source query for GraphQL in Microsoft Fabric." lightbox="../media/4-multiple-data-source.png":::
 
 In this example, data from two different sources is exposed. The results panel displays information from both tables.
 

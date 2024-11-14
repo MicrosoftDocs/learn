@@ -10,7 +10,7 @@ To create a new SQL database in Fabric, you need a new or existing workspace. St
 
 Once the database is provisioned, you see the **Explorer** pane on the **Home** page displaying the database objects.
 
-:::image type="content" source="../media/2-new-database.png" alt-text="Screenshot showing the Explorer page of a new created SQL database.":::
+:::image type="content" source="../media/2-new-database.png" alt-text="Screenshot showing the Explorer page of a newly created SQL database." lightbox="../media/2-new-database.png":::
 
 To help you get started, there are three useful tiles under **Build your database**. The **Sample data** option allows you to import the *AdventureWorksLT* sample data into your empty database. The **T-SQL** option provides a web-editor for writing T-SQL to create database objects like schemas, tables, and views. The **Connection strings** option displays the SQL database connection string needed for connecting with SQL Server Management Studio or other external tools.
 
@@ -18,7 +18,7 @@ To help you get started, there are three useful tiles under **Build your databas
 
 You can query a SQL database in Fabric using similar tools available for Azure SQL Database, with the added convenience of a web-based editor in the Fabric portal. This provides an end-to-end, integrated product that simplifies analytics and fosters collaboration.
 
-:::image type="content" source="../media/2-query.png" alt-text="Screenshot showing how to query a SQL database in Microsoft Fabric.":::
+:::image type="content" source="../media/2-query.png" alt-text="Screenshot showing how to query a SQL database in Microsoft Fabric." lightbox="../media/2-query.png":::
 
 The **Open in** option allows you to launch Visual Studio Code and SQL Server Management Studio (SSMS) with the connection properties prefilled, making it easier to connect and start working immediately.
 
@@ -46,7 +46,7 @@ You can access the performance dashboard by navigating through artifacts in the 
 
 Alternatively, you can access the home toolbar in the **Query Editor** window, and select **Performance summary**.
 
-:::image type="content" source="../media/2-performance.png" alt-text="Screenshot showing the performance dashboard option in a query editor in Microsoft Fabric.":::
+:::image type="content" source="../media/2-performance.png" alt-text="Screenshot showing the performance dashboard option in a query editor in Microsoft Fabric." lightbox="../media/2-performance.png":::
 
 The performance dashboard helps users understand their database performance and receive alerts for any issues. It's designed to assist application developers in detecting and resolving performance bottlenecks early, ensuring an intuitive and efficient user experience.
 

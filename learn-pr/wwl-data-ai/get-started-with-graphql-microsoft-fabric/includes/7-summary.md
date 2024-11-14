@@ -2,7 +2,7 @@ In this module, you learned about the GraphQL API in Microsoft Fabric and its ca
 
 The main takeaways from this module include understanding how to use the GraphQL editor in Microsoft Fabric to build and test queries and mutations. The module emphasized the ability of GraphQL in Fabric to connect to multiple data sources, integrating diverse data sets into a unified API. 
 
-### Additional reading:
+### Additional reading
 
 - [Microsoft Fabric Documentation](/azure/service-fabric?azure-portal=true)
 - [What is Microsoft Fabric API for GraphQL?](/fabric/data-engineering/api-graphql-overview?azure-portal=true)

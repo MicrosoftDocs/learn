@@ -4,13 +4,13 @@ Organizations often face challenges in managing and analyzing their data due to 
 
 One of the key features of SQL Database in Microsoft Fabric is its ability to mirror databases from Azure SQL Database directly into Fabric's OneLake. 
 
-:::image type="content" source="../media/5-mirroring.png" alt-text="Diagram of Fabric Database Mirroring for Azure SQL Database.":::
+:::image type="content" source="../media/5-mirroring.png" alt-text="Diagram of Fabric Database Mirroring for Azure SQL Database." lightbox="../media/5-mirroring.png":::
 
 This mirroring process ensures that data is continuously replicated in near real-time, eliminating the need for complex Extract, Transform, Load (ETL) processes. By doing so, it reduces the total cost of ownership and accelerates the time-to-insight, allowing businesses to unlock business intelligence, artificial intelligence, data engineering, data science, and data sharing scenarios.
 
 After you initiate a mirroring process, you can monitor the replication status by selecting the **Monitor replication** option from the **Replication** tab. If there are no updates in the source tables, the engine will back off and resume regular polling after detecting updated data.
 
-:::image type="content" source="../media/5-monitor.png" alt-text="Screenshot of how to monitor a mirroring process for SQL database in Fabric.":::
+:::image type="content" source="../media/5-monitor.png" alt-text="Screenshot of how to monitor a mirroring process for SQL database in Fabric." lightbox="../media/5-monitor.png":::
 
 To learn more about how to configure mirrored databases, see [Tutorial: Configure Microsoft Fabric mirrored databases from Azure SQL Database](/fabric/database/mirrored-database/azure-sql-database-tutorial?azure-portal=true).
 
@@ -47,7 +47,7 @@ To see a list of public datasets, see [What are Azure Open Datasets and how can 
 
 In this example, we use `OPENROWSET` to query Parquet files in OneLake. You can find the ABFS path by navigating to the file location in the Fabric portal, selecting the three dots next to the file, and selecting **Properties**.
 
-:::image type="content" source="../media/5-abfs-path.png" alt-text="Screenshot showing how to find the ABFS path in a lakehouse.":::
+:::image type="content" source="../media/5-abfs-path.png" alt-text="Screenshot showing how to find the ABFS path in a lakehouse." lightbox="../media/5-abfs-path.png":::
 
 ```sql
 SELECT * FROM OPENROWSET (

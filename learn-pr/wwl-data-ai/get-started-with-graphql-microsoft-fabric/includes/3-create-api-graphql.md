@@ -2,11 +2,11 @@ To create a fully functional API to access your data in Fabric, start from the F
 
 Alternatively, you can select **New > API for GraphQL** from any workspace in **Data Engineering**. Enter a name and select **Create** to have a fully functional API to access your data in Fabric.
 
-:::image type="content" source="../media/3-api-page.png" alt-text="Screenshot of the API for GraphQL page in Microsoft Fabric.":::
+:::image type="content" source="../media/3-api-page.png" alt-text="Screenshot of the API for GraphQL page in Microsoft Fabric." lightbox="../media/3-api-page.png":::
 
 Next, connect to a data source by selecting **Select data source**. In the **Choose connectivity option** dialog, choose between single sign-on (SSO) or saved credentials. Then, select the data you want to connect.
 
-:::image type="content" source="../media/3-data-source.png" alt-text="Screenshot of the data source selection page for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/3-data-source.png" alt-text="Screenshot of the data source selection page for GraphQL in Microsoft Fabric." lightbox="../media/3-data-source.png":::
 
 The data source page shows all the items in your workspace available to connect. Then, you need to select which objects you want expose to the API, then select **Load**.
 
@@ -18,7 +18,7 @@ You can enable or disable specific queries and mutations within the GraphQL sche
 
 This option is useful for temporarily disabling functionalities for maintenance, security, or performance reasons, or for controlling API operations based on user roles or other criteria.
 
-:::image type="content" source="../media/3-disable-query.png" alt-text="Screenshot of the property to disable a query for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/3-disable-query.png" alt-text="Screenshot of the property to disable a query for GraphQL in Microsoft Fabric." lightbox="../media/3-disable-query.png":::
 
 In this example, the `ProductModel` table from `AdventureWorksLT` is the only table exposed. The engine automatically generates the queries and mutations needed for insert, update, and delete operations.
 
@@ -37,4 +37,4 @@ GraphQL offers support for one-to-one (1:1), one-to-many (1:N), and many-to-many
 
 These relationships enable developers to create rich, interconnected data models that can be queried efficiently.
 
-:::image type="content" source="../media/3-relationship.png" alt-text="Screenshot of the new relationship dialog for GraphQL in Microsoft Fabric.":::
+:::image type="content" source="../media/3-relationship.png" alt-text="Screenshot of the new relationship dialog for GraphQL in Microsoft Fabric." lightbox="../media/3-relationship.png":::

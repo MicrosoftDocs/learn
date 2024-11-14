@@ -2,7 +2,7 @@ GraphQL is an open source query language designed for APIs and a server-side run
 
 Microsoft Fabric API for GraphQL is a managed service that enables you to create a GraphQL API in seconds to access data from your data sources such as warehouses, datamarts, and SQL Databases, by providing a unified API layer for querying and mutating data from these supported data sources.
 
-:::image type="content" source="../media/1-archtecture.png" alt-text="Diagram showing how GraphQL works in Microsoft Fabric.":::
+:::image type="content" source="../media/1-architecture.png" alt-text="Diagram showing how GraphQL works in Microsoft Fabric." lightbox="../media/1-architecture.png":::
 
 The primary purpose of GraphSQL is to provide a more efficient and flexible way to query data compared to traditional SQL databases. It allows clients to specify exactly what data they need from the server and receive that data in a predictable way. This reduces the amount of data transferred over the network and minimizes the number of requests needed to fetch related data.
 

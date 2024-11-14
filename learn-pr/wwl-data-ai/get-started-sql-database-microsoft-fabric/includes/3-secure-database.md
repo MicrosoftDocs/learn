@@ -25,4 +25,4 @@ It includes object-level security for database objects, column-level security fo
 
 You can manage database-level roles from Fabric portal by selecting **Security** and then choosing **Manage SQL security**.
 
-:::image type="content" source="../media/3-manage-sql-security.png" alt-text="Screenshot from the Fabric portal of the button to open the SQL security options.":::
+:::image type="content" source="../media/3-manage-sql-security.png" alt-text="Screenshot from the Fabric portal of the button to open the SQL security options." lightbox="../media/3-manage-sql-security.png":::
