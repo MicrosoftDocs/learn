@@ -25,15 +25,15 @@ quiz:
       explanation: Incorrect. Oracle Direct NFS (dNFS) makes it possible to drive higher performance than the operating system's own NFS driver.
     - content: Automatic QoS
       isCorrect: false
-      explanation: Incorrect. An auto QoS capacity pool, allows the throughput to be assigned automatically to the volumes in the pool, proportional to the size quota assigned to the volumes. 
+      explanation: Incorrect. An auto QoS capacity pool allows the throughput to be assigned automatically to the volumes in the pool, proportional to the size quota assigned to the volumes. 
     - content: Cool access
       isCorrect: false 
       explanation: Incorrect. Cool access enables tiering of infrequently access data, which can reduce storage costs. It does not affect time-to-market. 
-  - content: Which feature of Azure NetApp Files helps to protect a volume from data loss or corruption and allows administrators have many chances to undo what has been done?
+  - content: Which feature of Azure NetApp Files helps to protect a volume from data loss or corruption and allows administrators multiple opportunities to undo actions?
     choices: 
     - content: Azure NetApp Files data encryption
       isCorrect: false 
-      explanation: Incorrect. Data encryption secure data at rest and also when it's in-transit between endpoints. 
+      explanation: Incorrect. Data encryption secures data at rest and also when it's in-transit between endpoints. 
     - content: Azure NetApp Files snapshots
       isCorrect: true 
       explanation: Correct. With up to 255 (rotational) snapshots in place to protect a volume from data loss or corruption, administrators have many chances to undo what has been done.
