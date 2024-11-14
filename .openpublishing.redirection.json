@@ -33665,21 +33665,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/4-exercise-digital-estate-assessment.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan",
       "redirect_document_id": false
