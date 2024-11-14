@@ -8,7 +8,7 @@ You can use `let` statements in different kinds of situations. On the simplest l
 
 Recall that previous queries filtered on locations or minimum damage. Let's define these boundary values using a `let` statement at the beginning of the query.
 
-The following query uses two `let` statements to define scalar values that'll later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
+The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first defined value is a number and the second is a string. The `let` statements end with a semicolon.
 
 Notice the commented-out portions of the query that begin with double forward slashes (`//`). Double forward slashes indicate a beginning of a comment until the end of the line. These are comments that are ignored when running queries.
 
