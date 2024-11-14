@@ -131,13 +131,13 @@ Azure VMware Solution private clouds use vSphere role-based access control for a
 
 In Azure VMware Solution, vCenter Server has a built-in local user called *cloudadmin* that's assigned to the **cloudAdmin** role. The cloudAdmin role has vCenter Server permissions that differ from the administrator permissions in other VMware cloud solutions:
 
-- The local cloudadmin user can link an identity source so that Active Directory administrators can grant permission to users of Azure VMware Solution.
+- The local CloudAdmin user doesn't have the permission to add an identity source, like an on-premises Lightweight Directory Access Protocol (LDAP) or Secure LDAP (LDAPS) server to vCenter Server. It is possible to use Run commands to add an identity source and assign the CloudAdmin role to users and groups.
 
-- The administrator in an Azure VMware Solution deployment doesn't have access to the administrator user account. The admin can, however, assign Active Directory users and groups to the cloudAdmin role on vCenter.
+- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. The administrator can assign Active Directory users and groups to the CloudAdmin role on vCenter Server.
 
-- The private-cloud user doesn't have access to, and can't configure, specific management components that Microsoft supports and manages. Examples of these components are clusters, hosts, datastores, and distributed virtual switches.
+- The private cloud user doesn't have access to, and can't configure, specific management components that Microsoft supports and manages. Examples of these components are clusters, hosts, datastores, and distributed virtual switches.
 
-Azure VMware Solution provides security for vSAN storage datastores by using data-at-rest encryption and turning it on by default. The encryption is based on Key Management Service (KMS) and supports vCenter operations for key management. Keys are stored encrypted and wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The following diagram illustrates the relationship of the encryption keys to Azure VMware Solution.
+Azure VMware Solution provides security for vSAN storage datastores by using data-at-rest encryption and turning it on by default. The encryption is based on Key Management Service (KMS) and supports vCenter Server operations for key management. Keys are stored encrypted and wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The following diagram illustrates the relationship of the encryption keys to Azure VMware Solution.
 
 :::image type="icon" source="../media/3-security-overview.png" border="false" alt-text="Diagram that shows the flow of encryption keys in Azure VMware Solution.":::
 
@@ -147,7 +147,7 @@ The following table outlines the steps that an organization takes to get started
 
 |Milestone |Steps  |
 |---------|---------|
-|Plan   |  Plan the deployment of Azure VMware Solution: <br> - Assess <br>- Request a quota <br>- Identify the host <br>- Determine sizing and connectivity      |
+|Plan   |  Plan the deployment of Azure VMware Solution: <br> - Assess workloads <br> - Determine sizing <br> - Identify the host <br> - Request a quote <br> - Determine networking and connectivity      |
 |Deploy     | Deploy and configure Azure VMware Solution: <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>    |
-|Connect to on-premises     |  - Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit <br>- Peer the private cloud to on-premises  <br> - Verify on-premises network connectivity    |
-|Deploy and configure VMware HCX     |  Deploy and configure VMware HCX: <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh) <br>- Complete setup by checking the appliance status and validating that migration is possible     |
+|Connect to on-premises     |  Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit: <br>- Peer the private cloud to on-premises  <br> - Verify on-premises network connectivity <br> Other connectivity options are also available.    |
+|Deploy and configure VMware HCX     |  Deploy and configure VMware HCX: <br>- Enable the HCX service add-on <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh) <br>- Complete setup by checking the appliance status and validating that migration is possible     |
