@@ -8,8 +8,8 @@ You also gained some experience running basic queries in various services, inclu
 
 ## References
 
-* [KQL overview](/azure/data-explorer/kusto/query/)
+* [Kusto Query Language (KQL) overview](/kusto/query/)
 * [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview)
-* [KQL in Microsoft Sentinel](/azure/sentinel/kusto-overview)
+* [Kusto Query Language in Microsoft Sentinel](/azure/sentinel/kusto-overview)
 * [Understanding the Azure Resource Graph query language](/azure/governance/resource-graph/concepts/query-language)
-* [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview)
+* [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/defender-xdr/advanced-hunting-overview)

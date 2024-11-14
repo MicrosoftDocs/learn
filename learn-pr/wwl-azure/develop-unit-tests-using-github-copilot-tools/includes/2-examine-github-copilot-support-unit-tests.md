@@ -50,7 +50,7 @@ The Command Palette in Visual Studio Code provides the easiest way to enable a t
 
 - Press the **Ctrl** + **Shift** + **P** keys (Windows/Linux) or **Cmd** + **Shift** + **P** (macOS).
 - Open the **View** menu, and then select **Command Palette**.
-- Open the Solution Explorer view, right-click the project folder, and then select **New Project**. This option opens the Command Palette with the **.NET:New Project...** command already selected.
+- Open the Solution Explorer view, right-click the solution folder, and then select **New Project**. This option opens the Command Palette with the **.NET:New Project...** command already selected.
 
 The following sections describe how to enable a test framework for your C# project using the Command Palette.
 
