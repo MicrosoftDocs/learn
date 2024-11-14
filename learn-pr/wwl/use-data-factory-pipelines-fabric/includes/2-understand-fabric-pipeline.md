@@ -12,7 +12,7 @@ Activities are the executable tasks in a pipeline. You can define a flow of acti
 
 There are two broad categories of activity in a pipeline.
 
-- **Data transformation activities** - activities that encapsulate data transfer operations, including simple **Copy Data** activities that extract data from a source and load it to a destination, and more complex **Data Flow** activities that encapsulate dataflows (Gen2) that apply transformations to the data as it is transferred. Other data transformation activities include **Notebook** activities to run a Spark notebook, **Stored procedure** activities to run SQL code, **Delete data** activities to delete existing data, and others.
+- **Data transformation activities** - activities that encapsulate data transfer operations, including simple **Copy Data** activities that extract data from a source and load it to a destination, and more complex **Data Flow** activities that encapsulate dataflows (Gen2) that apply transformations to the data as it is transferred. Other data transformation activities include **Notebook** activities to run a Spark notebook, **Stored procedure** activities to run SQL code, **Delete data** activities to delete existing data, and others. In OneLake, you can configure the destination to a lakehouse, warehouse, SQL database, or other options.
 
 - **Control flow activities** - activities that you can use to implement loops, conditional branching, or manage variable and parameter values. The wide range of control flow activities enables you to implement complex pipeline logic to orchestrate data ingestion and transformation flow.
 
