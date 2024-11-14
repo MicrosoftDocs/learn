@@ -1,4 +1,4 @@
-Before we explore some of the practices associated with SRE, it would be good to place some of the ideas we just learned in the previous unit into context. In this short unit, we learn some of the history behind SRE and how it relates to other operations practices you may be familiar with. This knowledge sets us up for greater success later because those practices make more sense in context. Also, when your friends ask, “How is SRE different from ...”, you have a ready answer.
+Before we explore some of the practices associated with SRE, it would be good to place some of the ideas we just learned in the previous unit into context. In this short unit, we learn some of the history behind SRE and how it relates to other operations practices you may be familiar with. This knowledge sets us up for greater success later because those practices make more sense in context. Also, when your friends ask, "How is SRE different from ...", you have a ready answer.
 
 ## History
 
@@ -10,7 +10,7 @@ As people from Google left the company and people in the company talked more abo
 
 The broader industry faced the same challenges around scaling, development velocity vs. operational stability, and other software delivery issues that spawned the site reliability engineering movement. Parallel efforts to address them outside of Google and a few larger companies at that time yielded DevOps.
 
-For lots of good information about DevOps, see the [DevOps resource center](/azure/devops/learn/).
+For lots of good information about DevOps, see the [DevOps resource center](/devops/).
 
 > [!NOTE]
 > It is important to note that DevOps and SRE are two different parallel attempts to address the same challenges. SRE is not the next evolutionary step after DevOps. SRE was not created to be the future of DevOps.
@@ -18,7 +18,7 @@ For lots of good information about DevOps, see the [DevOps resource center](/azu
 How SRE and DevOps differ is a subject still under considerable discussion in the field. There are some broadly agreed upon differences, including:
 
 - SRE is an engineering discipline that focuses on reliability. DevOps is a cultural movement that emerged from the urge to break down the silos typically associated with separate Development and Operations organizations.
-- SRE can be the name of a role as in "I’m a site reliability engineer", where DevOps can't. No one, strictly speaking, is a "DevOps" for a living.
+- SRE can be the name of a role as in "I’m a site reliability engineer," where DevOps can't. No one, strictly speaking, is a "DevOps" for a living.
 - SRE tends to be more prescriptive, but DevOps is intentionally not so. Nearly universal adoption of continuous integration/continuous delivery and Agile principles are the closest it comes in this regard.
 
 The two operations practices, DevOps and SRE, share a mutual love of monitoring/observability and automation, perhaps for different reasons. This confluence is one reason why it can often be easier to import SRE practices and principles into an organization with an existing DevOps practice. That process has to be done with care and intent. It also can and should be implemented incrementally. One doesn't have to make a sudden switch.

@@ -17,7 +17,7 @@ Completing these actions doesn't make the service better in any long-term, persi
 
 SREs hate toil. They work to eliminate it whenever possible and appropriate. This objective is one of the places automation comes into play in SRE. If these requests can be handled automatically, that frees up the team to work on more rewarding and impactful things than draining the request queue.
 
-The use of the word “appropriate” in relation to toil is similar to its use around reliability. There are situations where toil elimination work is of lower priority than other work. But on the whole, stripping toil from a service is a key focus for an SRE.
+The use of the word "appropriate" in relation to toil is similar to its use around reliability. There are situations where toil elimination work is of lower priority than other work. But on the whole, stripping toil from a service is a key focus for an SRE.
 
 ## Project work vs. reactive ops work
 
