@@ -308,6 +308,14 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
+- id: vscode-shell
+  title: IDE or shell
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: shell
+      title: .NET CLI
 - id: dev-env-spring-jbosseap
   title: Java framework
   prompt: Choose your Java framework
