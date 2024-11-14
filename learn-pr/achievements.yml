@@ -4127,3 +4127,8 @@ achievements:
   title: Configure network routing and endpoints
   summary: Learn how to configure network routes, including endpoints and private links.
   iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.cpp-write-your-first-program.badge
+  type: badge
+  title: Write your first program in C++
+  summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+  iconUrl: /training/achievements/generic-badge.svg
