@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-integration-with-the-log-analytics-agent
 title: Exercise - Create a data collection rule and install the Azure Monitor Agent
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a data collection rule and install the Azure Monitor Agent
   description: "Exercise - Create a data collection rule and install the Azure Monitor Agent"
-  ms.date: 10/17/2024
+  ms.date: 11/14/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/7-configure-integration-with-the-log-analytics-agent.md)]
+  [!include[](includes/4-configure-integration-with-the-log-analytics-agent.md)]
