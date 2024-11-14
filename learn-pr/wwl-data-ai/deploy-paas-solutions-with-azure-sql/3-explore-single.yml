@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.explore-single
 title: Explore single SQL database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore single SQL database
   description: "Explore single SQL database"
   ms.date: 05/27/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-single.md)]
+

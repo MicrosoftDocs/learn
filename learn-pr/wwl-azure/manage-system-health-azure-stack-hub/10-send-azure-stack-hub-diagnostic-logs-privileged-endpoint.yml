@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-system-health-azure-stack-hub.send-diagnostic-logs-by-using-privileged-endpoint
 title: Send Azure Stack Hub diagnostic logs by using the privileged endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Send Azure Stack Hub diagnostic logs by using the privileged endpoint
   description: "Send Azure Stack Hub diagnostic logs by using the privileged endpoint"
   ms.date: 08/10/2022

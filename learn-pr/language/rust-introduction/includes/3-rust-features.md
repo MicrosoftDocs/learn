@@ -63,4 +63,4 @@ The Rust language has many strengths to consider when choosing the best language
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.

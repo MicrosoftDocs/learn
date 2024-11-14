@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.0-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/07/2023

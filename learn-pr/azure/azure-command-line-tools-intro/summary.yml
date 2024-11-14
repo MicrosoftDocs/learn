@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.published: 02/27/2023
@@ -12,3 +14,4 @@ title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/summary.md)]
+

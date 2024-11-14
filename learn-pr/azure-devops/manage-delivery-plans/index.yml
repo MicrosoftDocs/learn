@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-delivery-plans
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Agile software delivery plans across teams
   description: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
-  ms.date: 10/06/2023
+  ms.date: 10/18/2024
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
@@ -14,9 +16,9 @@ title: Manage Agile software delivery plans across teams
 summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe how _delivery plans_ allow multiple teams to plan, schedule, and coordinate their work
-  - Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency
-  - Review dependencies between work items shown in a delivery plan 
+  - Describe how _delivery plans_ allow multiple teams to plan, schedule, and coordinate their work.
+  - Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
+  - Review dependencies between work items shown in a delivery plan.
 prerequisites: An Azure DevOps organization
 iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
 ratingEnabled: true
@@ -44,3 +46,4 @@ units:
 - learn.azdo.manage-delivery-plans.8-summary
 badge:
   uid: learn.azdo.manage-delivery-plans.badge
+

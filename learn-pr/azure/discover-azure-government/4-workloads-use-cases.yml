@@ -2,6 +2,8 @@
 uid: learn.azure.discover-azure-government.4-workloads-use-cases
 title: Utilize the scale and economic benefits of Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Utilize the scale and economic benefits of Azure
   description: Review of several scenarios in which Microsoft Azure helps public sector agencies comply with different data protection requirements.
   ms.date: 07/19/2024

@@ -2,6 +2,8 @@
 uid: learn.azure.cna-orchestrate-containers.3-exercise-create-aks-instance
 title: Exercise - Create an AKS cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an AKS cluster
   description: A high-level explanation of the parts of cloud-native apps.
   ms.date: 12/28/2023

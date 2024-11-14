@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.describe-spark-structured-streaming
 title: Describe Spark structured streaming
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Spark structured streaming
   description: "Describe Spark structured streaming"
   ms.date: 04/07/2024

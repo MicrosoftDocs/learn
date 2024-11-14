@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.host-domain-azure-dns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Host your domain on Azure DNS
   description: Learn how to host the Domain Name System (DNS) records for your domains on Azure infrastructure by using Azure DNS.
   manager: kumud
@@ -37,3 +39,4 @@ units:
 - learn.azure.host-domain-azure-dns.summary
 badge:
   uid: learn.azure.host-domain-azure-dns.badge
+

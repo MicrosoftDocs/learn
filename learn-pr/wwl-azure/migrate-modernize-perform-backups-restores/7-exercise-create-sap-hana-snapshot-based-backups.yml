@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-perform-backups-restores.exercise-create-sap-hana-snapshot-based-backups
 title: Create SAP HANA snapshot-based backups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create SAP HANA snapshot-based backups
   description: "Create SAP HANA snapshot-based backups"
   ms.date: 01/09/2024

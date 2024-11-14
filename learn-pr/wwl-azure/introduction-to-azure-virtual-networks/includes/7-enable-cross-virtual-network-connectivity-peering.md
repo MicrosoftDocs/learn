@@ -72,4 +72,4 @@ The following diagram shows a scenario in which hub VNet hosts a VPN gateway tha
 
 :::image type="content" source="../media/service-chaining-be9346d4.png" alt-text="Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet. Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.":::
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions below. 

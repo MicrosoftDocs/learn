@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.query-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Query the Azure Cosmos DB for NoSQL
   description: "Author queries for Azure Cosmos DB for NoSQL using the SQL query language."
   ms.date: 11/04/2022

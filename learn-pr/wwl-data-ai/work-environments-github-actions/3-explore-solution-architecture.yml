@@ -2,6 +2,8 @@
 uid: learn.wwl.work-environments-github-actions.explore-solution-architecture
 title: Explore the solution architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the solution architecture
   description: "Explore the solution architecture"
   ms.date: 07/10/2024

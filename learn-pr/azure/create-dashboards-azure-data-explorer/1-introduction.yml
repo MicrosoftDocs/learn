@@ -2,6 +2,8 @@
 uid: learn.create-dashboards-azure-data-explorer.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Introduction to how to create dashboards in the Azure Data Explorer web UI."

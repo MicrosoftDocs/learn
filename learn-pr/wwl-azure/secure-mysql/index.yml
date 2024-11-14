@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-mysql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure MySQL
   description: "Learn about Azure Database for MySQL security, encryption in Azure Database for MySQL, and how to configure Microsoft Entra authentication."
   ms.date: 11/08/2022
@@ -39,3 +41,4 @@ units:
 - learn.wwl.secure-mysql.summary
 badge:
   uid: learn.wwl.secure-mysql.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning.run-pipeline-job
 title: Run a pipeline job
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run a pipeline job
   description: Run a pipeline job
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/4-run-pipeline-job.md)]
+

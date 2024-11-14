@@ -2,6 +2,8 @@
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-dependencies
 title: Manage dependencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage dependencies
   description: "Manage dependencies"
   ms.date: 05/22/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-azure-storage-services.accounts
 title: Describe Azure storage accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure storage accounts
   description: "Describe Azure storage accounts"
   ms.date: 09/19/2024

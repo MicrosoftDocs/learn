@@ -2,6 +2,8 @@
 uid: learn.introduction-to-aks-edge-essentials.when-to-use-aks-edge-essentials
 title: When to use AKS Edge Essentials
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use AKS Edge Essentials
   description: This content is a part of Introduction to Azure Kubernetes Service (AKS) Edge Essentials.
   ms.date: 11/3/2023

@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-blob-storage-costs.5-manage-tiered-storage-in-app-code
 title: Manage tiered storage in app code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage tiered storage in app code
   description: Manage tiered storage in app code
   ms.date: 11/02/2023
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manage-tiered-storage-in-app-code.md)]
+

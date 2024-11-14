@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-database-for-mysql.5-knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -10,16 +12,16 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
   - content: "What is required to manage high availability for MySQL on Azure VMs?"
     choices:
-    - content: "Azure Portal interface"
+    - content: "Azure portal interface"
       isCorrect: false
-      explanation: "Incorrect. While the Azure Portal is used for management, setting up high availability specifically requires more than just interface manipulation."
+      explanation: "Incorrect. While the Azure portal is used for management, setting up high availability specifically requires more than just interface manipulation."
     - content: "Manual configuration of replication and failover"
       isCorrect: true
       explanation: "Correct. High availability for MySQL on Azure VMs requires manual setup of replication and failover mechanisms."
@@ -71,3 +73,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Automatic backups are a feature of Azure Database for MySQL."
       
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/21/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.improve-write-read-performance-of-hbase-clusters
 title: Improve the write and read performance of HBase clusters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve the write and read performance of HBase clusters
   description: "Improve the write and read performance of HBase clusters"
   ms.date: 04/09/2024

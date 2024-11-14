@@ -2,6 +2,8 @@
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

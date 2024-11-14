@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
 title: Explore shared goals and define timelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore shared goals and define timelines
   description: "Explore shared goals and define timelines"
   ms.date: 05/29/2024

@@ -2,9 +2,11 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to the regression module.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit

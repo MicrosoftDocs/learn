@@ -2,6 +2,8 @@
 uid: learn.containerize-deploy-java-app-aks.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Summary
   title: Summary
   description: Summary
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+

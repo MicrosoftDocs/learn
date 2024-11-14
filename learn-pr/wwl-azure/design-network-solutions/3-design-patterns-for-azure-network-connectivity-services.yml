@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.design-patterns-for-azure-network-connectivity-services
 title: Design patterns for Azure network connectivity services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design patterns for Azure network connectivity services
   description: "Design patterns for Azure network connectivity services"
   ms.date: 10/09/2023

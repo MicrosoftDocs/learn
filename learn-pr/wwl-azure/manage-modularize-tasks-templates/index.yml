@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage and modularize tasks and templates
   description: "Manage and modularize tasks and templates"
   ms.date: 05/21/2024

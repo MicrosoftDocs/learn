@@ -2,6 +2,8 @@
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Get basic information about Redis and Azure Cache for Redis, and see the learning objectives and prerequisites for this module.
   author: judubois
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

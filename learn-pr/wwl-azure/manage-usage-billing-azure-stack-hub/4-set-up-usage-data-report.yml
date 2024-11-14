@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.set-up-usage-data-reporting
 title: Set up usage data reporting
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up usage data reporting
   description: "Set up usage data reporting"
   ms.date: 08/09/2022

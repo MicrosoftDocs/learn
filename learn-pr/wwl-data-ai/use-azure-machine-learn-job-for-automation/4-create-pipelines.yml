@@ -2,6 +2,8 @@
 uid: learn.wwl.use-azure-machine-learn-job-for-automation.create-pipelines
 title: Create Azure Machine Learning jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create Azure Machine Learning jobs
   description: Create Azure Machine Learning jobs
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-create-pipelines.md)]
+

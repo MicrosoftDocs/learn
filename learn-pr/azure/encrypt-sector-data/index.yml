@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.encrypt-sector-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Encrypt public sector data in Azure
   description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
   manager: mkluck
@@ -47,3 +49,4 @@ units:
 - learn.azure.encrypt-sector-data.7-summary
 badge: 
   uid: learn.azure.encrypt-sector-data.badge
+

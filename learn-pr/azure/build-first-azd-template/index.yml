@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-azure-developer-cli-template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Build your first Azure Developer CLI template
   description: Learn how to build your own Azure Developer CLI templates
@@ -41,3 +43,4 @@ units:
 - learn.azure.build-first-azure-developer-cli-template.summary
 badge:
   uid: learn.azure.build-first-azure-developer-cli-template.badge
+

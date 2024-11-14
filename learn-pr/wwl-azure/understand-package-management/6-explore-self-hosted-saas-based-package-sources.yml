@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-package-management.explore-self-hosted-saas-based-package-sources
 title: Explore self-hosted and SaaS based package sources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore self-hosted and SaaS based package sources
   description: "Explore self-hosted and SaaS based package sources"
   ms.date: 05/07/2024

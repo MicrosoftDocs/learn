@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-device-provisioning-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure IoT Hub Device Provisioning Service
   description: "This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle."
   ms.date: 12/15/2023
@@ -46,3 +48,4 @@ units:
 - learn.introduction-to-device-provisioning-service.summary
 badge:
   uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+

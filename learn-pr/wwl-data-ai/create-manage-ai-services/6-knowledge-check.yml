@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-ai-services.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   author: wwlpublish
@@ -35,3 +37,4 @@ quiz:
     - content: "HTML"
       isCorrect: false
       explanation: "Incorrect. Client apps submit JSON requests and receive JSON responses."
+

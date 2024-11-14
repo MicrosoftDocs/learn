@@ -1,4 +1,4 @@
-This exercise takes you through the process of configuring a simple Next.js-based application that integrates with Microsoft Entra ID. 
+This exercise takes you through the process of configuring a simple Next.js-based application that integrates with Microsoft Entra ID.
 
 In this exercise, you'll:
 
@@ -126,7 +126,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
         return (
             <>
                 <h5 className="card-title">Welcome {accounts[0].name}</h5>
-                {graphData ? 
+                {graphData ?
                     <ProfileData graphData={graphData} />
                     :
                     <Button variant="secondary" onClick={RequestProfileData}>Request Profile Information</Button>
@@ -139,7 +139,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
     /**
      * If a user is authenticated the ProfileContent component above is rendered. Otherwise, a message indicating a user is not authenticated is rendered.
      */
-    const MainContent = () => {    
+    const MainContent = () => {
         return (
             <div className="App">
                 <AuthenticatedTemplate>
@@ -175,9 +175,9 @@ With the application registered in the Microsoft Entra tenant, you can now proce
     import { LogLevel } from "@azure/msal-browser";
 
     /**
-     * Configuration object to be passed to MSAL instance on creation. 
+     * Configuration object to be passed to MSAL instance on creation.
      * For a full list of MSAL.js configuration parameters, visit:
-     * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md 
+     * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md
      */
     export const msalConfig = {
         auth: {
@@ -189,35 +189,35 @@ With the application registered in the Microsoft Entra tenant, you can now proce
             cacheLocation: "sessionStorage", // This configures where your cache will be stored
             storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
         },
-        system: {  
-            loggerOptions: {  
-                loggerCallback: (level, message, containsPii) => {  
-                    if (containsPii) {    
-                        return;    
-                    }  
-                    switch (level) {    
-                        case LogLevel.Error:    
-                            console.error(message);    
-                            return;    
-                        case LogLevel.Info:    
-                            console.info(message);    
-                            return;    
-                        case LogLevel.Verbose:    
-                            console.debug(message);    
-                            return;    
-                        case LogLevel.Warning:    
-                            console.warn(message);    
-                            return;    
-                    }  
-                }  
-            }  
+        system: {
+            loggerOptions: {
+                loggerCallback: (level, message, containsPii) => {
+                    if (containsPii) {
+                        return;
+                    }
+                    switch (level) {
+                        case LogLevel.Error:
+                            console.error(message);
+                            return;
+                        case LogLevel.Info:
+                            console.info(message);
+                            return;
+                        case LogLevel.Verbose:
+                            console.debug(message);
+                            return;
+                        case LogLevel.Warning:
+                            console.warn(message);
+                            return;
+                    }
+                }
+            }
         }
     };
 
     /**
      * Scopes you add here will be prompted for user consent during sign-in.
      * By default, MSAL.js will add OIDC scopes (openid, profile, email) to any login request.
-     * For more information about OIDC scopes, visit: 
+     * For more information about OIDC scopes, visit:
      * https://learn.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
      */
     export const loginRequest = {
@@ -275,7 +275,7 @@ You're ready to validate the Microsoft Entra integration of the app. You could c
 
     :::image type="content" source="../media/7-azure-ad-next-js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart page with the Sign in using Popup menu option.":::
 
-1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password **Pa55w.rd1234**.
+1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password.
 
     > [!NOTE]
     > You created this user account in the first exercise of this module.
@@ -307,7 +307,7 @@ You're ready to validate the Microsoft Entra integration of the app. You could c
 
 1. Start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
 1. On the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
-1. When prompted to sign in, authenticate by using the **contosouser1** **userPrincipalName** and its password **Pa55w.rd1234**.
+1. When prompted to sign in, authenticate by using the **contosouser1** **userPrincipalName** and its password.
 
     > [!NOTE]
     > You created this user account in the first exercise of this module.
@@ -331,4 +331,4 @@ Congratulations! You completed the third exercise of this module. In this exerci
 
 ## Clean up the resources
 
-To avoid unnecessary charges from using Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**. 
+To avoid unnecessary charges from using Azure resources, you should delete the **postgresql-db-RG** and **cna-aadexpress-RG** resource groups you created in the previous exercise of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.

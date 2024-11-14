@@ -2,6 +2,8 @@
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to create a labeled Dataset using Azure Machine Learning Data Labeling tools.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -40,3 +42,4 @@ quiz:
     - content: "Planning"
       isCorrect: false
       explanation: "Incorrect. Planning should occur before working on the code."
+

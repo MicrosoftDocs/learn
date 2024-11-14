@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-openai-model
 title: Exercise - Connect to Azure OpenAI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Connect to Azure OpenAI
   description: |
@@ -17,3 +19,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-connect-openai-model.md)]
+

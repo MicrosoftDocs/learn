@@ -2,9 +2,11 @@
 uid: learn.introduction-to-linux-on-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 05/01/2023
+  ms.date: 10/31/2024
   author: fossygirl
   ms.author: carols
   ms.topic: unit
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
+

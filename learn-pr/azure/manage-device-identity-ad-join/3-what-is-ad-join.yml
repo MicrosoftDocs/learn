@@ -2,6 +2,8 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-ad-join
 title: What is Microsoft Entra join?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Microsoft Entra join?
   description: Learn about Microsoft Entra join
   ms.date: 03/17/2023
@@ -37,3 +39,4 @@ quiz:
       isCorrect: true
       explanation: "The device is joined, but the MDM system doesn't manage it."
   
+

@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-blueprints.how-azure-blueprints-works
 title: How Azure Blueprints works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Blueprints works
   description: "Learn how Azure Blueprints can help you to deploy and orchestrate governance at scale."
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-how-azure-blueprints-works.md)]
+

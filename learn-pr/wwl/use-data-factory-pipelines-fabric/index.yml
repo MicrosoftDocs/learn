@@ -1,8 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
-  title: Orchestrate processes and data movement with Microsoft Fabric
-  description: "Orchestrate processes and data movement with Microsoft Fabric"
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Use Data Factory pipelines in Microsoft Fabric
+  description: "Use Data Factory pipelines in Microsoft Fabric"
   ms.date: 05/08/2024
   author: wwlpublish
   ms.author: jamesh
@@ -43,3 +45,4 @@ units:
 - learn.wwl.use-data-factory-pipelines-fabric.summary
 badge:
   uid: learn.wwl.use-data-factory-pipelines-fabric.badge
+

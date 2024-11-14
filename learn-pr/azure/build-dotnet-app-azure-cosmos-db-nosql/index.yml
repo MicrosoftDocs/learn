@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.build-dotnet-app-azure-cosmos-db-nosql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: guided-project
   title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
   ms.custom:
@@ -57,3 +59,4 @@ units:
 badge:
   uid: learn.build-dotnet-app-azure-cosmos-db-nosql.badge
 iconUrl: /training/achievements/build-dotnet-app-azure-cosmos-db-nosql.svg
+

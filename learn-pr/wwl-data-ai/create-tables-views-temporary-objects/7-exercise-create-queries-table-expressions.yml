@@ -4,12 +4,11 @@ title: 'Exercise: Create queries with table expressions'
 metadata:
   title: 'Exercise: Create queries with table expressions'
   description: "Exercise: Create queries with table expressions"
-  ms.date: 03/18/2024
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-labId: 105115
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-create-queries-table-expressions.md)]

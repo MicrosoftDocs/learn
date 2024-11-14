@@ -2,6 +2,8 @@
 uid: learn.azdo.run-functional-tests-azure-pipelines.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 04/02/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

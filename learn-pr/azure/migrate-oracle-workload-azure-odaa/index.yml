@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-oracle-workload-azure-odaa
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Migrate Oracle workloads to Oracle Database@Azure"
   description: "Learn how to migrate your Oracle workloads to Oracle Database@Azure."
   manager: akashdubey
@@ -47,3 +49,4 @@ units:
 - learn.azure.migrate-oracle-workload-azure-odaa.summary
 badge:
   uid: learn.azure.migrate-oracle-workload-azure-odaa.badge
+

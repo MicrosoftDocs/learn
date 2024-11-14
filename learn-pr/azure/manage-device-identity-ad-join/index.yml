@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.manage-device-identity-ad-join
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   description: Learn how to manage device identity by using Microsoft Entra join and Enterprise State Roaming.
   ms.date: 03/17/2023
@@ -36,3 +38,4 @@ units:
 - learn.azure.manage-device-identity-ad-join.summary
 badge:
   uid: learn.azure.manage-device-identity-ad-join.badge
+

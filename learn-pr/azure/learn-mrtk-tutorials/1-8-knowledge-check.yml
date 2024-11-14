@@ -4,37 +4,37 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Three multiple-choice questions
-  ms.date: 09/30/2023
+  ms.date: 11/06/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.topic: unit
 durationInMinutes: 3
-content: Choose the best response for each question. Then select Check your answers.
+content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
+    - content: "In the Unity **Build Settings** window, which platform should you select to target Windows Mixed Reality?"
       choices:
         - content: "WebGL"
           isCorrect: false
-          explanation: Incorrect. WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. 
+          explanation: Incorrect. WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without using plug-ins. 
         - content: "PC, Mac & Linux Standalone"
           isCorrect: false
           explanation: Incorrect. The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
         - content: "Universal Windows Platform"
           isCorrect: true
-          explanation: Correct. With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (such as phones), Xbox One and HoloLens with a single code base.
+          explanation: Correct. With the Universal Windows Platform (UWP), developers can target Windows 10/11 tablets and PCs, Xbox One, and HoloLens with a single code base.
     - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
         - content: "org.mixedrealitytoolkit.core"
           isCorrect: true
-          explanation: Correct. The core package is the only required package and includes the core components required to create a mixed reality application.
+          explanation: Correct. The core package is the only required package, and includes the core components required to create a mixed reality application.
         - content: "org.mixedrealitytoolkit.spatialmanipulation"
           isCorrect: false
           explanation: Incorrect. The spatial manipulation package is optional. It includes implementations of common spatial manipulation components, including BoundsControl, ObjectManipulator, and Solvers.
         - content: "org.mixedrealitytoolkit.extendedassets"
           isCorrect: false
-          explanation: Incorrect. The extended assets package is optional and contains additional materials, fonts, audio files, and other assets that are used by the MRTK example scenes. These assets can be freely used in your projects as temporary or final art.
+          explanation: Incorrect. The extended assets package is optional and contains additional materials, fonts, audio files, and other assets the MRTK example scenes use. You can use these assets freely in your projects as temporary or final art.
     - content: "After the Mixed Reality Toolkit is added to a Unity scene, what should you do with the Main Camera object?"
       choices:
         - content: "The Main Camera object should be left in the scene."

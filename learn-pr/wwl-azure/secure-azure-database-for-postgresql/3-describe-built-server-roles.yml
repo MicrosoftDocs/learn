@@ -2,6 +2,8 @@
 uid: learn.wwl.secure-azure-database-for-postgresql.describe-built-server-roles
 title: Describe built-in Azure Database for PostgreSQL server roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe built-in Azure Database for PostgreSQL server roles
   description: "Describe built-in Azure Database for PostgreSQL server roles."
   ms.date: 05/10/2024

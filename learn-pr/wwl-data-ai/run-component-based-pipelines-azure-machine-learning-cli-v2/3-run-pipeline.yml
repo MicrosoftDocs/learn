@@ -2,6 +2,8 @@
 uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline
 title: Run a pipeline with the CLI (v2)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run a pipeline with the CLI (v2)
   description: Run a pipeline with the CLI (v2)
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-run-pipeline.md)]
+

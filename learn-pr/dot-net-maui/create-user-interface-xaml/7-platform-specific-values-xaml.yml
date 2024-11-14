@@ -5,7 +5,7 @@ metadata:
   unitType: unit 
   title: "Platform-specific values in XAML"
   description: "Describe how to fine-tune the UI for different platforms"
-  ms.date: 10/13/2023
+  ms.date: 10/24/2024
   author: codemillmatt  
   ms.author: masoucou
   ms.manager: markl
@@ -32,7 +32,7 @@ quiz:
     - content: "It specifies the type parameter for the extension, and ensures that the correct type of extension is created."
       isCorrect: true
       explanation: "This is the correct answer."
-    - content: "It specifies the type of the platform on which the app is running"
+    - content: "It specifies the type of the platform on which the app is running."
       isCorrect: false
       explanation: "No. It specifies the type parameter for the extension."
     - content: "It enables you to specify the property to be set with a platform-specific value."

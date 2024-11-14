@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-web-app-settings.enable-diagnostic-logging
 title: Enable diagnostic logging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable diagnostic logging
   description: "Enable diagnostic logging"
   ms.date: 06/11/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-enable-diagnostic-logging.md)]
+

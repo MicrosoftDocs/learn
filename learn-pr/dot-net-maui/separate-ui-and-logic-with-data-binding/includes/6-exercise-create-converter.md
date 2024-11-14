@@ -1,4 +1,4 @@
-In this exercise, you add a converter to the Weather app created in the previous exercise. The first converter converts an enumeration value to an image resource. The second converter converts the temperature from Farenheight to Celsius.
+In this exercise, you add a converter to the Weather app created in the previous exercise. The first converter converts an enumeration value to an image resource. The second converter converts the temperature from Fahrenheit to Celsius.
 
 ## Convert to an image
 

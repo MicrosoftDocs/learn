@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: NVIDIA DeepStream embedded device deployment with Azure
   description: Learn how to publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
   ms.date: 11/09/2021
@@ -51,3 +53,4 @@ units:
 - learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.8-summary
 badge:
   uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
+

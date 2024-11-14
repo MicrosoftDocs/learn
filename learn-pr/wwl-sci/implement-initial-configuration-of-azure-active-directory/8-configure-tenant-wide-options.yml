@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-tenant-wide-setting
 title: Configure tenant-wide setting
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure tenant-wide setting
   description: "Configure tenant-wide setting"
   ms.date: 09/03/2024

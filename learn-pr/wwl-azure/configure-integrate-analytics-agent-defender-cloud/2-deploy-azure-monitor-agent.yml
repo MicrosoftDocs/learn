@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.deploy-azure-monitor-agent
 title: Deploy the Azure Monitor Agent
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy the Azure Monitor Agent
   description: "Deploy the Azure Monitor Agent"
   ms.date: 10/17/2024
