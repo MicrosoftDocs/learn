@@ -1,4 +1,4 @@
-We've used a meteorological dataset to aggregation and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
+We've used a meteorological dataset to aggregate and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
 
 `let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. You can use `let` statements to create well-organized complex queries. You can use multiple `let` statements; each statement must be followed by a semicolon (`;`).
 
@@ -122,11 +122,11 @@ The previous examples created a stored scalar value to be used as an input param
 
     :::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
 
-1. Look at the results. Are all events summarized in the *DistinctKillerEventTypes* column so-called "killer storms"?
+1. Look at the results. Are all events summarized in the *DistinctKillerEventTypes* column so-called "killer storms?"
 
 ## Create a user-defined function with the `let` statement
 
-You can also use `let` statements to define user-defined functions, which are reusable subqueries. Suppose you want to figure out what percent of each event type caused damage. You'll create a user-defined function that will calculate percentages, and later call this function and specify which columns are to be used to calculate percentage.
+You can also use `let` statements to define user-defined functions, which are reusable subqueries. Suppose you want to figure out what percent of each event type caused damage. You'll create a user-defined function that calculates percentages, and later call this function and specify which columns are to be used to calculate percentage.
 
 Within a `let` statement, you'll declare function name, arguments, and body using the following general syntax:
 
