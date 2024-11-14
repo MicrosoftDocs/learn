@@ -69,7 +69,7 @@ You use vSphere and NSX Manager to manage most aspects of cluster configuration 
 The VMware software versions used in new deployments of private cloud clusters in Azure VMware Solution are:
 
 | Software                     |    Version   |
-| :---                         |     :---    |
+| :---                         |     :---     |
 | VMware vCenter Server        |    7.0 U3o   |
 | ESXi                         |    7.0 U3o   |
 | vSAN                         |    7.0 U3    |
@@ -94,7 +94,7 @@ The following diagram shows the ExpressRoute and ExpressRoute Global Reach inter
 
 These services require you to enable specific network address ranges and firewall ports. 
 
-You can use an existing ExpressRoute gateway to connect to Azure VMware Solution, as long as it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises through ExpressRoute, you must have ExpressRoute Global Reach.
+You can use an existing ExpressRoute gateway to connect to Azure VMware Solution if it doesn't exceed the limit of four ExpressRoute circuits per virtual network. To access Azure VMware Solution from on-premises via ExpressRoute, use ExpressRoute Global Reach as the preferred option. If it's unavailable or unsuitable due to specific network or security requirements, consider alternate options.
 
 ExpressRoute Global Reach is used to connect private clouds to on-premises environments. The connection requires a virtual network with an ExpressRoute circuit to on-premises in your subscription.
 There are two options for interconnectivity in the private cloud for Azure VMware Solution:
@@ -103,25 +103,33 @@ There are two options for interconnectivity in the private cloud for Azure VMwar
 
 - **Full interconnectivity between on-premises and private cloud** extends the basic Azure-only implementation to include interconnectivity between on-premises environments and Azure VMware Solution private clouds.
 
-During the deployment of a private cloud, the private networks for management, provisioning, and vMotion are created. These private networks are used to access vCenter and NSX-T Manager and virtual machine vMotion or deployment.
+During the deployment of a private cloud, private networks for management, provisioning, and vMotion are created. These private networks are used to access vCenter Server and NSX-T Manager, virtual machine vMotion, or virtual machine deployment.
 
-### Private-cloud storage 
+### Private cloud storage 
 
-Azure VMware Solution uses native, fully configured, all-flash vSAN storage that's local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore, and data-at-rest encryption is enabled by default.
+Azure VMware Solution uses native, fully configured, all-flash VMware vSAN storage that's local to the cluster. All local storage from each host in a cluster is used in a VMware vSAN datastore, and data-at-rest encryption is enabled by default.
 
-All disk groups use an NVMe cache tier of 1.6 TB with the raw SSD-based capacity of 15.4 TB per host. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private-cloud deployment and are available for use immediately.
+vSAN original storage architecture uses a unit of resources known as a disk group. Each disk group consists of a cache and capacity tier. All disk groups use an NVMe or Intel cache, as described in the following table. The size of the cache and capacity tiers vary, depending on the Azure VMware Solution host type. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private-cloud deployment and are available for use immediately.
 
-A policy is created on the vSphere cluster and applied to the vSAN datastore. It determines how the VM storage objects are provisioned and allocated within the datastore to guarantee the required level of service. To maintain the service-level agreement, 25 percent spare capacity must be maintained on the vSAN datastore. 
+| Host Type | vSAN Cache tier (TB, raw) | vSAN Capacity tier (TB, raw) |
+| :---      | :---                      | :--- |                      
+| AV36      | 3.2 (NVMe)                | 15.20 (SSD)   |
+| AV36P     | 1.5 (Intel Cache)         | 19.20 (NVMe)  |
+| AV52      | 1.5 (Intel Cache)         | 38.40 (NVMe)  |
+| AV64      | 3.84 (NVMe)               | 15.36 (NVMe)  |
 
-You can use Azure storage services in workloads that are running in your private cloud. The following diagram shows the available storage services that you can use with Azure VMware Solution.
+
+A policy is created on the vSphere cluster and applied to the vSAN datastore. It determines how the VM storage objects are provisioned and allocated within the vSAN datastore to guarantee the required level of service. To maintain the service-level agreement, 25 percent spare capacity must be maintained on the vSAN datastore.  In addition, the applicable FTT (failure-to-tolerate) policy needs to be applied, to maintain the service-level agreement for Azure VMware Solution. That changes, based on cluster size.  
+
+You can use Azure storage services in workloads that are running in your private cloud. The following diagram shows some of the available storage services that you can use with Azure VMware Solution.
 
 :::image type="icon" source="../media/3-storage-overview.png" border="false" alt-text="Diagram that shows Azure VMware Solution and the available Azure Storage services. Including Azure Blob Storage, Azure Files, Azure File Sync, and Azure NetApp Files.":::
 
 ## Security and compliance
 
-Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can configure Users and Groups in Active Directory with the CLoudAdmin Role using LDAP or LDAPS.
+Azure VMware Solution private clouds use vSphere role-based access control for access and security. You can configure Users and Groups in Active Directory with the CloudAdmin Role using LDAP or LDAPS.
 
-In Azure VMware Solution, vCenter assigns a built-in local user called *cloudadmin* to the **cloudAdmin** role. The cloudAdmin role has vCenter privileges that differ from the privileges in other VMware cloud solutions:
+In Azure VMware Solution, vCenter Server has a built-in local user called *cloudadmin* that's assigned to the **cloudAdmin** role. The cloudAdmin role has vCenter Server permissions that differ from the administrator permissions in other VMware cloud solutions:
 
 - The local cloudadmin user can link an identity source so that Active Directory administrators can grant permission to users of Azure VMware Solution.
 
