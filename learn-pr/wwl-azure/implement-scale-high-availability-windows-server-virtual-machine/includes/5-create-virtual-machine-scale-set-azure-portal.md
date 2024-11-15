@@ -3,7 +3,7 @@ In this demonstration, you'll learn to:
 - Create a load balancer
 - Create a virtual machine scale set
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AJKe]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f7cdc71e-d78f-4713-8e7f-98d5b1401591]
 
 ## Next steps
 
