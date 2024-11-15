@@ -20,7 +20,7 @@ quiz:
       choices:
       - content: "RouteManager"
         isCorrect: false
-        explanation: "This isn't a real object in the Blazor framework."
+        explanation: "RouteManager isn't a real object in the Blazor framework."
       - content: "NavigationManager"
         isCorrect: true
         explanation: "NavigationManager allows you to get the full URI, a relative URI, and querystring information as the user interacts with the component."
