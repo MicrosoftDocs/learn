@@ -4,10 +4,12 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.date: 10/18/2024
-  title: Explore responsible AI     
+  title: "AI fluency: Explore responsible AI"
   description: Learn how to explore and implement responsible AI practices, including best practices, principles, and the global implications of human-AI interaction.
   ms.topic: module
   moduleType: standard
+  ms.service: artificial-intelligence
+  ms.collection: philanthrpies-ai-copilot
 title: Explore responsible AI
 summary: Understand and implement responsible AI practices, including best practices, principles, and the global implications of human-AI interaction.
 abstract: |
