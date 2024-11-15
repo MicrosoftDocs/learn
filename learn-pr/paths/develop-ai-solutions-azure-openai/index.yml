@@ -32,11 +32,8 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.get-started-openai
-- learn.wwl.build-language-solution-azure-openai
-- learn.wwl.apply-prompt-engineering-azure-openai
-- learn.wwl.generate-code-azure-openai
-- learn.wwl.generate-images-azure-openai
+- learn.wwl.develop-applications-openai
 - learn.wwl.use-own-data-azure-openai
+- learn.wwl.generate-images-azure-openai
 trophy:
   uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
