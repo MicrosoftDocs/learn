@@ -87,6 +87,10 @@ Authenticate to the newly created Azure Container Registry:
 az acr login -n $AZ_CONTAINER_REGISTRY
 ```
 
+> [!NOTE]
+> Before executing the `az acr login` command, please ensure that Docker Desktop is running on your local environment. If it is not running, you will encounter an error message like the one shown below.
+> Cannot connect to the Docker daemon at unix:///$HOME_DIR/.docker/run/docker.sock. Is the docker daemon running?
+
 ### Create an Azure Kubernetes Cluster
 
 You'll need an Azure Kubernetes Cluster to deploy the Java app (container image) to. Create an AKS Cluster:

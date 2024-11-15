@@ -59,9 +59,9 @@ You’ll get output similar to the following:
     "readEnabled": true,
     "writeEnabled": true
   },
-  "createdTime": "2021-10-08T00:51:43.5522013Z",
-  "digest": "sha256:bc7613a5612c914d7a6bfc0f130d1f632a5bda362aa62bb3ac12304dc4ce94c1",
-  "lastUpdateTime": "2021-10-08T00:58:57.623821Z",
+  "createdTime": "2024-11-15T12:23:55.5624474Z",
+  "digest": "sha256:13851640a3****************************************f7f1e482c6eaa825",
+  "lastUpdateTime": "2024-11-15T12:23:55.5624474Z",
   "name": "latest",
   "signed": false
 }
