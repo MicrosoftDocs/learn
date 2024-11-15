@@ -1,6 +1,6 @@
 By providing context to the AI model, it allows the model to better understand what you are asking for or what it should know to provide the best answer. Context can be provided in several ways.
 
-### Request output composition
+## Request output composition
 
 Specifying the structure of your output can have a large impact on your results. This could include something like asking the model to cite their sources, write the response as an email, format the response as a SQL query, classify sentiment into a specific structure, and so on. For example:
 
@@ -51,7 +51,7 @@ Here's an example of how you can put two fictional characters into JSON format:
 }
 ```
 
-### System message
+## System message
 
 The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response. This system message might include tone or personality, topics that shouldn't be included, or specifics (like formatting) of how to answer.
 
@@ -140,7 +140,7 @@ response = openai.ChatCompletion.create(
 
 System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.
 
-### Conversation history
+## Conversation history
 
 Along with the system message, other messages can be provided to the model to enhance the conversation. Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
 
@@ -151,7 +151,7 @@ Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground 
 
 Chat systems can also utilize the summarization capabilities of the model to save on input tokens. An app can choose to summarize past messages and include that summary in the conversation history, then provide only the past couple messages verbatim to the model.
 
-### Few shot learning
+## Few shot learning
 
 Using a user defined example conversation is what is called *few shot learning*, which provides the model examples of how it should respond to a given query. These examples serve to train the model how to respond.
 
@@ -209,7 +209,7 @@ response = openai.ChatCompletion.create(
 ```
 ::: zone-end
 
-### Break down a complex task
+## Break down a complex task
 
 Another technique for improved interaction is to divide complex prompts into multiple queries. This allows the model to better understand each individual part, and can improve the overall accuracy. Dividing your prompts also allows you to include the response from a previous prompt in a future prompt, and using that information in addition to the capabilities of the model to generate interesting responses.
 
@@ -217,7 +217,7 @@ For example, you could ask the model `Doug can ride down the zip line in 30 seco
 
 A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking down this problem reveals that Doug can, in fact, ride the zip line four times.
 
-#### Chain of thought
+### Chain of thought
 
 One useful method to help you break down your task effectively is to ask the model to explain its chain of thought.
 

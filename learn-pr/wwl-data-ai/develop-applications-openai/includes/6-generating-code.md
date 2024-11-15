@@ -2,7 +2,7 @@ One of the capabilities of Azure OpenAI models is to generate code from natural 
 
 The examples in this unit are using `gpt-35-turbo`.
 
-### Write functions
+## Write functions
 
 Azure OpenAI models can create functions and apps in several languages by just describing what you want. For example, given the prompt `write a function for binary search in python`, you likely receive a response with the function and an explanation of the code.
 
@@ -42,7 +42,7 @@ the array is not sorted, the algorithm may not return the correct result.
 
 The request can go further than functions, and request a series of functions or an entire app. The response provides a good starting point for the task you're trying to achieve.
 
-### Change coding language
+## Change coding language
 
 If you have code in one language, but need it in another, Azure OpenAI can translate that for you. For example, say you have this `print_squares` function in Python.
 
@@ -66,7 +66,7 @@ public void PrintSquares(int n)
 
 Notice the model understood the differences between how `for` loops and functions are defined in the different languages (including access modifiers in C#), and changed the code appropriately.
 
-### Understand unknown code
+## Understand unknown code
 
 Azure OpenAI models are helpful for understanding code that doesn't make sense, or may be in a language you aren't familiar with. For example, say you were given the following function (in a fictitious coding language!) and didn't know how to understand it.
 

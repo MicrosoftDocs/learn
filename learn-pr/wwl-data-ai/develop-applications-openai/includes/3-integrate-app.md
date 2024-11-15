@@ -2,7 +2,7 @@ Azure OpenAI offers both language specific SDKs and a REST API that developers c
 
 Once you have created an Azure OpenAI resource and deployed a model, you can configure your app.
 
-### Available endpoints
+## Available endpoints
 
 Azure OpenAI can be accessed via a REST API or an SDK available for Python, C#, JavaScript, and more. The endpoints available for interacting with a deployed model are used differently, and certain endpoints can only use certain models. The available endpoints are:
 
