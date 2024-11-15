@@ -161,15 +161,17 @@ Add the library to your app, and set the required parameters for your client.
 ::: zone pivot="csharp"
 
 ```csharp
-// Add OpenAI library
+// Add Azure OpenAI packages
 using Azure.AI.OpenAI;
+using OpenAI.Chat;
 
 // Define parameters and initialize the client
 string endpoint = "<YOUR_ENDPOINT_NAME>";
 string key = "<YOUR_API_KEY>";
 string deploymentName = "<YOUR_DEPLOYMENT_NAME>"; 
 
-OpenAIClient client = new OpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
+AzureOpenAIClient azureClient = new AzureOpenAIClient(new Uri(endpoint), new AzureKeyCredential(key));
+ChatClient chatClient = azureClient.GetChatClient(deploymentName);
 ```
 
 ::: zone-end
@@ -199,23 +201,15 @@ Once you've configured your connection to Azure OpenAI, send your prompt to the 
 ::: zone pivot="csharp"
 
 ```csharp
-// Build completion options object
-ChatCompletionsOptions chatCompletionsOptions = new ChatCompletionsOptions()
-{
-    Messages =
-    {
-        new ChatRequestSystemMessage("You are a helpful AI bot."),
-        new ChatRequestUserMessage("What is Azure OpenAI?"),
-    },
-    DeploymentName = deploymentName
-};
-
-// Send request to Azure OpenAI model
-ChatCompletions response = client.GetChatCompletions(chatCompletionsOptions);
+// Get chat completion
+ChatCompletion completion = chatClient.CompleteChat(
+    [
+        new SystemChatMessage(systemMessage),
+        new UserChatMessage(userMessage),
+    ]);
 
 // Print the response
-string completion = response.Choices[0].Message.Content;
-Console.WriteLine("Response: " + completion + "\n");
+Console.WriteLine($"{completion.Role}: {completion.Content[0].Text}");
 ```
 
 ::: zone-end
