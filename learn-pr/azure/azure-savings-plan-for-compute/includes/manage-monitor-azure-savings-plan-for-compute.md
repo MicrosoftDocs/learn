@@ -32,7 +32,7 @@ There's no obligation to renew, and you can opt out of the renewal at any time b
 
 ### Savings plan monitoring tasks
 
-With sufficient permissions, you can retrieve the savings-plan cost details and usage data in the Azure portal or programmatically by using APIs. Enhanced data for savings-plan cost details and usage data are available in EA and MCA subscriptions as part of the Azure Cost Management functionality. Monitoring allows you to:
+With sufficient permissions, you can retrieve the savings-plan cost details and usage data in the Azure portal or programmatically by using APIs. Enhanced data for savings-plan cost details and usage data are available in EA and MCA subscriptions as part of the Microsoft Cost Management functionality. Monitoring allows you to:
 
 - Obtain savings plan purchase data.
 - Identify subscriptions, resource groups, or resources that are in scope of a savings plan.
