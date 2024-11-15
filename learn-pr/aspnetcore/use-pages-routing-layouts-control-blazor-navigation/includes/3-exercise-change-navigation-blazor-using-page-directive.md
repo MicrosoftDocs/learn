@@ -158,7 +158,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 At the moment, the checkout page doesn't allow customers to place their orders. The logic of the app needs to store the order to send to the kitchen. After the order is sent, let's redirect customers back to the home page.
 
 1. In the file explorer, expand **Pages**, and select **Checkout.razor**.
-1. Modify the button element with to call a `PlaceOrder` method. Add the `@onclick` and `disabled` attributes as shown:
+1. Modify the button element with a call to the `PlaceOrder` method. Add the `@onclick` and `disabled` attributes as shown:
 
     ```razor
     <button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>
@@ -183,7 +183,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
     }
     ```
 
-    The preceding code disables the **Place order** button, posts JSON that's added to **pizza.db**, clears the order, and uses `NavigationManager` to redirect customers to the home page.
+    The preceding code disables the **Place order** button, posts JSON and adds it to **pizza.db**, clears the order, and uses `NavigationManager` to redirect customers to the home page.
 
     You need to add code to handle the order. Add an **OrderController** class for this task. If you look at **PizzaStoreContext.cs**, you only see entity framework database support for `PizzaSpecials`. Let's fix that first.
 
