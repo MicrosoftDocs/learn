@@ -1,7 +1,7 @@
 You can purchase savings plans by using the Azure portal. You have two available payment options: pay all upfront or monthly. The monthly payment option divides the total cost of the savings plan evenly over each month of the term. The total cost of up-front and monthly savings plans is the same, with no extra fees when you choose to pay monthly.
 
 > [!NOTE]
-> Savings plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers. For MCA/MCP customers transacting in currencies other than USD, billing follows standard currency rules based on the monthly invoice on which the charge is issued. Effectively, monthly payment amounts may vary, depending on the current month's market exchange rate for the customer’s local currency.
+> Savings-plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers. For MCA/MCP customers transacting in currencies other than USD, billing follows standard currency rules based on the monthly invoice on which the charge is issued. Effectively, monthly payment amounts may vary, depending on the current month's market exchange rate for the customer’s local currency.
 
 ### Savings plans purchase permissions
 
@@ -14,7 +14,7 @@ To purchase a savings plan for a management group, you require at least read per
 
 ### Savings plan and reservations trade-in
 
-You can purchase a savings plan by making a new commitment, or you can trade in one or more eligible reservations (including VM, Dedicated Host, and App Service resources) for a savings plan. When you trade in reservations, the new savings plan's hourly commitment must be greater than the leftover payments that are canceled for the returned reservation(s). There are no other limits or fees for trade-ins. You can trade in a reservation that's paid for up front to purchase a new savings plan that's billed monthly. However, the lifetime value of the new savings plan must be greater than the prorated value of the reservations traded in.
+You can purchase a savings plan by making a new commitment, or you can trade in one or more eligible reservations (including VM, Dedicated Host, and App Service resources) for a savings plan. When you trade in reservations, the new savings plan's hourly commitment must be greater than the leftover payments that are canceled for the returned reservation(s). There are no other limits or fees for trade-ins. You can trade in a reservation that's paid up front to purchase a new savings plan that's billed monthly. However, the lifetime value of the new savings plan must be greater than the prorated value of the traded-in reservations.
 
 :::image type="content" source="../media/5-savings-plan-reservations-trade-in.svg" alt-text="Diagram illustrating an example of how you can trade in one or more active reservations for a savings plan." border="false":::
 
