@@ -69,7 +69,7 @@ docker images
 You’ll get output similar to the following:
 
 ```output
-docker image ls
+docker images
 REPOSITORY                  TAG      IMAGE ID     CREATED        SIZE
 flightbookingsystemsample   latest   43d4ab3ab045 30 minutes ago 475MB
 ```
