@@ -9,7 +9,7 @@ You work for a company that makes TV adverts. You want to formalize two business
 
 Members of the creative team should manage the advert-review process, because it will need to change regularly. The creative team would prefer not to have to wait for a developer to become available whenever a change is needed.
 
-The feedback0collection process calls an on-premises SharePoint server. Because this server isn't as reliable as a cloud-based server, developers want to carefully control the way the workflow retries this connection when there's a failure.
+The feedback-collection process calls an on-premises SharePoint server. Because this server isn't as reliable as a cloud-based server, developers want to carefully control the way the workflow retries this connection when there's a failure.
 
 ## Scenario 2 - Camera Company Merger
 

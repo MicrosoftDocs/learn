@@ -38,7 +38,7 @@ The details are as follows:
 
 ## Choose a technology
 
-To implement the business process and integrate with the bik-location database, let's consider the following set of technologies.
+To implement the business process and integrate with the bike-location database, let's consider the following set of technologies.
 
 - Microsoft Power Automate
 - Azure Logic Apps
