@@ -4,7 +4,7 @@ Azure NetApp Files supports three service levels that can be configured at capac
 
 Cold means untouched per the Coolness period. Coolness period is user configurable: 2-183 days
 
-The purpose of cool access is to save cost by transparently moving 'cold data' off to lower cost Azure storage, whilst retaining transparent access to data for all users. Users will not see any difference in the way data is presented and will continue to have access to all files and folders transparently. 
+Cool access saves costs by by transparently moving cold data to a lower cost Azure storage. The feature retains transparent access to data for all users. Users don't see differences in the way data is presented and continue to have access to all files and folders transparently. 
 
 The following diagram illustrates an application with a volume enabled for cool access.
 
@@ -14,9 +14,9 @@ The following diagram illustrates an application with a volume enabled for cool 
 * Temperature scan monitors the activity of each block and decreases the temperature value of un-accessed blocks during every scan until it becomes cold (charcoal squares).
     The default cooling period is 31 days (2-183 days).
 * The tiering scan collects cold blocks (orange squares) and packages them into 4-MB objects.
-* Objects are moved to Azure storage fully transparently.
-    To apps and users it looks like those cold blocks are still present in the live system.
-* Upon access of cool data blocks by the App or user, objects are recalled automatically and marked hot and re-subjected to the cooling period, except large sequential reads which are served directly from the cool tier. 
+* Objects are moved to Azure storage transparently.
+    To apps and users, cold blocks appear as present in the live system.
+* When an application or user access a cool data block, the block is recalled automatically and marked as hot. The block is again subjected to the cooling period. Note that large sequential reads are served directly from the cool tier. 
 
 ## Effects of cool access on data
 
@@ -24,7 +24,7 @@ This shows an example scenario of a dataset where 100% of the data is in the coo
 
 ### 4K random read test
 
-This section describes a 4K random-read test across 160 files totaling 10 TB of data. The following chart shows a test that ran over 2.5 days on the 10-TB working dataset that has been entirely% cooled and the buffers cleared (absolute worst-case aged data).
+This section describes a 4K random-read test across 160 files totaling 10 TB of data. The following chart shows a test that ran over 2.5 days on the 10-TB working dataset. The dataset was completely cooled, and the buffers were cleared. This present an absolute worst-case of aged data.
 
 :::image type="content" source="../media/2-cool-access-graph.png" alt-text="Graph showing cool access read I/OPs." lightbox="../media/2-cool-access-graph.png":::
 
@@ -55,6 +55,6 @@ You can enable tiering at the volume level for a newly created capacity pool tha
 - The capacity in the cool tier (by enabling tiering for volumes in a capacity pool).
 - Network transfer between the hot tier and the cool tier at the rate that is determined by the markup on top of the transaction cost (GET and PUT requests) on blob storage and private link transfer in either direction between the hot tiers.
 
-When you enable tiering for volumes, the capacity in the cool tier will be at the rate of the cool tier, and the remaining capacity will be at the rate of the hot tier. The rate of the cool tier is lower than the hot tier's rate.
+When you enable tiering for volumes, the capacity in the cool tier is at the rate of the cool tier. The remaining capacity is at the rate of the hot tier. The rate of the cool tier is lower than the hot tier's rate.
 
 To learn more about billing, see [Azure NetApp Files storage with cool access](/azure/azure-netapp-files/cool-access-introduction).
