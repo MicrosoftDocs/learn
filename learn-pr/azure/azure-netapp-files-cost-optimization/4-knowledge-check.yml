@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-cost-optimization.knowledge-check
+uid: learn.azure.azure-netapp-files-cost-optimization.knowledge-check
 title: Knowledge check
 metadata:
   adobe-target: true
@@ -18,7 +18,7 @@ quiz:
   - content: Which Azure NetApp Files service levels allow inactive data to move from Azure NetApp Files storage (the hot tier) to an Azure storage account (the cold tier)?
     choices:
     - content: Only Ultra service level
-      isCorrect: true
+      isCorrect: false
       explanation: Incorrect. Cool access is supported only on the Standard, Premium, and  Ultra service levels. 
     - content: Only Basic service level
       isCorrect: false
