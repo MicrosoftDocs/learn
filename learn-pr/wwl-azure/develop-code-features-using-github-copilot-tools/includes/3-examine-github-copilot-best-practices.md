@@ -32,11 +32,11 @@ A function name can only be so descriptive without being overly long. Function c
 
 #### Prime Copilot with sample code
 
-One trick to get Copilot on the right page, is to copy and paste desirable code samples into an open editor tab. The sample should represent the code that you want GitHub Copilot to emulate. Providing an example can help GitHUb Copilot generate suggestions that match the language and tasks you want it to emulate. Once Copilot has helped you create some code that matches your goal, you can delete the sample code. This approach is especially helpful when you need to "train" Copilot. For example, suppose GitHub Copilot defaults to suggesting code snippets that implement an older version of a library. You can insert code into your project that uses the latest version of the library. This helps Copilot to begin suggesting code snippets that use the latest version of the library. Once GitHub Copilot has learned to use the new library version, you can delete the sample code.
+One trick to get Copilot on the right page, is to copy and paste desirable code samples into an open editor tab. The sample should represent the code that you want GitHub Copilot to emulate. Providing an example can help GitHub Copilot generate suggestions that match the language and tasks you want it to emulate. Once Copilot has helped you create some code that matches your goal, you can delete the sample code. This approach is especially helpful when you need to "train" Copilot. For example, suppose GitHub Copilot defaults to suggesting code snippets that implement an older version of a library. You can insert code into your project that uses the latest version of the library. This helps Copilot to begin suggesting code snippets that use the latest version of the library. Once GitHub Copilot has learned to use the new library version, you can delete the sample code.
 
 #### Be consistent and keep the quality bar high
 
-GitHUb Copilot is going to latch on to your code to generate suggestions that follow the existing pattern, so the adage "garbage in, garbage out" applies.
+GitHub Copilot is going to latch on to your code to generate suggestions that follow the existing pattern, so the adage "garbage in, garbage out" applies.
 
 Always keeping a high quality bar can take discipline. Especially when you're coding fast and loose to get something working. You might want to disable GitHub Copilot completions while in "hacking" mode. You can temporarily disable completions from the GitHub Copilot status menu (accessible from Visual Studio Code's status bar).
 
@@ -67,7 +67,7 @@ If you want GitHub Copilot to complete a complex or large task, break the task i
 
 #### Avoid ambiguity
 
-Avoid ambiguous terms. For example, don’t ask "what does this do" when "this" could be the current file, the last GtiHub Copilot response, or a specific code block. Instead of using ambiguous terms, be specific: What does the createUser function do?
+Avoid ambiguous terms. For example, don’t ask "what does this do" when "this" could be the current file, the last GitHub Copilot response, or a specific code block. Instead of using ambiguous terms, be specific: What does the createUser function do?
 
 #### Indicate relevant code
 
