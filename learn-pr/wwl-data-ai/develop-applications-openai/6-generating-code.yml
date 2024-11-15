@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 12
 content: |
   [!include[](includes/6-generating-code.md)]

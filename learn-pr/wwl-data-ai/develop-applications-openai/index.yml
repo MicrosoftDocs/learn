@@ -2,7 +2,7 @@
 uid: learn.wwl.develop-applications-openai
 metadata:
   title: Develop applications with Azure OpenAI Service
-  description: Azure OpenAI Service enables engineers to build enterprise-grade generative AI solutions.
+  description: Azure OpenAI Service enables engineers to build generative AI applications.
   author: ivorb
   ms.author: berryivor
   ms.date: 11/15/2024
