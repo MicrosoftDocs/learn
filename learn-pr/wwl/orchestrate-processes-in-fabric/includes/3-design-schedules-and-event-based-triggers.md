@@ -21,7 +21,7 @@ Just as you would expect, on-demand, or ad-hoc runs happen by browsing to the sp
 
 ### Scheduling pipeline runs
 
-When you schedule a data pipeline run, you can choose the frequency at which your pipeline operates. 
+When you schedule a data pipeline run, you can choose the frequency at which your pipeline operates.
 
 1. **Select Schedule**: 
    - This option is found in the top banner of the **Home** tab to view your scheduling options.

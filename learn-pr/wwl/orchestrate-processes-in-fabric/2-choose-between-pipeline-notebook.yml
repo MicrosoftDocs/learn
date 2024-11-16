@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.orchestrate-processes-in-fabric.define-real-time-analytics
+uid: learn.wwl.orchestrate-processes-in-fabric.choose-between-pipeline-notebook
 title: Describe Microsoft Fabric Real-Time Intelligence?
 metadata:
   title: Describe Microsoft Fabric Real-Time Intelligence?
   description: "What is Microsoft Fabric Real-Time Intelligence?"
   ms.date: 11/14/2024
-  author: wwlpublish
+  author: jamesh
   ms.author: jamesh
   ms.topic: unit
   ms.custom:

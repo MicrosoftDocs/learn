@@ -16,7 +16,7 @@ Dataflows offer a low-code interface to ingest data from numerous sources and tr
 
 ### Power Query integration
 
-Dataflows are built using the Power Query experience, available across Microsoft products like Excel, Power BI, Power Platform, and Dynamics 365 Insights. Power Query enables users, from beginners to professionals, to perform data ingestion and transformations with ease. It supports joins, aggregations, data cleansing, custom transformations, and more, all through a user-friendly, visual, low-code interface.
+Dataflows are built using the Power Query experience, available across Microsoft products like Excel, Power BI, and Power Platform. Power Query enables users, from beginners to professionals, to perform data ingestion and transformations with ease. It supports joins, aggregations, data cleansing, custom transformations, and more, all through a user-friendly, visual, low-code interface.
 
 ### Real-World Uses Cases for Dataflows
 
@@ -44,7 +44,7 @@ Data pipelines offer powerful workflow capabilities at cloud-scale, enabling you
 ### Important features of data Pipelines
 
 - **Complex Workflows**: Build workflows that can refresh dataflows, move large volumes of data, and define control flow pipelines.
-- **ETL and Data Factory Workflows**: Create complex ETL (Extract, Transform, Load) and data factory workflows to perform various tasks at scale.
+- **ETL and Data Factory Workflows**: Create complex ETL (Extract, Transform, Load) and data factory workflows which perform various tasks at scale.
 - **Control Flow Capabilities**: Utilize built-in control flow features to build workflow logic with loops and conditionals.
 
 ### End-to-End ETL Data Pipeline
@@ -57,6 +57,6 @@ Combine a configuration-driven copy activity with your low-code dataflow refresh
 - **Multi-language Support:** Users can write and execute code in multiple languages within the same notebook, enhancing flexibility and collaboration.
 - **Visualization:** Notebooks support rich data visualization, enabling users to create charts, graphs, and other visual representations of data.
 - **Collaboration:** Notebooks facilitate collaboration by allowing multiple users to work on the same document simultaneously, share insights, and track changes.
-- **Integration with Fabric Services:** Notebooks seamlessly integrate with other Microsoft Fabric services, such as Data Factory, Synapse Data Engineering, and Synapse Data Science. This provides a unified platform for end-to-end data workflows.
+- **Integration with Fabric Services:** Notebooks seamlessly integrate with other Microsoft Fabric services, such as Data Factory, Synapse Data Engineering, and Synapse Data Science. This approach provides a unified platform for end-to-end data workflows.
 
 When comparing these technologies, it's important to note that while Data Factory focuses on data integration and pipeline automation, notebooks in Microsoft Fabric provide an interactive and ***collaborative*** environment for data exploration, documentation, transformation, and analysis. Both tools complement each other, offering a comprehensive solution for managing and analyzing data within the Microsoft Fabric ecosystem.

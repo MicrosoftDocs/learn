@@ -6,4 +6,4 @@ Now it's your chance to build and schedule a pipeline with a dynamic notebook in
 
 Launch the exercise and follow the instructions.
 
-[![Icon for Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260722)
+[![Icon for Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260721)
