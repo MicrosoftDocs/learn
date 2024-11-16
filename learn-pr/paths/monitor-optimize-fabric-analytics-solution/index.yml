@@ -1,19 +1,29 @@
+### YamlMime:LearningPath
 uid: learn.wwl.monitor-optimize-fabric-analytics-solution
-title: Monitor and Optimize Fabric Analytics Solution
-description: >
-  This learning path will guide you through the process of monitoring and optimizing your Fabric analytics solution. You will learn how to set up monitoring, analyze performance metrics, and implement optimization strategies to ensure your solution runs efficiently.
-author: jamesh
-ms.date: 11/16/2024
-ms.topic: learning-path
-ms.prod: fabric
+metadata:
+  title: Monitor and Optimize Fabric Analytics Solution
+  description: This learning path guides you through the process of monitoring and optimizing your Fabric analytics solution. You learn how to set up monitoring, analyze performance metrics, and implement optimization strategies to ensure your solution runs efficiently.
+  author: jamesh
+  ms.date: 11/16/2024
+  ms.topic: learning-path
+  title: Monitor and Optimize Fabric Analytics Solution
+prerequisites: |
+  You should be familiar with basic data concepts and terminology.
+Summary: |
+  This learning path guides you through the process of monitoring and optimizing your Fabric analytics solution. You learn how to set up monitoring, analyze performance metrics, and implement optimization strategies to ensure your solution runs efficiently.
+iconUrl: /training/achievements/get-started-fabric.svg
+levels: 
+- intermediate
 roles:
 - data-engineer
 - data-analyst
 products:
 - fabric
+- azure
 subjects:
 - data-engineering
 modules:
-- - learn.wwl.use-apache-spark-work-files-lakehouse
+- learn.wwl.use-apache-spark-work-files-lakehouse
 trophy:
   uid: learn.wwl.monitor-optimize-fabric-analytics-solution.trophy
+
