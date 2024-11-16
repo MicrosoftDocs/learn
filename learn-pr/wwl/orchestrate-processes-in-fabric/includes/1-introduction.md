@@ -1,4 +1,4 @@
-This module covers various articles that provide an overview of some of the data orchestration and data movement technologies within Microsoft Fabric. It provides an overview of the scheduling and event-based triggering capabilities, which can help data engineers design pro-active systems to support the rapidly changing data needs of business.
+This module covers various units that provide an overview of some of the data orchestration and data movement technologies within Microsoft Fabric. It provides an overview of the scheduling and event-based triggering capabilities, which can help data engineers design pro-active systems to support the rapidly changing data needs of business.
 
 ## Pipelines in Microsoft Fabric
 
