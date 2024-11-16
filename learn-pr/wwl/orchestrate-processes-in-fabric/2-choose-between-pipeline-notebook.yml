@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.get-started-kusto-fabric.define-real-time-analytics
+uid: learn.wwl.orchestrate-processes-in-fabric.define-real-time-analytics
 title: Describe Microsoft Fabric Real-Time Intelligence?
 metadata:
   title: Describe Microsoft Fabric Real-Time Intelligence?
@@ -9,9 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: unit
   ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
+  - DP-700
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-real-time-analytics.md)]
+  [!include[](includes/2-choose-between-pipeline-notebook.md)]

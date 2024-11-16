@@ -13,10 +13,10 @@ metadata:
 title: Orchestrate processes in Microsoft Fabric
 summary: This training takes a look at choosing between the use of a pipeline or notebook and different orchestration patterns in Microsoft Fabric.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Choose between the use of a pipeline or notebook.
   - Describe the differences between schedules and event-based triggers.
-  - Implement some dyanmic practices in notebooks.
+  - Implement some dynamic practices in notebooks.
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg

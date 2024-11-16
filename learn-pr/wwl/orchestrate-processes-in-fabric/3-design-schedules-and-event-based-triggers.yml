@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  ms.custom:
+  - DP-700
 durationInMinutes: 15
 content: |
   [!include[](includes/3-design-schedules-and-event-based-triggers.md)]

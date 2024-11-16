@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.get-started-kusto-fabric.summary
+uid: learn.wwl.orchestrate-processes-in-fabric.summary
 title: Summary
 metadata:
   title: Summary
@@ -9,9 +9,7 @@ metadata:
   ms.author: jamesh
   ms.topic: unit
   ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
+  - DP-700
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]

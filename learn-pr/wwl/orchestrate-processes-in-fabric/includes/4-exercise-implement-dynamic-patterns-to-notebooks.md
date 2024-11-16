@@ -1,4 +1,4 @@
-Now it's your chance to build an event house that contains a KQL database then run some KQL queries.
+Now it's your chance to build and schedule a pipeline with a dynamic notebook in a pipeline activity.
 <!-- This link should still be valid after, but may need revisited prior to BUILD -->
 
 > [!NOTE]

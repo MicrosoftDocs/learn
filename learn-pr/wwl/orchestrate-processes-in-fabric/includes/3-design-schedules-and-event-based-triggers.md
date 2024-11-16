@@ -32,7 +32,7 @@ When you schedule a data pipeline run, you can choose the frequency at which you
    - By default, your data pipeline has no schedule defined.
    - Select the **On** radio button under the **Scheduled Run** header
 
-[![Image of pane for setting pipeline run settings.](../media/pipeline-schedule-settings.png)](../media/pipeline-schedule-settings-expanded.png#lightbox)
+[![Image of pane for setting pipeline schedule settings.](../media/pipeline-schedule-settings.png)](../media/pipeline-schedule-settings-expanded.png#lightbox)
 
 1. **Schedule Configuration**:
    - On the **Schedule configuration page**, you can specify:
@@ -55,7 +55,7 @@ One of the most common scenarios for using event triggers is to activate a data 
 - **A file arrives**:  This event action means a new file is added to your storage.
 - **A file is deleted**: This event occurrence indicates a file is removed from your storage.
 
-[![Image of pane for setting pipeline run settings.](../media/storage-event-trigger.png)](../media/storage-event-trigger-expanded.png#lightbox)
+[![Image of pane for setting storage event trigger.](../media/storage-event-trigger.png)](../media/storage-event-trigger-expanded.png#lightbox)
 
 For users moving from Azure Data Factory (ADF) to Microsoft Fabric, it's common to work with events from Azure Data Lake Storage (ADLS) or Blob storage. If you're new to Fabric and ADF, you might be more familiar with file events from **OneLake**.
 
@@ -73,4 +73,4 @@ To create a trigger in the Fabric Data Factory:
 
 1. Open the **pipeline design canvas**.
 2. Look for the **Trigger** button, which allows you to create a Reflex trigger for your pipeline.
-3. Alternatively, you can create triggers directly from the [**Data Activator**](https://learn.microsoft.com/en-us/fabric/data-activator/data-activator-get-started) experience.
+3. Alternatively, you can create triggers directly from the [**Data Activator**](/fabric/data-activator/data-activator-get-started) experience.
