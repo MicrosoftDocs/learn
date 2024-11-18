@@ -1,4 +1,4 @@
-ExpressRoute extends on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. ExpressRoute esablishes connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security.
+ExpressRoute extends on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. ExpressRoute establishes connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security.
 
 ## ExpressRoute capabilities
 
@@ -53,7 +53,7 @@ This section discusses a few key areas to consider when deploying ExpressRoute.
 
 **ExpressRoute Direct**
 
-ExpressRoute Direct provides the ability to connect directly into Microsoft’s global network at peering locations strategically distributed around the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale. You can work with any service provider for ExpressRoute Direct.
+ExpressRoute Direct connects directly into Microsoft’s global network at peering locations strategically distributed around the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale. You can work with any service provider for ExpressRoute Direct.
 
 Key features that ExpressRoute Direct provides includes:
 
@@ -91,11 +91,11 @@ Network Limits and limitations
  -  Only route-based VPN gateways are supported. 
  -  The ASN of Azure VPN Gateway must be set to 65515. 
  -  The gateway subnet must be /27 or a shorter prefix. 
- -  Coexistence in a dual stack VNet is not supported. 
+ -  Coexistence in a dual stack VNet isn't supported. 
 
 ### Create a zone redundant virtual network gateway in Azure availability zones
 
-You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](/azure/availability-zones/az-overview). This brings resiliency, scalability, and higher availability to virtual network gateways. Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures.
+You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](/azure/availability-zones/az-overview). Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures.
 
 **Zone-redundant gateways**
 
@@ -113,11 +113,11 @@ To deploy gateways in a specific zone, you can use zonal gateways. When you depl
 
 **Gateway SKUs**
 
-Zone-redundant and zonal gateways are available as gateway SKUs. There's a new virtual network gateway SKUs in Azure AZ regions. These SKUs are like the corresponding existing SKUs for ExpressRoute and VPN Gateway, except that they are specific to zone-redundant and zonal gateways. You can identify these SKUs by the "AZ" in the SKU name.
+Zone-redundant and zonal gateways are available as gateway SKUs. These SKUs are like the corresponding existing SKUs for ExpressRoute and VPN Gateway, except that they're specific to zone-redundant and zonal gateways. You can identify these SKUs by the "AZ" in the SKU name.
 
 **Public IP SKUs**
 
-Zone-redundant gateways and zonal gateways both rely on the Azure public IP resource Standard SKU. The configuration of the Azure public IP resource determines whether the gateway that you deploy is zone-redundant, or zonal. If you create a public IP resource with a Basic SKU, the gateway won't have any zone redundancy.
+Zone-redundant gateways and zonal gateways both rely on the Azure public IP resource Standard SKU. The configuration of the Azure public IP resource determines whether the gateway that you deploy is zone-redundant, or zonal. 
 
 
 ## Configure a Site-to-Site VPN as a failover path for ExpressRoute
