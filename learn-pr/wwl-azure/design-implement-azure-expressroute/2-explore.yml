@@ -13,17 +13,3 @@ metadata:
 durationInMinutes: 22
 content: |
   [!include[](includes/2-explore.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "What is the most effective use of ExpressRoute?"
-    choices:
-    - content: "Provide reliable and secure connectivity to Azure services."
-      isCorrect: true
-      explanation: "Correct. Azure ExpressRoute is used to create private connections between Azure data centers, Azure services, and infrastructure on your premises or in a colocation environment."
-    - content: "Connect your network to the public internet."
-      isCorrect: false
-      explanation: "Incorrect. Azure ExpressRoute isn't the most effective way to connect your network to the public internet."
-    - content: "Connect data center services internal to an organization."
-      isCorrect: false
-      explanation: "Incorrect. Azure ExpressRoute isn't used to connect data center services internal to an organization."

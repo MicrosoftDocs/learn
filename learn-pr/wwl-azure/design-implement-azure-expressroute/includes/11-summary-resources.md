@@ -1,4 +1,4 @@
-In this module you learned about:
+In this module, you learned about:
 
  -  ExpressRoute and how to design your network with ExpressRoute.
  -  ExpressRoute configuration choices and how to decide on the appropriate SKU based on your requirements.
@@ -8,6 +8,4 @@ In this module you learned about:
 
 ## Resources
 
-Use these resources to discover more.
-
- -  [ExpressRoute documentation \| Microsoft Docs](/azure/expressroute/)
+-  [ExpressRoute documentation \| Microsoft Docs](/azure/expressroute/)

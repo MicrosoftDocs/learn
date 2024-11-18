@@ -1,18 +1,16 @@
-
-
-ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security.
+ExpressRoute extends on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. ExpressRoute esablishes connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security.
 
 ## ExpressRoute capabilities
 
 Some key benefits of ExpressRoute are:
 
- -  Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider
+ -  Layer 3 connectivity between an on-premises network and the Microsoft Cloud through a connectivity provider
  -  Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange
  -  Connectivity to Microsoft cloud services across all regions in the geopolitical region
  -  Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on
  -  Built-in redundancy in every peering location for higher reliability
 
-Azure ExpressRoute is used to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public Internet, and they offer more reliability, faster speeds, and lower latencies than typical Internet connections.
+Azure ExpressRoute is used to create private connections between Azure datacenters and infrastructure on-premises or in a colocation environment. ExpressRoute connections don't go over the public Internet, and they offer more reliability, faster speeds, and lower latencies than typical Internet connections.
 
 ## Understand use cases for Azure ExpressRoute
 
@@ -26,36 +24,36 @@ Azure ExpressRoute is used to create private connections between Azure datacente
 
 ## ExpressRoute connectivity models
 
-You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Colocation, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct. Connectivity providers may offer one or more connectivity models.
+There are several ways to connect an on-premises network and the Microsoft cloud: CloudExchange Colocation, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct. Connectivity providers may offer one or more connectivity models.
 
 :::image type="content" source="../media/expressroute-connectivity-models-diagram-d3bd1d21.png" alt-text="ExpressRoute connectivity models":::
 
 
 **Co-located at a cloud exchange**
 
-If you're colocated in a facility with a cloud exchange, you can order virtual cross-connections to the Microsoft cloud through the colocation provider’s Ethernet exchange. Colocation providers can offer either Layer 2 cross-connections, or managed Layer 3 cross-connections between your infrastructure in the colocation facility and the Microsoft cloud.
+In a facility with a cloud exchange, virtual cross-connections to the Microsoft cloud are provided through the colocation provider’s Ethernet exchange. Colocation providers can offer either Layer 2 cross-connections, or managed Layer 3 cross-connections between your infrastructure in the colocation facility and the Microsoft cloud.
 
 **Point-to-point Ethernet connections**
 
-You can connect your on-premises datacenters/offices to the Microsoft cloud through point-to-point Ethernet links. Point-to-point Ethernet providers can offer Layer 2 connections, or managed Layer 3 connections between your site and the Microsoft cloud.
+Point-to-point Ethernet providers can offer Layer 2 connections, or managed Layer 3 connections between your site and the Microsoft cloud.
 
 **Any-to-any (IPVPN) networks**
 
-You can integrate your WAN with the Microsoft cloud. IPVPN providers offer any-to-any connectivity between your branch offices and datacenters. The Microsoft cloud can be interconnected to your WAN to make it look just like any other branch office. WAN providers typically offer managed Layer 3 connectivity.
+IPVPN providers offer any-to-any connectivity between your branch offices and datacenters. The Microsoft cloud can be interconnected to your WAN to make it look just like any other branch office. WAN providers typically offer managed Layer 3 connectivity.
 
 **Direct from ExpressRoute sites**
 
-You can connect directly into the Microsoft's global network at a peering location strategically distributed across the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale.
+ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale.
 
 ## Design considerations for ExpressRoute deployments
 
-This section discusses a few key areas that you must consider as you design your ExpressRoute deployment.
+This section discusses a few key areas to consider when deploying ExpressRoute.
 
 ### Choose between provider and direct model (ExpressRoute Direct)
 
 **ExpressRoute Direct**
 
-ExpressRoute Direct gives you the ability to connect directly into Microsoft’s global network at peering locations strategically distributed around the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale. You can work with any service provider for ExpressRoute Direct.
+ExpressRoute Direct provides the ability to connect directly into Microsoft’s global network at peering locations strategically distributed around the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale. You can work with any service provider for ExpressRoute Direct.
 
 Key features that ExpressRoute Direct provides includes:
 
@@ -82,21 +80,18 @@ There are two ways in which redundancy can be planned for an ExpressRoute deploy
 
 ### Configure ExpressRoute and site to site coexisting connections
 
-This section helps you configure ExpressRoute and Site-to-Site VPN connections that coexist. Having the ability to configure Site-to-Site VPN and ExpressRoute has several advantages. You can configure Site-to-Site VPN as a secure failover path for ExpressRoute or use Site-to-Site VPNs to connect to sites that aren't connected through ExpressRoute.
-
 Configuring Site-to-Site VPN and ExpressRoute coexisting connections has several advantages:
 
- -  You can configure a Site-to-Site VPN as a secure failover path for ExpressRoute.
- -  Alternatively, you can use Site-to-Site VPNs to connect to sites that aren't connected through ExpressRoute.
-
-You can configure either gateway first. Typically, you incur no downtime when adding a new gateway or gateway connection.
+ - A Site-to-Site VPN is a secure failover path for ExpressRoute.
+ - Site-to-Site VPNs to connect to sites that aren't connected through ExpressRoute.
+ - No downtime occurs when adding a new gateway or gateway connection.
 
 Network Limits and limitations
 
- -  **Only route-based VPN gateway is supported.** You must use a route-based VPN gateway. You also can use a route-based VPN gateway with a VPN connection configured for 'policy-based traffic selectors'.
- -  **The ASN of Azure VPN Gateway must be set to 65515.** Azure VPN Gateway supports the BGP routing protocol. For ExpressRoute and Azure VPN to work together, you must keep the Autonomous System Number of your Azure VPN gateway at its default value, 65515. If you previously selected an ASN other than 65515 and you change the setting to 65515, you must reset the VPN gateway for the setting to take effect.
- -  **The gateway subnet must be /27 or a shorter prefix**, (such as /26, /25), or you receive an error message when you add the ExpressRoute virtual network gateway.
- -  **Coexistence in a dual stack VNet is not supported.** If you're using ExpressRoute IPv6 support and a dual-stack ExpressRoute gateway, coexistence with VPN Gateway isn't possible.
+ -  Only route-based VPN gateways are supported. 
+ -  The ASN of Azure VPN Gateway must be set to 65515. 
+ -  The gateway subnet must be /27 or a shorter prefix. 
+ -  Coexistence in a dual stack VNet is not supported. 
 
 ### Create a zone redundant virtual network gateway in Azure availability zones
 
@@ -122,17 +117,10 @@ Zone-redundant and zonal gateways are available as gateway SKUs. There's a new v
 
 **Public IP SKUs**
 
-Zone-redundant gateways and zonal gateways both rely on the Azure public IP resource Standard SKU. The configuration of the Azure public IP resource determines whether the gateway that you deploy is zone-redundant, or zonal. If you create a public IP resource with a Basic SKU, the gateway won't have any zone redundancy, and the gateway resources will be regional.
+Zone-redundant gateways and zonal gateways both rely on the Azure public IP resource Standard SKU. The configuration of the Azure public IP resource determines whether the gateway that you deploy is zone-redundant, or zonal. If you create a public IP resource with a Basic SKU, the gateway won't have any zone redundancy.
 
 
 ## Configure a Site-to-Site VPN as a failover path for ExpressRoute
 
 You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path. There's no VPN-based failover solution for services accessible through Azure Microsoft peering. The ExpressRoute circuit is always the primary link. Data flows through the Site-to-Site VPN path only if the ExpressRoute circuit fails. To avoid asymmetrical routing, your local network configuration should also prefer the ExpressRoute circuit over the Site-to-Site VPN. You can prefer the ExpressRoute path by setting higher local preference for the routes received the ExpressRoute.
 
-> [!Note]
->
-> If you have ExpressRoute Microsoft Peering enabled, you can receive the public IP address of your Azure VPN gateway on the ExpressRoute connection. To set up your site-to-site VPN connection as a backup, you must configure your on-premises network so that the VPN connection is routed to the Internet.
-
-> [!Note]
->
-> While ExpressRoute circuit is preferred over Site-to-Site VPN when both routes are the same, Azure will use the longest prefix match to choose the route towards the packet's destination.
