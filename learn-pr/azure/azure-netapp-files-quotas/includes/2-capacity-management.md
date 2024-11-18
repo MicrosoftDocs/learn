@@ -12,11 +12,11 @@ Windows clients can check the used and available capacity of a volume by using t
 
 The following examples show the volume capacity reporting in Windows before the changed behavior:
 
-:::image type="content" source="../media/3-capacity-reporting-before.png" alt-text="Screenshot of Windows VM capacity reporting before the change." lightbox="../media/3-capacity-reporting-before.png":::
+:::image type="content" source="../media/2-capacity-reporting-before.png" alt-text="Screenshot of Windows VM capacity reporting before the change." lightbox="../media/2-capacity-reporting-before.png":::
 
 The following examples show the volume capacity reporting in Windows after the changed behavior:
 
-:::image type="content" source="../media/3-capacity-reporting-after.png" alt-text="Screenshot of Windows VM capacity reporting after the change." lightbox="../media/3-capacity-reporting-after.png":::
+:::image type="content" source="../media/2-capacity-reporting-after.png" alt-text="Screenshot of Windows VM capacity reporting after the change." lightbox="../media/2-capacity-reporting-after.png":::
 
 ### Linux
 
@@ -24,11 +24,11 @@ Linux clients can check the used and available capacity of a volume by using the
 
 The following example shows volume capacity reporting in Linux before the changed behavior:
 
-:::image type="content" source="../media/3-linux-capacity-before.png" alt-text="Screenshot of Linux VM capacity reporting before the change." lightbox="../media/3-linux-capacity-before.png":::
+:::image type="content" source="../media/2-linux-capacity-before.png" alt-text="Screenshot of Linux VM capacity reporting before the change." lightbox="../media/2-linux-capacity-before.png":::
 
 The following example shows volume capacity reporting in Linux after the changed behavior:
 
-:::image type="content" source="../media/3-linux-capacity-after.png" alt-text="Screenshot of Linux VM capacity reporting after the change." lightbox="../media/3-linux-capacity-after.png":::
+:::image type="content" source="../media/2-linux-capacity-after.png" alt-text="Screenshot of Linux VM capacity reporting after the change." lightbox="../media/2-linux-capacity-after.png":::
 
 ## Manage capacity using Azure NetApp Files 
 
