@@ -19,21 +19,21 @@ quiz:
     choices: 
     - content: "Automatic QoS is only applicable to Premium performance tiers."
       isCorrect: false
-      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands, so you don't need to set them manually.
+      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
     - content: "Automatic QoS dynamically adjusts volume quotas and throughput based on workload demands."
       isCorrect: true
-      explanation: "Correct.Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands, so you don't need to set them manually."
-    - content: "Automatic QoS allows you to set specific volume quotas and throughput limits manually.."
+      explanation: "Correct. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually."
+    - content: "Automatic QoS allows you to set specific volume quotas and throughput limits manually."
       isCorrect: false
-      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands, so you don't need to set them manually.
+      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
     - content: "Automatic QoS isn't supported in Azure NetApp Files."
       isCorrect: false
-      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands, so you don't need to set them manually.
+      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
   - content: "Which of the following recommendations are considered best practices for conducting performance benchmark tests on Azure NetApp Files?"
     choices: 
-      - content: "Disable caching to measure raw disk performance.."
+      - content: "Disable caching to measure raw disk performance."
         isCorrect: false 
-        explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance.."
+        explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
       - content: "Test with a single client machine to minimize network overhead."
         isCorrect: false
         explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
@@ -41,7 +41,7 @@ quiz:
         isCorrect: true
         explanation: "Correct. When conducting performance benchmark tests on Azure NetApp Files, it's' recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
       - content: "Use a small dataset for accurate results."
-        isCorrect: true 
+        isCorrect: false 
         explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
   - content: "What is the maximum volume size allowed while using large volumes in Azure NetApp Files?"
     choices:
@@ -55,7 +55,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The maximum volume size allowed while using large volumes in Azure NetApp Files with Standard performance tier is 1,024."
     - content: "6,800 TiB"
-      isCorrect: true 
+      isCorrect: false 
       explanation: "Incorrect. The maximum volume size allowed while using large volumes in Azure NetApp Files with Standard performance tier is 1,024."
 
 

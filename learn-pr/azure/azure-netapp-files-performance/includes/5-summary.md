@@ -5,11 +5,11 @@ Ensure you choose the correct service level and volume quota size for the expect
 The metrics used in analyzing the performance of Azure NetApp Files are: 
 
 * **Average I/O Requests/second**
-    Corresponds to the sum of average Read I/O requests/second and average write I/O requests/second from the load profile secondtion
+    Corresponds to the sum of average Read I/O requests/second and average write I/O requests/second from the load profile section
 * **Average I/O MB/second**
-    Corresponds to the sum of average read I/O MB/second and average write I/O MB/second from the load profile secondtion
+    Corresponds to the sum of average read I/O MB/second and average write I/O MB/second from the load profile section
 * **Average read latency**
-    Corresponds to the average latency of the Oracle Wait Event “db file sequential read” in microseconds
+    Corresponds to the average latency of the Oracle Wait Event "db file sequential read" in microseconds
 * **Number of threads/schema**
     Corresponds to the number of SLOB (Silly Little Oracle Benchmarks) threads per user schema
 
