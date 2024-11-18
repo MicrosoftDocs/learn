@@ -4,8 +4,7 @@ The main takeaways from this module include the importance of regular monitoring
 
 Extra Reading:
 
-1. [Microsoft Fabric Documentation](https://docs.microsoft.com/en-us/azure/data-factory/)
-2. [Lambda Architecture for Big Data](https://www.oreilly.com/library/view/big-data/9781449327919/ch04.html)
-3. [Monitoring in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/monitor-visually)
-4. [Getting Started with Fabric](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal)
-5. [Microsoft Fabric Shared Platform](https://learn.microsoft.com/en-us/fabric/#microsoft-fabric-shared-platform)
+1. [Microsoft Fabric Documentation](/azure/data-factory/)
+3. [Monitoring in Azure Data Factory](/azure/data-factory/monitor-visually)
+4. [Getting Started with Fabric](/azure/data-factory/quickstart-create-data-factory-portal)
+5. [Microsoft Fabric Shared Platform](https://learn.microsoft.com/fabric/#microsoft-fabric-shared-platform)
