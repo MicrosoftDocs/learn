@@ -2,6 +2,8 @@
 uid: learn.azure.debug-nodejs.3-run-your-code-step-by-step
 title: Debug with the Node.js built-in debugger
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Debug with the Node.js built-in debugger
   description: Learn what a breakpoint is and how to run your code step by step by using the Node.js built-in debugger.
   author: diberry
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-run-your-code-step-by-step.md)]
+

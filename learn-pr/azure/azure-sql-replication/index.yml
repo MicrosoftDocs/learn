@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-sql-replication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Data tracking and synchronization with Azure SQL Database
   description: "Azure SQL data tracking module that covers database synchronization, data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
@@ -9,7 +11,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
-  ms.service: sql-database
+  ms.service: azure-sql-database
 title: Data tracking and synchronization with Azure SQL Database
 summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
 abstract: |
@@ -44,3 +46,4 @@ units:
 - learn.azure-sql-replication.knowledge-check
 badge:
   uid: learn.azure-sql-replication.badge
+

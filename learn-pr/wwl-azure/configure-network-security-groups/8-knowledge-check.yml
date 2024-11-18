@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-network-security-groups.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/26/2024
+  ms.date: 08/29/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -40,12 +42,12 @@ quiz:
       explanation: "Correct. ASGs allow administrators to group VMs based on their roles or functions."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
-    - content: "It's allowed by default."
+    - content: "Network traffic is allowed."
       isCorrect: false
       explanation: "Incorrect. Allowing traffic by default would pose a security risk."
-    - content: "It's denied by default."
+    - content: "Network traffic is denied."
       isCorrect: true
       explanation: "Correct. By default, network traffic that doesn't match any Network Security Group (NSG) rules is denied."
-    - content: "It's postponed until the rules change."
+    - content: "Network traffic checks another server."
       isCorrect: false
-      explanation: "Incorrect. NSGs don't postpone network traffic."
+      explanation: "Incorrect. Network traffic is denied by default."

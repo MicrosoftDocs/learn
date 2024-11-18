@@ -6,16 +6,7 @@ Creating a stored procedure for a specific task has many advantages, including e
 - Include error handling within a transaction.
 - Hide complexity from users.
 
-In addition, Azure Database for PostgreSQL supports many languages including:
-
-- SQL
-- PL/pgSQL
-- PL/Python
-- PL/Perl and PL/PerlU
-- PL/Python
-- PL/Tcl and PL/TCLU
-
-SQL is PostgreSQL's native language and works best with the optimizer.
+While Azure Database for PostgreSQL supports multiple programming languages, SQL is PostgreSQL's native language and works best with the optimizer.
 
 A stored procedure is created with the key words CREATE PROCEDURE. Alternatively, use CREATE OR REPLACE PROCEDURE to either create a new procedure or replace a procedure with the same name.
 

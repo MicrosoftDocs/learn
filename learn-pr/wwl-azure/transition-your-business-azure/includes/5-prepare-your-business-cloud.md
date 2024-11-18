@@ -1,5 +1,4 @@
-
-You’ve now reviewed some of the critical considerations your team will have to keep in mind when planning and executing a transition to the cloud.
+You’ve now reviewed some of the critical considerations your team has to keep in mind when planning and executing a transition to the cloud.
 
 ## The Microsoft Cloud Adoption Framework for Azure
 
@@ -9,7 +8,7 @@ Much of the material is similar to what's covered in this learning path, but mor
 
 ## Preparing Your Team
 
-A major part of transitioning your company to the cloud will be **transitioning your employees into a cloud-based organization and mindset**. It’s easy to see that switching to the cloud will entail a shift in duties, and maybe even titles, for your IT team. However, your entire workforce can be transformed by a shift to cloud-based computing. As you explore cloud possibilities for your business, you’ll have to consider questions like:
+A major part of transitioning your company to the cloud will be **transitioning your employees into a cloud-based organization and mindset**. It’s easy to see that switching to the cloud entails a shift in duties, and maybe even titles, for your IT team. However, your entire workforce can be transformed by a shift to cloud-based computing. As you explore cloud possibilities for your business, you have to consider questions like:
 
  -  What departments will use new software? How will we prepare those departments?
  -  What roles will change or be created by new cloud-based activities?

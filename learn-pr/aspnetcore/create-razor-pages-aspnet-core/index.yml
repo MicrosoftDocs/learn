@@ -3,10 +3,10 @@ uid: learn.create-razor-pages-aspnet-core
 metadata:
   title: Create a web UI with ASP.NET Core
   description: "Learn how to create web pages using Razor with ASP.NET Core."
-  ms.date: 03/29/2024
+  ms.date: 09/25/2024
   author: jongalloway
   ms.author: jogallow
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
 title: Create a web UI with ASP.NET Core

@@ -1,12 +1,12 @@
-Azure AI Content Safety detects harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect material that is harmful. There are different types of analysis available from this service. The following table describes the currently available APIs: 
+Azure AI Content Safety detects harmful user-generated and AI-generated content in applications and services. Azure AI Content Safety includes text and image APIs that allow you to detect harmful material. There are different types of analysis available from this service. The following list describes the currently available APIs:
 
-**Analyze text API**: Scans text for sexual content, violence, hate, and self-harm with multi-severity levels.
+**Analyze text API**: Scans text for sexual content, violence, hate, and self-harm with multiseverity levels.
 
-**Analyze image API**: Scans images for sexual content, violence, hate, and self-harm with multi-severity levels.
+**Analyze image API**: Scans images for sexual content, violence, hate, and self-harm with multiseverity levels.
 
 **Prompt Shields (preview)**: Scans text for the risk of a User input attack on a Large Language Model (LLM).
 
-**Groundedness detection (preview)**: Detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+**Groundedness detection (preview)**: Detects whether the text responses of LLMs are grounded in the source materials the users provide.
 
 **Protected material text detection (preview)**: Scans AI-generated text for known text content (for example, song lyrics, articles, recipes, selected web content).
 

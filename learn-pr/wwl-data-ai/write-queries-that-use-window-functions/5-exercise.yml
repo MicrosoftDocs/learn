@@ -4,14 +4,11 @@ title: 'Exercise: Use window functions'
 metadata:
   title: 'Exercise: Use window functions'
   description: "Exercise: Use window functions"
-  ms.date: 03/18/2024
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.custom:
-  - N/A
-labId: 105117
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]

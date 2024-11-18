@@ -2,14 +2,16 @@
 uid: learn.wwl.design-migrations.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 06/20/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

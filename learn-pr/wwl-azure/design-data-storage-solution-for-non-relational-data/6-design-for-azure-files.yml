@@ -2,9 +2,11 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-files
 title: Design for Azure Files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Files
   description: "Design for Azure Files"
-  ms.date: 03/08/2024
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

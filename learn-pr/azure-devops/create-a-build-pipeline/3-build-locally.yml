@@ -2,9 +2,11 @@
 uid: learn.azdo.create-a-build-pipeline.3-build-locally
 title: Exercise - Get the sample application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Get the sample application
   description: Build and run the sample application locally to help ensure it will build in your pipeline.
-  ms.date: 04/02/2024
+  ms.date: 09/13/2024
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-build-locally.md)]
+

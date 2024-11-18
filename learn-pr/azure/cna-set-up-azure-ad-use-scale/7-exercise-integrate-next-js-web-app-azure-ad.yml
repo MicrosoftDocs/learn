@@ -2,6 +2,8 @@
 uid: learn.azure.cna-set-up-apps-use-scale.7-exercise-integrate-next-js-web-app-azure-ad
 title: Exercise - Integrate Next.js web app with Azure AD
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Integrate Next.js web app with Azure AD
   description: Exercise - Integrate Next.js web app with Azure AD
   ms.date: 08/22/2023
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise-integrate-next-js-web-app-azure-ad.md)]
+

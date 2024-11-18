@@ -1,7 +1,7 @@
-Music is a powerful way to create the mood and atmosphere of your destination. It can also express your theme and personality. How about making a playlist that matches your vision? You can use songs from different genres, artists, and languages to craft your own soundtrack. Use  Copilot in Bing to create your playlist.
+Music is a powerful way to set the mood and atmosphere of your destination. It can also express your theme and personality. How about making a playlist that matches your vision? You can use songs from different genres, artists, and languages to craft your own soundtrack. Use  Copilot to create your playlist.
 
 ## Ideate
-Ask Copilot to create a list of 10 songs that would be appropriate for your destination. Add any details or references to help guide Copilot. You're going to format this list as a table.
+Ask Copilot to create a playlist of 10 songs that would be appropriate for your destination. Add any details or references to help guide Copilot. You're going to format this list as a table.
 
 > [!TIP]
 > **Get creative with directions**. Add details to get more interesting results. Ask for one-hit wonders, indie artists, provide references to other soundtracks, or describe the vibe you are going for.
@@ -9,34 +9,22 @@ Ask Copilot to create a list of 10 songs that would be appropriate for your dest
 **Steps**:
 1. Copy the sample prompt and edit as desired.
 2. Paste the prompt into the chat.
-3. Take a screen capture of the table of songs it gave you, and save that image.
+3. Review the response, and iterate as needed until you're happy with the output.
+4. Take a screen capture of the table of songs it gave you, and save that image.
 
 **Sample prompt**:
 ``` 
-We need to think about music. This part of the project 
-is called The Music. 
-Can you create a table of 10 songs with the 
-Artist and Song Name that 
-would fit the theme of this destination? 
+We need to think about music. This part of the project is called 
+The Music. Can you create a table of 10 songs with the Artist and 
+Song Name that would fit the theme of this destination? 
 
 ```
-
 **Sample response**:
 
-Note the following sample response is in markdown syntax so it doesn't look formatted like a table the way it does in your browser.
-```
-| Artist     | Song Title    
-|--------------|-----------
-|Louis Armstrong | When You're Smiling
-|Duke Ellington | It Don't Mean a Thing ( if it Ain't
-Got that Swing)
-| Billie Holiday | Summertime
-| Benny Goodman | Sing, Sing, Sing
-| Ella Fitzgerald | A-Tisket, A-Tasket
-| Cab Calloway | Minnie the Moocher 
-| Glenn Miller | In the Mood
+> ![Screenshot of a sample music playlist suggested by Copilot, formatted as a table.](../media/music-table.png)
 
-```
+> [!TIP]
+> **Iterate as needed!** For example, you could ask Copilot to include or exclude specific artists or genres.
 
 ## Key takeaways and further exploration
 

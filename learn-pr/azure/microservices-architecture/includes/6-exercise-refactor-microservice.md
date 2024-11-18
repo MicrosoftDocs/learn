@@ -81,11 +81,11 @@ Now, let's redeploy the application. First, we deploy our refactored service on 
 
     ```azurecli
     APPSERVICENAME="$(az webapp list \
-                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group]</rgn>" \
                         --query '[].name' \
                         --output tsv)"
     FUNCTIONAPPNAME="$(az functionapp list \
-                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group]</rgn>" \
                         --query '[].name' \
                         --output tsv)"
     ```
@@ -103,7 +103,7 @@ Now, let's redeploy the application. First, we deploy our refactored service on 
 
     ```azurecli
     az functionapp deployment source config-zip \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $FUNCTIONAPPNAME \
         --src PackageService.zip
     ```
@@ -116,7 +116,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
 
     ```azurecli
     RESOURCEGROUPID=$(az group show \
-                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group]</rgn>" \
                         --query id \
                         --output tsv)
     FUNCTIONCODE=$(az rest \
@@ -159,7 +159,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
     ```bash
     zip -r DroneDelivery-after.zip . -x \*/obj/\* \*/bin/\*
     az webapp deployment source config-zip \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
         --src DroneDelivery-after.zip
     ```

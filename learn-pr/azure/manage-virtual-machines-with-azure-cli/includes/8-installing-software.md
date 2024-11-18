@@ -14,7 +14,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
     ssh azureuser@<PublicIPAddress>
     ```
 
-1. After you're logged in to the virtual machine, run the following command to install the `nginx` web server. The command will take a few moments to complete.
+1. After you're logged in to the virtual machine, run the following command to install the `nginx` web server. The command takes a few moments to complete.
 
     ```bash
     sudo apt-get -y update && sudo apt-get -y install nginx
@@ -45,7 +45,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
         --name SampleVM
     ```
 
-    It will take a moment to add the network rule and open the port through the firewall.
+    It takes a moment to add the network rule and open the port through the firewall.
 
 1. Run the `curl` command again.
 

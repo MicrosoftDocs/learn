@@ -6,7 +6,7 @@ metadata:
   description: Customize Microsoft Defender for Cloud options
   ms.date: 03/23/2022
   author: elazark
-  ms.author: memildin
+  ms.author: dacurwin
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize and explore Azure for SAP workloads
   description: 'This module explores the partnership between Microsoft and SAP which allows SAP applications to run in Azure across development, test, and production scenarios alongside other Microsoft components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
@@ -37,3 +39,4 @@ units:
 - learn.wwl.migrate-modernize-explore-azure-sap-workloads.summary
 badge:
   uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads.badge
+

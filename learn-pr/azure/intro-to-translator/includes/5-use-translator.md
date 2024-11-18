@@ -22,7 +22,7 @@ After you run the code, you can play around with Translator at your own pace.
 
 ## Optional: Browse or clone the code in GitHub
 
-The source code for this entire demo is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
+The source code for this entire demo is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on X @MicrosoftLearn.
 
 You can [visit the GitHub repository here](https://github.com/MicrosoftDocs/mslearn-immersive-reader-stt).
 

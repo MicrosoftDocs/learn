@@ -1,4 +1,4 @@
-Most applications use a database to store the data used by the application. For your Tailwind Traders migration planning, it's important to understand how to migrate databases to Azure to properly support moving data to the cloud. For this process, we'll examine another component of Azure Migrate, the Azure Database Migration Service.
+Most applications use a database to store the data used by the application. For your Tailwind Traders migration planning, it's important to understand how to migrate databases to Azure to properly support moving data to the cloud. For this process, we examine another component of Azure Migrate, the Azure Database Migration Service.
 
 ## Azure Database Migration Service
 
@@ -37,12 +37,12 @@ Let's examine how to use the Database Migration Service to migrate your database
 
 For both online and offline migrations, you need to complete the following prerequisite tasks:
 
-- Download DMA
-- Create an Azure Virtual Network instance
-- Configure network security groups (NSGs)
-- Configure Azure Windows Firewall
-- Configure credentials
-- Provision your target database in Azure (size the target database appropriately for the migrated workload)
+- Download DMA.
+- Create an Azure Virtual Network instance.
+- Configure network security groups (NSGs).
+- Configure Azure Firewall.
+- Configure credentials.
+- Provision your target database in Azure (size the target database appropriately for the migrated workload).
 
 #### Step 1: Assess on-premises databases
 
@@ -64,4 +64,4 @@ When the script completes, check the target server to make sure the database is 
 
 After you complete your assessment and migrate your schema, you can migrate the structured data with the Database Migration Service.
 
-When all migration steps are complete, your schema and structured data have been migrated to the Azure SQL Database instance. You can then safely shut down and decommission your on-premises databases and servers.
+When all migration steps are complete, your schema and structured data are migrated to the Azure SQL Database instance. You can then safely shut down and decommission your on-premises databases and servers.

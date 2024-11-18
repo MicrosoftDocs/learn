@@ -1,12 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-log-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Log Analytics
   description: "You learn how to configure Log Analytics including structuring queries."
-  ms.date: 05/19/2024
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: ai-assisted
 title: Configure Log Analytics

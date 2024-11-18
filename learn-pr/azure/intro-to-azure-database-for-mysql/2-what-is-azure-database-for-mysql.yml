@@ -2,10 +2,12 @@
 uid: learn.intro-to-azure-database-for-mysql.2-what-is-azure-database-for-mysql  
 title: Exploring Azure Database for MySQL  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Exploring Azure Database for MySQL
   description: Exploring Azure Database for MySQL
-  ms.date: 07/08/2024
+  ms.date: 08/21/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-database-for-mysql.md)]
+

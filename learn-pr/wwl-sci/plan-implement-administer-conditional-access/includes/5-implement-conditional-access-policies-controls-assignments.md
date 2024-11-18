@@ -2,18 +2,18 @@ Visual Studio App Center supports Microsoft Entra Conditional Access, an advance
 
 ## Setting up Conditional Access
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
+This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
 In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and select **Conditional Access**.
 
 In **Conditional Access** settings, select **New policy** to create a policy.
 
-:::image type="content" source="../media/conditional-access-2-fe151f52.png" alt-text="Screenshot of the Microsoft Entra Conditional Access screen, listing policies that currently exist.":::
+:::image type="content" source="../media/conditional-access-2-fe151f52-0bd2bf4f.png" alt-text="Screenshot of the Microsoft Entra Conditional Access screen, listing policies that currently exist.":::
 
 
 In **New policy** settings, select **Cloud apps or actions** and select **Visual Studio App Center** as the target of the policy. Then select the other conditions that you want to apply, enable the policy, and select **Create** to save it.
 
-:::image type="content" source="../media/conditional-access-1-a9a442b4.png" alt-text="Screenshot of the Microsoft Entra Conditional Access: Cloud apps or actions page for configuration.":::
+:::image type="content" source="../media/conditional-access-1-a9a442b4-b8b266ea.png" alt-text="Screenshot of the Microsoft Entra Conditional Access: Cloud apps or actions page for configuration.":::
 
 
 ## Sign-in risk-based Conditional Access
@@ -182,12 +182,12 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
 
 ## Conditional Access Terms of Use (TOU)
 
-:::image type="content" source="../media/create-terms-identity-governance-a7c52e2f.png" alt-text="Screenshot of the Identity Governance dialog to create new Terms of Use for your cloud solutions.":::
+:::image type="content" source="../media/create-terms-identity-governance-a7c52e2f-99fd469c.png" alt-text="Screenshot of the Identity Governance dialog to create new Terms of Use for your cloud solutions.":::
 
 
-You can create Terms of Use (TOU) for your site in the Identity Governance tools. Launch the identity governance app, and choose **Terms of use** from the menu. You have to supply and PDF file with the terms for the user. You can set up several rules like when the terms will expire, or whether the user has to open them before accepting. Once created, you can build a custom conditional rule right in identity governance. Or you can save the terms and use Conditional Access in Microsoft Entra ID. To create new Terms of use you fill in the above dialog.
+You can create Terms of Use (TOU) for your site in the Identity Governance tools. Launch the identity governance app, and choose **Terms of use** from the menu. You have to supply a PDF file with the terms for the user. You can set up several rules like when the terms will expire, or whether the user has to open them before accepting. Once created, you can build a custom conditional rule right in identity governance. Or you can save the terms and use Conditional Access in Microsoft Entra ID. To create new Terms of use you fill in the above dialog.
 
-:::image type="content" source="../media/terms-of-use-conditional-access-a2c6eca2.png" alt-text="Screenshot of the Microsoft Entra conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.":::
+:::image type="content" source="../media/terms-of-use-conditional-access-a2c6eca2-af768c82.png" alt-text="Screenshot of the Microsoft Entra conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.":::
 
 
 The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use. Additionally, organizations can expire the consent given or change the terms of use, and request the user attests again.

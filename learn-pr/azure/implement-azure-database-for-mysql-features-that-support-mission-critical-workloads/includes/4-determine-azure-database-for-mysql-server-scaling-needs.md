@@ -1,4 +1,5 @@
-When it comes to sizing compute resources, consider whether existing and forecasted usage are well within capacity. You can get the required information by monitoring basic performance metrics, such as CPU and RAM utilization. It might be possible to use the slow query log to identify and optimize poorly performing queries and remedy the performance problem without scaling the compute size. You should also monitor I/O performance to make sure database reads and writes aren't a performance bottleneck. Another option to effectively increase available capacity on the main database is to provision a read replica to shift query load.
+When it comes to sizing compute resources, consider whether existing and forecasted usage is well within capacity. You can get the required information by monitoring basic performance metrics, such as CPU and RAM utilization. It might be possible to use the slow query log to identify and optimize poorly performing queries and remedy the performance problem without scaling the compute size. You should also monitor I/O performance to make sure database reads and writes aren't a performance bottleneck. Another option to effectively increase available capacity on the main database is to provision a read replica to shift query load.
+
 ## Monitor database performance metrics
 
 The Azure portal presents access to a [number of metrics](/azure/mysql/flexible-server/concepts-monitoring) that you can use to monitor database performance. For example, you can visualize the CPU percentage used by a flexible server.
@@ -11,11 +12,11 @@ You can view your performance metrics in the monitoring overview workbook. To ac
 
 1. In the Azure portal, on the left pane, under Monitoring for your Azure Database for MySQL flexible server instance, select **Workbooks**.
 
- :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png" alt-text="Screenshot of the monitoring section showing the list of workbooks." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png":::
+     :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png" alt-text="Screenshot of the monitoring section showing the list of workbooks." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitor-workbooks.png":::
 
-1. Select the **Overview** workbook. You will see graphs showing connections, CPU and memory usage, and other metrics, like the below screenshot.
+2. Select the **Overview** workbook. You'll see graphs showing connections, CPU and memory usage, and other metrics, as in the following screenshot.
 
- :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitoring-workbook-overview.png" alt-text="Screenshot of the monitoring overview workbook." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitoring-workbook-overview.png":::
+     :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitoring-workbook-overview.png" alt-text="Screenshot of the monitoring overview workbook." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/monitoring-workbook-overview.png":::
 
 In addition to analyzing these metrics, you can view server diagnostics for insight into performance on the **Logs** panel of your flexible server.
 
@@ -27,11 +28,11 @@ To enable the Slow query log feature, on the page associated with your flexible 
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/server-logs-enable-slow-query-logs.png" alt-text="Screenshot of the Azure portal page to enable slow query server logs." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/server-logs-enable-slow-query-logs.png":::
 
-Once slow query logging is enabled, you can view query performance insights using log analytics, or visualization workbooks. To access the query performance insights, follow the same steps as above but select **Query Performance Insights** instead of Overview.
+After slow query logging is enabled, you can view query performance insights using log analytics, or visualization workbooks. To access the query performance insights, follow the same steps as above but select **Query Performance Insights** instead of Overview.
 
-You'll see several visualizations, including the top 5 longest queries, or a summary of slow queries, as shown in the following screenshot.
+You'll see several visualizations, including the top five longest queries, or a summary of slow queries, as shown in the following screenshot.
 
-:::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/long-query.png" alt-text="Screenshot of the top 5 longest queries, and summary of slow queries." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/long-query.png":::
+:::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/long-query.png" alt-text="Screenshot of the top five longest queries, and summary of slow queries." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/long-query.png":::
 
 ## Tune server performance parameters
 
@@ -49,7 +50,7 @@ Azure Database for MySQL has two ways to allocate disk IO capacity: pre-provisio
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-additional-iops.png" alt-text="Screenshot of settings panel to add additional pre-provisioned IOPS." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-additional-iops.png":::
 
-In the event of a spike, server performance might degrade temporarily if I/O operations exceed the allocated value. However, capacity and costs are predictable.
+If a spike occurs, server performance might degrade temporarily if I/O operations exceed the allocated value. However, capacity and costs are predictable.
 
 The **Autoscale IOPS** feature is built for unpredictable, spiky, or growing database traffic. With this feature enabled, IOPS scale dynamically, so manual adjustment isn't required to optimize cost or performance as the workflow fluctuates. As a result, using the Autoscale IOPS feature handles unpredicted workload spikes transparently, and you pay only for operations consumed, not for unused capacity.
 
@@ -57,13 +58,12 @@ For an existing MySQL flexible server, you can enable the Autoscale IOPS feature
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/create-flexible-server-autoscale-iops.png" alt-text="Screenshot of the creation options to autoscale IOPS." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/create-flexible-server-autoscale-iops.png":::
 
-> [!NOTE]  
->  
+> [!NOTE]
 > You can also enable the Autoscale IOPS feature during server creation.
 
 ### Monitor IOPS
 
-Monitoring IOPS allows you to determine how close your instance is to the maximum IOPS, if you are using pre-provisioned IOPS, or to the compute size's maximum in the case of the Autoscale IOPS feature.
+Monitoring IOPS allows you to determine how close your instance is to the maximum IOPS, if you're using pre-provisioned IOPS, or to the compute size's maximum if using the Autoscale IOPS feature.
 
 To monitor IOPS performance, navigate to the **Metrics** blade under the **Monitoring** section or to the **Overview** blade, if you want to view IOPS performance along with other common metrics.
 
@@ -79,7 +79,7 @@ To provision a read replica, in the Azure portal, on the page associated with yo
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica-button.png" alt-text="Screenshot of the add replica button.":::
 
-After you create the read replica, you can configure the replica server name and its compute and storage settings. You cannot change some settings, like authentication, which are inherited from the primary server.
+After you create the read replica, you can configure the replica server name and its compute and storage settings. You can't change some settings, like authentication, which are inherited from the primary server.
 
 :::image type="content" source="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png" alt-text="Screenshot of the adding a replica." lightbox="../media/4-determine-azure-database-for-mysql-server-scaling-needs/add-replica.png":::
 

@@ -2,11 +2,13 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.validate-resources
 title: Validate resources in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Validate resources in Azure
   description: Validate resources in Azure
   ms.date: 11/21/2023
-  author: tfitzmac
-  ms.author: tomfitz
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -36,3 +38,4 @@ quiz:
     - content: "When you use custom code to call the `validateMoveResources` REST API."
       isCorrect: true
       explanation: "To call any Azure REST API method from custom code, you must obtain and pass a valid access token."
+

@@ -6,7 +6,7 @@ Let's review some benefits and scenarios of Azure Functions that make it a great
 
 :::image type="content" source="../media/select-azure-functions.png" alt-text="Flowchart for selecting Azure Functions solutions to build new workloads." border="false":::
 
-- Azure Functions provides intrinsic scalability. Azure only charges you for the resources you use.
+- Azure Functions provides intrinsic scalability. You're charged only for the resources you use.
 
 - With Azure Functions, you can write your function code in the language of your choice.
 

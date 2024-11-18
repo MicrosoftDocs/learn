@@ -4,7 +4,7 @@ In this unit, you gain an understanding of Identity architecture.
 
 ASP.NET Core Identity is a membership system that adds user registration and sign-in capabilities to an ASP.NET Core web UI. The membership system handles both authentication and authorization concerns. Authentication is concerned with who you are. Authorization is concerned with what you're permitted to do. Authentication is therefore a prerequisite for authorization.
 
-As an alternative to local account creation, Identity supports external sign-in providers such as Facebook and Twitter. User sessions are preserved using cookie-based authentication. By default, a cookie is created upon sign in and destroyed upon sign out.
+As an alternative to local account creation, Identity supports external sign-in providers such as Facebook and X. User sessions are preserved using cookie-based authentication. By default, a cookie is created upon sign in and destroyed upon sign out.
 
 Membership data is persisted using a data store and data access technology of your choosing. The default data access technology is an Object-Relational Mapper (O/RM) called Entity Framework (EF) Core. The default data store is SQL Server.
 

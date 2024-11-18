@@ -12,6 +12,7 @@ Now that you've finished this module, you should be able to:
 ## References
 
 - [About GitHub Copilot Enterprise](https://docs.github.com/en/copilot/github-copilot-enterprise/overview/about-github-copilot-enterprise)
+- [Managing Copilot knowledge bases](https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-github-copilot-in-your-organization/enhancing-copilot-for-your-organization/managing-copilot-knowledge-bases)
 - [Enabling and setting up GitHub Copilot for Business](https://docs.github.com/en/copilot/managing-copilot-business/enabling-and-setting-up-github-copilot-business)
 - [About GitHub Copilot for Business](https://docs.github.com/copilot/overview-of-github-copilot/about-github-copilot-for-business)
 - [About GitHub Copilot for Enterprise](https://docs.github.com/en/copilot/github-copilot-enterprise/overview/about-github-copilot-enterprise)

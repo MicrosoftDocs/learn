@@ -5,7 +5,7 @@ To create an Azure AI Search solution, you need to create an **Azure AI Search**
 When you create an Azure AI Search resource, you must specify a *pricing tier*. The pricing tier you select determines the capacity limitations of your search service and the configuration options available to you, as well as the cost of the service. The available pricing tiers are:
 
 - **Free (F)**. Use this tier to explore the service or try the tutorials in the product documentation.
-- **Basic (B)**: Use this tier for small-scale search solutions that include a maximum of 15 indexes and 2 GB of index data.
+- **Basic (B)**: Use this tier for small-scale search solutions that include a maximum of 15 indexes and 5 GB of index data.
 - **Standard (S)**: Use this tier for enterprise-scale solutions. There are multiple variants of this tier, including **S**, **S2**, and **S3**; which offer increasing capacity in terms of indexes and storage, and **S3HD**, which is optimized for fast read performance on smaller numbers of indexes.
 - **Storage Optimized (L)**: Use a storage optimized tier (**L1** or **L2**) when you need to create large indexes, at the cost of higher query latency.
 

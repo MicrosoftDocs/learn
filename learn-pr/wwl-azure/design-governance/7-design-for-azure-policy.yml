@@ -2,9 +2,11 @@
 uid: learn.wwl.design-governance.design-for-azure-policy
 title: Design for Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Policy
   description: "Design for Azure Policy"
-  ms.date: 11/15/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

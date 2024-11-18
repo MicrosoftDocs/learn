@@ -52,8 +52,6 @@ To create a new service principal:
 
 1. On the new service principal page, copy the values of the **Display name** and the **Application (client) ID** to save for later.
 
-   :::image type="content" source="../media/application-id-inline.png" alt-text="Screenshot of the application page in the portal with the Application (client) ID highlighted." lightbox="../media/application-id.png":::
-
 To use the service principal (application), you need to know the service principal's password that can be found with these steps:
 
 1. From the Azure portal, search for and select **Microsoft Entra ID**, and then select **App registrations** from the left pane.

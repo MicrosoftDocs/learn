@@ -23,7 +23,7 @@ In this unit, you create a small project structure using Visual Studio Code. The
 1. Name the folder **simple-website**, and then select **Select Folder**.
 
    > [!IMPORTANT]
-   > If a **Visual Studio Code** dialog appears, select **Trust the authors of all files in the parent folder...**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the folder, so it's safe.
+   > If a Visual Studio Code dialog appears, select **Trust the authors of all files in the parent folder...**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the folder, so it's safe.
 
 ## Create some files
 
@@ -47,7 +47,7 @@ Setting up three files helps keep your website project organized. The separation
 
 ### Install extensions or packages
 
-You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind that these extensions are community-developed resources and there are often several solutions for the same type of feature. You can install extensions individually in your editor, or several at once using the command line.
+You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind that these extensions are community-developed resources, and there are often several solutions for the same type of feature. You can install extensions individually in your editor, or several at once using the command line.
 
 For web development, all you need right now is **open in browser**. This extension helps you to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
 
@@ -55,7 +55,7 @@ To install this extension, use the following steps:
 
 1. Select the **Extensions** icon on the vertical **Activity Bar** (left pane).
 
-1. Enter "open in" in the search box, and then select the **open in browser** extension that is published by *TechER*.
+1. Enter **open in** in the search box, then select the **open in browser** extension that's published by *TechER*.
 
 1. Select **Install**, and Visual Studio Code installs the extension.
 

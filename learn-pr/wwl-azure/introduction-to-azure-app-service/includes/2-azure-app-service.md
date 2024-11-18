@@ -14,7 +14,7 @@ The Azure portal provides out-of-the-box continuous integration and deployment w
 
 ## Deployment slots
 
-When you deploy your web app you can use a separate deployment slot instead of the default production slot when you're running in the Standard App Service Plan tier or better. Deployment slots are live apps with their own host names. App content and configurations elements can be swapped between two deployment slots, including the production slot.
+When deploying a web app you can use a separate deployment slot instead of the default production slot when you're running in the Standard App Service Plan tier or better. Deployment slots are live apps with their own host names. App content and configurations elements can be swapped between two deployment slots, including the production slot.
 
 ## App Service on Linux
 
@@ -32,4 +32,5 @@ App Service on Linux does have some limitations:
 
 * App Service on Linux isn't supported on Shared pricing tier.
 * The Azure portal shows only features that currently work for Linux apps. As features are enabled, they're activated on the portal.
-* When deployed to built-in images, your code and content are allocated a storage volume for web content, backed by Azure Storage. The disk latency of this volume is higher and more variable than the latency of the container filesystem. Apps that require heavy read-only access to content files may benefit from the custom container option, which places files in the container filesystem instead of on the content volume.
+* When deployed to built-in images, your code and content are allocated a storage volume for web content, backed by Azure Storage. The disk latency of this volume is higher and more variable than the latency of the container filesystem. Apps that require heavy read-only access to content files might benefit from the custom container option, which places files in the container filesystem instead of on the content volume.
+

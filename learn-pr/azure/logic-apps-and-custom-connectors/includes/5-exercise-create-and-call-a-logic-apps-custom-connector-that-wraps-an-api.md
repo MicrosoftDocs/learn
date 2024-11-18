@@ -7,6 +7,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Integration**, then find and select **Logic App**.
+1. Select the **Consumption** radio button, then select the **Select** button.
 
 1. On the **Create Logic App** pane, under **Basics**, enter the following values for each setting.
 
@@ -20,10 +21,6 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
    | Publish | Workflow |
    | Region | Select a region near you. |
    | Enable log analytics | No |
-   | **Plan** |
-   | Plan type | Consumption |
-   | **Zone redundancy** |
-   | Zone redundancy | Leave as default (disabled) |
    | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]

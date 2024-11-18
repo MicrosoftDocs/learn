@@ -2,6 +2,8 @@
 uid: learn.wwl.design-implement-azure-expressroute.configure-peering-for-expressroute-deployment
 title: Configure peering for an ExpressRoute deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure peering for an ExpressRoute deployment
   description: "Configure peering for an ExpressRoute deployment"
   ms.date: 11/02/2023

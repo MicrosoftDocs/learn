@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.azure-limitations-for
 title: Azure limitations for Azure Virtual Desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure limitations for Azure Virtual Desktop
   description: "Azure limitations for Azure Virtual Desktop"
   ms.date: 06/21/2023

@@ -2,10 +2,12 @@
 uid: learn.azure.azure-netapp-files-sap-hana.understand-application-volume-groups
 title: Understand Azure NetApp Files application volume groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand application volume groups in Azure NetApp Files
   description: Learn the basic features and concepts of Azure NetApp Files.   
-  ms.date: 02/27/2023
+  ms.date: 09/06/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit

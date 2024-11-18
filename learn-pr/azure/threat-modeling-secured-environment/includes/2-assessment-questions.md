@@ -6,7 +6,7 @@ These questions help us:
 - Visualize how the application integrates with the environment.
 - Determine which security controls work best to help reduce or eliminate risks.
 
-The following questions are a great starting point. You may add more depending on your specific needs.
+The following questions are a great starting point. You can add more depending on your specific needs.
 
 [!INCLUDE [Functionality category](../includes/2-assessment-questions-1-functionality.md)]
 

@@ -2,9 +2,11 @@
 uid: learn.wwl.design-governance.design-for-subscriptions
 title: Design for subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for subscriptions
   description: "Design for subscriptions"
-  ms.date: 11/15/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

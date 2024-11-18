@@ -19,7 +19,7 @@ When structured well, Cost Management helps you to inform people about the Azure
 
 ### Accountability
 
-Attribute costs in your organization to make sure that the people responsible are accountable for their team's spending. To fully understand your organization's Azure spending, you should organize your resources to maximize insight into cost attribution. Good organization helps to manage and reduce costs and hold people accountable for efficient spending in your organization. Once properly organized, you can begin creating budgets in Cost Management to track and alert on your spending. In this lesson, you learn how to use our budgets tool to make sure that your teams are held responsible for the costs that they accrue.
+Attribute costs in your organization to make sure that the people responsible are accountable for their team's spending. To fully understand your organization's Azure spending, you should organize your resources to maximize insight into cost attribution. Good organization helps to manage and reduce costs, and it holds people accountable for efficient spending in your organization. Once properly organized, you can begin creating budgets in Cost Management to track and alert on your spending. In this lesson, you learn how to use our budgets tool to make sure that your teams are held responsible for the costs that they accrue.
 
 ### Optimization
 

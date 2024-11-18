@@ -29,7 +29,7 @@ The nature of cloud-native apps, which consist of distributed microservices that
 > [!IMPORTANT]
 > To ensure that your entire app is observable, you should ensure that all development teams consider the three pillars of observability in their microservices: **Logging**, **Metrics**, and **Tracing**.
 
-The three pillars of observability are three different types of records that store the behavior of software components for later analysis:
+The three pillars of observability are three different types of records that store the behavior of software integrations for later analysis:
 
 - **Log**: a timestamped text record of what happened during the processing of a request.
 - **Metric**: a measurement of a service captured at runtime. Metric values can be aggregated into statistics about a process, including:

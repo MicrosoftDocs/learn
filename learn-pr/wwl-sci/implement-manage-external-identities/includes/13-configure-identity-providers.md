@@ -116,7 +116,7 @@ Other applications' common endpoints might not support Google users. Google gues
 
 If Google guest users try to use a link like `https://myapps.microsoft.com` or `https://portal.azure.com`, they'll get an error.
 
-You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https://myapps.microsoft.com/signin/Twitter/ application ID?tenantId= your tenant ID`
+You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https://myapps.microsoft.com/signin/x/ application ID?tenantId= your tenant ID`
 
 ### Step 1: Configure a Google developer project
 

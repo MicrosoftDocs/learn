@@ -1,12 +1,13 @@
-Food and refreshments are an important part of any destination. They can enhance the mood, theme, and experience of the visitors. Whether it’s a spa, a golf course, or something else, let’s think about what kind of food your destination offers. Use Copilot in Bing to do some research, and Image Creator to visualize the menu.
+Food and refreshments are an important part of any destination. They can enhance the mood, theme, and experience of the visitors. Whether it’s a hotel, a theme park, or something else, let’s think about what kind of food your destination offers. Use Copilot to visualize the menu.
 
 ## Ideate
 
-Return to your conversation in Bing. You start by ideating to think about some food options that would match your theme.
+Return to your conversation in Copilot. You start by ideating to think about some food options that would match your theme.
 
 **Steps**:
-1. Copy the sample prompt and edit as needed. 
+1. Copy the sample prompt and edit as needed.
 2. Paste the prompt into the chat.
+3. Review the response, and iterate as needed until you're happy with the output.
 
 **Sample prompt**:
 ``` 
@@ -20,55 +21,37 @@ The name and description should also embrace the theme
 of our destination. Please provide 5 ideas.   
 
 ```
-> [!TIP]
-> **Specifying format**. You specified a "table" format for the output, which makes it very easy for you to copy and paste and put right into something like Microsoft Excel.
+> [!NOTE]
+> **Specify format**. You specified a "table" format for the output, which makes it very easy for you to copy and paste and put right into a spreadsheet like Microsoft Excel.
 
 **Sample response**:
 
-Note the following sample response is in markdown syntax so it doesn't look formatted like a table the way it does in your browser.
-```
-| Name       | Description    
-|--------------|-----------
-| Forest Floor Crostini | A savory and elegant appetizer made 
-with toasted bread slices topped with sautéed wild mushrooms, 
-garlic, thyme, and goat cheese. Drizzled with truffle oil and 
-balsamic vinegar.     
-| Sunset Salad     | A colorful and refreshing salad made 
-with roasted beets, arugula, orange segments, feta cheese, 
-and candied walnuts. Tossed with a citrus-honey dressing.  
-| Lobster in the Sky    | A smooth and luxurious soup made with 
-lobster meat, onion, celery, carrot, cream, and sherry. 
-Garnished with chives and crème fraîche.
-| Tree Trunk Steak    | A tender and succulent steak made 
-with grass-fed beef, seasoned with salt and pepper, and 
-grilled to perfection. Served with garlic mashed potatoes, 
-asparagus, and red wine sauce.
-| Sparling Star    | A sparkling and festive drink made 
-with champagne, brandy, sugar cube, and bitters. 
-Served with a lemon twist and a maraschino cherry.
+> ![Screenshot of a sample menu suggested by Copilot, formatted as a table.](../media/menu-table.png)
 
-```
-> [!NOTE]
-> **Iterate as needed!** You can iterate and ask for more ideas. However, pay attention to the number of prompts you have left.
+> [!TIP]
+> **Iterate as needed!** Perhaps you'd like a vegetarian menu, or you'd like your dishes to be served family style.
 
-## Generate an image
+## Generate the image
 Select one or two of the menu items and create an image for each of them.
+
+> [!TIP]
+> Edit or expand the suggested prompt to add your own details.
 
 **Steps**:
 1. Copy the sample prompt and edit it as you need.
 2. Paste the prompt into the chat.
 3. Select an image you like and download it.
 
-If it can't generate an image for you, you can go to [Image Creator](https://www.bing.com/images/create) to generate images from text. If you have troubles using this prompt, which relies on the context of the conversation, try using the description you created for the prompt.
+If you have trouble using this prompt, which relies on the context of the conversation, try using the description you created for the prompt.
 
 **Sample prompt**:
 ```
 Can you create an image for the first menu item suggested?
 ```
 **Sample response**:
-![Screenshot of the Food image.](../media/food.png)
-
-Image created for [Forest Floor Crostini.](https://www.bing.com/images/create/toasted-bread-slices-topped-with-sautc3a9ed-wild-mush/649afba929ce4dbda62b311849131d62?id=lht3G5PBU%2fXK%2fF%2b5OpEbfg%3d%3d&view=detailv2&idpp=genimg&idpclose=1&FORM=SYDBIC)
+> Sure! here is an image of the Forest Forager Salad.
+>
+> ![Screenshot of the Forest Forager Salad.](../media/food.png)
 
 You need at least one image for food, but you're welcome to make more.  
 
@@ -76,56 +59,82 @@ You need at least one image for food, but you're welcome to make more.
 A signature drink is a drink that reflects your personality or your destination’s theme. It should feel special. It could be anything, as long as it suits your destination.
 
 ### Research for inspiration
-Use Copilot to do some research. Copilot can search the internet and bring back links, so let's ask it to gather inspiration for us. If you find an image from researching that you like because of the colors, or the shape of a glass, save a link to that image. Later, you can use that image to influence your outcomes.
+Use Copilot to do some research. Copilot can search the internet and bring back links, so let's ask it to gather inspiration for us. If you find an image from researching that you like because of the colors, the shape of the glass, or the lighting, save the image. At the end of this exercise, you can use that image to influence your outcomes.
 
 **Steps**:
-1. Copy the sample prompt and edit it as needed to reflect what you want.
+1. Copy the sample prompt and edit it as needed to reflect your vision.
 2. Paste this prompt into the chat.
-3. Explore the response it gave you.
-4. Save the URL to an image you like. Later, we share a neat trick.
+3. Explore the response it gave you, and refine as needed.
+4. Save any images you might want to use later to influence image iterations.
 
 **Sample prompt**:
 ```
-A signature drink is a refreshment that truly embodies the theme of the destination. It should be unique and an experience it itself. It might embrace local ingredients, culture or cues from the theme that influence how they look, how they are served or how they are made. They delight customers. We need to find some photo inspiration to help generate ideas for refreshments that would be fun to enjoy. Can you provide some photo inspiration of unique refreshments that are highly creative - it could be their colors, their ingredients, the container they are served in, how they are made or how someone needs to enjoy it.
+A signature drink is a refreshment that truly embodies the theme of
+the destination. It should be unique and an experience it itself. 
+It might embrace local ingredients, culture, or cues from the theme 
+that influence how they look, how they're served, or how they're made. 
+They delight customers. We need to find some photo inspiration to help 
+generate ideas for refreshments that would be fun to enjoy. Can you 
+provide some inspiration for unique refreshments that are highly 
+creative? It could be their colors, their ingredients, the container 
+they're served in, how they're made, or how someone needs to enjoy it.
 ```
 
 **Sample response**:
-```
-Sure, I can help you with that. I searched the web for some photos of unique refreshments that might inspire you. Here are some examples:
-•	A drink served in a light bulb, with a straw and a colorful garnish. This is a fun and quirky way to present a drink, and it also creates a nice contrast between the glass and the liquid.
-•	A drink made with dry ice, which creates a smoky and dramatic effect. This is a great way to add some flair and excitement to a drink, and it also enhances the sensory experience.
-•	A drink served in a coconut, with a straw and a tropical umbrella. This is a simple and natural way to serve a drink, and it also evokes a sense of freshness and exoticism.
-•	A drink served in a hollowed-out pineapple, with a straw and a flower. This is another way to use a fruit as a container, and it also adds some sweetness and flavor to the drink.
-•	A drink served in a martini glass, with a cotton candy cloud on top. This is a whimsical and playful way to serve a drink, and it also creates a contrast between the soft and fluffy cotton candy and the liquid.
 
-```
-----
+> Sure, I can help you brainstorm some vivid ideas for unique refreshments!
+>
+> - **Forest Elixir**: A vibrant green drink made from freshly squeezed cucumber, mint, and a hint of lime, served in a carved bamboo cup with a sprig of rosemary.
+> - **Berry Blossom Iced Tea**: A deep purple tea brewed with a mix of wild berries and hibiscus, garnished with edible flowers and served in a mason jar with a twist of lemon.
+> - **Sunrise Citrus Spritzer**: Layers of orange, grapefruit, and passion fruit juices topped with sparkling water, creating a gradient effect in a tall, clear glass. Each sip reveals a new burst of flavor.
+> - **Mystic Mist Lemonade**: A refreshing blue butterfly pea flower lemonade that changes color to a vibrant purple when stirred with a bit of lemon juice. Served in a glass teapot so guests can witness the transformation.
+> - **Enchanted Herbal Infusion**: A calming blend of chamomile, lavender, and honey, served in a glass teacup that’s been lightly smoked for a mystical, aromatic experience.
+> - **Acorn Ambrosia**: A nutty, creamy concoction made from almond milk, vanilla, and a hint of maple syrup. Served in a hollowed-out acorn shell with a dusting of cinnamon on top, offering a whimsical touch.
+> 
+> Each of these drinks offers a unique sensory experience that complements the enchanting theme of your destination. Imagine how these could come to life visually! Ready to dive into one of these ideas or another element of our project?
 
-## Ideate with Copilot in Bing
+> [!TIP]
+> You can iterate, and ask Copilot to refine the ideas or generate more ideas.
 
-Ask Copilot to imagine three signature drink ideas that would embrace the theme of your destination. Remember to give any details to help craft the right results - consider the container, accessories, regional flavors or anything else that make it special.
-Steps:
+## Ideate with Copilot
+
+Ask Copilot to imagine three signature drink ideas that would embrace the theme of your destination. Remember to give any details to help craft the right results - consider the container, accessories, regional flavors, or anything else that make it special.
+
+> [!TIP]
+> Edit or expand the suggested prompt to add your own details.
+
+**Steps**:
 1. Copy the sample prompt and edit it as needed.
 2. Paste the prompt into the chat.
 
 **Sample prompt**:
 ```
-We need to ideate about a signature drink. It should embrace the theme of the 
-destination and should surprise 
-and delight people. What it is served in matters, 
-the glass or container should be really unique and it
-should embrace the theme of the destination. 
-Can you give me three ideas for signature refreshments or drinks, but please be inclusive and include something in your suggestions for everyone. Please also name them something clever that reflects the theme. 
+We need to ideate about a signature drink. It should embrace 
+the theme of the destination and should surprise and delight 
+people. What it's served in matters, the glass or container 
+should be really unique and it should embrace the theme of 
+the destination. 
+
+Can you give me three ideas for signature refreshments or drinks? 
+Please be inclusive, and include something in your suggestions 
+for everyone. Please also name them something clever that reflects 
+the theme.
 ```
 
 **Sample response**:
 
-```
-Sure, I can help you with that. Here are three possible ideas for signature refreshments or drinks that match the theme of your destination, along with some clever names:
-- **The Acorn**: A drink made with almond milk, coffee, and hazelnut liqueur, served in a ceramic cup shaped like an acorn. This drink is nutty and smooth, and it also resembles the food of the forest animals.
-- **The Leaf**: A drink made with green tea, lime juice, and honey, served in a glass that has a leaf-shaped rim. This drink is refreshing and soothing, and it also creates a nice green color that matches the foliage of the trees.
-- **The Owl**: A drink made with chocolate milk, whipped cream, and Oreo cookies, served in a glass that has two Oreo cookies as eyes. This drink is sweet and creamy, and it also looks like the face of an owl, the nocturnal bird of the forest.
-```
+> Absolutely, let's craft some signature drinks that embody the essence of our magical destination:
+> 
+> **Acorn Ambrosia**
+> This nutty, creamy elixir combines almond milk, vanilla, and a hint of maple syrup, served in a hollowed-out acorn shell with a dusting of cinnamon on top. It's a whimsical and cozy delight that brings a touch of forest charm to every sip.
+> 
+> **Enchanted Forest Fizz**
+> A refreshing blend of elderflower, mint, and cucumber infused with sparkling water, served in a glass shaped like a forest leaf. Garnished with a twist of lemon and a sprig of rosemary, it offers a crisp, revitalizing taste of nature.
+> 
+> **Woodland Berry Breeze**
+> A vibrant mix of wild berries, hibiscus tea, and a splash of honey, served in a carved wooden cup adorned with edible flowers. This drink is not only visually stunning but also provides a burst of fruity flavors, perfect for anyone seeking a sweet yet sophisticated refreshment.
+> 
+> Each of these drinks is designed to surprise and delight, capturing the enchanting spirit of the destination while offering something unique and memorable for all guests. Which one excites you the most?
 
 ## Generate an image
 Now you generate an image for one of the drink ideas.
@@ -133,8 +142,9 @@ Now you generate an image for one of the drink ideas.
 **Steps**:
 1. Copy the sample prompt and edit it as you need.
 2. Paste the prompt into the chat.
-3. Select an image you like.
-4. Download that image.
+3. Review the output, and iterate as needed until you're happy with the output.
+4. Select an image you like.
+5. Download that image.
 
 **Sample prompt**:
 ```
@@ -142,49 +152,43 @@ Can you create an image to visualize the first drink you
 suggested called The Acorn?
 ```
 **Sample response**:
-Sample image created.
-![Screenshot of the drink image.](../media/mug.png)
+> Hope you love the whimsy of this forest-inspired drink!🍂
+> ![Screenshot of the drink image.](../media/mug.png)
 
-
-Image created for Acorn drink.
-
-
-## Optional: Iterate on image with reference
-
-This step is optional, but it's fun.
+## Iterate on image with reference
 
 Remember those images you looked at earlier for inspiration? Let's explore if you can use them to influence your output. Select something you liked about your inspiration photo, like the colors or the shape of the glass, and tell Copilot what to do.
 
-Use Copilot Image input as shown in the following screenshot to upload or share a link to an image.
-![Screenshot of Copilot chat window.](../media/bing-image.png)
-
+You can upload an image using the **Upload image** icon in the search bar.
+![Screenshot of Copilot chat window.](../media/copilot-image.png)
 
 **Steps**:
 1. Copy the sample prompt and edit it needed.
 2. When you paste it into the chat, select the image icon to the right of the chat box.
-3. Upload a reference photo or use the URL of an image you want to reference.
-4. Submit the prompt to the chat.
+3. Upload a photo you want to reference.
+4. Submit the prompt  and your reference image to the chat.
 5. Decide if this image is more interesting to you!
 
 **Sample prompt**:
 ```
 Could you take The Acorn image just created and add some of the smoke shown in this image?
-<put your image url here or add it via the 
-Image icon on the input box >
+*Upload your image using the  the Upload image icon on the input box.*
 
 ```
-This sample is how it applied that reference image to create a new one.
-![Screenshot of the Mug image.](../media/acorn.png)
+This sample is how Copilot applied that reference image to create a new one.
+> ![Screenshot of the Mug image.](../media/acorn.png)
+
+Try some of the other photos you saved for inspiration until you have one you're happy with.
 
 > [!TIP]
-> This prompt relies on the context of the conversation. If Copilot can't generate an image for you, try including the the description of the image you created in the prompt.
+> This prompt relies on the context of the conversation. If Copilot can't generate an image for you, try including the description of the image you created in the prompt.
 
 ## Key takeaways and further exploration
 
 Key takeaways from this unit:
 
-- Research, ideate, and create in one place. Copilot for Bing can search the web and provide links to references.  
-- The multimodal capabilities in Copilot for Bing enable images as input.  
+- Research, ideate, and create in one place. Copilot can search the web and provide links to references.  
+- The multimodal capabilities in Copilot enable images as input.  
 
 Explore ways to refine your prompts:
 

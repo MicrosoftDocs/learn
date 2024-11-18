@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-cost-management-azure.describe-azure-tool
 title: Describe the Microsoft Cost Management tool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Microsoft Cost Management tool
   description: "Describe the Microsoft Cost Management tool"
-  ms.date: 03/12/2024
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

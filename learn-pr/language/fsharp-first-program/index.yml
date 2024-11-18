@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/24/2023
   author: softchris
   ms.author: chnoring
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: fsharp

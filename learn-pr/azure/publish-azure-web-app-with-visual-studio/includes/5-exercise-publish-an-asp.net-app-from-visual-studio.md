@@ -13,7 +13,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. In the **Subscription** drop-down, select **Concierge Subscription**.
 
-1. Near the bottom edge of the dialog, select the **Create a instance** link to open the **App Service (Windows)** dialog.
+1. Select **+Create new** to open the **App Service (Windows)** dialog.
 
 ### Configure your new Azure App Service
 
@@ -27,7 +27,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
     - **Resource Group:** Select the existing <rgn>[sandbox resource group name]</rgn> resource group.
 
-    - **Hosting Plan:** The hosting plan specifies the location, size, and features of the web server farm that hosts your app.  For this exercise, create a new hosting plan.
+    - **Hosting Plan:** The hosting plan specifies the location, size, and features of the web server farm that hosts your app. For this exercise, create a new hosting plan.
 
         Select **New** next to the hosting plan. In the Configure Hosting Plan window that appears, change the **Size** to **Shared** and select **OK**.
 

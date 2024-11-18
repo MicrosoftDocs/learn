@@ -1,5 +1,4 @@
-Azure Database for MySQL - Flexible Server is a fully managed MySQL database as a service (DBaaS) offering on Azure that can handle mission-critical workloads with resiliency, predictable performance, and dynamic scalability.
-Azure Database for MySQL – Flexible Server has several features that support mission-critical operations. This module will cover features related to security, business continuity and disaster recovery, and performance.
+Azure Database for MySQL - Flexible Server is a fully managed MySQL database as a service (DBaaS) offering on Azure that can handle mission-critical workloads with resiliency, predictable performance, and dynamic scalability. Azure Database for MySQL – Flexible Server has several features that support mission-critical operations. This module covers features related to security, business continuity and disaster recovery, and performance.
 
 ## Example scenario
 
@@ -9,7 +8,7 @@ WT's technology department has grown and now includes a data science team in add
 
 In addition, as WT hires more employees, their DBA team has struggled to keep up with managing users and permissions. With the migration to Azure, you want to centralize user management, authentication, and authorization.
 
-You want to keep using MySQL, but you also know that Azure Database for MySQL – Flexible Server provides features that are not readily available on self-hosted databases. You also want to review Azure's MySQL features to maximize your cloud migration value.
+You want to keep using MySQL, but you also know that Azure Database for MySQL – Flexible Server provides features that aren't readily available on self-hosted databases. You also want to review Azure's MySQL features to maximize your cloud migration value.
 
 ## What you will do
 

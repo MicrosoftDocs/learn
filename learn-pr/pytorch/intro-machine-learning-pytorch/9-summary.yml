@@ -2,11 +2,13 @@
 uid: learn.pytorch.intro-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 08/05/2023
+  ms.author: sgilley
+  ms.date: 08/22/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

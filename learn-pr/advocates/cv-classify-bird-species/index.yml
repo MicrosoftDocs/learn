@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.advocates.cv-classify-bird-species
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Classify endangered bird species with Custom Vision
   description: Learn how to use Azure AI Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
   author: cassiebreviu
@@ -9,6 +11,7 @@ metadata:
   ms.service: azure-ai-custom-vision
   ms.topic: module
   ms.collection:
+    - TBD
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title:  Classify endangered bird species with Custom Vision
@@ -49,3 +52,4 @@ units:
   - learn.advocates.cv-classify-bird-species.7-summary
 badge:
   uid: learn.advocates.cv-classify-bird-species.badge
+

@@ -10,9 +10,11 @@ Deleting the GitHub Codespaces environment ensures that you can maximize the amo
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
-1. Locate your currently running codespace in the list of codespaces.
+1. Locate your currently running Codespace in the list of Codespaces.
 
-1. Open the context menu for the codespace and then select **Delete**.
+1. Open the context menu for the Codespace (**...**) and select **Delete**.
+
+1. Select **Delete** to confirm deletion.
 
 ###### [Develop locally](#tab/visual-studio-code)
 
@@ -20,10 +22,10 @@ You aren't necessarily required to clean up your local environment, but you can 
 
 1. Open the **Command Palette**.
 
-1. Search for and then select **Dev Containers: Reopen Folder Locally**.
+1. Search for and select **Dev Containers: Reopen Folder Locally**.
 
 > [!TIP]
-> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to delete the container instance, container image, and volumes from Docker to free up more space on your local machine.
 
 ---
 

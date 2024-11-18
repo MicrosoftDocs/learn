@@ -55,7 +55,7 @@ The optional parameters are:
 - **INHERIT | NOINHERIT** - whether the role inherits privileges of roles it's a direct or indirect member of. INHERIT is the default.
 - **LOGIN | NOLOGIN** - whether a role is allowed to sign in. A role with the **LOGIN** attribute is a database user. Roles without the LOGIN attribute can be used for managing database privileges. **NOLOGIN** is the default.
 - **REPLICATION | NOREPLICATION** - whether a role is a replication role. A role must have this attribute to connect to the server in replication mode and to create or drop replication slots. The REPLICATION attribute is a privileged role that should only be used for replication. NOREPLICATION is the default. You must be a member of azure_pg_admin to create this role.
-- **BYPASSRLS | NOBYPASSRLS** - whether a role bypasses every row-level security (RLS) policy. NOBYPASSRLS is the default. You must be a member of azure_pg_admin to create this role.
+- **BYPASSRLS | NOBYPASSRLS** - whether a role bypasses every row-level security (RLS) policy.
 - **CONNECTION LIMIT** connlimit - specifies how many concurrent connections a role that can sign in can make. -1 is the default. This parameter doesn't place a limit on concurrent connections.
 - **[ ENCRYPTED ] PASSWORD 'password'| PASSWORD NULL** - sets the role's password. A password is only used by roles with the LOGIN attribute. If no password is specified, the password is NULL and password authentication fails. Alternatively, explicitly state PASSWORD NULL.
 - **VALID UNTIL** 'timestamp'- the date and time after which the role's password is no longer valid. If omitted, there's no time limit on the password.

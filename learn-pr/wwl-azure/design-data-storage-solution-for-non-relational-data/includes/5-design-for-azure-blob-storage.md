@@ -21,11 +21,11 @@ The Hot tier is optimized for frequent reads and writes of objects in the Azure 
 
 #### Cool tier
 
-The Cool tier is optimized for storing large amounts of data that's infrequently accessed. This tier is intended for data that remains in the Cool tier for at least 30 days. A usage case for the Cool tier is short-term backup and disaster recovery datasets and older media content. This content shouldn't be viewed frequently, but it needs to be immediately available. Storing data in the Cool tier is more cost-effective. Accessing data in the Cool tier can be more expensive than accessing data in the Hot tier.
+The Cool tier is optimized for storing large amounts of infrequently used data. This tier is intended for data that remains in the Cool tier for at least 30 days. A usage case for the Cool tier is short-term backup and disaster recovery datasets and older media content. This content shouldn't be viewed frequently, but it needs to be immediately available. Storing data in the Cool tier is more cost-effective. Accessing data in the Cool tier can be more expensive than accessing data in the Hot tier.
 
 #### Cold tier
 
-The Cold tier is also optimized for storing large amounts of data that's infrequently accessed. This tier is intended for data that can remain in the tier for at least 90 days. 
+The Cold tier is also optimized for storing large amounts of infrequently used data. This tier is intended for data that can remain in the tier for at least 90 days. 
 
 #### Archive tier
 
@@ -39,7 +39,7 @@ The Archive tier is an offline tier that's optimized for data that can tolerate 
 
 Azure Blob Storage supports two forms of immutability policies for implementing immutable storage:
 
-- **[Time-based retention policies](/azure/storage/blobs/immutable-time-based-retention-policy-overview)** let users set policies to store data for a specified interval. When a time-based retention policy is in place, objects can be created and read, but not modified or deleted. After the retention period has expired, objects can be deleted, but not overwritten. The Hot, Cool, and Archive access tiers support immutable storage by using time-retention policies.
+- **[Time-based retention policies](/azure/storage/blobs/immutable-time-based-retention-policy-overview)** let users set policies to store data for a specified interval. When a time-based retention policy is in place, objects can be created and read, but not modified or deleted. After the retention period expires, objects can be deleted, but not overwritten. The Hot, Cool, and Archive access tiers support immutable storage by using time-retention policies.
 
 - **[Legal hold policies](/azure/storage/blobs/immutable-legal-hold-overview)** store immutable data until the legal hold is explicitly cleared. When a legal hold is set, objects can be created and read, but not modified or deleted. Premium Blob Storage uses legal holds to support immutable storage.
 
@@ -49,7 +49,7 @@ The following diagram shows how time-based retention policies and legal holds pr
 
 ### Things to consider when implementing Azure Blob Storage
 
-You've reviewed the different access options for Azure Blob Storage, and how to use immutable storage. Take a few minutes to determine how you can configure Azure Blob Storage for Tailwind Traders.
+You review the different access options for Azure Blob Storage, and how to use immutable storage. Take a few minutes to determine how you can configure Azure Blob Storage for Tailwind Traders.
 
 - **Consider Blob Storage availability**. Determine the level of availability required for your data. Are there scenarios where offline data is sufficient? The Archive access tier is optimized for data that can remain offline for hours.
 

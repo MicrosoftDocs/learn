@@ -19,7 +19,7 @@ abstract: |
     - Assess Microsoft Entra External ID identity provider capabilities against consumer and business customer needs
 prerequisites: |
   - An Azure subscription and Azure account 
-  - If you don’t have any Azure subscriptions, any personal account, Microsoft account (MSA), or GitHub account
+  - If you don’t have any Azure subscriptions, you can create a free trial tenant using your existing Outlook or Hotmail account, or GitHub or personal email address (you’ll be prompted to create an Outlook account with your GitHub or personal email)
   - (Optional) The latest version of Visual Studio Code
   - (Optional) The latest version of PowerShell
 iconUrl: /training/achievements/generic-badge.svg

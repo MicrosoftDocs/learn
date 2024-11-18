@@ -19,4 +19,6 @@ You can use Microsoft's **Azure AI Language** to build natural language processi
 
 Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
 
+Microsoft's **Azure AI Translator** uses a Neural Machine Translation (NMT) model for translation, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
+
 You can explore Azure AI Language features in the **Azure Language Studio** and Azure AI Speech features in the **Azure Speech Studio**. The service features are available for use and testing in the studios and other programming languages.

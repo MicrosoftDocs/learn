@@ -2,6 +2,8 @@
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-random-forests
 title: Exercise - Selecting random forest architectures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Selecting random forest architectures
   description: Exercise about selecting random forest architectures
   ms.date: 07/21/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/7-5-exercise-random-forests.ipynb
+

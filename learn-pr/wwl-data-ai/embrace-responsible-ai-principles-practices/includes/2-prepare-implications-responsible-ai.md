@@ -16,7 +16,7 @@ It's important to recognize that as new intelligent technology emerges and proli
 
 ### Threats
 
-Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on Twitter called Tay, which could learn from interactions with Twitter users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
+Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on X called Tay, which could learn from interactions with X users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
 
 Novel threats require a constant evolution in our approach to responsible AI. For example, because generative AI enables people to create or edit videos, images, or audio files so credibly that they look real, media authenticity is harder to verify. In response, Microsoft is teaming with other technology and news stakeholders to develop technical standards to address deepfake-related manipulation.  
 

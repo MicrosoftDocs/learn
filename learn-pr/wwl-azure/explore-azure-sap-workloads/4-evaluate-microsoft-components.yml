@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-sap-workloads.evaluate-microsoft-components
 title: Evaluate Microsoft components
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate Microsoft components
   description: "Evaluate Microsoft components that integrate with SAP apps and data."
   ms.date: 08/01/2024

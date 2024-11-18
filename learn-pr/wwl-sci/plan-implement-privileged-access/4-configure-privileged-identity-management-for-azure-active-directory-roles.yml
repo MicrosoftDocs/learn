@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-implement-privileged-access.configure-privileged-identity-management-for-azure-ad-roles
 title: Exercise configure Privileged Identity Management for Microsoft Entra roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise configure Privileged Identity Management for Microsoft Entra roles
   description: "Exercise configure Privileged Identity Management for Microsoft Entra roles"
   ms.date: 10/23/2023

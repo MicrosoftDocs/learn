@@ -2,9 +2,11 @@
 uid: learn.wwl.design-governance.design-for-resource-tags
 title: Design for resource tags
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for resource tags
   description: "Design for resource tags"
-  ms.date: 11/15/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

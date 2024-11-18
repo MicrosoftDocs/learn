@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-front-door.3-how-azure-front-door-works  
 title: How Azure Front Door works  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How does Azure Front Door work?
   description: How does Azure Front Door work?
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-front-door-works.md)]
+

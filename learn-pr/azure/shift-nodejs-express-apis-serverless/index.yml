@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   description: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs.
   ms.date: 02/20/2024
@@ -8,7 +10,7 @@ metadata:
   ms.author: jopapa
   ms.topic: module-standard-task-based
   ms.service: azure-functions
-  manager: mijacobs
+  manager: susanpotter
 title: Refactor Node.js Express APIs into serverless Azure Functions APIs
 summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
 abstract: |
@@ -46,3 +48,4 @@ units:
   - learn.azure.shift-express-api-azure-functions.12-summary
 badge:
   uid: learn.azure.shift-express-api-azure-functions.badge
+

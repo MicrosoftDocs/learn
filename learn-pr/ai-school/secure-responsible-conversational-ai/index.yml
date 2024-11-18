@@ -9,6 +9,7 @@ metadata:
   ms.service: artificial-intelligence
   ms.topic: module
   ms.collection:
+    - TBD
     - ce-skilling-ai-copilot
 title: Discover Microsoft safety guidelines for responsible conversational AI development
 summary: Learn Microsoft development guidelines for fair and secure responsible conversational AI.

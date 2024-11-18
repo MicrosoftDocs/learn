@@ -1,4 +1,5 @@
 Azure Database for MySQL - Flexible Server is a fully managed MySQL database as a service (DBaaS) offering on Azure that can handle mission-critical workloads with resiliency, predictable performance, and dynamic scalability.
+
 In this module, you'll take a hands-on tour configuring networking, security, business continuity, server maintenance, and performance tuning. You should have a previous evaluation of your business needs to choose which options to configure. For this module, the example scenario below spells out the business needs.
 
 ## Example scenario
@@ -11,8 +12,8 @@ In addition, as WT hires more employees, their DBA team has struggled to keep up
 
 ## What you will do
 
-You'll evaluate, compare, and understand Azure Database for MySQL - Flexible Server's features to support Wingtip Toys' mission-critical operations. You'll learn about networking, security, business continuity, high availability, backups, performance, IOPS, and read replicas.
+You'll understand and implement the Azure Database for MySQL - Flexible Server's features, including networking, security, business continuity, high availability, backups, performance, IOPS, and read replicas, that support mission-critical operations.
 
-## What is the goal?
+## Primary goal
 
-By the end of this module, you'll have chosen settings during flexible server creation and learned how to change them afterwards. You'll have reviewed how to monitor the flexible server's operations and make and restore backups.
+By the end of this module, you'll have chosen settings during flexible server creation and learned how to change them afterwards. In addition, you'll have reviewed how to monitor the flexible server's operations and make and restore backups.

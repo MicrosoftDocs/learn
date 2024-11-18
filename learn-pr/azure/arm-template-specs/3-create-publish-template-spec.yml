@@ -2,6 +2,8 @@
 uid: learn.azure.arm-template-specs.create-publish-template-spec
 title: Create and publish a template spec
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create and publish a template spec
   description: Learn how to create a template to use as a template spec, and how to publish a template spec to Azure.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-publish-template-spec.md)]
+

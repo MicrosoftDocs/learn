@@ -4,7 +4,7 @@ Azure DevOps provides several tools you can use for better team collaboration. I
 
 **Andy:** How can we use something for Azure if we're not deploying to the cloud? Plus, we deploy to Linux. Does that matter?
 
-**Mara:** These tools are great whether you're in the cloud or on-premises. It also doesn't matter if we're deploying to Linux or Windows or another platform. Azure DevOps is a suite of services that provides a solution for anyone who wants an enterprise-grade tool chain. Those tools will help us implement all the practices we just talked about. Here's what you get:
+**Mara:** These tools are great whether you're in the cloud or on-premises. It also doesn't matter if we're deploying to Linux or Windows or another platform. Azure DevOps is a suite of services that provides a solution for anyone who wants an enterprise-grade tool chain. Those tools help us implement all the practices we just talked about. Here's what you get:
 
 | Service | Description |
 |-|-|
@@ -19,9 +19,10 @@ Those are the three I was thinking about using right now. There are two other se
 |:::image type="icon" source="../media/azure-repos.png":::|[Azure Repos](https://azure.microsoft.com/products/devops/repos/?azure-portal=true). These provide unlimited, cloud-hosted private, and public Git repos.|
 |:::image type="icon" source="../media/azure-artifacts.png":::|[Azure Artifacts](https://azure.microsoft.com/products/devops/artifacts/?azure-portal=true). These let us create, host, and share packages.|
 
-Here's a short video where Abel explains the five parts of Azure DevOps:
 
-**Ask Abel**
+#### Ask Abel
+
+Here's a short video where Abel explains the five parts of Azure DevOps:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LB7b]
 

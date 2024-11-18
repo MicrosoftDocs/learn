@@ -1,6 +1,6 @@
 You're ready to perform an action based on your logic app receiving a published event.
 
-In the previous exercise, you completed the initial setup of the logic app. Now, you now need the logic app to send an email notification that contains details whenever any change occurs to any virtual machine in your resource group.
+In the previous exercise, you completed the initial setup of the logic app. Now, you need the logic app to send an email notification that contains details whenever any change occurs to any virtual machine in your resource group.
 
 In this exercise, you'll learn how to set up a condition that enables the logic app to inspect a published event, respond with a logic app action, and send an email.
 
@@ -47,7 +47,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 > [!NOTE]
 > In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Designer** to return to the editor.
 
-##  email notification
+## Email notification
 
 Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com. The configuration steps for email programs may differ, so you may need to adjust accordingly.
 
@@ -104,8 +104,8 @@ The final step is to test the complete workflow.
 1. Wait to be notified that your virtual machine has been resized, allowing time for the email to be generated and processed. After a few minutes, you should receive an email that looks similar to the following:
 
     ```text
-    Subject: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-8b04c19e-f5ab-4567-80cb-a4a1e257d6dd/providers/Microsoft.Compute/virtualMachines/vm1
-    Resource: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-8b04c19e-f5ab-4567-80cb-a4a1e257d6dd
+    Subject: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Compute/virtualMachines/vm1
+    Resource: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e
     Event type: Microsoft.Resources.ResourceWriteSuccess
     Event ID: f917484e-eb07-428c-9a54-5c2e819a9eaf
     Time: 2021-12-10T03:59:18.7494126Z    

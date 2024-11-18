@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-group-policy-objects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Group Policy Objects
   description: "Implement Group Policy Objects"
   ms.date: 04/17/2024
@@ -9,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: active-directory
+  ms.service: azure-active-directory
   ms.subservice: fundamentals
   ai-usage: human-only
 title: Implement Group Policy Objects

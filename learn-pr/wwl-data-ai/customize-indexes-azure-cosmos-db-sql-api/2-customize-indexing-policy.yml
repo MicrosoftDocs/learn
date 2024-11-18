@@ -2,6 +2,8 @@
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.customize-indexing-policy
 title: Customize the indexing policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Customize the indexing policy
   description: "Customize the indexing policy"
   ms.date: 10/17/2022

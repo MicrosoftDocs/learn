@@ -11,4 +11,19 @@ Security techniques, which are part of the DevSecOps strategy can be grouped int
 **Security monitoring** and **security assessment** are integral components of DevOps security observability, contributing jointly to the continuous and proactive identification, analysis, and response to security-related events and vulnerabilities. Security monitoring largely follows the same approach as the one applicable to performance monitoring, collecting real-time telemetry, such as metrics, logs, and traces to track overall security of your workloads. Security assessment relies on that telemetry to evaluate security of the organization's information systems, applications, and infrastructure in order to identify vulnerabilities, assess risks, and provide recommendations for their remediation.
 
 It's common to use for this purpose a dedicated solution that implements the *Security Information and Event Management (SIEM)* functionality, such as cloud-hosted Microsoft Sentinel. Microsoft Sentinel combines telemetry data from a wide range of sources, automatically correlating them and looking for patterns by using artificial intelligence and machine learning.
-You can also take advantage of the functionality built into Microsoft DevOps platforms, such as GitHub or Azure DevOps. In particular, GitHub offers many tools that implement security monitoring and assessment. Its Dependabot automatically scans repos-hosted software for any external dependencies, searching for known vulnerabilities against the GitHub's Advisory Database. In case such vulnerabilities are found, Dependabot automatically generates pull requests to upgrade them to nonvulnerable versions. GitHub Advanced Security combines several security features and capabilities that enhance software delivery workflows including code scanning, secret scanning, and dependency reviews. For example, Security Code Scanning scans repo-hosted source code, detecting security vulnerabilities and programming errors. It integrates with GitHub Actions, allowing for automated and continuous code analysis as part of CI/CD workflows.
+
+You can also take advantage of the functionality built into Microsoft DevOps platforms, such as GitHub or Azure DevOps. In particular, GitHub offers many tools that implement security monitoring and assessment, such as GitHub Advanced Security.
+
+---
+> [!VIDEO https://www.youtube.com/embed/DA_WbNRFPT0?si=LFEzyBjmscpn2mKe?cc_load_policy=1&cc_lang_pref=auto]
+---
+
+Its Dependabot automatically scans repos-hosted software for any external dependencies, searching for known vulnerabilities against the GitHub's Advisory Database. In case such vulnerabilities are found, Dependabot automatically generates pull requests to upgrade them to nonvulnerable versions.
+
+GitHub Advanced Security combines several security features and capabilities that enhance software delivery workflows including code scanning, secret scanning, and dependency reviews. For example, Security Code Scanning scans repo-hosted source code, detecting security vulnerabilities and programming errors.
+
+---
+> [!VIDEO https://www.youtube.com/embed/lm9a9R9P6uc?si=GeJuI8NdoIMQc5_A?cc_load_policy=1&cc_lang_pref=auto]
+---
+
+It integrates with GitHub Actions, allowing for automated and continuous code analysis as part of CI/CD workflows.

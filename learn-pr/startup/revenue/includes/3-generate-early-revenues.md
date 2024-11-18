@@ -84,7 +84,7 @@ If you don't have a list of potential customers, there are many ways you can fin
 - Post on Product Hunt and ask everyone you know to upvote your product.
 - Join or create a LinkedIn group for people who represent your target customer. Use it to post relevant content and respond to questions. Establish yourself as a voice of authority and encourage members to try your product. Don't spam the group.
 - Post to relevant communities on Reddit or other social networks that make sense for your product and your target audience.
-- Talk about your product launch, and more generally about the problem space, on Clubhouse and X Spaces (formerly Twitter Spaces).
+- Talk about your product launch, and more generally about the problem space, on Clubhouse and X Spaces.
 - Experiment with different customer-acquisition channels. Try paid ones like search ads and social ads, and unpaid channels like social media and content marketing. By tracking uptake data and conversion metrics, you can identify channels that work and focus on them.
 - Have a short prequalification form on your website for potential customers. Ask a few key questions aimed at identifying whether they fit your ideal-first-customer persona.
 - Email or call people you know and ask them to refer you to five people they think could be a potential customer. Give them a discount code they can pass on to people in their network.

@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.build-language-solution-azure-openai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build natural language solutions with Azure OpenAI Service
   description: Learn how to integrate language understanding and prompt completions from Azure OpenAI into your app.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 09/04/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
@@ -45,3 +47,4 @@ units:
 - learn.wwl.build-language-solution-azure-openai.summary
 badge:
   uid: learn.wwl.build-language-solution-azure-openai.badge
+

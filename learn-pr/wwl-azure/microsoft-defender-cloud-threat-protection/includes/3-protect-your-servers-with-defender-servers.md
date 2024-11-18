@@ -8,15 +8,11 @@ You can enable the Defender for Servers plan from the Environment settings page 
 
 ### To enable the Defender for Servers plan:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
-2. Search for and select **Microsoft Defender for Cloud**.
-
-3. In the Defender for Cloud menu, select **Environment settings**.
-
-4. Select the relevant subscription.
-
-5. On the Defender plans page, toggle the Servers switch to **On**.
+1.  Sign in to the [Azure portal](https://portal.azure.com/).
+2.  Search for and select **Microsoft Defender for Cloud**.
+3.  In the Defender for Cloud menu, select **Environment settings**.
+4.  Select the relevant subscription.
+5.  On the Defender plans page, toggle the Servers switch to **On**.
 
 After enabling the plan, you have the ability to [configure the features of the plan](/azure/defender-for-cloud/configure-servers-coverage) to suit your needs. When you enable Defender for Servers on a subscription, it doesn't extend that coverage to an attached workspace. You need to [enable Defender for Servers on the Log Analytics workspace level](/azure/defender-for-cloud/tutorial-enable-servers-plan#enable-the-plan-at-the-log-analytics-workspace-level).
 
@@ -28,21 +24,14 @@ Compare the [available features](/azure/defender-for-cloud/plan-defender-for-ser
 
 ### To select a Defender for Servers plan:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
-2. Search for and select **Microsoft Defender for Cloud**.
-
-3. In the Defender for Cloud menu, select **Environment settings**.
-
-4. Select the relevant Azure subscription, AWS account, or GCP project.
-
-5. Select **Change plans**.
-
-6. In the popup window, select **Plan 2** or **Plan 1**.
-
-7. Select **Confirm**.<br>
-
-8. Select **Save**.
+1.  Sign in to the [Azure portal](https://portal.azure.com/).
+2.  Search for and select **Microsoft Defender for Cloud**.
+3.  In the Defender for Cloud menu, select **Environment settings**.
+4.  Select the relevant Azure subscription, AWS account, or GCP project.
+5.  Select **Change plans**.
+6.  In the popup window, select **Plan 2** or **Plan 1**.
+7.  Select **Confirm**.<br>
+8.  Select **Save**.
 
 After enabling the plan, you have the ability to [configure the features of the plan](/azure/defender-for-cloud/configure-servers-coverage) to suit your needs.
 
@@ -52,17 +41,12 @@ When you enable Defender for Servers on your subscription, the coverage provided
 
 To enable Defender for Servers on the Log Analytics workspace
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-
-2. Search for and select **Microsoft Defender for Cloud**.
-
-3. In the Defender for Cloud menu, select **Environment settings**.
-
-4. Select the relevant workspace.
-
-5. Toggle the servers plan to **On**.
-
-6. Select **Save**.
+1.  Sign in to the [Azure portal](https://portal.azure.com/).
+2.  Search for and select **Microsoft Defender for Cloud**.
+3.  In the Defender for Cloud menu, select **Environment settings**.
+4.  Select the relevant workspace.
+5.  Toggle the servers plan to **On**.
+6.  Select **Save**.
 
 ## Enable Defender for Servers at the resource level
 

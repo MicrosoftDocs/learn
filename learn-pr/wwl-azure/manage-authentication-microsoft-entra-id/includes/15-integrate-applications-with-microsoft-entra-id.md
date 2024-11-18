@@ -186,7 +186,7 @@ In this section, you'll enable B.Simon to use single sign-on by granting access 
 7.  Click **Save Configuration**.
     
     > [!NOTE]
-    > If you have more than one Slack instance that you need to integrate with Microsoft Entra ID, set `https:// .slack.com` to **Service provider issuer** so that it can pair with the Azure application **Identifier** setting.
+    > If you have more than one Slack instance that you need to integrate with Microsoft Entra ID, set `https:// .slack.com`to **Service provider issuer** so that it can pair with the Azure application **Identifier** setting.
 
 ## Create Slack test user
 

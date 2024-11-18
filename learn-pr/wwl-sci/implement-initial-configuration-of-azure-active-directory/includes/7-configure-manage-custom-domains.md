@@ -13,12 +13,12 @@ The primary domain is the default domain name for a new user when you create a n
 2.  Select **Microsoft Entra ID.**
 3.  Select **Custom domain names**.
     
-    :::image type="content" source="../media/add-custom-domain-b91e0e89.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
+    :::image type="content" source="../media/add-custom-domain-b91e0e89-fb1e5c29.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
     
 4.  Select the name of the domain that you want to be the primary domain.
 5.  Select the **Make primary** command. Confirm your choice when prompted.
     
-    :::image type="content" source="../media/make-primary-domain-0d2ab135.png" alt-text="Screenshot of the configure domain dialog. You can make a domain name the primary.":::
+    :::image type="content" source="../media/make-primary-domain-0d2ab135-b7762e52.png" alt-text="Screenshot of the configure domain dialog. You can make a domain name the primary.":::
     
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.

@@ -1,5 +1,5 @@
 Most cloud architects and developers don't want to manage the server that hosts their apps or the underlying operating system (OS) and database. Instead, they want to focus on developing their cloud-designed apps. Using Microsoft Azure Database for MySQL can help them achieve this focus.
-Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can help manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL to gain the benefits of a platform as a service (PaaS) environment, as shown in the following image.
+Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can help manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your Azure Database for MySQL instance to gain the benefits of a platform as a service (PaaS) environment, as shown in the following image.
 
 :::image type="content" source="../media/1-introduction/mysql-conceptual-diagram.png" alt-text="Screenshot of The Azure Database for MySQL architecture in a typical organization with a managed relational database as a service (DBaaS)." lightbox="../media/1-introduction/mysql-conceptual-diagram.png":::
 
@@ -25,9 +25,9 @@ By migrating to Azure Database for MySQL, you can help your cloud architects and
 
 ## What you will do
 
-During this module, you will evaluate the capabilities of Azure Database for MySQL so that you can determine whether it's a good choice to help manage your workloads. To do this evaluation, you'll:
+In this module, you will evaluate the capabilities of Azure Database for MySQL so that you can determine whether it's a good choice to help manage your workloads. To do this evaluation, you'll:
 
-- Identify the Azure Database for MySQL features.
+- Identify Azure Database for MySQL features.
 - Assess whether Azure Database for MySQL can help address your organization's database requirements.
 - Determine which MySQL deployment option on Azure is best for your organization.
 

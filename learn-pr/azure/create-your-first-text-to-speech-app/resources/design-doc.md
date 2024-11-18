@@ -33,19 +33,19 @@ Microsoft's Azure AI services provide developers with APIs to create application
 
 By the end of this module, you'll:
 
-1. Create an Azure AI services account
+1. Create an Azure AI services resource
 1. Create a command-line application that converts text to speech
 1. Create a command-line application that converts SSML to speech
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *Create your first Azure Cognitive Services Text to speech application*
+Identify the subtasks of *Create your first Azure AI services text to speech application*
 
 | Subtask | How will you assess it: **Exercise or Knowledge check**? | Which learning objectives does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 |---|---|---|---|---|
-| Create an Azure AI services account | Exercise | 1 | Yes |
-| Create a command-line text to speech app with TEXT file | Exercise | 2 | Yes |
-| Create a command-line text to speech app with SSML file | Exercise | 3 | Yes |
+| Create an Azure AI services resource | Exercise | 1 | Yes |
+| Create a command-line text to speech app with a text file | Exercise | 2 | Yes |
+| Create a command-line text to speech app with an SSML file | Exercise | 3 | Yes |
 
 ## Outline the units
 
@@ -53,12 +53,12 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
     TBD
 
-1. **Create an Azure AI services account**
+1. **Create an Azure AI services resource**
 
-    - Explain the need for an Azure AI services account
+    - Explain the need for an Azure AI services resource
     - Show Azure portal screenshots
 
-1. **Exercise - Create an Azure AI services account**
+1. **Exercise - Create an Azure AI services resource**
 
     1. Set RESOURCEGROUP to sandbox resource group
 
@@ -72,7 +72,7 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
        az cognitiveservices account create \
            --name $ACCOUNT \
            --resource-group $RESOURCEGROUP \
-           --kind SpeechServices \
+           --kind AIServices \
            --sku F0 \
            --location $LOCATION \
            --yes
@@ -90,14 +90,14 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
        ```
        {
-           "key1": "0123456789abcdef0123456789abcdef",
-           "key2": "fedcba9876543210fedcba9876543210"
+           "key1": "YourKey1",
+           "key2": "YourKey2"
        }
        ```
 
 1. **Create a text to speech application using a text file**
 
-    1. Explain the difference between TEXT and SSML
+    1. Explain the difference between text and SSML files.
 
     1. Get the list of languages from <https://learn.microsoft.com/azure/ai-services/speech-service/language-support#neural-voices>
 
@@ -111,7 +111,7 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
        dotnet new console
        ```
 
-    1. Add the Azure AI Speech library
+    1. Add the Azure AI Speech SDK package.
 
        ```bash
        dotnet add package Microsoft.CognitiveServices.Speech
@@ -123,7 +123,7 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
        code Program.cs
        ```
 
-    1. Open the *Program.cs* file in the editor
+    1. Open the *Program.cs* file in the editor.
 
     1. Replace the code
 
@@ -156,15 +156,15 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
 1. **Exercise - Create a text to speech application using a SSML file**
 
-    1. Create SSML file that specifies the language code
+    1. Create SSML file that specifies the language code.
 
-    1. Remove the hard coded the language string from the code
+    1. Remove the hard coded the language string from the code.
 
-    1. Update app to use the SSML API
+    1. Update app to use the SSML API.
 
 1. **Summary**
 
-    In this module you created your first Azure AI services Text to speech application, where you created Azure AI services account, then created an application that used both TEXT and SSML to turn text into speech.
+    In this module you created your first Azure AI text to speech application, where you created Azure AI services resource, then created an application that used both TEXT and SSML to turn text into speech.
 
 ## Notes
 

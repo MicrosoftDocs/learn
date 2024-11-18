@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-permissions
 title: Examine permissions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine permissions
   description: "Examine permissions"
   ms.date: 05/08/2024

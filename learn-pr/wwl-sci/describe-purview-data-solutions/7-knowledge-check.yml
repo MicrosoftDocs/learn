@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for Describe the Data Security solutions of Microsoft Purview."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+
+content: |
+quiz:
+  questions:
+
+  - content: "As part of a new data loss prevention policy, the compliance admin needs to be able to identify important information such as credit card numbers, across the organization's data. How can the admin address this requirement?"
+    choices:
+    - content: "Use activity explorer."
+      isCorrect: false
+      explanation: "Incorrect. ​​​Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use sensitive information types to identify sensitive information like credit card numbers.​​​"
+    - content: "Use sensitivity labels."
+      isCorrect: false
+      explanation: "Incorrect. Sensitivity labels enable you to apply to content like emails and documents, much like different stamps can be applied to physical documents. Instead, use sensitive information types to identify specific types of information such as credit card numbers.​​​​​​"
+    - content: "Use sensitive information types."
+      isCorrect: true
+      explanation: "​​​Correct. Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.​​"
+  
+  - content: "Within the organization, some emails are confidential and should be encrypted so that only authorized users can read them. How can this requirement be implemented?"
+    choices:
+    - content: "Use the content explorer."
+      isCorrect: false
+      explanation: "Incorrect. Content explorer enables admins to get a current snapshot of individual items that have been classified across the organization. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+    - content: "Use sensitivity labels."
+      isCorrect: true
+      explanation: "​​​Correct. Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+    - content: "Use records management."
+      isCorrect: false
+      explanation: "​​​Incorrect. You don't use record management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted by users authorized by the label's encryption settings.​​​"
+
+  - content: "The compliance admin for the organization wants to explain the importance of insider risk management, to the business leaders.  What use case would apply?"
+    choices:
+    - content: "To identify and protect against risks like an employee sharing confidential information."
+      isCorrect: true
+      explanation: "Correct. Use risk management to help protect your organization against these risks."
+    - content: "To identify and protect against malicious software across your network, such as ransomware."
+      isCorrect: false
+      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
+    - content: "To identify and protect against devices shutting down at critical moments."
+      isCorrect: false
+      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."

@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-deployment-patterns.explore-microservices-architecture
 title: Explore microservices architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore microservices architecture
   description: "Explore microservices architecture"
   ms.date: 05/06/2024

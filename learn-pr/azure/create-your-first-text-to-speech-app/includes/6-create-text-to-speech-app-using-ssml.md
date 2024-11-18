@@ -1,6 +1,6 @@
 In the previous exercise, you learned how to create an application that read a text file, converted the contents to speech, and then created an audio file with the results. The results worked well for your company's video needs, but your manager would like to know whether there's some way to exert greater control over the results of your application's text to speech operations. For example, your video team would like to have multiple virtual speakers in a single audio file, and they'd like to alter some of the playback parameters, such as the speaking rate and the pitch.
 
-Fortunately for you, Azure AI services' text to speech features work with Speech Synthesis Markup Language (SSML), which you can use to customize the speech your application creates.
+Fortunately for you, the Azure AI text to speech feature works with Speech Synthesis Markup Language (SSML), which you can use to customize the speech your application creates.
 
 There's a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/ai-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit contains a brief overview of SSML to help you get started.
 
@@ -131,7 +131,7 @@ The process to create an application that converts SSML to speech using Azure AI
 
 - Read SSML from a file.
 
-- Create a `SpeechConfig` class using the API key from your Azure AI services account.
+- Create a `SpeechConfig` class using the API key from your Azure AI services resource.
 
 - Create a `SpeechSynthesizer` class using the `SpeechConfig` class.
 

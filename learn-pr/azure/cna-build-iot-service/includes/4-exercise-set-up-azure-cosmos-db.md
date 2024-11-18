@@ -10,7 +10,7 @@ In this exercise, you:
 To perform this exercise, you need:
 
 - An Azure subscription.
-- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant. The tenant should be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account assigned to the _Owner_ or _Contributor_ role in the Azure subscription.
 
 ## Create an Azure Cosmos DB account
 

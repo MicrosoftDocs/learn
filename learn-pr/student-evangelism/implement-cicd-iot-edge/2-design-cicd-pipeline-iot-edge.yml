@@ -2,6 +2,8 @@
 uid: learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge
 title: Design a CI/CD pipeline for IoT Edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a CI/CD pipeline for IoT Edge
   description: In this section, we design the structure of implementing a CI/CD pipeline for IoT Edge.
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6 
 content: |
   [!include[](includes/2-design-cicd-pipeline-iot-edge.md)]
+

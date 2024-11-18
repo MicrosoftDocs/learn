@@ -6,6 +6,7 @@ metadata:
   ms.date: 01/26/2024
   author: wadepickett
   ms.author: wpickett
+  manager: coxford
   ms.topic: module
   ms.service: aspnet
 title: Introduction to migrating ASP.NET apps to Azure

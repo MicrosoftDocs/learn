@@ -2,9 +2,11 @@
 uid: learn.machinelearning.introduction-to-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of the content covered in the module.
-  ms.date: 09/05/2023
+  ms.date: 08/21/2024
   author: msakande
   ms.author: mopeakande
   ms.topic: unit

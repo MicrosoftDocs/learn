@@ -14,4 +14,4 @@ Traditionally, corporate networks were restricted, protected, and generally assu
 
 The Zero Trust model flips that scenario. Instead of assuming that a device is safe because it’s within the corporate network, it requires everyone to authenticate. Then grants access based on authentication rather than location.
 
-:::image type="content" source="../media/zero-trust-cf9202be.png" alt-text="Diagram comparing zero trust authenticating everyone compared to classic relying on network location.":::
+:::image type="content" source="../media/zero-trust-cf9202be-d5c6882e.png" alt-text="Diagram comparing Zero Trust authenticating everyone compared to classic relying on network location.":::

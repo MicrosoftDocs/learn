@@ -30,7 +30,7 @@ The best invented-word names tend to hint at what the company does without tryin
 Examples (ordered from the most indirect to most direct hints):
 
 - Trello (variation on trellis, a latticework structure)
-- Twitter (short communication, like birds twittering)
+- X (short communication, like a letter)
 - Zoom (fast, seamless video communication)
 - Expedia (expeditions + encyclopedia)
 - Netflix (internet movies)

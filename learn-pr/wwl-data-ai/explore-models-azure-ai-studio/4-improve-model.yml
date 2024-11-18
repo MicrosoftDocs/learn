@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.improve-model
 title: Improve the performance of a language model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve the performance of a language model
   description: "Explore the various strategies to improve the model's performance"
   ms.date: 7/2/2024

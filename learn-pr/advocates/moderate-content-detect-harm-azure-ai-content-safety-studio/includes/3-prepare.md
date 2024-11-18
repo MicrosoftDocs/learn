@@ -1,49 +1,42 @@
-The first step in moderating content with Azure AI Content Safety within the Content Safety Studio is to create an Azure AI Hub resource. After the hub resource is created, you’ll need to create both an Azure AI Project and Content Safety resource.
+The first step in moderating content by using Azure AI Content Safety is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating a hub resource in Azure AI Studio.
 
-## Azure AI Hub Resource
+In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring.
 
-The Azure AI hub resource is the top-level Azure resource for Azure AI Studio and provides a working environment for a team to build and manage AI applications. In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration and monitoring. Follow the steps below to create an Azure AI Hub resource.
+A hub is the top-level Azure resource for Azure AI Studio. It provides the working environment for a team to build and manage AI applications.
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Manage** and select **+ New hub**.
+## Create an Azure AI Studio hub resource
+
+> [!IMPORTANT]
+> This exercise uses the East US region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
+
+1. In [Azure AI Studio](https://ai.azure.com/), under **Management**, select **All resources**.
+1. Select **+ New hub**.
 1. Complete the following fields:
-   - **Hub name** – provide a name for your hub
-   - **Subscription** – select your Azure subscription that has access to Azure OpenAI Service
-   - **Resource group** – selecting an existing resource group or create a new one
-   - **Location** – East US
-   - **Connect Azure AI Services or Azure OpenAI** – select your AI Service
-   - **Connect Azure AI Search** – Skip connecting
-1. Click **Next**.
-1. After reviewing the Hub details, click **Create**.
+    - **Hub name**: Provide a name for your hub.
+    - **Subscription**: Select your Azure subscription.
+    - **Resource group**: Select an existing resource group or create a new one.
+    - **Location**: Select **East US**.
+    - **Connect Azure AI Services or Azure OpenAI**: Select **Create new AI Services**, enter a name, and then select **Create**.
+    - **Connect Azure AI Search**: Select **Skip connecting**.
+1. Select **Next**.
+1. Review the hub details, and then select **Create**.
 
-## Azure AI Project
+## Go to Content Safety
 
-Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Follow the steps below to create an Azure AI Project.
+You access the Content Safety capabilities within Azure AI Studio.
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Build** and select **+ New project**.
-1. Complete the following fields:
-   - **Project name** – provide a name for your project
-   - **Hub** – select the Hub that was previously created
-1. Click **Create a project**.
+1. In [Azure AI Studio](https://ai.azure.com/), under **Get started**, select **AI Services**.
+1. On the **Integrate with generative AI** page, select **Content Safety**.
+1. On the **Content Safety** page, you can view the features that you'll use in the exercises of this module.
 
-## Content Safety Resource
-
-The Content Safety Resource is an Azure AI service. This service consists of machine learning assisted moderation APIs which detect material that is potentially offensive, risky, or otherwise undesirable, to assure the contents in community is safe. Follow the steps below to create a Content Safety Resource.
-
-1. Within [Content Safety Studio](https://contentsafety.cognitive.azure.com/), select the **Settings** icon in the top navigation menu.
-1. In the **All resources** section, select **+ Create a new resource**.
-1. Complete the following fields:
-   - **Subscription** – select your Azure subscription that has access to Azure OpenAI Service
-   - **Resource group** – select the Resource Group that was previously created
-   - **Region** – East US
-   - **Name** – provide name for your resource
-   - **Pricing tier** – Free or Standard S0
-1. Click **Review + create**.
-1. Click **Create**.
+:::image type="content" source="../media/content-safety-capabilities.png" alt-text="Screenshot of the Content Safety page of Azure AI Studio. It shows the built-in features of moderate text content, groundedness detection, protected material detection, and prompt shields." lightbox="../media/content-safety-capabilities.png":::
 
 ## Download the project files
 
-Project files are available in the [data](https://github.com/Azure-Samples/aacs-workshops/) folder. Download the repository to access the files required for the **Text Moderation** and **Image Moderation** exercises. To download the repository, select **Code** >
-**Download ZIP**.
+Project files are available in the [data](https://github.com/Azure-Samples/RAI-workshops/tree/main/data) folder. Download the repository to access the required files for the upcoming exercises about text moderation and image moderation. To download the repository, select **Code** > **Download ZIP**.
 
 > [!NOTE]
-> Within the `data` folder is a `bulk-image-moderation-dataset.zip` file. Do not unzip the `bulk-image-moderation-dataset.zip` file as this format is required for the **Image Moderation** exercise.
+> Don't unzip the **bulk-image-moderation-dataset.zip** file in the **data** folder. The .zip format is required for the image moderation exercise.
+
+> [!WARNING]
+> The **Image Moderation** folder contains graphic images that depict scenes of harm. These image files have **blood** in the name and are used for the image moderation exercise. You don't need to view the images to complete the exercise. The image moderation feature includes a **Blur image** toggle that hides the view of uploaded images by default.

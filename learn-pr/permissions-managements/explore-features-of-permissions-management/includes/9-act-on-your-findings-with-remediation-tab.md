@@ -75,7 +75,7 @@ After specifying which permissions to grant, users then specify when they want c
 
 :::image type="content" source="../media/schedule-permissions-options.png" alt-text="Screenshot of the Permissions Management schedule permissions for varying timeframes."lightbox="../media/schedule-permissions-options.png":::
 
-When requesting that permissions be granted on a schedule, users select the exact days and times for the permissions to be granted. For example, in the screen above we’re requesting that our desired permissions be granted at 8:00 a.m. for 8 hours every Monday through Friday.
+When requesting that permissions be granted on a schedule, users select the exact days and times for the permissions to be granted. For example, in the screen above we’re requesting that our desired permissions be granted at 1:45 p.m. for four hours at a weekly frequency.
 
 **Granting permissions as an admin**
 

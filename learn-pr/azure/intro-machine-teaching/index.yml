@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-machine-teaching
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Machine Teaching
   description: Learn the concept of Machine Teaching and evaluate when to use it.
   ms.date: 10/17/2022
@@ -8,7 +10,9 @@ metadata:
   ms.author: chnoring
   ms.topic: module
   ms.service: azure-machine-learning
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Introduction to Machine Teaching
 summary: In this module, you'll learn about capabilities and essential concepts of Machine Teaching, the steps to add intelligence into Autonomous Intelligence systems and the types of business problems that you can solve using Machine Teaching for Autonomous AI.
 abstract: | 
@@ -42,3 +46,4 @@ units:
 
 badge: 
   uid: learn.oxford.intro-machine-teaching.badge
+

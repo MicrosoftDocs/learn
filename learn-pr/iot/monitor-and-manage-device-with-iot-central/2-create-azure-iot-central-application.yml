@@ -3,6 +3,8 @@ uid: learn.monitor-manage-device-with-iotcentral.create-azure-iot-central-applic
 title: Exercise - Create an Azure IoT Central application
 sandbox: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure IoT Central application
   description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
   ms.date: 06/14/2023

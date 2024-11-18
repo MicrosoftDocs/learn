@@ -5,7 +5,9 @@ metadata:
   description: In this module, you'll learn about the RabbitMQ message broker and how you can use it to decouple microservices while ensuring that they can communicate reliably. You'll also see how .NET Aspire makes it easy to integrate with RabbitMQ.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
+  ms.date: 8/20/2024
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates

@@ -5,8 +5,8 @@ metadata:
   title: Map your data
   description: "Now that the data is onboarded into CluedIn in a staging area, we have to map the data from its current form into the new desired state. For this task, we map the data in the CluedIn Studio."
   ms.date: 05/28/2024
-  author: whhender
-  ms.author: whhender
+  author: mannan1964 
+  ms.author: mannan 
   ms.topic: unit
 durationInMinutes: 15
 content: |

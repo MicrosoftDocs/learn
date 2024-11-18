@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-core-architectural-components-of-azure.what-microsoft-azure
 title: What is Microsoft Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Microsoft Azure
   description: "What is Microsoft Azure"
-  ms.date: 03/06/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create your first Q# program by using the Azure Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
   ms.date: 01/04/2024
@@ -49,3 +51,4 @@ units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.8-summary
 badge:
   uid: learn.quantum.qsharp-create-first-quantum-development-kit.badge
+

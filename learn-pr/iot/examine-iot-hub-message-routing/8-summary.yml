@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-iot-hub-message-routing.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 02/06/2024

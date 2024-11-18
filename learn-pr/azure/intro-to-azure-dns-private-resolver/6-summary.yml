@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-dns-private-resolver.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary of Azure DNS Private Resolver and other reading.

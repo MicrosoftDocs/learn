@@ -6,7 +6,7 @@ metadata:
   ms.date: 02/13/2024
   author: jongalloway
   ms.author: jogallow
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
 title: Create accessible web apps by using ASP.NET Core

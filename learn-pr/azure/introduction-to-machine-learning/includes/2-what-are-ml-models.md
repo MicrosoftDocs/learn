@@ -1,10 +1,10 @@
-The model is the core component of machine learning, and ultimately what we are trying to build. A model might estimate how old a person is from a photo, predict what you might like to see on social media, or decide where a robotic arm should move. In our scenario, we want to build a model that can estimate the best boot size for a dog based on their harness size.
+The model is the core component of machine learning, and ultimately what we're trying to build. A model might estimate how old a person is from a photo, predict what you might like to see on social media, or decide where a robotic arm should move. In our scenario, we want to build a model that can estimate the best boot size for a dog based on their harness size.
 
 Models can be built in many ways. For example, a traditional model that simulates how an airplane flies is built by people, using knowledge of physics and engineering. Machine-learning models are special; rather than being edited by people so that they work well, machine learning models are shaped by data. They learn from experience.
 
 ## How to think about models
 
-You can think of a model as a function that accepts data as an input and produces an output. More specifically, a model uses input data to estimate something else. For example, in our scenario, we want to build a model that is given a harness size and estimates boot size:
+You can think of a model as a function that accepts data as an input and produces an output. More specifically, a model uses input data to estimate something else. For example, in our scenario, we want to build a model that's given a harness size and estimates boot size:
 
 ![Diagram showing a model without parameters.](../media/1-2-a.jpg)
 
@@ -12,7 +12,7 @@ Harness size and dog boot size are data; they aren't part of the model. Harness 
 
 ## Models are often simple code
 
-Models are often not meaningfully different from simple functions you're already familiar with. Like other code, they contain logic and parameters. For example, the logic might be “multiply the harness size by parameter_1”:
+Models are often not meaningfully different from simple functions with which you're already familiar. Like other code, they contain logic and parameters. For example, the logic might be *multiply the harness size by parameter_1*:
 
 ![A diagram showing a model with a single unspecified parameter.](../media/1-2-b.jpg)
 

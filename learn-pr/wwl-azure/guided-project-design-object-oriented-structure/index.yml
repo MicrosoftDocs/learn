@@ -3,13 +3,15 @@ uid: learn.wwl.guided-project-design-object-oriented-structure
 metadata:
   title: 'Guided project: Design object-oriented structures'
   description: "This is a guided project about exception handling."
-  ms.date: 03/19/2024
+  ms.date: 09/11/2024
   author: wwlpublish
-  ms.author: gregorfisher
+  ms.author: cahowd
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ai-usage: ai-assisted
-title: 'Guided project: Design object-oriented structures'
+title: 'Guided-project: Manage application state and exceptions'
 summary: In this guided project, you modify your Langton's Ant code to include exception handling. You learn how to throw and how to handle exceptions in your game buffer code.
 abstract: |
   By the end of this module, you should be able to:

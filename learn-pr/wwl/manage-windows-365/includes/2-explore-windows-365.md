@@ -1,11 +1,9 @@
-
-
 Windows 365 is a cutting-edge cloud-based service that simplifies how you create and manage virtual machines. It automatically generates a new Windows virtual machine called Cloud PCs for your end users. With Windows 365, each Cloud PC is assigned to an individual user, providing them with a dedicated Windows device. By using Windows 365, you can experience the benefits of Microsoft 365, which include increased productivity, enhanced security, and seamless collaboration. With these features, Windows 365 offers a flexible and scalable solution to support your organization's growth and changing needs.
 
 Windows 365 is available in two editions:
 
- -  **Windows 365 Business:** Windows 365 Business is made specifically for use in smaller companies (up to 300 seats) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. Purchases are made through the Microsoft 365 admin center or the Windows 365 product site. For more information, see [Getting started with Windows 365 Business and Cloud PCs](/windows-365/business/get-started-windows-365-business).
- -  **Windows 365 Enterprise:** Windows 365 Enterprise is designed for larger organizations seeking unlimited seats to create Cloud PCs. It offers the flexibility to build custom Cloud PCs using your own device images, provides additional management options, and seamlessly integrates with Microsoft Intune. Windows 365 Enterprise utilizes Microsoft Entra ID and AD DS domains to enhance its functionality. For more information, see [What is Windows 365 Enterprise?](/windows-365/enterprise/overview).
+ -  **Windows 365 Business:** Windows 365 Business is made specifically for use in smaller companies (up to 300 users) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. Purchases are made through the Microsoft 365 admin center or the Windows 365 product site. For more information, see [Getting started with Windows 365 Business and Cloud PCs](/windows-365/business/get-started-windows-365-business).
+ -  **Windows 365 Enterprise:** Windows 365 Enterprise is designed for larger organizations seeking unlimited users to create Cloud PCs. It offers the flexibility to build custom Cloud PCs using your own device images, provides additional management options, and seamlessly integrates with Microsoft Intune. Windows 365 Enterprise utilizes Microsoft Entra ID and AD DS domains to enhance its functionality. For more information, see [What is Windows 365 Enterprise?](/windows-365/enterprise/overview).
 
 ## Compare Windows 365 Business and Enterprise
 
@@ -23,7 +21,7 @@ Windows 365 is available in two editions:
 | License assignment | Microsoft 365 Admin Center or the Microsoft Entra admin center. | Microsoft 365 Admin Center or the Microsoft Entra admin center. |
 | Licensing requirements | No licensing pre-requirements to buy and deploy Windows 365 Business. Other features (like device management) can be used if users are licensed for Microsoft Endpoint Management. | Each user must be licensed for Windows 10 or 11 Enterprise (when available), Microsoft Endpoint Manager, and Microsoft Entra ID P1. |
 | Networking costs | Outbound data/month is based on the RAM of the Cloud PC: <br> - 2-GB RAM = 12-GB outbound data <br> - 4-GB or 8-GB RAM = 20-GB outbound data <br> - 16-GB RAM = 40-GB outbound data <br> - 32-GB RAM = 70-GB outbound data <br> Data bandwidth may be restricted when these levels are exceeded. | When providing a network, Networking goes through the customer's Azure VNet and isn't included in the license. [Azure bandwidth pricing](https://azure.microsoft.com/pricing/details/bandwidth/) applies for these network usage costs. <br> If using a Microsoft-hosted network, the same charges (as described in Windows 365 Business networking charges) apply. |
-| Seat limits | Capped to 300 seats per tenant.| No seat cap per tenant.|
+| User limits | Capped to 300 users per tenant.| No user cap per tenant.|
 
 ## Administration comparisons
 
@@ -36,7 +34,7 @@ Windows 365 is available in two editions:
 | Device management | Device management is limited to assigning and unassigning of Cloud PC licenses in the Microsoft Admin Center. Some device management is possible in Microsoft Endpoint Manager if you have an Intune license but Cloud PCs won't be visible in the Windows 365 blade. | Microsoft Intune admin center options, including image management, link and access on-premises resources, granular targeting of policies, resizing Cloud PCs, other user experience settings, and all the policy-based management options available to physical devices. |
 | Monitoring | Not supported. | Endpoint Analytics reporting and monitoring, service health, and operational health alerts. |
 | Troubleshooting | Not supported | Microsoft Endpoint Manager troubleshooting including the Troubleshooting blade, device management actions, and reprovisioning of Cloud PCs to their initial state. |
-| Partner/programmatic access | Not supported | Partners can manage Cloud PCs through Microsoft 365 Lighthouse or restful web APIs (Graph) to support Managed Service Provider tooling for up to 300 seats. |
+| Partner/programmatic access | Not supported | Partners can manage Cloud PCs through Microsoft 365 Lighthouse or restful web APIs (Graph) to support Managed Service Provider tooling for up to 300 users. |
 | Universal Print | Not supported. | Supported |
 
 ## End-user comparisons
@@ -52,7 +50,7 @@ Windows 365 is available in two editions:
 | Capability | Windows 365 Business | Windows 365 Enterprise |
 | --- | --- | --- |
 | Conditional Access | Conditional Access policies can be deployed only by using Microsoft Entra ID with a Microsoft Entra ID P1 license. | Conditional Access policies can be deployed by using the Microsoft Intune admin center or Microsoft Entra ID. |
-| Per-user multi-factor authentication (MFA) | Only MFA using Microsoft Entra Conditional Access is supported. Legacy per-user MFA isn't supported. | Legacy per-user MFA is supported for user connections to Microsoft Entra hybrid joined Cloud PCs. It's not supported for user connections to Microsoft Entra joined Cloud PCs. |
+| Per-user multifactor authentication (MFA) | Only MFA using Microsoft Entra Conditional Access is supported. Legacy per-user MFA isn't supported. | Legacy per-user MFA is supported for user connections to Microsoft Entra hybrid joined Cloud PCs. It's not supported for user connections to Microsoft Entra joined Cloud PCs. |
 | Security baselines | Not supported. | Dedicated Security Baselines can be edited and deployed by using Microsoft Endpoint Manager. |
 | Microsoft Defender for Endpoint | Supported if the customer separately has the requisite E5 license. | Integration with Defender for Endpoint. If the customer has an E5 license, all Cloud PCs respond to Defender for Endpoint policies and show up in MDE dashboards. |
 

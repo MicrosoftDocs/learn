@@ -1,6 +1,6 @@
-Now let's look at some ways you can manage your Advisor recommendations to more easily apply the documented best practices we've learned about so far.
+Now let's look at some ways you can manage your Advisor recommendations to more easily apply the documented best practices we learned about so far.
 
-Let's say you've gone through Advisor and either resolved, postponed, or dismissed all of your recommendations. Now what do you do?
+Let's say you went through Advisor and either resolved, postponed, or dismissed all of your recommendations. Now what do you do?
 
 Well, in addition to regularly checking your Advisor dashboard to see your Advisor Score and  recommendations, you can also set up alerts and recommendation digests to help you manage your Advisor process.
 
@@ -24,7 +24,7 @@ You can also further specify your alerts by choosing from the following properti
 
 You can set up alerts from the Advisor dashboard by first selecting **Alerts (Preview)** from the left panel.
 
-:::image type="content" source="../media/azure-advisor-alerts-select.png" alt-text="Screenshot showing how to open the Alerts page." lightbox="../media/azure-advisor-alerts-select.png":::
+:::image alt-text="Screenshot showing how to open the Alerts page." lightbox="../media/azure-advisor-alerts-select.png" source="../media/azure-advisor-alerts-select.png" type="content":::
 
 On the **Advisor - Alerts** page that opens, select **New Advisor Alert** to start creating a new alert. Or, if you already have alerts set up, you can select one to edit.
 
@@ -47,7 +47,7 @@ Another useful tool in managing your Advisor recommendations is through recommen
 
 You can set up a recommendation digest from the Advisor dashboard by first selecting **Recommendation digests** from the left panel.
 
-:::image type="content" source="../media/azure-advisor-recommendation-digest-select.png" alt-text="Screenshot showing how to open the recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest-select.png":::
+:::image alt-text="Screenshot showing how to open the recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest-select.png" source="../media/azure-advisor-recommendation-digest-select.png" type="content":::
 
 In the **Advisor - Recommendation digests** page that opens, select **New Recommendation Digest** to start creating a new recommendation digest. Ff you already have one set up, you can select it to edit.
 
@@ -60,7 +60,7 @@ Specify similar configurations as you did for Advisor Alerts:
 
 :::image type="content" source="../media/azure-advisor-recommendation-digest.png" alt-text="Screenshot showing the Add and Advisor recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest.png":::
 
-After you've configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest provides a summary of all your active recommendations across the different categories you specified.
+After you configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest provides a summary of all your active recommendations across the different categories you specified.
 
 ## Export Advisor reports
 
@@ -70,12 +70,12 @@ Advisor helps by letting you download a summary of your recommendations as eithe
 
 From the Advisor dashboard, select **Download as CSV** or **Download as PDF** on the action bar.
 
-:::image type="content" source="../media/azure-advisor-export-recommendations.png" alt-text="Screenshot showing how to export Advisor recommendations." lightbox="../media/azure-advisor-export-recommendations.png":::
+:::image alt-text="Screenshot showing how to export Advisor recommendations." lightbox="../media/azure-advisor-export-recommendations.png" source="../media/azure-advisor-export-recommendations-preview.png" type="content":::
 
 The downloaded file includes any filters you applied to the Advisor dashboard. In addition, if you select the Download option while viewing a specific recommendation category or recommendation, the downloaded summary only includes information for that category or recommendation.
 
 ## API
 
-As with many features in Azure, a REST API is also available to help you manage most of the things you've learned about Azure Advisor. For example, enterprises use our API to manage recommendations at scale by integrating with their existing work management systems.
+As with many features in Azure, a REST API is also available to help you manage most of the things you learned about Azure Advisor. For example, enterprises use our API to manage recommendations at scale by integrating with their existing work management systems.
 
 For more information, see [Azure Advisor REST API](/rest/api/advisor/?azure-portal=true).

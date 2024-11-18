@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-cloud-storage-for-iot.examine-iot-lambda-architecture
 title: Examine the IoT Lambda architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the IoT Lambda architecture
   description: "Examine the IoT Lambda architecture"
   ms.date: 02/16/2024

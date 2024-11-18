@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.4-visualize-reports-dashboards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up dashboards and reports to visualize log data
   description: Set up dashboards and reports to visualize log data.
   ms.date: 03/01/2023
@@ -36,3 +38,4 @@ quiz:
     - content: Power BI in an Office 365 subscription
       isCorrect: false
       explanation: You can export your report data to Power BI Desktop, but you can't use the data directly in a Power BI subscription to Office 365.
+

@@ -3,10 +3,10 @@ uid: learn.build-blazor-todo-list
 metadata:
   title: Build a to-do list with Blazor
   description: Learn how to build a to-do list with Blazor.
-  ms.date: 01/26/2024
+  ms.date: 09/30/2024
   author: danroth27
   ms.author: daroth
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: aspnet-core
   ms.subservice: blazor

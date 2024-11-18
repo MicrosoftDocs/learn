@@ -1,6 +1,9 @@
 ### YamlMime:Module
+# Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.void-detection-edge-devices-lva
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Void detection on Edge devices with Live Video Analytics using own images and video"
   description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
   ms.date: 07/20/2024
@@ -9,7 +12,9 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-custom-vision
-  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: "Void detection on Edge devices with Live Video Analytics using own images and video"
 summary: "Use a Live Video Analytics module on IoT Edge and deploy a Custom Vision machine learning solution to an IoT Edge device. The solution will identify void spaces in shelves. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |
@@ -52,3 +57,4 @@ units:
 - learn.oxford.void-detection-edge-devices-lva.how-deploy-solution
 - learn.oxford.void-detection-edge-devices-lva.exercise-deploy-solution
 - learn.oxford.void-detection-edge-devices-lva.summary
+

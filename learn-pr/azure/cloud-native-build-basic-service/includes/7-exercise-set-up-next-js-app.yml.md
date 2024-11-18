@@ -169,7 +169,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
     RG1NAME=postgresql-db-RG
     SERVER_NAME=$(az postgres server list --resource-group $RG1NAME --query "[0].name" --output tsv)
     USER_NAME='Student'
-    PASSWORD='Pa55w0rd1234'
+    PASSWORD='<your password placeholder>'
     ```
 
 1. Run the following commands to replace the placeholders in the **.env** file with the values you set in the previous step:

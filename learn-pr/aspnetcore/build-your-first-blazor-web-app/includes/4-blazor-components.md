@@ -2,7 +2,7 @@ Now that you have your development environment set up, let's explore the structu
 
 ## The Home page
 
-The home page for the app is defined by the *Home.razor* file located inside the *Components/Pages* directory. *Home.razor* contains the following code:
+The app's home page is defined by the *Home.razor* file located inside the *Components/Pages* directory. *Home.razor* contains the following code:
 
 ```razor
 @page "/"
@@ -22,13 +22,13 @@ Razor is a markup syntax based on HTML and C#. A Razor file (.razor) contains pl
 
 ## What are Razor components?
 
-If you explore the files in the Blazor project, you can see that most of the files that make up the project are *.razor* files. In Blazor, a Razor file defines a reusable component that makes up a portion of the app UI. Components define what HTML to render and how to handle user events.
+If you explore the files in the Blazor project, you notice that most of the files that make up the project are *.razor* files. In Blazor, a Razor file defines a reusable component that makes up a portion of the app UI. Components define what HTML to render and how to handle user events.
 
 At compile time, each Razor component is built into a C# class. The class can include common UI elements like state, rendering logic, lifecycle methods, and event handlers. Because Blazor components authored in Razor are just C# classes, you can use arbitrary .NET code from your components.
 
 ## Using components
 
-To use a component from another component, you add an HTML-style tag with a name that matches the name of the component. For example, if you have a component named *MyButton.razor*, you can add a `MyButton` component to another component by adding a `<MyButton />` tag.
+To use a component from another component, you add an HTML-style tag with a name that matches the component name. For example, if you have a component named *MyButton.razor*, you can add a `MyButton` component to another component by adding a `<MyButton />` tag.
 
 ## Component parameters
 
@@ -40,9 +40,9 @@ The `@code` block in a Razor file is used to add C# class members (fields, prope
 
 ## Try the Counter
 
-In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed:
+In the running app, navigate to the Counter page by selecting the Counter tab in the sidebar on the left. The following page should then be displayed:
 
-![Counter Screenshot.](../media/counter.png)
+![Screenshot of the Counter in the running app.](../media/counter.png)
 
 Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor, you can use C#.
 

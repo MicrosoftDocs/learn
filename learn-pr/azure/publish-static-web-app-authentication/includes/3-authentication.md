@@ -8,7 +8,7 @@ Azure Static Web Apps streamlines the authentication experience by managing auth
 
 - Microsoft Entra ID
 - GitHub
-- Twitter
+- X
 
 All authentication providers are enabled by default. We'll see later how you can restrict an authentication provider with a custom route rule.
 
@@ -24,7 +24,7 @@ The following table lists the provider-specific login route you can use in your 
 |------------------------|-------------------------|
 | Microsoft Entra ID | `/.auth/login/aad`      |
 | GitHub                 | `/.auth/login/github`   |
-| Twitter                | `/.auth/login/twitter`  |
+| X                | `/.auth/login/x`  |
 
 For example, to log in with GitHub, you can include a login link in your web app with the following snippet:
 

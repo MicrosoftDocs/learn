@@ -16,10 +16,16 @@ Several of the prebuilt models are trained on specific form types:
 
 - **Invoice model.** Extracts common fields and their values from invoices.
 - **Receipt model.** Extracts common fields and their values from receipts.
-- **W2 model.** Extracts common fields and their values from the US Government's W2 tax declaration form.
-- **ID document model.** Extracts common fields and their values from US drivers' licenses and international passports.
+- **US Tax model.** Unified US tax model that can extract from forms such as W-2, 1098, 1099, and 1040.
+- **ID document model.** Extracts common fields and their values from US drivers' licenses, European Union IDs and drivers license, and international passports.
 - **Business card model.** Extracts common fields and their values from business cards.
 - **Health insurance card model.** Extracts common fields and their values from health insurance cards.
+- **Marriage certificate.** Extracts information from marriage certificates.
+- **Credit/Debit card model.** Extracts common information from bank cards.
+- **Mortgage documents.** Extracts information from mortgage closing disclosure, Uniform Residential Loan Application (Form 1003), Appraisal (Form 1004), Validation of Employment (Form 1005), and Uniform Underwriting and Transmittal Summary (Form 1008).
+- **Bank statement model.** Extracts account information including beginning and ending balances, transaction details from bank statements.
+- **Pay Stub model.** Extracts wages, hours, deductions, net pay, and other common pay stub fields.
+- **Check model.** Extracts payee, amount, date, and other relevant information from checks.
 
 The other models are designed to extract values from documents with less specific structures:
 
@@ -38,6 +44,8 @@ The prebuilt models are designed to extract different types of data from the doc
 - **Tables.** Many models can extract tables in scanned forms included the data contained in cells, the numbers of columns and rows, and column and row headings. Tables with merged cells are supported.
 - **Fields.** Models trained for a specific form type identify the values of a fixed set of fields. For example, the Invoice model includes **CustomerName** and **InvoiceTotal** fields.
 
+Also consider that prebuilt models are designed for and trained on generic document and form types. If you have an industry-specific or unique form type that you use often, you might be able to obtain more reliable and predictable results by using a custom model. However, custom models take time to develop because you must invest the time and resources to train them on example forms before you can use it. The larger the number of example forms you provide for training, the better the model will be at prediction form content accurately.
+
 ## Input requirements
 
 The prebuilt models are very flexible but you can help them to return accurate and helpful results by submitting one clear photo or high-quality scan for each document. 
@@ -54,24 +62,6 @@ You must also comply with these requirements when you submit a form for analysis
 > If you can, submit text-embedded PDF files because they eliminate errors in character recognition.
 
 PDF and TIFF files can have any number of pages but, in the standard tier, only the first 2000 pages are analyzed. In the free tier, only the first two pages are analyzed.
-
-## Compare prebuilt models
-
-Use this table to select the best prebuilt model to support your business requirements. In the following units you'll learn further details about each model and how to set them up in Azure AI Document Intelligence. 
-
-| Model            | Text extraction | Key-value pairs | Entities | Selection marks | Tables | Fields |
-| ---              | ---             | ---             | ---      | ---             | ---    | ---    |
-| Read             | X               |                 |          |                 |        |        |
-| General document | X               | X               | X        | X               | X      |        |
-| Layout           | X               |                 |          | X               | X      |        |
-| Invoice          | X               | X               |          | X               | X      | X      |
-| Receipt          | X               | X               |          |                 |        | X      |
-| W2               | X               | X               |          | X               | X      | X      |
-| ID document      | X               | X               |          |                 |        | X      |
-| Business card    | X               | X               |          |                 |        | X      |
-|                  |                 |                 |          |                 |        |        |
-
-Also consider that prebuilt models are designed for and trained on generic document and form types. If you have an industry-specific or unique form type that you use often, you might be able to obtain more reliable and predictable results by using a custom model. However, custom models take time to develop because you must invest the time and resources to train them on example forms before you can use it. The larger the number of example forms you provide for training, the better the model will be at prediction form content accurately.
 
 ## Try out prebuilt models with Azure AI Document Intelligence Studio
 
@@ -114,8 +104,9 @@ AnalyzeResult result = operation.Value;
 ::: zone pivot="python"
 
 ```python
-poller = document_analysis_client.begin_analyze_document_from_url(
-    "prebuilt-document", docUrl)
+poller = document_analysis_client.begin_analyze_document(
+        "prebuilt-layout", AnalyzeDocumentRequest(url_source=docUrl
+    ))
 result: AnalyzeResult = poller.result()
 ```
 
@@ -127,4 +118,3 @@ The details you can extract from these results depend on the model you used.
 
 - [What is Azure AI Document Intelligence?](/azure/ai-services/document-intelligence/overview)
 - [Azure AI Document Intelligence models](/azure/ai-services/document-intelligence/concept-model-overview)
-

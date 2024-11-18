@@ -30,12 +30,12 @@ When you create accessible visual experiences, you need an awareness of visual d
 Visual disabilities might generally affect player experiences in any combination of the following ways:
 
 - A complete lack of sight or ability to see game visuals
-- Varying degrees of blurriness when viewing game visuals
+- A varying degree of blurriness when viewing game visuals
 - An incomplete view, or missing portions of the screen or UI
-- Difficulty distinguishing colors within the UI
-- Impacted depth perception and more
+- A difficulty distinguishing colors within the UI
+- An impacted depth perception and more
 
-Before you start development or engage players, consider the following aspects of visual disability. Learn how they pose the need for targeted solutions that are informed by the experiences of many different players.
+Before you start development or engage players, consider the following aspects of visual disability. Learn how they pose the need for targeted solutions that take into account the experiences of many different players.
 
 ### Gaming without vision
 
@@ -53,9 +53,9 @@ Low vision is a broad term that includes a spectrum of visual abilities. Players
 > [!NOTE]
 > The extent of cloudiness, blurriness, or completeness of view can vary from player to player, which is why providing multiple options for customization is important.
 
-Players with low vision can experience difficulty reading text or seeing onscreen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, consider providing players with customization options for the following:
+Players with low vision can experience difficulty reading text or seeing onscreen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, consider providing players with customization options for the following elemental values:
 
 - The size of text in menus, within the game environment, and within chat-based player-to-player communications
 - The size of visual elements like waypoint markers, crosshairs, and other visual indicators
 - The color and contrast of text and visual elements by enabling solid backgrounds against them and providing choice of color for the element and its background color
-- The location that visual elements like chat boxes, notifications, HUD displays, and more appear onscreen
+- The location that visual elements like chat boxes, notifications, HUD (heads up displays), and more appear onscreen

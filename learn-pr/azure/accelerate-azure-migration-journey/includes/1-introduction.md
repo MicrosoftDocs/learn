@@ -2,7 +2,7 @@ Microsoft Azure provides access to a comprehensive set of cloud services that de
 
 Migrating to Azure and modernizing those workloads can help you optimize costs, stay secure, and become resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to scale on demand, reduce operational burden, and focus on more critical tasks.
 
-There are many reasons for moving to Azure, and a proven, systematic approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs that you can use to ensure success.
+There are many reasons for moving to Azure, and a proven systematic approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs that you can use to ensure success.
 
 For example, imagine that you're a solution architect for a company called Tailwind Traders. The CIO has asked you to join a newly formed cloud migration Center of Excellence (CoE) team. This team is responsible for understanding how Azure will be used to meet both the business and technical needs of the company.
 

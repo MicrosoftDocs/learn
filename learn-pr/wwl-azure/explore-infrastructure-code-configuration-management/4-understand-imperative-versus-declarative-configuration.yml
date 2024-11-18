@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
 title: Understand imperative versus declarative configuration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand imperative versus declarative configuration
   description: "Understand imperative versus declarative configuration"
   ms.date: 05/08/2024

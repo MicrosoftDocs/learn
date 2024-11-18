@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.python-flask-build-ai-web-app.3-exercise-upload-photos
 title: Exercise - Create an app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an app
   description: Create a Flask application with Python.
   ms.date: 04/08/2022
@@ -39,3 +41,4 @@ quiz:
     - content: "<b>html</b>"
       isCorrect: false
       explanation: "Incorrect. Flask does not look for a subdirectory named **html**."
+

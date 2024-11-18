@@ -101,6 +101,9 @@ For pricing information, see [Azure Monitor pricing](https://azure.microsoft.com
 
 After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from Event Hubs.
 
+>[!NOTE]
+>Microsoft recommends that you use the most secure authentication flow available. This sample code uses symmetric key authentication, which requires a high degree of trust in the application. In production scenarios, you should only use this authentication flow when other more secure flows, such as managed identities, aren't viable.
+
 ```csharp
 
 class Program

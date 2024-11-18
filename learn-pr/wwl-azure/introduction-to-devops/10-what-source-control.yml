@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-devops.what-source-control
 title: What is source control?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is source control?
   description: "What is source control?"
   ms.date: 05/29/2024

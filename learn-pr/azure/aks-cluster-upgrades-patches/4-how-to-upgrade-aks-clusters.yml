@@ -1,7 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-cluster-upgrades-patches.how-to-upgrade-aks-clusters
 title: How to safely upgrade AKS clusters
-metadata: 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true 
   title: How to safely upgrade AKS clusters
   description: Understand how to upgrade AKS clusters through a Blue/Green deployment method.
   ms.date: 10/09/2023
@@ -26,3 +28,4 @@ quiz:
     - content: "Make a copy of your existing AKS cluster, upgrade the copy, and then shut down the original cluster."
       isCorrect: false
       explanation: "The Blue/Green deployment method involves creating and maintaining two identical environments and using a router to switch between the test environment and the production environment to deploy changes."
+

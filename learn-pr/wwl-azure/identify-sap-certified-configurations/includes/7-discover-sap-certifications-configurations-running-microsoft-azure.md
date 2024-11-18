@@ -31,10 +31,10 @@ Microsoft Azure is certified for the following SAP products, with full support f
 | SAP BPC 10.01 MS SP08 | Windows and Linux | | All NetWeaver Certified virtual machine types: [SAP Note \#2451795](https://me.sap.com/notes/2451795)
 | SAP Business Objects BI platform | Windows and Linux | | [SAP Note \#2145537](https://me.sap.com/notes/2145537) |
 | SAP Data Services 4.2 | | | [SAP Note \#2288344](https://me.sap.com/notes/2288344) |
-| SAP Hybris Commerce Platform | Windows | SQL Server, Oracle | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/en-US/8c71300f866910149b40c88dfc0de431.html) |
-| SAP Hybris Commerce Platform | SLES 12 or more recent | SAP HANA | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/en-US/8c71300f866910149b40c88dfc0de431.html) |
-| SAP Hybris Commerce Platform | RHEL 7 or more recent | SAP HANA | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/en-US/8c71300f866910149b40c88dfc0de431.html) |
-| SAP (Hybris) Commerce Platform 1811 and later | Windows, SLES, or RHEL | SQL Azure DB | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/1811/en-US/8c71300f866910149b40c88dfc0de431.html) |
+| SAP Hybris Commerce Platform | Windows | SQL Server, Oracle | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/8c71300f866910149b40c88dfc0de431.html) |
+| SAP Hybris Commerce Platform | SLES 12 or more recent | SAP HANA | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/8c71300f866910149b40c88dfc0de431.html) |
+| SAP Hybris Commerce Platform | RHEL 7 or more recent | SAP HANA | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/6.7.0.0/8c71300f866910149b40c88dfc0de431.html) |
+| SAP (Hybris) Commerce Platform 1811 and later | Windows, SLES, or RHEL | SQL Azure DB | All NetWeaver certified virtual machine types: [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/1811/8c71300f866910149b40c88dfc0de431.html) |
 
 > [!IMPORTANT]
 > Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of SAP product, operating system, RDBMS, and Azure Virtual Machine SKU.

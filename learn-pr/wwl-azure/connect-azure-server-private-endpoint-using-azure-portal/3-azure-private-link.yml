@@ -2,9 +2,11 @@
 uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-link
 title: Azure Private Link
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Private Link
   description: "Azure Private Link"
-  ms.date: 05/31/2024
+  ms.date: 10/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

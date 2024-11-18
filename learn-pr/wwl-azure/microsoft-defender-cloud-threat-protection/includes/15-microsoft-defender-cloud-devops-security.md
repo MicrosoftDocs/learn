@@ -35,6 +35,8 @@ The DevOps inventory table allows you to review onboarded DevOps resources and t
  -  Name - Lists onboarded DevOps resources from Azure DevOps, GitHub, and/or GitLab. View the resource health page by selecting it.
  -  DevOps environment - Describes the DevOps environment for the resource (that is, Azure DevOps, GitHub, GitLab). Use this column to sort by environment if multiple environments are onboarded.
  -  Advanced security status - Shows whether advanced security features are enabled for the DevOps resource.
+    
+    
      -  `On` \- Advanced security is enabled.
      -  `Off` \- Advanced security isn't enabled.
      -  `Partially enabled` \- Certain Advanced security features aren't enabled (for example, code scanning is off).
@@ -44,6 +46,8 @@ The DevOps inventory table allows you to review onboarded DevOps resources and t
 > Currently, this information is available only for Azure DevOps and GitHub repositories.
 
  -  Pull request annotation status - Shows whether PR annotations are enabled for the repository.
+    
+    
      -  `On` \- PR annotations are enabled.<br>
      -  `Off` \- PR annotations aren't enabled.<br>
      -  `N/A` \- Defender for Cloud doesn't have information about enablement.<br>

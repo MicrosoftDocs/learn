@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.key-components-of-azure-databricks-workflows
 title: Understand key components of Azure Databricks Workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand key components of Azure Databricks Workflows
   description: "Understand key components of Azure Databricks Workflows"
   ms.date: 07/29/2024

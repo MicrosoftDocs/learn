@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-updates.enable-update-management
 title: Enable update management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable update management
   description: "Enable update management"
   ms.date: 09/24/2020

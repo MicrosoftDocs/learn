@@ -16,7 +16,7 @@ Users can submit jobs using one of the below options:
 
  
 
-In the following sections, you learn how to submit your first job from the portal, Apache Flink UI, SSH pod, and Postman (REST API). 
+In the following sections, you learn how to submit your first job from the portal, Apache Flink UI, SSH pod, and using the REST API. 
 
  
 

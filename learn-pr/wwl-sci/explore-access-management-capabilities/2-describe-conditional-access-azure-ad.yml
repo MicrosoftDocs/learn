@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits
 title: Describe Conditional Access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Conditional Access
   description: "Describe Conditional Access"
-  ms.date: 01/03/2024
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit

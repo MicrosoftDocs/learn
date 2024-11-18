@@ -12,9 +12,9 @@ The Azure Kubernetes Service environment is enabled with many features, such as 
 
 :::image type="content" source="../media/select-azure-kubernetes-service.png" alt-text="Flowchart that shows the decision tree for selecting Azure Kubernetes Service to build new workloads and to support lift and shift migrations." border="false":::
 
-- Azure manages the Kubernetes cluster, and the cluster is free. You manage the agent nodes in the cluster and only pay for the virtual machines on which your nodes run.
+- The Kubernetes cluster is managed by Azure and is free. You manage the agent nodes in the cluster and only pay for the virtual machines on which your nodes run.
 
-- When you create the cluster, you can use Azure Resource Manager (ARM) templates to automate cluster creation. With ARM templates, you specify features like as advanced networking, Microsoft Entra integration, and monitoring. 
+- When you create the cluster, you can use Azure Resource Manager (ARM) templates to automate cluster creation. With ARM templates, you specify features like as advanced networking, Azure Active Directory (AD) integration, and monitoring. 
 
 - AKS gives you the benefits of open-source Kubernetes. You don't have the complexity or operational overhead of running your own custom Kubernetes cluster.
 
@@ -24,11 +24,11 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 
 | Feature | Consideration | Solution |
 | --- | --- | --- |
-| **Identity and security management** | _Do you already use existing Azure resources and make use of Microsoft Entra ID?_ | You can configure an Azure Kubernetes Service cluster to integrate with Microsoft Entra ID and reuse existing identities and group membership. |
+| **Identity and security management** | _Do you already use existing Azure resources and make use of Azure Active Directory (Azure AD)?_ | You can configure an Azure Kubernetes Service cluster to integrate with Azure AD and reuse existing identities and group membership. |
 | **Integrated logging and monitoring** | _Are you using Azure Monitor?_ | Azure Monitor provides performance visibility of the cluster. |
 | **Automatic cluster node and pod scaling** | _Do you need to scale up or down a large containerization environment?_ | AKS supports two auto cluster scaling options. The _horizontal pod autoscaler_ watches the resource demand of pods and increases pods to meet demand. The _cluster autoscaler_ component watches for pods that can't be scheduled because of node constraints. It automatically scales cluster nodes to deploy scheduled pods. |
 | **Cluster node upgrades** | _Do you want to reduce the number of cluster management tasks?_ | AKS manages Kubernetes software upgrades and the process of cordoning off nodes and draining them. |
-| **Storage volume support** | _Does your application require persisted storage?_ | AKS supports both static and dynamic storage volumes. Pods can attach and reattach to these storage volumes when created or rescheduled on different nodes. |
+| **Storage volume support** | _Does your application require persisted storage?_ | AKS supports both static and dynamic storage volumes. Pods can attach and reattach to these storage volumes as they're created or rescheduled on different nodes. |
 | **Virtual network support** | _Do you need pod-to-pod network communication or access to on-premises networks from your AKS cluster?_ | An AKS cluster can be deployed into an existing virtual network with ease. |
 | **Ingress with HTTP application routing support** | _Do you need to make your deployed applications publicly available?_ | The HTTP application routing add-on makes it easy to access AKS cluster deployed applications. |
 | **Docker image support** | _Do you already use Docker images for your containers?_ | By default, AKS supports the Docker file image format. |

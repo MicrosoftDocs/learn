@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-enterprise-desktop.examine-plan-purchase
 title: Examine planning and purchasing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine planning and purchasing
   description: "Examine planning and purchasing"
-  ms.date: 01/24/2024
+  ms.date: 09/09/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit

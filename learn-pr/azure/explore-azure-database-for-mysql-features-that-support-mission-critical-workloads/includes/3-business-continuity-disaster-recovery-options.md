@@ -1,4 +1,5 @@
 Azure Database for MySQL - Flexible Server provides business continuity features to protect your database in case of planned or unplanned outages. To address different types of outages, you can apply varying levels of fault protection with different recovery times or risk of data loss.
+
 ## Downtime examples
 
 A few example scenarios for both planned and unplanned downtime follow.
@@ -16,14 +17,11 @@ New features and bug fixes happen automatically as part of service planned maint
 The database can go down unexpectedly for several reasons, such as:
 
 - Database hardware failure.
-
 - Storage drive failure.
-
 - Application or user errors (e.g. accidentally dropping tables).
-
 - Availability zone & region failures.
 
-If high availability (HA) is not enabled, then Azure attempts recovery such as copying lost data, restarting the server, or even starting the server on another physical node. Enabling HA can reduce or even eliminate these kinds of downtime, as discussed in the following section.
+If high availability (HA) isn't enabled, then Azure attempts recovery such as copying lost data, restarting the server, or even starting the server on another physical node. Enabling HA can reduce or even eliminate these kinds of downtime, as discussed in the following section.
 
 ## High availability
 
@@ -59,7 +57,7 @@ To store the backup files, you can select from several storage options:
 
 - With **zone-redundant backup** storage (different zone, same region), backup files are stored in the server's availability zone and replicated to another availability zone in the same region. This option provides twelve 9s (99.9999999999%) of durability over a given year. Zone-redundant storage is important for zone-redundant HA and is required if data must remain within a single region.
 
-- With **geo-redundant backup** storage (different regions), backup files are stored in the server's region and then replicated to another geo-paired region. This option provides sixteen 9s (99.99999999999999%) of durability over a given year. Geo-redundant storage is only supported in [Azure paired regions](https://github.com/solliancenet/microsoft-learning-path-work-with-azure-database-for-mysql/blob/main/azure/mysql/flexible-server/overview#azure-regions).
+- With **geo-redundant backup** storage (different regions), backup files are stored in the server's region and then replicated to another geo-paired region. This option provides sixteen 9s (99.99999999999999%) of durability over a given year. Geo-redundant storage is only supported in [Azure paired regions](/azure/reliability/cross-region-replication-azure#azure-paired-regions).
 
 **Note**: With Azure Database for MySQL - Flexible Server, backup space up to 100% of provisioned storage space is available at no additional charge. Additional storage is charged in GB per month. For more information, see the pricing documentation.
 
@@ -74,11 +72,8 @@ You can choose a system-managed schedule or define a custom schedule for each My
 You can receive scheduled maintenance notifications in one of several ways. Notifications might be:
 
 - Emailed to a specific address or Azure Resource Manager role.
-
 - Sent via text message (SMS).
-
 - Pushed as an Azure app notification.
-
 - Delivered via voice message.
 
 ### Custom maintenance windows
@@ -87,12 +82,8 @@ By default, with a system-managed schedule, the system picks a one-hour window b
 
 ### Near-zero downtime maintenance for HA servers (public preview)
 
-HA-enabled servers benefit from Near Zero Downtime Maintenance, a new feature which substantially reduces maintenance downtime. The expected downtime is between 40 to 60 seconds. Near-zero downtime maintenance is crucial for applications with very high availability requirements, requiring minimal interruptions to database connectivity.
+HA-enabled servers benefit from Near Zero Downtime Maintenance, a new feature, which substantially reduces maintenance downtime. The expected downtime is between 40 to 60 seconds. Near-zero downtime maintenance is crucial for applications with very high availability requirements, requiring minimal interruptions to database connectivity.
 
 ### Reschedule maintenance (public preview)
 
 You can reschedule maintenance when using the General Purpose or Business Critical service tiers. In the maintenance section of the Azure portal, you can reschedule the next scheduled maintenance to another date and time. You can also initiate maintenance on demand by selecting **Reschedule to Now**.
-
-> [!NOTE]  
->  
-> You can't reschedule a maintenance period if there are 15 or fewer minutes before the scheduled maintenance begins.

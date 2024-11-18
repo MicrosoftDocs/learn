@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/20/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.service: dotnet-mobile
   ms.subservice: dotnet-maui

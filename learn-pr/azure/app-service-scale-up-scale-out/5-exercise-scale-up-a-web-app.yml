@@ -2,6 +2,8 @@
 uid: learn.azure.app-service-scale-up-scale-out.5-exercise-scale-up-a-web-app
 title: Exercise - Scale up a web app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Scale up a web app
   description: Scale a web app up and down.
   ms.date: 11/08/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-scale-up-a-web-app.md)]
+

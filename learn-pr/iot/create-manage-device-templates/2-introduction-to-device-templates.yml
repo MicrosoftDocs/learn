@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-device-templates.introduction-to-device-templates
 title: Review device template capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review device template capabilities
   description: This content is a part of Create and manage device templates in Azure IoT Central
   ms.date: 05/11/2023

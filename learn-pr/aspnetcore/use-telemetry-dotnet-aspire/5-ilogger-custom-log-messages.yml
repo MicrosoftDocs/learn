@@ -6,6 +6,7 @@ metadata:
   description: In this unit, you'll learn how to add messages to structured logs by using a logger object.
   author: camsoper
   ms.author: casoper
+  ms.date: 8/20/2024
   ms.topic: unit
 durationInMinutes: 5
 content: |

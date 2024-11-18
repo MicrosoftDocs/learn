@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.examine-azure-machine-learning-schema
 title: Examine the Azure Machine Learning schema
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the Azure Machine Learning schema
   description: Examine the Azure Machine Learning schema
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-examine-azure-machine-learning-schema.md)]
+

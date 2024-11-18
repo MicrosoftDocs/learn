@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-failover-clustering-windows-server
 title: Describe failover clusters in Windows Server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe failover clusters in Windows Server
   description: "Describe failover clusters in Windows Server"
   ms.date: 05/13/2022

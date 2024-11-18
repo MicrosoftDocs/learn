@@ -87,4 +87,4 @@ PowerShell commands provide flexibility for creating, viewing, editing, and dele
 
 ## Knowledge check
 
-Choose the best response for the question below, then select **Check your answers**.
+Choose the best response for the question below.

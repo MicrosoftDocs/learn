@@ -35,7 +35,7 @@ Security Reader role can be applied on the Resource Group or connector scope to 
 
 The following tables summarize the availability and prerequisites for each feature within the supported DevOps platforms:
 
-Starting March 7, 2024, [Defender CSPM](/azure/defender-for-cloud/concept-cloud-security-posture-management) must be enabled on at least one subscription or multicloud connector in the tenant to benefit from premium DevOps security capabilities which include code-to-cloud contextualization powering security explorer and attack paths and pull request annotations for Infrastructure-as-Code security findings. See details below to learn more.<br>
+Starting March 7, 2024, [Defender CSPM](/azure/defender-for-cloud/concept-cloud-security-posture-management) must be enabled on at least one subscription or multicloud connector in the tenant to benefit from premium DevOps security capabilities which include code-to-cloud contextualization powering security explorer and attack paths and pull request annotations for Infrastructure-as-Code security findings. See details below to learn more.
 
 ## Azure DevOps
 

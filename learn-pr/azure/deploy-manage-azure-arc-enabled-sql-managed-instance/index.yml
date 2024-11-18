@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy and manage an Azure Arc-enabled SQL Managed Instance
   description: Describe how to deploy and manage an Azure Arc-enabled SQL managed instance.
   ms.date: 08/06/2024
@@ -9,7 +11,7 @@ metadata:
   manager: jroth
   ms.topic: module
   ms.service: azure-arc
-  ms.subservice: azure-arc-data-sqlmi
+  ms.subservice: azure-arc-sql-mi
 title: Deploy and manage an Azure Arc-enabled SQL Managed Instance
 summary: Describe an Azure Arc-enabled SQL Managed Instance and how to connect to it to restore a SQL Server database backup and run queries. Use the instance to deploy, configure, and apply service updates.
 abstract: |
@@ -47,3 +49,4 @@ units:
 badge:
   uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.badge
   
+

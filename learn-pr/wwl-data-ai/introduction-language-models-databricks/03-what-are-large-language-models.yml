@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-language-models-databricks.what-are-large-language-models
 title: Understand Large Language Models (LLMs)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Large Language Models (LLMs)
   description: "Understand Large Language Models (LLMs)"
   ms.date: 08/12/2024

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-data-loss-prevention
 metadata:
   title: 'SC-400: Implement Data Loss Prevention'
   description: 'SC-400: Implement Data Loss Prevention'
-  ms.date: 11/11/2021
+  ms.date: 10/15/2024
   author: wwlpublish
   ms.author: riswinto
   ms.topic: learning-path
@@ -27,6 +27,7 @@ subjects:
 - security
 modules:
 - learn-m365.m365-compliance-information-prevent-data-loss
+- learn-m365.purview-implement-endpoint-dlp
 - learn.wwl.create-configure-data-loss-prevention-policies
 - learn.wwl.manage-data-loss-prevention-polices
 trophy:

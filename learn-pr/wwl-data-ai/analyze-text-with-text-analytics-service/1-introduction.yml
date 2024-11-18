@@ -2,14 +2,16 @@
 uid: learn.wwl.analyze-text-with-text-analytics-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction
+  description: "Introduction"
+  ms.date: 10/17/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 11/02/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -28,18 +28,16 @@ To connect your GitHub account to Microsoft Defender for Cloud:
     :::image type="content" source="../media/select-plans-dd2c495f.png" alt-text="Screenshot showing how to Configure the Defender CSPM plan status for your GitHub connector.":::
     
 7.  Select **Next**: **Configure access**.
-8.  Select **Authorize** to grant your Azure subscription access to your GitHub repositories. Sign in, if necessary, with an account that has permissions to the repositories that you want to protect.
-    
-    After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
+8.  Select **Authorize** to grant your Azure subscription access to your GitHub repositories. Sign in, if necessary, with an account that has permissions to the repositories that you want to protect. After authorization, if you wait too long to install the DevOps security GitHub application, the session will time out and you'll get an error message.
 9.  Select **Install**.
-10. Select the organizations to install the GitHub application. It's recommended to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment.
-    
-    This step grants Defender for Cloud access to the selected organizations.
+10. Select the organizations to install the GitHub application. It's recommended to grant access to **all repositories** to ensure Defender for Cloud can secure your entire GitHub environment. This step grants Defender for Cloud access to the selected organizations.
 11. For Organizations, select one of the following:
+    
+    
      -  Select **all existing organizations** to autodiscover all repositories in GitHub organizations where the DevOps security GitHub application is installed.
      -  Select **all existing and future organizations** to autodiscover all repositories in GitHub organizations where the DevOps security GitHub application is installed and future organizations where the DevOps security GitHub application is installed.
 12. Select **Next**: **Review and generate**.
 13. Select **Create**.
-
+    
     > [!NOTE]
     > To ensure proper functionality of advanced DevOps posture capabilities in Defender for Cloud, only one instance of a GitHub organization can be onboarded to the Azure Tenant you are creating a connector in.

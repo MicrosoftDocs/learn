@@ -2,6 +2,8 @@
 uid: learn.wwl.introduce-foundation-pillars-devops.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 09/20/2020

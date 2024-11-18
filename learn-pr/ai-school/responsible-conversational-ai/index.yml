@@ -3,6 +3,7 @@ uid: learn-wwl.responsible-conversational-ai
 metadata:
   title: Discover Microsoft guidelines for responsible conversational AI development
   description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
+  ms.collection: TBD
   ms.date: 07/10/2024
   author: Adriamen
   ms.author: japerena

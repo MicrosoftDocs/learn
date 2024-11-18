@@ -7,7 +7,7 @@ An API, or Application Programming Interface, is a set of rules and protocols th
 
 After completing this module, you'll be able to:
 
-* Describe the two model types of APIs in ASP.NET Core.
+* Describe the two types of APIs in ASP.NET Core.
 * Create Swagger documentation for an API by using Swashbuckle.
 * Interact with an API by using the Swagger interface.
 

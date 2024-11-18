@@ -12,4 +12,4 @@ Output similar to the following example appears:
 7.0.102 [C:\Program Files\dotnet\sdk]
 ```
 
-Ensure that a version that starts with `7` is listed. If none is listed or the command isn't found, [install the most recent .NET 7.0 SDK](https://dotnet.microsoft.com/download).
+Ensure that a version that starts with `7` is listed. If none is listed or the command isn't found, [install the most recent .NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0).

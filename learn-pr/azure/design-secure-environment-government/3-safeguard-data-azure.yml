@@ -2,6 +2,8 @@
 uid: learn.azure.design-secure-environment-government.3-safeguard-data-azure
 title: Safeguard data with Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Safeguard data with Azure
   description: Overview of the benefits of implementing Azure solutions for protecting public sector data.
   ms.date: 05/04/2023

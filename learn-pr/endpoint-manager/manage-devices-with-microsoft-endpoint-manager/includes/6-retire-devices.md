@@ -1,4 +1,4 @@
-When a device gets lost or stolen, when it needs to be replaced, or when users move to another position, it's usually time to retire or wipe the device. There are a number of ways you can do this, including resetting the device, removing it from management, and wiping the corporate data on it.
+When a device is lost or stolen, or needs to be replaced. It's usually time to retire or wipe the device. There are several ways you can retire a device. Including, resetting the device, removing it from management, and wiping the corporate data on it.
 
 In Intune, you can add actions for noncompliance for devices that don't meet your organization's compliance policies or rules. This feature configures a time-ordered sequence of actions, such as emailing the end user, and more. One of the available actions for noncompliance is to retire the noncompliant device.
 

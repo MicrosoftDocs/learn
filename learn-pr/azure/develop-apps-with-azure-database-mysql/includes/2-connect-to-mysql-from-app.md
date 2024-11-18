@@ -1,15 +1,16 @@
 Azure Database for MySQL - Flexible Server provides you with the flexibility to develop apps using your favorite tools, languages, and frameworks. You can continue to use powerful development tools like Visual Studio Code and GitHub and develop using any programming language like PHP, Java, Python, Node.js, C#, Ruby, Rust, Go, etc. You can also integrate Flexible Server with popular Content Management Systems (CMS) like WordPress or Drupal, Learning Management Systems (LMS) like Moodle, e-commerce platforms like Magento, and so on.
+
 Let's begin by looking at the various tasks involved in connecting to and querying Azure Database for MySQL flexible server from your app, using the language of your choice.
 
 ## 1 - Obtain connection information
 
-The first task is to obtain the connection information you need to connect to your Azure Database for MySQL flexible server. You'll need the server name, database name, and sign in credentials.
+The first task is to obtain the connection information (server name, database name, and sign in credentials) you need to connect to your Azure Database for MySQL flexible server.
 
 In the Azure portal, navigate to your MySQL flexible server resource, and then note the **Server name** and **Server admin login name**.
 
 ## 2 - Obtain SSL certificate
 
-It's recommended to secure data in transit by ensuring that your app connects to an Azure Database for Azure Database for MySQL flexible server using Secure Sockets Layer (SSL). You can download the public SSL certificate from the Networking blade in the Azure portal as shown in the following screenshot.
+It's recommended to secure data in transit by ensuring that your app connects to an Azure Database for MySQL flexible server using Secure Sockets Layer (SSL). You can download the public SSL certificate from the **Networking** blade in the Azure portal as shown in the following screenshot.
 
 :::image type="content" source="../media/2-connect-to-mysql-from-app/download-ssl.png" alt-text="Screenshot showing Azure Database for MySQL Networking blade on Azure portal.":::
 
@@ -26,17 +27,15 @@ To connect to MySQL from your PHP app, you can use one of the following extensio
 
 To use an extension, you need to enable it in the `php.ini` configuration file by uncommenting the associated line. For example, if you wanted to use MySQLi, uncomment the `extension=mysqli` line in the file.
 
-## 3 - Connect to and query MySQL flexible server using PHP
+## 3 - Connect to and query a MySQL flexible server using PHP
 
-While you have options for connecting, this unit showcases the use of the MySQLi extension to connect to Azure Database for MySQL flexible server from a PHP app.
+While there are options for connecting, this unit showcases the use of the MySQLi extension to connect to Azure Database for MySQL flexible server from a PHP app.
 
 You'll also need to use the OpenSSL extension to establish an encrypted connection over SSL. As you did for MySQLi, enable the OpenSSL extension by uncommenting the `extension=openssl` line in the `php.ini` file.
 
 ### Establish a connection
 
-To establish a connection to a MySQL flexible server using MySQLi, you can use the following code snippet in your PHP app.
-
-You need to replace the `host`, `username`, `password`, and `db_name` parameters with your values, and then provide the path to your downloaded SSL certificate path in the `mysqli_ssl_set()` method.
+To establish a connection to a MySQL flexible server using MySQLi, you can use the following code snippet in your PHP app. Be sure to replace the `host`, `username`, `password`, and `db_name` parameters with your values, and then provide the path to your downloaded SSL certificate path in the `mysqli_ssl_set()` method.
 
 ```php
 $host = '<your_server_name>.mysql.database.azure.com';
@@ -53,9 +52,9 @@ if (mysqli_connect_errno($conn)) {
 printf("Connection Established.\n");
 ```
 
-- `mysqli_init()` method initializes MySQLi and returns an object for use with `mysqli_real_connect()`
-- `mysqli_ssl_set()` is used to establish secure connections using SSL. This method takes in the path to your downloaded SSL certificate. This function does nothing unless OpenSSL extension is enabled.
-- `mysqli_real_connect()` method opens a connection to a MySQL database engine. Pass the MySQL flexible server connection information as arguments to establish a connection to it.
+- The `mysqli_init()` method initializes MySQLi and returns an object for use with `mysqli_real_connect()`
+- The `mysqli_ssl_set()` is used to establish secure connections using SSL. This method takes in the path to your downloaded SSL certificate. This function does nothing unless the OpenSSL extension is enabled.
+- The `mysqli_real_connect()` method opens a connection to a MySQL database engine. Pass the MySQL flexible server connection information as arguments to establish a connection to it.
 
 ### Perform database operations
 
@@ -72,9 +71,9 @@ PRIMARY KEY (`Id`)
 ')
 ```
 
-If the query contains any variable input, then use parameterized prepared statements instead. This protects against SQL injection attacks which are one of the most common techniques used by web hackers.
+If the query contains any variable input, then use parameterized prepared statements instead. This protects against SQL injection attacks, which are one of the most common techniques used by web hackers.
 
-Below is a code snippet that inserts data into a table by using prepared statements with MySQLi.
+A code snippet that inserts data into a table by using prepared statements with MySQLi follows.
 
 ```php
 $product_name = 'BrandNewProduct';
@@ -94,7 +93,7 @@ if ($stmt = mysqli_prepare($conn, "INSERT INTO Products (ProductName, Price) VAL
 
 ### Close the connection
 
-After you complete your database operations, it's a good practice to close the database connection using `mysqli_close()` method.
+After you complete your database operations, it's a good practice to close the database connection using the `mysqli_close()` method.
 
 ```php
 mysqli_close($conn);
@@ -112,11 +111,11 @@ You can easily install these connectors using the Python package installer `pip`
 
 ## 3 - Connect to and query Azure Database for MySQL - Flexible Server using Python
 
-In this section, we'll showcase how to use *MySQL Connector/Python* to connect to Azure Database for MySQL - Flexible Server from your Python app.
+While you have options for connecting, this unit showcases how to use *MySQL Connector/Python* to connect to Azure Database for MySQL - Flexible Server from your Python app.
 
 ### Establish a connection
 
-Below is a code snippet you can use in your Python app to establish a connection to you MySQL flexible server. You'll need to replace the `host`, `user`, `password`, and `database` parameters with your values, and provide the path to downloaded SSL certificate under `ssl_ca` option.
+A code snippet you can use in your Python app to establish a connection to your MySQL flexible server follows. Be sure to replace the `host`, `user`, `password`, and `database` parameters with your values, and provide the path to downloaded SSL certificate under `ssl_ca` option.
 
 ```python
 import mysql.connector
@@ -147,8 +146,8 @@ else:
     cursor = conn.cursor()
 ```
 
-- `mysql.connector.connect()` method sets up a connection with the MySQL server and returns a connection object. Pass the MySQL flexible server connection information object as argument to establish a connection to it.
-- `cursor()` method of the connection object creates a cursor that can be used to interact with the MySQL server.
+- The `mysql.connector.connect()` method sets up a connection with the MySQL server and returns a connection object. Pass the MySQL flexible server connection information object as argument to establish a connection to it.
+- The `cursor()` method of the connection object creates a cursor that can be used to interact with the MySQL server.
 
 ### Perform database operations
 
@@ -164,7 +163,7 @@ cursor.execute("INSERT INTO inventory (name, quantity) VALUES (%s, %s);", ("bana
 
 ### Close the connection
 
-MySQL Connector/Python doesn't autocommit transactions. So it's important to call the `commit()` method of the connection object, like `conn.commit()`, after every transaction that modifies data.
+MySQL Connector/Python doesn't autocommit transactions, so it's important to call the `commit()` method of the connection object, like `conn.commit()`, after every transaction that modifies data.
 
 After performing all the operations, it's a good practice to close the cursor and the connection object.
 
@@ -185,7 +184,7 @@ Alternatively, you can also use frameworks like *Spring Data JPA* to connect to 
 
 ## 3 - Connect to and query Azure Database for MySQL - Flexible Server using Java
 
-In this section, we'll showcase how to use *MySQL Connector/J* to connect to Azure Database for MySQL - Flexible Server from your Java app.
+While you have options for connecting, this unit showcases how to use *MySQL Connector/J* to connect to Azure Database for MySQL - Flexible Server from your Java app.
 
 ### Store connection information
 
@@ -224,7 +223,7 @@ public class DemoApplication {
 
 ### Perform database operations
 
-After you've established a connection and obtained the `Connection` object, you can call the `createStatement()` method on the object to create a `Statement` object.
+After you establish a connection and obtained the `Connection` object, you can call the `createStatement()` method on the object to create a `Statement` object.
 After you have a `Statement` instance, you can execute a `SELECT` query by calling the `executeQuery(String)` method with the SQL you want to use. To update data in the database, use the `executeUpdate(String SQL)` method.
 
 For example:
@@ -236,7 +235,7 @@ statement.executeUpdate("INSERT INTO inventory (name, quantity) VALUES (\"banana
 ResultSet resultSet = statement.executeQuery("SELECT * FROM inventory");
 ```
 
-If the query contains any variable input, then parameterized prepared statements should be used instead. This protects against SQL injection attacks which are one of the most common techniques used by web hackers. To use prepared statements, you can call the `prepareStatement()` method on the `Connection` object to create a `PreparedStatement` object, bind the parameters and run the prepared statement using `executeUpdate()` method.
+If the query contains any variable input, then parameterized prepared statements should be used instead. This protects against SQL injection attacks, which are one of the most common techniques used by web hackers. To use prepared statements, you can call the `prepareStatement()` method on the `Connection` object to create a `PreparedStatement` object, bind the parameters, and then run the prepared statement using `executeUpdate()` method.
 
 ### Close the connection
 

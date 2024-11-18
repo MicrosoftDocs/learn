@@ -1,5 +1,7 @@
 DevOps is a concept that aims to address the challenges associated with traditional application lifecycle.
 
+> "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users." - Donovan Brown
+
 Imagine that you work for a software development company in the retail industry. Your company is planning to migrate from an old app to a new app. However, the development team and the operations team have conflicting objectives. The development team wants to release new features quickly to attract more customers, while the operations team wants to ensure stability and reliability of the application. This conflict leads to delays in releasing new features and frequent downtime for the application. Your company realizes that it needs to adopt DevOps practices to overcome these challenges and deliver high-quality software efficiently and reliably.
 
 :::image type="content" source="../media/1-discover-devops.png" alt-text="Screenshot of the DevOps toolchain and application lifecycle.":::

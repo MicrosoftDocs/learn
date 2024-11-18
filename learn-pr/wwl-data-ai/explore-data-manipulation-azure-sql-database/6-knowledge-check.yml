@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-manipulation-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  questions:
+  - content: What is the purpose of using the `sp_invoke_external_rest_endpoint` stored procedure in Azure SQL Database?
+    choices:
+    - content: To call any HTTP REST endpoints directly from SQL queries
+      isCorrect: true
+      explanation: Correct. The `sp_invoke_external_rest_endpoint` stored procedure allows you to call any HTTP REST endpoints directly from your SQL queries, enabling integration with a wide range of services.
+    - content: To create a new REST endpoint in the database
+      isCorrect: false
+      explanation: Incorrect. The `sp_invoke_external_rest_endpoint` doesn't create new REST endpoints, it's used to call existing HTTP REST endpoints directly from SQL queries.
+    - content: To secure the database by encrypting data
+      isCorrect: false
+      explanation: Incorrect. While security is important, the `sp_invoke_external_rest_endpoint` isn't used for data encryption. It's used to call HTTP REST endpoints directly from SQL queries.
+  - content: What is the role of an Azure Function trigger in relation to Azure SQL Database?
+    choices:
+    - content: To monitor the performance of Azure SQL Database
+      isCorrect: false
+      explanation: Incorrect. Azure Function triggers don't monitor performance. They trigger a function when a change is detected on a SQL table.
+    - content: To initiate automatic backups of Azure SQL Database
+      isCorrect: false
+      explanation: Incorrect. Azure Function triggers don't initiate backups. They trigger a function when a change is detected on a SQL table.
+    - content: To trigger a function when a change is detected on a SQL table
+      isCorrect: true
+      explanation: Correct. An Azure Function trigger initiates a function when a change (INSERT, UPDATE, DELETE) is detected on a SQL table.
+  - content: What is the significance of the isolated worker model in creating a C# function?
+    choices:
+    - content: It allows the function to run in multiple languages simultaneously
+      isCorrect: false
+      explanation: Incorrect. The isolated worker model doesn't enable multi-language execution. It allows a compiled function to run in a process isolated from the runtime.
+    - content: It allows a compiled function to run in a process isolated from the runtime
+      isCorrect: true
+      explanation: Correct. The isolated worker model allows a compiled function to run in a process that is isolated from the runtime, supporting both LTS and non-LTS versions of .NET and the .NET Framework.
+    - content: It enables the function to run without any dependencies
+      isCorrect: false
+      explanation: Incorrect. The isolated worker model doesn't eliminate dependencies. It allows a compiled function to run in a process isolated from the runtime.
+

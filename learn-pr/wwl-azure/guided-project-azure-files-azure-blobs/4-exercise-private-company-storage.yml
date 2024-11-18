@@ -2,9 +2,11 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise3
 title: Exercise - Provide private storage for internal company documents
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Provide private storage for internal company documents
   description: "Exercise - Provide private storage for internal company documents"
-  ms.date: 02/28/2024
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

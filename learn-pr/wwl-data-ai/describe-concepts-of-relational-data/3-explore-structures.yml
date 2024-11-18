@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-concepts-of-relational-data.explore-structures
 title: Explore relational data structures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore relational data structures
   description: "Explore relational data structures"
   ms.date: 03/18/2024

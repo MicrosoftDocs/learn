@@ -2,7 +2,9 @@ DevOps is a commonly misunderstood and mischaracterized term. Before you explore
 
 ## What is DevOps (and what isn't)?
 
-> "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users." - Donovan Brown
+---
+> [!VIDEO https://www.youtube.com/embed/kBV8gPVZNEE?si=8jp-neTgnXpG7sx4?cc_load_policy=1&cc_lang_pref=auto]
+---
 
 DevOps is a set of principles, practices, and values that are meant to enhance cross-team synergies, with the common goal of optimizing software delivery.
 

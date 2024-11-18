@@ -2,6 +2,8 @@
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.10-knowledge-check
 title: Check your knowledge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and clean-up
   description: Knowledge check
   ms.date: 05/06/2022
@@ -38,3 +40,4 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. The Application Settings dialog displays application settings with both a local and remote value."
         
+

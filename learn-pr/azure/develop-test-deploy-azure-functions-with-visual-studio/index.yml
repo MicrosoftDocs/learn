@@ -6,7 +6,7 @@ metadata:
   ms.date: 03/01/2023
   author: ggailey777
   ms.author: glenga
-  manager: jmartens
+  manager: mijacobs
   ms.topic: module-standard-task-based
   ms.service: visual-studio-windows
 title: Develop, test, and deploy an Azure Function with Visual Studio

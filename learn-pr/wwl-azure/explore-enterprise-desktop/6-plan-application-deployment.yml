@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-enterprise-desktop.plan-application-deployment
 title: Plan an application deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan an application deployment
   description: "Plan an application deployment"
-  ms.date: 01/24/2024
+  ms.date: 09/09/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit

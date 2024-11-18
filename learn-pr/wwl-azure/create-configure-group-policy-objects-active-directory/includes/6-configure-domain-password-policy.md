@@ -51,7 +51,7 @@ While the new domain password settings are in place, they aren’t in effect yet
 From a command prompt with administrative permissions, type the following command:
 
 <!--- raw content start --->
-**gpudate /force**
+**gpupdate /force**
 <!--- raw content end --->
 
 The domain password policy is now configured and rolled-out.

@@ -8,17 +8,16 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: learning-path
+  ms.custom: [copilot-learning-hub]
 title: GitHub Copilot Fundamentals - Understand the AI pair programmer
 summary: |
   Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
 
   In this learning path, you'll:
 
-  - Gain a comprehensive understanding of the distinctions between GitHub Copilot for Individuals, GitHub Copilot for Business, and GitHub Copilot X.
-
-  - Explore various use cases for GitHub Copilot for Business, including real-life examples showcasing how customers have leveraged it to boost their productivity.
-
-  - Receive step-by-step instructions on enabling GitHub Copilot for Individuals and GitHub Copilot for Business, ensuring a seamless integration into your workflows. 
+  - Gain a comprehensive understanding of the distinctions between GitHub Copilot Individuals, GitHub Copilot Business, and GitHub Copilot Enterprise.
+  - Understand how to utilize GitHub Copilot across various environments responsibly and securely.
+  - Learn advanced functionalities of GitHub Copilot and how to best use them. 
 
 prerequisites: |
  - Basic understanding of GitHub fundamentals
@@ -42,12 +41,17 @@ subjects:
 - devops
 
 modules:
+- learn.github.responsible-ai-with-github-copilot
 - learn.github.introduction-to-github-copilot
 - learn.github.introduction-prompt-engineering-with-github-copilot
+- learn.advanced-github-copilot
+- learn.github.github-copilot-across-environments
+- learn.github.github-copilot-management-and-customizations
+- learn.github.developer-use-cases-for-ai-with-github-copilot
+- learn.wwl.develop-unit-tests-using-github-copilot-tools
 - learn.github.introduction-to-github-copilot-for-business
 - learn.github.intro-github-copilot-enterprise
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
-- learn.advanced-github-copilot
 trophy:
   uid: learn.github.trophy

@@ -5,7 +5,7 @@ The next step in the threat modeling process is to create a data-flow diagram.
 To build this diagram, we make the following assumptions:
 
 - **Zero trust** - Data-flow begins in a zone that can't be trusted.
-- **Context level** - The data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Check out the [Provide context with the right depth layer](/training/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](/training/paths/tm-threat-modeling-fundamentals/) learning path to learn more.
+- **Context level** - The data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. To learn more, check out the module [Provide context with the right depth layer](/training/modules/tm-provide-context-with-the-right-depth-layer/) from the [Threat Modeling Security Fundamentals](/training/paths/tm-threat-modeling-fundamentals/) learning path.
 
 ## Elements
 

@@ -2,14 +2,15 @@
 uid: learn.wwl.explore-generative-ai-copilot-bing.exercise-ideate-ambience-music
 title: 'Exercise: Ideate ambience and music'
 metadata:
-  title: "Exercise: Ideate ambience and music"
+  title: 'Exercise: Ideate ambience and music'
   description: "Exercise: Ideate ambience and music"
+  ms.date: 11/11/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.date: 04/01/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 3
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-ideate-ambience-music.md)]

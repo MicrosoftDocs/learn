@@ -193,28 +193,14 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     ```csharp
     var endpoint = new Uri(openAIEndpoint);
     var credentials = new AzureKeyCredential(openAIAPIKey);
-    var openAIClient = new OpenAIClient(endpoint, credentials);
+    var openAIClient = new AzureOpenAIClient(endpoint, credentials);
     ```
 
 ## Create the system prompt
 
 Let's create the initial system role prompt that will provide the initial instructions to the model.
 
-1. First create a `ChatCompletionsOptions` object which will define the parameters of how we want the model to react during the conversation and hold all of the messages in the conversation.
-
-    ```csharp
-    var completionOptions = new ChatCompletionsOptions
-    {
-        MaxTokens=400,
-        Temperature=1f,
-        FrequencyPenalty=0.0f,
-        PresencePenalty=0.0f,
-        NucleusSamplingFactor = 0.95f, // Top P
-        DeploymentName = openAIDeploymentName
-    };
-    ```
-
-1. Create the prompt that instructs the model how you'd like it to act during the conversation when recommending hikes.
+1. First create the prompt that instructs the model how you'd like it to act during the conversation when recommending hikes.
 
     ```csharp
     var systemPrompt = 
@@ -224,19 +210,25 @@ Let's create the initial system role prompt that will provide the initial instru
     """;
     ```
 
-1. Then create a new `ChatMessage` object and add it to the `ChatCompletionOptions.Messages` list. We'll be setting the `ChatMessage` to be coming from the System role.
+1. Next create a `List<ChatMessage>` to hold all messages that will be sent to and from the model.
 
     ```csharp
-    ChatRequestSystemMessage systemMessage = new(systemPrompt);
+    List<ChatMessage> chatHistory = new();
+    ```
 
-    completionOptions.Messages.Add(systemMessage);
+1. Then create a new `SystemChatMessage` object and add it to the `chatHistory` list. We'll be setting the `ChatMessage` to be coming from the System role.
+
+    ```csharp
+    SystemChatMessage systemMessage = ChatMessage.CreateSystemMessage(systemPrompt);
+
+    chatHistory.Add(systemMessage);
     ```
 
 ## Initiate the conversation
 
 Next we'll send the first message to the model, initiating the conversation.
 
-1. Create a prompt for the user and add it to the `ChatCompletionOptions.Messages` as a user message.
+1. Create a prompt for the user and add it to the `chatHistory` as a user message.
 
     ```csharp
     string userGreeting = """
@@ -244,24 +236,28 @@ Next we'll send the first message to the model, initiating the conversation.
     Can't wait to hear what you have in store for me!
     """;
 
-    ChatRequestUserMessage userGreetingMessage = new (userGreeting);
-    completionOptions.Messages.Add(userGreetingMessage);
+    UserChatMessage userGreetingMessage = ChatMessage.CreateUserMessage(userGreeting);
+    chatHistory.Add(userGreetingMessage);
 
     Console.WriteLine($"User >>> {userGreeting}");
     ```
 
-1. Next call the `GetChatCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `ChatCompletionOptions`.
+1. Now you will need to get a reference to the `ChatClient` object. This object is responsible for facilitating chat conversations with the model. As such, you'll need to tell the Azure OpenAI Client object which model that you deployed you want to use.
 
     ```csharp
-    ChatCompletions response = await openAIClient.GetChatCompletionsAsync(completionOptions);
+    var chatClient = openAIClient.GetChatClient(openAIDeploymentName);
+    ```
+
+1. Next call the `CompleteChatAsync` function of the `ChatClient` class passing in the `chatHistory`.
+
+    ```csharp
+    var response = await chatClient.CompleteChatAsync(chatHistory);
     ```
 
 1. Then finally, read out the value the model has returned.
 
     ```csharp
-    ChatResponseMessage assistantResponse = response.Choices[0].Message;
-
-    Console.WriteLine($"AI >>> {assistantResponse.Content}");
+    Console.WriteLine($"AI >>> {response.Value.Content.Last().Text}");
     ```
 
 1. Let's see what we have so far, you can run the application by entering `dotnet run` into the terminal.
@@ -279,32 +275,32 @@ You may receive something different as the model is nondeterministic, or may pro
 
 Let's continue on by responding to the conversation and then outputting the response.
 
-1. Make sure that we retain context of the conversation, so add the response that came back directly to the `completionOptions.Messages` list.
+1. Make sure that we retain context of the conversation, so add the response that came back directly to the `chatHistory` list.
 
     ```csharp
-    completionOptions.Messages.Add(new ChatRequestSystemMessage(assistantResponse.Content)); 
+    var assistantMessage = ChatMessage.CreateAssistantMessage(response.Value.Content.Last().Text);
+
+    chatHistory.Add(assistantMessage); 
     ```
 
-1. Next create another user role prompt and send it to the model.
+1. Next create another user prompt and send it to the model.
 
     ```csharp
     var hikeRequest = 
     """
-    I would like a strenous hike near where I live that ends with
+    I would like a strenuous hike near where I live that ends with
     a view that is amazing.
     """;
 
     Console.WriteLine($"User >>> {hikeRequest}");
 
-    ChatRequestUserMessage hikeMessage = new (hikeRequest);
+    UserChatMessage hikeMessage = ChatMessage.CreateUserMessage(hikeRequest);
 
-    completionOptions.Messages.Add(hikeMessage);
+    chatHistory.Add(hikeMessage);
 
-    response = await openAIClient.GetChatCompletionsAsync(completionOptions); 
+    response = await chatClient.CompleteChatAsync(chatHistory); 
 
-    assistantResponse = response.Choices[0].Message;
-
-    Console.WriteLine($"AI >>> {assistantResponse.Content}");
+    Console.WriteLine($"AI >>> {response.Value.Content.Last().Text}");
     ```
 
 1. You can experiment by changing the `hikeRequest` variable to request different types of hikes. In one example run we received:

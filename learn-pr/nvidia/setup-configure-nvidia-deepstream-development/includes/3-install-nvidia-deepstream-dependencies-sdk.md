@@ -1,6 +1,6 @@
 The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk through the installation of these dependencies and explain their roles.
 
-1. Install the dependency packages that will provide tools to compile C and C++ applications from source. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
+1. Install the dependency packages that provide tools to compile C and C++ applications from the source. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
 
     ```bash
     sudo apt install \
@@ -22,12 +22,13 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 1. Install the NVIDIA driver version 470.63.01 from the NVIDIA Unix drivers page at: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
 
     1. The installation package should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+
     ```bash
     chmod 755 NVIDIA-Linux-x86_64-470.63.01.run
     sudo ./NVIDIA-Linux-x86_64-470.63.01.run 
     ```
 
-1. Install CUDA Toolkit 11.4 by adding NVIDIA's Ubuntu-based CUDA repo into your APT sources. The CUDA Toolkit allows your development environment to use GPU acceleration on devices where compatible hardware is present. The toolkit includes special compiler tools and libraries that allow you to build and run GPU-accelerated applications. It also automatically installs the compatible drivers to allow running GPU-accelerated applications on the host system.  
+1. Install CUDA Toolkit 11.4 by adding NVIDIA's Ubuntu-based CUDA repo into your APT sources. The CUDA Toolkit allows your development environment to use GPU acceleration on devices with compatible hardware. The toolkit includes special compiler tools and libraries that allow you to build and run GPU-accelerated applications. It also automatically installs the compatible drivers to allow running GPU-accelerated applications on the host system.  
 
     To install CUDA Toolkit 11.4, run these commands on the host terminal:
 
@@ -43,15 +44,15 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
 
 1. Install TensorRT 8.0.1 GA from NVIDIA. [TensorRT](https://developer.nvidia.com/tensorrt) is an SDK that provides high-performance implementation of deep-learning inference algorithms via hardware acceleration. It includes various optimizations to deliver low latency and high throughput in applications that use deep learning. To install it, you need an NVIDIA Developer Program membership. If you don't have one, you'll be prompted to create one when you complete the following the steps. This free membership allows you to access the necessary installation files.  
 
-    >[!NOTE]
+    > [!NOTE]
     >
-    >You'll need to have a browser on your host machine to complete this process.
-    >  
-    >If you don't have one, you can easily install the Firefox browser on your host machine by using this command:
-    >`sudo apt install firefox`
+    > You'll need to have a browser on your host machine to complete this process.
+    > 
+    > If you don't have one, you can easily install the Firefox browser on your host machine by using this command:
+    > `sudo apt install firefox`
 
     1. Add the CUDA repository to your apt sources by running the following commands:
-       
+
        ```bash
        echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda-repo.list
        wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
@@ -82,7 +83,7 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
        libnvinfer-doc=8.0.1-1+cuda11.3
        ```
 
-1. Install librdkafka to enable the Kafka protocol adaptor used by the [DeepStream message broker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html).  Open a terminal and run the following commands:
+1. Install `librdkafka` to enable the Kafka protocol adaptor used by the [DeepStream message broker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html).  Open a terminal and run the following commands:
 
     ```bash
     cd ~

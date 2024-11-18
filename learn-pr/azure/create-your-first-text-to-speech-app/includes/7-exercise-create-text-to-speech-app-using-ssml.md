@@ -1,4 +1,4 @@
-In this exercise, you'll create an XML file that contains Speech Synthesis Markup Language (SSML), which you'll use to customize the audio output from the Azure AI speech APIs.
+In this exercise, you'll create an XML file that contains Speech Synthesis Markup Language (SSML), which you'll use to customize the audio output from the Azure AI Speech APIs.
 
 ## Create an SSML file for your application to read
 

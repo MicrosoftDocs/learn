@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/12/2023
   author: jongalloway
   ms.author: jogallow
-  ms.manager: markl
+  manager: coxford
   ms.topic: module-standard-task-based
   ms.service: vs-code
 title: Interactively debug .NET apps with the Visual Studio Code debugger

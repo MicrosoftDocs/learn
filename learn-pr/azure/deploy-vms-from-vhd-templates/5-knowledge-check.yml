@@ -2,9 +2,11 @@
 uid: learn.deploy-vms-from-vhd-templates.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/03/2024
+  ms.date: 09/09/2024
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit
@@ -46,3 +48,4 @@ quiz:
     - content: "linuxprep"
       isCorrect: false
       explanation: "No. Use the waagent command."
+

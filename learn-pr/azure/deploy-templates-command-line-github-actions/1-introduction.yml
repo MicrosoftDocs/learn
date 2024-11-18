@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to the module.
   ms.date: 03/13/2024
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

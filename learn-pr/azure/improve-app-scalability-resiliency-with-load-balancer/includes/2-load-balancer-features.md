@@ -1,8 +1,8 @@
-With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services, allowing you to scale the app to larger sizes than a single virtual machine can support and ensuring that users get service even when a virtual machine fails.
+With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services. It allows you to scale the app to larger sizes than a single virtual machine can support, and ensures that users get service even when a virtual machine fails.
 
-In your healthcare organization, you can expect large user demand. It's vitally important that each user can book an appointment, even during peak demand or when one or more virtual machines fail. If you use multiple virtual servers for your front end and a load balancer to distribute traffic among them, you achieve a high capacity because all the virtual servers collaborate to satisfy requests. You also improve resilience because the load balancer can automatically reroute traffic when a virtual server fails.
+In your healthcare organization, you can expect large user demand. It's vitally important that each user can book an appointment, even during peak demand or when one or more virtual machines fail. By using multiple virtual servers for your front end with a load balancer to distribute traffic among them, you achieve a high capacity because all the virtual servers collaborate to satisfy requests. You also improve resilience because the load balancer can automatically reroute traffic when a virtual server fails.
 
-Here, you'll learn how Load Balancer's features can help you create robust app architectures.
+Here, you learn how Load Balancer's features can help you create robust app architectures.
 
 ## Distribute traffic with Azure Load Balancer
 
@@ -12,7 +12,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Source port**: The port of the requesting client.
 - **Destination IP**: The destination IP of the request.
 - **Destination port**: The destination port of the request.
-- **Protocol type**: The specified protocol type, TCP or UDP.
+- **Protocol type**: The specified protocol type. Transmission Control Protocol (TCP) or User Datagram Protocol (UDP).
 
 :::image type="content" source="../media/2-load-balancer-distribution.svg" alt-text="Diagram showing an overview of Azure Load Balancer." border="false":::
 
@@ -35,7 +35,7 @@ An availability set is a logical grouping used to isolate virtual machine resour
 
 ### Availability zones
 
-An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that you can continue to serve users when an entire datacenter fail.
+An availability zone offers groups of one or more datacenters that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that you can continue to serve users when an entire datacenter fails.
 
 :::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Diagram showing an overview of availability zones in Azure." border="false":::
 
@@ -68,4 +68,4 @@ Standard load balancers support all of the basic load balancer features. They al
 
 An external load balancer operates by distributing client traffic across multiple virtual machines. An external load balancer permits traffic from the internet. The traffic might come from browsers, mobile apps, or other sources. In a healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
-An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, a load balancer distributes a load across the internal application tier.
+An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call the business logic hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, a load balancer distributes a load across the internal application tier.

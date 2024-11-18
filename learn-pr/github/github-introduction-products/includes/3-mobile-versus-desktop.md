@@ -13,7 +13,7 @@ With GitHub Mobile you can:
 - Edit files in pull requests.
 - Search for, browse, and interact with users, repositories, and organizations.
 - Receive a push notification when someone mentions your username.
-- Schedule push notifications for specific custom hours.
+- Schedule your push notifications for specific custom hours.
 - Secure your GitHub.com account with two-factor authentication.
 - Verify your sign in attempts on unrecognized devices.
 
@@ -25,6 +25,6 @@ Here are a few of the many things you can do with GitHub Desktop:
 
 - Add and clone repositories.
 - Add changes to your commit interactively.
-- Quickly add co-authors to your commit.
+- Quickly add coauthors to your commit.
 - Check out branches with pull requests and view CI statuses.
 - Compare changed images.

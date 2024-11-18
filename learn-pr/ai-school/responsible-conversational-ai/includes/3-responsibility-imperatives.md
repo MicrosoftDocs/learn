@@ -2,7 +2,7 @@ One of the greatest risks of conversational AI right now is that the technology 
 
 These AI methods are being rapidly driven by recent advances in natural language processing (NLP), automatic speech recognition (ASR), and text to speech (TTS). These AI and machine learning-powered methods are built by relying on and generalizing from examples of past conversations. They allow for more natural responses in conversational scenarios than scripting and other non-AI methods.
 
-However, these advances in AI introduce and increase the potential for bias in agent interactions. Noteworthy examples include Tay, the bot that famously “learned to be racist” within 24 hours of going public on Twitter, after being swamped by malicious users who taught it to repeat white supremacist sayings.
+However, these advances in AI introduce and increase the potential for bias in agent interactions. Noteworthy examples include Tay, the bot that famously “learned to be racist” within 24 hours of going public on X, after being swamped by malicious users who taught it to repeat white supremacist sayings.
 
 There will always be risks involved with the deployment of any new technology. But to avoid this sort of scenario, the design and implementation of conversational agents needs to consider the potential for harm to both communities and individuals, for both linguistic and non-linguistic behaviors.
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-desired-state-configuration-dsc.implement-dsc-linux-automation-azure
 title: Implement DSC and Linux Automation on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement DSC and Linux Automation on Azure
   description: "Implement DSC and Linux Automation on Azure"
   ms.date: 05/23/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-implement-dsc-linux-automation-azure.md)]
+

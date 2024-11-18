@@ -2,6 +2,8 @@
 uid: learn.monitor-authentication-methods.integrate-logs-with-log-analytics
 title: Integrate logs with Log Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Integrate logs with Log Analytics
   description: Integrate logs with Log Analytics

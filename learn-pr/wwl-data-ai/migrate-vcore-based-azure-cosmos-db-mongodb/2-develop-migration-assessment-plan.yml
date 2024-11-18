@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.develop-migration-assessment-plan
 title: Migration assessment and planning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migration assessment and planning
   description: "Migration assessment and planning"
   ms.date: 04/08/2024

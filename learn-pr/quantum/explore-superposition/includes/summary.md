@@ -1,4 +1,4 @@
-In this module, you learned about the concept of superposition in quantum physics, where a quantum system can exist in multiple states simultaneously. You've explored the idea of a "qubit" or "quantum bit", a quantum particle with two possible states that can exist in any superposition of these states. 
+Congratulations! In this module, you learned about the concept of superposition in quantum physics, where a quantum system can exist in multiple states simultaneously. You've explored the idea of a "qubit" or "quantum bit", a quantum particle with two possible states that can exist in any superposition of these states. 
 
 Here are some key takeaways from this module:
 
@@ -9,6 +9,6 @@ Here are some key takeaways from this module:
 
 ## Next steps
 
-- Check out the [Quantum Katas](https://quantum.microsoft.com/experience/quantum-katas), hands-on tutorials that teach quantum computing concepts and the Q# programming language.
-- Go to [Azure Quantum website](https://quantum.microsoft.com/experience/quantum-coding) and try Copilot in Azure Quantum, a tool that helps you write Q# programs.
+- Check out the [Quantum Katas](https://quantum.microsoft.com/tools/quantum-katas), hands-on tutorials that teach quantum computing concepts and the Q# programming language.
+- Go to [Azure Quantum website](https://quantum.microsoft.com/tools/quantum-coding) and try Copilot in Azure Quantum, a tool that helps you write Q# programs.
 - Learn more about quantum computing and Q# in the [Azure Quantum Development Kit documentation](/azure/quantum/).

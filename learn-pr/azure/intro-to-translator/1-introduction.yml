@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-translator.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Azure Translator
   author: laujan
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!INCLUDE[](includes/1-introduction.md)]
+

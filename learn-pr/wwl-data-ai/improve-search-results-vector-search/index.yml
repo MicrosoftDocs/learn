@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.improve-search-results-vector-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform vector search and retrieval in Azure AI Search
   description: Perform vector search and retrieval in Azure AI Search.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 9/29/2023
-  ms.service: cognitive-search
+  ms.date: 10/24/2024
+  ms.service: azure-ai-search
   ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Perform vector search and retrieval in Azure AI Search
@@ -43,3 +46,4 @@ units:
 
 badge:
   uid: learn.improve-search-results-vector-search.badge
+

@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-core-architectural-components-of-azure.describe-azure-physical-infrastructure
 title: Describe Azure physical infrastructure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure physical infrastructure
   description: "Describe Azure physical infrastructure"
-  ms.date: 03/06/2024
+  ms.date: 09/24/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.develop-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 9/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+quiz:
+  questions:
+  - content: What is the role of firewall rules in Azure SQL server?
+    choices:
+    - content: To create a unique server name
+      isCorrect: false
+      explanation: Incorrect. Firewall rules don't contribute to creating a unique server name.
+    - content: To specify which traffic is allowed or denied access to the server
+      isCorrect: true
+      explanation: Correct. Firewall rules in Azure SQL server are used to control traffic access to the server.
+    - content: To generate pseudorandom integers
+      isCorrect: false
+      explanation: Incorrect. Firewall rules aren't used for generating pseudorandom integers.
+  - content: What is the purpose of DACPAC deployment in database management?
+    choices:
+    - content: It's used to create a backup of the database for recovery purposes.
+      isCorrect: false
+      explanation: Incorrect. While DACPAC can be used for backup, its primary purpose is to package database changes for deployment.
+    - content: It simplifies the process of deploying database changes by packaging them into a data-tier Application Component (DAC) package.
+      isCorrect: true
+      explanation: Correct. DACPAC deployment packages database changes, ensuring consistency and reliability in database deployments.
+    - content: It's used to monitor the performance of the database.
+      isCorrect: false
+      explanation: Incorrect. DACPAC deployment isn't related to performance monitoring.
+  - content: What is the role of Azure Pipelines in Azure DevOps Services?
+    choices:
+    - content: Azure Pipelines automatically build, test, and deploy code, supporting continuous integration and continuous deployment of Azure SQL Database modifications.
+      isCorrect: true
+      explanation: Correct. Azure Pipelines ensure that database changes are consistently and reliably applied.
+    - content: Azure Pipelines are used to encrypt the data of the application.
+      isCorrect: false
+      explanation: Incorrect. Azure Pipelines don't encrypt data, they support CI/CD of Azure SQL Database modifications.
+    - content: Azure Pipelines are used to store the data of the application.
+      isCorrect: false
+      explanation: Incorrect. Azure Pipelines don't store data, they build, test, and deploy code.
+
+

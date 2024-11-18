@@ -69,3 +69,14 @@ You can configure Cross Region Restore by opening any vault that you created wit
 > Every GRS vault has a banner which links to the CRR documentation.
 
 When Cross Region Restore is enabled, you can view the backup items from the secondary region. The secondary region restore user experience is similar to the primary region restore user experience. When you're entering details in the **Restore Configuration** pane, you're prompted to provide only secondary region parameters.
+
+## Cross Subscription Restore
+
+Azure Backup also allows you to restore SAP HANA Database to any subscription (as per the Azure role-based access control requirements) from the restore point. By default, Azure Backup restores to the same subscription where the restore points are available.
+With Cross Subscription Restore (CSR), you have the flexibility of restoring to any subscription and any vault under your tenant if restore permissions are available. By default, CSR is enabled on all Recovery Services vaults (existing and newly created vaults).
+
+>[!Note]
+>- You can trigger Cross Subscription Restore from Recovery Services vault.
+>- CSR is supported only for streaming/Backint-based backups and isn't supported for snapshot-based backup.
+>- Cross Regional Restore (CRR) with CSR isn't supported.
+

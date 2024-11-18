@@ -2,9 +2,11 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.summary
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary"
-  ms.date: 02/28/2024
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

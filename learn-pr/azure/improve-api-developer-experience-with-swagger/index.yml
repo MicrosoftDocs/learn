@@ -6,7 +6,9 @@ metadata:
   ms.date: 11/16/2023
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
+  ms.service: aspnet-core
 title: Improve the developer experience of an API with Swagger documentation
 summary: Learn how to document an existing API, written in C#/ASP.NET Core, using Swashbuckle, Swagger/OpenAPI, and Swagger UI.
 abstract: |

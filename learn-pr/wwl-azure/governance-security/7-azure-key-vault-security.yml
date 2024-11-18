@@ -2,9 +2,11 @@
 uid: learn.wwl.governance-security.azure-key-vault-security
 title: Azure Key Vault security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Key Vault security
   description: "Azure Key Vault security"
-  ms.date: 07/25/2024
+  ms.date: 10/08/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

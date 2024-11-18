@@ -59,7 +59,7 @@ Once a table has a vector column, rows can be added with vector values, as previ
 INSERT INTO documents (embedding) VALUES ('[1,2,3]');
 ```
 
-You can also load vectors in bulk using the `COPY` statement (see [complete example](https://github.com/pgvector/pgvector-python/blob/master/examples/bulk_loading.py) in Python):
+You can also load vectors in bulk using the `COPY` statement (see [complete example](https://github.com/pgvector/pgvector-python/tree/master/examples) in Python):
 
 ```sql
 COPY documents (embedding) FROM STDIN WITH (FORMAT BINARY);

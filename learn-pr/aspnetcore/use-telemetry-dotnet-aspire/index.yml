@@ -5,7 +5,9 @@ metadata:
   description: In this module, you'll learn about using telemetry to record the behavior of a cloud-native application and how the .NET Aspire stack makes it easier store data and view it later.
   author: camsoper
   ms.author: casoper
+  manager: coxford
   ms.topic: module
+  ms.date: 8/20/2024
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates

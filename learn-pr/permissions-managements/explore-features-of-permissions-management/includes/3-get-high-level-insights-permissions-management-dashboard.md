@@ -54,7 +54,7 @@ We take a closer look at the Analytics tab later on, but before we do that, letâ
 
 Permissions Management automatically analyzes your environment and calls out a set of key findings for you to consider. These findings are found at the bottom portion of the dashboard and include insights related to both your identities and your resources.
 
-Every finding included in the dashboard is tied to the Permissions Analytics Report, which we explain later, and provides the ability to drill down and view more detailed information. For example, in the previous screenshot, we see that we have 199 inactive users in the environment. Selecting this finding takes us to the Inactive Users section of the Permissions Analytics Report, where we can view more detailed information about who the 199 inactive users are.
+Every finding included in the dashboard is tied to the Permissions Analytics Report, which we explain later, and provides the ability to drill down and view more detailed information. For example, in the previous screenshot, we see that we have 18 inactive users in the environment. Selecting this finding takes us to the Inactive Users section of the Permissions Analytics Report, where we can view more detailed information about who the 18 inactive users are.
 
 :::image type="content" source="../media/inactive-identities-snapshot.png" alt-text="Screenshot showing a snapshot of Permissions Management Inactive Identities."lightbox="../media/inactive-identities-snapshot.png":::
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-subscriptions.apply-resource-tagging
 title: Apply resource tagging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apply resource tagging
   description: "Apply resource tagging"
   ms.date: 10/27/2023

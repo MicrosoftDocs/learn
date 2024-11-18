@@ -2,24 +2,32 @@
 uid: learn.wwl.create-c-sharp-methods-return-values
 metadata:
   title: Create C# methods that return values
-  description: This module covers the return keyword and returning values from methods.
-  ms.date: 02/16/2024
+  description: "This module covers the return keyword and returning values from methods."
+  ms.date: 11/07/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
-  ms.devlang: csharp
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: human-only
 title: Create C# methods that return values
 summary: Learn to create methods that return values
 abstract: |
-  - Understand return types
-  - Learn more about the `return` keyword
-  - Learn more about capturing method return values
+  -   Understand return types
+
+  -   Learn more about the `return` keyword
+
+  -   Learn more about capturing method return values
 prerequisites: |
-  - Experience using C# data types including `int`, `string`, arrays, and 2D arrays
-  - Experience using `switch` statements, if-else statements, and for-loops
-  - Experience using the `Random` class to generate a random number.
-  - Basic understanding of C# methods
+  -   Experience using C# data types including `int`, `string`, arrays, and 2D arrays
+
+  -   Experience using `switch` statements, if-else statements, and for-loops
+
+  -   Experience using the `Random` class to generate a random number.
+
+  -   Basic understanding of C# methods
 iconUrl: /training/achievements/create-c-sharp-methods-return-values.svg
 levels:
 - beginner

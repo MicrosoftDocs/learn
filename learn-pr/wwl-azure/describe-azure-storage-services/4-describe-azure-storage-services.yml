@@ -2,12 +2,16 @@
 uid: learn.wwl.describe-azure-storage-services.describe-azure-storage-services
 title: Describe Azure storage services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure storage services
   description: "Describe Azure storage services"
-  ms.date: 11/15/2023
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-describe-azure-storage-services.md)]

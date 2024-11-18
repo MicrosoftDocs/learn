@@ -7,7 +7,7 @@ metadata:
   ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
-  ms.manager: markl
+  manager: coxford
   ms.topic: module
   ms.devlang: fsharp
 title: Write your first F# code

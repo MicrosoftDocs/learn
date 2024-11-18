@@ -24,7 +24,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 You're ready to finalize your governance strategy for Tailwind Traders. Consider how you can use Azure landing zones to scale your design:
 
-- **Consider including landing zones in your design**. Include landing zones in your overall Azure infrastructure design. You can use subscriptions as a unit of management and scale that's aligned with business needs and priorities. Apply Azure Policy to provide guardrails and ensure continued compliance with your organization's platform, along with the applications that are deployed onto it. 
+- **Consider including landing zones in your design**. Include landing zones in your overall Azure infrastructure design. You can use subscriptions as a unit of management and scale aligned with business needs and priorities. Apply Azure Policy to provide guardrails and ensure continued compliance with your organization's platform, along with the applications that are deployed onto it. 
  
 - **Consider creating landing zones through code**. Implement landing zones that are pre-provisioned through code. As your situation changes, you should expect to refactor the code. Use an iterative approach that maximizes learning opportunities and minimizes time to business success. You can minimize refactoring by having a central IT team to review both short term and long-term scenarios.  
 
@@ -41,4 +41,4 @@ You're ready to finalize your governance strategy for Tailwind Traders. Consider
 > [!NOTE]
 > It's recommended to conduct an [Azure landing zone review](/assessments/?mode=pre-assessment&id=21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0), to host workloads that you plan to build in or migrate to the cloud. This assessment is designed for customers with two or more years of experience. If you're new to Azure, this assessment helps you identify investment areas for your adoption strategy. 
 
-Congratulations! You now have all the information you need to design and implement a strong governance strategy.
+Congratulations! You have all the information you need to design and implement a strong governance strategy.

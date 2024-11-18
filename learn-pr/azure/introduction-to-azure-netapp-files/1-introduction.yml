@@ -2,6 +2,8 @@
 uid: learn.azure.introduction-to-azure-netapp-files.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Introduction to Azure NetApp Files module
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
+

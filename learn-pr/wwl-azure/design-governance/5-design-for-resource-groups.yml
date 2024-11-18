@@ -2,14 +2,16 @@
 uid: learn.wwl.design-governance.design-for-resource-groups
 title: Design for resource groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for resource groups
   description: "Design for resource groups"
-  ms.date: 11/15/2023
+  ms.date: 09/02/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-design-for-resource-groups.md)]

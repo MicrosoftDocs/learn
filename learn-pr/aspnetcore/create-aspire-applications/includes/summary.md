@@ -5,10 +5,10 @@ You also saw how .NET Aspire takes care of many tasks that can be challenging fo
 Having completed this module, you can:
 
 - Create new cloud-native apps by using the .NET Aspire templates in Visual Studio.
-- Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native components.
+- Add the .NET Aspire stack to an existing .NET app for orchestration and simple cloud-native integrations.
 
 ## Next steps
 
 Check out more .NET Aspire resources!
 
-- [.NET Aspire documentation](/dotnet/aspire)
+- [.NET Aspire documentation](/dotnet)

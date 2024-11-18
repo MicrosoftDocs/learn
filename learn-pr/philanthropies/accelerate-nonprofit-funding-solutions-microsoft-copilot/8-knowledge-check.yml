@@ -6,11 +6,11 @@ metadata:
   description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
   author: CourtneyHMicrosoft
   ms.author: cohodge
-  ms.date: 5/30/2024
+  ms.date: 09/24/2024
   ms.topic: unit
-  ai-usage: ai-assisted
   ms.collection:
-    - ce-skilling-ai-copilot
+    - philanthropies-ai-copilot
+  ai-usage: ai-assisted
 durationInMinutes: 3
 quiz:
   questions:
@@ -41,7 +41,7 @@ quiz:
           explanation: "Incorrect. Copilot can generate ideas for fundraising campaigns, suggest strategies for reaching out to potential donors, and create plans for executing fundraising activities."
         - content: "Providing tax exemption for donors"
           isCorrect: true
-          explanation: "Correct. Providing tax exemption for donors is a legal matter that requires authorization from tax authorities and isn't within the capabilities of Copilot."
+          explanation: "Correct. Providing tax exemption for donors is a legal matter that requires authorization from tax authorities and isn't within Copilot's capabilities."
     - content: "How can Copilot aid in grant management and writing?"
       choices:
         - content: "By searching and filtering grant opportunities"

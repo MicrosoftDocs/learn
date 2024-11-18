@@ -2,6 +2,8 @@
 uid: learn.chat-completions.introduction
 title: "Introduction"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction"
   description: Introduction to prompt engineering for generative AI models.
   ms.date: 12/11/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

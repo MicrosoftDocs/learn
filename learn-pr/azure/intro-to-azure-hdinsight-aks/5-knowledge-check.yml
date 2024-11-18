@@ -2,10 +2,12 @@
 uid: learn.intro-to-azure-hdinsight-aks.5-knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 11/24/2023 
+  ms.date: 09/30/2024 
   author: sairamyeturi
   ms.author: sairamyeturi 
   ms.topic: unit
@@ -48,4 +50,5 @@ quiz:
     - content: Managed identities are used for encryption in HDInsight on AKS.
       isCorrect: false
       explanation: Incorrect. Managed identities are used for authentication in HDInsight on AKS.
+
 

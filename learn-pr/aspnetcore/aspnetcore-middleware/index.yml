@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.aspnetcore-middleware
+metadata:
+  title: Customize ASP.NET Core behavior with middleware
+  description: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
+  ms.date: 10/02/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: aspnet-core
+title: Customize ASP.NET Core behavior with middleware
+summary: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the role of middleware in an ASP.NET Core app.
+    - Use included middleware like HTTP logging and authentication.
+    - Create custom middleware to handle requests and responses.
+prerequisites: |
+  - Ability to write C# code at a beginner level.
+  - Ability to use the .NET CLI at a beginner level.
+  - Latest [.NET SDK](https://dot.net) installed.
+  - [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+units:
+- learn.aspnetcore-middleware.intro
+- learn.aspnetcore-middleware.understand-middleware
+- learn.aspnetcore-middleware.exercise-built-in-middleware
+- learn.aspnetcore-middleware.exercise-custom-middleware
+- learn.aspnetcore-middleware.knowledge-check
+- learn.aspnetcore-middleware.summary
+badge:
+  uid: learn.aspnetcore-middleware.badge

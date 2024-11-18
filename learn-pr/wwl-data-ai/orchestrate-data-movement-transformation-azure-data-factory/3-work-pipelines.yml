@@ -2,6 +2,8 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.working-pipelines
 title: Work with data factory pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Work with data factory pipelines
   description: "Work with data factory pipelines"
   ms.date: 04/19/2022

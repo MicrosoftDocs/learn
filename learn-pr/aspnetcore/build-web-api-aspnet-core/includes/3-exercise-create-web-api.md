@@ -156,7 +156,7 @@ Included in the project is **ContosoPizza.http**, a file that is used to test AP
     dotnet tool install -g Microsoft.dotnet-httprepl
     ```
 
-    The preceding command installs the .NET HTTP REPL command-line tool that you use to make HTTP requests to the web API.
+    The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command-line tool that you use to make HTTP requests to the web API.
 
 1. Connect to the web API by running the following command:
   

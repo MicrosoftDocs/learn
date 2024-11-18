@@ -2,11 +2,13 @@
 uid: learn.pytorch.intro-machine-learning.ml-overview
 title: The full model building process
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: The full model building process
   description: This section runs through the API for common tasks in machine learning. Refer to the links in each section to dive deeper.
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 08/05/2023
+  ms.author: sgilley
+  ms.date: 08/22/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 5
 sandbox: true
 notebook: notebooks/8-quickstart.ipynb
+

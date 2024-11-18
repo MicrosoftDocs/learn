@@ -24,7 +24,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index).
 
-Let's start with the first one: `az vm create`. You can use this command to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
+Let's start with the first one: `az vm create`. You can use this command to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that you must supply are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
@@ -38,7 +38,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 
 ## Create a Linux virtual machine
 
-Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the "West US" location.
+Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the *West US* location.
 
 ```azurecli
 az vm create \
@@ -67,13 +67,13 @@ Once Azure CLI finishes creating the VM, you'll get a JSON response which includ
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/20f4b944-fc7a-4d38-b02c-900c8223c3a0/resourceGroups/Learn-2568d0d0-efe3-4d04-a08f-df7f009f822a/providers/Microsoft.Compute/virtualMachines/SampleVM",
+  "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/Learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Compute/virtualMachines/SampleVM",
   "location": "westus",
   "macAddress": "00-0D-3A-58-F8-45",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.4",
   "publicIpAddress": "40.83.165.85",
-  "resourceGroup": "2568d0d0-efe3-4d04-a08f-df7f009f822a",
+  "resourceGroup": "bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
   "zones": ""
 }
 ```

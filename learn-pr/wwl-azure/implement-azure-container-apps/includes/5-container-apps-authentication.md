@@ -18,7 +18,7 @@ Container Apps uses federated identity, in which a third-party identity provider
 | Facebook | `/.auth/login/facebook` | [Facebook](/azure/container-apps/authentication-facebook) |
 | GitHub | `/.auth/login/github` | [GitHub](/azure/container-apps/authentication-github) |
 | Google | `/.auth/login/google` | [Google](/azure/container-apps/authentication-google) |
-| Twitter | `/.auth/login/twitter` | [Twitter](/azure/container-apps/authentication-twitter) |
+| X | `/.auth/login/twitter` | [X](/azure/container-apps/authentication-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [OpenID Connect](/azure/container-apps/authentication-openid) |
 
 When you use one of these providers, the sign-in endpoint is available for user authentication and authentication token validation from the provider. You can provide your users with any number of these provider options.

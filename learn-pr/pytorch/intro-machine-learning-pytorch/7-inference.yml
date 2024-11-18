@@ -2,11 +2,13 @@
 uid: learn.pytorch.intro-machine-learning.inference
 title: Load and run model predictions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load and run model predictions
   description: In this section, we look at how to persist model state with saving, loading, and running model predictions.
   author: cassiebreviu
-  ms.author: ruyakubu
-  ms.date: 08/05/2023
+  ms.author: sgilley
+  ms.date: 08/22/2024
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -33,3 +35,4 @@ quiz:
         - content: "It's a model's internal state dictionary that stores learned parameters."
           isCorrect: true
           explanation: "Correct!"
+

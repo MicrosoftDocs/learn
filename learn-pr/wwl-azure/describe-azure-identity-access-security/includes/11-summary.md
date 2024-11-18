@@ -15,6 +15,4 @@ You should now be able to:
 
 ## Additional resources
 
-The following resources provide more information on topics in this module or related to this module.
-
- -  [Microsoft Certified: Security, Compliance, and Identity Fundamentals](/learn/certifications/security-compliance-and-identity-fundamentals/) is an entire certification, with associated training, dedicated to helping you better understand and manage Security, Compliance, and identity.
+The following resources provide more information on topics in this module or related to this module.<br>[Microsoft Certified: Security, Compliance, and Identity Fundamentals](/learn/certifications/security-compliance-and-identity-fundamentals/) is an entire certification, with associated training, dedicated to helping you better understand and manage Security, Compliance, and identity.

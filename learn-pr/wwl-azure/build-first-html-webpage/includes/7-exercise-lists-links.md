@@ -30,7 +30,7 @@ Let's start by adding your email address and social media links to your resume.
     <ul>
         <li><a href="https://github.com/microsoft>">GitHub</a></li>
         <li><a href="https://www.linkedin.com/company/microsoft>">LinkedIn</a></li>
-        <li><a href="https://twitter.com/microsoft>">Twitter</a></li>
+        <li><a href="https://x.com/microsoft>">X</a></li>
     </ul>
     ```
 

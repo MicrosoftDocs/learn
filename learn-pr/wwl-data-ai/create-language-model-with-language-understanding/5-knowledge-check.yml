@@ -2,15 +2,17 @@
 uid: learn.wwl.create-language-model-with-luis.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/26/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 11/01/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-durationInMinutes: 2
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 quiz:
   title: ""
   questions:

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.reactors.introduction-machine-learning-models 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to machine learning models 
   description: Learn how to use machine learning models for data science operations.
   ms.date: 05/19/2020
@@ -9,7 +11,9 @@ metadata:
   ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-machine-learning
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Introduction to machine learning models 
 summary: Learn how to use machine learning models for data science operations.
 abstract: |
@@ -46,3 +50,4 @@ units:
 - learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
 badge:
   uid: learn.reactors.introduction-machine-learning-models.badge
+

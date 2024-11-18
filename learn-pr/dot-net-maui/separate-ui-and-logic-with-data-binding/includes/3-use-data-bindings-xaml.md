@@ -30,7 +30,7 @@ Let's look at a simple binding created in XAML by using the `{Binding}` markup e
 
 The binding source is:
 
-- An object instance of the `WeatherService` type. This is referenced through the `{StaticResource ...}` XAML extension, which points to an object in the stack layout's resource dictionary.
+- An object instance of the `WeatherService` type. The instance is referenced through the `{StaticResource ...}` XAML extension, which points to an object in the stack layout's resource dictionary.
 
 - The `Path` points to a property named `Humidity` on the `WeatherService` type.
 
@@ -60,7 +60,7 @@ One useful feature of binding is being able to bind to other controls. The follo
 </VerticalStackLayout>
 ```
 
-The `Slider.Value` property is bound to the `Label.Rotation` property, but in a different way than previously explained. This is using the binding mode `OneWayToSource`, which reverses the typical binding mechanism. Instead of the **Source** updating the **Target**, `OneWayToSource` updates the **Source** when the **Target** changes. In this example when the slider moves, it updates the rotation of the label based on the slider's value, as illustrated in the following animation:
+The `Slider.Value` property is bound to the `Label.Rotation` property, but in a different way than previously explained. This property is using the binding mode `OneWayToSource`, which reverses the typical binding mechanism. Instead of the **Source** updating the **Target**, `OneWayToSource` updates the **Source** when the **Target** changes. In this example when the slider moves, it updates the rotation of the label based on the slider's value, as illustrated in the following animation:
 
 :::image type="content" source="../media/3-use-data-bindings-xaml/rotate.gif" alt-text="An animated image of a slider control being dragged with a mouse. As the slider moves, a piece of text rotates to match the position of the slider.":::
 
@@ -75,7 +75,7 @@ The previous example demonstrated using a static resource as a source for a sing
     <VerticalStackLayout.Resources>
         <vm:SimpleWeatherServiceObject x:Key="myWeatherService" />
     </VerticalStackLayout.Resources>
-    <Entry Text="{Binding Humidity, Source={StaticResource myWeatherService}}}" />
+    <Entry Text="{Binding Humidity, Source={StaticResource myWeatherService}}" />
     <Label Text="{Binding Path=Humidity, Source={StaticResource myWeatherService}}" />
 </VerticalStackLayout>
 ```
@@ -87,7 +87,7 @@ You don't have to use the same `Path` when using the same `Source`:
     <VerticalStackLayout.Resources>
         <vm:SimpleWeatherServiceObject x:Key="myWeatherService" />
     </VerticalStackLayout.Resources>
-    <Entry Text="{Binding Temperature, Source={StaticResource myWeatherService}}}" />
+    <Entry Text="{Binding Temperature, Source={StaticResource myWeatherService}}" />
     <Label Text="{Binding Path=Humidity, Source={StaticResource myWeatherService}}" />
 </VerticalStackLayout>
 ```
@@ -96,7 +96,7 @@ Rarely do you present a single piece of data from a source, though it could happ
 
 Setting the `Source` of the binding is optional. A binding that doesn't have `Source` set automatically searches the XAML visual tree for a `BindingContext`, which is set in the XAML or assigned to a parent element by code. Bindings are evaluated following this pattern:
 
-01. If the binding defines a `Source`, that source is used and searching stops. The binding's `Path` is applied to the `Source` to get a value. If `Source` isn't set, the search begins for a binding source.
+01. If the binding defines a `Source`, that source is used, and searching stops. The binding's `Path` is applied to the `Source` to get a value. If `Source` isn't set, the search begins for a binding source.
 
 01. The search begins with the target object itself. If the target object's `BindingContext` isn't null, the search stops and the binding's `Path` is applied to the `BindingContext` to get a value. If the `BindingContext` is null, then the search continues.
 

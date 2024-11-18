@@ -46,7 +46,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
     bash create-start-resources.sh "<YOUR-SUBSCRIPTION-NAME>"
     ```
 
-    Make sure you wrap the name in double quotes.
+    Make sure you wrap the name in double quotes. If the script errors with an error about the location lacking available resources, edit the script to change the location: `LOCATION=<NEW LOCATION>`.
 
 1. Copy the required information, you'll need these to run the prototype. 
 

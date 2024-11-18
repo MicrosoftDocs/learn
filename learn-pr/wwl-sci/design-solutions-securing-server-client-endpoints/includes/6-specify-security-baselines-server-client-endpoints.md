@@ -36,26 +36,31 @@ Security baselines can help you to have an end-to-end secure workflow when worki
 The following security baseline instances are available for use with Intune. Use the links to view the settings for recent instances of each baseline.
 
 -   **Security Baseline for Windows 10 and later**
+    - [Version 23H2](/mem/intune/protect/security-baseline-settings-mdm-all?pivots=mdm-23h2)
     -   [November 2021](/mem/intune/protect/security-baseline-settings-mdm-all?pivots=november-2021)
     -   [December 2020](/mem/intune/protect/security-baseline-settings-mdm-all?pivots=december-2020)
     -   [August 2020](/mem/intune/protect/security-baseline-settings-mdm-all?pivots=mdm-sept-2020)
 
 -   **Microsoft Defender for Endpoint baseline**  
     _(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection#prerequisites))_.
-    
-    -   [Version 6](/mem/intune/protect/security-baseline-settings-defender-atp?pivots=december-2020)
-    -   [Version 5](/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-sept-2020)
-    -   [Version 4](/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-april-2020)
-    -   [Version 3](/mem/intune/protect/security-baseline-settings-defender-atp?pivots=atp-march-2020)
+    - [Version 24H1](/mem/intune/protect/security-baseline-settings-defender?pivots=mde-v24h1)
+    -   [Version 6](/mem/intune/protect/security-baseline-settings-defender?pivots=december-2020)
+    -   [Version 5](/mem/intune/protect/security-baseline-settings-defender?pivots=atp-sept-2020)
+    -   [Version 4](/mem/intune/protect/security-baseline-settings-defender?pivots=atp-april-2020)
+    -   [Version 3](/mem/intune/protect/security-baseline-settings-defender?pivots=atp-march-2020)
        
 -   **Microsoft Edge Baseline**
-    
-    -   [September 2020 (Edge version 85 and later)](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-sept-2020)
-    -   [April 2020 (Edge version 80 and later)](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-april-2020)
-    -   [Preview: October 2019 (Edge version 77 and later)](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-october-2019)
+
+  - [Microsoft Edge version 117](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-v117) - November 2023
+  - [Microsoft Edge version 112 and later](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-v112) - May 2023
+  - [Microsoft Edge version 85 and later](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-sept-2020) - September 2020
+  - [Microsoft Edge version 80 and later](/mem/intune/protect/security-baseline-settings-edge?pivots-edge-april-2020) - April 2020
+  - [Preview: Microsoft Edge version 77 and later](/mem/intune/protect/security-baseline-settings-edge?pivots=edge-october-2019) - October 2019    
+
 -   **Windows 365 Security Baseline**
     
-    -   [October 2021](/mem/intune/protect/security-baseline-settings-windows-365)
+  - [Version 24H1](/mem/intune/protect/security-baseline-settings-windows-365?pivots=win365-24h1)
+  - [November 2021](/mem/intune/protect/security-baseline-settings-windows-365?pivots=win365-nov21)
 
 After a new version for a profile releases, settings in profiles based on the older versions become read-only. You can continue using those older profiles, including editing their name, description, and assignments, but you won't be able to edit settings for them or create new profiles based on the older versions.
 

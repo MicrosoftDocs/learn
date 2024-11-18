@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.logic-apps-and-custom-connectors
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Call an API from an Azure Logic Apps workflow using a custom connector
   description: In this module, learn to create an Azure Logic Apps custom connector to call an API from an Azure Logic Apps workflow.
   ms.date: 05/02/2023
@@ -9,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ROBOTS: INDEX,FOLLOW
   ms.service: azure-logic-apps
-  manager: mijacobs
+  manager: susanpotter
 title: Call an API from an Azure Logic Apps workflow using a custom connector
 summary: Call any Web API from a logic app workflow using the custom connector.
 abstract: |
@@ -40,3 +42,4 @@ units:
 - learn.azure.logic-apps-and-custom-connectors.7-summary
 badge:
   uid: learn.azure.logic-apps-and-custom-connectors.badge
+

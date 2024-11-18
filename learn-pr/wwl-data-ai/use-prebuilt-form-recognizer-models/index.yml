@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.use-prebuilt-form-recognizer-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use prebuilt Document intelligence models
   description: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Document intelligence solution.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 02/06/2024
+  ms.date: 09/04/2024
   ms.service: azure
   ms.topic: module-standard-task-based
   ms.collection:
@@ -26,6 +28,7 @@ roles:
 - ai-engineer
 products:
 - ai-services
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:
@@ -38,3 +41,4 @@ units:
 - learn.wwl.use-prebuilt-form-recognizer-models.summary
 badge:
   uid: learn.wwl.use-prebuilt-form-recognizer-models.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.application-security-groups
 title: Application security groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Application security groups
   description: "Application security groups"
   ms.date: 06/12/2024

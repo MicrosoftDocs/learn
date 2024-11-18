@@ -51,7 +51,7 @@ A label name must:
 
 Each revision in Container Apps is automatically assigned a unique identifier, but you can personalize the revision name by customizing the revision suffix. The typical format for a revision name is:
 
-`<CONTAINER_APP_NAME>-<REVISION_SUFFIX>`
+`<CONTAINER_APP_NAME>--<REVISION_SUFFIX>`
 
 For example, if you have a container app named "album-api" and decide to set the revision suffix as "first-revision," the complete revision name becomes "album-api--first-revision."
 

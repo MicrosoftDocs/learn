@@ -45,7 +45,7 @@ services:
       dockerfile: DockerfileStore
     environment: 
       - ProductEndpoint=http://backend:8080
-      - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features.azconfig.io;Id=QWQy;Secret=V/4r/rhg/0tdy2L/AmMfBUcgTrYC4krRC7uFqbjRvDU=
+      - ConnectionStrings:AppConfig=Endpoint=https://eshop-app-features.azconfig.io;Id=<ID>;Secret=<SECRET>
     ports:
       - "32000:8080"
     depends_on: 

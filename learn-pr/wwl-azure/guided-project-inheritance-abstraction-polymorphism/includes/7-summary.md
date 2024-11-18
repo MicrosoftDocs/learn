@@ -1,5 +1,3 @@
-
-
 In this guided project, you were asked to modify your code to make it more reusable. Classes, like methods, can help you achieve this goal. By using inheritance and polymorphism, you can write less code that is easier to read and understand.
 
 You should now be able to do the following:

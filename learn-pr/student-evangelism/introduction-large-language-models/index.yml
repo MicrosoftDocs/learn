@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.introduction-large-language-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: chnoring
   author: softchris
   ms.date: 11/30/2023
   title: Introduction to large language models
   description: Learn about large language models, their core concepts, the models that are available to use, and when to use them.
   ms.topic: module
-  ms.collection: ce-advocates-ai-copilot
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
   ms.service: azure-ai-services
 title: "Introduction to large language models"
 summary: Learn how to use large language models (LLMs), "general purpose" AI models that can analyze text, images, and audio, to improve your workflow.
@@ -35,3 +39,4 @@ units:
 - learn.introduction-large-language-models.summary
 badge:
   uid: learn.introduction-large-language-models-badge
+

@@ -11,7 +11,7 @@ In this exercise, you:
 
 ### Task 1: Open your simulated device project
 
-<!-- TODO: MOVE THE SAMPLE CODE INTO GITHUB -->
+[!INCLUDE [iot-authentication-device-connection-string.md](../../includes/iot-authentication-device-connection-string.md)]
 
 1. On your development machine, create a working folder for this project named **VibrationDevice**. You create all Visual Studio Code files for this project within this folder.
 

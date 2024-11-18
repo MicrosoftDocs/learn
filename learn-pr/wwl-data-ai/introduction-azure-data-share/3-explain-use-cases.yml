@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.explain-use-cases
 title: Explain Azure Data Share use cases
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain Azure Data Share use cases
   description: "Explain Azure Data Share use cases"
   ms.date: 01/05/2022

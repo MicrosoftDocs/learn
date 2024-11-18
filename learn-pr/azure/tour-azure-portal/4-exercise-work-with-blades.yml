@@ -2,6 +2,8 @@
 uid: learn.tour-azure-portal-features.4-exercise-work-with-blades
 title: Exercise - Work with resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Work with resources
   description: Sign in to the Azure portal and explore how to create and find different types of resources.
   ms.date: 04/08/2024
@@ -13,3 +15,4 @@ azureSandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-work-with-blades.md)]
+

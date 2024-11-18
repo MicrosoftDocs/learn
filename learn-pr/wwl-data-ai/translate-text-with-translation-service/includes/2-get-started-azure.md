@@ -1,7 +1,6 @@
-Microsoft provides Azure AI services that support translation. Specifically, you can use the following services:
+You can use **Azure AI Translator** with a programming language of your choice or the REST API. You can use some of its features with Language Studio. 
 
-- The **Azure AI Translator** service, which supports text-to-text translation.
-- The **Azure AI Speech** service, which enables speech to text and speech-to-speech translation.
+You can get started with **Azure AI Speech** with Speech Studio or a programming language of your choice or the REST API.  
 
 ## Azure resources for Azure AI Translator and Azure AI Speech
 
@@ -11,17 +10,13 @@ There are dedicated **Translator** and **Speech** resource types for these servi
 
 Alternatively, you can create an **Azure AI services** resource that provides access to both services through a single Azure resource, consolidating billing and enabling applications to access both services through a single endpoint and authentication key.
 
-## Text translation with Azure AI Translator
+## Using Azure AI Translator
 
-Azure AI Translator is easy to integrate in your applications, websites, tools, and solutions. The service uses a Neural Machine Translation (NMT) model for translation, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
+Azure AI Translator includes the following capabilities:
 
-### Azure AI Translator language support
-
-Azure AI Translator supports text-to-text translation between [more than 60 languages](/azure/ai-services/Translator/language-support?azure-portal=true). When using the service, you must specify the language you are translating ***from*** and the language you are translating ***to*** using ISO 639-1 language codes, such as *en* for English, *fr* for French, and *zh* for Chinese. Alternatively, you can specify cultural variants of languages by extending the language code with the appropriate 3166-1 cultural code - for example, *en-US* for US English, *en-GB* for British English, or *fr-CA* for Canadian French.
-
-When using Azure AI Translator, you can specify one ***from*** language with multiple ***to*** languages, enabling you to simultaneously translate a source document into multiple languages.
-
-### Optional Configurations
+- **Text translation** - used for quick and accurate text translation in real time across all supported languages.
+- **Document translation** - used to translate multiple documents across all supported languages while preserving original document structure.  
+- **Custom translation** -  used to enable enterprises, app developers, and language service providers to build customized neural machine translation (NMT) systems. 
 
 Azure AI Translator's application programming interface (API) offers some optional configuration to help you fine-tune the results that are returned, including:
 
@@ -30,18 +25,12 @@ Azure AI Translator's application programming interface (API) offers some option
 
 ## Speech translation with Azure AI Speech
 
-Azure AI Speech includes the following APIs:
+Azure AI Speech includes the following capabilities:
 
 - **Speech to text** - used to transcribe speech from an audio source to text format.
 - **Text to speech** - used to generate spoken audio from a text source.
 - **Speech Translation** - used to translate speech in one language to text or speech in another.
 
-You can use the **Speech Translation** API to translate spoken audio from a streaming source, such as a microphone or audio file, and return the translation as text or an audio stream. This enables scenarios such as real-time closed captioning for a speech or simultaneous two-way translation of a spoken conversation.
+>[!NOTE]
+>You can learn more about Azure AI Speech and Speech Studio with the learn module [Fundamentals of Azure AI Speech](/training/modules/recognize-synthesize-speech/). 
 
-### Azure AI Speech language support 
-
-As with Azure AI Translator, you can specify one source language and one or more target languages to which the source should be translated with Azure AI Speech. You can translate speech into [over 60 languages](/azure/ai-services/speech-service/language-support?tabs=stt#speech-translation?azure-portal=true).
-
-The source language must be specified using the extended language and culture code format, such as *es-US* for American Spanish. This requirement helps ensure that the source is understood properly, allowing for localized pronunciation and linguistic idioms.
-
-The target languages must be specified using a two-character language code, such as *en* for English or *de* for German.

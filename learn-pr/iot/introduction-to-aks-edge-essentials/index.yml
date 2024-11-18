@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-aks-edge-essentials
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
   description: Evaluate whether AKS Edge Essentials is appropriate to automate and run your containerized applications and the opportunities it can create for your business.
   ms.date: 11/3/2023
@@ -32,6 +34,9 @@ products:
 - azure
 - aks-edge-essentials
 - windows-iot
+- azure-arc
+- azure-kubernetes-service
+- azure-iot
 subjects:
 - iot
 - containers
@@ -44,3 +49,4 @@ units:
 - learn.introduction-to-aks-edge-essentials.summary
 badge:
   uid: learn.introduction-to-aks-edge-essentials.badge
+
