@@ -36,11 +36,11 @@ In addition to monitoring and alerting, you should also incorporate an applicati
 
 ### Manual
 
-You can manually manage capacity using the Azure Portal or the CLI. 
+You can manually manage capacity using the Azure portal or the CLI. 
 
-#### Azure Portal
+#### Azure portal
 
-Watch this video to understand how you can use the Azure Portal to manage the capacity for Azure NetApp Files system.
+Watch this video to understand how you can use the Azure portal to manage the capacity for Azure NetApp Files system.
 
 [!VIDEO https://learn-video.azurefd.net/vod/player?id=61e9d5c5-d866-4e23-b6fe-efc7138acf0d]
 
