@@ -2,11 +2,9 @@
 uid: learn.wwl.design-implement-azure-expressroute.design-expressroute-deployment
 title: Design an ExpressRoute deployment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design an ExpressRoute deployment
   description: "Design an ExpressRoute deployment"
-  ms.date: 11/02/2023
+  ms.date: 11/18/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -29,7 +27,7 @@ quiz:
     - content: "Resources in different Geopolitical regions."
       isCorrect: true
       explanation: "Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries."
-  - content: "How can one provide a failover path for ExpressRoute?"
+  - content: "How can you provide a failover path for ExpressRoute?"
     choices:
     - content: "Configure a Point-to-Site VPN connection as a backup for ExpressRoute."
       isCorrect: false

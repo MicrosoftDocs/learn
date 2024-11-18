@@ -2,11 +2,9 @@
 uid: learn.wwl.design-implement-azure-expressroute.troubleshoot-expressroute-connection-issues
 title: Troubleshoot ExpressRoute connection issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot ExpressRoute connection issues
   description: "Troubleshoot ExpressRoute connection issues"
-  ms.date: 11/02/2023
+  ms.date: 11/18/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -29,7 +27,7 @@ quiz:
     - content: "Circuit number."
       isCorrect: false
       explanation: "Incorrect. There's no circuit number property."
-  - content: "An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?"
+  - content: "An engineer wants to know if their service provider has any changes that affect their circuit. Where can they check for this information?"
     choices:
     - content: "Check the **Last modified by** property of the relevant peering."
       isCorrect: true
