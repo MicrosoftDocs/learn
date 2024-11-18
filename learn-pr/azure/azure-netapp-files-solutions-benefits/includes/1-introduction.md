@@ -6,7 +6,7 @@ Azure NetApp Files’ integration with Azure native services like Azure Kubernet
 
 The following diagram depicts the key use cases supported in Azure NetApp Files.
 
-[![Diagram of use cases in Azure NetApp Files.](../media/1-azure-netapp-files-solution.png)](../media/1-azure-netapp-files-solutions.png#lightbox)
+[![Diagram of use cases in Azure NetApp Files.](../media/1-azure-netapp-files-solutions.png)](../media/1-azure-netapp-files-solutions.png#lightbox)
 
 Azure NetApp Files is a versatile and scalable storage service that provides an ideal platform for migrating various workload categories, running specialized workloads, and integrating with Azure native services.
 
