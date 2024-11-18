@@ -28,7 +28,7 @@ Lightweight directory access protocol (LDAP) search and bind traffic passes over
 * **LDAP channel binding:** Microsoft recommends that administrators enable LDAP signing along with channel binding. If the LDAP client supports channel binding tokens and LDAP signing, channel binding and signing are required, and registry options are set by the new Microsoft patch.
 * **LDAP over StartTLS:** LDAP over StartTLS uses port 389 for the LDAP connection. After the initial LDAP connection has been made, a StartTLS OID is exchanged, and certificates are compared. Then all LDAP traffic is encrypted by using TLS. The packet capture shown below shows the LDAP bind, StartTLS handshake and subsequent TLS-encrypted LDAP traffic.
 
-    :::image type="content" source="../media/3-ldap-starttls.png" alt-text="Screenshot of LDAP over StartTLS connections." lightbox="../media/3-ldap-starttls.png":::
+    :::image type="content" source="../media/3-ldap-start-tls.png" alt-text="Screenshot of LDAP over StartTLS connections." lightbox="../media/3-ldap-start-tls.png":::
 
     There are two main differences between LDAP over SSL (LDAPS) and StartTLS:
     

@@ -37,6 +37,6 @@ units:
 - learn.azure.azure-netapp-files-security.encryption-at-rest
 - learn.azure.azure-netapp-files-security.encryption-in-transit
 - learn.azure.azure-netapp-files-security.knowledge-check
-- learn.azure.azure-netapp-files-security-solution.summary
+- learn.azure.azure-netapp-files-security.summary
 badge:
   uid: learn.azure-netapp-files-security.badge
