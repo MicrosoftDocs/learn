@@ -45,7 +45,7 @@ jobs:
 
 ## Scripts in your workflow
 
-In the preceding workflow snippet examples, the `run` keyword is used to simply print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
+In the preceding workflow snippet examples, the `run` keyword is used to print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
 
 ```yml
 jobs:
@@ -75,7 +75,7 @@ To cache dependencies for a job, use GitHub's `cache` action. This action retrie
 | --- | --- | --- |
 | Key | Refers to the key identifier created when saving and searching for a cache. | Yes |
 | Path | Refers to the file path on the runner to cache or search. | Yes |
-| Restore-keys | Consists of alternative existing keys to caches if the desired cache key is not found. | No |
+| Restore-keys | Consists of alternative existing keys to caches if the desired cache key isn't found. | No |
 
 ```yml
 steps:
@@ -90,7 +90,7 @@ steps:
         ${{ runner.os }}-npm-cache-
 ```
 
-In the preceding example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an ID (`npm-cache` in this example) is useful when you are using the `restore-keys` fallback and have multiple caches.
+In the preceding example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an ID (`npm-cache` in this example) is useful when you're using the `restore-keys` fallback and have multiple caches.
 
 ## Pass artifact data between jobs
 
