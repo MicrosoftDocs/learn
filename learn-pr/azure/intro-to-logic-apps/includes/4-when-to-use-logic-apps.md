@@ -21,7 +21,7 @@ Our fictional shoe company needs to monitor industry news, move old videos to ar
 |-|-----------------|-----------------|-------------|----------------|---------------------------|
 | **News monitor** | Integrates multiple services | Don't need near real-time low latency | One condition simple action | Built-in connectors available for all needed systems | Yes |
 | **Video archive utility** | *Only needs to access one service, cloud storage* | Don't need near real-time low latency | Two simple condition actions | Prebuilt connectors available for all needed systems | Yes |
-| **Direct online sales** | Integrates multiple services | Don't need near real-time low latency | *Multiple complex conditions* | *Multiple custom connectors needed* | _Maybe_ |
+| **Direct online sales** | Integrates multiple services | Don't need near real-time low latency | *Multiple complex conditions* | *Multiple custom connectors needed* | *Maybe* |
 
 This analysis produces a few interesting things to consider:
 
