@@ -26,7 +26,7 @@ quiz:
     - content: Volume quotas restrict the maximum size of a single file that can be stored within a volume. 
       isCorrect: false
       explanation: Incorrect. Volume quotas do not restrict the maximum size of a single file that can be stored within a volume. They are focused on controlling the overall capacity allocated to a volume, rather than individual file sizes.
-    - content: 
+    - content: Volume quotas control the maximum number of concurrent connections allowed to a volume.
       isCorrect: false 
       explanation: Incorrect. Volume quotas aren't used to control the maximum number of concurrent connections allowed to a volume. They are primarily concerned with managing the storage capacity allocated to the volume.
   - content: What is the purpose of individual user and group quotas in Azure NetApp Files?
