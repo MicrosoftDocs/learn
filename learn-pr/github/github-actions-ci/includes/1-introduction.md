@@ -8,9 +8,9 @@ In this module, you learn how to implement continuous integration using GitHub A
 
 In this module, you:
 
-- Build and test a Node.js project by using GitHub Actions and a templated workflow
-- Debug a failed test using the GitHub Actions Log
-- Customize your workflow with GitHub Actions
+- Build and test a Node.js project by using GitHub Actions and a templated workflow.
+- Debug a failed test using the GitHub Actions Log.
+- Customize your workflow with GitHub Actions.
 
 ## Prerequisites
 

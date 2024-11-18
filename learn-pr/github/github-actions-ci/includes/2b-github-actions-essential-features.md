@@ -63,7 +63,7 @@ jobs:
       - name: Run build script
         run: ./.github/scripts/build.sh
         shell: bash
-``` 
+```
 
 ## Cache dependencies with the cache action
 
@@ -75,7 +75,7 @@ To cache dependencies for a job, use GitHub's `cache` action. This action retrie
 | --- | --- | --- |
 | Key | Refers to the key identifier created when saving and searching for a cache. | Yes |
 | Path | Refers to the file path on the runner to cache or search. | Yes |
-| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | No |
+| Restore-keys | Consists of alternative existing keys to caches if the desired cache key is not found. | No |
 
 ```yml
 steps:
@@ -121,7 +121,7 @@ jobs:
       - run: cat file.txt
 ```
 
-The preceding example has two jobs. `job_1` writes some text into the file `file.txt` and then uses the `actions/upload-artifact@v2` action to upload this artifact and store the data for future use within the workflow. `job_2` requires `job_1` to complete by using the `needs: job_1` syntax, then uses the `actions/download-artifact@v2` action to download that artifact and then print the contents of `file.txt`.
+The preceding example has two jobs. `job_1` writes some text into the file `file.txt`. Then it uses the `actions/upload-artifact@v2` action to upload this artifact and store the data for future use within the workflow. `job_2` requires `job_1` to complete by using the `needs: job_1` syntax. It then uses the `actions/download-artifact@v2` action to download that artifact, and then print the contents of `file.txt`.
 
 ## Enable step debug logging in a workflow
 
@@ -132,7 +132,7 @@ In some cases, the default workflow logs won't provide enough detail to diagnose
 
 ## Access the workflow logs from the user interface
 
-When you think about successful automation, you aim to spend the least amount of time looking at what’s automated so you can focus your attention on what’s relevant. But sometimes, things don’t go as planned, and you need to review what happened. That debugging process can be frustrating, but GitHub provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in GitHub, you can follow these steps:
+When you think about successful automation, you aim to spend the least amount of time looking at what's automated so you can focus your attention on what's relevant. However, sometimes things don't go as planned, and you need to review what happened. That debugging process can be frustrating. GitHub provides a clear layout structure that enables a quick way to navigate between the jobs, while keeping the context of the currently debugging step. To view the logs of a workflow run in GitHub, you can follow these steps:
 
   1. Navigate to the **Actions** tab in your repository.
   2. In the left sidebar, click the desired workflow.

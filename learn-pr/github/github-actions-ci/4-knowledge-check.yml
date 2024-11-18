@@ -21,7 +21,7 @@ quiz:
       explanation: "The ```actions/upload-artifact``` action allows you to save an artifact."
     - content: "The ```actions/checkout@v3``` action"
       isCorrect: false
-      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
+      explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/checkout@v3``` action copies the code from your repository into the virtual machine."
     - content: "The ```actions/download-artifact``` action"
       isCorrect: false
       explanation: "The ```actions/upload-artifact``` action allows you to save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
