@@ -404,7 +404,7 @@ The following sections show one possible solution for the challenge from the pre
 
 ### Run the unit tests using the Test Explorer
 
-1. Open the Test Explorer view and ensure that 12 unit test are visible in the interface.
+1. Open the Test Explorer view and ensure that at least 12 unit tests are visible in the interface.
 
 1. Select **Run Tests** to run all the tests.
 
