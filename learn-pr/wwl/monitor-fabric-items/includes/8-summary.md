@@ -4,7 +4,7 @@ The main takeaways from this module include the importance of regular monitoring
 
 Extra Reading:
 
-1. [Microsoft Fabric Documentation](/azure/data-factory/)
-3. [Monitoring in Azure Data Factory](/azure/data-factory/monitor-visually)
-4. [Getting Started with Fabric](/azure/data-factory/quickstart-create-data-factory-portal)
-5. [Microsoft Fabric Shared Platform](https://learn.microsoft.com/fabric/#microsoft-fabric-shared-platform)
+- [Microsoft Fabric Documentation](/azure/data-factory/) 
+- [Monitoring in Azure Data Factory](/azure/data-factory/monitor-visually)
+- [Getting Started with Fabric](/azure/data-factory/quickstart-create-data-factory-portal)
+- [Microsoft Fabric Shared Platform](/fabric/#microsoft-fabric-shared-platform)

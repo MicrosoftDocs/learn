@@ -1,4 +1,4 @@
-You can use the reports in the [**admin monitoring workspace**](https://learn.microsoft.com/fabric/admin/monitoring-workspace#reports-and-semantic-models) for getting insights about user activity, content sharing, capacity performance, and more in your Fabric tenant. You can also connect to the semantic models in the workspace to create reporting solutions optimized for your organization's needs
+You can use the reports in the [**admin monitoring workspace**](/fabric/admin/monitoring-workspace#reports-and-semantic-models) for getting insights about user activity, content sharing, capacity performance, and more in your Fabric tenant. You can also connect to the semantic models in the workspace to create reporting solutions optimized for your organization's needs
 
 ## Refreshing and monitoring semantic Models in the admin monitoring workspace
 
