@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-fabric-items
+metadata:
+  title: Work with Delta Lake tables in Microsoft Fabric
+  description: "Tables in a Microsoft Fabric lakehouse are based on the Delta Lake technology commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create advanced analytics solutions."
+  ms.date: 11/14/2024
+  author: JamesHerring
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+title: Work with Delta Lake tables in Microsoft Fabric
+summary: Tables in a Microsoft Fabric lakehouse are based on the Delta Lake storage format commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create advanced analytics solutions.
+abstract: |
+  In this module, you'll learn how to:
+  - Understand Delta Lake and delta tables in Microsoft Fabric
+  - Create and manage delta tables using Spark
+  - Optimize delta tables
+  - Use Spark to query and transform data in delta tables
+  - Use delta tables with Spark structured streaming
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+units:
+- learn.wwl.monitor-fabric-items.introduction
+- learn.wwl.monitor-fabric-items.monitor-data-ingestion
+- learn.wwl.monitor-fabric-items.monitor-data-transformation
+- learn.wwl.monitor-fabric-items.monitor-semantic-models
+- learn.wwl.monitor-fabric-items.configure-alerts
+- learn.wwl.monitor-fabric-items.exercise-configure-alerts-in-fabric
+- learn.wwl.monitor-fabric-items.knowledge-check
+- learn.wwl.monitor-fabric-items.summary
+badge:
+  uid: learn.wwl.monitor-fabric-items.badge
