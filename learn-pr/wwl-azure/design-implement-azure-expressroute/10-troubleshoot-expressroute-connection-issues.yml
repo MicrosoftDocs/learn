@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Azure resources record information about changes, in this case, who made the last change."
     - content: "Call the service provider and ask them."
       isCorrect: false
-      explanation: "Incorrect. This is not the quickest way to check."
+      explanation: "Incorrect. There is a better answer."
     - content: "Raise a support ticket with Microsoft."
       isCorrect: false
-      explanation: "Incorrect. This is not the quickest way to check."
+      explanation: "Incorrect. There is a better answer."
