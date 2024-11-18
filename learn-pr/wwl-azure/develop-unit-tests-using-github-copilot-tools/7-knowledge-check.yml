@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "What is the role of GitHub Copilot Chat in generating unit test cases?"
     choices:
-    - content: "It automatically writes all the test cases for the the solution."
+    - content: "It automatically writes all the test cases for the solution."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot Chat does not automatically write all the test cases for a solution. It does generate unit tests based on the code specified by the user."
     - content: "It only suggests possible input parameters and expected output values."
