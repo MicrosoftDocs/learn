@@ -71,18 +71,18 @@ Azure Logic Apps automatically makes the return values available to all subseque
 
 ## What are control actions?
 
-Most workflows need to run different actions, based on the data being processed. For example, a workflow might route an expense report to a different manager, based on the expense amount. In the industry news monitoring app, the workflow needs to branch, based on an article's sentiment score. The following diagram shows the flowchart for the industry news monitoring app and highlights the control logic:
+Most workflows need to run different actions, based on the data that needs processing. For example, a workflow might route an expense report to a different manager, based on the expense amount. In the industry news monitoring app, the workflow needs to branch, based on an article's sentiment score. The following diagram shows the flowchart for the industry news monitoring app and highlights the control logic:
 
 :::image type="content" source="../media/news-monitoring-control-logic.png" alt-text="Diagram shows the branches based on article sentiment in the industry news monitoring app." border="false" lightbox="../media/news-monitoring-control-logic.png":::
 
-*Control actions* are special actions built-in to Azure Logic Apps that provide these control constructs:
+*Control actions* are special actions built into Azure Logic Apps that provide workflow control constructs, for example:
 
-- The *Condition* action controlled by a Boolean expression.
-- The *Switch* action.
-- The *until* and *for each* loop actions.
-- Unconditional *branch* instructions.
+- The *Condition* action, which is controlled by a Boolean expression.
+- The *Switch* action, which is controlled by cases and a default case.
+- The *until* and *for each* loop actions, which repeat actions and are controlled by Boolean expressions.
+- Unconditional **parallel branch** instructions.
 
-The following diagram shows how to use the *condition* action in the workflow for the industry news monitoring app:
+The following diagram shows how to use the **Condition** action in the workflow for the industry news monitoring app:
 
 :::image type="content" source="../media/news-monitoring-control-action.png" alt-text="Diagram shows the industry news monitoring workflow with the built-in control action that chooses branches, based on article sentiment." border="false" lightbox="../media/news-monitoring-control-action.png":::
 
