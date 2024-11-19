@@ -76,7 +76,7 @@ Part of configuring your Azure SQL Database logical server or configuring Azure 
 
 For Azure SQL Managed Instance, you can choose the connection type or policy during the deployment. In Azure SQL Database, you can choose the connection type after deployment.
 
-You can keep the default of **Proxy for connections from outside and Redirect for connections within Azure** or configure something else.
+You can keep the default of **Proxy for connections from outside and Redirect for connections within Azure** or configure something else. The following diagram shows how gateways are used for the [proxy or redirect connection policy](/azure/azure-sql/database/connectivity-architecture#connection-policy).
 
 :::image type="content" source="../media/5-connectivity.png" alt-text="Diagram of the connection policies in Azure SQL." border="false":::
 
