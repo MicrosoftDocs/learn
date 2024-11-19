@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 In a database, users have access to several capabilities aimed at safeguarding sensitive information. These security measures are capable of securing or masking data from users or roles without proper authorization, ensuring data protection across both the database and the SQL analytics endpoints. This ensures a smooth and secure user experience, with no need for changes to the existing applications.
 
 ## Understand security capabilities

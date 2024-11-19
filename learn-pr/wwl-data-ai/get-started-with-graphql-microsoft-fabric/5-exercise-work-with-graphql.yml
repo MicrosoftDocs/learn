@@ -8,6 +8,8 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+    - ignite-2024
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-work-with-graphql.md)]

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 GraphQL is an open source query language designed for APIs and a server-side runtime for executing queries using a type system defined for your data. It isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
 
 Microsoft Fabric API for GraphQL is a managed service that enables you to create a GraphQL API in seconds to access data from your data sources such as warehouses, datamarts, and SQL Databases, by providing a unified API layer for querying and mutating data from these supported data sources.
