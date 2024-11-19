@@ -1,10 +1,10 @@
 ## Lab scenario
 
-In this lab, you'll configure DNS name resolution for Contoso Ltd. You'll create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
+In this lab, you configure DNS name resolution for Contoso Ltd. You create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/6-exercise-configure-domain-name-servers-configuration-azure.png" alt-text="Diagram of DNS architecture.":::
+:::image type="content" source="../media/6-exercise-configure-domain-name-servers-configuration-azure.png" alt-text="Diagram of the lab DNS architecture.":::
 
 ## Objectives
 
