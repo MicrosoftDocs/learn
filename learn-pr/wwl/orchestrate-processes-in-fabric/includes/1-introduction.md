@@ -12,7 +12,6 @@ Notebooks in Microsoft Fabric offer a versatile environment for data exploration
 
 Scheduling pipelines includes three standard types of scheduling, including time-based, event-based, and custom scheduling. Scheduling in Microsoft Fabric also allows for seamless integration with other services, which allow for more dynamic event-driven pipelines.
 
----
 The articles covered in this module include:
 
 - Understanding pipelines in Microsoft Fabric.

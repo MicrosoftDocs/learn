@@ -17,7 +17,7 @@ You can start a data pipeline in two ways:
 
 Just as you would expect, on-demand, or ad-hoc runs happen by browsing to the specific pipeline and selecting the **Run** button. You're prompted to save your changes, but the pipeline receives a ***pipeline run ID*** and you can then view the status of the ***run*** by selecting the ***Output*** tab.
 
-[![Image of pipeline runs with on-demand action and their output.](../media/pipeline-run-output-jobs.png)](../media/pipeline-run-output-jobs-expanded.png#lightbox)
+[![Screenshot of pipeline runs with on-demand action and their output.](../media/pipeline-run-output-jobs.png)](../media/pipeline-run-output-jobs-expanded.png#lightbox)
 
 ### Scheduling pipeline runs
 
@@ -26,22 +26,22 @@ When you schedule a data pipeline run, you can choose the frequency at which you
 1. **Select Schedule**: 
    - This option is found in the top banner of the **Home** tab to view your scheduling options.
 
-[![Image of pipeline runs scheduling button to build schedule.](../media/pipeline-scheduling.png)](../media/pipeline-scheduling-expanded.png#lightbox)
+    [![Screenshot of pipeline runs scheduling button to build schedule.](../media/pipeline-scheduling.png)](../media/pipeline-scheduling-expanded.png#lightbox)
 
 1. **Default Setting**:
    - By default, your data pipeline has no schedule defined.
    - Select the **On** radio button under the **Scheduled Run** header
 
-[![Image of pane for setting pipeline schedule settings.](../media/pipeline-schedule-settings.png)](../media/pipeline-schedule-settings-expanded.png#lightbox)
+    [![screenshot of pane for setting pipeline schedule settings.](../media/pipeline-schedule-settings.png)](../media/pipeline-schedule-settings-expanded.png#lightbox)
 
 1. **Schedule Configuration**:
    - On the **Schedule configuration page**, you can specify:
      - **Schedule frequency**
      - **Start and end dates and times**
      - **Time zone**
-1. **Apply Your Schedule**:
+2. **Apply Your Schedule**:
    - Once you configure your settings, select **Apply** to set your schedule.
-1. **Editing Your Schedule**:
+3. **Editing Your Schedule**:
    - You can view or edit the schedule at any time by selecting the **Schedule** button again.
 
 ## Storage Event Triggers in Fabric Data Factory pipelines

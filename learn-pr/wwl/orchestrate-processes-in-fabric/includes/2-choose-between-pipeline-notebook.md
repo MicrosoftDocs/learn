@@ -20,20 +20,21 @@ Dataflows are built using the Power Query experience, available across Microsoft
 
 ### Real-World Uses Cases for Dataflows
 
-1. **Data Consolidation for Reporting**
-   Organizations often have data spread across multiple sources such as databases, cloud storage, and on-premises systems. Dataflows can be used to consolidate this data into a single, unified dataset, which can then be used for reporting and analytics. For example, a company might use Dataflows to combine sales data from different regions into a single dataset for a comprehensive sales report. This single dataset can be further curated and promoted into a semantic model for use by a larger audience.
+**Data Consolidation for Reporting**
+Organizations often have data spread across multiple sources such as databases, cloud storage, and on-premises systems. Dataflows can be used to consolidate this
+data into a single, unified dataset, which can then be used for reporting and analytics. For example, a company might use Dataflows to combine sales data from different regions into a single dataset for a comprehensive sales report. This single dataset can be further curated and promoted into a semantic model for use by a larger audience.
 
-2. **Data Preparation for Machine Learning**
-   Dataflows can be used to prepare and clean data for machine learning models. This method includes tasks such as data cleansing, transformation, and feature engineering. For instance, a data science team might use Dataflows to preprocess customer data, removing duplicates and normalizing values before feeding it into a machine learning model.
+**Data Preparation for Machine Learning**
+Dataflows can be used to prepare and clean data for machine learning models. This method includes tasks such as data cleansing, transformation, and feature engineering. For instance, a data science team might use Dataflows to preprocess customer data, removing duplicates and normalizing values before feeding it into a machine learning model.
 
-3. **Real-Time Data Processing**
-   Dataflows can handle real-time data ingestion and transformation, making them ideal for scenarios where timely data processing is crucial. For example, an e-commerce platform might use Dataflows to process real-time transaction data, updating inventory levels and generating real-time sales reports.
+**Real-Time Data Processing**
+Dataflows can handle real-time data ingestion and transformation, making them ideal for scenarios where timely data processing is crucial. For example, an e-commerce platform might use Dataflows to process real-time transaction data, updating inventory levels and generating real-time sales reports.
 
-4. **Data Migration**
-   When migrating data from legacy systems to modern platforms, Dataflows can be used to extract, transform, and load (ETL) data into the new system. This process ensures that data is accurately and efficiently transferred, minimizing downtime and data loss. For instance, a company migrating from an on-premises database to Azure SQL Database might use Dataflows to handle the data migration process.
+**Data Migration**
+When migrating data from legacy systems to modern platforms, Dataflows can be used to extract, transform, and load (ETL) data into the new system. This process ensures that data is accurately and efficiently transferred, minimizing downtime and data loss. For instance, a company migrating from an on-premises database to Azure SQL Database might use Dataflows to handle the data migration process.
 
-5. **Self-Service Data Preparation**
-   Dataflows provide a low-code interface that allows business users to prepare their own data without needing extensive technical knowledge. This approach empowers users to create their own dataflows for tasks such as data cleansing, transformation, and enrichment, reducing the dependency on IT teams. For example, a marketing team might use Dataflows to prepare campaign data for analysis.
+**Self-Service Data Preparation**
+Dataflows provide a low-code interface that allows business users to prepare their own data without needing extensive technical knowledge. This approach empowers users to create their own dataflows for tasks such as data cleansing, transformation, and enrichment, reducing the dependency on IT teams. For example, a marketing team might use Dataflows to prepare campaign data for analysis.
 
 These use cases demonstrate the flexibility and power of Dataflows in handling various data integration and transformation task and show a powerful self-service feature. Self-service might be more appealing to your organization's business users while still providing a roadmap to a larger ELT project that utilizes pipelines and notebooks.
 
