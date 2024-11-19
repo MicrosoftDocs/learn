@@ -13,7 +13,7 @@ metadata:
   - build-2023
   ms.service: azure
   ai-usage: human-only
-title: Use Data Factory pipelines in Microsoft Fabric
+title: Orchestrate processes and data movement with Microsoft Fabric
 summary: Microsoft Fabric includes Data Factory capabilities, including the ability to create pipelines that orchestrate data ingestion and transformation tasks.
 abstract: |
   In this module, you learn how to:

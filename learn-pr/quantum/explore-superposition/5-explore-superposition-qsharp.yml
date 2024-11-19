@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.explore-superposition.superposition-qsharp
-title: Explore superposition with Q#
+title: Exercise - Create different superposition states with Q#
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Explore Superposition with Q#
+  title: Exercise - Explore Superposition with Q#
   description: Learn how to create superposition states and analyze them using Q#.
   ms.date: 10/30/2024
   author: SoniaLopezBravo

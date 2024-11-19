@@ -6,7 +6,9 @@ You can also combine the **Copy Data** activity with other activities to create 
 
 ![Screenshot of the Copy Data tool in Microsoft Fabric.](../media/copy-data.png) <!-- Update screenshot for release -->
 
-When you add a **Copy Data** activity to a pipeline, a graphical tool takes you through the steps required to configure the data source and destination for the copy operation. A wide range of source connections is supported, making it possible to ingest data from most common sources.
+When you add a **Copy Data** activity to a pipeline, a graphical tool takes you through the steps required to configure the data source and destination for the copy operation. A wide range of source connections is supported, making it possible to ingest data from most common sources. In OneLake, this includes support for lakehouse, warehouse, SQL Database, and others.
+
+![Screenshot of the Copy Data tool showing the SQL Database support in Microsoft Fabric.](../media/copy-sql-database.png)
 
 ## Copy Data activity settings
 

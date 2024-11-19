@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aspnet-core.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about what ASP.NET Core is and when you should use it to build your apps.
+  ms.date: 11/01/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 1
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What type of applications can you build with ASP.NET Core?"
+    choices:
+      - content: "Modern web apps, robust API services, IoT apps, and mobile backends."
+        isCorrect: true
+        explanation: "ASP.NET Core supports building modern web apps, robust API services, IoT apps, and mobile backends."
+      - content: "Only desktop applications."
+        isCorrect: false
+        explanation: "ASP.NET Core is designed for building web, API, IoT, and mobile backend applications."
+      - content: "Only mobile applications."
+        isCorrect: false
+        explanation: "ASP.NET Core supports a wide range of application types, including web, API, IoT, and mobile backends."
+      - content: "Only cloud-based applications."
+        isCorrect: false
+        explanation: "ASP.NET Core can be used to build both cloud-based and on-premises applications."
+  - content: "Which of the following is NOT a benefit of using ASP.NET Core's modular architecture?"
+    choices:
+      - content: "Customizable middleware pipeline."
+        isCorrect: false
+        explanation: "ASP.NET Core's modular architecture allows for a customizable middleware pipeline."
+      - content: "Built-in support for dependency injection."
+        isCorrect: false
+        explanation: "ASP.NET Core includes built-in support for dependency injection, promoting loose coupling and testability."
+      - content: "Limited to server-side development."
+        isCorrect: true
+        explanation: "ASP.NET Core isn't limited to server-side development; it supports both server-side and client-side development."
+  - content: "Which of the following is a key feature of Blazor?"
+    choices:
+      - content: "It allows building interactive web UI components using C#."
+        isCorrect: true
+        explanation: "Blazor enables developers to build interactive web UI components using C# instead of JavaScript."
+      - content: "It's a tool for database management."
+        isCorrect: false
+        explanation: "Blazor is a web UI framework, not a database management tool."
+      - content: "It's used for server-side rendering only."
+        isCorrect: false
+        explanation: "Blazor supports both client-side (WebAssembly) and server-side rendering."
+      - content: "It's a logging framework."
+        isCorrect: false
+        explanation: "Blazor isn't a logging framework; it's used for building web UI components."
+  - content: "What are some benefits of ASP.NET Core's cross-platform capabilities?"
+    choices:
+      - content: "Develop and run applications on macOS, Linux, and Windows."
+        isCorrect: true
+        explanation: "ASP.NET Core's cross-platform capabilities allow you to develop and run applications on Windows, macOS, and Linux."
+      - content: "Limited to Windows operating system."
+        isCorrect: false
+        explanation: "ASP.NET Core isn't limited to Windows; it supports multiple operating systems including macOS and Linux."
+      - content: "Only supports cloud deployment."
+        isCorrect: false
+        explanation: "ASP.NET Core supports both cloud and on-premises deployment."
+      - content: "Requires separate codebases for different platforms."
+        isCorrect: false
+        explanation: "ASP.NET Core allows for a single codebase to run across different platforms, providing a consistent runtime environment."
+
