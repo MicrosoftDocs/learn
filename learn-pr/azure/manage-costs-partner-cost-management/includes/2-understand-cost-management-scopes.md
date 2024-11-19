@@ -41,7 +41,7 @@ The customer scope doesn't include customers who are in the classic CSP agreemen
 
 ## Roles and permissions for Cost Management in the billing hierarchy
 
-Only the users with *global admin* and *admin agent* roles can manage and view costs for billing accounts, billing profiles, and customers directly in the partner's Azure tenant. For more information about Partner Center roles, see [Assign users roles and permissions](/partner-center/permissions-overview).
+Only the users with *global admin* and *admin agent* roles can manage and view costs for billing accounts, billing profiles, and customers directly in the partner's Azure tenant. For more information about Partner Center roles, see [Assign users roles and permissions](/partner-center/account-settings/permissions-overview).
 
 ## Export of cost data
 
