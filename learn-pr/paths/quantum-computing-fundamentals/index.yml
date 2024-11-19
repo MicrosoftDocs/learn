@@ -43,7 +43,7 @@ modules:
 - learn.quantum.choose-the-best-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.explore-superposition
-- learn.quantum.estimate-resources-quantum-algorithms
 - learn.quantum.explore-entanglement
+- learn.quantum.estimate-resources-quantum-algorithms
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy
