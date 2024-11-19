@@ -14,7 +14,7 @@ Suppose you're just getting started on the `QuarterlyIncomeReport` project. You 
 
 1. Open the SamplePython project.
 
-    This project contains a Python version of the `QuarterlyIncomeReport` project that you've worked on during this module. You can have GitHub Copilot explain the code to you using the Chat view or Explain This smart action.
+    This project contains a Python version of the `QuarterlyIncomeReport` project that you've worked on during this module. You can have GitHub Copilot explain the code to you using the Chat view or `Explain` smart action.
 
 1. Run the Python application.
 
