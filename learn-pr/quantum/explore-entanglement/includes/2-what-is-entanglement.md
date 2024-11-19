@@ -2,7 +2,6 @@ Entanglement is one of the key features of quantum mechanics that distinguishes 
 
 In this unit, you'll see how to define and describe quantum entanglement, and understand why it's such a powerful resource for quantum computing.
 
-
 ## Understanding quantum entanglement
 
 Imagine that you have two qubits, $A$ and $B$. The qubits are independent from each other, which means that the information about the state of qubit $A$, whatever it is, belongs only to qubit $A$. Similarly the information about the state of qubit $B$ belongs to qubit $B$. You can describe the state of each qubit. In this case, the qubits are not entangled, because they aren't sharing any information.

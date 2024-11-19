@@ -29,11 +29,11 @@ subjects:
 - data-integration
 - data-management
 modules:
-- learn.wwl.introduction-end-analytics-use-microsoft-fabric
-- learn.wwl.describe-medallion-architecture
+
 - learn.wwl.ingest-dataflows-gen2-fabric
 - learn.wwl.ingest-data-with-spark-fabric-notebooks 
 - learn.wwl.use-data-factory-pipelines-fabric
+- learn.wwl.get-started-kusto-fabric
 - learn.wwl.explore-event-streams-microsoft-fabric
 - learn.wwl.query-data-kql-database-microsoft-fabric
 trophy:

@@ -5,8 +5,8 @@ metadata:
   title: Specify internet of things (IoT) and embedded device security requirements
   description: "SC-100 preparatory unit on the topic: specify internet of things (IoT) and embedded device security requirements."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

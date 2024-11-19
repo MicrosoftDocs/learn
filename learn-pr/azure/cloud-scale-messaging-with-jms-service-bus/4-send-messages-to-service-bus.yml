@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Send messages to Azure Service Bus
   description: Write a Spring Boot app to send messages to Azure Service Bus.
-  ms.date: 02/07/2024
+  ms.date: 11/11/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

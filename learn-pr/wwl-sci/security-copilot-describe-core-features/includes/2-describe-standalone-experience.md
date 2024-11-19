@@ -1,5 +1,5 @@
 
-Microsoft Copilot for Security can be accessed through the dedicated site https://securitycopilot.microsoft.com. This dedicated site is also referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform. To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. For more information on role-based access control for Copilot, see the Assign roles section of [Understand authentication in Microsoft Copilot for Security](/security-copilot/authentication?assign-roles).
+Microsoft Security Copilot can be accessed through the dedicated site https://securitycopilot.microsoft.com. This dedicated site is also referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform. To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. For more information on role-based access control for Copilot, see the Assign roles section of [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication?assign-roles).
 
 There are some key landmarks on the Copilot landing page (portal) to which the user can navigate.
 
@@ -9,7 +9,7 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 - Prompt bar
 - Help
 
-:::image type="content" source="../media/copilot-standalone-landing-page-landmarks-marked-up.png" lightbox="../media/copilot-standalone-landing-page-landmarks-marked-up.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Copilot for Security.":::
+:::image type="content" source="../media/copilot-standalone-landing-page-landmarks-marked-up.png" lightbox="../media/copilot-standalone-landing-page-landmarks-marked-up.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Security Copilot.":::
 
 ### Home menu
 
@@ -30,33 +30,42 @@ From the home menu, the user can navigate as follows:
 
 - Owner specific options, for users configured as owners:
 
-  - Owner settings, which include a link to manage the billing in Azure, the option to change the Security Compute Units (SCUs), and configuration of data sharing options.
+  - Owner settings. These settings include the option to switch Security Compute Units (SCUs) capacity, configuring data sharing options to help improve Copilot, configuring settings for plugins, allowing Copilot to access data from Microsoft 365, allowing logging audit data in Microsoft Purview, configuring who can upload files.
 
-    :::image type="content" source="../media/owner-settings-updated-v2.png" lightbox="../media/owner-settings-updated-v2.png" alt-text="Screen capture showing the owner settings.":::
+    # [Capacity](#tab/capacity)
+    :::image type="content" source="../media/owner-settings-capacity.png" lightbox="../media/owner-settings-capacity.png" alt-text="Screen capture showing the owner settings, specifically focused on capacity information.":::
 
-  - Role assignments, where admins can view existing role assignments and assign Copilot roles to users.
+    # [Improve Copilot](#tab/improve-copilot)
+    :::image type="content" source="../media/owner-settings-improve-copilot.png" lightbox="../media/owner-settings-improve-copilot.png" alt-text="Screen capture showing the owner settings, specifically focused on data sharing options.":::
+
+    # [Plugins](#tab/plugins)
+    :::image type="content" source="../media/owner-settings-plugins-data-access.png" lightbox="../media/owner-settings-plugins-data-access.png" alt-text="Screen capture showing the owner settings, specifically focused on the audit logging option.":::
+
+    # [Audit logging](#tab/audit-logging)
+    :::image type="content" source="../media/owner-settings-logging-audit-data.png" lightbox="../media/owner-settings-logging-audit-data.png" alt-text="Screen capture showing the owner settings, specifically focused on the audit logging option.":::
+
+---
+
+  - Role assignments, where admins can view existing role assignments and assign Copilot roles to users. This includes the option to add recommended roles.
   
     :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
   
-  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Copilot for Security workloads. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in Copilot for Security embedded experiences.
+  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
   
     When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in organization, they cannot submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
 
-    :::image type="content" source="../media/usage-monitoring.png" lightbox="../media/usage-monitoring.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
+    :::image type="content" source="../media/usage-monitoring-dashboard-new.png" lightbox="../media/usage-monitoring-dashboard-new.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
 
 - Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
-  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages. For detailed information see [Supported languages](/security-copilot/supported-languages#supported-languages).
-   
-    For users with owner role permissions, the preferences page includes more configuration options. Owners can configure options plugins, file upload, and the response debugging level.
+  - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages. For detailed information, see [Supported languages](/security-copilot/supported-languages#supported-languages).
+  
 
-    :::image type="content" source="../media/settings-preferences-all-user-settings-v2.png" lightbox="../media/settings-preferences-all-user-settings-v2.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
-
-    :::image type="content" source="../media/settings-preferences-owner-specific-settings.png" lightbox="../media/settings-preferences-owner-specific-settings.png" alt-text="Screen capture showing the preferences that can be configured by owners.":::
+    :::image type="content" source="../media/settings-preferences-all-user-settings-v3.png" lightbox="../media/settings-preferences-all-user-settings-v3.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
 
   - The data and privacy page provides links to the privacy statement, terms and conditions, and location information for where data is stored.
   
-  -  The About page provides information of the app version for Copilot.
+  - The About page provides information of the app version for Copilot.
 
 - Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
@@ -70,7 +79,7 @@ The landing page for the standalone experience provides a brief summary of your 
 
 ### Get started using these promptbooks
 
-Copilot for Security comes with prebuilt promptbooks, a collection of prompts that have been put together to accomplish specific security-related tasks. Each promptbook requires a specific input (for example, a code snippet or a threat actor name) and then runs a series of prompts in sequence, with one prompt building on the one before it.
+Security Copilot comes with prebuilt promptbooks, a collection of prompts that have been put together to accomplish specific security-related tasks. Each promptbook requires a specific input (for example, a code snippet or a threat actor name) and then runs a series of prompts in sequence, with one prompt building on the one before it.
 
 The landing page of the standalone experience displays cards for a subset of the available promptbooks. Each card includes the title of the promptbook, a brief description, the owner, and the number of prompts in the promptbook.
 
@@ -84,7 +93,7 @@ For a complete listing of all the available promptbooks, select View promptbook 
 
 Watch this short video for a summary on using promptbooks.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb51c3d-ba80-430e-b3bc-2eed3942cf70]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c55cf83e-3f0f-4494-9d3c-ffd9b286f891]
 
 ### Prompt bar
 
@@ -134,13 +143,12 @@ The help icon is located on the bottom right of the Copilot landing page.
 
 :::image type="content" source="../media/help-to-help-list.png" lightbox="../media/help-to-help-list.png" alt-text="Screen capture showing the help icon and the help window.":::
 
-By selecting the help icon, you can link to documentation, or if you encounter issues or need to seek assistance, Copilot for Security provides a modern and advanced support experience. Depending on your role, the widget allows you to:
+By selecting the help icon, you can link to documentation, or if you encounter issues or need to seek assistance, Security Copilot provides a modern and advanced support experience. Depending on your role, the widget allows you to:
 
 - Find solutions to common problems.
 - Submit a support case to the Microsoft support team.
 
-
-***Find solutions to common problems***. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Type your question in the prompt bar and articles related to your search will be surfaced.
+***Find solutions to common problems***. Anyone with access to Security Copilot can access the self help widget by selecting the help icon then selecting the Help tab. Type your question in the prompt bar and articles related to your search will be surfaced.
 
 :::image type="content" source="../media/help-icon-self-help.png" lightbox="../media/help-icon-self-help.png" alt-text="Screen capture showing the self-help prompt bar and articles related to the entered prompt.":::
 
@@ -148,6 +156,6 @@ By selecting the help icon, you can link to documentation, or if you encounter i
 
 :::image type="content" source="../media/contact-support-tab.png" lightbox="../media/contact-support-tab.png" alt-text="Screen capture showing the form to get support from an agent.":::
 
-Watch this short video for a tour of Microsoft Copilot for Security.
+Watch this short video for a tour of Microsoft Security Copilot.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b45ed29-1738-40e8-bc87-696d420155f8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ac67946e-9079-4268-9c61-458b52a43402]
