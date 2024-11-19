@@ -166,7 +166,7 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Save the file, and then build the solution to verify that the tests are built and recognized within the Visual Studio Code environment.
 
-1. Verify the you've created at least 12 unique xUnit unit tests.
+1. Verify that you've created at least 12 unique xUnit unit tests.
 
     If you haven't reached the challenge requirements, repeat the process of generating edge case unit tests for the `BankAccount` class.
 
