@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: When to use Azure Logic Apps
   description: Learn about scenarios when you can use Azure Logic Apps.
-  ms.date: 09/24/2024
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
   ms.topic: unit
