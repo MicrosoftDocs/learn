@@ -3,7 +3,8 @@ In this module, you learned about the functionalities and applications of Micros
 The main takeaways from this module include understanding how Data Factory and Notebooks complement each other in managing and analyzing data within the Microsoft Fabric ecosystem. Additionally, you gained insights into how to initiate data pipeline runs either manually or automatically and how to automate tasks based on events in storage accounts using storage event triggers.
 
 More Reading:
-1. [Getting started with Microsoft Fabric](https://docs.microsoft.com/azure/data-factory/introduction)
-2. [Understanding Dataflows in Microsoft Fabric](https://docs.microsoft.com/power-query/dataflows/overview)
-3. [Exploring Notebooks in Microsoft Fabric](https://docs.microsoft.com/azure/notebooks/)
-4. [Scheduling Jobs in Microsoft Fabric](https://docs.microsoft.com/azure/data-factory/scheduling-and-execution)
+
+- [Getting started with Microsoft Fabric](/azure/data-factory/introduction)
+- [Understanding Dataflows in Microsoft Fabric](/docs/power-query/dataflows/overview)
+- [Exploring Notebooks in Microsoft Fabric](/azure/notebooks/)
+- [Scheduling Jobs in Microsoft Fabric](/azure/data-factory/scheduling-and-execution)
