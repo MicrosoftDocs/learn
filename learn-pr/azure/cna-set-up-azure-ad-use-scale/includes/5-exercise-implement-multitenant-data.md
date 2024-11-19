@@ -22,9 +22,11 @@ In this exercise, you'll:
 
 To perform this exercise, you'll need:
 
-- An Azure subscription.
+- To have completed the exercise _Set up Microsoft Entra ID_ in your Azure subscription.
 - A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-- To have completed the first exercise of this module.
+
+> [!WARNING]
+> Use a test environment because the exercises in this module perform sensitive operations that require elevated administrative privileges.
 
 ## Create an instance of Azure Database for PostgreSQL server
 
