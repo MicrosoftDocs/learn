@@ -1,8 +1,8 @@
 You can use the reports in the [**admin monitoring workspace**](/fabric/admin/monitoring-workspace#reports-and-semantic-models) for getting insights about user activity, content sharing, capacity performance, and more in your Fabric tenant. You can also connect to the semantic models in the workspace to create reporting solutions optimized for your organization's needs
 
-## Refreshing and monitoring semantic Models in the admin monitoring workspace
+## Refresh and monitoring semantic Models in the admin monitoring workspace
 
-- Only users with directly assigned admin roles can set up the admin monitoring workspace. If the admin role is assigned through a group, data refreshes in the workspace fails.
+- Only users with directly assigned admin roles can set up the admin monitoring workspace. If the admin role is assigned through a group, data refresh in the workspace fails.
 - The admin monitoring workspace is read-only. Workspace roles don't have the same capabilities as in other workspaces. Users, including admins, can't edit or view properties of items such as semantic models and reports.
 - Users with build permissions for a semantic model in the admin monitoring workspace are shown as with read permissions.
 - Granular delegated admin privileges (GDAP) aren't supported.
@@ -52,6 +52,6 @@ Monitoring the refresh status of semantic models is essential to ensure data int
 - **Error notifications**: Receive notifications for any refresh failures, allowing you to quickly address issues.
 - **Detailed logs**: Access detailed logs to investigate and resolve any errors that occur during the refresh process.
 
-> **Important:** Regularly monitoring the refresh status and addressing any errors promptly is crucial to maintaining the reliability and accuracy of your semantic models.
+> [**!Important**] Regularly monitoring the refresh status and addressing any errors promptly is crucial to maintaining the reliability and accuracy of your semantic models.
 
 By applying these features, you can maintain the reliability and accuracy of your semantic models, ensuring that your data-driven insights are always based on the latest information.

@@ -8,10 +8,10 @@ Real-Time Intelligence in Microsoft Fabric provides a comprehensive solution for
 
 ### Key Components of Real-Time Intelligence
 
-1. **Real-Time Hub**: The central place for managing and monitoring all streaming data. It simplifies the ingestion, curation, and processing of data from various sources, both internal and external.
-2. **Eventstream**: A powerful tool for ingesting data from multiple streaming sources such as Advanced Messaging Queuing Protocol (AMQP), Kafka, Azure Event Hubs, and more. It provides a no-code experience for event processing and routing data to other Fabric entities like Eventhouse and Reflex.
-3. **Eventhouse**: A data store optimized for high-performance queries and data exploration. It supports real-time data ingestion and transformation, making it easier to analyze and visualize data.
-4. **Reflex**: Enables automated actions based on patterns or conditions detected in the streaming data. It helps in setting up triggers and alerts to respond to real-time events.
+- **Real-Time Hub**: The central place for managing and monitoring all streaming data. It simplifies the ingestion, curation, and processing of data from various sources, both internal and external.
+- **Eventstream**: A powerful tool for ingesting data from multiple streaming sources such as Advanced Messaging Queuing Protocol (AMQP), Kafka, Azure Event Hubs, and more. It provides a no-code experience for event processing and routing data to other Fabric entities like Eventhouse and Reflex.
+- **Eventhouse**: A data store optimized for high-performance queries and data exploration. It supports real-time data ingestion and transformation, making it easier to analyze and visualize data.
+- **Reflex**: Enables automated actions based on patterns or conditions detected in the streaming data. It helps in setting up triggers and alerts to respond to real-time events.
 
 ### Monitoring Data Ingestion in Real-Time Intelligence
 
@@ -36,9 +36,9 @@ Azure Data Factory is a fully managed service designed to compose data storage, 
 
 Azure Data Factory provides several key components to facilitate data ingestion and processing:
 
-1. **Pipelines**: Developers can build data-driven workflows (pipelines) that join, aggregate, and transform data sourced from on-premises, cloud-based, and internet services. These pipelines can be monitored and managed through a rich visual experience offered by the Azure Preview Portal.
-2. **Data Integration**: The service supports transforming semi-structured, unstructured, and structured data from various sources into trusted information. This transformation is achieved through simple JSON scripting.
-3. **Monitoring and Management**: Azure Data Factory provides comprehensive monitoring and management capabilities for these pipelines, ensuring that data flows smoothly and efficiently.
+- **Pipelines**: Developers can build data-driven workflows (pipelines) that join, aggregate, and transform data sourced from on-premises, cloud-based, and internet services. These pipelines can be monitored and managed through a rich visual experience offered by the Azure Preview Portal.
+- **Data Integration**: The service supports transforming semi-structured, unstructured, and structured data from various sources into trusted information. This transformation is achieved through simple JSON scripting.
+- **Monitoring and Management**: Azure Data Factory provides comprehensive monitoring and management capabilities for these pipelines, ensuring that data flows smoothly and efficiently.
 
 ### Monitoring Data Ingestion in Data Factory
 

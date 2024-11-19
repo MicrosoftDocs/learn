@@ -38,34 +38,34 @@ quiz:
       explanation: "Incorrect. This feature is the function of the Data Activator, not the Real-Time Hub."
   - content: "What happens if the admin who first accessed the workspace uses Privileged Identity Management (PIM) and their PIM access isn't active during the scheduled data refresh time?"
     choices:
-    - content: "The scheduled data refresh fails"
+    - content: "The scheduled data refresh fails."
       isCorrect: true
       explanation: "Correct. If the admin's PIM access isn't active during the scheduled data refresh time, the refresh fails."
     - content: "The refresh process continues as normal"
       isCorrect: false
       explanation: "Incorrect. If the admin's PIM access isn't active during the scheduled data refresh time, the refresh fails."
-    - content: "The refresh process is postponed until the PIM access is active again"
+    - content: "The refresh process is postponed until the PIM access is active again."
       isCorrect: false
       explanation: "Incorrect. The refresh doesn't get postponed. It fails if the PIM access isn't active during the scheduled time."
   - content: "What are some of the actions that allow triggering by alerts within Microsoft Fabric?"
     choices:
-    - content: "Sending a Slack message"
+    - content: "Sending a Slack message."
       isCorrect: false
       explanation: "Incorrect. Microsoft Fabric doesn't support sending Slack messages."
-    - content: "Sending a Teams message, an Email, or running a Fabric item such as triggering a notebook or a Data Factory pipeline activity"
+    - content: "Sending a Teams message, an Email, or running a Fabric item such as triggering a notebook or a Data Factory pipeline activity."
       isCorrect: true
       explanation: "Correct. Microsoft Fabric supports these actions in response to alerts."
-    - content: "Triggering a Google Cloud Function"
+    - content: "Triggering a Google Cloud Function."
       isCorrect: false
       explanation: "Incorrect. Microsoft Fabric doesn't support triggering Google Cloud Functions."
   - content: "What is required to complete the exercise of using Apache Spark with delta tables in a Microsoft Fabric lakehouse?"
     choices:
-    - content: "An Amazon Web Services (AWS) account"
+    - content: "An Amazon Web Services (AWS) account."
       isCorrect: false
       explanation: "Incorrect. The exercise doesn't require an Amazon Web Services account."
-    - content: "A Microsoft Fabric tenant"
+    - content: "A Microsoft Fabric tenant."
       isCorrect: true
       explanation: "Correct. To complete the exercise, a Microsoft Fabric tenant is needed."
-    - content: "A Google Cloud Platform account"
+    - content: "A Google Cloud Platform account."
       isCorrect: false
       explanation: "Incorrect. The exercise doesn't require a Google Cloud Platform account."

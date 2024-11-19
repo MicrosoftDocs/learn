@@ -45,7 +45,7 @@ For more information, see the data transformation activities article.
 | Stored Procedure             | Azure SQL, Azure Synapse Analytics, or SQL Server |
 | SQL script                   | Azure SQL, Azure Synapse Analytics, or SQL Server |
 
-> **Note**  
+> [**!Note**]
 > There is a default soft limit of maximum 80 activities per pipeline, which includes inner activities for containers.
 
 ### **1. Overview of Monitoring in Fabric Data Factory**
