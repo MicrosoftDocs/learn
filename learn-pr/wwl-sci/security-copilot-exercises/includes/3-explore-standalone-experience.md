@@ -1,14 +1,16 @@
 The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you to familiarize yourself with the solution.
 
-In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Microsoft Copilot for Security.
+In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Security Copilot.
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Security Copilot.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -19,7 +21,7 @@ This exercise should take approximately **15** minutes to complete.
 
 In this task, you start your exploration in the home menu.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
@@ -36,9 +38,9 @@ In this task, you start your exploration in the home menu.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor does have not access to these menu options.
-    1. For plugins for Copilot for Security, select the drop-down for Who can add and manage their own custom plugins to view the available options.
+    1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options.
     1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
-    1. Select the information icon next to "Allow Copilot for Security to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
+    1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
     1. Select the drop-down for who can upload files to view the available options.
     1. Select the home menu icon to open the home menu.
 
@@ -68,7 +70,7 @@ In the center of the landing page, there are cards representing your most recent
 
 1. The largest card is your last session. Selecting the title of any session card takes you to that session.
 1. Select **View all sessions** to go to the My sessions page.
-1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
+1. Select **Microsoft Security Copilot**, next to the home menu icon, to return to the landing page.
 
 #### Task: Explore access to promptbooks
 
@@ -86,7 +88,7 @@ The next section of the Copilot landing page revolves around promptbooks. The la
     1. Select Woodgrove for a listing of promptbooks owned by Woodgrove, the name of a fictitious organization.
     1. To view built-in, Microsoft owned/developed promptbooks, select Microsoft.
     1. Select the filter icon. Here you can filter based on tags assigned to the workbook. Close the filter window by selecting the X in the New filter tab.
-    1. Select **Microsoft Copilot for Security**, next to the home menu icon, to return to the landing page.
+    1. Select **Microsoft Security Copilot**, next to the home menu icon, to return to the landing page.
 
 #### Task: Explore the prompts and sources icon in the prompt bar
 
@@ -115,11 +117,11 @@ At the bottom center of the page is the prompt bar. The prompt bar includes the 
 At the bottom right corner of the window is the help icon where you can easily access documentation and find solutions to common problems. From the help icon, you also submit a support case to the Microsoft support team if you have the appropriate role permissions.
 
 1. Select the **Help (?)** icon.
-    1. Select **Documentation**. This selection opens a new browser tab to the Microsoft Copilot for Security documentation. Return to the Microsoft Copilot for Security browser tab.
+    1. Select **Documentation**. This selection opens a new browser tab to the Security Copilot documentation. Return to the Microsoft Security Copilot browser tab.
     1. Select **Help**.
-        1. Anyone with access to Copilot for Security can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem.
+        1. Anyone with access to Security Copilot can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem.
         1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, a headset icon is displayed. Close the contact support page.
 
 #### Review
 
-In this exercise, you explored Microsoft Copilot for Security standalone experience. You explored the key landmarks of Copilot landing page including the owner settings, your past sessions, prompts and promptbooks, and the help option.
+In this exercise, you explored Microsoft Security Copilot standalone experience. You explored the key landmarks of Copilot landing page including the owner settings, your past sessions, prompts and promptbooks, and the help option.

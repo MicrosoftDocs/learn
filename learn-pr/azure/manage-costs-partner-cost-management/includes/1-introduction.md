@@ -1,4 +1,4 @@
-You're a global administrator for Fabrikam, a Microsoft Cloud Solution Provider (CSP) partner. Fabrikam consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You started receiving bills and want to better understand and manage costs. You also need to optimize costs to ensure that they're kept under control. 
+You're a billing administrator for Fabrikam, a Microsoft Cloud Solution Provider (CSP) partner. Fabrikam consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You started receiving bills and want to better understand and manage costs. You also need to optimize costs to ensure that they're kept under control. 
 
 Your CEO expressed concern about last month's bill, which was $15,000 larger than the previous month. You want to analyze your company's customers and resources to determine the primary costs on your bill. You're also interested in maximizing the partner-earned credits that Fabrikam receives. You'll identify the resources across your customers that don't have the credit applied.
 

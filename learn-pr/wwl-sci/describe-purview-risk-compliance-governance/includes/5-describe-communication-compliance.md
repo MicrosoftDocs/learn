@@ -22,9 +22,9 @@ Some important compliance areas where communication compliance policies can assi
 
 Communication compliance is a powerful tool that can help maintain and safeguard your staff your data and your organization.
 
-### Integration with Microsoft Copilot for Security
+### Integration with Microsoft Security Copilot
 
-Microsoft Purview Communication Compliance supports integration with Microsoft Copilot for Security, through the embedded experience. Users whose organization has been onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and have the appropriate role permissions can experience Copilot integration through the following supported capabilities:
+Microsoft Purview Communication Compliance supports integration with Microsoft Security Copilot, through the embedded experience. Users whose organization has been onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and have the appropriate role permissions can experience Copilot integration through the following supported capabilities:
 
 - Get a contextual summary of a message and its attachments in the context of classifier conditions that flagged the message.
 - Ask follow-up contextual questions about the message and its attachments.

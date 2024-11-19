@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
-title: Exercise - Create a quantum random number generator
+title: Exercise Part 2 - Create a quantum random number generator
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true

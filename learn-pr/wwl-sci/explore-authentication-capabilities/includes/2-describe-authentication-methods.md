@@ -35,7 +35,7 @@ Microsoft Entra ID provides ways to natively authenticate using passwordless met
 
 The following video explains the problem with passwords, and why passwordless authentication is so important.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zhD7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=610f636e-296e-4147-950b-cb944f903533]
 
 #### Windows Hello for Business 
 Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This two-factor authentication is a combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). PIN entry and biometric gesture both trigger the use of the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
