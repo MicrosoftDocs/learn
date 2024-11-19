@@ -27,22 +27,6 @@ These features enable scenarios such as querying Parquet, CSV, and Delta tables 
 | [**External file format**](/sql/t-sql/statements/create-external-file-format-transact-sql?azure-portal=true) | This capability lets you specify the format of external files, such as Parquet, CSV, and Delta files. | ```CREATE EXTERNAL FILE FORMAT MyFileFormat WITH ( FORMAT_TYPE = DELIMITEDTEXT, FORMAT_OPTIONS ( FIELD_TERMINATOR = ',', STRING_DELIMITER = '"' ) ); ``` |
 | [**External table**](/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true) | This allows you to create tables that reference data stored outside the SQL database. | ```CREATE EXTERNAL TABLE MyExternalTable ( Column1 INT, Column2 NVARCHAR(50) ) WITH ( LOCATION = 'myfolder/myfile.csv', DATA_SOURCE = MyExternalDataSource, FILE_FORMAT = MyFileFormat ); ``` |
 
-### Query public datasets
-
-In this example, we use `OPENROWSET` to query public datasets. The `OPENROWSET` function allows you to access and read the content of files stored in a specific Azure Blob Storage path.
-
-```sql
-SELECT TOP 100 *
-FROM OPENROWSET 
-(BULK 'abs://citydatacontainer@azureopendatastorage.blob.core.windows.net/Safety/Release/city=Seattle/*.parquet'
-, FORMAT = 'PARQUET') 
-AS [Seattle_Dataset]
-```
-
-The `FORMAT = 'PARQUET'` option indicates that the files are in Parquet format, which is a columnar storage file format optimized for performance.
-
-To see a list of public datasets, see [What are Azure Open Datasets and how can you use them?](/azure/open-datasets/overview-what-are-open-datasets?azure-portal=true).
-
 ### Query Parquet files in OneLake
 
 In this example, we use `OPENROWSET` to query Parquet files in OneLake. You can find the ABFS path by navigating to the file location in the Fabric portal, selecting the three dots next to the file, and selecting **Properties**.
