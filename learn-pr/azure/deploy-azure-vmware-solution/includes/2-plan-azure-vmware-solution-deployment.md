@@ -27,7 +27,7 @@ Factor in the following Azure components before Azure VMware Solution deployment
 | Resource group | Create a new resource group or reuse an existing one. |
 | Region | Decide on deployment region. |
 | Host location (Availability Zone Deployment) | Select all hosts in one availability zone for a standard private cloud. Or select hosts in two availability zones for stretched clusters. |
-| Resource name | Provide the name of your Azure VMware Soltion private cloud. |
+| Resource name | Provide the name of your Azure VMware Solution private cloud. |
 | Host size | Select the host size from 4 available SKUs: <br>- AV36: 36 cores, 576 GB of RAM, 15.20 TB of raw storage capacity, and a 3.2 TB NVMe cache. <br>- AV36P: 36 cores, 768 GB of RAM, 19.20 TB of raw storage capacity, and 1.5 TB Intel cache. <br>- AV52: 52 cores, 1,536 GB of RAM, 38.40 TB of raw storage capacity, and 1.5 TB Intel cache. <br>- AV64*: 64 cores, 1,024 GB of RAM, 15.36 TB of raw storage capacity, and 3.84 TB NVMe cache. |
 | Node count | The minimum number of hosts is 3. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks. |
 | Address block for private cloud | Provide an IP address block for the private cloud. The CIDR represents the private cloud management network and is used for the cluster management services like, vCenter Server and NSX-T Manager. Use a /22 address space, for example: 10.175.0.0/22. The address should be unique and not overlap with other Azure Virtual Networks or on-premises networks. |
@@ -65,8 +65,8 @@ There are two types of sizing criteria to create Azure VMware Solution assessmen
 
 | Assessment type   | Details | Data |
 | :---------- | :------ | :--- |
-| Performance-based | Assess performance data of on-premises VMs. | Recommended node size is based on CPU, memory usage, node type, storage type, and failures to tolerate (FTT). |
-| As on-premises | Assess on-premises sizing. | Recommended node size is based on the on-premises VM size along with node type, storage type, and failures to tolerate (FTT).
+| Performance-based | Assess performance data of on-premises VMs. This can run for a period of time to collect; daily, weekly, and monthly performance patterns. | Recommended node size is based on CPU, memory usage, node type, storage type, and failures to tolerate (FTT). |
+| As is on-premises | Assess on-premises VM sizing. This is a point in time export of the vSphere configuration. | Recommended node size is based on the on-premises VM size along with node type, storage type, and failures to tolerate (FTT). |
 
 To do the assessment:
 
