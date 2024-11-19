@@ -23,10 +23,10 @@ quiz:
       explanation: "Correct. NAT enables internal resources to share an IP address for communication with Internet resources."
     - content: "NAT allows you to assign multiple private IPv4 addresses to a single virtual machine."
       isCorrect: false
-      explanation: "Incorrect. You can assign multiple IPv4 addresses to a single virtual machine, but the NAT service isn't used for this."
+      explanation: "Incorrect. You can assign multiple IPv4 addresses to a single virtual machine, but the NAT service isn't used."
     - content: "NAT enables you to configure an external IPv4 address on each individual virtual machine."
       isCorrect: false
-      explanation: "Incorrect. The NAT service is configured as a gateway, providing shared IPv4 address(es) for internal resources. It isn't configured on individual virtual machines."
+      explanation: "Incorrect. The NAT service is configured as a gateway, providing shared IPv4 addresses for internal resources. It isn't configured on individual virtual machines."
   - content: "How does NAT scale to support dynamic workloads?"
     choices:
     - content: "NAT supports up to four public IP addresses."

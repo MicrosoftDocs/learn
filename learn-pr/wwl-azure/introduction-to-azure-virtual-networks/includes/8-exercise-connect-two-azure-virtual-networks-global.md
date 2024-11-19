@@ -8,13 +8,13 @@ In this lab, you configure connectivity between the CoreServicesVnet and the Man
 
 ## Objectives
 
-- **Task 1**: Create a Virtual Machine to test the configuration.
+- **Task 1**: Deploy the infrastructure.  
   - Use a template to create the virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Allfiles/Exercises/M01/ManufacturingVMazuredeploy.json).
   - Use Azure PowerShell to deploy the template.
-- **Task 2**: Connect to the **Test VMs** using RDP.
-- **Task 3**: Test the connection between the VMs.
-- **Task 4**: Create VNet peerings between **CoreServicesVnet** and **ManufacturingVnet**.
-- **Task 5**: Test the connection between the VMs.
+- **Task 2**: Use RDP to connect to the test virtual machines. 
+- **Task 3**: Test the connection between the virtual machines. 
+- **Task 4**: Create VNet peerings.
+- **Task 5**: Retest the connection between the virtual machines.
 
 > [!NOTE]
 > Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.

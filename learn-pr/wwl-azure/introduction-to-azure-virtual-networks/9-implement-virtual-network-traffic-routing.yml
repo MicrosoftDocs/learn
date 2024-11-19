@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Configure every resource with a static IP address."
       isCorrect: false
-      explanation: "Incorrect. This wouldn't provide the solution to the existing problems and would be extremely time consuming."
+      explanation: "Incorrect. There is a better solution."
     - content: "View the effective routes for each NIC. (UDR)"
       isCorrect: true
-      explanation: "Correct. You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources."
+      explanation: "Correct. You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC."
     - content: "Use forced tunneling to control traffic flow."
       isCorrect: false
       explanation: "Incorrect. Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing."

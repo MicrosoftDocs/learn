@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Standard Public IPs are Dynamically allocated."
       isCorrect: false
-      explanation: "That's incorrect, Standard SKU public IP addresses always use the static allocation method."
+      explanation: "Incorrect. Standard SKU public IP addresses always use the static allocation method."
     - content: "Basic Public IPs are supported in Availability Zones."
       isCorrect: false
-      explanation: "That's incorrect, Basic Public IPs aren't supported in Availability Zones."
+      explanation: "Incorrect. Basic Public IPs aren't supported in Availability Zones."
     - content: "Public IP addresses allow Internet resources to communicate inbound to Azure resources."
       isCorrect: true
-      explanation: "That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource."
+      explanation: "Correct. An IP address is assigned from a pool of available addresses, based on the location of the resource."
