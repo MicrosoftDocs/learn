@@ -79,7 +79,7 @@ Most workflows need to run different actions, based on the data that needs proce
 
 - The *Condition* action, which is controlled by a Boolean expression.
 - The *Switch* action, which is controlled by cases and a default case.
-- The *until* and *for each* loop actions, which repeat actions and are controlled by Boolean expressions.
+- The *Until* and *For each* loop actions, which repeat actions and are controlled by Boolean expressions.
 - Unconditional **parallel branch** instructions.
 
 The following diagram shows how to use the **Condition** action in the workflow for the industry news monitoring app:
