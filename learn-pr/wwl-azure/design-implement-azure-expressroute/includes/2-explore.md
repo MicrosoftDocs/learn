@@ -26,7 +26,7 @@ Azure ExpressRoute is used to create private connections between Azure datacente
 
 There are several ways to connect an on-premises network and the Microsoft cloud: CloudExchange Colocation, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct. Connectivity providers may offer one or more connectivity models.
 
-:::image type="content" source="../media/expressroute-connectivity-models-diagram-d3bd1d21.png" alt-text="ExpressRoute connectivity models":::
+:::image type="content" source="../media/expressroute-connectivity-models-diagram-d3bd1d21.png" alt-text="Diagram of the ExpressRoute connectivity models.":::
 
 
 **Co-located at a cloud exchange**
@@ -101,14 +101,14 @@ You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](/azur
 
 To automatically deploy your virtual network gateways across availability zones, you can use zone-redundant virtual network gateways. With zone-redundant gateways, you can benefit from zone-resiliency to access your mission-critical, scalable services on Azure.
 
-:::image type="content" source="../media/zone-redundant-07ede6af.png" alt-text="Zone redundant gateways layout":::
+:::image type="content" source="../media/zone-redundant-07ede6af.png" alt-text="Diagram of the zone redundant gateways layout.":::
 
 
 **Zonal gateways**
 
 To deploy gateways in a specific zone, you can use zonal gateways. When you deploy a zonal gateway, all instances of the gateway are deployed in the same Availability Zone.
 
-:::image type="content" source="../media/zonal-d0bfecdb.png" alt-text="Zonal gateways layout":::
+:::image type="content" source="../media/zonal-d0bfecdb.png" alt-text="Diagram of the zonal only gateway layout.":::
 
 
 **Gateway SKUs**

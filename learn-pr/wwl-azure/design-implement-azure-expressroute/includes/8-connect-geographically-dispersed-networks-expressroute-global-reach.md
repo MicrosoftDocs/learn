@@ -42,11 +42,11 @@ ExpressRoute Direct provides customers the opportunity to connect directly into 
 
 ExpressRoute is a private and resilient way to connect your on-premises networks to the Microsoft Cloud. You can access many Microsoft cloud services such as Azure and Microsoft 365 from your private data center or your corporate network. For example, you might have a branch office in San Francisco and another branch office in London. Both branch offices have high-speed connectivity to Azure resources in US West and UK South. However, the branch offices can't connect and send data directly with one another. In other words, 10.0.1.0/24 can send data to 10.0.3.0/24 and 10.0.4.0/24 network, but NOT to 10.0.2.0/24 network.
 
-:::image type="content" source="../media/global-reach-5558594f.png" alt-text="GlobalReach layout diagram":::
+:::image type="content" source="../media/global-reach-5558594f.png" alt-text="Diagram of the GlobalReach layout.":::
 
 
 ## Choose when to use ExpressRoute global reach
 
 ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world. 
 
-:::image type="content" source="../media/global-reach-usecase-563b9539.png" alt-text="Global Reach layout with local providers for connectivity to global network":::
+:::image type="content" source="../media/global-reach-usecase-563b9539.png" alt-text="Diagram of the Global Reach layout with local providers.":::

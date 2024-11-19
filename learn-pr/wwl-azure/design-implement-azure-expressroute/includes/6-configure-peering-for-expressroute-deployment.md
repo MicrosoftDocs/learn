@@ -2,7 +2,7 @@
 
 An ExpressRoute circuit has two peering options associated with it: Azure private, and Microsoft. Each peering is configured identically on a pair of routers (in active-active or load sharing configuration) for high availability. Azure services are categorized as Azure public and Azure private to represent the IP addressing schemes.
 
-:::image type="content" source="../media/expressroute-peerings-31290ff8.png" alt-text="ExpressRoute peerings use cases":::
+:::image type="content" source="../media/expressroute-peerings-31290ff8.png" alt-text="Diagram of ExpressRoute peering use cases.":::
 
 
 **Create Peering configuration**
