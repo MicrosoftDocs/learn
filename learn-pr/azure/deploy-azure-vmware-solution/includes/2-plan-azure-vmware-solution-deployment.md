@@ -1,20 +1,21 @@
-Azure VMware Solution delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed by using the Azure portal, the Azure CLI, or Azure PowerShell. Azure VMware Solution includes VMware vSphere, vCenter, vSAN, HCX, and NSX software. 
+Azure VMware Solution delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed by using the Azure portal, the Azure CLI, or Azure PowerShell. Azure VMware Solution includes VMware ESXi, vCenter Server, vSAN, HCX, and NSX-T Data Center software. 
 
-Azure VMware Solution private-cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.
+Azure VMware Solution private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.
 
 :::image type="content" source="../media/2-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.":::
 
-Your company can use Azure VMware Solution to run native VMware workloads on Azure. VMs can be migrated directly from the on-premises VMware environment to Azure VMware Solution. The VMs in Azure VMware Solution run like VMs do on-premises.
+Your company can use Azure VMware Solution to run native VMware workloads on Azure. Virtual machines (VMs) can be migrated directly from the on-premises VMware environment to Azure VMware Solution. The VMs in Azure VMware Solution run like VMs do on-premises.
 
 Before you deploy Azure VMware Solution, you need to plan the deployment:
 
 - Evaluate required Azure components
 - Review subscription-eligibility criteria
-- Open a support ticket
+- Open a support ticket to request quota
 - Register the resource provider
 - Assess the migration pattern by using Azure Migrate
 - Review the Azure VMware Solution assessment
-- Evaluate the Azure VMware Solution solution components
+- Evaluate the Azure VMware Solution components
+- Decide on the host type and size of deployment
 
 ## Evaluate required Azure components
 
@@ -24,13 +25,17 @@ Factor in the following Azure components before Azure VMware Solution deployment
 | :---------- | :------------------ |
 | Subscription | Create a new subscription or reuse an existing one. |
 | Resource group | Create a new resource group or reuse an existing one. |
-| Region | Azure VMware Solution is available globally. |
-| Resource name | The Azure VMware Solution resource name can't be longer than 14 characters. If it's longer than that, public IP addresses cannot be created to use with Azure VMware Solution. |
-| Host size | Host instance size is AV36: 36 cores, 576 GB of RAM, 15.36 TB of raw storage capacity, and a 3.2-TB NVMe cache.
-| Node count | The minimum number of hosts is three. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
-| Azure virtual network | Create a new Azure virtual network or reuse an existing one.
-| Azure Bastion | Create a platform-as-a-service (PaaS) resource that provides seamless Remote Desktop Protocol (RDP) access to a jump host.
-| Jump host | Create an Azure VM (server or desktop) to use to access the vSphere environment after deployment.
+| Region | Decide on deployment region. |
+| Host location (Availability Zone Deployment) | Select all hosts in one availability zone for a standard private cloud. Or select hosts in two availability zones for stretched clusters. |
+| Resource name | Provide the name of your Azure VMware Soltion private cloud. |
+| Host size | Select the host size from 4 available SKUs: <br>- AV36: 36 cores, 576 GB of RAM, 15.20 TB of raw storage capacity, and a 3.2 TB NVMe cache. <br>- AV36P: 36 cores, 768 GB of RAM, 19.20 TB of raw storage capacity, and 1.5 TB Intel cache. <br>- AV52: 52 cores, 1,536 GB of RAM, 38.40 TB of raw storage capacity, and 1.5 TB Intel cache. <br>- AV64*: 64 cores, 1,024 GB of RAM, 15.36 TB of raw storage capacity, and 3.84 TB NVMe cache. |
+| Node count | The minimum number of hosts is 3. <br>The maximum number of hosts is 16 per vSphere cluster. <br>The maximum number of clusters in an Azure private cloud instance is 12. <br>The maximum number of nodes in an Azure private cloud instance is 96. <br>Clusters can be extended or shrunk as needed. <br>Minimum and maximum nodes need to be factored in as the environment extends or shrinks. |
+| Address block for private cloud | Provide an IP address block for the private cloud. The CIDR represents the private cloud management network and is used for the cluster management services like, vCenter Server and NSX-T Manager. Use a /22 address space, for example: 10.175.0.0/22. The address should be unique and not overlap with other Azure Virtual Networks or on-premises networks. |
+| Azure virtual network (Optional) | Create a new Azure virtual network or reuse an existing one. |
+| Azure Bastion (Optional) | Create a platform-as-a-service (PaaS) resource that provides seamless Remote Desktop Protocol (RDP) access to a jump host. |
+| Jumpbox VM (Optional) | Create an Azure VM (server or desktop) to use to access the vSphere environment after deployment. |
+
+(*) An Azure VMware Solution private cloud deployed with AV36, AV36P, or AV52 is required prior to adding AV64 hosts. 
 
 ## Review subscription-eligibility criteria
 
@@ -54,7 +59,7 @@ You must register the Microsoft.Azure VMware Solution resource provider before y
 
 ## Assess the migration pattern by using Azure Migrate
 
-Use Azure Migrate to assess the on-premises VMware environment for Azure VMware Solution readiness. First, set up the Azure Migrate appliance for VMware. The appliance will then discover on-premises VMs. The appliance sends metadata and performance information to the Azure Migrate project.
+Use Azure Migrate to assess the on-premises VMware vSphere environment for Azure VMware Solution readiness. First, set up the Azure Migrate appliance for VMware. The appliance will then discover on-premises VMs. The appliance sends metadata and performance information to the Azure Migrate project.
 
 There are two types of sizing criteria to create Azure VMware Solution assessments within the Azure Migrate project:
 
