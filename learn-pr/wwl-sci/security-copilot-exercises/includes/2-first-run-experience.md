@@ -1,14 +1,16 @@
-The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO determined that deploying Microsoft Copilot for Security is a key step towards that objective. As the Security administrator for your organization, you're tasked with setting up Copilot.
+The organization you work for wants to increase the efficiency and capabilities of its security analyst to improve security outcomes. In support of that objective, the office of the CISO determined that deploying Microsoft Security Copilot is a key step towards that objective. As the Security administrator for your organization, you're tasked with setting up Copilot.
 
-In this exercise, you go through the first run experience of Microsoft Copilot for Security to provision Copilot with one security compute unit (SCU).
+In this exercise, you go through the first run experience of Security Copilot to provision Copilot with one security compute unit (SCU).
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Security Copilot.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -54,12 +56,12 @@ As an owner to the Azure subscription, you'll now be able to provision capacity 
 
 In this task, you go through the steps of provisioning capacity for your organization. There are two options for provisioning capacity:
 
-- Provision capacity within Copilot for Security (recommended)
+- Provision capacity within Security Copilot (recommended)
 - Provision capacity through Azure
 
-For this exercise, you provision capacity through Copilot for Security. When you first open Copilot for Security, a wizard guides you through the steps in setting up capacity for your organization.
+For this exercise, you provision capacity through Security Copilot. When you first open Security Copilot, a wizard guides you through the steps in setting up capacity for your organization.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Follow the steps in the Wizard, select **Get started**.
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
@@ -83,4 +85,4 @@ For this exercise, you provision capacity through Copilot for Security. When you
 
 #### Review
 
-In this exercise, you successfully provisioned Copilot for Security. You're now ready to move to the next exercise where you'll explore the core functionality of Microsoft Copilot for Security.
+In this exercise, you successfully provisioned Security Copilot. You're now ready to move to the next exercise where you'll explore the core functionality of Microsoft Security Copilot.

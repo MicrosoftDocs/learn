@@ -4,7 +4,7 @@ Costs are organized by different Azure entity hierarchies. It's important to und
 
 Two hierarchies are applicable to Microsoft Cost Management. Each node in either hierarchy is known as a *scope*. The scope that you select determines the group of costs that apply to the Cost Management tools that you use.
 
-The Azure *billing hierarchy* is in your partner tenant. Cost Management uses the billing hierarchy specifically to manage your organization's billing data and invoices. Cost Management uses the billing hierarchy's permission roles to manage payments, costs, and accounts. The permission roles are *global admin* and *admin agent* for a direct partner or an indirect partner, as set in Partner Center.
+The Azure *billing hierarchy* is in your partner tenant. Cost Management uses the billing hierarchy specifically to manage your organization's billing data and invoices. Cost Management uses the billing hierarchy's permission roles to manage payments, costs, and accounts. The permission roles are *admin agent* and [billing administrator](/partner-center/account-settings/permissions-overview#billing-admin-role) for a direct partner or an indirect partner, as set in Partner Center.
 
 Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Resource management and the associated permissions are governed by Azure role-based access control (RBAC).
 

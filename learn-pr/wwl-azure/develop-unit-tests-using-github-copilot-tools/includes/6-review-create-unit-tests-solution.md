@@ -23,7 +23,7 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Name the project **BankAccount.UnitTests**.
 
-1. Save the project to the default location.
+1. Create the project using the default location.
 
 1. Delete the UnitTest1.cs file.
 
@@ -33,7 +33,7 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Build the solution.
 
-### Create unit tests for the `BankAccount` class using inline chat
+### Create unit tests for the `BankAccount` class using the Chat view
 
 1. Open the BankAccount.cs file.
 
@@ -41,27 +41,38 @@ The following sections show one possible solution for the challenge from the pre
 
     You could select a single method that you want to test, but that can lead to issues when GitHub Copilot generates the tests. By selecting the entire class, you help GitHub Copilot understand the context of the code you're working on. Your prompt can still specify unit tests for a specific method.
 
-1. Enter one of the following prompts:
+1. Open the Chat view.
 
-    For an inline chat, enter a prompt similar to one of the following prompts:
+1. Use the Attach Context button to add BankAccountTests.cs and BankAccount.UnitTests.csproj the Chat context.
 
-    ```plaintext
-    #selection Generate xUnit unit tests for the Credit method. Show the unit tests without the surrounding class.
-    #selection Generate xUnit unit tests for the selected methods. Show the unit tests without the surrounding class.
+1. In the Chat view, select **/tests add unit tests for my code**
+
+1. In the Chat view, select **Apply Edits**.
+
+1. On the **File** menu, select **Save As**, and then navigate to the BankAccount.UnitTests folder.
+
+1. Select **BankAccountTests.cs**, and then select **Save**.
+
+1. When prompted to overwrite the existing file, select **Yes**.
+
+1. Ensure that the BankAccountTests class includes a private readonly field _bankAccount of type BankAccount.
+
+    A private readonly field _bankAccount of type BankAccount is required. This field is used to hold an instance of the BankAccount class that will be used across multiple test methods within the BankAccountTests class.
+
+    For example:
+
+    ```csharp
+    private readonly BankAccount _bankAccount;
+
+    public BankAccountTests()
+    {
+        _bankAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+    }
     ```
 
-    For the Chat view, enter a prompt similar to one of the following prompts:
+1. Rebuild the solution to ensure that the tests are built and recognized within the Visual Studio Code environment.
 
-    ```plaintext
-    @workspace #selection Generate xUnit unit tests for the Credit method. Show the unit tests without the surrounding class.
-    @workspace #selection Generate xUnit unit tests for the selected methods. Show the unit tests without the surrounding class.
-    ```
-
-    If you ask GitHub Copilot to generate tests for all the methods, you generally get fewer tests per method than if you ask for tests for a specific method. You can ask for edge cases to be included in the initial prompt, but sometimes it's better to run two prompts that are more focused, than one prompt that tries to do everything.
-
-1. Review the generated unit test code, and then insert the tests to the BankAccountTests.cs file.
-
-1. Save the file, and then build the solution to verify that the tests are built and recognized within the Visual Studio Code environment.
+### Create unit tests for edge cases using the Chat view
 
 1. Open the BankAccountTests.cs file.
 
@@ -69,27 +80,97 @@ The following sections show one possible solution for the challenge from the pre
 
 1. Open the Chat view.
 
+1. Use the Attach Context button to add BankAccount.cs to the Chat context.
+
 1. Enter a prompt similar to the following prompt:
 
     ```plaintext
     @workspace #selection Are there edge case unit tests for the BankAccount class that are missing? If so, generate the edge case unit tests. Show the unit tests without the surrounding class.
     ```
 
-1. Review the generated edge case unit test code, and then insert the tests to the BankAccountTests.cs file.
+1. In the Chat view, review the edge case unit tests suggested by GitHub Copilot.
 
-1. Save the file, and then build the solution to verify that the tests are built and recognized within the Visual Studio Code environment.
-
-1. To repeat the process of generating edge case unit tests for the `BankAccount` class, enter a prompt similar to the following prompt:
-
-    ```plaintext
-    @workspace #selection Are there edge case unit tests for the BankAccount class that are missing? If so, generate the edge case unit tests. Show the unit tests without the surrounding class.
+    ```csharp
+    [Fact]
+    public void Credit_ShouldThrowExceptionForNegativeAmount()
+    {
+        // Arrange
+        var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+        var amount = -500.0;
+    
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => account.Credit(amount));
+    }
+    
+    [Fact]
+    public void Debit_ShouldThrowExceptionForNegativeAmount()
+    {
+        // Arrange
+        var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+        var amount = -500.0;
+    
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => account.Debit(amount));
+    }
+    
+    [Fact]
+    public void Transfer_ShouldThrowExceptionForNegativeAmount()
+    {
+        // Arrange
+        var fromAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+        var toAccount = new BankAccount("654321", 500.0, "Jane Doe", "Savings", DateTime.Now);
+        var amount = -200.0;
+    
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => fromAccount.Transfer(toAccount, amount));
+    }
+    
+    [Fact]
+    public void Transfer_ShouldThrowExceptionForSameAccount()
+    {
+        // Arrange
+        var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+        var amount = 200.0;
+    
+        // Act & Assert
+        Assert.Throws<InvalidOperationException>(() => account.Transfer(account, amount));
+    }
+    
+    [Fact]
+    public void CalculateInterest_ShouldReturnZeroForZeroBalance()
+    {
+        // Arrange
+        var account = new BankAccount("123456", 0.0, "John Doe", "Savings", DateTime.Now);
+        var interestRate = 0.05;
+    
+        // Act
+        var interest = account.CalculateInterest(interestRate);
+    
+        // Assert
+        Assert.Equal(0.0, interest);
+    }
+    
+    [Fact]
+    public void CalculateInterest_ShouldThrowExceptionForNegativeInterestRate()
+    {
+        // Arrange
+        var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+        var interestRate = -0.05;
+    
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => account.CalculateInterest(interestRate));
+    }
     ```
 
-1. Review the generated edge case unit test code, and then insert the tests to the BankAccountTests.cs file.
+1. Add the edge case unit tests to the BankAccountTests.cs file.
 
 1. Save the file, and then build the solution to verify that the tests are built and recognized within the Visual Studio Code environment.
 
-1. Select the entire contents of the BankAccountTests.cs file, including the using and namespace located above the class.
+1. Verify that you've created at least 12 unique xUnit unit tests.
+
+    If you haven't reached the challenge requirements, repeat the process of generating edge case unit tests for the `BankAccount` class.
+
+1. Select the entire contents of the BankAccountTests.cs file.
 
 1. Open an inline chat session, and then enter a prompt similar to the following prompt:
 
@@ -97,6 +178,238 @@ The following sections show one possible solution for the challenge from the pre
     #selection arrange the unit tests in order by the method that they are testing
     ```
 
-1. Review the generated code, and then Accept the suggested update.
+1. Review and then Accept the suggested updates.
 
-1. Save the file, and then build the solution to verify that the tests are built and recognized within the Visual Studio Code environment.
+    Your BankAccountTests.cs file should resemble the following code snippet:
+
+    ```csharp
+    using System;
+    using Xunit;
+    using BankAccountApp;
+    
+    namespace BankAccountApp.UnitTests
+    {
+        public class BankAccountTests
+        {
+    
+            private readonly BankAccount _bankAccount;
+    
+            public BankAccountTests()
+            {
+                _bankAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+            }
+    
+            [Fact]
+            public void Constructor_ShouldInitializeProperties()
+            {
+                // Arrange
+                var accountNumber = "123456";
+                var initialBalance = 1000.0;
+                var accountHolderName = "John Doe";
+                var accountType = "Savings";
+                var dateOpened = DateTime.Now;
+    
+                // Act
+                var account = new BankAccount(accountNumber, initialBalance, accountHolderName, accountType, dateOpened);
+    
+                // Assert
+                Assert.Equal(accountNumber, account.AccountNumber);
+                Assert.Equal(initialBalance, account.Balance);
+                Assert.Equal(accountHolderName, account.AccountHolderName);
+                Assert.Equal(accountType, account.AccountType);
+                Assert.Equal(dateOpened, account.DateOpened);
+            }
+    
+            [Fact]
+            public void Credit_ShouldIncreaseBalance()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = 500.0;
+    
+                // Act
+                account.Credit(amount);
+    
+                // Assert
+                Assert.Equal(1500.0, account.Balance);
+            }
+    
+            [Fact]
+            public void Credit_ShouldThrowExceptionForNegativeAmount()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = -500.0;
+    
+                // Act & Assert
+                Assert.Throws<ArgumentException>(() => account.Credit(amount));
+            }
+    
+            [Fact]
+            public void Debit_ShouldDecreaseBalance()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = 500.0;
+    
+                // Act
+                account.Debit(amount);
+    
+                // Assert
+                Assert.Equal(500.0, account.Balance);
+            }
+    
+            [Fact]
+            public void Debit_ShouldThrowExceptionForInsufficientBalance()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = 1500.0;
+    
+                // Act & Assert
+                Assert.Throws<Exception>(() => account.Debit(amount));
+            }
+    
+            [Fact]
+            public void Debit_ShouldThrowExceptionForNegativeAmount()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = -500.0;
+    
+                // Act & Assert
+                Assert.Throws<ArgumentException>(() => account.Debit(amount));
+            }
+    
+            [Fact]
+            public void GetBalance_ShouldReturnCorrectBalance()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+    
+                // Act
+                var balance = account.GetBalance();
+    
+                // Assert
+                Assert.Equal(1000.0, balance);
+            }
+    
+            [Fact]
+            public void Transfer_ShouldTransferAmount()
+            {
+                // Arrange
+                var fromAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var toAccount = new BankAccount("654321", 500.0, "Jane Doe", "Savings", DateTime.Now);
+                var amount = 200.0;
+    
+                // Act
+                fromAccount.Transfer(toAccount, amount);
+    
+                // Assert
+                Assert.Equal(800.0, fromAccount.Balance);
+                Assert.Equal(700.0, toAccount.Balance);
+            }
+    
+            [Fact]
+            public void Transfer_ShouldThrowExceptionForInsufficientBalance()
+            {
+                // Arrange
+                var fromAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var toAccount = new BankAccount("654321", 500.0, "Jane Doe", "Savings", DateTime.Now);
+                var amount = 1500.0;
+    
+                // Act & Assert
+                Assert.Throws<Exception>(() => fromAccount.Transfer(toAccount, amount));
+            }
+    
+            [Fact]
+            public void Transfer_ShouldThrowExceptionForExceedingTransferLimit()
+            {
+                // Arrange
+                var fromAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var toAccount = new BankAccount("654321", 500.0, "Jane Doe", "Savings", DateTime.Now);
+                var amount = 600.0;
+    
+                // Act & Assert
+                Assert.Throws<Exception>(() => fromAccount.Transfer(toAccount, amount));
+            }
+    
+            [Fact]
+            public void Transfer_ShouldThrowExceptionForNegativeAmount()
+            {
+                // Arrange
+                var fromAccount = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var toAccount = new BankAccount("654321", 500.0, "Jane Doe", "Savings", DateTime.Now);
+                var amount = -200.0;
+    
+                // Act & Assert
+                Assert.Throws<ArgumentException>(() => fromAccount.Transfer(toAccount, amount));
+            }
+    
+            [Fact]
+            public void Transfer_ShouldThrowExceptionForSameAccount()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var amount = 200.0;
+    
+                // Act & Assert
+                Assert.Throws<InvalidOperationException>(() => account.Transfer(account, amount));
+            }
+    
+            [Fact]
+            public void CalculateInterest_ShouldReturnCorrectInterest()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var interestRate = 0.05;
+    
+                // Act
+                var interest = account.CalculateInterest(interestRate);
+    
+                // Assert
+                Assert.Equal(50.0, interest);
+            }
+    
+            [Fact]
+            public void CalculateInterest_ShouldReturnZeroForZeroBalance()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 0.0, "John Doe", "Savings", DateTime.Now);
+                var interestRate = 0.05;
+    
+                // Act
+                var interest = account.CalculateInterest(interestRate);
+    
+                // Assert
+                Assert.Equal(0.0, interest);
+            }
+    
+            [Fact]
+            public void CalculateInterest_ShouldThrowExceptionForNegativeInterestRate()
+            {
+                // Arrange
+                var account = new BankAccount("123456", 1000.0, "John Doe", "Savings", DateTime.Now);
+                var interestRate = -0.05;
+    
+                // Act & Assert
+                Assert.Throws<ArgumentException>(() => account.CalculateInterest(interestRate));
+            }
+        }
+    
+    }
+    ```
+
+1. Save the file, and then rebuild the solution.
+
+### Run the unit tests using the Test Explorer
+
+1. Open the Test Explorer view and ensure that at least 12 unit tests are visible in the interface.
+
+1. Select **Run Tests** to run all the tests.
+
+1. Verify that at least one test for each method passes.
+
+    ![Screenshot showing the Test Explorer with test results.](../media/unit-test-challenge-pass-count.png)
+
+Tests that fail can be reviewed to determine is the issue is with the test or the code being tested. In this case, some of the test failures identify opportunities to implement code improvements.

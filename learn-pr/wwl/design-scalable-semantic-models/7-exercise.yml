@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.exercise
+title: Exercise - Design a scalable semantic model
+metadata:
+  title: "Exercise - Design a scalable semantic model"
+  description: "In this exercise, you'll design a scalable semantic model that can be used to create Power BI reports based on enterprise data."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

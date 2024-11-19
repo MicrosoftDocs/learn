@@ -8,10 +8,10 @@ Secure your lakehouse by ensuring that only authorized users can access data. In
 
 You can strategically store different layers of your lakehouse in separate workspaces for improved security and efficient capacity management. This approach not only enhances security but also optimizes cost-effectiveness.
 
-- Security and Access Considerations: Define who needs access at each layer, ensuring only authorized personnel can interact with sensitive data.
-- Gold Layer Access Control: Restrict access to the Gold layer for read-only purposes, emphasizing the importance of minimal permissions.
-- Silver Layer Utilization: Decide whether users will be allowed to build upon the Silver layer, balancing flexibility and security.
-- Bronze Layer Access Control: Restrict access to the Bronze layer for read-only purposes, emphasizing the importance of minimal permissions.
+- **Security and Access Considerations:** Define who needs access at each layer, ensuring only authorized personnel can interact with sensitive data.
+- **Gold Layer Access Control:** Restrict access to the Gold layer for read-only purposes, emphasizing the importance of minimal permissions.
+- **Silver Layer Utilization:** Decide whether users will be allowed to build upon the Silver layer, balancing flexibility and security.
+- **Bronze Layer Access Control:** Restrict access to the Bronze layer for read-only purposes, emphasizing the importance of minimal permissions.
 
 Sharing of Fabric content should be discussed with your organization's security team to ensure that it aligns with your organization's security policies.
 

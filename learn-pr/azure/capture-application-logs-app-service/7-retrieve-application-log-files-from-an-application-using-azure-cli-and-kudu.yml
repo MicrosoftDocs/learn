@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Retrieve Application Log Files using Azure CLI and Kudu
   description: Retrieve Application Log Files using Azure CLI and Kudu
-  ms.date: 08/15/2023
+  ms.date: 11/12/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

@@ -33665,21 +33665,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/4-exercise-digital-estate-assessment.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan",
       "redirect_document_id": false
@@ -34447,6 +34432,36 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/9-summary-resources.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-set-security-event-option-workspace-level.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-configure-log-analytics-agent-workspace.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-create-edit-data-collection-rules-and-associations-in-azure-monitor.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/7-configure-integration-with-the-log-analytics-agent.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/8-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/9-summary.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary",
       "redirect_document_id": false
     }
   ]
