@@ -52,6 +52,7 @@ Monitoring the refresh status of semantic models is essential to ensure data int
 - **Error notifications**: Receive notifications for any refresh failures, allowing you to quickly address issues.
 - **Detailed logs**: Access detailed logs to investigate and resolve any errors that occur during the refresh process.
 
-> [**!Important**] Regularly monitoring the refresh status and addressing any errors promptly is crucial to maintaining the reliability and accuracy of your semantic models.
+> [!Important] 
+> Regularly monitoring the refresh status and addressing any errors promptly is crucial to maintaining the reliability and accuracy of your semantic models.
 
 By applying these features, you can maintain the reliability and accuracy of your semantic models, ensuring that your data-driven insights are always based on the latest information.
