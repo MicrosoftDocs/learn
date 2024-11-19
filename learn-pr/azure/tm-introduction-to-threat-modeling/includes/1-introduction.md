@@ -11,25 +11,25 @@ Systems released without first being threat modeled place your customers and org
 
 Use threat modeling whenever you design new systems or update existing ones. Examples include:
 
-- Creating a new Azure micro-service that reports on your organization's cloud resource usage for budgeting purposes
-- Designing a public API to provide customers access to your data
-- Adding a new feature to an existing application
+- Creating a new Azure micro-service that reports on your organization's cloud resource usage for budgeting purposes.
+- Designing a public API to provide customers access to your data.
+- Adding a new feature to an existing application.
 
 ## Who can threat model
 
 Anyone with a working knowledge of the system and a basic understanding of security can work with threat modeling. This technique can be applied across any:
 
-- Software delivery approach, for example, Agile or Waterfall
-- Deployment cadence, such as hourly, monthly, or annually
+- Software delivery approach, for example, Agile or Waterfall.
+- Deployment cadence, such as hourly, monthly, or annually.
 
 ## Learning objectives
 
-In this module, you explore the four high-level steps of threat modeling and be able to:
+In this module, you explore the four high-level steps of threat modeling so that you can:
 
-- Understand the importance of capturing requirements and assumptions to help create a data-flow diagram
-- Read about the framework that helps you find security issues in a system
-- Learn about the security-control categories that help you reduce or eliminate potential threats
-- Highlight the importance of verifying assumptions, requirements, and fixes before deployment
+- Understand the importance of capturing requirements and assumptions when creating a data-flow diagram.
+- Read about the framework that helps you find security issues in a system.
+- Learn about the security-control categories that help you reduce or eliminate potential threats.
+- Highlight the importance of verifying assumptions, requirements, and fixes before deployment.
 
 ## Prerequisites
 
