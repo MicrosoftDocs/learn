@@ -34708,6 +34708,11 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/5-knowledge-check.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
