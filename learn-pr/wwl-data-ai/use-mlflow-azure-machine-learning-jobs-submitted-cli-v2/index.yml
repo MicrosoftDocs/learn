@@ -32,7 +32,6 @@ products:
 units:
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.manage-models-mlflow
-- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.knowledge-check
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.summary
 badge:
   uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge
