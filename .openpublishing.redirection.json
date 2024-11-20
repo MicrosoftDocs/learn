@@ -34643,6 +34643,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/5-exercise-workspace.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
