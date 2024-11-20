@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.introduction
 - learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.standardize-model-formats-scale-model-deployment-onnx-triton
-- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.exercise-deploy-onnx-model-triton
 - learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.knowledge-check
 - learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.summary
 badge:
