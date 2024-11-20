@@ -34758,6 +34758,11 @@
       "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/3-exercise-create-basic-training-job.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
