@@ -34478,6 +34478,11 @@
       "source_path": "learn-pr/paths/work-compute-azure-machine-learning/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-data-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
