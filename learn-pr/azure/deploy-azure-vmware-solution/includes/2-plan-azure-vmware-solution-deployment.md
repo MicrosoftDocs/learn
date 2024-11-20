@@ -70,21 +70,22 @@ There are two types of sizing criteria to create Azure VMware Solution assessmen
 
 To do the assessment:
 
-1. Choose to **Assess** the environment from within the Azure Migrate project.
-1. In the **Assessment type** dropdown list box, select **Azure VMware Solution (Azure VMware Solution)**.
-1. Provide an **Assessment name** and select the **Assessment properties** you want.
+1. From the Azure Migrate project. In **Servers, databases and web apps > Azure Migrate: discovery and assessment**, select **Assess**.
+1. From the **Assessment type** dropdown list, select **Azure VMware Solution (Azure VMware Solution)**.
+1. In **Discovery Source**, select the applicable discover process (CSV file, RVTools, or Azure Migrate appliance).
 1. Select the **Select machines to assess** tab.
 1. Select **Review + create assessment** to build the assessment.
 
 ## Review the Azure VMware Solution assessment
 
-You can evaluate the assessment in Azure Migrate in the Azure portal after the appliance runs within the on-premises environment. An Azure VMware Solution assessment describes readiness, number of nodes required, and usage across nodes. It also provides a monthly cost estimate.
+You can evaluate the assessment in Azure Migrate in the Azure portal after the appliance runs within the on-premises vSphere environment. An Azure VMware Solution assessment describes readiness, number of nodes required, and usage across nodes. It also provides a monthly cost estimate.
 
 To view the assessment:
 
 1. Go to **Migration goals** > **Servers**.
 1. Select **Assessments** in **Azure Migrate: Server Assessment**.
 1. Select the Azure VMware Solution assessment to open.
+1. Review and edit the assessment settings applicable to your requirements.
 
 The report should look something like this:
 
@@ -105,7 +106,7 @@ The Azure Migrate assessment report will also provide:
 - Overall cost details.
 - A confidence score for migration.
 
-All of this information helps to plan out the Azure VMware Solution environment before a migration of any workloads or applications takes place.
+This information helps to plan out the Azure VMware Solution environment before a migration of any workloads or applications takes place.
 
 ## Evaluate solution components
 
@@ -113,30 +114,31 @@ The last step involves an evaluation of all remaining solution components for an
 
 ### VMware software versions
 
-Here are the VMware software versions used in new deployments of Azure VMware Solution private-cloud clusters:
+Here are the VMware software versions used in new deployments of Azure VMware Solution private cloud clusters:
 
 | Software | Version |
 | :------- | :------ |
-| VCSA/vSphere/vCenter | 7.0 Update 3c |
-| ESXi | 7.0 Update 3c |
-| vSAN | 7.0 Update 3c |
-| NSX-T | 3.2.2 |
+| VCSA/vSphere/vCenter | 7.0 Update 3o |
+| ESXi | 7.0 Update 3o |
+| vSAN | 7.0 Update 3 |
+| NSX | 4.1.1 |
 
 Knowledge of the VMware versions gives customers an understanding of compatibility as it relates to on-premises environments.
 
 ### Host maintenance and lifecycle management
 
-The Azure VMware Solution private-cloud platform includes specific versions of VMware vSphere, ESXi, vSAN, and NSX-T software. The private-cloud software bundle for Azure VMware Solution is validated for use. The software bundle is deployed in new private-cloud installations and for upgrades of existing private clouds.
+The Azure VMware Solution private cloud platform includes specific versions of VMware vCenter Server, ESXi, vSAN, and NSX software. The private-cloud software bundle for Azure VMware Solution is validated for use. The software bundle is deployed in new private cloud installations and for upgrades of existing private clouds.
 
-The upgrade process for lifecycle management doesn't require downtime for private clouds. The upgrade process ensures that each Azure VMware Solution environment automatically uses the latest version of the validated Azure VMware Solution private-cloud software.
+The upgrade process for lifecycle management doesn't require downtime for private clouds. The upgrade process ensures that each Azure VMware Solution environment automatically uses the latest version of the validated Azure VMware Solution private cloud software.
 
 Microsoft applies upgrades and updates on a regular schedule, so private clouds are never more than one version behind the latest release of the validated software bundle. You'll be notified of planned upgrades to the private cloud. You can defer the upgrades if the private cloud is within one version of the latest release.
 
 Critical patches and updates are applied when they're validated. You'll be notified in advance of required critical upgrades. This policy ensures that each private cloud has critical patches and updates applied immediately.
 
-Microsoft is responsible for the lifecycle management of NSX-T appliances, such as NSX-T Manager and NSX-T Edge. Microsoft is also responsible for bootstrapping network configuration, such as creating the Tier-0 gateway and enabling North-South routing. You're responsible for NSX-T SDN configuration. These configurations include network segments, distributed firewall rules, Tier-1 gateways, and load balancers.
+Microsoft is responsible for the lifecycle management of NSX appliances, such as NSX Manager and NSX Edge. Microsoft is also responsible for bootstrapping network configuration, such as creating the Tier-0 gateway and enabling North-South routing. You're responsible for NSX
+ SDN configuration. These configurations include network segments, distributed firewall rules, Tier-1 gateways, and load balancers.
 
-### NSX-T Configuration
+### NSX Configuration
 
 There are two different methods for managing Azure VMware Solution networking and networking services such as DNS, DHCP, and others with NSX-T. You can do configurations in NSX-T Manager or Azure Resource Manager Portal.
 
