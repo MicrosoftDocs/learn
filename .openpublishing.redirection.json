@@ -34548,6 +34548,11 @@
       "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/6-knowledge-check.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/4-optimize-data-loading-preprocessing.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
