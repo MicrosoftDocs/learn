@@ -4127,3 +4127,8 @@ achievements:
   title: Configure network routing and endpoints
   summary: Learn how to configure network routes, including endpoints and private links.
   iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy
+  type: trophy
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
+  iconUrl: /training/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
