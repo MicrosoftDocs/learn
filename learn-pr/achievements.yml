@@ -4177,3 +4177,8 @@ achievements:
   title: Create Azure Machine Learning resources with the CLI (v2)
   summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
   iconUrl: /training/achievements/1-create-azure-machine-learning-resources-with-cli-v2.svg
+- uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.badge
+  type: badge
+  title: Deploy an Azure Machine Learning model to a managed endpoint with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to deploy a machine learning model to a managed online endpoint.
+  iconUrl: /training/achievements/4-deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.svg
