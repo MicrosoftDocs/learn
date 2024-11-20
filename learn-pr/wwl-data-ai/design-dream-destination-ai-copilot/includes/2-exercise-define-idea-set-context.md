@@ -53,9 +53,9 @@ Determine a core idea to focus on. Imagine a place you know well, but with a twi
 
 Start with an idea of a place that you want to re-imagine. Your idea should have three key elements:
 
-1. A common place
-2. A theme and or aesthetic
-3. A location
+- A common place
+- A theme and or aesthetic
+- A location
 
 Examples of common places:
 

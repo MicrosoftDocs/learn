@@ -20,9 +20,9 @@ This part of the project work is called The Entrance.
 **Sample response**:
 
 > I’ve got you covered. The entrance will set the stage for the entire experience, so here are three immersive ideas:
-> 1. **Mysterious Forest Path**: Guests begin their journey by stepping onto a winding,lantern-lit path through the dense forest. As they walk, subtle soundscapes of nature and whispers of the forest creatures guide them. The path is lined with ancient, moss-covered trees, creating a sense of stepping into a hidden realm.
->  2. **Hidden Door**: A giant hollow log that serves as a slide that takes visitors to the base of the tree, where they can climb up a rope ladder or a spiral staircase.
->  3. **Hidden Ladder Gateway**: To heighten the sense of adventure, guests discover a concealed ladder camouflaged within the thick foliage. Climbing up, they feel the anticipation build as they leave the ground behind and ascend into the trees. At the top, a small wooden platform welcomes them, offering a glimpse of the treetop restaurant nestled above.
+> - **Mysterious Forest Path**: Guests begin their journey by stepping onto a winding,lantern-lit path through the dense forest. As they walk, subtle soundscapes of nature and whispers of the forest creatures guide them. The path is lined with ancient, moss-covered trees, creating a sense of stepping into a hidden realm.
+> - **Hidden Door**: A giant hollow log that serves as a slide that takes visitors to the base of the tree, where they can climb up a rope ladder or a spiral staircase.
+> - **Hidden Ladder Gateway**: To heighten the sense of adventure, guests discover a concealed ladder camouflaged within the thick foliage. Climbing up, they feel the anticipation build as they leave the ground behind and ascend into the trees. At the top, a small wooden platform welcomes them, offering a glimpse of the treetop restaurant nestled above.
 
 > [!TIP]
 > Remember that you can ask Copilot to refine the ideas or generate more ideas. For example, perhaps you'd rather the entrance to be behind a waterfall, or underground.
