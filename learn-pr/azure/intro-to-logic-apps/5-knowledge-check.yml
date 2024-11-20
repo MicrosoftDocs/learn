@@ -2,9 +2,11 @@
 uid: learn.azure-intro-to-logic-apps.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 09/24/2024
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
   ms.topic: unit
@@ -20,7 +22,7 @@ quiz:
       explanation: "Azure Logic Apps automatically scales out resources. A logic app workflow can process large data sets in parallel and handle the throughput required by this system."
     - content: "Fast response time"
       isCorrect: true
-      explanation: "Azure Logic Apps doesn't offer low subsecond performance guarantees. This system requires minimal execution time, which is critical for extremely fast transactions."
+      explanation: "Azure Logic Apps doesn't offer low subsecond performance guarantees. This system requires minimal execution time, which is critical for fast transactions."
     - content: "Orchestrate tasks for monitoring markets, detecting changes, and executing trades."
       isCorrect: false
       explanation: "Azure Logic Apps is designed to integrate multiple systems."
@@ -46,3 +48,4 @@ quiz:
     - content: "Create a custom connector with operations that work with the customer management system and use these operations in your logic app workflow."
       isCorrect: true
       explanation: "Azure Logic Apps is an extensible platform. You can create or use an existing REST API for your proprietary systems and build a custom connector that calls that API."
+

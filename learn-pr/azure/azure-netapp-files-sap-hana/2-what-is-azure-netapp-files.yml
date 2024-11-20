@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-sap-hana.what-is-azure-netapp-files
 title: What is Azure NetApp Files?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure NetApp Files?
   description: Learn the basic features and concepts of Azure NetApp Files.   

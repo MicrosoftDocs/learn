@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-iot-hub-monitoring.prepare
 title: Prepare
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare
   description: "Prepare"
   ms.date: 11/05/2023

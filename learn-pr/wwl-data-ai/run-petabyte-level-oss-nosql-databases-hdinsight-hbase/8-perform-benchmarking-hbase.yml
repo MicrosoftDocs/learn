@@ -2,6 +2,8 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.perform-benchmarking-hbase
 title: Perform benchmarking in HBase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform benchmarking in HBase
   description: "Perform benchmarking in HBase"
   ms.date: 04/09/2024

@@ -2,9 +2,11 @@
 uid: learn.azure.capture-application-logs-app-service.3-enable-and-configure-app-service-application-logging-using-the-azure-portal
 title: Exercise - Enable and configure App Service application logging using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Enable and configure App Service application logging using the Azure portal
   description: Enable and configure App Service application logging using the Azure portal
-  ms.date: 08/15/2023
+  ms.date: 11/12/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit
@@ -15,3 +17,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-enable-and-configure-app-service-application-logging-using-the-azure-portal.md)]
+

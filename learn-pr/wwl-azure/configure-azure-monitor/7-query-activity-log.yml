@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-monitor.query-activity-log
 title: Query the activity log
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Query the activity log
   description: "Query the activity log by setting filters, search strings, and matching event categories."
   ms.date: 11/02/2023

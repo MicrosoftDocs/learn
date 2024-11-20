@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-iot-hub-message-routing.review-message-processing-concepts
 title: Review message processing concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review message processing concepts
   description: "Review message processing concepts"
   ms.date: 02/06/2024

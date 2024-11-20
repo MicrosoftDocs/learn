@@ -2,6 +2,8 @@
 uid: learn.azdo.assess-your-development-process.3-release-process
 title: The team's release process
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: The team's release process
   description: Follow the Tailspin team as they try to figure out why they're having so many problems.
   ms.date: 10/07/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-release-process.md)]
+

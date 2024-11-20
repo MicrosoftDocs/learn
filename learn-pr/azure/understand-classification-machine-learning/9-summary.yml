@@ -2,6 +2,8 @@
 uid: learn.machinelearning.understand-classification-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of the content covered in the module.
   ms.date: 07/20/2024

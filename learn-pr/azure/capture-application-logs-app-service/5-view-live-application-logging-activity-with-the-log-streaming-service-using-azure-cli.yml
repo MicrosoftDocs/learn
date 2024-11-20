@@ -2,9 +2,11 @@
 uid: learn.azure.capture-application-logs-app-service.5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli
 title: Exercise - View live application logging with the log streaming service using Azure CLI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - View live application logging with the log streaming service using Azure CLI
   description: View live application logging with the log streaming service using Azure CLI
-  ms.date: 08/15/2023
+  ms.date: 11/12/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit
@@ -15,3 +17,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli.md)]
+

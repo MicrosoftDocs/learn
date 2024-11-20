@@ -2,6 +2,8 @@
 uid: learn.wwl.security-storage.recommendations-basic-data-protection
 title: Select and configure appropriate methods for protecting against data security threats, including soft delete, backups, versioning, and immutable storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select and configure appropriate methods for protecting against data security threats, including soft delete, backups, versioning, and immutable storage
   description: "Select and configure appropriate methods for protecting against data security threats, including soft delete, backups, versioning, and immutable storage"
   ms.date: 06/25/2024

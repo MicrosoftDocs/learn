@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a machine learning model training solution
   description: Azure Machine Learning Python SDK v2
   author: wwlpublish
@@ -39,3 +41,4 @@ units:
 - learn.wwl.design-machine-learning-model-training-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-model-training-solution.badge
+

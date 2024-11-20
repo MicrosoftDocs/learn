@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.configure-advanced-features
 title: Configure advanced features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure advanced features
   description: "Configure advanced features"
   ms.date: 11/28/2023

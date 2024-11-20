@@ -2,6 +2,8 @@
 uid: learn.oxford.object-detection-lva-edge-device.exercise-upload-video-edge
 title: Exercise - Upload a sample video to your edge device
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Upload a sample video to your edge device
   description: In this section, we help learner upload a sample video file into the container at the edge.
   ms.date: 07/20/2024

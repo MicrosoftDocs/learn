@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build reports using Power BI within Azure Synapse Analytics
   description: "Build reports using Power BI within Azure Synapse Analytics"
   ms.date: 05/16/2023

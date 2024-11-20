@@ -2,6 +2,8 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.5-spark-ecosystem
 title: The Spark ecosystem
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: The Spark ecosystem
   description: The Spark ecosystem
   ms.date: 03/09/2022
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 16
 content: |
   [!include[](includes/5-spark-ecosystem.md)]
+

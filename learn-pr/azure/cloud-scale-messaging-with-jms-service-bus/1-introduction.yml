@@ -2,9 +2,11 @@
 uid: learn.azure.cloud-scale-messaging-jms-service-bus.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 02/07/2024
+  ms.date: 11/11/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

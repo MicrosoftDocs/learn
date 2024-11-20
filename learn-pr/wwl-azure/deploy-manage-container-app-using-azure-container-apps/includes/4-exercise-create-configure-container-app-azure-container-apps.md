@@ -12,7 +12,7 @@ You've been asked to configure a container app that meets the following requirem
 
 - Is deployed to VNET1/ACASubnet.
 - Pulls an image from a container registry.
-- Authenticates using a user-assigned managed identity (uai-apl2003).
+- Authenticates using a user-assigned managed identity (uai-az2003).
 - Uses Container App to connect to a Service Bus instance using the .NET client type.
 - The app can run up to two replicas that are added whenever there are 10,000 HTTP concurrent requests.
 
@@ -38,7 +38,7 @@ Complete the following steps to create a container app that uses an ACR image.
 
 1. On the top search bar, in the Search textbox, enter **container app**
 
-1. In the search results under Services, select **Container App**.
+1. In the search results under Services, select **Container Apps**.
 
 1. Select **Create**.
 
@@ -46,7 +46,7 @@ Complete the following steps to create a container app that uses an ACR image.
 
     - Subscription: Specify the Azure subscription that you're using for this guided project.
     - Resource group: **RG1**
-    - Container app name: **aca-apl2003**
+    - Container app name: **aca-az2003**
     - Region: Select the Region specified for VNET1 (Central US).
 
         The container app needs to be in the same region/location as the virtual network so you can choose VNET1 for the managed environment. For this guided project, keep all of your resources in the region/location specified for your resource group.
@@ -66,10 +66,10 @@ Complete the following steps to create a container app that uses an ACR image.
 
 1. On the Create Container App page, select the Container tab, and then specify the following:
 
-    - Use quickstart image: **Uncheck** this setting.
-    - Name: Enter **aca-apl2003**
+    - Use quickstart image: Ensure that this setting is not selected. If it is selected, **uncheck** this setting.
+    - Name: Enter **aca-az2003**
     - Image source: Ensure that **Azure Container Registry** is selected.
-    - Registry: Select your container registry. For example: **acrapl2003cah.azurecr.io**
+    - Registry: Select your container registry. For example: **acraz2003cah.azurecr.io**
     - Image: Select **aspnetcorecontainer**
     - Image tag: Select **latest**
 
@@ -80,7 +80,7 @@ Complete the following steps to create a container app that uses an ACR image.
 1. Wait for the deployment to complete.
 
     > [!NOTE]
-    > This deployment can take about 10 minutes to complete.
+    > This deployment normally takes 3-5 minutes to complete, but may take up to 10 minutes.
 
 ## Configure the container app to authenticate using the user assigned identity
 
@@ -94,7 +94,7 @@ Complete the following steps to configure the container app to authenticate usin
 
 1. Select **Add user assigned managed identity**.
 
-1. On the Add user assigned managed identity page, select **uai-apl2003**, and then select **Add**.
+1. On the Add user assigned managed identity page, select **uai-az2003**, and then select **Add**.
 
 ## Configure a connection between the container app and Service Bus
 
@@ -115,11 +115,18 @@ Complete the following steps to configure a connection between the container app
 
 1. On the Authentication tab, select **User assigned managed identity**.
 
+1. Ensure that the correct subscription and user assigned managed identity are selected.
+
+    Subscription: The Azure subscription that you're using for this guided project.
+    User assigned managed identity: **uai-az2003**
+
 1. To change tabs, select **Review + Create**.
 
 1. Once the Validation passed message appears, select **Create**.
 
 1. Wait for the connection to be created.
+
+    It can take a minute before the Service Connector page updates with the new connection.
 
 ## Configure HTTP scale rules
 
@@ -129,7 +136,9 @@ Complete the following steps to configure a connection between the container app
 
 1. Notice the Name assigned to your active revision.
 
-1. On the left-side menu under Application, select **Scale**.
+1. On the left-side menu under Application, select **Containers**.
+
+1. To the right of **Based on revision**, ensure that your active revision is selected.
 
 1. At the top of the page, select **Edit and deploy**.
 
@@ -160,24 +169,26 @@ In this task, you verify that your configuration meets the specified requirement
 
 1. In the Azure portal, ensure that your Container App resource is open.
 
-1. On the left-side menu, under Settings, select **Continuous deployment**.
+1. On the left-side menu, under Settings, select **Deployment**.
 
-1. Verify that the expected values are selected:
+1. At the top of the page, ensure that the Continuous deployment tab is selected.
+
+1. Verify that the expected Registry settings are reported:
 
     - Repository source: **Azure Container Registry**
-    - Registry: the name of your Container Registry (for example: acrapl2003cah)
-    - Image: **aspnetcorecontainer**
+    - Registry: the name of your Container Registry (for example: acraz2003cah)
+    - Image: **aca-az2003**
 
 1. Close the Container App page.
 
-1. Open your Container App Environment resource.
+1. Open your Container Apps Environment resource.
 
 1. Verify that your Container App uses the proper subnet as follows:
 
     - On the Overview page, verify that Virtual Network is set to **VNET1**.
     - On the Overview page, verify that Infrastructure subnet is set to **ACASubnet**.
 
-1. In the Azure portal, open PowerShell.
+1. In the Azure portal, open the Cloud Shell and the switch to PowerShell.
 
 1. Run the following command:
 
@@ -191,9 +202,9 @@ In this task, you verify that your configuration meets the specified requirement
     For example:
 
     ```azurecli
-    az containerapp connection show --connection servicebus_b2a10 --name aca-apl2003 --resource-group RG1  
+    az containerapp connection show --connection servicebus_b2a10 --name aca-az2003 --resource-group RG1  
     ```
 
 1. Verify that the targetService properties match the specified configuration.
 
-1. To verify your HTTP scale rule, run testing software to simulate 10,000 concurrent HTTP requests and ensure that container replicas are created.
+To verify your HTTP scale rule, you would need to run testing software that's able to simulate 10,000 concurrent HTTP requests and ensure that container replicas are created.

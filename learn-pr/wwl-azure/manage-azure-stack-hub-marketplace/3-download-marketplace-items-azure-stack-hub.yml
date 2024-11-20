@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-marketplace.download-marketplace-items-to
 title: Download Marketplace items to Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Download Marketplace items to Azure Stack Hub
   description: "Download Marketplace items to Azure Stack Hub"
   ms.date: 03/30/2022

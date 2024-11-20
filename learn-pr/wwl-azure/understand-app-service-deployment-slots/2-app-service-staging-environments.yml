@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-app-service-deployment-slots.explore-staging-environments
 title: Explore staging environments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore staging environments
   description: "Explore staging environments"
   ms.date: 06/10/2024

@@ -2,10 +2,12 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.explore-azure-sql-database-managed-instance
 title: Explore Azure SQL Database Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure SQL Database Managed Instance
   description: "Explore Azure SQL Database Managed Instance"
-  ms.date: 03/06/2023
-  author: wwlpublish
+  ms.date: 11/12/2023
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

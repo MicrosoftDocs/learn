@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-virtual-machine-availability.implement-autoscale
 title: Implement autoscale
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement autoscale
   description: "Implement autoscale with Azure Virtual Machine Scale Sets."
   ms.date: 07/24/2024

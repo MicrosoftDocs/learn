@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-storage.replace-drives
 title: Replace drives in Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Replace drives in Azure Stack HCI
   description: Read an overview of the process for managing drive failures. Learn how to identify the failed drive or determine the drive's physical location.
   ms.date: 08/20/2024

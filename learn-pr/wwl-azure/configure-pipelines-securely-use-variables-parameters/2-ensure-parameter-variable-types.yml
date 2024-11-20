@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.ensure-parameter-variable-types
 title: Ensure parameter and variable types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Ensure parameter and variable types
   description: "Ensure parameter and variable types."
   ms.date: 1/25/2023

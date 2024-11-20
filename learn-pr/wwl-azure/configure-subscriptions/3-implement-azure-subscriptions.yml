@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-subscriptions.implement-azure-subscriptions
 title: Implement Azure subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure subscriptions
   description: "Implement Azure subscriptions"
   ms.date: 10/27/2023

@@ -2,11 +2,13 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.exercise-implement-enhancements-to-search-results
 title: 'Exercise: Implement enhancements to search results'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Implement enhancements to search results"
   description: "Exercise: Implement enhancements to search results"
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/07-exercise-implement-enhancements-to-search-results.md)]
+

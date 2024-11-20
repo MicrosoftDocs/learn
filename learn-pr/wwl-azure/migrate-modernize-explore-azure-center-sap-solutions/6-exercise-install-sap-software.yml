@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-install-sap-software
 title: Exercise - Install the SAP software
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Install the SAP software
   description: "Exercise - Install the SAP software with Azure Center for SAP solutions."
   ms.date: 01/09/2024

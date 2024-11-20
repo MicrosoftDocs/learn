@@ -8,7 +8,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: module
-  ms.service: azure-python
   ms.devlang: python
 title: Use mathematical operations in Python
 summary: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators. You'll also explore how to perform more manipulations of data and numbers. You'll put this knowledge to use to create a project to determine the distance between planets.

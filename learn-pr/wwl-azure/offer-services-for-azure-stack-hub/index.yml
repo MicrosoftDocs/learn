@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.offer-services-for-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Offer services for Azure Stack Hub
   description: "Offer services for Azure Stack Hub"
   ms.date: 09/15/2023

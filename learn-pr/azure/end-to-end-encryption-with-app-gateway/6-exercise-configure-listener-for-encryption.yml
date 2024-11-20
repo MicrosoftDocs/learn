@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.end-to-end-encryption-with-app-gateway.6-exercise-configure-listener-for-encryption
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure an Application Gateway listener for encryption
   description: Exercise - Configure an Application Gateway listener for encryption
   ms.date: 01/22/2024
@@ -13,3 +15,4 @@ title: Exercise - Configure an Application Gateway listener for encryption
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-configure-listener-for-encryption.md)]
+

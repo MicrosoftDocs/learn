@@ -1,10 +1,12 @@
-Microsoft Copilot for Security is accessible within Microsoft Purview data security and compliance solutions, including Data Loss Prevention (DLP), Insider Risk Management, Communication Compliance, and eDiscovery (Premium).
+Microsoft Security Copilot is accessible within Microsoft Purview data security and compliance solutions, including Data Loss Prevention (DLP), Insider Risk Management, Communication Compliance, and eDiscovery (Premium).
 
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
 
 ### Exercise
 
@@ -22,17 +24,17 @@ This exercise should take approximately **30** minutes to complete.
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. From the Microsoft Copilot for Security landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
+1. From the Microsoft Security Copilot landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
     1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
     1. Scroll down so that the Microsoft Purview plugin is visible.
     1. Select the **Information icon** ![screenshot of information icon](../media/information-icon.png). Note the instructions then close the plugins page by selecting the **X** on the top-right corner of the manage sources window.
 
 1. Select the **Home menu** ![screenshot of the home menu icon](../media/home-menu-icon.png), often referred to as the hamburger icon.
     1. Select **Owner settings**.
-    1. Enable the toggle switch next to **Allow Copilot for Security to access data from your Microsoft 365 services**.
-    1. Return to the Copilot home page, by selecting **Microsoft Copilot for Security** on the top-left of the page next to the home menu (hamburger) icon.
+    1. Enable the toggle switch next to **Allow Security Copilot to access data from your Microsoft 365 services**.
+    1. Return to the Copilot home page, by selecting **Microsoft Security Copilot** on the top-left of the page next to the home menu (hamburger) icon.
 
 1. Now that you’ve enabled Copilot to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the promptbar, select the **Sources icon**.
@@ -44,7 +46,7 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 
 For this and all subsequent tasks, you explore the Copilot functionality embedded in Microsoft Purview.
 
-In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Copilot for Security. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. You'll then see how Copilot can address this same task with the click of a button.
+In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Security Copilot. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. You'll then see how Copilot can address this same task with the click of a button.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user should have previously been assigned an appropriate role.
 
@@ -63,7 +65,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. Select the **Activity explorer** tab, to quickly review a timeline of potentially risky activity and filter for specific risk activities associated with the alert. Select, the first activity on the list, labeled **Files accessed on SPO**. Review the information provided then select **X** to close the window.
     1. Select the **User activity tab**. Here you view a scatter plot, over a one month, three months, or six months timeline; alongside details of each event.
 
-1. With Copilot for Security, you can gain a comprehensive summary of an alert – in the single click of a button! From the top of the alert page, select **Summarize**.
+1. With Security Copilot, you can gain a comprehensive summary of an alert – in the single click of a button! From the top of the alert page, select **Summarize**.
     1. This comprehensive summary provides key details, including alert severity, user details like their HR offboarding event and much more! 
     1. These summaries help accelerate investigations by helping you quickly gain context into user intent and timing of risky activities, enabling you to tailor your investigation with specific dates in mind and quickly pinpoint sensitive files at risk.
 
@@ -71,7 +73,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 #### Task: Gain comprehensive summary of Data Loss Prevention alerts.
 
-In this task, you explore the value Copilot provides in summarizing a Data loss prevention alert. As in the previous task, you start by first reviewing an alert, without Copilot for Security. You then discover how Copilot can address this same task with the click of a button.
+In this task, you explore the value Copilot provides in summarizing a Data loss prevention alert. As in the previous task, you start by first reviewing an alert, without Security Copilot. You then discover how Copilot can address this same task with the click of a button.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Data Loss Prevention solution, users should have previously been assigned an appropriate role.
 
@@ -107,7 +109,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 1. From the list of violations triggered by the policy, select the Teams communication with the subject **Happy new year valued customers!** to expand the list. Select the first item from the expanded view.
 
 1. Communication Compliance is able to pinpoint the timestamps when a potential violation has occurred and highlight conditions matched, but there's still a good bit of text to read through.
-    1. With Copilot for Security, you can gain a comprehensive summary of an alert in the single click of a button! Select **Summarize**.
+    1. With Security Copilot, you can gain a comprehensive summary of an alert in the single click of a button! Select **Summarize**.
     1. You can also ask follow-up questions. Use copy/paste to enter **Does this violation indicate unauthorized disclosure?**
 
 1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
@@ -132,7 +134,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
         1. Select Any -  **Conversation**.
     1. From the results, select the first item on the list **#1**.
         1. Information about the conversation appears in the window to the right. **Scroll** to view the source history. There's quite a bit of text included in this teams conversation. It can be time-consuming to sift through the information.
-        1. With Copilot for Security, you can gain a comprehensive summary of the conversation in the review set – in the single click of a button! Select **Summarize**. Copilot also provides prompt suggestions and the prompt bar for you to enter your own prompts in furtherance of the investigation. This helps you save time and conduct investigations more efficiently!
+        1. With Security Copilot, you can gain a comprehensive summary of the conversation in the review set – in the single click of a button! Select **Summarize**. Copilot also provides prompt suggestions and the prompt bar for you to enter your own prompts in furtherance of the investigation. This helps you save time and conduct investigations more efficiently!
 
 1. Refer back to the list of Teams conversations. This time, select the second item on the list select item **#2** .
     1. The subject is displayed in a non-English language. This is common challenge with multi-national corporation whose employees speak various languages. The window with the source conversations shows a conversation history with non-English language. Select **Summarize** to view a summary in English, which is my default language for Copilot.
@@ -163,11 +165,11 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
     1. From the box labeled natural language prompt, select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments.
     1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
     1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
-    1. Select **Generate KeyQL**. Copilot for Security refines the prompt and then in a simple click, can generate the query within seconds!  
+    1. Select **Generate KeyQL**. Security Copilot refines the prompt and then in a simple click, can generate the query within seconds!  
     1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, to run the generated query copy the KeyQL code into the run box and select run.
 
 #### Review
 
-With Microsoft Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
+With Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
 
 In this exercise, you explored the powerful functionality of Copilot to aid in your compliance investigations with DLP, Insider Risk Management, Communication Compliance, and eDiscovery.

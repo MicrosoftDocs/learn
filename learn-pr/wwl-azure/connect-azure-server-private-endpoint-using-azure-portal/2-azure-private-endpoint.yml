@@ -2,9 +2,11 @@
 uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-endpoint
 title: Azure Private Endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Private Endpoint
   description: "Azure Private Endpoint"
-  ms.date: 05/31/2024
+  ms.date: 10/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

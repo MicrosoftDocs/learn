@@ -1,6 +1,6 @@
-With Azure, you have the freedom to choose to use IaaS, PaaS, or both. Before you plan a move to Azure, you need to evaluate your short-term and long-term goals and decide the best approach for your various workloads.  With Linux on Azure, you can take advantage of existing Linux skill sets and rely on familiar tools and methods for provisioning and maintaining systems while offloading hardware support responsibilities. When you're ready, you can use tools like Azure Resource Manager to integrate with more advanced services and solutions. 
+With Azure, you have the freedom to choose to use IaaS, PaaS, or both. Before you plan a move to Azure, you need to evaluate your short-term and long-term goals and decide the best approach for your various workloads. With Linux on Azure, you can take advantage of existing Linux skill sets and rely on familiar tools and methods for provisioning and maintaining systems while offloading hardware support responsibilities. When you're ready, you can use tools like Azure Resource Manager to integrate with more advanced services and solutions. 
 
-As with any technology shift, analysis of the current environment and careful planning are key.
+As with any technology shift, analyzing the current environment and planning carefully are key.
 
 Now that you have a better understanding of the resources available for your Linux deployment, it's time to begin planning and sizing your environment to best meet your needs.
 

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-sap-hana
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Using Azure NetApp Files application volume groups for SAP HANA       
   description: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA.       
@@ -42,3 +44,4 @@ units:
 - learn.azure.azure-netapp-files-sap-hana.summary
 badge:
   uid: learn.azure.azure-netapp-files-sap-hana.badge
+

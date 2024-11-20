@@ -2,12 +2,16 @@
 uid: learn.startups.mentor-meeting.identify-topic-and-outcome
 title: Identify the primary topic and desired outcome for your mentor meeting
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify the primary topic and desired outcome for your mentor meeting
   description: "This content is part of the \"Make the most of a mentor meeting\" module."
   ms.date: 04/18/2024
   author: vhawk85
   ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 5
 content: |
   [!include[](includes/5-identify-topic-and-outcome.md)]
+

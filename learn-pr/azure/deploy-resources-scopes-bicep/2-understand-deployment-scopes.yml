@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-resources-different-scopes.understand-deployment-scopes
 title: Understand deployment scopes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand deployment scopes
   description: Learn about the scopes at which Azure resources can be deployed, and get common example use cases for each scope.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-deployment-scopes.md)]
+

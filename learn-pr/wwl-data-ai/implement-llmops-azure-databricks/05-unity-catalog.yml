@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-llmops-azure-databricks.unity-catalog
 title: Use Unity Catalog to manage models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Unity Catalog to manage models
   description: "Use Unity Catalog to manage models"
   ms.date: 08/23/2024

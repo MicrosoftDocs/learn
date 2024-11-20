@@ -2,6 +2,8 @@
 uid: learn.create-first-azure-front-door.create-configure-front-door
 title: Front Door create and configuration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Front Door creation and configuration
   description: Explains each component in a Front Door profile. 

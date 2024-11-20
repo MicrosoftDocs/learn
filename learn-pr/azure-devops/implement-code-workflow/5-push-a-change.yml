@@ -2,6 +2,8 @@
 uid: learn.azdo.implement-code-workflow.5-push-a-change
 title: Exercise - Push a change through the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Push a change through the pipeline
   description: Practice the entire process by adding a feature to a branch and then pushing that branch to GitHub.
   ms.date: 10/24/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 19
 content: |
   [!include[](includes/5-push-a-change.md)]
+

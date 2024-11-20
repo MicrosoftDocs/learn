@@ -181,20 +181,11 @@ To try more commands, let's delete the VM. Follow these steps:
    The `Remove-AzVM` command only deletes the VM. It doesn't clean up any of the other resources. To
    manually clean them up, follow these steps:
 
-1. Delete the virtual network:
+1. Delete the network interface:
 
    ```azurepowershell
-   Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName |
-       Remove-AzVirtualNetwork
-   ```
-
-   Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
-
-1. Delete the public IP address:
-
-   ```azurepowershell
-   Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName |
-       Remove-AzPublicIpAddress
+   Get-AzNetworkInterface -ResourceGroupName $vm.ResourceGroupName -Name $vm.Name |
+       Remove-AzNetworkInterface
    ```
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
@@ -208,11 +199,20 @@ To try more commands, let's delete the VM. Follow these steps:
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
 
-1. Delete the network interface:
+1. Delete the public IP address:
 
    ```azurepowershell
-   Get-AzNetworkInterface -ResourceGroupName $vm.ResourceGroupName -Name $vm.Name |
-       Remove-AzNetworkInterface
+   Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName |
+       Remove-AzPublicIpAddress
+   ```
+
+   Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
+
+1. Delete the virtual network:
+
+   ```azurepowershell
+   Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName |
+       Remove-AzVirtualNetwork
    ```
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.

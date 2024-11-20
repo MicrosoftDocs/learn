@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.2-create-subscriptions-in-apim
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create subscriptions in Azure API Management
   description: In this unit, you learn how subscriptions and keys can limit access to APIs in API Management.
   ms.date: 06/13/2023
@@ -11,3 +13,4 @@ title: Create subscriptions in Azure API Management
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-subscriptions-in-apim.md)]
+

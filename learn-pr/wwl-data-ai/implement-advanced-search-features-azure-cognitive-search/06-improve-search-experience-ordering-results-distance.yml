@@ -2,11 +2,13 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-search-experience-by-ordering-results-by-distance-from-given-reference-p
 title: Improve search experience by ordering results by distance from a given reference point
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve search experience by ordering results by distance from a given reference point
   description: Improve search experience by ordering results by distance from a given reference point
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/06-improve-search-experience-ordering-results-distance.md)]
+

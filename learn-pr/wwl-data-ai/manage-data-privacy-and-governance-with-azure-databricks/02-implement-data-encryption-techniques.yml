@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-data-encryption-techniques
 title: Implement data encryption techniques in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement data encryption techniques in Azure Databricks
   description: "Learn some data encryption techniques to use in Azure Databricks."
   ms.date: 08/14/2024

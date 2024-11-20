@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.7-security-management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage your security
   description: Exercise - Manage your security
   ms.date: 11/13/2023
@@ -28,3 +30,4 @@ quiz:
       - content: "All of the above"
         isCorrect: true
         explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
+

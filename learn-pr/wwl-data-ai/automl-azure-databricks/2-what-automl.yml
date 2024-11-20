@@ -2,6 +2,8 @@
 uid: learn.wwl.automl-azure-databricks.what-automl
 title: What is AutoML?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is AutoML?
   description: What is AutoML?
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-automl.md)]
+

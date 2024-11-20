@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.7-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 11/07/2023

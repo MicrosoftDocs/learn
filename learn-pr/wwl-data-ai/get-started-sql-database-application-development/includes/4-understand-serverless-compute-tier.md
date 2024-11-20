@@ -13,4 +13,4 @@ The auto-pause delay feature allows you to specify the period of inactivity befo
 > [!NOTE]
 > When the database is paused, you are only charged for storage.
 
-To learn more about serverless for Azure SQL Database, see [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview&tabs=general-purpose).
+To learn more about serverless for Azure SQL Database, see [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview).

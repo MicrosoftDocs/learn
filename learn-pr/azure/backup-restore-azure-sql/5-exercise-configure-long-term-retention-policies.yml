@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.5-exercise-configure-long-term-retention-policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure long-term retention policies
   description: Learn how to configure Azure SQL Database to keep data for months and years.
   ms.date: 12/11/2023
@@ -16,3 +18,4 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-long-term-retention-policies.md)]
+

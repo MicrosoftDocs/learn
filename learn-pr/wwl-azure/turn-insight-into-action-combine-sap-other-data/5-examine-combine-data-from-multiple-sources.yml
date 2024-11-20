@@ -2,6 +2,8 @@
 uid: learn.wwl.turn-insight-into-action-combine-sap-other-data.examine-combining-data-from-multiple-sources
 title: Examine combining data from multiple sources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine combining data from multiple sources
   description: "Examine combining data from multiple sources"
   ms.date: 03/19/2024

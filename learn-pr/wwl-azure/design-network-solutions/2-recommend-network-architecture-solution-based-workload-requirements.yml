@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.recommend-network-architecture-solution-based-workload-requirements
 title: Recommend a network architecture solution based on workload requirements
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend a network architecture solution based on workload requirements
   description: "Recommend a network architecture solution based on workload requirements"
   ms.date: 10/09/2023

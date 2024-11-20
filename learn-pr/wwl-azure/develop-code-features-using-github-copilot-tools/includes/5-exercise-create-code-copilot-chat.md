@@ -12,7 +12,7 @@ In this exercise, you use GitHub Copilot's inline chat feature to update existin
 
 ### Prepare sample apps in your Visual Studio Code environment
 
-A sample application is used in this exercise to ensure that exercise instructions align to the source code you're working on. The sample app for this exercise represents the code developed during the previous exercise.
+A sample application is used in this exercise to ensure that exercise instructions align to the source code you're working on. The sample app for this exercise represents the code developed during the previous exercise. Some minor differences may exist between the sample app and the code you developed in the previous exercise.
 
 To download the sample apps for this module and prepare the sample app for this exercise, complete the following steps:
 
@@ -70,7 +70,7 @@ This exercise focuses on the following tasks:
 
 1. Update the `QuarterlySalesReport` method as follows:
 
-    1. When displaying the sales results, list the results in a logical order. For example, when listing total sale by quarter, the quarters should be listed in order from Q1 to Q4.
+    1. When displaying the sales results, list the results in a logical order. For example, when listing total sales by quarter, the quarters should be listed in order from Q1 to Q4.
     1. Display currency values using regional settings.
     1. Include calculations for quarterly profit and profit percentage
     1. Include calculations for quarterly sales, profit, and profit percentage by department.
@@ -79,13 +79,14 @@ This exercise focuses on the following tasks:
 
 GitHub Copilot's inline chat feature uses the prompt you submit to understand the task or problem you're trying to solve. The prompts should be specific and concise. Good prompts produce better responses.
 
-When you develop prompts for GitHub Copilot, consider the following best practices:
+When you develop prompts for GitHub Copilot, remember the following best practices:
 
-- Be specific and keep it simple: Provide clear and concise prompts that describe the task or problem you're trying to solve. Avoid using complex language or jargon that could confuse the AI.
-- Use natural language: Write prompts in a conversational tone. Use natural language that you would use when talking to a colleague or team member.
+- Start general, then get specific: Provide clear and concise prompts that describe the task or problem you're trying to solve. Start with a broad description of the task, then provide details.
+- Avoid ambiguity: Avoid ambiguous terms like "what does this do" when referring to code. It's better to be specific. For example, ask "What does the createUser function do?"
 - Break down complex tasks: If the task is complex, break it down into smaller steps. Provide prompts for each step to help GitHub Copilot generate the correct code.
-- Provide context: Include relevant information that helps GitHub Copilot understand the task or problem you're trying to solve. Include details about the data, variables, or code blocks that are relevant to the prompt.
+- Provide context: Include relevant information that helps GitHub Copilot understand the task or problem you're trying to solve. Give examples and indicate relevant code. Include details about the data, variables, or code blocks that are relevant to the prompt.
 - Use chat participants, slash commands, and chat variables: GitHub Copilot's inline chat feature supports chat participants, slash commands, and chat variables. Use these features to interact with GitHub Copilot and provide additional context for your prompts.
+- Iterate and manage chat history: If you don't get the result you want, iterate on your prompt and try again. Reference the previous response in your next request. Use threads to start a new conversation for a new task, and delete requests that are no longer relevant.
 
 ### Generate data structures using inline chat
 
@@ -144,8 +145,8 @@ To create and update the data structure, complete the following steps:
     ```csharp
     public struct ProdDepartments
     {
-        public static string[] DepartmentNames = { "Men's Clothing", "Women's Clothing", "Children's Clothing", "Accessories", "Footwear", "Outerwear", "Sportswear", "Undergarments" };
-        public static string[] DepartmentAbbreviations = { "MENS", "WOMN", "CHLD", "ACCS", "FOOT", "OUTR", "SPRT", "UNDR" };
+        public static string[] DepartmentNames =  ["Men's Clothing", "Women's Clothing", "Children's Clothing", "Accessories", "Footwear", "Outerwear", "Sportswear", "Undergarments"];
+        public static string[] DepartmentAbbreviations =  ["MENS", "WOMN", "CHLD", "ACCS", "FOOT", "OUTR", "SPRT", "UNDR" ];
     }
     ```
 
@@ -172,7 +173,7 @@ To create and update the data structure, complete the following steps:
     ```csharp
     public struct ManufacturingSites
     {
-        public static string[] manSites = { "US1", "US2", "US3", "UK1", "UK2", "UK3", "JP1", "JP2", "JP3", "CA1" };
+        public static string[] manSites = [ "US1", "US2", "US3", "UK1", "UK2", "UK3", "JP1", "JP2", "JP3", "MX1" ];
     }
     ```
 
@@ -274,7 +275,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
     You should have a blank code line before and after the variable declarations.
 
-    Variable declarations aren't required for inline chat to generate code update suggestion from a prompt, but they do help anchor GitHub Copilot to a specific line of code where the update belongs.
+    Variable declarations aren't required for inline chat to generate code update suggestions from a prompt, but they do help anchor GitHub Copilot to a specific line of code where the update belongs.
 
 1. Select the `int indexOfDept = 0;` code line, open the inline chat, and then enter the following prompt:
 
@@ -297,7 +298,7 @@ To update the `GenerateSalesData` method, complete the following steps:
     This prompt specifies creating an integer variable named `indexOfDept` as well as how to assign a value. You could run this prompt without creating/selecting the variable declaration, but GitHub Copilot can occasionally lose its anchor point when you open the inline chat without any code selected.
 
     > [!NOTE]
-    > The **Toggle Change** button (the +/- icon located to the right of the **Accept** and **Discard** buttons) can be used to show/hide the code deleted by the suggested update. This can be useful when you want to see the original code and the suggested code update.
+    > The **Toggle Changes** button (accessible from the **More Actions** dropdown menu to the right of the **Accept** and **Discard** buttons) can be used to show/hide the code deleted by the suggested update. This can be useful when you want to see the original code and the suggested code update.
 
 1. To accept the suggestion provided by GitHub Copilot, select **Accept**.
 
@@ -339,7 +340,7 @@ To update the `GenerateSalesData` method, complete the following steps:
 
 1. Review the suggestions provided by GitHub Copilot, and then select **Accept**.
 
-    In this case, you should see a suggestion that assigns a randomly selected product size to the `sizeCode` variable. GitHub Copilot could suggest creating either one or two code lines to satisfy this prompt. Either way, it will probably suggest creating a string array of product sizes and then use `random` to assign one of the sizes to `sizeCode`.
+    In this case, you should see a suggestion that assigns a randomly selected product size to the `sizeCode` variable. GitHub Copilot could suggest using one or several code lines to satisfy this prompt. Either way, it will probably suggest creating a string array of product sizes and then use `random` to assign one of the sizes to `sizeCode`.
 
     ![Screenshot of Inline chat suggestion for the sizeCode assignment.](../media/inline-chat-code-suggestion-5.png)
 
@@ -410,6 +411,8 @@ To update the `GenerateSalesData` method, complete the following steps:
 1. Review the suggestions provided by GitHub Copilot, and then select **Accept**.
 
 1. Create a blank line after the `baseCost` assignment and accept the code line completion that appears.
+
+    GitHub Copilot should provide a suggestion that assigns a value to `volumeDiscount`.
 
 1. Select the code line used to assign a value to `salesData[i].volumeDiscount`, open the inline chat, and then enter the following prompt:
 

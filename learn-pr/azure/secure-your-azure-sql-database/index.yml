@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.secure-your-azure-sql-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure your Azure SQL Database
   description: Secure an Azure SQL database to keep the information safe and diagnose potential security concerns as they happen.
   ms.date: 11/07/2023
@@ -42,3 +44,4 @@ units:
 - learn.secure-your-azure-sql-database.7-summary
 badge:
   uid: learn.secure-your-azure-sql-database.badge
+

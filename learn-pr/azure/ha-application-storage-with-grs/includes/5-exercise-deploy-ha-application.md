@@ -48,6 +48,11 @@ The application code runs locally on your desktop. You need Visual Studio to bui
 
 ## Examine the sample application
 
+> [!IMPORTANT]
+> This sample uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+>
+> For optimal security, Microsoft recommends using managed identities for Azure resources to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
+
 1. Switch to the Cloud Shell window in the browser.
 1. To obtain the connection string for the storage account you created in the previous exercise, run the following command:
 

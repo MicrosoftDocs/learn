@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-ai-custom-skill.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary of custom skills in Azure AI Search."
+  ms.date: 10/23/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

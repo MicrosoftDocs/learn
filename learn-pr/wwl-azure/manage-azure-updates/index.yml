@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-updates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure updates
   description: You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs.
   ms.date: 09/24/2020
@@ -55,3 +57,4 @@ units:
 - learn.wwl.manage-azure-updates.summary
 badge:
   uid: learn.wwl.manage-azure-updates.badge
+

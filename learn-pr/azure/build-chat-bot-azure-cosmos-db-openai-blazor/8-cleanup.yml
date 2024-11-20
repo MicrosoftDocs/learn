@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.cleanup
 title: Clean up
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Clean up
   description: |

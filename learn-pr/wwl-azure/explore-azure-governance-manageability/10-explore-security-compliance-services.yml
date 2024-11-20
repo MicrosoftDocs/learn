@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-governance-manageability.explore-security-compliance-services
 title: Explore security and compliance services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore security and compliance services
   description: "Strengthen the security posture of your cloud resources, and protect workloads running in Azure, hybrid, and other cloud platforms."
   ms.date: 08/02/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.load-fact-tables
 title: Load fact tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load fact tables
   description: "Load fact tables"
   ms.date: 10/27/2023

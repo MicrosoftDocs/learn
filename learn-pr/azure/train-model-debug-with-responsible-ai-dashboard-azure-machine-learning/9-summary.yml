@@ -2,6 +2,8 @@
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Summary"
   ms.date: 08/30/2024

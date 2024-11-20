@@ -2,6 +2,8 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.identify-tasks
 title: Identify machine learning tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify machine learning tasks
   description: Identify machine learning tasks
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-identify-tasks.md)]
+

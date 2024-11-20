@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.design-implement-strategy-feedback-cycles
 title: Design and implement a strategy for feedback cycles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement a strategy for feedback cycles
   description: "Design and implement a strategy for feedback cycles"
   ms.date: 05/24/2024

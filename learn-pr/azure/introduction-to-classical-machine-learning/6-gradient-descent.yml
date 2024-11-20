@@ -2,9 +2,11 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.gradient-descent
 title: Optimize models by using gradient descent
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize models by using gradient descent
   description: Conceptual unit about optimizing models by using gradient descent.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit

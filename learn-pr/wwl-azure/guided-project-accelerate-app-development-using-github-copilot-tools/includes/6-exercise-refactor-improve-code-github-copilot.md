@@ -354,11 +354,11 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-1. Use the **Explain This** smart action to see an explanation of the LINQ queries.
+1. Use the **Explain** smart action to see an explanation of the LINQ queries.
 
-    The **Explain This** smart action provides a detailed explanation of the LINQ queries used in the code.
+    The **Explain** smart action provides a detailed explanation of the LINQ queries used in the code.
 
-    For example, you can use the **Explain This** smart action on the `GetPopulatedBook` method to see an explanation of the LINQ query used to populate the `Author` property of the `Book` object.
+    For example, you can use the **Explain** smart action on the `GetPopulatedBook` method to see an explanation of the LINQ query used to populate the `Author` property of the `Book` object.
 
     ```csharp
     Author = Authors!.Where(a => a.Id == b.AuthorId).Select(a => new Author {
@@ -367,7 +367,7 @@ Use the following steps to complete this section of the exercise:
     }).First()
     ```
 
-    The **Explain This** smart action provides a detailed explanation of the LINQ query used to populate the `Author` property of the `Book` object.
+    The **Explain** smart action provides a detailed explanation of the LINQ query used to populate the `Author` property of the `Book` object.
 
     For example, the explanation might look like this:
 

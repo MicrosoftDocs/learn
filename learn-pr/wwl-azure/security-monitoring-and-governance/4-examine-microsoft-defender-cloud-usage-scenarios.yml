@@ -2,6 +2,8 @@
 uid: learn.wwl.security-monitoring-and-governance.examine-microsoft-defender-cloud-usage-scenarios
 title: Examine Microsoft Defender for Cloud usage scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Microsoft Defender for Cloud usage scenarios
   description: "Examine Microsoft Defender for Cloud usage scenarios"
   ms.date: 05/13/2024

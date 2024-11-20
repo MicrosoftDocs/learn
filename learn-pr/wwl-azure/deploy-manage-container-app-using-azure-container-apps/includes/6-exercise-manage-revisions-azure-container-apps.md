@@ -14,7 +14,7 @@ You've been asked to configure traffic splitting for your Container Apps to meet
 
 - You need to create a new revision of the container app that uses a suffix of v2.
 - You must ensure that 25 percent of requests to your app are directed to the v2 revision.
-- You must label the revisions "current" and "updated" and ensure that requests to the "---updated" revision are directed to the v2 revision.
+- You must label the revisions "current" and "updated" and ensure that requests to the "updated" revision are directed to the v2 revision.
 
 You complete the following tasks during this exercise:
 
@@ -51,7 +51,7 @@ You complete the following tasks during this exercise:
 1. On the Create and deploy new revision page, complete the following steps:
 
     - Name / suffix: Enter **v2**
-    - Under Container image, select your container image. For example, aca-apl2003.
+    - Under Container image, select your container image. For example, aca-az2003.
 
 1. Select **Create**.
 

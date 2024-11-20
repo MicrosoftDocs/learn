@@ -2,6 +2,8 @@
 uid: learn.create-first-azure-front-door.exercise-create-configure-front-door
 title: Exercise - Create and configure Front Door
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create and configure Front Door
   description: Create Front Door for the two virtual machines hosting the vehicle registration web app and an App Service for a license renewal web app.

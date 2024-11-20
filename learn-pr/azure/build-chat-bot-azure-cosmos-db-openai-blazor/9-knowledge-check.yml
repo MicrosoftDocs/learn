@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: |

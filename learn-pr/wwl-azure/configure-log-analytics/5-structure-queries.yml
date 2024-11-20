@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-log-analytics.structure-queries
 title: Structure Log Analytics queries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Structure Log Analytics queries
   description: "Structure Log Analytics queries"
   ms.date: 08/22/2024

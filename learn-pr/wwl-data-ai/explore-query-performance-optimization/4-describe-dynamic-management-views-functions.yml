@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-query-performance-optimization.describe dynamic management views and functions
 title: Describe dynamic management views and functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe dynamic management views and functions
   description: "Describe dynamic management views and functions"
   ms.date: 06/28/2023

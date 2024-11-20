@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio
 title: What is Azure AI Studio?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure AI Studio?
   description: Discover core features and capabilities of Azure AI Studio.
   author: wwlpublish
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-ai-studio.md)]
+

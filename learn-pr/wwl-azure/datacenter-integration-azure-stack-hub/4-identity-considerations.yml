@@ -2,6 +2,8 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.identity-considerations
 title: Choose an identity provider
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose an identity provider
   description: "Choose an identity provider"
   ms.date: 03/15/2022

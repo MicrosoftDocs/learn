@@ -38,11 +38,7 @@ Regardless of the storage size, you can also scale up and down the desired limit
 
 #### Network connectivity
 
-Azure Database for MySQL - Flexible Server supports the two connectivity methods, public access and private access.
-
-> [!NOTE]  
-> In the Azure portal, you select the connectivity method on the **Networking** tab under **Network connectivity**during the server creation process.
-> You can also access the network connectivity options from the Azure portal's **Flexible server deployment** page, **Networking** tab.
+Azure Database for MySQL - Flexible Server supports the three connectivity methods, public access, private access and a private link.
 
 :::image type="content" source="../media/what-azure-database-mysql/2-mysql-network-connectivity.png" alt-text="Screenshot of the Networking tab of displaying the networking settings for a new Azure Database for MySQL server.":::
 
@@ -58,11 +54,15 @@ With public access, which is provided via an external endpoint, you must explici
 
 ##### Private access
 
-Use virtual network integration support for private access via designated Azure virtual networks. If you enable this option, the server automatically blocks connections that originate from the Internet.
+Use virtual network integration support for private access via designated Azure virtual networks. You can use private access to securely connect to a MySQL flexible server from within the same VNet, from a different VNet using peering, or even from on-premises using an ExpressRoute or VPN connection. If you enable this option, the server automatically blocks connections that originate from the Internet.
 
 > [!NOTE]  
 
 > Before enabling private access, custom Domain Name Service (DNS) name resolution must be implemented. For more information, see [Private Network Access using virtual network integration for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/concepts-networking-vnet).
+
+##### Private link
+
+Private link provides a private IP address endpoint within a VNet subnet to connect to the MySQL flexible server directly. Azure Private Link essentially brings Azure services inside your private VNet via an IP address like any other VNet resource. You can create several private endpoints, for example one per connecting application or Azure PaaS resource. Combined with NSG firewall rules, private links provide fine-grained control over which services can access the database.
 
 By default, the server enforces Transport Layer Security (TLS 1.2) to help protect incoming network communication.
 
@@ -99,6 +99,8 @@ Azure Database for MySQL - Flexible Server offers numerous options for optimizin
   - The amount of storage
   - IOPS
   - The backup retention period
+  
+  Additionally, you can also enable autoscale IOPS functionality to automatically adjust IOPS based on workload demands. Unlike the Pre-provisioned IOPS, which specifies a fixed IOPS limit and is paid for regardless of usage, Autoscale IOPS lets you pay only for the number of I/O operations that you consume.
 
 - **The ability to stop and start the server on-demand**. The compute tier billing stops as soon as you stop the server. This ability can help you minimize costs during development, testing, and production workloads with a reliably predictable schedule.
 - **The Burstable compute tier**. Take advantage of the Burstable compute tier for competitive pricing for your workloads that require low CPU utilization with occasional CPU usage spikes.

@@ -2,6 +2,8 @@
 uid: learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-identity-provider
 title: Recommend an identity provider
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend an identity provider
   description: "Recommend an identity provider"
   ms.date: 06/02/2023

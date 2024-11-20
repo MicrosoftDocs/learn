@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 05/31/2024
+  ms.date: 10/24/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

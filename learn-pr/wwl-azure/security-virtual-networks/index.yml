@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.security-virtual-networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement security for virtual networks
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources."
   ms.date: 07/04/2024

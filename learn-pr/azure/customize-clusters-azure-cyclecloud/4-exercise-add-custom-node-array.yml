@@ -2,6 +2,8 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.exercise-add-custom-node-array
 title: Exercise - Add a custom node array to an HPC cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a custom node array to an HPC cluster
   description: This unit describes the process of adding a custom node array to an HPC cluster by using an Azure CycleCloud template.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-add-custom-node-array.md)]
+

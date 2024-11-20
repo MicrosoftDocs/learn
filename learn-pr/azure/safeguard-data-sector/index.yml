@@ -2,6 +2,8 @@
 uid: learn.azure.safeguard-data-sector
 title: Safeguard public sector data with Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Safeguard public sector data with Azure
   description: Conceptual introduction to data residency and sovereignty and overview of the options provided by Azure for public agencies to protect their data in the cloud. 
   ms.service: azure-government
@@ -53,3 +55,4 @@ units:
 - learn.azure.safeguard-data-sector.10-summary
 badge: 
   uid: learn.azure.safeguard-data-sector.badge
+

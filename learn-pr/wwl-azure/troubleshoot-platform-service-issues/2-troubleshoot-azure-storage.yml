@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-services
 title: Troubleshoot Azure Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Azure Storage
   description: "Troubleshoot Azure Storage"
   ms.date: 04/27/2023

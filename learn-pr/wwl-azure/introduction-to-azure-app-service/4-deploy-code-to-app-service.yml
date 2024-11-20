@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-app-service.deploy-code-to-app-service
 title: Deploy to App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy to App Service
   description: "Deploy to App Service"
   ms.date: 09/30/2024

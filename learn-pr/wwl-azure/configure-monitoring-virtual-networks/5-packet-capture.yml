@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-virtual-networks.packet-capture
 title: Packet capture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Packet capture
   description: "Packet capture"
   ms.date: 10/25/2023

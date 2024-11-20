@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-for-storage-cdns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop for storage on CDNs
   description: "Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET."
   ms.date: 07/19/2024

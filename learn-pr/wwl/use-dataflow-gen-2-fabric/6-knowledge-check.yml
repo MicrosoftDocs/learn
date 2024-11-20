@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/17/2024
-  author: wwlpublish
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
@@ -14,7 +14,6 @@ metadata:
     - build-2023-fabric
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "What is a Dataflow Gen2?"
     choices:
@@ -31,7 +30,7 @@ quiz:
     choices:
     - content: "Real-time intelligence."
       isCorrect: false
-      explanation: "Incorrect. Real-time intelligence is for Kusto workloads."
+      explanation: "Incorrect. Real-time intelligence is for streaming and Kusto workloads."
     - content: "Data warehouse."
       isCorrect: false
       explanation: "Incorrect. The Data warehouse workload is primarily for importing data."

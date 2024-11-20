@@ -39,7 +39,7 @@ Let's get more specific about the definitions for a trigger and an action:
 
 - An *action* is an operation that executes a specific task in your workflow. Actions run after a trigger activates or another action completes.
 
-A *connector* is a group with all related triggers and actions, usually associated with a single service, system, or other grouping. Let's look at a few examples.
+A *connector* is a group with all related triggers and actions, typically associated with a single service, system, or other grouping. Let's look at a few examples.
 
 The **Bing Search** connector lets your logic app workflow interact with the Bing Search service. The industry news monitoring app can use a trigger from the **Bing Search** connector to determine when new relevant articles are available. The following diagram shows the **Bing Search** connector with its trigger and actions:
 
@@ -71,18 +71,18 @@ Azure Logic Apps automatically makes the return values available to all subseque
 
 ## What are control actions?
 
-Most workflows need to run different actions, based on the data that's processed. For example, a workflow might route an expense report to a different manager, based on the expense amount. In the industry news monitoring app, the workflow needs to branch, based on an article's sentiment score. The following diagram shows the flowchart for the industry news monitoring app and highlights the control logic:
+Most workflows need to run different actions, based on the data that needs processing. For example, a workflow might route an expense report to a different manager, based on the expense amount. In the industry news monitoring app, the workflow needs to branch, based on an article's sentiment score. The following diagram shows the flowchart for the industry news monitoring app and highlights the control logic:
 
 :::image type="content" source="../media/news-monitoring-control-logic.png" alt-text="Diagram shows the branches based on article sentiment in the industry news monitoring app." border="false" lightbox="../media/news-monitoring-control-logic.png":::
 
-*Control actions* are special actions built-in to Azure Logic Apps that provides these control constructs:
+*Control actions* are special actions built into Azure Logic Apps that provide workflow control constructs, for example:
 
-- *Condition* action controlled by a Boolean expression.
-- *Switch* action.
-- *For each* and *until* loops.
-- Unconditional *branch* instructions.
+- The *Condition* action, which is controlled by a Boolean expression.
+- The *Switch* action, which is controlled by cases and a default case.
+- The *Until* and *For each* loop actions, which repeat actions and are controlled by Boolean expressions.
+- Unconditional **parallel branch** instructions.
 
-The following diagram shows how to use the *condition* action in the workflow for the industry news monitoring app:
+The following diagram shows how to use the **Condition** action in the workflow for the industry news monitoring app:
 
 :::image type="content" source="../media/news-monitoring-control-action.png" alt-text="Diagram shows the industry news monitoring workflow with the built-in control action that chooses branches, based on article sentiment." border="false" lightbox="../media/news-monitoring-control-action.png":::
 

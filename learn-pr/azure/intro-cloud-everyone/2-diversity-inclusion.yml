@@ -2,6 +2,8 @@
 uid: learn.azure.intro-cloud-everyone.diversity-inclusion
 title: Why do we need diversity and inclusion?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Why do we need diversity and inclusion?
   description: You learn about diversity and inclusion.
   ms.date: 04/30/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-diversity-inclusion.md)]
+

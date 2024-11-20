@@ -2,6 +2,8 @@
 uid: learn.hpc-storage-considerations.7-parallel-file-systems
 title: Parallel file systems
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Parallel file systems
   description: After you complete this unit, you'll be more familiar with the main parallel file-system features.
   ms.date: 04/04/2024
@@ -25,3 +27,4 @@ quiz:
     - content: "The creation of a large number of small files."
       isCorrect: false
       explanation: "Incorrect. The creation of a large number of small files might generate a significant amount of metadata."
+

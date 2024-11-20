@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-files-file-sync
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Files and Azure File Sync
   description: Learn how to configure Azure Files for SMB cloud file shares and how to use Azure File Sync to transform Windows Server into a quick cache of your Azure file share.
   ms.date: 04/04/2024
@@ -46,3 +48,4 @@ units:
 - learn.wwl.configure-azure-files-file-sync.summary-resources
 badge:
   uid: learn.wwl.configure-azure-files-file-sync.badge
+

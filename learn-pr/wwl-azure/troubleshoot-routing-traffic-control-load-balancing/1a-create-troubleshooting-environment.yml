@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.create-troubleshooting-environment
 title: Set up troubleshooting environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up troubleshooting environment
   description: "Set up troubleshooting environment"
   ms.date: 04/27/2023

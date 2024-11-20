@@ -82,4 +82,4 @@ If you’re using the object Explorer from the workspace to query your Warehouse
 
 :::image type="content" border="false" source="../media/4-query-using-workspace.gif" alt-text="Animated GIF showing how to query other Warehouses in a workspace from the Fabric workspace.":::
 
-When using T-SQL, data can be efficiently loaded into a warehouse in Microsoft Fabric through the COPY statement, or from other warehouses and lakehouses within the same workspace, allowing for seamless data management and analysis.
+Data can be efficiently loaded into a warehouse in Microsoft Fabric through the COPY statement, or from other warehouses and lakehouses within the same workspace, allowing for seamless data management and analysis.
