@@ -34668,6 +34668,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/7-summary.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/2-use-azure-cli-v2.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
