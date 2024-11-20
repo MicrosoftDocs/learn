@@ -46,10 +46,9 @@ The rule package in an EDM SIT defines:
 
 - **Matches** specify the primary element used for exact lookups, such as a regular expression or a function.
 - **Classification** determines the type of sensitive information being searched for.
-- **Supporting elements** provide additional context, helping refine the accuracy of the match. For instance, finding "SSN" near a social security number increases confidence.
 - **Confidence levels** measure the likelihood of a match, based on how much supporting evidence is present.
 - **Proximity** defines the allowable character distance between the primary and supporting elements.
-- **Supporting elements** help reduce false positives by ensuring that detected data is correct within context.
+- **Supporting elements** provide additional context, improving accuracy by reducing false positives and increasing confidence. For instance, finding "SSN" near a social security number helps confirm it.
 
 ### Primary and secondary support elements
 
