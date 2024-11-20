@@ -35,7 +35,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.introduction
-- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.create-component
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline-designer
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.exercise
