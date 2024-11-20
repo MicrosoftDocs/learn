@@ -4127,3 +4127,48 @@ achievements:
   title: Configure network routing and endpoints
   summary: Learn how to configure network routes, including endpoints and private links.
   iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.cpp-write-your-first-program.badge
+  type: badge
+  title: Write your first program in C++
+  summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy
+  type: trophy
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
+  iconUrl: /training/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning.trophy
+  type: trophy
+  title: Use notebooks for experimentation in Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning notebooks for experimentation. Similar to Jupyter, the notebooks are ideal for exploring your data and developing a machine learning model.
+  iconUrl: /training/achievements/use-notebooks-for-experimentation-in-azure-machine-learning.svg
+- uid: learn.wwl.work-compute-azure-machine-learning.trophy
+  type: trophy
+  title: Work with compute in Azure Machine Learning
+  summary: Learn how to work with compute targets and environments in the Azure Machine Learning workspace.
+  iconUrl: /training/achievements/work-with-compute-in-azure-machine-learning.svg
+- uid: learn.wwl.work-data-azure-machine-learning.trophy
+  type: trophy
+  title: Work with data in Azure Machine Learning
+  summary: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
+  iconUrl: /training/achievements/work-data-azure-machine-learning.svg
+- uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge
+  type: badge
+  title: Deploy deep learning workloads to production with Azure Machine Learning
+  summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
+  iconUrl: /training/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
+- uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.badge
+  type: badge
+  title: Preprocess large datasets with Azure Machine Learning
+  summary: Choose GPU compute in Azure Machine Learning when training compute-intensive models. To reduce the time needed to process the data, store your data efficiently and use a data manipulation library compatible with GPU compute.
+  iconUrl: /training/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
+- uid: learn.wwl.train-compute-azure-machine-learning.badge
+  type: badge
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Train compute-intensive models with GPU compute in Azure Machine Learning. By monitoring workloads, you can find the optimal compute configuration. Distributed training allows you to train on multiple nodes to speed up training time.
+  iconUrl: /training/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.train-models-azure-machine-learning-cli-v2.trophy
+  type: trophy
+  title: Train models in Azure Machine Learning with the CLI (v2)
+  summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
+  iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
