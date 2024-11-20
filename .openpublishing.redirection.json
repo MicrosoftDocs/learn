@@ -34533,6 +34533,11 @@
       "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/3-efficient-data-storage-options.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/5-exercise-preprocess-data-rapids.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
