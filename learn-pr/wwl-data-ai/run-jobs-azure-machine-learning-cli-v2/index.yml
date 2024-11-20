@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.introduction
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.run-python-script-as-training-job
-- learn.wwl.run-jobs-azure-machine-learning-cli-v2.exercise-create-basic-training-job
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.run-hyperparameter-tuning-job
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.exercise-run-sweep-job
 - learn.wwl.run-jobs-azure-machine-learning-cli-v2.knowledge-check
