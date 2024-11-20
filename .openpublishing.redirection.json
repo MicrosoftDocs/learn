@@ -34798,6 +34798,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/4-exercise-train-track-model-mlflow.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
