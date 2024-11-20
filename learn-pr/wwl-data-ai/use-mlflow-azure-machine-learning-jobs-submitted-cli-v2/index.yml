@@ -30,7 +30,6 @@ roles:
 products:
 - azure-machine-learning
 units:
-- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
 badge:
   uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge
 
