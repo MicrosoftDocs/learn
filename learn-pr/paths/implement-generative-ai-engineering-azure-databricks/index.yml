@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-generative-ai-engineering-azure-databricks
+metadata:
+  title: Implement Generative AI engineering with Azure Databricks
+  description: Generative Artificial Intelligence (AI) engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
+  ms.date: 08/19/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: learning-path
+title: Implement Generative AI engineering with Azure Databricks
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and Azure Databricks. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path and the [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) module first.
+summary: |
+  Generative Artificial Intelligence (AI) engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
+iconUrl: /training/achievements/generic.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+subjects:
+- artificial-intelligence
+- machine-learning
+modules:
+- learn.wwl.introduction-language-models-databricks
+- learn.wwl.retrieval-augmented-generation-azure-databricks
+- learn.wwl.multistage-reasoning-azure-databricks
+- learn.wwl.fine-tune-azure-databricks
+- learn.wwl.evaluate-language-models-azure-databricks
+- learn.wwl.responsible-language-models-azure-databricks
+- learn.wwl.implement-llmops-azure-databricks
+trophy:
+  uid: learn.wwl.implement-generative-ai-engineering-azure-databricks.trophy

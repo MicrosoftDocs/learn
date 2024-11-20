@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.introduction-azure-database-postgresql
 title: Introduction to Azure Database for PostgreSQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Database for PostgreSQL
   description: "Introduction to Azure Database for PostgreSQL"
   ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 19

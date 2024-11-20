@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-language-models-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Evaluate language models with Azure Databricks
+  description: Evaluate language models with Azure Databricks
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Evaluate language models with Azure Databricks
+summary: Learn to compare Large Language Model (LLM) and traditional Machine Learning (ML) evaluations, understand their relationship with AI system evaluation, and explore various LLM evaluation metrics and specific task-related evaluations.
+abstract: |
+  In this module, you learn how to:
+  - Compare LLM and traditional ML evaluations.
+  - Describe the relationship between LLM evaluation and evaluation of entire AI systems.
+  - Describe generic LLM evaluation metrics like accuracy, perplexity, and toxicity.
+  - Describe LLM-as-a-judge for evaluation.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.evaluate-language-models-azure-databricks.introduction
+- learn.wwl.evaluate-language-models-azure-databricks.compare-evaluations
+- learn.wwl.evaluate-language-models-azure-databricks.ai-systems
+- learn.wwl.evaluate-language-models-azure-databricks.standard-metrics
+- learn.wwl.evaluate-language-models-azure-databricks.language-model-judge
+- learn.wwl.evaluate-language-models-azure-databricks.exercise
+- learn.wwl.evaluate-language-models-azure-databricks.knowledge-check
+- learn.wwl.evaluate-language-models-azure-databricks.summary
+badge:
+  uid: learn.wwl.evaluate-language-models-azure-databricks.badge
+

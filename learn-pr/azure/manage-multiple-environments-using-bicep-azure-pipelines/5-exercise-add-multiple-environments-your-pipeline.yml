@@ -2,14 +2,18 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-add-multiple-environments-your-pipeline
 title: Exercise - Add multiple environments to your pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add multiple environments to your pipeline
   description: Update a deployment pipeline to deploy to two environments, and use a pipeline template with parameters.
   ms.date: 02/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-add-multiple-environments-your-pipeline.md)]
+

@@ -2,15 +2,19 @@
 uid: learn.wwl.plan-form-recognizer-solution.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 09/16/2022
-  author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Summary
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 09/04/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

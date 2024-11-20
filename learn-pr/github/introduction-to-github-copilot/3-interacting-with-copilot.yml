@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot.interacting-with-copilot
+title: Interact with Copilot
+metadata:
+  title: Interact with Copilot
+  description: By understanding the features and capabilities of GitHub Copilot, you can maximize your interaction with it in your development environment.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 8/27/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-interacting-with-copilot.md)]

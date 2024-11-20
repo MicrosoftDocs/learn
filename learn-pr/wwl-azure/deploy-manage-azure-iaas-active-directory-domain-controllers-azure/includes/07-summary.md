@@ -1,7 +1,6 @@
-
 With more services available online and in the cloud, the Contoso IT team has found that they must define and manage cloud identities. Contoso needs to be able to use cloud identities to authenticate and authorize their users when they try to access company resources. The IT team is considering deploying domain controllers on Windows Server VMs in Microsoft Azure to extend authentication and identity from on-premises and into the cloud. 
 
-In this module, you learned how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure subnet. Now that you are equipped with this information, you can help the IT Staff decide whether Azure AD is the best solution for the company.
+In this module, you learned how to extend an existing Active Directory environment into Azure by placing IaaS VMs configured as domain controllers onto a specially configured Azure subnet. Now that you are equipped with this information, you can help the IT Staff decide whether Microsoft Entra ID is the best solution for the company.
 
 
 ## Learn more

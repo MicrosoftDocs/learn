@@ -1,0 +1,1 @@
+This module covered managing authorization in Microsoft Entra ID, focusing on configuring role permissions, assigning roles, implementing permissions management and Privileged Identity Management, managing roles and access reviews, and enforcing Conditional Access policies for resource access control.

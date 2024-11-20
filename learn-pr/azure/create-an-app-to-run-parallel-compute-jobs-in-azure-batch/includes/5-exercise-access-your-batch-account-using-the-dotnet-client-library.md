@@ -1,15 +1,15 @@
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-The Azure Batch client API allows you to programmatically control the creation, execution, and monitoring of all the resources in a Batch account. 
+The Azure Batch client API allows you to programmatically control creating, executing, and monitoring all the resources in a Batch account.
 
-In this exercise, we'll create a new console application and connect it to the Azure Batch account we created earlier using the Microsoft.Azure.Batch NuGet package. To test that this setup is working, we'll query the Batch account to check that **FFmpeg** has been added correctly to the account. 
+In this exercise, we'll create a new console application and connect it to the Azure Batch account we created earlier using the `Microsoft.Azure.Batch NuGet` package. To test that this setup is working, we'll query the Batch account to check that **ffmpeg** has been added correctly to the account.
 
 ## Create a local console application
 
-You'll complete the remaining exercises in this module in the Cloud Shell.
+Use Cloud Shell to complete the remaining exercises in this module.
 
-1. Launch the Cloud Shell in the Azure portal by selecting the Cloud Shell icon in the top menu of the portal.
-1. Select the Bash environment by using the dropdown menu in Cloud Shell menu bar.  
+1. Launch Cloud Shell in the Azure portal by selecting the **Cloud Shell** icon in the top menu of the portal.
+1. Use the drop-down at the top of the Cloud Shell window to select **Bash**.  
 1. Run the following commands in the Cloud Shell to make a new directory for your app:
 
     ```bash
@@ -17,7 +17,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     cd cutifypets
     ```
 
-1. Create new .NET Core console application with the `dotnet new` command, and run it:
+1. Create new .NET Core console application with the `dotnet new` command, then run it:
 
     ```bash
     dotnet new console
@@ -26,7 +26,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
 
     If you've successfully created the console app, you should see the following printed to the console:
 
-    ```bash
+    ```output
     Hello World!
     ```  
 
@@ -38,13 +38,13 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet add package Microsoft.Azure.Batch
     ```
 
-1. Run the following command in the Cloud Shell to save your resource group to an environment variable so we can use it in subsequent commands. Replace `[YOUR RESOURCE GROUP]` with the name of the resource group you selected when creating the Batch account. 
+1. Run the following command in the Cloud Shell to save your resource group to an environment variable so we can use it in subsequent commands. Replace `[YOUR RESOURCE GROUP]` with the name of the resource group you used when creating the Batch account.
 
     ```bash
     export RESOURCE_GROUP=[YOUR RESOURCE GROUP]
     ```
 
-1. You'll now store the batch account credentials in environment variables that can be accessed via the console app:
+1. Use the following commands to store the batch account credentials in environment variables that can be accessed via the console app:
 
     ```bash
     export BATCH_URL='https://'$(az batch account list --query "[?contains(name,'cuti')].accountEndpoint" --output tsv)
@@ -52,21 +52,21 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     export BATCH_KEY=$(az batch account keys list --name $BATCH_NAME --query primary -o tsv --resource-group $RESOURCE_GROUP)
     ```
 
-1. Check the stored values are correct:
+1. Use the following command to check that the stored values are correct:
 
     ```bash
     echo 'URL='$BATCH_URL 'NAME='$BATCH_NAME 'KEY='$BATCH_KEY
     ```
 
-    Make sure you have the above values set. If you have to restart the Cloud Shell at any point, you'll need to set these variables again. 
+    Make sure you have these values set. If you have to restart the Cloud Shell at any point, you'll need to set these variables again.
 
-1. Edit the `Program.cs` file in the editor:
+1. Use the following code to edit the `Program.cs` file in the editor:
 
     ```bash
     code Program.cs
     ```
 
-1. Replace all the existing code with:
+1. Replace all the existing code with the following:
 
     ```csharp
     namespace cutifypets
@@ -110,19 +110,19 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     }
     ```
 
-    Read through the above code and comments. The console app imports the Microsoft.Azure.Batch client library to add Azure Batch features. Using the environment variables you stored in the previous steps, the app opens a connection to the Batch account you created in the Azure portal. The batch client can then query properties of the services in the batch. The example code iterates through the application packages, showing the details of the ffmpeg app you uploaded.
+    Read through the preceding code and comments. The console app imports the `Microsoft.Azure.Batch` client library to add Azure Batch features. Using the environment variables you stored in the previous steps, the app opens a connection to the Batch account you created in the Azure portal. The batch client can then query properties of the services in the batch. The example code iterates through the application packages, showing the details of the ffmpeg app you uploaded.
 
-1. In the code editor, right-click and select **Save**, and then select **Quit**.
+1. In the code editor, right-click and select **Save**, then right-click and select **Quit**.
 
-1. In the Cloud Shell, compile and run the app with the following command.
+1. In the Cloud Shell, compile and run the app with the following command:
 
     ```bash
     dotnet run
     ```
 
-1. Running the app writes the application package to the console. You should see:
+1. Running the app writes the application package to the console. You should get the following result:
 
-    ```bash
+    ```output
     Installed app: ffmpeg(3.4)
     ```
 

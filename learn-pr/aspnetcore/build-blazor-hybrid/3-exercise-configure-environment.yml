@@ -4,11 +4,14 @@ title: Exercise - Create and run a Blazor Hybrid app
 metadata:
   title: Exercise - Create and run a Blazor Hybrid app
   description: Create your first Blazor Hybrid app powered by .NET MAUI and deploy it to desktop and mobile platforms.
-  ms.date: 07/22/2022
+  ms.date: 10/20/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+  zone_pivot_groups: vsandcode
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-configure-environment.md)]

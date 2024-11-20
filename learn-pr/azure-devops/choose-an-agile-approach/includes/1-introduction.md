@@ -17,7 +17,7 @@ If you'd rather do only this module, go through [Introduction to Azure DevOps](/
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
+You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
 
 :::row:::
 

@@ -1,19 +1,9 @@
-Unless you're building an entirely new organization, one of the significant challenges with any DevOps Transformation Project is taking actions that conflict. At least in some way with ongoing business states.
+Unless you're building an entirely new organization, one of the significant challenges of any DevOps Transformation Project is dealing with actions that conflict in some way with ongoing business states.<br>
 
-The first challenge is the availability of staff. Suppose the staff members leading the transformation project are also involved in existing day-to-day work within the organization.
+The first challenge is the availability of staff. If the staff members leading the transformation project are also involved in existing day-to-day work within the organization, it will be challenging for them to focus on the transformation when their current role directly impacts customer outcomes. We all know that desperate situations involving customers will always win over a long-term project like DevOps transformations.
 
-It will be challenging to focus on the transformation when their current role directly impacts customer outcomes.
+Another issue is how the organization operates. Implementing existing processes and procedures to support current business outcomes can make it difficult to disrupt the status quo required for a true DevOps Transformation.
 
-We all know desperate situations involving customers will always win over a long-term project, like DevOps Transformations.
+In the book "Beyond the Idea: How to Execute Innovation," Dr. Vijay Govindarajan and Dr. Chris Trimble noted that successful innovation often occurs despite existing organizational processes. They concluded that it only works by creating a separate team to pursue the transformation.
 
-Another issue will be how the organization operates—implementing existing processes and procedures to support current business outcomes.
-
-The disruption required for a true DevOps Transformation will usually challenge existing processes and procedures. Doing that is often difficult.
-
-In the book "Beyond the Idea: How to Execute Innovation," Dr. Vijay Govindarajan and Dr. Chris Trimble noted when successful, they have researched what is involved in allowing Innovation to occur in organizations.
-
-It has often been despite the existing organizational processes. Concluding it only works by creating a separate team to pursue the transformation.
-
-For DevOps transformations, the separate team should be composed of staff members. Focused on and measured the transformation outcomes and not involved in the day-to-day operational work. The team might also include external experts that can fill the knowledge gaps—also helping to advise on processes that are new to the existing staff members.
-
-Ideally, the staff members recruited should already be well-regarded throughout the organization. They should offer a broad knowledge base to think outside the box as a group.
+For DevOps transformations, the separate team should be composed of staff members focused on and measured by the transformation outcomes, not involved in the day-to-day operational work. The team might also include external experts who can fill knowledge gaps and advise on processes that are new to existing staff members. Ideally, the staff members recruited should already be well-regarded throughout the organization and offer a broad knowledge base to think outside the box as a group.

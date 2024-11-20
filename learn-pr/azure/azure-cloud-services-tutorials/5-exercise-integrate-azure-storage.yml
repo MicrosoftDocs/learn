@@ -4,11 +4,10 @@ title: Exercise - Integrate Azure storage
 metadata:
   title: Exercise - Integrate Azure storage
   description: Introduction to Integrate Azure storage
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 01/11/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-integrate-azure-storage.md)]

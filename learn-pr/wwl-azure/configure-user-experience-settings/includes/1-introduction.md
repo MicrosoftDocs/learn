@@ -6,12 +6,13 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Configure user settings through group policies for Azure Virtual Desktop.
- -  Configure user settings through Endpoint Manager policies for Azure Virtual Desktop.
- -  Configure session timeout properties for Azure Virtual Desktop.
- -  Configure device redirections for Azure Virtual Desktop.
- -  Configure Universal Print.
- -  Troubleshoot user profile issues.
+ -  Connect to Azure Virtual Desktop with the Remote Desktop client for Windows
+ -  Configure session timeout properties
+ -  Configure user settings through group policies
+ -  Implement the Start Virtual Machine on Connect feature
+ -  Configure Universal Print
+ -  Configure device redirections
+ -  Troubleshoot Azure Virtual Desktop clients
 
 ## Prerequisites
 

@@ -15,7 +15,7 @@ Here's an example of a tuple with three elements:
 let tuple_e = ('E', 5i32, true);
 ```
 
-The following table shows the index, value and data type for each element in the tuple:
+The following table shows the index, value, and data type for each element in the tuple:
 
 Element | Value | Data type
 ---|---|---
@@ -82,7 +82,7 @@ Struct types are often defined outside of the `main` function and other function
 
 ### Classic struct
 
-Like a function, the body of a classic struct is defined inside curly brackets `{}`. Each field in the classic struct is given a name that's unique within the struct. The type for each field is specified with the syntax `: <type>`. The fields in the classic struct are specified as a comma-separated list `<field>, <field>, ...`. A classic struct definition **doesn't** end with a semicolon.
+Like a function, the body of a classic struct is defined inside curly braces `{}`. Each field in the classic struct is given a name that's unique within the struct. The type for each field is specified with the syntax `: <type>`. The fields in the classic struct are specified as a comma-separated list `<field>, <field>, ...`. A classic struct definition **doesn't** end with a semicolon.
 
 ```rust
 // Classic struct with named fields
@@ -155,7 +155,7 @@ You can interact with the example code in this [Rust Playground][RustPlay-struct
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.
 
 <!-- Links -->
 

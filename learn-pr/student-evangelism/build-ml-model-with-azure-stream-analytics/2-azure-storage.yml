@@ -2,14 +2,16 @@
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.2-azure-storage
 title: Exercise - Create a storage account and deploy virtual cameras
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a storage account and deploy virtual cameras
   description: Create a storage account to store wildlife photos and deploy virtual cameras to upload photos.
   ms.date: 06/04/2022
   author: acomfort248
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-storage.md)]
+  [!INCLUDE[](includes/2-azure-storage.md)]
+

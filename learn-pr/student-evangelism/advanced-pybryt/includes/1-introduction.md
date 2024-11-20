@@ -2,7 +2,7 @@ PyBryt is an open-source Python library for providing specific feedback to stude
 
 This module is a follow-up to the [Introduction to PyBryt](/training/modules/introduction-pybryt/) module and covers more advanced subjects that build on the information presented in the first module.
 
-## What will you learn?
+## What are you going to learn?
 
 In this module, you learn about options for configuring annotations, combining annotations with relational annotations, and checking the time complexity of student code. You also learn about how PyBryt can be incorporated in a grading pipeline.
 

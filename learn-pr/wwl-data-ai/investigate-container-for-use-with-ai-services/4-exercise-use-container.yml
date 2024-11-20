@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-ai-services.exercise-use-container
+title: Exercise - Use a container
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Use a container
+  description: Exercise - Use a container
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+labId: 152412
+labModal: true
+content: |
+  [!include[](includes/4-exercise-use-container.md)]
+

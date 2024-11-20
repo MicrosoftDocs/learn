@@ -1,6 +1,6 @@
 In this exercise, you'll:
 
-- View sign-in logs for your Azure Active Directory instance.
+- View sign-in logs for your Microsoft Entra instance.
 - Change columns to view in your sign-in logs.
 - Filter data to include in your sign-in logs view.
 - Review a failed user sign-in.
@@ -9,11 +9,13 @@ In this exercise, you'll:
 
 If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## View Azure Active Directory sign-in logs
+<a name='view-azure-active-directory-sign-in-logs'></a>
 
-To see the sign-in logs for Azure Active Directory:
+## View Microsoft Entra sign-in logs
 
-1. Navigate to your [sign-ins log](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns).
+To see the sign-in logs for Microsoft Entra ID:
+
+1. Navigate to your [sign-in log](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns).
 
 1. Click a record in the list to see the **Activity Details** page.
 
@@ -41,15 +43,15 @@ To create a failed sign-in:
 4. Try to sign in with the new account using an incorrect password.
     :::image type="content" source="../media/enter-password-dialog.png" alt-text="Screenshot that shows the Enter password dialog for a failed sign-in.":::
 
-5. Wait for 5 minutes to ensure that you can find a record of the sign-in in the sign-ins log.
+5. Wait for 5 minutes to ensure that you can find a record of the sign-in in the sign-in log.
 
 
 
 ## Review a failed sign-in
 
-1. Sign in to your Azure portal as administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Reports Reader.
 
-2. Navigate to your [sign-ins log](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns).
+2. Navigate to your [sign-in log](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns).
 
 3. In the toolbar on the top, click **Add filters**, select **Status**, and then click **Apply**.
     :::image type="content" source="../media/select-status-filter.png" alt-text="Screenshot that shows how to select Status field as filter.":::
@@ -62,7 +64,3 @@ To create a failed sign-in:
 6. Review Britta's sign-in information.
     :::image type="content" source="../media/activity-details-sign-ins.png" alt-text="Screenshot that shows the details of a failed sign-in.":::
  
-
-
-
-

@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.understand-continuous-diagnostics-mitigation-program-cdm
 title: Understand the Continuous Diagnostics and Mitigation program (CDM)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the Continuous Diagnostics and Mitigation program (CDM)
   description: "Understand the Continuous Diagnostics and Mitigation program (CDM)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

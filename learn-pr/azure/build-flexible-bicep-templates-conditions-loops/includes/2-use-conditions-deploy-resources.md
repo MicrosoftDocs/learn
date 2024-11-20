@@ -1,8 +1,8 @@
 You can use conditions in your Bicep code to deploy resources only when specific constraints are in place.
 
-For example, at your toy company, you need to deploy resources to various environments. When you deploy them to a production environment, you need to ensure that auditing is enabled for your Azure SQL logical servers. But when you deploy resources to development environments, you don't want to enable auditing. You do want to use a single template to deploy resources to all your environments.
+For example, at your toy company, you need to deploy resources to various environments. When you deploy them to a production environment, you need to ensure that auditing is enabled for your Azure SQL logical servers. But when you deploy resources to development environments, you don't want to enable auditing. You want to use a single template to deploy resources to all your environments.
 
-In this unit, you learn how to deploy resources conditionally.
+In this unit, you'll learn how to deploy resources conditionally.
 
 ## Use basic conditions
 
@@ -40,9 +40,9 @@ Notice that the storage account has a condition too. This means that it won't be
 
 Notice that this Bicep code uses the question mark (`?`) operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions are evaluated to the details from the storage account. When the code is deployed to a non-production environment, the expressions evaluate to an empty string (`''`).
 
-You might wonder why this code is necessary, because `auditingSettings` and `auditStorageAccount` both have the same condition, and so you'll never need to deploy a SQL auditing settings resource without a storage account. Although this is true, Azure Resource Manager evaluates the property expressions before the conditionals on the resources. So, if the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
+You might wonder why this code is necessary, because `auditingSettings` and `auditStorageAccount` both have the same condition, and so you'll never need to deploy a SQL auditing settings resource without a storage account. Although this is true, Azure Resource Manager evaluates the property expressions before the conditionals on the resources. That means that if the Bicep code doesn't have this expression, the deployment will fail with a `ResourceNotFound` error.
 
 > [!NOTE]
 > You can't define two resources with the same name in the same Bicep file and then conditionally deploy only one of them. The deployment will fail, because Resource Manager views this as a conflict.
 
-If you have several resources, all with the same condition for deployment, consider using Bicep modules. You can create a module that deploys all the resources, and then put a condition on the module declaration in your main Bicep file.
+If you have several resources, all with the same condition for deployment, consider using Bicep modules. You can create a module that deploys all the resources, then put a condition on the module declaration in your main Bicep file.

@@ -6,9 +6,8 @@ metadata:
   description: Advanced options for customizing the behavior of annotations
   author: chrispyles
   ms.author: leestott
-  ms.date: 1/10/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/06/2024
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-annotation-options.md)]
@@ -29,13 +28,13 @@ quiz:
           explanation: "Not quite. The `group` and `limit` options are unrelated."
     - content: "What is the purpose of the `group` option?"
       choices:
-        - content: "To group together annotations that represent the same variable"
+        - content: "To group together annotations that represent the same variable."
           isCorrect: false
-          explanation: "Not quite. This is what the `name` option is for."
-        - content: "To prevent duplicate messages from being provided to the student"
+          explanation: "Not quite. This purpose is what the `name` option is for."
+        - content: "To prevent duplicate messages from being provided to the student."
           isCorrect: false
-          explanation: "Not quite. This is one effect of the `name` option."
-        - content: 'To group together annotations that represent a single problem so that they can be run as a subset of the whole reference'
+          explanation: "Not quite. This result is one effect of the `name` option."
+        - content: 'To group together annotations that represent a single problem so that they can be run as a subset of the whole reference.'
           isCorrect: true
           explanation: "Correct!"
     - content: |

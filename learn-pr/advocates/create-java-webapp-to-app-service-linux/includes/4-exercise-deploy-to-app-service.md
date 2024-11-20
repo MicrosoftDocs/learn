@@ -8,13 +8,13 @@ Azure provides Azure App Service as a platform as a service (PaaS) for running T
 
 ## Get sample JSF applications
 
-To deploy a Java web application, you can get a PrimeFaces JavaServer Faces (JSF) web application from GitHub as shown here.
+To deploy a Java web application, you can get a PrimeFaces JavaServer Faces (JSF) web application from GitHub as shown here:
 
 ```bash
 git clone https://github.com/yoshioterada/Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
 ```
 
-Then you'll see the following files in the directory:
+After you clone, you'll see the following files in the directory:
 
 ```
 Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
@@ -47,12 +47,12 @@ Deploy-PrimeFaces-JSF-Web-App-on-Tomcat-9.0
 
 ## Maven Plugin for Azure App Service
 
-Microsoft provides the `Maven Plugin for Azure App Service` to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure.
-Execute the following command to use `Maven Plugin for Azure App Service`.
+Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure.
+Execute the following command to use Maven Plugin for Azure App Service.
 
 ### Configure the Maven Plugin for Azure App Service
 
-To configure the `Maven Plugin for Azure App Service`, execute the following command:
+To configure the Maven Plugin for Azure App Service, execute the following command:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -62,14 +62,14 @@ After the command, some questions will appear at the prompt, so enter and select
 
 |  Item  |  Input value  |
 | ---- | ---- |
-|  Subscription  |  Choose the right subscription |
+|  Subscription  |  Choose your Azure subscription |
 |  Define value for OS  |  1: Linux |
 |  Define value for pricing tier | P1v2 |
 |  Define value for Java version  |  1: Java 8 or 2: Java 11 |
 |  Define value for runtime stack  |  3: TOMCAT 9.0 |
 |  Confirm (Y/N)  |  Y |
 
-After you execute the command, the results will appear:
+After you execute the command, these results will appear:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
@@ -172,13 +172,13 @@ If you want to change the resource group name, instance name, and deployment loc
 
 ### Compile and deploy to Azure App Service
 
-Now that the settings for deploying to Azure App Service are complete, compile the source code again.
+Now that the settings for deploying to Azure App Service are complete, compile the source code again:
 
 ```bash
 mvn clean package
 ```
 
-Once compiled, use the `Maven Plugin for Azure Web Apps` command to deploy your application. Execute the following command:
+Once compiled, use the Maven Plugin for Azure Web Apps command to deploy your application. Execute the following command:
 
 ```bash
 mvn azure-webapp:deploy
@@ -196,7 +196,7 @@ When the deployment is completed, the following message will be output.
 [INFO] ------------------------------------------------------------------------
 ```
 
-The public URL of the deployed application is displayed in `Successfully deployed the artifact to`. Access your URL with a browser.
+The public URL of the deployed application is displayed in the `Successfully deployed the artifact to` line. Access your URL with a browser, as in the following example:
 
 `https://azure-javaweb-app-1601463451101.azurewebsites.net`
 
@@ -210,10 +210,10 @@ To access the log stream, execute the following CLI command:
 az webapp log tail -g azure-javaweb-app -n azure-javaweb-app-1601463451101
 ```
 
-Then you can see the following result:
+You'll get the following result:
 
 :::image type="content" source="../media/azure-cli-log-stream.png" alt-text="Screenshot that shows the execution of the log stream.":::
 
 ## Exercise summary
 
-In this unit, you learned how to create and package a Java web application, how to use the `Maven Plugin for Azure Web Apps`, and how to deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java web applications.
+In this unit, you learned how to create and package a Java web application, how to use the Maven Plugin for Azure Web Apps, and how to deploy your application to Azure App Service. These steps are applicable not only for JSF applications but also most Java web applications.

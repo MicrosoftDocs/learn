@@ -2,9 +2,9 @@
 
 Azure provides several *built-in roles* to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
-* **Owner**, which has full access to all resources, including the right to delegate access to others.
-* **Contributor**, which can create and manage all types of Azure resources but can’t grant access to others.
-* **Reader**, which can view existing Azure resources.
+* **Owner**: Has full access to all resources, including the right to delegate access to others.
+* **Contributor**: Can create and manage all types of Azure resources, but can’t grant access to others.
+* **Reader**: Can view existing Azure resources.
 
 ## Role definitions
 
@@ -34,27 +34,15 @@ AssignableScopes : {/}
 
 Try the same for the **Contributor** and **Reader** roles to see the actions allowed and denied.
 
-## Examine the built-in roles
+## Built-in roles
 
-Next, let's explore some of the other built-in roles.
-
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
-
-1. On the Azure home page, under **Navigate**, select **Resource groups**.
-
-1. Select a resource group. Your *Resource group* pane appears.
-
-1. In the left menu pane, select the **Access control (IAM)**. The **Access control (IAM)** pane appears for your resource group.
-
-1. On the interior menu bar, select the **Roles** tab as follows to see the list of available roles.
-
-    ![Screenshot showing the roles in the portal.](../media/5-list-roles.png)
+For an in-depth examination of the RBAC and user roles in Microsoft Entra ID, see [Examine RBAC and user roles in Microsoft Entra ID](/training/modules/manage-identities-azure-active-directory/2-examine-rbac-user-roles-azure-active-directory).
 
 ## What's a role definition?
 
-A role definition is a collection of permissions. A role definition lists the operations that can be performed, such as **read, write, and delete**. It can also list the operations that can't be performed or operations related to underlying data.
+A role definition is a collection of permissions. A role definition lists the operations the role can perform, such as **read, write, and delete**. It can also list the operations that can't be performed or operations related to underlying data.
 
-As previously described, a role definition has the following structure.
+As previously described, a role definition has the following structure:
 
 | Name                 | Description |
 |----------------------|-------------|
@@ -95,7 +83,7 @@ This structure is represented as JSON when used in role-based access control (RB
 
 You can tailor the `Actions` and `NotActions` properties to grant and deny the exact permissions you need. These properties are always in the format: `{Company}.{ProviderName}/{resourceType}/{action}`.
 
-As an example, here are the actions for the three roles we looked at previously.
+As an example, here are the actions for the three roles we looked at previously:
 
 | Built-in Role | Actions | NotActions |
 | ------------- |---------| -------|
@@ -103,19 +91,19 @@ As an example, here are the actions for the three roles we looked at previously.
 |Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/elevateAccess/Action`|
 |Reader (allow all read actions)|`*/read`| - |
 
-The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.
+The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future as new resource types are added to Azure. With the **Reader** role, only the `read` action is allowed.
 
 The operations under `NotActions` are subtracted from `Actions`. With the **Contributor** role, `NotActions` removes this role's ability to manage access to resources, and also removes assigning access to resources.
 
 ### DataActions and NotDataActions
 
-Data operations are specified in the `DataActions` and `NotDataActions` properties. Data operations can be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that you can specify in `DataActions` and `NotDataActions`:
+Data operations are specified in the `DataActions` and `NotDataActions` properties. You can specify data operations separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that you can specify in `DataActions` and `NotDataActions`:
 
 * Read a list of blobs in a container
 * Write a storage blob in a container
 * Delete a message in a queue
 
-Only data operations can be added to the `DataActions` and `NotDataActions` properties. Resource providers identify which operations are data operations by setting the `isDataAction` property to `true`.  Roles that do not have data operations can omit these properties from the role definition.
+You can only add data operations to the `DataActions` and `NotDataActions` properties. Resource providers identify which operations are data operations by setting the `isDataAction` property to `true`.  Roles that don't have data operations can omit these properties from the role definition.
 
 These actions work exactly like their management cousins. You can specify the actions you want to allow (or `*` for all), then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples; you can find the [full list of actions and data actions in the resource provider documentation](/azure/role-based-access-control/resource-provider-operations):
 
@@ -133,7 +121,7 @@ Defining the **Actions** and **NotActions** properties is not enough to fully im
 
 The **AssignableScopes** property of the role specifies the scopes (subscriptions, resource groups, or resources) within which the role is available for assignment. You can make the custom role available for assignment just in the subscriptions or resource groups that need it, thus avoiding cluttering the user experience for the rest of the subscriptions or resource groups.
 
-Here are some examples.
+Here are some examples:
 
 | To | Use Scope |
 |-|-|
@@ -144,17 +132,19 @@ Here are some examples.
 
 ## Create roles
 
-Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It's preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
+Microsoft Entra ID comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It's preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 
 > [!NOTE]
-> Custom role creation requires Azure AD Premium P1 or P2, and cannot be done in the free tier.
+> Custom role creation requires Microsoft Entra ID P1 or P2; you can't create custom roles in the free tier.
 
 You can create a new role through several mechanisms:
 
-* **Azure portal**: You can use the Azure portal to create a custom role by selecting **Azure Active Directory > Roles and administrators > New custom role**.
+* **Microsoft Entra admin center**: You can use the Microsoft Entra admin center to create a custom role by selecting **Roles & admins** under **Roles & admins** in the left menu, then selecting **New custom role**.
+
+* **Azure portal**: You can use the Azure portal to create a custom role by selecting **Microsoft Entra ID** > **Roles and administrators** > **New custom role**.
 
 * **Azure PowerShell**: You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**: You can use a REST call to the Graph API to programmatically create a new role.
 
-The summary includes a link to the documentation for all three approaches.
+This module's Summary section includes a link to the documentation for these approaches.

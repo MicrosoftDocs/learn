@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.health-bot-language-understanding
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Language understanding in Azure Health Bot
   description: Language Understanding plays a fundamental role in the working of Azure Health Bot. 
+  ms.collection: TBD
   ms.date: 03/10/2023
   author: nrd26
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: azure-ai-health-bot
 title: Language understanding in Azure Health Bot
 summary: Language understanding plays a fundamental role in the working of Azure Health Bot. 
 abstract: |
@@ -28,7 +31,7 @@ prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot
 subjects:
-- chatbot
+- chatbots
 - natural-language-processing
 units:
 - learn.health-bot-language-understanding.1-introduction
@@ -41,3 +44,4 @@ units:
 - learn.health-bot-language-understanding.8-summary
 badge:
   uid: learn.student-evangelism.health-bot-language-understanding.badge
+

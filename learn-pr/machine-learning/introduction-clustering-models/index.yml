@@ -1,14 +1,20 @@
 ### YamlMime:Module
 uid: learn.machine-learning.introduction-clustering-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to clustering models by using R and tidymodels
   description: Introduction to clustering models by using R and tidymodels.
   ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: nextgen
+  ms.devlang: r
+  ms.service: azure-machine-learning
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Introduction to clustering models by using R and tidymodels
 summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
 abstract:  | 
@@ -39,3 +45,4 @@ units:
 - learn.machine-learning.introduction-clustering-models.summary
 badge:
   uid: learn.machine-learning.introduction-clustering-models.badge 
+

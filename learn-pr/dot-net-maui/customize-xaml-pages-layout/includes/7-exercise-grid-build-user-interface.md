@@ -1,4 +1,4 @@
-In this exercise, you'll use a `Grid` to arrange the views in your User Interface (UI). You'll start with another version of the TipCalculator project, and adjust it to make the UI more intuitive. You'll also move the buttons to the bottom of the page. This time you'll use a `Grid` layout rather than using `VerticalStackLayout` and `HorizontalStackLayout`. The image below shows the initial UI, and the UI that results from following the steps in this exercise:
+In this exercise, you use a `Grid` to arrange the views in your User Interface (UI). You start with another version of the TipCalculator project, and adjust it to make the UI more intuitive. You also move the buttons to the bottom of the page. This time you use a `Grid` layout rather than using `VerticalStackLayout` and `HorizontalStackLayout`. The following image shows the initial UI, and the UI that results from following the steps in this exercise:
 
 :::image type="content" source="../media/7-starter-complete.png" alt-text="Screenshot showing the starter solution, with all the labels placed vertically in using a vertical StackLayout, and the completed solution, with controls aligned and positioned using a Grid.":::
 
@@ -48,7 +48,7 @@ The starter solution contains a fully functional tip calculator app.
 
 1. Change the layout panel from `VerticalStackLayout` to `Grid` with padding of `40` units.
 
-1. Define seven rows and two columns for the `Grid`. Make all the rows `Auto` size except the fourth row. The fourth row should use `Star` so it will get all the remaining space available in the grid. Use `Star` sizing for both columns.
+1. Define seven rows and two columns for the `Grid`. Make all the rows `Auto` size except the fourth row. The fourth row should use `Star` so it gets all the remaining space available in the grid. Use `Star` sizing for both columns.
 
     ```xml
     <Grid RowDefinitions="Auto, Auto, Auto, *, Auto, Auto, Auto"
@@ -64,7 +64,7 @@ The starter solution contains a fully functional tip calculator app.
 
     :::image type="content" source="../media/7-grid-placement.png" alt-text="Screenshot showing the completed solution with a dashed line grid overlay showing where controls are located.":::
 
-    The example below shows how to set the position for the **Bill** `Label`, and the `billInput` `Entry` view:
+    The following example shows how to set the position for the **Bill** `Label`, and the `billInput` `Entry` view:
 
     ```xml
     ...
@@ -81,13 +81,13 @@ The starter solution contains a fully functional tip calculator app.
     <Slider ... Grid.ColumnSpan="2" ... />
     ```
 
-1. Locate the `Label` with text **Tip Percentage**. Set it so it will occupy the lower-left position in its rectangle:
+1. Locate the `Label` with the text **Tip Percentage**. Set it so that it occupies the lower-left position in its rectangle:
 
     ```xaml
     <Label Text="Tip Percentage" VerticalOptions="End" HorizontalOptions="Start" ... />
     ```
 
-1. Locate the `Label` named **tipPercent**. Set it so it will occupy the lower-right position in its rectangle:
+1. Locate the `Label` named **tipPercent**. Set it so that it occupies the lower-right position in its rectangle:
 
     ```xaml
     <Label x:Name="tipPercent" VerticalOptions="End" HorizontalOptions="End" ... />

@@ -2,13 +2,12 @@
 uid: learn.azure-security.configure-security-policies-to-manage-data.configure-data-classification
 title: Classify your data at rest, in process, and in transit
 metadata:
-  title: Classify your data at rest, in process, and in transit
+  title: Learn how to classify your data at rest, in process, and in transit.
   description: Classify your data
-  ms.date: 09/30/2019
+  ms.date: 01/04/2024
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-configure-data-classification.md)]

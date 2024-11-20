@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 04/19/2022
+  ms.date: 02/13/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-data-factory
 title: Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn how Azure Data Factory can orchestrate large scale data movement by using other Azure Data Platform and Machine Learning technologies.
 abstract: |
@@ -49,3 +51,4 @@ units:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.summary
 badge:
   uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.badge
+

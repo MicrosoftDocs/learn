@@ -5,10 +5,9 @@ metadata:
   description: Learn how to configure security policies and manage security alerts with the tools and services in Azure. 
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Manage security operations in Azure
 summary: |
   Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer). 
@@ -24,16 +23,15 @@ products:
 - azure
 - azure-policy
 - azure-key-vault
-- azure-active-directory
+- entra-id
 - azure-api-management
 subjects:
 - security
 modules:
-- learn.azure.protect-against-security-threats-azure
 - learn.azure-security.create-security-baselines
 - learn.azure-security.identify-threats-with-azure-security-center 
-- learn.azure-security.resolve-threats-with-azure-security-center
-- learn.azure-security.secure-vms-with-security-center
+# - learn.azure-security.resolve-threats-with-azure-security-center
+# - learn.azure-security.secure-vms-with-security-center
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.incident-response-with-alerting-on-azure
 - learn.azure.capture-application-logs-app-service

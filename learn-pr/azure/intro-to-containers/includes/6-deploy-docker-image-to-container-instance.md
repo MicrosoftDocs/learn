@@ -8,7 +8,7 @@ In this unit, you'll learn how to upload a Docker image to Azure Container Regis
 
 Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*, meaning they require authentication to push or pull images. Azure Container Registry runs in the cloud and provides similar levels of scalability and availability to other Azure services.
 
-You can create a registry using the Azure portal or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure portal or a local install of the Azure CLI. Keep in mind that you'll have to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
+You can create a registry using the Azure portal or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure portal or a local install of the Azure CLI. Keep in mind that you need to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
 
 You don't need to run any of the following commands. We'll do that in the next exercise.
 
@@ -43,9 +43,9 @@ You *push* an image from your local computer to a Docker registry by using the `
 docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
 ```
 
-If you run `docker image ls`, you'll see two entries for the image: one with the original name, and the second with the new alias.
+If you run `docker image ls`, you'll see two entries for the image: one with the original name and the second with the new alias.
 
-After running the tag command, you can upload the image to the registry in Azure Container Registry using the following command.
+After you run the tag command, you can upload the image to the registry in Azure Container Registry using the following command.
 
 ```bash
 docker push myregistry.azurecr.io/reservationsystem:v2
@@ -64,13 +64,13 @@ az acr repository show --repository reservationsystem --name myregistry --resour
 ```
 
 > [!NOTE]
-> You'll see at least two tags for each image in a repository. One tag will be the value you specified in the *acr build* command (*v1* in the previous example). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
+> You'll have at least two tags for each image in a repository. One tag will be the value you specified in the *acr build* command (*v1* in the previous example). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
 
 ## Use Azure Container Instance to run an image
 
 The Azure Container Instance service can load an image from Azure Container Registry and run it in Azure.
 
-You create a container instance and start the image running with the `az container create` command. Provide the username and password for the registry in the `registry-username` and `registry-password` parameters. The instance will be allocated an IP address. You access the instance with this IP address. You can optionally specify a DNS name if you prefer to reference the instance through a more user-friendly label. Notice that you specify the image as a URL that references your registry (*myregistry*) in the Azure Container Registry service (*azurecr.io*). If you're using Docker Hub or some other registry, replace this URL with the URL of your image in that registry.
+You create a container instance and start the image running by using the `az container create` command. Provide the username and password for the registry in the `registry-username` and `registry-password` parameters. The instance will be allocated an IP address. You access the instance with this IP address. You can optionally specify a DNS name if you prefer to reference the instance through a more user-friendly label. Notice that you specify the image as a URL that references your registry (*myregistry*) in the Azure Container Registry service (*azurecr.io*). If you're using Docker Hub or some other registry, replace this URL with the URL of your image in that registry.
 
 ```azurecli
 az container create --resource-group mygroup --name myinstance --image myregistry.azurecr.io/myapp:latest --dns-name-label mydnsname --registry-username <username> --registry-password <password>
@@ -82,4 +82,4 @@ Azure hosts the instance with a domain name based on the DNS label you specified
 az container show --resource-group mygroup --name myinstance --query ipAddress.fqdn
 ```
 
-You can access the application using a web browser. You can navigate to the URL returned by this command; we'll learn how in the next unit.
+You can access the application using a web browser. You can navigate to the URL this command returns; we'll learn how in the next unit.

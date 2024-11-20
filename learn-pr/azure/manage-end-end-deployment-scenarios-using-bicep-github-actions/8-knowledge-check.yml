@@ -2,14 +2,17 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 12/19/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
 quiz:
@@ -19,7 +22,7 @@ quiz:
     choices:
     - content: Deployment scripts run on infrastructure that's automatically managed by Azure.
       isCorrect: true
-      explanation: Correct. Deployment scripts use resources including an Azure Container Instances container group and a storage account. These resources are automatically deployed and deleted by Azure.
+      explanation: Correct. Deployment scripts use resources including an Azure Container Instances container group and a storage account. Azure automatically deploys and deletes these resources.
     - content: Deployment scripts automatically get access to your entire Azure environment.
       isCorrect: false
       explanation: Incorrect. You need to explicitly grant a deployment script's identity access to your Azure environment.
@@ -57,3 +60,4 @@ quiz:
     - content: You need to add an output to your Bicep template for the host name.
       isCorrect: true
       explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the workflow.
+

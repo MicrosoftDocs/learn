@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.share-knowledge-within-teams.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

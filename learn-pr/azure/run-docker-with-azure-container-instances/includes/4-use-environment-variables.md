@@ -106,7 +106,7 @@ In this section, learn how to prevent sensitive information, such as connection 
       {
         "name": "COSMOS_DB_MASTERKEY",
         "secureValue": null,
-        "value": "Xm5BwdLlCllBvrR26V00000000S2uOusuglhzwkE7dOPMBQ3oA30n3rKd8PKA13700000000095ynys863Ghgw=="
+        "value": "abcdefghijklmnopqrztuvwxyz0123456789=="
       }
     ]
     ```

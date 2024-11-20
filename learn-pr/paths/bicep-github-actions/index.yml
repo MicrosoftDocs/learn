@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/28/2022
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Deploy Azure resources by using Bicep and GitHub Actions
 summary: | 
   Gain all of the benefits of infrastructure as code by using an automated workflow to deploy your Bicep templates, 
@@ -24,6 +23,9 @@ summary: |
   * Use pull requests to automatically validate and deploy your Bicep code as part of your review process.
   * Build workflows that publish reusable Bicep files to template specs and modules.
   * Secure your workflows, and ensure all of your Azure deployments follow your organization's standards.
+
+  > [!TIP]
+  > Want to learn about using Bicep with GitHub Actions live from subject matter experts? [Follow on-demand Learn Live sessions with our experts.](/events/learn-events/learnlive-automate-azure-deployments-bicep-github-actions/)
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |

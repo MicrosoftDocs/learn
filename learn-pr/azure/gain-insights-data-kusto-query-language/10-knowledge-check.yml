@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Gain insights in your data using the Kusto Query Language."
-  ms.date: 03/30/2022
+  ms.date: 12/01/2022
   author: YaelSchuster
   ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

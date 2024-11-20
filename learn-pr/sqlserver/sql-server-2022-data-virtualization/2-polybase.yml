@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-data-virtualization.polybase
+title: Introduction to PolyBase
+metadata:
+  title: Introduction to PolyBase
+  description: "Learn about PolyBase and the evolution of PolyBase from SQL Server 2016 to SQL Server 2022."
+  ms.date: 04/28/2024
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-polybase.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Object storage is the recommended solution for high-transactional workloads."
+    choices: 
+    - content: "True"
+      isCorrect: false
+      explanation: "Object storage is recommended for Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not high-transactional or online transactional processing (OLTP) workloads."
+    - content: "False"
+      isCorrect: true
+      explanation: "Object storage architecture was designed for Big Data, Internet of Things (IoT), Analytics, AI, and Machine Learning workloads, not high-transactional workloads."
+  - content: "To run the PolyBase feature, you need to install and enable the PolyBase Query Service for External Data."
+    choices: 
+    - content: "True"
+      isCorrect: true
+      explanation: "All PolyBase data sources require the **PolyBase Query Service for External Data** to be installed and enabled, even those that don't use the other PolyBase services."
+    - content: "False"
+      isCorrect: false
+      explanation: "Not all PolyBase data sources need to have the PolyBase services configured and running, but they all require the **PolyBase Query Service for External Data** to be installed and enabled."
+  - content: "SQL Server 2022 supports all types of object storage."
+    choices: 
+    - content: "True"
+      isCorrect: false
+      explanation: "SQL Server 2022 supports S3-compatible object storage only."
+    - content: "False"
+      isCorrect: true
+      explanation: "SQL Server 2022 supports S3-compatible object storage only."

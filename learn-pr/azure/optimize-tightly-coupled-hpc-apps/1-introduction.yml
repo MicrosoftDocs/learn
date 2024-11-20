@@ -2,13 +2,15 @@
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 02/04/2021
+  ms.date: 08/05/2024
   author: garvct
   ms.author: cogarvey
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+

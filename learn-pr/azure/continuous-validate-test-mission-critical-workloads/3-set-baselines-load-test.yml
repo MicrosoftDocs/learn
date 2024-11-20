@@ -2,13 +2,14 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.set-baselines-load-test
 title: Set baselines for load tests
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set baselines for load tests
-  description: Learn how to set baselines for load tests.
-  ms.date: 01/16/2023
+  description: Understand how to set up baselines for load tests, and use Azure Load Testing to evaluate thresholds.
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-set-baselines-load-test.md)]
@@ -28,10 +29,10 @@ quiz:
     choices:
     - content: "The baseline defines the deployment performance."
       isCorrect: false
-      explanation: "Incorrect. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+      explanation: "Incorrect. Although the baseline defines expected performance numbers, it has no effect on the performance that's provided during deployment."
     - content: "The baseline has no impact on the deployment performance."
       isCorrect: true
-      explanation: "Correct. Although the baseline defines expected performance numbers, it has no impact on the performance that's provided during deployment."
+      explanation: "Correct. Although the baseline defines expected performance numbers, it has no effect on the performance that's provided during deployment."
   - content: "When do baselines need to be evaluated and updated?"
     choices:
     - content: "Establishing baselines is a one-time activity."
@@ -39,7 +40,8 @@ quiz:
       explanation: "Incorrect. Baselines need to be evaluated regularly and need to be updated to reflect application or infrastructure changes that affect performance."
     - content: "Baselines should be evaluated as part of every release or major change."
       isCorrect: true
-      explanation: "Correct. You should evaluate existing baselines with every release or major change and adjust them when needed."
+      explanation: "Correct. You should evaluate existing baselines before every release or major change and adjust them when needed."
     - content: "Baselines should be updated on a yearly basis."
       isCorrect: false
-      explanation: "Incorrect. Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly--for example, as part of every release or major change."
+      explanation: "Incorrect. Evaluating baselines only after a specific interval isn't a good practice. Baselines should be evaluated regularly&ndash;for example, as part of every release or major change."
+

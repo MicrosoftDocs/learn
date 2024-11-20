@@ -2,13 +2,16 @@
 uid: learn.wwl.develop-azure-functions.create-triggers-bindings
 title: Create triggers and bindings
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create triggers and bindings
   description: "Create triggers and bindings"
-  ms.date: 02/07/2023
+  ms.date: 07/09/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-triggers-bindings.md)]

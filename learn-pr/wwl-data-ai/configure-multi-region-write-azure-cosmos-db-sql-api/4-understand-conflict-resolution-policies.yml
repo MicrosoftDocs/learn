@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.understand-conflict-resolution-policies
 title: Understand conflict resolution policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand conflict resolution policies
   description: "Understand conflict resolution policies"
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

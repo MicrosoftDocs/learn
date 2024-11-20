@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-azure-active-directory.explain-business-to-business
-title: Explain Azure AD Business to Business
+title: Explain Microsoft Entra Business to Business
 metadata:
-  title: Explain Azure AD Business to Business
-  description: "Explain Azure AD Business to Business"
-  ms.date: 03/16/2023
+  title: Explain Microsoft Entra Business to Business
+  description: "Explain Microsoft Entra Business to Business"
+  ms.date: 01/31/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-explain-business-to-business.md)]

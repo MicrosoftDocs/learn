@@ -2,7 +2,6 @@ As your organization moves to Azure, you must design your network to protect res
 
 You now have the fundamental knowledge required to design and implement network security in Azure.
 
-
 ## Learn more
 
 - [Azure best practices for network security](/azure/security/fundamentals/network-best-practices)

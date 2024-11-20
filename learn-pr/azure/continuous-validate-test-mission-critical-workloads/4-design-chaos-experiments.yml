@@ -2,13 +2,14 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.design-chaos-experiments
 title: Design chaos experiments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design chaos experiments
-  description: Learn how to design chaos experiments with Azure Chaos Studio.
-  ms.date: 01/16/2023
+  description: Learn how to design chaos experiments and conduct failure mode analysis (FMA) by using Azure Chaos Studio.
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-design-chaos-experiments.md)]
@@ -45,4 +46,5 @@ quiz:
       explanation: "Incorrect. Availability zones aren't a prerequisite to use Azure Chaos Studio."
     - content: "Azure Backup"
       isCorrect: false
-      explanation: "Correct.Azure Backup isn't a prerequisite to use Azure Chaos Studio."
+      explanation: "Correct. Azure Backup isn't a prerequisite to use Azure Chaos Studio."
+

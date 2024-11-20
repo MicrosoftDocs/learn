@@ -2,13 +2,15 @@
 uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Explore high availability and disaster recovery features of Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/26/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/06/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/introduction.md)]
+

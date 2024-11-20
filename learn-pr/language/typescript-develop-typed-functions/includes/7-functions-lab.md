@@ -117,10 +117,10 @@ This JavaScript function returns the payment amount for a loan.
 1. Make the `months` parameter optional but assign it a default value of `12` months if omitted.
 
    ```typescript
-   function loanCalculator (principal: number, interestRate: number, months = 12): string {
+   function loanCalculator (principle: number, interestRate: number, months = 12): string {
        let interest: number = interestRate / 1200;   // Calculates the monthly interest rate 
        let payment: number;
-       payment = principal * interest / (1 - (Math.pow(1/(1 + interest), months)));
+       payment = principle * interest / (1 - (Math.pow(1/(1 + interest), months)));
        return payment.toFixed(2);
    }
    ```

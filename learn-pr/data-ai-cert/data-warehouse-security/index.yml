@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/31/2019
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
 title: Data warehouse security
 summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
 hidden: true
@@ -30,7 +29,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - security
-- data-warehousing
+- data-storage
 units:
 - learn.data-ai.data-warehouse-security.introduction
 - learn.data-ai.data-warehouse-security.azure-dw-security-control

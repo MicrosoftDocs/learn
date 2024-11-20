@@ -38,8 +38,6 @@ In this module, you learn how to:
 
 - Design for resource tags.
 
-- Design for Azure Blueprints. 
-
 - Design for Azure landing zones.
 
 ### Skills measured

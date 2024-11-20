@@ -1,6 +1,6 @@
-You've decided to evaluate the AzCopy command as an alternative to using the Azure CLI. As before, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account.
+You decided to evaluate the AzCopy command as an alternative to using the Azure CLI. As before, you want to move blobs that contain the details for product specifications, and that are more than six months old, to an archive store in a separate Blob Storage account.
 
-In this exercise, you'll investigate how to use the AzCopy to migrate blobs that haven't changed in the last six months to a separate storage account.
+In this exercise, you investigate how to use AzCopy to migrate blobs that weren't changed in the last six months to a separate storage account.
 
 ## Create and add data to hot storage
 
@@ -22,7 +22,7 @@ First, create two accounts by using the Azure CLI.
     az storage account create \
       --location $LOCATION \
       --name $HOT_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Hot
@@ -34,7 +34,7 @@ First, create two accounts by using the Azure CLI.
     az storage account create \
       --location $LOCATION \
       --name $COOL_STORAGE_NAME \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
       --sku Standard_RAGRS \
       --kind BlobStorage \
       --access-tier Cool
@@ -42,7 +42,7 @@ First, create two accounts by using the Azure CLI.
 
 ## Setup
 
-We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it may be an older version. We'll also generate SAS tokens for our storage accounts and then upload some sample data.
+Let's start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy, but it might be an older version. Let's also generate SAS tokens for our storage accounts and then upload some sample data.
 
 1. In the Cloud Shell window, run the following commands to download and extract the most recent version of *AzCopy* for Linux.
 
@@ -52,9 +52,9 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     tar xvf azcopy
     ```
 
-<!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (may also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
+<!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (might also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the Sandbox.
+1. Select [this link](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to sign in to the Azure portal. This link signs you in to the Azure portal by using the same account with which you activated the sandbox.
 
 1. Select **All resources**, and select your destination (cool) storage account.
 
@@ -64,7 +64,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 1. With the allowed resource types checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
 
-1. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
+1. In the Cloud Shell, create an environment variable and assign the generated **SAS token** value from the portal.
 
     ```bash
     COOL_SAS_TOKEN="<token from portal>"
@@ -97,7 +97,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
     Verify that the command responds with the message, *Successfully created the resource*.
 
-3. Create a new container named *specifications* in the hot storage destination to hold fictitious specification files.
+3. Create a new container named *specifications* in the hot storage destination for holding fictitious specification files.
 
    ```bash
    ./azcopy make https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications$HOT_SAS_TOKEN
@@ -113,7 +113,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 ## Copy blobs to *Cool* storage
 
-1. In the Cloud Shell, run the following command to generate a list of blobs and their last modified times in the source container.
+1. Run the following command in the Cloud Shell, to generate a list of blobs and their last modified times in the source container.
 
     ```bash
     az storage blob list \
@@ -123,13 +123,13 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
       --query '[].{name:name, properties:properties.lastModified}'
     ```
 
-1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Because these files were just added, none of them will be old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
+1. Now that you have a list of blobs and their last modified times, you can use this information to create a script. The script uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Because you just added these files, none of them are old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
 
     ```bash
     ./azcopy copy https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
     ```
 
-1. The blob being copied is small and the transfer will complete quickly, but imagine that the blob is several gigabytes in size. The transfer would take much longer. Run the following command to view AzCopy jobs that have run recently, or are still running.
+1. Copying a blob that is small, causes the transfer to complete quickly, but imagine that the blob is several gigabytes in size. Run the following command to view AzCopy jobs that ran recently, or are still running.
 
     ```bash
     ./azcopy jobs list
@@ -143,7 +143,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     ./azcopy jobs show <jobid>
     ```
 
-1. Verify that the blob has been copied. Run the following command to list the blobs in the *azcopy-archive* container in the destination storage account.
+1. Verify that the blob was copied. Run the following command to list the blobs in the *azcopy-archive* container in the destination storage account.
 
     ```bash
     ./azcopy list https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN

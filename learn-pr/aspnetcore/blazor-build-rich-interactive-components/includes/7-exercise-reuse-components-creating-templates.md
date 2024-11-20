@@ -1,95 +1,110 @@
-A template could help improve how a customer's past orders are displayed on the Blazing Pizza app.
+The pizza company wants the **My Orders** page to show customers more details about their past orders, such as which pizzas were in the order and what time the customer made the order.
 
-The pizza company has asked that the **My Orders** page shows more details to a customer about their past orders. They'd like this area to be enhanced so that a customer can see all the pizzas in the order, and what time they made their order.
-
-In this exercise, you'll use Blazor templates to create a pagination component and improve the order history page.
+A template can help you improve the display and functionality of the **My Orders** page on the Blazing Pizza app. In this exercise, you create a pagination template component that you reuse on the **My Orders** page.
 
 ## Create the pagination template component
 
-1. In Visual Studio Code, in the file explorer, create a new folder named **Components**, then create a **New File**.
-1. Use **PaginationComponent.razor** for the filename.
-1. Add the following Razor markup code to the newly created template component:
+Create a new Blazor pagination template component file and pagination controls.
 
-    ```razor
-    @typeparam TItem
-    
-    <div class="container-sm py-4">
-        @ItemContent(Items.ElementAt(selectedIndex))
-    </div>
-    <nav aria-label="Pagination functionality">
-        <ul class="pagination pagination-lg justify-content-center">
-            <li class="page-item @(previousDisabled ? "disabled" : "")" disabled="@previousDisabled">
-                <a class="page-link" @onclick="@(() => SetIndex(0))">
-                    <span>⏪</span>
-                </a>
-            </li>
-            <li class="page-item @(previousDisabled ? "disabled" : "")" disabled="@previousDisabled">
-                <a class="page-link" @onclick="DecrementIndex"><span>⬅️</span></a>
-            </li>
-            @foreach ((int index, TItem item) in Items.Select((item, index) => (index, item)))
-            {
-                var isActive = index == selectedIndex;
-                <li class="page-item @(isActive ? "active" :"")">
-                    <a class="page-link" @onclick="@(() => SetIndex(index))">
-                        @ItemLabel(item)
-                    </a>
-                </li>
-            }
-            <li class="page-item @(nextDisabled ? "disabled" : "")" disabled="@nextDisabled">
-                <a class="page-link" @onclick="IncrementIndex"><span>➡️</span></a>
-            </li>
-            <li class="page-item @(nextDisabled ? "disabled" : "")" disabled="@nextDisabled">
-                <a class="page-link" @onclick="@(() => SetIndex(Items.Count - 1))">
-                    <span>⏩</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    ```
+### Create the file and add the markup
 
-    The markup accepts a generic type parameter `TItem`, and defines a container to display the selected item. It then uses a `<nav>` element to display the pagination controls. The controls are defined using a `<ul>` element, with each item in the list being a page number. The page number is defined by the `ItemLabel` render fragment, which is passed in as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
+1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*, and then create a new file in the folder named *PaginationComponent.razor*.
+1. Add the following Razor markup to the newly created template component:
 
-1. Add the `@code` directive to handle which item is active:
+   ```razor
+   @typeparam TItem
+   
+   <div class="container-sm py-4">
+       @ItemContent(Items.ElementAt(selectedIndex))
+   </div>
+   <nav aria-label="Pagination functionality">
+       <ul class="pagination pagination-lg justify-content-center">
+           <li class="page-item @(previousDisabled ? "disabled" : "")" disabled="@previousDisabled">
+               <a class="page-link" @onclick="@(() => SetIndex(0))">
+                   <span>⏪</span>
+               </a>
+           </li>
+           <li class="page-item @(previousDisabled ? "disabled" : "")" disabled="@previousDisabled">
+               <a class="page-link" @onclick="DecrementIndex"><span>⬅️</span></a>
+           </li>
+           @foreach ((int index, TItem item) in Items.Select((item, index) => (index, item)))
+           {
+               var isActive = index == selectedIndex;
+               <li class="page-item @(isActive ? "active" :"")">
+                   <a class="page-link" @onclick="@(() => SetIndex(index))">
+                       @ItemLabel(item)
+                   </a>
+               </li>
+           }
+           <li class="page-item @(nextDisabled ? "disabled" : "")" disabled="@nextDisabled">
+               <a class="page-link" @onclick="IncrementIndex"><span>➡️</span></a>
+           </li>
+           <li class="page-item @(nextDisabled ? "disabled" : "")" disabled="@nextDisabled">
+               <a class="page-link" @onclick="@(() => SetIndex(Items.Count - 1))">
+                   <span>⏩</span>
+               </a>
+           </li>
+       </ul>
+   </nav>
+   ```
 
-    ```razor
-    @code {
-        [Parameter, EditorRequired]
-        public required List<TItem> Items { get; set; }
-    
-        [Parameter, EditorRequired]
-        public required RenderFragment<TItem> ItemContent { get; set; }
-    
-        [Parameter, EditorRequired]
-        public required Func<TItem, MarkupString> ItemLabel { get; set; }
-    
-        int selectedIndex;
-    
-        bool previousDisabled => selectedIndex == 0;
-        bool nextDisabled => selectedIndex == Items.Count - 1;
-    
-        void IncrementIndex() => selectedIndex++;
-        void DecrementIndex() => selectedIndex--;
-        void SetIndex(int index) => selectedIndex = index;
-    
-        protected override void OnInitialized() =>
-            selectedIndex = Items.Count - 1;
-    }
-    ```
+The markup accepts a generic type parameter `TItem`, defines a container to display the selected item, and uses a `<nav>` element to display the pagination controls.
 
-    The code block defines the parameters that are required to use the template. The `Items` parameter is a list of `TItem` items to display. The `ItemContent` parameter is a render fragment that defines how to display the content of a selected item. The `ItemLabel` parameter is a function that defines how to display the label for each item. The `selectedIndex` field is used to track which item is currently selected. The `IncrementIndex`, `DecrementIndex`, and `SetIndex` methods are used to change the selected item index. The `OnInitialized` method is used to set the initial selected item to the last item in the list.
+The controls use a `<ul>` element with each list item being a page number. The page number is defined by the `ItemLabel` render fragment, which passes in as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
 
-## Update the `MyOrder` component
+### Add the code directive
 
-1. In the file explorer, expand **Pages**, then select *MyOrders.razor*.
-1. Under the last `@inject` directive, add the `@using` directive:
+Add the `@code` directive to handle which item is active.
 
-    ```razor
-    @using BlazingPizza.Components
-    ```
+```csharp
+@code {
+    [Parameter, EditorRequired]
+    public required List<TItem> Items { get; set; }
 
-    This enables the newly created component template to be visible to the `MyOrder` component.
+    [Parameter, EditorRequired]
+    public required RenderFragment<TItem> ItemContent { get; set; }
 
-1. Within the `<div class="main">` markup, there's an `if / else if / else` logical block, replace the existing `else` branch with the following code:
+    [Parameter, EditorRequired]
+    public required Func<TItem, MarkupString> ItemLabel { get; set; }
+
+    int selectedIndex;
+
+    bool previousDisabled => selectedIndex == 0;
+    bool nextDisabled => selectedIndex == Items.Count - 1;
+
+    void IncrementIndex() => selectedIndex++;
+    void DecrementIndex() => selectedIndex--;
+    void SetIndex(int index) => selectedIndex = index;
+
+    protected override void OnInitialized() =>
+        selectedIndex = Items.Count - 1;
+}
+```
+
+The preceding code block defines the parameters that are required to use the template.
+
+- The `Items` parameter is a list of `TItem` items to display.
+- The `ItemContent` parameter is a render fragment that defines how to display the content of a selected item.
+- The `ItemLabel` parameter is a function that defines how to display the label for each item.
+
+The `selectedIndex` field tracks which item is currently selected. The `IncrementIndex`, `DecrementIndex`, and `SetIndex` methods are used to change the selected item index.
+
+The `OnInitialized` method sets the initial selected item to the last item in the list.
+
+## Update the MyOrders component
+
+Now, update the **My Orders** page to use the template component.
+
+1. In **Explorer**, expand *Pages* and then select *MyOrders.razor*.
+1. After the last `@inject` directive, add the `@using` directive:
+
+   ```razor
+   @using BlazingPizza.Components
+   ```
+
+   This line enables the `MyOrder` component to use the newly created component template.
+
+1. Within the `<div class="main">` markup, in the `if` / `else if` / `else` logical block, replace the existing `else` branch with the following code:
 
     ```razor
     else
@@ -126,14 +141,14 @@ In this exercise, you'll use Blazor templates to create a pagination component a
     }
     ```
 
-    The code now relies on the `PaginationComponent`, providing the generic type of `OrderWithStatus`, a list of past orders sorted by their creation date, and a function to generate the label for each item. The `ItemContent` render fragment is used to define the markup for each item.
+The code now relies on the `PaginationComponent`, providing the generic type of `OrderWithStatus`, a list of past orders sorted by their creation date, and a function to generate the label for each item. The `ItemContent` render fragment defines the markup for each item.
 
 ## Test your updates
 
-1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
+1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-    :::image type="content" source="../media/7-new-order-history-page.png" lightbox="../media/7-new-order-history-page.png" alt-text="Screenshot of the new order history page.":::
+1. In the app, make a couple of orders and then select **My Orders**. Verify that you see a pagination control with a list of your orders, and can select an order to load the order details.
 
-    Run your updated app and select **My Orders**. You'll see a list of any past orders you've made. Select the date from the pagination controls to load the order details.
+   :::image type="content" source="../media/7-new-order-history-page.png" lightbox="../media/7-new-order-history-page.png" alt-text="Screenshot of the new order history page.":::
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd>  or select **Run** > **Stop Debugging** to stop the app.

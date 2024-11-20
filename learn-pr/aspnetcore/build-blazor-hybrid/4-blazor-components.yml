@@ -4,11 +4,11 @@ title: Razor components in Blazor Hybrid
 metadata:
   title: Razor components in Blazor Hybrid
   description: What are Razor components and how do they work with Blazor Hybrid?
-  ms.date: 07/22/2022
+  ms.date: 10/20/2023
   author: jamesmontemagno
   ms.author: jamont
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-blazor-components.md)]

@@ -6,9 +6,8 @@ metadata:
   description: In this exercise, you'll learn the difference between various formatting types, so that you can control the appearance of your output.
   author: softchris
   ms.author: chnoring
-  ms.date: 02/16/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/09/2022
+  ms.topic: unit
   ms.custom: team=nextgen
 azureSandbox: true
 interactive: powershell

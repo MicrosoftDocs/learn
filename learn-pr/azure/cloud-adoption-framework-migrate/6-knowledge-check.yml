@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-migrate.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 07/03/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+  ms.contributors: salean-03082021
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What should you focus on during the Prepare phase in a migration?
+    choices:
+    - content: Classifying workloads based on data sensitivity and workload criticality.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
+      isCorrect: true
+      explanation: Correct! You must prepare your landing zone so that your environment can support the migration.
+    - content: Decommissioning on-premises resources and performing a retrospective.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
+      isCorrect: false
+      explanation: Incorrect.
+  - content: What should you focus on during the Assess phase in a migration?
+    choices:
+    - content: Classifying workloads based on data sensitivity and workload criticality.
+      isCorrect: true
+      explanation: Correct! You must assess individual assets that are associated with your workload to determine whether they're suitable for migration.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Decommissioning on-premises resources and performing a retrospective.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
+      isCorrect: false
+      explanation: Incorrect.
+  - content: What should you focus on during the Deploy phase in a migration?
+    choices:
+    - content: Classifying workloads based on data sensitivity and workload criticality.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Decommissioning on-premises resources and performing a retrospective.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
+      isCorrect: true
+      explanation: Correct! You must deploy your assets to an isolated environment to perform testing before you release your workload.
+  - content: What should you focus on during the Release phase in a migration?
+    choices:
+    - content: Classifying workloads based on data sensitivity and workload criticality.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Performing tasks to ensure that you properly configure your landing zone for your migration.
+      isCorrect: false
+      explanation: Incorrect.
+    - content: Decommissioning on-premises resources and performing a retrospective.
+      isCorrect: true
+      explanation: Correct! During the Release phase, you complete your migration and perform clean-up activities, like decommissioning on-premises resources. And you do a retrospective to prepare for future migrations.
+    - content: Remediating assets, replicating assets, and performing a test migration in an isolated environment.
+      isCorrect: false
+      explanation: Incorrect.

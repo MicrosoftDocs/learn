@@ -98,7 +98,7 @@ You can move up a directory by specifying `..` as the directory name:
 cd ..
 ```
 
-This command changes to your home directory; the one you land in when you first log in:
+This command changes to your home directory; the one you land in when you first sign in:
 
 ```bash
 cd ~
@@ -116,7 +116,7 @@ If you want to create a subdirectory and another subdirectory under it with one 
 mkdir --parents orders/2019
 ```
 
-The `rmdir` command deletes (removes) a directory, but only if it isn't empty. Fortunately, you can use the `rm` command to delete directories that aren't empty.
+The `rmdir` command deletes (removes) a directory, but only if it's empty. If it's not empty, you get a warning instead. Fortunately, you can use the `rm` command to delete directories that aren't empty in combination with the `-r` (recursive) flag. The command would then look like so, `rm -r`.
 
 ### `rm` command
 
@@ -160,13 +160,13 @@ cp 0001.jpg 0002.jpg
 
 If **0002.jpg** already exists, Bash silently replaces it. That's great if it's what you intended, but not so wonderful if you didn't realize you were about to overwrite the old version. 
 
-Fortunately, if you use the `-i` (for "interactive") flag, Bash warns you before deleting existing files. This is much safer:
+Fortunately, if you use the `-i` (for "interactive") flag, Bash warns you before deleting existing files. This is safer:
 
 ```bash
 cp -i 0001.jpg 0002.jpg
 ```
 
-Of course, you can use wildcards to copy several files at once. To copy all the files in the current directory to a subdirectory named **photos**, do this:
+You can use wildcards to copy several files at once. To copy all the files in the current directory to a subdirectory named **photos**, do this:
 
 ```bash
 cp * photos
@@ -202,7 +202,7 @@ For a more comprehensive look at what processes are running in the system, use t
 ps -ef 
 ```
 
-This flag shows the names of all the running processes, their process identification numbers (PIDs), the PIDs of their parents (PPIDs), and when they began (STIME). It also shows what terminal, if any, they're attached to (TTY), how much CPU time they've racked up (TIME), and their full path names. Here is an abbreviated example:
+This flag shows the names of all the running processes, their process identification numbers (PIDs), the PIDs of their parents (PPIDs), and when they began (STIME). It also shows what terminal, if any, they're attached to (TTY), how much CPU time they've racked up (TIME), and their full path names. Here's an abbreviated example:
 
 ```
 UID         PID   PPID  C STIME TTY          TIME CMD
@@ -229,7 +229,7 @@ This serves as an excellent reminder of why you should look closely at the manua
 
 ### `w` command
 
-Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log in to the company's computer systems. Sysadmins are also expected to know who's logged in, and who shouldn't be.
+Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer sign in to the company's computer systems. Sysadmins are also expected to know who's logged in, and who shouldn't be.
 
 To find out who's on your servers, Linux provides the `w` (for "who") command. It displays information about the users currently on the computer system and those users' activities. `w` shows user names, their IP addresses, when they logged in, what processes they're currently running, and how much time those processes are consuming. It's a valuable tool for sysadmins.
 
@@ -254,7 +254,7 @@ If **listing.txt** already exists, it gets overwritten. If you use the `>>` oper
 ls >> listing.txt
 ```
 
-The piping operator is extremely powerful (and often used). It redirects the output of the first command to the input of the second command. Let's say you use `cat` to display the contents of a large file, but the content scrolls by too quickly for you to read. You can make the output more manageable by piping the results to another command such as `more`. The following command lists all the currently running processes. But once the screen is full, the output pauses until you select **Enter** to show the next line:
+The piping operator is powerful (and often used). It redirects the output of the first command to the input of the second command. Let's say you use `cat` to display the contents of a large file, but the content scrolls by too quickly for you to read. You can make the output more manageable by piping the results to another command such as `more`. The following command lists all the currently running processes. But once the screen is full, the output pauses until you select **Enter** to show the next line:
 
 ```bash
 ps -ef | more

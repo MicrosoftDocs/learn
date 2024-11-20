@@ -1,8 +1,11 @@
-          - task: KubernetesManifest@0
+          - task: KubernetesManifest@1
             displayName: Create imagePullSecret
             inputs:
               action: createSecret
+              connectionType: azureResourceManager
               secretName: $(imagePullSecret)
               dockerRegistryEndpoint: 'Container Registry Connection'
-              kubernetesServiceConnection: 'Kubernetes Cluster Connection'
+              azureSubscriptionConnection: 'Kubernetes Cluster Connection'
+              azureResourceGroup: 'tailspin-space-game-rg'
+              kubernetesCluster: 'tailspinspacegame-24591'
               namespace: 'default'

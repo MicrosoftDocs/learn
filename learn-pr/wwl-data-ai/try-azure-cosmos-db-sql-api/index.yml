@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.try-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Try Azure Cosmos DB for NoSQL
   description: "Try Azure Cosmos DB for NoSQL"
   ms.date: 12/19/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
 title: Try Azure Cosmos DB for NoSQL
 summary: Learn how to use the Azure Cosmos DB for NoSQL to create an account, and then use the account to create Cosmos DB resources.
 abstract: |
@@ -24,7 +27,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.try-azure-cosmos-db-sql-api.introduction
 - learn.wwl.try-azure-cosmos-db-sql-api.explore-resources

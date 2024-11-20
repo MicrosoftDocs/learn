@@ -2,13 +2,15 @@
 uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.exercise-monitor-azure-arc-enabled-sql-managed-instance
 title: Exercise - Monitor performance of Azure Arc-enabled SQL Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Monitor performance of Azure Arc-enabled SQL Managed Instance
   description: Use Grafana to monitor performance of Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/07/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-monitor-azure-arc-enabled-sql-managed-instance.md)]
+

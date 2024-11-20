@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access.explore-global-secure-access
+title: Explore Global Secure Access
+metadata:
+  title: Explore Global Secure Access
+  description: "Explore Global Secure Access"
+  ms.date: 07/22/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-global-secure-access.md)]

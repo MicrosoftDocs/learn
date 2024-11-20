@@ -2,13 +2,14 @@
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.2-what-is-durable-functions
 title: What is Durable Functions?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Durable Functions?
   description: What is Durable Functions?
-  ms.date: 04/24/2019
+  ms.date: 10/19/2023
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-durable-functions.md)]
@@ -17,9 +18,9 @@ quiz:
   questions:
   - content: "What is Durable Functions?"
     choices:
-    - content: "Durable Functions is an extension of Azure Functions, that allow you to simplify complex stateful executions in a serverless-environment "
+    - content: "Durable Functions is an extension of Azure Functions that allows you to simplify complex stateful executions in a serverless-environment "
       isCorrect: true
-      explanation: "Correct! Durable Functions is an extension of Azure Functions, that allow you to simplify complex stateful executions in a serverless-environment "
+      explanation: "Correct! Durable Functions is an extension of Azure Functions that allows you to simplify complex stateful executions in a serverless-environment "
     - content: "Durable Functions is a logical container for a single workflow that you define using triggers and actions."
       isCorrect: false
       explanation: "No. This is a description of Logic Apps. Durable Functions is an extension of Azure Functions."
@@ -48,3 +49,4 @@ quiz:
     - content: "It allows the output from one function to be applied to input of the next function in a series of function calls."
       isCorrect: false
       explanation: "No. Use the Function Chaining application pattern for this situation."
+
