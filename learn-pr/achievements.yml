@@ -4187,3 +4187,8 @@ achievements:
   title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
   summary: Use components to easily share and reuse code and use component-based pipelines to create machine learning workflows.
   iconUrl: /training/achievements/machine-learning-component-pipelines.svg
+- uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.badge
+  type: badge
+  title: Run jobs in Azure Machine Learning with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to train models as jobs. Train a model using a basic Python script, or perform hyperparameter tuning with a sweep job.
+  iconUrl: /training/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
