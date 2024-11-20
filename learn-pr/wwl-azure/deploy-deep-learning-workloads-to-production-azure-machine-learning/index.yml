@@ -34,7 +34,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.summary
 badge:
   uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge
 
