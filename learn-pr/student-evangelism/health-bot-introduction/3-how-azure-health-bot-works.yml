@@ -2,13 +2,14 @@
 uid: learn.health-bot-introduction.3-how-azure-health-bot-works
 title: How does Azure Health Bot work?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How does Azure Health Bot work?
   description: In this unit, you'll learn how Azure Health Bot works.
   author: RuchaYagnik
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/01/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
@@ -29,3 +30,4 @@ quiz:
         - content: "It doesn't allow handoff to humans when a negative sentiment is detected."
           isCorrect: true
           explanation: "It allows handoff to humans when a negative sentiment is detected."
+

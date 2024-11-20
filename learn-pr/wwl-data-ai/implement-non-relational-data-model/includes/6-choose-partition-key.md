@@ -1,3 +1,4 @@
+
 Remember that data in JSON documents is stored in Azure Cosmos DB databases within containers that are in turn distributed across physical partitions and where the data is routed to the appropriate physical partition based on the value of a partition key.
 
 :::image type="content" source="../media/6-physical-partitions.png" alt-text="Diagram that illustrates the physical partitions in Azure Cosmos DB.":::
@@ -10,12 +11,11 @@ In Azure Cosmos DB, you increase storage and throughput by adding more physical 
 
 ## Logical partitions in Azure Cosmos DB
 
-The partition key ensures documents with the same partition key value are considered to belong to the same logical partition and are routed to and stored within a specific physical partition.
-The concept of a logical partition allows for the grouping together of documents with the same partition key value. Multiple logical partitions can be stored within a single physical partition and the container can have an unlimited number of logical partitions. Individual logical partitions are moved to new physical partitions as a unit as the container grows. Moving logical partitions as a unit ensures that all documents within it reside on the same physical partition. The maximum size for a logical partition is 20 GB. Using a partition key with high cardinality allows you to avoid this 20-GB limit by spreading your data across a larger number of logical partitions.
+A logical partition is an abstraction above the underlying physical partitions. Multiple logical partitions can be stored within a single physical partition. A container can have an unlimited number of logical partitions. Individual logical partitions are moved to new physical partitions as they grow in size to ensure optimum storage utilization and growth. Moving logical partitions as a unit ensures that all documents within it reside on the same physical partition. The maximum size for a logical partition is 20 GB. Using a partition key with high cardinality allows you to avoid this 20-GB limit by spreading your data across a larger number of logical partitions. You can also use hierarchical partition keys which organize partition key values in a hierarchy to avoid this limit. These are covered in another learning path.
 
 :::image type="content" source="../media/6-relationship-between-physical-and-logical-partitions.png" alt-text="Diagram that shows the relationship between the physical and logical partitions.":::
 
-A partition key provides a way to route data for a logical partition. It's a property that exists within every document in your container that routes your data. A container is another abstraction and is for all data stored with the same partition key. The partition key is defined when you create a container. 
+A partition key provides a way to route data for a logical partition. It's a property that exists within every document in your container that routes your data. A container is another abstraction for all data stored with the same partition key. The partition key is defined when you create a container. 
 
 In the following example, the container has a partition key of `/username`.
 
@@ -23,7 +23,7 @@ In the following example, the container has a partition key of `/username`.
 
 ## Avoid hot partitions
 
-When you're modeling data for Azure Cosmos DB, it's critically important that the partition key that you choose results in an even distribution of data and requests across physical partitions in your container. This is especially true when containers grow larger and have an increasing number of physical partitions. 
+When you're modeling data for Azure Cosmos DB, it's critically important that the partition key that you choose results in an even distribution of data and requests across both logical and by extension, the physical partitions in your container. This is especially true when containers grow larger and have an increasing number of physical partitions.
 
 If you don't test the design of your database under load during development, a poor choice for partition key might not be revealed until the application is in production and significant data has already been written. 
 
@@ -31,7 +31,7 @@ When data is not partitioned correctly, it can result in *hot partitions*. Hot p
 
 ### Storage hot partitions
 
-A hot partition on storage occurs when you have a partition key that results in highly asymmetric storage patterns. As an example, consider a multitenant application that uses TenantId as its partition key with five tenants: A to F. Tenants B,C,D and E are very small, Tenant D has a little more data. However Tenant A is massive and quickly hits the 20-GB limit for its partition. In this scenario, we need to select a different partition key that will spread the storage across more logical partitions.
+A hot partition on storage occurs when you have a partition key that results in highly asymmetric storage patterns. As an example, consider a multitenant application that uses TenantId as its partition key with six tenants: A to F. Tenants B,C,E and F are very small, Tenant D has a little more data. However Tenant A is massive and quickly hits the 20-GB limit for its partition. In this scenario, we need to select a different partition key that will spread the storage across more logical partitions.
 
 :::image type="content" source="../media/6-storage-distribution-skew.png" alt-text="Diagram that shows a storage distribution skew.":::
 
@@ -53,7 +53,7 @@ When data and requests are spread evenly, the database can grow in a way that fu
 
 When you're choosing a partition key, you also need to consider whether the data is read heavy or write heavy. You should seek to distribute write-heavy requests with a partition key that has high cardinality. 
 
-For read-heavy workloads, you should ensure that queries are processed by one or a limited number of physical partitions by including an `WHERE` clause with an equality filter on the partition key, or an IN operator on a subset of partition key values in your queries. 
+For read-heavy workloads, you should ensure that queries are processed by one or a limited number of partitions by including an `WHERE` clause with an equality filter on the partition key, or an IN operator on a subset of partition key values in your queries.
 
 In scenarios where the application workload is both write heavy and read heavy, there is a solution. We'll explore that in the next module.
 

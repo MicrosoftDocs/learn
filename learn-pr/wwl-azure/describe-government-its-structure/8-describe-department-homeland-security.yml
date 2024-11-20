@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-government-its-structure.department-homeland-security-dhs
 title: Describe Department Homeland Security (DHS)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Department Homeland Security (DHS)
   description: "Describe Department Homeland Security (DHS)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

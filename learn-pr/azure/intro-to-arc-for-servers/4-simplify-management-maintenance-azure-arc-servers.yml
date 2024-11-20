@@ -2,13 +2,14 @@
 uid: learn.azure.intro-to-arc-for-servers.simplify-management-maintenance-azure-arc-servers
 title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
   description: What are the security and monitoring capabilities of Azure Arc-enabled servers?
-  ms.date: 01/04/2023
-  author: JnHs
-  ms.author: jenhayes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/13/2023
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 10
 content: |
@@ -38,3 +39,4 @@ quiz:
     - content: "The ability to deploy and configure the Log Analytics agent via VM extensions."
       isCorrect: true
       explanation: "Correct. VM extensions are not available for non-Azure machines, which are not Azure Arc-enabled."
+

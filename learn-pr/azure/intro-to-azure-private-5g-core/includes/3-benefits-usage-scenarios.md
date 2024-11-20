@@ -1,4 +1,4 @@
-Deploying a private mobile network using Azure Private 5G Core at the enterprise edge ensures that the enterprise has complete ownership of all data. It also positions the packet core instance as close as possible to the devices it serves, removing any reliance on cloud connectivity. Additionally, local data processing can ensure low latency levels and reduced backhaul for IoT applications.
+Deploying a private mobile network using Azure Private 5G Core at the enterprise edge ensures that the enterprise has complete ownership of all data. It also positions the packet core instance as close as possible to the devices it serves, removing reliance on cloud connectivity. Additionally, local data processing can ensure low latency levels and reduced backhaul for IoT applications.
 
 ## Key benefits
 
@@ -12,7 +12,7 @@ Azure Private 5G Core provides the following key benefits:
 
 - **Centralized service management**
   
-  Azure Private 5G Core provides a centralized software lifecycle and service management for the private mobile network across multiple sites. You can use the Azure portal and Azure Resource Manager (ARM) APIs to carry out provisioning, orchestration, monitoring tasks.
+  Azure Private 5G Core provides a centralized software lifecycle and service management for the private mobile network across multiple sites. You can use the Azure portal and Azure Resource Manager (ARM) APIs to carry out provisioning, orchestration, and monitoring tasks.
 
 - **Flexible monitoring and troubleshooting options**
 
@@ -22,9 +22,9 @@ Azure Private 5G Core provides the following key benefits:
 
 ## Usage scenarios
 
-The low latency levels, combined with the security and high bandwidth offered by private 5G networks, put Azure Private 5G Core in the optimal position to support Industry 4.0 use cases, such as the following applications:
+5G networks provide low latency, security, and high bandwidth, which puts Azure Private 5G Core in the optimal position to support Industry 4.0 use cases, such as:
 
 - **Automation** - Production-line analytics and warehouse automation with robots.
 - **Video analytics** - Video analytics for worker safety, airport safety, or drone applications.
-- **Remote edge deployments** - Remote private mobile network deployments to remote oil or gas sites.
-- **Defense** - Connected command posts and battlefield with real-time analytics.
+- **Remote edge deployments** - Remote private mobile network deployments to, for example, oil or gas drilling sites.
+- **Defense** - Command posts and battlefields connected with real-time analytics.

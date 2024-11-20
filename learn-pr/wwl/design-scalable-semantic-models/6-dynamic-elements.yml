@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.dynamic-elements
+title: Create dynamic calculation elements
+metadata:
+  title: "Create dynamic calculation elements"
+  description: "Learn how to create dynamic elements to extend calculations in a semantic model. Use calculation groups, field parameters, and dynamic measures to reduce complexity and improve report performance."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-dynamic-elements.md)]

@@ -4,7 +4,7 @@ The management infrastructure includes Azure resources and resource groups, subs
 
 A resource is the basic building block of Azure. Anything you create, provision, deploy, etc. is a resource. Virtual Machines (VMs), virtual networks, databases, cognitive services, etc. are all considered resources within Azure.
 
-:::image type="content" source="../media/resource-group-eb2d7177.png" alt-text="Diagram showing a resource group box with a function, VM, database, and app included.":::
+:::image type="content" source="../media/resource-group-eb2d7177-ff67d816.png" alt-text="Diagram showing a resource group box with a function, VM, database, and app included.":::
 
 
 Resource groups are simply groupings of resources. When you create a resource, you’re required to place it into a resource group. While a resource group can contain many resources, a single resource can only be in one resource group at a time. Some resources may be moved between resource groups, but when you move a resource to a new group, it will no longer be associated with the former group. Additionally, resource groups can't be nested, meaning you can’t put resource group B inside of resource group A.
@@ -21,10 +21,10 @@ There aren’t hard rules about how you use resource groups, so consider how to 
 
 In Azure, subscriptions are a unit of management, billing, and scale. Similar to how resource groups are a way to logically organize resources, subscriptions allow you to logically organize your resource groups and facilitate billing.
 
-:::image type="content" source="../media/subscriptions-d415577b.png" alt-text="Diagram showing Azure subscriptions using authentication and authorization to access Azure accounts.":::
+:::image type="content" source="../media/subscriptions-d415577b-04961c4b.png" alt-text="Diagram showing Azure subscriptions using authentication and authorization to access Azure accounts.":::
 
 
-Using Azure requires an Azure subscription. A subscription provides you with authenticated and authorized access to Azure products and services. It also allows you to provision resources. An Azure subscription links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts.
+Using Azure requires an Azure subscription. A subscription provides you with authenticated and authorized access to Azure products and services. It also allows you to provision resources. An Azure subscription links to an Azure account, which is an identity in Microsoft Entra ID or in a directory that Microsoft Entra ID trusts.
 
 An account can have multiple subscriptions, but it’s only required to have one. In a multi-subscription account, you can use the subscriptions to configure different billing models and apply different access-management policies. You can use Azure subscriptions to define boundaries around Azure products, services, and resources. There are two types of subscription boundaries that you can use:
 
@@ -49,7 +49,7 @@ If you have many subscriptions, you might need a way to efficiently manage acces
 
 You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
-:::image type="content" source="../media/management-groups-subscriptions-dfd5a108.png" alt-text="Diagram showing an example of a management group hierarchy tree.":::
+:::image type="content" source="../media/management-groups-subscriptions-dfd5a108-60f31f5a.png" alt-text="Diagram showing an example of a management group hierarchy tree.":::
 
 
 Some examples of how you could use management groups might be:

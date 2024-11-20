@@ -10,7 +10,7 @@ To run actions in your logic app after events pass a specified condition, you'll
 
 The following image shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
-:::image type="content" source="../media/4-logic-apps-filter-array.png" alt-text="Condition filter for a .pdf file in a folder.":::
+:::image type="content" source="../media/4-logic-apps-filter-array.png" alt-text="Screenshot of a condition filter for a .pdf file in a folder.":::
 
 For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data and conditionally call an action.
 
@@ -29,16 +29,16 @@ Suppose you have a logic app that needs to send an email in response to an event
 
 ## JSON configuration
 
-The Logic Apps Designer command bar has two views of a logic app; you can use both views for development and configuration:
+The Logic Apps Designer command bar has two views of a logic app. You can use both views for development and configuration:
 
 - **Designer**: Graphical interface for mapping all triggers, actions, and connectors.
-- **Code view**: JSON format of your logic app configuration, which enables you to edit any trigger, event, connection, or related field you've mapped.
+- **Code view**: JSON format of your logic app configuration, which allows you to edit any trigger, event, connection, or related field you've mapped.
 
-:::image type="content" source="../media/4-code-designer-view.png" alt-text="Choice of two views for a logic app.":::
+:::image type="content" source="../media/4-code-designer-view.png" alt-text="Screenshot of the choice of two views for a logic app.":::
 
 In the Logic Apps Designer command bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created.
 
-Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
+Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you'll be able to confidently edit the JSON configuration directly.
 
 ``` json
 {
@@ -71,7 +71,7 @@ Review the JSON configuration code for your event triggers, and you'll recognize
                                     "Microsoft.Resources.ResourceWriteSuccess"
                                 ]
                             },
-                            "topic": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389"
+                            "topic": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
                         }
                     },
                     "host": {
@@ -79,7 +79,7 @@ Review the JSON configuration code for your event triggers, and you'll recognize
                             "name": "@parameters('$connections')['azureeventgrid']['connectionId']"
                         }
                     },
-                    "path": "/subscriptions/@{encodeURIComponent('826d0748-8207-40ad-9e9c-44be4fa3f764')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
+                    "path": "/subscriptions/@{encodeURIComponent('aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
                     "queries": {
                         "x-ms-api-version": "2017-09-15-preview"
                     }
@@ -93,9 +93,9 @@ Review the JSON configuration code for your event triggers, and you'll recognize
         "$connections": {
             "value": {
                 "azureeventgrid": {
-                    "connectionId": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389/providers/Microsoft.Web/connections/azureeventgrid",
+                    "connectionId": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Web/connections/azureeventgrid",
                     "connectionName": "azureeventgrid",
-                    "id": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/providers/Microsoft.Web/locations/westus/managedApis/azureeventgrid"
+                    "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Web/locations/westus/managedApis/azureeventgrid"
                 }
             }
         }
@@ -105,6 +105,6 @@ Review the JSON configuration code for your event triggers, and you'll recognize
 
 An extension is also available to enable you to edit your logic apps in Visual Studio Code. You can download and install this extension from the Visual Studio Marketplace or directly from inside Visual Studio Code.
 
-:::image type="content" source="../media/4-find-install-logic-apps-extension.png" alt-text="Azure Logic Apps in a list of Visual Studio Code extensions." loc-scope="vs-code":::
+:::image type="content" source="../media/4-find-install-logic-apps-extension.png" alt-text="Screenshot of Azure Logic Apps in a list of Visual Studio Code extensions." loc-scope="vs-code":::
 
 Let's use the **Designer view** in the Azure portal to configure the logic app to respond to triggers.

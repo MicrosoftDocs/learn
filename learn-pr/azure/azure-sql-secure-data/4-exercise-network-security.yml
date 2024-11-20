@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.4-exercise-network-security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Secure your network
   description: Exercise - Secure your network
-  ms.date: 03/15/2023
+  ms.date: 11/13/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Secure your network
 durationInMinutes: 10
 interactive: powershell

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-premium-investigate
+title: Investigate activities with Audit (Premium)
+metadata:
+  title: Investigate activities with Audit (Premium)
+  description: "Investigate activities with Audit (Premium)."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-premium-investigate.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How does Microsoft Purview Audit (Premium) handle duplicate audit records to simplify log management?"
+    choices:
+    - content: "By deleting all duplicates immediately."
+      isCorrect: false
+      explanation: "Incorrect: Audit (Premium) doesn't delete all duplicates but filters them under specific conditions."
+    - content: "By filtering out duplicates within an hour if certain properties don't change."
+      isCorrect: true
+      explanation: "Correct: Duplicate records for the same bind operations within an hour are filtered out unless key properties change."
+    - content: "By allowing all duplicates to ensure data integrity."
+      isCorrect: false
+      explanation: "Incorrect: allowing all duplicates wouldn't simplify log management; it would increase complexity."

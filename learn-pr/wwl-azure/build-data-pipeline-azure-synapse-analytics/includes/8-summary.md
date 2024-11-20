@@ -1,5 +1,3 @@
-
-
 Azure Synapse Analytics provides data integration services through the creation of *pipelines*. By using pipelines, you can implement complex *extract, transform, and load* (ETL) solutions that support enterprise data analytics.
 
 > [!TIP]

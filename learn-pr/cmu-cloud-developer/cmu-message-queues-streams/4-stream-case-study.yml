@@ -4,11 +4,10 @@ title: 'Streaming architectures: Case study'
 metadata:
   title: 'Streaming architectures: Case study'
   description: Review a case study about streaming architectures.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 9
 content: |

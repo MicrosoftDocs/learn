@@ -2,7 +2,7 @@ A popular Disney movie from the 1980s, *TRON*, attempted to explore the inner wo
 
 This unit will cover what makes up a personal computer (PC) without all the hassle of having to become digital and fly around inside of one.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aEKj]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aEKj]
 
 ## Basic Items
 

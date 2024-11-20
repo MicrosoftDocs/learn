@@ -2,13 +2,14 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent.describe-task-status-notifications
 title: Describe task status notifications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe task status notifications
   description: "Describe task status notifications"
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

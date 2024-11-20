@@ -1,0 +1,5 @@
+As a Fabric data engineer or developer, you're responsible for designing, building, and maintaining Fabric items that store, process and, analyze data. You collaborate with your team to release changes from development through production in different Fabric workspaces. With multiple engineers working on projects, there's a need to incrementally release and integrate Fabric item changes and move those changes through a deployment process where they can be tested and quickly released. Lifecycle management in Fabric lets you do this.
+
+Lifecycle management in Fabric uses deployment pipelines and source control integration to help you achieve continuous integration and continuous delivery (CI/CD). You can integrate Fabric with version control systems like GitHub and Azure DevOps and improve your delivery process, and integrate automated testing. 
+
+By the end of this module, you'll know how to work with source control in Fabric, how to use Fabric deployment pipelines and how Fabric REST APIs can be used for CI/CD automation.

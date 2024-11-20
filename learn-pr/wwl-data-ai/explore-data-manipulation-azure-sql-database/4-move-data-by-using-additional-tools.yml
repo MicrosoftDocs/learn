@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-manipulation-azure-sql-database.move-data-by-using-additional-tools
+title: Understand the data movement tools available
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand the data movement tools available
+  description: "Learn the data movement tools available in Azure SQL Database."
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-move-data-by-using-additional-tools.md)]

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basics-azure-business.explore-cloud-success-story
+title: Explore a cloud success story
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore a cloud success story
+  description: "Explore a cloud success story"
+  ms.date: 09/19/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-explore-cloud-success-story.md)]
+interactive: bash

@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-mysql-architecture.explore-mysql-architecture
 title: Explore MySQL Architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore MySQL Architecture
   description: "Explore MySQL Architecture"
   ms.date: 10/10/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

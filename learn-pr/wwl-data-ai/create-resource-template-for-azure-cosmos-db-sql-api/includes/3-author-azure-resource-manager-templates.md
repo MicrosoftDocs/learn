@@ -32,7 +32,7 @@ Here is an example of an account that has a unique name with a prefix of **csmsa
 ```json
 {
   "type": "Microsoft.DocumentDB/databaseAccounts",
-  "apiVersion": "2021-05-15",
+  "apiVersion": "2024-04-15",
   "name": "[concat('csmsarm', uniqueString(resourceGroup().id))]",
   "location": "[resourceGroup().location]",
   "properties": {
@@ -58,17 +58,12 @@ An object for this resource must contain, at a minimum, the following properties
 - name
 - properties.resources.id
 
-A database can also optionally contain the following properties:
-
-- properties.options.throughput
-- properties.options.autoscaleSettings.maxThroughput
-
 Here is an example of a database that is named **cosmicworks**.
 
 ```json
 {
   "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
-  "apiVersion": "2021-05-15",
+  "apiVersion": "2024-04-15",
   "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks')]",
   "dependsOn": [
     "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]"
@@ -97,21 +92,18 @@ A container can also optionally contain the following properties:
 - properties.options.autoscaleSettings.maxThroughput
 - properties.resource.indexingPolicy
 
-Here is an example of a container that is named **products**, has **400 RU/s** throughput, and a partition key path of **/categoryId**.
+Here is an example of a container that is named **products**, has **1000 RU/s** autoscale, and a partition key path of **/categoryId**.
 
 ```json
 {
   "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
-  "apiVersion": "2021-05-15",
+  "apiVersion": "2024-04-15",
   "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks/products')]",
   "dependsOn": [
     "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]",
     "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
   ],
   "properties": {
-    "options": {
-      "throughput": 400
-    },
     "resource": {
       "id": "products",
       "partitionKey": {
@@ -119,10 +111,18 @@ Here is an example of a container that is named **products**, has **400 RU/s** t
           "/categoryId"
         ]
       }
+    },
+    "options": {
+      "autoscaleSettings": {
+        "maxThroughput": 1000
+      }
     }
   }
 }
 ```
+
+> [!NOTE]
+> Throughput is itself a child resource of a container and can be provisioned by creating a **Microsoft.DocumentDB/databaseAccounts/sqlDatabases/throughputSettings** child resource of the container. However, it is less verbose to set throughput values using the `options` of the container properties. This is the recommended means for both creating and updating throughput for a container.
 
 ## Final template
 
@@ -135,7 +135,7 @@ Now that all resources are in place, the template file should now contain the fo
   "resources": [
     {
       "type": "Microsoft.DocumentDB/databaseAccounts",
-      "apiVersion": "2021-05-15",
+      "apiVersion": "2024-04-15",
       "name": "[concat('csmsarm', uniqueString(resourceGroup().id))]",
       "location": "[resourceGroup().location]",
       "properties": {
@@ -149,7 +149,7 @@ Now that all resources are in place, the template file should now contain the fo
     },
     {
       "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
-      "apiVersion": "2021-05-15",
+      "apiVersion": "2024-04-15",
       "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks')]",
       "dependsOn": [
         "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]"
@@ -169,15 +169,17 @@ Now that all resources are in place, the template file should now contain the fo
         "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
       ],
       "properties": {
-        "options": {
-          "throughput": 400
-        },
         "resource": {
           "id": "products",
           "partitionKey": {
             "paths": [
               "/categoryId"
             ]
+          }
+        },
+        "options": {
+          "autoscaleSettings": {
+            "maxThroughput": 1000
           }
         }
       }

@@ -53,4 +53,4 @@ Cloud service applications can have a wide range of connectivity problems. To re
 
 ## Determine root cause for throttling at service level
 
-Microsoft Graph has a limit of 2000 requests per second. Furthermore, Azure Active Directory (Azure AD) has a limit of requests against resource units after which traffic is throttle. For more information, see Throttling and service limits to consider for testing.
+Microsoft Graph has a limit of 2000 requests per second. Furthermore, Microsoft Entra ID has a limit of requests against resource units after which traffic is throttle. For more information, see Throttling and service limits to consider for testing.

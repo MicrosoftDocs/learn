@@ -27,6 +27,6 @@ To share your collection:
 
 1. Navigate to the collections area in your profile (select on your avatar image in the upper right corner of the Learn window) then select **Profile**.
 1. In the left menu select **Collections**.
-1. Select **Share** then choose your method of distribution--Twitter, LinkedIn, Facebook, or email.
+1. Select **Share** then choose your method of distribution--X, LinkedIn, Facebook, or email.
 
 It is as simple as that to share the knowledge.

@@ -1,9 +1,0 @@
-    - task: AzureMysqlDeployment@1
-      displayName: Run MySQL initialization script
-      inputs:
-        azureSubscription: 'Azure Connection'
-        serverName: '$(MySqlServer).mysql.database.azure.com'
-        databaseName: 'alm'
-        sqlUsername: $(MySqlUserName)@$(MySqlServer)
-        sqlPassword: $(MySqlPassword)
-        sqlFile: '$(Build.SourcesDirectory)/CreateMYSQLDB.sql'

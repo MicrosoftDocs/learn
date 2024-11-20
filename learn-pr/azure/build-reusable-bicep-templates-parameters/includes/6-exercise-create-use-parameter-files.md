@@ -126,7 +126,7 @@ keyVaultName='YOUR-KEY-VAULT-NAME'
 read -s -p "Enter the login name: " login
 read -s -p "Enter the password: " password
 
-az keyvault create --name $keyVaultName --location westus3 --enabled-for-template-deployment true
+az keyvault create --name $keyVaultName --location eastus --enabled-for-template-deployment true
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login --output none
 az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value $password --output none
 ```
@@ -149,7 +149,7 @@ $keyVaultName = 'YOUR-KEY-VAULT-NAME'
 $login = Read-Host "Enter the login name" -AsSecureString
 $password = Read-Host "Enter the password" -AsSecureString
 
-New-AzKeyVault -VaultName $keyVaultName -Location westus3 -EnabledForTemplateDeployment
+New-AzKeyVault -VaultName $keyVaultName -Location eastus -EnabledForTemplateDeployment
 Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $login
 Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $password
 ```
@@ -184,7 +184,7 @@ az keyvault show --name $keyVaultName --query id --output tsv
 The resource ID will look something like this example:
 
 ```Output
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
 ```
 
 Copy the resource ID. You'll use it in the next step.

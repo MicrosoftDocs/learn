@@ -2,15 +2,19 @@
 uid: learn.wwl.enrich-search-index-using-language-studio.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction"
-  ms.date: 09/21/2022
+  description: Introduction
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 09/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/01-introduction.md)]
+

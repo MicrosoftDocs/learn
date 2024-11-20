@@ -4,22 +4,23 @@ Imagine that you're an infrastructure manager who's been asked to provision your
 
 Automation ordinarily uses three tracks: *Provision*, *Build*, and *Deploy*. Each track can have one or more *pipelines*.
 
-The following image displays multiple pipelines in the **Provision** track, with each pipeline focusing on the infrastructure for a team.
+The following image displays multiple pipelines in the **Provision** track, with each pipeline focusing on the infrastructure for a team:
 
-![Screenshot highlighting the Provision pipeline elements for the various teams.](../media/1-tracks.png)
+![Diagram highlighting the Provision pipeline elements for the various teams.](../media/1-tracks.png)
 
 In this module's scenario, you'll use all three tracks by implementing multiple pipelines.
 
-Azure supports Several automation tools such as Jenkins, GitLab, GitHub Actions, and Azure Pipelines.
+Azure supports several automation tools such as Jenkins, GitLab, GitHub Actions, and Azure Pipelines.
 
 In this module, you can complete the exercises using GitHub Actions or Azure Pipelines.
 
 ## Learning objectives
 
 In this module, you will:
+
 - Create a Terraform configuration for your Azure resources.
 - Provision your infrastructure and deploy it to Azure.
-- Set up your project for continuous integration and continuous delivery (CI/CD) by using with an automation workflow - either GitHub Actions or Azure Pipelines.
+- Set up your project for continuous integration and continuous delivery (CI/CD) by using with an automation workflow (either GitHub Actions or Azure Pipelines).
 
 ## Prerequisites
 

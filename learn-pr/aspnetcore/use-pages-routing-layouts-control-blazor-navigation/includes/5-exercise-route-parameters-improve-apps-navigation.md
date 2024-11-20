@@ -134,7 +134,7 @@ In this exercise, you'll add a new order detail page that makes use of route par
     Let's use this new page when a customer checks out. You need to update the **Checkout.razor** component.
 
 1. In the file explorer, expand **Pages**. Then select **Checkout.razor**.
-1. Change the call to `NavigationManager.NavigateTo("/myorders")` to use the order ID of the placed order.
+1. Change the call to the following to use the order ID of the placed order.
 
     ```razor
     NavigationManager.NavigateTo($"myorders/{newOrderId}");

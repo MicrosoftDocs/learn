@@ -2,14 +2,14 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/08/2023
+  ms.date: 08/25/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: synapse-analytics
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:

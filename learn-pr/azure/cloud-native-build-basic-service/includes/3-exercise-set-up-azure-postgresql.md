@@ -12,7 +12,7 @@ In this exercise, you'll:
 To perform this exercise, you need:
 
 * An Azure subscription.
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create a single server instance of Azure Database for PostgreSQL
 
@@ -31,7 +31,7 @@ To perform this exercise, you need:
    | Version | Select **11**. |
    | Compute + storage | Select the **Configure server** link. On the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
    | Admin username | Enter **Student**. |
-   | Password | Enter **Pa55w0rd1234**. |
+   | Password | Enter a password. |
 
     :::image type="content" source="../media/3-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the Single server blade in the Azure portal.":::
 
@@ -66,7 +66,7 @@ To perform this exercise, you need:
     > [!NOTE]
     > If this is the first time you're starting Azure Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you're using in this lab, and then select **Create storage**.
 
-1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded previously in this task, and when prompted to provide the password, enter **Pa55w0rd1234**:
+1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to connect to the **postgres** database hosted on the newly deployed single server instance of Azure Database for PostgreSQL. Replace the `<server_name>` and `<user_name>` placeholders with the values you recorded previously in this task, and when prompted to provide the password, enter the password your created earlier in this unit:
 
     ```azurecli
     psql --host=<server_name> --port=5432 --username=<user_name> --dbname=postgres

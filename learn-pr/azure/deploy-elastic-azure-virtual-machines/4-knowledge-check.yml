@@ -2,14 +2,15 @@
 uid: learn.azure.deploy-elastic-azure-virtual-machines.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "This unit checks user's understanding of the content in the module for deploying Elastic on Azure virtual machines."
-  ms.date: 6/15/2021
+  ms.date: 08/02/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:
@@ -33,7 +34,7 @@ quiz:
     - content: Three
       isCorrect: true
       explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
-    - content: "60"
+    - content: "Sixty"
       isCorrect: false
       explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
   - content: What is the final step to deploy Elastic on Azure VMs?
@@ -48,3 +49,4 @@ quiz:
       isCorrect: true
       explanation: This is the final step in deploying Elastic on Azure VMs.
   
+

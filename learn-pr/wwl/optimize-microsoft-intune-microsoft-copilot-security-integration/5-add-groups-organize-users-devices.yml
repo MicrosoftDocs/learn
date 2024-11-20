@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.add-groups-organize-users-devices
+title: Add groups in Microsoft Intune to organize users and devices
+metadata:
+  title: Add groups in Microsoft Intune to organize users and devices
+  description: Add groups in Microsoft Intune to organize users and devices
+  author: wwlpublish
+  ms.author: rstearman
+  ms.date: 06/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-add-groups-organize-users-devices.md)]

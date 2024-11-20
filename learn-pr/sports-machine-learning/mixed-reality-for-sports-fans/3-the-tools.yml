@@ -3,11 +3,10 @@ uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.the-tools
 metadata:
   title: A brief introduction to the tools of Mixed Reality
   description: A brief introduction to the tools of Mixed Reality
-  ms.date: 06/15/2021
+  ms.date: 11/04/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: A brief introduction to the tools of Mixed Reality
 durationInMinutes: 4

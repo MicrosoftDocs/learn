@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-security-practices-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the role of Multifactor Authentication (MFA) in Microsoft Entra ID?
+    choices:
+    - content: It allows users to access Azure SQL data sources without being prompted for credentials.
+      isCorrect: false
+      explanation: Incorrect. This is a feature of Active Directory Integrated authentication mode, not MFA.
+    - content: It simplifies the sign-in process by requiring only one authentication factor.
+      isCorrect: false
+      explanation: Incorrect. MFA enhances security by requiring two or more authentication factors, not simplifying the sign-in process.
+    - content: It enhances security by requiring users to provide two or more authentication factors, significantly reducing the risk of unauthorized access.
+      isCorrect: true
+      explanation: Correct. MFA requires multiple authentication factors, enhancing the security of the database.
+  - content: What is a key difference between system-assigned and user-assigned managed identities?
+    choices:
+    - content: System-assigned managed identities can be shared across multiple Azure resources, while user-assigned can't
+      isCorrect: false
+      explanation: Incorrect. It's the other way around. User-assigned managed identities can be shared, while system-assigned can't.
+    - content: User-assigned managed identities can be assigned to multiple instances of various Azure services, while system-assigned are tied to a single resource
+      isCorrect: true
+      explanation: Correct. User-assigned managed identities are independent Azure resources that can be assigned to multiple instances, while system-assigned are tied to a single resource.
+    - content: User-assigned managed identities are automatically deleted when the resource is deleted, while system-assigned aren't
+      isCorrect: false
+      explanation: Incorrect. System-assigned managed identities are tied to the resource's lifecycle and are deleted when the resource is deleted.
+  - content: How does Azure SQL Database handle connection attempts when database-level firewall rules are enabled?
+    choices:
+    - content: Azure SQL Database first checks for a database-level firewall rule matching the database name in the connection string. If no such rule exists, it then checks the server-level IP firewall rules.
+      isCorrect: true
+      explanation: Correct. Azure SQL Database checks both levels of firewall rules to determine if a connection can be completed.
+    - content: It prompts the user to create a new firewall rule every time.
+      isCorrect: false
+      explanation: Incorrect. Users are prompted to create a firewall rule only if no matching rule exists.
+    - content: It only checks the server-level IP firewall rules.
+      isCorrect: false
+      explanation: Incorrect. Azure SQL Database checks both database-level and server-level firewall rules.

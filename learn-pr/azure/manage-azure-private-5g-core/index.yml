@@ -1,18 +1,19 @@
 ### YamlMime:Module
 uid: learn.manage-azure-private-5g-core
-hidden: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage the Azure Private 5G Core service
   description: "Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks."
-  ms.date: 11/29/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 07/29/2024
+  author: lnyswonger
+  ms.author: joemarshall
+  ms.topic: module
+  ms.service: azure-private-5g-core
 title: Manage the Azure Private 5G Core service
 summary: "Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Give examples of routine management tasks for a private mobile network.
     - Manage sites in a private mobile network.
     - Manage SIMs, SIM policies, and services for user equipment in a private mobile network.

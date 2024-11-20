@@ -2,15 +2,14 @@
 uid: learn.wwl.static-analyzers.explore-codeql-github
 title: Explore CodeQL in GitHub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore CodeQL in GitHub
   description: "Explore CodeQL in GitHub"
-  ms.date: 01/10/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+durationInMinutes: 2
 content: |
   [!include[](includes/3-explore-codeql-github.md)]

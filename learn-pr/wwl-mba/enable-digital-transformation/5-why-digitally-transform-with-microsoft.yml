@@ -2,13 +2,14 @@
 uid: learn-wwl.enable-digital-transformation.why-digitally-transform-with-microsoft
 title: Why digitally transform with Microsoft
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Why digitally transform with Microsoft
   description: "Why digitally transform with Microsoft"
   ms.date: 10/14/2020
   author: raniabayoumy
   ms.author: rabayoum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4
 content: |

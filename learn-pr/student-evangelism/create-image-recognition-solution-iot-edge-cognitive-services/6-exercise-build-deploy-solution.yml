@@ -2,14 +2,16 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-build-deploy-solution
 title: Exercise - Deploy and build the solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy and build the solution
   description: In this section, we help the learner to how to deploy and build a solution.
-  ms.date: 02/12/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, linux-related-content
 durationInMinutes: 20 # dummy number at present
 content: |
   [!include[](includes/6-exercise-build-deploy-solution.md)]
+

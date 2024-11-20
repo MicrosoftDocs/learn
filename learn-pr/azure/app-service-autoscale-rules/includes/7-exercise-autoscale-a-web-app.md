@@ -1,14 +1,14 @@
 Autoscaling is a key part of ensuring that a system remains available and responsive.
 
-You want to implement autoscaling for the hotel reservation system web app, based on the CPU usage of the host. When the CPU utilization rises over a specific threshold, the web app will scale out. If the CPU usage drops, the web app will scale back in again.
+You want to implement autoscaling for the hotel reservation system web app, based on the CPU usage of the host. When the CPU utilization rises over a specific threshold, you want the web app to scale out. If the CPU usage drops, you want the web app to scale back in again.
 
-In this unit, you'll set up the web app and run a test client app that imposes a load on the web app. You'll see the types of errors that can occur when the web host becomes overloaded. Next, you'll configure autoscaling for the web app and run the test client again. You'll monitor the autoscale events that occur, and examine how the system responds to the workload.
+In this unit, you set up the web app and run a test client app that imposes a load on the web app. You see the types of errors that can occur when the web host becomes overloaded. Next, you configure autoscaling for the web app and run the test client again. You monitor the autoscale events that occur and examine how the system responds to the workload.
 
 ## Setup
 
-The web app for the hotel reservation system implements a web API. The web API exposes HTTP POST and GET operations that create and retrieve customer's bookings. In this exercise, the bookings aren't saved, and the GET operation simply retrieves dummy data.
+The web app for the hotel reservation system implements a web API. The web API exposes HTTP POST and GET operations that create and retrieve customer bookings. In this exercise, the bookings aren't saved, and the GET operation simply retrieves dummy data.
 
-The exercise also runs a client app that simulates a number of users issuing POST and GET operations simultaneously. This app provides the workload for testing how the web app autoscales.
+The exercise also runs a client app that simulates many users issuing POST and GET operations simultaneously. This client app provides the workload for testing how the web app autoscales.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -53,7 +53,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     cd mslearn-hotel-reservation-system/src
     ```
 
-1. Build the apps for the hotel system. There are two apps - a web app that implements the web API for the system, and a client app that you'll use for load testing the web app.
+1. Build the apps for the hotel system. The two apps are (1) a web app that implements the web API for the system and (2) a client app that you use for load testing the web app.
 
     ```bash
     dotnet build
@@ -66,7 +66,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet publish -o website
     ```
 
-1. Go to the **website** folder containing the published files, zip them up, and deploy them to the web app you created in the previous task. Replace `<your-webapp-name>` with the name of your web app.
+1. Go to the **website** folder containing the published files, zip up the files, and deploy the files to the web app you created in the previous task. Replace `<your-webapp-name>` with the name of your web app.
 
     ```bash
     cd website
@@ -76,9 +76,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Test the web app before configuring autoscaling
 
-1. Using a web browser, go to `https://<your-webapp-name>.azurewebsites.net/api/reservations/1`. Visiting this URL sends a GET request to the web API to retrieve the details of reservation number 1. You should see a result similar to the one that follows. The response contains a JSON document with the details of the booking. Remember that this is dummy data.
+1. Using a web browser, go to `https://<your-webapp-name>.azurewebsites.net/api/reservations/1`. Visiting this URL sends a GET request to the web API to retrieve the details of reservation number 1. You should see a result similar to the one that follows. The response contains a JSON document with the details of the booking. Remember that the image shows fictitious data.
 
-    ![Screenshot of a web browser sending a web API request to the hotel reservation system web app.](../media/7-web-api-annotated.png)
+    :::image type="content" source="../media/7-web-api-annotated.png" alt-text="Screenshot of a web browser sending a web API request to the hotel reservation system web app.":::
 
 1. Return to the Cloud Shell, and move to the **~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient** folder.
 
@@ -105,9 +105,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
     </configuration>
     ```
 
-    > The **NumClients** setting in this file specifies the number of simultaneous clients that will attempt to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of a reservation – all of the data used is fake and is not actually persisted anywhere. Leave this value set to 100.
+    The **NumClients** setting in this file specifies the number of simultaneous clients that attempt to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of a reservation. All the data used is fictitious and isn't persisted anywhere. Leave the **NumClients** value set to 100.
 
-1. Save the file by selecting the ellipsis in the upper right hand corner of the editor.
+1. Save the file by selecting the ellipsis (...) in the upper right corner of the editor.
 
 1. In the Cloud Shell, edit the HotelReservationSystemTestClient.csproj file in this folder.
 
@@ -115,7 +115,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     code HotelReservationSystemTestClient.csproj
     ```
 
-1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like the following example.
 
     ```text
     <Project Sdk="Microsoft.NET.Sdk">
@@ -137,7 +137,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     </Project>
     ```
 
-1. Save the file by selecting the ellipsis in the upper right hand corner of the editor, and then close the code editor.
+1. Save the file by selecting the ellipsis (...) in the upper right corner of the editor, and then close the code editor.
 
 1. Rebuild the test client app with the new configuration.
 
@@ -145,13 +145,13 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet build
     ```
 
-1. Run the client app. You'll see a number of messages appear as the clients start running, make reservations, and run queries. Allow the system to run for a couple of minutes. The responses will be slow, and soon the client requests will start to fail with HTTP 408 (Timeout) errors.
+1. Run the client app. You see a number of messages appear as the test clients start running, make reservations, and run queries. Allow the system to run for a couple of minutes. The responses become slow, and soon the client requests start to fail with HTTP 408 (Timeout) errors.
 
     ```bash
     dotnet run
     ```
 
-   ![Screenshot of a client app running, showing the responses and error messages that occur.](../media/7-web-client-annotated.png)
+   :::image type="content" source="../media/7-web-client-annotated.png" alt-text="Screenshot of a client app running, showing the responses and error messages that occur.":::
 
 1. To stop the client app, press <kbd>Enter</kbd>.
 
@@ -163,19 +163,19 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. In the **Default** autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then select **Add a rule**.
 
-    ![Screenshot of the web app in the Azure portal while configuring autoscaling.](../media/7-add-rule-annotated.png)
+    :::image type="content" source="../media/7-add-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring autoscaling.":::
 
-1. Add a rule that increases the instance count by one if the average CPU utilization across all instances in the web site exceeds 50 percent in the preceding five minutes. This is a scale-out rule.
+1. Add a rule that increases the instance count by one if the average CPU utilization across all instances in the website exceeds 50 percent in the preceding five minutes. This is a scale-out rule.
 
     :::image type="content" source="../media/7-first-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.":::
 
-1. Select **Add a rule** again. Add a rule that reduces the instance count by one if the average CPU utilization across all instances in the web site drops below 30 percent in the preceding five minutes. This is a scale-in rule. Remember that it's good practice to define scale rules in pairs.
+1. Select **Add a rule** again. Add a rule that reduces the instance count by one if the average CPU utilization across all instances in the website drops below 30 percent in the preceding five minutes. This is a scale-in rule. Remember that it's good practice to define autoscale rules in pairs.
 
     :::image type="content" source="../media/7-second-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.":::
 
-1. In the **Default** auto scale condition window, in the **Instance limits** section, set the **Maximum** instance count to five. Name the Autoscale setting **ScaleOnCPU**, and then select **Save**.
+1. In the **Default** autoscale condition window, in the **Instance limits** section, set the **Maximum** instance count to five. Name the Autoscale setting **ScaleOnCPU**, and then select **Save**.
 
-    ![Screenshot of the complete autoscale settings for the web app.](../media/7-web-autoscale-settings-annotated.png)
+    :::image type="content" source="../media/7-web-autoscale-settings-annotated.png" alt-text="Screenshot of the complete autoscale settings for the web app.":::
 
 ## Monitor autoscale events
 
@@ -186,47 +186,47 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet run
     ```
 
-1. While the client app is running, switch back to the Azure portal showing the autoscale settings for the web app, and select **Run history**. Under **show data for last**, select **1 hour**. Initially, the chart will be empty as it will take several minutes for autoscaling to kick in.
+1. While the test client app is running, switch back to the Azure portal showing the autoscale settings for the web app, and select **Run history**. Under **show data for last**, select **1 hour**. Initially, the chart is empty because it takes several minutes for autoscaling to kick in.
 
-1. While you're waiting for autoscaling events to occur, go to the pane for your web service (not the service plan), and under **Monitoring**, select **Metrics**.
+1. While you wait for autoscaling events to occur, go to the pane for your web service (not the pane for the App Service plan). Under **Monitoring**, select **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard:
 
-   - CPU Time. Select the Sum aggregation
+   - CPU Time. Select the Sum aggregation.
    - Http Server Errors. Select the Sum aggregation.
    - Http 4.xx. Select the Sum aggregation.
    - Average Response Time. Select the Avg aggregation.
 
-1. Allow the system to stabilize, and note the CPU Time, the number of HTTP 4.xx errors, and the average response time. Before the system autoscales, you should see a significant number of HTTP 4.xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. There may be the occasional HTTP Server Error, depending on how the web server is coping with the burden.
+1. Allow the system to stabilize, and note the CPU time, the number of HTTP 4.xx errors, and the average response time. Before the system autoscales, you should see many HTTP 4.xx errors (these are HTTP 408 Timeout errors), and the average response time should be several seconds. There also could be the occasional HTTP server error, depending on how the web server copes with the burden.
 
 1. After 10 minutes or so, you should see the following trends in this chart:
 
-   - CPU Time jumps up.
+   - CPU time jumps up.
    - Number of HTTP 4.xx errors diminishes.
    - Average response time drops.
 
-    ![Screenshot of the Metrics chart for the web app with three lines pointing towards autoscaling events.](../media/7-metrics-chart-annotated.png)
+    :::image type="content" source="../media/7-metrics-chart-annotated.png" alt-text="Screenshot of the Metrics chart for the web app with three lines pointing towards autoscaling events.":::
 
-    Each major spike in the CPU Time indicates that more CPU processing power has become available. This is a result of autoscaling.
+    Each major spike in the CPU time indicates that more CPU processing power has become available. This change is a result of autoscaling.
 
-1. For the web app and examine the charts, return to the **Overview** page. These charts should indicate the following trends:
+1. For the web app and examine the charts, return to the **Overview** page. The overview charts should indicate the following trends:
 
     - Data In, Data Out, and Requests metrics have increased.
-    - Average Response Time has dropped.
+    - Average response time has dropped.
   
-    ![Screenshot of the charts on the Overview page of the web app.](../media/7-overview-charts.png)
+    :::image type="content" source="../media/7-overview-charts.png" alt-text="Screenshot of the charts on the Overview page of the web app.":::
 
-1. Select **Scale out (App Service plan)**, and then select **Run history**. Select **1 hour**. The graph should now indicate that autoscaling has occurred. The number of instances will have increased (it may have reached five, depending on how long the client app has been running), and you should see a number of autoscale events reported.
+1. Select **Scale out (App Service plan)**, and then select **Run history**. Select **1 hour**. The graph should now indicate that autoscaling occurred. The number of instances increased (it might reach five, depending on how long the client app has been running), and you should see several autoscale events reported.
 
-    ![Screenshot of the chart showing how autoscaling has increased the instance count for the web app.](../media/7-increase-instances.png)
+    :::image type="content" source="../media/7-increase-instances.png" alt-text="Screenshot of the chart showing how autoscaling increased the instance count for the web app.":::
 
     > [!NOTE]
-    > The autoscale events are reported in pairs. The first event occurs when autoscaling has triggered an increase in the number of instances. The second event occurs when autoscaling has completed.
+    > Autoscale events are reported in pairs. The first event occurs when autoscaling triggers an increase in the number of instances. The second event occurs when autoscaling completes.
 
-1. Return to the Cloud Shell. You should see that the app is running more quickly, and far fewer requests are failing.
+1. Return to the Cloud Shell. You should see that the app runs faster and that far fewer requests fail.
 
 1. To stop the app, press Enter.
 
-1. After several minutes, if you examine the run history of the App Service Plan, you'll see the number of instances drop. This is the result of the scale-in rule releasing these resources.
+1. After several minutes, if you examine the run history of the App Service Plan, you see the number of instances drop. This decrease results from the scale-in rule releasing resources.
 
-You configured autoscaling for the hotel reservation system. The system scaled out when the total CPU usage across all instances hosting the web site exceeded 50 percent in a five-minute period. The system scaled back in when the total CPU utilization dropped below 30 percent, again for a five-minute period. You subjected the hotel reservation system to a test load, and monitored when autoscaling occurred.
+You configured autoscaling for the hotel reservation system. The system scaled out when the total CPU usage across all instances hosting the website exceeded 50 percent in a five-minute period. The system scaled back in when the total CPU utilization dropped below 30 percent, again for a five-minute period. You subjected the hotel reservation system to a test load and monitored when autoscaling occurred.

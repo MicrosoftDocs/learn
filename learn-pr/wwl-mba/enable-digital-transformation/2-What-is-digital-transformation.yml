@@ -2,13 +2,14 @@
 uid: learn-wwl.enable-digital-transformation.2-what-is-digital-transformation
 title: What is digital transformation?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is digital transformation?
   description: "What is digital transformation?"
   ms.date: 10/14/2020
   author: raniabayoumy
   ms.author: rabayoum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 9
 content: |

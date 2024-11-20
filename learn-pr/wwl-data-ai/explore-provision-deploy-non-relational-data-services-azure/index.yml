@@ -1,25 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Storage for non-relational data
-  description: "Explore Azure Storage for non-relational data"
-  ms.date: 01/25/2023
+  description: "This content is a part of Explore Azure Storage for non-relational data."
+  ms.date: 09/17/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure-storage
+  ai-usage: human-only
 title: Explore Azure Storage for non-relational data
 summary: Azure Storage is a core service in Microsoft Azure that is commonly used to store non-relational data.
 abstract: |
-  In this module, you'll learn how to:
-  - Describe features and capabilities of Azure blob storage
-  - Describe features and capabilities of Azure Data Lake Gen2
-  - Describe features and capabilities of Azure file storage
-  - Describe features and capabilities of Azure table storage
-  - Provision and use an Azure Storage account
-prerequisites: |
-  Before starting this module, you should have some familiarity with Microsoft Azure concepts and the Azure portal.
-iconUrl: /learn/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
+  In this module, you learn how to:
+
+  -   Describe features and capabilities of Azure blob storage.
+
+  -   Describe features and capabilities of Azure Data Lake Storage Gen2.
+
+  -   Describe features and capabilities of Microsoft OneLake in Fabric.
+
+  -   Describe features and capabilities of Azure file storage.
+
+  -   Describe features and capabilities of Azure table storage.
+
+  -   Provision and explore an Azure Storage account.
+prerequisites: Before starting this module, you should have some familiarity with Microsoft Azure concepts and the Azure portal.
+iconUrl: /training/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
 levels:
 - beginner
 roles:
@@ -34,6 +45,7 @@ units:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.introduction
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-blob-storage
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-datalake-storage-gen2
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-one-lake
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-files
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-tables
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.exercise-azure-storage

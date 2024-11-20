@@ -2,21 +2,21 @@
 uid: learn.introduction-to-hololens
 metadata:
   title: Introduction to HoloLens
-  description: This course provides a basic understanding of what HoloLens can do for an organization
-  ms.date: 4/7/2022
+  description: This course provides a basic understanding of what HoloLens can do for an organization.
+  ms.date: 03/01/2024
   author: qianw211  
-  ms.author: qianwen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-hololens
+  ms.author: lolab
+  ms.topic: module
+  ms.service: hololens
 title: Introduction to HoloLens
-summary: Learn how HoloLens can help to increase employee productivity, get technical assistance from remote colleagues, and build custom applications using digital overlays.
+summary: In this module, you'll learn how HoloLens can help increase employee productivity, get technical assistance from remote colleagues, and build custom applications using digital overlays.
 abstract: |
   By the end of this session, you'll be able to: 
-  - Understand what HoloLens is
-  - Understand how HoloLens works
-  - Learn what HoloLens can do for your organization
-  - Learn how HoloLens empowers businesses
-  - Get started with HoloLens
+  - Understand what HoloLens is.
+  - Understand how HoloLens works.
+  - Learn what HoloLens can do for your organization.
+  - Learn how HoloLens empowers businesses.
+  - Get started with HoloLens.
 iconUrl: /training/achievements/introduction-to-hololens-badge.svg
 levels: 
 - beginner

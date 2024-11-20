@@ -2,13 +2,14 @@
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.3-decision-criteria-selecting-correct-hdinsight-configuration-option
 title: Decision criteria for selecting the correct HDInsight configuration option
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Decision criteria for selecting the correct HDInsight configuration option
   description: "Decision criteria for selecting the correct HDInsight configuration option"
-  ms.date: 01/05/2022
+  ms.date: 04/06/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

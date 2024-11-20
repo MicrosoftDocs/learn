@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.retrieval-augmented-generation-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
+  description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
+summary: Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of generative models by integrating external information retrieval mechanisms. When you use both generative models and retrieval systems, RAG dynamically fetches relevant information from external data sources to augment the generation process, leading to more accurate and contextually relevant outputs. 
+abstract: |
+  In this module, you learn how to:
+  - Set up a RAG workflow.
+  - Prepare your data for RAG.
+  - Retrieve relevant documents with vector search.
+  - Improve model accuracy by reranking your search results.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.retrieval-augmented-generation-azure-databricks.introduction
+- learn.wwl.retrieval-augmented-generation-azure-databricks.workflow
+- learn.wwl.retrieval-augmented-generation-azure-databricks.prepare-data
+- learn.wwl.retrieval-augmented-generation-azure-databricks.vector-search
+- learn.wwl.retrieval-augmented-generation-azure-databricks.ranking
+- learn.wwl.retrieval-augmented-generation-azure-databricks.exercise
+- learn.wwl.retrieval-augmented-generation-azure-databricks.knowledge-check
+- learn.wwl.retrieval-augmented-generation-azure-databricks.summary
+badge:
+  uid: learn.wwl.retrieval-augmented-generation-azure-databricks.badge
+

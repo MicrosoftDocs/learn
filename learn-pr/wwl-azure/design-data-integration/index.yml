@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design data integration
-  description: "Azure Architects design and recommend data integration solutions."
-  ms.date: 03/14/2023
+  description: Azure Architects design and recommend data integration solutions.
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-synapse-analytics
+  ms.collection: wwl-ai-copilot
 title: Design data integration
 summary: Azure Architects design and recommend data integration solutions.
 abstract: |
@@ -48,3 +51,4 @@ units:
 - learn.wwl.design-data-integration.summary-resources
 badge:
   uid: learn.wwl.design-data-integration.badge
+

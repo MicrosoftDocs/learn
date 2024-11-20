@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.mlflow-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use MLflow in Azure Databricks
-  description: "Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models."
-  ms.date: 03/22/2023
+  description: Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models.
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
+  ms.author: madiepev
+  ms.date: 08/26/2024
   ms.service: azure-databricks
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Use MLflow in Azure Databricks
 summary: MLflow is an open source platform for managing the machine learning lifecycle that is natively supported in Azure Databricks.
 abstract: |
@@ -24,8 +28,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.mlflow-azure-databricks.introduction
@@ -37,3 +40,4 @@ units:
 - learn.wwl.mlflow-azure-databricks.summary
 badge:
   uid: learn.wwl.mlflow-azure-databricks.badge
+

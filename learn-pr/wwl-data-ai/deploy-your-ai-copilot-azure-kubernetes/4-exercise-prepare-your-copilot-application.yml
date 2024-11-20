@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.exercise-prepare-your-copilot-application
+title: Exercise - Prepare your copilot application
+metadata:
+  title: Exercise - Prepare your copilot application
+  description: "Exercise - Prepare your copilot application"
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-prepare-your-copilot-application.md)]

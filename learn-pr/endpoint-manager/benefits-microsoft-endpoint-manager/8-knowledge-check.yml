@@ -3,11 +3,10 @@ uid: learn.benefits-microsoft-endpoint-manager.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/26/2020
+  ms.date: 11/08/2024
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 3
 quiz:
@@ -21,10 +20,10 @@ quiz:
     - content: "Microsoft Intune admin center is a series of interconnected consoles that require separate administrator rights to access each console."
       isCorrect: false
       explanation: "Microsoft Intune admin center a single, integrated web-based console."
-    - content: "Microsoft Intune admin center is a single app that must be access on-premises."
+    - content: "Microsoft Intune admin center is a single app that must be accessed on-premises."
       isCorrect: false
       explanation: "Microsoft Intune admin center a single, integrated web-based console."
-  - content: "What types of methods does Microsoft Intune use to keep an organization's cloud and on-premises devices, apps, and data secure?"
+  - content: "What types of methods are used by Microsoft Intune to keep an organization's cloud and on-premises devices, apps, and data secure?"
     choices:
     - content: "Microsoft Intune uses a progressively changing set of technologies."
       isCorrect: false

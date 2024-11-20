@@ -7,8 +7,7 @@ metadata:
   author: chloecodesthings
   ms.author: chnoring
   ms.date: 06/03/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 azureSandbox: true

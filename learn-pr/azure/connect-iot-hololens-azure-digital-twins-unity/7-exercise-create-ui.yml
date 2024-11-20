@@ -2,13 +2,14 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.exercise-create-ui
 title: Exercise - Create Azure Digital Twin equipped user interfaces
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Azure Digital Twin equipped user interfaces
   description: Learn how to create and configure the Azure Digital Twin user interface in your Unity project.
-  ms.date: 05/12/2021
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: lolab
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-create-ui.md)]

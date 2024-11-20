@@ -2,13 +2,16 @@
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/30/2021
+  description: Knowledge check
   author: wwlpublish
   ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 3
 quiz:
@@ -46,3 +49,4 @@ quiz:
     - content: "Special permissions are required to use the PREDICT command."
       isCorrect: false
       explanation: "Incorrect. No permissions are required for PREDICT; however, the user needs EXECUTE permission on the database and permission to query any data used as inputs. The user must also be able to read the model from a table if the model has been stored in a table."
+

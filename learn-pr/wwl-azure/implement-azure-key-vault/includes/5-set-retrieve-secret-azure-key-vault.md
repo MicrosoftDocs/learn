@@ -1,4 +1,3 @@
-
 In this exercise you learn how to perform the following actions by using the Azure CLI:
 
 * Create a Key Vault
@@ -74,3 +73,4 @@ If you no longer need the resources in this exercise use the following command t
 ```azurecli
 az group delete --name az204-vault-rg --no-wait 
 ```
+

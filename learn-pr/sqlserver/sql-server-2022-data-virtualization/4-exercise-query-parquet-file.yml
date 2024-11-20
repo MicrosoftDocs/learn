@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-data-virtualization.exercise-query-parquet-file
+title: Exercise - Use PolyBase to query a Parquet file
+metadata:
+  title: Exercise - Use PolyBase to query a Parquet file
+  description: "Complete this exercise to learn how to use PolyBase to query an external data source Parquet file and manipulate the data."
+  ms.date: 04/28/2024
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-query-parquet-file.md)]

@@ -14,38 +14,10 @@ You can give any person an access role for container images published and owned 
 
 For container images published and owned by an organization, you can provide any person or team in the organization an access role.
 
-:::row:::
-  :::column:::
-    **Permission**
-  :::column-end:::
-  :::column:::
-    **Access description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    read
-  :::column-end:::
-  :::column:::
-    Can download the package. Can read package metadata.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    write
-  :::column-end:::
-  :::column:::
-    Can upload and download this package. Can read and write package metadata.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    admin
-  :::column-end:::
-  :::column:::
-    Can upload, download, delete, and manage this package. Can read and write package metadata. Can grant package permissions.
-  :::column-end:::
-:::row-end:::
-
+| **Permission** | **Access description**                                                                                                     |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| read           | Can download the package. Can read package metadata.                                                                       |
+| write          | Can upload and download this package. Can read and write package metadata.                                                 |
+| admin          | Can upload, download, delete, and manage this package. Can read and write package metadata. Can grant package permissions. |
 
 For more information about the package's access control and visibility configuration, see [Configuring a package's access control and visibility - GitHub Docs](https://docs.github.com/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility).

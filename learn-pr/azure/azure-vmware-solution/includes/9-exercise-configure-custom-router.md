@@ -1,4 +1,7 @@
-﻿Use the instructions below to configure the infrastructure for FRR and generate the default route:
+﻿> [!CAUTION]
+> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
+Use the instructions below to configure the infrastructure for FRR and generate the default route:
 
 ```azurecli
 az network vnet subnet create  -n <NVA-Subnet-name> -g <resource-group-name> --vnet-name <vnet-name>  --address-prefix 10.0.2.0/24

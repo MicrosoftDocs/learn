@@ -4,10 +4,9 @@ metadata:
   title: Develop and deploy applications on Kubernetes 
   description: Create, deploy, and maintain Kubernetes-native applications using AKS.
   ms.date: 01/07/2021
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: schaffererin
+  ms.author: schaffererin
+  ms.topic: learning-path
 title: Develop and deploy applications on Kubernetes
 summary:  In this learning path, you'll understand how to develop, build, deploy, and automatically maintain cloud native applications designed to work with Azure Kubernetes Service from the scratchpad to the deployment pipeline.
 prerequisites: |
@@ -25,11 +24,11 @@ roles:
 products:
 - azure
 subjects:
-- container
+- containers
 modules:
 - learn.aks-deploy-container-app
 - learn.app-package-management-using-helm
-- learn.aks-deployment-pipeline-github-actions
+# - learn.aks-deployment-pipeline-github-actions
 - learn.aks-manage-application-state
 - learn.aks-secrets-configure-app
 - learn.aks-optimize-compute-costs

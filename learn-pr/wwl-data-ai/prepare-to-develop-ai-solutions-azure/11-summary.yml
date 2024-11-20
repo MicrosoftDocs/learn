@@ -2,15 +2,19 @@
 uid: learn.wwl.prepare-to-develop-ai-solutions-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 07/14/2022
+  description: Summary
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 12/10/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]
+

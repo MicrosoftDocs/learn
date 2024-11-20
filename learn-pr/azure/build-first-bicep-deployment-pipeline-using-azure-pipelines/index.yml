@@ -1,15 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
   description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
+  manager: jasongroce
   ms.date: 01/30/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
   ms.custom: engagement-fy23
+  ms.service: azure-devops-pipelines
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
 summary: |
   Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
@@ -62,3 +65,4 @@ units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.summary
 badge:
   uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.badge
+

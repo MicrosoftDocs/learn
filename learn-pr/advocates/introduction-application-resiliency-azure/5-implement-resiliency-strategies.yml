@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.implement-resiliency-strategies
+title: Implement resiliency strategies
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement resiliency strategies
+  description: Implement resiliency strategies in Azure
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-implement-resiliency-strategies.md)]
+

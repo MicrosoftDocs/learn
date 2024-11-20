@@ -2,13 +2,17 @@
 uid: learn.wwl.hyperparameters-azure-databricks.hyperopt
 title: Optimize hyperparameters with Hyperopt
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize hyperparameters with Hyperopt
-  description: "Optimize hyperparameters with Hyperopt"
-  ms.date: 03/22/2023
+  description: Optimize hyperparameters with Hyperopt
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/2-hyperopt.md)]
+

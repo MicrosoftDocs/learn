@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Validate your understanding of the key concepts covered in this module.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 08/29/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is the purpose of the Precision metric?
+    choices:
+    - content: To measure the total volume of harmful content that the model identifies.
+      isCorrect: false
+      explanation: The Precision metric doesn't measure the total volume of harmful content.
+    - content: To measure how much of the content that the model identifies as harmful is actually harmful.
+      isCorrect: true
+      explanation: The Precision metric in Content Safety evaluates the accuracy of the model by measuring how much of the content that the model identifies as harmful is indeed harmful.
+    - content: To measure the model's ability to identify actual harmful content.
+      isCorrect: false
+      explanation: The Precision metric doesn't directly measure the model's ability to identify actual harmful content.
+    - content: To measure the speed at which the model detects harmful content.
+      isCorrect: false
+      explanation: The Precision metric doesn't measure the speed of detection.
+  - content: Which feature of Azure AI Content Safety is responsible for detecting and blocking incorrect information in model outputs?
+    choices:
+    - content: Text moderation
+      isCorrect: false
+      explanation: Text moderation detects harmful content in text.
+    - content: Prompt shields
+      isCorrect: false
+      explanation: To detect user prompt attacks and document attacks, prompt shields analyze large language model (LLM) inputs.
+    - content: Image moderation
+      isCorrect: false
+      explanation: Image moderation analyzes images to identify and block offensive content.
+    - content: Groundedness detection
+      isCorrect: true
+      explanation:  The groundedness detection feature detects and blocks incorrect information in model outputs, to help ensure that the text responses are factual and accurate based on the provided source materials.
+  - content: What is the purpose of the F1 score metric?
+    choices:
+    - content: To measure the total volume of harmful content that the model identifies.
+      isCorrect: false
+      explanation: The F1 score metric doesn't measure the total volume of harmful content.
+    - content: To measure the balance between **Precision** and **Recall**.
+      isCorrect: true
+      explanation: The F1 score metric in Content Safety is used when there's a need to balance Precision (the accuracy of identified harmful content) and Recall (the model's ability to identify actual harmful content).
+    - content: To measure the speed at which the model detects harmful content.
+      isCorrect: false
+      explanation: The F1 score metric doesn't measure the speed of detection.
+    - content: To measure the model's ability to identify actual harmful content.
+      isCorrect: false
+      explanation:  The F1 score metric doesn't directly measure the model's ability to identify actual harmful content.

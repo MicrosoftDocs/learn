@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-create-azure-kubernetes-service-cluster
+title: Exercise - Create an Azure Kubernetes Service cluster
+metadata:
+  title: Exercise - Create an Azure Kubernetes Service cluster
+  description: "Exercise - Create an Azure Kubernetes Service cluster"
+  ms.date: 11/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-azure-kubernetes-service-cluster.md)]

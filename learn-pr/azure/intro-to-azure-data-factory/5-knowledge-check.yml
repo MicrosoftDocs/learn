@@ -2,20 +2,21 @@
 uid: learn.intro-to-azure-data-factory.5-knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 08/31/2022  
+  ms.date: 10/22/2024  
   author: jonburchel
   ms.author: jburchel  
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "When considering Azure Data Factory, which of the following statements about its components is accurate?"
+  - content: "Which of the following statements about the components of Azure Data Factory is accurate?"
     choices:
     - content: "Data movement is an example of a pipeline."
       isCorrect: false
@@ -37,17 +38,17 @@ quiz:
     - content: "Integration runtimes"
       isCorrect: false
       explanation: "Incorrect. Integration runtimes provides the bridge between the activity and linked services."
-  - content: "In Azure Data Factory, which of the following is an advantage of using pipelines?"
+  - content: "Which of the following answers describes an advantage of using pipelines in Azure Data Factory?"
     choices:
     - content: "They point to the data that you want to use in your activities as either inputs or outputs."
       isCorrect: false
-      explanation: "Incorrect. This is a description of datasets."
+      explanation: "Incorrect. This answer is a description of datasets."
     - content: "You can more easily manage activities as a set instead of as individual items."
       isCorrect: true
       explanation: "Correct. The advantage of using a pipeline is that you can more easily manage the activities as a set instead of as individual items."
     - content: "They enable your data engineers to develop data transformation logic without needing to write code."
       isCorrect: false
-      explanation: "Incorrect. This is a description of data flows."
+      explanation: "Incorrect. This answer is a description of data flows."
   - content: "Which of the following organization types often rely on SQL Server Integration Services and could benefit from Azure Data Factory?"
     choices:
     - content: "Small and medium organizations"
@@ -58,15 +59,16 @@ quiz:
       explanation: "Incorrect. For these organizations, Azure Data Factory provides a means to create and run pipelines in the cloud."
     - content: "Traditional relational data warehousing organizations"
       isCorrect: true
-      explanation: "Correct. For these organizations, Azure Data Factory provides the ability to run SSIS packages on Azure."
+      explanation: "Correct. Azure Data Factory provides these organizations with the ability to run SQL Server Integration Services (SSIS) packages on Azure."
   - content: "Which authentication service might typically be used in the data storage and analysis phases of data integration with Azure Data Factory?"
     choices:
-    - content: "Azure AD"
+    - content: "Microsoft Entra ID"
       isCorrect: true
-      explanation: "Correct. This is the cloud-based authentication service that underpins Azure Data Factory."
-    - content: "Active Directory Domain Services (AD DS)"
+      explanation: "Correct. Microsoft Entra ID is the cloud-based authentication service that underpins Azure Data Factory."
+    - content: "Active Directory Domain Services"
       isCorrect: false
-      explanation: "Incorrect. AD DS is an on-premises authentication service."
-    - content: "Azure AD DS"
+      explanation: "Incorrect. Active Directory Domain Services is an on-premises authentication service."
+    - content: "Microsoft Entra Domain Services"
       isCorrect: false
-      explanation: "Incorrect. Azure AD DS is a cloud-based managed authentication service, but it's not used in this context."
+      explanation: "Incorrect. Microsoft Entra Domain Services is a cloud-based managed authentication service that isn't used in this context."
+

@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
-  title: Introduction to Microsoft 365 threat protection
+  title: Introduction to Microsoft Defender XDR threat protection
   description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 02/17/2023
+  ms.date: 05/10/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-title: Introduction to Microsoft 365 threat protection
-summary: In this module, you'll learn how to use the Microsoft 365 Defender integrated threat protection suite.
+  ms.topic: module
+  ms.service: defender-xdr
+title: Introduction to Microsoft Defender XDR threat protection
+summary: In this module, you'll learn how to use the Microsoft Defender XDR integrated threat protection suite.
 abstract: |
-  In this module, you learned the role that Microsoft 365 Defender plays in a modern SOC.
+  In this module, you learned the role that Microsoft Defender XDR plays in a modern SOC.
   You should now be able to:
-  - Understand Microsoft 365 Defender solution by domain
-  - Understand Microsoft 365 Defender role in a Modern SOC
+  - Understand Microsoft Defender XDR solutions by domain
+  - Understand the Microsoft Defender XDR role in a Modern SOC
 prerequisites: |
   None
 iconUrl: /training/achievements/introduction-microsoft-365-threat-protection.svg
@@ -26,7 +26,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
-- m365-threat-protection
+- defender-xdr
 subjects:
 - cloud-security
 - security
@@ -35,6 +35,7 @@ units:
 - learn.wwl.introduction-microsoft-365-threat-protection.introduction
 - learn.wwl.introduction-microsoft-365-threat-protection.explore-extended-detection-response-use-cases
 - learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-security-operations-center
+- learn.wwl.introduction-microsoft-365-threat-protection.explore-microsoft-security-graph
 - learn.wwl.introduction-microsoft-365-threat-protection.investigate-security-incident-defender
 - learn.wwl.introduction-microsoft-365-threat-protection.knowledge-check
 - learn.wwl.introduction-microsoft-365-threat-protection.summary-resources

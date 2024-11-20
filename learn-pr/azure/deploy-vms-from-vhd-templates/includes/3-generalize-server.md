@@ -25,9 +25,9 @@ To generalize a Windows VM, follow these steps:
     | **Generalize** | Select  |
     | **Shutdown Options** | **Shutdown** |
 
-    ![Image of the Sysprep dialog box.](../media/3-sysprep.png)
+    ![Screenshot of the Sysprep dialog box.](../media/3-sysprep.png)
 
-After the virtual machine has been shut down, you must deallocate it while it's in this clean state. If you're using PowerShell, run the following command:
+After the virtual machine has been shut down, you must deallocate it while it's in this clean state. In Azure, select the **Cloud Shell** icon at the top of the page. The command line opens and using PowerShell, run the following command:
 
 ```powershell
 Stop-AzVM -ResourceGroupName <resource group> `

@@ -6,9 +6,9 @@ You'll begin by creating an IoT Central custom application that defines the data
 
 ## Create the Coffee Maker application
 
-In this section we activate the Azure sandbox, sign in to Azure IoT Central and create a new custom application using a standard pricing plan. All resources created in the sandbox are free for use in this module.
+In this section, we activate the Azure sandbox, sign in to Azure IoT Central, and create a new custom application using a standard pricing plan. All resources created in the sandbox are free for use in this module.
 
-1. Start by **activating the Azure sandbox above**.
+1. Start by **activating the Azure sandbox**.
 
 1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
@@ -36,7 +36,7 @@ In this section we activate the Azure sandbox, sign in to Azure IoT Central and 
         <!-- Resource selection -->  
         [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Choose **Review + Create**.
+1. Select **Review + Create**.
 
 1. When the validation step is complete, select **Create** to create your application.
 

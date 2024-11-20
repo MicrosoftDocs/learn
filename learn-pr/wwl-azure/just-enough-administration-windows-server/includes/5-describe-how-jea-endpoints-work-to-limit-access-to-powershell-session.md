@@ -52,7 +52,7 @@ For more information about Registering JEA on multiple machines, refer to the Gi
 
 ## Check your knowledge
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each of the questions below. 
 
 ---
 
