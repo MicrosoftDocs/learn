@@ -4127,3 +4127,23 @@ achievements:
   title: Configure network routing and endpoints
   summary: Learn how to configure network routes, including endpoints and private links.
   iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy
+  type: trophy
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
+  iconUrl: /training/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning.trophy
+  type: trophy
+  title: Use notebooks for experimentation in Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning notebooks for experimentation. Similar to Jupyter, the notebooks are ideal for exploring your data and developing a machine learning model.
+  iconUrl: /training/achievements/use-notebooks-for-experimentation-in-azure-machine-learning.svg
+- uid: learn.wwl.work-compute-azure-machine-learning.trophy
+  type: trophy
+  title: Work with compute in Azure Machine Learning
+  summary: Learn how to work with compute targets and environments in the Azure Machine Learning workspace.
+  iconUrl: /training/achievements/work-with-compute-in-azure-machine-learning.svg
+- uid: learn.wwl.work-data-azure-machine-learning.trophy
+  type: trophy
+  title: Work with data in Azure Machine Learning
+  summary: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
+  iconUrl: /training/achievements/work-data-azure-machine-learning.svg

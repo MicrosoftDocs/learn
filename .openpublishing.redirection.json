@@ -34463,6 +34463,26 @@
       "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/9-summary.md",
       "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-compute-intensive-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/use-notebooks-for-experimentation-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/automate-machine-learning-model-selection-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-compute-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-data-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
