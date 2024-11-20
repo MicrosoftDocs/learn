@@ -1,7 +1,7 @@
 
-Microsoft Sentinel integrates with Microsoft Copilot for Security.
+Microsoft Sentinel integrates with Microsoft Security Copilot.
 
-For businesses that are onboarded to Microsoft Copilot for Security, the integration is enabled through plugins accessed through the Copilot portal. Sentinel provides two plugins to integrate with Copilot for Security:
+For businesses that are onboarded to Microsoft Security Copilot, the integration is enabled through plugins accessed through the Copilot portal. Sentinel provides two plugins to integrate with Security Copilot:
 
 - Microsoft Sentinel (Preview)
 - Natural language to KQL for Microsoft Sentinel (Preview)
@@ -19,7 +19,6 @@ The Sentinel plugin capabilities are focused on incidents and workspaces. The Mi
 :::image type="content" source="../media/sentinel-prompts.png" alt-text="Screen capture showing the Microsoft Sentinel capabilities.":::
 
 Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
-
 
 The Microsoft Sentinel incident investigation promptbook is not only a great starting point for your investigation, it's also a starting point for creating effective prompts.
 

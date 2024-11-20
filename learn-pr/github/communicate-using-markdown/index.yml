@@ -3,10 +3,11 @@ uid: learn.github.communicate-using-markdown
 metadata:
   title: Communicate effectively on GitHub using Markdown
   description: Learn to use Markdown to communicate with brevity, clarity, and expression.
-  ms.date: 05/30/2023
+  ms.date: 11/05/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module-standard-task-based
+  ms.service: github
 title: Communicate effectively on GitHub using Markdown
 summary: Learn to use Markdown to communicate with brevity, clarity, and expression.
 abstract: |

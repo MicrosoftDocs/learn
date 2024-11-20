@@ -1,15 +1,15 @@
-Markdown is a markup language that offers a lean approach to content editing by shielding content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. The invention of Markdown offered a great compromise between the power of HTML for content description and the ease of plain text for editing.
+Markdown is a markup language that offers a lean approach to content editing by shielding content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. Markdown offers a great compromise between the power of HTML for content description and the ease of plain text for editing.
 
-In this unit, we'll discuss the structure and syntax of Markdown. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that allow you to integrate GitHub features into content.
+In this unit, we'll discuss Markdown's structure and syntax. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that allow you to integrate GitHub features into content.
 
 > [!NOTE]
-> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference the "Markdown syntax description" and "GitHub-Flavored Markdown Spec" articles in the Summary unit at the end of this module.
+> This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference the **Markdown syntax description** and **GitHub-Flavored Markdown Spec** articles in this module's Summary unit.
 
 ## Emphasize text
 
 The most important part of any communication on GitHub is usually the text itself, but how do you show that some parts of the text are more important than others?
 
-Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character with which you opened it. Be observant how you combine the use of asterisks and underscores. Here are several examples:
+Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character with which you opened it. Be observant of how you combine the use of asterisks and underscores. Here are several examples:
 
 ```markdown
 This is *italic* text.
@@ -37,7 +37,7 @@ __This is bold and *italic* text__ using double underscores for bold and single 
 ```
 
 >_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
-> __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic. 
+> __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic.
 
 To use a literal asterisk, precede it with an escape character; in GFM, that's a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
 
@@ -49,7 +49,7 @@ To use a literal asterisk, precede it with an escape character; in GFM, that's a
 
 ## Declare headings
 
-HTML provides content headings, such as the `<h1>` tag. In Markdown, this is supported via the # symbol. Just use one # for each heading level from 1-6.
+HTML provides content headings such as the `<h1>` tag. In Markdown, this is supported via the # symbol. Just use one # for each heading level from 1 to 6.
 
 ```markdown
 ###### This is H6 text
@@ -94,14 +94,14 @@ Result:
 > 1. Second
 > 1. Third
 
+Here's the Markdown for an unordered list:
+
 ```markdown
 - First
   - Nested
 - Second
 - Third
 ```
-
-Here's the Markdown for an unordered list:
 
 > - First
 >   - Nested
@@ -133,7 +133,6 @@ You can create blockquotes using the greater than (`>`) character.
 ```
 
 > > This is quoted text.
-
 
 ## Fill the gaps with inline HTML
 
@@ -194,7 +193,7 @@ GFM supports various shortcode formats to make it easy to link to issues and pul
 | `GH-` and issue or pull request number | GH-3602 | [GH-3602](https://github.com/desktop/desktop/pull/3602) |
 | `Username/Repository#` and issue or pull request number | desktop/desktop#3602 | [desktop/desktop#3602](https://github.com/desktop/desktop/pull/3602) |
 
-For more information, refer to the "Autolinked references and URLs" article in the Summary unit at the end of this module.
+For more information, refer to the **Autolinked references and URLs** article in this module's Summary unit.
 
 ## Link specific commits
 
@@ -228,7 +227,7 @@ You can create task lists within issues or pull requests using the following syn
 - [ ] Third task
 ```
 
-![A GitHub task list.](../media/2-task-list.png)
+![Screenshot of a GitHub task list.](../media/2-task-list.png)
 
 ## Slash commands
 

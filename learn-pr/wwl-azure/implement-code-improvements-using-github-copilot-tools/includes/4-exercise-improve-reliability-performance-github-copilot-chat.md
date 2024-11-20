@@ -82,8 +82,8 @@ Open the **APL2007M5BankAccount-Reliability** sample app in Visual Studio Code.
 
 The prompts you write for GitHub Copilot Chat should provide a clearly defined context and intent. Consider the following suggestions when developing your prompts:
 
-- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to improve a method, specify the class or file that includes the method as the outer context. Identify the method as an inner context.
-- Use chat participants and chat variables to help specify context. You can use the `#file:` and `#selection` chat variables to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Refer to the file or code selection in the natural language portion of your prompt.
+- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to improve the performance or reliability of a method, define the outer context by specifying the class or file that contains the method and any code that interacts with or depends on the method. Identify the method as an inner context.
+- Use chat participants and chat variables to help specify context. You can use the **Attach Context** button to add files to the Chat context, and the `#selection` chat variable to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Reinforce the specified context by referring to the selection or file in the natural language portion of your prompt.
 - The intent should be clear, concise, and specific. Your prompt should specify the type of improvement you want to achieve.
 
 During this portion of the exercise, you review the **APL2007M5BankAccount-Reliability** project and create three prompts for GitHub Copilot Chat. The prompts focus on improving code reliability and performance.
@@ -129,21 +129,21 @@ Use the following steps to complete this portion of the exercise:
 
     For this project, you can use the following prompts to generate suggestions for improving the reliability of your code:
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I improve exception handling the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I improve exception handling the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I reduce unexpected issues for the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I reduce unexpected issues for the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I improve unit test support for the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I improve unit test support for the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:Program.cs How can I avoid future bugs or issues in the selected code?` (Program.cs)
+    Prompt: `@workspace /explain How can I avoid future bugs or issues in the [selected code]?` (attach Program.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve exception handling for the selected code?` (Program.cs)
+    Prompt: `@workspace /explain How can I improve exception handling for the [selected code]?` (attach Program.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve the efficiency of algorithms or data structures for the selected code?` (Program.cs)
+    Prompt: `@workspace /explain How can I improve the efficiency of algorithms or data structures for the [selected code]?` (attach Program.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve performance with asynchronous tasks or methods in the selected code?` (Program.cs)
+    Prompt: `@workspace /explain How can I improve performance with asynchronous tasks or methods in the [selected code]?` (attach Program.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccountTests.cs How can I improve unit test support for the selected code?` (BankAccountTests.cs)
+    Prompt: `@workspace /explain How can I improve unit test support for the [selected code]?` (attach BankAccountTests.cs and BankAccount.cs to the Chat context)
 
 1. Select two prompts that you can use to improve the BankAccount class during this exercise.
 
@@ -162,19 +162,30 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 > [!TIP]
 > Implementing and testing suggested updates takes time, and time may be a factor during this exercise. Selecting prompts that focus on specific areas of improvement can help you to manage your time. Prompts that are too broad may generate a large number of suggestions or complex suggestions that are difficult to evaluate and implement in a short amount of time. Once you begin, you can update your prompts with more specific details if you find that the suggested updates are too broadly scoped or too complex.
 
+Use the following steps to complete this portion of the exercise:
+
 1. Ensure that the project builds and runs without errors.
 
-    Warnings are acceptable as long as the application runs, but errors must be resolved before you start working with GitHub Copilot Chat.
+    Warnings are acceptable as long as the application runs, but unhandled errors that cause the application to crash must be resolved before you start working with GitHub Copilot Chat.
 
 1. Open the BankAccount.cs file in Visual Studio Code, and then select all of the code in the file.
 
-1. Open the Chat view, and then enter the first "reliability" prompt that you prepared for the BankAccount class.
+1. Open the Chat view.
+
+1. In the Chat view, use the **Attach Context** button to add relevant files to the Chat context, and then enter your prompt.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I improve exception handling the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, suppose you complete the following actions:
 
-    *In the provided `BankAccount` class, exceptions are thrown when certain conditions are not met, such as insufficient balance for a debit or transfer operation. Throwing exceptions is a good practice as it prevents the program from continuing with invalid state or data. However, there are a few improvements you can make to enhance the exception handling:*
+    - You open the BankAccount.cs file and select all of the code.
+    - You choose the following prompt: `@workspace /explain How can I improve exception handling in the BankAccount.cs file?`
+    - You open the Chat view and attach the BankAccount.cs and Program.cs files to the Chat context.
+    - You enter the prompt in the Chat view.
+
+    GitHub Copilot Chat suggests updates that are similar to the following response:
+
+    *To improve exception handling in the BankAccount.cs file, consider the following suggestions:*
 
     *1. **Use Specific Exceptions**: Instead of throwing the base `Exception` class, use more specific exceptions. This makes it easier for the calling code to understand and handle specific types of errors. For example, you could throw an InvalidOperationException when trying to debit or transfer with insufficient funds.*
 
@@ -240,13 +251,17 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
     > [!TIP]
     > In the example above, the Chat view provided code snippets that implement one example of the suggested update (using specific exceptions, including more information in the exception message, and creating custom exceptions). After you implement suggestions, try using code line completions to generate new code that duplicates the update. In the case of this example, code line completions can be used to create more custom exception classes. You can then use code line completions to update the other methods with the new custom exceptions. You can also rerun the original prompt to see other suggestions.
 
-1. Select all of the code in the BankAccount.cs file, and then enter your second "reliability" prompt in the Chat view.
+1. Select all of the code in the BankAccount.cs file.
+
+1. Open the Chat view.
+
+1. Use the **Attach Context** button to add relevant files to the Chat context, and then enter your second "reliability" prompt.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I reduce unexpected issues for the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, if you enter `@workspace /explain How can I reduce unexpected issues for the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *The code you provided is well-structured and uses custom exceptions to handle various error conditions, which is a good practice. However, there are a few improvements you could make to further reduce unexpected issues:*
+    *To reduce unexpected issues in the BankAccount class, you can implement the following improvements:*
 
     *1. Use Enum for Account Type: Instead of using a string for the account type and checking if it's "Savings" or "Current", consider using an enum. This would prevent potential issues with string comparison (like case sensitivity) and limit the account type to predefined values.*
 
@@ -357,79 +372,187 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
 
 1. Open the Program.cs file in Visual Studio Code, and then select all of the code in the file.
 
-1. Open the Chat view, and then enter the "performance" prompt that you prepared for the Program class.
+1. Open the Program.cs file in Visual Studio Code, and then select all of the code in the file.
+
+1. Open the Chat view.
+
+1. In the Chat view, use the **Attach Context** button to add relevant files to the Chat context, and then enter your prompt.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I improve performance with asynchronous tasks or methods in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, if you enter `@workspace /explain How can I improve performance with asynchronous tasks or methods in the Program.cs file?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *In the selected code, you can improve performance by using asynchronous programming for the SimulateTransactions and SimulateTransfers methods. These methods are performing operations on each account in a sequential manner, which can be time-consuming if the number of accounts or transactions is large.*
+    *To improve performance with asynchronous tasks or methods in the Program.cs file, you can use asynchronous programming with async and await keywords. This will allow the program to perform I/O-bound operations without blocking the main thread, making it more responsive and efficient.*
 
-    *Here's how you can modify the SimulateTransactions method to use Task for asynchronous programming:*
+    *Here is an improved version of the Program.cs file with asynchronous methods:*
 
     ```csharp
-    static async Task SimulateTransactionsAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    
+    namespace BankAccountApp
     {
-        var tasks = accounts.Select(async account =>
+        class Program
         {
-            for (int i = 0; i < numberOfTransactions; i++)
+            private static readonly Random random = new Random();
+            private const int MaxYearsBack = 10;
+            private const int NumberOfAccounts = 20;
+            private const int NumberOfTransactions = 100;
+            private const double minTransactionAmount = -500.0;
+            private const double maxTransactionAmount = 500.0;
+            private const double minAccountStart = 200.0;
+            private const double maxAccountStart = 1000.0;
+    
+            static async Task Main(string[] args)
             {
-                double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
-                try
+                List<BankAccount> accounts = await CreateBankAccountsAsync(NumberOfAccounts);
+                await SimulateTransactionsAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+                await SimulateTransfersAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+            }
+    
+            static async Task<List<BankAccount>> CreateBankAccountsAsync(int numberOfAccounts)
+            {
+                List<BankAccount> accounts = new List<BankAccount>();
+                int createdAccounts = 0;
+                while (createdAccounts < numberOfAccounts)
                 {
-                    if (transactionAmount >= 0)
+                    try
                     {
-                        account.Credit(transactionAmount);
-                        Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                        double initialBalance = GenerateRandomDollarAmount(true, minAccountStart, maxAccountStart);
+                        string accountHolderName = GenerateRandomAccountHolder();
+                        string accountType = GenerateRandomAccountType();
+                        DateTime dateOpened = GenerateRandomDateOpened();
+                        BankAccount account = new BankAccount($"Account {createdAccounts + 1}", initialBalance, accountHolderName, accountType, dateOpened);
+                        accounts.Add(account);
+                        createdAccounts++;
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        account.Debit(-transactionAmount);
-                        Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                        Console.WriteLine($"Account creation failed: {ex.Message}");
                     }
+                    await Task.Yield(); // Yield control to allow other tasks to run
                 }
-                catch (Exception ex)
+                return accounts;
+            }
+    
+            static async Task SimulateTransactionsAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
+            {
+                List<Task> tasks = new List<Task>();
+                foreach (BankAccount account in accounts)
                 {
-                    Console.WriteLine($"Transaction failed: {ex.Message}");
+                    tasks.Add(Task.Run(async () =>
+                    {
+                        for (int i = 0; i < numberOfTransactions; i++)
+                        {
+                            double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                            try
+                            {
+                                if (transactionAmount >= 0)
+                                {
+                                    account.Credit(transactionAmount);
+                                    Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                                else
+                                {
+                                    account.Debit(-transactionAmount);
+                                    Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Transaction failed: {ex.Message}");
+                            }
+                            await Task.Yield(); // Yield control to allow other tasks to run
+                        }
+    
+                        Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                    }));
+                }
+                await Task.WhenAll(tasks);
+            }
+    
+            static async Task SimulateTransfersAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
+            {
+                List<Task> tasks = new List<Task>();
+                foreach (BankAccount account in accounts)
+                {
+                    tasks.Add(Task.Run(async () =>
+                    {
+                        for (int i = 0; i < numberOfTransactions; i++)
+                        {
+                            double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                            try
+                            {
+                                if (transactionAmount >= 0)
+                                {
+                                    account.Credit(transactionAmount);
+                                    Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                                else
+                                {
+                                    account.Debit(-transactionAmount);
+                                    Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Transaction failed: {ex.Message}");
+                            }
+                            await Task.Yield(); // Yield control to allow other tasks to run
+                        }
+    
+                        Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                    }));
+                }
+                await Task.WhenAll(tasks);
+            }
+    
+            static double GenerateRandomDollarAmount(bool isAccount, double min, double max)
+            {
+                if (isAccount)
+                {
+                    double accountStartingValue = random.NextDouble() * (max - min) + min;
+                    return Math.Round(accountStartingValue, 2);
+                }
+                else
+                {
+                    double transactionAmount = random.NextDouble() * random.Next((int)min, (int)max) + random.NextDouble();
+                    return Math.Round(transactionAmount, 2);
                 }
             }
     
-            Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
-        });
+            static string GenerateRandomAccountHolder()
+            {
+                string[] accountHolderNames = { "John Smith", "Maria Garcia", "Mohammed Khan", "Sophie Dubois", "Liam Johnson", "Emma Martinez", "Noah Lee", "Olivia Kim", "William Chen", "Ava Wang", "James Brown", "Isabella Nguyen", "Benjamin Wilson", "Mia Li", "Lucas Anderson", "Charlotte Liu", "Alexander Taylor", "Amelia Patel", "Daniel Garcia", "Sophia Kim" };
+                var accountHolderName = accountHolderNames[random.Next(0, accountHolderNames.Length)];
+                return accountHolderName;
+            }
     
-        await Task.WhenAll(tasks);
-    }
-    ```
-
-    *You can do the same for the SimulateTransfers method.*
-
-    *Please note that this assumes that the Credit and Debit methods of the BankAccount class are thread-safe. If they are not, you need to ensure thread safety before using this approach.*
-
-    *Also, keep in mind that the order of console output may not be the same as the original code due to the concurrent execution of tasks. If maintaining the order of output is important, you might need to use other methods such as ConcurrentQueue to store the output and then write it to the console in order.*
-
-    *Finally, remember to call these methods with await in the Main method, which also needs to be marked as async:*
-
-    ```csharp
-    static async Task Main(string[] args)
-    {
-        List<BankAccount> accounts = CreateBankAccounts(NumberOfAccounts);
-        await SimulateTransactionsAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
-        await SimulateTransfersAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+            static string GenerateRandomAccountType()
+            {
+                string[] accountTypes = { "Savings", "Checking", "Money Market", "Certificate of Deposit", "Retirement" };
+                return accountTypes[random.Next(0, accountTypes.Length)];
+            }
+    
+            static DateTime GenerateRandomDateOpened()
+            {
+                DateTime startDate = new DateTime(DateTime.Today.Year - MaxYearsBack, 1, 1);
+                int daysRange = (DateTime.Today - startDate).Days;
+                DateTime randomDate = startDate.AddDays(random.Next(daysRange));
+    
+                if (randomDate.Year == DateTime.Today.Year && randomDate >= DateTime.Today)
+                {
+                    randomDate = randomDate.AddDays(-1);
+                }
+    
+                return randomDate;
+            }
+        }
     }
     ```
 
 1. Implement the suggested updates that help to improve code performance (or reliability) of your `Program` class.
-
-    > [!NOTE]
-    > For the `@workspace /explain #file:Program.cs How can I improve performance with asynchronous tasks or methods in the selected code?` prompt, the suggested method updates lack awaitable tasks and the methods run synchronously. However, both methods use the `Select` LINQ method to create a collection of tasks, each of which performs a series of transactions on (potentially) a different bank account. These tasks are all started at roughly the same time and they run concurrently (not in parallel). This means that they all make progress at the same time, but they do not necessarily run on different threads.
-
-    The `await Task.WhenAll(tasks)` line waits for all of these tasks to complete. This is an asynchronous operation, because the method yields control while it's waiting for the tasks to complete. This allows other code to run on the same thread while the tasks are in progress.
-
-    There can be significant performance benefits to running tasks concurrently, especially for I/O-bound operations like the ones in your code.
-
-    In the `SimulateTransactionsAsync` and `SimulateTransfersAsync` methods, each task is performing operations on a (potentially) different bank account. In a production environment, these operations would likely involve waiting for a response from a server, which is an I/O-bound operation. While one task is waiting for a response, the other tasks can continue to make progress. This is much more efficient than running the tasks one after the other, which would require waiting for each operation to complete before starting the next one.
-
-    Concurrent execution can also improve the responsiveness of your application. While the tasks are running, your application can continue to respond to user input or perform other work.
 
 1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
 
@@ -440,47 +563,201 @@ GitHub Copilot Chat can be used to help improve the reliability of your code. Yo
     > [!NOTE]
     > You don't need to implement the update suggestions that GitHub Copilot generated from this fourth prompt, but you should review the suggestions.
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I improve exception handling for the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, if you enter `@workspace /explain How can I improve exception handling for the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *The current exception handling in your code is quite basic. It catches all exceptions, writes a message to the console, and then continues execution. This is a good start, but there are several ways you could improve it:*
+    *To improve exception handling in the Program.cs file, you can implement the following suggestions:*
 
-    *1. Specific Exception Types: Instead of catching all exceptions, you could catch specific exception types that you expect might occur. This allows you to handle different types of exceptions in different ways.*
+    *1. Use Specific Exception Types: Instead of catching generic Exception, catch specific exceptions where possible.*
 
-    *2. Logging: Instead of (or in addition to) writing the exception message to the console, you could log the exception. This could be as simple as writing to a file, or you could use a logging library that supports different log levels, multiple log targets, etc.*
+    *2. Add More Context to Exceptions: Provide more context in the exception messages to make debugging easier.*
 
-    *3. Rethrowing Exceptions: In some cases, you might want to rethrow an exception after catching it. This allows a higher level of your code to also catch the exception and handle it. Be careful with this, as it can make your code harder to understand if overused.*
+    *3. Log Exceptions: Instead of just printing exceptions to the console, consider logging them for better traceability.*
 
-    *4. `Finally` Block: You can use a `finally` block to ensure that certain code gets executed whether an exception is thrown or not. This is useful for cleanup code, like closing a file or a network connection.*
-
-    *Here's an example of how you might apply these suggestions to the CreateBankAccounts method:*
+    *Here is an improved version of the Program.cs file with better exception handling:*
 
     ```csharp
-    static List<BankAccount> CreateBankAccounts(int numberOfAccounts)
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    
+    namespace BankAccountApp
     {
-        List<BankAccount> accounts = new List<BankAccount>();
-        int createdAccounts = 0;
-        while (createdAccounts < numberOfAccounts)
+        class Program
         {
-            try
+            private static readonly Random random = new Random();
+            private const int MaxYearsBack = 10;
+            private const int NumberOfAccounts = 20;
+            private const int NumberOfTransactions = 100;
+            private const double minTransactionAmount = -500.0;
+            private const double maxTransactionAmount = 500.0;
+            private const double minAccountStart = 200.0;
+            private const double maxAccountStart = 1000.0;
+    
+            static async Task Main(string[] args)
             {
-                // ... existing code ...
+                List<BankAccount> accounts = await CreateBankAccountsAsync(NumberOfAccounts);
+                await SimulateTransactionsAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+                await SimulateTransfersAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
             }
-            catch (ArgumentException ex)
+    
+            static async Task<List<BankAccount>> CreateBankAccountsAsync(int numberOfAccounts)
             {
-                Console.WriteLine($"Account creation failed due to invalid argument: {ex.Message}");
-                // Log the exception, rethrow it, etc.
+                List<BankAccount> accounts = new List<BankAccount>();
+                int createdAccounts = 0;
+                while (createdAccounts < numberOfAccounts)
+                {
+                    try
+                    {
+                        double initialBalance = GenerateRandomDollarAmount(true, minAccountStart, maxAccountStart);
+                        string accountHolderName = GenerateRandomAccountHolder();
+                        string accountType = GenerateRandomAccountType();
+                        DateTime dateOpened = GenerateRandomDateOpened();
+                        BankAccount account = new BankAccount($"Account {createdAccounts + 1}", initialBalance, accountHolderName, accountType, dateOpened);
+                        accounts.Add(account);
+                        createdAccounts++;
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine($"Account creation failed due to invalid argument: {ex.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Account creation failed: {ex.Message}");
+                    }
+                    await Task.Yield(); // Yield control to allow other tasks to run
+                }
+                return accounts;
             }
-            catch (Exception ex)
+    
+            static async Task SimulateTransactionsAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
             {
-                Console.WriteLine($"Account creation failed: {ex.Message}");
-                // Log the exception, rethrow it, etc.
+                List<Task> tasks = new List<Task>();
+                foreach (BankAccount account in accounts)
+                {
+                    tasks.Add(Task.Run(async () =>
+                    {
+                        for (int i = 0; i < numberOfTransactions; i++)
+                        {
+                            double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                            try
+                            {
+                                if (transactionAmount >= 0)
+                                {
+                                    account.Credit(transactionAmount);
+                                    Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                                else
+                                {
+                                    account.Debit(-transactionAmount);
+                                    Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                            }
+                            catch (ArgumentException ex)
+                            {
+                                Console.WriteLine($"Transaction failed due to invalid argument: {ex.Message}");
+                            }
+                            catch (InsufficientBalanceException ex)
+                            {
+                                Console.WriteLine($"Transaction failed due to insufficient balance: {ex.Message}");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Transaction failed: {ex.Message}");
+                            }
+                            await Task.Yield(); // Yield control to allow other tasks to run
+                        }
+    
+                        Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                    }));
+                }
+                await Task.WhenAll(tasks);
             }
-            finally
+    
+            static async Task SimulateTransfersAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
             {
-                // Any cleanup code would go here.
+                List<Task> tasks = new List<Task>();
+                foreach (BankAccount account in accounts)
+                {
+                    tasks.Add(Task.Run(async () =>
+                    {
+                        for (int i = 0; i < numberOfTransactions; i++)
+                        {
+                            double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                            try
+                            {
+                                if (transactionAmount >= 0)
+                                {
+                                    account.Credit(transactionAmount);
+                                    Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                                else
+                                {
+                                    account.Debit(-transactionAmount);
+                                    Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                                }
+                            }
+                            catch (ArgumentException ex)
+                            {
+                                Console.WriteLine($"Transaction failed due to invalid argument: {ex.Message}");
+                            }
+                            catch (InsufficientBalanceException ex)
+                            {
+                                Console.WriteLine($"Transaction failed due to insufficient balance: {ex.Message}");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Transaction failed: {ex.Message}");
+                            }
+                            await Task.Yield(); // Yield control to allow other tasks to run
+                        }
+    
+                        Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                    }));
+                }
+                await Task.WhenAll(tasks);
+            }
+    
+            static double GenerateRandomDollarAmount(bool isAccount, double min, double max)
+            {
+                if (isAccount)
+                {
+                    double accountStartingValue = random.NextDouble() * (max - min) + min;
+                    return Math.Round(accountStartingValue, 2);
+                }
+                else
+                {
+                    double transactionAmount = random.NextDouble() * random.Next((int)min, (int)max) + random.NextDouble();
+                    return Math.Round(transactionAmount, 2);
+                }
+            }
+    
+            static string GenerateRandomAccountHolder()
+            {
+                string[] accountHolderNames = { "John Smith", "Maria Garcia", "Mohammed Khan", "Sophie Dubois", "Liam Johnson", "Emma Martinez", "Noah Lee", "Olivia Kim", "William Chen", "Ava Wang", "James Brown", "Isabella Nguyen", "Benjamin Wilson", "Mia Li", "Lucas Anderson", "Charlotte Liu", "Alexander Taylor", "Amelia Patel", "Daniel Garcia", "Sophia Kim" };
+                var accountHolderName = accountHolderNames[random.Next(0, accountHolderNames.Length)];
+                return accountHolderName;
+            }
+    
+            static string GenerateRandomAccountType()
+            {
+                string[] accountTypes = { "Savings", "Checking", "Money Market", "Certificate of Deposit", "Retirement" };
+                return accountTypes[random.Next(0, accountTypes.Length)];
+            }
+    
+            static DateTime GenerateRandomDateOpened()
+            {
+                DateTime startDate = new DateTime(DateTime.Today.Year - MaxYearsBack, 1, 1);
+                int daysRange = (DateTime.Today - startDate).Days;
+                DateTime randomDate = startDate.AddDays(random.Next(daysRange));
+    
+                if (randomDate.Year == DateTime.Today.Year && randomDate >= DateTime.Today)
+                {
+                    randomDate = randomDate.AddDays(-1);
+                }
+    
+                return randomDate;
             }
         }
-        return accounts;
     }
     ```
 
