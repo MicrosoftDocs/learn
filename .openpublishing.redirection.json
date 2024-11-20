@@ -34568,6 +34568,11 @@
       "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/3-choose-appropriate-nvidia-gpu-option.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/5-distributed-training.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
