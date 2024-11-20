@@ -4162,3 +4162,8 @@ achievements:
   title: Train compute-intensive models with Azure Machine Learning
   summary: Train compute-intensive models with GPU compute in Azure Machine Learning. By monitoring workloads, you can find the optimal compute configuration. Distributed training allows you to train on multiple nodes to speed up training time.
   iconUrl: /training/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.train-models-azure-machine-learning-cli-v2.trophy
+  type: trophy
+  title: Train models in Azure Machine Learning with the CLI (v2)
+  summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
+  iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
