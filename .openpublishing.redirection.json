@@ -34468,6 +34468,11 @@
       "source_path": "learn-pr/paths/train-compute-intensive-models-azure-machine-learning/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/use-notebooks-for-experimentation-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/automate-machine-learning-model-selection-azure-machine-learning/",
+      "redirect_document_id": false
     }
   ]
 }
