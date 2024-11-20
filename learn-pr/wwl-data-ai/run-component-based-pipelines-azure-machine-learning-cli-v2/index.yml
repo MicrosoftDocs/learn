@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline-designer
-- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.knowledge-check
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.summary
 badge:
   uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.badge
