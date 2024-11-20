@@ -4192,3 +4192,8 @@ achievements:
   title: Run jobs in Azure Machine Learning with CLI (v2)
   summary: Use the Azure Machine Learning CLI (v2) to train models as jobs. Train a model using a basic Python script, or perform hyperparameter tuning with a sweep job.
   iconUrl: /training/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge
+  type: badge
+  title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
+  summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
+  iconUrl: /training/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
