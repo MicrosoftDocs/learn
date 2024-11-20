@@ -9,7 +9,7 @@ To add an event stream destination in Microsoft Fabric, you need to follow these
     > Make sure to read any notes that might appear on the configuration panel that appears after selecting your destination type.
 
 3. On the Ingest data page, navigate through the four tabs, which include:
-  - Destination: Use an existing table of your KQL database or create a new one to route and ingest your real-time data.
+  - Destination: Use an existing table of your Eventhouse or create a new one to route and ingest your real-time data.
   - Source: Verify the real-time data source for creating a data connection to ingest data from your event stream.
   - Schema: Select a compression type and data format, and preview how the data is sent to your selected destination. By performing this step, you can ensure you have properly formatted your data and it adheres to the expected schema, which helps prevent data loss or inaccuracies during ingestion.
   - Summary: Review the status of your data ingestion, including the table created with the schema you defined, and connection between the event stream and the selected destination.
@@ -41,7 +41,7 @@ In event stream, there are currently three current destination types supported i
 
     ![Screenshot of eventstream publish action.](../media/publish-eventstream.png)
 
-5. Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your event stream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables. You can select the ***Live*** button in the same location as the ***publish*** button to selct ***Edit*** if you want to add additional events or items.
+5. Review the status of your data ingestion and select Done. A lakehouse destination tile appears on the canvas, connected to your event stream. Real-time events are converted into Delta Lake format and then stored in the designated lakehouse tables. You can select the ***Live*** button in the same location as the ***publish*** button to select ***Edit*** if you want to add more events or items.
 
     ![Screenshot showing the editing selection of an eventstream](../media/live-eventstream.png)
 
