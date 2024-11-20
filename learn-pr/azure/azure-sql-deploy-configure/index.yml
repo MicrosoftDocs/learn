@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy and configure servers, instances, and databases for Azure SQL
   description: In this module, learn how to Deploy and configure servers, instances, and databases for Azure SQL.
-  ms.date: 10/16/2023
+  ms.date: 11/11/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
