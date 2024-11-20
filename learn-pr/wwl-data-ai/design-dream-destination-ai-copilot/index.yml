@@ -14,7 +14,7 @@ metadata:
   ms.service: microsoft-copilot
   ai-usage: ai-assisted
 title: Design a dream destination using Microsoft Copilot
-summary: Interact with Microsoft Copilot to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.&nbsp;
+summary: Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Interact with Microsoft Copilot to learn about the capabilities of generative AI.&nbsp;
 abstract: |
   In this module, learn how to:
 
@@ -32,6 +32,7 @@ roles:
 - business-user
 - higher-ed-educator
 - k-12-educator
+- parent-guardian
 - student
 products:
 - ms-copilot
