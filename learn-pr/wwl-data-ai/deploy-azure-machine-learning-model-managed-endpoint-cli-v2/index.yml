@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.introduction
 - learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.explore-managed-online-endpoints
-- learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.deploy-your-model-managed-endpoint
 - learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.exercise-deploy-your-model
 - learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.knowledge-check
 - learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.summary
