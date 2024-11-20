@@ -34583,6 +34583,11 @@
       "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/1-introduction.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
