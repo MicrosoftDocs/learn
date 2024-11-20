@@ -8,6 +8,8 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+    - ignite-2024
 durationInMinutes: 7
 content: |
   [!include[](includes/3-create-api-graphql.md)]

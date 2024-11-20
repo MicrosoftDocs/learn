@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 Organizations often face challenges in managing and analyzing their data due to the complexity of integrating various data sources, ensuring data consistency, and maintaining real-time data availability. SQL Database in Microsoft Fabric addresses these challenges by providing a unified platform that simplifies data integration, enhances data consistency, and ensures near real-time data availability.
 
 ## Integrate with mirroring
