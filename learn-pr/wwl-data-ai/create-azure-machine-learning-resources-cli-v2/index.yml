@@ -37,7 +37,6 @@ subjects:
 units:
 - learn.wwl.create-azure-machine-learning-resources-cli-v2.use-azure-cli-v2
 - learn.wwl.create-azure-machine-learning-resources-cli-v2.workspace-cli-v2
-- learn.wwl.create-azure-machine-learning-resources-cli-v2.summary
 badge:
   uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge
 
