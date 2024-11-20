@@ -34,7 +34,7 @@ az group create \
     (Output Example)
     {
       "fqdns": "",
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/MeanStack",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/MeanStack",
       "location": "eastus",
       "macAddress": "00-0D-3A-1E-1B-3B",
       "powerState": "VM running",

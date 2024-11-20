@@ -14,4 +14,4 @@ These data professionals also work alongside:
 
 In this video, you'll learn about the key data professions, and see how they work together to provide data solutions to a business:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38s]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8598e380-2226-4405-925c-48731d04bff8]
