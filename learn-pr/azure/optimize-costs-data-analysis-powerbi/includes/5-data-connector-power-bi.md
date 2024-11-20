@@ -4,8 +4,8 @@ The connector uses OAuth 2.0 for authentication with Azure and identifies users 
 
 To connect, you must use one of the following account types. Other account types aren't supported.
 
-- [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements
-- [Billing account owner](/azure/billing/billing-understand-mca-roles) for Microsoft Customer Agreements
+- [Enterprise Administrator](/azure/cost-management-billing/manage/understand-ea-roles) account for Enterprise Agreements
+- [Billing account owner](/azure/cost-management-billing/manage/understand-mca-roles) for Microsoft Customer Agreements
 
 You must have Power BI Desktop installed.
 
@@ -14,7 +14,7 @@ You must have Power BI Desktop installed.
 To connect using the **Microsoft Cost Management connector** in Power BI Desktop:
 
 1. Open Power BI Desktop.
-1. In the **Home** ribbon, select **Get Data**.
+1. In the **Home** ribbon, select **Get data from other sources**.
 1. Select **Azure** from the list of data categories. You might need to select **More** at the end of the list to find the Azure option.
 1. Select **Cost Management**, then select **Connect**.  
     :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Microsoft Cost Management in Power BI Desktop." :::
@@ -40,7 +40,7 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 1. Select your billing account.
 1. On the **Overview** page, copy the **Billing account ID**.
-1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step.
+1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number**, and paste the billing account ID from the previous step.
 1. Enter the number of months of data to get and then select **OK**.  
     :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account ID for an Enterprise Agreement." :::
 1. When prompted, sign in with your Azure user account and password.

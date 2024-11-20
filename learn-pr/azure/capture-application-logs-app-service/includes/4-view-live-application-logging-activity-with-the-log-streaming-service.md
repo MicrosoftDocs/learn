@@ -1,4 +1,4 @@
-In this unit, you look at how to view a live app log stream, and how live log streams can help during Web app development. 
+In this unit, you look at how to view a live app log stream, and how live log streams can help during Web app development.
 
 ## What is live log streaming?
 
@@ -40,7 +40,7 @@ To use Curl, you need *FTPS credentials*. There are two types of FTPS credential
 
 ### Azure portal UI
 
-To view and copy these details from the Azure portal, in the **App Service** menu, under **Deployment**, select **Deployment Center**, and then select the **FTPS credentials**. tab.
+To view and copy these details from the Azure portal, in the **App Service** menu, under **Deployment**, select **Deployment Center**, and then select the **FTPS credentials** tab.
 
 :::image type="content" source="../media/4-deployment-credentials.png" alt-text="Screenshot of the App Service Deployment Center pane showing FTPS credentials tab." border="false":::
 
@@ -55,7 +55,7 @@ az webapp deployment user set --user-name <name-of-user-to create> --password <n
 > [!NOTE]
 > Usernames must be globally unique across all of Azure, not just within your own subscription or directory.
 
-After you have created a set of credentials, run the following command to open the log stream. You're then prompted for the password.
+After you create a set of credentials, run the following command to open the log stream. You're then prompted for the password.
 
 ```azcli
 curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream

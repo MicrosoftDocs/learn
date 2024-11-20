@@ -1,7 +1,8 @@
+In this exercise, you'll create reusable assets to support semantic model and report development. These assets include Power BI Project and Template files and shared semantic models. At the end, you'll explore the lineage view how these items relate to each other in the Power BI service.
 
 > [!NOTE]
-> A virtual machine containing the client tools you need is provided, along with the exercise instructions. Use the button above to launch the virtual machine. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later. Alternatively, you can use these [setup instructions](https://microsoftlearning.github.io/DP-500-Azure-Data-Analyst/Instructions/labs/00-setup-environment.html) to create your own lab environment, and follow these [exercise instructions](https://microsoftlearning.github.io/DP-500-Azure-Data-Analyst/Instructions/labs/16-create-reusable-power-bi-artifacts.html).
+> This exercise can be completed in with either a Power BI or Fabric license.
 
-When you finish the exercise, end the lab to close the VM.
+Launch the exercise and follow the instructions.
 
-Don't forget to come back and complete the knowledge check to earn points for completing this module!
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2297244)

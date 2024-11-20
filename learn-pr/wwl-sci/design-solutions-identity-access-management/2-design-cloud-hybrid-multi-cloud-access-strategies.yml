@@ -5,8 +5,8 @@ metadata:
   title: Design cloud, hybrid and multicloud access strategies (including Microsoft Entra ID)
   description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design cloud, hybrid and multicloud access strategies."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Retrieve application log files
   description: Retrieve application log files
-  ms.date: 08/15/2023
+  ms.date: 11/12/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

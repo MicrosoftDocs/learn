@@ -1,4 +1,4 @@
-If your organization has purchased Azure reservations, then the Microsoft Cost Management Power BI app can help you manage them, view cost-saving recommendations, and maximize your reservation use. The VM RI Coverage reports provide recommendations for VM RI purchases, even you haven't already made any reservation purchases.
+If your organization has purchased Azure reservations, then the Microsoft Cost Management Power BI app can help you manage them, view cost-saving recommendations, and maximize your reservation use. The VM RI Coverage reports provide recommendations for VM RI purchases even if you haven't already made any reservation purchases.
 
 You save the most money when a reservation is fully used. When a reservation isn't fully used, your maximum possible savings are reduced.
 
@@ -16,7 +16,7 @@ Select the region that you want to analyze, then select the instance size flexib
 
 For each drill-down level, the following filters are applied to the report:
 
-- The coverage data on the right is the filter showing how much usage is charged using the on-demand rate versus how much is covered by the reservation. Current reservation usage is shown in dark blue, while more expensive on-demand usage is shown in light blue.
+- The coverage data is the filter showing how much usage is charged using the on-demand rate versus how much is covered by the reservation. Current reservation usage is shown in dark blue, while more expensive on-demand usage is shown in light blue.
 - Recommendations are also filtered.
 
 The table of recommendations below the graphs provides recommendations for reservation purchases based on the VM sizes used.
@@ -57,7 +57,7 @@ Pricing information in the following image is an example for informational purpo
 
 :::image type="content" source="../media/4-reservations-chargeback.png" alt-text="Screenshot showing the Reservations Chargeback report." lightbox="../media/4-reservations-chargeback.png" :::
 
-For more information about amortized data, see [Get Enterprise Agreement reservation costs and usage](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea).
+For more information about amortized data, see [Get Enterprise Agreement and Microsoft Customer Agreement reservation costs and usage](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea).
 
 ## RI Purchases
 
