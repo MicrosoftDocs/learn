@@ -75,9 +75,9 @@ To create a role assignment for a service principal, use the `az role assignment
 
 ```azurecli
 az role assignment create \
-  --assignee b585b740-942d-44e9-9126-f1181c95d497 \
+  --assignee 00001111-aaaa-2222-bbbb-3333cccc4444 \
   --role Contributor \
-  --scope "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite" \
+  --scope "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/ToyWebsite" \
   --description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -96,9 +96,9 @@ To create a role assignment for a service principal, use the `New-AzRoleAssignme
 
 ```azurepowershell
 New-AzRoleAssignment `
-  -ApplicationId b585b740-942d-44e9-9126-f1181c95d497 `
+  -ApplicationId 00001111-aaaa-2222-bbbb-3333cccc4444 `
   -RoleDefinitionName Contributor `
-  -Scope '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite' `
+  -Scope '/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/ToyWebsite' `
   -Description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -153,6 +153,6 @@ Let's look at each argument:
 
 - `name` is a unique identifier for the role assignment. This must be in the form of a globally unique identifier (GUID). It's a good practice to use the `guid()` function in Bicep to create a GUID, and to use the principal ID, role definition ID, and scope as the seed arguments for the function to ensure you create a name that's unique for each role assignment.
 - `principalType` should be set to `ServicePrincipal`.
-- `roleDefinitionId` is the fully qualified resource ID for the role definition you're assigning. Mostly you'll work with built-in roles, and you'll find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles?azure-portal=true). For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`. When you specify it in your Bicep file, you express this using a fully qualified resource ID, such as `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
+- `roleDefinitionId` is the fully qualified resource ID for the role definition you're assigning. Mostly you'll work with built-in roles, and you'll find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles?azure-portal=true). For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`. When you specify it in your Bicep file, you express this using a fully qualified resource ID, such as `/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
 - `principalId` is the service principal's object ID. Make sure you don't use the application ID or the application registration's object ID.
 - `description` is a human-readable description of the role assignment.
