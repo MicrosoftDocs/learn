@@ -9,12 +9,12 @@ There are a range of tools and services that can help you plan and complete the 
 | **Service Map** | _Assess_ | The Service Map feature of Azure Monitor maps communication between application components on Windows or Linux. Use this feature to identify dependencies when determining what data to migrate. Service Map requires another agent to be installed on the source environment virtual machines. |
 | **Azure TCO Calculator** | _Assess_ | The Azure Total Cost of Ownership (TCO) Calculator estimates the cost savings you can realize by migrating your workloads to Azure. |
 | **Azure Migrate** | _Assess_ & _Migrate_  | Azure Migrate performs assessment and migration to Azure of virtual machines (Hyper-V and VMware), cloud-based virtual machines, physical servers, databases, data, virtual desktop infrastructure, and web applications. |
-| **Data Migration Assistant (DMA)** | _Assess_ & _Migrate_  | SQL Server Data Migration Assistant helps you upgrade to a modern data platform. It detects compatibility issues that might impact database functionality in newer versions of SQL Server or Azure SQL Database. |
+| **Data Migration Assistant (DMA)** | _Assess_ & _Migrate_  | SQL Server Data Migration Assistant helps you upgrade to a modern data platform. It detects compatibility issues that might affect database functionality in newer versions of SQL Server or Azure SQL Database. |
 | **Database Migration Service** | _Assess_ & _Migrate_  | The Azure Database Migration Service performs assessment and migration for several different databases, not just Azure SQL Database. |
 | **Data Migration tool** |  _Migrate_ | The Azure Cosmos DB Data Migration tool migrates your existing databases to Azure Cosmos DB. |
-| **Microsoft Cost Management** | _Optimize_ | Microsoft Cost Management (formerly known as Azure Cost Management and Billing) helps you monitor, optimize, and control your ongoing Azure costs. |
+| **Microsoft Cost Management** | _Optimize_ | Microsoft Cost Management helps you monitor, optimize, and control your ongoing Azure costs. |
 | **Advisor** | _Monitor_ | Azure Advisor helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
-| **Monitor** | _Monitor_ | Azure Monitor collects monitoring telemetry from both on-premises and Azure resources that help you analyze data, set up alerts, and identify problems. |
+| **Monitor** | _Monitor_ | Azure Monitor collects monitoring data from both on-premises and Azure resources that help you analyze data, set up alerts, and identify problems. |
 | **Microsoft Sentinel** | _Monitor_ | Microsoft Sentinel provides intelligent security analytics for your applications that enable you to collect, detect, investigate, and respond to incidents. |
 
 Let's examine three Azure services and tools to support the assessment stage of migrating Tailwind Traders workloads to Azure:
@@ -44,7 +44,7 @@ The Service Map feature of Azure Monitor supports several critical assessment fu
 
 - **Migration assurance**: Plan, accelerate, and validate your Azure migrations. Ensure nothing is left behind and unexpected outages don't occur.
 
-- **Business continuity**: Identify how your systems rely on each other, thereby helping to ensure that your recovery plan is reliable. Identify, which front-end systems you must recover after a server is restored and available again.
+- **Business continuity**: Identify how your systems rely on each other. Identify, which front-end systems you must recover after a server is restored and available again.
 
 - **Patch management**: Identify which other teams and servers depend on a service being patched. Notify teams in advance before you take down your systems for patching.
 
@@ -88,7 +88,7 @@ The information available from the report can be useful in helping identify the 
 
 ## Azure Migrate and assessment
 
-Azure Migrate lets you perform an agentless environment discovery or use agents to perform a dependency analysis. You can access Azure Migrate features in the Azure portal to help assess your current on-premises workloads. Azure Migrate makes recommendations for the size of virtual machine you need to provision to assess readiness for your move to Azure. You can identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
+Azure Migrate lets you perform an agentless environment discovery or use agents to perform a dependency analysis. You can access Azure Migrate features in the Azure portal to help assess your current on-premises workloads. Azure Migrate makes recommendations for the size of virtual machine you need to create. You can identify estimated costs for the resources those machines consume, so the management team can set the budget.
 
 Azure Migrate helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines to migrate and estimates the ongoing cost of running these machines in Azure. Azure Migrate can assess both Hyper-V and VMware-based virtual machines, and also physical servers.
 

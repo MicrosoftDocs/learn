@@ -1,6 +1,6 @@
 You've seen how, in Blazor, you can use parts of the URI to route requests to the right component. You can also intercept other parts of the URI and access them in your code by using *route parameters*.
 
-Suppose you're working on the pizza delivery company's website and you've routed pizza requests to the **Pizzas.razor** component. Now, you want to get the user's favorite pizza from the URI and use it to display information about other pizzas they might like.
+Suppose you're working on the pizza delivery company's website, and you've routed pizza requests to the **Pizzas.razor** component. Now, you want to get the user's favorite pizza from the URI and use it to display information about other pizzas they might like.
 
 Here, you'll learn how to use route parameters to specify parts of the URL to process in your code.
 
@@ -79,7 +79,7 @@ In the previous examples, the consequence of requesting the URI `http://www.cont
 }
 ```
 
-In this example, if the user requests `http://www.contoso.com/favoritepizza/margherita`, there's no match with the preceding component. As a result, the request is routed elsewhere. If the user requests `http://www.contoso.com/favoritepizza/12`, there's a route match and the component displays the message "Your favorite pizza size is: 12 inches." A specific type for the route parameter like this one is called a *route constraint*. You can use these other types in a constraint:
+In this example, if the user requests `http://www.contoso.com/favoritepizza/margherita`, there's no match with the preceding component. As a result, the request is routed elsewhere. If the user requests `http://www.contoso.com/favoritepizza/12`, there's a route match and the component displays the message *Your favorite pizza size is: 12 inches*. A specific type for the route parameter like this one is called a *route constraint*. You can use these other types in a constraint:
 
 | Constraint | Example | Example matches |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ Consider the following component from earlier in this unit:
 }
 ```
 
-Now suppose the user tried to specify two favorites by requesting the URI `http://www.contoso.com/favoritepizza/margherita/hawaiian`. The page displays the message "Your favorite pizza is: margherita" and ignores the subfolder **hawaiian**. You can change this behavior by using a *catch-all route parameter*, which captures paths across multiple URI folder boundaries (forward slashes). Prefix an asterisk (`*`) to the route parameter name to make the route parameter catch-all:
+Now suppose the user tried to specify two favorites by requesting the URI `http://www.contoso.com/favoritepizza/margherita/hawaiian`. The page displays the message *Your favorite pizza is: margherita* and ignores the subfolder **hawaiian**. You can change this behavior by using a *catch-all route parameter*, which captures paths across multiple URI folder boundaries (forward slashes). Prefix an asterisk (`*`) to the route parameter name to make the route parameter catch-all:
 
 ```razor
 @page "/FavoritePizza/{*favorites}"
@@ -123,4 +123,4 @@ Now suppose the user tried to specify two favorites by requesting the URI `http:
 }
 ```
 
-With the same request URI, the page now displays the message "Your favorite pizzas are: margherita/hawaiian".
+With the same request URI, the page now displays the message *Your favorite pizzas are: margherita/hawaiian*.

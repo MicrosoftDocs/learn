@@ -1,3 +1,4 @@
+
 Azure Cosmos DB accounts with a continuous backup mode, gives you the ability to do a point in time recovery. This type of recovery will allow you to choose any timestamp within the 30-day backup retention period and restore a combination of Azure DB containers, databases, or the account. 
 
 ## Restore Scenarios

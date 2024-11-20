@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-azure-cosmos-db-sql-api.create-queries-sql
-title: Create queries with SQL
+title: Create queries with NoSQL
 metadata:
-  title: Create queries with SQL
-  description: "Create queries with SQL"
-  ms.date: 11/04/2022
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create queries with NoSQL
+  description: "Create queries with NoSQL"
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-create-queries-sql.md)]
+

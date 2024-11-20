@@ -6,11 +6,11 @@ param managementGroupName string
 @description('The subscription ID to place into the management group.')
 param subscriptionId string
 
-resource managementGroup 'Microsoft.Management/managementGroups@2021-04-01' existing = {
+resource managementGroup 'Microsoft.Management/managementGroups@2023-04-01' existing = {
   name: managementGroupName
 }
 
-resource subscriptionAssociation 'Microsoft.Management/managementGroups/subscriptions@2021-04-01' = {
+resource subscriptionAssociation 'Microsoft.Management/managementGroups/subscriptions@2023-04-01' = {
   parent: managementGroup
   name: subscriptionId
 }

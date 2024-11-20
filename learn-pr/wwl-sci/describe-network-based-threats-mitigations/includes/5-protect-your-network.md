@@ -1,12 +1,12 @@
-Network protection is an essential part of a robust security policy. As you saw in the previous unit, there are numerous ways in which a network can be attacked. There's no single solution that will protect your network; however, the majority of these attacks can be mitigated by using a combination of hardware and software solutions.
+Network protection is an essential part of a robust security policy. As you saw in the previous unit, there are numerous ways in which a network can be attacked. There's no single solution that protects your network; however, most these attacks can be mitigated by using a combination of hardware and software solutions.
 
 ### How a firewall protects your network
 
-A firewall is typically the first line of defense in your network. It's a device that sits between the internet and your network, and filters all traffic going in and out. A firewall can be software or hardware based, but for the best protection, it's good to have both types. A firewall monitors incoming and outgoing traffic. Using security rules, it will keep out unfriendly traffic, while allowing authorized traffic to pass freely.
+A firewall is typically the frontline of defense in your network. It's a device that sits between the internet and your network, and filters all traffic going in and out. A firewall can be software or hardware based, but for the best protection, it's good to have both types. A firewall monitors incoming and outgoing traffic. Using security rules, it keeps out unfriendly traffic, while allowing authorized traffic to pass freely.
 
 ### Maintaining a healthy network using antivirus
 
-Viruses come in all shapes and sizes and none of them are good for the devices and servers that use your network. Cybercriminals use viruses for many purposes, from obtaining user credentials so they can access your network, to more harmful types that encrypt all the data on a device or server unless you pay vast sums of money. Much like your body will fight off a virus when it gets infected, computers can also be protected with antivirus software. When antivirus software is installed it will run in the background, scanning all data that arrives on the device. A detected virus will automatically be deleted to prevent the user from accidentally running it.
+Viruses come in all shapes and sizes and none of them are good for the devices and servers that use your network. Cybercriminals use viruses for many purposes, from obtaining user credentials so they can access your network, to more harmful types that encrypt all the data on a device or server unless you pay vast sums of money. Much like your body fights off a virus when it gets infected, computers can also be protected with antivirus software. When antivirus software is installed it runs in the background, scanning all data that arrives on the device. A detected virus will automatically be deleted to prevent the user from accidentally running it.
 
 You can now get antivirus protection for most devices, including servers, computers, tablets, smartphones, and any other internet-connected devices.
 

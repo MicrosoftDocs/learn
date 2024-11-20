@@ -4,12 +4,13 @@ title: What are 'and' and 'or' operators?
 metadata:
   title: What are 'and' and 'or' operators?
   description: In this unit, you learn how to use 'and' and 'or' operators in Python.
-  ms.date: 12/02/2021
+  ms.date: 05/29/2023
   author: ornelladotcom
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-what-are-and-or-operators.md)]

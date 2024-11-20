@@ -2,15 +2,14 @@ You should have learned how to send Syslog log data to the Microsoft Sentinel wo
 
 You should now be able to:
 
-- Describe the Syslog connector deployment options in Microsoft Sentinel
-- Run the connector deployment script to send data to Microsoft Sentinel
-- Configure the Log Analytics agent integration for Microsoft Sentinel
-- Create a parse using KQL in Microsoft Sentinel
+- Describe the Azure Monitor Agent Data Collection Rule (DCR) for Syslog
+- Run the Azure Arc Linux deployment and connection scripts
+- Install and Configure the Azure Monitor Linux Agent extension with the Syslog DCR
+- Verify Syslog log data is available in Microsoft Sentinel
+- Create a parser using KQL in Microsoft Sentinel
 
 ## Learn more
 
 You can learn more by reviewing the following.
 
-[Become a Microsoft Sentinel Ninja](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310?azure-portal=true)
-
-[Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
+[Collect Syslog events with Azure Monitor Agent](/azure/azure-monitor/agents/data-collection-syslog)

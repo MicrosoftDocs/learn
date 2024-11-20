@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-finops.finops-personas
+title: FinOps Personas
+metadata:
+  title: FinOps Personas
+  description: Learn about the FinOps Personas as defined by the FinOps Framework.
+  ms.date: 04/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-finops-personas.md)]

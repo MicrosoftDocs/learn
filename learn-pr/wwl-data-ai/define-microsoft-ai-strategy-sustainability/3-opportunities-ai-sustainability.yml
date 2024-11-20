@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability.opportunities-ai-sustainability
+title: Opportunities for AI in sustainability
+metadata:
+  title: Opportunities for AI in sustainability
+  description: "Opportunities for AI in sustainability"
+  ms.date: 08/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-opportunities-ai-sustainability.md)]

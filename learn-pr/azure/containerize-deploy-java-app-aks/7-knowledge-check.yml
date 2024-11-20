@@ -2,14 +2,17 @@
 uid: learn.containerize-deploy-java-app-aks.knowledge-check
 title: Knowledge Check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Knowledge Check
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 9/28/2021
+  ms.date: 02/09/2024
   author: chtrembl
   ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 2
 quiz:
   questions:
@@ -54,3 +57,4 @@ quiz:
     - content: "A feature that enables you to create larger container images that use less caching."
       isCorrect: false
       explanation: ""
+

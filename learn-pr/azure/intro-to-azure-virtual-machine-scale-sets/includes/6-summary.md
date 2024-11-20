@@ -8,6 +8,6 @@ Virtual Machine Scale Sets are ideal for scenarios that include compute workload
 ## Learn more
 
 - Read more detail about [What Virtual Machine Scale Sets are](/azure/virtual-machine-scale-sets/overview).
-- Learn how to [Implement scale and high availability with Windows Server VM](/training/modules/implement-scale-high-availability-windows-server-virtual-machine).
+- Learn how to [Implement scale and high availability with Windows Server Virtual Machine](/training/modules/implement-scale-high-availability-windows-server-virtual-machine).
 - Review how you can [Build a scalable application with Virtual Machine Scale Sets](/training/modules/build-app-with-scale-sets).
 - Read through the [Azure Virtual Machine Scale Sets FAQs](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-faq).

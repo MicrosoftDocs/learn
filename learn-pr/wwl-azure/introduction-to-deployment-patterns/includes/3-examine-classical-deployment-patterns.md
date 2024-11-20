@@ -2,7 +2,7 @@ When we have our prerequisites to deliver our software continuously, we need to 
 
 Traditionally a deployment pattern was straightforward.
 
-:::image type="content" source="../media/classic-deployment-pattern-8d085442.png" alt-text="Classic deployment pattern. Dev, test, staging, production.":::
+:::image type="content" source="../media/classic-deployment-pattern-8d085442.png" alt-text="Diagram showing classic deployment pattern. Dev, test, staging, production.":::
 
 
 The software was built, and when all features had been implemented, the software was deployed to an environment where a group of people could start using it.

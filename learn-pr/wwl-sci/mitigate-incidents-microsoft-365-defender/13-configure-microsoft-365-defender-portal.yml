@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender.configure-microsoft-365-defender-portal
-title: Configure the Microsoft 365 Defender portal
+title: Configure the Microsoft Defender portal
 metadata:
-  title: Configure the Microsoft 365 Defender portal
-  description: "Configure the Microsoft 365 Defender portal"
-  ms.date: 02/27/2023
+  title: Configure the Microsoft Defender portal
+  description: "Configure the Microsoft Defender portal"
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/13-configure-microsoft-365-defender-portal.md)]

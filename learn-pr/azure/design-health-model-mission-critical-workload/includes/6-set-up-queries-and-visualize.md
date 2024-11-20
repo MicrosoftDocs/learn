@@ -2,15 +2,15 @@ To accurately represent a health model, you must gather various datasets from th
 
 ## Instrumenting code and infrastructure
 
-A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. For example, when an employee creates a comment in their web browser, you can track this operation and see that the request went through the Catalog API to Azure Event Hubs. From there, the comment was picked up by the background processor and stored in Azure Cosmos DB.
+A *unified data sink* is required to ensure that all operational data is stored and available in a single location where all telemetry is collected. For example, when an employee creates a comment in their web browser, you can track this operation and see that the request went through the Catalog API to Azure Event Hubs. From there, the background processor picked up the comment and stores it in Azure Cosmos DB.
 
 Azure Monitor Log Analytics serves as the core Azure-native unified data sink to store and analyze operational data:
 
 - Application Insights is the recommended Application Performance Monitoring (APM) tool across all application components to collect application logs, metrics, and traces. Application Insights is deployed in a workspace-based configuration in each region.
 
-    In the example application, Azure Functions is used on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without extra effort. For more customized logging, you can use the ILogger interface.
+    In the example application, Azure Functions is used on Microsoft .NET 6 for its back-end services for native integration. Because the back-end applications already exist, Contoso Shoes creates only a new Application Insights resource in Azure and configures the `APPLICATIONINSIGHTS_CONNECTION_STRING` setting on both function apps. The Azure Functions runtime registers the Application Insights logging provider automatically, so telemetry appears in Azure without extra effort. For more customized logging, you can use the `ILogger` interface.
 
-- Centralized dataset is an antipattern for mission-critical workloads. Each region must have its dedicated Log Analytics workspace and an Application Insights instance. For global resources, separate instances are recommended.  To see the core architecture pattern, see [Architecture pattern for mission-critical workloads on Azure](/azure/architecture/framework/mission-critical/mission-critical-architecture-pattern). 
+- Centralized dataset is an antipattern for mission-critical workloads. Each region must have its dedicated Log Analytics workspace and an Application Insights instance. For global resources, separate instances are recommended. To see the core architecture pattern, see [Architecture pattern for mission-critical workloads on Azure](/azure/architecture/framework/mission-critical/mission-critical-architecture-pattern). 
 
 - Each layer should send data to the same Log Analytics workspace, to make analysis and health calculations easier.
 
@@ -24,7 +24,7 @@ For individual services that calculate the health status, see the following samp
 
 ### Catalog API
 
-The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
+The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
 
 ```kusto
 
@@ -62,7 +62,7 @@ avgProcessingTime
 
 ### Azure Key Vault
 
-The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
+The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
 
 ```kusto
 let _maxAge = 2d; // Include data only from the last two days
@@ -97,7 +97,7 @@ failureStats
 
 ### Catalog Service health score
 
-Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql):
+Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql):
 
 ```kusto
 CatalogServiceHealthStatus()
@@ -110,10 +110,9 @@ CatalogServiceHealthStatus()
 | extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization
 | order by TimeGenerated desc
 ```
-
 > [!TIP]
 >
-> See more [query examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries) in the [Azure Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest) GitHub repository.
+> See more [query examples](https://github.com/Azure/Mission-Critical-Online/tree/main/src/infra/monitoring/queries) in the [Azure Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online/) GitHub repository.
 
 ## Set up query-based alerts
 

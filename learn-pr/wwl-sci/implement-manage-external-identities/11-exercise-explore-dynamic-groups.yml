@@ -2,15 +2,14 @@
 uid: learn.wwl.implement-manage-external-identities.exercise-explore-dynamic-groups
 title: Exercise - explore dynamic groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - explore dynamic groups
   description: "Exercise - explore dynamic groups"
-  ms.date: 02/03/2023
+  ms.date: 10/25/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/11-exercise-explore-dynamic-groups.md)]

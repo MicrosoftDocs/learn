@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-compare-models-azure-machine-learning.create-responsible-dashboard
+title: Create the Responsible AI dashboard
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create the Responsible AI dashboard
+  description: Learn how to generate the Responsible AI dashboard in Azure Machine Learning by creating a components-based pipeline in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-create-responsible-dashboard.md)]
+

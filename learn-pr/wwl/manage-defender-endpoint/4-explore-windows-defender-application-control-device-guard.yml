@@ -4,11 +4,10 @@ title: Explore Windows Defender Application Control and Device Guard
 metadata:
   title: Explore Windows Defender Application Control and Device Guard
   description: "Explore Windows Defender Application Control and Device Guard"
-  ms.date: 04/03/2023
+  ms.date: 04/23/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-explore-windows-defender-application-control-device-guard.md)]

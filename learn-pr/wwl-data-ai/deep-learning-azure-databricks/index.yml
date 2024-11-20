@@ -1,19 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.deep-learning-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train deep learning models in Azure Databricks
-  description: "Learn how to use deep learning libraries like PyTorch in Azure Databricks, and to distribute training by using Horovod"
-  ms.date: 03/23/2023
+  description: Learn how to use deep learning libraries like PyTorch in Azure Databricks, and to distribute training by using TorchDistributor
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.service: azure-machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Train deep learning models in Azure Databricks
 summary: Deep learning uses neural networks to train highly effective machine learning models for complex forecasting, computer vision, natural language processing, and other AI workloads.
 abstract: |
-  In this module, you'll learn how to:
-  - Train a deep learning model in Azure Databricks
-  - Distribute deep learning training by using the Horovod library
+  In this module, you learn how to:
+  - Train a deep learning model in Azure Databricks.
+  - Distribute deep learning training by using TorchDistributor.
 prerequisites: |
   Before starting this module, you should be familiar with machine learning on Azure Databricks.
 iconUrl: /training/achievements/deep-learning-azure-databricks.svg
@@ -24,8 +28,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-ai
-- data-science
+- data-management
 - machine-learning
 units:
 - learn.wwl.deep-learning-azure-databricks.introduction
@@ -37,3 +40,4 @@ units:
 - learn.wwl.deep-learning-azure-databricks.summary
 badge:
   uid: learn.wwl.deep-learning-azure-databricks.badge
+

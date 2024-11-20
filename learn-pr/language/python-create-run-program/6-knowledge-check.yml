@@ -4,12 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 04/01/2022
+  ms.date: 01/19/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen, devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 4
 quiz:
   title: Check your knowledge
@@ -47,5 +49,3 @@ quiz:
         - content: It will become "12".
           isCorrect: false
           explanation: Incorrect. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings, as in "1" + "2".
-
-

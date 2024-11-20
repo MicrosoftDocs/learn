@@ -23,7 +23,7 @@ var environmentConfigurationMap = {
   }
 }
 
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-05-15' = {
   name: cosmosDBAccountName
   location: location
   properties: {
@@ -36,12 +36,12 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
   }
 }
 
-resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03-01-preview' = if (environmentConfigurationMap[environmentType].enableLogging) {
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2023-09-01' = if (environmentConfigurationMap[environmentType].enableLogging) {
   name: logAnalyticsWorkspaceName
   location: location
 }
 
-resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = if (environmentConfigurationMap[environmentType].enableLogging) {
+resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = if (environmentConfigurationMap[environmentType].enableLogging) {
   scope: cosmosDBAccount
   name: cosmosDBAccountDiagnosticSettingsName
   properties: {

@@ -14,7 +14,7 @@ However, to fully capitalize on the opportunities of AI, software engineers do r
 
  After the model has been trained, you can submit new data that includes known *feature* values and have the model predict the most likely *label*. Using the model to make predictions is referred to as *inferencing*.
 
- Many of the services and frameworks that software engineers can use to build AI-enabled solutions require a development process that involves training a model from existing data before it can be used to inference new values in an application.
+ Many of the services and frameworks that software engineers can use to build AI-enabled solutions require a development process that involves training a model from existing data before it can be used to infer new values in an application.
 
 ## Probability and confidence scores
 

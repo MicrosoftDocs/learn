@@ -81,6 +81,4 @@ After you commit and push your changes (and wait a little while for the GitHub a
 
 :::image type="content" source="../media/browse-site.png" alt-text="Screenshot that shows browsing your finished site.":::
 
-To see an example, see the static web app that we built during the creation of this module, at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
-
 © 2021 Warner Bros. Ent. All Rights Reserved

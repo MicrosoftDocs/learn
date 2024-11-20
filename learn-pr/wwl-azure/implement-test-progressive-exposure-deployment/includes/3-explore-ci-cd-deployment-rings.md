@@ -6,14 +6,14 @@ Impact (also called blast radius) is evaluated through observation, testing, ana
 
 In DevOps, rings are typically modeled as stages.
 
-Rings are, in essence, an extension of the canary stage. The canary release releases to a stage to measure impact. Adding another ring is essentially the same thing.:::image type="content" source="../media/rings-0fbd687d.png" alt-text="Rings.":::
+Rings are, in essence, an extension of the canary stage. The canary releases to a stage to measure impact. Adding another ring is essentially the same thing.:::image type="content" source="../media/rings-0fbd687d.png" alt-text="Diagram of Rings.":::
 
 
 With a ring-based deployment, you first deploy your changes to risk-tolerant customers and progressively roll out to a more extensive set of customers.
 
 The Microsoft Windows team, for example, uses these rings.
 
-:::image type="content" source="../media/windows-deployment-rings-45ab6434.png" alt-text="Windows deployment rings.":::
+:::image type="content" source="../media/windows-deployment-rings-45ab6434.png" alt-text="Diagram of windows deployment rings.":::
 
 
 When you have identified multiple groups of users and see value in investing in a ring-based deployment, you need to define your setup.

@@ -2,7 +2,7 @@ At this point, you have a way to run unit tests as changes move through the buil
 
 It's always a good idea to run your tests locally before you submit changes to the pipeline. But what happens when someone forgets and submits a change that breaks the build?
 
-In this unit, you help the team fix a broken build that's caused by a failing unit test. Here, you will:
+In this unit, you'll fix a broken build that's caused by a failing unit test. Here, you will:
 
 > [!div class="checklist"]
 > * Get starter code from GitHub.
@@ -13,21 +13,9 @@ In this unit, you help the team fix a broken build that's caused by a failing un
 > * Analyze and fix the failure.
 > * Push up a fix and watch the build succeed.
 
-First, let's check in with Mara and Andy.
-
-## A quick chat
-
-Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes what he sees, especially the dashboard widgets.
-
-**Andy:** Last time we met, we got code coverage working on your laptop. It's great to see the same thing working in the build pipeline!
-
-**Mara:** Yes, I'm glad we got things working locally first. Fitting it into the build pipeline was easy after that.
-
-**Andy:** I'll be sure to add a unit test the next time I add a feature. It'll be great to increase our code coverage! In fact, Amita is waiting on this new leaderboard feature so she can do user testing on it. I promised her I'd have the change ready by today. See you later!
-
 ## Review the new unit test
 
-Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the `IDocumentDBRepository<T>.GetItemsAsync` method.
+The team's latest feature involves the leaderboard. We need to get the number of scores from the database, so we can write a unit test to verify the `IDocumentDBRepository<T>.GetItemsAsync` method.
 
 Here's what the test looks like. You don't need to add any code yet.
 
@@ -63,11 +51,11 @@ ReturnRequestedCount(10);
 
 This test also uses the `ExpectedResult` property to simplify the test code and help make its intention clear. NUnit automatically compares the return value against the value of this property, removing the need to explicitly call the assertion.
 
-Andy chooses a few values that represent typical queries. He also includes 0 to cover that edge case.
+We'll choose a few values that represent typical queries. We'll also include 0 to cover that edge case.
 
 ## Fetch the branch from GitHub
 
-As you did earlier, you fetch the `failed-test` branch from GitHub and check out, or switch to, that branch.
+As you did earlier, fetch the `failed-test` branch from GitHub and check out (or switch to) that branch.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `git fetch` and `git checkout` commands to download a branch named `failed-test` from the Microsoft repository and switch to that branch:
@@ -77,7 +65,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
     git checkout -B failed-test upstream/failed-test
     ```
 
-    We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
+    We named the branch `failed-test` for learning purposes. In practice, you'd name a branch after its purpose or feature.
 
 1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
@@ -105,7 +93,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
 ## See the test failure in the pipeline
 
-Let's say that Andy was in a hurry and pushed up his work without running the tests one final time. Luckily, the pipeline can help you catch issues early when there are unit tests. You can see that here.
+Let's say that you were in a hurry and pushed up your work without running the tests one final time. Luckily, the pipeline can help you catch issues early when there are unit tests. You can see that here.
 
 1. In Azure Pipelines, trace the build as it runs through the pipeline.
 1. Expand the **Run unit tests - Release** task as it runs.
@@ -145,20 +133,12 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
 When unit tests fail, you ordinarily have two choices, depending on the nature of the failure:
 
-* If the test reveals a defect in the code, you fix the code and rerun the tests.
+* If the test reveals a defect in the code, fix the code and rerun the tests.
 * If the functionality changes, adjust the test to match the new requirements.
-
-Mara notices the build failure and checks in with Andy.
-
-**Mara:** Hey, Andy. I just saw the email notification in my inbox. It looks like the build is broken.
-
-**Andy:** Yes, I just saw that as well. I already started to investigate. It looks like we have a failing unit test. Would you mind taking a look with me?
-
-**Mara:** Sure, let's take a look. I say we start by verifying that we can reproduce the failure on your computer.
 
 ### Reproduce the failure locally
 
-In this section, you reproduce the failure locally, just like Mara and Andy.
+In this section, you'll reproduce the failure locally.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run this `dotnet build` command to build the application:
@@ -173,7 +153,7 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
     dotnet test --no-build --configuration Release
     ```
 
-    You see the same errors that you saw in the pipeline. Here's part of the output:
+    You should see the same errors that you saw in the pipeline. Here's part of the output:
 
     ```output
     Starting test execution, please wait...
@@ -204,9 +184,9 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
 
 ### Find the cause of the error
 
-Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
+You notice that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
-Mara and Andy look at the source code for the method that's being tested, `LocalDocumentDBRepository<T>.GetItemsAsync`. They see this:
+Take a look at the source code for the method that's being tested, `LocalDocumentDBRepository<T>.GetItemsAsync`. You should see this:
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
@@ -225,24 +205,18 @@ public Task<IEnumerable<T>> GetItemsAsync(
 }
 ```
 
-They examine the file on GitHub and notice that it was recently changed.
+In this scenario, you could check GitHub to see if the file was recently changed.
 
 :::image type="content" source="../media/7-github-diff.png" alt-text="A screenshot of GitHub showing a file diff where a minus one operation was added.":::
 
-Mara suspects that `pageSize - 1` is returning one fewer result and that this should be just `pageSize`.
-
-**Mara:** Andy, do you remember why you made this change?
-
-**Andy:** I was experimenting with something and I must have forgotten to change it back. It looks like changing back to the original code will fix things.
-
-Mara and Andy decide to change the code back to its original state and then verify that the unit tests pass.
+You suspect that `pageSize - 1` is returning one fewer result and that this should be just `pageSize`. In our scenario, this is an error you made when you pushed work without testing, but in a real-world scenario, you could check with the developer who changed the file on GitHub to determine the reason for the change.
 
 > [!TIP]
 > Discussion and collaboration can also happen on GitHub. You can comment on a pull request or open an issue.
 
 ## Fix the error
 
-In this section, you fix the error by changing the code back to its original state and running the tests to verify the fix.
+In this section, you'll fix the error by changing the code back to its original state and running the tests to verify the fix.
 
 1. In Visual Studio Code, open *Tailspin.SpaceGame.Web/LocalDocumentDBRepository.cs* from the file explorer.
 1. Modify the `GetItemsAsync` method as shown here:
@@ -273,7 +247,7 @@ In this section, you fix the error by changing the code back to its original sta
     dotnet build --configuration Release
     ```
 
-    You see that the build succeeds.
+    You should see that the build succeeds.
 
     In practice, you might run the app and briefly try it out. For learning purposes, we'll skip that for now.
 
@@ -303,7 +277,7 @@ In this section, you fix the error by changing the code back to its original sta
     > [!TIP]
     > The dot (`.`) in this `git add` example is a wildcard character. It matches all unstaged files in the current directory and all subdirectories.
     >
-    > Before you use this wildcard character, it's a good practice to run `git status` to ensure that you're staging the files you intend to stage.
+    > Before you use this wildcard character, it's a good practice to run `git status` before you commit to ensure that you're staging the files you intend to stage.
 
 1. Return to Azure Pipelines. Watch the change move through the pipeline. The tests pass, and the overall build succeeds.
 
@@ -313,6 +287,4 @@ In this section, you fix the error by changing the code back to its original sta
 
     :::image type="content" source="../media/7-dashboard-passing-test.png" alt-text="A screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.":::
 
-**Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
-
-**Mara:** That's OK. The fix was easy enough. And we caught it early, _way_ before it reached QA or production. Now Amita has a clean build to work from.
+Great! You've fixed the build. Next, you'll learn how to clean up your Azure DevOps environment.

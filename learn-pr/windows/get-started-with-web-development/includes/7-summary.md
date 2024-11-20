@@ -2,12 +2,12 @@ In this module, you set up a working environment for web development. You also c
 
 * You downloaded and installed the tools you need for web development, and customized the editor with basic packages.
 * You created a project directory and the files to build a website.
-* You created a heading and other page elements, and then linked to external files and tested the page in a browser.
-* You applied styles to different elements and tested your site in the browser, and added support for themes using CSS.
+* You created a heading and other page elements, then linked to external files and tested the page in a browser.
+* You applied styles to different elements and tested your site in the browser and added support for themes using CSS.
 * You added JavaScript to enable custom interaction with the page and switching between themes.
 * You learned how to create and use console messages to peek inside your code.
 
-You're gathering tools and building a foundation as a web developer. You can reuse your website as a template for future projects. As your skills and knowledge grow, you'll be able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
+You're gathering tools and building a foundation as a web developer. You can reuse your website as a template for future projects. As your skills and knowledge grow, you're able to fulfill more of the vision you have for your website. It's also empowering to see an idea come to life.
 
 ## Learn more
 
@@ -21,7 +21,7 @@ You're gathering tools and building a foundation as a web developer. You can reu
 
 #### HTML5
 
-* [W3C - HTML history](https://www.w3.org/TR/html52/introduction.html#introduction-history)
+* [HTML history](https://html.spec.whatwg.org/multipage/introduction.html#history-2)
 * [Webhint - Use charset 'Utf-8'](https://webhint.io/docs/user-guide/hints/hint-meta-charset-utf-8/)
 * [MDN web docs - What’s in the head?](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 * [MDN web docs - HTML elements reference](https://developer.mozilla.org/docs/Web/HTML/Element)

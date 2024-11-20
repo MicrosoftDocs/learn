@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Datacenter integration for Azure Stack Hub
   description: "Datacenter integration for Azure Stack Hub"
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack-hub
 title: Datacenter integration for Azure Stack Hub
 summary: |
   For Azure Stack Hub, you apply the same governance to assets in your datacenter as in Azure.
@@ -55,3 +57,4 @@ units:
 - learn.wwl.datacenter-integration-for-azure-stack-hub.summary
 badge:
   uid: learn.wwl.datacenter-integration-for-azure-stack-hub.badge
+

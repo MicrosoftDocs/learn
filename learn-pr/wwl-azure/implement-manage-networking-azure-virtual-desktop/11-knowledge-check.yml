@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A user is working remotely with a high resolution display and a light workload. They notice an increase in bandwidth requirement. What could be the reason for this?"
+    choices:
+    - content: "The user's workload output frame rate has decreased"
+      isCorrect: false
+      explanation: "Incorrect. A decrease in the workload output frame rate would typically reduce the bandwidth requirement, not increase it."
+    - content: "The user's display resolution has decreased"
+      isCorrect: false
+      explanation: "Incorrect. A decrease in display resolution would typically reduce the bandwidth requirement, not increase it."
+    - content: "The user's display resolution has increased"
+      isCorrect: true
+      explanation: "Correct. An increase in display resolution can lead to a higher bandwidth requirement, even with a light workload."
+  - content: "A network engineer needs to log information about Azure IP traffic and store the data in Azure storage. Which tool should they use to complete this task?"
+    choices:
+    - content: "VPN troubleshoot"
+      isCorrect: false
+      explanation: "Incorrect. VPN troubleshoot is used to troubleshoot virtual network gateways and their connections, not for logging IP traffic."
+    - content: "Packet capture"
+      isCorrect: false
+      explanation: "Incorrect. Packet capture is used to remotely create packet capture sessions to track traffic to and from a virtual machine or a virtual machine scale set, not for logging IP traffic."
+    - content: "Flow logs"
+      isCorrect: true
+      explanation: "Correct. Flow logs allow the logging of information about Azure IP traffic and storing the data in Azure storage."
+  - content: "A network administrator is configuring a firewall and needs to open port 3390. What should the administrator do to complete this task?"
+    choices:
+    - content: "The administrator should open all ports to ensure connectivity."
+      isCorrect: false
+      explanation: "Incorrect. Opening all ports would make the network vulnerable to attacks."
+    - content: "The administrator should disable the firewall temporarily."
+      isCorrect: false
+      explanation: "Incorrect. Disabling the firewall would expose the network to potential threats."
+    - content: "The administrator should specify the source port or range as 3390 and select Finish."
+      isCorrect: true
+      explanation: "Correct. Specifying the source port or range as 3390 and selecting Finish would open the required port."

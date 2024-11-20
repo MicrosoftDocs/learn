@@ -2,13 +2,14 @@
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.understand-compatibility-level
 title: Understand compatibility level
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand compatibility level
   description: "Understand compatibility level"
   ms.date: 04/15/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

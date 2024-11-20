@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.dotnet-aspire-azure
+metadata:
+  title: Use Azure services to build and deploy apps with .NET Aspire
+  description: |
+    Learn how to use Azure services with .NET Aspire.
+  ms.date: 07/12/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: learning-path
+title: Use Azure services to build and deploy apps with .NET Aspire
+summary: |
+  Learn how to use Azure services with .NET Aspire. 
+prerequisites: |
+  - Experience building web applications using .NET and C#
+  - Experience with .NET Aspire
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products: 
+  - dotnet
+  - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
+  - azure-container-apps
+  - azure-cosmos-db
+  - azure-kubernetes-service
+  - azure-cache-redis
+  - azure-database-postgresql
+  - azure-storage
+subjects: 
+  - cross-development
+  - backend-development
+  - frontend-development
+  - architecture
+modules:
+  - learn.azure-storage-dotnet-aspire-app
+  - learn.store-data-azure-cosmos-aspire
+  - learn.deploy-dotnet-aspire-app-azure
+  - learn.customize-dotnet-aspire-existing-resources
+trophy:
+  uid: learn.dotnet-aspire-azure.trophy

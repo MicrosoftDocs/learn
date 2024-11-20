@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-security-center
+title: Describe Microsoft Defender for Cloud
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Describe Microsoft Defender for Cloud
+  description: "Describe Microsoft Defender for Cloud"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-defender-cloud.md)]

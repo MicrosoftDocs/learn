@@ -4,11 +4,10 @@ title: Classify and label data
 metadata:
   title: Classify and label data
   description: "Classify and label data"
-  ms.date: 03/22/2023
+  ms.date: 05/17/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

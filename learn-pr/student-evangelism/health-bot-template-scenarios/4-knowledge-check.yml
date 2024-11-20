@@ -2,13 +2,14 @@
 uid: learn.health-bot-template-scenarios.4-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Two multiple-choice questions
-  ms.date: 07/27/2021
+  ms.date: 03/13/2023
   author: sfoteini
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
@@ -48,3 +49,4 @@ quiz:
         - content: To import the triage and handoff template scenario, select **Scenarios** > **Search** > **Triage and handoff**.
           isCorrect: false
           explanation: To import the triage and handoff template scenario, select **Scenarios** > **Template catalog** > **Triage and handoff**.
+

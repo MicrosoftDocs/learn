@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.2-explore-azure-monitor-alert-types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the different alert types that Azure Monitor supports
   description: Explore how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Then learn how to create and manage your own alerts.
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/24/2024
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: unit
 title: Explore the different alert types that Azure Monitor supports
 durationInMinutes: 6
 content: |
@@ -18,14 +19,14 @@ quiz:
       choices:
         - content: Resource, condition, log, alert type
           isCorrect: false
-          explanation: Incorrect. Log and alert type are not part of the composition of an alert rule.
+          explanation: Incorrect. Log and alert type aren't part of the composition of an alert rule.
         - content: Metrics, logs, application, operating system
           isCorrect: false
           explanation: Incorrect. None of these elements make up an alert rule.
         - content: Resource, condition, actions, alert details
           isCorrect: true
           explanation: Correct. These elements make up an alert rule.
-    - content: Which of the following is an example of a log data type?
+    - content: Which of the following examples describes a log data type?
       choices:
         - content: Percentage of CPU over time
           isCorrect: false
@@ -35,7 +36,8 @@ quiz:
           explanation: Correct. HTTP response records are examples of log data types.
         - content: Database tables
           isCorrect: false
-          explanation: Incorrect. Database tables are not examples of log data types.
+          explanation: Incorrect. Database tables aren't examples of log data types.
         - content: Website requests per hour
           isCorrect: false
-          explanation: Incorrect. Website requests per hour is an example of metric data.
+          explanation: Incorrect. The number of website requests per hour is an example of metric data.
+

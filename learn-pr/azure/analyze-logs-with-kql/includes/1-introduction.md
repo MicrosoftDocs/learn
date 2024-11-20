@@ -1,5 +1,4 @@
-
-Kusto Query Language (KQL) lets you extract meaningful insights from the log data you collect in Azure Monitor Logs.
+[Kusto Query Language (KQL)](/azure/data-explorer/kusto/query) lets you extract meaningful insights from the log data you collect in Azure Monitor Logs.
 
 ## Example scenario
 

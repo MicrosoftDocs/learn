@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations
+metadata:
+  title: Optimize spend and performance with Azure OpenAI Service provisioned reservations
+  description: This module introduces you to provisioned deployments in Azure OpenAI services. 
+  ms.date: 10/24/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Optimize spend and performance with Azure OpenAI Service provisioned reservations
+summary: This module introduces the benefits, use cases, and implementation steps to deploy and purchase Provisioned throughput units and reservations for Azure OpenAI services.
+abstract: | 
+  After you complete this module, you'll be able to:
+  - Understand the difference between Standard and Provisioned deployments, and when to use each model.
+  - Estimate, request, and deploy PTUs.
+  - Choose and purchase the appropriate Azure OpenAI Service provisioned reservation.
+prerequisites: | 
+  - A basic understanding of Azure OpenAI services
+  - A basic understanding of provisioned throughput deployments on Azure OpenAI Service 
+  - A basic understanding of Microsoft Cost Management and Billing
+  - A basic understanding of Azure Reservations
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- ai-engineer
+- ai-edge-engineer
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.introduction
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.azure-openai-service-overview
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.understand-azure-openai-deployment-models
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.estimate-request-deploy-provisioned-throughput-units
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.choose-purchase-azure-openai-service-provisioned-reservation
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.manage-monitor-provisioned-reservations
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.knowledge-check
+- learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.summary
+badge:
+  uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.badge

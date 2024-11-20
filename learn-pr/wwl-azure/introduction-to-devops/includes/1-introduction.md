@@ -21,7 +21,7 @@ Plan before you act. This module will help you understand what DevOps is and how
 
 ## What is the DevOps transformation journey?
 
-The DevOps transformation journey is a series of 9 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
+The DevOps transformation journey is a series of 8 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
 
 ### Why should I take the DevOps learning path?
 
@@ -37,26 +37,34 @@ DevOps professionals must design and implement DevOps practices for version cont
 
 There are five domain areas.
 
-| **AZ-400 Domain Area**                            | **Weight** |
-| ------------------------------------------------- | ---------- |
-| Configure Processes and Communications.           | 13%        |
-| Design and Implement Source Control.              | 19%        |
-| Design and Implement Build and Release Pipelines. | 42%        |
-| Develop a Security and Compliance Plan.           | 14%        |
-| Implement an Instrumentation Strategy.            | 13%        |
+| **AZ-400 Domain Area**                             | **Weight** |
+| -------------------------------------------------- | ---------- |
+| Design and implement processes and communications. | 11%        |
+| Design and implement a source control strategy.    | 13%        |
+| Design and implement build and release pipelines.  | 51%        |
+| Develop a security and compliance plan.            | 16%        |
+| Implement an instrumentation strategy.             | 9%         |
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this series, students and professionals can:
 
- -  Plan for the transformation with shared goals and timelines.
- -  Select a project and identify project metrics and Key Performance Indicators (KPIs).
- -  Create a team and agile organizational structure.
- -  Design a tool integration strategy.
- -  Design a license management strategy (for example, Azure DevOps and GitHub users).
- -  Design a plan for end-to-end traceability from work items to working software.
- -  Design an authentication and access strategy.
- -  Design a strategy for integrating on-premises and cloud resources.
+ -  Design and implement traceability and flow of work.
+ -  Design and implement appropriate metrics and queries for DevOps.
+ -  Configure collaboration and communication.
+ -  Design and implement branching strategies for the source code.
+ -  Configure and manage repositories.
+ -  Design and implement a package management strategy.
+ -  Design and implement a testing strategy for pipelines.
+ -  Design and implement pipelines.
+ -  Design and implement deployments.
+ -  Design and implement infrastructure as code (IaC).
+ -  Maintain pipelines.
+ -  Design and implement authentication and authorization methods.
+ -  Design and implement a strategy for managing sensitive information in automation.
+ -  Automate security and compliance scanning.
+ -  Configure monitoring for a DevOps environment.
+ -  Analyze metrics from instrumentation.
 
 ## Prerequisites
 
@@ -64,7 +72,12 @@ Successful learners will have prior knowledge and understanding of the following
 
  -  Cloud computing concepts include understanding PaaS, SaaS, and IaaS implementations.
  -  Azure administration and Azure development with proven expertise in at least one of these areas.
- -  Version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
+ -  Foundational DevOps concepts, including version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
+
+**If you're new to DevOps**, consider taking the:
+
+ -  Free online: [DevOps foundations: The core principles and practices](https://go.microsoft.com/fwlink/?linkid=2268284) \- **NEW.**
+ -  Instructor-led course: AZ-2008: DevOps foundations: The core principles and practices - **NEW**.
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 
@@ -79,14 +92,13 @@ If you're new to Azure Administration, consider taking the:
 If you're new to Azure Developer, consider taking the:
 
  -  Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
- -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00) and [AZ-020: Microsoft Azure Solutions for AWS Developers](/learn/certifications/courses/az-020t00).
+ -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).
 
-You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see the following:
+You must create an Azure DevOps Organization for some exercises. If you don't have it yet, see the following:
 
  -  [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).
- -  If you already have your organization created, use the Azure DevOps Demo Generator \[https://azuredevopsdemogenerator.azurewebsites.net\] and create a new Team Project called "Parts Unlimited" using the template "PartsUnlimited." Or feel free to create a blank project. See [Create a project - Azure DevOps](/azure/devops/organizations/projects/create-project).
 
-You must create a GitHub account at GitHub.com and a project for some exercises. If you don't have it yet, see the following:
+You must create a GitHub account at GitHub.com for some exercises. If you don't have it yet, see the following:
 
  -  [Join GitHub · GitHub](https://github.com/signup)
  -  If you already have your GitHub account, create a new repository [Creating a new repository - GitHub Docs](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-new-repository).

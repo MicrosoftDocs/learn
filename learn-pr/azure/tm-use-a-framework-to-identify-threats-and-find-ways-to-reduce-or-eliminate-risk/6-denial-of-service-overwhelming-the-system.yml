@@ -4,11 +4,10 @@ title: Denial of Service - overwhelming the system
 metadata:
   title: Denial of Service - Overwhelming the System
   description: Learn about Denial of Service and its corresponding security control
-  ms.date: 02/28/2020
+  ms.date: 07/17/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/6-denial-of-service-overwhelming-the-system.md)]

@@ -3,7 +3,7 @@ targetScope = 'managementGroup'
 var policyDefinitionName = 'DenyFandGSeriesVMs'
 var policyAssignmentName = 'DenyFandGSeriesVMs'
 
-resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
+resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2024-05-01' = {
   name: policyDefinitionName
   properties: {
     policyType: 'Custom'
@@ -37,7 +37,7 @@ resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01'
   }
 }
 
-resource policyAssignment 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
+resource policyAssignment 'Microsoft.Authorization/policyAssignments@2024-05-01' = {
   name: policyAssignmentName
   properties: {
     policyDefinitionId: policyDefinition.id

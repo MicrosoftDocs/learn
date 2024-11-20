@@ -9,4 +9,4 @@ In this module, you completed your objectives to:
 
 ## Next steps
 
-Convert your cloud adoption strategy to an actionable cloud adoption plan and a backlog of actions in Azure DevOps with the complementary Learn module *Build an actionable plan with the Cloud Adoption Framework*.
+Convert your cloud adoption strategy to an actionable cloud adoption plan with the complementary Learn module, *Prepare for cloud adoption with a data-driven plan*.

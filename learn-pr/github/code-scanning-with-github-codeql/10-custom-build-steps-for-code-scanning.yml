@@ -5,36 +5,10 @@ metadata:
   unitType: learning-content
   title: "Customize languages and builds for code scanning" # user input: module title for browser tab and search results
   description: "Learn how to change the languages analyzed by code scanning and how to add custom build steps to a CodeQL code scanning workflow." # user input: a description for site search and SEO
-  ms.date: 2/15/2022
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 01/24/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/10-custom-build-steps-for-code-scanning.md)]
-quiz:
-  title: Custom build steps for code scanning
-  questions:
-  - content: "Manual build steps in your workflow file are necessary in which situation?"
-    choices:
-    - content: "If there are unsupported languages in your repository."
-      isCorrect: false
-      explanation: "Incorrect. Unsupported languages cannot be used with CodeQL code scanning."
-    - content: "If there are supported languages with a non-standard build process."
-      isCorrect: true
-      explanation: "Correct."
-    - content: "If you want to increase the build speed for supported or unsupported languages."
-      isCorrect: false
-      explanation: "Incorrect. Manual build steps are not designed to increase the speed of a build."
-  - content: "Autobuild is currently succeeding for one of the languages in Layla's repository, but failing for another. What should she do?"
-    choices:
-    - content: "Create another workflow file for the language that is failing autobuild."
-      isCorrect: false
-      explanation: "Incorrect. GitHub only supports one code scanning workflow file for each repository."
-    - content: "Add language-specific build commands for the language where autobuild is failing."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "Disable Autobuild for the entire repository."
-      isCorrect: false
-      explanation: "It isn't necessary to disable Autobuild for languages where it succeeds. Other options allow you to customize the build process where Autobuild fails."

@@ -2,13 +2,14 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/13/2022
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -16,10 +17,10 @@ quiz:
   questions:
   - content: "Which if the following statements is true of a lake database?"
     choices:
-    - content: "Data is stored in a relational database store and cannot be directly accessed in the data lake files."
+    - content: "Data is stored in a relational database store and can't be directly accessed in the data lake files."
       isCorrect: false
       explanation: "Incorrect. File storage is decoupled from the relational database schema and query processing."
-    - content: "Data is stored in files that cannot be queried using SQL."
+    - content: "Data is stored in files that can't be queried using SQL."
       isCorrect: false
       explanation: "Incorrect. You can use SQL to query data in a lake database."
     - content: "A relational schema is overlaid on the underlying files, and can be queried using a serverless SQL pool or a Spark pool."
@@ -29,13 +30,13 @@ quiz:
     choices:
     - content: "Create a sample database in Azure SQL Database and export the SQL scripts to create the schema for the lake database."
       isCorrect: false
-      explanation: "Incorrect. A sample Azure SQL database may not meet your needs, and the scripts would not be suitable for a lake database."
+      explanation: "Incorrect. A sample Azure SQL database may not meet your needs, and the scripts wouldn't be suitable for a lake database."
     - content: "Start with the Retail database template in Azure Synapse Studio, and adapt it as necessary."
       isCorrect: true
       explanation: "Correct. The Gallery in Azure Synapse Studio includes industry-proven database schema templates, including one for retail."
     - content: "Start with an empty database and create a normalized schema."
       isCorrect: false
-      explanation: "Incorrect. While this approach would work, it's generally more efficient to start from a template."
+      explanation: "Incorrect. While this approach would work, it's more efficient to start from a template."
   - content: "You have Parquet files in an existing data lake folder for which you want to create a table in a lake database. What should you do?"
     choices:
     - content: "Use a CREATE EXTERNAL TABLE AS SELECT (CETAS) query to create the table."

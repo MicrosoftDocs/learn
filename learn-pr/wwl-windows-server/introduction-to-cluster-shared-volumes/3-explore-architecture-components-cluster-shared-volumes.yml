@@ -4,11 +4,12 @@ title: Explore the architecture and components of Cluster Shared Volumes
 metadata:
   title: Explore the architecture and components of Cluster Shared Volumes
   description: "Explore the architecture and components of Cluster Shared Volumes"
-  ms.date: 10/28/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

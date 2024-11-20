@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-user-group-accounts.manage-user-accounts
 title: Manage user accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage user accounts
   description: "Manage user accounts"
-  ms.date: 10/21/2022
+  ms.date: 07/02/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-manage-user-accounts.md)]

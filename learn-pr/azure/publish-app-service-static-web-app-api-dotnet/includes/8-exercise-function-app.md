@@ -1,6 +1,6 @@
-Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. From there, you'll extend the API with a new function using the Azure Functions extension for Visual Studio.
+Your shopping list web app needs an API. In this exercise, you build and run your API using an Azure Functions project. From there, you extend the API with a new function using the Azure Functions extension for Visual Studio.
 
-In this exercise, you'll complete the following steps:
+In this exercise, you complete the following steps:
 
 1. Create a branch as you prepare to make changes to your web app.
 1. Explore the Azure Functions project.
@@ -14,7 +14,7 @@ In this exercise, you'll complete the following steps:
 
 ## Get the function app
 
-Now, you'll add an API and connect it to your front-end app. The *Api* project includes an incomplete Azure Functions project. You'll complete that now.
+Now, you add an API and connect it to your front-end app. The **Api** project includes an incomplete Azure Functions project, so let's complete that now.
 
 ### Create an API branch
 
@@ -30,7 +30,7 @@ The **Api** project contains your Azure Functions project, along with three func
 | _ProductsPut_         | PUT    | `products/:id` |
 | _ProductsDelete_      | DELETE | `products/:id` |
 
-Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that next.
+Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. Let's add that next.
 
 ## Create the HTTP GET function
 
@@ -58,7 +58,7 @@ You just extended your Azure Functions app with a function to get your products!
 
 Notice the `Run` method of the newly created C# class has an `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute defines the access level of the function, the HTTP method(s) to listen for, and the route endpoint.
 
-The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. Setting the `Route` property to `"products"` will override the default behavior.
+The route endpoint is `null` by default, meaning that the endpoint uses the value of the `FunctionName` attribute, which is `ProductsGet`. Setting the `Route` property to `"products"` overrides the default behavior.
 
 Currently, your function is triggered on an HTTP `GET` request to **products**. Your `Run` method looks like the following code:
 
@@ -71,9 +71,9 @@ public static async Task<IActionResult> Run(
 
 ### Update the route logic
 
-The body of the `Run` method is what will be executed when the function is executed.
+The body of the `Run` method is executed when the function is executed.
 
-You'll need to update the logic to get your products. There's data access logic in the `ProductData.cs` file as a class called `ProductData`, which is available via Dependency Injection as the `IProductData` interface. The interface has a method on it called `GetProducts`, which will return a `Task<IEnumerable<Product>` that asynchronously returns a list of products.
+You need to update the logic in the `Run` method to get your products. There's data access logic in the `ProductData.cs` file as a class called `ProductData`, which is available via Dependency Injection as the `IProductData` interface. The interface has a method on it called `GetProducts`, which returns a `Task<IEnumerable<Product>` that asynchronously returns a list of products.
 
 Now, change the function endpoint to return the products:
 
@@ -109,18 +109,18 @@ Now, change the function endpoint to return the products:
     }
     ```
 
-You've now turned the class from a static to an instance class, added the interface to the constructor so it can be injected by the Dependency Injection framework, and configured the Function to return the product list when called.
+In the preceding changes, you turned the class from a static to an instance class. You added an interface to the constructor so the  Dependency Injection framework can inject the `ProductData` class. Finally, you configured the `Run` function to return the product list when called.
 
 ### Configure Cross-Origin Resource Sharing (CORS) locally
 
-You won't have to worry about Cross-Origin Resource Sharing (CORS) when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
+You don't have to worry about Cross-Origin Resource Sharing (CORS) when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
 
 Now, prompt Azure Functions to allow your web app to make HTTP requests to the API on your computer.
 
 1. Open the file named *launchSettings.json* in the **Properties** folder of the **Api** project.
     - If the file doesn't exist, create it.
 
-1. Update the contents of the file to the following:
+1. Update the contents of the file:
 
     ```json
     {

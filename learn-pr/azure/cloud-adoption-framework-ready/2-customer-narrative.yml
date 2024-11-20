@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Customer narrative
   description: Tailwind Traders is preparing its cloud environment. Learn more about the company's operating model to help it get started and find the best Azure landing zone.
-  ms.date: 05/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/04/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-customer-narrative.md)] 

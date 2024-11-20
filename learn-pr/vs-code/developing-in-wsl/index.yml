@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.developing-in-wsl
+metadata:
+  title: Developing in the Windows Subsystem for Linux with Visual Studio Code         
+  description: "In this module, you learn how to use the Windows Subsystem for Linux (WSL) with Visual Studio Code (VS Code). We explore the installation process and the basics of using WSL. Additionally, we install and utilize the Visual Studio Code WSL extension. Finally, we demonstrate how to debug and run Python code in VS Code within our WSL environment."             
+  ms.date: 11/28/2023           
+  author: gwynethp     
+  ms.author: gwynethp
+  manager: abartolo
+  ms.topic: module
+  ms.service: vs-code
+
+title: Developing in the Windows Subsystem for Linux with Visual Studio Code
+
+summary: |
+  In this module, you learn how to use the Windows Subsystem for Linux (WSL) with Visual Studio Code (VS Code). We explore the installation process and the basics of using WSL. Additionally, we install and utilize the Visual Studio Code WSL extension. Finally, we demonstrate how to debug and run Python code in VS Code within our WSL environment.
+  > [!NOTE]
+  > This module contains a primer on the Windows Subsystem for Linux (WSL). For a more in depth module on WSL check out [Introduction to Windows Subsystem for Linux (WSL)](/training/modules/wsl-introduction/).
+
+abstract: |
+  By the end of this module, you're able to:
+    - Install and use the Windows Subsystem for Linux on your Windows machine.
+    - Install and use the Visual Studio Code WSL Extension.
+    - Debug Python code in WSL with Visual Studio Code. 
+
+prerequisites: |
+  - A computer running Windows 11 or Windows 10.
+  - Ability to run PowerShell or Windows Command Prompt as an Administrator.
+  - Visual Studio Code installed on computer.
+  - Basic understanding of the concept of using software plugins or extensions to customize applications.
+
+iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+
+levels:
+  - beginner
+
+roles:
+  - developer
+
+products:
+ - vs-code
+
+subjects:
+  - app-development
+
+units:
+- learn.developing-in-wsl.introduction
+- learn.developing-in-wsl.what-is-windows-subsystem-linux
+- learn.developing-in-wsl.setting-up-windows-subsystem-linux
+- learn.developing-in-wsl.setting-up-windows-subsystem-linux-extension
+- learn.developing-in-wsl.running-debugging
+- learn.developing-in-wsl.summary
+
+badge:
+  uid: learn.personalize-remote-development-workflow.badge

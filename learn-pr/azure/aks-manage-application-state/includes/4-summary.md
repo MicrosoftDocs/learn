@@ -1,31 +1,19 @@
-You needed to support a whole operating platform by managing the application state while using Kubernetes on Azure Kubernetes Service (AKS).
+In our example scenario, you needed to support an operating platform by managing the application state while using Kubernetes on Azure Kubernetes Service (AKS).
 
-By creating a new instance of Azure Cosmos DB, you delegated the management of the database to Azure. This way, you don't need to worry about availability, because Azure Cosmos DB better supports multiple-region and multiple-master deployments. The application can grow across many regions in the world without any added complexity.
-
-In addition, you were able to understand the managed application state by using connection strings as environment variables and deploy your application without any problems. Now your cluster has a better handling of application states. Your cluster is also scalable to the point where you can handle multiple users without needing to configure the database.
+By creating a new instance of Azure Cosmos DB, you delegated the management of the database to Azure. The application can grow across many regions in the world without any added complexity. Now, your cluster has a better handling of application states. Your cluster is also scalable to the point where you can handle multiple users without needing to configure the database.
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
+[!INCLUDE [azure-subscription-cleanup](../../../includes/azure-subscription-cleanup.md)]
 
-1. Open the Azure portal:
+1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
+2. Select **Resource groups** > **rg-ship-manager**.
+3. On the **Overview** tab of the resource group, select **Delete resource group**.
+4. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources that you created in this module.
+5. Repeat the preceding steps for the resource group named **MC_rg-ship-manager_ship-manager-cluster_eastus** to delete all created resources.
+6. Remove the deleted cluster's context using the `kubectl config delete-context` command. Remember to replace the name of the cluster with your cluster's name.
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
-
-1. Select **Resource groups**.
-
-1. Find the **rg-ship-manager** resource group, or the resource group name that you used, and select it.
-
-1. On the **Overview** tab of the resource group, select **Delete resource group**.
-
-1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources that you created in this module.
-
-1. Repeat the preceding steps for the resource group named **MC_rg-ship-manager_ship-manager-cluster_eastus** to delete all created resources.
-
-1. Run the `kubectl config delete-context` command to remove the deleted cluster's context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
-
-    ```bash
+    ```azurecli-interactive
     kubectl config delete-context ship-manager-cluster
     ```
 

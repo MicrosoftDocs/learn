@@ -3,14 +3,16 @@ uid: learn.intro-to-docker-containers.2-what-is-docker
 title: What is Docker?
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Docker?
   description: In this unit, we discuss what Docker is and its architecture.
-  ms.date: 03/24/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-docker.md)]
+

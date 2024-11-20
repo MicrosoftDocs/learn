@@ -2,13 +2,17 @@
 uid: learn.azure.intro-to-translator.when-to-use-translator
 title: When to use Translator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Translator
   description: When to use Translator
-  ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/06/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-translator.md)]
+  [!INCLUDE[](includes/4-when-to-use-translator.md)]
+

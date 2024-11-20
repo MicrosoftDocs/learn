@@ -2,7 +2,7 @@ Azure DNS is a hosting service for DNS domains that provides name resolution by 
 
 ## Benefits of Azure DNS
 
-Azure DNS leverages the scope and scale of Microsoft Azure to provide numerous benefits, including:
+Azure DNS uses the scope and scale of Microsoft Azure to provide numerous benefits, including:
 
  -  Reliability and performance
  -  Security
@@ -12,7 +12,7 @@ Azure DNS leverages the scope and scale of Microsoft Azure to provide numerous b
 
 ### Reliability and performance
 
-DNS domains in Azure DNS are hosted on Azure's global network of DNS name servers, providing resiliency and high availability. Azure DNS uses anycast networking, so each DNS query is answered by the closest available DNS server to provide fast performance and high availability for your domain.
+DNS domains in Azure DNS are hosted on Azure's global network of DNS name servers, providing resiliency and high availability. Azure DNS uses anycast networking, so the closest available DNS server answers each DNS query, providing fast performance and high availability for your domain.
 
 ### Security
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.developing-in-wsl.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the Windows Subsystem for Linux and examples of using it alongside Visual Studio Code."
+  ms.date: 11/28/2023
+  author: gwynethp
+  ms.author: gwynethp
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.explain-devops-continous-delivery-quality
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain DevOps Continuous Delivery and Continuous Quality
   description: "Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality."
   ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
 title: Explain DevOps Continuous Delivery and Continuous Quality
 summary: Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality.
 abstract: |
@@ -43,3 +45,4 @@ units:
 - learn.wwl.explain-devops-continous-delivery-quality.summary
 badge:
   uid: learn.wwl.explain-devops-continous-delivery-quality.badge
+

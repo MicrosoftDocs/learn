@@ -1,3 +1,6 @@
 Now that you have an understanding of Microsoft Defender for Cloud see it in action.
 
-[Interactive guide: Protect your hybrid cloud with Microsoft Defender for Cloud](https://mslearn.cloudguides.com/guides/Protect%20your%20hybrid%20cloud%20with%20Azure%20Security%20Center?azure-portal=true)
+> [!NOTE]
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
+
+[![Screenshot of the simulation page.](../media/lab-simulation-enable-microsoft-defender-for-cloud.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Enable%20Microsoft%20Defender%20for%20Cloud)
