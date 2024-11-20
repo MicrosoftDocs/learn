@@ -34753,6 +34753,11 @@
       "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/7-summary.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
